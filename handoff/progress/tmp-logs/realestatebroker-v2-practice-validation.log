@@ -1,0 +1,3 @@
+lang en  len-scale 1.0  rows 32  categories {'rebPractice': 32}
+letters {'A': 8, 'B': 8, 'C': 8, 'D': 8}  avg option 35 chars  key-longest 12%  key>1.2x 0%
+PASS

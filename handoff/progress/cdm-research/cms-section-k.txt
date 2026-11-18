@@ -1,0 +1,774 @@
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-1 
+SECTION K: SWALLOWING/NUTRITIONAL STATUS 
+Intent: The items in this section are intended to assess the many conditions that could affect 
+the resident’s ability to maintain adequate nutrition and hydration. This section covers 
+swallowing disorders, height and weight, weight loss, and nutritional approaches. The assessor 
+should collaborate with the dietary staff to ensure that items in this section have been assessed 
+and calculated accurately. 
+K0100: Swallowing Disorder 
+ 
+Item Rationale 
+Health-related Quality of Life 
+• The ability to swallow safely can be affected by many disease processes and functional 
+decline. 
+• Alterations in the ability to swallow can result in choking and aspiration, which can 
+increase the resident’s risk for malnutrition, dehydration, and aspiration pneumonia. 
+Planning for Care 
+• Care planning should include provisions for monitoring the resident during mealtimes 
+and during functions/activities that include the consumption of food and liquids. 
+• When necessary, the resident should be evaluated by the physician, speech language 
+pathologist and/or occupational therapist to assess for any need for swallowing therapy 
+and/or to provide recommendations regarding the consistency of food and liquids. 
+• Assess for signs and symptoms that suggest a swallowing disorder that has not been 
+successfully treated or managed with diet modifications or other interventions (e.g., tube 
+feeding, double swallow, turning head to swallow, etc.) and therefore represents a 
+functional problem for the resident. 
+• Care plan should be developed to assist resident to maintain safe and effective swallow 
+using compensatory techniques, alteration in diet consistency, and positioning during and 
+following meals. 
+Steps for Assessment 
+1. Ask the resident if they have had any difficulty swallowing during the 7-day look-back 
+period. Ask about each of the symptoms in K0100A through K0100D. 
+Observe the resident during meals or at other times when they are eating, drinking, or 
+swallowing to determine whether any of the listed symptoms of possible swallowing disorder 
+are exhibited.  
+
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-2 
+K0100: Swallowing/Nutritional Status (cont.) 
+2. Interview staff members on all shifts who work with the resident and ask if any of the four 
+listed symptoms were evident during the 7-day look-back period. 
+3. Review the medical record, including nursing, physician, dietary, and speech language 
+pathologist notes, and any available information on dental history or problems. Dental 
+problems may include poor fitting dentures, dental caries, edentulous, mouth sores, tumors 
+and/or pain with food consumption. 
+Coding Instructions 
+Check all that apply. 
+• K0100A, loss of liquids/solids from mouth when eating or drinking. When 
+the resident has food or liquid in their mouth, the food or liquid dribbles down chin or 
+falls out of the mouth. 
+• K0100B, holding food in mouth/cheeks or residual food in mouth after 
+meals. Holding food in mouth or cheeks for prolonged periods of time (sometimes 
+labeled pocketing) or food left in mouth because resident failed to empty mouth 
+completely. 
+• K0100C, coughing or choking during meals or when swallowing 
+medications. The resident may cough or gag, turn red, have more labored breathing, 
+or have difficulty speaking when eating, drinking, or taking medications. The resident 
+may frequently complain of food or medications “going down the wrong way.” 
+• K0100D, complaints of difficulty or pain with swallowing. Resident may 
+refuse food because it is painful or difficult to swallow. 
+• K0100Z, none of the above: if none of the K0100A through K0100D signs or 
+symptoms were present during the look-back period. 
+Coding Tips 
+• Do not code a swallowing problem when interventions have been successful in treating 
+the problem and therefore the signs/symptoms of the problem (K0100A through 
+K0100D) did not occur during the 7-day look-back period. 
+• Code even if the symptom occurred only once in the 7-day look-back period. 
+K0200: Height and Weight 
+  
+
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-3 
+K0200: Height and Weight (cont.) 
+Item Rationale 
+Health-related Quality of Life 
+• Diminished nutritional and hydration status can lead to debility that can adversely affect 
+health and safety as well as quality of life. 
+Planning for Care 
+• Height and weight measurements assist staff with assessing the resident’s nutrition and 
+hydration status by providing a mechanism for monitoring stability of weight over a 
+period of time. The measurement of weight is one guide for determining nutritional 
+status. 
+Steps for Assessment for K0200A, Height 
+1. Base height on the most recent height since the most recent admission/entry or reentry. 
+Measure and record height in inches. 
+2. Measure height consistently over time in accordance with the facility policy and procedure, 
+which should reflect current standards of practice (shoes off, etc.). 
+3. For subsequent assessments, check the medical record. If the last height recorded was more 
+than one year ago, measure and record the resident’s height again. 
+Coding Instructions for K0200A, Height 
+• Record height to the nearest whole inch. 
+• Use mathematical rounding (i.e., if height measurement is X.5 inches or greater, round 
+height upward to the nearest whole inch. If height measurement number is X.1 to X.4 
+inches, round down to the nearest whole inch). For example, a height of 62.5 inches would 
+be rounded to 63 inches and a height of 62.4 inches would be rounded to 62 inches. 
+Steps for Assessment for K0200B, Weight 
+1. Base weight on the most recent measure in the last 30 days. 
+2. Measure weight consistently over time in accordance with facility policy and procedure, 
+which should reflect current standards of practice (shoes off, etc.). 
+3. For subsequent assessments, check the medical record and enter the weight taken within 30 
+days of the ARD of this assessment. 
+4. If the last recorded weight was taken more than 30 days prior to the ARD of this assessment 
+or previous weight is not available, weigh the resident again. 
+5. If the resident’s weight was taken more than once during the preceding month, record the 
+most recent weight. 
+Coding Instructions for K0200B, Weight 
+• Use mathematical rounding (i.e., If weight is X.5 pounds [lbs] or more, round weight 
+upward to the nearest whole pound. If weight is X.1 to X.4 lbs, round down to the nearest 
+whole pound). For example, a weight of 152.5 lbs would be rounded to 153 lbs and a 
+weight of 152.4 lbs would be rounded to 152 lbs.   
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-4 
+K0200: Height and Weight (cont.) 
+• If a resident cannot be weighed, for example because of extreme pain, immobility, or risk 
+of pathological fractures, use the standard no-information code (“–”) and document 
+rationale on the resident’s medical record. 
+K0300: Weight Loss 
+ 
+Item Rationale 
+Health-related Quality of Life 
+• Weight loss can result in debility and adversely affect 
+health, safety, and quality of life. 
+• For persons with morbid obesity, controlled and careful 
+weight loss can improve mobility and health status. 
+• For persons with a large volume (fluid) overload, 
+controlled and careful diuresis can improve health 
+status. 
+Planning for Care 
+• Weight loss may be an important indicator of a change 
+in the resident’s health status or environment. 
+• If significant weight loss is noted, the interdisciplinary 
+team should review for possible causes of changed 
+intake, changed caloric need, change in medication 
+(e.g., diuretics), or changed fluid volume status. 
+• Weight should be monitored on a continuing basis; 
+weight loss should be assessed and care planned at the 
+time of detection and not delayed until the next MDS 
+assessment.  
+DEFINITIONS 
+5% WEIGHT LOSS IN 30 
+DAYS 
+Start with the resident’s 
+weight closest to 30 days ago 
+and multiply it by .95 (or 
+95%). The resulting figure 
+represents a 5% loss from 
+the weight 30 days ago. If the 
+resident’s current weight is 
+equal to or less than the 
+resulting figure, the resident 
+has lost more than 5% body 
+weight. 
+10% WEIGHT LOSS IN 
+180 DAYS 
+Start with the resident’s 
+weight closest to 180 days 
+ago and multiply it by .90 (or 
+90%). The resulting figure 
+represents a 10% loss from 
+the weight 180 days ago. If 
+the resident’s current weight 
+is equal to or less than the 
+resulting figure, the resident 
+has lost 10% or more body 
+weight. 
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-5 
+K0300: Weight Loss (cont.) 
+Steps for Assessment 
+This item compares the resident’s weight in the current observation period with their weight at 
+two snapshots in time: 
+• At a point closest to 30 days preceding the current weight. 
+• At a point closest to 180 days preceding the current weight. 
+The resident’s weight captured closest to these two time points are the only two weights 
+considered for this item, but the resident’s weight should be monitored on a continual basis and 
+weight loss assessed and addressed on the care plan as necessary. 
+For a New Admission 
+1. Ask the resident, family, or significant other about weight 
+loss over the past 30 and 180 days. 
+2. Consult the resident’s physician, review transfer 
+documentation, and compare with admission weight. 
+3. If the admission weight is less than the previous weight, 
+calculate the percentage of weight loss. 
+4. Complete the same process to determine and calculate 
+weight loss comparing the admission weight to the weight 
+30 and 180 days ago. 
+For Subsequent Assessments 
+1. From the medical record, compare the resident’s weight in 
+the current observation period to their weight in the 
+observation period 30 days ago. 
+2. If the current weight is less than the weight in the 
+observation period 30 days ago, calculate the percentage of 
+weight loss. 
+3. From the medical record, compare the resident’s weight in 
+the current observation period to their weight in the 
+observation period 180 days ago. 
+4. If the current weight is less than the weight in the 
+observation period 180 days ago, calculate the percentage 
+of weight loss. 
+Weight Comparison Examples 
+ 
+*Weight as determined in item K0200B. Based on an ARD of 10/15/25. 
+  
+DEFINITIONS 
+PHYSICIAN-
+PRESCRIBED WEIGHT-
+LOSS REGIMEN 
+A weight reduction plan 
+ordered by the resident’s 
+physician with the care plan 
+goal of weight reduction. May 
+employ a calorie-restricted 
+diet or other weight loss diets 
+and exercise. Also includes 
+planned diuresis. It is 
+important that weight loss is 
+intentional. 
+BODY MASS INDEX 
+(BMI)  
+Number calculated from a 
+person’s weight and height. 
+BMI is used as a screening 
+tool to identify possible 
+weight problems for adults. 
+Visit 
+https://www.cdc.gov/bmi/faq/. 
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-6 
+K0300: Weight Loss (cont.) 
+Coding Instructions 
+Mathematically round weights as described in Section K0200B before completing the weight loss 
+calculation. 
+• Code 0, no or unknown: if the resident has not experienced weight loss of 5% or 
+more in the past 30 days or 10% or more in the last 180 days or if information about prior 
+weight is not available. 
+• Code 1, yes on physician-prescribed weight-loss regimen: if the resident 
+has experienced a weight loss of 5% or more in the past 30 days or 10% or more in the 
+last 180 days, and the weight loss was planned and pursuant to a physician’s order. In 
+cases where a resident has a weight loss of 5% or more in 30 days or 10% or more in 180 
+days as a result of any physician ordered diet plan or expected weight loss due to loss of 
+fluid with physician orders for diuretics, K0300 can be coded as 1.  
+• Code 2, yes, not on physician-prescribed weight-loss regimen: if the 
+resident has experienced a weight loss of 5% or more in the past 30 days or 10% or more 
+in the last 180 days, and the weight loss was not planned and prescribed by a physician. 
+Coding Tips 
+• A resident may experience weight variances in between the snapshot time periods. 
+Although these require follow up at the time, they are not captured on the MDS. 
+• In cases in which multiple weights for the resident may exist during the time period being 
+evaluated, select the weight on the date closest to the appropriate time point. 
+• If the resident is losing a significant amount of weight, the facility should not wait for the 
+30- or 180-day timeframe to address the problem. Weight changes of 5% in 1 month, 
+7.5% in 3 months, or 10% in 6 months should prompt a thorough assessment of the 
+resident’s nutritional status. 
+• To code K0300 as 1, yes, the expressed goal of the weight loss diet or the expected 
+weight loss of edema through the use of diuretics must be documented. 
+• On occasion, a resident with normal BMI or even low BMI is placed on a diabetic or 
+otherwise calorie-restricted diet. In this instance, the intent of the diet is not to induce 
+weight loss, and it would not be considered a physician-ordered weight-loss regimen. 
+  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-7 
+K0300: Weight Loss (cont.) 
+Examples 
+1. Resident J has been on a physician ordered calorie-restricted diet for the past year. They and 
+their physician agreed to a plan of weight reduction. Their current weight is 169 lbs. Their 
+weight 30 days ago was 172 lbs. Their weight 180 days ago was 192 lbs. 
+Coding: K0300 would be coded 1, yes, on physician-prescribed weight- 
+loss regimen. 
+Rationale: 
+• 30-day calculation: 172 x 0.95 = 163.4. Since the resident’s current weight of 169 
+lbs is more than 163.4 lbs, which is the 5% point, they have not lost 5% body 
+weight in the last 30 days. 
+• 180-day calculation: 192 x .90 = 172.8. Since the resident’s current weight of 169 
+lbs is less than 172.8 lbs, which is the 10% point, they have lost 10% or more of 
+body weight in the last 180 days.  
+2. Resident S has had increasing need for assistance with eating over the past 6 months. Their 
+current weight is 195 lbs. Their weight 30 days ago was 197 lbs. Their weight 180 days ago 
+was 185 lbs. 
+Coding: K0300 would be coded 0, No. 
+Rationale: 
+• 30-day calculation: 197 x 0.95 = 187.15. Because the resident’s current weight of 
+195 lbs is more than 187.15 lbs, which is the 5% point, they have not lost 5% body 
+weight in the last 30 days. 
+• 180-day calculation: Resident S’s current weight of 195 lbs is greater than their weight 
+180 days ago, so there is no need to calculate their weight loss. They have gained weight 
+over this time period. 
+  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-8 
+K0300: Weight Loss (cont.) 
+3. Resident K underwent a BKA (below the knee amputation). Their preoperative weight 30 
+days ago was 130 lbs. Their most recent postoperative weight is 102 lbs. The amputated leg 
+weighed 8 lbs. Their weight 180 days ago was 125 lbs. 
+Was the change in weight significant? Calculation of change in weight must take into account 
+the weight of the amputated limb (which in this case is 6% of 130 lbs = 7.8 lbs). 
+• 30-day calculation: 
+Step 1: Add the weight of the amputated limb to the current weight to obtain the 
+weight if no amputation occurred: 
+102 lbs (current weight) + 8 lbs (weight of leg) = 110 lbs (current body weight taking 
+the amputated leg into account) 
+Step 2: Calculate the difference between the most recent weight (including weight of 
+the limb) and the previous weight (at 30 days): 
+130 lbs (preoperative weight) - 110 lbs (present weight if had two legs) = 20 lbs 
+(weight lost) 
+Step 3: Calculate the percent weight change relative to the initial weight: 
+20 lbs (weight change) /130 lbs (preoperative weight) = 15% weight loss 
+Step 4: The percent weight change is significant if >5% at 30 days 
+Therefore, the most recent postoperative weight of 102 lbs (110 lbs, taking the 
+amputated limb into account) is >5% weight loss (significant at 30 days). 
+• 180-day calculation: 
+Step 1: Add the weight of the amputated limb to the current weight to obtain the 
+weight if no amputation occurred: 
+102 lbs (current weight) + 8 lbs (weight of leg) = 110 lbs (current body weight taking 
+the amputated leg into account) 
+Step 2: Calculate the difference between the most recent weight (including weight of 
+the limb) and the previous weight (at 180 days): 
+125 lbs (preoperative weight 180 days ago) - 110 lbs (present weight if had two legs) = 
+15 lbs (weight lost) 
+Step 3: Calculate the percent weight change relative to the initial weight: 
+15 lbs (weight change) / 130 lbs (preoperative weight) = 12% weight loss 
+Step 4: The percent weight change is significant if >10% at 180 days 
+The most recent postoperative weight of 110 lbs (110 lbs, taking the amputated limb 
+into account) is >10% weight loss (significant at 180 days). 
+Present weight of 110 lbs >10% weight loss (significant at 180 days). 
+Coding: K0300 would be coded 2, yes, weight change is significant; not on 
+physician-prescribed weight-loss regimen. 
+Rationale: The resident had a significant weight loss of >5% in 30 days and did have a 
+weight loss of >10% in 180 days, the item would be coded as 2, yes weight change is 
+significant; not on physician-prescribed weight–loss regime, with one of the items being 
+triggered. This item is coded for either a 5% 30-day weight loss or a 10% 180-day weight 
+loss. In this example both items, the criteria are met but the coding does not change as 
+long as one of them are met. 
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-9 
+K0310: Weight Gain 
+ 
+Item Rationale 
+Health-related Quality of Life 
+• Weight gain can result in debility and adversely affect 
+health, safety, and quality of life. 
+Planning for Care 
+• Weight gain may be an important indicator of a change 
+in the resident’s health status or environment. 
+• If significant weight gain is noted, the interdisciplinary 
+team should review for possible causes of changed 
+intake, changed caloric need, change in medication 
+(e.g., steroidals), or changed fluid volume status. 
+• Weight should be monitored on a continuing basis; 
+weight gain should be assessed and care planned at the 
+time of detection and not delayed until the next MDS 
+assessment. 
+Steps for Assessment 
+This item compares the resident’s weight in the current 
+observation period with their weight at two snapshots in time: 
+• At a point closest to 30 days preceding the current 
+weight. 
+• At a point closest to 180 days preceding the current 
+weight. 
+The resident’s weight captured closest to these two time points are the only two weights 
+considered for this item, but the resident’s weight should be monitored on a continual basis and 
+weight gain assessed and addressed on the care plan as necessary. 
+For a New Admission 
+1. Ask the resident, family, or significant other about weight gain over the past 30 and 180 days. 
+2. Consult the resident’s physician, review transfer documentation, and compare with admission 
+weight. 
+3. If the admission weight is more than the previous weight, calculate the percentage of weight 
+gain. 
+4. Complete the same process to determine and calculate weight gain comparing the admission 
+weight to the weight 30 and 180 days ago. 
+  
+DEFINITIONS 
+5% WEIGHT GAIN IN 30 
+DAYS 
+Start with the resident’s 
+weight closest to 30 days ago 
+and multiply it by 1.05 (or 
+105%). The resulting figure 
+represents a 5% gain from 
+the weight 30 days ago. If the 
+resident’s current weight is 
+equal to or more than the 
+resulting figure, the resident 
+has gained more than 5% 
+body weight. 
+10% WEIGHT GAIN IN 
+180 DAYS 
+Start with the resident’s 
+weight closest to 180 days 
+ago and multiply it by 1.10 (or 
+110%). The resulting figure 
+represents a 10% gain from 
+the weight 180 days ago. If 
+the resident’s current weight 
+is equal to or more than the 
+resulting figure, the resident 
+has gained more than 10% 
+body weight. 
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-10 
+K0310: Weight Gain (cont.) 
+For Subsequent Assessments 
+1. From the medical record, compare the resident’s weight in the current observation period to 
+their weight in the observation period 30 days ago. 
+2. If the current weight is more than the weight in the observation period 30 days ago, calculate 
+the percentage of weight gain. 
+3. From the medical record, compare the resident’s weight in the current observation period to 
+their weight in the observation period 180 days ago. 
+4. If the current weight is more than the weight in the observation period 180 days ago, 
+calculate the percentage of weight gain. 
+Weight Comparison Examples 
+ 
+*Weight as determined in item K0200B. Based on an ARD of 10/15/25. 
+Coding Instructions 
+Mathematically round weights as described in Section K0200B before completing the weight 
+gain calculation. 
+• Code 0, no or unknown: if the resident has not experienced weight gain of 5% or 
+more in the past 30 days or 10% or more in the last 180 days or if information about prior 
+weight is not available. 
+• Code 1, yes on physician-prescribed weight-gain regimen: if the resident 
+has experienced a weight gain of 5% or more in the past 30 days or 10% or more in the 
+last 180 days, and the weight gain was planned and pursuant to a physician’s order. In 
+cases where a resident has a weight gain of 5% or more in 30 days or 10% or more in 180 
+days as a result of any physician ordered diet plan, K0310 can be coded as 1. 
+• Code 2, yes, not on physician-prescribed weight-gain regimen: if the 
+resident has experienced a weight gain of 5% or more in the past 30 days or 10% or more 
+in the last 180 days, and the weight gain was not planned and prescribed by a physician. 
+Coding Tips 
+• A resident may experience weight variances in between the snapshot time periods. 
+Although these require follow up at the time, they are not captured on the MDS. 
+• In cases in which multiple weights for the resident may exist during the time period being 
+evaluated, select the weight on the date closest to the appropriate time point. 
+• If the resident is gaining a significant amount of weight, the facility should not wait for 
+the 30- or 180-day timeframe to address the problem. Weight changes of 5% in 1 month, 
+7.5% in 3 months, or 10% in 6 months should prompt a thorough assessment of the 
+resident’s nutritional status. 
+• To code K0310 as 1, yes, the expressed goal of the weight gain diet must be documented. 
+
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-11 
+K0520: Nutritional Approaches 
+ 
+Item Rationale 
+Health-related Quality of Life 
+• Nutritional approaches that vary from the normal (e.g., 
+mechanically altered food) or that rely on alternative 
+methods (e.g., parenteral/IV or feeding tubes) can 
+diminish an individual’s sense of dignity and self-worth 
+as well as diminish pleasure from eating. 
+• The resident’s clinical condition may potentially benefit 
+from the various nutritional approaches included here. It 
+is important to work with the resident and family 
+members to establish nutritional support goals that 
+balance the resident’s preferences and overall clinical 
+goals. 
+Planning for Care 
+• Alternative nutritional approaches should be monitored 
+to validate effectiveness. 
+• Care planning should include periodic reevaluation of 
+the appropriateness of the approach.  
+DEFINITIONS 
+PARENTERAL/IV 
+FEEDING  
+Introduction of a nutritive 
+substance into the 
+body by means other than 
+the intestinal tract (e.g., 
+subcutaneous, intravenous). 
+FEEDING TUBE  
+Presence of any type of tube 
+that can deliver food/ 
+nutritional substances/fluids 
+directly into the 
+gastrointestinal system. 
+Examples include, but are 
+not limited to, nasogastric 
+tubes, gastrostomy tubes, 
+jejunostomy tubes, 
+percutaneous endoscopic 
+gastrostomy (PEG) tubes. 
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-12 
+K0520: Nutritional Approaches (cont.) 
+Steps for Assessment 
+• Review the medical record to determine if any of the 
+listed nutritional approaches were performed during the 
+look-back period. 
+• If none apply, check K0520Z, None of the above. 
+Coding Instructions 
+Check all that apply. If none apply, check K0520Z, None of the 
+above. 
+• K0520A, parenteral/IV feeding. 
+• K0520B, feeding tube – nasogastric or abdominal 
+(PEG). 
+• K0520C, mechanically altered diet – require change in 
+texture of food or liquids (e.g., pureed food, thickened 
+liquids). 
+• K0520D, therapeutic diet (e.g., low salt, diabetic, low 
+cholesterol). 
+• K0520Z, none of the above. 
+Coding Instructions for Column 1 
+• Check all nutritional approaches performed during the 
+first 3 days of the SNF PPS Stay. 
+Coding Instructions for Column 2 
+• Check all nutritional approaches performed prior to 
+admission/entry or reentry to the facility and within the 7-day look-back period. Leave 
+Column 2 blank if the resident was admitted/entered or reentered the facility more than 7 
+days ago. 
+• When completing the Interim Payment Assessment (IPA), the completion of items 
+K0520A, K0520B, and K0520Z is required. 
+Coding Instructions for Column 3 
+• Check all nutritional approaches performed after admission/entry or reentry to the facility 
+and within the 7-day look-back period. 
+Coding Instructions for Column 4 
+• Check all nutritional approaches performed within the last 3 days of the SNF PPS Stay. 
+  
+DEFINITIONS 
+MECHANICALLY 
+ALTERED DIET 
+A diet specifically prepared to 
+alter the texture or 
+consistency of food to 
+facilitate oral intake. 
+Examples include soft solids, 
+puréed foods, ground meat, 
+and thickened liquids. A 
+mechanically altered diet 
+should not automatically be 
+considered a therapeutic diet. 
+THERAPEUTIC DIET 
+A therapeutic diet is a diet 
+intervention prescribed by a 
+physician or other authorized 
+nonphysician practitioner that 
+provides food or nutrients via 
+oral, enteral, and parenteral 
+routes as part of treatment of 
+disease or clinical condition, 
+to modify, eliminate, 
+decrease, or increase 
+identified micro- and macro-
+nutrients in the diet (Academy 
+of Nutrition and Dietetics, 
+2020). 
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-13 
+K0520: Nutritional Approaches (cont.) 
+Coding Tips for K0520A 
+K0520A includes any and all nutrition and hydration received by the nursing home resident 
+during the observation period either at the nursing home, at the hospital as an outpatient or an 
+inpatient, provided they were administered for nutrition or hydration. 
+• Parenteral/IV feeding—The following fluids may be included when there is supporting 
+documentation that reflects the need for additional fluid intake specifically 
+addressing a nutrition or hydration need. This supporting documentation should be 
+noted in the resident’s medical record according to State and Federal Regulations 
+and/or internal facility policy: 
+— IV fluids or hyperalimentation, including total parenteral nutrition (TPN), 
+administered continuously or intermittently 
+— IV fluids running at KVO (Keep Vein Open) 
+— IV fluids contained in IV Piggybacks 
+— Hypodermoclysis and subcutaneous ports in hydration therapy 
+— IV fluids can be coded in K0520A if needed to prevent dehydration if the additional 
+fluid intake is specifically needed for nutrition and/or hydration. Prevention of 
+dehydration should be clinically indicated and supporting documentation should be 
+provided in the medical record. 
+• The following items are NOT to be coded in K0520A: 
+— IV Medications—Code these when appropriate in O0110H, IV Medications. 
+— IV fluids used to reconstitute and/or dilute medications for IV administration. 
+— IV fluids administered as a routine part of an operative or diagnostic procedure or 
+recovery room stay. 
+— IV fluids administered solely as flushes. 
+— Parenteral/IV fluids administered in conjunction with chemotherapy or dialysis. 
+• Enteral feeding formulas: 
+— Should not be coded as a mechanically altered diet. 
+— Should only be coded as K0520D, Therapeutic Diet when the enteral formula is 
+altered to manage problematic health conditions, e.g. enteral formulas specific to 
+residents with diabetes. 
+Coding Tip for K0520B 
+• Only feeding tubes that are used to deliver nutritive substances and/or hydration during 
+the assessment period are coded in K0520B. 
+  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-14 
+K0520: Nutritional Approaches (cont.) 
+Coding Tips for K0520C 
+• Assessors should not capture a trial of a mechanically altered diet (e.g., pureed food, 
+thickened liquids) during the observation period in K0520C, mechanically altered diet. 
+Coding Tips for K0520D 
+• Therapeutic diets are not defined by the content of what is provided or when it is served, 
+but why the diet is required. Therapeutic diets provide the corresponding treatment that 
+addresses a particular disease or clinical condition which is manifesting an altered 
+nutritional status by providing the specific nutritional requirements to remedy the 
+alteration. 
+• A nutritional supplement (house supplement or packaged) given as part of the treatment 
+for a disease or clinical condition manifesting an altered nutrition status, does not 
+constitute a therapeutic diet, but may be part of a therapeutic diet. Therefore, supplements 
+(whether given with, in-between, or instead of meals) are only coded in K0520D, 
+Therapeutic Diet when they are being administered as part of a therapeutic diet to manage 
+problematic health conditions (e.g. supplement for protein-calorie malnutrition). 
+• Food elimination diets related to food allergies (e.g. peanut allergy) can be coded as a 
+therapeutic diet. 
+Examples 
+1. Resident H was diagnosed in the acute hospital with a soft tissue infection. A treatment 
+regime was initiated in the acute hospital, including IV antibiotics received every 8 hours 
+within the last 7 days. Because the resident was assessed in the acute hospital with 
+inadequate oral fluid intake demonstrating signs and symptoms of dehydration, the acute care 
+physician ordered that the antibiotic be reconstituted with 250 cc of normal saline rather than 
+100 cc, which is the minimum amount required for reconstitution. This IV antibiotic and 
+fluid regimen continues for 7 additional days following admission to the SNF due to 
+continued infection and decreased oral intake. 
+Coding: K0520A1, K0520A2, and K0520A3 would be checked. The IV medication 
+would be coded at IV Medications item (O0110H). 
+Rationale: The resident’s physician in the acute care hospital ordered additional 
+volume of dilutant for the IV medication reconstitution to address Resident H’s 
+inadequate oral fluid intake. The treatment regime continues upon admission to the SNF 
+to address hydration needs. There is supporting documentation that reflected an identified 
+need for additional fluid intake for hydration. 
+2. Resident J is receiving an antibiotic in 100 cc of normal saline via IV. They have a UTI, no 
+fever, and documented adequate fluid intake. They are placed on the nursing home’s 
+hydration plan to ensure adequate hydration. 
+Coding: K0520A1 would NOT be checked. The IV medication would be coded at 
+IV Medications item (O0110H). 
+Rationale: Although the resident received the additional fluid, there is no 
+documentation to support a need for additional fluid intake.  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-15 
+K0520: Nutritional Approaches (cont.) 
+3. Resident Q will be discharged today following a 16-day stay in the nursing home. They were 
+receiving rehabilitation services for a stroke. They have longstanding celiac disease and 
+therefore were placed on a gluten-free diet. Because of their recent stroke, they also have 
+documented dysphagia requiring a mechanical soft diet and honey-thick liquids to prevent 
+aspiration and will be discharged on this same diet. 
+Coding: K0520C3 and K0520C4, as well as K0520D3 and K0520D4, would be 
+checked. 
+Rationale: Resident Q required both a mechanically altered diet (i.e., mechanical soft 
+diet and honey-thick liquids) and a therapeutic diet (i.e., gluten free) for their celiac 
+disease in the last 7 days as well as at discharge. 
+4. Resident B will be discharged today after rehabilitation services for multiple fractures 
+sustained in a car accident. Resident B has been on a regular diet during their entire stay and 
+has not required any parenteral or enteral nutrition. During the acute hospital stay Resident B 
+required a mechanical soft diet following the accident. The resident upgraded to a regular 
+texture diet prior to discharge from the hospital. 
+Coding: K0520Z3and K0520Z4 would be checked. 
+Rationale: Resident B had a regular diet their entire stay and did not require any 
+nutritional modifications. 
+K0710: Percent Intake by Artificial Route 
+Complete K0710 only if Column 2 and/or Column 3 are checked for K0520A and/or K0520B. 
+ 
+ 
+
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-16 
+K0710: Percent Intake by Artificial Route (cont.) 
+Item Rationale 
+Health-related Quality of Life 
+• Nutritional approaches that vary from the normal, such as parenteral/IV or feeding tubes, 
+can diminish an individual’s sense of dignity and self-worth as well as diminish pleasure 
+from eating. 
+Planning for Care 
+• The proportion of calories received through artificial routes should be monitored with 
+periodic reassessment to ensure adequate nutrition and hydration. 
+• Periodic reassessment is necessary to facilitate transition to increased oral intake as 
+indicated by the resident’s condition. 
+K0710A, Proportion of Total Calories the Resident Received through 
+Parenteral or Tube Feeding 
+Steps for Assessment 
+1. Review intake records within the last 7 days to determine actual intake through parenteral or 
+tube feeding routes. 
+2. Calculate proportion of total calories received through these routes. 
+• If the resident took no food or fluids by mouth or took just sips of fluid, stop here and 
+code 3, 51% or more. 
+• If the resident had more substantial oral intake than sips of fluid, consult with the 
+qualified dietitian or other clinically qualified nutrition professional. 
+Coding Instructions 
+• Select the best response: 
+1. 25% or less 
+2. 26% to 50% 
+3. 51% or more 
+  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-17 
+K0710: Percent Intake by Artificial Route (cont.) 
+Example 
+1. Calculation for Proportion of Total Calories from IV or Tube Feeding 
+Resident H has had a feeding tube since their surgery two weeks ago. They are currently 
+more alert and feeling much better. They have been taking soft solids by mouth, but only in 
+small to medium amounts. Within the last 7 days, they have been receiving tube feedings for 
+nutritional supplementation. The dietitian has totaled their calories per day as follows: 
+ 
+Oral and Tube Feeding Intake 
+ 
+ Oral Tube 
+Sun. 500 2,000 
+Mon. 250 2,250 
+Tues. 250 2,250 
+Wed. 350 2,250 
+Thurs. 500 2,000 
+Fri. 250 2,250 
+Sat. 350 2,000 
+Total 2,450 15,000 
+Coding: K0710A columns 2 and 3 would be coded 3, 51% or more. 
+Rationale: Total Oral intake is 2,450 calories 
+Total Tube intake is 15,000 calories 
+Total calories is 2,450 + 15,000 = 17,450 
+Calculation of the percentage of total calories by tube feeding: 
+15,000/17,450 = .859 X 100 = 85.9% 
+Resident H received 85.9% of their calories by tube feeding, therefore 
+K0710A code 3, 51% or more is correct. 
+K0710B, Average Fluid Intake per Day by IV or Tube Feeding 
+Steps for Assessment 
+1. Review intake records from the last 7 days. 
+2. Add up the total amount of fluid received each day by IV and/or tube feedings only. 
+3. Divide the week’s total fluid intake by 7 to calculate the average of fluid intake per day. 
+4. Divide by 7 even if the resident did not receive IV fluids and/or tube feeding on each of the 7 
+days. 
+Coding Instructions 
+Code for the average number of cc per day of fluid the resident received via IV or tube feeding. 
+Record what was actually received by the resident, not what was ordered. 
+• Code 1: 500 cc/day or less 
+• Code 2: 501 cc/day or more 
+  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-18 
+K0710: Percent Intake by Artificial Route (cont.) 
+Examples 
+1. Calculation for Average Daily Fluid Intake 
+Resident A, a long term care resident, has swallowing difficulties secondary to Huntington’s 
+disease. They are able to take oral fluids by mouth with supervision, but not enough to 
+maintain hydration. They received the following daily fluid totals by supplemental tube 
+feedings (including water, prepared nutritional supplements, juices) within the last 7 days. 
+IV Fluid Intake 
+ 
+Sun. 1250 cc 
+Mon. 775 cc 
+Tues. 925 cc 
+Wed. 1200 cc 
+Thurs. 1200 cc 
+Fri. 500 cc 
+Sat. 450 cc 
+Total 6,300 cc 
+Coding: K0710B columns 2 and 3 would be coded 2, 501cc/day or more. 
+Rationale: The total fluid intake by supplemental tube feedings = 6,300 cc 
+6,300 cc divided by 7 days = 900 cc/day 
+900 cc is greater than 500 cc, therefore code 2, 501 cc/day or more is 
+correct. 
+  
+CMS’s RAI Version 3.0 Manual CH 3: MDS Items [K] 
+October 2026 Page K-19 
+K0710: Percent Intake by Artificial Route (cont.) 
+2. Resident K has been able to take some fluids orally; however, due to their progressing 
+multiple sclerosis, their dysphagia is not allowing them to remain hydrated enough. 
+Therefore, they received the following fluid amounts within the last 7 days via supplemental 
+tube feedings while in the hospital and after they were admitted to the nursing home. 
+While in the Hospital 
+While in the Nursing 
+Home 
+ 
+Mon. 400 cc Fri.  510 cc 
+Tues. 520 cc Sat.  520 cc 
+Wed. 500 cc Sun.  490 cc 
+Thurs. 480 cc   
+Total 1,900 cc Total 1,520 cc 
+Coding: K0710B2 would be coded 2, 501 cc/day or more, and K0710B3 would be 
+coded 1, 500 cc/day or less. 
+Rationale: The total fluid intake within the last 7 days while Resident K was a 
+resident of the nursing home was 1,520 cc (510 cc + 520 cc + 490 cc = 
+1,520 cc). Average fluid intake while a resident totaled 507 cc (1,520 cc 
+divided by 3 days). 507 cc is greater than 500 cc, therefore code 2, 501 
+cc/day or more is correct for K0710B2, While a Resident. 
+The total fluid intake during the entire 7 days (includes fluid intake while 
+Resident K was in the hospital AND while Resident K was a resident of 
+the nursing home) was 3,420 cc (1,900 cc + 1,520 cc). Average fluid 
+intake during the entire 7 days was 489 cc (3,420 cc divided by 7 days). 
+489 cc is less than 500 cc, therefore code 1, 500 cc/day or less is correct 
+for K0710B3, During Entire 7 Days. 

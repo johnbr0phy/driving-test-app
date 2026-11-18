@@ -1,0 +1,60 @@
+[
+  {
+    "id": "F001",
+    "answer": "C",
+    "rationale": "Comparer les totaux sur un périmètre identique de services et frais neutralise les différences entre offres."
+  },
+  {
+    "id": "F002",
+    "answer": "A",
+    "rationale": "La protection contre les pénalités couvre le refus de la proposition avant engagement, non les manquements à une prestation acceptée.",
+    "issue": "Préciser de plateforme dans la question : la règle L1326-2 vérifiée concerne les propositions des plateformes, pas toute relation contractuelle de transport."
+  },
+  {
+    "id": "F003",
+    "answer": "D",
+    "rationale": "Le dépassement se fait à droite lorsque le conducteur dépassé a signalé un virage à gauche, sous réserve de sécurité. La voie droite libre et la condition dans D rendent le contexte suffisant."
+  },
+  {
+    "id": "F004",
+    "answer": "A",
+    "rationale": "Le recouvrement des trajets et horaires mesure les possibilités concrètes de substitution par le train."
+  },
+  {
+    "id": "F005",
+    "answer": "B",
+    "rationale": "20 × (1,5 − 1) = 10 mètres supplémentaires."
+  },
+  {
+    "id": "F006",
+    "answer": "A",
+    "rationale": "Le nombre de bagages ne figure pas dans les mentions réglementaires requises; le nom du réservataire, le lieu et le numéro REVTC y figurent.",
+    "issue": "A est la meilleure réponse sur la liste des mentions, mais B bénéficie de la dérogation de contact immédiat pour les informations du client. Pour éviter la confusion créée par à elle seule et le doublon avec F010, remplacer B par une mention obligatoire sans cette dérogation, par exemple la date et heure de réservation."
+  },
+  {
+    "id": "F007",
+    "answer": "B",
+    "rationale": "Un prospect particulier sans achat doit consentir spécifiquement à la prospection commerciale par courriel; la création du compte ne suffit pas."
+  },
+  {
+    "id": "F008",
+    "answer": "C",
+    "rationale": "Le niveau 2 appelle un avis du médecin ou pharmacien avant conduite; ni la seule notice ni le changement autonome du traitement ne remplacent cet avis."
+  },
+  {
+    "id": "F009",
+    "answer": "B",
+    "rationale": "La réservation de voyages professionnels correspond le plus directement à une offre de transferts liés aux voyages d’affaires.",
+    "issue": "B est le meilleur choix mais C reste défendable : des transferts professionnels peuvent servir des déplacements domicile-travail. Préciser transferts pour les voyages d’affaires ou remplacer C par une fonction dont le besoin de transport ne recoupe pas cette offre. Le lien professionnel pertinent, à lui seul, ne rend pas B exclusif."
+  },
+  {
+    "id": "F010",
+    "answer": "B",
+    "rationale": "Lorsque les coordonnées du client manquent, le conducteur doit permettre sans délai à l’agent de contacter ce réservataire; le seul voyageur peut être une autre personne."
+  },
+  {
+    "id": "F011",
+    "answer": "C",
+    "rationale": "En agglomération, faciliter la sortie du bus implique de ralentir et de s’arrêter au besoin, sans arrêt systématique lorsque cela est inutile."
+  }
+]

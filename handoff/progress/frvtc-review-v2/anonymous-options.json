@@ -1,0 +1,1602 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "frvtcCommercial",
+    "optionA": "33,60 \u20ac",
+    "optionB": "31,60 \u20ac",
+    "optionC": "53,60 \u20ac",
+    "optionD": "43,60 \u20ac"
+  },
+  {
+    "reviewId": "R002",
+    "category": "frvtcCommercial",
+    "optionA": "La fiche \u00e9ditoriale publi\u00e9e par un journal local",
+    "optionB": "L'avis qu'un client a laiss\u00e9 sur un annuaire",
+    "optionC": "Son site internet administr\u00e9 en interne",
+    "optionD": "La page de r\u00e9sultats d'un comparateur ind\u00e9pendant"
+  },
+  {
+    "reviewId": "R003",
+    "category": "frvtcCommercial",
+    "optionA": "Publier une page locale d\u00e9crivant ce transfert",
+    "optionB": "Adresser une offre de retour \u00e0 ses anciens clients",
+    "optionC": "Pr\u00e9senter ses services dans une r\u00e9union d'h\u00f4teliers",
+    "optionD": "Distribuer une carte de fid\u00e9lit\u00e9 apr\u00e8s chaque course"
+  },
+  {
+    "reviewId": "R004",
+    "category": "frvtcFrancais",
+    "optionA": "\u00c0 la cliente",
+    "optionB": "\u00c0 la voiture",
+    "optionC": "\u00c0 la conductrice",
+    "optionD": "\u00c0 la r\u00e9ceptionniste"
+  },
+  {
+    "reviewId": "R005",
+    "category": "frvtcCommercial",
+    "optionA": "L'acquisition d'une voiture pour son propre parc",
+    "optionB": "La hausse des frais d'entretien du v\u00e9hicule",
+    "optionC": "Le d\u00e9calage d'un r\u00e8glement de client professionnel",
+    "optionD": "Une nouvelle liaison ferroviaire"
+  },
+  {
+    "reviewId": "R006",
+    "category": "frvtcCommercial",
+    "optionA": "Les r\u00e9servations de la derni\u00e8re soir\u00e9e festive",
+    "optionB": "Les courses et recettes de p\u00e9riodes sans \u00e9v\u00e9nement",
+    "optionC": "Les majorations appliqu\u00e9es pendant les concerts",
+    "optionD": "Les courses de la journ\u00e9e record du festival"
+  },
+  {
+    "reviewId": "R007",
+    "category": "frvtcFrancais",
+    "optionA": "Une distance de trajet sup\u00e9rieure",
+    "optionB": "Une prise en charge d\u00e9plac\u00e9e au centre",
+    "optionC": "Un retour du groupe \u00e0 une heure plus tardive",
+    "optionD": "Un passage dans la zone de travaux"
+  },
+  {
+    "reviewId": "R008",
+    "category": "frvtcReglementation",
+    "optionA": "2033",
+    "optionB": "2031",
+    "optionC": "2029",
+    "optionD": "2027"
+  },
+  {
+    "reviewId": "R009",
+    "category": "frvtcT3p",
+    "optionA": "Des propos sexuels renouvel\u00e9s par un m\u00eame auteur",
+    "optionB": "Des remarques concert\u00e9es entre plusieurs auteurs",
+    "optionC": "Une pression grave visant \u00e0 obtenir un acte sexuel",
+    "optionD": "Un acte sexuel impos\u00e9 par un contact d\u00e9j\u00e0 r\u00e9alis\u00e9"
+  },
+  {
+    "reviewId": "R010",
+    "category": "frvtcCommercial",
+    "optionA": "La remise propos\u00e9e sur son prochain transfert",
+    "optionB": "La pr\u00e9sentation d'un nouveau circuit touristique",
+    "optionC": "L'invitation \u00e0 parrainer une autre personne",
+    "optionD": "La confirmation de l'heure et du lieu de rendez-vous"
+  },
+  {
+    "reviewId": "R011",
+    "category": "frvtcSecurite",
+    "optionA": "Voiture grise, coffre endommag\u00e9, feux de d\u00e9tresse actifs",
+    "optionB": "Deux voitures impliqu\u00e9es, un passager se plaint du bras",
+    "optionC": "A86, sens ext\u00e9rieur, point kilom\u00e9trique rep\u00e9r\u00e9",
+    "optionD": "Deux conducteurs pr\u00e9sents, coordonn\u00e9es des t\u00e9moins not\u00e9es"
+  },
+  {
+    "reviewId": "R012",
+    "category": "frvtcReglementation",
+    "optionA": "La radiation de son inscription VTC",
+    "optionB": "La d\u00e9claration d'un renfort exceptionnel",
+    "optionC": "Le renouvellement de l'inscription existante",
+    "optionD": "La mise \u00e0 jour d'une voiture remplac\u00e9e"
+  },
+  {
+    "reviewId": "R013",
+    "category": "frvtcSecurite",
+    "optionA": "La carte de guidage du trajet",
+    "optionB": "La visioconf\u00e9rence avec le client \u00e0 venir",
+    "optionC": "Le tableau des recettes du chauffeur",
+    "optionD": "Le suivi vid\u00e9o de la prochaine prise en charge"
+  },
+  {
+    "reviewId": "R014",
+    "category": "frvtcReglementation",
+    "optionA": "Un support int\u00e9rieur pour le guidage du chauffeur",
+    "optionB": "Un panneau amovible au nom du client \u00e0 l'accueil",
+    "optionC": "Un rangement int\u00e9rieur pour les justificatifs",
+    "optionD": "Un lumineux de toit du type r\u00e9serv\u00e9 aux taxis"
+  },
+  {
+    "reviewId": "R015",
+    "category": "frvtcReglementation",
+    "optionA": "\u00c0 la prochaine \u00e9ch\u00e9ance quinquennale du registre",
+    "optionB": "Dans les quinze jours francs du changement",
+    "optionC": "Au terme du mois de remplacement exceptionnel",
+    "optionD": "Au moins trois mois avant l'\u00e9ch\u00e9ance d'inscription"
+  },
+  {
+    "reviewId": "R016",
+    "category": "frvtcAnglais",
+    "optionA": "Un trajet plus rapide m\u00eame s'il co\u00fbte davantage",
+    "optionB": "Un trajet au m\u00eame prix avec moins d'arr\u00eats",
+    "optionC": "Un trajet moins co\u00fbteux malgr\u00e9 une dur\u00e9e sup\u00e9rieure",
+    "optionD": "Un trajet plus court \u00e0 condition de gagner du temps"
+  },
+  {
+    "reviewId": "R017",
+    "category": "frvtcReglementation",
+    "optionA": "Un semestre ferme",
+    "optionB": "Une ann\u00e9e indivisible",
+    "optionC": "Un trimestre ferme",
+    "optionD": "Un mois renouvelable"
+  },
+  {
+    "reviewId": "R018",
+    "category": "frvtcSecurite",
+    "optionA": "Le porte-bagages ext\u00e9rieur de toit",
+    "optionB": "Le tapis de protection pos\u00e9 dans le coffre",
+    "optionC": "Le support de t\u00e9l\u00e9phone fix\u00e9 au tableau de bord",
+    "optionD": "Le dispositif de retenue enfant \u00e0 l'arri\u00e8re"
+  },
+  {
+    "reviewId": "R019",
+    "category": "frvtcCommercial",
+    "optionA": "Fr\u00e9quence des d\u00e9parts matinaux et volume de bagages",
+    "optionB": "Moyen de r\u00e8glement et r\u00e9f\u00e9rence du paiement",
+    "optionC": "Publicit\u00e9 consult\u00e9e et co\u00fbt du premier contact",
+    "optionD": "Code postal et quartier de r\u00e9sidence"
+  },
+  {
+    "reviewId": "R020",
+    "category": "frvtcReglementation",
+    "optionA": "Le 2 juillet",
+    "optionB": "Le 12 juillet",
+    "optionC": "Le 12 juin",
+    "optionD": "Le 30 juin"
+  },
+  {
+    "reviewId": "R021",
+    "category": "frvtcCommercial",
+    "optionA": "Les deux solutions, \u00e0 contribution \u00e9gale",
+    "optionB": "La longue course, avec 8 \u20ac de plus",
+    "optionC": "Les deux courses, avec 19 \u20ac de plus",
+    "optionD": "Les deux courses, avec 8 \u20ac de plus"
+  },
+  {
+    "reviewId": "R022",
+    "category": "frvtcSecurite",
+    "optionA": "30 m",
+    "optionB": "20 m",
+    "optionC": "5 m",
+    "optionD": "10 m"
+  },
+  {
+    "reviewId": "R023",
+    "category": "frvtcSecurite",
+    "optionA": "A doit laisser B poursuivre sur la voie ext\u00e9rieure",
+    "optionB": "Le premier v\u00e9hicule entr\u00e9 dans le giratoire est prioritaire",
+    "optionC": "B doit laisser A sortir d\u00e8s le clignotant",
+    "optionD": "B doit c\u00e9der parce que A est \u00e0 l'int\u00e9rieur"
+  },
+  {
+    "reviewId": "R024",
+    "category": "frvtcAnglais",
+    "optionA": "Could you open your window a little?",
+    "optionB": "Would you like me to leave it closed?",
+    "optionC": "May I open the window a little?",
+    "optionD": "Shall I close the window now?"
+  },
+  {
+    "reviewId": "R025",
+    "category": "frvtcReglementation",
+    "optionA": "Une citadine \u00e0 trois portes",
+    "optionB": "Une berline \u00e0 quatre portes",
+    "optionC": "Un cabriolet \u00e0 deux portes",
+    "optionD": "Un coup\u00e9 \u00e0 deux portes"
+  },
+  {
+    "reviewId": "R026",
+    "category": "frvtcT3p",
+    "optionA": "Le num\u00e9ro REVTC et l'adresse du si\u00e8ge",
+    "optionB": "Les propos entendus, avec l'heure et le lieu",
+    "optionC": "Le montant r\u00e9gl\u00e9 et la r\u00e9f\u00e9rence du paiement",
+    "optionD": "La distance parcourue et le tarif kilom\u00e9trique"
+  },
+  {
+    "reviewId": "R027",
+    "category": "frvtcT3p",
+    "optionA": "14 heures / tous les cinq ans",
+    "optionB": "14 heures / chaque ann\u00e9e",
+    "optionC": "7 heures / tous les deux ans",
+    "optionD": "35 heures / tous les cinq ans"
+  },
+  {
+    "reviewId": "R028",
+    "category": "frvtcSecurite",
+    "optionA": "Se d\u00e9porter imm\u00e9diatement \u00e0 gauche malgr\u00e9 le v\u00e9hicule pr\u00e9sent",
+    "optionB": "Passer sur la bande d'arr\u00eat d'urgence avant le v\u00e9hicule arr\u00eat\u00e9",
+    "optionC": "Maintenir l'allure tant qu'aucun changement de voie n'est possible",
+    "optionD": "R\u00e9duire l'allure et s'\u00e9carter dans sa voie autant que possible"
+  },
+  {
+    "reviewId": "R029",
+    "category": "frvtcSecurite",
+    "optionA": "Son m\u00e9decin ou son pharmacien",
+    "optionB": "Le responsable commercial de sa plateforme",
+    "optionC": "L'assureur charg\u00e9 des dommages mat\u00e9riels",
+    "optionD": "Le technicien charg\u00e9 du contr\u00f4le du v\u00e9hicule"
+  },
+  {
+    "reviewId": "R030",
+    "category": "frvtcCommercial",
+    "optionA": "L'horaire de d\u00e9part souhait\u00e9",
+    "optionB": "Les coordonn\u00e9es de r\u00e9ponse",
+    "optionC": "Le revenu annuel",
+    "optionD": "La destination du trajet"
+  },
+  {
+    "reviewId": "R031",
+    "category": "frvtcFrancais",
+    "optionA": "L'envoi du questionnaire aux particuliers",
+    "optionB": "La d\u00e9cision sur les prestations \u00e0 modifier",
+    "optionC": "L'envoi du questionnaire aux entreprises",
+    "optionD": "Le regroupement des r\u00e9ponses des deux groupes"
+  },
+  {
+    "reviewId": "R032",
+    "category": "frvtcCommercial",
+    "optionA": "Un avenant de prix accept\u00e9 par le client et le prestataire",
+    "optionB": "Une nouvelle grille de prix publi\u00e9e sur le site",
+    "optionC": "Une facture au montant sup\u00e9rieur envoy\u00e9e au client",
+    "optionD": "Un message de l'assureur modifiant la prime annuelle"
+  },
+  {
+    "reviewId": "R033",
+    "category": "frvtcT3p",
+    "optionA": "La ligne d'\u00e9coute Violences Femmes Info (3919)",
+    "optionB": "Le num\u00e9ro 17 pour une intervention urgente",
+    "optionC": "Le D\u00e9fenseur des droits pour l'orientation juridique",
+    "optionD": "Le tchat officiel de signalement"
+  },
+  {
+    "reviewId": "R034",
+    "category": "frvtcFrancais",
+    "optionA": "L'identification du propri\u00e9taire par l'accueil",
+    "optionB": "La d\u00e9couverte du bagage par le chauffeur",
+    "optionC": "La remise du bagage au client identifi\u00e9",
+    "optionD": "L'appel du client \u00e0 la soci\u00e9t\u00e9 de transport"
+  },
+  {
+    "reviewId": "R035",
+    "category": "frvtcFrancais",
+    "optionA": "Deux dossiers",
+    "optionB": "Huit dossiers",
+    "optionC": "Un dossier",
+    "optionD": "Aucun dossier"
+  },
+  {
+    "reviewId": "R036",
+    "category": "frvtcReglementation",
+    "optionA": "Un fichier consultable de cette course, avec toutes les mentions requises",
+    "optionB": "Un document papier donnant uniquement le prix et le moyen de paiement",
+    "optionC": "Une capture montrant uniquement la demande d'un client non confirm\u00e9e",
+    "optionD": "Une impression compl\u00e8te de la course faite hier pour le m\u00eame client"
+  },
+  {
+    "reviewId": "R037",
+    "category": "frvtcGestion",
+    "optionA": "Le pr\u00e9sident r\u00e9mun\u00e9r\u00e9 de la SASU",
+    "optionB": "Le g\u00e9rant associ\u00e9 unique de l'EURL",
+    "optionC": "Les deux dirigeants du fait de leur r\u00e9mun\u00e9ration",
+    "optionD": "Aucun des deux du fait de l'associ\u00e9 unique"
+  },
+  {
+    "reviewId": "R038",
+    "category": "frvtcSecurite",
+    "optionA": "Adulte ceintur\u00e9 install\u00e9 sur le si\u00e8ge avant",
+    "optionB": "Enfant en retenue adapt\u00e9e install\u00e9 \u00e0 l'arri\u00e8re",
+    "optionC": "B\u00e9b\u00e9 dos \u00e0 la route install\u00e9 sur un si\u00e8ge arri\u00e8re",
+    "optionD": "B\u00e9b\u00e9 dos \u00e0 la route install\u00e9 sur le si\u00e8ge avant"
+  },
+  {
+    "reviewId": "R039",
+    "category": "frvtcT3p",
+    "optionA": "Un devis donnant prix et mode de r\u00e8glement",
+    "optionB": "Une fiche indiquant places et bagages admis",
+    "optionC": "Un annuaire pr\u00e9sentant entreprise et coordonn\u00e9es",
+    "optionD": "Une carte situant une voiture marqu\u00e9e \u00ab libre \u00bb"
+  },
+  {
+    "reviewId": "R040",
+    "category": "frvtcT3p",
+    "optionA": "Le re\u00e7u identifiant le payeur de la course",
+    "optionB": "Les messages \u00e9tablissant leur pr\u00e9paration commune",
+    "optionC": "Les relev\u00e9s montrant des trajets diff\u00e9rents",
+    "optionD": "La carte indiquant le domicile de la conductrice"
+  },
+  {
+    "reviewId": "R041",
+    "category": "frvtcCommercial",
+    "optionA": "65 %",
+    "optionB": "80 %",
+    "optionC": "28 %",
+    "optionD": "35 %"
+  },
+  {
+    "reviewId": "R042",
+    "category": "frvtcGestion",
+    "optionA": "Une SARL \u00e0 plusieurs associ\u00e9s",
+    "optionB": "La forme SASU",
+    "optionC": "La forme EURL",
+    "optionD": "L'exercice en entreprise individuelle"
+  },
+  {
+    "reviewId": "R043",
+    "category": "frvtcGestion",
+    "optionA": "Le paiement comptant d'une r\u00e9paration r\u00e9alis\u00e9e",
+    "optionB": "Le remboursement du capital d'un emprunt",
+    "optionC": "Le r\u00e8glement d'une dette fournisseur ant\u00e9rieure",
+    "optionD": "La dotation annuelle d'amortissement de la voiture"
+  },
+  {
+    "reviewId": "R044",
+    "category": "frvtcFrancais",
+    "optionA": "Les retours du vendredi soir",
+    "optionB": "Les retours de chaque soir",
+    "optionC": "Les d\u00e9parts du samedi matin",
+    "optionD": "Les devis du vendredi matin"
+  },
+  {
+    "reviewId": "R045",
+    "category": "frvtcFrancais",
+    "optionA": "Reporter la demande au lendemain avant 7 heures",
+    "optionB": "Confirmer au client puis appeler le responsable",
+    "optionC": "Avertir le chauffeur la veille du d\u00e9placement",
+    "optionD": "T\u00e9l\u00e9phoner au responsable avant confirmation"
+  },
+  {
+    "reviewId": "R046",
+    "category": "frvtcGestion",
+    "optionA": "13 000 \u20ac",
+    "optionB": "9 600 \u20ac",
+    "optionC": "6 200 \u20ac",
+    "optionD": "\u22126 200 \u20ac"
+  },
+  {
+    "reviewId": "R047",
+    "category": "frvtcReglementation",
+    "optionA": "Mardi 9 h : commande ; lundi 14 h : d\u00e9part demand\u00e9",
+    "optionB": "Lundi 14 h : commande ; lundi 14 h : d\u00e9part demand\u00e9",
+    "optionC": "Mardi 9 h : commande ; mardi 9 h : d\u00e9part demand\u00e9",
+    "optionD": "Lundi 14 h : commande ; mardi 9 h : d\u00e9part demand\u00e9"
+  },
+  {
+    "reviewId": "R048",
+    "category": "frvtcT3p",
+    "optionA": "Le service de m\u00e9diation de la plateforme",
+    "optionB": "Le 3928 pour l'orientation sur les droits",
+    "optionC": "Le 3919 pour l'\u00e9coute et l'information",
+    "optionD": "Police Secours au 17"
+  },
+  {
+    "reviewId": "R049",
+    "category": "frvtcFrancais",
+    "optionA": "Le m\u00e9canicien apr\u00e8s le retour de la voiture",
+    "optionB": "Le client qui attend le d\u00e9part de la course",
+    "optionC": "La personne charg\u00e9e de remettre les cl\u00e9s",
+    "optionD": "Le chauffeur apr\u00e8s avoir v\u00e9rifi\u00e9 le num\u00e9ro"
+  },
+  {
+    "reviewId": "R050",
+    "category": "frvtcReglementation",
+    "optionA": "80 kW pour une puissance fiscale de 8 CV",
+    "optionB": "83 kW pour une puissance fiscale de 9 CV",
+    "optionC": "85 kW pour une puissance fiscale de 6 CV",
+    "optionD": "82 kW pour une puissance fiscale de 7 CV"
+  },
+  {
+    "reviewId": "R051",
+    "category": "frvtcReglementation",
+    "optionA": "La premi\u00e8re demande un devis \u00e0 la seconde",
+    "optionB": "La seconde adresse un client \u00e0 la premi\u00e8re",
+    "optionC": "La seconde exploite sous l'inscription de la premi\u00e8re",
+    "optionD": "Les deux entreprises comparent leurs disponibilit\u00e9s"
+  },
+  {
+    "reviewId": "R052",
+    "category": "frvtcSecurite",
+    "optionA": "Les pressions sont inf\u00e9rieures aux valeurs pr\u00e9conis\u00e9es",
+    "optionB": "Les valeurs prescrites figurent sur l'\u00e9tiquette constructeur",
+    "optionC": "Le contr\u00f4le a \u00e9t\u00e9 consign\u00e9 au carnet d'entretien",
+    "optionD": "Les pressions \u00e0 froid correspondent aux valeurs prescrites"
+  },
+  {
+    "reviewId": "R053",
+    "category": "frvtcReglementation",
+    "optionA": "Joindre le gestionnaire du registre VTC",
+    "optionB": "Joindre le seul visiteur transport\u00e9",
+    "optionC": "Joindre l'assureur professionnel du chauffeur",
+    "optionD": "Joindre directement le client r\u00e9servataire"
+  },
+  {
+    "reviewId": "R054",
+    "category": "frvtcT3p",
+    "optionA": "Le mode de paiement choisi par le client",
+    "optionB": "Le montant brut factur\u00e9 avant commission",
+    "optionC": "La destination du trajet propos\u00e9",
+    "optionD": "Le nom complet du client r\u00e9servataire"
+  },
+  {
+    "reviewId": "R055",
+    "category": "frvtcCommercial",
+    "optionA": "7 \u20ac",
+    "optionB": "3 \u20ac",
+    "optionC": "10 \u20ac",
+    "optionD": "30 \u20ac"
+  },
+  {
+    "reviewId": "R056",
+    "category": "frvtcAnglais",
+    "optionA": "Demain \u00e0 6 h 45",
+    "optionB": "Demain \u00e0 19 h 15",
+    "optionC": "Demain \u00e0 7 h 15",
+    "optionD": "Aujourd'hui \u00e0 6 h 45"
+  },
+  {
+    "reviewId": "R057",
+    "category": "frvtcReglementation",
+    "optionA": "L'attestation d'inscription de l'entreprise re\u00e7ue du registre",
+    "optionB": "La notification pr\u00e9fectorale de la carte personnelle du chauffeur",
+    "optionC": "Le document provisoire de l'Imprimerie nationale",
+    "optionD": "L'attestation de couverture transmise par l'assureur automobile"
+  },
+  {
+    "reviewId": "R058",
+    "category": "frvtcCommercial",
+    "optionA": "17 280 \u20ac",
+    "optionB": "30 \u20ac",
+    "optionC": "696 \u20ac",
+    "optionD": "24 \u20ac"
+  },
+  {
+    "reviewId": "R059",
+    "category": "frvtcFrancais",
+    "optionA": "Groupe \u00e0 confirmer ; disponibilit\u00e9 du v\u00e9hicule \u00e9tablie",
+    "optionB": "Groupe pr\u00eat ; disponibilit\u00e9 du v\u00e9hicule \u00e0 confirmer",
+    "optionC": "Groupe pr\u00eat ; disponibilit\u00e9 du v\u00e9hicule \u00e9tablie",
+    "optionD": "Groupe \u00e0 confirmer ; disponibilit\u00e9 du v\u00e9hicule \u00e0 confirmer"
+  },
+  {
+    "reviewId": "R060",
+    "category": "frvtcSecurite",
+    "optionA": "Aucun des deux chauffeurs en service",
+    "optionB": "Les deux chauffeurs professionnels",
+    "optionC": "Le chauffeur de VTC entre ses courses",
+    "optionD": "Le chauffeur de taxi en service"
+  },
+  {
+    "reviewId": "R061",
+    "category": "frvtcT3p",
+    "optionA": "La visite de sant\u00e9 aupr\u00e8s de l'employeur",
+    "optionB": "La consultation du m\u00e9decin traitant habituel",
+    "optionC": "La visite chez un m\u00e9decin agr\u00e9\u00e9 par la pr\u00e9fecture",
+    "optionD": "Le contr\u00f4le ophtalmologique des lunettes"
+  },
+  {
+    "reviewId": "R062",
+    "category": "frvtcReglementation",
+    "optionA": "Le num\u00e9ro du contrat d'assurance automobile",
+    "optionB": "Le num\u00e9ro de carte du conducteur affect\u00e9",
+    "optionC": "Son num\u00e9ro d'inscription au REVTC",
+    "optionD": "Le num\u00e9ro de s\u00e9rie du v\u00e9hicule utilis\u00e9"
+  },
+  {
+    "reviewId": "R063",
+    "category": "frvtcSecurite",
+    "optionA": "Poursuivre le franchissement sans acc\u00e9l\u00e9ration brusque",
+    "optionB": "S'arr\u00eater apr\u00e8s le feu d\u00e8s que la chauss\u00e9e le permet",
+    "optionC": "Freiner \u00e0 la ligne m\u00eame si le v\u00e9hicule reste engag\u00e9",
+    "optionD": "Freiner fortement pour respecter l'arr\u00eat au jaune"
+  },
+  {
+    "reviewId": "R064",
+    "category": "frvtcSecurite",
+    "optionA": "Avril 2027",
+    "optionB": "Avril 2031",
+    "optionC": "Octobre 2026",
+    "optionD": "Avril 2028"
+  },
+  {
+    "reviewId": "R065",
+    "category": "frvtcSecurite",
+    "optionA": "110 km/h",
+    "optionB": "130 km/h",
+    "optionC": "100 km/h",
+    "optionD": "90 km/h"
+  },
+  {
+    "reviewId": "R066",
+    "category": "frvtcReglementation",
+    "optionA": "La chambre de m\u00e9tiers de chaque d\u00e9partement",
+    "optionB": "La mairie du si\u00e8ge de l'entreprise",
+    "optionC": "Le pr\u00e9fet de la r\u00e9gion d'\u00cele-de-France",
+    "optionD": "La pr\u00e9fecture de r\u00e9gion Occitanie"
+  },
+  {
+    "reviewId": "R067",
+    "category": "frvtcReglementation",
+    "optionA": "En bas \u00e0 droite sur les deux vitrages avant et arri\u00e8re",
+    "optionB": "En haut \u00e0 droite \u00e0 l'avant et en haut \u00e0 gauche \u00e0 l'arri\u00e8re",
+    "optionC": "En bas \u00e0 gauche sur les deux vitrages avant et arri\u00e8re",
+    "optionD": "En bas \u00e0 gauche \u00e0 l'avant et en bas \u00e0 droite \u00e0 l'arri\u00e8re"
+  },
+  {
+    "reviewId": "R068",
+    "category": "frvtcReglementation",
+    "optionA": "16 h uniquement",
+    "optionB": "14 h 40",
+    "optionC": "15 h",
+    "optionD": "15 h 30"
+  },
+  {
+    "reviewId": "R069",
+    "category": "frvtcT3p",
+    "optionA": "\u00c0 la r\u00e9p\u00e9tition ult\u00e9rieure du geste envisag\u00e9",
+    "optionB": "\u00c0 la transmission des coordonn\u00e9es de Camille",
+    "optionC": "\u00c0 la poursuite physique de la rencontre",
+    "optionD": "Au rapprochement intime envisag\u00e9 par Alex"
+  },
+  {
+    "reviewId": "R070",
+    "category": "frvtcT3p",
+    "optionA": "Refuser un groupe d\u00e9passant les places disponibles",
+    "optionB": "Refuser un cr\u00e9neau d\u00e9j\u00e0 engag\u00e9 pour un autre client",
+    "optionC": "Refuser des valises qui ne peuvent \u00eatre arrim\u00e9es",
+    "optionD": "Refuser une cliente pour une religion qu'on lui attribue"
+  },
+  {
+    "reviewId": "R071",
+    "category": "frvtcT3p",
+    "optionA": "46 \u20ac",
+    "optionB": "38 \u20ac",
+    "optionC": "52 \u20ac",
+    "optionD": "44 \u20ac"
+  },
+  {
+    "reviewId": "R072",
+    "category": "frvtcGestion",
+    "optionA": "Le principal des emprunts d\u00e9j\u00e0 rembours\u00e9s",
+    "optionB": "Les amortissements annuels du v\u00e9hicule",
+    "optionC": "Les apports des associ\u00e9s au capital social",
+    "optionD": "Les cr\u00e9ances clients en attente d'encaissement"
+  },
+  {
+    "reviewId": "R073",
+    "category": "frvtcSecurite",
+    "optionA": "La section plane permettant de voir la fin de man\u0153uvre",
+    "optionB": "La portion d\u00e9couverte sans v\u00e9hicule venant en face",
+    "optionC": "La mont\u00e9e masquant la chauss\u00e9e au-del\u00e0 du sommet",
+    "optionD": "La ligne droite visible et libre sur la distance utile"
+  },
+  {
+    "reviewId": "R074",
+    "category": "frvtcSecurite",
+    "optionA": "B, puisqu'il voit A sur sa droite",
+    "optionB": "A, seulement s'il vise une sortie plus \u00e9loign\u00e9e",
+    "optionC": "A, malgr\u00e9 sa sortie pr\u00e9vue \u00e0 proximit\u00e9",
+    "optionD": "B, si A a d\u00e9j\u00e0 annonc\u00e9 sa sortie"
+  },
+  {
+    "reviewId": "R075",
+    "category": "frvtcSecurite",
+    "optionA": "Conserver un r\u00e9gime \u00e9lev\u00e9 pour disposer de reprise",
+    "optionB": "Garder la vitesse puis freiner \u00e0 l'approche de la file",
+    "optionC": "Rel\u00e2cher t\u00f4t l'acc\u00e9l\u00e9rateur et anticiper le ralentissement",
+    "optionD": "Rouler au point mort pour laisser le moteur au ralenti"
+  },
+  {
+    "reviewId": "R076",
+    "category": "frvtcReglementation",
+    "optionA": "Longueur 4,49 m ; largeur 1,69 m",
+    "optionB": "Longueur 4,70 m ; largeur 1,68 m",
+    "optionC": "Longueur 4,48 m ; largeur 1,78 m",
+    "optionD": "Longueur 4,62 m ; largeur 1,72 m"
+  },
+  {
+    "reviewId": "R077",
+    "category": "frvtcSecurite",
+    "optionA": "La premi\u00e8re arriv\u00e9e, puis l'autre",
+    "optionB": "La rouge, puis la bleue",
+    "optionC": "La premi\u00e8re engag\u00e9e, quelle que soit son origine",
+    "optionD": "La bleue, puis la rouge"
+  },
+  {
+    "reviewId": "R078",
+    "category": "frvtcReglementation",
+    "optionA": "Celui qui d\u00e9tient une nouvelle r\u00e9servation confirm\u00e9e",
+    "optionB": "Celui qui pr\u00e9voit de se rapprocher d'une gare",
+    "optionC": "Celui qui esp\u00e8re une demande via son application",
+    "optionD": "Celui qui voit des clients attendre devant un h\u00f4tel"
+  },
+  {
+    "reviewId": "R079",
+    "category": "frvtcReglementation",
+    "optionA": "Une pose coll\u00e9e dont le retrait d\u00e9truit la vignette",
+    "optionB": "Une pochette fix\u00e9e par deux ventouses au vitrage",
+    "optionC": "Une fixation magn\u00e9tique retir\u00e9e apr\u00e8s le service",
+    "optionD": "Un porte-document d\u00e9tachable sur la plage arri\u00e8re"
+  },
+  {
+    "reviewId": "R080",
+    "category": "frvtcSecurite",
+    "optionA": "Avant le franchissement du feu vert",
+    "optionB": "\u00c0 l'approche du c\u00e9dez-le-passage",
+    "optionC": "\u00c0 l'entr\u00e9e du croisement non signal\u00e9",
+    "optionD": "\u00c0 la ligne du STOP"
+  },
+  {
+    "reviewId": "R081",
+    "category": "frvtcT3p",
+    "optionA": "Marc rejoint la gare uniquement pour y d\u00e9poser Paul",
+    "optionB": "Yann fait un d\u00e9tour complet sans destination personnelle",
+    "optionC": "In\u00e8s sort de chez elle \u00e0 la demande de deux voisins",
+    "optionD": "L\u00e9a rejoint sa famille, m\u00eame sans passager"
+  },
+  {
+    "reviewId": "R082",
+    "category": "frvtcReglementation",
+    "optionA": "\u00c9ric, le pr\u00e9sident de la SAS",
+    "optionB": "Luc, le comptable de la soci\u00e9t\u00e9",
+    "optionC": "Karim, le conducteur r\u00e9f\u00e9rent",
+    "optionD": "Salom\u00e9, l'actionnaire principale"
+  },
+  {
+    "reviewId": "R083",
+    "category": "frvtcFrancais",
+    "optionA": "R\u00e9duire le nombre d'appels re\u00e7us au bureau",
+    "optionB": "Emp\u00eacher les chauffeurs d'acc\u00e9der au t\u00e9l\u00e9phone",
+    "optionC": "Pr\u00e9server la confidentialit\u00e9 des conversations",
+    "optionD": "Signaler au public la fermeture de la r\u00e9ception"
+  },
+  {
+    "reviewId": "R084",
+    "category": "frvtcGestion",
+    "optionA": "120 jours",
+    "optionB": "180 jours",
+    "optionC": "240 jours",
+    "optionD": "300 jours"
+  },
+  {
+    "reviewId": "R085",
+    "category": "frvtcSecurite",
+    "optionA": "Une simple avance d'une file sur une autre",
+    "optionB": "Un changement de voie autoris\u00e9 par la densit\u00e9",
+    "optionC": "Un d\u00e9passement par la droite soumis \u00e0 d\u00e9rogation",
+    "optionD": "Une man\u0153uvre r\u00e9serv\u00e9e aux voies pour v\u00e9hicules lents"
+  },
+  {
+    "reviewId": "R086",
+    "category": "frvtcSecurite",
+    "optionA": "Passer avant lui comme dans une insertion ordinaire",
+    "optionB": "Appliquer la priorit\u00e9 \u00e0 droite entre les deux v\u00e9hicules",
+    "optionC": "Lui c\u00e9der le passage m\u00eame dans ce sens de circulation",
+    "optionD": "C\u00e9der uniquement aux cycles allant dans votre sens"
+  },
+  {
+    "reviewId": "R087",
+    "category": "frvtcT3p",
+    "optionA": "Son re\u00e7u de renouvellement du permis",
+    "optionB": "Son certificat d'aptitude m\u00e9dicale",
+    "optionC": "Son attestation de formation continue",
+    "optionD": "Sa carte professionnelle de conducteur VTC"
+  },
+  {
+    "reviewId": "R088",
+    "category": "frvtcReglementation",
+    "optionA": "La d\u00e9claration p\u00e9riodique des recettes \u00e0 l'Urssaf",
+    "optionB": "L'inscription de l'exploitant au registre VTC",
+    "optionC": "Le renouvellement du permis de conduire",
+    "optionD": "La demande de carte professionnelle personnelle"
+  },
+  {
+    "reviewId": "R089",
+    "category": "frvtcReglementation",
+    "optionA": "La voiture diesel non hybride",
+    "optionB": "La voiture GPL non hybride",
+    "optionC": "La voiture essence non hybride",
+    "optionD": "La voiture enti\u00e8rement \u00e9lectrique"
+  },
+  {
+    "reviewId": "R090",
+    "category": "frvtcCommercial",
+    "optionA": "Le catalogue des prestations propos\u00e9es",
+    "optionB": "Le fichier des oppositions \u00e0 la prospection",
+    "optionC": "Le fichier des factures arriv\u00e9es \u00e0 \u00e9ch\u00e9ance",
+    "optionD": "Le planning des courses d\u00e9j\u00e0 confirm\u00e9es"
+  },
+  {
+    "reviewId": "R091",
+    "category": "frvtcGestion",
+    "optionA": "Dans les dettes fournisseurs",
+    "optionB": "Dans les apports en capital",
+    "optionC": "Dans les cr\u00e9ances clients",
+    "optionD": "Dans les disponibilit\u00e9s bancaires"
+  },
+  {
+    "reviewId": "R092",
+    "category": "frvtcGestion",
+    "optionA": "500 \u20ac",
+    "optionB": "60 \u20ac",
+    "optionC": "560 \u20ac",
+    "optionD": "620 \u20ac"
+  },
+  {
+    "reviewId": "R093",
+    "category": "frvtcGestion",
+    "optionA": "Une facture d'avoir pour les 15 \u20ac corrig\u00e9s",
+    "optionB": "Une facture d'acompte sur une future r\u00e9servation",
+    "optionC": "Une quittance confirmant le r\u00e8glement initial",
+    "optionD": "Un devis pour le prochain d\u00e9placement du client"
+  },
+  {
+    "reviewId": "R094",
+    "category": "frvtcFrancais",
+    "optionA": "Remplac\u00e9 le coll\u00e8gue pr\u00e9sent sur le quai",
+    "optionB": "Augment\u00e9 la valeur attribu\u00e9e au quai",
+    "optionC": "Not\u00e9 l'information indiqu\u00e9e sur place",
+    "optionD": "Redress\u00e9 un panneau tomb\u00e9 sur le quai"
+  },
+  {
+    "reviewId": "R095",
+    "category": "frvtcSecurite",
+    "optionA": "Surveiller la personne en \u00e9vitant de la d\u00e9placer",
+    "optionB": "L'aider \u00e0 marcher jusqu'au v\u00e9hicule du t\u00e9moin",
+    "optionC": "La sortir pour examiner sa mobilit\u00e9 sur l'accotement",
+    "optionD": "La transf\u00e9rer sur le si\u00e8ge arri\u00e8re pour l'allonger"
+  },
+  {
+    "reviewId": "R096",
+    "category": "frvtcT3p",
+    "optionA": "Les taxis prenant des clients \u00e0 leur station",
+    "optionB": "La ligne desservant les arr\u00eats \u00e0 heures fixes",
+    "optionC": "Les motos transportant un client sur commande",
+    "optionD": "Les voitures r\u00e9serv\u00e9es pour chaque d\u00e9placement"
+  },
+  {
+    "reviewId": "R097",
+    "category": "frvtcSecurite",
+    "optionA": "110 km/h",
+    "optionB": "80 km/h",
+    "optionC": "50 km/h",
+    "optionD": "70 km/h"
+  },
+  {
+    "reviewId": "R098",
+    "category": "frvtcSecurite",
+    "optionA": "Le haut-parleur int\u00e9gr\u00e9 au tableau de bord",
+    "optionB": "Le haut-parleur du GPS fix\u00e9 au v\u00e9hicule",
+    "optionC": "Une aide auditive port\u00e9e pour corriger l'audition",
+    "optionD": "Une oreillette Bluetooth diffusant le GPS"
+  },
+  {
+    "reviewId": "R099",
+    "category": "frvtcGestion",
+    "optionA": "175 500 \u20ac",
+    "optionB": "16 500 \u20ac",
+    "optionC": "79 500 \u20ac",
+    "optionD": "96 000 \u20ac"
+  },
+  {
+    "reviewId": "R100",
+    "category": "frvtcSecurite",
+    "optionA": "Pr\u00e9voir la ceinture adulte seule sur la banquette arri\u00e8re",
+    "optionB": "Partager la ceinture du parent install\u00e9 \u00e0 c\u00f4t\u00e9 de lui",
+    "optionC": "Appliquer la dispense propre au transport par taxi",
+    "optionD": "R\u00e9server une retenue homologu\u00e9e adapt\u00e9e \u00e0 sa morphologie"
+  },
+  {
+    "reviewId": "R101",
+    "category": "frvtcFrancais",
+    "optionA": "Un volume stable avec une r\u00e9partition diff\u00e9rente",
+    "optionB": "Une baisse des trajets d'a\u00e9roport et de bureau",
+    "optionC": "Un volume sup\u00e9rieur malgr\u00e9 une client\u00e8le stable",
+    "optionD": "Une hausse g\u00e9n\u00e9rale des demandes de transport"
+  },
+  {
+    "reviewId": "R102",
+    "category": "frvtcAnglais",
+    "optionA": "Could you put the bags in the boot?",
+    "optionB": "Would you like to carry your bags inside?",
+    "optionC": "Shall I put your bags in the boot?",
+    "optionD": "May I take my bag out of the boot?"
+  },
+  {
+    "reviewId": "R103",
+    "category": "frvtcCommercial",
+    "optionA": "Montant du budget publicitaire par campagne",
+    "optionB": "Code postal du prospect et zone desservie",
+    "optionC": "Cat\u00e9gorie et capacit\u00e9 du v\u00e9hicule propos\u00e9",
+    "optionD": "Date du dernier contact, auteur et prochaine action"
+  },
+  {
+    "reviewId": "R104",
+    "category": "frvtcCommercial",
+    "optionA": "80 %",
+    "optionB": "20 %",
+    "optionC": "25 %",
+    "optionD": "125 %"
+  },
+  {
+    "reviewId": "R105",
+    "category": "frvtcSecurite",
+    "optionA": "75 m",
+    "optionB": "50 m",
+    "optionC": "90 m",
+    "optionD": "25 m"
+  },
+  {
+    "reviewId": "R106",
+    "category": "frvtcCommercial",
+    "optionA": "28 \u20ac",
+    "optionB": "10 \u20ac",
+    "optionC": "8 \u20ac",
+    "optionD": "18 \u20ac"
+  },
+  {
+    "reviewId": "R107",
+    "category": "frvtcReglementation",
+    "optionA": "Cartes grises des voitures et cartes professionnelles des chauffeurs",
+    "optionB": "Permis des chauffeurs et devis accept\u00e9s des clients",
+    "optionC": "Attestations de stage et relev\u00e9s de chiffre d'affaires",
+    "optionD": "Contrats de r\u00e9servation et factures de location des voitures"
+  },
+  {
+    "reviewId": "R108",
+    "category": "frvtcFrancais",
+    "optionA": "Pourriez-vous confirmer l'heure du d\u00e9part ?",
+    "optionB": "Pourriez-vous pr\u00e9ciser le num\u00e9ro du b\u00e2timent ?",
+    "optionC": "Pourriez-vous confirmer le nombre de voyageurs ?",
+    "optionD": "Pourriez-vous indiquer une autre destination ?"
+  },
+  {
+    "reviewId": "R109",
+    "category": "frvtcGestion",
+    "optionA": "3 060 \u20ac",
+    "optionB": "150 \u20ac",
+    "optionC": "5 760 \u20ac",
+    "optionD": "360 \u20ac"
+  },
+  {
+    "reviewId": "R110",
+    "category": "frvtcCommercial",
+    "optionA": "Une politique d'\u00e9cr\u00e9mage",
+    "optionB": "Une politique de prix de prestige",
+    "optionC": "Une politique de p\u00e9n\u00e9tration",
+    "optionD": "Une politique d'alignement"
+  },
+  {
+    "reviewId": "R111",
+    "category": "frvtcReglementation",
+    "optionA": "Le 30 novembre",
+    "optionB": "Le 30 septembre",
+    "optionC": "Le 30 ao\u00fbt",
+    "optionD": "Le 30 octobre"
+  },
+  {
+    "reviewId": "R112",
+    "category": "frvtcCommercial",
+    "optionA": "Les deux prix d'appel avant ajout des suppl\u00e9ments",
+    "optionB": "Les remises maximales propos\u00e9es \u00e0 de nouveaux clients",
+    "optionC": "Les deux totaux incluant cette attente et ces p\u00e9ages",
+    "optionD": "Les seuls tarifs kilom\u00e9triques annonc\u00e9s"
+  },
+  {
+    "reviewId": "R113",
+    "category": "frvtcReglementation",
+    "optionA": "La validation d'une d\u00e9claration de renfort temporaire",
+    "optionB": "La r\u00e9gularisation avant un \u00e9ventuel refus",
+    "optionC": "La notification du renouvellement quinquennal",
+    "optionD": "La radiation apr\u00e8s cessation d\u00e9finitive d'activit\u00e9"
+  },
+  {
+    "reviewId": "R114",
+    "category": "frvtcT3p",
+    "optionA": "Un outrage sexiste ou sexuel",
+    "optionB": "Un harc\u00e8lement par pression grave \u00e0 but sexuel",
+    "optionC": "Un harc\u00e8lement sexuel par propos r\u00e9p\u00e9t\u00e9s",
+    "optionD": "Une agression sexuelle sans p\u00e9n\u00e9tration"
+  },
+  {
+    "reviewId": "R115",
+    "category": "frvtcReglementation",
+    "optionA": "Quinze jours ouvr\u00e9s",
+    "optionB": "Un mois",
+    "optionC": "Trois mois renouvelables automatiquement",
+    "optionD": "Six mois si la location est \u00e9crite"
+  },
+  {
+    "reviewId": "R116",
+    "category": "frvtcFrancais",
+    "optionA": "D\u00e9poser l'objet au bureau et contacter le voyageur",
+    "optionB": "Faire v\u00e9rifier les coordonn\u00e9es et contacter le voyageur",
+    "optionC": "R\u00e9diger la fiche de d\u00e9couverte et d\u00e9poser l'objet au bureau",
+    "optionD": "Transmettre les coordonn\u00e9es et remettre l'objet au voyageur"
+  },
+  {
+    "reviewId": "R117",
+    "category": "frvtcCommercial",
+    "optionA": "Les trois transitions ont le m\u00eame taux",
+    "optionB": "Du formulaire envoy\u00e9 \u00e0 la r\u00e9servation",
+    "optionC": "Du d\u00e9but de formulaire \u00e0 son envoi",
+    "optionD": "De la page tarif au d\u00e9but de formulaire"
+  },
+  {
+    "reviewId": "R118",
+    "category": "frvtcGestion",
+    "optionA": "90 \u20ac de base plus 1 \u20ac par passage du v\u00e9hicule",
+    "optionB": "2 \u20ac par entr\u00e9e enregistr\u00e9e dans le parking",
+    "optionC": "240 \u20ac pour le mois, sans part li\u00e9e \u00e0 l'usage",
+    "optionD": "6 \u20ac par journ\u00e9e effectivement stationn\u00e9e"
+  },
+  {
+    "reviewId": "R119",
+    "category": "frvtcAnglais",
+    "optionA": "Une temp\u00e9rature plus \u00e9lev\u00e9e",
+    "optionB": "Une climatisation plus froide",
+    "optionC": "Une fen\u00eatre l\u00e9g\u00e8rement ouverte",
+    "optionD": "Une ventilation moins bruyante"
+  },
+  {
+    "reviewId": "R120",
+    "category": "frvtcSecurite",
+    "optionA": "B passe seulement si A n'a pas franchi le trottoir",
+    "optionB": "A passe avant B qui arrive de gauche",
+    "optionC": "A passe d\u00e8s que B a vu son clignotant",
+    "optionD": "B passe avant A qui quitte le parking"
+  },
+  {
+    "reviewId": "R121",
+    "category": "frvtcGestion",
+    "optionA": "Le portail du registre sectoriel des VTC",
+    "optionB": "Le portail de d\u00e9claration de recettes de l'Urssaf",
+    "optionC": "Le service pr\u00e9fectoral des cartes professionnelles",
+    "optionD": "Le guichet unique \u00e9lectronique des formalit\u00e9s"
+  },
+  {
+    "reviewId": "R122",
+    "category": "frvtcFrancais",
+    "optionA": "Alpha facture trente minutes suppl\u00e9mentaires de trajet",
+    "optionB": "B\u00eata pr\u00e9voit un trajet plus long que celui d'Alpha",
+    "optionC": "Alpha utilise une voiture d'une cat\u00e9gorie sup\u00e9rieure",
+    "optionD": "B\u00eata inclut trente minutes d'attente de plus"
+  },
+  {
+    "reviewId": "R123",
+    "category": "frvtcGestion",
+    "optionA": "4 300 \u20ac",
+    "optionB": "3 400 \u20ac",
+    "optionC": "4 600 \u20ac",
+    "optionD": "3 700 \u20ac"
+  },
+  {
+    "reviewId": "R124",
+    "category": "frvtcT3p",
+    "optionA": "La pr\u00e9fecture de Paris",
+    "optionB": "La pr\u00e9fecture du Rh\u00f4ne",
+    "optionC": "La pr\u00e9fecture de la C\u00f4te-d'Or",
+    "optionD": "La pr\u00e9fecture de l'Is\u00e8re"
+  },
+  {
+    "reviewId": "R125",
+    "category": "frvtcFrancais",
+    "optionA": "16 h 30 devant le b\u00e2timent A",
+    "optionB": "16 heures devant le b\u00e2timent A",
+    "optionC": "16 h 30 devant le b\u00e2timent B",
+    "optionD": "16 h 15 devant le b\u00e2timent A"
+  },
+  {
+    "reviewId": "R126",
+    "category": "frvtcFrancais",
+    "optionA": "Apr\u00e8s le mus\u00e9e, en tournant \u00e0 droite",
+    "optionB": "Avant le pont, en tournant \u00e0 gauche",
+    "optionC": "Apr\u00e8s le pont, en tournant \u00e0 gauche",
+    "optionD": "Avant la pharmacie, en tournant \u00e0 droite"
+  },
+  {
+    "reviewId": "R127",
+    "category": "frvtcFrancais",
+    "optionA": "Le nom du pr\u00e9sident de s\u00e9ance",
+    "optionB": "L'adresse pr\u00e9cise de la sortie",
+    "optionC": "Le compte rendu de la r\u00e9union",
+    "optionD": "L'heure retenue pour le d\u00e9part"
+  },
+  {
+    "reviewId": "R128",
+    "category": "frvtcReglementation",
+    "optionA": "75 \u20ac",
+    "optionB": "60 \u20ac",
+    "optionC": "80 \u20ac",
+    "optionD": "20 \u20ac"
+  },
+  {
+    "reviewId": "R129",
+    "category": "frvtcGestion",
+    "optionA": "Un avoir",
+    "optionB": "Un devis",
+    "optionC": "Une facture acquitt\u00e9e",
+    "optionD": "Une quittance"
+  },
+  {
+    "reviewId": "R130",
+    "category": "frvtcT3p",
+    "optionA": "Un groupe d\u00e9passant les places homologu\u00e9es",
+    "optionB": "Un chargement exc\u00e9dant la capacit\u00e9 du coffre",
+    "optionC": "L'absence de voiture disponible au cr\u00e9neau",
+    "optionD": "L'origine suppos\u00e9e du voyageur"
+  },
+  {
+    "reviewId": "R131",
+    "category": "frvtcSecurite",
+    "optionA": "Un changement de couleur de la bo\u00eete d\u00e9livr\u00e9e",
+    "optionB": "L'apparition d'une somnolence apr\u00e8s la prise",
+    "optionC": "La r\u00e9ception du rappel de renouvellement d'ordonnance",
+    "optionD": "La d\u00e9couverte d'un nouveau conditionnement du produit"
+  },
+  {
+    "reviewId": "R132",
+    "category": "frvtcGestion",
+    "optionA": "Une SARL",
+    "optionB": "Une EURL",
+    "optionC": "Une SASU",
+    "optionD": "Une entreprise individuelle"
+  },
+  {
+    "reviewId": "R133",
+    "category": "frvtcFrancais",
+    "optionA": "Renvoyer une copie du document de paiement",
+    "optionB": "Pr\u00e9parer une nouvelle offre de transfert \u00e0 52 \u20ac",
+    "optionC": "Ajouter les frais d'attente au montant de 64 \u20ac",
+    "optionD": "Demander au client de r\u00e9gler encore les 12 \u20ac"
+  },
+  {
+    "reviewId": "R134",
+    "category": "frvtcCommercial",
+    "optionA": "Le r\u00e9ceptionniste qui a recommand\u00e9 le chauffeur",
+    "optionB": "Mme Roux, responsable du choix aux achats",
+    "optionC": "Mme Blanc, charg\u00e9e du r\u00e8glement comptable",
+    "optionD": "M. Diallo, technicien transport\u00e9"
+  },
+  {
+    "reviewId": "R135",
+    "category": "frvtcReglementation",
+    "optionA": "La voiture mise en circulation il y a six ans et neuf mois",
+    "optionB": "La voiture mise en circulation il y a neuf ans et six mois",
+    "optionC": "La voiture mise en circulation il y a huit ans et deux mois",
+    "optionD": "La voiture mise en circulation il y a sept ans et un mois"
+  },
+  {
+    "reviewId": "R136",
+    "category": "frvtcT3p",
+    "optionA": "Le conducteur qui r\u00e9alise la prestation",
+    "optionB": "Le centre de contr\u00f4le des r\u00e9servations",
+    "optionC": "Le service charg\u00e9 des tarifs de la plateforme",
+    "optionD": "L'exploitant de l'application de navigation"
+  },
+  {
+    "reviewId": "R137",
+    "category": "frvtcT3p",
+    "optionA": "Le certificat d'immatriculation du v\u00e9hicule",
+    "optionB": "L'attestation de RC professionnelle",
+    "optionC": "Un justificatif de r\u00e9servation ant\u00e9rieure",
+    "optionD": "La carte professionnelle du conducteur"
+  },
+  {
+    "reviewId": "R138",
+    "category": "frvtcGestion",
+    "optionA": "Le maintien du r\u00e9gime micro avec son abattement",
+    "optionB": "Le versement lib\u00e9ratoire de l'imp\u00f4t sur le revenu",
+    "optionC": "L'option pour un r\u00e9gime r\u00e9el d'imposition",
+    "optionD": "L'option pour la franchise en base de TVA"
+  },
+  {
+    "reviewId": "R139",
+    "category": "frvtcCommercial",
+    "optionA": "Un chauffeur ind\u00e9pendant proposant le m\u00eame transfert",
+    "optionB": "Une autre entreprise de VTC sur ce trajet",
+    "optionC": "Une centrale de r\u00e9servation de voitures avec chauffeur",
+    "optionD": "Une navette collective desservant l'a\u00e9roport"
+  },
+  {
+    "reviewId": "R140",
+    "category": "frvtcT3p",
+    "optionA": "Son contrat avec une plateforme de r\u00e9servation",
+    "optionB": "Son inscription au registre des entreprises",
+    "optionC": "Son agr\u00e9ment de centre de formation VTC",
+    "optionD": "Son attestation d'assurance professionnelle"
+  },
+  {
+    "reviewId": "R141",
+    "category": "frvtcT3p",
+    "optionA": "L'acceptation du d\u00e9placement professionnel",
+    "optionB": "La compr\u00e9hension de la destination annonc\u00e9e",
+    "optionC": "L'accord sur le lieu de d\u00e9pose pr\u00e9vu",
+    "optionD": "Un accord libre et sp\u00e9cifique \u00e0 l'acte sexuel"
+  },
+  {
+    "reviewId": "R142",
+    "category": "frvtcCommercial",
+    "optionA": "Le taux augmente mais le nombre de r\u00e9servations baisse",
+    "optionB": "Le taux et le nombre de r\u00e9servations augmentent",
+    "optionC": "Le taux diminue alors que le volume augmente",
+    "optionD": "Le nombre de r\u00e9servations reste identique"
+  },
+  {
+    "reviewId": "R143",
+    "category": "frvtcT3p",
+    "optionA": "L'assurance des locaux de stationnement",
+    "optionB": "Le contrat de pr\u00e9voyance du dirigeant",
+    "optionC": "L'attestation de responsabilit\u00e9 civile professionnelle",
+    "optionD": "Le certificat de garantie de valeur d'achat"
+  },
+  {
+    "reviewId": "R144",
+    "category": "frvtcCommercial",
+    "optionA": "R\u00e9interroger les m\u00eames personnes sur une seconde grille",
+    "optionB": "Conserver ce lieu et raccourcir chaque question",
+    "optionC": "Conserver ce cr\u00e9neau et changer la couleur du formulaire",
+    "optionD": "Consulter d'autres client\u00e8les et cr\u00e9neaux"
+  },
+  {
+    "reviewId": "R145",
+    "category": "frvtcT3p",
+    "optionA": "Le tarif indiquant une prestation nocturne",
+    "optionB": "Le re\u00e7u indiquant le moyen de paiement",
+    "optionC": "La r\u00e9servation identifiant le donneur d'ordre",
+    "optionD": "La trace situant les faits \u00e0 bord du VTC"
+  },
+  {
+    "reviewId": "R146",
+    "category": "frvtcGestion",
+    "optionA": "27 000 \u20ac",
+    "optionB": "18 000 \u20ac",
+    "optionC": "63 000 \u20ac",
+    "optionD": "45 000 \u20ac"
+  },
+  {
+    "reviewId": "R147",
+    "category": "frvtcAnglais",
+    "optionA": "Dans l'h\u00f4tel, pr\u00e8s de la r\u00e9ception",
+    "optionB": "Devant l'h\u00f4tel, en face de la pharmacie",
+    "optionC": "Derri\u00e8re la pharmacie, dans la cour de l'h\u00f4tel",
+    "optionD": "Face \u00e0 l'h\u00f4tel, \u00e0 c\u00f4t\u00e9 de la pharmacie"
+  },
+  {
+    "reviewId": "R148",
+    "category": "frvtcCommercial",
+    "optionA": "60 \u20ac",
+    "optionB": "75 \u20ac",
+    "optionC": "72 \u20ac",
+    "optionD": "62,40 \u20ac"
+  },
+  {
+    "reviewId": "R149",
+    "category": "frvtcT3p",
+    "optionA": "La carte professionnelle encore valable",
+    "optionB": "L'attestation de son dernier stage suivi",
+    "optionC": "Les factures de ses anciennes prestations",
+    "optionD": "Le certificat d'immatriculation de sa voiture"
+  },
+  {
+    "reviewId": "R150",
+    "category": "frvtcT3p",
+    "optionA": "La licence de stationnement d'un taxi",
+    "optionB": "L'immatriculation de sa propre entreprise",
+    "optionC": "Sa carte professionnelle VTC",
+    "optionD": "L'inscription REVTC de l'employeur"
+  },
+  {
+    "reviewId": "R151",
+    "category": "frvtcReglementation",
+    "optionA": "Carte du chauffeur renouvel\u00e9e la semaine pr\u00e9c\u00e9dente",
+    "optionB": "Inscription arriv\u00e9e \u00e0 \u00e9ch\u00e9ance sans renouvellement",
+    "optionC": "Facture de location r\u00e9gl\u00e9e avec quelques jours de retard",
+    "optionD": "Nouveau t\u00e9l\u00e9phone d\u00e9clar\u00e9 pour joindre l'entreprise"
+  },
+  {
+    "reviewId": "R152",
+    "category": "frvtcFrancais",
+    "optionA": "Discuter du devis avec le client",
+    "optionB": "Confirmer l'horaire de la course de mardi",
+    "optionC": "Remercier le client apr\u00e8s sa course de mardi",
+    "optionD": "Modifier la destination de la course confirm\u00e9e"
+  },
+  {
+    "reviewId": "R153",
+    "category": "frvtcCommercial",
+    "optionA": "La pr\u00e9fecture comp\u00e9tente pour la carte du conducteur",
+    "optionB": "La CMA organisatrice de la session d'examen",
+    "optionC": "Le gestionnaire du REVTC pour une mise \u00e0 jour de v\u00e9hicule",
+    "optionD": "Le m\u00e9diateur d\u00e9sign\u00e9 par le professionnel"
+  },
+  {
+    "reviewId": "R154",
+    "category": "frvtcCommercial",
+    "optionA": "D\u00e9penses publicitaires divis\u00e9es par nouveaux clients",
+    "optionB": "Clients r\u00e9currents divis\u00e9s par clients de la cohorte",
+    "optionC": "R\u00e9servations pay\u00e9es divis\u00e9es par devis accept\u00e9s",
+    "optionD": "Demandes r\u00e9alisables divis\u00e9es par demandes re\u00e7ues"
+  },
+  {
+    "reviewId": "R155",
+    "category": "frvtcFrancais",
+    "optionA": "La cause de la visite du v\u00e9hicule au garage",
+    "optionB": "La cons\u00e9quence de l'indisponibilit\u00e9 du v\u00e9hicule",
+    "optionC": "La condition n\u00e9cessaire pour accepter samedi",
+    "optionD": "La comparaison entre les deux voitures utilis\u00e9es"
+  },
+  {
+    "reviewId": "R156",
+    "category": "frvtcGestion",
+    "optionA": "PRO-2026-043",
+    "optionB": "PRO-2026-119",
+    "optionC": "WEB-2026-119",
+    "optionD": "WEB-2026-043"
+  },
+  {
+    "reviewId": "R157",
+    "category": "frvtcSecurite",
+    "optionA": "Vous, qui approchez derri\u00e8re l'autobus",
+    "optionB": "Le passager qui attend encore sur le trottoir",
+    "optionC": "Le conducteur situ\u00e9 sur une rue non d\u00e9bouchante",
+    "optionD": "Le seul v\u00e9hicule qui vient en sens inverse"
+  },
+  {
+    "reviewId": "R158",
+    "category": "frvtcCommercial",
+    "optionA": "96 \u20ac",
+    "optionB": "75 \u20ac",
+    "optionC": "54 \u20ac",
+    "optionD": "90 \u20ac"
+  },
+  {
+    "reviewId": "R159",
+    "category": "frvtcAnglais",
+    "optionA": "Yes, I travelled here with Ms Brown.",
+    "optionB": "Yes, I'm going to visit Ms Brown.",
+    "optionC": "Yes, I have just dropped off Ms Brown.",
+    "optionD": "Yes, I'm waiting for Ms Brown."
+  },
+  {
+    "reviewId": "R160",
+    "category": "frvtcCommercial",
+    "optionA": "50 \u20ac",
+    "optionB": "200 \u20ac",
+    "optionC": "60 \u20ac",
+    "optionD": "40 \u20ac"
+  },
+  {
+    "reviewId": "R161",
+    "category": "frvtcSecurite",
+    "optionA": "1,50 m",
+    "optionB": "1 m",
+    "optionC": "0,50 m",
+    "optionD": "2 m"
+  },
+  {
+    "reviewId": "R162",
+    "category": "frvtcAnglais",
+    "optionA": "L'arriv\u00e9e pourrait avoir dix minutes de retard",
+    "optionB": "Le d\u00e9part a \u00e9t\u00e9 report\u00e9 de dix minutes",
+    "optionC": "La route sera ferm\u00e9e dans dix minutes",
+    "optionD": "Le trajet durera encore exactement dix minutes"
+  },
+  {
+    "reviewId": "R163",
+    "category": "frvtcT3p",
+    "optionA": "La confirmation de r\u00e9servation du transfert",
+    "optionB": "Son abonnement commercial aupr\u00e8s du transporteur",
+    "optionC": "Sa carte mobilit\u00e9 inclusion portant la mention invalidit\u00e9",
+    "optionD": "Le re\u00e7u du paiement anticip\u00e9 de la course"
+  },
+  {
+    "reviewId": "R164",
+    "category": "frvtcT3p",
+    "optionA": "Un propos unique tenu par un groupe concert\u00e9",
+    "optionB": "Un contact sexuel impos\u00e9 pendant le trajet",
+    "optionC": "Le retour des propos envers la m\u00eame personne",
+    "optionD": "Une pression isol\u00e9e pour obtenir un acte sexuel"
+  },
+  {
+    "reviewId": "R165",
+    "category": "frvtcSecurite",
+    "optionA": "Une valise bloque le d\u00e9placement n\u00e9cessaire d'une commande",
+    "optionB": "Le coffre contient une valise de plus que pr\u00e9vu au devis",
+    "optionC": "Le client demande une autre adresse de d\u00e9pose",
+    "optionD": "La r\u00e9partition des sacs change entre deux places arri\u00e8re"
+  },
+  {
+    "reviewId": "R166",
+    "category": "frvtcCommercial",
+    "optionA": "La responsable charg\u00e9e des voyages de l'entreprise",
+    "optionB": "Le responsable charg\u00e9 de la maintenance des machines",
+    "optionC": "La graphiste charg\u00e9e des visuels du catalogue",
+    "optionD": "Le technicien charg\u00e9 des r\u00e9parations informatiques"
+  },
+  {
+    "reviewId": "R167",
+    "category": "frvtcT3p",
+    "optionA": "Renouveler une carte obtenue apr\u00e8s r\u00e9ussite \u00e0 l'examen",
+    "optionB": "\u00c9carter la dispense nationale fond\u00e9e sur cette exp\u00e9rience",
+    "optionC": "Instruire une reconnaissance de qualification europ\u00e9enne",
+    "optionD": "Examiner le dossier sous le r\u00e9gime transitoire ant\u00e9rieur"
+  },
+  {
+    "reviewId": "R168",
+    "category": "frvtcCommercial",
+    "optionA": "La confirmation technique d'un mot de passe",
+    "optionB": "La facture du transfert pr\u00e9c\u00e9demment achet\u00e9",
+    "optionC": "La date de cr\u00e9ation du compte sans commande",
+    "optionD": "La fonction professionnelle du destinataire"
+  },
+  {
+    "reviewId": "R169",
+    "category": "frvtcT3p",
+    "optionA": "Au site pour son service de mise en relation",
+    "optionB": "Au conducteur pour le temps de prise en charge",
+    "optionC": "Au conducteur pour sa disponibilit\u00e9 professionnelle",
+    "optionD": "Au conducteur pour une marge sur le transport"
+  },
+  {
+    "reviewId": "R170",
+    "category": "frvtcT3p",
+    "optionA": "L'expression de son souhait d'arr\u00eater",
+    "optionB": "L'\u00e9change pr\u00e9alable de coordonn\u00e9es",
+    "optionC": "La d\u00e9cision initiale de se rencontrer",
+    "optionD": "L'arriv\u00e9e \u00e0 l'endroit convenu ensemble"
+  },
+  {
+    "reviewId": "R171",
+    "category": "frvtcAnglais",
+    "optionA": "Which station are you going to?",
+    "optionB": "Where did your journey start?",
+    "optionC": "How many bags are you taking?",
+    "optionD": "What time does your train leave?"
+  },
+  {
+    "reviewId": "R172",
+    "category": "frvtcGestion",
+    "optionA": "Banque +20 000 \u20ac ; cr\u00e9ance client \u221220 000 \u20ac",
+    "optionB": "Banque +20 000 \u20ac ; dette bancaire +20 000 \u20ac",
+    "optionC": "Voiture +20 000 \u20ac ; banque \u221220 000 \u20ac",
+    "optionD": "Banque +20 000 \u20ac ; capital social +20 000 \u20ac"
+  },
+  {
+    "reviewId": "R173",
+    "category": "frvtcT3p",
+    "optionA": "D\u00e9placements priv\u00e9s et trajets domicile-travail",
+    "optionB": "Transport de marchandises pour compte propre",
+    "optionC": "Transport de personnes \u00e0 titre on\u00e9reux",
+    "optionD": "Mise en location sans conducteur"
+  },
+  {
+    "reviewId": "R174",
+    "category": "frvtcAnglais",
+    "optionA": "La modification du moyen de paiement",
+    "optionB": "L'envoi du re\u00e7u par courriel",
+    "optionC": "Le remboursement de la r\u00e9servation",
+    "optionD": "L'envoi du devis par courrier"
+  },
+  {
+    "reviewId": "R175",
+    "category": "frvtcFrancais",
+    "optionA": "Transferts initiaux et v\u00e9hicule suppl\u00e9mentaire confirm\u00e9s",
+    "optionB": "Transferts initiaux confirm\u00e9s ; v\u00e9hicule suppl\u00e9mentaire en recherche",
+    "optionC": "Transferts initiaux et v\u00e9hicule suppl\u00e9mentaire en recherche",
+    "optionD": "Transferts initiaux en recherche ; v\u00e9hicule suppl\u00e9mentaire confirm\u00e9"
+  },
+  {
+    "reviewId": "R176",
+    "category": "frvtcReglementation",
+    "optionA": "Huit",
+    "optionB": "Neuf",
+    "optionC": "Six",
+    "optionD": "Sept"
+  },
+  {
+    "reviewId": "R177",
+    "category": "frvtcAnglais",
+    "optionA": "I hope your flight was comfortable!",
+    "optionB": "Have a safe flight home!",
+    "optionC": "I hope you enjoyed your stay!",
+    "optionD": "Have a lovely stay here!"
+  },
+  {
+    "reviewId": "R178",
+    "category": "frvtcSecurite",
+    "optionA": "L'accotement juste devant le v\u00e9hicule arr\u00eat\u00e9",
+    "optionB": "Le terrain situ\u00e9 derri\u00e8re la glissi\u00e8re de s\u00e9curit\u00e9",
+    "optionC": "La ligne de rive \u00e0 hauteur du coffre ouvert",
+    "optionD": "L'espace entre deux voitures sur la bande d'arr\u00eat"
+  },
+  {
+    "reviewId": "R179",
+    "category": "frvtcT3p",
+    "optionA": "Le d\u00e9part apr\u00e8s acceptation de la r\u00e9servation",
+    "optionB": "L'incident survenu pendant le trajet r\u00e9alis\u00e9",
+    "optionC": "L'absence lors du rendez-vous d\u00e9j\u00e0 confirm\u00e9",
+    "optionD": "Le refus avant tout engagement sur la course"
+  },
+  {
+    "reviewId": "R180",
+    "category": "frvtcT3p",
+    "optionA": "L'autorit\u00e9 de r\u00e9gulation des plateformes",
+    "optionB": "Le m\u00e9diateur de l'assurance automobile",
+    "optionC": "La chambre de m\u00e9tiers et de l'artisanat",
+    "optionD": "Le D\u00e9fenseur des droits"
+  },
+  {
+    "reviewId": "R181",
+    "category": "frvtcGestion",
+    "optionA": "Le partage des r\u00e9serves entre plusieurs associ\u00e9s",
+    "optionB": "Le montant du capital souscrit et du capital lib\u00e9r\u00e9",
+    "optionC": "La s\u00e9paration des patrimoines priv\u00e9 et professionnel",
+    "optionD": "La r\u00e9partition entre actions majoritaires et minoritaires"
+  },
+  {
+    "reviewId": "R182",
+    "category": "frvtcAnglais",
+    "optionA": "Une \u00e9charpe bleue sur la banquette arri\u00e8re",
+    "optionB": "Une veste bleue pr\u00e8s du coffre",
+    "optionC": "Un manteau bleu \u00e0 l'arr\u00eat de d\u00e9part",
+    "optionD": "Un sac bleu sur le si\u00e8ge avant"
+  },
+  {
+    "reviewId": "R183",
+    "category": "frvtcSecurite",
+    "optionA": "Se rapprocher de l'axe ; garder les 70 km/h initiaux",
+    "optionB": "Rester \u00e0 droite ; monter progressivement \u00e0 80 km/h",
+    "optionC": "Se placer sur l'accotement ; conserver 70 km/h",
+    "optionD": "Rester \u00e0 droite ; ne pas d\u00e9passer les 70 km/h initiaux"
+  },
+  {
+    "reviewId": "R184",
+    "category": "frvtcCommercial",
+    "optionA": "Un taux document\u00e9 de prises en charge \u00e0 l'heure",
+    "optionB": "Un d\u00e9lai document\u00e9 d'envoi des factures",
+    "optionC": "Un d\u00e9lai document\u00e9 de remboursement des frais",
+    "optionD": "Un taux document\u00e9 de r\u00e9ponses aux devis"
+  },
+  {
+    "reviewId": "R185",
+    "category": "frvtcGestion",
+    "optionA": "90 000 \u20ac",
+    "optionB": "50 400 \u20ac",
+    "optionC": "21 600 \u20ac",
+    "optionD": "60 000 \u20ac"
+  },
+  {
+    "reviewId": "R186",
+    "category": "frvtcCommercial",
+    "optionA": "La trace d'un consentement sp\u00e9cifique \u00e0 ces offres",
+    "optionB": "La r\u00e9f\u00e9rence d'un achat de service analogue d\u00e9j\u00e0 r\u00e9alis\u00e9",
+    "optionC": "La preuve du lien de l'offre avec ses fonctions professionnelles",
+    "optionD": "Le num\u00e9ro d'une course en cours n\u00e9cessitant une confirmation"
+  },
+  {
+    "reviewId": "R187",
+    "category": "frvtcSecurite",
+    "optionA": "\u00c0 gauche, m\u00eame s'il est d\u00e9j\u00e0 engag\u00e9 dans son virage",
+    "optionB": "Du c\u00f4t\u00e9 choisi par le conducteur qui d\u00e9passe",
+    "optionC": "\u00c0 droite, dans les conditions d\u00e9crites",
+    "optionD": "Sur l'accotement uniquement"
+  },
+  {
+    "reviewId": "R188",
+    "category": "frvtcCommercial",
+    "optionA": "Un titre en semaine et l'autre pendant un festival",
+    "optionB": "Deux titres et deux tarifs, sur des visiteurs r\u00e9partis ensemble",
+    "optionC": "Deux titres, m\u00eame page et r\u00e9partition simultan\u00e9e des visiteurs",
+    "optionD": "Un titre pour les anciens clients et l'autre pour les nouveaux"
+  },
+  {
+    "reviewId": "R189",
+    "category": "frvtcGestion",
+    "optionA": "Voiture : cr\u00e9ance ; financement : avance client",
+    "optionB": "Voiture : stock ; financement : dette fournisseur",
+    "optionC": "Voiture : immobilisation ; financement : capital",
+    "optionD": "Voiture : immobilisation ; financement : emprunt"
+  },
+  {
+    "reviewId": "R190",
+    "category": "frvtcFrancais",
+    "optionA": "D\u00e9pose entr\u00e9e principale ; consultation \u00e0 8 heures",
+    "optionB": "D\u00e9pose b\u00e2timent B ; d\u00e9part du domicile \u00e0 8 h 30",
+    "optionC": "D\u00e9pose entr\u00e9e principale ; d\u00e9part du domicile \u00e0 8 heures",
+    "optionD": "D\u00e9pose b\u00e2timent B ; d\u00e9part du domicile \u00e0 8 heures"
+  },
+  {
+    "reviewId": "R191",
+    "category": "frvtcCommercial",
+    "optionA": "Le chauffeur qui ex\u00e9cute le d\u00e9placement",
+    "optionB": "La r\u00e9ception qui a recommand\u00e9 le prestataire",
+    "optionC": "Le service bancaire qui traite le r\u00e8glement",
+    "optionD": "Le voyageur qui a accept\u00e9 puis pay\u00e9 la course"
+  },
+  {
+    "reviewId": "R192",
+    "category": "frvtcT3p",
+    "optionA": "La v\u00e9rification des garanties de l'exploitant",
+    "optionB": "La v\u00e9rification de l'aptitude m\u00e9dicale",
+    "optionC": "Le contr\u00f4le de l'honorabilit\u00e9 du conducteur",
+    "optionD": "Le contr\u00f4le des caract\u00e9ristiques du v\u00e9hicule"
+  },
+  {
+    "reviewId": "R193",
+    "category": "frvtcSecurite",
+    "optionA": "La voie de gauche du d\u00e9passement achev\u00e9",
+    "optionB": "La voie de gauche jusqu'\u00e0 la prochaine sortie",
+    "optionC": "La voie de droite d\u00e9sormais disponible",
+    "optionD": "L'une ou l'autre selon la destination finale"
+  },
+  {
+    "reviewId": "R194",
+    "category": "frvtcT3p",
+    "optionA": "Une clause interdisant de servir ses clients directs",
+    "optionB": "Une clause pr\u00e9cisant le calcul de la commission",
+    "optionC": "Une clause d\u00e9crivant les justificatifs de r\u00e9servation",
+    "optionD": "Une clause indiquant les moyens de joindre l'assistance"
+  },
+  {
+    "reviewId": "R195",
+    "category": "frvtcCommercial",
+    "optionA": "4 %",
+    "optionB": "25 %",
+    "optionC": "40 %",
+    "optionD": "75 %"
+  },
+  {
+    "reviewId": "R196",
+    "category": "frvtcReglementation",
+    "optionA": "La chauss\u00e9e devant l'h\u00f4tel du dernier client",
+    "optionB": "Le parking autoris\u00e9 hors chauss\u00e9e d'un partenaire",
+    "optionC": "La station de taxis situ\u00e9e devant la gare",
+    "optionD": "Le boulevard parcouru dans l'attente d'une demande"
+  },
+  {
+    "reviewId": "R197",
+    "category": "frvtcGestion",
+    "optionA": "\u2212700 \u20ac",
+    "optionB": "3 900 \u20ac",
+    "optionC": "2 500 \u20ac",
+    "optionD": "1 100 \u20ac"
+  },
+  {
+    "reviewId": "R198",
+    "category": "frvtcFrancais",
+    "optionA": "R\u00e9server le d\u00e9placement collectif vers le d\u00eener",
+    "optionB": "Choisir les horaires des arriv\u00e9es ferroviaires",
+    "optionC": "Commander les transferts individuels depuis la gare",
+    "optionD": "Informer les participants sur les prestataires"
+  },
+  {
+    "reviewId": "R199",
+    "category": "frvtcSecurite",
+    "optionA": "Celle qui attend devant une vitrine, dos \u00e0 la chauss\u00e9e",
+    "optionB": "Celle qui poursuit sa marche parall\u00e8le au bord de la rue",
+    "optionC": "Celle qui fait signe et se pr\u00e9pare \u00e0 franchir la chauss\u00e9e",
+    "optionD": "Celle qui s'\u00e9loigne du passage en suivant le trottoir"
+  },
+  {
+    "reviewId": "R200",
+    "category": "frvtcSecurite",
+    "optionA": "\u00c0 la sortie du carrefour, m\u00eame en g\u00eanant l'autre voie",
+    "optionB": "Avant de vous engager dans l'intersection",
+    "optionC": "Apr\u00e8s le feu, en avan\u00e7ant jusqu'\u00e0 la file arr\u00eat\u00e9e",
+    "optionD": "Au point de croisement, sans d\u00e9passer la ligne m\u00e9diane"
+  }
+]

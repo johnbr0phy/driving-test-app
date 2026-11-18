@@ -1,0 +1,394 @@
+Section 2 : Dépassement. (Articles R414-4 à R414-17) - Légifrance (https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177131)
+citeturn237view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177131","lineno":null}); Total lines: 391
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code de la route
+L66: 
+L67: Version En vigueur au 16/11/2026 Version En vigueur au 16 novembre 2026
+L68: 
+L69: [Input]Masquer les articles et les sections abrogés
+L70: 
+L71: Imprimer la page[Button: Copier le texte ]
+L72: 
+L73: ## ChronoLégi l'accès au droit dans le temps
+L74: 
+L75: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L76: 
+L77: [Input]
+L78: ### Les différentes versions dans le temps
+L79: 
+L80: Fermer le Chronolégi
+L81: 
+L82: À la date du JJ/MM/AAAA
+L83: 
+L84: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L85: 
+L86: Rechercher dans cette section ou dans tout le code
+L87: 
+L88: [Input]Rechercher dans cette section
+L89: 
+L90: [Input]Rechercher dans tout le code
+L91: 
+L92: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L93: 
+L94: [Input] Réinitialiser le champ recherche
+L95: 
+L96: * * *
+L97: 
+L98: Voir le sommaire du code
+L99: 
+L100: [Button: Fermer]
+L101: 
+L102:   * ## 【7†Partie réglementaire (Articles R110-1 à R442-7)】
+L103: Déplier/Replier
+L104:     * ### 【8†Livre IV : L'usage des voies. (Articles R411-1 à R442-7)】
+L105: 
+L106: Déplier/Replier
+L107:       * #### 【9†Titre Ier : Dispositions générales. (Articles R411-1 à R419-2)】
+L108: 
+L109: Déplier/Replier
+L110:         * ##### 【10†Chapitre IV : Croisement et dépassement (Articles R414-1 à R414-17)】
+L111: 
+L112: Déplier/Replier
+L113:           * ###### 【11†Section 2 : Dépassement. (Articles R414-4 à R414-17)】
+L114: 
+L115: Déplier/Replier
+L116:             * 【12†Article R414-4】
+L117:             * 【13†Article R414-5】
+L118:             * 【14†Article R414-6】
+L119:             * 【15†Article R414-7】
+L120:             * 【16†Article R414-8】
+L121:             * 【17†Article R414-9】
+L122:             * 【18†Article R414-10】
+L123:             * 【19†Article R414-11】
+L124:             * 【20†Article R414-12】
+L125:             * 【21†Article R414-13】
+L126:             * 【22†Article R414-14】
+L127:             * 【23†Article R414-15】
+L128:             * 【24†Article R414-16】
+L129:             * 【25†Article R414-17】
+L130: 
+L131: [Input]
+L132:   * ## 【26†Article R414-4】
+L133: 
+L134: En vigueur depuis le 22 juin 2003 En vigueur depuis le 22 juin 2003
+L135: 
+L136: 【27†Modifié par Décret n°2003-536 du 20 juin 2003 - art. 18 () JORF 22 juin 2003】
+L137: 
+L138: I. - Avant de dépasser, tout conducteur doit s'assurer qu'il peut le faire sans danger.
+L139: 
+L140: II. - Il ne peut entreprendre le dépassement d'un véhicule que si :
+L141: 
+L142: 1° Il a la possibilité de reprendre sa place dans le courant normal de la circulation sans gêner celle-ci ;
+L143: 2° La vitesse relative des deux véhicules permettra d'effectuer le dépassement dans un temps suffisamment bref.
+L144: 
+L145: 3° Il n'est pas lui-même sur le point d'être dépassé.
+L146: 
+L147: III. - Il doit, en outre, avertir de son intention l'usager qu'il veut dépasser.
+L148: IV. - Pour effectuer le dépassement, il doit se déporter suffisamment pour ne pas risquer de heurter l'usager qu'il veut dépasser. Il ne doit pas en tout cas s'en approcher latéralement à moins d'un mètre en agglomération et d'un mètre et demi hors agglomération s'il s'agit d'un véhicule à traction animale, d'un engin à deux ou à trois roues, d'un piéton, d'un cavalier ou d'un animal.
+L149: V. - Le fait, pour tout conducteur, de contrevenir aux dispositions des II à IV ci-dessus est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L150: 
+L151: VI. - Tout conducteur qui contrevient aux dispositions des II à IV ci-dessus encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L152: VII. - Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L153: 
+L154: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L155: 
+L156: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L157: 
+L158: [Button: Fermer ]
+L159: 
+L160:   * ## 【28†Article R414-5】
+L161: 
+L162: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L163: A l'approche des passages prévus à l'intention des piétons, les conducteurs ne doivent effectuer de dépassement qu'après s'être assurés qu'aucun piéton n'est engagé sur le passage.
+L164: 
+L165: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L166: 
+L167: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L168: 
+L169: [Button: Fermer ]
+L170: 
+L171:   * ## 【29†Article R414-6】
+L172: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L173: 
+L174: 【30†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L175: 
+L176: I. - Les dépassements s'effectuent à gauche.
+L177: 
+L178: II. - Par exception à cette règle, tout conducteur doit dépasser par la droite :
+L179: 
+L180: 1° Un véhicule dont le conducteur a signalé qu'il se disposait à changer de direction vers la gauche ;
+L181: 2° Un véhicule qui circule sur une voie ferrée empruntant la chaussée lorsque l'intervalle existant entre ce véhicule et le bord de la chaussée est suffisant ; toutefois, dans ce dernier cas, le dépassement peut s'effectuer à gauche sur les routes où la circulation est à sens unique ou sur les autres routes lorsque le dépassement laisse libre toute la moitié gauche de la chaussée.
+L182: III. - Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L183: 
+L184: IV. - Tout conducteur coupable de l'infraction prévue au présent article encourt également la peine complémentaire de suspension du permis de conduire, pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L185: V. - Le fait de contrevenir aux dispositions du présent article donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L186: 
+L187: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L188: 
+L189: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L190: 
+L191: [Button: Fermer ]
+L192: 
+L193:   * ## 【31†Article R414-7】
+L194: 
+L195: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L196: 【30†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L197: 
+L198: Tout conducteur qui effectue un dépassement par la gauche ne peut emprunter la moitié gauche de la chaussée que s'il ne gêne pas la circulation en sens inverse.
+L199: 
+L200: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L201: Tout conducteur coupable de cette infraction encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L202: 
+L203: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L204: 
+L205: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L206: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L207: 
+L208: [Button: Fermer ]
+L209: 
+L210:   * ## 【32†Article R414-8】
+L211: 
+L212: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L213: 
+L214: 【30†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L215: Lorsqu'une chaussée à double sens de circulation comporte plus de deux voies, matérialisées ou non, les conducteurs effectuant un dépassement ne doivent pas emprunter la voie située pour eux le plus à gauche.
+L216: 
+L217: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L218: Tout conducteur coupable de cette infraction encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L219: 
+L220: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L221: 
+L222: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L223: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L224: 
+L225: [Button: Fermer ]
+L226: 
+L227:   * ## 【33†Article R414-9】
+L228: 
+L229: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L230: Dans tous les cas où l'insuffisance de la largeur libre de la chaussée, son profil ou son état ne permettent pas le dépassement avec facilité et en toute sécurité, tout conducteur de véhicules dont le gabarit ou dont le chargement dépasse 2 mètres de largeur ou 7 mètres de longueur, remorque comprise, à l'exception des véhicules de transport en commun en agglomération, doit réduire sa vitesse et, au besoin, s'arrêter ou se garer pour laisser le passage aux véhicules de dimensions inférieures.
+L231: Dans les mêmes cas, tout usager doit réduire sa vitesse et, au besoin, s'arrêter ou se garer pour faciliter le passage d'un véhicule d'intérêt général faisant usage des avertisseurs spéciaux autorisés pour sa catégorie.
+L232: 
+L233: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L234: 
+L235: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L236: [Button: Fermer ]
+L237: 
+L238:   * ## 【34†Article R414-10】
+L239: 
+L240: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L241: 
+L242: 【30†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L243: 
+L244: Tout conducteur qui vient d'effectuer un dépassement par la gauche doit revenir sur sa droite sans provoquer le ralentissement du véhicule dépassé.
+L245: 
+L246: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L247: Tout conducteur coupable de cette infraction encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L248: 
+L249: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L250: 
+L251: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L252: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L253: 
+L254: [Button: Fermer ]
+L255: 
+L256:   * ## 【35†Article R414-11】
+L257: 
+L258: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L259: 
+L260: 【30†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L261: Tout dépassement est interdit sur les chaussées à double sens de circulation, lorsque la visibilité vers l'avant n'est pas suffisante, ce qui peut être notamment le cas dans un virage ou au sommet d'une côte, sauf si cette manoeuvre laisse libre la partie de la chaussée située à gauche d'une ligne continue ou si, s'agissant de dépasser un véhicule à deux roues, cette manoeuvre laisse libre la moitié gauche de la chaussée.
+L262: Tout dépassement autre que celui des véhicules à deux roues est interdit aux intersections de routes, sauf pour les conducteurs abordant une intersection où les conducteurs circulant sur les autres routes doivent leur laisser le passage en application des articles 【36†R. 415-6】, 【37†R. 415-7】 et 【38†R. 415-8】, ou lorsqu'ils abordent une intersection dont le franchissement est réglé par des feux de signalisation ou par un agent de la circulation.
+L263: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L264: 
+L265: Tout conducteur coupable de l'une des infractions prévues au présent article encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L266: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L267: 
+L268: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L269: 
+L270: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L271: 
+L272: [Button: Fermer ]
+L273: 
+L274:   * ## 【39†Article R414-12】
+L275: 
+L276: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L277: Tout dépassement est interdit aux traversées de voies ferrées non munies de barrières ou de demi-barrières.
+L278: 
+L279: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L280: 
+L281: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L282: 
+L283: [Button: Fermer ]
+L284: 
+L285:   * ## 【40†Article R414-13】
+L286: 
+L287: En vigueur depuis le 11 mai 2003 En vigueur depuis le 11 mai 2003
+L288: Modifié par Décret 2003-425 2003-05-07 art. 68 II JORF 11 mai 2003
+L289: 
+L290: Il est interdit à tout conducteur de dépasser un train ou un véhicule de transport public assujetti à suivre, de façon permanente, une trajectoire déterminée par un ou des rails matériels et empruntant l'assiette des routes, à l'arrêt pendant la montée ou la descente des voyageurs du côté où elle s'effectue.
+L291: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L292: 
+L293: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L294: 
+L295: [Button: Fermer ]
+L296: 
+L297:   * ## 【41†Article R414-14】
+L298: 
+L299: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L300: Le fait pour tout conducteur d'effectuer un dépassement interdit par décision de l'autorité investie du pouvoir de police est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L301: 
+L302: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L303: 
+L304: [Button: Fermer ]
+L305: 
+L306:   * ## 【42†Article R414-15】
+L307: 
+L308: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L309: Lorsque, sur les routes à sens unique et sur les routes à plus de deux voies, la circulation s'est, en raison de sa densité, établie en file ininterrompue sur toutes les voies, le fait que les véhicules d'une file circulent plus vite que les véhicules d'une autre file n'est pas considéré comme un dépassement.
+L310: 
+L311: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L312: 
+L313: [Button: Fermer ]
+L314: 
+L315:   * ## 【43†Article R414-16】
+L316: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L317: 
+L318: 【30†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L319: 
+L320: Lorsqu'ils sont sur le point d'être dépassés, les conducteurs doivent serrer immédiatement sur leur droite sans accélérer l'allure.
+L321: 
+L322: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L323: Tout conducteur qui accélère l'allure alors qu'il est sur le point d'être dépassé encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L324: 
+L325: Dans ce dernier cas, la contravention donne lieu de plein droit à la réduction de deux points du permis de conduire.
+L326: 
+L327: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L328: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L329: 
+L330: [Button: Fermer ]
+L331: 
+L332:   * ## 【44†Article R414-17】
+L333: 
+L334: En vigueur depuis le 18 avr. 2002 En vigueur depuis le 18 avril 2002
+L335: 
+L336: 【45†Création Décret n°2002-530 du 11 avril 2002 - art. 1 () JORF 18 avril 2002】
+L337: 
+L338: Lorsque, sur la chaussée, une voie de circulation au moins est couverte de neige ou de verglas sur tout ou partie de sa surface :
+L339: I. - 1° Le dépassement ou le changement de file est interdit à tout conducteur d'un véhicule dont le poids total autorisé en charge excède 3,5 tonnes ou à tout conducteur d'un ensemble de véhicules dont la longueur excède 7 mètres ;
+L340: 
+L341: 2° Le dépassement des engins de service hivernal en action sur la chaussée est interdit à tout véhicule.
+L342: 
+L343: II. - Le fait de contrevenir au I du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L344: III. - Toute personne coupable de cette infraction encourt également la peine complémentaire de suspension, pour une durée de trois ans au plus, du permis de conduire, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L345: 
+L346: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L347: 
+L348: [Button: Fermer ]
+L349: 
+L350: Code de la route
+L351: 
+L352: En vigueur au 16/11/2026 En vigueur au 16 novembre 2026
+L353: 
+L354: [Button: Ouvrir ][Button: Réduire ]
+L355: Section 2 : Dépassement. (Articles R414-4 à R414-17)
+L356: 
+L357: [Input]
+L358: 
+L359: [Input: JJ/MM/AAAA]
+L360: 
+L361: [Button: Version à la date d’aujourd'hui ]
+L362: 
+L363: Imprimer la page
+L364: 
+L365: Copier le texte
+L366: 
+L367: [Button: Naviguer dans les résultats ]
+L368: 
+L369: [Input]Haut
+L370: de page
+L371: ## L'aide Légifrance
+L372: 
+L373: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L374: 
+L375:   * 【46†Une question, une suggestion ou un problème sur légifrance ?】
+L376:   * 【47†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L377:   * 【48†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L378:   * 【49†Guide des cas d'usage】
+L379: ## Abonnez-vous au Journal officiel de la République française
+L380: 
+L381: Recevez par courriel le sommaire dès sa publication.
+L382: 
+L383: 【50†En savoir plus sur la gestion de vos données et de vos droits.】
+L384: 
+L385: Votre adresse électronique (ex. : 【51†[email protected]】)
+L386: 
+L387: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L388: 
+L389: [Input]
+L390: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【52†formulaire】
+

@@ -1,0 +1,3 @@
+Internal Error ()
+citeturn254view0 [wordlim: 200] Source: open({"ref_id":"https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379025","lineno":100}); 
+Failed to fetch https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379025: (403) Forbidden

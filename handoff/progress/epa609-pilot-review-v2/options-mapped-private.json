@@ -1,0 +1,114 @@
+[
+  {
+    "id": "R001",
+    "qid": "EPA609-REG-015",
+    "correct": true,
+    "guess": "D",
+    "cue": "The contrasts suggest an exception allowing an uncertified reseller to buy refrigerant. I anticipate a resale-only restriction and purchaser identity/address record; the omitted stem could change this.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R002",
+    "qid": "EPA609-EQP-024",
+    "correct": false,
+    "guess": "A",
+    "cue": "With no quantity or operation specified, these numbers cannot identify an answer. I choose 20 mL from a weak expectation of a round equipment fluid tolerance; I do not recall a reliable matching standard. This is an uncertain domain expectation, not a detected wording cue.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R003",
+    "qid": "EPA609-SRV-026",
+    "correct": true,
+    "guess": "B",
+    "cue": "I anticipate a moisture-contaminated system or exhausted moisture absorber scenario, for which replacing desiccant is the targeted action. Each other action could be appropriate for another omitted scenario.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R004",
+    "qid": "EPA609-REG-028",
+    "correct": true,
+    "guess": "D",
+    "cue": "These roles suggest responsibility for used refrigerant transferred from a salvage vehicle. I anticipate that the shop charging the receiving vehicle must ensure proper processing, rather than relying on the extraction facility.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R005",
+    "qid": "EPA609-EQP-022",
+    "correct": true,
+    "guess": "D",
+    "cue": "The ownership contrasts suggest a shared-equipment exception among related garage locations. Common owner-operator ownership seems the likely condition, though I cannot establish the exception from options alone.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R006",
+    "qid": "EPA609-EQP-011",
+    "correct": true,
+    "guess": "C",
+    "cue": "I anticipate a question about evaporator cooling, which absorbs heat as liquid refrigerant vaporizes. All four describe physically possible heat transfers, so choosing the evaporator process relies on anticipating the stem.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R007",
+    "qid": "EPA609-YF-014",
+    "correct": false,
+    "guess": "A",
+    "cue": "The explicit initial 15% charge distractor suggests the omitted scenario is a successful preliminary leak check during R-1234yf charging. I anticipate proceeding with the remainder of the charge.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R008",
+    "qid": "EPA609-SRV-022",
+    "correct": true,
+    "guess": "A",
+    "cue": "I anticipate a flushing-agent approval or compatibility-standard question. Material compatibility seems the narrow claim such a specification would establish, whereas debris removal and OEM suitability depend on additional conditions.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R009",
+    "qid": "EPA609-REG-004",
+    "correct": false,
+    "guess": "B",
+    "cue": "I anticipate a regulatory distinction involving opening MVAC-like off-road cab systems for repairs. The options form a balanced two-by-two comparison and give no surface answer cue; my choice depends on that imagined regulatory scenario.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R010",
+    "qid": "EPA609-YF-006",
+    "correct": false,
+    "guess": "A",
+    "cue": "R-1234yf is mildly flammable, so ignition within a concentration range is a distinctive known fact in this category. The other statements are also plausible refrigerant properties; this selection assumes the omitted question concerns its special safety hazard.",
+    "cueType": "knowledge"
+  },
+  {
+    "id": "R011",
+    "qid": "EPA609-REG-026",
+    "correct": true,
+    "guess": "D",
+    "cue": "I anticipate an equipment certification or compliance-verification question that requires observing the technician actually operating the machine. Attestation and job records would not directly demonstrate that operation, but a different stem could favor them.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R012",
+    "qid": "EPA609-SRV-029",
+    "correct": true,
+    "guess": "A",
+    "cue": "I anticipate a replacement-component oil quantity or specification that differs from factory guidance. Instructions supplied with the replacement would then be the most directly applicable authority; without that scenario the workshop manual would also be plausible.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R013",
+    "qid": "EPA609-SRV-031",
+    "correct": false,
+    "guess": "C",
+    "cue": "The alternatives suggest a recovery-filter replacement interval. Refrigerant mass processed is a plausible filter loading measure; elapsed hours or pressure-test dates address other maintenance concerns.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R014",
+    "qid": "EPA609-EQP-013",
+    "correct": true,
+    "guess": "B",
+    "cue": "I anticipate the prerequisite immediately before opening or replacing a refrigerant filter. Clearing refrigerant from the existing filter is the relevant preparation, while reaching capacity indicates the need for replacement rather than readiness to open it.",
+    "cueType": "prior"
+  }
+]

@@ -1,0 +1,288 @@
+[
+  {
+    "reviewId": "R022",
+    "questionId": "REBR-AGENCY-015",
+    "cue": "Only commitment actually satisfies the clause; alternatives are preliminary or estimates.",
+    "guessCorrect": true,
+    "question": "A contract requires a loan commitment, not prequalification. Which document best supports removing that contingency?",
+    "options": [
+      "Broker's estimated mortgage payment",
+      "Borrower's preliminary affordability letter",
+      "Lender's commitment satisfying the clause",
+      "Seller's proposed financing concession"
+    ]
+  },
+  {
+    "reviewId": "R043",
+    "questionId": "REBR-AGENCY-018",
+    "cue": "Only plausible legal distinction; other choices assert implausible transformations.",
+    "guessCorrect": true,
+    "question": "A valid contractual claim becomes time-barred. Which distinction explains why the original agreement was not necessarily void?",
+    "options": [
+      "Consideration disappears when time passes",
+      "Enforcement remedy differs from formation",
+      "Contract performance becomes impossible",
+      "Original assent becomes a counteroffer"
+    ]
+  },
+  {
+    "reviewId": "R077",
+    "questionId": "REBR-AGENCY-032",
+    "cue": "Care and oversight is the most responsibility-oriented choice.",
+    "guessCorrect": true,
+    "question": "A broker delegates client work to an assistant. Which responsibility does the broker retain?",
+    "options": [
+      "Assistant's duty to perform the task",
+      "Client's duty to pay agreed expenses",
+      "Principal's power to define the assignment",
+      "Care in selection and oversight"
+    ]
+  },
+  {
+    "reviewId": "R090",
+    "questionId": "REBR-AGENCY-031",
+    "cue": "Only urgent protective action among discretionary improvements.",
+    "guessCorrect": true,
+    "question": "An owner authorizes emergency repairs and sets a routine spending cap. Which expenditure fits the separate emergency authority?",
+    "options": [
+      "Replacing worn but functioning cabinets",
+      "Upgrading finishes before lease renewal",
+      "Stopping an active major water leak",
+      "Repainting vacant units for marketing"
+    ]
+  },
+  {
+    "reviewId": "R151",
+    "questionId": "REBR-AGENCY-005",
+    "cue": "Only choice expressly describing enforceable mutual commitment.",
+    "guessCorrect": true,
+    "question": "What can supply consideration in a bilateral sale agreement before any money changes hands?",
+    "options": [
+      "Exchange of enforceable promises",
+      "Uncommunicated intention to purchase",
+      "Seller's unilateral asking price",
+      "Broker's opinion of market value"
+    ]
+  },
+  {
+    "reviewId": "R180",
+    "questionId": "REBR-AGENCY-016",
+    "cue": "Agreed contractual right sounds legitimate; alternatives lack connection.",
+    "guessCorrect": true,
+    "question": "A contract expressly permits cancellation after a failed inspection. Why is timely exercise not necessarily breach?",
+    "options": [
+      "It assigns the purchaser's obligations",
+      "It establishes the seller's incapacity",
+      "It substitutes a new purchase contract",
+      "It uses an agreed contractual right"
+    ]
+  },
+  {
+    "reviewId": "R008",
+    "questionId": "REBR-ENV-016",
+    "cue": "Only careful assessment response; others improperly dismiss missing evidence.",
+    "guessCorrect": true,
+    "question": "Environmental records omit a former industrial use. How should a significant gap affecting conclusions be handled in AAI?",
+    "options": [
+      "Treat the missing period as presumed uncontaminated",
+      "Substitute present zoning for the missing use history",
+      "Use a clean title report to resolve the environmental gap",
+      "Identify its effect on the professional\u2019s assessment"
+    ]
+  },
+  {
+    "reviewId": "R010",
+    "questionId": "REBR-ENV-004",
+    "cue": "Relevant-record inclusion is reasonable; other exclusions sound arbitrary.",
+    "guessCorrect": true,
+    "question": "A landlord has lead reports covering common hallways in a covered apartment building. Which disclosure scope applies?",
+    "options": [
+      "Only reports for the rented unit are included",
+      "Only reports ordered by this tenant are included",
+      "Common-area records wait until lease renewal",
+      "Relevant common-area records are included"
+    ]
+  },
+  {
+    "reviewId": "R035",
+    "questionId": "REBR-ENV-020",
+    "cue": "Qualified residual-risk statement versus categorical assurances.",
+    "guessCorrect": true,
+    "question": "Why should a commercial buyer investigate a leaking underground fuel tank beyond the tank\u2019s physical repair cost?",
+    "options": [
+      "Liability is limited to repairing the leaking equipment",
+      "Tank replacement includes verified groundwater cleanup",
+      "Disconnected tanks cannot present residual release risks",
+      "Contamination may extend beyond the tank excavation"
+    ]
+  },
+  {
+    "reviewId": "R095",
+    "questionId": "REBR-ENV-017",
+    "cue": "Only realistic ongoing-obligation answer among implausible absolutes.",
+    "guessCorrect": true,
+    "question": "A buyer completes AAI before closing. What prevents that step alone from guaranteeing continuing CERCLA protection?",
+    "options": [
+      "Additional statutory and continuing obligations",
+      "Federal approval of every deed conveying the property",
+      "Automatic termination of protection when occupancy begins",
+      "Unanimous consent from every former site operator"
+    ]
+  },
+  {
+    "reviewId": "R110",
+    "questionId": "REBR-ENV-008",
+    "cue": "Direct testing beats averages and extrapolations.",
+    "guessCorrect": true,
+    "question": "A neighboring house tested low for radon. What evidence establishes the listed home\u2019s radon level?",
+    "options": [
+      "Averaging readings from neighboring homes",
+      "Using the county\u2019s average radon concentration",
+      "Matching readings from the same construction type",
+      "Testing performed in the listed home"
+    ]
+  },
+  {
+    "reviewId": "R184",
+    "questionId": "REBR-ENV-018",
+    "cue": "Only ordinary coverage requirement; other options substitute irrelevant conditions.",
+    "guessCorrect": true,
+    "question": "A home in a Special Flood Hazard Area has a government-backed mortgage. Which insurance issue follows?",
+    "options": [
+      "A standard homeowners policy satisfies the requirement",
+      "Flood coverage is required for the loan",
+      "A buyer\u2019s acknowledgment replaces required coverage",
+      "Coverage waits until a presidential disaster declaration"
+    ]
+  },
+  {
+    "reviewId": "R055",
+    "questionId": "REBR-FIN-012",
+    "cue": "Modest preliminary disclosure claim contrasts with unjustified finality.",
+    "guessCorrect": true,
+    "question": "Receipt of a Loan Estimate means which stage has occurred, without itself establishing final loan approval?",
+    "options": [
+      "Underwriting has issued an unconditional commitment",
+      "Borrower has accepted every quoted closing charge",
+      "Seller has consented to the buyer\u2019s financing",
+      "Preliminary pricing has been disclosed"
+    ]
+  },
+  {
+    "reviewId": "R164",
+    "questionId": "REBR-FIN-010",
+    "cue": "Only plausible cost consequence of financing a charge; alternatives promise implausible elimination.",
+    "guessCorrect": true,
+    "question": "An FHA borrower finances an upfront insurance premium instead of paying cash. What financing consequence follows?",
+    "options": [
+      "Lower principal with an unchanged cash requirement",
+      "Higher loan balance and overall borrowing cost",
+      "Replacement of the mortgage with a private policy",
+      "Elimination of the ongoing insurance charge"
+    ]
+  },
+  {
+    "reviewId": "R065",
+    "questionId": "REBR-MATH-003",
+    "cue": "123500 is more specific than round distractors, tempting a calculated-result inference.",
+    "guessCorrect": false,
+    "question": "Potential rent is $200,000, vacancy loss 5%, and operating expenses $70,000. What annual NOI results?",
+    "options": [
+      "$130,000",
+      "$190,000",
+      "$120,000",
+      "$123,500"
+    ]
+  },
+  {
+    "reviewId": "R105",
+    "questionId": "REBR-MATH-004",
+    "cue": "588000 seems correctly scaled versus 5880 and million-dollar alternatives.",
+    "guessCorrect": false,
+    "question": "A property produces $84,000 annual NOI. At a 7% capitalization rate, what value is indicated?",
+    "options": [
+      "$588,000",
+      "$1,120,000",
+      "$5,880",
+      "$1,200,000"
+    ]
+  },
+  {
+    "reviewId": "R138",
+    "questionId": "REBR-MATH-016",
+    "cue": "2020 looks like a combined payment while 7980 is an outlier; weak specificity cue.",
+    "guessCorrect": false,
+    "question": "Monthly principal and interest total $1,620; annual taxes are $4,800 and insurance $1,560. What monthly PITI results?",
+    "options": [
+      "$2,020",
+      "$1,750",
+      "$7,980",
+      "$2,150"
+    ]
+  },
+  {
+    "reviewId": "R107",
+    "questionId": "REBR-PRACT-026",
+    "cue": "Actual comparison with suppression lists verifies behavior; assurances alone do not.",
+    "guessCorrect": true,
+    "question": "Which vendor oversight measure tests whether a brokerage\u2019s do-not-call policy actually reaches calling operations?",
+    "options": [
+      "Confirm the contract includes a compliance warranty",
+      "Compare dialed numbers against current suppression lists",
+      "Verify that agents received the written policy",
+      "Review the vendor\u2019s published compliance statement"
+    ]
+  },
+  {
+    "reviewId": "R146",
+    "questionId": "REBR-PRACT-023",
+    "cue": "Least necessary access is the clearly sensible security option.",
+    "guessCorrect": true,
+    "question": "Which permissions best fit a photographer assigned to prepare listing images under FTC\u2019s least-privilege principle?",
+    "options": [
+      "Property photos and seller financial statements",
+      "All listing files with read-only permissions",
+      "Property photos and approved access instructions",
+      "All office records during the photography appointment"
+    ]
+  },
+  {
+    "reviewId": "R176",
+    "questionId": "REBR-PRACT-032",
+    "cue": "6510 looks like calculated fee after adjustment rather than round distractors.",
+    "guessCorrect": false,
+    "question": "A management contract charges 7% of collected rent. Scheduled rent is $100,000; collections are $90,000. What fee applies?",
+    "options": [
+      "$7,000",
+      "$700",
+      "$6,510",
+      "$6,300"
+    ]
+  },
+  {
+    "reviewId": "R118",
+    "questionId": "REBR-PROP-010",
+    "cue": "Cautious unresolved-identity answer versus insufficient shortcuts.",
+    "guessCorrect": true,
+    "question": "Two listings describe Lot 7, Block 2, but cite different recorded plats. What can the broker conclude?",
+    "options": [
+      "Matching lot numbers identify one parcel",
+      "Parcel identity remains unconfirmed",
+      "Earlier recording establishes parcel identity",
+      "Equal assessed areas identify one parcel"
+    ]
+  },
+  {
+    "reviewId": "R195",
+    "questionId": "REBR-TITLE-019",
+    "cue": "Affected principals agreeing is the legitimate source of changed instructions.",
+    "guessCorrect": true,
+    "question": "A seller requests diversion of the buyer's repair credit. What would authorize the neutral escrow holder to change allocations?",
+    "options": [
+      "Seller's amended listing instructions",
+      "Listing broker's revised commission demand",
+      "Agreement of the affected principals",
+      "Lender's updated appraisal instructions"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "correct": 9,
+  "total": 14,
+  "categories": {
+    "epa609Rules": [
+      3,
+      4
+    ],
+    "epa609Equipment": [
+      3,
+      4
+    ],
+    "epa609Service": [
+      3,
+      4
+    ],
+    "epa609Yf": [
+      0,
+      2
+    ]
+  },
+  "cues": {
+    "prior": [
+      9,
+      13
+    ],
+    "knowledge": [
+      0,
+      1
+    ]
+  },
+  "scope": "small pilot, NOT full-bank approval"
+}

@@ -1,0 +1,479 @@
+Que regarder dans un bilan? | economie.gouv.fr (https://www.economie.gouv.fr/facileco/que-regarder-dans-un-bilan)
+citeturn260view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.economie.gouv.fr/facileco/que-regarder-dans-un-bilan","lineno":null}); Total lines: 105
+L0: Gouvernement
+L1: 
+L2: 【0†Ministère de l'Économie, des Finances et de la Souveraineté industrielle, énergétique et numérique Ministère des Petites et Moyennes Entreprises, du Commerce, de l’Artisanat, du Tourisme et du Pouvoir d’achat Ministère de l’Action et des Comptes publics】
+L3: 
+L4:   * 【1†Presse†presse.economie.gouv.fr】
+L5: 
+L6: [Button: Fermer]
+L7: 
+L8: Rechercher [Input: Rechercher] [Button: Rechercher ]
+L9: 
+L10: [Button: Fermer]
+L11: 
+L12: Suivez le ministère sur les réseaux sociaux
+L13:   * 【2†Visiter la page Twitter d'Economie†twitter.com】
+L14:   * 【3†Visiter la page Linked In d'Economie†www.linkedin.com】
+L15:   * 【4†Visiter la page Facebook d'Economie†www.facebook.com】
+L16:   * 【5†Visiter la page Instagram d'Economie†www.instagram.com】
+L17:   * 【6†Visiter la page TikTok d'Economie†www.tiktok.com】
+L18:   * 【7†Visiter la page Youtube d'Economie†www.youtube.com】
+L19:   * 【8†Visiter la page des flux RSS d'Economie】
+L20: 
+L21: Faciléco
+L22: # Que regarder dans un bilan?
+L23: ### Le résultat de l’exercice
+L24: 
+L25: Il figure dans les capitaux propres au passif. Pour une société il s’agit du résultat net après impôts, que les actionnaires vont pouvoir se partager, s’il n’y a pas de pertes antérieures, ou laisser en réserves dans l’entreprise. Il permet de savoir si l’entreprise a fait un bénéfice net ou une perte  nette pendant l’année écoulée.
+L26: Il faudra aussi regarder le détail de la composition du résultat de l’exercice dans le 【9†Compte de résultat†www.lafinancepourtous.com】 pour savoir comment il a été obtenu, en tenant compte de toutes les rubriques enregistrées et de la fiscalité.
+L27: ### Le report à nouveau
+L28: 
+L29: Il figure dans les capitaux propres au passif. S’il est positif, il correspond à du bénéfice, de l’année antérieure ou des années antérieures, qui n’a pas été affecté en réserves, ni en dividendes.
+L30: 
+L31: S’il est négatif, cela signifie que l’entreprise a enregistré des pertes sur l’année antérieure ou sur les années antérieures.
+L32: ### La situation de trésorerie
+L33: 
+L34: Elle correspond au solde suivant = valeurs mobilières de placement + disponibilités – les concours bancaires courants et soldes créditeurs de banques.
+L35: 
+L36: Les valeurs mobilières et les disponibilités font partie de l’actif circulant. Les concours bancaires sont le renvoi n°5 au dessous du passif.
+L37: Ce solde représente le montant des liquidités dont dispose l’entreprise. Si le solde est positif, cela signifie que globalement l’entreprise a de l’argent disponible à la date d’arrêté du bilan. S’il est négatif, l’entreprise est à découvert.
+L38: ### Le besoin (ou la ressource) en fonds de roulement (le BFR ou la RFR)
+L39: 
+L40: Il s’agit du solde suivant = stocks (en valeur brute) + créances clients et comptes rattachés (en valeur brute)– dettes fournisseurs et comptes rattachés.
+L41: 
+L42: Les stocks et les créances clients font partie de l’actif circulant. Les dettes fournisseurs sont au passif.
+L43: 
+L44: Si le solde est positif, il exprime le besoin de financement stable qui est nécessaire pour financer l’exploitation.
+L45: Si le solde est négatif, il y a une ressource de financement stable dégagée par l’exploitation de l’entreprise. C’est par exemple le cas de grandes surfaces dont les clients payent rapidement alors que les délais de paiement aux fournisseurs sont longs. L’entreprise reçoit alors des liquidités des clients avant de payer les marchandises.
+L46: ### Le fonds de roulement net global (le FRNG)
+L47: 
+L48: Il s’obtient par le calcul suivant : Capitaux propres + dettes financières stables  - emplois stables (c’est-à-dire les immobilisations nettes de l’actif). Il représente l’excédent de ressources stables une fois que sont financées les immobilisations de l’entreprise.
+L49: 
+L50: Les capitaux propres et les dettes financières stables font partie du passif du bilan.
+L51: C’est lui qui doit couvrir le besoin en fonds de roulement. S’il n’y parvient pas, l’entreprise doit s’endetter.
+L52: ### L’actif net
+L53: 
+L54: Actif net = actif immobilisé + actif circulant – dettes
+L55: 
+L56: Il permet de se faire une idée de ce que pourrait valoir l’entreprise. C’est ce qu’il resterait aux actionnaires si l’entreprise devait cesser son activité, vendre tous ses biens et rembourser toutes ses dettes.
+L57: ### Le ratio d’endettement
+L58: 
+L59: Ratio d’endettement = somme de toutes les lignes d’emprunts / actif net
+L60: 
+L61: Ratio d’endettement est > 1: il signifie que les fonds amenés par des financeurs extérieurs à l’entreprise (souvent les banques),  sont supérieurs aux investissements des actionnaires.
+L62: 
+L63: Ratio d’endettement est < 1  : il signifie que l’entreprise pourrait, théoriquement, encore s’endetter pour financer sa croissance.
+L64: ### La rentabilité des capitaux propres
+L65: 
+L66: Rentabilité des capitaux propres = résultat de l’exercice / capitaux propres
+L67: 
+L68: Elle donne une idée de ce que rapporte aux actionnaires leur investissement financier dans l’entreprise.
+L69: 
+L70:   * Article suivant : 【10†Le compte de résultat】
+L71:   * 【11†Retour au sommaire】
+L72: ## [Button: Informations complémentaires ]
+L73: 
+L74: 
+L75: 
+L76: Dossier réalisé en 2013 par
+L77: 
+L78:   * 【12†Partager sur Facebook - nouvelle fenêtre†www.facebook.com】
+L79:   * 【13†Partager sur Twitter - nouvelle fenêtre†twitter.com】
+L80:   * 【14†Partager sur Linked In - nouvelle fenêtre†www.linkedin.com】
+L81: 
+L82: 【15†Haut de page】
+L83: 
+L84: 【16†Fermer】
+L85: 
+L86: Vous souhaitez recevoir gratuitement toutes nos informations utiles et pratiques ?
+L87: 
+L88: Abonnez-vous aux lettres d'information Bercy infos !
+L89: 
+L90: 【17†Je m'abonne】
+L91: ## Suivez-nous sur les réseaux sociaux et Abonnez-vous à notre lettre d’information
+L92: 
+L93: ### Recevez les lettres d'information du ministère
+L94: 
+L95: 【18†S'abonner】
+L96: ### Suivez le ministère sur les réseaux sociaux
+L97: 
+L98:   * 【2†Visiter la page Twitter d'Economie†twitter.com】
+L99:   * 【3†Visiter la page Linked In d'Economie†www.linkedin.com】
+L100:   * 【4†Visiter la page Facebook d'Economie†www.facebook.com】
+L101:   * 【5†Visiter la page Instagram d'Economie†www.instagram.com】
+L102:   * 【6†Visiter la page TikTok d'Economie†www.tiktok.com】
+L103:   * 【7†Visiter la page Youtube d'Economie†www.youtube.com】
+L104:   * 【8†Visiter la page des flux RSS d'Economie】
+--------------------------------------------------------------------------------
+Je suis micro-entrepreneur, puis-je déduire des charges ? | impots.gouv.fr (https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges)
+citeturn260view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.impots.gouv.fr/professionnel/questions/je-suis-micro-entrepreneur-puis-je-deduire-des-charges","lineno":null}); Total lines: 145
+L0: République
+L1: française
+L2: 
+L3: 【0†impots.gouv.fr】
+L4: 
+L5:   * 【1†Connexion à mon espace Finances publiques†cfspart.impots.gouv.fr】
+L6:   * 【2†Connexion à l’espace professionnel†cfspro.impots.gouv.fr】
+L7:   * 【3†Contact et prise de RDV】
+L8: 
+L9: [Button: Fermer ]
+L10: 
+L11: Rechercher [Input: Que cherchez-vous ?] [Button: Rechercher ]
+L12: 
+L13: [Button: Fermer ]
+L14: #
+L15: 
+L16: Je suis micro-entrepreneur, puis-je déduire des charges ?
+L17: 
+L18: Publié le 03/08/2016, modifié le 14/10/2026 | Lecture 4 minutes
+L19: 
+L20: [Button: Imprimer l'article]
+L21: 
+L22: * * *
+L23: 
+L24: En tant que micro-entrepreneur, vous êtes soumis au régime fiscal de la micro-entreprise.
+L25: 
+L26: Vous déclarez votre chiffre d'affaires ou le montant de vos recettes encaissées, et non votre résultat net. Vous ne déduisez pas vos charges professionnelles pour leur montant réel.
+L27: Si vous avez opté pour le versement libératoire, l'impôt sur le revenu lié à l'activité professionnelle est égal à un pourcentage de votre chiffre d'affaires ou de vos recettes :
+L28: 
+L29:   * 1 % pour les entreprises de vente de marchandises, de denrées à emporter ou à consommer sur place, ou de fourniture de logements hors locations meublées ;
+L30:   * 1.7 % pour les entreprises réalisant des prestations de services commerciales ou artisanales (BIC), des locations meublées longue durée, de tourisme classés et de chambres d’hôtes ;
+L31: 
+L32:   * 2.2 % pour les titulaires de bénéfices non commerciaux (BNC) y compris les recettes des professions libérales non réglementées.
+L33: 
+L34: Concernant les loueurs de meublés de tourisme non classés, la fiscalité et les cotisations dépendent de l'année de perception des recettes.
+L35: Jusqu’au 31 décembre 2024, le régime micro-BIC s’appliquait jusqu’à 77 700 € de recettes (abattement de 50 %).
+L36: Sur le plan social, en dessous de 23 000 €, le loueur n'avait aucune démarche auprès de l'URSSAF et payait 17,2 % de prélèvements patrimoniaux aux impôts, sauf option volontaire pour le régime micro-social de l'auto-entrepreneur au taux simplifié de 6 %.
+L37: Au cours de l'année 2025, la réforme a abaissé le plafond du micro-BIC à 15 000 € (abattement de 30 %). Une tolérance administrative a toutefois permis aux loueurs déjà inscrits à l'URSSAF de conserver le taux simplifié de 6 % jusqu'au terme de l'année.
+L38: 
+L39: À compter du 1er janvier 2026, le régime micro-social (auto-entrepreneur) est définitivement supprimé pour les meublés non classés. Trois situations se distinguent désormais selon les recettes annuelles :
+L40:   * Jusqu’à 15 000 € : Le loueur bénéficie du micro-BIC (abattement de 30 %). L'option URSSAF à 6 % étant fermée, ses gains subissent uniquement les prélèvements patrimoniaux de 17,2 % collectés par les impôts ;
+L41:   * De 15 001 € à 23 000 € : Le plafond fiscal est dépassé. Le loueur bascule obligatoirement au régime réel (déduction des charges et amortissement). Restant sous le seuil social de 23 000 €, il n'est pas affilié à l'URSSAF et reste soumis aux seuls prélèvements fiscaux de 17,2 % ;
+L42:   *  Au-dessus de 23 000 € : Le régime micro est exclu. Le loueur relève obligatoirement du régime fiscal réel et acquiert le statut de travailleur indépendant. Il doit s'affilier à l'URSSAF pour payer des cotisations sociales calculées sur son bénéfice net réel.
+L43: Si vous n'avez pas exercé l'option pour le versement libératoire de l’impôt sur le revenu, vous relevez du régime micro-BIC (bénéfice industriel et commercial) ou micro-BNC (bénéfice non commercial) et votre chiffre d’affaires (BIC) ou vos recettes (BNC) sont pris en compte dans votre revenu imposable (c’est-à-dire soumis au barème progressif de l’impôt sur le revenu) après application automatique d'un abattement forfaitaire représentatif des charges professionnelles (frais de déplacement, cotisations sociales, charges liées au local professionnel, amortissements, etc).
+L44: Le taux de l'abattement (avec un minimum de 305 €) est de :
+L45:    | Revenus 2024  | Revenus 2025  | Revenus 2026
+L46: Activités de vente (BIC)
+L47: et de fournitures de logement
+L48: (hors locations meublées)  | 71 %  | 71 %  | 71 %
+L49: Activités de prestations de services (BIC)  | 50 %  | 50 %  | 50 %
+L50: Activités de prestations de services (BNC)
+L51: et activités libérales  | 34 %  | 34 %  | 34 %
+L52: Locations touristiques classées  | 71 %  | 50 %  | 50 %
+L53: Locations touristiques non classées  | 50 %  | 30 %  | 30 %
+L54: Autres locations meublées  | 50 %  | 50 %  | 50 %
+L55: Si votre activité génère des charges importantes, il vous appartient d'envisager l'option pour un régime réel d'imposition et donc d'abandonner le régime micro.
+L56: 
+L57: Cette réponse vous a-t-elle été utile ?
+L58: 
+L59: [Input] Oui
+L60: 
+L61: [Input] Moyen
+L62: 
+L63: [Input] Non
+L64: 
+L65: Aucune option n’a été sélectionnée. Pour soumettre votre avis, veuillez sélectionner une option.
+L66: 
+L67: Merci, votre avis a bien été pris en compte.
+L68: 
+L69: Avez-vous rencontré une difficulté ?
+L70: 
+L71: [Input] C'est trop compliqué
+L72: 
+L73: [Input] Il manque des informations
+L74: [Input] C'est trop long à lire
+L75: 
+L76: [Input] Cette page ne correspond pas à ma situation
+L77: 
+L78: [Input] La réglementation ne me convient pas
+L79: 
+L80: Aucune option n’a été sélectionnée. Pour soumettre votre avis, veuillez sélectionner une option.
+L81: 
+L82: Merci, votre avis a bien été pris en compte.
+L83: 
+L84: [Button: Envoyer votre avis ]
+L85: 
+L86: [Button: Fermer]
+L87: # Partager par courriel
+L88: 
+L89: Objet du message : Informations du site impots.gouv
+L90: 
+L91: Tous les champs sont obligatoires.
+L92: 
+L93: Votre adresse électronique Format attendu : prenom.nom@exemple.fr [Input]
+L94: 
+L95: Envoyer l’article à Format attendu : prenom.nom@exemple.fr [Input]
+L96: 
+L97: [Input]
+L98: 
+L99: [Button: Annuler ] [Button: Partager ]
+L100: 
+L101: [Input] [Input]
+L102: 
+L103: Laisser ce champ vide [Input]
+L104: 
+L105: ## Questions fréquentes
+L106: 
+L107: ### 【4†En tant que micro-entrepreneur, puis-je être redevable de la TVA ?】
+L108: 
+L109: 15 avril 2019
+L110: ### 【5†En tant que micro-entrepreneur, suis-je concerné par le prélèvement à la source ?】
+L111: 
+L112: 12 janvier 2026
+L113: 
+L114: ### 【6†Je suis micro-entrepreneur ou à la tête d'une micro-entreprise. Ai-je des obligations déclaratives en matière de TVA ?】
+L115: 
+L116: 3 décembre 2025
+L117: 
+L118: ### 【7†Je suis micro-entrepreneur, dois-je payer une cotisation foncière des entreprises (CFE) et créer un espace professionnel sécurisé ?】
+L119: 
+L120: 3 août 2016
+L121: ### 【8†En tant que micro-entrepreneur, ai-je toujours intérêt à opter pour le versement libératoire de l'impôt sur le revenu ?】
+L122: 
+L123: 3 août 2016
+L124: 
+L125: ### 【9†En tant que micro-entrepreneur, quelles sont les modalités de déclaration et d'imposition selon que j'opte ou non pour le versement libératoire ?】
+L126: 
+L127: 3 août 2016
+L128: 
+L129: ### 【10†En tant que micro-entrepreneur, sous quelles conditions puis-je opter pour le versement libératoire de l'impôt ?】
+L130: 
+L131: 3 août 2016
+L132: 
+L133: 【11†Votre avis sur le site】
+L134: 
+L135: [Button: Fermer]
+L136: # Paramètres d’affichage
+L137: 
+L138: Choisissez un thème pour personnaliser l’apparence du site.
+L139: 
+L140: [Input] Thème clair
+L141: 
+L142: [Input] Thème sombre
+L143: 
+L144: [Input] Système Utilise les paramètres système
+--------------------------------------------------------------------------------
+Tout savoir sur la facturation | Service Public Entreprendre (https://entreprendre.service-public.gouv.fr/vosdroits/F23208)
+citeturn260view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://entreprendre.service-public.gouv.fr/vosdroits/F23208","lineno":null}); Total lines: 849
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: [Button: Fermer]
+L3: # La page que vous consultez ne concerne pas les micro-entrepreneurs
+L4: 
+L5: "Tout savoir sur la facturation" ne concerne que
+L6: 
+L7:   * Rester sur la page
+L8:   * 【0†Voir les contenus pour les micro-entrepreneurs】
+L9: 
+L10:   * Ajouter à mes favoris
+L11:   *   *   *   * [Button: Focus ]
+L12: 
+L13: Partager la page
+L14: 
+L15:   * 【1†Facebook†www.facebook.com】
+L16:   * 【2†X†x.com】
+L17:   * 【3†Linkedin†www.linkedin.com】
+L18:   * Courriel ( )
+L19:   * Copier le lien
+L20: 
+L21: Lien copié
+L22: 
+L23: Fermer
+L24: 
+L25: Ce sujet vous intéresse ?
+L26: Ajoutez cette page à vos favoris et recevez un courriel dès que l’information « Tout savoir sur la facturation » est mise à jour.
+L27: 
+L28: 【4†Ajouter à mes favoris†www.service-public.gouv.fr】
+L29: 
+L30: Fermer
+L31: 
+L32: Ce sujet a été ajouté à vos favoris
+L33: 
+L34: Vous recevrez un courriel dès que la page « Tout savoir sur la facturation » sera mise à jour.
+L35: 
+L36: Vous pouvez à tout moment supprimer votre abonnement dans 【5†mon compte > mes alertes†www.service-public.gouv.fr】
+L37: 
+L38: Votre abonnement n’a pas pu être pris en compte.
+L39: Vous devez vous connecter à votre espace personnel afin de vous abonner à la mise à jour de cette page.
+L40: 
+L41: Pour vous abonner aux mises à jour des pages Service Public, vous devez activer votre espace personnel.
+L42: 
+L43: Vous serez alerté(e) par courriel dès que la page « Tout savoir sur la facturation » sera mise à jour significativement.
+L44: 
+L45: [Input][Input]
+L46: 
+L47: [Button: ACTIVER MON ESPACE PERSONNEL]
+L48: # Tout savoir sur la facturation
+L49: 
+L50: Vérifié le 07 août 2026 - Entreprendre Service Public / Direction de l'information légale et administrative (Premier ministre)
+L51: ## Entrée en vigueur de la facturation électronique
+L52: 
+L53: À compter du 1^{er} septembre 2026, toutes les entreprises établies en France et assujetties à la TVA: titleContent doivent être en mesure de recevoir des factures électroniques.
+L54: 
+L55: Les grandes entreprises et les ETI: titleContent sont également tenues d'émettre des factures électroniques à compter de cette date. Cette obligation s'appliquera aux PME et aux micro-entreprises à compter du 1^{er} septembre 2027.
+L56: Selon les opérations qu'elles réalisent, les entreprises peuvent également être soumises à une obligation de transmission de certaines données à l'administration fiscale (e-reporting).
+L57: 
+L58: Pour préparer la mise en place de la facturation électronique et connaître les obligations applicables selon la taille de l'entreprise et les opérations réalisées, consultez notre fiche dédiée à la 【6†facturation électronique】.
+L59: La facturation obéit à plusieurs règles : mentions obligatoires, délai et conservation des factures, etc. Certaines obligations varient selon que la facture soit à destination de professionnels, de particuliers ou d’entités publiques.
+L60: 
+L61: La facturation électronique vient progressivement compléter ces règles à partir du 1^{er} septembre 2026.
+L62: 
+L63: [Button: Tout déplier ]
+L64: ## Qu’est-ce qu’une facture ?
+L65: 
+L66: La facture fait partie des différents 【7†documents commerciaux】 d’une entreprise, parmi lesquels figurent notamment le 【8†devis】 et les 【9†conditions générales de vente (CGV)】.
+L67: La facture est un document établi par un vendeur ou un prestataire de services à son client à la suite de la vente d’un bien ou de la réalisation d’une prestation de services. Elle détaille notamment les biens ou services vendus, leur prix, les conditions de paiement et, le cas échéant, la TVA: titleContent applicable.
+L68: Elle se distingue donc du devis, qui est un document prévisionnel proposant un prix avant la réalisation d’une vente ou d’une prestation de services. Le devis n’engage les parties qu’une fois accepté.
+L69: #### À quoi sert une facture ?
+L70: 
+L71: La facture remplit plusieurs fonctions :
+L72:   * Commerciale : elle permet de détailler le montant à payer, l’acheteur, les modalités de paiement ou encore le 【10†taux de TVA】 applicable.
+L73:   * Juridique : la facture constitue un élément de preuve d’un contrat de vente ou de prestation réalisé entre deux parties. Elle permet à un vendeur de prouver son droit d’exiger le paiement d’une somme d’argent (quittance de loyer: titleContent par exemple). La facture peut donc être utilisée en cas de litige: titleContent (non-paiement ou contestation d’une somme d’argent) devant un tribunal.
+L74:   * Fiscale : elle permet de collecter et déduire la TVA et est exigée en cas de contrôle fiscal.
+L75:   * Comptable : elle sert de justificatif comptable de l’entreprise : elle est nécessaire pour l’【11†établissement des comptes annuels d’une société】.
+L76: À savoir
+L77: 
+L78: La facture peut aussi être appelée note (émise au profit d’un particulier), quittance (émise après le paiement) ou encore note d’honoraires (émise par un 【12†professionnel libéral†www.inpi.fr】).
+L79: #### Qui peut émettre une facture ?
+L80: 
+L81: En principe, la facture est émise par le vendeur de biens ou le prestataire de services.
+L82: 
+L83: Dans certaines situations, la facture peut être émise par une autre personne :
+L84:   * Lorsque le vendeur ou le prestataire est établi en dehors de l'Union européenne (UE): titleContent, la facture doit être délivrée par son représentant fiscal: titleContent. L'entreprise peut tout de même décider d'émettre sa facture elle-même à condition qu'elle y indique le nom, l'adresse et le numéro d'identification de son représentant fiscal.
+L85:   * Le vendeur ou le prestataire autorise son client (auto-facturation: titleContent) ou un tiers: titleContent (【13†sous-traitance】 de la facturation) à facturer pour son compte par un mandat de facturation.
+L86: À noter
+L87: 
+L88: Lorsque la facture est rédigée en langue étrangère, il peut être exigé une 【14†traduction certifiée†www.service-public.gouv.fr】.
+L89: #### Quel est le format d’une facture ?
+L90: 
+L91: Le format de la facture dépend notamment de la qualité du client (entreprise ou particulier) et du lieu où il est établi.
+L92: 
+L93: La facture peut être établie sous format électronique ou, dans les situations qui ne relèvent pas de l'【6†obligation de facturation électronique】, sous format papier.
+L94: 
+L95:   * [Button: Facture électronique]
+L96:   * [Button: Facture papier]
+L97: ##### Facture électronique
+L98: 
+L99: La facture électronique est obligatoire pour les opérations réalisées entre entreprises établies en France et assujetties à la TVA: titleContent, y compris lorsqu'elles bénéficient de la franchise en base de TVA: titleContent (par exemple un micro-entrepreneur).
+L100: 
+L101: L'obligation d'émettre des factures électroniques s'applique progressivement :
+L102:   * à partir du 1^{er} septembre 2026 pour les grandes entreprises: titleContent et les entreprises de taille intermédiaire (ETI): titleContent
+L103:   * à partir du 1^{er} septembre 2027 pour les PME: titleContent et les micro-entreprises: titleContent
+L104: 
+L105: Exemple :
+L106: 
+L107:   * une entreprise de plomberie facture une entreprise de construction française
+L108:   * un micro-entrepreneur facture une agence de communication française
+L109: Dans ces 2 situations, la facture relève de la facturation électronique. L'obligation d'émettre cette facture dépend toutefois de la date à laquelle elle devient applicable à l'entreprise concernée.
+L110: 
+L111: Toutes les entreprises doivent toutefois être en mesure de recevoir des factures électroniques à compter du 1^{er} septembre 2026.
+L112: La facture électronique est émise, transmise, reçue et conservée par l'intermédiaire d'une plateforme agréée ou, le cas échéant, d'une solution compatible raccordée à une plateforme agréée.
+L113: 
+L114: À noter
+L115: 
+L116: Pour plus d’informations, consultez notre fiche sur la 【6†facturation électronique】.
+L117: ##### Facture papier
+L118: 
+L119: La facture papier reste possible lorsque l'opération n'est pas soumise à l'obligation de facturation électronique.
+L120: 
+L121: C’est notamment le cas lorsque l’entreprise facture :
+L122: 
+L123:   * un particulier (qu’il soit en établi en France ou à l’étranger)
+L124:   * une entreprise établie à l’étranger
+L125: 
+L126: Exemple :
+L127: 
+L128:   * un coiffeur remet une facture à un client particulier
+L129:   * une entreprise française facture une entreprise allemande
+L130: Dans ces 2 situations, la facture n'a pas à être émise sous format électronique.
+L131: 
+L132: L'entreprise peut toutefois être tenue de transmettre certaines informations à l'administration fiscale (e-reporting: titleContent).
+L133: 
+L134: Pour plus d’informations sur les opérations concernées par la 【6†facturation électronique】, se reporter à notre fiche dédiée.
+L135: 
+L136: Attention
+L137: Lorsqu'une facture est établie sur support papier, elle est rédigée en double exemplaire. Le vendeur remet l'original à l'acheteur et conserve le second exemplaire.
+L138: ###### Références juridiques
+L139: 
+L140:   * 【15†Code de commerce : article L441-9†www.legifrance.gouv.fr】
+L141: 
+L142: Obligation de facturation
+L143: 
+L144:   * 【16†Code général des impôts : article 289†www.legifrance.gouv.fr】
+L145: 
+L146: Règles générales de facturation
+L147: 
+L148:   * 【17†Code général des impôts : article 289 bis†www.legifrance.gouv.fr】
+L149: 
+L150: Facturation électronique via une plateforme agréée
+L151: ## Est-il obligatoire d’émettre une facture ?
+L152: 
+L153: L’obligation d’émettre une facture dépend de la nature du client de l’entreprise (professionnel, particulier ou entité publique) :
+L154: 
+L155:   * [Button: Le client est professionnel]
+L156:   * [Button: Le client est particulier]
+L157:   * [Button: Le client est une entité publique]
+L158: ##### Le client est professionnel
+L159: 
+L160: Lorsque la transaction effectuée se fait entre deux professionnels, une facture doit obligatoirement être émise pour chaque vente de bien ou prestation de services.
+L161: 
+L162: Lorsque l'opération est soumise à l'obligation de 【6†facturation électronique】, la facture est émise sous format électronique, selon les modalités prévues par la réglementation. Dans les autres cas, elle peut être établie sous un autre format autorisé : format papier, format numérique (e-mail, PDF, etc.).
+L163: Cette facture doit habituellement être émise au moment de la livraison du bien ou de la réalisation de la prestation de services.
+L164: 
+L165: À savoir
+L166: 
+L167: Pour un accompagnement à la mise en place de la facturation électronique, il est possible de contacter le Service Public Conseillers-Entreprises afin d’être rappelé directement par les conseillers porteurs de solutions (CCI, CMA, CDED, Urssaf, Banque de France, Bpifrance) :
+L168: ###### 【18†Vous souhaitez mettre en place la facturation électronique ?†conseillers-entreprises.service-public.gouv.fr】
+L169: 
+L170: Service Public Conseillers-Entreprises
+L171: 
+L172: Pour en savoir plus
+L173: 
+L174: 【19†Image†www.service-public.gouv.fr】
+L175: 
+L176: Exemple :
+L177: 
+L178: Un fournisseur livre du matériel à une entreprise du 【20†secteur BTP】. Le fournisseur doit donc émettre une facture au moment de la livraison, même si le paiement est prévu plus tard.
+L179: 
+L180: Toutefois, la facture peut être émise à une autre échéance dans les situations suivantes :
+L181:   * Pour une livraison de biens exonérée de TVA, la facture doit être émise au plus tard le 15 du mois suivant celui au cours duquel la livraison a eu lieu
+L182:   * Pour une prestation de services dont la TVA doit être versée par le client, alors la facture doit être émise au plus tard le 15 du mois suivant celui au cours duquel la prestation a été réalisée
+L183: 
+L184: Pour plus d’informations, consultez notre fiche sur les 【21†dates d’exigibilité de la TVA】.
+L185: 
+L186: À noter
+L187: Lorsque l'entreprise réalise plusieurs livraisons de biens ou prestations de services distinctes pour le compte d'un même client, la facture récapitulative peut être émise au plus tard à la fin du mois au cours duquel les livraisons ou prestations ont été réalisées. Cette possibilité ne concerne que les opérations pour lesquelles la TVA est exigible le mois au cours duquel l'opération a été réalisée.
+L188: ##### Le client est particulier
+L189: 
+L190: Les règles diffèrent selon qu'il s'agit d'une vente de biens ou d'une prestation de services :
+L191: ##### 1) Vente de biens
+L192: 
+L193: Lorsqu'une entreprise vend un bien à un particulier, l'émission d'une facture (ou d'une note) est obligatoire uniquement dans les cas suivants :
+L194: 
+L195:   * à la demande du client
+L196:   * pour les 【22†ventes à distance†www.service-public.gouv.fr】
+L197:   * pour les livraisons intracommunautaires: titleContent exonérées de TVA: titleContent
+L198: 
+L199: En dehors de ces cas, le vendeur remet généralement un ticket de caisse à l’acheteur.
+L200: 
+L201: À noter
+L202: Depuis le 1^{er} août 2023, l’【23†impression systématique du ticket de caisse】 est interdite, sauf exceptions. Un ticket peut toutefois être remis à la demande du client.
+L203: ##### 2) Prestation de services
+L204: 
+L205: Lorsqu'une entreprise réalise une prestation de services pour un particulier, une note doit obligatoirement être remise lorsque le montant de la prestation est supérieur à 25 € (TVA comprise).
+L206: 
+L207: En dessous de ce montant, la remise d'une note est facultative, mais elle devient obligatoire si le client en fait la demande.
+L208: 
+L209: À noter
+L210: 
+L211: L'obligation d'émettre une facture ne signifie pas nécessairement qu'elle doit être électronique.
+L212: Les ventes et prestations de services réalisées au profit d'un particulier ne sont, en principe, pas soumises à l'obligation de 【6†facturation électronique】.
+L213: ##### Le client est une entité publique
+L214: 
+L215: Lorsque le client est une administration publique, une facture doit obligatoirement être émise pour chaque vente de bien ou prestation de services.
+L216: 
+L217: Elle doit habituellement être délivrée au moment de la livraison du bien ou de la réalisation de la prestation de services.
+L218: 
+L219: En revanche, la facture peut être émise à une autre échéance dans les situations suivantes :
+

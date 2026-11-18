@@ -1,0 +1,99 @@
+{
+  "scope": "Final qualitative review of the fixed 40-item diagnostic sample. No numerical gate or comprehensive-form claim.",
+  "factualAssessment": "No substantive factual contradiction, incorrect supplied key, or materially misleading explanation identified. All explanations were checked against their actual alternatives and the primary-source material consulted across stages.",
+  "pedagogicalAssessment": "Most items test useful recall, application, or procedure discrimination. Easy recognition is not itself a flaw. Two numerical items have limited domain specificity and should be treated as numeracy objectives.",
+  "actionableFindings": [
+    {
+      "reviewId": "R016",
+      "severity": "minor",
+      "type": "surface_cue",
+      "finding": "The selected purpose option has more concrete technical detail than the broad performance/quantity alternatives. This creates a modest non-domain cue.",
+      "action": "Parallelize the purpose options while retaining the pressure-test objective; for example use similarly concise noun phrases for each purpose.",
+      "explanationIssue": false
+    },
+    {
+      "reviewId": "R029",
+      "severity": "minor",
+      "type": "dangling_reference",
+      "finding": "The stem says cited combustion hazard without identifying a citation.",
+      "action": "Delete cited, or name the Robinair warning.",
+      "explanationIssue": false
+    },
+    {
+      "reviewId": "R004",
+      "severity": "minor",
+      "type": "terminology_precision",
+      "finding": "Standardized is less precise than non-refrigerant-specific because refrigerant-specific connectors are also standardized.",
+      "action": "Use standard non-refrigerant-specific connection.",
+      "explanationIssue": false
+    }
+  ],
+  "notDefects": [
+    {
+      "reviewId": "R008",
+      "finding": "The contracting choice stood out in options-only review, but it is not the keyed answer. That structural observation is not evidence of correct-answer leakage; the ownership scenario is meaningful."
+    },
+    {
+      "reviewId": "R007",
+      "finding": "Repeating the capacity is appropriate because full recharge versus deficit top-off is the tested distinction."
+    },
+    {
+      "reviewId": "R002",
+      "finding": "Percentage arithmetic is fully determined by the supplied rule. Valid practical numeracy, weak evidence of independent yf knowledge."
+    },
+    {
+      "reviewId": "R012",
+      "finding": "Net-change arithmetic is simple but realistic; its role should be numeracy, not broad oil-balancing competence."
+    },
+    {
+      "reviewId": "R036",
+      "finding": "Lower-edge sampling is a plausible domain misconception; choosing the center requires this particular procedure, not generic dense-vapor reasoning."
+    },
+    {
+      "reviewId": "R028",
+      "finding": "Current and auxiliary voltage readings are meaningful distractors because they appear as preliminary OEM checks."
+    }
+  ],
+  "sourceVariation": {
+    "affectedItems": [
+      "R002",
+      "R016",
+      "R026",
+      "R036"
+    ],
+    "manufacturerSource": "https://www.robinair.com/sites/default/files/documents/567817%20REV%20F%20EN.pdf",
+    "narrativeSource": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "finding": "Robinair AC1234-6 567817 Rev F printed p30 permits a diagnostic 15% dose after failed vacuum testing, with repair and restart required. MACS January 2025 printed p51 presents a different continuation sequence. The present explanations preserve that distinction; the containment answer in R026 remains valid.",
+    "action": "Preserve these qualifications in future edits. Never merge the documents into a universal controller rule."
+  },
+  "sourceVersionChecks": [
+    {
+      "source": "https://www.audi.kkecomm.com/Files/Product%20assets/SDS/R-1234yf.pdf",
+      "version": "Honeywell Solstice yf SDS v3.4, revised 2024-03-22; printed 2024-04-17.",
+      "status": "Opened through web tool at Audi-hosted URL. No claim that it is latest."
+    },
+    {
+      "source": "https://www.robinair.com/sites/default/files/documents/550029_EN_0.pdf",
+      "version": "550029 Rev F, May 20, 2013.",
+      "status": "Manufacturer-hosted copy independently opened and checked."
+    },
+    {
+      "source": "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf",
+      "version": "SP01972025 VER 01, NI model family.",
+      "status": "The NI manual was used rather than the distinct older 34788 manual."
+    },
+    {
+      "source": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "version": "Current page displayed Title 40 updated through 2026-11-16.",
+      "status": "Used for current legal scope."
+    }
+  ],
+  "redundancy": "Staged yf items share workflow but test dose, purpose, recovery decision and sampling location. Leak-detection and certification clusters test distinct concepts. Three 34788NI facts warrant blueprint weighting attention, not automatic deletion. No exact duplicate found within this sample; unseen bank not reviewed.",
+  "limits": [
+    "No production files changed or builds run.",
+    "Stages 1 and 2 preserved unchanged.",
+    "Author evidence used only for locating public sources; no prior reviewer reports, private scores, or production banks read.",
+    "No full paywalled SAE text read; statements were checked against available manufacturer and MACS narrative descriptions.",
+    "No pass/fail gate inferred."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "status": "Descriptive diagnostics only; no independent gate approval",
+  "rows": 40,
+  "categoryCounts": {
+    "epa609Service": 10,
+    "epa609Equipment": 10,
+    "epa609Rules": 10,
+    "epa609Yf": 10
+  },
+  "answerPositions": {
+    "B": 7,
+    "C": 8,
+    "D": 15,
+    "A": 10
+  },
+  "stemWords": {
+    "median": 16.0,
+    "maximum": 20,
+    "over20": {}
+  },
+  "articleOpeningOptions": 0,
+  "totalOptions": 160,
+  "changedFromV3": [
+    "EPA609-YF-014",
+    "EPA609-EQP-006",
+    "EPA609-REG-025",
+    "EPA609-SRV-006",
+    "EPA609-YF-013"
+  ],
+  "full40": {
+    "n": 40,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "families": {},
+    "echo_fire": 9,
+    "echo_hit": 2,
+    "echo_gain": -0.3125000000000003,
+    "anti_echo_gain": 0.10416666666666687,
+    "echoed": [
+      "EPA609-YF-014",
+      "EPA609-REG-017"
+    ]
+  },
+  "directCategoryDiagnostics": {
+    "epa609Equipment": {
+      "n": 10,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 2,
+      "echo_hit": 0,
+      "echo_gain": -2.4999999999999996,
+      "anti_echo_gain": 0.8333333333333331,
+      "echoed": []
+    },
+    "epa609Rules": {
+      "n": 10,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 3,
+      "echo_hit": 1,
+      "echo_gain": 1.250000000000001,
+      "anti_echo_gain": -0.41666666666666685,
+      "echoed": [
+        "EPA609-REG-017"
+      ]
+    },
+    "epa609Service": {
+      "n": 10,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 2,
+      "echo_hit": 0,
+      "echo_gain": -2.4999999999999996,
+      "anti_echo_gain": 0.8333333333333331,
+      "echoed": []
+    },
+    "epa609Yf": {
+      "n": 10,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 2,
+      "echo_hit": 1,
+      "echo_gain": 2.4999999999999996,
+      "anti_echo_gain": -0.8333333333333335,
+      "echoed": [
+        "EPA609-YF-014"
+      ]
+    }
+  },
+  "hashes": {
+    "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-v4/pilot-questions.json": "171de3a21f2dbb2ff7a1279d46ce4316789e13aa2c96cbda26d14dfab87d3c4a",
+    "/Users/johnbrophy/tigertest-next20-epa609/data/epa609-questions.json": "f6ec41e703f3b3c26900ce00c5bbad9ffdc1f5488abcc1202896542cbaffe8a7",
+    "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v1/pilot-questions.json": "b4fdc86db179e57f707bb32aedef7bd2bbfcaf25e00df85160e759629cbc91bb",
+    "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v2/pilot-questions.json": "1af7f800953571a59a19677baf3e40bc52df08d695c57630c121062ad3d94655",
+    "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v3/pilot-questions.json": "7e87c63aa88b6344193070dda77738a22564dc8d176d64cf1be00d30c5f885c5",
+    "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v4/pilot-questions.json": "05ee54a631ddb3e9f76da8a43b6e11c6442f4bacace450fc72f7cf5cf94c856c",
+    "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-selection.json": "7a47c3f4364f87257faa125676ee79e75e2dc9daf45de4c0c245c8cbe017e6a5"
+  }
+}

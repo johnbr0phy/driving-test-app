@@ -1,0 +1,1002 @@
+[
+  {
+    "reviewId": "R001",
+    "correctAnswer": "A",
+    "explanation": "Divide price by monthly gross rent: $350,000 \u00f7 $2,500 = 140. An annual multiplier would use annual rent instead."
+  },
+  {
+    "reviewId": "R002",
+    "correctAnswer": "B",
+    "explanation": "DRE Property describes movable goods as personal property. Permanently affixed structures, appliances and growing trees are treated differently."
+  },
+  {
+    "reviewId": "R003",
+    "correctAnswer": "A",
+    "explanation": "DRE Property describes ownership as a bundle of rights, including excluding others, using, encumbering and transferring property. Exclusion concerns controlling others' access."
+  },
+  {
+    "reviewId": "R004",
+    "correctAnswer": "A",
+    "explanation": "DRE Agency defines the principal as the person represented in dealings with third parties. Here the owner has delegated authority to the broker."
+  },
+  {
+    "reviewId": "R005",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer requires sufficiently definite terms and explains that courts cannot create the parties' bargain. Signing does not itself resolve an essential matter expressly left for future agreement."
+  },
+  {
+    "reviewId": "R006",
+    "correctAnswer": "B",
+    "explanation": "DRE Appraisal distinguishes gross multipliers from net-income valuation. Equal gross income can hide materially different operating results."
+  },
+  {
+    "reviewId": "R007",
+    "correctAnswer": "B",
+    "explanation": "DRE Transfer describes eminent domain as governmental acquisition for public use with compensation. It differs from the owner's voluntary dedication."
+  },
+  {
+    "reviewId": "R008",
+    "correctAnswer": "C",
+    "explanation": "EPA requires identification of significant data gaps affecting the environmental professional\u2019s ability to assess releases or threatened releases."
+  },
+  {
+    "reviewId": "R009",
+    "correctAnswer": "B",
+    "explanation": "DRE Agency distinguishes ordinary brokerage from authority to act in the principal's place under a power of attorney. The granted powers must be examined for the particular closing."
+  },
+  {
+    "reviewId": "R010",
+    "correctAnswer": "C",
+    "explanation": "EPA states that available common-area information is included in applicable multiunit lead disclosures."
+  },
+  {
+    "reviewId": "R011",
+    "correctAnswer": "C",
+    "explanation": "SBA identifies bodily-injury liability as a general-liability exposure. The injured visitor is not an employee and the claim is not loss of the building itself."
+  },
+  {
+    "reviewId": "R012",
+    "correctAnswer": "C",
+    "explanation": "Net proceeds are $550,000 \u2212 $310,000 \u2212 $27,500 \u2212 $7,500 = $205,000. No other charges or credits are stated."
+  },
+  {
+    "reviewId": "R013",
+    "correctAnswer": "C",
+    "explanation": "DRE Landlord and Tenant defines an estate for years by its definite term. It need not last a full year."
+  },
+  {
+    "reviewId": "R014",
+    "correctAnswer": "C",
+    "explanation": "EPA explains that the disclosure rule generally covers housing built before 1978. Exemptions must be considered separately."
+  },
+  {
+    "reviewId": "R015",
+    "correctAnswer": "C",
+    "explanation": "CFPB explains that APR reflects interest and certain charges, unlike the note\u2019s interest rate alone."
+  },
+  {
+    "reviewId": "R016",
+    "correctAnswer": "C",
+    "explanation": "DRE Title describes installment land-sale conditions requiring payments before delivery of legal title. A purchase-money mortgage ordinarily accompanies a conveyance rather than postponing the deed under this arrangement."
+  },
+  {
+    "reviewId": "R017",
+    "correctAnswer": "C",
+    "explanation": "DOJ identifies demands for sexual favors in housing as prohibited sexual harassment under the Fair Housing Act\u2019s sex-discrimination protection."
+  },
+  {
+    "reviewId": "R018",
+    "correctAnswer": "C",
+    "explanation": "DRE Taxation explains benefit assessments as charges based on benefits received from an improvement. That allocation basis differs from an ordinary ad valorem charge based on assessed value; state procedures are not tested."
+  },
+  {
+    "reviewId": "R019",
+    "correctAnswer": "C",
+    "explanation": "DOJ explains that families with children may not be confined to a single portion of a complex because they have children."
+  },
+  {
+    "reviewId": "R020",
+    "correctAnswer": "D",
+    "explanation": "DRE Agency describes the MLS as a means of disseminating listing information. It is not itself the owner\u2019s listing contract."
+  },
+  {
+    "reviewId": "R021",
+    "correctAnswer": "B",
+    "explanation": "Annual interest is $14,400. Multiply by 20/360 to obtain $800. The day-count convention is expressly supplied."
+  },
+  {
+    "reviewId": "R022",
+    "correctAnswer": "A",
+    "explanation": "DRE Transfer requires performance of the actual contractual condition. A preliminary affordability assessment does not establish the loan commitment expressly required here."
+  },
+  {
+    "reviewId": "R023",
+    "correctAnswer": "C",
+    "explanation": "DRE Agency distinguishes exclusive agency by its owner-sale reservation. Actual commission rights still depend on the agreement."
+  },
+  {
+    "reviewId": "R024",
+    "correctAnswer": "D",
+    "explanation": "FTC explains that competitors\u2019 agreements on minimum prices are price fixing. Permitting higher prices does not remove the restraint."
+  },
+  {
+    "reviewId": "R025",
+    "correctAnswer": "B",
+    "explanation": "EPA describes a ten-day inspection opportunity that parties may alter by mutual written agreement. Changing it does not replace disclosure."
+  },
+  {
+    "reviewId": "R026",
+    "correctAnswer": "C",
+    "explanation": "DRE\u2019s trust-record guidance distinguishes each beneficiary\u2019s ledger from the control record covering the entire account."
+  },
+  {
+    "reviewId": "R027",
+    "correctAnswer": "C",
+    "explanation": "DRE Principal Instruments states that a quitclaim conveys only an interest the grantor actually has, with no implied warranties or after-acquired title. Recording does not create ownership in the grantor."
+  },
+  {
+    "reviewId": "R028",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal requires all four tests. Profitability does not overcome a legal prohibition."
+  },
+  {
+    "reviewId": "R029",
+    "correctAnswer": "C",
+    "explanation": "DRE Title states that marketable title does not mean perfect title; the standard concerns reasonable objections. The mere existence of an easement, or an insurance policy, is not by itself decisive."
+  },
+  {
+    "reviewId": "R030",
+    "correctAnswer": "C",
+    "explanation": "DRE Appraisal expressly distinguishes market loss in value from book depreciation used for income-tax accounting."
+  },
+  {
+    "reviewId": "R031",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal calculates value as income divided by the capitalization rate. Increasing the denominator while income stays fixed reduces indicated value."
+  },
+  {
+    "reviewId": "R032",
+    "correctAnswer": "A",
+    "explanation": "EPA explains that a bona fide prospective purchaser may knowingly acquire contaminated property while satisfying statutory criteria and continuing obligations."
+  },
+  {
+    "reviewId": "R033",
+    "correctAnswer": "D",
+    "explanation": "The seller\u2019s share is $3,600 \u00d7 135/360 = $1,350. Because taxes are unpaid, the seller reimburses the buyer through a debit to seller and credit to buyer."
+  },
+  {
+    "reviewId": "R034",
+    "correctAnswer": "B",
+    "explanation": "DRE Appraisal includes income from all sources, including parking, before deducting vacancy and operating expenses."
+  },
+  {
+    "reviewId": "R035",
+    "correctAnswer": "D",
+    "explanation": "EPA identifies contamination of soil and groundwater as a principal UST hazard. Repairing the equipment does not by itself resolve a prior release."
+  },
+  {
+    "reviewId": "R036",
+    "correctAnswer": "B",
+    "explanation": "DRE Landlord and Tenant distinguishes recurring periods from a definite fixed term, tenancy at will and holding over without consent."
+  },
+  {
+    "reviewId": "R037",
+    "correctAnswer": "B",
+    "explanation": "DRE Transfer defines materiality by the fact's importance to the decision to contract. Falsity and communication alone do not establish that importance."
+  },
+  {
+    "reviewId": "R038",
+    "correctAnswer": "B",
+    "explanation": "CFPB explains that payment for actual goods or services may be permissible. Labels, timing and low value do not alone establish that it is not a referral fee."
+  },
+  {
+    "reviewId": "R039",
+    "correctAnswer": "D",
+    "explanation": "DRE Transfer distinguishes remaining obligations in an executory contract from full performance in an executed contract."
+  },
+  {
+    "reviewId": "R040",
+    "correctAnswer": "D",
+    "explanation": "Excess sales are $300,000. Four percent is $12,000; adding $36,000 base rent gives $48,000. All rental terms are supplied."
+  },
+  {
+    "reviewId": "R041",
+    "correctAnswer": "A",
+    "explanation": "DRE Property Management identifies lack of prospects as distinct from retention, maintenance and collection problems. Advertising inquiry counts test the reach of a campaign."
+  },
+  {
+    "reviewId": "R042",
+    "correctAnswer": "A",
+    "explanation": "EPA requires lead information before a buyer becomes obligated under a contract, not merely before possession or recording."
+  },
+  {
+    "reviewId": "R043",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer distinguishes an unenforceable agreement from one void at formation. A limitations defense concerns enforcing the claim; no particular state's time period is tested."
+  },
+  {
+    "reviewId": "R044",
+    "correctAnswer": "D",
+    "explanation": "FTC distinguishes the three-month inquiry relationship from the eighteen-month transaction relationship. Entity-specific opt-outs still control."
+  },
+  {
+    "reviewId": "R045",
+    "correctAnswer": "B",
+    "explanation": "Subtract the outstanding disbursement from the bank balance: $19,800 \u2212 $1,200 = $18,600. DRE\u2019s guidance compares reconciled records with an adjusted bank balance."
+  },
+  {
+    "reviewId": "R046",
+    "correctAnswer": "A",
+    "explanation": "Area is 330 \u00d7 264 = 87,120 square feet. Divide by the outline\u2019s 43,560 square feet per acre to obtain 2 acres."
+  },
+  {
+    "reviewId": "R047",
+    "correctAnswer": "A",
+    "explanation": "Subtract the courtyard\u2019s 600 square feet from the overall 6,000-square-foot rectangle. The dimensions describe an original area calculation within the outline\u2019s math scope."
+  },
+  {
+    "reviewId": "R048",
+    "correctAnswer": "C",
+    "explanation": "DRE Agency explains apparent authority through the principal's manifestations and reasonable third-party reliance. A private restriction raises a separate actual-authority issue."
+  },
+  {
+    "reviewId": "R049",
+    "correctAnswer": "B",
+    "explanation": "CFPB describes the margin as the contractual addition that remains fixed, while the index changes with market conditions. Caps can constrain the resulting rate."
+  },
+  {
+    "reviewId": "R050",
+    "correctAnswer": "D",
+    "explanation": "DRE Property identifies the parties' agreement as a fixture test. An express exclusion resolves the transaction's treatment of the shelving."
+  },
+  {
+    "reviewId": "R051",
+    "correctAnswer": "D",
+    "explanation": "Separate records identify each beneficiary\u2019s funds. Agreement in the total does not establish that funds remain available for each beneficiary."
+  },
+  {
+    "reviewId": "R052",
+    "correctAnswer": "A",
+    "explanation": "DRE Transfer identifies an option when consideration supports keeping the offer open for the agreed period. It is different from a completed purchase obligation."
+  },
+  {
+    "reviewId": "R053",
+    "correctAnswer": "A",
+    "explanation": "DRE Transfer explains that assignment of benefits does not by itself release the assignor's obligations. A separate release or appropriate novation is needed to substitute responsibility."
+  },
+  {
+    "reviewId": "R054",
+    "correctAnswer": "D",
+    "explanation": "The supplied assessment is $360,000. At $15 per $1,000, tax is 360 \u00d7 $15 = $5,400. These are hypothetical rates, not any jurisdiction\u2019s law."
+  },
+  {
+    "reviewId": "R055",
+    "correctAnswer": "C",
+    "explanation": "CFPB states that a Loan Estimate describes expected terms after application; it is not an approval or denial."
+  },
+  {
+    "reviewId": "R056",
+    "correctAnswer": "A",
+    "explanation": "EPA specifies three years of retention from the sale date or the beginning of the leasing period."
+  },
+  {
+    "reviewId": "R057",
+    "correctAnswer": "D",
+    "explanation": "DRE Agency distinguishes protecting confidential bargaining information from honest disclosure of material facts. Calling a known physical defect confidential does not turn it into a protected negotiating limit."
+  },
+  {
+    "reviewId": "R058",
+    "correctAnswer": "A",
+    "explanation": "DOJ explains that an accommodation can require changing ordinary rules. A fundamental alteration or undue burden may make a requested change unreasonable; deviation itself is not enough."
+  },
+  {
+    "reviewId": "R059",
+    "correctAnswer": "D",
+    "explanation": "DRE Transfer defines liquidated damages as a fixed amount stipulated for breach. Its enforceability is a separate, state-dependent question not resolved by the label."
+  },
+  {
+    "reviewId": "R060",
+    "correctAnswer": "A",
+    "explanation": "EPA recommends fixing homes at 4 picocuries per liter or higher. Lower levels still carry some risk; this is guidance, not a universal sale prohibition."
+  },
+  {
+    "reviewId": "R061",
+    "correctAnswer": "A",
+    "explanation": "DRE Transfer distinguishes a voidable agreement, which a protected party may reject, from a void agreement without legal effect."
+  },
+  {
+    "reviewId": "R062",
+    "correctAnswer": "A",
+    "explanation": "EPA explains that Section 404 regulates discharge of dredged or fill material into waters of the United States, subject to its permitting framework and exemptions."
+  },
+  {
+    "reviewId": "R063",
+    "correctAnswer": "B",
+    "explanation": "DRE Property Management recommends ongoing preventive work to reduce larger future expenditures. Scheduled service differs from repairing a failure or adding a new facility."
+  },
+  {
+    "reviewId": "R064",
+    "correctAnswer": "C",
+    "explanation": "FTC distinguishes a coordinated price agreement from parallel prices independently responding to market conditions."
+  },
+  {
+    "reviewId": "R065",
+    "correctAnswer": "C",
+    "explanation": "Effective income is $200,000 \u00d7 95% = $190,000. Subtract $70,000 operating expenses to obtain $120,000 NOI."
+  },
+  {
+    "reviewId": "R066",
+    "correctAnswer": "D",
+    "explanation": "DOJ explains that individuals may file housing-discrimination complaints with HUD, as well as pursue a lawsuit."
+  },
+  {
+    "reviewId": "R067",
+    "correctAnswer": "B",
+    "explanation": "DRE Agency says the agent's acts alone do not establish apparent authority. Its foundation is an appearance attributable to the principal, with reasonable reliance by the third party."
+  },
+  {
+    "reviewId": "R068",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer describes rescission as restoration of the parties' former positions. Reformation instead corrects the written expression of an agreement."
+  },
+  {
+    "reviewId": "R069",
+    "correctAnswer": "B",
+    "explanation": "DRE Finance distinguishes the security instrument from the note evidencing the debt. This question does not assume a particular state\u2019s title or foreclosure theory."
+  },
+  {
+    "reviewId": "R070",
+    "correctAnswer": "B",
+    "explanation": "FTC says the established-business-relationship exception does not override a request not to receive calls from that seller."
+  },
+  {
+    "reviewId": "R071",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal calls for analyzing financing terms among transaction differences. The observed price may include the benefit of favorable credit."
+  },
+  {
+    "reviewId": "R072",
+    "correctAnswer": "C",
+    "explanation": "The firm receives $12,000, of which 65% is $7,800. The percentages are contractual facts supplied for this original calculation."
+  },
+  {
+    "reviewId": "R073",
+    "correctAnswer": "C",
+    "explanation": "CFPB explains that Section 8 prohibits things of value for settlement referrals involving federally related mortgage loans, while identifying specified exceptions."
+  },
+  {
+    "reviewId": "R074",
+    "correctAnswer": "A",
+    "explanation": "Pearson's outline calls area preference situs. DRE Appraisal explains that location influences demand and utility, including access to transportation."
+  },
+  {
+    "reviewId": "R075",
+    "correctAnswer": "D",
+    "explanation": "Equity is value less both mortgage balances: $620,000 \u2212 $390,000 \u2212 $45,000 = $185,000."
+  },
+  {
+    "reviewId": "R076",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal describes progression as enhanced value through association with similar properties of greater value. Regression is the opposite influence."
+  },
+  {
+    "reviewId": "R077",
+    "correctAnswer": "B",
+    "explanation": "DRE Agency distinguishes delegating performance from shedding responsibility for the delegated duty. It emphasizes care when choosing a delegate and supervising performance."
+  },
+  {
+    "reviewId": "R078",
+    "correctAnswer": "A",
+    "explanation": "After growth the value is $330,000; a 10% reduction from that amount leaves $297,000. Successive percentage changes use different bases."
+  },
+  {
+    "reviewId": "R079",
+    "correctAnswer": "C",
+    "explanation": "DRE Principal Instruments requires a connected ownership history. A mortgage, its release or a lease does not establish the missing transfer of fee title between those owners."
+  },
+  {
+    "reviewId": "R080",
+    "correctAnswer": "A",
+    "explanation": "DRE Landlord and Tenant explains that the lessor retains the reversion while the lessee has possession under the lease."
+  },
+  {
+    "reviewId": "R081",
+    "correctAnswer": "A",
+    "explanation": "EPA distinguishes encapsulation, which binds or coats material, from enclosure with a protective barrier, removal and testing."
+  },
+  {
+    "reviewId": "R082",
+    "correctAnswer": "D",
+    "explanation": "The receipt is already included in the bank and control total. Recording it in the correct beneficiary ledger resolves the identified omission without changing account-wide cash."
+  },
+  {
+    "reviewId": "R083",
+    "correctAnswer": "B",
+    "explanation": "Divide $2,700 by $75 monthly savings to obtain 36 months. CFPB recommends comparing upfront points with savings over the anticipated holding period."
+  },
+  {
+    "reviewId": "R084",
+    "correctAnswer": "A",
+    "explanation": "DRE Property explains that a life estate can be measured by another person's life. A transfer does not replace the original measuring life with the buyer's."
+  },
+  {
+    "reviewId": "R085",
+    "correctAnswer": "B",
+    "explanation": "EPA requires certain inquiries, including interviews, government-record review, site inspection and cleanup-lien searches, within 180 days before acquisition."
+  },
+  {
+    "reviewId": "R086",
+    "correctAnswer": "B",
+    "explanation": "DRE Title defines an easement by its specified purpose and burdened land. Its scope and location must be compared with the proposed structure; title insurance does not itself release an excepted right."
+  },
+  {
+    "reviewId": "R087",
+    "correctAnswer": "D",
+    "explanation": "VA states that a COE is one condition; applicants must also meet credit, income and occupancy requirements."
+  },
+  {
+    "reviewId": "R088",
+    "correctAnswer": "C",
+    "explanation": "DOJ requires an individualized direct-threat determination rather than general assumptions about a disability."
+  },
+  {
+    "reviewId": "R089",
+    "correctAnswer": "A",
+    "explanation": "EPA explains that the disclosure rule does not require the owner to conduct tests. It requires the prescribed disclosures of known information."
+  },
+  {
+    "reviewId": "R090",
+    "correctAnswer": "B",
+    "explanation": "DRE Agency discusses emergency authority to protect property where immediate action is necessary. The scenario expressly grants it separately from the routine spending limit."
+  },
+  {
+    "reviewId": "R091",
+    "correctAnswer": "B",
+    "explanation": "DRE Appraisal distinguishes market value from the amount actually paid. An individual transaction can be influenced by unusual motivations or terms."
+  },
+  {
+    "reviewId": "R092",
+    "correctAnswer": "B",
+    "explanation": "DRE Title distinguishes nonmonetary encumbrances such as easements from liens securing claims."
+  },
+  {
+    "reviewId": "R093",
+    "correctAnswer": "C",
+    "explanation": "DRE Agency discusses the conflict when an agent also acts for a personal account. The controlled purchaser gives the broker an undisclosed opposing financial interest."
+  },
+  {
+    "reviewId": "R094",
+    "correctAnswer": "C",
+    "explanation": "DRE Agency distinguishes a general agent's continuing series of transactions from a special agent's limited transaction. Authority still stays within the delegated business."
+  },
+  {
+    "reviewId": "R095",
+    "correctAnswer": "D",
+    "explanation": "EPA explains that liability protections require meeting other criteria and continuing obligations after acquisition; AAI is one part of the process."
+  },
+  {
+    "reviewId": "R096",
+    "correctAnswer": "C",
+    "explanation": "DRE Property Management bases rental schedules on competitive market rents and property characteristics, not the owner\u2019s financing or tax assessment."
+  },
+  {
+    "reviewId": "R097",
+    "correctAnswer": "A",
+    "explanation": "CFPB\u2019s TRID FAQs identify a newly added prepayment penalty, a loan-product change or an inaccurate APR as restart triggers. Ordinary corrections do not necessarily restart the period."
+  },
+  {
+    "reviewId": "R098",
+    "correctAnswer": "A",
+    "explanation": "DRE Principal Instruments describes reconveyance following satisfaction of the secured obligation. Assignment changes the beneficiary; subordination changes priority; extension changes the repayment schedule."
+  },
+  {
+    "reviewId": "R099",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal compares feasible uses for maximum productivity and includes demolition in development costs. Redevelopment nets $500,000 minus $110,000, or $390,000, below the $420,000 existing-use value."
+  },
+  {
+    "reviewId": "R100",
+    "correctAnswer": "C",
+    "explanation": "DOJ lists religion among federal Fair Housing Act protections. State and local laws may cover additional classifications."
+  },
+  {
+    "reviewId": "R101",
+    "correctAnswer": "B",
+    "explanation": "DRE Transfer distinguishes correcting an agreement by reformation from undoing it by rescission. Whether relief is available depends on proof of the mistake and governing law."
+  },
+  {
+    "reviewId": "R102",
+    "correctAnswer": "C",
+    "explanation": "DRE Title identifies survivorship as controlling an intact joint tenancy interest. A will does not redirect that interest into probate."
+  },
+  {
+    "reviewId": "R103",
+    "correctAnswer": "C",
+    "explanation": "Replacement nets $17,400, versus $18,000 on renewal. DRE Property Management connects tenant retention with profitability; the supplied figures quantify this choice."
+  },
+  {
+    "reviewId": "R104",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer describes specific performance as an order to carry out the contract. Whether a court grants it depends on the facts and governing law, not merely the request."
+  },
+  {
+    "reviewId": "R105",
+    "correctAnswer": "D",
+    "explanation": "Direct capitalization divides annual NOI by the rate: $84,000 \u00f7 0.07 = $1,200,000."
+  },
+  {
+    "reviewId": "R106",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal identifies building codes and zoning as exercises of police power for public safety, health and welfare."
+  },
+  {
+    "reviewId": "R107",
+    "correctAnswer": "D",
+    "explanation": "FTC says sellers should monitor and enforce compliance. Comparing actual calling activity with suppression records tests implementation beyond promises or policy distribution."
+  },
+  {
+    "reviewId": "R108",
+    "correctAnswer": "A",
+    "explanation": "CFPB describes the three-business-day review period for a covered mortgage. The rule does not apply identically to every credit product."
+  },
+  {
+    "reviewId": "R109",
+    "correctAnswer": "A",
+    "explanation": "DRE Principal Instruments identifies express title covenants in a warranty deed. Parcel identification, execution and delivery are not the distinguishing warranties."
+  },
+  {
+    "reviewId": "R110",
+    "correctAnswer": "C",
+    "explanation": "EPA explains that nearby homes can have different radon levels. Testing the specific home supplies evidence for that home."
+  },
+  {
+    "reviewId": "R111",
+    "correctAnswer": "C",
+    "explanation": "DRE Property identifies fee simple absolute as the largest estate, without a limiting condition or measuring life."
+  },
+  {
+    "reviewId": "R112",
+    "correctAnswer": "B",
+    "explanation": "DRE Title identifies a building extending across a boundary as an encroachment. Its legal status and remedy need investigation; the survey alone does not establish removal rights."
+  },
+  {
+    "reviewId": "R113",
+    "correctAnswer": "A",
+    "explanation": "DRE Property Management directs managers to obtain professional counsel for legal work beyond their province. A disclaimer or client permission does not supply the missing professional expertise."
+  },
+  {
+    "reviewId": "R114",
+    "correctAnswer": "D",
+    "explanation": "DRE Title calls the benefited parcel the dominant tenement and the burdened parcel the servient tenement."
+  },
+  {
+    "reviewId": "R115",
+    "correctAnswer": "C",
+    "explanation": "DRE Title explains that an appurtenant easement passes with the dominant parcel without express mention in the conveyance. Its benefit is attached to land rather than retained as the seller's personal right."
+  },
+  {
+    "reviewId": "R116",
+    "correctAnswer": "C",
+    "explanation": "USDA describes the program as financing eligible households\u2019 primary residences in eligible rural areas, with additional requirements."
+  },
+  {
+    "reviewId": "R117",
+    "correctAnswer": "D",
+    "explanation": "DRE Property distinguishes things affixed to land from movable goods. Severance removes the physical attachment."
+  },
+  {
+    "reviewId": "R118",
+    "correctAnswer": "C",
+    "explanation": "DRE Property's lot-and-block method includes the referenced recorded map. Matching lot and block numbers in different plats do not identify one parcel."
+  },
+  {
+    "reviewId": "R119",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal describes the cost approach as land value plus cost new of improvements less accrued depreciation."
+  },
+  {
+    "reviewId": "R120",
+    "correctAnswer": "C",
+    "explanation": "CFPB describes Cash to Close as the amount still payable at closing, in addition to funds previously paid."
+  },
+  {
+    "reviewId": "R121",
+    "correctAnswer": "C",
+    "explanation": "DRE Title explains that an easement in gross benefits a holder without attaching to a dominant parcel. Utilities commonly use this form."
+  },
+  {
+    "reviewId": "R122",
+    "correctAnswer": "D",
+    "explanation": "DRE Agency explains that solicitation and negotiation authority do not themselves permit signing a binding conveyance contract for the principal. The stated listing expressly stops short of execution."
+  },
+  {
+    "reviewId": "R123",
+    "correctAnswer": "A",
+    "explanation": "DRE Agency locates representation in the principal-agent relationship. The source of compensation alone does not establish whom the broker represents."
+  },
+  {
+    "reviewId": "R124",
+    "correctAnswer": "D",
+    "explanation": "DRE Property distinguishes tenant installations for trade from ordinary permanent improvements. Removal rights still depend on the lease and applicable law."
+  },
+  {
+    "reviewId": "R125",
+    "correctAnswer": "C",
+    "explanation": "CFPB defines conventional loans by the absence of federal insurance or guarantee. Fixed rates and a particular down payment are not their defining features."
+  },
+  {
+    "reviewId": "R126",
+    "correctAnswer": "A",
+    "explanation": "The maximum stated loan is $380,000. Subtracting it from the $500,000 price leaves $120,000, before other transaction costs."
+  },
+  {
+    "reviewId": "R127",
+    "correctAnswer": "C",
+    "explanation": "The agreed tiers yield $20,000 on the first $400,000 and $7,500 on the remaining $250,000, totaling $27,500."
+  },
+  {
+    "reviewId": "R128",
+    "correctAnswer": "B",
+    "explanation": "The excess is $1,800, which is 15% of the $12,000 budget. DRE Property Management uses expense comparisons to inform operating plans."
+  },
+  {
+    "reviewId": "R129",
+    "correctAnswer": "D",
+    "explanation": "DRE Transfer defines a bilateral contract as a promise exchanged for another promise. Actual completion is a separate issue."
+  },
+  {
+    "reviewId": "R130",
+    "correctAnswer": "A",
+    "explanation": "EPA identifies correcting the water problem as essential to preventing recurrence. It does not establish a federal indoor mold-count clearance limit."
+  },
+  {
+    "reviewId": "R131",
+    "correctAnswer": "A",
+    "explanation": "DRE Property Management identifies fees, responsibilities and granted powers as management-contract terms. Additional services should be evaluated against that agreement."
+  },
+  {
+    "reviewId": "R132",
+    "correctAnswer": "A",
+    "explanation": "DRE Title explains that tenancy in common gives undivided interests and common possession. A fractional ownership interest alone does not assign an exclusive physical area."
+  },
+  {
+    "reviewId": "R133",
+    "correctAnswer": "B",
+    "explanation": "NFIP describes Zone D as an area whose flood hazard has not been analyzed. Undetermined does not mean absent."
+  },
+  {
+    "reviewId": "R134",
+    "correctAnswer": "C",
+    "explanation": "EPA identifies the Clean Air Act as the law regulating stationary and mobile-source emissions and authorizing ambient air standards."
+  },
+  {
+    "reviewId": "R135",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal describes property taxes as fixed operating expenses with little direct correlation to occupancy. Other listed expenses depend more directly on use or turnover."
+  },
+  {
+    "reviewId": "R136",
+    "correctAnswer": "B",
+    "explanation": "DRE Transfer classifies formation by words as express and formation shown by conduct as implied. These differ from classifications about promises, performance or enforceability."
+  },
+  {
+    "reviewId": "R137",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal adjusts the comparable to the subject. A superior feature in the comparable requires a downward adjustment."
+  },
+  {
+    "reviewId": "R138",
+    "correctAnswer": "D",
+    "explanation": "Monthly taxes are $400 and insurance $130. Adding both to $1,620 principal and interest yields $2,150."
+  },
+  {
+    "reviewId": "R139",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal classifies damage as physical deterioration and adverse outside influences as external obsolescence. They need separate analysis."
+  },
+  {
+    "reviewId": "R140",
+    "correctAnswer": "B",
+    "explanation": "DRE Appraisal relates prices to the interaction of supply and demand. Their simultaneous increase does not determine a direction without their relative effects."
+  },
+  {
+    "reviewId": "R141",
+    "correctAnswer": "B",
+    "explanation": "DRE Title distinguishes public zoning from private restrictions. Permission under one does not establish compliance with the other."
+  },
+  {
+    "reviewId": "R142",
+    "correctAnswer": "B",
+    "explanation": "DOJ identifies false availability as a way of denying equal housing opportunity. An unequal price is not necessary."
+  },
+  {
+    "reviewId": "R143",
+    "correctAnswer": "D",
+    "explanation": "DRE Property distinguishes a qualified or defeasible fee from fee simple absolute. A condition affecting continued ownership is different from a lien, lease or condition precedent."
+  },
+  {
+    "reviewId": "R144",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal identifies anticipation as the basis for converting future income benefits into present value."
+  },
+  {
+    "reviewId": "R145",
+    "correctAnswer": "B",
+    "explanation": "CFPB explains that mortgage insurance protects the lender against borrower default. It is different from income replacement or homeowners coverage."
+  },
+  {
+    "reviewId": "R146",
+    "correctAnswer": "D",
+    "explanation": "FTC recommends access limited to resources needed for the job. Read-only or time-limited access can still expose unrelated sensitive records."
+  },
+  {
+    "reviewId": "R147",
+    "correctAnswer": "A",
+    "explanation": "DRE Agency describes an open listing as nonexclusive; the owner may employ other brokers. It differs from appointing one exclusive brokerage."
+  },
+  {
+    "reviewId": "R148",
+    "correctAnswer": "D",
+    "explanation": "DRE Property distinguishes ranges east or west of a meridian from townships north or south of a baseline."
+  },
+  {
+    "reviewId": "R149",
+    "correctAnswer": "A",
+    "explanation": "Subtract the loan, prior deposit and seller credit from price plus costs: $409,000 \u2212 $320,000 \u2212 $12,000 \u2212 $3,000 = $74,000."
+  },
+  {
+    "reviewId": "R150",
+    "correctAnswer": "A",
+    "explanation": "The stipulated weights yield 0.70 times $450,000 plus 0.30 times $500,000, or $465,000. DRE Appraisal describes reconciliation as reasoned weighting, not automatically averaging differing approaches; these weights are supplied solely for this calculation."
+  },
+  {
+    "reviewId": "R151",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer explains that a valid promise can be consideration for another promise. The exchange need not consist of an immediate cash payment."
+  },
+  {
+    "reviewId": "R152",
+    "correctAnswer": "D",
+    "explanation": "EPA lists on-premises heating-oil tanks among federal UST exclusions while warning that state or local requirements may still apply."
+  },
+  {
+    "reviewId": "R153",
+    "correctAnswer": "D",
+    "explanation": "DRE Title explains that surface and subsurface interests may be separately held. A surface deed alone does not establish ownership of the mineral interest offered for lease."
+  },
+  {
+    "reviewId": "R154",
+    "correctAnswer": "A",
+    "explanation": "DRE Agency distinguishes a principal\u2019s withdrawal of authority from the agent\u2019s renunciation and other termination events. This asks terminology, not whether termination avoids contractual liability."
+  },
+  {
+    "reviewId": "R155",
+    "correctAnswer": "D",
+    "explanation": "DRE Title distinguishes express knowledge of a fact from constructive notice supplied by public recording."
+  },
+  {
+    "reviewId": "R156",
+    "correctAnswer": "D",
+    "explanation": "SBA distinguishes professional liability for errors or negligence in services from property and other business coverage. Actual protection depends on policy terms."
+  },
+  {
+    "reviewId": "R157",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal includes poor architectural design and utility deficiencies under functional obsolescence. This does not require worn or damaged materials."
+  },
+  {
+    "reviewId": "R158",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal values a component by its contribution to the whole, not its installation cost. Spending more does not establish an equal market premium."
+  },
+  {
+    "reviewId": "R159",
+    "correctAnswer": "B",
+    "explanation": "CFPB explains that adding unpaid interest increases the balance, producing negative amortization even when the scheduled payment is made."
+  },
+  {
+    "reviewId": "R160",
+    "correctAnswer": "D",
+    "explanation": "DRE Title defines an easement by its specified purpose and benefited property. Acquiring another parcel does not itself establish that the existing grant serves it."
+  },
+  {
+    "reviewId": "R161",
+    "correctAnswer": "B",
+    "explanation": "CFPB says lenders may consider amount and likely continuation of income but may not reject it simply because of its protected source."
+  },
+  {
+    "reviewId": "R162",
+    "correctAnswer": "D",
+    "explanation": "DRE Agency includes ratification as a basis for recognizing an agency act. Subsequent informed adoption differs from prior authorization."
+  },
+  {
+    "reviewId": "R163",
+    "correctAnswer": "C",
+    "explanation": "EPA\u2019s transaction guidance recommends testing the lowest level that could be used regularly. A new occupancy pattern can make the upstairs result insufficient."
+  },
+  {
+    "reviewId": "R164",
+    "correctAnswer": "C",
+    "explanation": "CFPB explains that financing the upfront FHA premium adds to the amount borrowed and overall cost; it does not remove the ongoing premium."
+  },
+  {
+    "reviewId": "R165",
+    "correctAnswer": "D",
+    "explanation": "CFPB explains that tax and insurance changes can alter escrow contributions and the total payment even when principal and interest remain fixed."
+  },
+  {
+    "reviewId": "R166",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal requires review of motivation and whether a transaction occurred at arm's length. A family discount primarily raises a sale-condition question rather than a physical-property adjustment."
+  },
+  {
+    "reviewId": "R167",
+    "correctAnswer": "A",
+    "explanation": "EPA generally recommends leaving undamaged, undisturbed material alone. Improper disturbance or sampling can release fibers."
+  },
+  {
+    "reviewId": "R168",
+    "correctAnswer": "C",
+    "explanation": "DRE Agency explains the conflict inherent in net listings: the broker\u2019s excess compensation can diverge from maximizing the seller\u2019s proceeds. Legality varies by state."
+  },
+  {
+    "reviewId": "R169",
+    "correctAnswer": "B",
+    "explanation": "EPA states that no federal limits for mold or mold spores have been set. Sampling cannot certify compliance with a nonexistent federal standard."
+  },
+  {
+    "reviewId": "R170",
+    "correctAnswer": "D",
+    "explanation": "DRE Title explains that possession can reveal an unrecorded option or other interest. The seller's recorded ownership does not determine whether a separately granted option exists and binds the transaction."
+  },
+  {
+    "reviewId": "R171",
+    "correctAnswer": "B",
+    "explanation": "DRE Title defines an abstract as a summary of recorded title facts. It is distinct from insurance protection or contractual covenants."
+  },
+  {
+    "reviewId": "R172",
+    "correctAnswer": "B",
+    "explanation": "EPA describes avoidance, minimization and compensation for unavoidable impacts. A practicable less-damaging alternative bears directly on whether discharge may be permitted."
+  },
+  {
+    "reviewId": "R173",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer distinguishes preliminary inquiry from an unequivocal rejection or counteroffer. The actual language determines whether it merely asks a question or conditions assent."
+  },
+  {
+    "reviewId": "R174",
+    "correctAnswer": "A",
+    "explanation": "DRE Finance explains that a blanket loan covers multiple parcels and may provide for individual releases after specified payments."
+  },
+  {
+    "reviewId": "R175",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer permits an offer to prescribe the manner of acceptance. The express receipt condition makes arrival decisive rather than merely signing or mailing the response."
+  },
+  {
+    "reviewId": "R176",
+    "correctAnswer": "D",
+    "explanation": "The agreed basis is collections: $90,000 \u00d7 7% = $6,300. DRE Property Management distinguishes agreed fee arrangements, including percentages of collected gross rents."
+  },
+  {
+    "reviewId": "R177",
+    "correctAnswer": "D",
+    "explanation": "DRE Principal Instruments distinguishes conveyance deeds from security instruments. A promissory note evidences the repayment obligation."
+  },
+  {
+    "reviewId": "R178",
+    "correctAnswer": "B",
+    "explanation": "Divide the supplied annual cash income by invested cash: $12,000 \u00f7 $150,000 = 8%. This is the stated cash-return measure, not a property capitalization rate."
+  },
+  {
+    "reviewId": "R179",
+    "correctAnswer": "C",
+    "explanation": "DRE Appraisal identifies escheat as the state\u2019s acquisition when an owner dies without heirs. Intestacy is specified to exclude a devise under a will."
+  },
+  {
+    "reviewId": "R180",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer recognizes discharge according to the parties' agreement. Exercising the stated cancellation right is different from failing to perform an unconditional obligation."
+  },
+  {
+    "reviewId": "R181",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal excludes financing payments from net operating income. Operating expenses remain relevant regardless of the owner's debt arrangement."
+  },
+  {
+    "reviewId": "R182",
+    "correctAnswer": "B",
+    "explanation": "DRE Appraisal distinguishes economic curability by whether correction adds more value than it costs. A physical ability to renovate does not make the change economically curable."
+  },
+  {
+    "reviewId": "R183",
+    "correctAnswer": "B",
+    "explanation": "DRE Property explains that a metes-and-bounds description follows the boundaries back to the fixed point of beginning."
+  },
+  {
+    "reviewId": "R184",
+    "correctAnswer": "B",
+    "explanation": "NFIP guidance identifies the special-hazard-area and government-backed-mortgage combination as triggering required flood coverage."
+  },
+  {
+    "reviewId": "R185",
+    "correctAnswer": "C",
+    "explanation": "DOJ identifies race-based direction of homeseekers toward particular areas as steering. The conduct concerns housing choices rather than loan pricing."
+  },
+  {
+    "reviewId": "R186",
+    "correctAnswer": "C",
+    "explanation": "One point is 1% of the loan amount. Thus $320,000 \u00d7 0.0125 = $4,000."
+  },
+  {
+    "reviewId": "R187",
+    "correctAnswer": "D",
+    "explanation": "DRE Transfer explains that materially changing an offer's terms creates a counteroffer rather than an unqualified acceptance."
+  },
+  {
+    "reviewId": "R188",
+    "correctAnswer": "B",
+    "explanation": "DRE Agency distinguishes express authorization from implied powers needed to accomplish delegated objectives. Both concern actual authority, unlike third-party appearances."
+  },
+  {
+    "reviewId": "R189",
+    "correctAnswer": "D",
+    "explanation": "DRE Appraisal uses effective age to reflect condition relative to a comparable building. It can differ substantially from chronological age."
+  },
+  {
+    "reviewId": "R190",
+    "correctAnswer": "A",
+    "explanation": "DRE Appraisal requires consistent periods for multiplier and income. Annual rent is twelve times monthly rent, so this mismatch multiplies the estimate by twelve."
+  },
+  {
+    "reviewId": "R191",
+    "correctAnswer": "B",
+    "explanation": "The Pearson property outline identifies immobility as a physical characteristic. DRE Property describes land as immovable real property."
+  },
+  {
+    "reviewId": "R192",
+    "correctAnswer": "C",
+    "explanation": "DRE Appraisal distinguishes modern equivalent utility under replacement cost from reproducing a replica with original materials and design."
+  },
+  {
+    "reviewId": "R193",
+    "correctAnswer": "A",
+    "explanation": "CFPB distinguishes a loan\u2019s payment schedule from a maturity requiring an unpaid balance in one large payment."
+  },
+  {
+    "reviewId": "R194",
+    "correctAnswer": "B",
+    "explanation": "The absolute adjustments total $80,000 even though their net is zero. DRE Appraisal warns that large adjustments reduce comparability, so cancellation does not make a sale closely comparable."
+  },
+  {
+    "reviewId": "R195",
+    "correctAnswer": "C",
+    "explanation": "DRE Escrow limits the holder to the principals' instructions. Changing an agreed buyer credit requires their authority, rather than a unilateral request or instructions governing a different relationship."
+  },
+  {
+    "reviewId": "R196",
+    "correctAnswer": "B",
+    "explanation": "CFPB distinguishes an initial escrow balance from prepaid costs, discount points and lender origination charges."
+  },
+  {
+    "reviewId": "R197",
+    "correctAnswer": "A",
+    "explanation": "DRE Property lists adaptability for ordinary use with the property as a fixture test. Custom fitting concerns adaptation rather than the parties' relationship."
+  },
+  {
+    "reviewId": "R198",
+    "correctAnswer": "B",
+    "explanation": "DRE Property describes the recorded-map method using the lot, block and map reference. A street address is not that legal description method."
+  },
+  {
+    "reviewId": "R199",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer defines novation as a consensual substitution intended to extinguish the old obligation. Mere delegation does not accomplish the stated discharge."
+  },
+  {
+    "reviewId": "R200",
+    "correctAnswer": "A",
+    "explanation": "The parties can change a performance term by agreement without transferring a party's rights or undoing the whole transaction. DRE Transfer distinguishes modification of obligations from assignment and discharge."
+  }
+]

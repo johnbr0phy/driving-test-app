@@ -261,6 +261,7 @@ export const TEACHES: Record<string, string> = {
   osha: "OSHA 10 classes",
   forklift: "forklift operator training",
   epa608: "EPA 608 certification classes",
+  epa609: "Section 609 refrigerant handling classes",
   foodmgr: "food safety manager classes",
   security: "security guard training",
   lifeguard: "lifeguard classes",

@@ -1,0 +1,362 @@
+[
+  {
+    "reviewId": "R001",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Restricted valve cores are a familiar vacuum-flow limitation; that remembered mechanism makes C my best guess, although the missing stem could select moisture instead.",
+    "confidence": 0.4,
+    "questionId": "EPA609-SRV-005",
+    "hit": true
+  },
+  {
+    "reviewId": "R002",
+    "answer": "A",
+    "cueType": "surface",
+    "reason": "90 g looks like a plausible fractional test charge between 60 and 120; 510 looks like a full charge. This is a weak numerical-pattern guess, not a recalled specification.",
+    "confidence": 0.29,
+    "questionId": "EPA609-YF-012",
+    "hit": true
+  },
+  {
+    "reviewId": "R003",
+    "answer": "C",
+    "cueType": "surface",
+    "reason": "The installation sheet has the newer revision B while the bulletin has revision A and the other choices say original assembly. The visibly newer and installation-specific document is the obvious authority cue.",
+    "confidence": 0.75,
+    "questionId": "EPA609-SRV-029",
+    "hit": true
+  },
+  {
+    "reviewId": "R004",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "A dashboard face vent is the familiar location for cabin air-output measurements; that service association drives the guess without knowing the requested measurement.",
+    "confidence": 0.42,
+    "questionId": "EPA609-YF-013",
+    "hit": false
+  },
+  {
+    "reviewId": "R005",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "Three minutes is the only exact timed criterion among qualitative operating events, making it look like a procedural threshold the item is testing.",
+    "confidence": 0.47,
+    "questionId": "EPA609-YF-015",
+    "hit": false
+  },
+  {
+    "reviewId": "R006",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Voltage checks at isolation test points are a familiar way to verify high-voltage isolation; battery voltage and cable current are weaker substitutes. C also sounds specifically procedural.",
+    "confidence": 0.81,
+    "questionId": "EPA609-YF-008",
+    "hit": true
+  },
+  {
+    "reviewId": "R007",
+    "answer": "C",
+    "cueType": "surface",
+    "reason": "C supplies a qualified transport mechanism, whereas the alternatives suggest direct removal, blockage, or dilution. Its more careful causal wording attracts a test-wise guess.",
+    "confidence": 0.57,
+    "questionId": "EPA609-SRV-023",
+    "hit": false
+  },
+  {
+    "reviewId": "R008",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "A small initial refrigerant charge is associated with a pressure/leak check rather than cooling performance. The nearby category options about staged charging reinforce this association.",
+    "confidence": 0.78,
+    "questionId": "EPA609-YF-003",
+    "hit": true
+  },
+  {
+    "reviewId": "R009",
+    "answer": "B",
+    "cueType": "surface",
+    "reason": "Permanently on the part is the most durable and direct marking location; temporary packaging and paperwork read like standard compliance distractors.",
+    "confidence": 0.84,
+    "questionId": "EPA609-YF-001",
+    "hit": true
+  },
+  {
+    "reviewId": "R010",
+    "answer": "A",
+    "cueType": "surface",
+    "reason": "25 sits in the middle of the 24/25/26 cluster and 1 appears to be a difference/error distractor. Without operands this is only a weak numerical cue.",
+    "confidence": 0.31,
+    "questionId": "EPA609-SRV-025",
+    "hit": false
+  },
+  {
+    "reviewId": "R011",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Clearing trapped refrigerant before servicing a filter is a plausible recovery-machine maintenance step. The stem could instead ask when replacement is due, so confidence is low.",
+    "confidence": 0.39,
+    "questionId": "EPA609-EQP-013",
+    "hit": true
+  },
+  {
+    "reviewId": "R012",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "An inspection opening exists to verify hose insertion depth, whereas hand pull and matching sizes do not verify seating. That mechanical knowledge favors B.",
+    "confidence": 0.7,
+    "questionId": "EPA609-EQP-006",
+    "hit": true
+  },
+  {
+    "reviewId": "R013",
+    "answer": "C",
+    "cueType": "surface",
+    "reason": "The remainder of the programmed charge sounds like the natural completion of the initial 15% step referenced in D. The staged-process wording favors C.",
+    "confidence": 0.76,
+    "questionId": "EPA609-YF-014",
+    "hit": false
+  },
+  {
+    "reviewId": "R014",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "The shop putting refrigerant into the receiving vehicle seems the likely accountable facility for reuse. This is general responsibility reasoning, not a firm recalled rule.",
+    "confidence": 0.44,
+    "questionId": "EPA609-REG-028",
+    "hit": true
+  },
+  {
+    "reviewId": "R015",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Fluorescent leak-dye lamps depend on suitable emission wavelength, not merely visible brightness or beam geometry. I inferred that probable topic from the choices.",
+    "confidence": 0.78,
+    "questionId": "EPA609-SRV-020",
+    "hit": true
+  },
+  {
+    "reviewId": "R016",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "12 AWG is the heaviest conductor listed and thus the conservative equipment-power choice. I do not know the absent load or cord length.",
+    "confidence": 0.48,
+    "questionId": "EPA609-EQP-014",
+    "hit": false
+  },
+  {
+    "reviewId": "R017",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Changing contaminated vacuum pump oil is a common remedy for inadequate vacuum. All choices could be valid for different stems, so this remains a weak topic guess.",
+    "confidence": 0.35,
+    "questionId": "EPA609-SRV-026",
+    "hit": false
+  },
+  {
+    "reviewId": "R018",
+    "answer": "A",
+    "cueType": "surface",
+    "reason": "Permanent vehicle-end fitting is the single straightforward restrictive configuration; the alternatives introduce interchangeability or put permanence only at the gauge end.",
+    "confidence": 0.68,
+    "questionId": "EPA609-EQP-004",
+    "hit": true
+  },
+  {
+    "reviewId": "R019",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Sight-glass oil levels are commonly checked near the midpoint. This general maintenance convention makes C attractive without a device-specific stem.",
+    "confidence": 0.73,
+    "questionId": "EPA609-SRV-031",
+    "hit": true
+  },
+  {
+    "reviewId": "R020",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "Dry nitrogen is the familiar inert pressure-test gas; air is a poor substitute and refrigerant phase choices appear distractive. The missing task remains important.",
+    "confidence": 0.65,
+    "questionId": "EPA609-EQP-002",
+    "hit": false
+  },
+  {
+    "reviewId": "R021",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Leak dye travels with lubricant to the leak location; the other choices describe implausible prerequisites. B is also the most concrete physically coherent mechanism.",
+    "confidence": 0.91,
+    "questionId": "EPA609-SRV-006",
+    "hit": true
+  },
+  {
+    "reviewId": "R022",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Barrier refrigerant hoses reduce permeation through their walls. That familiar hose concept is more distinctive than the other generic benefits.",
+    "confidence": 0.78,
+    "questionId": "EPA609-REG-024",
+    "hit": true
+  },
+  {
+    "reviewId": "R023",
+    "answer": "C",
+    "cueType": "surface",
+    "reason": "Electric versus mechanical drive is the only categorical design distinction among three capacity/size quantities; it stands out as a plausible compatibility determinant.",
+    "confidence": 0.59,
+    "questionId": "EPA609-YF-004",
+    "hit": true
+  },
+  {
+    "reviewId": "R024",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "Compatibility with system materials is the broadest, most generally defensible quality of a solvent. Without the missing claim, C is also plausible.",
+    "confidence": 0.36,
+    "questionId": "EPA609-SRV-022",
+    "hit": true
+  },
+  {
+    "reviewId": "R025",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Liquid vaporization absorbs heat, the classic refrigeration cooling mechanism. All four thermal statements can fit different prompts, so I am guessing the instructional focus.",
+    "confidence": 0.57,
+    "questionId": "EPA609-EQP-011",
+    "hit": true
+  },
+  {
+    "reviewId": "R026",
+    "answer": "A",
+    "cueType": "surface",
+    "reason": "Contracting recycling work is the unique service relationship; the other options are ownership or lease changes. Its structural uniqueness makes it my guess.",
+    "confidence": 0.53,
+    "questionId": "EPA609-EQP-022",
+    "hit": false
+  },
+  {
+    "reviewId": "R027",
+    "answer": "A",
+    "cueType": "none",
+    "reason": "The dates alone do not supply a usable interval or start date. I choose May 10, 2029 as my low-confidence best guess; I cannot identify a reliable cue.",
+    "confidence": 0.25,
+    "questionId": "EPA609-REG-015",
+    "hit": true
+  },
+  {
+    "reviewId": "R028",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "DOT-39 is associated with nonrefillable cylinders, a familiar recovery-equipment warning. This guesses that the absent stem asks for an unsuitable container.",
+    "confidence": 0.68,
+    "questionId": "EPA609-EQP-019",
+    "hit": true
+  },
+  {
+    "reviewId": "R029",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "The combination of off-road equipment and top-offs sounds like the narrowest exception among a two-by-two set. This is exception-question guessing rather than recalled law.",
+    "confidence": 0.35,
+    "questionId": "EPA609-REG-004",
+    "hit": true
+  },
+  {
+    "reviewId": "R030",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Oily residue at a connection is a familiar refrigerant-leak clue; water drainage is normal and the other signs are less specific.",
+    "confidence": 0.9,
+    "questionId": "EPA609-SRV-012",
+    "hit": true
+  },
+  {
+    "reviewId": "R031",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Business certification paperwork is commonly signed by a responsible officer. The other roles sound like technical participants rather than authorized business signatories.",
+    "confidence": 0.74,
+    "questionId": "EPA609-REG-025",
+    "hit": true
+  },
+  {
+    "reviewId": "R032",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Type II is associated with high-pressure appliances, while Type I and III represent small and low-pressure equipment. I infer a likely non-MVAC classification question; the stem is essential.",
+    "confidence": 0.41,
+    "questionId": "EPA609-REG-016",
+    "hit": true
+  },
+  {
+    "reviewId": "R033",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "Receiving facility name and address has the recognizable form of a traceability-record requirement; the other choices use more operational detail.",
+    "confidence": 0.64,
+    "questionId": "EPA609-REG-008",
+    "hit": true
+  },
+  {
+    "reviewId": "R034",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "D is the only direct on-premises demonstration; the others delegate or repeat prior credentials. It looks tailored to proving ability during inspection.",
+    "confidence": 0.65,
+    "questionId": "EPA609-REG-026",
+    "hit": true
+  },
+  {
+    "reviewId": "R035",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "An imperfect connection can admit ambient air during low-pressure operation. That familiar contamination mechanism favors C, though the missing pressure context matters.",
+    "confidence": 0.54,
+    "questionId": "EPA609-EQP-020",
+    "hit": true
+  },
+  {
+    "reviewId": "R036",
+    "answer": "A",
+    "cueType": "surface",
+    "reason": "Current certification is the only completed formal qualification; attendance, supervised practice, and a future exam receipt are conspicuously weaker substitutes.",
+    "confidence": 0.95,
+    "questionId": "EPA609-REG-017",
+    "hit": true
+  },
+  {
+    "reviewId": "R037",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "12 is the difference between 20 and 8, while 28 is their sum. I guess this is a subtraction problem; the options reveal arithmetic structure but not which operation is required.",
+    "confidence": 0.37,
+    "questionId": "EPA609-EQP-024",
+    "hit": true
+  },
+  {
+    "reviewId": "R038",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "Prominently where sales occur is the only purchaser-facing advance notice; the others hide the notice or provide it after purchase. This is a strong commonsense disclosure cue.",
+    "confidence": 0.94,
+    "questionId": "EPA609-REG-027",
+    "hit": true
+  },
+  {
+    "reviewId": "R039",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Refrigerant vapor being heavier than air is a familiar ventilation/location hazard. Flammability is also relevant to Yf, making this a weak inferred-topic guess.",
+    "confidence": 0.4,
+    "questionId": "EPA609-YF-006",
+    "hit": true
+  },
+  {
+    "reviewId": "R040",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "0.15 ounce per year resembles the small leak rate used in detector sensitivity discussions. This is an approximate specification association, not verified source recall.",
+    "confidence": 0.58,
+    "questionId": "EPA609-YF-016",
+    "hit": true
+  }
+]

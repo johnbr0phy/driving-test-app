@@ -1,0 +1,1202 @@
+[
+  {
+    "reviewId": "R001",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Known VTC width minimum is 1.70 m; the other numerical assertions are wrong, leaving insufficient width."
+  },
+  {
+    "reviewId": "R002",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Recognizable SASU president social status; mandate does not create unemployment insurance."
+  },
+  {
+    "reviewId": "R003",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R004",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Reconstruct deduction of actual expenses task; real taxation permits actual expenses."
+  },
+  {
+    "reviewId": "R005",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R006",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R007",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R008",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Reconstruct expiry of registration and attached signage; validity follows registration rather than driver or sale."
+  },
+  {
+    "reviewId": "R009",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "Broad meaningful customer-needs formulation against narrow or irrelevant alternatives."
+  },
+  {
+    "reviewId": "R010",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "VTC operator registration is distinct from taxi ADS and collective transport."
+  },
+  {
+    "reviewId": "R011",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Recognizable existing-customer analogous-services prospecting exception."
+  },
+  {
+    "reviewId": "R012",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Reconstruct exit across pavement onto road; must yield."
+  },
+  {
+    "reviewId": "R013",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R014",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Recognizable platform-driver freedom to refuse work without penalty."
+  },
+  {
+    "reviewId": "R015",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R016",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Reconstruct business buying roles: purchaser and users differ."
+  },
+  {
+    "reviewId": "R017",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Recognizable continuing training duration and five-year cycle."
+  },
+  {
+    "reviewId": "R018",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R019",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Recognizable permanent VTC vignette attachment rule."
+  },
+  {
+    "reviewId": "R020",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R021",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Cautious qualified conclusion versus categorical extrapolations."
+  },
+  {
+    "reviewId": "R022",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Recognizable minimum four doors for VTC."
+  },
+  {
+    "reviewId": "R023",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Medical fitness assessment uses prefecture-approved physician."
+  },
+  {
+    "reviewId": "R024",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Contract modification requires mutual consent."
+  },
+  {
+    "reviewId": "R025",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R026",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Roundabout entrant yields to circulating vehicle."
+  },
+  {
+    "reviewId": "R027",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R028",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Professional civil liability is the recognizable required business coverage."
+  },
+  {
+    "reviewId": "R029",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "VTC seat-belt obligation lacks the assumed taxi exemption."
+  },
+  {
+    "reviewId": "R030",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Invoice numbering must be unique continuous chronological sequence."
+  },
+  {
+    "reviewId": "R031",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R032",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct vehicle turning left; passing on right exception recognizable."
+  },
+  {
+    "reviewId": "R033",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Valid competitive price comparison requires same service scope."
+  },
+  {
+    "reviewId": "R034",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Keep right after passing, with safety checks."
+  },
+  {
+    "reviewId": "R035",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "Nuanced provisional addition versus automatic confirmation or wholesale cancellation."
+  },
+  {
+    "reviewId": "R036",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Recognizable national REVTC authority is Ile-de-France prefect."
+  },
+  {
+    "reviewId": "R037",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R038",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Do not enter intersection when unable to clear it."
+  },
+  {
+    "reviewId": "R039",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Carpooling involves driver's own travel need."
+  },
+  {
+    "reviewId": "R040",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R041",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Parallel dense queues advancing at different speeds are not ordinary overtaking."
+  },
+  {
+    "reviewId": "R042",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Loads must not impede driver's maneuvers."
+  },
+  {
+    "reviewId": "R043",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R044",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R045",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Constructive role identification contrasts with arbitrary restrictive behaviors."
+  },
+  {
+    "reviewId": "R046",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R047",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Recognizable numbered credit note for correcting/refunding invoice."
+  },
+  {
+    "reviewId": "R048",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R049",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R050",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R051",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R052",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Grave sexual pressure can qualify as harassment from one act."
+  },
+  {
+    "reviewId": "R053",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Repeated humiliating conduct is recognizable harassment element."
+  },
+  {
+    "reviewId": "R054",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Individual entrepreneur separate personal and business patrimony rule."
+  },
+  {
+    "reviewId": "R055",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Reconstruct A/B test controls; keep other page and diffusion conditions fixed."
+  },
+  {
+    "reviewId": "R056",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Coordinated group harassment need not involve personal repetition by every author."
+  },
+  {
+    "reviewId": "R057",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Safety corridor: slow and move within lane if adjoining lane unavailable."
+  },
+  {
+    "reviewId": "R058",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R059",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Reconstruct assistance-dog access; no surcharge."
+  },
+  {
+    "reviewId": "R060",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "STOP requires actual halt, not merely slowing."
+  },
+  {
+    "reviewId": "R061",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R062",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Overtaking requires adequate forward visibility."
+  },
+  {
+    "reviewId": "R063",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R064",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Procedurally reasonable missing-document request versus arbitrary closure or bypass."
+  },
+  {
+    "reviewId": "R065",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R066",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R067",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R068",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "VTC waiting without booking must be off roadway in authorized parking."
+  },
+  {
+    "reviewId": "R069",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Context-dependent choice versus systematically chosen extremes."
+  },
+  {
+    "reviewId": "R070",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R071",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Facilitate bus leaving stop in built-up area."
+  },
+  {
+    "reviewId": "R072",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Yield to pedestrian clearly intending to cross."
+  },
+  {
+    "reviewId": "R073",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R074",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Measured study before change contrasts with abrupt unsupported changes."
+  },
+  {
+    "reviewId": "R075",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R076",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R077",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Driver requires VTC professional card distinct from operator registration."
+  },
+  {
+    "reviewId": "R078",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Recognizable temporary VTC signage one-month validity."
+  },
+  {
+    "reviewId": "R079",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Reconstruct hybrid/electric dimensional exemption."
+  },
+  {
+    "reviewId": "R080",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Recognizable fifteen-clear-day change declaration deadline."
+  },
+  {
+    "reviewId": "R081",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Continuing training must use approved provider."
+  },
+  {
+    "reviewId": "R082",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct electronic cruising prohibition involving location plus availability."
+  },
+  {
+    "reviewId": "R083",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R084",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R085",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R086",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Business formalities use electronic single window."
+  },
+  {
+    "reviewId": "R087",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Symptoms impairing driving call for stopping safely."
+  },
+  {
+    "reviewId": "R088",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Useful incident report documents observable facts, time and place."
+  },
+  {
+    "reviewId": "R089",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R090",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "B2B prospecting relevance to recipient's professional functions."
+  },
+  {
+    "reviewId": "R091",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Professional card jurisdiction follows driver's residence."
+  },
+  {
+    "reviewId": "R092",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Financed vehicle is asset; borrowing is liability."
+  },
+  {
+    "reviewId": "R093",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R094",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Recognizable temporary official VTC sign printed from Imprimerie nationale delivery."
+  },
+  {
+    "reviewId": "R095",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Persistent suppression list prevents reimport of opted-out contacts."
+  },
+  {
+    "reviewId": "R096",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R097",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Professional insurance must cover paid passenger carriage."
+  },
+  {
+    "reviewId": "R098",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Withdrawal of consent requires stopping."
+  },
+  {
+    "reviewId": "R099",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R100",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R101",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R102",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R103",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Rear-facing infant seat in front requires airbag deactivation."
+  },
+  {
+    "reviewId": "R104",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Underinflated tyres increase consumption and impair handling."
+  },
+  {
+    "reviewId": "R105",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R106",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Depreciation is expense without corresponding immediate cash outflow."
+  },
+  {
+    "reviewId": "R107",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "VTC requires suitable approved child restraint, taxi exemption not extended."
+  },
+  {
+    "reviewId": "R108",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Modest accessibility consequence versus automatic schedule/service promises."
+  },
+  {
+    "reviewId": "R109",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Recognizable transactional communication necessary to requested service."
+  },
+  {
+    "reviewId": "R110",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "VTC power assessed in net kW, not fiscal horsepower."
+  },
+  {
+    "reviewId": "R111",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unmarked intersection priority to right."
+  },
+  {
+    "reviewId": "R112",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Avoid moving casualty except necessity; follow emergency guidance."
+  },
+  {
+    "reviewId": "R113",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Recognizable five-year operator registration validity."
+  },
+  {
+    "reviewId": "R114",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Police/gendarmerie official chat is relevant reporting channel for violence."
+  },
+  {
+    "reviewId": "R115",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Recognizable VTC sticker lower-left front and lower-right rear placement."
+  },
+  {
+    "reviewId": "R116",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R117",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Professional card displayed visibly from outside."
+  },
+  {
+    "reviewId": "R118",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R119",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Booking precedes requested pickup; sole clearly prior-day booking pair."
+  },
+  {
+    "reviewId": "R120",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R121",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Silence alone does not establish consent."
+  },
+  {
+    "reviewId": "R122",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R123",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Reconstruct taxi-like light/sign exclusion to avoid confusion."
+  },
+  {
+    "reviewId": "R124",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R125",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R126",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R127",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Supposed origin is protected discrimination ground unlike capacity constraints."
+  },
+  {
+    "reviewId": "R128",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Cessation of VTC activity entails deregistration."
+  },
+  {
+    "reviewId": "R129",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R130",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R131",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R132",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Reconstruct visibility below fifty metres speed ceiling 50 km/h; inferred task."
+  },
+  {
+    "reviewId": "R133",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R134",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "EURL and SASU are recognizable single-owner company forms."
+  },
+  {
+    "reviewId": "R135",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R136",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Event demand cannot establish ordinary demand without out-of-event observations."
+  },
+  {
+    "reviewId": "R137",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Company representative legally acts for operator."
+  },
+  {
+    "reviewId": "R138",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Reconstruct withdrawal/cessation requiring document return to administration."
+  },
+  {
+    "reviewId": "R139",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "VTC may use preagreed fixed fare or time-distance method."
+  },
+  {
+    "reviewId": "R140",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Borrowing increases cash and debt, not income or share capital."
+  },
+  {
+    "reviewId": "R141",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Flexible customer-aware conduct versus invented mandatory approvals."
+  },
+  {
+    "reviewId": "R142",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Ear-worn audio device ban includes navigation and single ear."
+  },
+  {
+    "reviewId": "R143",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Electronic prior-booking proof is acceptable."
+  },
+  {
+    "reviewId": "R144",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Reconstruct owned-media question; business's own site is owned channel."
+  },
+  {
+    "reviewId": "R145",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R146",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R147",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R148",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "Qualified pending confirmation contrasts with categorical automatic consequences."
+  },
+  {
+    "reviewId": "R149",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R150",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R151",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Hedged possibility contrasts with exact duration or categorical rescheduling claims."
+  },
+  {
+    "reviewId": "R152",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R153",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R154",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Evidence-backed relevant performance promise versus generic marketing changes."
+  },
+  {
+    "reviewId": "R155",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Turning vehicle yields to cycle track users including opposing direction."
+  },
+  {
+    "reviewId": "R156",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Other options invent implausible exam/card shortcuts; closure is restrained alternative."
+  },
+  {
+    "reviewId": "R157",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Yellow signal exception when stopping safely no longer possible."
+  },
+  {
+    "reviewId": "R158",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Emergency road location requires road number direction and kilometre marker."
+  },
+  {
+    "reviewId": "R159",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Being overtaken: hold right and do not accelerate."
+  },
+  {
+    "reviewId": "R160",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Medicine-driving compatibility requires appropriate professional advice."
+  },
+  {
+    "reviewId": "R161",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R162",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct cost contribution in carpooling; sharing costs remains compatible."
+  },
+  {
+    "reviewId": "R163",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R164",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R165",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Consent is specific to the act."
+  },
+  {
+    "reviewId": "R166",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Longer customer payment delays increase working capital requirement."
+  },
+  {
+    "reviewId": "R167",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Next prior booking permits direct continuation to pickup."
+  },
+  {
+    "reviewId": "R168",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Navigation display exception to driver's screen restriction."
+  },
+  {
+    "reviewId": "R169",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Plausible administrative update versus excessive or implausible changes."
+  },
+  {
+    "reviewId": "R170",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Reconstruct aggravating circumstance linked to public passenger transport context."
+  },
+  {
+    "reviewId": "R171",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R172",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R173",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Reconstruct CRM collaboration issue; shared history supports coordinated follow-up."
+  },
+  {
+    "reviewId": "R174",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct lead-quality measure distinct from traffic/impressions."
+  },
+  {
+    "reviewId": "R175",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Motorway breakdown passengers shelter behind barrier away from traffic."
+  },
+  {
+    "reviewId": "R176",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Independent platform workers may use multiple channels."
+  },
+  {
+    "reviewId": "R177",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Indicator communicates intent but never confers priority."
+  },
+  {
+    "reviewId": "R178",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "VTC technical inspection is annual."
+  },
+  {
+    "reviewId": "R179",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct data minimization; annual income unnecessary to trip request."
+  },
+  {
+    "reviewId": "R180",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R181",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Professional driver card is personal and cannot be lent."
+  },
+  {
+    "reviewId": "R182",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Eco-driving anticipates slowing by early accelerator release."
+  },
+  {
+    "reviewId": "R183",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct indirect competitor; collective shuttle is service substitute."
+  },
+  {
+    "reviewId": "R184",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Assistance dog enjoys access rights rather than ordinary pet policy."
+  },
+  {
+    "reviewId": "R185",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Prior substantiated booking defines VTC pickup requirement."
+  },
+  {
+    "reviewId": "R186",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Fixed cost identification: monthly garage rent does not vary with trips."
+  },
+  {
+    "reviewId": "R187",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Most complete documentary bundle; alternatives explicitly omit one component."
+  },
+  {
+    "reviewId": "R188",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R189",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Consumer electronic prospecting requires specific consent absent exception."
+  },
+  {
+    "reviewId": "R190",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R191",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R192",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R193",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R194",
+    "guess": null,
+    "cueType": "none",
+    "cue": "Options alone do not establish the missing situation, text, requested concept or numerical inputs; no defensible selection."
+  },
+  {
+    "reviewId": "R195",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Reconstruct warning triangle usual minimum distance thirty metres; inferred task."
+  },
+  {
+    "reviewId": "R196",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Recognizable conventional VTC vehicle under-seven-year age rule."
+  },
+  {
+    "reviewId": "R197",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Recognizable registration renewal request three months before expiry."
+  },
+  {
+    "reviewId": "R198",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Discrimination based on supposed religion remains discrimination despite error."
+  },
+  {
+    "reviewId": "R199",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Reconstruct local service discovery task; dedicated local webpage fits search acquisition."
+  },
+  {
+    "reviewId": "R200",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Defender of Rights is recognizable discrimination assistance authority."
+  }
+]

@@ -1,0 +1,321 @@
+Chapitre préliminaire : Dispositions générales (Articles L3120-1 à L3120-7) - Légifrance (https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000023086525/LEGISCTA000029530470/?anchor=LEGIARTI000029530535)
+citeturn284view0 [wordlim: 200] Crawled: 5 days ago; Content type: text/html; Source: click({"ref_id":"turn283view0","id":85}); Total lines: 363
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code des transports
+L66: 
+L67: Version En vigueur au 12/11/2026 Version En vigueur au 12 novembre 2026
+L68: 
+L69: [Input]Masquer les articles et les sections abrogés
+L70: 
+L71: Voir les tables de concordance Imprimer la page[Button: Copier le texte ]
+L72: 
+L73: [Button: Fermer ]
+L74: # Table de concordance
+L75: 
+L76: Lorsque des dispositions ont été déplacées ou modifiées, une table de concordance est créée qui permet de relier dans un tableau une ou plusieurs anciennes dispositions d'un texte ou d'un code à leur nouvelle disposition.
+L77: 
+L78: Cela est utile dans le cadre d'une création de code (codification), d'une refonte de code ou recodification.
+L79: ### TABLES DE CONCORDANCE
+L80:   * 【7†Télécharger la partie législative au JO du 3/11/2010, ancienne numérotation / nouvelle numérotation】
+L81:   * 【8†Télécharger la partie législative au JO du 3/11/2010, nouvelle numérotation / ancienne numérotation】
+L82:   * 【9†Télécharger la partie réglementaire (partie 1, dispositions communes) au JO du 27/05/2014, ancienne / nouvelle référence‎】
+L83:   * 【10†Télécharger la partie réglementaire (partie 1, dispositions communes) au JO du 27/05/2014, nouvelle / ancienne ‎référence】
+L84:   * 【11†Télécharger la partie réglementaire (parties 1 et 3, dispositions en matière de transport public routier de personnes) au JO du 31/01/2017, ancienne / nouvelle référence‎】
+L85:   * 【12†Télécharger la partie réglementaire (partie 2, livre II, titres IV, V et VI) au JO du 11/07/2019, ancienne / nouvelle référence‎】
+L86:   * 【13†Télécharger la partie réglementaire (partie 3, transport routier) au JO du 19/11/2016, ancienne / nouvelle référence‎】
+L87:   * 【14†Télécharger la partie réglementaire ‎(partie 3, transport routier) au JO du 19/11/2016‎, nouvelle / ancienne ‎référence】
+L88:   * 【15†Télécharger la partie réglementaire (partie 4, navigation intérieure et transport fluvial) au JO du 27/03/2013, ancienne / nouvelle référence】
+L89:   * 【15†Télécharger la partie réglementaire (partie 4, navigation intérieure et transport fluvial) au JO du 27/03/2013, nouvelle / ancienne référence】
+L90:   * 【16†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre III, les ports maritimes) au JO des 5 et 31/12/2014, ancienne / nouvelle ‎référence】
+L91:   * 【16†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre III, les ports maritimes) au JO des 5 et 31/12/2014, nouvelle / ancienne ‎référence】
+L92:   * 【17†Télécharger la partie réglementaire (partie 5, livre I) au JO des 6 et 29/12/2016, ancienne / nouvelle ‎référence】
+L93:   * 【18†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre I) au JO des 6 et 29/12/2016, nouvelle / ancienne ‎référence】
+L94:   * 【19†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre IV) au JO du 29/12/2016, ancienne / nouvelle ‎référence】
+L95:   * 【20†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre IV) au JO du 29/12/2016, nouvelle / ancienne ‎référence】
+L96:   * 【21†Télécharger la partie réglementaire (partie 6, Livre I, l'aéronef) nouvelle numérotation / ancienne numérotation au JO du 03-08-23】
+L97:   * 【22†Télécharger la partie réglementaire (partie 6, Livre I, l'aéronef) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L98:   * 【23†Télécharger la partie réglementaire (partie 6, Livre II la circulation aérienne)  nouvelle numérotation / ancienne numérotation au JO du 17-04-24】
+L99:   * 【24†Télécharger la partie réglementaire (partie 6, Livre II, la circulation aérienne) ancienne numérotation / nouvelle numérotation au JO du 17-04-24】
+L100:   * 【25†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes,Titre I et II) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L101:   * 【26†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre I et II) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L102:   * 【27†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre III) nouvelle numérotation / ancienne numérotation  au JO du 13-12-23】
+L103:   * 【28†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes,Titre III) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L104:   * 【29†Télécharger la partie réglementaire  partie 6, Livre III, les aérodromes, Titre IV) nouvelle numérotation / ancienne numérotation  au JO du 03-08-23】
+L105:   * 【30†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes,Titre IV) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L106:   * 【31†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre V) nouvelle numérotation / ancienne numérotation  au JO du 03-08-23】
+L107:   * 【32†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre V) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L108:   * 【33†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre VI) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L109:   * 【34†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre VI) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L110:   * 【35†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes Titre VII) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L111:   * 【36†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre VII) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L112:   * 【37†Télécharger la partie réglementaire (partie 6, Livre IV, le transport aérien) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L113:   * 【38†Télécharger la partie réglementaire (partie 6, Livre IV, le transport aérien) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L114:   * 【39†Télécharger la partie réglementaire (partie 6, Livre V le personnel navigant) nouvelle numérotation ancienne numérotation au JO du 04-10-23】
+L115:   * 【40†Télécharger la partie réglementaire (partie 6, Livre V, le personnel navigant) ancienne numérotation nouvelle numérotation au JO du 04-10-23】
+L116:   * 【41†Télécharger la partie réglementaire (partie 6, Livre VI,  la formation aéronautique) nouvelle numérotation ancienne numérotation au JO du 03-08-23】
+L117:   * 【42†Télécharger la partie réglementaire (partie 6, Livre VI, la formation aéronautique) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L118: ### CODIFICATION
+L119:   * Partie législative au 【43†JO n° 0255 du 3/11/2010】 : 【44†dossier législatif de l'ordonnance n° 2010-1307】.
+L120:   * Partie réglementaire au 【45†JO n° 0073 du 27/03/2013】 : 【46†décrets du 25 mars 2013 n° 2013-251】 relatif à certaines dispositions de la partie réglementaire du code des transports (Décrets en Conseil d’État et en conseil des ministres), 【47†n° 2013-253】 relatif aux dispositions de la quatrième partie réglementaire du code des transports (Décrets en Conseil d'État et décrets simples).
+L121:   * Partie réglementaire au 【48†JO n° 0122 du 27/05/2014】 : 【49†décret n° 2014-530】 du 22 mai 2014 relatif à certaines dispositions de la partie réglementaire du code des transports (Décrets en Conseil d’État et décrets simples).
+L122:   * Partie réglementaire au 【50†JO n° 0281 du 5 décembre 2014】 : 【51†décret n° 2014-1440】 du 4 décembre 2014 relatif aux dispositions du livre III de la cinquième partie réglementaire du code des transports (Décrets en Conseil d'Etat et en conseil des ministres).
+L123:   * Partie réglementaire au 【52†JO n° 0302 du 31 décembre 2014】 : 【53†décret n° 2014-1670】 du 30 décembre 2014 relatif aux dispositions du livre III de la cinquième partie réglementaire du code des transports et à leur adaptation à l'outre-mer (Décrets en Conseil d'Etat et décrets simples).
+L124:   * Partie réglementaire au 【54†JO n° 0269 du 19 novembre 2016】 : 【55†décrets du 17 novembre 2016 n° 2016-1549】  relatif à certaines dispositions de la partie réglementaire du code des transports, n° 【56†2016-1550】 relatif à certaines dispositions de la partie réglementaire du code des transports.
+L125:   * Partie réglementaire au 【57†JO n° 0283 du 6 décembre 2016】 : 【58†décret n° 2016-1660】 du 5 décembre 2016 relatif à des dispositions du livre Ier de la cinquième partie réglementaire du code des transports.
+L126:   * Partie réglementaire au 【59†JO n° 0302 du 29 décembre 2016】 : 【60†décret n° 2016-1893】 du 28 décembre 2016 relatif aux dispositions du livre Ier, du livre IV, à l'exception de son titre IV, ainsi que des chapitres Ier et IV des titres Ier à IX du livre VII de la cinquième partie réglementaire du code des transports, et portant diverses mesures d'adaptation relatives à l'outre-mer.
+L127:   * Partie réglementaire au 【61†JO n° 0026 du 31 janvier 2017】 : 【62†décret n° 2017-107】 du 30 janvier 2017 relatif à la codification du titre VI du livre II de la première partie ainsi que des chapitres IV et V du titre Ier du livre Ier de la troisième partie du code des transports et comportant diverses dispositions en matière de transport public routier de personnes.
+L128:   * Partie réglementaire au 【63†JO n° 0159 du 11 juillet 2019】 : 【64†décret n° 2019-726】 du 9 juillet 2019 relatif aux dispositions des titres IV, V et VI du livre II de la deuxième partie réglementaire du code des transports et comportant diverses dispositions relatives à la sûreté des transports.
+L129:   * Partie réglementaire au 【65†JO n° 0254 du 1 novembre 2023】 : 【66†décret n° 2023-1008】 du 31 octobre 2023 portant sixième partie réglementaire du code des transports.
+L130: ### VOIR AUSSI
+L131:   * 【67†Dossier législatif de l'ordonnance n° 2019-78】 du 6 février 2019 relative à la préparation au retrait du Royaume-Uni de l'Union européenne en matière de transport routier de personnes et de marchandises et de sûreté dans le tunnel sous la Manche [article 6 : insertion au livre II de la deuxième partie du code d'un titre VII « RÉGIME DE SÛRETÉ DE LA PARTIE FRANÇAISE DE LA LIAISON FIXE TRANS-MANCHE »]
+L132:   * 【68†Décret n° 2017-423】 du 28 mars 2017 portant application de la loi pour l'économie bleue et modifiant le code des transports
+L133:   * 【69†Dossier législatif de la loi n° 2016-816】 du 20 juin 2016 pour l'économie bleue
+L134:   * 【70†Dossier législatif de l'ordonnance n° 2016-79】 du 29 janvier 2016 relative aux gares routières et à la recodification des dispositions du code des transports relatives à l'Autorité de régulation des activités ferroviaires et routières
+L135:   * 【71†Décret n° 2014-1725】 du 30 décembre 2014 relatif au transport public particulier de personnes [Les dispositions de l'annexe au présent décret constituent, respectivement, le titre II du livre Ier et les titres III, IV et V du livre V de la troisième partie réglementaire du code des transports.]
+L136:   * 【72†Décret n° 2014-1416】 du 28 novembre 2014 relatif aux modalités d'exercice de l'activité privée de protection des navires [au début de la cinquième partie, il est inséré un livre IV intitulé « Le transport maritime »]
+L137:   * 【73†Dossier législatif de l'ordonnance n° 2014-1380】 du 21 novembre 2014 rapprochant la législation des transports applicable à Mayotte de la législation applicable en métropole et portant adaptation au droit européen de la législation des transports applicable à Mayotte
+L138:   * 【74†Décret n° 2014-881】 du 1er août 2014 pris pour l'application des dispositions du titre VI du livre V de la cinquième partie du code des transports et relatif aux conditions sociales du pays d'accueil [après la quatrième partie du code des transports (partie réglementaire), il est inséré une cinquième partie intitulée « Transport et navigation maritimes » comportant un livre V : « Les gens de mer »]
+L139:   * 【75†Arrêté du 28 juin 2013 portant règlement général de police de la navigation intérieure】 (Articles 1er à 3 : Insertion des articles A. 4241-1 à A. 4241-65, et de leurs annexes, constituant la section 1 du chapitre Ier, du titre IV, du livre II de la quatrième partie du présent code, applicable à compter du 1er septembre 2014, à l'exception des articles A. 4241-26 [relatif aux mesures temporaires d'interruption ou de modification des conditions de la navigation] et A. 4241-35-1 à A.
+L140: 4241-35-4 [relatifs aux transports spéciaux] applicables à compter du 30 août 2013)
+L141:   * 【76†Dossier législatif de l'ordonnance n° 2012-1218】 du 2 novembre 2012 portant réforme pénale en matière maritime (modification de la loi du 17 décembre 1926 portant code disciplinaire et pénal de la marine marchande et la cinquième partie du code des transports)
+L142:   * 【77†Dossier législatif de la loi n° 2012-375】 du 19 mars 2012 ratifiant les ordonnances n° 2010-1307 du 28 octobre 2010 relative à la partie législative du code des transports et n° 2011-204 du 24 février 2011 relative au code des transports
+L143:   * 【78†Dossier législatif de l'ordonnance n° 2011-1300】 du 14 octobre 2011 relative aux redevances aéroportuaires
+L144:   * 【79†Dossier législatif de l'ordonnance n° 2011-204】 du 24 février 2011 relative au code des transports
+L145: Dernière modification : 13 janvier 2020
+L146: ## ChronoLégi l'accès au droit dans le temps
+L147: 
+L148: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L149: 
+L150: [Input]
+L151: ### Les différentes versions dans le temps
+L152: 
+L153: Fermer le Chronolégi
+L154: 
+L155: À la date du JJ/MM/AAAA
+L156: 
+L157: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L158: 
+L159: Rechercher dans cette section ou dans tout le code
+L160: 
+L161: [Input]Rechercher dans cette section
+L162: 
+L163: [Input]Rechercher dans tout le code
+L164: 
+L165: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L166: 
+L167: [Input] Réinitialiser le champ recherche
+L168: 
+L169: * * *
+L170: 
+L171: Voir le sommaire du code
+L172: 
+L173: [Button: Fermer]
+L174: 
+L175:   * ## 【80†PARTIE LÉGISLATIVE (Articles L1000-1 à L6795-1)】
+L176: Déplier/Replier
+L177:     * ### 【81†TROISIÈME PARTIE : TRANSPORT ROUTIER (Articles L3111-1 à L3561-1)】
+L178: 
+L179: Déplier/Replier
+L180:       * #### 【82†LIVRE IER : LE TRANSPORT ROUTIER DE PERSONNES (Articles L3111-1 à L3163-5)】
+L181: 
+L182: Déplier/Replier
+L183:         * ##### 【83†TITRE II : LES TRANSPORTS PUBLICS PARTICULIERS (Articles L3120-1 à L3124-13)】
+L184: 
+L185: Déplier/Replier
+L186:           * ###### 【84†Chapitre préliminaire : Dispositions générales (Articles L3120-1 à L3120-7)】
+L187: 
+L188: Déplier/Replier
+L189:             * 【85†Article L3120-1】
+L190:             * 【86†Article L3120-2】
+L191:             * 【87†Article L3120-2-1】
+L192:             * 【88†Article L3120-2-2】
+L193:             * ABROGÉ 【89†Article L3120-3】
+L194:             * 【90†Article L3120-4】
+L195:             * 【91†Article L3120-5】
+L196:             * 【92†Article L3120-6】
+L197:             * 【93†Article L3120-7】
+L198: 
+L199: [Input]
+L200: 
+L201:   * ## 【94†Article L3120-1】
+L202: 
+L203: En vigueur depuis le 03 oct. 2014 En vigueur depuis le 03 octobre 2014
+L204: 
+L205: 【95†Création LOI n°2014-1104 du 1er octobre 2014 - art. 10】
+L206: Le présent titre est applicable aux prestations de transport routier de personnes effectuées à titre onéreux avec des véhicules de moins de dix places, à l'exclusion des transports publics collectifs mentionnés au titre Ier de la présente partie et du transport privé routier de personnes mentionné au titre III.
+L207: 
+L208: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L209: 
+L210: [Button: Fermer ]
+L211: 
+L212:   * ## 【96†Article L3120-2】
+L213: En vigueur depuis le 31 déc. 2016 En vigueur depuis le 31 décembre 2016
+L214: 
+L215: 【97†Modifié par LOI n°2016-1920 du 29 décembre 2016 - art. 13 (V)】
+L216: 【98†Modifié par LOI n°2016-1920 du 29 décembre 2016 - art. 6】
+L217: 
+L218: I.-Les véhicules qui effectuent les prestations mentionnées à 【99†l'article L. 3120-1】 ne peuvent pas être loués à la place, sauf s'ils font l'objet d'une réservation préalable dans les conditions définies par un décret en Conseil d'Etat.
+L219: II.-A moins de justifier de l'autorisation de stationnement mentionnée à 【100†l'article L. 3121-1,】 le conducteur d'un véhicule mentionné au I du présent article ne peut :
+L220: 
+L221: 1° Prendre en charge un client sur la voie ouverte à la circulation publique, sauf s'il justifie d'une réservation préalable ;
+L222: 
+L223: 2° S'arrêter, stationner ou circuler sur la voie ouverte à la circulation publique en quête de clients ;
+L224: 3° Stationner sur la voie ouverte à la circulation publique, à l'abord des gares et des aérogares ou, le cas échéant, dans l'enceinte de celles-ci, au delà d'une durée, fixée par décret, précédant la prise en charge du client qui a effectué une réservation préalable.
+L225: 
+L226: III.-Sont interdits aux personnes réalisant des prestations mentionnées à l'article L. 3120-1 et aux intermédiaires auxquels elles ont recours, notamment les centrales de réservation au sens de l'article 【101†L. 3142-1】 :
+L227: 1° Le fait d'informer un client, avant la réservation mentionnée au 1° du II du présent article, quel que soit le moyen utilisé, à la fois de la localisation et de la disponibilité d'un véhicule mentionné au I quand il est situé sur la voie ouverte à la circulation publique sans que son propriétaire ou son exploitant soit titulaire d'une autorisation de stationnement mentionnée à l'article L. 3121-1 ;
+L228: 2° Le démarchage d'un client en vue de sa prise en charge dans les conditions mentionnées au 1° du II du présent article ;
+L229: 
+L230: 3° Le fait de proposer à la vente ou de promouvoir une offre de prise en charge effectuée dans les conditions mentionnées au même 1°.
+L231: 
+L232: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L233: 
+L234: [Button: Fermer ]
+L235: 
+L236:   * ## 【102†Article L3120-2-1】
+L237: 
+L238: En vigueur depuis le 27 déc. 2019 En vigueur depuis le 27 décembre 2019
+L239: 【103†Modifié par LOI n°2019-1428 du 24 décembre 2019 - art. 43】
+L240: 
+L241: Les conducteurs des véhicules qui exécutent les prestations mentionnées à l'article 【99†L. 3120-1】 répondent, dans des conditions définies par décret en Conseil d'Etat, à des conditions d'aptitude professionnelle, à l'exclusion des conducteurs de cycles à pédalage assisté, et à des conditions d'honorabilité professionnelle.
+L242: 
+L243: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L244: [Button: Fermer ]
+L245: 
+L246:   * ## 【104†Article L3120-2-2】
+L247: 
+L248: En vigueur depuis le 27 déc. 2019 En vigueur depuis le 27 décembre 2019
+L249: 
+L250: 【103†Modifié par LOI n°2019-1428 du 24 décembre 2019 - art. 43】
+L251: 
+L252: Les conducteurs des véhicules qui exécutent les prestations mentionnées à l'article 【99†L. 3120-1】, à l'exclusion des conducteurs de cycles à pédalage assisté, sont titulaires d'une carte professionnelle délivrée par l'autorité administrative.
+L253: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L254: 
+L255: [Button: Fermer ]
+L256: 
+L257:   * ## Article L3120-3
+L258: 
+L259: En vigueur du 03 oct. 2014 au 31 déc. 2016 En vigueur du 03 octobre 2014 au 31 décembre 2016
+L260: 
+L261: 【97†Abrogé par LOI n°2016-1920 du 29 décembre 2016 - art. 13 (V)】
+L262: 【95†Création LOI n°2014-1104 du 1er octobre 2014 - art. 10】
+L263: Toute personne qui se livre ou apporte son concours à l'organisation ou à la vente d'une prestation mentionnée à l'article 【99†L. 3120-1】 est responsable de plein droit, à l'égard du client, de la bonne exécution des obligations résultant du contrat, que ce contrat ait été conclu à distance ou non et que ces obligations soient à exécuter par elle-même ou par d'autres prestataires de services, sans préjudice de son droit de recours contre ceux-ci.
+L264: Toutefois, la personne mentionnée au premier alinéa du présent article peut s'exonérer de tout ou partie de sa responsabilité en apportant la preuve que l'inexécution ou la mauvaise exécution du contrat est imputable soit au client, soit au fait imprévisible et insurmontable d'un tiers étranger à la fourniture de la prestation prévue au contrat, soit à un cas de force majeure.
+L265: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L266: 
+L267: [Button: Fermer ]
+L268: 
+L269:   * ## 【105†Article L3120-4】
+L270: 
+L271: En vigueur depuis le 31 déc. 2016 En vigueur depuis le 31 décembre 2016
+L272: 
+L273: 【97†Modifié par LOI n°2016-1920 du 29 décembre 2016 - art. 13 (V)】
+L274: Les personnes qui fournissent des prestations mentionnées à 【99†l'article L. 3120-1】 sont en mesure de justifier à tout moment de l'existence d'un contrat d'assurance couvrant leur responsabilité civile professionnelle.
+L275: 
+L276: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L277: 
+L278: [Button: Fermer ]
+L279: 
+L280:   * ## 【106†Article L3120-5】
+L281: 
+L282: En vigueur depuis le 03 oct. 2014 En vigueur depuis le 03 octobre 2014
+L283: 【95†Création LOI n°2014-1104 du 1er octobre 2014 - art. 10】
+L284: 
+L285: Les prestations de transport mentionnées à 【99†l'article L. 3120-1】 peuvent être effectuées avec des véhicules électriques ou hybrides, par dérogation aux caractéristiques techniques imposées par voie réglementaire en application du présent titre.
+L286: 
+L287: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L288: 
+L289: [Button: Fermer ]
+L290: 
+L291:   * ## 【107†Article L3120-6】
+L292: En vigueur depuis le 31 déc. 2016 En vigueur depuis le 31 décembre 2016
+L293: 
+L294: 【108†Création LOI n°2016-1920 du 29 décembre 2016 - art. 2】
+L295: I.-Les personnes intervenant dans le secteur du transport public particulier de personnes, dont les centrales de réservation mentionnées à l'article 【101†L. 3142-1】, communiquent à l'autorité administrative, à sa demande, toute donnée utile pour :
+L296: 1° Le contrôle du respect des dispositions législatives et réglementaires relatives à l'accès aux professions du transport public particulier de personnes, à leurs conditions d'exercice et aux activités de mise en relation mentionnées au titre IV du présent livre ;
+L297: 2° L'application du deuxième alinéa de l'article 【109†L. 410-2】 du code de commerce ou du III de l'article 【110†L. 420-4】 du même code.
+L298: Lorsque c'est nécessaire, l'autorité administrative peut imposer la transmission périodique de ces données.
+L299: II.-L'autorité administrative peut imposer aux personnes mentionnées au premier alinéa du I la transmission périodique, à des fins statistiques, des données nécessaires à la connaissance de l'activité du secteur du transport public particulier de personnes. Elle rend publiques les études qu'elle réalise à ce sujet.
+L300: III.-Les données mentionnées aux I et II du présent article excluent les données à caractère personnel relatives aux passagers.
+L301: Tout traitement des données mentionnées aux I et II du présent article est soumis à la loi n° 【111†78-17】 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés.
+L302: IV.-Un décret en Conseil d'Etat, pris après avis de l'Autorité de la concurrence et de la Commission nationale de l'informatique et des libertés, détermine les modalités d'application du présent article.
+L303: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L304: 
+L305: [Button: Fermer ]
+L306: 
+L307:   * ## 【112†Article L3120-7】
+L308: 
+L309: En vigueur depuis le 27 déc. 2019 En vigueur depuis le 27 décembre 2019
+L310: 
+L311: 【113†Création LOI n°2019-1428 du 24 décembre 2019 - art. 46 (V)】
+L312: Une base de données nationale sur le transport public particulier de personnes recense les informations relatives aux conducteurs, aux exploitants et aux véhicules.
+L313: Les procédures relatives à l'exercice des professions du transport public particulier de personnes sont dématérialisées. (1)
+L314: Les autorités administratives et judiciaires peuvent avoir accès aux données nécessaires à l'exercice de leurs missions de contrôle des règles de la police de la circulation.
+--------------------------------------------------------------------------------
+Chapitre VI : Dispositions spécifiques à la mise en relation de travailleurs ayant recours à des plateformes pour exercer une activité de conduite d'une voiture de transport avec chauffeur ou de livraison de marchandises au moyen d'un véhicule à deux ou trois roues (Articles L1326-1 à L1326-4) - Légifrance (https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000023086525/LEGISCTA000039677953/?anchor=LEGIARTI000045525865)
+citeturn284view1 [wordlim: 200] Crawled: 3 days ago; Content type: text/html; Source: click({"ref_id":"turn276view1","id":91}); Total lines: 294
+

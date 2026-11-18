@@ -1,0 +1,12 @@
+{
+  "rows": 40,
+  "bijectiveExactOptions": true,
+  "uniformFieldsNoKeysStemsIDs": true,
+  "correctPositionCounts": {
+    "C": 14,
+    "A": 6,
+    "B": 10,
+    "D": 10
+  },
+  "sourceHash": "bbf23494a0874bd91e1c6d8d7b3e08d3dba8d1f674fd80390f3e8919fb841549"
+}

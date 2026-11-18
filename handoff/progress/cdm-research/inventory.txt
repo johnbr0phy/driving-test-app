@@ -1,0 +1,1611 @@
+Section 8 | Washington State Department of Agriculture
+-->
+-->
+-->
+(func tion (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "58dso53t2b");
+-->
+Navigation
+Home
+Washington Agriculture
+Agricultural Fairs
+Agriculture Feature Exhibits Resources
+Forms
+Climate Resilience Plan for Washington Agriculture
+Commissions
+Laws and Rules
+Animal Feed
+Animal Health
+Fertilizers
+Food Law Regulations
+Fruit and Vegetable Inspection
+Grain Inspection
+Grain Warehouse Audit
+Interpretive Policy
+Livestock
+Livestock Nutrients
+Name Index
+Number Index
+Plants and Insects
+Seed Inspection
+Weights and Measures
+Maps
+Legislative District Maps
+Congressional District Maps
+Weed Distribution
+Partners
+Departments
+Agricultural Products
+Aquaculture
+Hemp
+Hemp FAQ
+Animals, Livestock, and Pets
+Animal Feed
+Contacts
+Commercial Feed General Information
+Inspections
+Pet Food Registration
+Forms
+Pet Food and Specialty Pet Food
+Product Look Up
+Publications
+Inspection Fee Reporting
+Sampling
+Technical Assistance and Compliance
+Animal Health
+Animal Diseases
+New World Screwworm
+Rabbit Disease
+West Nile Virus
+Porcine Epidemic Diarrhea
+Equine Herpesvirus
+Animal Health Biosecurity
+Contact Us
+Fairs and Exhibitions
+Forms
+Import Requirements
+Birds and Poultry Import
+Illegal animals
+Goat, Sheep, Llamas, and Alpacas Import
+Restricted Holding Facilities
+Swine Import
+Exotic and Wild Animal Import
+Cattle Import
+Horse, Donkey, and Mule Import
+Small Animal Import
+Permits
+Reportable Diseases
+State Veterinarians
+Veterinary Resources
+Animal Disease Traceability (ADT)
+Animal ID Tags
+RFID FAQs
+Premises Identification Number
+Electronic Certificates of Veterinarian Inspection
+Avian Health
+Avian Influenza
+Bird Flu
+HPAI (H5N1) in Cattle Producer Resources
+Avian NPIP
+Compliance
+Livestock Identification
+ECTR
+Green Tag Conditions
+Inspections
+Sale Time at the Auction
+Licensed Certified Feedlots - Public Markets
+Brand Information and Brand Book
+Brand FAQs
+Reporting Missing and Stolen Livestock
+Certification Training
+Who to Contact
+Animal Husbandry
+Land
+Animal Selection
+Health
+biosecurity
+processing
+Resources
+Pets
+Business and Marketing Support
+International
+Activities
+Buyers and Sellers
+Financing
+Resources
+Contacts
+Statistics
+Small Farm
+Current Opportunities for Farmers
+Handbook for Small and Direct Marketing Farms
+Infrastructure Grant
+Infrastructure Home
+Página principal de subvenciones españolas
+FAQs
+FAQs Español
+Grant Guidelines - Equipment Plus
+Directrices de subvención - Equipo más
+Grant Guidelines - Large Projects
+Grantee Resources
+Awarded Local Food System Infrastructure Grants
+Funded LFSI Grants Lists
+Meat and Poultry Assistance
+directory
+Events
+Meat Buying Guides
+Resources
+Business Plan Tips
+Short Form Biz Plan
+2023 USDA VAPG
+Custom Meat Record Keeping Tips for Farmers
+Tips for Aspiring Custom Butchers
+Managing Risk
+Farm to School Toolkit
+WSDA Farm to School Program
+Taste Washington Day
+Taste Washington Day Resource Toolkit
+Outreach Materials
+Promotional Materials
+Take-Home Recipe Cards
+Sample Menus
+Sample Recipes
+Educational Activities
+Participating Schools and Farms
+Past Taste Washington Days
+Winter Taste Washington Days
+Trainings, Presentations, and Workshops
+Farm to School &Scratch Cooking Institutes
+Help for Schools And Farms
+Resources And Publications
+OSPI Partnerships
+Grant-Funded Projects
+Statewide Farm to School Summit 2015
+Farm to School Connections Week
+About Farm to School
+Farm to School in Washington
+Farm to School Regionally and Nationally
+Impacts of Farm to School
+Washington State Farm to School Network
+For Districts: School Nutrition & Local Food
+Getting Started
+Finding Farms
+Procurement and Geographic Preference
+Procurement Guide
+Procurement of Local Meat Poultry and Seafood
+Cooking with Raw Proteins
+USDA Pilot Project for Fruits & Vegetables
+Good Agricultural Practices and Food Safety
+Summer Meals
+Farm to Breakfast
+Salad Bars
+School Wellness Policies
+LaConner School District Policies
+Lopez Island School District Policies
+Resources for Other Institutions
+Grants and Funding
+Farm to School Cookbooks
+For Farmers: Selling to Schools
+Getting Started
+Resources for Farmers
+Resources for Processors And Value-Added Products
+Connecting with Your School Community
+Risk Management and Food Safety
+Selling to Other Institutions
+Grants and Funding
+Grants
+Grantees
+Grant Guidelines
+Lineamientos para la subvención
+Sample Grant Beneficiary Agreement
+Ejemplo de acuerdo de beneficiario de subvención
+Awarded Grants
+For Producers
+FAQ
+School Gardens and Farms
+Activities and Education
+Food Safety in the Garden
+Grants and Funding
+Successes in Washington
+Farm to School Sales And Distribution
+Buying Directly from a Farm
+Buying Local Food Through A Distributor
+Farmer Cooperatives and Food Hubs
+Purchasing at Farmers Markets
+Farm to School in Classrooms And Community
+Classroom Activities and Curricula
+Career and Technical Education
+Parents & Community
+Grants and Funding
+Promotion and Education Materials
+Washington Harvest Posters
+WA Harvest Identification Posters
+Farm to Preschool
+Farm to Preschool Curriculum Resources
+Engaging Children in Farm to Preschool Activities
+Health and Safety for Childcare Meals and School Gardens
+Nutritious Meals and Snacks for Preschoolers
+WA Grown Food & Recipe Kit
+In the News
+GAPGHP
+Guide
+Q and A
+Videos
+Cannabis
+Cannabis Lab Analysis Program
+Pesticide Use
+Director's Office
+Washington State Agricultural Viability
+Director's Citation Award
+Director's Citation Award Nomination Criteria
+Legislative Affairs
+Hemp in Food Task Force
+Hemp Commission Task Force
+Related Links
+Enterprise Risk Management
+Unmanned Aircraft Systems
+Food Safety
+Food Safety
+Food Processors
+Facility
+Food Safety
+HACCP
+Packaging and Labeling
+Contact Information
+HACCP
+Food Safety
+Facility
+Packaging and Labeling
+Contact Information
+Other Processing
+Food Safety
+Facility
+Packaging and Labeling
+Contact Information
+Packaging and Labeling
+Food Safety
+Facility
+Contact Information
+Winery and Brewery
+Food Safety
+Facility
+Contact Information
+Organic
+Food Storage Warehouses
+Pre-Inspection Information
+Independent Sanitation
+Food Safety
+Food Safety Applications
+Contact Information
+Cottage Food
+Contact Information
+Food Safety
+Contact Information
+Food Safety
+Contact Information
+Food Safety
+Contact Information
+Food Safety
+Food Processors
+Facility
+HACCP
+Other Processing
+Packaging and Labeling
+Winery and Brewery
+Dairy
+Food Safety
+Food Safety Applications
+Questions
+Organic
+Contact Information
+Custom Meat
+Food Safety
+Food Safety Applications
+FAQs
+Processing Percentage
+Contact Information
+Eggs
+Food Safety
+Food Safety Applications
+Doing Business
+Contact Information
+Cannabis-Infused Edibles
+Food Safety
+Food Safety Applications
+Dietary Ingredients in Cannabis-Infused Edibles
+Hemp FAQ
+Cannabis
+Contact Information
+Special Poultry Permit
+Food Safety
+Food Safety Applications
+Contact Information
+Contact Information
+Food Safety
+Food Safety Applications
+Export Certificates
+Food Safety
+Food Safety Applications
+Contact Information
+Direct Sellers
+Food Safety
+Contact Information
+Compliance
+Organic
+Hemp and Hemp Extract Certification
+Cannabis-Infused Edibles
+Contact Information
+Food Complaints
+Doing Business
+Food Safety
+Food Safety Applications
+Contact Information
+FSMA
+Food Safety
+Food Safety Applications
+Contact Information
+Events
+Produce Safety
+Insects, Pests, and Weeds
+Contact Us
+Digital Image Pest ID
+Insects
+Apiary Pollinators
+Apiary Advisory Committee
+Bee Spill
+Apiary Reg and Laws
+Pollinator Health
+Bee Atlas
+Farms
+Native Bees
+Andrenidae
+Apidae
+Colletidae
+Halictidae
+Megachilidae
+Melittidae
+Cuckoo Bees
+SGCN
+Honey bees
+Volunteers
+Events
+Volunteer Resources
+Collecting bees
+Houdini Fly
+Pollinator Habitat
+Task Force
+Ed Resources on Beekeeping
+Apple Maggot
+Chelan County Residents
+Commercial Growers
+Green Waste
+Contact Us
+Quarantine Area Residents
+Okanogan
+Quarantine
+Waste
+What is an Apple Maggot
+Exotic Pest Detection
+Terrestrial Snails
+More Information
+Invasive Moths
+Btk
+Btk and Human Health
+Btk FAQs
+What is Btk?
+Control Efforts
+Current Control Efforts
+Past Control Efforts
+2026 Eradication
+2024 Eradication
+2021 Eradication
+2020 Eradication
+2019 Eradication
+2018 Eradication
+2016 Eradication
+7 Reasons to Eradicate
+Environmental Impact Statement
+Moth 101
+Flighted Spongy Moth
+Spongy Moth Blogs
+Spongy Moth FAQs
+Identification
+Videos
+Trapping
+Past Trapping Results
+2026 Trapping Results
+2025 Trapping Results
+2024 Trapping Results
+2023 Trapping Results
+2022 Trapping Results
+2021 Trapping Results
+2020 Trapping Results
+2019 Trapping Results
+More Detailed Diag
+2018 Trapping Results
+2017 Trapping Results
+2016 Trapping Results
+Authority To Enter Private Property
+Traps
+Hornets
+Identification
+YLH and lookalikes
+NGH and Look Alikes
+FAQ's
+Northern giant hornet
+Yellow legged hornet
+Reporting Sightings
+Beekeeping
+Human Health
+Additional Resources
+News & Media
+Japanese Beetle
+Beetle 101
+Quarantine
+Treatment
+Current Treatment Efforts
+Past Treatment Efforts
+2026 Treatments
+2025 Treatments
+2024 Treatment
+2023 Treatments
+2022 Treatments
+Yard Debris
+Trapping
+Past Trapping Results
+2026 Trapping Results
+2025 Trapping Results
+2024 Trapping Results
+2023 Trapping Results
+2022 Trapping Results
+2021 Trapping Results
+2020 Trapping Results
+Trapping 101
+Authority To Enter Private Property
+Report Japanese Beetle
+News & Media
+Spread the Word
+Moth Taxonomy Images
+Wing Gallery
+Dissection Gallery
+Lures
+Spotted Lanternfly
+Spotted lanternfly 101
+Identification
+Spotted Lanternfly FAQs
+Videos
+Response Efforts
+Current Response
+Past Response
+2026 Response
+2025 Response
+Report Sightings
+Survey
+Authority To Enter Private Property
+Past Survey Results
+2026 Survey Results
+2025 Survey Results
+Monitoring Tools
+News & Media
+WSDA Traps
+Quarantines
+Seeds
+Weeds
+Knotweed
+NPDES Permits
+Purple Loosestrife
+SBR
+Spartina
+Interactive Map
+News and Media
+Reports
+Tree-Of-Heaven
+Tree-Of-Heaven 101
+Tree-Of-Heaven News and Resources
+Tree-Of-Heaven Reported Locations
+Laboratories
+Chemical Hop Program
+Microbiology Laboratory
+Dairy Testing
+Feed Testing
+FERN Testing
+Food Testing
+Metrology Lab
+Nematology Lab
+Plant Pathology and Molecular Diagnostics Laboratory
+Plant Diagnostics Service and Fees
+Submitting and Collecting Samples
+Additional Surveys
+Land and Water
+Community Engagement
+Registration Fee Increase
+Livestock Nutrients
+Contact Information
+Dairy Compliance Program Resources Directory
+Manure Sampling
+Soil Sampling
+Dairy Nutrient Management Plans and Inspections
+Forms and Publications
+Building On-Farm Resiliency
+NPDES CAFO Permit
+Nutrient Management Resources Directory
+Partners, Resources, and Education
+Regional Projects Directory
+Yakima Nitrate Project
+Natural Resources
+Agricultural Land Use
+Endangered Species Protection
+ESA Engagement
+Stewardship
+Mitigation
+Soil Health
+WaSHI
+State of the Soils
+Supplies List
+Compost Reimbursement
+Eligibility Application
+Data Collection
+Reimbursement Form
+STAR
+News
+Contact Us
+Water Quality
+Surface Water
+Groundwater
+GW Projects
+DOH Data
+Grant County Groundwater Study
+Nitrogen Loading Assessment
+Pesticides in the Sumas-Blaine Surficial Aquifer
+GW Resources
+Regional Groundwater Quality Monitoring Program
+Water Quantity
+Drought Info
+Drought Impacts
+Columbia Basin
+Program Contacts
+Organic
+Contact Us
+New Applicant Info
+Apply for Certification
+Resources
+Organic Labels
+Certification Videos
+Transitional certification
+International
+Forms and Applications
+Input Material Registration
+New Applicant Info
+Apply for Registration
+Forms and Applications
+Labels
+About Organic
+Pesticides and Fertilizers
+Plant Health
+Export Inspection
+Nematode Testing
+Contact Us
+Nursery Plant Seller-Installer Licensing
+Nursery FAQ
+Nursery Research
+Nursery Plant Seller-Installer Inspection
+PISCES
+Plant Quarantines
+Palmer amaranth
+Scales, Meters, and Fuel
+Cannabis
+Cannabis Lab Analysis Program
+Pesticide Use
+About WSDA
+Blog Posts
+Budget Information
+Contracts and Procurement
+Employment
+Events
+Focus on Food
+Environmental Justice
+Environmental Justice Assessments
+Leadership
+Strategic Planning
+News and Media Relations
+COVID-19
+News Releases
+Blog Posts
+We Feed WA
+We Feed WA Grant
+Services
+Education and Training
+Pesticide Technical Assistance and Education
+Spanish Private Applicator
+Waste Pesticide Program
+WPS Train the Trainer
+Train The Trainer Refresher
+Respirator Training for Administrators and Trainers in Agriculture
+Pesticide Handler Training
+Air-blast Sprayer Calibration and Configuration
+On Farm Air Blast Assistance
+Educational Pesticide Videos
+About Us
+Publications and Forms
+Veterans
+Eco Therapy
+Education
+Farming
+Financial Support
+Consumer Protection and Complaints
+Food Complaints
+Emergency Management
+Contact Us
+Disasters
+Floods
+Wildfires
+Drought
+Drought Preparedness
+Drought Recovery
+Additional Resources
+Food Security
+Livestock Industry
+Pesticides and Fertilizers
+Radiological Emergencies
+Rapid Response
+Recalls
+Resources
+Exports
+Inspections
+Food Access
+About Food Assistance
+Hunger in WA
+Programs and Services
+Emergency Food Assistance Program (EFAP)
+Emergency Food Assistance Program (EFAP)-Tribal
+Farm to Food Pantry (F2FP) Initiative
+The Emergency Food Assistance Program (TEFAP)
+Farm to Food Bank (FTFB)
+Commodity Supplemental Food Program (CSFP)
+Local Food Purchase Assistance (LFPA)
+Contact Us
+Access Food Near You
+Hunger in WA
+Hunger Relief Agency Hub
+CSFP
+CSFP Forms
+CSFP FAQ
+CSFP Manual
+Revision History
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+Section 7
+Section 8
+Section 9
+CSFP Plan
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+Section 7
+Section 8
+Section 9
+Section 10
+Section 11
+Section 12
+EFAP
+EFAP Forms
+EFAP Manual
+Revision History
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+Section 7
+Section 8
+Section 9
+Section 10
+EFAP FAQ
+EFAP-T
+EFAP-T Forms
+EFAP-T FAQ
+EFAP-T Manual
+Revision History
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+Section 7
+Section 8
+Section 9
+TEFAP
+TEFAP Forms
+TEFAP FAQ
+TEFAP Manual
+Revision History
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+Section 7
+Section 8
+Section 9
+TEFAP Plan
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+FA Forms and Pubs
+Hunger Relief Resources
+Recipes and Nutrition Resources
+Healthy Recipes
+WSDA Nutrition Resources
+Nutrition Resources
+Senior Nutrition Resources
+Food Purchasing Resources
+Food Rescue
+Donations
+Food Assistance Grants
+Resiliency Grants
+Previous Food Assistance Grants
+Farm to Food Pantry (F2FP) Initiative
+Farm to Food Bank (FTFB)
+General Focus Meeting Information
+Programs and Services
+Commodity Supplemental Food Program (CSFP)
+Emergency Food Assistance Program (EFAP)
+Emergency Food Assistance Program (EFAP)-Tribal
+Farm to Food Pantry (F2FP) Initiative
+Sub Agency
+Local Food Purchase Assistance (LFPA)
+The Emergency Food Assistance Program (TEFAP)
+Farm to Food Bank (FTFB)
+Food Rescue Grant Program
+WCDGP Data
+Food Assistance Partners
+Nonprofit Partners
+Government Partners
+Contact Us
+Grant Opportunities
+Specialty Crop Block Grant Program
+Specialty Crop Multi-State Program
+Northeast Washington Wolf Livestock Management Grant
+IPM Research Grant
+Resilient Food System Infrastructure
+Climate Smart Farm Equipment Grant
+Inspections and Investigations
+Inspections
+Fertilizer Compliance
+Fertilizers Containing Phosphorus
+Secondary Containment
+Food Safety
+Fruit and Vegetable
+C2P2
+Contact
+Forms and Publications
+GAP GHP
+Links
+Trucker's Reference
+Grain Inspection
+Contacts
+Grain Warehouse Audit
+Grain Warehouse Audit Contacts
+Grain Warehouse Audit FAQs
+Grain Warehouse Audit Overview
+Grain Warehouse Audit Renewals
+Links
+Livestock
+Livestock Inspection
+Livestock Nutrient
+Organic
+Seed
+Contacts
+Crucifer Seed Quarantine
+Electrical Conductivity Testing
+Forms & Publications
+Links
+Overview
+Reports
+Weights and Measures
+Contacts
+Device Legality
+Device Registration
+Devices
+Firewood
+Investigations
+Agricultural Investigations
+Producer/Dealer Information
+Forms
+Bond Claims
+Pesticide Enforcement Actions
+Rulemaking
+Commodity Commission Rule Making
+Recently Withdrawn Rules
+Rule Making FAQ
+Licenses, Permits, and Certificates
+Animal Services
+Food Safety Applications
+Food Safety
+Contact Information
+Bulk Fertilizers
+Summary Descriptions
+Organic
+Pesticide License and Recertification
+Pesticide and SPI Licensing
+Exams and Study Materials
+Preparing for Pesticide and SPI Exams
+Paper-Based testing
+Computer-Based Testing
+Limited and Rancher PAs
+Testing Sites Directions
+Olympia Directions
+Wenatchee Testing
+Yakima Directions
+WSU Ext Office Locations
+License Search
+License Renewal
+Commercial Applicators and Structural Pest Inspectors
+Commercial Applicators
+Structural Pest Inspectors
+Pesticide Distributors
+Pesticide License Types and Categories
+Pesticide License Types
+Pesticide License Categories
+Reciprocal Licenses
+License Lists
+Recertification
+Recertification by Credit
+Recertification Courses
+Sponsoring a Course
+On-Site
+Webinar
+Internet
+Pesticide Related Topics
+Plant Permits and Certification Programs
+Caneberry Planting Stock
+Christmas Trees
+Fruit Tree Planting Stock
+Garlic Planting Stock
+Grape Planting Stock
+Grapevine Research
+Hop Planting Stock
+Mint Planting Stock
+Plant Certification Programs
+Plant Sale Permits
+Seed Potato
+Strawberry Planting Stock
+WWHAM
+Cottage Food
+Contact Information
+Food Safety
+Contact Information
+Food Safety
+Contact Information
+Food Safety
+Contact Information
+Food Safety
+Food Safety
+Food Processors
+Facility
+HACCP
+Other Processing
+Packaging and Labeling
+Winery and Brewery
+Forms and Publications
+Forms
+Publications
+Agricultural Investigations
+Animal Feed
+Animal Health
+Animal Identification
+Avian Health
+Bioenergy Special Projects
+Centennial Farms
+Compost Reimbursement Program
+Crop Maps
+Director's Office
+Domestic Marketing
+Emergency Management
+Fairs Commissions
+Farm Security
+Fertilizer Tonnage
+Financial Reports
+Food Assistance
+Food Safety
+Fruit And Vegetable
+Grain Inspection
+Harvest Schedules
+International Marketing
+Legislative Reports
+Livestock Inspection
+Maps
+NRAS
+Nutrient Management
+Organic Food
+Pest Program
+Pesticide Compliance
+Pesticide Licensing
+Pesticide Registration
+Plant Services
+Pollinator Program
+Produce Safety
+Publications By Program
+Publications By Topic
+Seed Program
+Spanish Publications
+Specialty Crop Grants
+Warehouse Audit
+Waste Collection
+Weights And Measures
+Contact Us
+Accessibility
+Directions
+Commodity Inspection
+Everett
+Longview
+Moses Lake Big Bend Community College
+Email notification lists
+Media Inquries
+Non-Discrimination
+Privacy Policy
+Public Disclosure
+Social Media
+Public Records Request
+Natural Resources Building
+P.O. Box 42560
+1111 Washington ST SE
+Olympia, WA 98504-2560
+Phone:
+(360) 902-1800
+Washington Agriculture
+Services
+Departments
+About WSDA
+Contact Us
+CSFP Section 8
+Back
+Section 8
+Return to CSFP Manual
+Home
+/
+Services
+/
+Food Access
+/
+Hunger Relief Agency Hub
+/
+CSFP
+/
+CSFP Manual
+/
+Section 8
+What do you need today?
+Let's find it
+WHAT DO YOU NEED TODAY?
+I need to
+FIND IT FOR ME!
+Popular
+Topics
+Bird Flu
+Cottage Food
+Fertilizer Product Database (Metals)
+Food and Feed Recalls
+Insects: Hornet, Beetle, Moth, Maggot
+Laws and Rules
+Organic Agriculture
+Pesticide Licensing and Recertification
+Exotic Animals
+Unmanned Aerial Systems
+What do you need today?
+Let's Find It
+WHAT DO YOU NEED TODAY?
+I need to
+FIND IT FOR ME!
+Popular Topics
+Bird Flu
+Cottage Food
+Fertilizer Product Database (Metals)
+Food and Feed Recalls
+Insects: Hornet, Beetle, Moth, Maggot
+Laws and Rules
+Organic Agriculture
+Pesticide Licensing and Recertification
+Exotic Animals
+Unmanned Aerial Systems
+CSFP Procedures Manual Section 8: USDA Foods and Warehouse Management
+8.1 Food Acquisition Process
+Introduction.
+CSFP USDA Foods are typically ordered monthly by Food Assistance (FA) staff. Orders are placed at least 10 calendar days before the order is scheduled to arrive. Orders are based on the following:
+The previous month’s caseload numbers.
+Items received in the previous month’s CSFP order.
+Feedback from the Lead Agency on items their clients wish to see in the CSFP USDA Foods box.
+The availability of a given item at the time of order.
+Lead Agency input on the CSFP USDA Foods order can be given any time prior to the order being submitted by FA. Lead Agency staff can send their agency’s request to
+foodassistance@agr.wa.gov
+or by calling (360) 725-5641 or the assigned FA regional representative. The Lead Agency will receive a copy of the order via email once it has been placed.
+While the FA Food Ordering Workgroup does not provide direct input on the CSFP USDA Foods being ordered, it does provide feedback on a variety of other food orders. If the Lead Agency wishes to be part of the FA Food Ordering Workgroup, please contact your FA regional representative or email your request to
+foodassistance@agr.wa.gov
+.
+8.2 CSFP USDA Foods Distribution
+Introduction.
+7 CFR §247.10(a)
+. Food boxes will be distributed to clients monthly. Whenever possible, clients will receive other foods from other programs that are also available at the food bank along with their CSFP distribution. Food box components should be reviewed with the client and adjusted as necessary to meet any nutritional concerns.
+CSFP USDA Foods received will be used solely for the benefit of those persons served or assisted by the program and will not be otherwise disposed of without prior written approval from the state agency. Under no circumstances will USDA Foods be sold or traded. No USDA Foods will be processed commercially without the prior written consent of the state agency.
+Monthly Distribution Rates.
+The
+CSFP Monthly Distribution Rates (AGR6-2508-029
+)
+are provided by USDA and when updated, Food Assistance (FA) will notify Lead Agencies of these changes. Lead Agencies are required to notify their Sub Agencies (as applicable) of these changes. Participants are to only receive the listed quantity of product in all food categories. The exception to this is if there is CSFP bonus product available.
+Food Issuance.
+7 CFR §247.10(c)
+. State and participating agencies must not require or request that participants make any payments, or provide any materials or services, in connection with the receipt of CSFP USDA Foods. State and participating agencies must not use the distribution of CSFP USDA Foods as a means of furthering the political interests of any person or party.
+7 CFR §247.10(d)
+. CSFP USDA Foods may not be used for outreach, refreshments, or for any purposes other than distribution to, and nutrition education for, CSFP participants.
+One Month Food Reserve.
+All Lead Agencies initially receive a two-month supply of food. This is to allow for a reserve month of food in the event that a delivery is delayed or product is missing from a delivery. This food is to be rotated into issuance status each month, with the most recent shipment going into reserve status.
+As an example, when an August food delivery is issued completely, the food that is in reserve status is to be issued in September while the food that was most recently received goes into reserve status.
+Allocation Adjustments Due to Disasters and Situation of Distress.
+In a Presidentially Declared Disaster (PDD) or a situation of distress determined by the State, Lead Agencies may be required to transfer USDA Foods to the area of crisis. FA must approve all transfers of this nature.
+In this situation:
+There will be no cost to the Lead Agency for the transfer.
+USDA may elect to replace the value of the CSFP USDA Foods diverted to the area of crisis.
+There is no prohibition on the simultaneous provision of USDA Foods and Disaster-SNAP (D-SNAP) during a disaster.
+8.3 Shipping and Receiving of USDA Foods
+Introduction.
+CSFP USDA Foods are shipped by USDA contracted National Multi-Food Warehouses directly to the Lead Agency’s warehouse. Food Assistance (FA) will be responsible for ordering the food and the Lead Agency will be responsible for working with the National Multi-Food Warehouse to establish a shipping schedule and for the receipting of CSFP USDA Foods into USDA’s Web-Based Supply Chain Management (WBSCM) system. There is no cost to the Lead Agency for shipments coming from the National Multi-Food Warehouse. Additional information can be found in FNS Instruction
+FD-709-5 Rev. 4
+.
+Multi-Food Shipments.
+Arranging for Shipment and Delivery:
+The National Multi-Food Warehouse must arrange regular delivery dates with each Lead Agency (i.e. third Wednesday of each month). Negotiate any tailgating with the National Multi-Food Warehouse when setting the delivery dates. The Lead Agency will typically receive an email from the National Multi-Food Warehouse one week before the delivery confirming the delivery date, time, and quantities.
+Lead Agencies wishing to change shipment destinations must notify FA. FA staff will coordinate with the National Multi-Food Warehouse and make the requested changes if possible.
+If an order includes multiple truckloads, every effort must be made to arrange for all deliveries to be on the same day. If the regularly scheduled delivery must be postponed (e.g., as a result of inclement weather or equipment failure), the National Multi-Food Warehouse will immediately contact the Lead Agency to determine a revised delivery date that is agreeable to both parties.
+Responsibility of Trucking Company.
+The National Multi-Food Warehouse will contract with a trucking company to deliver the food based on the pre-arranged “regular” delivery dates negotiated with the Lead Agency. If the trucking company is late for an appointment, the Lead Agency should make every effort to unload the truck when it arrives within normal business hours.
+The trucking company shall:
+Provide CSFP USDA Foods on pallets and position pallets to facilitate timely unloading of USDA Foods (e.g., no pinwheeling).
+Not exchange pallets.
+Accommodate tailgating if previously arranged with the Lead Agency by the National Multi-Food Warehouse.
+Provide the National Multi-Food Warehouse with the signed delivery receipt (Bill of Lading), including the date of receipt. This includes any adjustments made by the Lead Agency for quantity discrepancies or damaged product.
+Provide a copy of the Bill of Lading to the Lead Agency for the load.
+Re-seal for subsequent deliveries.
+Responsibility of Lead Agency.
+When receiving a shipment, the Lead Agency shall:
+Have personnel available to off-load trucks and have adequate personnel and equipment to safely and correctly unload.
+Accept shipments on the prearranged delivery date.
+Be responsible for charges incurred by the trucking company if the Lead Agency is unable to accept the delivery on the agreed upon delivery schedule (i.e. costs for storage/alternate delivery location).
+Unload the truck even if it arrives late, if possible.
+Ensure that the seal on the door or other point of entry of the truck is intact and record the seal number. If the seal is missing, broken, or the seal number does not match what is recorded on the Bill of Lading then the Lead Agency should contact FA for further instruction.
+However, if FA cannot be reached, then the Lead Agency must refuse the shipment and notify FA.
+Remove the seal, which must be done with bolt cutters or a similar tool.
+Check the temperature of frozen or refrigerated foods, including checking the thermometer on the truck to ensure the freezer/refrigeration unit is at acceptable levels and in working order.
+Meet allowable off-loading times:
+Free time. The Lead Agency must complete the unloading of the shipment, and the removal of dunnage and other debris, within the period of free time. For palletized loads, free time is up to two hours. For non-palletized loads, free time is up to six hours. Failure to complete the unloading within the free time may incur a demurrage or detention charge, which the consignee may be obligated to pay.
+Conduct a physical count and inspect USDA Foods for shortages, damage or spoilage before signing for delivery of shipment to avoid possible liability. Make sure to retain a copy of the Bill of Lading and any related documentation. Report any significant problems to FA before the driver leaves the delivery area. Please note:
+All overages, shortages, or damages must be accounted for in the receipt of the shipment into USDA’s WBSCM system.
+If any loss or adjustments are identified after the driver leaves, the Lead Agency should fill out a
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+.
+It is best to have two Lead Agency employees conduct a physical count of the product received to ensure the accuracy of the receiving documents.
+FA provides a
+CSFP USDA Receiving Document (AGR-2257)
+as a guide through the direct shipment receiving process. It is recommended that the receiving document is saved along with the BOL as a record of the transaction.
+If the Lead Agency is not using
+CSFP USDA Receiving Document (AGR-2257)
+, the organization is encouraged to use an equivalent document to record the receipt of USDA Foods as FA may request records of any receipt of product.
+Lead Agencies who receive CSFP shipments from the National Multi-Food Warehouse will be responsible for receipting these shipments into USDA’s WBSCM system within 48 hours. Training is provided by FA staff upon request.
+8.4 Inventory Control System
+Introduction.
+It is essential that Lead Agencies and Sub Agencies know how much food is in their possession at all times. This protects staff and participating agencies. Agencies could be held liable for unaccounted loss of USDA Foods. Agency inventories should not exceed what can be used or distributed in a three-month period.
+Inventory management should include:
+A Blended First Expired First Out (FEFO) / First In First Out (FIFO) inventory method for circulating inventory/stock. Dating USDA Foods as it is received with both the expiration date and the date it arrives enables accurate rotating of inventory as it is distributed. USDA Foods that are expired may not be used or distributed to clients and must be properly documented and disposed.
+All USDA Foods entering or leaving the warehouse should be counted twice (preferably by two people). This practice eliminates inventory errors.
+Utilize an inventory system. See
+Section 8.5, Inventory Reports
+for requirements.
+The pre-posting of outgoing allocations. Pre-posting occurs when food is taken off the book inventory before it leaves the warehouse. Recipient Sub Agencies should sign a receipt when picking up USDA Foods from and/or returning to the Lead Agency warehouse. The receipts can be compared to a book count to determine where inventory errors may have occurred.
+A monthly physical count of all USDA Foods in inventory. Agencies should physically count the individual items of USDA Foods each month and compare it to the book inventory. Note any variances between book inventory and physical inventory and the cause of each variance. If applicable, complete a
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+and/or
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+)
+and send it to Food Assistance (FA) or the Lead Agency, as applicable. Use the physical inventory figures for the beginning inventory figures in the following month.
+Inventory Control.
+FA requires that inventory levels do not exceed what can be utilized without waste in a three-month period; exceptions may be allowed.
+If it is determined that inventory levels exceed the three-month limit, FA or the Lead Agency may reallocate USDA Foods to bring inventory levels under control and to avoid possible product spoilage. FA or the Lead Agency will determine the method(s) for reallocation based on the specific circumstances of the Lead Agency(s) and the food type and quantity involved.
+Lead Agencies may reallocate as they see fit within their service area. The Lead Agency may not reallocate outside of their county(ies) service area, as indicated in their Agreement, without prior approval from FA.
+Sub Agencies may not reallocate to other CSFP agencies without prior approval from the Lead Agency.
+8.5 Inventory Reports
+Lead Agency Inventory Report.
+The
+CSFP Lead Agency Inventory Report (AGR-2249A)
+must be completed each month, summarizing all CSFP inventory activity at the Lead and Sub Agency level for the reporting month. The report has a tab for each month of the federal fiscal year. The Lead Agency shall conduct a physical count of its CSFP inventory at the end of every month, regardless of whether there was inventory activity. The completed
+CSFP Lead Agency Inventory Report (AGR-2249A
+) must include the Lead Agency inventory combined with any Sub Agency inventory to show a complete picture of all CSFP inventory in the Lead Agency’s service area. This report must be turned into Food Assistance (FA) by the 20th day of each month by email.
+Once the report is complete, email it to the FA Inventory and Training Coordinator. Please include the Lead Agency name in the subject line of the email.
+Note: Agencies that do not meet 95 percent of caseload may be subject to a reduction in caseload or be ineligible for an increase in caseload the following year. It’s helpful to track this figure throughout the year before discussing increases or decreases in future caseload with FA.
+General Information and Participant Data.
+Lead Agencies must ensure that the following information is submitted to FA. Incomplete reports will be returned to the Lead Agency for completion.
+Lead Agency Name:
+Agency name.
+Month/Year:
+The month and calendar year are auto populated to match the month listed on the tab of the report. The report will run on the Federal Fiscal Year (Oct. 1 - Sept. 30).
+Caseload:
+The CSFP Lead Agency’s official caseload as issued by FA. Make sure to enter the most current caseload issued to you by FA, it may be adjusted by FA during the year.
+Total Participants:
+The number of participants that received CSFP USDA Foods during the month.
+Percent of Caseload:
+The percent of caseload served for the month will auto-populate based on the percentage of participants actually served for the month compared to the official caseload.
+Inventory Data.
+CSFP inventory is tracked as individual units, not cases as with other programs.
+USDA Foods Description:
+The category and description of the CSFP USDA Foods. The report is organized by the following CSFP distribution categories: Vegetables, Juice, Fruit, Meat, Peanut Butter/Beans, Cheese, Milk, Grain/Pasta, Cereal, and Additional. Each category has blank lines where you can add CSFP items to the report under the correct section. The Additional category, at the end of the report, is where you can add any new CSFP USDA Foods that do not fit into the other categories.
+Material Number:
+The six-digit number used to track USDA Foods issued to all programs. Make sure that the material number listed in the report matches the material number on the Bill of Lading and/or the shipping notification email from the National Multi-Ship Warehouse. If there is a discrepancy, please notify your regional representative.
+When new products are added throughout the year, the Lead Agency may need to add the material number and USDA Foods description to the inventory report. Contact FA with additional questions.
+Size:
+The number of units per case and the size of each individual unit.
+Beginning Inventory:
+You will have to manually enter the beginning inventory from the previous month only on the first report of the year. After that, subsequent reports will automatically carry the ending inventory over to the next month as the beginning inventory. It’s extremely important for this initial beginning inventory to be accurate as it will affect all the other inventory reports.
+Received:
+The total of CSFP items delivered in units to you during the month of the inventory. You will need to convert the number of cases per item on the Bill of Lading into units. For example, for the January inventory report, you would only include CSFP USDA Foods received from the National Multi-Ship Warehouse in the month of January. If you received your shipment at the end of December for your January distribution then January’s report would NOT include the December shipment, as it should have been included in your December report. This should match exactly what you entered into USDA’s Web-Based Supply Chain Management (WBSCM) system when you receipted the shipment.
+Redonation “In”:
+The Redonation “In” column is used only when moving food from one program to another or from one Lead Agency to another. Your agency will not need to use this column very often. If you think you need to use this column, please contact your regional representative and they will help you determine if it’s needed.
+Total Inventory Available:
+This is the total available inventory for distribution to participants for the month. This column totals automatically.
+Issued to Participants:
+This is what was actually issued to participants in units, as part of the food box for the month. This doesn’t include what was packed into a food box but not issued to participants. Only food issued to participants count for this column. Food issued to a participant but refused at the time of distribution would not count as issued. It must be returned to the inventory to be packed into another CSFP box.
+Redonation “Out”:
+The Redonation “Out” column is used when moving food from one program to another or from one Lead Agency to another. Your agency will not need to use this column very often. If you think you need to use this column, please contact your regional representative and they will help you determine if it’s needed.
+Food Loss (Damage):
+All food damaged during handling or lost due to spoilage during the month of the inventory is accounted for in this column. All food damaged during the month should also have an associated
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+. The value of loss is auto-populated in the Value of Loss Computation Section - located in the far-right section of this report.
+Amt Used for Nut. Ed:
+All food used for nutrition education is recorded in this column.
+Total Activity:
+This is the total of all CSFP USDA Foods issued (Issued to Participants, Redonation Out, Amt Used for Nut. Ed) and Food Loss (Damage) for the month. This column totals automatically.
+Report Check (Overage/Shortage):
+These columns are where you would enter any adjustment based on discrepancies in your physical inventory compared to the book inventory. If you are over or short you will need to correct the source documents for the CSFP USDA Foods and re-enter the correct amounts in the appropriate columns. If you can’t find the variance(s) shown in the report check section, leave the overage/shortage in the report check line. You must submit a completed
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) for any shortage or overage left in the report check line.
+Ending Balance:
+This is the final balance of CSFP USDA Foods for the month. This should match your physical inventory. This is also what will be automatically carried over to the next month as the beginning inventory.
+Value of Loss Computation Section.
+This section calculates the value of loss listed in the Food Loss (Damage) column. This can be used to find the value of CSFP USDA Foods when filling out a
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) for CSFP USDA Foods.
+Submitting the Lead Agency Inventory Report.
+Complete all sections of the report and review for accuracy. Lead Agencies must send completed monthly inventory reports to
+foodassistance@agr.wa.gov
+by the 20th of the month. If there was loss or damage, make sure to send the completed
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) with your inventory report, if not previously submitted at the time of loss/damage.
+Note: All Sub Agency inventories must be aggregated and included in the Lead Agency Inventory Report. Lead Agencies should review Sub Agency Inventory Reports to ensure the Sub Agency does not have greater than 3 months of inventory.
+State Agency Responsibility.
+Once the report is received from the Lead Agency, FA will review the report for accuracy and work with the Lead Agency on any discrepancies. When all Lead Agency reports have been received and reviewed, they are combined into one state report and submitted to USDA.
+Sub Agency Inventory Reports.
+The
+CSFP Sub Agency Inventory Report (AGR-2254)
+is submitted to the Lead Agency on a monthly basis. The Lead Agency establishes the report due date for Sub Agencies. If there is a loss or adjustment the Sub Agency must complete the
+USDA Foods Loss Report for Sub Agencies (AGR-2255)
+and send it to their Lead Agency. It is the Lead Agency’s responsibility to review the report and investigate any loss, shortage, overage, or adjustment indicated.
+CSFP USDA Foods boxes are typically packed by the Lead Agency, but in some cases the Sub Agency manages their inventory and packs their own boxes in accordance with a menu that matches the required USDA CSFP distribution rates. Each month’s CSFP USDA Foods box may be packed with different items so they are to be tracked by the month they are packed for. The food box should be marked with the month it was packed for.
+The
+CSFP Sub Agency Inventory Report (AGR-2254
+) is conducted in food boxes, unless individual items are returned by participants, then those items are counted in units on the report. Sub Agencies that pack their own CSFP USDA Foods boxes may be required to use a
+CSFP Lead Agency Inventory Report (AGR-2249A)
+or a modified CSFP Sub Agency Inventory Report that more closely resembles the CSFP Lead Agency Inventory Report. All alternative reports must be approved by FA.
+The due date for the
+CSFP Sub Agency Inventory Report (AGR-2254
+) will be determined by the Lead Agency. Lead Agencies will require the Sub Agency Inventory Report to be submitted in advance of the 20th so that the Lead Agency can ask any follow-up questions and ensure their report is sent to FA on time.
+Questions about the Sub Agency inventory process can be directed to the Lead Agency. More than one
+CSFP Sub Agency Inventory Report (AGR-2254
+) may be sent in as space on the report may be limited.
+Note: All Sub Agency inventories must be aggregated and included in the Lead Agency Inventory Report. Lead Agencies should review Sub Agency Inventory Reports to ensure the Sub Agency does not have greater than 3 months of inventory.
+General Information.
+Sub Agency Name:
+Agency name.
+Report Month:
+Inventory month.
+Contact Person:
+Name of the person filling out the report.
+Phone:
+The contact person’s phone number or agency phone number.
+Inventory Data.
+Beginning Inventory:
+The number of CSFP USDA Foods boxes or inventory leftover from the previous month. First In First Out practices should be applied to all inventory; previous month’s inventory must be issued prior to issuing any of the boxes received in the current month.
+Received:
+The number of new CSFP USDA Foods boxes or CSFP USDA Foods delivered to the Sub Agency for issuance to CSFP participants. The number of new CSFP USDA Foods boxes delivered should match the number of CSFP participants the Sub Agency serves each month, minus the number of CSFP USDA Foods boxes left over from the previous month.
+Total Boxes:
+The total of the beginning inventory and the received food boxes available to issue to CSFP participants. This should total the number of CSFP participants to be served during the month.
+Boxes Issued:
+The number of CSFP USDA Foods boxes issued to CSFP participants.
+Returned:
+The number of CSFP USDA Foods boxes returned to the Lead Agency at the end of distribution. If participants return a few of the items in the food box then these must be accounted for in the Individual Unit Returns section (listed below) and not in this section.
+Ending Inventory:
+The number of CSFP USDA Foods boxes left in inventory, if the undistributed CSFP USDA Foods boxes are not returned to the Lead Agency at the end of the distribution. This will be your beginning inventory for the following month.
+Individual Unit Returns.
+USDA Foods Description:
+The description of CSFP USDA Food.
+Material Number:
+The six-digit number used to track USDA Foods issued to all programs. If you don’t know the Material Number, then leave this blank and the Lead Agency will fill it in.
+Number of Units:
+The number of units returned of any part of the CSFP USDA Foods box. All individual returns at the time of distribution must be returned to the Lead Agency to be repacked into future CSFP USDA Foods boxes.
+8.6 USDA Foods Loss/Adjustment Procedures
+Introduction.
+All USDA Foods shall be safeguarded from theft, spoilage, damage, destruction or other loss. Food Assistance (FA) and Lead Agencies will investigate all loss of CSFP USDA Foods.
+If the loss was preventable (i.e. spoilage due to improper storage) and/or valued less than $500, FA may pursue claims.
+FA will pursue claims, as necessary, including negligence or improper use, for losses valued at $500 or more and/or if theft is involved.
+All losses of $100,000 or more will be sent to USDA FNS to be involved in the claim determination, as applicable. For additional guidelines please review
+7 CFR Part 247
+and
+7 CFR Part 250
+,
+FNS Instruction 410-1 Rev. 2
+, and related FNS policies.
+The
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+is the primary tool for participating agencies to report CSFP loss or adjustments. When loss occurs, the participating agency must fill out the appropriate loss report (
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) or
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255)
+) and submit it to their contracting agency. Lead Agencies must report all loss to WSDA FA regardless of value. See
+Section 8.6.C, Instructions
+below for more details.
+Note: Unlike TEFAP, all CSFP losses at the Sub Agency level must be reported to FA regardless of value and accounted for in both the Lead and Sub Agency’s monthly inventory reports.
+Responsibilities.
+Both Lead Agencies and Sub Agencies must be sure to maintain damaged/spoiled food in stable condition until it can be inspected (e.g., if CSFP USDA Foods is cold or frozen product, isolate and keep frozen.) “Stable condition” means upon discovery, physically separating spoiled or damaged food from other food inventories as quickly and completely as possible. Do not dispose of spoiled or damaged product until told to do so by FA or the Lead Agency (in the case of a Sub Agency).
+Lead Agencies must send all (Lead and Sub Agency) completed monthly
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) to
+foodassistance@agr.wa.gov
+. Sub Agencies must send their completed
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+) to their Lead Agency, who will conduct an investigation.
+If the value of the USDA Foods involved in the loss is $500 or more and/or theft or infestation was involved, the Lead Agency may need to reimburse or replace the damaged product. The Lead Agency should contact FA immediately as instructions may include:
+Having the food inspected by a local health inspector and the inspection findings documented. If there is a problem in arranging for a local health inspection, please call FA.
+Retaining a copy of the inspection report for the investigation records.
+For theft, regardless of the value of the commodities, follow the instructions in
+Section 8.6.E, Theft Reporting System
+.
+Starting the process for claim determination and/or pursuit of claims.
+Depending on the circumstances of the loss, FA will work with USDA FNS to mitigate impacts and request the ability for Lead Agencies and Sub Agencies to provide in-kind foods or other alternatives, if allowable. See
+FNS Instruction 410-1 Rev. 2
+.
+FA and/or the Lead Agency must complete an investigation into all loss/inventory adjustments within 30 days of discovery and make a determination regarding pursuit of claims.
+Loss and Adjustment Instructions.
+The appropriate USDA Foods loss report should be submitted whenever loss or adjustments occur. All loss of CSFP USDA Foods at the Lead Agency or Sub Agency level must be reported to FA. The Lead Agency and/or FA will complete an investigation into all loss/inventory adjustments within 30 days of discovery. FA will make a determination regarding pursuit of claims and contact USDA as necessary. All USDA Foods loss reports/forms must be accounted for and submitted with the
+CSFP Lead Agency Inventory Report (AGR-2249A)
+.
+If damage, spoilage, or an overage/shortage occurs while USDA donated food is in the possession of the Lead Agency:
+Notify FA via email/phone as soon as possible if the loss is due to spoilage and/or poses a food safety risk.
+Complete the
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+(instructions follow).
+Make sure to also list this loss or inventory adjustment on the monthly
+CSFP Lead Agency Inventory Report (AGR-2249A)
+.
+If damage, spoilage, or an overage/shortage is discovered at the time of a USDA multi-shipment delivery (has not been signed for/received into inventory), make sure to enter this into Web-Based Supply Chain Management (WBSCM). In this case
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+is not required, and the loss/adjustment is not included in the monthly inventory report.
+If damage, spoilage, or an overage/shortage occurs while USDA Foods are in the possession of the Sub Agency the Lead Agency must:
+Notify FA via email/phone as soon as possible if the loss is due to spoilage and/or poses a food safety risk.
+Have the Sub Agency complete the
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255)
+(instructions follow) and submit the USDA Foods Loss Report to the Lead Agency.
+Conduct an investigation into the circumstances of the loss and document the findings on the
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255)
+.
+Ensure that loss is accounted for in the
+CSFP Lead Agency Inventory Report (AGR-2249A)
+and that the
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255)
+is sent to FA along with the
+CSFP Lead Agency Inventory Report (AGR-2249A)
+.
+Investigations.
+Food Assistance Investigations
+This section is for FA staff to document their investigation into the loss of USDA donated food. FA is required to investigate all loss of donated USDA Foods, including inventory adjustments, regardless of value, in order to determine if a claim must be pursued against the responsible party. Investigations and claim determination must be completed within 30 days from the date of discovery, or from the date that the information was first received indicating that a loss/adjustment had occurred, whichever is later.
+Lead Agency Investigations
+Lead Agency staff/volunteers must document the investigation into the Sub Agency’s loss of USDA Foods. Accidents happen and are understandable. Investigations should look for patterns of loss, indications of negligence, or other purposeful wrongdoing. In most cases, it is the responsibility of the Lead Agency to determine if a claim should be pursued against a Sub Agency. Claim determination must be completed within 30 days from the date of discovery, or from the date that the information was first received indicating that a loss/adjustment had occurred, whichever is later. If the Lead Agency needs guidance, contact FA to assist. The Lead Agency must forward the
+USDA Foods Loss Report for Sub Agencies (AGR-2255)
+to FA in all instances.
+Note: Any time a bug or rodent infestation is involved, notify FA immediately and provide an update on the steps taken to remedy the issue. FA reserves the right to request copies of all documentation.
+Theft Reporting System.
+When theft of CSFP USDA Foods occurs, the following procedures must be followed:
+Contact the Lead Agency (for Sub Agencies) or FA (for Lead Agencies) within 24 hours (preferably immediately) of discovery regarding any theft of USDA Foods. FA is required to notify USDA of any loss related to theft.
+Immediately report theft to local police and obtain a police report. Unreported theft can result in the participating agency being liable for the cost of the food, as well as other damages.
+Fill out a
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+detailing:
+The address where the theft occurred;
+An explanation of how the theft occurred; and
+The amount of product involved with specific data.
+Email the
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+along with a copy of the police report to the Lead Agency (for Sub Agencies) or FA (for Lead Agencies) at
+foodassistance@agr.wa.gov
+.
+Instructions for the USDA Foods Loss/Adjustment Report for Lead Agencies.
+The following section walks you through how to complete each item requested on the
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256)
+.
+Program:
+Check the correct box for the program associated with the USDA Foods loss: CSFP, TEFAP or TEFAP CCC.
+Lead Agency Name:
+Your agency name.
+Date of Loss:
+The date the loss occurred or was discovered.
+Contact Person:
+The person filling out the USDA Foods Loss/Adjustment Report.
+Phone
+: The contact person’s phone number.
+Address:
+The address where the loss occurred or was discovered.
+The next section on the form is used to total the items lost. If the loss affects multiple USDA Foods, there is no need to fill out more than one USDA Foods Loss/Adjustment Report. This report is to be used on a ‘per incident’ basis.
+Example 1:
+Two units of apple juice were damaged when they fell off a pallet. In this case you would fill out one
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) with one line filled out.
+Example 2:
+The participating agency delivery truck was broken into and 2 different items were stolen. The agency would need to fill out one
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+) to list the items lost in that one incident.
+Example 3:
+Examples one and two both happen on the same day. You would fill out two separate forms as these are two separate incidents.
+USDA Foods Description:
+This is the material description, which you can find either on the Bill of Lading from the shipper or on the
+USDA Foods Order Price Lists
+.
+Material Number:
+The material number (Part Code) is the six-digit number that is used by USDA to identify the item being received. You can find this number either on the Bill of Lading or on the
+USDA Foods Order Price Lists
+.
+Example:
+The USDA Foods description is "UHT FLUID MILK 1% - 12/32 OZ”
+The material number for "UHT FLUID MILK 1% - 12/32 OZ” is 100050
+Quantity:
+The number of cases that were lost, damaged, spoiled or stolen.
+Measurement (Cases/Units):
+For CSFP the measurement is always in UNITS.
+Type (Theft, Damage, Spoilage, or Inventory Adjustment):
+Record what kind of loss occurred.
+Briefly explain how loss/adjustment occurred:
+In this box, explain to the best of your knowledge how the theft, damage, spoilage or adjustment occurred or was discovered.
+Type of Loss/Adjustment:
+Specify the type of loss/adjustment and complete additional steps and/or respond to the additional questions pertaining to different types of loss.
+If loss was due to theft, notify FA immediately, then contact the police, obtain a police report, and submit the police report to FA along with the completed
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+). In all instances of theft, FA will notify USDA, regardless of the value.
+If loss was due to spoilage caused by bug or rodent infestation, notify FA immediately, then contact the local health jurisdiction to request an inspection, obtain an inspection report, and submit the health jurisdiction’s inspection report to FA along with a completed
+USDA Foods Loss/Adjustment Report for Lead Agencies (AGR-2256
+).
+WSDA Use Only:
+(Page 2)
+This section is for FA staff to document their investigation into the loss of USDA Foods. FA is required to investigate any and all loss of donated USDA Foods, including inventory adjustments, regardless of value, in order to determine if a claim must be pursued against the responsible party. Investigations and claim determination must be completed within 30 days from the date of discovery, or from the date that the information was first received indicating that a loss/adjustment had occurred, whichever is later.
+Instructions for the USDA Foods Loss Report for Sub Agencies.
+This section provides detailed instructions for CSFP Sub Agencies to complete each item requested on the
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+). It clarifies what action(s) the Lead Agency must take to investigate loss and when that loss must be communicated to FA.
+Sub Agency Name:
+Your agency name.
+Date of Loss:
+The date the loss occurred or was discovered.
+Contact Person:
+The person filling out the USDA Foods Loss Report.
+Phone:
+The contact person’s phone number.
+Address:
+The address where the loss occurred or was discovered.
+The next section on the form is used to total the items lost. There are eight lines on the loss form. If more than eight types of items are lost, the Sub Agency will need to fill out more than one USDA Foods Loss Report. This report is to be used on a ‘per incident’ basis.
+Example 1:
+Two units of apple juice were damaged when they fell off a pallet. In this case fill out one USDA Foods Loss Report with one line filled out.
+Example 2:
+Your delivery truck was broken into and 2 different items were stolen. You would need to fill out one USDA Foods Loss Report to list the items lost in that one incident.
+Example 3:
+Examples one and two both happen on the same day. You would fill out two separate forms as these are two separate incidents.
+USDA Foods Description:
+This is the material description, which you should be able to find on the Bill of Lading you received from your Lead Agency or on the menu for prepacked CSFP boxes. If you cannot locate this description, contact the Lead Agency.
+Material Number:
+The material number is the six-digit number that is used by USDA to identify the item being received. This number should be on the Bill of Lading you received from the Lead Agency or on the menu for prepacked CSFP boxes. If it wasn’t, please contact the Lead Agency and ask for the material number.
+Example:
+The USDA Foods description is "UHT FLUID MILK 1% - 12/32 OZ”
+The material number for "UHT FLUID MILK 1% - 12/32 OZ” is 100050
+Number of Units:
+The number of units that were lost, damaged, spoiled or stolen.
+Type (Theft, Damage, or Spoilage):
+Record what kind of loss occurred.
+Briefly explain how loss occurred:
+In this box, explain to the best of your knowledge how the theft, damage, or spoilage occurred or was discovered.
+Type of Loss:
+Specify the type of loss/adjustment and complete additional steps and/or respond to the additional questions pertaining to the different types of loss.
+If loss was due to theft, notify the Lead Agency immediately, then contact the police, obtain a police report, and submit the police report to the Lead Agency along with the completed
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+). In all instances of theft, the Lead Agency will notify FA, and FA will notify USDA, regardless of the value.
+If loss was due to spoilage caused by a bug or rodent infestation, notify the Lead Agency immediately, then contact the local health jurisdiction to request an inspection, obtain an inspection report, and submit the health jurisdiction’s inspection report to the Lead Agency along with your completed
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+).
+Lead Agency Use Only:
+(Page 2)
+Lead Agency staff/volunteers must document the investigation into the Sub Agency loss of USDA donated food. Lead Agencies are required to investigate all loss of donated USDA Foods, including inventory adjustments, regardless of value, in order to determine if a claim must be pursued against the responsible party. Accidents happen and are understandable. The Lead Agency should look for patterns of loss, indications of negligence, or other purposeful wrong doing. In most cases, it is the responsibility of the Lead Agency to determine if a claim should be pursued against a Sub Agency. Claim determination must be completed within 30 days from the date of discovery, or from the date that the information was first received indicating that a loss/adjustment had occurred, whichever is later. If the Lead Agency needs guidance, contact FA to assist you with the determination. The Lead Agency needs to forward the
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+) to FA in all instances but immediately when:
+Any time theft is involved, notify FA immediately and provide FA with all documentation.
+When a Lead or Sub Agency loss is $500 or more in value, notify FA immediately and provide FA with all documentation.
+Any time a bug or rodent infestation is involved, notify FA immediately and let us know the steps taken to remedy the issue. FA reserves the right to request copies of all documentation.
+Date Received:
+The date that the Lead Agency received the
+CSFP USDA Foods Loss Report for Sub Agencies (AGR-2255
+) from the Sub Agency.
+Determine the Value of Loss:
+Multiply the number of units lost by the price per unit for that item to determine the value of the loss per item. The price per unit can be found on the USDA Foods Price Lists or the
+CSFP Lead Agency Inventory Report (AGR-2249A
+).
+If an item isn’t listed on the price list, or on an additional items list for the fiscal year in question, contact the FA regional representative who will look up the correct price per case.
+Responsible Party:
+Determine the responsible party. This could be the Sub Agency, natural event, or other. A natural event is defined as a hurricane, flood, or general power outage. In the case of other it could be theft, which could be considered another entity.
+Was the loss $500 or more? If yes, then immediately notify FA as USDA must be notified.
+All loss must be reported to FA regardless of value. This section is where the Lead Agency indicates whether it will pursue further claim action against a Sub Agency or if it has completed the investigation and is not required to pursue a claim.
+If the value of the donated USDA Foods loss is less than $500, the Lead Agency is not required to pursue a claim.
+If the loss has occurred as a result of theft, embezzlement, willful misapplication, or fraud, the Lead Agency must pursue a claim for further action, regardless of the value of the loss.
+If it is unclear as to whether a claim is required, contact FA for guidance.
+Date Investigation Complete:
+The completion date of the investigation and the determination whether to pursue a claim for the loss.
+Upon completion of the investigation, the Lead Agency should forward the loss report to FA. If the loss/adjustment reported by a Sub Agency is less than $500, does not include theft, and is not due to a bug or rodent infestation, the Lead Agency most likely will not be required to pursue a claim. The Lead Agency must keep the completed report on file as supporting documentation. Notify FA for further direction if the Sub Agency is consistently reporting loss/adjustments.
+8.7 Holds and Recalls
+Introduction.
+Food Assistance (FA) strives to protect public health by ensuring the safety of the state's food supply. CSFP USDA Foods holds and recalls due to food safety concerns may occur. FA will contact impacted Lead Agencies in the case of a hold or a recall and will provide specific guidance. In the event of a hold or recall of USDA Foods, Lead Agencies must ensure all FA instruction and procedures are implemented at the Lead and Sub Agency levels as applicable.
+After receiving a recall notice from FA, the Lead Agency should immediately respond to the email. This will notify FA staff that the Lead Agency has received the email and that the USDA Foods in question is on hold at both the Lead and Sub Agency levels. Upon USDA Foods being recalled, the Lead Agency will:
+Place all USDA Foods in question on hold. Mark each pallet with “USDA hold don’t distribute!” signs. Date the signs. Isolate the USDA Foods in question to avoid accidental use.
+Conduct an inventory of the USDA Foods in question to determine what remains on hand.
+Identify sites that may have the USDA Foods in question on hand. Immediately contact those locations and have the USDA Foods in question placed on hold and conduct an inventory to determine what is left on hand.
+Upon receiving the inventories from all affected sites, compile a master inventory list that should include:
+Total USDA Foods Received.
+Total USDA Foods Issued.
+Total USDA Foods still in inventory and on hold.
+Locations of the USDA Foods in question.
+Send the master inventory list to FA by email.
+It may be necessary to dispose of the USDA Foods in question. Track the costs associated with the disposal of the recalled USDA Foods.
+It may be necessary to get the remaining USDA Foods in question back to a central distribution point so that USDA can arrange to have it removed. Be prepared to do this quickly; FA may have a short notice of a pickup. Costs associated with the pickup and storage of recalled USDA Foods should be tracked.
+It may be necessary to notify clients that they should:
+Refrain from eating the recalled USDA Foods; and
+Dispose of the recalled USDA Foods.
+Note: Notifications may include word of mouth, flyers and signs at the site, and any normal communications used in the recall process.
+The hold on USDA Foods may be lifted only with the express written permission of FA.
+Participating agencies interested in additional information regarding responding to a food recall, please see:
+https://fns-prod.azureedge.us/sites/default/files/resource-files/Responding_Food_Recall_FNS_05302014.pdf
+.
+8.8 USDA Foods Compliant Process
+Lead Agencies and their Sub Agencies must accept and process all USDA Foods complaints received by a participant regardless of whether the complaints are written, verbal, or anonymous by completing the
+USDA Foods Complaint Form (AGR-2329)
+. If a participant reports a food-safety or health risk, contact Food Assistance (FA) immediately.
+Lead Agencies and Sub Agencies report directly to FA by using the
+USDA Foods Complaint Form (AGR-2329)
+and/or Sub Agencies may request that their Lead Agency submit the food complaint form to FA on their behalf. USDA Foods complaints are broad in nature and include things like issues with the packaging, recommendations for quality improvement, food safety, or health risks. The food complaint form should NOT be used when a Lead Agency or Sub Agency is reporting a receipt or inventory adjustment due to shortages, overages, spoilage, damage or theft.
+The
+USDA Foods Complaint Form (AGR-2329)
+should be completed and submitted to
+foodassistance@agr.wa.gov
+within 10 calendar days of receiving a complaint, unless there is a food safety or health risk, either of which needs to be reported immediately.
+Participating agencies should ensure all food complaints are properly documented and reported. FA will report the issue into the USDA Web-Based Supply Chain Management (WBSCM) system within five calendar days and report any significant issues directly to USDA FNS Western Region upon receipt. FA will maintain a record of and track all USDA Foods complaints, including complaint status (pending, follow-up, completed, or referred to USDA FNS).
+8.9 Storage Requirements
+Introduction.
+It is important to store food properly and at the right temperature. Improper storage can result in spoilage or damage in the Lead Agency being charged for the cost of the food. The following are the minimum storage requirements for dry, refrigerated, frozen and processed USDA Foods. As such these requirements do not exempt a Lead Agency or its CSFP sites from complying with the local health authority's food storage and handling regulations.
+Dry USDA Foods.
+Store in a clean, cool, dry place, preferably where food will not be in direct sunlight. Food should be stored up off the floor and at least four to six inches away from walls, if possible. The storage area should be secure, clean, and inspected on a regular basis. Temperatures should be regulated and monitored regularly. A method of pest infestation control (either professional or self-applied) should be in place for all storage areas.
+Nuts and dried fruits can be damaged during storage by insects and high heat. Infestation by insects can be minimized by storing at 50 to 70 degrees Fahrenheit, using good sanitation, and quickly distributing the product. Storage at lower temperatures will help maintain the storage life of the product. It is not recommended to store dried fruit or nuts during the summer months in a non-air-conditioned warehouse. If storing these items during the summer is unavoidable it is recommended that they are stored in a cooler to ensure that the product will remain useable for distribution.
+Ultra-High Temperature (UHT) Shelf-Stable Milk.
+UHT shelf-stable milk can be stored on the shelf at room temperature for months before being opened. Once opened, UHT shelf-stable milk must be refrigerated.
+If the package is damaged or has been opened, UHT shelf-stable milk will spoil. Once the package is opened the milk is exposed to the air and will spoil just like pasteurized milk. Always refrigerate after opening for maximum shelf life.
+The best temperature to store shelf stable milk is from 33 to 80 degrees Fahrenheit. It can withstand higher temperatures up to 108 degrees Fahrenheit, but the higher temperatures will cause the milk to age more quickly but will not cause bodily harm. Storing the milk at or above 109 degrees Fahrenheit for more than 10 days will cause the milk to sour but will not cause bodily harm.
+Refrigerated USDA Foods.
+Store in a cooler or refrigerator that will maintain a temperature between 33 and 40 degrees Fahrenheit. Refrigerated USDA Foods include fresh fruit and vegetables. USDA Foods needing refrigeration can include dry foods that store better at cool temperatures such as dried fruit (e.g., raisins and prunes) and milled grains (e.g., flour and cornmeal). The food should be stored such that proper air circulation is maintained in the refrigeration unit. The unit should be cleaned and inspected on a regular basis. A thermometer should be in each unit and monitored daily.
+Frozen USDA Foods.
+Store in a freezer that will maintain a temperature of zero degrees Fahrenheit or lower. The food should be stored such that proper air circulation is maintained in the freezer unit. The unit should be cleaned and inspected on a regular basis. A thermometer should be in each unit and monitored daily.
+Recommended temperatures and storage time for CSFP USDA Foods:
+Type
+Temperature Range
+Time Span
+Frozen
+0 degrees Fahrenheit or lower
+9 months
+Refrigerated
+33-40 degrees Fahrenheit
+5 months
+Dry Goods
+50-70 degrees Fahrenheit
+(exception fruits and nuts)
+1 year
+Storage Periods.
+Shelf life is the length of time from pack date that USDA Foods can be stored at acceptable temperatures without affecting quality. USDA Foods shelf-life recommendations are currently stated as “best if used by” dates. FA requires that Lead Agencies and Sub Agencies have no more than a three-month supply of USDA Foods on hand to ensure food is being distributed to CSFP participants.
+Expiration and Use-by Dates:
+“Expiration” dates and “use-by” dates are the last dates the manufacturer recommends a food item be consumed to ensure peak quality and nutrient retention. CSFP USDA Foods that is past its expiration or use-by date must not be distributed to program recipients.
+Best-If-Used-By (BIUB) Date:
+A “best-if-used-by” (BIUB) date is the last date a food item will be at its peak, in terms of flavor and quality. At some point after that date, the product will begin to undergo changes in taste, color, texture, and/or nutrient content. However, the product may be wholesome, safe to consume, and retain most of its nutrient value long after the BIUB date. BIUB dates are intended only as useful guidelines. Some CSFP USDA Foods may deteriorate more quickly than others; some may last longer than the times recommended. Many factors can shorten the useful life of USDA Foods such as improper handling and inadequate storage temperatures. The inventory control method of “first-in, first-out” (FIFO) should be practiced by those responsible for CSFP USDA Foods inventories and distribution.
+As stipulated by USDA in
+Policy Memo FD-107
+, CSFP USDA Foods that is past its BIUB date must not be distributed to program recipients.
+Lead Agencies and their Sub Agencies must consider BIUB dates in managing their CSFP inventories, and distribute foods in a manner that provides enough time to be consumed by the BIUB date. Failure to distribute CSFP USDA Foods to program recipients prior to the expiration/BIUB date may be considered a loss of CSFP USDA Foods by FA.
+“Sell-by” Date:
+The “sell-by” date is the date by which the manufacturer recommends that a store sell the food product. This date is not necessarily a reliable indicator of how long the food may retain its wholesomeness or nutritional value.
+Conventional Storage Practices.
+Monitoring Storage Temperatures:
+Lead Agencies are responsible for any loss of CSFP USDA donated food that happens due to negligence. Lead Agencies should monitor and record storage temperatures on a daily basis year-round. Although FA cannot require the daily year-round reading and recording of storage temperatures, USDA considers all losses that result because of inadequate temperature control to be caused by negligence and hold the Lead Agency responsible for the CSFP USDA Foods loss.
+Losses due to the failure of an alarm system constitute negligence
+. Therefore, the burden of proof is on the Lead Agency to demonstrate that the loss was not caused by its negligence. Lead Agencies shall record the storage temperatures on a daily basis.
+The purpose of the temperature chart is to help the Lead Agency maintain the proper temperatures in their CSFP USDA Foods storage facilities. If there is a significant change in temperature, the Lead Agency can take appropriate action to correct the problem and avoid deterioration or loss of stored CSFP USDA Foods.
+Practicing FIFO (First In, First Out):
+USDA Foods are to be stored so that the food with the nearest expiration/BIUB dates are in front and used first, followed by USDA Foods with the oldest pack dates. With the increasing number of CSFP USDA Foods having commercial labels, each case may not have contract numbers pack dates, or expiration/BIUB dates appear on each case. When CSFP USDA Foods is received, Lead Agencies shall write the received date on the product if no other date is present. If CSFP USDA Foods is taken out of the case and stored separately, each can, box or container should be marked with the received dates if pack dates or expiration/BIUB dates are not available.
+8.10 Food Safety and Sanitation Requirements
+NOTE: This applies to Lead Agencies and Sub Agencies receiving and handling CSFP USDA Foods.
+All Must Adhere to Reasonable Safety and Sanitation Standards.
+Lead Agencies and Sub Agencies must adhere to all applicable local, state and federal regulations on food safety and sanitation. These standards cover the areas of ground and warehouse maintenance, food storage and pest control.
+Properly control pests inside and outside.
+Use the assistance of a trained exterminator to set outside traps and bait stations, setting traps indoors.
+NOTE: Rodent pesticides are not to be used inside except with very serious infestations and never in close proximity to food.
+Do proper lawn care and weed control.
+Store equipment, pallets and trash receptacles away from the building, keeping the grounds litter-free. Keep trash receptacles covered and clean.
+Keep doors and windows shut unless they are screened.
+Maintain the inside of buildings so that they are clean and in good repair.
+Adhere to good food safety practices so that foods are stored in a manner to protect them from spoilage, infestation, damage or other condition that may jeopardize the wholesomeness or safety of the foods.
+Move out the oldest food first.
+Store food in sanitary conditions, which includes clean storage areas and pallets.
+Maintain proper temperatures and humidity, with adequate air circulation around perishable foods. Cold storage must be maintained at between 33 and 40 degrees Fahrenheit; frozen storage must be maintained at zero degrees Fahrenheit or lower.
+Keep food off the floor and on pallets.
+Keep food 4-6 inches from walls, if possible.
+Keep cleaning agents and other toxic materials away from food.
+Food safety: Foods that show signs of spoilage, infestation, or other visible defects should not be used or distributed, regardless of product dates or when the foods were received, as such food is generally considered not fit for human consumption.
+There must be hand-washing facilities with hot running water.
+Non-Compliance with Safety and Sanitation Standards.
+Providers who put the public’s health at risk and do not adhere to these standards may be suspended or terminated from CSFP if they do not make the necessary improvements within 30 days of receiving notice from Food Assistance (FA) or the Lead Agency requiring compliance.
+NOTE:
+Chapter 246-215
+of the Washington Administrative Code (WAC), Subpart D - Donated Food Distributing Organizations,
+effective May 1, 2013, provides the safety standards for food pantries and food banks. The Food Code serves as the basis for food service rules in most states and provides Washington with rules that are more consistent with the national food safety standards
+www.doh.wa.gov/Portals/1/Documents/Pubs/332-033.pdf
+.
+Click here to return to CSFP page
+CSFP Procedures Manual Table of Contents
+Section 7
+Section 9
+Revision History
+Section 8 Revision 2025-07-15
+Washington State Department of Agriculture
+Natural Resources Building
+P.O. Box 42560
+1111 Washington ST SE
+Olympia, WA 98504-2560
+-->
+Regular business hours:
+Mon-Fri, 8am–5pm
+For assistance during business hours,
+contact
+(360) 902-1800
+NAVIGATION
+Home
+Washington Agriculture
+Services
+Departments
+About WSDA
+Employment
+Contact Us
+STAY CONNECTED
+Copyright ©2026 Washington State Department of Agriculture. All rights reserved.
+×
+eAlerts
+First Name
+Last Name
+Email
+Board Meeting Agendas
+Cargo Updates
+Environmental Notices
+News
+Subscribe

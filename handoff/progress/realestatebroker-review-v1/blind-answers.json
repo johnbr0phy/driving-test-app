@@ -1,0 +1,1615 @@
+[
+  {
+    "id": "R001",
+    "answer": "A",
+    "reason": "350000 / 2500 monthly rent = 140 monthly GRM.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R002",
+    "answer": "B",
+    "reason": "Unattached movable table is personal property; other objects are attached or growing realty. DRE4.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R003",
+    "answer": "A",
+    "reason": "Refusing entry exercises exclusion, not conveyance or encumbrance. DRE4 bundle of rights.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R004",
+    "answer": "A",
+    "reason": "Owner delegates representation and is principal; broker is agent. DRE10.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R005",
+    "answer": "C",
+    "reason": "Leaving price for future agreement leaves an essential term indefinite. DRE6 assent/definiteness.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R006",
+    "answer": "B",
+    "reason": "GRM uses gross rent, so equal gross income masks different operating costs. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R007",
+    "answer": "B",
+    "reason": "Public-road taking for compensation fits eminent domain. DRE6 governmental acquisition.",
+    "confidence": "medium",
+    "findings": [
+      "Wording ambiguity: a compensated city purchase need not exercise eminent domain. Specify compulsory acquisition/condemnation for the road. B is the only plausible listed choice, but voluntary purchase is an omitted interpretation."
+    ]
+  },
+  {
+    "id": "R008",
+    "answer": "C",
+    "reason": "Significant gaps and their impact on professional conclusions must be identified. EPA-AAI.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Other choices substitute title/zoning or assume cleanliness, making professional evaluation uniquely credible."
+    ]
+  },
+  {
+    "id": "R009",
+    "answer": "B",
+    "reason": "Attorney-in-fact capacity is granted by power of attorney. DRE10.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R010",
+    "answer": "C",
+    "reason": "Known relevant common-area lead reports are included in covered multiunit disclosure. EPA-LEAD.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R011",
+    "answer": "C",
+    "reason": "Premises bodily injury falls under general liability rather than professional-service errors. SBA insurance guidance.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R012",
+    "answer": "C",
+    "reason": "550000 - 310000 - 27500 - 7500 = 205000 seller proceeds.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R013",
+    "answer": "C",
+    "reason": "Fixed April-to-September duration is an estate for years even though shorter than one year. DRE9.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R014",
+    "answer": "C",
+    "reason": "1965 is the only pre-1978 construction date. EPA-LEAD.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R015",
+    "answer": "C",
+    "reason": "APR incorporates interest and specified financing fees in an annualized rate. CFPB-TERMS.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R016",
+    "answer": "C",
+    "reason": "Stated retention of legal title postpones deed conveyance, unlike immediate conveyance securing financing. DRE6/12.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R017",
+    "answer": "C",
+    "reason": "Sexual-favor conditions are quid pro quo sex discrimination. DOJ Fair Housing Act.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R018",
+    "answer": "C",
+    "reason": "Benefit assessment allocation rests on benefit conferred rather than assessed value. DRE16 benefit assessments.",
+    "confidence": "medium",
+    "findings": [
+      "Scope: neighborhood improvement levy does not uniquely identify a benefit assessment nationally. Name a special benefit assessment for the improvement; avoid universalizing the California chapter's levy taxonomy.",
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R019",
+    "answer": "C",
+    "reason": "Segregating families with children is familial-status discrimination. DOJ Fair Housing Act.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R020",
+    "answer": "D",
+    "reason": "MLS disseminates listings; membership does not itself execute conveyances, fix fees, or appoint agency. DRE10 MLS discussion used only for information-sharing concept.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R021",
+    "answer": "B",
+    "reason": "240000 x .06 x 20/360 = 800 simple interest.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R022",
+    "answer": "A",
+    "reason": "The stipulated commitment condition calls for a complying lender commitment, not preliminary affordability.",
+    "confidence": "high",
+    "findings": [
+      "Weak distractors/self-cue: stem expressly demands a commitment and A says commitment satisfying the clause. Replace choices with plausible commitment conditions and ask whether a particular condition is satisfied."
+    ]
+  },
+  {
+    "id": "R023",
+    "answer": "C",
+    "reason": "Exclusive agency appoints one brokerage but ordinarily reserves owner self-sale without commission. DRE6 listing classifications.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R024",
+    "answer": "D",
+    "reason": "A competitor agreement fixing a minimum fee restrains price competition despite permitting higher charges. FTC price fixing.",
+    "confidence": "high",
+    "findings": [
+      "Near-duplicate objective with R064. Same narrow principle: competitor agreement distinguishes price fixing from independent matching fees. One states coordination, one asks for it; consider replacing one with different antitrust conduct."
+    ]
+  },
+  {
+    "id": "R025",
+    "answer": "B",
+    "reason": "Parties may agree in writing to shorten the ten-day lead inspection opportunity; seven days is permitted. EPA-LEAD.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R026",
+    "answer": "C",
+    "reason": "Beneficiary subsidiary ledgers allocate the pooled balance to individual owners; bank/control records alone do not.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R027",
+    "answer": "C",
+    "reason": "Quitclaim transfers whatever present interest the grantor has; no interest here means none conveyed. DRE7.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R028",
+    "answer": "A",
+    "reason": "An expressly prohibited use fails legal permissibility. DRE15 highest and best use tests.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R029",
+    "answer": "C",
+    "reason": "Marketability concerns reasonable objections; an easement is not automatically disqualifying regardless of extent and contract. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R030",
+    "answer": "C",
+    "reason": "Appraisal depreciation is value loss, broader than scheduled tax-basis recovery. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R031",
+    "answer": "D",
+    "reason": "V = NOI / rate; increasing the denominator with constant numerator lowers value. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R032",
+    "answer": "A",
+    "reason": "BFPP status can accommodate known contamination if statutory requirements are met. EPA-AAI.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R033",
+    "answer": "D",
+    "reason": "3600 / 360 x 135 = 1350 unpaid seller share; debit seller and credit buyer.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R034",
+    "answer": "B",
+    "reason": "Recurring ancillary parking income belongs in gross income estimates. DRE15 gross multipliers/income.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R035",
+    "answer": "D",
+    "reason": "A tank release may contaminate surrounding soil and groundwater beyond equipment repair. EPA-UST.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Three distractors promise categorical elimination or limitation of contamination risks."
+    ]
+  },
+  {
+    "id": "R036",
+    "answer": "B",
+    "reason": "Automatic successive periods characterize periodic tenancy. DRE9.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R037",
+    "answer": "B",
+    "reason": "Expressly irrelevant purchase information lacks materiality; knowledge of falsity is not resolved by this fact. DRE6 fraud.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R038",
+    "answer": "B",
+    "reason": "Actual services are essential to bona fide compensation; labels/timing/gift ceilings do not establish legality. CFPB-RESPA.",
+    "confidence": "high",
+    "findings": [
+      "Qualification: actual services are relevant but do not alone make compensation lawful; payment must reasonably relate to service value and not disguise referral compensation. Keep B as best answer, ensure explanation does not create automatic safe harbor."
+    ]
+  },
+  {
+    "id": "R039",
+    "answer": "D",
+    "reason": "Binding duties remain unperformed, so contract is executory. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R040",
+    "answer": "D",
+    "reason": "36000 + .04 x (800000 - 500000) = 36000 + 12000 = 48000 rent.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R041",
+    "answer": "A",
+    "reason": "Channel-attributed inquiries directly measure prospect response to advertising; other metrics concern existing operations.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R042",
+    "answer": "A",
+    "reason": "Required lead information precedes buyer contractual obligation. EPA-LEAD.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R043",
+    "answer": "C",
+    "reason": "Limitation bars an enforcement remedy without retroactively eliminating formation. DRE6 limitations/classifications.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Other choices claim time magically removes consideration, changes assent, or makes performance impossible."
+    ]
+  },
+  {
+    "id": "R044",
+    "answer": "D",
+    "reason": "Inquiry-based live-call relationship lasts three months, subject to opt-out. FTC-TSR.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R045",
+    "answer": "B",
+    "reason": "19800 bank balance - 1200 outstanding payment = 18600 adjusted bank balance.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R046",
+    "answer": "A",
+    "reason": "330 x 264 = 87120 square feet; 87120 / 43560 = 2 acres.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R047",
+    "answer": "A",
+    "reason": "60 x 100 - 20 x 30 = 6000 - 600 = 5400 enclosed square feet.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R048",
+    "answer": "C",
+    "reason": "Principal's statement creates apparent authority to contractor despite undisclosed actual limitation. DRE10 ostensible authority.",
+    "confidence": "high",
+    "findings": [
+      "Near-duplicate objective with R067. Same narrow principle: principal manifestations, not agent assertion, establish apparent authority. Present-vs-missing-evidence inversion adds limited transfer. Consider making one assess reasonable reliance on a communicated limitation."
+    ]
+  },
+  {
+    "id": "R049",
+    "answer": "B",
+    "reason": "ARM margin is the contractual increment; market index and resulting rate can change. CFPB-TERMS/ARM guidance.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R050",
+    "answer": "D",
+    "reason": "Explicit contractual exclusion establishes agreed removal treatment between these parties. DRE4 fixture tests.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R051",
+    "answer": "D",
+    "reason": "8000 + (-300) = 7700 reconciles in aggregate but leaves beneficiary short by 300; netting does not eliminate obligation.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Other choices use implausible accounting absolutes; add a plausible transfer/overdraft misconception."
+    ]
+  },
+  {
+    "id": "R052",
+    "answer": "A",
+    "reason": "Consideration purchases an enforceable period to accept an offer: option. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R053",
+    "answer": "A",
+    "reason": "Assignment transfers rights without itself releasing original obligor. DRE6 assignment/novation.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R054",
+    "answer": "D",
+    "reason": "450000 x .80 = 360000 assessed; 360000 / 1000 x 15 = 5400 annual tax.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R055",
+    "answer": "C",
+    "reason": "Loan Estimate discloses expected terms, not final underwriting approval or acceptance. CFPB-LE.",
+    "confidence": "high",
+    "findings": [
+      "Self-cue: stem itself says no final approval, leaving preliminary pricing as the only modest claim. Ask what further borrower/lender step remains, using credible alternatives."
+    ]
+  },
+  {
+    "id": "R056",
+    "answer": "A",
+    "reason": "Federal retention period is three years after sale completion or lease commencement. EPA-LEAD; stem timing needs clarification.",
+    "confidence": "medium",
+    "findings": [
+      "Factual timing wording: after the sale or lease starts can imply sale initiation. EPA says three years after sale is completed or lease begins. Replace the shared starts wording with those separate triggers."
+    ]
+  },
+  {
+    "id": "R057",
+    "answer": "D",
+    "reason": "Minimum price is negotiating confidence; concealed foundation defect is material property condition. DRE10 general fiduciary distinction; precise disclosure duties remain jurisdiction-dependent.",
+    "confidence": "high",
+    "findings": [
+      "Jurisdiction guard: the general confidentiality/material-condition distinction is sound; explanation should not export California-specific affirmative investigation/disclosure duties nationally."
+    ]
+  },
+  {
+    "id": "R058",
+    "answer": "A",
+    "reason": "Fundamental alteration can make zoning accommodation unreasonable; routine departure alone cannot. DOJ/HUD zoning joint statement.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R059",
+    "answer": "D",
+    "reason": "Liquidated damages stipulate a sum for specified breach; enforceability is a separate issue. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R060",
+    "answer": "A",
+    "reason": "EPA's action level is 4 pCi/L; EPA also suggests considering reduction between 2 and 4. EPA radon guide.",
+    "confidence": "high",
+    "findings": [
+      "Precision: EPA also recommends considering reduction between 2 and 4 pCi/L. Ask for the EPA action level of 4 pCi/L; do not imply lower results are safe or reduction is never advised.",
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R061",
+    "answer": "A",
+    "reason": "Otherwise binding but avoidable by protected fraud victim means voidable. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R062",
+    "answer": "A",
+    "reason": "CWA Section 404 governs regulated dredged/fill discharges in jurisdictional waters. EPA-CWA404.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R063",
+    "answer": "B",
+    "reason": "Service before failure is preventive; failures prompt corrective repairs, elevator installation adds capital facility. DRE22.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R064",
+    "answer": "C",
+    "reason": "Evidence of agreement distinguishes coordination from lawful similar independent prices. FTC price fixing.",
+    "confidence": "high",
+    "findings": [
+      "Near-duplicate objective with R024. Same narrow principle: competitor agreement distinguishes price fixing from independent matching fees. One states coordination, one asks for it; consider replacing one with different antitrust conduct."
+    ]
+  },
+  {
+    "id": "R065",
+    "answer": "C",
+    "reason": "200000 x (1 - .05) = 190000 effective income; 190000 - 70000 = 120000 NOI.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R066",
+    "answer": "D",
+    "reason": "HUD receives individual administrative FHA complaints. DOJ Fair Housing Act.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R067",
+    "answer": "B",
+    "reason": "Apparent authority derives from principal manifestations, not agent's unsupported claim. DRE10.",
+    "confidence": "high",
+    "findings": [
+      "Near-duplicate objective with R048. Same narrow principle: principal manifestations, not agent assertion, establish apparent authority. Present-vs-missing-evidence inversion adds limited transfer. Consider making one assess reasonable reliance on a communicated limitation."
+    ]
+  },
+  {
+    "id": "R068",
+    "answer": "C",
+    "reason": "Rescission unwinds the agreement and restores former positions. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R069",
+    "answer": "B",
+    "reason": "Mortgage/deed of trust creates collateral security; note is repayment promise. DRE12.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R070",
+    "answer": "B",
+    "reason": "Entity-specific opt-out defeats established-relationship live-call exception. FTC-TSR.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R071",
+    "answer": "D",
+    "reason": "Favorable seller financing calls for cash-equivalent transaction analysis. DRE15 sales comparison financing adjustment.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R072",
+    "answer": "C",
+    "reason": "24000 / 2 = 12000 firm share; 12000 x .65 = 7800 agent share.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R073",
+    "answer": "C",
+    "reason": "Value paid solely under referral understanding raises Section 8(a), unlike actual service compensation. CFPB-RESPA.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R074",
+    "answer": "A",
+    "reason": "Situs captures location preference/access; fixity merely says land cannot move. DRE15 value/location.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R075",
+    "answer": "D",
+    "reason": "620000 - 390000 - 45000 = 185000 equity.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R076",
+    "answer": "D",
+    "reason": "Superior surrounding homes can raise lesser property's value: progression. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R077",
+    "answer": "B",
+    "reason": "Delegation does not eliminate responsible selection and oversight; assistant's own performance duty is not broker's retained duty. DRE10 general agency care, not a national licensing statute.",
+    "confidence": "high",
+    "findings": [
+      "Jurisdiction guard: general care in delegation is sound. Do not characterize California statutory supervision rules or employment classifications as uniform national law."
+    ]
+  },
+  {
+    "id": "R078",
+    "answer": "A",
+    "reason": "300000 x 1.10 x .90 = 297000; percentage changes use different bases.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R079",
+    "answer": "C",
+    "reason": "Deed connecting Allen to Blake supplies the missing conveyance link. DRE5/7 title chain.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R080",
+    "answer": "A",
+    "reason": "Lessor retains reversion after giving temporary exclusive possession. DRE9.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R081",
+    "answer": "A",
+    "reason": "Binding/coating fibers while material remains is encapsulation; enclosure supplies a surrounding barrier. EPA-ASBESTOS.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R082",
+    "answer": "D",
+    "reason": "Missing subsidiary receipt requires +500 in owner's ledger; bank and control already contain it.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R083",
+    "answer": "B",
+    "reason": "2700 / 75 = 36 months to recover upfront cost, ignoring taxes/time value as instructed.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R084",
+    "answer": "A",
+    "reason": "Estate measured by Lee's life remains measured by Lee after sale to Sam. DRE4 life estates.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R085",
+    "answer": "B",
+    "reason": "Interviews and visual inspection must be conducted/updated within 180 days; eight months exceeds that window. EPA-AAI.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R086",
+    "answer": "B",
+    "reason": "Grant scope and physical location determine construction interference with access right. DRE5 easements.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R087",
+    "answer": "D",
+    "reason": "COE does not replace lender credit/income qualification. VA-PURCHASE.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R088",
+    "answer": "C",
+    "reason": "Direct-threat analysis requires objective individualized evidence rather than disability stereotypes. DOJ/HUD accommodation joint statement.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R089",
+    "answer": "A",
+    "reason": "Disclosure rule requires existing known information but does not itself mandate new testing. EPA lead FAQ.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R090",
+    "answer": "B",
+    "reason": "An active major leak is emergency work expressly separately authorized, unlike cosmetic routine improvements.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R091",
+    "answer": "B",
+    "reason": "Market value estimates most probable exchange price; completed sale price is one transaction. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R092",
+    "answer": "B",
+    "reason": "Access easement burdens land use without being security for monetary obligation. DRE5.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R093",
+    "answer": "C",
+    "reason": "Undisclosed controlled-company purchase makes agent a personal beneficiary adverse to client's interests. DRE10 own-account conflicts.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R094",
+    "answer": "C",
+    "reason": "Ongoing leasing/repairs within delegated business fit general agency, not universal authority. DRE10 general/special definitions.",
+    "confidence": "high",
+    "findings": [
+      "Source scope: generalized ongoing delegated agency is defensible; do not carry over DRE statements about California licensees being regulated only as special agents.",
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R095",
+    "answer": "D",
+    "reason": "AAI is one prerequisite; eligibility conditions and continuing obligations remain. EPA-AAI.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: All rivals posit implausible automatic termination, universal deed approval, or unanimous former-operator consent."
+    ]
+  },
+  {
+    "id": "R096",
+    "answer": "C",
+    "reason": "Similar competing effective rents provide market evidence for rent schedule. DRE22.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R097",
+    "answer": "A",
+    "reason": "Adding prepayment penalty triggers renewed three-business-day waiting period. CFPB-TRID FAQs.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R098",
+    "answer": "A",
+    "reason": "Reconveyance releases trustee's title/security interest upon repayment under deed-of-trust arrangement. DRE7.",
+    "confidence": "high",
+    "findings": [
+      "Jurisdiction guard: reconveyance is the intended deed-of-trust instrument. Avoid implying all states use identical trustee-title theory, form, or release procedure.",
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R099",
+    "answer": "D",
+    "reason": "Redevelopment net = 500000 - 110000 = 390000; existing 420000 exceeds it by 30000.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R100",
+    "answer": "C",
+    "reason": "Religion is expressly protected federally; other classifications may have different protections but are not listed FHA classes. DOJ-FHA.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R101",
+    "answer": "B",
+    "reason": "Reformation corrects writing to reflect the actual agreement. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R102",
+    "answer": "C",
+    "reason": "Stated survivorship passes interest to Bea outside Alex's probate despite will. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R103",
+    "answer": "C",
+    "reason": "Replacement net = 19200 - 1800 = 17400; renewal 18000 wins by 600.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R104",
+    "answer": "C",
+    "reason": "Specific performance seeks the promised conveyance rather than monetary substitute. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R105",
+    "answer": "D",
+    "reason": "84000 / .07 = 1200000 capitalized value.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R106",
+    "answer": "A",
+    "reason": "Health/safety building codes are police-power regulation, not compensated acquisition. DRE6/15 public limitations.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R107",
+    "answer": "D",
+    "reason": "Testing actual dialed numbers against suppression records verifies implementation; policy receipt or vendor assurances do not. FTC-TSR effectiveness guidance.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R108",
+    "answer": "A",
+    "reason": "Initial Closing Disclosure generally must arrive three business days before consummation for covered mortgage. CFPB-TRID.",
+    "confidence": "medium",
+    "findings": [
+      "Precision: federal technical trigger is consummation, not necessarily later settlement/funding. Replace closing with consummation, or define closing as consummation; emergency waiver exceptions need not distract from the general rule."
+    ]
+  },
+  {
+    "id": "R109",
+    "answer": "A",
+    "reason": "Warranty title covenants distinguish warranty from quitclaim; delivery, signature and property identification concern both. DRE7.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R110",
+    "answer": "C",
+    "reason": "Radon varies by home; direct testing is necessary instead of neighbor/county inference. EPA radon guide.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R111",
+    "answer": "C",
+    "reason": "Fee simple absolute has indefinite duration without special defeasing condition. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R112",
+    "answer": "B",
+    "reason": "Structure extending beyond title boundary may encroach on neighbor. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R113",
+    "answer": "A",
+    "reason": "Specialized legal provision beyond manager expertise should be developed by counsel; disclaimer/owner approval does not create legal expertise. DRE10/22 scope of professional services.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R114",
+    "answer": "D",
+    "reason": "Benefited land is dominant; burdened land is servient. DRE5.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R115",
+    "answer": "C",
+    "reason": "Appurtenant benefit ordinarily runs with dominant parcel even if not restated. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R116",
+    "answer": "C",
+    "reason": "Section 502 guaranteed housing is intended as primary residence in an eligible rural area. USDA502.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R117",
+    "answer": "D",
+    "reason": "Harvesting severs tree from realty into movable logs. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R118",
+    "answer": "C",
+    "reason": "Lot/block identifiers require referenced plat; different maps prevent matching from number alone. DRE4 descriptions.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R119",
+    "answer": "D",
+    "reason": "Cost approach combines land value with depreciated improvement cost. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R120",
+    "answer": "C",
+    "reason": "Cash to Close reflects credits and funds already paid when calculating remaining settlement payment. CFPB closing disclosure explainer.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R121",
+    "answer": "C",
+    "reason": "Utility's right without dominant parcel is easement in gross. DRE5.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R122",
+    "answer": "D",
+    "reason": "Signing owner's acceptance exceeds expressly limited solicitation authority. DRE10; stem supplies contractual scope.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R123",
+    "answer": "A",
+    "reason": "Buyer's representation agreement establishes agency; source of compensation does not change stated relationship. DRE10.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R124",
+    "answer": "D",
+    "reason": "Removable business-installed bakery counters fit trade fixtures. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R125",
+    "answer": "C",
+    "reason": "Conventional mortgage lacks federal loan insurance/guarantee; private insurance may still exist. CFPB-TERMS.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R126",
+    "answer": "A",
+    "reason": ".80 x 475000 = 380000 maximum loan; 500000 - 380000 = 120000 price gap.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R127",
+    "answer": "C",
+    "reason": ".05 x 400000 + .03 x (650000 - 400000) = 20000 + 7500 = 27500.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R128",
+    "answer": "B",
+    "reason": "(13800 - 12000) / 12000 x 100 = 15% over budget.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R129",
+    "answer": "D",
+    "reason": "Reciprocal promises create bilateral contract. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Overlapping fact pattern with R151: exchanged promises. Classification and consideration are distinct objectives, so this is near repetition rather than an exact duplicate; make consideration item contrast past consideration or illusory promises.",
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R130",
+    "answer": "A",
+    "reason": "Removing visible mold while leaving moisture source permits renewed growth. EPA-MOLD.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Other choices require impossible permanent spore elimination or put repainting before leak repair."
+    ]
+  },
+  {
+    "id": "R131",
+    "answer": "A",
+    "reason": "Stated fee scope and additional compensation belong in management agreement; invoice quantities do not establish agent compensation agreement. DRE22 management arrangements.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R132",
+    "answer": "A",
+    "reason": "Undivided share does not define a physical 40% segment; cotenant agreement can allocate possession. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R133",
+    "answer": "B",
+    "reason": "NFIP Zone D denotes undetermined risk, not established low risk. NFIP-ZONES.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R134",
+    "answer": "C",
+    "reason": "Clean Air Act covers stationary and mobile air emissions. EPA-CAA.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R135",
+    "answer": "A",
+    "reason": "Taxes are fixed operating expenses with low occupancy dependence. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R136",
+    "answer": "B",
+    "reason": "Words versus conduct distinguish express from implied agreement. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R137",
+    "answer": "A",
+    "reason": "Subtract superior comparable feature's 12000 contribution from comparable price to match inferior subject. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R138",
+    "answer": "D",
+    "reason": "1620 + 4800/12 + 1560/12 = 1620 + 400 + 130 = 2150 monthly PITI.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R139",
+    "answer": "D",
+    "reason": "Roof damage is physical deterioration; highway noise is external loss. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R140",
+    "answer": "B",
+    "reason": "Relative strength of supply/demand shifts determines price direction, not either increase alone. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R141",
+    "answer": "B",
+    "reason": "Public permission does not extinguish valid private covenant; both restrictions matter. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R142",
+    "answer": "B",
+    "reason": "False availability denies equal access irrespective of posted rent equality. DOJ-FHA.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: All rivals categorically deny protection without higher rent/application; add realistic availability-documentation issues."
+    ]
+  },
+  {
+    "id": "R143",
+    "answer": "D",
+    "reason": "A defeasible use condition can put ownership at risk of forfeiture unlike unrestricted fee. DRE4/6; wording should distinguish condition from covenant.",
+    "confidence": "medium",
+    "findings": [
+      "Potential ambiguity: a use restriction may be only a covenant. Specify a determinable estate or express right of entry/reverter so forfeiture is genuinely supported. D is best under intended defeasible-condition reading, but unrestricted ownership subject to covenant is an omitted rival interpretation."
+    ]
+  },
+  {
+    "id": "R144",
+    "answer": "A",
+    "reason": "Future rent expectation underlies anticipation of benefits. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R145",
+    "answer": "B",
+    "reason": "Mortgage insurance principally protects lender default loss, despite borrower paying premiums. CFPB-MI.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R146",
+    "answer": "D",
+    "reason": "Photo/access task needs only relevant photos and approved access instructions, not financial/all-office records. FTC-DATA.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Every rival grants plainly irrelevant financial or entire-office access; vary task-scoped permissions."
+    ]
+  },
+  {
+    "id": "R147",
+    "answer": "A",
+    "reason": "Nonexclusive parallel broker appointments fit open listing. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R148",
+    "answer": "D",
+    "reason": "Ranges locate east/west from principal meridian; township tiers north/south from baseline. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R149",
+    "answer": "A",
+    "reason": "400000 - 320000 + 9000 - 12000 - 3000 = 74000 remaining cash.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R150",
+    "answer": "A",
+    "reason": "450000 x .70 + 500000 x .30 = 315000 + 150000 = 465000.",
+    "confidence": "high",
+    "findings": [
+      "Pedagogy qualification: arithmetic is correct because weights are stipulated. Explanation should not suggest appraisal reconciliation inherently means mechanical weighted averaging."
+    ]
+  },
+  {
+    "id": "R151",
+    "answer": "C",
+    "reason": "Exchanged binding promises can supply consideration without immediate cash. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Overlapping fact pattern with R129: exchanged promises. Classification and consideration are distinct objectives, so this is near repetition rather than an exact duplicate; make consideration item contrast past consideration or illusory promises."
+    ]
+  },
+  {
+    "id": "R152",
+    "answer": "D",
+    "reason": "On-premises heating-oil federal exclusion leaves possible state/local tank regulation. EPA-UST.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Rivals assert preemption, mandatory federal conversion, or invented closure permit; use plausible federal/state applicability misconceptions."
+    ]
+  },
+  {
+    "id": "R153",
+    "answer": "D",
+    "reason": "Surface title may be separate from mineral estate; oil lease authority depends on mineral ownership. DRE5 divided interests.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R154",
+    "answer": "A",
+    "reason": "Principal withdrawal is revocation; agent withdrawal is renunciation and lapse is expiration. DRE10.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R155",
+    "answer": "D",
+    "reason": "Direct communicated claim is actual notice; recorded instruments impart constructive notice. DRE5.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R156",
+    "answer": "D",
+    "reason": "Professional liability addresses negligent professional services. SBA insurance guidance.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R157",
+    "answer": "D",
+    "reason": "Obsolete/inconvenient layout is functional loss rather than physical wear or external influence. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R158",
+    "answer": "A",
+    "reason": "Improvement contribution is market value added, not owner's expenditure. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R159",
+    "answer": "B",
+    "reason": "Unpaid accrued interest capitalized into balance is negative amortization. CFPB-TERMS.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R160",
+    "answer": "D",
+    "reason": "Acquiring adjacent land does not itself enlarge easement; recorded grant scope governs claimed benefit. DRE5.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R161",
+    "answer": "B",
+    "reason": "Pension must not be categorically excluded; amount and expected continuity remain relevant. CFPB-ECOA.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: All rivals categorically exclude pension or substitute age; one balanced underwriting answer dominates."
+    ]
+  },
+  {
+    "id": "R162",
+    "answer": "D",
+    "reason": "Informed adoption of previously unauthorized transaction is ratification. DRE10.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R163",
+    "answer": "C",
+    "reason": "EPA advises testing lowest regularly usable level planned by buyer, including basement. EPA radon guide.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R164",
+    "answer": "C",
+    "reason": "Financing upfront premium adds to loan principal and total borrowing cost. CFPB-MI.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Rivals imply eliminated insurance, replaced mortgage, or lower principal from financing a charge."
+    ]
+  },
+  {
+    "id": "R165",
+    "answer": "D",
+    "reason": "Tax escrow contribution can rise despite fixed note rate. CFPB-ESCROW.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R166",
+    "answer": "A",
+    "reason": "Related-party discount prompts non-arm-length sale-condition analysis. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R167",
+    "answer": "A",
+    "reason": "EPA generally advises leaving undamaged, undisturbed suspected asbestos alone and monitoring. EPA-ASBESTOS.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R168",
+    "answer": "C",
+    "reason": "Agent retaining excess over seller minimum profits from depressing that minimum. DRE10 net-listing conflict discussion; not a statement that net listings are legal everywhere.",
+    "confidence": "high",
+    "findings": [
+      "Jurisdiction guard: conflict analysis is valid without claiming net listings are lawful in every state."
+    ]
+  },
+  {
+    "id": "R169",
+    "answer": "B",
+    "reason": "EPA has no federal indoor mold-spore limit against which this claim could certify compliance. EPA-MOLD.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R170",
+    "answer": "D",
+    "reason": "Claimant's option terms/validity directly address unrecorded rights; recorded title/value alone do not resolve them. DRE5 notice/title investigation.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R171",
+    "answer": "B",
+    "reason": "Abstract summarizes recorded title history rather than underwriting covered loss. DRE5.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R172",
+    "answer": "B",
+    "reason": "Practicable less-damaging alternative must be considered before compensatory mitigation. EPA-CWA404.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R173",
+    "answer": "C",
+    "reason": "Nonrejecting inquiry differs from an acceptance conditioned on changed terms. DRE6 offer termination/acceptance.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R174",
+    "answer": "A",
+    "reason": "Blanket mortgage partial-release clause frees individual parcels while others remain security. DRE12.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R175",
+    "answer": "C",
+    "reason": "Express receipt deadline governs; 1 p.m. arrival misses noon despite 11 a.m. dispatch. DRE6 manner of acceptance.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R176",
+    "answer": "D",
+    "reason": "Fee base is collected rent: 90000 x .07 = 6300, not 100000 x .07.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R177",
+    "answer": "D",
+    "reason": "Warranty deed principally conveys ownership; mortgages and deeds of trust secure debt, note evidences it. DRE7/12.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R178",
+    "answer": "B",
+    "reason": "12000 / 150000 x 100 = 8% cash-on-cash return.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R179",
+    "answer": "C",
+    "reason": "Intestacy without heirs can cause escheat to state. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R180",
+    "answer": "C",
+    "reason": "Timely contractual cancellation uses agreed right; breach is not established merely because deal ends.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R181",
+    "answer": "A",
+    "reason": "NOI precedes financing debt service; mortgage principal and interest are excluded from property operating expenses. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R182",
+    "answer": "B",
+    "reason": "Layout problem is functional; 30000 cure cost exceeds 18000 value benefit by 12000, making it economically incurable. DRE15.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R183",
+    "answer": "B",
+    "reason": "Closed metes-and-bounds traverse returns to point of beginning. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R184",
+    "answer": "B",
+    "reason": "SFHA plus government-backed mortgage triggers flood insurance requirement. NFIP eligibility.",
+    "confidence": "high",
+    "findings": [
+      "Distractor weakness: Rivals substitute disaster declaration, acknowledgment, or ordinary homeowners policy; underlying knowledge is legitimate but distractors are weak."
+    ]
+  },
+  {
+    "id": "R185",
+    "answer": "C",
+    "reason": "Race-directed neighborhood selection rather than buyer criteria is racial steering. DOJ-FHA.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R186",
+    "answer": "C",
+    "reason": "One point is 1% of principal; 320000 x .0125 = 4000.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R187",
+    "answer": "D",
+    "reason": "Changing 360000 offer price to 375000 proposes new terms requiring buyer assent. DRE6.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R188",
+    "answer": "B",
+    "reason": "Specific principal authorization is express, unlike authority inferred from customary incidental tasks. DRE10.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R189",
+    "answer": "D",
+    "reason": "Effective age reflects condition/usefulness rather than elapsed years. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R190",
+    "answer": "A",
+    "reason": "Annual rent = 12 x monthly rent; same monthly GRM therefore yields 12 x correct estimate.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R191",
+    "answer": "B",
+    "reason": "Immobility means parcel cannot be physically relocated. DRE4/15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R192",
+    "answer": "C",
+    "reason": "Modern equivalent utility is replacement cost, not exact reproduction. DRE15.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R193",
+    "answer": "A",
+    "reason": "Thirty-year payment amortization leaves unpaid balance at five-year maturity, requiring balloon. CFPB-TERMS.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R194",
+    "answer": "B",
+    "reason": "Gross adjustment = abs(40000) + abs(-40000) = 80000; net = 0.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R195",
+    "answer": "C",
+    "reason": "Neutral holder follows affected principals' agreed instructions, not unilateral seller diversion. DRE8.",
+    "confidence": "high",
+    "findings": []
+  },
+  {
+    "id": "R196",
+    "answer": "B",
+    "reason": "Initial escrow establishes balance for later tax/insurance bills; prepaid premium pays current coverage. CFPB-CD-EXPLAIN.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R197",
+    "answer": "A",
+    "reason": "Custom fit to unique recess illustrates adaptation to premises. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R198",
+    "answer": "B",
+    "reason": "Lot/block plus referenced recorded map identifies subdivision parcel through plat. DRE4.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R199",
+    "answer": "C",
+    "reason": "Agreed party substitution plus express discharge is novation, not mere assignment. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  },
+  {
+    "id": "R200",
+    "answer": "A",
+    "reason": "Agreed closing-date extension changes an existing term while preserving bargain: modification. DRE6.",
+    "confidence": "high",
+    "findings": [
+      "Depth: direct vocabulary, rule recall, or one-step classification; not inherently defective, but not evidence of multi-step analysis."
+    ]
+  }
+]

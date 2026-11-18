@@ -1,0 +1,1192 @@
+6 Transfer of Interests in Real Property 
+ 
+CONTRACTS IN GENERAL 
+Probably no other area of the law is as important to real  estate brokers, salesperso ns, and parties transferring 
+real estate than that of contracts. Nearly every consequential transaction in cludes one or more contracts. It is 
+important, therefore, to understand their nature and to be well acquainted with some of the broad rules 
+governing contract creation, operation and enforcement. 
+ 
+In this chapter we consider contracts in general. Chapter 7 focuses on contracts used most frequently in the real 
+estate business. 
+Contract Defined 
+Any term as broad in its application as “contract” is di fficult to define with precision. California’s Civil Code 
+states the following: “A contract is an agreement to do or not to do a certain thing.” The American Law Institute 
+offers this definition: “A contract is a promise or a set of promises for the breach of which the law gives a 
+remedy, or the performance of which the law in some way recognizes as a duty.” Still another authority on the 
+subject, Corbin, submits a definition which combines the foregoing two versions: “A contract is an agreement 
+between two or more persons consisting of a promise or mutual promises which the law will enforce, or the 
+performance of which the law in some  way will recognize as a duty.” The latter will serve as our working 
+definition, and its meaning will be clarified later when we analyze the essential elements of a contract. 
+Classification. It will be helpful to review certain terms which are commonly used to classify contracts. With 
+reference to manner of creation, a contract may be express or implied.
+* 
+In an express contract, the parties declare the terms and put their intentions in words, either oral or written. In an 
+implied contract, however, the agreement is shown by acts and conduct rather than words. (In a hurry, you enter 
+the corner drugstore, where you have an account, pick up a pack of gum, wave it at the clerk; the clerk nods and 
+you leave. There is an implied contract that you will pay for the gum later.) 
+With reference to content of the agreement, a contract may be bilateral or unilateral. A bilateral contract is one 
+in which the promise of one party is given in exchange for the promise of the other party. (e.g., A tells B, “I’ll 
+give you $300 if you will promise to paint my house” and B so promises.) In a unilateral contract, on the other 
+hand, a promise is given by one party to induce some actual performance by the other party. The second party is 
+not bound to act but if the second party acts, the former is obligated to keep the promise. (e.g., A offers a reward 
+of $100 to anyone who will find and return A’s lost dog. B does not make any promise but just happens to find 
+and return the dog. A must pay B $100.) 
+With reference to extent of performance, a contract may be executory or executed. In an executory contract, 
+something remains to be done by one or both parties. In an executed contract, both parties have completely 
+performed. 
+Finally, with reference to legal effect, contracts may be classified as void, voidable, unenforceable, or valid. A 
+void agreement is not a contract at all.  It lacks legal effect (e.g., an agreement to commit a crime; or, in 
+California, an attempt by a minor under 18 to make a contract relating to real property). A voidable contract is 
+one which is valid and enforceable on its face, but one wh ich one or more of the parties may reject (e.g., certain 
+contracts of minors are voidable at the option of the minor; a contract induced by fraud may be voided by the 
+victim). An unenforceable contract is valid, but for some reason cannot be proved or sued upon by one or both 
+of the parties (e.g., a contract that cannot be enforc ed because of the passage of time under the statute of 
+limitations). A valid contract is one that is binding and enforceable. It has all the e ssential elements required by 
+law. 
+                                                     
+ 
+* Contract implied in fact should be distinguished from contract implied in law. A contract implied in law evidences 
+obligations created by law for reasons of justice. A contract implied in fact would be the foundation of an employee’s claim 
+against a deceased employer’s estate for overtime wages. 
+CHAPTER SIX 
+ 
+88
+ESSENTIAL ELEMENTS A OF CONTRACT 
+Under the California Civil Code the existence of a contract requires: 
+1. Parties capable of contracting; 
+2. Mutual consent; 
+3. Lawful object; and 
+4. Sufficient consideration. 
+It may be helpful to add a fifth requirement which is present only in certain contracts: a proper writing. 
+Parties Capable of Contracting 
+For a valid contract, there must be two or more partie s who have at least limited legal capacity. Generally 
+everyone is fully capable of contrac ting, except persons who are subject to certain limitations [unemancipated 
+minors, persons of unsound mind, aliens, and persons deprived of civil rights (e.g., convicts)]. 
+Minors. A minor is a person under the age of 18 years. Under the Emancipation of Minors Law, a minor is 
+either unemancipated or emancipated (set free from parental control/supervision). 
+An unemancipated minor (hereafter “minor”) cannot give a delegation of power, make a contract relating to real 
+property or any interest therein, or make a contract relating to any personal property not in the minor’s 
+immediate possession or control. With certain statutory exceptions, a minor may disaffirm any contracts entered 
+into during minority or for a reason able time after reaching majority. In case of a minor’s death within that 
+period, the minor’s heirs or personal representatives may disaffirm any contract into which the minor entered. 
+A minor is deemed incapable of appointing an agent; therefore, a delegation of authority (e.g., a power of 
+attorney) is void. A real estate broker can not serve as agent of a minor to buy or sell. A broker can represent an 
+informed adult in dealing with a minor, but the client assumes the risk of having the contract voided. However, 
+one may negotiate in real property with or for a minor only through a court-appointed guardian. For the minor’s 
+protection, the guardian needs court approval to carry out such negotiations. 
+Emancipation of Minors Law. Under this law (Family Code Sections 7000, et seq.), emancipated minors have 
+certain powers to deal with real pr operty and are considered as being over the age of majority for certain 
+purposes, including the following: entering into a binding contract to buy, sell, lease, encumber, exchange, or 
+transfer any interest in real or personal property; conveying or releasing interests in property. 
+An emancipated minor is a person under 18 years of age who has entered into a valid marriage (even though 
+terminated by dissolution), is  on active duty with any of the armed forces of the United States of America, or  
+has received a declaration of emancipa tion by petitioning the superior cour t of the county where he or she 
+resides. 
+Brokers dealing with minors must proceed cautiously and should seek the advice of their attorney. 
+Incompetents. California law provides that after the incapacity of a person of unsound mind has been judicially 
+determined, no contract can be made with such person until restoration to capacity. Similarly, a person who is 
+entirely without understanding but has not been judicially declared incompetent has no power to contract. 
+When dealing with incompetents con cerning real property, proper procedure requires an appointment of a 
+guardian and court approval of the guardian’s acts. 
+Note: Both minors or incompetents, however, may acquire title  to real property by gift or by inheritance. They 
+may convey, mortgage, lease or acquire real property pursuant to a superior court order obtained through 
+appropriate guardianship or conservatorship proceedings. 
+Aliens. In California, resident or nonresident aliens have essentially the same property rights as citizens. Section 
+671 of the Civil Code provides that “any person, whether citizen or alien, may take, hold, and dispose of 
+property, real or personal, within this state.” Federal law, however, provides certain restrictions on the property 
+rights of aliens. 
+Convicts. Persons sentenced to imprisonment in state prisons are deprived of such of their civil rights as may be 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+89
+necessary for the security of the institution in which th ey are confined and for the reasonable protection of the 
+public. 
+Convicts do not forfeit their property. They may acquire property by gift, inheritanc e or by will, under certain 
+conditions, and they may convey their property or acquire property through conveyance. 
+Individual proprietors. The bulk of the nation’s business is conducted by individual proprietors, ordinary 
+partnerships, corporations, and, more recently, by limited partnerships and limited liability companies. The 
+first category does not  present any special problems. The owner who is a sole proprietor takes title in his or her 
+own name, or, if married, the spouse may join as a grantee. 
+Partnership. In a partnership, two or more persons carry on a business as co-owners. The partnership may exist 
+if such intention can be proven whether or not the partners have reduced their agreement to a formal writing. 
+The more important characteristics of a partnership are the following: its lack of  separate capacity to deal 
+independently from its members (with certain exceptions  hereafter noted); customary equal participation of 
+members in management; co-ownership of partnership assets; individual interest of each partner in profits and 
+surplus; and the mutual agency relationship between part ners making each the agent of the others insofar as 
+partnership business is concerned. 
+Partnership property consists of the originally invest ed and subsequent partnership acquisitions. Usually, the 
+best practice in investing in property usually is to take title in the name of the partnership itself. However, title 
+may also be taken in the individual name of one or more partners, or in the name of a third party as trustee for 
+the partnership. Although any authorized partner may then dispose of the property, it is customary for all 
+partners to execute the instrument of transfer. 
+If property is acquired in the partnership name, it should not be transferred until a “GP-1 form” is filed with the 
+Secretary of State and then recorded  in the recorder’s office showing the names of the partnership and its 
+members. 
+The Uniform Partnership Act of 1994 became effective January 1, 1997. All partnerships formed prior to 
+January 1, 1997 were governed by the old Uniform Partnership Act (Corporations Code Section 15001, et seq.) 
+until January 1, 1999. On that date, the old Uniform Pa rtnership Act was repealed and all partnerships were 
+governed by the Uniform Partnership Act of 1994 (Corporations Code Section 16100, et seq.). 
+Of course, if title to real property is in an individual ’s name, both the individual and his or her spouse should 
+sign the instrument of transfer. 
+In order to enjoy some of the benefits of incorporation while retaining the partnership form, a possibility is to 
+create a limited partnership. This can only be achieved by filing a formal certificate. Limited partners may not 
+allow their names to be used in the business and may not participate in the control of the business. If all legal 
+requirements are met, the limited partners are not responsible for partnership debts beyond their investment. But 
+at least one partner must be a general partner with unlimited liability. 
+Limited liability companies. The Beverly-Killea Limited Liability Company Act (California Corporations 
+Code Sections 17000–17705) allows th e formation of limited liability co mpanies. It became effective, in 
+September of 1994. 
+To form a limited liability company, two or more persons must enter into an operating agreement and must 
+execute and file articles of organization with the California Secretary of State. 
+The end of the name of a limited liability company must contain, either the words “limited liability company” 
+or the abbreviation “LLC”. The words “limited” and “company” may be abbreviated to “Ltd.” and “Co.,” 
+respectively. 
+Subject to limitations contained in the articles of organization and compliance with other applicable laws, a 
+limited liability company may engage in any lawful business activity, except the banking, insurance, or trust 
+company business. (Corporations Code Section 17002) 
+Corporations Code Section 17101 sets forth the liability of members of a limited liability company. In part, the 
+liability parallels that of shareholders in a corporation,  while the company is treated as a partnership for tax 
+purposes. 
+CHAPTER SIX 
+ 
+90
+Corporations. The more important characteristics of a corporation are the following: separate capacity to deal 
+with property independently from its members; centralized control in a board of directors; liability of 
+shareholders normally limited to the amount of their investment; freely transferable shares; and continued 
+existence regardless of death or retirement of its shareholders. 
+Although a corporation may take title to property in its own name, it is an “artificial person” created by law, and 
+must function through human agents. Accordingly, corporate control is vested in the board of directors and so it 
+becomes important to have some evidence of the board’ s decision in connection with the proposed property 
+transaction. The decisions of the board are usually in the form of resolutions authorizing certain officers to deal 
+with the corporate property. It should be noted that since a corporation has perpetual existence, it is not 
+permitted to take title to property in joint tenancy with right of survivorship. 
+Note: Some corporations are organized on a nonprofit basis. Members of such a nonprofit corporation are not 
+personally liable for the debts or obligations of the corporation, and in many respects such an organization is 
+similar in operation to a regular corporation. A board of directors controls its property and conducts its affairs. 
+The corporation may enter into contracts as well as acquire  and dispose of real or personal property in its own 
+name. 
+Nonprofit associations. Sometimes transactions in real property will involve nonprofit associations: loosely 
+knit, unincorporated associations of natural persons for religious, scientific, social, educational, recreational, 
+benevolent or other purposes. Members of such associations are not personally liable for debts incurred in 
+acquisition or leasing of real property used by the asso ciation, unless they specifically assume such liability in 
+writing. These nonprofit organizations may, by statute, hold such property in the group name as is necessary for 
+business objects and purposes. Also, they may  hold nonessential property for 10 years. 
+When an unincorporated association proposes to dispose of property, the conveyance should , in the case of 
+benevolent or fraternal societies or associations, be ex ecuted by its presiding offi cer and recording secretary 
+under seal after resolution is duly adopted by its governing body. In the case of other incorporated associations 
+for which no other provision is made by statute, conveyances may be executed by the president or other head, 
+and secretary, or by other specific officers so authorized by resolution.  Such an association may record a 
+statement setting forth its names and the persons author ized to execute conveyances . California Corporations 
+Code Sections 20003 through 24007 govern unincorporated associations organized under California law. 
+Personal representative. A final category of parties to contracts, and one of considerable importance, is that of 
+personal representatives of decedents . A person who leaves a will may name an executor or executrix to carry 
+out its provisions. If a person dies intestate or fails to name an executor, the probate court will appoint an 
+administrator to administer the estate. The acts of these officials are generally subject to court supervision. Real 
+estate agents usually come in contact with executors an d administrators when the latter are interested in selling 
+a parcel of real estate belonging to the estate. 
+Mutual Consent 
+The second element of a valid contract  is that the parties who have capacity to contract shall properly and 
+mutually consent or assent to be bound. This mutual consent is normally evidenced by an offer of one party and 
+acceptance by the other party. An offer expresses the offeror’s willingness to enter into the contract. It must be 
+communicated to the offeree. The offer must also manifest a contractual intention. There need not be a true 
+“meeting of the minds” of the parties, for they are bound only by their apparent intentions that are outwardly 
+manifested by words or acts. Courts cannot read minds, and secret or unexpressed intentions, hopes and 
+motivations are immaterial. However, the assent must be genuine and free, and if it is clouded or negated by 
+such influences as fraud or mistake, the contract may be voidable at the option of one or both parties, depending 
+on the circumstances. 
+When negotiating a contract, some of the terms might be left open for future determination, or there might be a 
+condition which must be met before the parties become obligated (this may be called a “condition precedent”). 
+In either of these situations, it is usually held that only preliminary negotiations have taken place, mutual 
+consent has not been reached and a binding contract has no t come into existence. In such cases even the courts 
+cannot guess what the parties will mutually agree upon. 
+Definite contract terms. Fi
+ nally, the offer must be definite and certain  in its terms. The precise acts to be 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+91
+performed must be clearly ascertainable. Courts cannot make contracts for the parties, nor fix  terms and 
+conditions. The offer  must be “nonillusory” in character, meaning it must actually bind  the offeror upon 
+acceptance. 
+If the offeror can cancel or withdraw at pleasure, with out reasonable notice, the offer is illusory. Another 
+example is an offer/promise completely within the offeror’s control to perform or not to perform, such as an 
+offer to buy a property “contingent upon obtaining a $100,000 loan.” Without more conditions and specificity, 
+the offeror might not even apply for a loan. To avoid illu sion, clauses in the contract should carefully specify 
+the details of the condition and should contain promises by both parties to provide some semblance of 
+mutuality. A clause in a deposit receipt conditioning the offer upon the obtaining of a loan by the offeror should 
+include the amount of the loan the buyer desires; interest rate; monthly installments; how secured; type (i.e., 
+FHA, VA or conventional); an agreem ent by the buyer to use best effort s to procure such a loan; and an 
+agreement by the seller to cooperate in such efforts. 
+On many occasions, California courts have refused to en force contracts because of uncertainty. In one case, a 
+broker provided in a deposit receipt that  there was to be a first deed of tr ust in a fixed amount to a bank, and a 
+second to the seller for the balance. Interest in each case was fixed. The contract stated “total monthly payments 
+including interest, to be $95.” The court denied specific performance because the deposit receipt was silent as to 
+what portion of the $95 was to be paid to the bank and what portion to the seller. 
+Another agreement was drawn which was certain in all particulars except that it provided that the balance of the 
+purchase price was to be evidenced by a first and seco nd mortgage. The agreement was silent as to the amount 
+of each mortgage and the uncertainty was critical beca use the parties disagreed as to the amounts of each 
+mortgage. The court refused to enforce the agreement. 
+Another contract was found to be too uncertain because it was silent as to the rate of interest on the deferred 
+balance and as to the date of maturity of the indebtedness.  
+Uncertainty and insufficiency were found in a form which was used containing a provision that an “extension of 
+time for 30 days may be granted by (blank)”. Since either party could extend, the court held that no one was in 
+fact authorized. 
+Provisions in a contract that state the property is to be improved with streets, water system, other utilities, and 
+paved boulevards are too indefinite for enforcement. The court will not determine where the streets are to run, 
+how many there are to be, or the area to be covered or how they are to be constructed. 
+Description of property. The problem of certainty and definiteness may be acute in connection with land 
+identification. A broker may not have the deed by which the owner acquired property, or the title report or 
+policy connected with it. The contract must, however, contain such a description, or at least include a unique 
+aspect of the property agreed to be sold so that it can be exactly ascertained. Where the broker has a former title 
+policy or a preliminary report, he should refer to th e description by the title company’s name and policy 
+number. From such a mention or reference, it can be ascer tained what property is meant. Oral evidence may be 
+used in court for the purpose of identifying the description, but not for the purpose of ascertaining and locating a 
+missing description or one that is too uncertain to be identified. 
+For example, it is very common to describe property by the street and house number, i.e.,: No. 19, 10th Street, 
+city, county and state. Usually, this is sufficient. Howeve r, if the seller has a large property with more than one 
+building on it, or an adjoining lot, this description would be insufficient. “My house and lot on 10th Street, 
+between A and B Streets” would be sufficient provided the owner did not have any other house and lot on that 
+block. “My land consisting of 96 acres located about four miles northeast from Porterville, California” was held 
+sufficient to enable th e court to determine what land was meant, because that was all that the seller had in that 
+vicinity. 
+Termination of offer. The hope of the offeror is that the other pa rty will accept and a contract will be formed. 
+But the offeror does not want to wait indefinitely, and need not. There are five ways to terminate an offer: 
+1. Lapse of Time. The offer is revo ked if the offeree fails to accept it w ithin a time period prescribed in the 
+offer. If the offer does not include a deadline fo r acceptance, the lapse of a reasonable time without 
+communication of acceptance may cause the offer to be considered to have been revoked. What is a 
+reasonable time is a question of fact dependent upon the circumstances. 
+CHAPTER SIX 
+ 
+92
+2. Communication of Notice of Revocation. This can be done anytime before the other party has 
+communicated acceptance. It is effective even if the offe ror said the offer would be kept open for a stated 
+period of time which has not yet elapsed. If the offeree pays to keep the offer open for a prescribed period 
+of time, an option is created, and the offeror must abide by its terms. 
+ Sometimes an offer is made to sell property and the person to whom the offer is made later acquires reliable 
+information that the property has been sold to another party. This, too, constitutes a revocation. 
+3. Failure of offeree to fulfill a condition prescribed by the offeror or to accept in a prescribed manner. If the 
+offeree makes a qualified acceptance (as by changing the price), in effect a counteroffer is made and the 
+original offer is cancelled. It canno t later be accepted, unless revived by the offeror repeating it. Thus the 
+roles of the parties are exchanged, a nd the counteroffer itself may then be terminated like an original offer. 
+It should be noted here that this discussion of offe r and acceptance, and the rest of the discussion as to 
+formation of contracts, may not apply to contracts between merchants for the sale of goods. These are 
+governed by the California Uniform Commercial Code. 
+4. Rejection by the offeree. An unequivocal rejection ends the offer, but simple discussion and preliminary 
+bargaining do not do so when they involve no more than inquiries or suggestions for different terms. 
+5. Death or insanity of the offeror or offeree revokes the offer. 
+Acceptance. Acceptance is the proper assent by the offeree to the terms of the offer. 
+The person to whom the offer is made must have know ledge of it before he or she can accept. Acceptance by 
+anyone other than the offeree is not po ssible. Most contracts are bilateral,  but interesting problems arise in 
+connection with the less common unilateral contract, which is when the offeror asks for action, not a promise. 
+Normally, when the requested act is performed, the offe r is automatically accepted. But if the offeree does not 
+intend an act to be an acceptance, or if there is no knowledge of the offer, there can be no acceptance and no 
+contract. This situation may occur when one returns a lost dog without seeing the ads offering a reward for its 
+return. 
+Acceptance must be absolute and unqualified, because if it modifies the terms of the offer in any material way, 
+it becomes a counteroffer. As already noted, this terminates the original offer. Indeed, if the acceptance is too 
+late or otherwise defective, the person making the offer cannot waive the delay or defect and treat the 
+relationship as a binding contract. 
+Acceptance must be expressed or communicated, though it may be sufficient without actually being received by 
+the person making the offer. Generally, silence is not re garded as an acceptance of an offer, because the party 
+making the offer cannot force the party to whom an offer is made to make an express rejection. Silence may 
+constitute an acceptance when the circ umstances or previous course of d ealing with a party places the party 
+receiving the offer under a duty to act or be bound. Acceptance may be made by implication to the 
+consideration tendered with an offer. 
+Acceptance of an offer must be in the manner specified in the offer, but if no particular manner of acceptance is 
+not specified, then acceptance may be by any reasonable and usual mode. 
+A contract is made when the acceptance is mailed or pu t in the course of transmission by a prescribed or 
+reasonable mode (e.g., by deposit of a telegram for transmission). This is so even though the letter of acceptance 
+is lost and never reaches the party making the offer, because the acceptance has been placed in the course of 
+transmission by the offeree. 
+Genuine assent. The final requirement for mutual consent is that the offer and acceptance be genuine. The 
+principal obstacles to such genuine or real assent are fraud, mistake, menace, duress or undue influence. If any 
+one of these obstacles is present, the contract may be voidable and a party to the alleged contract may seek 
+rescission (restoring both parties to their former positions), dollar damages or possibly reformation of the 
+contract to make it correct. 
+Fraud. Fraud may be either actual or constructive in nature. Normally, fraud exists when a person 
+misrepresents a material fact while knowing it’s not true, or does so with careless indifference as to its veracity. 
+A person must misrepresent with the intent to induce the other person to enter the contract, and the other must 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+93
+rely thereon in entering the contract. “Material fact” is defined as an impo rtant fact which significantly affects 
+the party’s decision to enter into the contract. 
+Civil Code Section 1572 lists the following five acts which would be deemed actual fraud when done by a party 
+to a contract or with his or her conn ivance with intent to induce another to enter into the contract, or even 
+simply to deceive the other party: 
+1. The suggestion, as a fact, of that which is no t true, by one who does not believe it to be true; 
+2. The positive assertion, in a manner not warranted by th e information of the person making it, of that which 
+is not true, though the person believes it to be true; 
+3. The suppression of that which is true, by one having knowledge or belief of the fact; 
+4. A promise made without any intention of performing it; or, 
+5. Any other act intended to deceive. 
+Ordinarily, misrepresentation of law does not amount to  actionable fraud, because everyone is presumed to 
+know the law. Nevertheless, this may be actionable fraud where one party uses superior knowledge to gain an 
+unconscionable advantage, or where the parties occupy some sort of confidential relationship, even though the 
+guilty party is not a strict fiduciary. 
+Constructive fraud. Constructive fraud as defined in the Civil Code  may first consist of first, any breach of 
+duty which, without an actual fraudulent intent, gains an advantage for the person in fault or anyone claiming 
+under that person by misleading another to the other’s prejudice or to the prejudice of anyone claiming under 
+the other person.  
+Second, it may consist of any such act or omission as the law specifically declares to be fraudulent without 
+respect to actual fraud. The element of reliance is esse ntial, and where it is shown that no commitments were 
+made until independent investigation by others, there can be no action claiming fraud. Negligent 
+misrepresentation has also been held to be a species of fraud. 
+A distinction should be made between fraud in the in ception or execution, and fraud in the inducement of a 
+contract. For example, if the promisor knows what he or she is signing and the consent is induced by fraud, the 
+contract is voidable by the promisor; but if the fraud goes to the inception or execution of the agreement so that 
+the promisor is deceived as to the nature of his or her act and actually does not know  what is being signed, and 
+does not intend to enter into a contract at all, it is void. A voidable contract is binding until rescinded. 
+Conversely, a void contract needs no formal act for rescission. 
+If one signs a contract withou t reading it and therefore fails, through ca relessness or negligence, to familiarize 
+oneself with the contents of a written contract prior to its execution, relief is denied. The court may reform or 
+cancel the contract, where such failure or negligence to sign the instrument without reading it, is induced by 
+false representation and fraud made by the other party in order to make provisions that are different than those 
+set out in the instrument. 
+A party to a contract who is guilty of fraud in its inducem ent is not relieved of the effects of the fraud by any 
+stipulation in the contract that states either that no representations have been made or that any right which might 
+be grounded upon them is waived. Such a stipulation or waiver will be ignored, because the fraud renders the 
+whole agreement voidable, including the waiver provisions. 
+False representations. Where false representations are made by an agent and the contract contains a recital 
+limiting the agent’s authority to make representations, the innocent principal may, by certain stipulations, be 
+relieved of liability in a court action for damages for fraud and deceit. The defrauded third party may 
+nevertheless rescind the contract. The guilty agent may, of course, be liable in damages for the wrongful act. 
+Mistakes. Another possible obstacle to genuineness of assent is mistake. Where both parties are mistaken as to 
+the identity of the subject matter of the contract, there can be no contract. Where the subject matter of the 
+agreement has, unknown to th e parties, already ceased to exist, so that performance of the contract would be 
+impossible, there is no contract. 
+CHAPTER SIX 
+ 
+94
+Mutual agreement as to the subject matter is the basi s of a contract. If the parties to an agreement consent 
+thereto, a contract results. However, the contract may be  voidable if there is a substantial mistake as to some 
+basic or material fact which induced the complaining part y to enter into the contract. Negligence of the injured 
+party does not in itself preclude release from mistakes, unle ss the negligence is gross, such as where the party 
+simply fails to read the  agreement. One who accepts or signs an instru ment, which is on its face a contract, is 
+deemed to assent to all of its terms and cannot escape lia bility on the ground of not having read it. This is true 
+only in the absence of influences such as fraud, undue influence, or duress. 
+Mistakes are classified in the Civil Code  as mistakes of fact or of law. A mistake of fact is one consisting of 
+ignorance or forgetfulness of a fact material to the contract, but which is not caused by the neglect of a legal 
+duty on the part of the person making it. Or it may consist of a mistaken belief in the existence of a thing 
+material to the contract, or a belief in the past existence of such a thing, which has not existed. A mistake of law, 
+on the other hand, is described as one which arises from a misunderstanding of the law by all parties involved, 
+all making substantially the same mistake while thinking they knew and understood the law. 
+A mistake may also be a misunderstanding of law by one party, which the other party is aware of but does not 
+rectify. 
+Duress, menace, undue influence. Sometimes a contract may be rendered voidable because it was entered into 
+under the pressure of duress, menace, or undue influence. All three, in effect , deprive the victim of the exercise 
+of free will, and so the law permits such person to void the contract, as well as other remedies under the law. 
+Duress involves coercion or confinement. While duress is technically the unla wful confinement of persons or 
+property, modern case law has expanded duress to include unlawfully depriving a person of the exercise of free 
+will. Economic compulsion or duress may result in a finding that a contract provision is unconscionable. 
+Menace consists of a threat to commit dure ss, including the threat of unlawful and violent injury to a person or 
+the person’s character. 
+Undue influence is unfair advantage taken by someone who has the confidence of another, or who holds a real 
+or apparent authority over another. It may involve taking an unfair advantage of another’s weakness of mind, or 
+taking a grossly oppressive and unfair advantage of anot her’s necessities or distress. Undue influence is most 
+frequently encountered in connection with contracts be tween persons in confidential relationships, where the 
+victim is justified in assuming the other party will not act contrary to the victim’s welfare. The relationships that 
+usually fall within this rule include trustee and benefici ary, broker and principal, attorney and client, guardian 
+and ward, parent and child, husband and wife, physician and patient, and employer and employee. 
+Lawful Object 
+Assuming now that parties are capable of contracting and have properly manifested their consent through an 
+offer and acceptance, the validity of their agreement might still be attacked on grounds of legality. The contract 
+must be legal in its formation and operation. Both its consideration and its object must be lawful. The object 
+refers to what the contract requires the parties to do or not to do. Where the contract has but a single  object, and 
+that object is unlawful in whole or in part, or performance is impossible, the contract is void. If there are several 
+distinct objects, the contract is norm ally valid as to those objects which are lawful. An object is unlawful when 
+it is contrary to an express provision of the law, or contrary to the policy of express law. 
+In general, the law will not lend its resources to either party involved in an illegal contract. Thus, if a contract is 
+executory and illegal, neither party may enforce it. If it  is executed, neither party may rescind and recover 
+consideration. But sometimes the law which was violated was designed to protect one of the parties; or the 
+parties are not equally blameworthy; or when one party repents and calls the deal off before any part of the 
+illegal object has been realized. In such cases, the law will provide appropriate relief. 
+Common violations. The objects and consideration of a contract must be legal and cannot violate some specific 
+prohibition of the law. If such violation does occur, its effect upon the contract may depend upon the particular 
+statute involved. Two types of situations i
+n the real estate field involving statutory violations are: 
+1. Contracts of unlicensed “brokers” or “general contr actors.” These persons are not permitted to enforce their 
+contracts. 
+2. Forfeiture clauses in deposit recei pts, contracts of sale and leases. 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+95
+A contract clause which specifies a fixed amount of damages in the event of a breach is known as a liquidated 
+damages clause. Except as discussed below, a liquidate d damages clause is presumed valid, unless the party 
+seeking to invalidate the provision proves that it was unr easonable under the circumstances existing at the time 
+the contract was made. 
+A liquidated damages clause is void if the liquidated dama ges are sought to be recovered from (l) a party to a 
+contract for the retail purchase or rental of personal property or services primarily for that party’s personal, 
+family, or household purposes; or (2) a party to a lease of real property for use as a dwelling by that party or his 
+or her dependents. 
+Special rules apply to liquidated damages provisions in contracts for the purchase of residential real property. 
+These rules are explained below in the Section entitled “REAL ESTATE CONTRACTS.” 
+Special rules apply to liquidated damages clauses in construction contracts with certain government entities, 
+making provisions for amounts to be paid for each day of delay in construction valid unless manifestly 
+unreasonable at the time the contract was made.) 
+3. Contracts by which one is restrained from engagi ng in business may be void, although a person selling 
+goodwill may promise the buyer not to compete within a reasonably limited area for a specific period of 
+time. 
+4. Persons may not generally avoid responsibility for their own fraud or negligence merely by so providing in 
+a contract. 
+5. A contract calling for the payment of interest in excess of the California Constitution’s current limits may 
+be usurious depending upon the identity of the lending entity and the purpose of the loan. If such a contract 
+is usurious, that portion of the contract relating to the payment of interest is void. 
+6. In addition to the foregoing, brokers must be careful to comply with the numerous regulatory measures 
+incorporated in the Real Estate Law. Specific viola tions may prevent enforcement of a listing contract. It 
+should be noted that violations of  law not only affect the enforceability  of the contract involved, but may 
+also subject the violator to criminal punishment. 
+Sufficient Consideration 
+Even if the agreement meets all the requirements of a valid contract already discussed, it may fail because of the 
+lack of sufficient consideration. In general, every executory contract requ ires consideration. The consideration 
+may be either a benefit conferred, or agreed to be conferred, upon the person making the promise, or any other 
+person, or a detriment suffered or agreed to be suffered. It may be an act of forbearance or a change in legal 
+relations. Consideration is the price bargained for and paid for a promise, and it may, of course, be a return 
+promise. If a valid consideration exists, the promise is binding even though some motive other than obtaining a 
+consideration induced the promisor to enter into the contract. 
+Ordinarily, the nature of the consideration is reflected in the written agreement of the parties. The consideration 
+must have some value. A purely moral obligation may un der some circumstances be consideration. There is no 
+requirement of adequacy to make the contract enforceable. Thus, an option to purchase valuable property may 
+be given for consideration of one dollar or some other nominal sum. It is only in an action for specific 
+performance that the amount is important, and in this event the equitable remedy will be denied unless an 
+adequate consideration is proved. Also, gross inadequacy of consideration may be a circumstance which, 
+together with other facts, will tend to show fraud or undue influence. 
+In a unilateral contract, a promise of the offeror is co nsideration for an act or forbearance sought from the 
+offeree. In a bilateral contract, a promise of one party is  consideration for the promise of another, and generally 
+any valid promise, whether absolute or conditional, is sufficient consideration for another promise. 
+STATUTE OF FRAUDS 
+Contracts That Must Be Written 
+The law is more concerned with substance than with form. With reference to form, it is generally immaterial 
+whether a contract is oral or written, or even manifested by acts or conduct. Thus all contracts may be oral 
+CHAPTER SIX 
+ 
+96
+except those specially required by a statute to be in writing. 
+Most contracts which are required by statute to be in writing are referred to as coming under the Statute of 
+Frauds. The Statute of Frauds was first adopted in En gland in 1677 and became part of the English common 
+law. Subsequently, it was introduced into this country an d has been codified in California. The purpose of the 
+California Statute of Frauds is to prevent perjury, forgery and dishonest conduct on the part of unscrupulous 
+people in proving the existence and terms of certain important types of contracts. 
+The statute provides that certain cont racts are invalid, unless the contract or some note or memorandum of the 
+contract is in writing and subscribed (i.e., signed) by the party to be charged or by his or her agent. Under 
+Section 1624 of California’s Civil Code, contracts that are required to be in writing are: 
+1. An agreement that by its terms is not to be performed within a year from the making thereof; 
+2. A special promise to answer for the debt, default, or miscarriage of another, except in the cases provided 
+for in Civil Code Section 2794; 
+3. An agreement for the leasing for a l onger period than one year or for the sale of real property, or of an 
+interest therein. Such agreement, if  made by an agent of the party sought to be charged, is invalid, unless 
+the authority of the agent is in writing and subscribed by the party sought to be charged; 
+4. An agreement authorizing or employing an agent, broker, or any other person, to purchase or sell real 
+estate, or to lease real estate for a longer period than one year, or to procure, intr oduce, or find a purchaser 
+or seller of real estate or a lessee or lessor of real estate where such lease is for a longer period than one 
+year, for compensation or a commission; 
+5. An agreement which by its terms is not to be performed during the lifetime of the promisor; 
+6. An agreement by a purchaser of real property to pay an indebtedness secured by a mortgage or deed of trust 
+upon the property purchased, unless assumption of the indebtedness by the purchaser is specifically 
+provided for in the conveyance of such property. 
+7. A contract, promise, undertaking, or commitment to loan money or to grant or extend credit, in an amount 
+greater than one hundred thousand dollars ($100,000), not primarily for personal, family, or household 
+purposes, made by a person engaged in the business of lending or arranging for the lending of money or 
+extending credit. For purposes of this section, a contract, promise, u ndertaking, or commitment to loan 
+money secured solely by residential property consisting of one to four dwelling units shall be deemed to be 
+for personal, family, or household purposes. 
+Relates to remedy. It should be noted that the Statute of Frauds relates to the remedy only and not to the 
+substantial validity of the contract. Thus, the contract which fails to comply with the statute is not void but 
+merely unenforceable. This, of course, is an important distinction. It is effective for all purposes until, in an 
+attempt to enforce it by action, its invalidity is urged. Moreover, the statute is a defense only and cannot be the 
+basis for affirmative action. It has been held that si gnificant partial performance can excuse the lack of a 
+writing. 
+When a contract has been fully performed, the Statute of Frauds does not apply and may not be invoked for any 
+reason. 
+The note or memorandum required by the statute may be in any form since its purpose is simply evidence of the 
+contract. It may consist of one paper, or even a series of letters. It must however contain all the material terms 
+of the contract so that a court can determine to what the parties agreed. It must, bear the signature of the party to 
+be charged or held to the agreement. The other party bringing the action can always add his or her signature 
+later. 
+Real estate applications of the statute. It is readily apparent that several very important sections of the Statute 
+of Frauds apply to persons dealing in real estate. Practi cally all contracts for the sale of any interest in real 
+property must be in writing. This in cludes assignment of a percentage of  the proceeds of oil produced from 
+designated lands. It embraces any and all instruments creating liens, such as trust deeds, mortgages, leases for 
+periods of longer than one year, rights to rights of way through property and any and all encumbrances incurred 
+or suffered by the owners, or by operation of law. “By operation of law” means judgments, attachments, or 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+97
+restrictions placed on the property by legislative bodies, zoning ordinances, and other such means. 
+The statute does not apply to a lease for a year or less. 
+Commissions. The Statute of Frauds provides that for a br oker to collect a commi ssion when earned, the 
+contract providing for a commission must be in writing and signed by the party to be charged (e.g., a property 
+owner who employs the broker to produce a buyer; or a buyer who employs the broker to find a suitable 
+property). 
+The Statute of Frauds is applicable to situations where the lease of real estate for a period exceeding one year is 
+involved. A broker who is commissioned to seek a lessee of  property for a term exceeding one year cannot rely 
+upon an oral agreement to collect a commission. If the broker is successful in negotiating the lease, the contract 
+with the lessor must be in writing or there must be reliable written evidence thereof to sustain a claim of 
+commission. 
+It has been held that the moral obligation to pay for services performed under oral authorization is sufficient 
+consideration to support a promise of compensation contained in escrow instructions later drawn up. It also has 
+been held that these provisions have no application to an oral agreement between brokers to share a commission 
+to be earned as a result of the sale or exchange of real estate. 
+The Statute of Frauds invalidates any unwritten agre ement by a purchaser of real property to pay an 
+indebtedness secured by a mortgage or deed of trust upon that property, unless assumption of the indebtedness 
+is specifically provided for in the property conveyance. 
+INTERPRETATION, PERFORMANCE AND DISCHARGE OF CONTRACTS 
+The majority of all contracts are properly performed and discharged or executed without legal complications. If 
+difficulties arise, the parties themselves , or with the aid of legal counsel, will typically work out an amicable 
+settlement. But the courts remain available for the resolution of conflicts between contracting parties that cannot 
+be so settled. Set forth below are some of the rules which guide the courts in their interpretation of contracts. 
+Interpretation of Contracts 
+In general, contracts are interpreted so as to give effect to the mutual intention of the parties as it existed at the 
+time of contracting, insofar as that intention is ascertainable and lawful. A contract may be explained by 
+reference to the circumstances under which it was made, and the matter to which it relates. But the language of 
+the contract governs its interpretation, if the language is clear and explicit and does not involve an absurdity. 
+Obviously the language should be reduced to writing, fo r the wiles of the unscrupulous are infinite, and the 
+memory of every man and woman is finite and fallible. 
+Fortunately, as noted earlier, most contracts of interest to real estate brokers must be in writing under the Statute 
+of Frauds. A broker can render valuable service by  en suring that the writing clearly  expresses the intention of 
+the parties. But when a written contract fails to express the real intention of the parties because of fraud, mistake 
+or accident, the courts will attempt to discover the real  intention and disregard the erroneous parts of the 
+writing. 
+The execution of a contract in writing supersedes all ne gotiations and stipulations concerning the matter which 
+preceded or accompanied the execution of the instruction, even though the law may or may not require writing.  
+When a contract is partly written and partly printed, written parts control the printed part, and the parts which 
+are purely original control those which were copied from a form. If the two contradict the latter must be 
+disregarded. 
+Modification or alteration of a contract  is a change in the obligation by a modifying agreement, which requires 
+mutual assent. A contract in writing may be altered by a new contract in writing, or by an executed oral 
+agreement, and not otherwise. 
+Parol evidence rule. Parol evidence refers to prior oral or written ne gotiations or agreements of the parties, or 
+even oral agreements contemporaneous with their wr itten contract. The parol evidence rule prohibits the 
+introduction of any extrinsic evidence (oral or written) to vary or add to the terms of an integrated written 
+instrument, such as a deed, contract, will, etc. This rule helps to finalize agreements with certainty, and it 
+CHAPTER SIX 
+ 
+98
+discourages fraudulent claims. On the other hand, the courts will permit such outside evidence to be introduced 
+when the written contract is incomplete or ambiguous, or when necessary to show that the contract is not 
+enforceable because of mistake, fraud, duress, illegality, in sufficiency or failure of consideration, or incapacity 
+of a party. 
+Under the “parol evidence rule,” when a contract is expressed in a writing which is intended to be the complete 
+and final expression of the rights and duties of the parties, parol evidence is not admissible as evidence. 
+Where the parties come to an agreement by mistake or  fraud, and the written instrument does not express their 
+agreement correctly, it may be reformed or revised by the court on the application of the party agreeing to it, 
+provided that this can be done without prejudice to the rights acquired by third persons in good faith and for 
+value. 
+Performance of Contracts 
+Regarding performance of contracts, it is common to find a party who would prefer to drop out of the picture 
+without terminating the contract. Under proper circumstances, this may be accomplished by assignment or by 
+novation. 
+Assignable contract. Whether the contract is assignable depends upon its nature and terms. Ordinarily, either a 
+bilateral or a unilateral contract is assignable unless it ca lls for some personal quality of the promisor, or unless 
+it expressly or impliedly negates the right to assign. The contract might expressly provide that it shall not be 
+assigned, or contain provisions which are equivalent to such expressed stipulations, or require consent to assign. 
+An assignment transfers all the assign or’s interests to the assignee. The assignee stands in the shoes of the 
+assignor, taking the assignor’s rights and remedies, su bject to any defenses that the obligor has against the 
+assignor, prior to notice of the assi gnment. Where the subject matter of th e assignment involves reciprocal 
+rights and duties, the assignor may transfer the benefit and may divest himself or herself of all rights, but cannot 
+escape the burden of an obligation by a mere assignment. The assignor still remains liable to the oblige. Even if 
+the assignee assumes the obligation, the assignor still remains secondarily liable as a surety or guarantor, unless 
+the obligee releases the assignor. 
+The assignment carries with it all the rights of the assi gnor. Thus the assignment of a note carries with it any 
+incidental securities such as mortgages or other liens. 
+In some cases the original contracting party who wants to drop out completely may do so by novation. 
+Novation is the substitution by agreement of a new obligation for an existing one, with intent to extinguish the 
+latter. The substitution may be a new obligation between th e same parties, and/or a new party, either a new 
+debtor or a new creditor. A novation requires an intent to discharge the old contract and, being a new contract, it 
+requires consideration and other essentials of a valid contract. 
+Where one party is indebted to another and the creditor takes a promissory note for the sum owed, this does not 
+discharge the original debt, unless the parties expressly agree to it, or unless such intention is clearly indicated. 
+Ordinarily, for a novation, a particular form is not necessary required. It may be written or implied from 
+conduct where the intent sufficiently appears. 
+Time 
+The question of time is often significant in contracts. By statute, if a time is not specified for the performance of 
+an act required to be performed, a reasonable time is allowed. If the act is in its nature capable of being 
+performed instantly, it must be performed immediately upon being exactly ascertained, unless otherwise agreed. 
+If the last day for the performance of any act provided by law to be performed within a specified period of time 
+shall be a holiday, then such period is extended to the next day which is not a holiday. 
+Discharge of Contracts 
+In the matter of discharge of contracts, there are two extremes, full performance and breach of contract.  
+Between these extremes are a variety of methods of discharge of the contract including the following: 
+1. By part performance; 
+2. By substantial performance; 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+99
+3. By impossibility of performance; 
+4. By agreement between the parties; 
+5. By release; 
+6. By operation of law; and 
+7. By acceptance of a breach of the contract. 
+Statute of Limitations 
+The running of the Statute of Limitations will bar any legal action seeking relief for a breach of contract. Civil 
+actions can be commenced only within  the periods prescribed by the statute after the cause of action has 
+accrued. The policy of the law is to aid the vigilant. The person who “sleeps upon his rights” may be barred 
+from relief by this statute. The following is a summary of  some of the clauses which are of special interest to 
+real estate brokers. 
+Actions which must be brought within 90 days.  Civil actions for the recovery of or conversion of personal 
+property such as baggage alleged to have been left at a hotel, boarding house, lodging house, furnished 
+apartment house or furnished bungalow court, shall be commenced within 90 days from and the departure of the 
+owner of the personal property. 
+Within six months. An action against an officer, or officer defacto, to recover any goods, wages, merchandise 
+or other property seized by the officer in an official capacity as tax collector , or to recover the price or value of 
+any such goods or other personal property, as well as for damage done to any person or property in making any 
+such seizure. Also, actions on claims against a county which have been rejected by the board of supervisors are 
+included. 
+Within one year. An action for libel, slander, injury or death caused by wrongful act or neglect of another, or 
+by a depositor against a bank for the payment of a forged or raised check. 
+Within two years.  An action upon a contract, obligation or liability not founded upon an instrument in writing 
+(other than open book accounts, accounts stated, and open, current and mutual accounts, where the limit is  four 
+years); or an action founded upon a contract, obligation or liability, evidenced by a certificate or abstract or 
+guaranty of title of real property or by a policy of title insurance; provided, that the cause of action of such 
+contracts shall not be deemed to have accrued until th e discovery of the loss or damage suffered by the 
+aggrieved party thereunder. 
+Within three years.  Included are an action upon a liability created by statute, other than a penalty or forfeiture; 
+an action for trespass upon or injury to real property; an action for taking, detaining, or injuring any goods or 
+chattels, including actions for the recove ry of specific personal property; an action for relief on the grounds of 
+fraud or mistake. (Cause of action does not accrue until discovery by the injured pa rty of the facts constituting 
+the fraud or mistake.) 
+Within four years. An action upon any contract, obligation, or liability founded upon an instrument in writing, 
+except an action upon any bonds, notes, or debentures issued by any corporation or pursuant to permit of the 
+Commissioner of Corporations, or upon any coupons issued with such bonds, notes, or debentures, if such 
+bonds, notes or debentures shall have been issued  to or held by the public, where the limit is six years; also 
+provided that the time within which any action for a money judgment for the balance due upon an obligation for 
+the payment of which a deed of trust or mortgage with power of sale upon real property or any interest therein 
+was given as security, following the exercise of the power of sale in such deed of trust or mortgage, may be 
+brought but shall not extend beyond three months after the time of sale under such deed of trust or mortgage. 
+An action to recover: 
+1. Upon a book account whether consisting of one or more entries; 
+2. Upon an account stated, based upon an account in writing; 
+3. A balance due upon a mutual, open and current accoun t, provided that where an account stated is based 
+upon an account of one item,  the time shall begin to run from the da te of said item, and where an account 
+stated that is based upon more than one item, the time shall begin to run from the date of the last item. 
+CHAPTER SIX 
+ 
+100
+Within five years. An action for mesne profits (i.e., profits accr uing between the time an owner acquires title 
+and actually takes possession). Also included is an action for the recovery of real property. 
+Within ten years. An action upon a judgment or decree by any court of the United States or by any state within 
+the United States. 
+In connection with the Statute of Limitations, an action is commenced when the complaint is filed with a court 
+of competent jurisdiction. 
+Remedies for Breach 
+As a final possibility, a contract may be discharged by simple acceptance of breach of contract. If one party 
+fails to perform, the other may accept the contract as ended, concluding either that recoverable damages are too 
+limited to justify litigation or that the other party is “judgment proof” (i.e., without sufficient assets to satisfy a 
+judgment).  
+On the other hand, the victim of a br each of contract may not be willing to  accept the breach. That person has a 
+choice of two, and sometimes three, courses of action, which includes: 
+1. Unilateral rescission. 
+2. Action for dollar damages. 
+3. Action for specific performance. 
+Rescission 
+To rescind based upon a breach of contract requires diligent compliance with the following statutory rules: 
+ One must rescind promptly after discovering the facts which justify rescission; and 
+ One must restore to the other party everything of value received from the other party under the contract, or 
+must offer restoration upon condition that the other part y do likewise, unless the latter is unable or refuses 
+to do so. 
+If a court awards rescission, it may require that the rescinding party make any compensation to the other which 
+justice may require. It should be noted, however, that a party having the right to rescind may independently 
+accomplish a completed rescission, terminating further liability and discharging the contract. 
+Damages 
+Whenever a party to a contract is a victim of a brea ch, such party has suffered a detriment and may recover 
+monetary compensation, which is called damages. This  party is entitled to interest (now 10% per annum) 
+thereon from the day the right to recover is vested. If the contract, itself, stipulates a legal rate of interest, that 
+rate remains chargeable after the breach as before, and until superseded by a verdict or other new obligation. 
+Damages for breach of contract must be reasonable, and exemplary damages which serve to punish the 
+defendant are generally not allowed normally, unless a st rong showing of bad faith can be made. Generally, the 
+measure of damages is the amount which will compensate the party aggrieved party for all the detriment 
+proximately caused thereby, or which, in the ordinary course of things would likely result therefrom. 
+Sometimes, if the breach ha s caused no appreciable detriment, hence no dollar damages, the court will award 
+“nominal damages” (e.g., $1). 
+The detriment caused by th e breach of an agreement to convey an estate in real property is deemed to be the 
+price paid and the expenses properly  incurred in examining the title and preparing the necessary papers, with 
+interest thereon. In cases of bad faith, added to the above is the difference between the price agreed to be paid 
+and the value of the estate agreed to be conveyed, at the time of the breach,  as we ll as the expenses properly 
+incurred in preparing to enter upon the land. On the other hand, the detriment caused by the breach of an 
+agreement to purchase an estate in real property is deemed to be the excess, if any, of the amount which would 
+have been due to the seller, under the contract, over the value of the property to the seller. 
+Sometimes, especially in building contracts, the parties will anticipate the possibility of a breach (e.g., a delay in 
+completion beyond a promised date). The parties may specify in the contract the amount of damage to be paid 
+in the event of a breach. Such liquidated damage agreements will be enforced by the courts provided the 
+amount specified is not so excessive as to constitute  a penalty, and provided it would be impractical or 
+extremely difficult to fix the actual damage, and normally only if the contract expressly provides that liquidated 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+101
+damages shall be the only remedy available in the event of breach of the contract. 
+Specific Performance 
+Generally, if dollar damages at law cannot provide an adequate remedy, equity will take jurisdiction and order 
+the defendant to perform the contract . Sometimes, equity may also enfor ce a promise to forbear from doing 
+something by granting an injunction. 
+Requirements to compel performance. Specific performance is especially important in the real estate business 
+in connection with contracts for the tr ansfer of interests in land. Since ev ery piece of land is unique, the law 
+presumes that the breach of an agr eement to transfer real property cannot be relieved adequately by money 
+compensation. For specific performance to be available as a remedy, howeve r, certain other requirements must 
+normally be met before the court will compel a party to perform a contract. 
+If specific performance is to be ordered, the remedy must be mutual. However, by statute, even if the agreed 
+counter-performance would not be sp ecifically enforceable, specific perf ormance may be compelled if (a) 
+specific performance would otherwise be an appropriat e remedy, and (b) the agreed counter-performance has 
+been substantially performed or can be assured. Brokers  dealing with prospective oil land and oil leases are 
+familiar with a contract provision that states the lessee ma y, at any time before or after discovery of oil on the 
+property, quitclaim the same or any part thereof to the lessor, whereupon the rights and obligations of the parties 
+to the lease shall cease. Such a clause, giving the lessee the right to abandon, robs the contract of mutuality. 
+Therefore, the contract cannot be specifically enforced. 
+An option for the purchase of real es tate, where there is consideration is  therefore, specifically enforceable 
+although the owner cannot at that time compel its performance. Neither  can the owner w ithdraw the option 
+during the time agreed u pon. Upon the written exercise of the option by the buyer according to its terms, a 
+contract of sale is created. It is this contract that gives rise to the remedy of specific performance. It is not 
+uncommon for an optionee, or other person who may not have signed a contract, to bring suit thereon for its 
+specific performance. The fact that the party brings such a suit establishes mutuality, because its subjects 
+oneself to the court and to agree to abide by the decree of the court. 
+Obligations which cannot be specifically enforced. By statute, the following obligations cannot be 
+specifically enforced: (l) to render personal service; (2) to employ another in personal service; (3) to perform an 
+act which the party has no lawful power to perform when required to do so; (4) to procure the consent of any 
+third person; and (5) an agreement where the terms are not sufficiently certain to make the precise act which is 
+to be done clearly ascertainable. 
+Thus, husband and wife must join in executing any instrument by which community real property or any 
+interest therein is sold, conveyed, or encumbered, or is leased for a longer period than one year. 
+Note: The right of a purchaser in good faith without knowledge of the marriage relation where one spouse alone 
+holds the record title to the real property may be established without the other spouse’s signature. 
+Since an agreement to procure the consent of a spouse or any third person cannot be specifically enforced, it is 
+exceedingly important to obtain the signa ture of the other spouse. In fact, th e signatures of both spouses to any 
+contract relating to community real property should be secured. 
+Frequently this failure to procure the signature of the ot her spouse is cured by the seller putting into escrow the 
+deed signed by both husband and wife, or by the buyer putting into escrow a deed of trust signed by both. When 
+that is done the original want of mutuality is cured, provided it is done before an attempt is made by the other to 
+withdraw from the contract by the other party. It is not  wise to rely upon this possibility, or even probability. 
+The alert real estate broker will obtain the signatures of all parties in the beginning. 
+It is not uncommon that there are two owners of property other than husband and wife. Therefore, it is 
+necessary to get the signatures of all of the owners, because the buyer could not compel specific performance of 
+the contract as to one-half of the property that it is contemplated that the whole is to be sold. 
+Adequate consideration — assent  by fraud — merch antable title. Specific performance cannot be enforced 
+against a party to a contract if such party has not received adequate consideration. This doctrine does not require 
+that the highest price obtainable must be procured. It means that a price that is fair and reasonable under the 
+CHAPTER SIX 
+ 
+102
+circumstances must be obtained. If a higher price is offered during the negotiations, it must be presented. 
+Thus, in one California case, the broker signed up a buyer at $30,000, knowing that $35,000 had been offered 
+for the property. The court held inadequacy was to defeat the buyer’s  suit in specific perf ormance. The court 
+also referred attention to the law which requires perfect goo d faith on the part of agents, not only in form but in 
+substance. 
+Furthermore, in order for the plaintiff to utilize the equitable remedy of specific performance, he or she must 
+show that the contract with the defendant is just and reasonable. The court denied specific performance in one 
+case because the seller had not been given adequate security to insure the payment of the balance of the price.  
+Specific performance cannot be enforced against a party to  a contract if his or her assent was obtained by 
+misrepresentation, concealment, circum vention, or unfair practices of a ny party to whom performance would 
+become due under the contract, or by any promise of such party which has not been substantially fulfilled. This 
+is also true if such assent was given under the influence of mistake, misapprehension, or surprise. 
+Note: Where the contract provides for compensation in case of mistake, the mistake,  if correctable, may be 
+compensated for, and the contract specifically enforced in other respects. 
+A buyer is always entitled to receive a merchantable title . Therefore, if the seller cannot give the buyer a title 
+free from reasonable doubt, the seller cannot specifically enfo rce such an agreement. Th is does not mean that 
+title needs to be merchantable at the time the original ag reement was executed. It only means that title needs to 
+be merchantable at the time it becomes the duty of the seller to convey the title. If the parties agree that the 
+transfer of title will be subject to the agreement that  title will be conveyed, these encumbrances should be 
+described in the contract and will not block specific performance. 
+REAL ESTATE CONTRACTS 
+Real estate contracts include the following: (l) contracts for the sale of real property or of an interest therein; (2) 
+agreements for leasing of realty for a longer period than one year; and (3) agreements authorizing or employing 
+an agent or broker to buy or sell real estate for compensation or a commission. 
+These contracts are essentially like any other contract except that they must be in writing and signed by the 
+party to be charged to make them valid under the Statute of Frauds. Thus, as we have seen in the discussion on 
+contracts in general, there are four requirements: (l) parties capable of contracting; (2) their consent (i.e., 
+genuine offer and acceptance); (3) a lawful object; and (4) sufficient consideration. 
+In the usual real estate sales transaction, the prospec tive buyer states the terms and conditions under which the 
+buyer is willing to purchase the property. These terms an d conditions constitute the offer. If the owner of the 
+property agrees to all of the terms and conditions of the offer, it is an acceptance which results in the creation of 
+a contract. It does not make a difference whether the offer comes from the seller or the buyer. If the negotiation 
+ultimately leads to a definite offer on the one side and unconditional acceptance on the other side, a contract has 
+been created. To complete the contr act for the sale of real property, the parties must reduce the terms and 
+conditions to writing and sign the contract.  
+Provisions in Contracts 
+Forms such as listing agreements (aut horization to sell), deposit receipts, exchange agreements, and other real 
+estate contracts for the sale or exchange of real estate should contain the following provisions: 
+1. The date of the agreement; 
+2. The names and addresses of the parties to the contract; 
+3. A description of the property; 
+4. The consideration; 
+5. Reference to creation of new mortgages (or trust deeds) and the terms thereof; the terms and conditions of 
+existing mortgages, if any; 
+6. Any other provisions which may be required or requested by either of the parties; 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+103
+7. The date and place of  closing the contract. 
+A contract of sale normally calls for the preparation of a deed to convey the pr operty. It is ex ecutory because 
+when the deed is properly signed and delivered to the purchaser the contract is executed. 
+Handling deposit on property in a sale. An earnest money deposit by a prospective purchaser of real property 
+is trust funds. The broker must handle the deposit as prescribed by the Real Estate Law and The Regulations. 
+Section 10145 of the Real Estate Law provides that the broker who receives trust funds must place the funds 
+into a trust fund account in a bank or other recognized depository, if the broker does not pl ace the funds into a 
+neutral escrow or into the hands of the broker’s principal. 
+The regulations of the Commissioner dictate the procedures to be followed by a broker who elects to hold the 
+funds uncashed or places the earnest money deposit into the broker’s trust fund  account until acceptance. The 
+contract usually provides that, upon  acceptance, the deposit will be immedi ately placed into an independent 
+escrow or title company. 
+The provision of law that sanctions the handing over of a ll varieties of trust funds to a principal by the broker 
+poses some dilemmas for brokers when the trust funds, which are toward the purchase, are in the form of 
+deposits. The particularly troublesome predicaments br okers may face are the transactions in which the buyer 
+has allegedly breached a binding contract to purchase th e real property. The law permits a broker to hand over 
+an earnest money deposit to the seller as soon as there has been an acceptance of the offer to purchase, unless 
+the terms of the contract provide otherwise.  The question then becomes whether the broker, who has the money 
+in his or her trust fund account, can refuse to turn it over to the seller upon demand when the seller concludes 
+that the buyer has breached the contract? 
+There is no legal authority that prov ides a clear-cut answer to this ques tion. Those knowledgeable in the Real 
+Estate Law in California contend the broker holds the earnest money deposit after an apparent acceptance of the 
+contract as an escrow holder rath er than as an agent of the seller.  The Department does not accept this 
+proposition.  However, it does understand the broker is in a very difficult position when a transaction falls apart 
+and either or both parties demand the earnest money. To  avoid the decision as to who is entitled to an earnest 
+money deposit and the later possibility of being held liable or subject to disciplinary action for making the 
+wrong decision, the broker is well advised to file an interpleader action and deposit the funds in the court where 
+the action is to be brought. If, as noted above, the trus t funds have already been placed into an independent 
+escrow upon acceptance, the funds may be held there pending resolution of the dispute. 
+Forfeitures. Contracts for the sale of real pr operty frequently include a provis ion that states if a prospective 
+buyer breaches the contract through no fault of the seller or broker, the de posit made by the buyer toward the 
+purchase shall be divided between the seller and the broker.   Such provisions of cases of breaches by the buyer 
+by the forfeiture of the deposit come within the definition of liquidated damages clauses. 
+If the contract is for the purchase and sale of residentia l real property, defined as a dwelling of not more than 
+four residential units, and the buyer intends to occupy the dwelling or one of the units as a residence, the 
+following rules apply: 
+1. These special rules apply only to amounts actually prepaid, in the form of deposit, downpayment, or 
+otherwise. 
+2. If the amount paid pursuant to the liquidated damages clause does not exceed 3% of the purchase price, the 
+clause is valid unless the buyer proves that the amount paid is unreasonable. 
+3. If the amount actually paid pursuant to the liquidated damages clause exceeds 3% of the purchase price, the 
+clause is invalid unless the party seeking to enforce it proves that the amount paid is reasonable. 
+4. The provision must be separately signed or initialed by each party to th e contract, and if it is a printed 
+contract, the provision must be set off in ten point bold type or contrasting red print in eight point type. 
+These rules do not apply to real property sales contracts, as defined in Civil Code Section 2985. 
+Effect of seller’s death on real estate contract. A real problem may ensue if a contract is entered into for the 
+sale or purchase of real estate and the seller dies before the time of taking title.  A properly drawn real estate 
+CHAPTER SIX 
+ 
+104
+contract contains a provision stating that all the term s of the contract are binding upon the heirs, executors, 
+administrators, and the assigns of the respective parties.  
+With this provision, the buyer’s rights are the same against the heirs, executors, administrators, or assigns of the 
+seller as the buyer had against the seller. Under these circumstances, the bu yer may compel specific 
+performance of the contract by the seller’s heirs, administrators, executors, or assigns. 
+Uniform Vendor and Purchaser Risk Act (Civil Code Section 1662). In some circumstances, after a contract 
+is made for the purchase and sale of real property, a fire or other disaster destroys or seriously damages the 
+property. The question becomes who shall take the loss? Under California’s Uniform Vendor and Purchaser 
+Risk Act, any contract made in this state for the purchase and sale of r eal property shall be interpreted as 
+including an agreement that the parties shall have the fo llowing rights and duties unless the contract expressly 
+provides otherwise: 
+1. If, when neither the legal title nor the possession of th e subject matter of the cont ract has been transferred, 
+and all or a material part thereof is destroyed without fault of the purchaser or is taken by eminent domain, 
+the seller cannot enforce the contract, and the purchaser is entitled to recover any portion of the price paid; 
+2. If, either the legal title or the possession of the subject  matter of the contract has been transferred, and all or 
+any part thereof is destroyed without fault of the seller or is taken by eminent domain, the purchaser is not  
+relieved from a duty to pay the price, nor entitled to recover any portion thereof that has been paid. 
+Options 
+Since an option is a form of contract, the requirements fo r the enforceability of real estate contracts apply to 
+options. Some consideration, even though it might be only 25 ¢ on a $100,000 parcel of real estate, must in fact 
+pass from optionee to optionor. A mere recital of consid eration alone is insufficient.  Provisions of a lease, 
+however, constitute sufficient consideration to support an option contained in the lease. Option contracts 
+typically run from seller to buyer. That is, in exchange for consideration paid by the buyer, the seller is deprived 
+of the right and power to revoke the basic offer to sell. The buyer, in effect, purchases an agreed amount of time 
+in which to accept or reject the seller’s underlying offer concerning the property. Thus, the underlying offer is 
+rendered irrevocable for the period specified in the collateral option contract. 
+Although option rights are usually assignable unless there is a restriction to the contrary, they do not give the 
+optionee any interest in the land. For this reason, the optionee cannot mortgage his or her rights. However, the 
+holder of an unexercised option does, however, have an interest for which the holder may be entitled to 
+compensation upon condemnation of the land. 
+The option may be given either alone or in connection with  the lease of the property. It may be in either the 
+customary form of an exclusive right to purchase or lease, or in the form of a privilege of first right of refusal to 
+purchase or lease. The option will terminate automatically upon expiration of the time specified without 
+exercise by the optionee. Additionally, the termination of a lease containing an option also usually terminates 
+the option. A renewal of the lease may, however, renew the option. The specific lease situation must sometimes 
+be carefully examined, since the option provisions and the lease provisions may be divisible. 
+An option to purchase real property is a written agreemen t whereby the owner of real property agrees with the 
+prospective buyer, that such buyer shall have the right to purchase the property from the owner at a fixed price 
+within a certain time. Terms of financing, payments, etc., should be set forth in such agreement. The 
+prospective buyer at buyer’s option may comply with all the terms of the agreement or be relieved from its 
+terms.  The owner would not have recourse to any legal procedures for damages or specific performance. The 
+option does not bind the optionee to any performance. It merely gives the optionee a right to demand 
+performance. Time is of the essence in an option and is usually strictly construed. If no time is specified, a 
+reasonable time period is implied. 
+If an option is recorded by the optionee, but is not exercised before or on the date of the expiration of the option, 
+the optionee should remove the effect of the option from the records by recording a quitclaim deed. 
+The broker usually does not earn a commission for having secured a client who takes an option, as the broker’s 
+right of commission does not arise unless the option is exercised. 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+105
+Listing Defined 
+A listing is a written contract by which a principal employs an agent to do certain duties (e.g., sell real property) 
+for the principal. Therefore, an agent holding a listing is always bound by the law of agency and has certain 
+fiduciary obligations to the principal that do not exist between two principals.  
+Net listing. In a net listing the compensation is not definitely determined, but a clause in the contract usually 
+permits the agent to retain as compensation all the money received in exce ss of the selling price that is accepted 
+by the seller. Under the Real Estate Law, failure of an agent to disclose the amount of an agent’s compensation 
+in connection with a net listing is cause for revocation or suspension of license. The disclosure must be done 
+prior to or at the time the principal binds himself or herself to the transaction. The agent is also required by the 
+Real Estate Law, in writing within one month of the tran sactions’ closing, to reveal to both buyer and seller the 
+selling price involved. The law, which is the usual practice, permits this information to be disclosed by the 
+closing statement of the escrow holder. 
+A net listing is perfectly legitimate, but it may give rise to a charge of fraud, misrepresentation and other abuses. 
+Accordingly, if a net listing is used, the commission arrangement should be thoroughly explained to the 
+principal. 
+Open listing. An open listing is a written memorandum signed by the party to be charged (usually the seller of 
+the property) which authorizes the broker to act as agent for the sale of certain described property. Usually, no 
+time limit is specified for the employment, although open listings can provide for a definite term. The property 
+is identified by a suitable description, and generally the terms and conditions of sale are set forth in the open 
+listing. 
+Open listings are the simplest form of written authorization to sell. They may be given concurrently to more 
+than one agent. Usually, the seller is not required to notify the other agents in case of a sale by one of them in 
+order to prevent liability of paying more than one commission. Where several open listings are given, the 
+commission is considered to be earned by the broker who first finds a buyer who meets the terms of the listing, 
+or whose offer is accepted by the seller. If the owner pers onally sells the property, the owner is not obligated to 
+pay a commission to any of the brokers holding open listings. The sale of the property under such an agreement 
+cancels all outstanding open listings. 
+Exclusive agency listing. An exclusive agency listing is a contract containing the words “exclusive agency.” 
+The commission is payable to the broker named in the cont ract, and if the broker or any other broker finds the 
+buyer and effects the sale, the broker holding the exclusive listing is entitled to a commission. 
+If a broker other than the broker holding the exclusive agency listing is the procuring cause of the sale, and the 
+procuring broker has some types of written agreement with  the seller, the owner may be liable for the payment 
+of two full commissions. Because the listing refers to an agency and the owner is not an agent, the owner may 
+personally effect the sale without incurring liability for commission to the broker holding the exclusive agency 
+listing. 
+Exclusive right to sell listing. Another form of listing is the exclusive right to sell . Under such listing, a 
+commission is due to the broker named in the contract if the property is sold within the time limit by the said 
+broker, by any other broker, or by the owner. Frequently , this listing also provides that the owner will be liable 
+for a commission if a sale is made, within a specified tim e after the listing expires, to a buyer introduced to the 
+owner by the listing broker during the term of the listing. The real estate broker is usually obligated under the 
+terms of the listing contract to furnish a list of the names of persons with whom the broker has negotiated during 
+the listing period, within a specified number of days after the expiration of the listing. 
+The exclusive right and the exclusive agency type of listing must be for a definite term, with a specified time of 
+termination. If a broker does not provide for this, the br oker’s license is subject to disciplinary action under the 
+Real Estate Law. 
+Multiple listing service. A multiple listing service is a cooperative listing service conducted by a group of 
+brokers, usually members of a real estate board. The group provides a standard multiple listing form which is 
+used by the members. It is usually an Exclusive Authorization Right to Sell  listing form and provides, among 
+other things, that the member of the group who takes the particular listing is to turn it in to a central bureau. 
+CHAPTER SIX 
+ 
+106
+From there, it, is distributed to all participants in the service and all have the right to work on it. Commissions 
+earned on such listings are shared between the coopera ting brokers, with the listing broker providing for the 
+division of commission in each listing sent to other participants. 
+When broker is entitled to commission. Ordinarily the broker is entitled to a commission when the broker 
+produces a buyer who is ready, willing, and able to purchase the property for the price and on the terms 
+specified by the principal, regardless of whether the sale is ever consummated. Contracts may expressly provide 
+that no commission is payable except on a completed sale or on an installm ent of the purchase price when paid 
+by the buyer. Such provision controls in the absence of fraud or prevention of performance by the principal. The 
+broker must be the procuring cause of the sale. It is not  sufficient that the broker merely introduces the seller 
+and buyer, if they are unable to agree on the terms of the sale within the time period of the agency. 
+The broker may, however, have a cause of action for the payment of commission if, within a specified time after 
+expiration of the listing, the property is sold to a buyer introduced by the broker during the term of the listing 
+contract. 
+Deposit Receipt 
+California brokers use a deposit receipt  when accepting earnest money with an offer to purchase real property. 
+This is a receipt for the money deposited and, more importantly, the basic contract for the transaction. It should 
+set forth all the basic factors which are included in a cont ract of sale, including arrangements for financing. It 
+should contain a complete understanding among the buyer, seller, and broker as to the return of the deposit in 
+the event the offer is not accepted, and provisions for disposition of deposit money should the buyer fail to 
+complete the purchase. 
+Some of these provisions are incor porated by standard clauses in the deposit receipt forms. The terms and 
+conditions written into the offer must be done with extreme care by the broker or salesperson. 
+Agent must give copies of contracts. The real estate license law provides that brokers and salespersons must 
+give copies of documents and agreements to the persons signing them at the time the signature is obtained. The 
+law not only applies to copies of listing contracts and depo sit receipts, but to any document pertaining to any of 
+the acts for which one is required to hold a real estate license. 
+Tender Defined 
+A tender in a real estate transaction is  an offer by one of the parties to the contract to carry out that party’s part 
+of the contract. A tender is usually made at the time  of  closing of escrow (i.e., concluding the transaction). If 
+one of the parties defaults or is unable to carry out his or her contractual obligation, the other party makes the 
+tender. (If the seller, an offer of the deed and a demand for payment of the balance of the purchase price. If the 
+purchaser is ready, an offer of the money required an d demand for the deed.) If litigation arisis out of some 
+dispute between the buyer and the seller, the party who made the tender can rightfully claim that he or she was 
+ready, willing and able to go through with the deal, and th at the other party defaulted. If both parties were in 
+default, neither may recover any damages from the other. Whether the parties made a tender is a question of fact 
+that must be established by competent evidence. 
+The person must specify any objections at the time the tender is made or the objections are waived. The tender 
+of performance, when properly made, has the effect of placing the other party in default if the other party 
+refuses to accept it, and the party making the tender may rescind or sue for breach of contract or specific 
+performance. 
+ACQUISITION AND TRANSFER OF REAL ESTATE 
+Usually, acquisition of property by one party entails a transfer from another party, and so we consider 
+acquisition and transfer together. 
+The basic distinction between real and personal property is not taken into account in the broad statutory 
+statement of how property is acquired. In the following discussion, however, the methods by which real 
+property is acquired or transferred are emphasized. 
+The Civil Code states that there are nine ways to acquire property : will, succession, accession, occupancy, and 
+by transfer as follows: 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+107
+1. By will: 
+ a. Formal or witnessed will. 
+ b. Holographic will. 
+ c. California Statutory will. 
+ d. California Statutory will with Trust. 
+2. By succession: 
+ a. Of separate property. 
+ b. Of community property. 
+3. By accession: 
+ a. Through actiocren (alluvion or reliction). 
+ b. Through avulsion. 
+ c. Through addition of fixtures. 
+ d. Through improvements made in error. 
+4. By occupancy: 
+ a. Abandonment. 
+ b. Prescription. 
+ c. Adverse possession. 
+5. By transfer: 
+ a. Private grant. 
+ b. Public grant. 
+ c. Gift (to private person or to public, by dedication). 
+ d. Alienation by operation of law or court action (p artition, quiet title, foreclosure, declaratory relief). 
+6. By marriage. 
+7. By escheat. 
+8. By eminent domain. 
+9. By equitable estoppel. 
+Will 
+Property accumulated during life may be disposed of at death to designated beneficiaries. The instrument 
+achieves this disposition of property is called a will.  The execution of a will during life has no effect on 
+property interests, as the instrument only becomes effective at death. This  is the distinguishing feature between 
+wills and other instruments creating property interests su ch as deeds and contracts. The latter two instruments 
+create some present interest and are not dependent upon death to be effective. 
+Types of wills. The types of wills permitted by law are the witnessed will, holographic will, statutory will and 
+statutory will with trust. The first is a formal written instrument signed by the maker, and declared to be the 
+maker’s will in the presence of at least two witnesses who, at the maker’s request and in the maker’s presence, 
+also sign the will as witnesses. This document should be prepared by an attorney. A holographic will is one 
+entirely written, dated and signed in the testator’s own handwriting. No other formalities are required. Statutory 
+wills are prepared in accordance with a format authorized by statute.  
+When a person dies, title to his or her real property passes directly to the beneficiaries named in the will, or to 
+the heirs if the decedent did not leave a will. Title, how ever, is not marketable or insurable because the law 
+provides that on death all property is subject to the temporary possession of  the executor or executrix, 
+administrator or administratrix, with a few exceptions. Le gal title is also subject to the control of the probate 
+court for purposes of determining and liquidating creditors’ claims and for establishing the identity of the heirs, 
+CHAPTER SIX 
+ 
+108
+devisees, and legatees of the estate. 
+Probate 
+Probate procedure commences with a petition for probate of a will or for letters of administration if there is no 
+will. A hearing is held and a representative is appointed to handle the estate. This person is referred to as an 
+executor or executrix if there is a will or an administrator or administratrix if there is no will, or if no personal 
+representative is named in the will. 
+Notice to creditors is then published, giving all credito rs four months within which to file their claims. An 
+inventory and appraisement of the estate listing all the assets is filed with the county clerk. During 
+administration of the estate, the representative may sell estate property subject to court approval only. 
+After the time for filing and “creditors” claims have e xpired, the representative files an accounting of all 
+receipts and disbursements and requests court approval of the same. Finally, the representative petitions the 
+court to approve distribution of the remaining assets to  the proper heirs and devisees. Small estates may be 
+exempt from probate administration or subject to special summary procedures. 
+Succession 
+If a person dies without leaving a w ill, the law provides for disposition of decedent’s property. This is called 
+intestate succession. A large number of special rules are included in the law depending upon the character of the 
+property and the relationship of the next of kin. In the simplest cases, separate property is divided equally 
+between a surviving spouse and one child, or split one-third to the surviving spouse and one-third to each of two 
+children, etc. One-half of the community property belongs to the surviving spouse and the other half is subject 
+to disposition by the decedent’s will.  If there is no will, the decedent ’s half of the community property 
+remaining after payment of his or her liabilities goes to the surviving spouse. 
+Accession 
+By accession, an owner’s title to improvem ents or additions to his or her pr operty may be extended as a result 
+of either man-made or natural causes. For example, a fixture may be annexed to a building by a tenant, or a 
+neighbor may affix a wall or a building in such a way to the landowner’s property without agreement to remove 
+the improvement so as to extend the landowner’s title to the improvement. 
+By natural causes, through accretion, the owner of a riparian property (i.e., located along a moving body of 
+water such as a river or stream) or littoral property (i.e ., located beside a pond, lake or ocean) may acquire title 
+to additional land by the gradual accumulation of land deposited on the owner’s property from the shifting of 
+the river or the ocean’s action. Th e land increase by this build-up of  sediment (or alluvium) is called alluvion. 
+The gradual recession of water, leaving permanently dry land is accession caused by reliction. Rapid washing 
+away of land is called avulsion. 
+Addition of fixtures. Acquisition of title by addition of fixtures occu rs when a person affixes something to the 
+land of another without permission and/or an agreement permitting removal of it. The thing so affixed belongs 
+to the owner of the land, unless the owner requires the former tenant to remove it. 
+Improvements made in error. At one time there was no compensation for the innocent person who mistakenly 
+improved someone else’s real property (e.g., built a h ouse on another’s lot). However, the Legislature changed 
+this in 1953 by amending the Civil Code Section 1013.5. The change permits a person who affixes 
+improvements to the land of another, in  good faith and erroneously believing -  because of a mistake of fact or 
+law – that he or she has a right to do so, to remove the improvements upon payment of damages to the owner of 
+the land and any other persons having an interest therein who acquired the interest in reliance on the 
+improvements. 
+Abandonment. Abandonment is the voluntary surrender of possession of real property or a leasehold with the 
+intention of terminating one’s possession or interest and without assigning the interest to another. If the owner 
+of a leasehold interest (i.e., the lessee) abandons the property, the landlord reacquires possession and full control 
+of the premises. Mere non-use is not abandonment. 
+Prescription. An easem
+ent created by prescription is anal ogous to adverse possession (discussed below). 
+Although only the right to use someone else’s land results in a property interest that is thus acquired. 
+TRANSFER OF INTERESTS IN REAL PROPERTY 
+ 
+109
+Adverse possession. The actual physical possession of property has always been accorded considerable weight 
+in connection with a variety of rights and obligations. Immediately upon occupying property, an adverse 
+possessor acquires a title to the property good against all the rest of the world except the state and the true 
+owner. Such occupation may ripen into legal title by adverse possession if the possession is: 
+1. by actual occupation;  
+2. open and notorious; 
+3. hostile to the true owner’s title; 
+4. under claim of right or color of title; 
+5. continuous and uninterrupted for a period of five years; and 
+6. accompanied by payment of all real prop erty taxes for a period of five years. 
+Since title by adverse possession cannot be traced from the county recorder’s office, it is neither marketable nor 
+insurable until perfected by court decree. 
+Title by adverse possession usually cannot be acquired against a public body. 
+Transfer 
+Property is acquired by transfer when, by an act of th e owner or of law, title to property is conveyed from one 
+person to another. It is the variations of transfer which are of primary concern to real estate brokers. 
+Private grant. Conveyancing, for consideration, of title to real property by private grant is very important to a 
+real estate broker and is discussed in Chapter 7. 
+Gift. An owner of property may voluntarily transfer property to another person without demanding or receiving 
+consideration. If the gift is real property, it would normally be conveyed by a deed. 
+Public dedication. Real property intended for public use can be acquired by a governmental body for such use 
+in any one of three ways: common law dedication, statutory dedication, and deed. 
+Common law dedication requires that the landowner’s conduc t evidences an intent to devote the land to some 
+public use, such as by executing a deed describing a boundary as being a “street.” To be effective, the public 
+must accept this dedication by local ordinance or by public use. 
+The most common example of stat utory dedication takes place under the Subdivision Map Act when a 
+landowner records a map on which certain areas are expr essly dedicated to the public for streets and parks. 
+Dedication by deed is generally used in specific situations not involving subdivisions created under the 
+Subdivision Map Act. Usually, only an easement is transferred. However, many local governments now require 
+deeds so that fee title, rather than an easement, is acq uired. This method avoids title problems arising upon 
+abandonment. 
+Alienation by court action. There are a variety of situations in which courts establish legal title regardless of 
+the desires of the record owners. 
+Any person may sue another who claims an adverse interest in real property. This type of proceeding is called a 
+quiet-title action and is the usual way of clearing tax titles, titles based upon adverse possession, and the title of 
+a seller under a forfeited recorded contract of sale. 
+A co-owner of property may sue the other co-owners, requesting a seve rance of the respective interests. If the 
+property cannot practically be divided physically, as is usually the case, the court may order a sale, transfer title 
+to the buyer, and divide the proceeds among the former owners. This proceeding is called a partition action. 
+A person holding a lien based upon contractual delinquency may ask that the court order sale of the property, 
+transfer of title to the purchaser, and application of the sales proceeds to the unpaid balance due under the 
+contract. This is called a foreclosure action. Mortgage and mechanic’s lien foreclosures are examples. 
+A person may, in cases of actual controversy, bring an action to determine his or her rights and obligations 
+under any written instrument. A judicial declaration of rights in advance of an actual tortious incident enables 
+CHAPTER SIX 
+ 
+110
+the parties to shape their conduct so as to avoid a breach. This declaratory relief action is often used to construe 
+deeds, restrictions or homesteads, or to determine rights under an oral contract. 
+Execution sale. A plaintiff in an action who obtains a money judgment against a defendant can take appropriate 
+steps to get a writ of execution. This court order directs the sheriff (or marshal or constable) to satisfy the 
+judgment out of property of the debtor. Real property belonging to the debtor, and not exempt from execution, 
+is seized by the officer and sold at public auction. 
+The buyer receives a certificate of sale and, if no redemption is made within the time allowed by statute (usually 
+12 months), the officer executes and delivers a deed to the buyer. 
+Forfeiture. An owner may impose a condition subsequent in a deed. If the condition is breached, the grantor or 
+grantor’s successor has the power to terminate the estate and reacquire title. Similarly, the owner may impose a 
+special limitation in a deed. If the stated event occurs or the prescribed status fails to endure, the estate 
+automatically terminates an d the grantor or his or her successor r eacquires title. In both cases, property is 
+acquired by forfeiture with no need for consideration. 
+Marriage. Under California law, marriage does not effect a transfer of title to property. However, subsequent 
+earnings and acquisitions of husband and wife, or eith er, during marriage, when not acquired as separate 
+property, are community property. Each spouse has a present, existing and equal interest in such property. 
+Escheat. Escheat is the legal process by which title to property vests in the state, usually for lack of heirs or 
+want of legal ownership. Since a presumption exists that some heirs capable of taking title exist in every case, 
+the process of escheat is not automatic. Escheat proceedings can be based on an action initiated by the Attorney 
+General or on a decree of distribution by a probate court. 
+Eminent domain. By eminent domain, a governmental entity takes private property for public use, paying 
+compensation based on fair market value. 
+Equitable estoppel. Equity and good conscience sometimes require that  title to real proper ty be transferred if 
+justice is to be done. The former owner is barred or estopped from denying the title of the innocent claimant. 
+For example, if an owner permits a friend to appear to the world as th e owner of certain property, and an 
+innocent third party buys the land from that apparent owner, the true owner is barred by the doctrine of 
+equitable estoppel from claiming ownership. 
+Similarly, if a person has no title, a defective title, or an estate smaller than the one purported to be conveyed, 
+but later acquires full title or estate, or perfects the title , the grantee (or grantee’s successor) gets the after-
+acquired title by way of estoppel. 

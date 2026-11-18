@@ -1,0 +1,128 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "epa609Rules",
+    "optionA": "Resale or shop use; purchaser name and business address",
+    "optionB": "Resale only; supplier name and business address",
+    "optionC": "Resale only; purchaser name and telephone number",
+    "optionD": "Resale only; purchaser name and business address",
+    "question": "An uncertified retailer buys small CFC-12 cans. Which purchaser statement qualifies for the resale exception?"
+  },
+  {
+    "reviewId": "R002",
+    "category": "epa609Equipment",
+    "optionA": "20 mL",
+    "optionB": "12 mL",
+    "optionC": "28 mL",
+    "optionD": "8 mL",
+    "question": "A collection bottle held 8 mL before recovery and 20 mL afterward. How much fresh oil replaces this removal?"
+  },
+  {
+    "reviewId": "R003",
+    "category": "epa609Service",
+    "optionA": "Extend the evacuation period",
+    "optionB": "Replace the system desiccant",
+    "optionC": "Change the vacuum pump oil",
+    "optionD": "Recycle the recovered refrigerant",
+    "question": "An A/C circuit remained uncapped throughout prolonged collision repairs. Which measure best addresses the resulting moisture problem?"
+  },
+  {
+    "reviewId": "R004",
+    "category": "epa609Rules",
+    "optionA": "Independent MVAC recycler hired by the seller",
+    "optionB": "Reclamation facility receiving it for purification",
+    "optionC": "Salvage facility that extracted it from the donor",
+    "optionD": "Facility charging it into the receiving vehicle",
+    "question": "Unreclaimed salvage MVAC refrigerant is being reused. Which facility must perform the required recycling?"
+  },
+  {
+    "reviewId": "R005",
+    "category": "epa609Equipment",
+    "optionA": "Ownership by an independently contracted technician",
+    "optionB": "Ownership by the vehicle\u2019s registered keeper",
+    "optionC": "Ownership by the recovery machine\u2019s service company",
+    "optionD": "Ownership by the same garage owner-operator",
+    "question": "A garage owns its recover-only machine. Which off-site recycler ownership satisfies Section 82.32(e)(2)?"
+  },
+  {
+    "reviewId": "R006",
+    "category": "epa609Equipment",
+    "optionA": "Heat released as the vapor cools",
+    "optionB": "Heat released as vapor condenses",
+    "optionC": "Heat absorbed as the liquid vaporizes",
+    "optionD": "Heat absorbed as the liquid warms",
+    "question": "Liquid refrigerant boils on skin at nearly constant temperature. Which heat transfer accounts for the contact cooling?"
+  },
+  {
+    "reviewId": "R007",
+    "category": "epa609Yf",
+    "optionA": "Delivering the remainder of the programmed charge",
+    "optionB": "Repeating the initial 15% charging step",
+    "optionC": "Beginning recovery of the test charge",
+    "optionD": "Injecting replacement compressor lubricant",
+    "question": "R-1234yf passes vacuum decay but leaks during the partial-charge check. Which operation remains permitted?"
+  },
+  {
+    "reviewId": "R008",
+    "category": "epa609Service",
+    "optionA": "Compatibility with A/C system materials",
+    "optionB": "Suitability for an OEM flushing procedure",
+    "optionC": "Removal of debris from condenser passages",
+    "optionD": "Removal of solvent during evacuation",
+    "question": "What has a flushing compound demonstrated by meeting SAE J2670?"
+  },
+  {
+    "reviewId": "R009",
+    "category": "epa609Rules",
+    "optionA": "Business limited to passenger-car refrigerant top-offs",
+    "optionB": "Business opening off-road cab systems for repair",
+    "optionC": "Business limited to off-road cab refrigerant top-offs",
+    "optionD": "Business opening passenger-car systems for repair",
+    "question": "Which business qualifies for the equipment exception specifically granted to top-off-only facilities?"
+  },
+  {
+    "reviewId": "R010",
+    "category": "epa609Yf",
+    "optionA": "Vapor can ignite within a concentration range",
+    "optionB": "Vapor is denser than surrounding air",
+    "optionC": "Liquid evaporates readily after release",
+    "optionD": "Vapor pressure increases with temperature",
+    "question": "Which R-1234yf property explains why ventilation must address a service pit as well as the workbench?"
+  },
+  {
+    "reviewId": "R011",
+    "category": "epa609Rules",
+    "optionA": "Supervisor attestation of the technician\u2019s competence",
+    "optionB": "Instructor confirmation of the technician\u2019s training",
+    "optionC": "Technician\u2019s records of completed recovery jobs",
+    "optionD": "Technician operating the equipment at the shop",
+    "question": "An EPA representative questions a certified technician\u2019s recovery technique. Which additional verification can the representative require?"
+  },
+  {
+    "reviewId": "R012",
+    "category": "epa609Service",
+    "optionA": "Replacement component instructions",
+    "optionB": "Factory underhood label",
+    "optionC": "Vehicle workshop manual",
+    "optionD": "Earlier service bulletin",
+    "question": "An installed condenser requires a revised charge; existing service data describe the original assembly. Which reference controls?"
+  },
+  {
+    "reviewId": "R013",
+    "category": "epa609Service",
+    "optionA": "Date of the cylinder pressure test",
+    "optionB": "Elapsed operating hours",
+    "optionC": "Mass processed by the recovery filter",
+    "optionD": "Number of vehicles charged that day",
+    "question": "MACS describes typical vacuum pump oil-change intervals. Which operating record supports that schedule?"
+  },
+  {
+    "reviewId": "R014",
+    "category": "epa609Equipment",
+    "optionA": "Reaching the filter capacity limit",
+    "optionB": "Clearing refrigerant from the existing filter",
+    "optionC": "Passing the internal pressure leak check",
+    "optionD": "Completing vacuum pump oil warming",
+    "question": "Robinair 34788NI filter maintenance accepts the replacement filter code. What must occur before shutdown and removal?"
+  }
+]

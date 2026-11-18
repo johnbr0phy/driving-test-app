@@ -1,0 +1,254 @@
+[
+  {
+    "questionId": "FRVTC-SEC-001",
+    "objective": "Appliquer la priorité à droite",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-002",
+    "objective": "Distinguer sortie privée et intersection ordinaire",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-003",
+    "objective": "Connaître la priorité à l'entrée du giratoire",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-004",
+    "objective": "Traverser une piste cyclable bidirectionnelle",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-005",
+    "objective": "Ne pas bloquer une intersection autorisée par un feu",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-006",
+    "objective": "Reconnaître l'intention claire d'un piéton",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-007",
+    "objective": "Distinguer arrêt obligatoire et simple cédez-le-passage",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-008",
+    "objective": "Appliquer la marge latérale hors agglomération",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-009",
+    "objective": "Appliquer une exception au dépassement par la gauche",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-010",
+    "objective": "Agir correctement pendant un dépassement subi",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-011",
+    "objective": "Relier dépassement et visibilité de la voie opposée",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-012",
+    "objective": "Distinguer progression en files et dépassement",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-013",
+    "objective": "Appliquer la limitation sous la pluie",
+    "sources": [
+      "SPEED"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-014",
+    "objective": "Appliquer le plafond de visibilité très réduite",
+    "sources": [
+      "FOG"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-015",
+    "objective": "Convertir deux secondes de suivi en distance",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-016",
+    "objective": "Faciliter la sortie d'un autobus urbain",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-017",
+    "objective": "Adapter le corridor de sécurité à l'impossibilité de changer de voie",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-018",
+    "objective": "Distinguer oreillette et audio intégré",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-019",
+    "objective": "Identifier un affichage de navigation autorisé",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-020",
+    "objective": "Revenir à la position normale de circulation",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-021",
+    "objective": "Changer de voie dans un giratoire",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-022",
+    "objective": "Appliquer l'exception de sécurité au jaune fixe",
+    "sources": [
+      "AMBER"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-023",
+    "objective": "Distinguer les règles enfant du taxi et du VTC",
+    "sources": [
+      "BELT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-024",
+    "objective": "Appliquer la ceinture au chauffeur VTC",
+    "sources": [
+      "BELT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-025",
+    "objective": "Installer un siège dos à la route à l'avant",
+    "sources": [
+      "BELT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-026",
+    "objective": "Interpréter le niveau 2 des médicaments",
+    "sources": [
+      "MEDS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-027",
+    "objective": "Réagir à une somnolence pendant le trajet",
+    "sources": [
+      "MEDS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-028",
+    "objective": "Relier temps de réaction et distance avant freinage",
+    "sources": [
+      "ALCOHOL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-029",
+    "objective": "Connaître la périodicité technique professionnelle",
+    "sources": [
+      "INSPECTION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-030",
+    "objective": "Préserver la liberté de mouvement du conducteur",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-031",
+    "objective": "Comprendre l'effet du sous-gonflage",
+    "sources": [
+      "ECO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-032",
+    "objective": "Anticiper pour une conduite souple",
+    "sources": [
+      "ECO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-033",
+    "objective": "Réduire la charge et l'équipement inutiles",
+    "sources": [
+      "ECO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-034",
+    "objective": "Protéger les passagers après immobilisation",
+    "sources": [
+      "ACCIDENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-035",
+    "objective": "Donner une localisation exploitable aux secours",
+    "sources": [
+      "ACCIDENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-036",
+    "objective": "Éviter un déplacement aggravant d'un blessé",
+    "sources": [
+      "ACCIDENT"
+    ]
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "R001": {
+    "questionId": "EPA609-SRV-031",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R002": {
+    "questionId": "EPA609-SRV-029",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R003": {
+    "questionId": "EPA609-REG-026",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R004": {
+    "questionId": "EPA609-EQP-024",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R005": {
+    "questionId": "EPA609-SRV-022",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R006": {
+    "questionId": "EPA609-REG-004",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R007": {
+    "questionId": "EPA609-SRV-026",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R008": {
+    "questionId": "EPA609-REG-028",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R009": {
+    "questionId": "EPA609-YF-014",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R010": {
+    "questionId": "EPA609-EQP-013",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R011": {
+    "questionId": "EPA609-REG-015",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R012": {
+    "questionId": "EPA609-EQP-022",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R013": {
+    "questionId": "EPA609-EQP-011",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R014": {
+    "questionId": "EPA609-YF-006",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  }
+}

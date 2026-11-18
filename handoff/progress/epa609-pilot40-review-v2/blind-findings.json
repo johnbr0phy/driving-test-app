@@ -1,0 +1,430 @@
+{
+  "stage": "blind questions and public primary-source verification; locked before explanations",
+  "accessStatement": "Only anonymous-questions.json was read during this stage from the review folder. No mappings, scores, authoring explanations, original bank, or other reviews were inspected. Public sources were targeted to narrative, regulatory, and manufacturer content; no embedded certification exam questions were used.",
+  "items": [
+    {
+      "reviewId": "R001",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Useful cylinder identification recall.",
+      "plausibleAlternatives": "DOT-4BA and DOT-4BW plausibly confuse refillability.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R002",
+      "pedagogicalJudgment": "valid_arithmetic_low_domain_specificity",
+      "pedagogicalReason": "Tests percentage application only; all technical decision information is supplied. This is a numeracy item, not evidence of yf procedural knowledge.",
+      "plausibleAlternatives": "60 g and 120 g reflect 10% and 20%; 510 g is remaining charge.",
+      "factualScopeIssues": "No factual issue; retain only if practical calculation is an intended objective.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R003",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Clear credential distinction with paid service and recovery specified.",
+      "plausibleAlternatives": "608 Universal is a credible overgeneralization.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R004",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "Tests the specific fitting exception rather than generic adapter prohibition.",
+      "plausibleAlternatives": "Machine end is a plausible misunderstanding.",
+      "factualScopeIssues": "Consider specifying non-refrigerant-specific by standardized, since unique fittings are also standardized designs.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R005",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "A concrete prolonged-exposure situation selects a corrective action.",
+      "plausibleAlternatives": "Longer evacuation is a credible incomplete remedy.",
+      "factualScopeIssues": "No material issue; do not imply replacement eliminates the normal evacuation requirement.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R006",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "Manufacturer scope makes this a legitimate oil-selection distinction.",
+      "plausibleAlternatives": "Compressor construction is a plausible confusion.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R007",
+      "pedagogicalJudgment": "valid_easy_application",
+      "pedagogicalReason": "Tests full recharge versus topping off after complete recovery. The repeated 600 g is meaningful, not merely copying, because the distractors embody wrong service models.",
+      "plausibleAlternatives": "180 g is the initial deficit; 420 g is recovered mass; 1020 g adds incompatible quantities.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R008",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Requires aligning ownership and operation conditions. The conspicuous contracting option does not itself determine the correct answer.",
+      "plausibleAlternatives": "Contract and lease arrangements plausibly confuse ownership; reverse sale leaves garage operator ownership condition unmet.",
+      "factualScopeIssues": "Assumes equipment approval and otherwise lawful operation; appropriate for this single-issue question.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R009",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Phase-change heat transfer is a genuine foundational concept.",
+      "plausibleAlternatives": "Liquid warming tests sensible versus latent heat confusion.",
+      "factualScopeIssues": "No material issue; constant temperature is an appropriate discriminating fact, not answer leakage.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R010",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "Meaningful standard-scope distinction.",
+      "plausibleAlternatives": "OEM approval, cleaning effectiveness, and removability are plausible but different assurances.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R011",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Crosses appliance class and service scope in a compact matrix.",
+      "plausibleAlternatives": "Passenger-car top-off is the strongest distractor.",
+      "factualScopeIssues": "Off-road cab wording assumes MVAC-like equipment; acceptable in context but specifying MVAC-like avoids exotic system exceptions.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R012",
+      "pedagogicalJudgment": "valid_arithmetic_low_domain_specificity",
+      "pedagogicalReason": "Tests net bottle change rather than total reading. Simple but operationally plausible.",
+      "plausibleAlternatives": "20 mL copies the final reading; 28 mL adds readings.",
+      "factualScopeIssues": "Assumes no other oil-loss/replacement adjustment and correct specified oil. Not a universal complete oil-balancing procedure.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R013",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Properly scoped model-specific maintenance recall.",
+      "plausibleAlternatives": "Upper-edge level plausibly reflects overfilling.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R014",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Pit-versus-bench location requires the density concept.",
+      "plausibleAlternatives": "Flammability motivates ventilation generally but does not explain low-area emphasis.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R015",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "Explains a misleading measurement rather than asking a tautology.",
+      "plausibleAlternatives": "Moisture boiling can affect evacuation but is weaker for gauge/system pressure separation.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R016",
+      "pedagogicalJudgment": "surface_cue_minor",
+      "pedagogicalReason": "The correct option is unusually concrete and comparatively detailed; this creates a test-wise preference in addition to valid knowledge.",
+      "plausibleAlternatives": "Operating charge confuses leak testing with performance testing.",
+      "factualScopeIssues": "Stem should name the staged precharge procedure if broader context is unavailable. Parallelize purpose statements to reduce detail cue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R017",
+      "pedagogicalJudgment": "valid_procedure",
+      "pedagogicalReason": "Scoped manufacturer sequence with competing maintenance phases.",
+      "plausibleAlternatives": "Pressure leak check and oil warming are actual later phases.",
+      "factualScopeIssues": "No material issue; training wording is slightly awkward but identifies the model.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R018",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Simple pressure-gradient reasoning applied to contamination.",
+      "plausibleAlternatives": "Storage-vessel refrigerant is a plausible internal-system confusion.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R019",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Distinguishes compensation from refrigerant involvement.",
+      "plausibleAlternatives": "Section 609 tempts readers who focus only on paid truck A/C work.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R020",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "Specific salvage-reuse allocation of responsibility.",
+      "plausibleAlternatives": "Salvage facility and independent recycler are credible confusions.",
+      "factualScopeIssues": "Use unreclaimed as written; reclamation would change the premise.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R021",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "A useful observable assembly-quality criterion.",
+      "plausibleAlternatives": "Matching size and hand retention are plausible incomplete checks.",
+      "factualScopeIssues": "An inspection-hole fitting is implicitly assumed; a small image or explicit fitting type could improve scope, but no competing answer is equally strong.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R022",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Notice threshold is different from general sales restriction, creating a substantive rule test.",
+      "plausibleAlternatives": "Both is tempting because certification restrictions apply more broadly.",
+      "factualScopeIssues": "No material issue; CFC-12 specificity prevents confusion with substitute small-can exemptions.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R023",
+      "pedagogicalJudgment": "valid_procedure",
+      "pedagogicalReason": "Distinguishes pressure condition from an estimated waiting interval.",
+      "plausibleAlternatives": "Three minutes is a particularly credible time-based distractor.",
+      "factualScopeIssues": "Pressure has decreased is qualitative; sufficient for the source-level rule, not a complete equipment connection authorization.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R024",
+      "pedagogicalJudgment": "valid_arithmetic",
+      "pedagogicalReason": "Tests gauge-versus-absolute pressure correctly.",
+      "plausibleAlternatives": "1 copies absolute pressure; 26 adds rather than subtracts.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R025",
+      "pedagogicalJudgment": "valid_recall",
+      "pedagogicalReason": "Useful equipment capability specification with consistent units.",
+      "plausibleAlternatives": "0.5 reflects a less sensitive detector threshold.",
+      "factualScopeIssues": "Approximate ounce expression is conventional; 0.15 oz equals about 4.25 g, not exactly 4 g.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R026",
+      "pedagogicalJudgment": "valid_easy_application",
+      "pedagogicalReason": "Standard recovery prerequisite applied to a failed test charge.",
+      "plausibleAlternatives": "Evacuating directly confuses vacuum pumping with recovery.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R027",
+      "pedagogicalJudgment": "valid_recall",
+      "pedagogicalReason": "Targets a real recordkeeping field.",
+      "plausibleAlternatives": "Refrigerant type/date is plausible generic recordkeeping.",
+      "factualScopeIssues": "Broad service-shop wording assumes covered recovery equipment; no different option is made correct.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R028",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Electrical safety distinction is concrete and manufacturer-scoped.",
+      "plausibleAlternatives": "Current clamp and auxiliary-voltage check are actual preliminary checks, making good distractors.",
+      "factualScopeIssues": "Not a standalone HV-disablement procedure; voltage absence is verified at specified accessible circuits, not inside the battery itself.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R029",
+      "pedagogicalJudgment": "wording_minor",
+      "pedagogicalReason": "Tests a genuine combustion hazard, but cited has no referent in this standalone stem.",
+      "plausibleAlternatives": "Nitrogen is credible to readers recalling pressure-test practices rather than identifying the hazard.",
+      "factualScopeIssues": "Remove cited or name the Robinair warning. Correct answer remains unambiguous.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R030",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Connects a physical property to a service consequence.",
+      "plausibleAlternatives": "Flash point distracts via solvent safety; freezing point via refrigeration terminology.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R031",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "Tests the rationale for a specific retrofit measure.",
+      "plausibleAlternatives": "Burst pressure and fitting seals are plausible alternatives.",
+      "factualScopeIssues": "Legacy retrofit scope is explicit; do not generalize to every modern refrigerant or recommend these blends without current acceptability review.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R032",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Tests retention duration with calendar application.",
+      "plausibleAlternatives": "Two years, five years, and year-end are plausible errors.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R033",
+      "pedagogicalJudgment": "valid_procedure",
+      "pedagogicalReason": "Manufacturer-scoped probe confirmation behavior.",
+      "plausibleAlternatives": "Contact or stationary probing are credible novice methods.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R034",
+      "pedagogicalJudgment": "valid_application",
+      "pedagogicalReason": "Good separation of equipment-owner authority from technician certification.",
+      "plausibleAlternatives": "Luis alone and either are credible role confusions.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R035",
+      "pedagogicalJudgment": "valid_knowledge",
+      "pedagogicalReason": "A specific exception to ordinary passenger-vehicle intuition.",
+      "plausibleAlternatives": "609 is credible; other 608 types are classification confusions.",
+      "factualScopeIssues": "Universal also qualifies but is not offered; Type II is the correct listed credential.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R036",
+      "pedagogicalJudgment": "valid_procedure",
+      "pedagogicalReason": "Specified blower and mode distinguish staged sampling from generic dense-vapor reasoning.",
+      "plausibleAlternatives": "Lower edge is a strong misconception distractor.",
+      "factualScopeIssues": "Could name MACS/J2843 staged procedure explicitly; current wording sufficiently identifies it.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R037",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Relevant basic fluorescence principle.",
+      "plausibleAlternatives": "Visible brightness is a realistic purchasing misconception.",
+      "factualScopeIssues": "Emission refers to lamp output, not dye fluorescence; the stem makes this clear.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R038",
+      "pedagogicalJudgment": "valid_recall",
+      "pedagogicalReason": "Manufacturer-scoped electrical requirement.",
+      "plausibleAlternatives": "12 AWG is sufficient but is not the minimum conductor size; 16/18 are thinner.",
+      "factualScopeIssues": "Minimum size means cross-sectional conductor size, not smallest numerical AWG; conventional wording is acceptable.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R039",
+      "pedagogicalJudgment": "valid_recall",
+      "pedagogicalReason": "Specific evaporator compliance standard.",
+      "plausibleAlternatives": "J639 is a particularly plausible broad-system standard.",
+      "factualScopeIssues": "No material issue.",
+      "answerAmbiguous": false
+    },
+    {
+      "reviewId": "R040",
+      "pedagogicalJudgment": "valid_easy_knowledge",
+      "pedagogicalReason": "Appropriate preliminary inspection knowledge, not defective simply because easy.",
+      "plausibleAlternatives": "Frost can indicate other operating issues; drain water is normal.",
+      "factualScopeIssues": "Suggests rather than proves appropriately limits the inference.",
+      "answerAmbiguous": false
+    }
+  ],
+  "wholeBankRedundancy": {
+    "scope": "Only this fixed 40-item diagnostic sample was available; no claim about the unseen production bank or a comprehensive examination form.",
+    "clusters": [
+      {
+        "items": [
+          "R002",
+          "R016",
+          "R026",
+          "R036"
+        ],
+        "judgment": "One staged-charge workflow, but calculation, purpose, failed-test recovery, and probe placement are distinct; no exact duplicates."
+      },
+      {
+        "items": [
+          "R013",
+          "R017",
+          "R038"
+        ],
+        "judgment": "Three facts from one machine model. Coherent equipment training, but model-specific concentration should not dominate a general 609 form."
+      },
+      {
+        "items": [
+          "R010",
+          "R030"
+        ],
+        "judgment": "Related solvent topic; compatibility certification and volatility are distinct."
+      },
+      {
+        "items": [
+          "R025",
+          "R033",
+          "R037",
+          "R040"
+        ],
+        "judgment": "Leak-detection cluster covers capability, technique, lamp selection and visual evidence; related but not redundant."
+      },
+      {
+        "items": [
+          "R003",
+          "R011",
+          "R019",
+          "R034",
+          "R035"
+        ],
+        "judgment": "Certification/regulatory scope scenarios test different exceptions and roles."
+      }
+    ],
+    "readingOnlyAssessment": "R002 supplies the percentage rule; R012 supplies the before/after volumes. These primarily test numeracy. R007 requires recognizing full recharging after recovery and should not be classified as a mere copied-number defect. Easy recall elsewhere remains legitimate.",
+    "structuralFindings": [
+      "R016 has a modest detail/specificity cue.",
+      "R029 contains the dangling word cited.",
+      "R004 standardized is slightly imprecise because refrigerant-specific fittings are themselves standardized."
+    ],
+    "coverage": "Small sample includes practical safety, equipment, service and rules. It is not a full blueprint validation; no forced complexity or pass claim."
+  },
+  "recomputedNumbers": {
+    "R002": "0.15 * 600 = 90 g; uncharged remainder 510 g",
+    "R007": "600 - 420 = 180 g initial deficit; after full removal total required is 600 g",
+    "R012": "20 - 8 = 12 mL",
+    "R022": "12/16 = 0.75 lb < 20 lb; 30 lb > 20 lb",
+    "R024": "25 - 1 = 24 inHg vacuum",
+    "R025": "0.15 * 28.349523125 = 4.25242846875 g/year; approximately 4 g/year industry nominal",
+    "R032": "2026-05-10 plus 3 calendar years = 2029-05-10",
+    "R038": "14 AWG is the specified minimum conductor size; 12 AWG is physically larger"
+  },
+  "sourceFindings": [
+    {
+      "source": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "detail": "Current eCFR displayed Title 40 updated through 2026-11-16. Relevant provisions: 82.32(d), (e)(2), (e)(4)-(5); 82.34(d); 82.42(a), (b), (c)."
+    },
+    {
+      "source": "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf",
+      "detail": "SP01972025 VER 01: safety warnings; Filter Maintenance p29; Change Vacuum Pump Oil p31. Verified against the NI manual, not the older 34788."
+    },
+    {
+      "source": "https://www.robinair.com/sites/default/files/documents/550029_EN_1.pdf",
+      "detail": "550029_EN_1, SAE procedure steps E-F support confirmation technique."
+    },
+    {
+      "source": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-3C5B5D4F-24A7-4EAE-B382-C93A2DEC1BFA.html",
+      "detail": "2024+ Model 3 Vehicle HV Disablement, From Rear Drive Unit, steps 3, 6-7 and 12 distinguish meter validation, current check and voltage verification."
+    },
+    {
+      "source": "https://www.denso-am.eu/news/dont-overlook-compressor-oil-reminds-denso",
+      "detail": "Manufacturer oil application guidance explicitly distinguishes the two compressor drives."
+    },
+    {
+      "source": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+      "detail": "Narrative sections: flushing, evacuation, desiccant, hose assembly, yf safety, evaporators, staged precharging, detector specifications, UV inspection. PDF pagination differs from printed pages."
+    },
+    {
+      "source": "https://19january2021snapshot.epa.gov/mvac/choosing-and-using-retrofit-refrigerant-cfc-12-mvac_.html",
+      "detail": "Archived EPA technical rationale; used for permeation explanation, not current availability of any named blend."
+    },
+    {
+      "source": "https://www.govinfo.gov/content/pkg/FR-1997-06-03/pdf/FR-1997-06-03.pdf",
+      "detail": "EPA final-rule discussion of standard manifold-end connections, June 3 1997. Paired with current equipment-specific handling context."
+    }
+  ],
+  "limitations": [
+    "No direct full SAE paywalled text was inspected; MACS narrative supports the named SAE specifications.",
+    "No source excerpts or examination material were copied.",
+    "High confidence is reviewer confidence, not coordinator scoring."
+  ]
+}

@@ -1,0 +1,481 @@
+[
+  {
+    "reviewId": "R001",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correctly addresses the potentially plausible moisture alternative and the local gauge mechanism.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R002",
+    "authorKey": "A",
+    "keyAssessment": "supported",
+    "explanationAssessment": "All four numerical alternatives are reconciled; supplied percentage and hypothetical mass are explicit.",
+    "alternativesMatch": true,
+    "sources": [],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R003",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Explanation is internally accurate and avoids a false hierarchy of document types. It does not cure literal matching in the question.",
+    "alternativesMatch": true,
+    "sources": [],
+    "pedagogicalSeverity": "high",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R004",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Explains all four sampling locations relative to the specified floor-mode workflow, but workflow conditions appear only after answering.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R005",
+    "authorKey": "A",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct. Direct verification of printed page 43 precaution 5 confirms A; my blind C was wrong. The source distinguishes pressure decrease from a typical elapsed wait. Withdraw the factual/safety rejection.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R006",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correctly separates voltage verification, current measurement, meter check, and refrigerant preparation. OEM procedure is necessary context.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://service.tesla.com/docs/BodyRepair/Body_Repair_Procedures/Model_3_2024/HTML/en-us/GUID-3C5B5D4F-24A7-4EAE-B382-C93A2DEC1BFA.html"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R007",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Consistent causal contrast for every option; no false claim that oil must physically leave.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R008",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correctly distinguishes leak-test pressure from operating charge, capacity determination, and compressor testing.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R009",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Component marking versus procurement records is accurately explained; permanent wording still cues the answer.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R010",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct difference, absolute-versus-gauge distinction, and distractor arithmetic; no mandated endpoint claim.",
+    "alternativesMatch": true,
+    "sources": [],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R011",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Entire sequence verified in Robinair: clearing before shutdown, oil warming and leak check after replacement. Early replacement is offered by menu.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN_0.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R012",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Full seating versus friction, nominal sizing, and crimp closure are accurately distinguished.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R013",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct recovery/re-evacuation exception and lockout treatment; no permission to add oil inferred.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R014",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correctly distinguishes salvage recovery, charging-facility recycling, and the separate reclamation route under current 82.34(d).",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/CFR-2025-title40-vol21/pdf/CFR-2025-title40-vol21-sec82-34.pdf",
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.34"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R015",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Optical explanation matches alternatives; focusing and beam width do not replace wavelength match.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R016",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct model-specific minimum and inverse AWG size convention.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN_0.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R017",
+    "authorKey": "A",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correctly limits evacuation and separates in-system desiccant from pump oil and recovered refrigerant.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R018",
+    "authorKey": "A",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Accurate permanent vehicle-end versus standardized gauge-end distinction.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R019",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Accurate model-specific fill target and level-surface requirement; all wrong fill levels explained.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN_0.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R020",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Accurate warning about air/refrigerant mixture and explicitly avoids authorizing nitrogen use.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN_0.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R021",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Accurate dye transport explanation; static-pressure distractor is not explicitly discussed but is inconsistent with the stated transport prerequisite.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R022",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Accurately distinguishes permeation from fitting leakage and other properties.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1007UHV.TXT"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R023",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct manufacturer applications; does not imply charge/displacement can override oil specification.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.denso-am.eu/news/dont-overlook-compressor-oil-reminds-denso",
+      "https://www.denso-am.eu/products/ac-engine-cooling/ac-compressor-oil"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R024",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct separation of material compatibility from efficacy, removal, and OEM authorization.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R025",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Physics and frostbite claim independently supported by OpenStax narrative and Honeywell-authored SDS; sensible warming and heat-release alternatives addressed.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.rittal.com/imf/none/3_14067/3478800_Safety_data_sheet_refrigerant_EN/",
+      "https://openstax.org/books/college-physics-2e/pages/14-3-phase-change-and-latent-heat"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Manufacturer-authored SDS on equipment-manufacturer host; exact author-cited version unlocated. Stable density/frostbite facts corroborated, not latest-SDS certification."
+  },
+  {
+    "reviewId": "R026",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct ownership logic. All ownership/lease/contract alternatives checked against current 82.32(e)(2).",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/CFR-2025-title40-vol21/pdf/CFR-2025-title40-vol21-sec82-32.pdf",
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.32"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R027",
+    "authorKey": "A",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct three-year endpoint and calendar-year trap explanation.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.42"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R028",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "DOT-39 identification correct; reusable-vessel statement appropriately qualified. ASME remains a weak non-DOT distractor.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.phmsa.dot.gov/regulations/title49/section/178.65?page=2"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R029",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct purchase-versus-availability and MVAC-versus-MVAC-like distinctions; off-road scope should remain explicit.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.epa.gov/mvac/servicing-requirements-farm-and-heavy-duty-equipment",
+      "https://www.govinfo.gov/content/pkg/CFR-2025-title40-vol21/pdf/CFR-2025-title40-vol21-sec82-32.pdf",
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.32"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R030",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correctly treats oily residue as a clue requiring confirmation, not proof.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R031",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct and usefully recognizes that a technician could sign in a separate responsible-officer capacity.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.42"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R032",
+    "authorKey": "B",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct classification. Explanation could teach why Type I/III and 609-only do not apply, instead of merely stating the key.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.32"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R033",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct destination record and retention/on-site rules for the service shop. Other record distractors are not each discussed but are not contradicted.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.42"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R034",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct personal demonstration and distinction from recertification after revocation.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.40"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R035",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct external pressure-gradient mechanism and internal-versus-external source distinction.",
+    "alternativesMatch": true,
+    "sources": [],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R036",
+    "authorKey": "A",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct certification-versus-training/enrollment distinction; weak options persist.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.42"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R037",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct net-removal arithmetic and explicit bottle-emptying practice resolve my prior normalization concern.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "low",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  },
+  {
+    "reviewId": "R038",
+    "authorKey": "D",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct point-of-sale location and exclusion of hidden/after-sale alternatives.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.42"
+    ],
+    "pedagogicalSeverity": "medium",
+    "sourceLimitations": null
+  },
+  {
+    "reviewId": "R039",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct density mechanism and contrast with the other true properties. Manufacturer-authored SDS hosted by Rittal corroborates; exact author v3.4 not located.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://www.rittal.com/imf/none/3_14067/3478800_Safety_data_sheet_refrigerant_EN/"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Manufacturer-authored SDS on equipment-manufacturer host; exact author-cited version unlocated. Stable density/frostbite facts corroborated, not latest-SDS certification."
+  },
+  {
+    "reviewId": "R040",
+    "authorKey": "C",
+    "keyAssessment": "supported",
+    "explanationAssessment": "Correct sensitivity threshold and older-guidance distinction; magnitude errors need no elaborate explanation.",
+    "alternativesMatch": true,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ],
+    "pedagogicalSeverity": "none",
+    "sourceLimitations": "Stage2 PDF fragment page numbers were not verified and should not be used as locators; use printed page references in source evidence."
+  }
+]

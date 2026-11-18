@@ -1,0 +1,228 @@
+[
+  {
+    "questionId": "FRVTC-REG-001",
+    "objective": "Appliquer la limite d'ancienneté thermique",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-002",
+    "objective": "Distinguer exception électrique et règle générale",
+    "sources": [
+      "VEH-2",
+      "CODE-VEH-6"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-003",
+    "objective": "Compter le conducteur dans les places",
+    "sources": [
+      "CODE-VEH-6"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-004",
+    "objective": "Utiliser la bonne mesure de puissance",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-005",
+    "objective": "Vérifier deux dimensions indépendantes",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-006",
+    "objective": "Distinguer portes et places",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-007",
+    "objective": "Reconnaître un équipement réservé aux taxis",
+    "sources": [
+      "CODE-VEH-7"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-008",
+    "objective": "Appliquer la fixation obligatoire actualisée",
+    "sources": [
+      "SIGN-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-009",
+    "objective": "Situer la signalétique définitive",
+    "sources": [
+      "SIGN-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-010",
+    "objective": "Reconnaître le justificatif d'une location longue",
+    "sources": [
+      "CODE-VEH-9"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-011",
+    "objective": "Articuler deux limites de validité",
+    "sources": [
+      "SIGN-3"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-012",
+    "objective": "Distinguer conducteur, entreprise et exploitant inscrit",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-013",
+    "objective": "Respecter le délai de mise à jour du registre",
+    "sources": [
+      "CODE-REG-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-014",
+    "objective": "Anticiper le renouvellement de l'inscription",
+    "sources": [
+      "CODE-REG-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-015",
+    "objective": "Identifier la période de l'inscription",
+    "sources": [
+      "L3122-3"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-016",
+    "objective": "Distinguer remplacement exceptionnel et flotte régulière",
+    "sources": [
+      "CODE-REG-1-III"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-017",
+    "objective": "Déclarer préalablement un renfort événementiel",
+    "sources": [
+      "CODE-REG-1-III"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-018",
+    "objective": "Appliquer l'interdiction de prêt d'inscription",
+    "sources": [
+      "L3122-3"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-019",
+    "objective": "Identifier le gestionnaire national du REVTC",
+    "sources": [
+      "CODE-REG-5"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-020",
+    "objective": "Distinguer représentation légale et participation à l'activité",
+    "sources": [
+      "CODE-REG-1-I"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-021",
+    "objective": "Comprendre la procédure d'un dossier incomplet",
+    "sources": [
+      "CODE-REG-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-022",
+    "objective": "Relier cessation sectorielle et radiation",
+    "sources": [
+      "CODE-REG-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-023",
+    "objective": "Distinguer enregistrement et exécution d'une réservation",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-024",
+    "objective": "Appliquer l'alternative de contact immédiat du client",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-025",
+    "objective": "Reconnaître les supports de preuve autorisés",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-026",
+    "objective": "Distinguer identifiant d'entreprise et inscription VTC",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-027",
+    "objective": "Identifier l'origine de la vignette temporaire",
+    "sources": [
+      "SIGN-1",
+      "SIGN-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-028",
+    "objective": "Calculer la période d'attente liée à une réservation en gare",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-029",
+    "objective": "Choisir un lieu de retrait autorisé",
+    "sources": [
+      "RETURN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-030",
+    "objective": "Appliquer l'exception de réservation suivante",
+    "sources": [
+      "RETURN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-031",
+    "objective": "Reconnaître les méthodes de tarification VTC",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-032",
+    "objective": "Relier la signalétique à l'inscription de l'exploitant",
+    "sources": [
+      "SIGN-3"
+    ]
+  }
+]

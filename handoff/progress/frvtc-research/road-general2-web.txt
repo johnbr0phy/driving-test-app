@@ -1,0 +1,414 @@
+Section 2 : Principes généraux de circulation. (Articles R412-6 à R412-16) - Légifrance (https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177121/)
+citeturn239view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006177121/","lineno":null}); Total lines: 497
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code de la route
+L66: 
+L67: Version En vigueur au 17/11/2026 Version En vigueur au 17 novembre 2026
+L68: 
+L69: [Input]Masquer les articles et les sections abrogés
+L70: 
+L71: Voir les tables de concordance Imprimer la page[Button: Copier le texte ]
+L72: 
+L73: [Button: Fermer ]
+L74: # Table de concordance
+L75: 
+L76: Lorsque des dispositions ont été déplacées ou modifiées, une table de concordance est créée qui permet de relier dans un tableau une ou plusieurs anciennes dispositions d'un texte ou d'un code à leur nouvelle disposition.
+L77: 
+L78: Cela est utile dans le cadre d'une création de code (codification), d'une refonte de code ou recodification.
+L79: ### TABLES DE CONCORDANCE
+L80: 
+L81:   * 【7†Télécharger la partie législative au JO du 22/09/2000 (ancienne numérotation / nouvelle numérotation)】
+L82:   * 【8†Télécharger la partie législative au JO du 22/09/2000 (nouvelle numérotation / ancienne numérotation)】
+L83:   * 【9†Télécharger la partie réglementaire au JO du 25/03/2001 (ancienne numérotation / nouvelle numérotation)】
+L84:   * 【10†Télécharger la partie réglementaire au JO du 25/03/2001 (nouvelle numérotation / ancienne numérotation)】
+L85: ### CODIFICATION
+L86:   * Partie législative au JO du 24 septembre 2000 : 【11†dossier législatif de l’ordonnance n° 2000-930】 du 22 septembre 2000 relative à la partie législative du code de la route
+L87:   * Partie réglementaire au JO du 25 mars 2001 : décrets du 22 mars 2001 【12†n° 2001-250】 relatif à la partie Réglementaire du code de la route (Décrets en Conseil d'Etat délibérés en conseil des ministres), 【13†n° 2001-251】 du 22 mars 2001 relatif à la partie Réglementaire du code de la route (Décrets en Conseil d'Etat)
+L88: Dernière modification : 25 juin 2018
+L89: ## ChronoLégi l'accès au droit dans le temps
+L90: 
+L91: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L92: 
+L93: [Input]
+L94: ### Les différentes versions dans le temps
+L95: 
+L96: Fermer le Chronolégi
+L97: 
+L98: À la date du JJ/MM/AAAA
+L99: 
+L100: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L101: 
+L102: Rechercher dans cette section ou dans tout le code
+L103: 
+L104: [Input]Rechercher dans cette section
+L105: 
+L106: [Input]Rechercher dans tout le code
+L107: 
+L108: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L109: 
+L110: [Input] Réinitialiser le champ recherche
+L111: 
+L112: * * *
+L113: 
+L114: Voir le sommaire du code
+L115: 
+L116: [Button: Fermer]
+L117: 
+L118:   * ## 【14†Partie réglementaire (Articles R110-1 à R442-7)】
+L119: Déplier/Replier
+L120:     * ### 【15†Livre IV : L'usage des voies. (Articles R411-1 à R442-7)】
+L121: 
+L122: Déplier/Replier
+L123:       * #### 【16†Titre Ier : Dispositions générales. (Articles R411-1 à R419-2)】
+L124: 
+L125: Déplier/Replier
+L126:         * ##### 【17†Chapitre II : Conduite des véhicules et circulation des piétons (Articles R412-1 à R412-52)】
+L127: 
+L128: Déplier/Replier
+L129:           * ###### 【18†Section 2 : Principes généraux de circulation. (Articles R412-6 à R412-16)】
+L130: 
+L131: Déplier/Replier
+L132:             * 【19†Article R412-6】
+L133:             * 【20†Article R412-6-1】
+L134:             * 【21†Article R412-6-2】
+L135:             * 【22†Article R412-6-3】
+L136:             * 【23†Article R412-6-4】
+L137:             * 【24†Article R412-7】
+L138:             * 【25†Article R412-8】
+L139:             * 【26†Article R412-9】
+L140:             * 【27†Article R412-10】
+L141:             * 【28†Article R412-11】
+L142:             * 【29†Article R412-11-1】
+L143:             * 【30†Article R412-11-2】
+L144:             * 【31†Article R412-11-3】
+L145:             * 【32†Article R412-12】
+L146:             * 【33†Article R412-13】
+L147:             * 【34†Article R412-14】
+L148:             * 【35†Article R412-15】
+L149:             * 【36†Article R412-16】
+L150:             * ABROGÉ 【37†Article R412-17】
+L151: [Input]
+L152: 
+L153:   * ## 【38†Article R412-6】
+L154: 
+L155: En vigueur depuis le 02 août 2008 En vigueur depuis le 02 août 2008
+L156: 
+L157: 【39†Modifié par Décret n°2008-754 du 30 juillet 2008 - art. 15】
+L158: 
+L159: I.-Tout véhicule en mouvement ou tout ensemble de véhicules en mouvement doit avoir un conducteur. Celui-ci doit, à tout moment, adopter un comportement prudent et respectueux envers les autres usagers des voies ouvertes à la circulation. Il doit notamment faire preuve d'une prudence accrue à l'égard des usagers les plus vulnérables.
+L160: II.-Tout conducteur doit se tenir constamment en état et en position d'exécuter commodément et sans délai toutes les manoeuvres qui lui incombent. Ses possibilités de mouvement et son champ de vision ne doivent pas être réduits par le nombre ou la position des passagers, par les objets transportés ou par l'apposition d'objets non transparents sur les vitres.
+L161: III.-Le fait, pour tout conducteur, de contrevenir aux dispositions du II ci-dessus est puni de l'amende prévue pour les contraventions de la deuxième classe.
+L162: 
+L163: IV.-En cas d'infraction aux dispositions du II ci-dessus, l'immobilisation du véhicule peut être prescrite dans les conditions prévues aux 【40†articles L. 325-1 à L. 325-3.】
+L164: 
+L165: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L166: 
+L167: [Button: Fermer ]
+L168: 
+L169:   * ## 【41†Article R412-6-1】
+L170: En vigueur depuis le 22 mai 2020 En vigueur depuis le 22 mai 2020
+L171: 
+L172: 【42†Modifié par Décret n°2020-605 du 18 mai 2020 - art. 10】
+L173: 
+L174: L'usage d'un téléphone tenu en main par le conducteur d'un véhicule en circulation est interdit.
+L175: 
+L176: Est également interdit le port à l'oreille, par le conducteur d'un véhicule en circulation, de tout dispositif susceptible d'émettre du son, à l'exception des appareils électroniques correcteurs de surdité.
+L177: Les dispositions du deuxième alinéa ne sont pas applicables aux conducteurs des véhicules d'intérêt général prioritaire prévus à l'article 【43†R. 311-1】, ni dans le cadre de l'enseignement de la conduite des cyclomoteurs, motocyclettes, tricycles et quadricycles à moteur ou de l'examen du permis de conduire ces véhicules.
+L178: 
+L179: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L180: Tout conducteur coupable de cette infraction encourt également la peine complémentaire de suspension, pour une durée de trois ans au plus, du permis de conduire, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L181: 
+L182: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L183: 
+L184: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L185: 
+L186: [Button: Fermer ]
+L187:   * ## 【44†Article R412-6-2】
+L188: 
+L189: En vigueur depuis le 05 janv. 2012 En vigueur depuis le 05 janvier 2012
+L190: 
+L191: 【45†Modifié par Décret n°2012-3 du 3 janvier 2012 - art. 19】
+L192: 
+L193: Le fait de placer dans le champ de vision du conducteur d'un véhicule en circulation un appareil en fonctionnement doté d'un écran et ne constituant pas une aide à la conduite ou à la navigation est interdit.
+L194: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la cinquième classe.
+L195: 
+L196: L'appareil mentionné au premier alinéa est saisi.
+L197: 
+L198: Toute condamnation donne lieu de plein droit à la confiscation de l'appareil qui a servi ou était destiné à commettre l'infraction.
+L199: 
+L200: Est également encourue la peine de confiscation de l'appareil mentionné au premier alinéa.
+L201: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L202: 
+L203: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L204: 
+L205: [Button: Fermer ]
+L206: 
+L207:   * ## 【46†Article R412-6-3】
+L208: 
+L209: En vigueur depuis le 12 juin 2024 En vigueur depuis le 12 juin 2024
+L210: 
+L211: 【47†Création Décret n°2024-528 du 10 juin 2024 - art. 11】
+L212: I.-L'activation de la fonction d'aide au stationnement d'un véhicule terrestre à moteur ne peut se faire que par une personne titulaire du permis de conduire correspondant à la catégorie du véhicule qui assure, en qualité de conducteur, le contrôle de la manœuvre de stationnement. Cette personne est à tout instant en capacité de mettre fin à cette manœuvre. Les modalités techniques de fonctionnement de la fonction d'aide au stationnement sont définies par arrêté du ministre chargé de la sécurité routière.
+L213: La fonction d'aide au stationnement peut être activée par un élève conducteur sous la surveillance constante et directe d'un accompagnateur dans les périodes de conduite accompagnée définies aux 【48†articles L. 211-3 à L. 211-5】.
+L214: II.-Lorsque la fonction d'aide au stationnement est activée à l'aide d'une télécommande ou d'un téléphone et que la personne qui assure le contrôle de la manœuvre se trouve à l'extérieur du véhicule, elle doit se situer dans un rayon maximal de 6 mètres de celui-ci. Son champ de vision sur le véhicule et la circulation avoisinante ne doit pas être réduit.
+L215: III.-Par dérogation à l'【49†article R. 412-6-1】, la personne qui active la fonction d'aide au stationnement n'est autorisée à tenir en main un téléphone que lorsqu'elle se trouve à l'extérieur du véhicule et à la seule fin d'assurer le contrôle de la manœuvre de stationnement.
+L216: 
+L217: IV.-Le fait de contrevenir aux dispositions des I et II est puni de l'amende prévue pour les contraventions de la deuxième classe.
+L218: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L219: 
+L220: [Button: Fermer ]
+L221: 
+L222:   * ## 【50†Article R412-6-4】
+L223: 
+L224: En vigueur depuis le 12 juin 2024 En vigueur depuis le 12 juin 2024
+L225: 
+L226: 【51†Création Décret n°2024-528 du 10 juin 2024 - art. 12】
+L227: I. - Le fait pour tout conducteur d'un véhicule terrestre à moteur d'adopter une position ou d'effectuer une manœuvre acrobatique ou non conforme aux conditions normales d'utilisation d'un véhicule, caractérisée par son imprudence, sur une voie ouverte à la circulation publique, est puni de l'amende prévue pour les contraventions de la troisième classe.
+L228: 
+L229: II. - Tout conducteur coupable de cette infraction encourt également les peines complémentaires suivantes :
+L230: 1° La suspension, pour une durée de trois ans au plus, du permis de conduire, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle ;
+L231: 
+L232: 2° L'obligation d'accomplir, à ses frais, un stage de sensibilisation à la sécurité routière.
+L233: 
+L234: III. - Cette contravention donne lieu de plein droit à la réduction de deux points du permis de conduire.
+L235: 
+L236: [Button: Voir les versions ][Button: Comparer les versions ][Button: Informations pratiques ]
+L237: 
+L238: [Button: Fermer ]
+L239:   * ## 【52†Article R412-7】
+L240: 
+L241: En vigueur depuis le 08 juil. 2023 En vigueur depuis le 08 juillet 2023
+L242: 
+L243: 【53†Modifié par Décret n°2023-563 du 5 juillet 2023 - art. 8】
+L244: 
+L245: I.-Les véhicules doivent, sauf en cas de nécessité absolue, circuler sur la chaussée.
+L246: 
+L247: Toutefois, ils peuvent franchir un trottoir, à partir de l'accès le plus proche, pour rejoindre ou quitter les accès carrossables des immeubles riverains ou des accès non ouverts à la circulation publique.
+L248: Ils peuvent également le franchir pour rejoindre une autre chaussée s'il existe un aménagement à cet effet.
+L249: 
+L250: Les engins d'entretien du trottoir peuvent y circuler dans l'exercice de leur mission, sauf dispositions contraires prises par l'autorité investie du pouvoir de police.
+L251: Dans l'exercice de leur mission, les véhicules d'entretien des voies du domaine public routier peuvent circuler et s'arrêter sur les bandes cyclables, les pistes cyclables et les voies vertes.
+L252: Les véhicules de collecte des ordures ménagères peuvent circuler et s'arrêter sur les bandes cyclables dans leur sens de circulation pour la réalisation des opérations de collecte de la section de rue concernée.
+L253: II.-Lorsqu'une voie de circulation est réservée à certaines catégories de véhicules, les conducteurs d'autres catégories de véhicules ne doivent pas circuler sur cette voie. Les conducteurs de véhicules motorisés ne doivent pas circuler dans une aire piétonne, à l'exception des cas prévus par les règles de circulation mentionnées à l'article 【54†R. 411-3】, ni sur une voie verte, à l'exception des cas prévus par les règles de circulation mentionnées à l'article 【55†R. 411-3-2】.
+L254: III.-Sous réserve de l'application des dispositions des deuxième à sixième alinéas du I, le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la 4e classe.
+L255: 
+L256: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L257: 
+L258: [Button: Fermer ]
+L259: 
+L260:   * ## 【56†Article R412-8】
+L261: 
+L262: En vigueur depuis le 05 janv. 2012 En vigueur depuis le 05 janvier 2012
+L263: 【57†Modifié par Décret n°2012-3 du 3 janvier 2012 - art. 20】
+L264: 
+L265: La circulation sur les bandes d'arrêt d'urgence est interdite.
+L266: 
+L267: Le fait de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L268: Tout conducteur coupable de cette infraction encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L269: 
+L270: Cette contravention commise à l'occasion de la conduite d'un véhicule donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L271: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L272: 
+L273: [Button: Fermer ]
+L274: 
+L275:   * ## 【58†Article R412-9】
+L276: 
+L277: En vigueur depuis le 11 janv. 2025 En vigueur depuis le 11 janvier 2025
+L278: 
+L279: 【59†Modifié par Décret n°2025-33 du 9 janvier 2025 - art. 3】
+L280: 
+L281: En marche normale, tout conducteur doit maintenir son véhicule près du bord droit de la chaussée, autant que le lui permet l'état ou le profil de celle-ci.
+L282: Toutefois, un conducteur qui pénètre sur un carrefour à sens giratoire comportant plusieurs voies de circulation en vue d'emprunter une sortie située sur sa gauche par rapport à son axe d'entrée peut serrer à gauche.
+L283: 
+L284: Chaque manoeuvre de changement de voie à l'intérieur du carrefour à sens giratoire reste soumise aux règles de la priorité et doit être signalée aux autres conducteurs.
+L285: Un conducteur d'engin de déplacement personnel motorisé, de cyclomobile léger ou de cycle peut s'éloigner du bord droit de la chaussée lorsqu'une trajectoire matérialisée pour les cycles, signalisée en application des dispositions de l'【60†article R. 411-25】, le permet.
+L286: Sur les voies où la vitesse maximale autorisée n'excède pas 50 km/ h, un conducteur d'engin de déplacement personnel motorisé, de cyclomobile léger ou de cycle peut s'écarter des véhicules en stationnement sur le bord droit de la chaussée, d'une distance nécessaire à sa sécurité.
+L287: Sous réserve des dispositions des quatrième et cinquième alinéas du présent article, le fait, pour tout conducteur, de ne pas maintenir, en marche normale, son véhicule près du bord droit de la chaussée est puni de l'amende prévue pour les contraventions de la deuxième classe.
+L288: 
+L289: Le fait, pour tout conducteur, de circuler, en marche normale, sur la partie gauche d'une chaussée à double sens de circulation est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L290: Tout conducteur coupable de cette dernière infraction encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L291: 
+L292: Cette dernière contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L293: Les dispositions du présent article ne s'appliquent pas aux représentants mentionnés à l'article 【61†R. 411-31】 dans les cas prévus à l'article 【62†R. 414-3-1】 et aux conducteurs dans les cas prévus aux articles 【63†R. 412-11-1】 et 【64†R. 412-11-3】.
+L294: 
+L295: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L296: 
+L297: [Button: Fermer ]
+L298: 
+L299:   * ## 【65†Article R412-10】
+L300: 
+L301: En vigueur depuis le 01 avr. 2003 En vigueur depuis le 01 avril 2003
+L302: 【66†Modifié par Décret n°2003-293 du 31 mars 2003 - art. 2 () JORF 1er avril 2003】
+L303: 
+L304: Tout conducteur qui s'apprête à apporter un changement dans la direction de son véhicule ou à en ralentir l'allure doit avertir de son intention les autres usagers, notamment lorsqu'il va se porter à gauche, traverser la chaussée, ou lorsque, après un arrêt ou stationnement, il veut reprendre sa place dans le courant de la circulation.
+L305: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article relatives au changement de direction est puni de l'amende prévue pour les contraventions de la deuxième classe.
+L306: 
+L307: Tout conducteur coupable de cette dernière infraction encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L308: Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L309: 
+L310: Décret 2003-293 art. 8 : Les dispositions des articles 2,3,4,6 et 7 sont applicables à Mayotte.
+L311: 
+L312: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L313: 
+L314: [Button: Fermer ]
+L315: 
+L316:   * ## 【67†Article R412-11】
+L317: 
+L318: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L319: En agglomération, tout conducteur doit ralentir si nécessaire et au besoin s'arrêter pour laisser les véhicules de transport en commun quitter les arrêts signalés comme tels.
+L320: 
+L321: Le fait, pour tout conducteur, de contrevenir, aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la deuxième classe.
+L322: 
+L323: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L324: 
+L325: [Button: Fermer ]
+L326: 
+L327:   * ## 【68†Article R412-11-1】
+L328: En vigueur depuis le 19 sept. 2018 En vigueur depuis le 19 septembre 2018
+L329: 
+L330: 【69†Création Décret n°2018-795 du 17 septembre 2018 - art. 11】
+L331: Lorsqu'un véhicule équipé des feux spéciaux mentionnés aux articles 【70†R. 313-27】 et 【71†R. 313-28】 ou tout autre véhicule dont le conducteur fait usage de ses feux de détresse dans les conditions prévues au premier alinéa de l'article 【72†R. 416-18】 est immobilisé ou circule à faible allure sur un accotement ou une bande d'arrêt d'urgence, tout conducteur circulant sur le bord droit de la chaussée doit à son approche réduire sa vitesse conformément à l'article R.
+L332: 413-17 et changer de voie de circulation après s'être assuré qu'il peut le faire sans danger. Si le changement de voie n'est pas réalisable, le conducteur doit s'éloigner le plus possible du véhicule en demeurant dans sa voie.
+L333: Lorsque ce même véhicule est immobilisé ou circule à faible allure sur une chaussée, tout conducteur circulant sur la même voie de circulation doit à son approche réduire sa vitesse conformément à l'article 【73†R. 413-17】, au besoin s'arrêter, et dépasser le véhicule en exécutant les manœuvres prévues à l'article 【74†R. 414-4】.
+L334: Lorsque ce même véhicule est immobilisé ou circule à faible allure sur une voie de circulation adjacente, tout conducteur doit à son approche réduire sa vitesse conformément à l'article R. 413-17 et s'en éloigner le plus possible en demeurant dans la même voie.
+L335: Les manœuvres prévues au présent article se réalisent dans le respect de la signalisation routière ou, le cas échant, des indications données par l'un des agents mentionnés à l'article 【75†R. 411-28】.
+L336: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L337: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L338: 
+L339: [Button: Fermer ]
+L340: 
+L341:   * ## 【76†Article R412-11-2】
+L342: 
+L343: En vigueur depuis le 01 août 2021 En vigueur depuis le 01 août 2021
+L344: 
+L345: 【77†Création Décret n°2021-1006 du 29 juillet 2021 - art. 5】
+L346: En dehors des autoroutes et routes à accès réglementé, les véhicules de catégorie M2, M3, N2, N3, O1, O2, O3 ou O4, ou leurs ensembles, équipés de dispositifs aérodynamiques montés à l'arrière circulent avec lesdits dispositifs repliés, rétractés ou enlevés, dans les conditions définies par arrêté des ministres chargés des transports et de la sécurité routière.
+L347: Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article et aux dispositions prises pour son application est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L348: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L349: 
+L350: [Button: Fermer ]
+L351: 
+L352:   * ## 【78†Article R412-11-3】
+L353: 
+L354: En vigueur depuis le 11 janv. 2025 En vigueur depuis le 11 janvier 2025
+L355: 
+L356: 【79†Création Décret n°2025-33 du 9 janvier 2025 - art. 4】
+L357: I.-Sur les autoroutes et les routes à deux chaussées séparées par un terre-plein central et dotées d'au moins deux voies chacune, où la vitesse maximale autorisée est supérieure ou égale à 70 km/ h en application des articles 【80†R. 413-2】 ou 【81†R. 413-3】, nonobstant la fixation d'une vitesse maximale autorisée plus faible par l'autorité de police de la circulation en application de l'article 【82†R.
+L358: 413-1】, lorsqu'en raison de sa densité, la circulation s'y est établie en files ininterrompues sur toutes les voies, y compris celles réservées, le cas échéant, à la circulation de certaines catégories particulières de véhicules ou d'usagers, tout conducteur d'un véhicule d'une largeur d'un mètre maximum relevant de la catégorie L3e ou L5e définie à l'article 【43†R.
+L359: 311-1】 peut circuler entre les files de véhicules situées sur les deux voies, ayant le même sens de circulation, les plus à gauche d'une chaussée, dans le respect des conditions suivantes :
+L360: 1° L'espacement latéral entre les véhicules circulant dans les deux voies les plus à gauche d'une chaussée est suffisant ;
+L361: 
+L362: 2° Aucune des voies de circulation sur la chaussée n'est en travaux ou couverte de neige ou de verglas sur tout ou partie de sa surface ;
+L363: 
+L364: 3° Avant de circuler en inter-files, le conducteur avertit de son intention les autres usagers ;
+L365: 
+L366: 4° La vitesse des véhicules en inter-files ne peut excéder 50 km/ h ;
+L367: 5° Si l'une des files est à l'arrêt, la vitesse des véhicules en inter-files ne peut excéder 30 km/ h ;
+L368: 
+L369: 6° Il est interdit à un véhicule en inter-files de dépasser un autre véhicule en inter-files ;
+L370: 
+L371: 7° Le conducteur en inter-files doit reprendre sa place dans le courant normal de la circulation, après avoir averti de son intention les autres usagers, lorsque les véhicules, sur au moins une des deux files, circulent à une vitesse supérieure à la sienne.
+L372: II.-Le fait, pour tout conducteur, de contrevenir aux dispositions du I est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L373: 
+L374: III.-Tout conducteur qui contrevient aux dispositions du I encourt également la peine complémentaire de suspension du permis de conduire pour une durée de trois ans au plus, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L375: IV.-Cette contravention donne lieu de plein droit à la réduction de trois points du permis de conduire.
+L376: 
+L377: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L378: 
+L379: [Button: Fermer ]
+L380: 
+L381:   * ## 【83†Article R412-12】
+L382: 
+L383: En vigueur depuis le 04 juin 2025 En vigueur depuis le 04 juin 2025
+L384: 
+L385: 【84†Modifié par Décret n°2025-487 du 2 juin 2025 - art. 10】
+L386: I. - Lorsque deux véhicules se suivent, le conducteur du second doit maintenir une distance de sécurité suffisante pour pouvoir éviter une collision en cas de ralentissement brusque ou d'arrêt subit du véhicule qui le précède. Cette distance est d'autant plus grande que la vitesse est plus élevée. Elle correspond à la distance parcourue par le véhicule pendant un délai d'au moins deux secondes.
+L387: II. - Hors agglomération, lorsque des véhicules ou des ensembles de véhicules, dont le poids total autorisé en charge dépasse 3,5 tonnes ou dont la longueur dépasse 7 mètres, se suivent à la même vitesse, la distance de sécurité mentionnée au I est d'au moins 50 mètres.
+L388: 
+L389: III. - Les dispositions du II ne sont applicables ni aux convois et aux transports militaires et des unités de la police nationale ni aux véhicules des formations militaires de la sécurité civile, qui font l'objet de règles particulières.
+L390: IV. - Pour les ouvrages routiers dont l'exploitation ou l'utilisation présente des risques particuliers, l'autorité investie du pouvoir de police peut imposer des distances de sécurité plus grandes entre les véhicules.
+L391: 
+L392: V. - Le fait, pour tout conducteur, de contrevenir aux dispositions du présent article est puni de l'amende prévue pour les contraventions de la quatrième classe.
+L393: VI. - Tout conducteur qui a contrevenu aux règles de distance prises en application du présent article encourt également la peine complémentaire de suspension, pour une durée de trois ans au plus, du permis de conduire, cette suspension pouvant être limitée à la conduite en dehors de l'activité professionnelle.
+L394: 
+L395: VII. - La contravention prévue au V donne lieu de plein droit à la réduction de 3 points du permis de conduire.
+L396: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L397: 
+L398: [Button: Fermer ]
+L399: 
+L400:   * ## 【85†Article R412-13】
+L401: 
+L402: En vigueur depuis le 01 juin 2001 En vigueur depuis le 01 juin 2001
+L403: 
+L404: Lorsqu'un véhicule ou son chargement provoque des détériorations à la route ou à ses dépendances, l'immobilisation peut être prescrite dans les conditions prévues aux 【40†articles L. 325-1 à L. 325-3.】
+L405: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L406: 
+L407: [Button: Fermer ]
+L408: 
+L409:   * ## 【86†Article R412-14】
+L410: 
+

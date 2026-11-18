@@ -1,0 +1,623 @@
+{
+  "status": "Draft pilot for manual and independent review, not approved",
+  "date": "2026-11-18",
+  "frozenBankSha256": "f6ec41e703f3b3c26900ce00c5bbad9ffdc1f5488abcc1202896542cbaffe8a7",
+  "items": [
+    {
+      "questionId": "EPA609-SRV-031",
+      "objective": "Distinguish pump runtime from other equipment maintenance counters.",
+      "discriminatingFact": "MACS describes typical vacuum pump oil-change intervals. Which operating record supports that schedule?",
+      "sourcePassageLocator": "MACS January 2025, printed page 23, vacuum pump maintenance paragraph; Appendix C 4.1.1 and 7.3.3",
+      "change": "Rebuilt alternatives around adjacent real procedures.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Date of the cylinder pressure test",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Treats periodic cylinder certification as the service date for the whole machine.",
+          "validOtherCondition": "Refillable container retesting uses a calendar interval.",
+          "whyStemExcludes": "A cylinder test date does not record pump use.",
+          "sourcePassageLocator": "40 CFR part 82 subpart B Appendix C 7.3.3"
+        },
+        {
+          "option": "B",
+          "text": "Elapsed operating hours",
+          "role": "key",
+          "support": "Pump service intervals are based on its operating instructions; MACS gives operating hours as a typical basis. Refrigerant throughput concerns the recovery filter, and cylinder testing has its own schedule. Vehicle count does not measure pump operating time.",
+          "sourcePassageLocator": "MACS January 2025, printed page 23, vacuum pump maintenance paragraph; Appendix C 4.1.1 and 7.3.3"
+        },
+        {
+          "option": "C",
+          "text": "Mass processed by the recovery filter",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Confuses the machine filter counter with the pump service counter.",
+          "validOtherCondition": "A desiccant filter tracks refrigerant processed before replacement.",
+          "whyStemExcludes": "The component is the vacuum pump, not the refrigerant filter.",
+          "sourcePassageLocator": "40 CFR part 82 subpart B Appendix C 4.1.1"
+        },
+        {
+          "option": "D",
+          "text": "Number of vehicles charged that day",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Uses completed jobs as an informal workload measure.",
+          "validOtherCondition": "Job count can describe shop activity, but is not the stated pump interval.",
+          "whyStemExcludes": "Evacuation durations differ; the manual gives operating hours.",
+          "sourcePassageLocator": "MACS January 2025, printed page 23, maintenance paragraph"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-SRV-022",
+      "objective": "Separate material compatibility from cleaning performance and vehicle applicability.",
+      "discriminatingFact": "What has a flushing compound demonstrated by meeting SAE J2670?",
+      "sourcePassageLocator": "MACS January 2025, printed page 22, Flushing A/C Systems",
+      "change": "Rebuilt alternatives around adjacent real procedures.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Suitability for an OEM flushing procedure",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Treats SAE conformity as vehicle-manufacturer authorization.",
+          "validOtherCondition": "OEM service guidance determines whether its system may be flushed.",
+          "whyStemExcludes": "MACS separates manufacturer reservations from J2670 compatibility.",
+          "sourcePassageLocator": "MACS January 2025, printed page 22, opening and final flushing paragraphs"
+        },
+        {
+          "option": "B",
+          "text": "Removal of debris from condenser passages",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Reads a flushing-material standard as a cleaning-performance certification.",
+          "validOtherCondition": "Cleaning effectiveness must be established for the component and process.",
+          "whyStemExcludes": "MACS expressly says compatibility does not assure cleaning.",
+          "sourcePassageLocator": "MACS January 2025, printed page 22, last flushing paragraph"
+        },
+        {
+          "option": "C",
+          "text": "Compatibility with A/C system materials",
+          "role": "key",
+          "support": "J2670 addresses stability and compatibility. It does not establish debris-removal performance, complete removal of residual solvent, or permission to flush a particular manufacturer’s system. Those are separate questions before using a flushing process.",
+          "sourcePassageLocator": "MACS January 2025, printed page 22, Flushing A/C Systems"
+        },
+        {
+          "option": "D",
+          "text": "Removal of solvent during evacuation",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Assumes compatible solvent also evaporates completely under vacuum.",
+          "validOtherCondition": "Residual solvent removal is a separate process concern.",
+          "whyStemExcludes": "MACS warns that prolonged vacuum may leave solvent.",
+          "sourcePassageLocator": "MACS January 2025, printed page 22, solvent boiling-point paragraph"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-EQP-013",
+      "objective": "Recognize that electrical isolation does not establish refrigerant depressurization.",
+      "discriminatingFact": "An unplugged recovery machine needs internal fitting work. Which hazard still requires attention?",
+      "sourcePassageLocator": "MACS January 2025, printed page 11, precautions 12–15",
+      "change": "Narrowed from selecting unplugging to distinguishing two separate energy hazards. No universal internal-service procedure is supplied.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Current entering through the power cord",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Associates equipment maintenance primarily with electric shock.",
+          "validOtherCondition": "Connected equipment can receive mains power.",
+          "whyStemExcludes": "The stem states that the cord is unplugged.",
+          "sourcePassageLocator": "MACS January 2025, printed page 11, precaution 13"
+        },
+        {
+          "option": "B",
+          "text": "Arcing from energized control switches",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Recalls that recovery machines contain spark-producing components.",
+          "validOtherCondition": "Energized equipment may produce arcs or sparks.",
+          "whyStemExcludes": "The stated isolation removes that power source but not refrigerant pressure.",
+          "sourcePassageLocator": "MACS January 2025, printed page 11, precautions 13 and 15"
+        },
+        {
+          "option": "C",
+          "text": "Pressure retained in refrigerant passages",
+          "role": "key",
+          "support": "Disconnecting electrical power does not remove trapped refrigerant pressure. MACS warns that internal fittings can release pressurized refrigerant and directs technicians to consult authorized service personnel before nonroutine work. This is not permission to open the fittings.",
+          "sourcePassageLocator": "MACS January 2025, printed page 11, precautions 12–15"
+        },
+        {
+          "option": "D",
+          "text": "Rotation powered by the compressor motor",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Associates opening a machine with moving powered machinery.",
+          "validOtherCondition": "An operating compressor has motor-driven motion.",
+          "whyStemExcludes": "The question specifies electrical disconnection, not a running cycle.",
+          "sourcePassageLocator": "MACS January 2025, printed page 11, precaution 13"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-EQP-011",
+      "objective": "Distinguish liquid-contact injury from inhalation, decomposition and combustion hazards.",
+      "discriminatingFact": "Liquid refrigerant strikes bare skin during disconnection. Which process causes the immediate contact injury?",
+      "sourcePassageLocator": "Honeywell Solstice yf SDS, sections 4–6; MACS January 2025, printed page 11 precautions 2–3 and 43 precaution 2",
+      "change": "Rejected original eyewear-selection objective: source lacks three adequately grounded competing eyewear configurations. Substituted contact-injury mechanism.",
+      "existingBankOverlap": "Compare EQP-021 (thermal decomposition) before expansion; retain distinct contact versus heat-exposure decisions or consolidate.",
+      "options": [
+        {
+          "option": "A",
+          "text": "Oxygen displaced by the released vapor",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Confuses a refrigerant release’s inhalation danger with its contact injury.",
+          "validOtherCondition": "Vapor accumulation can reduce breathable oxygen.",
+          "whyStemExcludes": "The question concerns freezing at the point of liquid contact.",
+          "sourcePassageLocator": "Honeywell SDS sections 5–6"
+        },
+        {
+          "option": "B",
+          "text": "Acidic products formed near hot surfaces",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Recalls harmful refrigerant decomposition products.",
+          "validOtherCondition": "Fire or intense heat can produce hazardous decomposition products.",
+          "whyStemExcludes": "No hot surface or fire is stated; the injury is immediate cooling.",
+          "sourcePassageLocator": "Honeywell SDS section 5"
+        },
+        {
+          "option": "C",
+          "text": "Heat released when vapor burns in air",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Applies the flammability warning to any released refrigerant.",
+          "validOtherCondition": "Combustion can occur under ignition conditions.",
+          "whyStemExcludes": "Liquid evaporation, rather than burning, explains tissue freezing.",
+          "sourcePassageLocator": "Honeywell SDS sections 4–5"
+        },
+        {
+          "option": "D",
+          "text": "Cooling during rapid evaporation",
+          "role": "key",
+          "support": "Rapid evaporation draws heat from contacted tissue and can cause frostbite. Oxygen displacement is an inhalation hazard; decomposition requires heat, and combustion requires ignition conditions. These hazards call for different controls.",
+          "sourcePassageLocator": "Honeywell Solstice yf SDS, sections 4–6; MACS January 2025, printed page 11 precautions 2–3 and 43 precaution 2"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-REG-026",
+      "objective": "Distinguish the technician demonstration power from equipment and program oversight.",
+      "discriminatingFact": "An EPA representative checks a technician’s practical recovery skills. Which demonstration may the representative require?",
+      "sourcePassageLocator": "40 CFR 82.40(f); 82.38; 82.40(c); 82.32(e)(2)",
+      "change": "Replaced consent strawmen with distinct regulatory oversight functions. Broadened original inspection objective to the explicit practical-demonstration provision.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Submission of the training program’s subject review",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Confuses program oversight with review of a working technician.",
+          "validOtherCondition": "Approved programs periodically review their subject material.",
+          "whyStemExcludes": "The technician is not being asked to administer a training program.",
+          "sourcePassageLocator": "40 CFR 82.40(c)"
+        },
+        {
+          "option": "B",
+          "text": "Performing the procedure on site",
+          "role": "key",
+          "support": "Section 82.40(f) permits a representative to require an on-premises demonstration of proper recovery or recycling. Equipment certification, reclamation analysis and training-program reviews concern different actors and evidence.",
+          "sourcePassageLocator": "40 CFR 82.40(f); 82.38; 82.40(c); 82.32(e)(2)"
+        },
+        {
+          "option": "C",
+          "text": "Chemical analysis of a reclaimed refrigerant batch",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Confuses proper recovery technique with reclaimed-product purity verification.",
+          "validOtherCondition": "Reclaimed refrigerant must meet the applicable purity specification.",
+          "whyStemExcludes": "Batch purity does not demonstrate the technician’s recovery procedure.",
+          "sourcePassageLocator": "40 CFR 82.32(e)(2)"
+        },
+        {
+          "option": "D",
+          "text": "Laboratory certification of the recovery machine",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Confuses checking technician competence with certifying equipment performance.",
+          "validOtherCondition": "Approved testing organizations certify equipment.",
+          "whyStemExcludes": "The subject is the technician’s practical skill.",
+          "sourcePassageLocator": "40 CFR 82.38 and 82.40(f)"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-EQP-022",
+      "objective": "Apply the unchanged reuse requirement to recovery-only equipment used off-site.",
+      "discriminatingFact": "A mobile technician uses recovery-only equipment at a customer’s garage. What must precede recharging the recovered refrigerant?",
+      "sourcePassageLocator": "40 CFR 82.32(e)(1)–(3); MACS January 2025, printed page 16, 31",
+      "change": "Applied mobile rule to a concrete processing decision.",
+      "existingBankOverlap": "REG-005 already tests reuse processing. Do not retain both as separate objectives during expansion; consolidate and replace the freed slot.",
+      "options": [
+        {
+          "option": "A",
+          "text": "Transferring it into a refillable transport cylinder",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Mistakes transfer to a suitable storage vessel for completion of processing.",
+          "validOtherCondition": "A refillable cylinder can receive recovered refrigerant.",
+          "whyStemExcludes": "Storage does not clean the recovered fluid.",
+          "sourcePassageLocator": "MACS January 2025, printed page 11 precaution 10; 40 CFR 82.32(e)(1)"
+        },
+        {
+          "option": "B",
+          "text": "Checking its identity with a refrigerant analyzer",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Assumes a correct refrigerant identity proves it is ready for reuse.",
+          "validOtherCondition": "An analyzer helps identify refrigerant and contamination.",
+          "whyStemExcludes": "Identity testing is not the required recycling or reclamation.",
+          "sourcePassageLocator": "MACS January 2025, printed page 31, refrigerant contamination narrative; 40 CFR 82.32(e)(1)"
+        },
+        {
+          "option": "C",
+          "text": "Recycling or reclamation",
+          "role": "key",
+          "support": "Mobile service retains the same processing requirements as shop service. Recovery alone is insufficient before reuse, even in the same vehicle. A cylinder transfer, identity check or oil measurement serves another purpose and does not complete recycling or reclamation.",
+          "sourcePassageLocator": "40 CFR 82.32(e)(1)–(3); MACS January 2025, printed page 16, 31"
+        },
+        {
+          "option": "D",
+          "text": "Measuring the oil collected during recovery",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Treats the machine’s oil-removal step as sufficient cleaning.",
+          "validOtherCondition": "Oil must be measured for replacement accounting.",
+          "whyStemExcludes": "Recovery and oil collection do not establish completed recycling.",
+          "sourcePassageLocator": "MACS January 2025, printed page 16; 40 CFR 82.32(e)(1)"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-SRV-026",
+      "objective": "Choose the moisture-control intervention for prolonged atmospheric exposure.",
+      "discriminatingFact": "An A/C circuit remained uncapped throughout prolonged collision repairs. Which measure best addresses the resulting moisture problem?",
+      "sourcePassageLocator": "MACS January 2025, printed pages 23–24, evacuation and Desiccant Failure",
+      "change": "Moved the exposure condition into the stem; alternatives are actual, distinct contamination-control procedures.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Replace the system desiccant",
+          "role": "key",
+          "sourcePassageLocator": "MACS January 2025, printed pages 23–24, evacuation and Desiccant Failure",
+          "support": "Prolonged atmospheric exposure can saturate system desiccant, so MACS recommends replacing it. Evacuation removes air and vapor but does not reliably resolve this moisture condition. Pump oil service maintains pump performance; recycling cleans recovered refrigerant outside the vehicle, not saturated desiccant remaining inside it."
+        },
+        {
+          "option": "B",
+          "text": "Extend the evacuation period",
+          "role": "distractor",
+          "sourcePassageLocator": "MACS January 2025, printed pages 23–24, evacuation discussion",
+          "whyCandidateMightChoose": "Extrapolates the role of evacuation in moisture removal to saturated desiccant.",
+          "validOtherCondition": "Adequate evacuation is needed before recharging and may require time for the entire circuit to reach deep vacuum.",
+          "whyStemExcludes": "Page 24 specifically warns that even good evacuation may not remove this moisture and recommends desiccant replacement."
+        },
+        {
+          "option": "C",
+          "text": "Change the vacuum pump oil",
+          "role": "distractor",
+          "sourcePassageLocator": "MACS January 2025, printed page 23, vacuum pump maintenance",
+          "whyCandidateMightChoose": "Attributes poor moisture removal to degraded vacuum-pump performance.",
+          "validOtherCondition": "Pump oil changes maintain evacuation performance at the manufacturer’s interval.",
+          "whyStemExcludes": "The stated cause is prolonged vehicle-circuit exposure, not overdue pump maintenance."
+        },
+        {
+          "option": "D",
+          "text": "Recycle the recovered refrigerant",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.32(e)(1); MACS January 2025, printed page 24",
+          "whyCandidateMightChoose": "Assumes cleaning the recovered fluid also restores the vehicle’s moisture-control component.",
+          "validOtherCondition": "Recovered refrigerant must be properly processed before reuse.",
+          "whyStemExcludes": "External refrigerant processing does not replace saturated desiccant inside the exposed circuit."
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-REG-004",
+      "objective": "Distinguish both end use and service scope in the top-off-only purchase exception.",
+      "discriminatingFact": "Which business qualifies for the equipment exception specifically granted to top-off-only facilities?",
+      "sourcePassageLocator": "40 CFR 82.32(e)(4); EPA Section 608 and Section 609 Overlap, MVAC-like appliances",
+      "change": "Rebuilt alternatives around adjacent real procedures.",
+      "existingBankOverlap": "REG-007 MVAC-like certification is a different obligation; review together to avoid teaching identical category recognition repeatedly.",
+      "options": [
+        {
+          "option": "A",
+          "text": "Business opening off-road cab systems for repair",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.32(e)(4)–(5), 82.34(a)",
+          "whyCandidateMightChoose": "Applies the MVAC-like exception to any work on that equipment.",
+          "validOtherCondition": "Charging alone qualifies for the exception.",
+          "whyStemExcludes": "Opening the circuit is broader than top-off-only work."
+        },
+        {
+          "option": "B",
+          "text": "Business limited to passenger-car refrigerant top-offs",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.32(e)(4)–(5), 82.34(a)",
+          "whyCandidateMightChoose": "Applies the limited-work exception to every vehicle type.",
+          "validOtherCondition": "Top-offs of MVAC-like appliances qualify.",
+          "whyStemExcludes": "Passenger-car systems are MVACs, for which purchase is expressly required."
+        },
+        {
+          "option": "C",
+          "text": "Business opening passenger-car systems for repair",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.32(e)(4)–(5), 82.34(a)",
+          "whyCandidateMightChoose": "Assumes equipment is required only when refrigerant is resold.",
+          "validOtherCondition": "Servicing a refrigerant circuit requires properly using approved equipment.",
+          "whyStemExcludes": "Passenger-car circuit repair meets neither part of the exception."
+        },
+        {
+          "option": "D",
+          "text": "Business limited to off-road cab refrigerant top-offs",
+          "role": "key",
+          "sourcePassageLocator": "40 CFR 82.32(e)(4)–(5), 82.34(a)",
+          "support": "Section 82.32(e)(4) exempts facilities that only charge MVAC-like appliances from purchasing recycling equipment, while retaining technician certification. Passenger-car top-offs require equipment purchase. Opening MVAC-like systems requires approved equipment to be available, and passenger-car repairs require approved equipment use."
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-EQP-024",
+      "objective": "Separate current-job oil removal from prior-job residue.",
+      "discriminatingFact": "A collection bottle held 8 mL before recovery and 20 mL afterward. How much fresh oil replaces this removal?",
+      "sourcePassageLocator": "MACS January 2025, printed page 16, oil recovery reservoir caption",
+      "change": "Rebuilt alternatives around adjacent real procedures.",
+      "existingBankOverlap": "SRV-002 simple oil replacement quantity overlaps; consolidate into this accounting decision before expansion.",
+      "options": [
+        {
+          "option": "A",
+          "text": "8 mL",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Uses the starting mark as the job’s removal.",
+          "validOtherCondition": "8 mL is the recorded quantity already present.",
+          "whyStemExcludes": "It predates the current recovery.",
+          "sourcePassageLocator": "MACS January 2025, printed page 16 reservoir caption; arithmetic from stem"
+        },
+        {
+          "option": "B",
+          "text": "28 mL",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Adds the starting amount to the final reading rather than subtracting.",
+          "validOtherCondition": "Addition would combine two separate job quantities, not cumulative readings.",
+          "whyStemExcludes": "The final mark already includes the starting oil.",
+          "sourcePassageLocator": "MACS January 2025, printed page 16 reservoir caption; arithmetic from stem"
+        },
+        {
+          "option": "C",
+          "text": "20 mL",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Assumes the bottle was empty and uses its final reading.",
+          "validOtherCondition": "Final reading measures this job when the bottle starts empty.",
+          "whyStemExcludes": "The stem gives an 8 mL starting balance.",
+          "sourcePassageLocator": "MACS January 2025, printed page 16 reservoir caption; arithmetic from stem"
+        },
+        {
+          "option": "D",
+          "text": "12 mL",
+          "role": "key",
+          "support": "This job added 20 minus 8, or 12 mL, to the bottle. Replace that removed quantity with fresh oil of the required type. The 8 mL predates this job; 20 mL counts both jobs, and 28 mL double-counts the starting quantity. Emptying the bottle beforehand prevents this error.",
+          "sourcePassageLocator": "MACS January 2025, printed page 16, oil recovery reservoir caption"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-REG-015",
+      "objective": "Select the documentary basis for the resale-only exception when the buyer has no certified technicians.",
+      "discriminatingFact": "A retailer without certified technicians buys small CFC-12 cans for resale. Which statement supports the sales exception?",
+      "sourcePassageLocator": "40 CFR 82.34(b), 82.42(b)(3); EPA servicing, Ozone-Depleting Refrigerants: Sales Restrictions & Recordkeeping Requirements",
+      "change": "Rejected generic allowed-use question. Substituted a conditional documentary decision with competing real records.",
+      "existingBankOverlap": "Adjacent to REG-018 employer purchase proof and REG-020 small-CFC-12 service purchases. This adds resale-purpose documentation, not another certificate-identification item; review the cluster before expansion.",
+      "options": [
+        {
+          "option": "A",
+          "text": "Resale-only intent, purchaser name and business address",
+          "role": "key",
+          "sourcePassageLocator": "40 CFR 82.34(b), 82.42(b)(3); EPA servicing, Ozone-Depleting Refrigerants: Sales Restrictions & Recordkeeping Requirements",
+          "support": "For the resale-only exception covering CFC-12 containers under 20 pounds, the seller obtains a written statement of resale intent with the purchaser’s name and business address. Employee certification can support a different purchase route. Equipment and refrigerant-shipment records document other compliance duties."
+        },
+        {
+          "option": "B",
+          "text": "Employee certification, technician name and certification number",
+          "role": "distractor",
+          "sourcePassageLocator": "EPA Refrigerant Sales Restriction, employer authorized representative documentation; 40 CFR 82.154(c)(1)",
+          "whyCandidateMightChoose": "Applies the employer purchase route despite the retailer’s stated staffing.",
+          "validOtherCondition": "An employer can establish a certified technician’s employment and certification for the applicable purchase route.",
+          "whyStemExcludes": "The stem specifies no certified technicians and purchase for resale."
+        },
+        {
+          "option": "C",
+          "text": "Equipment acquisition, machine model and serial number",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.42(a)(1)(iii), compared with 82.42(b)(3)",
+          "whyCandidateMightChoose": "Confuses a shop’s equipment declaration with authorization to buy restricted cans.",
+          "validOtherCondition": "Equipment-acquisition statements identify the machine and certify proper use.",
+          "whyStemExcludes": "The retailer relies on resale intent, not service equipment ownership."
+        },
+        {
+          "option": "D",
+          "text": "Refrigerant shipment, recipient name and facility address",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.42(b)(1), compared with 82.42(b)(3)",
+          "whyCandidateMightChoose": "Chooses another required name-and-address record associated with refrigerant transfers.",
+          "validOtherCondition": "A covered recovery-equipment owner records facilities receiving recovered refrigerant.",
+          "whyStemExcludes": "This transaction is purchase of unopened small cans for resale, not an off-site recovered-refrigerant shipment."
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-YF-006",
+      "objective": "Distinguish vapor distribution from vapor generation and ignition properties.",
+      "discriminatingFact": "Which R-1234yf property explains why ventilation must address a service pit as well as the workbench?",
+      "sourcePassageLocator": "Honeywell Solstice yf SDS sections 5–6 and 9; MACS January 2025, printed page 43 precaution 1A",
+      "change": "Rebuilt alternatives around adjacent real procedures.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Vapor is denser than surrounding air",
+          "role": "key",
+          "support": "Vapor density greater than air allows released refrigerant to accumulate in low areas. Evaporation creates vapor, pressure depends on temperature, and flammability affects ignition risk; those facts do not explain its tendency to collect in a pit.",
+          "sourcePassageLocator": "Honeywell Solstice yf SDS sections 5–6 and 9; MACS January 2025, printed page 43 precaution 1A"
+        },
+        {
+          "option": "B",
+          "text": "Vapor can ignite within a concentration range",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Connects pit ventilation only to the A2L fire warning.",
+          "validOtherCondition": "Concentration affects ignition possibility.",
+          "whyStemExcludes": "Flammability does not explain why vapor accumulates low.",
+          "sourcePassageLocator": "Honeywell SDS section 9; MACS January 2025, printed page 44"
+        },
+        {
+          "option": "C",
+          "text": "Vapor pressure increases with temperature",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Uses a familiar refrigerant pressure-temperature relationship to explain release behavior.",
+          "validOtherCondition": "Temperature affects pressure in a containing system.",
+          "whyStemExcludes": "The question asks about vertical accumulation after release.",
+          "sourcePassageLocator": "Honeywell SDS section 9 vapor pressure"
+        },
+        {
+          "option": "D",
+          "text": "Liquid evaporates readily after release",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Recognizes that spilled refrigerant becomes vapor and attributes location to evaporation.",
+          "validOtherCondition": "Ready evaporation explains the production of vapor.",
+          "whyStemExcludes": "It does not distinguish a pit from an elevated location.",
+          "sourcePassageLocator": "Honeywell SDS section 6"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-YF-014",
+      "objective": "Distinguish allowed machine actions after a failed pressurized check from earlier and later sequence stages.",
+      "discriminatingFact": "R-1234yf passes vacuum decay but leaks during the partial-charge check. Which operation remains permitted?",
+      "sourcePassageLocator": "MACS January 2025, printed page 51, R-1234yf recharge sequence",
+      "change": "Rebuilt alternatives around adjacent real procedures.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Delivering the remainder of the programmed charge",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Treats the successful vacuum test as sufficient authorization to finish.",
+          "validOtherCondition": "The balance is charged after both checks pass.",
+          "whyStemExcludes": "The pressurized check found a leak.",
+          "sourcePassageLocator": "MACS January 2025, printed page 51, second paragraph"
+        },
+        {
+          "option": "B",
+          "text": "Repeating the initial 15% charging step",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Treats the small test dose as a repeatable diagnostic top-up.",
+          "validOtherCondition": "The initial 15% is added after the vacuum test passes and the detector is positioned.",
+          "whyStemExcludes": "That stage has already occurred and failed.",
+          "sourcePassageLocator": "MACS January 2025, printed page 51, final sequence paragraphs"
+        },
+        {
+          "option": "C",
+          "text": "Injecting replacement compressor lubricant",
+          "role": "distractor",
+          "whyCandidateMightChoose": "Treats oil replacement as independent of the failed refrigerant check.",
+          "validOtherCondition": "Fresh replacement oil is required to replace oil removed during recovery, following the equipment procedure.",
+          "whyStemExcludes": "The described lockout allows only recovery and re-evacuation.",
+          "sourcePassageLocator": "MACS January 2025, printed page 16, oil replacement; page 51, lockout paragraph"
+        },
+        {
+          "option": "D",
+          "text": "Beginning recovery of the test charge",
+          "role": "key",
+          "support": "After a leak is detected during the pressurized check, the described machine permits recovery or re-evacuation. The balance requires passing both checks. Adding the test dose belongs to an earlier stage, and lubricant replacement is not an exception to the lockout.",
+          "sourcePassageLocator": "MACS January 2025, printed page 51, R-1234yf recharge sequence"
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-SRV-029",
+      "objective": "Select charge information that applies to the installed component rather than the original assembly.",
+      "discriminatingFact": "An installed condenser requires a revised charge; existing service data describe the original assembly. Which reference controls?",
+      "sourcePassageLocator": "MACS January 2025, printed page 25, revised charge specifications and replacement condenser paragraph",
+      "change": "Removed wrong-configuration labels from alternatives. Stem establishes why original-assembly references no longer supply the installed component’s charge.",
+      "existingBankOverlap": null,
+      "options": [
+        {
+          "option": "A",
+          "text": "Factory underhood label",
+          "role": "distractor",
+          "sourcePassageLocator": "MACS January 2025, printed page 25, replacement label discussion",
+          "whyCandidateMightChoose": "Treats the permanent vehicle label as controlling after a component changes capacity.",
+          "validOtherCondition": "The factory label supplies the original configuration’s charge unless revised.",
+          "whyStemExcludes": "The stem explicitly says the installed condenser requires a revision."
+        },
+        {
+          "option": "B",
+          "text": "Replacement component instructions",
+          "role": "key",
+          "sourcePassageLocator": "MACS January 2025, printed page 25, revised charge specifications and replacement condenser paragraph",
+          "support": "The installed condenser’s instructions supply its revised charge specification. MACS describes replacement condensers that require a changed charge and a new label. Here, the other references describe the original assembly; they may govern that configuration but do not supply this replacement’s revision."
+        },
+        {
+          "option": "C",
+          "text": "Vehicle workshop manual",
+          "role": "distractor",
+          "sourcePassageLocator": "MACS January 2025, printed page 25, component changes and revised service information; hypothetical reference applicability supplied by stem",
+          "whyCandidateMightChoose": "Gives the general vehicle service reference priority over part-specific instructions.",
+          "validOtherCondition": "A workshop specification can govern the configuration it describes.",
+          "whyStemExcludes": "The hypothetical stem establishes that existing service data describe the original assembly."
+        },
+        {
+          "option": "D",
+          "text": "Earlier service bulletin",
+          "role": "distractor",
+          "sourcePassageLocator": "MACS January 2025, printed page 25, service bulletin and component-specific instruction paragraphs",
+          "whyCandidateMightChoose": "Knows that bulletins can supersede factory labels and assumes that precedence resolves this conflict.",
+          "validOtherCondition": "An applicable bulletin can revise the original specification.",
+          "whyStemExcludes": "The stem states the existing data concern the original assembly, not the newly installed condenser."
+        }
+      ]
+    },
+    {
+      "questionId": "EPA609-REG-028",
+      "objective": "Apply the salvage-specific processing route rather than a universal purchaser claim.",
+      "discriminatingFact": "Unreclaimed salvage MVAC refrigerant is being reused. Which facility must perform the required recycling?",
+      "sourcePassageLocator": "40 CFR 82.34(d)(1)(ii)(A)–(B); 82.154(c)–(d)",
+      "change": "Rejected broad exclusive-buyer claim. Replaced with the explicit unreclaimed salvage processing route.",
+      "existingBankOverlap": "Review REG-025 off-site common ownership and REG-005 generic reuse: salvage-specific facility condition is distinct, but explanations must preserve scope.",
+      "options": [
+        {
+          "option": "A",
+          "text": "Facility charging it into the receiving vehicle",
+          "role": "key",
+          "sourcePassageLocator": "40 CFR 82.34(d)(1)(i)–(ii); 82.32(e)(2)",
+          "support": "For this salvage reuse route, Section 82.34(d)(1)(ii)(B) assigns recycling to the facility that charges or recharges the refrigerant. Recovery at the salvage yard is an earlier step. Off-site reclamation is a separate route; an independent recycler is not substituted for the recharging facility in this provision."
+        },
+        {
+          "option": "B",
+          "text": "Salvage facility that extracted it from the donor",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.34(d)(1)(i)–(ii); 82.32(e)(2)",
+          "whyCandidateMightChoose": "Assumes the original recovering facility must also do the cleaning.",
+          "validOtherCondition": "The disposal facility may recover with dedicated approved equipment.",
+          "whyStemExcludes": "The recycling obligation is assigned to the facility doing the recharge."
+        },
+        {
+          "option": "C",
+          "text": "Reclamation facility receiving it for purification",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.34(d)(1)(i)–(ii); 82.32(e)(2)",
+          "whyCandidateMightChoose": "Confuses the two permitted salvage processing routes.",
+          "validOtherCondition": "A reclamation facility can process refrigerant under the alternative reclamation route.",
+          "whyStemExcludes": "The question specifies unreclaimed refrigerant reused through recycling."
+        },
+        {
+          "option": "D",
+          "text": "Independent MVAC recycler hired by the seller",
+          "role": "distractor",
+          "sourcePassageLocator": "40 CFR 82.34(d)(1)(i)–(ii); 82.32(e)(2)",
+          "whyCandidateMightChoose": "Applies an outsourced recycling arrangement to the salvage reuse route.",
+          "validOtherCondition": "Off-site recycling has a separate, limited common-ownership provision in 82.32(e)(2).",
+          "whyStemExcludes": "This salvage provision specifically requires recycling by the recharging facility."
+        }
+      ]
+    }
+  ]
+}

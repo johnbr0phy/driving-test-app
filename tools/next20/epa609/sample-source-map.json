@@ -1,0 +1,198 @@
+[
+  {
+    "questionId": "EPA609-REG-001",
+    "objective": "consideration",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "82.32(g)",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-002",
+    "objective": "cargo",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "82.32(d)",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-003",
+    "objective": "mvac-like",
+    "sourceURL": "https://www.epa.gov/section608/section-608-and-section-609-overlap",
+    "sourceLocator": "EPA overlap:Technician Certification",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-004",
+    "objective": "topoff",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "82.32(e)(4)",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-005",
+    "objective": "reuse",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "82.32(e)(1)",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-006",
+    "objective": "co2exception",
+    "sourceURL": "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing",
+    "sourceLocator": "EPA servicing:Venting Prohibition",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-007",
+    "objective": "registration",
+    "sourceURL": "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing",
+    "sourceLocator": "EPA servicing:Recordkeeping Requirements for Service Shops",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-REG-008",
+    "objective": "recorddestination",
+    "sourceURL": "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing",
+    "sourceLocator": "EPA servicing:Recordkeeping Requirements for Service Shops",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-001",
+    "objective": "pagmoisture",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p11 item5",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-002",
+    "objective": "testair",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p11 item4;Appendix C5.2",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-003",
+    "objective": "overfillbasis",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "Appendix C7.2",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-004",
+    "objective": "hoseend",
+    "sourceURL": "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing",
+    "sourceLocator": "EPA servicing:Applicability of Unique Fittings to Manifold Gauges and Refrigerant Identifiers",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-005",
+    "objective": "filterlockout",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "Appendix C4.1.1-4.1.2",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-006",
+    "objective": "hoseferrule",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p36:Measure Twice Crimp Once",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-007",
+    "objective": "crimpdies",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p36:Appearance Counts",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-EQP-008",
+    "objective": "cylretest",
+    "sourceURL": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "sourceLocator": "Appendix C7.3.3-7.3.4",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-001",
+    "objective": "accumulator",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p14:Effect of System Design",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-002",
+    "objective": "oilreplace",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p16:System Lubricants",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-003",
+    "objective": "pressuremass",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p28:Charging Systems",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-004",
+    "objective": "decimal",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p25-26:Conversion Chart",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-005",
+    "objective": "evacuation",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p23:A/C System Evacuation",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-006",
+    "objective": "dyefactory",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p21:Before You Begin Using UV Dye;Looking for Leaks",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-007",
+    "objective": "scaleresolution",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p27:Equipment Inaccuracy",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-SRV-008",
+    "objective": "hoselength",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p28:Not Accounting for Refrigerant Inside Service Hoses",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-YF-001",
+    "objective": "evaporator",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p44:Unique Properties",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-YF-002",
+    "objective": "identifierinterface",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p47:Identifying HFO-1234yf",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-YF-003",
+    "objective": "yfprecharge",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p51:A/C System Recharge",
+    "fetched": "2026-11-18"
+  },
+  {
+    "questionId": "EPA609-YF-004",
+    "objective": "electriclubricant",
+    "sourceURL": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "sourceLocator": "MACS p45:Similarities to HFC-134a",
+    "fetched": "2026-11-18"
+  }
+]

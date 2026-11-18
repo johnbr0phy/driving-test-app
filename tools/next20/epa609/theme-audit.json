@@ -1,0 +1,21 @@
+{
+  "light": [
+    112,
+    30,
+    38
+  ],
+  "dark": [
+    112,
+    30,
+    39
+  ],
+  "clashes": [],
+  "pendingHueDistances": {
+    "240": 128,
+    "276": 164,
+    "176": 64
+  },
+  "lightWhiteTextContrast": 4.805766310086509,
+  "darkWhiteTextContrast": 4.602297411360856,
+  "darkBrandTextOnGray900": 8.598384446169518
+}

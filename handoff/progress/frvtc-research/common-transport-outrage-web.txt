@@ -1,0 +1,400 @@
+Article L3120-2 - Code des transports - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033745346)
+citeturn283view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033745346","lineno":175}); Total lines: 264
+L119:   * Partie réglementaire au 【48†JO n° 0122 du 27/05/2014】 : 【49†décret n° 2014-530】 du 22 mai 2014 relatif à certaines dispositions de la partie réglementaire du code des transports (Décrets en Conseil d’État et décrets simples).
+L120:   * Partie réglementaire au 【50†JO n° 0281 du 5 décembre 2014】 : 【51†décret n° 2014-1440】 du 4 décembre 2014 relatif aux dispositions du livre III de la cinquième partie réglementaire du code des transports (Décrets en Conseil d'Etat et en conseil des ministres).
+L121:   * Partie réglementaire au 【52†JO n° 0302 du 31 décembre 2014】 : 【53†décret n° 2014-1670】 du 30 décembre 2014 relatif aux dispositions du livre III de la cinquième partie réglementaire du code des transports et à leur adaptation à l'outre-mer (Décrets en Conseil d'Etat et décrets simples).
+L122:   * Partie réglementaire au 【54†JO n° 0269 du 19 novembre 2016】 : 【55†décrets du 17 novembre 2016 n° 2016-1549】  relatif à certaines dispositions de la partie réglementaire du code des transports, n° 【56†2016-1550】 relatif à certaines dispositions de la partie réglementaire du code des transports.
+L123:   * Partie réglementaire au 【57†JO n° 0283 du 6 décembre 2016】 : 【58†décret n° 2016-1660】 du 5 décembre 2016 relatif à des dispositions du livre Ier de la cinquième partie réglementaire du code des transports.
+L124:   * Partie réglementaire au 【59†JO n° 0302 du 29 décembre 2016】 : 【60†décret n° 2016-1893】 du 28 décembre 2016 relatif aux dispositions du livre Ier, du livre IV, à l'exception de son titre IV, ainsi que des chapitres Ier et IV des titres Ier à IX du livre VII de la cinquième partie réglementaire du code des transports, et portant diverses mesures d'adaptation relatives à l'outre-mer.
+L125:   * Partie réglementaire au 【61†JO n° 0026 du 31 janvier 2017】 : 【62†décret n° 2017-107】 du 30 janvier 2017 relatif à la codification du titre VI du livre II de la première partie ainsi que des chapitres IV et V du titre Ier du livre Ier de la troisième partie du code des transports et comportant diverses dispositions en matière de transport public routier de personnes.
+L126:   * Partie réglementaire au 【63†JO n° 0159 du 11 juillet 2019】 : 【64†décret n° 2019-726】 du 9 juillet 2019 relatif aux dispositions des titres IV, V et VI du livre II de la deuxième partie réglementaire du code des transports et comportant diverses dispositions relatives à la sûreté des transports.
+L127:   * Partie réglementaire au 【65†JO n° 0254 du 1 novembre 2023】 : 【66†décret n° 2023-1008】 du 31 octobre 2023 portant sixième partie réglementaire du code des transports.
+L128: ### VOIR AUSSI
+L129:   * 【67†Dossier législatif de l'ordonnance n° 2019-78】 du 6 février 2019 relative à la préparation au retrait du Royaume-Uni de l'Union européenne en matière de transport routier de personnes et de marchandises et de sûreté dans le tunnel sous la Manche [article 6 : insertion au livre II de la deuxième partie du code d'un titre VII « RÉGIME DE SÛRETÉ DE LA PARTIE FRANÇAISE DE LA LIAISON FIXE TRANS-MANCHE »]
+L130:   * 【68†Décret n° 2017-423】 du 28 mars 2017 portant application de la loi pour l'économie bleue et modifiant le code des transports
+L131:   * 【69†Dossier législatif de la loi n° 2016-816】 du 20 juin 2016 pour l'économie bleue
+L132:   * 【70†Dossier législatif de l'ordonnance n° 2016-79】 du 29 janvier 2016 relative aux gares routières et à la recodification des dispositions du code des transports relatives à l'Autorité de régulation des activités ferroviaires et routières
+L133:   * 【71†Décret n° 2014-1725】 du 30 décembre 2014 relatif au transport public particulier de personnes [Les dispositions de l'annexe au présent décret constituent, respectivement, le titre II du livre Ier et les titres III, IV et V du livre V de la troisième partie réglementaire du code des transports.]
+L134:   * 【72†Décret n° 2014-1416】 du 28 novembre 2014 relatif aux modalités d'exercice de l'activité privée de protection des navires [au début de la cinquième partie, il est inséré un livre IV intitulé « Le transport maritime »]
+L135:   * 【73†Dossier législatif de l'ordonnance n° 2014-1380】 du 21 novembre 2014 rapprochant la législation des transports applicable à Mayotte de la législation applicable en métropole et portant adaptation au droit européen de la législation des transports applicable à Mayotte
+L136:   * 【74†Décret n° 2014-881】 du 1er août 2014 pris pour l'application des dispositions du titre VI du livre V de la cinquième partie du code des transports et relatif aux conditions sociales du pays d'accueil [après la quatrième partie du code des transports (partie réglementaire), il est inséré une cinquième partie intitulée « Transport et navigation maritimes » comportant un livre V : « Les gens de mer »]
+L137:   * 【75†Arrêté du 28 juin 2013 portant règlement général de police de la navigation intérieure】 (Articles 1er à 3 : Insertion des articles A. 4241-1 à A. 4241-65, et de leurs annexes, constituant la section 1 du chapitre Ier, du titre IV, du livre II de la quatrième partie du présent code, applicable à compter du 1er septembre 2014, à l'exception des articles A. 4241-26 [relatif aux mesures temporaires d'interruption ou de modification des conditions de la navigation] et A. 4241-35-1 à A.
+L138: 4241-35-4 [relatifs aux transports spéciaux] applicables à compter du 30 août 2013)
+L139:   * 【76†Dossier législatif de l'ordonnance n° 2012-1218】 du 2 novembre 2012 portant réforme pénale en matière maritime (modification de la loi du 17 décembre 1926 portant code disciplinaire et pénal de la marine marchande et la cinquième partie du code des transports)
+L140:   * 【77†Dossier législatif de la loi n° 2012-375】 du 19 mars 2012 ratifiant les ordonnances n° 2010-1307 du 28 octobre 2010 relative à la partie législative du code des transports et n° 2011-204 du 24 février 2011 relative au code des transports
+L141:   * 【78†Dossier législatif de l'ordonnance n° 2011-1300】 du 14 octobre 2011 relative aux redevances aéroportuaires
+L142:   * 【79†Dossier législatif de l'ordonnance n° 2011-204】 du 24 février 2011 relative au code des transports
+L143: Dernière modification : 13 janvier 2020
+L144: ## ChronoLégi l'accès au droit dans le temps
+L145: 
+L146: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L147: 
+L148: [Input]
+L149: ### Les différentes versions dans le temps
+L150: 
+L151: Fermer le Chronolégi
+L152: 
+L153: À la date du JJ/MM/AAAA
+L154: 
+L155: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L156: 
+L157: Rechercher dans cette section ou dans tout le code
+L158: 
+L159: [Input]Rechercher dans cet article
+L160: 
+L161: [Input]Rechercher dans tout le code
+L162: 
+L163: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L164: 
+L165: [Input] Réinitialiser le champ recherche
+L166: 
+L167: * * *
+L168: 
+L169: Voir le sommaire du code
+L170: 
+L171: [Button: Fermer]
+L172: 
+L173:   * ## 【80†PARTIE LÉGISLATIVE (Articles L1000-1 à L6795-1)】
+L174: Déplier/Replier
+L175:     * ### 【81†TROISIÈME PARTIE : TRANSPORT ROUTIER (Articles L3111-1 à L3561-1)】
+L176: 
+L177: Déplier/Replier
+L178:       * #### 【82†LIVRE IER : LE TRANSPORT ROUTIER DE PERSONNES (Articles L3111-1 à L3163-5)】
+L179: 
+L180: Déplier/Replier
+L181:         * ##### 【83†TITRE II : LES TRANSPORTS PUBLICS PARTICULIERS (Articles L3120-1 à L3124-13)】
+L182: 
+L183: Déplier/Replier
+L184:           * ###### 【84†Chapitre préliminaire : Dispositions générales (Articles L3120-1 à L3120-7)】
+L185: 
+L186: Déplier/Replier
+L187:             * 【85†Article L3120-1】
+L188:             * 【86†Article L3120-2】
+L189:             * 【87†Article L3120-2-1】
+L190:             * 【88†Article L3120-2-2】
+L191:             * ABROGÉ 【89†Article L3120-3】
+L192:             * 【90†Article L3120-4】
+L193:             * 【91†Article L3120-5】
+L194:             * 【92†Article L3120-6】
+L195:             * 【93†Article L3120-7】
+L196: 
+L197: [Input]
+L198: ## Article L3120-2
+L199: 
+L200: En vigueur depuis le 31 déc. 2016 En vigueur depuis le 31 décembre 2016
+L201: 
+L202: 【94†Modifié par LOI n°2016-1920 du 29 décembre 2016 - art. 13 (V)】
+L203: 【95†Modifié par LOI n°2016-1920 du 29 décembre 2016 - art. 6】
+L204: 
+L205: I.-Les véhicules qui effectuent les prestations mentionnées à 【96†l'article L. 3120-1】 ne peuvent pas être loués à la place, sauf s'ils font l'objet d'une réservation préalable dans les conditions définies par un décret en Conseil d'Etat.
+L206: II.-A moins de justifier de l'autorisation de stationnement mentionnée à 【97†l'article L. 3121-1,】 le conducteur d'un véhicule mentionné au I du présent article ne peut :
+L207: 
+L208: 1° Prendre en charge un client sur la voie ouverte à la circulation publique, sauf s'il justifie d'une réservation préalable ;
+L209: 
+L210: 2° S'arrêter, stationner ou circuler sur la voie ouverte à la circulation publique en quête de clients ;
+L211: 3° Stationner sur la voie ouverte à la circulation publique, à l'abord des gares et des aérogares ou, le cas échéant, dans l'enceinte de celles-ci, au delà d'une durée, fixée par décret, précédant la prise en charge du client qui a effectué une réservation préalable.
+L212: 
+L213: III.-Sont interdits aux personnes réalisant des prestations mentionnées à l'article L. 3120-1 et aux intermédiaires auxquels elles ont recours, notamment les centrales de réservation au sens de l'article 【98†L. 3142-1】 :
+L214: 1° Le fait d'informer un client, avant la réservation mentionnée au 1° du II du présent article, quel que soit le moyen utilisé, à la fois de la localisation et de la disponibilité d'un véhicule mentionné au I quand il est situé sur la voie ouverte à la circulation publique sans que son propriétaire ou son exploitant soit titulaire d'une autorisation de stationnement mentionnée à l'article L. 3121-1 ;
+L215: 2° Le démarchage d'un client en vue de sa prise en charge dans les conditions mentionnées au 1° du II du présent article ;
+L216: 
+L217: 3° Le fait de proposer à la vente ou de promouvoir une offre de prise en charge effectuée dans les conditions mentionnées au même 1°.
+L218: 
+L219: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L220: 
+L221: [Button: Fermer ]
+L222: 
+L223: Code des transports
+L224: 
+L225: En vigueur au 16/11/2026 En vigueur au 16 novembre 2026
+L226: 
+L227: [Button: Ouvrir ][Button: Réduire ]
+L228: Chapitre préliminaire : Dispositions générales
+L229: 
+L230: [Input]
+L231: 
+L232: [Input: JJ/MM/AAAA]
+L233: 
+L234: [Button: Version à la date d’aujourd'hui ]
+L235: 
+L236: Imprimer la page
+L237: 
+L238: Copier le texte
+L239: 
+L240: [Button: Naviguer dans les résultats ]
+L241: 
+L242: [Input]Haut
+L243: de page
+L244: ## L'aide Légifrance
+L245: 
+L246: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L247: 
+L248:   * 【99†Une question, une suggestion ou un problème sur légifrance ?】
+L249:   * 【100†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L250:   * 【101†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L251:   * 【102†Guide des cas d'usage】
+L252: ## Abonnez-vous au Journal officiel de la République française
+L253: 
+L254: Recevez par courriel le sommaire dès sa publication.
+L255: 
+L256: 【103†En savoir plus sur la gestion de vos données et de vos droits.】
+L257: 
+L258: Votre adresse électronique (ex. : 【104†[email protected]】)
+L259: 
+L260: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L261: 
+L262: [Input]
+L263: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【105†formulaire】
+--------------------------------------------------------------------------------
+Outrage sexiste ou sexuel | Service Public (https://www.service-public.gouv.fr/particuliers/vosdroits/F34550)
+citeturn283view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.service-public.gouv.fr/particuliers/vosdroits/F34550","lineno":40}); Total lines: 487
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2:   * Ajouter à mes favoris
+L3:   *   *   *   * [Button: Focus ]
+L4: 
+L5: Partager la page
+L6: 
+L7:   * 【0†Facebook†www.facebook.com】
+L8:   * 【1†X†x.com】
+L9:   * 【2†Linkedin†www.linkedin.com】
+L10:   * Courriel ( )
+L11:   * Copier le lien
+L12: 
+L13: Lien copié
+L14: 
+L15: Fermer
+L16: 
+L17: Ce sujet vous intéresse ?
+L18: 
+L19: Ajoutez cette page à vos favoris et recevez un courriel dès que l’information « Outrage sexiste ou sexuel » est mise à jour.
+L20: 
+L21: 【3†Ajouter à mes favoris】
+L22: 
+L23: Fermer
+L24: 
+L25: Ce sujet a été ajouté à vos favoris
+L26: Vous recevrez un courriel dès que la page « Outrage sexiste ou sexuel » sera mise à jour.
+L27: 
+L28: Vous pouvez à tout moment supprimer votre abonnement dans 【4†mon compte > mes alertes】
+L29: 
+L30: Votre abonnement n’a pas pu être pris en compte.
+L31: 
+L32: Vous devez vous connecter à votre espace personnel afin de vous abonner à la mise à jour de cette page.
+L33: 
+L34: Pour vous abonner aux mises à jour des pages Service Public, vous devez activer votre espace personnel.
+L35: Vous serez alerté(e) par courriel dès que la page « Outrage sexiste ou sexuel » sera mise à jour significativement.
+L36: 
+L37: [Input][Input]
+L38: 
+L39: [Button: ACTIVER MON ESPACE PERSONNEL]
+L40: ### Le lien vers cette page a été envoyé avec succès aux destinataires.
+L41: # Outrage sexiste ou sexuel
+L42: 
+L43: Vérifié le 19 août 2026 - Service Public / Direction de l'information légale et administrative (Premier ministre)
+L44: Une personne vous a suivi dans la rue et a tenu des propos obscènes sur votre physique ? Il s'agit d'un outrage sexiste ou sexuel. Si vous êtes victime ou témoin d'un tel acte, vous pouvez le signaler pour que l'auteur des faits soit interpellé et sanctionné. S'il n'a pas été verbalisé: titleContent immédiatement après que l'outrage a été commis, vous pouvez porter plainte pour qu'il soit jugé par les juridictions pénales. Dans tous les cas, vous pouvez lui demander une indemnisation.
+L45: 
+L46: À savoir
+L47: En cas d'urgence, vous pouvez contacter Police Secours en composant le 17 (ou le 112 si vous résidez à l'étranger). Si vous êtes sourd, malentendant ou aphasique: titleContent, vous pouvez contacter les agents du 114 depuis l'application mobile « Urgence 114 » ou par SMS (en dernier recours).
+L48: 
+L49: [Button: Tout déplier ]
+L50: ## Qu'est-ce qu'un outrage sexiste ou sexuel ?
+L51: 
+L52: Il y a outrage sexiste ou sexuel lorsqu'une personne vous impose un propos ou un comportement à caractère sexiste ou sexuel, qui crée une situation qui vous intimide, vous met mal à l’aise ou vous blesse ou qui porte atteinte à votre dignité, car il est dégradant ou humiliant.
+L53: 
+L54: Exemple :
+L55: L'outrage sexiste peut se traduire par un commentaire insultant ou humiliant sur votre sexe (notamment sur le genre féminin). L'outrage sexuel peut également prendre la forme de commentaires, de bruits, de gestes ou de propositions à caractère sexuel.
+L56: 
+L57: De manière générale, l'outrage sexiste ou sexuel est considéré comme une contravention: titleContent.
+L58: 
+L59: Cet agissement peut être aggravé et constituer un délit: titleContent lorsqu'il est commis :
+L60:   * Par une personne qui abuse de l'autorité que lui accordent ses fonctions (par exemple, un outrage commis par l'employeur sur un salarié)
+L61: 
+L62:   * Sur un mineur
+L63:   * Sur une personne dont la vulnérabilité due à son âge, à une maladie, à un handicap physique ou psychologique ou à une grossesse est apparente ou connue de l'auteur
+L64:   * Sur une personne d'une particulière vulnérabilité ou dépendance en raison de sa situation financière ou sociale
+L65:   * Par plusieurs personnes qui agissent en groupe
+L66:   * Dans un transport en commun, à bord d'un VTC: titleContent ou dans un lieu destiné à l'accès à un moyen de transport collectif de voyageurs (gare, aéroport, abribus, etc.)
+L67:   * En raison de l'orientation sexuelle ou de l'identité de genre: titleContent de la victime
+L68: 
+L69:   * Par une personne déjà condamnée pour la contravention d'outrage sexiste et sexuel et qui commet la même infraction: titleContent en étant en état de récidive: titleContent.
+L70: ## Comment prouver l'outrage sexiste ou sexuel ?
+L71: 
+L72: L'outrage sexiste ou sexuel peut être prouvé par n'importe quel moyen. Vous pouvez notamment utiliser l'un des éléments de preuve suivants :
+L73: 
+L74:   * 【5†Attestation de témoins】 (amis, collègues, etc.)
+L75:   * Échanges écrits avec l'auteur des faits (SMS, mails, etc.)
+L76:   * Enregistrements audios ou vidéos (même à l'insu de l'auteur des faits)
+L77:   * Photographies de l'auteur des faits
+L78:   * Certificat médical.
+L79: Ces preuves sont indispensables si vous souhaitez signaler les faits et/ou déposer plainte: titleContent.
+L80: 
+L81: Vous devez être le plus précis possible : tous ces documents doivent être datés.
+L82: ## Comment signaler un outrage sexiste ou sexuel ?
+L83: 
+L84: Il existe plusieurs manières de signaler un cas d'outrage sexiste ou sexuel. Les autorités à prévenir dépendent du lieu dans lequel cette infraction: titleContent a été commise :
+L85: 
+L86:   * [Button: Cas général]
+L87:   * [Button: Dans un transport]
+L88:   * [Button: Au travail]
+L89: 
+L90: ##### Cas général
+L91: 
+L92: Les dispositifs de signalement sont différents selon votre âge :
+L93: #### Majeur
+L94: 
+L95: Une messagerie instantanée (tchat) vous permet de dialoguer avec un policier ou un gendarme spécialement formé pour ce type d'infraction: titleContent. Ce professionnel vous aidera dans vos démarches et pourra vous orienter si vous souhaitez déposer plainte.
+L96: 
+L97: 【6†Signaler des violences conjugales, sexuelles ou sexistes aux forces de l’ordre】
+L98: 
+L99: À savoir
+L100: 
+L101: À tout moment, l'historique de discussion pourra être effacé de votre ordinateur, téléphone portable ou tablette.
+L102: #### Mineur
+L103: 
+L104: Si vous êtes victime ou témoin d’un outrage à caractère sexiste ou sexuel, une messagerie instantanée (tchat) vous permet de signaler ces faits aux autorités compétentes (police ou gendarmerie) :
+L105: 
+L106: 【7†Signalement de violences sexuelles, de violences physiques, d’injures, de harcèlement ou de maltraitance sur mineur - Service réservé aux mineurs】
+L107: 
+L108: À savoir
+L109: 
+L110: À tout moment, l'historique de discussion pourra être effacé de votre ordinateur, téléphone portable ou tablette.
+L111: À la suite de votre signalement, un enquêteur vous contactera et vous fixera un rendez-vous pour vous entendre. Il pourra vous orienter vers un dépôt de plainte.
+L112: 
+L113: À savoir
+L114: 
+L115: Si les faits sont graves et/ou qu’il y a une véritable possibilité qu’ils se reproduisent, une enquête peut être ouverte sans dépôt de plainte.
+L116: ##### Dans un transport
+L117: 
+L118: Si vous êtes victime ou témoin d'un outrage sexiste ou sexuel et que vous pouvez identifier l'auteur des faits, vous avez la possibilité d'alerter un agent de la SNCF: titleContent, de la RATP: titleContent ou des forces de l'ordre spécialement formé pour ce type d'infraction: titleContent.
+L119: 
+L120: Ce signalement peut avoir lieu depuis une plateforme spécifique.
+L121: 
+L122: Les agents de cette plateforme sont joignables à n'importe quel moment, de manière gratuite et anonyme.
+L123: ###### Où s’adresser ?
+L124: 
+L125:   * [Button: Plateforme de signalement des violences sexistes et sexuelles dans les transports]
+L126: 
+L127: Par téléphone
+L128: 
+L129: 3117
+L130: 
+L131: Par SMS
+L132: 
+L133: 31 177
+L134: 
+L135: Depuis une application
+L136: 
+L137: Depuis l'application « Alerte 3117 » à télécharger à partir d'un smartphone
+L138: 
+L139: Les agents informés de l'outrage peuvent intervenir immédiatement pour interpeler son auteur et le verbaliser: titleContent.
+L140: ##### Au travail
+L141: 
+L142: Dans le cadre du travail, les personnes auxquelles le signalement doit être effectué ne sont pas les mêmes dans le secteur privé que dans le secteur public :
+L143: 
+L144: #### Secteur privé
+L145: 
+L146: Les instances à prévenir diffèrent en fonction de l'auteur de l'outrage sexiste ou sexuel :
+L147: ##### Outrage sexiste ou sexuel commis par un salarié
+L148: 
+L149: Si l'outrage sexiste ou sexuel a été commis dans le cadre du travail, vous pouvez signaler les faits aux représentants du personnel.
+L150: 
+L151: Dans les entreprises de moins de 11 salariés, il s'agit des membres des 【8†commissions paritaires régionales interprofessionnelles (CPRI)†dreets.gouv.fr】.
+L152: 
+L153: Dans les entreprises de plus de 11 salariés, les faits peuvent être dénoncés au 【9†comité social et économique (CSE)】.
+L154: Les représentants du personnel ou le CSE informeront l'employeur, sauf s'il est l'auteur de l'outrage.
+L155: 
+L156: Vous pouvez aussi faire un signalement aux services des ressources humaines, à votre supérieur hiérarchique ou à votre employeur pour qu'ils décident d'une 【10†sanction disciplinaire】.
+L157: 
+L158: Enfin, vous avez la possibilité d'alerter 【11†l'inspection du travail】 qui mènera une enquête et qui pourra saisir le procureur de la République.
+L159: ##### Outrage sexiste ou sexuel commis par l'employeur
+L160: 
+L161: Si l'outrage sexiste ou sexuel a été commis par votre employeur, vous pouvez signaler les faits aux représentants du personnel. Dans les entreprises de moins de 11 salariés, il s'agit des membres des 【8†commissions paritaires régionales interprofessionnelles (CPRI)†dreets.gouv.fr】.
+L162: 
+L163: Dans les entreprises de plus de 11 salariés, les faits peuvent être dénoncés au 【9†comité social et économique (CSE)】.
+L164: Vous avez également la possibilité d'alerter 【11†l'inspection du travail】 qui mènera une enquête et qui pourra saisir le procureur de la République.
+L165: #### Secteur public
+L166: 
+L167: Vous pouvez utiliser le dispositif de signalement des actes de violence, de discrimination, de harcèlement moral ou sexuel et des agissements sexistes dans la fonction publique.
+L168: 
+L169: Ce dispositif de signalement comporte 3 types de procédures à mettre en place par l’employeur :
+L170:   * Une procédure de recueil des signalements effectués par les agents victimes ou témoins d'un harcèlement moral ou sexuel et d'agissements sexistes
+L171:   * Une procédure d'orientation des victimes vers les services et professionnels compétents chargés de leur accompagnement et de leur soutien
+L172:   * Une procédure d'orientation des victimes ou témoins de tels actes ou agissements vers les autorités compétentes pour prendre toute mesure de protection appropriée et assurer le traitement des faits signalés, notamment par la réalisation d'une enquête administrative.
+L173: Votre administration doit fixer les moyens par lesquels vous pouvez adresser ce signalement à l'autorité compétente. Elle prévoit également les informations et documents que vous devez fournir à l'appui de votre signalement.
+L174: 
+L175: Tout agent public doit être informé par l'autorité hiérarchique dont il dépend, de l'existence du dispositif de signalement, de son mode d'utilisation et des procédures qu'il prévoit.
+L176: Le dispositif doit garantir la stricte confidentialité des informations transmises par la victime ou le témoin lors du traitement du signalement.
+L177: 
+L178: Dès qu'un cas de harcèlement lui est signalé et que ces faits sont réels, l'administration qui vous emploie doit tout mettre en œuvre pour faire cesser ces agissements. Cela passe, notamment, par une sanction de l'auteur du harcèlement (par exemple, blâme, mutation, voire un licenciement).
+L179: ## Peut-on déposer plainte contre l'auteur de l'outrage sexiste ou sexuel ?
+L180: 
+L181: Si l'auteur de l'outrage sexiste ou sexuel n'a pas été verbalisé: titleContent après la commission des faits, vous pouvez porter plainte contre lui.
+L182: 
+L183: La plainte doit être déposée dans un délai de :
+L184:   * 1 an après la commission des faits si l'outrage constitue une contravention: titleContent,
+L185:   * 6 ans après la commission des faits si l'outrage constitue un délit: titleContent (outrage commis dans les transports, sur un mineur, en raison de l'orientation sexuelle, etc.).
+L186: 
+L187: Attention
+L188: Aucune plainte n'est prise en compte si l'auteur des faits a été interpelé et a reçu une amende forfaitaire: titleContent. Cependant, si vous êtes majeur (ou que vous êtes représenté par vos représentants légaux: titleContent), vous avez la possibilité de lui 【12†demander des dommages et intérêts】 devant les 【13†juridictions civiles】.
+L189: Pour porter plainte, vous pouvez vous présenter au commissariat de police ou à la brigade de gendarmerie de votre choix. Vous avez également la possibilité d'écrire au procureur de la République.
+L190: 
+L191:   * [Button: Sur place]
+L192:   * [Button: Par courrier]
+L193: ##### Sur place
+L194: 
+L195: Pour déposer plainte, vous devez vous rendre au commissariat de police ou à la gendarmerie de votre choix.
+L196: ## Où s’adresser ?
+L197: 
+L198: [Input][Input][Select][Select] Quelle est votre ville ou code postal ? Exemple : Sainte-Cécile-les-Vignes ou 95200
+L199: 
+L200: [Input]
+L201: 
+L202:   * 【14†Commissariat†www.masecurite.interieur.gouv.fr】
+L203: 
+L204:   * 【15†Brigade de gendarmerie†www.interieur.gouv.fr】
+L205: 
+L206: Les services de police ou de gendarmerie sont obligés d'enregistrer votre plainte si vous êtes victime d'une infraction: titleContent.
+L207: C'est le procureur de la République: titleContent qui décide de la suite à donner à la plainte (enquête, classement sans suite: titleContent...).
+L208: 
+L209: Lors du dépôt de plainte, vous pouvez 【16†vous constituer partie civile】 pour que l'auteur de l'outrage soit condamné à vous régler des dommages et intérêts: titleContent.
+L210: 
+L211: Attention
+L212: 
+L213: Si vous êtes mineur, vos représentants légaux doivent vous accompagner pour que vous puissiez vous constituer partie civile.
+L214: Durant toute la procédure, vous pouvez être assisté d'un 【17†avocat】.
+L215: 
+L216: Si vous n'avez pas les ressources financières suffisantes pour régler ce professionnel, vous pouvez éventuellement 【18†demander l'aide juridictionnelle.】
+L217: ##### Par courrier
+L218: 
+L219: Vous pouvez déposer plainte auprès du procureur de la République.
+L220: 
+L221: Pour cela, vous devez envoyer un courrier au tribunal judiciaire du lieu de l'infraction ou du domicile de l'auteur de l'infraction.
+L222: ###### Où s’adresser ?
+L223: 
+L224:   * 【19†Tribunal judiciaire ou tribunal de proximité†www.justice.fr】
+L225: 
+L226: Votre courrier doit préciser les éléments suivants :
+L227:   * Votre état civil et vos coordonnées complètes (adresse et numéro de téléphone)
+L228:   * Récit détaillé des faits, date et lieu de l'infraction
+L229:   * Nom de l'auteur supposé si vous le connaissez (sinon, la plainte sera déposée contre X)
+L230:   * Nom et adresse des éventuels témoins de l'infraction
+L231:   * Description et estimation provisoire ou définitive du préjudice
+L232:   * Vos documents de preuve : certificats médicaux, arrêts de travail, photographies, vidéos, factures diverses, constats...
+L233: Vous pouvez utiliser le modèle de courrier suivant :
+L234: 
+L235: 【20†Porter plainte auprès du procureur de la République】
+L236: 
+L237: Vous pouvez envoyer votre plainte par courrier ou la déposer directement à l'accueil du tribunal.
+L238: 
+L239: Lors du dépôt de plainte, vous pouvez 【16†vous constituer partie civile】 pour que l'auteur de l'outrage soit condamné à vous régler des dommages et intérêts: titleContent.
+L240: 
+L241: Attention
+L242: Si vous êtes mineur, vos représentants légaux doivent vous accompagner pour que vous puissiez vous constituer partie civile.
+L243: 
+L244: Durant toute la procédure, vous pouvez être assisté d'un 【17†avocat】.
+L245: 
+L246: Si vous n'avez pas les ressources financières suffisantes pour régler ce professionnel, vous pouvez éventuellement 【18†demander l'aide juridictionnelle】.
+L247: ## Quelles sont les peines encourues par l'auteur de l'outrage sexiste ou sexuel ?
+L248: 
+

@@ -1,0 +1,1814 @@
+5 Title to Real Property 
+ 
+In California, the basic principles followed governing title to real pr operty were derived from England’s 
+Common Law generally implemented by case law known as stare decisis. This term is Latin for "to stand by a 
+decision". Stare decisis is applied as a doctrine to bind a trial court by higher court decisions (appellate and 
+supreme court) that become precedents on a legal questi on raised in the lower/tria l court. Reliance on such 
+precedents is required of lower/trial courts until a higher court changes the rule.  
+California has a 150-year history of development and e volution in the way its courts have applied legal 
+principles regarding the title to real property and the conveyance/transfer of the title. These legal principles also 
+apply to the encumbering of title to real property through mortgages or deeds of trust and to provide notice of 
+and to evidence monetary claims against the title in the form of liens. This history is documented by the 
+enactment of constitutional provisions and statutes and by a long line of case law. In the absence of some 
+specifically applicable constitutional or statutory provisions, the Common Law/case law prevails. 
+CALIFORNIA ADOPTS A RECORDING SYSTEM 
+California was admitted to the Union by the United States on September 9, 1850. One of the first acts of the 
+Legislature of the new state was to a dopt a recording system by which evid ence of title or interests in the title 
+could be collected and maintained in a convenient and safe public place. The purpose of establishing a 
+recording system was to inform persons planning to purchase or otherwise deal with land about the ownership 
+and condition of the title. This system was designed to protect innocent lenders and purchasers against secret 
+sales, transfers, or conveyances and from undisclosed encumbrances/liens. The purpose of this system is to 
+allow the title to the real property to be freely transferable.  
+The California Legislature adopted a recording system modeled after the system established by the original 
+American Colonies. It was strictly an American device for safeguarding the ownership of and the encumbering 
+of land/property. Recording of sales, transfers, or conveyances and encumbrances/liens as part of a public 
+record was established to impart constructive notice. This system of recording is known as the “Race 
+Recording”, or as the “Race-Notice Recording” statute/law.  
+Actual v. Constructive Notice 
+Actual notice consists of express information of a fact. Constructive notice means notice given by the public 
+records. By means of constructive notice, people are presumed to know the contents of recorded instruments. 
+Publicly recording instruments of transfer/conveyance or to  encumber/lien the title to real property imparts 
+constructive notice. For example, Civil Code Section 2934 enacted in 1872 states in part, “Any assignment of a 
+mortgage and any assignment of the beneficial interest under a deed of trust may be recorded, and from the time 
+the same is filed for record operates as constructive notice of the contents thereof to all persons…”.  
+Which Instruments May Be Recorded 
+The Government Code of California provides that, after being acknowledged (executed in front of a Notary 
+Public, or properly witnessed as provi ded by applicable law), any instrume nt or judgment affecting the title to 
+or possession of real property may be recorded. See
+ Government Code Sections 27201, 27201.5, 27287, and 
+27288.  
+The word “instrument” as defined in Section 27279(a)  of the Government Code “…means a written paper 
+signed by a person or persons transferring the title to, or giving a lien on real property, or giving a right to a 
+debt or duty.”  A similar definition is set forth in a historic 19 th century case. See Hoag v Howard (1880) 55 
+Cal. 564-567. The definition of an “instrument” does not necessarily include every writing purporting to affect 
+real property. However, the term “instrument” does include, among others, deeds, mortgages, leases, land 
+contracts, deeds of trust and agreements between or among landowners/property owners. 
+ 
+Purpose of Recording Statutes  
+The general purpose of recording statutes is to permit (ra ther than require) the reco rdation of any instrument 
+which affects the title to or possession of real property, and to penalize the person who fails to take advantage 
+of recording.  
+CHAPTER FIVE 
+ 
+52 
+However, existing law includes exampl es where recording is required as a predicate to accomplish a defined 
+public policy objective. One such example is Civil Code Section 2932.5 that provides, “Where a power to sell 
+real property is given to a mortgagee, or other encumbrancer, in an instrument intended to secure the payment 
+of money …[T]the power of sale may be exercised by the assignee of the assignment if duly acknowledged 
+and recorded (emphasis added).”   
+Another example is in Business and Professions C ode Section 10233.2 regarding perfecting ownership of 
+promissory notes or interests therein. This Section states in part “…the delivery, tran sfer and perfection shall be 
+deemed complete even if the broker retains possession of the note or collateral instruments and documents, 
+provided that the deed of trust or assignment of the deed of trust or collateral documents in favor of the lender 
+or purchaser is recorded in the office of the county recorder in the county in which the security property 
+is located,  and the note is made payable to the lender or is endorsed or assigned to the purchaser  
+(emphasis added).” 
+Because of the recording of instruments of conveyan ce or encumbrance/lien, purchasers (and others dealing 
+with title to property) may in good faith discover and rely  upon the ownership of title or an interest therein. 
+While the Government Code does not specify any particular time within which an instrument must be recorded, 
+priority of recordation will ordinarily determine the right s of the parties if there are conflicting claims to the 
+same parcel of land/property, i.e., the title thereto or an interest therein. The instrument recorded first in the 
+chain of title would generally achieve priority over subsequently recorded instruments (fact issues such as 
+subordination or actual notice may affect priority notwithstanding recording dates). The definition of the “Race 
+Recording” or “Race-Notice Recording” statutes/laws is intended to descri be the manner of achieving priority 
+in the chain of title. Generally, the person winning the race gains priority.  
+The county recorder in the county within which the propert y is located must record instruments affecting real 
+property. If the property lies in more than one county, the instrument, or certified copy of the record, must be 
+recorded in each county in which the property is located in order to impart constructive notice in the respective 
+counties. 
+If it is necessary to record a document written in a foreign language, the reco rder will file the foreign language 
+instrument with a certified translation. In those counties in which a photographic or electronic method of 
+recording is employed, the foreign language instrument and the translation may be recorded and the original 
+instrument returned to the party who requested recordation. See
+ Government Code Section 27293. 
+When an Instrument is Deemed Recorded 
+Generally, an instrument is recorded when it is duly acknowledged or verified and deposited in the recorder’s 
+office with the proper officer and mark ed “filed for record.” It is the duty of the recorder to number the 
+instrument in the order in which it is deposited, including the year, month, day, hour, and minute of its 
+reception, and indicate at whose request  it was “filed for record.” The conten ts of the document are transferred 
+to its appropriate book or image of records upon the page or pursuant to the number endorsed on the document, 
+and the original document is returned to the party who left it for recording.  
+The recorder indexes all recorded doc uments in alphabetical order according to the names of the grantors and 
+grantees or mortgagors or mortgagees, which terms include holders of beneficial interests in and 
+trustors/borrowers of deeds of trusts, and the name or nature of the document. The documents are also indexed 
+by date of recording and the recording reference. See
+ Government Code 27230 et seq.  
+Effect of Recording as Imparting Notice 
+The courts have ruled that the benefits of a recording statute are not available to one who takes title with actual 
+notice of a previously executed though unrecorded instrument. For example, possession of land/property by one 
+other than the seller is actual notice to an intending buyer sufficient to impose a duty to inquire about the 
+possession. Despite the recording stat utes and the assurance they give about the status of title, a prudent 
+purchaser should inspect the premises in person or through a trusted agent.  
+The obligation to inspect includes inquiring of persons in possession of the real property (e.g., a tenant or 
+lessee), what claim such persons have to occupy and use the property, and is there a written agreement 
+supporting the claim. The agreement may be a month-to-month tenancy, a leasehold or an estate for years, a 
+land contract of sale, an option to purchase, a lease with a first right of refusal, etc.  Such a claim would be 
+TITLE TO REAL PROPERTY 
+  
+53
+imparted by actual notice because of the occupancy of the persons in possession. The agreement evidencing the 
+claim need not be recorded to affect the title to the real property. 
+In addition to the foregoing, there are many types of unrecorded interests that a prospective purchaser may 
+discover during a physical inspection of property. For example, a pathway or sewer line may mean adjoining 
+owners have an unrecorded easement. Lumber or recent carpentry work may mean certain persons have a right 
+to file mechanics’ liens. 
+The recording laws do not protect the party “first to record” against what may be discovered through a physical 
+inspection, nor do standard form title insurance policies cover the situations previously described. As 
+previously mentioned, the inspection of a property to be purchased or encumbered is recommended and advice 
+from a qualified professional is often re quired (e.g., lawyer, title officer, civ il engineer, etc.) before proceeding 
+to purchasing or encumbering the land/property. The intended title insurer should be asked about extended 
+coverage to insure against the unrecorded interests that  may be discovered by physical inspection as discussed 
+in this section. 
+Priorities in Recording 
+The California recording statutes encourage prompt reco rding of conveyances and encumbrances and prohibits 
+use of the constructive notice doctrine as an aid to proven fraud. The recording laws protect only innocent 
+parties. 
+Certain priorities are affected by statutory provisions. For example and for the purposes of establishing priority, 
+existing California Law distinguishes between a mortgage and deed of trust given for the price of real property 
+(purchase money mortgage) from such instruments of encu mbrance given to refinance or further encumber the 
+property (non-purchase money mortgage). The former have  priority over all other liens created against the 
+purchaser, subject to the operation of the recording laws , and the later do not have priority over the defined 
+liens. Further, the priority to be established for mortgagees or deeds of trust on an estate for years in real 
+property (leasehold) shall be determined in the same manner as establishing the priorities of such liens against 
+the title of real property. See
+ Civil Code Section 2898.  
+Not all liens on real property rank in priority according to their respective dates of recording. For example, with 
+respect to the same parcel of property, A executed a mort gage in favor of B dated June 1 and recorded June 20. 
+A executed a mortgage in favor of C dated June 10 and recorded June 15. C’s mortgage will be superior in 
+priority to B’s only if C did not have, on or prior to June 15, notice of B’s mortgage.  
+Special Lien/Encumbrance Situations 
+Liens and encumbrances are discussed again later in this chapter. However, it will be helpful to note here the 
+impact of the recording laws on liens and encumbrances . Liens are imposed for monetary claims against the 
+title to real property or for the performance of an act in connection therewith. Liens are encumbrances, but there 
+are encumbrances that are not monetary claims, e.g., an easement. These forms of encumbrances typically 
+affect the condition or use of the property. It can be said that all liens are encumbrances, but not all 
+encumbrances are liens.  
+California Law refers to mortgages and deeds of trust as functional equivalents. The historic distinctions 
+between the two instruments include the application of the “lien” vs. “legal title” theories (to be discussed later 
+in this chapter), and the use of a third party trustee with certain defined powers in a deed of trust but not in a 
+classic mortgage instrument. The perceived limitation of the use of the trustee in a deed  of trust was eliminated 
+in 1986 through the enactment of Civil Code Section 2920. For the purposes of this chapter, the terms 
+“mortgage” and “deed of trust” are used interchangeably and for each ot her as functional equivalents, as 
+defined in current California Law.  
+A lender/encumbrancer will often agree in the deed of trust (the senior instrument) to make “future advances” 
+as a part of a secured loan transaction. Another lien/ encumbrance (for example, a j unior deed of trust or a 
+mechanic’s lien) may intervene between the time of recordation of the lender’s senior deed of trust and the time 
+of a “future advance”. A question of priority is then posed regarding the sums advanced by the senior lender. 
+When the terms of the senior deed of trust obligate the lender to make “future advances” (e.g.,  progress 
+payments under a construction loan), these “obligatory adva nces” have the same priority as the loan secured by 
+the senior deed of trust, regardless of intervening liens (monetary claims). See
+ Civil Code Section 2884. 
+CHAPTER FIVE 
+ 
+54 
+In other cases, the senior lender may have the op tion of making “future advances” of money to the 
+borrower/trustor, but is not required to do so. These “ optional advances” for priority purposes date from the 
+time the advance is made, unless the lender can show no actual or constructive notice of intervening liens. This 
+does not mean lenders are excused from checking the public record. 
+The issue of “future advances” is of particular concern in loan products known as Home Equity Lines of Credit 
+(“HELOC”). Such loan products have become popular in the last 15 to 20 years. The advances made as part of 
+a HELOC loan transaction are generally “optional”, i.e., defined conditions must first be met prior to the lender 
+extending to the borrower/trustor add itional credit. To facilitate the us e of these loan products, the title 
+insurance industry has offered endorsements to the institutional lending community (financial depository 
+institutions and certain licensed lenders) maintaining for the purposes of the coverage provided the priority of 
+the “optional advances” to protect the interests of the lenders making HELOCs.  See
+ Civil Code Section 2884. 
+Mechanics’ liens generally relate back to the time of the commencement of the cons truction work as a whole. 
+Thus, a deed of trust must be execu ted, delivered, accepted and recorded prior to commencement of any work 
+regarding the security property to assure the priority of  the construction loan secured by the deed of trust over 
+the claims that may be made by contractors, laborers, material houses, suppliers, design professionals and the 
+like in the form of mechanics liens. See
+ Civil Code Section 3134. 
+Liens for real property taxes and other general taxes,  as well as special county and municipal taxes and 
+assessments are superior in priority to the lien of any mortgage or deed of trust regardless of the date of 
+creation, including execution, delivery, acceptance, and recording. Califor nia Law provides that any tax or 
+assessment declared a lien on real property should be gi ven priority over all other liens, including judgments, 
+deeds, mortgages, deeds of trust, etc. See Revenue & Taxation Code Section 2192.1.  
+Provided they are bona fide encumbrances/liens, deeds of trust and mortgages recorded prior to general federal 
+tax liens or state tax liens are superior in priority to those liens. However, subsequent to the non-judicial 
+foreclosure of the security property, th e IRS has asserted the priority of its  tax claims are altered to a senior 
+position when the assets to which such claims att ached become the cash ava ilable from the foreclosure 
+proceeds.  
+Persons having priority may by agreement waive this priority in favor of others. An agreement to do this is 
+called a “subordination agreement.” These agreements are often executed in connection with deeds of trust to 
+subordinate a senior encumbrance/lien to a later record ed junior encumbrance/lien.  An example is where a 
+landowner’s/property owner’s “purchase-money” deed of trust (securing a debt in the form of a seller “carry-
+back” established at the time the security property was purchased) is subordinated by agreement to a 
+construction loan to finance the improvements to be made to the property.  
+Without such priority of claim for payment against the real property, a construction lender would typically 
+decline to extend credit and, therefore, funds would not be available for the building contractor to expend time 
+and materials on the construction project. 
+In certain loan transactions, statutory requirements are imposed regarding the use of subordination clauses. 
+These requirements include notice of the existence of a subordination clause, and a disclosure of the contents of 
+the subordination agreement. While these requirements apply to loans in the amount of $25,000 or less, they 
+represent good guidelines to be considered when engagi ng in the use of subordination clauses and agreements. 
+See
+ Civil Code Section 2953.1 et seq.  
+As previously mentioned, a mortgage or deed of trust given for the purchase price of real property at the time of 
+the conveyance of the security property has priority over all other liens created against the purchaser, subject to 
+operation of the recording laws.  See Civil Code Section 2898. 
+Two or more deeds of trust recorded  at the same time (concurrently) may contain on the face of each deed of 
+trust (as part of an industry practice) a recital about which is intended by the parties to be first, second, or third 
+in priority. The recitals can be effective subordination agreements with the informed knowledge and consent of 
+the lenders and the trustors/borrowers (referred to as mortgagors). 
+TITLE TO REAL PROPERTY 
+  
+55
+OWNERSHIP OF REAL PROPERTY 
+All property has an owner, the government  - federal, state, or local— or some  private party or entity (typically 
+referred to as persons). Very broadly, an estate in real property may be owned in the following ways: 
+1. Sole or several ownership; 
+2. Joint, common, or community ownership; 
+ a. Tenancy in common;  
+ b. Joint tenancy;  
+ c. Community property; or, 
+d. Partnership interests. 
+3. Ownership by other lawfully created entities. 
+SOLE OR SEVERAL OWNERSHIP 
+Sole or several ownership is defined to mean owners hip by one person. Being the sole owner, one person 
+enjoys the benefits of the property and is subject to the accompanying burde ns, such as the payment of taxes. 
+Subject to applicable federal and state law, a sole owner is free to dispose of property at will. Typically, only 
+the sole owner’s signature is required on the instrument of transfer/deed of conveyance.  See
+ Civil Code Section 
+681. 
+JOINT, COMMON, OR COMMUNITY OWNERSHIP 
+ 
+Joint, common, or community ownership or co-ownersh ip means simultaneous owne rship of a given piece of 
+property by several persons (two or more). See Civil Code Section 682 . The types of such ownership interests 
+include the following: 
+Tenancy in Common 
+Tenancy in common exists when several (two or more) pe rsons are owners of undivided interests in the title to 
+real property. It is created if an instrument conveying an interest in real property to two or more persons does 
+not specify that the interest is acquired by them in jo int tenancy, in partnership, or as community property. 
+Some instruments of transfer/deeds of conveyance clearly state the intentions of the persons acquiring are to 
+hold title as tenants in common. See Civil Code Section 685. 
+Example: Interests of such tenants in common may be any fraction of the whole. One party may own one-tenth, 
+another three-tenths, and a third party may own the remaining six-tenths. If the deed to cotenants does not recite 
+their respective interests, the interests will be presumed to be equal. 
+There is a unity of possession in tenancy in common. This means each owner has a right to possession and none 
+can exclude the others nor claim any specific portion for him or herself alone. It follows that no tenant in 
+common can be charged rent for the use of the land/property, unless otherwise agreed to by all the cotenants. 
+On the other hand a tenant in comm on who receives rent for the premises /property from a third party, must 
+divide such profits with the other tenants in common in proportion to the shares owned. Similarly, payments 
+made by one tenant in common for the benefit of a ll may normally be recovered on a proportionate basis from 
+each. These might include, among others, moneys spent for n ecessary repairs, taxes, and interest and principal 
+payments under a deed of trust. 
+Subject to applicable federal and state law, a tenant in common is free to sell, transfer or otherwise convey, or 
+mortgage the tenant’s own interest as he or she sees fit. The new owner becomes a tenant in common with the 
+others. Few lenders are willing to extend credit to be secured by a mortgage or deed of trust against only the 
+interest of a single tenant in common. In the event of a foreclosure of their mortgage encumbrance/lien, lenders 
+typically do not want to end up as co -owner with other tenants in common.  Because of the practical difficulties 
+involved in selling, transferring or otherwise conveying, or mortgaging th e interest of a single tenant in 
+common, the tenant may be limited in his/her effort to liquidate the single interest to forcing a sale of the entire 
+property by filing an action before a court of competent jurisdiction known as a “partition action.”  
+No right of survivorship exists for individual tenants when title is held  as tenants in common. The undivided 
+interest of a deceased tenant in common passes to the bene ficiaries (heirs or devisees) of the estate subject to 
+CHAPTER FIVE 
+ 
+56 
+probate, pursuant to the last will and testament of the deceased or by intestate succession.  The heirs or devisees 
+of the deceased simply take the tenant’s place among the other owners who continue to hold title to the property 
+as tenants in common. See Probate Code Section 6400 et seq. 
+Joint Tenancy  
+Joint tenancy exists if two or more persons are joint a nd equal owners of the same undivided interest in real 
+property. Generally, to establish a joint tenancy a fourfold unity must exist: interest, title, time, and possession. 
+Joint tenants have the same interest, acquired by the same conveyance, commencing at the same time, and held 
+by the same possession. See
+ Civil Code Section 683.  
+The most important characteristic of a joint tenancy is the right of survivorship that flows from the unity of 
+interest. If one joint tenant dies, the surviving joint tenant (or tenants) become(s) the owner(s) of the property to 
+the exclusion of the heirs or devisees of the deceased. Thus, joint tenancy property cannot be disposed of by the 
+last will and testament, is not subject to intestate successi on, and typically does not become part of the estate of 
+a joint tenant subject to probate.  
+Further, the surviving joint tenant(s) is/are not liable to creditors of the d eceased who only hold existing 
+encumbrances/liens on the joint tenancy property. The words “with the right of survivorship” are not necessary 
+for a valid joint tenancy deed, although they are often inserted. To perfect the ownership interests of the 
+surviving joint tenants, severance of  the joint tenancy of th e deceased is to be accomp lished and evidenced in 
+the public record.  
+The creditors of a living joint tenant (as distinct form a deceased joint tena nt) may proceed against the interest 
+of that tenant and force an execution sale. This would sever the joint tenancy and leave title in the execution 
+purchaser and the other joint tenant as tenants in common. 
+Creating A Joint Tenancy. With limited exception, California appellate courts have accepted and enforced the 
+common law rule that if any one of the four unities — time, title, interest or possession — is lacking, a tenancy 
+in common, not a joint tenancy, exis ts. An exception to the general rule has been more recently applied in 
+connection with the time of acquisition of the title to  the property. Consultation with knowledgeable legal 
+counsel is recommended to answer questions that may be posed by property owners regarding the establishment 
+of joint tenancies and the legal, practical, tax, estate planning, and other considerations involved.  
+However, by statute a joint tenancy may be created: 
+1. By transfer from a sole owner to himself or herself and others as joint tenants. 
+2. By transfer from tenants in common to themselves or to themselves, or any of them, and others as joint 
+tenants. 
+3. By transfer from joint tenants to themselves, or to any of them, or to others as joint tenants. 
+4. By transfer from a husband and wife (when holding title as community property or otherwise) to 
+themselves, or to themselves and others, or to one of them and to another or others as joint tenants. 
+5. By transfer to executors of an estate or trustees of a trust as joint tenants. 
+See
+ Civil Code Section 683. 
+Severance. A joint tenant may sever the joint tenancy as to hi s or her own interest by a conveyance to a third 
+party, or to a cotenant. If there are three or more joint tenants, the joint tenancy is severed as to the interest 
+conveyed but continues as between the ot her joint tenants as to the remaining interests. If title is in A, B and C 
+as joint tenants, and A conveys to D, then B and C conti nue as joint tenants as to a two-thirds interest and D 
+owns a one-third interest, as tenant in common. If A a nd B only are joint tenants and B conveys to C, then A 
+and C would be in title as tenants in common.  See Civil Code Section 683.2 
+Another method is a partition action by  the joint tenants. If the partition cannot be made without prejudice to 
+the owners, a court may order the property sold and the di vision of the proceeds of th e sale distributed ratably 
+to the owners.  In some circumstances, a severance will not terminate the right of survivorship interest of the 
+other joint tenants in the severing joint tenant’s intere st. Nor, under the circumstances set out in Civil Code 
+TITLE TO REAL PROPERTY 
+  
+57
+Section 683.2, may a severance contrary to a written ag reement of the joint tenants defeat the rights of a 
+purchaser or encumbrancer for value and in good faith and without knowledge of the written agreement. 
+On death of a joint tenant, the joint tenancy is automatically terminated. Nevertheless, for record title purposes, 
+the following must be recorded in the county where the property is located: 
+ A certified copy of a court decree determining the fact of death and describing the property; or 
+ A certified copy of the death certificate or equivalent, or court decree determining the fact of death, or 
+letters testamentary or of admini stration or a court decree of distri bution in probate proceedings. With 
+each of these alternatives, it is cust omary to attach an affidavit that  identifies the deceased as one of 
+the joint tenants of the property. 
+Some of the Pros and Cons of Joint Tenancy. On the plus side, the major advantage of joint tenancy is the 
+comparative simplicity of vesting title in the surviving joint tenant (or joint tenants). The marketable title delay 
+arising from probate proceedings in the form of a stay for as much as six months (o r even longer)  is avoided. 
+Although certain legal costs are ultimately involved in  terminating the joint tenancy, the customary 
+commissions and fees payable to executors or administrators and to their attorneys may become unnecessary. 
+As previously mentioned, a further advantage of joint tenancy is that the survivor holds the property free from 
+debts of the deceased tenant and from lie ns against the deceased tenant’s interest. This can work an injustice to 
+creditors, but a diligent cred itor can usually take appropriate precautiona ry steps to avoid such loss, or may 
+have access to other assets of the decedent.  On the other hand, in many situations jo int tenancy is a pitfall for 
+the uniformed or unwary. 
+The supposed advantages may be imaginary. A joint tenant  may not want the other (surviving) joint tenant to 
+get the title free and clear; the likely saving of probate fees is at least partly offset by costs of terminating the 
+joint tenancy, and may be completely offset by added taxes.  The probate delay is not unreasonably long, and 
+there may be no creditors of the estate. Moreover, the joint tenant gives up the right to dispose of his or her 
+interest by a last will and testament. 
+Giving advice about the way to hold title to real property is ill advised and considered the unauthorized practice 
+of law when offered by persons who are not members of the State Bar of California. As previously mentioned, 
+significant legal, practical, tax, estate planning, and other issues and consequences may result from holding title 
+in one form or another. The advice of knowledgeable legal counsel and other appropriate professionals is 
+strongly recommended before selecting the form of ownership of the title to real property 
+Community Property 
+Community property generally consists of all property acquired by a husband and wife, or either, during a valid 
+marriage, other than separate property acquired prior to the marriage, by gift, or as an individual heir or devisee 
+of a deceased.  Separate property may also include th e fruits falling from the previously described tree of 
+categories of separate property, as well as property desi gnated as separate by the husband or wife or by court 
+order. Separate property of either the husband or the wife is not community property. 
+Separate property of a married person includes: 
+1. All property owned before marriage. 
+2. All property acquired during marriage by gift or inheritance. 
+3. All rents, issues and profits of separate property,  as well as other property acquired with the proceeds from 
+sale of separate property. For instance, if a wife owned a duplex prior to marriage, the rents from the 
+duplex would remain her separate property. If she sold the duplex and bought common stock, the stock and 
+dividends would be her separate pr operty. It would have to be clearly and unequivocally identifiable as 
+separate property, and separate reco rds should be maintained to make certain any separate property is not 
+commingled in any way with the community property. Very often husband and wife deliberately may allow 
+their separate property to merge with community property in keeping with their intentions or with their 
+conduct and actions. 
+4. Earnings and accumulations of a spouse while living separate and apart from the other spouse. 
+CHAPTER FIVE 
+ 
+58 
+5. Earnings and accumulations of each party af ter a court decree of separate maintenance. 
+6. Property conveyed by either spouse to the other with the intent of making it the grantee’s separate property. 
+It should be recalled that a husband and wife often hold property as joint tenants. Yet, even when title is held in 
+joint tenancy, it is possible (e.g., by separate written agreement) to own the assets as community property. The 
+record title may not be controlling in li ght of off-record agreements showing ot her intentions of the parties. For 
+example, joint tenancy property owned by married persons  may, in fact, be considered separate property. See 
+Civil Code Sections 682.1 and 687  and the Family Code under Part 1 and 2, Division 4, commencing with 
+Section 720.  
+Management and control.  Each spouse has equal management a nd control of community property. An 
+exception exists if one of the spouses manages a comm unity personal property business. That spouse generally 
+has sole management and control of that business. Comm unity property is liable for the debts of either spouse 
+contracted after marriage. Community property is liable for a debt contracted prior to marriage, except that 
+portion of the community property comprised of the earnings of the other spouse. 
+Neither spouse may make a gift of community property without the consent of the other. Neither spouse may 
+encumber personal property such as the furniture, furnishings, or fittings of the home, or the clothing of the 
+other spouse or minor children without the written consent of the other spouse. However, each must join in the 
+sale/transfer or conveyance, or the encumbrancing or leasing of community real property. 
+If real property is owned by several (two or more) persons, real estate licensees should obtain the necessary 
+signatures of each person in title to listing agreements and to purchase and sale agreements, whether for the 
+purpose of countering or accepting offers from the intended buyer/purchaser. 
+Each spouse has the right to dispose of  his or her half of community propert y by will. Absent a will, title to the 
+decedent’s half of the community prope rty passes to the surviving spouse. See
+ the Family Code under Part 4, 
+Division 4, commencing with Section 1100.  
+Joint tenancy and community property. Considerable confusion surrounds the status of some family homes 
+in California, since the husband and wife may acquire  their home with community funds but proceed (as 
+previously mentioned) to take record  title “as joint tenants.” It is not generally understood that some of the 
+consequences of holding title in joint tenancy are entirely different from the consequences of holding title as 
+community property. 
+As previously mentioned, California courts are aware of this problem and have established the rule that the true 
+intention of husband and wife as to the status of their property shall prevail over the record title. Ambiguity 
+results from the specific circumstance of having the record title in joint tenancy while the true character of the 
+property, as intended by the husband and wife, is community property. Th is transition might be accomplished 
+by appropriate agreement in writing, or  even by a deed from themselves “as  joint tenants” to themselves “as 
+community property.” 
+Among themselves, the rights and duties of joint tenants are generally the same as among tenants in common, 
+with the vital exception of the rule of survivorship. As previously discussed, a joint tenant may borrow money 
+and, as security for the repayment of the debt, execute a mortgage or deed of trust on his/her interest just as a 
+tenant in common may. This does not destroy the joint tenancy, but if the borrower should default, and the 
+mortgage or deed of trust should be foreclosed while the borrower is still alive, the joint tenancy would be 
+ended (a severance) and a tenancy in common created. As  previously noted, most lenders would hesitate to 
+make such a loan. 
+Should the borrower/trustor/mortgagor die before the mort gage is paid off or foreclosed, the surviving joint 
+tenant gets title free and clear of the mortgage execute d by the deceased joint tenant. When title is held as 
+community property, no separate interest exists for the purpose of encumbering through a mortgage or a deed 
+of trust. As previously mentioned, the signatures of both the husband and wife are required to sell, transfer, or 
+otherwise convey or encumber the community property.  
+While a probate is typically required to dispose of the community property in the event of the death of either 
+spouse, in certain fact situations a limited probate pro ceeding has been authorized by  existing law. This limited 
+TITLE TO REAL PROPERTY 
+  
+59
+probate proceeding is commonly known as a community prope rty or small estate “set-aside”. For example, the 
+court may find that the entire estate of the deceased spouse is property passi ng to the surviving spouse. In such 
+event, the court may determine that no administration of the estate is required. See Probate Code Section 6600 
+et seq. and Section 13656.  
+TENANCY IN PARTNERSHIP 
+At the time of initial codification in California Law of the various forms of ownership of property interests, the 
+recognized entity for ownership was a pa rtnership. Tenancy in pa rtnership exists if two or more persons, as 
+partners, own property for partnership purposes. Under the Uniform Partnership Act, the incidents of tenancy in 
+partnership are such that: 
+1. A partner has an equal right with all other part ners to possession of specific partnership property for 
+partnership purposes. Unless the other partners agree,  however, no partner has a right to possession for any 
+other purpose. 
+2. A partner’s right in specific partnership propert y is not assignable except in connection with the 
+assignment of rights of all the partners in the same property. 
+3. A partner’s right in specific partnership property is not subject to attachment or execution, except on a 
+claim against the partnership. 
+4. On death, a partner’s right in specific partnership property vests in the surviving partner (or partners). The 
+rights in the property of the last su rviving partner would vest in the decedent’s legal re presentative. In 
+either case, the vesting creates a right to possess the partnership property only for partnership purposes. 
+5. A partner’s right in specific partnership property is  not subject to dower or curtesy (both have been 
+abolished in California by statute) nor allowance to widows, heirs, or next of kin. Even when married, a 
+partner’s right is not community property. On the other hand, a partner’s interest in the partnership as such 
+(that is, a partner’s share of profits and of surplus) is governed by community property rules for some 
+purposes. 
+These incidents make sense because two or more pers ons are attempting to carry on a business for profit. 
+Without these incidents, continuity and unified, effi cient operation would be difficult. Partners are not, 
+however, prevented from owning differe nt fractional parts of the busine ss. Thus, although each partner has 
+unlimited liability to third parties for firm debts, each partner’s interest  in profits and losses may be any 
+percentage to which the parties agreed.  
+Partners may also structure the business relationship as a partnership in many different ways. By agreement, 
+one partner may have greater authority than the other partners.  An example that is often used is a limited 
+partnership. The general partner or partners manage and control the part nership and the limited partners (in 
+exchange for limited liability) give up management and control. In a partnership where all partners have equal 
+rights of management and control, the partnership is commonly referred to as a general or co-partnership. 
+The Uniform Partnership Act set forth in 15001 et seq. of the Corporations Code and the Limited Uniform 
+Partnership Act set forth in 15501 et seq. of the Corporations Code each have been or will be repealed effective 
+January 1, 2010. The Uniform Partnership Act of 1994, commencing with Section 16100 of the Corporations 
+Code, remains operative and describes, among other issues , the scope of and limitations imposed on general or 
+co-partnerships in California. This law includes langua ge describing the relationships between partners, the 
+handling of charging orders and claims of creditors agai nst the partnership or an individual partner, and how 
+the partnership is to be wound-up and dissolved.  
+Limited Liability Partnerships are described in th e Corporations Code, comme ncing with Section 16951. 
+However, the Uniform Limited Partnership Act of 2008 (en acted subsequent to the previous sections of the 
+Corporations Code describing Limited Liability Partnerships) is set forth in the Corporations Code, 
+commencing with Section 15900. 
+The foregoing body of law is complex and comprehensive. Understanding what  portions have been or will be 
+repealed and what portions remain operative is essential.  Furthermore, to establish partnership relationships 
+CHAPTER FIVE 
+ 
+60 
+requires an understanding of practical, legal, tax and other important issues. Accordingly, the advice of 
+knowledgeable legal counsel is recommended before proceed ing to form a partnershi p or determining to hold 
+title to real property or interests therein in a partnership entity.  
+OTHER LAWFULLY CREATED ENTITIES 
+In the 19 th century when some of the applicable Civil Code Sections previously cited were enacted, the entity 
+most commonly used to hold title or interests therein was a partnership. Corporations and trusts existed, and 
+when they joined in a common economic enterprise, we re often identified as “combinations”. Two additional 
+entities have been more recently author ized by state legislative action. They are Limited Liability Companies 
+(“LLCs”) and, as previously discussed, Limited Liability Partnerships (“LLPs”). 
+Each of the foregoing entities may and do hold title to real  property or to interests therein. The body of law 
+describing corporations and their organization, operation, and management  is enormous. Three categories of 
+corporations are recognized in California Law. Include d are general corporations, nonprofit corporations, and 
+corporations for a specific purpose.  
+The law applicable to corporations is set forth in fede ral and state statutes and re gulations. For example, the 
+State of Delaware publishes statutes and regulations re garding corporations, which are instructive as many 
+corporations are organized under Delaware law. Organizing and operating a corporation under California Law 
+requires review of California Corporations Code Sections 100 through 2319 (General Corporation Law), 
+Sections 5000 through 10841 (Nonprofit Corporation La w), and Sections 12000 through 14451(Corporations 
+for Specific Purposes). 
+Limited Liability Partnerships we re discussed in the previous  section entitled, “TENANCY IN 
+PARTNERSHIP”. Limited Liability Companies are organized similar to a corporation, but taxed similar to a 
+partnership. The legislati on authorizing the use of such entitles wa s enacted in 1994 and is set forth in 
+Corporations Code Sections 17000 through 17656. LLCs may hold title to real property and to interests therein. 
+However, a real estate broker may not license an LLC entity to perform acts for which a real estate license is 
+required. See
+ Corporations Code Section 17375.  Real estate brokers may license corporations as brokers and 
+partnerships are able to perform acts for which a real estate license is required through licensed partners that are 
+real estate brokers. See
+ Business and Professions Code Sections 10137.1, 10158, and 10211. 
+The body of law describing the administration of trusts, the duties of trus tees, the accounting of trust assets, 
+federal and state tax issues, etc. is complex and appears in various state and federal statutes and regulations. 
+The primary reference for trust administration is found in California Probate Code Sections 16000 through 
+16504. The use of trusts to hold title or interests therein occu rs most often in family trusts or in other forms of 
+inter vivos trusts.  
+Again, it is important to understand that the use of trusts, as well as other entities, to hold title or interests 
+therein should occur only with the advice of knowledgeable legal counsel and of other appropriate 
+professionals. A word of caution is necessary regard ing the demands frequently made upon real estate and 
+mortgage brokers by lenders and title insurers (or their underwritten compan ies),  either directly or through 
+escrow holders, regarding properties where the title is held in trusts by principals of the brokers.  
+Typically, the real estate or mortgage broker is directed to instruct his/her principals to transfer the title to the 
+real property from an existing trust to the individual beneficiaries/settlers/trustors for purposes of encumbering 
+the property with new financing; or to sell, transfer or convey title to the pr operty to third parties. The practical, 
+legal, estate planning, and tax consequences may be si gnificant and should be reviewed, in advance, by legal 
+counsel and appropriate professionals representing the pr incipals for this purpose. Real estate and mortgage 
+brokers may be engaging in the unauthorized practice of la w to provide such instructions to their principals 
+(even when directed to do so by representatives of the lending, title, or escrow industries) without making it 
+perfectly clear the information required to make such a decision is beyond the scope of the practice of real 
+estate and requires the advice of knowledgeable legal counsel and competent professionals.  
+ENCUMBRANCES/LIENS 
+In this section, the principal types of encumbrances/liens are examined that may be imposed on a given parcel 
+of land/property without affecting the fee title to the owne r’s real property as part of the owner’s estate. This 
+TITLE TO REAL PROPERTY 
+  
+61
+discussion includes the distinctions between the “lien” vs. “legal title” theories, and the fact that the “lien” 
+theory has been adopted by California and represents current law. 
+Definition- Encumbrance 
+An encumbrance may be defined very generally as an y right or interest in land/property, possessed by a 
+stranger to the title, which affects the value of the owner’s estate, but does not prevent the owner from enjoying 
+and selling, transferring, or otherwise conveying the fee title. 
+Two categories of encumbrances exist: those affecting title and those affecting condition or use of the property. 
+Encumbrances that affect title.  Most notably, these are liens. A lien is defined as a charge imposed on 
+property and made security for the payment of a moneta ry claim or the performance of an act in connection 
+therewith. Typically, the lien is imposed for the payment of a debt evidenced by a promissory note. Liens may 
+also be imposed solely for the performance of an act in the form of a performance deed of trust. 
+Liens may affect real or personal property and may be voluntary (e.g., a home mortgage to secure a loan) or 
+involuntary (e.g., imposed by law for overdue taxes). A lien may be specific, affecting only a particular 
+property (e.g., a trust deed, or a mechanic’s lien on a given property) or may be a general lien, affecting all 
+property of the owner not exempt by law (e.g., a money j udgment, or a lien for overdue state or federal income 
+taxes). As previously mentioned in this chapter, all liens are encumbrances, but not all encumbrances are liens.  
+Encumbrances that affect the physica l condition or use of the property. Examples are easements, building 
+restrictions and zoning requirements, and encroachments. 
+A buyer will commonly accept a deed to encumbered property, with the price adjusted accordingly. Often, the 
+encumbrance may not be objectionable, e.g., an easement for utility purposes. But sometimes a buyer may insist 
+that the encumbrance be removed or cleared from the public record before the transaction closes. 
+Cloud on the title.  A “cloud on the title” is defined as any outsta nding claim or encumbrance that would, if 
+valid, affect or impair the owner’s title to a particular  property/estate. While the cloud remains, the owner is 
+prevented from selling transferring, or  conveying marketable title. The ability to further encumber the title may 
+also be impaired by a “cloud on the title”. 
+Examples are: a mortgage paid off but without official recordation of that fact (a reconveyance of a deed of 
+trust); an apparent interest in the property which remain s because one of a group of heirs fails to sign the deed 
+on sale of the property; or a notice of action (a lis pendens) which remains on the public record even after the 
+plaintiff and defendant have agreed to dismissal of the court action. Removal of a cloud may require time and 
+patience. Meanwhile, closing will be postponed until the persons requesting coverage  obtain a title insurance 
+policy without reference to the cloud.  
+It is important to understand the distinction between the “lien” theory and the “legal title” theory and the impact 
+of these theories on the use of mortgages and deeds of trust as security devices/instruments for the repayment of 
+a monetary claim or the performance of an act. 
+LIEN THEORY VS. LEGAL TITLE THEORY 
+History. An essential concept of California Law is the ability to secure the repayment of monetary claims or the 
+performance of an act typically in connection therewith by a “lien” that does not impair the owner’s rights to 
+freely enjoy the benefits of the use and ownership of th e property. These benefits include the right to sell, 
+transfer, or otherwise convey, or further encumber the title to the land/real property. It is settled law that 
+California is a “lien” and not a “legal title” theory state when imposing encumbrances/liens against the title of 
+real property.  
+California has a 150-year history of development and e volution in the way its courts have applied legal 
+principles to mortgages and deeds of trust. As of 2009,  this 150-year history is split approximately in half, 
+creating two 75-year periods. The first 75-year period be gins in 1859, ends in 1933, and is marked by the 
+California Supreme Court’s historic insistence that mortga ges create “liens” and deeds of trust transfer “legal 
+title”. The Court held that the tw o instruments/security devices ha ve no common features, and each are 
+controlled by different bodies of real property law (“Title Period”).  
+CHAPTER FIVE 
+ 
+62 
+The second 75-year period begins in 1933, runs to the present, and is marked by the 180-degree reversal of 
+position in which the California Supreme Court currently insists that a deed trust is the functional equivalent of 
+a mortgage with power of sale. Therefore, both instruments (mortgages and deeds of trust) are governed by 
+mortgage laws (“Lien Period”). In these two periods, dramatically differing opinions on the same legal issue 
+were offered by California courts. These differing opini ons evolved the law regarding deeds of trust over the 
+last 75 years to reconcile the law applicable to mortgages with power of sale, and thus established the “lien 
+theory” as the applicable California Law. 
+The most comprehensive analysis of distinctions in the legal status of deeds of trusts and mortgages during the 
+Title Period is contained in two California Law Review  articles. The first published in 1915 by Professor Kidd 
+is Trust Deeds and Mortgages in California . See
+, A. M. Kidd, Trust Deeds and Mortgages in California, 3 Cal. 
+L. Rev 381 (1915).  
+The second analysis, Applications of the Distinction between Mortgages and Trust Deeds in California,  was 
+published in 1938 and brings Professor Kidd’s 1915 article current through the watershed Bank of Italy II  
+decision in 1933. See, Joseph M. Cormack and James B. Irsfeld Jr., Applications of the Distinction between 
+Mortgages and Trust Deeds in California, 26 Cal. L. Rev. 206 (1938). 
+In the 1915 article, Professor Kidd identifies the paradoxical character of California mortgage and deed of trust 
+law, which applied the “lien” theory and “legal title” theory of real property security instruments in the same 
+state at the same time.  The Title Period begins with the California Supreme Court’s decision in Koch v. Briggs
+, 
+14 Cal. 256 (1859. 
+The California Supreme Court held in the Koch v. Briggs case: “It [a deed of trust] has no feature in common 
+with a mortgage, except that it was executed to secure an indebtedness.”  As the 1915 and 1938 articles detail, 
+the legal effect of seeking to impose the “lien” theory for mortgages and the “legal title” theory for deeds of 
+trust resulted in numerous distinctions that seemi ngly had no foundation in legal principle, since both 
+instruments were clearly real property instruments/security devices. These distinctions were most prominent in 
+substantive areas such as the right of redemption (none historically recognized for deeds of trust), the one form 
+of action rule, limitations on deficiencies, and negotiability of a note secured by a mortgage versus deed of 
+trust, the fiduciary duties imposed on foreclosure trustees, homestead exemptions, mechanics liens, and the 
+impact of bankruptcy. 
+As noted by the leading treatise on California real estate: “Creditors began using the deed of trust as a real 
+property security instrument during the 19th century because of the procedural inhibitions imposed on the 
+mortgage by the courts and the impediments attendant w ith judicial foreclosure of the debtor's equity of 
+redemption. The use of a conveyance to a trustee clothe d with a power of sale offered the creditor several 
+advantages over the mortgage so that, by the time the distinctions between the two security instruments were 
+removed during the early part of the 20th century, the deed of trust ha d become the generally accepted and 
+preferred security device in California.” 
+“Except for some minor distinctions, for all practical pur poses, a mortgage that contains a power of sale has a 
+similar legal effect and economic function as the deed of  trust. Each is subject to the same procedures and 
+limitations on judicial and non-judicial foreclosure, each is subject to the same redemption provisions both 
+prior to and after the foreclosure sale, and each is s ubject to the same anti-defi ciency limitations. Both are 
+intended by the parties to serve the same economic function of providing security for the performance of an 
+obligation.”  See
+, Miller & Starr, California Real Estate 3d, § 10:1. 
+The depression era years of 1932 and 1933 were the turn ing point for be ginning the process of reconciling 
+California mortgage and deed of trust law. Two California Supreme Court opinions arising from the same case 
+symbolize the fitful end of the “Legal Title” period and the beginning of the “Lien” period. Although Bank of 
+Italy II is universally cited as the seminal decision reconciling mortgage and deed of trust law, little attention is 
+paid to the fact that just six (6) months earlier, the California Supreme Court decided Bank of Italy Nat. Trust & 
+Savings Ass’n v. Bentley, 14 P. 2d 85 (1932) – Bank of Italy I. 
+TITLE TO REAL PROPERTY 
+  
+63
+In Bank of Italy I, the California Supreme Court held: “It must be considered as thoroughly settled in California 
+that a deed of trust is not a mortgage. Substantial differences between two types of security have been 
+recognized, and statutes applicable to mortgages have  generally been held inapplicable to deeds of 
+trust…”.[citations omitted]…Stockwell v. Barnum, 7 Cal. App. 413, 94 P. 400 … Id., 14 P. 2d at 86. 
+This holding of Bank of Italy I makes even more remarkable the reversal of position contained in Bank of Italy 
+II (only six months later in the same case before the same  court): “This view, that deeds of trust, except for the 
+passage of title for the purpose of the trust, are practically and substantially only mortgages with a power of 
+sale…”. See, Bank of Italy Nat’l Trust and Savings Ass’n v. Bentley, 217 Cal. 644, 657 (1933).  
+Current Law.  The California Supreme Court’s recognition in Bank of Italy II  that deeds of trust are 
+“practically and substantially only mortgages with pow er of sale” renders obsolete all pre-1933 case law that 
+was built upon the legal foundation of Koch v. Briggs that holds a deed of trust “has no feature in common with 
+a mortgage, except that it was executed to secure an indebtedness.”  In case after case published over the last 75 
+years, the California courts have reconciled any remaini ng distinctions between a deed of trust and mortgage 
+with power of sale. See, The 1989 California Supreme Court case of  Monterey S.P. Partnership v. W.L. 
+Bingham, Inc. , 261 Cal. 3d 454 (1989). (“Monterey”) reveals just how far the unification of trust deeds and 
+mortgages has come.  
+In Monterey, the court considered whether service of a comp laint to the trustee of a deed of trust in a 
+mechanic’s lien foreclosure action is sufficient to bind the beneficiary of the deed of trust. In its holding, the 
+court makes it abundantly clear that a deed of trust creates a “lien” on the property and has the same legal effect 
+as a mortgage with a power of sale: “Although Whitney, supra, 10 Cal. 547, involved the effect of a mechanic’s 
+lien foreclosure on the rights of a mortgagee, the holding applies equally to a beneficiary under a deed of trust. 
+As explained in describing “the anomalous nature of deed s of trust in this state” (Bank of Italy etc. Assn. v. 
+Bentley (1933) 217 Cal. 644, 657, 20 P.2d 940), “deeds of tr ust, except for the passage of title for the purpose 
+of the trust, are practically and substantially only mortgages with a power of sale...”.  
+In practical effect, if not in legal pa rlance, a deed of trust is a “lien” on the property and not a transfer of fee 
+title to the trustee, i.e., establishing and adopting the “ lien” theory vs. the “legal  title” theory. It would be 
+inconsistent with Bank of Italy, supra, 217 Cal. 644, 20 P.2d 940, to deny the beneficiaries the rights of 
+mortgagees recognized in Whitney, supra, 10 Cal. 547, mere ly because the beneficiaries’ security interest took 
+the form of a deed of trust, which conveys “title” to a trustee. The deed of trust conveys “title” to the trustee 
+“only so far as may be necessary to the execution of the trust.” (Lupertino v. Carbahal (1973) 35 Cal.App.3d 
+742, 748, 111 Cal.Rptr. 112.)  
+The Court of Appeal also relied on Johnson v. Curley (1927) 83 Cal.App. 627, 257 P. 163, which held that 
+beneficiaries under a deed of trust were  not necessary parties to an action to have that deed declared void for 
+fraud. However, as plaintiff Monterey and amici curiae on its behalf point out, the Court of Appeal’s reliance 
+on Johnson was misplaced for several reasons. First, Johnson was decided before the court clarified that a 
+deed of trust is tantamount to a mortgage with a power of sale . (Bank of Italy, supra, 217 Cal. at p. 657, 20 
+P.2d 940.) Id.
+, at 590-591 (emphasis added). 
+As Monterey makes clear, pre-Bank of Italy II cases premised on the di stinction between trust deeds and 
+mortgages are no longer good law. The same result was recently reached in Aviel v. Ng, 161 Cal. App. 4 th 809 
+(2008). In Aviel, the court considered whether a subordination agreement subordinating a lease to “mortgages” 
+also subordinated the lease to a deed of trust beneficiary that had foreclosed on the lessor’s property. The lessee 
+argued strenuously that the perceived distinctions between  a mortgage and a deed of trust should result in the 
+court finding that the subordination did not apply to the deed of trust. The court rejected the arguments as 
+follows: 
+Here there was a subordination clause within the lease rendering the lease subordinate to “mortgages which 
+may now or hereafter affect” the real property. The Ngs, however, emphasize distinctions between mortgages 
+and deeds of trust that are either illusory or unimportant. For example,  they underscore that a deed of trust 
+conveys legal title, and, citing Anglo-California T. Co. v. Oakland Rys. (1924), 193 Cal. 451, 225 P. 452, urge 
+that “the interest in the property [vests] as an estate and not as a lien.” Anglo-California T. Co. predates Bank of 
+CHAPTER FIVE 
+ 
+64 
+Italy and is predicated on the obsolete “lien” versus “legal title” theory historically relied on to differentiate the 
+two security devices/instruments. That theory has been discredited by the more contemporary jurisprudence 
+discussed above which functionally equates the two instru ments and recognizes that a deed of trust, for all 
+practical purposes, is a “lien” on the property.  Also See
+, Domarad v. Fisher & Burke, Inc., 270 Cal.App.2d 
+543, 553 (1969). 
+These authorities and many more since 1933 confirm that  any pre-Bank of Italy II authorities are premised on 
+the distinction between deeds of trust and mortgages with power of sale are no longer good law. These earlier 
+decisions have been rendered obsolete based on the evol ution of California Law and the consistently applied 
+holding that mortgages and deeds of trust are functi onally equivalent and trust deeds are evaluated under 
+general mortgage law. Also See, Cornelison v. Kornbluth, 15 Cal.3d 590 (1975). 
+MECHANIC’S LIEN 
+California law expressly provides that persons furnishing labor or material for the improvement of real estate 
+may file liens upon the property affected, if the persons furnishing labor or material are not timely paid. Thus, 
+an unpaid contractor, or a craftsman employed by the contractor to work on a building project, but who has not 
+been paid by the owner or contractor may protect their right as an unpaid contractor or craftsman employed by 
+a contractor, to receive payment by filing a lien against the property in a manner prescribed by law. Any person 
+who has furnished material such as lumber, plumbing, or roofing holds the same right, if the claim is not timely 
+paid. It is because of the possibility of these liens being recorded that an  owner employing a contractor often 
+requires that a bond be furnished to guarantee payment of possible mechanics’ lien claims. 
+DESIGN PROFESSIONAL’S LIEN 
+Effective January 1, 1991, California Civil Code S ections 3081.1 through 3081.10 provide for the filing of a 
+design professional’s lien. 
+For this purpose, a “design professional” is defined as a certificated architect, a registered professional 
+engineer, or a licensed land surveyor who furnishes se rvices, pursuant to a written contract with a landowner 
+(property owner) for the design, engineering, or planning of a work of improvement. 
+If a landowner (property owner) defaults under a written c ontract with a design professional, a 10-day written 
+demand for payment must be made on the landowner (pr operty owner) prior to the recordation of a design 
+professional’s lien. Section 3081.3 re quires the 10-day written demand for pa yment be mailed by first-class 
+registered or certified mail, postage prepaid, addresse d to the landowner (property owner), which notice of and 
+demand for payment shall specify that a default has occu rred (pursuant to the contr act or agreement) and the 
+amount of the default. Subsequently, the design professional may record a notice of lien against the real 
+property on which a work of improvement is to be constructed, with the notice of lien describing the real 
+property being improved, and further specifying the bu ilding permit or other governmental approval of the 
+work as a condition of recording the notice of lien. See
+ Civil Code Section 3081.2 and 3081.3.  
+The design professional’s lien will not take priority over the interests of record of a purchaser/ 
+buyer/lessee/encumbrancer, if the interests of the foregoing in question was duly recorded prior to the recording 
+of the design professional’s lien. See
+ Civil Code Section 3081.9 . The design professional’s lien does not apply 
+to the work of an improvement related to a single-fa mily owner occupied residence where the construction 
+costs are less than $100,000 in value. See Civil Code Section 3081.10.  
+Except as previously discussed, the statutes provide fo r enforcement of a design professional’s lien in the same 
+manner as a mechanic’s lien. 
+Definition 
+A lien is a charge imposed in some way, other than by a transfer in trust upon specific property by which it is 
+made security for the performance of an act. A mechanic’s lien is a lien th at secures payment to persons who 
+have furnished material, performed labor, or expended skill in the improve ment of real property belonging to 
+another.  See Title 15 of the Civil Code, commencing with Section 3082.  
+It is helpful to keep in mind while reading and thinking about this material on mechanics’ liens that: 
+TITLE TO REAL PROPERTY 
+  
+65
+ The mechanic’s lien claimant’s fundamental objective is to get paid; and   
+ The claim of mechanic’s lien is the claimant’s security used to reach the objective of payment. 
+To convert the security for the lien into money requires: 
+1. Timely recordation of a notice and claim of lien (one document) in the county recorder’s office in which 
+the work of improvement is located; 
+2. Perfection of the recorded notice and claim of lien by the filing of an action  (a lawsuit) in the right court; 
+3. Recordation of a lis pendens (a written notice that a lawsuit has been filed concerning real property, 
+involving either the title to the property or a claimed ownership in the property); 
+4. Timely pursuit of the lawsuit to judgment; and 
+5. Enforcement of that judgment by a mechanic’s lien foreclosure sale. 
+Origin 
+The basic lien rights of mechanics, materialmen, artisans and laborers is found at Article XIV, Section 3 of the 
+California State Constitution:  
+“Sec. 3. Mechanics, persons furnishing materials, artisans, and laborers of every class, shall have a lien upon 
+the property upon which they have bestowed labor or furnished material for the value of such labor done and 
+material furnished; and the Legislature shall provide, by  law, for the speedy and effi cient enforcement of such 
+liens.”  
+The statutes enacted pursuan t to this constitutional provision are, as previously mentioned found in Title 15, 
+Division 3, Part 4, of the Civil Code, commencing with Section 3082. Th is Section of the law is entitled, 
+“WORKS OF IMPROVEMENT”. 
+The Theory 
+The mechanic’s lien law is based on the theory that improvements to real property contribute additional value 
+to land; therefore, it is only equitable to impose a charge on the land/property equal to such increase in value. 
+This charge may exist in the absen ce of any direct contract relationshi p between the lien claimant and the 
+landowner. The lien must, however, be founded upon a valid contract with the contractor, subcontractor, 
+material house, supplier, lessee or vendee. Also, ordinarily the lien is valid only to the extent of labor and 
+materials furnished for and actually used in the job. 
+Public Policy 
+The mechanics’ lien statutes and the decisions of the courts interpreting and construing them reflect a strong 
+public policy of providing extraordinary rights to unpaid contributors of services and material in the property 
+they were instrumental in improving, and in the funds intended for payment for the improvements. The rights of 
+these unpaid contributors accrue and may be enforced against the property, even though (in certain fact 
+situations) the owner of the property has not contracted with the claimant and no personal liability exists to the 
+claimant. 
+The mechanic’s lien device is the traditional remedy giving security to people who improve the property of 
+others. However, owners are given means within the California statutes to protect against the burdening of their 
+land/property with improper liens. The basic elements of California’s system of protection for mechanics’ 
+lienors and owners are: 
+1. Mechanic’s lien; 
+2. Stop notice on private work; 
+3. Stop notice on public work; 
+4. Payment bond on private work; 
+5. Payment bond on public work; 
+6. Contractor’s license bond; and 
+7. Notice of nonresponsibility. 
+CHAPTER FIVE 
+ 
+66 
+Persons Entitled to a Mechanic’s Lien 
+The constitutional guarantee of the right to a mechanic ’s lien upon the property is provided to mechanics, 
+materialmen, contractors, subcontractors, lessors of equipment, artisans, design professionals, machinists, 
+builders, teamsters, draymen, and all persons and laborers of every class performing labor upon or bestowing 
+skill or other necessary services upon, or bestowing materials, or  leasing equipment to be used or consumed in 
+or furnishing appliances, teams, or power contributing to works of improvement. See
+ Section 3110 of the Civil 
+Code. Persons specifically entitled to mechanics’ liens by virtue of the constitution and the statutes include the 
+following: 
+Mechanics Registered Engineers 
+Materialmen Licensed Land Surveyors 
+Contractors Machinists 
+Subcontractors Builders 
+Lessors of Equipment Teamsters 
+Artisans Draymen 
+Architects Union Trust Fund   
+See
+ Section 3111 of the Civil Code 
+Property Subject to Mechanics’ Liens 
+The land/property that may be subject to a claim of mechanic’s lien should be the property described in a 
+recorded claim of mechanic’s lien. Pe rhaps the only safe exception to this is real property owned and used by 
+the public. No lien for work or material attaches to a “public work.” See Los Angeles Stone Co. v. National 
+Surety Co., 178 C 247, 173 P 79 (1918). In situations in which private enterprise undertakes improvement of 
+public lands/properties, a claim of lien could be sustained against the improvements, although it would be 
+invalid as to the land/property. See
+ Western Electric Co. Inc. v. Colley, 79 CA 770, 251 P 331 (1926).  
+With every statutory increase in the designation of those contributors of services and material entitled to a claim 
+of mechanic’s lien, there has usually been a corresponding broadening of the land/property interests that may be 
+subjected to a claim of mechanic’s lien. Today, under appropriate circumstances, a claim of mechanic’s lien 
+may attach to only a building or structure; only to land/property beneath a building or structure; to both 
+land/property and the building or structure; or, to a parcel of land upon/property for which there is no structure. 
+Public Works 
+This discussion of the mechanic’s lien law applies only to private works of improvement. Sections 3179 
+through 3214 and Sections 3247 through 3252 of the Civil C ode should be consulted in connection with any 
+question or problem arising from the contribution of labor or material to a public work of improvement. A 
+“public work of improvement” means any work of improvement contracted for by a public entity. “Public 
+entity” means the state, Regents of th e University of California, a county,  a city, district, public authority, 
+public agency, and any other political subdivi sion or public corporation in the state. See
+ Civil Code Sections 
+3099 and 3100. 
+Work of Improvement  
+Mechanics’ liens are triggered by the commencement of a work of improvement. A work of improvement is 
+defined in Section 3106 of the Civil C ode as including the construction, alte ration, addition to, or repair of a 
+building or structure. The structure could be a bridge, ditch, well, fence, etc. It may also include activities not 
+directly associated with a building or structure such as seeding, sodding, planting, or grading. A work of 
+improvement includes “site improvements” such as trees  or other vegetation located on the land/property, the 
+drilling of test holes, grading, filling, or otherwise improving the land/property as well as the street, highway, or 
+sidewalk in front of adjoining the land/property. “Site  improvements” also improve constructing or installing 
+sewers or other public utilities, the construction of areas, vaults, cella rs, or rooms under the land/property 
+including sidewalks and demolishing or removing of any improvements on the land/property. See
+ Civil Code 
+Section 3102.  
+TITLE TO REAL PROPERTY 
+  
+67
+Lender’s Priority  
+If commencement of work has occurred on a project prior to  recordation of a mortgage or deed of trust, all 
+mechanics’ liens are prior to the r ecorded instrument of encumbrance. The lender’s margin of security for 
+repayment of a construction loan is jeopardized by the commencement of work on the project prior to 
+recordation of the instrument of encumbrance. If any mechanic’s lien claimant can show that commencement of 
+work occurred prior to recordation of the lender’s instrument of encumbrance, all mechanic’s lienors will take 
+priority over the lender if the real property/land subject to  the work of improvement is sold at sheriff’s sale. See
+ 
+Civil Code Section 3134. 
+Preliminary 20-Day Notice 
+The right to claim a lien and to assert the privileges of a mechanic’s lien claimant is dependent on compliance 
+with numerous statutory procedural requirements. 
+The initial step in the perfection of a claim of mechanic’s lien for all claimants, except one under direct contract 
+with the owner, one performing actual labor for wages or an express labor trust fund, as defined in Civil Code 
+Section 3111, is to give the preliminary 20-day notice specified in Section 3097 of the Civil Code. That is, 
+before recording a mechanic’s lien, the lien claimant gives a written notice to certain persons, depending on the 
+relationship of the lien claimant to the work of improvement and the owner of the real property/land on which 
+the work has been done or will be done. The notice may be  given any time after the contract has been entered 
+into, but it must be given no later than 20 days after claimant has first furnished labor, services, equipment or 
+materials to the job site. This 20-day notice is preliminary to the recording of a mechanic’s lien. It is a 
+prerequisite to the validity of a claim of mechanic’s lien. The persons who are entitled to receive the notice 
+depends on the relationship of the mechanic’s lien claimant to the owner of the property. Thus: 
+1. If the claimant has a direct contract with the owner, the notice needs to be given only to the construction 
+lender, if any, or to the reputed construction lender, if any. See
+ Section 3097(b) of the Civil Code. 
+2. If the claimant does not have a direct contract with the owner, the notice is required to be given to the 
+following persons. See Section 3097 (a) of the Civil Code: 
+ a. The owner, or reputed owner; 
+ b. The original contractor, or reputed contractor; and 
+ c. The construction lender, or  reputed construction lender. 
+ d. Any subcontractors with whom the claimant has contracted. 
+The purpose of the notice is to inform the owner, original contractor, and construction lender, if any, prior to 
+the time of recording a claim of lien, that the improved property may be subject to liens arising out of a contract 
+to which they are parties. See
+ Wand Corp. v. San Gabriel Valley Lumber Co. 236 CA2d 855, 46 Cal. Rptr. 486 
+(1965). 
+The preliminary 20-day notice shall contain all of the following: 
+1. Name and address of the person furnishing the labor, service, equipment, or materials; 
+2. Name of the person who contracted for purchase of the labor, service, equipment, or materials; 
+3. A description of the job site sufficient for identifica tion (e.g., common street address of the job site or legal 
+description);  
+4. A general description of the labor, service, equipment,  or materials furnished, or to be furnished and an 
+estimate of the total price thereof; and 
+5. A Notice To Property Owner in bol d face type as required by law. 
+See
+ Civil Code Section 3097.  
+An up-to-date form should be used since a failure to use a current form that complies with the statute may cause 
+the court to disregard the preliminary 20-day notice. See Harold James Inc. v. Five Points Ranch, Inc., 158 
+CA3 1, 204 CR 494 (1984). 
+CHAPTER FIVE 
+ 
+68 
+Every written contract entered into between a land/property owner and an original contractor shall provide 
+space for the owner to enter his name and address of re sidence and place of business.  The original contractor 
+must make available the name and address of reside nce of the owner and the name and address of the 
+construction lender or lenders to any person s eeking to serve a preliminary 20-day notice. See Section 3097 (m) 
+of the Civil Code. 
+If one or more construction loans are obtained after commencement of construction, the property owner must 
+provide the name and address of the construction lender or lenders to each person who has given to the property 
+owner a preliminary 20-day notice. See Section 3097 (n) of the Civil Code. 
+Filing a Preliminary 20-day Notice 
+Each person serving a preliminary 20-day notice may file (not record) that notice with the county recorder in 
+which any portion of the real property is located. The filed preliminary 20-day notice is not a recordable 
+document and, hence, is not entered into the county recorder’s indexes that impart constructive  notice. The 
+recorder is to maintain a separate and distinct index of the filings of the preliminary 20-day notice that does not 
+impart actual or constructive  notice to any person of the existence (or contents) of the filed 20-day notice. No 
+duty of inquiry on the part of any party to determine the existence or contents of the preliminary 20-day notice 
+is imposed by the filing. See
+ Civil Code Section 3079(o).  
+The purpose of filing the preliminary 20-day notice is limited. It is intended to provide the necessary 
+information for the county recorder to issue notices of recorded notices of completion and of cessation to those 
+persons who filed the 20-day notice. Once the county record er’s office records either a notice of completion or 
+cessation, it must mail to those persons who filed a preliminary 20-day notice, notification that a notice of 
+completion or cessation has been recorded and the date of recording of the foregoing. See
+ Section 3097 (o) (2) 
+of the Civil Code. 
+Failure of the county recorder to mail the notices required by law to the person who filed the preliminary 20-
+day notice, or the failure of those persons to receive such notices shall not affect the period within which a 
+claim of lien is required to be recorded. However, the county recorder is to make a good faith effort to mail 
+within 5 days after the recording of a notice of completion or cessation notices thereof to those persons who 
+filed the preliminary 20-day notice. See
+ Section 3079 (o)(3) of the Civil Code.  
+Determination of Completion Time 
+Fixing the time of completion, to the exact day, is critical to establishing whether a given claim of lien 
+(mechanic’s or design professional’s lien) has been recorded within the time limit fixed by law. The 
+determination of completion of works of improvement  can be complex under California law. Generally, any 
+one of the following alternatives is recognized by the law as equivalent to completion: 
+l. Occupation or use by the owner or owner’s agen t, accompanied by cessation of labor on the work of 
+improvement; 
+2. Acceptance by the owner or owner’s  agent of the work of improvement; 
+3. A cessation of labor on the work of improvement for a continuous period of 60 days; or 
+4. A cessation of labor on the work of improvement for a continuous period of 30 days or more, if the owner 
+records in the county recorder’s office a prescribed notice of cessation. See
+ Section 3092 of the Civil Code. 
+If the work of improvement is subject to acceptance by any public entity, the completi on date is considered as 
+the date of acceptance or a cessation of labor for a continuous period of 30 days. See Civil Code Section 3086. 
+Thereafter, generally within 10-days the owner may file the notice of completion. If properly drawn, it will 
+show the date of completion, the name and address of the owner, the nature of the interest or estate of the 
+owner, a description of the land/property (which includes the official street address of the property, if it has 
+one, or a sufficient legal description of the site), and the name of the original contractor, if any. If the notice is 
+given only of completion of a contract for a particular portion of the total work of improvement, then the notice 
+will also generally state the kind of work done or materials furnished.  
+As previously mentioned, the notice of completion should be filed with the recorder of the county where the 
+property is situated within 10 days after completion of the work of improvement. See
+ Civil Code Sections 3093 
+and 3117. 
+TITLE TO REAL PROPERTY 
+  
+69
+A mechanic’s claim of lien may be filed: 
+1. By the original contractor within 60 days after the date of filing for record of the notice of completion or 
+of cessation. An original contractor is one who contr acts directly with the owner or owner’s agent to do the 
+work and furnish materials for the entire job, or for a particular portion of the work of construction. The 
+owner may enter into different original contracts, fo r example, framing, plumbing, painting, or papering. A 
+material supplier, as such, is not an original contractor. (It should be noted that contracting with more than 
+one original contractor may be subject to applicable provisions of the Contractors State License Law. See 
+Business and Professions Code Section 7000 et seq). 
+2. By any claimant, other than the original contractor , within 30 days after filing for record of the notice of 
+completion or of cessation. 
+3. If the notice of completion or cessation is not recorded, the original contractor (as defined) or any other 
+claimant must file/record a claim of mechanic’s lien within 90 days after completion of the work of 
+improvement. See Civil Code Section 3106. 
+If there are two or more original contractors, as defined, and a notice of completion or cessation is properly 
+recorded as to one of them, the original contractor under the contract covered by the notice must, within 60 
+days after recording of such notice, file/record the claim of mechanic’s lien. The claimant under the contract for 
+which notice of completion or cessation has been record ed must, within 30 days after the recording of the 
+notice, file/record the claim of a mechanic’s lien. Each original contractor and any claimants under the contract 
+with the original contractor are subject to their own notice of completion or cessation and the recording of a 
+claim of mechanic’s lien within the periods prescribed by applicable law. If no notice of completion or 
+cessation has been recorded, the period of recording claims of mechanic’s liens is the 90 days specified in 
+Sections 3115 and 3116. See
+ Sections 3114, 3115, 3116, and 3117 of the Civil Code. 
+Termination of the Lien 
+Voluntary release of a mechanic’s lien, normally after payment of the underlying debt, will terminate the lien. 
+But even in the absence of release, the lien does not endure indefinitely. If a mechanic’s lien claimant fails to 
+commence an action to foreclose the clai m of lien within 90 days after recording the claim of lien and if within 
+that time no extended credit is recorded, the lien is automatically null, void and of no further force and effect. 
+(Section 3144(b), Civil Code) When credit is extended for purposes of this limitation, it may not extend for 
+more than one year from the time of completion of the work. Moreover, a notice of the fact and terms of the 
+credit must be filed for record within the 90-day lien period. 
+If the lien is foreclosed by court action, there may ultimately be a judicial sale of the property and payment to 
+the lienholder out of the proceeds. 
+Notice of Nonresponsibility 
+The owner or any person having or claiming any interest in the land may, within 10 days after obtaining 
+knowledge of construction, alteration, or  repair, give notice that he or she will not be responsible for the work 
+by posting a notice in some conspicuous place on the property and recording a verified copy thereof. The notice 
+must contain a description of the property; the name of the person giving notice and the nature of his/her title or 
+interest; the name of the purchaser under the contract, if any, or lessee if known; and a statement that the person 
+giving the notice will not be responsible for any claims arising from the work of improvement. If such notice is 
+posted, the owner of the interest in the land may not have  his/her interest liened, provided the notice is recorded 
+within the ten-day period. 
+The validity of a notice of nonresponsibility cannot be dete rmined from the official county records since they 
+will not disclose whether compliance has been made with the code requirements as to posting on the premises. 
+If such posting has not been made, a recorded notice affords no protection from a mechanic’s lien. 
+Release of Lien Bond 
+Owners and contractors disputing the correctness or the validity of a recorded claim of mechanic’s lien may 
+record, either before or after the commencement of an action to enforce the claim of lien, a lien release bond in 
+accordance with the provisions of Ci vil Code Section 3143. A proper lien release bond, properly recorded, is 
+effective to “lift” or release the claim of lien from the real property described in the lien release bond as well as 
+any pending action brought to foreclose the claim of lien. 
+CHAPTER FIVE 
+ 
+70 
+CONDITIONS REQUIRING OWNER TO PROVIDE CONTRACTOR WITH COPY OF RECORDED 
+CONSTRUCTION LOAN INSTRUMENTS AND SECURITY FOR PAYMENT 
+Recent amendments to the law require (in those fact s ituations where a lending institution is extending credit in 
+the form of a construction loan) the owner must provide the original contractor with a copy certified by the 
+county recorder of the recorded construction mortgage or d eed of trust. The recorded instrument is to disclose 
+the amount of the construction loan. The trigger for the foregoing is when the contract for the work of 
+improvement is more than $5,000,000 and the owner is th e fee simple title holder of the property,  or the 
+contract for the work of improvement is more than $1,000,000 and the owner holds less than a fee simple title 
+interest such as a leasehold interest.  
+In certain defined fact situations, the owner may be re quired to provide security for the payment obligations 
+under the construction contract. The security may be in the form of a payment bond, an irrevocable letter of 
+credit, or an escrow account with funds deposited therein subject to a security interest established in favor of 
+the original contractor being determ ined sufficient by written opinion of legal counsel. This body of law is 
+complex and should be reviewed by knowledgeable legal counsel. See
+ Civil Code Section 3110.5. 
+ATTACHMENTS AND JUDGMENTS 
+Property Subject to Attachment 
+Attachment is the process by which real or personal prope rty of a defendant in a lawsuit is seized and retained 
+in the custody of the law as security for satisfaction of the judgment the plaintiff hopes to obtain in the pending 
+litigation. The plaintiff gets the lien be fore entry of judgment, and is somewh at more assured of availability of 
+the defendant’s property for eventual execution in satisfaction of the claim (if the judgment is awarded to the 
+plaintiff). 
+The purpose of an attachment is to protect a plaintiff who is a prospective judgment creditor against attempts by 
+the defendant/debtor to transfer or dissipate the property subject to the attachment, and thus, in so dissipating 
+the property, frustrate efforts to obtain satisfaction of  a judgment subsequently obtained. The property seized 
+and held under the attachment process constitutes an asset, or assets, which a judgment creditor may cause to be 
+sold through execution proceedings in satisfaction of the judgment. 
+An attachment has always been referred to as a ha rsh remedy because it imposes a lien on the defendant’s 
+property and deprives him or her of absolute dominion and control over it for so long as it takes the court to 
+adjudicate the plaintiff’s claim. It is because of the deprivation of th e defendant’s right  to dispose of 
+defendant’s attached property that the procedural framework of the attachment process has not been adopted to 
+accommodate time consuming complex legal issues or dis putes. Instead, the attachment process is based on the 
+theory that the existence of a debt owed by the defendant to the plaintiff is conceded and that the principal 
+function of the court is merely to ascertain the amount of that debt. This is why the right of a plaintiff to an 
+attachment lien before trial (a prejudgment attachment lien) has been historically confined to actions arising out 
+of contracts, express or implied, for the payment of money. Even in case of a claim arising out of a contract, the 
+courts have been reticent to issues orders for prejudgment attachment liens.  
+Section 488.720 of the Code of Civil Procedure introduces a novel method of tempering the harsh 
+consequences of an attachment lien and preventing its a buse. In noticed proceedings before the court, should 
+the value of the defendant’s interest in the property sought  to be attached be shown to be clearly in excess of 
+the amount necessary to satisfy plaintiff’s claim, the court may order a release of as much of the property as it 
+considers excess security. 
+Prejudgment attachments of the property of a natural person (individual) have been limited by case law and 
+statute to claims arising out of the conduct of a business, trade, or profession. There are numerous other 
+limitations on obtaining a prejudgment attachment. 
+Property Exempt from Attachment and Execution 
+As a matter of public policy, certain property is exempt from attachment or execution where the defendant is a 
+natural person. The exemptions include, among others,  property that is necessary for the support of the 
+defendant or the family of the defendant; “earnings” as provided for and defined in Code of Civil Procedure 
+Sections 706.010 and 706.011; interests in real property except leasehold estates with unexpired terms of less 
+TITLE TO REAL PROPERTY 
+  
+71
+than a year; accounts receivable of a trade, business, or profession conduc ted by the defenda nt, as defined; 
+equipment; farm products; inventory; money judgments ar ising out of the conduct of the defendant regarding a 
+trade, business, or profession; money on the premises where a trade, business, or professions is conducted by 
+the defendant, except the first $1000.00 located elsewh ere, as defined; negotiable documents of title; 
+instruments; securities; and minerals or the like. Community property interests of the defendant are subject to 
+the attachment. A proper claim is to be made for the exemptions to apply. See Code of Civil Procedure Sections 
+487.010, 487.020, 487.030 and 706.010, et seq. 
+The most important exemption is the homestead, and the formalities of declaration of homestead by the owner 
+are discussed later in this chapter.  See Code of Civil Procedures Section 487.025.  
+Judgment 
+A final judgment is the final determina tion of the rights of the parties in an  action or proceeding by a court of 
+competent jurisdiction. Of course, the possibility exists th at either party will a ppeal the judgment and, 
+following the appeal, the judgment might subsequently be reversed or amended. Notwithstanding the foregoing, 
+comparatively few judgments are appealed. Even for t hose judgments that are not appealed, the judgment is 
+enforceable until the time to appeal or seek other procedural legal relief has elapsed. 
+A simple money judgment does not automatically create a lien. However, as soon as a properly certified 
+abstract of the judgment is recorded with the recorder of any county, it becomes a lien upon all real property of 
+the judgment debtor located in that county. It extends in that county to all real property the debtor may 
+thereafter acquire before the lien expires. The lien of  a lump sum money judgment normally continues for ten 
+years from the date of entry of the judgment or decree.  See Code of Civil Procedure Section 664 et seq. As 
+with the lien on attachment, a judgment lien is discharged  if enforcement of the judgment is stayed on appeal 
+and the defendant executes a sufficient undertaking (promi se or security) or deposits in court the requisite 
+amount of money. See Code of Civil Procedure Sections 489.010 et. seq. and 515.010 et  seq.   
+California Law has been amended  to limit the inclusion of the social security number of the debtor on the 
+abstract of judgment to the last four digits of the number. However, the listing of the social security number and 
+the driver’s license number of the judgment debtor pur suant to Section 4506 of the Family Code applies to 
+abstracts of judgment recorded after January 1, 1979, unless otherwise limited pursuant to the previously 
+mentioned section of the Family Code.  
+The abstract of judgment is to contain the title of the court where the judgment is entered, the cause and number 
+of the action, and the date of the entry of the judgment in the records of the court. In addition, the name and last 
+know address of the judgment debtor and the name and address of the judgment creditor are to be included 
+along with the date of the issuance of the abstract. Generally , the priority of an abstract of judgment is the date 
+of recordation of the original abstract of judgment. Exceptions to this rule have been provided by law.  See 
+Code of Civil Procedure Section 674.  
+EASEMENTS 
+Generally 
+Having considered various types of liens which are encumbrances affecting the title to property, it is important 
+to consider encumbrances which affect the physical condition or use of the property. Easements, probably the 
+most common of this category, are ordinarily rights to enter and use another person’s land or a portion thereof 
+within definable limits. Therefore, an easement is a right, privilege, or interest limited to a specific purpose 
+which one party has in the land/property of another. 
+Easement rights are often created for the benefit of the owner of adjoining land. The benefitted land is called 
+the “dominant tenement,” and the land subject to the eas ement is described as the “servient tenement.” Unless 
+the easement is specifically described to be “exclusiv e,” its creation does not prevent the owner of the land 
+from using the land/property and the portion covered by th e easement in a way that does not interfere with the 
+use of the easement. 
+Appurtenant Easements 
+Typical statutory easements (or land burdens or servitudes as they are also known) include, among others: a 
+right of ingress and egress (a right to go on the land and to exit from the land); the right to use a wall as a party 
+wall; or the right to receive more than natural support from adjacent land/property or things affixed thereto. 
+CHAPTER FIVE 
+ 
+72 
+These easements, when attached to a ‘‘dominant teneme nt,” are considered “appurtenant” thereto, and pass 
+automatically upon transfer of the dominant tenement without explicit mention in the instrument of transfer. 
+“Appurtenant” means “belonging to.” Civil Code Section 801 lists a variety of easements commonly used in 
+real property transactions. Civil Code Section 801.5 provides for a solar easement to ensure that solar collectors 
+receive direct and unimpaired sunlight to facilitate the operation of the solar energy system. 
+Easements in Gross 
+It is possible to have an easement that is not appurte nant to particular land/property. Thus A, who owns no 
+related land/property, may have a right-of-way over B’s land/property. Public utilities frequently enjoy 
+easements to erect poles and string wires over private lands, yet own no related dominant tenement. Such 
+easements are technically known as easements in gross, and are personal rights attached to the person of the 
+easement holder and not attached to any specific land/property, yet in reality they encumber someone’s 
+land/property and in effect constitute an interest therein. 
+If the instrument creating an easement is unclear, the fo llowing factors are useful in determining whether the 
+easement is appurtenant or in gross: (1) if the easement can fairly be construed as being attached to the 
+land/property, it will be so construed; (2) the intention of the parties and the right created are important 
+considerations; and (3) outside evidence may be considered. 
+How Easements Are Created 
+Easements may be created in various ways, such as by express grant, express reservation, implied grant or 
+implied reservation, agreement, prescription, necessity , dedication, condemnation, sale of land/property with 
+reference to a plat, or estoppel. 
+Normally, easements arise in one of th ree ways. Either they are expressly set forth in some writing (such as a 
+deed or a contract), or they arise by implication of law, or by virtue of long use. Those created by deed must 
+comply with the usual requirements of any deed and may ar ise either by express grant to another or by express 
+reservation to oneself. 
+While the most common method of creating an easement is by express grant or reservation in a grant deed, 
+written agreements/contracts between ad joining landowners/property owners often are used. Generally, a deed 
+or other recorded instrument to impart constructive notice of the easement established by the 
+agreement/contract. The person who can grant a permanent easement is the f ee owner of the servient tenement, 
+or a person with the power to dispose of the fee. 
+Easements created by agreement/cont ract with a deed or other instrument of record to impart constructive  
+notice must not violate applicable law, public policy implementing the law, or public policy even though not 
+expressly applicable law. In a r ecent case, the agreement/contract betw een the dominant tenement and the 
+servient tenement established an easement for maintaining horses on the land/property of the servient tenement. 
+The applicable zoning ordinance prohibited the maintenance of horses on the land/property affected by the 
+easement. Because of the violation of  the zoning ordinance, the court he ld the easement unenforceable and the 
+agreement/contract void. See Civil Code Section 1667 and Baccouche v. Blankenship (2007), Cal.App.4th [No. 
+B192291. Second Dist., Div. Four. Sep. 11, 2007.] 
+Easement by Implication of Law 
+Civil Code Section 1104 contains the rule for implie d grants. Certain conditions must exist at the time 
+land/property is conveyed before an easement by implied grant will have effect. An easement by necessity is 
+one example of an easement by implication, but an easem ent by necessity differs somewhat in its requirements 
+from other easements by implication. 
+The “way of necessity” is generally recognized whenever a transfer occurs which truly “landlocks” a parcel of 
+real estate (land/property) and no me thod of access exists, except over the se rvient tenement retained by the 
+seller, or over the land/property of a stranger. The former is established by implication. The later would 
+generally require a quit claim deed from the seller desc ribing the road  used by the seller and the seller’s 
+predecessors in title to the parcel of land/property conve yed that otherwise is “landlocked”. To implement the 
+claim to the access may require establishing the easement by perscription. 
+TITLE TO REAL PROPERTY 
+  
+73
+Another implied easement is recognized when land/property in one ownership is divided, and at the time of 
+division, one portion is being used for the benef it of the other portion, e.g., a sewer lateral.  See Civil Code 
+Section 801 and 1104. 
+Easement by Prescription 
+Continuous and uninterr upted use for five years will create an easement by prescription where such use is 
+hostile and adverse (without license or permission from the owner), open and notorious (the  owner knows of 
+the use or may be presumed to have notice of the use) , exclusive (although use is not necessarily by one person 
+only, it is such as to indicate to the landowner/property owner that a private right is being asserted), and under 
+some claim of right.  Generally, payment of ad valorem or  other relevant real property taxes is not required to 
+establish an easement by prescription, although it is among the requirements to establish adverse possession and 
+ownership of the land/property. The obtaining of a quitclaim deed as discussed in the previous section may join 
+the concept of easement by implication with easement by prescription. Should the stranger have been in chain 
+of title to the subject land/property, an easement by implication with a quitclaim deed may be established.  See
+ 
+Civil Code Section 813 and 1008. 
+Termination of Easements 
+Easements may be extinguished or terminated in seve ral ways, including express re lease, legal proceedings, 
+nonuse of a prescriptive easement for five years, abandonment, merger of the servient tenement and the 
+easement in the same person, destruction of the servie nt tenement, and adverse possession by the owner of the 
+servient tenement. An easement obtained by grant cannot be lost by nonuse. See Civil Code Section 811. 
+RESTRICTIONS 
+A very common type of encumbrance is the restriction, which, as the name suggests, in some way restricts the 
+free use of the land by the owner. Commonly, restrictions are referred to as the covenants, conditions, and 
+restrictions (CC&Rs) or the declaration. 
+Restrictions are generally created by private owners, typically by appropriate clauses in deeds, or in 
+agreements, or in general plans of entire subdivisions. A restriction usually assumes the form of a covenant—a 
+promise to do or not to do a certain thing—or a condition . Zoning is an example of a public use restriction on 
+the use of land. 
+Distinction between Covenants and Conditions 
+A covenant is essentially a promise to do or not to do a certain thing. It is generally used in connection with 
+instruments pertaining to real property, and is created by agreement. Typically it is embodied in deeds, but it 
+may be found in any other writing. For example, a tenant might covenant in a lease to make certain repairs, or a 
+buyer might covenant to use certain land/property only for a retail grocery store. A mere recital of fact, without 
+anything more, is not a covenant. 
+A condition, on the other hand, is a qualification of an estate granted. Conditions, which can be imposed in 
+conveyances, are classified as conditions precedent a nd conditions subsequent. A condition precedent requires 
+certain action or the happening of a specified event before the estate granted can vest (i.e., take effect). 
+A familiar example is a requirement found in most of the installment contracts of sale of real estate (also known 
+as a land contract of sale). All payments required under the agreement shall be made at the time specified 
+before the buyer may demand transfer of title. It is important to understand that the use of such contracts are 
+subject to legal issues where there is existing mortgages or deeds of trust encumbering the title of the 
+land/property described therein. Accordingly, such contracts should not be used without the advice of 
+knowledgeable legal counsel. 
+If there is a condition subsequent in a deed, the title ve sts immediately in the grantee, but upon breach of the 
+condition, the grantor has the power to terminate the estate. This is termed a forfeiture, since the title may revert 
+or be forfeited to the creator of the condition or to the heirs or successors in interest of the creator without 
+payment of any consideration. An example is a condition subsequent in the deed stating that the property may 
+not be used for the sale of liquor or other forms of alcoholic beverage . Should this conditi on subsequent be 
+violated, title reverts to the grantor that  created the condition or to the lawful heirs or successors in interest of 
+the grantor.  
+CHAPTER FIVE 
+ 
+74 
+Covenants and conditions are distinguishable in two fu rther respects, in regard to the relief awarded and 
+second, as to the persons by or against whom they may be enforced. 
+Relief awarded. As to the first, while a condition affects the estate created, and the failure to comply with it 
+may result in a forfeiture of title, the only remedy to a breach of covenant  is an action of damages or an 
+injunction. Breach of a condition may pr event any right arising in favor of  the breaching party, or destroy a 
+right previously acquired, but does not subject the breaching party to liability and damages. While a breach of a 
+covenant gives rise to a right of actual damages, does not necessarily excuse the other party from performance. 
+Enforcement. As to the second difference, a covenant norma lly does not bind successors of the promisor who 
+may become owners of the affected land/property. Howe ver, some covenants “run with the land” (i.e., they 
+bind the assigns of the covenantor or promisor and ve st in and benefit the assigns of the covenantee or 
+promisee), or they may be binding and effective by statute or in equity. Conditions, on the other hand, run with 
+the restricted land into the indefin ite future, unless abandoned or vacated by the grantor creating the condition 
+or the lawful heirs or successors in interest of the grantor. 
+How construed. Whether a particular provision is a condition or covenant is a question of construction. Since 
+the law abhors forfeitures, the courts ordinarily will construe restrictive provisions as covenants only, unless the 
+intent to create a condition is plain. The use of the term “condition” or “covenant” is not always controlling. 
+The real test is whether the intention is clearly expressed and the enjoyment of the estate conveyed was 
+intended to depend upon the performance of a condition; otherwise, the provision will be construed as a 
+covenant only. 
+For instance, the deed reciting that it is given upon the agreement of the grantee to do or not to do a certain 
+thing implies a covenant and not a condition. So also with a recital that the land conveyed is or is not to be used 
+for certain purposes. 
+Certain Covenants and Conditions Are Void 
+Covenants and conditions that are unlawful, impossible of performance, or in restraint of alienation, are void. 
+For example, a condition that a party shall not marry is void, but a condition to give use of property only until 
+marriage is valid. A condition against conveying without the consent of the grantor, or for only a specified 
+price, is void as in restraint of alienation. In such  cases, title passes free of the condition subsequent. Recently, 
+owner/developers of subdi vision properties have sought to impos e conditions subsequent upon the deeds 
+conveying title to the individual parcel s/properties within the subdivision re quiring the payment of fees at the 
+time of sale or transfer to an entity established for a community purpose (such as the maintenance of a 
+commonly or publicly owned land/property functioning as a preserve).  
+Title does not pass at all if a condition precedent is im possible to perform or requires the performance of a 
+wrongful act. However, if the act itself is not wrong, but is otherwise unlawful, the deed takes effect and the 
+condition is void. 
+Covenants Implied in Grant Deed 
+When the word “grant” is used in any conveyance of an  estate of inheritance or fee simple, it implies the 
+following covenants on the part of the grantor (and grantor’s  heirs or successors in interest) to the grantee (and 
+grantee’s heirs, successors and assigns): 
+1. That the grantor has not already conveyed the same estate or any interest therein to any other person; 
+2. That the estate is free from undisclosed encumbrances made by the grantor, or any person claiming under 
+grantor. As noted earlier, encumbrances include, among others, liens, taxes, easements, restrictions, 
+conditions, mortgages and deeds of trust. 
+Thus, a grant deed by a private party is presumed by law to convey a fee simple title, unless it appears from the 
+wording of the deed itself that a lesser estate was inte nded. Moreover, if a grantor subsequently acquires any 
+title or claim of title to the real property that the grantor had purported to grant in fee simple, the after-acquired 
+title usually passes by operation of law to the gran tee or grantee’s successors . When fee title to the 
+land/property is being conveyed that is subject to encumbrances such as mortgages and deeds of trust, the 
+practice in California is to rely on title insurance coverage (obtained at the time of the sale or transfer) listing 
+the encumbrances as exceptions to the coverage in the order of their priority. The title insurance coverage 
+issued to the purchaser is relied upon in lieu of descri bing these instruments of en cumbrance on the face of the 
+TITLE TO REAL PROPERTY 
+  
+75
+deed. Accordingly, it is important that title insurance coverage be obtained at the time of the sale or transfer of 
+the land/property. 
+Deed Restrictions 
+Restrictions imposed by deeds, or in similar private contracts, may be drafted to restrict, for any legitimate 
+purpose, the use or occupancy of land/property. The right  to acquire and possess property includes the right to 
+dispose of it or any part of it, and to impose upon the grant any legal restrictions the grantor deems appropriate. 
+However, the right may not be exercised in a manner fo rbidden by law. Restrictions prohibiting the use of 
+property on the basis of race, color, sex, religion, ancestry, national origin, age (g enerally), disability, sexual 
+orientation, marital status, familial status, or source of income are unenforceable under state and federal law.  
+Declarations that impose restricted covenants that discriminate on the basi s of race, color, religion or other 
+prohibited basis included in a deed or grant in violation of Section 12955 of the Government Code are unlawful 
+and unenforceable. Should historic re strictions include covenants that  contain unlawful discriminatory 
+prohibitions, the conditions, covenants and restrictions , or other governing documents must contain a cover 
+page or stamp on the face thereof sta ting such restrictive covenants are unlawful and unenforceable. Further, a 
+statutory procedure is provided through which the documents may be created and recorded by a person who 
+holds an ownership record in the land/property that he or she believes is the subject of an unlawful restrictive 
+covenant. The document is entitled, “Restrictive Covenant Modification”. See
+ Government Code Sections 
+12956.1 and 12956.2. 
+In addition, conditions restraining alienation, when “repugnant to the interest created”, are void. However, 
+federal law has been enacted that preempt s state law in this regard to the extent mortgagees or beneficiaries of 
+mortgage/deed of trust instruments have the right (pursuant to the provisions  of these instruments) to accelerate 
+all sums due thereunder irrespective of the majority date stated in such instruments of encumbrance in the event 
+of the sale, transfer, further encumbrance, or other conveyance of the security property. See
+ Section 711 of the 
+Civil Code and the Federal Depository Institutions Act of 1982. 
+Restrictions may validly cover a multitude of matters: use for residential or business purposes; character of 
+buildings (single family or multiple units); cost of bu ildings (e.g., a requirement th at houses cost more than 
+$100,000); location of buildings (e.g., side lines of five feet and 20-foot setbacks); and even requirements for 
+architectural approval of proposed homes by a local group/committee established for that purpose. 
+Unless the language used in the deed cl early indicates that the grantor intende d the conditions or restrictions to 
+operate for the benefit of other lots or persons, the rest rictions run to the grantor only, and a quitclaim deed 
+from the grantor, or the grantor’s heirs, successors in interest or assigns, is a sufficient release. However, if the 
+language used in the deed shows that the conditions or restrictions were intended for the benefit of adjoining 
+owners, or other lots or owners of separate intere sts in the tract/subdivision (such as a common interest 
+development), quitclaim deeds may be required from each owner of separate interests having the benefit 
+thereof, as well as from the grantor or  the grantor’s heirs, successors in interest or assigns, to release the 
+conditions or restrictions. When the subdivision is a common interest development, the vote of the owners of 
+separate interests is generally required. The requirements and conditions imposed by the political subdivision of 
+jurisdiction (local government) to establish the common interest development may prevent the release of the 
+covenants or restrictions without the concurrence of the governmental entity.  
+Notice of Discriminatory Restrictions 
+Effective January 2000, a county record er, title insurance company, escrow company, or  real estate licensee 
+who provides a declaration, governing documents or deed to any person that contain an unlawful covenant or 
+restriction must provide a specified statement about the illegality of disc riminatory restrictions and the right of 
+homeowners to have such language removed. As previous ly mentioned, the statement must be contained in 
+either a cover page placed over the document or  a stamp on the first page of the document. See
+ Government 
+Code Sections 12956.1 and 12956.2. 
+New Subdivisions 
+In contrast to zoning ordinances, private contract rest rictions need not promote public health, general public 
+welfare or safety. They may be intended to create a particular type of neighborhood deemed desirable by the 
+tract/subdivision owner and may be based solely on aesthetic conditions. These tracts/subdivisions are typically 
+know and described as common interest developments . As might be expected, the most common use of 
+covenants and restrictions today is in new subdivisions. The original ow ner/developer/subdivider establishes 
+CHAPTER FIVE 
+ 
+76 
+uniform regulations as to occupancy, use, character, cost and location of buildings and records a “declaration of 
+restrictions” when the subdivision is first created. Thereafter, all lot owners or owners of separate interests, as 
+among themselves, may enforce the covenants and restrictions against any one or all of the others, provided the 
+covenants and restrictions have been properly imposed and have not been otherwise waived. 
+In some cases, when land/property is originally subdivide d, arrangement is made in the nature of a covenant 
+whereby a perpetual property owners’ association is formed to be governed by rules and regulations set forth in 
+an agreement signed by all new lot purchasers/owners of  separate interests. Such associations (typically 
+described as homeowner’s associations) are often given the power to amend tract/subdivision restrictions from 
+time to time to correspond with community growth (provided the amendments are not inconsistent with the 
+conditions imposed by the local government having jurisdiction over the land/property when the 
+tract/subdivision was established and are not inconsistent with applicable law, including zoning ordinances and 
+building codes. Homeowner’s associations may have the power to revise building restrictions pertaining to 
+certain blocks of lots/parcels in the development/subdivision, impose architectural restrictions, and make other 
+authorized requirements from time to time. 
+Termination 
+Restrictions may be terminated by 
+l. expiration of their terms; 
+2. voluntary cancellation; 
+3. merger of ownership; 
+4. act of government; or 
+5. changed conditions (i.e., a court fi nds that the restricti ons should be terminated because the conditions 
+which the restrictions addressed have changed). 
+Restrictions usually have either a fixed termination date or one which becomes effective on recordation of a 
+cancellation notice by a given the appropriate percentage of the lot owners or owners of special interests. 
+Zoning Regulations 
+Restrictions on the use of land may be imposed by government regulation as well as by private contracts. 
+The governing authority of a city or county (local government) has the power to adopt ordinances establishing 
+zones within which structures/improvements must conform to specified standards as to character (including 
+aesthetic considerations) and location, and to limit build ings designed for business or trade to designated areas 
+consistent with the general plan. Zoni ng ordinances apply to each form of us e that may be contemplated by the 
+owner of the land/property (agricultural, industrial,  commercial retail, commercial office, research and 
+development, multi-family residential, single family residential, among others),   
+However, zoning restrictions, to be valid, should be substantially related to the preservation or protection of 
+public health, safety, morals, or general welfare. They mu st be uniform and cannot be discriminatory or created 
+for the benefit of any particular group.  Public authorities may enjoin or ab ate improvements or alterations that 
+are in violation of a zoning ordinance, but only the use of the land/property, not the title, is affected. 
+ENCROACHMENTS 
+Adjoining owners of real property often find themselves involved with encroachments in the form of fences or 
+walls and buildings extending over the boundary lines. The party encroaching on a neighbor may be doing so 
+with legal justification. The person who encroached may have gained title to the strip encroached on by adverse 
+possession, or may have acquired an easement by prescription or possibly by implication to the land/property 
+upon which the encroachment has occurred. 
+On the other hand, the encroachment may be wrongful. If it is, the party encroached upon may sue for damages 
+and a court may require removal of the encroachment. 
+Note: If the encroachment is slight (e .g., measurable in inches), the cost  of removal great, and the cause an 
+excusable mistake, a court may deny removal and aw ard dollar damages to the owner of the land/property 
+subject to the encroachment. In such an event, th e local government would require either a boundary line 
+adjustment or an appropriate variance to establish the minimum “setbacks” required by the applicable zoning 
+TITLE TO REAL PROPERTY 
+  
+77
+ordinance. The determination whethe r the encroachment may remain and damages may be paid in lieu of 
+removal requires exhausting administrative remedies with  the local government prior to a court of competent 
+jurisdiction being able to rule on the matter.   
+HOMESTEAD EXEMPTION 
+The principal purpose of the homestead exemption is to shield the home against creditors of certain types whose 
+claims might be exercised through judgment lien enforcement. Few areas of California real property law are 
+more misunderstood. 
+Obligations unaffected by the declaration.  Over the years, the homestead exemption amount has been 
+increased from time to time, with the type of homestead determining the actual amount of the exemption. 
+However, the validity of a homestead depends not only upon the recordation of the homestead declaration but 
+on certain off-record matters including, actual residency in the declared homestead dwelling at the time the 
+declaration is recorded and an actual interest in the “dwelling”. 
+The homestead declaration does not prot ect the homestead from all forced sales. For example, it is subject to a 
+forced sale if a judgment is obtained: (l) prior to the recording of the homestead declaration; (2) on debts 
+secured by encumbrances on the premises executed by th e owner before the declaration was filed for record; 
+and (3) obligations secured by mechanics’, contractors’, subcontractors’, laborers’, materialmen’s, suppliers’ or 
+vendors’ liens on the premises. Voluntary encumbrances by the owner of the homestead are not affected by a 
+declaration of homestead. A mortgage or deed of trust is an example of a voluntary encumbrance. 
+Two Homestead Statutes 
+Articles 4 and 5 of Chapter 4, Division 2, Title 9, Part 2 of the California Code of Civil Procedure 
+(commencing with Section 704.710) contain respectivel y the applicable law regarding the “Homestead 
+Exemption” and ”Declared Homesteads”. 
+While both Articles deal with granting homeowners homest ead protection from the clai ms of certain creditors, 
+the Articles are in part mutually exclusive. Article 4 provides protection to homeowner debtors who meet the 
+requirements but have not filed a declaration of homestead. Article 5 concerns homeowners who undertake the 
+actual filing of a homestead declaration. In either case, there is protection against certain judgment liens to the 
+amount of the exemption afforded by law. 
+The following discussion concerns primarily the “Declared Homestead” under Article 5. 
+(NOTE: A “Probate Homestead” also exists in California. See Probate Code Sections 60 and 6520 through 
+6528.) 
+Declared Homestead 
+A dwelling in which an owner or his or her spouse resides may be selected as a “Declared Homestead” by 
+recording a homestead declaration in  the office of the county recorder of the county where the dwelling is 
+located. From and after the time of recordi ng, the dwelling is a “Declared Homestead”. See
+ the Code of Civil 
+Procedure Sections 704.710 and 704.910.  
+Definitions for Declared Homestead 
+A “Declared Homestead” is the dwelling described in a homestead declaration and a “Declared Homestead 
+Owner” includes both (1) the owner of an interest in the “Declared Homestead” who is named as a “Declared 
+Homestead Owner” in a homestead declaration recorded  pursuant to Code of Civil Procedure Section 704.920 
+and, (2) the declarant named in a declaration of homestead, including the spouse of the declarant, recorded prior 
+to July 1, 1983, pursuant to the former Title 5 (commenc ing with Section 1237) of Part 4 of Division 2 of the 
+Civil Code. See the Code of Civil Procedure Section 704.910.  
+“Dwelling” means any interest in real property (whether  present or future, vested or contingent, legal or 
+equitable) that is a “dwelling” as defined in Secti on 704.710 of Article 4 and Section 704.910 of Article 5 of 
+the Code of Civil Procedure, but does not include a leasehold estate with an unexpired term of less than two 
+years or the interest of the beneficiary of a trust.  See
+ the Code of Civil Procedure Section 704.910. 
+ For the purpose of Article 4 and Article 5 of the Code of Civil Procedure, “Spouse” means a “spouse” as 
+defined in Sections 704.710 and 704.910. 
+CHAPTER FIVE 
+ 
+78 
+Definitions and Terminology 
+Some of the terminology for “Declared Homesteads” depends for their meaning on definitions from Article 4, 
+which describes a residential exemption, even if there is no filing of a “Declared Homestead”. These definitions 
+are: 
+1. “Dwelling” means a place where a person actually resides and may include, but is not limited to, the 
+following: 
+ a. A house together with the outbuildings and the land upon which they are situated;  
+ b. A mobilehome together with the outbuildings and the land upon which they are situated;  
+ c. A boat or other waterborne vessel;  
+ d. A condominium, as defined in Section 783 of the Civil Code;  
+ e. A Planned Development, as defined in Section 11003 of the Business and Professions Code;  
+ f. A stock cooperative, as defined in Section 11003.2 of the Business and Professions Code; and  
+ g. A community apartment project, as defined in Section 11004 of the Business and Professions Code. 
+2. “Family unit” means any of the following: 
+ a. The judgment debtor and the judgment debtor’s spous e if the spouses reside together in the homestead. 
+ b. The judgment debtor and at least one of the following persons who the judgment debtor cares for or 
+maintains in the homestead: 
+  (1) The minor child or minor grandchild of the judgment debtor or the judgment debtor’s spouse or 
+the minor child or grandchild of a deceased spouse or former spouse. 
+  (2) The minor brother or sister of the judgment debtor or judgment debtor’s spouse or the minor child 
+of a deceased brother or sister of either spouse. 
+  (3) The father, mother, grandfather, or grandmother of the judgment debtor or the judgment debtor’s 
+spouse or the father, mother, grandfather, or grandmother of a deceased spouse. 
+  (4) An unmarried relative described in this para graph who has attained the age of majority and is 
+unable to take care of or support himself or herself. 
+ c. The judgment debtor’s spouse and at least one of  the persons listed in paragraph (2) who the judgment 
+debtor’s spouse cares for or maintains in the homestead. 
+See
+ the Code of Civil Procedure Section 704.710. 
+3. “Homestead” means the principal dwelling (l) in which the judgment debtor or the judgment debtor’s 
+spouse resided on the date the judgment creditor’s lien attached to the dwelling,  and (2) in which the 
+judgment debtor or the judgment debtor’s spouse resided continuously thereafter until the date of the court 
+determination that the dwelling is a homestead. Wh ere exempt proceeds from the sale or damage or 
+destruction of a homestead are used toward the acquisition of a dwelling within the six-month period 
+provided by Section 704.720, “homestead” also means the dwelling so acquired if it is the principal 
+dwelling in which the judgment debtor or the judgmen t debtor’s spouse resided continuously from the date 
+of acquisition until the date of the court determination that the dwelling is a homestead, whether or not an 
+abstract or certified copy of a judgment was recorded to create a judgment lien before the dwelling was 
+acquired. See
+ the Code of Civil Procedure Section 704.710. 
+4. “Spouse” does not include a married person following entry of a judgment decreeing legal separation of 
+the parties, or an interlocutory judgment of dissolution of the marriage, unless such married persons reside 
+together in the same dwelling. See
+ the Code of Civil Procedure Section 704.710. 
+Amount of Homestead Exemption 
+The amount of the homestead exemption is the same under Articles 4 and 5 and is based upon the debtor’s 
+status at the time the creditor’s lien is recorded. The current protected homestead exemption values and the 
+required status of the debtor or spouse are as follows: 
+TITLE TO REAL PROPERTY 
+  
+79
+1. $50,000, unless the judgment debtor or spouse of the judgment debtor who resides in the homestead is 
+the person described in paragraph (2) or (3); 
+2. $75,000, if the judgment debtor or the spouse of the judgment debtor who resides in the homestead at 
+the time of the attempted sale of the homestead is a member of the family unit, and there is at least one 
+member of the family unit who owns no interest in the homestead or whose only interest in the 
+homestead is a community property interest with  the judgment debtor; 
+3. $150,000, if the judgment debtor or spouse of the judgment debtor who resides in the homestead is at 
+that time of the attempted sale of the homestead any one of the following: 
+A. A person 65 years of age or older 
+B. A person physically or mentally disabled and because of that disability is unable to engage in 
+substantial gainful employment. There is a rebuttable presumption affecting the burden of 
+proof that the person receiving disability insu rance payments under Title II or supplemental 
+security income payments under Title XVI of th e Federal Social Security Act satisfies the 
+requirement of this paragraph as to his or her inability to engage insubstantial gainful 
+employment. 
+C. A person 55 years of age or older with a gross annual income of not more than $15,000 or, if 
+the judgment debtor is married, a gross annual income, including the gross annual income of 
+the judgment debtor’s spouse, of not more than $20,000 and the sale is an involuntary sale. 
+Regardless of any other provision of this law, the combined homestead exemptions of spouse on the same 
+judgment shall not exceed the amount sp ecified in paragraph (2) or (3) above, which ever is applicable, 
+regardless of whether the spouses are jointly obligated on the judgment or whether the homestead consists of 
+community or separate property or both. If both spouses are entitled to a homestead exemption, the exemption 
+of proceeds of the homestead shall be apportioned be tween the spouses on the basis of their proportionate 
+interests in the homestead.  See 
+the Code of Civil Procedure Section 704.730. 
+Contents of the Declaration of Homestead  
+1. A recorded homestead declaration will contain all of the following: 
+ a. The name of the “Declared Homestead” owner. A husband and wife both may be named as “Declared 
+Homestead” owners in the same homestead declaration if each owns an interest in the dwelling 
+selected as the “Declared Homestead”. 
+ b. A description of the “Declared Homestead”. 
+ c. A statement that the “Declar ed Homestead” is the principal dwelling of the “Declared Homestead” 
+owner or such person’s spouse, and that the “D eclared Homestead” owner or such person’s spouse 
+resides in the “Declared Homestead” on the date the homestead declaration is recorded. 
+2. The homestead declaration shall be executed and acknowledged in the manner of an acknowledgment of a 
+conveyance of real property by at least one of the following persons. 
+ a. The “Declared Homestead” owner. 
+ b. The spouse of the “Declared Homestead” owner. 
+ c. The guardian or conservator of the person or estate  of either of the persons listed in (a) or (b) above. 
+The guardian or conservator may execute, acknowledge, and record a homestead declaration without 
+the need to obtain court authorization. 
+ d. A person acting under a power of attorney or otherw ise authorized to act on behalf of a person listed in 
+(a) or (b) above. 
+3. The homestead declaration shall in clude a statement that the facts stat ed in the homestead declaration are 
+known to be true as of the personal knowledge of  the person executing and acknowledging the homestead 
+declaration. If the homestead declaration is executed and acknowledged by a person listed in (c) or (d) 
+above, it shall also contain a statement that the person has authority to so act on behalf of the “Declared 
+CHAPTER FIVE 
+ 
+80 
+Homestead” owner or the spouse of the “Declared Homestead” owner and the source of the person’s 
+authority. 
+See the Code of Civil Procedure Section 704.930. 
+The definition of “dwelling” for purposes of Article 5 means an interest in real property that is a dwelling as 
+defined in Section 704.710 (Article 4), but excludes a leas ehold estate with an unexpired term of less than two 
+years at the time of the filing of the homestead declaration. A “dwelling” that is personal property (boat, 
+waterborne vessel or mobilehome not affixed to land/prope rty) appears to be excluded under Article 5. Prior to 
+applying the definition of “dwelling”, the advise of  knowledgeable legal counsel should be obtained. See
+ the 
+Code of Civil Procedure Section 704.910. 
+The law does not set a limit on the amount of land/property that may be contained in the homestead “dwelling” 
+property  Ownership interests and occupancy by the owner or owner’s spouse at the time of filing the 
+declaration are the principal governing factors. 
+Where unmarried persons hold interests in the same “dwelling” in which they both reside, they must record 
+separate homestead declarations, if each desires to have a valid homestead. 
+Under previous law, a person who was a “head of hous ehold” was entitled to qualify for the amount of the 
+greater exemption. Under current law, the amount of the exemption will depend upon whether or not the 
+judgment debtor qualifies as a “family unit.” 
+See Article 4 and 5 of the Code of Civil Procedure commencing with Section 704.710. 
+Declarations recorded prior to July 1, 1983. Any declaration of homestead filed prior to July 1, 1983, 
+remains valid, but the effect is limited to the effect given a homestead declaration under current statutes, i.e., 
+the previously filed declaration must be qualified under present law. See
+ Article 5 of the Code of Civil 
+Procedure commencing with Section 704.910. 
+Effect of recording - how terminated.  When a valid declaration of homestead has been filed in the office of 
+the county recorder where the property is located, containing all of the statements and information required by 
+law, the property becomes a homestead protected from ex ecution and forced sale, except as otherwise provided 
+by statute. The homestead remains operative until te rminated by conveyance, abandoned by a recorded 
+instrument of abandonment, or sold at execution sale. 
+A homestead declaration does not restrict or limit any right to convey or encumber the declared homestead. 
+To be effective, the declaration mu st be recorded; when properly record ed, the declaration is prima facie 
+evidence of the facts contained therein; but off-record matters could prove otherwise.  
+See
+ the Code of Civil Procedure Sections 704.920, 704.940, 704.965, 704.970, 704.980, and 704.990.   
+Rights of spouses.  A married person who is not the owner of an interest in the dwelling may execute, 
+acknowledge, and record a homestead declaration naming the other spouse who is an owner of an interest in the 
+dwelling as the “Declared Homestead” owner but at least one  of the spouses must reside in the dwelling as his 
+or her principal dwelling at the time of recording. See the Code of Civil Procedure Sections 704.920 and 
+704.930.  
+Either spouse can declare a homestead on the community or quasi-community property, on property held as 
+tenants in common, or held as joint tenants, but cannot declare a homestead on the separate property of the 
+other spouse in which the declarant has no ownership interest. A homestead cannot be declared after the 
+homeowner files a petition in bankruptcy. The phrase, “Quasi-community property”, refers to real property 
+situated in this state acquired in any of the following ways:(1) By either spouse while domiciled elsewhere 
+which would have been community property if the spouse who acquired the property had been domiciled in this 
+state at the time of its acquisition. (2) In exchange for real or personal property, wherever situated, which would 
+have been community property if the spouse who acqui red the property so exchanged had been domiciled in 
+this state at the time of its acquisition. 
+TITLE TO REAL PROPERTY 
+  
+81
+If a husband and wife own separate interests as separate property, each spouse qualifies for his or her own 
+exemption but the combined exemptions cannot exceed the amount that is due  to a “family unit.” A declaration 
+intended to be for the “joint benefit” of both spouses, one or both spouses must qualify as a “family unit.” 
+After a decree of legal separation or interlocutory judgment of dissolution of marriage, if a spouse no longer 
+resides on the property, the spouse cannot declare a homestead on the property. 
+See the Code of Civil Procedure Sections 704.710 and 704.910 and Family Code Section 910 et seq. 
+Levy and execution sale.  When an execution for the enforcement of a judgment is levied on a homestead 
+dwelling, the judgment creditor must follow specific procedures. 
+Within 20 days after a writ of execution is levied and the creditor is notified of this fact, the creditor must apply 
+to the court where the judgment was rendered for an order to execute the sale of the property. See the Code of 
+Civil Procedure Sections 704.740, 704.750 and 704.760. 
+The value of the property is determin ed by the court. The court may appoint an appraiser and will consider 
+other evidences of value to set a minimum bid for the property. Creditors must prove sufficient value to receive 
+the minimum bid or the court may not make a finding for the sale. 
+If the court makes an order for sale of the dwelling upon a hearing at which neither the judgment debtor’s 
+spouse nor attorney debtor or spouse appeared, then within 10 days after the order for sale, the creditor must 
+serve a copy of the order and statutory notice of sale on the debtor. The prope rty is not sold if no bid is received 
+at least equal to the court’s prescribed minimum bid (which is a sum at least equal to the amount needed to pay 
+all liens and encumbrances on the property, the amount of the homestead exemption, and the lien of the 
+judgment creditor enforcing the lien), and the creditor cannot subject the property to an additional order for sale 
+for at least one year. See
+ the Code of Civil Procedure Sections 704.770, 704.780, 704.790, and 704.800. 
+After the sale, the proceeds of sale are distributed as follows: (a) to discha rge all liens and encumbrances on the 
+property recorded prior to the judgment lien; (b) to the owner/debtor for the amount of the homestead 
+exemption; (c) to costs of execution; (d) to the amount due the judgment creditor; and finally (e) balance to 
+owner/debtor. 
+The proceeds from the execution sale are exempt for 6 months after th e debtor receives the proceeds. If 
+reinvested in a new “dwelling” and a new declaration of homestead is recorded within this 6-month period, the 
+new filing has the same effect as though recorded on the date the prior declaration was recorded. See
+ the Code 
+of Civil Procedure Section 704.960(b). 
+Federal Homestead Act of 1862 
+The declared homestead discussed above  has nothing to do with the term “hom esteading” as applied to filings 
+on federal lands whereby a person acquired title to acreage by establishing residence or making improvements 
+upon the land. 
+The purpose of the Federal Homestead Act of 1862 was to encourage settlement of  the nation. Except for 
+Alaska, homesteading was disconti nued on public lands in 1976. Because  all the good agricultural land had 
+already been homesteaded and deeded, Congress recognized that the Homestead Act had outlived its usefulness 
+and passed the Federal Land Policy and Management Act of 1976that immediately repealed the old law (as to 
+all states except Alaska). 
+ASSURING MARKETABILITY OF TITLE 
+Casual reflection on the nature of title to real property and its use and transfer must lead to the conclusion that 
+establishing marketable title is often a complex and di fficult undertaking. The term  itself has no universally 
+accepted meaning. It does not mean a perfect title, but ra ther one that is free from plausible or reasonable 
+objections. In effect, the title is marketable (or merchantable) if there is reasonable assurance as to the extent of 
+the rights involved. The title must be such that a proper court would compel  the buyer to accept it, if asked to 
+decree specific performance of the purchase and sale contract/agreement. 
+Establishing a marketable title is especially important whenever land/property is transferred for consideration, 
+and when, in connection with such transfer or othe rwise, money is loaned with land as security. The 
+prospective buyer or lender would be reluctant to commit funds to the transaction without some assurance of 
+CHAPTER FIVE 
+ 
+82 
+getting what was bargained for. Buyers of real property expect some assurance that there are no hidden interests 
+in the real property they propose to buy. 
+For example: One uses the surface, another extracts s ubsurface minerals, and a third controls the air space 
+above the surface. Interests in land/real property may be divided, dist ributed, and disti nguished in many 
+different manners or ways. This occurs since much land/ property is of comparatively high value, especially in 
+urban areas where the growth and concentration of  population have placed a premium on such parcels. 
+Consequently, the land/property has been divided, subdi vided and recombined into a patchwork measured in 
+feet and sometimes even in inches.  
+Since the persons who own or deal with land/property are themselves subject to a variety of laws which 
+determine the extent of their rights (e.g., probate, di ssolution, guardianship, bankruptcy, business association 
+laws, among others), an understanding of  how these laws affect ownership rights is necessary. Since creditors 
+and others may burden the real property with a variet y of liens and encumbrances, an understanding of how 
+applicable law affects the rights of mortgagees and mortgagors (beneficiaries and trustors) and creditors and 
+debtors is also essential.  
+Who owns what?  The issue is one of determining all the important facts with reference to who owns what 
+interests or rights in the title to a particular parcel of land. Actual possession of the land/property has always 
+been important and helpful in providing the answer. But possession may be by someone other than the owner, 
+and transfers may be made without taking possession. Hence, the documentary record of ownership in the 
+county recorder’s office of the county in which the parcel is located assumes great significance. Reliance on 
+recorded documents is encouraged by the official r ecording system under which deeds and other instruments 
+affecting title may be recorded with the recorder of the county in which the land/property is situated.  
+Thus, a “chain of paper title” could be traced back to the original conveyance from the government. However, 
+recordation is not generally compul sory, although there are fact situati ons were it is required. The “Race 
+Recording” or “Race-Notice Recordi ng” systems were created to accomp lish a “chain of paper title” and to 
+establish the priority of recorded instruments/documents. However, the record of the “chain of paper title” is 
+not always properly achieved or maintained. Records may be erroneous, or sometimes may even reflect 
+fraudulent and unenforceable transactions. When done thoroughly and conscientious ly, the resulting records 
+over the years become a complicated hi story in themselves, yet they may be woefully incomplete for purposes 
+of determining the status of the title in question. This is so for a variety of reasons. 
+For example: In an intestat e transfer, a qualified heir might have inadvertently been excluded; or a transfer, 
+valid on its face may have been made by a person incomp etent because of age or me ntal condition. Then too, 
+other official records (e.g., tax records and records of  court judgments) may profoundly affect the picture. In 
+short, title to land/property and marketability of that title depends not only on recorded facts of title transfer, but 
+also on a vast array of extraneous information outside  of the documents recorded in the county recorder’s 
+office. 
+Abstract of Title 
+As might be expected under such complex circumstances, historically th e individual buyer or lender was ill 
+equipped to make the necessary investigation of the status of the title to property. They soon came to rely on the 
+title specialist who made a business of studying the records and preparing summaries or abstracts of title of all 
+pertinent documents discovered in the search. An abstract of title is a summary statement of the successive 
+conveyances and other facts (appeari ng in the proper place in the public records) on which a person’s title to 
+real property rests. The abstract of title and a lawyer’s opinion of the documents appearing in the abstractor’s 
+“chain of title” were the basis of our earliest attempts to establish marketable title . This method still exists 
+today, with modern refinements. 
+Certificate of Title 
+In time, abstractors accumulated exte nsive files of abstracts and othe r useful data, in cluding “lot books” 
+wherein references to recorded docum ents were systematically arranged according to the particular property 
+affected, and “general indices” wherein landowners we re listed alphabetically together with information 
+concerning them and affecting titles (e.g., probates and property settlements). 
+These files came to be known as “title plants” and provide d classified and summarized histories of real estate 
+transactions and of other activities that affect or might affect ownership of the land/property in the areas 
+TITLE TO REAL PROPERTY 
+  
+83
+covered. With the growth and improvement of title plants and increased proficiency of examiners employed by 
+the abstractors, the formal abstract of title for delivery to the customer and the related legal opinion were 
+sometimes dispensed with completely . The abstract company would simply  study its records and furnish the 
+customer with a certificate of  title in which it stated that it found the title  properly vested in the present owner, 
+subject to noted encumbrances. The certificate plan has strictly limited use today, for it was a transitional 
+method of assuring not insuring titles. 
+Guarantee of Title 
+The next step was the guarantee of title under which th e title insurance company di d more than certify the 
+correctness of its research and examination. 
+Thus, the company provided written assurances (not insurance) about the title to real property. The coverage 
+was usually limited to a particular condition of title, a certain period of time, and a certain kind of information. 
+This meant it was engaged in the insurance business and generally was subject to regulation as such. 
+Title Insurance 
+As already noted, the public records may be incomplete or erroneous and do not necessarily disclose 
+shortcomings arising from forgery, incompetence, and failures to comply with legal requirements, among 
+others. Accordingly, the policy of title insurance was developed as the culmination of the quest for a reliable 
+and marketable title as well as compensation for incorr ect assurances that cause a covered loss. Although still 
+covering most risks that are a matter of public record, it alone extends protection against many nonrecorded 
+types of risks, depending on the type of policy purchased. The title insurance company continues to utilize the 
+“title plant” to conduct as accurate a s earch of the records as possible and seeks to interpret correctly what it 
+finds in the records. Its unique contribution is the protection it affords against risks that lie outside the public 
+records. 
+Preliminary report. In current practice, the title insurance indus try typically issues a “preliminary report” 
+rather than a “search” or “abstract” that are intended to assure the status of title and for which there would be 
+liability, as defined in the document issued as a “search” or “abstract”. The Insurance Code defines 
+“preliminary report” as a “commitment” or “binder” furnished in connection with an application for title 
+insurance and such reports are offers to issue a title policy subject to the stated exceptions set forth therein and 
+such other matters as may be incorporated by referen ce. Preliminary reports are not abstracts of title, nor are 
+any of the rights, duties, or respons ibilities applicable to the preparation and issuance of  an abstract of title 
+applicable to the issuance of such reports.  Preliminary reports are not to be construed as nor constitute a 
+representation as to the condition of title to real prope rty (a “search” of the title). Preliminary reports are a 
+statement of the terms and conditions upon which the issuer is willing to issue its title policy, if such offer is 
+accepted. See
+ Insurance Code Section 1234.11. 
+Standard policy. In addition to risks of record, the standard policy of title insurance protects against: 
+ off-record hazards such as forgery, impersonation, or  lack of capacity of a party to any transaction 
+involving title to the land (e.g., a deed of an incompetent or an agent whose authority has terminated, or of 
+a corporation whose charter has expired); 
+ the possibility that a deed of record was not in fact delivered with intent to convey title (typically excluding 
+a fraudulent conveyance);  
+ the loss which might arise from the lien of federal estate taxes, which is effective without notice upon 
+death; and 
+ the expense, including attorneys’ fees, incurred in defending the title, whether the plaintiff prevails or not. 
+The standard policy of title insurance does not however protect the policyholder against defects in the title 
+known to the holder or to the agent of the holder to exist at the date of the policy and not previously disclosed 
+to the insurance company. Further, the standard policy neither prot ects against easements and liens which are 
+not shown by the public records; nor against rights or claims of persons in physical possession of the 
+land/property, yet which are not shown by the public records (since the insurer typically does not inspect the 
+property when offering such coverage); nor against rights or claims not shown in public records, yet which 
+could be ascertained by physical inspection of the land/ property, or by appropriate inquiry of persons on the 
+CHAPTER FIVE 
+ 
+84 
+land/property, or by a correct survey; nor against mining claims, reservations in patents, or water rights; nor 
+against zoning ordinances. 
+These limitations may not be as dangerous as they might appear to be. To a considerable degree, the limitations 
+can or may be eliminated by careful inspection of the land/property by the purchaser/buyer or his or her agents 
+(e.g., brokers/appraisers) and a routine inquiry as to the status of persons in possession. However, if desired, 
+most of these risks can be covered by special endorse ment or use of extended coverage policies at added 
+premium cost. 
+ALTA Policy (for lenders). In California, many loans secured by real property have been made by out-of-state 
+financial institutions/licensed lenders that were not in a position to make personal inspection of the properties 
+involved except at disproportionate expense. For them and other nonresident lenders, the special ALTA 
+(American Land Title Association) Policy was developed. This policy expands the risks normally insured 
+against to include: rights of parties in physical possession, including tenants and buyers under unrecorded 
+instruments; reservations in patents; and, most importantly, unmarketable title. The new ALTA Loan Policy 
+(issued 10-17-92 and further revised 6-17-2006) also cove rs recorded notices of enforcement of excluded 
+matters (like zoning), as well as recorded notices of defects, liens or encumbrances affecting title that result 
+from a violation of matters excluded from policy covera ge. A review by knowledgeable legal counsel of the 
+provisions of ALTA Loan Policies is recommended before purchasing coverage, including specific 
+endorsements. 
+Extended coverage. The American Land Title Association has a dopted an owner’s extended coverage policy 
+(designated as ALTA Owner’s Policy [10-17-92]) that pr ovides to buyers or owners much the same protection 
+that the ALTA policy gives lenders. The owner’s policy has been recently revised a nd the coverage expanded. 
+The California Land Title Association (“CLTA”) has also provided expanded protection for the owner’s 
+policies it issues under standard coverage. 
+However, reliance on the owner’s or the owner’s agent notice or knowledge of defects affecting the title and 
+not of record has also been expanded and enhanced. Thes e policies offer no protection  against defects or other 
+matters concerning the title that are known to exist by the insured (the owner or the agents of the owner) as of 
+the date of the policy that have not previously been communicated in writing to the insurer. These policies also 
+offer no protection regarding governmental regulations c oncerning occupancy and use. The former limitation is 
+self-explanatory; the latter exists b ecause zoning regulations concern the condition of the land/property rather 
+than the condition of title. 
+For homeowner’s (1 to 4 residential units) a ne w CLTA/ALTA policy was developed in 1998; (ALTA 
+Homeowner’s Policy (10-17-98), and CLTA Homeowners Policy (6-2-98). As previously mentioned, these 
+polices have been revised again. Generally, the polic ies are the same with the exception: the CLTA policy 
+provides a form of Subdivision Map coverage, while th e ALTA policy makes the Map Act coverage optional. 
+The idea of the new and revised policies is to provide homeowners with a form of extended coverage. The new 
+and revised policies contain maximums payable under cer tain categories of coverage and small deductibles 
+payable by the insured. Both policies incorporate protection against certain risks that conventionally were 
+available only to lenders and only by endorsement. 
+Domestic Title Insurance Companies in California 
+Section 12359 of the Insurance Code of California requi res that a title insurance company organized under the 
+laws of this State have at least $500,000 paid-in capital represented by shares of stock. Section 12350 requires 
+that the insurer deposit with the Insurance Commissi oner a “guarantee fund” of $100,000 in cash or approved 
+securities to secure protection for title insurance policy holders. A title insure r must also set apart annually, as a 
+title insurance surplus fund, a sum equa l to 10 percent of its premiums coll ected during the year until this fund 
+equals the lesser of 25 percent of the paid-in capital of the company or $1,000,000. This fund acts as further 
+security to the holders and beneficiaries of policies of title insurance. 
+Policies of title insurance are now almost universally used in California, largely in the standardized forms 
+prepared by the California Land Title Association (“C LTA”), the trade organization of the title companies in 
+this State. Every title insurer must adopt and make ava ilable to the public a schedule of fees and charges for 
+title policies. Today, it is the general practice in California for buyers, sellers and lenders, as well as the 
+TITLE TO REAL PROPERTY 
+  
+85
+attorneys and real estate brokers who serve them, to rely on title insurance companies for title information, title 
+reports and policies of title insurance. 
+Rebate Law 
+Title insurance companies are required to charge for preliminary reports unde r the terms of legislation adopted 
+at the 1967 general session of the California Legislature. The rebate law requires title insurance companies to 
+not only charge for reports, but also to make sincere efforts to collect for them except in certain defined 
+circumstances. 
+Title insurance companies can still furnish “the name of the owner of record and the record description of any 
+parcel or real property” without charge. Such informati on may be referred to as a “property profile” or “subject 
+property history”. 
+The statute extends the anti-commission provisions of Section 12404 of the Insurance Code to prohibit direct or 
+indirect payments by a title insurance company to principals in a transaction as a consideration for title 
+business. 
+Thus, the law prohibits a title insurance company from paying, either directly or indirectly, any commission, 
+rebate, or other consideration as an inducement for or as compensation on any title insurance business, escrow 
+or other title business in connection with which a title po licy is issued. Rebates are also precluded in the Real 
+Estate Law, as defined. 
+See
+ Business and Professions Code Section 10177.4. 
+ 
+CHAPTER FIVE 
+ 
+86 
+ 

@@ -165,6 +165,7 @@ def sign_question_ids() -> set[str]:
 # Banks that differ from a new 200-question bank on purpose. Each entry says why;
 # anything not listed here is held to the full house style.
 KNOWN_BANKS = {
+    "epa609-questions.json": dict(rows=100, why="four 25-question tests matching MACS online/home question count; provider-specific format, not a universal EPA format"),
     "htl-questions.json": dict(rows=214, interleaved=True,
         why="six staining categories share HTL-STN- ids, so they interleave in id order (Oct 2026 split)"),
     "ham-questions.json": dict(rows=397, max_over=17,

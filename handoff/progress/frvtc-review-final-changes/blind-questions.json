@@ -1,0 +1,90 @@
+[
+  {
+    "id": "F001",
+    "question": "Deux prix incluent des services différents. Quel relevé permet une comparaison pertinente ?",
+    "optionA": "Les remises maximales proposées à de nouveaux clients",
+    "optionB": "Les deux prix d'appel avant ajout des suppléments",
+    "optionC": "Les deux totaux pour les mêmes services et frais",
+    "optionD": "Les seuls tarifs kilométriques annoncés"
+  },
+  {
+    "id": "F002",
+    "question": "Quel événement relève de la protection légale contre les pénalités pour refus d'une proposition de course ?",
+    "optionA": "Le refus avant tout engagement sur la course",
+    "optionB": "Le non-respect de la destination convenue pendant le trajet",
+    "optionC": "Le départ sans le client après acceptation de sa réservation",
+    "optionD": "L'absence lors du rendez-vous déjà confirmé"
+  },
+  {
+    "id": "F003",
+    "question": "Le conducteur devant signale son intention de tourner à gauche. La voie droite est libre. De quel côté dépasser ?",
+    "optionA": "Du côté choisi par le conducteur qui dépasse",
+    "optionB": "Sur l'accotement uniquement",
+    "optionC": "À gauche, même s'il est déjà engagé dans son virage",
+    "optionD": "À droite, si la manœuvre est sans danger"
+  },
+  {
+    "id": "F004",
+    "question": "Une nouvelle liaison ferroviaire dessert l'aéroport. Quelle donnée permet d'estimer son effet concurrentiel sur vos transferts ?",
+    "optionA": "La part de vos trajets couverts aux horaires de cette liaison",
+    "optionB": "Le montant de votre dernière facture d'entretien",
+    "optionC": "Le nombre de véhicules déjà présents dans votre parc",
+    "optionD": "Le délai de paiement accordé à votre principal client"
+  },
+  {
+    "id": "F005",
+    "question": "À 20 m/s, le temps de réaction passe de 1 à 1,5 seconde. Quelle distance supplémentaire parcourez-vous ?",
+    "optionA": "30 m",
+    "optionB": "10 m",
+    "optionC": "20 m",
+    "optionD": "5 m"
+  },
+  {
+    "id": "F006",
+    "question": "Quelle omission ne rend pas, à elle seule, le justificatif de réservation incomplet ?",
+    "optionA": "L'absence du nombre de bagages transportés",
+    "optionB": "L'absence du nom du client ayant réservé",
+    "optionC": "L'absence du lieu de prise en charge prévu",
+    "optionD": "L'absence du numéro d'inscription de l'exploitant au registre VTC"
+  },
+  {
+    "id": "F007",
+    "question": "Un particulier crée un compte sans achat. Quelle preuve faut-il pour lui envoyer une promotion par courriel ?",
+    "optionA": "Le numéro d'une course en cours nécessitant une confirmation",
+    "optionB": "La trace d'un consentement spécifique à ces offres",
+    "optionC": "La preuve du lien de l'offre avec ses fonctions professionnelles",
+    "optionD": "La référence d'un achat de service analogue déjà réalisé"
+  },
+  {
+    "id": "F008",
+    "question": "Un médicament porte le pictogramme orange de niveau 2. Quelle précaution prendre avant de conduire ?",
+    "optionA": "Lire la notice sans demander d'avis sur la conduite",
+    "optionB": "Décaler la prise au soir sans consulter le prescripteur",
+    "optionC": "Demander conseil à son médecin ou à son pharmacien",
+    "optionD": "Attendre systématiquement la fin du traitement pour reprendre le volant"
+  },
+  {
+    "id": "F009",
+    "question": "À quel salarié une offre de transferts professionnels correspond-elle directement dans le cadre de ses fonctions ?",
+    "optionA": "Le responsable des locations de véhicules sans chauffeur",
+    "optionB": "La responsable des réservations de voyages d'affaires",
+    "optionC": "Le gestionnaire des déplacements domicile-travail des salariés",
+    "optionD": "La coordinatrice des expéditions de marchandises aux clients"
+  },
+  {
+    "id": "F010",
+    "question": "Les coordonnées du réservataire manquent au justificatif. Quelle possibilité offrir immédiatement à l'agent de contrôle ?",
+    "optionA": "Joindre l'assureur professionnel du chauffeur",
+    "optionB": "Joindre directement le client réservataire",
+    "optionC": "Joindre le gestionnaire du registre VTC",
+    "optionD": "Joindre le seul visiteur transporté"
+  },
+  {
+    "id": "F011",
+    "question": "En ville, un autobus annonce son départ de l'arrêt devant vous. Quelle obligation avez-vous ?",
+    "optionA": "Passer avant lui tant qu'il n'a pas franchi le marquage",
+    "optionB": "Maintenir votre allure jusqu'à ce qu'il ait quitté son arrêt",
+    "optionC": "Faciliter son départ, au besoin en vous arrêtant",
+    "optionD": "Vous arrêter systématiquement même s'il dispose d'une voie libre"
+  }
+]

@@ -913,6 +913,18 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), free to start with no account required.",
   },
+  epa609: {
+    answer: "EPA Section 609 certification covers motor vehicle air-conditioning refrigerant handling, recovery equipment, environmental effects and applicable rules. EPA-approved programs administer their own tests. MACS online/home testing uses 25 multiple-choice questions, is untimed and open book, and requires 21 correct (84%); classroom testing differs. Tigertest provides 100 original practice questions, not approved training or certification.",
+    rows: [
+      { label: "MACS online/home test", value: "25 multiple-choice questions" },
+      { label: "MACS online/home conditions", value: "Untimed, open book" },
+      { label: "MACS online/home passing score", value: "21 of 25 (84%)" },
+      { label: "Tigertest practice", value: "Four 25-question tests; editorial weights" },
+      { label: "Certification", value: "Through an EPA-approved program" },
+    ],
+    basedOn: "EPA Section 609 requirements and the January 2025 MACS training manual, checked November 18, 2026",
+    source: { name: "MACS Section 609 certification information", url: "https://macsmobileairclimate.org/about-609-certification/" },
+  },
   epa608: {
     answer:
       "The EPA Section 608 exam has four sections (Core, Type I, Type II, Type III) of 25 multiple-choice questions each, and you need 18 correct (72%) on each section. Core plus one type earns that type; Core plus all three is Universal certification, 100 questions in total. Type II and III are always proctored and closed book.",

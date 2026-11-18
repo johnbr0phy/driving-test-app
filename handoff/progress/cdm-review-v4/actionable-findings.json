@@ -1,0 +1,376 @@
+{
+  "review_stage": "3 complete: all 200 explanations read after blinded answers locked",
+  "answer_agreement": {
+    "matched": 200,
+    "total": 200,
+    "numeric_results": "All numeric answers independently recomputed in blind-answers.json; explanations agree."
+  },
+  "options_only_gate": {
+    "raw_correct": 129,
+    "total": 200,
+    "percent": 64.5,
+    "maximum_percent": 40,
+    "status": "NOT_PASSED",
+    "confound": "Options-only choices included subject knowledge, familiar-value priors and inferred question intent; none was not equivalent to random guessing. Raw result preserved; confound does not waive the stipulated gate.",
+    "next_step": "Selectively improve genuine cue/distractor weaknesses, then repeat an independent randomized options-only review without forced random guessing. Do not treat suggested edits as guaranteeing a pass."
+  },
+  "factual_findings": [],
+  "explanation_precision_notes": [
+    {
+      "reviewId": "R009",
+      "priority": "low",
+      "finding": "Separate preparation prevents cross-contact can sound like a guarantee from separation alone.",
+      "action": "Say separate preparation helps prevent cross-contact, with appropriate controls. The keyed grain answer is sound."
+    },
+    {
+      "reviewId": "R115",
+      "priority": "low",
+      "finding": "The final sentence summarizes a 165°F in-house rule without reiterating for hot holding. Context makes the intended scope clear, so this is not a wrong explanation.",
+      "action": "Retain for hot holding when contrasting the in-house reheating rule to prevent overgeneralization to immediate-service reheating."
+    },
+    {
+      "reviewId": "R197",
+      "priority": "low",
+      "finding": "Half of a 30 g carbohydrate serving is less explicit than the stem’s per-cup basis.",
+      "action": "State 0.5 cup × 30 g carbohydrate per cup = 15 g."
+    }
+  ],
+  "pedagogical_item_notes": [
+    {
+      "reviewId": "R011",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Low-depth literal matching: route/arrival terms point straight to delivery-route assessment while alternatives concern unrelated functions.",
+      "action": "Offer four operational assessments of delivery feasibility (route trial, load dwell, staffing overlap, and dispatch sequence), with the observed evidence selecting the relevant one.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R017",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Low-depth literal matching: sequence difficulty directly repeats sequenced checklist; distractors are unrelated documents.",
+      "action": "Use plausible training aids addressing sequence versus memory, task accuracy and independent transfer; describe observed errors without repeating sequence in stem and answer.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R024",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Low-depth literal matching: stem explicitly names the failed activation metric and rules out the other measured categories.",
+      "action": "Show drill observations and ask which operational modification addresses the limiting step; make all alternatives legitimate emergency-plan improvements.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R026",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Low-depth literal matching and overlap with R018: stated workstation-access cause selects the only access intervention.",
+      "action": "Offer feasible competing resource remedies such as rescheduling, adding a second station, changing batch order and reassignment; include constraints that identify the least disruptive remedy.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R039",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Distractor weakness: gluten breakdown, iron absorption and lactose digestion are remote from kidney fluid restriction.",
+      "action": "Replace unrelated digestive mechanisms with plausible renal/nutrition misconceptions, preserving individualized prescription framing.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R052",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Elementary two-attribute matching rather than substantive menu-planning judgment; usable as an introductory item.",
+      "action": "If retained as introductory matching, avoid representing this as advanced menu-planning application. For greater depth, use competing foods meeting one or more actual texture/nutrition constraints.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R055",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Metric is explicitly specified; alternatives concern different meals or process measures, limiting discrimination.",
+      "action": "Compare competing measures of lunch intake (offered versus consumed, weekday versus whole-week, percentage versus absolute intake) instead of unrelated meals and attendance.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R077",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Near-tautological classification of reported vomiting versus no diagnosis; shallow as professional application.",
+      "action": "Assess a genuine employee-health decision using symptom/diagnosis/exposure evidence; avoid merely restating that a report is a report.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R084",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Label-code error and label-code training are a direct lexical match; other topics are unrelated.",
+      "action": "Use credible alternative training needs within the changed labeling process, distinguished by observed error data.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R097",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Answer explicitly supplied by the stem: preferred eight-minute version is also acceptable. Weak discrimination.",
+      "action": "Add trial evidence requiring an acceptance/texture/yield tradeoff; do not state the chosen version is both acceptable and preferred with no remaining constraint.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R111",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Spending-versus-plan wording closely defines budget variance; foundational vocabulary rather than applied analysis.",
+      "action": "Use competing financial reports each containing relevant labor measures, requiring identification of a budget-versus-actual comparison rather than recognition of its definition.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R112",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Stem repeats the correct option customer demand at the planned price nearly verbatim.",
+      "action": "Present a concrete uncertain market assumption and four plausible market-research methods with different limitations; remove verbatim repetition of the answer.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R128",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Fifteen-minute subtraction with no substantive handoff judgment; low-depth staffing item.",
+      "action": "Replace pure time subtraction with a handoff communication decision among plausible instructions, preserving exact timing information.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R132",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Stem states abbreviations are the barrier; expanding abbreviations is the only relevant option.",
+      "action": "Provide an example of misunderstood guide content and plausible revisions, without explicitly naming the correct revision in the stem.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R136",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Simple missing-dependency restatement; unrelated reservation/attendance distractors.",
+      "action": "Use a real dependency decision with parallel work or a partial deliverable rather than asking which explicitly missing report is missing.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R138",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Very basic status-reading exercise; no competing managerial priorities or interpretation.",
+      "action": "Use conflicting follow-up evidence or a change in responsibility/deadline while ensuring one defensible status; current pending-versus-complete task is extremely basic.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R145",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Only soiled utensils is a meaningful contamination event, making alternatives weak though rule is accurate.",
+      "action": "Compare plausible task transitions requiring or not requiring handwashing; remove three passive reading/listening distractors.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R153",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Purchasing budget is not a plausible competing HACCP stage; other technical alternatives preserve some knowledge demand.",
+      "action": "Replace purchasing-budget distractor with a plausible HACCP activity; retain foundational hazard-analysis objective.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R163",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Three unrelated document lists make denominator-membership answer conspicuous; modest conceptual content.",
+      "action": "Offer several plausible labor-hour denominator definitions rather than unrelated menu/recipe/product lists.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R174",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Stem and answer directly echo wrong-diet defect; alternatives change the outcome construct.",
+      "action": "Use competing wrong-diet measures (count, rate, defect opportunities, recheck completion) to distinguish outcome from activity without announcing the answer wording.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R180",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Automatically in therapeutic-diet distractor adds a genuine absolute-word cue; category distinction itself is substantive.",
+      "action": "Remove automatically from only the wrong therapeutic option; use parallel category labels while retaining texture-versus-therapeutic distinction.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R181",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Stem explicitly eliminates three options by unavailable equipment; no need to know cooling effectiveness to answer.",
+      "action": "Make at least two methods physically available and give meaningful constraints or performance data that make one best; avoid explicitly eliminating all alternatives.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R189",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "low",
+      "finding": "Only/must alternatives add categorical wording cues; underlying 50-within-75 rule remains substantive knowledge.",
+      "action": "Use parallel numeric employee/radius judgments rather than three categorical only/must statements; preserve the actual worksite test.",
+      "factual_key_change_required": false
+    },
+    {
+      "reviewId": "R200",
+      "type": "pedagogical_depth_or_distractors",
+      "priority": "medium",
+      "finding": "Actual rather than hypothetical is explicitly specified, with only one past-tense option; minimal behavioral-interview discrimination.",
+      "action": "Give four plausible past-experience prompts that differ in whether they elicit the applicant’s own actions and outcome, instead of a lone past-tense option.",
+      "factual_key_change_required": false
+    }
+  ],
+  "knowledge_based_options_answerability": [
+    {
+      "reviewId": "R001",
+      "diagnosis": "Complete-procedure 20 seconds is familiar, but 10 seconds already competes as a rubbing-phase rule.",
+      "selective_action": "Consider the actual rubbing-phase range as a distractor; preserve a clearly requested complete duration."
+    },
+    {
+      "reviewId": "R019",
+      "diagnosis": "12 workweeks competes with a genuine 26-workweek entitlement; this item already has a legitimate knowledge distractor.",
+      "selective_action": "Prefer parallel leave-rule statements or an eligibility/leave-reason decision if revising; do not fabricate alternative entitlements."
+    },
+    {
+      "reviewId": "R051",
+      "diagnosis": "Six inches is the lone commonly recognized floor-clearance value for many readers, though four inches is a real exception.",
+      "selective_action": "Use an independent installation scenario with measurements determining whether an exception applies; retain plausible four/six-inch alternatives."
+    },
+    {
+      "reviewId": "R064",
+      "diagnosis": "24 months is recognizable USERRA continuation duration.",
+      "selective_action": "Use a concrete benefit-selection or continuation-endpoint case with genuinely applicable competing periods supported by primary sources."
+    },
+    {
+      "reviewId": "R101",
+      "diagnosis": "Hepatitis A is the sole recognizable foodborne reportable disease among remote alternatives.",
+      "selective_action": "Use several genuine reportable pathogens and ask which employee action follows a specific symptom/diagnosis/population scenario."
+    },
+    {
+      "reviewId": "R166",
+      "diagnosis": "145°F for 15 seconds is the most recognizable cooking combination; other combinations largely appear fabricated.",
+      "selective_action": "Use familiar 155°F/17 seconds, 165°F instantaneous and 135°F holding/plant-cooking alternatives so the fish stem is needed."
+    },
+    {
+      "reviewId": "R184",
+      "diagnosis": "135°F is the familiar current holding threshold while most other choices lack a strong role.",
+      "selective_action": "Use plausible competing standards such as 41°F, 130°F specified-roast exception and 165°F reheating; keep question about ordinary soup."
+    },
+    {
+      "reviewId": "R009",
+      "diagnosis": "Recognizing gluten-free rice is domain knowledge, not mere wording; three gluten-containing grains make the likely task inferable.",
+      "selective_action": "If needed for the gate, make several foods naturally gluten-free and require ingredient/preparation evidence to choose among them."
+    },
+    {
+      "reviewId": "R022",
+      "diagnosis": "Barley malt is the lone common hidden-gluten ingredient and makes the likely task inferable.",
+      "selective_action": "Use credible product formulations with complete ingredient or processing details; keep the question grounded in gluten identification."
+    },
+    {
+      "reviewId": "R062",
+      "diagnosis": "Only one substitution moves toward plant oil; direction can be guessed without seeing the requested nutritional change.",
+      "selective_action": "Use multiple credible replacements with differing saturated-fat and prescribed nutrient profiles, then require the stem’s actual constraints."
+    },
+    {
+      "reviewId": "R168",
+      "diagnosis": "Calcium/vitamin D is a highly familiar paired association.",
+      "selective_action": "Make alternatives plausible nutrient pairs for different documented menu removals; a concrete menu contribution table can require interpretation."
+    },
+    {
+      "reviewId": "R191",
+      "diagnosis": "Conditional job offer is a uniquely recognizable legal milestone.",
+      "selective_action": "Use parallel employer actions at several documented hiring stages, testing whether an action is permissible under the stated condition."
+    }
+  ],
+  "repetition": [
+    {
+      "reviewIds": [
+        "R017",
+        "R018",
+        "R026",
+        "R084",
+        "R132"
+      ],
+      "finding": "Several training/work-barrier cases name the cause and ask for the same named remedy.",
+      "action": "Retain a strong workload-versus-knowledge discriminator; improve or replace the weakest literal matches."
+    },
+    {
+      "reviewIds": [
+        "R024",
+        "R041",
+        "R055",
+        "R174",
+        "R186"
+      ],
+      "finding": "Repeated target-to-outcome matching with unrelated measures as distractors.",
+      "action": "Preserve outcome-versus-process distinction but diversify competing measures and evidence interpretation."
+    },
+    {
+      "reviewIds": [
+        "R128",
+        "R136",
+        "R138",
+        "R157"
+      ],
+      "finding": "Several personnel items demand elementary time/status reading with little professional judgment.",
+      "action": "Prioritize richer independent handoff/dependency decisions rather than multiple shallow restatements."
+    },
+    {
+      "reviewIds": [
+        "R081",
+        "R097",
+        "R107",
+        "R133"
+      ],
+      "finding": "Sensory evaluation appears repeatedly; R097 is much weaker than confound and target-panel items.",
+      "action": "Prioritize revising R097; retain the distinct valid constructs in R107 and R133."
+    },
+    {
+      "reviewIds": [
+        "R021",
+        "R070"
+      ],
+      "finding": "Both compute FTE with a 40-hour benchmark, but the mixed part-time roster adds a real denominator distinction.",
+      "action": "No mandatory change solely for repetition."
+    },
+    {
+      "reviewIds": [
+        "R093",
+        "R161"
+      ],
+      "finding": "FEFO and FIFO overlap but intentionally test different ordering rules.",
+      "action": "Retain both if otherwise strong; do not call this an exact duplicate."
+    },
+    {
+      "reviewIds": [
+        "R005",
+        "R063",
+        "R100"
+      ],
+      "finding": "Cooling items distinguish first-stage, total-time and ambient-ingredient rules.",
+      "action": "Retain meaningful rule distinctions; the repeated topic is justified."
+    }
+  ],
+  "source_assessment": {
+    "confirmed_support": "Read relevant supplied Food Code, CMS Section K, CBDM standards, DOL, EEOC, NIDDK CKD and ICN excerpts; independently opened OSHA SDS, NIDDK celiac/lactose, and FDA label primary references. Detailed specialized rules align with those sources.",
+    "confirmed_item_specific_source_gaps": [],
+    "limits": "Broad CBDM practice standards establish duties and support scenario objectives; they are not empirical evidence for every invented operational scenario. Numeric assumptions are explicit and calculations self-contained. No new landing-page audit was performed; no new landing claims should be inferred from this review.",
+    "coverage_limit": "Selected foundational and applied coverage is defensible, but this review does not validate equivalence to the real exam, exhaustive textbook coverage, psychometric discrimination, or human professional review.",
+    "citation_urls": [
+      "https://www.osha.gov/sites/default/files/publications/OSHA3514.pdf",
+      "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/eating-diet-nutrition",
+      "https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/eating-diet-nutrition",
+      "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label"
+    ]
+  },
+  "overall": "No incorrect intended key or material explanation mismatch found. Substantive CDM knowledge is present. Personnel and literal cause/remedy scenarios need selective improvement. Options-only gate remains not passed. No item edits made."
+}

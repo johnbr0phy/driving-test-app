@@ -1,0 +1,172 @@
+[
+  {
+    "questionId": "FRVTC-GES-001",
+    "objective": "Calculer le résultat d'un exercice",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-002",
+    "objective": "Distinguer financement et produit",
+    "sources": [
+      "BPI-RESULT",
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-003",
+    "objective": "Séparer remboursement et intérêts",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-004",
+    "objective": "Reconnaître une charge calculée",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-005",
+    "objective": "Identifier une créance non encaissée",
+    "sources": [
+      "BILAN",
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-006",
+    "objective": "Classer investissement et financement",
+    "sources": [
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-007",
+    "objective": "Affecter un mouvement au mois du paiement",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-008",
+    "objective": "Calculer un besoin de financement d'exploitation",
+    "sources": [
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-009",
+    "objective": "Relier délai client et besoin de financement",
+    "sources": [
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-010",
+    "objective": "Distinguer coût fixe et coût variable",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-011",
+    "objective": "Calculer la marge sur coûts variables",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-012",
+    "objective": "Déterminer le seuil de rentabilité",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-013",
+    "objective": "Calculer le résultat après couverture des coûts fixes",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-014",
+    "objective": "Convertir un seuil en point mort dans un modèle régulier",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-015",
+    "objective": "Déclarer le montant brut encaissé en micro",
+    "sources": [
+      "MICRO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-016",
+    "objective": "Distinguer abattement micro et frais réels",
+    "sources": [
+      "MICRO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-017",
+    "objective": "Reconnaître les sociétés unipersonnelles",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-018",
+    "objective": "Identifier une forme pluripersonnelle",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-019",
+    "objective": "Comprendre le principe de séparation patrimoniale en EI",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-020",
+    "objective": "Distinguer assimilation sociale et assurance chômage",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-021",
+    "objective": "Appliquer la continuité d'une série de factures",
+    "sources": [
+      "INVOICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-022",
+    "objective": "Corriger une facture déjà réglée",
+    "sources": [
+      "INVOICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-023",
+    "objective": "Choisir le document adapté avant l'accord",
+    "sources": [
+      "INVOICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-024",
+    "objective": "Identifier la formalité de création d'entreprise",
+    "sources": [
+      "BPI-VTC"
+    ]
+  }
+]

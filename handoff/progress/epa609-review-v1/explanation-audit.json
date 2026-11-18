@@ -1,0 +1,739 @@
+[
+  {
+    "id": "R001",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R002",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R003",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R004",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R005",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R006",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F07"
+    ]
+  },
+  {
+    "id": "R007",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R008",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R009",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R010",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F07"
+    ]
+  },
+  {
+    "id": "R011",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R012",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R013",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F07"
+    ]
+  },
+  {
+    "id": "R014",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R015",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R016",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R017",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R018",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R019",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R020",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R021",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R022",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R023",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R024",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R025",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F01",
+      "F04"
+    ]
+  },
+  {
+    "id": "R026",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R027",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R028",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R029",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R030",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F05"
+    ]
+  },
+  {
+    "id": "R031",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R032",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R033",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R034",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R035",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R036",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R037",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R038",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R039",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R040",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R041",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R042",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R043",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R044",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R045",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R046",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R047",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R048",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R049",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R050",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R051",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R052",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F05"
+    ]
+  },
+  {
+    "id": "R053",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R054",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R055",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R056",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R057",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R058",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R059",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R060",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R061",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R062",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R063",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R064",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R065",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R066",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R067",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R068",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R069",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R070",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R071",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R072",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F02"
+    ]
+  },
+  {
+    "id": "R073",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R074",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R075",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R076",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R077",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R078",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R079",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R080",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R081",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R082",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R083",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R084",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F07"
+    ]
+  },
+  {
+    "id": "R085",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R086",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R087",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R088",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R089",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F07"
+    ]
+  },
+  {
+    "id": "R090",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R091",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R092",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F06"
+    ]
+  },
+  {
+    "id": "R093",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R094",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R095",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R096",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R097",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "Revision needed; see findings",
+    "findingIds": [
+      "F04"
+    ]
+  },
+  {
+    "id": "R098",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R099",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  },
+  {
+    "id": "R100",
+    "reviewed": true,
+    "keyAssessment": "Matches independent locked answer",
+    "explanationAssessment": "No substantive factual defect found; distractor quality assessed separately",
+    "findingIds": []
+  }
+]

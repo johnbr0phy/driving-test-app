@@ -1,0 +1,224 @@
+Comprendre les risques liés aux médicaments et à la conduite d'un véhicule | ameli.fr | Assuré (https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule)
+citeturn264view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.ameli.fr/assure/sante/medicaments/effets-indesirables-et-interactions-lies-aux-medicaments/comprendre-risques-lies-medicaments-conduite-vehicule","lineno":null}); Total lines: 218
+L0: Le site est actuellement en maintenance. Certaines fonctionnalités ne sont pas disponibles.
+L1: 
+L2: 【0†iframe†www.googletagmanager.com】
+L3: 
+L4: Ouvrir le menu
+L5: 
+L6: Fermer le menu
+L7: ## Votre caisse
+L8: 
+L9: Les pages d'ameli seront alors enrichies des informations locales de votre caisse (contacts, événements régionaux, etc.)
+L10: 
+L11: Saisissez votre code postal.
+L12: 
+L13: Les pages d'ameli seront alors enrichies d'informations locales (contacts, évènements régionaux, etc).
+L14: 
+L15: Code postal erroné. Veuillez faire une nouvelle tentative. Par exemple, renseigner le code postal 44000 pour la ville de Nantes.
+L16: 
+L17: Le champ avec astérisque (*) est obligatoire.
+L18: 
+L19: Votre code postal (format : 00000) *
+L20: [Input: Code postal] [Button: Valider]
+L21: 
+L22: Il existe plusieurs caisses d'Assurance Maladie pour le code postal que vous avez saisi. Veuillez choisir votre caisse parmi les propositions ci-dessous.
+L23: 
+L24: [Button: Valider]
+L25: 
+L26: Les pages d'ameli seront enrichies des informations de votre caisse :
+L27: 
+L28: [Input] [Button: Confirmer]
+L29: 
+L30: 【1†Ce n'est pas ma caisse】
+L31: 
+L32: 【2†Rechercher】
+L33: 
+L34: Se connecter
+L35: # À quel service souhaitez-vous vous connecter ?
+L36: 
+L37: Fermer
+L38: 
+L39: ## Mon compte ameli
+L40: 
+L41: Consulter mes remboursements, faciliter mes démarches…
+L42: 
+L43: 【3†Accéder à mon compte ameli†assure.ameli.fr】
+L44: 
+L45: 【4†Image】
+L46: 
+L47: 【3†Accéder à mon compte ameli†assure.ameli.fr】
+L48: 
+L49: ## Mon espace santé
+L50: 
+L51: Stocker et partager mes données de santé en toute sécurité
+L52: 
+L53: 【5†Accéder à Mon espace santé†www.monespacesante.fr】
+L54: 
+L55: 【6†Image】
+L56: 
+L57: 【5†Accéder à Mon espace santé†www.monespacesante.fr】
+L58: # Comprendre les risques liés aux médicaments et à la conduite d'un véhicule
+L59: 
+L60: Cet article fait partie du dossier : 【7†Effets indésirables et interactions liés aux médicaments】
+L61: 
+L62: 01 juillet 2026
+L63: 
+L64: Certains médicaments peuvent affecter la capacité à conduire un véhicule. Que ce soit un médicament prescrit ou en vente libre, il est important de lire la notice et de respecter les recommandations du pictogramme d’alerte. Il est tout aussi essentiel de suivre les conseils de son médecin ou de son pharmacien.
+L65: Affichage des sections :Tout afficher
+L66: ## [Button: Les effets des médicaments : quels risques sur la conduite d’un véhicule ? ]
+L67: 
+L68: De nombreux médicaments peuvent affecter la capacité à conduire et ce, indépendamment de la maladie qu’ils traitent. Leurs effets gênent la conduite de tout type de véhicules, motorisés ou non (voiture, deux-roues dont les trottinettes, poids-lourds, bateaux, etc.), et peuvent même rendre cette pratique dangereuse. En France, 3 à 4 % des accidents de la route sont attribuables aux médicaments.
+L69: Certains médicaments affectent également la sécurité d’utilisation de certaines machines, aussi bien dans un cadre professionnel que privé (bricolage, loisirs, etc.)
+L70: 
+L71: C’est actuellement le cas pour environ 1/3 des médicaments commercialisés en France et 1 médicament sur 50 est classé comme incompatible avec la conduite.
+L72: 
+L73: Une exposition à un médicament potentiellement dangereux est retrouvée chez environ 10 % des accidentés de la route.
+L74: 
+L75: Ces effets sur la capacité à conduire :
+L76:   * proviennent du fait que ces médicaments contiennent des substances qui agissent sur le cerveau et l’attention ;
+L77:   * sont dus à certains 【8†effets indésirables】 ;
+L78:   * peuvent être liés à une interaction de différents traitements ou avec la consommation d’【9†alcool】 ;
+L79:   * sont aggravés en cas de 【10†fatigue】 ou de 【11†manque de sommeil】.
+L80: 
+L81: Ainsi, certains médicaments peuvent causer :
+L82:   * un ralentissement des réflexes, une baisse de la vigilance et de l’attention, de la 【12†somnolence】 ou même des endormissements ;
+L83:   * des 【13†vertiges】 et troubles de l’équilibre ;
+L84:   * des troubles de la vue ;
+L85:   * de l’excitation ou de l’agressivité.
+L86: 
+L87: Ces effets peuvent apparaître de manière isolée, ou cumulée. Leur importance peut dépendre des doses absorbées, ou de la façon dont la personne réagit au médicament.
+L88: La durée des effets peut être très différente d'un médicament à l'autre, et même d'une personne à l'autre, elle peut aller de quelques heures à plusieurs jours.
+L89: 
+L90: Certains effets d'un traitement, potentiellement dangereux pour la conduite, peuvent, dans certains cas, s'estomper progressivement lorsque vous aurez pris le médicament pendant un certain temps.
+L91: 
+L92: Les effets des médicaments à risque
+L93: 【14†Image: Schéma représentant les effets des médicaments à risque et les dangers de leurs associations : baisse de l’attention, somnolence, troubles du comportement, ralentissement des réflexes, troubles de la vision, troubles de l’équilibre, nausées et vomissements】
+L94: ## [Button: Quels sont les médicaments présentant un risque pour la conduite d'un véhicule ? ]
+L95: 
+L96: Le risque de retentissement sur la conduite d’un véhicule concerne autant certains médicaments prescrits par votre médecin que ceux disponibles sans ordonnance, en 【15†automédication】.
+L97: Ces médicaments peuvent faire partie d’un traitement au long cours concernant certaines maladies (【16†dépression】, 【17†épilepsie】, 【18†maladie de Parkinson】, 【19†diabète】, 【20†hypertension artérielle】, etc.) ou traiter des maux courants (douleurs, fièvre, 【21†toux】, 【22†r】【23†hume】, etc.)
+L98: 
+L99: Les effets des médicaments sur la conduite varient d'une personne à l'autre, en fonction de l'état de santé, l'âge et la prise simultanée d'autres traitements, d’alcool ou de drogue.
+L100: Certaines familles de médicaments sont d'emblée concernées par ces risques :
+L101: 
+L102:   * les 【24†anxiolytiques】 : benzodiazépines et apparentés (diazépam, bromazépam, etc.) ;
+L103:   * les 【25†somnifères】 (hypnotiques) : zopiclone, zolpidem, etc. ;
+L104:   * les 【16†antidépresseurs】 : fluoxétine, paroxétine, etc.
+L105: 
+L106: Les hypnotiques et les anxiolytiques (en particulier les benzodiazépines) sont les substances les plus fréquemment retrouvées dans les analyses de sang des accidentés de la route.
+L107: D’autres familles de médicaments peuvent aussi avoir des effets sur l’aptitude à la conduite :
+L108:   * les anti-inflammatoires : alminoprofène, piroxicam, etc. ;
+L109:   * certains 【26†médicaments contre la douleur】 et contre la fièvre ;
+L110:   * certains médicaments (triptans) traitant la 【27†migraine 】;
+L111:   * les anesthésiques y compris ceux utilisés en usage local ;
+L112:   * les médicaments contre le 【28†mal des transports 】: diphénhydramine, diménhydrinate, etc. ;
+L113:   * les 【29†anti-histaminiques 】: cétirizine, loratadine, etc. ;
+L114:   * les 【19†antidiabétiques】 : gliclazide, glipizide, etc. ;
+L115:   * les 【30†antivertigineux 】;
+L116:   * les médicaments luttant contre les infections bactériennes ou virales : norfloxacine, ofloxacine, ganciclovir, etc.
+L117: Il est préférable de s’assurer auprès de son médecin traitant ou de 【31†son pharmacien】 que le(s) médicament(s) prescrit(s) ou acheté(s) 【15†sans ordonnance】 ne présente(nt) pas de risque particulier.
+L118: ## [Button: Pictogramme sur la boite du médicament : quel niveau de risque pour la conduite automobile ? ]
+L119: ### Comment interpréter le pictogramme sur l'emballage du médicament ?
+L120: 
+L121: Le conditionnement extérieur du médicament comporte un pictogramme si le médicament a des effets sur la conduite automobile.
+L122: 
+L123: Le pictogramme triangulaire présent sur les boites des médicaments constitue un outil d’alerte. Il est décliné en 3 couleurs, associées à un libellé, définissant 3 niveaux de risque.
+L124: 
+L125: Les médicaments qui n’appartiennent à aucun de ces niveaux sont considérés comme sans effet connu sur la capacité à conduire.
+L126: Pictogrammes présents sur le conditionnement extérieur des médicaments à risque
+L127: 
+L128: 【32†Image: Pictogrammes : conduite et niveaux de vigilance médicaments】
+L129: 
+L130: À chaque pictogramme correspond un niveau de risque sur une échelle de 1 à 3.
+L131: ### [Button: Niveau 1 ]
+L132: 
+L133: Le risque de niveau 1 (fond jaune) représente un risque faible car il dépend surtout de la façon dont la personne tolère plus ou moins bien le médicament.
+L134: 
+L135: Il n’y a donc pas de restriction à la conduite. Mais la personne doit être informée pour connaître les cas où elle doit s’abstenir de conduire, si elle ressent des effets signalés dans la notice du médicament.
+L136: ### [Button: Niveau 2 ]
+L137: 
+L138: Le risque de niveau 2 (fond orange) représente un risque réel lors de la conduite d'un véhicule. Il dépend principalement du mode d’action du médicament, et beaucoup moins de la tolérance individuelle au produit.
+L139: 
+L140: Ce sont le plus souvent des médicaments qui ne peuvent être obtenus qu’avec une ordonnance.
+L141: 
+L142: Dans ce cas, votre médecin ou pharmacien examine au cas par cas si la prise du médicament est compatible avec la conduite.
+L143: ### [Button: Niveau 3 ]
+L144: 
+L145: En cas de présence du risque de niveau 3 (fond rouge) sur la boite, la prise du médicament rend la conduite automobile dangereuse chez tous les patients. La conduite de véhicules est donc formellement déconseillée.
+L146: 
+L147: L'effet peut même se prolonger un certain temps après l’arrêt de la prise du médicament.
+L148: 
+L149: Environ 5 % des médicaments sont classés en risque de niveau 3.
+L150: ## [Button: Consommation de médicaments : prévenir les risques lors de la conduite de véhicule ]
+L151: 
+L152: Il importe de suivre certaines précautions avec les médicaments afin d’éviter tout risque lorsque vous devez prendre la route.
+L153: ### Échanger avec les professionnels de santé
+L154: 
+L155: Informez votre médecin ou votre pharmacien que vous conduisez ou que vous travaillez avec des machines.
+L156: 
+L157: Demandez systématiquement leur avis en cas de doute ; ne prenez pas un nouveau 【15†médicament même disponible sans ordonnance】 sans l’avis d’un professionnel.
+L158: 
+L159: Signalez-leur aussi vos éventuels autres traitements en cours, afin d’éviter toute interaction.
+L160: ### Consulter l'emballage du médicament et lire sa notice
+L161: 
+L162: Examinez l’emballage du médicament pour y chercher un pictogramme d’alerte.
+L163: Lisez systématiquement les informations de la notice, surtout en cas d’automédication (rubriques « conducteurs et utilisateurs de machines », « mises en garde et précautions d’emploi », « effets indésirables »). Une rubrique « conducteurs et utilisation de machines » comporte toutes les explications nécessaires sur ce sujet et vous indiquera ce qu’il convient ou non de faire.
+L164: 
+L165: Si vous ne terminez pas les médicaments achetés ou prescrits, pensez à toujours conserver les boîtes et leur notice.
+L166: ### Suivre son traitement sans le modifier et être attentif aux effets indésirables
+L167: 
+L168: Lorsque vous prenez un médicament pour la 1re fois, ne prenez pas le volant immédiatement. Il est conseillé d’attendre quelques jours pour évaluer l’intensité des effets du médicament sur votre organisme.
+L169: Soyez vigilant sur les effets indésirables du traitement lorsque votre médecin augmente les doses, ajoute un nouveau médicament ou au contraire en supprime un (des signes de [Button: sevrage] avec nervosité, anxiété peuvent apparaître et gêner la conduite).
+L170: En cas de traitement chronique, ne prenez jamais l’initiative de modifier la posologie ou les horaires de prise (à jeun, lors des repas, au coucher, etc.) Les conséquences pourraient être plus préjudiciables que celles liées aux médicaments. Seul votre médecin peut décider dans quelle mesure votre traitement doit être modifié.
+L171: ### Avant de prendre la route, faire le point sur son état de santé
+L172: 
+L173: Ne prenez pas le volant, reportez votre déplacement, choisissez un autre mode de déplacement ou demandez à un tiers de conduire si :
+L174: 
+L175:   * vous ne vous sentez pas bien (fatigue, sensation de faiblesse, tremblements, tête qui tourne, etc.) ;
+L176:   * vous voyez mal et vous appréciez mal les distances ;
+L177:   * vous vous sentez énervé, agressif, angoissé, etc.
+L178: 
+L179: Ne consommez pas d'【33†alcool】, ni de 【34†drogues】 avant de partir.
+L180: #### Alcool, drogues et médicaments : une association à proscrire
+L181: 
+L182: Lorsque l'on prend le volant, les risques d'accident dus à l'alcool, d'une part, et aux traitements, d'autre part, sont multipliés !
+L183: Il en est de même avec les stupéfiants, qu'il s'agisse de 【34†drogues】 (cannabis, ecstasy, cocaïne, héroïne, crack…) ou de 【35†médicaments détournés de leur usage thérapeutique】.
+L184: ### Sur la route ou en cas de conduite de machines
+L185: 
+L186: Adaptez la conduite de votre véhicule à votre état de santé et à vos capacités physiques.
+L187: 
+L188: Et surtout, arrêtez-vous face à certains signes (【36†somnolence】, difficultés de concentration, problèmes de vison, 【37†vertiges】, etc.)
+L189: ## Sources
+L190:   * Agence nationale de sécurité du médicament et des produits de santé. Conduite et médicaments. Site internet : Ansm. Saint-Denis La Plaine (France) ; 2023 [consulté le 1e juillet 2026]
+L191:   * Code de la santé publique. Article R5143 - L’étiquetage des médicaments ou produits soumis à autorisation. Site internet : Légifrance ; 2026 [consulté le 1e juillet 2026]
+L192:   * Sécurité routière. Médicaments et conduite. Site internet : Sécurité routière - Ministère de l'Intérieur. Paris ; 2026 [consulté le 1e juillet 2026]
+L193:   * Orriols L, Delorme B, Gadegbeku B, Tricotel A, Contrand B, Laumon B et al. (2010) Prescription Medicines and the Risk of Road Traffic Crashes: A French Registry- Based Study. PLoS Med 7(11): e1000366.
+L194: ## Lire aussi
+L195: 
+L196:   * 【28†Le traitement du mal des transports】
+L197:   * 【36†Somnolence diurne : les bons réflexes】
+L198: 
+L199: Cet article vous a-t-il été utile ?
+L200: 
+L201: [Input] Oui
+L202: 
+L203: [Input] Non
+L204: 
+L205: Pourquoi cet article ne vous a pas été utile ? (obligatoire)
+L206: 
+L207:   * [Input] L'information n'est pas assez complète
+L208: 
+L209:   * [Input] L'information est trop compliquée
+L210: 
+L211:   * [Input] Il y a trop à lire
+L212: 
+L213:   * [Input] L'information ne semble pas à jour
+L214: 
+L215: [Input] [Input] [Input]
+L216: 
+L217: Laisser ce champ vide [Input]
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn264view1 [wordlim: 200] Source: open({"ref_id":"https://www.securite-routiere.gouv.fr/sites/default/files/2026-08/sante_et_conduite.pdf","lineno":null}); 
+Failed to fetch https://www.securite-routiere.gouv.fr/sites/default/files/2026-08/sante_et_conduite.pdf: (502) Bad Gateway

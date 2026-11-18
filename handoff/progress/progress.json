@@ -1,0 +1,525 @@
+{
+  "base": "5afc6326",
+  "policy": "Sequential; independent PR per exam; never merge; original checkout untouched. After EPA94/100 and confirmed strawmen, stop further draft scaling; finish factual audit then repair authoring on10–15item independent pilot before expansion. Existing drafts remain unfinished and require later resolution.",
+  "exams": [
+    {
+      "order": 1,
+      "name": "CDM",
+      "status": "DRAFT880; stem length and options quality unresolved; pending revisit",
+      "pr": "https://github.com/johnbr0phy/driving-test-app/pull/880",
+      "idBase": 34000,
+      "branch": "codex/next20-cdm",
+      "worktree": "/Users/johnbrophy/tigertest-next20-cdm",
+      "research": "Official March 2025 outline plus 17 current CBDM standards and FDA Food Code; CBDM-set cut score per official FAQ.",
+      "bankRows": 200,
+      "draftChecks": {
+        "validator": "PASS",
+        "sharedOptionSets": 0,
+        "echoGainPer50": 1.6,
+        "sources": "40 primary pages; 42 dated reads"
+      },
+      "independentReview": {
+        "optionsOnlyCorrect": 161,
+        "optionsOnlyTotal": 200,
+        "allCategoriesOver40Percent": true,
+        "blindFactual": "200/200match",
+        "reason": "Correct options too often uniquely careful/respectful/comprehensive; must substantially rewrite before PR",
+        "findings": 185,
+        "report": "cdm-review/final-findings.json",
+        "explanationMismatches": 7,
+        "precisionIssues": 6
+      },
+      "metrics": {
+        "optionAverageChars": 22,
+        "keyLongestPct": 8,
+        "keyOver1_2xPct": 5,
+        "sharedOptionSets": 0,
+        "echoGainPer50": 1.6
+      },
+      "reviewFiles": "/Users/johnbrophy/tigertest-next20-progress/cdm-review",
+      "checkLog": "/Users/johnbrophy/tigertest-next20-progress/cdm-checks.log",
+      "checks": "One full sequential automerge-checks run PASS: typecheck, lint, 956 tests, bank/baseline/freshness/manifests. No preview/screenshots.",
+      "reviewFilesV2": "/Users/johnbrophy/tigertest-next20-progress/cdm-review-v2",
+      "reviewV2": "INVALID: reviewer admitted using cyclic position pattern; score discarded. V3 randomizes option and item orders.",
+      "reviewV3": {
+        "optionsCorrect": 71,
+        "total": 200,
+        "categories": {
+          "nutrition": "19/40",
+          "foodservice": "9/44",
+          "personnel": "15/40",
+          "safety": "18/48",
+          "business": "10/28"
+        },
+        "blindFacts": "200intendedkeys match; SAF046invalidoptionunderFDAexception",
+        "pedagogy": "Materialrebuildrequired:literalmatching+missingoutlineddepth",
+        "report": "cdm-review-v3/pedagogy-review.md"
+      },
+      "depthRebuild": {
+        "substantiveReplacements": 41,
+        "primarySourcePages": 39,
+        "datedReads": 41,
+        "sourceMap": "tools/next20/cdm/item-source-map.json",
+        "blueprint": "tools/next20/cdm/learning-objectives.md",
+        "blindArtifacts": "/Users/johnbrophy/tigertest-next20-progress/cdm-review-v4"
+      },
+      "selectiveRevision": {
+        "priorOptionsOnlyCorrect": 129,
+        "priorTotal": 200,
+        "priorGate": "NOT PASSED",
+        "stemsOrOptionSetsChanged": 37,
+        "explicitNotesAddressed": 24,
+        "precisionNotesAddressed": 3,
+        "knowledgeItemsRevised": 11,
+        "knowledgeItemsRetainedWithRationale": 1,
+        "blindArtifacts": "/Users/johnbrophy/tigertest-next20-progress/cdm-review-v5"
+      },
+      "reviewV5": {
+        "optionsCorrect": 140,
+        "total": 200,
+        "surface": "15/16",
+        "knowledge": "78/100",
+        "none": "47/84",
+        "gate": "NOT PASSED",
+        "next": "Fix16surface suspects; necessarychecks; DRAFTPR; deferfinalpreviewuntilqualityfinal"
+      },
+      "latestOptionsOnly": {
+        "correct": 140,
+        "total": 200,
+        "status": "NOT PASSED"
+      },
+      "surfaceFixes": {
+        "changedIds": [
+          "CDM-NUT-014",
+          "CDM-NUT-019",
+          "CDM-NUT-023",
+          "CDM-NUT-025",
+          "CDM-PER-010",
+          "CDM-PER-011",
+          "CDM-PER-014",
+          "CDM-PER-018",
+          "CDM-PER-024",
+          "CDM-PER-030",
+          "CDM-PER-031",
+          "CDM-PER-035",
+          "CDM-PER-038",
+          "CDM-SAF-031",
+          "CDM-BUS-013"
+        ],
+        "retained": "CDM-SAF-038",
+        "checkpoint": "/Users/johnbrophy/tigertest-next20-progress/cdm-draft-checkpoint",
+        "independentFactualReview": "pending",
+        "fullChecks": "PASS"
+      },
+      "draftCheckLog": "/Users/johnbrophy/tigertest-next20-progress/cdm-draft-full-checks.log",
+      "head": "2eb1db12",
+      "ci": "Head 2eb1db12: checks and CodeQL PASS; integrity FAIL specifically stem median26 >20",
+      "preview": "Deferred until content quality final",
+      "sourceChecks": "PASS",
+      "technicalChecks": "PASS including956tests",
+      "queue": "markedpr withdraftwarning",
+      "quality": "NOT PASSED; latest rawoptions140/200 before final15surfacefixes",
+      "base": "0a24381b",
+      "stemMedian": 26
+    },
+    {
+      "order": 2,
+      "name": "France VTC",
+      "status": "DRAFT 886; options-only gate unresolved; pending revisit",
+      "pr": "https://github.com/johnbr0phy/driving-test-app/pull/886",
+      "idBase": 34100,
+      "id": "frvtc",
+      "branch": "codex/next20-frvtc",
+      "worktree": "/Users/johnbrophy/tigertest-next20-frvtc",
+      "base": "0a24381b",
+      "research": "Current official syllabus plus transport laws/orders, road code, government guidance, BPI business sources, CNIL, current criminal-law provisions, and CEFR descriptors read.",
+      "bankRows": 200,
+      "researchFiles": "/Users/johnbrophy/tigertest-next20-progress/frvtc-research",
+      "sourceGate": "All authored objectives covered by fetched primary content; official QCM multi-answer instruction remains unconfirmed and is not asserted.",
+      "authoredCategories": [
+        "T3P 36",
+        "Gestion 24",
+        "Sécurité 36",
+        "Français 24",
+        "Anglais 12",
+        "Commercial 36",
+        "Réglementation VTC 32"
+      ],
+      "bank": "/Users/johnbrophy/tigertest-next20-frvtc/data/france-vtc-questions.json",
+      "independentReview": {
+        "optionsOnly": 174,
+        "total": 200,
+        "blindKeys": "200/200match",
+        "explanations": "all200checked",
+        "language": "competentFrench/plausibleA2; modelreview",
+        "factualFix": "REG024 bookingclient notpassenger",
+        "pedagogy": "broader scenario/distractor rebuild required",
+        "report": "frvtc-review-v1/pedagogy-language-review.md"
+      },
+      "wiring": "complete",
+      "validation": "Category and bank validators PASS; median 17, no baseline exception, zero shared option sets, echo +0.8/50; each category below +2; 55 dated primary source pages",
+      "theme": "276/75/32; no clash against 439 other light theme entries plus CDM; white contrast 10.65:1",
+      "review": "Latest raw options-only 163/200: NOT PASSED. Model French/A2 review, not human native review.",
+      "commit": "67496862",
+      "technicalChecks": "Updated full sequential checks PASS: 963 tests, typecheck/lint/bank/baselines/freshness/manifests",
+      "stemMedianBefore": 32,
+      "stemMedianTarget": "12–18; hard20",
+      "stemMedianAfter": 17,
+      "nonReadingStemMedian": 16,
+      "revisionNotes": "tools/next20/frvtc/draft-checkpoint.md",
+      "checkLog": "/Users/johnbrophy/tigertest-next20-progress/frvtc-research/automerge-draft-final.log",
+      "stemMedian": 17,
+      "latestOptionsOnly": "163/200; NOT PASSED",
+      "latestFactualReview": "All 200 keys and explanations checked; final 11 changed items independently answered; three residual wording fixes checked against sources",
+      "languageReview": "French/A2 competent model review, not human native validation",
+      "releaseWork": "options quality unresolved; finalpreview/screenshots deferred; revisit after other exams",
+      "reviewV2": {
+        "correct": 163,
+        "total": 200,
+        "knowledge": "107/113",
+        "prior": "53/84",
+        "surface": "2/2",
+        "none": "1/1",
+        "gate": "UNRESOLVED"
+      },
+      "changedIds": [
+        "FRVTC-T3P-018",
+        "FRVTC-SEC-009",
+        "FRVTC-SEC-016",
+        "FRVTC-SEC-026",
+        "FRVTC-SEC-028",
+        "FRVTC-COM-006",
+        "FRVTC-COM-007",
+        "FRVTC-COM-021",
+        "FRVTC-COM-023",
+        "FRVTC-REG-024",
+        "FRVTC-REG-025"
+      ],
+      "preview": "Deferred until quality final",
+      "head": "67496862",
+      "ci": "Head 67496862: GitHub Checks, integrity and CodeQL PASS",
+      "queue": "Verified persisted PR status, idBase34100, explicit unresolved-gate draft note"
+    },
+    {
+      "order": 3,
+      "name": "US real estate broker national",
+      "status": "DRAFT888; quality gate unresolved; pending revisit",
+      "pr": "https://github.com/johnbr0phy/driving-test-app/pull/888",
+      "idBase": 34200,
+      "id": "realestatebroker",
+      "branch": "codex/next20-realestatebroker",
+      "worktree": "/Users/johnbrophy/tigertest-next20-realestatebroker",
+      "base": "05baf836",
+      "research": "Pearson national broker outline effective March 2025 (Jan2026 document) and September2026 handbook fetched; DRE general-principle chapters, federal DOJ/EPA/CFPB sources being checked; cognitive blueprint required",
+      "partialRows": 200,
+      "manualReview": "Property/title/value/practice categories manually sampled and selectively revised for substantive distractor flaws; final fullbank and independent review pending",
+      "sourceNotes": "Fetched versus read source passages distinguished; California-only law excluded; final source gate and factual review still required",
+      "draftMetrics": {
+        "stemMedian": 16,
+        "echoGainPer50": 0.1,
+        "sharedOptionSets": 0,
+        "articleLeading": "18/800"
+      },
+      "sourceChecks": "Author reports source checker PASS with Python3.9 postponed-annotation workaround; verify final sources",
+      "bankRows": 200,
+      "bank": "/Users/johnbrophy/tigertest-next20-realestatebroker/data/realestatebroker-questions.json",
+      "bankHash": "8b9bafa8f4023e48d97e827eebcbe907de3028466e416036c8058a2a57cd25fb",
+      "wiring": "Complete; technical scoped checks pass; full final checks pending",
+      "reviewFiles": "/Users/johnbrophy/tigertest-next20-progress/realestatebroker-review-v1",
+      "technicalChecks": "Full automerge PASS:963 tests,typecheck,lint,integrity/baselines/freshness/manifests before dark-theme+metadata and rebase; final CI pending",
+      "latestOptionsOnly": {
+        "correct": 163,
+        "total": 200,
+        "gate": "NOT PASSED",
+        "cues": {
+          "prior": "71/90",
+          "knowledge": "68/74",
+          "surface": "18/22",
+          "none": "6/14"
+        }
+      },
+      "blindFacts": "200/200 intended keys matched; all explanations checked; national scope/wording repairs remain",
+      "findings": 18,
+      "quality": "Unfinished; appraisal process/oversight and other coverage gaps; weak distractors and duplicate objectives being replaced",
+      "revision": {
+        "questionOrExplanationChanges": 46,
+        "labelOnlyChanges": 25,
+        "fullbankEcho": 1.1,
+        "categoryEchoMax": 1.7,
+        "sharedOptionSets": 0
+      },
+      "changedReviewFiles": "/Users/johnbrophy/tigertest-next20-progress/realestatebroker-review-v2-changes",
+      "head": "02f4e570",
+      "ci": "Head02f4e570: GitHub Checks, integrity and CodeQL PASS",
+      "queue": "Verified PR mark succeeded, idBase34200, explicit unresolved draft note",
+      "preview": "Deferred until content quality final",
+      "sources": "56 primary pages,41 dated reads",
+      "changedSubsetReview": {
+        "optionsOnly": "42/46; not fullbank gate",
+        "blindFacts": "46/46 intended keys; all explanations checked",
+        "finalFix": "REBR-FIN-013 general rule qualifier applied per fresh reviewer"
+      }
+    },
+    {
+      "order": 4,
+      "name": "EPA 609",
+      "status": "Pilot2 options9/14 failed; full-question source/pedagogy review active; no expansion",
+      "pr": null,
+      "idBase": 34300,
+      "id": "epa609",
+      "branch": "codex/next20-epa609",
+      "worktree": "/Users/johnbrophy/tigertest-next20-epa609",
+      "base": "05baf836",
+      "research": "EPA program page updatedNov2 2026, current40CFR82.40, MACS Jan2025 official68-page manual fetched; historic material excluded and currentrules crosschecked",
+      "design": "Four25-question tests, editorial pools28/24/32/16 after removing repeatedYF objectives; MACS-based84% study target, provider-specific format; genuine format exception authorized",
+      "inventory": "140 candidate objectives, upper bound pending overlap review;100 supportable",
+      "sampleRows": 28,
+      "sampleMetrics": {
+        "medianStem": 15,
+        "echoGainPer50": 1.8,
+        "sharedOptionSets": 0,
+        "articleOpenings": 0
+      },
+      "manualFindings": "Sample revised with credible nearby distractors and explanation consistency. Accepted for expansion, not quality approval. Fullbank independent review still required.",
+      "bankRows": 100,
+      "quality": "Systemic distractor failure confirmed by reviewer and coordinator whole100 read. No scaling or draft until pilot demonstrates improved method, then fullbank gates still needed.",
+      "bank": "/Users/johnbrophy/tigertest-next20-epa609/data/epa609-questions.json",
+      "bankHash": "f6ec41e703f3b3c26900ce00c5bbad9ffdc1f5488abcc1202896542cbaffe8a7",
+      "wiring": "Complete; exact template, both themes,4x25 format",
+      "reviewFiles": "/Users/johnbrophy/tigertest-next20-progress/epa609-review-v1",
+      "sourceChecks": "Author reports11primarypages,100/100itemsource map",
+      "latestOptionsOnly": {
+        "correct": 94,
+        "total": 100,
+        "gate": "NOT PASSED",
+        "cues": {
+          "knowledge": "42/42",
+          "prior": "40/44",
+          "surface": "12/12",
+          "none": "0/2"
+        }
+      },
+      "artifactAudit": "No key leak found: exact bijective mappings, uniform fields, randomized correctA27/B25/C26/D22; reviewer read onlyauthorizedoptions inStage1; raw94retained",
+      "auditFiles": "/Users/johnbrophy/tigertest-next20-progress/epa609-review-v1/artifact-audit-private.json",
+      "independentReview": {
+        "optionsOnly": "94/100 NOT PASSED",
+        "blindFacts": "100/100 intended keys, with scope defects",
+        "distractors": {
+          "credible": 35,
+          "mixed": 36,
+          "weak": 29
+        },
+        "explanations": "nine stale alternative references",
+        "scopeErrors": 2
+      },
+      "pilot": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v1",
+      "pilotHash": "b4fdc86db179e57f707bb32aedef7bd2bbfcaf25e00df85160e759629cbc91bb",
+      "pilotReview": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-review-v1",
+      "pilotManual": "Three structural cues rejected and revised before fresh review; other11 retained. No production edits or expansion.",
+      "pilotOptionsOnly": {
+        "correct": 8,
+        "total": 14,
+        "categories": {
+          "service": "2/4",
+          "rules": "2/4",
+          "equipment": "3/4",
+          "yf": "1/2"
+        },
+        "cues": {
+          "knowledge": "3/4",
+          "prior": "5/8",
+          "surface": "0/1",
+          "none": "0/1"
+        },
+        "status": "NOT PASSED; smallsample, no fullbankapproval"
+      },
+      "pilot1Review": "14/14 factual keys; four structural revisions, one routing refinement, minor explanation and employer-route qualification required",
+      "pilot2": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v2",
+      "pilot2Scope": "Four structural rewrites, one ownership-rule refinement, one explanation correction; eight retained rows and all keys unchanged. No expansion.",
+      "pilot2Hash": "1af7f800953571a59a19677baf3e40bc52df08d695c57630c121062ad3d94655",
+      "pilot2Review": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-review-v2",
+      "pilot2OptionsOnly": {
+        "correct": 9,
+        "total": 14,
+        "categories": {
+          "rules": "3/4",
+          "equipment": "3/4",
+          "service": "3/4",
+          "yf": "0/2"
+        },
+        "cues": {
+          "prior": "9/13",
+          "knowledge": "0/1"
+        },
+        "status": "NOT PASSED; scorerlabels not proof of structuralquality"
+      },
+      "broaderPilotSelection": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-selection.json",
+      "broaderPilotPlan": "Fix concrete v3 defects, then all14 retained +26 preregistered SystemRandom category-stratified items,10/category. No score-based selection changes; source-backed duplicate objective consolidation logged before review. Full100 gate mandatory.",
+      "currentPilotCheckpoint": "Pilot40v5 badd4c5b0d20f40ab1a2cda80bbcfa199edcb41c75d76da80cc2ab38114b0398: exactly3minorfixes independentlyaccepted in epa609-pilot40-review-v2/minor-v5-review.md. Prior24/40 optionsFAIL unchanged;40/40blind appliedv4, informedv5changesaccepted. Awaitingparent/userworkflowdecision. No100expansion/newscorecycle/productionmutation. Builder/reviewersidle.",
+      "pilot40Selection": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-selection.json",
+      "pilotV4": {
+        "path": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v4",
+        "sha256": "05ee54a631ddb3e9f76da8a43b6e11c6442f4bacace450fc72f7cf5cf94c856c",
+        "changes": "REG004 precise equipment availability; REG015 replaces declaration correction with distinct retention deadline. Twelve rows and all keys unchanged."
+      },
+      "pilot40OptionsReview": {
+        "correct": 31,
+        "total": 40,
+        "categories": {
+          "Rules": "10/10",
+          "Equipment": "7/10",
+          "Service": "7/10",
+          "Yf": "7/10"
+        },
+        "gate": "FAIL all four categories; no waiver",
+        "path": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-review-v1",
+        "next": "Blind full-question/source/pedagogical review then explanations; production frozen",
+        "finalReview": "All40 explanations/sourcekeys supported; blind39/40 retained, reviewer corrected own YF015 timing error. Quality HOLD: 1high literal-match and9medium distractor/scope findings; finalreview.md and mapped-final-findings-private.json."
+      },
+      "sourceVariation": "RobinairAC1234-6 567817RevF pp29–30 permits diagnosticpartialcharge after failedvacuum unlike MACS2025 p51 description; YF014/003 scoped and sourcevariation explicit. ExactHoneywellSDSv3.4 March22,2024 verifiedviaweb at Audi host; localdownload403, no latestversionclaim.",
+      "pilot40FreshV4Options": {
+        "correct": 24,
+        "total": 40,
+        "categories": {
+          "Equipment": "5/10",
+          "Yf": "6/10",
+          "Rules": "6/10",
+          "Service": "7/10"
+        },
+        "cueBreakdown": {
+          "knowledge": "21/30",
+          "surface": "1/2",
+          "none": "2/8"
+        },
+        "status": "FAIL all categories; no waiver or counterproof claim",
+        "path": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-review-v2"
+      },
+      "pilot40FinalCheckpoint": {
+        "path": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-v5",
+        "sha256": "badd4c5b0d20f40ab1a2cda80bbcfa199edcb41c75d76da80cc2ab38114b0398",
+        "changedVerification": "/Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-review-v2/minor-v5-review.md",
+        "status": "Minorfixesaccepted; numericalgateFAIL unresolved"
+      }
+    },
+    {
+      "order": 5,
+      "name": "France examen civique",
+      "status": "pending",
+      "pr": null,
+      "idBase": 34400
+    },
+    {
+      "order": 6,
+      "name": "CompTIA Linux+",
+      "status": "pending",
+      "pr": null,
+      "idBase": 34500
+    },
+    {
+      "order": 7,
+      "name": "UK CeMAP Module 2",
+      "status": "pending",
+      "pr": null,
+      "idBase": 34600
+    },
+    {
+      "order": 8,
+      "name": "ASCP MLS",
+      "status": "pending",
+      "pr": null,
+      "idBase": 34700
+    },
+    {
+      "order": 9,
+      "name": "Canada Drone Basic",
+      "status": "pending",
+      "pr": null,
+      "idBase": 34800
+    },
+    {
+      "order": 10,
+      "name": "Germany §34d",
+      "status": "pending",
+      "pr": null,
+      "idBase": 34900
+    },
+    {
+      "order": 11,
+      "name": "NHA ExCPT",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35000
+    },
+    {
+      "order": 12,
+      "name": "ASCP HT",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35100
+    },
+    {
+      "order": 13,
+      "name": "NIC Nail Technology",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35200
+    },
+    {
+      "order": 14,
+      "name": "France ETM",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35300
+    },
+    {
+      "order": 15,
+      "name": "Red Seal Cook",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35400
+    },
+    {
+      "order": 16,
+      "name": "Germany SBF See",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35500
+    },
+    {
+      "order": 17,
+      "name": "France bateau côtier",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35600
+    },
+    {
+      "order": 18,
+      "name": "US state contractor business law",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35700
+    },
+    {
+      "order": 19,
+      "name": "Germany Einbürgerungstest",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35800
+    },
+    {
+      "order": 20,
+      "name": "NZ forklift",
+      "status": "pending",
+      "pr": null,
+      "idBase": 35900
+    }
+  ],
+  "vercel": {
+    "projectId": "prj_oL95EoTBBoTv03g5PFmUgnQGRaoG",
+    "teamId": "team_DSXvMf3fZPQOgWPLFDxqHNxR"
+  },
+  "repository": "johnbr0phy/driving-test-app",
+  "idAllocation": "Main maximum33900; openPRs763and726 contain no newexam batch. Reserved34000to35900 inclusive.",
+  "workflowMain": "05baf836",
+  "workflowPendingPR": "PR885 merged as acd6242b; lean-answer rule now on main"
+}

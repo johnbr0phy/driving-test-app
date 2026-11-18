@@ -1,0 +1,116 @@
+{
+  "stage": "3-explanations-reviewed",
+  "blindAnswerAgreement": {
+    "matched": 14,
+    "total": 14
+  },
+  "optionsOnlyAgreement": {
+    "matched": 9,
+    "total": 14,
+    "rules": "3/4",
+    "equipment": "3/4",
+    "service": "3/4",
+    "yf": "0/2"
+  },
+  "decision": "No scaling or full-bank approval; repair structural weaknesses and independently retest.",
+  "items": [
+    {
+      "id": "R001",
+      "judgment": "revise",
+      "explanationReview": "Accurate under 82.42(b)(3); also make written-statement form and small-container scope explicit in teaching context. No wrong-key finding.",
+      "discriminationFinding": "D is the intersection of the three most repeated components. Each distractor changes exactly one component from D, permitting convergence without regulatory knowledge.",
+      "concreteRepair": "Replace the near-identical composite list with a concrete proposed purchaser declaration and four parallel compliance determinations, or ask one disputed requirement at a time. Keep the real resale-only/purchaser identity rule; do not change the key to defeat guesses. A mixed-use statement, supplier-identity mistake and missing business address remain worthwhile teaching errors when not arranged as a visible answer template."
+    },
+    {
+      "id": "R002",
+      "judgment": "retain",
+      "explanationReview": "Correct arithmetic and fresh-oil requirement. Explanation appropriately says empty the bottle beforehand.",
+      "discriminationFinding": "All three alternatives encode recognizable baseline/addition mistakes rather than random magnitudes.",
+      "concreteRepair": "Retain 20 minus 8 equals 12 mL, and keep the empty-before-recovery practice explicit. Do not imply that starting with oil in the collection bottle is the recommended procedure."
+    },
+    {
+      "id": "R003",
+      "judgment": "retain_with_minor_revision",
+      "explanationReview": "Correctly limits the desiccant recommendation to prolonged exposure. Does not claim every evacuation is ineffective.",
+      "discriminationFinding": "Evacuation-only and pump-oil confusion are plausible; recycling recovered refrigerant is a weaker response to an uncapped circuit.",
+      "concreteRepair": "If improving difficulty, replace the weakest outside-circuit action with an alternative disposition of the existing desiccant, such as attempting to dry and reuse it under vacuum. Verify that misconception against the service context and avoid claiming an unsupported regeneration procedure."
+    },
+    {
+      "id": "R004",
+      "judgment": "retain_with_minor_revision",
+      "explanationReview": "Correct assignment under 82.34(d)(1)(ii)(B), with reclamation accurately separated.",
+      "discriminationFinding": "Salvage-yard and independent-recycler alternatives test actual role confusion. The reclamation-facility option is partly eliminated by unreclaimed in the stem.",
+      "concreteRepair": "Keep the recovered-but-not-reclaimed scenario because it establishes the applicable legal route. Strengthen the fourth role alternative within that route, such as a separate recycling facility operated by the selling business. Explain that approved equipment and the recovery requirements still apply."
+    },
+    {
+      "id": "R005",
+      "judgment": "revise",
+      "explanationReview": "Accurate ownership chain: common equipment owner must also own or operate the extraction establishment. Other parties do not qualify merely by credentials or contract.",
+      "discriminationFinding": "Vehicle ownership and machine-service-company ownership are remote distractions; same-owner choice is conspicuously relevant.",
+      "concreteRepair": "Use four plausible business ownership arrangements: common equipment owner operating the extraction site; shared brand but separately owned machines; recovery equipment owned by an independent contractor; common site operator leasing or contracting access without owning both machines. Phrase exact relationships carefully and recheck the ownership clause. Remove the section number from the question unless source lookup is intentionally being assessed."
+    },
+    {
+      "id": "R006",
+      "judgment": "retain",
+      "explanationReview": "Physics and SDS connection are sound. Nearly constant temperature is a stipulated scenario, not a universal spill guarantee.",
+      "discriminationFinding": "Sensible warming is the strongest distractor; condensation/direction errors are still meaningful novice confusions.",
+      "concreteRepair": "Retain as a heat-transfer application. Teaching should explicitly distinguish refrigerant temperature from the skin losing energy. No need to obscure boiling or invent a different key; the phase-change observation is legitimate evidence the learner must interpret."
+    },
+    {
+      "id": "R007",
+      "judgment": "retain_with_minor_revision",
+      "explanationReview": "Correctly includes recovery or re-evacuation and requires both checks for remaining charge.",
+      "discriminationFinding": "Continuing after passed vacuum check or retrying test dose are credible errors. Lubricant injection is less connected to this failure.",
+      "concreteRepair": "Replace the lubricant option with a plausible premature process reset or repeat-check action, while distinguishing it from source-permitted re-evacuation. Do not accidentally make re-evacuation a wrong answer. Maintain the failed pressurized-check context."
+    },
+    {
+      "id": "R008",
+      "judgment": "retain",
+      "explanationReview": "Supported distinction between material compatibility, cleaning performance, solvent removal, and vehicle-specific permission.",
+      "discriminationFinding": "All alternatives represent different claims a technician might incorrectly infer from a product standard.",
+      "concreteRepair": "Retain. Explain that a compatibility result alone does not establish procedural approval or cleaning/removal outcomes; avoid suggesting J2670 approves every material in every system."
+    },
+    {
+      "id": "R009",
+      "judgment": "revise",
+      "explanationReview": "Explanation correctly preserves certification and distinguishes purchasing equipment from availability for opening systems.",
+      "discriminationFinding": "Top-off-only in the stem directly removes both opening-system choices, leaving only the vehicle class decision.",
+      "concreteRepair": "Remove top-off-only from the stem and ask which described business is exempt from purchasing equipment under the specified provision. Keep the balanced four business profiles so both service scope and appliance class must be assessed. Explanation must still retain certification and avoid implying businesses opening systems qualify."
+    },
+    {
+      "id": "R010",
+      "judgment": "revise",
+      "explanationReview": "Correct low-area density explanation. Other physical facts do not account for pit accumulation.",
+      "discriminationFinding": "Flammability is a strong competing safety focus. Temperature-pressure and ready evaporation are weaker distractors for the spatial question.",
+      "concreteRepair": "Use plausible alternative mechanisms for where released vapor accumulates or how ventilation placement addresses it, rather than unrelated true properties. For example compare heavier-than-air accumulation with mistaken assumptions that vapor necessarily rises, mixes uniformly, or stays at the release height. Keep options parallel and source-backed explanation of the actual mechanism; do not introduce hazardous procedural recommendations."
+    },
+    {
+      "id": "R011",
+      "judgment": "revise",
+      "explanationReview": "82.40(f) accurately supports an on-premises demonstration. Explanation properly avoids inventing a requirement to retain job logs.",
+      "discriminationFinding": "One live demonstration against three endorsements/records creates a category-outlier cue; certified status makes training confirmation especially weak.",
+      "concreteRepair": "Use parallel actual verification procedures varying meaningful scope: demonstration at the business premises, mandatory retaking of an entire written test, third-party training demonstration, or document review as a substitute. Check the wording so it asks what this provision specifically authorizes rather than asserting the other acts could never be requested under any authority. Avoid three synonyms for paperwork versus one practical act."
+    },
+    {
+      "id": "R012",
+      "judgment": "revise",
+      "explanationReview": "Accurate for the described revised replacement instructions; not a universal ranking of all component instructions above every OEM directive.",
+      "discriminationFinding": "Stem announces that existing data are obsolete and only A names the replacement. Earlier service bulletin is an especially transparent loser.",
+      "concreteRepair": "Present a genuine document-applicability decision: distinguish an original VIN-linked label, a current generic model manual, an older applicable-looking bulletin, and instructions explicitly applicable to the installed replacement part number. Remove the sentence that pre-declares every alternative obsolete. Let applicability and revision evidence establish the answer; retain enough detail for a unique answer without teaching a blanket authority hierarchy."
+    },
+    {
+      "id": "R013",
+      "judgment": "retain_with_minor_revision",
+      "explanationReview": "Accurate attribution of a typical hours-based interval to MACS with manufacturer instructions controlling.",
+      "discriminationFinding": "Throughput is a useful neighboring-maintenance confusion; vehicle count is a credible but imprecise proxy; cylinder test date is weak.",
+      "concreteRepair": "Replace the cylinder-test date with a plausible pump-related maintenance record, such as calendar time since the last oil change, while keeping the question specifically about the cited hours-based schedule. Do not imply hours are the only basis for all pumps."
+    },
+    {
+      "id": "R014",
+      "judgment": "revise",
+      "explanationReview": "Explanation is substantively correct and explicitly model-specific. Manual has clearing followed by the accepted-serial-number and shutdown display; the current stem can be read as if acceptance display occurs before another clearing action. Capacity limit is a maintenance trigger, not the only permissible time to replace a filter.",
+      "discriminationFinding": "Adjacent oil-warming/leak-check steps are credible sequence confusions. Code-entry detail risks testing model trivia rather than containment unless the relevant manual context is supplied.",
+      "concreteRepair": "Change the setup to a technician entering a valid replacement filter code, then ask what the machine must complete before instructing power-off/removal; do not say an accepted-code display precedes clearing. Prefer providing the relevant manual excerpt or an explicit model-specific training context. Tie the decision to clearing contained refrigerant before opening a connection and following prompts. Do not generalize this UI sequence across machines."
+    }
+  ]
+}

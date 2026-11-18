@@ -1,0 +1,625 @@
+Tout savoir sur la facturation | Service Public Entreprendre
+Javascript est desactivé dans votre navigateur.
+Contenu
+Menu
+Recherche
+Pied de page
+République Française
+recherche menu
+Accéder au site pour les particuliers Fermer Recherche Rechercher sur le site
+Sélectionnez une commune dans la liste des suggestions
+Une erreur est survenue pendant la recherche, merci de réessayer.
+Nouveau Filtrer les contenus pour toutes les formes juridiques
+les micro-entrepreneurs
+les entrepreneurs individuels (EI)
+les sociétés Fermer
+Accueil
+Actualités
+Gestion de l’entreprise
+Baux
+Comptabilité - Facturation
+Difficultés financières
+Environnement
+Financement
+Fiscalité
+Fonctionnement de l’entreprise
+Voir toute la gestion de l’entreprise
+Étapes de vie
+Je crée
+Je reprends
+Je transmets
+Je clos
+Secteurs d’activité
+Activités de services
+Agriculture
+Arts et culture
+BTP - Bâtiment et travaux publics
+Commerce
+Juridique et financier
+Tourisme - Restauration
+Voir tous les secteurs d’activité
+Démarches
+Démarches en ligne
+Formulaires Cerfa
+Boîte à outils
+Simulateurs de situation et calcul
+Modèles de document
+Annuaire des entreprises
+Autres outils pratiques Fermer
+La page que vous consultez ne concerne pas les micro-entrepreneurs
+" Tout savoir sur la facturation " ne concerne que
+Rester sur la page
+Voir les contenus pour les micro-entrepreneurs Voir le fil d'ariane
+Accueil
+Comptabilité - Facturation
+Documents commerciaux (factures, devis, CGV)
+Tout savoir sur la facturation
+Focus FR - Français
+FR - Français
+EN - English
+Partager la page
+Facebook
+X
+Linkedin
+Courriel
+Copier le lien
+Lien copié Fermer
+Ce sujet vous intéresse ?
+Ajoutez cette page à vos favoris et recevez un courriel dès que l’information « Tout savoir sur la facturation » est mise à jour. Ajouter à mes favoris Fermer
+Ce sujet a été ajouté à vos favoris
+Vous recevrez un courriel dès que la page « Tout savoir sur la facturation » sera mise à jour.
+Vous pouvez à tout moment supprimer votre abonnement dans mon compte > mes alertes
+Votre abonnement n’a pas pu être pris en compte.
+Vous devez vous connecter à votre espace personnel afin de vous abonner à la mise à jour de cette page.
+Pour vous abonner aux mises à jour des pages Service Public, vous devez activer votre
+espace personnel .
+Vous serez alerté(e) par courriel dès que la page « Tout savoir sur la facturation » sera mise à jour significativement.
+ACTIVER MON ESPACE PERSONNEL
+Tout savoir sur la facturation
+Vérifié le 07 août 2026 - Entreprendre Service Public / Direction de l'information légale et administrative (Premier ministre)
+Entrée en vigueur de la facturation électronique
+À compter du 1 er septembre 2026 , toutes les entreprises établies en France et assujetties à la TVA : titleContent doivent être en mesure de recevoir des factures électroniques .
+Les grandes entreprises et les ETI : titleContent sont également tenues d' émettre des factures électroniques à compter de cette date. Cette obligation s'appliquera aux PME et aux micro-entreprises à compter du 1 er septembre 2027 .
+Selon les opérations qu'elles réalisent, les entreprises peuvent également être soumises à une obligation de transmission de certaines données à l'administration fiscale (e-reporting) .
+Pour préparer la mise en place de la facturation électronique et connaître les obligations applicables selon la taille de l'entreprise et les opérations réalisées, consultez notre fiche dédiée à la facturation électronique .
+La facturation obéit à plusieurs règles : mentions obligatoires, délai et conservation des factures, etc. Certaines obligations varient selon que la facture soit à destination de professionnels, de particuliers ou d’entités publiques.
+La facturation électronique vient progressivement compléter ces règles à partir du 1 er septembre 2026. Tout déplier
+Qu’est-ce qu’une facture ?
+La facture fait partie des différents documents commerciaux d’une entreprise, parmi lesquels figurent notamment le devis et les conditions générales de vente (CGV) .
+La facture est un document établi par un vendeur ou un prestataire de services à son client à la suite de la vente d’un bien ou de la réalisation d’une prestation de services. Elle détaille notamment les biens ou services vendus, leur prix, les conditions de paiement et, le cas échéant, la TVA : titleContent applicable.
+Elle se distingue donc du devis, qui est un document prévisionnel proposant un prix avant la réalisation d’une vente ou d’une prestation de services. Le devis n’engage les parties qu’une fois accepté. À quoi sert une facture ?
+La facture remplit plusieurs fonctions :
+Commerciale : elle permet de détailler le montant à payer, l’acheteur, les modalités de paiement ou encore le taux de TVA applicable.
+Juridique : la facture constitue un élément de preuve d’un contrat de vente ou de prestation réalisé entre deux parties. Elle permet à un vendeur de prouver son droit d’exiger le paiement d’une somme d’argent ( quittance de loyer : titleContent par exemple). La facture peut donc être utilisée en cas de litige : titleContent (non-paiement ou contestation d’une somme d’argent) devant un tribunal.
+Fiscale : elle permet de collecter et déduire la TVA et est exigée en cas de contrôle fiscal .
+Comptable : elle sert de justificatif comptable de l’entreprise : elle est nécessaire pour l’ établissement des comptes annuels d’une société .
+À savoir
+La facture peut aussi être appelée note (émise au profit d’un particulier), quittance (émise après le paiement) ou encore note d’honoraires (émise par un professionnel libéral ). Qui peut émettre une facture ?
+En principe, la facture est émise par le vendeur de biens ou le prestataire de services .
+Dans certaines situations, la facture peut être émise par une autre personne :
+Lorsque le vendeur ou le prestataire est établi en dehors de l' Union européenne (UE) : titleContent , la facture doit être délivrée par son représentant fiscal : titleContent . L'entreprise peut tout de même décider d'émettre sa facture elle-même à condition qu'elle y indique le nom, l'adresse et le numéro d'identification de son représentant fiscal.
+Le vendeur ou le prestataire autorise son client ( auto-facturation : titleContent ) ou un tiers : titleContent ( sous-traitance de la facturation ) à facturer pour son compte par un mandat de facturation.
+À noter
+Lorsque la facture est rédigée en langue étrangère, il peut être exigé une traduction certifiée . Quel est le format d’une facture ?
+Le format de la facture dépend notamment de la qualité du client (entreprise ou particulier) et du lieu où il est établi .
+La facture peut être établie sous format électronique ou, dans les situations qui ne relèvent pas de l' obligation de facturation électronique , sous format papier .
+Facture électronique
+Facture papier Facture électronique
+La facture électronique est obligatoire pour les opérations réalisées entre entreprises établies en France et assujetties à la TVA : titleContent , y compris lorsqu'elles bénéficient de la franchise en base de TVA : titleContent (par exemple un micro-entrepreneur).
+L' obligation d'émettre des factures électroniques s'applique progressivement :
+à partir du 1 er septembre 2026 pour les grandes entreprises : titleContent et les entreprises de taille intermédiaire (ETI) : titleContent
+à partir du 1 er septembre 2027 pour les PME : titleContent et les micro-entreprises : titleContent
+Exemple :
+une entreprise de plomberie facture une entreprise de construction française
+un micro-entrepreneur facture une agence de communication française
+Dans ces 2 situations, la facture relève de la facturation électronique. L'obligation d'émettre cette facture dépend toutefois de la date à laquelle elle devient applicable à l'entreprise concernée.
+Toutes les entreprises doivent toutefois être en mesure de recevoir des factures électroniques à compter du 1 er septembre 2026 .
+La facture électronique est émise, transmise, reçue et conservée par l'intermédiaire d'une plateforme agréée ou, le cas échéant, d'une solution compatible raccordée à une plateforme agréée.
+À noter
+Pour plus d’informations, consultez notre fiche sur la facturation électronique . Facture papier
+La facture papier reste possible lorsque l'opération n'est pas soumise à l'obligation de facturation électronique .
+C’est notamment le cas lorsque l’entreprise facture :
+un particulier (qu’il soit en établi en France ou à l’étranger)
+une entreprise établie à l’étranger
+Exemple :
+un coiffeur remet une facture à un client particulier
+une entreprise française facture une entreprise allemande
+Dans ces 2 situations, la facture n'a pas à être émise sous format électronique.
+L'entreprise peut toutefois être tenue de transmettre certaines informations à l'administration fiscale ( e-reporting : titleContent ) .
+Pour plus d’informations sur les opérations concernées par la facturation électronique , se reporter à notre fiche dédiée.
+Attention
+Lorsqu'une facture est établie sur support papier, elle est rédigée en double exemplaire . Le vendeur remet l'original à l'acheteur et conserve le second exemplaire. Références juridiques
+Code de commerce : article L441-9
+Obligation de facturation
+Code général des impôts : article 289
+Règles générales de facturation
+Code général des impôts : article 289 bis
+Facturation électronique via une plateforme agréée
+Est-il obligatoire d’émettre une facture ?
+L’obligation d’émettre une facture dépend de la nature du client de l’entreprise (professionnel, particulier ou entité publique) :
+Le client est professionnel
+Le client est particulier
+Le client est une entité publique Le client est professionnel
+Lorsque la transaction effectuée se fait entre deux professionnels, une facture doit obligatoirement être émise pour chaque vente de bien ou prestation de services.
+Lorsque l'opération est soumise à l'obligation de facturation électronique , la facture est émise sous format électronique, selon les modalités prévues par la réglementation. Dans les autres cas, elle peut être établie sous un autre format autorisé : format papier, format numérique (e-mail, PDF, etc.).
+Cette facture doit habituellement être émise au moment de la livraison du bien ou de la réalisation de la prestation de services .
+À savoir
+Pour un accompagnement à la mise en place de la facturation électronique, il est possible de contacter le Service Public Conseillers-Entreprises afin d’être rappelé directement par les conseillers porteurs de solutions (CCI, CMA, CDED, Urssaf, Banque de France, Bpifrance) :
+Vous souhaitez mettre en place la facturation électronique ?
+Service Public Conseillers-Entreprises
+Pour en savoir plus
+Exemple :
+Un fournisseur livre du matériel à une entreprise du secteur BTP . Le fournisseur doit donc émettre une facture au moment de la livraison, même si le paiement est prévu plus tard.
+Toutefois, la facture peut être émise à une autre échéance dans les situations suivantes :
+Pour une livraison de biens exonérée de TVA , la facture doit être émise au plus tard le 15 du mois suivant celui au cours duquel la livraison a eu lieu
+Pour une prestation de services dont la TVA doit être versée par le client , alors la facture doit être émise au plus tard le 15 du mois suivant celui au cours duquel la prestation a été réalisée
+Pour plus d’informations, consultez notre fiche sur les dates d’exigibilité de la TVA .
+À noter
+Lorsque l'entreprise réalise plusieurs livraisons de biens ou prestations de services distinctes pour le compte d'un même client , la facture récapitulative peut être émise au plus tard à la fin du mois au cours duquel les livraisons ou prestations ont été réalisées. Cette possibilité ne concerne que les opérations pour lesquelles la TVA est exigible le mois au cours duquel l'opération a été réalisée. Le client est particulier
+Les règles diffèrent selon qu'il s'agit d'une vente de biens ou d'une prestation de services : 1) Vente de biens
+Lorsqu'une entreprise vend un bien à un particulier , l'émission d'une facture (ou d'une note) est obligatoire uniquement dans les cas suivants :
+à la demande du client
+pour les ventes à distance
+pour les livraisons intracommunautaires : titleContent exonérées de TVA : titleContent
+En dehors de ces cas, le vendeur remet généralement un ticket de caisse à l’acheteur.
+À noter
+Depuis le 1 er août 2023, l’ impression systématique du ticket de caisse est interdite, sauf exceptions. Un ticket peut toutefois être remis à la demande du client. 2) Prestation de services
+Lorsqu'une entreprise réalise une prestation de services pour un particulier , une note doit obligatoirement être remise lorsque le montant de la prestation est supérieur à 25 € (TVA comprise) .
+En dessous de ce montant, la remise d'une note est facultative, mais elle devient obligatoire si le client en fait la demande.
+À noter
+L'obligation d'émettre une facture ne signifie pas nécessairement qu'elle doit être électronique.
+Les ventes et prestations de services réalisées au profit d'un particulier ne sont, en principe, pas soumises à l'obligation de facturation électronique . Le client est une entité publique
+Lorsque le client est une administration publique, une facture doit obligatoirement être émise pour chaque vente de bien ou prestation de services.
+Elle doit habituellement être délivrée au moment de la livraison du bien ou de la réalisation de la prestation de services .
+En revanche, la facture peut être émise à une autre échéance dans les situations suivantes :
+Pour la livraison de biens exonérée de TVA, la facture doit être émise au plus tard le 15 du mois suivant celui au cours duquel la livraison a eu lieu
+Pour une prestation de services dont la TVA doit être versée par le client, alors la facture doit être émise au plus tard le 15 du mois suivant celui au cours duquel la prestation a été réalisée
+À noter
+Lorsque l'entreprise réalise plusieurs livraisons de biens ou prestations de services distinctes pour le compte d'un même client , la facture peut être émise jusqu’à la fin du mois au cours duquel les livraisons ou prestations ont été réalisées. Cela ne concerne que les livraisons ou prestations pour lesquelles la TVA est exigible le mois au cours duquel l'opération a été réalisée.
+Les entités publiques ont l’obligation d’émettre et de recevoir des factures électroniques via Chorus Pro :
+Portail Chorus Pro
+À noter
+Cela signifie qu’une entreprise titulaire d’un marché public doit demander le paiement de ses prestations en transmettant la facture via la plateforme Chorus Pro . L’entité publique qui est alors acheteur public dispose d’un certain délai pour effectuer le règlement au profit de l’entreprise. Références juridiques
+Code de la commande publique : articles L2192-1 à L2192-2
+Obligation de facturation électronique (marché public)
+Arrêté n°83-50/A du 3 octobre 1983 relatif à la publicité des prix de tous les services
+Délivrance d’une note (prestation de services)
+Quelles sont les étapes pour émettre une facture ?
+Avant d’émettre une facture, il faut d'abord déterminer si l'opération relève de la facturation électronique . Les modalités d'émission de la facture en dépendent. 1 Déterminer le format applicable à la facture
+Le format de la facture (électronique ou papier) dépend de la nature du client auquel elle est adressée :
+Le client est une entreprise
+Le client est un particulier
+Le client est une entité publique Le client est une entreprise
+Lorsque la facture est adressée à une entreprise établie en France et assujettie à la TVA : titleContent , elle relève de la facturation électronique.
+L'obligation d'émettre des factures électroniques s'applique :
+à compter du 1 er septembre 2026 pour les grandes entreprises et les entreprises de taille intermédiaire (ETI)
+à compter du 1 er septembre 2027 pour les PME et les micro-entreprises
+Attention
+Toutes les entreprises doivent toutefois être en mesure de recevoir des factures électroniques à compter du 1 er septembre 2026 .
+La facture est alors émise, transmise, reçue et conservée par l'intermédiaire d'une plateforme agréée ou, le cas échéant, d'une solution compatible raccordée à une plateforme agréée.
+Pour bien choisir le logiciel de facturation, une liste des plateformes agréées est disponible :
+Consulter la liste des plateformes agréées
+Pour en savoir plus sur les entreprises concernées par la facturation électronique, consulter notre fiche « Comment se préparer à l’obligation de facturation électronique ? ». Le client est un particulier
+Les factures adressées à un particulier ne relèvent pas de l'obligation de facturation électronique .
+Lorsque la facture est à destination d’un client particulier, la facture peut donc être sous format papier ou sous format électronique .
+À noter
+Bien qu’elles ne soient pas soumises à la facturation électronique , les entreprises assujetties à la TVA : titleContent qui réalisent des opérations commerciales avec des particuliers peuvent être tenues de transmettre certaines informations à l’administration fiscale. C’est ce que l’on appelle le e-reporting : titleContent . Le client est une entité publique
+Depuis 2020, toutes les entreprises doivent désormais émettre des factures électroniques afin d’adresser leurs demandes de paiement, via Chorus pro , pour des contrats conclus avec une entité publique (État, collectivités territoriales et établissements publics) :
+Portail Chorus Pro
+À noter
+Cette obligation s’applique à toutes les entreprises concernées par les marchés publics . 2 Émettre la facture au bon moment
+En principe, la facture est émise lors de la livraison du bien ou de la réalisation de la prestation de services .
+Cela signifie donc qu’une facture doit être établie par le vendeur ou le prestataire lorsqu’un produit a été remis au client, qu’un service a été effectué ou qu’un accord commercial a été exécuté. C’est le moment où l’engagement devient concret et où le paiement peut donc être demandé au client.
+Certaines opérations permettent toutefois une émission différée , notamment :
+jusqu'au 15 du mois suivant pour certaines livraisons intracommunautaires : titleContent exonérées de TVA : titleContent
+jusqu'au 15 du mois suivant pour certaines prestations de services B2B : titleContent dont la TVA est due par le client dans un autre État membre de l' Union européenne : titleContent
+à la fin du mois lorsqu'une facture périodique (ou récapitulative) : titleContent est autorisée
+La facture peut également être émise en début de période (mensuelle, trimestrielle ou annuelle) même si le service est fourni progressivement sur la période. C’est le cas de certains abonnements ou services récurrents, par exemple.
+Exemple :
+Une entreprise effectue trois livraisons pour le même client en octobre : elle peut émettre une facture unique regroupée au plus tard le 31 octobre, si la TVA est exigible à chaque livraison. 3 Vérifier la conformité de la facture
+Une fois la facture établie, il convient de s'assurer qu'elle respecte les règles applicables. Les modalités diffèrent selon que la facture est émise sous format électronique ou sur un autre support (format papier ou numérique tel qu’un PDF par exemple) .
+Facture électronique
+Facture papier ou numérique (PDF, e-mail, etc.) Facture électronique
+Pour les opérations soumises à la facturation électronique, la facture est créée et transmise par un logiciel de facturation raccordé à une plateforme agréée.
+Le logiciel attribue automatiquement un numéro unique à la facture , assure sa conservation et intègre les mentions obligatoires devant être présentes sur une facture .
+À noter
+Même si ces opérations sont automatisées, il reste indispensable de vérifier les informations figurant sur la facture (identité du client, montant, TVA, date, numérotation des factures : titleContent , etc.) avant sa validation. Facture papier ou numérique (PDF, e-mail, etc.)
+Lorsque la facture est établie sur un support papier ou numérique (tel qu’un PDF, un e-mail, etc.), l'entreprise doit elle-même assurer la numérotation de la facture et vérifier qu'elle comporte toutes les mentions obligatoires.
+Chaque facture doit comporter un numéro unique fondé sur une séquence chronologique continue , sans rupture. Deux factures ne peuvent donc pas porter le même numéro.
+L’entreprise peut choisir différentes séries de numérotation (par exemple F2023-01-001, 2023-001, etc.). Cela peut être le cas dans les situations suivantes :
+Lorsqu'il y a plusieurs sites de facturation, une série par site
+Lorsqu'il y a différentes catégories de clients pour lesquelles les règles de facturation ne sont pas identiques : une série par catégorie de clients
+Lorsqu'il y a de la sous-traitance de facturation pour certaines factures
+La facture doit être établie en double exemplaire : l'original est remis au client et le second exemplaire est conservé par l'entreprise.
+À savoir
+Le numéro de la facture fait partie des mentions obligatoires et doit figurer sur toutes les pages. Si une facture comporte plusieurs pages, elles doivent être numérotées selon une séquence n/N (n étant le numéro d'ordre des pages et N le nombre total des pages constituant la facture).
+Afin d’éviter de commettre des erreurs, il est possible d’utiliser un logiciel de facturation pour créer des factures en ligne.
+Pour bien choisir le logiciel de facturation, une liste des plateformes agréées est disponible :
+Consulter la liste des plateformes agréées
+Quelles sont les mentions obligatoires d’une facture ?
+Pour être valable, une facture doit comporter plusieurs mentions obligatoires ainsi que certaines mentions particulières selon les cas.
+Les mentions suivantes sont communes à toutes les factures et doivent obligatoirement apparaître : Tableau - Mentions générales obligatoires pour toutes les factures
+Mentions obligatoires
+Précisions
+Date de l’émission de la facture
+Date à laquelle la facture est émise
+Numéro unique de la facture
+Numéro unique à chaque facture, basé sur une séquence chronologique et continue
+Date de la vente ou de la prestation de services
+Jour effectif de la livraison ou de la fin d’exécution de la prestation (ou date à laquelle est versé l’acompte)
+Identité du vendeur ou du prestataire de services
+Si l'entreprise est un entrepreneur individuel :
+Nom et prénom de l’entrepreneur individuel précédé ou suivi de la mention « Entrepreneur individuel ou EI »
+Adresse de domiciliation de l’entreprise
+Numéro Siren
+Si l'entreprise est une société :
+Dénomination sociale de la société
+Numéro Siren
+Adresse du siège social
+Mention de la forme juridique (EURL, SARL, SA, SNC, SAS) et du montant du capital social
+Attention : si l'entreprise est en cours d'immatriculation, la facture doit être établie au nom de l’entreprise, avec la mention « Siret en cours d'attribution », et non au nom du créateur, sous peine de rejet de la déduction de la TVA.
+L’adresse de facturation doit apparaître sur la facture si elle est distincte de celle du siège social.
+Identité de l’acheteur ou du client
+Si le client est une entreprise : nom de l’entreprise (nom complet si entrepreneur individuel ou dénomination sociale si société)
+Si le client est un particulier : nom complet, adresse du client (sauf opposition pour un particulier) et adresse de facturation (si différente de celle du client)
+Numéro du bon de commande
+Lorsqu’il a préalablement été établi par l’acheteur
+Numéro individuel d’identification à la TVA : titleContent du vendeur (ainsi que celui du du client professionnel s’il est redevable de la TVA : titleContent )
+Sauf pour les factures d’un montant total HT : titleContent inférieur ou égal à 150 €
+Désignation du produit ou de la prestation
+Nature, marque, référence des produits
+Si prestation : matériaux fournis et main d’oeuvre
+Décompte détaillé de chaque prestation et produit fourni
+Quantité, dénomination précise, prix unitaire HT, taux de TVA applicable (ou mention du bénéfice d’exonération de TVA, le cas échéant)
+Somme totale HT : titleContent et TTC : titleContent à payer
+Préciser la majoration éventuelle de prix (frais de transport ou d’emballage par exemple)
+Réduction de prix
+Rabais, ristourne, ou remise acquise à la date de la vente ou de la prestation de service et directement liée à cette opération, à l'exclusion des escomptes non prévus sur la facture
+Date à laquelle le règlement doit intervenir
+Il faut également mentionner les conditions d' escompte : titleContent en cas de paiement anticipé. En cas d'absence d'escompte, mentionner sur la facture « Escompte pour paiement anticipé : néant »
+Taux de pénalités de retard
+En cas de non-paiement à la date de règlement (les pénalités de retard sont exigibles sans qu’un rappel soit nécessaire)
+Mention de l’indemnité forfaitaire de 40 € pour frais de recouvrement
+Due par le client professionnel en cas de retard de paiement
+Lorsque la facture est adressée à un particulier , elle doit mentionner l’existence et la durée de la garantie légale de conformité d’au moins 2 ans.
+La mention concerne les biens vendus appartenant à l’une des catégories suivantes : appareils électroménagers, équipements informatiques, produits électroniques grand public, appareils de téléphonie, appareils photographiques, appareils dotés d’un moteur électrique ou thermique, destinés au bricolage ou au jardinage, jeux et jouets y compris consoles de jeux vidéos, articles de sport, montres et produits d’horlogerie, articles d’éclairage et luminaires, lunettes de protection solaire et éléments d’ameublement.
+Des mentions particulières s'ajoutent aux mentions obligatoires dans certains cas : Tableau - Mentions particulières
+Cas d’application
+Mentions particulières
+Si le vendeur ou prestataire est membre d'un centre de gestion ou d'une association agréée
+« Membre d'une association agréée : titleContent , le règlement par chèque et carte bancaire est accepté »
+Si le vendeur est soumis au régime de franchise en base de TVA
+« TVA non applicable, art. 293 B du code général des impôts »
+Si l’acquéreur ou le preneur est redevable de la TVA : titleContent
+« Auto-liquidation »
+En cas d’achats de produits ou d’équipements électroniques ou de meubles
+Éco-participation DEEE : titleContent
+En cas d’acquisition d’un support d’enregistrement
+Rémunération pour copie privée (RCP)
+Si le client produit lui-même la facture à la place du vendeur ou du prestataire
+Auto-facturation : titleContent
+À noter
+À compter du 1 er septembre 2026 , la mention « TVA non applicable, art. 293 B du code général des impôts (CGI) » doit être remplacée par « TVA non applicable, art. L. 223 et s. du code des impositions sur les biens et services (CIBS) ». Ce changement résulte de la recodification des règles de TVA dans un nouveau code dédié.
+Toutefois, une période de tolérance est admise jusqu’au 31 décembre 2027 pendant laquelle l’utilisation de la référence à l’article 293 B du CGI reste acceptée sur les factures et les documents commerciaux, malgré l’entrée en vigueur du CIBS.
+Il est recommandé d’anticiper cette évolution, notamment en adaptant dès que possible les modèles de factures.
+Dans le cadre de la généralisation de la facturation électronique , les grandes entreprises et les ETI : titleContent doivent, à partir du 1 er septembre 2026 , intégrer 4 nouvelles mentions obligatoires sur leurs factures. Les PME : titleContent et les micro-entreprises seront concernées à leur tour à compter du 1 er septembre 2027 ).
+Les mentions sont les suivantes :
+Numéro Siren : titleContent du client (s’il s’agit d’une entreprise)
+Adresse de livraison des biens si elle est différente de l’adresse du client
+Information relative à la nature des opérations facturées doit préciser si celles-ci consistent exclusivement en des livraisons de biens, exclusivement en des prestations de services, ou en une combinaison des deux
+Mention « Option pour le paiement de la taxe d’après les débits » si le prestataire a opté pour le paiement de la taxe d’après les débits : titleContent Généralisation de la facturation électronique
+Direction de l'information légale et administrative (Dila) - Premier ministre
+Pour en savoir plus Références juridiques
+Code de commerce : article L441-9
+Mentions obligatoires dans une facture
+Code général des impôts, annexe II : article 242 nonies A
+Mentions obligatoires dans une facture (assujettis à la TVA)
+Décret n°2021-609 du 18 mai 2021 relatif à la mention de l'existence et de la durée de la garantie légale de conformité sur les facture de certaines catégories de biens
+Mention de l’existence et de la durée de la garantie légale de conformité (particulier)
+Quel est le délai de conservation d’une facture ?
+Les factures émises ou reçues par une entreprise doivent être conservées pendant 10 ans . C’est le cas pour toutes les pièces comptables d’une entreprise (livre et registre comptable ou encore bon de commande, de livraison ou de réception).
+Le délai de conservation des documents pour une entreprise varie selon la nature des documents. Le délai est par exemple abaissé à 6 ans pour les documents fiscaux. Références juridiques
+Code de commerce : article L123-22
+Délai de conservation d’un document comptable (10 ans)
+Code de commerce : article L441-9
+Obligations de facturation
+Livre des procédures fiscales : article L102 B
+Délai de conservation d’un document fiscal (6 ans)
+Comment annuler ou rectifier une facture ?
+En cas d'erreur sur une facture, la marche à suivre dépend du moment où cette erreur est constatée : avant l’émission, après l’émission ou après le paiement de la facture. Avant l’émission de la facture
+Tant que la facture n'a pas été émise, elle peut être corrigée ou supprimée .
+Lorsque la facture est établie à l'aide d'un logiciel, il est recommandé de vérifier les informations figurant sur la facture (client, montant, TVA, date, etc.) avant sa validation. En effet, la validation déclenche généralement l'émission de la facture et, lorsqu'il s'agit d'une facture électronique, sa transmission au client.
+Lorsqu'un logiciel de facturation est utilisé, les modifications sont généralement enregistrées afin d'en assurer la traçabilité. Après l’émission de la facture
+Une fois la facture émise, elle ne peut plus être modifiée directement.
+Si une erreur est constatée avant le paiement, une facture rectificative peut être émise. Elle doit comporter la mention « annule et remplace la facture n°… » et porter un nouveau numéro de facture.
+Pour les opérations soumises à la facturation électronique, la facture rectificative est émise et transmise selon les mêmes modalités que la facture initiale.
+À noter
+Il ne faut donc pas simplement refaire la facture avec le même numéro ou un autre. Cela peut créer une incohérence entre les comptabilités du vendeur et du client, et entraîner des sanctions en cas de contrôle fiscal . Après le paiement de la facture
+Lorsqu'une facture a déjà été réglée, elle ne peut plus être modifiée ni remplacée.
+Toute correction ou annulation doit être réalisée au moyen d'une facture d'avoir : titleContent .
+La facture d'avoir constitue un document comptable à part entière. Elle doit comporter son propre numéro et respecter les mêmes règles de numérotation que les autres factures (séquence chronologique, continue et unique).
+À noter
+L'entreprise peut utiliser la même série de numérotation que les factures ou créer une série spécifique pour les avoirs (par exemple F2026-001 pour les factures et A2026-001 pour les avoirs).
+Quelles sont les sanctions en cas de non-respect des règles de facturation ?
+Les sanctions dépendent de la nature du manquement aux règles de facturation : 1. Manquement à l’obligation de facturation
+Le montant des sanctions en cas de manquement à l’obligation de facturation est différent pour une entreprise individuelle ou une société.
+Entreprise individuelle
+Société Entreprise individuelle
+Le non-respect des obligations en matière de facturation peut entraîner des sanctions pénales, dont la gravité varie selon la nature de l’infraction :
+En cas de non-respect de l’obligation de facturation : l'amende peut aller jusqu'à 75 000 €
+En cas de nouveau manquement dans les 2 ans suivant une première sanction devenue définitive : titleContent : l'amende peut aller jusqu'à 150 000 €
+En cas d’émission de fausse facture (faux en écriture) : l’amende peut aller jusqu’à 45 000 € et 3 ans d’emprisonnement Société
+Le non-respect des obligations en matière de facturation peut entraîner des sanctions pénales, dont la gravité varie selon la nature de l’infraction :
+En cas de non-respect de l’obligation de facturation : l'amende peut aller jusqu'à 375 000 €
+En cas de nouveau manquement dans les 2 ans suivant une première sanction devenue définitive : titleContent : l'amende peut aller jusqu'à 750 000 €
+En cas d’émission de fausse facture (faux en écriture) : l’amende peut aller jusqu’à 225 000 € 2. Non-respect de l’obligation d’émettre une facture électronique Sanctions en matière de facturation électronique
+Le non-respect de l’obligation d’émission d’une facture électronique est passible d’une amende de 50 € par facture, plafonnée à 15 000 € par an.
+Lorsque l’administration fiscale constate qu’une entreprise ne reçoit pas ses factures via une plateforme agréée : titleContent , elle lui adresse une mise en demeure de se conformer dans un délai de 3 mois.
+Si l’entreprise n’est toujours pas conforme à l’issue de ce délai, une amende de 500 € est appliquée et un nouveau délai de 3 mois est accordé. Si l’entreprise reste non conforme à l’issue de ce second délai, une amende de 1 000 € est appliquée, puis une nouvelle amende de 1 000 € est encourue à chaque période de 3 mois pendant laquelle le manquement persiste. Sanctions en matière de fourniture de données de transaction et de données de paiement
+En cas d’ absence de transmission des données de transaction et de paiement par l’entreprise , une amende de 500 € est appliquée, plafonnée à 15 000 € par an.
+Une plateforme agréée (PA) qui ne respecte pas ses obligations de transmission à l’administration encourt 750 € par transmission manquante ou incorrecte, plafonnée à 100 000 € .
+Les amendes ne s’appliquent pas si c’est la première infraction constatée sur les quatre dernières années (l’année en cours et les trois années précédentes). Cela suppose que l’infraction ait été réparée spontanément ou dans les 30 jours suivant la première demande de l’administration. 3. Omission ou inexactitude dans les mentions obligatoires
+Une amende de 15 € est appliquée sur chaque omission ou inexactitude. Le montant total des amendes appliquées sur une facture ne peut pas dépasser 25 % du montant de la facture.
+Lorsque l'adresse ou l'identité ou l’adresse du client ou du fournisseur ont été dissimulées ou modifiées, le montant de l'amende est égal à 50 % du montant total des factures concernées. 4. Livraison ou prestation de services fictives
+Une amende égale à 50 % du montant de la facture est appliquée lorsque la facture concerne une livraison ou une prestation de services fictive, par exemple une facture émise pour une formation qui n’a jamais eu lieu.
+Si le vendeur ou le prestataires apporte la preuve que l'opération a bien été effectuée et correctement comptabilisée dans les 30 jours , l'amende est réduite à 5 % du montant de la transaction.
+À savoir
+Lorsque l'amende est égale à 50 % du montant de la facture ou de l'ensemble des factures, celle-ci est plafonnée à 375 000 € par exercice comptable. Lorsque le montant de l'amende est réduit à 5 % , celle-ci est plafonnée à 37 500 € . Références juridiques
+Code de commerce : article L441-9
+Amende pour manquement à l’obligation de facturation
+Code pénal : article 131-41
+Tarif maximum de l’amende pour une société
+Code pénal : article 441-1
+Sanctions en cas de faux et usage de faux
+Code général des impôts : article 1737
+Infractions aux règles de facturation
+Code général des impôts : article 1788 D
+Sanctions pour défaut de transmission
+Bofip-impôts n° BOI-CF-INF-10-40-40 : Infractions aux règles de facturation
+Infractions aux règles de facturation
+Qui peut m'aider ?
+Le Service Public Conseillers entreprises
+Vous avez un projet, une difficulté, une question du quotidien ? Simple et gratuit : vous êtes rappelé(e) dans les 5 jours par LE conseiller qui peut vous aider.
+Échanger avec un conseiller
+Textes de loi et références
+Code de commerce : article L123-22
+Délai de conservation d’un document comptable (10 ans)
+Code de commerce : article L441-9
+Obligations de facturation
+Code général des impôts, annexe II : article 242 nonies A
+Numérotation des factures
+Code général des impôts : article 289
+Date d’établissement de la facture
+Code général des impôts : article 290
+Transmission électronique des données de transaction
+Code général des impôts : article 290 A
+Transmission des données de paiement
+Code général des impôts : article 1737
+Infractions aux règles de facturation
+Code général des impôts : article 1788 D
+Sanctions pour défaut de transmission
+Code de la commande publique : articles L2192-1 à L2192-2
+Obligation de facturation électronique (marché public)
+Code pénal : article 131-41
+Tarif maximum de l’amende pour une société
+Livre des procédures fiscales : article L102 B
+Délai de conservation d’un document fiscal (6 ans)
+Décret n°2021-609 du 18 mai 2021 relatif à la mention de l'existence et de la durée de la garantie légale de conformité sur les facture de certaines catégories de biens
+Mention de l’existence et de la durée de la garantie légale de conformité (particulier)
+Arrêté n°83-50/A du 3 octobre 1983 relatif à la publicité des prix de tous les services
+Délivrance d’une note (prestation de services)
+Bofip-impôts n° BOI-CF-INF-10-40-40 : Infractions aux règles de facturation
+Infractions aux règles de facturation
+LOI n°2023-1322 du 29 décembre 2023 de finances pour 2024 : article 91
+Dates d’entrée en vigueur de la réforme sur la facturation électronique
+Instruction du 22 février 2017 sur le développement de la facturation électronique (PDF - 499.9 KB)
+Modalités de traitement des factures électroniques reçues et émises
+Services en ligne et formulaires
+Vérifier un numéro de TVA intracommunautaire (VIES)
+Service en ligne
+Modèles de factures à adresser à un client professionnel
+Modèle de document
+Portail Chorus Pro
+Service en ligne
+Consulter les taux de change
+Service en ligne
+Annuaire des entreprises : rechercher toutes les informations d'une entreprise
+Service en ligne
+Consulter l’annuaire de la facturation électronique
+Outil de recherche
+Consulter la liste des plateformes agréées
+Outil de recherche
+Questions ? Réponses !
+Quels sont les numéros d'identification d'une entreprise ?
+Quels sont les délais de conservation des documents pour les entreprises ?
+Comment se mettre en conformité avec l’obligation de facturation électronique ?
+Comment calculer un prix hors taxes à partir d'un prix toutes taxes comprises ?
+Voir aussi
+Documents commerciaux (factures, devis, CGV)
+TVA applicable aux échanges de biens dans l’Union européenne
+Numéro de TVA intracommunautaire
+Mentions obligatoires sur une facture
+Négociation commerciale : établir une convention entre professionnels
+Devis obligatoire : activités concernées
+Facturation électronique entre entreprises
+France Num
+Signature électronique
+France Num
+Chorus Pro : mode d'emploi
+France Num
+Un questionnaire pour comprendre les changements qui vont impacter votre entreprise
+Direction de l'information légale et administrative (Dila) - Premier ministre
+Comprendre la facturation électronique
+Conseil national de l'ordre des experts-comptables
+Comment bien choisir sa solution de facturation électronique ?
+France Num
+Cette page vous a-t-elle été utile ?
+1 Pas du tout Cette page ne pas m'a pas du tout été utile
+2 Un peu Cette page m'a été un peu utile
+3 Moyen Cette page m'a été moyennement utile
+4 Beaucoup Cette page m'a été très utile
+5 Parfait ! Cette page m'a été parfaitement utile
+Cette page vous a-t-elle été utile ?
+1
+2
+3
+4
+5
+Pas du tout
+Un peu
+Moyen
+Beaucoup
+Parfait !
+L’équipe Service Public Entreprendre vous
+remercie
+Je vais sur la page d’accueil Masquer le message
+Vous avez noté 1 sur 5 :
+Pas du tout
+Vous avez noté 2 sur 5 :
+Un
+peu
+Vous avez noté 3 sur 5 :
+Moyen
+Vous avez noté 4 sur 5 :
+Beaucoup
+Vous avez noté 5 sur 5 :
+Parfait !
+Je fais une remarque sur cette page
+L’équipe Service Public Entreprendre vous
+remercie pour vos remarques utiles à l'amélioration du site.
+Pour des raisons de sécurité, nous ne pouvons valider ce formulaire suite à une trop longue période
+d’inactivité. Merci de recharger la page si vous souhaitez le soumettre à nouveau.
+Une erreur technique s'est produite. Merci de réessayer ultérieurement.
+Vos remarques pour améliorer
+la page
+La page est-elle facile à comprendre ? Pas du tout Moyen Parfait !
+L’information a-t-elle été utile ? Pas du tout Moyen Parfait !
+Avez-vous rencontré une difficulté ? Non Je ne suis pas satisfait(e) de
+cette
+réglementation Cette page ne correspond pas à ma
+situation Il manque des informations (préciser lesquelles) Les informations ne sont pas
+claires (préciser
+lesquelles) Il y a une erreur dans la
+page (préciser
+laquelle)
+Avez-vous des suggestions pour améliorer la page ? Je suggère une modification à une rédactrice ou un rédacteur Service Public Entreprendre Saisie complémentaire requise – affichage automatique
+Les informations demandées sont obligatoires .
+Les réponses apportées par Service Public sont rédigées en français . Nous vous invitons également à nous écrire en français .
+Des exemples nous permettent d’améliorer les pages plus facilement : « Je n’ai pas compris la partie
+sur... » , « Je cherchais des informations plus précises/plus claires sur... » . Votre suggestion Ne mentionnez pas de données personnelles (nom, adresse, numéros de téléphone, numéro de sécurité sociale, numéro fiscal, lieu et date de naissance...) à l'exception, bien sûr, de votre adresse de messagerie.
+1000 caractères restants Comment pouvons-nous vous répondre ? Votre adresse électronique Exemple : nom@exemple.com Protection des données personnelles
+Les informations recueillies à partir de ce formulaire sont traitées par la DILA pour répondre à
+votre demande. Pour connaitre et exercer vos droits, veuillez consulter la rubrique données personnelles et sécurité . Envoyer vos remarques
+ETI :
+Entreprise de taille intermédiaire
+TVA :
+Taxe sur la valeur ajoutée
+HT :
+Hors taxes
+TTC :
+Toutes taxes comprises
+DEEE :
+Déchets d'équipements électriques et électroniques
+PME :
+Petite et moyenne entreprise
+Toute personne physique ou morale exerçant une activité économique de manière indépendante et habituelle. Un salarié n’est pas assujetti car il n’est pas indépendant. Toutefois, un assujetti n’est pas toujours redevable de la TVA et n’est donc pas toujours obligé de la payer (par exemple en cas de franchise en base de TVA).
+Document qui atteste du paiement intégral du loyer et des charges par le locataire. Le locataire doit en faire la demande au propriétaire. Le propriétaire doit alors lui remettre gratuitement.
+Désaccord entre 2 ou plusieurs personnes concernant l'exercice d'un droit
+Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Italie, Lettonie, Lituanie, Luxembourg, Malte, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Slovaquie, Slovénie, Suède
+Assujetti à la TVA désigné pour effectuer les obligations déclaratives fiscales d'une entreprise située en dehors de l'Union européenne, soumise à la TVA en France.
+Mécanisme par lequel le client établit une facture au nom du vendeur ou du prestataire, avec son accord préalable.
+Personne qui ne fait pas partie de la société
+Régime fiscal de TVA permettant de bénéficier d’une exonération de cette taxe. Il allège ainsi considérablement les formalités pour une entreprise (facturation, comptabilité...). Ce régime est soumis à des conditions de seuils de chiffres d’affaires. Il ne permet pas de déduire et récupérer la TVA que l’enteprise a payée sur ses achats professionnels. Toute entreprise bénéficiant de ce régime est assujettie à la TVA mais non redevable.
+Entreprise dont l'effectif est supérieur ou égal à 5 000 personnes. Son chiffre d'affaires annuel est supérieur à 1 500 millions d'euros ou le total de son bilan est supérieur à 2 000 millions d'euros.
+Entreprise employant entre 250 et 4 999 salariés, réalisant soit un chiffre d'affaires annuel inférieur à 1,5 milliard d'euros, soit un total de bilan inférieur à 2 milliards d'euros. Une entreprise qui a moins de 250 salariés, mais plus de 50 millions d'euros de chiffre d'affaires et plus de 43 millions d'euros de total de bilan, est aussi considérée comme une ETI.
+Entreprise employant moins de 250 salariés, réalisant soit un chiffre d'affaires annuel inférieur à 50 millions d'euros, soit un total de bilan inférieur à 43 millions d'euros. Un dépassement de seuil n'a d'effet qu'après 2 exercices consécutifs.
+Entreprise employant moins de 10 personnes et réalisant un chiffre d'affaires annuel ou un total de bilan n'excédant pas 2 millions d'euros.
+Obligation qui impose aux entreprises de transmettre à l’administration fiscale certaines informations relatives à des opérations commerciales non concernées par la facture électronique (montant de l’opération, montant de la TVA facturée, etc.).
+Livraison de services ou de marchandises, ou les deux, à un client basé dans un autre pays de l'Union Européenne qui sera alors exonérée de TVA.
+Situation dans laquelle une entreprise effectue une opération commerciale avec une autre entreprise.
+Facture émise pour plusieurs livraisons de biens ou prestations de services distinctes effectuées au profit d'une même personne au cours d'un même mois. Elle est établie au plus tard à la fin du mois.
+Système d’identification unique et chronologique qui permet de suivre, organiser et retrouver facilement chaque facture émise.
+Toute personne soumise (assujettie) à la TVA et ne bénéficiant pas d’un régime d’exonération. Le redevable collecte la TVA et la reverse à l’administration fiscale.
+Opération de crédit à court terme qui consiste à acheter, avant son échéance, une dette à celui à qui celle-ci est due
+Une association agréée dispose d'un numéro d'agrément qui est différent de ses numéros d'immatriculation. L'agrément lui permet notamment d'employer du personnel sous certaines conditions, et de bénéficier de subventions publiques ou d'augmenter sa capacité juridique.
+Acronyme de Système d'identification du répertoire des entreprises . Le numéro de Siren est l’identifiant unique d'une entreprise, composé de 9 chiffres.
+Lorsque la TVA collectée est exigible à compter de la date d'émission de la facture
+Document comptable qui annule ou corrige tout ou partie d’une facture déjà émise, généralement en cas d’erreur ou de retour de marchandises.
+Qui ne peut plus faire l'objet d'un recours
+Opérateur ayant reçu l'agrément de l'administration fiscale pour garantir la conformité, la sécurité et l'authenticité des factures électroniques. Concrètement, elle agit comme un intermédiaire de confiance pour émettre, recevoir et transmettre les factures électroniques des entreprises.
+ETI :
+Entreprise de taille intermédiaire
+TVA :
+Taxe sur la valeur ajoutée
+HT :
+Hors taxes
+TTC :
+Toutes taxes comprises
+DEEE :
+Déchets d'équipements électriques et électroniques
+PME :
+Petite et moyenne entreprise
+Recevoir la lettre Bercy infos Entreprises en partenariat avec Entreprendre Service Public
+Chaque semaine, les dernières actualités fiscales, comptables, RH
+et financières utiles à la gestion de votre activité - abonnement gratuit
+S’abonner
+Voir
+toutes les lettres
+Suivez-nous sur les réseaux sociaux
+Facebook
+TikTok
+Linkedin
+Instagram
+YouTube Gestion de l'entreprise
+Baux
+Comptabilité - Facturation
+Difficultés financières
+Environnement
+Financement
+Fiscalité
+Fonctionnement de l'entreprise
+Pratiques commerciales
+Ressources humaines Étapes de vie
+Je crée
+Je reprends
+Je transmets
+Je clos Secteurs d'activité
+Activités de services
+Agriculture
+Arts et culture
+BTP - Bâtiment et Travaux Publics
+Commerce
+Juridique et financier
+Tourisme - Restauration
+Transports
+Urbanisme Démarches et outils
+Démarches en ligne
+Formulaires administratifs (cerfas)
+Simulateurs
+Modèles de document
+Outils de recherche
+Annuaire de l'administration Nous connaître
+Politique éditoriale
+Service Public Entreprendre en chiffres
+Mise à disposition des données (open data)
+Vous êtes journaliste ?
+Aide
+Une question ?
+République Française
+Le site officiel d’information administrative pour les entreprises.
+Retrouvez toutes les informations et démarches administratives
+nécessaires à la création, à la gestion et au développement de votre entreprise.
+legifrance.gouv.fr
+info.gouv.fr
+service-public.gouv.fr
+data.gouv.fr Nos partenaires
+Plan du site
+Accessibilité : totalement conforme
+Accessibilité des services en ligne
+Mentions légales
+Données personnelles et sécurité
+Conditions générales d'utilisation
+Gestion des cookies
+Paramètres d'affichage Fermer
+Paramètres d’affichage Choisissez un thème pour personnaliser l’apparence du site. Thème clair Thème sombre Système Utilise les paramètres système.
+Sauf mention contraire, tous les contenus de ce site sont sous licence etalab-2.0

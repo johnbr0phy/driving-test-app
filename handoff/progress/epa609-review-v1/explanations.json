@@ -1,0 +1,502 @@
+[
+  {
+    "reviewId": "R001",
+    "correctAnswer": "C",
+    "explanation": "Hygroscopic oil absorbs water vapor from the atmosphere. Oxidation, evaporation and temperature-related viscosity changes describe different processes; tightly sealing the container limits moisture pickup."
+  },
+  {
+    "reviewId": "R002",
+    "correctAnswer": "B",
+    "explanation": "Replace the measured removed oil with fresh lubricant of the specified type and viscosity. Reusing recovered oil or adding a complete system oil charge is not the prescribed replacement."
+  },
+  {
+    "reviewId": "R003",
+    "correctAnswer": "C",
+    "explanation": "The manual identifies pump oil changes as routine vacuum-pump maintenance. Follow the pump manufacturer's interval rather than modifying vehicle charge or controls."
+  },
+  {
+    "reviewId": "R004",
+    "correctAnswer": "B",
+    "explanation": "The manual directs waiting for high-side pressure to decrease before connection to reduce release and exposure. Cabin temperature is not the indicated readiness criterion."
+  },
+  {
+    "reviewId": "R005",
+    "correctAnswer": "B",
+    "explanation": "EPA exempts carbon dioxide from the Section 608 venting prohibition but retains Section 609 service requirements. Section 608 equipment credentials do not replace the required MVAC technician certification."
+  },
+  {
+    "reviewId": "R006",
+    "correctAnswer": "C",
+    "explanation": "The manual treats a pressureless system as evidence that its refrigerant has leaked out. Locating the leak is an early service task, rather than assuming an overcharge."
+  },
+  {
+    "reviewId": "R007",
+    "correctAnswer": "D",
+    "explanation": "Display resolution states the size of the displayed steps, not the accuracy of the delivered charge. Calibration must verify actual performance."
+  },
+  {
+    "reviewId": "R008",
+    "correctAnswer": "A",
+    "explanation": "EPA describes shop equipment certification as a one-time requirement. A shop that already certified ownership need not resubmit solely because it acquires new equipment, including equipment for another refrigerant."
+  },
+  {
+    "reviewId": "R009",
+    "correctAnswer": "A",
+    "explanation": "The manual shows lower achievable vacuum-gauge readings as elevation rises. This reflects atmospheric pressure, not necessarily a defective pump."
+  },
+  {
+    "reviewId": "R010",
+    "correctAnswer": "B",
+    "explanation": "The manual notes that dye can take time to reach a leak and warns against adding unnecessary dye when factory dye is present. An immediate negative inspection does not justify an additional full dose."
+  },
+  {
+    "reviewId": "R011",
+    "correctAnswer": "B",
+    "explanation": "EPA requires on-site evidence that equipment operators are properly trained and certified. A driver license or authority to purchase equipment does not establish this qualification."
+  },
+  {
+    "reviewId": "R012",
+    "correctAnswer": "D",
+    "explanation": "The manual distinguishes compatibility testing from cleaning effectiveness. Meeting the material standard does not establish that it will clean a particular component."
+  },
+  {
+    "reviewId": "R013",
+    "correctAnswer": "B",
+    "explanation": "The manual directs the technician to verify hose position through the ferrule inspection opening. Friction at the first rib does not establish that the hose is fully inserted."
+  },
+  {
+    "reviewId": "R014",
+    "correctAnswer": "D",
+    "explanation": "EPA links ozone depletion to increased UVB reaching the surface. The protective function concerns ultraviolet radiation, not removal of atmospheric nitrogen."
+  },
+  {
+    "reviewId": "R015",
+    "correctAnswer": "C",
+    "explanation": "The manual normally requires unplugging recovery equipment before maintenance. Pausing a refrigerant cycle does not disconnect electrical power."
+  },
+  {
+    "reviewId": "R016",
+    "correctAnswer": "C",
+    "explanation": "Section 609 treats goods or services received in exchange for a repair as consideration. Payment need not be cash, and exchanging tools does not turn the repair into refrigerant resale."
+  },
+  {
+    "reviewId": "R017",
+    "correctAnswer": "A",
+    "explanation": "The manual states that mixed refrigerants cannot be separated by recycling machines. The mixture requires appropriate off-site reclamation or destruction instead of normal recycling for reuse."
+  },
+  {
+    "reviewId": "R018",
+    "correctAnswer": "D",
+    "explanation": "The manual says the machine locks out operations other than recovery or re-evacuation after a detected leak. It does not permit completing the charge as a way to confirm the leak."
+  },
+  {
+    "reviewId": "R019",
+    "correctAnswer": "D",
+    "explanation": "The manual requires eye protection when servicing A/C systems or handling refrigerant. Ordinary lenses or a covering that leaves the eyes exposed do not establish adequate protection."
+  },
+  {
+    "reviewId": "R020",
+    "correctAnswer": "B",
+    "explanation": "EPA permits either Section 609 or Section 608 Type II for MVAC-like appliances. Type I and Type III cover different equipment classes."
+  },
+  {
+    "reviewId": "R021",
+    "correctAnswer": "B",
+    "explanation": "The regulation identifies J3030 for equipment designed for both refrigerants. The other standards address different recovery or identification functions and do not establish this dual-refrigerant RRR capability."
+  },
+  {
+    "reviewId": "R022",
+    "correctAnswer": "A",
+    "explanation": "Ground-level ozone harms breathing and contributes to smog. Ozone high in the stratosphere instead protects against ultraviolet radiation."
+  },
+  {
+    "reviewId": "R023",
+    "correctAnswer": "D",
+    "explanation": "Stationary-system refrigerant can carry acids and contaminants that automotive recycling equipment does not remove. A reclaimer must establish the required purity before it is used in an MVAC."
+  },
+  {
+    "reviewId": "R024",
+    "correctAnswer": "C",
+    "explanation": "A limited charge can permit leak detection but does not establish an appropriate operating charge. The manual warns against operating the compressor without the specified quantity."
+  },
+  {
+    "reviewId": "R025",
+    "correctAnswer": "C",
+    "explanation": "The disposal rule restricts such sales to a Section 609-certified technician. Container choice or private-vehicle use does not substitute for the required credential."
+  },
+  {
+    "reviewId": "R026",
+    "correctAnswer": "D",
+    "explanation": "Cooling during recovery slows the release of refrigerant from the accumulator contents. An accumulator is associated with an orifice-tube system, so an expansion-valve explanation confuses different system designs."
+  },
+  {
+    "reviewId": "R027",
+    "correctAnswer": "C",
+    "explanation": "The manual warns that high-temperature surfaces as well as flames can decompose refrigerant into hazardous products. An open flame is not necessary for that hazard."
+  },
+  {
+    "reviewId": "R028",
+    "correctAnswer": "C",
+    "explanation": "Section 82.42 requires entry and access to the required records after the representative presents credentials. Customer permission or an annual reporting date is not the condition stated in this rule."
+  },
+  {
+    "reviewId": "R029",
+    "correctAnswer": "C",
+    "explanation": "The incorporated J2788 standard limits liquid fill to 80 percent of the tank rated volume at 21 degrees Celsius. A percentage of gross weight is a different measurement and cannot be substituted."
+  },
+  {
+    "reviewId": "R030",
+    "correctAnswer": "D",
+    "explanation": "The manual specifies detecting a leak as small as 0.15 ounce per year. The older 0.5-ounce figure belongs to less sensitive detector guidance, not this requirement."
+  },
+  {
+    "reviewId": "R031",
+    "correctAnswer": "D",
+    "explanation": "The permitted range is 600 through 630 grams. A plus-only tolerance does not allow the same amount below the nominal value."
+  },
+  {
+    "reviewId": "R032",
+    "correctAnswer": "B",
+    "explanation": "An accurate recharge uses the specified refrigerant weight. System pressures and cooling observations do not measure how much refrigerant entered the circuit."
+  },
+  {
+    "reviewId": "R033",
+    "correctAnswer": "C",
+    "explanation": "Recovery-only equipment extracts refrigerant but does not recycle it. The recovered fluid needs the required processing before reuse."
+  },
+  {
+    "reviewId": "R034",
+    "correctAnswer": "D",
+    "explanation": "Section 82.32 permits transporting approved equipment to other service locations. It retains the requirements that would apply to the same work on-site."
+  },
+  {
+    "reviewId": "R035",
+    "correctAnswer": "B",
+    "explanation": "The described procedure places a sensitive detector at the center of a floor outlet with the blower on low and A/C off. This checks for refrigerant entering the passenger-air path."
+  },
+  {
+    "reviewId": "R036",
+    "correctAnswer": "D",
+    "explanation": "The rule requires a prominent notice about the certification restriction on those sales. General servicing advice does not replace the required purchaser notice."
+  },
+  {
+    "reviewId": "R037",
+    "correctAnswer": "A",
+    "explanation": "Extended atmospheric exposure can saturate the desiccant. Replacing the moisture-control material addresses that condition; an electrical switch does not."
+  },
+  {
+    "reviewId": "R038",
+    "correctAnswer": "B",
+    "explanation": "The manual identifies small valve-core openings as restrictions between the circuit and service hose. Moisture can prolong evacuation, but the restriction explains why the local gauge reading gets ahead of the system vacuum."
+  },
+  {
+    "reviewId": "R039",
+    "correctAnswer": "C",
+    "explanation": "J2843 equipment can use input from an external J2912-compliant identifier through its interface. A label states the intended contents, not their measured identity or purity."
+  },
+  {
+    "reviewId": "R040",
+    "correctAnswer": "B",
+    "explanation": "Overcharge can produce high operating pressure, especially in hot conditions. The high-side pressure control may stop operation to protect the system."
+  },
+  {
+    "reviewId": "R041",
+    "correctAnswer": "A",
+    "explanation": "EPA requires the obsolete information to be removed or covered by the new label. Information that cannot be covered must be permanently rendered unreadable."
+  },
+  {
+    "reviewId": "R042",
+    "correctAnswer": "B",
+    "explanation": "Cleaning the exterior before disassembly reduces the chance of introducing dirt into the circuit. Waiting until after the joint is open loses that protection."
+  },
+  {
+    "reviewId": "R043",
+    "correctAnswer": "D",
+    "explanation": "Section 82.36 requires certification by EPA or an approved independent standards-testing organization. A warranty or advertised recovery rate is not that certification."
+  },
+  {
+    "reviewId": "R044",
+    "correctAnswer": "C",
+    "explanation": "EPA lists hydrocarbon refrigerants as unacceptable for MVAC use. The other listed refrigerants can be acceptable when their particular use conditions are met."
+  },
+  {
+    "reviewId": "R045",
+    "correctAnswer": "C",
+    "explanation": "Section 82.32 permits the specified arrangement where the recycler is owned by the person owning the recovery-only equipment and owning or operating the extraction establishment. A generic business license is insufficient."
+  },
+  {
+    "reviewId": "R046",
+    "correctAnswer": "C",
+    "explanation": "An empty supply cylinder is not automatically a recovery container. It must be approved for refilling; the prior contents or their purity do not establish that approval."
+  },
+  {
+    "reviewId": "R047",
+    "correctAnswer": "A",
+    "explanation": "The manual calls for impervious gloves to prevent PAG contact with skin. Absorbent or loosely woven material can retain or transmit the liquid instead."
+  },
+  {
+    "reviewId": "R048",
+    "correctAnswer": "A",
+    "explanation": "The manual describes testing for compatibility and preservation of lubricant properties at proper doses. Compatibility is not a universal dose specification or a leak repair."
+  },
+  {
+    "reviewId": "R049",
+    "correctAnswer": "D",
+    "explanation": "Recovered refrigerant must be recycled or reclaimed before reuse, including in its original vehicle. Identification or partial cleaning alone does not replace that processing."
+  },
+  {
+    "reviewId": "R050",
+    "correctAnswer": "A",
+    "explanation": "A facility that only charges MVACs still performs service involving refrigerant. The rule expressly includes the requirement to purchase approved refrigerant recycling equipment."
+  },
+  {
+    "reviewId": "R051",
+    "correctAnswer": "A",
+    "explanation": "EPA specifically restricts CFC-12 containers under 20 pounds to Section 609-certified purchasers, apart from the resale exception. The substitute-refrigerant DIY exception does not apply to CFC-12."
+  },
+  {
+    "reviewId": "R052",
+    "correctAnswer": "C",
+    "explanation": "The manual specifies minimum length, three wires, grounding and at least 14 AWG conductor size. An adapter does not turn a two-wire cord into a grounded three-wire supply."
+  },
+  {
+    "reviewId": "R053",
+    "correctAnswer": "D",
+    "explanation": "The manual calls for further recovery when pressure returns above vacuum after the pause. The returning pressure means the initial pull did not remove all recoverable refrigerant."
+  },
+  {
+    "reviewId": "R054",
+    "correctAnswer": "A",
+    "explanation": "Refrigerant retained in service hoses affects delivered charge. Where the machine supports it, its hose-length setting must match the installed hoses."
+  },
+  {
+    "reviewId": "R055",
+    "correctAnswer": "A",
+    "explanation": "J2788 exempts ASME tanks defined in UL 1963 from its retesting requirement. On-site use, virgin contents or a replaced relief valve does not create that exemption for a DOT cylinder."
+  },
+  {
+    "reviewId": "R056",
+    "correctAnswer": "D",
+    "explanation": "EPA excludes HCFC-22 bus air conditioning from MVAC and MVAC-like classifications. It is high-pressure equipment covered by Section 608 Type II."
+  },
+  {
+    "reviewId": "R057",
+    "correctAnswer": "B",
+    "explanation": "The manual requires the manufacturer's high-voltage safety procedure before repairs. Refrigerant recovery or a low-voltage blower fuse does not establish isolation of the compressor circuit."
+  },
+  {
+    "reviewId": "R058",
+    "correctAnswer": "B",
+    "explanation": "Some fuel-injection service ports share dimensions with a CFC-12 service port. Mechanical fit alone does not establish that the hose is connected to the refrigerant circuit."
+  },
+  {
+    "reviewId": "R059",
+    "correctAnswer": "B",
+    "explanation": "Global warming potential compares climate effects against carbon dioxide. It is not a measure of refrigerant pressure, ignition temperature or ozone depletion."
+  },
+  {
+    "reviewId": "R060",
+    "correctAnswer": "D",
+    "explanation": "The MVAC definition covers cooling for drivers or passengers. Hermetically sealed refrigerated cargo systems are excluded and follow different requirements."
+  },
+  {
+    "reviewId": "R061",
+    "correctAnswer": "C",
+    "explanation": "The manual identifies the service-port cap as the primary seal. Reinstall the correct cap with an undamaged seal after service."
+  },
+  {
+    "reviewId": "R062",
+    "correctAnswer": "A",
+    "explanation": "HFC-134a can become combustible when mixed with air under certain elevated-pressure conditions. Its normal nonflammability does not make compressed-air testing acceptable."
+  },
+  {
+    "reviewId": "R063",
+    "correctAnswer": "B",
+    "explanation": "The standard links hose and seal maintenance to preventing excess air entering during recovery. Under vacuum, the pressure difference can pull surrounding air inward."
+  },
+  {
+    "reviewId": "R064",
+    "correctAnswer": "B",
+    "explanation": "Air movement from a running vehicle can carry leaking refrigerant away from the probe. Switching the engine off improves conditions for locating the leak."
+  },
+  {
+    "reviewId": "R065",
+    "correctAnswer": "A",
+    "explanation": "Section 609 requires an on-site record of the receiving facility name and address, retained for three years. It does not substitute a quantity-by-vehicle log for identifying that destination."
+  },
+  {
+    "reviewId": "R066",
+    "correctAnswer": "C",
+    "explanation": "EPA allows employer purchases with written evidence of employing a properly certified technician. A future training booking does not show that a qualified employee is already employed."
+  },
+  {
+    "reviewId": "R067",
+    "correctAnswer": "A",
+    "explanation": "The manual cautions against cleaning solvents during electronic leak detection. A clean cloth removes surface dirt without adding chemicals that may interfere with the detector."
+  },
+  {
+    "reviewId": "R068",
+    "correctAnswer": "A",
+    "explanation": "The manual describes stopping the charging process when the vacuum-decay limit is exceeded. Locate and repair the leak before attempting to continue."
+  },
+  {
+    "reviewId": "R069",
+    "correctAnswer": "C",
+    "explanation": "An initially empty collection reservoir lets the technician determine how much oil this recovery removed. Oil left from an earlier job would distort that measurement."
+  },
+  {
+    "reviewId": "R070",
+    "correctAnswer": "C",
+    "explanation": "The specified glasses enhance fluorescence and protect against UV exposure. They do not justify looking directly at the lamp."
+  },
+  {
+    "reviewId": "R071",
+    "correctAnswer": "B",
+    "explanation": "Residual solvent can impair lubrication by diluting oil. Evacuation may not remove all solvent, depending on its properties."
+  },
+  {
+    "reviewId": "R072",
+    "correctAnswer": "C",
+    "explanation": "EPA permits the exception for containers designed to hold two pounds or less with required unique fittings and self-sealing valves. A larger container or a piercing-only closure does not meet those conditions."
+  },
+  {
+    "reviewId": "R073",
+    "correctAnswer": "D",
+    "explanation": "The manual describes counterfeit contents even in authentic-looking cylinders. Verification protects the shop supply rather than relying entirely on packaging."
+  },
+  {
+    "reviewId": "R074",
+    "correctAnswer": "A",
+    "explanation": "The manual identifies impaired lubricant circulation as a consequence of undercharge. Poor cooling is therefore not the only possible result."
+  },
+  {
+    "reviewId": "R075",
+    "correctAnswer": "A",
+    "explanation": "EPA distinguishes restrictions on newly manufactured vehicles from servicing existing MVACs. The transition rule does not mandate converting an existing HFC-134a vehicle."
+  },
+  {
+    "reviewId": "R076",
+    "correctAnswer": "A",
+    "explanation": "SNAP decisions are specific to an end use and applicable conditions. Acceptance in a different sector does not authorize MVAC use."
+  },
+  {
+    "reviewId": "R077",
+    "correctAnswer": "B",
+    "explanation": "Excess oil can coat heat-exchanger interiors and impede heat transfer. It can also cause mechanical problems, so more lubricant is not automatically beneficial."
+  },
+  {
+    "reviewId": "R078",
+    "correctAnswer": "C",
+    "explanation": "The retrofit use condition requires a high-pressure cutoff for a system that can vent through a pressure-relief device. Low-pressure cycling serves a different purpose."
+  },
+  {
+    "reviewId": "R079",
+    "correctAnswer": "A",
+    "explanation": "The manual calls for a new evaporator designed for the refrigerant and complying with SAE J2842. Its safety requirements are not established merely by physical fit."
+  },
+  {
+    "reviewId": "R080",
+    "correctAnswer": "A",
+    "explanation": "After the vacuum check, a partial charge permits a pressurized leak check before the remaining charge is delivered. It supplements rather than replaces the vacuum check."
+  },
+  {
+    "reviewId": "R081",
+    "correctAnswer": "C",
+    "explanation": "Multiply 1.75 by 16 to obtain 28 ounces. Converting only the whole pound gives 16.75; treating the decimal digits as ounces gives 16 plus 75, or 91."
+  },
+  {
+    "reviewId": "R082",
+    "correctAnswer": "B",
+    "explanation": "The incorporated standard specifies liquid-phase withdrawal for recycled refrigerant recharging and transfer. Selecting vapor is not the specified method."
+  },
+  {
+    "reviewId": "R083",
+    "correctAnswer": "A",
+    "explanation": "The incorporated J2851 standard covers contaminated-refrigerant recovery equipment. J2844 concerns new refrigerant and containers, J2297 dye compatibility, and J2842 evaporators."
+  },
+  {
+    "reviewId": "R084",
+    "correctAnswer": "D",
+    "explanation": "J2788 requires desiccant replacement and an identification system confirming installation of a new filter. Oil draining, air purging and hose evacuation do not restore exhausted desiccant capacity."
+  },
+  {
+    "reviewId": "R085",
+    "correctAnswer": "B",
+    "explanation": "EPA describes HFO-1234yf as mildly flammable. Its classification calls for appropriate equipment and procedures, not unrestricted substitution or assumptions based on propane."
+  },
+  {
+    "reviewId": "R086",
+    "correctAnswer": "A",
+    "explanation": "EPA identifies HFC-134a as a potent greenhouse gas. Lack of ozone-depletion potential does not mean that its release has no climate impact."
+  },
+  {
+    "reviewId": "R087",
+    "correctAnswer": "B",
+    "explanation": "The manual requires a detector that responds to HFO-1234yf and meets the applicable performance standard. A refrigerant scale or pressure calculation cannot locate an escaping-vapor leak."
+  },
+  {
+    "reviewId": "R088",
+    "correctAnswer": "A",
+    "explanation": "Electric compressors may require POE or another specified lubricant rather than the PAG used by many other systems. Refrigerant compatibility or a measured viscosity alone does not establish the specified oil type and amount."
+  },
+  {
+    "reviewId": "R089",
+    "correctAnswer": "D",
+    "explanation": "EPA assigns the final disposer responsibility to remove the refrigerant or ensure the customer already removed it. Earlier ownership or service alone does not satisfy that final responsibility."
+  },
+  {
+    "reviewId": "R090",
+    "correctAnswer": "A",
+    "explanation": "The manual warns that excessive heating can make a cylinder liquid-full. Space for expansion is therefore important even when the cylinder was initially filled appropriately."
+  },
+  {
+    "reviewId": "R091",
+    "correctAnswer": "D",
+    "explanation": "The equipment-maintenance guidance calls for inspection and replacement of damaged seals. More tightening or evacuation does not restore a distorted seal."
+  },
+  {
+    "reviewId": "R092",
+    "correctAnswer": "C",
+    "explanation": "The manual places shutoff valves within 12 inches of the vehicle end, often in the coupler. This minimizes the volume that can escape when that connection is opened."
+  },
+  {
+    "reviewId": "R093",
+    "correctAnswer": "B",
+    "explanation": "The manual associates irregular crimps with die mismatch or worn carriers. Incorrect insertion can also damage a joint, but does not explain the specified crimp-shape warning as directly."
+  },
+  {
+    "reviewId": "R094",
+    "correctAnswer": "A",
+    "explanation": "The manual warns against accumulation in low areas. Ventilation must address those locations rather than assuming overhead ventilation removes every pocket."
+  },
+  {
+    "reviewId": "R095",
+    "correctAnswer": "D",
+    "explanation": "The enclosure lets leaking vapor collect before the probe samples it. It is a detection aid, not a repair or a method of pressurizing the circuit."
+  },
+  {
+    "reviewId": "R096",
+    "correctAnswer": "B",
+    "explanation": "The manual highlights tiny internal passages that can retain debris. External fins do not filter contaminants inside the refrigerant circuit."
+  },
+  {
+    "reviewId": "R097",
+    "correctAnswer": "A",
+    "explanation": "EPA identifies HCFC-22 seepage through traditional CFC-12 hoses as the reason for less-permeable replacements. The requirement concerns containment, not hose color."
+  },
+  {
+    "reviewId": "R098",
+    "correctAnswer": "C",
+    "explanation": "The manual compares similar vapor-pressure behavior for the two refrigerants. A pressure reading is not a substitute for identifying the chemical contents."
+  },
+  {
+    "reviewId": "R099",
+    "correctAnswer": "C",
+    "explanation": "EPA allows a standardized connection at the gauge end but requires the appropriate permanent unique fitting where the hose connects to the MVAC or servicing equipment. Swapping refrigerant adapters at that end defeats the rule."
+  },
+  {
+    "reviewId": "R100",
+    "correctAnswer": "D",
+    "explanation": "The manual notes that manufacturers can revise charge specifications after production. Verify applicability and use the current instruction rather than assuming the original label is always current."
+  }
+]

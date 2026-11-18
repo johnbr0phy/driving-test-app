@@ -1,0 +1,1602 @@
+[
+  {
+    "reviewId": "R001",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R002",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R003",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R004",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R005",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R006",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R007",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R008",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R009",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R010",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R011",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R012",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R013",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R014",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R015",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R016",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R017",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R018",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R019",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": "Clarify awkward legal wording: préférer «fixées de sorte qu'elles ne puissent pas être retirées sans être détruites». Current wording repeats the source but can be misparsed."
+  },
+  {
+    "reviewId": "R020",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R021",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R022",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R023",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R024",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R025",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R026",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R027",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R028",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R029",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R030",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R031",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R032",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R033",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R034",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R035",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R036",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R037",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R038",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R039",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R040",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R041",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R042",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R043",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R044",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R045",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R046",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R047",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R048",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R049",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R050",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R051",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R052",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R053",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R054",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R055",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R056",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R057",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R058",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R059",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R060",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R061",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R062",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R063",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R064",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R065",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R066",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R067",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R068",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R069",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R070",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R071",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R072",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R073",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R074",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R075",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R076",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R077",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R078",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R079",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R080",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R081",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R082",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R083",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R084",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R085",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": "Explanation correctly says client; answer D says passager concerné. Align answer with booking client, who may differ from passenger."
+  },
+  {
+    "reviewId": "R086",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R087",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R088",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R089",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R090",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R091",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R092",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R093",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R094",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R095",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R096",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R097",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R098",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R099",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R100",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R101",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R102",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R103",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": "Optional clarity: replace «dangereux pour le siège placé face au dossier» with «dangereux pour l'enfant installé dos à la route»."
+  },
+  {
+    "reviewId": "R104",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R105",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R106",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R107",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R108",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R109",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R110",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R111",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R112",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R113",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R114",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R115",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R116",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R117",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R118",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R119",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R120",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R121",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R122",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R123",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R124",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R125",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R126",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R127",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R128",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R129",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R130",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R131",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R132",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R133",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R134",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R135",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R136",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R137",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R138",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R139",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R140",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R141",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R142",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R143",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R144",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R145",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R146",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R147",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R148",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R149",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R150",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R151",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R152",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R153",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R154",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R155",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R156",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": "Official BPI guide supports rule/date; direct decree text not independently retrieved in this review."
+  },
+  {
+    "reviewId": "R157",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R158",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R159",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R160",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R161",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R162",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R163",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R164",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R165",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R166",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R167",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R168",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R169",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R170",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R171",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R172",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R173",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R174",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R175",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R176",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R177",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R178",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R179",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R180",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R181",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R182",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R183",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R184",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R185",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R186",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R187",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R188",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R189",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R190",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R191",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R192",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R193",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R194",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R195",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R196",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R197",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R198",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R199",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  },
+  {
+    "reviewId": "R200",
+    "read": true,
+    "keyMismatch": false,
+    "calculationMismatch": false,
+    "shuffleSensitiveReference": false,
+    "issue": null
+  }
+]

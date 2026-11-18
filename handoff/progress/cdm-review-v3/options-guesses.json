@@ -1,0 +1,1002 @@
+[
+  {
+    "reviewId": "R001",
+    "guess": "D",
+    "cue": "Only option describing contact with soiled material; salient hygiene hazard."
+  },
+  {
+    "reviewId": "R002",
+    "guess": "D",
+    "cue": "Expanding abbreviations directly improves clarity; other changes are operational."
+  },
+  {
+    "reviewId": "R003",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R004",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R005",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R006",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R007",
+    "guess": "B",
+    "cue": "Clinical plan revision is the broadest outcome-focused evaluation."
+  },
+  {
+    "reviewId": "R008",
+    "guess": "A",
+    "cue": "Qualification requirements sound like a formal personnel standard."
+  },
+  {
+    "reviewId": "R009",
+    "guess": "C",
+    "cue": "Only option explicitly consumed by people; safety distinction."
+  },
+  {
+    "reviewId": "R010",
+    "guess": "A",
+    "cue": "Actual device use demonstrates performance more directly than recall."
+  },
+  {
+    "reviewId": "R011",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R012",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R013",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R014",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R015",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R016",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R017",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R018",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R019",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R020",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R021",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R022",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R023",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R024",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R025",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R026",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R027",
+    "guess": "B",
+    "cue": "Checking the method validates the reliability of an entry."
+  },
+  {
+    "reviewId": "R028",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R029",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R030",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R031",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R032",
+    "guess": "B",
+    "cue": "Source attribution is more relevant to reliable intake data than cost or cart."
+  },
+  {
+    "reviewId": "R033",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R034",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R035",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R036",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R037",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R038",
+    "guess": "D",
+    "cue": "Allows accessible communication and response time; other options emphasize remote speech."
+  },
+  {
+    "reviewId": "R039",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R040",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R041",
+    "guess": "B",
+    "cue": "Target users comparing both blinded versions is the strongest evaluation design."
+  },
+  {
+    "reviewId": "R042",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R043",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R044",
+    "guess": "D",
+    "cue": "Accessible compatible substitutes are actionable support rather than recall."
+  },
+  {
+    "reviewId": "R045",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R046",
+    "guess": "B",
+    "cue": "Sanitizer-specific test kit is a precise measurement tool."
+  },
+  {
+    "reviewId": "R047",
+    "guess": "C",
+    "cue": "Practical selection assesses applied skill rather than recall."
+  },
+  {
+    "reviewId": "R048",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R049",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R050",
+    "guess": "C",
+    "cue": "Authoritative order compared with actual delivery checks end-to-end accuracy."
+  },
+  {
+    "reviewId": "R051",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R052",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R053",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R054",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R055",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R056",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R057",
+    "guess": "A",
+    "cue": "Requested listed substitute suggests an already authorized resident-centered action."
+  },
+  {
+    "reviewId": "R058",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R059",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R060",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R061",
+    "guess": "C",
+    "cue": "Package integrity is the only direct safety concern among commercial checks."
+  },
+  {
+    "reviewId": "R062",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R063",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R064",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R065",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R066",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R067",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R068",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R069",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R070",
+    "guess": "B",
+    "cue": "Demand at the planned price directly addresses commercial viability."
+  },
+  {
+    "reviewId": "R071",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R072",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R073",
+    "guess": "B",
+    "cue": "Dated clinical order appears more authoritative than downstream kitchen records."
+  },
+  {
+    "reviewId": "R074",
+    "guess": "B",
+    "cue": "Common product name provides useful chemical identification."
+  },
+  {
+    "reviewId": "R075",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R076",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R077",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R078",
+    "guess": "C",
+    "cue": "Concrete portion-control method is more corrective than changing goals."
+  },
+  {
+    "reviewId": "R079",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R080",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R081",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R082",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R083",
+    "guess": "A",
+    "cue": "Ingredient verification is a proactive safety check."
+  },
+  {
+    "reviewId": "R084",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R085",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R086",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R087",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R088",
+    "guess": "A",
+    "cue": "Sequenced checklist gives directly usable task guidance."
+  },
+  {
+    "reviewId": "R089",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R090",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R091",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R092",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R093",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R094",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R095",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R096",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R097",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R098",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R099",
+    "guess": "C",
+    "cue": "Mean consumption is a more representative intake outcome than attendance or delivery."
+  },
+  {
+    "reviewId": "R100",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R101",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R102",
+    "guess": "D",
+    "cue": "Explicit qualification under its limits sounds carefully complete."
+  },
+  {
+    "reviewId": "R103",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R104",
+    "guess": "A",
+    "cue": "Clinical order is authoritative for individual diet requirements."
+  },
+  {
+    "reviewId": "R105",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R106",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R107",
+    "guess": "B",
+    "cue": "Specific actionable process correction rather than changing unrelated parameters."
+  },
+  {
+    "reviewId": "R108",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R109",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R110",
+    "guess": "D",
+    "cue": "Denominator definition is a precise measurement-validity concern."
+  },
+  {
+    "reviewId": "R111",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R112",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R113",
+    "guess": "D",
+    "cue": "Rebalancing workload addresses a practical root cause without assuming skill deficit."
+  },
+  {
+    "reviewId": "R114",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R115",
+    "guess": "B",
+    "cue": "Compiled trend directly summarizes intake evidence."
+  },
+  {
+    "reviewId": "R116",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R117",
+    "guess": "B",
+    "cue": "Ordinary production tests transfer of learning to actual work."
+  },
+  {
+    "reviewId": "R118",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R119",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R120",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R121",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R122",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R123",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R124",
+    "guess": "D",
+    "cue": "Additional heating is an actual corrective action rather than documentation."
+  },
+  {
+    "reviewId": "R125",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R126",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R127",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R128",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R129",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R130",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R131",
+    "guess": "B",
+    "cue": "Defined recent period makes recall concrete and specific."
+  },
+  {
+    "reviewId": "R132",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R133",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R134",
+    "guess": "B",
+    "cue": "Meal preparer is a direct source of prior eating-history evidence."
+  },
+  {
+    "reviewId": "R135",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R136",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R137",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R138",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R139",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R140",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R141",
+    "guess": "B",
+    "cue": "Before-and-after intake directly evaluates change."
+  },
+  {
+    "reviewId": "R142",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R143",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R144",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R145",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R146",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R147",
+    "guess": "C",
+    "cue": "Cautious statement limited to stated outcomes avoids unsupported inference."
+  },
+  {
+    "reviewId": "R148",
+    "guess": "B",
+    "cue": "Open-ended question invites explanation of a recent change."
+  },
+  {
+    "reviewId": "R149",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R150",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R151",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R152",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R153",
+    "guess": "A",
+    "cue": "Isolating affected food immediately protects consumers."
+  },
+  {
+    "reviewId": "R154",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R155",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R156",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R157",
+    "guess": "D",
+    "cue": "Completed-record verification sounds like a formal safety assurance step."
+  },
+  {
+    "reviewId": "R158",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R159",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R160",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R161",
+    "guess": "D",
+    "cue": "Consumption per delivered serving measures actual intake rather than provision."
+  },
+  {
+    "reviewId": "R162",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R163",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R164",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R165",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R166",
+    "guess": "A",
+    "cue": "Texture at service reflects the actual diner experience."
+  },
+  {
+    "reviewId": "R167",
+    "guess": "C",
+    "cue": "Speech-language pathologist is the most directly diet/swallowing-related specialist."
+  },
+  {
+    "reviewId": "R168",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R169",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R170",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R171",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R172",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R173",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R174",
+    "guess": "B",
+    "cue": "Recognizing discrepancies is a transferable skill rather than rote procedure."
+  },
+  {
+    "reviewId": "R175",
+    "guess": "A",
+    "cue": "Direct observation can reveal a practical barrier."
+  },
+  {
+    "reviewId": "R176",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R177",
+    "guess": "B",
+    "cue": "Package integrity is the only direct food-safety criterion."
+  },
+  {
+    "reviewId": "R178",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R179",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R180",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R181",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R182",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R183",
+    "guess": "D",
+    "cue": "Drained product weight measures usable food rather than packaging or liquid."
+  },
+  {
+    "reviewId": "R184",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R185",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R186",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R187",
+    "guess": "A",
+    "cue": "Food is variable while lease cost is fixed; economically coherent pairing."
+  },
+  {
+    "reviewId": "R188",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R189",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R190",
+    "guess": "B",
+    "cue": "Potable water is a fundamental safety prerequisite."
+  },
+  {
+    "reviewId": "R191",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R192",
+    "guess": "C",
+    "cue": "Replacement is the only large capital acquisition among repair and service costs."
+  },
+  {
+    "reviewId": "R193",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R194",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R195",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R196",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R197",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R198",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R199",
+    "guess": "B",
+    "cue": "Moving return traffic away from food storage removes a contamination path."
+  },
+  {
+    "reviewId": "R200",
+    "guess": "D",
+    "cue": "Past resolved disagreement elicits behavioral evidence rather than hypothetical ideals."
+  }
+]

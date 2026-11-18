@@ -1,0 +1,15 @@
+[
+  {
+    "id": "R011",
+    "severity": "low",
+    "type": "overbroad rule wording",
+    "finding": "The stem says a covered mortgage and the explanation unconditionally says must receive three business days before consummation. Section 1026.19(f) includes a timeshare timing exception and a bona fide personal financial emergency waiver; covered alone does not exclude these. The intended A remains the correct general-rule answer.",
+    "neededFix": "Add Generally to the stem and Under the general rule to the explanation. Keep the existing answer, consummation definition and distractors; no qualifier list is needed.",
+    "source": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/",
+    "sourceSections": [
+      "1026.19(f)(1)(ii)(A)",
+      "1026.19(f)(1)(ii)(B)",
+      "1026.19(f)(1)(iv)"
+    ]
+  }
+]

@@ -1,0 +1,1602 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "cdmFoodservice",
+    "optionA": "4 inches",
+    "optionB": "6 inches",
+    "optionC": "2 inches",
+    "optionD": "3 inches"
+  },
+  {
+    "reviewId": "R002",
+    "category": "cdmNutrition",
+    "optionA": "A 300 kcal gain in daily energy intake",
+    "optionB": "No net increase in daily energy intake",
+    "optionC": "A 150 kcal gain in daily energy intake",
+    "optionD": "A 150 kcal fall in daily energy intake"
+  },
+  {
+    "reviewId": "R003",
+    "category": "cdmPersonnel",
+    "optionA": "Recognizing discrepancies in output",
+    "optionB": "Estimating quantities from container size",
+    "optionC": "Writing each count on a paper worksheet",
+    "optionD": "Memorizing the previous day's totals"
+  },
+  {
+    "reviewId": "R004",
+    "category": "cdmPersonnel",
+    "optionA": "Individual performance ratings",
+    "optionB": "Position qualification requirements",
+    "optionC": "Weekly work assignments",
+    "optionD": "Daily production instructions"
+  },
+  {
+    "reviewId": "R005",
+    "category": "cdmNutrition",
+    "optionA": "65% of planned lunch portions delivered",
+    "optionB": "65% consumed across all seven lunches",
+    "optionC": "60% consumed at the best meal of the week",
+    "optionD": "70% consumed on the five weekdays only"
+  },
+  {
+    "reviewId": "R006",
+    "category": "cdmPersonnel",
+    "optionA": "Describe your response and the result of a coworker dispute",
+    "optionB": "Describe a dispute you observed between two coworkers",
+    "optionC": "Describe the conflicts most common in your former department",
+    "optionD": "Describe a former employer\u2019s grievance procedure"
+  },
+  {
+    "reviewId": "R007",
+    "category": "cdmPersonnel",
+    "optionA": "Cases versus packs as the purchasing unit",
+    "optionB": "Pounds versus ounces as the weight unit",
+    "optionC": "Minutes versus hours as the time unit",
+    "optionD": "Items versus trays as the counting unit"
+  },
+  {
+    "reviewId": "R008",
+    "category": "cdmSafety",
+    "optionA": "At least 72 hours",
+    "optionB": "At least 24 hours",
+    "optionC": "At least 48 hours",
+    "optionD": "At least 12 hours"
+  },
+  {
+    "reviewId": "R009",
+    "category": "cdmBusiness",
+    "optionA": "Menu forecasts and standard recipes",
+    "optionB": "Purchase orders and vendor price lists",
+    "optionC": "Signed pickup receipts and issue entries",
+    "optionD": "Supplier invoices and payment vouchers"
+  },
+  {
+    "reviewId": "R010",
+    "category": "cdmFoodservice",
+    "optionA": "96 portions",
+    "optionB": "48 portions",
+    "optionC": "64 portions",
+    "optionD": "72 portions"
+  },
+  {
+    "reviewId": "R011",
+    "category": "cdmNutrition",
+    "optionA": "300 mL per meal",
+    "optionB": "400 mL per meal",
+    "optionC": "600 mL per meal",
+    "optionD": "500 mL per meal"
+  },
+  {
+    "reviewId": "R012",
+    "category": "cdmBusiness",
+    "optionA": "$7.00",
+    "optionB": "$3.00",
+    "optionC": "$4.00",
+    "optionD": "$8.00"
+  },
+  {
+    "reviewId": "R013",
+    "category": "cdmSafety",
+    "optionA": "A coffee shop serving the general public",
+    "optionB": "A nursing-home kitchen serving residents",
+    "optionC": "A restaurant serving the general public",
+    "optionD": "A workplace cafeteria serving adults"
+  },
+  {
+    "reviewId": "R014",
+    "category": "cdmNutrition",
+    "optionA": "Milliliters consumed per delivered serving",
+    "optionB": "Scheduled servings that reached residents",
+    "optionC": "Residents requesting a different flavor",
+    "optionD": "Calories listed per unopened carton"
+  },
+  {
+    "reviewId": "R015",
+    "category": "cdmSafety",
+    "optionA": "130\u00b0F",
+    "optionB": "125\u00b0F",
+    "optionC": "135\u00b0F",
+    "optionD": "145\u00b0F"
+  },
+  {
+    "reviewId": "R016",
+    "category": "cdmPersonnel",
+    "optionA": "Observe elevator waits during the shared delivery period",
+    "optionB": "Measure cart-loading time after the kitchen finishes",
+    "optionC": "Compare travel times on an empty corridor after lunch",
+    "optionD": "Count how many carts each transport worker handles"
+  },
+  {
+    "reviewId": "R017",
+    "category": "cdmSafety",
+    "optionA": "Section 3: composition/ingredients",
+    "optionB": "Section 10: stability and reactivity",
+    "optionC": "Section 5: fire-fighting measures",
+    "optionD": "Section 11: toxicological information"
+  },
+  {
+    "reviewId": "R018",
+    "category": "cdmNutrition",
+    "optionA": "Subtract 240 mg sodium per portion",
+    "optionB": "Add 600 mg sodium per portion",
+    "optionC": "Add 240 mg sodium per portion",
+    "optionD": "Keep 180 mg sodium per portion"
+  },
+  {
+    "reviewId": "R019",
+    "category": "cdmPersonnel",
+    "optionA": "One worker for one hour",
+    "optionB": "One worker for two hours",
+    "optionC": "Two workers for one hour",
+    "optionD": "Two workers for two hours"
+  },
+  {
+    "reviewId": "R020",
+    "category": "cdmSafety",
+    "optionA": "The common name of the cleaner",
+    "optionB": "The storage shelf number of the product",
+    "optionC": "The employee name of the mixer",
+    "optionD": "The purchase date of the bulk supply"
+  },
+  {
+    "reviewId": "R021",
+    "category": "cdmFoodservice",
+    "optionA": "95%",
+    "optionB": "15%",
+    "optionC": "85%",
+    "optionD": "90%"
+  },
+  {
+    "reviewId": "R022",
+    "category": "cdmNutrition",
+    "optionA": "The signed order and the actual meal",
+    "optionB": "The assembly list and the dispatch list",
+    "optionC": "The tray card and the production tally",
+    "optionD": "The recipe sheet and the tray label"
+  },
+  {
+    "reviewId": "R023",
+    "category": "cdmFoodservice",
+    "optionA": "5 batches",
+    "optionB": "3 batches",
+    "optionC": "6 batches",
+    "optionD": "4 batches"
+  },
+  {
+    "reviewId": "R024",
+    "category": "cdmSafety",
+    "optionA": "Thawing during the cooking process",
+    "optionB": "Running-water thawing under its limits",
+    "optionC": "Refrigerator thawing at 41\u00b0F",
+    "optionD": "Microwave thawing"
+  },
+  {
+    "reviewId": "R025",
+    "category": "cdmBusiness",
+    "optionA": "It remained at $6",
+    "optionB": "It fell from $7.20 to $6",
+    "optionC": "It rose from $5 to $6",
+    "optionD": "It rose from $6 to $7.20"
+  },
+  {
+    "reviewId": "R026",
+    "category": "cdmBusiness",
+    "optionA": "Retain food cost; reduce lease 10%",
+    "optionB": "Reduce food 10%; reduce lease 10%",
+    "optionC": "Reduce food 10%; retain lease cost",
+    "optionD": "Retain food cost; retain lease cost"
+  },
+  {
+    "reviewId": "R027",
+    "category": "cdmBusiness",
+    "optionA": "Buying saves $70 per batch",
+    "optionB": "Buying saves $10 per batch",
+    "optionC": "Making saves $10 per batch",
+    "optionD": "Making saves $70 per batch"
+  },
+  {
+    "reviewId": "R028",
+    "category": "cdmBusiness",
+    "optionA": "Offer paid trial orders at several stated prices",
+    "optionB": "Repeat free tastings with a larger office group",
+    "optionC": "Ask employees to rank the flavors they sampled",
+    "optionD": "Compare cafeteria menu variety at nearby offices"
+  },
+  {
+    "reviewId": "R029",
+    "category": "cdmPersonnel",
+    "optionA": "The newest vacancy at its entry wage",
+    "optionB": "The position that would have been attained",
+    "optionC": "The most senior vacancy in the department",
+    "optionD": "The former position at the former wage"
+  },
+  {
+    "reviewId": "R030",
+    "category": "cdmFoodservice",
+    "optionA": "The supplier payment schedule",
+    "optionB": "The batch quantity calculation",
+    "optionC": "The resident diet prescription",
+    "optionD": "The daily meal-service target time"
+  },
+  {
+    "reviewId": "R031",
+    "category": "cdmSafety",
+    "optionA": "90 days",
+    "optionB": "15 days",
+    "optionC": "60 days",
+    "optionD": "30 days"
+  },
+  {
+    "reviewId": "R032",
+    "category": "cdmSafety",
+    "optionA": "Stand uncovered for 1 minute",
+    "optionB": "Stand uncovered for 2 minutes",
+    "optionC": "Stand covered for 1 minute",
+    "optionD": "Stand covered for 2 minutes"
+  },
+  {
+    "reviewId": "R033",
+    "category": "cdmBusiness",
+    "optionA": "Expected edible yield",
+    "optionB": "Expected minimum order frequency",
+    "optionC": "Expected delivery lead time",
+    "optionD": "Expected invoice payment interval"
+  },
+  {
+    "reviewId": "R034",
+    "category": "cdmPersonnel",
+    "optionA": "Define AP weight beside a purchased-versus-trimmed example",
+    "optionB": "Enlarge every number in the ingredient column",
+    "optionC": "Add photographs of the finished plated dish",
+    "optionD": "Move the ingredient list before the preparation steps"
+  },
+  {
+    "reviewId": "R035",
+    "category": "cdmPersonnel",
+    "optionA": "Outsource the second cook\u2019s vegetable preparation",
+    "optionB": "Transfer the first cook to the cold-prep room",
+    "optionC": "Add a second vegetable station to the kitchen",
+    "optionD": "Move her station reservation to 9:30"
+  },
+  {
+    "reviewId": "R036",
+    "category": "cdmFoodservice",
+    "optionA": "Fat rendering",
+    "optionB": "Enzymatic browning",
+    "optionC": "Evaporative cooling",
+    "optionD": "Carryover cooking"
+  },
+  {
+    "reviewId": "R037",
+    "category": "cdmPersonnel",
+    "optionA": "Event portions versus extra labor hours",
+    "optionB": "Staff absences versus overtime hours",
+    "optionC": "Resident meals versus scheduled labor hours",
+    "optionD": "Employee experience versus rework hours"
+  },
+  {
+    "reviewId": "R038",
+    "category": "cdmFoodservice",
+    "optionA": "100 lunches",
+    "optionB": "92 lunches",
+    "optionC": "128 lunches",
+    "optionD": "108 lunches"
+  },
+  {
+    "reviewId": "R039",
+    "category": "cdmNutrition",
+    "optionA": "Compare admission and current weights",
+    "optionB": "Obtain a monthly food-frequency history",
+    "optionC": "Review the prescribed nutrient targets",
+    "optionD": "Observe use of meal containers"
+  },
+  {
+    "reviewId": "R040",
+    "category": "cdmPersonnel",
+    "optionA": "50%",
+    "optionB": "25%",
+    "optionC": "75%",
+    "optionD": "100%"
+  },
+  {
+    "reviewId": "R041",
+    "category": "cdmPersonnel",
+    "optionA": "20 employees within the qualifying radius",
+    "optionB": "35 employees within the qualifying radius",
+    "optionC": "55 employees within the qualifying radius",
+    "optionD": "0 employees within the qualifying radius"
+  },
+  {
+    "reviewId": "R042",
+    "category": "cdmSafety",
+    "optionA": "Stage shelf-stable ingredients by recipe",
+    "optionB": "Standardize the emergency meal assembly order",
+    "optionC": "Assign activation authority and backups on each shift",
+    "optionD": "Practice portioning the emergency entrees"
+  },
+  {
+    "reviewId": "R043",
+    "category": "cdmBusiness",
+    "optionA": "B costs less per edible pound",
+    "optionB": "Both cost $4 per edible pound",
+    "optionC": "A costs less per edible pound",
+    "optionD": "Both cost $3.30 per edible pound"
+  },
+  {
+    "reviewId": "R044",
+    "category": "cdmNutrition",
+    "optionA": "Overweight",
+    "optionB": "Healthy weight",
+    "optionC": "Class 1 obesity",
+    "optionD": "Underweight"
+  },
+  {
+    "reviewId": "R045",
+    "category": "cdmPersonnel",
+    "optionA": "All individuals selected for that same cook job",
+    "optionB": "All applicants interviewed for any kitchen vacancy",
+    "optionC": "All current staff in the foodservice department",
+    "optionD": "All candidates selected for unrelated office jobs"
+  },
+  {
+    "reviewId": "R046",
+    "category": "cdmFoodservice",
+    "optionA": "Keep fifty servings at 5 ounces",
+    "optionB": "Increase the batch to 250 ounces",
+    "optionC": "Use a 4-ounce portion measure",
+    "optionD": "Lower the serving target to forty"
+  },
+  {
+    "reviewId": "R047",
+    "category": "cdmNutrition",
+    "optionA": "250 kcal",
+    "optionB": "370 kcal",
+    "optionC": "260 kcal",
+    "optionD": "310 kcal"
+  },
+  {
+    "reviewId": "R048",
+    "category": "cdmPersonnel",
+    "optionA": "18 months",
+    "optionB": "29 months",
+    "optionC": "36 months",
+    "optionD": "24 months"
+  },
+  {
+    "reviewId": "R049",
+    "category": "cdmNutrition",
+    "optionA": "Calcium and vitamin D",
+    "optionB": "Potassium and vitamin C",
+    "optionC": "Folate and vitamin K",
+    "optionD": "Iron and vitamin B12"
+  },
+  {
+    "reviewId": "R050",
+    "category": "cdmPersonnel",
+    "optionA": "Morning: 30% versus evening: 5%",
+    "optionB": "Evening: 15% versus morning: 10%",
+    "optionC": "Both shifts: 20%",
+    "optionD": "Evening: 30% versus morning: 5%"
+  },
+  {
+    "reviewId": "R051",
+    "category": "cdmPersonnel",
+    "optionA": "Revise the recipe ingredient weights",
+    "optionB": "Repeat the equipment demonstration",
+    "optionC": "Replace the portioning equipment",
+    "optionD": "Rebalance the competing workload"
+  },
+  {
+    "reviewId": "R052",
+    "category": "cdmFoodservice",
+    "optionA": "2.5",
+    "optionB": "4.0",
+    "optionC": "1.5",
+    "optionD": "0.4"
+  },
+  {
+    "reviewId": "R053",
+    "category": "cdmPersonnel",
+    "optionA": "10:25, 10:35, 10:20, 10:38, 10:40",
+    "optionB": "10:25, 10:30, 10:40, 10:38, 10:35",
+    "optionC": "10:35, 10:30, 10:40, 10:28, 10:45",
+    "optionD": "10:25, 10:30, 10:20, 10:28, 10:40"
+  },
+  {
+    "reviewId": "R054",
+    "category": "cdmBusiness",
+    "optionA": "$1200",
+    "optionB": "$900",
+    "optionC": "$75",
+    "optionD": "$24900"
+  },
+  {
+    "reviewId": "R055",
+    "category": "cdmBusiness",
+    "optionA": "$0.45",
+    "optionB": "$5.80",
+    "optionC": "$3.60",
+    "optionD": "$7.20"
+  },
+  {
+    "reviewId": "R056",
+    "category": "cdmBusiness",
+    "optionA": "6 meals per labor hour",
+    "optionB": "9 meals per labor hour",
+    "optionC": "12 meals per labor hour",
+    "optionD": "8 meals per labor hour"
+  },
+  {
+    "reviewId": "R057",
+    "category": "cdmNutrition",
+    "optionA": "Only the last two weekly weights",
+    "optionB": "Those closest to 30 and 180 days earlier",
+    "optionC": "The lowest weights in the previous year",
+    "optionD": "The highest weights in the previous month"
+  },
+  {
+    "reviewId": "R058",
+    "category": "cdmFoodservice",
+    "optionA": "45 portions",
+    "optionB": "62 portions",
+    "optionC": "40 portions",
+    "optionD": "55 portions"
+  },
+  {
+    "reviewId": "R059",
+    "category": "cdmSafety",
+    "optionA": "135\u00b0F",
+    "optionB": "41\u00b0F",
+    "optionC": "165\u00b0F",
+    "optionD": "130\u00b0F"
+  },
+  {
+    "reviewId": "R060",
+    "category": "cdmFoodservice",
+    "optionA": "65 regular; 30 modified",
+    "optionB": "65 regular; 35 modified",
+    "optionC": "75 regular; 25 modified",
+    "optionD": "70 regular; 35 modified"
+  },
+  {
+    "reviewId": "R061",
+    "category": "cdmSafety",
+    "optionA": "Planning verification activities",
+    "optionB": "Hazard analysis",
+    "optionC": "Designing monitoring procedures",
+    "optionD": "Selecting critical limits"
+  },
+  {
+    "reviewId": "R062",
+    "category": "cdmSafety",
+    "optionA": "Case Y",
+    "optionB": "Case W",
+    "optionC": "Case X",
+    "optionD": "Case Z"
+  },
+  {
+    "reviewId": "R063",
+    "category": "cdmFoodservice",
+    "optionA": "Demand exceeded the forecast",
+    "optionB": "Production lost 40 ounces",
+    "optionC": "Batch yield fell below plan",
+    "optionD": "Portions exceeded the standard"
+  },
+  {
+    "reviewId": "R064",
+    "category": "cdmFoodservice",
+    "optionA": "3 cycles",
+    "optionB": "1 cycle",
+    "optionC": "4 cycles",
+    "optionD": "2 cycles"
+  },
+  {
+    "reviewId": "R065",
+    "category": "cdmFoodservice",
+    "optionA": "30 lb",
+    "optionB": "19.2 lb",
+    "optionC": "36 lb",
+    "optionD": "24 lb"
+  },
+  {
+    "reviewId": "R066",
+    "category": "cdmNutrition",
+    "optionA": "90 mL",
+    "optionB": "120 mL",
+    "optionC": "60 mL",
+    "optionD": "180 mL"
+  },
+  {
+    "reviewId": "R067",
+    "category": "cdmFoodservice",
+    "optionA": "Number of staff completing tray-check training",
+    "optionB": "Incorrect trays as a percentage of trays served",
+    "optionC": "Number of incorrect trays found each day",
+    "optionD": "Number of tray checks completed each day"
+  },
+  {
+    "reviewId": "R068",
+    "category": "cdmFoodservice",
+    "optionA": "Drained product weight",
+    "optionB": "Empty container weight",
+    "optionC": "Gross shipping weight",
+    "optionD": "Total can fill weight"
+  },
+  {
+    "reviewId": "R069",
+    "category": "cdmBusiness",
+    "optionA": "3 years",
+    "optionB": "4 years",
+    "optionC": "5 years",
+    "optionD": "2 years"
+  },
+  {
+    "reviewId": "R070",
+    "category": "cdmSafety",
+    "optionA": "Schedule smaller cooking batches before service",
+    "optionB": "Space the pans to expose their sides to cold air",
+    "optionC": "Prechill empty pans before the initial fill",
+    "optionD": "Stir more frequently during the first cooling stage"
+  },
+  {
+    "reviewId": "R071",
+    "category": "cdmBusiness",
+    "optionA": "55 units",
+    "optionB": "25 units",
+    "optionC": "40 units",
+    "optionD": "65 units"
+  },
+  {
+    "reviewId": "R072",
+    "category": "cdmFoodservice",
+    "optionA": "Route A loses 30\u00b0F",
+    "optionB": "Route B loses 20\u00b0F",
+    "optionC": "Route B loses 10\u00b0F",
+    "optionD": "Route A loses 20\u00b0F"
+  },
+  {
+    "reviewId": "R073",
+    "category": "cdmSafety",
+    "optionA": "1 p.m.",
+    "optionB": "4 p.m.",
+    "optionC": "6 p.m.",
+    "optionD": "2 p.m."
+  },
+  {
+    "reviewId": "R074",
+    "category": "cdmBusiness",
+    "optionA": "Offer A, $1.33 per purchased unit",
+    "optionB": "Offer B, $2.70 per needed unit",
+    "optionC": "Offer B, $1.80 per purchased unit",
+    "optionD": "Offer A, $2 per needed unit"
+  },
+  {
+    "reviewId": "R075",
+    "category": "cdmBusiness",
+    "optionA": "Include dishroom hours in B\u2019s denominator",
+    "optionB": "Exclude supervisory hours from A\u2019s denominator",
+    "optionC": "Include overtime hours in A\u2019s denominator",
+    "optionD": "Exclude leave hours from B\u2019s denominator"
+  },
+  {
+    "reviewId": "R076",
+    "category": "cdmPersonnel",
+    "optionA": "6 workweeks",
+    "optionB": "26 workweeks",
+    "optionC": "18 workweeks",
+    "optionD": "12 workweeks"
+  },
+  {
+    "reviewId": "R077",
+    "category": "cdmBusiness",
+    "optionA": "$6.00",
+    "optionB": "$3.12",
+    "optionC": "$8.00",
+    "optionD": "$7.20"
+  },
+  {
+    "reviewId": "R078",
+    "category": "cdmSafety",
+    "optionA": "The critical limit",
+    "optionB": "The verification schedule",
+    "optionC": "The monitoring frequency",
+    "optionD": "The corrective action"
+  },
+  {
+    "reviewId": "R079",
+    "category": "cdmPersonnel",
+    "optionA": "Pilot complete; rota approved; coordinator starts rollout Friday",
+    "optionB": "Pilot incomplete; supervisor repeats the unchanged rota",
+    "optionC": "Pilot complete; revision assigned; rollout awaiting verification",
+    "optionD": "Revision complete; manager approval already obtained"
+  },
+  {
+    "reviewId": "R080",
+    "category": "cdmPersonnel",
+    "optionA": "Hours actually worked",
+    "optionB": "Worked hours plus paid sick leave",
+    "optionC": "All hours listed on payroll",
+    "optionD": "Worked hours plus paid vacation"
+  },
+  {
+    "reviewId": "R081",
+    "category": "cdmBusiness",
+    "optionA": "Replacement by $15000",
+    "optionB": "Replacement by $3000",
+    "optionC": "Repair by $3000",
+    "optionD": "Repair by $18000"
+  },
+  {
+    "reviewId": "R082",
+    "category": "cdmPersonnel",
+    "optionA": "Friday",
+    "optionB": "Monday",
+    "optionC": "Wednesday",
+    "optionD": "Tuesday"
+  },
+  {
+    "reviewId": "R083",
+    "category": "cdmBusiness",
+    "optionA": "A $600 replacement door gasket",
+    "optionB": "A $1200 refrigerator repair",
+    "optionC": "A $7200 refrigerator replacement",
+    "optionD": "A $900 annual service agreement"
+  },
+  {
+    "reviewId": "R084",
+    "category": "cdmPersonnel",
+    "optionA": "The timing target was met",
+    "optionB": "The accuracy target was missed",
+    "optionC": "The task was completed early every shift",
+    "optionD": "The timing target was missed"
+  },
+  {
+    "reviewId": "R085",
+    "category": "cdmFoodservice",
+    "optionA": "11:00 a.m.",
+    "optionB": "10:45 a.m.",
+    "optionC": "10:30 a.m.",
+    "optionD": "11:15 a.m."
+  },
+  {
+    "reviewId": "R086",
+    "category": "cdmFoodservice",
+    "optionA": "Departure-to-arrival travel",
+    "optionB": "Ingredient receiving time",
+    "optionC": "Recipe cooking time",
+    "optionD": "Ready-to-depart waiting"
+  },
+  {
+    "reviewId": "R087",
+    "category": "cdmSafety",
+    "optionA": "The nutrition-energy panel",
+    "optionB": "The package-yield statement",
+    "optionC": "The storage-temperature instruction",
+    "optionD": "The ingredient list"
+  },
+  {
+    "reviewId": "R088",
+    "category": "cdmSafety",
+    "optionA": "145\u00b0F for 15 seconds",
+    "optionB": "155\u00b0F for 17 seconds",
+    "optionC": "165\u00b0F, instantaneous",
+    "optionD": "135\u00b0F"
+  },
+  {
+    "reviewId": "R089",
+    "category": "cdmFoodservice",
+    "optionA": "After production before service",
+    "optionB": "During supplier receiving",
+    "optionC": "After food reaches diners",
+    "optionD": "During raw preparation"
+  },
+  {
+    "reviewId": "R090",
+    "category": "cdmNutrition",
+    "optionA": "The method behind today's entry",
+    "optionB": "The interval between prior measurements",
+    "optionC": "The meal percentage from yesterday",
+    "optionD": "The date of the last diet review"
+  },
+  {
+    "reviewId": "R091",
+    "category": "cdmFoodservice",
+    "optionA": "Reduction",
+    "optionB": "Dredging",
+    "optionC": "Blanching",
+    "optionD": "Emulsification"
+  },
+  {
+    "reviewId": "R092",
+    "category": "cdmNutrition",
+    "optionA": "An occurrence every day",
+    "optionB": "Two occurrences on separate days",
+    "optionC": "Three occurrences on separate days",
+    "optionD": "One occurrence"
+  },
+  {
+    "reviewId": "R093",
+    "category": "cdmPersonnel",
+    "optionA": "Two cook-hours remain",
+    "optionB": "Three cook-hours remain",
+    "optionC": "One cook-hour remains",
+    "optionD": "No cook-hours remain"
+  },
+  {
+    "reviewId": "R094",
+    "category": "cdmPersonnel",
+    "optionA": "Hepatitis A",
+    "optionB": "Shigella infection",
+    "optionC": "Nontyphoidal Salmonella",
+    "optionD": "Norovirus"
+  },
+  {
+    "reviewId": "R095",
+    "category": "cdmPersonnel",
+    "optionA": "Arrival times and staffing needs for each",
+    "optionB": "Supplier ratings and invoice terms for each",
+    "optionC": "Menu prices and ingredient yields for each",
+    "optionD": "Food-group totals and portion weights for each"
+  },
+  {
+    "reviewId": "R096",
+    "category": "cdmSafety",
+    "optionA": "May 10",
+    "optionB": "May 12",
+    "optionC": "May 4",
+    "optionD": "May 7"
+  },
+  {
+    "reviewId": "R097",
+    "category": "cdmNutrition",
+    "optionA": "Convert both to the 60 g portion",
+    "optionB": "Use the smaller serving for both",
+    "optionC": "Compare only their percentage columns",
+    "optionD": "Compare the calories per package"
+  },
+  {
+    "reviewId": "R098",
+    "category": "cdmFoodservice",
+    "optionA": "Count rose while unit weight stayed fixed",
+    "optionB": "Count stayed fixed while unit weight rose",
+    "optionC": "Both count and unit weight fell",
+    "optionD": "Both count and unit weight stayed fixed"
+  },
+  {
+    "reviewId": "R099",
+    "category": "cdmSafety",
+    "optionA": "Allow all tasks after handwashing",
+    "optionB": "Exclude solely on these symptoms",
+    "optionC": "Allow all tasks with gloves",
+    "optionD": "Restrict the employee\u2019s duties"
+  },
+  {
+    "reviewId": "R100",
+    "category": "cdmSafety",
+    "optionA": "A chemical test kit or test strips",
+    "optionB": "A water-pressure gauge",
+    "optionC": "A maximum-registering thermometer",
+    "optionD": "A wash-cycle timer"
+  },
+  {
+    "reviewId": "R101",
+    "category": "cdmBusiness",
+    "optionA": "Monthly meal counts and total labor dollars",
+    "optionB": "Current vacancies and average days to fill",
+    "optionC": "Budgeted and actual hours and rates by job group",
+    "optionD": "Employee separations and average headcount"
+  },
+  {
+    "reviewId": "R102",
+    "category": "cdmNutrition",
+    "optionA": "Therapeutic diet",
+    "optionB": "Mechanically altered diet",
+    "optionC": "Feeding tube",
+    "optionD": "Parenteral/IV feeding"
+  },
+  {
+    "reviewId": "R103",
+    "category": "cdmNutrition",
+    "optionA": "Plain corn starch",
+    "optionB": "Soy flour",
+    "optionC": "Barley malt extract",
+    "optionD": "Wheat flour"
+  },
+  {
+    "reviewId": "R104",
+    "category": "cdmPersonnel",
+    "optionA": "An equivalent job with equivalent benefits",
+    "optionB": "A temporary job until the old role opens",
+    "optionC": "The next vacancy after a waiting period",
+    "optionD": "Any opening at the former hourly rate"
+  },
+  {
+    "reviewId": "R105",
+    "category": "cdmSafety",
+    "optionA": "\u00be inch",
+    "optionB": "2\u00bc inches",
+    "optionC": "1\u00bd inches",
+    "optionD": "1 inch"
+  },
+  {
+    "reviewId": "R106",
+    "category": "cdmSafety",
+    "optionA": "As a flavoring outside allergen controls",
+    "optionB": "As a major food allergen",
+    "optionC": "As an allergen only when whole",
+    "optionD": "As an allergen only when unheated"
+  },
+  {
+    "reviewId": "R107",
+    "category": "cdmSafety",
+    "optionA": "1 pack short",
+    "optionB": "9 packs short",
+    "optionC": "6 packs short",
+    "optionD": "10 packs short"
+  },
+  {
+    "reviewId": "R108",
+    "category": "cdmNutrition",
+    "optionA": "Notice of a room transfer",
+    "optionB": "Participation in care planning",
+    "optionC": "Choice of attending physician",
+    "optionD": "Access to personal possessions"
+  },
+  {
+    "reviewId": "R109",
+    "category": "cdmFoodservice",
+    "optionA": "Ingredient purchase price",
+    "optionB": "Menu selection frequency",
+    "optionC": "Finished batch weight",
+    "optionD": "Expected diner count"
+  },
+  {
+    "reviewId": "R110",
+    "category": "cdmFoodservice",
+    "optionA": "It fell from 5% to 3%",
+    "optionB": "It fell from 10% to 9%",
+    "optionC": "It remained at 4%",
+    "optionD": "It rose from 3% to 5%"
+  },
+  {
+    "reviewId": "R111",
+    "category": "cdmSafety",
+    "optionA": "2 hours",
+    "optionB": "4 hours",
+    "optionC": "6 hours",
+    "optionD": "8 hours"
+  },
+  {
+    "reviewId": "R112",
+    "category": "cdmSafety",
+    "optionA": "Saturday",
+    "optionB": "Tuesday of next week",
+    "optionC": "Sunday",
+    "optionD": "Monday of next week"
+  },
+  {
+    "reviewId": "R113",
+    "category": "cdmNutrition",
+    "optionA": "1250 mL",
+    "optionB": "850 mL",
+    "optionC": "1050 mL",
+    "optionD": "800 mL"
+  },
+  {
+    "reviewId": "R114",
+    "category": "cdmNutrition",
+    "optionA": "20 g",
+    "optionB": "6 g",
+    "optionC": "14 g",
+    "optionD": "8 g"
+  },
+  {
+    "reviewId": "R115",
+    "category": "cdmPersonnel",
+    "optionA": "84",
+    "optionB": "82",
+    "optionC": "80",
+    "optionD": "78"
+  },
+  {
+    "reviewId": "R116",
+    "category": "cdmFoodservice",
+    "optionA": "80 portions",
+    "optionB": "100 portions",
+    "optionC": "120 portions",
+    "optionD": "140 portions"
+  },
+  {
+    "reviewId": "R117",
+    "category": "cdmNutrition",
+    "optionA": "1 cup: 20 g carbohydrate per cup",
+    "optionB": "\u00bd cup: 20 g carbohydrate per cup",
+    "optionC": "\u00bd cup: 30 g carbohydrate per cup",
+    "optionD": "1 cup: 30 g carbohydrate per cup"
+  },
+  {
+    "reviewId": "R118",
+    "category": "cdmBusiness",
+    "optionA": "The Monday case",
+    "optionB": "Either case without considering dates",
+    "optionC": "The Wednesday case",
+    "optionD": "The case with the lower unit price"
+  },
+  {
+    "reviewId": "R119",
+    "category": "cdmPersonnel",
+    "optionA": "Explain the device's purpose",
+    "optionB": "Identify the device in a photograph",
+    "optionC": "Recall the device's purchase model",
+    "optionD": "Measure a sample with the device"
+  },
+  {
+    "reviewId": "R120",
+    "category": "cdmPersonnel",
+    "optionA": "Send assembly a second reminder of its completion time",
+    "optionB": "Post the change in next week\u2019s staff-meeting minutes",
+    "optionC": "Confirm the revised pickup with transport and update its roster",
+    "optionD": "Ask the receiving unit to record tomorrow\u2019s arrival time"
+  },
+  {
+    "reviewId": "R121",
+    "category": "cdmBusiness",
+    "optionA": "6 minutes",
+    "optionB": "10 minutes",
+    "optionC": "8 minutes",
+    "optionD": "7.5 minutes"
+  },
+  {
+    "reviewId": "R122",
+    "category": "cdmSafety",
+    "optionA": "Dish D",
+    "optionB": "Dish A",
+    "optionC": "Dish B",
+    "optionD": "Dish C"
+  },
+  {
+    "reviewId": "R123",
+    "category": "cdmFoodservice",
+    "optionA": "Ingredient receiving",
+    "optionB": "Menu preference collection",
+    "optionC": "Transport and service",
+    "optionD": "Recipe nutrient analysis"
+  },
+  {
+    "reviewId": "R124",
+    "category": "cdmNutrition",
+    "optionA": "The facility administrator",
+    "optionB": "The resident",
+    "optionC": "The daughter as bill payer",
+    "optionD": "The resident\u2019s admitting contact"
+  },
+  {
+    "reviewId": "R125",
+    "category": "cdmPersonnel",
+    "optionA": "3 cook-hours",
+    "optionB": "4 cook-hours",
+    "optionC": "2 cook-hours",
+    "optionD": "5 cook-hours"
+  },
+  {
+    "reviewId": "R126",
+    "category": "cdmNutrition",
+    "optionA": "Canola oil for butter",
+    "optionB": "Cream for canola oil",
+    "optionC": "Unrefined sesame oil for butter",
+    "optionD": "Butter for olive oil"
+  },
+  {
+    "reviewId": "R127",
+    "category": "cdmFoodservice",
+    "optionA": "$0.67",
+    "optionB": "$1.50",
+    "optionC": "$3.50",
+    "optionD": "$2.00"
+  },
+  {
+    "reviewId": "R128",
+    "category": "cdmSafety",
+    "optionA": "Allergen cross-contact",
+    "optionB": "Cleaning-agent contamination",
+    "optionC": "Pathogen cross-contamination",
+    "optionD": "Physical fragment contamination"
+  },
+  {
+    "reviewId": "R129",
+    "category": "cdmNutrition",
+    "optionA": "Physician and physical therapist",
+    "optionB": "Dietitian and speech therapist",
+    "optionC": "Dietitian and pharmacist",
+    "optionD": "Nurse and occupational therapist"
+  },
+  {
+    "reviewId": "R130",
+    "category": "cdmPersonnel",
+    "optionA": "An ordinary production shift",
+    "optionB": "A post-session satisfaction survey",
+    "optionC": "A written knowledge exercise",
+    "optionD": "A second classroom demonstration"
+  },
+  {
+    "reviewId": "R131",
+    "category": "cdmSafety",
+    "optionA": "Nutrient imbalance",
+    "optionB": "Biological hazard",
+    "optionC": "Chemical residue",
+    "optionD": "Physical hazard"
+  },
+  {
+    "reviewId": "R132",
+    "category": "cdmNutrition",
+    "optionA": "Meal acceptance remained unchanged",
+    "optionB": "The two stated outcomes improved or held",
+    "optionC": "Weight maintenance was not achieved",
+    "optionD": "The data demonstrate a new diet order"
+  },
+  {
+    "reviewId": "R133",
+    "category": "cdmSafety",
+    "optionA": "Auditing completed temperature records",
+    "optionB": "Selecting a critical control point",
+    "optionC": "Choosing a corrective procedure",
+    "optionD": "Setting the monitoring interval"
+  },
+  {
+    "reviewId": "R134",
+    "category": "cdmSafety",
+    "optionA": "From arranging clean plates to arranging clean bowls",
+    "optionB": "From measuring flour to measuring sugar for the same dough",
+    "optionC": "From raw beef preparation to slicing ready-to-eat bread",
+    "optionD": "From portioning plain rice to portioning plain pasta"
+  },
+  {
+    "reviewId": "R135",
+    "category": "cdmNutrition",
+    "optionA": "Phosphorus",
+    "optionB": "Calcium",
+    "optionC": "Potassium",
+    "optionD": "Iron"
+  },
+  {
+    "reviewId": "R136",
+    "category": "cdmSafety",
+    "optionA": "Raw ground beef followed by raw intact beef",
+    "optionB": "Raw poultry followed by raw ground beef",
+    "optionC": "Raw poultry followed by raw intact beef",
+    "optionD": "Raw intact beef followed by raw poultry"
+  },
+  {
+    "reviewId": "R137",
+    "category": "cdmFoodservice",
+    "optionA": "Coagulation",
+    "optionB": "Caramelization",
+    "optionC": "Emulsion",
+    "optionD": "Gelatinization"
+  },
+  {
+    "reviewId": "R138",
+    "category": "cdmFoodservice",
+    "optionA": "9:00 a.m.",
+    "optionB": "8:30 a.m.",
+    "optionC": "7:30 a.m.",
+    "optionD": "8:00 a.m."
+  },
+  {
+    "reviewId": "R139",
+    "category": "cdmNutrition",
+    "optionA": "Rice cooked with olive oil",
+    "optionB": "Barley cooked with olive oil",
+    "optionC": "Rice cooked with butter",
+    "optionD": "Wheat couscous cooked with butter"
+  },
+  {
+    "reviewId": "R140",
+    "category": "cdmSafety",
+    "optionA": "20 seconds",
+    "optionB": "60 seconds",
+    "optionC": "30 seconds",
+    "optionD": "10\u201315 seconds"
+  },
+  {
+    "reviewId": "R141",
+    "category": "cdmBusiness",
+    "optionA": "$2.40",
+    "optionB": "$2.00",
+    "optionC": "$3.00",
+    "optionD": "$2.20"
+  },
+  {
+    "reviewId": "R142",
+    "category": "cdmBusiness",
+    "optionA": "It falls from $5 to $4.50",
+    "optionB": "It rises from $5 to $6",
+    "optionC": "It remains at $5",
+    "optionD": "It falls from $6 to $5"
+  },
+  {
+    "reviewId": "R143",
+    "category": "cdmSafety",
+    "optionA": "The 41\u00b0F product-temperature limit",
+    "optionB": "The 135\u00b0F hot-holding minimum",
+    "optionC": "The 70\u00b0F running-water limit",
+    "optionD": "The 45\u00b0F shell-egg air limit"
+  },
+  {
+    "reviewId": "R144",
+    "category": "cdmPersonnel",
+    "optionA": "4.0 FTEs",
+    "optionB": "2.5 FTEs",
+    "optionC": "3.0 FTEs",
+    "optionD": "2.0 FTEs"
+  },
+  {
+    "reviewId": "R145",
+    "category": "cdmFoodservice",
+    "optionA": "80%",
+    "optionB": "20%",
+    "optionC": "60%",
+    "optionD": "75%"
+  },
+  {
+    "reviewId": "R146",
+    "category": "cdmSafety",
+    "optionA": "Immediate product correction",
+    "optionB": "Plan verification",
+    "optionC": "Initial hazard identification",
+    "optionD": "Routine temperature monitoring"
+  },
+  {
+    "reviewId": "R147",
+    "category": "cdmBusiness",
+    "optionA": "A whole-fruit display",
+    "optionB": "An arranged fruit platter",
+    "optionC": "A centerpiece of uniform pieces",
+    "optionD": "A chopped fruit filling"
+  },
+  {
+    "reviewId": "R148",
+    "category": "cdmSafety",
+    "optionA": "135\u00b0F for 15 seconds",
+    "optionB": "145\u00b0F for 15 seconds",
+    "optionC": "155\u00b0F for 17 seconds",
+    "optionD": "165\u00b0F for 15 seconds"
+  },
+  {
+    "reviewId": "R149",
+    "category": "cdmFoodservice",
+    "optionA": "Tender cauliflower florets",
+    "optionB": "Smooth spinach puree",
+    "optionC": "Tender broccoli florets",
+    "optionD": "Smooth turnip puree"
+  },
+  {
+    "reviewId": "R150",
+    "category": "cdmNutrition",
+    "optionA": "Portions offered at breakfast and lunch",
+    "optionB": "Meals eaten before and after the change",
+    "optionC": "Food preferences recorded at two admissions",
+    "optionD": "Weights measured morning and evening"
+  },
+  {
+    "reviewId": "R151",
+    "category": "cdmSafety",
+    "optionA": "Physical foreign material",
+    "optionB": "Biological contamination",
+    "optionC": "Chemical contamination",
+    "optionD": "Time-temperature abuse"
+  },
+  {
+    "reviewId": "R152",
+    "category": "cdmSafety",
+    "optionA": "Utensil separation during service",
+    "optionB": "Supplier ingredient verification",
+    "optionC": "Menu-label transcription",
+    "optionD": "Receiving lot identification"
+  },
+  {
+    "reviewId": "R153",
+    "category": "cdmFoodservice",
+    "optionA": "Accuracy improved while speed worsened",
+    "optionB": "Speed improved while accuracy worsened",
+    "optionC": "Both speed and accuracy improved",
+    "optionD": "Neither speed nor accuracy changed"
+  },
+  {
+    "reviewId": "R154",
+    "category": "cdmPersonnel",
+    "optionA": "The total capital amount for the selected offer",
+    "optionB": "The exact payback period for each offer",
+    "optionC": "The final ranking by installed price",
+    "optionD": "The verified utility and site requirements"
+  },
+  {
+    "reviewId": "R155",
+    "category": "cdmSafety",
+    "optionA": "3 p.m.",
+    "optionB": "11 a.m.",
+    "optionC": "5 p.m.",
+    "optionD": "1 p.m."
+  },
+  {
+    "reviewId": "R156",
+    "category": "cdmFoodservice",
+    "optionA": "8 minutes",
+    "optionB": "12 minutes",
+    "optionC": "10 minutes",
+    "optionD": "9 minutes"
+  },
+  {
+    "reviewId": "R157",
+    "category": "cdmNutrition",
+    "optionA": "Reduced excretion of excess water",
+    "optionB": "Reduced absorption of water from the intestine",
+    "optionC": "Increased urinary loss of water",
+    "optionD": "Increased water loss through the lungs"
+  },
+  {
+    "reviewId": "R158",
+    "category": "cdmNutrition",
+    "optionA": "From 150 lb to 145 lb",
+    "optionB": "From 150 lb to 143 lb",
+    "optionC": "From 150 lb to 144 lb",
+    "optionD": "From 150 lb to 140 lb"
+  },
+  {
+    "reviewId": "R159",
+    "category": "cdmSafety",
+    "optionA": "Product quantity",
+    "optionB": "Order specification grade",
+    "optionC": "Package integrity",
+    "optionD": "Invoice unit pricing"
+  },
+  {
+    "reviewId": "R160",
+    "category": "cdmBusiness",
+    "optionA": "$900",
+    "optionB": "$300",
+    "optionC": "$5400",
+    "optionD": "$4500"
+  },
+  {
+    "reviewId": "R161",
+    "category": "cdmNutrition",
+    "optionA": "Sodium chloride",
+    "optionB": "Sodium bicarbonate",
+    "optionC": "Sodium ascorbate",
+    "optionD": "Sodium phosphate"
+  },
+  {
+    "reviewId": "R162",
+    "category": "cdmPersonnel",
+    "optionA": "Move two shifts from 7\u201311 to 6\u201310",
+    "optionB": "Move two shifts from 7\u201311 to 5\u20139",
+    "optionC": "Move two shifts from 7\u201311 to 9\u20131",
+    "optionD": "Move two shifts from 7\u201311 to 3\u20137"
+  },
+  {
+    "reviewId": "R163",
+    "category": "cdmFoodservice",
+    "optionA": "Revise the service-day schedule",
+    "optionB": "Reformulate the seasoning blend",
+    "optionC": "Change the purchasing pack size",
+    "optionD": "Increase the standard portion weight"
+  },
+  {
+    "reviewId": "R164",
+    "category": "cdmSafety",
+    "optionA": "Within 1 hour",
+    "optionB": "Within 8 hours",
+    "optionC": "Within 6 hours",
+    "optionD": "Within 4 hours"
+  },
+  {
+    "reviewId": "R165",
+    "category": "cdmNutrition",
+    "optionA": "Aged cheddar cheese",
+    "optionB": "Sweetened condensed milk",
+    "optionC": "Evaporated milk",
+    "optionD": "Nonfat dry milk powder"
+  },
+  {
+    "reviewId": "R166",
+    "category": "cdmNutrition",
+    "optionA": "Low sodium; high fiber",
+    "optionB": "High sodium; low fiber",
+    "optionC": "High sodium; high fiber",
+    "optionD": "Low sodium; low fiber"
+  },
+  {
+    "reviewId": "R167",
+    "category": "cdmSafety",
+    "optionA": "Friday",
+    "optionB": "Thursday",
+    "optionC": "Tuesday",
+    "optionD": "Wednesday"
+  },
+  {
+    "reviewId": "R168",
+    "category": "cdmPersonnel",
+    "optionA": "Practice replacing label-printer supplies",
+    "optionB": "Practice attaching labels to damp containers",
+    "optionC": "Calculate shelf life and complete sample date fields",
+    "optionD": "Sort completed labels by production station"
+  },
+  {
+    "reviewId": "R169",
+    "category": "cdmPersonnel",
+    "optionA": "Only a notice sent by an officer qualifies",
+    "optionB": "Only a military-stamped letter qualifies",
+    "optionC": "Only an HR-approved form qualifies",
+    "optionD": "Verbal or written notice can qualify"
+  },
+  {
+    "reviewId": "R170",
+    "category": "cdmNutrition",
+    "optionA": "Speech-language pathologist",
+    "optionB": "Dentist",
+    "optionC": "Clinical pharmacist",
+    "optionD": "Registered dietitian"
+  },
+  {
+    "reviewId": "R171",
+    "category": "cdmFoodservice",
+    "optionA": "Protein coagulation",
+    "optionB": "Sugar caramelization",
+    "optionC": "Liquid reduction",
+    "optionD": "Fat rendering"
+  },
+  {
+    "reviewId": "R172",
+    "category": "cdmSafety",
+    "optionA": "Ice served in beverages",
+    "optionB": "Water in a sealed nonfood cooling loop",
+    "optionC": "Water used for landscape irrigation",
+    "optionD": "Water used to flush wastewater equipment"
+  },
+  {
+    "reviewId": "R173",
+    "category": "cdmNutrition",
+    "optionA": "10%",
+    "optionB": "8%",
+    "optionC": "12%",
+    "optionD": "5%"
+  },
+  {
+    "reviewId": "R174",
+    "category": "cdmFoodservice",
+    "optionA": "7 g protein; 160 mg sodium",
+    "optionB": "6 g protein; 220 mg sodium",
+    "optionC": "9 g protein; 180 mg sodium",
+    "optionD": "10 g protein; 240 mg sodium"
+  },
+  {
+    "reviewId": "R175",
+    "category": "cdmNutrition",
+    "optionA": "1500 kcal",
+    "optionB": "1700 kcal",
+    "optionC": "1800 kcal",
+    "optionD": "1600 kcal"
+  },
+  {
+    "reviewId": "R176",
+    "category": "cdmNutrition",
+    "optionA": "The 10 a.m. clinical order",
+    "optionB": "The meal-production tally",
+    "optionC": "The kitchen order feed",
+    "optionD": "The tray card used at assembly"
+  },
+  {
+    "reviewId": "R177",
+    "category": "cdmBusiness",
+    "optionA": "$90 short",
+    "optionB": "$10 over",
+    "optionC": "$100 over",
+    "optionD": "$10 short"
+  },
+  {
+    "reviewId": "R178",
+    "category": "cdmFoodservice",
+    "optionA": "Resident sensory comparison",
+    "optionB": "Portion-weight comparison",
+    "optionC": "Ingredient-price comparison",
+    "optionD": "Dispatch-time comparison"
+  },
+  {
+    "reviewId": "R179",
+    "category": "cdmFoodservice",
+    "optionA": "The air entering the compressor",
+    "optionB": "The warmest part of the cabinet",
+    "optionC": "The coldest part of the cabinet",
+    "optionD": "The kitchen air beside the door"
+  },
+  {
+    "reviewId": "R180",
+    "category": "cdmPersonnel",
+    "optionA": "5%",
+    "optionB": "20%",
+    "optionC": "50%",
+    "optionD": "25%"
+  },
+  {
+    "reviewId": "R181",
+    "category": "cdmFoodservice",
+    "optionA": "Inconsistent portion standards",
+    "optionB": "Incompatible dietary prescriptions",
+    "optionC": "Insufficient ingredient yield",
+    "optionD": "Concurrent equipment demand"
+  },
+  {
+    "reviewId": "R182",
+    "category": "cdmPersonnel",
+    "optionA": "6 workers",
+    "optionB": "5 workers",
+    "optionC": "3 workers",
+    "optionD": "4 workers"
+  },
+  {
+    "reviewId": "R183",
+    "category": "cdmPersonnel",
+    "optionA": "10 FTEs",
+    "optionB": "7 FTEs",
+    "optionC": "8 FTEs",
+    "optionD": "6 FTEs"
+  },
+  {
+    "reviewId": "R184",
+    "category": "cdmFoodservice",
+    "optionA": "Change the ingredient purchase grade",
+    "optionB": "Change the recipe portion size",
+    "optionC": "Adjust pan placement during baking",
+    "optionD": "Adjust the number of forecast diners"
+  },
+  {
+    "reviewId": "R185",
+    "category": "cdmSafety",
+    "optionA": "Recording the incident details",
+    "optionB": "Checking the repaired unit",
+    "optionC": "Repairing the defective part",
+    "optionD": "Isolating the affected food"
+  },
+  {
+    "reviewId": "R186",
+    "category": "cdmSafety",
+    "optionA": "6 hours",
+    "optionB": "4.5 hours",
+    "optionC": "4 hours",
+    "optionD": "2 hours"
+  },
+  {
+    "reviewId": "R187",
+    "category": "cdmFoodservice",
+    "optionA": "Kitchen staff taste both coded versions",
+    "optionB": "Kitchen staff rate the current sauce",
+    "optionC": "Residents taste both coded versions",
+    "optionD": "Residents rate the new sauce after rollout"
+  },
+  {
+    "reviewId": "R188",
+    "category": "cdmNutrition",
+    "optionA": "45.0 kg/m\u00b2",
+    "optionB": "115.2 kg/m\u00b2",
+    "optionC": "28.1 kg/m\u00b2",
+    "optionD": "22.5 kg/m\u00b2"
+  },
+  {
+    "reviewId": "R189",
+    "category": "cdmSafety",
+    "optionA": "Section 4: first-aid measures",
+    "optionB": "Section 9: physical properties",
+    "optionC": "Section 6: accidental release measures",
+    "optionD": "Section 8: exposure controls/PPE"
+  },
+  {
+    "reviewId": "R190",
+    "category": "cdmPersonnel",
+    "optionA": "A buddy observing the first several cart loads",
+    "optionB": "A demonstration of the complete work cycle",
+    "optionC": "A timed rehearsal followed by performance feedback",
+    "optionD": "A point-of-use checklist with completion boxes"
+  },
+  {
+    "reviewId": "R191",
+    "category": "cdmBusiness",
+    "optionA": "$9.00",
+    "optionB": "$7.00",
+    "optionC": "$14.00",
+    "optionD": "$3.00"
+  },
+  {
+    "reviewId": "R192",
+    "category": "cdmNutrition",
+    "optionA": "15 g",
+    "optionB": "20 g",
+    "optionC": "10 g",
+    "optionD": "45 g"
+  },
+  {
+    "reviewId": "R193",
+    "category": "cdmFoodservice",
+    "optionA": "Calculated nutrient content",
+    "optionB": "Texture at service",
+    "optionC": "Ingredient purchase grade",
+    "optionD": "Planned portion quantity"
+  },
+  {
+    "reviewId": "R194",
+    "category": "cdmNutrition",
+    "optionA": "160 mL",
+    "optionB": "360 mL",
+    "optionC": "180 mL",
+    "optionD": "120 mL"
+  },
+  {
+    "reviewId": "R195",
+    "category": "cdmSafety",
+    "optionA": "145\u00b0F for 15 seconds",
+    "optionB": "165\u00b0F, instantaneous",
+    "optionC": "155\u00b0F for 17 seconds",
+    "optionD": "165\u00b0F for 15 seconds"
+  },
+  {
+    "reviewId": "R196",
+    "category": "cdmFoodservice",
+    "optionA": "The number of recipe versions",
+    "optionB": "The coded sample labels",
+    "optionC": "The use of resident panelists",
+    "optionD": "Serving temperature"
+  },
+  {
+    "reviewId": "R197",
+    "category": "cdmFoodservice",
+    "optionA": "22.5 lb",
+    "optionB": "24 lb",
+    "optionC": "32 lb",
+    "optionD": "13.5 lb"
+  },
+  {
+    "reviewId": "R198",
+    "category": "cdmBusiness",
+    "optionA": "$8000",
+    "optionB": "$10000",
+    "optionC": "$8500",
+    "optionD": "$9500"
+  },
+  {
+    "reviewId": "R199",
+    "category": "cdmSafety",
+    "optionA": "The planned observation interval",
+    "optionB": "The original temperature value",
+    "optionC": "The additional heating step",
+    "optionD": "The supervisor's weekly review"
+  },
+  {
+    "reviewId": "R200",
+    "category": "cdmSafety",
+    "optionA": "70\u00b0F",
+    "optionB": "135\u00b0F",
+    "optionC": "41\u00b0F",
+    "optionD": "45\u00b0F"
+  }
+]

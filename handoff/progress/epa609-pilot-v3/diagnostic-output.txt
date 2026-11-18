@@ -1,0 +1,87 @@
+{
+  "changedIds": [
+    "EPA609-SRV-031",
+    "EPA609-EQP-013",
+    "EPA609-REG-026",
+    "EPA609-EQP-022",
+    "EPA609-REG-004",
+    "EPA609-REG-015",
+    "EPA609-SRV-029"
+  ],
+  "sevenRowsUnchanged": true,
+  "allKeyPositionsUnchanged": true,
+  "fullPilot": {
+    "n": 14,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "families": {},
+    "echo_fire": 4,
+    "echo_hit": 0,
+    "echo_gain": -3.571428571428571,
+    "anti_echo_gain": 1.1904761904761902,
+    "echoed": []
+  },
+  "categories": {
+    "epa609Equipment": {
+      "n": 4,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 0,
+      "echo_hit": 0,
+      "echo_gain": 0.0,
+      "anti_echo_gain": 0.0,
+      "echoed": []
+    },
+    "epa609Rules": {
+      "n": 4,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 1,
+      "echo_hit": 0,
+      "echo_gain": -3.125,
+      "anti_echo_gain": 1.0416666666666665,
+      "echoed": []
+    },
+    "epa609Service": {
+      "n": 4,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 2,
+      "echo_hit": 0,
+      "echo_gain": -6.25,
+      "anti_echo_gain": 2.083333333333333,
+      "echoed": []
+    },
+    "epa609Yf": {
+      "n": 2,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 1,
+      "echo_hit": 0,
+      "echo_gain": -6.25,
+      "anti_echo_gain": 2.083333333333333,
+      "echoed": []
+    }
+  },
+  "stemWordCounts": {
+    "EPA609-SRV-031": 13,
+    "EPA609-SRV-022": 10,
+    "EPA609-EQP-013": 17,
+    "EPA609-EQP-011": 17,
+    "EPA609-REG-026": 15,
+    "EPA609-EQP-022": 19,
+    "EPA609-SRV-026": 17,
+    "EPA609-REG-004": 11,
+    "EPA609-EQP-024": 19,
+    "EPA609-REG-015": 19,
+    "EPA609-YF-006": 16,
+    "EPA609-YF-014": 14,
+    "EPA609-SRV-029": 14,
+    "EPA609-REG-028": 14
+  },
+  "pilotSha256": "7e87c63aa88b6344193070dda77738a22564dc8d176d64cf1be00d30c5f885c5"
+}

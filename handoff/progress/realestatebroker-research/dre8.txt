@@ -1,0 +1,672 @@
+ 
+ 
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   
+ 
+ 
+  
+ 
+ 
+  
+ 
+  
+ 
+ 
+     
+ 
+ 
+  
+ 
+ 
+ 
+8 Escrow 
+An escrow is essentially a small and short-lived trust arrangement. It has become an indispensable mechanism 
+in this state for the consummation of real property transf ers and other transactions such as exchanges, leases, 
+sales of personal property, sales of securities, loans, and mobilehome sales. This chapter discusses the real 
+estate sale escrow. 
+Definition of an Escrow 
+California Civil Code Section 1057 provides this description of an escrow: 
+“A grant may be deposited by the grantor with a third person, to be delivered on the 
+performance of a condition, and, on delivery by the depositary, it will take effect. While in the 
+possession of the third person, and subject to condition, it is called an escrow.” 
+And, in Section 17003 of the Financial Code: 
+“Escrow means any transaction wherein one person, for the purpose of effecting the sale, 
+transfer, encumbering or leasing of real or personal property to another person, delivers any 
+written instrument, money, evidence of title to real or personal property, or other thing of 
+value to a third person to be held by such third person until the happening of a specified event 
+or the performance of a prescribed condition, when  it is then to be delivered by such third 
+person to a grantee, grantor, promisee, promisor, obligee, obligor, bailee, bailor, or any agent 
+or employee of any of the latter.” 
+Essential Elements of an Escrow 
+The two essential elements for a va lid sale escrow are a binding contr act/agreement between buyer and seller 
+and the conditional delivery to a neutral third party of something of value, as defined, which typically includes 
+written instruments of conveyance (grant deed) or encu mbrance (deed of trust) and related documents. The 
+binding contract/agreement can appear in any legal fo rm, including a deposit receipt (a residential purchase 
+agreement), other forms of agreements  of sale, exchange agreements, op tion agreements, or jointly executed 
+bilateral or individually executed unilateral escrow instructions evidencing a mutual agreement of the buyer and 
+the seller. 
+Escrow Holder 
+The escrow holder is the  agent and depositary (as an impartial/neutral third party) having and holding 
+possession of money, written instruments, documents, personal property, or other things of value to be held 
+until the happening of specified events  or the performance of described c onditions. Once these events occur or 
+the conditions are met and performed (satisfied or waived) in strict compliance with the escrow instructions, the 
+escrow holder (performing as the “escrow agent”) has accomplished its primary duty of faithfully executing the 
+instructions given to it by the principals to the escrow (e.g., the buyer and the seller in a real estate sale escrow).  
+The escrow holder is the agent and fiduciary of the princi pals to the escrow, and is defined to be a person who 
+is lawfully engaged in the business of receiving escr ows for deposit in behalf of  or for delivery to the 
+designated principal(s). As a fiduciary in performing its duties, the escrow holder must at all times exercise 
+reasonable care, loyalty, and good faith towards the principals of the escrow. An escrow holder’s fiduciary duty 
+is generally limited to the faithful performance/execution of the instructions given by the principals to the 
+escrow.  See Summit Financial Holdings, Ltd. v. Contin ental Lawyers Title Co. (2002) 27 Cal. 4
+th 705, 711, 
+Civil Code Section 2297and Financial Code Section 17004. 
+The escrow holder acts to ensure that all principals to the transaction comply with the terms and conditions of 
+the contract/agreement as set forth in  the escrow instructions. The escrow holder may (within the course and 
+scope of the escrow instructions) coordinate the activities of the professi onal service providers involved in the 
+transaction, such as the activities of the lender(s), the title company (if di stinguishable from the escrow holder), 
+the title insurance company, as well as those among the buyer, seller and real estate broker. 
+Definition of Principals to the Escrow 
+In a real estate sale escrow, the pr incipals include the buyer and the seller and, if applicable, the lender(s) 
+making the “purchase money” loan.  While principals are parties to the escrow, not all parties involved are 
+principals. The principals are persons who are executing and performing the escrow instructions and who are 
+ 
+   
+    
+  
+  
+   
+   
+     
+  
+ 
+ 
+   
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+   
+ 
+  
+ 
+ 
+ 
+120 CHAPTER EIGHT 
+making the conditional deliveries in connection therewith.  The lender(s) are included in this category, since 
+they execute and provide to the escrow holder their written instructions together with instruments of 
+encumbrance and related loan documents that are conditionally delivered in anticipation of the issuance of title 
+insurance coverage.  These instructions, instruments, funds , and loan documents are essential to the real estate 
+sale escrow when financing by a lender(s) is required. 
+As discussed above, the escrow holder is (within the cour se and scope of the escrow instructions) the agent and 
+fiduciary of the principals of the escrow.  As a result, the escrow holder is a dual agent, i.e., agent and fiduciary 
+of the buyer and seller and of the lender(s), if applicable.  Upon the completion and close of the sale escrow, the 
+escrow holder is the agent for each of  the principals to deliver the stat ements, instruments, funds, documents, 
+and title insurance coverage to which each are entitled in accordance with the escrow instructions. 
+Escrows include parties who are not principals to the escrow and, therefore, to whom fiduciary duties are not 
+owed by the escrow holder.  These parties may incl ude, among others, claimants within the chain of title, 
+persons placing demands for payment into the escrow, persons submitting reports/inspections to be delivered 
+through the escrow. To these parties the escrow holder functions as a custodian with the duty to act in good 
+faith and consistent with the standard of care applicable to escrow holders/agents.  See Summit Financial 
+Holdings, Ltd. v. Continental Lawyers Title Co. (2002) 27 Cal. 4
+th 705, 711. 
+Escrow Instructions 
+The conditional delivery of an instrument of conveyance or encumbrance, money/funds, or other things of 
+value is accompanied by instructions to the escrow holder authorizing the delivery of the instruments, funds, 
+and related documents  upon the happeni ng of specified events or the perfo rmance of stipulated conditions. In 
+California, there are two forms of escrow instructions generally employed: bilateral (i.e., executed by and 
+binding on both buyer and seller) and unilateral (i.e., separa te instructions executed by the buyer and seller, 
+binding on each). Since the escrow instructions  implement and may supplement the original 
+contract/agreement (e.g., residential purchase agreement or agreement of sale), each are interpreted together.   
+However if the escrow instructions contain terms in conflict with the original contract/agreement, the 
+instructions constituting the later contract/agreement will usually control, subject to separate consideration 
+regarding the escrow instructions (as may be required). When joint/bilateral instructions have been signed by 
+the principals to the escrow, neither principal may unilaterally change the escrow instructions. The principals 
+may change, by mutual agreement,  the instructions at any time and one  principal may waive the performance 
+of certain conditions, provided the waiver is not detrimental to the other principal to the transaction. 
+While an independent/neutral escrow holder can be held liable for violating written instructions (including 
+breaches of fiduciary duty within the course and scope of the escrow instru ctions), the escrow holder is only a 
+neutral stakeholder who is not to be concerned with controversies among the principals. As such, an escrow 
+holder is entitled to file an action of interpleader and for declaratory relief to ask a court of competent 
+jurisdiction to resolve the controversies and to direct the escrow holder on how to proceed. 
+Completed Escrow 
+Properly drawn and executed escrow instructions become  an enforceable contract/a greement. An escrow is 
+termed “completed” or “perfected” when each of the terms of the instructions have been met or performed 
+(satisfied or waived). 
+Escrow Principles 
+The following are major escrow principles: 
+1. Escrow instructions must contain mutuality, in cluding the understandings and the intentions of the 
+principals to the escrow. Properly drawn instructions should be clear and certain as to the understandings 
+and the intentions of the principals, the duties of the escrow holder, and the fact that it is the principals 
+themselves who must perform the escrow contract/a greement. The escrow holder does not have, and must 
+not exercise, discretionary authority. The escrow holder/agent acts in behalf of and not in the place and 
+stead of principals. 
+2. The escrow holder does not act as a mediator. However, the escrow holder/agent may offer advice to the 
+principals as an agent and fiduciary within the course and scope of the escrow instructions.  As previously 
+discussed, the escrow holder/agent does not participate in controversies among the principals or among the 
+parties to the escrow, or arbitrate di sputes. Instructions are drawn so that  the principals to the escrow make 
+ 
+ 
+ 
+    
+ 
+ 
+  
+   
+ 
+   
+ 
+ 
+ 
+   
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+   
+   
+     
+   
+  
+ESCROW 121 
+the promises, perform their obligations, and put the escrow holder in a position to complete and close the 
+escrow.  If the claim of the non-principa l parties to the escrow is within the chain of title, such claims must 
+be satisfied by the escrow holder to obtain the title insurance coverage required by the principals (including 
+the lender(s)). 
+3. The escrow holder is prohibited from offering lega l advice and must suggest that disagreeing parties 
+consult an attorney (or a real estate broker when the transactional matter  may be negotiated within the 
+course and scope of the real estate license). 
+4. Escrow is a limited/special agency relationship governed by the content of the escrow instructions. As 
+agent for both principals (often including an additional principal, the lender(s) extending credit in the form 
+of “purchase money” financing), the escrow holder acts only upon specific written instructions of the 
+principals. As previously noted, wh en the escrow is completed/perfect ed and closed, the escrow holder 
+becomes the agent for each principal with respect to those things in escrow to which the principals have 
+respectively become  entitled. 
+5. When all principals to the escrow have signed mutual (conforming) instructions, the escrow becomes 
+perfected. If only one principal has signed, that principal may terminate the proposed escrow at any time 
+prior to the other principal’s signing of conforming escrow instructions.  As an additional principal, the 
+lender(s) typically reserve the right to withdraw their instructions, instruments, funds, and related 
+documents if the escrow instructions of the buyer and seller do not conform to the instructions of the 
+lender(s). 
+6. The escrow holder must avoid vague or ambiguous te rms and provisions in the escrow instructions and 
+related documents. 
+7. The escrow holder must forward immediately to  the title insurance compan y (or its underwritten title 
+company agent, if other than  the escrow holder) any instrument that is to be recorded. Copies are to be 
+furnished to appropriate and concerned principal(s) or third parties, so that the instrument’s sufficiency can 
+be determined. This will help avoid a delay in completing and closing the sale escrow. 
+8. The escrow holder without authorization of the principals may only accept claims, demands, instruments, 
+funds, as well as related documents contemplated by  the escrow instructions. Other claims, demands, 
+instruments, funds, and documents are not to be accepted by the escrow holder.  
+9. The escrow trust account must be maintained with extr eme care. Overdrawn accounts (debit balances) are 
+strictly forbidden. 
+10. Escrows are privileged and confidential in nature. Th e escrow holder must not give out any information to 
+third parties (persons who are not principals of the escrow) concerning an escrow without approval of the 
+principals. 
+11. The escrow holder is the agent of the principals to the escrow. Any facts known by the escrow agent are 
+imputed to the principals.  Theref ore, the escrow holder owes a duty to communicate to its principals 
+knowledge acquired within the course and scope of th e agency relationship established by the escrow 
+instructions with respect to material facts that might affect a principal’s decision as to the pending 
+transaction. Any detrimental or new material info rmation, previously undisclosed, made known to the 
+escrow holder and affecting the principals should be disclosed to them for their instructions in the matter. 
+12. The escrow holder must maintain a high degree of trust, efficient  service, and good public relations, 
+particularly concerning the principals to the escrow. 
+13. The escrow holder must remain strictly neutral,  not favoring either principal, including the lender(s) 
+extending credit in the form of “purchase money’ financing. Notwithstanding the required neutrality, the 
+escrow holder must advise the principals to the escrow in the context described in item 11. To the extent 
+possible, the escrow holder must be careful to avoid preceding in a manner that results in a  gain to  one 
+principal to the detriment of the other principal(s). 
+14. The escrow holder must constantly maintain records and files to be sure that a procedure is not overlooked. 
+Neat and orderly files, complete with check sheets, will help ensure smooth progression towards 
+completing and closing the escrow. 
+ 
+ 
+ 
+ 
+  
+ 
+   
+ 
+  
+ 
+ 
+  
+  
+ 
+ 
+  
+     
+  
+ 
+ 
+ 
+ 
+  
+  
+   
+122 CHAPTER EIGHT 
+15. Before closing an escrow, the escrow holder must audit the file, accounting for all items to be handled, 
+recorded and delivered, including cleared funds. 
+16. The escrow holder must not dis burse any funds from an escrow account  until all items such as checks, 
+drafts, etc. have cleared, and thus have become av ailable for withdrawal as an automatic right. This 
+“holding period” may range from 1 to 10 days, depe nding on the type and location of the financial 
+institution upon which the checks, drafts, etc. have been drawn. 
+17. Completing and closing the escrow must be prompt, using forms and disclosures which are simple and 
+clear. 
+GENERAL ESCROW PROCEDURES  
+(May vary according to local custom and practice) 
+1. Prepared Escrow Instructions on the Escrow Holder’s Pre-printed Forms: 
+The escrow instructions are expected to describe th e understandings and intentions of the principals to the 
+sale escrow.  
+In Southern California, joint/bilateral escrow instructions are typically prepared and submitted following 
+the execution by the principals of the receipt for deposit (residential purch ase agreement) or other form of 
+agreement of sale. These instructions are usually accompanied by an initial earnest money deposit made by 
+the buyer, which is conditionally delivered awaiting the happening of specified events and the performance 
+of the conditions imposed in the joint escrow instructions.   
+In Northern California, unilateral escrow instructions are typically prepared and submitted a few days 
+before the anticipated completion or close of the sale escrow. Following the execution by the principals of 
+the deposit receipt  (residential purchase agreement) or other form of agreement of sale, the buyer’s earnest 
+money deposit is generally delivered to the escrow holder for which a receipt has been obtained (without 
+instructions and in the absence of conditional delivery).  Typically, no escrow inst ructions are prepared at 
+this time describing the happening of specified events or the performance of prescribed conditions, 
+together with the conditional delivery of instruments, money, or other things of value. Therefore, the 
+escrow has not been opened and will not be opened until much later when the unilateral escrow 
+instructions are prepared and signed by the principals of the escrow and conditional delivery occurs. 
+The principals to the escrow should carefully review any general provisions of the escrow prepared and 
+submitted to them by the escrow holder.  These general provisions often incl ude, among others, duties and 
+obligations imposed upon the principals (which ma y or may not be acceptable) and exclusions or 
+exceptions from the intended title insurance coverage.  
+In recent years, some “standard” forms of deposit r eceipts (residential purchase agreements) used by the 
+real estate brokerage industry have included provisions executed by the pr incipals to be transmitted to the 
+escrow holder for the expected purpose of opening or establishing an escrow.  The issue is whether 
+conditional delivery to the escrow holder has occurre d by one or more principals of instruments, 
+money/funds, or other things of value to be delivered to another principal(s) upon the happening of 
+specified events or the performance of described conditions. 
+For a home purchase, the mutual es crow instructions of the principals (whether in the form of 
+joint/bilateral or unilateral instructions) are to include, among others: 
+ the purchase price and terms;  
+ agreement as to mortgages; 
+ how buyer’s title is to vest;  
+ matters of record subject to which buyer is to acquire title;  
+ inspection reports to be delivered through escrow; 
+ proration adjustments; 
+ date of buyer’s possession of the subject property; 
+ 
+ 
+  
+ 
+ 
+ 
+     
+ 
+ 
+  
+  
+   
+  
+ 
+ 
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+   
+ESCROW 123 
+ instruments and related documents to be signed by the principals, delivered into escrow, and recorded; 
+ disbursements to be made, including fees, costs and charges, who pays for them, and who is to receive 
+each disbursement; and, 
+ the date of closing of the sale escrow. 
+2. Ordering a “Preliminary Report” on the Subject Property: 
+A “Preliminary Report” is ordered from the title company selected by the buyer. The escrow holder (which 
+may be the same person/entity as the title company) examines this report carefully for items not 
+contemplated in the escrow instru ctions. Typically, the seller must clear or remove any such item and it 
+must be brought to the attention of the buyer “for in formation”, “expression of desire in the matter”, and 
+for the appropriate instructions of the buyer.  The real estate broker acting as the agent and the fiduciary of 
+the buyer should review the “Preliminary Report” to offer the broker’s advice and recommendations within 
+the course and scope of the broker’s agency relationship. The “Preliminary Report” provides the 
+information upon which the instructions of the principals and of the lender(s) are based, as applicable, 
+when making/funding “purchase money” loans.  The “Preliminary Report” (together with the instructions 
+of the principals and such lender(s)) become the ba sis upon which the title insurance company provides the 
+requested insurance coverage.  
+3. Requesting Demands and/or Beneficiary Statements: 
+Such demands or beneficiary statements are genera lly obtained by the escrow holder from the lender(s) of 
+record. The necessary documents will include: 
+ a “Demand for Pay-off”, if an existing loan is to be paid in part or in full through escrow; or, 
+ a “Beneficiary Statement”, if the buyer is purch asing “subject to” or “assuming” an existing loan. 
+(Purchasing “subject to” should not occur without the buyer receiving independent professional advice 
+regarding the legal and practical consequences of such a transaction.) 
+4. Accepting Structural Pest Control  and Other Reports: 
+Structural pest control and other reports such as plumbing or roofing inspections are typically delivered to 
+the escrow holder who is to obtain, as instructed, any necessary approvals from the principals in connection 
+with such reports/inspections. The escrow holder r eceives the reports/inspections (and holds any funds 
+associated therewith) for delivery to the proper principal or party at the completion and close of the escrow 
+(or, depending upon the fact situation, for delivery subsequent to the close of the sale escrow). 
+5. Accepting New Loan Instructions, Instruments, and Related Documents: 
+If the buyer is requiring new financing, the escrow holder is to obtain the buyer’s approval/execution of the 
+loan instructions, instruments, and related documents as requested by the lender(s). The escrow holder is to 
+satisfy the instructions of the  lender(s) prior to using the  funds of the lender(s) to complete and close the 
+sale escrow. 
+6. Accepting Fire Insurance Policies and Completing  and Closing the Sale Escrow:  
+ Accepting and delivering any fire insurance policy and transferring or establishing the insurance 
+coverage, as instructed by the principals of the escrow, including the lender(s); 
+ Making all proration’s (e.g., property taxes and insurance premiums) as instructed by the principals of 
+the escrow; and, 
+ Completing the accounting  details and informing the principals the sale escrow is ready to close. 
+7. Requesting Closing Funds:  
+Upon the instructions of the principals, the escrow holder orders loan funds from the lender(s). The law 
+prohibits disbursal of funds from an escrow account until all items such as checks, drafts, etc. have cleared 
+and become available for withdrawal as an automatic right. 
+ 
+   
+ 
+ 
+    
+   
+ 
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+ 
+ 
+ 
+  
+    
+124 CHAPTER EIGHT 
+8. Auditing the File in Preparation for Closing: 
+ Accounting for all funds (Cash Reconciliation Statement) instruments and related documents; 
+ Determining that the principals have complied with the escrow instructions. 
+9. Ordering the Recording: 
+The title company (as the agent of the title insurance company), or the title insurance company intending to 
+issue the insurance coverage, will pro ceed to “date down”, i.e., to run the seller’s title to date. Thereafter, 
+the escrow holder/agent will request  recording of the necessary inst ruments, provided no change has 
+occurred in the seller’s title (since issuance of the “Preliminary  Report”). 
+10. Closing Escrow: 
+After confirming recording of the instruments described in the escrow instructions,  the escrow holder 
+prepares:  
+ Closing or settlement statements for buyer and seller (typically in th e form of a HUD 1 statement in a 
+sale escrow);  
+ Disbursing all funds; and,  
+ Delivering instruments and related documents to the principals or parties entitled thereto. 
+Proration’s 
+The seller is the fee title holder/ owner of the subject property until the completion and close of the escrow. If 
+possession is delivered at some time ot her than at the close of escrow, th e principals may agree to adjust 
+accordingly  the proration date. De pending upon the operative agreement, possession may alter one or more 
+incidents of ownership. If possession is delivered sometime after the completion and the close of the escrow, 
+the principals may agree to the proration of taxes, rent and/or assessments, along with prepaid items for which 
+the buyer becomes responsible as of the date of possession, or alternatively upon recording of the instrument of 
+conveyance (grant deed). Prepaid items include, among others ,  interest on a new loan or prepaid fire insurance 
+premiums obtained by buyer. 
+Termination 
+Escrows are voluntarily completed by full performance/execution and closing, or the escrow may be terminated 
+by mutual consent. The termination of the sale escr ow is accomplished by cancellation of the escrow, and by 
+rescission or cancellation of the residen tial purchase agreement, or other form of agreement of sale. It has been 
+held that compliance with the escrow instructions must be achieved within the time limit set forth  (unless the 
+time of performance included within the escrow instructions are mutually extended by the principals). The 
+escrow holder has no authority to enforce or accep t performance after the time limit provided in the 
+instructions. When the time limit provided in the escrow instructions has expired and either principal to the 
+escrow has not performed in accordance with the terms of the escrow instructions, the principals may elect to 
+mutually cancel the sale escrow a nd each are thereupon entitled to the retu rn of their respective property, 
+including funds, instruments and related documents. The escrow holder does not have authority to determine 
+that a principal has not performed, or that evidence of continuation of performance by either principal exists. 
+Therefore, clear and precise instructions from the principals are necessary. 
+Cancellation of Escrow - Cancellation or Rescission of Purchase Agreement/ Contract 
+Cancellation of escrow may not also cancel or rescind a purchase agreement/contract. In Cohen v. Shearer 
+(1980) 108 C.A. 3d 939, a Court of Appeal decided that cancellation of an escrow by mutual agreement of the 
+principals did not rescind the purchase agreement/contr act between them.  The di stinction between cancelling 
+or rescinding the purchase agreement/cont ract is whether the principals stop the transaction in place (subject to 
+whatever limited fees, costs, and expenses as may be imposed by third parties and/or to the payment of 
+liquidated damages pursuant to the agreement of the principals), or whether the principals are returned to their 
+respective status prior to commencing the contemplated transaction. The former is an example of cancellation 
+and the later an example of a rescission.  
+Therefore, a real estate broker seeking to carry out th e decision of the principal(s)   to cancel or rescind a 
+agreement/contract of purchase or sale should be sure th e other principal(s) to the agreement/contract agree in 
+writing to do precisely that and not simply settle for written instructions to cancel the sale escrow. As happened 
+ 
+ 
+ 
+    
+ 
+ 
+  
+  
+ 
+  
+ 
+  
+   
+ 
+   
+    
+  
+    
+ 
+     
+     
+ 
+ 
+ 
+  
+ 
+ESCROW 125 
+in the Cohen case, if a purchase agreement/contract is not canceled or rescinded along with the cancelling of the 
+sale escrow, either principal to th e purchase agreement/contract may retain  the right to specific performance of 
+the agreement/contract or for the recovery of damages. 
+WHO MAY ACT AS ESCROW HOLDER/AGENT 
+The Escrow Law (Division 6 of the California Financial Code) provides the Commissioner of Corporations 
+must license escrow holders/agents who conduct what are commonly know as public escrows. However, banks, 
+savings and loan associations, title insurance compan ies, underwritten title compan ies, trust companies, 
+attorneys and real estate brokers have certain exemptions from the licensing requirements of the Escrow Law. 
+Pursuant to Section 17006(a)(4) of the California Financial Code, a real estate broker licensed by the Real 
+Estate Commissioner is exempt from the Escrow Law when performing acts in the course of or directly 
+incidental to a real estate transacti on. The exemption further requires that the real estate broker must either be 
+an agent or a party to the real estate transaction and performing an act for which a real estate license is required. 
+For example, if a real estate broker is acting as an agent on behalf of a buyer or seller in a real estate 
+transaction, the broker may lawfully perform the escrow.  In contrast, if the real estate broker is acting solely as 
+a party (i.e., principal) to the transaction, and is not acting as a real estate agent on behalf of himself or any 
+other party, the broker is not authorized to perform the escrow under the Financial Code exemption. 
+The Department of Corporations has interpreted Section 17006 (a)(4) to mean that: 
+1. the exemption is personal to the broker and the br oker (when acting as the escrow holder) cannot delegate 
+other than ministerial duties/functions; 
+2. the exemption is not available for any association or arrangement with other brokers for the purpose of 
+conducting escrows; and  
+3. when the broker’s escrow business is a substantial factor in the utilization of the broker’s services, the 
+escrow business is not “incidental to a real estate transaction.” 
+A real estate broker cannot advertise in any manner that would tend to be misleading to the public, or advertise 
+that he or she conducts escrows under the above exemption without specifying in the advertisement that such 
+services are only in connection with th e broker’s real estate brokerage business.  Moreover, a real estate broker 
+may not use a fictitious name containing the word “escrow,” or any name which implies that escrow services 
+are provided in connection with that broker’s licensed activities, unless the fictitious business name includes the 
+term “a non-independent broker escrow” following the name.  Real estate brokers who have been or are issued 
+a license with a fictitious business name with the term “escrow”, or any term which implies that escrow services 
+are provided, must include the term “a non-independent broker escrow” in any advertising, signs, or electronic 
+promotional material (Real Estate Commissioner’s Regulation 2731(d)). 
+A real estate broker who conducts an escrow under the exemption must maintain all escrowed funds in a trust 
+account and keep proper records in acco rdance with the Real Estate Law and the Real Estate Commissioner’s 
+Regulations pertaining thereto, including Regulations 2830.1 et seq. and 2950 and 2951. 
+The agency and fiduciary duties of the real estate broker when acting as an escrow holder are not limited to the 
+course and scope of the escrow instructions (as prev iously described regarding neutral third party escrow 
+holders/agents). The real estate broker is an agent and fiduciary of one or more principals in the real estate 
+sales transaction, and the purpose and scope of the agen cy is expanded to include the escrow (when the broker 
+conducts the escrow pursuant to the previously described exemption from licensing under the Escrow Law). In 
+addition, the real estate broker representing either the buyer or seller or acting as either the buyer or seller 
+becomes the agent and fiduciary of the other principal(s) to the transaction when the broker elects to conduct 
+the escrow. The additional agency and fiduciary relationshi ps created are to be disclosed and consented to by 
+the principals and the conflicts involved with the multiple roles of the broker must be identified.    
+Escrow Companies Must Be Incorporated 
+An individual cannot be licensed as an escrow holder/ agent. A corporation duly organized for conducting an 
+escrow business must hold the license. Applicants for escr ow licenses must be financially solvent and furnish a 
+surety bond in the amount of $25,000 or more, based upon yearly average trust fund obligations. All officers, 
+directors, trustees, and employees having access to money or negotiable in struments in the possession of the 
+ 
+     
+   
+  
+    
+    
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+  
+ 
+126 CHAPTER EIGHT 
+corporate licensee must furnish a bond of indemnification against loss. All money deposited in escrow must be 
+placed in a trust account that is exempt from execution or attachment. 
+AUDIT 
+An escrow holder/agent licensed under the Escrow Law is required to keep accurate accounts and records, 
+which are subject to examination by the Commissioner of Corporations. The corporation must submit annually, 
+at its own expense, an independent audit prepared by a Certified Public Accountant.  Real estate brokers 
+conducting sale escrows are subject to the audit of their trust funds and the examination of their accounts and 
+records by the Real Estate Commissioner. 
+PROHIBITED CONDUCT 
+No escrow holder/agent licensee may disseminate misl eading statements or describe as an “escrow” any 
+transaction that is not included under the definition of “escrow” in the Financial Code or in the Civil Code. 
+An escrow holder/agent may not pay f ees to real estate brokers or othe rs for referral of business. Such 
+prohibited “fees” would include gifts of merchandise or other things of value. 
+An escrow holder/agent cannot disburse from the escrow proceeds a real estate broker’s commission prior to 
+closing of the escrow. 
+Escrow  holders/agents may not solicit or accept escrow in structions, or amended or supplemental instructions, 
+containing any blank to be filled in after signing or initialing. They may not permit any person to make any 
+addition to, deletion from, or alteration of an escrow instruction, unless it is signed or initialed by all principals 
+who had previously signed or initialed the instructions. At the time of execution, escrow holders/agents are 
+charged by law with delivering a copy of any escrow instruction, or amended or supplemental instruction, to all 
+principals executing the instructions. However, escrow instructions, being privileged and confidential, may not 
+be disclosed to non-principals. 
+Real estate brokers when conducting escrows must follo w similar standards of conduct and as required in the 
+Real Estate Law and the Commissioner’s Regulations pertaining thereto, including 2830.1 et seq. and  2950 and 
+2951. 
+A real estate broker may not nominate an escrow holde r/agent as a condition preceden t to a transaction, but 
+may suggest an escrow holder/agent, if requested to do so by the principals to the transaction.  The buyer in the 
+real estate sales transaction generally makes the selection of the escrow holder/agent and the title insurance 
+company intending to issue the title insurance coverage. 
+RELATIONSHIP OF THE REAL ESTATE BROKER AND THE ESCROW HOLDER/AGENT 
+A real estate broker should  consult the escrow holder/agent before inform ing the principals that escrow will 
+close on a certain date. An escrow includes a myriad of details, any of which could cause delay. Submission of 
+accurate instructions, instruments, and documents will expedite closing. Some suggestions: 
+1. As far as possible, make certain that the deposit receipt (residential purchase agreement/contract and the 
+escrow instructions) reflect the understandings and the intentions of the principals. 
+2. When opening escrow,  a copy of the recorded gr ant deed (instrument of conveyance) conveying title of 
+the subject property to the seller, or a copy of a deed  of trust (instrument of encumbrance) encumbering the 
+title to the subject property, or a copy of the seller’s  title insurance policy should be provided to the escrow 
+holder. Such instruments and documents should estab lish the correct legal description and the manner in 
+which seller holds title to the property. 
+3. Remember that escrow instructions and amended instructions must be in writing. If the buyers are planning 
+to be away, the real estate broker should check with the escrow holder/agent (the authorized representative 
+of the escrow holder) before the buyers leave to determine if their absence will in any way hold up closing 
+of escrow. Without instruction from the buyers as a principal to the escrow,  the real estate broker cannot 
+offer to put up  money due from the buyers or instruct the escrow officer to deduct the amount owing by 
+the buyers from the real estate broker’s commission.  The buyers may be deliberately withholding the 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+   
+ 
+ 
+  
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ESCROW 127 
+deposit of closing funds until the seller performs some condition precedent known only to the principals. 
+Except pursuant to the instructions of the buyers,  accepting the funds required of the buyers from any one 
+other than buyers may cause an escrow to close against the understandings and intentions of the principals 
+of the escrow. 
+4. Furnish the escrow officer (repres entative of the escrow holder) with th e correct spelling of the principals’ 
+names, addresses, and telephone numbers. Business and cell phone numbers should be included. Some 
+escrow holders would appreciate being told of the email addresses of the principals to the escrow. 
+5. Be sure the escrow officer (re presentative of the escrow holder) know s how the buyers want to take title. 
+Real estate brokers, salespersons, or escrow officers, should not assist with this decision, as it may involve 
+legal and tax consequences.  Independent professional advice is required. 
+6. Give escrow holders/agents the names and addresses of the existing lender(s) and/or loan servicing agents 
+and the applicable loan numbers. Many existing le nder(s), and FHA, require a 30-day advance payoff 
+notice or the sellers may be subject to additional charges on any loan payoff. 
+7. Check with the sellers regarding bonds or other lie ns on the subject property. Those not being assumed 
+may be paid during the escrow. 
+8. Notify the escrow officer (repres entative of the escrow holder) when the loan commitment required by the 
+buyers has been received, i.e., the loan terms have been  “locked” and/or an appr oval letter has been issued 
+by the intended lender(s). The approval letter must  come from the lender(s) and not from a mortgage 
+broker. A copy of the approval letter (if any) should be provided to the escrow holder.  
+9. Determine how fire insurance coverage is to be handled. The buyers may want to do business with their 
+insurance agent or with a certain insurance compan y. The sellers’ insurance policy may include other 
+property and the sellers may not want the coverage transferred to the buyers. 
+10. Be aware of the escrow holder’s/agent’s time requirement relating to non-cash deposit of funds. Checks 
+must clear and the funds must be available as an automatic right before the escrow holder/agent can make 
+ disbursements. 
+11. The principals of the escrow (buyers and sellers) should meet with the escrow officer when executing the 
+escrow instructions. It is the res ponsibility of the escrow officer (as th e authorized representative of the 
+escrow holder) to explain and to provide copies of the es crow instructions to the principals and to carry out 
+what instructions may be required by the lender(s) when  “purchase money” financing is a necessary part of 
+the transaction. 
+DESIGNATING THE ESCROW HOLDER/AGENT  
+The selection of an escrow holder/agent may not be critical to the principals in a real estate transaction. In the 
+past, real estate brokers have played a large role in deciding where such transacti ons would be escrowed. In 
+recent years,  there has been  an increasing effort on the part of fe deral and state regulators to minimize the 
+influence of the real estate broker in selection of the escrow holder. The rationale is that buyers and sellers have 
+the right, and should have the opportunity, to compare escrow  holders, escrow services and charges and, if they 
+so desire, negotiate among themselves as to where escrow will be held and conducted. In addition, the buyers 
+and the sellers (as principals to the escrow) may wish to  assert independent control over the preparation of the 
+escrow instructions. 
+DEVELOPER CONTROLLED ESCROWS - PROHIBITION  
+Civil Code Section 2995 prohibits any real estate de veloper (defined as any person or entity having an 
+ownership interest in real property which is improved by such person or entity with single-family dwellings 
+which are offered for sale to the public) from requiring, as  a condition precedent to the transfer of real property 
+containing a single-family residential dwelling, that escrow  services effecting such transfer be provided by an 
+escrow entity in which the developer has a “financial interest.” The phrase “financial interest” means ownership 
+or control of 5 percent or more of the escrow entity. A developer who violates this statute is liable for damages 
+of $250 or three times the charge for escrow services, whic hever is greater, plus attorney’s fees and costs. Any 
+waiver of this prohibition is against public policy and therefore void. 
+ 
+  
+128 CHAPTER EIGHT 

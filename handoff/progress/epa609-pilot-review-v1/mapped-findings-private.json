@@ -1,0 +1,126 @@
+{
+  "stage": "post-explanation independent review",
+  "optionsScore": {
+    "total": "8/14",
+    "service": "2/4",
+    "rules": "2/4",
+    "equipment": "3/4",
+    "yf": "1/2"
+  },
+  "fullQuestionScore": "14/14",
+  "gate": "No pass; no scaling or whole-bank approval",
+  "items": [
+    {
+      "id": "R001",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Stem changes the relevant maintenance component; filter-throughput recognition alone led me astray. Cylinder-date alternative is less competitive.",
+      "fixDirection": "No forced rewrite. If refining, replace the cylinder-date distractor with another credible pump-service timing misconception.",
+      "questionId": "EPA609-SRV-031"
+    },
+    {
+      "id": "R002",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Genuine reference-applicability decision; all references are superficially credible.",
+      "fixDirection": "Keep explicit original-assembly limitation. Do not imply replacement instructions always override later applicable OEM updates.",
+      "questionId": "EPA609-SRV-029"
+    },
+    {
+      "id": "R003",
+      "judgment": "revise",
+      "sourceVerdict": "Supported",
+      "problem": "Practical skills plus demonstration nearly identifies performing the procedure by ordinary language. Other answers concern different actors or products, with reclamation analysis especially remote. Options-only miss does not rescue this low-depth structure.",
+      "fixDirection": "Keep the authority-to-require-demonstration objective; make all options technician-focused evidence or demonstrations, differing in who can require them, location, or whether paperwork suffices. Do not ask a near-synonym match.",
+      "questionId": "EPA609-REG-026"
+    },
+    {
+      "id": "R004",
+      "judgment": "retain_with_minor_wording",
+      "sourceVerdict": "Supported calculation; tiny unsupported narrative addition",
+      "problem": "All numerical distractors map to actual arithmetic mistakes. Explanation assumes the baseline came from another job, which the stem never states.",
+      "fixDirection": "Change 20 mL counts both jobs to 20 mL includes the pre-existing 8 mL. Preserve 20\u22128=12 mL and the empty-bottle reminder.",
+      "questionId": "EPA609-EQP-024"
+    },
+    {
+      "id": "R005",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Domain recognition drove my options-only success; certification-versus-efficacy confusion is a substantive learning target.",
+      "fixDirection": "No key flipping. Keep qualification scope distinct from OEM authorization and cleaning/removal performance.",
+      "questionId": "EPA609-SRV-022"
+    },
+    {
+      "id": "R006",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Crossing service scope and vehicle type creates meaningful alternatives; both conditions matter.",
+      "fixDirection": "Keep purchase exemption distinct from certification and equipment availability when opening systems.",
+      "questionId": "EPA609-REG-004"
+    },
+    {
+      "id": "R007",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Saturated-desiccant recognition yielded an options-only hit; extended evacuation is still a real competing misconception.",
+      "fixDirection": "No compulsory rewrite. Could replace recovered-refrigerant recycling with a more direct moisture-control misconception if pilot learner data show it is nonfunctional.",
+      "questionId": "EPA609-SRV-026"
+    },
+    {
+      "id": "R008",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Extractor versus charging facility versus independent recycler are credible responsibility errors. Options-only knowledge success is not evidence of malformed options.",
+      "fixDirection": "Keep the unreclaimed salvage route explicit; avoid generalizing this actor rule to every used-refrigerant situation.",
+      "questionId": "EPA609-REG-028"
+    },
+    {
+      "id": "R009",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Failed partial-charge stage changes the answer from my anticipated successful-check stem. All offered operations are plausible sequence confusions.",
+      "fixDirection": "Keep recovery or re-evacuation in the explanation; do not imply recovery is the sole permitted machine function.",
+      "questionId": "EPA609-YF-014"
+    },
+    {
+      "id": "R010",
+      "judgment": "revise",
+      "sourceVerdict": "Supported within described mains-powered machine",
+      "problem": "Strong actual cue: three electrical variants versus one pressure hazard allowed me to anticipate unplugging from options alone. Alternatives are redundant, not three independent misconceptions.",
+      "fixDirection": "Keep residual-pressure objective, but use parallel proposed verification or maintenance actions after isolation, or independently plausible residual hazards relevant to fitting work. Avoid three mains-energized distractors. Do not invent universal capacitor/pressure behavior; source any replacement options.",
+      "questionId": "EPA609-EQP-013"
+    },
+    {
+      "id": "R011",
+      "judgment": "revise",
+      "sourceVerdict": "Core rule supported; adjacent-route sentence needs scope qualification",
+      "problem": "Resale repeats between stem and sole corresponding option; other records are about unrelated duties. The explanation\u2019s employee-certification route is broadly true under subpart F but does not waive these small-container subpart B rules.",
+      "fixDirection": "Use competing purchaser statements within the resale documentation task, varying required identity, business address, and intent fields with realistic omissions. Explicitly state the employer route does not waive 82.34(b)/82.42(b), or omit that adjacent-route sentence.",
+      "questionId": "EPA609-REG-015"
+    },
+    {
+      "id": "R012",
+      "judgment": "refine",
+      "sourceVerdict": "Supported; no false processing-location claim",
+      "problem": "Correct option is the only processing step; alternatives can be confused with prerequisites but mobile garage detail does little work. Domain familiarity supplied the options-only answer.",
+      "fixDirection": "Either make this a direct foundational recovery-versus-processing item, or use the mobile location in a genuinely consequential, precisely sourced routing scenario. Do not add gratuitous facts. If teaching off-site recycling, state its ownership limits.",
+      "questionId": "EPA609-EQP-022"
+    },
+    {
+      "id": "R013",
+      "judgment": "revise",
+      "sourceVerdict": "Supported",
+      "problem": "The immediate liquid contact mechanism is contrasted with three different exposure or energy scenarios. These facts are true elsewhere but weak competitors for the actual question. Options-only hit came from anticipating a standard frostbite question.",
+      "fixDirection": "Preserve mechanism objective and compare plausible explanations for immediate liquid-contact cooling/injury. Alternatively supply exposure observations requiring discrimination without explicitly telegraphing the mechanism. Do not imply all refrigerants burn or equate frostbite with acidic decomposition.",
+      "questionId": "EPA609-EQP-011"
+    },
+    {
+      "id": "R014",
+      "judgment": "retain",
+      "sourceVerdict": "Supported",
+      "problem": "Pit location makes density decisive; flammability is a reasonable competing reason to ventilate but not the reason for low-point coverage. Options-only success reflects recognizable domain question.",
+      "fixDirection": "Retain as foundational physical mechanism; no rewrite solely to suppress a knowledgeable prior. If more depth is required, vary a ventilation scenario while preserving the density mechanism.",
+      "questionId": "EPA609-YF-006"
+    }
+  ]
+}

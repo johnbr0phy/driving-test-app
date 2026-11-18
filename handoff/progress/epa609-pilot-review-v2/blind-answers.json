@@ -1,0 +1,86 @@
+[
+  {
+    "id": "R001",
+    "answer": "D",
+    "reason": "82.42(b)(3), with 82.34(b), requires resale-only intent and purchaser name/business address in the written statement.",
+    "findings": "A tests improper mixed shop use; B supplier-versus-purchaser identity confusion; C contact-number substitution. All conceivable documentation errors. Structural weakness: D combines the most frequently repeated components, creating a convergence cue even without legal knowledge."
+  },
+  {
+    "id": "R002",
+    "answer": "B",
+    "reason": "20 mL minus 8 mL equals 12 mL newly removed; replace that amount with fresh appropriate oil.",
+    "findings": "A uses final total; C adds readings; D uses baseline. All recognizable arithmetic/baseline confusions. Source practice is to empty the bottle before recovery; explanation should preserve that instruction and treat this as a measurement scenario, not recommend leaving old oil in it."
+  },
+  {
+    "id": "R003",
+    "answer": "B",
+    "reason": "MACS describes prolonged uncapped collision repairs saturating desiccant and recommends replacement.",
+    "findings": "A is a strong moisture-removal confusion. C is a plausible confusion between pump moisture management and circuit desiccant. D is weaker: recycling addresses refrigerant, not prolonged exposure of an open circuit. No ambiguity in best answer."
+  },
+  {
+    "id": "R004",
+    "answer": "D",
+    "reason": "82.34(d)(1)(ii)(B) assigns recycling to the facility subsequently charging the recovered salvage refrigerant, on this unreclaimed route.",
+    "findings": "A is a plausible assumption any independent recycler suffices; C assumes extractor completes processing. B invokes a valid alternative route but contradicts unreclaimed, making it easier to dismiss. Preserve approved equipment and recovery conditions in explanation."
+  },
+  {
+    "id": "R005",
+    "answer": "D",
+    "reason": "82.32(e)(2) requires common ownership of recycler and recover-only equipment by the person owning or operating the extraction establishment.",
+    "findings": "A plausibly confuses contracting with common ownership; C weakly confuses machine service provider with equipment owner; B vehicle keeper is remote from the actual equipment ownership decision. Two distractors are weak. Citation-number recall is unnecessary to the useful ownership concept."
+  },
+  {
+    "id": "R006",
+    "answer": "C",
+    "reason": "Vaporization absorbs latent heat from the skin; nearly constant refrigerant temperature distinguishes phase change from sensible warming.",
+    "findings": "D is a strong sensible-versus-latent heat confusion. A reverses heat direction and changes phase; B reverses the phase process and heat direction. Both are plausible novice thermodynamics mistakes but easier than D. Supported learning objective, not an unsupported claim that all spills have exact constant temperature."
+  },
+  {
+    "id": "R007",
+    "answer": "C",
+    "reason": "MACS p51 says a detected partial-charge leak locks out operations other than recovery and/or re-evacuation.",
+    "findings": "A plausibly over-trusts passed vacuum check; B plausibly retries the failed charge; D is a weaker routine-sequence distraction unrelated to the leak. Recovery is the only listed permitted option, not the only permitted function in the source."
+  },
+  {
+    "id": "R008",
+    "answer": "A",
+    "reason": "MACS discussion of J2670 says tested material compatibility does not assure component cleaning.",
+    "findings": "B tests mistaken OEM endorsement; C tests mistaken cleaning efficacy; D tests mistaken solvent-removal efficacy. All relate to the actual approval decision, though D needs explanation that compatibility is a different property from removability."
+  },
+  {
+    "id": "R009",
+    "answer": "C",
+    "reason": "82.32(e)(4)-(5) distinguishes top-off-only MVAC-like facilities from passenger-car MVAC facilities and businesses opening systems.",
+    "findings": "A is the important plausible overextension. B and D contradict the explicit top-off-only stem, so this four-option item collapses to a two-option vehicle-class distinction. Balanced option construction does not prevent this structural weakness."
+  },
+  {
+    "id": "R010",
+    "answer": "B",
+    "reason": "Honeywell SDS sections5-6 identifies heavier-than-air vapor and low-area accumulation; this explains the pit-specific ventilation concern.",
+    "findings": "A is a plausible confusion of general ignition hazard with location-specific accumulation. C is a weaker confusion of vapor production with vapor distribution. D is least plausible because the stem provides no temperature change or heated container. True elsewhere is not enough to make all three equally effective distractors."
+  },
+  {
+    "id": "R011",
+    "answer": "D",
+    "reason": "82.40(f) authorizes an on-premises demonstration of recovery/recycling technique.",
+    "findings": "A and B plausibly confuse endorsements with demonstration, but explicit certified status weakens B. C substitutes past records for actual performance. Structural cue: D alone is a live act while all three distractors are indirect documentary/testimonial evidence. No new mandatory job-log requirement follows."
+  },
+  {
+    "id": "R012",
+    "answer": "A",
+    "reason": "MACS p25 explains replacement condensers can come with revised charge instructions and a replacement label.",
+    "findings": "B and C are real authorities a novice might keep using, but the stem explicitly disqualifies original service data. D says earlier and is particularly weak. A is the only option linked to the newly installed component, producing a strong semantic elimination cue. Useful concept, low discrimination as written."
+  },
+  {
+    "id": "R013",
+    "answer": "B",
+    "reason": "MACS p23 describes typical pump oil intervals by operating hours and directs readers to the pump manual.",
+    "findings": "C is a strong confusion with recovery-filter loading. D is a plausible rough usage proxy but less direct. A concerns cylinder certification and is weak for pump-oil scheduling. Do not universalize the typical interval across equipment."
+  },
+  {
+    "id": "R014",
+    "answer": "B",
+    "reason": "Robinair SP01972025 VER01 p29 clears the old filter before directing power-off and replacement.",
+    "findings": "C and D are credible adjacent maintenance operations, but follow replacement; A is the earlier capacity trigger, not a required subsequent step and need not be reached before replacement. Model is named correctly. Caution: serial-number-accepted display follows clearing in the manual; stem should not imply a further clearing step occurs after that display. This can be a containment application, but unexplained code/menu recall would be manufacturer trivia."
+  }
+]

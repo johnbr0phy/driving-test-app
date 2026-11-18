@@ -1,0 +1,278 @@
+[
+  {
+    "id": "R001",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Forfeiture is the characteristic consequence of breach of a defeasible estate condition; guessed that topic."
+  },
+  {
+    "id": "R002",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Underground tank regulation commonly measures the tank and connected piping together."
+  },
+  {
+    "id": "R003",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Professional liability is the usual brokerage errors-and-omissions coverage; assumed that issue."
+  },
+  {
+    "id": "R004",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "All are plausible appraisal concepts; guessed intended use without a stem."
+  },
+  {
+    "id": "R005",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Valuation date explicitly names the valuation concept, making December feel like the intended effective date."
+  },
+  {
+    "id": "R006",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No facts distinguish these legal outcomes; guessed unenforceable claim."
+  },
+  {
+    "id": "R007",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Excess compensation tied to referrals is the only overtly problematic conduct among otherwise ordinary service-payment practices."
+  },
+  {
+    "id": "R008",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "A joint amendment ordinarily supersedes original instructions and unilateral later demands."
+  },
+  {
+    "id": "R009",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No timeframe can be identified from options alone; guessed three years."
+  },
+  {
+    "id": "R010",
+    "answer": "A",
+    "cueType": "none",
+    "cue": "These are distinct concepts with no scenario; guessed condition precedent."
+  },
+  {
+    "id": "R011",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Three business days is the familiar Closing Disclosure waiting period."
+  },
+  {
+    "id": "R012",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Selling mortgages replenishes lender liquidity in the secondary market; guessed that familiar question."
+  },
+  {
+    "id": "R013",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "All describe plausible duties; guessed confidentiality without a distinguishing fact."
+  },
+  {
+    "id": "R014",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Special assessments generally track benefit to affected property; guessed special assessments."
+  },
+  {
+    "id": "R015",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "Every choice needs different facts; guessed exercise of a contractual termination right."
+  },
+  {
+    "id": "R016",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Lot-and-block descriptions depend on the recorded plat reference."
+  },
+  {
+    "id": "R017",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Read-only access limited to relevant ledgers combines both least-privilege restrictions; other choices broaden access or editing."
+  },
+  {
+    "id": "R018",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No dimensions are supplied; guessed 6000 square feet."
+  },
+  {
+    "id": "R019",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No purpose or author supplied; guessed broker price opinion."
+  },
+  {
+    "id": "R020",
+    "answer": "D",
+    "cueType": "none",
+    "cue": "Each is a different fair-housing violation; guessed false availability."
+  },
+  {
+    "id": "R021",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Only this option directly links call timing to suppression effectiveness, whereas the others describe operational metrics."
+  },
+  {
+    "id": "R022",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Groundwater migration is a common route for subsurface contamination; guessed that route."
+  },
+  {
+    "id": "R023",
+    "answer": "A",
+    "cueType": "none",
+    "cue": "All schedules could apply to their respective contracts; guessed management compensation."
+  },
+  {
+    "id": "R024",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No loan-application facts are given; guessed occupancy misrepresentation."
+  },
+  {
+    "id": "R025",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Drying wet materials within 24\u201348 hours is the familiar mold-prevention guidance."
+  },
+  {
+    "id": "R026",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "These are separate environmental review findings; guessed a significant data gap."
+  },
+  {
+    "id": "R027",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "A rental office serving the public is the familiar ADA public-accommodation distinction."
+  },
+  {
+    "id": "R028",
+    "answer": "A",
+    "cueType": "surface",
+    "cue": "Both principals is the inclusive ethical-consent answer; the only choices each arbitrarily privilege one principal."
+  },
+  {
+    "id": "R029",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No loss is described; guessed flood insurance."
+  },
+  {
+    "id": "R030",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No promise is described; guessed illusory commitment."
+  },
+  {
+    "id": "R031",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Referral understanding is the only choice not explicitly framed as permitted, direct-to-customer, or actual-service compensation."
+  },
+  {
+    "id": "R032",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No definition supplied; guessed scope of work."
+  },
+  {
+    "id": "R033",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Relevant records is broader and purpose-oriented; all distractors repeatedly confine available records to one area."
+  },
+  {
+    "id": "R034",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "A grantor with no interest conveys no estate by quitclaim; guessed that common scenario."
+  },
+  {
+    "id": "R035",
+    "answer": "A",
+    "cueType": "none",
+    "cue": "No ledger entries supplied; guessed A has a 300-dollar shortage."
+  },
+  {
+    "id": "R036",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Preserving controls is an ongoing obligation; the other options are historical investigation steps, making C the outlier."
+  },
+  {
+    "id": "R037",
+    "answer": "D",
+    "cueType": "none",
+    "cue": "No government or private action is described; guessed eminent domain."
+  },
+  {
+    "id": "R038",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Comparable sales are analyzed in their condition at sale."
+  },
+  {
+    "id": "R039",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Borrower retaining title is the familiar lien-theory description; guessed lien theory rather than title theory."
+  },
+  {
+    "id": "R040",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "The engaging lender is normally the appraisal client even when the buyer pays."
+  },
+  {
+    "id": "R041",
+    "answer": "D",
+    "cueType": "none",
+    "cue": "No underwriting issue is stated; guessed duration of income."
+  },
+  {
+    "id": "R042",
+    "answer": "A",
+    "cueType": "none",
+    "cue": "No operands supplied; guessed 7800 dollars."
+  },
+  {
+    "id": "R043",
+    "answer": "A",
+    "cueType": "surface",
+    "cue": "Only A is a narrowly necessary repair; all alternatives expand or upgrade systems, suggesting emergency authority."
+  },
+  {
+    "id": "R044",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Appraisal Subcommittee is the appraisal-focused regulator among broader finance agencies."
+  },
+  {
+    "id": "R045",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Reconveyance deed is the standard trust-deed payoff release instrument; guessed payoff."
+  },
+  {
+    "id": "R046",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "Without reliability facts neither cost nor sales has inherent priority; guessed sales indication."
+  }
+]

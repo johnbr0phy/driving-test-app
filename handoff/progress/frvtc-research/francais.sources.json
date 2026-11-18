@@ -1,0 +1,194 @@
+[
+  {
+    "questionId": "FRVTC-FRA-001",
+    "objective": "Distinguer l'information modifiée des informations maintenues",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-002",
+    "objective": "Identifier l'acteur d'une action",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-003",
+    "objective": "Repérer une information non confirmée",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-004",
+    "objective": "Reconstituer une succession d'étapes",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-005",
+    "objective": "Identifier le référent d'un pronom",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-006",
+    "objective": "Comprendre un lien de cause à conséquence",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-007",
+    "objective": "Comprendre une appréciation nuancée",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-008",
+    "objective": "Identifier une condition précise",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-009",
+    "objective": "Délimiter la portée d'une interdiction",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-010",
+    "objective": "Tirer une conclusion d'une comparaison",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-011",
+    "objective": "Reconnaître l'intention d'une demande professionnelle",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-012",
+    "objective": "Distinguer disponibilité téléphonique et disponibilité opérationnelle",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-013",
+    "objective": "Comprendre un mot dans son contexte",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-014",
+    "objective": "Synthétiser la finalité d'une organisation",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-015",
+    "objective": "Distinguer constat et extrapolation",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-016",
+    "objective": "Distinguer une action achevée d'une action restante",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-017",
+    "objective": "Comprendre des possibilités alternatives",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-018",
+    "objective": "Interpréter un connecteur temporel",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-019",
+    "objective": "Respecter la portée d'une réserve",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-020",
+    "objective": "Repérer un moyen d'évaluer un résultat",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-021",
+    "objective": "Reconnaître une reformulation professionnelle fidèle",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-022",
+    "objective": "Suivre l'évolution d'une quantité dans un récit",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-023",
+    "objective": "Distinguer étude envisagée et décision prise",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-024",
+    "objective": "Comprendre des conditions cumulatives",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  }
+]

@@ -1,0 +1,929 @@
+9 Landlord and Tenant  
+ 
+The distinguishing feature of a leasehold interest is the right to exclusive possession and use of real property, for 
+a fixed period of time, held by the lessee (or “tenant”). The lessor (or “landlord”), having parted with this right 
+to exclusive possession, merely holds the basic title (the “reversion”) during the existence of the lease. Hotel 
+guests, licensees and employees may all be privileged to use a given space under certain contractual conditions, 
+but since none of these has an exclusive right to possession, they are not governed by the laws regulating the 
+relationship of landlord and tenant. 
+A leasehold estate itself is chattel real. Although the lessee has an estate/interest in real property, the estate is in 
+fact a form of personal property, governed by laws applicable to personal property. 
+Types of Leasehold Estates 
+Most authorities classify leases into four categories, based on the lease term: 
+ Estate for years; 
+ Estate from period to period (periodic tenancy); 
+ Estate at will; and 
+ Estate at sufferance. 
+Estate for years.  An estate for years  is one which is to continue for a definite period fixed in advance by 
+agreement between landlord and tenant. The name is somewhat misleading because the period may be for less 
+than a year, measured in specific days, weeks, or months. 
+Estate from period to period. An estate from period to period  (or periodic tenancy) is one which continues for 
+periods of time (typically year- to-year, month-to-month, or week-to-week) as designated by landlord and tenant 
+in their agreement. The most common periodic tenancy is the month-to-month tenancy. 
+Estate at will. An estate at will is one which is terminable at the will or unilateral decision of either party with 
+no designated period of duration. Tenancies at will are uncommon because the landlord’s acceptance of periodic  
+rents causes the tenancy to be treated like a periodic tenancy (Civil Code Section 1946). By statute, California 
+and certain other states have modified the potentially summary and abrupt conclusion of such estates to require 
+advance 30-day notice of termination by either party. 
+Estate at sufferance. An estate at sufferance is one in which the tenant who has rightfully come into possession 
+of the land retains possession after the expiration of the term. For example, a tenant who holds over after the 
+expiration of a lease would be deemed to be holding an estate at sufferance. 
+Dual Legal Nature of Lease 
+A lease is an oral or written agreement that creates and governs, by express or implied terms, a landlord-tenant 
+relationship. A lease has two characteristics, each of which has its own set of rights and obligations:  
+1. a conveyance by the landlord to the tenant of an estate in real property covering the premises leased (which 
+creates “privity of estate” between the landlord and tenant); and 
+2. a contract betwe en the landlord and tenant which governs both the landlord’s delivery and maintenance of 
+the premises and the tenant’s possession of, use of, and payments for the premises (which creates “privity of 
+contract” between the landlord and tenant). 
+Verbal and Written Agreements 
+A lease with a term of one year or less may be created by verbal agreement. However, for the sake of clarity and 
+to reduce the risk of disagreement (both during the lease term and
+ after tenant’s surrender of the premises), all 
+leases, even those with month-to-month terms, should be reduced to written form. 
+California’s Statute of Frauds requires a lease to be in writing if it either:  
+1. has a term longer than one year; or  
+2. has a term less than one year which expires more than one year after the agreement is reached. 
+An example of a lease with a term of less than one year that must be in writing is a lease for a ten month term 
+that begins three months from the date when an agreement is reached. Although one might automatically assume 
+CHAPTER NINE 
+ 
+130 
+that the lease would not need to be in writing since it is for a term of less than one year, the contractual 
+relationship (which will exist during the three month “pre -tenancy” period and the ten month term of lease) will 
+actually be maintained for thirteen months.  
+Unwritten leases that are for a term of longer than one year or that expire more than one year after the agreement 
+is reached are unenforceable. If a tenant enters into possession under an unenforceable lease, the tenant becomes 
+a tenant at-will. 
+Lease Ingredients 
+No particular words, form, or language are required to create an oral or written lease. However, the words used 
+must:  
+1. evidence the landlord’s and tenant’s intent to create a landlord -tenant relationship (which intent is apparent 
+from either the parties’ acts or deeds, or the language of a written agreement);  
+2. identify the parties;  
+3. describe the premises leased;  
+4. specify the time, amount, and manner of rental payments; and  
+5. establish a definite term. 
+Contract and Conveyance Issues 
+In light of its dual character of being a contract and a conveyance, an enforceable lease must satisfy specific 
+laws with respect to:  
+1. the creation and interpretation of a contract; and  
+2. the prerequisites for the transfer of an interest in real property. 
+Contract specifics. The general rules regarding the creation of a lease (and contract), in addition to those 
+governing whether or not there must be a writing, include: 
+1. mutual assent of landlord and tenant (i.e., an offer and an acceptance); 
+2. mutuality of obligation (i.e., neither party may have an unrestricted right to withdraw from the lease); 
+3. legal capacity of each party to contract (which, in general, excludes minors, persons of unsound mind, and 
+persons deprived of their civil rights); and  
+4. lawful object (e.g., use does not violate health and safety regulations or criminal statutes). Although a lease 
+may, indeed, have a lawful object, specific provisions within the lease may be deemed against public policy 
+and therefor void. For ex ample, residential leases that waive tenant procedural rights (such as the right to 
+receive a notice of default) or rights regarding security deposits; or waive any future course of action 
+against the landlord. 
+As a contract, a written lease is construed according to the intent of the parties, as gathered from the language of 
+the lease and the performance of the parties under the lease, and in accordance with the rules of interpretation of 
+contracts. Furthermore, like other written contracts, the executory (yet to be performed) provisions of a written 
+lease may not be orally modified. Rather, such provisions must be modified in a writing signed by all parties to 
+the original lease. To the extent that the parties mutually agree to modify the lease with respec t to fully 
+performed lease obligations, such modifications become executed modifications of the lease.  When a lease is 
+negotiated in Spanish and is for a residential unit, the lease must be written in Spanish. 
+Execution, delivery and acceptance.  In general , a written lease must be executed, delivered, and accepted 
+before it may be enforced according to its express terms. However, a lease signed and delivered by the landlord 
+is enforceable by the tenant even if the tenant fails to sign the lease. On the othe r hand, if the tenant takes 
+possession of the premises or pays the stipulated rent, having still failed to sign the lease, the tenant’s acceptance 
+of the landlord’s delivery of the executed lease and premises is presumed and the landlord may then enforce t he 
+lease provisions against the tenant. The lease must be fully executed, however, before the landlord may enforce 
+the lease’s special contractual covenants (e.g., a covenant to repair) against the tenant. 
+Recording. A lease (or memorandum thereof summariz ing key provisions) may be recorded in the official 
+public records of the county in which the leased premises are situated. However, even an unrecorded lease is 
+enforceable between the parties and against any party who, with notice of the tenant’s interest , receives an 
+LANDLORD AND TENANT 
+ 
+131 
+interest in the property in which the premises are situated. If a lease term exceeds one year and the lease is not 
+properly recorded, and if the tenant’s possession under the lease does not give a bona fide purchaser notice of 
+the tenant’s on -going tenancy, that tenancy becomes subject (and subordinate) to the bona fide purchaser’s 
+interest in the leased premises. 
+Rights and Obligations of Parties to a Lease 
+A number of matters should be considered before entering into a lease agreement. Many of these are relatively 
+unimportant in an oral month- to-month tenancy, but become increasingly important in the case of written 
+leaseholds for a longer period of time. Since these subjects are each covered in considerable detail by contract 
+provisions of the instrument, each written lease must be studied to determine the rights and obligations of the 
+parties involved. Some of the more important aspects of a lease are: 
+1. term of lease; 
+2. rent; 
+3. security deposit; 
+4. possession, maintenance, and improvements; 
+5. liability of parties for injuries resulting from condition of premises; 
+6. transfer of interest in leased premises; 
+7. special covenants, conditions and provisions; and, 
+8. termination. 
+Term of lease. The lease term is that period of time during which the tenant may occupy the premises. Since the 
+lease term is an essential element of a lease, if the lease fails to specify its term, a specific period of time will be 
+implied as a matter of law, and the length of that period of time hinges on the nature of the lease and the 
+circumstances surrounding it. 
+A lease term need not commence with full execution of the lease, and it ordinarily is based on a fixed or 
+computable period. On some occasions, however, the length of a tenancy is either:  
+1. conditioned on the occurrence of an event which may trigger the commencement of the lease term, 
+terminate the lease term, or both; or  
+2. based on the life of the landlord. 
+A common example is a term which commences upon the landlord’s completion of certain improve ments to the 
+premises and/or delivery thereof to the tenant. If, however, a lease is to commence upon the occurrence of a 
+future event, the lease becomes invalid if the term does not commence within 30 years of full execution of the 
+lease. 
+Where the parties fail to specify the lease term, the term is determined in accordance with the following statutory 
+presumptions, each of which applies to a certain type of rental property: 
+1. For lodgings, dwelling-houses, and residential properties, the period of time adopted for the payment of 
+rent. For example, if rental payments are due on a monthly basis, the lease term is equal to one month. If the 
+lease fails to address the period adopted for rental payments, the tenancy is presumed to be for one month. 
+(Civil Code Section 1944). 
+2. For agricultural or grazing properties, one year. 
+3. For all other properties where there is no custom or usage on the subject, the tenancy is for one month 
+unless otherwise designated in writing. (Civil Code Section 1943). 
+Even if the landlord and tenant do specify a lease term or the term is implied by statute, the following statutory 
+restrictions will supersede and limit the lease term: 
+1. A lease for agricultural or horticultural purposes cannot have a term exceeding 51 years. 
+2. A lease for any town or city lot cannot have a term exceeding 99 years. 
+3. A lease of land for the production of minerals, oil, gas, or other hydrocarbon substances cannot have a term 
+exceeding 99 years. 
+CHAPTER NINE 
+ 
+132 
+4. A lease of property owned by an emancipated minor or  an incompetent person cannot have a term longer 
+than a probate court may authorize. 
+A lease renewal  creates a new and distinct tenancy. Accordingly, the parties should execute an entirely new 
+instrument. 
+A lease extension is a continuation in possession u nder the original lease. A lease extension may also occur if 
+the tenant holds over with permission from the landlord. Indeed, if a tenant remains in possession of the 
+premises after expiration of the lease term and the landlord accepts rental payments, the  parties are presumed to 
+have renewed the lease on the same terms and conditions on a month -to-month basis if rent is payable monthly, 
+and in no event longer than one year. 
+A contractual right to extend or renew a lease is an irrevocable offer by the landlord to lease the premises in the 
+future on specific terms. Such a right to extend or renew a lease is within the Statute of Frauds and, therefore, if 
+the original lease is covered by the Statute of Frauds or if the lease, as extended, would be covered  by the 
+Statute of Frauds, the renewal or extension must be in writing to be enforceable. 
+To be enforceable, lease provisions for the extension or renewal of a lease must be reasonably specific and 
+contain all of the material terms. A provision on terms “t o be mutually agreed upon” is generally unenforceable. 
+An unexercised option to extend the term for a specified period does not create a property right until it is 
+exercised unequivocally and in strict accordance with its terms. Whether specified in the le ase or not, an option 
+hinges on the continued viability of the lease and must be exercised prior to expiration or earlier termination of 
+the lease. A lease that is limited to the hiring of residential real property and provides for an automatic renewal 
+or extension of the lease if the tenant either remains in possession after lease expiration or fails to give notice of 
+intent not to renew, is voidable by the party who did not prepare the lease. Provided, however, that such a lease 
+is valid if, in a printed lease, the automatic renewal clause is printed in 8 -point boldface type and a recital of 
+inclusion of the automatic renewal clause appears in 8-point boldface type immediately above the signature line. 
+Rent. Rent is the consideration paid for possession, use, and enjoyment of leased property. A tenant’s obligation 
+to pay rent arises from either the express terms of a lease (privity of contract) or a tenant’s mere occupancy of 
+the premises where no gift is intended (privity of estate). 
+Through privity of con tract, a tenant is bound by a covenant to pay rent even if the tenant never enters into 
+possession of the premises. Through privity of estate, even if a lease does not specify the terms for payment of 
+rent, an obligation to pay rent arises out of a tenant’ s occupancy of the premises (again, assuming no gift is 
+intended). 
+Since, by statute, the term “rent” includes “charges equivalent to rent,” rental payments need not be paid in 
+currency (unless otherwise specified in the lease), but may be made in the form  of goods, crops, and any other 
+product or other consideration agreed upon by the parties. 
+Unless there is either a course of dealing between the parties or a lease provision to the contrary, rental 
+payments are due at the end of each successive holding pe riod or term (e.g., at the end of the day, week, month, 
+quarter, or year). In addition, in the absence of any lease provision to the contrary, rental payments must be 
+delivered to the demised premises. Most commercial and residential leases, however, speci fically provide for 
+payment of rent in advance of the period covered by such payment and provide for payment of rent to a specific 
+address. 
+Rent paid by check constitutes payment of rent conditioned on the landlord presenting the check to the drawee 
+bank, and the tenant’s obligation to pay rent is merely suspended until the check is presented to the drawee bank. 
+If, however, the tenant knows that there are insufficient funds to honor the check at the time of delivery to the 
+landlord, the tenant’s obligation to pay rent is not suspended and the landlord may, immediately after the rent is 
+due, sue for the payment of rent or commence eviction proceedings. In addition, although the landlord is liable 
+for any loss caused by its delay in presenting a rental check to the drawee bank, the landlord’s acceptance of a 
+rental payment by check does not prejudice its right to sue for collection of rent or to evict the tenant for failure 
+to pay rent. 
+A late charge  is enforceable by the landlord if the amount specified in th e lease is reasonably related to the 
+landlord’s anticipated administrative costs and loss of interest caused by the late payment. However, since 
+LANDLORD AND TENANT 
+ 
+133 
+forfeiture of a lease is a drastic remedy, when a lease does provide for a late charge the landlord may not hav e 
+the right to terminate the lease solely because of a late rental payment. 
+In general, rent that is paid in advance is due on a specific date and is not apportionable. However, if, after 
+prepayment of rent, the lease is terminated due to the fault of the landlord (thereby causing a “constructive 
+eviction”), or if the lease provides for apportionment of rent, the rule against apportionment is inapplicable. If 
+rent is not prepaid and the lease is terminated prior to the expiration of the term, the tenant is liable for that 
+portion of the rent due for the time during which the tenant had the right to occupy the premises. 
+Unless otherwise specified in the lease or unless terminated prior to the expiration of the lease term (for 
+example, due to complete destruction or condemnation of the premises, or the tenant’s death), a tenant must pay 
+rent throughout the term of the lease and thereafter until the tenant returns possession of the premises to the 
+landlord. If the tenant tenders possession of premises to the lan dlord upon the expiration of the lease, the 
+tenant’s rental obligation terminates at that time. 
+A tenant’s obligation to pay rent is generally deemed an “independent” lease obligation: i.e., independent of the 
+landlord’s lease obligations to the tenant. Therefore, even if the landlord fails to honor its lease obligations (e.g., 
+fails to perform its maintenance obligations), the tenant must continue to pay rent according to the provisions of 
+the lease. 
+In contrast, if the landlord breaches a material covenan t of the lease, the tenant’s obligation to pay rent may be 
+abated or terminated. For example, in a residential lease, if the landlord fails to honor the implied warranty of 
+habitability (which is deemed so material that it cannot be waived by the tenant), the tenant is deemed 
+constructively evicted and may remain in possession and abate rental payments in proportion to the impairment 
+of use and enjoyment of the premises. In addition, if a residential or commercial tenant is actually or 
+constructively evicte d from the premises as a result of events not caused by the tenant, such as partial 
+condemnation or lack of access to the premises (and assuming that the risk of such occurrence is not allocated to 
+the tenant in the lease), the tenant’s rental obligations terminate if (and only if) the tenant vacates the premises. 
+Generally, if the leased premises are taken by government power or eminent domain, the lease will be 
+terminated as of the date of taking (unless the lease specifically provides otherwise), and the  tenant’s obligation 
+to pay rent would cease. However, if only a portion of the leased premises is taken and the remaining portion is 
+still usable for the purpose for which it was leased, the tenant may still be obligated to  continue to pay rent 
+according to the terms of the lease agreement. Thus, it may be advisable for the parties to provide in the lease 
+for a proportional abatement of rent if the leased premises are partially taken; and to specify what portion of the 
+premises (e.g., 50%), if taken, will constitute a complete taking and terminate the tenant’s obligation to pay rent. 
+Security deposit. A security deposit secures a tenant’s performance of lease obligations. It constitutes assurance 
+to the landlord that, in the very least and to the extent of the security deposit, the tenant’s monetary obligations 
+will be satisfied. 
+Although a security deposit is generally cash deposited with the landlord, other forms are often used in 
+commercial transactions: letters of credit and certificates of deposit. In addition, a security deposit may generally 
+be categorized pursuant to the terms of the lease as:  
+1. prepaid rent (generally for rent payable at the end of the term);  
+2. a forfeitable security deposit (forfeited in its entirety upon a tenant default specified in the lease);  
+3. a non-forfeitable security deposit (refunded at the end of the term, less debits attributable to specified tenant 
+defaults); or  
+4. a bonus for lease execution (non-refundable). 
+In any event, a security deposit is held by the landlor d for the benefit of the depositing tenant, and a tenant’s 
+claim to the security deposit has priority over claims of all the landlord’s creditors except a trustee in 
+bankruptcy. 
+In a residential lease, notwithstanding the specific terminology (e.g., “advan ce payment,” “fee,” or “charge”) or 
+the purpose designated (e.g., a “cleaning” or “security” deposit) used to describe a tenant’s monetary deposit to 
+secure performance under the lease, the money deposited is a refundable security deposit. Any purported wa iver 
+CHAPTER NINE 
+ 
+134 
+by a tenant of the right to a refund of the security deposit (less allowable debits attributable to the tenant’s 
+defaults as specified in the lease) is null and void. 
+A landlord may require that the tenant pay, regardless of the purpose therefor and i n addition to the first month’s 
+rent, a maximum of:  
+ two months’ rent in the case of an unfurnished residential property;  
+ three months’ rent in the case of a furnished residential property. 
+If, however, the term of the lease is six months or longer, the landlord is not prohibited from collecting an 
+advance payment of not less than 6 months rents. 
+These limitations do not preclude the landlord and tenant from entering into a mutual  agreement for the 
+landlord, at the request of the tenant and for a specified fee or charge, to make structural, decorative, furnishing, 
+or other similar alterations, if the alterations are other than cleaning or repairing for which the landlord may 
+charge the previous tenant as provided by Civil Code Section 1950.5 (e). 
+Within three weeks after a tenant vacates and surrenders the premises, but not earlier than the time that either the 
+landlord or the tenant provides a lawful notice to terminate the tenancy or not earlier than 60  calendar days prior 
+to the expiration of a fixed -term lease, the landlord must furnish the tenant, by personal delivery or by first class 
+mail, postage prepaid, a copy of an itemized statement indicating the basis for, and the amount if, any security 
+received and the dis position of the security and must return any remaining portion of the security to the tenant. 
+Along with the itemized statement, the landlord must also include copies of documents showing charges 
+incurred and deducted by the landlord to repair or clean the premises, as detailed by Civil Code Section 1950.5. 
+If the landlord sells the residential property or transfers its interest in the premises, the landlord may transfer the 
+security deposit (less any lawful deductions) to the new landlord. In the event of any such transfer, the landlord 
+must (by personal delivery or first -class mail, postage prepaid) give the tenant written notice specifying the 
+amount of the transfer, itemizing the deductions, and identifying the successor landlord by name, address, and 
+telephone number. Alternatively, the landlord may return the security deposit to the tenant, less any lawful 
+deductions, with a statement itemizing the deductions therefrom. The successor residential landlord has the same 
+rights and obligations with respect to a security deposit as the original landlord. 
+The existence of a security deposit creates a debtor/creditor relationship between the landlord and tenant. 
+Consequently, the landlord has a personal obligation to return the security deposit (less any lawful  deductions). 
+If the original landlord fails to satisfy either statutory alternative set forth immediately above, both the original 
+landlord and the successor landlord remain personally liable to the tenant for the amount of the deposit (less any 
+lawful deductions). 
+If the landlord retains any portion of the deposit in bad faith, the landlord is liable for actual damages,  along 
+with possible statutory penalty of up to twice the amount of the security. A court ma y award to the tenant 
+damages for bad faith whenever the facts warrant such an award. 
+The law governing commercial property security  deposits is less onerous to landlords in each of the following 
+material respects (and is otherwise similar to that governing residential property security deposits):  
+1. The landlord may claim of the payment or deposit only those amounts as are reasonably necessary to 
+remedy tenant defaults in the payment of rent, to repair damages to the premises caused by the tenant, or to 
+clean the premises upon termination of the tenancy, if the payment or deposit is made for any or all of those 
+specific purposes. 
+2. If the claim of the landlord upon the payment or deposit is only for the defaults in the payment of rent and 
+the security deposit equals no more than one month’s rent  plus a deposit amount clearly described as the 
+payment of the last month’s rent, then any remaining portion of the payment or deposit must be returned to 
+the tenant at a time as may be mutually agreed upon by the landlord and tenant, but in no event later than 30 
+days from the date the landlord receives possession of the premises. 
+3. If the claim of the landlord upon payment or deposit is only for defaults in the payment of rent and the 
+security deposit exceeds the amount of one month’s rent  plus a deposit amount clearly described as the 
+payment of the last month’s rent, then any remaining portion of the payment or deposit in excess of an 
+amount equal to one month’s rent must be returned to the tenant no later than two weeks after the date th e 
+LANDLORD AND TENANT 
+ 
+135 
+landlord receives possession of the premises, with the remainder to be returned or accounted for within 30 
+days from the date the landlord receives possession of the premises. 
+4. If the landlord in bad faith fails to return the security deposit in a time ly manner, the statutory penalty is 
+$200, in addition to any actual damages. 
+5. If the claim of the landlord upon the payment or deposit includes amounts reasonably necessary to repair 
+damages to the premises caused by the tenant or to clean the premises, then any remaining portion of the 
+payment or deposit must be returned to the tenant at a time as may be mutually agreed upon by landlord and 
+tenant, but in no event later than 30 days from the date the landlord receives possession of the premises. 
+Possession, maintenance and improvements. In a commercial lease, the landlord’s right  of entry to perform 
+maintenance obligations should be set forth in the lease. If not, a landlord would likely be permitted access to 
+the premises to perform obligations under the lease, following reasonable advance notice. 
+In contrast, a landlord may enter premises rented to a residential tenant only in specific situations, at certain 
+times, and after giving (or attempting to give) advance notice. 
+Specifically, a landlord may enter a dwelling unit only:  
+1. in case of emergency; 
+2. to make necessary or agreed repairs, decorations, alterations, or improvements; 
+3. to supply necessary or agreed services; 
+4. to show the dwelling to prospective or actual purchasers, mortgagees, tenants, workers, or contractors; 
+5. where the tenant has abandoned or surrendered the premises; or 
+6. pursuant to court order. 
+A landlord may not abuse the right of access or use it to harass the tenant. Any purported waiver or modification 
+by tenant of the statutory protection in this regard is null and void.  
+Except for cases of emergency, unless the tenant has abandoned or surrendered the premises or the tenant is 
+present and consents at the time of entry, a landlord may only enter the dwelling unit dur ing normal business 
+hours. Unless it is impracticable to do so, the landlord must give the tenant reasonable notice of intent to enter 
+the premises. Twenty four hours advance notice is presumed to be reasonable absent evidence to the contrary. 
+If the purpo se of the entry is to exhibit the dwelling unit to prospective or actual purchasers, the notice may be 
+given orally, in person or by telephone, if the landlord or his or her agent has notified the tenant in writing 
+within 120 days of the oral notice that the property is for sale and that the landlord or agent may contact with the 
+tenant orally for the purpose described in the statute. Twenty -four hours is presumed reasonable notice in the 
+absence of evidence to the contrary. The notice must include the date , approximate time, and purpose of the 
+entry. At the time of entry, the landlord or agent must leave written evidence of the entry inside the unit. The 
+tenant and the landlord may agree orally to an entry to make agreed repairs or supply agreed services. T he 
+agreement must include the date and approximate time of the entry, which must be within one week of the 
+agreement. In this case, the landlord is not required to provide the tenant a written notice. 
+While a landlord’s limited right of entry is defined by  statute, a tenant’s remedy against a landlord who fails to 
+honor the statutory requirement is not specified in the statute. A tenant may, however, pursue either: the 
+common law remedy for breach of the implied warranty of quiet enjoyment, including invasi on of privacy and 
+intentional infliction of emotional distress; or the statutory remedy of relief from harassment under California 
+Code of Civil Procedure Section 527.6. 
+Similarly, a landlord’s remedy against a tenant for failure to permit access (after pr oviding the requisite notice) 
+is not defined by statute. Denied access, the landlord may have to seek entry under court order. 
+The essence of a tenant’s leasehold interest is possession, or the right to possess, the leased premises. In every 
+lease, the law  implies a covenant on the part of the landlord to provide the tenant with possession and “quiet 
+enjoyment” of the premises. This “covenant of quiet enjoyment” constitutes a warranty by the landlord that the 
+landlord will not take any action or make any om ission which disturbs a tenant’s right to possession and quiet 
+enjoyment of the premises. The covenant does not protect the tenant from the acts of third parties over whom the 
+landlord has no control. 
+CHAPTER NINE 
+ 
+136 
+A landlord can breach the covenant of quiet enjoyment in various ways, some of which are: 
+1. causing a tenant to be “evicted,” i.e., physically removed from the leased premises under circumstances 
+where the tenant otherwise has the legal and contractual right to possession. 
+2. denying a tenant access to the premises. 
+3. causing or permitting a third party who has paramount title to physically oust the tenant. For example, if a 
+lender forecloses upon the landlord’s property pursuant to a mortgage which is senior to the tenant’s lease 
+(and there is no “non -disturbance” agreement between the tenant and the lender), the lease is extinguished 
+and the foreclosing lender has the right to evict the tenant. This would constitute a breach of the covenant 
+by the landlord, even though it is the lender rather than the landlord actually evicting the tenant. 
+4. any disturbance, caused either directly by the landlord or by a person or circumstance within the landlord’s 
+legal control, of the tenant’s use or possession of the leased premises whereby the property is rendered 
+wholly or substantially unsuitable for the use for which it was leased. For example: a landlord’s attempt to 
+lease the property to a third party; harassing the tenant or making unwarranted threats of expulsion; making 
+extensive and unwarranted alterations to the  leased property which materially and adversely interfere with 
+the tenant’s use and enjoyment thereof; or failing to make necessary repairs to the premises. Of course, a 
+tenant cannot establish a constructive eviction if the tenant, by wrongful or negligen t action, causes the 
+defects in the premises.  
+It must be emphasized that a tenant must have a legal right to possession of the premises in order to make a 
+claim of breach of the covenant of quiet enjoyment. Thus, if a landlord evicts a tenant through prop er legal 
+procedures following a default by the tenant under the lease, the tenant no longer has a legal right to occupy the 
+premises and eviction would not constitute a violation of the covenant of quiet enjoyment. 
+For many years, the courts held that a te nant relying on the doctrine of constructive eviction must surrender 
+possession of the premises in order to escape the obligation to pay rent. This rule still applies to leases of 
+commercial buildings. However, the California Supreme Court has held that th ere is no obligation to vacate the 
+premises in order to avoid the obligation to pay rent where the leased premises is a dwelling. Instead, the 
+California Supreme Court held that there exists an implied warranty of habitability from the landlord to the 
+tenant that the premises will be maintained in a condition to meet bare living requirements , and that if the 
+landlord breaches this implied warranty the tenant will remain liable for the reasonable rental value of the 
+premises in the condition existing at the time of the violation as long as the tenant continues to occupy the 
+premises. A condition which renders a dwelling partially or entirely uninhabitable, however, does not 
+automatically give the tenant the right to reduce or cease paying rent. Before the ten ant may be entirely or 
+partially absolved from the obligation to pay rent, or may vacate the premises, the tenant must have given notice 
+to the landlord of the defects which allegedly render the premises uninhabitable or unusable and the landlord 
+must have failed to cancel or cure such defects within a reasonable time following receipt of tenant’s notice. If a 
+tenant vacates the leased premises or pays a reduced rent based upon even a good faith belief that the condition 
+of the premises supports a claim of constructive eviction, such tenant does so at the risk that a court may deny 
+the allegation that the premises are totally or partially uninhabitable. In such circumstances, a court may rule that 
+the tenant violated the lease by failing to pay the full amou nt of rent owed under the lease, entitling the landlord 
+to the same remedies as if a tenant simply defaulted in the obligation to pay rent, including ordering that the 
+tenant be evicted from the premises and awarding the landlord damages against the tenant  for the reasonable 
+rental value of the premises for the remainder of the lease term. 
+A landlord of a residential dwelling has a legal duty to keep the dwelling in a habitable condition. Civil Code 
+Section 1941.1 sets forth the following criteria: 
+1. Effective waterproofing and weather protection of roof and exterior walls, including unbroken windows and 
+doors; 
+2. Plumbing or gas facilities which conformed to applicable law in effect at the time of installation, maintained 
+in good working order; 
+3. A water supply approved under applicable law, which is under the control of the tenant, capable of 
+producing hot and cold running water, or a system which is under the control of the landlord which 
+produces hot and cold running water, furnished to appropriate fixt ures and connected to a sewage disposal 
+system approved under applicable law; 
+LANDLORD AND TENANT 
+ 
+137 
+4. Heating facilities which conformed with applicable law at the time of installation, maintained in good 
+working order; 
+5. Electrical lighting, with wiring and electrical equipment which conformed with applicable law at the time of 
+installation, maintained in good working order; 
+6. Building, grounds, and appurtenances at the time of commencement of the lease or rental agreement in 
+every part clean, sanitary, and free from all accumulations of debris, filth, rubbish, garbage, rodents, and 
+vermin, and all areas under control of the landlord kept in every part clean, sanitary, and free from all 
+accumulations of debris, filth, rubbish, garbage, rodents, and vermin; 
+7. An adequate number of appropriate receptacles for garbage and rubbish, in clean condition and good repair 
+at the time of the commencement of the lease or rental agreement, with the landlord providing appropriate, 
+serviceable receptacles thereafter, and being responsible for the clean condition and good repair of such 
+receptacles under his control; and  
+8. Floors, stairways, and railings maintained in good repair. 
+9. A locking mail receptacle for each residential unit in a residential hotel, as required by Section 17958.3 of 
+the Health and Safety Code. 
+There are other statutory provisions which affect the landlord’s maintenance obligations. For example, the 
+California Health and Safety Code requires that every dwelling intended for human occupancy have an operable 
+smoke detector. The landlord is responsible for installing and maintaining the smoke detector, but if a smoke 
+detector is operable when the tenant takes possession, the tenant has a duty to inform the landlord if it becomes 
+inoperable. 
+It is not always clear t hat a landlord’s failure to maintain constitutes a breach of the implied warranty of 
+habitability. A court will decide this on a case- by-case basis. Generally, if a unit falls into disrepair but still 
+meets basic living requirements, the court will find that the landlord has not breached the warranty. Serious 
+housing code violations, lack of adequate heat, serious rodent infestation, or extremely unsafe utilities or 
+appliances are examples of factors upon which courts will base a finding that the implied warranty of 
+habitability has been breached. 
+In cases where a landlord breaches the implied warranty of habitability, a tenant is not obligated to give the 
+landlord notice and an opportunity to correct the conditions causing the breach of this warranty prior to 
+exercising the tenant’s remedies. Moreover, when this warranty is breached, a tenant is temporarily relieved of 
+its obligation to pay rent until the deficient conditions are corrected. However, a court will ultimately determine 
+the rental value of the premises in the substandard condition and the tenant will be obligated to pay that rent. 
+Accordingly, a court will often require the tenant to deposit with the court the rent the tenant otherwise would 
+have paid the landlord until the dilapidated condition is repaired and the court has determined the extent of the 
+tenant’s rental obligation for the period in which the property was in substandard condition. Alternatively, the 
+tenant can exercise the same remedy available for breach of the covenant of quiet enjoyment, vacate the 
+property, and be relieved of the obligation to pay rent for the remainder of the lease term. In either case, the 
+tenant can seek to recover monetary damages from the landlord for breach of the implied warranty of 
+habitability. However, as with the covenant of quiet enjoyment, a tenant who exercises his remedies for breach 
+of this warranty does so at the risk that the court will not agree that the warranty has been breached. 
+Civil Code Section 1941.2 provides that if a tenant fails in certain affirmative obligations and the failure 
+“contributes substantially” to a condition which renders the property uninhabitable or interferes substantially 
+with the landlord’s repair obligations, the landlord has no duty to repair the condition. The tenant’s obligations 
+under Section 1941.2 are as follows: 
+1. Keep his/her part of the property as clean and sanitary as the condition of the property permits (unless the 
+landlord has expressly agreed in writing to do so); 
+2. Dispose of rubbish, garbage, and other waste from the dwelling in a clean and sanitary manner (unless the 
+landlord has expressly agreed in writing to do so); 
+3. Properly use the plumbing, electrical and gas fixtures and keep them as clean and sanitary as their condition 
+permits; 
+CHAPTER NINE 
+ 
+138 
+4. Not permit any person on the property with the tenant’s permission to willfully or wantonly destroy, deface, 
+damage, impair, or remove any part of the structure or dwelling unit or the facilities, equipment, or 
+appurtenances thereto; nor may the tenant do any such thing; and 
+5. Occupy the property as an abode, using for living, sleeping, cooking, or dining purposes only those portions 
+which were designed or intended to be so used. 
+In addition to the implied covenant of habitability and the landlord’s maintenance obl igations expressed in a 
+lease agreement, the California State Housing Law and various local housing codes require the landlord to keep 
+a dwelling in good condition in accordance with specified structural, plumbing, electrical sanitation, fire and 
+safety standards. Local government departments are generally empowered to investigate complaints and require 
+the landlord to make needed repairs and/or to impose a fine upon the landlord. 
+If the landlord fails to maintain a residential property in a condition fit f or human occupancy, the tenant may 
+give the landlord notice to repair the premises. If, after receipt of tenant’s notice, the landlord fails within a 
+reasonable time to make the repairs necessary, the tenant has the statutory right to either: 
+1. spend up to one month’s rent in repairs (only twice in any twelve-month period); or  
+2. abandon the premises, in which case the tenant is relieved from the requirement of paying additional rent 
+and the performance of other conditions of the lease. (See Cal. Civil Code § 1942.) 
+Generally, in non -residential leases , the landlord is not under any implied obligation to make repairs or to 
+maintain the leased premises in a tenantable condition. The respective obligations of landlord and tenant with 
+respect to maintenance and repair are typically addressed in their lease agreement. For example, it is common i n 
+a lease for a commercial building for the landlord to be obligated to maintain and repair the “structural 
+elements” of the building (i.e., the foundation, exterior walls, roof supports and roof), and for the tenant to agree 
+to maintain the remainder of t he building, including interior, plumbing, electrical, heating, ventilation, and air 
+conditioning systems. In the absence of a specific covenant obligating the landlord to maintain or repair the 
+premises, the tenant is deemed to have taken the premises in “as is” condition and to have assumed the 
+obligation to maintain the premises in a safe condition. 
+Closely related to the landlord’s and tenant’s maintenance obligations under a lease is the obligation to cause the 
+premises to comply with laws existing as of the time the lease is entered into or enacted at any time during the 
+term of the lease.  
+In the non -residential context, the lease agreement should specify which party shall bear the responsibility of 
+complying with governmental laws and regulations aff ecting the leased premises, whether enacted before or 
+after the lease date. If the law does not explicitly place upon the landlord the obligation to comply with its 
+provisions, courts will look to the language of the lease agreement to determine where this  responsibility lies. 
+However, the lease agreement will not necessarily be dispositive on the issue of who will ultimately have to bear 
+the time, expense, and effort necessary to bring the premises into compliance with applicable law. Using the 
+terms of the lease as a starting point, pursuant to the California Supreme Court case of Brown v. Green (8 Cal. 
+4th 812, 35 Cal. Rptr. 2d 598 1994), courts will endeavor to analyze the relevant provisions of the lease in light 
+of certain circumstantial factors in ord er to determine the “probable intent” of the parties in entering into the 
+lease. Among these factors are the length of the lease term, the cost of compliance in relation to the rent, the 
+nature of the repair (i.e., structural v. non -structural), the extent to which the tenant’s enjoyment of the premises 
+will be interfered with during the period in which the necessary alterations are made, and the likelihood that the 
+parties, in entering into the lease, contemplated that the particular law or regulation would become effective. 
+Governmental mandates affecting leased premises can be enacted at any time during the lease term and 
+compliance can be extremely expensive. Examples of governmental compliance issues which have been of great 
+significance to landlords and tenants include: the requirement that asbestos or other toxic substances be removed 
+from the leased premises; the requirement that the leased premises be reinforced for seismic safety; and the 
+requirement that alterations be made to the leased premises t o comply with the Americans With Disabilities Act. 
+In light of the ambiguity in the standards set forth in Brown v. Green , it is important that both parties consider 
+the potential impact of unforeseen governmental mandates and address the issue accordingly  in drafting the 
+lease. 
+LANDLORD AND TENANT 
+ 
+139 
+The terms of the lease should address to what extent, if any, the landlord and the tenant have the right and/or 
+obligation to make alterations or improvements to the leased premises. A lease should also specify whether or 
+not the tenant has the right and/or the obligation to remove certain improvements upon the expiration or 
+termination of the lease. Upon installation of fixtures or improvements in the premises, the issue arises as to the 
+ownership thereof. Unless the landlord and tenant agree otherwise, many improvements and fixtures installed in 
+a leased premises will as a matter of law be deemed “permanent” and will become part of the premises (and thus 
+the landlord’s property) upon the expiration of the term. Thus, if a lease is n ot clear as to the nature of certain 
+improvements which a tenant desires to make to the premises, the tenant should first attempt to establish an 
+understanding with the landlord, perhaps entering into a separate agreement concerning such improvements. 
+Otherwise, the tenant may not have the right to remove its fixtures or improvements upon the expiration of the 
+lease term; or, the tenant may be obligated to remove certain fixtures or improvements which the tenant wanted 
+to leave in the premises. The general rule that improvements will become part of the premises has been modified 
+by statute in California in cases where a tenant has installed fixtures for the purposes of trade, manufacture, 
+ornamental or domestic use. Such fixtures may be removed by the tenant during or upon expiration of the term 
+of the lease unless they have become an integral part of the premises through the manner in which they are 
+affixed and if removal cannot be accomplished without injury to the leased property. 
+The law in its current state leaves much room for honest differences of opinion between the landlord and tenant 
+as to the characterization of fixtures and other improvements installed in the leased premises. It is therefore 
+preferable for the landlord and tenant to provide in advance by agreement for the disposition of fixtures. 
+Liability of parties for injuries resulting from condition of premises. Depending on the circumstances, both 
+residential and non-residential landlords may be held liable for injuries to tenants resulting from the condition of 
+the premises. A residential landlord can be held liable on simple negligence grounds for injuries resulting from 
+potentially hazardous conditions or defects in the premises existing at the time of renting the premises to the 
+tenant if such conditions or defects could have been discovered by a reasonable inspection of the premises. 
+Thus, if such an inspection would have revealed a potentially dangerous condition (e.g., a slippery bathtub or 
+staircase), the landlord may be held liable for failing to take corrective measures to mitigate the condition. 
+Merely warning a tenant will probably not be sufficient to protect the landlord from liability. 
+In addition, if a dangerous condition or defect does not exist at the commencement of the rental term but arises 
+later, a residential landlord has a duty to repair such condition or defect after receiving notice from the tenant 
+thereof. Failure to make such repair could subject the landlord to liability for injuries arising from such defect or 
+condition. 
+The law pertaining to a residential landlord’s liability for a “latent” defect in the premises (i.e., a defect which is 
+not discoverable by a reasonable, diligent inspection of the premises) existing at commencement of the rental 
+term, has changed significantly. Previously, in the case of Becker v. IRM Corp.  (38 Cal. 3d 454, 213 Cal. Rptr. 
+213 1985), the California Supreme Court held that a residential landlord was “strictly liable” for injuries to 
+tenant resulting from a “defective” shower door which shattered, in spite of the fact that the “latent defect” in the 
+premises (i.e., the fact that the shower door was made of regular glass, as opposed to tempered glass), would not 
+have been discoverable by a reasonable inspection of the premises. Under such a ruling, a thorough, diligent 
+inspection of the premises would not insulate a residential landlord from liability for injuries to a tenant resulting 
+from the defective condition. However, in Peterson v. Superior Court  (10 Cal. 4th 1185, 43 Cal. Rptr. 2d 83 6 
+1995), the California Supreme Court reversed its earlier holding in Becker and returned to the rule that a 
+landlord will only be liable for injuries resulting from defects in residential premises existing as of the 
+commencement of the rental term if the landlord is negligent in failing to discover and correct the defect in the 
+premises. Thus, while a landlord may still be liable if a court finds that a defect should have been discovered and 
+corrected by the landlord, the ruling in Peterson should provide residential landlords with some relief from 
+liability for defects which are not readily discoverable. 
+In leases of non-residential premises, a landlord generally will not be liable for injuries sustained by tenants 
+resulting from defects in the leased premises. However, the landlord will be liable for injuries resulting from the 
+landlord’s failure to correct such defects if the lease: 
+1. places the obligation on the landlord to maintain all or a portion of the premises (e.g., making the landlord 
+responsible for maintenance of the roof and structure);  
+2. contains an affirmative covenant requiring the landlord to correct or repair a defective item; or  
+CHAPTER NINE 
+ 
+140 
+3. gives the landlord control over a defective item or the area containing the defective item (e.g., defective or 
+dangerous sidewalk in common areas of shopping center or office building which landlord controls).  
+Additionally, the landlord may be held liable for resulting injuries if the landlord:  
+1. is under a statutory duty to repair the defective condition;  
+2. knows of or has reason to know of a “latent” defective condition and fails to disclose it to the tenant or to 
+adequately repair it; or  
+3. agrees to make a repair but does so negligently or fails to even make the repair. 
+Transfer of interest in leased premises by landlord. Unless prohibited by the terms of the lease, a landlord 
+may transfer its interest in leased property to a third party. Following such transfer, the lease will remain in force 
+and effect and the new landlord and the tenant will generally have the same rights and obligations with respect to 
+each other as did the prior landlord and tenant. However, an exception to this principal is set forth in California 
+Civil Code §823, which provides that successor landlord will not be liable for violations caused by the prior 
+landlord of covenants against encumbrances or relating to title or possession of the premises. 
+Transfer of interest in leased premises by tenant. Unless a lease expressly prohibits the tenant from 
+transferring its interest in the premises, the tenant may “assign” (i.e., transfer its entire remaining interest in the 
+premises for the remainder of the lease term) or “sublease” (i.e., transfer its right to a portion of the premises, or 
+its right to the entire premises for less than the entire remaining lease term) its interest in the premises to any 
+third party. Leases usually will either prohibit the tenant from subleasing or assigning its interest in the lease or, 
+more often, prohibit it without the landlord’s consent. Since the law favors the transferability of a tenant’s 
+leasehold rights, prohibitions against subleasing or assigning are construed strictly against the landlord. 
+Nevertheless, courts generally have held that a prohibition in a lease against assigning or subleasing without the 
+landlord’s consent will be valid if such consent is exercised in a reasonable manner. 
+Regardless of whether a transfer is called an “assignment” or a “sublease,” the nature of the transfer  will 
+determine whether it will be legally treated as an ass ignment or a sublease. An assignment of a tenant’s interest 
+in a lease does not relieve the tenant from its liability under the lease, unless the landlord expressly agrees to do 
+so. The original tenant will remain liable under the lease throughout the remainder of the lease term. Likewise, 
+the successor tenant (the “assignee”), and each succeeding assignee will remain liable to the landlord throughout 
+the term. However, the extent of this remaining liability of an assignee depends on whether the assignee 
+expressly assumed the obligations of the assignor. If there is an express assumption, an assignee will be fully 
+liable under the lease. If, instead, there is an assignment without an express assumption by the assignee, the 
+assignee will be liable for certain obligations which derive from its “privity of estate” or its occupancy of the 
+premises, such as the payment of rent and the duty to maintain, but will not be liable for purely contractual 
+obligations under the lease, such as the obligation to pay the land lord’s attorney’s fees in the event of litigation 
+between the parties. 
+Likewise, in a sublease the original tenant remains liable to the landlord for all obligations under the lease and 
+for all acts or omissions committed by the subtenant. However, because there is neither “privity of contract” nor 
+“privity of estate” between a subtenant and a landlord, a subtenant generally has no direct obligation to the 
+landlord. The subtenant’s rights are derived entirely through the tenant. Thus, although a landlord ha s no right to 
+enforce the provisions of the lease directly against a subtenant, the landlord can enforce them against the tenant, 
+and if the landlord terminates the tenant’s lease for default, whether it was the tenant or the subtenant who 
+performed the ac t or omission leading to the default, the subtenant’s rights in the premises will be 
+simultaneously extinguished. Nevertheless, in some cases a landlord’s consent to a sublease, or a subtenant’s 
+assumption of the obligations of the tenant contained in the lease, creates a sufficient “direct” relationship to 
+enable the parties to enforce the terms of the lease against one another. 
+Termination. A lease automatically expires by its own terms at the end of the term specified in the lease. If 
+neither party commits a breach or other act justifying a termination of the lease, the tenancy will continue until 
+the term expires. If the tenancy is for a specified term (i.e., estate for years), the tenancy ends at the expiration of 
+the term without notice or any other act or deed by either party. 
+In addition, since a lease is a contract, it may be rescinded by a party if that party enters into the lease in reliance 
+upon the other party’ s fraud or by either party if the parties enter into the lease in reliance upon a mutual 
+mistake. 
+LANDLORD AND TENANT 
+ 
+141 
+A lease is terminated only when a landlord or tenant exercises a specific right set forth in the lease or prescribed 
+by statute, or when a lease -terminating event occurs that is not within the control of either the landlord or the 
+tenant. 
+In general, a lease may be terminated for any of the following reasons:  
+1. notice;  
+2. destruction of the premises;  
+3. commercial frustration of purpose;  
+4. merger of estates;  
+5. death of a party;  
+6. insolvency or bankruptcy of the tenant;  
+7. insolvency or bankruptcy of the landlord;  
+8. exercise of option to terminate;  
+9. tenant’s or landlord’s breach of a condition or covenant; 
+10. illegal use of the premises; or 
+11. abandonment and surrender of the premises. 
+[Notwithstanding any lease provision to the contrary, a lease may not be terminated for any reason which 
+contravenes public policy, including, without limitation: retaliatory eviction (e.g., retaliation by the land lord for 
+tenant’s reporting to governmental authorities the landlord’s health or safety code violations); discrimination 
+against children or physically disabled persons; or discrimination based on race, creed, color, national heritage, 
+or sex.] 
+Termination by notice. Although a tenant at sufferance is not entitled to notice and a tenant under a lease with 
+a specified term is not required to give or entitled to receive notice, either party to a tenancy at will or a periodic 
+tenancy may terminate a lease by g iving notice thereof to the other in accordance with the terms and provisions 
+of the lease. 
+A tenancy at will may be terminated by not less than 30 days’ written notice, regardless of whether the tenancy 
+is created orally (and is an unenforceable lease), under no agreement, or otherwise. 
+Periodic tenancies, on the other hand, may be terminated by either party by written notice equal to the term of 
+the tenancy or 30 days, whichever is less. For example, if a tenant pays rent weekly, one week’s advance notice  
+is sufficient, and if a tenant pays rent only bi -annually, 30 days’ written notice is sufficient. Notwithstanding the 
+foregoing, a lease for an unspecified term may provide for termination upon as little as 7 -days’ advance written 
+notice. In a month -to-month tenancy, the tenant’s notice of termination need not correspond to the due date for 
+rent. For example, if rent is payable in advance monthly and due on the first of the month, the tenant can give 
+written notice on the tenth of a month and move out on t he tenth of the following month. The tenant will be 
+liable, of course, for rent for the first 10 days of the following month. 
+It should be noted that the foregoing termination rights may be modified by specific statutory limitations on a 
+landlord’s ability to terminate tenancies without cause pursuant to local rent control ordinances, laws pertaining 
+to publicly-owned and federally assisted housing projects, and mobilehome tenancies. 
+Destruction of the premises. If neither party assumes the duty to repair o r rebuild, either party may terminate 
+the lease upon complete destruction of the premises (so long as the party seeking to terminate the lease is not a 
+cause of the destruction). If the premises are only partially destroyed (due to no fault of the tenant),  the tenant 
+may terminate the lease upon delivery of written notice to the landlord if a substantial portion of the premises is 
+damaged or if a material portion of the premises necessary for tenant’s use is damaged. Unless the lease 
+provides otherwise, however, a tenant may not terminate the lease if the damage or destruction occurs to a part 
+of the property not actually leased by the tenant; e.g., a ground lessee may not terminate a lease if a building 
+situated on the leased land is damaged or destroyed. 
+If damage or destruction occurs and the lease continues in effect (either because neither party has the right to 
+terminate the lease or neither party elects to do so), the tenant may not apportion rent if the lease does not permit 
+apportionment and rent is required be paid in advance, even if the premises are uninhabitable. Of course, if the 
+CHAPTER NINE 
+ 
+142 
+tenant is entitled to exercise a right to terminate, a shrewd tenant desirous of staying in the premises would 
+probably threaten to exercise its right to terminate if th e landlord would not permit a retroactive apportionment 
+of rent. 
+If a commercial landlord assumes an unconditional obligation to repair or rebuild the leased premises in the 
+event of damage or destruction (as contrasted with an obligation merely to repair and maintain the premises), the 
+tenant cannot terminate the lease. A landlord’s general covenant to repair and maintain the premises, however, 
+does not preclude the tenant from exercising a right to terminate when the premises are totally destroyed. In 
+addition, if a commercial lease gives the tenant a right to terminate the lease within a certain period of time after 
+the damage or destruction occurs, the tenant may terminate the lease within that time -frame, even if the landlord 
+has commenced the repair or rebuilding. 
+Frustration of commercial purpose. Although a tenant may lease property for a specific purpose, the tenant 
+may not terminate the lease because that purpose is frustrated. However, if the lease specifies and limits the 
+tenant’s use of the premi ses, the tenant may be excused from performance and terminate the lease if the tenant 
+may no longer use the premises for the purpose specified in the lease. 
+A tenant’s right to terminate for frustration of purpose, however, is only available in cases of ex treme hardship. 
+Indeed, the tenant’s purpose must be completely frustrated. A “significant” or “material” frustration (e.g., the 
+tenant’s purpose becomes more difficult or less profitable) is not sufficient to justify termination. In addition, the 
+tenant m ust not have assumed the risk of the occurrence of the intervening event (regardless of how 
+unimaginable the event was at the time of entering into the lease), the intervening event must have been 
+unforeseeable at the time of entering into the lease, and t he intervening event must be uncontrollable by the 
+tenant at the time of its occurrence. 
+Merger of estates. When a landlord acquires the leasehold estate (e.g., by tenant’s assignment of the lease and 
+surrender of the premises to landlord), or the tenant a cquires title to the premises superior to that of the landlord 
+(and there is no intervening estate), the landlord’s fee simple ownership interest in the property and the tenant’s 
+leasehold interest are deemed to “merge” as a matter of law. In such a case, the lease is terminated and the tenant 
+is relieved of its obligation to pay rent. 
+Death of a party. A lease terminable at the will of the landlord and tenant is terminated upon the death (or 
+incapacity) of either party upon delivery of written notice to th e other of such death (or incapacity). Although 
+written notice is not required to terminate a tenancy at will or at sufferance upon the death of either party, if the 
+landlord desires to terminate the lease upon the death of the tenant, the landlord must fi le and prosecute against 
+the tenant an unlawful detainer action. In the absence of a provision to the contrary contained in the lease, a 
+lease for a fixed term is not terminable or terminated upon the death of either party. 
+Insolvency or bankruptcy of tena nt. In light of the “automatic stay” imposed on a bankrupt’s financial and 
+legal affairs, as long as a tenant has an interest in a lease a landlord may not, without prior bankruptcy court 
+approval, recover possession of the bankrupt tenant’s premises or evict the tenant therefrom. 
+The trustee in bankruptcy must, however, accept or reject a bankrupt’s leases within a certain period of time 
+(which period varies according to the nature of the property and the bankruptcy filing). If the trustee fails to do 
+so within the specified time-frame, the lease is deemed rejected. 
+While the trustee decides whether to reject or confirm the lease, the landlord may petition the bankruptcy court 
+for relief from the automatic stay (which requires a showing of either inadequate  protection or both that the 
+tenant lacks equity in the premises and the lease is not essential to the reorganization). During that time, the 
+court may enforce specific lease provisions, including, without limitation, provisions regarding payment of rent 
+and maintenance of the premises. 
+A lease is generally breached if a trustee rejects it. After rejection, the landlord can proceed with unlawful 
+detainer proceedings to recover possession. In addition, as soon as a plan of reorganization is filed and the 
+automatic stay is removed, the landlord may employ remedies for defaults which occurred after the bankruptcy 
+petition. 
+Insolvency or bankruptcy of landlord. A trustee’s power to reject leases entered into by a now bankrupt 
+landlord is limited to: 
+LANDLORD AND TENANT 
+ 
+143 
+ leases that would not, under federal bankruptcy law, be binding on a bona fide purchaser;  
+ situations where rejection would provide substantial benefit to the bankrupt’s estate and other creditors. 
+If the trustee elects to reject a lease, the tenant may treat the leas e as terminated or may remain in possession of 
+the premises as permitted under state law. 
+Exercise of option to terminate. A lease may provide that it is terminable at the election of a particular party 
+(or either party) upon: the occurrence or non -occurrence of a particular event (e.g., sale of the premises); the 
+passage of time; or simply the party’s election, for no particular reason at all. Such options to terminate may be 
+exercised only by the delivery of notice from the terminating party to the other in strict accordance with the 
+terms and provisions specified in the lease, regardless of statutory notice requirements for termination of leases. 
+Tenant’s or landlord’s breach of a condition or  covenant. A condition is a prerequisite to a party’s 
+performance. If the condition does not occur, the party whose performance is conditioned need not perform. The 
+non-occurrence of a lease condition entitles the party whose performance is conditioned to terminate the lease. A 
+covenant, however, is a promise to do or  not do a certain act. If the promise is not honored, the non -breaching 
+party is generally only entitled to remedies for breach of lease (such as suing for damages or injunctive relief), 
+which are usually less drastic than termination. 
+Lease provisions are often construed as both conditions and covenants. Because of the severity of the remedy for 
+breach of a condition (termination), a court is likely to construe an ambiguous provision as merely a covenant. 
+In addition, conditions are narrowly construed, and even if a condition is breached, the breach must generally be 
+material or substantial to warrant the remedy of termination and forfeiture. 
+On the other hand, some covenants are so material to the efficacy of the lease that their breach justifies 
+termination and forfeiture. For example, a landlord’s implied covenant of habitability in a residential lease and a 
+tenant’s express covenant to not assign a lease or use the premises for unlawful purposes are deemed so material 
+that their breach may warrant termination and forfeiture of the lease. 
+A landlord’s and tenant’s covenants to one another are the inducements by each of them to the other to enter into 
+the lease transaction, and to the extent that covenants are not merely incidental or subordinate to the mai n 
+purposes of the lease, they are mutual. Accordingly, a landlord’s and tenant’s covenants to one another are 
+deemed dependent obligations, and each party’s performance of its covenants is a condition precedent to its 
+right to recover for the breach of a c ovenant by the other party. For example, if a landlord fails to continue to 
+provide quiet possession of the premises or constructively evicts the tenant, the tenant may elect to terminate the 
+lease. 
+There is, however, one significant exception to the doctr ine of dependent covenants: if the tenant fails to pay 
+rent, the landlord must continue to honor its lease obligations (e.g., the promise to maintain and repair the 
+premises) and, conversely, if the landlord fails to honor its lease obligations, the tenant  must continue to pay 
+rent. This exception, however, does not apply to the landlord’s implied covenant of habitability for residential 
+premises. If the landlord breaches the implied covenant of habitability, the tenant may withhold rent until the 
+landlord satisfies its maintenance and repair obligations. 
+Illegal use of the premises. A tenant’s occasional use of the premises for an illegal purpose is not grounds for 
+termination unless the lease specifically provides therefor, though the landlord may seek alt ernative remedies 
+against the tenant. Only an illegality that specifically relates to the use of the premises may justify a termination 
+of the lease. 
+Abandonment and surrender of the premises. A surrender of the premises (and termination of the lease), by 
+mutual agreement of landlord and tenant, occurs upon an actual abandonment of the premises by the tenant and 
+acceptance of them by the landlord. Upon surrender, the leasehold and fee title estates are merged, and the 
+tenant remains liable for only its “pre-surrender” obligations. 
+A surrender may occur by express mutual agreement between the landlord and tenant, or by implication and 
+operation of law. If a lease is surrendered and that lease is required by the Statute of Frauds to be in writing, the 
+surrender must also be in writing, unless the surrender either occurs by an executed oral agreement or operation 
+of law. 
+CHAPTER NINE 
+ 
+144 
+For example, a surrender by implication and operation of law occurs if a tenant abandons the premises and 
+tenders it to the landlord, and thereafter the landlord relets the premises to a new tenant. In this scenario, the 
+landlord will be deemed to have accepted the abandoned premises from the original tenant and that lease is 
+automatically terminated, even without a writing, and the landlord will be estopped from asserting that the 
+premises were not surrendered since it took actions inconsistent with such an assertion. 
+Condemnation of Leased Property 
+If a leased property is condemned under a proceeding in eminent domain, the tenant is ordinarily released from 
+all of his or her obligations under the lease agreement, including the obligation to pay rent. If the premises are 
+only partially taken and the portion of the property which has not been condemned may still be used by the 
+tenant for the purpose for which it was leased, the tenant must continue to pay rent according to the terms of the 
+lease agreement. 
+Notice Upon Tenant Default  
+If a landlord desires to terminate a lease upon the tenant’s default, the landlord must comply with requirements  
+set forth in the California Code of Civil Procedure. The required written notice must specify that the tenant must, 
+within three days, either comply with the terms of the lease (if the breach is of a nature which can be cured by 
+the tenant) or vacate and surrender the premises. Compliance with this procedural requirement is a prerequisite 
+to the filing of an unlawful detainer action. 
+Service. The notice of default may be served: 
+1. by personal delivery on the tenant; 
+2. if the tenant is absent from the pre mises and from the tenant’s usual place of business, by leaving a copy 
+with a person of suitable age and discretion at the tenant’s residence or place of business and
+ mailing a copy 
+to the tenant at the tenant’s residence; or  
+3. if the tenant’s place of r esidence or business address cannot be ascertained, or if a person of suitable age 
+and discretion cannot be found, by affixing a copy in a conspicuous place on the premises, delivering a copy 
+to the person occupying the premises, and mailing a copy to the tenant at the premises. 
+It must be noted that delivery of a notice in accordance with the statutory requirements does not automatically 
+terminate the lease. See the discussion below regarding unlawful detainer actions. 
+Non-Waivable Tenant Rights 
+Any provision in a residential lease executed after January 1, 1976, which purports to modify or waive any of 
+the following tenant rights is void and unenforceable: 
+1. A tenant’s rights with respect to the security deposit, as set forth in California Civil Code Section 1950.5;  
+2. A tenant’s rights with respect to limitations on the landlord’s ability to enter the premises, as set forth in 
+California Civil Code Section 1954; 
+3. A tenant’s right to assert a cause of action against the landlord which may arise in the future; 
+4. A tenant’s right to a notice, as provided by law; 
+5. The procedural rights available to a tenant in any litigation involving the tenant’s rights and obligations 
+under the lease;  
+6. A tenant’s right to have the leased premises maintained in a habitable condition and in compliance with all 
+applicable health, safety, environmental, and other laws, rules, regulations, and ordinances; and, 
+7. A tenant’s right to have the landlord exercise a duty of care to prevent personal injury or personal proper ty 
+damage where that duty is imposed by law. 
+Remedies of Landlord 
+Right to maintain lease in effect. In the event the tenant is in default in rental payments, the landlord may sue 
+for each installment as it becomes due. (Civil Code Section 1951.4) This is true whether the tenant remains in 
+possession or abandons the premises. 
+In any suit by the landlord to collect unpaid rent, the tenant may assert certain defenses, such as any right of the 
+tenant contained in the lease to withhold or offset rent due to lan dlord’s failure to comply with the lease, or the 
+landlord’s breach of the implied warranty of habitability. 
+LANDLORD AND TENANT 
+ 
+145 
+In any event, this remedy is usually unsatisfactory to the landlord from a financial standpoint, and is thus not 
+often used. 
+Termination of lease. If a tenant breaches the obligation to pay rent or any other obligation under the lease, and 
+fails to cure the violation or quit the premises after three days’ notice from the landlord, the landlord can 
+terminate the lease under Civil Code Section 1951.2, a nd receive damages resulting from the breach. Where the 
+tenant abandons the property, the landlord usually retakes possession for the tenant’s account and relets the 
+premises to others. At the end of the term, the landlord sues the old tenant for damages i n the amount of the 
+difference between the lease rental and the lesser amount actually obtained by reletting. On the other hand, 
+where the tenant refuses to give up possession although in default in rental payments, the landlord normally 
+serves a three-day notice and files an unlawful detainer action as a means to regain possession of the premises. 
+Unlawful detainer. A landlord who seeks to oust a defaulting tenant from possession of the premises may bring 
+an action in ejectment (which is a long process), o r the more common and expeditious procedure of unlawful 
+detainer. Because of the complexities involved in properly prosecuting an unlawful detainer, the landlord is 
+likely to employ an attorney or reputable eviction service. 
+The remedy of unlawful detainer is available against a tenant who:  
+1. holds over after expiration of the term for which the property has been let.  
+2. continues in possession after default in payment of rent. 
+3. continues in possession after neglect or failure to perform conditions or covenants of the lease or agreement 
+under which the property is held, including any covenant not to assign or sublet. 
+4. commits waste or causes a nuisance upon the leased premises. 
+5. fails to quit (i.e., leave/vacate) after giving written notice of intention to terminate lease. 
+In most cases, a three -day notice to cure a breach or quit is required. In instances where a breach of a lease 
+cannot be cured, the three-day notice need not give the tenant the option to cure the breach. 
+The purpose of the unlawful detainer procedure is to provide a landlord with a relatively quick and direct means 
+of regaining possession of leased premises following a tenant default in instances where the tenant refuses to 
+vacate voluntarily. It is intended to encompass all claims  a landlord may have against the tenant resulting from 
+the tenant’s default. Nevertheless, in connection with granting the landlord possession of the leased premises, a 
+court in an unlawful detainer proceeding can award the landlord damages for rent owing up through the date of 
+the court’s judgment. A landlord cannot recover in an unlawful detainer proceeding rent which would have been 
+owed by the tenant under the lease after the date of the unlawful detainer judgment. If the landlord desires to 
+recover pos t-judgment rent or other damages from the tenant (e.g., losses resulting from tenant’s physical 
+damage to the premises), the landlord must do so in a separate proceeding. 
+Because possession is the focus of an unlawful detainer proceeding, if a tenant relin quishes possession of the 
+leased premises to the landlord prior to the commencement of the unlawful detainer trial the case is converted 
+into an ordinary civil lawsuit for damages and will not receive priority on the court’s calendar as would an 
+unlawful detainer proceeding. 
+A defendant/tenant in an unlawful detainer proceeding has five days from service of the summons in which to 
+file an answer with the court, or judgment will be entered in favor of the landlord. In the tenant’s answer, the 
+tenant must raise any affirmative defenses it may have to the landlord’s unlawful detainer, or they will be 
+deemed waived. The most common defenses to an unlawful detainer action are allegations that: 
+1. the landlord has not complied with the procedural requirements f or an unlawful detainer (e.g., failure to 
+properly serve tenant with a three-day notice); 
+2. the landlord has breached the implied warranty of habitability;  
+3. the unlawful detainer was brought in retaliation for some lawful exercise of the tenant’s rights (e.g., tenant’s 
+reporting landlord to governmental authorities for violation of building or health codes); or  
+4. the landlord is evicting the tenant on the basis of the tenant’s race or some other form of prohibited 
+discrimination. 
+CHAPTER NINE 
+ 
+146 
+After granting judgment in favor of the landlord in an unlawful detainer proceeding, the court will authorize the 
+local sheriff or other evicting authority to remove the tenant and the tenant’s property from the premises. A 
+landlord is not permitted to enter the premises and forcibly remove the tenant or the tenant’s property. 
+Disclosures by Owner or Rental Agent to Tenant 
+The owner of every multi -unit dwelling or a party signing a rental agreement on such owner’s behalf must 
+disclose the name and address of each person authori zed to manage the premises and to receive process for 
+notices and demands on behalf of the owner. In the case of an oral rental agreement, on written demand by the 
+tenant, the owner or person acting on the owner’s behalf must furnish the tenant with a writ ten statement 
+containing such information, which must be kept current. The statutory requirement to furnish a tenant with this 
+information is enforceable against a successor owner or manager. 
+If the party who enters into a rental agreement on behalf of the  owner fails to comply with the above provisions, 
+such person is deemed an agent of each person who is an owner for the purpose of service of process, notices 
+and demands and for the purpose of performing the obligations of the owner under the law and the rental 
+agreement. It should be noted that the law provides for optional methods of disclosure. A printed or typed 
+written notice containing the required information may be placed in every elevator and in one other conspicuous 
+place. Where there are no elevators, notices must be posted in at least two conspicuous places. 
+Laws Protecting Tenants’ Rights With Respect to Foreclosed Properties  
+As recently as early 2008, in the absence of a written lease agreement requiring greater notice, California law 
+required that an owner provide only a 30 -day notice to a tenant to vacate the property for any reason (other than 
+the failure to pay rent, which required a 3-day notice). However, recent legislation has changed the rules.  
+Signed as an urgency measure in 2008, Se nate Bill 1137gives tenants at least 60 days after a foreclosure before 
+they can be asked to vacate the property. The provisions of SB 1137 are due to sunset (be repealed) on January 
+1, 2013. To review a copy of the bill and get more details, please visit www.leginfo.ca.gov.  
+Federal legislation was enacted effective May 20, 2009, requiring property owners who have taken a residential 
+property by foreclosure, to give their tenants at least a 90 day notice to vacate the property before beginning the 
+eviction process. That federa l law is applicable nationwide and it is known as “Protecting Tenants At 
+Foreclosure Act”. The law is found at Title 7 US Code section 701 (“the Act”). See http://thomas.loc.gov.  
+The Act provides that if a tenant is ren ting under a lease entered into before the notice of foreclosure was 
+communicated to the tenant, the tenant may remain in the property until the lease ends, unless the owner sells the 
+property to a purchaser who will occupy the property as his primary resi dence. In that case, the owner may 
+properly give the tenant a 90day notice to vacate.  
+While the Act provides greater protection to tenants than State law, local law may provide even more protection. 
+If a particular property is subject to local “rent contr ol” or “housing assistance” laws, or so-called “just cause for 
+eviction” ordinances, those laws may provide even greater protection than the Act itself. As an example, even 
+the Act itself provides that the owner of a residential property which is subject t o a “housing assistance 
+contract”, and who has a lease with a tenant in that property, is subject to any additional protections in the 
+housing assistance contract (this typically applies to “Section 8” properties).  
+Finally, a California bill effective January 1, 2011 requires tenants be told of their rights when the property they 
+occupy is foreclosed. Senate Bill 1149 requires that tenants who are living in foreclosed homes be given notice 
+of their rights and responsibilities under these state and federal laws by requiring a cover sheet be attached to 
+any eviction notice that is served within one year of a foreclosure sale. The cover sheet would delineate the laws 
+and rights a tenant may have in cases where the property he or she occupies is foreclosed upon . The bill also 
+seeks to help protect tenants who would otherwise have a negative mark on their rental history by prohibiting the 
+release of court records in a foreclosure -related eviction unless the plaintiff landlord prevails. To review a copy 
+of the bill and get more details, please visit www.leginfo.ca.gov.  
+Additional Resource 
+That State of California, Department of Consumer Affairs annually publishes a booklet entitled “California 
+Tenants, A Guide to Residential  Tenants’ and Landlords’ Rights and Responsibilities ”. A copy of the booklet 
+can be downloaded from the Department of Consumer Affairs’ web site at www.dca.ca.gov. 

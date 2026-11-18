@@ -1,0 +1,218 @@
+Article R413-2 - Code de la route - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037078246/)
+citeturn236view0 [wordlim: 200] Crawled: 4 days ago; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037078246/","lineno":null}); Total lines: 215
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code de la route
+L66: 
+L67: En vigueur au 13/11/2026 En vigueur au 13 novembre 2026
+L68: 
+L69: Voir les tables de concordance Imprimer la page[Button: Copier le texte ]
+L70: 
+L71: [Button: Fermer ]
+L72: # Table de concordance
+L73: 
+L74: Lorsque des dispositions ont été déplacées ou modifiées, une table de concordance est créée qui permet de relier dans un tableau une ou plusieurs anciennes dispositions d'un texte ou d'un code à leur nouvelle disposition.
+L75: 
+L76: Cela est utile dans le cadre d'une création de code (codification), d'une refonte de code ou recodification.
+L77: ### TABLES DE CONCORDANCE
+L78: 
+L79:   * 【7†Télécharger la partie législative au JO du 22/09/2000 (ancienne numérotation / nouvelle numérotation)】
+L80:   * 【8†Télécharger la partie législative au JO du 22/09/2000 (nouvelle numérotation / ancienne numérotation)】
+L81:   * 【9†Télécharger la partie réglementaire au JO du 25/03/2001 (ancienne numérotation / nouvelle numérotation)】
+L82:   * 【10†Télécharger la partie réglementaire au JO du 25/03/2001 (nouvelle numérotation / ancienne numérotation)】
+L83: ### CODIFICATION
+L84:   * Partie législative au JO du 24 septembre 2000 : 【11†dossier législatif de l’ordonnance n° 2000-930】 du 22 septembre 2000 relative à la partie législative du code de la route
+L85:   * Partie réglementaire au JO du 25 mars 2001 : décrets du 22 mars 2001 【12†n° 2001-250】 relatif à la partie Réglementaire du code de la route (Décrets en Conseil d'Etat délibérés en conseil des ministres), 【13†n° 2001-251】 du 22 mars 2001 relatif à la partie Réglementaire du code de la route (Décrets en Conseil d'Etat)
+L86: Dernière modification : 25 juin 2018
+L87: ## ChronoLégi l'accès au droit dans le temps
+L88: 
+L89: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L90: 
+L91: [Input]
+L92: ### Les différentes versions dans le temps
+L93: 
+L94: Fermer le Chronolégi
+L95: 
+L96: À la date du JJ/MM/AAAA
+L97: 
+L98: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L99: 
+L100: Rechercher dans cette section ou dans tout le code
+L101: 
+L102: [Input]Rechercher dans cet article
+L103: 
+L104: [Input]Rechercher dans tout le code
+L105: 
+L106: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L107: 
+L108: [Input] Réinitialiser le champ recherche
+L109: 
+L110: * * *
+L111: 
+L112: Voir le sommaire du code
+L113: 
+L114: [Button: Fermer]
+L115: 
+L116:   * ## 【14†Partie réglementaire (Articles R110-1 à R442-7)】
+L117: Déplier/Replier
+L118:     * ### 【15†Livre IV : L'usage des voies. (Articles R411-1 à R442-7)】
+L119: 
+L120: Déplier/Replier
+L121:       * #### 【16†Titre Ier : Dispositions générales. (Articles R411-1 à R419-2)】
+L122: 
+L123: Déplier/Replier
+L124:         * ##### 【17†Chapitre III : Vitesse (Articles R413-1 à R413-19)】
+L125: 
+L126: Déplier/Replier
+L127:           * ###### 【18†Section 1 : Vitesses maximales autorisées. (Articles R413-1 à R413-16)】
+L128: 
+L129: Déplier/Replier
+L130:             * 【19†Article R413-1】
+L131:             * 【20†Article R413-2】
+L132:             * 【21†Article R413-3】
+L133:             * 【22†Article R413-4】
+L134:             * 【23†Article R413-5】
+L135:             * 【24†Article R413-6】
+L136:             * 【25†Article R413-7】
+L137:             * 【26†Article R413-8】
+L138:             * 【27†Article R413-8-1】
+L139:             * 【28†Article R413-9】
+L140:             * 【29†Article R413-10】
+L141:             * 【30†Article R413-11】
+L142:             * 【31†Article R413-12】
+L143:             * 【32†Article R413-12-1】
+L144:             * 【33†Article R413-13】
+L145:             * 【34†Article R413-14】
+L146:             * ABROGÉ 【35†Article R413-14-1】
+L147:             * 【36†Article R413-15】
+L148:             * 【37†Article R413-16】
+L149: [Input]
+L150: ## Article R413-2
+L151: 
+L152: En vigueur depuis le 16 août 2020 En vigueur depuis le 16 août 2020
+L153: 
+L154: 【38†Modifié par Décret n°2020-1061 du 14 août 2020 - art. 1】
+L155: 
+L156: I.-Hors agglomération, la vitesse des véhicules est limitée à :
+L157: 1° 130 km/ h sur les autoroutes. Toutefois, lorsqu'une voirie appartenant au réseau routier national a fait l'objet d'un classement dans la catégorie des autoroutes en application du sixième alinéa de l'article 【39†R. 122-1 du code de la voirie routière】, la vitesse maximale autorisée demeure celle fixée antérieurement à ce classement ;
+L158: 
+L159: 2° 110 km/ h sur les routes à deux chaussées séparées par un terre-plein central ;
+L160: 3° 80 km/ h sur les autres routes. Toutefois, sur les sections de ces routes comportant au moins deux voies affectées à un même sens de circulation, la vitesse maximale est relevée à 90 km/ h sur ces seules voies. Ces sections font l'objet d'une signalisation routière dans les conditions prévues par l'article 【40†R. 411-25】.
+L161: 
+L162: II.-En cas de pluie ou d'autres précipitations, ces vitesses maximales sont abaissées à :
+L163: 
+L164: 1° 110 km/ h sur les sections d'autoroutes où la limite normale est de 130 km/ h ;
+L165: 2° 100 km/ h sur les sections d'autoroutes où cette limite est plus basse ainsi que sur les routes à deux chaussées séparées par un terre-plein central ;
+L166: 
+L167: 3° 80 km/ h sur les sections des autres routes mentionnées au 3° du I.
+L168: III.-Les autorités détentrices du pouvoir de police de la circulation compétentes communiquent au ministre chargé de la sécurité routière la liste des sections de routes relevant de leur compétence qui comportent au moins deux voies affectées à un même sens de circulation et sur lesquelles la vitesse maximale est relevée à 90 km/ h en application du 3° du I.
+L169: 
+L170: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L171: 
+L172: [Button: Fermer ]
+L173: Code de la route
+L174: 
+L175: En vigueur au 13/11/2026 En vigueur au 13 novembre 2026
+L176: 
+L177: [Button: Ouvrir ][Button: Réduire ]
+L178: 
+L179: Section 1 : Vitesses maximales autorisées.
+L180: 
+L181: [Input]
+L182: 
+L183: [Input: JJ/MM/AAAA]
+L184: 
+L185: [Button: Version à la date d’aujourd'hui ]
+L186: 
+L187: Imprimer la page
+L188: 
+L189: Copier le texte
+L190: 
+L191: [Button: Naviguer dans les résultats ]
+L192: 
+L193: [Input]Haut
+L194: de page
+L195: ## L'aide Légifrance
+L196: 
+L197: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L198: 
+L199:   * 【41†Une question, une suggestion ou un problème sur légifrance ?】
+L200:   * 【42†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L201:   * 【43†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L202:   * 【44†Guide des cas d'usage】
+L203: ## Abonnez-vous au Journal officiel de la République française
+L204: 
+L205: Recevez par courriel le sommaire dès sa publication.
+L206: 
+L207: 【45†En savoir plus sur la gestion de vos données et de vos droits.】
+L208: 
+L209: Votre adresse électronique (ex. : 【46†[email protected]】)
+L210: 
+L211: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L212: 
+L213: [Input]
+L214: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【47†formulaire】
+

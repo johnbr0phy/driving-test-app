@@ -1,0 +1,122 @@
+[
+  {
+    "questionId": "FRVTC-ANG-001",
+    "objective": "Confirmer l'identité du passager attendu",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-002",
+    "objective": "Comprendre une heure et un repère temporel",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-003",
+    "objective": "Demander une précision sur la destination",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-004",
+    "objective": "Proposer une aide matérielle",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-005",
+    "objective": "Comprendre une demande de confort",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-006",
+    "objective": "Distinguer permission et demande d'action",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-007",
+    "objective": "Comprendre un retard possible",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-008",
+    "objective": "Comprendre une demande de justificatif",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-009",
+    "objective": "Identifier un objet perdu et son emplacement",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-010",
+    "objective": "Comprendre une comparaison et une concession",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-011",
+    "objective": "Comprendre deux indications spatiales",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-012",
+    "objective": "Prendre congé en contexte",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  }
+]

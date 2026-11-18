@@ -1,0 +1,250 @@
+[
+  {
+    "anonymousIDs": [],
+    "severity": "blocker",
+    "issue": "Options-only gate remains failed: 163/200 (81.5%); every category exceeds 40%. Surface 18/22, prior 71/90, knowledge 68/74, none 6/14. Blind stem agreement 200/200 does not establish item quality.",
+    "source": "Locked options-answers.json, anonymous-questions.json, explanations.json; independent comparison after stage2 lock.",
+    "concretefix": "Keep draft/not approved. Revise broad stem dependence and plausible distractors, then commission a genuinely fresh blind options/stems review. Preserve original artifacts and do not waive the gate or relabel knowledge as guessing.",
+    "questionIds": []
+  },
+  {
+    "anonymousIDs": [
+      "R027"
+    ],
+    "severity": "high",
+    "issue": "Explanation exports an absolute no-after-acquired-title claim from California-oriented text to national practice; a quitclaim may expressly include such interests in another jurisdiction. Present-interest answer remains sound.",
+    "source": "https://app.leg.wa.gov/rcw/default.aspx?cite=64.04.050 (official statutory text permits words expressing that intention)",
+    "concretefix": "Say an ordinary quitclaim conveys only the present interest, without title warranties, and no later interest is established by these facts. Omit the absolute claim or specify no after-acquired-title clause and applicable rule.",
+    "questionIds": [
+      "REBR-TITLE-010"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R056"
+    ],
+    "severity": "medium",
+    "issue": "Stem says retention after sale or lease starts, obscuring sale-completion trigger. Explanation says sale date but does not clearly repair the stem.",
+    "source": "https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards",
+    "concretefix": "Use three years after sale is completed or lease begins in both stem and explanation.",
+    "questionIds": [
+      "REBR-ENV-006"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R007"
+    ],
+    "severity": "medium",
+    "issue": "Public purpose and payment do not establish compulsory acquisition; negotiated city purchase is an omitted plausible reading. Explanation repeats acquisition without stating compulsion.",
+    "source": "https://www.dre.ca.gov/files/pdf/refbook/ref06.pdf (eminent domain vs voluntary transfer)",
+    "concretefix": "Specify condemnation or acquisition over owner objection with compensation; define eminent domain as compulsory taking power.",
+    "questionIds": [
+      "REBR-PROP-022"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R018"
+    ],
+    "severity": "medium",
+    "issue": "Neighborhood improvement levy is too broad to establish nationally uniform benefit allocation; explanation assumes benefit assessment not specified in stem.",
+    "source": "https://www.dre.ca.gov/files/pdf/refbook/ref16.pdf (Benefit Assessments)",
+    "concretefix": "Name a special benefit assessment imposed for the particular improvement. Do not generalize every local improvement levy or California taxonomy.",
+    "questionIds": [
+      "REBR-PROP-020"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R108"
+    ],
+    "severity": "medium",
+    "issue": "Closing can mean settlement/funding; regulatory waiting-period trigger is consummation.",
+    "source": "https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/tila-respa-integrated-disclosures/tila-respa-integrated-disclosure-faqs/",
+    "concretefix": "Ask when initial Closing Disclosure must be received before consummation, and explain consummation as becoming contractually obligated on the loan. Retain covered-loan qualification.",
+    "questionIds": [
+      "REBR-FIN-013"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R143"
+    ],
+    "severity": "medium",
+    "issue": "Use condition could be merely a covenant; explanation silently supplies condition affecting continued ownership, absent from stem.",
+    "source": "https://www.dre.ca.gov/files/pdf/refbook/ref04.pdf ; https://www.dre.ca.gov/files/pdf/refbook/ref06.pdf (defeasible estate/forfeiture)",
+    "concretefix": "State express reverter or right of entry, or that grant creates a defeasible fee; preserve can rather than automatic forfeiture unless determinable language is supplied.",
+    "questionIds": [
+      "REBR-TITLE-003"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R098"
+    ],
+    "severity": "low",
+    "issue": "Explanation discusses extension, but actual option is deed-of-trust modification. An extension is only one kind of modification.",
+    "source": "anonymous-questions.json R098; https://www.dre.ca.gov/files/pdf/refbook/ref07.pdf (Reconveyance Deed)",
+    "concretefix": "Explain modification as changing existing instrument terms rather than releasing the trustee interest; do not imply all modification means extension.",
+    "questionIds": [
+      "REBR-TITLE-020"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R038"
+    ],
+    "severity": "low",
+    "issue": "May be permissible wording avoids an outright false safe harbor, but explanation does not teach reasonable value/service compensation boundary.",
+    "source": "https://www.consumerfinance.gov/compliance/compliance-resources/mortgage-resources/real-estate-settlement-procedures-act/real-estate-settlement-procedures-act-faqs/",
+    "concretefix": "Add that compensation must reasonably relate to actual service value and not pay for referrals; revise distractors to plausible service-value/referral distinctions if retaining item.",
+    "questionIds": [
+      "REBR-FIN-016"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R047",
+      "R072"
+    ],
+    "severity": "low",
+    "issue": "Explanations contain production commentary about original calculations or outline scope rather than helping learner reasoning.",
+    "source": "explanations.json R047/R072",
+    "concretefix": "Remove authoring-process sentences; use space to explain courtyard subtraction or applying agent share only after firm split.",
+    "questionIds": [
+      "REBR-MATH-002",
+      "REBR-MATH-009"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R048",
+      "R067",
+      "R024",
+      "R064"
+    ],
+    "severity": "medium",
+    "issue": "Two close objective pairs: principal manifestations establish apparent authority; agreement distinguishes price fixing from matching prices. Each repeats same narrow inference in reverse.",
+    "source": "https://www.dre.ca.gov/files/pdf/refbook/ref10.pdf ; https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/dealings-competitors/price-fixing",
+    "concretefix": "Retain one in each pair. Replace R067 with an uncovered agency/contracts objective, or require competing evidence/reasonable reliance. Replace practice R064 with ADA public-office access scope, retaining R024 antitrust.",
+    "questionIds": [
+      "REBR-AGENCY-023",
+      "REBR-AGENCY-024",
+      "REBR-PRACT-021",
+      "REBR-PRACT-022"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R129",
+      "R151"
+    ],
+    "severity": "low",
+    "issue": "Reciprocal-promises fact pattern overlaps, though bilateral classification and consideration are distinct, so not an exact duplicate.",
+    "source": "https://www.dre.ca.gov/files/pdf/refbook/ref06.pdf",
+    "concretefix": "Retain classification item; rewrite R151 to contrast real exchange with past or illusory promise, supplying governing common principle as needed.",
+    "questionIds": [
+      "REBR-AGENCY-002",
+      "REBR-AGENCY-005"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R008",
+      "R022",
+      "R035",
+      "R043",
+      "R051",
+      "R055",
+      "R095",
+      "R130",
+      "R142",
+      "R146",
+      "R152",
+      "R161",
+      "R164",
+      "R184"
+    ],
+    "severity": "high",
+    "issue": "Fourteen particularly self-cuing option sets: cautious legitimate response contrasts with implausible absolutes; R022 and R055 also supply decisive answer directly in stem wording. See blind-answers findings for item-specific mechanism.",
+    "source": "anonymous-questions.json and locked options-answers.json; blind-notes.md",
+    "concretefix": "Use realistic adjacent misconceptions and relevant competing documents/timing/conditions. Require the stem fact to discriminate among plausible actions. Replacing only these fourteen does not by itself resolve the fullbank gate.",
+    "questionIds": [
+      "REBR-ENV-016",
+      "REBR-AGENCY-015",
+      "REBR-ENV-020",
+      "REBR-AGENCY-018",
+      "REBR-PRACT-011",
+      "REBR-FIN-012",
+      "REBR-ENV-017",
+      "REBR-ENV-010",
+      "REBR-PRACT-015",
+      "REBR-PRACT-023",
+      "REBR-ENV-024",
+      "REBR-FIN-011",
+      "REBR-FIN-010",
+      "REBR-ENV-018"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R030",
+      "R144",
+      "R150"
+    ],
+    "severity": "high",
+    "issue": "Material blueprint hole: III.B Appraisal process has 3 of 10 official valuation items, covering purpose/steps and federal oversight. No reviewed question directly tests either; approach identification and weighting arithmetic do not substitute. III.C.6 BPO also lacks direct treatment.",
+    "source": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf (national broker printed pp.5\u20138); fetched https://www.asc.gov/index.php/about ; https://www.consumerfinance.gov/ask-cfpb/what-are-appraisals-and-why-do-i-need-to-look-at-them-en-167/ ; https://www.consumerfinance.gov/ask-cfpb/why-did-i-receive-different-valuations-during-the-mortgage-loan-application-process-en-1875/",
+    "concretefix": "First replace valuation R030 (depreciation distinctions remain in R139/R157/R182), R144 (single anticipation label), and R150 (weighted arithmetic) with appraisal purpose/process, federal oversight, and BPO-vs-appraisal use scenarios. Three replacements are a minimum improvement, not proof of proportional subtopic coverage; plan III.B allocation explicitly.",
+    "questionIds": [
+      "REBR-VALUE-023",
+      "REBR-VALUE-003",
+      "REBR-VALUE-024"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R055",
+      "R164",
+      "R069"
+    ],
+    "severity": "medium",
+    "issue": "Financing omissions: VII.A.2 lien vs title theory, VII.A.3 primary/secondary markets (within A:2 official items), and VII.C.5 mortgage fraud/predatory lending (within C:2 official items) lack direct coverage. A and C also contain other covered topics, so no separate item count is assigned to each omission.",
+    "source": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf (national broker printed pp.5\u20138); fetched https://capitalmarkets.freddiemac.com/mbs/understanding-mortgage-backed-securities ; https://occ.gov/topics/consumers-and-communities/consumer-protection/fraud-resources/mortgage-fraud.html ; permitted https://www.dre.ca.gov/files/pdf/refbook/ref05.pdf (lien/title theory discussion)",
+    "concretefix": "Replace self-cuing R055 or R164 with loan-sale liquidity/secondary-market scenario and mortgage-misrepresentation scenario; retain or integrate Loan Estimate purpose elsewhere. Replace R069 (security-vs-note also tested in R177) with conditional comparison between explicitly described lien and title theories. Never state one state theory applies nationwide; verify any new rule before authoring.",
+    "questionIds": [
+      "REBR-FIN-012",
+      "REBR-FIN-010",
+      "REBR-FIN-001"
+    ]
+  },
+  {
+    "anonymousIDs": [
+      "R064"
+    ],
+    "severity": "medium",
+    "issue": "V.C.7 ADA is not tested; existing disability items R058/R088 concern Fair Housing Act, not TitleIII public-office access. V.C Fair Housing has 3 official questions overall; ADA itself has no guaranteed per-test quota.",
+    "source": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf (national broker printed pp.5\u20138); fetched https://www.ada.gov/resources/title-iii-manual/ (III-1.2000, apartment rental office/public accommodation) and https://www.ada.gov/topics/title-iii/",
+    "concretefix": "Replace near-duplicate price-fixing R064 with ADA public brokerage/rental office vs private residential unit distinction. Do not transplant detailed construction requirements without checking current applicable standards.",
+    "questionIds": [
+      "REBR-PRACT-022"
+    ]
+  },
+  {
+    "anonymousIDs": [],
+    "severity": "medium",
+    "issue": "Spec labels 57 knowledge/87 application/56 analysis, including 11/20 math analysis, without reproducible independent support. Reviewer identified 76 direct-recognition/single-cue items, but this includes simple application under Pearson definitions and is not a valid 76-vs-57 discrepancy. No mapping inspected, so individual label errors cannot be asserted.",
+    "source": "spec.md Authored cognitive labels; https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf (national broker printed pp.5\u20138) cognitive definitions; blind-notes.md",
+    "concretefix": "Treat labels as provisional author estimates. Record the actual reasoning operation for each alleged analysis item. Math R033/R040/R078/R126/R127/R149 are six clearest judgment/model-selection candidates; demonstrate the extra reasoning in remaining claimed eleven rather than counting arithmetic steps or asserting no inflation. Use fresh independent coding after revisions.",
+    "questionIds": []
+  },
+  {
+    "anonymousIDs": [],
+    "severity": "medium",
+    "issue": "Landing major-topic weights and counts are internally correct, but follows national topic balance can obscure major subtopic omissions. No directly contradictory official format/passing/PSI claim found in inspected files.",
+    "source": "app/real-estate-broker-practice-test/page.tsx; lib/examFacts.ts realestatebroker; https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf (national broker printed pp.5\u20138)",
+    "concretefix": "Until coverage and gate are resolved, keep unapproved draft and describe selected national topics in shorter independent practice. Preserve 80+5 official vs four50 practice distinction, editorial rounding, and jurisdiction-specific passing/state-law caveats. Do not market validated exam difficulty/readiness.",
+    "questionIds": []
+  }
+]

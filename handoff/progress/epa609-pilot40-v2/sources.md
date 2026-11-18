@@ -1,0 +1,8 @@
+# V2 source verification
+
+Only SRV-031 and YF-012 changed. The remaining source record is unchanged in /Users/johnbrophy/tigertest-next20-progress/epa609-pilot40-v1/sources.md. Precise per-option evidence for all forty is preserved in authoring-evidence.json.
+
+- [Robinair SP01972025 VER 01](https://www.robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf), printed page 31 (PDF page 33), Change Vacuum Pump Oil, step 5 and following note. Re-read November 18, 2026 from the manufacturer PDF cached at /Users/johnbrophy/tigertest-next20-progress/epa609-pilot-v2/robinair-SP01972025-VER01.pdf. This procedure specifies the center of the sight glass and a flat, level machine. SRV-031 tests that model-specific acceptance criterion without supplying the correct level in the stem. It makes no universal EPA pump-fill requirement.
+- [MACS January 2025 training narrative](https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf), printed page 51 (PDF page 57), paragraph beginning the partial-charge stage: the described procedure introduces 15% of the specified charge before checking for leaks. YF-012 deliberately supplies 15% as the machine procedure in an original hypothetical calculation. It tests application, not recall of a universal percentage. Six hundred grams is hypothetical; 90 g is the initial dose and 510 g is the remaining balance. The other quantities are credible percentage errors, not asserted alternate permitted doses.
+
+No test questions or answer pools were used. No inference that every machine uses the same partial-charge fraction is made. The sole staged-dose calculation is YF-012; no other selected or frozen item computes that dose.

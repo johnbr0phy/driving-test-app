@@ -1,0 +1,66 @@
+{
+  "reviewType": "Exposed targeted factual and pedagogical review; no fresh blinded score",
+  "items": [
+    {
+      "questionId": "EPA609-SRV-006",
+      "status": "resolved",
+      "severity": "none",
+      "disposition": "Accept targeted replacement",
+      "assessment": "Manufacturer PDF page 6 E\u2013F explicitly prescribes moving-probe retest with a gap after apparent high-sensitivity detection, especially when earlier sampling was stationary or touching. Page 5 explains concentration-change response. All four options now concern the same task. Stationary sampling to stabilize/peak and closer contact are credible novice errors; sweeping with contact is a strong partial-knowledge rival. The old single-refrigerant versus three-gases cue is eliminated. Correct answer B is supported without invoking a universal detector or SAE rule.",
+      "remainingNote": "Optional: give the named manual\u2019s 9.5 mm gap and 75 mm/s maximum sweep rate in the explanation as useful operating detail. Their absence does not make this qualitative distinction false.",
+      "sources": [
+        "https://www.robinair.com/sites/default/files/documents/550029_EN_0.pdf"
+      ]
+    },
+    {
+      "questionId": "EPA609-REG-025",
+      "status": "resolved",
+      "severity": "none",
+      "disposition": "Accept",
+      "assessment": "Explicit equipment ownership now matches 82.42(a)(1). Operator certification and signing authority remain separate. The completed operator credential is a credible distraction rather than a missing qualification caricature.",
+      "remainingNote": "No required change.",
+      "sources": [
+        "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.42"
+      ]
+    },
+    {
+      "questionId": "EPA609-EQP-006",
+      "status": "resolved",
+      "severity": "none",
+      "disposition": "Accept",
+      "assessment": "The explanation no longer claims an illustration is present. Inspection-opening visibility versus friction, nominal size and lubrication accurately distinguishes insertion depth from neighboring preparation checks. Supplier-procedure qualification is retained.",
+      "remainingNote": "Some options are easy, but no medium/high cue defect is established.",
+      "sources": [
+        "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+      ]
+    },
+    {
+      "questionId": "EPA609-YF-013",
+      "status": "resolved",
+      "severity": "none",
+      "disposition": "Accept within described workflow",
+      "assessment": "Staged precharge, A/C off, low blower and floor mode now supply the relevant procedure context before the answer. Center versus lower edge/floor genuinely tests sampling position; density can plausibly tempt lower placement. The explanation preserves the narrative-source and machine-instruction limits.",
+      "remainingNote": "Does not establish a universal J2843 clause; current wording does not claim one.",
+      "sources": [
+        "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+      ]
+    },
+    {
+      "questionId": "EPA609-YF-014",
+      "status": "resolved",
+      "severity": "none",
+      "disposition": "Accept as foundational containment item",
+      "assessment": "Asking for the action before opening removes the near-definition wording. Recovery versus ordinary vacuum evacuation remains the meaningful novice distinction. Explanation correctly rejects valve closure and stable pressure as proof of removal. The legal requirement is independent of differing manufacturer controller menus.",
+      "remainingNote": "Closing valves and waiting are weaker alternatives, so keep this as an easy item rather than advanced troubleshooting.",
+      "sources": [
+        "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B/section-82.32"
+      ]
+    }
+  ],
+  "remainingMediumHighItemFlaws": [],
+  "bankLimitations": [
+    "Previous full40 review found adjacent charge/leak-detection and regulatory-topic clusters; spread related objectives across forms. This is a coverage/design caution, not a newly demonstrated wrong or ambiguous item.",
+    "No new options-only measurement, numerical gate result, or unseen full-bank approval is claimed."
+  ],
+  "previousFilesModified": false
+}

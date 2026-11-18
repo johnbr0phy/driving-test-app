@@ -1,0 +1,1802 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "frvtcCommercial",
+    "optionA": "33,60 €",
+    "optionB": "31,60 €",
+    "optionC": "53,60 €",
+    "optionD": "43,60 €",
+    "question": "Tarif : 12 € + 1,20 €/km + 0,40 €/min. Quel prix pour 18 km et 25 minutes ?"
+  },
+  {
+    "reviewId": "R002",
+    "category": "frvtcCommercial",
+    "optionA": "La fiche éditoriale publiée par un journal local",
+    "optionB": "L'avis qu'un client a laissé sur un annuaire",
+    "optionC": "Son site internet administré en interne",
+    "optionD": "La page de résultats d'un comparateur indépendant",
+    "question": "Sur quel support l'entreprise peut-elle modifier directement ses horaires et son formulaire de réservation ?"
+  },
+  {
+    "reviewId": "R003",
+    "category": "frvtcCommercial",
+    "optionA": "Publier une page locale décrivant ce transfert",
+    "optionB": "Adresser une offre de retour à ses anciens clients",
+    "optionC": "Présenter ses services dans une réunion d'hôteliers",
+    "optionD": "Distribuer une carte de fidélité après chaque course",
+    "question": "Quelle action cible les recherches en ligne d'un transfert gare-aéroport dans votre ville ?"
+  },
+  {
+    "reviewId": "R004",
+    "category": "frvtcFrancais",
+    "optionA": "À la cliente",
+    "optionB": "À la voiture",
+    "optionC": "À la conductrice",
+    "optionD": "À la réceptionniste",
+    "question": "Compte rendu : \"La cliente quitte la voiture et appelle l'accueil. Une réceptionniste prend sa demande. Celle-ci joint ensuite le chauffeur, qui retrouve le sac sous le siège.\" À qui renvoie \"celle-ci\" ?"
+  },
+  {
+    "reviewId": "R005",
+    "category": "frvtcCommercial",
+    "optionA": "L'acquisition d'une voiture pour son propre parc",
+    "optionB": "La hausse des frais d'entretien du véhicule",
+    "optionC": "Le décalage d'un règlement de client professionnel",
+    "optionD": "Une nouvelle liaison ferroviaire",
+    "question": "Quel changement crée une solution de substitution aux transferts VTC vers l'aéroport ?"
+  },
+  {
+    "reviewId": "R006",
+    "category": "frvtcCommercial",
+    "optionA": "Les réservations de la dernière soirée festive",
+    "optionB": "Les courses et recettes de périodes sans événement",
+    "optionC": "Les majorations appliquées pendant les concerts",
+    "optionD": "Les courses de la journée record du festival",
+    "question": "Un prévisionnel annuel repose sur un festival. Quelle donnée manque pour estimer les semaines ordinaires ?"
+  },
+  {
+    "reviewId": "R007",
+    "category": "frvtcFrancais",
+    "optionA": "Une distance de trajet supérieure",
+    "optionB": "Une prise en charge déplacée au centre",
+    "optionC": "Un retour du groupe à une heure plus tardive",
+    "optionD": "Un passage dans la zone de travaux",
+    "question": "Note : \"Bien que la route soit plus longue, elle évite les travaux du centre. Nous la retiendrons pour le retour de ce groupe.\" Quel inconvénient est accepté dans cette décision ?"
+  },
+  {
+    "reviewId": "R008",
+    "category": "frvtcReglementation",
+    "optionA": "2033",
+    "optionB": "2031",
+    "optionC": "2029",
+    "optionD": "2027",
+    "question": "L'inscription REVTC commence le 15 mars 2026. Quelle année correspond à sa prochaine échéance normale ?"
+  },
+  {
+    "reviewId": "R009",
+    "category": "frvtcT3p",
+    "optionA": "Des propos sexuels renouvelés par un même auteur",
+    "optionB": "Des remarques concertées entre plusieurs auteurs",
+    "optionC": "Une pression grave visant à obtenir un acte sexuel",
+    "optionD": "Un acte sexuel imposé par un contact déjà réalisé",
+    "question": "Un responsable menace une conductrice de supprimer ses missions si elle refuse un acte sexuel. Quelle qualification correspond ?"
+  },
+  {
+    "reviewId": "R010",
+    "category": "frvtcCommercial",
+    "optionA": "La remise proposée sur son prochain transfert",
+    "optionB": "La présentation d'un nouveau circuit touristique",
+    "optionC": "L'invitation à parrainer une autre personne",
+    "optionD": "La confirmation de l'heure et du lieu de rendez-vous",
+    "question": "Une cliente refuse les publicités mais réserve une course. Quel message reste strictement nécessaire au service ?"
+  },
+  {
+    "reviewId": "R011",
+    "category": "frvtcSecurite",
+    "optionA": "Voiture grise, coffre endommagé, feux de détresse actifs",
+    "optionB": "Deux voitures impliquées, un passager se plaint du bras",
+    "optionC": "A86, sens extérieur, point kilométrique repéré",
+    "optionD": "Deux conducteurs présents, coordonnées des témoins notées",
+    "question": "Les secours connaissent le nombre de blessés. Quel renseignement permet de choisir l'accès à l'accident ?"
+  },
+  {
+    "reviewId": "R012",
+    "category": "frvtcReglementation",
+    "optionA": "La radiation de son inscription VTC",
+    "optionB": "La déclaration d'un renfort exceptionnel",
+    "optionC": "Le renouvellement de l'inscription existante",
+    "optionD": "La mise à jour d'une voiture remplacée",
+    "question": "Une société abandonne définitivement le VTC pour une autre activité. Que devient son inscription sectorielle ?"
+  },
+  {
+    "reviewId": "R013",
+    "category": "frvtcSecurite",
+    "optionA": "La carte de guidage du trajet",
+    "optionB": "La visioconférence avec le client à venir",
+    "optionC": "Le tableau des recettes du chauffeur",
+    "optionD": "Le suivi vidéo de la prochaine prise en charge",
+    "question": "En roulant, quel contenu peut légalement apparaître sur un écran dans le champ de vision du chauffeur ?"
+  },
+  {
+    "reviewId": "R014",
+    "category": "frvtcReglementation",
+    "optionA": "Un support intérieur pour le guidage du chauffeur",
+    "optionB": "Un panneau amovible au nom du client à l'accueil",
+    "optionC": "Un rangement intérieur pour les justificatifs",
+    "optionD": "Un lumineux de toit du type réservé aux taxis",
+    "question": "Quel équipement crée une confusion interdite entre un VTC et un taxi ?"
+  },
+  {
+    "reviewId": "R015",
+    "category": "frvtcReglementation",
+    "optionA": "À la prochaine échéance quinquennale du registre",
+    "optionB": "Dans les quinze jours francs du changement",
+    "optionC": "Au terme du mois de remplacement exceptionnel",
+    "optionD": "Au moins trois mois avant l'échéance d'inscription",
+    "question": "Une voiture du dossier REVTC est remplacée définitivement. Quel délai s'applique à la transmission de ce changement ?"
+  },
+  {
+    "reviewId": "R016",
+    "category": "frvtcAnglais",
+    "optionA": "Un trajet plus rapide même s'il coûte davantage",
+    "optionB": "Un trajet au même prix avec moins d'arrêts",
+    "optionC": "Un trajet moins coûteux malgré une durée supérieure",
+    "optionD": "Un trajet plus court à condition de gagner du temps",
+    "question": "\"I'd prefer the cheaper route, even if it takes longer.\" Quelle préférence exprime le passager ?"
+  },
+  {
+    "reviewId": "R017",
+    "category": "frvtcReglementation",
+    "optionA": "Un semestre ferme",
+    "optionB": "Une année indivisible",
+    "optionC": "Un trimestre ferme",
+    "optionD": "Un mois renouvelable",
+    "question": "Quelle durée minimale de location dispense de justifier autrement la capacité financière liée au véhicule ?"
+  },
+  {
+    "reviewId": "R018",
+    "category": "frvtcSecurite",
+    "optionA": "Le porte-bagages extérieur de toit",
+    "optionB": "Le tapis de protection posé dans le coffre",
+    "optionC": "Le support de téléphone fixé au tableau de bord",
+    "optionD": "Le dispositif de retenue enfant à l'arrière",
+    "question": "Quel accessoire inutilisé augmente la résistance à l'air lorsqu'il reste installé ?"
+  },
+  {
+    "reviewId": "R019",
+    "category": "frvtcCommercial",
+    "optionA": "Fréquence des départs matinaux et volume de bagages",
+    "optionB": "Moyen de règlement et référence du paiement",
+    "optionC": "Publicité consultée et coût du premier contact",
+    "optionD": "Code postal et quartier de résidence",
+    "question": "Quelles données permettent de segmenter les clients selon les contraintes de leurs déplacements ?"
+  },
+  {
+    "reviewId": "R020",
+    "category": "frvtcReglementation",
+    "optionA": "Le 2 juillet",
+    "optionB": "Le 12 juillet",
+    "optionC": "Le 12 juin",
+    "optionD": "Le 30 juin",
+    "question": "Vignette temporaire envoyée le 2 juin ; recours exceptionnel déclaré jusqu'au 12 juin. Quelle échéance s'applique ?"
+  },
+  {
+    "reviewId": "R021",
+    "category": "frvtcCommercial",
+    "optionA": "Les deux solutions, à contribution égale",
+    "optionB": "La longue course, avec 8 € de plus",
+    "optionC": "Les deux courses, avec 19 € de plus",
+    "optionD": "Les deux courses, avec 8 € de plus",
+    "question": "En deux heures, une course rapporte 46 € après coûts variables, ou deux courses 27 € chacune. Quelle meilleure contribution ?"
+  },
+  {
+    "reviewId": "R022",
+    "category": "frvtcSecurite",
+    "optionA": "30 m",
+    "optionB": "20 m",
+    "optionC": "5 m",
+    "optionD": "10 m",
+    "question": "À 20 m/s, le temps de réaction passe de 1 à 1,5 seconde. Quelle distance supplémentaire parcourez-vous ?"
+  },
+  {
+    "reviewId": "R023",
+    "category": "frvtcSecurite",
+    "optionA": "A doit laisser B poursuivre sur la voie extérieure",
+    "optionB": "Le premier véhicule entré dans le giratoire est prioritaire",
+    "optionC": "B doit laisser A sortir dès le clignotant",
+    "optionD": "B doit céder parce que A est à l'intérieur",
+    "question": "A veut sortir de la voie intérieure d'un giratoire ; B occupe la voie extérieure. Qui doit céder ?"
+  },
+  {
+    "reviewId": "R024",
+    "category": "frvtcAnglais",
+    "optionA": "Could you open your window a little?",
+    "optionB": "Would you like me to leave it closed?",
+    "optionC": "May I open the window a little?",
+    "optionD": "Shall I close the window now?",
+    "question": "Comment demander l'autorisation d'ouvrir vous-même une fenêtre ?"
+  },
+  {
+    "reviewId": "R025",
+    "category": "frvtcReglementation",
+    "optionA": "Une citadine à trois portes",
+    "optionB": "Une berline à quatre portes",
+    "optionC": "Un cabriolet à deux portes",
+    "optionD": "Un coupé à deux portes",
+    "question": "Quel véhicule thermique non hybride respecte le nombre minimal de portes imposé aux VTC ?"
+  },
+  {
+    "reviewId": "R026",
+    "category": "frvtcT3p",
+    "optionA": "Le numéro REVTC et l'adresse du siège",
+    "optionB": "Les propos entendus, avec l'heure et le lieu",
+    "optionC": "Le montant réglé et la référence du paiement",
+    "optionD": "La distance parcourue et le tarif kilométrique",
+    "question": "Un signalement est accompagné du reçu et de l'identité de l'exploitant. Que faut-il ajouter pour décrire les faits sexistes ?"
+  },
+  {
+    "reviewId": "R027",
+    "category": "frvtcT3p",
+    "optionA": "14 heures / tous les cinq ans",
+    "optionB": "14 heures / chaque année",
+    "optionC": "7 heures / tous les deux ans",
+    "optionD": "35 heures / tous les cinq ans",
+    "question": "Quelle durée et quelle périodicité s'appliquent à la formation continue obligatoire des conducteurs VTC ?"
+  },
+  {
+    "reviewId": "R028",
+    "category": "frvtcSecurite",
+    "optionA": "Se déporter immédiatement à gauche malgré le véhicule présent",
+    "optionB": "Passer sur la bande d'arrêt d'urgence avant le véhicule arrêté",
+    "optionC": "Maintenir l'allure tant qu'aucun changement de voie n'est possible",
+    "optionD": "Réduire l'allure et s'écarter dans sa voie autant que possible",
+    "question": "Un véhicule est immobilisé avec ses feux de détresse. La voie voisine est occupée. Comment créer le corridor de sécurité ?"
+  },
+  {
+    "reviewId": "R029",
+    "category": "frvtcSecurite",
+    "optionA": "Son médecin ou son pharmacien",
+    "optionB": "Le responsable commercial de sa plateforme",
+    "optionC": "L'assureur chargé des dommages matériels",
+    "optionD": "Le technicien chargé du contrôle du véhicule",
+    "question": "Un médicament porte le pictogramme orange de niveau 2. Qui consulter avant de conduire ?"
+  },
+  {
+    "reviewId": "R030",
+    "category": "frvtcCommercial",
+    "optionA": "L'horaire de départ souhaité",
+    "optionB": "Les coordonnées de réponse",
+    "optionC": "Le revenu annuel",
+    "optionD": "La destination du trajet",
+    "question": "Un formulaire de devis exige trajet, horaire, contact et revenu annuel. Quelle donnée est disproportionnée ?"
+  },
+  {
+    "reviewId": "R031",
+    "category": "frvtcFrancais",
+    "optionA": "L'envoi du questionnaire aux particuliers",
+    "optionB": "La décision sur les prestations à modifier",
+    "optionC": "L'envoi du questionnaire aux entreprises",
+    "optionD": "Le regroupement des réponses des deux groupes",
+    "question": "Présentation : \"Le questionnaire sera envoyé aux entreprises en septembre et aux particuliers en octobre. Les réponses seront regroupées en novembre. Les décisions seront prises après cette analyse.\" Quelle étape est prévue en octobre ?"
+  },
+  {
+    "reviewId": "R032",
+    "category": "frvtcCommercial",
+    "optionA": "Un avenant de prix accepté par le client et le prestataire",
+    "optionB": "Une nouvelle grille de prix publiée sur le site",
+    "optionC": "Une facture au montant supérieur envoyée au client",
+    "optionD": "Un message de l'assureur modifiant la prime annuelle",
+    "question": "Quel échange permet de modifier un devis ferme accepté, sans clause de révision ni autre cause légale ?"
+  },
+  {
+    "reviewId": "R033",
+    "category": "frvtcT3p",
+    "optionA": "La ligne d'écoute Violences Femmes Info (3919)",
+    "optionB": "Le numéro 17 pour une intervention urgente",
+    "optionC": "Le Défenseur des droits pour l'orientation juridique",
+    "optionD": "Le tchat officiel de signalement",
+    "question": "Une victime souhaite signaler des violences sexistes par écrit aux forces de l'ordre, sans urgence. Quel canal utiliser ?"
+  },
+  {
+    "reviewId": "R034",
+    "category": "frvtcFrancais",
+    "optionA": "L'identification du propriétaire par l'accueil",
+    "optionB": "La découverte du bagage par le chauffeur",
+    "optionC": "La remise du bagage au client identifié",
+    "optionD": "L'appel du client à la société de transport",
+    "question": "Note d'incident : \"À 18 h 10, le chauffeur a signalé un bagage oublié. À 18 h 20, l'accueil a identifié son propriétaire. Le client a récupéré le bagage à 19 heures.\" Quelle information correspond à 18 h 20 ?"
+  },
+  {
+    "reviewId": "R035",
+    "category": "frvtcFrancais",
+    "optionA": "Deux dossiers",
+    "optionB": "Huit dossiers",
+    "optionC": "Un dossier",
+    "optionD": "Aucun dossier",
+    "question": "Compte rendu : \"Dix demandes sont arrivées. Huit dossiers étaient complets. Deux attendaient une précision ; une réponse vient d'arriver et complète l'un d'eux.\" Combien de dossiers restent incomplets ?"
+  },
+  {
+    "reviewId": "R036",
+    "category": "frvtcReglementation",
+    "optionA": "Un fichier consultable de cette course, avec toutes les mentions requises",
+    "optionB": "Un document papier donnant uniquement le prix et le moyen de paiement",
+    "optionC": "Une capture montrant uniquement la demande d'un client non confirmée",
+    "optionD": "Une impression complète de la course faite hier pour le même client",
+    "question": "Quel justificatif peut prouver une réservation pour aujourd'hui à 9 heures, sur papier ou support numérique ?"
+  },
+  {
+    "reviewId": "R037",
+    "category": "frvtcGestion",
+    "optionA": "Le président rémunéré de la SASU",
+    "optionB": "Le gérant associé unique de l'EURL",
+    "optionC": "Les deux dirigeants du fait de leur rémunération",
+    "optionD": "Aucun des deux du fait de l'associé unique",
+    "question": "Gérant associé unique d'EURL et président de SASU, tous deux rémunérés : qui est assimilé salarié sans chômage lié au mandat ?"
+  },
+  {
+    "reviewId": "R038",
+    "category": "frvtcSecurite",
+    "optionA": "Adulte ceinturé installé sur le siège avant",
+    "optionB": "Enfant en retenue adaptée installé à l'arrière",
+    "optionC": "Bébé dos à la route installé sur un siège arrière",
+    "optionD": "Bébé dos à la route installé sur le siège avant",
+    "question": "Quelle installation impose de désactiver l'airbag frontal passager ?"
+  },
+  {
+    "reviewId": "R039",
+    "category": "frvtcT3p",
+    "optionA": "Un devis donnant prix et mode de règlement",
+    "optionB": "Une fiche indiquant places et bagages admis",
+    "optionC": "Un annuaire présentant entreprise et coordonnées",
+    "optionD": "Une carte situant une voiture marquée « libre »",
+    "question": "Avant réservation, quel écran constitue une maraude électronique interdite pour un VTC sur la voie publique ?"
+  },
+  {
+    "reviewId": "R040",
+    "category": "frvtcT3p",
+    "optionA": "Le reçu identifiant le payeur de la course",
+    "optionB": "Les messages établissant leur préparation commune",
+    "optionC": "Les relevés montrant des trajets différents",
+    "optionD": "La carte indiquant le domicile de la conductrice",
+    "question": "Chaque passager fait une remarque sexuelle humiliante unique. Quelle pièce peut établir un harcèlement concerté envers la conductrice ?"
+  },
+  {
+    "reviewId": "R041",
+    "category": "frvtcCommercial",
+    "optionA": "65 %",
+    "optionB": "80 %",
+    "optionC": "28 %",
+    "optionD": "35 %",
+    "question": "Parmi 80 nouveaux clients de janvier, 28 rachètent avant avril. Quel taux de réachat pour cette cohorte ?"
+  },
+  {
+    "reviewId": "R042",
+    "category": "frvtcGestion",
+    "optionA": "Une SARL à plusieurs associés",
+    "optionB": "La forme SASU",
+    "optionC": "La forme EURL",
+    "optionD": "L'exercice en entreprise individuelle",
+    "question": "Ana veut créer seule une société et la présider, sans gérant. Quelle forme correspond ?"
+  },
+  {
+    "reviewId": "R043",
+    "category": "frvtcGestion",
+    "optionA": "Le paiement comptant d'une réparation réalisée",
+    "optionB": "Le remboursement du capital d'un emprunt",
+    "optionC": "Le règlement d'une dette fournisseur antérieure",
+    "optionD": "La dotation annuelle d'amortissement de la voiture",
+    "question": "Quelle opération réduit le résultat sans décaissement lors de son enregistrement ?"
+  },
+  {
+    "reviewId": "R044",
+    "category": "frvtcFrancais",
+    "optionA": "Les retours du vendredi soir",
+    "optionB": "Les retours de chaque soir",
+    "optionC": "Les départs du samedi matin",
+    "optionD": "Les devis du vendredi matin",
+    "question": "Planning : \"Nadia conduit le matin et prépare les devis l'après-midi. Samir assure les retours de soirée. Vendredi seulement, Nadia remplacera Samir le soir ; les autres créneaux ne changent pas.\" Quel service supplémentaire Nadia assure-t-elle cette semaine ?"
+  },
+  {
+    "reviewId": "R045",
+    "category": "frvtcFrancais",
+    "optionA": "Reporter la demande au lendemain avant 7 heures",
+    "optionB": "Confirmer au client puis appeler le responsable",
+    "optionC": "Avertir le chauffeur la veille du déplacement",
+    "optionD": "Téléphoner au responsable avant confirmation",
+    "question": "Consigne de planning : \"Pour les réservations avant 7 heures, avertissez le chauffeur la veille. Pour les demandes reçues le matin même, téléphonez au responsable avant de confirmer.\" Une demande pour 6 h 30 arrive à 6 heures. Quelle démarche est prévue pour ce cas ?"
+  },
+  {
+    "reviewId": "R046",
+    "category": "frvtcGestion",
+    "optionA": "13 000 €",
+    "optionB": "9 600 €",
+    "optionC": "6 200 €",
+    "optionD": "−6 200 €",
+    "question": "Sans stocks, créances clients : 9 600 € ; dettes fournisseurs : 3 400 €. Quel besoin d'exploitation reste à financer ?"
+  },
+  {
+    "reviewId": "R047",
+    "category": "frvtcReglementation",
+    "optionA": "Mardi 9 h : commande ; lundi 14 h : départ demandé",
+    "optionB": "Lundi 14 h : commande ; lundi 14 h : départ demandé",
+    "optionC": "Mardi 9 h : commande ; mardi 9 h : départ demandé",
+    "optionD": "Lundi 14 h : commande ; mardi 9 h : départ demandé",
+    "question": "Réservation lundi à 14 h, prise en charge mardi à 9 h. Quelles mentions temporelles inscrire ?"
+  },
+  {
+    "reviewId": "R048",
+    "category": "frvtcT3p",
+    "optionA": "Le service de médiation de la plateforme",
+    "optionB": "Le 3928 pour l'orientation sur les droits",
+    "optionC": "Le 3919 pour l'écoute et l'information",
+    "optionD": "Police Secours au 17",
+    "question": "Un passager menace d'agresser quelqu'un immédiatement. Quel contact privilégier pour obtenir une intervention policière ?"
+  },
+  {
+    "reviewId": "R049",
+    "category": "frvtcFrancais",
+    "optionA": "Le mécanicien après le retour de la voiture",
+    "optionB": "Le client qui attend le départ de la course",
+    "optionC": "La personne chargée de remettre les clés",
+    "optionD": "Le chauffeur après avoir vérifié le numéro",
+    "question": "Instructions : \"Les clés sont remises au chauffeur après le contrôle de la voiture. Le registre est signé par la personne qui remet les clés ; le chauffeur vérifie ensuite le numéro inscrit.\" Qui signe le registre ?"
+  },
+  {
+    "reviewId": "R050",
+    "category": "frvtcReglementation",
+    "optionA": "80 kW pour une puissance fiscale de 8 CV",
+    "optionB": "83 kW pour une puissance fiscale de 9 CV",
+    "optionC": "85 kW pour une puissance fiscale de 6 CV",
+    "optionD": "82 kW pour une puissance fiscale de 7 CV",
+    "question": "Quelle fiche de berline thermique non hybride respecte le minimum de puissance nette VTC ?"
+  },
+  {
+    "reviewId": "R051",
+    "category": "frvtcReglementation",
+    "optionA": "La première demande un devis à la seconde",
+    "optionB": "La seconde adresse un client à la première",
+    "optionC": "La seconde exploite sous l'inscription de la première",
+    "optionD": "Les deux entreprises comparent leurs disponibilités",
+    "question": "Quelle coopération constitue un prêt de numéro REVTC interdit, même sans rémunération ?"
+  },
+  {
+    "reviewId": "R052",
+    "category": "frvtcSecurite",
+    "optionA": "Les pressions sont inférieures aux valeurs préconisées",
+    "optionB": "Les valeurs prescrites figurent sur l'étiquette constructeur",
+    "optionC": "Le contrôle a été consigné au carnet d'entretien",
+    "optionD": "Les pressions à froid correspondent aux valeurs prescrites",
+    "question": "Quel relevé de pression peut expliquer une surconsommation et une tenue de route dégradée ?"
+  },
+  {
+    "reviewId": "R053",
+    "category": "frvtcReglementation",
+    "optionA": "Joindre le gestionnaire du registre VTC",
+    "optionB": "Joindre le seul visiteur transporté",
+    "optionC": "Joindre l'assureur professionnel du chauffeur",
+    "optionD": "Joindre directement le client réservataire",
+    "question": "Une entreprise réserve pour un visiteur, mais ses coordonnées manquent. Quelle possibilité offrir immédiatement à l'agent de contrôle ?"
+  },
+  {
+    "reviewId": "R054",
+    "category": "frvtcT3p",
+    "optionA": "Le mode de paiement choisi par le client",
+    "optionB": "Le montant brut facturé avant commission",
+    "optionC": "La destination du trajet proposé",
+    "optionD": "Le nom complet du client réservataire",
+    "question": "Distance et rémunération nette sont indiquées. Quelle autre information la plateforme doit-elle fournir avant l'acceptation d'une course ?"
+  },
+  {
+    "reviewId": "R055",
+    "category": "frvtcCommercial",
+    "optionA": "7 €",
+    "optionB": "3 €",
+    "optionC": "10 €",
+    "optionD": "30 €",
+    "question": "Prix : 100 € HT ; coût inchangé : 70 € HT. Une remise de 10 % réduit la marge de combien ?"
+  },
+  {
+    "reviewId": "R056",
+    "category": "frvtcAnglais",
+    "optionA": "Demain à 6 h 45",
+    "optionB": "Demain à 19 h 15",
+    "optionC": "Demain à 7 h 15",
+    "optionD": "Aujourd'hui à 6 h 45",
+    "question": "\"Pick me up at a quarter to seven tomorrow morning.\" Quel rendez-vous est demandé ?"
+  },
+  {
+    "reviewId": "R057",
+    "category": "frvtcReglementation",
+    "optionA": "L'attestation d'inscription de l'entreprise reçue du registre",
+    "optionB": "La notification préfectorale de la carte personnelle du chauffeur",
+    "optionC": "Le document provisoire de l'Imprimerie nationale",
+    "optionD": "L'attestation de couverture transmise par l'assureur automobile",
+    "question": "Quel envoi fournit la signalétique temporaire après validation du véhicule, avant l'arrivée des vignettes définitives ?"
+  },
+  {
+    "reviewId": "R058",
+    "category": "frvtcCommercial",
+    "optionA": "17 280 €",
+    "optionB": "30 €",
+    "optionC": "696 €",
+    "optionD": "24 €",
+    "question": "Une campagne de 720 € apporte 24 nouveaux clients. Quel coût d'acquisition par client ?"
+  },
+  {
+    "reviewId": "R059",
+    "category": "frvtcFrancais",
+    "optionA": "Groupe à confirmer ; disponibilité du véhicule établie",
+    "optionB": "Groupe prêt ; disponibilité du véhicule à confirmer",
+    "optionC": "Groupe prêt ; disponibilité du véhicule établie",
+    "optionD": "Groupe à confirmer ; disponibilité du véhicule à confirmer",
+    "question": "Le groupe peut repartir plus tôt si sa visite est terminée et si un véhicule est disponible. La visite est finie, mais aucun véhicule n'est encore confirmé. Quel état des deux conditions décrit la situation ?"
+  },
+  {
+    "reviewId": "R060",
+    "category": "frvtcSecurite",
+    "optionA": "Aucun des deux chauffeurs en service",
+    "optionB": "Les deux chauffeurs professionnels",
+    "optionC": "Le chauffeur de VTC entre ses courses",
+    "optionD": "Le chauffeur de taxi en service",
+    "question": "Taxi et VTC en service : quel chauffeur bénéficie d'une exemption professionnelle de ceinture ?"
+  },
+  {
+    "reviewId": "R061",
+    "category": "frvtcT3p",
+    "optionA": "La visite de santé auprès de l'employeur",
+    "optionB": "La consultation du médecin traitant habituel",
+    "optionC": "La visite chez un médecin agréé par la préfecture",
+    "optionD": "Le contrôle ophtalmologique des lunettes",
+    "question": "Quel rendez-vous satisfait au contrôle réglementaire d'aptitude médicale à la conduite VTC ?"
+  },
+  {
+    "reviewId": "R062",
+    "category": "frvtcReglementation",
+    "optionA": "Le numéro du contrat d'assurance automobile",
+    "optionB": "Le numéro de carte du conducteur affecté",
+    "optionC": "Son numéro d'inscription au REVTC",
+    "optionD": "Le numéro de série du véhicule utilisé",
+    "question": "Quel identifiant de l'exploitant doit figurer au justificatif de réservation, en plus de son SIREN ?"
+  },
+  {
+    "reviewId": "R063",
+    "category": "frvtcSecurite",
+    "optionA": "Poursuivre le franchissement sans accélération brusque",
+    "optionB": "S'arrêter après le feu dès que la chaussée le permet",
+    "optionC": "Freiner à la ligne même si le véhicule reste engagé",
+    "optionD": "Freiner fortement pour respecter l'arrêt au jaune",
+    "question": "Le feu devient jaune ; vous ne pouvez plus vous arrêter sans danger. Le carrefour est libre. Que faire ?"
+  },
+  {
+    "reviewId": "R064",
+    "category": "frvtcSecurite",
+    "optionA": "Avril 2027",
+    "optionB": "Avril 2031",
+    "optionC": "Octobre 2026",
+    "optionD": "Avril 2028",
+    "question": "Un VTC passe son contrôle technique périodique en avril 2026. Quand prévoir le suivant ?"
+  },
+  {
+    "reviewId": "R065",
+    "category": "frvtcSecurite",
+    "optionA": "110 km/h",
+    "optionB": "130 km/h",
+    "optionC": "100 km/h",
+    "optionD": "90 km/h",
+    "question": "Sous la pluie, quel plafond s'applique sur une autoroute habituellement limitée à 130 km/h ?"
+  },
+  {
+    "reviewId": "R066",
+    "category": "frvtcReglementation",
+    "optionA": "La chambre de métiers de chaque département",
+    "optionB": "La mairie du siège de l'entreprise",
+    "optionC": "Le préfet de la région d'Île-de-France",
+    "optionD": "La préfecture de région Occitanie",
+    "question": "Quelle autorité gère le registre national des exploitants VTC, y compris pour une société toulousaine ?"
+  },
+  {
+    "reviewId": "R067",
+    "category": "frvtcReglementation",
+    "optionA": "En bas à droite sur les deux vitrages avant et arrière",
+    "optionB": "En haut à droite à l'avant et en haut à gauche à l'arrière",
+    "optionC": "En bas à gauche sur les deux vitrages avant et arrière",
+    "optionD": "En bas à gauche à l'avant et en bas à droite à l'arrière",
+    "question": "Sur un VTC avec conduite à gauche, où placer les deux vignettes définitives ?"
+  },
+  {
+    "reviewId": "R068",
+    "category": "frvtcReglementation",
+    "optionA": "16 h uniquement",
+    "optionB": "14 h 40",
+    "optionC": "15 h",
+    "optionD": "15 h 30",
+    "question": "Prise en charge réservée en gare à 16 heures. Quand commence l'attente autorisée, sous réserve des règles locales ?"
+  },
+  {
+    "reviewId": "R069",
+    "category": "frvtcT3p",
+    "optionA": "À la répétition ultérieure du geste envisagé",
+    "optionB": "À la transmission des coordonnées de Camille",
+    "optionC": "À la poursuite physique de la rencontre",
+    "optionD": "Au rapprochement intime envisagé par Alex",
+    "question": "Camille donne son numéro, sans accepter de geste intime. À quoi se limite son accord ?"
+  },
+  {
+    "reviewId": "R070",
+    "category": "frvtcT3p",
+    "optionA": "Refuser un groupe dépassant les places disponibles",
+    "optionB": "Refuser un créneau déjà engagé pour un autre client",
+    "optionC": "Refuser des valises qui ne peuvent être arrimées",
+    "optionD": "Refuser une cliente pour une religion qu'on lui attribue",
+    "question": "Quel refus reste discriminatoire même lorsque le chauffeur s'est trompé sur la caractéristique supposée du client ?"
+  },
+  {
+    "reviewId": "R071",
+    "category": "frvtcT3p",
+    "optionA": "46 €",
+    "optionB": "38 €",
+    "optionC": "52 €",
+    "optionD": "44 €",
+    "question": "Course : 38 € ; détour convenu : 6 € ; chien guide admis légalement : supplément de 8 €. Quel total est permis ?"
+  },
+  {
+    "reviewId": "R072",
+    "category": "frvtcGestion",
+    "optionA": "Le principal des emprunts déjà remboursés",
+    "optionB": "Les amortissements annuels du véhicule",
+    "optionC": "Les apports des associés au capital social",
+    "optionD": "Les créances clients en attente d'encaissement",
+    "question": "Les clients paient désormais à trente jours plutôt que comptant. Quel poste explique le financement supplémentaire nécessaire ?"
+  },
+  {
+    "reviewId": "R073",
+    "category": "frvtcSecurite",
+    "optionA": "La section plane permettant de voir la fin de manœuvre",
+    "optionB": "La portion découverte sans véhicule venant en face",
+    "optionC": "La montée masquant la chaussée au-delà du sommet",
+    "optionD": "La ligne droite visible et libre sur la distance utile",
+    "question": "Quelle portion interdit un dépassement nécessitant la voie opposée faute de visibilité suffisante ?"
+  },
+  {
+    "reviewId": "R074",
+    "category": "frvtcSecurite",
+    "optionA": "B, puisqu'il voit A sur sa droite",
+    "optionB": "A, seulement s'il vise une sortie plus éloignée",
+    "optionC": "A, malgré sa sortie prévue à proximité",
+    "optionD": "B, si A a déjà annoncé sa sortie",
+    "question": "A entre dans un giratoire ; B y circule déjà. A prend la première sortie. Qui cède ?"
+  },
+  {
+    "reviewId": "R075",
+    "category": "frvtcSecurite",
+    "optionA": "Conserver un régime élevé pour disposer de reprise",
+    "optionB": "Garder la vitesse puis freiner à l'approche de la file",
+    "optionC": "Relâcher tôt l'accélérateur et anticiper le ralentissement",
+    "optionD": "Rouler au point mort pour laisser le moteur au ralenti",
+    "question": "Une file ralentit au loin. Vous disposez d'une marge suffisante. Quelle conduite économise l'énergie sans freinage brusque ?"
+  },
+  {
+    "reviewId": "R076",
+    "category": "frvtcReglementation",
+    "optionA": "Longueur 4,49 m ; largeur 1,69 m",
+    "optionB": "Longueur 4,70 m ; largeur 1,68 m",
+    "optionC": "Longueur 4,48 m ; largeur 1,78 m",
+    "optionD": "Longueur 4,62 m ; largeur 1,72 m",
+    "question": "Quelle berline thermique non hybride respecte les dimensions minimales VTC, les autres caractéristiques étant conformes ?"
+  },
+  {
+    "reviewId": "R077",
+    "category": "frvtcSecurite",
+    "optionA": "La première arrivée, puis l'autre",
+    "optionB": "La rouge, puis la bleue",
+    "optionC": "La première engagée, quelle que soit son origine",
+    "optionD": "La bleue, puis la rouge",
+    "question": "Sans signalisation, la rouge arrive à droite de la bleue sur une rue plus étroite. Qui passe d'abord ?"
+  },
+  {
+    "reviewId": "R078",
+    "category": "frvtcReglementation",
+    "optionA": "Celui qui détient une nouvelle réservation confirmée",
+    "optionB": "Celui qui prévoit de se rapprocher d'une gare",
+    "optionC": "Celui qui espère une demande via son application",
+    "optionD": "Celui qui voit des clients attendre devant un hôtel",
+    "question": "Quel chauffeur peut rejoindre directement une autre prise en charge, sans retour préalable après sa dépose ?"
+  },
+  {
+    "reviewId": "R079",
+    "category": "frvtcReglementation",
+    "optionA": "Une pose collée dont le retrait détruit la vignette",
+    "optionB": "Une pochette fixée par deux ventouses au vitrage",
+    "optionC": "Une fixation magnétique retirée après le service",
+    "optionD": "Un porte-document détachable sur la plage arrière",
+    "question": "Quel montage respecte les exigences de fixation des vignettes VTC définitives ?"
+  },
+  {
+    "reviewId": "R080",
+    "category": "frvtcSecurite",
+    "optionA": "Avant le franchissement du feu vert",
+    "optionB": "À l'approche du cédez-le-passage",
+    "optionC": "À l'entrée du croisement non signalé",
+    "optionD": "À la ligne du STOP",
+    "question": "Où devez-vous vous immobiliser même lorsque le passage est entièrement libre ?"
+  },
+  {
+    "reviewId": "R081",
+    "category": "frvtcT3p",
+    "optionA": "Marc rejoint la gare uniquement pour y déposer Paul",
+    "optionB": "Yann fait un détour complet sans destination personnelle",
+    "optionC": "Inès sort de chez elle à la demande de deux voisins",
+    "optionD": "Léa rejoint sa famille, même sans passager",
+    "question": "Quel trajet avec partage des frais relève du covoiturage au sens légal ?"
+  },
+  {
+    "reviewId": "R082",
+    "category": "frvtcReglementation",
+    "optionA": "Éric, le président de la SAS",
+    "optionB": "Luc, le comptable de la société",
+    "optionC": "Karim, le conducteur référent",
+    "optionD": "Salomé, l'actionnaire principale",
+    "question": "Qui présente la demande d'inscription REVTC d'une SAS en qualité de représentant légal ?"
+  },
+  {
+    "reviewId": "R083",
+    "category": "frvtcFrancais",
+    "optionA": "Réduire le nombre d'appels reçus au bureau",
+    "optionB": "Empêcher les chauffeurs d'accéder au téléphone",
+    "optionC": "Préserver la confidentialité des conversations",
+    "optionD": "Signaler au public la fermeture de la réception",
+    "question": "À la réception, on lit : \"Merci de fermer la porte du bureau en partant, pour éviter que les conversations téléphoniques soient entendues dans le hall.\" Quel est le but de cette consigne ?"
+  },
+  {
+    "reviewId": "R084",
+    "category": "frvtcGestion",
+    "optionA": "120 jours",
+    "optionB": "180 jours",
+    "optionC": "240 jours",
+    "optionD": "300 jours",
+    "question": "Sur 360 jours, ventes régulières : 90 000 € ; seuil de rentabilité : 60 000 €. Quand le point mort est-il atteint ?"
+  },
+  {
+    "reviewId": "R085",
+    "category": "frvtcSecurite",
+    "optionA": "Une simple avance d'une file sur une autre",
+    "optionB": "Un changement de voie autorisé par la densité",
+    "optionC": "Un dépassement par la droite soumis à dérogation",
+    "optionD": "Une manœuvre réservée aux voies pour véhicules lents",
+    "question": "En files ininterrompues, celle de droite avance plus vite sans changement de file. Comment qualifier cette progression ?"
+  },
+  {
+    "reviewId": "R086",
+    "category": "frvtcSecurite",
+    "optionA": "Passer avant lui comme dans une insertion ordinaire",
+    "optionB": "Appliquer la priorité à droite entre les deux véhicules",
+    "optionC": "Lui céder le passage même dans ce sens de circulation",
+    "optionD": "Céder uniquement aux cycles allant dans votre sens",
+    "question": "Vous tournez à droite en coupant une piste cyclable bidirectionnelle. Que faire face au cycliste venant en sens inverse ?"
+  },
+  {
+    "reviewId": "R087",
+    "category": "frvtcT3p",
+    "optionA": "Son reçu de renouvellement du permis",
+    "optionB": "Son certificat d'aptitude médicale",
+    "optionC": "Son attestation de formation continue",
+    "optionD": "Sa carte professionnelle de conducteur VTC",
+    "question": "Pendant son activité, quel document personnel le chauffeur doit-il rendre visible de l'extérieur ?"
+  },
+  {
+    "reviewId": "R088",
+    "category": "frvtcReglementation",
+    "optionA": "La déclaration périodique des recettes à l'Urssaf",
+    "optionB": "L'inscription de l'exploitant au registre VTC",
+    "optionC": "Le renouvellement du permis de conduire",
+    "optionD": "La demande de carte professionnelle personnelle",
+    "question": "Une conductrice a sa carte et a créé son entreprise. Quelle formalité sectorielle autorise l'exploitation ?"
+  },
+  {
+    "reviewId": "R089",
+    "category": "frvtcReglementation",
+    "optionA": "La voiture diesel non hybride",
+    "optionB": "La voiture GPL non hybride",
+    "optionC": "La voiture essence non hybride",
+    "optionD": "La voiture entièrement électrique",
+    "question": "Quelle motorisation permet une longueur de 4,30 m, les autres conditions VTC étant remplies ?"
+  },
+  {
+    "reviewId": "R090",
+    "category": "frvtcCommercial",
+    "optionA": "Le catalogue des prestations proposées",
+    "optionB": "Le fichier des oppositions à la prospection",
+    "optionC": "Le fichier des factures arrivées à échéance",
+    "optionD": "Le planning des courses déjà confirmées",
+    "question": "Un import réintroduit une cliente désinscrite. Quel fichier permet d'exclure son adresse des campagnes ?"
+  },
+  {
+    "reviewId": "R091",
+    "category": "frvtcGestion",
+    "optionA": "Dans les dettes fournisseurs",
+    "optionB": "Dans les apports en capital",
+    "optionC": "Dans les créances clients",
+    "optionD": "Dans les disponibilités bancaires",
+    "question": "Une prestation de 240 € est facturée, mais payable le mois suivant. Quel poste constate le paiement attendu ?"
+  },
+  {
+    "reviewId": "R092",
+    "category": "frvtcGestion",
+    "optionA": "500 €",
+    "optionB": "60 €",
+    "optionC": "560 €",
+    "optionD": "620 €",
+    "question": "Une mensualité de 620 € comprend 560 € de capital et 60 € d'intérêts. Quelle charge financière enregistrer ?"
+  },
+  {
+    "reviewId": "R093",
+    "category": "frvtcGestion",
+    "optionA": "Une facture d'avoir pour les 15 € corrigés",
+    "optionB": "Une facture d'acompte sur une future réservation",
+    "optionC": "Une quittance confirmant le règlement initial",
+    "optionD": "Un devis pour le prochain déplacement du client",
+    "question": "Après paiement, une réduction de 15 € est accordée sur la facture. Quel document constate cette correction ?"
+  },
+  {
+    "reviewId": "R094",
+    "category": "frvtcFrancais",
+    "optionA": "Remplacé le collègue présent sur le quai",
+    "optionB": "Augmenté la valeur attribuée au quai",
+    "optionC": "Noté l'information indiquée sur place",
+    "optionD": "Redressé un panneau tombé sur le quai",
+    "question": "Dans un rapport, on lit : \"Le chauffeur a relevé le numéro du quai avant de rejoindre le groupe.\" Quel sens de \"relevé\" convient ici ?"
+  },
+  {
+    "reviewId": "R095",
+    "category": "frvtcSecurite",
+    "optionA": "Surveiller la personne en évitant de la déplacer",
+    "optionB": "L'aider à marcher jusqu'au véhicule du témoin",
+    "optionC": "La sortir pour examiner sa mobilité sur l'accotement",
+    "optionD": "La transférer sur le siège arrière pour l'allonger",
+    "question": "Une personne blessée attend dans une voiture, sans danger immédiat. Les secours arrivent. Comment l'assister ?"
+  },
+  {
+    "reviewId": "R096",
+    "category": "frvtcT3p",
+    "optionA": "Les taxis prenant des clients à leur station",
+    "optionB": "La ligne desservant les arrêts à heures fixes",
+    "optionC": "Les motos transportant un client sur commande",
+    "optionD": "Les voitures réservées pour chaque déplacement",
+    "question": "Quel service relève du transport public collectif plutôt que du T3P ?"
+  },
+  {
+    "reviewId": "R097",
+    "category": "frvtcSecurite",
+    "optionA": "110 km/h",
+    "optionB": "80 km/h",
+    "optionC": "50 km/h",
+    "optionD": "70 km/h",
+    "question": "La visibilité tombe à 35 mètres sur autoroute. Quel plafond national s'applique ?"
+  },
+  {
+    "reviewId": "R098",
+    "category": "frvtcSecurite",
+    "optionA": "Le haut-parleur intégré au tableau de bord",
+    "optionB": "Le haut-parleur du GPS fixé au véhicule",
+    "optionC": "Une aide auditive portée pour corriger l'audition",
+    "optionD": "Une oreillette Bluetooth diffusant le GPS",
+    "question": "Quel dispositif audio est interdit en roulant, même pour écouter les indications du GPS ?"
+  },
+  {
+    "reviewId": "R099",
+    "category": "frvtcGestion",
+    "optionA": "175 500 €",
+    "optionB": "16 500 €",
+    "optionC": "79 500 €",
+    "optionD": "96 000 €",
+    "question": "Une entreprise comptabilise 96 000 € de produits et 79 500 € de charges. Quel bénéfice réalise-t-elle ?"
+  },
+  {
+    "reviewId": "R100",
+    "category": "frvtcSecurite",
+    "optionA": "Prévoir la ceinture adulte seule sur la banquette arrière",
+    "optionB": "Partager la ceinture du parent installé à côté de lui",
+    "optionC": "Appliquer la dispense propre au transport par taxi",
+    "optionD": "Réserver une retenue homologuée adaptée à sa morphologie",
+    "question": "Quelle retenue prévoir en VTC pour un enfant de trois ans sans exemption médicale ?"
+  },
+  {
+    "reviewId": "R101",
+    "category": "frvtcFrancais",
+    "optionA": "Un volume stable avec une répartition différente",
+    "optionB": "Une baisse des trajets d'aéroport et de bureau",
+    "optionC": "Un volume supérieur malgré une clientèle stable",
+    "optionD": "Une hausse générale des demandes de transport",
+    "question": "Bilan mensuel : \"Les demandes d'aéroport ont augmenté en juillet ; les déplacements vers les bureaux ont diminué. Le nombre total de demandes est resté identique à juin.\" Quel titre résume ce bilan ?"
+  },
+  {
+    "reviewId": "R102",
+    "category": "frvtcAnglais",
+    "optionA": "Could you put the bags in the boot?",
+    "optionB": "Would you like to carry your bags inside?",
+    "optionC": "Shall I put your bags in the boot?",
+    "optionD": "May I take my bag out of the boot?",
+    "question": "Quelle phrase propose de charger vous-même les valises du client dans le coffre ?"
+  },
+  {
+    "reviewId": "R103",
+    "category": "frvtcCommercial",
+    "optionA": "Montant du budget publicitaire par campagne",
+    "optionB": "Code postal du prospect et zone desservie",
+    "optionC": "Catégorie et capacité du véhicule proposé",
+    "optionD": "Date du dernier contact, auteur et prochaine action",
+    "question": "Deux commerciaux relancent le même prospect sans se coordonner. Quel champ CRM évite ce doublon ?"
+  },
+  {
+    "reviewId": "R104",
+    "category": "frvtcCommercial",
+    "optionA": "80 %",
+    "optionB": "20 %",
+    "optionC": "25 %",
+    "optionD": "125 %",
+    "question": "Coût : 80 € HT ; vente : 100 € HT. Quel taux de marque sur le prix de vente ?"
+  },
+  {
+    "reviewId": "R105",
+    "category": "frvtcSecurite",
+    "optionA": "75 m",
+    "optionB": "50 m",
+    "optionC": "90 m",
+    "optionD": "25 m",
+    "question": "À 90 km/h, vous parcourez 25 mètres par seconde. Quelle distance correspond à l'intervalle minimal général de sécurité ?"
+  },
+  {
+    "reviewId": "R106",
+    "category": "frvtcCommercial",
+    "optionA": "28 €",
+    "optionB": "10 €",
+    "optionC": "8 €",
+    "optionD": "18 €",
+    "question": "Un trajet comprend 45 km occupés et 25 km à vide, à 0,40 €/km. Quel coût total ?"
+  },
+  {
+    "reviewId": "R107",
+    "category": "frvtcReglementation",
+    "optionA": "Cartes grises des voitures et cartes professionnelles des chauffeurs",
+    "optionB": "Permis des chauffeurs et devis acceptés des clients",
+    "optionC": "Attestations de stage et relevés de chiffre d'affaires",
+    "optionD": "Contrats de réservation et factures de location des voitures",
+    "question": "Pour un festival, une entreprise prévoit un renfort exceptionnel. Quelles pièces joindre au calendrier déclaré ?"
+  },
+  {
+    "reviewId": "R108",
+    "category": "frvtcFrancais",
+    "optionA": "Pourriez-vous confirmer l'heure du départ ?",
+    "optionB": "Pourriez-vous préciser le numéro du bâtiment ?",
+    "optionC": "Pourriez-vous confirmer le nombre de voyageurs ?",
+    "optionD": "Pourriez-vous indiquer une autre destination ?",
+    "question": "Un brouillon indique : \"Il nous manque le numéro du bâtiment.\" Le départ et la destination générale ont déjà été validés. Quelle demande conserve le sens du brouillon ?"
+  },
+  {
+    "reviewId": "R109",
+    "category": "frvtcGestion",
+    "optionA": "3 060 €",
+    "optionB": "150 €",
+    "optionC": "5 760 €",
+    "optionD": "360 €",
+    "question": "170 courses apportent chacune 18 € après coûts variables. Les charges fixes sont de 2 700 €. Quel bénéfice reste-t-il ?"
+  },
+  {
+    "reviewId": "R110",
+    "category": "frvtcCommercial",
+    "optionA": "Une politique d'écrémage",
+    "optionB": "Une politique de prix de prestige",
+    "optionC": "Une politique de pénétration",
+    "optionD": "Une politique d'alignement",
+    "question": "Prix bas, marge réduite, volume élevé recherché : quelle politique tarifaire est appliquée ?"
+  },
+  {
+    "reviewId": "R111",
+    "category": "frvtcReglementation",
+    "optionA": "Le 30 novembre",
+    "optionB": "Le 30 septembre",
+    "optionC": "Le 30 août",
+    "optionD": "Le 30 octobre",
+    "question": "L'inscription REVTC expire le 30 novembre. Quelle date respecte le délai minimal de demande de renouvellement ?"
+  },
+  {
+    "reviewId": "R112",
+    "category": "frvtcCommercial",
+    "optionA": "Les deux prix d'appel avant ajout des suppléments",
+    "optionB": "Les remises maximales proposées à de nouveaux clients",
+    "optionC": "Les deux totaux incluant cette attente et ces péages",
+    "optionD": "Les seuls tarifs kilométriques annoncés",
+    "question": "Deux prix incluent des services différents. Quel relevé permet une comparaison pertinente ?"
+  },
+  {
+    "reviewId": "R113",
+    "category": "frvtcReglementation",
+    "optionA": "La validation d'une déclaration de renfort temporaire",
+    "optionB": "La régularisation avant un éventuel refus",
+    "optionC": "La notification du renouvellement quinquennal",
+    "optionD": "La radiation après cessation définitive d'activité",
+    "question": "Un dossier REVTC manque d'une pièce obligatoire. À quelle étape correspond l'invitation formelle à la fournir ?"
+  },
+  {
+    "reviewId": "R114",
+    "category": "frvtcT3p",
+    "optionA": "Un outrage sexiste ou sexuel",
+    "optionB": "Un harcèlement par pression grave à but sexuel",
+    "optionC": "Un harcèlement sexuel par propos répétés",
+    "optionD": "Une agression sexuelle sans pénétration",
+    "question": "Un propos sexiste dégradant unique est imposé, sans geste ni pression sexuelle. Quelle infraction correspond ?"
+  },
+  {
+    "reviewId": "R115",
+    "category": "frvtcReglementation",
+    "optionA": "Quinze jours ouvrés",
+    "optionB": "Un mois",
+    "optionC": "Trois mois renouvelables automatiquement",
+    "optionD": "Six mois si la location est écrite",
+    "question": "Une voiture inscrite est immobilisée par une panne. Quelle durée maximale pour son remplacement exceptionnel déclaré ?"
+  },
+  {
+    "reviewId": "R116",
+    "category": "frvtcFrancais",
+    "optionA": "Déposer l'objet au bureau et contacter le voyageur",
+    "optionB": "Faire vérifier les coordonnées et contacter le voyageur",
+    "optionC": "Rédiger la fiche de découverte et déposer l'objet au bureau",
+    "optionD": "Transmettre les coordonnées et remettre l'objet au voyageur",
+    "question": "Consigne objets trouvés : \"Rédigez la fiche de découverte, déposez l'objet au bureau puis transmettez la fiche à l'accueil. Ne contactez le voyageur qu'après vérification de ses coordonnées par l'accueil.\" Que faut-il avoir fait juste avant la transmission à l'accueil ?"
+  },
+  {
+    "reviewId": "R117",
+    "category": "frvtcCommercial",
+    "optionA": "Les trois transitions ont le même taux",
+    "optionB": "Du formulaire envoyé à la réservation",
+    "optionC": "Du début de formulaire à son envoi",
+    "optionD": "De la page tarif au début de formulaire",
+    "question": "Parcours : 500 visites, 120 formulaires commencés, 12 envoyés, 9 réservations. Quelle transition convertit le moins ?"
+  },
+  {
+    "reviewId": "R118",
+    "category": "frvtcGestion",
+    "optionA": "90 € de base plus 1 € par passage du véhicule",
+    "optionB": "2 € par entrée enregistrée dans le parking",
+    "optionC": "240 € pour le mois, sans part liée à l'usage",
+    "optionD": "6 € par journée effectivement stationnée",
+    "question": "Quel contrat de stationnement produit une charge mensuelle fixe, indépendante du nombre de courses ?"
+  },
+  {
+    "reviewId": "R119",
+    "category": "frvtcAnglais",
+    "optionA": "Une température plus élevée",
+    "optionB": "Une climatisation plus froide",
+    "optionC": "Une fenêtre légèrement ouverte",
+    "optionD": "Une ventilation moins bruyante",
+    "question": "\"It's a bit cold. Could you turn the heating up?\" Que demande le passager ?"
+  },
+  {
+    "reviewId": "R120",
+    "category": "frvtcSecurite",
+    "optionA": "B passe seulement si A n'a pas franchi le trottoir",
+    "optionB": "A passe avant B qui arrive de gauche",
+    "optionC": "A passe dès que B a vu son clignotant",
+    "optionD": "B passe avant A qui quitte le parking",
+    "question": "A sort d'un parking privé. B arrive de sa gauche sur la rue. Qui passe d'abord ?"
+  },
+  {
+    "reviewId": "R121",
+    "category": "frvtcGestion",
+    "optionA": "Le portail du registre sectoriel des VTC",
+    "optionB": "Le portail de déclaration de recettes de l'Urssaf",
+    "optionC": "Le service préfectoral des cartes professionnelles",
+    "optionD": "Le guichet unique électronique des formalités",
+    "question": "Quel service reçoit la déclaration de création d'une entreprise individuelle de transport ?"
+  },
+  {
+    "reviewId": "R122",
+    "category": "frvtcFrancais",
+    "optionA": "Alpha facture trente minutes supplémentaires de trajet",
+    "optionB": "Bêta prévoit un trajet plus long que celui d'Alpha",
+    "optionC": "Alpha utilise une voiture d'une catégorie supérieure",
+    "optionD": "Bêta inclut trente minutes d'attente de plus",
+    "question": "Deux offres sont résumées : \"Alpha comprend le transfert et trente minutes d'attente. Bêta comprend le transfert et une heure d'attente. Les deux prévoient le même véhicule et le même trajet.\" Quelle différence est établie par le texte ?"
+  },
+  {
+    "reviewId": "R123",
+    "category": "frvtcGestion",
+    "optionA": "4 300 €",
+    "optionB": "3 400 €",
+    "optionC": "4 600 €",
+    "optionD": "3 700 €",
+    "question": "Un micro-entrepreneur encaisse 4 600 € HT et paie 900 € de carburant et 300 € d'entretien. Quelles recettes déclarer ?"
+  },
+  {
+    "reviewId": "R124",
+    "category": "frvtcT3p",
+    "optionA": "La préfecture de Paris",
+    "optionB": "La préfecture du Rhône",
+    "optionC": "La préfecture de la Côte-d'Or",
+    "optionD": "La préfecture de l'Isère",
+    "question": "Maya habite Lyon, travaille pour une société parisienne et conduit à Grenoble. Où demander sa carte professionnelle ?"
+  },
+  {
+    "reviewId": "R125",
+    "category": "frvtcFrancais",
+    "optionA": "16 h 30 devant le bâtiment A",
+    "optionB": "16 heures devant le bâtiment A",
+    "optionC": "16 h 30 devant le bâtiment B",
+    "optionD": "16 h 15 devant le bâtiment A",
+    "question": "Message : \"La visite se termine à 16 heures. Le groupe sera prêt à 16 h 15. Le chauffeur est confirmé pour 16 h 30 devant le bâtiment A.\" Quelle information décrit la prise en charge convenue ?"
+  },
+  {
+    "reviewId": "R126",
+    "category": "frvtcFrancais",
+    "optionA": "Après le musée, en tournant à droite",
+    "optionB": "Avant le pont, en tournant à gauche",
+    "optionC": "Après le pont, en tournant à gauche",
+    "optionD": "Avant la pharmacie, en tournant à droite",
+    "question": "Avis d'itinéraire : \"Empruntez le boulevard jusqu'au musée. Tournez à gauche avant le pont, puis suivez la rue des Écoles jusqu'à la pharmacie. Le dépôt se trouve derrière celle-ci.\" Où faut-il quitter le boulevard ?"
+  },
+  {
+    "reviewId": "R127",
+    "category": "frvtcFrancais",
+    "optionA": "Le nom du président de séance",
+    "optionB": "L'adresse précise de la sortie",
+    "optionC": "Le compte rendu de la réunion",
+    "optionD": "L'heure retenue pour le départ",
+    "question": "Courriel : \"Notre réunion pourrait se terminer à 17 heures. Son président confirmera l'horaire à midi. Je vous transmettrai alors l'heure de départ et, dans un second message, l'adresse de la sortie.\" Que doit attendre le chauffeur dans le premier message annoncé après midi ?"
+  },
+  {
+    "reviewId": "R128",
+    "category": "frvtcReglementation",
+    "optionA": "75 €",
+    "optionB": "60 €",
+    "optionC": "80 €",
+    "optionD": "20 €",
+    "question": "Barème : 2 €/km + 0,50 €/min. Forfait ferme accepté : 75 €. Pour 30 km en 40 minutes, combien facturer ?"
+  },
+  {
+    "reviewId": "R129",
+    "category": "frvtcGestion",
+    "optionA": "Un avoir",
+    "optionB": "Un devis",
+    "optionC": "Une facture acquittée",
+    "optionD": "Une quittance",
+    "question": "Quel document présente le prix proposé avant l'acceptation d'une prestation par le client ?"
+  },
+  {
+    "reviewId": "R130",
+    "category": "frvtcT3p",
+    "optionA": "Un groupe dépassant les places homologuées",
+    "optionB": "Un chargement excédant la capacité du coffre",
+    "optionC": "L'absence de voiture disponible au créneau",
+    "optionD": "L'origine supposée du voyageur",
+    "question": "Quel motif de refus relève d'un critère discriminatoire, plutôt que d'une contrainte matérielle réelle ?"
+  },
+  {
+    "reviewId": "R131",
+    "category": "frvtcSecurite",
+    "optionA": "Un changement de couleur de la boîte délivrée",
+    "optionB": "L'apparition d'une somnolence après la prise",
+    "optionC": "La réception du rappel de renouvellement d'ordonnance",
+    "optionD": "La découverte d'un nouveau conditionnement du produit",
+    "question": "Quel changement sous traitement impose d'interrompre la conduite en sécurité ?"
+  },
+  {
+    "reviewId": "R132",
+    "category": "frvtcGestion",
+    "optionA": "Une SARL",
+    "optionB": "Une EURL",
+    "optionC": "Une SASU",
+    "optionD": "Une entreprise individuelle",
+    "question": "Trois associés souhaitent une société avec un gérant et des parts sociales. Quelle forme choisir ?"
+  },
+  {
+    "reviewId": "R133",
+    "category": "frvtcFrancais",
+    "optionA": "Renvoyer une copie du document de paiement",
+    "optionB": "Préparer une nouvelle offre de transfert à 52 €",
+    "optionC": "Ajouter les frais d'attente au montant de 64 €",
+    "optionD": "Demander au client de régler encore les 12 €",
+    "question": "Une fiche tarifaire fictive indique : \"Transfert : 52 €. Attente ajoutée : 12 €. Total payé : 64 €. Le client demande un duplicata du document.\" Quelle demande doit traiter l'accueil ?"
+  },
+  {
+    "reviewId": "R134",
+    "category": "frvtcCommercial",
+    "optionA": "Le réceptionniste qui a recommandé le chauffeur",
+    "optionB": "Mme Roux, responsable du choix aux achats",
+    "optionC": "Mme Blanc, chargée du règlement comptable",
+    "optionD": "M. Diallo, technicien transporté",
+    "question": "Mme Roux choisit le prestataire, M. Diallo voyage, Mme Blanc paie. Qui décide des critères d'achat ?"
+  },
+  {
+    "reviewId": "R135",
+    "category": "frvtcReglementation",
+    "optionA": "La voiture mise en circulation il y a six ans et neuf mois",
+    "optionB": "La voiture mise en circulation il y a neuf ans et six mois",
+    "optionC": "La voiture mise en circulation il y a huit ans et deux mois",
+    "optionD": "La voiture mise en circulation il y a sept ans et un mois",
+    "question": "Quelle berline diesel non hybride, hors collection, respecte la limite d'ancienneté des VTC ?"
+  },
+  {
+    "reviewId": "R136",
+    "category": "frvtcT3p",
+    "optionA": "Le conducteur qui réalise la prestation",
+    "optionB": "Le centre de contrôle des réservations",
+    "optionC": "Le service chargé des tarifs de la plateforme",
+    "optionD": "L'exploitant de l'application de navigation",
+    "question": "Qui choisit l'itinéraire d'une course proposée par plateforme, en tenant compte des demandes du voyageur ?"
+  },
+  {
+    "reviewId": "R137",
+    "category": "frvtcT3p",
+    "optionA": "Le certificat d'immatriculation du véhicule",
+    "optionB": "L'attestation de RC professionnelle",
+    "optionC": "Un justificatif de réservation antérieure",
+    "optionD": "La carte professionnelle du conducteur",
+    "question": "Un passant hèle un VTC libre. Quelle pièce manque pour autoriser sa prise en charge ?"
+  },
+  {
+    "reviewId": "R138",
+    "category": "frvtcGestion",
+    "optionA": "Le maintien du régime micro avec son abattement",
+    "optionB": "Le versement libératoire de l'impôt sur le revenu",
+    "optionC": "L'option pour un régime réel d'imposition",
+    "optionD": "L'option pour la franchise en base de TVA",
+    "question": "Quel régime fiscal permet de déduire les frais professionnels réels plutôt qu'un abattement forfaitaire ?"
+  },
+  {
+    "reviewId": "R139",
+    "category": "frvtcCommercial",
+    "optionA": "Un chauffeur indépendant proposant le même transfert",
+    "optionB": "Une autre entreprise de VTC sur ce trajet",
+    "optionC": "Une centrale de réservation de voitures avec chauffeur",
+    "optionD": "Une navette collective desservant l'aéroport",
+    "question": "Pour un transfert individuel vers l'aéroport, quel service constitue surtout une concurrence indirecte ?"
+  },
+  {
+    "reviewId": "R140",
+    "category": "frvtcT3p",
+    "optionA": "Son contrat avec une plateforme de réservation",
+    "optionB": "Son inscription au registre des entreprises",
+    "optionC": "Son agrément de centre de formation VTC",
+    "optionD": "Son attestation d'assurance professionnelle",
+    "question": "Quelle pièce prouve l'habilitation d'un organisme proposant un stage obligatoire de quatorze heures ?"
+  },
+  {
+    "reviewId": "R141",
+    "category": "frvtcT3p",
+    "optionA": "L'acceptation du déplacement professionnel",
+    "optionB": "La compréhension de la destination annoncée",
+    "optionC": "L'accord sur le lieu de dépose prévu",
+    "optionD": "Un accord libre et spécifique à l'acte sexuel",
+    "question": "Le client confirme sa destination, puis reste figé face à un geste intime. Quel accord manque ?"
+  },
+  {
+    "reviewId": "R142",
+    "category": "frvtcCommercial",
+    "optionA": "Le taux augmente mais le nombre de réservations baisse",
+    "optionB": "Le taux et le nombre de réservations augmentent",
+    "optionC": "Le taux diminue alors que le volume augmente",
+    "optionD": "Le nombre de réservations reste identique",
+    "question": "Un site passe de 1 000 visites et 40 réservations à 400 visites et 24 réservations. Quel bilan ?"
+  },
+  {
+    "reviewId": "R143",
+    "category": "frvtcT3p",
+    "optionA": "L'assurance des locaux de stationnement",
+    "optionB": "Le contrat de prévoyance du dirigeant",
+    "optionC": "L'attestation de responsabilité civile professionnelle",
+    "optionD": "Le certificat de garantie de valeur d'achat",
+    "question": "L'exploitant possède sa couverture automobile. Quelle attestation distincte doit-il détenir pour les dommages liés à ses prestations ?"
+  },
+  {
+    "reviewId": "R144",
+    "category": "frvtcCommercial",
+    "optionA": "Réinterroger les mêmes personnes sur une seconde grille",
+    "optionB": "Conserver ce lieu et raccourcir chaque question",
+    "optionC": "Conserver ce créneau et changer la couleur du formulaire",
+    "optionD": "Consulter d'autres clientèles et créneaux",
+    "question": "Une étude régionale interroge uniquement un hôtel haut de gamme le samedi. Comment améliorer sa représentativité ?"
+  },
+  {
+    "reviewId": "R145",
+    "category": "frvtcT3p",
+    "optionA": "Le tarif indiquant une prestation nocturne",
+    "optionB": "Le reçu indiquant le moyen de paiement",
+    "optionC": "La réservation identifiant le donneur d'ordre",
+    "optionD": "La trace situant les faits à bord du VTC",
+    "question": "Quelle pièce étaye la circonstance aggravante liée au lieu d'un outrage sexiste commis pendant une course ?"
+  },
+  {
+    "reviewId": "R146",
+    "category": "frvtcGestion",
+    "optionA": "27 000 €",
+    "optionB": "18 000 €",
+    "optionC": "63 000 €",
+    "optionD": "45 000 €",
+    "question": "Chiffre d'affaires HT : 45 000 € ; charges variables : 18 000 €. Quelle marge couvre les charges fixes ?"
+  },
+  {
+    "reviewId": "R147",
+    "category": "frvtcAnglais",
+    "optionA": "Dans l'hôtel, près de la réception",
+    "optionB": "Devant l'hôtel, en face de la pharmacie",
+    "optionC": "Derrière la pharmacie, dans la cour de l'hôtel",
+    "optionD": "Face à l'hôtel, à côté de la pharmacie",
+    "question": "\"Wait opposite the hotel, next to the pharmacy.\" Où attendre ?"
+  },
+  {
+    "reviewId": "R148",
+    "category": "frvtcCommercial",
+    "optionA": "60 €",
+    "optionB": "75 €",
+    "optionC": "72 €",
+    "optionD": "62,40 €",
+    "question": "Coût : 48 € ; marge voulue : 12 € ; commission : 20 % du prix client. Quel prix HT facturer ?"
+  },
+  {
+    "reviewId": "R149",
+    "category": "frvtcT3p",
+    "optionA": "La carte professionnelle encore valable",
+    "optionB": "L'attestation de son dernier stage suivi",
+    "optionC": "Les factures de ses anciennes prestations",
+    "optionD": "Le certificat d'immatriculation de sa voiture",
+    "question": "Un chauffeur cesse définitivement le VTC. Quelle pièce doit-il restituer à l'administration ?"
+  },
+  {
+    "reviewId": "R150",
+    "category": "frvtcT3p",
+    "optionA": "La licence de stationnement d'un taxi",
+    "optionB": "L'immatriculation de sa propre entreprise",
+    "optionC": "Sa carte professionnelle VTC",
+    "optionD": "L'inscription REVTC de l'employeur",
+    "question": "Quelle autorisation personnelle vérifier avant de confier des courses à un nouveau salarié déjà titulaire du permis adapté ?"
+  },
+  {
+    "reviewId": "R151",
+    "category": "frvtcReglementation",
+    "optionA": "Carte du chauffeur renouvelée la semaine précédente",
+    "optionB": "Inscription arrivée à échéance sans renouvellement",
+    "optionC": "Facture de location réglée avec quelques jours de retard",
+    "optionD": "Nouveau téléphone déclaré pour joindre l'entreprise",
+    "question": "Dans quel dossier les vignettes définitives perdent-elles leur validité malgré leur bon état ?"
+  },
+  {
+    "reviewId": "R152",
+    "category": "frvtcFrancais",
+    "optionA": "Discuter du devis avec le client",
+    "optionB": "Confirmer l'horaire de la course de mardi",
+    "optionC": "Remercier le client après sa course de mardi",
+    "optionD": "Modifier la destination de la course confirmée",
+    "question": "Un client écrit : \"Merci de me rappeler au sujet du devis, et non de la course de mardi : celle-ci est déjà confirmée.\" Quel est l'objet du rappel demandé ?"
+  },
+  {
+    "reviewId": "R153",
+    "category": "frvtcCommercial",
+    "optionA": "La préfecture compétente pour la carte du conducteur",
+    "optionB": "La CMA organisatrice de la session d'examen",
+    "optionC": "Le gestionnaire du REVTC pour une mise à jour de véhicule",
+    "optionD": "Le médiateur désigné par le professionnel",
+    "question": "Après une réclamation non résolue, quel interlocuteur propose une résolution amiable du litige de consommation ?"
+  },
+  {
+    "reviewId": "R154",
+    "category": "frvtcCommercial",
+    "optionA": "Dépenses publicitaires divisées par nouveaux clients",
+    "optionB": "Clients récurrents divisés par clients de la cohorte",
+    "optionC": "Réservations payées divisées par devis acceptés",
+    "optionD": "Demandes réalisables divisées par demandes reçues",
+    "question": "Quel ratio mesure l'adéquation des demandes reçues à la zone et aux horaires desservis ?"
+  },
+  {
+    "reviewId": "R155",
+    "category": "frvtcFrancais",
+    "optionA": "La cause de la visite du véhicule au garage",
+    "optionB": "La conséquence de l'indisponibilité du véhicule",
+    "optionC": "La condition nécessaire pour accepter samedi",
+    "optionD": "La comparaison entre les deux voitures utilisées",
+    "question": "Échange : \"Le garage garde le véhicule jusqu'à vendredi. Nous avons donc déplacé les courses du jeudi sur la voiture de réserve ; celles du samedi restent affectées au véhicule habituel.\" Quelle relation le mot \"donc\" exprime-t-il ?"
+  },
+  {
+    "reviewId": "R156",
+    "category": "frvtcGestion",
+    "optionA": "PRO-2026-043",
+    "optionB": "PRO-2026-119",
+    "optionC": "WEB-2026-119",
+    "optionD": "WEB-2026-043",
+    "question": "Deux séries justifiées se terminent par WEB-2026-118 et PRO-2026-042. Quel numéro attribuer à la prochaine facture PRO ?"
+  },
+  {
+    "reviewId": "R157",
+    "category": "frvtcSecurite",
+    "optionA": "Vous, qui approchez derrière l'autobus",
+    "optionB": "Le passager qui attend encore sur le trottoir",
+    "optionC": "Le conducteur situé sur une rue non débouchante",
+    "optionD": "Le seul véhicule qui vient en sens inverse",
+    "question": "En ville, un autobus annonce son départ de l'arrêt. Qui doit faciliter sa réinsertion ?"
+  },
+  {
+    "reviewId": "R158",
+    "category": "frvtcCommercial",
+    "optionA": "96 €",
+    "optionB": "75 €",
+    "optionC": "54 €",
+    "optionD": "90 €",
+    "question": "Coût de revient : 72 € HT. Quel prix assure une marge de 25 % sur ce coût ?"
+  },
+  {
+    "reviewId": "R159",
+    "category": "frvtcAnglais",
+    "optionA": "Yes, I travelled here with Ms Brown.",
+    "optionB": "Yes, I'm going to visit Ms Brown.",
+    "optionC": "Yes, I have just dropped off Ms Brown.",
+    "optionD": "Yes, I'm waiting for Ms Brown.",
+    "question": "Vous attendez Mme Brown. On demande : \"Are you here for Ms Brown?\" Quelle réponse confirme cette attente ?"
+  },
+  {
+    "reviewId": "R160",
+    "category": "frvtcCommercial",
+    "optionA": "50 €",
+    "optionB": "200 €",
+    "optionC": "60 €",
+    "optionD": "40 €",
+    "question": "Trois transferts coûtent chacun 40 € et un quatrième 80 €. Quel coût moyen par transfert ?"
+  },
+  {
+    "reviewId": "R161",
+    "category": "frvtcSecurite",
+    "optionA": "1,50 m",
+    "optionB": "1 m",
+    "optionC": "0,50 m",
+    "optionD": "2 m",
+    "question": "Hors agglomération, quel écart latéral minimal respecter en dépassant un cycliste ?"
+  },
+  {
+    "reviewId": "R162",
+    "category": "frvtcAnglais",
+    "optionA": "L'arrivée pourrait avoir dix minutes de retard",
+    "optionB": "Le départ a été reporté de dix minutes",
+    "optionC": "La route sera fermée dans dix minutes",
+    "optionD": "Le trajet durera encore exactement dix minutes",
+    "question": "\"The road is busy, so we may arrive ten minutes late.\" Quelle information transmettez-vous ?"
+  },
+  {
+    "reviewId": "R163",
+    "category": "frvtcT3p",
+    "optionA": "La confirmation de réservation du transfert",
+    "optionB": "Son abonnement commercial auprès du transporteur",
+    "optionC": "Sa carte mobilité inclusion portant la mention invalidité",
+    "optionD": "Le reçu du paiement anticipé de la course",
+    "question": "Quelle pièce peut établir le droit d'accès d'une cliente accompagnée de son chien guide ?"
+  },
+  {
+    "reviewId": "R164",
+    "category": "frvtcT3p",
+    "optionA": "Un propos unique tenu par un groupe concerté",
+    "optionB": "Un contact sexuel imposé pendant le trajet",
+    "optionC": "Le retour des propos envers la même personne",
+    "optionD": "Une pression isolée pour obtenir un acte sexuel",
+    "question": "Un client impose des remarques sexuelles humiliantes lors de plusieurs trajets. Quel fait caractérise la forme répétée du harcèlement ?"
+  },
+  {
+    "reviewId": "R165",
+    "category": "frvtcSecurite",
+    "optionA": "Une valise bloque le déplacement nécessaire d'une commande",
+    "optionB": "Le coffre contient une valise de plus que prévu au devis",
+    "optionC": "Le client demande une autre adresse de dépose",
+    "optionD": "La répartition des sacs change entre deux places arrière",
+    "question": "Quel constat après chargement compromet directement la liberté de manœuvre du conducteur ?"
+  },
+  {
+    "reviewId": "R166",
+    "category": "frvtcCommercial",
+    "optionA": "La responsable chargée des voyages de l'entreprise",
+    "optionB": "Le responsable chargé de la maintenance des machines",
+    "optionC": "La graphiste chargée des visuels du catalogue",
+    "optionD": "Le technicien chargé des réparations informatiques",
+    "question": "À quel salarié une offre de transferts professionnels correspond-elle directement dans le cadre de ses fonctions ?"
+  },
+  {
+    "reviewId": "R167",
+    "category": "frvtcT3p",
+    "optionA": "Renouveler une carte obtenue après réussite à l'examen",
+    "optionB": "Écarter la dispense nationale fondée sur cette expérience",
+    "optionC": "Instruire une reconnaissance de qualification européenne",
+    "optionD": "Examiner le dossier sous le régime transitoire antérieur",
+    "question": "Une nouvelle demande de novembre 2026 invoque seulement l'expérience française. Quel traitement appliquer, sans dossier antérieur ni qualification européenne ?"
+  },
+  {
+    "reviewId": "R168",
+    "category": "frvtcCommercial",
+    "optionA": "La confirmation technique d'un mot de passe",
+    "optionB": "La facture du transfert précédemment acheté",
+    "optionC": "La date de création du compte sans commande",
+    "optionD": "La fonction professionnelle du destinataire",
+    "question": "Quelle pièce distingue un client existant, éligible aux offres de services analogues, d'un prospect sans achat ?"
+  },
+  {
+    "reviewId": "R169",
+    "category": "frvtcT3p",
+    "optionA": "Au site pour son service de mise en relation",
+    "optionB": "Au conducteur pour le temps de prise en charge",
+    "optionC": "Au conducteur pour sa disponibilité professionnelle",
+    "optionD": "Au conducteur pour une marge sur le transport",
+    "question": "À qui peut revenir une rémunération distincte du partage des frais en covoiturage ?"
+  },
+  {
+    "reviewId": "R170",
+    "category": "frvtcT3p",
+    "optionA": "L'expression de son souhait d'arrêter",
+    "optionB": "L'échange préalable de coordonnées",
+    "optionC": "La décision initiale de se rencontrer",
+    "optionD": "L'arrivée à l'endroit convenu ensemble",
+    "question": "Après un accord initial, une personne dit \"je ne veux plus continuer\". Quel événement retire son consentement ?"
+  },
+  {
+    "reviewId": "R171",
+    "category": "frvtcAnglais",
+    "optionA": "Which station are you going to?",
+    "optionB": "Where did your journey start?",
+    "optionC": "How many bags are you taking?",
+    "optionD": "What time does your train leave?",
+    "question": "\"I need to go to the station.\" Deux gares existent. Quelle question précise la destination ?"
+  },
+  {
+    "reviewId": "R172",
+    "category": "frvtcGestion",
+    "optionA": "Banque +20 000 € ; créance client −20 000 €",
+    "optionB": "Banque +20 000 € ; dette bancaire +20 000 €",
+    "optionC": "Voiture +20 000 € ; banque −20 000 €",
+    "optionD": "Banque +20 000 € ; capital social +20 000 €",
+    "question": "La banque verse un prêt de 20 000 €. Avant tout achat, quels postes du bilan augmentent ?"
+  },
+  {
+    "reviewId": "R173",
+    "category": "frvtcT3p",
+    "optionA": "Déplacements privés et trajets domicile-travail",
+    "optionB": "Transport de marchandises pour compte propre",
+    "optionC": "Transport de personnes à titre onéreux",
+    "optionD": "Mise en location sans conducteur",
+    "question": "Quel usage doit couvrir l'assurance automobile d'une voiture effectuant des courses VTC facturées ?"
+  },
+  {
+    "reviewId": "R174",
+    "category": "frvtcAnglais",
+    "optionA": "La modification du moyen de paiement",
+    "optionB": "L'envoi du reçu par courriel",
+    "optionC": "Le remboursement de la réservation",
+    "optionD": "L'envoi du devis par courrier",
+    "question": "\"Could you email me the receipt, please?\" Que demande la cliente après paiement ?"
+  },
+  {
+    "reviewId": "R175",
+    "category": "frvtcFrancais",
+    "optionA": "Transferts initiaux et véhicule supplémentaire confirmés",
+    "optionB": "Transferts initiaux confirmés ; véhicule supplémentaire en recherche",
+    "optionC": "Transferts initiaux et véhicule supplémentaire en recherche",
+    "optionD": "Transferts initiaux en recherche ; véhicule supplémentaire confirmé",
+    "question": "Courriel : \"Vos deux transferts prévus restent confirmés. Le véhicule supplémentaire demandé pour vos collègues est encore en cours de recherche.\" Quel résumé conserve ces deux statuts ?"
+  },
+  {
+    "reviewId": "R176",
+    "category": "frvtcReglementation",
+    "optionA": "Huit",
+    "optionB": "Neuf",
+    "optionC": "Six",
+    "optionD": "Sept",
+    "question": "Un VTC possède neuf places homologuées, conducteur compris. Combien de passagers peut-il transporter ?"
+  },
+  {
+    "reviewId": "R177",
+    "category": "frvtcAnglais",
+    "optionA": "I hope your flight was comfortable!",
+    "optionB": "Have a safe flight home!",
+    "optionC": "I hope you enjoyed your stay!",
+    "optionD": "Have a lovely stay here!",
+    "question": "Le client commence ses vacances après son vol. Quelle formule lui souhaite un bon séjour ?"
+  },
+  {
+    "reviewId": "R178",
+    "category": "frvtcSecurite",
+    "optionA": "L'accotement juste devant le véhicule arrêté",
+    "optionB": "Le terrain situé derrière la glissière de sécurité",
+    "optionC": "La ligne de rive à hauteur du coffre ouvert",
+    "optionD": "L'espace entre deux voitures sur la bande d'arrêt",
+    "question": "Après un accident, les passagers peuvent évacuer sans traverser les voies. Où se protéger ?"
+  },
+  {
+    "reviewId": "R179",
+    "category": "frvtcT3p",
+    "optionA": "Le départ après acceptation de la réservation",
+    "optionB": "L'incident survenu pendant le trajet réalisé",
+    "optionC": "L'absence lors du rendez-vous déjà confirmé",
+    "optionD": "Le refus avant tout engagement sur la course",
+    "question": "Quel événement ne peut à lui seul justifier une pénalité de la plateforme ?"
+  },
+  {
+    "reviewId": "R180",
+    "category": "frvtcT3p",
+    "optionA": "L'autorité de régulation des plateformes",
+    "optionB": "Le médiateur de l'assurance automobile",
+    "optionC": "La chambre de métiers et de l'artisanat",
+    "optionD": "Le Défenseur des droits",
+    "question": "Après un refus discriminatoire, quel organisme peut orienter une cliente sur ses droits, hors urgence ?"
+  },
+  {
+    "reviewId": "R181",
+    "category": "frvtcGestion",
+    "optionA": "Le partage des réserves entre plusieurs associés",
+    "optionB": "Le montant du capital souscrit et du capital libéré",
+    "optionC": "La séparation des patrimoines privé et professionnel",
+    "optionD": "La répartition entre actions majoritaires et minoritaires",
+    "question": "Quel principe protège les biens privés d'un entrepreneur individuel contre les dettes professionnelles ordinaires, hors exceptions ?"
+  },
+  {
+    "reviewId": "R182",
+    "category": "frvtcAnglais",
+    "optionA": "Une écharpe bleue sur la banquette arrière",
+    "optionB": "Une veste bleue près du coffre",
+    "optionC": "Un manteau bleu à l'arrêt de départ",
+    "optionD": "Un sac bleu sur le siège avant",
+    "question": "\"I think I left a blue scarf on the back seat.\" Quel objet recherche le client ?"
+  },
+  {
+    "reviewId": "R183",
+    "category": "frvtcSecurite",
+    "optionA": "Se rapprocher de l'axe ; garder les 70 km/h initiaux",
+    "optionB": "Rester à droite ; monter progressivement à 80 km/h",
+    "optionC": "Se placer sur l'accotement ; conserver 70 km/h",
+    "optionD": "Rester à droite ; ne pas dépasser les 70 km/h initiaux",
+    "question": "Une voiture vous dépasse alors que vous roulez à 70 km/h. Quelle position et quelle allure conserver ?"
+  },
+  {
+    "reviewId": "R184",
+    "category": "frvtcCommercial",
+    "optionA": "Un taux documenté de prises en charge à l'heure",
+    "optionB": "Un délai documenté d'envoi des factures",
+    "optionC": "Un délai documenté de remboursement des frais",
+    "optionD": "Un taux documenté de réponses aux devis",
+    "question": "Un acheteur se plaint des arrivées tardives. Quel indicateur répond directement à son problème ?"
+  },
+  {
+    "reviewId": "R185",
+    "category": "frvtcGestion",
+    "optionA": "90 000 €",
+    "optionB": "50 400 €",
+    "optionC": "21 600 €",
+    "optionD": "60 000 €",
+    "question": "Charges fixes : 36 000 € ; charges variables : 40 % du chiffre d'affaires. Quel chiffre d'affaires atteint le seuil de rentabilité ?"
+  },
+  {
+    "reviewId": "R186",
+    "category": "frvtcCommercial",
+    "optionA": "La trace d'un consentement spécifique à ces offres",
+    "optionB": "La référence d'un achat de service analogue déjà réalisé",
+    "optionC": "La preuve du lien de l'offre avec ses fonctions professionnelles",
+    "optionD": "Le numéro d'une course en cours nécessitant une confirmation",
+    "question": "Un particulier a créé un compte sans achat. Quelle preuve faut-il normalement pour lui envoyer une promotion ?"
+  },
+  {
+    "reviewId": "R187",
+    "category": "frvtcSecurite",
+    "optionA": "À gauche, même s'il est déjà engagé dans son virage",
+    "optionB": "Du côté choisi par le conducteur qui dépasse",
+    "optionC": "À droite, dans les conditions décrites",
+    "optionD": "Sur l'accotement uniquement",
+    "question": "La voiture devant tourne à gauche. L'espace à droite est autorisé, suffisant et dégagé. De quel côté dépasser ?"
+  },
+  {
+    "reviewId": "R188",
+    "category": "frvtcCommercial",
+    "optionA": "Un titre en semaine et l'autre pendant un festival",
+    "optionB": "Deux titres et deux tarifs, sur des visiteurs répartis ensemble",
+    "optionC": "Deux titres, même page et répartition simultanée des visiteurs",
+    "optionD": "Un titre pour les anciens clients et l'autre pour les nouveaux",
+    "question": "Quel protocole mesure l'effet du seul titre d'une page sur les demandes reçues ?"
+  },
+  {
+    "reviewId": "R189",
+    "category": "frvtcGestion",
+    "optionA": "Voiture : créance ; financement : avance client",
+    "optionB": "Voiture : stock ; financement : dette fournisseur",
+    "optionC": "Voiture : immobilisation ; financement : capital",
+    "optionD": "Voiture : immobilisation ; financement : emprunt",
+    "question": "Une voiture utilisée durablement est achetée avec un prêt bancaire. Quels postes du bilan enregistrent l'achat et son financement ?"
+  },
+  {
+    "reviewId": "R190",
+    "category": "frvtcFrancais",
+    "optionA": "Dépose entrée principale ; consultation à 8 heures",
+    "optionB": "Dépose bâtiment B ; départ du domicile à 8 h 30",
+    "optionC": "Dépose entrée principale ; départ du domicile à 8 heures",
+    "optionD": "Dépose bâtiment B ; départ du domicile à 8 heures",
+    "question": "Message : \"Votre consultation reste fixée jeudi à 8 h 30. L'entrée principale est fermée pour travaux. Le chauffeur vous déposera bâtiment B, rue des Tilleuls. Le départ du domicile reste à 8 heures.\" Quelle modification doit figurer sur la fiche de course ?"
+  },
+  {
+    "reviewId": "R191",
+    "category": "frvtcCommercial",
+    "optionA": "Le chauffeur qui exécute le déplacement",
+    "optionB": "La réception qui a recommandé le prestataire",
+    "optionC": "Le service bancaire qui traite le règlement",
+    "optionD": "Le voyageur qui a accepté puis payé la course",
+    "question": "L'hôtel conseille un chauffeur, mais le voyageur réserve et paie. Qui est le prescripteur ?"
+  },
+  {
+    "reviewId": "R192",
+    "category": "frvtcT3p",
+    "optionA": "La vérification des garanties de l'exploitant",
+    "optionB": "La vérification de l'aptitude médicale",
+    "optionC": "Le contrôle de l'honorabilité du conducteur",
+    "optionD": "Le contrôle des caractéristiques du véhicule",
+    "question": "Une condamnation pour conduite malgré l'annulation du permis figure au bulletin n° 2. Quel contrôle professionnel est concerné ?"
+  },
+  {
+    "reviewId": "R193",
+    "category": "frvtcSecurite",
+    "optionA": "La voie de gauche du dépassement achevé",
+    "optionB": "La voie de gauche jusqu'à la prochaine sortie",
+    "optionC": "La voie de droite désormais disponible",
+    "optionD": "L'une ou l'autre selon la destination finale",
+    "question": "Après un dépassement, la voie droite est libre et vous continuez tout droit. Où vous replacer ?"
+  },
+  {
+    "reviewId": "R194",
+    "category": "frvtcT3p",
+    "optionA": "Une clause interdisant de servir ses clients directs",
+    "optionB": "Une clause précisant le calcul de la commission",
+    "optionC": "Une clause décrivant les justificatifs de réservation",
+    "optionD": "Une clause indiquant les moyens de joindre l'assistance",
+    "question": "Quelle clause de plateforme porte atteinte au droit d'un chauffeur de commercialiser lui-même ses services ?"
+  },
+  {
+    "reviewId": "R195",
+    "category": "frvtcCommercial",
+    "optionA": "4 %",
+    "optionB": "25 %",
+    "optionC": "40 %",
+    "optionD": "75 %",
+    "question": "40 demandes de devis sur 160 deviennent des réservations. Quel est le taux de transformation ?"
+  },
+  {
+    "reviewId": "R196",
+    "category": "frvtcReglementation",
+    "optionA": "La chaussée devant l'hôtel du dernier client",
+    "optionB": "Le parking autorisé hors chaussée d'un partenaire",
+    "optionC": "La station de taxis située devant la gare",
+    "optionD": "Le boulevard parcouru dans l'attente d'une demande",
+    "question": "Après dépose, sans réservation ni contrat avec le client final, où stationner si l'établissement est éloigné ?"
+  },
+  {
+    "reviewId": "R197",
+    "category": "frvtcGestion",
+    "optionA": "−700 €",
+    "optionB": "3 900 €",
+    "optionC": "2 500 €",
+    "optionD": "1 100 €",
+    "question": "Solde initial : 3 200 €. Encaissements : 7 800 €, plus 1 400 € attendus le mois prochain. Décaissements : 8 500 €. Quel solde actuel ?"
+  },
+  {
+    "reviewId": "R198",
+    "category": "frvtcFrancais",
+    "optionA": "Réserver le déplacement collectif vers le dîner",
+    "optionB": "Choisir les horaires des arrivées ferroviaires",
+    "optionC": "Commander les transferts individuels depuis la gare",
+    "optionD": "Informer les participants sur les prestataires",
+    "question": "Note de réception : \"Les congressistes réserveront eux-mêmes leur transfert depuis la gare. L'hôtel communiquera les coordonnées des chauffeurs. L'association réservera le trajet collectif vers le dîner.\" Quel rôle revient à l'hôtel ?"
+  },
+  {
+    "reviewId": "R199",
+    "category": "frvtcSecurite",
+    "optionA": "Celle qui attend devant une vitrine, dos à la chaussée",
+    "optionB": "Celle qui poursuit sa marche parallèle au bord de la rue",
+    "optionC": "Celle qui fait signe et se prépare à franchir la chaussée",
+    "optionD": "Celle qui s'éloigne du passage en suivant le trottoir",
+    "question": "Près d'un passage sans feu, à quelle personne devez-vous céder le passage ?"
+  },
+  {
+    "reviewId": "R200",
+    "category": "frvtcSecurite",
+    "optionA": "À la sortie du carrefour, même en gênant l'autre voie",
+    "optionB": "Avant de vous engager dans l'intersection",
+    "optionC": "Après le feu, en avançant jusqu'à la file arrêtée",
+    "optionD": "Au point de croisement, sans dépasser la ligne médiane",
+    "question": "Au feu vert, la sortie du carrefour est bloquée. Où attendre pour ne pas gêner la circulation transversale ?"
+  }
+]

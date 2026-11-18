@@ -1,0 +1,193 @@
+{
+  "sourceWorktree": "/Users/johnbrophy/tigertest-next20-epa609",
+  "baseCommit": "05baf836711ea98e2295e3c62690e7a51e2904c9",
+  "branch": "codex/next20-epa609",
+  "status": [
+    {
+      "status": " M",
+      "path": ".claude/skills/exam-bank/scripts/validate_bank.py"
+    },
+    {
+      "status": " M",
+      "path": "CLAUDE.md"
+    },
+    {
+      "status": " M",
+      "path": "app/globals.css"
+    },
+    {
+      "status": " M",
+      "path": "components/TeachNudge.tsx"
+    },
+    {
+      "status": " M",
+      "path": "components/exam/ExamClassFaq.tsx"
+    },
+    {
+      "status": " M",
+      "path": "i18n/en.ts"
+    },
+    {
+      "status": " M",
+      "path": "i18n/es.ts"
+    },
+    {
+      "status": " M",
+      "path": "i18n/ko.ts"
+    },
+    {
+      "status": " M",
+      "path": "i18n/vi.ts"
+    },
+    {
+      "status": " M",
+      "path": "i18n/zh.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/banks/all.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/examBankSizes.json"
+    },
+    {
+      "status": " M",
+      "path": "lib/examFacts.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/examSources.json"
+    },
+    {
+      "status": " M",
+      "path": "lib/exams.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/region.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/seoDates.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/testCatalog.ts"
+    },
+    {
+      "status": " M",
+      "path": "lib/tigerAssets.ts"
+    },
+    {
+      "status": " M",
+      "path": "types/index.ts"
+    },
+    {
+      "status": "??",
+      "path": "app/epa-609-practice-test/page.tsx"
+    },
+    {
+      "status": "??",
+      "path": "app/epa609/dashboard/page.tsx"
+    },
+    {
+      "status": "??",
+      "path": "app/epa609/drill/page.tsx"
+    },
+    {
+      "status": "??",
+      "path": "app/epa609/layout.tsx"
+    },
+    {
+      "status": "??",
+      "path": "app/epa609/page.tsx"
+    },
+    {
+      "status": "??",
+      "path": "app/epa609/stats/page.tsx"
+    },
+    {
+      "status": "??",
+      "path": "data/epa609-questions.json"
+    },
+    {
+      "status": "??",
+      "path": "lib/banks/epa609.ts"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/build.py"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/echo-audit.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/fetch_sources.py"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/inventory.py"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/items.py"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/landing.py"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/more_items.py"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/objective-inventory.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/questions.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/review-handoff.md"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/sample-questions.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/sample-revision-notes.md"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/sample-source-map.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/source-map.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/sources.md"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/spec.md"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/theme-audit.json"
+    },
+    {
+      "status": "??",
+      "path": "tools/next20/epa609/wire.py"
+    }
+  ],
+  "diffCommand": "git diff --binary HEAD --",
+  "handoffBase": "05baf836711ea98e2295e3c62690e7a51e2904c9"
+}

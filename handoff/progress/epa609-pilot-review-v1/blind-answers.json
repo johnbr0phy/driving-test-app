@@ -1,0 +1,86 @@
+[
+  {
+    "id": "R001",
+    "answer": "A",
+    "reason": "Pump-oil intervals track operating time (MACS p23).",
+    "findings": "B confuses pump maintenance with filter throughput; C is a different component inspection; D is an imprecise workload proxy. Strongest distractor B. Stem needed."
+  },
+  {
+    "id": "R002",
+    "answer": "B",
+    "reason": "Instructions for the installed replacement specify its revised charge (MACS p25).",
+    "findings": "A and D are credible default references; C is a credible update reference. The stem explicitly makes existing information obsolete. Good applicability discrimination, although revised charge makes the selection fairly direct."
+  },
+  {
+    "id": "R003",
+    "answer": "A",
+    "reason": "82.40(f) permits an on-premises practical demonstration.",
+    "findings": "B confuses program oversight with technician oversight. C confuses equipment certification with operator competence. D is comparatively remote. Practical skills and demonstration almost paraphrase A; this is easy even without regulatory knowledge."
+  },
+  {
+    "id": "R004",
+    "answer": "B",
+    "reason": "20 mL minus 8 mL equals 12 mL newly removed; replace that amount (MACS p16).",
+    "findings": "A adds readings, C copies baseline, D copies final reading. All are concrete novice accounting errors, not unrelated facts. The source recommends initially emptying the bottle; this hypothetical still unambiguously asks for net removal."
+  },
+  {
+    "id": "R005",
+    "answer": "B",
+    "reason": "J2670 establishes material compatibility, not cleaning performance (MACS p22).",
+    "findings": "A confuses compatibility qualification with OEM procedure approval; C confuses compatibility with cleaning efficacy; D confuses compatibility with removability. These are credible scope confusions, although D is less direct."
+  },
+  {
+    "id": "R006",
+    "answer": "D",
+    "reason": "82.32(e)(4) exempts top-off-only MVAC-like facilities from equipment purchase; EPA identifies off-road cab systems as MVAC-like.",
+    "findings": "C is the crucial novice overgeneralization. B tests the mistaken belief that all off-road service is exempt. A fails both conditions and is weaker. Actual stem dependence is strong."
+  },
+  {
+    "id": "R007",
+    "answer": "B",
+    "reason": "Prolonged atmospheric exposure can saturate desiccant; replacement addresses that condition (MACS p24).",
+    "findings": "C is the main plausible misconception; A confuses vacuum-pump performance with saturated system desiccant. D addresses recovered refrigerant rather than the exposed circuit. Strong primary competing misconception, weaker secondary alternatives."
+  },
+  {
+    "id": "R008",
+    "answer": "D",
+    "reason": "82.34(d)(1)(ii)(B) assigns recycling to the charging facility for this unreclaimed salvage route.",
+    "findings": "A attributes treatment responsibility to the extractor; C assumes a hired recycler suffices; B confuses the explicitly excluded reclamation route with recycling. Precise rule distinction, meaningful alternatives."
+  },
+  {
+    "id": "R009",
+    "answer": "D",
+    "reason": "After a detected leak, recovery remains available while charging is locked out (MACS p51).",
+    "findings": "A incorrectly relies on vacuum success; B treats lubricant injection as independently available; C assumes retrying the partial charge is allowed. Plausible machine-sequence confusions. Recovery is not the only permitted operation: re-evacuation also remains available but is absent from choices."
+  },
+  {
+    "id": "R010",
+    "answer": "C",
+    "reason": "Removing mains power does not remove refrigerant pressure (MACS p11 precautions 12\u201313).",
+    "findings": "A, B, D all depend on electrical energization in the ordinary machine described. They are related hazards, but three versions of the same eliminated category make C conspicuous. Do not expand this into a claim that every possible stored electrical hazard disappears after unplugging."
+  },
+  {
+    "id": "R011",
+    "answer": "C",
+    "reason": "82.42(b)(3) requires a resale-only statement with purchaser name and business address.",
+    "findings": "A and B are records for other activities; D is a familiar certification route but expressly unavailable here. The option repeats resale from the stem, reducing difficulty. Technically valid but limited discrimination."
+  },
+  {
+    "id": "R012",
+    "answer": "C",
+    "reason": "82.32(e)(1)\u2013(3) still requires processing before reuse during mobile service.",
+    "findings": "A mistakes compliant transport for processing, B substitutes oil accounting, D substitutes identity confirmation. A and D plausible procedural substitutions; B weaker. Stem mobile location is mostly contextual and does not alter the core treatment rule. Off-site recycling ownership restrictions must not be erased in an explanation."
+  },
+  {
+    "id": "R013",
+    "answer": "D",
+    "reason": "Rapid liquid evaporation cools skin and can cause frostbite (Honeywell SDS section 4).",
+    "findings": "A and B require unmentioned ignition or heat, C is an inhalation mechanism. A novice might conflate refrigerant hazards, but all alternatives require a different exposure scenario. Clear educational distinction, easy discrimination."
+  },
+  {
+    "id": "R014",
+    "answer": "A",
+    "reason": "Denser vapor can collect in low spaces (Honeywell SDS sections 5\u20136).",
+    "findings": "B explains vapor generation, C explains why dilution matters, D explains pressure response; none explains the pit location. C is the strongest competing causal confusion. Standard physical-property distinction; the pit is decisive."
+  }
+]

@@ -1,0 +1,3 @@
+lang en  len-scale 1.0  rows 20  categories {'rebFinance': 20}
+letters {'A': 5, 'B': 5, 'C': 5, 'D': 5}  avg option 34 chars  key-longest 5%  key>1.2x 0%
+PASS

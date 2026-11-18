@@ -1,0 +1,57 @@
+{
+  "correct": 163,
+  "total": 200,
+  "categories": {
+    "rebAgency": [
+      31,
+      36
+    ],
+    "rebEnvironment": [
+      22,
+      24
+    ],
+    "rebFinance": [
+      18,
+      20
+    ],
+    "rebMath": [
+      10,
+      20
+    ],
+    "rebPractice": [
+      25,
+      32
+    ],
+    "rebProperty": [
+      22,
+      24
+    ],
+    "rebTitle": [
+      18,
+      20
+    ],
+    "rebValue": [
+      17,
+      24
+    ]
+  },
+  "cues": {
+    "prior": [
+      71,
+      90
+    ],
+    "surface": [
+      18,
+      22
+    ],
+    "knowledge": [
+      68,
+      74
+    ],
+    "none": [
+      6,
+      14
+    ]
+  },
+  "gate": "NOT PASSED"
+}

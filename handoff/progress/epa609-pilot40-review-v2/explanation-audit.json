@@ -1,0 +1,566 @@
+[
+  {
+    "reviewId": "R001",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Designation and reusable-vessel qualifications are accurate; alternatives receive appropriate treatment.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-C/part-178/subpart-C/section-178.65",
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R002",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Recalculated: 600*0.15=90; 600*0.85=510; 60/600=10%; 120/600=20%. Stated procedure scope avoids universalizing the fraction.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/567817%20REV%20F%20EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R003",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correctly separates A7 from the refrigerant credential; ASE FAQ independently confirms the distinction.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.asecampus.com/ihtml/application/upload/1592.zip_files/r3_faqs.htm"
+    ]
+  },
+  {
+    "reviewId": "R004",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Exception and excluded hose ends match EPA discussion. Minor stem terminology improvement remains.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/FR-1997-06-03/pdf/FR-1997-06-03.pdf"
+    ]
+  },
+  {
+    "reviewId": "R005",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Reasoning addresses the particular prolonged exposure and rejects inadequate substitutes.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R006",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct manufacturer-specific distinction; final specification reminder is useful.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.denso-am.eu/news/dont-overlook-compressor-oil-reminds-denso"
+    ]
+  },
+  {
+    "reviewId": "R007",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "600 g remains full specification; 600-420=180 is only the initial deficit; 600+420=1020 is excess.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": []
+  },
+  {
+    "reviewId": "R008",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Ownership reasoning correctly uses the named garage operator and both machines.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R009",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Latent-heat explanation is sound and SDS corroborates the frostbite mechanism.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.audi.kkecomm.com/Files/Product%20assets/SDS/R-1234yf.pdf"
+    ]
+  },
+  {
+    "reviewId": "R010",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Accurately separates certification scope from cleaning outcomes and OEM permission.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R011",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Keeps equipment availability distinct from ownership and preserves technician qualification.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.epa.gov/mvac/servicing-requirements-farm-and-heavy-duty-equipment"
+    ]
+  },
+  {
+    "reviewId": "R012",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "20-8=12 mL; final and starting levels are correctly distinguished. Real repairs still require OEM oil balancing.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R013",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct model and level condition; explains all three incorrect level choices.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R014",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Density explanation is directly supported by Honeywell SDS v3.4: vapor density 4 relative to air 1.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.audi.kkecomm.com/Files/Product%20assets/SDS/R-1234yf.pdf"
+    ]
+  },
+  {
+    "reviewId": "R015",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct causal mechanism and fair treatment of the moisture distractor.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R016",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Explicit source-variation sentence prevents a universal failed-vacuum restriction. Both cited sources support the selected purpose.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+      "https://www.robinair.com/sites/default/files/documents/567817%20REV%20F%20EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R017",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Matches the documented filter sequence and distinguishes trigger from prerequisite.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R018",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "External versus internal flow paths are distinguished correctly.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": []
+  },
+  {
+    "reviewId": "R019",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Legal definition and manufacturer example support the limited inspection scope.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://dtnacontent-dtna.prd.freightliner.com/content/dam/public/dtna-servicelit/dtna/pdfs/en_us/freightliner/drivers-manuals/New%20Cascadia%20Maintenance%20Manual_.pdf"
+    ]
+  },
+  {
+    "reviewId": "R020",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Specific salvage route is properly distinguished from reclamation.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R021",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "The explicit inspection-opening qualification resolves fitting-type overbreadth.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R022",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "12 ounces=0.75 lb; 0.75<20<30. Separates notice from other sales obligations.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R023",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Pressure criterion and typical waiting interval are appropriately distinguished.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R024",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "25-1=24 inHg. Zero-absolute and additive distractor explanations are correct.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": []
+  },
+  {
+    "reviewId": "R025",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Matches narrative sensitivity; concise explanation is adequate despite not discussing every numeric distractor.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+      "https://www.robinair.com/sites/default/files/documents/550029_EN_0.pdf"
+    ]
+  },
+  {
+    "reviewId": "R026",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct containment obligation with useful explicit separation from menu behavior.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.robinair.com/sites/default/files/documents/567817%20REV%20F%20EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R027",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Record content, on-site retention and three-year duration are supported.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing"
+    ]
+  },
+  {
+    "reviewId": "R028",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Accurately distinguishes preparatory measurements from voltage verification; appropriately requires complete OEM procedure.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-3C5B5D4F-24A7-4EAE-B382-C93A2DEC1BFA.html"
+    ]
+  },
+  {
+    "reviewId": "R029",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct hazard and limits; explanation does not authorize improvised testing.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R030",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct physical-property contrast without making it the only process variable.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R031",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct technical rationale. Legacy blend suitability is outside this narrowly posed question.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://19january2021snapshot.epa.gov/mvac/choosing-and-using-retrofit-refrigerant-cfc-12-mvac_.html"
+    ]
+  },
+  {
+    "reviewId": "R032",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "2026-05-10 plus three years=2029-05-10; alternate endpoints properly rejected.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R033",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Manufacturer-specific behavior confirmed in 550029 Rev F, May 20, 2013, PDF pp5-6.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/550029_EN_0.pdf"
+    ]
+  },
+  {
+    "reviewId": "R034",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Properly distinguishes signing authority from operator qualification.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R035",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Confirmed both definitions; R-22 is excluded from MVAC-like scope as well.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/section-82.152"
+    ]
+  },
+  {
+    "reviewId": "R036",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Properly ties position to January 2025 narrative and explicitly avoids universal-standard attribution.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R037",
+    "keyReviewed": "A",
+    "independentAnswer": "A",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Correct lamp/dye relationship; alternatives are treated as different optical properties.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R038",
+    "keyReviewed": "B",
+    "independentAnswer": "B",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "14 AWG minimum is correct; 12 is larger, 16 and 18 smaller. Model qualification retained.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R039",
+    "keyReviewed": "D",
+    "independentAnswer": "D",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Scopes of all four standards are consistent with the cited descriptions.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R040",
+    "keyReviewed": "C",
+    "independentAnswer": "C",
+    "keyConsistent": true,
+    "explanationVerdict": "supported",
+    "auditNote": "Appropriately describes a clue requiring confirmation, not a conclusive diagnosis.",
+    "optionAlignment": "Explanation supports selected option and does not validate an incompatible distractor.",
+    "qualificationVerdict": "Adequate for the stated scenario; see audit note.",
+    "factualCorrectionRequired": false,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  }
+]

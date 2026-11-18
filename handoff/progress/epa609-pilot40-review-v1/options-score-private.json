@@ -1,0 +1,36 @@
+{
+  "correct": 31,
+  "total": 40,
+  "categories": {
+    "epa609Service": [
+      7,
+      10
+    ],
+    "epa609Yf": [
+      7,
+      10
+    ],
+    "epa609Equipment": [
+      7,
+      10
+    ],
+    "epa609Rules": [
+      10,
+      10
+    ]
+  },
+  "cues": {
+    "knowledge": [
+      18,
+      22
+    ],
+    "surface": [
+      12,
+      17
+    ],
+    "none": [
+      1,
+      1
+    ]
+  }
+}

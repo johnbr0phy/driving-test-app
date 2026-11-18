@@ -1,0 +1,378 @@
+La prospection commerciale par courrier électronique, SMS-MMS et automate d’appel | CNIL (https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique ; rewritten summary of https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique-sms-mms-et-automate-dappel)
+citeturn248view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique","lineno":null}); Redirected to URL: https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique-sms-mms-et-automate-dappel; Total lines: 102
+L0: 【0†Particuliers】【1†Professionnels】【2†Presse】
+L1: 
+L2: 【3†Fr】【4†En】【5†Gestionnaire de cookies】
+L3: 
+L4: 【0†Particuliers】【1†Professionnels】【2†Presse】
+L5: 
+L6: 【3†Fr】【4†En】【5†Gestionnaire de cookies】
+L7: 
+L8: Poser une question ou rechercher un article, une délibération... [Input]
+L9: 
+L10: [Button: Rechercher][Input][Input]
+L11: # La prospection commerciale par courrier électronique, SMS-MMS et automate d’appel
+L12: 
+L13: 10 juin 2026
+L14: 
+L15: * * *
+L16: 
+L17: La prospection commerciale par voie électronique (courrier électronique, SMS-MMS, automate d’appel, etc.) est possible mais les personnes doivent d’abord en être informées. Elles doivent également y consentir préalablement s’il s’agit de particuliers ou pouvoir s’y opposer s’il s’agit de professionnels.
+L18: 
+L19:   * Diminuer la taille de la police
+L20:   * Augmenter la taille de la police
+L21:   * 【6†Pour les particuliers (B to C)】
+L22:   * 【7†Pour les professionnels (B to B)】
+L23: #### Cas général : la personne doit donner son consentement préalable
+L24: 
+L25: La publicité par voie électronique (courrier électronique, SMS-MMS, automate d’appel, etc.) est possible à condition que les personnes aient donné leur consentement avant d’être démarchées.
+L26: Le 【8†consentement】 doit être libre, spécifique, éclairé et univoque. Il requiert, pour être valable, une action positive et spécifique de la personne concernée (exemple : une case à cocher dédiée et qui ne soit pas pré-cochée). L'acceptation de conditions générales d'utilisation ne peut pas suffire. L’accord doit être libre et être retiré, à tout moment, par la personne concernée.
+L27: Exemple d’information sur un site web :
+L28: 
+L29:     [Input] J’accepte que mes informations soient utilisées pour de la prospection commerciale par [courrier électronique / SMS-MMS ou automate d’appel]
+L30: #### Les deux exceptions au consentement préalable
+L31:   * Si la personne prospectée est déjà cliente de l’entreprise et si la prospection concerne les produits ou services similaires fournis par la même entreprise.
+L32: Comme la CNIL l’a rappelé dans une décision de sanction, cette exception ne peut pas être mobilisée lorsqu’aucune vente ou prestation de service n’a été effectuée, y compris lorsque le client a créé un compte en ligne (par exemple sur un site de commerce en ligne). En effet, la simple création d’un compte ne signifie pas qu’il y aura une commande éventuelle de produits ou de services auprès de la société.
+L33: 
+L34:   * Si la prospection n'est pas de nature commerciale (exemple : caritative).
+L35: Dans ces deux cas, la prospection pourrait être fondée sur 【9†l’intérêt légitime】 de l’organisme. La personne doit, au moment de la collecte de son adresse électronique ou de son numéro de téléphone :
+L36:     * être informée que son adresse électronique ou son numéro de téléphone (par SMS-MMS ou automate d’appel) sera utilisé à des fins de prospection « non commerciale » ;
+L37:     * être en mesure de s’opposer à cette utilisation de manière simple et gratuite lorsque les données sont collectées, et à tout moment notamment lors de chaque envoi.
+L38: #### Quels sont les droits des personnes et les recours possibles ?
+L39: 
+L40: Dans le cadre de la prospection par courriel, SMS ou MMS, les organismes doivent 【10†informer les personnes】 de l’utilisation de leurs données et doivent, dans certains cas, recueillir leur consentement avant toute collecte ou prospection commerciale.
+L41: Ils doivent également permettre aux personnes 【11†d’accéder à leurs données】 et de 【12†les rectifier】 si nécessaires. Ils doivent répondre aux demandes d’exercice des droits sous un mois maximum sauf exceptions.
+L42: 
+L43: Si un organisme ne respecte pas ces règles, il est possible d’【13†adresser une plainte à la CNIL】.
+L44: 
+L45: 
+L46: 
+L47: Les règles à respecter :
+L48: 
+L49:   * 【14†Information】 (par exemple, lors de la collecte de leur numéro de téléphone ou de leur adresse électronique) ;
+L50:   * 【15†Opposition】 simple et gratuite.
+L51: La prospection à l’égard de professionnels peut être fondée sur 【9†l’intérêt légitime】 de l’organisme lorsque l'objet de la sollicitation est en rapport avec la profession de la personne démarchée (par exemple, un appel présentant les mérites d’un logiciel au directeur informatique d’une entreprise).
+L52: Lorsque les données sont déjà en possession de la société ou acquises auprès de tiers, il faut s’assurer que la personne concernée a été informée de la possible utilisation de son adresse électronique ou son numéro de téléphone (par SMS-MMS ou automate d’appel) pour de la prospection et est en mesure de s’y opposer.
+L53: Rappel : Les adresses génériques de type info[@]nomsociete.fr, contact[@]nomsociete.fr ou commande[@]nomsociete.fr, qui concernent de personnes morales, ne sont pas soumises aux principes rappelés ci-dessus.
+L54: 
+L55: 
+L56: 
+L57: * * *
+L58: ## Dans tous les cas
+L59: 
+L60: La CNIL recommande que le consentement préalable (pour le B to C) ou le droit d'opposition (pour le B to B) soit recueilli par le biais d’une case à cocher. L’utilisation d'une case pré-cochée est interdite en matière de recueil du consentement. Il est recommandé d’utiliser une case décochée par défaut pour permettre aux personnes de s’opposer.
+L61: Par ailleurs, chaque sollicitation doit obligatoirement permettre à la personne concernée de prendre connaissance de l’identité de l’organisation qui l’émet ainsi que d’exprimer, si elle le souhaite et par un moyen simple, son refus de recevoir de nouvelles sollicitations.
+L62: ## Signalez vos SMS indésirables au 33700
+L63: 
+L64: Les pouvoirs publics, la Fédération française des télécoms et l'Association française pour le développement des services et usages multimédias multi-opérateurs ont créé en 2008 une plateforme gratuite de signalement contre les SMS frauduleux.
+L65: 
+L66: Il vous suffit de les signaler au 【16†33700†www.33700.fr】 en transmettant au numéro le SMS de prospection reçu, via un formulaire en ligne ou une capture d'écran.
+L67: ## Sommaire : les règles en matière de prospection commerciale
+L68: 
+L69:   * 【17†La prospection par téléphone】
+L70:   * 【18†La prospection par courrier postal】
+L71:   * 【19†La transmission de données à des partenaires】
+L72:   * 【20†Utiliser une liste repoussoir pour respecter l’opposition à la prospection】
+L73: 
+L74: 【21†Tous les contenus de la CNIL sur la prospection commerciale】
+L75: 
+L76: Texte reference
+L77: ## Pour approfondir
+L78: 
+L79:   * 【22†Conformité RGPD : comment informer les personnes et assurer la transparence ?】
+L80:   * 【23†La transmission de coordonnées à des partenaires】
+L81: 
+L82: Texte reference
+L83: ## Les textes de référence
+L84:   * 【24†Articles L32 du code des postes et des communications électroniques (définitions et principes concernant la prospection) - Légifrance†www.legifrance.gouv.fr】
+L85:   * 【25†Articles L34-5 du code des postes et des communications électroniques (protection de la vie privée des utilisateurs de réseaux et services de communication électronique) - Légifrance†www.legifrance.gouv.fr】
+L86:   * 【26†Article 4.11 du règlement général sur la protection des données (définition du consentement) - Légifrance】
+L87:   * 【27†Article 6 du RGPD ( bases légales)】
+L88:   * 【28†Article 7 du RGPD (conditions applicables au consentement)】
+L89:   * 【29†Article 21 du RGPD (droit d'opposition)】
+L90:   * 【30†#Prospection】
+L91:   * 【31†#Publicité】
+L92:   * 【32†#SMS】
+L93:   * 【33†#MMS】
+L94:   * 【34†#Commerce】
+L95: #### Ceci peut également vous intéresser ...
+L96: 
+L97: 【35†La CNIL a prononcé 38 nouvelles sanctions en procédure simplifiée depuis juin 2026 17 novembre 2026】 【36†Sanction】
+L98: 
+L99: 【37†Revoir le webinaire - Nouveau régime de la prospection téléphonique : comment et quand recueillir... 19 octobre 2026】 【38†Webinaire】
+L100: 
+L101: 【39†Reconstitution d’adresses électroniques professionnelles : dans quel cadre est-ce autorisé ? 16 octobre 2026】 【40†Courriels】
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn248view1 [wordlim: 200] Source: open({"ref_id":"https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000030437122/","lineno":null}); 
+URL https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000030437122/ is not accessible via this tool.--------------------------------------------------------------------------------
+Article L3120-4 - Code des transports - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033745494/2026-10-13)
+citeturn248view2 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033745494/2026-10-13","lineno":null}); Total lines: 251
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code des transports
+L66: 
+L67: En vigueur au 13/10/2026 En vigueur au 13 octobre 2026
+L68: 
+L69: Voir les tables de concordance Imprimer la page[Button: Copier le texte ]
+L70: 
+L71: [Button: Fermer ]
+L72: # Table de concordance
+L73: 
+L74: Lorsque des dispositions ont été déplacées ou modifiées, une table de concordance est créée qui permet de relier dans un tableau une ou plusieurs anciennes dispositions d'un texte ou d'un code à leur nouvelle disposition.
+L75: 
+L76: Cela est utile dans le cadre d'une création de code (codification), d'une refonte de code ou recodification.
+L77: ### TABLES DE CONCORDANCE
+L78:   * 【7†Télécharger la partie législative au JO du 3/11/2010, ancienne numérotation / nouvelle numérotation】
+L79:   * 【8†Télécharger la partie législative au JO du 3/11/2010, nouvelle numérotation / ancienne numérotation】
+L80:   * 【9†Télécharger la partie réglementaire (partie 1, dispositions communes) au JO du 27/05/2014, ancienne / nouvelle référence‎】
+L81:   * 【10†Télécharger la partie réglementaire (partie 1, dispositions communes) au JO du 27/05/2014, nouvelle / ancienne ‎référence】
+L82:   * 【11†Télécharger la partie réglementaire (parties 1 et 3, dispositions en matière de transport public routier de personnes) au JO du 31/01/2017, ancienne / nouvelle référence‎】
+L83:   * 【12†Télécharger la partie réglementaire (partie 2, livre II, titres IV, V et VI) au JO du 11/07/2019, ancienne / nouvelle référence‎】
+L84:   * 【13†Télécharger la partie réglementaire (partie 3, transport routier) au JO du 19/11/2016, ancienne / nouvelle référence‎】
+L85:   * 【14†Télécharger la partie réglementaire ‎(partie 3, transport routier) au JO du 19/11/2016‎, nouvelle / ancienne ‎référence】
+L86:   * 【15†Télécharger la partie réglementaire (partie 4, navigation intérieure et transport fluvial) au JO du 27/03/2013, ancienne / nouvelle référence】
+L87:   * 【15†Télécharger la partie réglementaire (partie 4, navigation intérieure et transport fluvial) au JO du 27/03/2013, nouvelle / ancienne référence】
+L88:   * 【16†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre III, les ports maritimes) au JO des 5 et 31/12/2014, ancienne / nouvelle ‎référence】
+L89:   * 【16†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre III, les ports maritimes) au JO des 5 et 31/12/2014, nouvelle / ancienne ‎référence】
+L90:   * 【17†Télécharger la partie réglementaire (partie 5, livre I) au JO des 6 et 29/12/2016, ancienne / nouvelle ‎référence】
+L91:   * 【18†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre I) au JO des 6 et 29/12/2016, nouvelle / ancienne ‎référence】
+L92:   * 【19†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre IV) au JO du 29/12/2016, ancienne / nouvelle ‎référence】
+L93:   * 【20†Télécharger la partie réglementaire (partie 5, transport et navigation maritimes, livre IV) au JO du 29/12/2016, nouvelle / ancienne ‎référence】
+L94:   * 【21†Télécharger la partie réglementaire (partie 6, Livre I, l'aéronef) nouvelle numérotation / ancienne numérotation au JO du 03-08-23】
+L95:   * 【22†Télécharger la partie réglementaire (partie 6, Livre I, l'aéronef) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L96:   * 【23†Télécharger la partie réglementaire (partie 6, Livre II la circulation aérienne)  nouvelle numérotation / ancienne numérotation au JO du 17-04-24】
+L97:   * 【24†Télécharger la partie réglementaire (partie 6, Livre II, la circulation aérienne) ancienne numérotation / nouvelle numérotation au JO du 17-04-24】
+L98:   * 【25†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes,Titre I et II) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L99:   * 【26†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre I et II) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L100:   * 【27†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre III) nouvelle numérotation / ancienne numérotation  au JO du 13-12-23】
+L101:   * 【28†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes,Titre III) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L102:   * 【29†Télécharger la partie réglementaire  partie 6, Livre III, les aérodromes, Titre IV) nouvelle numérotation / ancienne numérotation  au JO du 03-08-23】
+L103:   * 【30†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes,Titre IV) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L104:   * 【31†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre V) nouvelle numérotation / ancienne numérotation  au JO du 03-08-23】
+L105:   * 【32†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre V) ancienne numérotation / nouvelle numérotation au JO du 03-08-23】
+L106:   * 【33†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre VI) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L107:   * 【34†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre VI) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L108:   * 【35†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes Titre VII) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L109:   * 【36†Télécharger la partie réglementaire (partie 6, Livre III, les aérodromes, Titre VII) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L110:   * 【37†Télécharger la partie réglementaire (partie 6, Livre IV, le transport aérien) nouvelle numérotation ancienne numérotation  au JO du 03-08-23】
+L111:   * 【38†Télécharger la partie réglementaire (partie 6, Livre IV, le transport aérien) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L112:   * 【39†Télécharger la partie réglementaire (partie 6, Livre V le personnel navigant) nouvelle numérotation ancienne numérotation au JO du 04-10-23】
+L113:   * 【40†Télécharger la partie réglementaire (partie 6, Livre V, le personnel navigant) ancienne numérotation nouvelle numérotation au JO du 04-10-23】
+L114:   * 【41†Télécharger la partie réglementaire (partie 6, Livre VI,  la formation aéronautique) nouvelle numérotation ancienne numérotation au JO du 03-08-23】
+L115:   * 【42†Télécharger la partie réglementaire (partie 6, Livre VI, la formation aéronautique) ancienne numérotation nouvelle numérotation au JO du 03-08-23】
+L116: ### CODIFICATION
+L117:   * Partie législative au 【43†JO n° 0255 du 3/11/2010】 : 【44†dossier législatif de l'ordonnance n° 2010-1307】.
+L118:   * Partie réglementaire au 【45†JO n° 0073 du 27/03/2013】 : 【46†décrets du 25 mars 2013 n° 2013-251】 relatif à certaines dispositions de la partie réglementaire du code des transports (Décrets en Conseil d’État et en conseil des ministres), 【47†n° 2013-253】 relatif aux dispositions de la quatrième partie réglementaire du code des transports (Décrets en Conseil d'État et décrets simples).
+L119:   * Partie réglementaire au 【48†JO n° 0122 du 27/05/2014】 : 【49†décret n° 2014-530】 du 22 mai 2014 relatif à certaines dispositions de la partie réglementaire du code des transports (Décrets en Conseil d’État et décrets simples).
+L120:   * Partie réglementaire au 【50†JO n° 0281 du 5 décembre 2014】 : 【51†décret n° 2014-1440】 du 4 décembre 2014 relatif aux dispositions du livre III de la cinquième partie réglementaire du code des transports (Décrets en Conseil d'Etat et en conseil des ministres).
+L121:   * Partie réglementaire au 【52†JO n° 0302 du 31 décembre 2014】 : 【53†décret n° 2014-1670】 du 30 décembre 2014 relatif aux dispositions du livre III de la cinquième partie réglementaire du code des transports et à leur adaptation à l'outre-mer (Décrets en Conseil d'Etat et décrets simples).
+L122:   * Partie réglementaire au 【54†JO n° 0269 du 19 novembre 2016】 : 【55†décrets du 17 novembre 2016 n° 2016-1549】  relatif à certaines dispositions de la partie réglementaire du code des transports, n° 【56†2016-1550】 relatif à certaines dispositions de la partie réglementaire du code des transports.
+L123:   * Partie réglementaire au 【57†JO n° 0283 du 6 décembre 2016】 : 【58†décret n° 2016-1660】 du 5 décembre 2016 relatif à des dispositions du livre Ier de la cinquième partie réglementaire du code des transports.
+--------------------------------------------------------------------------------
+Utilisateur de VTC : quels sont vos droits ? | economie.gouv.fr (https://www.economie.gouv.fr/particuliers/mes-droits-conso/gerer-un-litige/utilisateur-de-vtc-quels-sont-vos-droits)
+citeturn248view3 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.economie.gouv.fr/particuliers/mes-droits-conso/gerer-un-litige/utilisateur-de-vtc-quels-sont-vos-droits","lineno":null}); Total lines: 140
+L0: Gouvernement
+L1: 
+L2: 【0†Ministère de l'Économie, des Finances et de la Souveraineté industrielle, énergétique et numérique Ministère des Petites et Moyennes Entreprises, du Commerce, de l’Artisanat, du Tourisme et du Pouvoir d’achat Ministère de l’Action et des Comptes publics】
+L3: 
+L4:   * 【1†Presse†presse.economie.gouv.fr】
+L5: 
+L6: [Button: Fermer]
+L7: 
+L8: Rechercher [Input: Rechercher] [Button: Rechercher ]
+L9: 
+L10: [Button: Fermer]
+L11: 
+L12: Suivez le ministère sur les réseaux sociaux
+L13:   * 【2†Visiter la page Twitter d'Economie†twitter.com】
+L14:   * 【3†Visiter la page Linked In d'Economie†www.linkedin.com】
+L15:   * 【4†Visiter la page Facebook d'Economie†www.facebook.com】
+L16:   * 【5†Visiter la page Instagram d'Economie†www.instagram.com】
+L17:   * 【6†Visiter la page TikTok d'Economie†www.tiktok.com】
+L18:   * 【7†Visiter la page Youtube d'Economie†www.youtube.com】
+L19:   * 【8†Visiter la page des flux RSS d'Economie】
+L20: 
+L21: Bercy infos Particuliers
+L22: # Utilisateur de VTC : quels sont vos droits ?
+L23: 
+L24: Écrit le 26/03/2026
+L25: 
+L26: Lecture : 3 minutes
+L27: 
+L28:   * 【9†Droits et protection des consommateurs】
+L29:   * 【10†Litiges】
+L30:   * 【11†Se déplacer】
+L31: 
+L32: Vous avez recours aux voitures de transport avec chauffeur (VTC) dans le cadre de vos déplacements ? Savez-vous comment sont déterminés les tarifs de vos trajets ? Quelles alternatives s’offrent à vous en cas de litige ? On vous répond.
+L33: ## Voiture de transport avec chauffeur (VTC) : quelles caractéristiques ?
+L34: 
+L35: Un véhicule de transport avec chauffeur (VTC) est un véhicule de moins de sept ans proposant des courses à titre onéreux afin de transporter jusqu'à huit passagers. Le véhicule doit disposer de quatre portes au minimum.
+L36: 
+L37: #### À savoir
+L38: 
+L39: Ces limitations ne s'appliquent pas aux véhicules hybrides et électriques.
+L40: ### Une vignette obligatoire
+L41: 
+L42: Afin qu’aucune confusion ne puisse être faite entre VTC et taxi, le 【12†code des transports†www.legifrance.gouv.fr】 prévoit que les voitures de transport avec chauffeur soient munies d’une signalétique distinctive. Un VTC doit afficher une vignette rouge autocollante obligatoire « Voiture de transport avec chauffeur (VTC) ».
+L43: 
+L44: Celle-ci doit comporter les informations suivantes :
+L45:   * le numéro d'inscription de l'entreprise au registre des VTC (dans le premier carré blanc),
+L46:   * le numéro d'immatriculation du véhicule (dans le second carré blanc).
+L47: 
+L48: Elle doit être collée à deux endroits sur le véhicule :
+L49: 
+L50:   * dans l'angle du pare-brise avant, en bas à gauche, du côté de la place du chauffeur,
+L51:   * dans l'angle du pare-brise arrière, en bas à droite, à l'opposé de la place du chauffeur.
+L52: Un VTC ne peut pas, par ailleurs, disposer d’un compteur horokilométrique et d’un dispositif lumineux extérieur, pour éviter toute confusion avec l'activité de taxi.
+L53: ## Trajet en VTC : comment se déroule une course ?
+L54: 
+L55: Contrairement au taxi, un VTC a interdiction de stationner ou de circuler,  en faisant des maraudes, à la recherche d’un client. Aussi, si vous voulez emprunter ses services, vous devez nécessairement effectuer une réservation préalable.
+L56: Une fois votre réservation passée par le biais d’une plateforme en ligne ou d’une application pour smartphone, vous recevez une confirmation, indiquant le lieu et l’heure de prise en charge ainsi que des éléments vous permettant d’identifier votre véhicule avec chauffeur tels que :
+L57: 
+L58:   * le numéro d’immatriculation du véhicule,
+L59:   * la marque et le modèle du véhicule,
+L60:   * une photographie du chauffeur.
+L61: 
+L62: Pensez à vérifier ces éléments avant de monter à bord.
+L63: Sachez que vous avez la possibilité d’effectuer une rétractation gratuite sur certaines plateformes, quelques minutes après avoir effectué votre réservation.
+L64: #### À savoir
+L65: 
+L66: Vous envisagez d’emprunter un VTC à votre descente de l’avion ? Les VTC ne disposant pas d’autorisation de stationner, vous ne pouvez pas en trouver inopinément à l’aéroport. La seule solution qui s’offre à vous est de le réserver en amont. Le VTC est alors autorisé à vous attendre au point de rendez-vous prévu durant une heure maximum.
+L67: ## Trajet en VTC : quels tarifs ?
+L68: 
+L69: Contrairement aux tarifs des taxis, réglementés par arrêté préfectoral, celui des VTC est librement fixé par la plateforme à laquelle vous faites appel.
+L70: 
+L71: Il peut être :
+L72: 
+L73:   * forfaitaire, indiqué au moment de la réservation,
+L74:   * calculé après la course en fonction du temps de trajet et de la distance parcourue.
+L75: Le prix de votre course peut faire l’objet d’une majoration pour des motifs divers pouvant entraîner une hausse de la demande, telles que des intempéries ou des grèves affectant les transports en commun.
+L76: 
+L77: Après chaque course, vous recevez automatiquement un récapitulatif à l'adresse e-mail associée au compte utilisé lors de votre réservation, vous permettant de télécharger une facture.
+L78: #### À savoir
+L79: 
+L80: Si vous bénéficiez d’une prise en charge de frais de transport par l’assurance maladie, votre trajet ne peut être effectué en VTC. En effet, seuls les trajets assurés par un taxi conventionné, un véhicule sanitaire léger (VSL) ou une ambulance conventionnée ouvrent droit à cette prise en charge.
+L81: ## Et si votre course ne se déroule pas comme prévu ?
+L82: En cas de réclamation suite à une course effectuée à bord d’un VTC, le premier réflexe à avoir est de saisir son service client afin d’aboutir à une résolution à l’amiable. Les applications de réservation de VTC proposent un service après-vente en cas de problème.
+L83: Si cette démarche ne vous donne pas satisfaction, vous pouvez saisir le médiateur à la consommation choisi par le prestataire de VTC, ou encore vous rapprocher d’une association de consommateurs telle que la 【13†fédération nationale des associations d’usagers des ransports (FNAUT)†www.fnaut.fr】.
+L84: ## Ressources complémentaires
+L85: 
+L86: #### [Button: Ces contenus peuvent aussi vous intéresser ]
+L87: 
+L88:   * 【14†Ce qu’il faut savoir sur le covoiturage】
+L89:   * 【15†Voyage en autocar : annulation, retard, accident... Quels sont vos droits ?】
+L90:   * 【16†Droits du consommateur : les démarches à suivre en cas de litige avec une entreprise】
+L91: #### [Button: En savoir plus sur les VTC ]
+L92: 
+L93:   * 【17†Taxis, VTC, LOTI, motos-pro : ce qu’il faut savoir】 sur le site de la DGCCRF
+L94:   * 【18†Taxis et VTC : les droits des passagers†www.fnaut.fr】 sur le site de la FNAUT
+L95:   * 【19†Devenir chauffeur de VTC†entreprendre.service-public.fr】 sur le site de service-public.fr
+L96: 
+L97: #### [Button: Ce que dit la loi ]
+L98: 
+L99: 【20†Code des transports†www.legifrance.gouv.fr】
+L100: 
+L101: ###
+L102: ### Abonnez-vous à nos lettres Bercy infos :
+L103: 
+L104: 【21†Abonnement à Bercy Infos†lettres-infos.bercy.hub-score.com】
+L105: 
+L106:   * 【22†Partager sur Facebook - nouvelle fenêtre†www.facebook.com】
+L107:   * 【23†Partager sur Twitter - nouvelle fenêtre†twitter.com】
+L108:   * 【24†Partager sur Linked In - nouvelle fenêtre†www.linkedin.com】
+L109: 
+L110: 【25†Haut de page】
+L111: 
+L112: 【26†Fermer】
+L113: 
+L114: Vous souhaitez recevoir gratuitement toutes nos informations utiles et pratiques ?
+L115: 
+L116: Abonnez-vous aux lettres d'information Bercy infos !
+L117: 
+L118: 【27†Je m'abonne】
+L119: ## Pied de page de la rubrique Particuliers
+L120: 
+L121: 【28†Image】
+L122: 
+L123:   * 【29†A propos de Bercy infos】
+L124:   * 【30†Retrouvez toutes nos fiches pratiques】
+L125: 
+L126: ## Suivez-nous sur les réseaux sociaux et Abonnez-vous à notre lettre d’information
+L127: 
+L128: ### Recevez les lettres d'information du ministère
+L129: 
+L130: 【31†S'abonner】
+L131: ### Suivez le ministère sur les réseaux sociaux
+L132: 
+L133:   * 【2†Visiter la page Twitter d'Economie†twitter.com】
+L134:   * 【3†Visiter la page Linked In d'Economie†www.linkedin.com】
+L135:   * 【4†Visiter la page Facebook d'Economie†www.facebook.com】
+L136:   * 【5†Visiter la page Instagram d'Economie†www.instagram.com】
+L137:   * 【6†Visiter la page TikTok d'Economie†www.tiktok.com】
+L138:   * 【7†Visiter la page Youtube d'Economie†www.youtube.com】
+L139:   * 【8†Visiter la page des flux RSS d'Economie】
+

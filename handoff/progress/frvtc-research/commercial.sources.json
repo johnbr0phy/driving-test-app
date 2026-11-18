@@ -1,0 +1,255 @@
+[
+  {
+    "questionId": "FRVTC-COM-001",
+    "objective": "Distinguer solutions concurrentes directes et indirectes",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-002",
+    "objective": "Séparer achat et utilisation",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-003",
+    "objective": "Segmenter selon les besoins",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-004",
+    "objective": "Repérer un biais d'échantillonnage",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-005",
+    "objective": "Distinguer pic ponctuel et demande régulière",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-006",
+    "objective": "Identifier un changement de l'environnement du marché",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-007",
+    "objective": "Comparer des prix à périmètre équivalent",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-008",
+    "objective": "Relier prix et bénéfice perçu par la cible",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-009",
+    "objective": "Identifier une stratégie tarifaire",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-010",
+    "objective": "Identifier un intermédiaire prescripteur",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-011",
+    "objective": "Calculer une conversion commerciale",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-012",
+    "objective": "Calculer un coût d'acquisition",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-013",
+    "objective": "Mesurer le réachat d'une cohorte",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-014",
+    "objective": "Mesurer la qualité des contacts",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-015",
+    "objective": "Interpréter simultanément taux et volume",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-016",
+    "objective": "Localiser une difficulté dans le parcours client",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-017",
+    "objective": "Choisir un canal selon l'intention d'achat",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-018",
+    "objective": "Isoler un facteur dans un test commercial",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-019",
+    "objective": "Distinguer médias détenus, payants et gagnés",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-020",
+    "objective": "Utiliser un suivi commercial partagé",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-021",
+    "objective": "Distinguer compte créé et consentement publicitaire",
+    "sources": [
+      "CNIL-MAIL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-022",
+    "objective": "Appliquer l'exception des services analogues",
+    "sources": [
+      "CNIL-MAIL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-023",
+    "objective": "Reconnaître une sollicitation professionnelle pertinente",
+    "sources": [
+      "CNIL-MAIL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-024",
+    "objective": "Rendre durable le droit d'opposition",
+    "sources": [
+      "CNIL-COMMUNICATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-025",
+    "objective": "Limiter les données à une finalité déterminée",
+    "sources": [
+      "CNIL-DATA"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-026",
+    "objective": "Distinguer message transactionnel et promotion",
+    "sources": [
+      "CNIL-COMMUNICATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-027",
+    "objective": "Identifier le recours amiable après réclamation",
+    "sources": [
+      "CONSUMER"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-028",
+    "objective": "Inclure les kilomètres à vide dans le coût",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-029",
+    "objective": "Calculer un tarif à composantes temporelle et kilométrique",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-030",
+    "objective": "Distinguer taux de marque et taux de marge",
+    "sources": [
+      "MARGIN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-031",
+    "objective": "Former un prix à partir d'un taux de marge",
+    "sources": [
+      "MARGIN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-032",
+    "objective": "Intégrer une commission proportionnelle au prix",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-033",
+    "objective": "Mesurer l'effet d'une remise sur la marge",
+    "sources": [
+      "PRICE",
+      "MARGIN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-034",
+    "objective": "Pondérer les coûts d'un ensemble de prestations",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-035",
+    "objective": "Arbitrer l'usage d'une capacité limitée",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-036",
+    "objective": "Distinguer nouveau tarif et modification contractuelle",
+    "sources": [
+      "CONTRACT-1193"
+    ]
+  }
+]

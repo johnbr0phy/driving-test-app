@@ -1,0 +1,626 @@
+[
+  {
+    "id": "R001",
+    "answer": "C",
+    "reason": "Hygroscopic means moisture absorbing (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R002",
+    "answer": "B",
+    "reason": "Replace removed oil volume 1:1: 18 mL removed = 18 mL fresh specified oil (MACS p16).",
+    "findings": []
+  },
+  {
+    "id": "R003",
+    "answer": "C",
+    "reason": "Pump oil changes preserve evacuation performance (MACS p23).",
+    "findings": []
+  },
+  {
+    "id": "R004",
+    "answer": "B",
+    "reason": "Wait for high-side pressure reduction before connection (MACS p43).",
+    "findings": []
+  },
+  {
+    "id": "R005",
+    "answer": "B",
+    "reason": "CO2 venting exemption does not remove paid-service 609 certification (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R006",
+    "answer": "C",
+    "reason": "Zero gauge pressure warrants investigating loss of charge (MACS p14).",
+    "findings": [
+      "Zero gauge pressure suggests loss; it does not prove circuit is refrigerant-free or authorize opening without proper procedure."
+    ]
+  },
+  {
+    "id": "R007",
+    "answer": "D",
+    "reason": "0.1 lb is display resolution, not guaranteed error; 0.1 x16=1.6 oz increment (MACS p27).",
+    "findings": []
+  },
+  {
+    "id": "R008",
+    "answer": "A",
+    "reason": "Equipment registration is one time, including later yf purchases (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R009",
+    "answer": "A",
+    "reason": "Gauge vacuum is measured relative to local atmosphere, which decreases with altitude (MACS p23).",
+    "findings": []
+  },
+  {
+    "id": "R010",
+    "answer": "B",
+    "reason": "Dye must circulate and reach the leak before fluorescence is visible (MACS p21).",
+    "findings": [
+      "Best listed answer, but circulation assumes adequate operating refrigerant charge and OEM dye approval; do not imply running an undercharged compressor."
+    ]
+  },
+  {
+    "id": "R011",
+    "answer": "B",
+    "reason": "Operators require retained certification evidence (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R012",
+    "answer": "D",
+    "reason": "J2670 addresses compatibility, not flushing effectiveness (MACS p22).",
+    "findings": []
+  },
+  {
+    "id": "R013",
+    "answer": "B",
+    "reason": "Inspection hole visibility confirms insertion (MACS p36).",
+    "findings": [
+      "Inspection-hole test applies to fittings designed with such a hole; add that qualifier."
+    ]
+  },
+  {
+    "id": "R014",
+    "answer": "D",
+    "reason": "Ozone depletion raises surface UVB (EPA impacts).",
+    "findings": []
+  },
+  {
+    "id": "R015",
+    "answer": "C",
+    "reason": "Disconnect power for maintenance unless instructed otherwise (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R016",
+    "answer": "C",
+    "reason": "Barter is consideration (82.32(f/g), EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R017",
+    "answer": "A",
+    "reason": "Standard recycling does not fractionate refrigerant mixtures (MACS p7).",
+    "findings": []
+  },
+  {
+    "id": "R018",
+    "answer": "D",
+    "reason": "Leak after test charge leaves recovery/re-evacuation available (MACS p51).",
+    "findings": []
+  },
+  {
+    "id": "R019",
+    "answer": "D",
+    "reason": "Refrigerant spray requires actual eye protection (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R020",
+    "answer": "B",
+    "reason": "MVAC-like agricultural equipment permits 608 Type II instead of609 (EPA overlap).",
+    "findings": []
+  },
+  {
+    "id": "R021",
+    "answer": "B",
+    "reason": "J3030 explicitly covers both refrigerants (82.31(b)(3),82.36(a)(10)).",
+    "findings": []
+  },
+  {
+    "id": "R022",
+    "answer": "A",
+    "reason": "Ground ozone is a smog constituent (EPA impacts).",
+    "findings": []
+  },
+  {
+    "id": "R023",
+    "answer": "D",
+    "reason": "Stationary-source contaminants require reclamation before MVAC use (MACS p34).",
+    "findings": []
+  },
+  {
+    "id": "R024",
+    "answer": "C",
+    "reason": "Performance operation requires full specified charge (MACS p18).",
+    "findings": []
+  },
+  {
+    "id": "R025",
+    "answer": "C",
+    "reason": "609 is an appropriate MVAC purchaser credential; salvage origin alone does not establish purity (MACS p9;82.154(c),(d)).",
+    "findings": [
+      "Needs explicit MVAC-source refrigerant and intended MVAC reuse/recycling qualification. A vehicle disposal facility may also handle non-MVAC cargo refrigerants. Credential alone does not waive82.154(d) conditions. C is best intended answer, but scope is underspecified."
+    ]
+  },
+  {
+    "id": "R026",
+    "answer": "D",
+    "reason": "Recovery chills oil and slows outgassing (MACS p14).",
+    "findings": []
+  },
+  {
+    "id": "R027",
+    "answer": "C",
+    "reason": "Hot surfaces can decompose refrigerant (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R028",
+    "answer": "C",
+    "reason": "Credentialed EPA representatives receive premises/required-record access (MACS p9).",
+    "findings": []
+  },
+  {
+    "id": "R029",
+    "answer": "C",
+    "reason": "J2788 storage limit is 0.80 times rated volume at21 C, not gross mass (SubpartB AppendixC7.2).",
+    "findings": []
+  },
+  {
+    "id": "R030",
+    "answer": "D",
+    "reason": "Manual explicitly gives0.15 oz/year most-sensitive J2913 capability (MACS p48).",
+    "findings": [
+      "The manual is not identified in the stem. Name MACS January2025; otherwise ambiguous reference despite clear intended numeric option."
+    ]
+  },
+  {
+    "id": "R031",
+    "answer": "D",
+    "reason": "600+0=600 g minimum;600+30=630 g maximum.620 is inside;640 above;570 and590 below.",
+    "findings": []
+  },
+  {
+    "id": "R032",
+    "answer": "B",
+    "reason": "Critical charge requires measured mass (MACS pp24,28).",
+    "findings": []
+  },
+  {
+    "id": "R033",
+    "answer": "C",
+    "reason": "Recovery-only extracts; recycling additionally cleans (MACS p10).",
+    "findings": []
+  },
+  {
+    "id": "R034",
+    "answer": "D",
+    "reason": "Remote service retains shop requirements (82.32(e)(3)).",
+    "findings": []
+  },
+  {
+    "id": "R035",
+    "answer": "B",
+    "reason": "Probe belongs in center of floor duct outlet during prescribed check (MACS p51).",
+    "findings": []
+  },
+  {
+    "id": "R036",
+    "answer": "D",
+    "reason": "Retail notice concerns purchaser certification restriction (MACS p9;82.42(b)).",
+    "findings": []
+  },
+  {
+    "id": "R037",
+    "answer": "A",
+    "reason": "Prolonged atmospheric exposure saturates desiccant (MACS p24).",
+    "findings": []
+  },
+  {
+    "id": "R038",
+    "answer": "B",
+    "reason": "Valve-core restriction delays evacuation of the circuit relative to hose (MACS p23).",
+    "findings": []
+  },
+  {
+    "id": "R039",
+    "answer": "C",
+    "reason": "External J2912 identifier supplies accepted input to J2843 machine (MACS p47).",
+    "findings": []
+  },
+  {
+    "id": "R040",
+    "answer": "B",
+    "reason": "High-side cutoff responds to discharge pressure (MACS p24).",
+    "findings": []
+  },
+  {
+    "id": "R041",
+    "answer": "A",
+    "reason": "Obsolete CFC12 label must become unreadable (EPA retrofit).",
+    "findings": []
+  },
+  {
+    "id": "R042",
+    "answer": "B",
+    "reason": "Remove external debris before opening (MACS p13).",
+    "findings": []
+  },
+  {
+    "id": "R043",
+    "answer": "D",
+    "reason": "Approved certification establishes compliance (EPA servicing;MACS p8).",
+    "findings": []
+  },
+  {
+    "id": "R044",
+    "answer": "C",
+    "reason": "Hydrocarbon substitutes are unacceptable in new and retrofit MVAC (EPA impacts).",
+    "findings": []
+  },
+  {
+    "id": "R045",
+    "answer": "C",
+    "reason": "Off-site recycling requires ownership of both extraction and recycling equipment (82.32(e)(2)).",
+    "findings": [
+      "C, not recovery-only plus outsourced recycling:82.32(e)(2) expressly requires common ownership. Distinguish recycling from third-party reclamation."
+    ]
+  },
+  {
+    "id": "R046",
+    "answer": "C",
+    "reason": "Empty does not mean refillable; vessel approval is necessary (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R047",
+    "answer": "A",
+    "reason": "Impervious gloves protect against irritating PAG (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R048",
+    "answer": "A",
+    "reason": "Dye compatibility includes materials/lubricant effects (MACS p20).",
+    "findings": []
+  },
+  {
+    "id": "R049",
+    "answer": "D",
+    "reason": "Recycling is required before return, even same vehicle (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R050",
+    "answer": "A",
+    "reason": "Top-off-only MVAC shops retain equipment obligation (82.32(e)(4)).",
+    "findings": []
+  },
+  {
+    "id": "R051",
+    "answer": "A",
+    "reason": "Small CFC12 sales for service require609 (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R052",
+    "answer": "C",
+    "reason": "Minimum short grounded three-wire14AWG cord (MACS p11).",
+    "findings": [
+      "The manual is unspecified in the stem; name edition/provider. Technical instruction is supported by MACS p11."
+    ]
+  },
+  {
+    "id": "R053",
+    "answer": "D",
+    "reason": "Pressure rebound means recovery must continue (MACS p14).",
+    "findings": []
+  },
+  {
+    "id": "R054",
+    "answer": "A",
+    "reason": "Programmable hose length compensates refrigerant held in hoses (MACS p28).",
+    "findings": []
+  },
+  {
+    "id": "R055",
+    "answer": "A",
+    "reason": "J2788 exempts specified ASME tanks from this retest provision (AppendixC7.3.4).",
+    "findings": [
+      "Accurate under named J2788 provision; narrow exception must not imply freedom from all inspections or other vessel rules. Low-value standards detail compared with service decisions."
+    ]
+  },
+  {
+    "id": "R056",
+    "answer": "D",
+    "reason": "R22 bus AC falls under608 TypeII (EPA overlap).",
+    "findings": []
+  },
+  {
+    "id": "R057",
+    "answer": "B",
+    "reason": "Follow manufacturer high-voltage deactivation procedure (MACS pp43,45).",
+    "findings": []
+  },
+  {
+    "id": "R058",
+    "answer": "B",
+    "reason": "Some fuel-injection ports accept CFC12 coupling (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R059",
+    "answer": "B",
+    "reason": "GWP compares warming influence with CO2 (EPA impacts).",
+    "findings": []
+  },
+  {
+    "id": "R060",
+    "answer": "D",
+    "reason": "Sealed cargo refrigeration is outside MVAC definition (82.32(d)).",
+    "findings": []
+  },
+  {
+    "id": "R061",
+    "answer": "C",
+    "reason": "Sealed cap is primary service-port seal (MACS p13).",
+    "findings": []
+  },
+  {
+    "id": "R062",
+    "answer": "A",
+    "reason": "Pressurized air mixtures can become combustible (MACS p11).",
+    "findings": []
+  },
+  {
+    "id": "R063",
+    "answer": "B",
+    "reason": "Below-atmospheric hose pressure draws outside air through leaks (AppendixC6.2.1).",
+    "findings": []
+  },
+  {
+    "id": "R064",
+    "answer": "B",
+    "reason": "Engine-generated air motion disperses leak vapor (MACS p18).",
+    "findings": []
+  },
+  {
+    "id": "R065",
+    "answer": "A",
+    "reason": "Retain receiving facility name/address (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R066",
+    "answer": "C",
+    "reason": "Employer documents certified employee (EPA sales).",
+    "findings": []
+  },
+  {
+    "id": "R067",
+    "answer": "A",
+    "reason": "Solvent vapors interfere with leak detection; clean cloth avoids introduced vapors (MACS p18).",
+    "findings": []
+  },
+  {
+    "id": "R068",
+    "answer": "A",
+    "reason": "Excess vacuum decay blocks charge pending repair (MACS p51).",
+    "findings": []
+  },
+  {
+    "id": "R069",
+    "answer": "C",
+    "reason": "Empty collector isolates this recovery job oil volume (MACS p16).",
+    "findings": []
+  },
+  {
+    "id": "R070",
+    "answer": "C",
+    "reason": "Specified glasses improve fluorescence contrast and protect eyes (MACS p21).",
+    "findings": []
+  },
+  {
+    "id": "R071",
+    "answer": "B",
+    "reason": "Residual solvent dilutes lubricant (MACS p22).",
+    "findings": []
+  },
+  {
+    "id": "R072",
+    "answer": "C",
+    "reason": "Two-pound self-sealing uniquely fitted substitute can meets DIY rule (82.154(c)(1)(ix);EPA sales).",
+    "findings": [
+      "Self-sealing requirement applies to cans manufactured/imported on or after2018-01-01. A could also qualify if grandfathered old stock. Add current manufacture/import date and non-exempt MVAC substitute to remove literal ambiguity."
+    ]
+  },
+  {
+    "id": "R073",
+    "answer": "D",
+    "reason": "Identifier examines actual cylinder contents (MACS pp32-34).",
+    "findings": []
+  },
+  {
+    "id": "R074",
+    "answer": "A",
+    "reason": "Undercharge impairs lubricant circulation (MACS p24).",
+    "findings": []
+  },
+  {
+    "id": "R075",
+    "answer": "A",
+    "reason": "New-manufacture HFC restrictions leave existing-vehicle service permitted (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R076",
+    "answer": "A",
+    "reason": "SNAP permissions depend on end use and use conditions (EPA impacts).",
+    "findings": []
+  },
+  {
+    "id": "R077",
+    "answer": "B",
+    "reason": "Excess oil insulates heat-transfer surfaces (MACS p16).",
+    "findings": []
+  },
+  {
+    "id": "R078",
+    "answer": "C",
+    "reason": "Retrofit with relief device requires high-pressure compressor cutoff (EPA retrofit).",
+    "findings": []
+  },
+  {
+    "id": "R079",
+    "answer": "A",
+    "reason": "Use new J2842-compliant evaporator (MACS pp44,52).",
+    "findings": []
+  },
+  {
+    "id": "R080",
+    "answer": "A",
+    "reason": "Partial charge enables pressure leak check after vacuum check (MACS p51).",
+    "findings": []
+  },
+  {
+    "id": "R081",
+    "answer": "C",
+    "reason": "1.75 lb x16 oz/lb=28 oz; equivalently16+0.75x16=16+12=28.",
+    "findings": []
+  },
+  {
+    "id": "R082",
+    "answer": "B",
+    "reason": "J2788 recycled refrigerant withdrawn as liquid (AppendixC4.5).",
+    "findings": []
+  },
+  {
+    "id": "R083",
+    "answer": "A",
+    "reason": "J2851 covers contaminated R134a/yf recovery (82.31(b)(2)).",
+    "findings": []
+  },
+  {
+    "id": "R084",
+    "answer": "D",
+    "reason": "Replace filter and satisfy identification/reset mechanism (AppendixC4.1.1-2).",
+    "findings": [
+      "Replacement is required before full saturation, with lockout at end of life. Stem says capacity exhausted; answer works but explanation should not encourage waiting for wet desiccant."
+    ]
+  },
+  {
+    "id": "R085",
+    "answer": "B",
+    "reason": "A2L denotes mild/lower flammability (EPA impacts;MACS p43).",
+    "findings": []
+  },
+  {
+    "id": "R086",
+    "answer": "A",
+    "reason": "HFC134a contributes to warming without ozone depletion (EPA impacts).",
+    "findings": []
+  },
+  {
+    "id": "R087",
+    "answer": "B",
+    "reason": "Electronic detector locates refrigerant vapor leaks (MACS p48).",
+    "findings": []
+  },
+  {
+    "id": "R088",
+    "answer": "A",
+    "reason": "Manufacturer determines specific oil requirement, including electric compressors (MACS p45).",
+    "findings": []
+  },
+  {
+    "id": "R089",
+    "answer": "D",
+    "reason": "Final disposer ensures removal (EPA servicing).",
+    "findings": [
+      "Use non-exempt refrigerant scope if intending universal legal duty; CO2 venting exception should remain clear."
+    ]
+  },
+  {
+    "id": "R090",
+    "answer": "A",
+    "reason": "Heat expands liquid toward liquid-full cylinder (MACS p45).",
+    "findings": []
+  },
+  {
+    "id": "R091",
+    "answer": "D",
+    "reason": "Damaged service seal needs replacement (MACS p12).",
+    "findings": []
+  },
+  {
+    "id": "R092",
+    "answer": "C",
+    "reason": "Manual places shutoff within12 inches of vehicle end (MACS p8).",
+    "findings": [
+      "Generic stem should identify CFC12/legacy manual guidance; specific modern equipment standards can require shutoff at connection. Within12in is best listed answer but should not override machine instructions."
+    ]
+  },
+  {
+    "id": "R093",
+    "answer": "B",
+    "reason": "Oblong/irregular crimp indicates carriers or dies (MACS p36).",
+    "findings": []
+  },
+  {
+    "id": "R094",
+    "answer": "A",
+    "reason": "Refrigerant accumulates in pits/low areas (MACS p43).",
+    "findings": []
+  },
+  {
+    "id": "R095",
+    "answer": "D",
+    "reason": "Enclosure collects vapor otherwise dispersed by air (MACS p20).",
+    "findings": []
+  },
+  {
+    "id": "R096",
+    "answer": "B",
+    "reason": "Fine multi-flow passages resist debris removal (MACS p22).",
+    "findings": []
+  },
+  {
+    "id": "R097",
+    "answer": "A",
+    "reason": "Barrier hose reduces HCFC22 blend seepage (EPA retrofit).",
+    "findings": []
+  },
+  {
+    "id": "R098",
+    "answer": "C",
+    "reason": "yf and134a can have similar vapor pressures (MACS p45).",
+    "findings": []
+  },
+  {
+    "id": "R099",
+    "answer": "C",
+    "reason": "Refrigerant-specific fittings permanently attach at vehicle end (EPA servicing).",
+    "findings": []
+  },
+  {
+    "id": "R100",
+    "answer": "D",
+    "reason": "Applicable current manufacturer revision supersedes stale charge label (MACS p25).",
+    "findings": []
+  }
+]

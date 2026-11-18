@@ -1,0 +1,776 @@
+[
+  {
+    "priorReviewId": "R001",
+    "questionId": "CDM-SAF-016",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R002",
+    "questionId": "CDM-SAF-035",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R003",
+    "questionId": "CDM-FOO-005",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R004",
+    "questionId": "CDM-SAF-011",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R007",
+    "questionId": "CDM-PER-034",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R008",
+    "questionId": "CDM-SAF-018",
+    "disposition": "retained after inspection",
+    "priorCue": "Vulnerability cue: nursing-home residents stand apart from the three general-adult/public settings."
+  },
+  {
+    "priorReviewId": "R009",
+    "questionId": "CDM-NUT-013",
+    "disposition": "revised",
+    "priorCue": "Odd-one-out cue: rice stands apart from the three named wheat/barley grains."
+  },
+  {
+    "priorReviewId": "R010",
+    "questionId": "CDM-BUS-012",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R014",
+    "questionId": "CDM-NUT-011",
+    "disposition": "revised",
+    "priorCue": "Specificity cue: speech-language pathologist is the uniquely specialized clinical professional."
+  },
+  {
+    "priorReviewId": "R015",
+    "questionId": "CDM-BUS-018",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R017",
+    "questionId": "CDM-PER-005",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R018",
+    "questionId": "CDM-PER-024",
+    "disposition": "retained after inspection",
+    "priorCue": "Constructive managerial tone: rebalance competing workload addresses a system constraint."
+  },
+  {
+    "priorReviewId": "R019",
+    "questionId": "CDM-PER-039",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R020",
+    "questionId": "CDM-BUS-027",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R022",
+    "questionId": "CDM-NUT-022",
+    "disposition": "revised",
+    "priorCue": "Odd-one-out cue: barley malt contrasts with the explicitly plain/unseasoned alternatives."
+  },
+  {
+    "priorReviewId": "R023",
+    "questionId": "CDM-PER-023",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R024",
+    "questionId": "CDM-SAF-031",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R025",
+    "questionId": "CDM-FOO-014",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R026",
+    "questionId": "CDM-PER-010",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R027",
+    "questionId": "CDM-FOO-038",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R029",
+    "questionId": "CDM-PER-015",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R031",
+    "questionId": "CDM-FOO-004",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R035",
+    "questionId": "CDM-FOO-030",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R036",
+    "questionId": "CDM-SAF-037",
+    "disposition": "retained after inspection",
+    "priorCue": "Completeness cue: chemical test kit or strips gives two equivalent verification methods."
+  },
+  {
+    "priorReviewId": "R037",
+    "questionId": "CDM-NUT-028",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R038",
+    "questionId": "CDM-FOO-035",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R040",
+    "questionId": "CDM-NUT-023",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R042",
+    "questionId": "CDM-BUS-021",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R044",
+    "questionId": "CDM-SAF-045",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R045",
+    "questionId": "CDM-FOO-007",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R046",
+    "questionId": "CDM-BUS-010",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R047",
+    "questionId": "CDM-SAF-020",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R049",
+    "questionId": "CDM-SAF-006",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R050",
+    "questionId": "CDM-PER-027",
+    "disposition": "retained after inspection",
+    "priorCue": "Real-world transfer cue: ordinary production shift contrasts with classroom/self-report measures."
+  },
+  {
+    "priorReviewId": "R052",
+    "questionId": "CDM-FOO-028",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R053",
+    "questionId": "CDM-PER-007",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R054",
+    "questionId": "CDM-SAF-010",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R055",
+    "questionId": "CDM-NUT-014",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R057",
+    "questionId": "CDM-SAF-029",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R059",
+    "questionId": "CDM-NUT-007",
+    "disposition": "retained after inspection",
+    "priorCue": "Specificity and balanced method: defined historical comparison points contrast with selective extremes or only recent data."
+  },
+  {
+    "priorReviewId": "R060",
+    "questionId": "CDM-SAF-021",
+    "disposition": "retained after inspection",
+    "priorCue": "Moderate safety response: restrict duties avoids both unrestricted work and the stronger unsupported exclusion."
+  },
+  {
+    "priorReviewId": "R061",
+    "questionId": "CDM-SAF-007",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R062",
+    "questionId": "CDM-NUT-036",
+    "disposition": "revised",
+    "priorCue": "Odd-one-out cue: the only substitution from butter toward vegetable oil."
+  },
+  {
+    "priorReviewId": "R063",
+    "questionId": "CDM-SAF-002",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R066",
+    "questionId": "CDM-SAF-026",
+    "disposition": "retained after inspection",
+    "priorCue": "Unqualified protective wording contrasts with three options that dismiss or narrowly limit allergen controls."
+  },
+  {
+    "priorReviewId": "R067",
+    "questionId": "CDM-SAF-047",
+    "disposition": "retained after inspection",
+    "priorCue": "Direct-consumption cue: beverage ice stands apart from three nonfood uses."
+  },
+  {
+    "priorReviewId": "R068",
+    "questionId": "CDM-SAF-012",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R069",
+    "questionId": "CDM-SAF-009",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R070",
+    "questionId": "CDM-PER-006",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R074",
+    "questionId": "CDM-NUT-006",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R076",
+    "questionId": "CDM-FOO-002",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R077",
+    "questionId": "CDM-SAF-043",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R078",
+    "questionId": "CDM-SAF-024",
+    "disposition": "retained after inspection",
+    "priorCue": "Practical identification cue: common cleaner name identifies contents; other choices are incidental metadata."
+  },
+  {
+    "priorReviewId": "R079",
+    "questionId": "CDM-PER-025",
+    "disposition": "retained after inspection",
+    "priorCue": "Completeness/fairness cue: equivalent job and benefits contrasts with waiting or diminished restoration."
+  },
+  {
+    "priorReviewId": "R081",
+    "questionId": "CDM-FOO-003",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R084",
+    "questionId": "CDM-PER-011",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R085",
+    "questionId": "CDM-PER-002",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R086",
+    "questionId": "CDM-SAF-005",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R091",
+    "questionId": "CDM-FOO-043",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R094",
+    "questionId": "CDM-BUS-025",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R096",
+    "questionId": "CDM-BUS-006",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R099",
+    "questionId": "CDM-BUS-001",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R101",
+    "questionId": "CDM-PER-029",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R102",
+    "questionId": "CDM-NUT-040",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R103",
+    "questionId": "CDM-BUS-019",
+    "disposition": "retained after inspection",
+    "priorCue": "Comparable-cost cue: per needed unit is more decision relevant than per purchased unit; lower needed-unit offer selected."
+  },
+  {
+    "priorReviewId": "R105",
+    "questionId": "CDM-FOO-018",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R106",
+    "questionId": "CDM-FOO-039",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R107",
+    "questionId": "CDM-FOO-031",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R108",
+    "questionId": "CDM-NUT-001",
+    "disposition": "retained after inspection",
+    "priorCue": "Direct observation cue: observing container use is a concrete functional assessment."
+  },
+  {
+    "priorReviewId": "R112",
+    "questionId": "CDM-BUS-011",
+    "disposition": "revised",
+    "priorCue": "Business relevance cue: customer demand at planned price directly tests commercial feasibility."
+  },
+  {
+    "priorReviewId": "R113",
+    "questionId": "CDM-PER-030",
+    "disposition": "retained after inspection",
+    "priorCue": "Higher-order competence cue: recognizing discrepancies sounds like the intended transferable skill."
+  },
+  {
+    "priorReviewId": "R114",
+    "questionId": "CDM-SAF-032",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R115",
+    "questionId": "CDM-SAF-042",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R116",
+    "questionId": "CDM-FOO-022",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R117",
+    "questionId": "CDM-SAF-022",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R118",
+    "questionId": "CDM-BUS-008",
+    "disposition": "retained after inspection",
+    "priorCue": "Audit evidence specificity: signed receipts paired with entries directly corroborate a transaction."
+  },
+  {
+    "priorReviewId": "R119",
+    "questionId": "CDM-SAF-013",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R121",
+    "questionId": "CDM-PER-036",
+    "disposition": "retained after inspection",
+    "priorCue": "Three restrictive only statements contrast with one flexible, inclusive rule."
+  },
+  {
+    "priorReviewId": "R122",
+    "questionId": "CDM-PER-012",
+    "disposition": "retained after inspection",
+    "priorCue": "Demonstration cue: actual measurement tests applied skill more directly than recall or explanation."
+  },
+  {
+    "priorReviewId": "R123",
+    "questionId": "CDM-NUT-030",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R124",
+    "questionId": "CDM-NUT-035",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R126",
+    "questionId": "CDM-FOO-001",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R127",
+    "questionId": "CDM-SAF-015",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R128",
+    "questionId": "CDM-PER-018",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R132",
+    "questionId": "CDM-PER-035",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R133",
+    "questionId": "CDM-FOO-013",
+    "disposition": "retained after inspection",
+    "priorCue": "Completeness cue: residents tasting both coded versions combines target users with blinded comparison."
+  },
+  {
+    "priorReviewId": "R134",
+    "questionId": "CDM-SAF-048",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R137",
+    "questionId": "CDM-PER-028",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R138",
+    "questionId": "CDM-PER-038",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R139",
+    "questionId": "CDM-FOO-040",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R142",
+    "questionId": "CDM-PER-009",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R143",
+    "questionId": "CDM-FOO-008",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R145",
+    "questionId": "CDM-SAF-008",
+    "disposition": "revised",
+    "priorCue": "Obvious contamination contrast: soiled utensils stand apart from three information-only activities."
+  },
+  {
+    "priorReviewId": "R148",
+    "questionId": "CDM-NUT-031",
+    "disposition": "retained after inspection",
+    "priorCue": "Methodological completeness: converting both products to an explicit common portion supports a valid comparison."
+  },
+  {
+    "priorReviewId": "R152",
+    "questionId": "CDM-BUS-002",
+    "disposition": "retained after inspection",
+    "priorCue": "Odd-one-out cue: full refrigerator replacement contrasts with routine service, repair, and gasket costs."
+  },
+  {
+    "priorReviewId": "R153",
+    "questionId": "CDM-SAF-040",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R154",
+    "questionId": "CDM-FOO-024",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R156",
+    "questionId": "CDM-FOO-006",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R158",
+    "questionId": "CDM-PER-022",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R159",
+    "questionId": "CDM-NUT-017",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R160",
+    "questionId": "CDM-PER-016",
+    "disposition": "retained after inspection",
+    "priorCue": "Precision cue: actually worked distinguishes productive time from three broader paid-hour measures."
+  },
+  {
+    "priorReviewId": "R162",
+    "questionId": "CDM-FOO-009",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R163",
+    "questionId": "CDM-BUS-022",
+    "disposition": "revised",
+    "priorCue": "Specificity cue: denominator membership is more mathematically diagnostic than the generic lists in alternatives."
+  },
+  {
+    "priorReviewId": "R164",
+    "questionId": "CDM-FOO-033",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R166",
+    "questionId": "CDM-SAF-023",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R168",
+    "questionId": "CDM-NUT-034",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R170",
+    "questionId": "CDM-NUT-025",
+    "disposition": "retained after inspection",
+    "priorCue": "End-to-end verification cue: authoritative signed order and actual meal span intent and delivered outcome."
+  },
+  {
+    "priorReviewId": "R171",
+    "questionId": "CDM-SAF-041",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R172",
+    "questionId": "CDM-SAF-003",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R174",
+    "questionId": "CDM-FOO-017",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R175",
+    "questionId": "CDM-NUT-021",
+    "disposition": "retained after inspection",
+    "priorCue": "Outcome and comparison cue: meals eaten before and after directly assess change."
+  },
+  {
+    "priorReviewId": "R177",
+    "questionId": "CDM-BUS-014",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R178",
+    "questionId": "CDM-PER-032",
+    "disposition": "retained after inspection",
+    "priorCue": "Nuanced fairness cue: position that would have been attained avoids static or arbitrary vacancy assignments."
+  },
+  {
+    "priorReviewId": "R182",
+    "questionId": "CDM-FOO-011",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R183",
+    "questionId": "CDM-SAF-046",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R184",
+    "questionId": "CDM-SAF-001",
+    "disposition": "revised",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R185",
+    "questionId": "CDM-NUT-029",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R186",
+    "questionId": "CDM-NUT-019",
+    "disposition": "retained after inspection",
+    "priorCue": "Measured balanced wording: two stated outcomes improved or held sounds bounded to evidence."
+  },
+  {
+    "priorReviewId": "R187",
+    "questionId": "CDM-BUS-015",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R188",
+    "questionId": "CDM-FOO-015",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R189",
+    "questionId": "CDM-PER-017",
+    "disposition": "revised",
+    "priorCue": "Specific rule cue plus elimination: numeric threshold wording contrasts with three categorical restrictions."
+  },
+  {
+    "priorReviewId": "R190",
+    "questionId": "CDM-PER-020",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R191",
+    "questionId": "CDM-PER-021",
+    "disposition": "revised",
+    "priorCue": "Conditional wording cue: conditional offer explicitly marks a formal stage."
+  },
+  {
+    "priorReviewId": "R193",
+    "questionId": "CDM-NUT-039",
+    "disposition": "retained after inspection",
+    "priorCue": "Person-centered autonomy cue: resident stands apart from administrators and incidental contacts."
+  },
+  {
+    "priorReviewId": "R195",
+    "questionId": "CDM-NUT-008",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R196",
+    "questionId": "CDM-FOO-044",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R197",
+    "questionId": "CDM-NUT-005",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R199",
+    "questionId": "CDM-BUS-017",
+    "disposition": "retained after inspection",
+    "priorCue": "none"
+  },
+  {
+    "priorReviewId": "R200",
+    "questionId": "CDM-PER-004",
+    "disposition": "revised",
+    "priorCue": "Concrete prior behavior cue: a disagreement actually resolved contrasts with hypothetical or general preferences."
+  }
+]

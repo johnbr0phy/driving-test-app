@@ -1,0 +1,42 @@
+Verified successful web fetch by orchestrator, 2026-11-17.
+URL: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000052153206/
+Web result turn229view0, 216 lines. Subsequent fetch returned 403; this transcription preserves the successful response's operative text, not a new inferred fetch.
+
+Arrêté du 6 août 2025 relatif au justificatif de la réservation préalable applicable aux voitures de transport avec chauffeur et aux véhicules motorisés à deux ou trois roues
+En vigueur au 17 novembre 2026
+Dernière mise à jour des données de ce texte : 30 août 2025
+NOR : ATDT2519934A
+JORF n°0200 du 29 août 2025
+
+Le ministre d'État, ministre de l'intérieur, le ministre de l'économie, des finances et de la souveraineté industrielle et numérique et le ministre auprès du ministre de l'aménagement du territoire et de la décentralisation, chargé des transports,
+Vu le code des transports, notamment ses articles L. 3120-1, L. 3120-2 et R. 3120-2,
+Vu l'article D. 123-235 du code de commerce,
+Arrêtent :
+
+Article 1
+La justification de la réservation préalable des véhicules de transports avec chauffeur ou des véhicules motorisés à deux ou trois roues effectuant les prestations de transport public particulier de personnes à titre onéreux, prévue à l'article R. 3120-2 du code des transports, est apportée par la production d'un support papier ou électronique comportant obligatoirement les informations suivantes :
+1° Nom ou dénomination sociale et coordonnées de la société exerçant l'activité d'exploitant de voitures de transport avec chauffeur ou d'exploitant de véhicules motorisés à deux ou trois roues ;
+2° Numéro d'inscription de l'exploitant susmentionné au registre institué par l'article L. 3122-3 du code des transports, dans le cas où le véhicule utilisé est une voiture de transport avec chauffeur ;
+3° Numéro unique d'identification dudit exploitant délivré conformément à l'article D. 123-235 du code de commerce ;
+4° Nom et coordonnées téléphoniques du client sollicitant une prestation de transport public particulier de personnes à titre onéreux ;
+5° Date et heure de la réservation préalable effectuée par le client ;
+6° Date et heure de la prise en charge souhaitées par le client ;
+7° Lieu de prise en charge indiqué par le client.
+Dans le cas où les informations mentionnées au 4° ne figurent pas sur le justificatif, le conducteur fournit, sans délai, à l'agent de contrôle, les moyens de prendre contact avec le client.
+
+Article 2
+The consolidated response displays amendments: abrogation of Arrêté du 30 juillet 2013 and articles 1, 2, 3 (links18–21).
+
+Article 3
+The consolidated response displays amendments: abrogation of Arrêté du 30 juillet 2013 and articles 1, 2, 3 (links23–26).
+
+Article 4
+Le présent arrêté entre en vigueur deux mois après sa publication.
+
+Article 5
+Le présent arrêté sera publié au Journal officiel de la République française.
+
+Fait le 6 août 2025.
+Signatories displayed: S. Chinzi; F. Balussou; S. Lacoche.
+
+Note: the page labels articles as en vigueur depuis le30août2025, but Article4 expressly specifies commencement two months after publication. Do not substitute the metadata label for operative commencement language.

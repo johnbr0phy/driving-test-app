@@ -1,0 +1,227 @@
+Sous-section 2 : Obligations relatives aux véhicules (Articles R3122-6 à R3122-9) - Légifrance (https://www.legifrance.gouv.fr/codes/id/LEGISCTA000030048493)
+citeturn240view0 [wordlim: 200] Crawled: 6 days ago; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/id/LEGISCTA000030048493","lineno":null}); Total lines: 224
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code des transports
+L66: 
+L67: Version En vigueur au 11/11/2026 Version En vigueur au 11 novembre 2026
+L68: 
+L69: [Input]Masquer les articles et les sections abrogés
+L70: 
+L71: Imprimer la page[Button: Copier le texte ]
+L72: 
+L73: ## ChronoLégi l'accès au droit dans le temps
+L74: 
+L75: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L76: 
+L77: [Input]
+L78: ### Les différentes versions dans le temps
+L79: 
+L80: Fermer le Chronolégi
+L81: 
+L82: À la date du JJ/MM/AAAA
+L83: 
+L84: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L85: 
+L86: Rechercher dans cette section ou dans tout le code
+L87: 
+L88: [Input]Rechercher dans cette section
+L89: 
+L90: [Input]Rechercher dans tout le code
+L91: 
+L92: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L93: 
+L94: [Input] Réinitialiser le champ recherche
+L95: 
+L96: * * *
+L97: 
+L98: Voir le sommaire du code
+L99: 
+L100: [Button: Fermer]
+L101: 
+L102:   * ## 【7†PARTIE RÉGLEMENTAIRE (Articles D1112-1 à D6792-6)】
+L103: Déplier/Replier
+L104:     * ### 【8†TROISIÈME PARTIE : TRANSPORT ROUTIER (Articles R3111-1 à CONTRAT COMMERCIAL)】
+L105: 
+L106: Déplier/Replier
+L107:       * #### 【9†LIVRE IER : LE TRANSPORT ROUTIER DE PERSONNES (Articles R3111-1 à Annexe à l'article R3111-36-3)】
+L108: 
+L109: Déplier/Replier
+L110:         * ##### 【10†TITRE II : LES TRANSPORTS PUBLICS PARTICULIERS (Articles R3120-1 à R3124-15)】
+L111: 
+L112: Déplier/Replier
+L113:           * ###### 【11†Chapitre II : Les voitures de transport avec chauffeur (Articles R3122-1 à R3122-12)】
+L114: Déplier/Replier
+L115:             * ###### 【12†Section 1 : Dispositions relatives aux exploitants (Articles R3122-1 à R3122-9)】
+L116: 
+L117: Déplier/Replier
+L118:               * ###### 【13†Sous-section 2 : Obligations relatives aux véhicules (Articles R3122-6 à R3122-9)】
+L119: 
+L120: Déplier/Replier
+L121: 
+L122:                 * 【14†Article R3122-6】
+L123:                 * 【15†Article R3122-7】
+L124:                 * 【16†Article R3122-8】
+L125:                 * 【17†Article R3122-9】
+L126: 
+L127: [Input]
+L128: 
+L129:   * ## 【18†Article R3122-6】
+L130: En vigueur depuis le 08 avr. 2017 En vigueur depuis le 08 avril 2017
+L131: 
+L132: 【19†Modifié par Décret n°2017-483 du 6 avril 2017 - art. 5】
+L133: Les voitures de transport avec chauffeur comportent au moins quatre et au plus neuf places, y compris celle du conducteur.
+L134: Un arrêté du ministre chargé des transports et du ministre chargé de l'économie fixe les dimensions et la puissance minimales ainsi que l'ancienneté maximale des voitures de transport avec chauffeur, autres que les véhicules hybrides et électriques mentionnés à l'article 【20†L. 3120-5】.
+L135: Par décision n°413040 du 5 juillet 2019 du Conseil d’Etat statuant au contentieux ECLI:FR:CECHR:2019:413040.201907, le décret n° 2017-483 du 6 avril 2017 relatif aux activités de transport public particulier de personnes et actualisant diverses dispositions du code des transports (NOR: DEVT1629017D) est annulé en tant qu’il n’édicte pas les dispositions nécessaires pour garantir que l’évaluation des conditions d’aptitude professionnelle des conducteurs de taxi et de voiture de transport avec chauffeur par les chambres de métiers et de l’artisanat de région respecte la liberté d’établissement.
+L136: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L137: 
+L138: [Button: Fermer ]
+L139: 
+L140:   * ## 【21†Article R3122-7】
+L141: 
+L142: En vigueur depuis le 01 janv. 2015 En vigueur depuis le 01 janvier 2015
+L143: 
+L144: 【22†Création DÉCRET n°2014-1725 du 30 décembre 2014 - art.】
+L145: 
+L146: Il est interdit d'utiliser une voiture de transport avec chauffeur qui est munie de tout ou partie des équipements spéciaux définis au I de l'article 【23†R. 3121-1】 de nature à créer une confusion avec un véhicule de taxi.
+L147: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L148: 
+L149: [Button: Fermer ]
+L150: 
+L151:   * ## 【24†Article R3122-8】
+L152: 
+L153: En vigueur depuis le 01 juil. 2017 En vigueur depuis le 01 juillet 2017
+L154: 
+L155: 【19†Modifié par Décret n°2017-483 du 6 avril 2017 - art. 5】
+L156: 
+L157: Les voitures de transport avec chauffeur sont munies d'une signalétique distinctive définie par arrêté du ministre chargé des transports et délivrée par l'Imprimerie nationale.
+L158: Le même arrêté prévoit également des dispositions spécifiques afin de permettre aux exploitants de disposer d'une signalétique temporaire en cas de recours exceptionnel à des véhicules en application du III de l'article 【25†R. 3122-1】 ou après leur inscription au registre, ou à la suite d'une mise à jour de ce dernier.
+L159: 
+L160: Décret n° 2017-483 du 6 avril 2017, article 14 I : Ces dispositions entrent en vigueur à des dates fixées par arrêté du ministre chargé des transports, et au plus tard le 1er juillet 2017.
+L161: Par décision n°413040 du 5 juillet 2019 du Conseil d’Etat statuant au contentieux ECLI:FR:CECHR:2019:413040.201907, le décret n° 2017-483 du 6 avril 2017 relatif aux activités de transport public particulier de personnes et actualisant diverses dispositions du code des transports (NOR: DEVT1629017D) est annulé en tant qu’il n’édicte pas les dispositions nécessaires pour garantir que l’évaluation des conditions d’aptitude professionnelle des conducteurs de taxi et de voiture de transport avec chauffeur par les chambres de métiers et de l’artisanat de région respecte la liberté d’établissement.
+L162: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L163: 
+L164: [Button: Fermer ]
+L165: 
+L166:   * ## 【26†Article R3122-9】
+L167: 
+L168: En vigueur depuis le 08 avr. 2017 En vigueur depuis le 08 avril 2017
+L169: 
+L170: 【19†Modifié par Décret n°2017-483 du 6 avril 2017 - art. 5】
+L171: 
+L172: La condition de capacités financières prévue à l'article L. 3122-4 est satisfaite lorsque l'exploitant de voitures de transport avec chauffeur, pour chaque véhicule utilisé de façon régulière, démontre :
+L173: -soit qu'il est propriétaire du véhicule ;
+L174: -soit qu'il justifie d'un contrat de location d'une durée d'au moins six mois ;
+L175: -soit qu'il présente une garantie financière, d'un montant égal à 1 500 euros par véhicule, accordée soit par un ou plusieurs organismes financiers agréés par l'Autorité de contrôle prudentiel et de résolution se portant caution de l'entreprise pour le montant exigible, soit par tout établissement de crédit fournissant des prestations ou disposant de succursales en France conformément aux articles L. 511-22 et L. 511-23 du code monétaire et financier, qui est habilité à fournir ce type de service ;
+L176: -soit qu'une justification de capacités financières a déjà été produite pour le véhicule conformément à l'un des trois alinéas précédents en application d'autres dispositions, notamment celles de l'article R. 3113-31.
+L177: Par décision n°413040 du 5 juillet 2019 du Conseil d’Etat statuant au contentieux ECLI:FR:CECHR:2019:413040.201907, le décret n° 2017-483 du 6 avril 2017 relatif aux activités de transport public particulier de personnes et actualisant diverses dispositions du code des transports (NOR: DEVT1629017D) est annulé en tant qu’il n’édicte pas les dispositions nécessaires pour garantir que l’évaluation des conditions d’aptitude professionnelle des conducteurs de taxi et de voiture de transport avec chauffeur par les chambres de métiers et de l’artisanat de région respecte la liberté d’établissement.
+L178: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L179: 
+L180: [Button: Fermer ]
+L181: 
+L182: Code des transports
+L183: 
+L184: En vigueur au 11/11/2026 En vigueur au 11 novembre 2026
+L185: 
+L186: [Button: Ouvrir ][Button: Réduire ]
+L187: 
+L188: Sous-section 2 : Obligations relatives aux véhicules (Articles R3122-6 à R3122-9)
+L189: 
+L190: [Input]
+L191: 
+L192: [Input: JJ/MM/AAAA]
+L193: 
+L194: [Button: Version à la date d’aujourd'hui ]
+L195: 
+L196: Imprimer la page
+L197: 
+L198: Copier le texte
+L199: 
+L200: [Button: Naviguer dans les résultats ]
+L201: 
+L202: [Input]Haut
+L203: de page
+L204: ## L'aide Légifrance
+L205: 
+L206: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L207: 
+L208:   * 【27†Une question, une suggestion ou un problème sur légifrance ?】
+L209:   * 【28†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L210:   * 【29†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L211:   * 【30†Guide des cas d'usage】
+L212: ## Abonnez-vous au Journal officiel de la République française
+L213: 
+L214: Recevez par courriel le sommaire dès sa publication.
+L215: 
+L216: 【31†En savoir plus sur la gestion de vos données et de vos droits.】
+L217: 
+L218: Votre adresse électronique (ex. : 【32†[email protected]】)
+L219: 
+L220: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L221: 
+L222: [Input]
+L223: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【33†formulaire】
+

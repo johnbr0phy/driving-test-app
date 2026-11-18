@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "R004",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asking who is the principal; owner is my expectation."
+  },
+  {
+    "id": "R005",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Essential-term definiteness sounds like the likely contract defect."
+  },
+  {
+    "id": "R009",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asking what authorizes signing for another person."
+  },
+  {
+    "id": "R016",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Deed-transfer timing is the usual installment-contract distinction."
+  },
+  {
+    "id": "R022",
+    "answer": "A",
+    "cueType": "surface",
+    "cue": "Only commitment actually satisfies the clause; alternatives are preliminary or estimates."
+  },
+  {
+    "id": "R037",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Knowledge of falsity distinguishes intentional fraud."
+  },
+  {
+    "id": "R039",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Pending real estate performance is commonly tested as executory."
+  },
+  {
+    "id": "R043",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Only plausible legal distinction; other choices assert implausible transformations."
+  },
+  {
+    "id": "R048",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Third-party reliance suggests likely apparent-authority question."
+  },
+  {
+    "id": "R052",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Option contracts commonly appear in unilateral-right questions."
+  },
+  {
+    "id": "R053",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Assignment alone does not discharge assignor; likely asking for incorrect statement."
+  },
+  {
+    "id": "R057",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Confidential negotiating information differs from disclosable material defects."
+  },
+  {
+    "id": "R059",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asking about an agreed breach remedy."
+  },
+  {
+    "id": "R061",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Voidable is typical for defects in assent; no stem to distinguish."
+  },
+  {
+    "id": "R067",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Apparent authority depends on principal manifestations."
+  },
+  {
+    "id": "R068",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Specific performance is a frequently tested real estate remedy."
+  },
+  {
+    "id": "R077",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Care and oversight is the most responsibility-oriented choice."
+  },
+  {
+    "id": "R090",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Only urgent protective action among discretionary improvements."
+  },
+  {
+    "id": "R093",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Personal-account dealing is the clearest conflict of interest."
+  },
+  {
+    "id": "R094",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Property management is generally general agency within delegated business."
+  },
+  {
+    "id": "R101",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Instrument wording makes me anticipate a correction-of-writing scenario."
+  },
+  {
+    "id": "R104",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely unwinding bargain and returning consideration; uncertain without stem."
+  },
+  {
+    "id": "R122",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Signing acceptance requires authority beyond ordinary brokerage acts."
+  },
+  {
+    "id": "R123",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Representation follows agency relationship rather than who pays commission."
+  },
+  {
+    "id": "R129",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Purchase contracts generally exchange promises and are bilateral."
+  },
+  {
+    "id": "R136",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Executed versus executory is likely performance-status distinction."
+  },
+  {
+    "id": "R151",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Only choice expressly describing enforceable mutual commitment."
+  },
+  {
+    "id": "R154",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Revocation is a likely termination mechanism being defined."
+  },
+  {
+    "id": "R162",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Subsequent approval of an act is a frequent agency question."
+  },
+  {
+    "id": "R173",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Unusual inquiry/qualified acceptance pairing suggests offer-negotiation distinction."
+  },
+  {
+    "id": "R175",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Express receipt condition can override ordinary mailing rule."
+  },
+  {
+    "id": "R180",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Agreed contractual right sounds legitimate; alternatives lack connection."
+  },
+  {
+    "id": "R187",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Changed offer terms typically create a counteroffer."
+  },
+  {
+    "id": "R188",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Apparent versus actual authority is the likely scenario distinction."
+  },
+  {
+    "id": "R199",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Novation is commonly tested for substitution and release."
+  },
+  {
+    "id": "R200",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely classifying changed terms as modification."
+  },
+  {
+    "id": "R008",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Only careful assessment response; others improperly dismiss missing evidence."
+  },
+  {
+    "id": "R010",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Relevant-record inclusion is reasonable; other exclusions sound arbitrary."
+  },
+  {
+    "id": "R014",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Only listed house predates the 1978 lead-paint threshold."
+  },
+  {
+    "id": "R025",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Lead inspection opportunity can be changed by mutual agreement."
+  },
+  {
+    "id": "R032",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely knowing purchaser contamination scenario; other protections explicitly require no knowledge or lien."
+  },
+  {
+    "id": "R035",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Qualified residual-risk statement versus categorical assurances."
+  },
+  {
+    "id": "R042",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Lead disclosure must precede contractual obligation."
+  },
+  {
+    "id": "R056",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely lead disclosure record retention, remembered as three years."
+  },
+  {
+    "id": "R060",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Recognize EPA radon action level of 4 pCi/L."
+  },
+  {
+    "id": "R062",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Section 404 wetlands permit is a common broker environment topic."
+  },
+  {
+    "id": "R081",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely describing sealing asbestos; no stem distinguishes methods."
+  },
+  {
+    "id": "R085",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Purchaser expertise and price are purchaser-specific inquiry considerations unlike historical records."
+  },
+  {
+    "id": "R089",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Lead disclosure generally discloses known information without compulsory new testing."
+  },
+  {
+    "id": "R095",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Only realistic ongoing-obligation answer among implausible absolutes."
+  },
+  {
+    "id": "R110",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Direct testing beats averages and extrapolations."
+  },
+  {
+    "id": "R130",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Moisture sustains mold recurrence; other claims are false or unreasonable."
+  },
+  {
+    "id": "R133",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely FEMA Zone D question; undetermined risk."
+  },
+  {
+    "id": "R134",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "CERCLA is likely statute in contamination-liability question."
+  },
+  {
+    "id": "R152",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Federal tank exclusions do not preclude state or local regulation."
+  },
+  {
+    "id": "R163",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Recognize typical radon testing placement guidance."
+  },
+  {
+    "id": "R167",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Intact asbestos often best left undisturbed and monitored."
+  },
+  {
+    "id": "R169",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "No general EPA federal indoor mold spore clearance limit."
+  },
+  {
+    "id": "R172",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Wetland mitigation sequence considers avoidance before compensation."
+  },
+  {
+    "id": "R184",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Only ordinary coverage requirement; other options substitute irrelevant conditions."
+  },
+  {
+    "id": "R015",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "APR is likely all-in borrowing-cost measure being asked."
+  },
+  {
+    "id": "R038",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Actual services distinguish legitimate compensation from referral payments."
+  },
+  {
+    "id": "R049",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely defining ARM margin, a contractual increment."
+  },
+  {
+    "id": "R055",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Modest preliminary disclosure claim contrasts with unjustified finality."
+  },
+  {
+    "id": "R069",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asking which document evidences debt."
+  },
+  {
+    "id": "R073",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Referral understanding is the distinctive prohibited compensation cue."
+  },
+  {
+    "id": "R087",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "VA benefit does not remove lender credit/income qualification."
+  },
+  {
+    "id": "R097",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Adding prepayment penalty triggers renewed closing disclosure waiting period."
+  },
+  {
+    "id": "R108",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Recognize closing disclosure three-business-day rule."
+  },
+  {
+    "id": "R116",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "USDA housing eligibility involves primary residence and eligible rural location."
+  },
+  {
+    "id": "R120",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asking funds needed at settlement; no stem establishes it."
+  },
+  {
+    "id": "R125",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely distinguishing conventional from government-backed mortgage."
+  },
+  {
+    "id": "R145",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Mortgage insurance protects lender loss."
+  },
+  {
+    "id": "R159",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Negative amortization is frequently tested when balance rises."
+  },
+  {
+    "id": "R161",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Pension income should be evaluated for continuity without categorical exclusion."
+  },
+  {
+    "id": "R164",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Only plausible cost consequence of financing a charge; alternatives promise implausible elimination."
+  },
+  {
+    "id": "R165",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Escrow contribution can change despite a fixed note rate."
+  },
+  {
+    "id": "R174",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely parcel release under blanket loan; most distinctive choice."
+  },
+  {
+    "id": "R193",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Short maturity with longer amortization implies balloon payment."
+  },
+  {
+    "id": "R196",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asking about prepaid interest/rate reduction points."
+  },
+  {
+    "id": "R001",
+    "answer": "A",
+    "cueType": "none",
+    "cue": "No units or inputs; 140 is a weak selection without a substantive basis."
+  },
+  {
+    "id": "R012",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No calculation possible; choose 212500 with very low confidence."
+  },
+  {
+    "id": "R021",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "1200 looks like monthly conversion from annual 14400."
+  },
+  {
+    "id": "R033",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Assume taxes in arrears and seller debit; amount cannot be determined."
+  },
+  {
+    "id": "R040",
+    "answer": "D",
+    "cueType": "none",
+    "cue": "No inputs; 48000 is an unsupported selection."
+  },
+  {
+    "id": "R046",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "Cannot determine acreage; weak choice of four acres."
+  },
+  {
+    "id": "R047",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "5400 could be net area after deducting from 6000; speculative."
+  },
+  {
+    "id": "R054",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "5400 looks like a commission share after splitting 6750."
+  },
+  {
+    "id": "R065",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "123500 is more specific than round distractors, tempting a calculated-result inference."
+  },
+  {
+    "id": "R072",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No inputs distinguish values; choose 7800 tentatively."
+  },
+  {
+    "id": "R075",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "185000 may be net equity after subtracting loan and costs; speculative."
+  },
+  {
+    "id": "R078",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Equal percentage increase and decrease do not cancel; 297000 matches 10% changes on 300000."
+  },
+  {
+    "id": "R083",
+    "answer": "D",
+    "cueType": "none",
+    "cue": "No savings or costs; 30 months is unsupported."
+  },
+  {
+    "id": "R105",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "588000 seems correctly scaled versus 5880 and million-dollar alternatives."
+  },
+  {
+    "id": "R126",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No basis for calculation; tentative 125000."
+  },
+  {
+    "id": "R127",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No transaction amounts; tentative 27500."
+  },
+  {
+    "id": "R138",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "2020 looks like a combined payment while 7980 is an outlier; weak specificity cue."
+  },
+  {
+    "id": "R149",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "No inputs; weak choice of 77000."
+  },
+  {
+    "id": "R178",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "8% resembles plausible cap rate, with reciprocal 12.5% and decimal-error 0.8% distractors."
+  },
+  {
+    "id": "R186",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "4000 looks like base calculation, with decimal-error 400 and 40000 alternatives."
+  },
+  {
+    "id": "R011",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Broker professional negligence is a common insurance question."
+  },
+  {
+    "id": "R017",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Familial status is the distinctive exemption category for qualifying older-person housing."
+  },
+  {
+    "id": "R019",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Segregating families into one wing is discriminatory steering."
+  },
+  {
+    "id": "R020",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "MLS shares listing information, not uniform commission setting."
+  },
+  {
+    "id": "R023",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Exclusive right-to-sell is the common commission-regardless-of-procurer question."
+  },
+  {
+    "id": "R024",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Coordination restraining price competition is antitrust concern."
+  },
+  {
+    "id": "R026",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asking individual beneficiary accounting versus account-wide record."
+  },
+  {
+    "id": "R041",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely measuring advertising effectiveness; others operational metrics."
+  },
+  {
+    "id": "R044",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Recognize 31-day do-not-call registry update interval; stem could ask other time limits."
+  },
+  {
+    "id": "R045",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No inputs; 19800 is tentative and unsupported."
+  },
+  {
+    "id": "R051",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Net account totals do not cure an individual beneficiary shortage."
+  },
+  {
+    "id": "R058",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Fundamental alteration can justify denying accommodation; mere rule deviation cannot."
+  },
+  {
+    "id": "R063",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Scheduled servicing before failure defines preventive maintenance."
+  },
+  {
+    "id": "R064",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Price agreement, not merely matching prices, matters for collusion."
+  },
+  {
+    "id": "R066",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely fair housing enforcement agency question."
+  },
+  {
+    "id": "R070",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Entity-specific do-not-call request overrides established business relationship."
+  },
+  {
+    "id": "R082",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely omitted receipt in beneficiary ledger; direction still depends on stem."
+  },
+  {
+    "id": "R088",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Direct-threat assessment requires individualized facts, not stereotypes."
+  },
+  {
+    "id": "R096",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Competing effective rents inform market rental pricing."
+  },
+  {
+    "id": "R100",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Religion is the listed federal Fair Housing Act protected class."
+  },
+  {
+    "id": "R103",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "Missing economic inputs; renewal by 600 is weak selection."
+  },
+  {
+    "id": "R107",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Actual comparison with suppression lists verifies behavior; assurances alone do not."
+  },
+  {
+    "id": "R113",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Tailored legal drafting should be handled by counsel."
+  },
+  {
+    "id": "R128",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "15% over is likely percent increase with 115% whole-total distractor."
+  },
+  {
+    "id": "R131",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Management compensation most likely governed by management agreement."
+  },
+  {
+    "id": "R142",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "False availability can violate fair housing even if offered prices match."
+  },
+  {
+    "id": "R146",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Least necessary access is the clearly sensible security option."
+  },
+  {
+    "id": "R147",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely owner sells independently under exclusive agency; no stem confirms."
+  },
+  {
+    "id": "R156",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Professional liability likely covers broker advice/negligence."
+  },
+  {
+    "id": "R168",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Net listing creates incentive to understate achievable seller proceeds."
+  },
+  {
+    "id": "R176",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "6510 looks like calculated fee after adjustment rather than round distractors."
+  },
+  {
+    "id": "R185",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Racial steering is a commonly tested broker conduct scenario."
+  },
+  {
+    "id": "R002",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Unattached table is personalty while other items are realty or fixtures."
+  },
+  {
+    "id": "R003",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Encumbrance is not a bundle-of-rights component like the other three."
+  },
+  {
+    "id": "R007",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely government taking question."
+  },
+  {
+    "id": "R018",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Special assessments are generally tied to benefit received."
+  },
+  {
+    "id": "R050",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Express agreement commonly controls fixture treatment between parties."
+  },
+  {
+    "id": "R074",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Situs is likely location-preference term sought."
+  },
+  {
+    "id": "R106",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely zoning authority question, answered police power."
+  },
+  {
+    "id": "R112",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely survey encroachment issue; alternatives plausible with different facts."
+  },
+  {
+    "id": "R114",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asking benefited parcel in easement relationship."
+  },
+  {
+    "id": "R115",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Appurtenant easement runs with benefited land."
+  },
+  {
+    "id": "R117",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Harvesting trees is severance converting realty to personalty."
+  },
+  {
+    "id": "R118",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Cautious unresolved-identity answer versus insufficient shortcuts."
+  },
+  {
+    "id": "R121",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely personal utility easement rather than benefited parcel."
+  },
+  {
+    "id": "R124",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Trade fixtures are distinctive removable tenant business property."
+  },
+  {
+    "id": "R140",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Price direction depends on relative supply and demand shifts, not one count alone."
+  },
+  {
+    "id": "R141",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Zoning and private covenants can both constrain property use."
+  },
+  {
+    "id": "R148",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely reference line for east-west ranges; baseline also plausible without stem."
+  },
+  {
+    "id": "R153",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely severed mineral-rights issue; no stem distinguishes alternatives."
+  },
+  {
+    "id": "R160",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Recorded grant scope controls easement extent."
+  },
+  {
+    "id": "R179",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Escheat is likely no-heirs property transfer concept."
+  },
+  {
+    "id": "R183",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Metes-and-bounds description closes at point of beginning."
+  },
+  {
+    "id": "R191",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Land immobility is likely physical characteristic being tested."
+  },
+  {
+    "id": "R197",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Agreement on removal can control fixture rights."
+  },
+  {
+    "id": "R198",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely lot-and-block recorded plat description question."
+  },
+  {
+    "id": "R013",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Fixed-duration tenancy is a common estate-for-years question."
+  },
+  {
+    "id": "R027",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely quitclaim by someone with no estate; options otherwise overpromise title."
+  },
+  {
+    "id": "R029",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Marketable title is free of reasonable objections, not every encumbrance."
+  },
+  {
+    "id": "R036",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely defining periodic tenancy."
+  },
+  {
+    "id": "R079",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely missing chain-of-title conveyance from Allen to Blake."
+  },
+  {
+    "id": "R080",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Lessor retains reversion in leased premises."
+  },
+  {
+    "id": "R084",
+    "answer": "A",
+    "cueType": "none",
+    "cue": "Names reveal nothing about measuring life; Lee is an unsupported selection."
+  },
+  {
+    "id": "R086",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Grant and survey are likely needed to evaluate easement interference."
+  },
+  {
+    "id": "R092",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Easement is nonmonetary encumbrance unlike listed liens."
+  },
+  {
+    "id": "R098",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Reconveyance releases deed-of-trust security after payoff."
+  },
+  {
+    "id": "R102",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely survivorship scenario outside probate; names alone cannot establish tenancy."
+  },
+  {
+    "id": "R109",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Express title covenants distinguish warranty deed but are not required in every deed."
+  },
+  {
+    "id": "R111",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely ownership terminable on condition, determinable fee."
+  },
+  {
+    "id": "R132",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Fractional ownership alone does not allocate physical possession."
+  },
+  {
+    "id": "R143",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Defeasible ownership may be forfeited upon condition breach."
+  },
+  {
+    "id": "R155",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Direct explanation creates actual rather than constructive notice."
+  },
+  {
+    "id": "R170",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Occupant rights require examining agreement, likely purchaser inquiry notice scenario."
+  },
+  {
+    "id": "R171",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asking protection of purchaser title interest."
+  },
+  {
+    "id": "R177",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Warranty deed conveys ownership; note and security instruments serve different functions."
+  },
+  {
+    "id": "R195",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Affected principals agreeing is the legitimate source of changed instructions."
+  },
+  {
+    "id": "R006",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely gross multiplier limitation ignoring expense differences."
+  },
+  {
+    "id": "R028",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely final highest-and-best-use criterion after other tests."
+  },
+  {
+    "id": "R030",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Appraisal depreciation means loss in value from any cause."
+  },
+  {
+    "id": "R031",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely inverse value/cap-rate relationship; direction depends on missing stem."
+  },
+  {
+    "id": "R034",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Potential gross income is likely starting income measure."
+  },
+  {
+    "id": "R071",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Distinctive cash-equivalent adjustment suggests seller financing concession scenario."
+  },
+  {
+    "id": "R076",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Substitution is frequently tested foundational appraisal principle."
+  },
+  {
+    "id": "R091",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Market value is likely desired estimate contrasted with price and cost."
+  },
+  {
+    "id": "R099",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Highest net return 610000 appears best if equally feasible, though assumptions unavailable."
+  },
+  {
+    "id": "R119",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely special-purpose/new-building cost approach question."
+  },
+  {
+    "id": "R135",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Property tax is relatively fixed unlike turnover/usage-driven expenses."
+  },
+  {
+    "id": "R137",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Comparable is adjusted rather than subject; subtraction assumes superior comparable."
+  },
+  {
+    "id": "R139",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely distinguishing obsolete layout from physical wear."
+  },
+  {
+    "id": "R144",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Future benefits imply anticipation principle."
+  },
+  {
+    "id": "R150",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "Cannot compute; 475000 is tentative."
+  },
+  {
+    "id": "R157",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely outdated design example of functional obsolescence."
+  },
+  {
+    "id": "R158",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Contribution commonly distinguishes added value from improvement cost."
+  },
+  {
+    "id": "R166",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely non-arm-length sale conditions adjustment."
+  },
+  {
+    "id": "R181",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Debt service is excluded from NOI operating expenses."
+  },
+  {
+    "id": "R182",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely economical correction of design defect; facts absent."
+  },
+  {
+    "id": "R189",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Effective age reflects condition rather than calendar age."
+  },
+  {
+    "id": "R190",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely annual/monthly multiplier mismatch yielding factor twelve; direction unknown."
+  },
+  {
+    "id": "R192",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely equivalent utility modern replacement rather than exact reproduction."
+  },
+  {
+    "id": "R194",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No inputs to calculate contribution; 40000 is unsupported."
+  }
+]

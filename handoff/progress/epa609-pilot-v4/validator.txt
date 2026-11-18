@@ -1,0 +1,24 @@
+lang en  len-scale 1.0  rows 14  categories {'epa609Service': 4, 'epa609Equipment': 4, 'epa609Rules': 4, 'epa609Yf': 2}
+letters {'B': 3, 'C': 3, 'D': 4, 'A': 4}  avg option 35 chars  key-longest 21%  key>1.2x 7%
+FAIL: EPA609-SRV-031: expected SRV-001
+FAIL: EPA609-SRV-022: expected SRV-032
+FAIL: EPA609-EQP-013: expected EQP-001
+FAIL: EPA609-EQP-011: expected EQP-014
+FAIL: EPA609-REG-026: expected REG-001
+FAIL: EPA609-EQP-022: expected EQP-012
+FAIL: EPA609-EQP-022: category epa609Equipment not contiguous
+FAIL: EPA609-SRV-026: expected SRV-023
+FAIL: EPA609-SRV-026: category epa609Service not contiguous
+FAIL: EPA609-REG-004: expected REG-027
+FAIL: EPA609-REG-004: category epa609Rules not contiguous
+FAIL: EPA609-EQP-024: expected EQP-023
+FAIL: EPA609-EQP-024: category epa609Equipment not contiguous
+FAIL: EPA609-REG-015: expected REG-005
+FAIL: EPA609-REG-015: category epa609Rules not contiguous
+FAIL: EPA609-YF-006: expected YF-001
+FAIL: EPA609-YF-014: expected YF-007
+FAIL: EPA609-SRV-029: expected SRV-027
+FAIL: EPA609-SRV-029: category epa609Service not contiguous
+FAIL: EPA609-REG-028: expected REG-016
+FAIL: EPA609-REG-028: category epa609Rules not contiguous
+FAIL (21 errors)

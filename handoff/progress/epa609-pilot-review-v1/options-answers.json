@@ -1,0 +1,86 @@
+[
+  {
+    "id": "R001",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Recovery filters commonly have a refrigerant-throughput capacity; mass processed is a recognizable replacement criterion."
+  },
+  {
+    "id": "R002",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Anticipating a question about the vehicle refrigerant charge specification, for which the factory underhood label is a familiar reference. Other maintenance questions could favor the manual or component instructions."
+  },
+  {
+    "id": "R003",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "The training-program subject review is the only option directly about training rather than a service operation, machine, or refrigerant batch, making it stand out in a certification rules category."
+  },
+  {
+    "id": "R004",
+    "answer": "D",
+    "cueType": "none",
+    "cue": "No stem or numerical relationship is available to distinguish these volumes. I choose 20 mL without a substantive basis."
+  },
+  {
+    "id": "R005",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Anticipating a question about an approved solvent or refrigerant property: compatibility with system materials seems the broadest relevant criterion. The omitted stem is needed to distinguish the procedures."
+  },
+  {
+    "id": "R006",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Passenger-car repair that opens a system is the canonical Section 609 service scenario, so I anticipate a question about that coverage; top-offs and off-road distinctions could change the answer."
+  },
+  {
+    "id": "R007",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Saturated desiccant generally requires replacement rather than a longer evacuation, a recognizable moisture-service principle that could explain this option set."
+  },
+  {
+    "id": "R008",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "I associate responsibility for ensuring used MVAC refrigerant is suitable for reuse with the facility charging the receiving vehicle; the exact transfer or recycling rule would depend on the stem."
+  },
+  {
+    "id": "R009",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "The explicit initial 15 percent charge option suggests the standard partial-charge leak-check sequence; I anticipate the question asks what follows a successful check."
+  },
+  {
+    "id": "R010",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Three choices describe electrical or motor hazards and one describes retained pressure. I anticipate a question about a hazard remaining after unplugging equipment."
+  },
+  {
+    "id": "R011",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "The resale-only intent record is unusually specific to the refrigerant purchase exception, which I anticipate is the rule being tested. The alternatives would be relevant to other recordkeeping prompts."
+  },
+  {
+    "id": "R012",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Recovered refrigerant commonly requires recycling or reclamation before reuse; that is a recognizable treatment requirement among handling and inspection actions."
+  },
+  {
+    "id": "R013",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Anticipating a skin-contact or frostbite question, for which rapid evaporation causes cooling. The other choices fit different exposure or ignition questions."
+  },
+  {
+    "id": "R014",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Anticipating a low-level accumulation or ventilation question about R-1234yf vapor, for which greater density than air explains the behavior. The other listed physical properties could also answer suitable stems."
+  }
+]

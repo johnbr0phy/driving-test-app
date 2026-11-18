@@ -1,0 +1,1802 @@
+[
+  {
+    "questionId": "CDM-NUT-001",
+    "category": "cdmNutrition",
+    "question": "A resident reports eating well, but three meal records show most food returned. What would best clarify the discrepancy?",
+    "optionA": "Observe a meal directly",
+    "optionB": "Repeat the admission weight",
+    "optionC": "Copy the reported appetite",
+    "optionD": "Change the prescribed diet"
+  },
+  {
+    "questionId": "CDM-NUT-002",
+    "category": "cdmNutrition",
+    "question": "A new resident has several long-term medicines and unexplained appetite changes. Which collaboration best evaluates possible food-drug interactions?",
+    "optionA": "Dietitian and speech therapist",
+    "optionB": "Dietitian and pharmacist",
+    "optionC": "Nurse and occupational therapist",
+    "optionD": "Physician and physical therapist"
+  },
+  {
+    "questionId": "CDM-NUT-003",
+    "category": "cdmNutrition",
+    "question": "Which entry provides the most useful evidence for a nutrition follow-up?",
+    "optionA": "Lunch entree offered as planned",
+    "optionB": "Usual appetite reported on admission",
+    "optionC": "Ate 25% of lunch entree",
+    "optionD": "Entree portion met the menu plan"
+  },
+  {
+    "questionId": "CDM-NUT-004",
+    "category": "cdmNutrition",
+    "question": "A supplement ordered twice daily reaches the room, but unopened containers accumulate. What should be measured next?",
+    "optionA": "Number of cartons delivered",
+    "optionB": "Nutrients listed on each carton",
+    "optionC": "Number of days since ordering",
+    "optionD": "Amount actually consumed"
+  },
+  {
+    "questionId": "CDM-NUT-005",
+    "category": "cdmNutrition",
+    "question": "A resident asks for a culturally familiar breakfast that fits the current prescription. Which response best meets the nutrition plan?",
+    "optionA": "Offer an approved equivalent",
+    "optionB": "Keep the standard selection",
+    "optionC": "Require a different diagnosis",
+    "optionD": "Replace the entire diet order"
+  },
+  {
+    "questionId": "CDM-NUT-006",
+    "category": "cdmNutrition",
+    "question": "An intake interview is intended to describe yesterday rather than usual monthly habits. Which method fits?",
+    "optionA": "A food-frequency questionnaire",
+    "optionB": "A 24-hour dietary recall",
+    "optionC": "A six-month weight comparison",
+    "optionD": "A weekly purchasing summary"
+  },
+  {
+    "questionId": "CDM-NUT-007",
+    "category": "cdmNutrition",
+    "question": "A client cannot describe usual meals reliably. Which source adds useful history?",
+    "optionA": "The admitting transport driver",
+    "optionB": "The receiving foodservice clerk",
+    "optionC": "A caregiver who assists meals",
+    "optionD": "A relative who visits annually"
+  },
+  {
+    "questionId": "CDM-NUT-008",
+    "category": "cdmNutrition",
+    "question": "A resident weighs 152 lb now and weighed 160 lb one month ago. What percentage of the previous weight was lost?",
+    "optionA": "8%",
+    "optionB": "10%",
+    "optionC": "12%",
+    "optionD": "5%"
+  },
+  {
+    "questionId": "CDM-NUT-009",
+    "category": "cdmNutrition",
+    "question": "A care plan specifies a fluid restriction. What should the dietary manager document for meal service?",
+    "optionA": "How the allowance is allocated",
+    "optionB": "The usual beverage order alone",
+    "optionC": "Only fluids offered at breakfast",
+    "optionD": "A standard limit for all clients"
+  },
+  {
+    "questionId": "CDM-NUT-010",
+    "category": "cdmNutrition",
+    "question": "A meal supplies 600 kcal when eaten completely. A resident consumes exactly half of every component. What intake is recorded?",
+    "optionA": "150 kcal",
+    "optionB": "300 kcal",
+    "optionC": "450 kcal",
+    "optionD": "600 kcal"
+  },
+  {
+    "questionId": "CDM-NUT-011",
+    "category": "cdmNutrition",
+    "question": "A resident develops coughing during meals and difficulty managing the current texture. Who should help evaluate swallowing needs?",
+    "optionA": "Occupational safety specialist",
+    "optionB": "Registered pharmacy technician",
+    "optionC": "Speech-language pathologist",
+    "optionD": "Foodservice quality coordinator"
+  },
+  {
+    "questionId": "CDM-NUT-012",
+    "category": "cdmNutrition",
+    "question": "The tray card lists yesterday's diet, while a verified new order has arrived. What corrects the immediate meal-service risk?",
+    "optionA": "Wait for the next menu cycle",
+    "optionB": "Keep both versions in rotation",
+    "optionC": "Ask the resident to pick a code",
+    "optionD": "Update the service instructions"
+  },
+  {
+    "questionId": "CDM-NUT-013",
+    "category": "cdmNutrition",
+    "question": "A family says a resident avoids pork for religious reasons. Which next step best individualizes meals?",
+    "optionA": "Confirm choices with the resident",
+    "optionB": "Assume all meat is prohibited",
+    "optionC": "Use a universal vegetarian menu",
+    "optionD": "Remove every dairy selection"
+  },
+  {
+    "questionId": "CDM-NUT-014",
+    "category": "cdmNutrition",
+    "question": "Which goal lets the care team evaluate a planned nutrition intervention?",
+    "optionA": "Develop a much better attitude",
+    "optionB": "Consume 75% of lunch for 7 days",
+    "optionC": "Enjoy all available selections",
+    "optionD": "Receive satisfactory nutrition"
+  },
+  {
+    "questionId": "CDM-NUT-015",
+    "category": "cdmNutrition",
+    "question": "A resident has a new wound. What is the appropriate use of this information during routine screening?",
+    "optionA": "Diagnose a vitamin deficiency",
+    "optionB": "Prescribe a protein supplement",
+    "optionC": "Flag risk for dietitian follow-up",
+    "optionD": "Calculate a new drug dosage"
+  },
+  {
+    "questionId": "CDM-NUT-016",
+    "category": "cdmNutrition",
+    "question": "Which tool best describes how often a resident usually eats selected foods over a month?",
+    "optionA": "Single-meal observation form",
+    "optionB": "Daily refrigerator temperature log",
+    "optionC": "One-time admission weight",
+    "optionD": "Food-frequency questionnaire"
+  },
+  {
+    "questionId": "CDM-NUT-017",
+    "category": "cdmNutrition",
+    "question": "A kitchen replaces a recipe ingredient with a different product. Before using the nutrient analysis for a therapeutic menu, what needs checking?",
+    "optionA": "The revised nutrient values",
+    "optionB": "The original purchase price",
+    "optionC": "The previous recipe yield alone",
+    "optionD": "The unchanged menu description"
+  },
+  {
+    "questionId": "CDM-NUT-018",
+    "category": "cdmNutrition",
+    "question": "Which question best starts an interview about a client's food preferences?",
+    "optionA": "You like our lunches, right?",
+    "optionB": "Which meals do you enjoy?",
+    "optionC": "Why are you so selective?",
+    "optionD": "Everyone eats this, correct?"
+  },
+  {
+    "questionId": "CDM-NUT-019",
+    "category": "cdmNutrition",
+    "question": "A resident's nutrition plan has been in use for a month. What best determines whether it is working?",
+    "optionA": "Completion of the initial interview",
+    "optionB": "Delivery of the planned meals alone",
+    "optionC": "Progress toward agreed goals",
+    "optionD": "Agreement on the admission diagnosis"
+  },
+  {
+    "questionId": "CDM-NUT-020",
+    "category": "cdmNutrition",
+    "question": "A 240 mL beverage is one-quarter consumed. How much should the intake record show?",
+    "optionA": "90 mL",
+    "optionB": "120 mL",
+    "optionC": "180 mL",
+    "optionD": "60 mL"
+  },
+  {
+    "questionId": "CDM-NUT-021",
+    "category": "cdmNutrition",
+    "question": "Before a care conference, which preparation gives the CDM the best basis for contributing?",
+    "optionA": "Review recent intake and progress",
+    "optionB": "Rewrite all clinical diagnoses",
+    "optionC": "Replace the existing prescription",
+    "optionD": "Order supplements for everyone"
+  },
+  {
+    "questionId": "CDM-NUT-022",
+    "category": "cdmNutrition",
+    "question": "A client declines an offered therapeutic entree. What is the best initial response within the CDM role?",
+    "optionA": "Record a new medical diagnosis",
+    "optionB": "Discuss acceptable alternatives",
+    "optionC": "Cancel all remaining meal choices",
+    "optionD": "Withhold the next scheduled snack"
+  },
+  {
+    "questionId": "CDM-NUT-023",
+    "category": "cdmNutrition",
+    "question": "The same resident has recorded weights of 150, 149,and 130 lb on three consecutive days, with no documented acute change. What is the priority before interpreting the trend?",
+    "optionA": "Calculate a new menu immediately",
+    "optionB": "Use the lowest figure permanently",
+    "optionC": "Verify the unexpected measurement",
+    "optionD": "Delete the two earlier results"
+  },
+  {
+    "questionId": "CDM-NUT-024",
+    "category": "cdmNutrition",
+    "question": "A prescribed nourishment is consistently disliked. Which replacement process is appropriate?",
+    "optionA": "Choose the cheapest drink available",
+    "optionB": "Remove nourishment without review",
+    "optionC": "Double the disliked portion size",
+    "optionD": "Review a suitable option with the team"
+  },
+  {
+    "questionId": "CDM-NUT-025",
+    "category": "cdmNutrition",
+    "question": "Which record is most useful for checking the foodservice response to an individualized diet prescription?",
+    "optionA": "Current tray card and diet manual",
+    "optionB": "Production tally and staffing roster",
+    "optionC": "Purchase order and inventory sheet",
+    "optionD": "Cycle-menu calendar and cost report"
+  },
+  {
+    "questionId": "CDM-NUT-026",
+    "category": "cdmNutrition",
+    "question": "A meal contains 30 g of a nutrient, but the client consumes two-thirds of each food. What is the calculated intake of that nutrient?",
+    "optionA": "10 g",
+    "optionB": "20 g",
+    "optionC": "15 g",
+    "optionD": "45 g"
+  },
+  {
+    "questionId": "CDM-NUT-027",
+    "category": "cdmNutrition",
+    "question": "A client answers slowly and uses gestures during an interview. What best improves collection of accurate information?",
+    "optionA": "Ask several questions at once",
+    "optionB": "Treat silence as full agreement",
+    "optionC": "Adapt the pace and communication",
+    "optionD": "Direct every answer to a visitor"
+  },
+  {
+    "questionId": "CDM-NUT-028",
+    "category": "cdmNutrition",
+    "question": "A staff member proposes discussing a resident's intake problem in a public elevator. Where should the discussion occur instead?",
+    "optionA": "The public reception counter",
+    "optionB": "The busy cafeteria checkout",
+    "optionC": "The open visitor waiting area",
+    "optionD": "A private care-team setting"
+  },
+  {
+    "questionId": "CDM-NUT-029",
+    "category": "cdmNutrition",
+    "question": "An approved fortified-food intervention is used to increase intake. Which evidence best supports continuing it?",
+    "optionA": "Acceptance and measurable progress",
+    "optionB": "Its popularity on another unit",
+    "optionC": "Its inclusion on the printed menu",
+    "optionD": "Its higher nutrient content alone"
+  },
+  {
+    "questionId": "CDM-NUT-030",
+    "category": "cdmNutrition",
+    "question": "A resident's fluid record excludes drinks provided between meals. What change improves the record?",
+    "optionA": "Count only beverages on trays",
+    "optionB": "Include all observed oral intake",
+    "optionC": "Replace amounts with appetite scores",
+    "optionD": "Record only fluids from breakfast"
+  },
+  {
+    "questionId": "CDM-NUT-031",
+    "category": "cdmNutrition",
+    "question": "A care conference agrees on new nourishment timing and assigns staff responsibilities. What should the CDM do with those decisions?",
+    "optionA": "Wait until the next survey",
+    "optionB": "Retain them only in memory",
+    "optionC": "Record actions and follow-up",
+    "optionD": "Record only the meeting length"
+  },
+  {
+    "questionId": "CDM-NUT-032",
+    "category": "cdmNutrition",
+    "question": "The dietitian approves a menu substitution. Which detail still needs checking before promising it to a resident?",
+    "optionA": "The original invoice unit price",
+    "optionB": "The preference of the tray assembler",
+    "optionC": "The quantity ordered last month",
+    "optionD": "Availability in the facility"
+  },
+  {
+    "questionId": "CDM-NUT-033",
+    "category": "cdmNutrition",
+    "question": "A three-day calorie count gives 1500, 1800,and 1500 kcal. What is the daily average?",
+    "optionA": "1600 kcal",
+    "optionB": "1500 kcal",
+    "optionC": "1700 kcal",
+    "optionD": "1800 kcal"
+  },
+  {
+    "questionId": "CDM-NUT-034",
+    "category": "cdmNutrition",
+    "question": "A resident asks why a food is limited on the prescribed menu. Which approach best supports basic nutrition education?",
+    "optionA": "Discuss another resident's diagnosis",
+    "optionB": "Explain the order in plain language",
+    "optionC": "Provide a new medical treatment",
+    "optionD": "Promise the restriction is permanent"
+  },
+  {
+    "questionId": "CDM-NUT-035",
+    "category": "cdmNutrition",
+    "question": "Which finding is most relevant to a nutrition screening review after admission?",
+    "optionA": "A preference for a different table",
+    "optionB": "A request for a later visitor time",
+    "optionC": "New difficulty eating usual meals",
+    "optionD": "A change in preferred napkin color"
+  },
+  {
+    "questionId": "CDM-NUT-036",
+    "category": "cdmNutrition",
+    "question": "A resident on a texture-modified diet is served the correct calories but an unsuitable consistency. How should the tray be evaluated?",
+    "optionA": "It passes because calories match",
+    "optionB": "It passes if the serving is small",
+    "optionC": "It fails only if the meal is cold",
+    "optionD": "It fails the prescribed meal plan"
+  },
+  {
+    "questionId": "CDM-NUT-037",
+    "category": "cdmNutrition",
+    "question": "A nutrition education session is planned for a client who already knows basic food groups. What should be assessed to make teaching useful?",
+    "optionA": "Current knowledge and specific needs",
+    "optionB": "Reading level with no knowledge check",
+    "optionC": "Topics from the previous class",
+    "optionD": "A standard lesson for every client"
+  },
+  {
+    "questionId": "CDM-NUT-038",
+    "category": "cdmNutrition",
+    "question": "A new medical condition may make the existing restricted menu inappropriate. What should the CDM arrange?",
+    "optionA": "Automatic removal of restrictions",
+    "optionB": "Clinical review of diet suitability",
+    "optionC": "Independent diagnosis from the menu",
+    "optionD": "Replacement of all prescribed foods"
+  },
+  {
+    "questionId": "CDM-NUT-039",
+    "category": "cdmNutrition",
+    "question": "An intake record says a client ate all of breakfast, but the plate was never observed. Which correction improves documentation practice?",
+    "optionA": "Keep the estimate as a fact",
+    "optionB": "Copy yesterday's breakfast entry",
+    "optionC": "Record only verified information",
+    "optionD": "Replace the entry with a diagnosis"
+  },
+  {
+    "questionId": "CDM-NUT-040",
+    "category": "cdmNutrition",
+    "question": "A resident's food preferences change after a hospital stay. Which action keeps the nutrition plan individualized?",
+    "optionA": "Keep the original interview as current",
+    "optionB": "Base choices on the unit majority",
+    "optionC": "Use the hospital menu without review",
+    "optionD": "Update the profile with the client"
+  },
+  {
+    "questionId": "CDM-FOO-001",
+    "category": "cdmFoodservice",
+    "question": "Two cooks produce different yields from the same menu item. What should the manager check first?",
+    "optionA": "Use of the standardized recipe",
+    "optionB": "The forecast of expected demand",
+    "optionC": "The pattern of residents' selections",
+    "optionD": "The ordering interval for ingredients"
+  },
+  {
+    "questionId": "CDM-FOO-002",
+    "category": "cdmFoodservice",
+    "question": "A recipe yields 40 portions and is needed for 100. What multiplier applies to its ingredient quantities?",
+    "optionA": "0.4",
+    "optionB": "2.5",
+    "optionC": "1.5",
+    "optionD": "4.0"
+  },
+  {
+    "questionId": "CDM-FOO-003",
+    "category": "cdmFoodservice",
+    "question": "An entree meets its nutrient target but most residents leave it uneaten. Which evaluation is most useful?",
+    "optionA": "A storeroom inventory valuation",
+    "optionB": "An employee turnover calculation",
+    "optionC": "Acceptance and plate-waste study",
+    "optionD": "A vendor invoice reconciliation"
+  },
+  {
+    "questionId": "CDM-FOO-004",
+    "category": "cdmFoodservice",
+    "question": "A kitchen has enough ingredients for lunch, but two recipes require the same oven at different temperatures at noon. What planning detail was missed?",
+    "optionA": "The portion count on tray tickets",
+    "optionB": "The edible yield of each ingredient",
+    "optionC": "The previous week's attendance",
+    "optionD": "Equipment availability over time"
+  },
+  {
+    "questionId": "CDM-FOO-005",
+    "category": "cdmFoodservice",
+    "question": "A substitute ingredient is available when a delivery fails. What is the best basis for approving its use in a therapeutic recipe?",
+    "optionA": "Nutrient and diet compatibility",
+    "optionB": "Matching the original package size",
+    "optionC": "Being the same wholesale price",
+    "optionD": "Having the same shelf location"
+  },
+  {
+    "questionId": "CDM-FOO-006",
+    "category": "cdmFoodservice",
+    "question": "A standardized recipe costs$72 for 48 servings. What is its ingredient cost per serving?",
+    "optionA": "$0.67",
+    "optionB": "$1.50",
+    "optionC": "$2.00",
+    "optionD": "$3.50"
+  },
+  {
+    "questionId": "CDM-FOO-007",
+    "category": "cdmFoodservice",
+    "question": "For a product specification, which description best supports comparable bids?",
+    "optionA": "Brand name and most recent price",
+    "optionB": "Total case cost and delivery date",
+    "optionC": "Size, grade, pack and intended use",
+    "optionD": "Supplier reputation and order volume"
+  },
+  {
+    "questionId": "CDM-FOO-008",
+    "category": "cdmFoodservice",
+    "question": "A soup recipe works well in a small demonstration kitchen. What is needed before routine production in this facility?",
+    "optionA": "Use the demonstrated yield unchanged",
+    "optionB": "Scale the cooking time by batch size",
+    "optionC": "Accept the supplier's portion claim",
+    "optionD": "Test it with local equipment"
+  },
+  {
+    "questionId": "CDM-FOO-009",
+    "category": "cdmFoodservice",
+    "question": "A tray audit finds 9 errors among 60 trays, counting any tray with an error as inaccurate. What percentage is accurate?",
+    "optionA": "85%",
+    "optionB": "15%",
+    "optionC": "90%",
+    "optionD": "95%"
+  },
+  {
+    "questionId": "CDM-FOO-010",
+    "category": "cdmFoodservice",
+    "question": "The menu changes to a dish requiring advance thawing. Which document should schedule this work?",
+    "optionA": "The ingredient receiving checklist",
+    "optionB": "The production schedule",
+    "optionC": "The menu nutrient-analysis report",
+    "optionD": "The final meal-service tally"
+  },
+  {
+    "questionId": "CDM-FOO-011",
+    "category": "cdmFoodservice",
+    "question": "A kitchen produces excessive leftovers whenever a unit closes temporarily. What should be revised before the next service?",
+    "optionA": "The recipe's standard portion size",
+    "optionB": "The nutrient target for each meal",
+    "optionC": "The forecast using updated census",
+    "optionD": "The product's receiving specification"
+  },
+  {
+    "questionId": "CDM-FOO-012",
+    "category": "cdmFoodservice",
+    "question": "A cooked batch contains 12 quarts. How many 6-fluid-ounce portions does it provide, using 32 fluid ounces per quart?",
+    "optionA": "48 portions",
+    "optionB": "72 portions",
+    "optionC": "96 portions",
+    "optionD": "64 portions"
+  },
+  {
+    "questionId": "CDM-FOO-013",
+    "category": "cdmFoodservice",
+    "question": "A quality team wants to judge whether diners like a newly developed sauce. Which tool most directly measures that outcome?",
+    "optionA": "A structured taste-panel form",
+    "optionB": "A tray-accuracy inspection form",
+    "optionC": "A production-temperature log",
+    "optionD": "A recipe ingredient-cost worksheet"
+  },
+  {
+    "questionId": "CDM-FOO-014",
+    "category": "cdmFoodservice",
+    "question": "Several staff use different serving utensils for the same entree. Which change most directly improves consistency?",
+    "optionA": "Increase the estimated diner count",
+    "optionB": "Specify the portioning utensil",
+    "optionC": "Change the recipe's batch quantity",
+    "optionD": "Standardize the serving-line speed"
+  },
+  {
+    "questionId": "CDM-FOO-015",
+    "category": "cdmFoodservice",
+    "question": "A tray reaches a resident with correct foods but unacceptable serving temperature. Which aspect of quality failed?",
+    "optionA": "Diet-order interpretation",
+    "optionB": "Recipe nutrient calculation",
+    "optionC": "Meal-service condition",
+    "optionD": "Production quantity forecasting"
+  },
+  {
+    "questionId": "CDM-FOO-016",
+    "category": "cdmFoodservice",
+    "question": "A recipe needs 18 lb of edible trimmed produce. The verified yield is 75% of purchased weight. How much should be bought?",
+    "optionA": "13.5 lb",
+    "optionB": "22.5 lb",
+    "optionC": "32 lb",
+    "optionD": "24 lb"
+  },
+  {
+    "questionId": "CDM-FOO-017",
+    "category": "cdmFoodservice",
+    "question": "What makes a quality-improvement objective useful for evaluating a new tray-check procedure?",
+    "optionA": "A defined measure and target",
+    "optionB": "An easily achieved activity count",
+    "optionC": "A description of the preferred process",
+    "optionD": "A promise of zero future mistakes"
+  },
+  {
+    "questionId": "CDM-FOO-018",
+    "category": "cdmFoodservice",
+    "question": "An audit shows meal delays persist after a new dispatch process begins. What is the next improvement step?",
+    "optionA": "Count staff training as proof of success",
+    "optionB": "Analyze results and adjust the process",
+    "optionC": "Change the goal to match current results",
+    "optionD": "Extend the rollout before collecting data"
+  },
+  {
+    "questionId": "CDM-FOO-019",
+    "category": "cdmFoodservice",
+    "question": "A client cannot use the selective-menu form. How should food choices be determined?",
+    "optionA": "Use the most popular unit choices",
+    "optionB": "Assign the lowest-cost selections",
+    "optionC": "Use known individual preferences",
+    "optionD": "Repeat yesterday's tray by default"
+  },
+  {
+    "questionId": "CDM-FOO-020",
+    "category": "cdmFoodservice",
+    "question": "For a banquet, 96 people each need a 5-ounce cooked portion. How many pounds of cooked product are required?",
+    "optionA": "19.2 lb",
+    "optionB": "24 lb",
+    "optionC": "36 lb",
+    "optionD": "30 lb"
+  },
+  {
+    "questionId": "CDM-FOO-021",
+    "category": "cdmFoodservice",
+    "question": "Which record best helps distinguish food discarded during preparation from food left on residents' plates?",
+    "optionA": "A waste log with reason codes",
+    "optionB": "A total monthly food-cost report",
+    "optionC": "A menu acceptance score without comments",
+    "optionD": "A purchase summary by food group"
+  },
+  {
+    "questionId": "CDM-FOO-022",
+    "category": "cdmFoodservice",
+    "question": "A unit receives its lunch late despite food finishing on time. What should the manager examine first?",
+    "optionA": "The planned quantity of each recipe",
+    "optionB": "Dispatch and delivery workflow",
+    "optionC": "The nutrient analysis of the lunch menu",
+    "optionD": "The recipe's preparation instructions"
+  },
+  {
+    "questionId": "CDM-FOO-023",
+    "category": "cdmFoodservice",
+    "question": "A batch normally yields 50 portions of 4 ounces. Staff serve 5-ounce portions instead. How many full portions will it yield?",
+    "optionA": "45 portions",
+    "optionB": "55 portions",
+    "optionC": "40 portions",
+    "optionD": "62 portions"
+  },
+  {
+    "questionId": "CDM-FOO-024",
+    "category": "cdmFoodservice",
+    "question": "A resident's prescribed meal differs from the posted regular menu. What should the tray checker use to determine accuracy?",
+    "optionA": "The regular menu without modifications",
+    "optionB": "The previous day's general production total",
+    "optionC": "The most commonly requested entree",
+    "optionD": "The individual diet instructions"
+  },
+  {
+    "questionId": "CDM-FOO-025",
+    "category": "cdmFoodservice",
+    "question": "Why should a standardized recipe specify the equipment and preparation method?",
+    "optionA": "To reproduce the intended result",
+    "optionB": "To establish the required diner count",
+    "optionC": "To confirm the product's receipt date",
+    "optionD": "To determine the monthly purchase total"
+  },
+  {
+    "questionId": "CDM-FOO-026",
+    "category": "cdmFoodservice",
+    "question": "A facility wants evidence of whether its new menu respects residents' cultural choices. Which measure fits best?",
+    "optionA": "The number of ethnic dishes offered",
+    "optionB": "Feedback from the residents served",
+    "optionC": "The proportion of imported ingredients",
+    "optionD": "The variety of recipes in the database"
+  },
+  {
+    "questionId": "CDM-FOO-027",
+    "category": "cdmFoodservice",
+    "question": "The same standard portion is served accurately, but a dish repeatedly runs out. What should be investigated next?",
+    "optionA": "The price paid for each ingredient",
+    "optionB": "The meal-service temperature target",
+    "optionC": "Demand estimates and batch yield",
+    "optionD": "The frequency of taste-panel meetings"
+  },
+  {
+    "questionId": "CDM-FOO-028",
+    "category": "cdmFoodservice",
+    "question": "A recipe uses 3 cups of an ingredient for 24 portions. How much is needed for 40 portions?",
+    "optionA": "4 cups",
+    "optionB": "6 cups",
+    "optionC": "8 cups",
+    "optionD": "5 cups"
+  },
+  {
+    "questionId": "CDM-FOO-029",
+    "category": "cdmFoodservice",
+    "question": "Which observation best evaluates whether a meal-delivery change preserved quality?",
+    "optionA": "Arrival time and product temperature",
+    "optionB": "Number of staff trained in the change",
+    "optionC": "Number of carts used during service",
+    "optionD": "Total portions prepared in the kitchen"
+  },
+  {
+    "questionId": "CDM-FOO-030",
+    "category": "cdmFoodservice",
+    "question": "A production sheet says 120 servings, but updated diet tallies show 105 are needed. What should be done before preparation?",
+    "optionA": "Reduce each person's serving size",
+    "optionB": "Reconcile the planned quantity",
+    "optionC": "Use the older tally without review",
+    "optionD": "Add 15 unrequested nourishment trays"
+  },
+  {
+    "questionId": "CDM-FOO-031",
+    "category": "cdmFoodservice",
+    "question": "A facility compares two recipe versions using different portion sizes and serving temperatures. What limits the usefulness of the comparison?",
+    "optionA": "An excessive number of recipe trials",
+    "optionB": "An insufficient number of suppliers",
+    "optionC": "Uncontrolled testing conditions",
+    "optionD": "An unusually short purchasing cycle"
+  },
+  {
+    "questionId": "CDM-FOO-032",
+    "category": "cdmFoodservice",
+    "question": "Out of 80 diners surveyed, 60 rate an entree acceptable. What proportion reports acceptance?",
+    "optionA": "20%",
+    "optionB": "60%",
+    "optionC": "80%",
+    "optionD": "75%"
+  },
+  {
+    "questionId": "CDM-FOO-033",
+    "category": "cdmFoodservice",
+    "question": "A supplement is included on the care plan but absent from routine production instructions. What corrects the operational gap?",
+    "optionA": "Add it to preparation and delivery records",
+    "optionB": "Increase the regular entree automatically",
+    "optionC": "Wait for an annual menu revision",
+    "optionD": "Count it as consumed when ordered"
+  },
+  {
+    "questionId": "CDM-FOO-034",
+    "category": "cdmFoodservice",
+    "question": "Which approach best supports a facility-wide QAPI foodservice project?",
+    "optionA": "Limit input to department leadership",
+    "optionB": "Include staff who perform the work",
+    "optionC": "Replace baseline data with staff opinion",
+    "optionD": "Choose changes before defining the problem"
+  },
+  {
+    "questionId": "CDM-FOO-035",
+    "category": "cdmFoodservice",
+    "question": "A menu offers two entrees, but both conflict with a resident's verified restriction. What needs correction?",
+    "optionA": "The total number of offered dishes",
+    "optionB": "The order in which trays are assembled",
+    "optionC": "The available compliant choices",
+    "optionD": "The quantity forecast for the regular menu"
+  },
+  {
+    "questionId": "CDM-FOO-036",
+    "category": "cdmFoodservice",
+    "question": "A 48-serving recipe calls for 6 lb of meat. What amount is needed for 72 servings?",
+    "optionA": "4 lb",
+    "optionB": "8 lb",
+    "optionC": "12 lb",
+    "optionD": "9 lb"
+  },
+  {
+    "questionId": "CDM-FOO-037",
+    "category": "cdmFoodservice",
+    "question": "A waste study shows a vegetable is usually returned untouched even when served hot and correctly prepared. Which response best addresses the finding?",
+    "optionA": "Test an acceptable menu alternative",
+    "optionB": "Increase every vegetable portion",
+    "optionC": "Purchase larger storage containers",
+    "optionD": "Reduce the temperature standard"
+  },
+  {
+    "questionId": "CDM-FOO-038",
+    "category": "cdmFoodservice",
+    "question": "A purchased ingredient changes size while the recipe still measures it by count. What should be checked before using the old yield?",
+    "optionA": "The total number of portions ordered",
+    "optionB": "Actual weight per counted unit",
+    "optionC": "The length of the current menu cycle",
+    "optionD": "The previous supplier's case price"
+  },
+  {
+    "questionId": "CDM-FOO-039",
+    "category": "cdmFoodservice",
+    "question": "A new audit procedure is intended to reduce wrong-diet trays. Which outcome should be compared with baseline?",
+    "optionA": "Number of tray checks documented",
+    "optionB": "Number of employees trained to check",
+    "optionC": "Frequency of diet-selection errors",
+    "optionD": "Time spent writing the new procedure"
+  },
+  {
+    "questionId": "CDM-FOO-040",
+    "category": "cdmFoodservice",
+    "question": "A kitchen needs 300 portions, and each full batch yields 80. If only full batches can be made, how many batches are required?",
+    "optionA": "3 batches",
+    "optionB": "5 batches",
+    "optionC": "6 batches",
+    "optionD": "4 batches"
+  },
+  {
+    "questionId": "CDM-FOO-041",
+    "category": "cdmFoodservice",
+    "question": "What is the main purpose of a documented ingredient-substitution approval process?",
+    "optionA": "Preserve suitability and consistency",
+    "optionB": "Keep every substitute at the same cost",
+    "optionC": "Ensure all products use the same brand",
+    "optionD": "Make every change match the original pack"
+  },
+  {
+    "questionId": "CDM-FOO-042",
+    "category": "cdmFoodservice",
+    "question": "The kitchen must prepare several components for one service time. What is the best starting point for scheduling their completion?",
+    "optionA": "Start the longest recipe at dispatch",
+    "optionB": "Work backward from dispatch time",
+    "optionC": "Prepare all components as early as possible",
+    "optionD": "Use the previous shift's start times"
+  },
+  {
+    "questionId": "CDM-FOO-043",
+    "category": "cdmFoodservice",
+    "question": "A test tray follows the normal route to the dining unit. What information does this provide that checking food at the stove does not?",
+    "optionA": "The calculated nutrients in the recipe",
+    "optionB": "The approved ingredient specifications",
+    "optionC": "Conditions at the point of service",
+    "optionD": "The planned number of meal portions"
+  },
+  {
+    "questionId": "CDM-FOO-044",
+    "category": "cdmFoodservice",
+    "question": "A production record lists food prepared and served but omits unused quantities. Which addition best supports future forecasts?",
+    "optionA": "The number of scheduled kitchen staff",
+    "optionB": "The original menu's ingredient prices",
+    "optionC": "The number of portions in each recipe",
+    "optionD": "Leftovers and reasons for variance"
+  },
+  {
+    "questionId": "CDM-PER-001",
+    "category": "cdmPersonnel",
+    "question": "A department schedules 280 labor hours weekly and defines one full-time position as 40 hours. How many FTEs are scheduled?",
+    "optionA": "7 FTEs",
+    "optionB": "6 FTEs",
+    "optionC": "8 FTEs",
+    "optionD": "10 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-002",
+    "category": "cdmPersonnel",
+    "question": "A manager needs to explain which duties belong to a newly created cook position. Which document is most appropriate?",
+    "optionA": "The weekly time sheet",
+    "optionB": "The job description",
+    "optionC": "The department budget",
+    "optionD": "The orientation attendance log"
+  },
+  {
+    "questionId": "CDM-PER-003",
+    "category": "cdmPersonnel",
+    "question": "Several candidates are being interviewed for the same role. What best supports comparable evaluations?",
+    "optionA": "Different questions for each person",
+    "optionB": "An informal impression after each visit",
+    "optionC": "A consistent job-related guide",
+    "optionD": "The order applications were received"
+  },
+  {
+    "questionId": "CDM-PER-004",
+    "category": "cdmPersonnel",
+    "question": "Which prompt is a behavioral interview question?",
+    "optionA": "Would you enjoy working in this kitchen?",
+    "optionB": "Which shift would you prefer to work?",
+    "optionC": "Are you willing to learn new procedures?",
+    "optionD": "Describe a time you resolved a service delay"
+  },
+  {
+    "questionId": "CDM-PER-005",
+    "category": "cdmPersonnel",
+    "question": "A new employee signs an orientation attendance sheet but cannot demonstrate the assigned task. What remains necessary?",
+    "optionA": "Verify job-specific competence",
+    "optionB": "File attendance as full completion",
+    "optionC": "Assign independent work immediately",
+    "optionD": "Wait for the annual performance review"
+  },
+  {
+    "questionId": "CDM-PER-006",
+    "category": "cdmPersonnel",
+    "question": "One employee works 40 hours and three work 20 hours each in a week. Using a 40-hour benchmark, what is the total?",
+    "optionA": "2.0 FTEs",
+    "optionB": "2.5 FTEs",
+    "optionC": "3.0 FTEs",
+    "optionD": "4.0 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-007",
+    "category": "cdmPersonnel",
+    "question": "Overtime occurs mainly during a short dinner-service peak. Which scheduling change most directly addresses the pattern?",
+    "optionA": "Add equal hours to every shift",
+    "optionB": "Shorten all orientation sessions",
+    "optionC": "Stagger coverage around demand",
+    "optionD": "Increase the standard portion size"
+  },
+  {
+    "questionId": "CDM-PER-008",
+    "category": "cdmPersonnel",
+    "question": "A performance discussion concerns repeated late tray deliveries. Which evidence is most useful?",
+    "optionA": "The manager's general impression",
+    "optionB": "The employee's unrelated personal plans",
+    "optionC": "The average rating of other departments",
+    "optionD": "Dated observations against the standard"
+  },
+  {
+    "questionId": "CDM-PER-009",
+    "category": "cdmPersonnel",
+    "question": "Which goal is most suitable for an employee improvement plan?",
+    "optionA": "Complete setup by 10:30 for the next 10 shifts",
+    "optionB": "Show more commitment whenever possible",
+    "optionC": "Become the most dependable team member",
+    "optionD": "Improve service enough to satisfy everyone"
+  },
+  {
+    "questionId": "CDM-PER-010",
+    "category": "cdmPersonnel",
+    "question": "A manager assigns a corrective goal but no training or resources. What is missing from the improvement process?",
+    "optionA": "A larger number of unrelated goals",
+    "optionB": "Support needed to meet the expectation",
+    "optionC": "A guarantee of an immediate promotion",
+    "optionD": "A comparison with the newest employee"
+  },
+  {
+    "questionId": "CDM-PER-011",
+    "category": "cdmPersonnel",
+    "question": "Before creating an in-service session, what best identifies the topic the team actually needs?",
+    "optionA": "The topics used during orientation",
+    "optionB": "The most convenient available lesson",
+    "optionC": "A skills and needs assessment",
+    "optionD": "A request from the newest employee"
+  },
+  {
+    "questionId": "CDM-PER-012",
+    "category": "cdmPersonnel",
+    "question": "Which method best tests whether a worker can correctly use a new thermometer?",
+    "optionA": "A signature on the equipment receipt",
+    "optionB": "A satisfaction rating for the instructor",
+    "optionC": "A copy of the attendance certificate",
+    "optionD": "Observed return demonstration"
+  },
+  {
+    "questionId": "CDM-PER-013",
+    "category": "cdmPersonnel",
+    "question": "A department needs 360 hours of work next week but has 320 scheduled. How many additional 40-hour FTEs are needed?",
+    "optionA": "1 FTE",
+    "optionB": "0.5 FTE",
+    "optionC": "2 FTEs",
+    "optionD": "8 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-014",
+    "category": "cdmPersonnel",
+    "question": "A staff meeting repeatedly ends without decisions being implemented. What addition best creates accountability?",
+    "optionA": "A longer list of discussion topics",
+    "optionB": "Named owners and due dates",
+    "optionC": "More copies of the prior agenda",
+    "optionD": "An earlier date for the next meeting"
+  },
+  {
+    "questionId": "CDM-PER-015",
+    "category": "cdmPersonnel",
+    "question": "Which document should be distributed before a department meeting to focus discussion?",
+    "optionA": "Minutes not yet approved",
+    "optionB": "Individual disciplinary records",
+    "optionC": "An agenda with objectives",
+    "optionD": "The next annual evaluation scores"
+  },
+  {
+    "questionId": "CDM-PER-016",
+    "category": "cdmPersonnel",
+    "question": "Two qualified employees request the same shift. What is the soundest basis for resolving the conflict?",
+    "optionA": "Who asks most insistently",
+    "optionB": "Which request arrived verbally",
+    "optionC": "The manager's personal friendship",
+    "optionD": "Established scheduling rules"
+  },
+  {
+    "questionId": "CDM-PER-017",
+    "category": "cdmPersonnel",
+    "question": "A worker is absent unexpectedly. Which earlier investment most improves coverage without assigning untrained duties?",
+    "optionA": "Cross-training with competence checks",
+    "optionB": "Printing more copies of the duty list",
+    "optionC": "Keeping the same task with one person",
+    "optionD": "Reducing documentation of staff skills"
+  },
+  {
+    "questionId": "CDM-PER-018",
+    "category": "cdmPersonnel",
+    "question": "A new workflow starts next Monday. What communication is most useful to affected staff?",
+    "optionA": "Only the project's original budget",
+    "optionB": "Their tasks, timing and responsibilities",
+    "optionC": "Only the name of the software vendor",
+    "optionD": "Only the date of the next annual review"
+  },
+  {
+    "questionId": "CDM-PER-019",
+    "category": "cdmPersonnel",
+    "question": "Which action best evaluates whether an employee's corrective plan has succeeded?",
+    "optionA": "Count the pages in the personnel file",
+    "optionB": "Assume success after the meeting ends",
+    "optionC": "Compare follow-up results with the goal",
+    "optionD": "Use the employee's tenure as the outcome"
+  },
+  {
+    "questionId": "CDM-PER-020",
+    "category": "cdmPersonnel",
+    "question": "A department objective is reduced meal delays, but census rises sharply. What should the manager revisit?",
+    "optionA": "Only the wording of staff job titles",
+    "optionB": "Only the filing order of past reports",
+    "optionC": "The goal without considering demand",
+    "optionD": "Resources and the action plan"
+  },
+  {
+    "questionId": "CDM-PER-021",
+    "category": "cdmPersonnel",
+    "question": "A manager is selecting among candidates. Which criterion is directly relevant to a cook's ability to perform the job?",
+    "optionA": "A demonstrated production skill",
+    "optionB": "An assumed cultural background",
+    "optionC": "The applicant's family arrangements",
+    "optionD": "Membership in the manager's social group"
+  },
+  {
+    "questionId": "CDM-PER-022",
+    "category": "cdmPersonnel",
+    "question": "Which record is most useful for identifying a recurring coverage problem caused by late arrivals?",
+    "optionA": "Overtime totals for the month",
+    "optionB": "Attendance patterns by shift",
+    "optionC": "The employee turnover percentage",
+    "optionD": "The number of unfilled positions"
+  },
+  {
+    "questionId": "CDM-PER-023",
+    "category": "cdmPersonnel",
+    "question": "Three part-time employees each work 24 hours weekly. At 40 hours per FTE, what capacity do they provide?",
+    "optionA": "0.6 FTE",
+    "optionB": "2.4 FTEs",
+    "optionC": "1.8 FTEs",
+    "optionD": "3.0 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-024",
+    "category": "cdmPersonnel",
+    "question": "An employee knows the correct process but lacks the required tool. What should the supervisor address before treating this as a training failure?",
+    "optionA": "The employee's annual leave balance",
+    "optionB": "The length of the orientation manual",
+    "optionC": "The number of other departments trained",
+    "optionD": "Availability of necessary resources"
+  },
+  {
+    "questionId": "CDM-PER-025",
+    "category": "cdmPersonnel",
+    "question": "Which feedback is most useful during coaching?",
+    "optionA": "The specific gap and expected action",
+    "optionB": "A general statement of disappointment",
+    "optionC": "A comparison with a favored coworker",
+    "optionD": "A prediction about future personality"
+  },
+  {
+    "questionId": "CDM-PER-026",
+    "category": "cdmPersonnel",
+    "question": "A long-term department goal is broken into weekly tasks. What else is needed to make the plan actionable?",
+    "optionA": "A separate slogan for every task",
+    "optionB": "Assigned responsibility and timelines",
+    "optionC": "A promise that priorities never change",
+    "optionD": "An identical workload for every job title"
+  },
+  {
+    "questionId": "CDM-PER-027",
+    "category": "cdmPersonnel",
+    "question": "An in-service earns excellent satisfaction ratings, but errors remain unchanged. What additional evaluation is needed?",
+    "optionA": "A second satisfaction questionnaire",
+    "optionB": "A count of slides used in the session",
+    "optionC": "Observed application on the job",
+    "optionD": "A longer list of participants' names"
+  },
+  {
+    "questionId": "CDM-PER-028",
+    "category": "cdmPersonnel",
+    "question": "A manager must reduce overtime while maintaining service. Which data should be compared first?",
+    "optionA": "Overtime expense and food prices",
+    "optionB": "Headcount and annual training hours",
+    "optionC": "Shift length and employee seniority",
+    "optionD": "Workload timing and scheduled coverage"
+  },
+  {
+    "questionId": "CDM-PER-029",
+    "category": "cdmPersonnel",
+    "question": "A new employee misses a required orientation topic because of a shift change. What should happen?",
+    "optionA": "Complete and record missed training",
+    "optionB": "Treat the original signature as sufficient",
+    "optionC": "Wait until the employee requests a review",
+    "optionD": "Remove that requirement from the checklist"
+  },
+  {
+    "questionId": "CDM-PER-030",
+    "category": "cdmPersonnel",
+    "question": "Which action best maintains a useful job description as the kitchen adopts new equipment?",
+    "optionA": "Leave duties unchanged until turnover",
+    "optionB": "Review duties and revise the document",
+    "optionC": "Replace it with the weekly roster",
+    "optionD": "Use only the equipment sales brochure"
+  },
+  {
+    "questionId": "CDM-PER-031",
+    "category": "cdmPersonnel",
+    "question": "A supervisor wants ideas about a service bottleneck from quieter team members. Which meeting practice best supports this?",
+    "optionA": "Let only the senior cook propose changes",
+    "optionB": "End discussion once the manager speaks",
+    "optionC": "Invite contributions without interruption",
+    "optionD": "Require every suggestion to be anonymous"
+  },
+  {
+    "questionId": "CDM-PER-032",
+    "category": "cdmPersonnel",
+    "question": "A monthly schedule changes after publication. What protects coordination most directly?",
+    "optionA": "Filing the revision without distribution",
+    "optionB": "Telling only the next shift supervisor",
+    "optionC": "Waiting for workers to notice the change",
+    "optionD": "Timely notice to affected employees"
+  },
+  {
+    "questionId": "CDM-PER-033",
+    "category": "cdmPersonnel",
+    "question": "A manager asks staff to improve tray accuracy but gives no definition of an error. What should be established first?",
+    "optionA": "A shared performance standard",
+    "optionB": "A higher target without explanation",
+    "optionC": "A larger sample without criteria",
+    "optionD": "An immediate ranking of all employees"
+  },
+  {
+    "questionId": "CDM-PER-034",
+    "category": "cdmPersonnel",
+    "question": "A department budget supports 8 FTEs at 40 hours each. How many labor hours does this represent per week?",
+    "optionA": "200 hours",
+    "optionB": "320 hours",
+    "optionC": "280 hours",
+    "optionD": "400 hours"
+  },
+  {
+    "questionId": "CDM-PER-035",
+    "category": "cdmPersonnel",
+    "question": "Which follow-up best helps a new hire improve after the first week?",
+    "optionA": "Repeat the entire hiring interview",
+    "optionB": "Wait until the first annual evaluation",
+    "optionC": "Review performance and remaining gaps",
+    "optionD": "Assume the checklist guarantees proficiency"
+  },
+  {
+    "questionId": "CDM-PER-036",
+    "category": "cdmPersonnel",
+    "question": "A proposed department policy conflicts with an applicable employment requirement. What should guide revision?",
+    "optionA": "The manager's usual personal practice",
+    "optionB": "The preference of the longest-serving cook",
+    "optionC": "The least expensive implementation option",
+    "optionD": "The governing requirement and HR review"
+  },
+  {
+    "questionId": "CDM-PER-037",
+    "category": "cdmPersonnel",
+    "question": "A staff member reports that a new procedure adds an avoidable task. What is the best management response?",
+    "optionA": "Evaluate the workflow and evidence",
+    "optionB": "Keep it because the rollout is complete",
+    "optionC": "Assume the worker is resisting all change",
+    "optionD": "Remove all checks before investigating"
+  },
+  {
+    "questionId": "CDM-PER-038",
+    "category": "cdmPersonnel",
+    "question": "Which record best preserves what a department meeting decided?",
+    "optionA": "The original invitation without updates",
+    "optionB": "Minutes with actions and responsibilities",
+    "optionC": "The sign-in sheet without discussion notes",
+    "optionD": "The presentation slides without decisions"
+  },
+  {
+    "questionId": "CDM-PER-039",
+    "category": "cdmPersonnel",
+    "question": "Two employees perform the same task, but only one receives feedback on errors. What improvement supports fair supervision?",
+    "optionA": "Stop documenting errors for either person",
+    "optionB": "Rate performance by length of service",
+    "optionC": "Apply consistent performance criteria",
+    "optionD": "Give both identical ratings automatically"
+  },
+  {
+    "questionId": "CDM-PER-040",
+    "category": "cdmPersonnel",
+    "question": "A disaster could interrupt the department's usual staffing. What planning best supports essential meal service?",
+    "optionA": "A duplicate of the normal roster only",
+    "optionB": "A promise to maintain every menu item",
+    "optionC": "A list of vacancies without assignments",
+    "optionD": "A resource-based contingency plan"
+  },
+  {
+    "questionId": "CDM-SAF-001",
+    "category": "cdmSafety",
+    "question": "Under the FDA 2022 Food Code, ordinary hot-held soup must remain at least what temperature?",
+    "optionA": "135\u00b0F",
+    "optionB": "125\u00b0F",
+    "optionC": "130\u00b0F",
+    "optionD": "140\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-002",
+    "category": "cdmSafety",
+    "question": "Cooked rice reaches 135\u00b0F at noon. Under the Food Code cooling rule, by when must it reach 70\u00b0F?",
+    "optionA": "1 p.m.",
+    "optionB": "2 p.m.",
+    "optionC": "4 p.m.",
+    "optionD": "6 p.m."
+  },
+  {
+    "questionId": "CDM-SAF-003",
+    "category": "cdmSafety",
+    "question": "A cook checks poultry at 160\u00b0F and plans immediate service. Under the Food Code, what is needed?",
+    "optionA": "Hold at 160\u00b0F for 5 seconds",
+    "optionB": "Rest it until the surface cools",
+    "optionC": "Continue to 165\u00b0F throughout",
+    "optionD": "Serve once the juices look clear"
+  },
+  {
+    "questionId": "CDM-SAF-004",
+    "category": "cdmSafety",
+    "question": "A large pot of soup is cooling too slowly. Which method most directly increases heat transfer?",
+    "optionA": "Cover it tightly in the deep pot",
+    "optionB": "Place it beside the hot-holding unit",
+    "optionC": "Stack full pots close together",
+    "optionD": "Divide it into shallow pans"
+  },
+  {
+    "questionId": "CDM-SAF-005",
+    "category": "cdmSafety",
+    "question": "A refrigerated ready-to-eat TCS dish is prepared Monday and held at 41\u00b0F or below for more than 24 hours. With no other limiting date, what is its latest Food Code discard day?",
+    "optionA": "Sunday",
+    "optionB": "Saturday",
+    "optionC": "Monday of next week",
+    "optionD": "Tuesday of next week"
+  },
+  {
+    "questionId": "CDM-SAF-006",
+    "category": "cdmSafety",
+    "question": "A cleaner leaks onto a food-storage shelf. What type of hazard is the residue?",
+    "optionA": "Biological contamination",
+    "optionB": "Chemical contamination",
+    "optionC": "Physical foreign material",
+    "optionD": "Time-temperature abuse"
+  },
+  {
+    "questionId": "CDM-SAF-007",
+    "category": "cdmSafety",
+    "question": "Under the Food Code, which receiving condition is acceptable for ordinary refrigerated TCS food with no special legal exception?",
+    "optionA": "Food measured at 44\u00b0F",
+    "optionB": "Food measured at 48\u00b0F",
+    "optionC": "Food measured at 39\u00b0F",
+    "optionD": "Food measured at 50\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-008",
+    "category": "cdmSafety",
+    "question": "A worker switches from raw poultry to assembling ready-to-eat sandwiches. What is required before starting the new task?",
+    "optionA": "Wipe the old gloves with a towel",
+    "optionB": "Rinse gloves without removing them",
+    "optionC": "Put new gloves over the old pair",
+    "optionD": "Wash hands and use clean barriers"
+  },
+  {
+    "questionId": "CDM-SAF-009",
+    "category": "cdmSafety",
+    "question": "What is a critical limit in a HACCP plan?",
+    "optionA": "A measurable safety boundary",
+    "optionB": "A recommended quality preference",
+    "optionC": "A routine maintenance interval",
+    "optionD": "An average historical process result"
+  },
+  {
+    "questionId": "CDM-SAF-010",
+    "category": "cdmSafety",
+    "question": "A thermometer log shows a critical limit was missed. Which HACCP element specifies the response?",
+    "optionA": "The verification review schedule",
+    "optionB": "The corrective-action procedure",
+    "optionC": "The list of potential hazards",
+    "optionD": "The record-retention procedure"
+  },
+  {
+    "questionId": "CDM-SAF-011",
+    "category": "cdmSafety",
+    "question": "An ingredient label changes on a routinely purchased sauce. Before serving it to a resident with a food allergy, what must be reviewed?",
+    "optionA": "Only the familiar package color",
+    "optionB": "Only the previous recipe approval",
+    "optionC": "The current ingredient information",
+    "optionD": "Only the supplier's delivery schedule"
+  },
+  {
+    "questionId": "CDM-SAF-012",
+    "category": "cdmSafety",
+    "question": "A metal fragment from damaged equipment is found in prepared food. Which hazard category applies?",
+    "optionA": "Biological hazard",
+    "optionB": "Chemical residue",
+    "optionC": "Nutrient imbalance",
+    "optionD": "Physical hazard"
+  },
+  {
+    "questionId": "CDM-SAF-013",
+    "category": "cdmSafety",
+    "question": "A cook reheats in-house cooked and cooled chili for hot holding. Under the Food Code, which target applies?",
+    "optionA": "165\u00b0F for 15 seconds",
+    "optionB": "135\u00b0F for 15 seconds",
+    "optionC": "145\u00b0F for 15 seconds",
+    "optionD": "155\u00b0F for 17 seconds"
+  },
+  {
+    "questionId": "CDM-SAF-014",
+    "category": "cdmSafety",
+    "question": "A case of frozen food arrives partly thawed with evidence of earlier temperature abuse. What is the appropriate receiving decision?",
+    "optionA": "Accept and refreeze immediately",
+    "optionB": "Reject and document the delivery",
+    "optionC": "Accept if the invoice is discounted",
+    "optionD": "Use first without recording the issue"
+  },
+  {
+    "questionId": "CDM-SAF-015",
+    "category": "cdmSafety",
+    "question": "A worker uses a utensil from a peanut-containing dish for a peanut-free meal. What risk has been introduced?",
+    "optionA": "Only a temperature-control error",
+    "optionB": "Only a portion-control variance",
+    "optionC": "Allergen cross-contact",
+    "optionD": "A change in the food's acidity"
+  },
+  {
+    "questionId": "CDM-SAF-016",
+    "category": "cdmSafety",
+    "question": "Under the Food Code, how long is the overall handwashing cleaning procedure?",
+    "optionA": "At least 5 seconds",
+    "optionB": "At least 10 seconds",
+    "optionC": "At least 15 seconds",
+    "optionD": "At least 20 seconds"
+  },
+  {
+    "questionId": "CDM-SAF-017",
+    "category": "cdmSafety",
+    "question": "A facility evaluates where microbial hazards can be controlled in its food process. Which HACCP activity is this?",
+    "optionA": "Identifying critical control points",
+    "optionB": "Setting the product acceptance score",
+    "optionC": "Checking previously completed records",
+    "optionD": "Applying an already defined corrective action"
+  },
+  {
+    "questionId": "CDM-SAF-018",
+    "category": "cdmSafety",
+    "question": "A delivery includes the ordered quantity but the product fails written quality specifications. What should determine acceptance?",
+    "optionA": "Quantity once the count is verified",
+    "optionB": "Compliance with the specifications",
+    "optionC": "The previous delivery's acceptance",
+    "optionD": "The vendor's usual product reputation"
+  },
+  {
+    "questionId": "CDM-SAF-019",
+    "category": "cdmSafety",
+    "question": "A prepared refrigerated TCS ingredient made Tuesday is mixed with one made Thursday. Under Food Code date marking, which date controls?",
+    "optionA": "The Thursday preparation date",
+    "optionB": "The date the mixture is portioned",
+    "optionC": "The Tuesday preparation date",
+    "optionD": "The date the last portion is served"
+  },
+  {
+    "questionId": "CDM-SAF-020",
+    "category": "cdmSafety",
+    "question": "A manager reviews completed temperature records to see whether the HACCP system is working. What function is being performed?",
+    "optionA": "Menu standardization",
+    "optionB": "Demand forecasting",
+    "optionC": "Vendor price comparison",
+    "optionD": "Verification"
+  },
+  {
+    "questionId": "CDM-SAF-021",
+    "category": "cdmSafety",
+    "question": "A food employee needs to wash hands. Which sink is appropriate under the Food Code?",
+    "optionA": "The designated handwashing sink",
+    "optionB": "The food-preparation sink",
+    "optionC": "The utensil-washing compartment",
+    "optionD": "The service sink for liquid waste"
+  },
+  {
+    "questionId": "CDM-SAF-022",
+    "category": "cdmSafety",
+    "question": "A maintenance plan waits until every appliance fails before arranging service. What important control is missing?",
+    "optionA": "More frequent inventory counting",
+    "optionB": "Scheduled preventive maintenance",
+    "optionC": "A shorter menu-planning cycle",
+    "optionD": "A longer equipment replacement interval"
+  },
+  {
+    "questionId": "CDM-SAF-023",
+    "category": "cdmSafety",
+    "question": "Under the Food Code, fish fillets with no special preparation exception must reach which cooking combination?",
+    "optionA": "135\u00b0F for 15 seconds",
+    "optionB": "140\u00b0F for 5 seconds",
+    "optionC": "145\u00b0F for 15 seconds",
+    "optionD": "150\u00b0F for 1 second"
+  },
+  {
+    "questionId": "CDM-SAF-024",
+    "category": "cdmSafety",
+    "question": "Which control most directly prevents cleaning chemicals from contaminating ingredients?",
+    "optionA": "Use of tightly covered food bins alone",
+    "optionB": "Keeping only unopened food nearby",
+    "optionC": "Storing chemicals by container size",
+    "optionD": "Separate, appropriate chemical storage"
+  },
+  {
+    "questionId": "CDM-SAF-025",
+    "category": "cdmSafety",
+    "question": "A cooked TCS food cools from 135\u00b0F to 70\u00b0F in 90 minutes. Under the Food Code, how much time remains to reach 41\u00b0F?",
+    "optionA": "4.5 hours",
+    "optionB": "2 hours",
+    "optionC": "4 hours",
+    "optionD": "6 hours"
+  },
+  {
+    "questionId": "CDM-SAF-026",
+    "category": "cdmSafety",
+    "question": "A recall notice identifies a specific lot held in the kitchen. What should the manager do first to prevent its use?",
+    "optionA": "Use it before the next delivery arrives",
+    "optionB": "Identify and segregate affected stock",
+    "optionC": "Relabel it with a new inventory number",
+    "optionD": "Move it to the front for faster rotation"
+  },
+  {
+    "questionId": "CDM-SAF-027",
+    "category": "cdmSafety",
+    "question": "Which storage practice implements FIFO for suitable products with equivalent shelf-life requirements?",
+    "optionA": "Use the newest delivery first",
+    "optionB": "Use the largest container first",
+    "optionC": "Use the oldest received stock first",
+    "optionD": "Use the highest-priced case first"
+  },
+  {
+    "questionId": "CDM-SAF-028",
+    "category": "cdmSafety",
+    "question": "A cold TCS dish is removed at 9 a.m. at 40\u00b0F under a written 4-hour time-control procedure. By what time must it be served or discarded?",
+    "optionA": "11 a.m.",
+    "optionB": "3 p.m.",
+    "optionC": "5 p.m.",
+    "optionD": "1 p.m."
+  },
+  {
+    "questionId": "CDM-SAF-029",
+    "category": "cdmSafety",
+    "question": "A food safety inspection finds a packaging tear exposing ingredients. What concern drives the receiving decision?",
+    "optionA": "Loss of protection from contamination",
+    "optionB": "Loss of the product's printed price",
+    "optionC": "Change in the usual pack dimensions",
+    "optionD": "A mismatch with the recipe yield"
+  },
+  {
+    "questionId": "CDM-SAF-030",
+    "category": "cdmSafety",
+    "question": "Under the Food Code, what is the usual maximum temperature for cold holding TCS foods?",
+    "optionA": "45\u00b0F",
+    "optionB": "41\u00b0F",
+    "optionC": "50\u00b0F",
+    "optionD": "55\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-031",
+    "category": "cdmSafety",
+    "question": "Which preparation best supports safe continuity during a water-supply interruption?",
+    "optionA": "A duplicate of the standard weekly menu",
+    "optionB": "A larger routine ingredient order",
+    "optionC": "A rehearsed emergency foodservice plan",
+    "optionD": "A list of emergency contacts alone"
+  },
+  {
+    "questionId": "CDM-SAF-032",
+    "category": "cdmSafety",
+    "question": "A facility wants to know whether allergen precautions are followed on every shift. Which approach provides the best evidence?",
+    "optionA": "Counting the posters on kitchen walls",
+    "optionB": "Confirming one employee attended training",
+    "optionC": "Checking only the number of menu items",
+    "optionD": "Direct audits with documented findings"
+  },
+  {
+    "questionId": "CDM-SAF-033",
+    "category": "cdmSafety",
+    "question": "A refrigerated TCS salad is prepared from room-temperature ingredients. Under the Food Code, how soon must it reach 41\u00b0F or below?",
+    "optionA": "Within 4 hours",
+    "optionB": "Within 1 hour",
+    "optionC": "Within 6 hours",
+    "optionD": "Within 8 hours"
+  },
+  {
+    "questionId": "CDM-SAF-034",
+    "category": "cdmSafety",
+    "question": "Which receiving action verifies the amount of food delivered?",
+    "optionA": "Compare the case price with last month",
+    "optionB": "Compare the count with the order",
+    "optionC": "Check only the package condition",
+    "optionD": "Confirm only the scheduled arrival time"
+  },
+  {
+    "questionId": "CDM-SAF-035",
+    "category": "cdmSafety",
+    "question": "A thermometer reading is entered before the food is checked. What is the key problem with that record?",
+    "optionA": "It uses the wrong receiving specification",
+    "optionB": "It records a verification rather than a check",
+    "optionC": "It is not an actual measurement",
+    "optionD": "It replaces the product's date marking"
+  },
+  {
+    "questionId": "CDM-SAF-036",
+    "category": "cdmSafety",
+    "question": "A kitchen thaws a product in a microwave for conventional cooking. Under the Food Code, what follows?",
+    "optionA": "An overnight room-temperature rest",
+    "optionB": "A pause until the next meal service",
+    "optionC": "A return to dry storage before use",
+    "optionD": "Immediate uninterrupted cooking"
+  },
+  {
+    "questionId": "CDM-SAF-037",
+    "category": "cdmSafety",
+    "question": "Which measure most directly checks whether a master cleaning schedule is being carried out effectively?",
+    "optionA": "Inspect surfaces after the assigned work",
+    "optionB": "Review only employees' completion initials",
+    "optionC": "Count the cleaning supplies purchased",
+    "optionD": "Confirm the schedule was distributed"
+  },
+  {
+    "questionId": "CDM-SAF-038",
+    "category": "cdmSafety",
+    "question": "A worker notices a damaged food-contact part during use. What action best addresses the immediate hazard?",
+    "optionA": "Finish production before requesting repair",
+    "optionB": "Stop using it and arrange correction",
+    "optionC": "Use it only for foods cooked afterward",
+    "optionD": "Increase inspection frequency next week"
+  },
+  {
+    "questionId": "CDM-SAF-039",
+    "category": "cdmSafety",
+    "question": "Under the Food Code, which method is suitable for thawing TCS food under refrigeration?",
+    "optionA": "Keep the room at 70\u00b0F or below",
+    "optionB": "Keep the exterior below 90\u00b0F",
+    "optionC": "Keep the food at 41\u00b0F or below",
+    "optionD": "Keep the food below hot-holding temperature"
+  },
+  {
+    "questionId": "CDM-SAF-040",
+    "category": "cdmSafety",
+    "question": "A manager identifies that raw ingredients may introduce harmful bacteria. What HACCP step is this?",
+    "optionA": "Corrective-action documentation",
+    "optionB": "Verification of completed records",
+    "optionC": "Establishing a purchasing budget",
+    "optionD": "Hazard analysis"
+  },
+  {
+    "questionId": "CDM-SAF-041",
+    "category": "cdmSafety",
+    "question": "Which source is appropriate for procuring food under CBDM safety standards?",
+    "optionA": "A vetted, approved supplier",
+    "optionB": "A licensed source without product checks",
+    "optionC": "A familiar source without approval",
+    "optionD": "A local source with verbal assurances"
+  },
+  {
+    "questionId": "CDM-SAF-042",
+    "category": "cdmSafety",
+    "question": "Under the Food Code, commercially processed packaged ready-to-eat TCS soup from an inspected plant is heated for hot holding. What minimum applies?",
+    "optionA": "125\u00b0F",
+    "optionB": "135\u00b0F",
+    "optionC": "130\u00b0F",
+    "optionD": "145\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-043",
+    "category": "cdmSafety",
+    "question": "An employee training program explains symptoms that must be reported. What is its main food-safety purpose?",
+    "optionA": "Diagnose the cause of each illness",
+    "optionB": "Replace the need for hygiene training",
+    "optionC": "Control illness transmission through staff",
+    "optionD": "Confirm that every absence is work-related"
+  },
+  {
+    "questionId": "CDM-SAF-044",
+    "category": "cdmSafety",
+    "question": "A manager checks where clean utensils cross the route of soiled dishware. What is being evaluated?",
+    "optionA": "The efficiency of meal forecasting",
+    "optionB": "The accuracy of product portion sizes",
+    "optionC": "The adequacy of the diet-order system",
+    "optionD": "Potential contamination in workflow"
+  },
+  {
+    "questionId": "CDM-SAF-045",
+    "category": "cdmSafety",
+    "question": "A microwave is used to reheat TCS food for hot holding. In addition to 165\u00b0F throughout, what does the Food Code require?",
+    "optionA": "Stir or rotate, cover, stand 2 minutes",
+    "optionB": "Leave uncovered and serve at once",
+    "optionC": "Cover only after it reaches the cart",
+    "optionD": "Rest 1 minute without stirring"
+  },
+  {
+    "questionId": "CDM-SAF-046",
+    "category": "cdmSafety",
+    "question": "Which record most directly supports tracing a delivered ingredient affected by a recall?",
+    "optionA": "Ingredient totals from the menu analysis",
+    "optionB": "Supplier, product and lot details",
+    "optionC": "The receiving clerk's weekly hours",
+    "optionD": "The generic description on the menu"
+  },
+  {
+    "questionId": "CDM-SAF-047",
+    "category": "cdmSafety",
+    "question": "An ice machine supplies ice for drinks. Under the Food Code, which water source is required?",
+    "optionA": "Untreated collected rainwater",
+    "optionB": "Previously used cooling water",
+    "optionC": "Drinking water",
+    "optionD": "Water from the mop-service basin"
+  },
+  {
+    "questionId": "CDM-SAF-048",
+    "category": "cdmSafety",
+    "question": "A safety checklist still refers to equipment removed last year and omits the replacement. What should be done?",
+    "optionA": "Keep it until the next annual review",
+    "optionB": "Add only the new equipment price",
+    "optionC": "Rely on the supplier's service invoice",
+    "optionD": "Update it to current operations"
+  },
+  {
+    "questionId": "CDM-BUS-001",
+    "category": "cdmBusiness",
+    "question": "A department spends$6300 on raw food for 900 patient days. What is the raw-food cost per patient day?",
+    "optionA": "$7.00",
+    "optionB": "$3.00",
+    "optionC": "$9.00",
+    "optionD": "$14.00"
+  },
+  {
+    "questionId": "CDM-BUS-002",
+    "category": "cdmBusiness",
+    "question": "Which expense is most appropriately proposed in a capital budget rather than routine food purchases?",
+    "optionA": "A weekly delivery of fresh vegetables",
+    "optionB": "Replacement of a walk-in refrigerator",
+    "optionC": "Disposable cups for the current month",
+    "optionD": "Ingredients for the next menu cycle"
+  },
+  {
+    "questionId": "CDM-BUS-003",
+    "category": "cdmBusiness",
+    "question": "A food item costs$2.40 to produce in ingredients. Using a 30% food-cost percentage pricing method, what is its selling price?",
+    "optionA": "$3.12",
+    "optionB": "$6.00",
+    "optionC": "$8.00",
+    "optionD": "$7.20"
+  },
+  {
+    "questionId": "CDM-BUS-004",
+    "category": "cdmBusiness",
+    "question": "A manager compares making an item in-house with buying it prepared. Which comparison is most complete?",
+    "optionA": "Ingredient price without labor needs",
+    "optionB": "Purchase price without portion yield",
+    "optionC": "Food cost without quality requirements",
+    "optionD": "Quality, nutrition, labor and total cost"
+  },
+  {
+    "questionId": "CDM-BUS-005",
+    "category": "cdmBusiness",
+    "question": "Monthly food spending exceeds budget while census also rises. Which measure best helps separate volume from cost control?",
+    "optionA": "Cost per patient day",
+    "optionB": "Total monthly spending alone",
+    "optionC": "The number of supplier invoices",
+    "optionD": "The value of kitchen equipment"
+  },
+  {
+    "questionId": "CDM-BUS-006",
+    "category": "cdmBusiness",
+    "question": "A kitchen serves 720 meal equivalents using 90 labor hours. What is its productivity?",
+    "optionA": "6 meals per labor hour",
+    "optionB": "8 meals per labor hour",
+    "optionC": "9 meals per labor hour",
+    "optionD": "12 meals per labor hour"
+  },
+  {
+    "questionId": "CDM-BUS-007",
+    "category": "cdmBusiness",
+    "question": "A purchasing manager wants vendors to quote comparable products. What should be defined before requesting prices?",
+    "optionA": "A preferred brand and recent case price",
+    "optionB": "The previous vendor's delivery frequency",
+    "optionC": "Written quality and performance needs",
+    "optionD": "The supplier's current catalog alone"
+  },
+  {
+    "questionId": "CDM-BUS-008",
+    "category": "cdmBusiness",
+    "question": "A storeroom record shows 40 units but a physical count finds 34. What should happen before accepting the balance?",
+    "optionA": "Assume the written record is correct",
+    "optionB": "Order six units without documenting it",
+    "optionC": "Replace every inventory entry with zero",
+    "optionD": "Investigate and reconcile the difference"
+  },
+  {
+    "questionId": "CDM-BUS-009",
+    "category": "cdmBusiness",
+    "question": "A proposed oven saves labor but needs new electrical work. Which figure belongs in the purchase evaluation?",
+    "optionA": "Equipment plus installation costs",
+    "optionB": "Equipment invoice price alone",
+    "optionC": "Only the first month's energy bill",
+    "optionD": "Only the cost of the old oven"
+  },
+  {
+    "questionId": "CDM-BUS-010",
+    "category": "cdmBusiness",
+    "question": "A month has 3000 patient days and$5400 in supply expenses. What is supply cost per patient day?",
+    "optionA": "$0.56",
+    "optionB": "$1.80",
+    "optionC": "$2.40",
+    "optionD": "$5.40"
+  },
+  {
+    "questionId": "CDM-BUS-011",
+    "category": "cdmBusiness",
+    "question": "A department is considering catering for nearby offices. What should precede a full launch?",
+    "optionA": "Purchasing stock for maximum capacity",
+    "optionB": "Copying the largest competitor's menu",
+    "optionC": "Market demand and financial analysis",
+    "optionD": "Setting prices from ingredient cost alone"
+  },
+  {
+    "questionId": "CDM-BUS-012",
+    "category": "cdmBusiness",
+    "question": "An item has a raw-food cost of$1.80 and the facility uses a pricing factor of 4. What is the calculated menu price?",
+    "optionA": "$4.50",
+    "optionB": "$5.80",
+    "optionC": "$9.00",
+    "optionD": "$7.20"
+  },
+  {
+    "questionId": "CDM-BUS-013",
+    "category": "cdmBusiness",
+    "question": "Which record best supports ongoing comparison of actual operating expenses with the plan?",
+    "optionA": "A monthly budget-variance report",
+    "optionB": "A one-time equipment specification",
+    "optionC": "A list of approved menu substitutions",
+    "optionD": "A resident food-preference survey"
+  },
+  {
+    "questionId": "CDM-BUS-014",
+    "category": "cdmBusiness",
+    "question": "A more expensive produce item has substantially less trimming loss. Which comparison best evaluates its value?",
+    "optionA": "Cost per unopened shipping case",
+    "optionB": "Cost per usable edible unit",
+    "optionC": "Number of cases on the invoice",
+    "optionD": "Gross weight without yield adjustment"
+  },
+  {
+    "questionId": "CDM-BUS-015",
+    "category": "cdmBusiness",
+    "question": "A budget allows$12000 for a month and actual spending is$12900. What is the unfavorable dollar variance?",
+    "optionA": "$75",
+    "optionB": "$1200",
+    "optionC": "$900",
+    "optionD": "$24900"
+  },
+  {
+    "questionId": "CDM-BUS-016",
+    "category": "cdmBusiness",
+    "question": "A manager establishes par stock for a frequently used item. Which information is needed to avoid running out before replenishment?",
+    "optionA": "Package size and the latest invoice price",
+    "optionB": "Storage location and the last count date",
+    "optionC": "Only the previous month's total purchases",
+    "optionD": "Usage rate and supplier lead time"
+  },
+  {
+    "questionId": "CDM-BUS-017",
+    "category": "cdmBusiness",
+    "question": "A kitchen's food, labor and supplies cost$1800,$2400,and$600 for 600 meals. What is total cost per meal?",
+    "optionA": "$8.00",
+    "optionB": "$3.00",
+    "optionC": "$4.00",
+    "optionD": "$7.00"
+  },
+  {
+    "questionId": "CDM-BUS-018",
+    "category": "cdmBusiness",
+    "question": "A cashier's cash count differs from the sales report. What is the appropriate control response?",
+    "optionA": "Change sales to match cash automatically",
+    "optionB": "Reconcile records and investigate",
+    "optionC": "Carry the difference without a record",
+    "optionD": "Use next shift's receipts to cover it"
+  },
+  {
+    "questionId": "CDM-BUS-019",
+    "category": "cdmBusiness",
+    "question": "A purchasing offer reduces unit price but requires more perishables than can be used safely. What should guide the decision?",
+    "optionA": "The largest discount percentage alone",
+    "optionB": "The vendor's minimum quantity alone",
+    "optionC": "Usable quantity and total expected cost",
+    "optionD": "The amount of unused storage space alone"
+  },
+  {
+    "questionId": "CDM-BUS-020",
+    "category": "cdmBusiness",
+    "question": "A department uses 60 labor hours to produce 450 meals. What is labor time per meal?",
+    "optionA": "6 minutes",
+    "optionB": "7.5 minutes",
+    "optionC": "10 minutes",
+    "optionD": "8 minutes"
+  },
+  {
+    "questionId": "CDM-BUS-021",
+    "category": "cdmBusiness",
+    "question": "What is the strongest justification for replacing equipment rather than repairing it repeatedly?",
+    "optionA": "A life-cycle cost comparison",
+    "optionB": "Its age without condition information",
+    "optionC": "The appearance of a newer model",
+    "optionD": "The number of products in a vendor catalog"
+  },
+  {
+    "questionId": "CDM-BUS-022",
+    "category": "cdmBusiness",
+    "question": "A facility wants to compare its productivity with another kitchen. What should be checked before interpreting the figures?",
+    "optionA": "Identical names for both departments",
+    "optionB": "Comparable definitions and service scope",
+    "optionC": "Matching dates of equipment purchase",
+    "optionD": "Equal numbers of suppliers under contract"
+  },
+  {
+    "questionId": "CDM-BUS-023",
+    "category": "cdmBusiness",
+    "question": "A case costs$48 and contains 24 usable units. What is the cost per unit?",
+    "optionA": "$0.50",
+    "optionB": "$3.00",
+    "optionC": "$2.00",
+    "optionD": "$4.00"
+  },
+  {
+    "questionId": "CDM-BUS-024",
+    "category": "cdmBusiness",
+    "question": "A cost-saving project reduces ingredient spending but increases returned meals. What should be evaluated before calling it successful?",
+    "optionA": "Ingredient savings without other outcomes",
+    "optionB": "The number of revised purchase orders",
+    "optionC": "The date the cheaper contract was signed",
+    "optionD": "Cost alongside acceptance and service quality"
+  },
+  {
+    "questionId": "CDM-BUS-025",
+    "category": "cdmBusiness",
+    "question": "A department expects a temporary unit closure next quarter. What belongs in the operating-budget forecast?",
+    "optionA": "The reduced census and related expenses",
+    "optionB": "Unchanged volume for every month",
+    "optionC": "Only last year's annual total",
+    "optionD": "A new equipment asset regardless of need"
+  },
+  {
+    "questionId": "CDM-BUS-026",
+    "category": "cdmBusiness",
+    "question": "Daily usage is 8 units and delivery lead time is 3 days. With no safety-stock allowance in this calculation, how many units cover lead time?",
+    "optionA": "8 units",
+    "optionB": "24 units",
+    "optionC": "11 units",
+    "optionD": "32 units"
+  },
+  {
+    "questionId": "CDM-BUS-027",
+    "category": "cdmBusiness",
+    "question": "A high-grade ingredient is being used in a dish where that extra grade adds no needed benefit. What purchasing review is appropriate?",
+    "optionA": "The cheapest item regardless of suitability",
+    "optionB": "A larger portion to justify the grade",
+    "optionC": "A suitable lower-cost specification",
+    "optionD": "The same specification without review"
+  },
+  {
+    "questionId": "CDM-BUS-028",
+    "category": "cdmBusiness",
+    "question": "An equipment investment costs$12000 and is expected to save$3000 annually. Ignoring financing and residual value, what is its simple payback period?",
+    "optionA": "2 years",
+    "optionB": "3 years",
+    "optionC": "5 years",
+    "optionD": "4 years"
+  }
+]

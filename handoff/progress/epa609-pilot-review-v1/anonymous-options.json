@@ -1,0 +1,114 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "epa609Service",
+    "optionA": "Elapsed operating hours",
+    "optionB": "Mass processed by the recovery filter",
+    "optionC": "Date of the cylinder pressure test",
+    "optionD": "Number of vehicles charged that day"
+  },
+  {
+    "reviewId": "R002",
+    "category": "epa609Service",
+    "optionA": "Vehicle workshop manual",
+    "optionB": "Replacement component instructions",
+    "optionC": "Earlier service bulletin",
+    "optionD": "Factory underhood label"
+  },
+  {
+    "reviewId": "R003",
+    "category": "epa609Rules",
+    "optionA": "Performing the procedure on site",
+    "optionB": "Submission of the training program\u2019s subject review",
+    "optionC": "Laboratory certification of the recovery machine",
+    "optionD": "Chemical analysis of a reclaimed refrigerant batch"
+  },
+  {
+    "reviewId": "R004",
+    "category": "epa609Equipment",
+    "optionA": "28 mL",
+    "optionB": "12 mL",
+    "optionC": "8 mL",
+    "optionD": "20 mL"
+  },
+  {
+    "reviewId": "R005",
+    "category": "epa609Service",
+    "optionA": "Suitability for an OEM flushing procedure",
+    "optionB": "Compatibility with A/C system materials",
+    "optionC": "Removal of debris from condenser passages",
+    "optionD": "Removal of solvent during evacuation"
+  },
+  {
+    "reviewId": "R006",
+    "category": "epa609Rules",
+    "optionA": "Business opening passenger-car systems for repair",
+    "optionB": "Business opening off-road cab systems for repair",
+    "optionC": "Business limited to passenger-car refrigerant top-offs",
+    "optionD": "Business limited to off-road cab refrigerant top-offs"
+  },
+  {
+    "reviewId": "R007",
+    "category": "epa609Service",
+    "optionA": "Change the vacuum pump oil",
+    "optionB": "Replace the system desiccant",
+    "optionC": "Extend the evacuation period",
+    "optionD": "Recycle the recovered refrigerant"
+  },
+  {
+    "reviewId": "R008",
+    "category": "epa609Rules",
+    "optionA": "Salvage facility that extracted it from the donor",
+    "optionB": "Reclamation facility receiving it for purification",
+    "optionC": "Independent MVAC recycler hired by the seller",
+    "optionD": "Facility charging it into the receiving vehicle"
+  },
+  {
+    "reviewId": "R009",
+    "category": "epa609Yf",
+    "optionA": "Delivering the remainder of the programmed charge",
+    "optionB": "Injecting replacement compressor lubricant",
+    "optionC": "Repeating the initial 15% charging step",
+    "optionD": "Beginning recovery of the test charge"
+  },
+  {
+    "reviewId": "R010",
+    "category": "epa609Equipment",
+    "optionA": "Current entering through the power cord",
+    "optionB": "Rotation powered by the compressor motor",
+    "optionC": "Pressure retained in refrigerant passages",
+    "optionD": "Arcing from energized control switches"
+  },
+  {
+    "reviewId": "R011",
+    "category": "epa609Rules",
+    "optionA": "Equipment acquisition, machine model and serial number",
+    "optionB": "Refrigerant shipment, recipient name and facility address",
+    "optionC": "Resale-only intent, purchaser name and business address",
+    "optionD": "Employee certification, technician name and certification number"
+  },
+  {
+    "reviewId": "R012",
+    "category": "epa609Equipment",
+    "optionA": "Transferring it into a refillable transport cylinder",
+    "optionB": "Measuring the oil collected during recovery",
+    "optionC": "Recycling or reclamation",
+    "optionD": "Checking its identity with a refrigerant analyzer"
+  },
+  {
+    "reviewId": "R013",
+    "category": "epa609Equipment",
+    "optionA": "Heat released when vapor burns in air",
+    "optionB": "Acidic products formed near hot surfaces",
+    "optionC": "Oxygen displaced by the released vapor",
+    "optionD": "Cooling during rapid evaporation"
+  },
+  {
+    "reviewId": "R014",
+    "category": "epa609Yf",
+    "optionA": "Vapor is denser than surrounding air",
+    "optionB": "Liquid evaporates readily after release",
+    "optionC": "Vapor can ignite within a concentration range",
+    "optionD": "Vapor pressure increases with temperature"
+  }
+]

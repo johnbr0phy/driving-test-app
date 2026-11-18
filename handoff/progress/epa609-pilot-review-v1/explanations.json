@@ -1,0 +1,72 @@
+[
+  {
+    "reviewId": "R001",
+    "correctAnswer": "A",
+    "explanation": "Pump service intervals are based on its operating instructions; MACS gives operating hours as a typical basis. Refrigerant throughput concerns the recovery filter, and cylinder testing has its own schedule. Vehicle count does not measure pump operating time."
+  },
+  {
+    "reviewId": "R002",
+    "correctAnswer": "B",
+    "explanation": "The installed condenser\u2019s instructions supply its revised charge specification. MACS describes replacement condensers that require a changed charge and a new label. Here, the other references describe the original assembly; they may govern that configuration but do not supply this replacement\u2019s revision."
+  },
+  {
+    "reviewId": "R003",
+    "correctAnswer": "A",
+    "explanation": "Section 82.40(f) permits a representative to require an on-premises demonstration of proper recovery or recycling. Equipment certification, reclamation analysis and training-program reviews concern different actors and evidence."
+  },
+  {
+    "reviewId": "R004",
+    "correctAnswer": "B",
+    "explanation": "This job added 20 minus 8, or 12 mL, to the bottle. Replace that removed quantity with fresh oil of the required type. The 8 mL predates this job; 20 mL counts both jobs, and 28 mL double-counts the starting quantity. Emptying the bottle beforehand prevents this error."
+  },
+  {
+    "reviewId": "R005",
+    "correctAnswer": "B",
+    "explanation": "J2670 addresses stability and compatibility. It does not establish debris-removal performance, complete removal of residual solvent, or permission to flush a particular manufacturer\u2019s system. Those are separate questions before using a flushing process."
+  },
+  {
+    "reviewId": "R006",
+    "correctAnswer": "D",
+    "explanation": "Section 82.32(e)(4) exempts facilities that only charge MVAC-like appliances from purchasing recycling equipment, while retaining technician certification. Passenger-car top-offs require equipment purchase. Opening MVAC-like systems requires approved equipment to be available, and passenger-car repairs require approved equipment use."
+  },
+  {
+    "reviewId": "R007",
+    "correctAnswer": "B",
+    "explanation": "Prolonged atmospheric exposure can saturate system desiccant, so MACS recommends replacing it. Evacuation removes air and vapor but does not reliably resolve this moisture condition. Pump oil service maintains pump performance; recycling cleans recovered refrigerant outside the vehicle, not saturated desiccant remaining inside it."
+  },
+  {
+    "reviewId": "R008",
+    "correctAnswer": "D",
+    "explanation": "For this salvage reuse route, Section 82.34(d)(1)(ii)(B) assigns recycling to the facility that charges or recharges the refrigerant. Recovery at the salvage yard is an earlier step. Off-site reclamation is a separate route; an independent recycler is not substituted for the recharging facility in this provision."
+  },
+  {
+    "reviewId": "R009",
+    "correctAnswer": "D",
+    "explanation": "After a leak is detected during the pressurized check, the described machine permits recovery or re-evacuation. The balance requires passing both checks. Adding the test dose belongs to an earlier stage, and lubricant replacement is not an exception to the lockout."
+  },
+  {
+    "reviewId": "R010",
+    "correctAnswer": "C",
+    "explanation": "Disconnecting electrical power does not remove trapped refrigerant pressure. MACS warns that internal fittings can release pressurized refrigerant and directs technicians to consult authorized service personnel before nonroutine work. This is not permission to open the fittings."
+  },
+  {
+    "reviewId": "R011",
+    "correctAnswer": "C",
+    "explanation": "For the resale-only exception covering CFC-12 containers under 20 pounds, the seller obtains a written statement of resale intent with the purchaser\u2019s name and business address. Employee certification can support a different purchase route. Equipment and refrigerant-shipment records document other compliance duties."
+  },
+  {
+    "reviewId": "R012",
+    "correctAnswer": "C",
+    "explanation": "Mobile service retains the same processing requirements as shop service. Recovery alone is insufficient before reuse, even in the same vehicle. A cylinder transfer, identity check or oil measurement serves another purpose and does not complete recycling or reclamation."
+  },
+  {
+    "reviewId": "R013",
+    "correctAnswer": "D",
+    "explanation": "Rapid evaporation draws heat from contacted tissue and can cause frostbite. Oxygen displacement is an inhalation hazard; decomposition requires heat, and combustion requires ignition conditions. These hazards call for different controls."
+  },
+  {
+    "reviewId": "R014",
+    "correctAnswer": "A",
+    "explanation": "Vapor density greater than air allows released refrigerant to accumulate in low areas. Evaporation creates vapor, pressure depends on temperature, and flammability affects ignition risk; those facts do not explain its tendency to collect in a pit."
+  }
+]

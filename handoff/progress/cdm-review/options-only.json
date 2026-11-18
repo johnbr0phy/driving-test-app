@@ -1,0 +1,1602 @@
+[
+  {
+    "questionId": "CDM-NUT-001",
+    "category": "cdmNutrition",
+    "optionA": "Observe a meal directly",
+    "optionB": "Repeat the admission weight",
+    "optionC": "Copy the reported appetite",
+    "optionD": "Change the prescribed diet"
+  },
+  {
+    "questionId": "CDM-NUT-002",
+    "category": "cdmNutrition",
+    "optionA": "Dietitian and speech therapist",
+    "optionB": "Dietitian and pharmacist",
+    "optionC": "Nurse and occupational therapist",
+    "optionD": "Physician and physical therapist"
+  },
+  {
+    "questionId": "CDM-NUT-003",
+    "category": "cdmNutrition",
+    "optionA": "Lunch entree offered as planned",
+    "optionB": "Usual appetite reported on admission",
+    "optionC": "Ate 25% of lunch entree",
+    "optionD": "Entree portion met the menu plan"
+  },
+  {
+    "questionId": "CDM-NUT-004",
+    "category": "cdmNutrition",
+    "optionA": "Number of cartons delivered",
+    "optionB": "Nutrients listed on each carton",
+    "optionC": "Number of days since ordering",
+    "optionD": "Amount actually consumed"
+  },
+  {
+    "questionId": "CDM-NUT-005",
+    "category": "cdmNutrition",
+    "optionA": "Offer an approved equivalent",
+    "optionB": "Keep the standard selection",
+    "optionC": "Require a different diagnosis",
+    "optionD": "Replace the entire diet order"
+  },
+  {
+    "questionId": "CDM-NUT-006",
+    "category": "cdmNutrition",
+    "optionA": "A food-frequency questionnaire",
+    "optionB": "A 24-hour dietary recall",
+    "optionC": "A six-month weight comparison",
+    "optionD": "A weekly purchasing summary"
+  },
+  {
+    "questionId": "CDM-NUT-007",
+    "category": "cdmNutrition",
+    "optionA": "The admitting transport driver",
+    "optionB": "The receiving foodservice clerk",
+    "optionC": "A caregiver who assists meals",
+    "optionD": "A relative who visits annually"
+  },
+  {
+    "questionId": "CDM-NUT-008",
+    "category": "cdmNutrition",
+    "optionA": "8%",
+    "optionB": "10%",
+    "optionC": "12%",
+    "optionD": "5%"
+  },
+  {
+    "questionId": "CDM-NUT-009",
+    "category": "cdmNutrition",
+    "optionA": "How the allowance is allocated",
+    "optionB": "The usual beverage order alone",
+    "optionC": "Only fluids offered at breakfast",
+    "optionD": "A standard limit for all clients"
+  },
+  {
+    "questionId": "CDM-NUT-010",
+    "category": "cdmNutrition",
+    "optionA": "150 kcal",
+    "optionB": "300 kcal",
+    "optionC": "450 kcal",
+    "optionD": "600 kcal"
+  },
+  {
+    "questionId": "CDM-NUT-011",
+    "category": "cdmNutrition",
+    "optionA": "Occupational safety specialist",
+    "optionB": "Registered pharmacy technician",
+    "optionC": "Speech-language pathologist",
+    "optionD": "Foodservice quality coordinator"
+  },
+  {
+    "questionId": "CDM-NUT-012",
+    "category": "cdmNutrition",
+    "optionA": "Wait for the next menu cycle",
+    "optionB": "Keep both versions in rotation",
+    "optionC": "Ask the resident to pick a code",
+    "optionD": "Update the service instructions"
+  },
+  {
+    "questionId": "CDM-NUT-013",
+    "category": "cdmNutrition",
+    "optionA": "Confirm choices with the resident",
+    "optionB": "Assume all meat is prohibited",
+    "optionC": "Use a universal vegetarian menu",
+    "optionD": "Remove every dairy selection"
+  },
+  {
+    "questionId": "CDM-NUT-014",
+    "category": "cdmNutrition",
+    "optionA": "Develop a much better attitude",
+    "optionB": "Consume 75% of lunch for 7 days",
+    "optionC": "Enjoy all available selections",
+    "optionD": "Receive satisfactory nutrition"
+  },
+  {
+    "questionId": "CDM-NUT-015",
+    "category": "cdmNutrition",
+    "optionA": "Diagnose a vitamin deficiency",
+    "optionB": "Prescribe a protein supplement",
+    "optionC": "Flag risk for dietitian follow-up",
+    "optionD": "Calculate a new drug dosage"
+  },
+  {
+    "questionId": "CDM-NUT-016",
+    "category": "cdmNutrition",
+    "optionA": "Single-meal observation form",
+    "optionB": "Daily refrigerator temperature log",
+    "optionC": "One-time admission weight",
+    "optionD": "Food-frequency questionnaire"
+  },
+  {
+    "questionId": "CDM-NUT-017",
+    "category": "cdmNutrition",
+    "optionA": "The revised nutrient values",
+    "optionB": "The original purchase price",
+    "optionC": "The previous recipe yield alone",
+    "optionD": "The unchanged menu description"
+  },
+  {
+    "questionId": "CDM-NUT-018",
+    "category": "cdmNutrition",
+    "optionA": "You like our lunches, right?",
+    "optionB": "Which meals do you enjoy?",
+    "optionC": "Why are you so selective?",
+    "optionD": "Everyone eats this, correct?"
+  },
+  {
+    "questionId": "CDM-NUT-019",
+    "category": "cdmNutrition",
+    "optionA": "Completion of the initial interview",
+    "optionB": "Delivery of the planned meals alone",
+    "optionC": "Progress toward agreed goals",
+    "optionD": "Agreement on the admission diagnosis"
+  },
+  {
+    "questionId": "CDM-NUT-020",
+    "category": "cdmNutrition",
+    "optionA": "90 mL",
+    "optionB": "120 mL",
+    "optionC": "180 mL",
+    "optionD": "60 mL"
+  },
+  {
+    "questionId": "CDM-NUT-021",
+    "category": "cdmNutrition",
+    "optionA": "Review recent intake and progress",
+    "optionB": "Rewrite all clinical diagnoses",
+    "optionC": "Replace the existing prescription",
+    "optionD": "Order supplements for everyone"
+  },
+  {
+    "questionId": "CDM-NUT-022",
+    "category": "cdmNutrition",
+    "optionA": "Record a new medical diagnosis",
+    "optionB": "Discuss acceptable alternatives",
+    "optionC": "Cancel all remaining meal choices",
+    "optionD": "Withhold the next scheduled snack"
+  },
+  {
+    "questionId": "CDM-NUT-023",
+    "category": "cdmNutrition",
+    "optionA": "Calculate a new menu immediately",
+    "optionB": "Use the lowest figure permanently",
+    "optionC": "Verify the unexpected measurement",
+    "optionD": "Delete the two earlier results"
+  },
+  {
+    "questionId": "CDM-NUT-024",
+    "category": "cdmNutrition",
+    "optionA": "Choose the cheapest drink available",
+    "optionB": "Remove nourishment without review",
+    "optionC": "Double the disliked portion size",
+    "optionD": "Review a suitable option with the team"
+  },
+  {
+    "questionId": "CDM-NUT-025",
+    "category": "cdmNutrition",
+    "optionA": "Current tray card and diet manual",
+    "optionB": "Production tally and staffing roster",
+    "optionC": "Purchase order and inventory sheet",
+    "optionD": "Cycle-menu calendar and cost report"
+  },
+  {
+    "questionId": "CDM-NUT-026",
+    "category": "cdmNutrition",
+    "optionA": "10 g",
+    "optionB": "20 g",
+    "optionC": "15 g",
+    "optionD": "45 g"
+  },
+  {
+    "questionId": "CDM-NUT-027",
+    "category": "cdmNutrition",
+    "optionA": "Ask several questions at once",
+    "optionB": "Treat silence as full agreement",
+    "optionC": "Adapt the pace and communication",
+    "optionD": "Direct every answer to a visitor"
+  },
+  {
+    "questionId": "CDM-NUT-028",
+    "category": "cdmNutrition",
+    "optionA": "The public reception counter",
+    "optionB": "The busy cafeteria checkout",
+    "optionC": "The open visitor waiting area",
+    "optionD": "A private care-team setting"
+  },
+  {
+    "questionId": "CDM-NUT-029",
+    "category": "cdmNutrition",
+    "optionA": "Acceptance and measurable progress",
+    "optionB": "Its popularity on another unit",
+    "optionC": "Its inclusion on the printed menu",
+    "optionD": "Its higher nutrient content alone"
+  },
+  {
+    "questionId": "CDM-NUT-030",
+    "category": "cdmNutrition",
+    "optionA": "Count only beverages on trays",
+    "optionB": "Include all observed oral intake",
+    "optionC": "Replace amounts with appetite scores",
+    "optionD": "Record only fluids from breakfast"
+  },
+  {
+    "questionId": "CDM-NUT-031",
+    "category": "cdmNutrition",
+    "optionA": "Wait until the next survey",
+    "optionB": "Retain them only in memory",
+    "optionC": "Record actions and follow-up",
+    "optionD": "Record only the meeting length"
+  },
+  {
+    "questionId": "CDM-NUT-032",
+    "category": "cdmNutrition",
+    "optionA": "The original invoice unit price",
+    "optionB": "The preference of the tray assembler",
+    "optionC": "The quantity ordered last month",
+    "optionD": "Availability in the facility"
+  },
+  {
+    "questionId": "CDM-NUT-033",
+    "category": "cdmNutrition",
+    "optionA": "1600 kcal",
+    "optionB": "1500 kcal",
+    "optionC": "1700 kcal",
+    "optionD": "1800 kcal"
+  },
+  {
+    "questionId": "CDM-NUT-034",
+    "category": "cdmNutrition",
+    "optionA": "Discuss another resident's diagnosis",
+    "optionB": "Explain the order in plain language",
+    "optionC": "Provide a new medical treatment",
+    "optionD": "Promise the restriction is permanent"
+  },
+  {
+    "questionId": "CDM-NUT-035",
+    "category": "cdmNutrition",
+    "optionA": "A preference for a different table",
+    "optionB": "A request for a later visitor time",
+    "optionC": "New difficulty eating usual meals",
+    "optionD": "A change in preferred napkin color"
+  },
+  {
+    "questionId": "CDM-NUT-036",
+    "category": "cdmNutrition",
+    "optionA": "It passes because calories match",
+    "optionB": "It passes if the serving is small",
+    "optionC": "It fails only if the meal is cold",
+    "optionD": "It fails the prescribed meal plan"
+  },
+  {
+    "questionId": "CDM-NUT-037",
+    "category": "cdmNutrition",
+    "optionA": "Current knowledge and specific needs",
+    "optionB": "Reading level with no knowledge check",
+    "optionC": "Topics from the previous class",
+    "optionD": "A standard lesson for every client"
+  },
+  {
+    "questionId": "CDM-NUT-038",
+    "category": "cdmNutrition",
+    "optionA": "Automatic removal of restrictions",
+    "optionB": "Clinical review of diet suitability",
+    "optionC": "Independent diagnosis from the menu",
+    "optionD": "Replacement of all prescribed foods"
+  },
+  {
+    "questionId": "CDM-NUT-039",
+    "category": "cdmNutrition",
+    "optionA": "Keep the estimate as a fact",
+    "optionB": "Copy yesterday's breakfast entry",
+    "optionC": "Record only verified information",
+    "optionD": "Replace the entry with a diagnosis"
+  },
+  {
+    "questionId": "CDM-NUT-040",
+    "category": "cdmNutrition",
+    "optionA": "Keep the original interview as current",
+    "optionB": "Base choices on the unit majority",
+    "optionC": "Use the hospital menu without review",
+    "optionD": "Update the profile with the client"
+  },
+  {
+    "questionId": "CDM-FOO-001",
+    "category": "cdmFoodservice",
+    "optionA": "Use of the standardized recipe",
+    "optionB": "The forecast of expected demand",
+    "optionC": "The pattern of residents' selections",
+    "optionD": "The ordering interval for ingredients"
+  },
+  {
+    "questionId": "CDM-FOO-002",
+    "category": "cdmFoodservice",
+    "optionA": "0.4",
+    "optionB": "2.5",
+    "optionC": "1.5",
+    "optionD": "4.0"
+  },
+  {
+    "questionId": "CDM-FOO-003",
+    "category": "cdmFoodservice",
+    "optionA": "A storeroom inventory valuation",
+    "optionB": "An employee turnover calculation",
+    "optionC": "Acceptance and plate-waste study",
+    "optionD": "A vendor invoice reconciliation"
+  },
+  {
+    "questionId": "CDM-FOO-004",
+    "category": "cdmFoodservice",
+    "optionA": "The portion count on tray tickets",
+    "optionB": "The edible yield of each ingredient",
+    "optionC": "The previous week's attendance",
+    "optionD": "Equipment availability over time"
+  },
+  {
+    "questionId": "CDM-FOO-005",
+    "category": "cdmFoodservice",
+    "optionA": "Nutrient and diet compatibility",
+    "optionB": "Matching the original package size",
+    "optionC": "Being the same wholesale price",
+    "optionD": "Having the same shelf location"
+  },
+  {
+    "questionId": "CDM-FOO-006",
+    "category": "cdmFoodservice",
+    "optionA": "$0.67",
+    "optionB": "$1.50",
+    "optionC": "$2.00",
+    "optionD": "$3.50"
+  },
+  {
+    "questionId": "CDM-FOO-007",
+    "category": "cdmFoodservice",
+    "optionA": "Brand name and most recent price",
+    "optionB": "Total case cost and delivery date",
+    "optionC": "Size, grade, pack and intended use",
+    "optionD": "Supplier reputation and order volume"
+  },
+  {
+    "questionId": "CDM-FOO-008",
+    "category": "cdmFoodservice",
+    "optionA": "Use the demonstrated yield unchanged",
+    "optionB": "Scale the cooking time by batch size",
+    "optionC": "Accept the supplier's portion claim",
+    "optionD": "Test it with local equipment"
+  },
+  {
+    "questionId": "CDM-FOO-009",
+    "category": "cdmFoodservice",
+    "optionA": "85%",
+    "optionB": "15%",
+    "optionC": "90%",
+    "optionD": "95%"
+  },
+  {
+    "questionId": "CDM-FOO-010",
+    "category": "cdmFoodservice",
+    "optionA": "The ingredient receiving checklist",
+    "optionB": "The production schedule",
+    "optionC": "The menu nutrient-analysis report",
+    "optionD": "The final meal-service tally"
+  },
+  {
+    "questionId": "CDM-FOO-011",
+    "category": "cdmFoodservice",
+    "optionA": "The recipe's standard portion size",
+    "optionB": "The nutrient target for each meal",
+    "optionC": "The forecast using updated census",
+    "optionD": "The product's receiving specification"
+  },
+  {
+    "questionId": "CDM-FOO-012",
+    "category": "cdmFoodservice",
+    "optionA": "48 portions",
+    "optionB": "72 portions",
+    "optionC": "96 portions",
+    "optionD": "64 portions"
+  },
+  {
+    "questionId": "CDM-FOO-013",
+    "category": "cdmFoodservice",
+    "optionA": "A structured taste-panel form",
+    "optionB": "A tray-accuracy inspection form",
+    "optionC": "A production-temperature log",
+    "optionD": "A recipe ingredient-cost worksheet"
+  },
+  {
+    "questionId": "CDM-FOO-014",
+    "category": "cdmFoodservice",
+    "optionA": "Increase the estimated diner count",
+    "optionB": "Specify the portioning utensil",
+    "optionC": "Change the recipe's batch quantity",
+    "optionD": "Standardize the serving-line speed"
+  },
+  {
+    "questionId": "CDM-FOO-015",
+    "category": "cdmFoodservice",
+    "optionA": "Diet-order interpretation",
+    "optionB": "Recipe nutrient calculation",
+    "optionC": "Meal-service condition",
+    "optionD": "Production quantity forecasting"
+  },
+  {
+    "questionId": "CDM-FOO-016",
+    "category": "cdmFoodservice",
+    "optionA": "13.5 lb",
+    "optionB": "22.5 lb",
+    "optionC": "32 lb",
+    "optionD": "24 lb"
+  },
+  {
+    "questionId": "CDM-FOO-017",
+    "category": "cdmFoodservice",
+    "optionA": "A defined measure and target",
+    "optionB": "An easily achieved activity count",
+    "optionC": "A description of the preferred process",
+    "optionD": "A promise of zero future mistakes"
+  },
+  {
+    "questionId": "CDM-FOO-018",
+    "category": "cdmFoodservice",
+    "optionA": "Count staff training as proof of success",
+    "optionB": "Analyze results and adjust the process",
+    "optionC": "Change the goal to match current results",
+    "optionD": "Extend the rollout before collecting data"
+  },
+  {
+    "questionId": "CDM-FOO-019",
+    "category": "cdmFoodservice",
+    "optionA": "Use the most popular unit choices",
+    "optionB": "Assign the lowest-cost selections",
+    "optionC": "Use known individual preferences",
+    "optionD": "Repeat yesterday's tray by default"
+  },
+  {
+    "questionId": "CDM-FOO-020",
+    "category": "cdmFoodservice",
+    "optionA": "19.2 lb",
+    "optionB": "24 lb",
+    "optionC": "36 lb",
+    "optionD": "30 lb"
+  },
+  {
+    "questionId": "CDM-FOO-021",
+    "category": "cdmFoodservice",
+    "optionA": "A waste log with reason codes",
+    "optionB": "A total monthly food-cost report",
+    "optionC": "A menu acceptance score without comments",
+    "optionD": "A purchase summary by food group"
+  },
+  {
+    "questionId": "CDM-FOO-022",
+    "category": "cdmFoodservice",
+    "optionA": "The planned quantity of each recipe",
+    "optionB": "Dispatch and delivery workflow",
+    "optionC": "The nutrient analysis of the lunch menu",
+    "optionD": "The recipe's preparation instructions"
+  },
+  {
+    "questionId": "CDM-FOO-023",
+    "category": "cdmFoodservice",
+    "optionA": "45 portions",
+    "optionB": "55 portions",
+    "optionC": "40 portions",
+    "optionD": "62 portions"
+  },
+  {
+    "questionId": "CDM-FOO-024",
+    "category": "cdmFoodservice",
+    "optionA": "The regular menu without modifications",
+    "optionB": "The previous day's general production total",
+    "optionC": "The most commonly requested entree",
+    "optionD": "The individual diet instructions"
+  },
+  {
+    "questionId": "CDM-FOO-025",
+    "category": "cdmFoodservice",
+    "optionA": "To reproduce the intended result",
+    "optionB": "To establish the required diner count",
+    "optionC": "To confirm the product's receipt date",
+    "optionD": "To determine the monthly purchase total"
+  },
+  {
+    "questionId": "CDM-FOO-026",
+    "category": "cdmFoodservice",
+    "optionA": "The number of ethnic dishes offered",
+    "optionB": "Feedback from the residents served",
+    "optionC": "The proportion of imported ingredients",
+    "optionD": "The variety of recipes in the database"
+  },
+  {
+    "questionId": "CDM-FOO-027",
+    "category": "cdmFoodservice",
+    "optionA": "The price paid for each ingredient",
+    "optionB": "The meal-service temperature target",
+    "optionC": "Demand estimates and batch yield",
+    "optionD": "The frequency of taste-panel meetings"
+  },
+  {
+    "questionId": "CDM-FOO-028",
+    "category": "cdmFoodservice",
+    "optionA": "4 cups",
+    "optionB": "6 cups",
+    "optionC": "8 cups",
+    "optionD": "5 cups"
+  },
+  {
+    "questionId": "CDM-FOO-029",
+    "category": "cdmFoodservice",
+    "optionA": "Arrival time and product temperature",
+    "optionB": "Number of staff trained in the change",
+    "optionC": "Number of carts used during service",
+    "optionD": "Total portions prepared in the kitchen"
+  },
+  {
+    "questionId": "CDM-FOO-030",
+    "category": "cdmFoodservice",
+    "optionA": "Reduce each person's serving size",
+    "optionB": "Reconcile the planned quantity",
+    "optionC": "Use the older tally without review",
+    "optionD": "Add 15 unrequested nourishment trays"
+  },
+  {
+    "questionId": "CDM-FOO-031",
+    "category": "cdmFoodservice",
+    "optionA": "An excessive number of recipe trials",
+    "optionB": "An insufficient number of suppliers",
+    "optionC": "Uncontrolled testing conditions",
+    "optionD": "An unusually short purchasing cycle"
+  },
+  {
+    "questionId": "CDM-FOO-032",
+    "category": "cdmFoodservice",
+    "optionA": "20%",
+    "optionB": "60%",
+    "optionC": "80%",
+    "optionD": "75%"
+  },
+  {
+    "questionId": "CDM-FOO-033",
+    "category": "cdmFoodservice",
+    "optionA": "Add it to preparation and delivery records",
+    "optionB": "Increase the regular entree automatically",
+    "optionC": "Wait for an annual menu revision",
+    "optionD": "Count it as consumed when ordered"
+  },
+  {
+    "questionId": "CDM-FOO-034",
+    "category": "cdmFoodservice",
+    "optionA": "Limit input to department leadership",
+    "optionB": "Include staff who perform the work",
+    "optionC": "Replace baseline data with staff opinion",
+    "optionD": "Choose changes before defining the problem"
+  },
+  {
+    "questionId": "CDM-FOO-035",
+    "category": "cdmFoodservice",
+    "optionA": "The total number of offered dishes",
+    "optionB": "The order in which trays are assembled",
+    "optionC": "The available compliant choices",
+    "optionD": "The quantity forecast for the regular menu"
+  },
+  {
+    "questionId": "CDM-FOO-036",
+    "category": "cdmFoodservice",
+    "optionA": "4 lb",
+    "optionB": "8 lb",
+    "optionC": "12 lb",
+    "optionD": "9 lb"
+  },
+  {
+    "questionId": "CDM-FOO-037",
+    "category": "cdmFoodservice",
+    "optionA": "Test an acceptable menu alternative",
+    "optionB": "Increase every vegetable portion",
+    "optionC": "Purchase larger storage containers",
+    "optionD": "Reduce the temperature standard"
+  },
+  {
+    "questionId": "CDM-FOO-038",
+    "category": "cdmFoodservice",
+    "optionA": "The total number of portions ordered",
+    "optionB": "Actual weight per counted unit",
+    "optionC": "The length of the current menu cycle",
+    "optionD": "The previous supplier's case price"
+  },
+  {
+    "questionId": "CDM-FOO-039",
+    "category": "cdmFoodservice",
+    "optionA": "Number of tray checks documented",
+    "optionB": "Number of employees trained to check",
+    "optionC": "Frequency of diet-selection errors",
+    "optionD": "Time spent writing the new procedure"
+  },
+  {
+    "questionId": "CDM-FOO-040",
+    "category": "cdmFoodservice",
+    "optionA": "3 batches",
+    "optionB": "5 batches",
+    "optionC": "6 batches",
+    "optionD": "4 batches"
+  },
+  {
+    "questionId": "CDM-FOO-041",
+    "category": "cdmFoodservice",
+    "optionA": "Preserve suitability and consistency",
+    "optionB": "Keep every substitute at the same cost",
+    "optionC": "Ensure all products use the same brand",
+    "optionD": "Make every change match the original pack"
+  },
+  {
+    "questionId": "CDM-FOO-042",
+    "category": "cdmFoodservice",
+    "optionA": "Start the longest recipe at dispatch",
+    "optionB": "Work backward from dispatch time",
+    "optionC": "Prepare all components as early as possible",
+    "optionD": "Use the previous shift's start times"
+  },
+  {
+    "questionId": "CDM-FOO-043",
+    "category": "cdmFoodservice",
+    "optionA": "The calculated nutrients in the recipe",
+    "optionB": "The approved ingredient specifications",
+    "optionC": "Conditions at the point of service",
+    "optionD": "The planned number of meal portions"
+  },
+  {
+    "questionId": "CDM-FOO-044",
+    "category": "cdmFoodservice",
+    "optionA": "The number of scheduled kitchen staff",
+    "optionB": "The original menu's ingredient prices",
+    "optionC": "The number of portions in each recipe",
+    "optionD": "Leftovers and reasons for variance"
+  },
+  {
+    "questionId": "CDM-PER-001",
+    "category": "cdmPersonnel",
+    "optionA": "7 FTEs",
+    "optionB": "6 FTEs",
+    "optionC": "8 FTEs",
+    "optionD": "10 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-002",
+    "category": "cdmPersonnel",
+    "optionA": "The weekly time sheet",
+    "optionB": "The job description",
+    "optionC": "The department budget",
+    "optionD": "The orientation attendance log"
+  },
+  {
+    "questionId": "CDM-PER-003",
+    "category": "cdmPersonnel",
+    "optionA": "Different questions for each person",
+    "optionB": "An informal impression after each visit",
+    "optionC": "A consistent job-related guide",
+    "optionD": "The order applications were received"
+  },
+  {
+    "questionId": "CDM-PER-004",
+    "category": "cdmPersonnel",
+    "optionA": "Would you enjoy working in this kitchen?",
+    "optionB": "Which shift would you prefer to work?",
+    "optionC": "Are you willing to learn new procedures?",
+    "optionD": "Describe a time you resolved a service delay"
+  },
+  {
+    "questionId": "CDM-PER-005",
+    "category": "cdmPersonnel",
+    "optionA": "Verify job-specific competence",
+    "optionB": "File attendance as full completion",
+    "optionC": "Assign independent work immediately",
+    "optionD": "Wait for the annual performance review"
+  },
+  {
+    "questionId": "CDM-PER-006",
+    "category": "cdmPersonnel",
+    "optionA": "2.0 FTEs",
+    "optionB": "2.5 FTEs",
+    "optionC": "3.0 FTEs",
+    "optionD": "4.0 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-007",
+    "category": "cdmPersonnel",
+    "optionA": "Add equal hours to every shift",
+    "optionB": "Shorten all orientation sessions",
+    "optionC": "Stagger coverage around demand",
+    "optionD": "Increase the standard portion size"
+  },
+  {
+    "questionId": "CDM-PER-008",
+    "category": "cdmPersonnel",
+    "optionA": "The manager's general impression",
+    "optionB": "The employee's unrelated personal plans",
+    "optionC": "The average rating of other departments",
+    "optionD": "Dated observations against the standard"
+  },
+  {
+    "questionId": "CDM-PER-009",
+    "category": "cdmPersonnel",
+    "optionA": "Complete setup by 10:30 for the next 10 shifts",
+    "optionB": "Show more commitment whenever possible",
+    "optionC": "Become the most dependable team member",
+    "optionD": "Improve service enough to satisfy everyone"
+  },
+  {
+    "questionId": "CDM-PER-010",
+    "category": "cdmPersonnel",
+    "optionA": "A larger number of unrelated goals",
+    "optionB": "Support needed to meet the expectation",
+    "optionC": "A guarantee of an immediate promotion",
+    "optionD": "A comparison with the newest employee"
+  },
+  {
+    "questionId": "CDM-PER-011",
+    "category": "cdmPersonnel",
+    "optionA": "The topics used during orientation",
+    "optionB": "The most convenient available lesson",
+    "optionC": "A skills and needs assessment",
+    "optionD": "A request from the newest employee"
+  },
+  {
+    "questionId": "CDM-PER-012",
+    "category": "cdmPersonnel",
+    "optionA": "A signature on the equipment receipt",
+    "optionB": "A satisfaction rating for the instructor",
+    "optionC": "A copy of the attendance certificate",
+    "optionD": "Observed return demonstration"
+  },
+  {
+    "questionId": "CDM-PER-013",
+    "category": "cdmPersonnel",
+    "optionA": "1 FTE",
+    "optionB": "0.5 FTE",
+    "optionC": "2 FTEs",
+    "optionD": "8 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-014",
+    "category": "cdmPersonnel",
+    "optionA": "A longer list of discussion topics",
+    "optionB": "Named owners and due dates",
+    "optionC": "More copies of the prior agenda",
+    "optionD": "An earlier date for the next meeting"
+  },
+  {
+    "questionId": "CDM-PER-015",
+    "category": "cdmPersonnel",
+    "optionA": "Minutes not yet approved",
+    "optionB": "Individual disciplinary records",
+    "optionC": "An agenda with objectives",
+    "optionD": "The next annual evaluation scores"
+  },
+  {
+    "questionId": "CDM-PER-016",
+    "category": "cdmPersonnel",
+    "optionA": "Who asks most insistently",
+    "optionB": "Which request arrived verbally",
+    "optionC": "The manager's personal friendship",
+    "optionD": "Established scheduling rules"
+  },
+  {
+    "questionId": "CDM-PER-017",
+    "category": "cdmPersonnel",
+    "optionA": "Cross-training with competence checks",
+    "optionB": "Printing more copies of the duty list",
+    "optionC": "Keeping the same task with one person",
+    "optionD": "Reducing documentation of staff skills"
+  },
+  {
+    "questionId": "CDM-PER-018",
+    "category": "cdmPersonnel",
+    "optionA": "Only the project's original budget",
+    "optionB": "Their tasks, timing and responsibilities",
+    "optionC": "Only the name of the software vendor",
+    "optionD": "Only the date of the next annual review"
+  },
+  {
+    "questionId": "CDM-PER-019",
+    "category": "cdmPersonnel",
+    "optionA": "Count the pages in the personnel file",
+    "optionB": "Assume success after the meeting ends",
+    "optionC": "Compare follow-up results with the goal",
+    "optionD": "Use the employee's tenure as the outcome"
+  },
+  {
+    "questionId": "CDM-PER-020",
+    "category": "cdmPersonnel",
+    "optionA": "Only the wording of staff job titles",
+    "optionB": "Only the filing order of past reports",
+    "optionC": "The goal without considering demand",
+    "optionD": "Resources and the action plan"
+  },
+  {
+    "questionId": "CDM-PER-021",
+    "category": "cdmPersonnel",
+    "optionA": "A demonstrated production skill",
+    "optionB": "An assumed cultural background",
+    "optionC": "The applicant's family arrangements",
+    "optionD": "Membership in the manager's social group"
+  },
+  {
+    "questionId": "CDM-PER-022",
+    "category": "cdmPersonnel",
+    "optionA": "Overtime totals for the month",
+    "optionB": "Attendance patterns by shift",
+    "optionC": "The employee turnover percentage",
+    "optionD": "The number of unfilled positions"
+  },
+  {
+    "questionId": "CDM-PER-023",
+    "category": "cdmPersonnel",
+    "optionA": "0.6 FTE",
+    "optionB": "2.4 FTEs",
+    "optionC": "1.8 FTEs",
+    "optionD": "3.0 FTEs"
+  },
+  {
+    "questionId": "CDM-PER-024",
+    "category": "cdmPersonnel",
+    "optionA": "The employee's annual leave balance",
+    "optionB": "The length of the orientation manual",
+    "optionC": "The number of other departments trained",
+    "optionD": "Availability of necessary resources"
+  },
+  {
+    "questionId": "CDM-PER-025",
+    "category": "cdmPersonnel",
+    "optionA": "The specific gap and expected action",
+    "optionB": "A general statement of disappointment",
+    "optionC": "A comparison with a favored coworker",
+    "optionD": "A prediction about future personality"
+  },
+  {
+    "questionId": "CDM-PER-026",
+    "category": "cdmPersonnel",
+    "optionA": "A separate slogan for every task",
+    "optionB": "Assigned responsibility and timelines",
+    "optionC": "A promise that priorities never change",
+    "optionD": "An identical workload for every job title"
+  },
+  {
+    "questionId": "CDM-PER-027",
+    "category": "cdmPersonnel",
+    "optionA": "A second satisfaction questionnaire",
+    "optionB": "A count of slides used in the session",
+    "optionC": "Observed application on the job",
+    "optionD": "A longer list of participants' names"
+  },
+  {
+    "questionId": "CDM-PER-028",
+    "category": "cdmPersonnel",
+    "optionA": "Overtime expense and food prices",
+    "optionB": "Headcount and annual training hours",
+    "optionC": "Shift length and employee seniority",
+    "optionD": "Workload timing and scheduled coverage"
+  },
+  {
+    "questionId": "CDM-PER-029",
+    "category": "cdmPersonnel",
+    "optionA": "Complete and record missed training",
+    "optionB": "Treat the original signature as sufficient",
+    "optionC": "Wait until the employee requests a review",
+    "optionD": "Remove that requirement from the checklist"
+  },
+  {
+    "questionId": "CDM-PER-030",
+    "category": "cdmPersonnel",
+    "optionA": "Leave duties unchanged until turnover",
+    "optionB": "Review duties and revise the document",
+    "optionC": "Replace it with the weekly roster",
+    "optionD": "Use only the equipment sales brochure"
+  },
+  {
+    "questionId": "CDM-PER-031",
+    "category": "cdmPersonnel",
+    "optionA": "Let only the senior cook propose changes",
+    "optionB": "End discussion once the manager speaks",
+    "optionC": "Invite contributions without interruption",
+    "optionD": "Require every suggestion to be anonymous"
+  },
+  {
+    "questionId": "CDM-PER-032",
+    "category": "cdmPersonnel",
+    "optionA": "Filing the revision without distribution",
+    "optionB": "Telling only the next shift supervisor",
+    "optionC": "Waiting for workers to notice the change",
+    "optionD": "Timely notice to affected employees"
+  },
+  {
+    "questionId": "CDM-PER-033",
+    "category": "cdmPersonnel",
+    "optionA": "A shared performance standard",
+    "optionB": "A higher target without explanation",
+    "optionC": "A larger sample without criteria",
+    "optionD": "An immediate ranking of all employees"
+  },
+  {
+    "questionId": "CDM-PER-034",
+    "category": "cdmPersonnel",
+    "optionA": "200 hours",
+    "optionB": "320 hours",
+    "optionC": "280 hours",
+    "optionD": "400 hours"
+  },
+  {
+    "questionId": "CDM-PER-035",
+    "category": "cdmPersonnel",
+    "optionA": "Repeat the entire hiring interview",
+    "optionB": "Wait until the first annual evaluation",
+    "optionC": "Review performance and remaining gaps",
+    "optionD": "Assume the checklist guarantees proficiency"
+  },
+  {
+    "questionId": "CDM-PER-036",
+    "category": "cdmPersonnel",
+    "optionA": "The manager's usual personal practice",
+    "optionB": "The preference of the longest-serving cook",
+    "optionC": "The least expensive implementation option",
+    "optionD": "The governing requirement and HR review"
+  },
+  {
+    "questionId": "CDM-PER-037",
+    "category": "cdmPersonnel",
+    "optionA": "Evaluate the workflow and evidence",
+    "optionB": "Keep it because the rollout is complete",
+    "optionC": "Assume the worker is resisting all change",
+    "optionD": "Remove all checks before investigating"
+  },
+  {
+    "questionId": "CDM-PER-038",
+    "category": "cdmPersonnel",
+    "optionA": "The original invitation without updates",
+    "optionB": "Minutes with actions and responsibilities",
+    "optionC": "The sign-in sheet without discussion notes",
+    "optionD": "The presentation slides without decisions"
+  },
+  {
+    "questionId": "CDM-PER-039",
+    "category": "cdmPersonnel",
+    "optionA": "Stop documenting errors for either person",
+    "optionB": "Rate performance by length of service",
+    "optionC": "Apply consistent performance criteria",
+    "optionD": "Give both identical ratings automatically"
+  },
+  {
+    "questionId": "CDM-PER-040",
+    "category": "cdmPersonnel",
+    "optionA": "A duplicate of the normal roster only",
+    "optionB": "A promise to maintain every menu item",
+    "optionC": "A list of vacancies without assignments",
+    "optionD": "A resource-based contingency plan"
+  },
+  {
+    "questionId": "CDM-SAF-001",
+    "category": "cdmSafety",
+    "optionA": "135\u00b0F",
+    "optionB": "125\u00b0F",
+    "optionC": "130\u00b0F",
+    "optionD": "140\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-002",
+    "category": "cdmSafety",
+    "optionA": "1 p.m.",
+    "optionB": "2 p.m.",
+    "optionC": "4 p.m.",
+    "optionD": "6 p.m."
+  },
+  {
+    "questionId": "CDM-SAF-003",
+    "category": "cdmSafety",
+    "optionA": "Hold at 160\u00b0F for 5 seconds",
+    "optionB": "Rest it until the surface cools",
+    "optionC": "Continue to 165\u00b0F throughout",
+    "optionD": "Serve once the juices look clear"
+  },
+  {
+    "questionId": "CDM-SAF-004",
+    "category": "cdmSafety",
+    "optionA": "Cover it tightly in the deep pot",
+    "optionB": "Place it beside the hot-holding unit",
+    "optionC": "Stack full pots close together",
+    "optionD": "Divide it into shallow pans"
+  },
+  {
+    "questionId": "CDM-SAF-005",
+    "category": "cdmSafety",
+    "optionA": "Sunday",
+    "optionB": "Saturday",
+    "optionC": "Monday of next week",
+    "optionD": "Tuesday of next week"
+  },
+  {
+    "questionId": "CDM-SAF-006",
+    "category": "cdmSafety",
+    "optionA": "Biological contamination",
+    "optionB": "Chemical contamination",
+    "optionC": "Physical foreign material",
+    "optionD": "Time-temperature abuse"
+  },
+  {
+    "questionId": "CDM-SAF-007",
+    "category": "cdmSafety",
+    "optionA": "Food measured at 44\u00b0F",
+    "optionB": "Food measured at 48\u00b0F",
+    "optionC": "Food measured at 39\u00b0F",
+    "optionD": "Food measured at 50\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-008",
+    "category": "cdmSafety",
+    "optionA": "Wipe the old gloves with a towel",
+    "optionB": "Rinse gloves without removing them",
+    "optionC": "Put new gloves over the old pair",
+    "optionD": "Wash hands and use clean barriers"
+  },
+  {
+    "questionId": "CDM-SAF-009",
+    "category": "cdmSafety",
+    "optionA": "A measurable safety boundary",
+    "optionB": "A recommended quality preference",
+    "optionC": "A routine maintenance interval",
+    "optionD": "An average historical process result"
+  },
+  {
+    "questionId": "CDM-SAF-010",
+    "category": "cdmSafety",
+    "optionA": "The verification review schedule",
+    "optionB": "The corrective-action procedure",
+    "optionC": "The list of potential hazards",
+    "optionD": "The record-retention procedure"
+  },
+  {
+    "questionId": "CDM-SAF-011",
+    "category": "cdmSafety",
+    "optionA": "Only the familiar package color",
+    "optionB": "Only the previous recipe approval",
+    "optionC": "The current ingredient information",
+    "optionD": "Only the supplier's delivery schedule"
+  },
+  {
+    "questionId": "CDM-SAF-012",
+    "category": "cdmSafety",
+    "optionA": "Biological hazard",
+    "optionB": "Chemical residue",
+    "optionC": "Nutrient imbalance",
+    "optionD": "Physical hazard"
+  },
+  {
+    "questionId": "CDM-SAF-013",
+    "category": "cdmSafety",
+    "optionA": "165\u00b0F for 15 seconds",
+    "optionB": "135\u00b0F for 15 seconds",
+    "optionC": "145\u00b0F for 15 seconds",
+    "optionD": "155\u00b0F for 17 seconds"
+  },
+  {
+    "questionId": "CDM-SAF-014",
+    "category": "cdmSafety",
+    "optionA": "Accept and refreeze immediately",
+    "optionB": "Reject and document the delivery",
+    "optionC": "Accept if the invoice is discounted",
+    "optionD": "Use first without recording the issue"
+  },
+  {
+    "questionId": "CDM-SAF-015",
+    "category": "cdmSafety",
+    "optionA": "Only a temperature-control error",
+    "optionB": "Only a portion-control variance",
+    "optionC": "Allergen cross-contact",
+    "optionD": "A change in the food's acidity"
+  },
+  {
+    "questionId": "CDM-SAF-016",
+    "category": "cdmSafety",
+    "optionA": "At least 5 seconds",
+    "optionB": "At least 10 seconds",
+    "optionC": "At least 15 seconds",
+    "optionD": "At least 20 seconds"
+  },
+  {
+    "questionId": "CDM-SAF-017",
+    "category": "cdmSafety",
+    "optionA": "Identifying critical control points",
+    "optionB": "Setting the product acceptance score",
+    "optionC": "Checking previously completed records",
+    "optionD": "Applying an already defined corrective action"
+  },
+  {
+    "questionId": "CDM-SAF-018",
+    "category": "cdmSafety",
+    "optionA": "Quantity once the count is verified",
+    "optionB": "Compliance with the specifications",
+    "optionC": "The previous delivery's acceptance",
+    "optionD": "The vendor's usual product reputation"
+  },
+  {
+    "questionId": "CDM-SAF-019",
+    "category": "cdmSafety",
+    "optionA": "The Thursday preparation date",
+    "optionB": "The date the mixture is portioned",
+    "optionC": "The Tuesday preparation date",
+    "optionD": "The date the last portion is served"
+  },
+  {
+    "questionId": "CDM-SAF-020",
+    "category": "cdmSafety",
+    "optionA": "Menu standardization",
+    "optionB": "Demand forecasting",
+    "optionC": "Vendor price comparison",
+    "optionD": "Verification"
+  },
+  {
+    "questionId": "CDM-SAF-021",
+    "category": "cdmSafety",
+    "optionA": "The designated handwashing sink",
+    "optionB": "The food-preparation sink",
+    "optionC": "The utensil-washing compartment",
+    "optionD": "The service sink for liquid waste"
+  },
+  {
+    "questionId": "CDM-SAF-022",
+    "category": "cdmSafety",
+    "optionA": "More frequent inventory counting",
+    "optionB": "Scheduled preventive maintenance",
+    "optionC": "A shorter menu-planning cycle",
+    "optionD": "A longer equipment replacement interval"
+  },
+  {
+    "questionId": "CDM-SAF-023",
+    "category": "cdmSafety",
+    "optionA": "135\u00b0F for 15 seconds",
+    "optionB": "140\u00b0F for 5 seconds",
+    "optionC": "145\u00b0F for 15 seconds",
+    "optionD": "150\u00b0F for 1 second"
+  },
+  {
+    "questionId": "CDM-SAF-024",
+    "category": "cdmSafety",
+    "optionA": "Use of tightly covered food bins alone",
+    "optionB": "Keeping only unopened food nearby",
+    "optionC": "Storing chemicals by container size",
+    "optionD": "Separate, appropriate chemical storage"
+  },
+  {
+    "questionId": "CDM-SAF-025",
+    "category": "cdmSafety",
+    "optionA": "4.5 hours",
+    "optionB": "2 hours",
+    "optionC": "4 hours",
+    "optionD": "6 hours"
+  },
+  {
+    "questionId": "CDM-SAF-026",
+    "category": "cdmSafety",
+    "optionA": "Use it before the next delivery arrives",
+    "optionB": "Identify and segregate affected stock",
+    "optionC": "Relabel it with a new inventory number",
+    "optionD": "Move it to the front for faster rotation"
+  },
+  {
+    "questionId": "CDM-SAF-027",
+    "category": "cdmSafety",
+    "optionA": "Use the newest delivery first",
+    "optionB": "Use the largest container first",
+    "optionC": "Use the oldest received stock first",
+    "optionD": "Use the highest-priced case first"
+  },
+  {
+    "questionId": "CDM-SAF-028",
+    "category": "cdmSafety",
+    "optionA": "11 a.m.",
+    "optionB": "3 p.m.",
+    "optionC": "5 p.m.",
+    "optionD": "1 p.m."
+  },
+  {
+    "questionId": "CDM-SAF-029",
+    "category": "cdmSafety",
+    "optionA": "Loss of protection from contamination",
+    "optionB": "Loss of the product's printed price",
+    "optionC": "Change in the usual pack dimensions",
+    "optionD": "A mismatch with the recipe yield"
+  },
+  {
+    "questionId": "CDM-SAF-030",
+    "category": "cdmSafety",
+    "optionA": "45\u00b0F",
+    "optionB": "41\u00b0F",
+    "optionC": "50\u00b0F",
+    "optionD": "55\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-031",
+    "category": "cdmSafety",
+    "optionA": "A duplicate of the standard weekly menu",
+    "optionB": "A larger routine ingredient order",
+    "optionC": "A rehearsed emergency foodservice plan",
+    "optionD": "A list of emergency contacts alone"
+  },
+  {
+    "questionId": "CDM-SAF-032",
+    "category": "cdmSafety",
+    "optionA": "Counting the posters on kitchen walls",
+    "optionB": "Confirming one employee attended training",
+    "optionC": "Checking only the number of menu items",
+    "optionD": "Direct audits with documented findings"
+  },
+  {
+    "questionId": "CDM-SAF-033",
+    "category": "cdmSafety",
+    "optionA": "Within 4 hours",
+    "optionB": "Within 1 hour",
+    "optionC": "Within 6 hours",
+    "optionD": "Within 8 hours"
+  },
+  {
+    "questionId": "CDM-SAF-034",
+    "category": "cdmSafety",
+    "optionA": "Compare the case price with last month",
+    "optionB": "Compare the count with the order",
+    "optionC": "Check only the package condition",
+    "optionD": "Confirm only the scheduled arrival time"
+  },
+  {
+    "questionId": "CDM-SAF-035",
+    "category": "cdmSafety",
+    "optionA": "It uses the wrong receiving specification",
+    "optionB": "It records a verification rather than a check",
+    "optionC": "It is not an actual measurement",
+    "optionD": "It replaces the product's date marking"
+  },
+  {
+    "questionId": "CDM-SAF-036",
+    "category": "cdmSafety",
+    "optionA": "An overnight room-temperature rest",
+    "optionB": "A pause until the next meal service",
+    "optionC": "A return to dry storage before use",
+    "optionD": "Immediate uninterrupted cooking"
+  },
+  {
+    "questionId": "CDM-SAF-037",
+    "category": "cdmSafety",
+    "optionA": "Inspect surfaces after the assigned work",
+    "optionB": "Review only employees' completion initials",
+    "optionC": "Count the cleaning supplies purchased",
+    "optionD": "Confirm the schedule was distributed"
+  },
+  {
+    "questionId": "CDM-SAF-038",
+    "category": "cdmSafety",
+    "optionA": "Finish production before requesting repair",
+    "optionB": "Stop using it and arrange correction",
+    "optionC": "Use it only for foods cooked afterward",
+    "optionD": "Increase inspection frequency next week"
+  },
+  {
+    "questionId": "CDM-SAF-039",
+    "category": "cdmSafety",
+    "optionA": "Keep the room at 70\u00b0F or below",
+    "optionB": "Keep the exterior below 90\u00b0F",
+    "optionC": "Keep the food at 41\u00b0F or below",
+    "optionD": "Keep the food below hot-holding temperature"
+  },
+  {
+    "questionId": "CDM-SAF-040",
+    "category": "cdmSafety",
+    "optionA": "Corrective-action documentation",
+    "optionB": "Verification of completed records",
+    "optionC": "Establishing a purchasing budget",
+    "optionD": "Hazard analysis"
+  },
+  {
+    "questionId": "CDM-SAF-041",
+    "category": "cdmSafety",
+    "optionA": "A vetted, approved supplier",
+    "optionB": "A licensed source without product checks",
+    "optionC": "A familiar source without approval",
+    "optionD": "A local source with verbal assurances"
+  },
+  {
+    "questionId": "CDM-SAF-042",
+    "category": "cdmSafety",
+    "optionA": "125\u00b0F",
+    "optionB": "135\u00b0F",
+    "optionC": "130\u00b0F",
+    "optionD": "145\u00b0F"
+  },
+  {
+    "questionId": "CDM-SAF-043",
+    "category": "cdmSafety",
+    "optionA": "Diagnose the cause of each illness",
+    "optionB": "Replace the need for hygiene training",
+    "optionC": "Control illness transmission through staff",
+    "optionD": "Confirm that every absence is work-related"
+  },
+  {
+    "questionId": "CDM-SAF-044",
+    "category": "cdmSafety",
+    "optionA": "The efficiency of meal forecasting",
+    "optionB": "The accuracy of product portion sizes",
+    "optionC": "The adequacy of the diet-order system",
+    "optionD": "Potential contamination in workflow"
+  },
+  {
+    "questionId": "CDM-SAF-045",
+    "category": "cdmSafety",
+    "optionA": "Stir or rotate, cover, stand 2 minutes",
+    "optionB": "Leave uncovered and serve at once",
+    "optionC": "Cover only after it reaches the cart",
+    "optionD": "Rest 1 minute without stirring"
+  },
+  {
+    "questionId": "CDM-SAF-046",
+    "category": "cdmSafety",
+    "optionA": "Ingredient totals from the menu analysis",
+    "optionB": "Supplier, product and lot details",
+    "optionC": "The receiving clerk's weekly hours",
+    "optionD": "The generic description on the menu"
+  },
+  {
+    "questionId": "CDM-SAF-047",
+    "category": "cdmSafety",
+    "optionA": "Untreated collected rainwater",
+    "optionB": "Previously used cooling water",
+    "optionC": "Drinking water",
+    "optionD": "Water from the mop-service basin"
+  },
+  {
+    "questionId": "CDM-SAF-048",
+    "category": "cdmSafety",
+    "optionA": "Keep it until the next annual review",
+    "optionB": "Add only the new equipment price",
+    "optionC": "Rely on the supplier's service invoice",
+    "optionD": "Update it to current operations"
+  },
+  {
+    "questionId": "CDM-BUS-001",
+    "category": "cdmBusiness",
+    "optionA": "$7.00",
+    "optionB": "$3.00",
+    "optionC": "$9.00",
+    "optionD": "$14.00"
+  },
+  {
+    "questionId": "CDM-BUS-002",
+    "category": "cdmBusiness",
+    "optionA": "A weekly delivery of fresh vegetables",
+    "optionB": "Replacement of a walk-in refrigerator",
+    "optionC": "Disposable cups for the current month",
+    "optionD": "Ingredients for the next menu cycle"
+  },
+  {
+    "questionId": "CDM-BUS-003",
+    "category": "cdmBusiness",
+    "optionA": "$3.12",
+    "optionB": "$6.00",
+    "optionC": "$8.00",
+    "optionD": "$7.20"
+  },
+  {
+    "questionId": "CDM-BUS-004",
+    "category": "cdmBusiness",
+    "optionA": "Ingredient price without labor needs",
+    "optionB": "Purchase price without portion yield",
+    "optionC": "Food cost without quality requirements",
+    "optionD": "Quality, nutrition, labor and total cost"
+  },
+  {
+    "questionId": "CDM-BUS-005",
+    "category": "cdmBusiness",
+    "optionA": "Cost per patient day",
+    "optionB": "Total monthly spending alone",
+    "optionC": "The number of supplier invoices",
+    "optionD": "The value of kitchen equipment"
+  },
+  {
+    "questionId": "CDM-BUS-006",
+    "category": "cdmBusiness",
+    "optionA": "6 meals per labor hour",
+    "optionB": "8 meals per labor hour",
+    "optionC": "9 meals per labor hour",
+    "optionD": "12 meals per labor hour"
+  },
+  {
+    "questionId": "CDM-BUS-007",
+    "category": "cdmBusiness",
+    "optionA": "A preferred brand and recent case price",
+    "optionB": "The previous vendor's delivery frequency",
+    "optionC": "Written quality and performance needs",
+    "optionD": "The supplier's current catalog alone"
+  },
+  {
+    "questionId": "CDM-BUS-008",
+    "category": "cdmBusiness",
+    "optionA": "Assume the written record is correct",
+    "optionB": "Order six units without documenting it",
+    "optionC": "Replace every inventory entry with zero",
+    "optionD": "Investigate and reconcile the difference"
+  },
+  {
+    "questionId": "CDM-BUS-009",
+    "category": "cdmBusiness",
+    "optionA": "Equipment plus installation costs",
+    "optionB": "Equipment invoice price alone",
+    "optionC": "Only the first month's energy bill",
+    "optionD": "Only the cost of the old oven"
+  },
+  {
+    "questionId": "CDM-BUS-010",
+    "category": "cdmBusiness",
+    "optionA": "$0.56",
+    "optionB": "$1.80",
+    "optionC": "$2.40",
+    "optionD": "$5.40"
+  },
+  {
+    "questionId": "CDM-BUS-011",
+    "category": "cdmBusiness",
+    "optionA": "Purchasing stock for maximum capacity",
+    "optionB": "Copying the largest competitor's menu",
+    "optionC": "Market demand and financial analysis",
+    "optionD": "Setting prices from ingredient cost alone"
+  },
+  {
+    "questionId": "CDM-BUS-012",
+    "category": "cdmBusiness",
+    "optionA": "$4.50",
+    "optionB": "$5.80",
+    "optionC": "$9.00",
+    "optionD": "$7.20"
+  },
+  {
+    "questionId": "CDM-BUS-013",
+    "category": "cdmBusiness",
+    "optionA": "A monthly budget-variance report",
+    "optionB": "A one-time equipment specification",
+    "optionC": "A list of approved menu substitutions",
+    "optionD": "A resident food-preference survey"
+  },
+  {
+    "questionId": "CDM-BUS-014",
+    "category": "cdmBusiness",
+    "optionA": "Cost per unopened shipping case",
+    "optionB": "Cost per usable edible unit",
+    "optionC": "Number of cases on the invoice",
+    "optionD": "Gross weight without yield adjustment"
+  },
+  {
+    "questionId": "CDM-BUS-015",
+    "category": "cdmBusiness",
+    "optionA": "$75",
+    "optionB": "$1200",
+    "optionC": "$900",
+    "optionD": "$24900"
+  },
+  {
+    "questionId": "CDM-BUS-016",
+    "category": "cdmBusiness",
+    "optionA": "Package size and the latest invoice price",
+    "optionB": "Storage location and the last count date",
+    "optionC": "Only the previous month's total purchases",
+    "optionD": "Usage rate and supplier lead time"
+  },
+  {
+    "questionId": "CDM-BUS-017",
+    "category": "cdmBusiness",
+    "optionA": "$8.00",
+    "optionB": "$3.00",
+    "optionC": "$4.00",
+    "optionD": "$7.00"
+  },
+  {
+    "questionId": "CDM-BUS-018",
+    "category": "cdmBusiness",
+    "optionA": "Change sales to match cash automatically",
+    "optionB": "Reconcile records and investigate",
+    "optionC": "Carry the difference without a record",
+    "optionD": "Use next shift's receipts to cover it"
+  },
+  {
+    "questionId": "CDM-BUS-019",
+    "category": "cdmBusiness",
+    "optionA": "The largest discount percentage alone",
+    "optionB": "The vendor's minimum quantity alone",
+    "optionC": "Usable quantity and total expected cost",
+    "optionD": "The amount of unused storage space alone"
+  },
+  {
+    "questionId": "CDM-BUS-020",
+    "category": "cdmBusiness",
+    "optionA": "6 minutes",
+    "optionB": "7.5 minutes",
+    "optionC": "10 minutes",
+    "optionD": "8 minutes"
+  },
+  {
+    "questionId": "CDM-BUS-021",
+    "category": "cdmBusiness",
+    "optionA": "A life-cycle cost comparison",
+    "optionB": "Its age without condition information",
+    "optionC": "The appearance of a newer model",
+    "optionD": "The number of products in a vendor catalog"
+  },
+  {
+    "questionId": "CDM-BUS-022",
+    "category": "cdmBusiness",
+    "optionA": "Identical names for both departments",
+    "optionB": "Comparable definitions and service scope",
+    "optionC": "Matching dates of equipment purchase",
+    "optionD": "Equal numbers of suppliers under contract"
+  },
+  {
+    "questionId": "CDM-BUS-023",
+    "category": "cdmBusiness",
+    "optionA": "$0.50",
+    "optionB": "$3.00",
+    "optionC": "$2.00",
+    "optionD": "$4.00"
+  },
+  {
+    "questionId": "CDM-BUS-024",
+    "category": "cdmBusiness",
+    "optionA": "Ingredient savings without other outcomes",
+    "optionB": "The number of revised purchase orders",
+    "optionC": "The date the cheaper contract was signed",
+    "optionD": "Cost alongside acceptance and service quality"
+  },
+  {
+    "questionId": "CDM-BUS-025",
+    "category": "cdmBusiness",
+    "optionA": "The reduced census and related expenses",
+    "optionB": "Unchanged volume for every month",
+    "optionC": "Only last year's annual total",
+    "optionD": "A new equipment asset regardless of need"
+  },
+  {
+    "questionId": "CDM-BUS-026",
+    "category": "cdmBusiness",
+    "optionA": "8 units",
+    "optionB": "24 units",
+    "optionC": "11 units",
+    "optionD": "32 units"
+  },
+  {
+    "questionId": "CDM-BUS-027",
+    "category": "cdmBusiness",
+    "optionA": "The cheapest item regardless of suitability",
+    "optionB": "A larger portion to justify the grade",
+    "optionC": "A suitable lower-cost specification",
+    "optionD": "The same specification without review"
+  },
+  {
+    "questionId": "CDM-BUS-028",
+    "category": "cdmBusiness",
+    "optionA": "2 years",
+    "optionB": "3 years",
+    "optionC": "5 years",
+    "optionD": "4 years"
+  }
+]

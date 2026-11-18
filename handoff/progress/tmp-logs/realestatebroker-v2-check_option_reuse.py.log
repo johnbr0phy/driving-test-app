@@ -1,0 +1,3 @@
+data/realestatebroker-questions.json: 200 items, shared option sets 0 (0%, limit 10%), echo rule right 19/53, gain 1.4 marks per 50, ruling the echo out gains -0.5 (limit 4.5)
+   key alone echoes the stem: REBR-PROP-010, REBR-TITLE-003, REBR-VALUE-024, REBR-AGENCY-008, REBR-AGENCY-016, REBR-AGENCY-018, REBR-AGENCY-022, REBR-AGENCY-031, REBR-AGENCY-032, REBR-PRACT-005, REBR-PRACT-010, REBR-PRACT-015, REBR-PRACT-021, REBR-PRACT-027, REBR-ENV-005, REBR-ENV-008, REBR-ENV-014, REBR-FIN-009, REBR-FIN-016
+option reuse and stem echo: OK

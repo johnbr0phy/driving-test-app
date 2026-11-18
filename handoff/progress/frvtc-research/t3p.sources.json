@@ -1,0 +1,255 @@
+[
+  {
+    "questionId": "FRVTC-T3P-001",
+    "objective": "Identifier le trajet pour compte propre",
+    "sources": [
+      "CARPOOL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-002",
+    "objective": "Distinguer rémunération de l'intermédiaire et du conducteur",
+    "sources": [
+      "CARPOOL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-003",
+    "objective": "Distinguer transport collectif et T3P",
+    "sources": [
+      "T3P-SCOPE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-004",
+    "objective": "Reconnaître une prise en charge sans réservation",
+    "sources": [
+      "T3P-MARAUDE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-005",
+    "objective": "Reconnaître la maraude électronique",
+    "sources": [
+      "T3P-MARAUDE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-006",
+    "objective": "Appliquer la visibilité de la carte",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-007",
+    "objective": "Restituer une carte après cessation",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-008",
+    "objective": "Identifier la préfecture compétente pour la carte",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-009",
+    "objective": "Identifier le contrôle médical professionnel",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-010",
+    "objective": "Distinguer formation réglementaire et réunion commerciale",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-011",
+    "objective": "Planifier la formation continue",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-012",
+    "objective": "Adapter l'assurance à l'usage payant",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-013",
+    "objective": "Distinguer RC professionnelle et garanties facultatives",
+    "sources": [
+      "T3P-INSURANCE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-014",
+    "objective": "Relier une condamnation à l'honorabilité",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-015",
+    "objective": "Distinguer autorisation du conducteur et de l'entreprise",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-016",
+    "objective": "Appliquer la réforme de l'accès par expérience",
+    "sources": [
+      "BPI-VTC",
+      "REFORM-2026"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-017",
+    "objective": "Identifier une information préalable obligatoire",
+    "sources": [
+      "PLATFORM-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-018",
+    "objective": "Distinguer refus de proposition et inexécution",
+    "sources": [
+      "PLATFORM-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-019",
+    "objective": "Reconnaître la pluralité des canaux d'activité",
+    "sources": [
+      "PLATFORM-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-020",
+    "objective": "Distinguer suggestion et liberté d'itinéraire",
+    "sources": [
+      "PLATFORM-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-021",
+    "objective": "Distinguer critère protégé et contrainte matérielle",
+    "sources": [
+      "DISCRIMINATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-022",
+    "objective": "Reconnaître un critère supposé",
+    "sources": [
+      "DISCRIMINATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-023",
+    "objective": "Identifier le recours spécialisé",
+    "sources": [
+      "DISCRIMINATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-024",
+    "objective": "Distinguer chien guide et animal de compagnie",
+    "sources": [
+      "GUIDE-DOG"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-025",
+    "objective": "Appliquer l'absence de surfacturation du chien guide",
+    "sources": [
+      "GUIDE-DOG"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-026",
+    "objective": "Appliquer le caractère spécifique du consentement",
+    "sources": [
+      "CONSENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-027",
+    "objective": "Reconnaître la révocabilité du consentement",
+    "sources": [
+      "CONSENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-028",
+    "objective": "Ne pas déduire le consentement du silence",
+    "sources": [
+      "CONSENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-029",
+    "objective": "Reconnaître le harcèlement par propos répétés",
+    "sources": [
+      "HARASSMENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-030",
+    "objective": "Reconnaître le harcèlement concerté",
+    "sources": [
+      "HARASSMENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-031",
+    "objective": "Reconnaître une pression grave non répétée",
+    "sources": [
+      "HARASSMENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-032",
+    "objective": "Distinguer outrage et harcèlement répété",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-033",
+    "objective": "Identifier la circonstance de transport VTC",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-034",
+    "objective": "Préserver des éléments factuels datés",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-035",
+    "objective": "Distinguer urgence et voies administratives",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-036",
+    "objective": "Identifier le signalement officiel écrit",
+    "sources": [
+      "OUTRAGE"
+    ]
+  }
+]

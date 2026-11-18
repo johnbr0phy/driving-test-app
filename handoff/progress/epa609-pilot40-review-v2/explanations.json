@@ -1,0 +1,202 @@
+[
+  {
+    "reviewId": "R001",
+    "key": "C",
+    "explanation": "DOT-39 is the specification for non-reusable, nonrefillable cylinders. Emptying one does not make it a recovery cylinder. DOT-4BA and DOT-4BW are refillable cylinder types discussed for recovery, while qualifying ASME vessels have a separate equipment-standard treatment. Any reusable vessel must also satisfy its applicable condition and use requirements."
+  },
+  {
+    "reviewId": "R002",
+    "key": "D",
+    "explanation": "For the stated machine procedure, the initial test dose is 15% of the specified charge: 600 g \u00d7 0.15 = 90 g. Sixty grams is 10%, and 120 g is 20%. The 510 g amount is the remaining 85%, delivered only after the prescribed checks pass. The fraction is supplied as a procedure condition, not asserted as a universal EPA requirement. The 600 g specification is hypothetical."
+  },
+  {
+    "reviewId": "R003",
+    "key": "C",
+    "explanation": "Paid MVAC service involving refrigerant requires Section 609 technician certification. Section 608 Universal and Type II credentials cover their respective non-MVAC appliance scopes; they do not replace Section 609 for a passenger car. ASE expressly distinguishes its A7 mechanical-service credential from its separate Section 609 refrigerant program."
+  },
+  {
+    "reviewId": "R004",
+    "key": "D",
+    "explanation": "EPA\u2019s manifold-gauge exception allows a standardized fitting at the gauge end. The hose ends that attach to the MVAC or servicing equipment must retain permanent refrigerant-specific fittings. The exception therefore does not extend to either vehicle service port or to the refrigerant-handling machine."
+  },
+  {
+    "reviewId": "R005",
+    "key": "A",
+    "explanation": "Prolonged atmospheric exposure can saturate system desiccant, so MACS recommends replacing it. Evacuation removes air and vapor but does not reliably resolve this moisture condition. Pump oil service maintains pump performance; recycling cleans recovered refrigerant outside the vehicle, not saturated desiccant remaining inside it."
+  },
+  {
+    "reviewId": "R006",
+    "key": "B",
+    "explanation": "DENSO specifies ND-oil 11 for electrically driven compressors and ND-oil 12 for mechanically driven compressors using R-1234yf or R-134a. Its stated distinction is drive type, not displacement control, evaporator arrangement or pumping construction. Use the actual compressor oil specification rather than selecting oil from refrigerant identity alone."
+  },
+  {
+    "reviewId": "R007",
+    "key": "A",
+    "explanation": "Use the vehicle\u2019s specified 600 g full charge after complete recovery and evacuation. The recovered 420 g does not establish the proper charge; the system may previously have been undercharged. The 180 g difference would not refill an emptied system, and adding the recovered amount to the specification would overcharge it. These are hypothetical service quantities."
+  },
+  {
+    "reviewId": "R008",
+    "key": "B",
+    "explanation": "Rae already operates the extraction establishment and owns the recovery machine. Buying Lee\u2019s recycler gives Rae ownership of both machines, satisfying the off-site recycling ownership condition. Lee buying the recovery machine leaves the common equipment owner separate from the garage operator. Leasing or contracting access does not establish the required ownership. Reclamation is a separate route."
+  },
+  {
+    "reviewId": "R009",
+    "key": "C",
+    "explanation": "Vaporization takes energy from the surroundings, including contacted skin, even without a rise in refrigerant temperature. Warming a liquid requires a temperature rise. Condensation and vapor cooling release heat rather than accounting for heat removed from the skin. Rapid liquid evaporation is the frostbite mechanism identified by the refrigerant SDS."
+  },
+  {
+    "reviewId": "R010",
+    "key": "B",
+    "explanation": "J2670 addresses stability and compatibility. It does not establish debris-removal performance, complete removal of residual solvent, or permission to flush a particular manufacturer\u2019s system. Those are separate questions before using a flushing process."
+  },
+  {
+    "reviewId": "R011",
+    "key": "B",
+    "explanation": "Facilities that only charge MVAC-like appliances need not purchase recovery/recycling equipment for that work; technician certification still applies. Opening an MVAC-like system instead requires approved equipment to be available at the business, without necessarily owning it. Passenger-car top-offs require equipment purchase, and passenger-car circuit repair requires approved equipment use."
+  },
+  {
+    "reviewId": "R012",
+    "key": "A",
+    "explanation": "This job added 20 minus 8, or 12 mL, to the bottle. Replace that removed quantity with fresh oil of the required type. The 8 mL was already present; 20 mL includes that pre-existing quantity, and 28 mL double-counts the starting quantity. Emptying the bottle beforehand prevents this error."
+  },
+  {
+    "reviewId": "R013",
+    "key": "B",
+    "explanation": "Robinair specifies filling the vacuum pump to the center of its sight glass, with the machine on a flat, level surface. Merely seeing oil at the bottom does not meet that level. The upper edge or a completely filled glass exceeds the stated level. Follow this model\u2019s oil-change procedure rather than treating visibility alone as adequate."
+  },
+  {
+    "reviewId": "R014",
+    "key": "A",
+    "explanation": "Vapor density greater than air allows released refrigerant to accumulate in low areas. Evaporation creates vapor, pressure depends on temperature, and flammability affects ignition risk; those facts do not explain its tendency to collect in a pit."
+  },
+  {
+    "reviewId": "R015",
+    "key": "D",
+    "explanation": "The manual identifies small valve-core openings as restrictions between the circuit and service hose. Moisture can prolong evacuation, but the restriction explains why the local gauge reading gets ahead of the system vacuum."
+  },
+  {
+    "reviewId": "R016",
+    "key": "D",
+    "explanation": "In the staged procedure described in the training narrative, the partial charge supplies pressure for evaporator leak checking before the balance is delivered. Robinair AC1234-6 Rev F also describes a partial charge for leak checking. It is not the full operating charge or a way to determine capacity or test compressor performance. Machine behavior following a failed vacuum check varies between these sources; follow the actual machine instructions."
+  },
+  {
+    "reviewId": "R017",
+    "key": "A",
+    "explanation": "After valid code entry, this model clears the existing filter before displaying acceptance and prompting shutdown. Filter capacity is a maintenance trigger, not a requirement to postpone early replacement. Oil warming and the leak check follow installation. Waiting for the prompt allows the prescribed refrigerant-clearing stage to finish before the connection is opened."
+  },
+  {
+    "reviewId": "R018",
+    "key": "A",
+    "explanation": "With the hose below atmospheric pressure, an external seal leak can draw ambient air inward. Oil or refrigerant from machine components would require an internal fluid path. Desiccant moisture originates inside the vehicle, not outside the leaking connection."
+  },
+  {
+    "reviewId": "R019",
+    "key": "C",
+    "explanation": "Neither refrigerant-handling credential is required solely for this external inspection. Section 82.34(a) addresses paid service involving refrigerant; Section 82.32(h) ties that definition to reasonably expected refrigerant release. The Cascadia maintenance manual describes an external feeler-gauge clutch-clearance inspection. This does not waive certification for subsequent recovery, charging or circuit opening, and does not address other employment qualifications."
+  },
+  {
+    "reviewId": "R020",
+    "key": "D",
+    "explanation": "For this salvage reuse route, Section 82.34(d)(1)(ii)(B) assigns recycling to the facility that charges or recharges the refrigerant. Recovery at the salvage yard is an earlier step. Off-site reclamation is a separate route; an independent recycler is not substituted for the recharging facility in this provision."
+  },
+  {
+    "reviewId": "R021",
+    "key": "A",
+    "explanation": "For a fitting with this inspection opening, visibility at the ferrule inspection opening establishes insertion depth. Fit resistance, correct nominal sizes and lubrication are relevant preparation checks, but none establishes that the hose reached the insertion position. Follow the hose and fitting supplier\u2019s assembly procedure."
+  },
+  {
+    "reviewId": "R022",
+    "key": "D",
+    "explanation": "Section 82.42(c) requires the notice for retail sales of suitable class I or II MVAC refrigerant in containers holding less than 20 pounds. The CFC-12 cans meet that condition; the 30-pound cylinders do not trigger this particular sign requirement. Separate sales restrictions can still govern the larger cylinders."
+  },
+  {
+    "reviewId": "R023",
+    "key": "B",
+    "explanation": "The guidance conditions connection on high-side pressure decreasing. Three minutes is a typical wait, not proof that the pressure has fallen in a particular system. Low-side pressure movement and fan shutdown can accompany stopping but do not replace the stated high-side criterion."
+  },
+  {
+    "reviewId": "R024",
+    "key": "C",
+    "explanation": "The indicated vacuum is the amount below local atmospheric pressure: 25 minus 1 equals 24 inHg. One inHg is the absolute system pressure, 25 inHg would correspond to zero absolute pressure, and adding the two pressures reverses the relationship. These are hypothetical readings, not a required evacuation endpoint."
+  },
+  {
+    "reviewId": "R025",
+    "key": "A",
+    "explanation": "The manual specifies detecting a leak as small as 0.15 ounce per year. The older 0.5-ounce figure belongs to less sensitive detector guidance, not this requirement."
+  },
+  {
+    "reviewId": "R026",
+    "key": "B",
+    "explanation": "Recover the test charge with suitable recovery equipment before opening the circuit. A vacuum pump is not a substitute recovery device; closing manifold valves isolates that service path rather than emptying the vehicle, and a stable gauge reading does not establish refrigerant removal. Section 82.32(e)(2) requires extraction before service where discharge is reasonably expected. This is a containment decision, not a claim about every machine\u2019s permitted menu operations."
+  },
+  {
+    "reviewId": "R027",
+    "key": "B",
+    "explanation": "Section 609 requires an on-site record of the receiving facility name and address, retained for three years. It does not substitute a quantity-by-vehicle log for identifying that destination."
+  },
+  {
+    "reviewId": "R028",
+    "key": "D",
+    "explanation": "Tesla\u2019s procedure verifies voltage at the designated isolation test points before high-voltage service. A current reading does not by itself establish absence of voltage. The auxiliary-battery measurement checks meter operation; the drain routine prepares the refrigerant system. Complete the model\u2019s full procedure with its required training, equipment and PPE; these alternatives are not a complete work instruction."
+  },
+  {
+    "reviewId": "R029",
+    "key": "B",
+    "explanation": "Compressed air can form a combustible mixture with HFC-134a at elevated pressure. Nitrogen is not air, and neither pure-refrigerant phase supplies the air component of that warning. This distinction does not authorize an improvised pressure test; use the applicable equipment and vehicle procedure."
+  },
+  {
+    "reviewId": "R030",
+    "key": "D",
+    "explanation": "The training narrative identifies solvent boiling point as a reason residue may remain even after prolonged evacuation. Evaporation also depends on pressure and temperature; boiling point is not the sole process variable. Flash point concerns ignition, specific gravity concerns relative density, and freezing point concerns solidification rather than the liquid-to-vapor removal process."
+  },
+  {
+    "reviewId": "R031",
+    "key": "B",
+    "explanation": "EPA identifies HCFC-22 seepage through traditional CFC-12 hose material as the reason for barrier hoses. Hose-wall permeation differs from fitting leakage, burst strength and removal of moisture during evacuation."
+  },
+  {
+    "reviewId": "R032",
+    "key": "C",
+    "explanation": "The seller must retain the resale declaration for three years under Section 82.42(b)(3). Three full years from May 10, 2026 reaches May 10, 2029. Counting the calendar year of receipt as a complete year ends too early. Two years is insufficient; five years exceeds the minimum."
+  },
+  {
+    "reviewId": "R033",
+    "key": "C",
+    "explanation": "Robinair\u2019s confirmation procedure uses a moving probe with clearance from the fitting, especially after an apparent leak at high sensitivity. Stationary or contact sampling should be rechecked using that technique. The detector responds to changes in concentration; waiting for a stationary reading to peak or stabilize does not substitute for the prescribed retest. This is the named instrument\u2019s procedure, not a universal specification for every detector."
+  },
+  {
+    "reviewId": "R034",
+    "key": "D",
+    "explanation": "Section 82.42(a)(1) permits the equipment owner or another responsible officer to sign the equipment certification. Nora\u2019s ownership supplies that authority; personal technician certification is not the signing criterion. Luis\u2019s operator credential does not itself make him an owner or responsible officer. The signed statement must still truthfully attest that authorized operators are trained and certified."
+  },
+  {
+    "reviewId": "R035",
+    "key": "B",
+    "explanation": "EPA excludes HCFC-22 bus air conditioning from MVAC and MVAC-like classifications. It is high-pressure equipment covered by Section 608 Type II."
+  },
+  {
+    "reviewId": "R036",
+    "key": "A",
+    "explanation": "The staged checking procedure described in the January 2025 training narrative positions the probe at the outlet center, with low blower, floor distribution and A/C off. The lower edge and cabin floor might seem attractive because the vapor is denser than air, but they are not this procedure\u2019s specified sampling position. The recirculation inlet is upstream. Follow the applicable machine instructions; this location is not asserted here as a universal J2843 requirement."
+  },
+  {
+    "reviewId": "R037",
+    "key": "A",
+    "explanation": "The lamp\u2019s wavelength must suit the dye so its particles fluoresce effectively. Beam width and reflector focus affect coverage, while apparent visible brightness does not establish the useful ultraviolet output. These factors do not replace the optical match between lamp and dye."
+  },
+  {
+    "reviewId": "R038",
+    "key": "B",
+    "explanation": "Robinair specifies a minimum conductor size of 14 AWG and the shortest possible cord if an extension is unavoidable. An 18 or 16 AWG conductor is smaller. A 12 AWG conductor is larger, so it is not the minimum specified size. This is that machine\u2019s instruction, not a universal EPA cord specification."
+  },
+  {
+    "reviewId": "R039",
+    "key": "D",
+    "explanation": "The evaporator marking identifies its refrigerant and compliance with J2842\u2019s evaporator design requirements. J639 addresses the broader vehicle refrigerant system; J2844 addresses new R-1234yf purity and containers; J2099 addresses recycled refrigerant purity. Their related scopes do not substitute for the evaporator design identification."
+  },
+  {
+    "reviewId": "R040",
+    "key": "C",
+    "explanation": "An oily trace at a refrigerant joint can identify a possible leak site for further testing. Water at the drain, frost and external corrosion can have other causes and do not themselves show lubricant escaping through that joint. Visual evidence directs investigation; it does not replace a leak test."
+  }
+]

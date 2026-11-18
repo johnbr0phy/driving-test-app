@@ -1,0 +1,786 @@
+16 Taxation and Assessments 
+ 
+NOTE: Unless otherwise indicated, all statutory references in this chapter are to the California Revenue and 
+Taxation Code. 
+Questions concerning taxes and assessments are raised in mo st real estate transactions . Taxation is an indirect 
+yet significant controlling device affecting estimates of value. It is important for those engaged in the real estate 
+business to know the variety of taxes and their effect on property transfers. Discussion of the specific taxes 
+mentioned in this chapter is for reference purposes  only and should not be re lied upon as a substitute for 
+professional advice. Full consideration may involve retaining the serv ices of accounting, legal and tax 
+specialists. There are many categories of property that may be exempt from taxation. The county assessor 
+should be consulted for a determination in this area.    
+Federal, state and local governments tax real property. Local governments assess taxes directly on the property, 
+such as ad valorem property taxes, special assessments and transfer taxes. Most state governments have an 
+income tax. The federal and state governments tax prope rty indirectly through the taxation of ordinary and 
+capital gain on income earned from real estate. Federal a nd state governments also tax property indirectly when 
+it is transferred through an estate or gift to others, i.e., estate and gift taxes. 
+Taxes may act as a deterrent to many individuals desiri ng to acquire or dispose of real property. Unless tax 
+benefits and burdens and tax planni ng alternatives are seriously considered by persons contemplating the 
+purchase or sale of real estate, the anticipated benefits of ownership may not be realized, and losses may be 
+sustained. 
+PROPERTY TAXES 
+Property taxes are levied according to the value (ad valorem) of the property as of the date acquired, or the date 
+of completion of any new construction. Generally, the mo re valuable the property and/or the more current its 
+acquisition or construction date, the higher the tax. Pr operty taxes, including Property Tax in-lieu of Motor 
+Vehicle License Fees, represent a major source of income for counties in California.  Approximately half of 
+California’s one hundred million acres are owned by governments and therefore exempt from property taxation. 
+All property within the jurisdiction of a taxing authority is taxable unless specifically exempt. 
+California’s Property Taxes 
+In June of 1978, California voters approved Propositi on 13, amending the State Constitution so that the 
+maximum annual tax on  real property is limited to one percent of “full cash value” (market value) plus a 
+maximum of two percent annual inflation factor based on the Consumer Price Index (CPI),  as calculated by the 
+California Department of Industrial Re lations. (Sections 51 and 110.1) An a dditional sum is allowed to pay for 
+indebtedness on affected property approved by voters prior to the passage of Proposition 13. Also, selected new 
+indebtedness is allowed, only by a tw o-thirds vote of the residents affect ed.  The passage of Proposition 39 in 
+2000, authorizes bonds for repair, cons truction or replacement of school facilities, classrooms, if approved by 
+55% local vote for projects evaluated by schools, community college districts, county education offices for 
+safety, class size, and information technology needs. 
+Property Tax Liens 
+Property taxes become liens against real property on Janua ry 1 of the year preceding the fiscal year (July 1 - 
+June 30) for which the taxes are levied. One-half the taxes on real property are due on November 1 and payable 
+without penalty until 5 p.m. (or close of business, whic hever is later) on December 10. The second half is due 
+on February 1 and is delinquent if not paid by 5 p.m. (or close of business, whichever is later) on April 10. If 
+either December 10 or April 10 falls on a Saturday, S unday, or legal holiday, the time of delinquency is 
+extended until 5 p.m. (or close of business, whichever is later) on the next business day. A ten percent penalty 
+applies to an installment that becomes delinquent. If the second installment is delinquent, the tax collector adds 
+a charge to place the property on the delinquent roll. 
+The Morgan Property Taxpayers’ Bill of Rights 
+The Morgan Property Taxpayers’ Bill of Rights (Sec tion 5900, et seq.) and the related amendment to 
+subdivision (e) of Section 408 require that the assessor allow, upon request of an assessee (or his/her designated 
+representative), inspection and copying of documents, including an auditor’s work papers, relating to the 
+430 CHAPTER SIXTEEN 
+ 
+appraisal and assessment of assessee’s property. Further information concerning taxpayers’ rights relating to the 
+assessment, audit, and collection of property taxes in this state may be obtained from the State Board of 
+Equalization, Taxpayers’ Rights Advocate’s Office, P.O. Box 942879, Sacramento, CA 94279-0070. 
+Telephone: (800) 400-7115, www.boe.ca.gov
+.  
+Establishing Values 
+Operating under constitutional provisions and statutes, a ssessors have established real property values as 
+follows: 
+No change in parcel since February 28, 1975. If the parcel has not been further improved with structures and 
+has not been sold or transferred since February 28, 1975, the assessor has established a base value for the parcel 
+and then has applied an inflation rate to that base y ear value not to exceed 2% per year. Thus, the base year 
+value is locked in place and cannot be changed unless there is a change in ownership or new construction. 
+Parcel sold/changed ownership since February 28, 1975. If a parcel has sold or otherwise changed 
+ownership since February 28, 1975, its new base year value as of the  date of change of ownership is  enrolled 
+for the following lien date and shall be adjusted upward by up to 2% each year. 
+New construction. If the improvement on the parcel was newly constructed since February 28, 1975 and the 
+parcel remained in the same ownership prior to and af ter the construction, only the added “new construction” 
+receives a new base year value. The land may have  one base year for valuation purposes while the 
+improvements constructed may have another. Only if the improvement is completed in the same assessment 
+year that the parcel is purchased would the land and im provement have the same base year. “New construction” 
+could also apply to land that has been significantly altered. 
+There are certain improvements which have been excluded from the definition of “new construction” for 
+purposes of reappraisal: 
+1. water conservation equipment for agricultural use; 
+2. fire detection or extinguishing systems or modification for fire-related egress; 
+3. modification for access by  disabled person; and 
+4. seismic retrofitting 
+5. normal maintenance and repair 
+6. construction or addition of any active solar energy sy stem, as defined in subdivision (b) of Section 63 of 
+the California Revenue & Taxation code 
+7. disabled person accessibility  
+8. environmentally contaminated property 
+Parcel further improved since February 28, 1975 (or since constructed, sold or transferred). If the parcel 
+has been further improved (e.g., by an addition or swimming pool) since February 28, 1975 (or since 
+constructed, sold or transferred), it has a 1975 base value year (or year of sale, construction or transfer) and an 
+additional base year value on the new improvement. 
+Change in Ownership Exclusions. There are a number of exclusions from change in ownership and 
+consequent reappraisal, some of which are described as follows: 
+1. Acquiring “comparable” replacement property for orig inal property taken by a governmental agency in 
+eminent domain actions, per Section 68. 
+2. Replacing property destro yed by disaster. Section 69 requires comparable replacement property to be 
+acquired or newly constructed within 3 years of prope rty substantially damaged or destroyed by governor-
+declared disaster. Section 69.3 permits counties to enact ordinances allowing such replacement property 
+transfers from other counties. Section 70 requires th at reconstructed property that is substantially 
+equivalent to damaged property is not reassessed “new construction.”   
+3. Transferring the principal residence and first one million dollars of full cash value of real property between 
+parents and their children pursuant to Section 63.1, provided that a claim for the exclusion is filed with the 
+ TAXATION AND ASSESSMENTS 431 
+ 
+assessor within 3 years of the date of transfer or within 6 months after the date of mailing of the notice of 
+supplemental or escape assessment. 
+ Subject to subparagraph (B) of Section 63.1, transfers occurring on or after March 27, 1996 , between 
+grandparents and their grandchild or grandchildren, if the parents of that grandchild or those grandchildren, 
+who qualify as the children of the gra ndparents, are deceased as of the da te of purchase or transfer  All 
+parents do not have to be deceased.  The child of the grandparent need only be si ngle.  As of January 1, 
+2006 if the child is married to a step -parent of the grand-child, a grandpa rent to grandchild exclusion will 
+also apply. 
+4. Transferring the base year value of one’s home (original property) to a repl acement property for persons 
+over 55 or disabled persons who sold their original property pursuant to criteria in Section 69.5.  Section 
+69.5 also  allows a county board of supervisors, afte r consultation with affected local agencies located 
+within the boundaries of  the county, to adopt an ordinance that authorizes the transfer, subject to the 
+conditions and limitations of this section, of the base year value of property that is located within another 
+county in the State of California.  Currently there are 8 counties (Alameda, San Diego, Santa Clara, Los 
+Angles, San Mateo, Ventura, Orange  and El Dorado) that have ordina nces permitting intercounty transfers 
+of base year values. Since the counties authorizing the transfers are subject to  change, it is recommended 
+you contact the county to verify current eligibility. 
+5. Transferring real property to a spouse per Section 63, or transferring real property into a trust where the 
+trustor/transferor is the sole presen t beneficiary of the trust or the trust is revocable by the trustor pursuant 
+to subdivision (d) of Section 62. 
+6. Transferring real property to a partnership or other legal entity by maintaining exactly the same 
+proportional interests of the transfer ors and transferees, resulting solely  in a change in the method of 
+holding title, under Section 62(a)(2). 
+Reduction of value. Assessors must recognize declines in value. Under Section 51, the “taxable value” is the 
+lower of the base year value (compounded annually) or th e full cash value (defined in Section 110) whichever 
+is less. It may be necessary for the property owner to expressly bring the decline in value to the assessor’s 
+attention. The county board of equalization is required to hear applications for reduction in assessment. 
+Exemptions 
+There are numerous properties that are assessed but are partially or totally tax-exempt, as well as some kinds of 
+real and tangible business and personal property that ar e neither assessed nor taxed. Under Section 218, the 
+homeowner’s exemption of the first $7,000 of full value applies to each residential property that is owner-
+occupied on the lien date and meets other qualifying tests. (This includes an owner-occupied unit in a multiple 
+unit residential structure, an owner-occupied condominium, cooperative apartment, or unit in a duplex). Once 
+claimed, the homeowner’s exemption remains in effect until terminated. Termination of the homeowner’s 
+exemption can be triggered by a change  in title-holder, even if temporary. Each homeowner is responsible for 
+notifying the assessor that the property is no longer eligible for exemption. An escape assessment plus a 25 
+percent penalty and interest may result from failure to notify the assessor of the ineligibility. 
+Section 205 provides an exemption of up to $4,000 of full value of any property subject to property tax (real, 
+personal, boats, planes, etc.) owned by  qualifying veterans or the unmarried spouses of deceased veterans. This 
+exemption results in a tax savings of up to $40. The limitations are that it cannot apply to a property on which 
+the homeowner’s exemption has been successfully claimed. And for a non-home owning veteran to qualify, 
+there is a personal wealth cap of $5,000 for an unma rried veteran and $10,000 for a married veteran.. In 
+computing the $5,000 or $10,000 property limitation, one-four th of the assessed value of the taxable property 
+and the full value of nontaxable property is used. Sec tion 205.5 provides an exemption for disabled veterans 
+and/or their unmarried surviving s pouses, as follows: depending on veteran’ s income and extent of disability 
+(resulting from injury or disease incurred during military service), a disabled veteran may receive an exemption 
+of $40,000, $60,000, $100,000, or $150,000 of the full cash valu e of his/her residence. The county assessor can 
+provide application forms and other information regarding the disabled veteran’s exemption. 
+All growing crops, fruit, and nut-bearing trees less than four years old and grapevines less than three years old 
+are exempt. Properties held or exclusively used fo r human burial or owned by nonprofit entities, including 
+certain nursery and kindergarten-to-12th grade school s, hospitals, churches, nonprofit private schools and 
+432 CHAPTER SIXTEEN 
+ 
+colleges are exempt. Timber is no longer subject to property tax, but owners pay a yield tax on downed or 
+felled timber. However, timberland remains taxable. Public open-space lands used solely for recreation are also 
+exempt. 
+Supplemental Assessments 
+New procedures for enrolling adjustments to assessed valua tions of real property have been used by assessors 
+since 1983. Prior to the enactment of the supplemental assessment system, when a change in ownership or 
+completed new construction occurred, increases in base  year value were often delayed from 4 to 16 months, 
+resulting in an unwarranted reduction in taxes for some, with a proportionate (and inequitable) shift of the tax 
+burden to others. 
+The Legislature solved this inequity through Sections 75,  et seq., under which assessors appraise at its full cash 
+value real property which has changed ownership or is ne wly constructed as of the date of the event. Added 
+taxes become due on the date the change in ownership o ccurs or the new construction is completed. This is 
+done by issuing a supplemental assessment to be added to a supplemental tax roll. The value determined 
+becomes the new base year value of  the transferred or newly-constructed property. Just as for regular 
+assessments, there are appeal procedures for protesting supplemental assessments. 
+If reassessment takes place between January 1st and May 31st, inclusive, two supplemental assessments are 
+made (and the taxpayer receives two supplemental bills ). A reassessment occurring between June 1st and 
+December 31st, inclusive, generates only one supplemental assessment. 
+If a property changes ownership more than once during an assessment year, or if there are multiple completion 
+dates for new construction during an assessment year, or  any combination of transfers and construction, a 
+supplemental assessment is made for each occurrence.  
+Supplemental assessment of property that has decreased in value results in the auditor issuing a partial refund of 
+taxes paid in advance. The refund is sent to the new owner, not the original taxpayer.  In the event of a 
+foreclosure and a subsequent sale the refund will be prorated. 
+New construction is excluded from supplemental assessm ent (under the “builder’s inventory exclusion – 
+Section 75.12) if the owner will not occupy but intends to market the improvement, and has so notified the 
+assessor in writing prior to or within 30 days of the date of commencement of construction. When the newly-
+constructed improvements are transferred, leased or rented, a supplemental assessment is made as of that date. 
+County assessors are generally alerted to changes in  ownership and construction starts through recorded 
+documents and permits. When the assessor determines  that an ownership change or new construction 
+completion has occurred, the assessor: 
+1. places the supplemental assessment information on the roll; 
+2. notifies the auditor, who places an appropriate nota tion on the current roll or on a separate document kept 
+with the roll; and 
+3. sends a prescribed notice of supplemental assessment to the assessee. 
+The notice includes the new base year property value, the taxable value appearing on the current roll and/or roll 
+being prepared, information concerning the assessee’s right to review and to appeal the supplemental 
+assessment, and the procedure for filing a claim of exem ption. If the property has decreased in value and the 
+supplemental assessment is a negative amount, the notice will advise the assessee that a refund will be made. 
+Filing a Change in ownership Statement. Section 480 requires that any person acquiring any interest in real 
+property or a manufactured home taxed as real property must file a change in ownership statement with the 
+county recorder or assessor. The change in ownership statem ent must be filed either at the time of recording, or 
+if the transfer is not recorded, within 45 days of the date of the change in ownership. Failure to file a change in 
+ownership statement within 45 days from the date of a written request by the assessor will result in a penalty of 
+one hundred dollars or ten percent of the taxes applicable to the new base year value, whichever is greater. 
+If the transfer is occasioned by a death, and probate is not  involved, the transferee (or trustee, if applicable) has 
+150 days from the date of the death to file the change in ownership statement. If the property is subject to 
+probate, the statement must be filed prior to or at the time the inventory and appraisal are filed with the court. 
+ TAXATION AND ASSESSMENTS 433 
+ 
+Sections 480.3 and 480.4 require that  county assessors and recorders make available to property buyers a 
+“Preliminary Change of Ownership Report” form. This form is to be completed by the buyer prior to transfer of 
+the property. If a document evidencing a change of ownership is presented to the recorder for recordation 
+without the concurrent filing of this preliminary change of ownership re port, the recorder may charge an 
+additional recording fee of twenty dollars. 
+Statute of limitations on Escape and Supplemental Assessments. Section 532 provides assessors a four-year 
+statute of limitations for the enrollment of escape assessments. In cases of concealment or not filing a change of 
+ownership statement for an unrecorded change of ownership the statute of limitations is eight years.  The 
+enrollment period is unlimited  when a change of ownership statement is not filed for a recorded change of 
+ownership. 
+Section 75.11 (d) allows assessors four years to enroll supplemental assessments  or eight years in cases of 
+concealment or not filing a change of ownership statement for an unreco rded change of ownership.  The 
+enrollment period is unlimited in case of fraud. 
+In both cases, the statute of limitations for making escape and supplemental assessments does not begin to run 
+until July 1 of the assessment year in which the event occurred.. Where, for example, a change in ownership 
+occurred in 1992, and a change in ownership statement reporting it was filed, the assessor has only four years 
+from 1992 to enroll escape and supplemental assessments. If the change in ownership statement reporting it was 
+not filed, then assessor must enroll escape and suppl emental assessments for all of the years since 1992, 
+including the year of discovery. The assessor’s statute of limitations does not commence until. July 1 of the 
+assessment year in which the event occurred. 
+If non-reporting occurs because of a fraudulent act or om ission, the penalty of 75 percent of the additional 
+assessed value under Section 504 is added to the es cape and supplemental assessments. The supplemental 
+assessment must be made within eight years, on or before the eighth July 1 following the July 1 of the 
+assessment year in which the event giving rise to the supplemental occurred, and the escape assessment must be 
+levied eight years after the July 1 of the year in which the property escaped taxation. 
+Postponement (Sections 20581, et seq.) 
+Senior citizens (62 years of age or older) and persons w ho are blind or disabled may defer payment of taxes on 
+their residences. To qualify, an individual must own and occupy the home, have at least a 20% equity in the 
+property (using the assessor’s full value as the standard ), and have a yearly total household income of $35,500 
+or less for calendar year 2007. If married, only one spouse need qualify. 
+In applying the law, a lien in favor of the State of Calif ornia is placed against the property and an interest rate 
+determined by the rate earned by the Pooled Money Investment Fund is charged. The postponed taxes and 
+interest are not recovered until the property is sold. 
+Complete information about the deferral program is available from the State Controller’s Office at P.O. Box 
+953, Sacramento, CA 95812. The toll free telephone number is 1-800-952-5661.  Information is also available 
+on the California State Controller’s website at http://www.sco.ca.gov/col/taxinfo/ptp/index.shtml
+.  
+Tax Sale (Sections 3351 - 3972) 
+County tax collectors, not assessors, are charged with the responsibility of administer ing the law pertaining to 
+the sale of all properties that are “t ax-defaulted” when five or more years have passed since the property taxes 
+were paid. The tax collector is required by law to attempt to sell within two years all properties which have 
+become tax defaulted and subject to the power to sell. The tax collector may sell properties to any person at a 
+public auction or under special circumstances, to adjoining property owners at a sealed bid sale. The minimum 
+price at which property may be sold at public auction is the sum of all taxes, penalties, costs and fees as 
+defined. 
+The minimum bid has to be approved by the County Board of Supervisors. After authorization by the State 
+Controller, the tax collector publishes or posts the required notices, setting the date of sale. At the sale, the 
+amount of the highest bid must be paid in cash or negotiable paper, or any combination thereof which the tax 
+collector specifies. Upon completion of the tax sale, the purchaser receives a tax deed conveying title free of all 
+encumbrances of any kind existing before the sale, except those shown in Section 3712. 
+434 CHAPTER SIXTEEN 
+ 
+If a tax-defaulted property is unusable because of size, lo cation, or other conditions, the tax collector may sell it 
+at a sealed bid sale to contiguous property owners at a price established by the tax collector. 
+Buyers of tax-defaulted properties may include taxi ng agencies, revenue districts, and certain non-profit 
+organizations. In the case of residential property, th e sale to a non-profit organization is conditioned upon the 
+rehabilitation and subsequent sale of the property to lo w-income persons. In the case of vacant property, the 
+non-profit organization must either construct a residen tial building on the property and sell the property to low-
+income persons or dedicate the vacant property to public use. 
+Redemption (Sections 4101, et seq.) 
+Tax-defaulted real property may be redeemed upon paymen t of taxes, interest, costs and redemption penalties. 
+Redemption payment is made to the county tax collector, who then issues a certificate of redemption as 
+evidence of payment.  Any person may elect to pay delinquent taxes in installments under article 4217 at any 
+time prior to 5 p.m. on June 30 of the firth year after the property became tax defaulted. 
+Delinquent taxes, costs, interest and penalties ma y be paid in five annual installments if the current taxes are 
+paid.  Persons electing to pay delinquent taxes in insta llments may be subjected to a fee for processing their 
+request. 
+If the property has not been redeemed within five years after the initial declaration of default, the property will 
+become subject to the tax collector’s power to sell. The right of redemption terminates at the close of business 
+on the last business day prior to the date a tax collector’s auction begins. If the property is not sold, the right of 
+redemption is revived. If the property is redeemed, the tax collector will execute and record a “Rescission of 
+Notice of Power to Sell Tax-Defaulted Property.” 
+TAXATION OF MOBILEHOMES 
+Mobilehomes and manufactured homes are subject to local property taxation under prescribed circumstances. 
+Under Section 18551 of the Health and Safety Code ther e are four principal prerequisites for transforming a 
+mobilehome into real property: 
+1. obtaining a building permit; 
+2. attaching the mobilehome to an approved foundation; 
+3. recording a document reflecting that the mobilehome has been affixed to an approved foundation system; 
+and 
+4. obtaining a certificate of occupancy. 
+A mobilehome installed on a foundation system is deemed a fixture or improvement to the real property. 
+Section 5802 provides that the base year value of a mobilehome converted from the vehicle license fee to local 
+property tax shall be its full cash value on the lien date for the fiscal year in which it is first enrolled. 
+After a mobilehome is attached to a foundation system, the Department of Housing and Community 
+Development (HCD) must cancel the re gistration. Title is thereafter reco rded with the county recorder and 
+ownership is transferred accordingly. Removal of th e mobilehome from the foundation is prohibited unless the 
+following conditions are met: 
+1. all persons having title to any estate or interest in the real property consent to the removal; and 
+2. 30 days prior to removal, the owner of the mobilehome notifies HCD and the local assessor of its intended 
+removal. 
+HCD must be given written evidence of the consent to removal by all persons having title or interest in the real 
+property. HCD will then require the owner to obtain a transportation permit or mobilehome registration, 
+whichever it deems appropriate. Once removed from the foundation and the HCD license fee is paid, the 
+mobilehome is personal property and the assessor will remove it from the real property tax roll. 
+ TAXATION AND ASSESSMENTS 435 
+ 
+SPECIAL ASSESSMENTS 
+Special assessments are levied for th e cost of a public improvements or se rvices such as streets, sewers, 
+irrigation, and drainage. Special assessments may be due periodically to improvement districts or be levied only 
+once by the city or county for a particular work or improvement.  These assessments are not based on the value 
+of the property. 
+The liens created by special assessments are usually equal in priority to general tax liens. 
+Self-governing districts may be the source of special assessments. Activated under state law by the local city or 
+county or by vote of the residents, the district becomes a separate legal entity governed by a board of directors. 
+A district issues bonds to finance particular improvements such as water distribution systems, drainage 
+structures, irrigation works, or parking facilities. To pay off the bonds, the district has the power to assess all 
+lands included in the district on an ad valorem basis. This assessment is a lien on the land until paid. The lien 
+has priority over private property interests and can be foreclosed by sale similar to a tax sale. 
+Benefit Assessments 
+Rather than establishing a separate district for the pur pose of constructing an improvement, the city or county 
+may establish an “improvement area” and assess the lands  contained therein on the ba sis of benefits to be 
+received from the proposed improvement. A benefit assessment is often included on the property tax bill. 
+Benefit assessments are distinguished from special asse ssments chiefly by the differences in the assessment 
+base. However, there are other distinguishing characteris tics. Benefit assessments are generally not considered 
+to be deductible as a tax on either California or federal income tax returns. There is a distinction made in federal 
+tax regulations between an assessment to finance impr ovements and an assessment to finance maintenance. 
+Only the latter is deductible. 
+The purposes for which benefit assessments are levied include lighting, flood control, transit, police protection, 
+fire protection, county service areas and paramedics. 
+CERTAIN ASSESSMENT STATUTES 
+Since 1885, California has enacted numerous statutes relating to special taxes and assessments and to the 
+formation of assessment districts throughout the state. The following are among the important assessment acts. 
+Vrooman Street Act 
+Passed in 1885, this act conferred authority on city councils  to grade and finish streets, construct sewers, etc., 
+within municipalities or counties. It provides for an el ection and the issuance of bonds secured by special funds 
+collected under tax levy. It also provides for the acquisition of public utilities by the municipality or county. 
+A property owner may arrange for street grading according to official speci fications and secure a reduction in 
+the amount of the assessment. 
+Street Improvement Act of 1911 
+This act is utilized more than any other for street improvements in this state. Assessments are due in equal 
+installments during the term of the bonds. The local legislative body determines the rate of interest on the 
+bonds. The amount of assessment appears on the tax bill as a lien against the property. It may be partially or 
+wholly prepaid at any time, including prior to issuance of the bonds. 
+The Improvement Bond Act of 1915 
+Under the terms of this act, a public agency can issue bonds to finance subdivision street improvements. Bonds 
+usually carry a maximum of 6 percent interest. Owners of affected property bear the cost to redeem the bond. 
+Under certain circumstances, an improvement district cannot issue bonds until the California Districts Securities 
+Commission has approved the project. 
+Mello-Roos 
+The Mello-Roos Community Facilities Act of 1982 provides fo r a wider variety of facilities and services than 
+other improvement bond acts and has no requirement that such improve ments will specifically benefit 
+individual properties. Although a Mello-Roos assessment is secured by a lien against the property and the 
+maximum tax rate approved may be greater than what will be needed to retire th e bonds, the principal amounts 
+436 CHAPTER SIXTEEN 
+ 
+of the bonds are not tied to any specific parcels. As such, Mello-Roos is on the order of a general property tax 
+levy for general fund benefits and is not appropriate fo r inclusion in the land value of the parcels. The amount 
+of any unpaid assessment(s) will not a ppear on the property tax bill, but will be separately levied and collected. 
+Civil Code Section 1102.6b requires th at a seller of one to four dwelling units disclose a Mello-Roos 
+assessment. 
+FEDERAL TAXES 
+Federal Tax Liens 
+Any unpaid Internal Revenue Code tax becomes a lien on all property and rights to property of the taxpayer, 
+including property or rights to property acquired after th e lien arises. A federal tax lien is not valid against 
+purchasers, holders of security interests (e.g., mortgages or mechanics’ liens) and judgment lien creditors until a 
+notice of lien has been filed in the proper place. Even though a notice of lien has been filed, it is not valid 
+against certain classes of creditors (known as “Super Priorities”) defined in Section 6323(b) of the Internal 
+Revenue Code. With respect to real property, the notice must be filed with the county recorder. 
+In addition to the general tax lien, the Internal Revenue C ode provides for special liens for estate and gift taxes. 
+At the date of the decedent’s death, an unrecorded estate tax lien attaches  to every part of the gross estate and 
+continues for a period of ten years. An estate tax lien is valid against most purchasers and  transferees. (If the 
+estate elects to pay the tax in installments for up to fifteen years, the lien is recorded.) 
+An unrecorded gift tax lien attaches to all gifts made during the calendar year. If the gift tax is not paid by the 
+donor, the donee becomes personally liable for the tax. The gift tax lien extends for ten years from the time the 
+gifts were made. 
+Federal Gift Tax and the Unified Credit 
+This tax applies to completed voluntary transfers by an individual of any type of property for less than an 
+adequate and full consideration in money or money’s worth. 
+If a gift is a transfer of a present interest, there is an annual exclusion of $13,000. If a gift exceeds $13,000 in a 
+year, a return is due. If the gift is a transfer of a future interest (i.e., any interest that is to commence in use, 
+possession, or enjoyment at some future time), the exclusion does not apply and a return is due. 
+Two types of “indirect” transfers are no longer considered gifts and no return is due. These include any amount 
+paid on behalf of an individual: 
+1. as tuition to an educational organization; or 
+2. to any person who provides medical care. 
+The due date of the Federal Gift Tax Return is April 15 of the year following the gift. Any extension of time 
+granted for filing the form 1040 applies to the return. Any compliance questions should be referred to a tax 
+advisor or the local IRS office. 
+Even though a return may be due, there may not be a tax liability. For example, tran sfers between spouses are 
+not taxable gifts. Also, donors may make large transfers and use their Unified Credit rather than pay the gift 
+tax. The Unified Credit is a dollar for dollar offset against the tax. It was phased in as follows: 
+ For Gift Tax Purposes: For Estate Tax Purposes: 
+Year Unified Credit  
+Applicable  
+Exclusion  
+Amount Unified Credit  
+Applicable  
+Exclusion  
+Amount 
+2002 and 2003  345,800 1,000,000 345,800 1,000,000 
+2004 and 2005  345,800 1,000,000 555,800 1,500,000 
+2006, 2007, and 2008  345,800 1,000,000 780, 800 2,000,000 
+2009  345,800 1,000,000 1,455,800 3,500,000 
+ 
+To the extent the Unified Credit is used to offset a gift tax liability, it is unavailable for offset in settlement of 
+the transferor’s estate tax liability. 
+ TAXATION AND ASSESSMENTS 437 
+ 
+Social Security Tax 
+The federal government operates a retirement pay program . Self-employed persons are generally covered also. 
+This program, commonly known as “social security,” requires quarterly contributions by almost all employers. 
+Federal Insurance Contributions Act (FICA) withholdings  are employee contributions to social security and 
+medicare. An employee’s FICA tax rate is 7.65%. The social security tax portion is applied to wages up to a 
+certain amount (e.g., $106,800 for 2010). The medicare portion applies to all wages. 
+Unemployment Tax 
+This federal tax is applicable only to those non-farm employers who: 
+1. pay wages of $1,500 or more during any calendar quarter; or 
+2. employ at least one employee for some portion of at least one day of each of at least 20 different weeks 
+(not necessarily consecutive) during the current or the preceding calendar year. 
+There are also specific requirements for those individuals employing agricultural or domestic workers. 
+DOCUMENTARY TRANSFER TAX 
+Section 11911 allows a county or city to adopt a documentary  transfer tax to apply to transfers of real property 
+located in the county. Notice of payment is entered on the face of the deed  or on a separate paper recorded 
+with 
+the deed. 
+The tax is computed at the rate of 55 cents for each $500 of consideration or fraction thereof. If a portion of the 
+total price paid for the property is exempt because a lien or encumbrance remains on the property, this fact must 
+be stated on the deed or on a separate paper filed with the deed. Certain types of pr operty transfers, such inter 
+vivos gifts, transfers by reason of death, or proportional transfers into a partnership owned by the same 
+individual or entity, are exempt from documentary transfer tax. 
+A city within a county which has adopted a transfer tax may also adopt its own transfer tax ordinance with the 
+tax amount fixed at one-half the rate charged by the county. The county collects the total tax in the amount 
+recited above but turns half the amount collected over to the city. 
+Some cities collect transfer taxes in  excess of the amounts provided in Sec tion 11911. In part, the authority for 
+this may lie in the distinction betw een charter cities and general law citie s. A concerned pa rty should contact 
+the recorder’s office for the status of a particular city’s transfer tax levy. 
+STATE TAXES 
+Inheritance Tax 
+The inheritance tax law was repealed as the result of the passage of Proposition 6 at the California election held 
+on June 8, 1982. The new estate law (below) is effective for estates of decedents who died after January 1, 
+1987. 
+Gift Tax 
+The gift tax law was also repealed as the result of the passage of Proposition 6 at th e California election held on 
+June 8, 1982. The repeal is effective as to all gifts made after June 7, 1982. 
+Estate Tax 
+Proposition 6 also enacted the California estate tax. The pur pose of this tax is to take advantage of a provision 
+in federal law which allows the estate to claim a credit against the federal estate tax for death taxes paid to the 
+state. The tax is fixed in the maximum amount that the federal government will allow as a credit for estate taxes 
+paid to the state. Therefore, this tax does not cost the estate anything because if the amount were not paid to the 
+state it would have to be paid to the federal government. 
+A California Estate Tax Return is required to be filed w ith the State Controller for the estate of every decedent 
+whose date of death is after January 1, 1987, if a Federal Estate Tax Return is required to be filed. The return is 
+due and any tax liability is payable on or before nine months after the date of death. There is a late filing 
+penalty of 5% of the amount of the tax due for each month or portion thereof up to a maximum of 25%. This 
+penalty can be waived for good cause. If an extension to f ile has been granted by the Internal Revenue Service 
+438 CHAPTER SIXTEEN 
+ 
+for the filing of the Federal Estate Tax Return, a like extension will be given for the California return. In 
+addition to the late filing penalty, interest at the rate of 12 percent per annum is chargeable on payments not 
+made within nine months after the decedent’s death. 
+MISCELLANEOUS TAXES 
+Sales and Use Tax 
+The California State Sales Tax is imposed upon retailers for the privilege of selli ng tangible personal property 
+at retail. The retailer is liable for this tax whether or not collected from customers. 
+The Use Tax is imposed upon the storage, use, or other consumption of tangible personal property purchased or 
+leased under certain conditions from a retailer. Use Tax is the liability of the purchaser  and that liability is not 
+extinguished until the tax is paid to the state unless it was paid to, and a receipt for the tax was obtained from, a 
+retailer who is registered with and authorized by the state to collect the tax from the purchaser. Sales or Use 
+Tax also applies to certain leases of tangible pers onal property under specific cond itions. The State Board of 
+Equalization administers these taxes. 
+A real estate broker may be concerned with the tax on sale  of personal property. The tax applies to transfers of 
+buildings and the personal property which may convey with  the sale of a house and which are not considered 
+occasional sales under the law if, pursuant to the contract of sale, the buildings are to be severed by the seller. If 
+the contract of sale requires they be severed by the purch aser, the transaction is not taxable as a sale of tangible 
+personal property. The tax may also apply to the value of machinery, equipment and fixtures that do not 
+constitute occasional sales, when included with the sale of a building. 
+Where a business which required a seller’s permit is being sold, the purchaser may be held liable as a successor 
+for tax owed by the seller. If there is any question, sufficient money should be held in escrow to cover possible 
+sales tax liability until a tax clearance is received from the State Board of Equalization. 
+Real Estate Broker and Mobilehome Sales 
+A real estate broker who sells mobilehomes as a retaile r is required to hold a seller’s permit and report to the 
+Board of Equalization the sales or use tax applicable to these transactions. When such a broker sells a new  
+mobilehome for occupancy as a residence, the broker is classified as a retailer-consumer and is required to 
+declare and pay tax on 75% of the broker’s purchase price of the mobilehome . Unattached furnishings and 
+other items that are not part of the mobilehome unit remain subject to tax at the full retail selling price unless 
+otherwise exempt. 
+A real estate broker who sells used mobilehomes as a retailer is also required to hold a seller’s permit. The 
+application of tax to sales of used mobilehomes depends  on whether the unit is subject to property tax or is 
+exempt, but sales tax would apply to any accessory items sold that are not a component part of the mobilehome 
+unit. For mobilehome units sold that are not subject to property tax, sales tax applies. When a real estate broker 
+acts as agent only, the purchaser is s ubject to use tax. If the mobilehome is subject to property tax, neither the 
+sales or use tax applies. 
+Any questions should be referred to the nearest office of the Board of Equalization. 
+Real estate salesperson and broker exclusion. Services performed as real esta te salespersons and brokers are 
+excluded from covered employ ment for purposes of UI, ETT, DI and PI T withholding, if all of the following 
+conditions are met: 
+1. The individual must be a licensed real estate broker or salesperson; 
+2. Substantially all of the remuneration paid to the indi vidual is based on sales or other output rather than by 
+the number of hours worked by the individual; and 
+3. There is a written contract between the individual performing the services and the person for whom the 
+services are performed; which contract provides that, for purposes of state taxes, the individual performing 
+the services will not be treated as an employee. 
+ TAXATION AND ASSESSMENTS 439 
+ 
+State Tax Lien Law 
+Under applicable State law, any tax liabilities which become due and payable, including penalties and interest, 
+together with any costs, c onstitute an enforceable State tax lien on a ll real property located in this State. 
+However, the lien is not valid against: 
+1. a successor in interest of the taxpayer without knowledge of the lien; 
+2. a holder of a security interest; 
+3. a mechanic’s lienor; or 
+4. a judgment lien creditor where the ri ght, title, or interest was acquired prior to the recording of the State tax 
+lien. 
+(Government Code Sections 7150-7229) 
+Unemployment Insurance Tax 
+The California Unemployment Insurance (UI) Code requires contributions by employers for a national system 
+of unemployment insurance. Employer s must also pay an employment tr aining tax (ETT) a nd withhold state 
+personal income tax (PIT) and disability insurance (DI) from employees’ wages. 
+Real estate salespersons and brokers who are empl oyees under common law rules and whose services are not 
+excluded, are subject to UI, ETT, DI and state PIT w ithholding. For further inform ation about services in 
+excluded employment or in determining if an individual is an employee or an independent contractor, contact 
+the State Agency Employment Development Department. 
+California worker’s compensation law. An employer’s statutory liability toward an employee injured on the 
+job is covered by worker’s compensation insurance. While not technically a tax, it is included in this section 
+because it does involve payments by the employer. This  insurance provides for week ly benefit payments to 
+employees unable to work as the result of an industrial injury or illness, as  well as payment of all medical and 
+hospital costs in connection therewith. 
+Since California law is very specifi c about which employees must be c overed, employers should be familiar 
+with Sections 3351-3700 of the California Labor Code. Problems are most likely to arise in the areas of 
+independent contractors and part-time employees. Additi onal information about the law and coverage can be 
+obtained from State Compensation Insurance Fund. 
+ACQUISITION OF REAL PROPERTY 
+Tax planning is a key consideration in an analysis of the potential returns and risks of a real estate project. 
+Investors usually seek to: 
+1. shelter income from taxes; or 
+2. generate losses to shelter other earned income; or 
+3. obtain favorable capital gains treatment at disposition. 
+4. deferral of tax liability. 
+The manner in which an investor acquires real property can contribute to one or more of these goals. 
+Recent tax reforms have tended to eliminate most acquis ition tax write-offs (e.g., prepaid interest) and there are 
+probably few immediate tax effects resulting from the me re acquisition of property. However, the method of 
+acquisition usually has important tax consequences at sale or other disposition of the property. 
+Title might be taken through a corpora tion or individually as co mmunity property, joint tenancy or tenancy in 
+common. Corporate ownership permits dealers to segregate their investment property from their stock in trade 
+and establish the true nature of each type of property.  On the other hand, individua l ownership allows greater 
+maneuverability if future plans are un certain because the property can later be transferred to a corporation tax-
+free. 
+If the taxpayer is in a relatively low tax bracket, individual taxes, particularly for a married person, will be less 
+than corporate taxes on a given amount of income. A lthough joint tenancy ownership will simplify processing 
+on death and reduce probate costs, the transfer of join t tenancy property cannot be controlled by will and the 
+half not included in the decedent’s gross estate does not receive a step-up in basis. 
+440 CHAPTER SIXTEEN 
+ 
+Adjusted Tax Basis 
+One of the most important factors in determining the amount of ultimate gain or loss on a transaction is the 
+“adjusted tax basis” of property, based on its original acquisition price. Property purchased has a basis equal to 
+the purchase price paid, adjusted for various items over the life of the property (e.g., depreciation). Property 
+received as a gift has a basis of the donor’s cost (or market value at date of gift if this is lower and taxpayer 
+desires to claim a loss). The beginning basis of property acquired from a deced ent is generally the fair market 
+value at the date of death. 
+Tax Planning 
+The subject of income taxation in connection with real estate sales frequently arises in the context of ex-post 
+reporting of the facts. In most instances, once a tax related choice is made, it cannot be altered at the time of 
+filing a tax return. It is then too late to think about tax planning. 
+The price of a property may be less important than the financial or tax position of the buyer or seller for 
+purposes of developing acquisition a nd/or disposition strategies. Tax planning should start in the pre-
+acquisition stage. Real estate has historically enjoyed a favorable position in both federal and state income tax 
+laws, but receipt of the available benefits requires tax awareness during the events leading up to acquisition and 
+continuing through the entire period of ownership. 
+Broker’s role. There are many subtleties in the tax laws relating to real estate income. Unless a real estate 
+broker is also an income tax investment counselor, the broker should never offer tax advice but should urge 
+clients to consult a real estate tax attorney, certified public accountant or other qualified person. 
+INCOME TAXATION 
+Federal Income Tax 
+While the Tax Reform Act of 1986 reduced most tax rates and simplified the rate structure, certain real property 
+tax benefits were changed or repealed. The 60% deduc tion for long-term capital gain was repealed and capital 
+gain was treated as ordinary income and taxed at a rate no higher than 28%. Mort gage interest also became 
+subject to different rules that could limit its deductibility , especially if the home was refinanced, or a second 
+mortgage, home equity loan, or line of credit was obtained. The rules regarding depreciation also changed, so 
+that all tangible property placed in service after D ecember 31, 1986 was subject to  the modified acceleration 
+cost recovery system (MACRS). 
+The Taxpayer Relief Act of 1997 changed the overall capita l gains tax rate. The top rate for high income 
+earners was lowered from 28 percent to 20 percent. Th e lowest bracket was reduced from 15 percent to 10 
+percent. The new rates apply to assets sold after May 6, 1997. Investment property owners will experience 
+slightly different treatment regardi ng depreciation recapture under the new ta x bill than in previous years. The 
+difference between the purchase price and selling price (profit) of a property will enjoy the lower overall capital 
+gains tax rate, but any gains due to depreciation recapture  will be taxed at 25 percent. Individual taxpayers will 
+need to consult their tax specialist to determine the application of the new law to their investments. 
+Starting with 2008, there's a new zero percent tax rate on long-term capital gains. The zero percent rate applies 
+to individuals who are in the 10% and 15% marginal tax brackets. The zero percent rate is scheduled to expire 
+at the end of 2010, when capital gains rates will increase to at least 15%. 
+Capital Gains Tax Rates 
+ 
+Type of Capital Asset  Holding Period  Tax Rate  
+Short-term capital gains (STCG)  One year or less  Ordinary income tax rates up to 35%  
+Long-term capital gains (LTCG)  More than one year  5% for taxpayers in the 10% and 15% tax brackets 
+(zero percent starting in 2008)  
+  15% for taxpayers in the 25%, 28%, 33%, and 35% 
+tax brackets  
+ TAXATION AND ASSESSMENTS 441 
+ 
+Passive activity losses and credits. Before the Tax Reform Act of 1986, taxpayers, with some limitation, could 
+use deductions from one activity to offset income from any other activity. Similarly, most tax credits generated 
+in one activity could be used to offset tax on income from any of the taxpayer’s other activities. 
+In response to concerns that extensive tax shelter activity was unfair, Congress enacted the passive activity loss 
+(PAL) rules. 
+After 1986, income was separated into three categories: non-passive income, portfolio income, and passive 
+income. As a result of these PAL rules, taxpayers generally cannot offset non-passive or portfolio income with 
+losses from passive activities. Nor can they offset taxes on such income with credits from passive activities. 
+The new law does contain exceptions for certain activities, including rental real estate, and also has phase-in 
+rules for some losses. 
+A passive activity generally is any activity involving th e conduct of any trade or business in which you do not 
+materially participate. In addition, any rental activity is a passive activity regardless of whether you materially 
+participate. For this purpose, a rental activity generally is an activity the income from which consists of 
+payments principally for the use of tangible property, unless substantial services are performed in connection 
+therewith. A taxpayer materially participates in an ac tivity if the taxpayer is involved on a regular, continuous, 
+and substantial basis in the operation of the activity. 
+At-risk rules extended to real property. The at-risk rules have been extended to apply to the holding of real 
+property. The at-risk rules place a limit on the amount of deductible losses from certain activities often 
+described as tax shelters. Until 1987, activities associated  with holding of real property (other than mineral 
+property) were not subject to the at-risk rules. 
+The at-risk rules apply to losses incu rred through real property placed in se rvice after 1986. In the case of an 
+interest in an S corporation, a partnership, or any other pass-through entity acquired after 1986, the at-risk rules 
+apply to real estate activities regardless of when the entity placed the property in service. 
+In general, any loss from an activity subject to the at-risk rules is allowed only to the extent of the total amount 
+the taxpayer has at-risk in the activity at the end of the tax year. A taxpayer is considered at risk in an activity to 
+the extent of cash and the adjusted basis of other property the taxpayer contributed to the activity and certain 
+amounts borrowed for use in the activity. 
+A taxpayer is not considered at risk for amounts protected against loss through nonrecourse financing. 
+Nonrecourse financing is financing for which the taxpa yer is not personally liable. However, an exception 
+applies to qualified nonrecourse financing secured by real property used in an activity of holding real property. 
+Qualified nonrecourse debt is debt for which no one is personally liable and that is: 
+1. borrowed by the taxpayer with respect to the activity of holding real property; 
+2. secured by real property used in the activity; 
+3. not convertible from a debt obligation to an ownership interest; and 
+4. a loan from, and guaranteed by, any federal, state,  or local government, or borrowed by the taxpayer from a 
+qualified person. 
+A qualified person is a person who actively and regularly engages in  the business of lending money. The most 
+common example is a bank. A qualified person is not: 
+1. a person related to the taxpayer (except as described later); 
+2. the seller of the property, or a person related to the seller; 
+3. a person who receives a fee due to th e taxpayer’s investment in the real property, or a person related to that 
+person. 
+A person related to the taxpayer may be a qualified person if the nonrecourse financing is commercially 
+reasonable and on substantially the same terms as loans involving unrelated persons. 
+442 CHAPTER SIXTEEN 
+ 
+Depreciation 
+Depreciation is a deductible periodic accounting charge that  represents the recovery of capital investment over 
+the useful life of property used in a trade or business or other income producing activity. Land is not included, 
+as it does not depreciate. 
+For depreciable properties acquired prior to January 1,  1981, the principal methods for computing depreciation 
+are straight-line, declining balance and sum-of-the-years’ digits. 
+For depreciable properties acquired on and after January  1, 1981 and before August 1, 1986, depreciation is 
+computed under a method called accelerated cost recovery system (ACRS), permitting cost recovery over much 
+shorter periods. 
+The Modified Accelerated Cost Rec overy System (MACRS) must be used  to depreciate property placed into 
+service after 1986. Taxpayers need to consult their tax advisors for more information on any changes in the 
+depreciation schedules that have been effected since 1986. 
+Appraisal and income tax concepts. Depreciation for tax purposes is to be distinguished from depreciation for 
+appraisal purposes. In appraisal practice, depreciation is loss in value due to any cause, including functional 
+obsolescence or physical deterioration. For income ta x purposes, depreciation is a possible annual deduction 
+from taxable income in recognition of the fact an asset may become economically obsolete or wear out 
+physically and the owner has the right to recover his investment. 
+Improvements to real property are depreciable for income tax purposes if they are used in business or held for 
+the production of income and have a determinable life longer than one year. 
+Even if a taxpayer does not take a deduction for depreciation, the basis of the property is reduced by the amount 
+of the depreciation. Upon sale, the IRS charges the taxpayer with the full amount of depreciation the taxpayer 
+could have taken. 
+Home Mortgage Interest Deduction 
+For years beginning after 1987, the rules for deducting mortgage interest have been modified. The amount of 
+interest a taxpayer may deduct depends on the date, amount, and use of the loan. 
+In general, the interest on any lo an obtained before October 14, 1987  and secured by a main or second home is 
+fully deductible. 
+If a taxpayer obtained a first loan after October 13, 1987 to buy, build, or substantially improve a main or 
+second home, interest is deductible on the first $1 milli on of principle ($500,000 if ma rried filing separately). 
+Interest may be deductible on up to $100,000 of junior loan(s) secured by a taxpayer’s main or second home. 
+For more information, see IRS Publication 936, Limits on Home Mortgage Interest Deduction. 
+Mortgage Credit Certificates 
+State and local governments sometimes issue mortgage credit certificates (MCCs). Under any such program, 
+MCCs may be issued until a total dollar amount set by  the state or local govern ment is reached. An MCC 
+allows a borrower to use mortgage interest as a credit against income tax, making it easier for a low or 
+moderate income person to qualify for a loan for acquisition, qualified rehabilitation, or qualified home 
+improvement of a residence. 
+Disposition of Real Property - Tax Effects 
+The characterization and tax treatment of a sale of real property depend upon the use to which the transferor put 
+the property. 
+Sales or exchanges must be reported to the Internal Revenue Service on Form l099-S, Statement for Recipients 
+of Proceeds from Real Estate Transactions. 
+Capital gain is the taxable profit derived from the sale of a capital asset (generally, that property of a taxpayer 
+other than inventory). The gain is calculated as the sales price reduced by the adjusted basis, expenses of sale, 
+and closing costs. Adjusted basis is the original tax basis of the property adjusted for capital improvements, 
+depreciation and fixing-up expenses. 
+ TAXATION AND ASSESSMENTS 443 
+ 
+The capital gains deduction was repealed for tax years beginning after 1986. Although set to increase in 2011 
+tax year, currently long term net capital gains generally will be taxed at a rate no higher than 15%. 
+Special rules - sale of personal residence. Until the passage of the Taxpayer Relief Act of 1997,  a taxpayer 
+was only permitted to postpone the gain on sale of principal residence by way of a one time only $125,000 
+exemption on the sale of his/her principal residence if the taxpayer was age 55 or older and had resided in the 
+home for at least three of the last five years. The pr incipal residence replacement rule required the taxpayer to 
+purchase another principal residence of equal or greater va lue and use it within two years before or after sale of 
+the previous principal residence. The original gain was not recognized at the time of sale but was used to reduce 
+the cost basis of the new house 
+The Taxpayer Relief Act of 1997 granted a $500,000 capital gains tax exclusion to couples and a $250,000 
+exclusion to single filers, who sell their principal residence. The bill specified that: 
+ The “rollover” and “over 55”  requirements were repealed. 
+Individuals must have lived in the house for two of the last five years. For purposes of the exclusion, on 
+sales after September 30, 1988, taxpayers who are mentally or physically incapacitated are treated as 
+occupying the principal residence wh ile they are in nursing homes or si milar care facilities, as long as the 
+principal residence is actually occupied for periods aggr egating at least one year of the applicable five-year 
+period. The facility must be licensed by a state or political  subdivision to care for individuals in such 
+condition. [Internal Revenue Code §121(d)(7] 
+ The sales transaction must have taken place after May 6, 1997. 
+Sellers and buyers who signed a binding contract between May 7, 1997 and August 5, 1997 could apply 
+either the old or new law into their transaction. 
+The new law gives buyers more options  because they are no longer forced to purchase new homes of equal or 
+greater value. Individuals who meet the requirements can  sell their homes every two years and still qualify. In 
+addition, individuals who marry someone who has already taken the “over 55” exclusion, or individuals forced 
+to sell because of an emergency, like a job transfer or large medical bills, will be able to use the new exclusion. 
+The new plan does not allow taxpayers to deduct losses on the sale of their property from their income tax. 
+Individuals will need to consult their own tax advisor to determine how to apply the new law to their particular 
+tax situation. 
+1031 exchanges. Property may be disposed of by exchange rath er than sale. Some exchanges qualify as tax 
+deferred. If the exchange does not qualify as tax-free, it is treated in all respects as a sale. 
+To qualify as a tax-free exchange, the properties must be “like kind” in nature or character, not in use, quality 
+or grade. The “like-kind” rules give parties a relatively high degree of flexibility: a farm may be exchanged for 
+a store building; vacant land for an apartment building; a rental house for a vacant parcel. Personal use real 
+property does not qualify.  A vacation property or a prim ary residence may qualify as “like-kind” property, and 
+qualify for tax free exchange treatment, provided certain  guidelines are followed. If a tax-free exchange has 
+been made, neither gain nor loss is recognized at the time of the exchange, but is deferred by attributing to the 
+property received the same cost basis as that of the property transferred. The holding period of the new property 
+includes that of the old parcel.  
+Complications arise when like-kind property received is  accompanied by cash or other assets (“boot”). When 
+boot is received, gain is recognized but losses are still excluded from recognition. The taxable gain is the lesser 
+of the value of “boot” received or the gain realized on the exchange. The result may be a fully taxable or a 
+partially tax-free exchange. 
+For example: A taxpayer exchanges a fourplex with a depreciated cost basis of $190,000 for a duplex worth 
+$194,000 plus $2,000 cash. The taxpayer’s gain is $6,000, but only a portion of this gain, the $2,000 boot, is 
+recognized and taxable at the time of the exchange. The remaining $4,000 of gain is not recognized at this time 
+but is postponed by leaving the cost basis of the new property at $190,000. Upon sale of the duplex, the 
+taxpayer must recognize the $4,000 of former gain. 
+444 CHAPTER SIXTEEN 
+ 
+If one of the properties exchanged is encumbered by mort gage debt, the debt relief is  treated as boot received. 
+If both properties are encumbered, the debts are netted for purpose of determining the amount and assignment 
+of boot. 
+Of course, the principal difficulty in effecting a tax-fr ee exchange is finding suitable properties and investors. 
+Usually, two real estate investors are not interested in each other’s property and a multi-party exchange must be 
+arranged. 
+The tax rule which requires an owner to carry over th e basis of the old property as the basis for the new 
+property is a problem when exchanging pre-1981 properties for post-1981 properties. Special rules apply to 
+exchanges of pre-accelerated cost r ecovery system (ACRS) and post-ACRS properties. To avoid this problem, 
+a taxpayer may consider selling the pre-1981 property and purchase the post-1981 property with the proceeds. 
+Installment sales. Taxpayers selling real property a nd receiving one or more payments in a later year or years 
+must report the sale as an installment sale unless the taxpayer specifically elects otherwise. 
+By selling on multi-year terms, a taxpa yer avoids bunching gain/income in th e year of sale. Rather, recognition 
+of gain is deferred by spreading it over a number of tax years. 
+The installment sale method may be used for any kind of real estate, including vacant land. The taxable part of 
+installment payments is calculated by applying to each  payment the profit percen tage realized on the full 
+transaction. This percentage is found by dividing the realized profit on the sale by the full contract price. IRS 
+instructions should be followed for dete rmining this percentage based on the contract price, selling price, gross 
+profit and payments received. 
+Example: Real property is sold for $200,000; unadjusted basis is $132,000; selling costs are $8,000. 
+Installment payments of $50,000 are to be made in the year of sale and in each of the next three years. 
+Contract price (selling price..........................  $200,000 
+Less: Selling costs and unadjusted basis.......  -140,000
+ 
+Gross Profit...................................................  $60,000 
+Gross Profit Percentage = $60,000 ÷ $200,000 = 30% 
+For the year of sale and each of the following three years, a profit of $15,000 (30% of $50,000) is reported. 
+Leases. Rent is taxable to the lessor as ordinary income  and, for non-residential property, deductible as a 
+business expense to the lessee. Payments by a lessee on execution of a lease may be either advance rent or a 
+security deposit. If the former, a (non-residential) less ee has a deduction and the lessor must report the payment 
+as income in the year paid. A security deposit remains the property of the lessee until default/forfeiture. If 
+forfeited, the deposit is deductible by the lessee and is income to the lessor. If the lessor pays the lessee interest 
+on the deposit, the lessee has reportable income. 
+If the lessee receives lease cancellation payments from the le ssor, they are treated as being in exchange for the 
+sale of the lease to the lessor. If the lease is not a capital asset, the income is ordinary income to the lessee. The 
+lessor is treated as making an expenditure for the acquisition of a property right. The lessor’s payment must be 
+capitalized and added to the basis of the property. If the lessor receives lease cancellation payments from the 
+lessee, the lessor has ordinary income and the lessee treats the expenditure as a current business expense. 
+A lessor or lessee’s costs of procuring a lease (i.e., commissions, legal fees, and title expenses) must be 
+prorated over the life of the lease. It should always be remembered that losses and expenses of lessees of 
+residential property are considered personal and not deductible. 
+State Income Tax 
+As of January 2005, California generally conforms to the Internal Revenue Code (IRC). However, there are 
+continuing differences between California and federal ta x law. When California conforms to federal; tax law 
+changes, not all of the tax changes made at the fede ral level are always adopted by California. For more 
+information refer to www.ftb.ca.gov
+ and search for “conformity.” 

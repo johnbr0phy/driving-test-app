@@ -1,0 +1,1002 @@
+[
+  {
+    "questionId": "CDM-NUT-001",
+    "guess": "D",
+    "cue": "Objective before/after comparison suggests actionable assessment."
+  },
+  {
+    "questionId": "CDM-NUT-002",
+    "guess": "A",
+    "cue": "Two complementary eating/swallowing specialists."
+  },
+  {
+    "questionId": "CDM-NUT-003",
+    "guess": "C",
+    "cue": "Specific consumed amount seems stronger documentation than delivered amount."
+  },
+  {
+    "questionId": "CDM-NUT-004",
+    "guess": "A",
+    "cue": "Direct consumption measurement rather than delivery or preference proxy."
+  },
+  {
+    "questionId": "CDM-NUT-005",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-006",
+    "guess": "B",
+    "cue": "Direct diet recall is more relevant than purchasing or weight proxies."
+  },
+  {
+    "questionId": "CDM-NUT-007",
+    "guess": "C",
+    "cue": "Firsthand meal preparer has direct historical knowledge."
+  },
+  {
+    "questionId": "CDM-NUT-008",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-009",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-010",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-011",
+    "guess": "C",
+    "cue": "Specialized clinical professional stands out."
+  },
+  {
+    "questionId": "CDM-NUT-012",
+    "guess": "C",
+    "cue": "Dated clinical order has clear authority and currency."
+  },
+  {
+    "questionId": "CDM-NUT-013",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-014",
+    "guess": "B",
+    "cue": "A mean consumption figure measures actual intake over observations."
+  },
+  {
+    "questionId": "CDM-NUT-015",
+    "guess": "B",
+    "cue": "Direct change in eating is most nutrition-specific."
+  },
+  {
+    "questionId": "CDM-NUT-016",
+    "guess": "D",
+    "cue": "Standard instrument measures habitual diet."
+  },
+  {
+    "questionId": "CDM-NUT-017",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-018",
+    "guess": "B",
+    "cue": "Open-ended question about a recent change is exploratory."
+  },
+  {
+    "questionId": "CDM-NUT-019",
+    "guess": "C",
+    "cue": "Qualified synthesis of two outcomes avoids unsupported prescription claims."
+  },
+  {
+    "questionId": "CDM-NUT-020",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-021",
+    "guess": "A",
+    "cue": "Before/after consumption is the direct comparable outcome."
+  },
+  {
+    "questionId": "CDM-NUT-022",
+    "guess": "B",
+    "cue": "Concrete requested listed substitute suggests authorized resident choice."
+  },
+  {
+    "questionId": "CDM-NUT-023",
+    "guess": "C",
+    "cue": "Verifying measurement method addresses data reliability."
+  },
+  {
+    "questionId": "CDM-NUT-024",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-025",
+    "guess": "A",
+    "cue": "Authoritative order versus actual service directly checks compliance."
+  },
+  {
+    "questionId": "CDM-NUT-026",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-027",
+    "guess": "C",
+    "cue": "Accessible written communication allows response time."
+  },
+  {
+    "questionId": "CDM-NUT-028",
+    "guess": "D",
+    "cue": "Data provenance stands out over unrelated meal logistics."
+  },
+  {
+    "questionId": "CDM-NUT-029",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-030",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-031",
+    "guess": "C",
+    "cue": "Compiled trend supplies relevant nutrition evidence."
+  },
+  {
+    "questionId": "CDM-NUT-032",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-033",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-034",
+    "guess": "B",
+    "cue": "Practical selection exercise tests application."
+  },
+  {
+    "questionId": "CDM-NUT-035",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-036",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-NUT-037",
+    "guess": "A",
+    "cue": "Compatible accessible alternatives address real implementation barriers."
+  },
+  {
+    "questionId": "CDM-NUT-038",
+    "guess": "B",
+    "cue": "Clinical plan revision is the higher-level response to outcomes."
+  },
+  {
+    "questionId": "CDM-NUT-039",
+    "guess": "C",
+    "cue": "Attribution preserves observed-versus-reported distinction."
+  },
+  {
+    "questionId": "CDM-NUT-040",
+    "guess": "D",
+    "cue": "Most recent interview likely reflects current preferences."
+  },
+  {
+    "questionId": "CDM-FOO-001",
+    "guess": "A",
+    "cue": "Actual finished weight directly measures production output."
+  },
+  {
+    "questionId": "CDM-FOO-002",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-003",
+    "guess": "C",
+    "cue": "Actual resident sensory comparison measures acceptance."
+  },
+  {
+    "questionId": "CDM-FOO-004",
+    "guess": "D",
+    "cue": "Concurrent demand is a concrete operational bottleneck."
+  },
+  {
+    "questionId": "CDM-FOO-005",
+    "guess": "A",
+    "cue": "Protein/sodium tradeoff seems favorable."
+  },
+  {
+    "questionId": "CDM-FOO-006",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-007",
+    "guess": "C",
+    "cue": "Usable drained weight is more meaningful than container or gross weight."
+  },
+  {
+    "questionId": "CDM-FOO-008",
+    "guess": "D",
+    "cue": "Specific process adjustment contrasts with unrelated planning changes."
+  },
+  {
+    "questionId": "CDM-FOO-009",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-010",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-011",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-012",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-013",
+    "guess": "A",
+    "cue": "Coded comparison by target consumers controls bias."
+  },
+  {
+    "questionId": "CDM-FOO-014",
+    "guess": "B",
+    "cue": "Portion measure is concrete process control."
+  },
+  {
+    "questionId": "CDM-FOO-015",
+    "guess": "C",
+    "cue": "Transport/service is a distinct operational stage."
+  },
+  {
+    "questionId": "CDM-FOO-016",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-017",
+    "guess": "A",
+    "cue": "Specific measurable error reduction directly improves quality."
+  },
+  {
+    "questionId": "CDM-FOO-018",
+    "guess": "B",
+    "cue": "Qualified tradeoff more plausible than blanket improvement."
+  },
+  {
+    "questionId": "CDM-FOO-019",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-020",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-021",
+    "guess": "C",
+    "cue": "Check before service can catch defects before diners receive food."
+  },
+  {
+    "questionId": "CDM-FOO-022",
+    "guess": "B",
+    "cue": "Waiting interval is a specific actionable delay."
+  },
+  {
+    "questionId": "CDM-FOO-023",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-024",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-025",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-026",
+    "guess": "A",
+    "cue": "Seasoning reformulation directly improves sensory quality."
+  },
+  {
+    "questionId": "CDM-FOO-027",
+    "guess": "B",
+    "cue": "Specific portion-size cause plausible for shortages."
+  },
+  {
+    "questionId": "CDM-FOO-028",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-029",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-030",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-031",
+    "guess": "C",
+    "cue": "Temperature is a plausible uncontrolled sensory variable."
+  },
+  {
+    "questionId": "CDM-FOO-032",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-033",
+    "guess": "C",
+    "cue": "Standardized recipe is authoritative production documentation."
+  },
+  {
+    "questionId": "CDM-FOO-034",
+    "guess": "B",
+    "cue": "Adjacent handoff roles plausibly share responsibility."
+  },
+  {
+    "questionId": "CDM-FOO-035",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-036",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-037",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-038",
+    "guess": "A",
+    "cue": "Qualified distinction between count and weight."
+  },
+  {
+    "questionId": "CDM-FOO-039",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-040",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-041",
+    "guess": "A",
+    "cue": "Batch calculation directly connects demand to production."
+  },
+  {
+    "questionId": "CDM-FOO-042",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-FOO-043",
+    "guess": "C",
+    "cue": "Actual texture at service assesses food quality."
+  },
+  {
+    "questionId": "CDM-FOO-044",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-001",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-002",
+    "guess": "B",
+    "cue": "Formal position requirements stand out from day-to-day assignments."
+  },
+  {
+    "questionId": "CDM-PER-003",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-004",
+    "guess": "D",
+    "cue": "Past concrete behavior is stronger evidence than hypothetical policy."
+  },
+  {
+    "questionId": "CDM-PER-005",
+    "guess": "A",
+    "cue": "Sequenced checklist directly supports reliable task execution."
+  },
+  {
+    "questionId": "CDM-PER-006",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-007",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-008",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-009",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-010",
+    "guess": "B",
+    "cue": "Addresses a workplace constraint rather than assuming deficient knowledge."
+  },
+  {
+    "questionId": "CDM-PER-011",
+    "guess": "C",
+    "cue": "Revised codes indicate a specific training need."
+  },
+  {
+    "questionId": "CDM-PER-012",
+    "guess": "D",
+    "cue": "Demonstrated use tests actual skill."
+  },
+  {
+    "questionId": "CDM-PER-013",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-014",
+    "guess": "C",
+    "cue": "Personnel attendance is direct staffing evidence."
+  },
+  {
+    "questionId": "CDM-PER-015",
+    "guess": "C",
+    "cue": "Timing and staffing are operationally linked."
+  },
+  {
+    "questionId": "CDM-PER-016",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-017",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-018",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-019",
+    "guess": "A",
+    "cue": "Qualified statement avoids the absolute every-shift claim."
+  },
+  {
+    "questionId": "CDM-PER-020",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-021",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-022",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-023",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-024",
+    "guess": "D",
+    "cue": "Workload adjustment addresses environmental performance barriers."
+  },
+  {
+    "questionId": "CDM-PER-025",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-026",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-027",
+    "guess": "C",
+    "cue": "Ordinary work measures transfer of learning."
+  },
+  {
+    "questionId": "CDM-PER-028",
+    "guess": "A",
+    "cue": "Output relative to labor directly measures productivity."
+  },
+  {
+    "questionId": "CDM-PER-029",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-030",
+    "guess": "B",
+    "cue": "Transferable analytical skill is stronger than rote memorization."
+  },
+  {
+    "questionId": "CDM-PER-031",
+    "guess": "B",
+    "cue": "Capacity assessment by those doing production is directly grounded."
+  },
+  {
+    "questionId": "CDM-PER-032",
+    "guess": "D",
+    "cue": "Written assignment record provides traceability."
+  },
+  {
+    "questionId": "CDM-PER-033",
+    "guess": "A",
+    "cue": "Counting-unit mismatch is a plausible comparability problem."
+  },
+  {
+    "questionId": "CDM-PER-034",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-035",
+    "guess": "C",
+    "cue": "Expanding abbreviations directly improves comprehensibility."
+  },
+  {
+    "questionId": "CDM-PER-036",
+    "guess": "D",
+    "cue": "Advance notice is an explicit process constraint."
+  },
+  {
+    "questionId": "CDM-PER-037",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-038",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-039",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-PER-040",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-001",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-002",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-003",
+    "guess": "D",
+    "cue": "Higher-temperature timed option sounds most conservative."
+  },
+  {
+    "questionId": "CDM-SAF-004",
+    "guess": "D",
+    "cue": "Shallow metal pans offer practical heat transfer."
+  },
+  {
+    "questionId": "CDM-SAF-005",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-006",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-007",
+    "guess": "C",
+    "cue": "Specific product-temperature limit is direct control."
+  },
+  {
+    "questionId": "CDM-SAF-008",
+    "guess": "D",
+    "cue": "Soiled utensils uniquely introduce contamination exposure."
+  },
+  {
+    "questionId": "CDM-SAF-009",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-010",
+    "guess": "B",
+    "cue": "Additional heating is concrete correction."
+  },
+  {
+    "questionId": "CDM-SAF-011",
+    "guess": "C",
+    "cue": "Ingredient list directly identifies food components."
+  },
+  {
+    "questionId": "CDM-SAF-012",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-013",
+    "guess": "A",
+    "cue": "Highest heating requirement appears conservative."
+  },
+  {
+    "questionId": "CDM-SAF-014",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-015",
+    "guess": "C",
+    "cue": "Precise allergen terminology stands out."
+  },
+  {
+    "questionId": "CDM-SAF-016",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-017",
+    "guess": "D",
+    "cue": "Auditing completed records is distinct retrospective verification."
+  },
+  {
+    "questionId": "CDM-SAF-018",
+    "guess": "C",
+    "cue": "Integrity directly relates to safety over commercial attributes."
+  },
+  {
+    "questionId": "CDM-SAF-019",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-020",
+    "guess": "D",
+    "cue": "Formal verification covers broader evaluation."
+  },
+  {
+    "questionId": "CDM-SAF-021",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-022",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-023",
+    "guess": "C",
+    "cue": "Specific standard-looking time-temperature pair."
+  },
+  {
+    "questionId": "CDM-SAF-024",
+    "guess": "D",
+    "cue": "Common cleaner name uniquely identifies hazardous contents."
+  },
+  {
+    "questionId": "CDM-SAF-025",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-026",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-027",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-028",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-029",
+    "guess": "A",
+    "cue": "Safety-relevant integrity contrasts with invoice details."
+  },
+  {
+    "questionId": "CDM-SAF-030",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-031",
+    "guess": "B",
+    "cue": "Potable water is a central emergency resource."
+  },
+  {
+    "questionId": "CDM-SAF-032",
+    "guess": "D",
+    "cue": "Utensil separation directly prevents cross-contact."
+  },
+  {
+    "questionId": "CDM-SAF-033",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-034",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-035",
+    "guess": "D",
+    "cue": "Action taken completes a corrective record."
+  },
+  {
+    "questionId": "CDM-SAF-036",
+    "guess": "A",
+    "cue": "Explicit controlled cold temperature sounds safest."
+  },
+  {
+    "questionId": "CDM-SAF-037",
+    "guess": "A",
+    "cue": "Sanitizer-specific kit directly measures chemical concentration."
+  },
+  {
+    "questionId": "CDM-SAF-038",
+    "guess": "A",
+    "cue": "Food isolation directly contains immediate risk."
+  },
+  {
+    "questionId": "CDM-SAF-039",
+    "guess": "A",
+    "cue": "Lowest cold temperature sounds conservative."
+  },
+  {
+    "questionId": "CDM-SAF-040",
+    "guess": "D",
+    "cue": "Hazard analysis is foundational prevention."
+  },
+  {
+    "questionId": "CDM-SAF-041",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-042",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-SAF-043",
+    "guess": "C",
+    "cue": "Careful distinction avoids claiming an unconfirmed diagnosis."
+  },
+  {
+    "questionId": "CDM-SAF-044",
+    "guess": "D",
+    "cue": "Rerouting a path avoids moving a fixed rack."
+  },
+  {
+    "questionId": "CDM-SAF-045",
+    "guess": "A",
+    "cue": "Covered longer standing seems conservative."
+  },
+  {
+    "questionId": "CDM-SAF-046",
+    "guess": "B",
+    "cue": "Lower-risk food preceding poultry seems safest."
+  },
+  {
+    "questionId": "CDM-SAF-047",
+    "guess": "C",
+    "cue": "Beverage ice directly enters food consumed."
+  },
+  {
+    "questionId": "CDM-SAF-048",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-001",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-002",
+    "guess": "B",
+    "cue": "Full replacement is clearly distinct from maintenance expenditures."
+  },
+  {
+    "questionId": "CDM-BUS-003",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-004",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-005",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-006",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-007",
+    "guess": "A",
+    "cue": "Delivery lead time is a direct replenishment planning parameter."
+  },
+  {
+    "questionId": "CDM-BUS-008",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-009",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-010",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-011",
+    "guess": "C",
+    "cue": "Demand at planned price directly supports business viability."
+  },
+  {
+    "questionId": "CDM-BUS-012",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-013",
+    "guess": "A",
+    "cue": "Budget variance directly evaluates financial deviation."
+  },
+  {
+    "questionId": "CDM-BUS-014",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-015",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-016",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-017",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-018",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-019",
+    "guess": "C",
+    "cue": "Cost per needed unit is decision-relevant versus purchased-unit price."
+  },
+  {
+    "questionId": "CDM-BUS-020",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-021",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-022",
+    "guess": "B",
+    "cue": "Denominator definition is necessary for comparable productivity."
+  },
+  {
+    "questionId": "CDM-BUS-023",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-024",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-025",
+    "guess": "A",
+    "cue": "Distinguishes variable food costs from fixed lease costs."
+  },
+  {
+    "questionId": "CDM-BUS-026",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "questionId": "CDM-BUS-027",
+    "guess": "C",
+    "cue": "Chopped filling can use irregular pieces without appearance constraints."
+  },
+  {
+    "questionId": "CDM-BUS-028",
+    "guess": "D",
+    "cue": "none"
+  }
+]

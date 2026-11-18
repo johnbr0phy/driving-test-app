@@ -1,0 +1,702 @@
+[
+  {
+    "id": "R001",
+    "classification": "credible",
+    "why": "oxidation, evaporation and viscosity are real exposure/temperature processes.",
+    "repairDirection": "Definition-level only; application could distinguish moisture entry from temperature effects.",
+    "fullAssessment": "oxidation, evaporation and viscosity are real exposure/temperature processes. Definition-level only; application could distinguish moisture entry from temperature effects."
+  },
+  {
+    "id": "R002",
+    "classification": "mixed",
+    "why": "reused oil and entire sump charge reflect mistakes; extra refrigerant is irrelevant.",
+    "repairDirection": "Replace with a plausible oil accounting error and retain OEM-volume context.",
+    "fullAssessment": "reused oil and entire sump charge reflect mistakes; extra refrigerant is irrelevant. Replace with a plausible oil accounting error and retain OEM-volume context."
+  },
+  {
+    "id": "R003",
+    "classification": "weak",
+    "why": "indefinite top-up and compressor oil in pump contrast with generic normal maintenance.",
+    "repairDirection": "Use plausible pump-oil replacement triggers, specified against manufacturer guidance.",
+    "fullAssessment": "indefinite top-up and compressor oil in pump contrast with generic normal maintenance. Use plausible pump-oil replacement triggers, specified against manufacturer guidance."
+  },
+  {
+    "id": "R004",
+    "classification": "mixed",
+    "why": "equalization timing is plausible; clutch-engaged conflicts with stopped-compressor premise.",
+    "repairDirection": "Offer pressure-informed timing choices rather than cabin temperature.",
+    "fullAssessment": "equalization timing is plausible; clutch-engaged conflicts with stopped-compressor premise. Offer pressure-informed timing choices rather than cabin temperature."
+  },
+  {
+    "id": "R005",
+    "classification": "credible",
+    "why": "certification types are related.",
+    "repairDirection": "Requires recognizing venting exemption does not erase certification; keep R744 boundary.",
+    "fullAssessment": "certification types are related. Requires recognizing venting exemption does not erase certification; keep R744 boundary."
+  },
+  {
+    "id": "R006",
+    "classification": "mixed",
+    "why": "other HVAC faults are real but not a cause of zero static charge pressure.",
+    "repairDirection": "Give competing refrigerant-loss/service next steps.",
+    "fullAssessment": "other HVAC faults are real but not a cause of zero static charge pressure. Give competing refrigerant-loss/service next steps."
+  },
+  {
+    "id": "R007",
+    "classification": "mixed",
+    "why": "accuracy versus resolution is useful; vehicle capacity and calibration interval are remote.",
+    "repairDirection": "Compare increment, uncertainty, repeatability and verified accuracy.",
+    "fullAssessment": "accuracy versus resolution is useful; vehicle capacity and calibration interval are remote. Compare increment, uncertainty, repeatability and verified accuracy."
+  },
+  {
+    "id": "R008",
+    "classification": "credible",
+    "why": "per-machine, annual and new-refrigerant filings are plausible administrative misunderstandings.",
+    "repairDirection": "Stronger than most recall items.",
+    "fullAssessment": "per-machine, annual and new-refrigerant filings are plausible administrative misunderstandings. Stronger than most recall items."
+  },
+  {
+    "id": "R009",
+    "classification": "mixed",
+    "why": "local atmosphere is a strong physical explanation; pump capacity and viscosity distract weakly.",
+    "repairDirection": "Use gauge-versus-absolute-pressure alternatives.",
+    "fullAssessment": "local atmosphere is a strong physical explanation; pump capacity and viscosity distract weakly. Use gauge-versus-absolute-pressure alternatives."
+  },
+  {
+    "id": "R010",
+    "classification": "mixed",
+    "why": "adding excess dye is plausible; flushing existing dye away is poorly motivated.",
+    "repairDirection": "State full operating charge and distinguish waiting/circulation from insufficient detection method.",
+    "fullAssessment": "adding excess dye is plausible; flushing existing dye away is poorly motivated. State full operating charge and distinguish waiting/circulation from insufficient detection method."
+  },
+  {
+    "id": "R011",
+    "classification": "credible",
+    "why": "shop documents all sound real, though technician-specific stem points directly to certification.",
+    "repairDirection": "Ask what evidence satisfies operator authorization.",
+    "fullAssessment": "shop documents all sound real, though technician-specific stem points directly to certification. Ask what evidence satisfies operator authorization."
+  },
+  {
+    "id": "R012",
+    "classification": "weak",
+    "why": "correct limited claim is opposed by every/guaranteed absolutes.",
+    "repairDirection": "Give plausible distinct SAE scopes: compatibility, debris removal efficiency, residual-solvent limit, OEM approval.",
+    "fullAssessment": "correct limited claim is opposed by every/guaranteed absolutes. Give plausible distinct SAE scopes: compatibility, debris removal efficiency, residual-solvent limit, OEM approval."
+  },
+  {
+    "id": "R013",
+    "classification": "mixed",
+    "why": "inspection hole is uniquely diagnostic, others describe obvious incomplete engagement.",
+    "repairDirection": "Specify fitting with inspection hole and compare real insertion indicators.",
+    "fullAssessment": "inspection hole is uniquely diagnostic, others describe obvious incomplete engagement. Specify fitting with inspection hole and compare real insertion indicators."
+  },
+  {
+    "id": "R014",
+    "classification": "credible",
+    "why": "radiation bands form a coherent choice set; low-depth factual recall.",
+    "repairDirection": "Retain as foundation, not repeated proxy for environmental mastery.",
+    "fullAssessment": "radiation bands form a coherent choice set; low-depth factual recall. Retain as foundation, not repeated proxy for environmental mastery."
+  },
+  {
+    "id": "R015",
+    "classification": "weak",
+    "why": "dimming display is absurd electrical isolation; grounding after opening also careless.",
+    "repairDirection": "Compare actual isolation steps under named machine procedure.",
+    "fullAssessment": "dimming display is absurd electrical isolation; grounding after opening also careless. Compare actual isolation steps under named machine procedure."
+  },
+  {
+    "id": "R016",
+    "classification": "mixed",
+    "why": "barter versus uncompensated maintenance meaningful; refrigerant sale/disposal unrelated to given repair.",
+    "repairDirection": "Use pay/nonpay service scenarios instead.",
+    "fullAssessment": "barter versus uncompensated maintenance meaningful; refrigerant sale/disposal unrelated to given repair. Use pay/nonpay service scenarios instead."
+  },
+  {
+    "id": "R017",
+    "classification": "weak",
+    "why": "extended evacuation/filtering/air removal all magically separate refrigerants.",
+    "repairDirection": "Ask correct routing after a mixed identifier result with plausible recovery/reclamation choices.",
+    "fullAssessment": "extended evacuation/filtering/air removal all magically separate refrigerants. Ask correct routing after a mixed identifier result with plausible recovery/reclamation choices."
+  },
+  {
+    "id": "R018",
+    "classification": "weak",
+    "why": "full-charge/bypass alternatives advertise unsafe behavior.",
+    "repairDirection": "Compare permitted recovery, evacuation and diagnostic functions at distinct failed-check stages.",
+    "fullAssessment": "full-charge/bypass alternatives advertise unsafe behavior. Compare permitted recovery, evacuation and diagnostic functions at distinct failed-check stages."
+  },
+  {
+    "id": "R019",
+    "classification": "weak",
+    "why": "hearing protection instead of eyewear and face covering without eyes are transparent strawmen.",
+    "repairDirection": "Compare actual eyewear configurations relevant to spray protection.",
+    "fullAssessment": "hearing protection instead of eyewear and face covering without eyes are transparent strawmen. Compare actual eyewear configurations relevant to spray protection."
+  },
+  {
+    "id": "R020",
+    "classification": "mixed",
+    "why": "three608 types meaningful; mechanic license an easy elimination.",
+    "repairDirection": "Preserve MVAC-like boundary, use Universal as nuanced alternative only with uniquely answerable wording.",
+    "fullAssessment": "three608 types meaningful; mechanic license an easy elimination. Preserve MVAC-like boundary, use Universal as nuanced alternative only with uniquely answerable wording."
+  },
+  {
+    "id": "R021",
+    "classification": "credible",
+    "why": "all are real standards in neighboring workflows.",
+    "repairDirection": "Practical purchase scenario could reduce pure code-number memorization.",
+    "fullAssessment": "all are real standards in neighboring workflows. Practical purchase scenario could reduce pure code-number memorization."
+  },
+  {
+    "id": "R022",
+    "classification": "weak",
+    "why": "three alternatives all describe protective upper-atmosphere ozone, with confined-to-stratosphere absolute.",
+    "repairDirection": "Test distinct environmental mechanisms.",
+    "fullAssessment": "three alternatives all describe protective upper-atmosphere ozone, with confined-to-stratosphere absolute. Test distinct environmental mechanisms."
+  },
+  {
+    "id": "R023",
+    "classification": "mixed",
+    "why": "ordinary automotive recycling is a plausible confusion; dilution and removing visible oil are shortcuts.",
+    "repairDirection": "Specify recovered stationary-source refrigerant and compare acceptable processing routes.",
+    "fullAssessment": "ordinary automotive recycling is a plausible confusion; dilution and removing visible oil are shortcuts. Specify recovered stationary-source refrigerant and compare acceptable processing routes."
+  },
+  {
+    "id": "R024",
+    "classification": "weak",
+    "why": "isolated high port and maximum blower do not restore low refrigerant mass.",
+    "repairDirection": "Compare charge/recovery/diagnostic sequence decisions.",
+    "fullAssessment": "isolated high port and maximum blower do not restore low refrigerant mass. Compare charge/recovery/diagnostic sequence decisions."
+  },
+  {
+    "id": "R025",
+    "classification": "mixed",
+    "why": "609 vs608I potentially meaningful, dealer/inspector irrelevant.",
+    "repairDirection": "Must first specify MVAC source and intended reuse/recycling; otherwise disposal-site origin is insufficient.",
+    "fullAssessment": "609 vs608I potentially meaningful, dealer/inspector irrelevant. Must first specify MVAC source and intended reuse/recycling; otherwise disposal-site origin is insufficient."
+  },
+  {
+    "id": "R026",
+    "classification": "credible",
+    "why": "alternatives attempt system mechanisms, though valve isolation differs from oil retention.",
+    "repairDirection": "A useful causal question with cold accumulator context.",
+    "fullAssessment": "alternatives attempt system mechanisms, though valve isolation differs from oil retention. A useful causal question with cold accumulator context."
+  },
+  {
+    "id": "R027",
+    "classification": "weak",
+    "why": "increased cylinder capacity and liquid UV emission are absurd consequences.",
+    "repairDirection": "Compare genuine heat-exposure hazards while identifying decomposition products/conditions.",
+    "fullAssessment": "increased cylinder capacity and liquid UV emission are absurd consequences. Compare genuine heat-exposure hazards while identifying decomposition products/conditions."
+  },
+  {
+    "id": "R028",
+    "classification": "weak",
+    "why": "all-technician consent/customer permission/next annual filing invent obvious evasion.",
+    "repairDirection": "Compare actual inspection authority and relevant required records.",
+    "fullAssessment": "all-technician consent/customer permission/next annual filing invent obvious evasion. Compare actual inspection authority and relevant required records."
+  },
+  {
+    "id": "R029",
+    "classification": "credible",
+    "why": "volume versus gross weight and60 versus80 percent are realistic confusions, especially manual's separate gross-weight advice.",
+    "repairDirection": "Keep named standard.",
+    "fullAssessment": "volume versus gross weight and60 versus80 percent are realistic confusions, especially manual's separate gross-weight advice. Keep named standard."
+  },
+  {
+    "id": "R030",
+    "classification": "credible",
+    "why": "numerical alternatives plausible, but pure threshold recall; identify manual/provider and detector setting.",
+    "repairDirection": "Avoid doubling numerical demand without need.",
+    "fullAssessment": "numerical alternatives plausible, but pure threshold recall; identify manual/provider and detector setting. Avoid doubling numerical demand without need."
+  },
+  {
+    "id": "R031",
+    "classification": "credible",
+    "why": "asymmetric tolerance exposes below-nominal and excess mistakes.",
+    "repairDirection": "Straightforward meaningful application; show600\u2013630g interval.",
+    "fullAssessment": "asymmetric tolerance exposes below-nominal and excess mistakes. Straightforward meaningful application; show600\u2013630g interval."
+  },
+  {
+    "id": "R032",
+    "classification": "credible",
+    "why": "pressure and vent temperature are common charging errors.",
+    "repairDirection": "Preserve critical-charge context; avoid repeating same principle across many items.",
+    "fullAssessment": "pressure and vent temperature are common charging errors. Preserve critical-charge context; avoid repeating same principle across many items."
+  },
+  {
+    "id": "R033",
+    "classification": "mixed",
+    "why": "removal versus recycling distinction matters; recharge without oil measure irrelevant.",
+    "repairDirection": "Compare recovery, recycling and reclamation functions accurately.",
+    "fullAssessment": "removal versus recycling distinction matters; recharge without oil measure irrelevant. Compare recovery, recycling and reclamation functions accurately."
+  },
+  {
+    "id": "R034",
+    "classification": "weak",
+    "why": "deferred shop rules and rules only for ODS are broad false exemptions.",
+    "repairDirection": "Use a concrete mobile-service record/equipment scenario.",
+    "fullAssessment": "deferred shop rules and rules only for ODS are broad false exemptions. Use a concrete mobile-service record/equipment scenario."
+  },
+  {
+    "id": "R035",
+    "classification": "mixed",
+    "why": "all locations real, but evaporator wording makes three underhood sites easy to dismiss.",
+    "repairDirection": "Compare plausible cabin sampling locations and blower states.",
+    "fullAssessment": "all locations real, but evaporator wording makes three underhood sites easy to dismiss. Compare plausible cabin sampling locations and blower states."
+  },
+  {
+    "id": "R036",
+    "classification": "mixed",
+    "why": "purchasing restriction is distinctive in retail context; warranty and maintenance interval irrelevant.",
+    "repairDirection": "Compare actual restricted-container notices.",
+    "fullAssessment": "purchasing restriction is distinctive in retail context; warranty and maintenance interval irrelevant. Compare actual restricted-container notices."
+  },
+  {
+    "id": "R037",
+    "classification": "weak",
+    "why": "only desiccant has moisture-control role; shaft seal, relief valve and sensing bulb irrelevant.",
+    "repairDirection": "Test when desiccant replacement is needed against plausible exposure conditions.",
+    "fullAssessment": "only desiccant has moisture-control role; shaft seal, relief valve and sensing bulb irrelevant. Test when desiccant replacement is needed against plausible exposure conditions."
+  },
+  {
+    "id": "R038",
+    "classification": "credible",
+    "why": "restriction, vapor load and gauge factors are plausible evacuation concerns.",
+    "repairDirection": "Specify hose-side gauge placement to sharpen mechanism.",
+    "fullAssessment": "restriction, vapor load and gauge factors are plausible evacuation concerns. Specify hose-side gauge placement to sharpen mechanism."
+  },
+  {
+    "id": "R039",
+    "classification": "mixed",
+    "why": "identification versus label/year is worthwhile, but label alternatives both obvious.",
+    "repairDirection": "Compare external identifier interfaces/standards and compatibility evidence.",
+    "fullAssessment": "identification versus label/year is worthwhile, but label alternatives both obvious. Compare external identifier interfaces/standards and compatibility evidence."
+  },
+  {
+    "id": "R040",
+    "classification": "credible",
+    "why": "several actual protective controls; direct excessive discharge pressure identifies high-side control.",
+    "repairDirection": "Basic but coherent.",
+    "fullAssessment": "several actual protective controls; direct excessive discharge pressure identifies high-side control. Basic but coherent."
+  },
+  {
+    "id": "R041",
+    "classification": "mixed",
+    "why": "keeping historical label readable is a plausible misconception; waiting until service not.",
+    "repairDirection": "Compare placement/obscuring practices rather than careless delay.",
+    "fullAssessment": "keeping historical label readable is a plausible misconception; waiting until service not. Compare placement/obscuring practices rather than careless delay."
+  },
+  {
+    "id": "R042",
+    "classification": "mixed",
+    "why": "before/after sequence options coherent, but contamination prevention elementary.",
+    "repairDirection": "Tie to debris entry rather than only reciting timing.",
+    "fullAssessment": "before/after sequence options coherent, but contamination prevention elementary. Tie to debris entry rather than only reciting timing."
+  },
+  {
+    "id": "R043",
+    "classification": "weak",
+    "why": "warranty or industry-group membership plainly not certification.",
+    "repairDirection": "Present plausible certification labels with different refrigerant/equipment scope.",
+    "fullAssessment": "warranty or industry-group membership plainly not certification. Present plausible certification labels with different refrigerant/equipment scope."
+  },
+  {
+    "id": "R044",
+    "classification": "credible",
+    "why": "actual MVAC alternatives, though propane reputation makes this easy.",
+    "repairDirection": "Retain current SNAP scope for both new and retrofit.",
+    "fullAssessment": "actual MVAC alternatives, though propane reputation makes this easy. Retain current SNAP scope for both new and retrofit."
+  },
+  {
+    "id": "R045",
+    "classification": "credible",
+    "why": "outsourced recycling versus ownership versus equipment availability is a substantive regulatory boundary.",
+    "repairDirection": "Preserve exact off-site recycling wording; distinguish reclamation explicitly in explanation.",
+    "fullAssessment": "outsourced recycling versus ownership versus equipment availability is a substantive regulatory boundary. Preserve exact off-site recycling wording; distinguish reclamation explicitly in explanation."
+  },
+  {
+    "id": "R046",
+    "classification": "mixed",
+    "why": "original contents and label legibility are plausible inspection factors but not approval.",
+    "repairDirection": "Compare actual refillability markings/authorization states.",
+    "fullAssessment": "original contents and label legibility are plausible inspection factors but not approval. Compare actual refillability markings/authorization states."
+  },
+  {
+    "id": "R047",
+    "classification": "weak",
+    "why": "absorbent/loose weave properties are opposites of barrier protection.",
+    "repairDirection": "Use realistic glove material compatibility choices with appropriate source specificity.",
+    "fullAssessment": "absorbent/loose weave properties are opposites of barrier protection. Use realistic glove material compatibility choices with appropriate source specificity."
+  },
+  {
+    "id": "R048",
+    "classification": "mixed",
+    "why": "equipment accuracy/dye concentration are distinct but irrelevant to compatibility stem.",
+    "repairDirection": "Remove the answer word from the stem and compare real standards scopes.",
+    "fullAssessment": "equipment accuracy/dye concentration are distinct but irrelevant to compatibility stem. Remove the answer word from the stem and compare real standards scopes."
+  },
+  {
+    "id": "R049",
+    "classification": "mixed",
+    "why": "oil separation alone may tempt novices; clean-cylinder transfer weak.",
+    "repairDirection": "Compare validated recycle/reclaim paths and identification limitations.",
+    "fullAssessment": "oil separation alone may tempt novices; clean-cylinder transfer weak. Compare validated recycle/reclaim paths and identification limitations."
+  },
+  {
+    "id": "R050",
+    "classification": "weak",
+    "why": "only approved recovery equipment addresses stated equipment duty; acquire after repairs openly noncompliant.",
+    "repairDirection": "Use top-off-only MVAC versus MVAC-like boundary.",
+    "fullAssessment": "only approved recovery equipment addresses stated equipment duty; acquire after repairs openly noncompliant. Use top-off-only MVAC versus MVAC-like boundary."
+  },
+  {
+    "id": "R051",
+    "classification": "credible",
+    "why": "608 types versus609 fit legal distinction; DIY is plausible because small substitute cans have exception.",
+    "repairDirection": "Explicit small-CFC12 scope useful.",
+    "fullAssessment": "608 types versus609 fit legal distinction; DIY is plausible because small substitute cans have exception. Explicit small-CFC12 scope useful."
+  },
+  {
+    "id": "R052",
+    "classification": "credible",
+    "why": "grounding, wire gauge and cord length can discriminate safety knowledge.",
+    "repairDirection": "Name MACS manual, preserve manufacturer-priority qualifier.",
+    "fullAssessment": "grounding, wire gauge and cord length can discriminate safety knowledge. Name MACS manual, preserve manufacturer-priority qualifier."
+  },
+  {
+    "id": "R053",
+    "classification": "mixed",
+    "why": "evacuation prematurely is plausible; zeroing gauge is irresponsible distraction.",
+    "repairDirection": "Offer pause/recover/leak-test sequence with real rebound conditions.",
+    "fullAssessment": "evacuation prematurely is plausible; zeroing gauge is irresponsible distraction. Offer pause/recover/leak-test sequence with real rebound conditions."
+  },
+  {
+    "id": "R054",
+    "classification": "mixed",
+    "why": "hose-length setting directly repeats stem phrase; other settings unrelated.",
+    "repairDirection": "Ask consequence or compensation when hose volume changes.",
+    "fullAssessment": "hose-length setting directly repeats stem phrase; other settings unrelated. Ask consequence or compensation when hose volume changes."
+  },
+  {
+    "id": "R055",
+    "classification": "credible",
+    "why": "tank classifications coherent; five-year exception is specialized standards recall.",
+    "repairDirection": "Prefer deciding whether a particular marked vessel may remain in service.",
+    "fullAssessment": "tank classifications coherent; five-year exception is specialized standards recall. Prefer deciding whether a particular marked vessel may remain in service."
+  },
+  {
+    "id": "R056",
+    "classification": "credible",
+    "why": "certification types coherent and R22 bus exclusion is important.",
+    "repairDirection": "Retain exception rather than generic certificate trivia.",
+    "fullAssessment": "certification types coherent and R22 bus exclusion is important. Retain exception rather than generic certificate trivia."
+  },
+  {
+    "id": "R057",
+    "classification": "weak",
+    "why": "lowest thermostat, blower fuse and refrigerant recovery cannot isolate high voltage.",
+    "repairDirection": "Compare real model-specific isolation/verification steps, without inventing universal high-voltage procedures.",
+    "fullAssessment": "lowest thermostat, blower fuse and refrigerant recovery cannot isolate high voltage. Compare real model-specific isolation/verification steps, without inventing universal high-voltage procedures."
+  },
+  {
+    "id": "R058",
+    "classification": "credible",
+    "why": "actual vehicle service interfaces; narrow safety recognition.",
+    "repairDirection": "Could use a mislabeled-port scenario without requiring visual asset.",
+    "fullAssessment": "actual vehicle service interfaces; narrow safety recognition. Could use a mislabeled-port scenario without requiring visual asset."
+  },
+  {
+    "id": "R059",
+    "classification": "credible",
+    "why": "GWP versus ODP/pressure/flammability are meaningful concepts, though two remote.",
+    "repairDirection": "Specify equal mass/time horizon if interpreting quantitative comparison.",
+    "fullAssessment": "GWP versus ODP/pressure/flammability are meaningful concepts, though two remote. Specify equal mass/time horizon if interpreting quantitative comparison."
+  },
+  {
+    "id": "R060",
+    "classification": "credible",
+    "why": "cabin versus cargo boundaries coherent.",
+    "repairDirection": "Stem nearly definitional; avoid pairing immediately withR056.",
+    "fullAssessment": "cabin versus cargo boundaries coherent. Stem nearly definitional; avoid pairing immediately withR056."
+  },
+  {
+    "id": "R061",
+    "classification": "weak",
+    "why": "unsealed shipping plug and exposed threads cannot be primary seal.",
+    "repairDirection": "Compare cap condition versus valve-core leakage realistically.",
+    "fullAssessment": "unsealed shipping plug and exposed threads cannot be primary seal. Compare cap condition versus valve-core leakage realistically."
+  },
+  {
+    "id": "R062",
+    "classification": "mixed",
+    "why": "pressured-air mixture is knowledgeable distinction; oil separation irrelevant.",
+    "repairDirection": "Specify hazardous pressure/temperature mixture conditions without claiming all such mixtures ignite.",
+    "fullAssessment": "pressured-air mixture is knowledgeable distinction; oil separation irrelevant. Specify hazardous pressure/temperature mixture conditions without claiming all such mixtures ignite."
+  },
+  {
+    "id": "R063",
+    "classification": "mixed",
+    "why": "outward versus inward tests pressure direction; equal flow and no flow are facile.",
+    "repairDirection": "Ask contamination consequence or failure diagnosis.",
+    "fullAssessment": "outward versus inward tests pressure direction; equal flow and no flow are facile. Ask contamination consequence or failure diagnosis."
+  },
+  {
+    "id": "R064",
+    "classification": "mixed",
+    "why": "electrical interference and calibration sound possible; all-leaks-close claim absurd.",
+    "repairDirection": "Replace absolute with plausible detection-environment mechanism.",
+    "fullAssessment": "electrical interference and calibration sound possible; all-leaks-close claim absurd. Replace absolute with plausible detection-environment mechanism."
+  },
+  {
+    "id": "R065",
+    "classification": "credible",
+    "why": "recipient, quantity, refrigerant/date, certification number are realistic record fields.",
+    "repairDirection": "Good specific compliance item.",
+    "fullAssessment": "recipient, quantity, refrigerant/date, certification number are realistic record fields. Good specific compliance item."
+  },
+  {
+    "id": "R066",
+    "classification": "credible",
+    "why": "course enrollment, license and purchase record are common substitute credentials.",
+    "repairDirection": "Keep actual representative/employer requirement.",
+    "fullAssessment": "course enrollment, license and purchase record are common substitute credentials. Keep actual representative/employer requirement."
+  },
+  {
+    "id": "R067",
+    "classification": "weak",
+    "why": "cloth activating dye/replacing calibration absurd and cleaner pressure-rise unlikely.",
+    "repairDirection": "Use plausible false-positive versus contamination mechanisms.",
+    "fullAssessment": "cloth activating dye/replacing calibration absurd and cleaner pressure-rise unlikely. Use plausible false-positive versus contamination mechanisms."
+  },
+  {
+    "id": "R068",
+    "classification": "weak",
+    "why": "increasing charge to replace leakage and half-charge continuation obviously unsafe.",
+    "repairDirection": "Distinguish leak-check stages and allowed follow-up operations.",
+    "fullAssessment": "increasing charge to replace leakage and half-charge continuation obviously unsafe. Distinguish leak-check stages and allowed follow-up operations."
+  },
+  {
+    "id": "R069",
+    "classification": "weak",
+    "why": "viscosity, hose moisture and tank capacity unrelated to collection reservoir volume.",
+    "repairDirection": "Compare measurement errors caused by prior-job oil.",
+    "fullAssessment": "viscosity, hose moisture and tank capacity unrelated to collection reservoir volume. Compare measurement errors caused by prior-job oil."
+  },
+  {
+    "id": "R070",
+    "classification": "mixed",
+    "why": "fixing lamp wavelength and viewing UV bulb are poor alternatives; brightness concentration plausible misconception.",
+    "repairDirection": "Use realistic protection/filter function alternatives.",
+    "fullAssessment": "fixing lamp wavelength and viewing UV bulb are poor alternatives; brightness concentration plausible misconception. Use realistic protection/filter function alternatives."
+  },
+  {
+    "id": "R071",
+    "classification": "weak",
+    "why": "clutch clearance/pressure switch unrelated; always-increases-viscosity absolute.",
+    "repairDirection": "Compare credible lubricant contamination mechanisms.",
+    "fullAssessment": "clutch clearance/pressure switch unrelated; always-increases-viscosity absolute. Compare credible lubricant contamination mechanisms."
+  },
+  {
+    "id": "R072",
+    "classification": "credible",
+    "why": "Credible by size/valve dimensions, but historical piercing-can exception makes date omission substantive.",
+    "repairDirection": "Add manufacture/import after2018 and intended non-exempt MVAC substitute.",
+    "fullAssessment": "Credible by size/valve dimensions, but historical piercing-can exception makes date omission substantive. Add manufacture/import after2018 and intended non-exempt MVAC substitute."
+  },
+  {
+    "id": "R073",
+    "classification": "credible",
+    "why": "authentic labeling versus actual analysis matters.",
+    "repairDirection": "Avoid implying any identifier proves all purity constituents.",
+    "fullAssessment": "authentic labeling versus actual analysis matters. Avoid implying any identifier proves all purity constituents."
+  },
+  {
+    "id": "R074",
+    "classification": "mixed",
+    "why": "alternatives are overcharge phenomena; useful if learner distinguishes under/overcharge, though wording strongly telegraphs.",
+    "repairDirection": "Preserve mechanism and reduce redundant charge items.",
+    "fullAssessment": "alternatives are overcharge phenomena; useful if learner distinguishes under/overcharge, though wording strongly telegraphs. Preserve mechanism and reduce redundant charge items."
+  },
+  {
+    "id": "R075",
+    "classification": "weak",
+    "why": "compulsoryCO2 conversion/removal/nextyf recharge are sweeping invented requirements.",
+    "repairDirection": "Compare actual new manufacture, import, retrofit and existing-service applicability.",
+    "fullAssessment": "compulsoryCO2 conversion/removal/nextyf recharge are sweeping invented requirements. Compare actual new manufacture, import, retrofit and existing-service applicability."
+  },
+  {
+    "id": "R076",
+    "classification": "credible",
+    "why": "supplier compatibility, pressure match and other-sector approval are real misconceptions.",
+    "repairDirection": "Stronger end-use application.",
+    "fullAssessment": "supplier compatibility, pressure match and other-sector approval are real misconceptions. Stronger end-use application."
+  },
+  {
+    "id": "R077",
+    "classification": "weak",
+    "why": "switch settings/specified mass do not change because oil is added.",
+    "repairDirection": "Compare credible physical impacts of too much oil.",
+    "fullAssessment": "switch settings/specified mass do not change because oil is added. Compare credible physical impacts of too much oil."
+  },
+  {
+    "id": "R078",
+    "classification": "credible",
+    "why": "actual controls with different functions.",
+    "repairDirection": "HoweverR040 supplies same high-pressure answer; combine into a more substantive retrofit decision.",
+    "fullAssessment": "actual controls with different functions. HoweverR040 supplies same high-pressure answer; combine into a more substantive retrofit decision."
+  },
+  {
+    "id": "R079",
+    "classification": "mixed",
+    "why": "solder repair and used matching unit plausible bad practice;134a matching-fitting retrofit familiar.",
+    "repairDirection": "Correct answer's new+standard-specific specificity gives cue. Equalize technical specificity.",
+    "fullAssessment": "solder repair and used matching unit plausible bad practice;134a matching-fitting retrofit familiar. Correct answer's new+standard-specific specificity gives cue. Equalize technical specificity."
+  },
+  {
+    "id": "R080",
+    "classification": "mixed",
+    "why": "pressure-based final charge is plausible misconception; replacing earlier vacuum check contradicts sequence.",
+    "repairDirection": "Ask what passing one check fails to establish.",
+    "fullAssessment": "pressure-based final charge is plausible misconception; replacing earlier vacuum check contradicts sequence. Ask what passing one check fails to establish."
+  },
+  {
+    "id": "R081",
+    "classification": "mixed",
+    "why": "17.5 and16.75 plausible decimal conversion errors;91 has no obvious learner arithmetic.",
+    "repairDirection": "Replace with realistic pound/ounce error and retain working.",
+    "fullAssessment": "17.5 and16.75 plausible decimal conversion errors;91 has no obvious learner arithmetic. Replace with realistic pound/ounce error and retain working."
+  },
+  {
+    "id": "R082",
+    "classification": "mixed",
+    "why": "liquid versus vapor meaningful; mixed air and highest oil phase absurd.",
+    "repairDirection": "Ask liquid withdrawal reason or give more realistic transfer configurations.",
+    "fullAssessment": "liquid versus vapor meaningful; mixed air and highest oil phase absurd. Ask liquid withdrawal reason or give more realistic transfer configurations."
+  },
+  {
+    "id": "R083",
+    "classification": "credible",
+    "why": "real adjacent standards with distinct scopes.",
+    "repairDirection": "Could be useful equipment-selection task instead of number recall.",
+    "fullAssessment": "real adjacent standards with distinct scopes. Could be useful equipment-selection task instead of number recall."
+  },
+  {
+    "id": "R084",
+    "classification": "mixed",
+    "why": "resetting service counter is realistic shortcut; oil draining and hose evacuation irrelevant.",
+    "repairDirection": "Test replacement/identification process without implying reset alone validates dry filter.",
+    "fullAssessment": "resetting service counter is realistic shortcut; oil draining and hose evacuation irrelevant. Test replacement/identification process without implying reset alone validates dry filter."
+  },
+  {
+    "id": "R085",
+    "classification": "mixed",
+    "why": "propane-like flammability plausible overreaction; only-as-liquid/nonflammable-every-mixture poor absolutes.",
+    "repairDirection": "Use real classifications/descriptions with comparable precision.",
+    "fullAssessment": "propane-like flammability plausible overreaction; only-as-liquid/nonflammable-every-mixture poor absolutes. Use real classifications/descriptions with comparable precision."
+  },
+  {
+    "id": "R086",
+    "classification": "weak",
+    "why": "oxygen production blockage absurd; UVB and ozone destruction duplicate same misconception.",
+    "repairDirection": "Test warming versus ozone quantitatively or in a decision.",
+    "fullAssessment": "oxygen production blockage absurd; UVB and ozone destruction duplicate same misconception. Test warming versus ozone quantitatively or in a decision."
+  },
+  {
+    "id": "R087",
+    "classification": "credible",
+    "why": "real diagnostic tools, but escaping vapor explicitly signals leak detector.",
+    "repairDirection": "Ask select tool for a less directly named task.",
+    "fullAssessment": "real diagnostic tools, but escaping vapor explicitly signals leak detector. Ask select tool for a less directly named task."
+  },
+  {
+    "id": "R088",
+    "classification": "mixed",
+    "why": "supplier compatibility could tempt; motor voltage/recovered viscosity insufficient but recognizable data.",
+    "repairDirection": "Compare manufacturer-specified lubricant identity, not generic safe-source answer.",
+    "fullAssessment": "supplier compatibility could tempt; motor voltage/recovered viscosity insufficient but recognizable data. Compare manufacturer-specified lubricant identity, not generic safe-source answer."
+  },
+  {
+    "id": "R089",
+    "classification": "credible",
+    "why": "disposal-chain actors coherent.",
+    "repairDirection": "Add non-exempt refrigerant scope; distinguish verifying removal from personally recovering.",
+    "fullAssessment": "disposal-chain actors coherent. Add non-exempt refrigerant scope; distinguish verifying removal from personally recovering."
+  },
+  {
+    "id": "R090",
+    "classification": "mixed",
+    "why": "thermal cylinder expansion is real but opposite safety implication; warmer condensation physically wrong.",
+    "repairDirection": "Test headspace versus pressure with realistic constraints.",
+    "fullAssessment": "thermal cylinder expansion is real but opposite safety implication; warmer condensation physically wrong. Test headspace versus pressure with realistic constraints."
+  },
+  {
+    "id": "R091",
+    "classification": "weak",
+    "why": "lubricant restoring dimensions, extra vacuum and over-tightening transparently fail damaged seal.",
+    "repairDirection": "Use actual inspection acceptance/replacement thresholds.",
+    "fullAssessment": "lubricant restoring dimensions, extra vacuum and over-tightening transparently fail damaged seal. Use actual inspection acceptance/replacement thresholds."
+  },
+  {
+    "id": "R092",
+    "classification": "credible",
+    "why": "location options coherent, numerical cutoff requires knowledge.",
+    "repairDirection": "Generic service-hose scope should be tied to applicable manual/standard.",
+    "fullAssessment": "location options coherent, numerical cutoff requires knowledge. Generic service-hose scope should be tied to applicable manual/standard."
+  },
+  {
+    "id": "R093",
+    "classification": "credible",
+    "why": "insertion/lubrication/wrong dies can all cause hose problems; oblong shape narrows.",
+    "repairDirection": "Specific and defensible diagnostic application.",
+    "fullAssessment": "insertion/lubrication/wrong dies can all cause hose problems; oblong shape narrows. Specific and defensible diagnostic application."
+  },
+  {
+    "id": "R094",
+    "classification": "weak",
+    "why": "floors consuming oxygen and ignition only belowfloor are absurd.",
+    "repairDirection": "Compare gas density, ventilation flow and ignition-source placement realistically.",
+    "fullAssessment": "floors consuming oxygen and ignition only belowfloor are absurd. Compare gas density, ventilation flow and ignition-source placement realistically."
+  },
+  {
+    "id": "R095",
+    "classification": "weak",
+    "why": "foil does not pressurize/cool internal circuit or exclude air from circuit.",
+    "repairDirection": "Compare leak sampling configurations under air movement.",
+    "fullAssessment": "foil does not pressurize/cool internal circuit or exclude air from circuit. Compare leak sampling configurations under air movement."
+  },
+  {
+    "id": "R096",
+    "classification": "mixed",
+    "why": "bore geometry coherent, external fin spacing irrelevant to internal flushing.",
+    "repairDirection": "Present condenser construction alternatives with actual cleanability implications.",
+    "fullAssessment": "bore geometry coherent, external fin spacing irrelevant to internal flushing. Present condenser construction alternatives with actual cleanability implications."
+  },
+  {
+    "id": "R097",
+    "classification": "credible",
+    "why": "hose performance characteristics form coherent options; labelHCFC22 context necessary.",
+    "repairDirection": "Good containment fact, modest depth.",
+    "fullAssessment": "hose performance characteristics form coherent options; labelHCFC22 context necessary. Good containment fact, modest depth."
+  },
+  {
+    "id": "R098",
+    "classification": "weak",
+    "why": "identical chemical composition/charge weights obvious falsehoods; service connections already taught distinct.",
+    "repairDirection": "Compare misleading identity evidence including measured pressures.",
+    "fullAssessment": "identical chemical composition/charge weights obvious falsehoods; service connections already taught distinct. Compare misleading identity evidence including measured pressures."
+  },
+  {
+    "id": "R099",
+    "classification": "credible",
+    "why": "permanent versus interchangeable and hose end form coherent alternatives.",
+    "repairDirection": "Important fitting-scope distinction.",
+    "fullAssessment": "permanent versus interchangeable and hose end form coherent alternatives. Important fitting-scope distinction."
+  },
+  {
+    "id": "R100",
+    "classification": "weak",
+    "why": "regardless-of-revisions and largest-quantity alternatives announce wrongness.",
+    "repairDirection": "Compare real bulletin applicability by model/build date/component instead.",
+    "fullAssessment": "regardless-of-revisions and largest-quantity alternatives announce wrongness. Compare real bulletin applicability by model/build date/component instead."
+  }
+]

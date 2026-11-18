@@ -105,6 +105,8 @@ The "Questions by exam" table's Enrolled column counts distinct people with at l
 
 ### Additional Exams (CDL, HTL, CST, CRCST)
 
+- EPA Section 609 MVAC Technician: `/epa609`, landing `/epa-609-practice-test`, bank `data/epa609-questions.json`; Rules 28 / Equipment 24 / Service 32 / R-1234yf 16, four 25-question tests with editorial counts 7/6/8/4, test/set IDs 34301-34304, state EPA609. MACS online/home-based 84% target and 25-item format, not universal EPA format; EPA required subjects/current rules and January 2025 MACS manual. Premium; Aviation, radio & trade licenses. Sources/build: `tools/next20/epa609/`. Refrigerant handling scope, not general automotive diagnosis or certification training.
+
 - South Africa Firearm Competency legal knowledge: `/zafirearm`, landing `/south-africa-firearm-competency-practice-test`, `data/zafirearm-questions.json`; pools Legal40/Licensing60/Custody48/Duties52, tests/sets33901–33904, stateZAFIREARM. Editorial10/15/12/13 per50 and70%study target, not official provider format. SAQA117705, Firearms Control Act and amended regulations; South Africa firearm competency group. Practical assessment/accreditation/licensing excluded.
 
 

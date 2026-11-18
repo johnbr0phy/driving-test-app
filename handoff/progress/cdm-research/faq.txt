@@ -1,0 +1,2197 @@
+ 
+ 
+ 
+ 
+ 
+ 
+
+	Certifying Board for Dietary Managers (CBDM) - Credentialing Exam FAQs
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+        (function () {
+            "use strict";
+            var el = document.getElementsByTagName('html')[0],
+                nojsClass = "no-js", jsClass = "js";
+
+            if (el.classList) {
+                el.classList.remove(nojsClass);
+                el.classList.add(jsClass);
+            } else {
+                el.className = el.className.replace(new RegExp('(^|\\b)' + nojsClass.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                el.className += ' ' + jsClass;
+            }
+        }());
+    
+ 
+ 
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5JS8KM6');
+ 
+ 
+.sfNavHorizontalDropDown:not(.k-menu-horizontal) {
+  display: none;
+}
+
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65395222-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+  
+
+
+
+    
+
+        
+
+
+
+    
+
+
+Certifying Board for Dietary Managers (CBDM)
+
+
+
+    
+
+
+
+        
+
+            
+
+
+            
+
+
+
+    
+
+
+    
+
+FAQS
+
+
+    
+
+Verify Credentials
+
+
+    
+
+Contact Us
+
+
+    
+
+ANFPonline.org
+
+
+
+
+    
+
+
+            
+
+            
+
+
+
+    
+Member Login
+
+
+
+
+
+
+
+
+    
+
+        
+Welcome, 
+
+    
+
+    
+
+        
+
+            
+
+Update Profile
+
+
+            
+
+Update Password
+
+
+            
+
+Sign Out
+
+
+        
+
+    
+
+
+
+
+
+
+
+    (function ($) {
+        $(function () {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            var userToken = params.usertoken ? params.usertoken : params.userToken;
+            if (!userToken) {
+                userToken = "";
+            }
+
+            var xhr = new XMLHttpRequest();
+            var sendParams = 'userToken=' + userToken;
+            xhr.open('GET', '/sso/status' + "?" + sendParams, false);
+
+            xhr.onload = function () {
+                if (userToken) {
+                    window.location.replace(params.ReturnURL ? params.ReturnURL : params.ReturnUrl);
+                }
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.IsSignedIn) {
+                        document.getElementById("logged-in").style.display = "block";
+                        document.getElementById("welcome").innerHTML = "Welcome, " + response.FirstName
+                        document.getElementById("updateRedirectUrl").setAttribute("href", response.UpdateRedirectURL);
+                        document.getElementById("updatePasswordRedirectUrl").setAttribute("href", response.UpdatePasswordRedirectURL);
+                    }
+                    else{
+                        document.getElementById("logged-out").style.display = "block";
+                    }
+                }
+            };
+            xhr.setRequestHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+            xhr.setRequestHeader('Pragma', 'no-cache');
+            xhr.setRequestHeader('Expires', '0');
+            xhr.send(null);
+        });
+    }(jQuery));
+
+    $('#sign-out').on('click', () => {
+        $.ajax({
+            url: '/sso/logout',
+            success: function (response) {
+                window.location.replace(response);
+            },
+        });
+    })
+
+
+            
+
+            
+
+
+            
+
+
+            
+
+                
+
+
+                
+
+
+
+
+
+
+    
+
+    
+
+    
+When autocomplete results are available use up and down arrows to review and enter to select.
+
+
+	
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+            
+
+        
+
+    
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+            
+Get Certified
+
+            
+
+                            
+
+                
+CDM, CFPP Certification Process Overview
+
+            
+
+            
+
+                
+
+                    Eligibility
+                
+
+                
+
+                                
+
+                
+School Codes
+
+            
+
+
+                
+
+            
+
+            
+
+                
+Exam Sites and Scheduling
+
+            
+
+            
+
+                
+Get Prepared
+
+            
+
+            
+
+                
+Exam Scoring & Results
+
+            
+
+            
+
+                
+Register
+
+            
+
+            
+
+                
+Join ANFP
+
+            
+
+            
+
+                
+Activate Your Certification
+
+            
+
+            
+
+                
+What CDM, CFPP Means to Me
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Exam Prep
+
+            
+
+                            
+
+                
+CDM, CFPP Credentialing Exam Study Materials
+
+            
+
+            
+
+                
+CDM, CFPP Credentialing Exam FAQs
+
+            
+
+            
+
+                
+Exam Content Outline
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Maintain Your Credential
+
+            
+
+                            
+
+                
+Maintaining Your Credential
+
+            
+
+            
+
+                
+Qualifying CE Activities & Required Documentation
+
+            
+
+            
+
+                
+CE Self-Reporting
+
+            
+
+            
+
+                
+Recertification & CE Self-Reporting FAQs
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Continuing Competence
+
+            
+
+                            
+
+                
+Continuing Competence FAQs
+
+            
+
+            
+
+                
+Self-Assessment Tool
+
+            
+
+
+            
+
+        
+
+        
+
+            
+CE Audit
+
+            
+
+                            
+
+                
+CE Audit
+
+            
+
+            
+
+                
+CE Audit FAQs
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Resources
+
+            
+
+                            
+
+                
+CDM, CFPP Career Info
+
+            
+
+            
+
+                
+CDM, CFPP Scope of Practice
+
+            
+
+            
+
+                
+CDM, CFPP Practice Standards
+
+            
+
+            
+
+                
+Find CE
+
+            
+
+            
+
+                
+Prior Approval
+
+            
+
+            
+
+                
+CDM, CFPP Code of Ethics
+
+            
+
+            
+
+                
+Guide to Maintaining Your Credential
+
+            
+
+            
+
+                
+Top 10 Tips to Maintain Your CDM, CFPP Credential
+
+            
+
+            
+
+                
+Top 10 Resource Lists
+
+            
+
+            
+
+                
+CDM, CFPP Informational Videos
+
+            
+
+            
+
+                
+Federal CMS Regulations for CDM, CFPPs 
+
+            
+
+            
+
+                
+Competencies for Food and Nutrition Services Employees
+
+            
+
+            
+
+                
+ Continuing Competence Level Assignments
+
+            
+
+
+            
+
+        
+
+        
+
+            
+About
+
+            
+
+                            
+
+                
+CBDM Leadership
+
+            
+
+            
+
+                
+
+                    CBDM News
+                
+
+                
+
+                                
+
+                
+CBDM Quarterly Newsletter
+
+            
+
+
+                
+
+            
+
+            
+
+                
+Contact Us
+
+            
+
+            
+
+                
+NCCA
+
+            
+
+            
+
+                
+Current & Past CBDM Board Chairs
+
+            
+
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var whetherToOpenOnClick = false;
+
+        var kendoMenu = $('.sfNavHorizontalDropDown').not('.k-menu').kendoMenu({
+            animation: false,
+            openOnClick: whetherToOpenOnClick,
+            open: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    var item = $(e.item);
+
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: item.find("a:first").text(),
+                        objectMetadata: [
+                            {
+                                'K': 'PageTitle',
+                                'V': document.title
+                            },
+                            {
+                                'K': 'PageUrl',
+                                'V': location.href
+                            }
+                        ]
+                    });
+                }
+            }
+        }).data('kendoMenu');
+
+        if (whetherToOpenOnClick && kendoMenu) {
+            jQuery(kendoMenu.element).find("li:has(ul) > a").attr("href", "javascript:void(0)");
+        }
+    })(jQuery);
+
+
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    
+
+        
+Get Certified
+
+
+            
+
+    
+
+        
+CDM, CFPP Certification Process Overview
+
+
+    
+
+    
+
+        
+Eligibility
+
+
+            
+
+    
+
+        
+School Codes
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Exam Sites and Scheduling
+
+
+    
+
+    
+
+        
+Get Prepared
+
+
+    
+
+    
+
+        
+Exam Scoring & Results
+
+
+    
+
+    
+
+        
+Register
+
+
+    
+
+    
+
+        
+Join ANFP
+
+
+    
+
+    
+
+        
+Activate Your Certification
+
+
+    
+
+    
+
+        
+What CDM, CFPP Means to Me
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Exam Prep
+
+
+            
+
+    
+
+        
+CDM, CFPP Credentialing Exam Study Materials
+
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam FAQs
+
+
+    
+
+    
+
+        
+Exam Content Outline
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Maintain Your Credential
+
+
+            
+
+    
+
+        
+Maintaining Your Credential
+
+
+    
+
+    
+
+        
+Qualifying CE Activities & Required Documentation
+
+
+    
+
+    
+
+        
+CE Self-Reporting
+
+
+    
+
+    
+
+        
+Recertification & CE Self-Reporting FAQs
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Continuing Competence
+
+
+            
+
+    
+
+        
+Continuing Competence FAQs
+
+
+    
+
+    
+
+        
+Self-Assessment Tool
+
+
+    
+
+            
+
+    
+
+    
+
+        
+CE Audit
+
+
+            
+
+    
+
+        
+CE Audit
+
+
+    
+
+    
+
+        
+CE Audit FAQs
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Resources
+
+
+            
+
+    
+
+        
+CDM, CFPP Career Info
+
+
+    
+
+    
+
+        
+CDM, CFPP Scope of Practice
+
+
+    
+
+    
+
+        
+CDM, CFPP Practice Standards
+
+
+    
+
+    
+
+        
+Find CE
+
+
+    
+
+    
+
+        
+Prior Approval
+
+
+    
+
+    
+
+        
+CDM, CFPP Code of Ethics
+
+
+    
+
+    
+
+        
+Guide to Maintaining Your Credential
+
+
+    
+
+    
+
+        
+Top 10 Tips to Maintain Your CDM, CFPP Credential
+
+
+    
+
+    
+
+        
+Top 10 Resource Lists
+
+
+    
+
+    
+
+        
+CDM, CFPP Informational Videos
+
+
+    
+
+    
+
+        
+Federal CMS Regulations for CDM, CFPPs 
+
+
+    
+
+    
+
+        
+Competencies for Food and Nutrition Services Employees
+
+
+    
+
+    
+
+        
+ Continuing Competence Level Assignments
+
+
+    
+
+            
+
+    
+
+    
+
+        
+About
+
+
+            
+
+    
+
+        
+CBDM Leadership
+
+
+    
+
+    
+
+        
+CBDM News
+
+
+            
+
+    
+
+        
+CBDM Quarterly Newsletter
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Contact Us
+
+
+    
+
+    
+
+        
+NCCA
+
+
+    
+
+    
+
+        
+Current & Past CBDM Board Chairs
+
+
+    
+
+            
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+							{
+								'K': 'PageTitle',
+								'V': document.title
+							},
+							{
+								'K': 'PageUrl',
+								'V': location.href
+							}
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.collapse(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+
+
+
+
+    
+
+
+    
+
+FAQS
+
+
+    
+
+Verify Credentials
+
+
+    
+
+Contact Us
+
+
+    
+
+ANFPonline.org
+
+
+
+
+    
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+    
+
+        
+
+
+
+
+    
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam Study Materials
+
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam FAQs
+
+
+    
+
+    
+
+        
+Exam Content Outline
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+							{
+								'K': 'PageTitle',
+								'V': document.title
+							},
+							{
+								'K': 'PageUrl',
+								'V': location.href
+							}
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.collapse(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+
+
+        
+
+    
+
+    
+
+        
+
+            
+
+
+
+    
+
+CDM, CFPP Credentialing Exam FAQs
+
+    
+
+
+            
+
+            
+
+
+ 
+
+            
+
+            
+
+
+
+    
+
+                
+
+Home
+
+
+                
+
+Exam Prep
+
+
+                
+CDM, CFPP Credentialing Exam FAQs
+
+    
+
+
+
+            
+
+            
+
+
+
+    
+
+
+    
+
+
+
+
+
+    
+
+Q:
+ Which exam study materials are right for me?
+
+
+A: Are you preparing for the CDM, CFPP Credentialing Exam? Utilize the chart below to compare of the tools that ANFP makes available to help you succeed! These study materials and reference books are completely optional. Purchase and/or successful completion of exam review materials are not required to sit for the exam and they do not predict or guarantee a passing score on the exam. Candidates may prepare for the exam in a manner of their choice. 
+
+
+Download the Comparison Chart
+
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+ What is the format of the exam?
+
+
+A: There are 160 multiple-choice question/answer items on three-hour (180-minute) the computer-based exam. They are based on professional situations in which a dietary manager would need to make a decision or solve a problem. You will see one question per page and have three hours (180 minutes) to complete the exam. There are 140 scored items on the exam. The exam also includes 20 unscored items that are being pretested for use on future exams. Pretesting is a standard process that allows CBDM to evaluate the quality of new items, which allows for the issuance of score reports on the day of the exam administration. The exam questions are based on the detailed 
+Exam Content Outline
+.
+
+    
+
+
+
+
+
+
+
+    
+
+Q: 
+What can I expect as I take the exam?
+
+
+A:  If time permits, you can return to questions that you may be unsure about as you take the exam. It is important to answer every question as only completed answers will be scored. If you are unsure of an answer, you should mark the one you believe to be the best answer. You should to complete the entire exam. The exam is NOT considered completed when you achieve a certain number of correct answers. Any unanswered questions will be scored as incorrect. 
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  Where will I go to take the exam?
+
+
+A: The exam is administered by PSI, our examination services provider. PSI has more than 300 Test Center sites in the United States. Sites (which may be subject to change) can be viewed 
+here
+. The exam is available year-round at the PSI Test Centers. Exams are administered by appointment only, Monday through Friday. Saturday appointments may be available at some locations.
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  How do I apply for special accommodations?
+
+
+A:  To ensure equal opportunities for all qualified individuals, qualified exam candidates with a disability within the guidelines set forth by the ADA who supply appropriate documentation will be provided reasonable and appropriate accommodations in order to take the exam. Candidates requesting accommodations must indicate such during the online exam application process with CBDM as well as submit the required forms. They must also complete a PSI online form and provide the completed hard copy forms as submitted to CBDM. More detailed information is available at the bottom of this web page: 
+https://www.cbdmonline.org/get-certified/register 
+
+
+    
+
+
+
+
+
+
+
+    
+
+Q:  
+How will I know when I can schedule my test appointment?
+
+
+A:  When your registration is completed and eligibility approved, CBDM will send you a confirmation via e-mail and submit your name and contact information to PSI. About 7 to 14 days later, PSI will send you an e-mail inviting you to schedule your testing appointment. You will have 90 days from the day the e-mail sent by PSI to schedule and take the exam. Check your spam folder if you have not received PSI’s e-mail when anticipated. ANFP and CBDM are not responsible for missed communications due to incorrect e-mail or mailing addresses in your record, or for e-mail messages you failed to retrieve from your spam folder. It is your responsibility to keep current your contact information in your record. Also, ANFP and CBDM are not responsible for any missed communications regarding any ANFP or CBDM matters for individuals who chose to opt out or unsubscribe from messages sent by ANFP or CBDM. 
+
+ 
+
+Important Information from PSI and CBDM
+
+PSI is continuing to monitor the latest developments associated with the global spread of Coronavirus -COVID-19. To ensure the safety of its employees and the candidates, since the outbreak began, PSI has strictly adhered to the latest safety procedures based various international, state, and local Orders and guidelines and CDC recommendations. 
+
+If you have COVID-19 symptoms, are positive for COVID-19 or have been in recent contact with someone diagnosed with COVID-19; contact PSI to discuss what options may be available regarding your appointment by emailing 
+examschedule@psionline.com
+ or reschedule online (
+https://test-takers.psiexams.com/cbdm
+).
+
+The following information represents the latest updates on the reopening of PSI’s owned and operated testing sites as of this review:
+
+
+You have the option of wearing a facemask or not. If you choose to wear a facemask, bring your own to the test site.
+
+You may wear gloves during the duration of your test. Gloves will be examined during the check-in and check-out security process.
+
+You are required to discard facemasks and gloves outside of the PSI test site in a safe and sanitary manner.
+
+To create a safe distance around Test Center Administrators and in lobby areas, test takers may be asked to wait outside of the building for a brief period during check in.
+
+Testing equipment will be wiped down thoroughly with antibacterial wipes.
+
+High-touch areas, including but not limited to keyboards, desktops, chair handles, check-in stations, door handles, and writing instruments are sanitized after each use.
+
+
+For more information about PSI Test Center policy and procedures, view PSI's FAQ document (
+www.psionline.com/covid-19/faq
+) related to operations due to COVID-19 impact. 
+
+Watch your e-mails for updates to CBDM policies or other matters regarding the CBDM Certification Program (don't forget to check your spam e-mail folder). You may also contact CBDM at 
+exam@CBDMonline.org
+ or 800.323.1908, select option 1 (daily call center hours may be found 
+here
+). 
+
+ 
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  Will I receive confirmation of my appointment?
+
+
+A:  Yes, shortly after you schedule your appointment with PSI. PSI will send an email with directions to the Test Center and a reminder of what you need to bring with you on the day of your exam. All CBDM policy applies.
+
+    
+
+
+
+
+
+
+
+    
+
+Q:  What must I do if I need to reschedule my appointment?
+
+A:  If you need to reschedule your appointment, please refer to your scheduling email from PSI for instructions or call PSI’s Candidate Support System at 833.333.4755. You may reschedule your exam only once. 
+
+You will forfeit the application and all fees paid to take the examination under any of the following circumstances: 
+
+
+You wish to reschedule an examination appointment but fail to contact PSI at least two business days prior to the scheduled examination session
+
+You want to reschedule a second time
+
+You appear more than 15 minutes late for your appointment, or you fail to report for your appointment
+
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+ What should I bring with me on the day of the exam?
+
+
+A:  To gain admission to the Test Center, you must present two forms of identification (ID).   
+
+
+NOTE: Examinees who fail to provide acceptable identification will not be admitted for testing. This will be considered a missed appointment and you forfeit the exam application and fees. To schedule a new appointment, a new application must be submitted to CBDM with fees for review and approval. 
+
+
+
+The primary form of ID must be government issued, current, and include your photograph and signature. Examples of valid primary forms of identification are: driver’s license with photograph; state identification card with photograph; passport; military identification card with photograph. 
+No expired or temporary IDs allowed.
+
+
+The secondary form of identification must display your name and signature for signature verification (e.g., credit card with signature, social security card with signature, student/employment ID card with signature).
+
+
+If your name on your exam registration is different than it appears on your identification, you must bring proof of your name change (e.g., marriage license, divorce decree, or court order). Failure to provide appropriate identification at the time of the exam will prohibit you from being allowed to test and is considered a missed appointment. There will be no refund of exam fees. To schedule a new appointment, a new exam application must be submitted to CBDM with fees for CBDM review and approval. 
+
+You may bring a silent, non-programmable, battery-operated calculator with no printing capabilities (optional). The Test Center administrator must approve your calculator. A calculator will not be provided to you at the Test Center. The Test Center Proctor will provide you with scratch paper and pencil. You may not bring your own paper and pencil into the testing room. 
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  What will it be like at the Test Center?
+
+
+
+A:  Test Centers may have multiple testing workstations in one room; all tests are proctored and recorded. There may be other examinees in the room taking different tests.
+
+
+Because each computer-based test is independently timed, you do not need to wait for others to arrive and/or start the test. A clock on your computer will count down until all 180 minutes have been exhausted. Your photo will be taken when you begin the exam and will remain on your computer screen until you complete the exam. The proctor will ensure that you remain in compliance with CBDM policy as you complete the exam.
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  When will I find out if I have passed?
+
+
+A:  You will be provided your score report from the test center proctor after you finish taking your exam. It will indicate your score as well as if you passed the exam. CBDM will be notified of your official test results within about seven to ten business days.
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+ Can I get a copy of my exam or the questions that I missed?
+
+
+A: For security purposes, we cannot release copies of the examination, in part or whole, including or the questions that were missed. Examinees who do not achieve the minimum standard for passing the exam receive a report. Your score report will include a breakdown indicating how you scored in each content area on the exam. You may use the content area scores to prioritize areas of study; however, you should review all areas as it is your overall score that determines your pass/fail status.
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  When is my certification active?
+
+
+A:  Individuals who are an 
+ANFP Professional or Allied Professional member 
+when they pass the exam and maintain their Professional membership with ANFP through the following May 31 will automatically be upgraded to Certified status, with the initial certification fee waived one time. CBDM will email information about the certification to the email address on file in the individual's ANFP record.
+
+All other individuals must activate their credential within one year of passing the exam. They will receive an email from CBDM explaining the activation fees as well as  benefits of membership. They may choose to activate their credential as a member or non-member. After activation is completed, CBDM will send information about the certification.
+
+Failure to activate certification within one year of passing the exam will result in your certification being terminated. To be eligible for certification again, you must meet the current eligibility requirements, submit an exam application with fees for CBDM review and approval, and receive a passing score on the exam.
+
+After activation of your certification, the CDM, CFPP credential may be used as long as certification is active, valid, and in good standing. Certificants must comply with all recertification requirements to maintain use of the credential. Failure to do so will result in the certification being terminated. 
+
+    
+
+
+
+
+
+    
+
+Q:
+ 
+How can I get a certificate to show I am currently certified?
+
+A: Certificates are available for order from the 
+ANFP Marketplace
+. Only actively certified individuals may place an order for a certificate showing they are currently CDM, CFPP certified.
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+Q:
+ Do I have to pay again to retake the exam?
+
+
+A: Yes, you have to complete and submit a new application with fees for CBDM review and approval and fully meet the current eligibility requirements each time you want to sit for the exam. You must wait 90 days between retakes of the exam. If eligible, there is no limit to how many times the exam may be retaken. The 90-day wait period must be met for any retake of the exam.
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  How is the passing score determined?
+
+
+A: Historically, answering about 70% is of the scored items has been required to pass the exam. Your score report will indicate the exact number of test items that you must answer correctly to pass the exam as well as the number of test items that you answered correctly out of the possible 140 scored items. (The 20 pretest questions are not scored and are not included in the total score.)  Your report will also indicate if you passed or failed the exam. Individuals who do not pass the exam will also receive a breakdown of their score by the exam content area.
+
+The passing score is determined by a standard setting score study called a modified Angoff procedure. This statistical study relies on subject matter experts – in our case, CDM, CFPPs, to estimate the difficulty of each question for a ‘minimally competent practitioner,’ or dietary manager that is considered entry level. The data is then used to determine the score required to pass the exam.
+
+On average, about 75% of candidates pass the exam on their first attempt.  The pass rate statistics are published below on a semi-annual basis.
+
+    
+
+
+
+
+
+
+
+    
+
+
+Q:
+
+  What are the exam statistics?
+
+
+
+A:
+ Pass/fall statistics will be reported twice per year. 
+
+
+
+
+
+DATES OF TESTING
+
+ 
+
+
+NUMBER OF CANDIDATES
+
+ 
+
+
+PASSING RATE FOR FIRST TIME TEST TAKERS
+
+ 
+
+
+
+
+1/1/21 – 6/30/21
+
+
+963
+
+
+75.0
+
+
+
+
+7/1/21 - 12/31/21
+
+
+ 791
+
+
+73.1 
+
+
+
+
+1/1/22 - 6/30/22
+
+716
+
+72.5
+
+
+
+7/1/22 - 12/31/22
+
+595
+
+74.0
+
+
+
+1/1/23 - 6/30/23
+
+663
+
+79.2
+
+
+
+7/1/23 - 12/31/23
+
+588
+
+73.0
+
+
+
+1/1/24 - 6/30/24
+
+620
+
+70.0
+
+
+
+7/1/24 - 12/31/24
+
+699
+
+69.1
+
+
+
+1/1/25 - 6/30/25
+
+665
+
+74.0
+
+
+
+7/1/25 - 12/31/25
+
+653
+
+
+75.0
+
+
+
+
+1/1/26 - 6/30/26
+
+645
+
+73.3
+
+
+
+
+ 
+
+    
+
+
+
+
+
+
+
+    
+
+Q:
+  How many individuals are currently certified?
+
+
+A: As of May 31, 2026, there are 10,463 individuals holding the CDM, CFPP credential. 
+
+    
+
+
+
+
+            
+
+        
+
+    
+
+
+
+ 
+ 
+ 
+
+
+    
+
+
+
+    
+
+Certifying Board for Dietary Managers
+
+
+PO Box 3610
+
+St. Charles, IL 60174
+
+800.323.1908
+
+
+info@CBDMonline.org
+
+    
+
+
+    
+
+    
+
+
+    
+
+
+
+    
+
+Get Certified
+
+
+
+    
+
+Eligibility
+
+
+    
+
+Exam Sites and Scheduling
+
+
+    
+
+Register
+
+
+    
+
+Activate
+
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+Exam
+
+
+
+    
+
+Study Materials
+
+
+    
+
+Exam FAQs
+
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+Maintaining Credential
+
+
+
+Maintaining Your Credential
+
+
+
+CE Self-Reporting
+
+
+
+CE Audit Information
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+About CBDM
+
+
+
+    
+
+Contact Us
+
+
+    
+
+Leadership
+
+
+    
+
+
+    
+
+Join ANFP
+
+
+
+
+    
+
+
+    
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+Privacy Policy
+
+
+
+Terms of Use
+
+
+
+Sitemap
+
+
+
+Contact Us
+
+
+
+Non-Discrimination Statement
+
+
+
+© 2025 Certifying Board for Dietary Managers
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+ 
+ 
+
+
+
+ 
+
+  
+
+
+
+
+
+(function(d, w) {
+    w.PropFuel = w.PropFuel || [];
+    if (w.PropFuel.__LOADED) return;
+    w.PropFuel.__LOADED = true;
+
+    var m = ['init','identify'];
+    m.forEach(function(n) {
+        w.PropFuel[n] = function(){ w.PropFuel.push([n].concat([].slice.call(arguments))) };
+    });
+    
+    var script = d.createElement('script');
+    script.src = 'https://web.propfuel.com/plugin.js';
+    script.async = true;
+    d.getElementsByTagName('head')[0].appendChild(script);
+
+    w.PropFuel.init('95ad412e921f444bbd9145e8f0e19e77', {
+    });
+})(document, window);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+$( document ).ready(function() {
+  $(".rwdBtn").click(function() {
+    $(".rwdNav").slideToggle();
+     });
+    $(".rwdSearch").click(function() {
+    $(".search").slideToggle();
+    });  
+    $(".btnClose").click(function() {
+    $(".search").slideToggle();
+    });
+  $(".loginwelcome").click(function() {
+    $(".loginMenu").slideToggle();
+   });
+});
+
+
+
+  !function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?
+  r.invoke.apply(r,arguments):r.queue.push(arguments)},
+  r.queue=[],r.loaded=1*new Date,r.version="1.0.0",
+  f.FeathrBoomerang=r;var g=e.createElement(a),
+  h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;
+  g.async=!0,g.src=t,h.appendChild(g)}
+  }(window,document,"script","https://cdn.feathr.co/js/boomerang.min.js","feathr");
+
+  feathr("fly", "5d76d993e5c03a0033a2478b");
+  feathr("sprinkle", "page_view");
+
+
+
+
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0012/6013.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+ 
+ 

@@ -1,0 +1,982 @@
+[
+  {
+    "id": "EPA609-OBJ-001",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing;82.30(b),82.32(g)",
+    "objective": "Recognize barter and paid fleet work as service for consideration",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-002",
+    "domain": "regulation",
+    "sourceLocator": "82.32(d)",
+    "objective": "Distinguish passenger comfort cooling from refrigerated cargo",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-003",
+    "domain": "regulation",
+    "sourceLocator": "EPA overlap",
+    "objective": "Select 609 or 608 Type II for MVAC-like off-road equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-004",
+    "domain": "regulation",
+    "sourceLocator": "EPA overlap",
+    "objective": "Recognize R-22 bus cooling as Section 608 equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-005",
+    "domain": "regulation",
+    "sourceLocator": "82.32(e)(4)",
+    "objective": "Apply equipment requirements to an MVAC shop doing only top-offs",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-006",
+    "domain": "regulation",
+    "sourceLocator": "82.32(e)(4)",
+    "objective": "Distinguish equipment ownership requirements for MVAC-like top-off-only work",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-007",
+    "domain": "regulation",
+    "sourceLocator": "82.32(e)(5)",
+    "objective": "Require recovery equipment availability when opening MVAC-like appliances",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-008",
+    "domain": "regulation",
+    "sourceLocator": "82.32(e)(3)",
+    "objective": "Apply normal service requirements to mobile off-site work",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-009",
+    "domain": "regulation",
+    "sourceLocator": "82.32(e)(1)",
+    "objective": "Recycle recovered refrigerant before returning it to its original vehicle",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-010",
+    "domain": "regulation",
+    "sourceLocator": "82.32(e)(2)",
+    "objective": "Recognize the limited same-owner off-site recycling pathway",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-011",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Refrigerant Handling",
+    "objective": "Distinguish recycling from reclamation to virgin specifications",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-012",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Venting Prohibition",
+    "objective": "Apply the CO2 venting exception without removing 609 duties",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-013",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Recordkeeping",
+    "objective": "Identify the first-time shop equipment certification obligation",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-014",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Recordkeeping",
+    "objective": "Recognize that later equipment purchases do not trigger recertification",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-015",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Recordkeeping",
+    "objective": "Identify the responsible officer who signs the shop certification",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-016",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Recordkeeping",
+    "objective": "Identify the equipment identification information in certification",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-017",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Recordkeeping",
+    "objective": "Retain technician certification proof at the shop",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-018",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Recordkeeping",
+    "objective": "Retain off-site refrigerant destination records for three years",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-019",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Safe Disposal",
+    "objective": "Identify final disposer responsibility for refrigerant removal",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-020",
+    "domain": "regulation",
+    "sourceLocator": "82.34(d)",
+    "objective": "Qualify salvage refrigerant for later reuse in an MVAC",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-021",
+    "domain": "regulation",
+    "sourceLocator": "82.34(d)(2)",
+    "objective": "Limit unreclaimed salvage refrigerant sale to certified technicians",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-022",
+    "domain": "regulation",
+    "sourceLocator": "EPA sales",
+    "objective": "Limit refrigerant purchases to equipment covered by certification",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-023",
+    "domain": "regulation",
+    "sourceLocator": "EPA sales",
+    "objective": "Apply the small substitute-refrigerant can exception with valves and fittings",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-024",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:ODS Sales",
+    "objective": "Apply the special under-20-pound CFC-12 purchase restriction",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-025",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:ODS Sales",
+    "objective": "Document the resale-only exception for small ODS containers",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-026",
+    "domain": "regulation",
+    "sourceLocator": "EPA sales",
+    "objective": "Recognize employer purchasing with written proof of certified employees",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-027",
+    "domain": "regulation",
+    "sourceLocator": "EPA sales",
+    "objective": "Identify purchaser, date and quantity on wholesaler invoices",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-028",
+    "domain": "regulation",
+    "sourceLocator": "EPA servicing:Technology Transitions",
+    "objective": "Distinguish new-vehicle refrigerant restrictions from existing-vehicle service",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-029",
+    "domain": "regulation",
+    "sourceLocator": "EPA retrofit:Labels",
+    "objective": "Replace or obscure obsolete refrigerant information after retrofit",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-030",
+    "domain": "regulation",
+    "sourceLocator": "EPA retrofit:Compressor Shutoff Switch",
+    "objective": "Add a pressure cutoff when retrofitting a system with a relief device",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-031",
+    "domain": "regulation",
+    "sourceLocator": "EPA retrofit:Barrier Hoses",
+    "objective": "Choose barrier hoses when required by a retrofit blend",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-032",
+    "domain": "regulation",
+    "sourceLocator": "EPA retrofit:Remove Original Refrigerant",
+    "objective": "Recognize why a CFC-12 substitute is not a drop-in",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-033",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:CFC-12",
+    "objective": "Connect stratospheric ozone loss to increased UVB exposure",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-034",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:CFC-12",
+    "objective": "Distinguish protective stratospheric ozone from ground-level smog",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-035",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:HFC-134a",
+    "objective": "Distinguish ozone depletion from greenhouse warming effects",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-036",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "MACS p1",
+    "objective": "Interpret GWP relative to carbon dioxide",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-037",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:SNAP",
+    "objective": "Understand that acceptance depends on end use and use conditions",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-038",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:SNAP",
+    "objective": "Reject hydrocarbon substitutes for MVAC use",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-039",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:HFC-152a",
+    "objective": "Recognize the A2 classification of HFC-152a",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-040",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:HFO-1234yf",
+    "objective": "Recognize the A2L classification of HFO-1234yf",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-041",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:CO2",
+    "objective": "Recognize much higher operating pressures in R-744 systems",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-042",
+    "domain": "environment_and_refrigerants",
+    "sourceLocator": "EPA impacts:Lower-GWP",
+    "objective": "Recognize that new-system approval does not authorize retrofit use",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-043",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Select eye protection for pressurized refrigerant work",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-044",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Respond to accidental refrigerant discharge by ventilation",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-045",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Recognize hazardous decomposition near hot surfaces",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-046",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Avoid compressed-air pressure testing because refrigerant-air mixtures can combust",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-047",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Keep hygroscopic lubricant containers tightly sealed",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-048",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Use impervious gloves to avoid PAG skin exposure",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-049",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Protect painted and elastomer surfaces from PAG spills",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-050",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Identify a cylinder approved for refilling rather than a disposable supply container",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-051",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Recognize why routine maintenance and internal machine repair require different authority",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-052",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Disconnect electrical power before equipment maintenance unless directed otherwise",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-053",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Choose a grounded, adequately rated extension when unavoidable",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-054",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p11",
+    "objective": "Distinguish a similar-looking fuel injection port from an A/C service port",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-055",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p12",
+    "objective": "Replace a distorted service hose seal",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-056",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p12",
+    "objective": "Maintain machine filter-driers to preserve recycled refrigerant purity",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-057",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p8;EPA fittings",
+    "objective": "Keep refrigerant-specific hose-end fittings permanently attached",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-058",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p8",
+    "objective": "Locate shutoff valves near the vehicle end of service hoses",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-059",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "82.36(a);EPA equipment",
+    "objective": "Select certified R-134a recovery/recycling equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-060",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "82.36(a);EPA equipment",
+    "objective": "Distinguish recovery-only capability from recycling capability",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-061",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p35",
+    "objective": "Recover residual refrigerant before disposing of a supply cylinder",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-062",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p36",
+    "objective": "Verify fitting insertion through the ferrule inspection opening",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-063",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p36",
+    "objective": "Diagnose irregular crimps as die mismatch or wear",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-064",
+    "domain": "safety_and_equipment",
+    "sourceLocator": "MACS p36",
+    "objective": "Avoid a mismatched crimper that damages the hose barrier",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-065",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p13",
+    "objective": "Use service-port caps as the primary leak seal",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-066",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p13",
+    "objective": "Clean connection surfaces before opening the circuit",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-067",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p13",
+    "objective": "Use an identifier to check actual refrigerant rather than trust the label",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-068",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p13",
+    "objective": "Recognize that an identifier cannot identify every possible mixture",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-069",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p14",
+    "objective": "Check for pressure before attempting recovery",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-070",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p14",
+    "objective": "Explain why cooling during recovery slows removal from an accumulator",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-071",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p14",
+    "objective": "Use controlled external warming rather than flame to aid accumulator outgassing",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-072",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p14",
+    "objective": "Restart recovery after the prescribed pause reveals returning pressure",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-073",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p15",
+    "objective": "Distinguish older equipment needing pre-warm procedures from newer equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-074",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p15",
+    "objective": "Perform the manual or automatic air-purge process appropriate to the machine",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-075",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p16",
+    "objective": "Measure oil removed during recovery and replace it with new specified oil",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-076",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p16",
+    "objective": "Identify oil type and viscosity from manufacturer information",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-077",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p16",
+    "objective": "Explain how excessive oil reduces heat transfer",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-078",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p31",
+    "objective": "Recognize that recycling equipment cannot separate mixed refrigerants",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-079",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p31",
+    "objective": "Understand how contaminated equipment spreads contamination to later vehicles",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-080",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p32-33",
+    "objective": "Verify supply-cylinder contents despite authentic-looking packaging",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-081",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p33",
+    "objective": "Recognize flammable contamination as requiring recovery equipment suitable for the hazard",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-082",
+    "domain": "recovery_and_contamination",
+    "sourceLocator": "MACS p34",
+    "objective": "Require reclamation of refrigerant from stationary sources before MVAC use",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-083",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p17",
+    "objective": "Choose a detector with sufficient sensitivity for a small leak",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-084",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p18",
+    "objective": "Inspect oil traces as possible leak evidence",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-085",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p18",
+    "objective": "Perform electronic leak detection with the engine off to limit air movement",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-086",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p18",
+    "objective": "Avoid solvents that interfere with electronic leak detection",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-087",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p18",
+    "objective": "Distinguish a limited detection charge from the full charge needed for compressor operation",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-088",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p20",
+    "objective": "Use fluorescent dye compatible with the system lubricant and materials",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-089",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p21",
+    "objective": "Check for factory dye before adding more",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-090",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p21",
+    "objective": "Match UV lamp and protective glasses to the dye system",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-091",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p21",
+    "objective": "Allow circulation time before expecting dye at a leak",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-092",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p21",
+    "objective": "Inspect inaccessible component undersides with a mirror or clean wipe",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-093",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p22",
+    "objective": "Recheck the full system after leak repairs",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-094",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p22",
+    "objective": "Recognize that flushing-material compatibility does not establish cleaning effectiveness",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-095",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p22",
+    "objective": "Explain residual flushing solvent dilution of compressor oil",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-096",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p22",
+    "objective": "Understand why fine condenser passages can retain debris after flushing",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-097",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p23",
+    "objective": "Account for elevation when interpreting a vacuum gauge reading",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-098",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p23",
+    "objective": "Distinguish service-hose vacuum from the vacuum throughout the system",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-099",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p23",
+    "objective": "Maintain vacuum-pump oil to preserve evacuation performance",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-100",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p24",
+    "objective": "Replace moisture-saturated desiccant after extended atmospheric exposure",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-101",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p24",
+    "objective": "Relate an undercharge to impaired lubricant circulation",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-102",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p24",
+    "objective": "Relate an overcharge to excessive pressure and possible cutoff",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-103",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p25",
+    "objective": "Check updated manufacturer charge specifications rather than only the original label",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-104",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p25-26",
+    "objective": "Convert decimal pounds into ounces without treating decimals as ounces",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-105",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p26",
+    "objective": "Convert a metric charge to the machine display units",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-106",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p26",
+    "objective": "Interpret a one-sided charge tolerance",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-107",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p27",
+    "objective": "Distinguish display resolution from actual scale accuracy",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-108",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p27",
+    "objective": "Verify scale calibration with a reference weight",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-109",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p28",
+    "objective": "Account for changed service-hose length in delivered charge",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-110",
+    "domain": "service_and_charge_accuracy",
+    "sourceLocator": "MACS p28",
+    "objective": "Recognize pressure readings cannot measure refrigerant mass",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-111",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p43",
+    "objective": "Prevent refrigerant accumulation in low spaces and inside the cabin during charging",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-112",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p43",
+    "objective": "Control ignition sources from nearby non-A/C shop equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-113",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p43",
+    "objective": "Use an LED work light to reduce broken-bulb ignition risk",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-114",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p43,45",
+    "objective": "Perform model-specific high-voltage isolation before EV system repair",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-115",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p43",
+    "objective": "Let high-side pressure fall before connecting service equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-116",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p44",
+    "objective": "Select a new compliant evaporator instead of repairing or salvaging one",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-117",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p44",
+    "objective": "Recognize that an evaporator's corrosion and burst resistance protect occupants",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-118",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p45",
+    "objective": "Secure cylinders in transport and avoid heat and low-area storage",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-119",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p45",
+    "objective": "Do not assume every electric compressor uses the same lubricant as a belt-driven unit",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-120",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p46-47",
+    "objective": "Read container chemical designation rather than relying on trade name",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-121",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p47",
+    "objective": "Use the integrated or external identifier interface required for R-1234yf RRR equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-122",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p48",
+    "objective": "Interpret a failed purity check as requiring a separate contaminated-refrigerant tank",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-123",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p50",
+    "objective": "Select J2843 or J3030 RRR equipment rather than ordinary R-134a-only equipment",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-124",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p50",
+    "objective": "Select J2851 equipment for contaminated refrigerant recovery",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-125",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p51",
+    "objective": "Stop a recharge when vacuum decay exceeds the equipment limit",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-126",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p51",
+    "objective": "Set blower and detector placement for the precharge evaporator leak check",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-127",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p51",
+    "objective": "Recognize the partial charge as a leak-check stage rather than completed charging",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-128",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p51",
+    "objective": "Complete the remaining charge only after passing both leak checks",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-129",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p52",
+    "objective": "Replace seals and align fittings to avoid introducing service leaks",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-130",
+    "domain": "hfo1234yf_specific",
+    "sourceLocator": "MACS p52",
+    "objective": "Secure lines against vibration and rubbing after service",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-131",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "82.42(b)(5)",
+    "objective": "Provide a credentialed EPA inspector access to required shop records",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-132",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "82.42(c)",
+    "objective": "Display the required certification notice for small ODS refrigerant sales",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-133",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix A:Purity Specification section3",
+    "objective": "Interpret a recycled R-12 contaminant report against the applicable purity standard",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-134",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix B:6.3.1",
+    "objective": "Recognize a recovery-only tank warning as preventing reuse before reprocessing",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-135",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix C:4.1.1-4.1.2",
+    "objective": "Respond to a filter-life lockout by installing the correct replacement filter",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-136",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix C:4.5",
+    "objective": "Withdraw recycled refrigerant in liquid phase for recharging or transfer",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-137",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix C:7.2",
+    "objective": "Apply the 80 percent volume overfill-protection limit with its temperature basis",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-138",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix C:7.3.3-7.3.4",
+    "objective": "Distinguish refillable-container retesting from the ASME tank exemption",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-139",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix C:7.5",
+    "objective": "Use container-connection shutoff devices to prevent loss during tank changes",
+    "status": "candidate, needs question-level evidence and overlap review"
+  },
+  {
+    "id": "EPA609-OBJ-140",
+    "domain": "primary_regulation_additions",
+    "sourceLocator": "Appendix B:6.7.2",
+    "objective": "Account for refrigerant dissolved in separated lubricant when measuring oil replacement",
+    "status": "candidate, needs question-level evidence and overlap review"
+  }
+]

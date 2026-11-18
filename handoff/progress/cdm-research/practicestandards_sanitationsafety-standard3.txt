@@ -1,0 +1,190 @@
+CDM, CFPP PRACTICE STANDARDS - AUGUST 2025
+SANITATION & SAFETY
+Standard 3: Protect Food in All Phases of  
+Preparation and Production
+A CDM, CFPP is responsible for protecting food in all phases of preparation and 
+production by: 
+• Recognizing, identifying, and monitoring potentially hazardous foods to prevent the 
+spread of pathogens and an outbreak of a foodborne illness
+• Implementing food production protocols that control time and temperature, cross 
+contamination, and safe critical limits
+• Establishing an effective Emergency/Disaster Plan to ensure a safe food supply is 
+on hand and a crisis management plan in place in the event of a foodborne illness 
+outbreak or any other local or national emergency/disaster
+• Ensuring compliance through documentation and corrective action plans when critical 
+limits are exceeded
+PERFORMANCE INDICATORS KEY ACTIONS
+1.0 Utilize HACCP Guidelines
+1.1 Apply HACCP (Hazard Analysis Critical 
+Control Point) guidelines throughout all 
+stages of food procurement, preparation, 
+and production.
+• Analyze hazards: Identify potential 
+hazards in food production, including 
+ingredients, processes, and handling.
+• Identify critical control points (CCPs): 
+Determine points in the food flow 
+where hazards must be controlled or 
+eliminated.
+• Establish critical limits: Define 
+acceptable limits for each CCP to ensure 
+food safety.
+• Monitor procedures: Regularly check 
+that procedures support meeting critical 
+limits at CCPs.
+• Implement corrective actions: Follow 
+established procedures to address any 
+missed critical limits.
+• Verify the system: Conduct regular 
+monitoring, logs, and self-inspections to 
+ensure the HACCP system is working. 
+
+CDM, CFPP PRACTICE STANDARDS - AUGUST 2025
+• Maintain records: Keep proper 
+documentation of HACCP activities, 
+including time and temperature 
+monitoring records. 
+1.0 RESOURCES
+Foodservice Management by Design, 4th Edition
+Seven Principles of HACCP
+Analyzing Hazards: Questions to Ask
+CCP Decision Tree
+Foodservice Management by Design, Supplemental Material, 4th Edition
+Manager Self-Inspection Corrective Action Checklist
+Storage Temperature Log
+Online Resources
+ANFP Nutrition & Foodservice Edge Magazine:
+Are You Ready for Your Inspection? 
+Other Resources:
+California Culinary Centers Standardized Recipes | CA Department of Education
+Retail Food Protection: Employee Health and Personal Hygiene Handbook | FDA 
+2.0 Recognize causes, symptoms, and types of 
+foodborne illnesses
+2.1 Identify and categorize foodborne 
+illness hazards into biological, chemical, 
+and physical types.
+• Monitor food handling practices and 
+inspecting food sources to avoid 
+biological hazards in food production 
+include bacteria, viruses, parasites, and 
+fungi.
+• Ensure chemical hazards are eliminated 
+by monitoring for pesticide residues, 
+preventing toxic metal contamination, 
+controlling food additives, and storing 
+cleaning agents away from food areas.
+• Implement regular inspections, maintain 
+equipment, and follow strict safety 
+protocols to effectively eliminate 
+physical hazards in food production. 
+2.2 Recognize common pathogens that 
+cause foodborne illnesses and their 
+associated symptoms.
+• Recognize bacteria, viruses, parasites, 
+and fungi that cause foodborne illnesses.
+• Be aware of symptoms like diarrhea, 
+fever, stomach cramps, vomiting, and 
+headache.
+• Implement proper cooking, storage, 
+and hygiene practices to prevent 
+contamination. 
+CDM, CFPP PRACTICE STANDARDS - AUGUST 2025
+2.3 Understand how foodborne illnesses 
+are transmitted and the measures to 
+prevent them.
+• Recognize that foodborne illnesses can be 
+transmitted through infected employees, 
+contaminated water, and improper food 
+handling; monitor production processes 
+to prevent contamination; and regularly 
+screen employee health to reduce the risk 
+of virus transmission.
+• Ensure employee hygiene, control cooking 
+and storage temperatures, and select 
+safe food sources to minimize the risk of 
+foodborne illness and contamination. 
+2.0 RESOURCES
+Foodservice Management by Design, 4th Edition
+Causes of Foodborne Illness
+Guidelines for Handling Foods Containing Mold
+Common Foodborne Pathogens
+Conditions for Bacterial Growth: Food, Acidity, Temperature, Time, Oxygen, Moisture (FATTOM)
+Food Hazards
+Foodservice Management by Design, Supplemental Material, 4th Edition
+Manager Self-Inspection Corrective Action Checklist
+Online Resources
+Retail Food Protection: Employee Health and Personal Hygiene Handbook | FDA 
+3.0 Understand food allergens, cross-contamination, 
+and contact
+3.1 Properly understand food allergies and 
+implement procedures to avoid cross-
+contamination and cross-contact.
+• Determine where cross-contamination and 
+cross-contact are most likely to occur.
+• Conduct and measure effectiveness of 
+staff allergen training.
+• Track frequency and effectiveness of 
+cleaning and sanitation procedures.
+• Monitor the accuracy of ingredient labels 
+and supplier information.
+• Evaluate the implementation of measures 
+to prevent cross-contact, such as using 
+separate utensils, cutting boards, and 
+storage areas for allergenic and non-
+allergenic foods.
+• Collect and analyze customer feedback 
+related to allergen incidents.
+• Conduct regular audits and inspections 
+to ensure compliance with allergen 
+management protocols.
+• Maintain detailed records of all allergen 
+management activities.
+CDM, CFPP PRACTICE STANDARDS - AUGUST 2025
+3.0 RESOURCES
+Foodservice Management by Design, Supplemental Material, 4th Edition
+Sample Daily Cleaning Schedule
+Online Resources
+ANFP:
+Allergen Awareness and Training Review
+The New Kid on the Block: Sesame Allergy and a Review of the Big 9
+ANFP Nutrition & Foodservice Edge Magazine: 
+Creative Culinary Strategies for Managing Food Allergies
+Training Approaches to Strengthen Nutrition and Allergy Expertise Among Staff
+Cross-Contamination vs. Cross-Contact: Spotlighting the Differences
+Allergen Control in Your Facility: Do You Have What it Takes? 
+Preparing Allergen-Free Foods in Healthcare Facilities
+Will FASTER Move Us Into an Allergen-Free Future? 
+Sourcing the Right Ingredients for Gluten-Free Menus
+Realign to Nine: Focus on Food Allergies
+Other Resources: 
+Food Allergies: What You Need to Know | FDA
+To Be a Great Leader, You Must Inspect What You Expect | Dough Thorpe
+4.0 Prepare emergency procedures
+4.1 Prepare emergency procedure and 
+identify key metrics that can measure the 
+effectiveness and efficiency of the process.
+• Measure time taken to prepare the 
+emergency procedure from start to 
+finish to identify areas where the 
+process can be streamlined.
+• Evaluate the accuracy of the emergency 
+procedure.
+• Ensure that the emergency procedure 
+complies with relevant regulations and 
+standards.
+• Assess the effectiveness of training 
+programs related to the emergency 
+procedure.
+• Measure the resources used in preparing 
+the emergency procedure, including 
+time, personnel, and materials. 
+4.0 RESOURCES
+Online Resources
+ANFP: 
+Top 10 Tips for Disaster Planning
+ANFP Nutrition & Foodservice Edge Magazine: 
+CMS Begins Enforcement of New Rule to Bolster Emergency Preparedness
+Emergency Preparedness in Foodservice Operations: Taking First Steps to Ensure Continuity of  
+       Essential Services During Disasters
+Emergency Preparedness
+Emergency Readiness in the Face of the Storm

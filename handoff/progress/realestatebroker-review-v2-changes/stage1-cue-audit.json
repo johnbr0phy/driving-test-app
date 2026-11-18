@@ -1,0 +1,18 @@
+{
+  "stage1ChoicesAndRawLabelsUnchanged": true,
+  "assessment": "The none labels meant no decisive recognized cue at choice time, not a claim of mathematically random or prior-free selection. Broad topic familiarity and familiar terminology may influence guesses even when not consciously identified. No choices have been rebalanced or changed.",
+  "potentialUnstatedDomainPrior": [
+    "R004 intended-use concept is familiar appraisal vocabulary",
+    "R006 unenforceability is a familiar contract enforcement topic",
+    "R010 condition precedent is a frequent contract exam concept",
+    "R019 BPO is salient in a brokerage bank",
+    "R029 flood insurance is salient in the environment category",
+    "R030 illusory commitment is a standard consideration exam topic",
+    "R032 scope of work is a salient appraisal-process term",
+    "R037 eminent domain is a familiar public-power topic",
+    "R041 income duration is a familiar permissible underwriting factor",
+    "R046 sales indication is commonly emphasized in appraisal questions"
+  ],
+  "remainingNoneInterpretation": "Other none selections were consciously unsupported choices among plausible alternatives; absence of a consciously recognized cue cannot establish no implicit prior. Numeric guesses R018 and R042 lacked operands. R035 lacked ledger facts.",
+  "warning": "Audit is retrospective after seeing stems and cannot replace the contemporaneous raw labels or be treated as new blinded evidence."
+}

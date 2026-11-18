@@ -1,0 +1,362 @@
+[
+  {
+    "reviewId": "R001",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "DOT-39 is the familiar nonrefillable designation; that distinctive equipment rule is my inferred topic.",
+    "confidence": 0.42,
+    "questionId": "EPA609-EQP-019",
+    "hit": true
+  },
+  {
+    "reviewId": "R002",
+    "answer": "C",
+    "cueType": "none",
+    "reason": "No wording distinguishes the gram values; I weakly guess the smallest test quantity.",
+    "confidence": 0.26,
+    "questionId": "EPA609-YF-012",
+    "hit": false
+  },
+  {
+    "reviewId": "R003",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "The category is Section 609 rules, making the matching technician certification my domain guess.",
+    "confidence": 0.68,
+    "questionId": "EPA609-REG-017",
+    "hit": true
+  },
+  {
+    "reviewId": "R004",
+    "answer": "B",
+    "cueType": "none",
+    "reason": "Without the operation or component there is no decisive location clue; machine is a weak guess.",
+    "confidence": 0.27,
+    "questionId": "EPA609-EQP-004",
+    "hit": false
+  },
+  {
+    "reviewId": "R005",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "Desiccant replacement is a familiar remedy for system moisture; the missing symptom could change this.",
+    "confidence": 0.33,
+    "questionId": "EPA609-SRV-026",
+    "hit": true
+  },
+  {
+    "reviewId": "R006",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Electric drive commonly changes compressor oil and electrical service requirements.",
+    "confidence": 0.47,
+    "questionId": "EPA609-YF-004",
+    "hit": true
+  },
+  {
+    "reviewId": "R007",
+    "answer": "C",
+    "cueType": "none",
+    "reason": "Numbers alone do not identify the arithmetic; I weakly guess the smaller difference.",
+    "confidence": 0.25,
+    "questionId": "EPA609-SRV-029",
+    "hit": false
+  },
+  {
+    "reviewId": "R008",
+    "answer": "A",
+    "cueType": "surface",
+    "reason": "Contracting is the only service arrangement among machine purchase or lease transactions, making it a conspicuous exception.",
+    "confidence": 0.43,
+    "questionId": "EPA609-EQP-022",
+    "hit": false
+  },
+  {
+    "reviewId": "R009",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Liquid vaporization absorbs latent heat and is the familiar cooling mechanism.",
+    "confidence": 0.44,
+    "questionId": "EPA609-EQP-011",
+    "hit": true
+  },
+  {
+    "reviewId": "R010",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Debris removal from condenser passages is a familiar limitation of flushing; the actual requested property is unknown.",
+    "confidence": 0.34,
+    "questionId": "EPA609-SRV-022",
+    "hit": false
+  },
+  {
+    "reviewId": "R011",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Opening passenger-car A/C systems is the most familiar Section 609 service scenario.",
+    "confidence": 0.34,
+    "questionId": "EPA609-REG-004",
+    "hit": false
+  },
+  {
+    "reviewId": "R012",
+    "answer": "B",
+    "cueType": "none",
+    "reason": "All values have identical formatting and no calculation is available; eight is a weak guess.",
+    "confidence": 0.25,
+    "questionId": "EPA609-EQP-024",
+    "hit": false
+  },
+  {
+    "reviewId": "R013",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "The center of a sight glass is a familiar normal oil-level target.",
+    "confidence": 0.62,
+    "questionId": "EPA609-SRV-031",
+    "hit": true
+  },
+  {
+    "reviewId": "R014",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Mild flammability is a salient characteristic of yf refrigerant, so ignition seems the likely topic.",
+    "confidence": 0.48,
+    "questionId": "EPA609-YF-006",
+    "hit": false
+  },
+  {
+    "reviewId": "R015",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Service valve cores can restrict evacuation flow and produce misleading pressure differences.",
+    "confidence": 0.38,
+    "questionId": "EPA609-SRV-005",
+    "hit": true
+  },
+  {
+    "reviewId": "R016",
+    "answer": "D",
+    "cueType": "surface",
+    "reason": "The uniquely concrete positive-pressure evaporator-leakage purpose is longer and more technically targeted than the broad quantity/cooling/performance alternatives.",
+    "confidence": 0.66,
+    "questionId": "EPA609-YF-003",
+    "hit": true
+  },
+  {
+    "reviewId": "R017",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "Clearing trapped refrigerant before replacing a filter is a plausible service prerequisite.",
+    "confidence": 0.43,
+    "questionId": "EPA609-EQP-013",
+    "hit": true
+  },
+  {
+    "reviewId": "R018",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "A connection under vacuum can draw in surrounding air; I infer that likely troubleshooting situation.",
+    "confidence": 0.36,
+    "questionId": "EPA609-EQP-020",
+    "hit": true
+  },
+  {
+    "reviewId": "R019",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "Section 609 is the most likely certification in an MVAC rules category, though the missing activity is decisive.",
+    "confidence": 0.38,
+    "questionId": "EPA609-REG-026",
+    "hit": false
+  },
+  {
+    "reviewId": "R020",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "The facility charging recovered refrigerant seems a plausible party responsible for recycling it before reuse.",
+    "confidence": 0.32,
+    "questionId": "EPA609-REG-028",
+    "hit": true
+  },
+  {
+    "reviewId": "R021",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "An inspection opening provides evidence of full hose insertion, unlike nominal fit or hand resistance.",
+    "confidence": 0.62,
+    "questionId": "EPA609-EQP-006",
+    "hit": true
+  },
+  {
+    "reviewId": "R022",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "I associate refrigerant sales restrictions with large cylinders and small-can exceptions.",
+    "confidence": 0.46,
+    "questionId": "EPA609-REG-027",
+    "hit": false
+  },
+  {
+    "reviewId": "R023",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Rising low-side pressure after shutdown can matter for evaporator leak detection.",
+    "confidence": 0.43,
+    "questionId": "EPA609-YF-015",
+    "hit": false
+  },
+  {
+    "reviewId": "R024",
+    "answer": "C",
+    "cueType": "none",
+    "reason": "The three neighboring vacuum values and one small value suggest arithmetic but do not determine it; 24 is my weak guess.",
+    "confidence": 0.25,
+    "questionId": "EPA609-SRV-025",
+    "hit": true
+  },
+  {
+    "reviewId": "R025",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "A small annual leak threshold around 0.15 ounce is familiar in refrigerant leak detector specifications.",
+    "confidence": 0.48,
+    "questionId": "EPA609-YF-016",
+    "hit": true
+  },
+  {
+    "reviewId": "R026",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Recovering a remaining test charge is a familiar prerequisite before opening or evacuating a system.",
+    "confidence": 0.49,
+    "questionId": "EPA609-YF-014",
+    "hit": true
+  },
+  {
+    "reviewId": "R027",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Recipient name and address sounds like the familiar refrigerant-transfer record requirement.",
+    "confidence": 0.49,
+    "questionId": "EPA609-REG-008",
+    "hit": true
+  },
+  {
+    "reviewId": "R028",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Voltage measurements at specified isolation points establish electrical isolation; current or auxiliary battery readings do not.",
+    "confidence": 0.68,
+    "questionId": "EPA609-YF-008",
+    "hit": true
+  },
+  {
+    "reviewId": "R029",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Dry nitrogen is a familiar safe pressure-test gas.",
+    "confidence": 0.6,
+    "questionId": "EPA609-EQP-002",
+    "hit": false
+  },
+  {
+    "reviewId": "R030",
+    "answer": "C",
+    "cueType": "none",
+    "reason": "All are legitimate properties and the missing material or purpose determines the answer; flash point is my weak guess.",
+    "confidence": 0.27,
+    "questionId": "EPA609-SRV-023",
+    "hit": false
+  },
+  {
+    "reviewId": "R031",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Barrier hose selection is associated with limiting refrigerant permeation.",
+    "confidence": 0.55,
+    "questionId": "EPA609-REG-024",
+    "hit": true
+  },
+  {
+    "reviewId": "R032",
+    "answer": "C",
+    "cueType": "none",
+    "reason": "The dates reveal no starting date or retention interval; May 2029 is an unsupported guess.",
+    "confidence": 0.25,
+    "questionId": "EPA609-REG-015",
+    "hit": true
+  },
+  {
+    "reviewId": "R033",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Leak detector probes are normally swept near surfaces without touching contamination.",
+    "confidence": 0.7,
+    "questionId": "EPA609-SRV-006",
+    "hit": true
+  },
+  {
+    "reviewId": "R034",
+    "answer": "C",
+    "cueType": "none",
+    "reason": "Names and logical combinations offer no evidence about qualifications; either is my unsupported guess.",
+    "confidence": 0.25,
+    "questionId": "EPA609-REG-025",
+    "hit": false
+  },
+  {
+    "reviewId": "R035",
+    "answer": "B",
+    "cueType": "knowledge",
+    "reason": "Type II is the familiar high-pressure stationary-equipment credential; I infer a contrast with MVAC.",
+    "confidence": 0.36,
+    "questionId": "EPA609-REG-016",
+    "hit": true
+  },
+  {
+    "reviewId": "R036",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "Dense refrigerant vapor can collect at the lower outlet edge, suggesting a leak probe location.",
+    "confidence": 0.51,
+    "questionId": "EPA609-YF-013",
+    "hit": false
+  },
+  {
+    "reviewId": "R037",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "Fluorescent leak-detection dye requires an appropriate excitation wavelength.",
+    "confidence": 0.59,
+    "questionId": "EPA609-SRV-020",
+    "hit": true
+  },
+  {
+    "reviewId": "R038",
+    "answer": "A",
+    "cueType": "knowledge",
+    "reason": "Lower AWG means thicker wire, a familiar requirement for equipment extension leads.",
+    "confidence": 0.47,
+    "questionId": "EPA609-EQP-014",
+    "hit": false
+  },
+  {
+    "reviewId": "R039",
+    "answer": "D",
+    "cueType": "knowledge",
+    "reason": "I associate J2842 with yf evaporator requirements; the actual standard requested is unknown.",
+    "confidence": 0.34,
+    "questionId": "EPA609-YF-001",
+    "hit": true
+  },
+  {
+    "reviewId": "R040",
+    "answer": "C",
+    "cueType": "knowledge",
+    "reason": "Oily residue at a refrigerant connection is a familiar leak sign.",
+    "confidence": 0.76,
+    "questionId": "EPA609-SRV-012",
+    "hit": true
+  }
+]

@@ -1,0 +1,370 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "rebTitle",
+    "optionA": "Breach can expose ownership to forfeiture",
+    "optionB": "Breach creates only a damages claim",
+    "optionC": "Breach automatically renews a lease term",
+    "optionD": "Breach imposes a purchase-money lien"
+  },
+  {
+    "reviewId": "R002",
+    "category": "rebEnvironment",
+    "optionA": "Tank and connected underground piping combined",
+    "optionB": "Tank shell capacity excluding connected piping",
+    "optionC": "Petroleum currently stored in the tank",
+    "optionD": "Daily fuel throughput of the system"
+  },
+  {
+    "reviewId": "R003",
+    "category": "rebPractice",
+    "optionA": "Business interruption coverage",
+    "optionB": "Workers\u2019 compensation coverage",
+    "optionC": "Professional liability coverage",
+    "optionD": "Commercial property coverage"
+  },
+  {
+    "reviewId": "R004",
+    "category": "rebValue",
+    "optionA": "Narrative, form, or oral report format",
+    "optionB": "Inspection, research, or reporting schedule",
+    "optionC": "Financing, sale, or another intended use",
+    "optionD": "Sales, cost, or income approach"
+  },
+  {
+    "reviewId": "R005",
+    "category": "rebValue",
+    "optionA": "Report signature date",
+    "optionB": "June inspection date",
+    "optionC": "December valuation date",
+    "optionD": "Expected transfer date"
+  },
+  {
+    "reviewId": "R006",
+    "category": "rebAgency",
+    "optionA": "Void agreement at formation",
+    "optionB": "Voidable agreement for fraud",
+    "optionC": "Unenforceable claim",
+    "optionD": "Executed agreement through performance"
+  },
+  {
+    "reviewId": "R007",
+    "category": "rebFinance",
+    "optionA": "Use of a written service agreement",
+    "optionB": "Excess compensation tied to referrals",
+    "optionC": "Separate billing for actual services",
+    "optionD": "Payment after completion of services"
+  },
+  {
+    "reviewId": "R008",
+    "category": "rebTitle",
+    "optionA": "Average $2,000 compromise",
+    "optionB": "Original $5,000 allocation",
+    "optionC": "Joint $3,000 amendment",
+    "optionD": "Seller\u2019s later $1,000 demand"
+  },
+  {
+    "reviewId": "R009",
+    "category": "rebEnvironment",
+    "optionA": "Five years",
+    "optionB": "Three years",
+    "optionC": "Seven years",
+    "optionD": "One year"
+  },
+  {
+    "reviewId": "R010",
+    "category": "rebAgency",
+    "optionA": "Condition precedent",
+    "optionB": "Liquidated-damages measure",
+    "optionC": "Covenant of title",
+    "optionD": "Assignment of contract rights"
+  },
+  {
+    "reviewId": "R011",
+    "category": "rebFinance",
+    "optionA": "At least three business days",
+    "optionB": "At the signing appointment",
+    "optionC": "At least three calendar days",
+    "optionD": "At least one business day"
+  },
+  {
+    "reviewId": "R012",
+    "category": "rebFinance",
+    "optionA": "Mortgage servicing and payment collection",
+    "optionB": "Primary-market loan origination",
+    "optionC": "Secondary-market liquidity replenishment",
+    "optionD": "Borrower refinancing of existing debt"
+  },
+  {
+    "reviewId": "R013",
+    "category": "rebAgency",
+    "optionA": "Accounting for client money received",
+    "optionB": "Confidentiality of client negotiating limits",
+    "optionC": "Disclosure of personal ownership interests",
+    "optionD": "Supervision of delegated performance"
+  },
+  {
+    "reviewId": "R014",
+    "category": "rebProperty",
+    "optionA": "Assessed market value of affected parcels",
+    "optionB": "Outstanding mortgage balance on affected parcels",
+    "optionC": "Original purchase cost of affected parcels",
+    "optionD": "Benefit received by affected parcels"
+  },
+  {
+    "reviewId": "R015",
+    "category": "rebAgency",
+    "optionA": "Rescission for fraudulent inducement",
+    "optionB": "Discharge through impossibility of performance",
+    "optionC": "Exercise of a contractual termination right",
+    "optionD": "Avoidance for lack of contractual capacity"
+  },
+  {
+    "reviewId": "R016",
+    "category": "rebProperty",
+    "optionA": "Assessor parcel number and assessment year",
+    "optionB": "Name and recording reference of the plat",
+    "optionC": "Street address and present owner\u2019s name",
+    "optionD": "Seller\u2019s deed date and purchase price"
+  },
+  {
+    "reviewId": "R017",
+    "category": "rebPractice",
+    "optionA": "Posting access to relevant ledgers",
+    "optionB": "Read-only access to every client file",
+    "optionC": "Temporary administrator access to accounting",
+    "optionD": "Read-only access to relevant ledgers"
+  },
+  {
+    "reviewId": "R018",
+    "category": "rebMath",
+    "optionA": "6,600 square feet",
+    "optionB": "6,000 square feet",
+    "optionC": "5,400 square feet",
+    "optionD": "2,800 square feet"
+  },
+  {
+    "reviewId": "R019",
+    "category": "rebValue",
+    "optionA": "Assessed taxable value",
+    "optionB": "Broker Price Opinion",
+    "optionC": "Automated Valuation Model",
+    "optionD": "Licensed appraiser\u2019s appraisal"
+  },
+  {
+    "reviewId": "R020",
+    "category": "rebPractice",
+    "optionA": "Discriminatory allocation of financing terms",
+    "optionB": "Racial steering among different neighborhoods",
+    "optionC": "Discriminatory publication of rental advertising",
+    "optionD": "False representation of housing availability"
+  },
+  {
+    "reviewId": "R021",
+    "category": "rebPractice",
+    "optionA": "Consumer inquiries against vendor invoice totals",
+    "optionB": "Answered calls against scheduled dialing windows",
+    "optionC": "Call volumes against agents\u2019 assigned quotas",
+    "optionD": "Call timestamps against effective suppression dates"
+  },
+  {
+    "reviewId": "R022",
+    "category": "rebEnvironment",
+    "optionA": "Migration into groundwater",
+    "optionB": "Vapor movement through indoor ducts",
+    "optionC": "Airborne transport of surface dust",
+    "optionD": "Retention on stationary soil particles"
+  },
+  {
+    "reviewId": "R023",
+    "category": "rebPractice",
+    "optionA": "Owner-manager contract\u2019s fee schedule",
+    "optionB": "Property policy\u2019s loss-settlement schedule",
+    "optionC": "Tenant lease\u2019s monthly rent schedule",
+    "optionD": "Construction contract\u2019s progress-payment schedule"
+  },
+  {
+    "reviewId": "R024",
+    "category": "rebFinance",
+    "optionA": "Misrepresentation of qualifying income",
+    "optionB": "Misrepresentation of intended occupancy",
+    "optionC": "Misrepresentation of down-payment source",
+    "optionD": "Misrepresentation of property condition"
+  },
+  {
+    "reviewId": "R025",
+    "category": "rebEnvironment",
+    "optionA": "Within 24\u201348 hours",
+    "optionB": "Within 14\u201321 days",
+    "optionC": "Within 4\u20135 days",
+    "optionD": "Within 7\u201310 days"
+  },
+  {
+    "reviewId": "R026",
+    "category": "rebEnvironment",
+    "optionA": "Recorded land-use restriction limiting future development",
+    "optionB": "Significant data gap affecting the professional\u2019s opinion",
+    "optionC": "Completed remediation verified through sampling",
+    "optionD": "Confirmed release requiring a quantified cleanup estimate"
+  },
+  {
+    "reviewId": "R027",
+    "category": "rebPractice",
+    "optionA": "Laundry room limited to residents",
+    "optionB": "Rental office serving prospective tenants",
+    "optionC": "Clubroom limited to residents and guests",
+    "optionD": "Interior of a resident\u2019s dwelling"
+  },
+  {
+    "reviewId": "R028",
+    "category": "rebAgency",
+    "optionA": "Both represented principals",
+    "optionB": "Only the principal accepting the offer",
+    "optionC": "Only the principal represented first",
+    "optionD": "Only the principal paying the commission"
+  },
+  {
+    "reviewId": "R029",
+    "category": "rebEnvironment",
+    "optionA": "Home-warranty service coverage",
+    "optionB": "Private mortgage default insurance",
+    "optionC": "Flood insurance coverage",
+    "optionD": "Standard homeowners property coverage"
+  },
+  {
+    "reviewId": "R030",
+    "category": "rebAgency",
+    "optionA": "Executed consideration",
+    "optionB": "Illusory commitment",
+    "optionC": "Nominal consideration",
+    "optionD": "Conditional commitment"
+  },
+  {
+    "reviewId": "R031",
+    "category": "rebFinance",
+    "optionA": "A real estate brokerage\u2019s permitted cooperative fee",
+    "optionB": "Value exchanged under a referral understanding",
+    "optionC": "A lender\u2019s discount directly to its own customer",
+    "optionD": "Reasonable compensation solely for actual services"
+  },
+  {
+    "reviewId": "R032",
+    "category": "rebValue",
+    "optionA": "Broker listing recommendation",
+    "optionB": "Reconciled value conclusion",
+    "optionC": "Scope of work",
+    "optionD": "Final report delivery date"
+  },
+  {
+    "reviewId": "R033",
+    "category": "rebEnvironment",
+    "optionA": "Available records confined to the leased unit",
+    "optionB": "Relevant unit and shared-space records",
+    "optionC": "Available records confined to occupied units",
+    "optionD": "Available records confined to exterior surfaces"
+  },
+  {
+    "reviewId": "R034",
+    "category": "rebTitle",
+    "optionA": "Another owner\u2019s existing interest",
+    "optionB": "Estate backed by implied warranties",
+    "optionC": "Estate free of earlier recorded liens",
+    "optionD": "No estate through that transfer"
+  },
+  {
+    "reviewId": "R035",
+    "category": "rebPractice",
+    "optionA": "A\u2019s disbursements exceed A\u2019s available funds by $300",
+    "optionB": "A\u2019s positive balance is overstated by $300",
+    "optionC": "B\u2019s disbursements exceed B\u2019s available funds by $300",
+    "optionD": "B has $300 remaining for further disbursement"
+  },
+  {
+    "reviewId": "R036",
+    "category": "rebEnvironment",
+    "optionA": "Interviewing prior property operators",
+    "optionB": "Researching acquisition-related cleanup liens",
+    "optionC": "Preserving applicable institutional controls",
+    "optionD": "Reviewing historical aerial photographs"
+  },
+  {
+    "reviewId": "R037",
+    "category": "rebProperty",
+    "optionA": "Private covenant enforcement",
+    "optionB": "Adverse possession doctrine",
+    "optionC": "Voluntary dedication rights",
+    "optionD": "Eminent domain authority"
+  },
+  {
+    "reviewId": "R038",
+    "category": "rebValue",
+    "optionA": "Condition proposed for the subject",
+    "optionB": "Condition typical of new construction",
+    "optionC": "Condition when the comparable sold",
+    "optionD": "Condition when the appraiser inspected it"
+  },
+  {
+    "reviewId": "R039",
+    "category": "rebFinance",
+    "optionA": "Borrower retains title subject to security",
+    "optionB": "Borrower and lender become joint tenants",
+    "optionC": "Lender receives the borrower\u2019s equity outright",
+    "optionD": "Lender receives legal title as security"
+  },
+  {
+    "reviewId": "R040",
+    "category": "rebValue",
+    "optionA": "Broker arranging the inspection",
+    "optionB": "Lender engaging the appraiser",
+    "optionC": "Buyer paying the appraisal fee",
+    "optionD": "Seller owning the subject property"
+  },
+  {
+    "reviewId": "R041",
+    "category": "rebFinance",
+    "optionA": "Outstanding balance of existing debts",
+    "optionB": "Current monthly amount of qualifying income",
+    "optionC": "Retirement versus employment income source",
+    "optionD": "Expected duration of qualifying income"
+  },
+  {
+    "reviewId": "R042",
+    "category": "rebMath",
+    "optionA": "$7,800",
+    "optionB": "$15,600",
+    "optionC": "$12,000",
+    "optionD": "$4,200"
+  },
+  {
+    "reviewId": "R043",
+    "category": "rebAgency",
+    "optionA": "Isolate the leak and restore damaged pipe",
+    "optionB": "Extend new water service to an unfinished addition",
+    "optionC": "Reconfigure bathroom piping for a future remodel",
+    "optionD": "Replace all building plumbing with upgraded fixtures"
+  },
+  {
+    "reviewId": "R044",
+    "category": "rebValue",
+    "optionA": "Consumer Financial Protection Bureau",
+    "optionB": "Federal Housing Administration",
+    "optionC": "Federal Housing Finance Agency",
+    "optionD": "Appraisal Subcommittee"
+  },
+  {
+    "reviewId": "R045",
+    "category": "rebTitle",
+    "optionA": "Reconveyance deed",
+    "optionB": "Deed-of-trust modification",
+    "optionC": "Assignment of deed-of-trust rights",
+    "optionD": "Deed-of-trust subordination"
+  },
+  {
+    "reviewId": "R046",
+    "category": "rebValue",
+    "optionA": "More weight to the cost indication",
+    "optionB": "More weight to the sales indication",
+    "optionC": "Equal weight to both indications",
+    "optionD": "Weight proportional to each indicated dollar value"
+  }
+]

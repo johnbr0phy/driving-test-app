@@ -1,0 +1,232 @@
+[
+  {
+    "reviewId": "R001",
+    "correctAnswer": "A",
+    "explanation": "The express right of reentry makes the granted estate defeasible: a breach can expose ownership to forfeiture. A use covenant alone need not have that effect, and a right of reentry does not mean every breach automatically transfers title."
+  },
+  {
+    "reviewId": "R002",
+    "correctAnswer": "A",
+    "explanation": "EPA defines an underground storage tank system using at least ten percent of its combined tank-and-connected-piping volume underground. This is a capacity-based definition, not a test of current fill or daily throughput; separate exclusions and state rules can still matter."
+  },
+  {
+    "reviewId": "R003",
+    "correctAnswer": "C",
+    "explanation": "SBA distinguishes professional liability for errors or negligence in services from property and other business coverage. Actual protection depends on policy terms."
+  },
+  {
+    "reviewId": "R004",
+    "correctAnswer": "C",
+    "explanation": "Defining the appraisal problem includes identifying intended use. Choosing an approach, scheduling work and selecting a report format are separate decisions informed by that problem."
+  },
+  {
+    "reviewId": "R005",
+    "correctAnswer": "C",
+    "explanation": "The effective date identifies when the value opinion applies. Inspection and reporting may occur later; their dates do not replace the specified valuation date."
+  },
+  {
+    "reviewId": "R006",
+    "correctAnswer": "C",
+    "explanation": "A limitation defense concerns enforcement of a claim. It does not establish that the original agreement lacked validity, resulted from fraud, or has been performed. No universal state limitation period is asserted."
+  },
+  {
+    "reviewId": "R007",
+    "correctAnswer": "B",
+    "explanation": "Actual work does not shelter compensation for referrals. CFPB says service payments must reasonably relate to the value of the services; referral value is excluded. The stipulated excess rewards referrals even though some work occurred."
+  },
+  {
+    "reviewId": "R008",
+    "correctAnswer": "C",
+    "explanation": "The joint amendment changes the affected principals\u2019 instructions to $3,000. The seller\u2019s later unilateral demand does not supply the buyer\u2019s authority to reduce that credit again. The holder cannot invent a compromise."
+  },
+  {
+    "reviewId": "R009",
+    "correctAnswer": "B",
+    "explanation": "EPA requires sellers and lessors to retain signed disclosure documentation for three years after the sale is completed or the leasing period begins."
+  },
+  {
+    "reviewId": "R010",
+    "correctAnswer": "A",
+    "explanation": "A condition precedent must occur before the specified duty arises. It is distinct from a title promise, a predetermined breach remedy, or a transfer of contractual rights. The agreement expressly makes purchase duties conditional here."
+  },
+  {
+    "reviewId": "R011",
+    "correctAnswer": "A",
+    "explanation": "The borrower must receive the initial Closing Disclosure at least three business days before consummation, when the borrower becomes contractually obligated on the credit transaction. Consummation is not necessarily the same event as funding or property transfer."
+  },
+  {
+    "reviewId": "R012",
+    "correctAnswer": "C",
+    "explanation": "Freddie Mac purchases qualifying loans from financial institutions in the secondary market. Sale proceeds let lenders make additional loans. Origination is the primary-market transaction with a borrower; a loan sale is not itself borrower refinancing."
+  },
+  {
+    "reviewId": "R013",
+    "correctAnswer": "D",
+    "explanation": "Delegating preparation does not remove responsibility for overseeing that work. The repeated unreviewed errors concern supervision; the other choices describe different duties without supporting facts here."
+  },
+  {
+    "reviewId": "R014",
+    "correctAnswer": "D",
+    "explanation": "DRE Taxation explains benefit assessments as charges based on benefits received from an improvement. That allocation basis differs from an ordinary ad valorem charge based on assessed value; state procedures are not tested."
+  },
+  {
+    "reviewId": "R015",
+    "correctAnswer": "C",
+    "explanation": "DRE Transfer recognizes discharge according to the parties' agreement. Exercising the stated cancellation right is different from failing to perform an unconditional obligation."
+  },
+  {
+    "reviewId": "R016",
+    "correctAnswer": "B",
+    "explanation": "DRE Property's lot-and-block method includes the referenced recorded map. Matching lot and block numbers in different plats do not identify one parcel."
+  },
+  {
+    "reviewId": "R017",
+    "correctAnswer": "D",
+    "explanation": "The auditor needs to read the relevant accounting records, not post transactions or access all client files. Read-only access can still be too broad; temporary access can still grant unnecessary powers."
+  },
+  {
+    "reviewId": "R018",
+    "correctAnswer": "C",
+    "explanation": "The overall rectangle is 60 \u00d7 100 = 6,000 square feet. The courtyard is 20 \u00d7 30 = 600 square feet. Subtracting the courtyard leaves 5,400 square feet enclosed."
+  },
+  {
+    "reviewId": "R019",
+    "correctAnswer": "B",
+    "explanation": "CFPB distinguishes a BPO prepared by a real estate sales professional from a computer-generated AVM and an appraisal by a licensed appraiser. A BPO commonly supports a listing price; it is not automatically interchangeable with a required appraisal."
+  },
+  {
+    "reviewId": "R020",
+    "correctAnswer": "D",
+    "explanation": "The Fair Housing Act prohibits falsely denying that housing is available because of race. This conduct does not require unequal published rents; the facts concern availability statements, not financing or advertising."
+  },
+  {
+    "reviewId": "R021",
+    "correctAnswer": "D",
+    "explanation": "Comparing actual calls with the dates opt-outs became effective tests whether suppression reached operations. Volume, timing windows and billing comparisons examine other operational controls, not whether these consumers were suppressed."
+  },
+  {
+    "reviewId": "R022",
+    "correctAnswer": "A",
+    "explanation": "EPA identifies seepage through soil into groundwater as a major UST release hazard. Removing the tank stops neither existing subsurface contamination nor its potential migration toward groundwater supplies."
+  },
+  {
+    "reviewId": "R023",
+    "correctAnswer": "A",
+    "explanation": "DRE Property Management identifies fees, responsibilities and granted powers as management-contract terms. Additional services should be evaluated against that agreement."
+  },
+  {
+    "reviewId": "R024",
+    "correctAnswer": "A",
+    "explanation": "False earnings records misstate income used in underwriting. OCC identifies deceit and incorrect application information as mortgage-fraud concerns. Occupancy, property condition and asset sourcing are different underwriting facts."
+  },
+  {
+    "reviewId": "R025",
+    "correctAnswer": "A",
+    "explanation": "EPA recommends drying water-damaged areas and items within 24\u201348 hours to prevent mold growth. The water source must also be corrected; the drying interval is prevention guidance, not a federal clearance standard."
+  },
+  {
+    "reviewId": "R026",
+    "correctAnswer": "B",
+    "explanation": "Missing historical information can limit the professional\u2019s ability to assess releases. The report must identify significant gaps and their effects; absence of records alone does not establish a confirmed release, a recorded restriction, or completed cleanup."
+  },
+  {
+    "reviewId": "R027",
+    "correctAnswer": "B",
+    "explanation": "DOJ distinguishes strictly residential areas from places serving the public within residential facilities. A public rental office is covered by Title III; private residential areas can be subject to other accessibility laws."
+  },
+  {
+    "reviewId": "R028",
+    "correctAnswer": "A",
+    "explanation": "Dual agency creates duties to opposing principals, so informed consent concerns both represented parties. Payment and appointment order do not resolve that conflict. States differ on whether and how dual agency is permitted."
+  },
+  {
+    "reviewId": "R029",
+    "correctAnswer": "C",
+    "explanation": "NFIP guidance requires flood coverage for this hazard-area and financing combination. Homeowners insurance, mortgage default insurance and a home warranty cover different risks and do not satisfy the flood requirement."
+  },
+  {
+    "reviewId": "R030",
+    "correctAnswer": "B",
+    "explanation": "A commitment that leaves its maker free to withdraw at pleasure without obligation may be illusory. This differs from a genuine conditional promise or a small but real bargained-for exchange."
+  },
+  {
+    "reviewId": "R031",
+    "correctAnswer": "B",
+    "explanation": "CFPB explains that Section 8 prohibits things of value for settlement referrals involving federally related mortgage loans, while identifying specified exceptions."
+  },
+  {
+    "reviewId": "R032",
+    "correctAnswer": "C",
+    "explanation": "After defining the problem, the appraiser determines the work needed to solve it. Data collection and analysis follow that decision; reconciliation follows the development of value indications."
+  },
+  {
+    "reviewId": "R033",
+    "correctAnswer": "B",
+    "explanation": "EPA states that available common-area information is included in applicable multiunit lead disclosures."
+  },
+  {
+    "reviewId": "R034",
+    "correctAnswer": "D",
+    "explanation": "A quitclaim transfers whatever interest the grantor has without guaranteeing ownership. Here the grantor has none, so no present estate passes. Any effect on later-acquired title depends on the instrument and governing law; it is not categorically excluded nationally."
+  },
+  {
+    "reviewId": "R035",
+    "correctAnswer": "C",
+    "explanation": "The negative B balance indicates $300 more was disbursed for B than B had available. A matching $7,700 total does not provide each beneficiary\u2019s required funds. Reconciliation does not erase the separate deficit."
+  },
+  {
+    "reviewId": "R036",
+    "correctAnswer": "C",
+    "explanation": "EPA distinguishes investigation before acquisition from continuing obligations afterward. Complying with land-use restrictions and preserving institutional controls are continuing duties; the other choices are components of investigating the site before acquisition."
+  },
+  {
+    "reviewId": "R037",
+    "correctAnswer": "D",
+    "explanation": "DRE Transfer describes eminent domain as governmental acquisition for public use with compensation. It differs from the owner's voluntary dedication."
+  },
+  {
+    "reviewId": "R038",
+    "correctAnswer": "C",
+    "explanation": "The comparison must reflect the property that actually sold. Using subsequent improvements would attribute features to a transaction that did not include them. Verify the condition at the sale date."
+  },
+  {
+    "reviewId": "R039",
+    "correctAnswer": "A",
+    "explanation": "Lien theory treats the mortgage as an encumbrance while ownership remains with the borrower. Title theory instead treats legal title as security. State law controls which theory and foreclosure rules apply."
+  },
+  {
+    "reviewId": "R040",
+    "correctAnswer": "B",
+    "explanation": "The appraisal client is the party engaging the appraiser for the assignment. Paying the fee or arranging access does not, by itself, establish the appraiser-client relationship."
+  },
+  {
+    "reviewId": "R041",
+    "correctAnswer": "D",
+    "explanation": "CFPB permits considering income amount and likely continuation. These pensions have equal current payments and the same source category, but their documented duration differs; no difference in existing debts is given."
+  },
+  {
+    "reviewId": "R042",
+    "correctAnswer": "A",
+    "explanation": "Each firm receives half of $24,000, or $12,000. The agent receives 65% of that share: $12,000 \u00d7 0.65 = $7,800."
+  },
+  {
+    "reviewId": "R043",
+    "correctAnswer": "A",
+    "explanation": "Emergency authority supports work necessary to address the immediate problem. It does not itself authorize an expanded renovation merely because the same contractor could perform it."
+  },
+  {
+    "reviewId": "R044",
+    "correctAnswer": "D",
+    "explanation": "The Appraisal Subcommittee oversees the regulatory framework for federally related transactions. It monitors state regulatory programs and the Appraisal Foundation; this is distinct from performing an individual property appraisal."
+  },
+  {
+    "reviewId": "R045",
+    "correctAnswer": "A",
+    "explanation": "Reconveyance returns the trustee\u2019s interest following satisfaction of the secured obligation. Assignment changes the beneficiary, subordination changes priority, and modification changes existing loan terms rather than releasing the trustee\u2019s interest."
+  },
+  {
+    "reviewId": "R046",
+    "correctAnswer": "B",
+    "explanation": "Reconciliation considers the quality and reliability of the evidence supporting each approach. Strong comparable sales and uncertain depreciation support greater reliance on sales here, not equal or dollar-proportional weighting."
+  }
+]

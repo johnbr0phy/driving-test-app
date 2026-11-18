@@ -1,0 +1,51 @@
+{
+  "itemsReviewed": 200,
+  "explanationsReviewed": 200,
+  "blindKeyMatches": 200,
+  "wrongKeys": 0,
+  "keyIndexMismatches": 0,
+  "positionalExplanationReferences": 0,
+  "clinicalOverreachFound": false,
+  "landingChecks": [
+    {
+      "claim": "160 questions; 140 scored, 20 pretest; 180 minutes; computer-based PSI delivery",
+      "status": "supported",
+      "source": "https://www.cbdmonline.org/exam-prep/credentialing-exam-faq"
+    },
+    {
+      "claim": "Modified Angoff; historical approximately 70%; exact required count on score report",
+      "status": "supported",
+      "source": "https://www.cbdmonline.org/exam-prep/credentialing-exam-faq"
+    },
+    {
+      "claim": "March 1, 2025 outline, weights 20/22/20/24/14 percent",
+      "status": "supported",
+      "source": "https://www.cbdmonline.org/exam-prep/exam-content-outline"
+    },
+    {
+      "claim": "Four 50-question tests reproduce weights",
+      "status": "arithmetically possible (10/11/10/12/7); actual test generation not inspected in this editorial review"
+    },
+    {
+      "claim": "200 questions across five domains",
+      "status": "verified in bank (40/44/40/48/28)"
+    },
+    {
+      "claim": "Free-to-start/Premium boundaries, account behavior and saved progress",
+      "status": "not externally verifiable; runtime/product implementation outside this review"
+    },
+    {
+      "claim": "Originality/no official exam reproduction",
+      "status": "not independently provable from supplied bank; no obvious evidence of copying found, no claim of provenance certification"
+    }
+  ],
+  "primarySources": [
+    "https://www.cbdmonline.org/exam-prep/exam-content-outline",
+    "https://www.cbdmonline.org/exam-prep/credentialing-exam-faq",
+    "https://www.cbdmonline.org/get-certified/exam-scoring-results",
+    "https://www.cbdmonline.org/cdm-resources/practice-standards",
+    "https://www.fda.gov/media/164194/download"
+  ],
+  "preservedPedagogyReport": "/Users/johnbrophy/tigertest-next20-progress/cdm-review/stage2-pedagogy.md",
+  "conclusion": "Factual answers and calculations pass this review; substantial pedagogical revision remains required. Fresh independent reviewer should assess rewritten options and lock answers before key access."
+}

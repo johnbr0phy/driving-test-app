@@ -1,0 +1,602 @@
+[
+  {
+    "id": "R001",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Refrigeration lubricants can absorb atmospheric moisture; likely question about exposed oil."
+  },
+  {
+    "id": "R002",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely replacing 18 mL separated oil; use equal quantity of fresh specified lubricant."
+  },
+  {
+    "id": "R003",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Specified-interval oil changes are the only normal maintenance action among harmful/extreme alternatives."
+  },
+  {
+    "id": "R004",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks timing for service disconnect or shutdown action; reduced high-side pressure is plausible."
+  },
+  {
+    "id": "R005",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Section 609 is the certification associated with motor vehicle air conditioning service."
+  },
+  {
+    "id": "R006",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely low refrigerant diagnosis; investigate where charge escaped."
+  },
+  {
+    "id": "R007",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asks scale resolution, distinguished from accuracy and calibration interval."
+  },
+  {
+    "id": "R008",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks whether another machine purchase requires another equipment certification filing."
+  },
+  {
+    "id": "R009",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks elevation effect on gauge vacuum; local atmospheric pressure decreases with elevation."
+  },
+  {
+    "id": "R010",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Leak dye needs circulation before inspection; immediately adding more is not justified."
+  },
+  {
+    "id": "R011",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks records of technician qualification; proof of certification fits the category."
+  },
+  {
+    "id": "R012",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Tested compatibility is a limited credible claim; alternatives promise universal or guaranteed performance."
+  },
+  {
+    "id": "R013",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Inspection holes show full hose insertion in crimp fittings."
+  },
+  {
+    "id": "R014",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely ozone-layer protection question; ozone shields UVB."
+  },
+  {
+    "id": "R015",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "Unplugging is the only clearly safe electrical service action among the options."
+  },
+  {
+    "id": "R016",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Service for consideration is the relevant paid-service regulatory trigger."
+  },
+  {
+    "id": "R017",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Ordinary refrigerant recycling cannot separate a mixture into its pure constituent refrigerants."
+  },
+  {
+    "id": "R018",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "D is the only conservative recovery/vacuum action; alternatives offer bypass or full charge."
+  },
+  {
+    "id": "R019",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Only D supplies actual eye protection; the other choices explicitly omit it."
+  },
+  {
+    "id": "R020",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "No 609 option; likely asks a small-appliance certification scenario, which is Type I."
+  },
+  {
+    "id": "R021",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely identifier-standard question; I recognize J2912 as refrigerant identification."
+  },
+  {
+    "id": "R022",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Ground-level ozone contributes to harmful smog; other options describe stratospheric protection."
+  },
+  {
+    "id": "R023",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Reclamation establishes purity for recovered refrigerant where recycling alone is inadequate."
+  },
+  {
+    "id": "R024",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely returning system to operation after leak detection; restore specified charge."
+  },
+  {
+    "id": "R025",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "609 certification is the normal relevant qualification for MVAC service."
+  },
+  {
+    "id": "R026",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Refrigerant dissolved in oil can release more slowly as recovery chills the oil."
+  },
+  {
+    "id": "R027",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Refrigerants can decompose into hazardous compounds when exposed to heat or flame."
+  },
+  {
+    "id": "R028",
+    "answer": "C",
+    "cueType": "surface",
+    "cue": "C is the only unqualified inspection access option; others impose implausible consent/delay conditions."
+  },
+  {
+    "id": "R029",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Recovery cylinders commonly use an 80 percent liquid-volume filling limit."
+  },
+  {
+    "id": "R030",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Small electronic refrigerant leak thresholds are commonly around 4 grams/year, near 0.15 ounce/year."
+  },
+  {
+    "id": "R031",
+    "answer": "C",
+    "cueType": "none",
+    "cue": "No quantities or relationships are given; 590 grams is an unsupported selection."
+  },
+  {
+    "id": "R032",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Charging by refrigerant mass is the appropriate quantity control, unlike pressure or air temperature alone."
+  },
+  {
+    "id": "R033",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asks definition of recovery, which removes refrigerant without necessarily cleaning it."
+  },
+  {
+    "id": "R034",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Only D maintains ordinary requirements; alternatives assert implausible mobile-service exemptions."
+  },
+  {
+    "id": "R035",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely evaporator leak check via cabin outlet; floor duct distinguishes it from underhood sites."
+  },
+  {
+    "id": "R036",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asks refrigerant container sales restriction notice."
+  },
+  {
+    "id": "R037",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks moisture storage/removal failure; saturated desiccant is a plausible cause."
+  },
+  {
+    "id": "R038",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks why vacuum differs across hose/gauge locations; service valve core restrictions create pressure differences."
+  },
+  {
+    "id": "R039",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Refrigerant identity should come from a compliant identifier, not vehicle year or label alone."
+  },
+  {
+    "id": "R040",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks what stops compressor after loss of charge; low-pressure cutoff fits."
+  },
+  {
+    "id": "R041",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks handling an obsolete refrigerant label after retrofit; remove conflicting information."
+  },
+  {
+    "id": "R042",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks when to recover refrigerant; do so before opening a connection."
+  },
+  {
+    "id": "R043",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Equipment approval relies on certification by an approved testing organization."
+  },
+  {
+    "id": "R044",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asks unacceptable MVAC substitute; propane-based refrigerant is conspicuous."
+  },
+  {
+    "id": "R045",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks minimum equipment where recycling is outsourced; recovery remains necessary."
+  },
+  {
+    "id": "R046",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asks whether a cylinder may be reused; refilling approval matters."
+  },
+  {
+    "id": "R047",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Liquid-resistant gloves help protect against cold liquid refrigerant exposure."
+  },
+  {
+    "id": "R048",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Dye standard compliance concerns material/lubricant compatibility rather than guaranteed leak time."
+  },
+  {
+    "id": "R049",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Proper recycling requires processing in an approved recycler, not merely identifying or transferring fluid."
+  },
+  {
+    "id": "R050",
+    "answer": "A",
+    "cueType": "surface",
+    "cue": "Only A supplies required recovery capability before work; other choices omit or delay it."
+  },
+  {
+    "id": "R051",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "609 certification is the relevant refrigerant-purchase qualification for MVAC technicians."
+  },
+  {
+    "id": "R052",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Short grounded cord with heavier wire is the electrically safer choice."
+  },
+  {
+    "id": "R053",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely rebound pressure after recovery; continue recovering remaining refrigerant."
+  },
+  {
+    "id": "R054",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks charging-machine compensation setting after hose changes; programmed hose length fits."
+  },
+  {
+    "id": "R055",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "ASME tank uniquely differs from three DOT cylinders; suspect a tank inspection or transport distinction."
+  },
+  {
+    "id": "R056",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely a high-pressure non-MVAC appliance scenario requiring Type II; no stem evidence to distinguish Type I."
+  },
+  {
+    "id": "R057",
+    "answer": "B",
+    "cueType": "surface",
+    "cue": "Only B gives a genuine high-voltage safety procedure; other choices do not isolate high voltage."
+  },
+  {
+    "id": "R058",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Fuel injection ports can resemble refrigerant service ports, a likely misconnection question."
+  },
+  {
+    "id": "R059",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely defines global warming potential as climate effect relative to carbon dioxide."
+  },
+  {
+    "id": "R060",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asks which unit is outside passenger/cab MVAC scope; cargo refrigeration stands apart."
+  },
+  {
+    "id": "R061",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Correctly sealed service cap provides a refrigerant seal, unlike exposed threads or an unsealed plug."
+  },
+  {
+    "id": "R062",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Refrigerant mixed with pressurized air can form a hazardous mixture."
+  },
+  {
+    "id": "R063",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely describes a leaking hose under vacuum, which draws surrounding air inward."
+  },
+  {
+    "id": "R064",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Air movement disperses refrigerant and makes electronic leak detection harder."
+  },
+  {
+    "id": "R065",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks required information for refrigerant sent to another facility; name/address identifies recipient."
+  },
+  {
+    "id": "R066",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "A business purchasing restricted refrigerant can demonstrate that it employs a certified technician."
+  },
+  {
+    "id": "R067",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Some cleaning vapors interfere with electronic refrigerant detectors."
+  },
+  {
+    "id": "R068",
+    "answer": "A",
+    "cueType": "surface",
+    "cue": "Likely failed leak check; blocking until corrected is the only safe credible action among charge/bypass choices."
+  },
+  {
+    "id": "R069",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asks why an oil collection vessel is emptied before a job: measure that job separately."
+  },
+  {
+    "id": "R070",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Suitable inspection glasses protect eyes and improve fluorescent dye contrast."
+  },
+  {
+    "id": "R071",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Residual flushing solvent or excess additive can dilute compressor lubricant."
+  },
+  {
+    "id": "R072",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Small-can exemption commonly involves two pounds or less and a self-sealing valve."
+  },
+  {
+    "id": "R073",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Suitable identifier directly tests refrigerant identity; labels or pressure alone cannot ensure purity."
+  },
+  {
+    "id": "R074",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks an undercharge consequence; lower refrigerant flow can reduce oil circulation."
+  },
+  {
+    "id": "R075",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "New-vehicle refrigerant restrictions do not automatically force existing HFC-134a vehicles to retrofit."
+  },
+  {
+    "id": "R076",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Substitute acceptance is end-use-specific and conditioned on listed use requirements."
+  },
+  {
+    "id": "R077",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Excess oil on heat exchanger surfaces impairs heat transfer."
+  },
+  {
+    "id": "R078",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely retrofit safety question about preventing excessive high-side pressure."
+  },
+  {
+    "id": "R079",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Replacement R-1234yf evaporator should meet its applicable safety standard, not be repaired or repurposed."
+  },
+  {
+    "id": "R080",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely purpose of a partial test charge: pressurized leak detection."
+  },
+  {
+    "id": "R081",
+    "answer": "B",
+    "cueType": "none",
+    "cue": "Without conversion inputs none is established; choosing 17.5 ounces without support."
+  },
+  {
+    "id": "R082",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks phase for efficient transfer or recovery; liquid is my assumed context, not established by options."
+  },
+  {
+    "id": "R083",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely contaminated refrigerant recovery standard; I tentatively associate J2851 with that equipment."
+  },
+  {
+    "id": "R084",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asks response to a filter capacity/service warning; replacing the cartridge is plausible."
+  },
+  {
+    "id": "R085",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "R-1234yf is mildly flammable."
+  },
+  {
+    "id": "R086",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks environmental concern for HFC-134a, a greenhouse gas rather than ozone depleter."
+  },
+  {
+    "id": "R087",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks instrument for a mandated leak check; electronic detector is a direct leak-finding tool."
+  },
+  {
+    "id": "R088",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Correct compressor lubricant is determined by vehicle-specific specification."
+  },
+  {
+    "id": "R089",
+    "answer": "D",
+    "cueType": "knowledge",
+    "cue": "Final disposer has refrigerant recovery verification responsibility in disposal chain."
+  },
+  {
+    "id": "R090",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Warming expands liquid and consumes available cylinder vapor space."
+  },
+  {
+    "id": "R091",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Replacement is the only credible response to a damaged seal implied by dimensions and tightening distractors."
+  },
+  {
+    "id": "R092",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Shutoff near the vehicle end minimizes refrigerant released from hoses."
+  },
+  {
+    "id": "R093",
+    "answer": "B",
+    "cueType": "prior",
+    "cue": "Likely asks cause of an uneven or defective crimp; worn carriers or mismatched dies fit."
+  },
+  {
+    "id": "R094",
+    "answer": "A",
+    "cueType": "knowledge",
+    "cue": "Refrigerant vapor can accumulate in low areas because it is denser than air."
+  },
+  {
+    "id": "R095",
+    "answer": "D",
+    "cueType": "prior",
+    "cue": "Likely asks why cover or enclose a suspected leak; trapping vapor aids detection."
+  },
+  {
+    "id": "R096",
+    "answer": "B",
+    "cueType": "knowledge",
+    "cue": "Very fine multi-flow passages make debris removal and flushing difficult."
+  },
+  {
+    "id": "R097",
+    "answer": "A",
+    "cueType": "prior",
+    "cue": "Likely asks reason for barrier hose material; reduced refrigerant permeation fits."
+  },
+  {
+    "id": "R098",
+    "answer": "C",
+    "cueType": "knowledge",
+    "cue": "Similar pressures do not establish identical refrigerants; R-134a and yf pressures can be similar."
+  },
+  {
+    "id": "R099",
+    "answer": "C",
+    "cueType": "prior",
+    "cue": "Likely asks refrigerant-specific hose fitting placement to prevent cross-contamination at vehicle."
+  },
+  {
+    "id": "R100",
+    "answer": "D",
+    "cueType": "surface",
+    "cue": "Vehicle-applicable revised quantity is more defensible than explicitly obsolete, pre-change, or largest quantities."
+  }
+]

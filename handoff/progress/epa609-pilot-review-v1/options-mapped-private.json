@@ -1,0 +1,114 @@
+[
+  {
+    "id": "R001",
+    "qid": "EPA609-SRV-031",
+    "correct": false,
+    "guess": "B",
+    "cue": "Recovery filters commonly have a refrigerant-throughput capacity; mass processed is a recognizable replacement criterion.",
+    "cueType": "knowledge"
+  },
+  {
+    "id": "R002",
+    "qid": "EPA609-SRV-029",
+    "correct": false,
+    "guess": "D",
+    "cue": "Anticipating a question about the vehicle refrigerant charge specification, for which the factory underhood label is a familiar reference. Other maintenance questions could favor the manual or component instructions.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R003",
+    "qid": "EPA609-REG-026",
+    "correct": false,
+    "guess": "B",
+    "cue": "The training-program subject review is the only option directly about training rather than a service operation, machine, or refrigerant batch, making it stand out in a certification rules category.",
+    "cueType": "surface"
+  },
+  {
+    "id": "R004",
+    "qid": "EPA609-EQP-024",
+    "correct": false,
+    "guess": "D",
+    "cue": "No stem or numerical relationship is available to distinguish these volumes. I choose 20 mL without a substantive basis.",
+    "cueType": "none"
+  },
+  {
+    "id": "R005",
+    "qid": "EPA609-SRV-022",
+    "correct": true,
+    "guess": "B",
+    "cue": "Anticipating a question about an approved solvent or refrigerant property: compatibility with system materials seems the broadest relevant criterion. The omitted stem is needed to distinguish the procedures.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R006",
+    "qid": "EPA609-REG-004",
+    "correct": false,
+    "guess": "A",
+    "cue": "Passenger-car repair that opens a system is the canonical Section 609 service scenario, so I anticipate a question about that coverage; top-offs and off-road distinctions could change the answer.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R007",
+    "qid": "EPA609-SRV-026",
+    "correct": true,
+    "guess": "B",
+    "cue": "Saturated desiccant generally requires replacement rather than a longer evacuation, a recognizable moisture-service principle that could explain this option set.",
+    "cueType": "knowledge"
+  },
+  {
+    "id": "R008",
+    "qid": "EPA609-REG-028",
+    "correct": true,
+    "guess": "D",
+    "cue": "I associate responsibility for ensuring used MVAC refrigerant is suitable for reuse with the facility charging the receiving vehicle; the exact transfer or recycling rule would depend on the stem.",
+    "cueType": "knowledge"
+  },
+  {
+    "id": "R009",
+    "qid": "EPA609-YF-014",
+    "correct": false,
+    "guess": "A",
+    "cue": "The explicit initial 15 percent charge option suggests the standard partial-charge leak-check sequence; I anticipate the question asks what follows a successful check.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R010",
+    "qid": "EPA609-EQP-013",
+    "correct": true,
+    "guess": "C",
+    "cue": "Three choices describe electrical or motor hazards and one describes retained pressure. I anticipate a question about a hazard remaining after unplugging equipment.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R011",
+    "qid": "EPA609-REG-015",
+    "correct": true,
+    "guess": "C",
+    "cue": "The resale-only intent record is unusually specific to the refrigerant purchase exception, which I anticipate is the rule being tested. The alternatives would be relevant to other recordkeeping prompts.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R012",
+    "qid": "EPA609-EQP-022",
+    "correct": true,
+    "guess": "C",
+    "cue": "Recovered refrigerant commonly requires recycling or reclamation before reuse; that is a recognizable treatment requirement among handling and inspection actions.",
+    "cueType": "knowledge"
+  },
+  {
+    "id": "R013",
+    "qid": "EPA609-EQP-011",
+    "correct": true,
+    "guess": "D",
+    "cue": "Anticipating a skin-contact or frostbite question, for which rapid evaporation causes cooling. The other choices fit different exposure or ignition questions.",
+    "cueType": "prior"
+  },
+  {
+    "id": "R014",
+    "qid": "EPA609-YF-006",
+    "correct": true,
+    "guess": "A",
+    "cue": "Anticipating a low-level accumulation or ventilation question about R-1234yf vapor, for which greater density than air explains the behavior. The other listed physical properties could also answer suitable stems.",
+    "cueType": "prior"
+  }
+]

@@ -1,0 +1,319 @@
+7 Principal Instruments Of Transfer 
+ 
+A Backward Look 
+Under the early English common law, ownership of r eal property was transferred by a technique called 
+“feoffment.” This involved delivery of possession, which was termed “livery of seizin.” No writing or deed was 
+involved. The transfer was actually effected by a delivery of the land itself or something symbolical of the land, 
+such as a twig, a stone, or a handful of dirt. 
+Another early method of transfer was by a statement usually made before witnesses in view of the land to the 
+effect that possession was transferred, followed by entry of the new owner. Again, no written instrument was at 
+first required. An interest in land which was not capable of actual possession (termed an incorporeal right), 
+such as an easement, was transferred by a deed called a “deed of grant.” 
+A “conveyance by a  release” was a deed given to transfer an estate or interest in land, but no “livery of seizin” 
+could be given until the new owner took possession, which involved a multiplicity of formalities. A release was 
+also used for the purpose of extinguishing a right in the land and corresponds to its modern descendant, the 
+quitclaim deed. 
+A recording system was unknown to the early common law. Ownership was a matter of common knowledge 
+and transfer was not often made except by descent from father to son on the father’s death. 
+The method of making land transfers in California under Spanish and Mexican rule was somewhat similar to 
+that of the common law. It was early held by the Supreme Court of California that land could not be conveyed 
+under Spanish and Mexican laws without  an instrument in writing, unless conveyance of the land was made by 
+an executed contract in which actual possession was delivered at the time of sale by entry upon the premises 
+and the doing of certain ceremonial acts (which in a se nse were like “livery of se izin” at common law). The 
+ancient “livery of seizin” is symbolized today by the delivery of the deed, not the property, by the grantor to the 
+grantee. The deed is the now the symbol of title. 
+The Pattern Today 
+Today, Californians most often transfer title to real property by a simple written instrument, the grant deed. The 
+word “grant” is expressly designated by statute as a word of conveyance. (Civil Code Section 1092) A second 
+form of deed is the quitclaim deed. It resembles the common law “conveyance by a release.”  Other types of 
+deeds are the warranty deed, the trust deed, the reconveyance deed, the sheriff’s deed, and the gift deed. 
+DEEDS IN GENERAL 
+When properly executed, delivered a nd accepted, a deed transf ers title to real property from one person (the 
+grantor) to another person (the grantee). Transfer may be voluntary, or involuntary by act of law, such as a 
+foreclosure sale. 
+There are several different essentials to a valid deed: 
+1. It must be in writing; 
+2. The parties must be properly described; 
+3. The parties must be competent to convey and capable of receiving the grant of the property; 
+4. The property conveyed must be described so as to  distinguish it from other parcels of real property.; 
+5. There must be a granting clause, operative words of conveyance (e.g., “I hereby grant”); 
+6. The deed must be signed by the party or parties making the conveyance or grant; and 
+7. It must be delivered and accepted. 
+Contrary to the law and established custom in other st ates, the expression “to have and to hold” (called the 
+“habendum clause” of a deed) is not necessary, nor are w itnesses or seal required. The deed should be dated, 
+but this too is not necessary to its validity. 
+Any form of written instrument containing the essentials  above set out will convey title to land. A typical grant 
+CHAPTER SEVEN 
+ 
+112 
+deed may be in the form as follows: 
+“I, John A. Doe, a single man, grant to Emma B. Roe, a widow, all that real property situated in Sacramento 
+County, State of California, described as follows: Lot 21, Tract 62, recorded at Page 91 of Book 7 of Maps of 
+Sacramento County, filed January 21, 1965. Witness my hand this tenth day of October, 1983. 
+ (Signed) John A. Doe” 
+Usually, a deed is executed for consideration, but this is not essential for a valid transfer. Moreover, even when 
+consideration is given for the property, this point need  not be mentioned in the deed. However, it should be 
+noted that lack of consideration may a ffect the rights of the grantee as agai nst the rights of certain third parties 
+because the recording statutes are intended to protect bona fide purchasers. 
+For example, a transfer made without consideration by a grantor who is or will thereby be rendered insolvent, is 
+fraudulent as to grantor’s creditors and those creditors may have the deed set aside in a court action. 
+A deed need not be acknowledged, nor need it be recorded. However, both acknowledgment and recordation 
+are part of the standard operating procedure in real estate transfers for very good reasons. 
+Acknowledgment 
+An acknowledgment is a formal declaration before a duly authorized officer, such as a notary public, by a 
+person who has executed an instrument that such execution is his or her act and deed. The piece of paper (or 
+form) executed by the officer before whom the formal declaration was made (for example, the grantor in a grant 
+deed) is a Certificate of Acknowledgment. This certificate is either printed right on the grant deed itself or is a 
+separate piece of paper which is stapled to the gr ant deed. The acknowledgment of a writing is a way of 
+proving that the writing was in fact signed (or executed) by the person who purported to sign (or execute) the 
+writing. Moreover, an acknowledgment is a safeguard  against forgery and false impersonation. Duly 
+acknowledged writings are entitled to be  introduced into evid ence in litigation without further proof of 
+execution. 
+Many instruments are not entitled to be recorded unless acknowledged. Unless by statute an acknowledgment is 
+made essential to the validity of an instrument, the instrument itself is valid between the parties and persons 
+having actual notice of it, though not acknowledged. The time of acknowledgment is almost invariably 
+immaterial if the rights of innocent third parties do not intervene. 
+Where acknowledgments may be taken and by whom. Anywhere within the state, proof or acknowledgment 
+of an instrument may be made before a justice, retired justice or clerk of the Supreme Court, or District Court 
+of Appeal, or the judge or retired judge of a superior court, or, after September 17, 1959, a notary public. 
+(Before that date a notary could not act outside the notary’s own county.) 
+In this state and within the city, county, city and county, or di strict for which the o fficer was selected, or 
+appointed, acknowledgment of an instrument may be made before either: a clerk of a municipal or justice court; 
+a county clerk; a court commissioner; a judge or retired judge of a superior, municipal or justice court or certain 
+other local officials. (Civil Code Section 1181) 
+Acknowledgments may be made and taken by any deputy of the foregoing, duly authorized by law. Also, 
+certain military officers are authorized  to take acknowledgments of persons serving in the armed forces. (Civil 
+Code Section 1183.5) 
+The principal form of acknowledgement authorized by California law is provided for in Civil Code Section 
+1183.5. An acknowledgment taken outside this state, must be in accordan ce with the forms, provisions, and 
+laws of this state. If not, it should have attached thereto a certificate of a clerk of the court of record of the 
+county or district where the same was taken, or of a consul or consular agent of the U.S., or judge if in a foreign 
+country. The certificate of acknowledgment must state that it is in accordance with the laws of the state, the 
+United States or the foreign country in which it was taken and that the officer taking the same was authorized 
+by law to do so and that the signature is true and genuine. 
+A form of acknowledgment called an “Apostille” may be us ed in California to auth enticate a certificate of 
+acknowledgment drafted in a foreign country. 
+If the certificate of acknowledgment is su fficient in other respects, it will not be invalidated by a mistake in the 
+PRINCIPAL INSTRUMENTS OF TRANSFER 
+ 
+113
+date or even by the absence of a date . It is sufficient that such date appears by evidence with in the instrument 
+itself and, in the absence of proof to the contrary, it may be presumed that the acknowledgment was taken on 
+the date of the execution of the instrument or at least before the recordation thereof. 
+Where the date of the deed is subsequent to that of the acknowledgment, the later date may be taken as the true 
+date of the deed. The certificate must be authenticated by the signature of the officer followed by the name of 
+his or her office. An official seal must be affixed if the officer is by law required to have a seal. 
+In California, a notary public must provide and keep an official seal, which must clearly show, when embossed, 
+stamped, impressed or affixed to a document, the name of the notary, the State Seal, the words “Notary Public,” 
+the name of the county wherein the bond and oath of office are filed, and the date the notary public’s 
+commission expires. In addition the Notary Stamp contains the sequential identification number (commission 
+number) assigned to the notary public, as well as the identification number assigned to the seal manufacturer or 
+vendor. Because the legal requirement that the seal be  photographically reproducible, the rubber stamp seal is 
+almost universal; however, notaries public may use an embosser seal in addition to the rubber stamp. 
+A notary public is required to keep one active sequential journal at a time of all acts performed as a notary 
+public. The journal must be kept in a locked and secured area, under the direct and exclusive control of the 
+notary public. The journal must include the items shown below. (Government Code Section 8206 (a)) 
+ Date, time, and type of each official act (e.g. acknowledgment, jurat). 
+ Character of every instrument sworn to, affirmed, acknowledged or proved before the notary public (e.g. 
+deed of trust). 
+ The signature of each person whose signature is being notarized. 
+ A statement that the identity of a person making an acknowledgment or taking an oath or affirmation was 
+based on “satisfactory evidence” pursuant to Civil Code Section 1185. 
+ The fee charged for the notarial service. 
+ If the document to be notarized is a deed, quitclaim deed, or deed of trust affecting real property or a power 
+of attorney document, the notary public must require  the party signing the document to place his or her 
+right thumbprint in the journal. Government Code Sec tion 8206 specifies alternatives if right thumbprint is 
+not possible. 
+Acknowledgments taken by officers having an interest in the  transaction. In general, case law has 
+consistently provided that officers w ho take an acknowledgment of a writing should not have a direct financial 
+interest in the transaction. The purpose of the prohibition is to discourage fraud, and if an acknowledged 
+instrument discloses on its face that su ch conflict of interest exists, it has been held the reco rded instrument 
+does not impart constructive notice of its contents. 
+No reliance should be placed on inst ruments acknowledged before an offi cer who is known to have, or who 
+may reasonably be expected to have, a direct financial or beneficial interest in the tr ansaction. For example: an 
+officer acknowledging his own signing of a document or instrument; an officer acknowledging a mortgagor’s 
+execution of a mortgage naming the officer as mortgagee; and an officer acknowledging a deed in which he or 
+she is named as grantee. 
+An acknowledging officer who is one of several granto rs or mortgagors may properly acknowledge signing of 
+the instrument by the other grantors or mortgagors, but his or her own signing must be acknowledged by a 
+different officer. 
+Effective January 1, 1978 the following statutes became effective with respect to  the acknowledgments taken 
+by notaries public: 
+ Government Code Section 822. 
+A notary public who has a direct financial interest in a transaction can not perform any notarial act in 
+connection therewith. Transactions covered include the following: 
+1. Financial transactions in which the notary public is named, individually, as a principal. 
+2. Real property transactions in which the notary public is named, individually, as grantor, grantee, 
+CHAPTER SEVEN 
+ 
+114 
+mortgagor, mortgagee, trustor, trustee, beneficiary, vendor, vendee, lessor or lessee. 
+• Government Code  Section 8224.1 
+A notary public can not take the acknowledgment or proof of instruments in writing executed by him or by her. 
+Certain instruments must be acknowledged by affected party. California law protects property owners from 
+unwarranted or unauthorized encumbrance of their property on the official records. Most instruments affecting 
+real property must be executed and acknowledged or proved by the owner of the property before the instrument 
+is eligible for recordation. 
+Among such instruments, besides conveyances, mortgages and trust deeds, are agreements for sale, option 
+agreements, deposit receipts, commission receipts or any affidavit which quotes or refers to these instruments. 
+Any instrument transferring or encumbering community property must be executed by both the husband and the 
+wife. 
+Recordation 
+While recording a deed does not affect its validity, it is extremely important to record since recordation protects 
+the grantee. If a grantee fails to record, and another d eed or any other document encumbering or affecting the 
+title is recorded, the first grantee is in jeopardy. The recording system is established to show the sequence of 
+transfers or other actions affecting property, and it is foolish to fail to avail oneself of the privilege of recording. 
+Possession of property also gives notice of the rights of  persons in possession. A person buying real property 
+should not rely entirely on a title policy,  but should investigate to see if somebody is in possession and find out 
+what their rights are. The occupants might be in possessi on under a partly paid contract of purchase and sale, or 
+they could be in possession under a lease that gave them an option to buy. 
+Consistency of names in title instruments.  Complete record title to land cannot be established unless the 
+various instruments in a chain of title  in the recorder’s office show dir ect connection by name between the 
+different owners. Any substantial variation between the na me of the grantee in one instrument and the name of 
+the grantor in the next instrument executed by that grantee will, irrespective of the fact that identity may be 
+shown by “off record” evidence, render the title defective. Furthermore, the subsequent instrument executed by 
+the grantor of that grantee cannot impart constructive notice of its contents to a third person. 
+A legal name of an individual consists of one personal, or given, name and one surname/family name. The old 
+common law recognized but one given na me and frequently disregarded middl e names or initials. It has been 
+stated that the insertion or omission of, or mistake or variance in a middle name or initial is immaterial. 
+However, while the omission or addition of a middle name or initial in an instrument affecting real property is 
+generally considered immaterial, a variance
+ in middle names or initials may result in defective record of title. 
+Change of name. With limited exceptions, a person in whom title to real estate is vested who afterwards has a 
+name change must, in a conveyance of the real esta te, set forth the name in which he/she took title. For 
+example: If a single woman acquires title as “Mary Doe” and later marries a man whose last name is Smith, she 
+should convey the property as “Mary Doe Smith, formerly Mary Doe” (or “who acquired title as Mary Doe”). 
+Generally, any conveyance, though recorded as provided by law, which does not comply with the foregoing 
+provision does not impart constructive notice of the conten ts to subsequent purchasers and encumbrancers, but 
+the conveyance is valid as between the parties thereto and those who have actual notice. To correct a situation 
+in which an incorrect name has been used in a transfer  of title, it is advisable to clear title by filing a special 
+action and proceeding under Section 770.020 of the California Code of Civil Procedure. 
+Party in title instrument cannot be fict itious but may use fictitious name. A deed to a purely fictitious 
+person (false or feigned name) is void, but a deed to an actual person under a fictitious name by which he or she 
+is known or which this person assumes for the occasion is  valid. If the grantee is mi snamed in the deed, the 
+error can be corrected by a second deed to the same gr antee under the true name. The grantee designated in the 
+deed must be a person in existence, either natural or artificial, and must be capable of taking title to the land, for 
+a deed to a dead person is void. A deed to the estate of a deceased pe rson is questionable. A deed to the 
+administrator of the estate of a deceased person, if th e administrator is duly nomin ated, appointed and acting, 
+conveys title to the heirs or devisees of the deceased, subject to administration of the estate. 
+PRINCIPAL INSTRUMENTS OF TRANSFER 
+ 
+115
+For example: A better mode of  granting deeds to an estate, and one which has been approved by most title 
+companies would be “to the heirs or devisees of  John Doe, deceased, subject to the administration of  his 
+estate.” 
+Delivery and Acceptance 
+A deed is of no effect unless delivered . But delivery in this context means more than a turning over of the 
+physical possession of the document. The grantor must have the intention  to pass title immediately. It is 
+possible in some cases to have a legal delivery without the instrument actually being handed to the grantee, if 
+the grantor has the requisite intent to transfer title. 
+That intention is not present if A  gives B a deed but tells B not to record it until A’s death, both parties 
+believing the deed is ineffective until recorded. Nor is such intention present in the typical case of cross-deeds 
+between husband and wife placed in a joint safe-de posit box with the understanding that the survivor will 
+record his or her deed. 
+The law presumes a valid delivery if the deed is found in  the possession of the grantee or is recorded, but such 
+presumption is rebuttable. A deed may be entrusted to a third party (such as an escrow agent) with directions 
+that it be delivered to th e grantee upon the performance of designated conditions. The deed itself may contain 
+conditions. But with reference to delivery, by statute, a grant cannot be delivered to the gr antee conditionally. 
+Delivery to the grantee, or to the grantee’s agent as such, is necessarily absolute, and the instrument takes effect 
+immediately, discharged of any condition on which the delivery was made which is not expressed in the deed. 
+(Or, no delivery may have occurred and the deed may be found to be void.) The grantor attempting a 
+conditional delivery should withhold tran sfer of the deed to the grantee until the cond itions are satisfied; or 
+incorporate the conditions in the deed itself; or deposit the deed into an escrow with appropriate instructions. 
+Transfer of a deed conditioned on the grantor’s death is  ineffective as an attempted testamentary disposition 
+failing to meet the requirements of a will. 
+A duly executed deed is presumed to be delivered as of its dated date. The dated date of a deed is often 
+different from its recorded date. Possession or the rights thereto must be given when the deed is delivered. 
+Ordinarily, a deed cannot be given effect unless it is accepted by the gran tee. An exception to this rule is made 
+when the grantee is a minor or ment ally incompetent. Accepta nce of a deed may be shown by acts, words or 
+conduct of the grantee showing an intent to accept. A deed to a governmental entity must ordinarily contain 
+(either on the face of the deed itself or on a separate sheet attached to the deed) a certificate of acceptance. 
+TYPES OF DEEDS 
+Grant Deed 
+Because of inclusion of the word “gra nt” in a grant deed, the grantor impliedly warrants that he or she has not 
+already conveyed to any other person and that the esta te conveyed is free from encumbrances done, made or 
+suffered by the grantor or any person claiming under granto r, including taxes, assessments and other liens. This 
+does not mean that the grantor warrants that grantor is the owner or that the property is not otherwise 
+encumbered. The grant includes appurtenant easements for ingress and egress and building restrictions. The 
+grantor’s warranty includes encumbrances made during grantor’s, but no other individual’s, possession of the 
+property. It conveys any title acquired after the grantor has conveyed the title to the real property (after-
+acquired title), generally. Observe that these warranties carried by a grant deed are not usually expressed in the 
+grant deed form. They are called “implied warranties”  because the law deems th em included in the grant 
+whether or not explicitly expressed in the deed 
+Quitclaim Deed 
+A quitclaim deed is a deed by which a grantor transfers only the interest the grantor has at the time the 
+conveyance is executed. There are no implied warranties in connection with a quitclaim deed. This type of deed 
+guarantees nothing and there is no expressed or implied wa rranty that grantor owns the property or any interest 
+in it. Moreover, a quitclaim deed does not convey any af ter-acquired title. A quitclaim deed effectively says, “I 
+am conveying all the title that I have in the property described in this quitclaim - if I have, in fact, any title.” 
+A quitclaim deed is generally used to clear some  “cloud on the title.” A “cloud on the title” is some minor 
+defect in the title which needs to be removed in order to perfect the title. Deeds of court representatives, such as 
+guardians, administrators, and sheriffs, usually have the effect of a quitclaim pursuant to court order. 
+CHAPTER SEVEN 
+ 
+116 
+Warranty Deed 
+A warranty deed contains express covenants of title. Warranty deeds ar e uncommon in California, no doubt 
+because of the almost universal reliance in this state on title insurance to evidence marketable title. 
+Trust Deed 
+A trust deed (or deed of trust) is  a 3-party security instrument conve ying title to land as security for the 
+performance of an obligation. There are three parties to a trust deed: borrower (trustor), lender (beneficiary), 
+and a third party, called a trustee, to whom legal title to the real propert y is conveyed. The trustee holds the 
+legal title in trust for the beneficiary and has the power  to sell the property if the trustor does not fulfill the 
+obligations as recited in the instru ment. The trustee also possesses power  to reconvey the legal title to the 
+trustor provided the beneficiary requests a reconveyance of that title. This event occurs if the promissory note is 
+paid in full. 
+A trustor signing the trust deed retains what is called an equitable title. That is, the trustor enjoys the right of 
+possession and can do with the property whatever the trustor pleases so long as the trustor does not jeopardize 
+the interest of the lender (beneficiary). 
+Business and Professions Code Section 10141.5 requires that a real estate licensee record a deed of trust within 
+one week after closing of a transaction or deliver it to the beneficiary with a written recommendation that it be 
+recorded or deliver it to the escrow holder. Failure of a real estate li censee to carry out the duties prescribed in 
+Section 10141.5 does not affect the validity of the transfer of title to the real property. 
+Reconveyance Deed 
+A reconveyance deed is an instrument conveying title to property from a trustee back to the trustor on 
+termination of the trust. This title is held by the trustee until the note or obligation is fully paid. Then, when the 
+beneficiary issues a “Request for Full Reconveyance,” the trustee executes the reconveyance to the borrower. 
+Termination of the trust usually occurs when the promissory note is paid in full. 
+Sheriff’s Deed 
+A sheriff’s deed is a deed given to a party on the foreclosure of property, levied under a judgment for 
+foreclosure on a mortgage or of a money judgment against the owner of the property. 
+The title conveyed is only that acquired by the state or the sheriff under the foreclosure and carries no 
+warranties or representations whatsoever. 
+Gift Deed 
+A grantor may make a gift of property to the grantee, and use a grant deed form or a quitclaim deed form for 
+the purpose. Grantor may, but need not , say in the deed that grantor make s the transfer because of love and 
+affection for the grantee. 
+A gift deed made to defraud creditors may be set aside if it leaves the debtor/grantor insolvent or otherwise 
+contributes to fraud. (Uniform Fraudulent Transfer Act, Civil Code Sections 3439 through 3439.12) 
+Void Deeds  
+Deeds that are void and pass no title even in favor of a bona fide purchaser for value include: 
+1. A deed from a person whose incapacity has been j udicially determined, e.g., a deed from a person for 
+whom a conservator has been appointed (Civil Code Section 40); 
+2. Forged deeds (Meley v. Collins, 41 Cal. 663); 
+3. A deed from a person under 18 years and not emancipated; 
+4. A deed executed in blank, where the name of the grantee has been inserted without authorization or 
+consent of the grantor (Trout v. Taylor, 220 Cal. 652); and 
+5. A deed purely testamentary in ch aracter, i.e., when the grantor intends  that the deed not become operative 
+until his or her death. 
+PRINCIPAL INSTRUMENTS OF TRANSFER 
+ 
+117
+Voidable Deeds 
+Deeds which are not void, but are voidable and pass title subject to being set aside in appropriate judicial 
+proceedings include: 
+1. A deed from a person of unsound mind whose incapacity has not been determined (Hughes v. Grandy, 78 
+Cal. App. 2nd, 555); 
+2. Prior to March 4, 1972, a deed from a person over 18 years of age and under 21 years of age, except a deed 
+from a lawfully married person 18 years of age or older (Family Code Sections 6700, 6701, 6710). Family 
+Code Section 6701(b) limits the authority of a minor to “make a contract relating to real property or any 
+interests therein”. Since any person 18 or over, and unde r 21, who was lawfully married was deemed to be 
+an adult for the purposes of dealing in property, it may be necessary to determine the legality of the 
+marriage. If the person was married outside of California, and the marriage was valid by the laws of the 
+state or the county in which the same was contracted, the marriage was valid in California. If the person 
+was married in California, the age of the person will determine the pro cedure necessary to effect a valid 
+marriage. (Family Code Sections 301 and 302.) 
+CHAPTER SEVEN 
+ 
+118 
+ 

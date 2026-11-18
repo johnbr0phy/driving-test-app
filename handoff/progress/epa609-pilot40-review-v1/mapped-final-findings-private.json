@@ -1,0 +1,330 @@
+[
+  {
+    "reviewId": "R001",
+    "severity": "none",
+    "issue": "Explanation explicitly addresses moisture as a distinct issue; intended restriction mechanism adequately qualified.",
+    "fix": "No required change.",
+    "status": "resolved",
+    "questionId": "EPA609-SRV-005"
+  },
+  {
+    "reviewId": "R002",
+    "severity": "none",
+    "issue": "Numerical alternatives represent 10%, 15%, 20%, and remainder; plausible novice calculation errors.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-YF-012"
+  },
+  {
+    "reviewId": "R003",
+    "severity": "high",
+    "issue": "Pure literal revision matching; no domain knowledge needed. No actual charge specifications or document applicability evidence supplied.",
+    "fix": "Replace with real applicability conflict and enough technical facts to decide, avoiding identical revision string as sole clue.",
+    "status": "retained",
+    "questionId": "EPA609-SRV-029"
+  },
+  {
+    "reviewId": "R004",
+    "severity": "medium",
+    "issue": "Prescribed is unnamed; different leak checks use different access points. Options themselves are credible.",
+    "fix": "Name the J2843 precharge workflow or MACS procedure and blower/floor context.",
+    "status": "retained",
+    "questionId": "EPA609-YF-013"
+  },
+  {
+    "reviewId": "R005",
+    "severity": "none",
+    "issue": "Stage2 high-severity objection withdrawn. My blind answer C was wrong. Direct MACS printed page 43 precaution 5 supports author A, with three minutes a typical wait rather than the criterion.",
+    "fix": "Keep the source citation in explanation/reference. Do not name training providers in stems. No unsupported numerical pressure threshold should be invented.",
+    "status": "resolved",
+    "questionId": "EPA609-YF-015"
+  },
+  {
+    "reviewId": "R006",
+    "severity": "low",
+    "issue": "Good distinction between current, meter check, and HV verification; generic isolation test points lacks procedural precision.",
+    "fix": "Reference Tesla HV disablement test points and retain OEM scope.",
+    "status": "retained",
+    "questionId": "EPA609-YF-008"
+  },
+  {
+    "reviewId": "R007",
+    "severity": "medium",
+    "issue": "Stem already says solvent remains mixed with oil; dilution is directly inferable while alternatives concern unrelated operations.",
+    "fix": "Use plausible competing lubrication mechanisms without explaining the mixture in the stem.",
+    "status": "retained",
+    "questionId": "EPA609-SRV-023"
+  },
+  {
+    "reviewId": "R008",
+    "severity": "low",
+    "issue": "Plausible function distractors, but strong overlap with R002/R004/R013.",
+    "fix": "Spread staged-charge items across forms.",
+    "status": "retained",
+    "questionId": "EPA609-YF-003"
+  },
+  {
+    "reviewId": "R009",
+    "severity": "medium",
+    "issue": "Permanently on part is conspicuously strongest answer versus all disposable/remote records.",
+    "fix": "Use credible alternative component marking locations or a marking-content scenario.",
+    "status": "retained",
+    "questionId": "EPA609-YF-001"
+  },
+  {
+    "reviewId": "R010",
+    "severity": "none",
+    "issue": "Tests gauge versus absolute pressure with appropriate arithmetic distractors.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-SRV-025"
+  },
+  {
+    "reviewId": "R011",
+    "severity": "none",
+    "issue": "Sequence distractors are realistic maintenance steps; manufacturer scope is explicit.",
+    "fix": "Retain, citing exact manual edition in explanation.",
+    "status": "no_issue",
+    "questionId": "EPA609-EQP-013"
+  },
+  {
+    "reviewId": "R012",
+    "severity": "low",
+    "issue": "Before crimping eliminates crimp-die closure; remaining seating checks are credible novice errors.",
+    "fix": "Replace the already-excluded die action with another precrimp observation.",
+    "status": "retained",
+    "questionId": "EPA609-EQP-006"
+  },
+  {
+    "reviewId": "R013",
+    "severity": "none",
+    "issue": "Leak failure changes the correct action, and continuing/repeating charge are plausible workflow mistakes.",
+    "fix": "Retain; explanation must include re-evacuation permission.",
+    "status": "no_issue",
+    "questionId": "EPA609-YF-014"
+  },
+  {
+    "reviewId": "R014",
+    "severity": "none",
+    "issue": "Facility roles are plausible and source-defined.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-REG-028"
+  },
+  {
+    "reviewId": "R015",
+    "severity": "low",
+    "issue": "General fluorescence knowledge identifies wavelength; brightness is a plausible novice distractor.",
+    "fix": "Retain as basic item.",
+    "status": "retained",
+    "questionId": "EPA609-SRV-020"
+  },
+  {
+    "reviewId": "R016",
+    "severity": "none",
+    "issue": "Adjacent wire gauges test a meaningful manufacturer requirement.",
+    "fix": "Retain; explain smaller AWG number means thicker conductor.",
+    "status": "no_issue",
+    "questionId": "EPA609-EQP-014"
+  },
+  {
+    "reviewId": "R017",
+    "severity": "none",
+    "issue": "Competing moisture remedies are credible; extended collision exposure supports desiccant replacement.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-SRV-026"
+  },
+  {
+    "reviewId": "R018",
+    "severity": "medium",
+    "issue": "Only A offers vehicle-end permanence; three choices advertise interchangeability or wrong end.",
+    "fix": "Strengthen alternatives with credible permanent fitting configurations while preserving rule scope.",
+    "status": "retained",
+    "questionId": "EPA609-EQP-004"
+  },
+  {
+    "reviewId": "R019",
+    "severity": "low",
+    "issue": "Middle sight-glass level is familiar common practice, although model-specific verification is useful.",
+    "fix": "Retain as easy recall item; avoid overcounting as advanced service knowledge.",
+    "status": "retained",
+    "questionId": "EPA609-SRV-031"
+  },
+  {
+    "reviewId": "R020",
+    "severity": "none",
+    "issue": "Question asks hazardous medium, distinguishing it from a normal pressure-test-medium question.",
+    "fix": "Retain; replace cited with manufacturer-warning wording.",
+    "status": "no_issue",
+    "questionId": "EPA609-EQP-002"
+  },
+  {
+    "reviewId": "R021",
+    "severity": "medium",
+    "issue": "Ultraviolet exposure inside circuit and condensation of vapor are weak misconceptions; one option has clear physical coherence.",
+    "fix": "Use plausible dye circulation/time/concentration alternatives.",
+    "status": "retained",
+    "questionId": "EPA609-SRV-006"
+  },
+  {
+    "reviewId": "R022",
+    "severity": "low",
+    "issue": "Hose-wall permeability is semantically suggested by barrier hoses; other retrofit changes remain plausible.",
+    "fix": "Use a performance scenario to reduce terminology clue.",
+    "status": "retained",
+    "questionId": "EPA609-REG-024"
+  },
+  {
+    "reviewId": "R023",
+    "severity": "low",
+    "issue": "Only one categorical design answer among capacity quantities; underlying oil distinction remains real.",
+    "fix": "Use application pairs or similar design distinctions.",
+    "status": "retained",
+    "questionId": "EPA609-YF-004"
+  },
+  {
+    "reviewId": "R024",
+    "severity": "none",
+    "issue": "Compatibility versus cleaning, removal, or OEM approval is a useful source-defined distinction.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-SRV-022"
+  },
+  {
+    "reviewId": "R025",
+    "severity": "low",
+    "issue": "Boils at constant temperature directly cues latent heat; valid basic physics, not regulatory knowledge.",
+    "fix": "Retain as an easy concept item.",
+    "status": "retained",
+    "questionId": "EPA609-EQP-011"
+  },
+  {
+    "reviewId": "R026",
+    "severity": "none",
+    "issue": "Ownership versus lease/contract distinctions are meaningful; buying the recovery machine alone is insufficient.",
+    "fix": "Retain; state approved equipment assumed.",
+    "status": "no_issue",
+    "questionId": "EPA609-EQP-022"
+  },
+  {
+    "reviewId": "R027",
+    "severity": "none",
+    "issue": "Date distractors test retention duration and calendar-end misconception.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-REG-015"
+  },
+  {
+    "reviewId": "R028",
+    "severity": "low",
+    "issue": "ASME is a different designation system, but DOT alternatives remain credible.",
+    "fix": "Consider a fourth DOT designation.",
+    "status": "retained",
+    "questionId": "EPA609-EQP-019"
+  },
+  {
+    "reviewId": "R029",
+    "severity": "low",
+    "issue": "Off-road cabs should explicitly be MVAC-like appliances; the two-by-two alternatives are otherwise strong.",
+    "fix": "Specify MVAC-like off-road cab air conditioners.",
+    "status": "retained",
+    "questionId": "EPA609-REG-004"
+  },
+  {
+    "reviewId": "R030",
+    "severity": "low",
+    "issue": "Oil trace is familiar; frost and normal water drainage are useful novice confusions.",
+    "fix": "Retain as basic diagnosis.",
+    "status": "retained",
+    "questionId": "EPA609-SRV-012"
+  },
+  {
+    "reviewId": "R031",
+    "severity": "medium",
+    "issue": "Inspector and supplier trainer are weak signing-authority alternatives; responsible officer sounds authoritative on surface.",
+    "fix": "Use plausible shop roles with concrete authority/ownership facts.",
+    "status": "retained",
+    "questionId": "EPA609-REG-025"
+  },
+  {
+    "reviewId": "R032",
+    "severity": "none",
+    "issue": "Refrigerant-specific exception differentiates otherwise plausible certification classes.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-REG-016"
+  },
+  {
+    "reviewId": "R033",
+    "severity": "none",
+    "issue": "Competing record types are plausible; exact record is regulatory.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-REG-008"
+  },
+  {
+    "reviewId": "R034",
+    "severity": "medium",
+    "issue": "Only direct demonstration is on premises; other alternatives involve delegating or repeating training.",
+    "fix": "Use plausible variations of authorized verification procedure.",
+    "status": "retained",
+    "questionId": "EPA609-REG-026"
+  },
+  {
+    "reviewId": "R035",
+    "severity": "low",
+    "issue": "Below-atmospheric plus leaking seal directly implies incoming air; basic physical reasoning.",
+    "fix": "Retain as easy item, or add diagnostic observations.",
+    "status": "retained",
+    "questionId": "EPA609-EQP-020"
+  },
+  {
+    "reviewId": "R036",
+    "severity": "medium",
+    "issue": "Current certification is the sole completed credential; future exam receipt is especially weak.",
+    "fix": "Replace at least two distractors with credible but wrong certifications/records.",
+    "status": "retained",
+    "questionId": "EPA609-REG-017"
+  },
+  {
+    "reviewId": "R037",
+    "severity": "none",
+    "issue": "Explanation explicitly recommends emptying bottle beforehand and correctly subtracts pre-existing oil.",
+    "fix": "No required change.",
+    "status": "resolved",
+    "questionId": "EPA609-EQP-024"
+  },
+  {
+    "reviewId": "R038",
+    "severity": "medium",
+    "issue": "All distractors hide notice from buyer or show it after purchase; commonsense alone solves it.",
+    "fix": "Use plausible customer-visible locations with a genuine regulatory distinction.",
+    "status": "retained",
+    "questionId": "EPA609-REG-027"
+  },
+  {
+    "reviewId": "R039",
+    "severity": "low",
+    "issue": "Density/low-area-spread statement corroborated by Honeywell-authored SDS version 12.2 hosted by Rittal, sections 5/6. Exact author-cited v3.4 not located; not claiming latest SDS verification.",
+    "fix": "Attach the verified document with accurate author, version and hosting provenance, or obtain exact author-cited SDS.",
+    "status": "resolved_with_provenance_note",
+    "questionId": "EPA609-YF-006"
+  },
+  {
+    "reviewId": "R040",
+    "severity": "none",
+    "issue": "Plausible orders of magnitude; standard and sensitivity setting are clear.",
+    "fix": "Retain.",
+    "status": "no_issue",
+    "questionId": "EPA609-YF-016"
+  },
+  {
+    "reviewId": "BANK",
+    "severity": "medium",
+    "issue": "Four staged-charge items R002/R004/R008/R013 test adjacent steps, not exact duplicates, but can coach one another. R015/R021/R030/R040 cluster on leak detection; R031/R033/R034/R036/R038 cluster on administrative rules. Overall coverage is narrower than a standalone 40-item comprehensive form. Multiple items permit superficial elimination, especially R003/R009/R018/R031/R034/R036/R038. All explanations subsequently reviewed; key agreement does not remove pedagogical concerns.",
+    "fix": "Replace literal-match item, strengthen flagged distractors, preserve source-defined distinctions, and distribute related objectives across forms.",
+    "status": "retained",
+    "questionId": "BANK"
+  }
+]

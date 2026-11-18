@@ -1,0 +1,1802 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "cdmSafety",
+    "optionA": "30 seconds",
+    "optionB": "10 seconds",
+    "optionC": "40 seconds",
+    "optionD": "20 seconds",
+    "question": "What is the minimum duration of the complete handwashing cleaning procedure specified by the FDA Food Code?"
+  },
+  {
+    "reviewId": "R002",
+    "category": "cdmSafety",
+    "optionA": "Section 4: first-aid measures",
+    "optionB": "Section 9: physical properties",
+    "optionC": "Section 8: exposure controls/PPE",
+    "optionD": "Section 6: accidental release measures",
+    "question": "A manager needs the recommended glove material for handling a concentrated cleaner. Which SDS section is the primary place to find that detail?"
+  },
+  {
+    "reviewId": "R003",
+    "category": "cdmFoodservice",
+    "optionA": "6 g protein; 220 mg sodium",
+    "optionB": "9 g protein; 180 mg sodium",
+    "optionC": "10 g protein; 240 mg sodium",
+    "optionD": "7 g protein; 160 mg sodium",
+    "question": "The approved substitution specification requires at least 8 g protein and no more than 200 mg sodium per portion. Which listed product qualifies?"
+  },
+  {
+    "reviewId": "R004",
+    "category": "cdmSafety",
+    "optionA": "The ingredient list",
+    "optionB": "The storage-temperature instruction",
+    "optionC": "The package-yield statement",
+    "optionD": "The nutrition-energy panel",
+    "question": "An allergen review must determine whether sesame was added during reformulation. Which part of the supplier's revised specification answers that question?"
+  },
+  {
+    "reviewId": "R005",
+    "category": "cdmSafety",
+    "optionA": "4 hours",
+    "optionB": "4.5 hours",
+    "optionC": "2 hours",
+    "optionD": "6 hours",
+    "question": "A cooked TCS food cools from 135\u00b0F to 70\u00b0F in 90 minutes. Under the Food Code, how much time remains to reach 41\u00b0F?"
+  },
+  {
+    "reviewId": "R006",
+    "category": "cdmBusiness",
+    "optionA": "3 years",
+    "optionB": "2 years",
+    "optionC": "4 years",
+    "optionD": "5 years",
+    "question": "An equipment investment costs $12000 and is expected to save $3000 annually. Ignoring financing and residual value, what is its simple payback period?"
+  },
+  {
+    "reviewId": "R007",
+    "category": "cdmPersonnel",
+    "optionA": "One worker for one hour",
+    "optionB": "Two workers for one hour",
+    "optionC": "One worker for two hours",
+    "optionD": "Two workers for two hours",
+    "question": "One station needs two workers continuously from 10 a.m. to noon. Assigned worker A is present throughout; B leaves at 11. What uncovered work remains?"
+  },
+  {
+    "reviewId": "R008",
+    "category": "cdmSafety",
+    "optionA": "A nursing-home kitchen serving residents",
+    "optionB": "A coffee shop serving the general public",
+    "optionC": "A restaurant serving the general public",
+    "optionD": "A workplace cafeteria serving adults",
+    "question": "Under FDA Food Code 2-201.12, a food employee has a diagnosed Norovirus infection but no symptoms. Which workplace calls for exclusion rather than restriction?"
+  },
+  {
+    "reviewId": "R009",
+    "category": "cdmNutrition",
+    "optionA": "Steamed rice",
+    "optionB": "Wheat couscous",
+    "optionC": "Cooked barley",
+    "optionD": "Boiled farro",
+    "question": "A resident has an established gluten-free diet order for celiac disease. Which plain grain side can be used, assuming separate preparation and no added ingredients?"
+  },
+  {
+    "reviewId": "R010",
+    "category": "cdmBusiness",
+    "optionA": "$9.00",
+    "optionB": "$5.80",
+    "optionC": "$4.50",
+    "optionD": "$7.20",
+    "question": "An item has a raw-food cost of $1.80 and the facility uses a pricing factor of 4. What is the calculated menu price?"
+  },
+  {
+    "reviewId": "R011",
+    "category": "cdmPersonnel",
+    "optionA": "The delivery team's route assessment",
+    "optionB": "The cashier's retail-sales assessment",
+    "optionC": "The purchasing team's price assessment",
+    "optionD": "The cooks' batch-capacity assessment",
+    "question": "A schedule proposal was evaluated for cost and cooking capacity. The remaining question is whether carts can complete the route by the required arrival time. Which staff contribution addresses that gap?"
+  },
+  {
+    "reviewId": "R012",
+    "category": "cdmFoodservice",
+    "optionA": "8:30 a.m.",
+    "optionB": "7:30 a.m.",
+    "optionC": "9:00 a.m.",
+    "optionD": "8:00 a.m.",
+    "question": "A cold dessert must set for four hours and needs 30 minutes of mixing before refrigeration. Service begins at noon. What is the latest mixing start time?"
+  },
+  {
+    "reviewId": "R013",
+    "category": "cdmBusiness",
+    "optionA": "$2.40",
+    "optionB": "$3.00",
+    "optionC": "$2.00",
+    "optionD": "$2.20",
+    "question": "A case contains 24 portions and costs $48. Four portions are unusable. What is the ingredient cost per usable portion for that case?"
+  },
+  {
+    "reviewId": "R014",
+    "category": "cdmNutrition",
+    "optionA": "Occupational safety specialist",
+    "optionB": "Foodservice quality coordinator",
+    "optionC": "Registered pharmacy technician",
+    "optionD": "Speech-language pathologist",
+    "question": "A resident develops coughing during meals and difficulty managing the current texture. Who should help evaluate swallowing needs?"
+  },
+  {
+    "reviewId": "R015",
+    "category": "cdmBusiness",
+    "optionA": "$10 over",
+    "optionB": "$90 short",
+    "optionC": "$100 over",
+    "optionD": "$10 short",
+    "question": "Opening change is $100, cash sales are $460 and the closing drawer is $550. No refunds, payouts or other cash movements occurred. What discrepancy should be investigated?"
+  },
+  {
+    "reviewId": "R016",
+    "category": "cdmFoodservice",
+    "optionA": "22.5 lb",
+    "optionB": "32 lb",
+    "optionC": "13.5 lb",
+    "optionD": "24 lb",
+    "question": "A recipe needs 18 lb of edible trimmed produce. The verified yield is 75% of purchased weight. How much should be bought?"
+  },
+  {
+    "reviewId": "R017",
+    "category": "cdmPersonnel",
+    "optionA": "A list of ingredient purchase grades",
+    "optionB": "A sequenced task checklist",
+    "optionC": "A summary of monthly output targets",
+    "optionD": "A chart of department reporting lines",
+    "question": "A new hire can perform each preparation step correctly when prompted but loses the sequence independently. Which training aid most directly addresses the observed difficulty?"
+  },
+  {
+    "reviewId": "R018",
+    "category": "cdmPersonnel",
+    "optionA": "Revise the recipe ingredient weights",
+    "optionB": "Repeat the equipment demonstration",
+    "optionC": "Replace the portioning equipment",
+    "optionD": "Rebalance the competing workload",
+    "question": "A worker performs a task correctly during quiet periods but skips a step during simultaneous assignments. Equipment and knowledge checks pass. Which intervention best addresses the demonstrated condition?"
+  },
+  {
+    "reviewId": "R019",
+    "category": "cdmPersonnel",
+    "optionA": "12 workweeks",
+    "optionB": "6 workweeks",
+    "optionC": "18 workweeks",
+    "optionD": "26 workweeks",
+    "question": "A dietary aide is eligible for FMLA and needs leave for her own qualifying serious health condition. What is the usual federal leave entitlement for this reason in a 12-month period?"
+  },
+  {
+    "reviewId": "R020",
+    "category": "cdmBusiness",
+    "optionA": "A chopped fruit filling",
+    "optionB": "A centerpiece of uniform pieces",
+    "optionC": "A whole-fruit display",
+    "optionD": "An arranged fruit platter",
+    "question": "Two approved fruit grades have equal safety, flavor and edible yield. The more expensive one differs in whole-piece uniformity. Which recipe use makes that difference least valuable?"
+  },
+  {
+    "reviewId": "R021",
+    "category": "cdmPersonnel",
+    "optionA": "7 FTEs",
+    "optionB": "8 FTEs",
+    "optionC": "6 FTEs",
+    "optionD": "10 FTEs",
+    "question": "A department schedules 280 labor hours weekly and defines one full-time position as 40 hours. How many FTEs are scheduled?"
+  },
+  {
+    "reviewId": "R022",
+    "category": "cdmNutrition",
+    "optionA": "Corn-derived starch",
+    "optionB": "Barley malt extract",
+    "optionC": "Unseasoned olive oil",
+    "optionD": "Plain tomato puree",
+    "question": "A supplier revises a sauce used on an established gluten-free menu for residents with celiac disease. Which addition makes the sauce unsuitable for that menu?"
+  },
+  {
+    "reviewId": "R023",
+    "category": "cdmPersonnel",
+    "optionA": "20%",
+    "optionB": "25%",
+    "optionC": "50%",
+    "optionD": "5%",
+    "question": "For this report, turnover is separations divided by average headcount, multiplied by 100. A department averages 25 employees and has 5 separations. What is the rate?"
+  },
+  {
+    "reviewId": "R024",
+    "category": "cdmSafety",
+    "optionA": "Nutrient composition",
+    "optionB": "Stored meal quantity",
+    "optionC": "Potable-water quantity",
+    "optionD": "Activation time",
+    "question": "An emergency drill meets food-supply and water-supply targets but takes 45 minutes to activate the alternate menu, against a 15-minute target. Which measured performance needs improvement?"
+  },
+  {
+    "reviewId": "R025",
+    "category": "cdmFoodservice",
+    "optionA": "Keep fifty servings at 5 ounces",
+    "optionB": "Lower the serving target to forty",
+    "optionC": "Use a 4-ounce portion measure",
+    "optionD": "Increase the batch to 250 ounces",
+    "question": "A 200-ounce batch should provide fifty 4-ounce servings, but the ladle delivers 5 ounces. Which change corrects portion size while retaining the batch and serving-count targets?"
+  },
+  {
+    "reviewId": "R026",
+    "category": "cdmPersonnel",
+    "optionA": "Repeat instruction in portion measurement",
+    "optionB": "Coach the worker on meal presentation",
+    "optionC": "Reschedule access to the workstation",
+    "optionD": "Review the recipe ingredient calculations",
+    "question": "A worker knows the recipe and portions accurately but cannot finish because the assigned workstation is occupied during the scheduled preparation time. Which intervention addresses the identified cause?"
+  },
+  {
+    "reviewId": "R027",
+    "category": "cdmFoodservice",
+    "optionA": "Count stayed fixed while unit weight rose",
+    "optionB": "Both count and unit weight fell",
+    "optionC": "Count rose while unit weight stayed fixed",
+    "optionD": "Both count and unit weight stayed fixed",
+    "question": "A recipe specifies 20 apples by count. The former apples averaged 6 ounces and the new ones average 8 ounces. What explains the increased ingredient quantity?"
+  },
+  {
+    "reviewId": "R028",
+    "category": "cdmNutrition",
+    "optionA": "600 mL per meal",
+    "optionB": "400 mL per meal",
+    "optionC": "300 mL per meal",
+    "optionD": "500 mL per meal",
+    "question": "A care plan limits oral fluid to 1500 mL daily, assigns 300 mL to medication rounds and 300 mL between meals, and divides the remainder equally among three meals. What is each meal's allocation?"
+  },
+  {
+    "reviewId": "R029",
+    "category": "cdmPersonnel",
+    "optionA": "Supplier ratings and invoice terms for each",
+    "optionB": "Arrival times and staffing needs for each",
+    "optionC": "Menu prices and ingredient yields for each",
+    "optionD": "Food-group totals and portion weights for each",
+    "question": "A meeting will choose between two delivery schedules after a trial. Which paired evidence is most relevant to that decision?"
+  },
+  {
+    "reviewId": "R030",
+    "category": "cdmNutrition",
+    "optionA": "Calcium",
+    "optionB": "Potassium",
+    "optionC": "Iron",
+    "optionD": "Phosphorus",
+    "question": "A resident\u2019s renal diet permits less sodium, and staff propose a salt substitute. NIDDK cautions that these products can supply substantial amounts of which other mineral?"
+  },
+  {
+    "reviewId": "R031",
+    "category": "cdmFoodservice",
+    "optionA": "Insufficient ingredient yield",
+    "optionB": "Incompatible dietary prescriptions",
+    "optionC": "Concurrent equipment demand",
+    "optionD": "Inconsistent portion standards",
+    "question": "Two dishes require the single oven: one at 350\u00b0F from 10 to 11 a.m., and one at 425\u00b0F from 10:30 to 11 a.m. Both are due at 11:15. What conflict must be resolved?"
+  },
+  {
+    "reviewId": "R032",
+    "category": "cdmNutrition",
+    "optionA": "Residents requesting a different flavor",
+    "optionB": "Calories listed per unopened carton",
+    "optionC": "Milliliters consumed per delivered serving",
+    "optionD": "Scheduled servings that reached residents",
+    "question": "The team is investigating whether missed delivery explains low nourishment intake. Acceptance is already measured when cartons reach residents. Which additional measure tests the delivery hypothesis?"
+  },
+  {
+    "reviewId": "R033",
+    "category": "cdmFoodservice",
+    "optionA": "20%",
+    "optionB": "60%",
+    "optionC": "75%",
+    "optionD": "80%",
+    "question": "Out of 80 diners surveyed, 60 rate an entree acceptable. What proportion reports acceptance?"
+  },
+  {
+    "reviewId": "R034",
+    "category": "cdmSafety",
+    "optionA": "1\u00bd inches",
+    "optionB": "\u00be inch",
+    "optionC": "1 inch",
+    "optionD": "2\u00bc inches",
+    "question": "A renovation uses a water-supply inlet with a \u00be-inch diameter above a sink. What minimum air gap meets FDA Food Code 5-202.13?"
+  },
+  {
+    "reviewId": "R035",
+    "category": "cdmFoodservice",
+    "optionA": "70 regular; 35 modified",
+    "optionB": "65 regular; 35 modified",
+    "optionC": "75 regular; 25 modified",
+    "optionD": "65 regular; 30 modified",
+    "question": "The initial tally lists 70 regular and 30 modified meals. Before preparation, 5 regular orders change to modified, with total census unchanged. What is the revised tally?"
+  },
+  {
+    "reviewId": "R036",
+    "category": "cdmSafety",
+    "optionA": "A wash-cycle timer",
+    "optionB": "A maximum-registering thermometer",
+    "optionC": "A water-pressure gauge",
+    "optionD": "A chemical test kit or test strips",
+    "question": "A manager checks a chemical-sanitizing warewasher. Which tool establishes whether the sanitizer concentration meets the product requirements?"
+  },
+  {
+    "reviewId": "R037",
+    "category": "cdmNutrition",
+    "optionA": "High sodium; high fiber",
+    "optionB": "High sodium; low fiber",
+    "optionC": "Low sodium; high fiber",
+    "optionD": "Low sodium; low fiber",
+    "question": "A label shows 4% Daily Value for sodium and 22% for fiber per serving. Using FDA\u2019s general label guide, which description fits?"
+  },
+  {
+    "reviewId": "R038",
+    "category": "cdmFoodservice",
+    "optionA": "Carryover cooking",
+    "optionB": "Enzymatic browning",
+    "optionC": "Fat rendering",
+    "optionD": "Evaporative cooling",
+    "question": "A roast continues to warm briefly after removal from the oven. Which phenomenon explains this observation?"
+  },
+  {
+    "reviewId": "R039",
+    "category": "cdmNutrition",
+    "optionA": "Increased breakdown of food gluten",
+    "optionB": "Increased absorption of dietary iron",
+    "optionC": "Reduced digestion of milk sugar",
+    "optionD": "Reduced removal of excess water",
+    "question": "A resident with advanced kidney disease has a prescribed fluid limit. Which kidney-related problem principally explains the need for that restriction?"
+  },
+  {
+    "reviewId": "R040",
+    "category": "cdmNutrition",
+    "optionA": "The date of the last diet review",
+    "optionB": "The interval between prior measurements",
+    "optionC": "The method behind today's entry",
+    "optionD": "The meal percentage from yesterday",
+    "question": "Weights were 150 lb and 149 lb on the same calibrated chair scale. Today the record says 130 lb from a standing scale, although the resident could not stand for weighing. Which source should be clarified first?"
+  },
+  {
+    "reviewId": "R041",
+    "category": "cdmPersonnel",
+    "optionA": "The accuracy target was missed",
+    "optionB": "The task was completed early every shift",
+    "optionC": "The timing target was met",
+    "optionD": "The timing target was missed",
+    "question": "An improvement plan targets no more than one late start in ten shifts. Follow-up shows one late start and unchanged task accuracy. Which assessment follows?"
+  },
+  {
+    "reviewId": "R042",
+    "category": "cdmBusiness",
+    "optionA": "Replacement by $15000",
+    "optionB": "Repair by $3000",
+    "optionC": "Replacement by $3000",
+    "optionD": "Repair by $18000",
+    "question": "A five-year comparison estimates repair-and-operate at $18000 and replace-and-operate at $15000, including installation and upkeep. Performance is equivalent and neither has residual value. Which option has the lower stated cost?"
+  },
+  {
+    "reviewId": "R043",
+    "category": "cdmBusiness",
+    "optionA": "Making saves $70 per batch",
+    "optionB": "Buying saves $10 per batch",
+    "optionC": "Making saves $10 per batch",
+    "optionD": "Buying saves $70 per batch",
+    "question": "Making a product costs $80 in ingredients and 4 labor hours at $20 per hour. Buying the same usable yield and quality costs $150 delivered and needs no additional labor. Which comparison follows these assumptions?"
+  },
+  {
+    "reviewId": "R044",
+    "category": "cdmSafety",
+    "optionA": "Stand uncovered for 2 minutes",
+    "optionB": "Stand covered for 2 minutes",
+    "optionC": "Stand uncovered for 1 minute",
+    "optionD": "Stand covered for 1 minute",
+    "question": "TCS food has been stirred, covered and microwave-reheated to 165\u00b0F throughout for hot holding. Under the Food Code, which final standing step completes this method?"
+  },
+  {
+    "reviewId": "R045",
+    "category": "cdmFoodservice",
+    "optionA": "Empty container weight",
+    "optionB": "Gross shipping weight",
+    "optionC": "Drained product weight",
+    "optionD": "Total can fill weight",
+    "question": "A recipe needs 100 drained 4-ounce portions of canned peaches. Which purchasing specification controls the amount usable after liquid is removed?"
+  },
+  {
+    "reviewId": "R046",
+    "category": "cdmBusiness",
+    "optionA": "$4500",
+    "optionB": "$5400",
+    "optionC": "$300",
+    "optionD": "$900",
+    "question": "Supply cost per patient day rises from $1.50 to $1.80 over 3000 patient days. At the later volume, how much more was spent than if the earlier rate had continued?"
+  },
+  {
+    "reviewId": "R047",
+    "category": "cdmSafety",
+    "optionA": "Immediate product correction",
+    "optionB": "Routine temperature monitoring",
+    "optionC": "Initial hazard identification",
+    "optionD": "Plan verification",
+    "question": "The manager examines a week of completed HACCP logs and compares practice with the written plan. This is separate from cooks taking temperatures during production. Which activity is the manager performing?"
+  },
+  {
+    "reviewId": "R048",
+    "category": "cdmNutrition",
+    "optionA": "Sodium chloride",
+    "optionB": "Sodium phosphate",
+    "optionC": "Sodium bicarbonate",
+    "optionD": "Sodium ascorbate",
+    "question": "The dietitian asks the CDM to flag added phosphorus in a processed chicken product. Which ingredient provides that evidence?"
+  },
+  {
+    "reviewId": "R049",
+    "category": "cdmSafety",
+    "optionA": "Physical foreign material",
+    "optionB": "Chemical contamination",
+    "optionC": "Time-temperature abuse",
+    "optionD": "Biological contamination",
+    "question": "A cleaner leaks onto a food-storage shelf. What type of hazard is the residue?"
+  },
+  {
+    "reviewId": "R050",
+    "category": "cdmPersonnel",
+    "optionA": "A post-session satisfaction survey",
+    "optionB": "A second classroom demonstration",
+    "optionC": "A written knowledge exercise",
+    "optionD": "An ordinary production shift",
+    "question": "After instruction, staff can correctly demonstrate a skill in the classroom. The manager now wants evidence that it transfers to routine work under normal workload. Which setting best answers that question?"
+  },
+  {
+    "reviewId": "R051",
+    "category": "cdmFoodservice",
+    "optionA": "2 inches",
+    "optionB": "3 inches",
+    "optionC": "4 inches",
+    "optionD": "6 inches",
+    "question": "A large fixed floor-mounted appliance will stand on legs rather than be sealed to the floor. No narrow-access or retail-display exception applies. What minimum clearance does FDA Food Code 4-402.12 require?"
+  },
+  {
+    "reviewId": "R052",
+    "category": "cdmFoodservice",
+    "optionA": "Crisp carrots",
+    "optionB": "Soft carrots",
+    "optionC": "Soft cauliflower",
+    "optionD": "Crisp cauliflower",
+    "question": "The approved menu requires a soft vegetable and contrasts orange with a pale entree. Which described side meets both planning criteria?"
+  },
+  {
+    "reviewId": "R053",
+    "category": "cdmPersonnel",
+    "optionA": "Move two shifts from 7\u201311 to 9\u20131",
+    "optionB": "Move two shifts from 7\u201311 to 3\u20137",
+    "optionC": "Move two shifts from 7\u201311 to 6\u201310",
+    "optionD": "Move two shifts from 7\u201311 to 5\u20139",
+    "question": "Lunch demand requires six workers from 11 a.m. to 1 p.m. and four at other times. Four employees work 7 a.m.\u20133 p.m.; two work 7\u201311 a.m., leaving four at lunch. Which adjustment supplies the needed lunch coverage without adding hours?"
+  },
+  {
+    "reviewId": "R054",
+    "category": "cdmSafety",
+    "optionA": "The planned observation interval",
+    "optionB": "The supervisor's weekly review",
+    "optionC": "The original temperature value",
+    "optionD": "The additional heating step",
+    "question": "A HACCP record shows a deficient temperature, the reheating action taken, and a satisfactory recheck. Which part of the record describes the response to the deviation?"
+  },
+  {
+    "reviewId": "R055",
+    "category": "cdmNutrition",
+    "optionA": "Mean lunch consumption of 65%",
+    "optionB": "Attendance at 6 dining sessions",
+    "optionC": "Breakfast consumption of 75%",
+    "optionD": "Nourishment delivery on 7 days",
+    "question": "The agreed intervention aims to increase a resident's lunch intake from 40% to at least 60% over one week. Which follow-up result directly shows the intake goal was achieved?"
+  },
+  {
+    "reviewId": "R056",
+    "category": "cdmSafety",
+    "optionA": "Microwave thawing",
+    "optionB": "Running-water thawing under its limits",
+    "optionC": "Thawing during the cooking process",
+    "optionD": "Refrigerator thawing at 41\u00b0F",
+    "question": "Which Food Code thawing method specifically requires immediate transfer to conventional cooking equipment without interruption after thawing?"
+  },
+  {
+    "reviewId": "R057",
+    "category": "cdmSafety",
+    "optionA": "Product quantity",
+    "optionB": "Package integrity",
+    "optionC": "Invoice unit pricing",
+    "optionD": "Order specification grade",
+    "question": "An inspection record notes a pouch seam that has split open, exposing the food. Which receiving criterion does this finding fail?"
+  },
+  {
+    "reviewId": "R058",
+    "category": "cdmSafety",
+    "optionA": "Dish B",
+    "optionB": "Dish A",
+    "optionC": "Dish D",
+    "optionD": "Dish C",
+    "question": "Four ordinary TCS dishes are in cold holding, with no time-control procedure or special exception: A is 38\u00b0F, B 40\u00b0F, C 41\u00b0F and D 44\u00b0F. Which is outside the Food Code limit?"
+  },
+  {
+    "reviewId": "R059",
+    "category": "cdmNutrition",
+    "optionA": "Those closest to 30 and 180 days earlier",
+    "optionB": "The highest weights in the previous month",
+    "optionC": "Only the last two weekly weights",
+    "optionD": "The lowest weights in the previous year",
+    "question": "For MDS K0300, which historical weights are compared with the current weight to assess the specified weight-loss intervals?"
+  },
+  {
+    "reviewId": "R060",
+    "category": "cdmSafety",
+    "optionA": "Restrict the employee\u2019s duties",
+    "optionB": "Allow all tasks after handwashing",
+    "optionC": "Exclude solely on these symptoms",
+    "optionD": "Allow all tasks with gloves",
+    "question": "A cafeteria employee has acute sore throat with fever. The cafeteria does not serve a highly susceptible population. Which FDA Food Code action applies?"
+  },
+  {
+    "reviewId": "R061",
+    "category": "cdmSafety",
+    "optionA": "The 45\u00b0F shell-egg air limit",
+    "optionB": "The 135\u00b0F hot-holding minimum",
+    "optionC": "The 41\u00b0F product-temperature limit",
+    "optionD": "The 70\u00b0F running-water limit",
+    "question": "An ordinary refrigerated TCS food has no special legal receiving exception. The calibrated probe reads 43\u00b0F. Which Food Code provision applies to deciding whether it meets the receiving requirement?"
+  },
+  {
+    "reviewId": "R062",
+    "category": "cdmNutrition",
+    "optionA": "Butter for olive oil",
+    "optionB": "Canola oil for butter",
+    "optionC": "Cream for canola oil",
+    "optionD": "Butter for safflower oil",
+    "question": "A recipe is being adjusted under an existing plan to replace saturated fat with unsaturated fat. Which equal-volume substitution moves in that direction?"
+  },
+  {
+    "reviewId": "R063",
+    "category": "cdmSafety",
+    "optionA": "1 p.m.",
+    "optionB": "4 p.m.",
+    "optionC": "6 p.m.",
+    "optionD": "2 p.m.",
+    "question": "Cooked rice reaches 135\u00b0F at noon. Under the Food Code cooling rule, by when must it reach 70\u00b0F?"
+  },
+  {
+    "reviewId": "R064",
+    "category": "cdmPersonnel",
+    "optionA": "6 months",
+    "optionB": "24 months",
+    "optionC": "12 months",
+    "optionD": "18 months",
+    "question": "An employee leaves civilian work for military service and elects continuation of the employer\u2019s health plan. Under USERRA, continuation may extend for up to what period?"
+  },
+  {
+    "reviewId": "R065",
+    "category": "cdmSafety",
+    "optionA": "Case X",
+    "optionB": "Case Z",
+    "optionC": "Case W",
+    "optionD": "Case Y",
+    "question": "Four cases were ordered frozen. Case W arrives solidly frozen; X is chilled with visible evidence of prior thawing; Y is solidly frozen with a legible replacement shipping label; Z is solidly frozen in intact packaging. Which fails the stated Food Code frozen-receiving condition?"
+  },
+  {
+    "reviewId": "R066",
+    "category": "cdmSafety",
+    "optionA": "As a flavoring outside allergen controls",
+    "optionB": "As an allergen only when unheated",
+    "optionC": "As a major food allergen",
+    "optionD": "As an allergen only when whole",
+    "question": "A recipe\u2019s ingredient list includes sesame paste. Under the 2022 FDA Food Code, how must sesame be treated in the food-allergy program?"
+  },
+  {
+    "reviewId": "R067",
+    "category": "cdmSafety",
+    "optionA": "Water used for landscape irrigation",
+    "optionB": "Water used to flush wastewater equipment",
+    "optionC": "Ice served in beverages",
+    "optionD": "Water in a sealed nonfood cooling loop",
+    "question": "A water-use chart distinguishes drinking water from water reserved for nonfood industrial uses. Under the Food Code, which use requires drinking water as its source?"
+  },
+  {
+    "reviewId": "R068",
+    "category": "cdmSafety",
+    "optionA": "Chemical residue",
+    "optionB": "Physical hazard",
+    "optionC": "Biological hazard",
+    "optionD": "Nutrient imbalance",
+    "question": "A metal fragment from damaged equipment is found in prepared food. Which hazard category applies?"
+  },
+  {
+    "reviewId": "R069",
+    "category": "cdmSafety",
+    "optionA": "The monitoring frequency",
+    "optionB": "The verification schedule",
+    "optionC": "The critical limit",
+    "optionD": "The corrective action",
+    "question": "A HACCP plan lists \"chili reaches 165\u00b0F for 15 seconds\" as the boundary that must be met during reheating. Which plan element is represented by that numerical requirement?"
+  },
+  {
+    "reviewId": "R070",
+    "category": "cdmPersonnel",
+    "optionA": "3.0 FTEs",
+    "optionB": "2.0 FTEs",
+    "optionC": "4.0 FTEs",
+    "optionD": "2.5 FTEs",
+    "question": "One employee works 40 hours and three work 20 hours each in a week. Using a 40-hour benchmark, what is the total?"
+  },
+  {
+    "reviewId": "R071",
+    "category": "cdmSafety",
+    "optionA": "41\u00b0F",
+    "optionB": "135\u00b0F",
+    "optionC": "45\u00b0F",
+    "optionD": "70\u00b0F",
+    "question": "The Food Code running-water thawing method sets a maximum water temperature. Which value belongs to that method, rather than the refrigeration method?"
+  },
+  {
+    "reviewId": "R072",
+    "category": "cdmFoodservice",
+    "optionA": "Batch yield fell below plan",
+    "optionB": "Portions exceeded the standard",
+    "optionC": "Production lost 40 ounces",
+    "optionD": "Demand exceeded the forecast",
+    "question": "The plan calls for 100 portions. The finished batch measures 400 ounces, portions are verified at 4 ounces, and 110 diners request it. What explains the shortage?"
+  },
+  {
+    "reviewId": "R073",
+    "category": "cdmFoodservice",
+    "optionA": "Route A loses 20\u00b0F",
+    "optionB": "Route B loses 10\u00b0F",
+    "optionC": "Route B loses 20\u00b0F",
+    "optionD": "Route A loses 30\u00b0F",
+    "question": "A delivery trial keeps dispatch temperature at 160\u00b0F. Route A arrives at 150\u00b0F in 10 minutes; route B arrives at 140\u00b0F in 20 minutes. Which result isolates the greater observed temperature loss?"
+  },
+  {
+    "reviewId": "R074",
+    "category": "cdmNutrition",
+    "optionA": "22.5 kg/m\u00b2",
+    "optionB": "28.1 kg/m\u00b2",
+    "optionC": "115.2 kg/m\u00b2",
+    "optionD": "45.0 kg/m\u00b2",
+    "question": "An adult weighs 72 kg and is 1.60 m tall. Which BMI should the CDM enter in the screening record?"
+  },
+  {
+    "reviewId": "R075",
+    "category": "cdmNutrition",
+    "optionA": "250 kcal",
+    "optionB": "370 kcal",
+    "optionC": "310 kcal",
+    "optionD": "260 kcal",
+    "question": "Lunch offers a 300 kcal entree, a 100 kcal side and a 120 kcal drink. The resident consumes half the entree, all the side and none of the drink. What intake should be recorded?"
+  },
+  {
+    "reviewId": "R076",
+    "category": "cdmFoodservice",
+    "optionA": "1.5",
+    "optionB": "0.4",
+    "optionC": "4.0",
+    "optionD": "2.5",
+    "question": "A recipe yields 40 portions and is needed for 100. What multiplier applies to its ingredient quantities?"
+  },
+  {
+    "reviewId": "R077",
+    "category": "cdmSafety",
+    "optionA": "Reported symptom; diagnosis not established",
+    "optionB": "Reported exposure; symptom not reported",
+    "optionC": "Confirmed diagnosis; exposure not established",
+    "optionD": "Diagnosed infection; symptom not reported",
+    "question": "The employee-health procedure asks the manager to distinguish a reported symptom from a diagnosed infection. A worker reports vomiting but has no diagnosis. Which entry accurately describes the evidence available?"
+  },
+  {
+    "reviewId": "R078",
+    "category": "cdmSafety",
+    "optionA": "The common name of the cleaner",
+    "optionB": "The purchase date of the bulk supply",
+    "optionC": "The storage shelf number of the product",
+    "optionD": "The employee name of the mixer",
+    "question": "A kitchen transfers a cleaner from its bulk container into a reusable spray bottle. Under FDA Food Code 7-102.11, which identification must appear on that working container?"
+  },
+  {
+    "reviewId": "R079",
+    "category": "cdmPersonnel",
+    "optionA": "The next vacancy after a waiting period",
+    "optionB": "An equivalent job with equivalent benefits",
+    "optionC": "A temporary job until the old role opens",
+    "optionD": "Any opening at the former hourly rate",
+    "question": "A returning employee has completed qualifying FMLA leave. The old position was filled during the absence. Which placement satisfies the federal restoration rule?"
+  },
+  {
+    "reviewId": "R080",
+    "category": "cdmPersonnel",
+    "optionA": "Pounds versus ounces as the weight unit",
+    "optionB": "Cases versus packs as the purchasing unit",
+    "optionC": "Minutes versus hours as the time unit",
+    "optionD": "Items versus trays as the counting unit",
+    "question": "One supervisor records four faulty items on two trays; another records two faulty trays. Which measurement choice explains their different counts?"
+  },
+  {
+    "reviewId": "R081",
+    "category": "cdmFoodservice",
+    "optionA": "Dispatch-time comparison",
+    "optionB": "Ingredient-price comparison",
+    "optionC": "Portion-weight comparison",
+    "optionD": "Resident sensory comparison",
+    "question": "A newly served dish meets temperature and portion specifications. Residents describe an unfamiliar bitter taste. Which evaluation most directly tests a recipe change intended to reduce that bitterness?"
+  },
+  {
+    "reviewId": "R082",
+    "category": "cdmFoodservice",
+    "optionA": "62 portions",
+    "optionB": "45 portions",
+    "optionC": "40 portions",
+    "optionD": "55 portions",
+    "question": "A batch normally yields 50 portions of 4 ounces. Staff serve 5-ounce portions instead. How many full portions will it yield?"
+  },
+  {
+    "reviewId": "R083",
+    "category": "cdmFoodservice",
+    "optionA": "96 portions",
+    "optionB": "72 portions",
+    "optionC": "48 portions",
+    "optionD": "64 portions",
+    "question": "A cooked batch contains 12 quarts. How many 6-fluid-ounce portions does it provide, using 32 fluid ounces per quart?"
+  },
+  {
+    "reviewId": "R084",
+    "category": "cdmPersonnel",
+    "optionA": "Measuring recipe ingredient weights",
+    "optionB": "Calculating total daily labor hours",
+    "optionC": "Applying the revised label codes",
+    "optionD": "Receiving chilled food deliveries",
+    "question": "Errors occur only after a new labeling system is introduced; experienced and new workers make the same code-selection mistake. What is the most targeted training topic?"
+  },
+  {
+    "reviewId": "R085",
+    "category": "cdmPersonnel",
+    "optionA": "Position qualification requirements",
+    "optionB": "Daily production instructions",
+    "optionC": "Weekly work assignments",
+    "optionD": "Individual performance ratings",
+    "question": "A vacancy notice must describe required credentials, experience and abilities rather than list daily duties. Which information should the manager develop?"
+  },
+  {
+    "reviewId": "R086",
+    "category": "cdmSafety",
+    "optionA": "Tuesday of next week",
+    "optionB": "Sunday",
+    "optionC": "Monday of next week",
+    "optionD": "Saturday",
+    "question": "A refrigerated ready-to-eat TCS dish is prepared Monday and held at 41\u00b0F or below for more than 24 hours. With no other limiting date, what is its latest Food Code discard day?"
+  },
+  {
+    "reviewId": "R087",
+    "category": "cdmNutrition",
+    "optionA": "Dietitian and pharmacist",
+    "optionB": "Physician and physical therapist",
+    "optionC": "Dietitian and speech therapist",
+    "optionD": "Nurse and occupational therapist",
+    "question": "A new resident has several long-term medicines and unexplained appetite changes. Which collaboration best evaluates possible food-drug interactions?"
+  },
+  {
+    "reviewId": "R088",
+    "category": "cdmNutrition",
+    "optionA": "8 g",
+    "optionB": "20 g",
+    "optionC": "6 g",
+    "optionD": "14 g",
+    "question": "A yogurt label lists 14 g total sugars, including 6 g added sugars, per cup. What is the amount of naturally occurring sugar in one cup?"
+  },
+  {
+    "reviewId": "R089",
+    "category": "cdmNutrition",
+    "optionA": "120 mL",
+    "optionB": "360 mL",
+    "optionC": "180 mL",
+    "optionD": "160 mL",
+    "question": "An ordered drink supplies 12 g protein in 240 mL. A dietitian-approved replacement supplies 18 g in 240 mL. What volume provides the same protein as the original serving?"
+  },
+  {
+    "reviewId": "R090",
+    "category": "cdmNutrition",
+    "optionA": "180 mL",
+    "optionB": "60 mL",
+    "optionC": "90 mL",
+    "optionD": "120 mL",
+    "question": "A 240 mL beverage is one-quarter consumed. How much should the intake record show?"
+  },
+  {
+    "reviewId": "R091",
+    "category": "cdmFoodservice",
+    "optionA": "Planned portion quantity",
+    "optionB": "Ingredient purchase grade",
+    "optionC": "Calculated nutrient content",
+    "optionD": "Texture at service",
+    "question": "A test tray is checked at dispatch and again after the usual route. Nutrients and portions are unchanged, but the covered entree becomes soggy. Which quality dimension did the route affect?"
+  },
+  {
+    "reviewId": "R092",
+    "category": "cdmBusiness",
+    "optionA": "It falls from $5 to $4.50",
+    "optionB": "It falls from $6 to $5",
+    "optionC": "It rises from $5 to $6",
+    "optionD": "It remains at $5",
+    "question": "A proposed menu reduces total ingredient expense from $500 to $450 but reduces accepted meals from 100 to 75. Which interpretation follows for ingredient cost per accepted meal?"
+  },
+  {
+    "reviewId": "R093",
+    "category": "cdmBusiness",
+    "optionA": "Either case without considering dates",
+    "optionB": "The case with the lower unit price",
+    "optionC": "The Monday case",
+    "optionD": "The Wednesday case",
+    "question": "A kitchen uses FEFO rotation for dated stock. A case received Monday expires June 20; an equivalent case received Wednesday expires June 12. Both are sound. Which case should be issued first?"
+  },
+  {
+    "reviewId": "R094",
+    "category": "cdmBusiness",
+    "optionA": "Reduce food 10%; retain lease cost",
+    "optionB": "Retain food cost; reduce lease 10%",
+    "optionC": "Retain food cost; retain lease cost",
+    "optionD": "Reduce food 10%; reduce lease 10%",
+    "question": "Next month's patient days are forecast to fall by 10%. The budget model treats food cost as proportional to patient days and equipment lease cost as fixed. Which adjustment follows that model?"
+  },
+  {
+    "reviewId": "R095",
+    "category": "cdmFoodservice",
+    "optionA": "Reduction",
+    "optionB": "Emulsification",
+    "optionC": "Blanching",
+    "optionD": "Dredging",
+    "question": "A sauce simmers uncovered and becomes stronger in flavor as its volume decreases. Which technique is occurring?"
+  },
+  {
+    "reviewId": "R096",
+    "category": "cdmBusiness",
+    "optionA": "8 meals per labor hour",
+    "optionB": "6 meals per labor hour",
+    "optionC": "12 meals per labor hour",
+    "optionD": "9 meals per labor hour",
+    "question": "A kitchen serves 720 meal equivalents using 90 labor hours. What is its productivity?"
+  },
+  {
+    "reviewId": "R097",
+    "category": "cdmFoodservice",
+    "optionA": "6 minutes",
+    "optionB": "8 minutes",
+    "optionC": "12 minutes",
+    "optionD": "10 minutes",
+    "question": "A cooking trial produces acceptable prescribed texture at both 8 and 10 minutes. Residents prefer the 8-minute version. Which duration is supported for the revised recipe under these results?"
+  },
+  {
+    "reviewId": "R098",
+    "category": "cdmBusiness",
+    "optionA": "It fell from $7.20 to $6",
+    "optionB": "It rose from $6 to $7.20",
+    "optionC": "It remained at $6",
+    "optionD": "It rose from $5 to $6",
+    "question": "Food spending rises from $6000 for 1000 patient days to $7200 for 1200 patient days. What happened to cost per patient day?"
+  },
+  {
+    "reviewId": "R099",
+    "category": "cdmBusiness",
+    "optionA": "$14.00",
+    "optionB": "$3.00",
+    "optionC": "$7.00",
+    "optionD": "$9.00",
+    "question": "A department spends $6300 on raw food for 900 patient days. What is the raw-food cost per patient day?"
+  },
+  {
+    "reviewId": "R100",
+    "category": "cdmSafety",
+    "optionA": "Within 4 hours",
+    "optionB": "Within 1 hour",
+    "optionC": "Within 8 hours",
+    "optionD": "Within 6 hours",
+    "question": "A refrigerated TCS salad is prepared from room-temperature ingredients. Under the Food Code, how soon must it reach 41\u00b0F or below?"
+  },
+  {
+    "reviewId": "R101",
+    "category": "cdmPersonnel",
+    "optionA": "Hepatitis B",
+    "optionB": "Seasonal influenza",
+    "optionC": "Lyme disease",
+    "optionD": "Hepatitis A",
+    "question": "Which diagnosed infection is specifically included in the FDA Food Code 2-201.11 list that a food employee must report to the person in charge, even when currently asymptomatic?"
+  },
+  {
+    "reviewId": "R102",
+    "category": "cdmNutrition",
+    "optionA": "Access to personal possessions",
+    "optionB": "Choice of attending physician",
+    "optionC": "Notice of a room transfer",
+    "optionD": "Participation in care planning",
+    "question": "A nursing-facility resident asks to attend the meeting where the team will revise the nutrition care plan. Which right under 42 CFR 483.10 most directly applies?"
+  },
+  {
+    "reviewId": "R103",
+    "category": "cdmBusiness",
+    "optionA": "Offer B, $2.70 per needed unit",
+    "optionB": "Offer B, $1.80 per purchased unit",
+    "optionC": "Offer A, $1.33 per purchased unit",
+    "optionD": "Offer A, $2 per needed unit",
+    "question": "Only 40 usable units are needed before expiry. Offer A is 40 units for $80; offer B is 60 units for $108, with 20 unusable after expiry. Quality and handling costs are equal. Which purchasing choice minimizes cost for the needed usable quantity?"
+  },
+  {
+    "reviewId": "R104",
+    "category": "cdmFoodservice",
+    "optionA": "11:15 a.m.",
+    "optionB": "10:30 a.m.",
+    "optionC": "10:45 a.m.",
+    "optionD": "11:00 a.m.",
+    "question": "An entree needs 45 minutes cooking and 15 minutes portioning. Cart loading must begin at 11:30 a.m. What is the latest cooking start under this schedule?"
+  },
+  {
+    "reviewId": "R105",
+    "category": "cdmFoodservice",
+    "optionA": "Speed improved while accuracy worsened",
+    "optionB": "Both speed and accuracy improved",
+    "optionC": "Neither speed nor accuracy changed",
+    "optionD": "Accuracy improved while speed worsened",
+    "question": "After a dispatch change, delays fall from 20 to 8 per 100 trays, but errors rise from 2 to 10 per 100. What conclusion is supported?"
+  },
+  {
+    "reviewId": "R106",
+    "category": "cdmFoodservice",
+    "optionA": "It remained at 4%",
+    "optionB": "It fell from 10% to 9%",
+    "optionC": "It fell from 5% to 3%",
+    "optionD": "It rose from 3% to 5%",
+    "question": "A tray-check project reports 10 errors in 200 trays before and 9 in 300 trays afterward. Which comparison correctly describes the error rate?"
+  },
+  {
+    "reviewId": "R107",
+    "category": "cdmFoodservice",
+    "optionA": "Serving temperature",
+    "optionB": "The number of recipe versions",
+    "optionC": "The use of resident panelists",
+    "optionD": "The coded sample labels",
+    "question": "Residents compare two versions of a soup. Version A is served hot and B lukewarm, although the intended comparison is seasoning. Which variable prevents attributing the result to seasoning alone?"
+  },
+  {
+    "reviewId": "R108",
+    "category": "cdmNutrition",
+    "optionA": "Observe use of meal containers",
+    "optionB": "Review the prescribed nutrient targets",
+    "optionC": "Compare admission and current weights",
+    "optionD": "Obtain a monthly food-frequency history",
+    "question": "Three days of tray records show little eaten at lunch. Weight measurements are consistent, and the resident reports usual appetite but difficulty opening packages. Which assessment most directly tests the suspected barrier?"
+  },
+  {
+    "reviewId": "R109",
+    "category": "cdmNutrition",
+    "optionA": "15 g",
+    "optionB": "20 g",
+    "optionC": "45 g",
+    "optionD": "10 g",
+    "question": "A meal contains 30 g of a nutrient, but the client consumes two-thirds of each food. What is the calculated intake of that nutrient?"
+  },
+  {
+    "reviewId": "R110",
+    "category": "cdmSafety",
+    "optionA": "Wednesday",
+    "optionB": "Thursday",
+    "optionC": "Friday",
+    "optionD": "Tuesday",
+    "question": "Ready-to-eat refrigerated TCS food made Tuesday is mixed with a ready-to-eat refrigerated TCS ingredient made Thursday. The mixture will be held over 24 hours at 41\u00b0F or below. Under Food Code date marking, which preparation day controls?"
+  },
+  {
+    "reviewId": "R111",
+    "category": "cdmBusiness",
+    "optionA": "The labor budget-variance report",
+    "optionB": "The staffing vacancy summary",
+    "optionC": "The employee turnover analysis",
+    "optionD": "The labor productivity trend report",
+    "question": "The manager wants to know why actual labor spending exceeded the monthly plan. Which report directly compares those two financial figures?"
+  },
+  {
+    "reviewId": "R112",
+    "category": "cdmBusiness",
+    "optionA": "Approved recipes for resident meals",
+    "optionB": "The kitchen's current equipment age",
+    "optionC": "Customer demand at the planned price",
+    "optionD": "Oven capacity at the existing workload",
+    "question": "A catering proposal has adequate kitchen capacity, but no evidence that local offices want the service at the proposed price. Which investigation addresses the unresolved assumption?"
+  },
+  {
+    "reviewId": "R113",
+    "category": "cdmPersonnel",
+    "optionA": "Estimating quantities from container size",
+    "optionB": "Memorizing the previous day's totals",
+    "optionC": "Writing each count on a paper worksheet",
+    "optionD": "Recognizing discrepancies in output",
+    "question": "A redesigned job replaces manual counting with review of computer-produced tallies. Which competency now needs emphasis in the role description?"
+  },
+  {
+    "reviewId": "R114",
+    "category": "cdmSafety",
+    "optionA": "Supplier ingredient verification",
+    "optionB": "Utensil separation during service",
+    "optionC": "Menu-label transcription",
+    "optionD": "Receiving lot identification",
+    "question": "An allergen audit finds correct supplier information and correct menu labels, but shared serving utensils are moved between dishes during service. Which control needs improvement?"
+  },
+  {
+    "reviewId": "R115",
+    "category": "cdmSafety",
+    "optionA": "145\u00b0F",
+    "optionB": "125\u00b0F",
+    "optionC": "135\u00b0F",
+    "optionD": "130\u00b0F",
+    "question": "Under the Food Code, commercially processed packaged ready-to-eat TCS soup from an inspected plant is heated for hot holding. What minimum applies?"
+  },
+  {
+    "reviewId": "R116",
+    "category": "cdmFoodservice",
+    "optionA": "Recipe cooking time",
+    "optionB": "Departure-to-arrival travel",
+    "optionC": "Ingredient receiving time",
+    "optionD": "Ready-to-depart waiting",
+    "question": "Food is ready at 11:30, carts depart at 11:50 and arrive at noon. The target is delivery by 11:45. Travel time is fixed at 10 minutes. Which interval needs at least 15 minutes removed?"
+  },
+  {
+    "reviewId": "R117",
+    "category": "cdmSafety",
+    "optionA": "15 days",
+    "optionB": "90 days",
+    "optionC": "30 days",
+    "optionD": "60 days",
+    "question": "An equipment manual calls for servicing every 90 days. The last service was 60 days ago, with no malfunction reported. What scheduled interval remains under that maintenance plan?"
+  },
+  {
+    "reviewId": "R118",
+    "category": "cdmBusiness",
+    "optionA": "Purchase orders and vendor price lists",
+    "optionB": "Signed pickup receipts and issue entries",
+    "optionC": "Menu forecasts and standard recipes",
+    "optionD": "Supplier invoices and payment vouchers",
+    "question": "A warehouse\u2019s book inventory exceeds its physical count. Which source pair best investigates whether an issue was made but never deducted from the stock record?"
+  },
+  {
+    "reviewId": "R119",
+    "category": "cdmSafety",
+    "optionA": "155\u00b0F for 17 seconds",
+    "optionB": "165\u00b0F for 15 seconds",
+    "optionC": "135\u00b0F for 15 seconds",
+    "optionD": "145\u00b0F for 15 seconds",
+    "question": "A cook reheats in-house cooked and cooled chili for hot holding. Under the Food Code, which target applies?"
+  },
+  {
+    "reviewId": "R120",
+    "category": "cdmBusiness",
+    "optionA": "7.5 minutes",
+    "optionB": "10 minutes",
+    "optionC": "8 minutes",
+    "optionD": "6 minutes",
+    "question": "A department uses 60 labor hours to produce 450 meals. What is labor time per meal?"
+  },
+  {
+    "reviewId": "R121",
+    "category": "cdmPersonnel",
+    "optionA": "Only an HR-approved form qualifies",
+    "optionB": "Only a military-stamped letter qualifies",
+    "optionC": "Verbal or written notice can qualify",
+    "optionD": "Only a notice sent by an officer qualifies",
+    "question": "A reservist asks how to provide advance notice of an upcoming uniformed-service absence. Which statement matches USERRA\u2019s general rule?"
+  },
+  {
+    "reviewId": "R122",
+    "category": "cdmPersonnel",
+    "optionA": "Identify the device in a photograph",
+    "optionB": "Explain the device's purpose",
+    "optionC": "Recall the device's purchase model",
+    "optionD": "Measure a sample with the device",
+    "question": "A thermometer training session aims to establish practical skill. Which assessment asks the learner to perform the target behavior?"
+  },
+  {
+    "reviewId": "R123",
+    "category": "cdmNutrition",
+    "optionA": "1250 mL",
+    "optionB": "850 mL",
+    "optionC": "800 mL",
+    "optionD": "1050 mL",
+    "question": "The fluid record contains 600 mL consumed with meals and 250 mL consumed with medicines. An aide reliably reports another 200 mL consumed between meals, not yet entered. What is the corrected oral-fluid total?"
+  },
+  {
+    "reviewId": "R124",
+    "category": "cdmNutrition",
+    "optionA": "From 150 lb to 140 lb",
+    "optionB": "From 150 lb to 143 lb",
+    "optionC": "From 150 lb to 145 lb",
+    "optionD": "From 150 lb to 144 lb",
+    "question": "CBDM Nutrition Standard 1 identifies weight change greater than 5% in 30 days as a risk indicator. Which recorded 30-day loss crosses that threshold?"
+  },
+  {
+    "reviewId": "R125",
+    "category": "cdmSafety",
+    "optionA": "Repairing the defective part",
+    "optionB": "Recording the incident details",
+    "optionC": "Isolating the affected food",
+    "optionD": "Checking the repaired unit",
+    "question": "After a slicer defect, the process includes isolating affected food, repairing the machine, recording the incident and checking the repaired unit. Which step is the verification that the equipment can perform as intended again?"
+  },
+  {
+    "reviewId": "R126",
+    "category": "cdmFoodservice",
+    "optionA": "Expected diner count",
+    "optionB": "Finished batch weight",
+    "optionC": "Menu selection frequency",
+    "optionD": "Ingredient purchase price",
+    "question": "Two cooks use identical ingredient quantities but one produces 42 portions and the other 50. Both portion the finished batch accurately. Which record most directly tests whether production loss explains the difference?"
+  },
+  {
+    "reviewId": "R127",
+    "category": "cdmSafety",
+    "optionA": "Physical fragment contamination",
+    "optionB": "Allergen cross-contact",
+    "optionC": "Cleaning-agent contamination",
+    "optionD": "Pathogen cross-contamination",
+    "question": "A clean utensil contacts peanut sauce and is then used in a meal for someone avoiding peanuts. The concern is transfer of the ingredient rather than microbial growth. What is the relevant hazard?"
+  },
+  {
+    "reviewId": "R128",
+    "category": "cdmPersonnel",
+    "optionA": "Transfer carts 30 minutes earlier",
+    "optionB": "Transfer carts 15 minutes later",
+    "optionC": "Transfer carts 15 minutes earlier",
+    "optionD": "Transfer carts 30 minutes later",
+    "question": "The new dispatch procedure changes the handoff deadline from 11:30 to 11:15. Which instruction accurately states the change?"
+  },
+  {
+    "reviewId": "R129",
+    "category": "cdmFoodservice",
+    "optionA": "Increase the standard portion weight",
+    "optionB": "Revise the service-day schedule",
+    "optionC": "Change the purchasing pack size",
+    "optionD": "Reformulate the seasoning blend",
+    "question": "A culturally adapted menu receives high taste ratings but low use among residents who requested it. Comments identify the serving day as conflicting with their observance. Which change directly addresses that evidence?"
+  },
+  {
+    "reviewId": "R130",
+    "category": "cdmNutrition",
+    "optionA": "The tray card used at assembly",
+    "optionB": "The 10 a.m. clinical order",
+    "optionC": "The meal-production tally",
+    "optionD": "The kitchen order feed",
+    "question": "At 10 a.m. a verified order changes the resident from regular to a prescribed low-sodium diet. The kitchen order feed shows low-sodium, the meal tally shows low-sodium, and the tray card printed at 8 a.m. shows regular. Where is the remaining discrepancy?"
+  },
+  {
+    "reviewId": "R131",
+    "category": "cdmSafety",
+    "optionA": "Selecting a critical control point",
+    "optionB": "Choosing a corrective procedure",
+    "optionC": "Auditing completed temperature records",
+    "optionD": "Setting the monitoring interval",
+    "question": "A team has identified a pathogen hazard and now selects the process step where it must be controlled. Which HACCP activity is underway?"
+  },
+  {
+    "reviewId": "R132",
+    "category": "cdmPersonnel",
+    "optionA": "Add more examples of finished dishes",
+    "optionB": "Increase the target production rate",
+    "optionC": "Expand the abbreviated terms",
+    "optionD": "Reorder the equipment storage shelves",
+    "question": "A worker understands spoken explanations and performs the task correctly, but unfamiliar abbreviations make the written guide hard to use. Which revision targets the guide's barrier?"
+  },
+  {
+    "reviewId": "R133",
+    "category": "cdmFoodservice",
+    "optionA": "Residents rate the new sauce after rollout",
+    "optionB": "Kitchen staff taste both coded versions",
+    "optionC": "Residents taste both coded versions",
+    "optionD": "Kitchen staff rate the current sauce",
+    "question": "The goal is to learn whether residents prefer a less-sweet sauce to the current recipe. Which tasting plan best matches that population and comparison?"
+  },
+  {
+    "reviewId": "R134",
+    "category": "cdmSafety",
+    "optionA": "8 hours",
+    "optionB": "4 hours",
+    "optionC": "6 hours",
+    "optionD": "2 hours",
+    "question": "A slicer continuously handles ready-to-eat TCS food at room temperature. No special cleaning-frequency exception applies. Under FDA Food Code 4-602.11, what is the longest interval between cleaning during use?"
+  },
+  {
+    "reviewId": "R135",
+    "category": "cdmFoodservice",
+    "optionA": "The daily meal-service target time",
+    "optionB": "The supplier payment schedule",
+    "optionC": "The batch quantity calculation",
+    "optionD": "The resident diet prescription",
+    "question": "A substitute meets the nutrient requirement but produces half the original recipe yield at the same ingredient quantity. What else must be adapted before using the old production plan?"
+  },
+  {
+    "reviewId": "R136",
+    "category": "cdmPersonnel",
+    "optionA": "The maintenance report",
+    "optionB": "The meeting-room reservation",
+    "optionC": "The staff attendance record",
+    "optionD": "The purchasing report",
+    "question": "Minutes assign purchasing to obtain quotes, maintenance to verify utilities and the CDM to submit the proposal after both reports arrive. Utilities are verified but quotes are missing. Which dependency blocks submission?"
+  },
+  {
+    "reviewId": "R137",
+    "category": "cdmPersonnel",
+    "optionA": "Event portions versus extra labor hours",
+    "optionB": "Resident meals versus scheduled labor hours",
+    "optionC": "Employee experience versus rework hours",
+    "optionD": "Staff absences versus overtime hours",
+    "question": "The manager suspects catered-event workload explains Friday overtime. Which comparison directly evaluates that hypothesis across several Fridays?"
+  },
+  {
+    "reviewId": "R138",
+    "category": "cdmPersonnel",
+    "optionA": "Pending; supervisor responsible; due Friday",
+    "optionB": "Complete; supervisor responsible; due Friday",
+    "optionC": "Pending; purchasing responsible; due Friday",
+    "optionD": "Overdue; supervisor responsible; due Thursday",
+    "question": "Minutes show that the supervisor accepted responsibility for testing a new rota by Friday. The next meeting is Thursday. Which entry accurately records the status before the deadline if testing has not begun?"
+  },
+  {
+    "reviewId": "R139",
+    "category": "cdmFoodservice",
+    "optionA": "5 batches",
+    "optionB": "3 batches",
+    "optionC": "6 batches",
+    "optionD": "4 batches",
+    "question": "A kitchen needs 300 portions, and each full batch yields 80. If only full batches can be made, how many batches are required?"
+  },
+  {
+    "reviewId": "R140",
+    "category": "cdmFoodservice",
+    "optionA": "Coagulation",
+    "optionB": "Caramelization",
+    "optionC": "Gelatinization",
+    "optionD": "Emulsion",
+    "question": "An oil-and-vinegar dressing separates during holding. Which food-science concept explains the mixture formed when it is whisked together again?"
+  },
+  {
+    "reviewId": "R141",
+    "category": "cdmFoodservice",
+    "optionA": "During supplier receiving",
+    "optionB": "After food reaches diners",
+    "optionC": "During raw preparation",
+    "optionD": "After production before service",
+    "question": "A waste log shows 8 lb discarded during trimming, 3 lb left after service and 11 lb returned on trays. Which stage accounts for the greatest recorded loss?"
+  },
+  {
+    "reviewId": "R142",
+    "category": "cdmPersonnel",
+    "optionA": "10:35, 10:30, 10:40, 10:28, 10:45",
+    "optionB": "10:25, 10:30, 10:40, 10:38, 10:35",
+    "optionC": "10:25, 10:30, 10:20, 10:28, 10:40",
+    "optionD": "10:25, 10:35, 10:20, 10:38, 10:40",
+    "question": "A setup plan requires completion by 10:30 on at least four of five observed shifts. Which record meets that target?"
+  },
+  {
+    "reviewId": "R143",
+    "category": "cdmFoodservice",
+    "optionA": "Adjust the number of forecast diners",
+    "optionB": "Adjust pan placement during baking",
+    "optionC": "Change the ingredient purchase grade",
+    "optionD": "Change the recipe portion size",
+    "question": "A recipe transferred to a new oven yields acceptable flavor but uneven browning between shelves. Ingredient amounts and portions match the standard. What trial most directly addresses the observed difference?"
+  },
+  {
+    "reviewId": "R144",
+    "category": "cdmBusiness",
+    "optionA": "$8000",
+    "optionB": "$10000",
+    "optionC": "$8500",
+    "optionD": "$9500",
+    "question": "An oven quote is $8000. Required installation is $1500 and freight $500; the existing electrical supply is suitable. What acquisition amount should this proposal include?"
+  },
+  {
+    "reviewId": "R145",
+    "category": "cdmSafety",
+    "optionA": "Checking an unopened recipe binder",
+    "optionB": "Receiving a verbal shift assignment",
+    "optionC": "Handling the soiled utensils",
+    "optionD": "Reading the posted production schedule",
+    "question": "A worker washed and dried hands after handling soiled utensils and is ready to don new gloves. Which preceding event was the Food Code handwashing trigger in this sequence?"
+  },
+  {
+    "reviewId": "R146",
+    "category": "cdmSafety",
+    "optionA": "3 p.m.",
+    "optionB": "1 p.m.",
+    "optionC": "5 p.m.",
+    "optionD": "11 a.m.",
+    "question": "A cold TCS dish is removed at 9 a.m. at 40\u00b0F under a written 4-hour time-control procedure. By what time must it be served or discarded?"
+  },
+  {
+    "reviewId": "R147",
+    "category": "cdmBusiness",
+    "optionA": "$6.00",
+    "optionB": "$8.00",
+    "optionC": "$3.12",
+    "optionD": "$7.20",
+    "question": "A food item costs $2.40 to produce in ingredients. Using a 30% food-cost percentage pricing method, what is its selling price?"
+  },
+  {
+    "reviewId": "R148",
+    "category": "cdmNutrition",
+    "optionA": "Compare only their percentage columns",
+    "optionB": "Use the smaller serving for both",
+    "optionC": "Convert both to the 60 g portion",
+    "optionD": "Compare the calories per package",
+    "question": "Two cereals are compared for a prescribed portion of 60 g. Their labels use serving sizes of 30 g and 60 g. What must be done before comparing the listed nutrient amounts?"
+  },
+  {
+    "reviewId": "R149",
+    "category": "cdmNutrition",
+    "optionA": "Underweight",
+    "optionB": "Overweight",
+    "optionC": "Healthy weight",
+    "optionD": "Class 1 obesity",
+    "question": "A 68-year-old resident has a calculated BMI of 18.2 kg/m\u00b2. Which CDC adult BMI category applies?"
+  },
+  {
+    "reviewId": "R150",
+    "category": "cdmNutrition",
+    "optionA": "1700 kcal",
+    "optionB": "1800 kcal",
+    "optionC": "1600 kcal",
+    "optionD": "1500 kcal",
+    "question": "A three-day calorie count gives 1500, 1800,and 1500 kcal. What is the daily average?"
+  },
+  {
+    "reviewId": "R151",
+    "category": "cdmPersonnel",
+    "optionA": "5 workers",
+    "optionB": "6 workers",
+    "optionC": "4 workers",
+    "optionD": "3 workers",
+    "question": "A task takes 6 minutes per tray and 40 trays are due in one hour. Assuming equal work distribution and no other duties, how many workers are required?"
+  },
+  {
+    "reviewId": "R152",
+    "category": "cdmBusiness",
+    "optionA": "A $900 annual service agreement",
+    "optionB": "A $1200 refrigerator repair",
+    "optionC": "A $7200 refrigerator replacement",
+    "optionD": "A $600 replacement door gasket",
+    "question": "Facility policy treats equipment purchases above $5000 as capital and routine service as operating expense. Which proposed item belongs in the capital request under that policy?"
+  },
+  {
+    "reviewId": "R153",
+    "category": "cdmSafety",
+    "optionA": "Hazard analysis",
+    "optionB": "Establishing a purchasing budget",
+    "optionC": "Corrective-action documentation",
+    "optionD": "Verification of completed records",
+    "question": "A manager identifies that raw ingredients may introduce harmful bacteria. What HACCP step is this?"
+  },
+  {
+    "reviewId": "R154",
+    "category": "cdmFoodservice",
+    "optionA": "Protein coagulation",
+    "optionB": "Liquid reduction",
+    "optionC": "Fat rendering",
+    "optionD": "Sugar caramelization",
+    "question": "An egg mixture changes from fluid to firm during cooking. Which process primarily explains this change?"
+  },
+  {
+    "reviewId": "R155",
+    "category": "cdmPersonnel",
+    "optionA": "Three cook-hours remain",
+    "optionB": "One cook-hour remains",
+    "optionC": "No cook-hours remain",
+    "optionD": "Two cook-hours remain",
+    "question": "The contingency plan uses an approved simplified menu requiring two cook-hours per service. Three services are due and six cook-hours are available. How much capacity remains for catering under that plan?"
+  },
+  {
+    "reviewId": "R156",
+    "category": "cdmFoodservice",
+    "optionA": "$0.67",
+    "optionB": "$1.50",
+    "optionC": "$3.50",
+    "optionD": "$2.00",
+    "question": "A standardized recipe costs $72 for 48 servings. What is its ingredient cost per serving?"
+  },
+  {
+    "reviewId": "R157",
+    "category": "cdmPersonnel",
+    "optionA": "Wednesday",
+    "optionB": "Monday",
+    "optionC": "Friday",
+    "optionD": "Tuesday",
+    "question": "Staff training requires two full consecutive workdays and must finish Tuesday evening before Wednesday's launch. What is the latest start day?"
+  },
+  {
+    "reviewId": "R158",
+    "category": "cdmPersonnel",
+    "optionA": "Both shifts: 20%",
+    "optionB": "Morning: 30% versus evening: 5%",
+    "optionC": "Evening: 30% versus morning: 5%",
+    "optionD": "Evening: 15% versus morning: 10%",
+    "question": "Attendance records show absences on 2 of 40 morning shifts and 6 of 20 evening shifts. Which comparison correctly identifies the higher absence rate?"
+  },
+  {
+    "reviewId": "R159",
+    "category": "cdmNutrition",
+    "optionA": "Add 240 mg sodium per portion",
+    "optionB": "Keep 180 mg sodium per portion",
+    "optionC": "Add 600 mg sodium per portion",
+    "optionD": "Subtract 240 mg sodium per portion",
+    "question": "Two otherwise equivalent recipe ingredients provide 180 mg and 420 mg sodium per portion. A substitution uses the second ingredient at the same portion size. How does this affect the analysis?"
+  },
+  {
+    "reviewId": "R160",
+    "category": "cdmPersonnel",
+    "optionA": "Worked hours plus paid sick leave",
+    "optionB": "All hours listed on payroll",
+    "optionC": "Worked hours plus paid vacation",
+    "optionD": "Hours actually worked",
+    "question": "A covered U.S. employer is checking ordinary FMLA eligibility for a cook who meets the service-month and worksite requirements. Which hours generally count toward the 1,250-hour requirement?"
+  },
+  {
+    "reviewId": "R161",
+    "category": "cdmSafety",
+    "optionA": "May 12",
+    "optionB": "May 4",
+    "optionC": "May 7",
+    "optionD": "May 10",
+    "question": "Equivalent cases with the same safe use-by date were received May 4, May 7, May 10 and May 12. Which receipt is issued first under FIFO?"
+  },
+  {
+    "reviewId": "R162",
+    "category": "cdmFoodservice",
+    "optionA": "15%",
+    "optionB": "90%",
+    "optionC": "95%",
+    "optionD": "85%",
+    "question": "A tray audit finds 9 errors among 60 trays, counting any tray with an error as inaccurate. What percentage is accurate?"
+  },
+  {
+    "reviewId": "R163",
+    "category": "cdmBusiness",
+    "optionA": "Which dates appear on the menu",
+    "optionB": "Which recipes appear in the manual",
+    "optionC": "Which products appear on invoices",
+    "optionD": "Which workers enter the denominator",
+    "question": "One productivity report includes cooks and dishroom staff in labor hours; the other includes cooks but not dishroom staff. What must be standardized before comparing the rates?"
+  },
+  {
+    "reviewId": "R164",
+    "category": "cdmFoodservice",
+    "optionA": "The air entering the compressor",
+    "optionB": "The warmest part of the cabinet",
+    "optionC": "The kitchen air beside the door",
+    "optionD": "The coldest part of the cabinet",
+    "question": "A new mechanically refrigerated storage cabinet needs its built-in temperature sensor positioned under FDA Food Code 4-204.112. Where should it measure?"
+  },
+  {
+    "reviewId": "R165",
+    "category": "cdmPersonnel",
+    "optionA": "80",
+    "optionB": "78",
+    "optionC": "82",
+    "optionD": "84",
+    "question": "The hiring rubric weights safe technique 60% and speed 40%, each scored out of 100. An applicant scores 90 for technique and 70 for speed. What is the weighted score?"
+  },
+  {
+    "reviewId": "R166",
+    "category": "cdmSafety",
+    "optionA": "145\u00b0F for 15 seconds",
+    "optionB": "135\u00b0F for 15 seconds",
+    "optionC": "150\u00b0F for 1 second",
+    "optionD": "140\u00b0F for 5 seconds",
+    "question": "Under the Food Code, fish fillets with no special preparation exception must reach which cooking combination?"
+  },
+  {
+    "reviewId": "R167",
+    "category": "cdmSafety",
+    "optionA": "9 packs short",
+    "optionB": "6 packs short",
+    "optionC": "10 packs short",
+    "optionD": "1 pack short",
+    "question": "The purchase order lists 10 cases with 6 packs each. The delivery contains 9 cases with 6 packs each. What quantity discrepancy should be recorded?"
+  },
+  {
+    "reviewId": "R168",
+    "category": "cdmNutrition",
+    "optionA": "Iron and vitamin C",
+    "optionB": "Calcium and vitamin D",
+    "optionC": "Vitamin K and folate",
+    "optionD": "Sodium and chloride",
+    "question": "When dairy foods are removed from a menu because of lactose intolerance, which pair of nutrients most directly needs review to avoid reducing the usual contribution from fortified milk?"
+  },
+  {
+    "reviewId": "R169",
+    "category": "cdmNutrition",
+    "optionA": "Three occurrences on separate days",
+    "optionB": "Two occurrences on separate days",
+    "optionC": "One occurrence",
+    "optionD": "An occurrence every day",
+    "question": "For MDS K0100, what is the minimum frequency of a listed swallowing symptom during the 7-day look-back that warrants recording it?"
+  },
+  {
+    "reviewId": "R170",
+    "category": "cdmNutrition",
+    "optionA": "The assembly list and the dispatch list",
+    "optionB": "The tray card and the production tally",
+    "optionC": "The signed order and the actual meal",
+    "optionD": "The recipe sheet and the tray label",
+    "question": "An audit must test whether the kitchen implemented the clinical instruction, not merely whether two kitchen documents agree. Which pair supplies independent instruction and delivered outcome?"
+  },
+  {
+    "reviewId": "R171",
+    "category": "cdmSafety",
+    "optionA": "Section 3: composition/ingredients",
+    "optionB": "Section 5: fire-fighting measures",
+    "optionC": "Section 10: stability and reactivity",
+    "optionD": "Section 11: toxicological information",
+    "question": "Before assigning shelf locations for two cleaners, the manager needs to check whether they can react dangerously together. Which SDS section specifically lists incompatible materials and hazardous reactions?"
+  },
+  {
+    "reviewId": "R172",
+    "category": "cdmSafety",
+    "optionA": "155\u00b0F for 17 seconds",
+    "optionB": "165\u00b0F for 15 seconds",
+    "optionC": "165\u00b0F, instantaneous",
+    "optionD": "145\u00b0F for 15 seconds",
+    "question": "A Food Code cooking chart is being completed for poultry. Which minimum time-temperature combination belongs in that row?"
+  },
+  {
+    "reviewId": "R173",
+    "category": "cdmFoodservice",
+    "optionA": "36 lb",
+    "optionB": "30 lb",
+    "optionC": "19.2 lb",
+    "optionD": "24 lb",
+    "question": "For a banquet, 96 people each need a 5-ounce cooked portion. How many pounds of cooked product are required?"
+  },
+  {
+    "reviewId": "R174",
+    "category": "cdmFoodservice",
+    "optionA": "Increase meal ratings to 4 of 5",
+    "optionB": "Reduce mismatches to 4 per 100",
+    "optionC": "Increase checks to 4 per shift",
+    "optionD": "Reduce dispatch delay to 4 minutes",
+    "question": "A project targets wrong-diet trays rather than delivery speed. Baseline is 12 incorrect trays per 100. Which proposed objective measures improvement in the stated problem?"
+  },
+  {
+    "reviewId": "R175",
+    "category": "cdmNutrition",
+    "optionA": "Food preferences recorded at two admissions",
+    "optionB": "Weights measured morning and evening",
+    "optionC": "Meals eaten before and after the change",
+    "optionD": "Portions offered at breakfast and lunch",
+    "question": "A resident's intake declined after the evening medicine round moved from after dinner to before dinner. Which comparison most directly examines that temporal association?"
+  },
+  {
+    "reviewId": "R176",
+    "category": "cdmNutrition",
+    "optionA": "Sweetened condensed milk",
+    "optionB": "Evaporated milk",
+    "optionC": "Nonfat dry milk powder",
+    "optionD": "Aged cheddar cheese",
+    "question": "A resident follows a lactose-reduced plan and tolerates the approved choices. Which dairy snack generally contains less lactose than an equal portion of milk and is identified by NIDDK as an option some people tolerate?"
+  },
+  {
+    "reviewId": "R177",
+    "category": "cdmBusiness",
+    "optionA": "Both cost $4 per edible pound",
+    "optionB": "Both cost $3.30 per edible pound",
+    "optionC": "B costs less per edible pound",
+    "optionD": "A costs less per edible pound",
+    "question": "Product A costs $3 per purchased pound with 75% edible yield. Product B costs $3.60 with 90% yield. What is true of their edible-pound cost?"
+  },
+  {
+    "reviewId": "R178",
+    "category": "cdmPersonnel",
+    "optionA": "The most senior vacancy in the department",
+    "optionB": "The former position at the former wage",
+    "optionC": "The newest vacancy at its entry wage",
+    "optionD": "The position that would have been attained",
+    "question": "A cook returns from military service and satisfies USERRA reemployment conditions. Coworkers in the same progression earned a seniority-based pay increase during the absence. Which principle governs the cook\u2019s placement?"
+  },
+  {
+    "reviewId": "R179",
+    "category": "cdmBusiness",
+    "optionA": "Expected delivery lead time",
+    "optionB": "Expected minimum order frequency",
+    "optionC": "Expected invoice payment interval",
+    "optionD": "Expected edible yield",
+    "question": "A vendor offers meat priced per purchased pound. The recipe is portioned after trimming. Which specification is needed to compare cost for the amount actually served?"
+  },
+  {
+    "reviewId": "R180",
+    "category": "cdmNutrition",
+    "optionA": "Parenteral/IV feeding",
+    "optionB": "Mechanically altered diet",
+    "optionC": "Therapeutic diet automatically",
+    "optionD": "Feeding tube",
+    "question": "A resident receives a prescribed pureed diet throughout the MDS observation period, not as a trial. Which K0520 category captures the texture change itself?"
+  },
+  {
+    "reviewId": "R181",
+    "category": "cdmSafety",
+    "optionA": "Stir in an external ice-water bath",
+    "optionB": "Use a mechanical blast chiller",
+    "optionC": "Divide among shallow metal pans",
+    "optionD": "Use an immersion ice paddle",
+    "question": "A thick soup must cool rapidly. The kitchen has shallow metal pans and refrigerator space, but no blast chiller, ice paddle or ice supply. Which available method fits the situation?"
+  },
+  {
+    "reviewId": "R182",
+    "category": "cdmFoodservice",
+    "optionA": "100 lunches",
+    "optionB": "128 lunches",
+    "optionC": "92 lunches",
+    "optionD": "108 lunches",
+    "question": "The regular forecast is 120 lunches. A 20-person unit closes for the day and 8 visitors have confirmed lunches; all other demand is unchanged. What forecast follows?"
+  },
+  {
+    "reviewId": "R183",
+    "category": "cdmSafety",
+    "optionA": "Raw poultry followed by raw ground beef",
+    "optionB": "Raw ground beef followed by raw intact beef",
+    "optionC": "Raw intact beef followed by raw poultry",
+    "optionD": "Raw poultry followed by raw intact beef",
+    "question": "Under FDA Food Code 4-602.11, which change between raw animal foods qualifies for the exception to cleaning the food-contact surface between different types?"
+  },
+  {
+    "reviewId": "R184",
+    "category": "cdmSafety",
+    "optionA": "140\u00b0F",
+    "optionB": "130\u00b0F",
+    "optionC": "135\u00b0F",
+    "optionD": "125\u00b0F",
+    "question": "Under the FDA 2022 Food Code, ordinary hot-held soup must remain at least what temperature?"
+  },
+  {
+    "reviewId": "R185",
+    "category": "cdmNutrition",
+    "optionA": "No net increase in daily energy intake",
+    "optionB": "A 150 kcal fall in daily energy intake",
+    "optionC": "A 150 kcal gain in daily energy intake",
+    "optionD": "A 300 kcal gain in daily energy intake",
+    "question": "A fortified snack is intended to add intake between meals. Records show 150 kcal consumed from the snack but a 150 kcal reduction at dinner, with other intake unchanged. What does this show?"
+  },
+  {
+    "reviewId": "R186",
+    "category": "cdmNutrition",
+    "optionA": "Meal acceptance remained unchanged",
+    "optionB": "The data demonstrate a new diet order",
+    "optionC": "Weight maintenance was not achieved",
+    "optionD": "The two stated outcomes improved or held",
+    "question": "A plan targets maintaining weight while improving acceptance. Four-week records show weight stable, meal consumption rising from 40% to 70%, and the same meal prescription. Which interpretation fits these findings?"
+  },
+  {
+    "reviewId": "R187",
+    "category": "cdmBusiness",
+    "optionA": "$75",
+    "optionB": "$1200",
+    "optionC": "$24900",
+    "optionD": "$900",
+    "question": "A budget allows $12000 for a month and actual spending is $12900. What is the unfavorable dollar variance?"
+  },
+  {
+    "reviewId": "R188",
+    "category": "cdmFoodservice",
+    "optionA": "Menu preference collection",
+    "optionB": "Ingredient receiving",
+    "optionC": "Transport and service",
+    "optionD": "Recipe nutrient analysis",
+    "question": "A meal-audit tray has the correct prescribed foods and weights. Its hot entree arrives below the facility's documented serving-quality target, although dispatch checks passed. Which stage needs investigation?"
+  },
+  {
+    "reviewId": "R189",
+    "category": "cdmPersonnel",
+    "optionA": "It meets the 50-within-75-mile test",
+    "optionB": "Only full-time staff can be counted",
+    "optionC": "The second site must be within 50 miles",
+    "optionD": "Each site must separately employ 50",
+    "question": "An employee meets the FMLA employment-duration and hours tests. The employer has 35 staff at this worksite and 20 more 60 miles away. What does this establish about the worksite-size test?"
+  },
+  {
+    "reviewId": "R190",
+    "category": "cdmPersonnel",
+    "optionA": "2 cook-hours",
+    "optionB": "4 cook-hours",
+    "optionC": "5 cook-hours",
+    "optionD": "3 cook-hours",
+    "question": "A department can prepare 50 portions per cook-hour. Tomorrow demand rises by 150 portions and all existing staff hours are fully allocated. What additional capacity is indicated under the stated productivity assumption?"
+  },
+  {
+    "reviewId": "R191",
+    "category": "cdmPersonnel",
+    "optionA": "After the first interview",
+    "optionB": "After receiving the application",
+    "optionC": "After checking employment references",
+    "optionD": "After a conditional job offer",
+    "question": "A U.S. foodservice applicant has not yet received an offer. At what point may the employer generally require a medical examination, provided all selected applicants for that same job receive it?"
+  },
+  {
+    "reviewId": "R192",
+    "category": "cdmBusiness",
+    "optionA": "25 units",
+    "optionB": "55 units",
+    "optionC": "65 units",
+    "optionD": "40 units",
+    "question": "Daily use is 10 units, lead time is four days, and policy adds 15 units of safety stock. What reorder point follows those assumptions?"
+  },
+  {
+    "reviewId": "R193",
+    "category": "cdmNutrition",
+    "optionA": "The resident",
+    "optionB": "The daughter as bill payer",
+    "optionC": "The facility administrator",
+    "optionD": "The resident\u2019s admitting contact",
+    "question": "A nursing-facility resident retains decision-making capacity and has delegated only bill payment to a daughter. Who retains the right to participate in dietary care decisions under 42 CFR 483.10?"
+  },
+  {
+    "reviewId": "R194",
+    "category": "cdmFoodservice",
+    "optionA": "2 cycles",
+    "optionB": "3 cycles",
+    "optionC": "1 cycle",
+    "optionD": "4 cycles",
+    "question": "A recipe yields 48 portions per batch. Each batch needs one full cycle of oven time, and the oven holds two batches simultaneously. How many cycles are needed for 180 portions if whole batches are used?"
+  },
+  {
+    "reviewId": "R195",
+    "category": "cdmNutrition",
+    "optionA": "10%",
+    "optionB": "5%",
+    "optionC": "8%",
+    "optionD": "12%",
+    "question": "A resident weighs 152 lb now and weighed 160 lb one month ago. What percentage of the previous weight was lost?"
+  },
+  {
+    "reviewId": "R196",
+    "category": "cdmFoodservice",
+    "optionA": "80 portions",
+    "optionB": "120 portions",
+    "optionC": "100 portions",
+    "optionD": "140 portions",
+    "question": "A production record shows 120 portions prepared, 100 served and 20 safely retained as leftovers. The next comparable service expects 100 diners and no reserve. Which forecast is supported if acceptance and portions are unchanged?"
+  },
+  {
+    "reviewId": "R197",
+    "category": "cdmNutrition",
+    "optionA": "\u00bd cup: 20 g carbohydrate per cup",
+    "optionB": "1 cup: 20 g carbohydrate per cup",
+    "optionC": "\u00bd cup: 30 g carbohydrate per cup",
+    "optionD": "1 cup: 30 g carbohydrate per cup",
+    "question": "A resident requests a breakfast substitution. The written plan requires one 15 g carbohydrate portion; the approved list gives the following servings. Which meets that specific requirement?"
+  },
+  {
+    "reviewId": "R198",
+    "category": "cdmPersonnel",
+    "optionA": "50%",
+    "optionB": "75%",
+    "optionC": "25%",
+    "optionD": "100%",
+    "question": "A worker is rated on meeting the 11:15 dispatch standard. Four observations list completion at 11:10, 11:20, 11:05 and 11:25. What is the on-time rate for this sample?"
+  },
+  {
+    "reviewId": "R199",
+    "category": "cdmBusiness",
+    "optionA": "$8.00",
+    "optionB": "$7.00",
+    "optionC": "$3.00",
+    "optionD": "$4.00",
+    "question": "A kitchen's food, labor and supplies cost $1800,$2400,and $600 for 600 meals. What is total cost per meal?"
+  },
+  {
+    "reviewId": "R200",
+    "category": "cdmPersonnel",
+    "optionA": "Describe how you would resolve a dispute",
+    "optionB": "Describe a disagreement you resolved",
+    "optionC": "Describe your preferred conflict policy",
+    "optionD": "Describe qualities of a good mediator",
+    "question": "The interviewer wants evidence of how the applicant handled an actual conflict, rather than a hypothetical response. Which prompt supplies that evidence?"
+  }
+]

@@ -1,0 +1,1781 @@
+Training Manual
+CICN PRESENTS
+CULINARY
+KEYSTONES
+
+EXECUTIVE DIRECTOR
+Aleshia Hall-Campbell, PhD, MPH 
+ 
+ 
+ 
+Key Area: 
+1 – Nutrition
+2 – Operations
+USDA Professional Standards Codes:
+Menu Planning  – 1100
+Food Production – 2100
+Serving Food – 2200
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2024
+Training manual
+CICN PRESENTS 
+CULINARY KEYSTONES
+
+05/14/2024
+Disclaimer
+This project has been funded at least in part with Federal funds from the U.S. Department of 
+Agriculture, Food and Nutrition Service through an agreement with the Institute of Child Nutrition 
+at the University of Mississippi. The content of this publication does not necessarily reflect the view 
+or policies of the U.S. Department of Agriculture, nor does mention of trade names, commercial 
+products, or organizations imply endorsement by the U.S. Government.
+In accordance with federal civil rights law and U.S. Department of Agriculture (USDA) civil rights 
+regulations and policies, this institution is prohibited from discriminating on the basis of race, color, 
+national origin, sex (including gender identity and sexual orientation), disability, age, or reprisal or 
+retaliation for prior civil rights activity.
+Program information may be made available in languages other than English. Persons with 
+disabilities who require alternative means of communication to obtain program information (e.g., 
+Braille, large print, audiotape, American Sign Language), should contact the responsible state or local 
+agency that administers the program or USDA’s TARGET Center at (202) 720-2600 (voice and TTY) 
+or contact USDA through the Federal Relay Service at (800) 877-8339.
+To file a program discrimination complaint, a Complainant should complete a Form AD-3027, USDA 
+Program Discrimination Complaint Form which can be obtained online at: https://www.usda.gov/sites/
+default/files/documents/ad-3027.pdf, from any USDA office, by calling (866) 632-9992, or by writing 
+a letter addressed to USDA. The letter must contain the complainant’s name, address, telephone 
+number, and a written description of the alleged discriminatory action in sufficient detail to inform 
+the Assistant Secretary for Civil Rights (ASCR) about the nature and date of an alleged civil rights 
+violation. The completed AD-3027 form or letter must be submitted to USDA by:
+(1) Mail: U.S. Department of Agriculture  
+Office of the Assistant Secretary for Civil Rights  
+1400 Independence Avenue, SW  
+Washington, D.C. 20250-9410; or
+(2) Fax: (833) 256-1665 or (202) 690-7442; or 
+(3) Email: program.intake@usda.gov
+This institution is an equal opportunity provider.
+The University of Mississippi is an EEO/AA/Title VI/Title IX/Section 504/ADA/ADEA Employer.
+Except as provided below, you may freely use the text and information contained in this document 
+for non-profit or educational use with no cost to the participant for the training providing the following 
+credit is included. These materials may not be incorporated into other websites or textbooks and may 
+not be sold.
+Suggested Reference Citation:
+Institute of Child Nutrition. (2024). CICN presents: Culinary keystones. University, MS: Author.
+The photographs and images in this document may be owned by third parties and used by the 
+University of Mississippi under a licensing agreement. The university cannot, therefore, grant 
+permission to use these images. Please contact helpdesk@theicn.org for more information.
+©2024, Institute of Child Nutrition, The University of Mississippi, School of Applied Sciences
+TABLE OF CONTENTS
+ 
+7 Background Information for Trainers
+9 Training-at-a-glance
+11 CICN Presents: Culinary Keystones
+12 Training Overview
+13 Ground Rules
+14 Professional Standards and Key Area Code
+15 ICN Competencies
+16 Overall Training Goals
+16 Training Objectives
+17 Standardized Recipes
+19  Handout: Benefits of Standardized Recipes
+21 The Anatomy of a Standardized Recipe
+23  Handout: Bean Tostada USDA Recipe For Schools
+28 Mise en Place
+30  Handout: Mise En Place
+32  Handout: Mise en Place List (Template)
+33  Recipe: Bean Tostada USDA Recipe for Schools
+37  Handout: Mise En Place List (Sample)
+39 Weight vs. Volume
+42 Portioning
+45  Handout: Basics at a Glance
+49 Activity: Developing A Mise en Place List
+49  Grab-and-Go Recipe Packet
+51  Handout: Mise en Place List (Template)
+54  Application Action Plan
+55  Reflections
+58  Culinary Terms
+64  Instructor’s Preparation Guide
+67  Equipment Checklist
+67  Shopping List
+
+7
+CICN Presents: Culinary Keystones Training Manual
+Background Information for Trainers
+WELCOME to CICN Presents: Culinary 
+Keystones. This training manual is an instructional aid 
+for you, the course instructor. The manual provides the 
+content and educational tools needed to introduce child 
+nutrition professionals to concepts and basic skills related 
+to preparing and serving safe, high-quality meals to 
+students. To assist you further in successfully conducting 
+this training, the Training Manual includes the following 
+prompts:
+Demonstrate/Discuss
+This prompt will be followed by talking points or instructions to deliver to the participants. Use 
+these talking points as a guide for the topic of discussion. Following the instructions provided will 
+assist you in having a successful training.
+Key Messages
+This prompt will provide important information that child nutrition professionals should 
+understand. There are suggested questions to ask participants for discussion purposes. Please 
+ensure the participants have a good understanding of these key messages before continuing 
+with the training.
+Class Discussion Prompts
+This prompt will suggest questions to ask the participants to start a good discussion among 
+the group. For some questions, answers may be provided to help guide the conversation if 
+participants seem reluctant to answer.
+Additional Information
+ This training is intended for 24 participants, including hands-on food production activities 
+for twelve sets of paired participants. However, if there are fewer than 24 participants, the 
+total number of participants will be divided as needed.
+ The equipment list, shopping list, setup guide, and lesson preparation information can be 
+found in the Appendix of the Training Manual.
+Instructor’s Note:
+The purpose of the 
+background information is to 
+help you become familiar with 
+the content of the training. It is 
+not a part of the training detail.
+BACKGROUND INFORMATION 
+FOR TRAINERS
+8
+Training Manual               
+Background Information for Trainers
+CICN Presents: Culinary Keystones
+Activity Information
+Participants will work together. At the beginning of the training, divide the participants into pairs. 
+Depending on the total number of participants, there may be three participants that work together.
+Here are a few suggestions for developing teams/pairs:
+ Allow participants who are sitting next to each other to be in teams or pairs or have them 
+number off by the desired number of lab teams.
+ Have child nutrition or culinary terms on one note card and the corresponding definition on 
+another note card. Let participants circulate the room to find a match. The participants with 
+matching cards are partners. For example, one card would have the word “food processor,” and 
+the corresponding definition card would read, “This piece of equipment is used to shred, chop, 
+and blend foods.”
+ Place different colored dots on nametags, note cards, or on the outside of the workbooks. The 
+participants with the same color are in a group or pair.
+The above suggestions can serve two purposes: an ice-breaker and a way to form lab teams/pairs. 
+9
+CICN Presents: Culinary Keystones Training Manual
+Training-at-a-Glance
+TRAINING-AT-A-GLANCE
+Time Topic Task Materials
+Introduction
+20 Minutes Welcome and 
+Overview
+ Introduce topic
+ Introduce instructor
+ Participant introductions
+ Training overview
+ Ground rules
+ Review USDA professional 
+standards
+ Review ICN Competencies
+ Review training goals and 
+objectives
+ Review culinary terms
+ Sign-in sheet
+ Training Manual
+Standardized Recipes
+OBJECTIVES:
+ Summarize the benefits of utilizing a standardized recipe.
+ Identify the components of a standardized recipe.
+15 Minutes Recipe Basics  Review the benefits and 
+components of a standardized 
+recipe
+ Training Manual
+ Handout: Benefits of 
+Standardized Recipes
+ Recipe: Bean Tostada USDA 
+Recipe for Schools
+Mise en Place
+OBJECTIVE: 
+Identify how to develop a mise en place schedule for efficient food production.
+15 Minutes Mise en Place  Review how to make a mise 
+en place list
+ Training Manual
+ Handout: Mise en Place
+ Handout: Mise en Place 
+(Template)
+ Recipe: Bean Tostada USDA 
+Recipe for Schools
+ Handout: Mise en Place List 
+(Sample)
+Expected Training Duration- 2 hours
+10
+Training Manual   CICN Presents: Culinary Keystones
+Training-at-a-Glance
+Time Topic Task Materials
+Weight Versus Volume
+OBJECTIVES:
+ Apply the use of basic units of measurement.
+ Explain the benefits of using weight and volume properly.
+20 Minutes Weight Versus 
+Volume
+ Review units of measure
+ Identify the proper tools to 
+utilize for accurate measuring
+ Training Manual
+ Instructor’s Preparation Guide
+Time Topic Task Materials
+Portioning
+OBJECTIVES:
+ Select the correct tools and equipment for measuring and serving.
+ Apply best practices for portion control.
+5 Minutes Portion Control  Review portion control benefits
+ Review portion control tools
+ Training Manual
+ Handout: Basics-at-a-
+Glance
+Activity: Developing a Mise en Place List
+OBJECTIVE:
+Develop a mise en place list using multiple recipes.
+25 Minutes Activity  Develop a mise en place list  Training Manual
+ Grab-and-Go Recipe 
+packet
+ Handout: Mise en Place 
+List (Template)
+Wrap Up
+10 Minutes Goal Development  Review the lesson
+ Discuss implementation of skills
+ Training Manual
+ Handout: Application 
+Action Plan
+ Handout: Reflections
+Conclusion
+10 Minutes  Training Evaluation  Conduct Training Evaluation
+ Conclude the training
+ Training Manual
+ Training Evaluation QR 
+code
+11
+CICN Presents: Culinary Keystones Training Manual
+Introduction
+Introduction Talking Points
+ Welcome to CICN Presents: Culinary Keystones.
+ You can say: This training will teach you how to cook 
+from scratch or with some pre-made ingredients. You 
+will learn important skills like reading recipes and 
+organizing your tools and ingredients before cooking. 
+You will also learn how to measure and portion your 
+food. By the end of the training, you will be able to make delicious and high-quality meals 
+for your students. This training will be hands-on, so you will have a chance to practice 
+these skills.
+ Introduce yourself and other special guests. You should state your name, title/credentials, 
+and relevant experience. 
+Ice Breaker Ideas
+ Facilitate an ice breaker to provide participants with an opportunity to introduce themselves 
+and identify their titles/credentials and relevant experience. Ideas may include asking 
+participants to include a fun food fact about themselves in their introduction. Suggested 
+examples include:
+• What’s the strangest thing you’ve ever eaten?
+• If you could only eat one food for the rest of your life, what would it be, and why?
+• What’s something that you regularly ate growing up?
+• What’s your signature dish?
+• If you could go to dinner anywhere tonight, where would you go?
+ After the ice breaker, instruct participants to form (or you may assign) twelve teams of two 
+for the activity later in the training.
+ Consider combining the ice-breaker and the pairs/team formation.
+Introduction (5 Minutes)
+CICN PRESENTS: 
+CULINARY KEYSTONES
+Instructor’s Note:
+Introduce yourself to the attendees 
+using the following format and select 
+an ice breaker from the list below. 
+Confirm that participants have 
+signed the sign-in sheet and that 
+they all have a copy of the workbook 
+and a pen or pencil.
+12
+Training Manual                 CICN Presents: Culinary Keystones
+Training Overview
+Refer participants to the following documents and briefly 
+review each one:
+       Ground Rules
+       USDA Professional Standards
+       ICN Competencies
+       Training Goals and Objectives
+       Culinary Terms
+TRAINING OVERVIEW
+INSTRUCTOR’S NOTE: 
+Time does not allow for a 
+review of all of the terms and 
+definitions included in the 
+Culinary Terms. Ask volunteers 
+to read the definitions for the 
+following terms: Batch Cook, 
+Blanching, Mise en Place, and 
+Standardized Recipe. Ask if 
+any other culinary terms need 
+clarification.
+13
+CICN Presents: Culinary Keystones Training Manual
+Ground Rules
+GROUND RULES
+INSTRUCTOR’S NOTE:
+Prior to the training, you can 
+send the following ground rules 
+to all training participants.
+ICN developed ground rules to help the training run smoothly 
+and allow all participants to benefit from the course instruction and information.
+Show up on time and come prepared
+Be prompt in arriving and returning from breaks. Come with a positive attitude.
+Stay mentally and physically present
+Be present and stay on task. Listen attentively to others and avoid disruptive side conversations.
+Let everyone participate
+Be patient when listening to others speak. Treat all participants with the same respect that you 
+would want from them.
+Listen with an open mind
+Stay open to new ways of doing things and listen for understanding. You can respect another 
+person’s point of view without agreeing with them.
+Think before speaking
+Seek first to understand, then to be understood. Avoid using idioms and phrases that can be 
+misunderstood.
+Attack the problem, not the person
+Respectfully challenge the idea, not the person. Honest and constructive discussions are 
+necessary to get the best results.
+Focus on food safety
+Ensure proper food safety practices are adhered to at all times. Practice proper handwashing 
+and glove use, avoid cross-contact and cross-contamination, follow cleaning and sanitation 
+practices, and proper temperature controls.
+Maintain physical safety
+Kitchen environments are filled with the potential for accidents. Safeguard yourself and others 
+by following good workplace safety practices. Keep floors clean and free of debris and standing 
+water, move safely with sharp items such as knives, and use equipment with caution to prevent 
+burns, cuts, and other injuries. Immediately report any injuries to your instructor.
+Wear proper kitchen attire
+Wear proper kitchen attire during culinary labs. Proper attire includes closed-toed shoes (slip-
+resistant are preferable), a clean apron, and a hair restraint. Remove jewelry (including rings—
+except for a single, plain band without stones), remove nail polish and artificial fingernails, and 
+maintain good personal hygiene.
+14
+Training Manual                 CICN Presents: Culinary Keystones
+Professional Standards and Key Area Code
+Key Area Codes
+1 – Nutrition
+2 – Operations
+Professional Standards
+Menu Planning – 1100
+Employee will be able to effectively and efficiently plan and prepare standardized recipes, 
+cycle menus, and meals, including the use of USDA Foods, to meet all Federal school nutrition 
+program requirements, including the proper meal components.
+ 1140 – Write standardized recipes, and use Food Buying Guide. 
+Food Production – 2100
+Employee will be able to effectively utilize food preparation principles, production records, 
+kitchen equipment, and food crediting to prepare foods from standardized recipes, including 
+those for special diets.
+ 2110 – Understand and effectively prepare food using a standardized recipe.
+ 2130 – Develop culinary skills necessary for school meal preparation.
+ 2140 – Properly use and care for equipment.
+Serving Food – 2200
+Employee will be able to correctly and efficiently serve food portions to meet all USDA school 
+meal pattern requirements and encourage healthy food selections including those for special 
+diets.
+ 2230 – Serve food to maintain quality and appearance standards.
+PROFESSIONAL STANDARDS 
+AND KEY AREA CODE
+15
+CICN Presents: Culinary Keystones Training Manual
+ICN Competencies
+ICN COMPETENCIES
+Competencies, Knowledge, and Skills of Effective School Nutrition Assistants and Technicians
+FUNCTIONAL AREA 1: Equipment use and care – This functional area is defined as the selection, 
+operation, and maintenance of foodservice equipment.
+Core Competency 1.1 
+1.1a Demonstrates the ability to select the correct foodservice equipment for the food 
+product being prepared.
+FUNCTIONAL AREA 2: FOOD PRODUCTION – This functional area is defined as the production of high-
+quality food products using procedures for receiving, inventory, preparation, and service of safe, 
+appetizing, nutritious meals to students.
+Core Competency 2.1
+2.1a Knows units of measurement (pound, cup, etc.) used in preparation/production, 
+and demonstrates the ability to make appropriate conversions and sizing adjustment, as 
+needed.
+ 
+Core Competency 2.2
+2.2a Knows and demonstrates basic food preparation techniques used in producing large 
+quantities of food items. 
+2.2b Knows and demonstrates the ability to prepare food products following standardized 
+recipes.
+ 
+Core Competency 2.3 
+2.3a Knows the importance of and demonstrates proper procedures for monitoring 
+and evaluating all foods (received and produced) to ensure quality standards 
+are achieved.
+16
+Training Manual                CICN Presents: Culinary Keystones
+Training Objectives
+TRAINING OBJECTIVES
+By the end of the training, participants will be able to:
+ Summarize the benefits of utilizing a standardized recipe.
+ Identify the components of a standardized recipe.
+ Utilize a standardized recipe to prepare high-quality, consistent, and well-portioned dishes.
+ Develop a mise en place schedule for efficient food production.
+ Apply the use of basic units of measurement.
+ Explain the benefits of using weight and volume properly.
+ Select the correct tools and equipment for measuring and serving.
+ Apply best practices for portion control.
+OVERALL TRAINING 
+GOALS
+ Equip participants with the knowledge and skills required to effectively utilize standardized 
+recipes and implement efficient food production practices
+ Improve the participants’ ability to produce high-quality, consistent, and well-portioned 
+dishes while minimizing waste and maximizing efficiency.
+17
+CICN Presents: Culinary Keystones Training Manual
+Standardized Recipes
+STANDARDIZED RECIPES
+(15 minutes)
+Time Topic Task Materials
+Standardized Recipes
+OBJECTIVES:
+ Summarize the benefits of utilizing a standardized recipe.
+ Identify the components of a standardized recipe.
+15 Minutes Recipe Basics  Review the benefits and 
+components of a standardized 
+recipe
+ Training Manual
+ Handout: Benefits of 
+Standardized Recipes
+ Recipe: Bean Tostada USDA 
+Recipe for Schools
+Lesson Overview
+ Today we are talking about using standardized recipes in child nutrition programs. These 
+recipes have been tested and adjusted to work well in a specific setting, giving consistent 
+results every time they are used. Using these standardized recipes is important for 
+preparing the food correctly. 
+ We will discuss why standardized recipes are helpful, identify the components of a 
+standardized recipe, and learn how to read and use them. The standardized recipe is like 
+a blueprint or guide for making a dish, so reading the whole thing before you start cooking 
+will help to ensure you do not miss any steps. Even convenience foods that are used in 
+child nutrition programs need a standardized recipe to ensure they are prepared correctly.
+Discuss
+ Today, we will discuss the importance of using standardized recipes in child nutrition 
+programs. A standardized recipe is a recipe that has been tested and adapted for use in a 
+specific setting, and it provides consistent results every time it is prepared.
+ Standardized recipes are important for ensuring consistent food quality, but they can be 
+confusing because they have a lot of information. This lesson will help make them less 
+intimidating. We will discuss why using a standardized recipe is helpful, its parts, and how 
+to read and use it. Throughout this section, we will:
+• Summarize the benefits of utilizing a standardized recipe.
+• Identify the components of a standardized recipe.
+• Identify how to read and use a standardized recipe.
+ The food production process begins with the standardized recipe, which gives all the steps 
+and procedures necessary for consistent, quality food production.
+18
+Training Manual CICN Presents: Culinary Keystones
+Standardized Recipes
+ Review the U.S. Department of Agriculture (USDA) definition of a standardized recipe.
+• The U.S. Department of Agriculture (USDA) defines a standardized recipe as one that 
+has been tried, adapted, and retried at least three times and has been found to produce 
+the same good results and yield every time when the exact procedures are used with 
+the same type of equipment and the same quantity and quality of ingredients. 
+The terms “quantity recipes” and “standardized recipes” often are used interchangeably; 
+however, they are not the same. Many recipes are written to produce large quantities 
+of food, but the recipe may or may not be standardized. Any recipe that produces 
+25 servings or more is termed a quantity recipe. However, quantity recipes are not 
+standardized until they have been prepared at least 3 times with consistent results.
+ All menu items served in schools need a standardized recipe. Even convenience foods, 
+such as frozen pizza, need directions for staff to follow during preparation and cooking.
+ Think of a standardized recipe as your blueprint or guide for preparing menu items.
+ Although recipes are a step-by-step set of instructions, the instructions may not always 
+appear this way. Therefore, reviewing the recipe from beginning to end before preparation 
+is important.
+• For example, a recipe might read “pour out the cooking liquid” on one line, but the 
+words “and reserve” are on the second line. If you are not careful, you will pour out the 
+cooking liquid and later learn that you need to reserve the liquid when you continue 
+reading the recipe and see the words “and reserve.”
+ 
+Class Discussion Prompt
+Question: What are some benefits of using standardized 
+ recipes in your program?
+Instructor’s Note:
+Ask for verbal answers and 
+then review the Benefits of 
+Standardized Recipes handout.
+19
+CICN Presents: Culinary Keystones Training Manual
+Standardized Recipes
+Handout: Benefits of Standardized Recipes
+BENEFITS OF STANDARDIZED RECIPES
+ 
+Using standardized recipes provides many benefits to child  
+nutrition operations.
+ 
+Discuss
+ Consistent food quality – Using standardized recipes ensures that menu items are 
+consistent in quality each time they are prepared and served.
+ Predictable yield – Using standardized recipes produces the planned number of servings. 
+This can help reduce the amount of leftover food if there has been overproduction and 
+help prevent shortages of servings on the line. A predictable yield is especially important 
+when transporting food from a production kitchen to other serving sites.
+ Customer satisfaction – Well-developed recipes that appeal to students are important to 
+maintaining and increasing student participation levels. Schools may take a lesson from 
+national restaurant chains that have developed popular menu items consistent in every 
+detail of ingredient, quantity, preparation, and presentation. Standardized recipes provide 
+this consistency and can result in increased customer satisfaction.
+ Consistent nutrient content – Standardized recipes ensure that nutritional values per 
+serving are valid and consistent.
+ Food cost control – Standardized recipes provide consistent and accurate information for 
+food cost control because the same ingredients and quantities of ingredients per serving 
+are used each time the recipe is produced.
+ Efficient purchasing procedures – Purchasing is more efficient because the quantity of 
+food needed for production is easily calculated from the information on each standardized 
+recipe.
+ Inventory control – Using standardized recipes provides predictable information on the 
+quantity of food inventory that will be used each time the recipe is produced.
+ Labor cost control – Written standardized procedures in the recipe make efficient use of 
+labor time and allow for planned scheduling of foodservice personnel for the workday. 
+Training costs are reduced because new employees receive specific directions for 
+preparing each recipe.
+ Increased employee confidence – Employees feel more satisfied and confident in their jobs 
+because standardized recipes eliminate guesswork, decrease the chances of producing 
+poor food products, and prevent shortages of servings during meal service.
+ Successful completion of Administrative Reviews – Standardized recipes are a 
+documentation source for the Administrative Review (AR). ARs determine how well 
+schools are meeting nutrition standards. A review cannot be completed if the recipes are 
+missing information or provide inaccurate information on ingredients, yield, or serving size. 
+ARs require standardized recipes to ensure that the nutrient analysis is accurate. Keep 
+menus, recipes, production records, and nutrient analyses on file for review.
+20
+Training Manual CICN Presents: Culinary Keystones
+Standardized Recipes
+Key Messages
+ A best practice is to always review the recipe 
+from beginning to end before preparation.
+ A standardized recipe is your guide for 
+accurately preparing menu items.
+ Using a standardized recipe in food production 
+allows the program to yield the same results 
+each time the recipe is prepared. 
+Instructor’s Note:
+For more in-depth information about recipe 
+development, the Institute of Child Nutrition 
+published the USDA Recipe Standardization 
+Guide for School Nutrition Programs. 
+The guide describes recipe standardization techniques in detail and includes examples, practice 
+exercises, and reference materials. It is a “how-to” guide on recipe standardization for school 
+nutrition recipe developers. The guide is designed to be a complete source of information on 
+recipe standardization and includes a glossary of terms related to recipe standardization.
+Class Discussion Prompt
+Question: Why is it important to read the entire recipe before starting food production?
+Possible Answer:
+ The directions may not be listed in the exact order. 
+ An ingredient may be used in multiple steps, so identifying this beforehand limits potential 
+mistakes.
+21
+Anatomy Of A Standardized Recipe
+CICN Presents: Culinary Keystones Training Manual
+THE ANATOMY OF A 
+STANDARDIZED RECIPE
+Instructor’s Note:
+We want to make this part of the training is engaging for everyone involved. To do this, we suggest 
+you ask volunteers to participate by identifying key information in each section of the recipe. For 
+example, when discussing the Equipment and Utensils Needed section, ask someone to point 
+out a piece of equipment and a serving utensil mentioned in the recipe. This exercise helps 
+participants to be more involved in the training and helps them remember the important details.
+Ask participants questions about each component to help them understand why it is important and 
+how they can use it in their work. This exercise helps them think more deeply about applying this 
+information in their work.
+The goal is to make this part of the training as engaging as possible, so be creative and have fun!
+Discuss
+Now we will review the components of a standardized recipe, using the Bean Tostada USDA 
+Recipe for Schools as a reference.
+ Recipe Title and Recipe Description
+• The recipe has a title (name) and brief description (1–3 sentences).
+• Include a picture of the final product to illustrate how the final product should look to 
+help cooks and servers achieve consistency visually.  
+ Ingredients
+• The ingredient list includes all ingredients used in a recipe. The ingredient name  
+includes the name of the product, product type/form (fresh, frozen, canned), and any 
+preparation technique(s) (peeled, grated, minced, diced). The size for preparation 
+techniques, such as slicing and dicing (e.g., 1/2” slices or 1/4” diced) is included. 
+Ingredients are listed in the order they are used when preparing the recipe.
+ Units of Measure for Each Ingredient
+• The quantity of each ingredient is listed in weight and volume. Many USDA includes 
+both the weight and volume, except when the weight is below 1 oz, because weight 
+provides the most accurate information for the Recipe Analysis Workbook (RAW) and 
+nutrient analysis. Package numbers such as “1 package” are not used to describe the 
+amount of a product.” Package size is variable depending on the supplier or the form. 
+Quantities are listed in the most universally understood unit of measure (e.g., “1 lb 4 oz” 
+instead of “20 oz” or “1/2 cup” instead of “8 Tbsp”). Standard abbreviations are used for 
+units of measure and a fraction format.
+ Preparation Directions
+• The steps for preparing the recipe are listed in order, including information on 
+alternative preparation methods and helpful cooking tips.
+22
+Anatomy Of A Standardized Recipe
+Training Manual CICN Presents: Culinary Keystones
+ Cooking Temperature, Cooking Time, and Preparation Time
+• The preparation time, and cooking temperature and cooking time, if appropriate, are 
+included. Preparation time includes chopping or dicing ingredients, preparing individual 
+servings, placing items on a baking sheet, etc.
+ Serving Size
+• The amount of a single portion is provided in volume/weight. Provide information in 
+a practical amount, such as 1/2 cup, 1 slice, 2 squares, etc. To represent a portion 
+quantity in a “practical amount,” use easily recognizable tools like an 8 oz spoodle or 
+specify ingredients in clear units such as “each” or “number of pieces.” This approach 
+ensures servers can quickly and accurately measure food portions. Keeping things 
+simple and consistent aids in preventing mistakes and ensures students receive the 
+right amount of food.
+ Recipe Yield
+• Provide the amount of the finished or processed product (weight, volume, and number 
+of servings) available after production.
+ Equipment and Utensils Needed
+• List the cooking and serving equipment needed to prepare and serve the recipe.
+ Crediting Information
+• This statement should identify which NSLP/SBP meal component(s) the ingredients in 
+the recipe count toward meats/meat alternates, vegetables (including subgroups), fruits, 
+and/or grains. Include both crediting statements if an ingredient may credit toward more 
+than one meal component. For example, the Bean Tostada USDA Recipe for Schools 
+crediting statement—“Legume as Meat Alternate: 2 oz equivalent meat/meat alternate, 
+1/8 cup red/orange vegetable, 1/4 cup other vegetable, 1/8 cup additional vegetable, 
+and 1 oz equivalent grains.” OR “Legume as Vegetable: 0.5 oz equivalent meat/
+meat alternate, 3/8 cup legume vegetable, ⅛ cup red/orange vegetable, 1/4 cup other 
+vegetable, 1/8 cup additional vegetable, and 1 oz equivalent grains.”
+ Nutrient Analysis
+• In this section, identify the nutrients provided per serving. The purpose of the nutrient 
+analysis is to determine compliance with school meal regulatory requirements 
+for calories, saturated fat, and sodium and to monitor the levels of these dietary 
+components in school meals.
+ Marketing Guide
+• The Marketing Guide is a table that shows the amount of each fresh vegetable or fruit to 
+purchase that, when trimmed, provides the amount the recipe requires.  
+• Use The Food Buying Guide for Child Nutrition Programs to determine the amount of 
+product needed (as purchased) to yield the edible portion required for the recipe.
+ Food Safety Guidelines
+• Include procedures designed to ensure the safe production and service of food. Indicate 
+Hazard Analysis Critical Control Point (HACCP) information, if appropriate. Include 
+the appropriate cooking temperature for any ingredients that require cooking and/or 
+chilling and a final holding temperature. Critical Control Points (CCP) ensure the safe 
+production and service of food. As applicable, include information about food allergens 
+or developmental considerations (e.g., choking hazards for young children).
+23
+Training Manual                          CICN Presents: Culinary Keystones
+Anatomy Of A Standardized Recipe
+Recipe: BeanTostada USDA Recipe for School
+HANDOUT: BEAN TOSTADA USDA RECIPE FOR SCHOOLS
+24
+Training Manual                            CICN Presents: Culinary Keystones
+Anatomy Of A Standardized Recipe
+Recipe: BeanTostada USDA Recipe for School
+25
+Training Manual                          CICN Presents: Culinary Keystones
+Anatomy Of A Standardized Recipe
+Recipe: BeanTostada USDA Recipe for School
+26
+Training Manual                            CICN Presents: Culinary Keystones
+Anatomy Of A Standardized Recipe
+Recipe: BeanTostada USDA Recipe for School
+27
+Anatomy Of A Standardized Recipe
+CICN Presents: Culinary Keystones Training Manual
+Instructor’s Note:
+Ask if there are any questions.
+Key Messages
+ In summary, we reviewed the important elements of a standardized recipe, including the 
+recipe title and description, ingredients, units of measure, preparation directions, cooking 
+and preparation time, serving size, recipe yield, equipment and utensils needed, crediting 
+information, nutrient analysis, marketing guide, and food safety guidelines.
+ We also discussed the importance of specificity in ingredients, quantities, and preparation 
+techniques and the need to include food safety guidelines (CCPs) to ensure the safe 
+production and service of food.
+ By following standardized recipes, we can create delicious and nutritious meals while 
+ensuring the safety and well-being of our children.
+28
+Mise en Place
+Training Manual CICN Presents: Culinary Keystones
+Time Topic Task Materials
+MISE EN PLACE
+OBJECTIVE:
+ Identify how to develop a mise en place schedule for efficient food production.
+15 Minutes Mise en Place  Review how to make a 
+mise en place list
+ Training Manual
+ Handout: Mise en Place
+ Handout: Mise en Place (Template)
+ Recipe: Bean Tostada USDA Recipe 
+for Schools
+Lesson Overview
+  This portion of the training describes a French culinary term called “mise en place,” 
+meaning “everything in it place.” It involves prepping and organizing all the ingredients and 
+equipment needed for a recipe before beginning to cook. In child nutrition kitchens, mise 
+en place is important because it makes cooking more efficient, ensures consistent and 
+high-quality meals, and helps to keep the kitchen safe. This training reviews the six steps 
+for developing a mise en place list and how each step is applied as part of the mise en 
+place approach to recipe preparation, including reviewing recipes and production records, 
+prioritizing work, collecting tools, preparing equipment, gathering recipe ingredients, 
+preparing ingredients, and setting up your work station. This training will also discuss how 
+to use each step effectively.
+Discuss
+  Mise en place is a French culinary term meaning “everything in its place.” It refers to the 
+practice of prepping and organizing all the ingredients and equipment needed for a recipe 
+before beginning to cook. In child nutrition kitchens, mise en place is crucial for several 
+reasons.
+• Mise en place allows for greater efficiency in the kitchen. Prepping and organizing all 
+the ingredients for the recipes you will be preparing makes cooking more streamlined 
+and less disorderly.
+• Mise en place helps ensure the meals served are consistent and high-quality. 
+Measuring ingredients and preparing them in advance reduces the risk of overcooking, 
+undercooking, or adding too much or too little of a particular ingredient. Meals are more 
+likely to be nutritious and tasty, which is especially important in child nutrition kitchens, 
+where the goal is to provide healthy meals to support the growth and development of 
+children.
+• Mise en place helps ensure kitchen safety. Preparing and organizing all the ingredients 
+and equipment ahead of time significantly reduces the risk of accidents. For example, 
+if knives are not laid out and ready to use, someone might need to look for them while 
+cooking, which can lead to a potential injury.
+• Mise en place allows you to check all the equipment that will be used in the recipe’s 
+preparation is available and in good working order.
+MISE EN PLACE
+(15 minutes)
+29
+Mise en Place
+CICN Presents: Culinary Keystones Training Manual
+  Review the Mise en Place handout and engage participants in a discussion about 
+how to use each step. There are six steps for utilizing the mise en place approach:
+1. Review recipes and production records. 
+2. Prioritize your work.
+3. Collect tools and prepare equipment.
+4. Gather recipe ingredients.
+5. Prepare ingredients.
+6. Set up your workstation.
+Instructor’s Note:
+Make this part of the training engaging for everyone involved. We suggest stating, “To make this 
+portion of the training fun and interesting, we need your help! We want volunteers to help us identify 
+important information in our Mise en Place handout. Then, we will discuss each step and ask for 
+examples of using it in our work. By correctly preparing our cooking area, we can ensure our food is 
+safe, tasty, and healthy. So, let’s work together to become experts in mise en place!”
+30
+Mise en Place
+Training Manual CICN Presents: Culinary Keystones
+HANDOUTe: MISE EN PLACE
+MISE EN PLACE
+Step 1: Review Recipes & Production Records
+Step 2: Prioritize Your Work
+Step 3: Collect Tools & Prepare Equipment
+Step 4: Gather Recipe Ingredients
+Step 5: Prepare Ingredients
+Step 6: Set Up Your Workstation
+Review recipes several days in advance to identify needed food and equipment 
+Look for ways to combine like tasks, identify foods that require time to defrost,
+and check inventory to ensure you have enough product on hand
+List the sequence of activities needed to complete the recipe
+Pay attention to cook and cool times of food items
+Start with the meal service time and work backwards
+While gathering and collecting equipment and tools, make sure what you need
+is in good operating condition
+If equipment is malfunctioning, you can adjust the menu and schedule
+Gather ingredients and place them in the proper storage location
+Make sure your produciton plan includes time for retrieving items
+throughout the production process
+Double-check the type of cut and the quantity associated with each item
+Ensure food safety by only having foods you are actively working with at your
+workstation
+Ensure your workstation coincides with steps one through five
+Limit unnecessary movements by keeping items easily accessible
+and build an economy of motion
+" T O  P U T  I N  P L A C E "
+31
+Mise en Place
+CICN Presents: Culinary Keystones Training Manual
+Discuss
+  Utilizing a mise en place helps create an economy of motion (walking several times to 
+the stock room or refrigerator to collect ingredients)—eliminates wasted motion, eases 
+operator tasks, reduces fatigue, and minimizes cumulative trauma for repetitive use of 
+muscle groups.
+  An “economy of motion” means doing tasks in the most efficient way possible, using the 
+fewest steps and movements. For school nutrition workers, it’s like preparing and serving 
+meals using the quickest and simplest methods without wasting energy or time.
+Review
+  Review the Mise en Place List (Template).
+• This tool helps you make a list of everything you need before cooking. You do not have 
+to use the example provided, but it can be helpful.
+• Each column has a heading that indicates the information needed.
+ 
+Ingredients and Preparation Steps
+In the first column, identify the type of prep and the ingredients you need for the recipes you 
+will be preparing. This step will help you identify where items are stored and the ingredients you 
+need.
+Quantity Needed
+In the second column, indicate the quantity of each ingredient you need to use for the step. The 
+Marketing Guide on the recipe can help you know how much of the product you should use for 
+the step.
+Equipment Needed
+In this column, include all the tools, pans, and equipment you need to prepare and serve the 
+recipe.
+Team Member
+In this column, indicate who is responsible for each step. This is helpful if more than one staff 
+member will be contributing to making the recipe.
+Instructor’s Note:
+This section includes the Bean Tostada USDA Recipe for Schools and Mise en Place List 
+(SAMPLE). The sample highlights how similar tasks are combined to prepare the ingredients prior to 
+production. The sample also includes the equipment, pans, and tools needed to cook and serve the 
+recipe.
+Review with the participants the Mise en Place List (Template), Bean Tostada USDA Recipe for 
+Schools, and Mise en Place List (SAMPLE) handouts.
+Discuss how you, the instructor, have used mise en place successfully in your operation(s).
+32
+Mise en Place
+Training Manual CICN Presents: Culinary Keystones
+Mise en Place* List (Template)
+Recipe Name/Servings: 
+INGREDIENTS AND 
+PREPARATION 
+STEPS
+QUANTITY NEEDED EQUIPMENT NEEDED TEAM MEMBER
+ *Mise en place: This allows participants to plan their recipe preparation method and ingredients efficiently
+Handout: Mise en Place List (Template)
+33
+Training Manual                          CICN Presents: Culinary Keystones
+Mise en Place
+Recipe: Bean Tostada USDA Recipe for Schools
+34
+Training Manual                            CICN Presents: Culinary Keystones
+Mise en Place
+
+35
+Training Manual                          CICN Presents: Culinary Keystones
+Mise en Place
+
+36
+Training Manual                            CICN Presents: Culinary Keystones
+Mise en Place
+
+37
+Mise en Place
+CICN Presents: Culinary Keystones Training Manual
+Mise en Place* List (SAMPLE)
+Recipe Name/Servings: Bean Tostada – 100 Servings
+INGREDIENTS AND 
+PREPARATION 
+STEPS
+QUANTITY NEEDED EQUIPMENT NEEDED TEAM MEMBER
+Knife Work
+Onion, chopped
+Pepper, green bell, 
+diced
+Cilantro, chopped
+Lettuce, shredded
+Tomato, diced
+Onions, raw – 5.5 lb 
+Bell Pepper – 2.5 lb
+Cilantro – 2 bunch
+Lettuce – 6.75 lb
+Tomato, raw – 3.25 lb
+Colander, knife, cutting 
+board, anti-slip mat, 
+food processor, food 
+pans
+John
+Spice Mix
+Chili powder
+Cumin
+Paprika
+Onion powder
+Salt
+Garlic powder
+Black pepper
+Chili powder – ¼ cup
+Cumin – 3 Tbsp
+Paprika – 1 Tbsp
+Onion powder – 1 Tbsp
+Salt – 2 tsp
+Garlic powder – 3 Tbsp
+Black pepper – 1 Tbsp, 
+1 tsp
+Measuring spoons 
+and cups, mixing bowl, 
+whisk
+Sarah
+Canned Product
+Pinto beans, drained
+Tomato paste
+#10 can, Pinto Beans – 
+4 ea
+#10 can, Tomato Paste 
+– 1 ea
+Can opener, scale, 
+colander, food pans, 
+spatula
+Sarah
+Water 2 qt Liquid measure, 2 qt John
+Cooler
+Cheddar, shredded
+Cheese – 3.25 lb Scale, soufflé cups Sarah
+Dry Storage
+Tostada Shells
+Tostada Shells – 200 ea Sarah
+Production and 
+Serving
+Stockpot
+4 Sheet trays
+Parchment paper
+No. 16 Scoop
+No 10 Scoop
+No. 30 Scoop (2 ea)
+Sarah
+*Mise en place: This allows participants to plan their recipe preparation method and ingredients efficiently
+HANDOUT: MISE EN PLACE LIST (SAMPLE)
+38
+Mise en Place
+Training Manual CICN Presents: Culinary Keystones
+Instructor’s Note:
+Ask if there are any questions.
+Key Messages
+ Mise en place is crucial in child nutrition kitchens because it helps ensure workplace safety, 
+increases efficiency in the kitchen, and ensures that meals are consistent and of high 
+quality when following a standardized recipe.
+ By implementing mise en place, child nutrition kitchens can operate more efficiently, 
+providing healthy and nutritious meals to the children they serve.
+Class Discussion Prompt
+Question: Is anyone using mise en place lists in their school kitchens? Will you share what 
+works best for you?
+Possible Answer: Answers may vary.
+39
+Weight Vs. Volume
+CICN Presents: Culinary Keystones Training Manual
+WEIGHT VS. VOLUME
+(20 minutes)
+Time Topic Task Materials
+WEIGHT VERSUS VOLUME
+OBJECTIVES:
+ Apply the use of basic units of measurement.
+ Explain the benefits of using weight and volume properly.
+20 Minutes Weight Versus 
+Volume
+ Review units of measure
+ Identify the proper tools 
+to utilize for accurate 
+measuring
+ Training Manual
+ Instructor’s Preparation Guide
+Lesson Overview
+ This lesson will teach you the importance of:
+• Measuring and weighing ingredients correctly.
+• Using the appropriate tool(s) to measure and weigh ingredients.
+• Using and caring for a scale.
+ This training is designed to help participants feel more confident when measuring and 
+weighing ingredients in the kitchen. It teaches the basics of measurement and explains 
+why it is important to measure properly. This training also covers choosing the right 
+equipment for measuring and serving, how to take care of the equipment and how to 
+control portions effectively.
+Weight versus Volume Explained
+ In culinary measurements, there are two main types of measurements: weight and volume. 
+Weight is a measure of the mass of an ingredient, while volume is a measure of the space 
+an ingredient occupies.
+ Weight measurements are typically used for dry ingredients (when measuring more than 
+one cup) like flour, sugar, and spices, while volume measurements are used for liquid 
+ingredients like water, milk, and oil.
+ Measuring dry goods with a measuring cup or measuring spoon should be reserved for 
+small quantities of ingredients.
+ In the U.S. Customary system of measuring, weight is measured in ounces, pounds, and 
+tons, while volume is measured in teaspoons, tablespoons, cups, quarts, and gallons.
+ It is important to note that weight and volume are not always interchangeable. For example, 
+one cup of flour and one cup of water have the same volume but not the same weight. A 
+cup of flour weighs less than a cup of water because flour is less dense than water.
+40
+Weight Vs. Volume
+Training Manual CICN Presents: Culinary Keystones
+INSTRUCTOR’S NOTE:  
+Review the types of equipment used to 
+measure ingredients.
+ Scales – Mechanical and Digital
+ Measuring Spoons and Dry 
+Measuring Cups
+ Liquid Measuring Cups
+ When following a recipe, it is important to use the correct type of measurement (weight or 
+volume) for the ingredient being measured and to convert between units of measure as 
+necessary. Using the correct type of measurement ensures that the recipe turns out as 
+intended and that the flavors and textures are balanced.
+Class Discussion Prompt
+Question: How does the measurement method impact a recipe’s accuracy and consistency?
+Possible Answer: Inaccurate measurements can lead to a finished product that is either too dry, 
+too moist, or has an improper balance of flavors, which can significantly impact the dish’s quality.
+Demonstrate/Discuss
+ Review how to use measuring tools.
+ Taring (also known as zeroing) a scale means 
+resetting the scale to zero, so you can measure 
+the weight of an item without including the 
+weight of the container it is in.
+How to Tare a Mechanical Scale
+1. Place the empty container or item you want to 
+weigh on the scale.
+2. Adjust the scale’s pointer or knob until the scale reads zero.
+3. Remove the ingredient and container from the scale—it should still read zero. If it does 
+not, adjust it again until it does.
+4. Now you can add the ingredient to the container on the scale, and it will give you an 
+accurate weight of only that material without including the weight of the container.
+How to Tare a Digital Scale
+1. Turn on the scale and wait for it to zero out. Press the “tare” or “zero” button if it does not 
+automatically zero.
+2. Place the container you want to use on the scale. Ensure it is empty and dry, so you do not 
+include extra weight.
+3. Press the “tare” or “zero” button. The scale should now show a weight of zero with the 
+container on it.
+4. Add the ingredient to the container. The scale will show the item’s weight without including 
+the weight of the container.
+5. Remove the ingredient and container from the scale when done weighing. The scale 
+should automatically return to zero. If it does not return to zero, press the “tare” or “zero” 
+button again.
+How to Properly Care for a Scale
+1. Only pick up and carry from the base.
+2. Use a barrier (such as a bowl or parchment paper) between food items and the weighing 
+platform.
+3. Do NOT submerge in water.
+4. Clean with brush or damp rag, if needed.
+41
+Weight Vs. Volume
+CICN Presents: Culinary Keystones Training Manual
+How to Measure Dry Ingredients
+1. Find the measuring cup or spoon size(s) you need for the dry ingredient.
+2. Double check that the measurement matches the amount needed in the recipe.
+3. Fill the measuring cup or spoon with the dry ingredient, such as corn meal or sugar, until 
+overflowing.
+4. Use a straight edge, like the back of a knife or a spatula, to level off the top of the 
+measuring cup or spoon so the ingredient is even with the rim. Do this over the ingredient 
+container so the excess is not wasted.
+5. Add the ingredient to the appropriate container based upon recipe instructions. 
+6. Repeat steps 2–5 for additional ingredients as needed.
+How to Use the Fluff and Spoon Method for Measuring Flour
+1. Fluff the flour: Fluff the flour by stirring it with a spoon or a fork to loosen it up and break up 
+any clumps. If the recipe calls for sifted flour, you should sift it before measuring it.
+2. Spoon the flour: Using a spoon, gently scoop the flour into the measuring cup, taking care 
+not to pack it down. Keep adding flour until the cup overflows.
+3. Level the flour: Use the flat edge of a knife or a straight spatula to level off the top of the 
+measuring cup, so the flour is even with the rim.
+4. Use as directed: Once you measure the flour, use it in your recipe as directed.
+How to Measure Liquid Ingredients
+1. Find the liquid measuring cup or container size(s) you need for the recipe. Liquid 
+measuring cups and containers have measurements marked on the side.
+2. Place the container on a flat surface and pour the liquid ingredient into it slowly, making 
+sure not to spill. Keep pouring until the liquid ingredient reaches the desired measurement 
+on the container. To get an accurate measurement, you need to look at the meniscus.
+3. The meniscus is the curved surface of the liquid that forms at the top of the container. It 
+occurs because of the surface tension between the liquid and the container. To get an 
+accurate measurement, you need to look at the bottom of the meniscus where it meets the 
+measurement line on the container. Make sure your eyes are level with the measurement 
+line to avoid errors. Once you have the correct measurement, you can use the liquid 
+ingredient for your recipe.
+Class Discussion Prompt
+Question: Why must we tare (or zero) a scale before weighing food items?
+Possible Answers:
+ Taring or zeroing a scale before weighing food items is important because it ensures that 
+the weight displayed on the scale is accurate and only includes the weight of the item 
+being weighed.
+ Taring the scale sets the weight reading to zero, effectively subtracting the weight of the 
+container or plate. This step allows you to weigh the food item accurately without manually 
+subtracting the weight of the container or 
+plate from the total weight. Instructor’s Note: 
+Ask if there are any questions.
+42
+Portioning
+Training Manual CICN Presents: Culinary Keystones
+PORTIONING
+Lesson Overview
+   Serving the correct portion size of each food to students is just as important as correctly 
+weighing and measuring the ingredients in a recipe. Portioning refers to serving the 
+specific amount of food per serving listed in a recipe. Proper portion control is essential for 
+customer satisfaction because people compare the portions on each other’s plates. It also 
+guarantees that students receive the right quantity of food or nutrients needed, ensuring 
+a reimbursable meal is served. Correct portioning is imperative and must be followed 
+precisely to guarantee that an item meets the minimum required amount to be creditable 
+for a meal component. Proper portioning also helps the program achieve nutritional 
+accountability and maintain the right amount of nutrients for children of different ages. 
+Portion control benefits the program by helping to control food costs, minimize food waste, 
+and minimize last-minute substitutions due to running out of food items on the line.
+Discuss
+   Equally as important as ensuring you have the correct amount of ingredients in your recipe 
+is ensuring you are serving the correct portion size to your students.
+   Portioning means serving the correct portion size. It is the amount of food per serving 
+specified on the recipe and production record.
+(5 minutes)
+Time Topic Task Materials
+PORTIONING
+OBJECTIVES:
+ Select the correct tools and equipment for measuring and serving.
+ Apply best practices for portion control.
+5 Minutes Portion Control  Review portion control 
+benefits
+ Review portion control 
+tools
+ Training Manual
+ Handout: Basics-at-a-Glance
+Instructor’s Note:
+Use the questions below to engage participants in a conversation about the importance 
+of proper portioning. Below each question is information to help guide the discussion.
+43
+Portioning
+CICN Presents: Culinary Keystones Training Manual
+   Question: How can proper portion control help with customer satisfaction?
+• When students see that one person has more food on their plate than another, the 
+person with less might feel upset or unfairly treated.
+• Portion control means giving customers the right amount of food, so they do not get 
+too much or too little. Accurate portioning is important when making meals that are 
+repeated regularly. When you serve the right amount, everyone gets what they expect, 
+and nobody feels disappointed.
+   Question: How does proper portion control help ensure a reimbursable meal is served?
+• It guarantees that students receive the planned quantity of food and nutrients.
+• Proper portioning helps the program achieve and maintain nutritional accountability 
+on service lines. USDA meal requirements require children of different ages receive 
+different amounts of food to get adequate nutrients needed at lunch and breakfast. 
+• Portioning with the correct serving utensil will ensure the required amount of the meal 
+component is served in a reimbursable meal.
+   Question: How does portion control benefit the program by helping to control food costs?
+• Allows for more accurate forecasting when the number of meals served and the number 
+of leftovers/wastes coincides with the number of meals prepared.
+• Minimizes food waste. 
+• Minimizes last-minute substitutions.
+Discuss
+   A portion control tool is a serving utensil that measures the amount of food.
+   Examples of portioning tools:
+• Slicers: used for cutting consistent thickness. Slicers measure the thickness of a slice 
+of food product
+• Scales: used to determine the weight of portions
+• Scoops and Spoodles: measure different serving sizes and are numbered to 
+differentiate the sizes, such as #8 (1/2 cup), #16 (1/4 cup), etc.
+• Ladles: used for serving liquid items such as soups, gravies, sauces, stews, and 
+creamed foods
+• Slotted, Pierced, or Perforated Spoodles: important for serving foods prepared in 
+liquid that you do not want to add to the portion. Examples: green beans, corn, peas, 
+stewed fruits
+• Measuring Cups: used for measuring liquid and dry goods of a standardized recipe
+   If a tool does not measure, it is not a portioning tool. For example, tongs and turners are 
+not portion control tools. When using these tools, check your recipe and production record 
+to identify the portion by quantity. Examples include chicken nuggets, burritos, chicken 
+legs, and other items that require an indication of “each” or how many of each item to 
+serve. Chicken nuggets may be listed on a production record indicating a reimbursable 
+serving is 5 each or 5 nuggets.
+   To assist in identifying the correct tool, ICN has a valuable tool, Basics at a Glance, to 
+help you and your team with weight, volume, and portioning challenges.
+   Quickly review each section of the Basics at a Glance poster.
+44
+Portioning
+Training Manual CICN Presents: Culinary Keystones
+   Highlight smallwares used for accurate portion control:
+• Scoops (Dishers)
+• Spoodle
+• Ladles
+The size marked on the serving tool usually tells you how much it can hold. Sometimes, the 
+tool’s size doesn’t match its actual volume, so double-check with the maker to be sure.
+Key Message
+   The most important reasons for correct portion control are:
+• Customer satisfaction
+• Serving the required amount of each component in a reimbursable meal 
+• Controlling food costs
+• Ensuring food served meets school nutrition standards
+Class Discussion Prompt
+Question: Why is proper portioning of food items important in child nutrition programs?
+Possible Answer: Proper portioning helps ensure that children receive the appropriate amount 
+of nutrients they need for their age and developmental stage. It also ensures that the correct 
+amount of each component is served for reimbursable meals, as reflected in the production 
+records.
+Instructor’s Note:
+Ask if there are any questions.
+45
+Portioning
+CICN Presents: Culinary Keystones Training Manual
+HANDOUT: BASICS AT A GLANCE
+46
+Portioning
+Training Manual CICN Presents: Culinary Keystones
+
+47
+Portioning
+CICN Presents: Culinary Keystones Training Manual
+
+48
+Portioning
+Training Manual CICN Presents: Culinary Keystones
+
+49
+Activity: Developing A Mise en Place List
+CICN Presents: Culinary Keystones Training Manual
+Activity Overview
+  Participants will work in pairs to develop a mise en place list. Provide each team with two 
+recipes to develop their list. After the teams have developed their lists, participants will 
+reflect on their experience and share any challenges they faced during the activity. The 
+instructor and fellow participants may suggest how to help overcome the challenges next 
+time.
+  Materials
+• Two CICN Grab-and-Go Recipes
+• Writing utensils
+• Mise en Place List (Template)
+ACTIVITY: DEVELOPING 
+A MISE EN PLACE LIST
+(25 minutes)
+Instructor’s Note: 
+Distribute the CICN Grab-and-Go Recipe packets to each participant and have them get into their 
+pairs/teams. The recipe packs are for the participants to keep.
+Time Topic Task Materials
+ACTIVITY: DEVELOPING A MISE EN PLACE LIST
+OBJECTIVE:
+ Develop a mise en place list using multiple recipes.
+25 Minutes Activity  Develop a mise en place 
+list
+ Training Manual
+ Grab-and-Go Recipe packet
+ Handout: Mise en Place List 
+(Template)
+ Writing utensil
+50
+Activity: Developing A Mise en Place List
+Training Manual CICN Presents: Culinary Keystones
+  Recipe Assignments
+• Teams 1 and 11
+ ▪ Backyard BBQ Chicken Salad
+ ▪ Bistro-Style Potato Salad
+• Teams 2 and 12
+ ▪ Chicken Fajita Salad
+ ▪ Chicken Salad Pita
+• Team 3
+ ▪ Chickpea Waldorf Salad
+ ▪ Cowboy Caviar
+• Team 4
+ ▪ Italian Ham Wrap
+ ▪ Italian Pasta Salad
+• Team 5
+ ▪ Mediterranean Cucumber Salad
+ ▪ Minty Melon Salad
+• Team 6
+ ▪ Overnight Oats with Berries
+ ▪ Red, White, and Blue Fruit Salad
+• Team 7
+ ▪ Sesame Ginger Slaw
+ ▪ Sesame Ginger Tuna Sandwich
+• Team 8
+ ▪ Southwest Caesar Salad
+ ▪ Sriracha Chicken Wrap
+• Team 9
+ ▪ Tangy Cucumber Salad
+ ▪ Vegetarian Greek Salad
+• Team 10
+ ▪ Thai-Style Salad with Chicken
+ ▪ Turkey Wrap with Cranberry Spread
+  Instructions: In pairs, develop a mise en place list based on the recipes assigned to your 
+team.
+1. Ask participants to read the recipes and identify all the ingredients and equipment 
+needed for each recipe. Have them write down each ingredient and piece of equipment 
+on their Mise en Place List (Template).
+2. Once participants list all the ingredients and equipment needed, ask them to group the 
+items based on where they are stored or used in the recipe. For example, all the dry 
+ingredients could be grouped together, all the items used for prep work (tools, food, 
+equipment, smallwares, containers, etc.) could be grouped together, and all the items 
+used for cooking (stockpot, stovetop, etc.) could be grouped together.
+3. Have participants review each group and determine if additional prep work is needed 
+for each item. For example, if a recipe calls for diced onions, participants will add “chop 
+onions” to their list of prep work.
+4. Once participants have identified the necessary ingredients, equipment, and prep work 
+for each recipe, ask them to create a mise en place list for each recipe. Participants 
+should organize the list in the order that the items will be used in the recipe.
+5. Have participants share their mise en place lists with the group and compare and 
+discuss their different approaches.
+6. Once the recipes are complete, have participants reflect on their experience creating 
+the mise en place lists. Ask them to share any challenges they faced and any benefits 
+they experienced.
+7. Close the activity by emphasizing the importance of mise en place in the kitchen and 
+encouraging participants to use this technique in their future cooking endeavors.
+51
+Activity: Developing A Mise en Place List
+CICN Presents: Culinary Keystones Training Manual
+Mise en Place* List (Template)
+Recipe Name/Servings: 
+INGREDIENTS AND 
+PREPARATION 
+STEPS
+QUANTITY NEEDED EQUIPMENT NEEDED TEAM MEMBER
+ *Mise en place: This allows participants to plan their recipe preparation method and ingredients efficiently
+Handout: Mise en Place List (Template)
+52
+Wrap Up
+Training Manual CICN Presents: Culinary Keystones
+Demonstrate/Discuss
+ Today we learned some important tips for cooking that can make a big difference in the 
+kitchen. These tips include using standardized recipes that are consistent and reliable, 
+making a list of all the ingredients you need before starting to cook, using the correct 
+measuring tools, and ensuring that your serving sizes are appropriate. By following these 
+strategies, you can improve your cooking skills and make your meals taste even better.
+ We’ve discussed the following key points about Culinary Keystones:
+• A standardized recipe is your guide for accurately preparing menu items.
+• Using a standardized recipe in food production allows the program to yield the same 
+results each time the recipe is prepared. 
+• A best practice is to always review the recipe from beginning to end before preparation.
+• Mise en place is crucial in child nutrition kitchens because it helps to ensure workplace 
+safety, increases efficiency in the kitchen, and ensures that meals are consistent and of 
+high quality.
+• By implementing mise en place, child nutrition kitchens can operate more efficiently, 
+providing healthy and nutritious meals to the children they serve.
+• Using the appropriate weighing and measuring tools and using them correctly is critical 
+when preparing recipes.
+• The most important reasons for correct portion control are:
+ ▪ Customer satisfaction
+ ▪ Serving accurate reimbursable meals
+ ▪ Controlling food costs
+ ▪ Ensuring food served meets school nutrition standards
+ We know that learning is always enhanced if we are given a chance to personally relate to 
+the material and how we might apply it.
+WRAP UP
+Time Topic Task Materials
+WRAP UP
+10 Minutes Review the 
+training
+ Review the training
+ Discuss implementation 
+of skills
+ Training Manual
+ Handout: Application Action Plan
+ Handout: Reflections
+(10 minutes)
+53
+Wrap Up
+CICN Presents: Culinary Keystones Training Manual
+Application Action Planning
+ Direct participants to the Application Action Plan worksheet. Give participants about 5 
+minutes to fill in the answers for the three sections on the worksheet:
+• List the most useful knowledge and/or skills you gained during this training.
+• What are some steps you can take to apply what you have learned?
+• What barriers do you think you might face when trying to apply what you have learned 
+at your job?
+Class Discussion Prompts
+Now that we have concluded our final lesson, are there any questions?
+ Spend 5 minutes (more if time allows) to allow participants to share what they wrote in their 
+Application Action Plan, and as a group, offer suggestions for eliminating any perceived 
+barriers they mention. 
+ Encourage participants to jot down ideas they may want to “borrow” from each other as 
+they share their thoughts.
+ Encourage participants to network and stay connected to share success stories and offer 
+support.
+ Encourage participants to spend some time thinking through what they have learned in this 
+lesson. They can write some of their reflections in the Reflections page so they can come 
+back to these thoughts later. 
+ICN has numerous training resources available online at www.theicn.org, including access to 
+the Child Nutrition Recipe Box, Child Nutrition Sharing Site, Culinary Institute of Child Nutrition 
+resources, and the ICN Help Desk for further technical assistance.
+54
+Application Action Plan
+Training Manual CICN Presents: Culinary Keystones
+List the most useful knowledge and/or skills you gained during this training.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+What are some steps you can take to apply what you have learned?
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+What barriers do you think you might face at your job when trying to apply what you have 
+learned at this training?
+Application Action Plan
+55
+Application Action Plan
+CICN Presents: Culinary Keystones Training Manual
+REFLECTIONS
+Instructions: Spend some time thinking through what you have learned in this lesson. Write some of 
+your reflections here so you can come back to these thoughts later.
+56
+Conclusion
+Training Manual CICN Presents: Culinary Keystones
+CONCLUSION
+(10 minutes)
+Time Topic Task Materials
+WRAP UP
+10 Minutes Training 
+Evaluation
+ Conduct Training 
+Evaluation
+ Conclude the training
+ Training Manual
+ Training Evaluation QR code
+Discuss
+  Congratulate participants for completing the training.
+  Remind the participants to implement their new knowledge and skills through their 
+Application Action Plans.
+  Ask participants to complete an evaluation of the training.
+Demonstrate/Discuss
+  Facilitate a question-and-answer session.
+  If a question is state-specific, direct participants to their State agency.
+  If a question needs further attention, direct participants to the ICN Help Desk.
+  Thank you for your participation today. Please visit the ICN website (www.theicn.org) for 
+future training needs. ICN has several online trainings available through the ICN iLearn 
+system.
+Instructor’s Note:
+Thank the participants and the host site (if applicable) and conclude the training.
+57
+References
+CICN Presents: Culinary Keystones Training Manual
+REFERENCES
+Culinary Institute of America. (2011). The professional chef (9th ed.). New Jersey: John Wiley & 
+Sons, Inc.
+Gisslen, W. (2018). Professional cooking (9th ed.). New Jersey: John Wiley & Sons, Inc.
+Institute of Child Nutrition. (2018). Practical skills for preparing quality meals: A five-step 
+process. University, MS: Author.
+U.S. Department of Agriculture, Food and Nutrition Service. (2019). Professional standards. 
+https://www.fns.usda.gov/school-meals/professional-standards
+58
+Appendix
+Training Manual CICN Presents: Culinary Keystones
+Culinary Terms
+A la carte – Food items that can be purchased as separate items rather than part of a 
+reimbursable meal
+Acidulation – The process of adding citric or acetic acid to water, used to preserve color, to 
+clean aluminum, or to soak kidneys and game.
+Additives – Substances added to many foods to prevent spoilage or to improve appearance, 
+texture, flavor, or nutrition; they might be synthetic materials copied from nature or naturally 
+occurring substances
+Aerate – To incorporate air into a mixture by sifting or mixing
+Al Dente – Italian term meaning “to the tooth”; used to describe mainly pasta that is cooked until 
+a slight resistance when bitten into
+Aroma – The sensations of smell as interpreted by the brain
+Aromatics – Plant ingredients, such as onion, garlic, herbs, and spices, used to enhance the 
+flavor and fragrance of food
+Back-loading spices – Adding seasoning and spice at or near the end of the cooking process
+Bake/Roast – Dry-heat cooking method in which foods are surrounded by hot, dry air in a closed 
+environment
+Baste – To moisten foods using their natural juices periodically during cooking
+Batch cook – Prepare a menu item in small amounts, so it will be at its peak quality when 
+placed on the service line
+Blanching – To briefly submerge in simmering water, boiling water, or fat to assist in the 
+preparation of foods
+Blend – The process of combining two or more ingredients so that they lose their individual 
+characteristics and become smooth and uniform
+Blooming – A cooking technique where spices are gently heated in oil or fat to intensify their 
+flavors and aromas
+Boil – The cooking of food by immersion in water that has been heated to near its boiling point 
+(212 °F or 100 °C)
+Bound salad – A salad comprised of cooked meats, poultry, fish, shellfish, pasta, or potatoes 
+combined with a dressing
+Braise – A combination-cooking method that first sears the food at a high temperature then 
+finishes it in a covered pot at a low temperature while sitting in some amount of liquid
+Broil – A method of cooking using direct heat, which is much like grilling except that the heat 
+source is over the food instead of under it
+Brown –The process of partially cooking the surface of meat to help remove excess fat and give 
+Appendix
+59
+Appendix
+CICN Presents: Culinary Keystones Training Manual
+the meat a brown color crust and flavor through various browning reactions; ground meat will 
+frequently be browned prior to adding other ingredients and completing the cooking process
+Brunoise – The finest dice and is derived from the julienne
+Calorie – A measure of energy
+Caramelize – The process of browning sugar in the presence of heat
+Carryover cooking – When food retains heat and continues to cook even after being removed 
+from the source of heat
+Chef knife – A large, general-purpose kitchen knife, usually 8” to 10” long, that has a blade 
+curving upward along its length and ending in a narrow point
+Chiffonade – A preparation of finely sliced or shredded leafy vegetables or herbs
+Chop – To cut into pieces of roughly the same size
+Coagulation – The irreversible transformation of proteins from a liquid or semi-liquid state to a 
+drier, solid state
+Coring – The process of removing the seeds or pit from fruit or vegetable
+Cross-contact – Occurs when an allergen accidentally transfers from one food to another food 
+or from a food contact surface to a food that does not contain the allergen
+Cross-contamination – The transfer of pathogens such as bacteria, viruses, and parasites from 
+hand-to-food, food-to-food, or equipment and contact surfaces-to-food (You are probably most 
+familiar with this type of contamination.)
+Culinary acid – A substance that neutralizes a base (alkaline) in a liquid solution; includes foods 
+like citrus juice, vinegar, and wine that have a sour or sharp flavor; acids have a P.H. of less than 
+7
+Danger zone – The temperature range in which bacteria grow rapidly—41 °F to 135 °F; bacteria 
+can double in number in as little as 20 minutes
+Degrease – To remove the fat from the surface of a hot liquid such as a sauce, soup, or stew, 
+also known as defatting or fat trimming
+Dice – To cut ingredients into small cubes (1/8” for small or fine, 1/4” for medium, 3/4” for large is 
+standard)
+Dietary Guidelines for Americans – Provides information to help Americans make healthy 
+food choices; based on the current body of nutrition science, the Dietary Guidelines is a go-to 
+resource for policymakers, public health professionals, and other experts working to improve the 
+health of individuals, families, and communities across the nation
+Dredging – To coat a food item in flour or ground crumbs prior to frying or sautéing
+Dry heat cooking – Cooking with the circulation of hot air or direct contact to transfer heat to 
+food without the use of moisture, steam, broth, water, or any type of liquid; methods include 
+grilling, pan-frying, broiling, baking, and deep-fat frying
+Emulsion – A uniform mixture of two unmixable liquids, such as oil and water, are forced into a 
+uniform distribution
+Enzymatic browning – An oxidation (see Oxidation) reaction that takes place in some foods, 
+mostly fruit and vegetables, causing the food to turn brown
+60
+Appendix
+Training Manual CICN Presents: Culinary Keystones
+Evaporation – Heated water that is turned into a gas and vaporizes
+Fabrication – The process of slicing and dicing food, often used to describe slicing or dicing 
+fresh fruits and vegetables
+Fat – One of the basic nutrients used by the body to provide energy; also provides flavor to food 
+and gives a feeling of fullness
+Fiber – A plant-based nutrient that is sometimes called roughage or bulk; a type of carbohydrate 
+but, unlike other carbs, cannot be broken down into digestible sugar molecules
+FIFO – An inventory system that ensures that items that are purchased first are used first. When 
+new items arrive, they must be placed behind the older items on the storage shelves, cooler, or 
+freezer 
+Flavonoids – Plant pigments that dissolve readily in water, found in red, purple, and white 
+vegetables such as blueberries, red cabbage, and beats
+Flavor – The sensory impression of a food or other substance, determined mainly by the 
+chemical senses of taste and smell
+Fold – The process of blending a light ingredient, such as beaten egg whites, into a heavier 
+ingredient by lifting from underneath with a spatula or spoon
+Front-loading spices – Adding seasoning and spice at or near the beginning of the cooking 
+process
+Garnish – An edible decoration or accompaniment to a prepared dish to increase eye appeal
+Grate – The process of transforming solid, firm food items into small pieces by rubbing the item 
+against a grating instrument.
+Honing Steel – A kitchen tool that is mounted on the handle is a rounded stick-like rod—typically 
+made from steel, ceramic, or diamond-coated steel. They are commonly used to straighten the 
+edge of a knife as it is dragged along the rod from heel to tip in a downward slicing motion.
+Julienne – A culinary knife cut in which the food item is cut into long thin strips, similar to 
+matchsticks
+Knead – A method of mixing pliable dough by stretching, folding, and pushing in order to form 
+gluten in the flour
+Maillard reaction – A chemical reaction between an amino acid and a reducing sugar, usually 
+requiring the addition of heat; like caramelization, it is a form of non-enzymatic browning
+Marinade – A liquid, such as vinegar or oil, with spices or other flavorings added to it that is 
+made for the purpose of soaking a food in it to add flavor or to tenderize
+Marinate – The process of soaking foods in seasoned and acidic liquid before cooking for hours 
+or days, adding flavor to the food
+Melt – To become altered from a solid to a liquid state, usually by heat
+Mince – To cut into very small pieces where uniformity or shape is not important
+Mirepoix – A French term used to describe a combination of chopped flavorful vegetables used 
+to flavor stocks, soups, braises, and stews; contains two parts onion to one part each of celery 
+and carrot
+Mise en place – Meaning “everything in place”; refers to the preparation and organization of 
+ingredients and equipment
+61
+Appendix
+CICN Presents: Culinary Keystones Training Manual
+Mix – To combine, join, blend, or put together two or more things
+Moist heat cooking – Cooking with water, other liquid, or steam to transfer heat to food; 
+methods include poaching, simmering, boiling, braising, stewing, pot roasting, and steaming
+Nutrient analysis – Calculated nutrient content of foods, recipes, and/or menus
+Nutrient dense – Food that is high in nutrients but relatively low in calories; contains vitamins, 
+minerals, complex carbohydrates, lean protein, and healthy fats
+Nutrients – A substance used by an organism to survive, grow, and reproduce
+Oxidation – A chemical reaction that takes place in some foods, mostly fruit and vegetables, 
+causing the food to turn brown
+Parboiling – To partially cook a portion of food in simmering/boiling water; similar to blanching 
+but cooked for longer
+Parcooking – Partially cooking food by any cooking method
+Paring knife – A thin-bladed knife intended for coring and paring (peeling) fruit such as apples 
+as well as slicing small ingredients; it is majorly used for detailed and controlled cutting
+Pasteurization – The process of heating foods, such as milk, cheese, yogurt, beer, fruit ciders, 
+wine, and other foods to a temperature high enough and for a sufficient period of time to destroy 
+harmful micro-organisms
+Peel – The outer skin or rind of a fruit and vegetable; this outer skin will generally be removed 
+and discarded before the vegetable is used, but there are occasions when it is left on; the peel 
+on a fruit is also often removed, but depending on its use, it may be required to remain on the 
+flesh of the fruit
+Pilaf – A savory rice dish in which the rice is browned in oil or butter before it is cooked in liquid; 
+cooked in just enough liquid so that all of the liquid is absorbed; contains various seasonings 
+and generally includes chopped vegetables
+Poach – A method in which items are cooked gently in liquid at 160 °F to 180 °F
+Portion – Also known as serving size; a standardized amount of food served
+Purée – Cooked food, usually vegetables, fruits, or legumes that has been ground, pressed, 
+blended, or sieved to the consistency of a creamy paste or liquid
+Reduce – The process of thickening and intensifying the flavor of a liquid mixture such as a 
+soup, sauce, wine, or juice by simmering or boiling; as the food cooks, the liquid evaporates, 
+leaving the cooking vessel and decreasing the total volume of liquid
+Render – To transform solid fat into liquid form by use of heat
+Rondelle – A type of cut that creates round or oval, flat pieces by cutting a cylindrical vegetable 
+crosswise
+Roux – A mixture of fat (especially butter) and flour used as a thickening agent in the making of 
+sauces
+Sauté – To cook food quickly over relatively high heat, literally meaning “to jump” as the food 
+does when placed in a hot pan
+Score – To make shallow cuts in the surface of meat, fish, bread, or cakes; has several 
+purposes, such as decorating the food, tenderizing, aiding in the absorption of flavor when 
+marinating, and allowing fat to drain from meat while cooking; trays of baked items such as 
+cornbread may be scored to indicate where the item should be cut without actually cutting it
+62
+Appendix
+Training Manual CICN Presents: Culinary Keystones
+Scratch-based food preparation – Utilizes multiple culinary techniques within a recipe while 
+prioritizing the incorporation of ingredients as close to their original state as possible to produce 
+student-approved menu items
+Seasoning – An ingredient added to a dish that intensifies the flavors of other ingredients
+Shred – A method of cutting food into thin slices or pieces using a sharp knife, food processor, 
+or grater. Shred cooked meat by pulling apart into strips using forks
+Simmer – To maintain the temperature of a liquid just below boiling; also a cooking method in 
+which items are cooked in a simmering liquid
+Slice – To cut, generally across the grain, into thin pieces that are consistent in thickness; will 
+most often range from 1/16” to 3/8” in thickness
+Slurry – A thickening mixture that is made up of equal parts flour and water that is prepared for 
+use in making soups, stews, and sauces
+Sofritto – In Italy, sofrito is called soffritto (or, if raw, battuto) and is a combination of three 
+ingredients: onion, carrot, and celery, with a ratio of two parts onion to one part carrot and celery
+Spatula – A hand-held tool that is used for lifting, flipping, or spreading
+Speed-scratch food preparation – Incorporates value-added food products with additional 
+ingredients, utilizing minimal production steps, to produce student-approved menu items
+Spice – A seed, fruit, root, bark, or other plant substance primarily used for flavoring, coloring, or 
+preserving food
+Standardized recipe – A recipe that has been tried, adapted, and retried several times for use 
+by a given foodservice operation, and it has been found to produce the same quality results and 
+yield every time the exact procedures are used
+Steam – A cooking process that places foods above, not in, water that is boiling or hot enough to 
+produce steam that cooks the foods with moist hot air (vapors)
+Stew – A cooking technique that calls for the main ingredient to be cut into bite-sized pieces, 
+either stewed or blanched, and then cooked in a flavorful liquid that may be thickened with flour 
+or roux
+Stir-fry – A cooking method traditionally performed in a wok; foods are cut into small pieces and 
+stirred or tossed frequently as they cook
+Stock – A flavorful liquid prepared by simmering bones and/or vegetables in water with 
+aromatics until their flavor is extracted; used as a base for soups, sauces, and other 
+preparations
+Strain – To remove undesirable particles from a liquid, to separate liquid from other solids, or to 
+separate various contents from other contents, such as removing smaller particles from larger 
+particles
+Sweat – To cook, usually covered, without browning over low heat to encourage flavors to be 
+extracted from vegetables and spices
+Tare – Reset an electronic or spring-style scale to zero, also known as “zero the scale,” and may 
+be used to weigh ingredients without weighing the container
+Time standard – A recipe that has been tried, adapted, and retried several times for use by a 
+given foodservice operation, and it has been found to produce the same quality results and yield 
+every time the exact procedures are used
+63
+Appendix
+CICN Presents: Culinary Keystones Training Manual
+Toast – Browning food by exposure to dry heat
+Toss – To mix the ingredients of a food dish, such as salads and pasta, by using a light lift and 
+drop method
+Trinity – A combination of aromatic vegetables, including onion, celery, and green bell pepper.
+Umami – The name for the taste sensation produced by the free glutamates commonly found in 
+fermented and aged foods
+Whetstone – A fine-grained stone that sharpens knives when the blade is drawn across the 
+coarse surface of the stone at a 22° angle
+Whip – To beat food with a mixer to incorporate air and produce volume, often used to create 
+heavy or whipping cream, salad dressings, or sauces
+Work simplification – The process of finding the easiest and most efficient way to do a job
+Yield – The amount of product resulting in the completion of the preparation process
+Zest – To cut the zest, or the colorful part of the skin that contains oils and provides aroma and 
+flavor, away from the fruit
+64
+Appendix
+Training Manual CICN Presents: Culinary Keystones
+INSTRUCTOR’S PREPARATION GUIDE
+The preparation guide is designed to help the instructor prepare for each food/cooking activity. 
+The narrative in the training manual provides more detail.
+For all demonstrations, please have your mise en place staged for quick access as you work 
+through the various demonstrations. Time is limited, so being fully prepared before beginning the 
+demos is essential.
+NOTE: Please use the same knife and cutting board (as appropriate) throughout the training. A 
+chef knife and cutting board are listed in most of the demo prep guides; using a new knife and 
+board each time is not required. Clean, as appropriate, between tasks.
+Emphasize the need to follow the site’s recipes upon returning to work throughout the demos. 
+Recommend the participants work with their menu planners and recipe developers to adjust the 
+site’s recipes (if needed) based on the lessons learned during the demonstrations.
+The recipes used during the demos are for demonstration purposes only. They are not 
+nutritionally analyzed nor credited for use in the National School Lunch Program (NSLP)/School 
+Breakfast Program (SBP)/Child and Adult Food Care Program (CACFP).
+Demo Name: How to Tare a Mechanical Scale
+Preparation Notes
+Use a mechanical scale to demonstrate how to tare the scale. If there is a variety of mechanical 
+scales at the site, demonstrate how to tare scales that differ in how they can be tared.
+Equipment
+  Mechanical scale
+Demo Name: How to Tare a Digital Scale
+Preparation Notes
+Use a mechanical scale to demonstrate how to tare the scale. Tare the scale without a food pan, 
+and then tare the scale using a food pan, demonstrating how taring works with a food pan on the 
+scale.
+Equipment
+  Digital scale
+  Food pan
+65
+Appendix
+CICN Presents: Culinary Keystones Training Manual
+Demo Name: Review How to Properly Care for a Scale
+Preparation Notes
+Review how to carry a scale at the base. Point out areas on the scale that will become damaged 
+if they become wet.
+Equipment
+  Mechanical scale
+Demo Name: Review How to Measure Dry Ingredients
+Preparation Notes
+Review how to properly measure using a measuring cup. Stress that measuring dry goods with 
+a measuring cup or measuring spoons should be reserved for small quantities of ingredients. 
+Ingredient
+  Sugar
+Equipment
+  Measuring cup
+  Straight edge
+Demo Name: How to Use the Fluff and Spoon Method for Measuring Flour
+Preparation Notes
+Review the steps of the fluff and spoon method for measuring flour. Stress that measuring dry 
+goods with a measuring cup or measuring spoons should be reserved for small quantities of 
+ingredients.
+Ingredient
+  Flour
+Equipment
+  Measuring cup
+  Straight edge
+  Spoon
+66
+Appendix
+Training Manual CICN Presents: Culinary Keystones
+Demo Name: How to Measure Liquid Ingredients
+Preparation Notes
+Review how to measure using a liquid measure. Identify an area that is highly visible to conduct 
+the demonstration. You may also invite participants to participate. Be sure to use a dark-colored 
+fluid liquid, so the demonstration liquid has contrast for the participants to view.
+Ingredient
+  Soy sauce or other dark fluid liquid
+Equipment
+  Liquid measure
+67
+Appendix
+CICN Presents: Culinary Keystones Training Manual
+EQUIPMENT CHECKLIST
+Instructor’s Note: 
+At least 4 weeks prior to the training, contact the site coordinator to ensure the equipment is 
+available. If any equipment is unavailable on-site, ask the site coordinator if it is possible to borrow 
+equipment from another kitchen. Then, if any equipment is still unavailable, coordinate with the 
+Institute of Child Nutrition to ship missing equipment as needed. Clean and return the ICN’s 
+equipment after the training using the shipping label provided with the equipment.
+Equipment Total Confirm equipment is present
+Use this space to add comments if 
+equipment/supplies are not available. 
+Please include any equipment 
+substitutions used.
+SMALL KITCHEN TOOLS
+Digital Scale 1
+Mechanical Scale 1
+Measuring Cup 1
+Liquid Measure 1
+Spoon 1
+Food Pans 6
+Straight Edge 1
+SHOPPING LIST
+Instructor’s Note: 
+If certain ingredients are unavailable where you are training, use your best culinary judgment to find 
+an alternative.
+food Totalneeded Inventory from Prior Workshop purchased
+Ingredients
+Flour 1 small package
+Soy Sauce 1 small bottle
+Sugar 1 lb package
+The University of Mississippi
+School of Applied Sciences
+800-321-3054
+www.theicn.org

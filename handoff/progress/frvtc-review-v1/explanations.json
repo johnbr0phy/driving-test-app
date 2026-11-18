@@ -1,0 +1,1002 @@
+[
+  {
+    "reviewId": "R001",
+    "correctAnswer": "C",
+    "explanation": "La longueur minimale est de 4,50 m et la largeur minimale de 1,70 m. La longueur conforme ne compense pas une largeur insuffisante."
+  },
+  {
+    "reviewId": "R002",
+    "correctAnswer": "B",
+    "explanation": "Le président rémunéré de SASU est assimilé salarié pour la sécurité sociale. Son seul mandat ne lui ouvre pas l'assurance chômage ; un éventuel contrat de travail distinct relève d'autres conditions."
+  },
+  {
+    "reviewId": "R003",
+    "correctAnswer": "A",
+    "explanation": "La fiche est remplie avant le rangement : ‘après avoir rempli’ indique cette antériorité. Le nettoyage vient ensuite."
+  },
+  {
+    "reviewId": "R004",
+    "correctAnswer": "B",
+    "explanation": "Le régime micro repose sur un abattement forfaitaire, pas sur la déduction des charges réelles. L'administration invite à examiner le régime réel lorsque ces charges sont importantes ; le choix nécessite une comparaison de la situation."
+  },
+  {
+    "reviewId": "R005",
+    "correctAnswer": "B",
+    "explanation": "‘Have a lovely stay’ souhaite un agréable séjour à venir. Les autres phrases remercient pour l'attente, demandent un message ou évoquent un vol passé."
+  },
+  {
+    "reviewId": "R006",
+    "correctAnswer": "A",
+    "explanation": "La validité temporaire ne peut dépasser la fin du recours exceptionnel, même si le plafond de trente jours ouvrés calculé depuis l'envoi tombe plus tard. Elle s'arrête donc ici au 12 juin."
+  },
+  {
+    "reviewId": "R007",
+    "correctAnswer": "D",
+    "explanation": "‘Opposite the hotel’ signifie en face de l'hôtel ; ‘next to the pharmacy’ signifie à côté de la pharmacie. Les deux indications décrivent le même point d'attente."
+  },
+  {
+    "reviewId": "R008",
+    "correctAnswer": "A",
+    "explanation": "La signalétique définitive cesse d'être valide lorsque l'inscription en cours de l'exploitant arrive à échéance. Son état matériel et la carte du conducteur ne prolongent pas cette validité."
+  },
+  {
+    "reviewId": "R009",
+    "correctAnswer": "B",
+    "explanation": "Les besoins observés différencient des usages : régularité, horaire et bagages. Ils justifient une segmentation par besoins de déplacement, sans fournir de données sur le paiement, la résidence ou le canal publicitaire."
+  },
+  {
+    "reviewId": "R010",
+    "correctAnswer": "D",
+    "explanation": "La carte atteste la qualité professionnelle du conducteur. La déclaration de l'entreprise ne remplace pas l'inscription de l'exploitant au registre des VTC."
+  },
+  {
+    "reviewId": "R011",
+    "correctAnswer": "C",
+    "explanation": "La prospection pour des services similaires fournis par la même entreprise peut relever de l'exception applicable aux clients existants. Elle exige l'information et une opposition simple, pas un usage illimité des données."
+  },
+  {
+    "reviewId": "R012",
+    "correctAnswer": "A",
+    "explanation": "En débouchant d'un parking ou d'un accès privé, on cède le passage aux véhicules de la voie abordée. La priorité à droite ordinaire ne donne pas priorité à cette sortie."
+  },
+  {
+    "reviewId": "R013",
+    "correctAnswer": "B",
+    "explanation": "L'appréciation générale est positive, mais elle comporte une réserve sur la chaleur. L'accès difficile n'a pas causé de retard."
+  },
+  {
+    "reviewId": "R014",
+    "correctAnswer": "C",
+    "explanation": "Le travailleur peut refuser une proposition sans pénalité. La plateforme ne peut suspendre ou rompre la relation pour ce seul motif ; cela ne traite pas d'un engagement déjà accepté."
+  },
+  {
+    "reviewId": "R015",
+    "correctAnswer": "C",
+    "explanation": "Il faut conserver 48 + 12 = 60 € après commission. Comme 80 % du prix lui revient, le prix doit être 60 ÷ 0,80 = 75 €. Ajouter simplement 20 % à 60 € donnerait seulement 57,60 € après retenue."
+  },
+  {
+    "reviewId": "R016",
+    "correctAnswer": "D",
+    "explanation": "Le choix et le paiement peuvent relever d'une personne différente de l'utilisateur. Les attentes du service achats et l'expérience des voyageurs doivent donc être étudiées séparément."
+  },
+  {
+    "reviewId": "R017",
+    "correctAnswer": "A",
+    "explanation": "Le stage obligatoire dure quatorze heures et doit être suivi tous les cinq ans. Il ne faut pas le confondre avec d'autres formations professionnelles ou réunions annuelles."
+  },
+  {
+    "reviewId": "R018",
+    "correctAnswer": "D",
+    "explanation": "Le prix est 12 + (18 × 1,20) + (25 × 0,40) = 43,60 €. Oublier le temps donne 33,60 € ; oublier la prise en charge donne 31,60 €."
+  },
+  {
+    "reviewId": "R019",
+    "correctAnswer": "A",
+    "explanation": "Depuis la modification de 2025, les vignettes définitives doivent être collées de manière inamovible sans les détruire. Un support permettant de les retirer intactes ne répond pas à cette exigence."
+  },
+  {
+    "reviewId": "R020",
+    "correctAnswer": "C",
+    "explanation": "La panne et le nettoyage inachevé empêchaient un départ immédiat avec les véhicules de l'équipe. Le partenariat permettait de respecter l'heure prévue."
+  },
+  {
+    "reviewId": "R021",
+    "correctAnswer": "C",
+    "explanation": "L'auteur constate une progression mais limite la portée de cette observation. Il manque des données estivales pour extrapoler à l'année entière."
+  },
+  {
+    "reviewId": "R022",
+    "correctAnswer": "A",
+    "explanation": "L'arrêté impose au moins quatre portes aux véhicules thermiques non hybrides. Cette exigence est indépendante du nombre de places."
+  },
+  {
+    "reviewId": "R023",
+    "correctAnswer": "B",
+    "explanation": "L'aptitude physique doit être constatée dans le cadre du contrôle réalisé par un médecin agréé. Un certificat destiné à une autre activité ou une correction visuelle ne remplace pas cet avis."
+  },
+  {
+    "reviewId": "R024",
+    "correctAnswer": "C",
+    "explanation": "Le Code civil prévoit la modification par consentement mutuel, hors causes autorisées par la loi. Un changement du tarif public ou une facture ne remplace pas l'accord du client sur ce contrat ferme."
+  },
+  {
+    "reviewId": "R025",
+    "correctAnswer": "A",
+    "explanation": "L'auteur demande une information sur les modifications de déplacement pour compléter l'offre. Il n'annonce pas encore une décision d'acceptation ou de refus."
+  },
+  {
+    "reviewId": "R026",
+    "correctAnswer": "C",
+    "explanation": "À l'entrée d'un carrefour à sens giratoire, la priorité revient aux usagers qui circulent sur la chaussée annulaire. La sortie choisie ne supprime pas cette obligation."
+  },
+  {
+    "reviewId": "R027",
+    "correctAnswer": "C",
+    "explanation": "Les deux courses apportent 2 × 27 = 54 €, contre 46 €, soit 8 € de plus. Le calcul compare ici la contribution sur la même capacité disponible, sous les hypothèses précisées."
+  },
+  {
+    "reviewId": "R028",
+    "correctAnswer": "C",
+    "explanation": "L3120-4 exige de pouvoir justifier à tout moment d'un contrat couvrant la responsabilité civile professionnelle. Les garanties protégeant le véhicule ou le revenu répondent à d'autres risques."
+  },
+  {
+    "reviewId": "R029",
+    "correctAnswer": "B",
+    "explanation": "L'exemption du conducteur de taxi en service ne s'étend pas au VTC. Le chauffeur reste soumis à l'obligation de porter sa ceinture, même sans client."
+  },
+  {
+    "reviewId": "R030",
+    "correctAnswer": "D",
+    "explanation": "Dans la série choisie, les numéros doivent être uniques, chronologiques et continus. La facture suivante est donc F2026-048 ; on ne réutilise ni ne saute un numéro pour ce motif."
+  },
+  {
+    "reviewId": "R031",
+    "correctAnswer": "A",
+    "explanation": "Dans ce contexte, une recherche qui ‘aboutit’ produit le résultat attendu : un véhicule adapté. La réservation demeure non confirmée à ce stade."
+  },
+  {
+    "reviewId": "R032",
+    "correctAnswer": "C",
+    "explanation": "Le Code prévoit le dépassement par la droite lorsque le conducteur dépassé a signalé qu'il tourne à gauche. Il faut néanmoins que la manœuvre puisse se réaliser sans danger sur un espace autorisé."
+  },
+  {
+    "reviewId": "R033",
+    "correctAnswer": "B",
+    "explanation": "Une comparaison utile porte sur des prestations comparables, frais et services inclus. Le seul prix d'appel ne permet pas de mesurer la différence réelle pour le client."
+  },
+  {
+    "reviewId": "R034",
+    "correctAnswer": "C",
+    "explanation": "En marche normale, le conducteur tient la droite. Après le dépassement, il se rabat lorsque cela peut être fait sans danger, sans rester à gauche par simple convenance."
+  },
+  {
+    "reviewId": "R035",
+    "correctAnswer": "B",
+    "explanation": "La vérification concerne seulement une demande supplémentaire. Les trajets déjà confirmés demeurent valables et l'option nouvelle n'est pas encore acquise."
+  },
+  {
+    "reviewId": "R036",
+    "correctAnswer": "D",
+    "explanation": "R3122-5 attribue cette compétence nationale au préfet de la région d'Île-de-France. Elle se distingue des démarches de carte professionnelle auprès de la préfecture de domicile du conducteur."
+  },
+  {
+    "reviewId": "R037",
+    "correctAnswer": "D",
+    "explanation": "La chute entre début et envoi, accompagnée d'un signalement précis, situe une difficulté au formulaire. Acheter davantage de visibilité sans corriger cette étape laisserait la perte de demandes."
+  },
+  {
+    "reviewId": "R038",
+    "correctAnswer": "D",
+    "explanation": "Même avec un feu vert, il ne faut pas s'engager lorsqu'on risque d'être immobilisé dans l'intersection et d'empêcher le passage des autres voies."
+  },
+  {
+    "reviewId": "R039",
+    "correctAnswer": "A",
+    "explanation": "Le covoiturage suppose un déplacement effectué pour le propre compte du conducteur, sans rémunération autre que le partage des frais. La connaissance préalable des passagers n'est pas un critère légal."
+  },
+  {
+    "reviewId": "R040",
+    "correctAnswer": "B",
+    "explanation": "L'outrage sexiste ou sexuel peut être constitué par un propos ou comportement unique imposé et dégradant ou intimidant. Il se distingue ici du harcèlement par répétition et de l'acte sexuel non consenti."
+  },
+  {
+    "reviewId": "R041",
+    "correctAnswer": "D",
+    "explanation": "Lorsque la circulation s'établit en files ininterrompues, l'avance d'une file par rapport à l'autre n'est pas considérée comme un dépassement. Cela n'autorise pas les changements de file dangereux."
+  },
+  {
+    "reviewId": "R042",
+    "correctAnswer": "C",
+    "explanation": "Le conducteur doit rester en position d'exécuter toutes les manœuvres sans délai. Les objets transportés ne doivent réduire ni ses mouvements ni son champ de vision ; le rangement doit être revu."
+  },
+  {
+    "reviewId": "R043",
+    "correctAnswer": "C",
+    "explanation": "La liaison modifie l'environnement concurrentiel et les choix possibles des voyageurs. Son effet sur la demande VTC doit être analysé ; une hausse de marge n'en découle pas automatiquement."
+  },
+  {
+    "reviewId": "R044",
+    "correctAnswer": "B",
+    "explanation": "Le message modifie uniquement le lieu de dépose. Il maintient expressément le rendez-vous, l'horaire de départ et dispense la cliente de démarches."
+  },
+  {
+    "reviewId": "R045",
+    "correctAnswer": "A",
+    "explanation": "Le formulaire attribue deux rôles différents : le voyageur à accueillir et la personne qui suit la commande. Il ne supprime aucun de ces échanges."
+  },
+  {
+    "reviewId": "R046",
+    "correctAnswer": "A",
+    "explanation": "La marge passe de 30 € à 20 € puisque le prix baisse de 10 € et le coût ne change pas. La réduction de marge n'est pas 10 % de l'ancienne marge."
+  },
+  {
+    "reviewId": "R047",
+    "correctAnswer": "A",
+    "explanation": "Après paiement, la facture ne se modifie ni ne se remplace directement. Une facture d'avoir, dotée de son propre numéro, constate la correction et préserve la trace de l'opération."
+  },
+  {
+    "reviewId": "R048",
+    "correctAnswer": "D",
+    "explanation": "Les courses apportent 170 × 18 = 3 060 €. Après 2 700 € de charges fixes, il reste 360 €. Le nombre de courses au seuil serait 150, mais ce n'est pas un montant de résultat."
+  },
+  {
+    "reviewId": "R049",
+    "correctAnswer": "D",
+    "explanation": "Les intérêts constituent une charge financière de 60 €. Le remboursement des 560 € de principal réduit une dette ; le décaissement total reste de 620 €."
+  },
+  {
+    "reviewId": "R050",
+    "correctAnswer": "D",
+    "explanation": "Le besoin en fonds de roulement simplifié est créances moins dettes fournisseurs : 9 600 − 3 400 = 6 200 €. Les fournisseurs financent déjà une partie du décalage."
+  },
+  {
+    "reviewId": "R051",
+    "correctAnswer": "B",
+    "explanation": "Le minimum est de 1,50 m hors agglomération, contre 1 m en agglomération. Si cet écart ne peut pas être assuré, le dépassement doit attendre."
+  },
+  {
+    "reviewId": "R052",
+    "correctAnswer": "B",
+    "explanation": "Une pression grave visant réellement ou apparemment à obtenir un acte sexuel est assimilée au harcèlement sexuel même sans répétition. Il n'est pas nécessaire que la pression ait réussi."
+  },
+  {
+    "reviewId": "R053",
+    "correctAnswer": "B",
+    "explanation": "Des propos sexuels ou sexistes répétés, imposés et humiliants peuvent caractériser le harcèlement sexuel sans contact physique ni publication. Le prix du transport est sans rapport avec cette qualification."
+  },
+  {
+    "reviewId": "R054",
+    "correctAnswer": "B",
+    "explanation": "L'entreprise individuelle bénéficie de la séparation automatique entre patrimoines professionnel et personnel. Des exceptions et engagements particuliers existent ; ils sont exclus de la situation décrite."
+  },
+  {
+    "reviewId": "R055",
+    "correctAnswer": "B",
+    "explanation": "Limiter la différence testée à l'intitulé réduit les explications concurrentes. Si prix, formulaire et public changent aussi, il devient difficile d'attribuer le résultat au titre."
+  },
+  {
+    "reviewId": "R056",
+    "correctAnswer": "C",
+    "explanation": "L'infraction peut être constituée lorsque plusieurs personnes agissent de manière concertée envers une même victime, même si chacune n'a pas personnellement répété les propos."
+  },
+  {
+    "reviewId": "R057",
+    "correctAnswer": "C",
+    "explanation": "Il faut ralentir. Si le changement de voie ne peut être effectué sans danger, le conducteur s'éloigne autant que possible du véhicule immobilisé tout en restant dans sa voie."
+  },
+  {
+    "reviewId": "R058",
+    "correctAnswer": "C",
+    "explanation": "‘Receipt’ désigne le reçu et ‘email me’ demande un envoi électronique. La cliente ne demande ni devis ni remboursement."
+  },
+  {
+    "reviewId": "R059",
+    "correctAnswer": "A",
+    "explanation": "La présence du chien guide ou d'assistance ne peut entraîner de surfacturation. Les tarifs de bagage, de place ou d'animal de compagnie ne permettent pas de contourner cette règle."
+  },
+  {
+    "reviewId": "R060",
+    "correctAnswer": "D",
+    "explanation": "Le STOP impose un arrêt effectif, même si la voie est libre. Après cet arrêt et les contrôles, le conducteur peut repartir sans créer de danger."
+  },
+  {
+    "reviewId": "R061",
+    "correctAnswer": "D",
+    "explanation": "Le conditionnel ‘devrait’ et l'absence de confirmation portent sur la fin de la réunion. Le retour est souhaité et les accès multiples sont présentés comme certains."
+  },
+  {
+    "reviewId": "R062",
+    "correctAnswer": "B",
+    "explanation": "On ne s'engage pas sur la voie opposée lorsque la visibilité est insuffisante pour vérifier l'absence de circulation venant en face. La lenteur du véhicule suivi ne supprime pas cette contrainte."
+  },
+  {
+    "reviewId": "R063",
+    "correctAnswer": "D",
+    "explanation": "Le 17 permet de demander une intervention urgente des forces de l'ordre. Les voies commerciales ou administratives ne remplissent pas cette fonction immédiate."
+  },
+  {
+    "reviewId": "R064",
+    "correctAnswer": "A",
+    "explanation": "R3122-2 prévoit une mise en demeure de compléter le dossier. Le refus peut intervenir si elle reste sans effet ; le dépôt incomplet ne vaut pas autorisation provisoire."
+  },
+  {
+    "reviewId": "R065",
+    "correctAnswer": "C",
+    "explanation": "L1326-2 prévoit la communication de la distance, de la destination et du prix minimal garanti après commission avant que le travailleur choisisse d'accepter ou de refuser."
+  },
+  {
+    "reviewId": "R066",
+    "correctAnswer": "D",
+    "explanation": "Le point mort se calcule ici par 60 000 ÷ 90 000 × 360 = 240 jours. L'hypothèse de ventes régulières est nécessaire à cette conversion en durée."
+  },
+  {
+    "reviewId": "R067",
+    "correctAnswer": "B",
+    "explanation": "Un taux de marge de 25 % sur 72 € ajoute 18 €, soit 90 €. Diviser par 0,75 donnerait 96 €, prix associé à un taux de marque de 25 %, ce qui est différent."
+  },
+  {
+    "reviewId": "R068",
+    "correctAnswer": "D",
+    "explanation": "L3122-9 permet le retour à l'établissement ou dans un lieu hors de la chaussée où le stationnement est autorisé. Il n'impose donc pas systématiquement de rejoindre un établissement éloigné."
+  },
+  {
+    "reviewId": "R069",
+    "correctAnswer": "D",
+    "explanation": "Le texte distingue les heures de pointe des autres périodes. Il recommande un choix tenant compte de l'horaire, sans imposer un itinéraire permanent."
+  },
+  {
+    "reviewId": "R070",
+    "correctAnswer": "D",
+    "explanation": "Le taux de marge sur coûts variables est 60 %. Le seuil de rentabilité vaut 36 000 ÷ 0,60 = 60 000 €. Diviser par 40 % utiliserait le taux des coûts au lieu de celui de la marge."
+  },
+  {
+    "reviewId": "R071",
+    "correctAnswer": "D",
+    "explanation": "En agglomération, le conducteur doit ralentir et, si nécessaire, s'arrêter pour laisser un véhicule de transport en commun quitter son arrêt signalé. Le clignotant ne crée pas une invitation à accélérer."
+  },
+  {
+    "reviewId": "R072",
+    "correctAnswer": "C",
+    "explanation": "La priorité du piéton couvre l'engagement régulier et la manifestation claire de l'intention de traverser. Elle ne dépend pas de l'arrivée du piéton au milieu de la chaussée."
+  },
+  {
+    "reviewId": "R073",
+    "correctAnswer": "D",
+    "explanation": "La marge vaut 20 €. Le taux de marque est 20 ÷ 100 = 20 %. Le résultat de 25 % correspondrait au taux de marge, calculé sur le coût de 80 €."
+  },
+  {
+    "reviewId": "R074",
+    "correctAnswer": "A",
+    "explanation": "Le questionnaire sert à mieux comprendre les deux clientèles avant une décision. Le texte exclut l'annonce d'une prestation déjà décidée."
+  },
+  {
+    "reviewId": "R075",
+    "correctAnswer": "D",
+    "explanation": "‘Shall I…?’ propose une action réalisée par celui qui parle. ‘Boot’ désigne le coffre en anglais britannique."
+  },
+  {
+    "reviewId": "R076",
+    "correctAnswer": "B",
+    "explanation": "L'intervalle minimal général est de deux secondes. À 25 m/s, il représente 25 × 2 = 50 m ; les circonstances peuvent imposer davantage."
+  },
+  {
+    "reviewId": "R077",
+    "correctAnswer": "B",
+    "explanation": "La conformité de l'exploitant ne remplace pas la carte professionnelle personnelle du chauffeur. Un conducteur salarié n'a pas à créer sa propre entreprise pour travailler pour cet exploitant."
+  },
+  {
+    "reviewId": "R078",
+    "correctAnswer": "D",
+    "explanation": "Le recours exceptionnel prévu pour l'impossibilité matérielle d'utiliser une voiture inscrite ne peut excéder un mois. Un besoin plus durable nécessite de traiter la situation dans le cadre normal du registre."
+  },
+  {
+    "reviewId": "R079",
+    "correctAnswer": "B",
+    "explanation": "L'article 2 dispense les véhicules électriques des caractéristiques de l'article 1, dont la longueur minimale. La règle générale de quatre à neuf places demeure applicable."
+  },
+  {
+    "reviewId": "R080",
+    "correctAnswer": "C",
+    "explanation": "R3122-1 impose de signaler les changements des informations du dossier dans un délai maximal de quinze jours francs. Le renouvellement périodique ne dispense pas de cette mise à jour."
+  },
+  {
+    "reviewId": "R081",
+    "correctAnswer": "A",
+    "explanation": "La formation continue réglementaire est dispensée par un centre agréé et sanctionnée par une attestation. Une réunion commerciale n'acquiert pas cette qualité par son seul intitulé ou son logo."
+  },
+  {
+    "reviewId": "R082",
+    "correctAnswer": "C",
+    "explanation": "L3120-2 interdit de communiquer avant réservation à la fois la localisation et la disponibilité de ces véhicules sur la voie publique, hors régime de l'autorisation de stationnement."
+  },
+  {
+    "reviewId": "R083",
+    "correctAnswer": "B",
+    "explanation": "Le pronom ‘les’ reprend les deux collègues qui voyagent. Leurs numéros ont précisément été transmis pour permettre de les contacter."
+  },
+  {
+    "reviewId": "R084",
+    "correctAnswer": "C",
+    "explanation": "Le lieu et l'horaire sélectionnent une clientèle particulière. Ses réponses ne représentent pas nécessairement les habitants, les entreprises ou les voyageurs d'autres périodes."
+  },
+  {
+    "reviewId": "R085",
+    "correctAnswer": "D",
+    "explanation": "À défaut des nom et coordonnées téléphoniques prévus pour le client, le chauffeur doit fournir sans délai un moyen permettant à l'agent de contacter celui-ci. Un contact sans lien avec ce client ne remplit pas cette fonction."
+  },
+  {
+    "reviewId": "R086",
+    "correctAnswer": "D",
+    "explanation": "La création de l'entreprise passe par le guichet unique électronique de l'Inpi. Cette formalité ne se confond pas avec l'inscription sectorielle de l'exploitant au registre des VTC."
+  },
+  {
+    "reviewId": "R087",
+    "correctAnswer": "D",
+    "explanation": "Une somnolence ou une difficulté de concentration impose d'arrêter la conduite en sécurité. L'absence de symptôme lors d'une prise antérieure ne garantit pas la compatibilité ; le traitement doit être discuté avec un professionnel, sans modification autonome."
+  },
+  {
+    "reviewId": "R088",
+    "correctAnswer": "A",
+    "explanation": "Des éléments précis et datés, distinguant ce qui a été vu ou entendu des suppositions, rendent le témoignage exploitable. Les preuves peuvent notamment comprendre des attestations et des échanges écrits."
+  },
+  {
+    "reviewId": "R089",
+    "correctAnswer": "C",
+    "explanation": "Après la démarche auprès du service client, le consommateur peut recourir au médiateur de la consommation du prestataire. Ce rôle ne revient pas au centre d'examen ni au gestionnaire du registre."
+  },
+  {
+    "reviewId": "R090",
+    "correctAnswer": "C",
+    "explanation": "La sollicitation doit être en rapport avec l'activité professionnelle de la personne. L'adresse accessible ou l'absence de prix ne dispense pas d'informer ni de permettre l'opposition."
+  },
+  {
+    "reviewId": "R091",
+    "correctAnswer": "B",
+    "explanation": "La demande de carte du conducteur relève de la préfecture du département de son domicile. Il ne faut pas confondre cette démarche personnelle avec le registre national des exploitants."
+  },
+  {
+    "reviewId": "R092",
+    "correctAnswer": "A",
+    "explanation": "Le véhicule durable constitue une immobilisation à l'actif. Le prêt est une ressource empruntée, donc une dette au passif ; son existence ne transforme pas le véhicule en charge immédiate."
+  },
+  {
+    "reviewId": "R093",
+    "correctAnswer": "D",
+    "explanation": "‘Cheaper’ signifie moins cher et ‘even if’ introduit une concession. Le client accepte une durée plus longue pour payer moins."
+  },
+  {
+    "reviewId": "R094",
+    "correctAnswer": "D",
+    "explanation": "La vignette temporaire est imprimée sur papier libre à partir de l'exemplaire transmis électroniquement par l'Imprimerie nationale. Une copie d'une autre voiture ou un document improvisé ne convient pas."
+  },
+  {
+    "reviewId": "R095",
+    "correctAnswer": "D",
+    "explanation": "Une liste d'opposition permet de respecter durablement la désinscription, y compris lors d'un nouvel import. Elle sert à exclure la personne de la prospection, pas à lui adresser une autre campagne."
+  },
+  {
+    "reviewId": "R096",
+    "correctAnswer": "D",
+    "explanation": "Cette condamnation figure parmi celles qui empêchent d'exercer lorsque présentes au bulletin n° 2. Il s'agit d'une condition d'honorabilité, distincte des finances et de l'état du véhicule."
+  },
+  {
+    "reviewId": "R097",
+    "correctAnswer": "C",
+    "explanation": "L'assurance automobile doit couvrir l'usage réel de transport de personnes à titre onéreux. Une couverture limitée à l'usage privé ou aux trajets domicile-travail ne suffit pas."
+  },
+  {
+    "reviewId": "R098",
+    "correctAnswer": "D",
+    "explanation": "Le consentement est révocable. Un accord initial ne permet pas de continuer après son retrait ; une relation préexistante ou l'absence de témoin ne change pas cette exigence."
+  },
+  {
+    "reviewId": "R099",
+    "correctAnswer": "D",
+    "explanation": "L'identifiant unique de l'exploitant et son numéro d'inscription au registre VTC figurent tous deux parmi les informations requises. L'un ne remplace pas l'autre."
+  },
+  {
+    "reviewId": "R100",
+    "correctAnswer": "B",
+    "explanation": "L3120-1 exclut les transports publics collectifs du régime des T3P. Le salariat, le paiement individuel ou le périmètre urbain ne déterminent pas à eux seuls ce classement."
+  },
+  {
+    "reviewId": "R101",
+    "correctAnswer": "C",
+    "explanation": "Le texte attribue la réservation depuis la gare aux participants. La réception informe et l'association organise seulement le déplacement vers le dîner."
+  },
+  {
+    "reviewId": "R102",
+    "correctAnswer": "B",
+    "explanation": "Le taux passe de 4 % à 6 %, mais les réservations diminuent de 40 à 24. Un taux meilleur ne suffit donc pas à conclure à une hausse du volume commercial."
+  },
+  {
+    "reviewId": "R103",
+    "correctAnswer": "B",
+    "explanation": "Un enfant installé dos à la route à l'avant exige la désactivation de l'airbag frontal. Son déclenchement serait dangereux pour le siège placé face au dossier."
+  },
+  {
+    "reviewId": "R104",
+    "correctAnswer": "B",
+    "explanation": "Le sous-gonflage augmente la consommation et dégrade la tenue de route. La pression doit être vérifiée selon les préconisations adaptées au véhicule et à sa charge."
+  },
+  {
+    "reviewId": "R105",
+    "correctAnswer": "D",
+    "explanation": "Le coût d'acquisition moyen est 720 ÷ 24 = 30 €. Ce montant ne renseigne pas à lui seul sur la rentabilité future de ces clients."
+  },
+  {
+    "reviewId": "R106",
+    "correctAnswer": "C",
+    "explanation": "L'amortissement répartit le coût d'un actif sur sa durée d'utilisation. Sa dotation annuelle est une charge calculée ; elle n'entraîne pas un paiement de 4 800 € au moment de l'écriture."
+  },
+  {
+    "reviewId": "R107",
+    "correctAnswer": "B",
+    "explanation": "La dispense citée vise les taxis et les transports en commun, pas les VTC. L'enfant doit être installé dans un dispositif adapté, sauf autre exception légale applicable, exclue ici."
+  },
+  {
+    "reviewId": "R108",
+    "correctAnswer": "A",
+    "explanation": "La permanence élargit les possibilités de contact. Le texte distingue explicitement ce service de la disponibilité et de la confirmation d'un transport."
+  },
+  {
+    "reviewId": "R109",
+    "correctAnswer": "C",
+    "explanation": "La confirmation utile à l'exécution d'une réservation est transactionnelle. Le refus de publicité ne la transforme pas en prospection ; l'ajout d'une promotion pourrait modifier cette analyse."
+  },
+  {
+    "reviewId": "R110",
+    "correctAnswer": "C",
+    "explanation": "Le minimum est de 84 kW de puissance nette. Les chevaux fiscaux ne remplacent pas cette valeur et ne s'y additionnent pas."
+  },
+  {
+    "reviewId": "R111",
+    "correctAnswer": "B",
+    "explanation": "Sans signalisation modifiant la priorité, le conducteur venant de gauche cède à celui venant de droite. La largeur apparente de la rue et le transport d'un client ne créent pas de priorité."
+  },
+  {
+    "reviewId": "R112",
+    "correctAnswer": "A",
+    "explanation": "En l'absence de danger immédiat nécessitant un dégagement, on ne déplace pas inutilement un blessé. Il faut suivre les consignes des secours et agir dans les limites de ses compétences."
+  },
+  {
+    "reviewId": "R113",
+    "correctAnswer": "A",
+    "explanation": "L'inscription est renouvelable tous les cinq ans. Cette durée ne se confond ni avec la limite d'ancienneté d'un véhicule thermique ni avec la validité d'un autre document."
+  },
+  {
+    "reviewId": "R114",
+    "correctAnswer": "C",
+    "explanation": "La messagerie officielle de signalement permet d'échanger avec un policier ou un gendarme formé, qui aide et oriente notamment vers un dépôt de plainte. Une réclamation commerciale ne remplace pas cette démarche."
+  },
+  {
+    "reviewId": "R115",
+    "correctAnswer": "C",
+    "explanation": "L'arrêté prévoit l'angle inférieur gauche du pare-brise avant, côté conducteur, et l'angle inférieur droit du vitrage arrière, à l'opposé du conducteur."
+  },
+  {
+    "reviewId": "R116",
+    "correctAnswer": "D",
+    "explanation": "L'hôtel influence le choix du voyageur en recommandant un service : il agit comme prescripteur. Il n'est pas pour autant l'acheteur ou l'utilisateur de chaque course."
+  },
+  {
+    "reviewId": "R117",
+    "correctAnswer": "B",
+    "explanation": "Pendant l'activité, la carte professionnelle doit être apposée dans le véhicule et visible de l'extérieur. La détenir dans une boîte fermée ne satisfait pas à cette règle de présentation."
+  },
+  {
+    "reviewId": "R118",
+    "correctAnswer": "B",
+    "explanation": "La SARL peut réunir plusieurs associés, de deux à cent. L'EURL et la SASU sont unipersonnelles ; trois entreprises individuelles ne constituent pas une société commune."
+  },
+  {
+    "reviewId": "R119",
+    "correctAnswer": "B",
+    "explanation": "Le justificatif comporte la date et l'heure de la réservation ainsi que la date et l'heure souhaitées de prise en charge. Ces deux événements sont distincts."
+  },
+  {
+    "reviewId": "R120",
+    "correctAnswer": "A",
+    "explanation": "Deux devis alternatifs sont demandés pour un seul déplacement. L'incertitude porte sur l'horaire, pas sur la multiplication des courses."
+  },
+  {
+    "reviewId": "R121",
+    "correctAnswer": "A",
+    "explanation": "Le Code pénal précise que le consentement ne peut être déduit du seul silence ou de la seule absence de réaction. Les circonstances doivent être appréciées sans transformer l'immobilité en autorisation."
+  },
+  {
+    "reviewId": "R122",
+    "correctAnswer": "D",
+    "explanation": "‘Which station’ demande quelle gare le client souhaite rejoindre. Son propos exclut l'aéroport et ne renseigne pas le nom de la gare."
+  },
+  {
+    "reviewId": "R123",
+    "correctAnswer": "D",
+    "explanation": "Les VTC ne peuvent être équipés de dispositifs créant une confusion avec les taxis, notamment leurs équipements spéciaux. Une réservation ou un forfait ne lève pas cette interdiction."
+  },
+  {
+    "reviewId": "R124",
+    "correctAnswer": "B",
+    "explanation": "‘Scarf’ signifie écharpe et ‘back seat’ désigne le siège ou la banquette arrière. ‘I think’ indique qu'il n'en est pas certain."
+  },
+  {
+    "reviewId": "R125",
+    "correctAnswer": "B",
+    "explanation": "La pénétration cherche à attirer un volume important par un prix relativement bas. L'écrémage vise au contraire une clientèle plus restreinte avec un prix élevé."
+  },
+  {
+    "reviewId": "R126",
+    "correctAnswer": "A",
+    "explanation": "La limite de neuf places comprend le conducteur. Il reste donc huit places pour les passagers, sous réserve de l'homologation et des équipements du véhicule."
+  },
+  {
+    "reviewId": "R127",
+    "correctAnswer": "A",
+    "explanation": "Refuser l'accès au service en raison de l'origine constitue une différence de traitement fondée sur un critère protégé. Les autres motifs décrivent ici des contraintes matérielles, si elles sont réelles et appliquées sans discrimination."
+  },
+  {
+    "reviewId": "R128",
+    "correctAnswer": "A",
+    "explanation": "La cessation de l'activité de transport avec VTC constitue un motif de radiation. L'existence juridique de l'entreprise dans un autre secteur ne maintient pas cette inscription."
+  },
+  {
+    "reviewId": "R129",
+    "correctAnswer": "C",
+    "explanation": "La marge sur coûts variables est de 45 000 − 18 000 = 27 000 €. Elle doit d'abord absorber les charges fixes ; elle n'est pas encore le bénéfice net."
+  },
+  {
+    "reviewId": "R130",
+    "correctAnswer": "D",
+    "explanation": "Le coût total est 3 × 40 + 80 = 200 €, soit 50 € par transfert. La moyenne simple des deux tarifs de coût, 60 €, ignorerait leurs fréquences différentes."
+  },
+  {
+    "reviewId": "R131",
+    "correctAnswer": "B",
+    "explanation": "Le taux de réachat de la cohorte est 28 ÷ 80 = 35 %. Il ne faut pas y inclure d'autres clients arrivés après janvier."
+  },
+  {
+    "reviewId": "R132",
+    "correctAnswer": "A",
+    "explanation": "Quand la visibilité est inférieure à 50 m, le maximum est de 50 km/h sur tous les réseaux, y compris l'autoroute. Il peut être nécessaire de rouler encore moins vite selon la situation."
+  },
+  {
+    "reviewId": "R133",
+    "correctAnswer": "A",
+    "explanation": "Le Code accepte un contrat de location d'au moins six mois. Un semestre ferme atteint ce minimum ; un trimestre ou un mois renouvelable ne le garantit pas, et une année n'est pas le minimum requis."
+  },
+  {
+    "reviewId": "R134",
+    "correctAnswer": "B",
+    "explanation": "L'EURL et la SASU sont des sociétés à associé unique. L'entreprise individuelle permet aussi d'exercer seul, mais ce n'est pas une société."
+  },
+  {
+    "reviewId": "R135",
+    "correctAnswer": "D",
+    "explanation": "Seul l'accès habituel des véhicules est fermé. Le parking reste ouvert et les piétons conservent leur accès."
+  },
+  {
+    "reviewId": "R136",
+    "correctAnswer": "A",
+    "explanation": "L'événement peut produire un pic temporaire. Des données hors festival permettent d'apprécier la saisonnalité et de construire une prévision qui ne prolonge pas artificiellement ce pic toute l'année."
+  },
+  {
+    "reviewId": "R137",
+    "correctAnswer": "A",
+    "explanation": "Pour une personne morale, seuls les représentants légaux sont habilités à présenter la demande. La qualité de salarié, d'associé ou de client ne suffit pas."
+  },
+  {
+    "reviewId": "R138",
+    "correctAnswer": "D",
+    "explanation": "La cessation définitive d'activité impose la restitution de la carte professionnelle à l'administration. Sa validité restante ne permet ni de la conserver pour exercer ni de la transmettre."
+  },
+  {
+    "reviewId": "R139",
+    "correctAnswer": "A",
+    "explanation": "Le prix VTC est libre. Il peut être fixé forfaitairement dès la commande ou calculé selon la durée et la distance ; il ne relève pas du tarif préfectoral des taxis."
+  },
+  {
+    "reviewId": "R140",
+    "correctAnswer": "A",
+    "explanation": "Le prêt apporte de la trésorerie et crée une dette. Son versement n'est ni une vente, ni un apport au capital, ni un acompte payé par un client."
+  },
+  {
+    "reviewId": "R141",
+    "correctAnswer": "D",
+    "explanation": "Le travailleur détermine librement l'itinéraire au regard notamment de la circulation, de la proposition de la plateforme et, le cas échéant, du choix du client. Une suggestion logicielle n'est pas une obligation absolue."
+  },
+  {
+    "reviewId": "R142",
+    "correctAnswer": "C",
+    "explanation": "Le port à l'oreille d'un dispositif émettant du son est interdit au conducteur, hors appareils correcteurs de surdité. L'usage pour le GPS et le port sur une seule oreille ne constituent pas des exceptions."
+  },
+  {
+    "reviewId": "R143",
+    "correctAnswer": "C",
+    "explanation": "L'arrêté autorise le support papier ou électronique. La présence des informations requises et leur présentation lors du contrôle sont déterminantes, pas l'impression du document."
+  },
+  {
+    "reviewId": "R144",
+    "correctAnswer": "D",
+    "explanation": "Le site de l'entreprise relève des médias détenus. Les annonces sont payantes ; les articles spontanés et avis externes relèvent de médias gagnés ou de supports tiers."
+  },
+  {
+    "reviewId": "R145",
+    "correctAnswer": "D",
+    "explanation": "Un équipement extérieur de toit inutilisé augmente la résistance à l'air et la consommation. Les autres accessoires cités restent à l'intérieur de la carrosserie et ne créent pas cet effet aérodynamique."
+  },
+  {
+    "reviewId": "R146",
+    "correctAnswer": "C",
+    "explanation": "Le résultat est la différence entre produits et charges : 96 000 − 79 500 = 16 500 €. Ni les recettes seules ni le montant des charges ne représentent ce bénéfice."
+  },
+  {
+    "reviewId": "R147",
+    "correctAnswer": "B",
+    "explanation": "Le devis présente une proposition avant la prestation et engage les parties une fois accepté. Une quittance ou une facture acquittée suppose un paiement ; un avoir corrige une facturation."
+  },
+  {
+    "reviewId": "R148",
+    "correctAnswer": "B",
+    "explanation": "Deux conditions sont nécessaires. Le groupe prêt satisfait la première, mais la disponibilité du véhicule doit encore être vérifiée et confirmée."
+  },
+  {
+    "reviewId": "R149",
+    "correctAnswer": "D",
+    "explanation": "La prestation facturée mais non encaissée crée une créance sur le client. L'argent ne figure pas encore parmi les disponibilités."
+  },
+  {
+    "reviewId": "R150",
+    "correctAnswer": "B",
+    "explanation": "La condition annoncée est l'ajout d'un lieu intermédiaire. Le chargement est déjà compris et une réponse jeudi intervient avant l'échéance."
+  },
+  {
+    "reviewId": "R151",
+    "correctAnswer": "A",
+    "explanation": "‘May’ exprime une possibilité. ‘Arrive ten minutes late’ concerne le retard à l'arrivée, sans annoncer une durée restante exacte."
+  },
+  {
+    "reviewId": "R152",
+    "correctAnswer": "B",
+    "explanation": "Deux demandes nécessitaient une précision et une seule a depuis été complétée. Il reste donc un dossier incomplet, sans que le texte confirme encore son transport."
+  },
+  {
+    "reviewId": "R153",
+    "correctAnswer": "A",
+    "explanation": "‘Turn the heating up’ demande d'augmenter le chauffage. ‘A bit cold’ indique qu'il trouve l'habitacle un peu froid."
+  },
+  {
+    "reviewId": "R154",
+    "correctAnswer": "D",
+    "explanation": "Un avantage perceptible et démontré peut justifier un prix supérieur pour la cible. Le prix seul ou une promesse non vérifiée ne montre pas la valeur du service."
+  },
+  {
+    "reviewId": "R155",
+    "correctAnswer": "B",
+    "explanation": "Le conducteur qui tourne cède aux cycles circulant sur la piste qu'il coupe, dans les deux sens. Il faut donc contrôler aussi le sens opposé."
+  },
+  {
+    "reviewId": "R156",
+    "correctAnswer": "C",
+    "explanation": "Depuis le 12 août 2026, l'expérience professionnelle ne permet plus cette dispense. Le cas décrit exclut un dossier antérieur ou une reconnaissance de qualification européenne, qui nécessiteraient un examen distinct."
+  },
+  {
+    "reviewId": "R157",
+    "correctAnswer": "B",
+    "explanation": "L'arrêt au jaune fixe est la règle, sauf si le conducteur ne peut plus s'arrêter dans des conditions de sécurité suffisantes lors de son allumage. La situation décrite correspond à cette exception."
+  },
+  {
+    "reviewId": "R158",
+    "correctAnswer": "B",
+    "explanation": "Le numéro de route, le sens de circulation et le repère kilométrique localisent le lieu. L'alerte doit aussi préciser victimes et dangers, mais l'identité du client ne remplace pas cette localisation."
+  },
+  {
+    "reviewId": "R159",
+    "correctAnswer": "C",
+    "explanation": "Le conducteur dépassé doit serrer à droite sans accélérer. Une augmentation de vitesse prolonge le temps pendant lequel l'autre véhicule utilise la voie opposée."
+  },
+  {
+    "reviewId": "R160",
+    "correctAnswer": "D",
+    "explanation": "Le niveau 2 indique un risque réel pour la conduite. Le médecin ou le pharmacien doit apprécier la compatibilité au cas par cas ; ce n'est ni une absence de risque ni une interdiction définitive."
+  },
+  {
+    "reviewId": "R161",
+    "correctAnswer": "B",
+    "explanation": "La question demande poliment l'information manquante sans attribuer une faute à la cliente. Elle conserve le sens du brouillon."
+  },
+  {
+    "reviewId": "R162",
+    "correctAnswer": "C",
+    "explanation": "Le Code autorise une mise en relation à titre onéreux pour du covoiturage. Cette rémunération de l'intermédiaire ne doit pas être confondue avec celle du conducteur, dont le trajet doit garder les caractéristiques légales du covoiturage."
+  },
+  {
+    "reviewId": "R163",
+    "correctAnswer": "B",
+    "explanation": "Les 70 km parcourus coûtent 70 × 0,40 = 28 €. Le retour à vide consomme aussi des ressources ; ne compter que les kilomètres occupés donnerait 18 €."
+  },
+  {
+    "reviewId": "R164",
+    "correctAnswer": "A",
+    "explanation": "‘I'm waiting for’ signifie ‘j'attends’. Les autres réponses présentent Mme Brown comme la destination, une accompagnatrice ou une personne déjà déposée."
+  },
+  {
+    "reviewId": "R165",
+    "correctAnswer": "C",
+    "explanation": "Le consentement à un acte sexuel doit être spécifique. Accepter un échange de coordonnées ou une conversation n'établit pas un accord à un autre acte."
+  },
+  {
+    "reviewId": "R166",
+    "correctAnswer": "A",
+    "explanation": "La société attend davantage ses encaissements alors que ses paiements restent inchangés. Les créances augmentent et le décalage doit être financé, sans modifier automatiquement coûts ni capital."
+  },
+  {
+    "reviewId": "R167",
+    "correctAnswer": "C",
+    "explanation": "La justification d'une réservation préalable constitue une exception à l'obligation de retour ou de retrait après la prestation. Elle n'autorise pas la maraude ni une infraction au stationnement."
+  },
+  {
+    "reviewId": "R168",
+    "correctAnswer": "B",
+    "explanation": "Les écrans de navigation ou d'aide à la conduite relèvent de l'exception. Un divertissement, une publicité ou une visioconférence ne devient pas un outil de navigation du seul fait qu'il est utile à l'activité."
+  },
+  {
+    "reviewId": "R169",
+    "correctAnswer": "A",
+    "explanation": "Les participants ont déjà reçu la nouvelle adresse. Il faut encore actualiser le dossier de transport et identifier précisément l'événement."
+  },
+  {
+    "reviewId": "R170",
+    "correctAnswer": "B",
+    "explanation": "La liste actuelle des circonstances aggravantes inclut les faits commis à bord d'un VTC. L'horaire nocturne, le nom du réservataire et le tarif ne constituent pas cette circonstance de lieu."
+  },
+  {
+    "reviewId": "R171",
+    "correctAnswer": "A",
+    "explanation": "La trésorerie de mars vaut 3 200 + 7 800 − 8 500 = 2 500 €. La facture encaissée en avril n'entre pas dans les encaissements de mars."
+  },
+  {
+    "reviewId": "R172",
+    "correctAnswer": "B",
+    "explanation": "Le bilan doit vérifier la diminution des appels de recherche. Le texte vise la clarté du message, pas sa fréquence ni la durée des trajets."
+  },
+  {
+    "reviewId": "R173",
+    "correctAnswer": "B",
+    "explanation": "Le CRM centralise la mémoire commerciale : échanges, avancement et actions prévues. Un historique partagé permet de coordonner les relances du même prospect."
+  },
+  {
+    "reviewId": "R174",
+    "correctAnswer": "C",
+    "explanation": "La qualification des demandes renseigne sur leur adéquation avec l'offre. Un trafic élevé peut avoir peu de valeur commerciale si les visiteurs recherchent un service que l'entreprise ne peut fournir."
+  },
+  {
+    "reviewId": "R175",
+    "correctAnswer": "A",
+    "explanation": "La priorité est d'éviter un suraccident et d'éloigner les passagers de la chaussée. La glissière accessible offre une séparation avec la circulation ; rester près du véhicule expose à un autre choc."
+  },
+  {
+    "reviewId": "R176",
+    "correctAnswer": "B",
+    "explanation": "L1326-4 permet d'utiliser simultanément plusieurs intermédiaires et de commercialiser directement ses services. Ces possibilités ne dispensent pas des obligations légales du transporteur."
+  },
+  {
+    "reviewId": "R177",
+    "correctAnswer": "B",
+    "explanation": "Un changement de voie dans un giratoire respecte les règles de priorité et doit être signalé. Le clignotant informe, mais ne donne pas le droit de couper la trajectoire d'un véhicule déjà sur la voie extérieure."
+  },
+  {
+    "reviewId": "R178",
+    "correctAnswer": "A",
+    "explanation": "Le contrôle technique d'un véhicule affecté à cette activité est annuel. La périodicité des voitures particulières ordinaires ou celle du registre VTC ne s'y substitue pas."
+  },
+  {
+    "reviewId": "R179",
+    "correctAnswer": "C",
+    "explanation": "Les données collectées doivent être nécessaires à la finalité. Le revenu annuel ne sert pas ici à établir ou transmettre le devis, contrairement aux informations de trajet et de contact."
+  },
+  {
+    "reviewId": "R180",
+    "correctAnswer": "C",
+    "explanation": "‘May I…?’ demande la permission d'agir soi-même. ‘Could you…?’ demande au contraire à l'interlocuteur d'effectuer l'action."
+  },
+  {
+    "reviewId": "R181",
+    "correctAnswer": "C",
+    "explanation": "L'inscription obtenue pour son propre compte ne peut être mise à la disposition d'un tiers, à titre onéreux ou gratuit. Le prêt n'est pas assimilable à l'exploitation régulière de salariés ou à une sous-traitance conforme."
+  },
+  {
+    "reviewId": "R182",
+    "correctAnswer": "D",
+    "explanation": "L'anticipation permet une décélération progressive et l'utilisation du frein moteur. Elle évite de fournir une énergie qu'il faudrait dissiper immédiatement par un freinage tardif."
+  },
+  {
+    "reviewId": "R183",
+    "correctAnswer": "C",
+    "explanation": "La navette répond au même besoin de déplacement avec une offre différente, collective. Les autres offres sont proches du transfert individuel étudié et relèvent davantage de la concurrence directe."
+  },
+  {
+    "reviewId": "R184",
+    "correctAnswer": "B",
+    "explanation": "Le droit d'accès des chiens guides ou d'assistance dans les transports ne se confond pas avec la politique commerciale relative aux animaux de compagnie."
+  },
+  {
+    "reviewId": "R185",
+    "correctAnswer": "B",
+    "explanation": "Un VTC ne bénéficie pas du droit de maraude des taxis titulaires d'une autorisation de stationnement. La prise en charge sur la voie publique exige une réservation préalable."
+  },
+  {
+    "reviewId": "R186",
+    "correctAnswer": "C",
+    "explanation": "Le loyer forfaitaire reste identique quand le nombre de courses varie dans cette situation. Les autres dépenses évoluent avec les courses ou les kilomètres concernés."
+  },
+  {
+    "reviewId": "R187",
+    "correctAnswer": "A",
+    "explanation": "Le recours exceptionnel pour un événement impose une transmission préalable des documents des véhicules et des conducteurs, assortis de la période concernée. La déclaration après l'événement serait tardive."
+  },
+  {
+    "reviewId": "R188",
+    "correctAnswer": "A",
+    "explanation": "‘Alors’ renvoie à la situation temporaire qui vient d'être décrite : la cour occupée par l'exposition. La dépose voisine s'applique pendant cette période."
+  },
+  {
+    "reviewId": "R189",
+    "correctAnswer": "B",
+    "explanation": "La création du compte et l'acceptation des conditions générales ne constituent pas un consentement spécifique à la prospection. Sans prestation antérieure, l'exception du client existant ne s'applique pas ici."
+  },
+  {
+    "reviewId": "R190",
+    "correctAnswer": "C",
+    "explanation": "‘A quarter to seven’ signifie un quart d'heure avant sept heures, donc 6 h 45. ‘Tomorrow morning’ situe le rendez-vous demain matin."
+  },
+  {
+    "reviewId": "R191",
+    "correctAnswer": "A",
+    "explanation": "Le stationnement lié à une réservation aux abords ou dans l'enceinte d'une gare ne peut dépasser une heure avant la prise en charge. Pour 16 h, cette période commence à 15 h ; les règles locales de stationnement restent applicables."
+  },
+  {
+    "reviewId": "R192",
+    "correctAnswer": "C",
+    "explanation": "Le taux vaut 40 ÷ 160 × 100 = 25 %. Il mesure les réservations obtenues parmi les demandes considérées, pas leur nombre brut."
+  },
+  {
+    "reviewId": "R193",
+    "correctAnswer": "C",
+    "explanation": "En cas de pluie, le plafond passe de 130 à 110 km/h sur ces sections. Ce plafond ne dispense pas d'adapter davantage l'allure si les conditions l'exigent."
+  },
+  {
+    "reviewId": "R194",
+    "correctAnswer": "A",
+    "explanation": "Les dépenses réelles ne se déduisent pas des recettes déclarées sous le régime micro. Le montant est donc 4 600 €, et non le solde disponible après carburant ou entretien."
+  },
+  {
+    "reviewId": "R195",
+    "correctAnswer": "D",
+    "explanation": "Le retard supplémentaire est de 0,5 seconde, soit 20 × 0,5 = 10 m. L'alcool peut notamment augmenter le temps de réaction ; les valeurs de cet exemple sont fictives, pas un délai universel."
+  },
+  {
+    "reviewId": "R196",
+    "correctAnswer": "D",
+    "explanation": "L'arrêté exige moins de sept ans pour ce véhicule thermique hors collection. À six ans et neuf mois, il reste sous cette limite ; l'usage VTC ne pourra pas se poursuivre sur ce fondement après sept ans."
+  },
+  {
+    "reviewId": "R197",
+    "correctAnswer": "B",
+    "explanation": "La demande doit être formée au moins trois mois avant le terme de validité. Le renouvellement reste soumis au respect des conditions réglementaires."
+  },
+  {
+    "reviewId": "R198",
+    "correctAnswer": "D",
+    "explanation": "L'analyse porte sur le motif du traitement défavorable. Une religion attribuée au client ne devient pas un motif acceptable parce que le chauffeur s'est trompé sur ses convictions."
+  },
+  {
+    "reviewId": "R199",
+    "correctAnswer": "C",
+    "explanation": "Une page pertinente pour cette recherche répond à un besoin déjà exprimé. Les autres actions peuvent avoir une utilité différente, mais ne visent pas directement cette étape de découverte en ligne."
+  },
+  {
+    "reviewId": "R200",
+    "correctAnswer": "B",
+    "explanation": "Le Défenseur des droits lutte contre les discriminations et accompagne les personnes concernées. Le 3928 permet de le contacter ; ce dispositif d'orientation n'est pas un service de secours."
+  }
+]

@@ -1,0 +1,2120 @@
+ 
+ 
+ 
+ 
+ 
+ 
+
+	Certifying Board for Dietary Managers (CBDM) - Exam Content Outline
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+        (function () {
+            "use strict";
+            var el = document.getElementsByTagName('html')[0],
+                nojsClass = "no-js", jsClass = "js";
+
+            if (el.classList) {
+                el.classList.remove(nojsClass);
+                el.classList.add(jsClass);
+            } else {
+                el.className = el.className.replace(new RegExp('(^|\\b)' + nojsClass.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                el.className += ' ' + jsClass;
+            }
+        }());
+    
+ 
+ 
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5JS8KM6');
+ 
+ 
+.sfNavHorizontalDropDown:not(.k-menu-horizontal) {
+  display: none;
+}
+
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65395222-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+  
+
+
+
+    
+
+        
+
+
+
+    
+
+
+Certifying Board for Dietary Managers (CBDM)
+
+
+
+    
+
+
+
+        
+
+            
+
+
+            
+
+
+
+    
+
+
+    
+
+FAQS
+
+
+    
+
+Verify Credentials
+
+
+    
+
+Contact Us
+
+
+    
+
+ANFPonline.org
+
+
+
+
+    
+
+
+            
+
+            
+
+
+
+    
+Member Login
+
+
+
+
+
+
+
+
+    
+
+        
+Welcome, 
+
+    
+
+    
+
+        
+
+            
+
+Update Profile
+
+
+            
+
+Update Password
+
+
+            
+
+Sign Out
+
+
+        
+
+    
+
+
+
+
+
+
+
+    (function ($) {
+        $(function () {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            var userToken = params.usertoken ? params.usertoken : params.userToken;
+            if (!userToken) {
+                userToken = "";
+            }
+
+            var xhr = new XMLHttpRequest();
+            var sendParams = 'userToken=' + userToken;
+            xhr.open('GET', '/sso/status' + "?" + sendParams, false);
+
+            xhr.onload = function () {
+                if (userToken) {
+                    window.location.replace(params.ReturnURL ? params.ReturnURL : params.ReturnUrl);
+                }
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.IsSignedIn) {
+                        document.getElementById("logged-in").style.display = "block";
+                        document.getElementById("welcome").innerHTML = "Welcome, " + response.FirstName
+                        document.getElementById("updateRedirectUrl").setAttribute("href", response.UpdateRedirectURL);
+                        document.getElementById("updatePasswordRedirectUrl").setAttribute("href", response.UpdatePasswordRedirectURL);
+                    }
+                    else{
+                        document.getElementById("logged-out").style.display = "block";
+                    }
+                }
+            };
+            xhr.setRequestHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+            xhr.setRequestHeader('Pragma', 'no-cache');
+            xhr.setRequestHeader('Expires', '0');
+            xhr.send(null);
+        });
+    }(jQuery));
+
+    $('#sign-out').on('click', () => {
+        $.ajax({
+            url: '/sso/logout',
+            success: function (response) {
+                window.location.replace(response);
+            },
+        });
+    })
+
+
+            
+
+            
+
+
+            
+
+
+            
+
+                
+
+
+                
+
+
+
+
+
+
+    
+
+    
+
+    
+When autocomplete results are available use up and down arrows to review and enter to select.
+
+
+	
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+            
+
+        
+
+    
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+            
+Get Certified
+
+            
+
+                            
+
+                
+CDM, CFPP Certification Process Overview
+
+            
+
+            
+
+                
+
+                    Eligibility
+                
+
+                
+
+                                
+
+                
+School Codes
+
+            
+
+
+                
+
+            
+
+            
+
+                
+Exam Sites and Scheduling
+
+            
+
+            
+
+                
+Get Prepared
+
+            
+
+            
+
+                
+Exam Scoring & Results
+
+            
+
+            
+
+                
+Register
+
+            
+
+            
+
+                
+Join ANFP
+
+            
+
+            
+
+                
+Activate Your Certification
+
+            
+
+            
+
+                
+What CDM, CFPP Means to Me
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Exam Prep
+
+            
+
+                            
+
+                
+CDM, CFPP Credentialing Exam Study Materials
+
+            
+
+            
+
+                
+CDM, CFPP Credentialing Exam FAQs
+
+            
+
+            
+
+                
+Exam Content Outline
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Maintain Your Credential
+
+            
+
+                            
+
+                
+Maintaining Your Credential
+
+            
+
+            
+
+                
+Qualifying CE Activities & Required Documentation
+
+            
+
+            
+
+                
+CE Self-Reporting
+
+            
+
+            
+
+                
+Recertification & CE Self-Reporting FAQs
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Continuing Competence
+
+            
+
+                            
+
+                
+Continuing Competence FAQs
+
+            
+
+            
+
+                
+Self-Assessment Tool
+
+            
+
+
+            
+
+        
+
+        
+
+            
+CE Audit
+
+            
+
+                            
+
+                
+CE Audit
+
+            
+
+            
+
+                
+CE Audit FAQs
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Resources
+
+            
+
+                            
+
+                
+CDM, CFPP Career Info
+
+            
+
+            
+
+                
+CDM, CFPP Scope of Practice
+
+            
+
+            
+
+                
+CDM, CFPP Practice Standards
+
+            
+
+            
+
+                
+Find CE
+
+            
+
+            
+
+                
+Prior Approval
+
+            
+
+            
+
+                
+CDM, CFPP Code of Ethics
+
+            
+
+            
+
+                
+Guide to Maintaining Your Credential
+
+            
+
+            
+
+                
+Top 10 Tips to Maintain Your CDM, CFPP Credential
+
+            
+
+            
+
+                
+Top 10 Resource Lists
+
+            
+
+            
+
+                
+CDM, CFPP Informational Videos
+
+            
+
+            
+
+                
+Federal CMS Regulations for CDM, CFPPs 
+
+            
+
+            
+
+                
+Competencies for Food and Nutrition Services Employees
+
+            
+
+            
+
+                
+ Continuing Competence Level Assignments
+
+            
+
+
+            
+
+        
+
+        
+
+            
+About
+
+            
+
+                            
+
+                
+CBDM Leadership
+
+            
+
+            
+
+                
+
+                    CBDM News
+                
+
+                
+
+                                
+
+                
+CBDM Quarterly Newsletter
+
+            
+
+
+                
+
+            
+
+            
+
+                
+Contact Us
+
+            
+
+            
+
+                
+NCCA
+
+            
+
+            
+
+                
+Current & Past CBDM Board Chairs
+
+            
+
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var whetherToOpenOnClick = false;
+
+        var kendoMenu = $('.sfNavHorizontalDropDown').not('.k-menu').kendoMenu({
+            animation: false,
+            openOnClick: whetherToOpenOnClick,
+            open: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    var item = $(e.item);
+
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: item.find("a:first").text(),
+                        objectMetadata: [
+                            {
+                                'K': 'PageTitle',
+                                'V': document.title
+                            },
+                            {
+                                'K': 'PageUrl',
+                                'V': location.href
+                            }
+                        ]
+                    });
+                }
+            }
+        }).data('kendoMenu');
+
+        if (whetherToOpenOnClick && kendoMenu) {
+            jQuery(kendoMenu.element).find("li:has(ul) > a").attr("href", "javascript:void(0)");
+        }
+    })(jQuery);
+
+
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    
+
+        
+Get Certified
+
+
+            
+
+    
+
+        
+CDM, CFPP Certification Process Overview
+
+
+    
+
+    
+
+        
+Eligibility
+
+
+            
+
+    
+
+        
+School Codes
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Exam Sites and Scheduling
+
+
+    
+
+    
+
+        
+Get Prepared
+
+
+    
+
+    
+
+        
+Exam Scoring & Results
+
+
+    
+
+    
+
+        
+Register
+
+
+    
+
+    
+
+        
+Join ANFP
+
+
+    
+
+    
+
+        
+Activate Your Certification
+
+
+    
+
+    
+
+        
+What CDM, CFPP Means to Me
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Exam Prep
+
+
+            
+
+    
+
+        
+CDM, CFPP Credentialing Exam Study Materials
+
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam FAQs
+
+
+    
+
+    
+
+        
+Exam Content Outline
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Maintain Your Credential
+
+
+            
+
+    
+
+        
+Maintaining Your Credential
+
+
+    
+
+    
+
+        
+Qualifying CE Activities & Required Documentation
+
+
+    
+
+    
+
+        
+CE Self-Reporting
+
+
+    
+
+    
+
+        
+Recertification & CE Self-Reporting FAQs
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Continuing Competence
+
+
+            
+
+    
+
+        
+Continuing Competence FAQs
+
+
+    
+
+    
+
+        
+Self-Assessment Tool
+
+
+    
+
+            
+
+    
+
+    
+
+        
+CE Audit
+
+
+            
+
+    
+
+        
+CE Audit
+
+
+    
+
+    
+
+        
+CE Audit FAQs
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Resources
+
+
+            
+
+    
+
+        
+CDM, CFPP Career Info
+
+
+    
+
+    
+
+        
+CDM, CFPP Scope of Practice
+
+
+    
+
+    
+
+        
+CDM, CFPP Practice Standards
+
+
+    
+
+    
+
+        
+Find CE
+
+
+    
+
+    
+
+        
+Prior Approval
+
+
+    
+
+    
+
+        
+CDM, CFPP Code of Ethics
+
+
+    
+
+    
+
+        
+Guide to Maintaining Your Credential
+
+
+    
+
+    
+
+        
+Top 10 Tips to Maintain Your CDM, CFPP Credential
+
+
+    
+
+    
+
+        
+Top 10 Resource Lists
+
+
+    
+
+    
+
+        
+CDM, CFPP Informational Videos
+
+
+    
+
+    
+
+        
+Federal CMS Regulations for CDM, CFPPs 
+
+
+    
+
+    
+
+        
+Competencies for Food and Nutrition Services Employees
+
+
+    
+
+    
+
+        
+ Continuing Competence Level Assignments
+
+
+    
+
+            
+
+    
+
+    
+
+        
+About
+
+
+            
+
+    
+
+        
+CBDM Leadership
+
+
+    
+
+    
+
+        
+CBDM News
+
+
+            
+
+    
+
+        
+CBDM Quarterly Newsletter
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Contact Us
+
+
+    
+
+    
+
+        
+NCCA
+
+
+    
+
+    
+
+        
+Current & Past CBDM Board Chairs
+
+
+    
+
+            
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+							{
+								'K': 'PageTitle',
+								'V': document.title
+							},
+							{
+								'K': 'PageUrl',
+								'V': location.href
+							}
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.collapse(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+
+
+
+
+    
+
+
+    
+
+FAQS
+
+
+    
+
+Verify Credentials
+
+
+    
+
+Contact Us
+
+
+    
+
+ANFPonline.org
+
+
+
+
+    
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+    
+
+        
+
+
+
+
+    
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam Study Materials
+
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam FAQs
+
+
+    
+
+    
+
+        
+Exam Content Outline
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+							{
+								'K': 'PageTitle',
+								'V': document.title
+							},
+							{
+								'K': 'PageUrl',
+								'V': location.href
+							}
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.collapse(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+
+
+        
+
+    
+
+    
+
+        
+
+            
+
+
+
+    
+
+Exam Content Outline
+
+    
+
+
+            
+
+            
+
+
+ 
+
+            
+
+            
+
+
+
+    
+
+                
+
+Home
+
+
+                
+
+Exam Prep
+
+
+                
+Exam Content Outline
+
+    
+
+
+
+
+
+    
+
+
+    
+
+
+            
+
+            
+
+
+
+
+    
+
+The CDM, CFPP Credentialing Exam is intended to measure the knowledge and abilities of individuals who wish to enter, continue and/or advance in the discipline of managing and/or directing food service operations. Candidates for the CDM, CFPP Credentialing Exam must show verifiable evidence of meeting formal education requirements (including coursework in nutrition and foodservice management) as well as varying levels of non-commercial foodservice management experience required to competently perform the responsibilities of a Certified Dietary Manager, Certified Food Protection Professional. CDM, CFPPs work together with Registered Dietitian Nutritionists (RDNs) to provide quality nutritional care for clients in a variety of non-commercial settings.  
+
+The three-hour (180 minute) exam consists of 160 multiple-choice questions that are job-related. There are 140 scored questions on the exam and 20 unscored items that are being pretested for use on future exams. Questions are based on professional situations in which a dietary manager would have to make a decision or solve a problem. The examinee must carefully read the scenario and select the appropriate response from among the multiple choices.
+
+Earning and maintaining the CDM, CFPP credential demonstrates to employers, surveyors and the public, that CDM, CFPPs have the knowledge, skills and abilities to perform the responsibilities as included in the exam content outline.
+
+
+For Public Dissemination
+
+Effective Date: 03-01-2025
+
+Detailed Content Outline
+140 Scored items, 20 Pretest items, 3 hours of testing time
+
+Domain 1. NUTRITION - 20%
+
+A. Gather Nutritional Data
+
+1. Obtain routine nutrition screening data
+
+a. use established guidelines to distinguish between routine and at risk clients
+b. gather and review client data from relevant sources (e.g., medical record, MDS, referrals, interviews, laboratory values, BMI)
+c. comply with federal regulations related to evaluating client status and care
+d. calculate nutrient intake and identify further intervention as needed
+
+2. Interview for nutrition related information
+
+a. ask appropriate nutrition questions of clients (e.g., allergies, preferences)
+b. gather client information from relevant sources (e.g., caregivers, interdisciplinary teams)
+c. recognize nonverbal responses and communication cues
+d. use ethical and confidentiality principles and practices (e.g., HIPAA)
+e. identify food customs and preferences (e.g., race, culture, religion, age)
+    
+
+3. Identify nutrition problems and honor client rights
+
+a. verify information to ensure accuracy
+b. review documentation for nutrition care follow up
+c. honor client rights (e.g., refusal, liberalized diet)
+
+4. Document/chart nutrition information in medical records
+
+B. Apply Nutrition Data
+
+1. Apply standards of nutrition care
+
+a. review client’s nutritional needs using evidence-based guidelines
+b. assess nutrition content of foods
+c. identify resources for implementing nutrition care plans (e.g., IDT team members, speech therapy, external referrals)
+
+2. Manage the written diet orders
+
+a. recognize medical and nutrition terminology
+b. provide nutrition that reflects the written diet order including client preferences
+c. recognize appropriateness of diet order for diagnosis
+d. document importance of adhering to written diet orders
+
+3. Manage diet plans
+
+a. implement nutrition plan into meals/foods to be served
+b. respect client needs, rights, and food preferences and habits
+c. use nutrition analysis data to modify menus for:
+
+i. calories
+ii. texture, taste, and feeding needs
+iii. medical and other personal condition (e.g., allergies)
+iv. racial, cultural, age, and religious differences
+
+4. Manage supplemental nourishments and/or foods according to the written diet order
+
+a. identify clients who need additional nutrients
+b. identify appropriate supplemental nourishments and/or foods to comply with diet order
+c. monitor the delivery and acceptance of supplemental nourishments and/or foods
+
+5. Review effectiveness of the nutrition care plan
+
+C. Provide Nutrition Education
+
+1. Assist clients with food selection based on written diet order
+
+a. review dietary requirements and importance of adhering to diet orders
+b. determine client’s knowledge and needs
+c. suggest acceptable food substitutes based on client preferences
+d. verify substitutes in terms of availability and facility practices
+
+2. Use nutrition education materials
+
+a. develop and document a plan for nutrition education
+b. select educational materials and resources
+c. use resource materials and equipment in teaching
+
+Domain 2. FOODSERVICE - 22%
+
+A. Develop Standardized Menus
+
+1. Use nutritional resources (e.g., tables, charts, diet manuals, dietary guidelines)
+2. Adhere to regulatory requirements regarding diet needs
+3. Consider client preferences (e.g., cultural, regional, seasonal)
+
+B. Ensure Effectiveness of Standardized Recipes
+
+1. Identify elements of a standardized recipe (e.g., yield, ingredients)
+2. Compute portions using food charts/references
+3. Develop cooking procedures, including HACCP guidelines
+4. Calculate cost and nutrition content of standardized recipes
+5. Evaluate acceptance and appropriateness of recipes
+
+C. Specify Standards and Procedures for Preparation and Production
+
+1. Develop food quality control standards, (e.g., appearance, temperature, acceptance)
+2. Implement procedures to monitor food preparation and production
+3. Develop procedures for monitoring food waste
+4. Develop procedures for modification and substitution of product
+
+D. Manage the Preparation, Production, and Distribution of Food
+
+1. Define and develop procedures for type of food service 
+2. Forecast menus, recipes, diet census, preparation and production sheets, tally sheets, and retail needs
+3. Define and develop preparation and production schedules for foodservice and special events
+4. Monitor adherence to delivery schedules and procedures
+5. Calculate efficiency (time, cost) of foodservice
+6. Keep records for monitoring and accountability
+
+E. Monitor Meal Service
+
+1. Verify: 
+
+a. quality (e.g., palatability, texture, presentation, temperature)
+b. diet accuracy
+c. portion size
+
+2. Assure compliance of meals served as posted
+
+F. Establish Continuous Quality Improvement Procedures for Foodservice Department (e.g., QAPI)
+
+1. Define objectives and standards for foodservice
+2. Implement necessary procedural changes
+3. Monitor quality indicators
+4. Implement auditing tool to determine the effectiveness of quality indicators (e.g., food acceptance survey, plate waste study)
+5. Analyze and interpret data for reports
+
+Domain 3. Personnel and Communications - 20%
+
+A. Define and Develop Personnel Needs and Job Functions
+
+1. Conduct personnel needs and task analysis
+2. Write job descriptions and specifications 
+3. Recommend advertising strategies for open positions
+4. Utilize and maintain departmental organizational chart
+
+B. Interview, Select, and Onboard Employees
+
+1. Comply with fair employment laws and practices (e.g., DE&I)
+2. Develop and document interview and selection policies and procedures for department
+3. Decide on applicants and record data in file
+4. Provide initial job specific training, facility procedures for new employees
+4. Verify completion of training and onboarding
+
+C. Provide Ongoing Education
+
+1. Provide follow up after onboarding and orientation
+    
+2. Provide in-service training 
+
+a. federal, state, and local regulatory requirements (e.g., HIPAA, FERPA, OSHA, FDA, CMS)
+b. customer service, hospitality, and client-centered care
+c. professional and ethical expectations (e.g., DE&I)
+d. nutrition concerns
+e. crisis management/
+f. other current topics
+
+3. Verify completion of training
+
+D. Develop and Maintain Employee Time Schedules and Assignments
+
+1. Identify overall staffing needs (e.g., calculate full time equivalents)
+2. Identify daily tasks, and develop and coordinate work assignment
+3. Determine capabilities and preferences of available employees
+4. Develop and maintain a time schedule
+5. Track absence/tardy records in personnel files
+
+E. Manage Goals and Priorities for Department
+
+1. Develop short-term and long-term goals for the department
+2. Participate in developing policies and procedures (e.g., hygiene standards for personnel according to the FDA Food Code)
+3. Reassess department goals against available resources (e.g., contingency planning)
+
+F. Manage Department Personnel
+
+1. Maintain personnel records
+
+
+a. compile documentation for promotion and termination
+b. conduct performance evaluations
+c. follow disciplinary procedures to correct a problem (e.g., coaching, performance improvement plan)
+
+2. Understand and adhere to personnel management laws and practices (e.g., union contracts, FMLA, USERRA, DE&I)
+3. Identify promotion and termination criteria
+4. Research and recommend salary and wage adjustments
+5. Ensure employees’ compliance with policies and procedures (e.g., safe food preparation practices)
+
+G. Manage Professional Interactions and Development
+
+1. Participate in regulatory agency surveys
+
+a. identify regulatory standards
+b. develop an appropriate plan of correction
+c. demonstrate professional interaction with surveyors 
+d. use regulatory agencies as professional resources
+
+2. Participate in meetings outside the department and facility
+
+a. communicate department goals and policies
+b. identify methods of communicating with other departments
+c. suggest cooperative ways to solve problems
+d. participate in state/national professional meetings
+e. maintain certification requirements
+
+3. Communicate client information to other health professionals 
+
+a. identify what client information needs to be communicated
+b. implement consultant recommendations and referrals as appropriate
+c. honor clients rights and confidentiality
+
+4. Participate in client care conferences
+
+a. prepare for and participate in a client care conference
+b. work with the interdisciplinary team to develop interventions to address client care concerns
+c. establish goals and implement interventions with appropriate follow up
+
+5. Manage department meetings
+
+a. meet with key personnel to develop meeting plans
+b. post meeting notices and agendas
+c. conduct meetings (e.g., resolving conflicts, keeping time)
+d. plan follow up actions resulting from meeting (e.g., minutes)
+e. conduct a staff complaint/grievance section
+
+6. Adhere to professional code of conduct/ethics (e.g., DE&I)
+
+H. Implement Departmental Changes
+
+1. Identify and properly communicate existing problems and needs
+2. Implement the plan of action
+3. Evaluate the effectiveness of the changes
+
+Domain 4. Sanitation and Safety - 24%
+
+A. Manage Personnel to Ensure Compliance with Safety and Sanitation Regulations
+
+1. Identify federal, state, and local laws/regulations/guidelines/ requirements
+2. Develop cleaning procedures for smallware, equipment, and work areas
+3. Evaluate equipment in terms of maintenance needs and costs
+4. Inspect all areas of department for sanitary conditions
+5. Educate employees in safety and sanitation (e.g., master cleaning schedule, PPE)
+6. Interpret OSHA regulations/guidelines (e.g., SDS, HAZCOM)
+7. Enforce employees’ compliance with safety and sanitation regulations
+
+B. Manage Purchasing, Receiving, Storage, and Distribution of Food and Supplies Following Established Sanitation and Quality Standards 
+
+1. Identify appropriate grades and inspections for food
+2. Procure food and water from approved sources
+3. Verify the quality and quantity of food supplies and equipment received
+4. Check supplier invoices against facility purchase order
+5. Recognize the hazards associated with types of food packaging
+6. Recognize the signs of contamination upon receipt and in storage
+7. Process rejections and recalls for unacceptable products
+8. Label, date, and monitor food to ensure rotation (FIFO)
+9. Prevent environmental contamination of food
+10. Maintain security procedures
+11. Manage receiving and storage temperatures
+
+C. Protect Food in all Phases of Preparation and Production Using HACCP Guidelines
+
+1. Identify TCS foods and foodborne pathogens and their control
+2. Recognize the causes, symptoms, and types of foodborne illnesses including biological, chemical, and physical types 
+3. Monitor time and temperature to limit growth of harmful microorganisms
+4. Prevent cross contamination and cross contact (e.g., allergens)
+5. Identify appropriate techniques to eliminate time-temperature abuse
+
+a. minimum internal cooking temperature
+b. proper cooling and reheating methods
+c. proper holding temperature for hot and cold
+
+6. Establish critical limits
+7. Establish the corrective action to be taken when critical limits are exceeded
+8. Establish procedures to identify and monitor critical control points (CCP)
+9. Establish effective recordkeeping systems that document HACCP
+10. Prepare emergency/disaster procedures necessary to ensure a safe food supply
+11. Develop a crisis management plan to address an outbreak of foodborne illness and allergic reaction
+
+D. Manage Physical Facilities to Ensure Compliance with Safety and Sanitation Guidelines
+
+1. Identify federal, state, and local safety laws/regulations/guidelines/ requirements
+2. Conduct routine maintenance inspection of equipment:
+
+a. identify equipment maintenance requirements from manufacturer’s manuals
+b. correct equipment malfunctions and potential problems
+c. monitor preventive maintenance schedule and contracts
+
+3. Organize workflow and use of equipment
+
+a. analyze tasks to determine overlapping effort or equipment use
+b. plan proper placement and use of equipment
+c. simplify work procedures and steps
+d. monitor workflow; identify and correct problems
+e. assure adequate hand washing sinks, lavatory facilities, and supplies
+
+4. Identify appropriate environmental controls for water supply, waste disposal, and ventilation
+5. Follow an integrated pest management (IPM) system
+6. Prepare a safety inspection checklist
+7. Write an inspection report on hazards
+8. Assure cleaning and sanitation of equipment, smallware, and space
+
+Domain 5. Business Operations - 14%
+
+A. Research, Develop, and Manage an Operating Budget
+
+1. Determine facility needs (e.g., food, supplements, labor, supplies, small equipment, chemicals)
+2. Advocate personnel costs for a foodservice department (e.g., payroll, salary scales and merit raises, benchmarking)
+3. Compute cost of menus (e.g., price comparison study, convenience vs. scratch food)
+4. Calculate daily cost PPD (e.g., food, labor, supplies)
+5. Monitor expenses and productivity (e.g., minutes per meal, meals per labor hour, supplements, spend down)
+
+B. Research, Develop, and Manage a Capital Budget
+
+1. Evaluate existing capital equipment life expectancy, conditions, facility needs
+2. Develop capital expenditure requirements and needs (e.g., electrical, plumbing, structural)
+3. Evaluate options for replacing and/or upgrading capital expenditures (e.g., quote, bidding)
+4. Develop a budget proposal for new capital expenditures 
+5. Present specifications for new capital expenditures
+
+C. Plan and Budget for Improvements in the Department Design and Layout
+
+1. Conduct department improvement discussion session with staff and maintain records
+2. Communicate improvement recommendations to leadership
+3. Evaluate workflow, essential equipment relative to new department designs or construction
+4. Research concepts/products related to department facility design
+5. Prepare proposals, specifications for new construction or renovation in layout/design changes
+
+D. Manage the Purchasing Process
+
+1. Identify purchasing policies and procedures of department (e.g., returns, recalls, computer applications)
+2. Be responsible for vendor product/selection (e.g., ordering, bidding, group purchasing organization contracts)
+3. Establish purchasing specifications
+4. Evaluate facility needs, budget restrictions, product information and availability
+5. Check inventory to identify purchase needs
+6. Complete purchase orders and requisition forms
+7. Perform and maintain inventory management practices (e.g., FIFO, par stock, physical, perpetual)
+
+E. Manage Revenue Generating Services
+
+1. Manage and audit cash activities and reports (e.g., petty cash)
+2. Plan foodservice and menus for retail/catering
+3. Calculate cost to set prices for retail/catering
+4. Use cost control techniques to balance revenue budget
+5. Research, analyze, and/or promote and market revenue generating opportunities
+
+F. Implement Cost Effective Policies and Procedures
+
+1. Manage cost saving purchasing practices
+2. Manage cost saving department practices (e.g., waste study, time study, labor, portion sizes, inventory control practices) 
+3. Report variance of actual costs vs. budget, and make adjustments
+
+    
+
+
+
+
+    
+
+
+
+Click below to download a printable flyer with the information on this page.
+
+
+
+    
+
+
+
+
+    
+
+
+Exam Content Outline
+
+
+    
+
+
+
+
+    
+
+The Exam Content Outline is effective 03-01-2025. If you need assistance accessing these documents, please contact 
+
+CBDM at 800-323-1908 or 
+exam@CBDMonline.org
+.
+
+    
+
+
+
+
+
+    
+
+Job-related examinations such as the CDM, CFPP Credentialing Exam are developed according to very specific processes. Exam content is derived from a detailed process beginning with a job analysis survey to finalize the Exam Content Outline and develop the exam based on the outline. CBDM utilized the services of a qualified examination services provider to conduct a Job Analysis Survey and finalize the current exam content outline.
+
+
+Job Analysis Report
+
+
+    
+
+
+
+
+
+
+            
+
+        
+
+    
+
+
+
+ 
+ 
+ 
+
+
+    
+
+
+
+    
+
+Certifying Board for Dietary Managers
+
+
+PO Box 3610
+
+St. Charles, IL 60174
+
+800.323.1908
+
+
+info@CBDMonline.org
+
+    
+
+
+    
+
+    
+
+
+    
+
+
+
+    
+
+Get Certified
+
+
+
+    
+
+Eligibility
+
+
+    
+
+Exam Sites and Scheduling
+
+
+    
+
+Register
+
+
+    
+
+Activate
+
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+Exam
+
+
+
+    
+
+Study Materials
+
+
+    
+
+Exam FAQs
+
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+Maintaining Credential
+
+
+
+Maintaining Your Credential
+
+
+
+CE Self-Reporting
+
+
+
+CE Audit Information
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+About CBDM
+
+
+
+    
+
+Contact Us
+
+
+    
+
+Leadership
+
+
+    
+
+
+    
+
+Join ANFP
+
+
+
+
+    
+
+
+    
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+Privacy Policy
+
+
+
+Terms of Use
+
+
+
+Sitemap
+
+
+
+Contact Us
+
+
+
+Non-Discrimination Statement
+
+
+
+© 2025 Certifying Board for Dietary Managers
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+ 
+ 
+
+
+
+ 
+
+  
+
+
+
+
+
+(function(d, w) {
+    w.PropFuel = w.PropFuel || [];
+    if (w.PropFuel.__LOADED) return;
+    w.PropFuel.__LOADED = true;
+
+    var m = ['init','identify'];
+    m.forEach(function(n) {
+        w.PropFuel[n] = function(){ w.PropFuel.push([n].concat([].slice.call(arguments))) };
+    });
+    
+    var script = d.createElement('script');
+    script.src = 'https://web.propfuel.com/plugin.js';
+    script.async = true;
+    d.getElementsByTagName('head')[0].appendChild(script);
+
+    w.PropFuel.init('95ad412e921f444bbd9145e8f0e19e77', {
+    });
+})(document, window);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+$( document ).ready(function() {
+  $(".rwdBtn").click(function() {
+    $(".rwdNav").slideToggle();
+     });
+    $(".rwdSearch").click(function() {
+    $(".search").slideToggle();
+    });  
+    $(".btnClose").click(function() {
+    $(".search").slideToggle();
+    });
+  $(".loginwelcome").click(function() {
+    $(".loginMenu").slideToggle();
+   });
+});
+
+
+
+  !function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?
+  r.invoke.apply(r,arguments):r.queue.push(arguments)},
+  r.queue=[],r.loaded=1*new Date,r.version="1.0.0",
+  f.FeathrBoomerang=r;var g=e.createElement(a),
+  h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;
+  g.async=!0,g.src=t,h.appendChild(g)}
+  }(window,document,"script","https://cdn.feathr.co/js/boomerang.min.js","feathr");
+
+  feathr("fly", "5d76d993e5c03a0033a2478b");
+  feathr("sprinkle", "page_view");
+
+
+
+
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0012/6013.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+ 
+ 

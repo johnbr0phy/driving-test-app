@@ -1,0 +1,11 @@
+{
+  "exactBijectiveMapping": true,
+  "noLeakedKeysIDsStems": true,
+  "correctPositions": {
+    "C": 8,
+    "D": 10,
+    "A": 10,
+    "B": 12
+  },
+  "sourceHash": "171de3a21f2dbb2ff7a1279d46ce4316789e13aa2c96cbda26d14dfab87d3c4a"
+}

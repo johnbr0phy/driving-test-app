@@ -1,0 +1,353 @@
+[
+  {
+    "reviewId": "R001",
+    "answer": "C",
+    "reason": "Specification 39 explicitly identifies nonrefillable cylinders.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-C/part-178/subpart-C/section-178.65"
+    ]
+  },
+  {
+    "reviewId": "R002",
+    "answer": "D",
+    "reason": "600 g multiplied by 0.15 equals 90 g.",
+    "confidence": 1,
+    "sources": []
+  },
+  {
+    "reviewId": "R003",
+    "answer": "C",
+    "reason": "Paid MVAC refrigerant handling requires Section 609 certification.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.epa.gov/mvac/background-and-resources",
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R004",
+    "answer": "D",
+    "reason": "The exception permits standard fittings at the manifold end.",
+    "confidence": 0.98,
+    "sources": [
+      "https://www.govinfo.gov/content/pkg/FR-1997-06-03/pdf/FR-1997-06-03.pdf"
+    ]
+  },
+  {
+    "reviewId": "R005",
+    "answer": "A",
+    "reason": "Prolonged exposure can saturate desiccant.",
+    "confidence": 0.98,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R006",
+    "answer": "B",
+    "reason": "ND-oil 11 serves electric compressors; 12 serves mechanical compressors.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.denso-am.eu/news/dont-overlook-compressor-oil-reminds-denso"
+    ]
+  },
+  {
+    "reviewId": "R007",
+    "answer": "A",
+    "reason": "Complete recovery leaves zero charge: refill to 600 g, not the 180 g shortage.",
+    "confidence": 1,
+    "sources": []
+  },
+  {
+    "reviewId": "R008",
+    "answer": "B",
+    "reason": "Rae must own both machines while owning or operating the extraction establishment.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R009",
+    "answer": "C",
+    "reason": "Vaporization absorbs latent heat from the skin.",
+    "confidence": 0.99,
+    "sources": []
+  },
+  {
+    "reviewId": "R010",
+    "answer": "B",
+    "reason": "J2670 establishes material compatibility.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R011",
+    "answer": "B",
+    "reason": "Off-road top-off-only facilities receive the equipment exception.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://www.epa.gov/mvac/servicing-requirements-farm-and-heavy-duty-equipment"
+    ]
+  },
+  {
+    "reviewId": "R012",
+    "answer": "A",
+    "reason": "Newly collected oil equals 20 minus 8, or 12 mL.",
+    "confidence": 1,
+    "sources": []
+  },
+  {
+    "reviewId": "R013",
+    "answer": "B",
+    "reason": "The refill instruction specifies the sight-glass center.",
+    "confidence": 0.99,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R014",
+    "answer": "A",
+    "reason": "Dense vapor pools in low areas.",
+    "confidence": 0.98,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R015",
+    "answer": "D",
+    "reason": "Valve-core restrictions delay system evacuation.",
+    "confidence": 0.98,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R016",
+    "answer": "D",
+    "reason": "Partial charging enables a pressurized evaporator leak check.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R017",
+    "answer": "A",
+    "reason": "Existing-filter clearing occurs before shutdown for replacement.",
+    "confidence": 0.99,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R018",
+    "answer": "A",
+    "reason": "External atmospheric pressure exceeds hose pressure, drawing surrounding air through the leak.",
+    "confidence": 0.99,
+    "sources": []
+  },
+  {
+    "reviewId": "R019",
+    "answer": "C",
+    "reason": "An undisturbed clutch inspection does not involve refrigerant handling.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R020",
+    "answer": "D",
+    "reason": "The receiving charging facility must recycle unreclaimed salvage refrigerant.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R021",
+    "answer": "A",
+    "reason": "The inspection opening verifies insertion depth.",
+    "confidence": 0.98,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R022",
+    "answer": "D",
+    "reason": "12 oz is 0.75 lb, below 20 lb; 30 lb is above the notice threshold.",
+    "confidence": 1,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R023",
+    "answer": "B",
+    "reason": "High-side pressure reduction governs connection timing.",
+    "confidence": 0.98,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R024",
+    "answer": "C",
+    "reason": "Gauge vacuum is atmospheric minus absolute pressure: 25 minus 1 equals 24 inHg.",
+    "confidence": 1,
+    "sources": []
+  },
+  {
+    "reviewId": "R025",
+    "answer": "A",
+    "reason": "The narrative specifies 0.15 ounce/year, approximately 4 g/year.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R026",
+    "answer": "B",
+    "reason": "Recover refrigerant before opening the circuit.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R027",
+    "answer": "B",
+    "reason": "The required destination record identifies facility name and address.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R028",
+    "answer": "D",
+    "reason": "Tesla specifies B+/ground, B-/ground and B+/B- voltage checks; current and LV checks are preparatory.",
+    "confidence": 0.99,
+    "sources": [
+      "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-3C5B5D4F-24A7-4EAE-B382-C93A2DEC1BFA.html"
+    ]
+  },
+  {
+    "reviewId": "R029",
+    "answer": "B",
+    "reason": "Pressurized air and R-134a residue can form a combustible mixture.",
+    "confidence": 0.99,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R030",
+    "answer": "D",
+    "reason": "Boiling point influences solvent removal under vacuum.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R031",
+    "answer": "B",
+    "reason": "Barrier construction reduces HCFC-22 permeation.",
+    "confidence": 0.99,
+    "sources": [
+      "https://19january2021snapshot.epa.gov/mvac/choosing-and-using-retrofit-refrigerant-cfc-12-mvac_.html"
+    ]
+  },
+  {
+    "reviewId": "R032",
+    "answer": "C",
+    "reason": "Three years after May 10, 2026 is May 10, 2029.",
+    "confidence": 1,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R033",
+    "answer": "C",
+    "reason": "Robinair specifies a moving probe with a small gap during confirmation.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.robinair.com/sites/default/files/documents/550029_EN_1.pdf"
+    ]
+  },
+  {
+    "reviewId": "R034",
+    "answer": "D",
+    "reason": "Equipment owner Nora may sign; technician status alone does not authorize Luis.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B"
+    ]
+  },
+  {
+    "reviewId": "R035",
+    "answer": "B",
+    "reason": "R-22 passenger-bus A/C is excluded from the MVAC definition; Type II applies.",
+    "confidence": 0.99,
+    "sources": [
+      "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+      "https://public-inspection.federalregister.gov/2025-19812.pdf"
+    ]
+  },
+  {
+    "reviewId": "R036",
+    "answer": "A",
+    "reason": "The staged procedure specifies the outlet center.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R037",
+    "answer": "A",
+    "reason": "Lamp wavelength must excite the dye.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R038",
+    "answer": "B",
+    "reason": "The machine manual specifies a minimum conductor size of 14 AWG.",
+    "confidence": 0.99,
+    "sources": [
+      "https://robinair.com/sites/default/files/documents/SP01972025%2520VER%252001_EN.pdf"
+    ]
+  },
+  {
+    "reviewId": "R039",
+    "answer": "D",
+    "reason": "J2842 governs the evaporator design marking.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  },
+  {
+    "reviewId": "R040",
+    "answer": "C",
+    "reason": "Refrigerant leakage can leave accompanying oil residue.",
+    "confidence": 0.99,
+    "sources": [
+      "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+    ]
+  }
+]

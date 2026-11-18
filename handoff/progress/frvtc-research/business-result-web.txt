@@ -1,0 +1,267 @@
+Le compte de résultat d'un projet de création d'entreprise | Bpifrance Création (https://bpifrance-creation.fr/encyclopedie/previsions-financieres-business-plan/previsions-financieres/compte-resultat-dun-projet)
+citeturn242view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://bpifrance-creation.fr/encyclopedie/previsions-financieres-business-plan/previsions-financieres/compte-resultat-dun-projet","lineno":null}); Total lines: 264
+L0: 【0†Image: Menu】
+L1: 
+L2:   * [Input: Rechercher]
+L3: 
+L4: [Input] [Input]
+L5: 
+L6: Rechercher
+L7: 
+L8:   *   * 【1†Je crée Mon Pass Créa】 【2†Se connecter】
+L9: 
+L10: 【3†Retour】
+L11: 
+L12: Entrepreneur
+L13: 
+L14: Créez votre Pass Créa
+L15: 
+L16: La boite à outils qui vous aide à construire votre projet de création ou de reprise d'entreprise de A à Z.
+L17: 
+L18: 【1†Je crée Mon Pass Créa】
+L19:   * 【4†Moments de vie】
+L20:   * 【5†Lexique】
+L21:   * 【6†Boîte à outils】
+L22:   * 【7†Encyclopédie】
+L23:   * 【8†Activités réglementées】
+L24:   * 【9†Actualités】
+L25:   * 【10†Annoncer une manifestation】
+L26:   * 【11†Être accompagné†monpasscrea.bpifrance-creation.fr】
+L27:   * 【12†Foire aux questions】
+L28:   * 【13†Qui sommes-nous ?】
+L29: # Le compte de résultat d'un projet de création d'entreprise
+L30: 
+L31:   * 【14†Image】 Temps de lecture: min
+L32: ## Dans cet article :
+L33: 
+L34: Découvrez notre tuto : comment faire le compte de résultat sur 3 ans ?
+L35:   * 【15†Découvrez notre tuto : comment faire le compte de résultat sur 3 ans ?】
+L36:   * 【16†A quoi sert le compte de résultat ?】
+L37:   * 【17†Comment se construit le compte de résultat ?】
+L38:   * 【18†Comment compléter le compte de résultat ?】
+L39:   * 【19†Exemple de compte de résultat prévisionnel】
+L40:   * 【20†Comment analyser l’activité et la performance à partir du compte de résultat ?】
+L41:   * 【21†Infographie pour comprendre le compte de résultat】
+L42: Dans le cadre de la création d'entreprise, le compte de résultat fait partie des éléments financiers indispensables que vous devez élaborer pour indiquer la performance de votre activité. Cet article explore les composantes clés du compte de résultat et vous démontre son importance pour évaluer la viabilité du projet. Son analyse, complétée par les soldes intermédiaires de gestion et la capacité d’autofinancement, offre une vision précise de la performance financière.
+L43: Découvrez comment le construire, le remplir et l’interpréter pour assurer la pérennité de votre entreprise.
+L44: ## Découvrez notre tuto : comment faire le compte de résultat sur 3 ans ?
+L45: 
+L46: Faire le compte de résultat d'un projet de création d'entreprise permet d'évaluer le chiffre d'affaires prévisionnel et les charges estimées sur une période, généralement trois ans. Il est essentiel pour estimer la rentabilité future et convaincre les investisseurs de soutenir le projet. Il s'agit de l'un des quatre principaux tableaux financiers indispensables à réaliser dans la partie de l'étude financière du business plan.
+L47: 【22†YouTube video player†www.youtube.com】
+L48: 
+L49: Vous avez un projet de création d’entreprise ?
+L50: 
+L51: Les tutos Bpifrance Création sont là pour vous aider à préparer votre projet entrepreneurial !
+L52: 
+L53: De l'émergence de votre idée au lancement de votre activité, nous vous proposons des outils pratiques, des contenus d’experts et des informations personnalisées. Retrouvez nos 42 vidéos tutos pour être coaché et guidé à toutes les étapes de votre parcours de création d’entreprise dans Mon Pass Créa.
+L54: Pour découvrir le parcours complet du créateur d'entreprise, 【1†connectez-vous ou créez gratuitement votre Pass Créa】.
+L55: ## A quoi sert le compte de résultat ?
+L56: 
+L57: Le compte de résultat est un état financier que vous devez établir dans le but de présenter votre résultat net (bénéfice ou perte) et les éléments (charges et produits) qui ont permis de le calculer.
+L58: 
+L59: Il a un double objectif :
+L60: 
+L61:   * faire connaître à l'administration fiscale le montant du bénéfice réalisé (ou de la perte),
+L62:   * prouver la rentabilité de l'entreprise aux financeurs potentiels.
+L63: ## Comment se construit le compte de résultat ?
+L64: 
+L65: Il se présente généralement sous la forme d'un tableau à deux colonnes :
+L66: 
+L67:   * dans la colonne de gauche on recense l'ensemble des dépenses (charges) de l'【23†exercice】 【23†comptable】,
+L68:   * dans la colonne de droite on y place les recettes (produits).
+L69: 
+L70: Mais vous pouvez aussi le trouver sous un autre format, notamment en ligne :
+L71: 
+L72:   * avec les produits en premier lieu,
+L73:   * puis les charges juste en dessous.
+L74: La différence entre les deux colonnes du tableau est appelée "【24†résultat net】". Ce résultat indique la rentabilité de l'activité qui dégage soit un bénéfice (résultat positif), soit une perte (résultat négatif).
+L75: ## Comment compléter le compte de résultat ?
+L76: 
+L77: Pour remplir correctement le compte de résultat, il convient de noter l'ensemble des charges et produits de l'année comptable.
+L78: 
+L79:   * Dans la partie "charges", sont reportées les dépenses sans en oublier (un 【25†plan comptable】 peut servir de check-list).
+L80: 
+L81: La dotation aux 【26†amortissements】 pour les investissements achetés (amortissables) est calculée et reportée dans la colonne des charges (même si ce n'est pas une vraie dépense).
+L82: Ne pas oublier non plus les charges financières (intérêts et autres frais) induites par les éventuels emprunts bancaires.
+L83:   * Dans la partie "produits", est inscrit le 【27†chiffre d'affaires】 (prévisionnel ou réalisé si vous avez commencé votre activité) et éventuellement d'autres produits tels que des produits financiers (liés à des placements réalisés) ou exceptionnels (produits nés d'un évènement ne faisant pas partie de l'activité habituelle de l'entreprise).
+L84: 
+L85:     Tous les montants sont à reporter hors taxes (sauf en cas de non-assujettissement à la 【28†TVA】).
+L86: ## Exemple de compte de résultat prévisionnel
+L87:    | Année 1  | Année 2  | Année 3
+L88: PRODUITS (HT)  |    |    |
+L89: Ventes de marchandises
+L90: Production stockée
+L91: Prestations de services
+L92: Subventions d'exploitation
+L93: Autres produits
+L94: PRODUITS FINANCIERS
+L95: PRODUITS EXCEPTIONNELS
+L96:    |    |    |
+L97: TOTAL PRODUITS  |    |    |
+L98: CHARGES (HT)  |    |    |
+L99: CHARGES D'EXPLOITATION Achats (charges variables)
+L100:   Achat de marchandises
+L101:   Sous-traitance
+L102:   Variation de stock
+L103: 
+L104: Achats de fournitures
+L105:   Eau
+L106:   Electricité
+L107:   Fournitures d'entretien
+L108:   Fournitures administratives
+L109:   Fournitures diverses
+L110: 
+L111: Charges externes
+L112:   Loyers de crédit-bail
+L113:   Loyers et charges locatives
+L114:   Assurances
+L115:   Entretien (locaux, matériel)
+L116:   Documentation
+L117: 
+L118: Autres charges externes
+L119:   Honoraires
+L120:   Frais d'acte et de contentieux
+L121:   Affranchissements
+L122:   Téléphone
+L123:   Internet
+L124:   Publicité
+L125:   Frais de transport
+L126:   Emballages et conditionnement
+L127:   Voyages et déplacements
+L128:   Divers
+L129: 
+L130: Frais de personnel
+L131:   Rémunération du dirigeant
+L132:   Cotisations sociales du dirigeant
+L133:   Salaires et charges sociales des salariés
+L134:   Commissions versées
+L135: 
+L136: Dotation aux amortissements (DAP)    CHARGES FINANCIERES
+L137:   Agios et intérêts payés
+L138: 
+L139: CHARGES EXCEPTIONNELLES          |    |    |
+L140: TOTAL CHARGES  |    |    |
+L141: RESULTAT COURANT avant impôts  |    |    |
+L142: Impôt sur les bénéfices  |    |    |
+L143: RESULTAT NET  |    |    |
+L144: ## Comment analyser l’activité et la performance à partir du compte de résultat ?
+L145: 
+L146: L’évaluation quantitative de l’activité et de la performance financière d’une entreprise conduit les analystes à établir :
+L147: - les soldes intermédiaires de gestion,
+L148: - la capacité d’autofinancement,
+L149: - le seuil de rentabilité.
+L150: 
+L151: ###
+L152: ### Les soldes intermédiaires de gestion
+L153: 
+L154: Les soldes intermédiaires de gestion (SIG) permettent d’analyser la performance économique d’une entreprise à partir de son compte de résultat. Ils offrent une vision détaillée de la formation du résultat net, de la création et de la répartition de richesse, ainsi que de l’évolution de la rentabilité.
+L155: 
+L156: Le tableau des SIG comprend neuf soldes obtenus par soustraction ou addition de certains produits et charges :
+L157: 1  | Marge commerciale  | Ventes nettes – coût d’achat des marchandises vendues
+L158: 2  | Production de l'exercice  | Production vendue +/- production stockée + production immobilisée
+L159: 3  | Valeur ajoutée  | Marge commerciale + production de l’exercice – consommation de l’exercice en provenance des tiers
+L160: 4  | Excédent brut d'exploitation  | Valeur ajoutée + subvention d’exploitation – impôts, taxes et versements assimilés – charges de personnel
+L161: 5  | Résultat d'exploitation  | EBE + reprises sur charges d’exploitation + transferts de charges d’exploitation + autres produits de gestion – dotations aux amortissements et aux provisions – autres charges de gestion
+L162: 6  | Résultat courant avant impôts  | Résultat d’exploitation +/- quotes-parts de résultat sur opérations faites en commun + produits financiers – charges financières
+L163: 7  | Résultat exceptionnel  | Produits exceptionnels – charges exceptionnelles
+L164: 8  | Résultat net de l'exercice  | Résultat courant avant impôts +- résultat exceptionnel – participation des salariés – impôts sur les bénéfices
+L165: 9  | + values et – values sur cessions d’éléments d’actif  | Produits des cessions d’éléments d’actif – valeurs comptables des éléments d’actif cédés
+L166: L’analyse doit être complétée par des données sectorielles qui peuvent influencer la performance : tendances du marché, normes environnementales, concurrence, distribution et innovations technologiques.
+L167: 
+L168: En savoir plus : 【29†comprendre et calculer les soldes intermédiaires de gestion pour améliorer sa rentabilité】
+L169: ###
+L170: ### La capacité d'autofinancement (CAF)
+L171: 
+L172: Autre indicateur essentiel calculé à partir du compte de résultat
+L173: 
+L174:   * Définition et objectif
+L175: La capacité d’autofinancement (CAF) représente les ressources financières internes qu’une entreprise génère à partir de son activité, sans recourir à des financements externes. Elle est essentielle pour assurer son développement, renforcer sa stabilité et couvrir ses besoins financiers.
+L176: Grâce à la CAF, l’entreprise peut financer l’acquisition et le renouvellement de ses investissements, rémunérer ses associés, rembourser ses emprunts et anticiper d’éventuels risques ou pertes.
+L177: 
+L178:   * Calcul
+L179: Il repose sur les soldes intermédiaires de gestion et correspond à un excédent monétaire théorique, dont la disponibilité effective dépend des délais d’encaissement et de paiement des différentes opérations comptables.
+L180:   * Méthode soustractive : détermination de la CAF à partir de l’excédent brut d’exploitation
+L181:    | Excédent brut d’exploitation (EBE)  | Exercices ouverts jusqu'à fin 2024 : correspondance compte de résultat (n° de compte) / SIG  | Exercices ouverts à partir du 1er janvier 2025 : correspondance compte de résultat (n° de compte) / SIG
+L182: +  | Transferts de charges d’exploitation  | 791  | / (Suppression de la technique du transfert de charges)
+L183: +  | Autres produits d’exploitation  | 75 (sauf 755)  | 75 (sauf 755 et 757)
+L184: -  | Autres charges d’exploitation  | 65 sauf (655)  | 65 (sauf 655 et 657)
+L185: +/-  | Quotes-parts de résultat sur opérations faites en commun  | 755 -655  | 755-655
+L186: +  | Produits financiers (a)  | 76 et 796  | 76
+L187: -  | Charges financières (b)  | 66  | 66
+L188: +  | Produits exceptionnels (c)  | 77 (sauf 775, 777) et 797  | 77
+L189: -  | Charges exceptionnelles (d)  | 671 (sauf 675)  | 67
+L190: -  | Participation des salariés aux résultats  | 691  | 691
+L191: -  | Impôts sur les bénéfices  | 695  | 695
+L192:    | CAPACITE D’AUTOFINANCEMENT  |    |
+L193:    | (a) Sauf reprises sur provisions
+L194: (b) Sauf dotations aux amortissements et aux provisions financiers
+L195: (c) Sauf :   - produits des cessions d’immobilisations
+L196:                  - quotes- parts des subventions d’investissements virées au résultat de l’exercice,
+L197:                  - reprises sur provisions exceptionnelles.
+L198: (d) Sauf :  - valeur comptables des immobilisations cédées,
+L199:                  - dotations aux amortissements et aux provisions exceptionnelles
+L200:   * Méthode additive calculée à partir du résultat net
+L201:    | Résultat de l'exercice  | Exercices ouverts à partir du 1er janvier 2025 : correspondance compte de résultat (n° de compte)       | Exercices ouverts à partir du 1er janvier 2025 : correspondance compte de résultat (n° de compte)
+L202: +  | Dotations aux amortissements et provisions  | 681 et 686 et 687  | 681 et 686 et 687
+L203: -  | Reprise sur amortissements et provisions  | 781 et 786 et 787  | 781 et 786 et 787
+L204: +  | Valeurs comptables des éléments d’actifs cédés  | 675  | 657
+L205: -  | Produits des cessions d’éléments d’actif immobilisés  | 775  | 757
+L206: -  | Quote-part des subventions d’investissement virée au résultat de l’exercice  | 777  | 747
+L207:    | CAPACITE D’AUTOFINANCEMENT  |    |
+L208:   * L’autofinancement
+L209: C’est la capacité financière restante après la distribution des dividendes : autofinancement = Capacité d’autofinancement – 【30†Dividendes】 versés. Il sert à maintenir l’activité et à financer une partie de la croissance.
+L210:   * L’évolution de la CAF et de l’autofinancement
+L211: -    Capacité d’autofinancement élevée : l’entreprise gagne en autonomie financière et peut emprunter plus facilement grâce à sa solidité.
+L212: -    Autofinancement excessif : une faible distribution de dividendes peut décourager les associés, menaçant leur engagement.
+L213:     Capacité d’autofinancement faible ou négative : signale des difficultés financières, accroît le risque d’endettement et peut compromettre la pérennité de l’entreprise.
+L214: ###
+L215: Le seuil de rentabilité
+L216: 
+L217: Le 【31†seuil de rentabilité】 est un indicateur calculé à partir du compte de résultat. Il correspond au chiffre d’affaires minimum qu’une entreprise doit atteindre pour couvrir ses charges et commencer à générer des bénéfices. Il repose sur l’analyse des charges fixes et variables, qui influencent directement la rentabilité d’une activité.
+L218:   * Méthode simplifiée de calcul :
+L219: -    Identifier les charges fixes : ce sont les dépenses qui restent constantes, indépendamment du niveau d’activité, comme le loyer, les salaires et les assurances, etc.
+L220: -    Déterminer la marge sur coûts variables : il s’agit de la différence entre le chiffre d’affaires et les charges variables (achats de marchandises, frais de transport, commissions, etc.) permettant de financer les charges fixes.
+L221: -    Appliquer la formule : seuil de rentabilité = charges fixes / taux de marge sur coûts variables.
+L222: Cet indicateur permet d’évaluer la faisabilité d’un projet et d’ajuster la 【32†stratégie commerciale】 en conséquence.
+L223: ## Infographie pour comprendre le compte de résultat
+L224: 
+L225: 
+L226: 
+L227: 【33†iframe†view.genial.ly】
+L228: 
+L229: 
+L230: 
+L231: Publié en
+L232: 
+L233: juin 2025
+L234: ## Sommaire :
+L235: 
+L236:   * 【15†Découvrez notre tuto : comment faire le compte de résultat sur 3 ans ?】
+L237:   * 【16†A quoi sert le compte de résultat ?】
+L238:   * 【17†Comment se construit le compte de résultat ?】
+L239:   * 【18†Comment compléter le compte de résultat ?】
+L240:   * 【19†Exemple de compte de résultat prévisionnel】
+L241:   * 【20†Comment analyser l’activité et la performance à partir du compte de résultat ?】
+L242:   * 【21†Infographie pour comprendre le compte de résultat】
+L243: 
+L244: Outils les plus utilisés
+L245: 【34†Comment financer mon projet de création ou reprise d'entreprise ?】 【35†Aide au choix d'un statut juridique】 【36†Test : le régime micro-entrepreneur est-il fait pour vous ?】 【37†Librairie†librairie.bpifrance-creation.fr】
+L246: 
+L247: On vous recommande aussi
+L248: 【38†Nouvelle aide à l'installation des commerces en zone rurale】 【39†RGPD : l'accompagnement personnalisé de la Cnil】 【40†Précision sur le crédit d'impôt énergétique】 【41†Accord d'intéressement dématérialisé : exonérations sans délai】 【42†Nouvelle possibilité de rééchelonnement du PGE en 2023】
+L249: 
+L250: Créez votre Pass Créa
+L251: 
+L252: La boite à outils qui vous aide à construire votre projet de création ou de reprise d'entreprise de A à Z.
+L253: 
+L254: 【1†Je crée Mon Pass Créa】
+L255: 
+L256: 【43†Image】
+L257: ##### Créer Mon Pass Créa
+L258: 
+L259: La boîte à outils qui vous aide à construire votre projet de création ou de reprise d'entreprise de A à Z
+L260: 
+L261: 【1†Je crée Mon Pass Créa】
+L262: 
+L263: 【11†Être accompagné(e)†monpasscrea.bpifrance-creation.fr】 【34†Trouver un financement】
+

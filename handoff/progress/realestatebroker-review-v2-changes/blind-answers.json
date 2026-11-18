@@ -1,0 +1,322 @@
+[
+  {
+    "id": "R001",
+    "answer": "A",
+    "reason": "A reserved right of reentry creates potential forfeiture on condition breach, rather than an unrestricted fee.",
+    "findings": []
+  },
+  {
+    "id": "R002",
+    "answer": "A",
+    "reason": "EPA UST definition counts combined volume of tank and connected underground piping; at least 10% must be underground.",
+    "findings": []
+  },
+  {
+    "id": "R003",
+    "answer": "C",
+    "reason": "Negligent professional advice is an errors-and-omissions/professional liability exposure.",
+    "findings": [
+      "Coverage remains subject to policy terms; question correctly asks category rather than a guarantee of payment."
+    ]
+  },
+  {
+    "id": "R004",
+    "answer": "C",
+    "reason": "Financing or sale describes intended use; approach, format and schedule address different assignment decisions.",
+    "findings": []
+  },
+  {
+    "id": "R005",
+    "answer": "C",
+    "reason": "The requested retrospective December effective date controls the value opinion; June is only inspection timing.",
+    "findings": []
+  },
+  {
+    "id": "R006",
+    "answer": "C",
+    "reason": "The stipulated limitation bar prevents enforcement of the claim without making the originally valid agreement void.",
+    "findings": []
+  },
+  {
+    "id": "R007",
+    "answer": "B",
+    "reason": "900 minus 300 equals 600 dollars of excess compensation expressly rewarding referrals. CFPB RESPA guidance excludes referral value from reasonable payment for actual services.",
+    "findings": [
+      "Could explicitly say covered federally related mortgage transaction; asking what raises concerns is defensible without declaring every settlement payment unlawful."
+    ]
+  },
+  {
+    "id": "R008",
+    "answer": "C",
+    "reason": "The parties jointly changed the credit to 3000 dollars; a unilateral 1000-dollar demand does not replace that agreement.",
+    "findings": []
+  },
+  {
+    "id": "R009",
+    "answer": "B",
+    "reason": "EPA specifies retaining signed disclosure copies for three years after sale completion or lease commencement.",
+    "findings": [
+      "Three years is the federal minimum; wording could say at least, but the choice is unambiguous."
+    ]
+  },
+  {
+    "id": "R010",
+    "answer": "A",
+    "reason": "Rezoning is an event that must occur before purchase performance duties arise: a condition precedent.",
+    "findings": []
+  },
+  {
+    "id": "R011",
+    "answer": "A",
+    "reason": "12 CFR 1026.19(f)(1)(ii)(A) generally requires receipt three business days before consummation; consummation means becoming contractually obligated on the credit transaction.",
+    "findings": [
+      "Minor scope qualification: covered mortgage alone does not exclude the timeshare timing exception or a valid emergency waiver. Add generally or ordinary covered mortgage without an applicable exception. A remains the clearly intended general-rule answer."
+    ]
+  },
+  {
+    "id": "R012",
+    "answer": "C",
+    "reason": "Freddie Mac purchases existing loans in the secondary market, furnishing proceeds the originating lender can lend again.",
+    "findings": []
+  },
+  {
+    "id": "R013",
+    "answer": "D",
+    "reason": "Delegating preparation does not excuse failure to supervise/review delegated work, especially repeated errors.",
+    "findings": []
+  },
+  {
+    "id": "R014",
+    "answer": "D",
+    "reason": "A special benefit assessment allocates costs by property benefit, whereas ad valorem taxation uses value.",
+    "findings": []
+  },
+  {
+    "id": "R015",
+    "answer": "C",
+    "reason": "Timely cancellation under an express inspection termination clause exercises a bargained contractual right.",
+    "findings": []
+  },
+  {
+    "id": "R016",
+    "answer": "B",
+    "reason": "Plat name and recording reference identify which lot/block system the description invokes.",
+    "findings": []
+  },
+  {
+    "id": "R017",
+    "answer": "D",
+    "reason": "An inspection-only auditor needs read access to relevant ledgers, without posting rights or unrelated-file access.",
+    "findings": [
+      "Options-only surface cue remains strong: D alone combines read-only and relevant."
+    ]
+  },
+  {
+    "id": "R018",
+    "answer": "C",
+    "reason": "60 x 100 = 6000 square feet; courtyard 20 x 30 = 600 square feet; 6000 - 600 = 5400 square feet.",
+    "findings": []
+  },
+  {
+    "id": "R019",
+    "answer": "B",
+    "reason": "CFPB defines a BPO as a sales professional valuation commonly supporting a listing price.",
+    "findings": [
+      "CMA is another common listing tool but is not offered; this is not ambiguous among these choices."
+    ]
+  },
+  {
+    "id": "R020",
+    "answer": "D",
+    "reason": "Falsely stating an available unit is rented because of caller race is discriminatory representation of availability.",
+    "findings": []
+  },
+  {
+    "id": "R021",
+    "answer": "D",
+    "reason": "Comparing actual call times with the applicable opt-out suppression dates directly detects calls after suppression became effective.",
+    "findings": [
+      "Operationally also need recipient matching and complete logs; the item asks only the most direct comparison."
+    ]
+  },
+  {
+    "id": "R022",
+    "answer": "A",
+    "reason": "Petroleum may migrate from contaminated soil into groundwater feeding nearby drinking-water wells; EPA describes this pathway.",
+    "findings": []
+  },
+  {
+    "id": "R023",
+    "answer": "A",
+    "reason": "The owner-manager agreement establishes the manager compensation, including separately priced renovation supervision.",
+    "findings": []
+  },
+  {
+    "id": "R024",
+    "answer": "A",
+    "reason": "Fabricated overtime changes qualifying income evidence, not occupancy, down-payment source or property condition. OCC identifies loan-origination misrepresentation as mortgage fraud.",
+    "findings": [
+      "Misrepresentation category would be more precise than fraud element, but answer is clear."
+    ]
+  },
+  {
+    "id": "R025",
+    "answer": "A",
+    "reason": "EPA recommends prompt drying within 24\u201348 hours to help prevent mold after water intrusion.",
+    "findings": [
+      "This is prevention guidance, not a guarantee; the stem appropriately says helps."
+    ]
+  },
+  {
+    "id": "R026",
+    "answer": "B",
+    "reason": "Unreconstructable industrial history is a data gap; the report must discuss significant gaps affecting the environmental professional\u2019s conclusions. EPA AAI guidance supports B.",
+    "findings": [
+      "Significance technically depends on effect on the opinion; decades of missing industrial history reasonably implies it, though the stem could state that effect explicitly."
+    ]
+  },
+  {
+    "id": "R027",
+    "answer": "B",
+    "reason": "DOJ Title III manual expressly treats an apartment rental office as a public accommodation; strictly resident/guest areas are distinguished.",
+    "findings": [
+      "Do not infer resident areas have no other accessibility obligations; the stem is specifically Title III."
+    ]
+  },
+  {
+    "id": "R028",
+    "answer": "A",
+    "reason": "If consensual dual agency is permitted, both represented principals must knowingly consent.",
+    "findings": [
+      "The jurisdictional qualifier appropriately avoids asserting dual agency is allowed everywhere."
+    ]
+  },
+  {
+    "id": "R029",
+    "answer": "C",
+    "reason": "NFIP guidance identifies flood insurance for an SFHA property with a government-backed mortgage.",
+    "findings": []
+  },
+  {
+    "id": "R030",
+    "answer": "B",
+    "reason": "Unlimited cancellation without notice or obligation leaves the buyer free not to perform, undermining the promise as illusory.",
+    "findings": [
+      "The question concerns this promise as consideration, not a conclusion that separately supported option contracts are always invalid."
+    ]
+  },
+  {
+    "id": "R031",
+    "answer": "B",
+    "reason": "Payment solely for borrower steering is a thing of value under a referral understanding, the RESPA Section 8(a) concern.",
+    "findings": [
+      "Strong options-only cue: other options expressly frame permitted conduct."
+    ]
+  },
+  {
+    "id": "R032",
+    "answer": "C",
+    "reason": "Scope of work determines the required inspection, research and analysis for the assignment before full data collection.",
+    "findings": [
+      "Scope can be refined as an assignment develops; the stem does not expressly say it becomes immutable."
+    ]
+  },
+  {
+    "id": "R033",
+    "answer": "B",
+    "reason": "EPA requires available reports for the unit and relevant common areas, including building-wide evaluations. Hallway reports cannot be excluded.",
+    "findings": [
+      "Options-only cue: B is the only relevance-based scope rather than an arbitrary confinement."
+    ]
+  },
+  {
+    "id": "R034",
+    "answer": "D",
+    "reason": "A quitclaim transfers the grantor\u2019s existing interest; a grantor with none supplies no present estate. Washington RCW 64.04.050 confirms existing rights transfer and allows express future-title language.",
+    "findings": [
+      "Acceptable national framing because no later acquisition is stipulated. Explanation should not categorically say quitclaims can never convey after-acquired title."
+    ]
+  },
+  {
+    "id": "R035",
+    "answer": "C",
+    "reason": "B ledger is minus 300 dollars: B disbursements exceed B available funds by 300 dollars. Total 8000 - 300 = 7700 dollars can reconcile while B remains short.",
+    "findings": []
+  },
+  {
+    "id": "R036",
+    "answer": "C",
+    "reason": "EPA lists compliance with restrictions and not impeding institutional controls as continuing obligations; interviews, historical review and cleanup-lien searches are acquisition inquiries.",
+    "findings": [
+      "These are conditions for maintaining applicable CERCLA protections, not an assertion every landowner owes every protection-specific condition. Explanation should preserve that context."
+    ]
+  },
+  {
+    "id": "R037",
+    "answer": "D",
+    "reason": "Compensated compulsory acquisition for a public road is eminent domain.",
+    "findings": []
+  },
+  {
+    "id": "R038",
+    "answer": "C",
+    "reason": "Sales comparison uses the comparable\u2019s condition when its sale price was established, not improvements added afterward. DRE15 explicitly states condition at sale.",
+    "findings": []
+  },
+  {
+    "id": "R039",
+    "answer": "A",
+    "reason": "Under lien theory a mortgage creates security against title retained by the borrower, rather than conveying title to the lender.",
+    "findings": [
+      "Correctly limits proposition to lien theory rather than all states."
+    ]
+  },
+  {
+    "id": "R040",
+    "answer": "B",
+    "reason": "The client is the party engaging the appraiser, here the lender; paying the fee alone does not make the buyer the client.",
+    "findings": []
+  },
+  {
+    "id": "R041",
+    "answer": "D",
+    "reason": "Equal amounts but different expiration dates affect expected income continuity. CFPB permits consideration of amount and likelihood of continuation without disfavoring pension source itself.",
+    "findings": []
+  },
+  {
+    "id": "R042",
+    "answer": "A",
+    "reason": "24000 / 2 = 12000 dollars per firm; 12000 x 0.65 = 7800 dollars to the agent.",
+    "findings": []
+  },
+  {
+    "id": "R043",
+    "answer": "A",
+    "reason": "Isolating the leak and repairing the damaged pipe fits the stipulated emergency authority; additions and wholesale upgrades exceed it.",
+    "findings": [
+      "Strong surface contrast between necessary repair and expanded renovation."
+    ]
+  },
+  {
+    "id": "R044",
+    "answer": "D",
+    "reason": "ASC monitors state appraisal regulatory programs and reviews the Appraisal Foundation; its official mission states both functions.",
+    "findings": [
+      "Does not imply ASC directly issues individual state licenses."
+    ]
+  },
+  {
+    "id": "R045",
+    "answer": "A",
+    "reason": "Reconveyance releases/returns the trustee\u2019s security interest after repayment; modification, assignment and subordination have different purposes.",
+    "findings": [
+      "Instrument terminology varies by jurisdiction, but reconveyance is the sole offered instrument fitting the stated return of trustee interest."
+    ]
+  },
+  {
+    "id": "R046",
+    "answer": "B",
+    "reason": "Strong sales evidence deserves more weight than a cost estimate undermined by uncertain accrued depreciation. DRE15 bases reconciliation on data quality and cautions against mechanical averaging.",
+    "findings": []
+  }
+]

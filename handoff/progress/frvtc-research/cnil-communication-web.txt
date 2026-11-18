@@ -1,0 +1,136 @@
+Communications par voie électronique aux prospects et clients : quelles règles respecter ? | CNIL (https://www.cnil.fr/fr/communication-electronique-quelles-regles)
+citeturn262view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.cnil.fr/fr/communication-electronique-quelles-regles","lineno":null}); Total lines: 133
+L0: 【0†Particuliers】【1†Professionnels】【2†Presse】
+L1: 
+L2: 【3†Fr】【4†En】【5†Gestionnaire de cookies】
+L3: 
+L4: 【0†Particuliers】【1†Professionnels】【2†Presse】
+L5: 
+L6: 【3†Fr】【4†En】【5†Gestionnaire de cookies】
+L7: 
+L8: Poser une question ou rechercher un article, une délibération... [Input]
+L9: 
+L10: [Button: Rechercher][Input][Input]
+L11: # Communications par voie électronique aux prospects et clients : quelles règles respecter ?
+L12: 
+L13: 10 juin 2026
+L14: 
+L15: * * *
+L16: 
+L17: Prospection commerciale, messages d’information… les entreprises échangent régulièrement avec leurs prospects et leurs clients. Selon les cas, les personnes doivent soit donner leur accord préalable, soit pouvoir s’opposer facilement.
+L18: 
+L19:   * Diminuer la taille de la police
+L20:   * Augmenter la taille de la police
+L21: 
+L22: 【6†Image】
+L23: ## Comprendre les différents types de communications
+L24: 
+L25: Les entreprises peuvent adresser plusieurs types de messages à leurs prospects et à leurs clients afin de développer leur activité et d’assurer le suivi de la relation commerciale. On distingue principalement les communications suivantes :
+L26:   * La prospection commerciale correspond à l’envoi de messages destinés à promouvoir, directement ou indirectement, des produits, des services ou l’image d’une entreprise (courriel, SMS, etc.).
+L27: 
+L28:   * Les communications dites « transactionnelles » qui sont nécessaires à la gestion ou l’exécution d’un contrat ou d’un service demandé par la personne ;
+L29:   * Les communications dites « relationnelles » adressées aux clients dans le cadre du suivi de la relation commerciale, sans finalité promotionnelle directe, qui accompagnent l’utilisation d’un produit ou d’un service.
+L30: Les règles à respecter varient en fonction de la nature des échanges (prospection commerciale, transactionnel, relationnel).
+L31: 
+L32: Identifier la nature du message est donc essentiel pour déterminer les obligations applicables.
+L33: 
+L34: Attention : les règles qui suivent concernent seulement les communications par voie électronique (courriel, SMS, MMS, automates d’appel et autres technologies). Des règles spécifiques s’appliquent pour les communications par téléphone ou par voie postale.
+L35:   * 【7†En savoir plus sur la prospection commerciale par voie postale, appel téléphonique et par voie électronique】
+L36: ## La prospection commerciale par voie électronique : un principe fondé sur le consentement
+L37: 
+L38: La prospection commerciale désigne l’envoi de messages visant à promouvoir, directement ou indirectement, des produits, des services ou l’image d’une entreprise.
+L39: L’envoi de prospection commerciale par voie électronique (courriel, SMS, etc.) à des particuliers repose, en principe, sur le recueil préalable du consentement (【8†article L.34-5†www.legifrance.gouv.fr】 du code des postes et des communications électroniques (CPCE)). Concrètement, une entreprise ne peut pas envoyer de messages promotionnels à une personne sans que celle-ci ait accepté, de manière libre, spécifique et éclairée, de les recevoir.
+L40: Une exception existe lorsque la personne est déjà cliente et que la prospection concerne des produits ou services similaires à ceux déjà achetés, fournis par la même entreprise. Dans ce cas, la personne doit être informée de cette utilisation et mis en mesure de s’opposer facilement au moment de la collecte et lors de chaque communication.
+L41: Exemple 1 : une personne crée un compte gratuit sur un site de presse en ligne lui permettant d’accéder à un nombre limité d’articles. Dans ce cadre, elle reçoit également une lettre d’information. Même en l’absence de paiement direct, cette situation peut, dans certains cas, être assimilée à une relation commerciale. En effet, la gratuité du service constitue, en l'espèce, un levier d’acquisition de clients, financé indirectement par les abonnements payants souscrits par des tiers.
+L42: Dans ce contexte, l’envoi de la lettre d’information promouvant des contenus ou une offre d’abonnement du même éditeur peut relever de l’exception applicable aux clients existants (pas de consentement préalable), à condition qu’ils aient été informés de cette utilisation et qu’ils puissent s’y opposer facilement, y compris au moment de la collecte de leurs données (CJUE, 13 novembre 2025, 【9†Inteligo Media SA contre Autoritatea Naţională de Supraveghere a Prelucrării Datelor cu Caracter Personal†infocuria.curia.europa.eu】 (ANSPDCP), C- 654/23).
+L43: Exemple 2 : une personne crée un compte sur un site de commerce en ligne sans effectuer d’achat. L’entreprise utilise ensuite son adresse électronique pour lui envoyer des offres commerciales. Dans ce cas, l’exception applicable aux clients existants ne peut pas être utilisée. La simple création d’un compte ne suffit pas à caractériser une relation commerciale.
+L44: Dans ce cas, en l’absence d’achat ou de prestation de service, l’envoi de messages de prospection nécessite donc le consentement préalable de la personne (CNIL, 【10†Délibération de la formation restreinte†www.legifrance.gouv.fr】 n° SAN-2021-008 du 14 juin 2021).
+L45: 
+L46: 
+L47: Exemple 3 : un client achète un billet de train en ligne. L’entreprise peut lui adresser, sans recueillir à nouveau son consentement, des offres portant sur des services similaires, comme des billets pour d’autres trajets, des abonnements de transport ou des options liées au voyage (choix de siège, etc.), à condition qu’il ait été informé de cette utilisation et qu’il puisse s’y opposer facilement y compris au moment de la collecte de ses données.
+L48: Exemple 4 : un client réserve une chambre d’hôtel sur le site d’une enseigne hôtelière. L’entreprise utilise ensuite son adresse électronique pour lui envoyer des offres promotionnelles pour des billets d’avion proposés par des partenaires.
+L49: Dans ce cas, ces offres ne peuvent pas être considérées comme portant sur des produits ou services similaires à ceux initialement achetés dès lors qu’elles ne sont pas proposées par la même entreprise et qu’elles concernent des offres de partenaires. L’entreprise ne peut donc pas se fonder sur l’exception applicable aux clients existants et doit recueillir le consentement préalable de la personne (CNIL, 【11†Délibération de la formation restreinte†www.legifrance.gouv.fr】 n° SAN-2022-017 du 3 août 2022).
+L50: ### Une qualification fondée sur la finalité du message
+L51: 
+L52: La qualification de prospection commerciale ne dépend pas uniquement du contenu du message, mais avant tout de son objectif. Ainsi, un message peut apparaître informatif tout en relevant de la prospection commerciale s’il vise, en réalité, à inciter la personne à consommer davantage de services, à utiliser plus fréquemment une plateforme ou à souscrire une offre.
+L53: Exemple : une entreprise de presse en ligne envoie une lettre d’information présentant des articles d’actualité.
+L54: Même si son contenu est informatif, cette communication peut être qualifiée de prospection commerciale si elle a pour objectif d’encourager le lecteur à consulter davantage d’articles gratuits, jusqu’à l’amener à s’abonner à une offre payante (CJUE, 13 novembre 2025, 【9†Inteligo Media SA contre Autoritatea Naţională de Supraveghere a Prelucrării Datelor cu Caracter Personal†infocuria.curia.europa.eu】 (ANSPDCP), C- 654/23).
+L55: Dans chaque cas, il faut donc s’interroger sur l’objectif du message et sur le fait qu’il soit adressé directement à une personne identifiée.
+L56: 
+L57: Un régime spécifique pour la prospection entre professionnels (B to B)
+L58: 
+L59: Le consentement préalable n’est pas systématiquement requis pour la prospection B to B si :
+L60:   * elle est en lien avec l’activité professionnelle de la personne contactée ;
+L61:   * la personne est informée de l’origine de ses données et de la finalité du message ;
+L62:   * elle peut s’opposer simplement à la réception de nouvelles sollicitations.
+L63: ## Courriels transactionnels et relationnels : des communications au service de la relation client
+L64: ### Des messages liés au service rendu ou à la relation client
+L65: 
+L66: Les communications transactionnelles et relationnelles correspondent aux messages envoyés dans le cadre de la gestion d’une relation avec un client ou un utilisateur :
+L67:   * Les communications transactionnelles sont généralement envoyées pour fournir aux utilisateurs des informations importantes concernant un service demandé, leur compte ou leur transaction. Il s’agit, par exemple, de courriels de bienvenue, d’alertes de compte, de notifications liées à des évènements comme l’expédition d’un colis, de confirmations de commandes et factures d’achat, de rappels et réinitialisation de mot de passe, etc.
+L68:   * Les communications relationnelles adressées aux clients dans le cadre du suivi de la relation commerciale visent à les informer ou à les accompagner dans l’utilisation d’un produit ou d’un service, sans poursuivre de finalité promotionnelle.
+L69: Ces messages ont pour objet principal d’informer ou d’accompagner la personne, et non de promouvoir des produits ou des services. Ils ne doivent pas être utilisés pour dissimuler un contenu promotionnel. Si un message comporte une part de contenu commercial (mise en avant d’offres, incitation à l’achat, promotion de services), il peut être requalifié en prospection commerciale et soumis aux règles correspondantes, notamment en matière de consentement.
+L70: Exemple 1 : un utilisateur ayant souscrit à une alerte immobilière reçoit des courriels relatifs à des biens similaires ou des sondages anonymes sur des actualités immobilières. Ces messages, dès lors qu’ils découlent directement du service demandé et ne visent pas à promouvoir d’autres offres, peuvent ne pas constituer de la prospection commerciale (CNIL, 【12†Délibération de la formation restreinte†www.legifrance.gouv.fr】 n° SAN-2024-002 du 31 janvier 2024).
+L71: Exemple 2 : une entreprise de services envoie à ses clients des messages ayant pour objet de leur fournir des conseils pratiques pour optimiser l’usage du service, ou encore de les accompagner dans la gestion de leurs paramètres (par exemple, alertes de sécurité, recommandations d’utilisation ou conseils personnalisés). Ces messages, adressés uniquement aux clients, sont dépourvus de toute offre commerciale directe et ont pour seul objectif d’accompagner l’utilisateur dans l’utilisation du service.
+L72: ### Un cadre juridique distinct de la prospection commerciale
+L73: 
+L74: Contrairement à la prospection commerciale, ces communications ne reposent généralement pas sur le consentement préalable. Elles sont en principe fondées sur :
+L75:   * l’exécution du contrat conclu avec le client (notamment les messages transactionnels) ;
+L76:   * l’intérêt légitime de l’entreprise à assurer le suivi de la relation client (messages relationnels), à condition que ces communications restent raisonnables et ne portent pas atteinte à la vie privée des personnes (par exemple : en évitant les messages trop fréquents ou intrusifs).
+L77: 
+L78: Toutefois, les personnes doivent :
+L79:   * être informées de l’utilisation de leurs données pour ces finalités ;
+L80:   * pouvoir s’opposer, lorsque cela est applicable, à certains messages relationnels.
+L81: ## Dans tous les cas
+L82: 
+L83: Pour l’ensemble de ces communications, les organismes doivent respecter 【13†les exigences du RGPD et de la loi Informatique et Libertés】 pour garantir la protection des données personnelles.
+L84: ### Informer les personnes
+L85: 
+L86: Les personnes doivent être clairement 【14†informées】 de l’utilisation de leurs données personnelles.
+L87: 
+L88: Cette information doit être fournie dès la collecte des données et porter notamment sur l’identité de l’entreprise, l’objectif poursuivi, les droits dont elles disposent (droit d’accès, droit de retirer son consentement, droit d’opposition, droit à l’effacement, etc.).
+L89: 
+L90: Ces informations doivent être présentées de manière accessible et compréhensible.
+L91: ### Faciliter les choix des personnes
+L92: 
+L93: Les personnes doivent pouvoir accepter ou refuser facilement de recevoir des communications sauf lorsqu’elles sont nécessaires au contrat. À ce titre :
+L94:   * Le consentement préalable ou le droit d’opposition peut être recueilli par le biais d’une case à cocher. Si l’utilisation d’une case pré-cochée est interdite en matière de recueil du consentement, il est également recommandé d’utiliser une case décochée par défaut pour permettre aux personnes de s’opposer.
+L95:   * Lorsqu’une personne s’oppose à recevoir une communication, cette demande doit être prise en compte durablement pour que le droit d’opposition soit effectif. La CNIL recommande la mise en place d’une liste d’opposition (ou « 【15†liste repoussoir】 ») qui permet d’éviter toute nouvelle sollicitation.
+L96: ## Comment se mettre en conformité ?
+L97: 
+L98: [Input] Identifier la nature du message (prospection, transactionnel ou relationnel).
+L99: 
+L100: [Input] S’assurer que les messages transactionnels et relationnels ne contiennent pas de contenu promotionnel significatif.
+L101: 
+L102: [Input] Déterminer la base juridique applicable (consentement, contrat ou intérêt légitime).
+L103: 
+L104: [Input] Informer clairement les personnes lors de la collecte des données.
+L105: 
+L106: [Input] Vérifier que le consentement est valide lorsqu’il est requis.
+L107: [Input] Prévoir un moyen simple d’opposition ou de désinscription au moment de la collecte des données et dans chaque message lorsqu’il est requis.
+L108: 
+L109: [Input] Mettre en place et maintenir une liste d’opposition à jour.
+L110: 
+L111: [Input] Encadrer les prestataires impliqués dans l’envoi des communications.
+L112: 
+L113: [Input] Garantir la sécurité des données utilisées.
+L114: 
+L115: [Input] Définir et respecter des durées de conservation adaptées.
+L116: 
+L117: [Input] Documenter les pratiques (preuves de consentement, procédures internes).
+L118: Texte reference
+L119: ## Pour approfondir
+L120: 
+L121:   * 【7†Tous les contenus de la CNIL sur la prospection commerciale】
+L122: 
+L123:   * 【16†#Prospection】
+L124:   * 【17†#Commerce】
+L125:   * 【18†#Publicité】
+L126: #### Ceci peut également vous intéresser ...
+L127: 
+L128: 【19†La CNIL a prononcé 38 nouvelles sanctions en procédure simplifiée depuis juin 2026 17 novembre 2026】 【20†Sanction】
+L129: 
+L130: 【21†Revoir le webinaire - Nouveau régime de la prospection téléphonique : comment et quand recueillir... 19 octobre 2026】 【22†Webinaire】
+L131: 
+L132: 【23†Reconstitution d’adresses électroniques professionnelles : dans quel cadre est-ce autorisé ? 16 octobre 2026】 【24†Courriels】
+

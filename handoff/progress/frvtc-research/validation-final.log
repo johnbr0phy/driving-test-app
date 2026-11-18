@@ -1,0 +1,55 @@
+lang fr  len-scale 1.2  rows 36  categories {'frvtcT3p': 36}
+letters {'A': 9, 'B': 9, 'C': 9, 'D': 9}  avg option 42 chars  key-longest 11%  key>1.2x 0%
+PASS
+checked 1 banks: no answer patterns
+../tigertest-next20-progress/frvtc-research/t3p-final.json: 36 items, shared option sets 0 (0%, limit 10%), echo rule right 4/12, gain 1.4 marks per 50, ruling the echo out gains -0.5 (limit 4.5)
+   key alone echoes the stem: FRVTC-T3P-003, FRVTC-T3P-016, FRVTC-T3P-023, FRVTC-T3P-029
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 24  categories {'frvtcGestion': 24}
+letters {'B': 6, 'D': 6, 'A': 6, 'C': 6}  avg option 26 chars  key-longest 8%  key>1.2x 4%
+PASS
+checked 1 banks: no answer patterns
+../tigertest-next20-progress/frvtc-research/gestion-final.json: 24 items, shared option sets 0 (0%, limit 10%), echo rule right 1/3, gain 0.5 marks per 50, ruling the echo out gains -0.2 (limit 4.5)
+   key alone echoes the stem: FRVTC-GES-016
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 36  categories {'frvtcSecurite': 36}
+letters {'B': 9, 'D': 9, 'A': 9, 'C': 9}  avg option 42 chars  key-longest 17%  key>1.2x 3%
+PASS
+checked 1 banks: no answer patterns
+../tigertest-next20-progress/frvtc-research/securite-final.json: 36 items, shared option sets 0 (0%, limit 10%), echo rule right 2/18, gain -3.5 marks per 50, ruling the echo out gains 1.2 (limit 4.5)
+   key alone echoes the stem: FRVTC-SEC-012, FRVTC-SEC-034
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 24  categories {'frvtcFrancais': 24}
+letters {'B': 6, 'A': 6, 'D': 6, 'C': 6}  avg option 40 chars  key-longest 4%  key>1.2x 0%
+PASS
+checked 1 banks: no answer patterns
+../tigertest-next20-progress/frvtc-research/francais-final.json: 24 items, shared option sets 0 (0%, limit 10%), echo rule right 3/10, gain 1.0 marks per 50, ruling the echo out gains -0.3 (limit 4.5)
+   key alone echoes the stem: FRVTC-FRA-005, FRVTC-FRA-010, FRVTC-FRA-021
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 12  categories {'frvtcAnglais': 12}
+letters {'B': 3, 'C': 3, 'A': 3, 'D': 3}  avg option 34 chars  key-longest 17%  key>1.2x 8%
+PASS
+checked 0 banks: no answer patterns
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 36  categories {'frvtcCommercial': 36}
+letters {'B': 9, 'D': 9, 'A': 9, 'C': 9}  avg option 33 chars  key-longest 17%  key>1.2x 3%
+PASS
+checked 1 banks: no answer patterns
+../tigertest-next20-progress/frvtc-research/commercial-final.json: 36 items, shared option sets 0 (0%, limit 10%), echo rule right 4/13, gain 1.0 marks per 50, ruling the echo out gains -0.3 (limit 4.5)
+   key alone echoes the stem: FRVTC-COM-002, FRVTC-COM-016, FRVTC-COM-025, FRVTC-COM-027
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 32  categories {'frvtcReglementation': 32}
+letters {'B': 8, 'D': 8, 'A': 8, 'C': 8}  avg option 38 chars  key-longest 16%  key>1.2x 6%
+PASS
+checked 1 banks: no answer patterns
+../tigertest-next20-progress/frvtc-research/reglementation-final.json: 32 items, shared option sets 0 (0%, limit 10%), echo rule right 0/9, gain -3.5 marks per 50, ruling the echo out gains 1.2 (limit 4.5)
+option reuse and stem echo: OK
+lang fr  len-scale 1.2  rows 200  categories {'frvtcT3p': 36, 'frvtcGestion': 24, 'frvtcSecurite': 36, 'frvtcFrancais': 24, 'frvtcAnglais': 12, 'frvtcCommercial': 36, 'frvtcReglementation': 32}
+letters {'A': 50, 'B': 50, 'C': 50, 'D': 50}  avg option 37 chars  key-longest 13%  key>1.2x 3%
+warn: "client" is almost never the key (1 of 19, chance 5.5): make it right sometimes
+PASS
+checked 1 banks: no answer patterns
+data/france-vtc-questions.json: 200 items, shared option sets 0 (0%, limit 10%), echo rule right 14/66, gain -0.6 marks per 50, ruling the echo out gains 0.2 (limit 4.5)
+   key alone echoes the stem: FRVTC-T3P-003, FRVTC-T3P-016, FRVTC-T3P-023, FRVTC-T3P-029, FRVTC-GES-016, FRVTC-SEC-012, FRVTC-SEC-034, FRVTC-FRA-005, FRVTC-FRA-010, FRVTC-FRA-021, FRVTC-COM-002, FRVTC-COM-016, FRVTC-COM-025, FRVTC-COM-027
+option reuse and stem echo: OK
+Direct analysis functions: ['defaultdict', 'load_items', 'all_banks', 'bank_key', 'words', 'norm', 'fixed_set', 'stimuli', 'analyse', 'exam_groups', 'over', 'main']

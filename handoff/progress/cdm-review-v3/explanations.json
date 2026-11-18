@@ -1,0 +1,1002 @@
+[
+  {
+    "reviewId": "R001",
+    "correctAnswer": "D",
+    "explanation": "Food Code 2-301.14 requires handwashing after handling soiled equipment or utensils. The other stated activities do not themselves describe contamination in this case."
+  },
+  {
+    "reviewId": "R002",
+    "correctAnswer": "D",
+    "explanation": "Personnel Standard 2 adapts training resources to demonstrated needs. Expanding the terms addresses comprehension of the written guide, rather than task execution already demonstrated."
+  },
+  {
+    "reviewId": "R003",
+    "correctAnswer": "D",
+    "explanation": "The specified acquisition costs total 8000 + 1500 + 500 = $10000. No additional electrical cost is stated."
+  },
+  {
+    "reviewId": "R004",
+    "correctAnswer": "A",
+    "explanation": "Two of four observations meet the deadline. Specific performance records support a 50% on-time rate rather than a general impression."
+  },
+  {
+    "reviewId": "R005",
+    "correctAnswer": "B",
+    "explanation": "Twenty usable portions remain. Dividing the full $48 case cost by 20 gives $2.40; dividing by 24 would ignore the loss."
+  },
+  {
+    "reviewId": "R006",
+    "correctAnswer": "C",
+    "explanation": "Personnel Standard 2 includes providing resources needed for performance. The case establishes an access conflict, not a knowledge or portioning deficit."
+  },
+  {
+    "reviewId": "R007",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 4 includes review of diet appropriateness with the clinical team. That differs from checking kitchen implementation or production yield."
+  },
+  {
+    "reviewId": "R008",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 1 covers job descriptions and specifications. Qualifications define what an applicant must bring; assignments describe work performed after selection."
+  },
+  {
+    "reviewId": "R009",
+    "correctAnswer": "C",
+    "explanation": "Food Code 3-202.16 requires ice used as food to be made from drinking water. The question concerns the beverage ice provision, not permission for every other use in a specific facility."
+  },
+  {
+    "reviewId": "R010",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 2 supports hands-on assessment. Actual measurement demonstrates use; verbal or visual recognition assesses different learning outcomes."
+  },
+  {
+    "reviewId": "R011",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 1 includes wounds among screening indicators. The open skin area belongs to the wound field; the other findings can matter but are documented in different fields."
+  },
+  {
+    "reviewId": "R012",
+    "correctAnswer": "D",
+    "explanation": "Nutrition Standard 4 requires implementing both texture and nutritional instructions. Matching only calories or only consistency does not meet both stated conditions."
+  },
+  {
+    "reviewId": "R013",
+    "correctAnswer": "D",
+    "explanation": "Divide 72 by 48 to obtain $1.50. Recipe cost per portion uses the number of portions actually yielded."
+  },
+  {
+    "reviewId": "R014",
+    "correctAnswer": "B",
+    "explanation": "CBDM Safety Standard 3 distinguishes allergen transfer from microbial cross-contamination and other hazard types. A visibly clean utensil can still transfer allergenic food."
+  },
+  {
+    "reviewId": "R015",
+    "correctAnswer": "C",
+    "explanation": "Multiply usage by lead time:8\u00d73=24 units. Any safety stock would be added separately, but none is specified."
+  },
+  {
+    "reviewId": "R016",
+    "correctAnswer": "D",
+    "explanation": "Divide the desired 100 portions by the original 40 to obtain 2.5. Apply the factor before testing the scaled recipe."
+  },
+  {
+    "reviewId": "R017",
+    "correctAnswer": "C",
+    "explanation": "The in-house total is 80 + 4\u00d720 = $160. Buying at $150 saves $10; comparing $80 with $150 would omit the specified labor."
+  },
+  {
+    "reviewId": "R018",
+    "correctAnswer": "A",
+    "explanation": "The qualifying product meets both supplied limits. A lower-sodium product can still fail the protein requirement, and a higher-protein one can exceed sodium."
+  },
+  {
+    "reviewId": "R019",
+    "correctAnswer": "D",
+    "explanation": "Nutrition Standard 2 calls for updating individual preferences. The return interview supplies the latest direct choice, while earlier records may accurately describe earlier preferences."
+  },
+  {
+    "reviewId": "R020",
+    "correctAnswer": "C",
+    "explanation": "Foodservice Standard 3 calls for objectives tied to the problem. Mismatch rate is the stated outcome; more checks is an activity, not evidence that errors fell."
+  },
+  {
+    "reviewId": "R021",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 2 aligns discussion with the meeting purpose. Delivery timing and staffing relate directly to schedule feasibility; the other comparisons concern different operating decisions."
+  },
+  {
+    "reviewId": "R022",
+    "correctAnswer": "A",
+    "explanation": "Food Code 3-501.15 recognizes several effective methods. Shallow pans are the method supported by the resources explicitly available; the others require unavailable equipment or ice."
+  },
+  {
+    "reviewId": "R023",
+    "correctAnswer": "B",
+    "explanation": "Foodservice Standard 2 monitors meal conditions through delivery. The compliant dispatch check and deficient arrival point to transport or service rather than recipe analysis."
+  },
+  {
+    "reviewId": "R024",
+    "correctAnswer": "D",
+    "explanation": "The default interval for food-contact surfaces used with TCS food is at least every four hours. A two-hour interval is more frequent than required; the question asks for the longest permitted interval in the stated conditions."
+  },
+  {
+    "reviewId": "R025",
+    "correctAnswer": "B",
+    "explanation": "The first cooling stage must reduce 135\u00b0F to 70\u00b0F within 2 hours. The total cooling allowance does not replace this first-stage requirement."
+  },
+  {
+    "reviewId": "R026",
+    "correctAnswer": "D",
+    "explanation": "Weight loss is 8 divided by the previous 160 lb, multiplied by 100, or 5%. Dividing by the current weight answers a different calculation."
+  },
+  {
+    "reviewId": "R027",
+    "correctAnswer": "B",
+    "explanation": "The documented method conflicts with the resident's ability. Verification should resolve that inconsistency before interpreting the apparent change as genuine weight loss."
+  },
+  {
+    "reviewId": "R028",
+    "correctAnswer": "D",
+    "explanation": "Personnel Standard 2 bases ongoing training on identified needs. The shared new coding error points to the changed system rather than unrelated skills."
+  },
+  {
+    "reviewId": "R029",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 2 records individual customs rather than inferring broader restrictions. The stated preference excludes pork and permits the other two groups."
+  },
+  {
+    "reviewId": "R030",
+    "correctAnswer": "D",
+    "explanation": "Working backward from noon requires refrigeration by 8 a.m. and mixing from 7:30 a.m. Foodservice Standard 2 coordinates preparation and completion times."
+  },
+  {
+    "reviewId": "R031",
+    "correctAnswer": "C",
+    "explanation": "Offer A supplies the needed 40 at $80. Although B has a lower purchased-unit price, its $108 cost over 40 usable units is $2.70; the extra expiring units do not create value."
+  },
+  {
+    "reviewId": "R032",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 3 requires accurate attribution. The informant distinguishes a reported amount from the staff member's own observation; the other details do not establish the source."
+  },
+  {
+    "reviewId": "R033",
+    "correctAnswer": "D",
+    "explanation": "The total allowance is 6 hours from 135\u00b0F. Subtracting 1.5 hours leaves 4.5 hours, provided the first-stage limit was met."
+  },
+  {
+    "reviewId": "R034",
+    "correctAnswer": "D",
+    "explanation": "The scheduled total is 100 hours.100/40=2.5 FTEs, although four people are employed."
+  },
+  {
+    "reviewId": "R035",
+    "correctAnswer": "A",
+    "explanation": "CBDM Safety Standard 3 includes review of logs and self-inspection in checking that the system works. The production readings themselves are monitoring."
+  },
+  {
+    "reviewId": "R036",
+    "correctAnswer": "D",
+    "explanation": "Foodservice Standard 1 considers cultural practices as well as taste. The reported conflict concerns when the meal is served rather than its flavor or portion."
+  },
+  {
+    "reviewId": "R037",
+    "correctAnswer": "B",
+    "explanation": "With food ready at 11:30, departure by 11:35 would meet the target. The avoidable delay shown is the 20-minute wait before dispatch, not travel."
+  },
+  {
+    "reviewId": "R038",
+    "correctAnswer": "D",
+    "explanation": "Nutrition Standard 2 requires adapting communication to client needs. Written prompts use the established reading ability rather than relying on the impaired channel."
+  },
+  {
+    "reviewId": "R039",
+    "correctAnswer": "D",
+    "explanation": "Both periods cost $6 per patient day. Business Standard 1 uses volume-normalized measures; higher total expense here accompanies proportionately higher volume."
+  },
+  {
+    "reviewId": "R040",
+    "correctAnswer": "B",
+    "explanation": "The Food Code specifies 145\u00b0F for 15 seconds for fish under the stated ordinary conditions. Holding standards are not cooking standards."
+  },
+  {
+    "reviewId": "R041",
+    "correctAnswer": "B",
+    "explanation": "Foodservice Standards 1 and 3 support acceptance testing. Residents comparing both versions directly address the intended population and change; a staff panel may not represent resident preferences."
+  },
+  {
+    "reviewId": "R042",
+    "correctAnswer": "A",
+    "explanation": "CBDM Safety Standard 3 requires ingredient information for allergen control. Calories, storage conditions and yield are useful product data but do not establish whether sesame is an ingredient."
+  },
+  {
+    "reviewId": "R043",
+    "correctAnswer": "C",
+    "explanation": "The rates are 10/200 = 5% and 9/300 = 3%. Comparing raw error counts would overlook the larger post-change sample."
+  },
+  {
+    "reviewId": "R044",
+    "correctAnswer": "D",
+    "explanation": "The demonstrated barrier is access, not knowledge or reading ability. The outline requires practical substitutions suitable for the client's circumstances."
+  },
+  {
+    "reviewId": "R045",
+    "correctAnswer": "B",
+    "explanation": "The qualifying record has four times at or before 10:30. Personnel Standard 2 evaluates the observed performance against the agreed threshold rather than judging intent."
+  },
+  {
+    "reviewId": "R046",
+    "correctAnswer": "B",
+    "explanation": "Food Code 4-501.116 requires a test kit or other device to determine sanitizer concentration. The other instruments measure temperature, pressure and time, not chemical concentration."
+  },
+  {
+    "reviewId": "R047",
+    "correctAnswer": "C",
+    "explanation": "The outline requires teaching based on assessed needs. Portion selection addresses the observed difficulty; naming foods is already demonstrated."
+  },
+  {
+    "reviewId": "R048",
+    "correctAnswer": "B",
+    "explanation": "Three services at two hours each use the entire six-hour capacity. The calculation supports reserving available resources for the stated essential service."
+  },
+  {
+    "reviewId": "R049",
+    "correctAnswer": "A",
+    "explanation": "The trial establishes acceptable texture and better acceptance at 8 minutes. Six and twelve were not tested in the stated comparison, while ten was less preferred."
+  },
+  {
+    "reviewId": "R050",
+    "correctAnswer": "C",
+    "explanation": "The signed order is the controlling instruction and the meal is the delivered outcome. Agreement among kitchen documents can miss a transcription error shared by them."
+  },
+  {
+    "reviewId": "R051",
+    "correctAnswer": "C",
+    "explanation": "Actual expense minus budget is 12900-12000=$900 unfavorable. Adding the two figures does not calculate a variance."
+  },
+  {
+    "reviewId": "R052",
+    "correctAnswer": "C",
+    "explanation": "Personnel Standard 2 requires accurate follow-up on assigned actions. Thursday precedes the Friday deadline, so the work is pending rather than overdue."
+  },
+  {
+    "reviewId": "R053",
+    "correctAnswer": "D",
+    "explanation": "Foodservice Standard 1 uses acceptance evaluation to adapt recipes. A sensory comparison among residents tests the reported taste problem; production and cost measures test different outcomes."
+  },
+  {
+    "reviewId": "R054",
+    "correctAnswer": "B",
+    "explanation": "Personnel Standard 1 aligns staffing with workload. Moving the same four-hour shifts to 9\u20131 preserves hours and covers the lunch interval."
+  },
+  {
+    "reviewId": "R055",
+    "correctAnswer": "D",
+    "explanation": "Safety Standard 3 separates identifying a control point from defining monitoring, correction and verification. The stem describes selecting the location of control in the process."
+  },
+  {
+    "reviewId": "R056",
+    "correctAnswer": "D",
+    "explanation": "Business Standard 2 requires specifications suited to use. Edible yield connects purchased weight to served quantity, while the other terms concern purchasing logistics."
+  },
+  {
+    "reviewId": "R057",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 4 supports choices within the prescribed plan. The case already establishes compatibility and availability; it does not identify a new clinical issue requiring reassessment."
+  },
+  {
+    "reviewId": "R058",
+    "correctAnswer": "B",
+    "explanation": "The needed fraction is 12/18 of 240 mL, or 160 mL. This compares supplied product data within an approved substitution, not an independently prescribed target."
+  },
+  {
+    "reviewId": "R059",
+    "correctAnswer": "A",
+    "explanation": "Both can describe the same event using different units. Consistent performance measures must define whether each item or each affected tray is counted."
+  },
+  {
+    "reviewId": "R060",
+    "correctAnswer": "C",
+    "explanation": "CBDM Safety Standard 1 distinguishes symptoms, diagnoses and exposures. The report supports a symptom entry and application of the relevant procedure, not an invented diagnosis."
+  },
+  {
+    "reviewId": "R061",
+    "correctAnswer": "A",
+    "explanation": "CBDM Safety Standard 2 requires checking product specifications as well as quantity. Here count, packaging and price meet the stated requirements but grade does not."
+  },
+  {
+    "reviewId": "R062",
+    "correctAnswer": "A",
+    "explanation": "Safety Standard 3 identifies foreign objects from equipment as physical hazards. Repair and inspection help prevent recurrence."
+  },
+  {
+    "reviewId": "R063",
+    "correctAnswer": "B",
+    "explanation": "Food Code 3-403.11 requires a covered two-minute stand after microwave reheating. Covering only during heating does not complete the specified procedure."
+  },
+  {
+    "reviewId": "R064",
+    "correctAnswer": "B",
+    "explanation": "Personnel Standard 2 requires following assigned actions. The stated submission condition is incomplete because the quotes have not arrived."
+  },
+  {
+    "reviewId": "R065",
+    "correctAnswer": "C",
+    "explanation": "Plate returns total 11 lb, more than trimming or unserved leftovers. Foodservice Standard 2 uses stage-specific waste data to target investigation."
+  },
+  {
+    "reviewId": "R066",
+    "correctAnswer": "A",
+    "explanation": "The score is 90\u00d70.60 + 70\u00d70.40 = 54 + 28 = 82. An unweighted mean would be 80 and would not apply the stated rubric."
+  },
+  {
+    "reviewId": "R067",
+    "correctAnswer": "B",
+    "explanation": "Foodservice Standard 3 involves staff who perform the process. The specified handoff is between assembly and dispatch, not receiving, production or menu planning."
+  },
+  {
+    "reviewId": "R068",
+    "correctAnswer": "A",
+    "explanation": "Four batches provide 192 portions. At two batches per cycle, two cycles are needed; four is the batch count, not the cycle count."
+  },
+  {
+    "reviewId": "R069",
+    "correctAnswer": "D",
+    "explanation": "Business Standard 3 advises against paying for quality features not needed for the use. Chopping removes the appearance benefit that matters in the other presentations."
+  },
+  {
+    "reviewId": "R070",
+    "correctAnswer": "B",
+    "explanation": "Business Standard 3 requires market and financial analysis. The case has established capacity but not demand, so willingness to purchase at the proposed price remains uncertain."
+  },
+  {
+    "reviewId": "R071",
+    "correctAnswer": "D",
+    "explanation": "The batch supplies exactly the planned 100 portions. The shortage follows from 110 requests, so the forecast rather than yield or portioning is at issue."
+  },
+  {
+    "reviewId": "R072",
+    "correctAnswer": "A",
+    "explanation": "The meal allowance is 1500 minus 600, or 900 mL. Dividing by three gives 300 mL; the other assigned fluids also count toward the limit."
+  },
+  {
+    "reviewId": "R073",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 4 requires service instructions to implement the verified order. Here the feed and tally agree; the earlier card is the remaining conflicting record."
+  },
+  {
+    "reviewId": "R074",
+    "correctAnswer": "B",
+    "explanation": "The working container must identify its contents by the common name. Employee, purchasing and location information can support operations but do not identify the chemical as required by this section."
+  },
+  {
+    "reviewId": "R075",
+    "correctAnswer": "C",
+    "explanation": "Nutrition Standard 2 uses frequency questionnaires to identify dietary patterns over a specified period. A single observation is narrower."
+  },
+  {
+    "reviewId": "R076",
+    "correctAnswer": "D",
+    "explanation": "The difference between 11:30 and 11:15 is 15 minutes earlier. Personnel Standard 3 requires operational changes to be communicated accurately."
+  },
+  {
+    "reviewId": "R077",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 1 uses cross-training to support appropriate coverage. The case establishes relevant competence for Lee, not merely availability."
+  },
+  {
+    "reviewId": "R078",
+    "correctAnswer": "C",
+    "explanation": "The specification requires fifty 4-ounce servings from 200 ounces. Changing the measure restores that standard; the other changes alter a target or require more food."
+  },
+  {
+    "reviewId": "R079",
+    "correctAnswer": "B",
+    "explanation": "Total cost is 4800. Dividing by 600 meals gives $8.00; using only one expense category understates total cost."
+  },
+  {
+    "reviewId": "R080",
+    "correctAnswer": "A",
+    "explanation": "Business Standard 4 measures meal equivalents per labor hour:720/90=8."
+  },
+  {
+    "reviewId": "R081",
+    "correctAnswer": "B",
+    "explanation": "Foodservice Standard 1 includes techniques and equipment in standardization. The described difference is the preparation method, even if ingredients and portion targets remain unchanged."
+  },
+  {
+    "reviewId": "R082",
+    "correctAnswer": "B",
+    "explanation": "Recall identification requires both the specified product and lot. Matching a lot number on a different product does not establish that it is the recalled stock."
+  },
+  {
+    "reviewId": "R083",
+    "correctAnswer": "B",
+    "explanation": "CBDM Safety Standard 3 monitors allergen controls throughout food flow. The observed transfer occurs at service; the other described controls passed the audit."
+  },
+  {
+    "reviewId": "R084",
+    "correctAnswer": "C",
+    "explanation": "Twenty items at 8 ounces weigh more than twenty at 6 ounces. Foodservice Standard 1 requires consistent ingredient amounts, so count may need conversion to weight."
+  },
+  {
+    "reviewId": "R085",
+    "correctAnswer": "B",
+    "explanation": "Half of a 30 g carbohydrate serving provides 15 g. Use the supplied approved portion values rather than assuming equal volumes provide equal nutrients."
+  },
+  {
+    "reviewId": "R086",
+    "correctAnswer": "C",
+    "explanation": "All four comparisons can inform management, but only event volume and extra hours directly test the suspected relationship in this case. Personnel Standard 1 uses workload and overtime trends."
+  },
+  {
+    "reviewId": "R087",
+    "correctAnswer": "C",
+    "explanation": "The total is 4800 kcal. Dividing by 3 days gives 1600 kcal per day."
+  },
+  {
+    "reviewId": "R088",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 2 supports job-specific training tools. A step sequence addresses the demonstrated ordering problem; targets and organization charts serve other needs."
+  },
+  {
+    "reviewId": "R089",
+    "correctAnswer": "D",
+    "explanation": "Personnel Standard 2 requires checking completion against the role's required onboarding. The gap is C, regardless of optional D having been completed."
+  },
+  {
+    "reviewId": "R090",
+    "correctAnswer": "B",
+    "explanation": "One late start is within the stated limit. Personnel Standard 2 evaluates performance against the agreed target; it does not require perfect timeliness when the target allows one exception."
+  },
+  {
+    "reviewId": "R091",
+    "correctAnswer": "C",
+    "explanation": "CBDM Safety Standard 2 requires following maintenance schedules. Under the supplied interval, 90 minus 60 leaves 30 days; an actual malfunction would need separate attention."
+  },
+  {
+    "reviewId": "R092",
+    "correctAnswer": "A",
+    "explanation": "CBDM Personnel Standard 1 calculates FTEs by dividing scheduled hours by the full-time benchmark:280/40=7."
+  },
+  {
+    "reviewId": "R093",
+    "correctAnswer": "D",
+    "explanation": "The replacement adds 420 minus 180, or 240 mg sodium per portion. Nutrition Standard 4 requires analysis to reflect actual ingredients."
+  },
+  {
+    "reviewId": "R094",
+    "correctAnswer": "C",
+    "explanation": "CBDM Safety Standard 2 requires sourcing through approved purveyors suited to the purchase. The supplied list assigns dairy to L; approval for another category is not the same authorization."
+  },
+  {
+    "reviewId": "R095",
+    "correctAnswer": "A",
+    "explanation": "Food Code 2-301.12 specifies at least 20 seconds for the complete procedure. The rubbing phase has a separate 10-to-15-second instruction."
+  },
+  {
+    "reviewId": "R096",
+    "correctAnswer": "B",
+    "explanation": "QAPI requires interpreting all relevant results. Fewer delays indicate better timeliness, while the higher error rate reveals an adverse tradeoff."
+  },
+  {
+    "reviewId": "R097",
+    "correctAnswer": "D",
+    "explanation": "Subtract arrival from dispatch temperature. B loses 20\u00b0F and A loses 10\u00b0F; the results describe the observed routes rather than proving the cause of the difference."
+  },
+  {
+    "reviewId": "R098",
+    "correctAnswer": "C",
+    "explanation": "Twelve quarts contain 384 fluid ounces. Dividing by 6 gives 64 portions."
+  },
+  {
+    "reviewId": "R099",
+    "correctAnswer": "C",
+    "explanation": "Nutrition Standard 3 evaluates progress against the specified goal. The goal concerns lunch consumption, whereas delivery and attendance describe processes and breakfast concerns another meal."
+  },
+  {
+    "reviewId": "R100",
+    "correctAnswer": "C",
+    "explanation": "A 10 lb loss from 150 lb is about 6.7%, above 5%. The other listed losses are less than 5%; this is a screening indicator, not a diagnosis."
+  },
+  {
+    "reviewId": "R101",
+    "correctAnswer": "A",
+    "explanation": "Foodservice Standard 1 calls for meaningful recipe evaluation. The temperature difference can affect preference independently of seasoning."
+  },
+  {
+    "reviewId": "R102",
+    "correctAnswer": "C",
+    "explanation": "Food Code 3-501.13 attaches the immediate-transfer requirement to microwave thawing. The other methods have their own conditions and do not involve that same transfer sequence."
+  },
+  {
+    "reviewId": "R103",
+    "correctAnswer": "B",
+    "explanation": "The Food Code requires previously cooked and cooled TCS food reheated for hot holding to reach 165\u00b0F for 15 seconds. Original cooking standards are not interchangeable."
+  },
+  {
+    "reviewId": "R104",
+    "correctAnswer": "B",
+    "explanation": "Foodservice Standard 2 follows supplements through production and delivery. The documented gap is between preparation and loading, not the already-correct order or recipe."
+  },
+  {
+    "reviewId": "R105",
+    "correctAnswer": "D",
+    "explanation": "Foodservice Standard 1 requires honoring recorded preferences when a client cannot select independently. The stated Friday choice is fish, not a general default."
+  },
+  {
+    "reviewId": "R106",
+    "correctAnswer": "A",
+    "explanation": "Divide ingredient cost by the desired food-cost fraction:2.40/0.30=$8.00. Adding 30% is a markup calculation, not this method."
+  },
+  {
+    "reviewId": "R107",
+    "correctAnswer": "B",
+    "explanation": "Foodservice Standard 1 requires adapting methods to facility conditions. Uneven shelf performance points to equipment use rather than demand or portion calculation."
+  },
+  {
+    "reviewId": "R108",
+    "correctAnswer": "B",
+    "explanation": "The exception permits a succession requiring progressively higher cooking temperatures. Fish requires 145\u00b0F, ground beef 155\u00b0F and poultry 165\u00b0F under the cited standard rules; fish to poultry increases the required temperature. This exception does not apply when changing to ready-to-eat food."
+  },
+  {
+    "reviewId": "R109",
+    "correctAnswer": "B",
+    "explanation": "The order totals 60 packs and delivery totals 54, leaving a shortage of 6. Receiving must compare equivalent units rather than confuse cases and packs."
+  },
+  {
+    "reviewId": "R110",
+    "correctAnswer": "D",
+    "explanation": "Business Standard 1 uses comparable productivity measures. Different worker inclusion changes the labor-hour denominator, so the rates are not directly comparable."
+  },
+  {
+    "reviewId": "R111",
+    "correctAnswer": "B",
+    "explanation": "Business Standard 1 monitors actual expenses against budget. Productivity, vacancies and turnover may help explain a variance but do not themselves provide the requested financial comparison."
+  },
+  {
+    "reviewId": "R112",
+    "correctAnswer": "B",
+    "explanation": "Food Code 3-501.13 permits running water at 70\u00b0F or below with its additional time and food-temperature conditions. The 41\u00b0F value governs refrigerated thawing, not the water maximum."
+  },
+  {
+    "reviewId": "R113",
+    "correctAnswer": "D",
+    "explanation": "Personnel Standard 1 requires manageable work assignments. The failures coincide with competing duties rather than a tool or knowledge deficit."
+  },
+  {
+    "reviewId": "R114",
+    "correctAnswer": "D",
+    "explanation": "Divide the additional 150 portions by 50 portions per cook-hour. Personnel Standards 1 and 3 relate resources to changing workload."
+  },
+  {
+    "reviewId": "R115",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 3 supports coordinated roles and follow-up. The CDM's assigned output is the collated intake information for evaluation, not a prescription."
+  },
+  {
+    "reviewId": "R116",
+    "correctAnswer": "D",
+    "explanation": "The five-year totals differ by $3000 in favor of replacement. Business Standard 1 compares alternatives using relevant costs rather than equipment age alone."
+  },
+  {
+    "reviewId": "R117",
+    "correctAnswer": "B",
+    "explanation": "Personnel Standard 2 requires evaluating ongoing performance. The workplace setting tests application under the conditions now in question; another demonstration repeats the earlier assessment."
+  },
+  {
+    "reviewId": "R118",
+    "correctAnswer": "A",
+    "explanation": "The Food Code allows this commercially processed packaged product to be heated to 135\u00b0F for hot holding. The 165\u00b0F rule applies to in-house cooked and cooled food."
+  },
+  {
+    "reviewId": "R119",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 2 seeks relevant participation. Route feasibility is the missing evidence; cost and cooking capacity have already been evaluated."
+  },
+  {
+    "reviewId": "R120",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 2 requires specific evidence-based feedback. The recorded failure concerns labels, while the other listed gaps were not observed."
+  },
+  {
+    "reviewId": "R121",
+    "correctAnswer": "C",
+    "explanation": "The outline requires considering suitability, availability and preference. C is both available and chosen; A is suitable but not the resident's selection."
+  },
+  {
+    "reviewId": "R122",
+    "correctAnswer": "D",
+    "explanation": "First-in, first-out rotation selects the earliest receipt when suitability and safety dates are equal. Here that is May 4."
+  },
+  {
+    "reviewId": "R123",
+    "correctAnswer": "A",
+    "explanation": "Expected cash is 100 + 460 = $560. The $550 count is $10 short; the opening float must be included in reconciliation."
+  },
+  {
+    "reviewId": "R124",
+    "correctAnswer": "D",
+    "explanation": "The additional heating is the corrective response. The initial value is monitoring evidence, while the weekly review is a verification activity."
+  },
+  {
+    "reviewId": "R125",
+    "correctAnswer": "D",
+    "explanation": "Foodservice Standard 2 requires suitable substitutions and consistent production. A changed yield affects the quantity needed for the planned portions, not the clinical prescription."
+  },
+  {
+    "reviewId": "R126",
+    "correctAnswer": "A",
+    "explanation": "Foodservice Standard 2 requires matching meal components to the individual prescription. The label does not make a B entree suitable for D."
+  },
+  {
+    "reviewId": "R127",
+    "correctAnswer": "C",
+    "explanation": "The provided table lists T for B and C. Use the approved diet compatibility rather than the number or popularity of menu choices."
+  },
+  {
+    "reviewId": "R128",
+    "correctAnswer": "D",
+    "explanation": "Food Code 2-301.15 requires the designated handwashing sink or an approved automatic facility. The other listed sinks have incompatible assigned uses."
+  },
+  {
+    "reviewId": "R129",
+    "correctAnswer": "A",
+    "explanation": "Food Code 3-501.17 requires the mixture to retain the date of its earliest-prepared ingredient. Mixing does not restart the clock."
+  },
+  {
+    "reviewId": "R130",
+    "correctAnswer": "A",
+    "explanation": "Sixty divided by 80 is 0.75, or 75%. Use the number surveyed as the denominator."
+  },
+  {
+    "reviewId": "R131",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 2 distinguishes a recent-day recall from frequency tools that describe longer-term patterns."
+  },
+  {
+    "reviewId": "R132",
+    "correctAnswer": "D",
+    "explanation": "The stated criteria concern texture and color. Soft carrots meet both; soft cauliflower meets texture but not the requested color contrast."
+  },
+  {
+    "reviewId": "R133",
+    "correctAnswer": "C",
+    "explanation": "The maximum is 7 days with preparation counted as day 1. Monday through Sunday is seven days."
+  },
+  {
+    "reviewId": "R134",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 2 uses informants relevant to the period being assessed. Current observers may describe current function but not the month-long home pattern."
+  },
+  {
+    "reviewId": "R135",
+    "correctAnswer": "A",
+    "explanation": "Sixty hours is 3600 minutes.3600/450=8 minutes per meal."
+  },
+  {
+    "reviewId": "R136",
+    "correctAnswer": "D",
+    "explanation": "The Food Code 4-hour procedure runs from removal from temperature control.9 a.m. plus 4 hours is 1 p.m."
+  },
+  {
+    "reviewId": "R137",
+    "correctAnswer": "C",
+    "explanation": "Foodservice Standard 1 uses standardized yield and portions. With portioning already checked, finished batch weight tests whether less product remained after preparation."
+  },
+  {
+    "reviewId": "R138",
+    "correctAnswer": "C",
+    "explanation": "Move five meals between categories without changing the total of 100. The revised tally is 65 regular and 35 modified."
+  },
+  {
+    "reviewId": "R139",
+    "correctAnswer": "D",
+    "explanation": "The batch contains 200 ounces. At 5 ounces each it yields 40 portions; larger portions reduce the number served."
+  },
+  {
+    "reviewId": "R140",
+    "correctAnswer": "B",
+    "explanation": "Divide absences by scheduled shifts in each group. Evening is 6/20 = 30%; morning is 2/40 = 5%, supporting targeted coverage planning."
+  },
+  {
+    "reviewId": "R141",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 1 recognizes medication-related nutrition concerns. Comparing intake across the timing change examines the stated association without claiming it proves a drug effect."
+  },
+  {
+    "reviewId": "R142",
+    "correctAnswer": "C",
+    "explanation": "Divide the required edible 18 lb by 0.75 to obtain 24 lb as purchased. Multiplication would calculate edible yield from a purchased amount."
+  },
+  {
+    "reviewId": "R143",
+    "correctAnswer": "D",
+    "explanation": "The observed intake is half of 200 mL, or 100 mL. Receiving the carton describes delivery; the unconsumed amount does not establish that it was explicitly declined."
+  },
+  {
+    "reviewId": "R144",
+    "correctAnswer": "B",
+    "explanation": "Food made from ambient-temperature ingredients must cool to 41\u00b0F within 4 hours. The 6-hour two-stage rule applies to cooked food cooling from 135\u00b0F."
+  },
+  {
+    "reviewId": "R145",
+    "correctAnswer": "D",
+    "explanation": "The rate increase is $0.30 per patient day. At 3000 patient days that adds $900, distinguishing the variance from the total supply expense."
+  },
+  {
+    "reviewId": "R146",
+    "correctAnswer": "A",
+    "explanation": "Add all reported consumed oral fluids: 600 + 250 + 200 = 1050 mL. Attribute the aide's report according to documentation procedures; solid-food amounts are not part of this calculation."
+  },
+  {
+    "reviewId": "R147",
+    "correctAnswer": "C",
+    "explanation": "The weight objective held and consumption increased. Nutrition Standard 3 evaluates the specified outcomes; these data do not show that an order changed."
+  },
+  {
+    "reviewId": "R148",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standard 2 supports targeted dietary interviews. Asking what changed explores causes; a recall describes intake but may not explain the recent difference."
+  },
+  {
+    "reviewId": "R149",
+    "correctAnswer": "A",
+    "explanation": "Coverage is complete from 10 to 11 and short one worker from 11 to noon. This is a time-specific staffing gap rather than a weekly FTE calculation."
+  },
+  {
+    "reviewId": "R150",
+    "correctAnswer": "D",
+    "explanation": "CBDM Safety Standard 3 distinguishes the required safety boundary from how it is checked, how a failure is corrected and how the system is reviewed."
+  },
+  {
+    "reviewId": "R151",
+    "correctAnswer": "A",
+    "explanation": "Personnel Standard 2 requires compliance with applicable agreements. The stated conflict is the notice interval; the case does not identify a conflict with the other provisions."
+  },
+  {
+    "reviewId": "R152",
+    "correctAnswer": "B",
+    "explanation": "Nutrition Standards 1 and 3 permit information from relevant reports and records. The note should attribute the actual informant rather than imply personal observation or a different source."
+  },
+  {
+    "reviewId": "R153",
+    "correctAnswer": "C",
+    "explanation": "The post-repair check evaluates the result of the correction. Repair is the corrective work itself; food isolation and documentation serve different functions."
+  },
+  {
+    "reviewId": "R154",
+    "correctAnswer": "D",
+    "explanation": "The snack addition and dinner reduction cancel. Monitoring the whole-day response avoids mistaking consumption of the intervention for a net nutritional gain."
+  },
+  {
+    "reviewId": "R155",
+    "correctAnswer": "C",
+    "explanation": "Personnel Standard 1 requires clear scheduling information. The communication reached the employee, but the shared record still differs from the revised assignment."
+  },
+  {
+    "reviewId": "R156",
+    "correctAnswer": "A",
+    "explanation": "The two sequential tasks take 60 minutes, so cooking must start at 10:30. Foodservice Standard 2 coordinates finishing and dispatch times."
+  },
+  {
+    "reviewId": "R157",
+    "correctAnswer": "A",
+    "explanation": "CBDM Safety Standard 3 begins with identifying hazards in ingredients, processes and handling. Later steps define controls and verification."
+  },
+  {
+    "reviewId": "R158",
+    "correctAnswer": "C",
+    "explanation": "Multiply 30 g by two-thirds to obtain 20 g. The offered nutrient amount is not the consumed amount."
+  },
+  {
+    "reviewId": "R159",
+    "correctAnswer": "B",
+    "explanation": "Divide the initial 12000 investment by annual savings of 3000 to obtain 4 years. This simple comparison is one input, not a complete capital decision."
+  },
+  {
+    "reviewId": "R160",
+    "correctAnswer": "B",
+    "explanation": "Starting Monday allows the required Monday and Tuesday sessions. Starting Tuesday would finish after the stated deadline."
+  },
+  {
+    "reviewId": "R161",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 4 distinguishes delivery from acceptance. Counting scheduled servings actually delivered tests access; consumption among delivered servings is already known."
+  },
+  {
+    "reviewId": "R162",
+    "correctAnswer": "A",
+    "explanation": "Using the supplied reporting definition, 5/25 \u00d7 100 = 20%. Personnel Standard 1 uses turnover data for staffing forecasts; headcount is not an FTE denominator."
+  },
+  {
+    "reviewId": "R163",
+    "correctAnswer": "B",
+    "explanation": "Food Code 3-401.11 specifies 165\u00b0F instantaneous for poultry. The 165\u00b0F/15-second combination applies to ordinary in-house cooked and cooled TCS food reheated for hot holding."
+  },
+  {
+    "reviewId": "R164",
+    "correctAnswer": "B",
+    "explanation": "Five years is the longest tenure among the equally qualified simultaneous applicants. This applies the supplied policy rather than asserting a universal scheduling rule."
+  },
+  {
+    "reviewId": "R165",
+    "correctAnswer": "A",
+    "explanation": "There are 51 accurate trays.51 divided by 60 is 85%; 15% is the error rate."
+  },
+  {
+    "reviewId": "R166",
+    "correctAnswer": "A",
+    "explanation": "Foodservice Standards 2 and 3 use test trays to examine conditions after assembly and delivery. The observed change is texture, not a recalculated nutrient or portion value."
+  },
+  {
+    "reviewId": "R167",
+    "correctAnswer": "C",
+    "explanation": "The CBDM outline identifies speech therapy as an interdisciplinary nutrition resource. Foodservice implements the resulting plan rather than independently diagnosing swallowing problems."
+  },
+  {
+    "reviewId": "R168",
+    "correctAnswer": "B",
+    "explanation": "The prior service used 100 portions and the next has the same stated demand with no reserve. Retained leftovers show excess production rather than additional demand."
+  },
+  {
+    "reviewId": "R169",
+    "correctAnswer": "C",
+    "explanation": "Personnel Standard 2 uses consistent criteria. Fair application means the same scoring rule, not equal scores despite different demonstrated performance."
+  },
+  {
+    "reviewId": "R170",
+    "correctAnswer": "A",
+    "explanation": "Subtract the 20 absent diners and add the 8 visitors: 120 - 20 + 8 = 108. Forecasts should reflect the stated changes in demand."
+  },
+  {
+    "reviewId": "R171",
+    "correctAnswer": "C",
+    "explanation": "The probe value is the actual monitoring result. The critical limit is the required boundary, not a substitute for that result."
+  },
+  {
+    "reviewId": "R172",
+    "correctAnswer": "B",
+    "explanation": "Food Code 3-202.11 generally requires refrigerated TCS food at 41\u00b0F or below. The other values govern different foods or processes and do not authorize this delivery."
+  },
+  {
+    "reviewId": "R173",
+    "correctAnswer": "D",
+    "explanation": "Food Code 3-202.11 requires food labeled and shipped frozen to arrive frozen and free of prior temperature abuse. The described failure is X, not a label replacement by itself."
+  },
+  {
+    "reviewId": "R174",
+    "correctAnswer": "B",
+    "explanation": "Personnel Standard 1 requires roles to reflect changed duties. Reviewing generated tallies requires interpreting their accuracy rather than reproducing the former manual task."
+  },
+  {
+    "reviewId": "R175",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 2 combines records and direct observation. Watching access to the food tests the reported functional barrier; a diet history describes habits rather than package handling."
+  },
+  {
+    "reviewId": "R176",
+    "correctAnswer": "C",
+    "explanation": "The intake is 150 + 100 + 0 = 250 kcal. Applying a single percentage to the whole tray would misrepresent the different amounts consumed."
+  },
+  {
+    "reviewId": "R177",
+    "correctAnswer": "B",
+    "explanation": "Food Code 3-202.15 requires packaging that protects the contents. The seam failure directly compromises that protection rather than establishing a count or price discrepancy."
+  },
+  {
+    "reviewId": "R178",
+    "correctAnswer": "A",
+    "explanation": "A costs 3/0.75 = $4 and B costs 3.60/0.90 = $4 per edible pound. Purchase price alone makes A appear cheaper, but its yield is lower."
+  },
+  {
+    "reviewId": "R179",
+    "correctAnswer": "D",
+    "explanation": "The first cost is 500/100 = $5; the second is 450/75 = $6. Business Standard 3 considers service outcomes as well as total spending."
+  },
+  {
+    "reviewId": "R180",
+    "correctAnswer": "D",
+    "explanation": "Three batches yield 240 portions, which is insufficient. Four yield 320; the fractional result 3.75 must be rounded up under the stated constraint."
+  },
+  {
+    "reviewId": "R181",
+    "correctAnswer": "B",
+    "explanation": "The task requires 240 worker-minutes. Four workers provide 240 minutes in one hour; staffing should be related to the workload."
+  },
+  {
+    "reviewId": "R182",
+    "correctAnswer": "C",
+    "explanation": "Foodservice Standard 2 requires schedules to consider equipment availability. The two simultaneous temperature settings cannot be supplied by the stated single oven."
+  },
+  {
+    "reviewId": "R183",
+    "correctAnswer": "D",
+    "explanation": "Foodservice Standard 2 requires specifications suited to intended use. Drained weight measures usable fruit for these portions; total fill includes liquid."
+  },
+  {
+    "reviewId": "R184",
+    "correctAnswer": "B",
+    "explanation": "Business Standard 4 includes factor pricing. Multiply 1.80 by 4 to obtain $7.20."
+  },
+  {
+    "reviewId": "R185",
+    "correctAnswer": "B",
+    "explanation": "The permission concerns the optional duplicate. Personnel Standard 3 supports simplifying work while retaining the required record identified by policy."
+  },
+  {
+    "reviewId": "R186",
+    "correctAnswer": "A",
+    "explanation": "Nutrition Standard 1 directs consultation with the RDN or NDTR and pharmacist for food-drug interactions. The CDM gathers relevant information rather than altering medicines."
+  },
+  {
+    "reviewId": "R187",
+    "correctAnswer": "A",
+    "explanation": "Under the supplied model, the volume-sensitive food component changes but the fixed lease does not. Business Standard 1 considers expected census in operating budgets."
+  },
+  {
+    "reviewId": "R188",
+    "correctAnswer": "D",
+    "explanation": "Lead-time demand is 10\u00d74 = 40 units; adding 15 safety-stock units gives 55. Business Standard 2 considers usage and lead time in inventory planning."
+  },
+  {
+    "reviewId": "R189",
+    "correctAnswer": "D",
+    "explanation": "Food Code 3-501.16 permits ordinary cold holding at 41\u00b0F or below. D exceeds that limit; the others do not."
+  },
+  {
+    "reviewId": "R190",
+    "correctAnswer": "D",
+    "explanation": "CBDM Safety Standard 3 evaluates emergency procedures against their measures. The stated missed target concerns activation time, not the supplies that met their targets."
+  },
+  {
+    "reviewId": "R191",
+    "correctAnswer": "C",
+    "explanation": "The Food Code hot-holding minimum for this food is 135\u00b0F. The 130\u00b0F exception applies to specified roasts, not ordinary soup."
+  },
+  {
+    "reviewId": "R192",
+    "correctAnswer": "C",
+    "explanation": "Business Standard 1 separates capital equipment proposals from operating costs. Under the supplied policy, the replacement meets the threshold; the other entries are repair or service expenses."
+  },
+  {
+    "reviewId": "R193",
+    "correctAnswer": "C",
+    "explanation": "The balance is 40 - 12 + 10 = 38. Business Standard 2 requires reconciling movements and physical counts, not automatically treating a change from the opening count as a loss."
+  },
+  {
+    "reviewId": "R194",
+    "correctAnswer": "B",
+    "explanation": "CBDM Business Standards 1 and 4 use cost per patient day. Divide 6300 by 900 to obtain $7.00."
+  },
+  {
+    "reviewId": "R195",
+    "correctAnswer": "D",
+    "explanation": "CBDM Safety Standard 3 classifies cleaning agents as potential chemical hazards. The source is chemical rather than a pathogen or foreign object."
+  },
+  {
+    "reviewId": "R196",
+    "correctAnswer": "C",
+    "explanation": "Personnel Standard 2 uses job-related requirements for selection. B meets both the threshold and shift availability; A meets only the assessment threshold."
+  },
+  {
+    "reviewId": "R197",
+    "correctAnswer": "C",
+    "explanation": "One-quarter of 240 mL is 60 mL. Record the consumed amount rather than the 180 mL remaining."
+  },
+  {
+    "reviewId": "R198",
+    "correctAnswer": "B",
+    "explanation": "The total is 480 ounces. Dividing by 16 ounces per pound gives 30 lb of cooked product."
+  },
+  {
+    "reviewId": "R199",
+    "correctAnswer": "B",
+    "explanation": "CBDM Safety Standard 2 requires organizing workflow to protect clean items. The available intervention changes the dirty route; the other proposals depend on changes explicitly unavailable in this case."
+  },
+  {
+    "reviewId": "R200",
+    "correctAnswer": "D",
+    "explanation": "Personnel Standard 2 recommends behavioral questions grounded in past experience. The other prompts ask about intentions, preferences or general knowledge."
+  }
+]

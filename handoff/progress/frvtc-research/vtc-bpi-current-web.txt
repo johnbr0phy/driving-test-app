@@ -1,0 +1,494 @@
+Arrêté du 26 mars 2015 relatif aux caractéristiques des véhicules utilisés par les exploitants de voitures de transport avec chauffeur - Légifrance (https://www.legifrance.gouv.fr/loda/id/JORFTEXT000030429911)
+citeturn252view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/loda/id/JORFTEXT000030429911","lineno":null}); Total lines: 192
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: # Arrêté du 26 mars 2015 relatif aux caractéristiques des véhicules utilisés par les exploitants de voitures de transport avec chauffeur
+L64: 
+L65: En vigueur au 17/11/2026 En vigueur au 17 novembre 2026
+L66: 
+L67: [Input]Masquer les articles et les sections abrogés
+L68: 
+L69: 【7†Accéder à la version initiale】 Imprimer la page[Button: Copier le texte ]
+L70: 
+L71: Dernière mise à jour des données de ce texte : 06 décembre 2023
+L72: 
+L73: NOR : DEVT1500042A
+L74: 
+L75: 【8†JORF n°0079 du 3 avril 2015】
+L76: 
+L77: ## [Button: Informations pratiques ]
+L78: 
+L79: Informations pratiques
+L80: ## ChronoLégi l'accès au droit dans le temps
+L81: 
+L82: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L83: 
+L84: [Input]
+L85: ### Les différentes versions dans le temps
+L86: 
+L87: Fermer le Chronolégi
+L88: 
+L89: À la date du JJ/MM/AAAA
+L90: 
+L91: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L92: 
+L93: Recherche dans Arrêté du 26 mars 2015 relatif aux caractéristiques des véhicules utilisés par les exploitants de voitures de transport avec chauffeur
+L94: 
+L95: [Input: Rechercher]Rechercher dans le texte consolidé
+L96: 
+L97: [Input] Réinitialiser le champ recherche
+L98: 
+L99: * * *
+L100: Le ministre de l'intérieur, le ministre de l'économie, de l'industrie et du numérique et le secrétaire d'Etat chargé des transports, de la mer et de la pêche,
+L101: Vu le 【9†code des transports】, notamment ses articles R. 3122-6 et R. 3120-11,
+L102: Arrêtent :
+L103: 
+L104: [Input]
+L105: 
+L106:   * ## 【10†Article 1】
+L107: 
+L108: En vigueur depuis le 06 déc. 2023 En vigueur depuis le 06 décembre 2023
+L109: 
+L110: 【11†Modifié par Arrêté du 16 novembre 2023 - art. 1】
+L111: En application du deuxième alinéa de l'article 【12†R. 3122-6】 susvisé, les voitures de transport avec chauffeur doivent être âgées de moins de sept ans, sauf s'il s'agit de véhicules de collection.
+L112: 
+L113: Les véhicules de transport avec chauffeur doivent être munis d'au moins quatre portes et avoir une longueur hors tout minimale de 4,50 mètres et une largeur hors tout minimale de 1,70 mètre.
+L114: 
+L115: Leur moteur doit avoir une puissance nette supérieure ou égale à 84 kilowatts.
+L116: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L117: 
+L118: [Button: Fermer ]
+L119: 
+L120:   * ## 【13†Article 2】
+L121: 
+L122: En vigueur depuis le 04 avr. 2015 En vigueur depuis le 04 avril 2015
+L123: 
+L124: Les dispositions de l'article 1er ne sont pas applicables aux catégories de véhicules hybrides et électriques mentionnées à l'article 【14†R. 3120-11】 susvisé.
+L125: 
+L126: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L127: 
+L128: [Button: Fermer ]
+L129: 
+L130:   * ## 【15†Article 3】
+L131: En vigueur depuis le 04 avr. 2015 En vigueur depuis le 04 avril 2015
+L132: 
+L133: Le présent arrêté sera publié au Journal officiel de la République française.
+L134: 
+L135: [Button: Voir les versions ][Button: Comparer les versions ]
+L136: 
+L137: [Button: Fermer ]
+L138: 
+L139: Fait le 26 mars 2015.
+L140: 
+L141: Le ministre de l'intérieur,
+L142: Pour le ministre et par délégation :
+L143: Le préfet, délégué à la sécurité et à la circulation routières,
+L144: J.-R. Lopez
+L145: Le ministre de l'économie, de l'industrie et du numérique,
+L146: Pour le ministre et par délégation :
+L147: La directrice générale de la concurrence, de la consommation, et de la répression des fraudes,
+L148: N. Homobono
+L149: 
+L150: Le secrétaire d'Etat chargé des transports, de la mer et de la pêche,
+L151: Pour le secrétaire d'Etat et par délégation :
+L152: Le directeur des services de transport,
+L153: T. Guimbaud
+L154: 
+L155: Arrêté du 26 mars 2015 relatif aux caractéristiques des véhicules utilisés par les exploitants de voitures de transport avec chauffeur
+L156: En vigueur au 17/11/2026 En vigueur au 17 novembre 2026
+L157: 
+L158: [Button: Ouvrir ][Button: Réduire ]
+L159: 
+L160: [Input]
+L161: 
+L162: [Input: JJ/MM/AAAA]
+L163: 
+L164: [Button: Version à la date d’aujourd'hui ]
+L165: 
+L166: Imprimer la page
+L167: 
+L168: Copier le texte
+L169: 
+L170: [Input]Haut
+L171: de page
+L172: ## L'aide Légifrance
+L173: 
+L174: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L175: 
+L176:   * 【16†Une question, une suggestion ou un problème sur légifrance ?】
+L177:   * 【17†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L178:   * 【18†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L179:   * 【19†Guide des cas d'usage】
+L180: ## Abonnez-vous au Journal officiel de la République française
+L181: 
+L182: Recevez par courriel le sommaire dès sa publication.
+L183: 
+L184: 【20†En savoir plus sur la gestion de vos données et de vos droits.】
+L185: 
+L186: Votre adresse électronique (ex. : 【21†[email protected]】)
+L187: 
+L188: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L189: 
+L190: [Input]
+L191: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【22†formulaire】
+--------------------------------------------------------------------------------
+VTC | réglementation de l'activité (https://bpifrance-creation.fr/activites-reglementees/voiture-transport-chauffeur-vtc)
+citeturn252view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://bpifrance-creation.fr/activites-reglementees/voiture-transport-chauffeur-vtc","lineno":null}); Total lines: 296
+L0: 【0†Image: Menu】
+L1: 
+L2:   * [Input: Rechercher]
+L3: 
+L4: [Input] [Input]
+L5: 
+L6: Rechercher
+L7: 
+L8:   *   * 【1†Je crée Mon Pass Créa】 【2†Se connecter】
+L9: 
+L10: 【3†Retour】
+L11: 
+L12: Entrepreneur
+L13: 
+L14: Créez votre Pass Créa
+L15: 
+L16: La boite à outils qui vous aide à construire votre projet de création ou de reprise d'entreprise de A à Z.
+L17: 
+L18: 【1†Je crée Mon Pass Créa】
+L19:   * 【4†Moments de vie】
+L20:   * 【5†Lexique】
+L21:   * 【6†Boîte à outils】
+L22:   * 【7†Encyclopédie】
+L23:   * 【8†Activités réglementées】
+L24:   * 【9†Actualités】
+L25:   * 【10†Annoncer une manifestation】
+L26:   * 【11†Être accompagné†monpasscrea.bpifrance-creation.fr】
+L27:   * 【12†Foire aux questions】
+L28:   * 【13†Qui sommes-nous ?】
+L29: # Voiture de transport avec chauffeur (VTC) - Réglementation
+L30: ## Définition de l'activité
+L31: 
+L32: Le chauffeur VTC exerce une activité de transport de personnes à titre onéreux. Il ne peut prendre en charge un client sur une voie ouverte à la circulation publique sans réservation préalable, ni s’arrêter, stationner ou circuler sur une telle voie en quête de clientèle.
+L33: 
+L34: Le prix de la course est librement fixé.
+L35: 
+L36: Articles 【14†L3122-1 et suivants†www.legifrance.gouv.fr】 du Code des transports
+L37: 
+L38: Article 【15†L3120-2†www.legifrance.gouv.fr】 du Code des transports
+L39: ## Nature de l'activité
+L40: 
+L41: - Artisanale si l'entreprise ne compte pas plus de 10 salariés
+L42: 
+L43: - Commerciale si l'entreprise compte plus de 10 salariés
+L44: ## Organisme compétent
+L45: 
+L46: Depuis le 1er janvier 2023 :
+L47: - 【16†Guichet unique†procedures.inpi.fr】
+L48: 
+L49: La loi pour la croissance et la transformation des entreprises, dite loi Pacte de 2019 a mis en place le guichet électronique des formalités des entreprises (guichet unique) afin de se substituer aux 6 centres des formalités jusqu'alors existants (Autoentrepreneur.urssaf.fr, urssaf.fr, infogreffe.fr, CCI, CMA, CA) dans un but de simplification des démarches.
+L50: Ainsi, le guichet unique est compétent pour toutes les entreprises domiciliées en France ou ayant une activité en France, quelles que soient la nature de leur activité (commerciale, artisanale, agricole, indépendante) ou leur forme juridique (entreprise individuelle, micro-entreprise, société, etc.).
+L51: 
+L52: 【17†En savoir plus sur le guichet unique】
+L53: ## Contexte
+L54: 
+L55: Les éléments ci-dessous sont donnés à titre d'information.
+L56: Malgré le soin apporté à leur rédaction et à leur actualisation, les informations indiquées dans cette fiche ne peuvent en aucune manière engager la responsabilité de Bpifrance création.
+L57: Pour finaliser vos démarches, rapprochez-vous des autorités compétentes.
+L58: 
+L59: Voir tout Fermer tout
+L60: 
+L61: ## Les conditions d'installation
+L62: ###
+L63: 
+L64: Qualifications professionnelles des conducteurs
+L65: 
+L66: Pour exercer, le conducteur de VTC doit :
+L67: 
+L68:   * être titulaire du permis B depuis au moins 3 ans, ou 2 ans en cas de conduite accompagnée ;
+L69:   * réussir l’examen d’accès à la profession de conducteur de VTC ;
+L70:   * être reconnu médicalement apte ;
+L71:   * remplir les conditions d’honorabilité professionnelle.
+L72: 
+L73: Depuis le 12 août 2026, l’expérience professionnelle ne permet plus d’être dispensé de l’examen.
+L74: Articles 【18†L3120-2-1†www.legifrance.gouv.fr】, 【19†R3120-6†www.legifrance.gouv.fr】,et 【20†R3120-7†www.legifrance.gouv.fr】 du Code des transports, article 【21†R321-11†www.legifrance.gouv.fr】 du Code de l’artisanat, article 【22†R221-10†www.legifrance.gouv.fr】 du Code de la route, 【23†arrêté du 11 août 2017†www.legifrance.gouv.fr】, Décret 【24†n° 2026-764†www.legifrance.gouv.fr】 du 5 août 2026
+L75: ###
+L76: 
+L77: Conditions liées aux véhicules utilisés
+L78: 
+L79: Les véhicules doivent comporter de 4 à 9 places, conducteur compris.
+L80: 
+L81: Sauf s’ils sont hybrides ou électriques, ils doivent :
+L82: 
+L83:   * avoir moins de 7 ans, sauf s’il s’agit de véhicules de collection ;
+L84:   * comporter au moins 4 portes ;
+L85:   * mesurer au moins 4,50 m de long et 1,70 m de large ;
+L86:   * disposer d’une puissance nette d’au moins 84 kW.
+L87: Chaque véhicule doit porter deux vignettes VTC : l’une à l’avant et l’autre à l’arrière. Elles sont délivrées à l’exploitant pour chaque véhicule validé sur le registre des VTC.
+L88: 
+L89: Articles 【25†L3120-5†www.legifrance.gouv.fr】 et 【26†R3122-6 à R3122-8†www.legifrance.gouv.fr】 du Code des transports et arrêtés du 【27†6 avril 2017†www.legifrance.gouv.fr】 et du 【28†26 mars 2015†www.legifrance.gouv.fr】
+L90: ###
+L91: 
+L92: Garantie financière
+L93: 
+L94: L'exploitant de VTC doit justifier d'une garantie financière de 1 500 € pour chaque véhicule utilisé de façon régulière.
+L95: 
+L96: Toutefois, cette garantie financière n'est pas nécessaire si :
+L97: 
+L98:   * il est propriétaire du véhicule,
+L99:   * il justifie d'un contrat de location d'une durée d'au moins 6 mois,
+L100:   * le véhicule a déjà donné lieu à une justification de capacité financière.
+L101: 【29†Article R3122-9 du code des transports †www.legifrance.gouv.fr】et 【30†arrêté du 28 janvier 2015†www.legifrance.gouv.fr】
+L102: ###
+L103: 
+L104: Obligation d'assurance
+L105: 
+L106: Le professionnel doit pouvoir justifier de l'existence :
+L107: 
+L108:   * d'un contrat d'assurance couvrant sa responsabilité civile professionnelle,
+L109:   * d'une assurance automobile couvrant le véhicule utilisé pour le transport de personnes à titre onéreux.
+L110: 
+L111: Articles 【31†L3120-4†www.legifrance.gouv.fr】 et 【32†R3120-4†www.legifrance.gouv.fr】 du Code des transports
+L112: ###
+L113: 
+L114: Aptitude physique des conducteurs
+L115: 
+L116: Le candidat à la profession de conducteur de VTC doit justifier de son aptitude physique au moyen d'un contrôle médical réalisé par un médecin agréé par la préfecture.
+L117: 
+L118: Cet examen permet de vérifier que son état de santé est compatible avec la conduite professionnelle de personnes. Il porte notamment sur les aptitudes physiques ainsi que sur les capacités cognitives et sensorielles nécessaires à la conduite.
+L119: La liste des médecins agréés est disponible auprès de la préfecture.
+L120: 
+L121: À l'issue de l'examen, un avis médical est établi.
+L122: 
+L123: Article 【33†D3120-5†www.legifrance.gouv.fr】 du Code des transports, articles 【34†R221-10, R221-11†www.legifrance.gouv.fr】 et 【35†R226-2†www.legifrance.gouv.fr】 du Code de la route.
+L124: 
+L125: Pour en savoir plus sur le 【36†contrôle médical obligatoire.†www.service-public.gouv.fr】
+L126: ###
+L127: 
+L128: Condition générale d'honorabilité
+L129: 
+L130: Pour exercer cette activité, et pour pouvoir être immatriculé au registre national des entreprises (RNE), il ne faut pas avoir fait l'objet d'une interdiction de diriger, de gérer, d'administrer ou de contrôler directement ou indirectement une entreprise ou avoir été condamné à la peine complémentaire interdisant l'exercice d'une activité professionnelle ou sociale prévue au 11° de 【37†l’article 131-6 du Code pénal.†www.legifrance.gouv.fr】
+L131: Cela peut être contrôlé par les personnels des chambres de métiers et de l’artisanat désignés et habilités par le président de la chambre concernée. Afin de savoir si les professionnels sont sous le coup d’une interdiction, ces personnels peuvent demander que leur soient communiquées des informations et des données à caractère personnel enregistrées dans le fichier national automatisé des interdits de gérer.
+L132: 
+L133: 【38†Article L123-44 du Code de commerce†www.legifrance.gouv.fr】
+L134: ###
+L135: 
+L136: Condition d'honorabilité des conducteurs
+L137: 
+L138: Nul ne peut exercer cette profession si figure au bulletin n° 2 de son casier judiciaire, ou à son équivalent pour les non-nationaux, soit :
+L139:   * une condamnation définitive pour un délit sanctionné par une réduction de la moitié du nombre maximal de points du permis de conduire,
+L140:   * une condamnation définitive pour conduite d'un véhicule sans être titulaire du permis de conduire correspondant à la catégorie du véhicule utilisé ou pour conduite malgré l'annulation du permis de conduire ou malgré l'interdiction d'obtenir la délivrance du permis, ou encore pour refus de restituer son permis de conduire après l'invalidation ou l'annulation de celui-ci,
+L141:   * une condamnation définitive prononcée par une juridiction française ou étrangère, à une peine criminelle ou à une peine correctionnelle d'au moins 6 mois d'emprisonnement pour vol, escroquerie, abus de confiance, atteinte volontaire à l'intégrité de la personne, agression sexuelle, trafic d'armes, extorsion de fonds ou infraction à la législation sur les stupéfiants.
+L142: Articles 【18†L3120-2-1†www.legifrance.gouv.fr】 et 【39†R3120-8 du Code des transports†www.legifrance.gouv.fr】
+L143: ###
+L144: 
+L145: Stage de préparation à l'installation
+L146: 
+L147: Les personnes qui sollicitent leur immatriculation au registre national des entreprises n'ont plus l'obligation de suivre un stage de préparation à l'installation (SPI).
+L148: 
+L149: 【40†Pour en savoir plus sur le SPI】
+L150: 
+L151: ## Les démarches étapes par étapes
+L152: ###
+L153: 
+L154: Demander la délivrance de la carte professionnelle de conducteur
+L155: 
+L156: Pour exercer l'activité de conducteur de VTC, il est obligatoire d'être titulaire d'une carte professionnelle.
+L157: 
+L158: La 【41†demande†demarche.numerique.gouv.fr】 doit être adressée à la préfecture du département de domicile, accompagnée des justificatifs requis, notamment :
+L159:   * une pièce d'identité ;
+L160:   * un permis de conduire de catégorie B en cours de validité ;
+L161:   * un justificatif de domicile ;
+L162:   * un avis médical d'aptitude établi par un médecin agréé ;
+L163:   * une copie de l'attestation d'admission à l'examen VTC (théorique et pratique) ;
+L164:   * une photographie d'identité.
+L165: 
+L166: Il est recommandé de consulter le site internet de sa préfecture afin de connaître les modalités de dépôt de la demande et la liste actualisée des pièces à fournir.
+L167: La carte professionnelle est délivrée dans un délai maximal de trois mois à compter de la réception d'un dossier complet. Elle est valable cinq ans.
+L168: 
+L169: À noter :
+L170: 
+L171:   * lorsque le conducteur exerce son activité, la carte professionnelle doit être apposée dans le véhicule de manière à être visible de l'extérieur ;
+L172:   * en cas de cessation définitive d'activité, la carte professionnelle doit être restituée à l'administration.
+L173: Articles 【42†L3120-2-2,†www.legifrance.gouv.fr】 【43†R3120-6†www.legifrance.gouv.fr】 et 【44†R3122-10†www.legifrance.gouv.fr】 du Code des transports, 【45†arrêté du 7 septembre 2017†www.legifrance.gouv.fr】
+L174: ###
+L175: 
+L176: Demander l'inscription au registre des exploitants de VTC
+L177: 
+L178: Avant de pouvoir exercer son activité, l'exploitant doit être inscrit au registre des exploitants de VTC.
+L179: 
+L180: La demande d'inscription s'effectue 【46†en ligne†entreprendre.service-public.gouv.fr】 et doit être accompagnée des justificatifs requis, notamment :
+L181:   * un justificatif d'immatriculation de l'entreprise ;
+L182:   * une attestation d'assurance ;
+L183:   * les documents relatifs aux véhicules utilisés ;
+L184:   * les justificatifs permettant d'établir le respect des conditions réglementaires d'exploitation.
+L185: 
+L186: L'inscription est soumise au paiement de frais administratifs et doit être renouvelée tous les cinq ans.
+L187: Articles 【47†L3122-3†www.legifrance.gouv.fr】, 【48†R3122-1†www.legifrance.gouv.fr】 et 【49†R3122-2†www.legifrance.gouv.fr】 du Code des transports et 【50†arrêté du 30 décembre 2014 †www.legifrance.gouv.fr】
+L188: ###
+L189: 
+L190: Procéder aux formalités de déclaration de l'entreprise
+L191: 
+L192: Cette formalité a pour objet de donner une existence légale à l'entreprise (entreprise individuelle ou société).
+L193: 
+L194: Depuis le 1er janvier 2023 : elle doit être réalisée auprès du 【16†guichet unique électronique de l’Inpi†procedures.inpi.fr】.
+L195: 
+L196: 【17†Pour en savoir plus sur le guichet unique】
+L197: ###
+L198: 
+L199: Le cas échéant, enregistrer les statuts de la société
+L200: 
+L201: L'enregistrement obligatoire des actes de création de société a été supprimé en 2015.
+L202: 
+L203: Toutefois, les statuts de la société, une fois datés et signés, doivent être enregistrés auprès du service des impôts des entreprises (SIE) :
+L204: - soit en raison de la qualité de leur rédacteur (un notaire par exemple),
+L205: 
+L206: - soit en raison des dispositions qu’ils contiennent (apport d'immeuble par exemple).
+L207: 
+L208: 【51†Pour en savoir plus】
+L209: ## Quelques aspects de la réglementation de l'activité
+L210: 
+L211:   * Obligation de formation continue des chauffeurs
+L212: 
+L213: Chaque chauffeur de VTC doit suivre tous les 5 ans un stage de formation continue, de 14 h, dispensé par un centre de formation agréé, et sanctionné par la délivrance d'une attestation.
+L214: 
+L215: 【52†Article R3120-8-2 du Code des transports†www.legifrance.gouv.fr】 et 【53†arrêté du 3 octobre 2018†www.legifrance.gouv.fr】
+L216: 
+L217: 
+L218: 
+L219:   * Libre prix de la prestation
+L220: Le prix total d'une course peut être forfaitaire et fixé dès la commande, ou calculé sur la base de la durée du trajet et de la distance parcourue, après la réalisation de la prestation.
+L221: 
+L222: 【54†Décision du Conseil Constitutionnel du 22 mai 2015 n°2015-468/469/472†legifrance.gouv.fr】
+L223: 
+L224: À noter : les chauffeurs travaillant via une plateforme de mise en relation sont soumis à des règles particulières encadrant les relations avec celle-ci.
+L225:   * Interdiction d'utiliser certains appareils, dispositifs ou produits qui pourraient être de nature à créer une confusion avec les taxis
+L226: 
+L227: 【55†Article R3122-7 du Code des transports†www.legifrance.gouv.fr】
+L228: 
+L229: 
+L230: 
+L231:   * Interdiction de la maraude électronique
+L232: 
+L233: Les VTC ne peuvent pas signaler simultanément leur géolocalisation et leur disponibilité immédiate sur la voie publique en vue de prendre en charge des clients sans réservation préalable.
+L234: 
+L235: 【56†Article L3120-2 du Code des transports†legifrance.gouv.fr】
+L236:   * Obligation de réservation préalable
+L237: 
+L238: Les VTC ne peuvent prendre en charge que des clients ayant effectué une réservation préalable. Ils ne sont pas autorisés à rechercher des clients sur la voie publique. Ils ne peuvent pas non plus stationner aux abords des gares et des aéroports, ou dans leur enceinte, plus d'une heure avant la prise en charge d'un client ayant réservé.
+L239: À l'issue d'une course, le conducteur doit quitter les lieux de dépose, sauf s'il justifie d'une autre réservation ou d'un contrat avec un client.
+L240: 
+L241: 【57†Articles L3122-9†www.legifrance.gouv.fr】, 【58†L3120-2†www.legifrance.gouv.fr】 et 【59†D3120-3†legifrance.gouv.fr】 du Code des transports
+L242: 
+L243: 
+L244: 
+L245:   * Label qualité
+L246: 
+L247: Les exploitants de VTC peuvent obtenir, sous certaines conditions, une labellisation valorisant la qualité de leurs prestations.
+L248: Depuis le 1er mai 2024, le label « Destination d'excellence » remplace progressivement le label « Qualité Tourisme », dont la disparition est prévue au 31 décembre 2026.
+L249: 
+L250: Pour être éligible, l'exploitant doit notamment respecter la réglementation applicable aux VTC et être inscrit au registre des exploitants de VTC.
+L251: 
+L252: Article 【60†L3122-4-1†www.legifrance.gouv.fr】 du Code des transports, 【61†arrêté du 11 janvier 2019†www.legifrance.gouv.fr】, 【62†arrêté du 18 avril 2024†www.legifrance.gouv.fr】
+L253: Pour en savoir plus sur le 【63†label qualité†www.atout-france.fr】
+L254: ## Textes de référence
+L255: 
+L256:   * 【64†Articles L3120-1 à L3120-7†www.legifrance.gouv.fr】 du Code des transports
+L257:   * 【14†Articles L3122-1 à L3122-9†www.legifrance.gouv.fr】 du Code des transports
+L258:   * 【65†Articles R3120-1 à R3120-10†www.legifrance.gouv.fr】 du Code des transports
+L259:   * 【66†Articles R3122-1 à R3122-12†www.legifrance.gouv.fr】 du Code des transports
+L260: 
+L261: 
+L262: ## Autres activités réglementées autour de ce métier
+L263: 
+L264: 【67†Transport de personnes en 2 ou 3 roues (Moto taxi)】
+L265: 
+L266: 【68†Taxi】
+L267: 
+L268: ## Questions/Réponses
+L269: # Quel est l’âge minimum requis pour exercer l’activité de chauffeur VTC ?
+L270: 
+L271: Pour devenir chauffeur VTC, il faut avoir le permis de conduire depuis 3 ans minimum (ou 2 ans dans l’hypothèse où le chauffeur a suivi la conduite accompagnée).
+L272: # Quel est le prix de la carte VTC ?
+L273: 
+L274: La carte professionnelle VTC est effectivement payante et coûte environ 60 €.
+L275: 
+L276: Code APE
+L277: 
+L278: 49.32Z
+L279: 
+L280: Transports de voyageurs par taxis
+L281: 
+L282: Dossiers projecteurs
+L283: 
+L284: 【69†Image: Dossier Projecteurs Chauffeur VTC】
+L285: 
+L286: Dossier Projecteurs - Chauffeur de VTC
+L287: 
+L288: 【70†Consulter ce dossier】
+L289: 
+L290: Préconisations
+L291: Les éléments ci-dessous sont donnés à titre d'information. Malgré le soin apporté à leur rédaction et à leur actualisation, les informations indiquées sur cette fiche ne peuvent en aucune manière engager la responsabilité de Bpifrance. Pour finaliser vos démarches, rapprochez-vous des autorités compétentes.
+L292: 
+L293: Dernière mise à jour : 16/11/2026
+L294: 
+L295: 【11†Être accompagné(e)†monpasscrea.bpifrance-creation.fr】 【71†Trouver un financement】
+

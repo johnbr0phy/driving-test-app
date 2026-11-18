@@ -1,0 +1,86 @@
+{
+  "changedIds": [
+    "EPA609-SRV-026",
+    "EPA609-REG-015",
+    "EPA609-SRV-029"
+  ],
+  "otherElevenUnchanged": true,
+  "fullPilot": {
+    "n": 14,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "families": {},
+    "echo_fire": 6,
+    "echo_hit": 1,
+    "echo_gain": -1.7857142857142863,
+    "anti_echo_gain": 0.5952380952380955,
+    "echoed": [
+      "EPA609-SRV-031"
+    ]
+  },
+  "categories": {
+    "epa609Equipment": {
+      "n": 4,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 0,
+      "echo_hit": 0,
+      "echo_gain": 0.0,
+      "anti_echo_gain": 0.0,
+      "echoed": []
+    },
+    "epa609Rules": {
+      "n": 4,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 2,
+      "echo_hit": 0,
+      "echo_gain": -6.25,
+      "anti_echo_gain": 2.083333333333333,
+      "echoed": []
+    },
+    "epa609Service": {
+      "n": 4,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 3,
+      "echo_hit": 1,
+      "echo_gain": 3.125,
+      "anti_echo_gain": -1.0416666666666672,
+      "echoed": [
+        "EPA609-SRV-031"
+      ]
+    },
+    "epa609Yf": {
+      "n": 2,
+      "shared": 0,
+      "shared_pct": 0.0,
+      "families": {},
+      "echo_fire": 1,
+      "echo_hit": 0,
+      "echo_gain": -6.25,
+      "anti_echo_gain": 2.083333333333333,
+      "echoed": []
+    }
+  },
+  "stemWordCounts": {
+    "EPA609-SRV-031": 13,
+    "EPA609-SRV-022": 10,
+    "EPA609-EQP-013": 13,
+    "EPA609-EQP-011": 14,
+    "EPA609-REG-026": 15,
+    "EPA609-EQP-022": 17,
+    "EPA609-SRV-026": 17,
+    "EPA609-REG-004": 12,
+    "EPA609-EQP-024": 19,
+    "EPA609-REG-015": 17,
+    "EPA609-YF-006": 16,
+    "EPA609-YF-014": 14,
+    "EPA609-SRV-029": 17,
+    "EPA609-REG-028": 14
+  },
+  "pilotSha256": "b4fdc86db179e57f707bb32aedef7bd2bbfcaf25e00df85160e759629cbc91bb"
+}

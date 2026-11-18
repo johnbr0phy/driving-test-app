@@ -1,0 +1,322 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "epa609Service",
+    "optionA": "Oil vapor returning from the vacuum pump",
+    "optionB": "Gauge calibration for a higher elevation",
+    "optionC": "Restricted flow through service valve cores",
+    "optionD": "Moisture boiling near the evaporator"
+  },
+  {
+    "reviewId": "R002",
+    "category": "epa609Yf",
+    "optionA": "90 g",
+    "optionB": "120 g",
+    "optionC": "510 g",
+    "optionD": "60 g"
+  },
+  {
+    "reviewId": "R003",
+    "category": "epa609Service",
+    "optionA": "Workshop table: C101 original assembly",
+    "optionB": "VIN label: C101 original assembly",
+    "optionC": "Installation sheet: C205 revision B",
+    "optionD": "Service bulletin: C205 revision A"
+  },
+  {
+    "reviewId": "R004",
+    "category": "epa609Yf",
+    "optionA": "At the cabin recirculation inlet",
+    "optionB": "At the center of a floor-duct outlet",
+    "optionC": "At the outside-air intake beneath the windshield",
+    "optionD": "At the center of a dashboard face vent"
+  },
+  {
+    "reviewId": "R005",
+    "category": "epa609Yf",
+    "optionA": "High-side pressure has decreased",
+    "optionB": "Condenser fan finishes its shutdown cycle",
+    "optionC": "Low-side pressure begins rising toward equalization",
+    "optionD": "Elapsed waiting time reaches three minutes"
+  },
+  {
+    "reviewId": "R006",
+    "category": "epa609Yf",
+    "optionA": "Completion of the refrigerant drain service routine",
+    "optionB": "Voltage measurement across the auxiliary battery",
+    "optionC": "Voltage measurements at the isolation test points",
+    "optionD": "Current measurement around a high-voltage cable"
+  },
+  {
+    "reviewId": "R007",
+    "category": "epa609Service",
+    "optionA": "By removing oil through the service hoses",
+    "optionB": "By collecting oil in a blocked condenser passage",
+    "optionC": "By reducing refrigerant transport of separated oil",
+    "optionD": "By diluting the remaining oil"
+  },
+  {
+    "reviewId": "R008",
+    "category": "epa609Yf",
+    "optionA": "Circulating oil for checking compressor performance",
+    "optionB": "Positive system pressure for checking evaporator leakage",
+    "optionC": "Operating charge for measuring cabin cooling",
+    "optionD": "Refrigerant quantity for calculating total capacity"
+  },
+  {
+    "reviewId": "R009",
+    "category": "epa609Yf",
+    "optionA": "On the invoice identifying the part",
+    "optionB": "Permanently on the evaporator itself",
+    "optionC": "In the supplier\u2019s application catalog",
+    "optionD": "On the carton carrying the evaporator"
+  },
+  {
+    "reviewId": "R010",
+    "category": "epa609Service",
+    "optionA": "25 inHg",
+    "optionB": "1 inHg",
+    "optionC": "26 inHg",
+    "optionD": "24 inHg"
+  },
+  {
+    "reviewId": "R011",
+    "category": "epa609Equipment",
+    "optionA": "Passing the internal pressure leak check",
+    "optionB": "Clearing refrigerant from the existing filter",
+    "optionC": "Completing vacuum pump oil warming",
+    "optionD": "Reaching the filter capacity limit"
+  },
+  {
+    "reviewId": "R012",
+    "category": "epa609Equipment",
+    "optionA": "Crimp dies close evenly around the ferrule",
+    "optionB": "Hose reaches the ferrule inspection opening",
+    "optionC": "Fitting resists being pulled out by hand",
+    "optionD": "Hose and fitting have matching nominal sizes"
+  },
+  {
+    "reviewId": "R013",
+    "category": "epa609Yf",
+    "optionA": "Injecting replacement compressor lubricant",
+    "optionB": "Beginning recovery of the test charge",
+    "optionC": "Delivering the remainder of the programmed charge",
+    "optionD": "Repeating the initial 15% charging step"
+  },
+  {
+    "reviewId": "R014",
+    "category": "epa609Rules",
+    "optionA": "Salvage facility that extracted it from the donor",
+    "optionB": "Reclamation facility receiving it for purification",
+    "optionC": "Facility charging it into the receiving vehicle",
+    "optionD": "Independent MVAC recycler hired by the seller"
+  },
+  {
+    "reviewId": "R015",
+    "category": "epa609Service",
+    "optionA": "Reflector focusing distance",
+    "optionB": "Beam width",
+    "optionC": "Visible-light brightness",
+    "optionD": "Emission wavelength"
+  },
+  {
+    "reviewId": "R016",
+    "category": "epa609Equipment",
+    "optionA": "12 AWG",
+    "optionB": "14 AWG",
+    "optionC": "16 AWG",
+    "optionD": "18 AWG"
+  },
+  {
+    "reviewId": "R017",
+    "category": "epa609Service",
+    "optionA": "Replace the system desiccant",
+    "optionB": "Change the vacuum pump oil",
+    "optionC": "Extend the evacuation period",
+    "optionD": "Recycle the recovered refrigerant"
+  },
+  {
+    "reviewId": "R018",
+    "category": "epa609Equipment",
+    "optionA": "Permanent fitting at vehicle end",
+    "optionB": "Interchangeable fitting at vehicle end",
+    "optionC": "Interchangeable fittings at both ends",
+    "optionD": "Permanent fitting only at gauge end"
+  },
+  {
+    "reviewId": "R019",
+    "category": "epa609Service",
+    "optionA": "Oil at the upper edge of the glass",
+    "optionB": "Oil just visible at the bottom",
+    "optionC": "Oil at the center of the glass",
+    "optionD": "Oil filling the entire visible glass"
+  },
+  {
+    "reviewId": "R020",
+    "category": "epa609Equipment",
+    "optionA": "Dry nitrogen",
+    "optionB": "Pure HFC-134a vapor",
+    "optionC": "Compressed air",
+    "optionD": "Pure HFC-134a liquid"
+  },
+  {
+    "reviewId": "R021",
+    "category": "epa609Service",
+    "optionA": "Dye needs ultraviolet exposure inside the circuit",
+    "optionB": "Dye must reach the opening with circulating lubricant",
+    "optionC": "Dye becomes visible after the leaked vapor condenses",
+    "optionD": "Dye detection requires a rising static pressure"
+  },
+  {
+    "reviewId": "R022",
+    "category": "epa609Rules",
+    "optionA": "To reduce moisture left during evacuation",
+    "optionB": "To reduce refrigerant passage through hose walls",
+    "optionC": "To seal the changed service-port connections",
+    "optionD": "To withstand a higher required burst pressure"
+  },
+  {
+    "reviewId": "R023",
+    "category": "epa609Yf",
+    "optionA": "Refrigerant charge mass",
+    "optionB": "Rated cooling capacity",
+    "optionC": "Electric versus mechanical drive",
+    "optionD": "Displacement per revolution"
+  },
+  {
+    "reviewId": "R024",
+    "category": "epa609Service",
+    "optionA": "Removal of solvent during evacuation",
+    "optionB": "Removal of debris from condenser passages",
+    "optionC": "Suitability for an OEM flushing procedure",
+    "optionD": "Compatibility with A/C system materials"
+  },
+  {
+    "reviewId": "R025",
+    "category": "epa609Equipment",
+    "optionA": "Heat released as vapor condenses",
+    "optionB": "Heat released as the vapor cools",
+    "optionC": "Heat absorbed as the liquid vaporizes",
+    "optionD": "Heat absorbed as the liquid warms"
+  },
+  {
+    "reviewId": "R026",
+    "category": "epa609Equipment",
+    "optionA": "Rae contracts recycling work to Lee",
+    "optionB": "Lee buys Rae\u2019s recovery machine",
+    "optionC": "Rae leases Lee\u2019s recycling machine",
+    "optionD": "Rae buys Lee\u2019s recycling machine"
+  },
+  {
+    "reviewId": "R027",
+    "category": "epa609Rules",
+    "optionA": "May 10, 2029",
+    "optionB": "May 10, 2028",
+    "optionC": "December 31, 2028",
+    "optionD": "May 10, 2031"
+  },
+  {
+    "reviewId": "R028",
+    "category": "epa609Equipment",
+    "optionA": "DOT-4BA",
+    "optionB": "DOT-4BW",
+    "optionC": "DOT-39",
+    "optionD": "ASME pressure vessel"
+  },
+  {
+    "reviewId": "R029",
+    "category": "epa609Rules",
+    "optionA": "Business opening passenger-car systems for repair",
+    "optionB": "Business limited to passenger-car refrigerant top-offs",
+    "optionC": "Business opening off-road cab systems for repair",
+    "optionD": "Business limited to off-road cab refrigerant top-offs"
+  },
+  {
+    "reviewId": "R030",
+    "category": "epa609Service",
+    "optionA": "Oxidation on exposed condenser fins",
+    "optionB": "Surface frost along the suction line",
+    "optionC": "Oily residue at a line connection",
+    "optionD": "Clear water beneath the evaporator drain"
+  },
+  {
+    "reviewId": "R031",
+    "category": "epa609Rules",
+    "optionA": "Certified technician operating the machine",
+    "optionB": "Inspector calibrating the machine",
+    "optionC": "Responsible officer of the business",
+    "optionD": "Trainer employed by the equipment supplier"
+  },
+  {
+    "reviewId": "R032",
+    "category": "epa609Rules",
+    "optionA": "Section 608 Type III",
+    "optionB": "Section 608 Type II",
+    "optionC": "Section 609 only",
+    "optionD": "Section 608 Type I"
+  },
+  {
+    "reviewId": "R033",
+    "category": "epa609Rules",
+    "optionA": "Refrigerant type and recovery date",
+    "optionB": "Shipping technician certification number",
+    "optionC": "Recovered quantity by vehicle VIN",
+    "optionD": "Receiving facility name and address"
+  },
+  {
+    "reviewId": "R034",
+    "category": "epa609Rules",
+    "optionA": "Have the shop owner demonstrate for the technician",
+    "optionB": "Repeat practical training with the course provider",
+    "optionC": "Retake the certification test through its issuer",
+    "optionD": "Operate recovery equipment at the business premises"
+  },
+  {
+    "reviewId": "R035",
+    "category": "epa609Equipment",
+    "optionA": "Compressor oil from the recovery reservoir",
+    "optionB": "Refrigerant from the machine\u2019s storage vessel",
+    "optionC": "Ambient air from around the connection",
+    "optionD": "Moisture released by the vehicle\u2019s desiccant"
+  },
+  {
+    "reviewId": "R036",
+    "category": "epa609Rules",
+    "optionA": "Evidence of current technician certification",
+    "optionB": "Certificate of attendance at refrigerant training",
+    "optionC": "Employer sign-off on supervised shop practice",
+    "optionD": "Receipt for a scheduled certification examination"
+  },
+  {
+    "reviewId": "R037",
+    "category": "epa609Equipment",
+    "optionA": "20 mL",
+    "optionB": "8 mL",
+    "optionC": "28 mL",
+    "optionD": "12 mL"
+  },
+  {
+    "reviewId": "R038",
+    "category": "epa609Rules",
+    "optionA": "Beside the cylinders in employee-only storage",
+    "optionB": "On invoices supplied with completed purchases",
+    "optionC": "Inside the file holding purchaser credentials",
+    "optionD": "Prominently in the area where sales occur"
+  },
+  {
+    "reviewId": "R039",
+    "category": "epa609Yf",
+    "optionA": "Vapor pressure increases with temperature",
+    "optionB": "Liquid evaporates readily after release",
+    "optionC": "Vapor is denser than surrounding air",
+    "optionD": "Vapor can ignite within a concentration range"
+  },
+  {
+    "reviewId": "R040",
+    "category": "epa609Yf",
+    "optionA": "1.5 ounces per year",
+    "optionB": "0.5 ounce per year",
+    "optionC": "0.15 ounce per year",
+    "optionD": "5 ounces per year"
+  }
+]

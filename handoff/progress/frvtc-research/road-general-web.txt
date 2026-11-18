@@ -1,0 +1,3 @@
+Internal Error ()
+citeturn238view0 [wordlim: 200] Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121/2026-11-17","lineno":null}); 
+URL https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006177121/2026-11-17 is not accessible via this tool.

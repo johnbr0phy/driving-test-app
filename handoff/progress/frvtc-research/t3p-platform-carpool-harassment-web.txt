@@ -1,0 +1,457 @@
+Article 222-33 - Code pénal - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724663/2026-09-19)
+citeturn276view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054724663/2026-09-19","lineno":100}); Total lines: 204
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code pénal
+L66: 
+L67: En vigueur au 19/09/2026 En vigueur au 19 septembre 2026
+L68: 
+L69: Imprimer la page[Button: Copier le texte ]
+L70: 
+L71: ## ChronoLégi l'accès au droit dans le temps
+L72: 
+L73: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L74: 
+L75: [Input]
+L76: ### Les différentes versions dans le temps
+L77: 
+L78: Fermer le Chronolégi
+L79: 
+L80: À la date du JJ/MM/AAAA
+L81: 
+L82: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L83: 
+L84: Rechercher dans cette section ou dans tout le code
+L85: 
+L86: [Input]Rechercher dans cet article
+L87: 
+L88: [Input]Rechercher dans tout le code
+L89: 
+L90: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L91: 
+L92: [Input] Réinitialiser le champ recherche
+L93: 
+L94: * * *
+L95: 
+L96: Voir le sommaire du code
+L97: 
+L98: [Button: Fermer]
+L99: 
+L100:   * ## 【7†Partie législative (Articles 111-1 à 727-3)】
+L101: Déplier/Replier
+L102:     * ### 【8†Livre II : Des crimes et délits contre les personnes (Articles 211-1 à 228-1)】
+L103: 
+L104: Déplier/Replier
+L105:       * #### 【9†Titre II : Des atteintes à la personne humaine (Articles 221-1 à 228-1)】
+L106: 
+L107: Déplier/Replier
+L108:         * ##### 【10†Chapitre II : Des atteintes à l'intégrité physique ou psychique de la personne (Articles 222-1 à 222-67-1)】
+L109: 
+L110: Déplier/Replier
+L111:           * ###### 【11†Section 3 : Du viol, de l'inceste et des autres agressions sexuelles (Articles 222-22 à 222-33-1)】
+L112: Déplier/Replier
+L113: 
+L114:             * 【12†Article 222-22】
+L115:             * 【13†Article 222-22-1】
+L116:             * 【14†Article 222-22-2】
+L117:             * 【15†Article 222-22-3】
+L118:             * ###### 【16†Paragraphe 4 : De l'exhibition sexuelle et du harcèlement sexuel (Articles 222-32 à 222-33)】
+L119: 
+L120: Déplier/Replier
+L121: 
+L122:               * 【17†Article 222-32】
+L123:               * ABROGÉ 【18†Article 222-33】
+L124:               * 【19†Article 222-33】
+L125: 
+L126: [Input]
+L127: ## Article 222-33
+L128: 
+L129: En vigueur depuis le 20 août 2026 En vigueur depuis le 20 août 2026
+L130: 
+L131: 【20†Modifié par LOI n°2026-798 du 18 août 2026 - art. 16】
+L132: 
+L133: I. - Le harcèlement sexuel est le fait d'imposer à une personne, de façon répétée, des propos ou comportements à connotation sexuelle ou sexiste qui soit portent atteinte à sa dignité en raison de leur caractère dégradant ou humiliant, soit créent à son encontre une situation intimidante, hostile ou offensante.
+L134: L'infraction est également constituée :
+L135: 1° Lorsque ces propos ou comportements sont imposés à une même victime par plusieurs personnes, de manière concertée ou à l'instigation de l'une d'elles, alors même que chacune de ces personnes n'a pas agi de façon répétée ;
+L136: 2° Lorsque ces propos ou comportements sont imposés à une même victime, successivement, par plusieurs personnes qui, même en l'absence de concertation, savent que ces propos ou comportements caractérisent une répétition.
+L137: II. - Est assimilé au harcèlement sexuel le fait, même non répété, d'user de toute forme de pression grave dans le but réel ou apparent d'obtenir un acte de nature sexuelle, que celui-ci soit recherché au profit de l'auteur des faits ou au profit d'un tiers.
+L138: 
+L139: III. - Les faits mentionnés aux I et II sont punis de deux ans d'emprisonnement et de 30 000 € d'amende.
+L140: 
+L141: Ces peines sont portées à trois ans d'emprisonnement et 45 000 € d'amende lorsque les faits sont commis :
+L142: 1° Par une personne qui abuse de l'autorité que lui confèrent ses fonctions ;
+L143: 
+L144: 2° Sur un mineur de quinze ans ;
+L145: 
+L146: 3° Sur une personne dont la particulière vulnérabilité, due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse, est apparente ou connue de leur auteur ;
+L147: 
+L148: 4° Sur une personne dont la particulière vulnérabilité ou dépendance résultant de la précarité de sa situation économique ou sociale est apparente ou connue de leur auteur ;
+L149: 5° Par plusieurs personnes agissant en qualité d'auteur ou de complice ;
+L150: 
+L151: 6° Par l'utilisation d'un service de communication au public en ligne ou par le biais d'un support numérique ou électronique ;
+L152: 
+L153: 7° Alors qu'un mineur était présent et y a assisté ;
+L154: 
+L155: 8° Par un ascendant ou par toute autre personne ayant sur la victime une autorité de droit ou de fait ;
+L156: 
+L157: 9° Dans un moyen de transport collectif de voyageurs ou dans un lieu destiné à l'accès à un moyen de transport collectif de voyageurs.
+L158: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L159: 
+L160: [Button: Fermer ]
+L161: 
+L162: Code pénal
+L163: 
+L164: En vigueur au 19/09/2026 En vigueur au 19 septembre 2026
+L165: 
+L166: [Button: Ouvrir ][Button: Réduire ]
+L167: 
+L168: Paragraphe 4 : De l'exhibition sexuelle et du harcèlement sexuel
+L169: 
+L170: [Input]
+L171: 
+L172: [Input: JJ/MM/AAAA]
+L173: 
+L174: [Button: Version à la date d’aujourd'hui ]
+L175: 
+L176: Imprimer la page
+L177: 
+L178: Copier le texte
+L179: 
+L180: [Button: Naviguer dans les résultats ]
+L181: 
+L182: [Input]Haut
+L183: de page
+L184: ## L'aide Légifrance
+L185: 
+L186: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L187: 
+L188:   * 【21†Une question, une suggestion ou un problème sur légifrance ?】
+L189:   * 【22†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L190:   * 【23†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L191:   * 【24†Guide des cas d'usage】
+L192: ## Abonnez-vous au Journal officiel de la République française
+L193: 
+L194: Recevez par courriel le sommaire dès sa publication.
+L195: 
+L196: 【25†En savoir plus sur la gestion de vos données et de vos droits.】
+L197: 
+L198: Votre adresse électronique (ex. : 【26†[email protected]】)
+L199: 
+L200: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L201: 
+L202: [Input]
+L203: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【27†formulaire】
+--------------------------------------------------------------------------------
+Article L1326-2 - Code des transports - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045525868/2026-08-05)
+citeturn276view1 [wordlim: 200] Crawled: 2 weeks ago; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045525868/2026-08-05","lineno":175}); Total lines: 250
+L125:   * Partie réglementaire au 【61†JO n° 0026 du 31 janvier 2017】 : 【62†décret n° 2017-107】 du 30 janvier 2017 relatif à la codification du titre VI du livre II de la première partie ainsi que des chapitres IV et V du titre Ier du livre Ier de la troisième partie du code des transports et comportant diverses dispositions en matière de transport public routier de personnes.
+L126:   * Partie réglementaire au 【63†JO n° 0159 du 11 juillet 2019】 : 【64†décret n° 2019-726】 du 9 juillet 2019 relatif aux dispositions des titres IV, V et VI du livre II de la deuxième partie réglementaire du code des transports et comportant diverses dispositions relatives à la sûreté des transports.
+L127:   * Partie réglementaire au 【65†JO n° 0254 du 1 novembre 2023】 : 【66†décret n° 2023-1008】 du 31 octobre 2023 portant sixième partie réglementaire du code des transports.
+L128: ### VOIR AUSSI
+L129:   * 【67†Dossier législatif de l'ordonnance n° 2019-78】 du 6 février 2019 relative à la préparation au retrait du Royaume-Uni de l'Union européenne en matière de transport routier de personnes et de marchandises et de sûreté dans le tunnel sous la Manche [article 6 : insertion au livre II de la deuxième partie du code d'un titre VII « RÉGIME DE SÛRETÉ DE LA PARTIE FRANÇAISE DE LA LIAISON FIXE TRANS-MANCHE »]
+L130:   * 【68†Décret n° 2017-423】 du 28 mars 2017 portant application de la loi pour l'économie bleue et modifiant le code des transports
+L131:   * 【69†Dossier législatif de la loi n° 2016-816】 du 20 juin 2016 pour l'économie bleue
+L132:   * 【70†Dossier législatif de l'ordonnance n° 2016-79】 du 29 janvier 2016 relative aux gares routières et à la recodification des dispositions du code des transports relatives à l'Autorité de régulation des activités ferroviaires et routières
+L133:   * 【71†Décret n° 2014-1725】 du 30 décembre 2014 relatif au transport public particulier de personnes [Les dispositions de l'annexe au présent décret constituent, respectivement, le titre II du livre Ier et les titres III, IV et V du livre V de la troisième partie réglementaire du code des transports.]
+L134:   * 【72†Décret n° 2014-1416】 du 28 novembre 2014 relatif aux modalités d'exercice de l'activité privée de protection des navires [au début de la cinquième partie, il est inséré un livre IV intitulé « Le transport maritime »]
+L135:   * 【73†Dossier législatif de l'ordonnance n° 2014-1380】 du 21 novembre 2014 rapprochant la législation des transports applicable à Mayotte de la législation applicable en métropole et portant adaptation au droit européen de la législation des transports applicable à Mayotte
+L136:   * 【74†Décret n° 2014-881】 du 1er août 2014 pris pour l'application des dispositions du titre VI du livre V de la cinquième partie du code des transports et relatif aux conditions sociales du pays d'accueil [après la quatrième partie du code des transports (partie réglementaire), il est inséré une cinquième partie intitulée « Transport et navigation maritimes » comportant un livre V : « Les gens de mer »]
+L137:   * 【75†Arrêté du 28 juin 2013 portant règlement général de police de la navigation intérieure】 (Articles 1er à 3 : Insertion des articles A. 4241-1 à A. 4241-65, et de leurs annexes, constituant la section 1 du chapitre Ier, du titre IV, du livre II de la quatrième partie du présent code, applicable à compter du 1er septembre 2014, à l'exception des articles A. 4241-26 [relatif aux mesures temporaires d'interruption ou de modification des conditions de la navigation] et A. 4241-35-1 à A.
+L138: 4241-35-4 [relatifs aux transports spéciaux] applicables à compter du 30 août 2013)
+L139:   * 【76†Dossier législatif de l'ordonnance n° 2012-1218】 du 2 novembre 2012 portant réforme pénale en matière maritime (modification de la loi du 17 décembre 1926 portant code disciplinaire et pénal de la marine marchande et la cinquième partie du code des transports)
+L140:   * 【77†Dossier législatif de la loi n° 2012-375】 du 19 mars 2012 ratifiant les ordonnances n° 2010-1307 du 28 octobre 2010 relative à la partie législative du code des transports et n° 2011-204 du 24 février 2011 relative au code des transports
+L141:   * 【78†Dossier législatif de l'ordonnance n° 2011-1300】 du 14 octobre 2011 relative aux redevances aéroportuaires
+L142:   * 【79†Dossier législatif de l'ordonnance n° 2011-204】 du 24 février 2011 relative au code des transports
+L143: Dernière modification : 13 janvier 2020
+L144: ## ChronoLégi l'accès au droit dans le temps
+L145: 
+L146: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L147: 
+L148: [Input]
+L149: ### Les différentes versions dans le temps
+L150: 
+L151: Fermer le Chronolégi
+L152: 
+L153: À la date du JJ/MM/AAAA
+L154: 
+L155: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L156: 
+L157: Rechercher dans cette section ou dans tout le code
+L158: 
+L159: [Input]Rechercher dans cet article
+L160: 
+L161: [Input]Rechercher dans tout le code
+L162: 
+L163: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L164: 
+L165: [Input] Réinitialiser le champ recherche
+L166: 
+L167: * * *
+L168: 
+L169: Voir le sommaire du code
+L170: 
+L171: [Button: Fermer]
+L172: 
+L173:   * ## 【80†PARTIE LÉGISLATIVE (Articles L1000-1 à L6795-1)】
+L174: Déplier/Replier
+L175:     * ### 【81†PREMIÈRE PARTIE : DISPOSITIONS COMMUNES (Articles L1000-1 à L1893-1)】
+L176: 
+L177: Déplier/Replier
+L178: 
+L179:       * 【82†Article L1000-1】
+L180:       * 【83†Article L1000-2】
+L181:       * 【84†Article L1000-3】
+L182:       * #### 【85†LIVRE III : RÉGLEMENTATION SOCIALE DU TRANSPORT (Articles L1311-1 à L1332-8)】
+L183: 
+L184: Déplier/Replier
+L185:         * ##### 【86†TITRE II : DISPOSITIONS PARTICULIÈRES AUX ENTREPRISES DE TRANSPORT (Articles L1321-1 à L1326-4)】
+L186: Déplier/Replier
+L187:           * ###### 【87†Chapitre VI : Dispositions spécifiques à la mise en relation de travailleurs ayant recours à des plateformes pour exercer une activité de conduite d'une voiture de transport avec chauffeur ou de livraison de marchandises au moyen d'un véhicule à deux ou trois roues (Articles L1326-1 à L1326-4)】
+L188: 
+L189: Déplier/Replier
+L190: 
+L191:             * 【88†Article L1326-1】
+L192:             * 【89†Article L1326-2】
+L193:             * 【90†Article L1326-3】
+L194:             * 【91†Article L1326-4】
+L195: 
+L196: [Input]
+L197: ## Article L1326-2
+L198: 
+L199: En vigueur depuis le 08 avr. 2022 En vigueur depuis le 08 avril 2022
+L200: 
+L201: 【92†Modifié par Ordonnance n°2022-492 du 6 avril 2022 - art. 1】
+L202: Les plateformes mentionnées à l'article 【93†L. 1326-1】 communiquent aux travailleurs, lorsqu'elles leur proposent une prestation, la distance couverte par cette prestation, la destination et le prix minimal garanti dont ils bénéficieront, déduction faite des frais de commission, dans des conditions précisées par décret. Elles laissent aux travailleurs un délai raisonnable pour accepter ou refuser la prestation proposée.
+L203: Les travailleurs peuvent refuser une proposition de prestation de transport sans faire l'objet d'une quelconque pénalité. La plateforme ne peut notamment pas suspendre ou mettre fin à la relation contractuelle qui l'unit aux travailleurs au motif que ceux-ci ont refusé une ou plusieurs propositions.
+L204: 
+L205: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L206: 
+L207: [Button: Fermer ]
+L208: 
+L209: Code des transports
+L210: 
+L211: En vigueur au 05/08/2026 En vigueur au 05 août 2026
+L212: [Button: Ouvrir ][Button: Réduire ]
+L213: 
+L214: Chapitre VI : Dispositions spécifiques à la mise en relation de travailleurs ayant recours à des plateformes pour exercer une activité de conduite d'une voiture de transport avec chauffeur ou de livraison de marchandises au moyen d'un véhicule à deux ou trois roues
+L215: 
+L216: [Input]
+L217: 
+L218: [Input: JJ/MM/AAAA]
+L219: 
+L220: [Button: Version à la date d’aujourd'hui ]
+L221: 
+L222: Imprimer la page
+L223: 
+L224: Copier le texte
+L225: 
+L226: [Button: Naviguer dans les résultats ]
+L227: 
+L228: [Input]Haut
+L229: de page
+L230: ## L'aide Légifrance
+L231: 
+L232: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L233: 
+L234:   * 【94†Une question, une suggestion ou un problème sur légifrance ?】
+L235:   * 【95†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L236:   * 【96†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L237:   * 【97†Guide des cas d'usage】
+L238: ## Abonnez-vous au Journal officiel de la République française
+L239: 
+L240: Recevez par courriel le sommaire dès sa publication.
+L241: 
+L242: 【98†En savoir plus sur la gestion de vos données et de vos droits.】
+L243: 
+L244: Votre adresse électronique (ex. : 【99†[email protected]】)
+L245: 
+L246: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L247: 
+L248: [Input]
+L249: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【100†formulaire】
+--------------------------------------------------------------------------------
+Article L3132-1 - Code des transports - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039784386/2026-07-09)
+citeturn276view2 [wordlim: 200] Crawled: 2 weeks ago; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039784386/2026-07-09","lineno":175}); Total lines: 245
+L126:   * Partie réglementaire au 【63†JO n° 0159 du 11 juillet 2019】 : 【64†décret n° 2019-726】 du 9 juillet 2019 relatif aux dispositions des titres IV, V et VI du livre II de la deuxième partie réglementaire du code des transports et comportant diverses dispositions relatives à la sûreté des transports.
+L127:   * Partie réglementaire au 【65†JO n° 0254 du 1 novembre 2023】 : 【66†décret n° 2023-1008】 du 31 octobre 2023 portant sixième partie réglementaire du code des transports.
+L128: ### VOIR AUSSI
+L129:   * 【67†Dossier législatif de l'ordonnance n° 2019-78】 du 6 février 2019 relative à la préparation au retrait du Royaume-Uni de l'Union européenne en matière de transport routier de personnes et de marchandises et de sûreté dans le tunnel sous la Manche [article 6 : insertion au livre II de la deuxième partie du code d'un titre VII « RÉGIME DE SÛRETÉ DE LA PARTIE FRANÇAISE DE LA LIAISON FIXE TRANS-MANCHE »]
+L130:   * 【68†Décret n° 2017-423】 du 28 mars 2017 portant application de la loi pour l'économie bleue et modifiant le code des transports
+L131:   * 【69†Dossier législatif de la loi n° 2016-816】 du 20 juin 2016 pour l'économie bleue
+L132:   * 【70†Dossier législatif de l'ordonnance n° 2016-79】 du 29 janvier 2016 relative aux gares routières et à la recodification des dispositions du code des transports relatives à l'Autorité de régulation des activités ferroviaires et routières
+L133:   * 【71†Décret n° 2014-1725】 du 30 décembre 2014 relatif au transport public particulier de personnes [Les dispositions de l'annexe au présent décret constituent, respectivement, le titre II du livre Ier et les titres III, IV et V du livre V de la troisième partie réglementaire du code des transports.]
+L134:   * 【72†Décret n° 2014-1416】 du 28 novembre 2014 relatif aux modalités d'exercice de l'activité privée de protection des navires [au début de la cinquième partie, il est inséré un livre IV intitulé « Le transport maritime »]
+L135:   * 【73†Dossier législatif de l'ordonnance n° 2014-1380】 du 21 novembre 2014 rapprochant la législation des transports applicable à Mayotte de la législation applicable en métropole et portant adaptation au droit européen de la législation des transports applicable à Mayotte
+L136:   * 【74†Décret n° 2014-881】 du 1er août 2014 pris pour l'application des dispositions du titre VI du livre V de la cinquième partie du code des transports et relatif aux conditions sociales du pays d'accueil [après la quatrième partie du code des transports (partie réglementaire), il est inséré une cinquième partie intitulée « Transport et navigation maritimes » comportant un livre V : « Les gens de mer »]
+L137:   * 【75†Arrêté du 28 juin 2013 portant règlement général de police de la navigation intérieure】 (Articles 1er à 3 : Insertion des articles A. 4241-1 à A. 4241-65, et de leurs annexes, constituant la section 1 du chapitre Ier, du titre IV, du livre II de la quatrième partie du présent code, applicable à compter du 1er septembre 2014, à l'exception des articles A. 4241-26 [relatif aux mesures temporaires d'interruption ou de modification des conditions de la navigation] et A. 4241-35-1 à A.
+L138: 4241-35-4 [relatifs aux transports spéciaux] applicables à compter du 30 août 2013)
+L139:   * 【76†Dossier législatif de l'ordonnance n° 2012-1218】 du 2 novembre 2012 portant réforme pénale en matière maritime (modification de la loi du 17 décembre 1926 portant code disciplinaire et pénal de la marine marchande et la cinquième partie du code des transports)
+L140:   * 【77†Dossier législatif de la loi n° 2012-375】 du 19 mars 2012 ratifiant les ordonnances n° 2010-1307 du 28 octobre 2010 relative à la partie législative du code des transports et n° 2011-204 du 24 février 2011 relative au code des transports
+L141:   * 【78†Dossier législatif de l'ordonnance n° 2011-1300】 du 14 octobre 2011 relative aux redevances aéroportuaires
+L142:   * 【79†Dossier législatif de l'ordonnance n° 2011-204】 du 24 février 2011 relative au code des transports
+L143: Dernière modification : 13 janvier 2020
+L144: ## ChronoLégi l'accès au droit dans le temps
+L145: 
+L146: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L147: 
+L148: [Input]
+L149: ### Les différentes versions dans le temps
+L150: 
+L151: Fermer le Chronolégi
+L152: 
+L153: À la date du JJ/MM/AAAA
+L154: 
+L155: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L156: 
+L157: Rechercher dans cette section ou dans tout le code
+L158: 
+L159: [Input]Rechercher dans cet article
+L160: 
+L161: [Input]Rechercher dans tout le code
+L162: 
+L163: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L164: 
+L165: [Input] Réinitialiser le champ recherche
+L166: 
+L167: * * *
+L168: 
+L169: Voir le sommaire du code
+L170: 
+L171: [Button: Fermer]
+L172: 
+L173:   * ## 【80†PARTIE LÉGISLATIVE (Articles L1000-1 à L6795-1)】
+L174: Déplier/Replier
+L175:     * ### 【81†TROISIÈME PARTIE : TRANSPORT ROUTIER (Articles L3111-1 à L3561-1)】
+L176: 
+L177: Déplier/Replier
+L178:       * #### 【82†LIVRE IER : LE TRANSPORT ROUTIER DE PERSONNES (Articles L3111-1 à L3163-5)】
+L179: 
+L180: Déplier/Replier
+L181:         * ##### 【83†TITRE III : LE TRANSPORT PRIVÉ ROUTIER DE PERSONNES (Articles L3131-1 à L3133-1)】
+L182: 
+L183: Déplier/Replier
+L184:           * ###### 【84†Chapitre II : Covoiturage (Article L3132-1)】
+L185: 
+L186: Déplier/Replier
+L187: 
+L188:             * 【85†Article L3132-1】
+L189: 
+L190: [Input]
+L191: ## Article L3132-1
+L192: 
+L193: En vigueur depuis le 27 déc. 2019 En vigueur depuis le 27 décembre 2019
+L194: 
+L195: 【86†Modifié par LOI n°2019-1428 du 24 décembre 2019 - art. 40 (V)】
+L196: Le covoiturage se définit comme l'utilisation en commun d'un véhicule terrestre à moteur par un conducteur et un ou plusieurs passagers, effectuée à titre non onéreux, excepté le partage des frais, dans le cadre d'un déplacement que le conducteur effectue pour son propre compte. Leur mise en relation, à cette fin, peut être effectuée à titre onéreux.
+L197: 
+L198: Un décret en Conseil d'Etat précise les modalités d'application du présent article, notamment la nature des frais pris en considération.
+L199: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ]
+L200: 
+L201: [Button: Fermer ]
+L202: 
+L203: Code des transports
+L204: 
+L205: En vigueur au 09/07/2026 En vigueur au 09 juillet 2026
+L206: 
+L207: [Button: Ouvrir ][Button: Réduire ]
+L208: 
+L209: Chapitre II : Covoiturage
+L210: 
+L211: [Input]
+L212: 
+L213: [Input: JJ/MM/AAAA]
+L214: 
+L215: [Button: Version à la date d’aujourd'hui ]
+L216: 
+L217: Imprimer la page
+L218: 
+L219: Copier le texte
+L220: 
+L221: [Button: Naviguer dans les résultats ]
+L222: 
+L223: [Input]Haut
+L224: de page
+L225: ## L'aide Légifrance
+L226: 
+L227: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L228: 
+L229:   * 【87†Une question, une suggestion ou un problème sur légifrance ?】
+L230:   * 【88†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L231:   * 【89†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L232:   * 【90†Guide des cas d'usage】
+L233: ## Abonnez-vous au Journal officiel de la République française
+L234: 
+L235: Recevez par courriel le sommaire dès sa publication.
+L236: 
+L237: 【91†En savoir plus sur la gestion de vos données et de vos droits.】
+L238: 
+L239: Votre adresse électronique (ex. : 【92†[email protected]】)
+L240: 
+L241: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L242: 
+L243: [Input]
+L244: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【93†formulaire】
+

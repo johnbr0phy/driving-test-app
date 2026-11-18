@@ -1,0 +1,5 @@
+../tigertest-next20-progress/epa609-pilot40-v2/pilot-questions.json: 40 items, shared option sets 0 (0%, limit 10%), echo rule right 1/10, gain -1.9 marks per 50, ruling the echo out gains 0.6 (limit 4.5)
+   key alone echoes the stem: EPA609-SRV-023
+option reuse and stem echo: OK
+
+Exit code: 0

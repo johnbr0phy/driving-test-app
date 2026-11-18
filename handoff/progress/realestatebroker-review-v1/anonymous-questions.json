@@ -1,0 +1,1802 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "rebMath",
+    "optionA": "140",
+    "optionB": "1,400",
+    "optionC": "11.67",
+    "optionD": "7.14",
+    "question": "A comparable rents for $2,500 monthly and sells for $350,000. What monthly gross rent multiplier results?"
+  },
+  {
+    "reviewId": "R002",
+    "category": "rebProperty",
+    "optionA": "Cemented patio foundation",
+    "optionB": "Unattached dining table",
+    "optionC": "Mature tree in the garden",
+    "optionD": "Permanently built-in oven",
+    "question": "Which item most clearly remains a chattel when a furnished house is sold?"
+  },
+  {
+    "reviewId": "R003",
+    "category": "rebProperty",
+    "optionA": "Exclusion",
+    "optionB": "Encumbrance",
+    "optionC": "Disposition",
+    "optionD": "Enjoyment",
+    "question": "Which ownership right permits refusing strangers entry without transferring possession to another person?"
+  },
+  {
+    "reviewId": "R004",
+    "category": "rebAgency",
+    "optionA": "Property owner",
+    "optionB": "Representing broker",
+    "optionC": "Cooperating salesperson",
+    "optionD": "Prospective tenant",
+    "question": "Who is the principal when an owner authorizes a broker to negotiate a warehouse lease?"
+  },
+  {
+    "reviewId": "R005",
+    "category": "rebAgency",
+    "optionA": "Authenticity of the parties' signatures",
+    "optionB": "Recording of the transfer instrument",
+    "optionC": "Definiteness of an essential term",
+    "optionD": "Performance of the completed bargain",
+    "question": "The parties sign but leave the purchase price for future agreement. Which formation issue remains unresolved?"
+  },
+  {
+    "reviewId": "R006",
+    "category": "rebValue",
+    "optionA": "It discounts each expense separately",
+    "optionB": "It does not reflect the cost difference",
+    "optionC": "It uses only depreciated building costs",
+    "optionD": "It deducts too much mortgage principal",
+    "question": "Equal gross rents produce different expense ratios. Why can the same GRM mislead a buyer?"
+  },
+  {
+    "reviewId": "R007",
+    "category": "rebProperty",
+    "optionA": "Private covenant enforcement",
+    "optionB": "Eminent domain authority",
+    "optionC": "Adverse possession doctrine",
+    "optionD": "Voluntary dedication rights",
+    "question": "A city acquires land for a public road with compensation. Which power is being exercised?"
+  },
+  {
+    "reviewId": "R008",
+    "category": "rebEnvironment",
+    "optionA": "Treat the missing period as presumed uncontaminated",
+    "optionB": "Use a clean title report to resolve the environmental gap",
+    "optionC": "Identify its effect on the professional\u2019s assessment",
+    "optionD": "Substitute present zoning for the missing use history",
+    "question": "Environmental records omit a former industrial use. How should a significant gap affecting conclusions be handled in AAI?"
+  },
+  {
+    "reviewId": "R009",
+    "category": "rebAgency",
+    "optionA": "Purchase-money mortgage",
+    "optionB": "Power of attorney",
+    "optionC": "Exclusive agency listing",
+    "optionD": "Property title abstract",
+    "question": "An owner appoints a broker attorney-in-fact for one closing. What document defines that representative capacity?"
+  },
+  {
+    "reviewId": "R010",
+    "category": "rebEnvironment",
+    "optionA": "Common-area records wait until lease renewal",
+    "optionB": "Only reports ordered by this tenant are included",
+    "optionC": "Relevant common-area records are included",
+    "optionD": "Only reports for the rented unit are included",
+    "question": "A landlord has lead reports covering common hallways in a covered apartment building. Which disclosure scope applies?"
+  },
+  {
+    "reviewId": "R011",
+    "category": "rebPractice",
+    "optionA": "Employee workers\u2019 compensation insurance",
+    "optionB": "Professional errors insurance",
+    "optionC": "General liability insurance",
+    "optionD": "Commercial building property insurance",
+    "question": "A visitor alleges injury from a brokerage office\u2019s unsafe floor. Which coverage category most directly concerns that claim?"
+  },
+  {
+    "reviewId": "R012",
+    "category": "rebMath",
+    "optionA": "$522,500",
+    "optionB": "$212,500",
+    "optionC": "$205,000",
+    "optionD": "$240,000",
+    "question": "A $550,000 sale has $310,000 payoff, $27,500 commission and $7,500 other seller costs. What net proceeds remain?"
+  },
+  {
+    "reviewId": "R013",
+    "category": "rebTitle",
+    "optionA": "Tenancy at sufferance",
+    "optionB": "Estate at will",
+    "optionC": "Estate for years",
+    "optionD": "Periodic tenancy",
+    "question": "A lease runs April 1 through September 30 without renewal. Which estate does it create?"
+  },
+  {
+    "reviewId": "R014",
+    "category": "rebEnvironment",
+    "optionA": "A house completed in 2005",
+    "optionB": "A house completed in 1995",
+    "optionC": "A house completed in 1965",
+    "optionD": "A house completed in 1985",
+    "question": "Which dwelling\u2019s construction date generally places it within federal lead-based-paint disclosure coverage, absent an exemption?"
+  },
+  {
+    "reviewId": "R015",
+    "category": "rebFinance",
+    "optionA": "Nominal note rate",
+    "optionB": "Loan-to-value ratio",
+    "optionC": "Annual percentage rate",
+    "optionD": "Initial adjustment cap",
+    "question": "Which cost measure includes the interest rate plus certain loan fees, expressed as a yearly rate?"
+  },
+  {
+    "reviewId": "R016",
+    "category": "rebAgency",
+    "optionA": "Presence of a payment schedule",
+    "optionB": "Existence of a purchase price",
+    "optionC": "Timing of the deed transfer",
+    "optionD": "Identification of the real property",
+    "question": "A seller retains legal title until installment payments finish. What distinguishes this arrangement from immediate conveyance with a mortgage?"
+  },
+  {
+    "reviewId": "R017",
+    "category": "rebPractice",
+    "optionA": "Protection against religious discrimination",
+    "optionB": "Protection against familial-status discrimination",
+    "optionC": "Protection against sex discrimination",
+    "optionD": "Protection against national-origin discrimination",
+    "question": "A housing manager conditions favorable treatment on sexual favors. Which federal housing protection is implicated?"
+  },
+  {
+    "reviewId": "R018",
+    "category": "rebProperty",
+    "optionA": "Mortgage debt secured by affected parcels",
+    "optionB": "Original cost paid for affected parcels",
+    "optionC": "Benefit received by affected parcels",
+    "optionD": "Rental income earned from affected parcels",
+    "question": "How is a neighborhood improvement levy allocated differently from an ordinary ad valorem charge?"
+  },
+  {
+    "reviewId": "R019",
+    "category": "rebPractice",
+    "optionA": "Limiting storage in shared emergency exits",
+    "optionB": "Applying identical income standards to applicants",
+    "optionC": "Assigning families with children to one wing",
+    "optionD": "Offering different rents for different unit sizes",
+    "question": "Which apartment rule directly presents a familial-status problem in housing without an applicable exemption?"
+  },
+  {
+    "reviewId": "R020",
+    "category": "rebPractice",
+    "optionA": "Executing conveyances for member brokers",
+    "optionB": "Appointing each participant as seller\u2019s agent",
+    "optionC": "Setting a uniform brokerage commission",
+    "optionD": "Sharing information about listed properties",
+    "question": "What is the primary function of a multiple listing service, distinct from the owner\u2019s representation agreement?"
+  },
+  {
+    "reviewId": "R021",
+    "category": "rebMath",
+    "optionA": "$1,200",
+    "optionB": "$800",
+    "optionC": "$14,400",
+    "optionD": "$13,333.33",
+    "question": "Using a 360-day year, what simple interest accrues on $240,000 at 6% for 20 days?"
+  },
+  {
+    "reviewId": "R022",
+    "category": "rebAgency",
+    "optionA": "Lender's commitment satisfying the clause",
+    "optionB": "Seller's proposed financing concession",
+    "optionC": "Broker's estimated mortgage payment",
+    "optionD": "Borrower's preliminary affordability letter",
+    "question": "A contract requires a loan commitment, not prequalification. Which document best supports removing that contingency?"
+  },
+  {
+    "reviewId": "R023",
+    "category": "rebPractice",
+    "optionA": "Net listing based on seller proceeds",
+    "optionB": "Open listing with several brokers",
+    "optionC": "Exclusive agency listing",
+    "optionD": "Exclusive right-to-sell listing",
+    "question": "Which listing generally reserves an owner\u2019s commission-free personal sale while appointing only one brokerage?"
+  },
+  {
+    "reviewId": "R024",
+    "category": "rebPractice",
+    "optionA": "Unilateral refusal to accept a listing",
+    "optionB": "Independent selection of matching prices",
+    "optionC": "Negotiation of one seller\u2019s compensation agreement",
+    "optionD": "Agreement restraining price competition",
+    "question": "Competing brokerages agree on a minimum commission while allowing higher rates. What is the antitrust issue?"
+  },
+  {
+    "reviewId": "R025",
+    "category": "rebEnvironment",
+    "optionA": "Changing the period only after ownership transfers",
+    "optionB": "Mutually changing the ten-day opportunity",
+    "optionC": "Shortening the period only through lender approval",
+    "optionD": "Replacing disclosure with the shortened inspection",
+    "question": "A covered buyer and seller agree in writing to seven days for lead inspection. What does federal law permit?"
+  },
+  {
+    "reviewId": "R026",
+    "category": "rebPractice",
+    "optionA": "Monthly bank statement",
+    "optionB": "Account-wide control record",
+    "optionC": "Separate beneficiary ledger",
+    "optionD": "Brokerage income statement",
+    "question": "Which record identifies how much of a pooled trust balance belongs to each individual owner?"
+  },
+  {
+    "reviewId": "R027",
+    "category": "rebTitle",
+    "optionA": "Estate backed by implied warranties",
+    "optionB": "Any estate the signer later acquires",
+    "optionC": "No estate through that transfer",
+    "optionD": "Estate free of earlier recorded liens",
+    "question": "A buyer receives a quitclaim from someone with no ownership interest. What has the buyer acquired through that deed?"
+  },
+  {
+    "reviewId": "R028",
+    "category": "rebValue",
+    "optionA": "Legal permissibility",
+    "optionB": "Financial feasibility",
+    "optionC": "Maximum productivity",
+    "optionD": "Physical possibility",
+    "question": "Which highest-and-best-use test eliminates an otherwise profitable use that zoning expressly forbids?"
+  },
+  {
+    "reviewId": "R029",
+    "category": "rebTitle",
+    "optionA": "Absence of every nonmonetary encumbrance",
+    "optionB": "Absence of outstanding mortgage balances",
+    "optionC": "Freedom from reasonable title objections",
+    "optionD": "Issuance of any owner's title policy",
+    "question": "A buyer claims any recorded easement makes title unmarketable. Which standard best evaluates that claim?"
+  },
+  {
+    "reviewId": "R030",
+    "category": "rebValue",
+    "optionA": "Allocation of sale commission",
+    "optionB": "Scheduled recovery of tax basis",
+    "optionC": "Loss in value from any cause",
+    "optionD": "Accumulation of mortgage interest",
+    "question": "What distinguishes appraisal depreciation from the owner's annual income-tax deduction?"
+  },
+  {
+    "reviewId": "R031",
+    "category": "rebValue",
+    "optionA": "It increases",
+    "optionB": "It changes with debt only",
+    "optionC": "It remains constant",
+    "optionD": "It decreases",
+    "question": "NOI stays constant while the market capitalization rate increases. What happens to indicated value?"
+  },
+  {
+    "reviewId": "R032",
+    "category": "rebEnvironment",
+    "optionA": "Bona fide prospective purchaser protection",
+    "optionB": "Innocent-landowner protection based on no knowledge",
+    "optionC": "Secured-creditor protection based on holding a lien",
+    "optionD": "Contiguous-owner protection based on no reason to know",
+    "question": "A purchaser knows of existing contamination before buying. Which CERCLA protection may still be available if its conditions are met?"
+  },
+  {
+    "reviewId": "R033",
+    "category": "rebMath",
+    "optionA": "$2,250 seller credit and buyer debit",
+    "optionB": "$1,350 seller credit and buyer debit",
+    "optionC": "$2,250 seller debit and buyer credit",
+    "optionD": "$1,350 seller debit and buyer credit",
+    "question": "Annual taxes of $3,600 are unpaid. Using 360 days, seller owes 135 days. What closing adjustment follows?"
+  },
+  {
+    "reviewId": "R034",
+    "category": "rebValue",
+    "optionA": "Annual debt service",
+    "optionB": "Potential gross income",
+    "optionC": "Accrued depreciation",
+    "optionD": "Original land basis",
+    "question": "A rent roll omits recurring parking receipts. Which valuation input needs revision?"
+  },
+  {
+    "reviewId": "R035",
+    "category": "rebEnvironment",
+    "optionA": "Liability is limited to repairing the leaking equipment",
+    "optionB": "Tank replacement includes verified groundwater cleanup",
+    "optionC": "Disconnected tanks cannot present residual release risks",
+    "optionD": "Contamination may extend beyond the tank excavation",
+    "question": "Why should a commercial buyer investigate a leaking underground fuel tank beyond the tank\u2019s physical repair cost?"
+  },
+  {
+    "reviewId": "R036",
+    "category": "rebTitle",
+    "optionA": "Possession ends on a stated final date",
+    "optionB": "Successive terms continue until termination",
+    "optionC": "Possession depends on daily permission",
+    "optionD": "Possession continues after consent expires",
+    "question": "Which clause makes a month-to-month arrangement periodic rather than a one-month fixed tenancy?"
+  },
+  {
+    "reviewId": "R037",
+    "category": "rebAgency",
+    "optionA": "Intent to communicate the statement",
+    "optionB": "Materiality of the asserted fact",
+    "optionC": "Identity of the person making it",
+    "optionD": "Knowledge that the statement was false",
+    "question": "A false statement concerns an issue that would not affect the purchase decision. Which fraud element is least supported?"
+  },
+  {
+    "reviewId": "R038",
+    "category": "rebFinance",
+    "optionA": "Payment is described as marketing in the invoice",
+    "optionB": "Payment corresponds to services actually performed",
+    "optionC": "Payment is issued after rather than before closing",
+    "optionD": "Payment remains below an informal gift ceiling",
+    "question": "Which fact distinguishes a bona fide settlement-service payment from a disguised referral fee under RESPA?"
+  },
+  {
+    "reviewId": "R039",
+    "category": "rebAgency",
+    "optionA": "Rescinded",
+    "optionB": "Executed",
+    "optionC": "Void",
+    "optionD": "Executory",
+    "question": "Which term describes a binding purchase contract while both payment and conveyance remain due?"
+  },
+  {
+    "reviewId": "R040",
+    "category": "rebMath",
+    "optionA": "$32,000",
+    "optionB": "$68,000",
+    "optionC": "$56,000",
+    "optionD": "$48,000",
+    "question": "A lease charges $36,000 plus 4% of sales above $500,000. At $800,000 sales, what annual rent applies?"
+  },
+  {
+    "reviewId": "R041",
+    "category": "rebPractice",
+    "optionA": "Inquiries generated by each advertising channel",
+    "optionB": "Percentage of existing tenants renewing leases",
+    "optionC": "Share of billed rents collected before delinquency",
+    "optionD": "Percentage of maintenance requests completed promptly",
+    "question": "Showings declined while competitive rents stayed stable. Which measure most directly tests whether advertising reaches prospective tenants?"
+  },
+  {
+    "reviewId": "R042",
+    "category": "rebEnvironment",
+    "optionA": "Before the buyer becomes contractually obligated",
+    "optionB": "After the buyer obtains mortgage approval",
+    "optionC": "Before the deed is recorded after closing",
+    "optionD": "When the purchaser takes possession",
+    "question": "For a covered home sale, when must the seller provide the required lead information to the buyer?"
+  },
+  {
+    "reviewId": "R043",
+    "category": "rebAgency",
+    "optionA": "Consideration disappears when time passes",
+    "optionB": "Contract performance becomes impossible",
+    "optionC": "Enforcement remedy differs from formation",
+    "optionD": "Original assent becomes a counteroffer",
+    "question": "A valid contractual claim becomes time-barred. Which distinction explains why the original agreement was not necessarily void?"
+  },
+  {
+    "reviewId": "R044",
+    "category": "rebPractice",
+    "optionA": "Thirty-one days",
+    "optionB": "Eighteen months",
+    "optionC": "One calendar year",
+    "optionD": "Three months",
+    "question": "Under the FTC rule, how long does a consumer inquiry generally support the inquiry-based live-call exception?"
+  },
+  {
+    "reviewId": "R045",
+    "category": "rebPractice",
+    "optionA": "$21,000",
+    "optionB": "$18,600",
+    "optionC": "$19,800",
+    "optionD": "$1,200",
+    "question": "The bank shows $19,800; an uncleared $1,200 payment is already recorded. What adjusted balance should match the books?"
+  },
+  {
+    "reviewId": "R046",
+    "category": "rebMath",
+    "optionA": "2 acres",
+    "optionB": "4 acres",
+    "optionC": "8 acres",
+    "optionD": "1 acre",
+    "question": "A rectangular parcel measures 330 by 264 feet. What is its area in acres?"
+  },
+  {
+    "reviewId": "R047",
+    "category": "rebMath",
+    "optionA": "5,400 square feet",
+    "optionB": "2,800 square feet",
+    "optionC": "6,000 square feet",
+    "optionD": "6,600 square feet",
+    "question": "A 60-by-100-foot floor contains a 20-by-30-foot open courtyard. What enclosed floor area remains?"
+  },
+  {
+    "reviewId": "R048",
+    "category": "rebAgency",
+    "optionA": "Express grant between owner and manager",
+    "optionB": "Delegation to a replacement property agent",
+    "optionC": "Appearance created for third-party reliance",
+    "optionD": "Subsequent adoption of an unauthorized act",
+    "question": "An owner tells a contractor the manager may order work, despite a secret lower limit. Which authority issue arises?"
+  },
+  {
+    "reviewId": "R049",
+    "category": "rebFinance",
+    "optionA": "Resulting rate at every adjustment",
+    "optionB": "Contractual percentage-point increment",
+    "optionC": "Published market index level",
+    "optionD": "Total payment including changing taxes",
+    "question": "An ARM resets using an index plus margin. Which component is normally fixed in the loan agreement after closing?"
+  },
+  {
+    "reviewId": "R050",
+    "category": "rebProperty",
+    "optionA": "Method of physical attachment",
+    "optionB": "Installer's original intention",
+    "optionC": "Adaptation to the room layout",
+    "optionD": "Parties' written agreement",
+    "question": "A signed sale contract excludes built-in shelving. Which fixture test resolves the seller's right to remove it?"
+  },
+  {
+    "reviewId": "R051",
+    "category": "rebPractice",
+    "optionA": "Every positive ledger must equal the bank",
+    "optionB": "Bank interest necessarily explains the deficit",
+    "optionC": "Combining ledgers eliminates separate obligations",
+    "optionD": "One beneficiary\u2019s balance remains deficient",
+    "question": "Two beneficiary ledgers show $8,000 and negative $300. Why does a $7,700 bank balance not resolve the problem?"
+  },
+  {
+    "reviewId": "R052",
+    "category": "rebAgency",
+    "optionA": "Option contract",
+    "optionB": "Installment sale contract",
+    "optionC": "Right-of-first-refusal notice",
+    "optionD": "Listing agreement",
+    "question": "An owner accepts consideration to hold an offer open. Which agreement gives the purchaser that protection?"
+  },
+  {
+    "reviewId": "R053",
+    "category": "rebAgency",
+    "optionA": "Assignment also discharges the assignor",
+    "optionB": "Contract terms may limit assignment",
+    "optionC": "Obligee may retain existing defenses",
+    "optionD": "Assignee receives transferred benefits",
+    "question": "A purchaser assigns contractual rights without obtaining a release. Which assumption creates a liability risk?"
+  },
+  {
+    "reviewId": "R054",
+    "category": "rebMath",
+    "optionA": "$8,437.50",
+    "optionB": "$6,750",
+    "optionC": "$540",
+    "optionD": "$5,400",
+    "question": "Assessed value is 80% of $450,000; tax is $15 per $1,000 assessed. What annual tax results?"
+  },
+  {
+    "reviewId": "R055",
+    "category": "rebFinance",
+    "optionA": "Underwriting has issued an unconditional commitment",
+    "optionB": "Borrower has accepted every quoted closing charge",
+    "optionC": "Preliminary pricing has been disclosed",
+    "optionD": "Seller has consented to the buyer\u2019s financing",
+    "question": "Receipt of a Loan Estimate means which stage has occurred, without itself establishing final loan approval?"
+  },
+  {
+    "reviewId": "R056",
+    "category": "rebEnvironment",
+    "optionA": "Three years",
+    "optionB": "Seven years",
+    "optionC": "One year",
+    "optionD": "Five years",
+    "question": "For how long must sellers and lessors retain signed federal lead-disclosure documentation after the sale or lease starts?"
+  },
+  {
+    "reviewId": "R057",
+    "category": "rebAgency",
+    "optionA": "Recorded information versus oral information",
+    "optionB": "Seller's ownership versus buyer's ownership",
+    "optionC": "Written instruction versus verbal instruction",
+    "optionD": "Negotiating confidence versus material condition",
+    "question": "A seller privately reveals a minimum price and a concealed foundation defect. Which distinction should guide disclosure?"
+  },
+  {
+    "reviewId": "R058",
+    "category": "rebPractice",
+    "optionA": "A fundamental alteration of the zoning scheme",
+    "optionB": "Departure from the ordinarily applicable zoning rule",
+    "optionC": "Need to review the request outside the usual permit cycle",
+    "optionD": "Presence of unrelated residents in the proposed household",
+    "question": "Which factor could justify denying a requested disability-related zoning accommodation under the federal Fair Housing Act?"
+  },
+  {
+    "reviewId": "R059",
+    "category": "rebAgency",
+    "optionA": "Subordination provision",
+    "optionB": "Indemnification endorsement",
+    "optionC": "Financing contingency",
+    "optionD": "Liquidated-damages clause",
+    "question": "Which provision states in advance a sum payable for a specified contractual breach?"
+  },
+  {
+    "reviewId": "R060",
+    "category": "rebEnvironment",
+    "optionA": "4 pCi/L",
+    "optionB": "0.4 pCi/L",
+    "optionC": "2 pCi/L",
+    "optionD": "1 pCi/L",
+    "question": "Which radon result reaches EPA\u2019s recommended level for taking action to reduce exposure?"
+  },
+  {
+    "reviewId": "R061",
+    "category": "rebAgency",
+    "optionA": "Voidable contract",
+    "optionB": "Void agreement",
+    "optionC": "Unilateral option",
+    "optionD": "Executed release",
+    "question": "A fraud victim may avoid an otherwise binding agreement. How is that agreement classified before avoidance?"
+  },
+  {
+    "reviewId": "R062",
+    "category": "rebEnvironment",
+    "optionA": "Clean Water Act Section 404",
+    "optionB": "National Flood Insurance Program",
+    "optionC": "Clean Air Act Section 112",
+    "optionD": "Federal lead-disclosure program",
+    "question": "Which federal program addresses placing dredged or fill material into jurisdictional waters, including covered wetlands?"
+  },
+  {
+    "reviewId": "R063",
+    "category": "rebPractice",
+    "optionA": "Repairing a burst pipe after flooding",
+    "optionB": "Scheduled servicing before equipment failure",
+    "optionC": "Replacing a compressor after it seizes",
+    "optionD": "Adding an elevator where none existed",
+    "question": "Which maintenance expense is preventive rather than corrective or a capital upgrade?"
+  },
+  {
+    "reviewId": "R064",
+    "category": "rebPractice",
+    "optionA": "Evidence their office rents are similar",
+    "optionB": "Evidence each firm reviewed public advertisements",
+    "optionC": "Evidence they coordinated those prices",
+    "optionD": "Evidence consumers compare their charges",
+    "question": "Several brokerages publish similar fees. What additional fact most directly supports a price-fixing concern?"
+  },
+  {
+    "reviewId": "R065",
+    "category": "rebMath",
+    "optionA": "$190,000",
+    "optionB": "$123,500",
+    "optionC": "$120,000",
+    "optionD": "$130,000",
+    "question": "Potential rent is $200,000, vacancy loss 5%, and operating expenses $70,000. What annual NOI results?"
+  },
+  {
+    "reviewId": "R066",
+    "category": "rebPractice",
+    "optionA": "Consumer Financial Protection Bureau",
+    "optionB": "Federal Trade Commission",
+    "optionC": "Department of the Treasury",
+    "optionD": "Housing and Urban Development",
+    "question": "Which federal department receives individual administrative complaints alleging discrimination under the Fair Housing Act?"
+  },
+  {
+    "reviewId": "R067",
+    "category": "rebAgency",
+    "optionA": "Contractor's assumption about normal practice",
+    "optionB": "Principal's manifestations to the contractor",
+    "optionC": "Agent's personal belief about signing powers",
+    "optionD": "Agent's written assurance to the contractor",
+    "question": "An agent alone claims unlimited signing power. What evidence is missing for apparent authority?"
+  },
+  {
+    "reviewId": "R068",
+    "category": "rebAgency",
+    "optionA": "Reformation",
+    "optionB": "Compensatory damages",
+    "optionC": "Rescission",
+    "optionD": "Specific performance",
+    "question": "What remedy aims to unwind a contract and return parties to their former positions?"
+  },
+  {
+    "reviewId": "R069",
+    "category": "rebFinance",
+    "optionA": "Promissory note",
+    "optionB": "Mortgage or deed of trust",
+    "optionC": "Loan servicing statement",
+    "optionD": "Loan Estimate",
+    "question": "Which instrument pledges the real property as collateral, distinct from the borrower\u2019s promise to repay?"
+  },
+  {
+    "reviewId": "R070",
+    "category": "rebPractice",
+    "optionA": "Client\u2019s number appearing on the national registry",
+    "optionB": "Client\u2019s entity-specific do-not-call request",
+    "optionC": "Client\u2019s use of a live agent rather than a recording",
+    "optionD": "Client\u2019s completed transaction five months earlier",
+    "question": "A former client asks a brokerage to stop sales calls. Which fact defeats reliance on its existing business relationship?"
+  },
+  {
+    "reviewId": "R071",
+    "category": "rebValue",
+    "optionA": "Condition adjustment for deferred repairs",
+    "optionB": "Location adjustment for neighborhood utility",
+    "optionC": "Time adjustment for market trends",
+    "optionD": "Cash-equivalent transaction adjustment",
+    "question": "An otherwise similar sale included below-market credit from its owner. What CMA adjustment warrants investigation?"
+  },
+  {
+    "reviewId": "R072",
+    "category": "rebMath",
+    "optionA": "$4,200",
+    "optionB": "$15,600",
+    "optionC": "$7,800",
+    "optionD": "$12,000",
+    "question": "A $24,000 commission splits equally between firms; one agent receives 65% of that firm\u2019s share. What does the agent receive?"
+  },
+  {
+    "reviewId": "R073",
+    "category": "rebFinance",
+    "optionA": "A real estate brokerage\u2019s permitted cooperative fee",
+    "optionB": "Payment for documented services actually performed",
+    "optionC": "Value exchanged under a referral understanding",
+    "optionD": "A lender\u2019s discount directly to its own customer",
+    "question": "A covered settlement provider pays a broker solely for steering borrowers to it. What raises the RESPA Section 8 issue?"
+  },
+  {
+    "reviewId": "R074",
+    "category": "rebProperty",
+    "optionA": "Situs",
+    "optionB": "Indestructibility",
+    "optionC": "Fixity",
+    "optionD": "Scarcity",
+    "question": "Two equal lots differ in commuter access. Which characteristic most directly explains the resulting buyer preference?"
+  },
+  {
+    "reviewId": "R075",
+    "category": "rebMath",
+    "optionA": "$435,000",
+    "optionB": "$230,000",
+    "optionC": "$275,000",
+    "optionD": "$185,000",
+    "question": "Property worth $620,000 secures a $390,000 first mortgage and $45,000 second mortgage. What equity remains?"
+  },
+  {
+    "reviewId": "R076",
+    "category": "rebValue",
+    "optionA": "Contribution",
+    "optionB": "Regression",
+    "optionC": "Substitution",
+    "optionD": "Progression",
+    "question": "A modest house gains value from neighboring superior homes. Which appraisal principle describes this effect?"
+  },
+  {
+    "reviewId": "R077",
+    "category": "rebAgency",
+    "optionA": "Assistant's duty to perform the task",
+    "optionB": "Care in selection and oversight",
+    "optionC": "Client's duty to pay agreed expenses",
+    "optionD": "Principal's power to define the assignment",
+    "question": "A broker delegates client work to an assistant. Which responsibility does the broker retain?"
+  },
+  {
+    "reviewId": "R078",
+    "category": "rebMath",
+    "optionA": "It becomes $297,000",
+    "optionB": "It becomes $270,000",
+    "optionC": "It returns to $300,000",
+    "optionD": "It becomes $303,000",
+    "question": "An investment grows 10% one year and falls 10% the next. What happens to its original $300,000 value?"
+  },
+  {
+    "reviewId": "R079",
+    "category": "rebTitle",
+    "optionA": "Lease from Allen to Blake",
+    "optionB": "Mortgage from Allen to a bank",
+    "optionC": "Deed from Allen to Blake",
+    "optionD": "Release of Blake's mortgage",
+    "question": "Allen purchased; Blake later conveyed. No connecting transfer appears. Which document would most directly fill that ownership gap?"
+  },
+  {
+    "reviewId": "R080",
+    "category": "rebTitle",
+    "optionA": "Reversion in the leased premises",
+    "optionB": "Easement over the tenant's chattels",
+    "optionC": "Lien on the tenant's estate",
+    "optionD": "Remainder in a life estate",
+    "question": "Which interest is retained by a landlord while a tenant has exclusive possession?"
+  },
+  {
+    "reviewId": "R081",
+    "category": "rebEnvironment",
+    "optionA": "Encapsulation",
+    "optionB": "Enclosure",
+    "optionC": "Removal",
+    "optionD": "Air sampling",
+    "question": "Which asbestos treatment seals fibers with a binding coating while leaving the material in place?"
+  },
+  {
+    "reviewId": "R082",
+    "category": "rebPractice",
+    "optionA": "Record $500 as earned brokerage compensation",
+    "optionB": "Remove the $500 receipt from the control record",
+    "optionC": "Record a $500 payment in the owner\u2019s ledger",
+    "optionD": "Record a $500 receipt in the owner\u2019s ledger",
+    "question": "A $500 owner receipt appears in the bank and control record but not the owner\u2019s ledger. What correction reconciles them?"
+  },
+  {
+    "reviewId": "R083",
+    "category": "rebMath",
+    "optionA": "After 27 months",
+    "optionB": "After 36 months",
+    "optionC": "After 45 months",
+    "optionD": "After 30 months",
+    "question": "A $2,700 rate-buydown saves $75 monthly. Ignoring taxes and time value, when do payment savings recover that cost?"
+  },
+  {
+    "reviewId": "R084",
+    "category": "rebTitle",
+    "optionA": "Lee's death",
+    "optionB": "Dana's death",
+    "optionC": "Sam's death",
+    "optionD": "Original grantor's death",
+    "question": "Dana holds an estate for Lee's life and sells it to Sam. Whose death ends Sam's estate?"
+  },
+  {
+    "reviewId": "R085",
+    "category": "rebEnvironment",
+    "optionA": "Historical aerial photographs and street directories",
+    "optionB": "Owner interviews and on-site visual inspection",
+    "optionC": "Purchaser expertise and uncontaminated market value",
+    "optionD": "Historical land-use maps and old insurance maps",
+    "question": "An AAI report is eight months old at acquisition. Which components may need updating despite the one-year overall period?"
+  },
+  {
+    "reviewId": "R086",
+    "category": "rebTitle",
+    "optionA": "Mortgage's discharge requirements",
+    "optionB": "Grant's scope and surveyed location",
+    "optionC": "Policy's coverage amount and date",
+    "optionD": "Purchase contract's warranty language",
+    "question": "A policy excepts a driveway right. Which evidence best determines whether planned construction would interfere?"
+  },
+  {
+    "reviewId": "R087",
+    "category": "rebFinance",
+    "optionA": "Requirement that the VA directly originate the loan",
+    "optionB": "Exclusive eligibility for first-time ownership",
+    "optionC": "Mandatory purchase of private mortgage insurance",
+    "optionD": "Lender credit and income qualification",
+    "question": "A veteran has a Certificate of Eligibility. Which additional consideration remains for a VA-backed purchase loan?"
+  },
+  {
+    "reviewId": "R088",
+    "category": "rebPractice",
+    "optionA": "General reputation associated with the diagnosis",
+    "optionB": "Assumed risks shared by everyone with that condition",
+    "optionC": "Individualized facts about the applicant\u2019s conduct",
+    "optionD": "Neighbors\u2019 preferences concerning disability types",
+    "question": "What evidence is relevant to evaluating a claimed direct threat from an applicant with a disability?"
+  },
+  {
+    "reviewId": "R089",
+    "category": "rebEnvironment",
+    "optionA": "Disclosure of knowledge, without mandatory new testing",
+    "optionB": "A new inspection before any covered sale",
+    "optionC": "A risk assessment whenever children may occupy",
+    "optionD": "A laboratory test replacing the warning statement",
+    "question": "A seller reports no known lead hazards. What does the federal disclosure rule itself require concerning new testing?"
+  },
+  {
+    "reviewId": "R090",
+    "category": "rebAgency",
+    "optionA": "Replacing worn but functioning cabinets",
+    "optionB": "Stopping an active major water leak",
+    "optionC": "Upgrading finishes before lease renewal",
+    "optionD": "Repainting vacant units for marketing",
+    "question": "An owner authorizes emergency repairs and sets a routine spending cap. Which expenditure fits the separate emergency authority?"
+  },
+  {
+    "reviewId": "R091",
+    "category": "rebValue",
+    "optionA": "Contract balance",
+    "optionB": "Market value",
+    "optionC": "Historical cost",
+    "optionD": "Recorded sale price",
+    "question": "Which estimate concerns the most probable exchange amount rather than one completed transaction's amount?"
+  },
+  {
+    "reviewId": "R092",
+    "category": "rebTitle",
+    "optionA": "Judgment lien",
+    "optionB": "Access easement",
+    "optionC": "Purchase-money mortgage",
+    "optionD": "Property tax lien",
+    "question": "Which recorded interest burdens use without necessarily securing payment of a monetary obligation?"
+  },
+  {
+    "reviewId": "R093",
+    "category": "rebAgency",
+    "optionA": "Agent managing successive client properties",
+    "optionB": "Agent collecting compensation from a seller",
+    "optionC": "Agent also acting for personal account",
+    "optionD": "Agent appointing a cooperating subagent",
+    "question": "A broker acquires the client's property through an undisclosed controlled company. Which relationship creates the conflict?"
+  },
+  {
+    "reviewId": "R094",
+    "category": "rebAgency",
+    "optionA": "Special agency for one isolated conveyance",
+    "optionB": "Universal authority over all owner affairs",
+    "optionC": "General agency within the delegated business",
+    "optionD": "Agency confined to transferring fee title",
+    "question": "A manager is authorized to lease units and arrange routine repairs. Which agency scope fits ongoing operations?"
+  },
+  {
+    "reviewId": "R095",
+    "category": "rebEnvironment",
+    "optionA": "Unanimous consent from every former site operator",
+    "optionB": "Automatic termination of protection when occupancy begins",
+    "optionC": "Federal approval of every deed conveying the property",
+    "optionD": "Additional statutory and continuing obligations",
+    "question": "A buyer completes AAI before closing. What prevents that step alone from guaranteeing continuing CERCLA protection?"
+  },
+  {
+    "reviewId": "R096",
+    "category": "rebPractice",
+    "optionA": "Original purchase prices of nearby parcels",
+    "optionB": "Remaining principal on owners\u2019 mortgages",
+    "optionC": "Effective rents at competing properties",
+    "optionD": "Assessed values of neighboring buildings",
+    "question": "Which comparison best supports a rent schedule for units with similar size, condition and amenities?"
+  },
+  {
+    "reviewId": "R097",
+    "category": "rebFinance",
+    "optionA": "Addition of a prepayment penalty",
+    "optionB": "Reduction in a recording charge",
+    "optionC": "Change to the seller\u2019s forwarding address",
+    "optionD": "Correction of a misspelled borrower name",
+    "question": "Which change requires a new three-business-day review period after a corrected Closing Disclosure?"
+  },
+  {
+    "reviewId": "R098",
+    "category": "rebTitle",
+    "optionA": "Reconveyance deed",
+    "optionB": "Assignment of deed-of-trust rights",
+    "optionC": "Deed-of-trust modification",
+    "optionD": "Deed-of-trust subordination",
+    "question": "A deed-of-trust loan is repaid. Which instrument is used to return the trustee's interest?"
+  },
+  {
+    "reviewId": "R099",
+    "category": "rebValue",
+    "optionA": "Retain existing use at $390,000",
+    "optionB": "Redevelop for net $610,000",
+    "optionC": "Redevelop for net $500,000",
+    "optionD": "Retain existing use at $420,000",
+    "question": "Existing use is worth $420,000. Redevelopment yields $500,000 before $110,000 demolition costs. Which alternative produces greater property value?"
+  },
+  {
+    "reviewId": "R100",
+    "category": "rebPractice",
+    "optionA": "Source of income",
+    "optionB": "Occupation",
+    "optionC": "Religion",
+    "optionD": "Credit score",
+    "question": "Which classification is expressly protected by the federal Fair Housing Act, apart from additional state protections?"
+  },
+  {
+    "reviewId": "R101",
+    "category": "rebAgency",
+    "optionA": "Rescission of the transaction",
+    "optionB": "Reformation of the instrument",
+    "optionC": "Liquidation of agreed damages",
+    "optionD": "Assignment of the purchase rights",
+    "question": "A written contract mistakenly transcribes the agreed parcel number. Which remedy concerns correcting that writing?"
+  },
+  {
+    "reviewId": "R102",
+    "category": "rebTitle",
+    "optionA": "Lee, through Alex's probate estate",
+    "optionB": "Alex's statutory heirs, through probate",
+    "optionC": "Bea, outside Alex's probate estate",
+    "optionD": "Bea and Lee, as tenants in common",
+    "question": "Alex and Bea hold title with survivorship. Alex's will leaves everything to Lee. Who receives Alex's interest?"
+  },
+  {
+    "reviewId": "R103",
+    "category": "rebPractice",
+    "optionA": "Replacement by $600",
+    "optionB": "Replacement by $1,200",
+    "optionC": "Renewal by $600",
+    "optionD": "Renewal by $1,800",
+    "question": "A renewal yields $18,000; replacement yields $19,200 less $1,800 turnover costs. Which offers greater net receipts?"
+  },
+  {
+    "reviewId": "R104",
+    "category": "rebAgency",
+    "optionA": "Rescission and restitution",
+    "optionB": "Reformation of the writing",
+    "optionC": "Specific performance",
+    "optionD": "Compensatory damages",
+    "question": "A buyer seeks the promised land rather than money for breach. Which remedy requests that result?"
+  },
+  {
+    "reviewId": "R105",
+    "category": "rebMath",
+    "optionA": "$1,120,000",
+    "optionB": "$5,880",
+    "optionC": "$588,000",
+    "optionD": "$1,200,000",
+    "question": "A property produces $84,000 annual NOI. At a 7% capitalization rate, what value is indicated?"
+  },
+  {
+    "reviewId": "R106",
+    "category": "rebProperty",
+    "optionA": "Police power",
+    "optionB": "Eminent domain",
+    "optionC": "Tax assessment",
+    "optionD": "Escheat authority",
+    "question": "Which doctrine supports building codes intended to protect occupants' health and safety?"
+  },
+  {
+    "reviewId": "R107",
+    "category": "rebPractice",
+    "optionA": "Review the vendor\u2019s published compliance statement",
+    "optionB": "Verify that agents received the written policy",
+    "optionC": "Confirm the contract includes a compliance warranty",
+    "optionD": "Compare dialed numbers against current suppression lists",
+    "question": "Which vendor oversight measure tests whether a brokerage\u2019s do-not-call policy actually reaches calling operations?"
+  },
+  {
+    "reviewId": "R108",
+    "category": "rebFinance",
+    "optionA": "At least three business days",
+    "optionB": "At least three calendar days",
+    "optionC": "At the signing appointment",
+    "optionD": "At least one business day",
+    "question": "For a covered mortgage, how early must the borrower receive the initial Closing Disclosure before closing?"
+  },
+  {
+    "reviewId": "R109",
+    "category": "rebTitle",
+    "optionA": "Express covenants concerning title",
+    "optionB": "Delivery with intent to transfer",
+    "optionC": "Identification of the conveyed parcel",
+    "optionD": "Signature of the conveying owner",
+    "question": "Which provision distinguishes a warranty deed from a quitclaim deed for the grantee?"
+  },
+  {
+    "reviewId": "R110",
+    "category": "rebEnvironment",
+    "optionA": "Matching readings from the same construction type",
+    "optionB": "Using the county\u2019s average radon concentration",
+    "optionC": "Testing performed in the listed home",
+    "optionD": "Averaging readings from neighboring homes",
+    "question": "A neighboring house tested low for radon. What evidence establishes the listed home\u2019s radon level?"
+  },
+  {
+    "reviewId": "R111",
+    "category": "rebTitle",
+    "optionA": "Estate for years",
+    "optionB": "Determinable fee",
+    "optionC": "Fee simple absolute",
+    "optionD": "Tenancy at sufferance",
+    "question": "Which interest permits ownership for an indefinite duration without a special terminating condition?"
+  },
+  {
+    "reviewId": "R112",
+    "category": "rebProperty",
+    "optionA": "Possible shortage in the assessed area",
+    "optionB": "Possible encroachment on adjoining land",
+    "optionC": "Possible restriction on building height",
+    "optionD": "Possible reservation of subsurface rights",
+    "question": "A survey places a garage beyond the deed boundary. What should the broker flag?"
+  },
+  {
+    "reviewId": "R113",
+    "category": "rebPractice",
+    "optionA": "Have legal counsel develop the tailored provision",
+    "optionB": "Adapt a clause from an unrelated completed transaction",
+    "optionC": "Use a disclaimer while drafting the provision personally",
+    "optionD": "Treat the owner\u2019s approval as authority to give legal advice",
+    "question": "A manager encounters a specialized lease clause outside the manager\u2019s legal expertise. Which service boundary is appropriate?"
+  },
+  {
+    "reviewId": "R114",
+    "category": "rebProperty",
+    "optionA": "Servient tenement",
+    "optionB": "Leasehold reversion",
+    "optionC": "Mortgagee's security",
+    "optionD": "Dominant tenement",
+    "question": "A deed grants neighboring land access across a parcel. Which estate receives the benefit?"
+  },
+  {
+    "reviewId": "R115",
+    "category": "rebProperty",
+    "optionA": "It becomes an easement in gross",
+    "optionB": "It stays personally with the seller",
+    "optionC": "It accompanies the benefited land",
+    "optionD": "It expires upon the conveyance",
+    "question": "A buyer's deed omits an existing appurtenant easement benefiting the parcel. What ordinarily happens to that right?"
+  },
+  {
+    "reviewId": "R116",
+    "category": "rebFinance",
+    "optionA": "Primary residence regardless of geographic eligibility",
+    "optionB": "Seasonal vacation residence in an eligible rural area",
+    "optionC": "Primary residence in an eligible rural area",
+    "optionD": "Investment rental house in an eligible rural area",
+    "question": "Which proposed use fits the USDA Section 502 guaranteed program\u2019s stated occupancy purpose?"
+  },
+  {
+    "reviewId": "R117",
+    "category": "rebProperty",
+    "optionA": "Granting a driveway easement",
+    "optionB": "Recording a subdivision map",
+    "optionC": "Including it in an appraisal",
+    "optionD": "Cutting it into harvested logs",
+    "question": "Which change converts a standing tree into movable personal property for a sale?"
+  },
+  {
+    "reviewId": "R118",
+    "category": "rebProperty",
+    "optionA": "Equal assessed areas identify one parcel",
+    "optionB": "Matching lot numbers identify one parcel",
+    "optionC": "Parcel identity remains unconfirmed",
+    "optionD": "Earlier recording establishes parcel identity",
+    "question": "Two listings describe Lot 7, Block 2, but cite different recorded plats. What can the broker conclude?"
+  },
+  {
+    "reviewId": "R119",
+    "category": "rebValue",
+    "optionA": "Sales comparison approach",
+    "optionB": "Rent multiplier approach",
+    "optionC": "Income approach",
+    "optionD": "Cost approach",
+    "question": "Which approach combines a vacant-site estimate with the depreciated amount attributable to improvements?"
+  },
+  {
+    "reviewId": "R120",
+    "category": "rebFinance",
+    "optionA": "Annual percentage rate",
+    "optionB": "Total of Payments",
+    "optionC": "Cash to Close",
+    "optionD": "Total loan principal",
+    "question": "Which Closing Disclosure figure accounts for money already paid when stating the additional amount needed at settlement?"
+  },
+  {
+    "reviewId": "R121",
+    "category": "rebProperty",
+    "optionA": "Tenancy in severalty",
+    "optionB": "Appurtenant easement",
+    "optionC": "Easement in gross",
+    "optionD": "Estate in remainder",
+    "question": "A utility holds crossing rights without a benefited parcel. Which interest fits that arrangement?"
+  },
+  {
+    "reviewId": "R122",
+    "category": "rebAgency",
+    "optionA": "Explaining an offer's financing condition",
+    "optionB": "Presenting a purchaser's proposed terms",
+    "optionC": "Communicating the owner's asking price",
+    "optionD": "Signing the owner's purchase acceptance",
+    "question": "A listing authorizes solicitation, not execution. Which action exceeds the authority the owner actually granted?"
+  },
+  {
+    "reviewId": "R123",
+    "category": "rebAgency",
+    "optionA": "Agency relationship established with the buyer",
+    "optionB": "Party paying the transfer tax at settlement",
+    "optionC": "Party holding recorded title before closing",
+    "optionD": "Party delivering the commission at closing",
+    "question": "A buyer hires a broker; the seller funds that broker's fee. What identifies the represented party?"
+  },
+  {
+    "reviewId": "R124",
+    "category": "rebProperty",
+    "optionA": "Restrictive covenants",
+    "optionB": "Permanent monuments",
+    "optionC": "Appurtenant easements",
+    "optionD": "Trade fixtures",
+    "question": "A tenant installs removable bakery counters for business use. What category best describes these?"
+  },
+  {
+    "reviewId": "R125",
+    "category": "rebFinance",
+    "optionA": "FHA-insured mortgage",
+    "optionB": "USDA-guaranteed home loan",
+    "optionC": "Conventional mortgage",
+    "optionD": "VA-backed purchase loan",
+    "question": "Which mortgage category lacks federal insurance or a government guarantee?"
+  },
+  {
+    "reviewId": "R126",
+    "category": "rebMath",
+    "optionA": "$120,000",
+    "optionB": "$125,000",
+    "optionC": "$100,000",
+    "optionD": "$95,000",
+    "question": "A lender permits 80% of $475,000 appraised value on a $500,000 purchase. What price gap must other funds cover?"
+  },
+  {
+    "reviewId": "R127",
+    "category": "rebMath",
+    "optionA": "$19,500",
+    "optionB": "$32,500",
+    "optionC": "$27,500",
+    "optionD": "$39,500",
+    "question": "Commission is 5% on the first $400,000 and 3% above it. What fee applies to $650,000?"
+  },
+  {
+    "reviewId": "R128",
+    "category": "rebPractice",
+    "optionA": "115% over budget",
+    "optionB": "15% over budget",
+    "optionC": "15% under budget",
+    "optionD": "13% over budget",
+    "question": "Annual repairs were budgeted at $12,000 and totaled $13,800. What expense variance should the manager report?"
+  },
+  {
+    "reviewId": "R129",
+    "category": "rebAgency",
+    "optionA": "Executed conveyance",
+    "optionB": "Implied release",
+    "optionC": "Unilateral agreement",
+    "optionD": "Bilateral agreement",
+    "question": "A seller promises to convey in exchange for a buyer's promise to pay. What type of contract results?"
+  },
+  {
+    "reviewId": "R130",
+    "category": "rebEnvironment",
+    "optionA": "Moisture still supports renewed growth",
+    "optionB": "Federal clearance requires a fixed spore count",
+    "optionC": "Repainting is required before repairing the leak",
+    "optionD": "Every mold spore must be eliminated permanently",
+    "question": "A contractor removes visible mold but leaves an active roof leak. Why is the remediation incomplete?"
+  },
+  {
+    "reviewId": "R131",
+    "category": "rebPractice",
+    "optionA": "Management agreement\u2019s compensation provisions",
+    "optionB": "Property insurance\u2019s replacement limit",
+    "optionC": "Contractor invoice\u2019s material quantities",
+    "optionD": "Tenant lease\u2019s security-deposit provisions",
+    "question": "A management fee covers rent collection; major-renovation supervision is separately priced. What should establish the additional charge?"
+  },
+  {
+    "reviewId": "R132",
+    "category": "rebTitle",
+    "optionA": "An agreement allocating physical possession",
+    "optionB": "An appraisal allocating 40% of its value",
+    "optionC": "A deed confirming the fractional interest",
+    "optionD": "A record of the original purchase price",
+    "question": "A 40% cotenant fences off the front 40% for exclusive use. What additional basis would justify that allocation?"
+  },
+  {
+    "reviewId": "R133",
+    "category": "rebEnvironment",
+    "optionA": "Moderate flood risk has been fully analyzed",
+    "optionB": "Flood risk has not been determined",
+    "optionC": "Low flood risk has been affirmatively established",
+    "optionD": "Coastal wave hazards have been established",
+    "question": "What does a Zone D designation indicate on an NFIP flood map?"
+  },
+  {
+    "reviewId": "R134",
+    "category": "rebEnvironment",
+    "optionA": "Clean Water Act",
+    "optionB": "Safe Drinking Water Act",
+    "optionC": "Clean Air Act",
+    "optionD": "Comprehensive Environmental Response, Compensation, and Liability Act",
+    "question": "Which law provides the federal framework for regulating air emissions from industrial facilities and mobile sources?"
+  },
+  {
+    "reviewId": "R135",
+    "category": "rebValue",
+    "optionA": "Real property taxes",
+    "optionB": "Turnover cleaning between tenants",
+    "optionC": "Tenant water consumption",
+    "optionD": "Leasing commissions on new tenants",
+    "question": "Which cost remains comparatively stable when occupancy falls from full capacity to seventy percent?"
+  },
+  {
+    "reviewId": "R136",
+    "category": "rebAgency",
+    "optionA": "Bilateral versus unilateral",
+    "optionB": "Express versus implied",
+    "optionC": "Void versus voidable",
+    "optionD": "Executed versus executory",
+    "question": "Which classification concerns whether parties communicate their agreement through words or through conduct?"
+  },
+  {
+    "reviewId": "R137",
+    "category": "rebValue",
+    "optionA": "Subtract $12,000 from the comparable",
+    "optionB": "Subtract $12,000 from the subject",
+    "optionC": "Add $12,000 to the subject",
+    "optionD": "Add $12,000 to the comparable",
+    "question": "A comparable has a superior view worth $12,000. What adjustment makes its price comparable to the subject?"
+  },
+  {
+    "reviewId": "R138",
+    "category": "rebMath",
+    "optionA": "$7,980",
+    "optionB": "$1,750",
+    "optionC": "$2,020",
+    "optionD": "$2,150",
+    "question": "Monthly principal and interest total $1,620; annual taxes are $4,800 and insurance $1,560. What monthly PITI results?"
+  },
+  {
+    "reviewId": "R139",
+    "category": "rebValue",
+    "optionA": "External obsolescence versus functional loss",
+    "optionB": "Book depreciation versus acquisition expense",
+    "optionC": "Functional obsolescence versus physical wear",
+    "optionD": "Physical deterioration versus external loss",
+    "question": "Roof damage and highway noise both reduce value. Which distinction matters in estimating their causes?"
+  },
+  {
+    "reviewId": "R140",
+    "category": "rebProperty",
+    "optionA": "Number of newly qualified buyers",
+    "optionB": "Relative change in supply and demand",
+    "optionC": "Number of newly available listings",
+    "optionD": "Average time needed for settlement",
+    "question": "Demand and available listings both rise. What further comparison is needed to predict price pressure?"
+  },
+  {
+    "reviewId": "R141",
+    "category": "rebProperty",
+    "optionA": "Compliance with zoning alone",
+    "optionB": "Compliance with both restrictions",
+    "optionC": "Automatic removal of the covenant",
+    "optionD": "Cancellation of the private deed",
+    "question": "Zoning permits an office, but a valid covenant prohibits it. What must a broker evaluate?"
+  },
+  {
+    "reviewId": "R142",
+    "category": "rebPractice",
+    "optionA": "Price equality controls over access differences",
+    "optionB": "False availability can deny housing access",
+    "optionC": "Protection begins only after a written application",
+    "optionD": "Racial discrimination requires a higher rent charge",
+    "question": "An agent falsely reports no vacancies to one racial group. Why can equal published rents fail to cure discrimination?"
+  },
+  {
+    "reviewId": "R143",
+    "category": "rebTitle",
+    "optionA": "Breach postpones the original conveyance",
+    "optionB": "Breach converts the grantee into a tenant",
+    "optionC": "Breach necessarily creates a mortgage lien",
+    "optionD": "Breach can expose ownership to forfeiture",
+    "question": "A deed grants a park site subject to a use condition. How does this differ from an unrestricted fee?"
+  },
+  {
+    "reviewId": "R144",
+    "category": "rebValue",
+    "optionA": "Anticipation of benefits",
+    "optionB": "Balance of component costs",
+    "optionC": "Conformity of improvements",
+    "optionD": "Regression of neighboring values",
+    "question": "An investor prices a building from expected future rent. Which valuation principle underlies that decision?"
+  },
+  {
+    "reviewId": "R145",
+    "category": "rebFinance",
+    "optionA": "Occupant\u2019s damaged household contents",
+    "optionB": "Mortgage lender\u2019s loss",
+    "optionC": "Borrower\u2019s lost employment income",
+    "optionD": "Seller\u2019s lost resale profit",
+    "question": "A borrower pays mortgage insurance premiums. Whose default-related loss is that insurance principally designed to protect?"
+  },
+  {
+    "reviewId": "R146",
+    "category": "rebPractice",
+    "optionA": "All listing files with read-only permissions",
+    "optionB": "Property photos and seller financial statements",
+    "optionC": "All office records during the photography appointment",
+    "optionD": "Property photos and approved access instructions",
+    "question": "Which permissions best fit a photographer assigned to prepare listing images under FTC\u2019s least-privilege principle?"
+  },
+  {
+    "reviewId": "R147",
+    "category": "rebPractice",
+    "optionA": "Open listing",
+    "optionB": "Exclusive agency listing",
+    "optionC": "Exclusive buyer representation",
+    "optionD": "Exclusive right-to-sell listing",
+    "question": "An owner wants several brokers independently seeking purchasers without exclusive appointment. Which listing structure fits?"
+  },
+  {
+    "reviewId": "R148",
+    "category": "rebProperty",
+    "optionA": "Principal baseline",
+    "optionB": "Recorded monument",
+    "optionC": "Township boundary",
+    "optionD": "Principal meridian",
+    "question": "In a rectangular survey description, ranges measure position east or west of what?"
+  },
+  {
+    "reviewId": "R149",
+    "category": "rebMath",
+    "optionA": "$74,000",
+    "optionB": "$77,000",
+    "optionC": "$89,000",
+    "optionD": "$98,000",
+    "question": "Price is $400,000, loan $320,000, closing costs $9,000, deposit $12,000, and seller credit $3,000. What cash remains due?"
+  },
+  {
+    "reviewId": "R150",
+    "category": "rebValue",
+    "optionA": "$465,000",
+    "optionB": "$950,000",
+    "optionC": "$475,000",
+    "optionD": "$485,000",
+    "question": "Reconciliation weights a $450,000 sales indication 70% and a $500,000 income indication 30%. What value results?"
+  },
+  {
+    "reviewId": "R151",
+    "category": "rebAgency",
+    "optionA": "Uncommunicated intention to purchase",
+    "optionB": "Broker's opinion of market value",
+    "optionC": "Exchange of enforceable promises",
+    "optionD": "Seller's unilateral asking price",
+    "question": "What can supply consideration in a bilateral sale agreement before any money changes hands?"
+  },
+  {
+    "reviewId": "R152",
+    "category": "rebEnvironment",
+    "optionA": "Federal exclusion preempts state tank regulation",
+    "optionB": "The tank becomes subject to federal petroleum rules instead",
+    "optionC": "Exclusion depends on obtaining a federal closure permit",
+    "optionD": "State or local tank rules may still apply",
+    "question": "A heating-oil tank serves only the building where it is located. What follows from its federal UST exclusion?"
+  },
+  {
+    "reviewId": "R153",
+    "category": "rebProperty",
+    "optionA": "Extent of a floodplain restriction",
+    "optionB": "Scope of a driveway easement",
+    "optionC": "Terms of a boundary agreement",
+    "optionD": "Ownership of the mineral estate",
+    "question": "A surface owner proposes leasing oil rights. Which title evidence is most directly relevant?"
+  },
+  {
+    "reviewId": "R154",
+    "category": "rebAgency",
+    "optionA": "Principal withdraws the agent\u2019s authority",
+    "optionB": "Agreed representation period reaches its end",
+    "optionC": "Broker resigns from representing the principal",
+    "optionD": "Authorized transaction is completed by the agent",
+    "question": "Which action is revocation of an agency rather than the agent\u2019s renunciation or the agreement\u2019s expiration?"
+  },
+  {
+    "reviewId": "R155",
+    "category": "rebTitle",
+    "optionA": "Filing a recorded easement instrument",
+    "optionB": "Recording a mortgage against the parcel",
+    "optionC": "Indexing a deed in the county records",
+    "optionD": "Receiving a claimant's direct explanation",
+    "question": "Which event gives a prospective buyer actual notice rather than notice through public records?"
+  },
+  {
+    "reviewId": "R156",
+    "category": "rebPractice",
+    "optionA": "Commercial property coverage",
+    "optionB": "Workers\u2019 compensation coverage",
+    "optionC": "Business interruption coverage",
+    "optionD": "Professional liability coverage",
+    "question": "Which insurance category addresses claims that a broker negligently performed professional services?"
+  },
+  {
+    "reviewId": "R157",
+    "category": "rebValue",
+    "optionA": "Market appreciation",
+    "optionB": "External obsolescence",
+    "optionC": "Physical deterioration",
+    "optionD": "Functional obsolescence",
+    "question": "A home's only bathroom requires walking through a bedroom. Which loss best describes this deficiency?"
+  },
+  {
+    "reviewId": "R158",
+    "category": "rebValue",
+    "optionA": "Contribution",
+    "optionB": "Anticipation",
+    "optionC": "Progression",
+    "optionD": "Competition",
+    "question": "A seller paid heavily for a pool that buyers barely value. Which principle explains the difference?"
+  },
+  {
+    "reviewId": "R159",
+    "category": "rebFinance",
+    "optionA": "Interest-only amortization",
+    "optionB": "Negative amortization",
+    "optionC": "Principal curtailment",
+    "optionD": "Full amortization",
+    "question": "A permitted monthly payment is less than accrued interest, with the difference added to principal. What results?"
+  },
+  {
+    "reviewId": "R160",
+    "category": "rebProperty",
+    "optionA": "Date of the adjacent purchase",
+    "optionB": "Owner's preferred driveway design",
+    "optionC": "Combined value of both parcels",
+    "optionD": "Scope of the recorded grant",
+    "question": "An access grant benefits Parcel A. Its owner buys Parcel B next door. What determines use for Parcel B?"
+  },
+  {
+    "reviewId": "R161",
+    "category": "rebFinance",
+    "optionA": "Exclude the income because employment has ended",
+    "optionB": "Assess amount and continuity without categorical exclusion",
+    "optionC": "Count pension income only for applicants below retirement age",
+    "optionD": "Replace income verification with the applicant\u2019s age",
+    "question": "A qualified applicant relies on pension income. Which underwriting distinction is consistent with ECOA guidance?"
+  },
+  {
+    "reviewId": "R162",
+    "category": "rebAgency",
+    "optionA": "Revocation of the agency",
+    "optionB": "Rescission of the bargain",
+    "optionC": "Delegation before the act",
+    "optionD": "Ratification of the act",
+    "question": "After learning all material terms, an owner adopts an unauthorized deal. Which agency concept applies?"
+  },
+  {
+    "reviewId": "R163",
+    "category": "rebEnvironment",
+    "optionA": "Room nearest the street-facing entrance",
+    "optionB": "Floor containing the home\u2019s main thermostat",
+    "optionC": "Lowest level intended for regular occupancy",
+    "optionD": "Highest bedroom occupied during the prior year",
+    "question": "A buyer will use a basement as living space; the seller tested only upstairs. What testing location does EPA recommend?"
+  },
+  {
+    "reviewId": "R164",
+    "category": "rebFinance",
+    "optionA": "Elimination of the ongoing insurance charge",
+    "optionB": "Replacement of the mortgage with a private policy",
+    "optionC": "Higher loan balance and overall borrowing cost",
+    "optionD": "Lower principal with an unchanged cash requirement",
+    "question": "An FHA borrower finances an upfront insurance premium instead of paying cash. What financing consequence follows?"
+  },
+  {
+    "reviewId": "R165",
+    "category": "rebFinance",
+    "optionA": "Previously paid origination fee",
+    "optionB": "Original principal advanced by the lender",
+    "optionC": "Contractual interest rate on the fixed-rate note",
+    "optionD": "Escrow contribution for property expenses",
+    "question": "A fixed-rate borrower\u2019s total payment rises after property taxes increase. Which component can explain the change?"
+  },
+  {
+    "reviewId": "R166",
+    "category": "rebValue",
+    "optionA": "Conditions of the sale",
+    "optionB": "Physical characteristics",
+    "optionC": "Time of the sale",
+    "optionD": "Location characteristics",
+    "question": "A property sold to the owner's sibling at a discount. Which comparison element most needs review?"
+  },
+  {
+    "reviewId": "R167",
+    "category": "rebEnvironment",
+    "optionA": "Leave it in place and monitor condition",
+    "optionB": "Arrange removal before an ordinary home sale",
+    "optionC": "Replace intact insulation at the next lease renewal",
+    "optionD": "Encapsulate every intact surface before occupancy",
+    "question": "Intact suspected asbestos insulation will remain undisturbed. Which approach aligns with EPA guidance?"
+  },
+  {
+    "reviewId": "R168",
+    "category": "rebPractice",
+    "optionA": "Agent\u2019s fee falls when the price exceeds the minimum",
+    "optionB": "Agent must earn the same amount at every sale price",
+    "optionC": "Agent benefits from understating attainable proceeds",
+    "optionD": "Seller captures every dollar above the agreed minimum",
+    "question": "Why does compensation equal to everything above a seller\u2019s minimum create a distinctive conflict?"
+  },
+  {
+    "reviewId": "R169",
+    "category": "rebEnvironment",
+    "optionA": "EPA\u2019s indoor limit varies by building age",
+    "optionB": "EPA has not established such a federal limit",
+    "optionC": "EPA uses an outdoor limit for indoor clearance",
+    "optionD": "EPA\u2019s limit applies only to rental housing",
+    "question": "A report claims a home passed EPA\u2019s indoor mold-spore limit. What is wrong with that claim?"
+  },
+  {
+    "reviewId": "R170",
+    "category": "rebTitle",
+    "optionA": "Lender's recorded mortgage and payoff amount",
+    "optionB": "County's assessed value and taxpayer name",
+    "optionC": "Seller's recorded deed and acquisition date",
+    "optionD": "Occupant's agreement and its enforceability",
+    "question": "An occupant claims an unrecorded purchase option; the seller denies it. Which evidence resolves the conflict most directly?"
+  },
+  {
+    "reviewId": "R171",
+    "category": "rebTitle",
+    "optionA": "Lender's title insurance policy",
+    "optionB": "Abstract of title",
+    "optionC": "Owner's title insurance policy",
+    "optionD": "Grantor's covenants of title",
+    "question": "Which work product summarizes recorded conveyances without itself promising payment for a covered title loss?"
+  },
+  {
+    "reviewId": "R172",
+    "category": "rebEnvironment",
+    "optionA": "Local zoning approval resolves federal permit review",
+    "optionB": "Less-damaging alternatives must be considered first",
+    "optionC": "A proposed sale eliminates the discharge review",
+    "optionD": "Compensation automatically substitutes for avoidance",
+    "question": "A development can avoid wetland impacts through a practicable alternative. What issue arises under Section 404 review?"
+  },
+  {
+    "reviewId": "R173",
+    "category": "rebAgency",
+    "optionA": "Performance versus discharge",
+    "optionB": "Rescission versus reformation",
+    "optionC": "Inquiry versus qualified acceptance",
+    "optionD": "Assignment versus novation",
+    "question": "A response asks whether the seller would consider earlier closing, without rejecting the offer. What distinction matters?"
+  },
+  {
+    "reviewId": "R174",
+    "category": "rebFinance",
+    "optionA": "Partial-release clause in a blanket mortgage",
+    "optionB": "Prepayment clause charging for early payoff",
+    "optionC": "Acceleration clause following a payment default",
+    "optionD": "Interest-adjustment clause tied to an index",
+    "question": "A developer needs individual lots freed while other lots secure the remaining debt. Which provision addresses that need?"
+  },
+  {
+    "reviewId": "R175",
+    "category": "rebAgency",
+    "optionA": "Reading under the broker's office procedure",
+    "optionB": "Signature under the document execution date",
+    "optionC": "Arrival under the stated receipt condition",
+    "optionD": "Dispatch under the ordinary mailing rule",
+    "question": "An offer requires receipt by noon. Acceptance is mailed at 11 a.m. and arrives at 1 p.m. Which timing controls?"
+  },
+  {
+    "reviewId": "R176",
+    "category": "rebPractice",
+    "optionA": "$7,000",
+    "optionB": "$6,510",
+    "optionC": "$700",
+    "optionD": "$6,300",
+    "question": "A management contract charges 7% of collected rent. Scheduled rent is $100,000; collections are $90,000. What fee applies?"
+  },
+  {
+    "reviewId": "R177",
+    "category": "rebTitle",
+    "optionA": "Mortgage instrument",
+    "optionB": "Promissory note",
+    "optionC": "Deed of trust",
+    "optionD": "Warranty deed",
+    "question": "Which document principally conveys ownership rather than creating a loan security interest?"
+  },
+  {
+    "reviewId": "R178",
+    "category": "rebMath",
+    "optionA": "18%",
+    "optionB": "8%",
+    "optionC": "12.5%",
+    "optionD": "0.8%",
+    "question": "Annual cash income after debt service is $12,000 on $150,000 invested cash. What cash return percentage results?"
+  },
+  {
+    "reviewId": "R179",
+    "category": "rebProperty",
+    "optionA": "Eminent domain",
+    "optionB": "Tax foreclosure",
+    "optionC": "Escheat",
+    "optionD": "Police power",
+    "question": "An owner dies intestate without heirs. Which governmental doctrine can transfer the property to the state?"
+  },
+  {
+    "reviewId": "R180",
+    "category": "rebAgency",
+    "optionA": "It assigns the purchaser's obligations",
+    "optionB": "It establishes the seller's incapacity",
+    "optionC": "It uses an agreed contractual right",
+    "optionD": "It substitutes a new purchase contract",
+    "question": "A contract expressly permits cancellation after a failed inspection. Why is timely exercise not necessarily breach?"
+  },
+  {
+    "reviewId": "R181",
+    "category": "rebValue",
+    "optionA": "Remove debt service from expenses",
+    "optionB": "Exclude property management expenses",
+    "optionC": "Exclude ordinary maintenance expenses",
+    "optionD": "Exclude property insurance premiums",
+    "question": "An owner deducts mortgage payments in estimating NOI. What correction should the broker make?"
+  },
+  {
+    "reviewId": "R182",
+    "category": "rebValue",
+    "optionA": "Curable physical deterioration",
+    "optionB": "Incurable functional obsolescence",
+    "optionC": "Curable functional obsolescence",
+    "optionD": "Incurable external obsolescence",
+    "question": "Correcting a layout costs $30,000 but adds $18,000 in value. How is that defect generally classified economically?"
+  },
+  {
+    "reviewId": "R183",
+    "category": "rebProperty",
+    "optionA": "At the principal meridian",
+    "optionB": "At its point of beginning",
+    "optionC": "At the nearest public street",
+    "optionD": "At the township's center",
+    "question": "A boundary description follows bearings and distances. Where should its final course terminate?"
+  },
+  {
+    "reviewId": "R184",
+    "category": "rebEnvironment",
+    "optionA": "Coverage waits until a presidential disaster declaration",
+    "optionB": "Flood coverage is required for the loan",
+    "optionC": "A buyer\u2019s acknowledgment replaces required coverage",
+    "optionD": "A standard homeowners policy satisfies the requirement",
+    "question": "A home in a Special Flood Hazard Area has a government-backed mortgage. Which insurance issue follows?"
+  },
+  {
+    "reviewId": "R185",
+    "category": "rebPractice",
+    "optionA": "Disparate mortgage pricing",
+    "optionB": "Discriminatory property appraisal",
+    "optionC": "Racial steering",
+    "optionD": "Familial-status occupancy restriction",
+    "question": "A broker selects neighborhoods by buyers\u2019 race rather than their stated criteria. Which prohibited practice is involved?"
+  },
+  {
+    "reviewId": "R186",
+    "category": "rebMath",
+    "optionA": "$3,200",
+    "optionB": "$40,000",
+    "optionC": "$4,000",
+    "optionD": "$400",
+    "question": "A $320,000 loan carries 1.25 discount points. What upfront points charge applies?"
+  },
+  {
+    "reviewId": "R187",
+    "category": "rebAgency",
+    "optionA": "Acceptance creating a sale",
+    "optionB": "Assignment of the buyer's rights",
+    "optionC": "Ratification of the original price",
+    "optionD": "Counteroffer requiring assent",
+    "question": "A buyer offers $360,000; the seller signs but substitutes $375,000. What does the buyer receive?"
+  },
+  {
+    "reviewId": "R188",
+    "category": "rebAgency",
+    "optionA": "Ratification rather than prospective authority",
+    "optionB": "Express authority rather than implied authority",
+    "optionC": "Apparent authority rather than actual authority",
+    "optionD": "Universal authority rather than limited authority",
+    "question": "The principal authorizes a specific vendor contract. How does that differ from authority inferred from customary tasks?"
+  },
+  {
+    "reviewId": "R189",
+    "category": "rebValue",
+    "optionA": "Original economic life",
+    "optionB": "Remaining loan term",
+    "optionC": "Chronological age",
+    "optionD": "Effective age",
+    "question": "Which age estimate reflects maintenance and condition rather than elapsed years since construction?"
+  },
+  {
+    "reviewId": "R190",
+    "category": "rebValue",
+    "optionA": "Twelve times the consistent estimate",
+    "optionB": "Equal to the consistent estimate",
+    "optionC": "Higher by one month's rent only",
+    "optionD": "One-twelfth of the consistent estimate",
+    "question": "A monthly GRM is applied to annual rent. How will the estimate be distorted?"
+  },
+  {
+    "reviewId": "R191",
+    "category": "rebProperty",
+    "optionA": "Divisibility of interests",
+    "optionB": "Immobility of land",
+    "optionC": "Transferability of title",
+    "optionD": "Adaptability of buildings",
+    "question": "Which characteristic explains why a parcel cannot be moved to a stronger housing market?"
+  },
+  {
+    "reviewId": "R192",
+    "category": "rebValue",
+    "optionA": "Original acquisition cost",
+    "optionB": "Reproduction cost new",
+    "optionC": "Replacement cost new",
+    "optionD": "Depreciated book basis",
+    "question": "A cost estimate uses modern materials with equivalent utility. Which basis is being used?"
+  },
+  {
+    "reviewId": "R193",
+    "category": "rebFinance",
+    "optionA": "Balloon payment at maturity",
+    "optionB": "Automatic extension for twenty-five years",
+    "optionC": "Full amortization over five years",
+    "optionD": "Permanent interest-only financing",
+    "question": "Payments use a thirty-year repayment schedule, but the remaining balance is due after five years. What feature results?"
+  },
+  {
+    "reviewId": "R194",
+    "category": "rebValue",
+    "optionA": "$0",
+    "optionB": "$80,000",
+    "optionC": "$40,000",
+    "optionD": "$160,000",
+    "question": "A comparable has +$40,000 and -$40,000 adjustments. What gross adjustment does its zero net conceal?"
+  },
+  {
+    "reviewId": "R195",
+    "category": "rebTitle",
+    "optionA": "Lender's updated appraisal instructions",
+    "optionB": "Seller's amended listing instructions",
+    "optionC": "Agreement of the affected principals",
+    "optionD": "Listing broker's revised commission demand",
+    "question": "A seller requests diversion of the buyer's repair credit. What would authorize the neutral escrow holder to change allocations?"
+  },
+  {
+    "reviewId": "R196",
+    "category": "rebFinance",
+    "optionA": "Loan origination charge",
+    "optionB": "Initial escrow deposit",
+    "optionC": "Prepaid insurance premium",
+    "optionD": "Discount points",
+    "question": "Which closing charge establishes funds for future property-tax and insurance bills rather than paying a current premium?"
+  },
+  {
+    "reviewId": "R197",
+    "category": "rebProperty",
+    "optionA": "Adaptability to the premises",
+    "optionB": "Relationship of installer and owner",
+    "optionC": "Method of physical attachment",
+    "optionD": "Agreement governing its removal",
+    "question": "A custom cabinet fits a unique wall recess. Which fixture test does this illustrate?"
+  },
+  {
+    "reviewId": "R198",
+    "category": "rebProperty",
+    "optionA": "Property condition report",
+    "optionB": "Recorded plat description",
+    "optionC": "Metes-and-bounds traverse",
+    "optionD": "Street-address directory",
+    "question": "Which document identifies a subdivision parcel through a numbered lot and a referenced map?"
+  },
+  {
+    "reviewId": "R199",
+    "category": "rebAgency",
+    "optionA": "Subordination",
+    "optionB": "Delegation",
+    "optionC": "Novation",
+    "optionD": "Ratification",
+    "question": "All parties replace the original buyer and expressly discharge that buyer's obligation. Which concept fits?"
+  },
+  {
+    "reviewId": "R200",
+    "category": "rebAgency",
+    "optionA": "Modification of an existing obligation",
+    "optionB": "Execution of the original conveyance",
+    "optionC": "Assignment to a substitute purchaser",
+    "optionD": "Rescission of every contractual duty",
+    "question": "The parties agree to extend closing but leave price unchanged. Which description best fits their action?"
+  }
+]

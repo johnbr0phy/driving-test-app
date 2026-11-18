@@ -1,0 +1,15 @@
+{
+  "correct": 39,
+  "total": 40,
+  "mismatches": [
+    {
+      "reviewId": "R005",
+      "answer": "C",
+      "reason": "Best available choice: suction-pressure recovery. Mere onset of rising pressure is not a demonstrated safe connection criterion; exact supporting procedure not located.",
+      "confidence": 0.6,
+      "sources": [],
+      "questionId": "EPA609-YF-015",
+      "hit": false
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "R001": {
+    "questionId": "REBR-TITLE-003",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R002": {
+    "questionId": "REBR-ENV-024",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R003": {
+    "questionId": "REBR-PRACT-027",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R004": {
+    "questionId": "REBR-VALUE-005",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R005": {
+    "questionId": "REBR-VALUE-003",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R006": {
+    "questionId": "REBR-AGENCY-018",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R007": {
+    "questionId": "REBR-FIN-016",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R008": {
+    "questionId": "REBR-TITLE-019",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R009": {
+    "questionId": "REBR-ENV-006",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R010": {
+    "questionId": "REBR-AGENCY-015",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R011": {
+    "questionId": "REBR-FIN-013",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R012": {
+    "questionId": "REBR-FIN-012",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R013": {
+    "questionId": "REBR-AGENCY-032",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R014": {
+    "questionId": "REBR-PROP-020",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R015": {
+    "questionId": "REBR-AGENCY-016",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R016": {
+    "questionId": "REBR-PROP-010",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R017": {
+    "questionId": "REBR-PRACT-023",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R018": {
+    "questionId": "REBR-MATH-002",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R019": {
+    "questionId": "REBR-VALUE-022",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R020": {
+    "questionId": "REBR-PRACT-015",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R021": {
+    "questionId": "REBR-PRACT-026",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R022": {
+    "questionId": "REBR-ENV-020",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R023": {
+    "questionId": "REBR-PRACT-005",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R024": {
+    "questionId": "REBR-FIN-010",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R025": {
+    "questionId": "REBR-ENV-010",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R026": {
+    "questionId": "REBR-ENV-016",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R027": {
+    "questionId": "REBR-PRACT-022",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R028": {
+    "questionId": "REBR-AGENCY-024",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R029": {
+    "questionId": "REBR-ENV-018",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R030": {
+    "questionId": "REBR-AGENCY-005",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R031": {
+    "questionId": "REBR-FIN-015",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R032": {
+    "questionId": "REBR-VALUE-016",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R033": {
+    "questionId": "REBR-ENV-004",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R034": {
+    "questionId": "REBR-TITLE-010",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R035": {
+    "questionId": "REBR-PRACT-011",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R036": {
+    "questionId": "REBR-ENV-017",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R037": {
+    "questionId": "REBR-PROP-022",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R038": {
+    "questionId": "REBR-VALUE-009",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R039": {
+    "questionId": "REBR-FIN-001",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R040": {
+    "questionId": "REBR-VALUE-021",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R041": {
+    "questionId": "REBR-FIN-011",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R042": {
+    "questionId": "REBR-MATH-009",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R043": {
+    "questionId": "REBR-AGENCY-031",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R044": {
+    "questionId": "REBR-VALUE-023",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R045": {
+    "questionId": "REBR-TITLE-020",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R046": {
+    "questionId": "REBR-VALUE-024",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  }
+}

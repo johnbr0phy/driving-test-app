@@ -1,0 +1,75 @@
+{
+  "ALL": {
+    "n": 100,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "echo_fire": 37,
+    "echo_hit": 9,
+    "echo_gain": -0.1250000000000001,
+    "anti_echo_gain": 0.04166666666666696,
+    "echoed": [
+      "EPA609-REG-014",
+      "EPA609-REG-018",
+      "EPA609-REG-021",
+      "EPA609-EQP-024",
+      "EPA609-SRV-007",
+      "EPA609-SRV-009",
+      "EPA609-SRV-014",
+      "EPA609-YF-002",
+      "EPA609-YF-008"
+    ]
+  },
+  "epa609Rules": {
+    "n": 28,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "echo_fire": 11,
+    "echo_hit": 3,
+    "echo_gain": 0.4464285714285726,
+    "anti_echo_gain": -0.14880952380952409,
+    "echoed": [
+      "EPA609-REG-014",
+      "EPA609-REG-018",
+      "EPA609-REG-021"
+    ]
+  },
+  "epa609Equipment": {
+    "n": 24,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "echo_fire": 5,
+    "echo_hit": 1,
+    "echo_gain": -0.5208333333333328,
+    "anti_echo_gain": 0.17361111111111094,
+    "echoed": [
+      "EPA609-EQP-024"
+    ]
+  },
+  "epa609Service": {
+    "n": 32,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "echo_fire": 14,
+    "echo_hit": 3,
+    "echo_gain": -0.78125,
+    "anti_echo_gain": 0.2604166666666664,
+    "echoed": [
+      "EPA609-SRV-007",
+      "EPA609-SRV-009",
+      "EPA609-SRV-014"
+    ]
+  },
+  "epa609Yf": {
+    "n": 16,
+    "shared": 0,
+    "shared_pct": 0.0,
+    "echo_fire": 7,
+    "echo_hit": 2,
+    "echo_gain": 0.78125,
+    "anti_echo_gain": -0.2604166666666664,
+    "echoed": [
+      "EPA609-YF-002",
+      "EPA609-YF-008"
+    ]
+  }
+}

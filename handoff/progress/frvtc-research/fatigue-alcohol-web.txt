@@ -1,0 +1,185 @@
+Internal Error ()
+citeturn269view0 [wordlim: 200] Source: open({"ref_id":"https://modules.securite-routiere.gouv.fr/jsrt/Fatigue/Fatigue.html","lineno":null}); 
+Failed to fetch https://modules.securite-routiere.gouv.fr/jsrt/Fatigue/Fatigue.html: (502) Bad Gateway--------------------------------------------------------------------------------
+Effets immédiats d’une consommation d'alcool | ameli.fr | Assuré (https://www.ameli.fr/assure/sante/themes/alcool-sante/effets-consommation-alcool)
+citeturn269view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.ameli.fr/assure/sante/themes/alcool-sante/effets-consommation-alcool","lineno":null}); Total lines: 179
+L0: 【0†iframe†www.googletagmanager.com】
+L1: 
+L2: Ouvrir le menu
+L3: 
+L4: Fermer le menu
+L5: ## Votre caisse
+L6: 
+L7: Les pages d'ameli seront alors enrichies des informations locales de votre caisse (contacts, événements régionaux, etc.)
+L8: 
+L9: Saisissez votre code postal.
+L10: 
+L11: Les pages d'ameli seront alors enrichies d'informations locales (contacts, évènements régionaux, etc).
+L12: 
+L13: Code postal erroné. Veuillez faire une nouvelle tentative. Par exemple, renseigner le code postal 44000 pour la ville de Nantes.
+L14: 
+L15: Le champ avec astérisque (*) est obligatoire.
+L16: 
+L17: Votre code postal (format : 00000) *
+L18: [Input: Code postal] [Button: Valider]
+L19: 
+L20: Il existe plusieurs caisses d'Assurance Maladie pour le code postal que vous avez saisi. Veuillez choisir votre caisse parmi les propositions ci-dessous.
+L21: 
+L22: [Button: Valider]
+L23: 
+L24: Les pages d'ameli seront enrichies des informations de votre caisse :
+L25: 
+L26: [Input] [Button: Confirmer]
+L27: 
+L28: 【1†Ce n'est pas ma caisse】
+L29: 
+L30: 【2†Rechercher】
+L31: 
+L32: Se connecter
+L33: # À quel service souhaitez-vous vous connecter ?
+L34: 
+L35: Fermer
+L36: 
+L37: ## Mon compte ameli
+L38: 
+L39: Consulter mes remboursements, faciliter mes démarches…
+L40: 
+L41: 【3†Accéder à mon compte ameli†assure.ameli.fr】
+L42: 
+L43: 【4†Image】
+L44: 
+L45: 【3†Accéder à mon compte ameli†assure.ameli.fr】
+L46: 
+L47: ## Mon espace santé
+L48: 
+L49: Stocker et partager mes données de santé en toute sécurité
+L50: 
+L51: 【5†Accéder à Mon espace santé†www.monespacesante.fr】
+L52: 
+L53: 【6†Image】
+L54: 
+L55: 【5†Accéder à Mon espace santé†www.monespacesante.fr】
+L56: # Effets immédiats d’une consommation d'alcool
+L57: 
+L58: Cet article fait partie du dossier : 【7†Alcool et santé】
+L59: 
+L60: 05 octobre 2026
+L61: 
+L62: Même à petite dose, l’alcool affecte rapidement les réflexes, la vigilance et la capacité de jugement. À plus forte dose, c'est l'ivresse, le binge drinking ou alcoolisation ponctuelle importante. La consommation excessive d'alcool favorise à court terme la survenue d’accidents de la route, de comportements violents ou à risque.
+L63: 
+L64: Affichage des sections :Tout afficher
+L65: ## [Button: Quel est l’impact de l'alcool sur le corps ? ]
+L66: ### Alcool, produit psychoactif qui agit sur le cerveau
+L67: 
+L68: L’alcool est un produit psychoactif, c'est-à-dire qui a un effet direct sur le cerveau. Il peut entraîner diverses manifestations, selon la quantité ingérée.
+L69: Les effets de l’alcool dépendent directement de la dose absorbée, cependant avec une grande variabilité d’une personne à l’autre. Cela est dû à une enzyme située dans le foie qui détruit l’alcool présent dans le sang. Le niveau d’activité de cette enzyme (alcool-déshydrogénase) n’est pas le même chez tout le monde. C’est ce qui explique les effets immédiats différents d’une même dose d’alcool d’une personne à une autre.
+L70: À faible dose, l’alcool procure une sensation de détente et d’euphorie, voire d’excitation. Il a un effet désinhibant (libération de la parole, lâcher-prise, sensation de facilité à exécuter les tâches...) et aide à s’affranchir d’une éventuelle timidité. Cependant, les erreurs dans l'exécution des tâches sont plus nombreuses.
+L71: 
+L72: À plus forte dose, l'alcool provoque l’ivresse, qui se traduit par exemple par :
+L73:   * une mauvaise coordination des mouvements ;
+L74:   * des troubles de l'équilibre et des chutes ;
+L75:   * une augmentation du temps de réaction ;
+L76:   * une diminution plus nette des réflexes et de la vigilance ;
+L77:   * des troubles de la vue ;
+L78:   * des difficultés pour parler ;
+L79:   * des 【8†troubles de la mémoire 】;
+L80:   * une confusion, etc.
+L81: Si l’alcool est mélangé à d’autres produits psychoactifs (【9†cannabis, autres drogues】, 【10†médicaments】…), d'autres effets apparaissent : 【11†vomissements】,  【12†maux de tête】, troubles de la perception, de la parole, de la mémoire, perte d’équilibre, etc.
+L82: ### À quoi est due « la gueule de bois » ?
+L83: 
+L84: Sensation de tête lourde au réveil, maux de tête et nausées sont dus à la déshydratation par élimination excessive d'eau, à la toxicité de certains composants de l'alcool et à la perturbation du cycle du sommeil survenant lors d'une consommation importante d'alcool.
+L85: 
+L86: Pour faire passer, hydratez-vous abondamment et prévenez la « gueule de bois » en modérant votre consommation d'alcool.
+L87: ### Le binge drinking et le coma éthylique
+L88: 
+L89: La consommation très importante d'alcool peut entraîner une 【13†somnolence】, voire une 【14†perte de connaissance 】: c'est le coma éthylique. Dans ce cas la tension artérielle et la température corporelle diminuent. Cet état est plus fréquent en cas de consommation d’alcool massive en peu de temps (ou «  【15†binge drinking】 »). Il nécessite une hospitalisation en urgence, car faute de soins, il peut être fatal.
+L90: ### Personnes âgées : une grande sensibilité à l'alcool
+L91: Les personnes âgées sont particulièrement sensibles à la consommation d'alcool. Chez elles, un état d'ivresse peur survenir après une consommation d'alcool modérée car l'alcool est moins bien métabolisé quand on prend de l'âge. La consommation d'alcool, même de façon modérée, peut favoriser les troubles de l'équilibre, les 【16†chutes】 et leurs complications, les [Button: troubles cognitifs] et les troubles du comportement ainsi que la survenue d'une confusion mentale.
+L92: Consultez l'article 【17†Consommation d'alcool : avec l'âge, des risques accrus pour la santé†www.pour-les-personnes-agees.gouv.fr】.
+L93: ### Prise d'alcool en cas de temps froid
+L94: 
+L95: Par 【18†temps froid】, l'alcool donne une impression de chaleur qui est due à une dilatation des vaisseaux sanguins de la peau. Mais cette impression est trompeuse car elle s’accompagne en réalité d’une perte de chaleur et un risque de refroidissement.
+L96: 
+L97: ## [Button: L'alcool : une cause fréquente d’accidents de la route ]
+L98: ### Alcool et accidents de la route
+L99: 
+L100: En 2025, 3 515 personnes sont décédées sur les routes de France métropolitaine et d’outre-mer. Ce bilan traduit une hausse de + 2,4% par rapport à 2024, et de + 0,5 % par rapport à 2019, année de référence sur la décennie 2020-2030.
+L101: 
+L102: Dans les accidents mortels, la vitesse excessive ou inadaptée est présumée responsable dans 29 % des cas et l’alcool dans 21 % des cas présumés responsables.
+L103: Cette fréquence est expliquée par les effets de l'alcool sur l'organisme. En effet, l’alcool perturbe la vision et l’estimation des distances, augmente la sensibilité à l'éblouissement, altère la coordination des mouvements. De plus, son effet désinhibant amène à sous-évaluer le danger et à prendre des risques (conduite dangereuse et/ou sans casque ou ceinture de sécurité). C’est pourquoi, il faut absolument éviter de prendre le volant après avoir bu de l'alcool.
+L104: ### Taux d'alcoolémie et droit routier
+L105: 
+L106: La limite fixée du taux d'alcoolémie des conducteurs est de 0,5 g d’alcool par litre de sang, soit 0,25 mg par litre d’air expiré.
+L107: 
+L108: Pour les conducteurs titulaires d’un permis probatoire, et ceux en situation d’apprentissage, la limite fixée est de 0,2 g par litre de sang, soit 0,1 mg par litre d’air expiré.
+L109: ### La consommation d’alcool augmente les risques d’accident du travail
+L110: 
+L111: Qu’elle soit occasionnelle ou répétée, la prise de boissons alcoolisées peut nuire à la sécurité des travailleurs, surtout dans certaines tâches, notamment :
+L112: 
+L113:   * la conduite de véhicules ;
+L114:   * le travail en hauteur ;
+L115:   * l’usage d’outils dangereux.
+L116: 
+L117: ## [Button: Les conséquences possibles de l’excès d’alcool sur le comportement ]
+L118: 
+L119: L'excès de consommation d'alcool peut engendrer des modifications dans le comportement.
+L120: ### Alcool : de l'agressivité, de la violence, des délits...
+L121: 
+L122: L’alcool modifie les réactions face à une situation donnée. Aussi, une personne ivre a tendance à se focaliser sur l’irritation éventuelle qu’elle ressent dans le présent.
+L123: Moins consciente des conséquences de ses actes, elle peut perdre son sang-froid plus vite, agir de façon plus extrême ou agressive, tant envers les autres (violence familiale, 【19†violences faites aux femmes】, agressions...) qu'envers elle-même (passage à l'【20†acte suicidaire】 par exemple).
+L124: 
+L125: Les effets de l'alcool se cumulent à ceux dûs à la prise de 【9†drogues】.
+L126: ### Alcool : des rapports sexuels à risque
+L127: 
+L128: L’excès d’alcool affecte la capacité à maîtriser les situations et à se fixer des limites. Le risque est d’avoir une relation sexuelle non souhaitée ou d’oublier les mesures de 【21†contraception】, et de prévention des 【22†infections sexuellement transmissibles (IST)】.
+L129: 
+L130: Et bien que l’alcool désinhibe, il peut également entraîner des 【23†troubles de l’érection】 chez l’homme et diminuer le plaisir chez la femme.
+L131: ### N° d’Urgence Médicale
+L132: 
+L133:   * Samu : 15
+L134:   * Pompiers : 18
+L135:   * Appel d'urgence européen : 112
+L136: 
+L137: Ces numéros sont gratuits et peuvent être appelés d'un téléphone fixe ou d'un téléphone mobile même bloqué ou sans crédit.
+L138: ## [Button: Comprendre avec des images et des mots simples ]
+L139: 
+L140: Vous pouvez lire la bande dessinée 【24†L’alcool et ma santé†santebd.org】 sur le site santebd.org. La BD décrit de manière simple ce qu’est l’alcool et ses risques pour la santé.
+L141: 
+L142: Ce document a été réalisé par l’association CoActis Santé avec des personnes en situation de handicap. Il contient des images et des mots simples. C’est pourquoi il est facile à lire et à comprendre (FALC).
+L143: ## Sources
+L144:   * Institut national de la santé et de la recherche médicale (Inserm). Alcool et santé. Site internet : Inserm. Paris ; 2021 [consulté le 5 octobre 2026]
+L145:   * Santé publique France. Alcool. Site internet : Santé publique France. Saint Maurice (France) ; 2026 [consulté le 5 octobre 2026]
+L146:   * Collégiale des universitaires en hépato-gastro-entérologie. Addiction à l'alcool. ECN 2018, 4ème édition. Elsevier Masson. Issy-les Moulineaux (France)
+L147:   * Haute Autorité de santé. Diminuer le risque alcool des femmes : les points critiques en premier recours. Site internet : HAS. Saint-Denis La Plaine (France) ; 2025 [consulté le 5 octobre 2026]
+L148:   * Haute Autorité de santé. Agir en premier recours pour diminuer le risque alcool - Repérer tous les usages et accompagner chaque personne. Site internet : HAS. Saint-Denis La Plaine (France) ; 2023 [consulté le 5 octobre 2026]
+L149:   * Société française d’alcoologie. Recommandation de bonne pratique 2023 - Mésusage de l'alcool : dépistage, diagnostic et traitement. Site internet : Société française d’alcoologie. Issy-les-Moulineaux (France) ; 2023 [consulté le 5 octobre 2026]
+L150:   * Sécurité routière. Bilan définitif de l’accidentalité routière en 2025. Site internet : Sécurité routière.gouv. Paris ; 2026 [consulté le 5 octobre 2026]
+L151:   * Institut national de recherche et de sécurité (INRS). Addictions : tabac, alcool, drogues... Site internet : INRS. Paris ; 2023 [consulté le 5 octobre 2026]
+L152: ## Lire aussi
+L153: 
+L154: 【15†L'alcool : définition et repères de consommation】
+L155: 
+L156: ## Sites utiles
+L157: 
+L158: 【25†Alcool info service†www.alcool-info-service.fr】
+L159: 
+L160: Cet article vous a-t-il été utile ?
+L161: 
+L162: [Input] Oui
+L163: 
+L164: [Input] Non
+L165: 
+L166: Pourquoi cet article ne vous a pas été utile ? (obligatoire)
+L167: 
+L168:   * [Input] L'information n'est pas assez complète
+L169: 
+L170:   * [Input] L'information est trop compliquée
+L171: 
+L172:   * [Input] Il y a trop à lire
+L173: 
+L174:   * [Input] L'information ne semble pas à jour
+L175: 
+L176: [Input] [Input] [Input]
+L177: 
+L178: Laisser ce champ vide [Input]
+

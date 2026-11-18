@@ -1,0 +1,1202 @@
+[
+  {
+    "reviewId": "R001",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R002",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R003",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R004",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R005",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R006",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R007",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R008",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R009",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R010",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R011",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R012",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R013",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R014",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R015",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R016",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R017",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R018",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R019",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R020",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R021",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R022",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R023",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R024",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R025",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R026",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R027",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R028",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R029",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R030",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R031",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R032",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R033",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R034",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R035",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R036",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R037",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R038",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R039",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R040",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R041",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R042",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R043",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R044",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R045",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R046",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R047",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R048",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R049",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R050",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R051",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R052",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R053",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R054",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R055",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R056",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R057",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R058",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R059",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R060",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R061",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R062",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R063",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R064",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R065",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R066",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R067",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R068",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R069",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R070",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R071",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R072",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R073",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R074",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R075",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R076",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R077",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R078",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R079",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R080",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R081",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R082",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R083",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R084",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R085",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R086",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R087",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R088",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R089",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R090",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R091",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R092",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R093",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R094",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R095",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R096",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R097",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R098",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R099",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R100",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R101",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R102",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R103",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R104",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R105",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R106",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R107",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R108",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R109",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R110",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R111",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R112",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R113",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R114",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R115",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R116",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R117",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R118",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R119",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R120",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R121",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R122",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R123",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R124",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R125",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R126",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R127",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R128",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R129",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R130",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R131",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R132",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R133",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R134",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R135",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R136",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R137",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R138",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R139",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R140",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R141",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R142",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R143",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R144",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R145",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R146",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R147",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R148",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R149",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R150",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R151",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R152",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R153",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R154",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R155",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R156",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R157",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R158",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R159",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R160",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R161",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R162",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R163",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R164",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R165",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R166",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R167",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R168",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R169",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R170",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R171",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R172",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R173",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R174",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R175",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R176",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R177",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R178",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R179",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R180",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R181",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R182",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R183",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R184",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R185",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R186",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R187",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R188",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R189",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R190",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R191",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R192",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R193",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R194",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "No defensible cue; arbitrary tentative guess from options alone, without the missing stem."
+  },
+  {
+    "reviewId": "R195",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R196",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R197",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R198",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R199",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  },
+  {
+    "reviewId": "R200",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Unchanged locked Stage 1 selection; original item-specific rationale retained in options-guesses.json."
+  }
+]

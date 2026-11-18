@@ -1,0 +1,78 @@
+[
+  {
+    "id": "programs",
+    "url": "https://www.epa.gov/mvac/section-609-technician-training-and-certification-programs",
+    "fetched": "2026-11-18",
+    "file": "programs.html",
+    "sha256": "ef7f3325a519b533e7e36ad3466abec35043c87eff4ac61164b9f25216e07de0"
+  },
+  {
+    "id": "macs2025",
+    "url": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "fetched": "2026-11-18",
+    "file": "macs2025.pdf",
+    "sha256": "31ab88db9d96f4d6d53696f359a8aecd90ce862de09b4ee727f73602de5bf41d"
+  },
+  {
+    "id": "macs-format",
+    "url": "https://macsmobileairclimate.org/about-609-certification/",
+    "fetched": "2026-11-18",
+    "error": "HTTP Error 403: Forbidden",
+    "note": "Web tool successfully fetched/read this page; local cache unavailable."
+  },
+  {
+    "id": "cfr82b",
+    "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "fetched": "2026-11-18",
+    "error": "Local fetch access challenge; current regulation read successfully using web tool."
+  },
+  {
+    "id": "servicing",
+    "url": "https://www.epa.gov/mvac/regulatory-requirements-mvac-system-servicing",
+    "fetched": "2026-11-18",
+    "file": "servicing.html",
+    "sha256": "9b2a90de928e549775556018ace7ad578628c4461d3aaa67487c3882148ef67d"
+  },
+  {
+    "id": "overlap",
+    "url": "https://www.epa.gov/section608/section-608-and-section-609-overlap",
+    "fetched": "2026-11-18",
+    "file": "overlap.html",
+    "sha256": "bca9797d1a2d5f9df5ff704372e993f9faaf12ce13eca12d047d129c127a3ca9"
+  },
+  {
+    "id": "impacts",
+    "url": "https://www.epa.gov/mvac/acceptable-refrigerants-and-their-impacts",
+    "fetched": "2026-11-18",
+    "file": "impacts.html",
+    "sha256": "4f5177df2d3e385b83eb77f1c8c95337ed3491335dde786f07b3b6956a254053"
+  },
+  {
+    "id": "equipment",
+    "url": "https://www.epa.gov/mvac/certified-equipment",
+    "fetched": "2026-11-18",
+    "file": "equipment.html",
+    "sha256": "a222d6b080b95d6fa4404b5b857703f3ea530c6d33c48b95f92339a0599a6121"
+  },
+  {
+    "id": "fittings",
+    "url": "https://www.epa.gov/mvac/unique-fittings-and-label-colors",
+    "fetched": "2026-11-18",
+    "file": "fittings.html",
+    "sha256": "23607684755a3ba186dd529125f54eef1a47832e0a5831896e9640718b361989"
+  },
+  {
+    "id": "retrofit",
+    "url": "https://www.epa.gov/mvac/choosing-and-using-retrofit-refrigerant-cfc-12-mvac",
+    "fetched": "2026-11-18",
+    "file": "retrofit.html",
+    "sha256": "cd7644dc8a4888ba52ecddaf364ca845173a0e9850fdf39e0ab66242f465b1f4"
+  },
+  {
+    "id": "sales",
+    "url": "https://www.epa.gov/section608/refrigerant-sales-restriction",
+    "fetched": "2026-11-18",
+    "file": "sales.html",
+    "sha256": "fe3ba51efb0ae69488a26e8a3e51d1543307f5508edafc9a99630a80bb54ac92"
+  }
+]

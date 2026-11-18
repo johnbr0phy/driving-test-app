@@ -1,0 +1,53 @@
+{
+  "correct": 42,
+  "total": 46,
+  "categories": {
+    "rebTitle": [
+      4,
+      4
+    ],
+    "rebEnvironment": [
+      8,
+      8
+    ],
+    "rebPractice": [
+      6,
+      7
+    ],
+    "rebValue": [
+      8,
+      8
+    ],
+    "rebAgency": [
+      6,
+      7
+    ],
+    "rebFinance": [
+      6,
+      7
+    ],
+    "rebProperty": [
+      3,
+      3
+    ],
+    "rebMath": [
+      1,
+      2
+    ]
+  },
+  "cues": {
+    "knowledge": [
+      17,
+      17
+    ],
+    "none": [
+      16,
+      20
+    ],
+    "surface": [
+      9,
+      9
+    ]
+  },
+  "scope": "changed subset, NOT full-bank gate"
+}

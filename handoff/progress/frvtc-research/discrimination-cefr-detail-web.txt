@@ -1,0 +1,455 @@
+Article 225-1 - Code pénal - Légifrance (https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045391831/2026-10-22)
+citeturn289view0 [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045391831/2026-10-22","lineno":100}); Total lines: 177
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2: 【0†Image】
+L3: 
+L4: République
+L5: Française
+L6: 
+L7: 【1†Image】
+L8: 
+L9: 【2†Legifrance.gouv.fr】
+L10: 
+L11: Le service public de la diffusion du droit
+L12: 
+L13:   * [Button: Paramètres d'affichage]
+L14: 
+L15: [Button: Fermer]
+L16: 
+L17: [Button: Fermer ]
+L18: 
+L19: # Paramètres d’affichage
+L20: 
+L21: Choisissez un thème pour personnaliser l’apparence du site.
+L22: 
+L23: [Input] Thème clair
+L24: 
+L25: [Input] Thème sombre
+L26: 
+L27: [Input] Système Utilise les paramètres système
+L28: 
+L29: [Button: Fermer]
+L30: 
+L31: [...]
+L32: 
+L33: 【3†Voir en entier】
+L34: ## Rechercher sur Légifrance
+L35: 
+L36: [Input: Exemple : L. 121-1, CGI, 10-15056, dol, majeurs protégés]
+L37: 
+L38: ### Options de recherche
+L39: 
+L40: [Button: Fermer]
+L41: 
+L42: Fonds[Select]
+L43: 
+L44: Zone de recherche[Select]
+L45: 
+L46: [Input]Rechercher uniquement les contenus en vigueur
+L47: 
+L48: [Input]Rechercher l'expression exacte
+L49: 
+L50: 【4†Passer après les suggestions】
+L51: 
+L52: #### Suggestions
+L53: 
+L54: 【5†Revenir avant les suggestions】
+L55: 
+L56: 【6†Passer en recherche avancée】[Button: Afficher tous les résultats]
+L57: 
+L58: [Button: Rechercher]
+L59: 
+L60: [Input][Input]
+L61: 
+L62: 【6†Passer en recherche avancée】
+L63: 
+L64: * * *
+L65: ## Code pénal
+L66: 
+L67: En vigueur au 22/10/2026 En vigueur au 22 octobre 2026
+L68: 
+L69: Imprimer la page[Button: Copier le texte ]
+L70: 
+L71: ## ChronoLégi l'accès au droit dans le temps
+L72: 
+L73: [Button: Version à la date d'aujourd'hui ][Button: Voir les versions dans le temps ]
+L74: 
+L75: [Input]
+L76: ### Les différentes versions dans le temps
+L77: 
+L78: Fermer le Chronolégi
+L79: 
+L80: À la date du JJ/MM/AAAA
+L81: 
+L82: [Input: JJ/MM/AAAA][Button: Afficher cette version ]
+L83: 
+L84: Rechercher dans cette section ou dans tout le code
+L85: 
+L86: [Input]Rechercher dans cet article
+L87: 
+L88: [Input]Rechercher dans tout le code
+L89: 
+L90: [Input: Rechercher]Rechercher dans cette section ou dans tout le code
+L91: 
+L92: [Input] Réinitialiser le champ recherche
+L93: 
+L94: * * *
+L95: 
+L96: Voir le sommaire du code
+L97: 
+L98: [Button: Fermer]
+L99: 
+L100:   * ## 【7†Partie législative (Articles 111-1 à 727-3)】
+L101: Déplier/Replier
+L102:     * ### 【8†Livre II : Des crimes et délits contre les personnes (Articles 211-1 à 228-1)】
+L103: 
+L104: Déplier/Replier
+L105:       * #### 【9†Titre II : Des atteintes à la personne humaine (Articles 221-1 à 228-1)】
+L106: 
+L107: Déplier/Replier
+L108:         * ##### 【10†Chapitre V : Des atteintes à la dignité de la personne (Articles 225-1 à 225-26)】
+L109: 
+L110: Déplier/Replier
+L111:           * ###### 【11†Section 1 : Des discriminations (Articles 225-1 à 225-4)】
+L112: 
+L113: Déplier/Replier
+L114:             * 【12†Article 225-1】
+L115:             * 【13†Article 225-1-1】
+L116:             * 【14†Article 225-1-2】
+L117:             * 【15†Article 225-2】
+L118:             * 【16†Article 225-3】
+L119:             * 【17†Article 225-3-1】
+L120:             * 【18†Article 225-4】
+L121: 
+L122: [Input]
+L123: ## Article 225-1
+L124: 
+L125: En vigueur depuis le 01 sept. 2022 En vigueur depuis le 01 septembre 2022
+L126: 
+L127: 【19†Modifié par LOI n°2022-401 du 21 mars 2022 - art. 9】
+L128: Constitue une discrimination toute distinction opérée entre les personnes physiques sur le fondement de leur origine, de leur sexe, de leur situation de famille, de leur grossesse, de leur apparence physique, de la particulière vulnérabilité résultant de leur situation économique, apparente ou connue de son auteur, de leur patronyme, de leur lieu de résidence, de leur état de santé, de leur perte d'autonomie, de leur handicap, de leurs caractéristiques génétiques, de leurs mœurs, de leur orientation sexuelle, de leur identité de genre, de leur âge, de leurs opinions politiques, de leurs activités syndicales, de leur qualité de lanceur d'alerte, de facilitateur ou de personne en lien avec un lanceur d'alerte au sens, respectivement, du I de l'article 6 et des 【20†1° et 2° de l'article 6-1 de la loi n° 2016-1691 du 9 décembre 2016】 relative à la transparence, à la lutte contre la corruption et à la modernisation de la vie économique, de leur capacité à s'exprimer dans une langue autre que le français, de leur appartenance ou de leur non-appartenance, vraie ou supposée, à une ethnie, une Nation, une prétendue race ou une religion déterminée.
+L129: Constitue également une discrimination toute distinction opérée entre les personnes morales sur le fondement de l'origine, du sexe, de la situation de famille, de la grossesse, de l'apparence physique, de la particulière vulnérabilité résultant de la situation économique, apparente ou connue de son auteur, du patronyme, du lieu de résidence, de l'état de santé, de la perte d'autonomie, du handicap, des caractéristiques génétiques, des mœurs, de l'orientation sexuelle, de l'identité de genre, de l'âge, des opinions politiques, des activités syndicales, de la qualité de lanceur d'alerte, de facilitateur ou de personne en lien avec un lanceur d'alerte, au sens, respectivement, du I de l'article 6 et des 【20†1° et 2° de l'article 6-1 de la loi n° 2016-1691 du 9 décembre 2016 précitée】, de la capacité à s'exprimer dans une langue autre que le français, de l'appartenance ou de la non-appartenance, vraie ou supposée, à une ethnie, une Nation, une prétendue race ou une religion déterminée des membres ou de certains membres de ces personnes morales.
+L130: Conformément à l’article 18 de la loi n° 2022-401 du 21 mars 2022, ces dispositions entrent en vigueur le premier jour du sixième mois suivant sa promulgation.
+L131: 
+L132: [Button: Voir les versions ][Button: Comparer les versions ][Button: Textes liés ][Button: Informations pratiques ]
+L133: 
+L134: [Button: Fermer ]
+L135: 
+L136: Code pénal
+L137: 
+L138: En vigueur au 22/10/2026 En vigueur au 22 octobre 2026
+L139: 
+L140: [Button: Ouvrir ][Button: Réduire ]
+L141: 
+L142: Section 1 : Des discriminations
+L143: 
+L144: [Input]
+L145: 
+L146: [Input: JJ/MM/AAAA]
+L147: 
+L148: [Button: Version à la date d’aujourd'hui ]
+L149: Imprimer la page
+L150: 
+L151: Copier le texte
+L152: 
+L153: [Button: Naviguer dans les résultats ]
+L154: 
+L155: [Input]Haut
+L156: de page
+L157: ## L'aide Légifrance
+L158: 
+L159: Pour vous accompagner dans l'utilisation de Légifrance, consultez nos ressources d'aide. Pour une question sur vos droits ou vos démarches administratives, consultez Service-Public.gouv.fr et son aide.
+L160: 
+L161:   * 【21†Une question, une suggestion ou un problème sur légifrance ?】
+L162:   * 【22†Une question sur vos droits ou une démarche à réaliser ?†www.service-public.gouv.fr】
+L163:   * 【23†Voir les tutoriels vidéo Légifrance†www.youtube.com】
+L164:   * 【24†Guide des cas d'usage】
+L165: ## Abonnez-vous au Journal officiel de la République française
+L166: 
+L167: Recevez par courriel le sommaire dès sa publication.
+L168: 
+L169: 【25†En savoir plus sur la gestion de vos données et de vos droits.】
+L170: 
+L171: Votre adresse électronique (ex. : 【26†[email protected]】)
+L172: 
+L173: [Input: Votre adresse électronique (ex. : nom@example.com)][Button: S'abonner]
+L174: 
+L175: [Input]
+L176: En renseignant votre adresse électronique, vous acceptez de recevoir le sommaire du Journal officiel de la République française par email. Vous pouvez vous inscrire ou désinscrire à tout moment à l'aide de ce 【27†formulaire】
+--------------------------------------------------------------------------------
+ (https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4)
+citeturn289view1 [wordlim: 200] Crawled: today; Content type: application/pdf; Number of pages: 278; Source: open({"ref_id":"turn285view1","lineno":2415}); Total lines: 9673
+L2326@P51: messages, weather forecasts, narrated stories, news bulletins, interviews and documentaries. Key concepts
+L2327@P51: operationalised in the scale include the following:
+L2328@P51: f picking out concrete information;
+L2329@P51: f understanding main points, essential information;
+L2334@P51: C1 Can understand a wide range of recorded and broadcast material, including some non-standard usage,
+L2335@P51: and identify finer points of detail including implicit attitudes and relationships between people.
+L2336@P51: B2
+L2337@P51: Can understand recordings in the standard form of the language likely to be encountered in social,
+L2338@P51: professional or academic life and identify viewpoints and attitudes as well as the information content.
+L2339@P51: Can understand most documentaries and most other recorded or broadcast material delivered in the
+L2340@P51: standard form of the language and can identify mood, attitude, etc.
+L2341@P51: B1
+L2342@P51: Can understand the information content of the majority of recorded or broadcast material on topics of
+L2343@P51: personal interest delivered in clear standard language.
+L2344@P51: Can understand the main points of news bulletins and simpler recorded material about familiar subjects
+L2345@P51: delivered relatively slowly and clearly.
+L2346@P51: Can understand the main points and important details in stories and other narratives (e.g. a description of
+L2347@P51: a holiday), provided the delivery is slow and clear.
+L2348@P51: A2
+L2349@P51: Can understand the most important information contained in short commercials concerning goods and
+L2350@P51: services of interest (e.g. CDs, video games, travel).
+L2351@P51: Can understand in an interview what people say they do in their free time, what they particularly like doing
+L2352@P51: and what they do not like doing, provided they speak slowly and clearly.
+L2353@P51: Can understand and extract the essential information from short, recorded passages dealing with
+L2354@P51: predictable everyday matters which are delivered slowly and clearly.
+L2355@P51: Can extract important information from short broadcasts (e.g. the weather forecast, concert
+L2356@P51: announcements, sports results), provided people talk clearly.
+L2357@P51: Can understand the important points of a story and manage to follow the plot, provided the story is told
+L2358@P51: slowly and clearly.
+L2359@P51: A1 Can pick out concrete information (e.g. places and times) from short recordings on familiar everyday topics,
+L2360@P51: provided they are delivered very slowly and clearly.
+L2361@P51: Pre-A1 Can recognise words/signs, names and numbers that they already know in simple, short recordings,
+L2362@P51: provided these are delivered very slowly and clearly.
+L2363@P51: 3.1.1.2. Audio-visual comprehension
+L2364@P51: Watching TV, film and video
+L2365@P51: This scale includes live and recorded video material plus, at higher levels, film. Key concepts operationalised in
+L2366@P51: the scale include the following:
+L2367@P51: f following changes of topic and identifying main points;
+L2368@P51: f identifying details, nuances and implied meaning (C levels);
+L2369@P51-52: f delivery: from slow, clear standard usage to the ability to handle slang and idiomatic usage.The CEFR Illustrative Descriptor Scales: communicative language activities and strategies Page 53
+L2370@P52: Watching TV, film and video
+L2371@P52: C2 No descriptors available; see C1
+L2372@P52: C1
+L2373@P52: Can follow films employing a considerable degree of slang and idiomatic usage.
+L2374@P52: Can understand in detail the arguments presented in demanding television broadcasts such as current
+L2375@P52: affairs programmes, interviews, discussion programmes and chat shows.
+L2376@P52: Can understand nuances and implied meaning in most films, plays and TV programmes, provided these are
+L2377@P52: delivered in standard language or a familiar variety.
+L2378@P52: B2
+L2379@P52: Can extract the main points from the arguments and discussions in news and current affairs programmes.
+L2380@P52: Can understand most TV news and current affairs programmes.
+L2381@P52: Can understand documentaries, live interviews, talk shows, plays and the majority of films in the standard
+L2382@P52: form of the language or a familiar variety.
+L2383@P52: B1
+L2384@P52: Can understand a large part of many TV programmes on topics of personal interest such as interviews,
+L2385@P52: short lectures and news reports when the delivery is relatively slow and clear.
+L2386@P52: Can follow many films in which visuals and action carry much of the storyline, and which are delivered
+L2387@P52: clearly in straightforward language.
+L2388@P52: Can catch the main points in TV programmes on familiar topics when the delivery is relatively slow and
+L2389@P52: clear.
+L2390@P52: A2
+L2391@P52: Can identify the main point of TV news items reporting events, accidents, etc. where the visuals support
+L2392@P52: the commentary.
+L2393@P52: Can follow a TV commercial or a trailer for or scene from a film, understanding what topic(s) are concerned,
+L2394@P52: provided the images are a great help in understanding and the delivery is clear and relatively slow.
+L2395@P52: Can follow changes of topic of factual TV news items, and form an idea of the main content.
+L2396@P52: A1 Can recognise familiar words/signs and phrases and identify the topics in headline news summaries and
+L2397@P52: many of the products in advertisements, by exploiting visual information and general knowledge.
+L2398@P52: Pre-A1 Can identify the subject of a video document on the basis of visual information and previous knowledge.
+L2399@P52: 3.1.1.3. Reading comprehension
+L2400@P52: Reading comprehension is taken to include both written and signed texts. The categories for reading are a
+L2401@P52: mixture between reading purpose and reading particular genres with specific functions. In terms of reading
+L2402@P52: purpose, there is a fundamental difference between “Reading for orientation” and “Reading for information and
+L2403@P52: argument”. The former is sometimes called search reading and mainly takes two forms: firstly, reading a text
+L2404@P52: “diagonally” at speed in order to decide whether to read (parts of) it properly (= “skimming”), and secondly,
+L2405@P52: looking quickly through a text, searching for something specific – usually a piece of information (= “scanning”).
+L2406@P52: The latter is the way one reads artefacts like bus or train timetables, but sometimes one searches through a
+L2407@P52: long prose text looking for something in particular. Then there is a fundamental difference between “Reading
+L2408@P52: for information and argument” and “Reading as a leisure activity”. The latter may well involve non-fiction, but
+L2409@P52: not necessarily literature. It will also encompass magazines and newspapers, vlogs/blogs, biographies, etc. –
+L2410@P52: and possibly even texts that another person would read only for work or study purposes, depending on one’s
+L2411@P52: interests. Finally, there are texts that one reads in a particular way – like “Reading instructions”, a specialised
+L2412@P52: form of reading for information. “Reading correspondence” is different again, and this is offered first since the
+L2413@P52: scales start in each category with interpersonal language use. “Reading as a leisure activity” is listed last purely
+L2414@P52-53: because it was added in 2018.Page 54 3 CEFR – Companion volume
+L2415@P53: Overall reading comprehension
+L2416@P53: Overall reading comprehension
+L2417@P53: C2
+L2418@P53: Can understand virtually all types of texts including abstract, structurally complex, or highly colloquial
+L2419@P53: literary and non-literary writings.
+L2420@P53: Can understand a wide range of long and complex texts, appreciating subtle distinctions of style and
+L2421@P53: implicit as well as explicit meaning.
+L2422@P53: C1
+L2423@P53: Can understand in detail lengthy, complex texts, whether or not these relate to their own area of speciality,
+L2424@P53: provided they can reread difficult sections.
+L2425@P53: Can understand a wide variety of texts including literary writings, newspaper or magazine articles, and
+L2426@P53: specialised academic or professional publications, provided there are opportunities for rereading and they
+L2427@P53: have access to reference tools.
+L2428@P53: B2
+L2429@P53: Can read with a large degree of independence, adapting style and speed of reading to different texts and
+L2430@P53: purposes, and using appropriate reference sources selectively. Has a broad active reading vocabulary, but
+L2431@P53: may experience some difficulty with low-frequency idioms.
+L2432@P53: B1 Can read straightforward factual texts on subjects related to their field of interest with a satisfactory level
+L2433@P53: of comprehension.
+L2434@P53: A2
+L2435@P53: Can understand short, simple texts on familiar matters of a concrete type which consist of high frequency
+L2436@P53: everyday or job-related language.
+L2437@P53: Can understand short, simple texts containing the highest frequency vocabulary, including a proportion of
+L2438@P53: shared international vocabulary items.
+L2439@P53: A1 Can understand very short, simple texts a single phrase at a time, picking up familiar names, words and
+L2440@P53: basic phrases and rereading as required.
+L2441@P53: Pre-A1 Can recognise familiar words/signs accompanied by pictures, such as a fast-food restaurant menu
+L2442@P53: illustrated with photos or a picture book using familiar vocabulary.
+L2443@P53: Reading correspondence
+L2444@P53: This scale encompasses reading both personal and formal correspondence. Key concepts operationalised in
+L2445@P53: the scale include the following:
+L2446@P53: f length and complexity/simplicity of message;
+L2447@P53: f concreteness of information, whether it follows a routine format;
+L2448@P53: f the extent to which language is standard, colloquial, idiomatic;
+L2449@P53: f the extent to which the subject is an everyday one, or if it is related to interests, or specialised.
+L2450@P53: Reading correspondence
+L2451@P53: C2 Can understand specialised, formal correspondence on a complex topic.
+L2452@P53: C1
+L2453@P53: Can understand any correspondence given the occasional use of a dictionary.
+L2454@P53: Can understand implicit as well as explicit attitudes, emotions and opinions expressed in e-mails,
+L2455@P53: discussion forums, vlogs/blogs, etc., provided there are opportunities for rereading and they have access to
+L2456@P53: reference tools.
+L2457@P53: Can understand slang, idiomatic expressions and jokes in private correspondence.
+L2458@P53: B2 Can read correspondence relating to their field of interest and readily grasp the essential meaning.
+L2459@P53-54: Can understand what is said in a personal e-mail or posting even where some colloquial language is used.The CEFR Illustrative Descriptor Scales: communicative language activities and strategies Page 55
+L2460@P54: Reading correspondence
+L2461@P54: B1
+L2462@P54: Can understand formal correspondence on less familiar subjects well enough to redirect it to someone
+L2463@P54: else.
+L2464@P54: Can understand the description of events, feelings and wishes in personal letters well enough to
+L2465@P54: correspond regularly with a pen friend.
+L2466@P54: Can understand straightforward personal letters, e-mails or postings giving a relatively detailed account of
+L2467@P54: events and experiences.
+L2468@P54: Can understand standard formal correspondence and online postings in their area of professional interest.
+L2469@P54: A2
+L2470@P54: Can understand a simple personal letter, e-mail or post in which the person writing is talking about familiar
+L2471@P54: subjects (such as friends or family) or asking questions on these subjects.
+L2472@P54: Can understand basic types of standard routine letters and faxes (enquiries, orders, letters of confirmation,
+L2473@P54: etc.) on familiar topics.
+L2474@P54: Can understand short, simple personal letters.
+L2475@P54: Can understand very simple formal e-mails and letters (e.g. confirmation of a booking or online purchase).
+L2476@P54: A1
+L2477@P54: Can understand short, simple messages on postcards.
+L2478@P54: Can understand short, simple messages sent via social media or e-mail (e.g. proposing what to do, when
+L2479@P54: and where to meet).
+L2480@P54: Pre-A1
+L2481@P54: Can understand from a letter, card or e-mail the event to which they are being invited and the information
+L2482@P54: given about day, time and location.
+L2483@P54: Can recognise times and places in very simple notes and text messages from friends or colleagues (e.g.
+L2484@P54: “Back at 4 o’clock” or “In the meeting room”), provided there are no abbreviations.
+L2485@P54: Reading for orientation
+L2486@P54: Reading for orientation – search reading – involves “skimming”: reading at speed in order to judge relevance and
+L2487@P54: “scanning”: searching for specific information. In relation to signed texts, both functions are achieved by putting
+L2488@P54: the video into “fast forward”. Key concepts operationalised in the scale include the following:
+L2489@P54: f the types of text (from notices, leaflets, etc. to articles and books);
+L2490@P54: f picking out concrete information like times and prices from texts that are visual artefacts, rather than prose
+L2491@P54: text, with helpful layout;
+L2492@P54: f identifying important information;
+L2493@P54: f scanning prose text for relevance;
+L2494@P54: f speed, mentioned in B2.
+L2495@P54: Reading for orientation
+L2496@P54: C2 No descriptors available; see B2
+L2497@P54: C1 No descriptors available; see B2
+L2498@P54: B2
+L2499@P54: Can scan quickly through several sources (articles, reports, websites, books, etc.) in parallel, in both their
+L2500@P54: own field and in related fields, and can identify the relevance and usefulness of particular sections for the
+L2501@P54: task at hand.
+L2502@P54: Can scan quickly through long and complex texts, locating relevant details.
+L2503@P54: Can quickly identify the content and relevance of news items, articles and reports on a wide range of
+L2504@P54-55: professional topics, deciding whether closer study is worthwhile.Page 56 3 CEFR – Companion volume
+L2505@P55: Reading for orientation
+L2506@P55: B1
+L2507@P55: Can scan longer texts in order to locate desired information, and gather information from different parts of
+L2508@P55: a text, or from different texts in order to fulfil a specific task.
+L2509@P55: Can scan through straightforward, factual texts in magazines, brochures or on the web, identify what they
+L2510@P55: are about and decide whether they contain information that might be of practical use.
+L2511@P55: Can find and understand relevant information in everyday material, such as letters, brochures and short
+L2512@P55: official documents.
+L2513@P55: Can pick out important information about preparation and usage on the labels on foodstuff and medicine.
+L2514@P55: Can assess whether an article, report or review is on the required topic.
+L2515@P55: Can understand the important information in simple, clearly drafted adverts in newspapers or magazines,
+L2516@P55: provided there are not too many abbreviations.
+L2517@P55: A2
+L2518@P55: Can find specific information in practical, concrete, predictable texts (e.g. travel guidebooks, recipes),
+L2519@P55: provided they are produced in simple language.
+L2520@P55: Can understand the main information in short and simple descriptions of goods in brochures and websites
+L2521@P55: (e.g. portable digital devices, cameras).
+L2522@P55: Can find specific, predictable information in simple everyday material such as advertisements,
+L2523@P55: prospectuses, menus, reference lists and timetables.
+L2524@P55: Can locate specific information in lists and isolate the information required (e.g. use the Yellow Pages to
+L2525@P55: find a service or tradesman).
+L2526@P55: Can understand everyday signs and notices, etc. in public places, such as streets, restaurants, railway
+L2527@P55: stations; in workplaces, such as directions, instructions, hazard warnings.
+L2528@P55: A1
+L2529@P55: Can recognise familiar names, words/signs and very basic phrases on simple notices in the most common
+L2530@P55: everyday situations.
+L2531@P55: Can understand store guides (information on which floors departments are on) and directions (e.g. where
+L2532@P55: to find lifts).
+L2533@P55: Can understand basic hotel information (e.g. times when meals are served).
+L2534@P55: Can find and understand simple, important information in advertisements, programmes for special events,
+L2535@P55: leaflets and brochures (e.g. what is proposed, costs, the date and place of the event, departure times).
+L2536@P55: Pre-A1 Can understand simple everyday signs such as “Parking”, “Station”, “Dining room”, “No smoking”, etc.
+L2537@P55: Can find information about places, times and prices on posters, flyers and notices.
+L2538@P55: Reading for information and argument
+L2539@P55: Reading for information and argument – detailed reading – involves careful study of a written or signed text
+L2540@P55: that one has judged to be relevant for a purpose at hand. It is often associated with study and professional life.
+L2541@P55: Key concepts operationalised in the scale include the following:
+L2542@P55: f types of text, from simple, short, illustrated informational material to complex reports and articles;
+L2543@P55: f subjects of text, from familiar everyday subjects of personal interest to topics outside their area of interest;
+L2544@P55: f depth of understanding, from getting an idea of the content to understanding the finer points and
+L2545@P55: implications.
+L2546@P55: Reading for information and argument
+L2547@P55: C2 Can understand the finer points and implications of a complex report or article even outside their area of
+L2548@P55: specialisation.
+L2549@P55: C1
+L2550@P55: Can understand in detail a wide range of lengthy, complex texts likely to be encountered in social,
+L2551@P55: professional or academic life, identifying finer points of detail including attitudes and implied as well as
+L2552@P55-56: stated opinions.The CEFR Illustrative Descriptor Scales: communicative language activities and strategies Page 57
+L2553@P56: Reading for information and argument
+L2554@P56: B2
+L2555@P56: Can obtain information, ideas and opinions from highly specialised sources within their field.
+L2556@P56: Can understand specialised articles outside their field, provided they can use a dictionary occasionally to
+L2557@P56: confirm their interpretation of terminology.
+L2558@P56: Can understand articles and reports concerned with contemporary problems in which particular stances or
+L2559@P56: viewpoints are adopted.
+L2560@P56: Can recognise when a text provides factual information and when it seeks to convince readers of
+L2561@P56: something.
+L2562@P56: Can recognise different structures in discursive text: contrasting arguments, problem–solution
+L2563@P56: presentation and cause–effect relationships.
+L2564@P56: B1
+L2565@P56: Can understand straightforward, factual texts on subjects relating to their interests or studies.
+L2566@P56: Can understand short texts on subjects that are familiar or of current interest, in which people give their
+L2567@P56: points of view (e.g. critical contributions to an online discussion forum or readers’ letters to the editor).
+L2568@P56: Can identify the main conclusions in clearly signalled argumentative texts.
+L2569@P56: Can recognise the line of argument in the treatment of the issue presented, though not necessarily in detail.
+L2570@P56: Can recognise significant points in straightforward news articles on familiar subjects.
+L2571@P56: Can understand most factual information that they are likely to come across on familiar subjects of interest,
+L2572@P56: provided they have sufficient time for rereading.
+L2573@P56: Can understand the main points in descriptive notes such as those on museum exhibits and explanatory
+L2574@P56: boards in exhibitions.
+L2575@P56: A2
+L2576@P56: Can identify specific information in simpler material they encounter such as letters, brochures and short
+L2577@P56: news articles describing events.
+L2578@P56: Can follow the general outline of a news report on a familiar type of event, provided the contents are
+L2579@P56: familiar and predictable.
+L2580@P56: Can pick out the main information in short news reports or simple articles in which figures, names,
+L2581@P56: illustrations and titles play a prominent role and support the meaning of the text.
+L2582@P56: Can understand the main points of short texts dealing with everyday topics (e.g. lifestyle, hobbies, sports,
+L2583@P56: weather).
+L2584@P56: Can understand texts describing people, places, everyday life and culture, etc., provided they use simple
+L2585@P56: language.
+L2586@P56: Can understand information given in illustrated brochures and maps (e.g. the principal attractions of a city).
+L2587@P56: Can understand the main points in short news items on subjects of personal interest (e.g. sport, celebrities).
+L2588@P56: Can understand a short factual description or report within their own field, provided simple language is
+L2589@P56: used and that it does not contain unpredictable detail.
+L2590@P56: Can understand most of what people say about themselves in a personal ad or post and what they say they
+L2591@P56: like in other people.
+L2592@P56: A1
+L2593@P56: Can get an idea of the content of simpler informational material and short, simple descriptions, especially if
+L2594@P56: there is visual support.
+L2595@P56: Can understand short texts on subjects of personal interest (e.g. news flashes about sports, music, travel or
+L2596@P56: stories) composed in very simple language and supported by illustrations and pictures.
+L2597@P56: Pre-A1 Can understand the simplest informational material such as a fast-food restaurant menu illustrated with
+L2598@P56-57: photos or an illustrated story formulated in very simple everyday words/signs.Page 58 3 CEFR – Companion volume
+L2599@P57: Reading instructions
+L2600@P57: Reading instructions is a specialised form of reading for information, and again concerns written or signed text.
+L2601@P57: Key concepts operationalised in the scale include the following:
+

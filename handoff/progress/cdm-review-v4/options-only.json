@@ -1,0 +1,1802 @@
+[
+  {
+    "questionId": "CDM-NUT-001",
+    "options": [
+      "Observe use of meal containers",
+      "Obtain a monthly food-frequency history",
+      "Review the prescribed nutrient targets",
+      "Compare admission and current weights"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-002",
+    "options": [
+      "Dietitian and speech therapist",
+      "Dietitian and pharmacist",
+      "Nurse and occupational therapist",
+      "Physician and physical therapist"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-003",
+    "options": [
+      "Two occurrences on separate days",
+      "Three occurrences on separate days",
+      "One occurrence",
+      "An occurrence every day"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-004",
+    "options": [
+      "Milliliters consumed per delivered serving",
+      "Calories listed per unopened carton",
+      "Residents requesting a different flavor",
+      "Scheduled servings that reached residents"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-005",
+    "options": [
+      "½ cup: 30 g carbohydrate per cup",
+      "1 cup: 30 g carbohydrate per cup",
+      "½ cup: 20 g carbohydrate per cup",
+      "1 cup: 20 g carbohydrate per cup"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-006",
+    "options": [
+      "22.5 kg/m²",
+      "28.1 kg/m²",
+      "45.0 kg/m²",
+      "115.2 kg/m²"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-007",
+    "options": [
+      "The lowest weights in the previous year",
+      "The highest weights in the previous month",
+      "Those closest to 30 and 180 days earlier",
+      "Only the last two weekly weights"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-008",
+    "options": [
+      "8%",
+      "10%",
+      "12%",
+      "5%"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-009",
+    "options": [
+      "300 mL per meal",
+      "400 mL per meal",
+      "500 mL per meal",
+      "600 mL per meal"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-010",
+    "options": [
+      "260 kcal",
+      "250 kcal",
+      "310 kcal",
+      "370 kcal"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-011",
+    "options": [
+      "Occupational safety specialist",
+      "Registered pharmacy technician",
+      "Speech-language pathologist",
+      "Foodservice quality coordinator"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-012",
+    "options": [
+      "The kitchen order feed",
+      "The meal-production tally",
+      "The 10 a.m. clinical order",
+      "The tray card used at assembly"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-013",
+    "options": [
+      "Steamed rice",
+      "Cooked barley",
+      "Wheat couscous",
+      "Boiled farro"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-014",
+    "options": [
+      "Nourishment delivery on 7 days",
+      "Mean lunch consumption of 65%",
+      "Breakfast consumption of 75%",
+      "Attendance at 6 dining sessions"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-015",
+    "options": [
+      "Healthy weight",
+      "Overweight",
+      "Underweight",
+      "Class 1 obesity"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-016",
+    "options": [
+      "6 g",
+      "14 g",
+      "20 g",
+      "8 g"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-017",
+    "options": [
+      "Add 240 mg sodium per portion",
+      "Subtract 240 mg sodium per portion",
+      "Add 600 mg sodium per portion",
+      "Keep 180 mg sodium per portion"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-018",
+    "options": [
+      "Parenteral/IV feeding",
+      "Mechanically altered diet",
+      "Feeding tube",
+      "Therapeutic diet automatically"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-019",
+    "options": [
+      "Weight maintenance was not achieved",
+      "Meal acceptance remained unchanged",
+      "The two stated outcomes improved or held",
+      "The data demonstrate a new diet order"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-020",
+    "options": [
+      "90 mL",
+      "120 mL",
+      "180 mL",
+      "60 mL"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-021",
+    "options": [
+      "Meals eaten before and after the change",
+      "Weights measured morning and evening",
+      "Portions offered at breakfast and lunch",
+      "Food preferences recorded at two admissions"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-022",
+    "options": [
+      "Corn-derived starch",
+      "Barley malt extract",
+      "Plain tomato puree",
+      "Unseasoned olive oil"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-023",
+    "options": [
+      "The interval between prior measurements",
+      "The meal percentage from yesterday",
+      "The method behind today's entry",
+      "The date of the last diet review"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-024",
+    "options": [
+      "120 mL",
+      "180 mL",
+      "360 mL",
+      "160 mL"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-025",
+    "options": [
+      "The signed order and the actual meal",
+      "The tray card and the production tally",
+      "The recipe sheet and the tray label",
+      "The assembly list and the dispatch list"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-026",
+    "options": [
+      "10 g",
+      "20 g",
+      "15 g",
+      "45 g"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-027",
+    "options": [
+      "Calcium",
+      "Iron",
+      "Potassium",
+      "Phosphorus"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-028",
+    "options": [
+      "High sodium; low fiber",
+      "Low sodium; low fiber",
+      "High sodium; high fiber",
+      "Low sodium; high fiber"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-029",
+    "options": [
+      "No net increase in daily energy intake",
+      "A 150 kcal gain in daily energy intake",
+      "A 300 kcal gain in daily energy intake",
+      "A 150 kcal fall in daily energy intake"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-030",
+    "options": [
+      "800 mL",
+      "1050 mL",
+      "850 mL",
+      "1250 mL"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-031",
+    "options": [
+      "Compare the calories per package",
+      "Use the smaller serving for both",
+      "Convert both to the 60 g portion",
+      "Compare only their percentage columns"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-032",
+    "options": [
+      "Sweetened condensed milk",
+      "Evaporated milk",
+      "Nonfat dry milk powder",
+      "Aged cheddar cheese"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-033",
+    "options": [
+      "1600 kcal",
+      "1500 kcal",
+      "1700 kcal",
+      "1800 kcal"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-034",
+    "options": [
+      "Iron and vitamin C",
+      "Calcium and vitamin D",
+      "Sodium and chloride",
+      "Vitamin K and folate"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-035",
+    "options": [
+      "From 150 lb to 145 lb",
+      "From 150 lb to 144 lb",
+      "From 150 lb to 140 lb",
+      "From 150 lb to 143 lb"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-036",
+    "options": [
+      "Butter for olive oil",
+      "Cream for canola oil",
+      "Butter for safflower oil",
+      "Canola oil for butter"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-037",
+    "options": [
+      "Sodium phosphate",
+      "Sodium ascorbate",
+      "Sodium chloride",
+      "Sodium bicarbonate"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-038",
+    "options": [
+      "Reduced digestion of milk sugar",
+      "Reduced removal of excess water",
+      "Increased absorption of dietary iron",
+      "Increased breakdown of food gluten"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-039",
+    "options": [
+      "The daughter as bill payer",
+      "The facility administrator",
+      "The resident",
+      "The resident’s admitting contact"
+    ]
+  },
+  {
+    "questionId": "CDM-NUT-040",
+    "options": [
+      "Choice of attending physician",
+      "Access to personal possessions",
+      "Notice of a room transfer",
+      "Participation in care planning"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-001",
+    "options": [
+      "Finished batch weight",
+      "Expected diner count",
+      "Ingredient purchase price",
+      "Menu selection frequency"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-002",
+    "options": [
+      "0.4",
+      "2.5",
+      "1.5",
+      "4.0"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-003",
+    "options": [
+      "Dispatch-time comparison",
+      "Portion-weight comparison",
+      "Resident sensory comparison",
+      "Ingredient-price comparison"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-004",
+    "options": [
+      "Insufficient ingredient yield",
+      "Inconsistent portion standards",
+      "Incompatible dietary prescriptions",
+      "Concurrent equipment demand"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-005",
+    "options": [
+      "9 g protein; 180 mg sodium",
+      "7 g protein; 160 mg sodium",
+      "10 g protein; 240 mg sodium",
+      "6 g protein; 220 mg sodium"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-006",
+    "options": [
+      "$0.67",
+      "$1.50",
+      "$2.00",
+      "$3.50"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-007",
+    "options": [
+      "Gross shipping weight",
+      "Total can fill weight",
+      "Drained product weight",
+      "Empty container weight"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-008",
+    "options": [
+      "Change the recipe portion size",
+      "Change the ingredient purchase grade",
+      "Adjust the number of forecast diners",
+      "Adjust pan placement during baking"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-009",
+    "options": [
+      "85%",
+      "15%",
+      "90%",
+      "95%"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-010",
+    "options": [
+      "8:00 a.m.",
+      "7:30 a.m.",
+      "8:30 a.m.",
+      "9:00 a.m."
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-011",
+    "options": [
+      "92 lunches",
+      "100 lunches",
+      "108 lunches",
+      "128 lunches"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-012",
+    "options": [
+      "48 portions",
+      "72 portions",
+      "96 portions",
+      "64 portions"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-013",
+    "options": [
+      "Residents taste both coded versions",
+      "Kitchen staff taste both coded versions",
+      "Residents rate the new sauce after rollout",
+      "Kitchen staff rate the current sauce"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-014",
+    "options": [
+      "Increase the batch to 250 ounces",
+      "Use a 4-ounce portion measure",
+      "Lower the serving target to forty",
+      "Keep fifty servings at 5 ounces"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-015",
+    "options": [
+      "Recipe nutrient analysis",
+      "Ingredient receiving",
+      "Transport and service",
+      "Menu preference collection"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-016",
+    "options": [
+      "13.5 lb",
+      "22.5 lb",
+      "32 lb",
+      "24 lb"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-017",
+    "options": [
+      "Reduce mismatches to 4 per 100",
+      "Reduce dispatch delay to 4 minutes",
+      "Increase meal ratings to 4 of 5",
+      "Increase checks to 4 per shift"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-018",
+    "options": [
+      "Both speed and accuracy improved",
+      "Speed improved while accuracy worsened",
+      "Accuracy improved while speed worsened",
+      "Neither speed nor accuracy changed"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-019",
+    "options": [
+      "Coagulation",
+      "Caramelization",
+      "Emulsion",
+      "Gelatinization"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-020",
+    "options": [
+      "19.2 lb",
+      "24 lb",
+      "36 lb",
+      "30 lb"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-021",
+    "options": [
+      "After food reaches diners",
+      "During raw preparation",
+      "After production before service",
+      "During supplier receiving"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-022",
+    "options": [
+      "Departure-to-arrival travel",
+      "Ready-to-depart waiting",
+      "Recipe cooking time",
+      "Ingredient receiving time"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-023",
+    "options": [
+      "45 portions",
+      "55 portions",
+      "40 portions",
+      "62 portions"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-024",
+    "options": [
+      "Sugar caramelization",
+      "Fat rendering",
+      "Liquid reduction",
+      "Protein coagulation"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-025",
+    "options": [
+      "Reduction",
+      "Emulsification",
+      "Dredging",
+      "Blanching"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-026",
+    "options": [
+      "Reformulate the seasoning blend",
+      "Revise the service-day schedule",
+      "Increase the standard portion weight",
+      "Change the purchasing pack size"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-027",
+    "options": [
+      "Batch yield fell below plan",
+      "Portions exceeded the standard",
+      "Demand exceeded the forecast",
+      "Production lost 40 ounces"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-028",
+    "options": [
+      "Crisp carrots",
+      "Soft cauliflower",
+      "Crisp cauliflower",
+      "Soft carrots"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-029",
+    "options": [
+      "Route B loses 20°F",
+      "Route A loses 20°F",
+      "Route B loses 10°F",
+      "Route A loses 30°F"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-030",
+    "options": [
+      "75 regular; 25 modified",
+      "65 regular; 35 modified",
+      "70 regular; 35 modified",
+      "65 regular; 30 modified"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-031",
+    "options": [
+      "The coded sample labels",
+      "The number of recipe versions",
+      "Serving temperature",
+      "The use of resident panelists"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-032",
+    "options": [
+      "20%",
+      "60%",
+      "80%",
+      "75%"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-033",
+    "options": [
+      "The warmest part of the cabinet",
+      "The coldest part of the cabinet",
+      "The air entering the compressor",
+      "The kitchen air beside the door"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-034",
+    "options": [
+      "2 inches",
+      "6 inches",
+      "3 inches",
+      "4 inches"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-035",
+    "options": [
+      "Enzymatic browning",
+      "Fat rendering",
+      "Carryover cooking",
+      "Evaporative cooling"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-036",
+    "options": [
+      "1 cycle",
+      "3 cycles",
+      "4 cycles",
+      "2 cycles"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-037",
+    "options": [
+      "8 minutes",
+      "6 minutes",
+      "10 minutes",
+      "12 minutes"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-038",
+    "options": [
+      "Count rose while unit weight stayed fixed",
+      "Count stayed fixed while unit weight rose",
+      "Both count and unit weight fell",
+      "Both count and unit weight stayed fixed"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-039",
+    "options": [
+      "It fell from 10% to 9%",
+      "It rose from 3% to 5%",
+      "It fell from 5% to 3%",
+      "It remained at 4%"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-040",
+    "options": [
+      "3 batches",
+      "5 batches",
+      "6 batches",
+      "4 batches"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-041",
+    "options": [
+      "The batch quantity calculation",
+      "The resident diet prescription",
+      "The daily meal-service target time",
+      "The supplier payment schedule"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-042",
+    "options": [
+      "10:45 a.m.",
+      "10:30 a.m.",
+      "11:00 a.m.",
+      "11:15 a.m."
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-043",
+    "options": [
+      "Calculated nutrient content",
+      "Planned portion quantity",
+      "Texture at service",
+      "Ingredient purchase grade"
+    ]
+  },
+  {
+    "questionId": "CDM-FOO-044",
+    "options": [
+      "80 portions",
+      "120 portions",
+      "140 portions",
+      "100 portions"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-001",
+    "options": [
+      "7 FTEs",
+      "6 FTEs",
+      "8 FTEs",
+      "10 FTEs"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-002",
+    "options": [
+      "Weekly work assignments",
+      "Position qualification requirements",
+      "Daily production instructions",
+      "Individual performance ratings"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-003",
+    "options": [
+      "78",
+      "80",
+      "82",
+      "84"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-004",
+    "options": [
+      "Describe how you would resolve a dispute",
+      "Describe your preferred conflict policy",
+      "Describe qualities of a good mediator",
+      "Describe a disagreement you resolved"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-005",
+    "options": [
+      "A sequenced task checklist",
+      "A summary of monthly output targets",
+      "A chart of department reporting lines",
+      "A list of ingredient purchase grades"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-006",
+    "options": [
+      "2.0 FTEs",
+      "2.5 FTEs",
+      "3.0 FTEs",
+      "4.0 FTEs"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-007",
+    "options": [
+      "Move two shifts from 7–11 to 6–10",
+      "Move two shifts from 7–11 to 5–9",
+      "Move two shifts from 7–11 to 9–1",
+      "Move two shifts from 7–11 to 3–7"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-008",
+    "options": [
+      "25%",
+      "75%",
+      "100%",
+      "50%"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-009",
+    "options": [
+      "10:25, 10:30, 10:20, 10:28, 10:40",
+      "10:25, 10:35, 10:20, 10:38, 10:40",
+      "10:35, 10:30, 10:40, 10:28, 10:45",
+      "10:25, 10:30, 10:40, 10:38, 10:35"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-010",
+    "options": [
+      "Repeat instruction in portion measurement",
+      "Reschedule access to the workstation",
+      "Review the recipe ingredient calculations",
+      "Coach the worker on meal presentation"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-011",
+    "options": [
+      "Measuring recipe ingredient weights",
+      "Receiving chilled food deliveries",
+      "Applying the revised label codes",
+      "Calculating total daily labor hours"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-012",
+    "options": [
+      "Explain the device's purpose",
+      "Identify the device in a photograph",
+      "Recall the device's purchase model",
+      "Measure a sample with the device"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-013",
+    "options": [
+      "4 workers",
+      "3 workers",
+      "5 workers",
+      "6 workers"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-014",
+    "options": [
+      "The maintenance report",
+      "The purchasing report",
+      "The staff attendance record",
+      "The meeting-room reservation"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-015",
+    "options": [
+      "Menu prices and ingredient yields for each",
+      "Food-group totals and portion weights for each",
+      "Arrival times and staffing needs for each",
+      "Supplier ratings and invoice terms for each"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-016",
+    "options": [
+      "Worked hours plus paid vacation",
+      "Worked hours plus paid sick leave",
+      "All hours listed on payroll",
+      "Hours actually worked"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-017",
+    "options": [
+      "It meets the 50-within-75-mile test",
+      "Each site must separately employ 50",
+      "Only full-time staff can be counted",
+      "The second site must be within 50 miles"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-018",
+    "options": [
+      "Transfer carts 15 minutes later",
+      "Transfer carts 15 minutes earlier",
+      "Transfer carts 30 minutes earlier",
+      "Transfer carts 30 minutes later"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-019",
+    "options": [
+      "The timing target was missed",
+      "The accuracy target was missed",
+      "The timing target was met",
+      "The task was completed early every shift"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-020",
+    "options": [
+      "2 cook-hours",
+      "4 cook-hours",
+      "5 cook-hours",
+      "3 cook-hours"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-021",
+    "options": [
+      "After a conditional job offer",
+      "After receiving the application",
+      "After the first interview",
+      "After checking employment references"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-022",
+    "options": [
+      "Evening: 15% versus morning: 10%",
+      "Evening: 30% versus morning: 5%",
+      "Morning: 30% versus evening: 5%",
+      "Both shifts: 20%"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-023",
+    "options": [
+      "5%",
+      "25%",
+      "20%",
+      "50%"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-024",
+    "options": [
+      "Repeat the equipment demonstration",
+      "Replace the portioning equipment",
+      "Revise the recipe ingredient weights",
+      "Rebalance the competing workload"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-025",
+    "options": [
+      "An equivalent job with equivalent benefits",
+      "Any opening at the former hourly rate",
+      "The next vacancy after a waiting period",
+      "A temporary job until the old role opens"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-026",
+    "options": [
+      "Friday",
+      "Monday",
+      "Tuesday",
+      "Wednesday"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-027",
+    "options": [
+      "A second classroom demonstration",
+      "A written knowledge exercise",
+      "An ordinary production shift",
+      "A post-session satisfaction survey"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-028",
+    "options": [
+      "Resident meals versus scheduled labor hours",
+      "Staff absences versus overtime hours",
+      "Employee experience versus rework hours",
+      "Event portions versus extra labor hours"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-029",
+    "options": [
+      "Hepatitis A",
+      "Hepatitis B",
+      "Seasonal influenza",
+      "Lyme disease"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-030",
+    "options": [
+      "Writing each count on a paper worksheet",
+      "Recognizing discrepancies in output",
+      "Estimating quantities from container size",
+      "Memorizing the previous day's totals"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-031",
+    "options": [
+      "The purchasing team's price assessment",
+      "The cooks' batch-capacity assessment",
+      "The delivery team's route assessment",
+      "The cashier's retail-sales assessment"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-032",
+    "options": [
+      "The former position at the former wage",
+      "The newest vacancy at its entry wage",
+      "The most senior vacancy in the department",
+      "The position that would have been attained"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-033",
+    "options": [
+      "Items versus trays as the counting unit",
+      "Minutes versus hours as the time unit",
+      "Pounds versus ounces as the weight unit",
+      "Cases versus packs as the purchasing unit"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-034",
+    "options": [
+      "Two workers for one hour",
+      "One worker for one hour",
+      "One worker for two hours",
+      "Two workers for two hours"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-035",
+    "options": [
+      "Increase the target production rate",
+      "Add more examples of finished dishes",
+      "Expand the abbreviated terms",
+      "Reorder the equipment storage shelves"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-036",
+    "options": [
+      "Only a military-stamped letter qualifies",
+      "Only an HR-approved form qualifies",
+      "Only a notice sent by an officer qualifies",
+      "Verbal or written notice can qualify"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-037",
+    "options": [
+      "24 months",
+      "6 months",
+      "12 months",
+      "18 months"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-038",
+    "options": [
+      "Overdue; supervisor responsible; due Thursday",
+      "Pending; supervisor responsible; due Friday",
+      "Complete; supervisor responsible; due Friday",
+      "Pending; purchasing responsible; due Friday"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-039",
+    "options": [
+      "6 workweeks",
+      "18 workweeks",
+      "12 workweeks",
+      "26 workweeks"
+    ]
+  },
+  {
+    "questionId": "CDM-PER-040",
+    "options": [
+      "One cook-hour remains",
+      "Two cook-hours remain",
+      "Three cook-hours remain",
+      "No cook-hours remain"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-001",
+    "options": [
+      "135°F",
+      "125°F",
+      "130°F",
+      "140°F"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-002",
+    "options": [
+      "1 p.m.",
+      "2 p.m.",
+      "4 p.m.",
+      "6 p.m."
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-003",
+    "options": [
+      "145°F for 15 seconds",
+      "155°F for 17 seconds",
+      "165°F, instantaneous",
+      "165°F for 15 seconds"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-004",
+    "options": [
+      "Use an immersion ice paddle",
+      "Use a mechanical blast chiller",
+      "Stir in an external ice-water bath",
+      "Divide among shallow metal pans"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-005",
+    "options": [
+      "Sunday",
+      "Saturday",
+      "Monday of next week",
+      "Tuesday of next week"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-006",
+    "options": [
+      "Biological contamination",
+      "Chemical contamination",
+      "Physical foreign material",
+      "Time-temperature abuse"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-007",
+    "options": [
+      "The 45°F shell-egg air limit",
+      "The 70°F running-water limit",
+      "The 41°F product-temperature limit",
+      "The 135°F hot-holding minimum"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-008",
+    "options": [
+      "Reading the posted production schedule",
+      "Checking an unopened recipe binder",
+      "Receiving a verbal shift assignment",
+      "Handling the soiled utensils"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-009",
+    "options": [
+      "The critical limit",
+      "The monitoring frequency",
+      "The corrective action",
+      "The verification schedule"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-010",
+    "options": [
+      "The original temperature value",
+      "The additional heating step",
+      "The planned observation interval",
+      "The supervisor's weekly review"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-011",
+    "options": [
+      "The nutrition-energy panel",
+      "The storage-temperature instruction",
+      "The ingredient list",
+      "The package-yield statement"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-012",
+    "options": [
+      "Biological hazard",
+      "Chemical residue",
+      "Nutrient imbalance",
+      "Physical hazard"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-013",
+    "options": [
+      "165°F for 15 seconds",
+      "135°F for 15 seconds",
+      "145°F for 15 seconds",
+      "155°F for 17 seconds"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-014",
+    "options": [
+      "Case W",
+      "Case X",
+      "Case Y",
+      "Case Z"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-015",
+    "options": [
+      "Pathogen cross-contamination",
+      "Physical fragment contamination",
+      "Allergen cross-contact",
+      "Cleaning-agent contamination"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-016",
+    "options": [
+      "10 seconds",
+      "30 seconds",
+      "40 seconds",
+      "20 seconds"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-017",
+    "options": [
+      "Selecting a critical control point",
+      "Setting the monitoring interval",
+      "Choosing a corrective procedure",
+      "Auditing completed temperature records"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-018",
+    "options": [
+      "A coffee shop serving the general public",
+      "A nursing-home kitchen serving residents",
+      "A workplace cafeteria serving adults",
+      "A restaurant serving the general public"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-019",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Tuesday",
+      "Friday"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-020",
+    "options": [
+      "Routine temperature monitoring",
+      "Initial hazard identification",
+      "Immediate product correction",
+      "Plan verification"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-021",
+    "options": [
+      "Restrict the employee’s duties",
+      "Exclude solely on these symptoms",
+      "Allow all tasks with gloves",
+      "Allow all tasks after handwashing"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-022",
+    "options": [
+      "15 days",
+      "30 days",
+      "60 days",
+      "90 days"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-023",
+    "options": [
+      "135°F for 15 seconds",
+      "140°F for 5 seconds",
+      "145°F for 15 seconds",
+      "150°F for 1 second"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-024",
+    "options": [
+      "The employee name of the mixer",
+      "The purchase date of the bulk supply",
+      "The storage shelf number of the product",
+      "The common name of the cleaner"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-025",
+    "options": [
+      "4.5 hours",
+      "2 hours",
+      "4 hours",
+      "6 hours"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-026",
+    "options": [
+      "As an allergen only when whole",
+      "As a major food allergen",
+      "As an allergen only when unheated",
+      "As a flavoring outside allergen controls"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-027",
+    "options": [
+      "May 7",
+      "May 10",
+      "May 4",
+      "May 12"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-028",
+    "options": [
+      "11 a.m.",
+      "3 p.m.",
+      "5 p.m.",
+      "1 p.m."
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-029",
+    "options": [
+      "Package integrity",
+      "Product quantity",
+      "Order specification grade",
+      "Invoice unit pricing"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-030",
+    "options": [
+      "Dish A",
+      "Dish D",
+      "Dish B",
+      "Dish C"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-031",
+    "options": [
+      "Stored meal quantity",
+      "Potable-water quantity",
+      "Activation time",
+      "Nutrient composition"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-032",
+    "options": [
+      "Supplier ingredient verification",
+      "Menu-label transcription",
+      "Receiving lot identification",
+      "Utensil separation during service"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-033",
+    "options": [
+      "Within 4 hours",
+      "Within 1 hour",
+      "Within 6 hours",
+      "Within 8 hours"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-034",
+    "options": [
+      "1 pack short",
+      "6 packs short",
+      "9 packs short",
+      "10 packs short"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-035",
+    "options": [
+      "Section 4: first-aid measures",
+      "Section 6: accidental release measures",
+      "Section 8: exposure controls/PPE",
+      "Section 9: physical properties"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-036",
+    "options": [
+      "Refrigerator thawing at 41°F",
+      "Running-water thawing under its limits",
+      "Thawing during the cooking process",
+      "Microwave thawing"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-037",
+    "options": [
+      "A chemical test kit or test strips",
+      "A maximum-registering thermometer",
+      "A water-pressure gauge",
+      "A wash-cycle timer"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-038",
+    "options": [
+      "Isolating the affected food",
+      "Checking the repaired unit",
+      "Repairing the defective part",
+      "Recording the incident details"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-039",
+    "options": [
+      "41°F",
+      "45°F",
+      "70°F",
+      "135°F"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-040",
+    "options": [
+      "Corrective-action documentation",
+      "Verification of completed records",
+      "Establishing a purchasing budget",
+      "Hazard analysis"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-041",
+    "options": [
+      "Section 10: stability and reactivity",
+      "Section 3: composition/ingredients",
+      "Section 5: fire-fighting measures",
+      "Section 11: toxicological information"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-042",
+    "options": [
+      "125°F",
+      "135°F",
+      "130°F",
+      "145°F"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-043",
+    "options": [
+      "Diagnosed infection; symptom not reported",
+      "Reported exposure; symptom not reported",
+      "Reported symptom; diagnosis not established",
+      "Confirmed diagnosis; exposure not established"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-044",
+    "options": [
+      "¾ inch",
+      "1 inch",
+      "2¼ inches",
+      "1½ inches"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-045",
+    "options": [
+      "Stand covered for 2 minutes",
+      "Stand uncovered for 2 minutes",
+      "Stand covered for 1 minute",
+      "Stand uncovered for 1 minute"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-046",
+    "options": [
+      "Raw poultry followed by raw intact beef",
+      "Raw intact beef followed by raw poultry",
+      "Raw ground beef followed by raw intact beef",
+      "Raw poultry followed by raw ground beef"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-047",
+    "options": [
+      "Water in a sealed nonfood cooling loop",
+      "Water used for landscape irrigation",
+      "Ice served in beverages",
+      "Water used to flush wastewater equipment"
+    ]
+  },
+  {
+    "questionId": "CDM-SAF-048",
+    "options": [
+      "2 hours",
+      "6 hours",
+      "8 hours",
+      "4 hours"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-001",
+    "options": [
+      "$7.00",
+      "$3.00",
+      "$9.00",
+      "$14.00"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-002",
+    "options": [
+      "A $1200 refrigerator repair",
+      "A $7200 refrigerator replacement",
+      "A $900 annual service agreement",
+      "A $600 replacement door gasket"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-003",
+    "options": [
+      "$3.12",
+      "$6.00",
+      "$8.00",
+      "$7.20"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-004",
+    "options": [
+      "Making saves $10 per batch",
+      "Buying saves $70 per batch",
+      "Making saves $70 per batch",
+      "Buying saves $10 per batch"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-005",
+    "options": [
+      "It remained at $6",
+      "It rose from $6 to $7.20",
+      "It fell from $7.20 to $6",
+      "It rose from $5 to $6"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-006",
+    "options": [
+      "6 meals per labor hour",
+      "8 meals per labor hour",
+      "9 meals per labor hour",
+      "12 meals per labor hour"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-007",
+    "options": [
+      "Expected delivery lead time",
+      "Expected invoice payment interval",
+      "Expected edible yield",
+      "Expected minimum order frequency"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-008",
+    "options": [
+      "Purchase orders and vendor price lists",
+      "Supplier invoices and payment vouchers",
+      "Menu forecasts and standard recipes",
+      "Signed pickup receipts and issue entries"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-009",
+    "options": [
+      "$10000",
+      "$8000",
+      "$8500",
+      "$9500"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-010",
+    "options": [
+      "$300",
+      "$900",
+      "$5400",
+      "$4500"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-011",
+    "options": [
+      "Oven capacity at the existing workload",
+      "Approved recipes for resident meals",
+      "Customer demand at the planned price",
+      "The kitchen's current equipment age"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-012",
+    "options": [
+      "$4.50",
+      "$5.80",
+      "$9.00",
+      "$7.20"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-013",
+    "options": [
+      "The labor budget-variance report",
+      "The labor productivity trend report",
+      "The staffing vacancy summary",
+      "The employee turnover analysis"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-014",
+    "options": [
+      "A costs less per edible pound",
+      "Both cost $4 per edible pound",
+      "B costs less per edible pound",
+      "Both cost $3.30 per edible pound"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-015",
+    "options": [
+      "$75",
+      "$1200",
+      "$900",
+      "$24900"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-016",
+    "options": [
+      "25 units",
+      "40 units",
+      "65 units",
+      "55 units"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-017",
+    "options": [
+      "$8.00",
+      "$3.00",
+      "$4.00",
+      "$7.00"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-018",
+    "options": [
+      "$10 over",
+      "$10 short",
+      "$90 short",
+      "$100 over"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-019",
+    "options": [
+      "Offer B, $1.80 per purchased unit",
+      "Offer B, $2.70 per needed unit",
+      "Offer A, $2 per needed unit",
+      "Offer A, $1.33 per purchased unit"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-020",
+    "options": [
+      "6 minutes",
+      "7.5 minutes",
+      "10 minutes",
+      "8 minutes"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-021",
+    "options": [
+      "Replacement by $3000",
+      "Repair by $3000",
+      "Replacement by $15000",
+      "Repair by $18000"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-022",
+    "options": [
+      "Which dates appear on the menu",
+      "Which workers enter the denominator",
+      "Which products appear on invoices",
+      "Which recipes appear in the manual"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-023",
+    "options": [
+      "$2.00",
+      "$2.20",
+      "$2.40",
+      "$3.00"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-024",
+    "options": [
+      "It falls from $5 to $4.50",
+      "It remains at $5",
+      "It falls from $6 to $5",
+      "It rises from $5 to $6"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-025",
+    "options": [
+      "Reduce food 10%; retain lease cost",
+      "Reduce food 10%; reduce lease 10%",
+      "Retain food cost; reduce lease 10%",
+      "Retain food cost; retain lease cost"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-026",
+    "options": [
+      "The Monday case",
+      "The Wednesday case",
+      "The case with the lower unit price",
+      "Either case without considering dates"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-027",
+    "options": [
+      "A whole-fruit display",
+      "An arranged fruit platter",
+      "A chopped fruit filling",
+      "A centerpiece of uniform pieces"
+    ]
+  },
+  {
+    "questionId": "CDM-BUS-028",
+    "options": [
+      "2 years",
+      "3 years",
+      "5 years",
+      "4 years"
+    ]
+  }
+]

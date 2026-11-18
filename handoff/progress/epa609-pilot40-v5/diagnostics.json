@@ -1,0 +1,35 @@
+{
+  "status": "Minimal structural verification only; no new blind or options-only review",
+  "rows": 40,
+  "changedRows": [
+    "EPA609-EQP-004",
+    "EPA609-EQP-002",
+    "EPA609-YF-003"
+  ],
+  "unchangedRows": 37,
+  "allExplanationsUnchanged": true,
+  "allKeysUnchanged": true,
+  "categoryCounts": {
+    "epa609Service": 10,
+    "epa609Equipment": 10,
+    "epa609Rules": 10,
+    "epa609Yf": 10
+  },
+  "stemWords": {
+    "median": 16.0,
+    "maximum": 20
+  },
+  "YF003OptionWords": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "D": 4
+  },
+  "YF003OptionCharacters": {
+    "A": 35,
+    "B": 41,
+    "C": 39,
+    "D": 43
+  },
+  "sha256": "badd4c5b0d20f40ab1a2cda80bbcfa199edcb41c75d76da80cc2ab38114b0398"
+}

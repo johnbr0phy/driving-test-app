@@ -1,0 +1,3 @@
+Internal Error ()
+citeturn271view0 [wordlim: 200] Source: open({"ref_id":"https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000023086525/LEGISCTA000029530470/","lineno":180}); 
+Failed to fetch https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000023086525/LEGISCTA000029530470/: (403) Forbidden

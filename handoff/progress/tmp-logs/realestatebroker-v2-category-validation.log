@@ -1,0 +1,40 @@
+rebProperty
+lang en  len-scale 1.0  rows 24  categories {'rebProperty': 24}
+letters {'A': 6, 'B': 6, 'C': 6, 'D': 6}  avg option 25 chars  key-longest 8%  key>1.2x 0%
+PASS
+
+rebTitle
+lang en  len-scale 1.0  rows 20  categories {'rebTitle': 20}
+letters {'A': 5, 'B': 5, 'C': 5, 'D': 5}  avg option 30 chars  key-longest 20%  key>1.2x 0%
+PASS
+
+rebValue
+lang en  len-scale 1.0  rows 24  categories {'rebValue': 24}
+letters {'A': 6, 'B': 6, 'C': 6, 'D': 6}  avg option 28 chars  key-longest 17%  key>1.2x 4%
+PASS
+
+rebAgency
+lang en  len-scale 1.0  rows 36  categories {'rebAgency': 36}
+letters {'A': 9, 'B': 9, 'C': 9, 'D': 9}  avg option 31 chars  key-longest 19%  key>1.2x 6%
+PASS
+
+rebPractice
+lang en  len-scale 1.0  rows 32  categories {'rebPractice': 32}
+letters {'A': 8, 'B': 8, 'C': 8, 'D': 8}  avg option 35 chars  key-longest 16%  key>1.2x 0%
+PASS
+
+rebEnvironment
+lang en  len-scale 1.0  rows 24  categories {'rebEnvironment': 24}
+letters {'A': 6, 'B': 6, 'C': 6, 'D': 6}  avg option 36 chars  key-longest 17%  key>1.2x 8%
+PASS
+
+rebFinance
+lang en  len-scale 1.0  rows 20  categories {'rebFinance': 20}
+letters {'A': 5, 'B': 5, 'C': 5, 'D': 5}  avg option 35 chars  key-longest 5%  key>1.2x 0%
+PASS
+
+rebMath
+lang en  len-scale 1.0  rows 20  categories {'rebMath': 20}
+letters {'A': 5, 'B': 5, 'C': 5, 'D': 5}  avg option 10 chars  key-longest 0%  key>1.2x 5%
+FAIL: average option length 10 chars (want 12-42)
+FAIL (1 errors)

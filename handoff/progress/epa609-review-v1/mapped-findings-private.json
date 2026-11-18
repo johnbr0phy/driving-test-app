@@ -1,0 +1,182 @@
+[
+  {
+    "id": "F01",
+    "priority": "P1",
+    "items": [
+      "R025"
+    ],
+    "type": "source_scope",
+    "finding": "Explanation falsely presents an exclusive disposal rule allowing sale only to609 technicians.82.154(c) has other eligible-purchaser categories, and82.154(d) separately governs used-refrigerant processing/reuse. Stem omits MVAC-source and intended-reuse scope.",
+    "repair": "Specify recovered MVAC refrigerant intended for MVAC reuse and required recycling; ask which listed credential qualifies without claiming609 is universally the only permitted buyer.",
+    "source": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/section-82.154",
+    "questionIds": [
+      "EPA609-REG-028"
+    ]
+  },
+  {
+    "id": "F02",
+    "priority": "P2",
+    "items": [
+      "R072"
+    ],
+    "type": "source_scope",
+    "finding": "Explanation categorically rejects piercing-only cans without manufacture/import date.82.154(c)(1)(ix) conditions self-sealing on2018-or-later manufacture/import.",
+    "repair": "Specify a newly manufactured non-exempt MVAC substitute can; retain two-pounds-or-less boundary.",
+    "source": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/section-82.154",
+    "questionIds": [
+      "EPA609-REG-019"
+    ]
+  },
+  {
+    "id": "F03",
+    "priority": "P1",
+    "items": [
+      "R003",
+      "R012",
+      "R015",
+      "R017",
+      "R018",
+      "R019",
+      "R022",
+      "R024",
+      "R027",
+      "R028",
+      "R034",
+      "R037",
+      "R043",
+      "R047",
+      "R050",
+      "R057",
+      "R061",
+      "R067",
+      "R068",
+      "R069",
+      "R071",
+      "R075",
+      "R077",
+      "R086",
+      "R091",
+      "R094",
+      "R095",
+      "R098",
+      "R100"
+    ],
+    "type": "assessment_validity",
+    "finding": "29 items have dominant absurd, irrelevant, absolute, or uniquely responsible-answer cues; mixed items also contain weak distractors.94/100 options-only is not a quality pass.",
+    "repair": "Rebuild and independently gate10\u201315-item pilot before scaling; actual plausible errors, equal specificity and necessary scenario information.",
+    "source": "distractor-audit.json",
+    "questionIds": [
+      "EPA609-SRV-031",
+      "EPA609-SRV-022",
+      "EPA609-EQP-013",
+      "EPA609-SRV-014",
+      "EPA609-YF-014",
+      "EPA609-EQP-011",
+      "EPA609-REG-010",
+      "EPA609-SRV-019",
+      "EPA609-EQP-021",
+      "EPA609-REG-026",
+      "EPA609-EQP-022",
+      "EPA609-SRV-026",
+      "EPA609-EQP-017",
+      "EPA609-EQP-012",
+      "EPA609-REG-004",
+      "EPA609-YF-008",
+      "EPA609-SRV-009",
+      "EPA609-SRV-018",
+      "EPA609-YF-012",
+      "EPA609-EQP-024",
+      "EPA609-SRV-023",
+      "EPA609-REG-015",
+      "EPA609-SRV-013",
+      "EPA609-REG-011",
+      "EPA609-EQP-016",
+      "EPA609-YF-006",
+      "EPA609-SRV-032",
+      "EPA609-YF-007",
+      "EPA609-SRV-029"
+    ]
+  },
+  {
+    "id": "F04",
+    "priority": "P2",
+    "items": [
+      "R003",
+      "R011",
+      "R014",
+      "R025",
+      "R037",
+      "R045",
+      "R048",
+      "R087",
+      "R097"
+    ],
+    "type": "explanation_option_alignment",
+    "finding": "Explanations discuss absent alternatives: charge/controls; driver license/purchase authority; atmospheric nitrogen; container/private use; electrical switch; business license; universal dose/leak repair; scale/pressure calculation; hose color, respectively.",
+    "repair": "Rewrite against actual final options and correct underlying misconception; remove stale distractor commentary.",
+    "source": "explanations.json",
+    "questionIds": [
+      "EPA609-SRV-031",
+      "EPA609-REG-017",
+      "EPA609-REG-009",
+      "EPA609-REG-028",
+      "EPA609-SRV-026",
+      "EPA609-REG-025",
+      "EPA609-SRV-020",
+      "EPA609-YF-010",
+      "EPA609-REG-024"
+    ]
+  },
+  {
+    "id": "F05",
+    "priority": "P2",
+    "items": [
+      "R030",
+      "R052"
+    ],
+    "type": "self_containment",
+    "finding": "Stem refers to the manual without naming it.",
+    "repair": "Name MACS January2025 or precisely scope equipment requirement.",
+    "source": "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf",
+    "questionIds": [
+      "EPA609-YF-016",
+      "EPA609-EQP-014"
+    ]
+  },
+  {
+    "id": "F06",
+    "priority": "P2",
+    "items": [
+      "R092"
+    ],
+    "type": "equipment_scope",
+    "finding": "Within12in is supported by manual/legacy procedure, while some equipment standards require shutoff at connection. Generic stem risks teaching12in as universal allowance.",
+    "repair": "Name applicable scope and emphasize equipment manufacturer requirements.",
+    "source": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+    "questionIds": [
+      "EPA609-EQP-010"
+    ]
+  },
+  {
+    "id": "F07",
+    "priority": "P3",
+    "items": [
+      "R006",
+      "R010",
+      "R013",
+      "R084",
+      "R089"
+    ],
+    "type": "precision",
+    "finding": "Clarify respectively zero pressure is not proof safe to open; circulation assumes operating charge; inspection-hole fitting type; replace before saturation; non-exempt refrigerant disposal scope.",
+    "repair": "Add targeted qualifiers.",
+    "source": "blind-answers.json",
+    "questionIds": [
+      "EPA609-SRV-012",
+      "EPA609-SRV-006",
+      "EPA609-EQP-006",
+      "EPA609-EQP-005",
+      "EPA609-REG-021"
+    ]
+  }
+]

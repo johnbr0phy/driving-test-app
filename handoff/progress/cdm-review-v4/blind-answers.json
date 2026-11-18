@@ -1,0 +1,1026 @@
+[
+  {
+    "reviewId": "R001",
+    "answer": "D",
+    "rationale": "Food Code 2-301.12 requires 20 seconds for the complete procedure, distinct from rubbing time."
+  },
+  {
+    "reviewId": "R002",
+    "answer": "C",
+    "rationale": "SDS section 8 addresses exposure controls and personal protective equipment including gloves."
+  },
+  {
+    "reviewId": "R003",
+    "answer": "B",
+    "rationale": "9 >= 8 g protein and 180 <= 200 mg sodium; each other product fails at least one bound."
+  },
+  {
+    "reviewId": "R004",
+    "answer": "A",
+    "rationale": "An ingredient list identifies addition of sesame; energy, yield and storage instructions do not."
+  },
+  {
+    "reviewId": "R005",
+    "answer": "B",
+    "rationale": "Six total hours minus 90 minutes equals 4.5 hours; the first cooling stage met its two-hour limit."
+  },
+  {
+    "reviewId": "R006",
+    "answer": "C",
+    "rationale": "12000/3000 = 4 years simple payback."
+  },
+  {
+    "reviewId": "R007",
+    "answer": "A",
+    "rationale": "Two workers for two hours require four worker-hours; A supplies two and B one, leaving one from 11 to noon."
+  },
+  {
+    "reviewId": "R008",
+    "answer": "A",
+    "rationale": "Food Code 2-201.12(D) excludes asymptomatic diagnosed Norovirus workers serving highly susceptible populations."
+  },
+  {
+    "reviewId": "R009",
+    "answer": "A",
+    "rationale": "Rice is gluten-free; couscous and farro are wheat and barley contains gluten."
+  },
+  {
+    "reviewId": "R010",
+    "answer": "D",
+    "rationale": "1.80*4 = $7.20."
+  },
+  {
+    "reviewId": "R011",
+    "answer": "A",
+    "rationale": "Delivery staff can assess route completion; the other assessments address already evaluated or irrelevant dimensions.",
+    "issue": "Low-depth literal matching: route/arrival terms point straight to delivery-route assessment while alternatives concern unrelated functions."
+  },
+  {
+    "reviewId": "R012",
+    "answer": "B",
+    "rationale": "Noon minus four hours setting minus 30 minutes mixing = 7:30 a.m."
+  },
+  {
+    "reviewId": "R013",
+    "answer": "A",
+    "rationale": "48/(24-4) = $2.40 per usable portion."
+  },
+  {
+    "reviewId": "R014",
+    "answer": "D",
+    "rationale": "A speech-language pathologist evaluates swallowing function and texture-related swallowing needs."
+  },
+  {
+    "reviewId": "R015",
+    "answer": "D",
+    "rationale": "Expected cash 100+460 = 560; actual 550 is $10 short."
+  },
+  {
+    "reviewId": "R016",
+    "answer": "D",
+    "rationale": "18/0.75 = 24 purchased pounds."
+  },
+  {
+    "reviewId": "R017",
+    "answer": "B",
+    "rationale": "A sequenced checklist supports order of operations when individual steps are already mastered.",
+    "issue": "Low-depth literal matching: sequence difficulty directly repeats sequenced checklist; distractors are unrelated documents."
+  },
+  {
+    "reviewId": "R018",
+    "answer": "D",
+    "rationale": "Correct performance under low demand and failure during concurrent work indicate workload interference."
+  },
+  {
+    "reviewId": "R019",
+    "answer": "A",
+    "rationale": "Ordinary FMLA leave for one's own qualifying serious health condition is 12 workweeks per applicable year."
+  },
+  {
+    "reviewId": "R020",
+    "answer": "A",
+    "rationale": "Chopping eliminates the value of whole-piece visual uniformity."
+  },
+  {
+    "reviewId": "R021",
+    "answer": "A",
+    "rationale": "280/40 = 7 FTEs."
+  },
+  {
+    "reviewId": "R022",
+    "answer": "B",
+    "rationale": "Barley malt contains gluten; the other plain ingredients do not inherently contain gluten."
+  },
+  {
+    "reviewId": "R023",
+    "answer": "A",
+    "rationale": "5/25*100 = 20%."
+  },
+  {
+    "reviewId": "R024",
+    "answer": "D",
+    "rationale": "Activation takes 45 versus target 15 minutes; food and water quantities meet targets.",
+    "issue": "Low-depth literal matching: stem explicitly names the failed activation metric and rules out the other measured categories."
+  },
+  {
+    "reviewId": "R025",
+    "answer": "C",
+    "rationale": "200/4 = 50 servings; using the specified four-ounce measure preserves both targets."
+  },
+  {
+    "reviewId": "R026",
+    "answer": "C",
+    "rationale": "The identified constraint is workstation access, so change its scheduling.",
+    "issue": "Low-depth literal matching and overlap with R018: stated workstation-access cause selects the only access intervention."
+  },
+  {
+    "reviewId": "R027",
+    "answer": "A",
+    "rationale": "Count remains 20 while average unit weight changes 6 to 8 ounces; total rises 120 to 160 ounces."
+  },
+  {
+    "reviewId": "R028",
+    "answer": "C",
+    "rationale": "(1500-300-300)/3 = 300 mL per meal."
+  },
+  {
+    "reviewId": "R029",
+    "answer": "B",
+    "rationale": "Arrival timing and staffing jointly evaluate alternative delivery schedules."
+  },
+  {
+    "reviewId": "R030",
+    "answer": "B",
+    "rationale": "Potassium-containing salt substitutes can be problematic in renal diet implementation; individual restrictions remain clinical decisions."
+  },
+  {
+    "reviewId": "R031",
+    "answer": "C",
+    "rationale": "The oven is required at incompatible temperatures during overlapping times."
+  },
+  {
+    "reviewId": "R032",
+    "answer": "D",
+    "rationale": "Count scheduled servings reaching residents to test missed delivery, while acceptance is already measured."
+  },
+  {
+    "reviewId": "R033",
+    "answer": "C",
+    "rationale": "60/80 = 0.75 = 75%."
+  },
+  {
+    "reviewId": "R034",
+    "answer": "A",
+    "rationale": "Air gap must be at least twice inlet diameter and at least one inch; max(2*0.75,1) = 1.5 inches."
+  },
+  {
+    "reviewId": "R035",
+    "answer": "B",
+    "rationale": "70-5 = 65 regular; 30+5 = 35 modified; total remains 100."
+  },
+  {
+    "reviewId": "R036",
+    "answer": "D",
+    "rationale": "Chemical concentration requires the appropriate test kit or strips, not temperature or pressure readings."
+  },
+  {
+    "reviewId": "R037",
+    "answer": "C",
+    "rationale": "FDA general guidance calls 5% DV or less low and 20% or more high; 4% sodium low, 22% fiber high."
+  },
+  {
+    "reviewId": "R038",
+    "answer": "A",
+    "rationale": "Heat redistribution after removal produces carryover cooking."
+  },
+  {
+    "reviewId": "R039",
+    "answer": "D",
+    "rationale": "Damaged kidneys may not remove excess water sufficiently, supporting a prescribed fluid restriction.",
+    "issue": "Distractor weakness: gluten breakdown, iron absorption and lactose digestion are remote from kidney fluid restriction."
+  },
+  {
+    "reviewId": "R040",
+    "answer": "C",
+    "rationale": "Today's documented standing-scale method is inconsistent with the resident's inability to stand."
+  },
+  {
+    "reviewId": "R041",
+    "answer": "C",
+    "rationale": "One late start in ten is at the allowed maximum, so the timing target was met."
+  },
+  {
+    "reviewId": "R042",
+    "answer": "C",
+    "rationale": "18000-15000 = $3000 lower cost for replacement."
+  },
+  {
+    "reviewId": "R043",
+    "answer": "B",
+    "rationale": "Make cost = 80+4*20 = 160; buying at 150 saves $10."
+  },
+  {
+    "reviewId": "R044",
+    "answer": "B",
+    "rationale": "Food Code microwave reheating requires two minutes covered standing after reaching the specified temperature."
+  },
+  {
+    "reviewId": "R045",
+    "answer": "C",
+    "rationale": "Drained weight measures edible peaches after liquid removal; requirement is 100*4 = 400 drained ounces."
+  },
+  {
+    "reviewId": "R046",
+    "answer": "D",
+    "rationale": "(1.80-1.50)*3000 = $900 additional expense."
+  },
+  {
+    "reviewId": "R047",
+    "answer": "D",
+    "rationale": "Reviewing completed records against the plan is verification, distinct from contemporaneous monitoring."
+  },
+  {
+    "reviewId": "R048",
+    "answer": "B",
+    "rationale": "Phosphate is the phosphorus-containing additive named among these ingredients."
+  },
+  {
+    "reviewId": "R049",
+    "answer": "B",
+    "rationale": "Cleaner residue is chemical contamination."
+  },
+  {
+    "reviewId": "R050",
+    "answer": "D",
+    "rationale": "Observation during routine production evaluates workplace transfer of the trained skill."
+  },
+  {
+    "reviewId": "R051",
+    "answer": "D",
+    "rationale": "Food Code 4-402.12 requires six-inch elevation for fixed floor equipment when stated exceptions do not apply."
+  },
+  {
+    "reviewId": "R052",
+    "answer": "B",
+    "rationale": "Soft carrots satisfy both soft texture and orange color.",
+    "issue": "Elementary two-attribute matching rather than substantive menu-planning judgment; usable as an introductory item."
+  },
+  {
+    "reviewId": "R053",
+    "answer": "A",
+    "rationale": "Moving two four-hour shifts to 9-1 adds two workers over the entire 11-1 lunch window without more hours."
+  },
+  {
+    "reviewId": "R054",
+    "answer": "D",
+    "rationale": "Additional heating is the corrective response; the original reading identifies the deviation."
+  },
+  {
+    "reviewId": "R055",
+    "answer": "A",
+    "rationale": "65% mean lunch intake exceeds the stated 60% lunch goal; other results measure different things.",
+    "issue": "Metric is explicitly specified; alternatives concern different meals or process measures, limiting discrimination."
+  },
+  {
+    "reviewId": "R056",
+    "answer": "A",
+    "rationale": "Microwave thawing requires immediate uninterrupted transfer to conventional cooking under Food Code 3-501.13."
+  },
+  {
+    "reviewId": "R057",
+    "answer": "B",
+    "rationale": "A split seam fails package integrity."
+  },
+  {
+    "reviewId": "R058",
+    "answer": "C",
+    "rationale": "Dish D at 44°F exceeds the ordinary 41°F cold-holding maximum."
+  },
+  {
+    "reviewId": "R059",
+    "answer": "A",
+    "rationale": "MDS K0300 uses weights closest to 30 and 180 days before the current weight."
+  },
+  {
+    "reviewId": "R060",
+    "answer": "A",
+    "rationale": "Food Code 2-201.12(H) restricts sore-throat-with-fever workers outside highly susceptible population service."
+  },
+  {
+    "reviewId": "R061",
+    "answer": "C",
+    "rationale": "Ordinary refrigerated TCS food must be received at 41°F or less absent an applicable exception."
+  },
+  {
+    "reviewId": "R062",
+    "answer": "B",
+    "rationale": "Replacing butter with canola oil shifts toward unsaturated fat."
+  },
+  {
+    "reviewId": "R063",
+    "answer": "D",
+    "rationale": "Noon plus two hours = 2 p.m. to reach 70°F."
+  },
+  {
+    "reviewId": "R064",
+    "answer": "B",
+    "rationale": "USERRA permits elected health-plan continuation up to 24 months, subject to its conditions."
+  },
+  {
+    "reviewId": "R065",
+    "answer": "A",
+    "rationale": "X is not received frozen and shows prior thawing; the other cases are solidly frozen."
+  },
+  {
+    "reviewId": "R066",
+    "answer": "C",
+    "rationale": "Sesame is a major food allergen under the 2022 Food Code."
+  },
+  {
+    "reviewId": "R067",
+    "answer": "C",
+    "rationale": "Ice for beverages is consumed and must come from drinking water."
+  },
+  {
+    "reviewId": "R068",
+    "answer": "B",
+    "rationale": "A metal fragment is a physical hazard."
+  },
+  {
+    "reviewId": "R069",
+    "answer": "C",
+    "rationale": "The numerical boundary is a critical limit, not the timing of observations or the corrective response."
+  },
+  {
+    "reviewId": "R070",
+    "answer": "D",
+    "rationale": "(40+3*20)/40 = 2.5 FTEs."
+  },
+  {
+    "reviewId": "R071",
+    "answer": "D",
+    "rationale": "Food Code running-water thawing permits water no warmer than 70°F, unlike 41°F refrigerated thawing."
+  },
+  {
+    "reviewId": "R072",
+    "answer": "D",
+    "rationale": "400/4 = 100 planned servings; demand of 110 exceeds forecast by ten."
+  },
+  {
+    "reviewId": "R073",
+    "answer": "C",
+    "rationale": "Route A loses 160-150 = 10°F; B loses 160-140 = 20°F, the larger observed loss."
+  },
+  {
+    "reviewId": "R074",
+    "answer": "B",
+    "rationale": "BMI = 72/(1.60*1.60) = 28.125, rounded to 28.1 kg/m²."
+  },
+  {
+    "reviewId": "R075",
+    "answer": "A",
+    "rationale": "300*0.5+100+120*0 = 250 kcal."
+  },
+  {
+    "reviewId": "R076",
+    "answer": "D",
+    "rationale": "100/40 = 2.5 multiplier."
+  },
+  {
+    "reviewId": "R077",
+    "answer": "A",
+    "rationale": "Vomiting is a reported symptom; no diagnosed infection has been established.",
+    "issue": "Near-tautological classification of reported vomiting versus no diagnosis; shallow as professional application."
+  },
+  {
+    "reviewId": "R078",
+    "answer": "A",
+    "rationale": "Food Code 7-102.11 requires the working container's common chemical name."
+  },
+  {
+    "reviewId": "R079",
+    "answer": "B",
+    "rationale": "FMLA restoration permits an equivalent job with equivalent pay, benefits and employment terms."
+  },
+  {
+    "reviewId": "R080",
+    "answer": "D",
+    "rationale": "The denominator or observational unit differs: individual items versus whole trays."
+  },
+  {
+    "reviewId": "R081",
+    "answer": "D",
+    "rationale": "A sensory comparison by residents directly assesses bitterness acceptance."
+  },
+  {
+    "reviewId": "R082",
+    "answer": "C",
+    "rationale": "50*4/5 = 40 full portions."
+  },
+  {
+    "reviewId": "R083",
+    "answer": "D",
+    "rationale": "12*32/6 = 64 portions."
+  },
+  {
+    "reviewId": "R084",
+    "answer": "C",
+    "rationale": "The shared new error concerns revised label codes, the appropriate training target.",
+    "issue": "Label-code error and label-code training are a direct lexical match; other topics are unrelated."
+  },
+  {
+    "reviewId": "R085",
+    "answer": "A",
+    "rationale": "Credentials, experience and abilities are qualification requirements."
+  },
+  {
+    "reviewId": "R086",
+    "answer": "B",
+    "rationale": "Monday is day one; Sunday is day seven, the maximum absent another limit."
+  },
+  {
+    "reviewId": "R087",
+    "answer": "A",
+    "rationale": "Dietitian and pharmacist combine food/nutrition and medication expertise."
+  },
+  {
+    "reviewId": "R088",
+    "answer": "A",
+    "rationale": "14 total - 6 added = 8 g naturally occurring sugars."
+  },
+  {
+    "reviewId": "R089",
+    "answer": "D",
+    "rationale": "12/(18/240) = 160 mL replacement."
+  },
+  {
+    "reviewId": "R090",
+    "answer": "B",
+    "rationale": "240/4 = 60 mL consumed."
+  },
+  {
+    "reviewId": "R091",
+    "answer": "D",
+    "rationale": "Sogginess is a texture change; the other stated dimensions are unchanged."
+  },
+  {
+    "reviewId": "R092",
+    "answer": "C",
+    "rationale": "500/100 = $5; 450/75 = $6 per accepted meal."
+  },
+  {
+    "reviewId": "R093",
+    "answer": "D",
+    "rationale": "FEFO prioritizes June 12 expiry over June 20, regardless of later receipt."
+  },
+  {
+    "reviewId": "R094",
+    "answer": "A",
+    "rationale": "The stated variable food cost falls 10%; the fixed lease stays unchanged."
+  },
+  {
+    "reviewId": "R095",
+    "answer": "A",
+    "rationale": "Evaporation while simmering concentrates a sauce through reduction."
+  },
+  {
+    "reviewId": "R096",
+    "answer": "A",
+    "rationale": "720/90 = 8 meals per labor hour."
+  },
+  {
+    "reviewId": "R097",
+    "answer": "B",
+    "rationale": "Eight minutes meets prescribed texture and is preferred over the other acceptable trial.",
+    "issue": "Answer explicitly supplied by the stem: preferred eight-minute version is also acceptable. Weak discrimination."
+  },
+  {
+    "reviewId": "R098",
+    "answer": "C",
+    "rationale": "6000/1000 = 6 and 7200/1200 = 6 dollars per patient day."
+  },
+  {
+    "reviewId": "R099",
+    "answer": "C",
+    "rationale": "6300/900 = $7 per patient day."
+  },
+  {
+    "reviewId": "R100",
+    "answer": "A",
+    "rationale": "Food Code 3-501.14(B) allows four hours to 41°F for TCS food made from ambient ingredients."
+  },
+  {
+    "reviewId": "R101",
+    "answer": "D",
+    "rationale": "Hepatitis A is among the Food Code reportable diagnoses; the other listed infections are not on that list."
+  },
+  {
+    "reviewId": "R102",
+    "answer": "D",
+    "rationale": "42 CFR 483.10 protects resident participation in care planning."
+  },
+  {
+    "reviewId": "R103",
+    "answer": "D",
+    "rationale": "A costs 80/40 = $2 per needed unit; B costs 108/40 = $2.70 after excess expiry."
+  },
+  {
+    "reviewId": "R104",
+    "answer": "B",
+    "rationale": "11:30 minus 45 cooking minutes minus 15 portioning minutes = 10:30."
+  },
+  {
+    "reviewId": "R105",
+    "answer": "A",
+    "rationale": "Delays fall while errors rise, indicating improved timeliness and worsened accuracy."
+  },
+  {
+    "reviewId": "R106",
+    "answer": "C",
+    "rationale": "10/200 = 5%; 9/300 = 3%."
+  },
+  {
+    "reviewId": "R107",
+    "answer": "A",
+    "rationale": "Different temperatures confound attributing preference to seasoning alone."
+  },
+  {
+    "reviewId": "R108",
+    "answer": "A",
+    "rationale": "Observe package handling to test the reported access barrier."
+  },
+  {
+    "reviewId": "R109",
+    "answer": "B",
+    "rationale": "30*(2/3) = 20 g."
+  },
+  {
+    "reviewId": "R110",
+    "answer": "D",
+    "rationale": "The oldest prepared ingredient's date controls; Tuesday precedes Thursday."
+  },
+  {
+    "reviewId": "R111",
+    "answer": "A",
+    "rationale": "A budget-variance report compares actual expenditure with planned expenditure.",
+    "issue": "Spending-versus-plan wording closely defines budget variance; foundational vocabulary rather than applied analysis."
+  },
+  {
+    "reviewId": "R112",
+    "answer": "C",
+    "rationale": "Customer demand at the proposed price is the explicitly untested assumption.",
+    "issue": "Stem repeats the correct option customer demand at the planned price nearly verbatim."
+  },
+  {
+    "reviewId": "R113",
+    "answer": "D",
+    "rationale": "The revised task calls for detecting discrepancies in produced tallies rather than manual counting."
+  },
+  {
+    "reviewId": "R114",
+    "answer": "B",
+    "rationale": "Shared utensils transfer allergens between foods; separation controls this failure."
+  },
+  {
+    "reviewId": "R115",
+    "answer": "C",
+    "rationale": "Commercially processed packaged ready-to-eat TCS food requires 135°F for hot holding under Food Code 3-403.11(C)."
+  },
+  {
+    "reviewId": "R116",
+    "answer": "D",
+    "rationale": "Departure must be 11:35 for 11:45 arrival; waiting must shrink from 20 to 5 minutes, a 15-minute reduction."
+  },
+  {
+    "reviewId": "R117",
+    "answer": "C",
+    "rationale": "90-60 = 30 days remaining."
+  },
+  {
+    "reviewId": "R118",
+    "answer": "B",
+    "rationale": "Pickup receipts provide evidence of issues to compare with inventory issue entries."
+  },
+  {
+    "reviewId": "R119",
+    "answer": "B",
+    "rationale": "In-house cooked/cooled TCS food reheated for hot holding must reach 165°F for 15 seconds."
+  },
+  {
+    "reviewId": "R120",
+    "answer": "C",
+    "rationale": "60*60/450 = 8 labor minutes per meal."
+  },
+  {
+    "reviewId": "R121",
+    "answer": "C",
+    "rationale": "USERRA generally accepts verbal or written advance service notice."
+  },
+  {
+    "reviewId": "R122",
+    "answer": "D",
+    "rationale": "Actual measurement demonstrates the target practical skill."
+  },
+  {
+    "reviewId": "R123",
+    "answer": "D",
+    "rationale": "600+250+200 = 1050 mL."
+  },
+  {
+    "reviewId": "R124",
+    "answer": "A",
+    "rationale": "10/150 = 6.67%; alternatives lose 4.67%, 3.33%, and 4%, respectively; only 150 to 140 crosses 5%."
+  },
+  {
+    "reviewId": "R125",
+    "answer": "D",
+    "rationale": "Checking the repaired equipment verifies restored function; repair itself is the intervention."
+  },
+  {
+    "reviewId": "R126",
+    "answer": "B",
+    "rationale": "Finished batch weight directly tests differential production loss when quantities and portioning are controlled."
+  },
+  {
+    "reviewId": "R127",
+    "answer": "B",
+    "rationale": "Peanut ingredient transfer is allergen cross-contact, distinct from pathogen contamination."
+  },
+  {
+    "reviewId": "R128",
+    "answer": "C",
+    "rationale": "11:30 to 11:15 advances the handoff 15 minutes.",
+    "issue": "Fifteen-minute subtraction with no substantive handoff judgment; low-depth staffing item."
+  },
+  {
+    "reviewId": "R129",
+    "answer": "B",
+    "rationale": "The comments identify the service day, not taste or portioning, as the barrier."
+  },
+  {
+    "reviewId": "R130",
+    "answer": "A",
+    "rationale": "The 8 a.m. tray card still says regular and conflicts with the verified 10 a.m. low-sodium order."
+  },
+  {
+    "reviewId": "R131",
+    "answer": "A",
+    "rationale": "Selecting the process stage for essential hazard control identifies a critical control point."
+  },
+  {
+    "reviewId": "R132",
+    "answer": "C",
+    "rationale": "Expanding abbreviations addresses the written guide's identified comprehension barrier.",
+    "issue": "Stem states abbreviations are the barrier; expanding abbreviations is the only relevant option."
+  },
+  {
+    "reviewId": "R133",
+    "answer": "C",
+    "rationale": "Residents are the target users and comparing both coded versions tests the intended preference."
+  },
+  {
+    "reviewId": "R134",
+    "answer": "B",
+    "rationale": "Food Code 4-602.11(C) sets four-hour cleaning intervals for TCS-contact equipment without an exception."
+  },
+  {
+    "reviewId": "R135",
+    "answer": "C",
+    "rationale": "Changed recipe yield changes the batch-quantity requirement despite nutrient compatibility."
+  },
+  {
+    "reviewId": "R136",
+    "answer": "D",
+    "rationale": "The required purchasing quotes remain missing; maintenance has completed its dependency.",
+    "issue": "Simple missing-dependency restatement; unrelated reservation/attendance distractors."
+  },
+  {
+    "reviewId": "R137",
+    "answer": "A",
+    "rationale": "Event workload and extra labor hours directly test the stated overtime hypothesis."
+  },
+  {
+    "reviewId": "R138",
+    "answer": "A",
+    "rationale": "Task is pending under supervisor responsibility; Friday deadline has not passed on Thursday.",
+    "issue": "Very basic status-reading exercise; no competing managerial priorities or interpretation."
+  },
+  {
+    "reviewId": "R139",
+    "answer": "D",
+    "rationale": "ceil(300/80) = 4 full batches, producing 320 portions."
+  },
+  {
+    "reviewId": "R140",
+    "answer": "D",
+    "rationale": "Whisking disperses one immiscible liquid in another, producing an emulsion."
+  },
+  {
+    "reviewId": "R141",
+    "answer": "B",
+    "rationale": "11 pounds returned on trays exceeds 8 trimming and 3 after-service pounds; this is after diner receipt."
+  },
+  {
+    "reviewId": "R142",
+    "answer": "C",
+    "rationale": "Record C has four completions at or before 10:30; A, B and D each have two."
+  },
+  {
+    "reviewId": "R143",
+    "answer": "B",
+    "rationale": "Shelf-dependent browning calls for a pan-placement trial in the new oven."
+  },
+  {
+    "reviewId": "R144",
+    "answer": "B",
+    "rationale": "8000+1500+500 = $10000 acquisition cost."
+  },
+  {
+    "reviewId": "R145",
+    "answer": "C",
+    "rationale": "Handling soiled utensils triggers handwashing under Food Code 2-301.14.",
+    "issue": "Only soiled utensils is a meaningful contamination event, making alternatives weak though rule is accurate."
+  },
+  {
+    "reviewId": "R146",
+    "answer": "B",
+    "rationale": "9 a.m. plus four hours = 1 p.m."
+  },
+  {
+    "reviewId": "R147",
+    "answer": "B",
+    "rationale": "2.40/0.30 = $8 menu price."
+  },
+  {
+    "reviewId": "R148",
+    "answer": "C",
+    "rationale": "Normalize both labels to the prescribed 60 g portion before comparing nutrient amounts."
+  },
+  {
+    "reviewId": "R149",
+    "answer": "A",
+    "rationale": "CDC adult BMI below 18.5 is underweight; 18.2 meets that category."
+  },
+  {
+    "reviewId": "R150",
+    "answer": "C",
+    "rationale": "(1500+1800+1500)/3 = 1600 kcal/day."
+  },
+  {
+    "reviewId": "R151",
+    "answer": "C",
+    "rationale": "40*6 = 240 worker-minutes; 240/60 = 4 workers."
+  },
+  {
+    "reviewId": "R152",
+    "answer": "C",
+    "rationale": "$7200 equipment purchase exceeds the stated $5000 capital threshold; other choices are operating costs."
+  },
+  {
+    "reviewId": "R153",
+    "answer": "A",
+    "rationale": "Identifying a potential bacterial hazard is hazard analysis.",
+    "issue": "Purchasing budget is not a plausible competing HACCP stage; other technical alternatives preserve some knowledge demand."
+  },
+  {
+    "reviewId": "R154",
+    "answer": "A",
+    "rationale": "Heating egg protein produces coagulation, firming the mixture."
+  },
+  {
+    "reviewId": "R155",
+    "answer": "C",
+    "rationale": "3 services*2 cook-hours = 6 required; 6-6 = zero spare cook-hours."
+  },
+  {
+    "reviewId": "R156",
+    "answer": "B",
+    "rationale": "72/48 = $1.50 per serving."
+  },
+  {
+    "reviewId": "R157",
+    "answer": "B",
+    "rationale": "Two full consecutive workdays ending Tuesday are Monday and Tuesday."
+  },
+  {
+    "reviewId": "R158",
+    "answer": "C",
+    "rationale": "Morning 2/40 = 5%; evening 6/20 = 30%."
+  },
+  {
+    "reviewId": "R159",
+    "answer": "A",
+    "rationale": "420-180 = 240 mg extra sodium per portion."
+  },
+  {
+    "reviewId": "R160",
+    "answer": "D",
+    "rationale": "Ordinary FMLA hours eligibility counts actual hours worked, not paid leave hours."
+  },
+  {
+    "reviewId": "R161",
+    "answer": "B",
+    "rationale": "FIFO selects the earliest receipt, May 4, with safety dates held equal."
+  },
+  {
+    "reviewId": "R162",
+    "answer": "D",
+    "rationale": "(60-9)/60 = 85% accurate."
+  },
+  {
+    "reviewId": "R163",
+    "answer": "D",
+    "rationale": "Productivity comparisons need consistent staff membership in labor-hour denominators.",
+    "issue": "Three unrelated document lists make denominator-membership answer conspicuous; modest conceptual content."
+  },
+  {
+    "reviewId": "R164",
+    "answer": "B",
+    "rationale": "Food Code 4-204.112 locates refrigerated-unit measurement in its warmest part."
+  },
+  {
+    "reviewId": "R165",
+    "answer": "C",
+    "rationale": "90*0.60+70*0.40 = 54+28 = 82."
+  },
+  {
+    "reviewId": "R166",
+    "answer": "A",
+    "rationale": "Ordinary fish cooking minimum is 145°F for 15 seconds under Food Code 3-401.11."
+  },
+  {
+    "reviewId": "R167",
+    "answer": "B",
+    "rationale": "(10-9)*6 = 6 packs short."
+  },
+  {
+    "reviewId": "R168",
+    "answer": "B",
+    "rationale": "Fortified milk contributes calcium and vitamin D; removing it warrants reviewing both."
+  },
+  {
+    "reviewId": "R169",
+    "answer": "C",
+    "rationale": "CMS K0100 records a listed symptom even once during the seven-day look-back."
+  },
+  {
+    "reviewId": "R170",
+    "answer": "C",
+    "rationale": "The signed clinical order and actual meal compare authoritative instruction against delivered implementation."
+  },
+  {
+    "reviewId": "R171",
+    "answer": "C",
+    "rationale": "SDS section 10 covers stability, reactivity, incompatible materials and hazardous reactions."
+  },
+  {
+    "reviewId": "R172",
+    "answer": "C",
+    "rationale": "Food Code poultry minimum is 165°F instantaneous; 15-second holding is the reheating distractor."
+  },
+  {
+    "reviewId": "R173",
+    "answer": "B",
+    "rationale": "96*5/16 = 30 cooked pounds."
+  },
+  {
+    "reviewId": "R174",
+    "answer": "B",
+    "rationale": "Wrong-diet mismatch rate directly measures the stated quality defect; target drops 12 to 4 per 100.",
+    "issue": "Stem and answer directly echo wrong-diet defect; alternatives change the outcome construct."
+  },
+  {
+    "reviewId": "R175",
+    "answer": "C",
+    "rationale": "Before/after meal consumption directly tests temporal association with the medicine timing change, without proving causation."
+  },
+  {
+    "reviewId": "R176",
+    "answer": "D",
+    "rationale": "Aged hard cheese such as cheddar generally contains less lactose and is a tolerated option for some individuals."
+  },
+  {
+    "reviewId": "R177",
+    "answer": "A",
+    "rationale": "3/0.75 = 4 and 3.60/0.90 = 4 dollars per edible pound."
+  },
+  {
+    "reviewId": "R178",
+    "answer": "D",
+    "rationale": "USERRA's escalator principle restores the position and seniority progression the employee would have attained."
+  },
+  {
+    "reviewId": "R179",
+    "answer": "D",
+    "rationale": "Edible yield converts purchased-pound cost to usable served-pound cost."
+  },
+  {
+    "reviewId": "R180",
+    "answer": "B",
+    "rationale": "Pureeing is mechanical texture alteration; it does not automatically establish therapeutic-diet coding.",
+    "issue": "Automatically in therapeutic-diet distractor adds a genuine absolute-word cue; category distinction itself is substantive."
+  },
+  {
+    "reviewId": "R181",
+    "answer": "C",
+    "rationale": "Shallow metal pans are the available Food Code cooling method; all other listed resources are unavailable.",
+    "issue": "Stem explicitly eliminates three options by unavailable equipment; no need to know cooling effectiveness to answer."
+  },
+  {
+    "reviewId": "R182",
+    "answer": "D",
+    "rationale": "120-20+8 = 108 lunches."
+  },
+  {
+    "reviewId": "R183",
+    "answer": "C",
+    "rationale": "Food Code 4-602.11(B) allows successive raw meat/poultry requiring higher cooking temperature; intact beef to poultry increases the minimum."
+  },
+  {
+    "reviewId": "R184",
+    "answer": "C",
+    "rationale": "Ordinary hot holding minimum is 135°F under Food Code 3-501.16."
+  },
+  {
+    "reviewId": "R185",
+    "answer": "A",
+    "rationale": "150 added snack kcal minus 150 reduced dinner kcal = zero net change."
+  },
+  {
+    "reviewId": "R186",
+    "answer": "D",
+    "rationale": "Stable weight meets maintenance; 40% to 70% consumption improves acceptance; no order change is evidenced."
+  },
+  {
+    "reviewId": "R187",
+    "answer": "D",
+    "rationale": "12900-12000 = $900 unfavorable variance."
+  },
+  {
+    "reviewId": "R188",
+    "answer": "C",
+    "rationale": "Correct dispatch checks followed by reduced arrival quality directs investigation to transport and service."
+  },
+  {
+    "reviewId": "R189",
+    "answer": "A",
+    "rationale": "35+20 = 55 staff within the stated 60 miles, meeting 50 within 75 miles for the worksite-size test.",
+    "issue": "Only/must alternatives add categorical wording cues; underlying 50-within-75 rule remains substantive knowledge."
+  },
+  {
+    "reviewId": "R190",
+    "answer": "D",
+    "rationale": "150/50 = 3 additional cook-hours."
+  },
+  {
+    "reviewId": "R191",
+    "answer": "D",
+    "rationale": "EEOC permits medical examination after conditional offer when applied consistently to selected applicants for the same job."
+  },
+  {
+    "reviewId": "R192",
+    "answer": "B",
+    "rationale": "10 units/day*4 days+15 safety units = 55-unit reorder point."
+  },
+  {
+    "reviewId": "R193",
+    "answer": "A",
+    "rationale": "Only bill payment was delegated; the capable resident retains dietary care participation rights."
+  },
+  {
+    "reviewId": "R194",
+    "answer": "A",
+    "rationale": "ceil(180/48) = 4 whole batches; 4/2 = 2 oven cycles."
+  },
+  {
+    "reviewId": "R195",
+    "answer": "B",
+    "rationale": "(160-152)/160*100 = 5%."
+  },
+  {
+    "reviewId": "R196",
+    "answer": "C",
+    "rationale": "100 expected diners with no reserve require 100 portions; prior 20 leftovers do not justify repeating 120."
+  },
+  {
+    "reviewId": "R197",
+    "answer": "C",
+    "rationale": "0.5 cup*30 g/cup = 15 g; other options provide 10, 20 and 30 g."
+  },
+  {
+    "reviewId": "R198",
+    "answer": "A",
+    "rationale": "Two of four observations meet 11:15, giving 50% on time."
+  },
+  {
+    "reviewId": "R199",
+    "answer": "A",
+    "rationale": "(1800+2400+600)/600 = $8 total cost per meal."
+  },
+  {
+    "reviewId": "R200",
+    "answer": "B",
+    "rationale": "An actual resolved disagreement elicits past behavior rather than hypothetical policy preferences.",
+    "issue": "Actual rather than hypothetical is explicitly specified, with only one past-tense option; minimal behavioral-interview discrimination."
+  }
+]

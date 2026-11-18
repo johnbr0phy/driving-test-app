@@ -1,0 +1,172 @@
+[
+  {
+    "reviewId": "R001",
+    "questionId": "EPA609-EQP-001",
+    "category": "epa609Equipment",
+    "options": {
+      "A": "Oxidation of lubricant additives",
+      "B": "Evaporation of lighter components",
+      "C": "Absorption of atmospheric moisture",
+      "D": "Temperature-related viscosity reduction"
+    },
+    "sourceCorrect": "A",
+    "shuffledCorrect": "C",
+    "guess": "C",
+    "match": true,
+    "cueType": "knowledge",
+    "cue": "Refrigeration lubricants can absorb atmospheric moisture; likely question about exposed oil."
+  },
+  {
+    "reviewId": "R002",
+    "questionId": "EPA609-SRV-002",
+    "category": "epa609Service",
+    "options": {
+      "A": "18 mL of extra liquid refrigerant",
+      "B": "18 mL of new specified lubricant",
+      "C": "Full compressor capacity of new oil",
+      "D": "18 mL of the recovered lubricant"
+    },
+    "sourceCorrect": "B",
+    "shuffledCorrect": "B",
+    "guess": "B",
+    "match": true,
+    "cueType": "prior",
+    "cue": "Likely replacing 18 mL separated oil; use equal quantity of fresh specified lubricant."
+  },
+  {
+    "reviewId": "R003",
+    "questionId": "EPA609-SRV-031",
+    "category": "epa609Service",
+    "options": {
+      "A": "Draining the sump before every use",
+      "B": "Adding compressor lubricant to the sump",
+      "C": "Changing its oil at specified intervals",
+      "D": "Topping up existing oil indefinitely"
+    },
+    "sourceCorrect": "C",
+    "shuffledCorrect": "C",
+    "guess": "C",
+    "match": true,
+    "cueType": "surface",
+    "cue": "Specified-interval oil changes are the only normal maintenance action among harmful/extreme alternatives."
+  },
+  {
+    "reviewId": "R004",
+    "questionId": "EPA609-YF-015",
+    "category": "epa609Yf",
+    "options": {
+      "A": "As soon as cabin air temperature rises",
+      "B": "After high-side pressure has decreased",
+      "C": "Before pressure starts to equalize",
+      "D": "Only while the compressor clutch is engaged"
+    },
+    "sourceCorrect": "C",
+    "shuffledCorrect": "B",
+    "guess": "B",
+    "match": true,
+    "cueType": "prior",
+    "cue": "Likely asks timing for service disconnect or shutdown action; reduced high-side pressure is plausible."
+  },
+  {
+    "reviewId": "R005",
+    "questionId": "EPA609-REG-006",
+    "category": "epa609Rules",
+    "options": {
+      "A": "Section 608 Type II certification",
+      "B": "Section 609 technician certification",
+      "C": "Section 608 Type I certification",
+      "D": "Section 608 Type III certification"
+    },
+    "sourceCorrect": "B",
+    "shuffledCorrect": "B",
+    "guess": "B",
+    "match": true,
+    "cueType": "knowledge",
+    "cue": "Section 609 is the certification associated with motor vehicle air conditioning service."
+  },
+  {
+    "reviewId": "R006",
+    "questionId": "EPA609-SRV-012",
+    "category": "epa609Service",
+    "options": {
+      "A": "Whether the blower control has failed",
+      "B": "Whether excessive oil was installed",
+      "C": "Where the refrigerant escaped",
+      "D": "Whether the expansion device is blocked"
+    },
+    "sourceCorrect": "D",
+    "shuffledCorrect": "C",
+    "guess": "C",
+    "match": true,
+    "cueType": "prior",
+    "cue": "Likely low refrigerant diagnosis; investigate where charge escaped."
+  },
+  {
+    "reviewId": "R007",
+    "questionId": "EPA609-SRV-007",
+    "category": "epa609Service",
+    "options": {
+      "A": "Required charge for every vehicle",
+      "B": "Maximum possible delivery error",
+      "C": "Interval between accuracy checks",
+      "D": "Smallest displayed increment"
+    },
+    "sourceCorrect": "C",
+    "shuffledCorrect": "D",
+    "guess": "D",
+    "match": true,
+    "cueType": "prior",
+    "cue": "Likely asks scale resolution, distinguished from accuracy and calibration interval."
+  },
+  {
+    "reviewId": "R008",
+    "questionId": "EPA609-REG-007",
+    "category": "epa609Rules",
+    "options": {
+      "A": "No new filing solely for this purchase",
+      "B": "Annual filing covering all current machines",
+      "C": "New filing for each different refrigerant",
+      "D": "New filing for each machine serial number"
+    },
+    "sourceCorrect": "C",
+    "shuffledCorrect": "A",
+    "guess": "A",
+    "match": true,
+    "cueType": "prior",
+    "cue": "Likely asks whether another machine purchase requires another equipment certification filing."
+  },
+  {
+    "reviewId": "R009",
+    "questionId": "EPA609-SRV-025",
+    "category": "epa609Service",
+    "options": {
+      "A": "Local atmospheric pressure is lower",
+      "B": "Lower refrigerant vapor pressure",
+      "C": "Higher residual lubricant viscosity",
+      "D": "Higher pump rated flow capacity"
+    },
+    "sourceCorrect": "A",
+    "shuffledCorrect": "A",
+    "guess": "A",
+    "match": true,
+    "cueType": "prior",
+    "cue": "Likely asks elevation effect on gauge vacuum; local atmospheric pressure decreases with elevation."
+  },
+  {
+    "reviewId": "R010",
+    "questionId": "EPA609-SRV-006",
+    "category": "epa609Service",
+    "options": {
+      "A": "Add a fresh full dose of dye",
+      "B": "Allow circulation before reinspecting",
+      "C": "Switch to a higher dye concentration",
+      "D": "Remove existing dye by flushing"
+    },
+    "sourceCorrect": "B",
+    "shuffledCorrect": "B",
+    "guess": "B",
+    "match": true,
+    "cueType": "knowledge",
+    "cue": "Leak dye needs circulation before inspection; immediately adding more is not justified."
+  }
+]

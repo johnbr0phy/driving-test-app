@@ -1,0 +1,1802 @@
+{
+  "R001": {
+    "questionId": "CDM-SAF-008",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R002": {
+    "questionId": "CDM-PER-035",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R003": {
+    "questionId": "CDM-BUS-009",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R004": {
+    "questionId": "CDM-PER-008",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R005": {
+    "questionId": "CDM-BUS-023",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R006": {
+    "questionId": "CDM-PER-010",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R007": {
+    "questionId": "CDM-NUT-038",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R008": {
+    "questionId": "CDM-PER-002",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R009": {
+    "questionId": "CDM-SAF-047",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R010": {
+    "questionId": "CDM-PER-012",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R011": {
+    "questionId": "CDM-NUT-015",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R012": {
+    "questionId": "CDM-NUT-036",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R013": {
+    "questionId": "CDM-FOO-006",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R014": {
+    "questionId": "CDM-SAF-015",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R015": {
+    "questionId": "CDM-BUS-026",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R016": {
+    "questionId": "CDM-FOO-002",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R017": {
+    "questionId": "CDM-BUS-004",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R018": {
+    "questionId": "CDM-FOO-005",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R019": {
+    "questionId": "CDM-NUT-040",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R020": {
+    "questionId": "CDM-FOO-017",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R021": {
+    "questionId": "CDM-PER-015",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R022": {
+    "questionId": "CDM-SAF-004",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R023": {
+    "questionId": "CDM-FOO-015",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R024": {
+    "questionId": "CDM-SAF-048",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R025": {
+    "questionId": "CDM-SAF-002",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R026": {
+    "questionId": "CDM-NUT-008",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R027": {
+    "questionId": "CDM-NUT-023",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R028": {
+    "questionId": "CDM-PER-011",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R029": {
+    "questionId": "CDM-NUT-013",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R030": {
+    "questionId": "CDM-FOO-010",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R031": {
+    "questionId": "CDM-BUS-019",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R032": {
+    "questionId": "CDM-NUT-028",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R033": {
+    "questionId": "CDM-SAF-025",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R034": {
+    "questionId": "CDM-PER-006",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R035": {
+    "questionId": "CDM-SAF-020",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R036": {
+    "questionId": "CDM-FOO-026",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R037": {
+    "questionId": "CDM-FOO-022",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R038": {
+    "questionId": "CDM-NUT-027",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R039": {
+    "questionId": "CDM-BUS-005",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R040": {
+    "questionId": "CDM-SAF-023",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R041": {
+    "questionId": "CDM-FOO-013",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R042": {
+    "questionId": "CDM-SAF-011",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R043": {
+    "questionId": "CDM-FOO-039",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R044": {
+    "questionId": "CDM-NUT-037",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R045": {
+    "questionId": "CDM-PER-009",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R046": {
+    "questionId": "CDM-SAF-037",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R047": {
+    "questionId": "CDM-NUT-034",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R048": {
+    "questionId": "CDM-PER-040",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R049": {
+    "questionId": "CDM-FOO-037",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R050": {
+    "questionId": "CDM-NUT-025",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R051": {
+    "questionId": "CDM-BUS-015",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R052": {
+    "questionId": "CDM-PER-038",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R053": {
+    "questionId": "CDM-FOO-003",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R054": {
+    "questionId": "CDM-PER-007",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R055": {
+    "questionId": "CDM-SAF-017",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R056": {
+    "questionId": "CDM-BUS-007",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R057": {
+    "questionId": "CDM-NUT-022",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R058": {
+    "questionId": "CDM-NUT-024",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R059": {
+    "questionId": "CDM-PER-033",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R060": {
+    "questionId": "CDM-SAF-043",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R061": {
+    "questionId": "CDM-SAF-018",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R062": {
+    "questionId": "CDM-SAF-012",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R063": {
+    "questionId": "CDM-SAF-045",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R064": {
+    "questionId": "CDM-PER-014",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R065": {
+    "questionId": "CDM-FOO-021",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R066": {
+    "questionId": "CDM-PER-003",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R067": {
+    "questionId": "CDM-FOO-034",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R068": {
+    "questionId": "CDM-FOO-036",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R069": {
+    "questionId": "CDM-BUS-027",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R070": {
+    "questionId": "CDM-BUS-011",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R071": {
+    "questionId": "CDM-FOO-027",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R072": {
+    "questionId": "CDM-NUT-009",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R073": {
+    "questionId": "CDM-NUT-012",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R074": {
+    "questionId": "CDM-SAF-024",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R075": {
+    "questionId": "CDM-NUT-016",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R076": {
+    "questionId": "CDM-PER-018",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R077": {
+    "questionId": "CDM-PER-017",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R078": {
+    "questionId": "CDM-FOO-014",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R079": {
+    "questionId": "CDM-BUS-017",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R080": {
+    "questionId": "CDM-BUS-006",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R081": {
+    "questionId": "CDM-FOO-025",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R082": {
+    "questionId": "CDM-SAF-026",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R083": {
+    "questionId": "CDM-SAF-032",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R084": {
+    "questionId": "CDM-FOO-038",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R085": {
+    "questionId": "CDM-NUT-005",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R086": {
+    "questionId": "CDM-PER-028",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R087": {
+    "questionId": "CDM-NUT-033",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R088": {
+    "questionId": "CDM-PER-005",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R089": {
+    "questionId": "CDM-PER-029",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R090": {
+    "questionId": "CDM-PER-019",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R091": {
+    "questionId": "CDM-SAF-022",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R092": {
+    "questionId": "CDM-PER-001",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R093": {
+    "questionId": "CDM-NUT-017",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R094": {
+    "questionId": "CDM-SAF-041",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R095": {
+    "questionId": "CDM-SAF-016",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R096": {
+    "questionId": "CDM-FOO-018",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R097": {
+    "questionId": "CDM-FOO-029",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R098": {
+    "questionId": "CDM-FOO-012",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R099": {
+    "questionId": "CDM-NUT-014",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R100": {
+    "questionId": "CDM-NUT-035",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R101": {
+    "questionId": "CDM-FOO-031",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R102": {
+    "questionId": "CDM-SAF-036",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R103": {
+    "questionId": "CDM-SAF-013",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R104": {
+    "questionId": "CDM-FOO-033",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R105": {
+    "questionId": "CDM-FOO-019",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R106": {
+    "questionId": "CDM-BUS-003",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R107": {
+    "questionId": "CDM-FOO-008",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R108": {
+    "questionId": "CDM-SAF-046",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R109": {
+    "questionId": "CDM-SAF-034",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R110": {
+    "questionId": "CDM-BUS-022",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R111": {
+    "questionId": "CDM-BUS-013",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R112": {
+    "questionId": "CDM-SAF-039",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R113": {
+    "questionId": "CDM-PER-024",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R114": {
+    "questionId": "CDM-PER-020",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R115": {
+    "questionId": "CDM-NUT-031",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R116": {
+    "questionId": "CDM-BUS-021",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R117": {
+    "questionId": "CDM-PER-027",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R118": {
+    "questionId": "CDM-SAF-042",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R119": {
+    "questionId": "CDM-PER-031",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R120": {
+    "questionId": "CDM-PER-025",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R121": {
+    "questionId": "CDM-NUT-032",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R122": {
+    "questionId": "CDM-SAF-027",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R123": {
+    "questionId": "CDM-BUS-018",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R124": {
+    "questionId": "CDM-SAF-010",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R125": {
+    "questionId": "CDM-FOO-041",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R126": {
+    "questionId": "CDM-FOO-024",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R127": {
+    "questionId": "CDM-FOO-035",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R128": {
+    "questionId": "CDM-SAF-021",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R129": {
+    "questionId": "CDM-SAF-019",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R130": {
+    "questionId": "CDM-FOO-032",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R131": {
+    "questionId": "CDM-NUT-006",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R132": {
+    "questionId": "CDM-FOO-028",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R133": {
+    "questionId": "CDM-SAF-005",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R134": {
+    "questionId": "CDM-NUT-007",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R135": {
+    "questionId": "CDM-BUS-020",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R136": {
+    "questionId": "CDM-SAF-028",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R137": {
+    "questionId": "CDM-FOO-001",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R138": {
+    "questionId": "CDM-FOO-030",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R139": {
+    "questionId": "CDM-FOO-023",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R140": {
+    "questionId": "CDM-PER-022",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R141": {
+    "questionId": "CDM-NUT-021",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R142": {
+    "questionId": "CDM-FOO-016",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R143": {
+    "questionId": "CDM-NUT-003",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R144": {
+    "questionId": "CDM-SAF-033",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R145": {
+    "questionId": "CDM-BUS-010",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R146": {
+    "questionId": "CDM-NUT-030",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R147": {
+    "questionId": "CDM-NUT-019",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R148": {
+    "questionId": "CDM-NUT-018",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R149": {
+    "questionId": "CDM-PER-034",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R150": {
+    "questionId": "CDM-SAF-009",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R151": {
+    "questionId": "CDM-PER-036",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R152": {
+    "questionId": "CDM-NUT-039",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R153": {
+    "questionId": "CDM-SAF-038",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R154": {
+    "questionId": "CDM-NUT-029",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "B",
+      "D": "A"
+    }
+  },
+  "R155": {
+    "questionId": "CDM-PER-032",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R156": {
+    "questionId": "CDM-FOO-042",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R157": {
+    "questionId": "CDM-SAF-040",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R158": {
+    "questionId": "CDM-NUT-026",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R159": {
+    "questionId": "CDM-BUS-028",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R160": {
+    "questionId": "CDM-PER-026",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R161": {
+    "questionId": "CDM-NUT-004",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R162": {
+    "questionId": "CDM-PER-023",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R163": {
+    "questionId": "CDM-SAF-003",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R164": {
+    "questionId": "CDM-PER-016",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R165": {
+    "questionId": "CDM-FOO-009",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R166": {
+    "questionId": "CDM-FOO-043",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R167": {
+    "questionId": "CDM-NUT-011",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R168": {
+    "questionId": "CDM-FOO-044",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R169": {
+    "questionId": "CDM-PER-039",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "C",
+      "D": "A"
+    }
+  },
+  "R170": {
+    "questionId": "CDM-FOO-011",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R171": {
+    "questionId": "CDM-SAF-035",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "C",
+      "D": "B"
+    }
+  },
+  "R172": {
+    "questionId": "CDM-SAF-007",
+    "letters": {
+      "A": "D",
+      "B": "C",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R173": {
+    "questionId": "CDM-SAF-014",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R174": {
+    "questionId": "CDM-PER-030",
+    "letters": {
+      "A": "D",
+      "B": "B",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R175": {
+    "questionId": "CDM-NUT-001",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R176": {
+    "questionId": "CDM-NUT-010",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R177": {
+    "questionId": "CDM-SAF-029",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R178": {
+    "questionId": "CDM-BUS-014",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R179": {
+    "questionId": "CDM-BUS-024",
+    "letters": {
+      "A": "C",
+      "B": "A",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R180": {
+    "questionId": "CDM-FOO-040",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R181": {
+    "questionId": "CDM-PER-013",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R182": {
+    "questionId": "CDM-FOO-004",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R183": {
+    "questionId": "CDM-FOO-007",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R184": {
+    "questionId": "CDM-BUS-012",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R185": {
+    "questionId": "CDM-PER-037",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R186": {
+    "questionId": "CDM-NUT-002",
+    "letters": {
+      "A": "B",
+      "B": "D",
+      "C": "A",
+      "D": "C"
+    }
+  },
+  "R187": {
+    "questionId": "CDM-BUS-025",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "B",
+      "D": "D"
+    }
+  },
+  "R188": {
+    "questionId": "CDM-BUS-016",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R189": {
+    "questionId": "CDM-SAF-030",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R190": {
+    "questionId": "CDM-SAF-031",
+    "letters": {
+      "A": "A",
+      "B": "B",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R191": {
+    "questionId": "CDM-SAF-001",
+    "letters": {
+      "A": "C",
+      "B": "D",
+      "C": "A",
+      "D": "B"
+    }
+  },
+  "R192": {
+    "questionId": "CDM-BUS-002",
+    "letters": {
+      "A": "D",
+      "B": "A",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R193": {
+    "questionId": "CDM-BUS-008",
+    "letters": {
+      "A": "C",
+      "B": "B",
+      "C": "D",
+      "D": "A"
+    }
+  },
+  "R194": {
+    "questionId": "CDM-BUS-001",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    }
+  },
+  "R195": {
+    "questionId": "CDM-SAF-006",
+    "letters": {
+      "A": "A",
+      "B": "C",
+      "C": "D",
+      "D": "B"
+    }
+  },
+  "R196": {
+    "questionId": "CDM-PER-021",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  },
+  "R197": {
+    "questionId": "CDM-NUT-020",
+    "letters": {
+      "A": "B",
+      "B": "A",
+      "C": "D",
+      "D": "C"
+    }
+  },
+  "R198": {
+    "questionId": "CDM-FOO-020",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R199": {
+    "questionId": "CDM-SAF-044",
+    "letters": {
+      "A": "A",
+      "B": "D",
+      "C": "B",
+      "D": "C"
+    }
+  },
+  "R200": {
+    "questionId": "CDM-PER-004",
+    "letters": {
+      "A": "B",
+      "B": "C",
+      "C": "A",
+      "D": "D"
+    }
+  }
+}

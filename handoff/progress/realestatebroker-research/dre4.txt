@@ -1,0 +1,251 @@
+4 Property  
+ 
+ 
+HISTORICAL DERIVATIONS 
+In English Common Law, the word property referred not to the thing owned, but rather to the rights which the 
+owner had: the rights to possess, use, encumber, transfer  and exclude others. Property consisted of a “bundle of 
+rights” or a “bundle of interests” a person had in a thing, whether the thing was real or personal property. 
+The early English courts distinguished between lawsuits in which the landowner, if wrongfully ousted, could 
+recover the land itself (the “real thing”) and those laws uits in which the owner could recover only monetary 
+damages. By bringing a “real ac tion,” the owner could receive th e return of the land, the “real  property.” An 
+action for monetary damages was called “personal,” a nd the owner’s limited interest was labeled “personal 
+property.” 
+In the feudal society of medieval England, an estate  was the ownership interest that a person had in the land. 
+The estate was termed a freehold estate when the owner’s interest was not subject to certain servile incidents or 
+demands of the overlord. Only an owner of a freehold estate  could bring a real action. Therefore, only freehold 
+estates were regarded as real propert y. A freehold estate was of indefinite duration. A less-than-freehold estate 
+was an interest of specified duration. 
+Freehold Estates 
+A freehold estate could be an estate in fee or a life estate. An estate in fee could be either absolute or qualified. 
+An estate in fee simple absolute  was the largest estate recognized by the law. Among other rights, its owner 
+controlled its disposition, including the right to will it. Upon disposition, this estate could become qualified by a 
+condition. For example, grantor A could sell the estate to grantee B on the condition that the property be used 
+as a hostel for itinerant musicians. If B changed the use, A could reenter the property and terminate B’s estate. 
+Hence, B’s fee estate could be defeated and was termed fee simple defeasible. 
+A life estate would be created if grantor A conveyed real property to B for the life of B or the life of some other 
+person, with the initial grant controlling disposition of th e estate upon the death of B (or the death of the other 
+person). Again, this was a freehold b ecause its duration was not fixed in sp ecified temporal terms (i.e., months 
+or years). 
+Less-Than-Freehold Estates 
+Less-than-freehold estates  were the rights of tenants who rented or leased real property. These estates were 
+personal property. 
+THE MODERN VIEW 
+Today, we think of property as the thing (not the rights ) owned. Property is either real  or personal. Real 
+property consists of: 
+1. Land; 
+2. Anything affixed and regarded as a permanent part of the land; 
+3. That which is incidental or appurtenant to the land; and 
+4. That which is immovable by law. 
+Land 
+Land includes the soil, rock, and other substances that co mpose the material of the earth. It also includes space. 
+Not just the space on the surface of th e earth, but also the space beneath it to the center of the earth and the 
+space above it to the top of the sky.  
+The courts have recognized a public right to the use of airspace above private land as a “highway” available to 
+all so long as such use does not unreasonably interfere with the landowner’s enjoyment of the property. The 
+courts also recognize the fluid and “fugitive” or moving nature of subsu rface oil and gas. The right of the 
+46 CHAPTER  FOUR 
+ 
+landowner to drill vertically into his or her land for the purpose of capturing these substances is a valuable part 
+of what is included in the ownership of land, but th is does not include any right to drill slantwise under a 
+neighbor’s land for this purpose. 
+Things Affixed to Land 
+These include buildings, bridges and trees, as well as anything that is affixed to them (e.g., the doors of a  
+building, permanently installed cabinets, or built-in appliances). 
+Incidental or Appurtenant to the Land  
+This form of real property includes anything which is by right used with the land for its benefit. 
+Examples are watercourses or easements/rights of way ove r adjoining lands and even passages for light, air, or 
+heat from or across the land of another. Another example is stock in a mutual water company. When such stock 
+is “appurtenant to the land,” ownership of the stock may not be transferred unless the land is transferred with it. 
+Crops 
+A tenant’s crops, industrial growing crops and things attached to or forming part of the land which are agreed 
+to be severed before sale or under a contract of sale, are treated as goods. 
+“Modern” Estates 
+Section 761 of the California Civil Code (enacted in 1872) classifies estates in real property, with respect to 
+duration, as: 
+1. Estates of inheritance or perpetual estates; 
+2. Estates for life; 
+3. Estates for years; or 
+4. Estates at will. 
+PERSONAL PROPERTY 
+Personal property is any property that is not real property. It includes money, movable goods or chattels, 
+evidences of debt and choses (things) in action. 
+“Choses in action” is a legal phrase used to describe  the right to recover money or other personal property 
+through a judicial proceeding. It includes the right to recover something under a contract (e.g., money owed on 
+a note) and the right to recover damages for a tort or private wrong. 
+FIXTURES 
+Fixtures are items of personal property which are attached to the land in such a manner as to be considered part 
+of the real property. 
+The courts have utilized five general tests to determin e whether or not a given pi ece of personal property is a 
+fixture. These are: 
+1. The intention of the person incorporating the personal property into the land. 
+2. The method by which the property is incorporated into the land. The degree of permanence of the 
+annexation is significant. For example,  if the attachment is by cement a nd plaster, the item so attached is 
+likely to be classified as a fixture. 
+3. The adaptability of the personal property so attached for ordinary use in connection with the land. If well 
+adapted, the item is probably a fixture. 
+4. The existence of an agreement between the parties involved as to the nature of the property affixed to the 
+land. If there is a clear agreement, the status of the attached item is not likely to be an issue. 
+5. The relationship between the person who adds or annexes the article and the person with whom a dispute 
+arises as to its character. This would usually involve seller and buyer or landlord and tenant. 
+Buyers and lenders inspecting property in contemplation of purchase or loan are ju stified in assuming that 
+whatever is attached to the land or building and is essential for its use w ill be part of the conveyance/security. 
+The contract should state clearly any desired exceptions. 
+PROPERTY 47 
+ 
+A tenant may, during the term of the tenancy, remove from the premises anything the tenant has affixed thereto 
+for purposes of trade, manufacture, ornament or domestic use, provided the removal can be accomplished 
+without damage to the premises. This exception does not apply if the thing has, by the manner in which it is 
+affixed, become an integral part of the premises. 
+LEGAL DIFFERENCES BETWEEN REAL AND PERSONAL PROPERTY 
+The following are important legal differences between real and personal property: 
+1. To be enforceable, an agreement fo r the sale of real property must ordi narily be in a writing signed by the 
+party to be charged. An agreement for the sale of personal property must be in writing if the amount or 
+value of the property exceeds $500. 
+2. For the most part, the laws of the situs state govern the transfer of title  to real property. Commercial sales 
+of personal property are subject to federal and state laws. 
+3. The state has provided by law a system for recording documents or instruments affecting the title or 
+interest in real property. 
+4. Tax laws often distinguish between real and personal property. To the property owner and the taxing 
+authority, the distinction may be one of considerable importance. 
+LAND DESCRIPTIONS 
+Every parcel of land sold, leased or mortgaged must be properly identified or described. These descriptions are 
+often referred to as legal descriptions. A good description is said to be one  which describes no other piece of 
+property but the one involved in the transaction. 
+The three most common methods of describing property are: by recorded map; by U. S. Government section 
+and township; and by metes and bounds. 
+Recorded Map 
+In California, the Subdivision Map Act (Government C ode Sections 66410 et seq.) requires the mapping of all 
+new subdivisions. The map shows the re lationship of the subdivision to ot her lands and each parcel in the 
+subdivision is delineated and identified. When accepted by  county or city authority, the map is filed in the 
+county recorder’s office. Documentation can then describe any lot in the subdivision by indicating the lot 
+number, the block, and the map. The description also includes the name of the city, county and state. For 
+example: 
+“Lot 14, Block B, Parkview Addition (as recorded July 17, 1956, Book 2, Page 49 of maps), City of 
+Sacramento, County of Sacramento, State of California.” 
+Description by Township and Section 
+In the township and section system, we begin with  base lines , which are horizontal,  and meridians, which are 
+vertical. 
+This system establishes a grid of vertical lines (“ranges”) and horizontal lines (“township” lines). The lines are 
+six miles apart. A square created by intersections is therefore six miles on each si de and contains 36 square 
+miles. Each of these squares is called a township. (In order to correct for the sphe rical shape of the Earth, 
+additional guide meridians are run every 24 miles east and west of the meridian and standard parallels are run 
+every 24 miles north and south of the base line. These are known as correction lines.) 
+In land descriptions, we move “townships” (north or s outh) from a principal base line and “ranges” (east or 
+west) from a principal meridian, 
+California has three sets of base lines and meridians: the Humboldt Base Line and Meridian in the northwestern 
+part of the State; the Mt. Diablo Base Line and Meridian in the central part of the State; and the San Bernardino 
+Base Line and Meridian in the southern part of the State. 
+The description “township 4 north, range 3 east, Humboldt Base Line and Meridian” directs us to the township 
+which is 4 townships to the north from the Humboldt Base Line and 3 townships to the east from the Humboldt 
+Meridian. 
+48 CHAPTER  FOUR 
+ 
+Here is a township, with its 36 (square mile) sections num bered and further divided so that the smallest squares 
+are quarters of quarter sections, each containing 40 acres. 
+123456
+7 8 9 10 11 12
+131415161718
+19 20 21 22 23 24
+252627282930
+31 32 33 34 35 36
+NORTH
+SOUTH
+WEST
+EAST
+ 
+ 
+The foll
+owing mathematical observations may aid understanding of section/township descriptions: 
+ a township is a square, six miles on each side; 
+ a township contains 36 sections; 
+ each of the 36 sections in a township is a square, one mile on each side; 
+ a mile is 5,280 feet; 
+ a square mile is 27,878,400 square feet (5,280 x 5,280); 
+ an acre is 43,560 square feet; 
+ each section in a township is 640 acres (27,878,400 divided by 43,560); 
+ a half-section is 320 acres; 
+ a quarter-section is 160 acres; and 
+ a quarter of a quarter-section (the smallest squares in the township plat) is 40 acres. 
+The following is the description for the diamond-shaped figure on the township on the preceding page. 
+Beginning at the NE. corner of SW. 1/4 of Sec. 17, thence southeasterly to the NW. corner of the SE. 1/4 of 
+Section 21, thence southwesterly to th e SE. corner of the NW.1/4 of Sec.  29, thence northwesterly to the SW. 
+corner of the NE. 1/4 of Sec. 19, thence northeasterly to the point of beginning. 
+PROPERTY 49 
+ 
+The description is linear, delineating the boundaries of the figure by connecting four points.  
+For practice, the reader may want to write out the descriptions of the other two figures. The description of the 
+figure in the upper right can begin: “The SE 1/4 of the NE 1/4 of the SE 1/4, and the S 1/2 of the SE 1/4 of 
+Section 10;” If the reader can locate and shade that portion, the reader can wr ite the rest of the description in 
+like fashion. 
+The description of the third figure can begin as follows: “Beginning at the NW corner of the SE 1/4 of the NE 
+1/4 of Section 27, thence due east 3,960 feet,”. [Each side of a quarter of a quarter section measures 1,320 feet 
+(5,280 ÷ 4). The line/side described therefore measures 1,320 feet x 3 = 3,960 feet.] 
+Metes and Bounds Description 
+A “metes and bounds” description may be  necessary when the property referred to is not covered by a duly 
+recorded map and is shaped so as to  make it impractical to describe by section and township. Some metes and 
+bounds descriptions are lengthy and difficult for anyone but a civil engineer or surveyor to understand. A 
+complex metes and bounds description is a burden to county recorders and assessors.  
+A metes and bounds description starts at a fixed point of beginning and follows, in detail, the boundaries of the 
+land described in courses and distances from one point to another until returning to the point of beginning. If a 
+mistake is made at the point of beginning, the description is worthless. 
+Metes are measures of length: feet, yards, etc. 
+Bounds are measures of boundaries, both natural and manmad e: e.g., rivers and roads. Landmarks (trees, 
+boulders, creeks, fences, roads and iron pipes, etc.), referred to as monuments, are often used in such 
+descriptions. 
+Older descriptions of this type used markers that have disappeared, been moved or otherwise been altered, 
+making the descriptions indefinite. Thus, since markers are subject to destruction and disappearance they 
+should be used only where necessary and every identifying feature should be designated. 
+Here is a drawing and metes and bounds description of a regular parcel (front and rear dimensions and sides are 
+the same). 
+ 
+"O" Street
+"P" Street
+7th Street
+8th Street
+8
+10
+7 6 5
+1 2 3 4
+Plat Map 
+Lots 1 to 8, block 10, tract 1502
+ 
+50 CHAPTER  FOUR 
+ 
+Beginning at a point on the southerly line of “0” Street, 150 feet westerly of the SW corner of the intersection 
+of “0” and 8th Streets; running thence due south 300 feet to the northerly line of “P” Street; thence westerly 
+along the northerly line of “P” Street, 100 feet; thence northerly and parallel to the first course, 300 feet, to the 
+southerly line of “0” Street; thence easterly along the southerly line of “0” Street, 100 feet, to the point or place 
+of beginning. 
+OTHER DESCRIPTION METHODS  
+Government Lots 
+In the original government survey system, lakes, streams and other features were sometimes encountered which 
+created fractional pieces of land less than a quarter secti on in size. These fractional segments were identified by 
+number. The specific lot number then became the legal description for that land parcel  and these parcels were 
+called government lots. 
+Today, acreage lost due to to wnship correction lines and unascertainable errors is placed in the quarter sections 
+bordering the western and northern boundaries of a to wnship. These geographical divisions which would 
+otherwise qualify as quarter-quarter sections are also referred to as “government lots.” A government lot does 
+not necessarily contain a standard number of acres. 
+Record of Survey 
+After establishing points or lines, a land surveyor or civil engineer who has made a survey in conformity with 
+land surveying practices may file a record of survey relating to boundaries or property lines with the county 
+surveyor in the county in which the survey was made. This record of survey map discloses: (l) material 
+evidence of physical change which does not appear on any map previously recorded in the office of the county 
+recorder; (2) a material discrepancy with information of record with the county; (3) any evidence that might 
+result in alternate positions of lines or points; and (4) the establishment of lines not shown on a recorded map 
+which are not ascertainable from an inspection of the map without trigonometric calculations. 
+The county surveyor, after examining a r ecord of survey map filed with the surveyor’s office, will then file it 
+with the county recorder. 
+Assessor’s Maps 
+The county assessor may prepare and file in the assessor’s office an accurate map of any land in the county and 
+may number or letter the parcels in a manner approved by the board of supervisors. Section 327 of the Revenue 
+and Taxation Code provides “that land sh all not be described in any deed or conveyance by a reference to any 
+such map unless such map has been filed for record in the office of the county recorder of the county in which 
+such land is located.” 
+Informal Method 
+In the absence of a title report, it is often found convenien t to refer to a specific parcel of realty by street 
+number, name (e.g., “The Norris Ranc h”), or blanket reference (e.g., “my lot on High Street”). These methods 
+are legal, but title companies will not ordinarily insure title involving such a description. 
+If there is doubt about the correct property descripti on method to be used, a person should consult with a 
+licensed engineer or surveyor or with a title company. 
+ 

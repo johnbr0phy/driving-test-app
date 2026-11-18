@@ -1,0 +1,362 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "epa609Equipment",
+    "optionA": "ASME pressure vessel",
+    "optionB": "DOT-4BA",
+    "optionC": "DOT-39",
+    "optionD": "DOT-4BW",
+    "question": "Which cylinder designation identifies a nonrefillable container, even when it is empty and undamaged?"
+  },
+  {
+    "reviewId": "R002",
+    "category": "epa609Yf",
+    "optionA": "510 g",
+    "optionB": "120 g",
+    "optionC": "60 g",
+    "optionD": "90 g",
+    "question": "A machine specifies a 15% test charge. For a 600 g R-1234yf system, how much is delivered?"
+  },
+  {
+    "reviewId": "R003",
+    "category": "epa609Rules",
+    "optionA": "Section 608 Type II certification",
+    "optionB": "Section 608 Universal certification",
+    "optionC": "Section 609 technician certification",
+    "optionD": "ASE A7 Heating and Air Conditioning certification",
+    "question": "Which completed credential qualifies a technician to recover refrigerant during paid passenger-car MVAC repairs?"
+  },
+  {
+    "reviewId": "R004",
+    "category": "epa609Equipment",
+    "optionA": "At the vehicle\u2019s low-side port",
+    "optionB": "At the refrigerant-handling machine",
+    "optionC": "At the vehicle\u2019s high-side port",
+    "optionD": "At the manifold gauge assembly",
+    "question": "Where does EPA permit a standardized connection on a manifold hose used for refrigerant-specific MVAC service?"
+  },
+  {
+    "reviewId": "R005",
+    "category": "epa609Service",
+    "optionA": "Replace the system desiccant",
+    "optionB": "Extend the evacuation period",
+    "optionC": "Recycle the recovered refrigerant",
+    "optionD": "Change the vacuum pump oil",
+    "question": "An A/C circuit remained uncapped throughout prolonged collision repairs. Which measure best addresses the resulting moisture problem?"
+  },
+  {
+    "reviewId": "R006",
+    "category": "epa609Yf",
+    "optionA": "Scroll versus piston construction",
+    "optionB": "Electric versus mechanical drive",
+    "optionC": "Fixed versus variable displacement",
+    "optionD": "Single versus multiple evaporator service",
+    "question": "DENSO lists ND-oil 11 and 12 for R-1234yf. Which compressor characteristic distinguishes their intended applications?"
+  },
+  {
+    "reviewId": "R007",
+    "category": "epa609Service",
+    "optionA": "600 g",
+    "optionB": "420 g",
+    "optionC": "180 g",
+    "optionD": "1020 g",
+    "question": "A 600 g system yielded 420 g. After complete recovery and evacuation, what full recharge is required?"
+  },
+  {
+    "reviewId": "R008",
+    "category": "epa609Equipment",
+    "optionA": "Rae contracts recycling work to Lee",
+    "optionB": "Rae buys Lee\u2019s recycling machine",
+    "optionC": "Rae leases Lee\u2019s recycling machine",
+    "optionD": "Lee buys Rae\u2019s recovery machine",
+    "question": "Rae operates the garage and owns its recover-only machine; Lee owns the off-site recycler. Which arrangement permits recycling there?"
+  },
+  {
+    "reviewId": "R009",
+    "category": "epa609Equipment",
+    "optionA": "Heat released as the vapor cools",
+    "optionB": "Heat released as vapor condenses",
+    "optionC": "Heat absorbed as the liquid vaporizes",
+    "optionD": "Heat absorbed as the liquid warms",
+    "question": "Liquid refrigerant boils on skin at nearly constant temperature. Which heat transfer accounts for the contact cooling?"
+  },
+  {
+    "reviewId": "R010",
+    "category": "epa609Service",
+    "optionA": "Suitability for an OEM flushing procedure",
+    "optionB": "Compatibility with A/C system materials",
+    "optionC": "Removal of solvent during evacuation",
+    "optionD": "Removal of debris from condenser passages",
+    "question": "What has a flushing compound demonstrated by meeting SAE J2670?"
+  },
+  {
+    "reviewId": "R011",
+    "category": "epa609Rules",
+    "optionA": "Business opening off-road cab systems for repair",
+    "optionB": "Business limited to off-road cab refrigerant top-offs",
+    "optionC": "Business limited to passenger-car refrigerant top-offs",
+    "optionD": "Business opening passenger-car systems for repair",
+    "question": "Which listed operation does not require recovery or recycling equipment to be available under federal MVAC rules?"
+  },
+  {
+    "reviewId": "R012",
+    "category": "epa609Equipment",
+    "optionA": "12 mL",
+    "optionB": "8 mL",
+    "optionC": "20 mL",
+    "optionD": "28 mL",
+    "question": "A collection bottle held 8 mL before recovery and 20 mL afterward. How much fresh oil replaces this removal?"
+  },
+  {
+    "reviewId": "R013",
+    "category": "epa609Service",
+    "optionA": "Oil just visible at the bottom",
+    "optionB": "Oil at the center of the glass",
+    "optionC": "Oil at the upper edge of the glass",
+    "optionD": "Oil filling the entire visible glass",
+    "question": "On a level Robinair 34788NI, which sight-glass level is specified after refilling the vacuum pump?"
+  },
+  {
+    "reviewId": "R014",
+    "category": "epa609Yf",
+    "optionA": "Vapor is denser than surrounding air",
+    "optionB": "Vapor pressure increases with temperature",
+    "optionC": "Liquid evaporates readily after release",
+    "optionD": "Vapor can ignite within a concentration range",
+    "question": "Which R-1234yf property explains why ventilation must address a service pit as well as the workbench?"
+  },
+  {
+    "reviewId": "R015",
+    "category": "epa609Service",
+    "optionA": "Moisture boiling near the evaporator",
+    "optionB": "Oil vapor returning from the vacuum pump",
+    "optionC": "Gauge calibration for a higher elevation",
+    "optionD": "Restricted flow through service valve cores",
+    "question": "Why can a service gauge show deep vacuum before the whole A/C circuit reaches that condition?"
+  },
+  {
+    "reviewId": "R016",
+    "category": "epa609Yf",
+    "optionA": "Refrigerant quantity for calculating total capacity",
+    "optionB": "Operating charge for measuring cabin cooling",
+    "optionC": "Circulating oil for checking compressor performance",
+    "optionD": "Positive system pressure for checking evaporator leakage",
+    "question": "What does the partial R-1234yf charge provide after the system passes its vacuum check?"
+  },
+  {
+    "reviewId": "R017",
+    "category": "epa609Equipment",
+    "optionA": "Clearing refrigerant from the existing filter",
+    "optionB": "Passing the internal pressure leak check",
+    "optionC": "Completing vacuum pump oil warming",
+    "optionD": "Reaching the filter capacity limit",
+    "question": "In Robinair 34788NI filter-replacement training, a valid code is entered. What must finish before the shutdown prompt?"
+  },
+  {
+    "reviewId": "R018",
+    "category": "epa609Equipment",
+    "optionA": "Ambient air from around the connection",
+    "optionB": "Refrigerant from the machine\u2019s storage vessel",
+    "optionC": "Moisture released by the vehicle\u2019s desiccant",
+    "optionD": "Compressor oil from the recovery reservoir",
+    "question": "Recovery has pulled a service hose below atmospheric pressure. What can a leaking seal introduce?"
+  },
+  {
+    "reviewId": "R019",
+    "category": "epa609Rules",
+    "optionA": "Section 609 certification",
+    "optionB": "Both Section 609 and Section 608 certification",
+    "optionC": "Neither Section 609 nor Section 608 certification",
+    "optionD": "Section 608 Type II certification",
+    "question": "A paid truck A/C clutch-gap inspection leaves the refrigerant circuit undisturbed. Which refrigerant-handling certification does that inspection require?"
+  },
+  {
+    "reviewId": "R020",
+    "category": "epa609Rules",
+    "optionA": "Reclamation facility receiving it for purification",
+    "optionB": "Independent MVAC recycler hired by the seller",
+    "optionC": "Salvage facility that extracted it from the donor",
+    "optionD": "Facility charging it into the receiving vehicle",
+    "question": "Unreclaimed salvage MVAC refrigerant is being reused. Which facility must perform the required recycling?"
+  },
+  {
+    "reviewId": "R021",
+    "category": "epa609Equipment",
+    "optionA": "Hose reaches the ferrule inspection opening",
+    "optionB": "Hose and fitting have matching nominal sizes",
+    "optionC": "Hose end carries an even lubricant film",
+    "optionD": "Fitting resists being pulled out by hand",
+    "question": "Before crimping, which observation verifies full hose insertion into an A/C fitting?"
+  },
+  {
+    "reviewId": "R022",
+    "category": "epa609Rules",
+    "optionA": "Cylinders but not cans",
+    "optionB": "Both cans and cylinders",
+    "optionC": "Neither cans nor cylinders",
+    "optionD": "Cans but not cylinders",
+    "question": "A retailer sells CFC-12 in 12-ounce cans and 30-pound cylinders. Which stock triggers the federal retail certification notice?"
+  },
+  {
+    "reviewId": "R023",
+    "category": "epa609Yf",
+    "optionA": "Condenser fan finishes its shutdown cycle",
+    "optionB": "High-side pressure has decreased",
+    "optionC": "Elapsed waiting time reaches three minutes",
+    "optionD": "Low-side pressure begins rising toward equalization",
+    "question": "After an R-1234yf compressor stops, which change governs when service equipment should be connected?"
+  },
+  {
+    "reviewId": "R024",
+    "category": "epa609Service",
+    "optionA": "25 inHg",
+    "optionB": "1 inHg",
+    "optionC": "24 inHg",
+    "optionD": "26 inHg",
+    "question": "Atmospheric pressure is 25 inHg; system absolute pressure is 1 inHg. What vacuum should the gauge indicate?"
+  },
+  {
+    "reviewId": "R025",
+    "category": "epa609Yf",
+    "optionA": "0.15 ounce per year",
+    "optionB": "5 ounces per year",
+    "optionC": "1.5 ounces per year",
+    "optionD": "0.5 ounce per year",
+    "question": "What minimum small-leak capability is specified for a J2913 detector at its most sensitive setting?"
+  },
+  {
+    "reviewId": "R026",
+    "category": "epa609Yf",
+    "optionA": "Waiting until gauge pressure stabilizes",
+    "optionB": "Recovering the remaining test charge",
+    "optionC": "Evacuating through the vacuum pump",
+    "optionD": "Closing both manifold hand valves",
+    "question": "An R-1234yf test charge reveals a leak requiring circuit opening. Which action should precede opening the circuit?"
+  },
+  {
+    "reviewId": "R027",
+    "category": "epa609Rules",
+    "optionA": "Shipping technician certification number",
+    "optionB": "Receiving facility name and address",
+    "optionC": "Recovered quantity by vehicle VIN",
+    "optionD": "Refrigerant type and recovery date",
+    "question": "Which record does Section 609 require when a service shop sends recovered refrigerant off-site?"
+  },
+  {
+    "reviewId": "R028",
+    "category": "epa609Yf",
+    "optionA": "Current measurement around a high-voltage cable",
+    "optionB": "Completion of the refrigerant drain service routine",
+    "optionC": "Voltage measurement across the auxiliary battery",
+    "optionD": "Voltage measurements at the isolation test points",
+    "question": "Low-voltage power is disconnected before 2024+ Tesla Model 3 compressor repair. Which check establishes high-voltage absence?"
+  },
+  {
+    "reviewId": "R029",
+    "category": "epa609Equipment",
+    "optionA": "Pure HFC-134a vapor",
+    "optionB": "Compressed air",
+    "optionC": "Dry nitrogen",
+    "optionD": "Pure HFC-134a liquid",
+    "question": "Which pressure-test medium creates the cited combustion hazard in equipment containing HFC-134a residue?"
+  },
+  {
+    "reviewId": "R030",
+    "category": "epa609Service",
+    "optionA": "Specific gravity",
+    "optionB": "Freezing point",
+    "optionC": "Flash point",
+    "optionD": "Boiling point",
+    "question": "Which solvent property helps determine whether A/C evacuation can remove residue after flushing?"
+  },
+  {
+    "reviewId": "R031",
+    "category": "epa609Rules",
+    "optionA": "To reduce moisture left during evacuation",
+    "optionB": "To reduce refrigerant passage through hose walls",
+    "optionC": "To withstand a higher required burst pressure",
+    "optionD": "To seal the changed service-port connections",
+    "question": "Why does an HCFC-22-containing retrofit blend require barrier hoses in place of traditional CFC-12 hoses?"
+  },
+  {
+    "reviewId": "R032",
+    "category": "epa609Rules",
+    "optionA": "December 31, 2028",
+    "optionB": "May 10, 2031",
+    "optionC": "May 10, 2029",
+    "optionD": "May 10, 2028",
+    "question": "A seller obtains a resale declaration for small CFC-12 cans on May 10, 2026. What is its minimum retention endpoint?"
+  },
+  {
+    "reviewId": "R033",
+    "category": "epa609Service",
+    "optionA": "Sweep around the joint while brushing its surface with the tip",
+    "optionB": "Hold the tip above the joint until the reading peaks",
+    "optionC": "Sweep around the joint while maintaining a small surface gap",
+    "optionD": "Hold the tip against the joint until the reading stabilizes",
+    "question": "A Robinair 22791 alarms at high sensitivity near a fitting. Which probe technique should confirm the suspected leak?"
+  },
+  {
+    "reviewId": "R034",
+    "category": "epa609Rules",
+    "optionA": "Neither Nora nor Luis",
+    "optionB": "Luis alone",
+    "optionC": "Either Nora or Luis",
+    "optionD": "Nora alone",
+    "question": "Equipment owner Nora lacks technician certification; certified operator Luis holds no officer role. Who may sign the equipment certification?"
+  },
+  {
+    "reviewId": "R035",
+    "category": "epa609Rules",
+    "optionA": "Section 609 only",
+    "optionB": "Section 608 Type II",
+    "optionC": "Section 608 Type I",
+    "optionD": "Section 608 Type III",
+    "question": "Which certification applies to servicing a passenger bus air conditioner that uses HCFC-22 refrigerant?"
+  },
+  {
+    "reviewId": "R036",
+    "category": "epa609Yf",
+    "optionA": "Center of a floor-duct outlet",
+    "optionB": "Cabin floor beneath the outlet",
+    "optionC": "Cabin recirculation inlet",
+    "optionD": "Lower edge of a floor-duct outlet",
+    "question": "During staged R-1234yf precharging, with A/C off and low blower in floor mode, where should the probe sample?"
+  },
+  {
+    "reviewId": "R037",
+    "category": "epa609Service",
+    "optionA": "Emission wavelength",
+    "optionB": "Beam width",
+    "optionC": "Visible-light brightness",
+    "optionD": "Reflector focusing distance",
+    "question": "Which lamp characteristic should match the dye when selecting a UV light for refrigerant leak inspection?"
+  },
+  {
+    "reviewId": "R038",
+    "category": "epa609Equipment",
+    "optionA": "12 AWG",
+    "optionB": "14 AWG",
+    "optionC": "18 AWG",
+    "optionD": "16 AWG",
+    "question": "What minimum extension-cord conductor size does Robinair specify for its 34788NI recovery machine?"
+  },
+  {
+    "reviewId": "R039",
+    "category": "epa609Yf",
+    "optionA": "SAE J639",
+    "optionB": "SAE J2099",
+    "optionC": "SAE J2844",
+    "optionD": "SAE J2842",
+    "question": "Which standard identifies design compliance on a replacement R-1234yf evaporator\u2019s permanent refrigerant marking?"
+  },
+  {
+    "reviewId": "R040",
+    "category": "epa609Service",
+    "optionA": "Oxidation on exposed condenser fins",
+    "optionB": "Clear water beneath the evaporator drain",
+    "optionC": "Oily residue at a line connection",
+    "optionD": "Surface frost along the suction line",
+    "question": "During initial A/C inspection, which visible finding most directly suggests a refrigerant leak?"
+  }
+]

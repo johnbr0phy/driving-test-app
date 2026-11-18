@@ -1,0 +1,46 @@
+lang en  len-scale 1.0  rows 40  categories {'epa609Service': 10, 'epa609Equipment': 10, 'epa609Rules': 10, 'epa609Yf': 10}
+letters {'B': 7, 'C': 8, 'D': 15, 'A': 10}  avg option 34 chars  key-longest 22%  key>1.2x 5%
+FAIL: EPA609-SRV-031: expected SRV-001
+FAIL: EPA609-SRV-022: expected SRV-032
+FAIL: EPA609-EQP-013: expected EQP-001
+FAIL: EPA609-EQP-011: expected EQP-014
+FAIL: EPA609-REG-026: expected REG-001
+FAIL: EPA609-EQP-022: expected EQP-012
+FAIL: EPA609-EQP-022: category epa609Equipment not contiguous
+FAIL: EPA609-SRV-026: expected SRV-023
+FAIL: EPA609-SRV-026: category epa609Service not contiguous
+FAIL: EPA609-REG-004: expected REG-027
+FAIL: EPA609-REG-004: category epa609Rules not contiguous
+FAIL: EPA609-EQP-024: expected EQP-023
+FAIL: EPA609-EQP-024: category epa609Equipment not contiguous
+FAIL: EPA609-REG-015: expected REG-005
+FAIL: EPA609-REG-015: category epa609Rules not contiguous
+FAIL: EPA609-YF-006: expected YF-001
+FAIL: EPA609-YF-014: expected YF-007
+FAIL: EPA609-SRV-029: expected SRV-027
+FAIL: EPA609-SRV-029: category epa609Service not contiguous
+FAIL: EPA609-REG-028: expected REG-016
+FAIL: EPA609-REG-028: category epa609Rules not contiguous
+FAIL: EPA609-EQP-014: expected EQP-025
+FAIL: EPA609-EQP-014: category epa609Equipment not contiguous
+FAIL: EPA609-EQP-006: expected EQP-015
+FAIL: EPA609-EQP-020: expected EQP-007
+FAIL: EPA609-EQP-004: expected EQP-021
+FAIL: EPA609-EQP-002: expected EQP-005
+FAIL: EPA609-EQP-019: expected EQP-003
+FAIL: EPA609-REG-027: expected REG-029
+FAIL: EPA609-REG-027: category epa609Rules not contiguous
+FAIL: EPA609-REG-017: expected REG-028
+FAIL: EPA609-REG-024: expected REG-018
+FAIL: EPA609-REG-008: expected REG-025
+FAIL: EPA609-REG-025: expected REG-009
+FAIL: EPA609-REG-016: expected REG-026
+FAIL: EPA609-SRV-012: expected SRV-030
+FAIL: EPA609-SRV-012: category epa609Service not contiguous
+FAIL: EPA609-SRV-020: expected SRV-013
+FAIL: EPA609-SRV-005: expected SRV-021
+FAIL: EPA609-SRV-025: expected SRV-007
+... 12 more
+FAIL (52 errors)
+
+Exit code: 1

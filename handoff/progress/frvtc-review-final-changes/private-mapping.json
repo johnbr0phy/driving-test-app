@@ -1,0 +1,46 @@
+{
+  "F001": {
+    "questionId": "FRVTC-COM-007",
+    "correctAnswer": "C"
+  },
+  "F002": {
+    "questionId": "FRVTC-T3P-018",
+    "correctAnswer": "A"
+  },
+  "F003": {
+    "questionId": "FRVTC-SEC-009",
+    "correctAnswer": "D"
+  },
+  "F004": {
+    "questionId": "FRVTC-COM-006",
+    "correctAnswer": "A"
+  },
+  "F005": {
+    "questionId": "FRVTC-SEC-028",
+    "correctAnswer": "B"
+  },
+  "F006": {
+    "questionId": "FRVTC-REG-025",
+    "correctAnswer": "A"
+  },
+  "F007": {
+    "questionId": "FRVTC-COM-021",
+    "correctAnswer": "B"
+  },
+  "F008": {
+    "questionId": "FRVTC-SEC-026",
+    "correctAnswer": "C"
+  },
+  "F009": {
+    "questionId": "FRVTC-COM-023",
+    "correctAnswer": "B"
+  },
+  "F010": {
+    "questionId": "FRVTC-REG-024",
+    "correctAnswer": "B"
+  },
+  "F011": {
+    "questionId": "FRVTC-SEC-016",
+    "correctAnswer": "C"
+  }
+}

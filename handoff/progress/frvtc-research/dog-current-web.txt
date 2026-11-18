@@ -1,0 +1,482 @@
+Les chiens d'aveugle sont-ils admis dans les magasins ? | Service Public (https://www.service-public.gouv.fr/particuliers/vosdroits/F35787)
+citeturn278view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.service-public.gouv.fr/particuliers/vosdroits/F35787","lineno":null}); Total lines: 157
+L0: Javascript est desactivé dans votre navigateur.
+L1: 
+L2:   * Ajouter à mes favoris
+L3:   *   *   *   * [Button: Focus ]
+L4: 
+L5: Partager la page
+L6: 
+L7:   * 【0†Facebook†www.facebook.com】
+L8:   * 【1†X†x.com】
+L9:   * 【2†Linkedin†www.linkedin.com】
+L10:   * Courriel ( )
+L11:   * Copier le lien
+L12: 
+L13: Lien copié
+L14: 
+L15: Fermer
+L16: 
+L17: Ce sujet vous intéresse ?
+L18: 
+L19: Ajoutez cette page à vos favoris et recevez un courriel dès que l’information « Les chiens d'aveugle sont-ils admis dans les magasins ? » est mise à jour.
+L20: 
+L21: 【3†Ajouter à mes favoris】
+L22: 
+L23: Fermer
+L24: Ce sujet a été ajouté à vos favoris
+L25: 
+L26: Vous recevrez un courriel dès que la page « Les chiens d'aveugle sont-ils admis dans les magasins ? » sera mise à jour.
+L27: 
+L28: Vous pouvez à tout moment supprimer votre abonnement dans 【4†mon compte > mes alertes】
+L29: 
+L30: Votre abonnement n’a pas pu être pris en compte.
+L31: 
+L32: Vous devez vous connecter à votre espace personnel afin de vous abonner à la mise à jour de cette page.
+L33: 
+L34: Pour vous abonner aux mises à jour des pages Service Public, vous devez activer votre espace personnel.
+L35: Vous serez alerté(e) par courriel dès que la page « Les chiens d'aveugle sont-ils admis dans les magasins ? » sera mise à jour significativement.
+L36: 
+L37: [Input][Input]
+L38: 
+L39: [Button: ACTIVER MON ESPACE PERSONNEL]
+L40: ### Le lien vers cette page a été envoyé avec succès aux destinataires.
+L41: # Les chiens d'aveugle sont-ils admis dans les magasins ?
+L42: 
+L43: Vérifié le 13 mars 2026 - Service Public / Direction de l'information légale et administrative (Premier ministre)
+L44: 
+L45: Oui, les chiens guides d'aveugle ou d'assistance qui accompagnent les personnes ayant la 【5†carte mobilité inclusion (CMI)】 avec les mentions invalidité et priorité pour personnes handicapées sont admis dans les magasins.
+L46: Il en est de même lorsque les chiens sont accompagnés de la personne chargée de leur éducation pendant toute leur période de formation.
+L47: 
+L48: De manière plus générale, les chiens guides d'aveugle ou d'assistance sont admis dans tous les lieux ouverts au public. Ils sont admis aussi dans les transports et dans les locaux d'activité professionnelle, les lieux de formation et les établissements d'enseignement.
+L49: La personne en situation de handicap qui demande à bénéficier d'un service ou d'une prestation ne doit pas subir de surfacturation en raison de la présence de son chien guide d'aveugle ou d'assistance. Par exemple, la présence d'un chien guide n'entraîne pas de surcoût pour la personne en situation de handicap qui prend le train.
+L50: Interdire l'accès des lieux ouverts au public aux chiens guides d'aveugles et d'assistance est puni d'une amende pouvant aller jusqu'à 450 € pour une personne physique et 2 250 € pour une personne morale.
+L51: ## [Button: Textes de loi et références ]
+L52: 
+L53:   * 【6†Loi n°87-588 du 30 juillet 1987 portant diverses mesures d'ordre social : article 88†www.legifrance.gouv.fr】
+L54: 
+L55:   * 【7†Code pénal : article R241-23†www.legifrance.gouv.fr】
+L56: 
+L57: ## [Button: Voir aussi ]
+L58: 
+L59:   * 【8†Le chien guide d'aveugle ou le chien d'assistance (PDF - 10.5 MB)†www.ecologie.gouv.fr】
+L60: 
+L61: Ministère chargé du handicap
+L62: ## Cette page vous a-t-elle été utile ?
+L63: 
+L64:   * 1
+L65: 
+L66:   * 2
+L67: 
+L68:   * 3
+L69: 
+L70:   * 4
+L71: 
+L72:   * 5
+L73: 
+L74: Pas du tout
+L75: 
+L76: Un peu
+L77: 
+L78: Moyen
+L79: 
+L80: Beaucoup
+L81: 
+L82: Parfait !
+L83: 
+L84: L’équipe Service Public vous remercie
+L85: 
+L86: 【9†Je vais sur la page d’accueil】
+L87: 
+L88: [Button: Masquer le message ]
+L89: 
+L90: Vous avez noté 1 sur 5 : Pas du tout
+L91: 
+L92: Vous avez noté 2 sur 5 : Un peu
+L93: 
+L94: Vous avez noté 3 sur 5 : Moyen
+L95: 
+L96: Vous avez noté 4 sur 5 : Beaucoup
+L97: 
+L98: Vous avez noté 5 sur 5 : Parfait !
+L99: 
+L100: L’équipe Service Public vous remercie pour vos remarques utiles à l'amélioration du site.
+L101: Pour des raisons de sécurité, nous ne pouvons valider ce formulaire suite à une trop longue période d’inactivité. Merci de recharger la page si vous souhaitez le soumettre à nouveau.
+L102: 
+L103: Une erreur technique s'est produite. Merci de réessayer ultérieurement.
+L104: ## Vos remarques pour améliorer la page
+L105: 
+L106: ### La page est-elle facile à comprendre ?
+L107: 
+L108: [Input]Pas du tout
+L109: 
+L110: [Input]Moyen
+L111: 
+L112: [Input]Parfait !
+L113: 
+L114: ### L’information a-t-elle été utile ?
+L115: 
+L116: [Input]Pas du tout
+L117: 
+L118: [Input]Moyen
+L119: 
+L120: [Input]Parfait !
+L121: ### Avez-vous rencontré une difficulté ?
+L122: 
+L123: [Input]Non
+L124: 
+L125: [Input]Je ne suis  pas satisfait(e)  de cette réglementation
+L126: 
+L127: [Input]Cette page  ne correspond pas  à ma situation
+L128: 
+L129: [Input]Il  manque des informations  (préciser lesquelles)
+L130: 
+L131: [Input]Les informations ne sont  pas claires  (préciser lesquelles)
+L132: 
+L133: [Input]Il y a une erreur dans la page  (préciser laquelle)
+L134: ### Avez-vous des suggestions pour améliorer la page ?
+L135: 
+L136: [Input] Je suggère une modification à une rédactrice ou un rédacteur Service Public Saisie complémentaire requise – affichage automatique
+L137: 
+L138: Les informations demandées sont obligatoires.
+L139: 
+L140: Les réponses apportées par Service Public sont rédigées en français. Nous vous invitons également à nous écrire en français.
+L141: Des exemples nous permettent d’améliorer les pages plus facilement : « Je n’ai pas compris la partie sur... », « Je cherchais des informations plus précises/plus claires sur... ».
+L142: 
+L143: Votre suggestion Ne mentionnez pas de données personnelles (nom, adresse, numéros de téléphone, numéro de sécurité sociale, numéro fiscal, lieu et date de naissance...) à l'exception, bien sûr, de votre adresse de messagerie.
+L144: 
+L145: 1000 caractères restants
+L146: #### Comment pouvons-nous vous répondre ?
+L147: 
+L148: Votre adresse électronique Exemple : nom@exemple.com [Input]
+L149: 
+L150: ##### Protection des données personnelles
+L151: 
+L152: Les informations recueillies à partir de ce formulaire sont traitées par la DILA pour répondre à votre demande. Pour connaitre et exercer vos droits, veuillez consulter la rubrique 【10†données personnelles et sécurité†www.service-public.fr】.
+L153: 
+L154: [Input]
+L155: 
+L156: Envoyer vos remarques
+--------------------------------------------------------------------------------
+Examen T3P - Taxi / VTC / VMDTR | CMA Île-de-France - Chambres de Métiers et de l'artisanat - Île-de-France (https://www.cma-idf.fr/outils/examen-t3p-taxi-vtc-vmdtr)
+citeturn278view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.cma-idf.fr/outils/examen-t3p-taxi-vtc-vmdtr","lineno":null}); Total lines: 322
+L0: 【0†iframe†www.googletagmanager.com】
+L1: 
+L2: 【1†Recherche】
+L3: 
+L4:   * 【2†Image: 3006】
+L5: 
+L6: Outil
+L7: # Examen T3P - Taxi / VTC / VMDTR
+L8: 
+L9: Vous souhaitez devenir chauffeur de Taxi, de VTC ou de VMDTR en Île-de-France ? Vous êtes au bon endroit !
+L10: 
+L11: NOUVEAU : contactez nous UNIQUEMENT depuis la messagerie de votre dossier
+L12: 
+L13: 【3†Accéder à la messagerie directement dans votre dossier†www.exament3p.fr】
+L14: 
+L15: Votre plateforme dédiée : 【3†http://www.exament3p.fr/†www.exament3p.fr】
+L16: *************************
+L17: Première inscription ou réinscription aux épreuves théoriques - Admissibilité
+L18: Le candidat doit créer un dossier sur la nouvelle plateforme 【3†www.examenT3P.fr†www.exament3p.fr】, déposer les pièces demandées et procéder au règlement.
+L19: Important : si le mail d’activation de création du compte arrive dans les spams, le repositionner dans la boite de réception usuelle avant de cliquer sur le lien d’activation.
+L20: Vous avez confié votre inscription à un organisme de formation. Vous désirez à présent accéder à votre dossier et/ou communiquer avec nos collaborateurs : 【4†téléchargez nos conseils.†drive.google.com】
+L21: Soyez vigilant : vérifiez attentivement les informations saisies dans votre dossier. Veillez à ne pas intervertir nom et prénom et à indiquer correctement votre adresse, car ces données seront transmises à l’imprimerie nationale pour la délivrance de votre carte professionnelle.
+L22: Vous constatez une anomalie dans votre dossier ou sur le fonctionnement de la plateforme, nous vous invitons à le signaler dans Mon espace > Messagerie (dépôt de pièces, problème de paiement, changement de catégorie ou type d’examen, erreur de territoire d’exercice…)
+L23: Réinscription aux épreuves théoriques ou pratique
+L24: Le bouton permettant au candidat de payer une réinscription apparait en « Vue d’ensemble » uniquement après la publication des résultats de la session à laquelle le candidat était précédemment convoqué.
+L25: *************************
+L26: [màj  17-11-2026]
+L27: - Session OCT-2026 : les corrections sont encore en cours.
+L28: Convocations / Résultats : il est inutile de nous contacter à ce sujet : dès convocation / publication des résultats, les candidats reçoivent un mail à l'adresse indiquée dans leur dossier et les documents téléchargeables s'affichent directement dans l'espace personnel du dossier en ligne.
+L29: - Session NOV-2026 : les convocations sont disponibles dans le dossier des candidats.
+L30: - Sessions Janvier-Février-Mars-2027 : ouvertes en ligne pour inscriptions
+L31: *************************
+L32: INFORMATION - LUTTE CONTRE LA FRAUDE - COMMUNICATION CMA
+L33: Dans un souci de sécurité et de traçabilité des échanges, le service T3P de la CMA Île-de-France communique avec les candidats exclusivement par l'intermédiaire de leur dossier en ligne sur la plateforme ExamenT3P ou, de manière exceptionnelle, via une adresse électronique se terminant par @cma-idf.fr.
+L34: Par conséquent, tout échange via un réseau social  et/ou tout message reçu d'une adresse électronique utilisant une extension différente de @cma-idf.fr ne saurait être considéré comme émanant de nos services.
+L35: 
+L36: Nous invitons l'ensemble des destinataires à faire preuve de la plus grande vigilance à l'égard de ces communications et à ne pas y donner suite en cas de doute.
+L37: *************************
+L38: ## Vous souhaitez passer l'examen T3P ?
+L39: 
+L40: Pour exercer la profession de conducteur de taxi, de VTC ou de VMDTR vous devez valider les 2 épreuves de l’examen d’aptitude professionnel :
+L41: une épreuve d’admissibilité (théorie) + une épreuve d’admission (pratique).
+L42: 
+L43: 【3†S’inscrire à l’examen†www.exament3p.fr】
+L44: 
+L45: ## Règlement général de l'examen
+L46: 
+L47: 【5†Règlement général Taxi/VTC/VMDTR Télécharger - 284.98 Ko】
+L48: ## Quelles sont les dates des prochaines épreuves ?
+L49: 
+L50: Admissibilité (épreuves théoriques)
+L51: 
+L52:   * 【6†Admissibilité 2026†drive.google.com】
+L53:   * 【7†Admissibilité 2027†drive.google.com】
+L54: 
+L55: Admission (épreuve pratique)
+L56: 
+L57:   * 【8†Admission 2026†drive.google.com】
+L58:   * 【9†Admission 2027†drive.google.com】
+L59: ## Quelles sont les modalités d’évaluation de l’examen ?
+L60: 
+L61:   * L’épreuve d’admissibilité se compose d’épreuves écrites, sous forme de questions à choix multiples et de questions à réponses courtes.
+L62:   * L’épreuve d’admission consiste en une mise en situation pratique de réalisation d’une course de taxi, d’une mission de transport en VTC ou VMDTR.
+L63: ## Comment suivre la publication des résultats ?
+L64: 
+L65: Dès publication des résultats, les candidats reçoivent un mail à l'adresse indiquée dans leur dossier et les documents téléchargeables s'affichent directement dans l'espace personnel du dossier en ligne.
+L66: Ne pas appeler ou se déplacer : les demandes concernant les résultats doivent être transmises uniquement via la messagerie du dossier du candidat. Les appels ou déplacements sur les sites de la CMA ne seront pas traités.
+L67: Admissibilité (épreuve théorique)
+L68: 
+L69:   * Candidats admissibles :
+L70: 
+L71: Les résultats seront publiés directement dans l'espace personnel du dossier en ligne du candidat, au plus tard 4 semaines après la session d’épreuves théoriques, ainsi que sur le présent site Internet de la CMA Île-de-France.
+L72: 
+L73: Dès publication, l’attestation de réussite à l’admissibilité sera téléchargeable dans l'espace personnel du dossier en ligne du candidat ; elle contient le détail des notes.
+L74: 
+L75:   * Candidats non-admissibles :
+L76: Le relevé de notes sera également disponible dès publication dans l'espace personnel du dossier en ligne du candidat.
+L77: 
+L78: Réinscription : les candidats doivent se réinscrire et payer sur la plateforme d’inscription pour une nouvelle session des épreuves théoriques, en utilisant les mêmes identifiants et mot de passe que lors de la première inscription.
+L79: 
+L80: 【10†Les résultats d’admissibilité†drive.google.com】
+L81: 
+L82: Admission (épreuve pratique)
+L83: 
+L84:   * Candidats admis :
+L85: L’Attestation d'Aptitude Professionnelle est envoyée par voie postale dans les 30 jours ouvrés suivant l'épreuve pratique.
+L86: 
+L87:   * Relevé de notes
+L88: 
+L89: Le relevé de notes est disponible dès publication des résultats dans le dossier en ligne du candidat.
+L90: Réinscription : les candidats doivent se réinscrire et payer sur la plateforme nationale pour une nouvelle session des épreuves pratiques, en utilisant les mêmes identifiants et mot de passe que lors de la première inscription. Tout dossier doublon sera supprimé.
+L91: Important : un candidat déclaré admissible peut se présenter trois fois au maximum à l’épreuve d’admission dans un délai d’an an à compter de la publication des résultats des épreuves d’admissibilité. Après 3 échecs, une réinscription complète est nécessaire.
+L92: 
+L93: 【11†Les résultats d’admission†drive.google.com】
+L94: ## Envie de récupérer 4 points de permis ?
+L95: 
+L96: La CMA IDF vous propose des stages de récupération de points, encadrés par des professionnels de la sécurité routière, pour vous permettre de regagner jusqu’à 4 points rapidement et facilement.
+L97: 
+L98: 【12†En savoir plus】
+L99: 
+L100: 【13†Image: Homme tenant un volant avec un sourire】
+L101: ## Quelles sont les modalités d’inscription ?
+L102: 
+L103: L’inscription à l’examen T3P se fait via la plateforme nationale. Lors de l'inscription, vous devez fournir un numéro de téléphone et une adresse e-mail personnelle valides jusqu’à la publication des résultats.
+L104: ### Recommandations importantes
+L105:   * Assurez-vous de bien sélectionner la catégorie et le département où vous passerez l'épreuve pratique ;
+L106:   * Notez et conservez l'identifiant de connexion et le mot de passe créés lors de la création du compte ;
+L107:   * Fournissez une adresse e-mail à laquelle vous avez accès. Autorisez les courriels terminant par @cma-idf.fr et ne les bloquez pas en indésirable. Les convocations et résultats seront transmis à cette adresse e-mail ;
+L108:   * Si vous avez confié votre inscription à un organisme de formation, vous devez disposer des identifiants de connexion de votre compte candidat. N’hésitez pas à les lui réclamer ;
+L109:   * Si vous vous inscrivez pour passer uniquement les épreuves de mobilité professionnelle, assurez-vous que la date d’obtention de l’Attestation de réussite à l’admissibilité est inférieure à 3 ans. Dans le cas contraire, vous devez procéder à une inscription complète.
+L110: ### Anticipation et délais
+L111: 
+L112: Les candidats doivent anticiper le renouvellement de leurs documents avant de soumettre un dossier sur la plateforme nationale. En raison du grand nombre de dossiers reçus, notamment dans les 48 heures précédant la clôture des inscriptions, il est fortement recommandé de s'inscrire à l'avance.
+L113: Il est de votre responsabilité de déposer votre dossier dans un délai raisonnable pour permettre son traitement et sa validation s’il est réputé conforme (pièces et paiement validés avant la date de clôture).
+L114: 
+L115: Le jour de la clôture, seuls les dossiers complets et validés avant l'heure limite seront pris en compte (validation de l'ensemble des pièces et du paiement).
+L116: ### Confirmation de l’inscription
+L117: 
+L118: Un dossier constitué en ligne ou par un organisme de formation avant la date de clôture ne vaut pas inscription : l'inscription est confirmée par le service T3P via la plateforme nationale.
+L119: ### Obligation du candidat
+L120: 
+L121:   * Mise à jour des coordonnées : informer la CMA par mail (exament3p@cma-idf.fr) en cas de changement d’adresse ou de coordonnées (justificatif +pièce d’identité à fournir pour un changement d’adresse) ;
+L122:   * Suivi des convocations : contacter la CMA Île-de-France par mail si la convocation n'est pas reçue 5 à 7 jours avant l’épreuve.
+L123: ### Qui ne peut pas s’inscrire à l’examen T3P ?
+L124: 
+L125: Il est interdit de s’inscrire à l’examen dans les cas suivants :
+L126:   * Retrait définitif de la carte professionnelle : Si, dans les dix ans précédant la demande, le candidat a subi un retrait définitif de sa carte professionnelle en application de l'article L. 3124-11 ;
+L127:   * Exclusion pour fraude : Si, dans les cinq ans précédant la demande, le candidat a été exclu pour fraude lors d'une session à l'un des examens des professions du transport public particulier de personnes ;
+L128:   * Permis de conduire : Si le délai probatoire du permis de conduire du candidat, conformément à l'article L. 223-1 du code de la route, n'est pas expiré ; Si la condition d'ancienneté prévue au 3° de l'article L. 3123-1 du code des transports n'est pas remplie.
+L129: ## Quels sont les montants et modalités de paiement des droits d’inscription ?
+L130: ### Tarifs applicables depuis le 01 janvier 2026
+L131:   * Épreuves complètes : 241 €
+L132:   * Mobilité professionnelle : 168 €
+L133:   * Épreuve d'admission uniquement : 118 €
+L134:   * Option pour recevoir les informations par SMS : 2,50€ (non remboursable)
+L135:   * Pour les paiements en ligne, le règlement s'effectue par carte bancaire sur la plateforme nationale.
+L136:   * Non remboursable dès que l’inscription a été validée (validation de l'ensemble des pièces et du paiement - art Article III. 2 du règlement général)
+L137:   * Non remboursable en cas d'absence : les frais d'inscription ne sont pas remboursables si vous êtes absent aux épreuves.
+L138: ### Tarifs applicables à compter du 01 janvier 2027
+L139:   * Épreuves complètes : 246 €
+L140:   * Mobilité professionnelle : 171 €
+L141:   * Épreuve d'admission uniquement : 120 €
+L142:   * Option pour recevoir les informations par SMS : 2,50€ (non remboursable)
+L143:   * Pour les paiements en ligne, le règlement s'effectue par carte bancaire sur la plateforme nationale.
+L144:   * Non remboursable dès que l’inscription a été validée (validation de l'ensemble des pièces et du paiement - art Article III. 2 du règlement général)
+L145:   * Non remboursable en cas d'absence : les frais d'inscription ne sont pas remboursables si vous êtes absent aux épreuves.
+L146: ### Autres modalités de paiement possibles
+L147: 
+L148: Paiement par chèque :
+L149: 
+L150:   * Le traitement des chèques étant long, l'inscription ne pourra être assurée que pour la session suivante.
+L151:   * Le chèque doit être libellé à l'ordre de la "CMA Île-de-France" et envoyé rapidement à l'adresse suivante / le numéro du candidat + nom prénom seront annotés au dos du chèque :
+L152: 
+L153: CMA Île-de-France - Pôle T3P - 72-74 rue de Reuilly - 75592 PARIS cedex 12
+L154: Le chèque doit être encaissé avant la date de clôture des inscriptions de la session demandée. Prévoir un délai d'envoi suffisant pour garantir la validation du dossier.
+L155: ## Comment suivre ma convocation ?
+L156: 
+L157: ### Admissibilité (épreuve théorique)
+L158: 
+L159: Les convocations sont transmises et téléchargeables dans le dossier du candidat et par mail à l'adresse renseignée dans le dossier d’inscription.
+L160: 
+L161: 【4†Conseils pour accéder à votre dossier personnel†drive.google.com】
+L162: 
+L163: 【14†Plan d'accès et Consignes de l'épreuve théorique†drive.google.com】
+L164: ### Admission (épreuve pratique)
+L165: 
+L166: La convocation à l'admission est transmise dans le dossier du candidat par le département d'exercice indiqué dans le dossier d'inscription dans les 2 mois suivant la parution des résultats de l’écrit, et au plus tard 7 jours avant la date de l’épreuve pratique.
+L167: 
+L168: 【15†Consignes de l'épreuve pratique†drive.google.com】
+L169: ### Délai d'envoi des convocations
+L170: 
+L171: Les convocations sont envoyées au plus tard 7 jours avant la date des épreuves. Les candidats n’ayant pas reçu leur convocation sont invités à transmettre une demande dans leur dossier en ligne, qu’il s’agisse de l’épreuve d’admissibilité ou d’admission.
+L172: ### Responsabilité du candidat
+L173: 
+L174: La CMA Île-de-France ne peut être tenue responsable des erreurs de saisie concernant votre identité, vos coordonnées postales, téléphoniques ou mail ainsi que des erreurs de choix de catégorie (taxi-vtc-vmdtr) ou de type de session (complet-mobilité). Le candidat dispose d’un espace de demande de modification dans la fiche personnelle de son dossier d’inscription.
+L175: Les convocations reçues restent valables pour l’accès au centre d’examen : les modifications seront portées au dossier d’inscription et pour la publication des résultats.
+L176: 
+L177: Il est de votre responsabilité de consulter régulièrement votre dossier et sa messagerie.
+L178: ## Je suis une personne en situation de handicap. Puis-je m’inscrire ?
+L179: IMPORTANT : avant tout dépôt du dossier d'inscription à  l'examen T3P, le candidat en situation de handicap -ou l'organisme de formation le représentant- doit s'assurer qu'il pourra présenter, le jour de l'épreuve pratique, un véhicule adapté à la situation du handicap  ET conforme aux exigences du règlement d'examen.
+L180: Nos centres d’examen sont accessibles aux personnes à mobilité réduite. Toutefois, il est nécessaire de connaître votre besoin exact.
+L181: ### Procédure pour les aménagements d'examen
+L182: 
+L183: Demande de tiers temps et aménagements :
+L184: 
+L185:   * Le candidat doit adresser une demande à un médecin désigné par la CDAPH (Commission des Droits et de l'Autonomie des Personnes Handicapées) territorialement compétente.
+L186:   * Le médecin évaluera la situation de handicap et les besoins d’aménagements pour l’examen.
+L187: 
+L188: Transmission de la demande :
+L189:   * Envoyer une demande d’aménagement des conditions d'examen, accompagnée de l’avis du médecin, au siège de la CMA (exament3p@cma-idf.fr).
+L190:   * La demande doit être envoyée au plus tard un mois avant la date des épreuves de la session souhaitée.
+L191: 
+L192: Décision de la CMA :
+L193: 
+L194:   * La Chambre de métiers et de l’artisanat d’Île-de-France (CMA-ÎDF) décidera des aménagements ou adaptations des épreuves sur la base de l’avis médical.
+L195:   * La décision sera notifiée au candidat.
+L196: ## Où trouver les annales pour les épreuves d’admissibilité ?
+L197: 
+L198: Les annales sont uniquement consultables sur le 【16†site de CMA France†www.artisanat.fr】.
+L199: 
+L200: Attention !
+L201: 
+L202: Nous rappelons que ces annales sont fournies à titre indicatif. Les questions et les réponses apportées sont le reflet de la règlementation au moment de la rédaction des sujets. Le cadre législatif étant en constante évolution, nous vous invitons à compléter votre formation avec des sources additionnelles.
+L203: ## Ressources réglementaires
+L204: 
+L205: Les ressources réglementaires jouent un rôle crucial dans la préparation et la réussite d'un examen, notamment lorsqu'il s'agit de disciplines régies par des cadres juridiques, techniques ou normatifs spécifiques.
+L206: ## Informations sur la réglementation de la profession définie depuis l'arrêté du 06 avril 2017
+L207: 
+L208: 【17†Décret n°2017-483 du 06 avril 2017 relatif aux activités de transport public particulier de personnes (T3P) Télécharger - 177.07 Ko】
+L209: 
+L210: 【18†Arrêté du 06 avril 2017 : signalétique Télécharger - 113.72 Ko】
+L211: 
+L212: 【19†Arrêté du 06 avril 2017 : contenu et évaluation Télécharger - 2.01 Mo】
+L213: 
+L214: 【20†Arrêté du 06 avril 2017 : droits inscription Télécharger - 141.48 Ko】
+L215: 【21†Arrêté du 06 avril 2017 : dispenses d'épreuves aux examens Télécharger - 141.92 Ko】
+L216: 
+L217: 【22†Arrêté du 11 août 2017 : mobilité géographique Télécharger - 511.68 Ko】
+L218: 
+L219: 【23†Arrêté du 11 août 2017 : modifiant notation épreuve d'admission taxi/vtc Télécharger - 1.57 Mo】
+L220: 
+L221: 【24†Arrêté du 11 août 2017 : modifiant droits d'inscription épreuves B et C Télécharger - 274.7 Ko】
+L222: 【25†Arrêté du 16 février 2018 : relatif aux programmes et à l'évaluation des épreuves de l'examen d'accès à la profession de conducteur de véhicule motorisé à deux ou trois roues Télécharger - 181.83 Ko】
+L223: 
+L224: 【26†Décret n°2021-201 du 24 février 2021 relatif à l'organisation des épreuves théoriques et pratiques d'accès aux professions de conducteur de taxi, de conducteur de voiture de transport avec chauffeur et de conducteur de véhicule motorisé à 2 ou 2 roues Télécharger - 153.85 Ko】
+L225: 【27†Arrêté du 20 mars 2024 introduisant la lutte aux violences sexuelles et sexistes dans l’épreuve A de l’examen taxi/VTC/VMDTR Télécharger - 130.34 Ko】
+L226: 
+L227: 【28†Arrêté du 21 juin 2024 fixant la condition d’expérience professionnelle nécessaire pour participer au jury des épreuves pratiques d’admission Télécharger - 127.69 Ko】
+L228: 【29†Arrêté du 21 juin 2024 fixant les conditions de désignation et les obligations déontologiques ou de déport applicables aux personnes chargées de l’évaluation des candidats ou de l’organisation de l’examen Télécharger - 141.69 Ko】
+L229: 
+L230: 【30†Arrêté du 21 juin 2024 relatif aux modalités du contrôle de l’organisation et du déroulement des épreuves des examens Télécharger - 129.3 Ko】
+L231: 【31†Arrêté du 17 janvier 2025 modifiant l'arrêté du 21 juin 2024 - Conditions de désignation et obligations déontologiques ou déport Télécharger - 126.84 Ko】
+L232: 
+L233: 【32†Décret n°2026-764 du 05 août 2026 portant suppression de l'accès par reconnaissance de l'expérience professionnelle aux professions de conducteur de VTC et de VMDTR Télécharger - 135.23 Ko】
+L234: ## Les arrêtés préfectoraux portant fixation des tarifs horokilométriques applicables aux taxis sont à retrouver sur les sites des Préfectures du lieu d'exercice.
+L235: 
+L236: ## Grilles de notation de l'épreuve pratique de mise en situation (Admission)
+L237: 
+L238: 【33†Grille de notation TAXIS (pour consultation - reproduction strictement interdite) Télécharger - 468.72 Ko】
+L239: 
+L240: 【34†Grille de notation VTC (pour consultation - reproduction strictement interdite) Télécharger - 464.51 Ko】
+L241: ## Tous nos secteurs & métiers
+L242: 
+L243: 【35†Alimentaire】
+L244: 
+L245:   * 【36†Pâtissier】
+L246:   * 【37†Boulanger】
+L247:   * 【38†Glacier】
+L248:   * 【39†Chocolatier-Confiseur】
+L249: 
+L250: 【35†Voir tous les métiers】
+L251: 
+L252: 【40†Automobile】
+L253: 
+L254:   * 【41†Mécanicien】
+L255:   * 【42†Carrossier】
+L256:   * 【43†Peintre en automobile】
+L257: 
+L258: 【40†Voir tous les métiers】
+L259: 
+L260: 【44†Bâtiment】
+L261: 
+L262:   * 【45†Électricien】
+L263:   * 【46†Plombier】
+L264:   * 【47†Chauffagiste】
+L265:   * 【48†Électrotechnicien】
+L266: 
+L267: 【44†Voir tous les métiers】
+L268: 
+L269: 【49†Beauté et bien-être】
+L270:   * 【50†Coiffeur】
+L271:   * 【51†Socio-coiffeur】
+L272:   * 【52†Styliste ongulaire】
+L273:   * 【53†Coloriste en coiffure】
+L274:   * 【54†Barbier】
+L275:   * 【55†Esthéticien】
+L276:   * 【56†Maquilleur】
+L277: 
+L278: 【49†Voir tous les métiers】
+L279: 
+L280: 【57†Hôtellerie - restauration】
+L281: 
+L282:   * 【58†Traiteur】
+L283:   * 【59†Serveur】
+L284:   * 【60†Cuisinier】
+L285:   * 【61†Commis de cuisine】
+L286:   * 【62†Barman】
+L287: 
+L288: 【57†Voir tous les métiers】
+L289: 
+L290: 【63†Management et gestion】
+L291: 
+L292:   * 【64†Assistant de gestion】
+L293:   * 【65†Assistant de dirigeant】
+L294:   * 【66†Entrepreneur】
+L295: 
+L296: 【63†Voir tous les métiers (+4)】
+L297:   * 【67†Opticien】
+L298:   * 【68†Prothésiste dentaire】
+L299:   * 【69†Assistant maternel】
+L300: 
+L301: 【70†Voir tous les métiers】
+L302: 
+L303: 【71†Services】
+L304: 
+L305:   * 【72†Photographe】
+L306:   * 【73†Fleuriste】
+L307:   * 【74†Toiletteur】
+L308: 
+L309: 【71†Voir tous les métiers】
+L310: 
+L311: 【75†Vente, commerce et marketing】
+L312: 
+L313:   * 【76†Conseiller vendeur】
+L314:   * 【77†Commercial】
+L315:   * 【78†Agent immobilier】
+L316:   * 【79†Assureur】
+L317:   * 【80†Commercial en assurance】
+L318:   * 【81†Manager en point de vente】
+

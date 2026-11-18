@@ -1,0 +1,1298 @@
+[
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-001",
+    "issue": "Direct observation is more credible than copying reports or changing orders.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-003",
+    "issue": "Only specific measurable consumption observation.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-004",
+    "issue": "Actual consumption is the outcome rather than purchasing or label information.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-005",
+    "issue": "Approved equivalent is moderate and appropriate; others rigid or overreaching.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-007",
+    "issue": "Only informant regularly observing meals.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-009",
+    "issue": "Only comprehensive individualized option; others say alone, only, or all clients.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-012",
+    "issue": "Only constructive current action; others delay or retain conflicts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-013",
+    "issue": "Respectful individual confirmation versus sweeping exclusions.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-014",
+    "issue": "Only measurable time-bound goal; others vague or judgmental.",
+    "fix": "Make every alternative measurable and professionally worded; use the stem baseline, target outcome and timeframe to distinguish the correct objective.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-015",
+    "issue": "Only referral within support role; other actions prescribe or diagnose.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-017",
+    "issue": "Revised values signal relevant current information versus original or unchanged data.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-018",
+    "issue": "Only open-ended respectful question; others leading or accusatory.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-019",
+    "issue": "Only outcome-focused evaluation linked to agreed goals.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-021",
+    "issue": "Only reasonable review action; others sweeping clinical overreach.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-022",
+    "issue": "Only collaborative response; others punitive or diagnostic.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-023",
+    "issue": "Only verifies evidence; others delete or permanently accept suspicious data.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-024",
+    "issue": "Only collaborative suitable review; others arbitrary or harmful.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-025",
+    "issue": "Only pair directly governing individual diet service.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-027",
+    "issue": "Only accommodating respectful communication option.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-028",
+    "issue": "Only private setting among three explicitly public settings.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-029",
+    "issue": "Comprehensive measurable outcome versus popularity or content alone.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-030",
+    "issue": "Only comprehensive observed intake; others exclude data or replace measurements.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-031",
+    "issue": "Only useful documented follow-up versus memory, waiting, or irrelevant detail.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-032",
+    "issue": "Only current practical availability criterion; others historical or personal.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-034",
+    "issue": "Only plain-language educational response; others disclose, prescribe, or promise.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-035",
+    "issue": "Only clinically relevant change among trivial preferences.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-036",
+    "issue": "Only prescribed-plan criterion; others narrow or arbitrary passing rules.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-037",
+    "issue": "Only comprehensive individualized assessment; others omit knowledge or generalize.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-038",
+    "issue": "Only clinical review versus automatic changes or independent diagnosis.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-039",
+    "issue": "Only evidence-based documentation; others fabricate or substitute diagnosis.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-040",
+    "issue": "Only current collaborative update; others stale or generalized.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-003",
+    "issue": "Only acceptance-oriented outcome study; others administrative.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-005",
+    "issue": "Only nutrition and suitability criterion; others superficial equivalence.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-007",
+    "issue": "Most complete specification with four relevant dimensions.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-008",
+    "issue": "Only local validation; others accept claims or simplistic scaling.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-011",
+    "issue": "Only option explicitly uses updated current demand.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-014",
+    "issue": "Specific practical control versus changing counts or speed.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-017",
+    "issue": "Only measurable target; others vague, easy, or impossible zero-error promise.",
+    "fix": "Make every alternative measurable and professionally worded; use the stem baseline, target outcome and timeframe to distinguish the correct objective.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-018",
+    "issue": "Only evidence-based adjustment; others claim success or change goals prematurely.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-019",
+    "issue": "Only individualized preference choice versus defaults or cheapest.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-021",
+    "issue": "Reason codes imply actionable detail; competitors aggregate or omit comments.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-024",
+    "issue": "Only individualized instructions; others generic, previous, or popular.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-025",
+    "issue": "Purpose-based quality language versus unrelated counting or receipt tasks.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-026",
+    "issue": "Only direct resident feedback; others proxy counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-027",
+    "issue": "Two complementary quantity-planning factors; other options less comprehensive.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-029",
+    "issue": "Only direct service outcomes; others activity or resource counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-030",
+    "issue": "Only reconcile before acting; others arbitrary reductions or unsupported additions.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-033",
+    "issue": "Only accountable recording action; others delay or misstate consumption.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-034",
+    "issue": "Only inclusive participation; others omit evidence or decide prematurely.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-035",
+    "issue": "Explicit compliance cue versus raw counts and regular-menu assumptions.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-037",
+    "issue": "Only reasonable trial; others blanket increase or reduced safety standard.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-038",
+    "issue": "Actual measurement is more defensible than unrelated counts and old prices.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-039",
+    "issue": "Only outcome error rate; others activity counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-041",
+    "issue": "Only suitability and consistency; others rigid superficial matches.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-042",
+    "issue": "Only deliberate schedule method; others late, excessively early, or copied.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-044",
+    "issue": "Only actual variance evidence; others input quantities.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-002",
+    "issue": "Broad role-defining document versus administrative records; weak cue.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-003",
+    "issue": "Only consistent job-related method; others subjective or arbitrary.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-004",
+    "issue": "Only behavioral open-ended interview prompt.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-005",
+    "issue": "Only competence verification; others count attendance or delay.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-007",
+    "issue": "Only demand-responsive staffing; others indiscriminate or irrelevant.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-008",
+    "issue": "Only dated objective evidence; others impressions or unrelated factors.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-009",
+    "issue": "Only measurable time-bound expectation; notably longer and more specific.",
+    "fix": "Make every alternative measurable and professionally worded; use the stem baseline, target outcome and timeframe to distinguish the correct objective.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-010",
+    "issue": "Only supportive goal-related factor; others unrelated or unrealistic.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-011",
+    "issue": "Only actual needs assessment versus convenient or historical topics.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-012",
+    "issue": "Only direct skill demonstration; others attendance or satisfaction proxies.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-014",
+    "issue": "Only accountable actions with deadlines; others meeting logistics.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-015",
+    "issue": "Only appropriate advance meeting guide; others confidential or premature.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-016",
+    "issue": "Only consistent established rules; others favoritism or request style.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-017",
+    "issue": "Only resilience action with competence verification.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-018",
+    "issue": "Only comprehensive operational communication; other options repeatedly say only.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-019",
+    "issue": "Only measured follow-up against goal; others assume or count files.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-020",
+    "issue": "Only comprehensive feasible planning; others explicitly narrow or ignore demand.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-021",
+    "issue": "Only relevant demonstrated skill; other criteria biased or personal.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-024",
+    "issue": "Only practical enabling condition; others administrative counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-025",
+    "issue": "Only specific constructive feedback; others judgmental or favoritism.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-026",
+    "issue": "Only concrete accountability; others slogans, absolutes, or identical workloads.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-027",
+    "issue": "Only actual behavior transfer; others surveys or counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-028",
+    "issue": "Only matched demand and capacity; more coherent pair.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-029",
+    "issue": "Only rectifies and documents gap; others ignore or waive requirement.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-030",
+    "issue": "Only review and update; others stale or irrelevant substitutes.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-031",
+    "issue": "Only inclusive respectful discussion; others restrictive.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-032",
+    "issue": "Only timely communication to affected people; others conceal or delay.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-033",
+    "issue": "Only shared criteria; others higher target or sample without standards.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-035",
+    "issue": "Only evidence-based proficiency review; others wait or assume.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-036",
+    "issue": "Only governing requirements and specialist review; others personal preference.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-037",
+    "issue": "Only investigate evidence; others blame or ignore.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-038",
+    "issue": "Only complete actionable meeting record; others explicitly without decisions.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-039",
+    "issue": "Only consistent evidence-based evaluation; others tenure or automatic equality.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-040",
+    "issue": "Only feasible contingency; others duplicate or promise all items.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-003",
+    "issue": "Only thorough temperature-based cooking; others appearance or cooling.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-004",
+    "issue": "Only action facilitating cooling; other choices trap heat.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-008",
+    "issue": "Only hygiene-complete option; others reuse dirty gloves.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-009",
+    "issue": "Only measurable safety criterion versus preference or average.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-011",
+    "issue": "Only current ingredient evidence; others explicitly only stale or irrelevant data.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-014",
+    "issue": "Only reject and document; others accept suspect goods or omit records.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-015",
+    "issue": "Only substantive hazard without narrowing only qualifiers.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-018",
+    "issue": "Only actual compliance; others prior reputation or count alone.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-021",
+    "issue": "Only designated handwashing facility.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-022",
+    "issue": "Only preventive resource care; alternatives unrelated or defer replacement.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-024",
+    "issue": "Only appropriate separate storage; others merely bins or container size.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-026",
+    "issue": "Only isolation and identification; others use, relabel, or accelerate stock.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-029",
+    "issue": "Only contamination safety consequence; others commercial details.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-031",
+    "issue": "Only complete rehearsed emergency plan; alternatives routine or contacts alone.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-032",
+    "issue": "Only direct documented inspection; others posters, attendance, or menu counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-034",
+    "issue": "Only current order reconciliation without only qualifier; A historical.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-035",
+    "issue": "Direct fundamental evidence flaw; others terminology or unrelated steps.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-036",
+    "issue": "Only continuous cooking; alternatives risky delays or storage.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-037",
+    "issue": "Only inspect actual result; others completion claims or supply counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-038",
+    "issue": "Only immediate correction; others continue operation or defer checks.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-039",
+    "issue": "Only food-specific protective cold threshold; others environment or vague temperature.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-041",
+    "issue": "Only vetted approved source; others explicitly lack checks or approval.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-043",
+    "issue": "Only realistic preventive purpose; others diagnose or make universal claims.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-044",
+    "issue": "Only contamination-focused operational criterion among administrative alternatives.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-045",
+    "issue": "Most complete multi-step protective procedure; others omit steps.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-046",
+    "issue": "Only complete traceability identifiers.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-047",
+    "issue": "Only clean potable source; others explicitly contaminated or untreated.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-048",
+    "issue": "Only current operational update; others delay or use price/invoice alone.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-002",
+    "issue": "Only durable capital asset among consumables; contrast cue.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-004",
+    "issue": "Only comprehensive criteria; all competitors explicitly omit dimensions.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-005",
+    "issue": "Only normalized unit metric; others totals or counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-007",
+    "issue": "Only written substantive requirements; others brand, history, or catalog alone.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-008",
+    "issue": "Only investigate and reconcile; others assume or falsify.",
+    "fix": "Present actual conflicting records or observations and make all four actions plausible; require choosing the appropriate evidence or sequence, not spotting the sole verify/update response.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-009",
+    "issue": "Only complete acquisition cost; competitors explicitly alone or only.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-011",
+    "issue": "Only evidence-based market and financial planning; others copying or ingredient-only cost.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-014",
+    "issue": "Only usable-yield-adjusted comparison; others gross case counts.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-016",
+    "issue": "Only forward-looking usage and lead-time pair; others historical or superficial.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-018",
+    "issue": "Only investigate records; others conceal or manipulate money.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-019",
+    "issue": "Only comprehensive usable quantity and total cost; others explicitly alone.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-021",
+    "issue": "Only complete cost evaluation; others age or appearance alone.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-022",
+    "issue": "Only meaningful comparability; others arbitrary equalities.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-024",
+    "issue": "Only balances cost with service outcomes; others narrow savings or activity.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-025",
+    "issue": "Only adjusts expenses to actual volume; others fixed or unrelated.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-027",
+    "issue": "Only suitable economical option; others regardless of suitability or review.",
+    "fix": "Replace implausible distractors with adjacent professional actions or concepts and add a case detail that makes one superior. Match option length, scope, specificity and professional tone; do not mark wrong options with only/alone/without.",
+    "area": "options"
+  },
+  {
+    "severity": "ambiguous",
+    "questionId": "CDM-NUT-025",
+    "issue": "Card and manual do not independently verify that the current clinical order was implemented; a card may be stale.",
+    "fix": "Make the verified current order the comparison authority, with tray card and manual as service tools.",
+    "area": "stem/options"
+  },
+  {
+    "severity": "ambiguous",
+    "questionId": "CDM-NUT-030",
+    "issue": "The fluid-record answer says all observed oral intake, which can include solid food.",
+    "fix": "Specify all oral fluids consumed, including between-meal beverages and the relevant fluid-accounting convention.",
+    "area": "stem/options"
+  },
+  {
+    "severity": "ambiguous",
+    "questionId": "CDM-NUT-039",
+    "issue": "Never observed is ambiguous about whose observation and whether a reliable attributed report exists.",
+    "fix": "State there is no measured or reliably reported intake; retain the explanation allowing otherwise supported information.",
+    "area": "stem/options"
+  },
+  {
+    "severity": "ambiguous",
+    "questionId": "CDM-FOO-013",
+    "issue": "A taste panel does not necessarily represent the diners whose acceptance is the target.",
+    "fix": "Specify a resident/diner taste panel or direct diner acceptance survey.",
+    "area": "stem/options"
+  },
+  {
+    "severity": "ambiguous",
+    "questionId": "CDM-SAF-019",
+    "issue": "Prepared refrigerated TCS alone does not establish applicability of RTE date marking.",
+    "fix": "Specify ready-to-eat ingredients held longer than 24 hours; retain earliest-prepared date in answer and explanation.",
+    "area": "stem/options"
+  },
+  {
+    "severity": "ambiguous",
+    "questionId": "CDM-SAF-045",
+    "issue": "Correct option does not explicitly say the two-minute stand remains covered, although the explanation does.",
+    "fix": "Say stir/rotate, cover, and stand covered for two minutes.",
+    "area": "stem/options"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-003",
+    "issue": "Explanation contrasts intake with judgments about character, absent from all options.",
+    "fix": "Explain why offered portions, appetite report and planned portion size do not establish actual consumption.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-009",
+    "issue": "Explanation rejects a blanket ban on a food although no alternative proposes one.",
+    "fix": "Contrast individualized fluid allocation with counting breakfast or tray beverages alone and a universal fluid limit.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-019",
+    "issue": "Explanation rejects volume of paperwork, which is not an offered distractor.",
+    "fix": "Explain why interview completion and meal delivery are process indicators rather than progress toward client goals.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-013",
+    "issue": "Explanation discusses procurement and labor records, but options concern tray accuracy, temperatures and ingredient cost.",
+    "fix": "Discuss the actual alternative instruments and what each measures.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-029",
+    "issue": "Explanation dismisses a signed memo, absent from the options.",
+    "fix": "Contrast delivered conditions with staff training, cart and production counts.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-024",
+    "issue": "Explanation dismisses inventory rotation, absent from the options.",
+    "fix": "Explain why bin covers, unopened packaging or arranging chemicals by size do not establish appropriate separation.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-041",
+    "issue": "Explanation contrasts price and speed, absent from the options.",
+    "fix": "Explain why familiarity, locality or licensure without product checks does not meet vetted approved-source selection.",
+    "area": "explanation"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-023",
+    "issue": "Missing spaces or malformed punctuation in question.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-NUT-033",
+    "issue": "Missing spaces or malformed punctuation in question.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-002",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-006",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-009",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-016",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-032",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-036",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-FOO-040",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-001",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-006",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-PER-023",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-016",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-025",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-SAF-028",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-001",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-003",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-006",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-010",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-012",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-015",
+    "issue": "Missing spaces or malformed punctuation in question.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-017",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-020",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-023",
+    "issue": "Missing spaces or malformed punctuation in question, explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-026",
+    "issue": "Missing spaces or malformed punctuation in explanation.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BUS-028",
+    "issue": "Missing spaces or malformed punctuation in question.",
+    "fix": "Restore normal prose and calculation spacing; ensure decimal numbers remain unchanged.",
+    "area": "editorial"
+  },
+  {
+    "severity": "weak",
+    "questionId": "PER-001/006/013/023/034",
+    "issue": "Five nearly identical 40-hour FTE conversions.",
+    "fix": "Keep two distinct FTE operations and replace others with supplied-data staffing coverage, turnover or workload decisions.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "FOO-002/028/036",
+    "issue": "Repeated direct recipe scaling.",
+    "fix": "Keep one elementary multiplier and introduce actual yield or capacity constraints elsewhere.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "NUT-010/020/026",
+    "issue": "Repeated uniform fractional consumption calculation.",
+    "fix": "Use one mixed-component intake scenario with different consumption percentages.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "PER-005/012/027/035",
+    "issue": "Repeated observed competence versus attendance/satisfaction proxies.",
+    "fix": "Separate skill demonstration, transfer, knowledge and resource barriers through concrete evidence.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "NUT-014/019/029;FOO-017/018/039;PER-009/019/033",
+    "issue": "Repeated measurable outcome versus process proxy distinction.",
+    "fix": "Require interpretation of baseline and follow-up data rather than recognition of measurement language.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "FOO-003/026/037;BUS-024",
+    "issue": "Repeated acceptance and waste rationale.",
+    "fix": "Distinguish sensory, cultural, production-waste and cost tradeoffs using different data.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "NUT-012/025/036;FOO-024/035",
+    "issue": "Repeated generic individual diet compliance.",
+    "fix": "Introduce realistic order reconciliation, texture verification and substitution decisions.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "PER-014/026/038;NUT-031",
+    "issue": "Repeated actions, owners and deadlines documentation.",
+    "fix": "Keep one direct documentation question and make others test different implementation barriers.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "SAF-007/030/039",
+    "issue": "Same 41\u00b0F number repeated in reception, holding and thawing.",
+    "fix": "Use a scenario-based decision in at least one context while preserving explicit legal exceptions.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "BUS-001/010/017/023",
+    "issue": "Repeated cost divided by unit count.",
+    "fix": "Replace at least one with volume-normalized variance or edible-yield interpretation.",
+    "area": "coverage/repetition"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-BANK",
+    "issue": "Correct keys follow an exact A/B/C/D cycle throughout the authored bank. Runtime shuffling may mitigate learner exposure, but deterministic author placement undermines raw-bank assessment integrity.",
+    "fix": "Assign keyed positions independently after content validation and preserve runtime option shuffling.",
+    "area": "bank structure"
+  },
+  {
+    "severity": "weak",
+    "questionId": "CDM-LANDING-FACTS",
+    "issue": "The compact facts phrase form-specific cut score is more specific than the linked outline and FAQ expressly establish. The FAQ supports a CBDM-set modified-Angoff cut score and the exact required count on the score report.",
+    "fix": "Use CBDM-set cut score; historically about 70% of scored items, and link the official FAQ alongside the outline.",
+    "area": "landing attribution",
+    "source": "https://www.cbdmonline.org/exam-prep/credentialing-exam-faq"
+  }
+]

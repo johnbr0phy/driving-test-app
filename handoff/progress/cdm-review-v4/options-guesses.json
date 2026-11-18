@@ -1,0 +1,1002 @@
+[
+  {
+    "reviewId": "R001",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R002",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R003",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R004",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R005",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R006",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R007",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R008",
+    "guess": "A",
+    "cue": "Vulnerability cue: nursing-home residents stand apart from the three general-adult/public settings."
+  },
+  {
+    "reviewId": "R009",
+    "guess": "A",
+    "cue": "Odd-one-out cue: rice stands apart from the three named wheat/barley grains."
+  },
+  {
+    "reviewId": "R010",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R011",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R012",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R013",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R014",
+    "guess": "D",
+    "cue": "Specificity cue: speech-language pathologist is the uniquely specialized clinical professional."
+  },
+  {
+    "reviewId": "R015",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R016",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R017",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R018",
+    "guess": "D",
+    "cue": "Constructive managerial tone: rebalance competing workload addresses a system constraint."
+  },
+  {
+    "reviewId": "R019",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R020",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R021",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R022",
+    "guess": "B",
+    "cue": "Odd-one-out cue: barley malt contrasts with the explicitly plain/unseasoned alternatives."
+  },
+  {
+    "reviewId": "R023",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R024",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R025",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R026",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R027",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R028",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R029",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R030",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R031",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R032",
+    "guess": "C",
+    "cue": "Outcome specificity: consumed volume measures actual intake rather than delivery or package claims."
+  },
+  {
+    "reviewId": "R033",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R034",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R035",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R036",
+    "guess": "D",
+    "cue": "Completeness cue: chemical test kit or strips gives two equivalent verification methods."
+  },
+  {
+    "reviewId": "R037",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R038",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R039",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R040",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R041",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R042",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R043",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R044",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R045",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R046",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R047",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R048",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R049",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R050",
+    "guess": "D",
+    "cue": "Real-world transfer cue: ordinary production shift contrasts with classroom/self-report measures."
+  },
+  {
+    "reviewId": "R051",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R052",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R053",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R054",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R055",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R056",
+    "guess": "B",
+    "cue": "Qualified safety language: running-water option explicitly says under its limits."
+  },
+  {
+    "reviewId": "R057",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R058",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R059",
+    "guess": "A",
+    "cue": "Specificity and balanced method: defined historical comparison points contrast with selective extremes or only recent data."
+  },
+  {
+    "reviewId": "R060",
+    "guess": "A",
+    "cue": "Moderate safety response: restrict duties avoids both unrestricted work and the stronger unsupported exclusion."
+  },
+  {
+    "reviewId": "R061",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R062",
+    "guess": "B",
+    "cue": "Odd-one-out cue: the only substitution from butter toward vegetable oil."
+  },
+  {
+    "reviewId": "R063",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R064",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R065",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R066",
+    "guess": "C",
+    "cue": "Unqualified protective wording contrasts with three options that dismiss or narrowly limit allergen controls."
+  },
+  {
+    "reviewId": "R067",
+    "guess": "C",
+    "cue": "Direct-consumption cue: beverage ice stands apart from three nonfood uses."
+  },
+  {
+    "reviewId": "R068",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R069",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R070",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R071",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R072",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R073",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R074",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R075",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R076",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R077",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R078",
+    "guess": "A",
+    "cue": "Practical identification cue: common cleaner name identifies contents; other choices are incidental metadata."
+  },
+  {
+    "reviewId": "R079",
+    "guess": "B",
+    "cue": "Completeness/fairness cue: equivalent job and benefits contrasts with waiting or diminished restoration."
+  },
+  {
+    "reviewId": "R080",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R081",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R082",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R083",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R084",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R085",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R086",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R087",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R088",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R089",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R090",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R091",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R092",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R093",
+    "guess": "C",
+    "cue": "Elimination cue: date-based choices appear more defensible than ignoring dates or choosing solely on price; Monday is an unresolved guess between remaining cases."
+  },
+  {
+    "reviewId": "R094",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R095",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R096",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R097",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R098",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R099",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R100",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R101",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R102",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R103",
+    "guess": "D",
+    "cue": "Comparable-cost cue: per needed unit is more decision relevant than per purchased unit; lower needed-unit offer selected."
+  },
+  {
+    "reviewId": "R104",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R105",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R106",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R107",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R108",
+    "guess": "A",
+    "cue": "Direct observation cue: observing container use is a concrete functional assessment."
+  },
+  {
+    "reviewId": "R109",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R110",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R111",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R112",
+    "guess": "C",
+    "cue": "Business relevance cue: customer demand at planned price directly tests commercial feasibility."
+  },
+  {
+    "reviewId": "R113",
+    "guess": "D",
+    "cue": "Higher-order competence cue: recognizing discrepancies sounds like the intended transferable skill."
+  },
+  {
+    "reviewId": "R114",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R115",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R116",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R117",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R118",
+    "guess": "B",
+    "cue": "Audit evidence specificity: signed receipts paired with entries directly corroborate a transaction."
+  },
+  {
+    "reviewId": "R119",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R120",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R121",
+    "guess": "C",
+    "cue": "Three restrictive only statements contrast with one flexible, inclusive rule."
+  },
+  {
+    "reviewId": "R122",
+    "guess": "D",
+    "cue": "Demonstration cue: actual measurement tests applied skill more directly than recall or explanation."
+  },
+  {
+    "reviewId": "R123",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R124",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R125",
+    "guess": "C",
+    "cue": "Immediate safety cue: isolating affected food directly protects diners before repair or paperwork."
+  },
+  {
+    "reviewId": "R126",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R127",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R128",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R129",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R130",
+    "guess": "B",
+    "cue": "Authority/specificity cue: timestamped clinical order appears more authoritative than derivative kitchen records."
+  },
+  {
+    "reviewId": "R131",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R132",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R133",
+    "guess": "C",
+    "cue": "Completeness cue: residents tasting both coded versions combines target users with blinded comparison."
+  },
+  {
+    "reviewId": "R134",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R135",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R136",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R137",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R138",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R139",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R140",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R141",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R142",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R143",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R144",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R145",
+    "guess": "C",
+    "cue": "Obvious contamination contrast: soiled utensils stand apart from three information-only activities."
+  },
+  {
+    "reviewId": "R146",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R147",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R148",
+    "guess": "C",
+    "cue": "Methodological completeness: converting both products to an explicit common portion supports a valid comparison."
+  },
+  {
+    "reviewId": "R149",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R150",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R151",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R152",
+    "guess": "C",
+    "cue": "Odd-one-out cue: full refrigerator replacement contrasts with routine service, repair, and gasket costs."
+  },
+  {
+    "reviewId": "R153",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R154",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R155",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R156",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R157",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R158",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R159",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R160",
+    "guess": "D",
+    "cue": "Precision cue: actually worked distinguishes productive time from three broader paid-hour measures."
+  },
+  {
+    "reviewId": "R161",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R162",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R163",
+    "guess": "D",
+    "cue": "Specificity cue: denominator membership is more mathematically diagnostic than the generic lists in alternatives."
+  },
+  {
+    "reviewId": "R164",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R165",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R166",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R167",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R168",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R169",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R170",
+    "guess": "C",
+    "cue": "End-to-end verification cue: authoritative signed order and actual meal span intent and delivered outcome."
+  },
+  {
+    "reviewId": "R171",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R172",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R173",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R174",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R175",
+    "guess": "C",
+    "cue": "Outcome and comparison cue: meals eaten before and after directly assess change."
+  },
+  {
+    "reviewId": "R176",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R177",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R178",
+    "guess": "D",
+    "cue": "Nuanced fairness cue: position that would have been attained avoids static or arbitrary vacancy assignments."
+  },
+  {
+    "reviewId": "R179",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R180",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R181",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R182",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R183",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R184",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R185",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R186",
+    "guess": "D",
+    "cue": "Measured balanced wording: two stated outcomes improved or held sounds bounded to evidence."
+  },
+  {
+    "reviewId": "R187",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R188",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R189",
+    "guess": "A",
+    "cue": "Specific rule cue plus elimination: numeric threshold wording contrasts with three categorical restrictions."
+  },
+  {
+    "reviewId": "R190",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R191",
+    "guess": "D",
+    "cue": "Conditional wording cue: conditional offer explicitly marks a formal stage."
+  },
+  {
+    "reviewId": "R192",
+    "guess": "D",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R193",
+    "guess": "A",
+    "cue": "Person-centered autonomy cue: resident stands apart from administrators and incidental contacts."
+  },
+  {
+    "reviewId": "R194",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R195",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R196",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R197",
+    "guess": "C",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R198",
+    "guess": "B",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R199",
+    "guess": "A",
+    "cue": "none"
+  },
+  {
+    "reviewId": "R200",
+    "guess": "B",
+    "cue": "Concrete prior behavior cue: a disagreement actually resolved contrasts with hypothetical or general preferences."
+  }
+]

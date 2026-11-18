@@ -1,0 +1,1202 @@
+[
+  {
+    "reviewId": "R001",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Six inches is the familiar floor clearance for food storage."
+  },
+  {
+    "reviewId": "R002",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Net energy change requires quantities and consumption in the missing stem; 150 kcal gain is a tentative selection."
+  },
+  {
+    "reviewId": "R003",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Recognizing discrepancies sounds like the meaningful competence while the others describe weak or clerical substitutes."
+  },
+  {
+    "reviewId": "R004",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Qualification requirements are the defining content of a job specification."
+  },
+  {
+    "reviewId": "R005",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "The all-seven-lunches option is the most complete measurement and avoids selective sampling."
+  },
+  {
+    "reviewId": "R006",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Behavioral interviewing asks for the candidate's own action and outcome."
+  },
+  {
+    "reviewId": "R007",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "All four are legitimate unit mismatches; time units is only a tentative selection without the calculation."
+  },
+  {
+    "reviewId": "R008",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Twenty-four hours is a familiar symptom-free interval in food-handler illness rules."
+  },
+  {
+    "reviewId": "R009",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Signed pickup receipts and issue entries substantiate inventory leaving storage."
+  },
+  {
+    "reviewId": "R010",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Portion count needs the missing yield and serving size; 64 is tentative."
+  },
+  {
+    "reviewId": "R011",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Per-meal fluid allocation needs the total and other intake; 400 mL is tentative."
+  },
+  {
+    "reviewId": "R012",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Prices alone cannot establish the required arithmetic; $4 is tentative."
+  },
+  {
+    "reviewId": "R013",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Nursing-home residents are a highly susceptible population."
+  },
+  {
+    "reviewId": "R014",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Consumed volume measures actual supplement intake rather than delivery or label contents."
+  },
+  {
+    "reviewId": "R015",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "135\u00b0F is the familiar hot-holding minimum."
+  },
+  {
+    "reviewId": "R016",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Observing waits during the shared period directly tests an apparent real-world bottleneck."
+  },
+  {
+    "reviewId": "R017",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Each SDS section could be requested; stability and reactivity is a tentative guess."
+  },
+  {
+    "reviewId": "R018",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "The change needs sodium amounts and portion count; adding 240 mg is tentative."
+  },
+  {
+    "reviewId": "R019",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "One worker for one hour defines a labor hour."
+  },
+  {
+    "reviewId": "R020",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Working chemical containers need a common-name label."
+  },
+  {
+    "reviewId": "R021",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Yield percentages need starting and ending weights; 85% is tentative."
+  },
+  {
+    "reviewId": "R022",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Comparing the authoritative order with the actual meal checks the full process directly."
+  },
+  {
+    "reviewId": "R023",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Batch count cannot be derived without demand and batch size; four is tentative."
+  },
+  {
+    "reviewId": "R024",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Microwave thawing commonly triggers a question about immediate cooking afterward."
+  },
+  {
+    "reviewId": "R025",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Unit-cost change needs original totals and volumes; the rise to $7.20 is tentative."
+  },
+  {
+    "reviewId": "R026",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Food is variable cost while a lease is usually fixed when volume falls."
+  },
+  {
+    "reviewId": "R027",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Make-versus-buy savings need cost figures; buying saves $10 is tentative."
+  },
+  {
+    "reviewId": "R028",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Paid trial orders test willingness to pay more directly than free tastings."
+  },
+  {
+    "reviewId": "R029",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "The escalator principle in military reemployment refers to the position that would have been attained."
+  },
+  {
+    "reviewId": "R030",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Several production inputs could change; batch quantity is a tentative guess without the scenario."
+  },
+  {
+    "reviewId": "R031",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Ninety days is the familiar shellstock-tag retention interval."
+  },
+  {
+    "reviewId": "R032",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Covered two-minute standing is the familiar microwave-cooking requirement."
+  },
+  {
+    "reviewId": "R033",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Edible yield is needed to compare purchased and usable food cost."
+  },
+  {
+    "reviewId": "R034",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Only this option directly explains the likely misunderstood technical term with an example."
+  },
+  {
+    "reviewId": "R035",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Rescheduling a reservation is the small direct remedy; the others are disproportionate structural changes."
+  },
+  {
+    "reviewId": "R036",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Carryover cooking is a familiar explanation for temperature rising after heat removal."
+  },
+  {
+    "reviewId": "R037",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Event portions versus additional labor separates added event work from routine resident meals."
+  },
+  {
+    "reviewId": "R038",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Forecast lunches require the missing attendance data; 108 is tentative."
+  },
+  {
+    "reviewId": "R039",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Each assessment could fit a different concern; container use is a tentative scenario guess."
+  },
+  {
+    "reviewId": "R040",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "The percentage requires a numerator and denominator; 25% is tentative."
+  },
+  {
+    "reviewId": "R041",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Fifty employees within 75 miles is a familiar FMLA eligibility threshold, making 55 plausible."
+  },
+  {
+    "reviewId": "R042",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Explicit activation authority and backups is the most complete organizational safeguard."
+  },
+  {
+    "reviewId": "R043",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Edible-pound comparison needs prices and yields; equality at $4 is tentative."
+  },
+  {
+    "reviewId": "R044",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Weight category requires BMI or height and weight; overweight is tentative."
+  },
+  {
+    "reviewId": "R045",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Post-offer medical examinations must be consistently required within the same job category."
+  },
+  {
+    "reviewId": "R046",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "A 200-ounce batch divided into fifty servings implies a four-ounce portion, an inferred scenario from the options."
+  },
+  {
+    "reviewId": "R047",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Energy arithmetic requires macronutrient amounts; 370 kcal is tentative."
+  },
+  {
+    "reviewId": "R048",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Eighteen months is the familiar standard COBRA continuation period after termination."
+  },
+  {
+    "reviewId": "R049",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Calcium and vitamin D are a familiar pair when dairy avoidance or bone health is discussed."
+  },
+  {
+    "reviewId": "R050",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Shift-specific rates require counts and denominators; evening 30% is tentative."
+  },
+  {
+    "reviewId": "R051",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Rebalancing competing work addresses a systems cause rather than repeatedly blaming training or equipment."
+  },
+  {
+    "reviewId": "R052",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "A recipe conversion factor requires original and desired yields; 2.5 is tentative."
+  },
+  {
+    "reviewId": "R053",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "A sequence of times cannot be evaluated without scheduling constraints; D is tentative."
+  },
+  {
+    "reviewId": "R054",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Financial totals require the missing inputs; $900 is tentative."
+  },
+  {
+    "reviewId": "R055",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Unit cost needs quantity and total price; $3.60 is tentative."
+  },
+  {
+    "reviewId": "R056",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Meals per labor hour requires the meal count and hours; eight is tentative."
+  },
+  {
+    "reviewId": "R057",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Thirty- and 180-day comparisons are familiar significant-weight-loss assessment periods."
+  },
+  {
+    "reviewId": "R058",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Portion forecast needs demand data; 45 is tentative."
+  },
+  {
+    "reviewId": "R059",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "165\u00b0F is a familiar reheating temperature, though the missing process could change the answer."
+  },
+  {
+    "reviewId": "R060",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Regular and modified meal counts require the absent census; 65 and 35 is tentative."
+  },
+  {
+    "reviewId": "R061",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Hazard analysis is the first HACCP principle and likely requested among these stages."
+  },
+  {
+    "reviewId": "R062",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Anonymous case letters have no informative content; case Y is an ungrounded tie-break."
+  },
+  {
+    "reviewId": "R063",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Overportioning commonly explains servings running short despite sufficient batch yield."
+  },
+  {
+    "reviewId": "R064",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Cycle count requires capacity and workload; two is tentative."
+  },
+  {
+    "reviewId": "R065",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Purchased weight requires yield and edible quantity; 30 lb is tentative."
+  },
+  {
+    "reviewId": "R066",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Intake volume needs the offered volume and fraction consumed; 120 mL is tentative."
+  },
+  {
+    "reviewId": "R067",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "An error percentage accounts for service volume and measures tray accuracy."
+  },
+  {
+    "reviewId": "R068",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Drained weight measures the usable solid product in canned foods."
+  },
+  {
+    "reviewId": "R069",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Payback years require investment and annual savings; four is tentative."
+  },
+  {
+    "reviewId": "R070",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Spacing pans allows cooling airflow, a familiar corrective cooling practice."
+  },
+  {
+    "reviewId": "R071",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Reorder quantity needs stock and demand values; 40 is tentative."
+  },
+  {
+    "reviewId": "R072",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Temperature loss requires route readings; route B loses 20\u00b0F is tentative."
+  },
+  {
+    "reviewId": "R073",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "A deadline requires a starting time and applicable rule; 2 p.m. is tentative."
+  },
+  {
+    "reviewId": "R074",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Cost per needed unit is more meaningful than purchased-unit price when excess product is unusable; offer A at $2 then beats $2.70."
+  },
+  {
+    "reviewId": "R075",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Comparable productivity denominators depend on which hours were omitted; adding dishroom hours is tentative."
+  },
+  {
+    "reviewId": "R076",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Twelve workweeks is the familiar ordinary FMLA leave entitlement."
+  },
+  {
+    "reviewId": "R077",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Selling-price arithmetic requires cost and target percentage; $8 is tentative."
+  },
+  {
+    "reviewId": "R078",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "A critical limit defines the measurable safety boundary in HACCP."
+  },
+  {
+    "reviewId": "R079",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "This cautious status avoids claiming approval or completion before verification."
+  },
+  {
+    "reviewId": "R080",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Hours actually worked is the familiar basis for overtime eligibility calculations."
+  },
+  {
+    "reviewId": "R081",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Repair-versus-replacement requires lifecycle costs; repair saves $3000 is tentative."
+  },
+  {
+    "reviewId": "R082",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "A weekday cannot be selected from scheduling context that is absent; Wednesday is tentative."
+  },
+  {
+    "reviewId": "R083",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "A refrigerator replacement is a capital purchase rather than routine maintenance."
+  },
+  {
+    "reviewId": "R084",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Performance against a target requires the actual results; target met is tentative."
+  },
+  {
+    "reviewId": "R085",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Work completion time needs duration and start; 10:30 is tentative."
+  },
+  {
+    "reviewId": "R086",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Ready-to-depart waiting separates dispatch delay from actual travel."
+  },
+  {
+    "reviewId": "R087",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Ingredient lists disclose ingredients relevant to allergen and dietary checks."
+  },
+  {
+    "reviewId": "R088",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Instantaneous 165\u00b0F is the familiar poultry cooking standard."
+  },
+  {
+    "reviewId": "R089",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Checking finished food before service permits correction before diners receive it."
+  },
+  {
+    "reviewId": "R090",
+    "guess": "A",
+    "cueType": "surface",
+    "cue": "Checking how today's entry was produced verifies data quality before interpreting it."
+  },
+  {
+    "reviewId": "R091",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Emulsification is the familiar mechanism for combining immiscible liquids."
+  },
+  {
+    "reviewId": "R092",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Frequency thresholds need the missing policy or scenario; one occurrence is tentative."
+  },
+  {
+    "reviewId": "R093",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Remaining labor requires capacity and assigned work; two cook-hours is tentative."
+  },
+  {
+    "reviewId": "R094",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Norovirus is a common foodborne illness in institutional foodservice."
+  },
+  {
+    "reviewId": "R095",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Arrival times and staffing needs directly support coordinating simultaneous service events."
+  },
+  {
+    "reviewId": "R096",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "A date cannot be derived without receiving or preparation dates; May 10 is tentative."
+  },
+  {
+    "reviewId": "R097",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Equal portion weights permit meaningful nutrition-label comparisons."
+  },
+  {
+    "reviewId": "R098",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Count and weight changes require observed data; fixed count with heavier units is tentative."
+  },
+  {
+    "reviewId": "R099",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Restricting duties is a familiar response to some food-handler symptoms that do not always require exclusion."
+  },
+  {
+    "reviewId": "R100",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Chemical sanitizer concentration is measured using a suitable kit or strips."
+  },
+  {
+    "reviewId": "R101",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Budgeted and actual hours and rates provides the most complete data for explaining labor variance."
+  },
+  {
+    "reviewId": "R102",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "These are distinct diet or feeding classifications; mechanically altered is tentative without the definition."
+  },
+  {
+    "reviewId": "R103",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Plain corn starch is a familiar gluten-free thickener among these choices."
+  },
+  {
+    "reviewId": "R104",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "FMLA restoration allows an equivalent job with equivalent benefits."
+  },
+  {
+    "reviewId": "R105",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "One inch is the familiar minimum air-gap measurement, subject to pipe diameter."
+  },
+  {
+    "reviewId": "R106",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Sesame is a major food allergen irrespective of whole or heated form; the alternatives contain implausible exclusions."
+  },
+  {
+    "reviewId": "R107",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Pack shortage needs required quantity and inventory; one short is tentative."
+  },
+  {
+    "reviewId": "R108",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Participation in care planning is a fundamental resident right and likely the subject here."
+  },
+  {
+    "reviewId": "R109",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Finished batch weight verifies actual recipe yield."
+  },
+  {
+    "reviewId": "R110",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "An error-rate change requires before-and-after numerators and denominators; 5% to 3% is tentative."
+  },
+  {
+    "reviewId": "R111",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Six hours is the familiar total cooling window."
+  },
+  {
+    "reviewId": "R112",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Date marking needs the initial preparation day; Sunday is tentative."
+  },
+  {
+    "reviewId": "R113",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Fluid totals require consumed items and amounts; 1050 mL is tentative."
+  },
+  {
+    "reviewId": "R114",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Protein or other nutrient amount needs the source calculation; 14 g is tentative."
+  },
+  {
+    "reviewId": "R115",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "A score or total cannot be calculated from options alone; 82 is tentative."
+  },
+  {
+    "reviewId": "R116",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Production portions require the missing forecast; 120 is tentative."
+  },
+  {
+    "reviewId": "R117",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Half a cup at 30 g per cup supplies the familiar 15 g carbohydrate exchange."
+  },
+  {
+    "reviewId": "R118",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "FIFO often favors the earlier received case, making Monday plausible, though expiration dates could supersede it."
+  },
+  {
+    "reviewId": "R119",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Demonstrating measurement with the device verifies a practical skill."
+  },
+  {
+    "reviewId": "R120",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Explicitly confirming the change with the affected team and updating its roster closes the communication loop."
+  },
+  {
+    "reviewId": "R121",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Time per unit requires total time and units; 7.5 minutes is tentative."
+  },
+  {
+    "reviewId": "R122",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Anonymous dish names convey no information; dish D is an ungrounded tie-break."
+  },
+  {
+    "reviewId": "R123",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Any listed stage could be relevant; transport and service is tentative."
+  },
+  {
+    "reviewId": "R124",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "A capable resident retains decision-making authority over personal care choices."
+  },
+  {
+    "reviewId": "R125",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Cook-hours require worker counts and duration; four is tentative."
+  },
+  {
+    "reviewId": "R126",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Replacing butter with canola oil reduces saturated fat using a broadly suitable cooking oil."
+  },
+  {
+    "reviewId": "R127",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Per-portion cost needs cost and yield; $1.50 is tentative."
+  },
+  {
+    "reviewId": "R128",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Allergen cross-contact is the technical term for unintended allergen transfer."
+  },
+  {
+    "reviewId": "R129",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Dietitian and speech therapist are the familiar partnership for swallowing and nutrition concerns."
+  },
+  {
+    "reviewId": "R130",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Observation during ordinary work assesses transfer of training to practice."
+  },
+  {
+    "reviewId": "R131",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Hazard classification needs the specific contaminant; physical hazard is tentative."
+  },
+  {
+    "reviewId": "R132",
+    "guess": "B",
+    "cueType": "surface",
+    "cue": "The qualified statement about stated outcomes avoids unsupported extra conclusions."
+  },
+  {
+    "reviewId": "R133",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Auditing completed records is HACCP verification rather than planning or monitoring setup."
+  },
+  {
+    "reviewId": "R134",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Moving from raw meat to ready-to-eat food creates a clear cross-contamination risk."
+  },
+  {
+    "reviewId": "R135",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Potassium is a familiar nutrient restricted in some renal scenarios, though the stem is essential."
+  },
+  {
+    "reviewId": "R136",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Moving from lower-temperature intact beef to higher-temperature poultry follows increasing cooking requirements."
+  },
+  {
+    "reviewId": "R137",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Gelatinization is the familiar starch-thickening process."
+  },
+  {
+    "reviewId": "R138",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "A production start time needs service time and task durations; 8 a.m. is tentative."
+  },
+  {
+    "reviewId": "R139",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Rice with olive oil avoids both gluten and dairy, unlike the alternatives."
+  },
+  {
+    "reviewId": "R140",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Twenty seconds is the familiar total handwashing duration; 10\u201315 seconds may describe rubbing specifically."
+  },
+  {
+    "reviewId": "R141",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Unit food cost requires missing quantities and costs; $2.20 is tentative."
+  },
+  {
+    "reviewId": "R142",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Cost changes require missing totals and volume; rise to $6 is tentative."
+  },
+  {
+    "reviewId": "R143",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Running-water thawing has a familiar 70\u00b0F water limit; this looks like a thawing question."
+  },
+  {
+    "reviewId": "R144",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "FTEs need total hours and the standard workweek; three is tentative."
+  },
+  {
+    "reviewId": "R145",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Yield percentage requires starting and final weights; 80% is tentative."
+  },
+  {
+    "reviewId": "R146",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Plan verification evaluates whether the HACCP system works rather than immediate correction."
+  },
+  {
+    "reviewId": "R147",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Chopped filling can use cosmetically imperfect fruit, suggesting a value-purchasing question."
+  },
+  {
+    "reviewId": "R148",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "165\u00b0F for 15 seconds is the familiar reheating requirement."
+  },
+  {
+    "reviewId": "R149",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Texture and color constraints are absent; smooth spinach puree is tentative."
+  },
+  {
+    "reviewId": "R150",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Before-and-after meal intake assesses whether an intervention improves eating."
+  },
+  {
+    "reviewId": "R151",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Hazard classification requires the described exposure; chemical contamination is tentative."
+  },
+  {
+    "reviewId": "R152",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Separate serving utensils prevent allergen transfer during service."
+  },
+  {
+    "reviewId": "R153",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Speed and accuracy trends require observed data; both improved is tentative."
+  },
+  {
+    "reviewId": "R154",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Verified site and utility requirements is the prudent concrete prerequisite before purchase ranking or approval."
+  },
+  {
+    "reviewId": "R155",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "A clock deadline requires the starting time; 1 p.m. is tentative."
+  },
+  {
+    "reviewId": "R156",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Production timing requires quantities and rate; ten minutes is tentative."
+  },
+  {
+    "reviewId": "R157",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Reduced water excretion explains fluid retention and the need for restriction."
+  },
+  {
+    "reviewId": "R158",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "A ten-pound loss from 150 lb exceeds the familiar 5% one-month threshold; the other losses do not."
+  },
+  {
+    "reviewId": "R159",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Package integrity is the immediate food-safety receiving concern among commercial checks."
+  },
+  {
+    "reviewId": "R160",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Financial difference requires missing amounts; $300 is tentative."
+  },
+  {
+    "reviewId": "R161",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Sodium phosphate is a familiar additive relevant to phosphorus restriction."
+  },
+  {
+    "reviewId": "R162",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Shift redistribution requires time-specific staffing demand; moving to 6\u201310 is tentative."
+  },
+  {
+    "reviewId": "R163",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "The defect or operational problem is absent; revising the service-day schedule is tentative."
+  },
+  {
+    "reviewId": "R164",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Four hours is a familiar discard limit when using time as a public-health control."
+  },
+  {
+    "reviewId": "R165",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Aged cheese contains comparatively little lactose versus the listed milk products."
+  },
+  {
+    "reviewId": "R166",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Sodium and fiber classification requires label amounts; low sodium and high fiber is tentative."
+  },
+  {
+    "reviewId": "R167",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "A deadline day requires dates and the applicable interval; Thursday is tentative."
+  },
+  {
+    "reviewId": "R168",
+    "guess": "C",
+    "cueType": "surface",
+    "cue": "Only this activity directly practices the intellectual task of calculating and recording correct dates."
+  },
+  {
+    "reviewId": "R169",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Military service notice may be verbal or written; the other choices impose implausible exclusive formats."
+  },
+  {
+    "reviewId": "R170",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Speech-language pathologists assess swallowing function."
+  },
+  {
+    "reviewId": "R171",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Protein coagulation explains setting of egg-based foods."
+  },
+  {
+    "reviewId": "R172",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Beverage ice contacts food directly and must use potable water."
+  },
+  {
+    "reviewId": "R173",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Five percent is a familiar one-month significant weight-loss threshold, though this could be arithmetic."
+  },
+  {
+    "reviewId": "R174",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Nine grams protein with 180 mg sodium offers more protein without the highest sodium, suggesting dual nutrient criteria."
+  },
+  {
+    "reviewId": "R175",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Calorie requirements need weight and energy factor; 1800 kcal is tentative."
+  },
+  {
+    "reviewId": "R176",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "The current clinical order is the authoritative instruction against which kitchen documents are checked."
+  },
+  {
+    "reviewId": "R177",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Cash overage or shortage requires receipts and counted funds; $10 short is tentative."
+  },
+  {
+    "reviewId": "R178",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Resident sensory comparison directly tests acceptance by the intended diners."
+  },
+  {
+    "reviewId": "R179",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Refrigeration thermometers should reflect the warmest cabinet area."
+  },
+  {
+    "reviewId": "R180",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "A personnel percentage needs the missing counts; 25% is tentative."
+  },
+  {
+    "reviewId": "R181",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "The operational conflict is not provided; concurrent equipment demand is tentative."
+  },
+  {
+    "reviewId": "R182",
+    "guess": "D",
+    "cueType": "none",
+    "cue": "Worker count requires workload and productive capacity; four is tentative."
+  },
+  {
+    "reviewId": "R183",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "FTE count requires labor hours; eight is tentative."
+  },
+  {
+    "reviewId": "R184",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Pan placement can explain uneven baking and is an actionable process correction."
+  },
+  {
+    "reviewId": "R185",
+    "guess": "D",
+    "cueType": "surface",
+    "cue": "Isolating affected food immediately contains the hazard before repairs or paperwork."
+  },
+  {
+    "reviewId": "R186",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Six hours is the familiar maximum total two-stage cooling interval."
+  },
+  {
+    "reviewId": "R187",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Blinded comparison by actual residents combines controlled tasting with the target population."
+  },
+  {
+    "reviewId": "R188",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "BMI requires height and weight; 28.1 is tentative, with extreme values looking less plausible."
+  },
+  {
+    "reviewId": "R189",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "SDS section 8 addresses exposure controls and protective equipment, a common lookup need."
+  },
+  {
+    "reviewId": "R190",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "A point-of-use checklist supports consistent completion of multistep tasks after training."
+  },
+  {
+    "reviewId": "R191",
+    "guess": "B",
+    "cueType": "none",
+    "cue": "Menu price needs the missing cost and margin; $7 is tentative."
+  },
+  {
+    "reviewId": "R192",
+    "guess": "A",
+    "cueType": "knowledge",
+    "cue": "Fifteen grams is the familiar carbohydrate-choice amount."
+  },
+  {
+    "reviewId": "R193",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Texture at service can change during holding even when the recipe and portions remain constant."
+  },
+  {
+    "reviewId": "R194",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Intake volume requires the source amounts and consumed fraction; 180 mL is tentative."
+  },
+  {
+    "reviewId": "R195",
+    "guess": "B",
+    "cueType": "knowledge",
+    "cue": "Instantaneous 165\u00b0F is the familiar poultry endpoint; reheating would instead require a holding time."
+  },
+  {
+    "reviewId": "R196",
+    "guess": "D",
+    "cueType": "knowledge",
+    "cue": "Serving temperature is a sensory-testing variable that should be controlled across samples."
+  },
+  {
+    "reviewId": "R197",
+    "guess": "A",
+    "cueType": "none",
+    "cue": "Purchased or edible weight requires yield arithmetic inputs; 22.5 lb is tentative."
+  },
+  {
+    "reviewId": "R198",
+    "guess": "C",
+    "cueType": "none",
+    "cue": "Financial total requires the underlying amounts; $8500 is tentative."
+  },
+  {
+    "reviewId": "R199",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "Additional heating is a corrective action, unlike observation or later record review."
+  },
+  {
+    "reviewId": "R200",
+    "guess": "C",
+    "cueType": "knowledge",
+    "cue": "41\u00b0F is the familiar cold-holding limit."
+  }
+]

@@ -1,0 +1,1162 @@
+[
+  {
+    "questionId": "CDM-NUT-001",
+    "answer": "A",
+    "rationale": "Observe eating behavior to resolve conflict between self-report and returned food (Nutrition 2).",
+    "issue": "Distractor review: Direct observation is more credible than copying reports or changing orders."
+  },
+  {
+    "questionId": "CDM-NUT-002",
+    "answer": "B",
+    "rationale": "Dietitian and pharmacist assess food-drug interactions (Nutrition 1 section 1.2).",
+    "issue": "Distractor review: Dietitian plus speech therapist is the most feeding-focused pair; weak topical cue."
+  },
+  {
+    "questionId": "CDM-NUT-003",
+    "answer": "C",
+    "rationale": "A measured 25% entree intake is specific follow-up evidence (Nutrition 1/3).",
+    "issue": "Distractor review: Only specific measurable consumption observation."
+  },
+  {
+    "questionId": "CDM-NUT-004",
+    "answer": "D",
+    "rationale": "Delivery is not ingestion; measure actual supplement intake (Nutrition 4).",
+    "issue": "Distractor review: Actual consumption is the outcome rather than purchasing or label information."
+  },
+  {
+    "questionId": "CDM-NUT-005",
+    "answer": "A",
+    "rationale": "An approved equivalent respects culture while meeting the prescription (Nutrition 4).",
+    "issue": "Distractor review: Approved equivalent is moderate and appropriate; others rigid or overreaching."
+  },
+  {
+    "questionId": "CDM-NUT-006",
+    "answer": "B",
+    "rationale": "A 24-hour recall describes yesterday; food frequency describes usual patterns (Nutrition 2).",
+    "issue": "Distractor review: Specific dietary assessment tool; A also plausible without stem."
+  },
+  {
+    "questionId": "CDM-NUT-007",
+    "answer": "C",
+    "rationale": "A caregiver assisting with meals has direct relevant historical information (Nutrition 2).",
+    "issue": "Distractor review: Only informant regularly observing meals."
+  },
+  {
+    "questionId": "CDM-NUT-008",
+    "answer": "D",
+    "rationale": "(160-152)/160*100=5% of previous weight lost."
+  },
+  {
+    "questionId": "CDM-NUT-009",
+    "answer": "A",
+    "rationale": "Document how foodservice implements and allocates the fluid restriction (Nutrition 1 section 2.1).",
+    "issue": "Distractor review: Only comprehensive individualized option; others say alone, only, or all clients."
+  },
+  {
+    "questionId": "CDM-NUT-010",
+    "answer": "B",
+    "rationale": "600*0.5=300 kcal; equal fractional consumption of every component permits this calculation."
+  },
+  {
+    "questionId": "CDM-NUT-011",
+    "answer": "C",
+    "rationale": "Swallowing assessment requires speech-language expertise within the interdisciplinary team.",
+    "issue": "Distractor review: Only clinician with obvious swallowing specialty; topical cue."
+  },
+  {
+    "questionId": "CDM-NUT-012",
+    "answer": "D",
+    "rationale": "Update service instructions to the verified current diet order (Nutrition 4).",
+    "issue": "Distractor review: Only constructive current action; others delay or retain conflicts."
+  },
+  {
+    "questionId": "CDM-NUT-013",
+    "answer": "A",
+    "rationale": "Confirm the resident's individual choices rather than infer all restrictions from a group (Nutrition 2).",
+    "issue": "Distractor review: Respectful individual confirmation versus sweeping exclusions."
+  },
+  {
+    "questionId": "CDM-NUT-014",
+    "answer": "B",
+    "rationale": "75% of lunch for 7 days is measurable and time-bound (Nutrition 3).",
+    "issue": "Distractor review: Only measurable time-bound goal; others vague or judgmental."
+  },
+  {
+    "questionId": "CDM-NUT-015",
+    "answer": "C",
+    "rationale": "A new wound flags screening risk and RDN follow-up, not CDM prescribing (Nutrition 1).",
+    "issue": "Distractor review: Only referral within support role; other actions prescribe or diagnose."
+  },
+  {
+    "questionId": "CDM-NUT-016",
+    "answer": "D",
+    "rationale": "A food-frequency questionnaire measures usual frequency over a specified period (Nutrition 2).",
+    "issue": "Distractor review: Only tool for recurring dietary patterns; other records narrow or irrelevant."
+  },
+  {
+    "questionId": "CDM-NUT-017",
+    "answer": "A",
+    "rationale": "Ingredient changes can change nutrient composition, so verify revised values (Nutrition 4).",
+    "issue": "Distractor review: Revised values signal relevant current information versus original or unchanged data."
+  },
+  {
+    "questionId": "CDM-NUT-018",
+    "answer": "B",
+    "rationale": "An open-ended neutral preference question gathers information without leading (Nutrition 2).",
+    "issue": "Distractor review: Only open-ended respectful question; others leading or accusatory."
+  },
+  {
+    "questionId": "CDM-NUT-019",
+    "answer": "C",
+    "rationale": "Evaluate progress against agreed client-centered goals (Nutrition 3).",
+    "issue": "Distractor review: Only outcome-focused evaluation linked to agreed goals."
+  },
+  {
+    "questionId": "CDM-NUT-020",
+    "answer": "D",
+    "rationale": "240*0.25=60 mL consumed."
+  },
+  {
+    "questionId": "CDM-NUT-021",
+    "answer": "A",
+    "rationale": "Review records, intake and care-plan progress before contributing to the conference (Nutrition 3).",
+    "issue": "Distractor review: Only reasonable review action; others sweeping clinical overreach."
+  },
+  {
+    "questionId": "CDM-NUT-022",
+    "answer": "B",
+    "rationale": "Explore acceptable alternatives while respecting refusal and the prescription (Nutrition 4).",
+    "issue": "Distractor review: Only collaborative response; others punitive or diagnostic."
+  },
+  {
+    "questionId": "CDM-NUT-023",
+    "answer": "C",
+    "rationale": "Verify the unexpected weight before acting on an implausible abrupt trend (Nutrition 1).",
+    "issue": "Distractor review: Only verifies evidence; others delete or permanently accept suspicious data."
+  },
+  {
+    "questionId": "CDM-NUT-024",
+    "answer": "D",
+    "rationale": "Review a suitable replacement with the team to preserve prescription and acceptance (Nutrition 4).",
+    "issue": "Distractor review: Only collaborative suitable review; others arbitrary or harmful."
+  },
+  {
+    "questionId": "CDM-NUT-025",
+    "answer": "A",
+    "rationale": "Current tray card implements the individual order and the diet manual interprets requirements (Nutrition 3/4).",
+    "issue": "Tray cards can themselves be stale (see NUT012); explicitly compare the current verified order with tray card and manual, rather than treating the tray card alone as authority. Distractor review: Only pair directly governing individual diet service."
+  },
+  {
+    "questionId": "CDM-NUT-026",
+    "answer": "B",
+    "rationale": "30*(2/3)=20 g consumed."
+  },
+  {
+    "questionId": "CDM-NUT-027",
+    "answer": "C",
+    "rationale": "Adapt communication to the client's pace and nonverbal cues (Nutrition 2).",
+    "issue": "Distractor review: Only accommodating respectful communication option."
+  },
+  {
+    "questionId": "CDM-NUT-028",
+    "answer": "D",
+    "rationale": "Discuss identifiable care issues in a private authorized care-team setting (Nutrition 2).",
+    "issue": "Distractor review: Only private setting among three explicitly public settings."
+  },
+  {
+    "questionId": "CDM-NUT-029",
+    "answer": "A",
+    "rationale": "Acceptance and measured progress show whether fortification benefits this resident (Nutrition 3/4).",
+    "issue": "Distractor review: Comprehensive measurable outcome versus popularity or content alone."
+  },
+  {
+    "questionId": "CDM-NUT-030",
+    "answer": "B",
+    "rationale": "Include drinks consumed between meals in observed oral fluid intake (Nutrition 1).",
+    "issue": "Fluid question but answer says all observed oral intake, which can imply food mass; change to all oral fluids consumed, including between-meal drinks, with facility counting rules. Distractor review: Only comprehensive observed intake; others exclude data or replace measurements."
+  },
+  {
+    "questionId": "CDM-NUT-031",
+    "answer": "C",
+    "rationale": "Document agreed actions, timing and responsibility and follow up (Nutrition 3).",
+    "issue": "Distractor review: Only useful documented follow-up versus memory, waiting, or irrelevant detail."
+  },
+  {
+    "questionId": "CDM-NUT-032",
+    "answer": "D",
+    "rationale": "Clinical approval does not establish local availability; verify supply before promising (Nutrition 4 implementation).",
+    "issue": "Distractor review: Only current practical availability criterion; others historical or personal."
+  },
+  {
+    "questionId": "CDM-NUT-033",
+    "answer": "A",
+    "rationale": "(1500+1800+1500)/3=1600 kcal/day."
+  },
+  {
+    "questionId": "CDM-NUT-034",
+    "answer": "B",
+    "rationale": "Explain the prescribed restriction in understandable language as basic nutrition education (Nutrition 4).",
+    "issue": "Distractor review: Only plain-language educational response; others disclose, prescribe, or promise."
+  },
+  {
+    "questionId": "CDM-NUT-035",
+    "answer": "C",
+    "rationale": "New eating difficulty is relevant to nutritional risk (Nutrition 1).",
+    "issue": "Distractor review: Only clinically relevant change among trivial preferences."
+  },
+  {
+    "questionId": "CDM-NUT-036",
+    "answer": "D",
+    "rationale": "Correct energy does not compensate for a texture inconsistent with the prescription (Nutrition 4).",
+    "issue": "Distractor review: Only prescribed-plan criterion; others narrow or arbitrary passing rules."
+  },
+  {
+    "questionId": "CDM-NUT-037",
+    "answer": "A",
+    "rationale": "Assess current knowledge and individual needs to identify useful education gaps (Nutrition 1).",
+    "issue": "Distractor review: Only comprehensive individualized assessment; others omit knowledge or generalize."
+  },
+  {
+    "questionId": "CDM-NUT-038",
+    "answer": "B",
+    "rationale": "Arrange clinical review of continued diet suitability when condition changes (Nutrition 4).",
+    "issue": "Distractor review: Only clinical review versus automatic changes or independent diagnosis."
+  },
+  {
+    "questionId": "CDM-NUT-039",
+    "answer": "C",
+    "rationale": "Do not chart an unsupported assumed complete intake; document substantiated information (Nutrition 3).",
+    "issue": "Never observed by whom? Valid intake evidence can come from documented staff observation or attributed reliable report. Specify no one measured or reliably reported it and avoid implying all nutrition data require personal observation. Distractor review: Only evidence-based documentation; others fabricate or substitute diagnosis."
+  },
+  {
+    "questionId": "CDM-NUT-040",
+    "answer": "D",
+    "rationale": "Update preferences with the resident after a change in circumstances (Nutrition 2/4).",
+    "issue": "Distractor review: Only current collaborative update; others stale or generalized."
+  },
+  {
+    "questionId": "CDM-FOO-001",
+    "answer": "A",
+    "rationale": "Check adherence to the standardized recipe when cooks produce inconsistent yields (Foodservice 1).",
+    "issue": "Distractor review: Standardization sounds quality-focused; alternatives also plausible without stem."
+  },
+  {
+    "questionId": "CDM-FOO-002",
+    "answer": "B",
+    "rationale": "100/40=2.5 times each ingredient."
+  },
+  {
+    "questionId": "CDM-FOO-003",
+    "answer": "C",
+    "rationale": "Acceptance and plate waste measure the failure to consume a nutritionally compliant entree (Foodservice 3).",
+    "issue": "Distractor review: Only acceptance-oriented outcome study; others administrative."
+  },
+  {
+    "questionId": "CDM-FOO-004",
+    "answer": "D",
+    "rationale": "The schedule must account for conflicting equipment availability and temperatures (Foodservice 2).",
+    "issue": "Distractor review: Only resource scheduling dimension; weak cue without stem."
+  },
+  {
+    "questionId": "CDM-FOO-005",
+    "answer": "A",
+    "rationale": "A therapeutic substitution must maintain nutrient and diet compatibility (Foodservice 2).",
+    "issue": "Distractor review: Only nutrition and suitability criterion; others superficial equivalence."
+  },
+  {
+    "questionId": "CDM-FOO-006",
+    "answer": "B",
+    "rationale": "72/48=$1.50 per serving."
+  },
+  {
+    "questionId": "CDM-FOO-007",
+    "answer": "C",
+    "rationale": "Size, grade, pack and intended use define comparable product specifications (Foodservice 2).",
+    "issue": "Distractor review: Most complete specification with four relevant dimensions."
+  },
+  {
+    "questionId": "CDM-FOO-008",
+    "answer": "D",
+    "rationale": "Test and adapt recipes under facility equipment and production conditions (Foodservice 1).",
+    "issue": "Distractor review: Only local validation; others accept claims or simplistic scaling."
+  },
+  {
+    "questionId": "CDM-FOO-009",
+    "answer": "A",
+    "rationale": "(60-9)/60*100=85% accurate trays."
+  },
+  {
+    "questionId": "CDM-FOO-010",
+    "answer": "B",
+    "rationale": "Advance thawing belongs in the production schedule (Foodservice 2).",
+    "issue": "Distractor review: Broad central operational planning document; weak cue."
+  },
+  {
+    "questionId": "CDM-FOO-011",
+    "answer": "C",
+    "rationale": "Update demand forecasts using census changes before production (Foodservice 2).",
+    "issue": "Distractor review: Only option explicitly uses updated current demand."
+  },
+  {
+    "questionId": "CDM-FOO-012",
+    "answer": "D",
+    "rationale": "12*32/6=64 portions."
+  },
+  {
+    "questionId": "CDM-FOO-013",
+    "answer": "A",
+    "rationale": "A structured taste panel directly evaluates sensory acceptance (Foodservice 3).",
+    "issue": "For diner acceptance, specify a resident taste panel; a staff-only development panel is not necessarily evidence that residents like the sauce. Distractor review: Structured evaluation language; other tools also plausible without stem."
+  },
+  {
+    "questionId": "CDM-FOO-014",
+    "answer": "B",
+    "rationale": "A specified portioning utensil directly standardizes portion volume (Foodservice 1/2).",
+    "issue": "Distractor review: Specific practical control versus changing counts or speed."
+  },
+  {
+    "questionId": "CDM-FOO-015",
+    "answer": "C",
+    "rationale": "Temperature at delivery is a meal-service condition, despite correct diet selection (Foodservice 2/3)."
+  },
+  {
+    "questionId": "CDM-FOO-016",
+    "answer": "D",
+    "rationale": "18/0.75=24 lb as purchased."
+  },
+  {
+    "questionId": "CDM-FOO-017",
+    "answer": "A",
+    "rationale": "A defined measure and target allow evaluation against an objective standard (Foodservice 3).",
+    "issue": "Distractor review: Only measurable target; others vague, easy, or impossible zero-error promise."
+  },
+  {
+    "questionId": "CDM-FOO-018",
+    "answer": "B",
+    "rationale": "Analyze post-change findings and revise the process when delays persist (Foodservice 3).",
+    "issue": "Distractor review: Only evidence-based adjustment; others claim success or change goals prematurely."
+  },
+  {
+    "questionId": "CDM-FOO-019",
+    "answer": "C",
+    "rationale": "Known individual preferences support suitable meals when residents cannot use selection forms (Foodservice 1).",
+    "issue": "Distractor review: Only individualized preference choice versus defaults or cheapest."
+  },
+  {
+    "questionId": "CDM-FOO-020",
+    "answer": "D",
+    "rationale": "96*5/16=30 lb cooked product."
+  },
+  {
+    "questionId": "CDM-FOO-021",
+    "answer": "A",
+    "rationale": "A reason-coded waste log distinguishes preparation waste from plate waste (Foodservice 2).",
+    "issue": "Distractor review: Reason codes imply actionable detail; competitors aggregate or omit comments."
+  },
+  {
+    "questionId": "CDM-FOO-022",
+    "answer": "B",
+    "rationale": "On-time production but late arrival points to dispatch and delivery workflow (Foodservice 2).",
+    "issue": "Distractor review: Only workflow-level option; weak cue without stem."
+  },
+  {
+    "questionId": "CDM-FOO-023",
+    "answer": "C",
+    "rationale": "50*4/5=40 full portions."
+  },
+  {
+    "questionId": "CDM-FOO-024",
+    "answer": "D",
+    "rationale": "Evaluate accuracy against the individual prescribed diet (Foodservice 1).",
+    "issue": "Distractor review: Only individualized instructions; others generic, previous, or popular."
+  },
+  {
+    "questionId": "CDM-FOO-025",
+    "answer": "A",
+    "rationale": "Specified equipment and technique reproduce taste, appearance and yield (Foodservice 1).",
+    "issue": "Distractor review: Purpose-based quality language versus unrelated counting or receipt tasks."
+  },
+  {
+    "questionId": "CDM-FOO-026",
+    "answer": "B",
+    "rationale": "Feedback from those served assesses their actual cultural preferences (Foodservice 1).",
+    "issue": "Distractor review: Only direct resident feedback; others proxy counts."
+  },
+  {
+    "questionId": "CDM-FOO-027",
+    "answer": "C",
+    "rationale": "With portioning verified, investigate demand estimates and actual batch yield (Foodservice 2).",
+    "issue": "Distractor review: Two complementary quantity-planning factors; other options less comprehensive."
+  },
+  {
+    "questionId": "CDM-FOO-028",
+    "answer": "D",
+    "rationale": "3*40/24=5 cups."
+  },
+  {
+    "questionId": "CDM-FOO-029",
+    "answer": "A",
+    "rationale": "Arrival time and product temperature directly measure timely quality delivery (Foodservice 2/3).",
+    "issue": "Distractor review: Only direct service outcomes; others activity or resource counts."
+  },
+  {
+    "questionId": "CDM-FOO-030",
+    "answer": "B",
+    "rationale": "Reconcile the obsolete production quantity with updated demand before preparation (Foodservice 2).",
+    "issue": "Distractor review: Only reconcile before acting; others arbitrary reductions or unsupported additions."
+  },
+  {
+    "questionId": "CDM-FOO-031",
+    "answer": "C",
+    "rationale": "Changing portion and temperature confounds a comparison of recipe versions (Foodservice 3).",
+    "issue": "Distractor review: Uncontrolled testing is a substantive quality flaw; other adjectives arbitrary."
+  },
+  {
+    "questionId": "CDM-FOO-032",
+    "answer": "D",
+    "rationale": "60/80*100=75% acceptance."
+  },
+  {
+    "questionId": "CDM-FOO-033",
+    "answer": "A",
+    "rationale": "Include prescribed supplements in preparation and delivery records so they are produced and delivered (Foodservice 2).",
+    "issue": "Distractor review: Only accountable recording action; others delay or misstate consumption."
+  },
+  {
+    "questionId": "CDM-FOO-034",
+    "answer": "B",
+    "rationale": "QAPI includes the people doing the work as well as leadership (Foodservice 3).",
+    "issue": "Distractor review: Only inclusive participation; others omit evidence or decide prematurely."
+  },
+  {
+    "questionId": "CDM-FOO-035",
+    "answer": "C",
+    "rationale": "Offer compliant choices so this resident actually has an acceptable selection (Foodservice 1).",
+    "issue": "Distractor review: Explicit compliance cue versus raw counts and regular-menu assumptions."
+  },
+  {
+    "questionId": "CDM-FOO-036",
+    "answer": "D",
+    "rationale": "6*72/48=9 lb."
+  },
+  {
+    "questionId": "CDM-FOO-037",
+    "answer": "A",
+    "rationale": "Test an acceptable alternative when the original vegetable is rejected despite proper preparation (Foodservice 3).",
+    "issue": "Distractor review: Only reasonable trial; others blanket increase or reduced safety standard."
+  },
+  {
+    "questionId": "CDM-FOO-038",
+    "answer": "B",
+    "rationale": "Count-based amounts change in mass when unit size changes; verify weight per unit (Foodservice 1).",
+    "issue": "Distractor review: Actual measurement is more defensible than unrelated counts and old prices."
+  },
+  {
+    "questionId": "CDM-FOO-039",
+    "answer": "C",
+    "rationale": "Compare wrong-diet error frequency with baseline to evaluate the desired outcome (Foodservice 3).",
+    "issue": "Distractor review: Only outcome error rate; others activity counts."
+  },
+  {
+    "questionId": "CDM-FOO-040",
+    "answer": "D",
+    "rationale": "300/80=3.75; ceiling to 4 full batches provides 320 portions."
+  },
+  {
+    "questionId": "CDM-FOO-041",
+    "answer": "A",
+    "rationale": "Approval protects nutritional suitability and recipe consistency (Foodservice 2).",
+    "issue": "Distractor review: Only suitability and consistency; others rigid superficial matches."
+  },
+  {
+    "questionId": "CDM-FOO-042",
+    "answer": "B",
+    "rationale": "Backward scheduling from dispatch accounts for required finishing and cooking times (Foodservice 2).",
+    "issue": "Distractor review: Only deliberate schedule method; others late, excessively early, or copied."
+  },
+  {
+    "questionId": "CDM-FOO-043",
+    "answer": "C",
+    "rationale": "A routed test tray measures actual conditions at the point of service (Foodservice 3).",
+    "issue": "Distractor review: Point-of-service conditions suggest actual outcome; weak cue."
+  },
+  {
+    "questionId": "CDM-FOO-044",
+    "answer": "D",
+    "rationale": "Leftovers and variance reasons help adjust subsequent forecasts (Foodservice 2).",
+    "issue": "Distractor review: Only actual variance evidence; others input quantities."
+  },
+  {
+    "questionId": "CDM-PER-001",
+    "answer": "A",
+    "rationale": "280/40=7 FTEs."
+  },
+  {
+    "questionId": "CDM-PER-002",
+    "answer": "B",
+    "rationale": "A job description defines the duties of the position (Personnel 1).",
+    "issue": "Distractor review: Broad role-defining document versus administrative records; weak cue."
+  },
+  {
+    "questionId": "CDM-PER-003",
+    "answer": "C",
+    "rationale": "A consistent job-related interview guide permits comparable assessment (Personnel 2).",
+    "issue": "Distractor review: Only consistent job-related method; others subjective or arbitrary."
+  },
+  {
+    "questionId": "CDM-PER-004",
+    "answer": "D",
+    "rationale": "Requesting a concrete past example is a behavioral interview question (Personnel 2).",
+    "issue": "Distractor review: Only behavioral open-ended interview prompt."
+  },
+  {
+    "questionId": "CDM-PER-005",
+    "answer": "A",
+    "rationale": "Attendance is not evidence of competence; verify task performance (Personnel 2).",
+    "issue": "Distractor review: Only competence verification; others count attendance or delay."
+  },
+  {
+    "questionId": "CDM-PER-006",
+    "answer": "B",
+    "rationale": "(40+3*20)/40=2.5 FTEs."
+  },
+  {
+    "questionId": "CDM-PER-007",
+    "answer": "C",
+    "rationale": "Staggered coverage aligns labor with the dinner peak (Personnel 1).",
+    "issue": "Distractor review: Only demand-responsive staffing; others indiscriminate or irrelevant."
+  },
+  {
+    "questionId": "CDM-PER-008",
+    "answer": "D",
+    "rationale": "Dated performance observations against the standard provide objective evidence (Personnel 2).",
+    "issue": "Distractor review: Only dated objective evidence; others impressions or unrelated factors."
+  },
+  {
+    "questionId": "CDM-PER-009",
+    "answer": "A",
+    "rationale": "A defined completion time over the next ten shifts is measurable and time-bound (Personnel 2).",
+    "issue": "Distractor review: Only measurable time-bound expectation; notably longer and more specific."
+  },
+  {
+    "questionId": "CDM-PER-010",
+    "answer": "B",
+    "rationale": "Corrective plans require support, resources and training necessary for success (Personnel 2).",
+    "issue": "Distractor review: Only supportive goal-related factor; others unrelated or unrealistic."
+  },
+  {
+    "questionId": "CDM-PER-011",
+    "answer": "C",
+    "rationale": "Assess needs and skills before selecting training topics (Personnel 2).",
+    "issue": "Distractor review: Only actual needs assessment versus convenient or historical topics."
+  },
+  {
+    "questionId": "CDM-PER-012",
+    "answer": "D",
+    "rationale": "Observed return demonstration evaluates operational skill (Personnel 2).",
+    "issue": "Distractor review: Only direct skill demonstration; others attendance or satisfaction proxies."
+  },
+  {
+    "questionId": "CDM-PER-013",
+    "answer": "A",
+    "rationale": "(360-320)/40=1 additional FTE."
+  },
+  {
+    "questionId": "CDM-PER-014",
+    "answer": "B",
+    "rationale": "Assigned owners and deadlines establish implementation accountability (Personnel 2).",
+    "issue": "Distractor review: Only accountable actions with deadlines; others meeting logistics."
+  },
+  {
+    "questionId": "CDM-PER-015",
+    "answer": "C",
+    "rationale": "An advance agenda sets meeting objectives and focus (Personnel 2).",
+    "issue": "Distractor review: Only appropriate advance meeting guide; others confidential or premature."
+  },
+  {
+    "questionId": "CDM-PER-016",
+    "answer": "D",
+    "rationale": "Established scheduling policies provide a consistent basis (Personnel 1).",
+    "issue": "Distractor review: Only consistent established rules; others favoritism or request style."
+  },
+  {
+    "questionId": "CDM-PER-017",
+    "answer": "A",
+    "rationale": "Cross-training with competence checks permits qualified coverage (Personnel 1).",
+    "issue": "Distractor review: Only resilience action with competence verification."
+  },
+  {
+    "questionId": "CDM-PER-018",
+    "answer": "B",
+    "rationale": "Explain assigned tasks, timing and responsibilities to affected workers (Personnel 3).",
+    "issue": "Distractor review: Only comprehensive operational communication; other options repeatedly say only."
+  },
+  {
+    "questionId": "CDM-PER-019",
+    "answer": "C",
+    "rationale": "Compare follow-up performance with the corrective goal (Personnel 2).",
+    "issue": "Distractor review: Only measured follow-up against goal; others assume or count files."
+  },
+  {
+    "questionId": "CDM-PER-020",
+    "answer": "D",
+    "rationale": "Increased demand may require changes to resources and the plan (Personnel 3).",
+    "issue": "Distractor review: Only comprehensive feasible planning; others explicitly narrow or ignore demand."
+  },
+  {
+    "questionId": "CDM-PER-021",
+    "answer": "A",
+    "rationale": "Demonstrated production skill is a directly job-related selection criterion (Personnel 2).",
+    "issue": "Distractor review: Only relevant demonstrated skill; other criteria biased or personal."
+  },
+  {
+    "questionId": "CDM-PER-022",
+    "answer": "B",
+    "rationale": "Shift-specific attendance patterns reveal recurring late-arrival coverage gaps (Personnel 1).",
+    "issue": "Distractor review: Most direct observable staffing pattern; weak cue without stem."
+  },
+  {
+    "questionId": "CDM-PER-023",
+    "answer": "C",
+    "rationale": "3*24/40=1.8 FTEs."
+  },
+  {
+    "questionId": "CDM-PER-024",
+    "answer": "D",
+    "rationale": "Supply the required tool; knowledge alone cannot overcome absent resources (Personnel 2).",
+    "issue": "Distractor review: Only practical enabling condition; others administrative counts."
+  },
+  {
+    "questionId": "CDM-PER-025",
+    "answer": "A",
+    "rationale": "Identify the specific performance gap and expected action (Personnel 2).",
+    "issue": "Distractor review: Only specific constructive feedback; others judgmental or favoritism."
+  },
+  {
+    "questionId": "CDM-PER-026",
+    "answer": "B",
+    "rationale": "Assign responsibility and deadlines to make the goal executable (Personnel 3).",
+    "issue": "Distractor review: Only concrete accountability; others slogans, absolutes, or identical workloads."
+  },
+  {
+    "questionId": "CDM-PER-027",
+    "answer": "C",
+    "rationale": "Observe application at work rather than equate satisfaction with behavior change (Personnel 2).",
+    "issue": "Distractor review: Only actual behavior transfer; others surveys or counts."
+  },
+  {
+    "questionId": "CDM-PER-028",
+    "answer": "D",
+    "rationale": "Compare workload timing and scheduled coverage to identify mismatches (Personnel 1).",
+    "issue": "Distractor review: Only matched demand and capacity; more coherent pair."
+  },
+  {
+    "questionId": "CDM-PER-029",
+    "answer": "A",
+    "rationale": "Complete and document required missed orientation content (Personnel 2).",
+    "issue": "Distractor review: Only rectifies and documents gap; others ignore or waive requirement."
+  },
+  {
+    "questionId": "CDM-PER-030",
+    "answer": "B",
+    "rationale": "Review changed duties and revise the job description (Personnel 1).",
+    "issue": "Distractor review: Only review and update; others stale or irrelevant substitutes."
+  },
+  {
+    "questionId": "CDM-PER-031",
+    "answer": "C",
+    "rationale": "Invite uninterrupted contributions to support inclusive meetings (Personnel 2).",
+    "issue": "Distractor review: Only inclusive respectful discussion; others restrictive."
+  },
+  {
+    "questionId": "CDM-PER-032",
+    "answer": "D",
+    "rationale": "Notify affected workers promptly of schedule changes (Personnel 1).",
+    "issue": "Distractor review: Only timely communication to affected people; others conceal or delay."
+  },
+  {
+    "questionId": "CDM-PER-033",
+    "answer": "A",
+    "rationale": "Define a shared performance standard before assessing accuracy (Personnel 2/3).",
+    "issue": "Distractor review: Only shared criteria; others higher target or sample without standards."
+  },
+  {
+    "questionId": "CDM-PER-034",
+    "answer": "B",
+    "rationale": "8*40=320 labor hours per week."
+  },
+  {
+    "questionId": "CDM-PER-035",
+    "answer": "C",
+    "rationale": "Early review identifies progress and remaining competence gaps (Personnel 2).",
+    "issue": "Distractor review: Only evidence-based proficiency review; others wait or assume."
+  },
+  {
+    "questionId": "CDM-PER-036",
+    "answer": "D",
+    "rationale": "Revise policy to the governing requirement with HR review (Personnel 2).",
+    "issue": "Distractor review: Only governing requirements and specialist review; others personal preference."
+  },
+  {
+    "questionId": "CDM-PER-037",
+    "answer": "A",
+    "rationale": "Evaluate reported workflow inefficiency against evidence before modifying the process (Personnel 3).",
+    "issue": "Distractor review: Only investigate evidence; others blame or ignore."
+  },
+  {
+    "questionId": "CDM-PER-038",
+    "answer": "B",
+    "rationale": "Meeting minutes should capture decisions, actions and responsibilities (Personnel 2).",
+    "issue": "Distractor review: Only complete actionable meeting record; others explicitly without decisions."
+  },
+  {
+    "questionId": "CDM-PER-039",
+    "answer": "C",
+    "rationale": "Apply consistent performance criteria across employees doing the same task (Personnel 2).",
+    "issue": "Distractor review: Only consistent evidence-based evaluation; others tenure or automatic equality."
+  },
+  {
+    "questionId": "CDM-PER-040",
+    "answer": "D",
+    "rationale": "Plan essential service contingencies using available resources (Personnel 3).",
+    "issue": "Distractor review: Only feasible contingency; others duplicate or promise all items."
+  },
+  {
+    "questionId": "CDM-SAF-001",
+    "answer": "A",
+    "rationale": "Food Code 3-501.16(A)(1) requires ordinary hot holding at 135\u00b0F or above.",
+    "issue": "Distractor review: Familiar precise hot-holding threshold; content cue, not tone."
+  },
+  {
+    "questionId": "CDM-SAF-002",
+    "answer": "B",
+    "rationale": "Food Code 3-501.14(A)(1) allows two hours from 135\u00b0F to 70\u00b0F; noon+2h=2 p.m."
+  },
+  {
+    "questionId": "CDM-SAF-003",
+    "answer": "C",
+    "rationale": "Food Code 3-401.11(A)(3) requires poultry to reach 165\u00b0F throughout, instantaneously.",
+    "issue": "Distractor review: Only thorough temperature-based cooking; others appearance or cooling."
+  },
+  {
+    "questionId": "CDM-SAF-004",
+    "answer": "D",
+    "rationale": "Food Code 3-501.15 identifies shallow pans as an effective cooling method.",
+    "issue": "Distractor review: Only action facilitating cooling; other choices trap heat."
+  },
+  {
+    "questionId": "CDM-SAF-005",
+    "answer": "A",
+    "rationale": "Food Code 3-501.17 counts preparation day as day 1; Monday through Sunday is seven days."
+  },
+  {
+    "questionId": "CDM-SAF-006",
+    "answer": "B",
+    "rationale": "Cleaning residue is a chemical contamination hazard (Safety 3)."
+  },
+  {
+    "questionId": "CDM-SAF-007",
+    "answer": "C",
+    "rationale": "Food Code 3-202.11(A) requires ordinary refrigerated TCS food at 41\u00b0F or below; only 39\u00b0F qualifies.",
+    "issue": "Distractor review: Only distinctly cold temperature; safety cue."
+  },
+  {
+    "questionId": "CDM-SAF-008",
+    "answer": "D",
+    "rationale": "Wash after handling raw poultry and use clean barriers for ready-to-eat food (Food Code 2-301.14/3-301.11).",
+    "issue": "Distractor review: Only hygiene-complete option; others reuse dirty gloves."
+  },
+  {
+    "questionId": "CDM-SAF-009",
+    "answer": "A",
+    "rationale": "A critical limit is the measurable acceptable safety boundary at a CCP (Safety 3).",
+    "issue": "Distractor review: Only measurable safety criterion versus preference or average."
+  },
+  {
+    "questionId": "CDM-SAF-010",
+    "answer": "B",
+    "rationale": "Corrective actions specify the response to a missed critical limit (Safety 3).",
+    "issue": "Distractor review: Corrective-action language sounds operationally protective; weak cue."
+  },
+  {
+    "questionId": "CDM-SAF-011",
+    "answer": "C",
+    "rationale": "Current ingredient information is needed because formulation and allergen content can change (Safety 3).",
+    "issue": "Distractor review: Only current ingredient evidence; others explicitly only stale or irrelevant data."
+  },
+  {
+    "questionId": "CDM-SAF-012",
+    "answer": "D",
+    "rationale": "A metal fragment is a physical foreign-material hazard (Safety 3)."
+  },
+  {
+    "questionId": "CDM-SAF-013",
+    "answer": "A",
+    "rationale": "Food Code 3-403.11(A) requires cooked/cooled food reheated for hot holding to reach 165\u00b0F for 15 seconds.",
+    "issue": "Distractor review: Highest temperature suggests safest; equally concrete alternatives."
+  },
+  {
+    "questionId": "CDM-SAF-014",
+    "answer": "B",
+    "rationale": "Food Code 3-202.11(E/F) requires frozen receipt and freedom from evidence of prior abuse; reject the delivery.",
+    "issue": "Distractor review: Only reject and document; others accept suspect goods or omit records."
+  },
+  {
+    "questionId": "CDM-SAF-015",
+    "answer": "C",
+    "rationale": "The shared utensil transfers peanut allergen, creating cross-contact (Safety 3).",
+    "issue": "Distractor review: Only substantive hazard without narrowing only qualifiers."
+  },
+  {
+    "questionId": "CDM-SAF-016",
+    "answer": "D",
+    "rationale": "Food Code 2-301.12 requires at least 20 seconds overall; friction alone is 10\u201315 seconds.",
+    "issue": "Distractor review: Longest duration has strongest safety intuition; weak cue."
+  },
+  {
+    "questionId": "CDM-SAF-017",
+    "answer": "A",
+    "rationale": "Identifying process points where hazards must be controlled is CCP identification (Safety 3).",
+    "issue": "Distractor review: Critical control points is most proactive safety term; weak topical cue."
+  },
+  {
+    "questionId": "CDM-SAF-018",
+    "answer": "B",
+    "rationale": "Receipt must meet written quality specifications as well as quantity (Safety 2).",
+    "issue": "Distractor review: Only actual compliance; others prior reputation or count alone."
+  },
+  {
+    "questionId": "CDM-SAF-019",
+    "answer": "C",
+    "rationale": "Food Code 3-501.17(C) retains the earliest prepared ingredient date, Tuesday, for applicable RTE TCS mixtures.",
+    "issue": "Add ready-to-eat and held more than 24 hours to establish the date-marking rule applicability; prepared refrigerated TCS alone is too broad. Distractor review: Earlier preparation date is more conservative than portion or service dates."
+  },
+  {
+    "questionId": "CDM-SAF-020",
+    "answer": "D",
+    "rationale": "Reviewing records to evaluate whether the HACCP system works is verification (Safety 3).",
+    "issue": "Distractor review: Only safety-review term versus menu and purchasing topics."
+  },
+  {
+    "questionId": "CDM-SAF-021",
+    "answer": "A",
+    "rationale": "Food Code 2-301.15 requires handwashing in the designated handwashing sink.",
+    "issue": "Distractor review: Only designated handwashing facility."
+  },
+  {
+    "questionId": "CDM-SAF-022",
+    "answer": "B",
+    "rationale": "Scheduled preventive maintenance controls failure risk before breakdown (Safety 2).",
+    "issue": "Distractor review: Only preventive resource care; alternatives unrelated or defer replacement."
+  },
+  {
+    "questionId": "CDM-SAF-023",
+    "answer": "C",
+    "rationale": "Food Code 3-401.11(A)(1) sets ordinary fish cooking at 145\u00b0F for 15 seconds.",
+    "issue": "Distractor review: Conventional exact temperature-time pairing; weak topical cue."
+  },
+  {
+    "questionId": "CDM-SAF-024",
+    "answer": "D",
+    "rationale": "Appropriate separate chemical storage prevents toxic contamination (Safety 2/3).",
+    "issue": "Distractor review: Only appropriate separate storage; others merely bins or container size."
+  },
+  {
+    "questionId": "CDM-SAF-025",
+    "answer": "A",
+    "rationale": "Food Code 3-501.14 permits six hours total; 6-1.5=4.5 hours remaining after reaching 70\u00b0F."
+  },
+  {
+    "questionId": "CDM-SAF-026",
+    "answer": "B",
+    "rationale": "Identify and segregate recalled lots to prevent use (Safety 2).",
+    "issue": "Distractor review: Only isolation and identification; others use, relabel, or accelerate stock."
+  },
+  {
+    "questionId": "CDM-SAF-027",
+    "answer": "C",
+    "rationale": "FIFO uses oldest received suitable stock first when shelf-life conditions are equivalent (Safety 2).",
+    "issue": "Distractor review: Only age-based rotation; others price, size, or newest first."
+  },
+  {
+    "questionId": "CDM-SAF-028",
+    "answer": "D",
+    "rationale": "Food Code 3-501.19 four-hour method: 9 a.m.+4h=1 p.m."
+  },
+  {
+    "questionId": "CDM-SAF-029",
+    "answer": "A",
+    "rationale": "Packaging must protect food from adulteration and contaminants (Food Code 3-202.15; Safety 2).",
+    "issue": "Distractor review: Only contamination safety consequence; others commercial details."
+  },
+  {
+    "questionId": "CDM-SAF-030",
+    "answer": "B",
+    "rationale": "Food Code 3-501.16(A)(2) specifies ordinary cold holding at 41\u00b0F or below.",
+    "issue": "Distractor review: Lowest temperature signals safety; precise threshold stands out."
+  },
+  {
+    "questionId": "CDM-SAF-031",
+    "answer": "C",
+    "rationale": "A rehearsed emergency foodservice plan supports safe supply and continuity (Safety 3).",
+    "issue": "Distractor review: Only complete rehearsed emergency plan; alternatives routine or contacts alone."
+  },
+  {
+    "questionId": "CDM-SAF-032",
+    "answer": "D",
+    "rationale": "Direct documented audits across shifts assess actual allergen-control practice (Safety 3).",
+    "issue": "Distractor review: Only direct documented inspection; others posters, attendance, or menu counts."
+  },
+  {
+    "questionId": "CDM-SAF-033",
+    "answer": "A",
+    "rationale": "Food Code 3-501.14(B) requires ambient-ingredient TCS preparations to cool to 41\u00b0F within four hours."
+  },
+  {
+    "questionId": "CDM-SAF-034",
+    "answer": "B",
+    "rationale": "Compare delivered quantity with the purchase order (Safety 2).",
+    "issue": "Distractor review: Only current order reconciliation without only qualifier; A historical."
+  },
+  {
+    "questionId": "CDM-SAF-035",
+    "answer": "C",
+    "rationale": "A pre-entered reading is not evidence of an actual measurement and cannot establish control.",
+    "issue": "Distractor review: Direct fundamental evidence flaw; others terminology or unrelated steps."
+  },
+  {
+    "questionId": "CDM-SAF-036",
+    "answer": "D",
+    "rationale": "Food Code 3-501.13(C)(2) requires immediate transfer from microwave thawing to conventional cooking without interruption.",
+    "issue": "Distractor review: Only continuous cooking; alternatives risky delays or storage."
+  },
+  {
+    "questionId": "CDM-SAF-037",
+    "answer": "A",
+    "rationale": "Inspect actual cleaned surfaces to assess effectiveness, not just sign-offs (Safety 2).",
+    "issue": "Distractor review: Only inspect actual result; others completion claims or supply counts."
+  },
+  {
+    "questionId": "CDM-SAF-038",
+    "answer": "B",
+    "rationale": "Stop use and arrange correction to remove the immediate physical contamination hazard (Safety 3).",
+    "issue": "Distractor review: Only immediate correction; others continue operation or defer checks."
+  },
+  {
+    "questionId": "CDM-SAF-039",
+    "answer": "C",
+    "rationale": "Food Code 3-501.13(A) requires refrigeration maintaining the food at 41\u00b0F or less during thawing.",
+    "issue": "Distractor review: Only food-specific protective cold threshold; others environment or vague temperature."
+  },
+  {
+    "questionId": "CDM-SAF-040",
+    "answer": "D",
+    "rationale": "Identifying harmful bacteria introduced by ingredients is hazard analysis (Safety 3).",
+    "issue": "Distractor review: Most fundamental safety-analysis term; alternatives also plausible without stem."
+  },
+  {
+    "questionId": "CDM-SAF-041",
+    "answer": "A",
+    "rationale": "CBDM Safety 2 requires vetted approved suppliers.",
+    "issue": "Distractor review: Only vetted approved source; others explicitly lack checks or approval."
+  },
+  {
+    "questionId": "CDM-SAF-042",
+    "answer": "B",
+    "rationale": "Food Code 3-403.11(C) permits commercially processed packaged RTE TCS food from an inspected plant to be heated to 135\u00b0F for hot holding.",
+    "issue": "Distractor review: Precise familiar hot-holding threshold; content cue."
+  },
+  {
+    "questionId": "CDM-SAF-043",
+    "answer": "C",
+    "rationale": "Reporting symptoms supports controls preventing employee transmission of foodborne illness (Safety 1).",
+    "issue": "Distractor review: Only realistic preventive purpose; others diagnose or make universal claims."
+  },
+  {
+    "questionId": "CDM-SAF-044",
+    "answer": "D",
+    "rationale": "Crossing clean and soiled routes creates potential workflow contamination (Safety 3).",
+    "issue": "Distractor review: Only contamination-focused operational criterion among administrative alternatives."
+  },
+  {
+    "questionId": "CDM-SAF-045",
+    "answer": "A",
+    "rationale": "Food Code 3-403.11(B): stir/rotate, cover and stand covered for two minutes after reheating to 165\u00b0F.",
+    "issue": "Answer should explicitly say stand covered for 2 minutes; currently cover, stand leaves covered rest slightly implicit. Distractor review: Most complete multi-step protective procedure; others omit steps."
+  },
+  {
+    "questionId": "CDM-SAF-046",
+    "answer": "B",
+    "rationale": "Supplier, product and lot identifiers support identifying recalled inventory (Safety 2).",
+    "issue": "Distractor review: Only complete traceability identifiers."
+  },
+  {
+    "questionId": "CDM-SAF-047",
+    "answer": "C",
+    "rationale": "Food Code 3-202.16 requires ice used as food to be made from drinking water.",
+    "issue": "Distractor review: Only clean potable source; others explicitly contaminated or untreated."
+  },
+  {
+    "questionId": "CDM-SAF-048",
+    "answer": "D",
+    "rationale": "Update safety checklists to reflect current equipment and operations (Safety 2).",
+    "issue": "Distractor review: Only current operational update; others delay or use price/invoice alone."
+  },
+  {
+    "questionId": "CDM-BUS-001",
+    "answer": "A",
+    "rationale": "6300/900=$7 per patient day."
+  },
+  {
+    "questionId": "CDM-BUS-002",
+    "answer": "B",
+    "rationale": "Replacing a walk-in refrigerator is a capital-equipment investment (Business 1).",
+    "issue": "Distractor review: Only durable capital asset among consumables; contrast cue."
+  },
+  {
+    "questionId": "CDM-BUS-003",
+    "answer": "C",
+    "rationale": "2.40/0.30=$8 selling price."
+  },
+  {
+    "questionId": "CDM-BUS-004",
+    "answer": "D",
+    "rationale": "Make-versus-buy comparison includes quality, nutrition, labor and cost (Business 1).",
+    "issue": "Distractor review: Only comprehensive criteria; all competitors explicitly omit dimensions."
+  },
+  {
+    "questionId": "CDM-BUS-005",
+    "answer": "A",
+    "rationale": "Cost per patient day normalizes spending for census volume (Business 1).",
+    "issue": "Distractor review: Only normalized unit metric; others totals or counts."
+  },
+  {
+    "questionId": "CDM-BUS-006",
+    "answer": "B",
+    "rationale": "720/90=8 meal equivalents per labor hour."
+  },
+  {
+    "questionId": "CDM-BUS-007",
+    "answer": "C",
+    "rationale": "Define written quality, performance and suitability specifications before comparable bidding (Business 2).",
+    "issue": "Distractor review: Only written substantive requirements; others brand, history, or catalog alone."
+  },
+  {
+    "questionId": "CDM-BUS-008",
+    "answer": "D",
+    "rationale": "Investigate and reconcile physical/perpetual inventory discrepancies (Business 2).",
+    "issue": "Distractor review: Only investigate and reconcile; others assume or falsify."
+  },
+  {
+    "questionId": "CDM-BUS-009",
+    "answer": "A",
+    "rationale": "Necessary installation electrical work belongs in acquisition evaluation alongside equipment price (Business 1).",
+    "issue": "Distractor review: Only complete acquisition cost; competitors explicitly alone or only."
+  },
+  {
+    "questionId": "CDM-BUS-010",
+    "answer": "B",
+    "rationale": "5400/3000=$1.80 supplies per patient day."
+  },
+  {
+    "questionId": "CDM-BUS-011",
+    "answer": "C",
+    "rationale": "Research demand and financial feasibility before developing the new service (Business 3).",
+    "issue": "Distractor review: Only evidence-based market and financial planning; others copying or ingredient-only cost."
+  },
+  {
+    "questionId": "CDM-BUS-012",
+    "answer": "D",
+    "rationale": "1.80*4=$7.20 selling price."
+  },
+  {
+    "questionId": "CDM-BUS-013",
+    "answer": "A",
+    "rationale": "Compare actual costs with budget through recurring variance reports (Business 1/3).",
+    "issue": "Distractor review: Only recurrent financial evaluation document; weak topical cue."
+  },
+  {
+    "questionId": "CDM-BUS-014",
+    "answer": "B",
+    "rationale": "Cost per usable edible unit accounts for trimming yield (Business 1/2).",
+    "issue": "Distractor review: Only usable-yield-adjusted comparison; others gross case counts."
+  },
+  {
+    "questionId": "CDM-BUS-015",
+    "answer": "C",
+    "rationale": "12900-12000=$900 unfavorable expense variance."
+  },
+  {
+    "questionId": "CDM-BUS-016",
+    "answer": "D",
+    "rationale": "Usage rate and replenishment lead time determine demand before next receipt (Business 2).",
+    "issue": "Distractor review: Only forward-looking usage and lead-time pair; others historical or superficial."
+  },
+  {
+    "questionId": "CDM-BUS-017",
+    "answer": "A",
+    "rationale": "(1800+2400+600)/600=$8 total cost per meal."
+  },
+  {
+    "questionId": "CDM-BUS-018",
+    "answer": "B",
+    "rationale": "Reconcile cash and sales records and investigate the cause of differences (Business 3).",
+    "issue": "Distractor review: Only investigate records; others conceal or manipulate money."
+  },
+  {
+    "questionId": "CDM-BUS-019",
+    "answer": "C",
+    "rationale": "Evaluate safely usable quantity and total expected cost, including spoilage, rather than unit discount (Business 2/3).",
+    "issue": "Distractor review: Only comprehensive usable quantity and total cost; others explicitly alone."
+  },
+  {
+    "questionId": "CDM-BUS-020",
+    "answer": "D",
+    "rationale": "60*60/450=8 labor minutes per meal."
+  },
+  {
+    "questionId": "CDM-BUS-021",
+    "answer": "A",
+    "rationale": "A life-cycle repair/replacement cost comparison supports the equipment decision (Business 1).",
+    "issue": "Distractor review: Only complete cost evaluation; others age or appearance alone."
+  },
+  {
+    "questionId": "CDM-BUS-022",
+    "answer": "B",
+    "rationale": "Comparable service scope and metric definitions are necessary for meaningful benchmarking (Business 1).",
+    "issue": "Distractor review: Only meaningful comparability; others arbitrary equalities."
+  },
+  {
+    "questionId": "CDM-BUS-023",
+    "answer": "C",
+    "rationale": "48/24=$2 per usable unit."
+  },
+  {
+    "questionId": "CDM-BUS-024",
+    "answer": "D",
+    "rationale": "Evaluate cost changes along with acceptance and service outcomes (Business 3).",
+    "issue": "Distractor review: Only balances cost with service outcomes; others narrow savings or activity."
+  },
+  {
+    "questionId": "CDM-BUS-025",
+    "answer": "A",
+    "rationale": "Forecast the lower census and corresponding expenses for the temporary closure (Business 1).",
+    "issue": "Distractor review: Only adjusts expenses to actual volume; others fixed or unrelated."
+  },
+  {
+    "questionId": "CDM-BUS-026",
+    "answer": "B",
+    "rationale": "8*3=24 units of lead-time demand, excluding safety stock."
+  },
+  {
+    "questionId": "CDM-BUS-027",
+    "answer": "C",
+    "rationale": "Reassess unnecessary premium grade and select a suitable lower-cost specification (Business 3).",
+    "issue": "Distractor review: Only suitable economical option; others regardless of suitability or review."
+  },
+  {
+    "questionId": "CDM-BUS-028",
+    "answer": "D",
+    "rationale": "12000/3000=4 years simple payback."
+  }
+]

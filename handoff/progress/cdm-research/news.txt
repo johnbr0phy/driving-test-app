@@ -1,0 +1,1863 @@
+ 
+ 
+ 
+ 
+ 
+ 
+
+	Certifying Board for Dietary Managers (CBDM) -  News
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+        (function () {
+            "use strict";
+            var el = document.getElementsByTagName('html')[0],
+                nojsClass = "no-js", jsClass = "js";
+
+            if (el.classList) {
+                el.classList.remove(nojsClass);
+                el.classList.add(jsClass);
+            } else {
+                el.className = el.className.replace(new RegExp('(^|\\b)' + nojsClass.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                el.className += ' ' + jsClass;
+            }
+        }());
+    
+ 
+ 
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5JS8KM6');
+ 
+ 
+.sfNavHorizontalDropDown:not(.k-menu-horizontal) {
+  display: none;
+}
+
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65395222-1', 'auto');
+  ga('send', 'pageview');
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+  
+
+
+
+    
+
+        
+
+
+
+    
+
+
+Certifying Board for Dietary Managers (CBDM)
+
+
+
+    
+
+
+
+        
+
+            
+
+
+            
+
+
+
+    
+
+
+    
+
+FAQS
+
+
+    
+
+Verify Credentials
+
+
+    
+
+Contact Us
+
+
+    
+
+ANFPonline.org
+
+
+
+
+    
+
+
+            
+
+            
+
+
+
+    
+Member Login
+
+
+
+
+
+
+
+
+    
+
+        
+Welcome, 
+
+    
+
+    
+
+        
+
+            
+
+Update Profile
+
+
+            
+
+Update Password
+
+
+            
+
+Sign Out
+
+
+        
+
+    
+
+
+
+
+
+
+
+    (function ($) {
+        $(function () {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            var userToken = params.usertoken ? params.usertoken : params.userToken;
+            if (!userToken) {
+                userToken = "";
+            }
+
+            var xhr = new XMLHttpRequest();
+            var sendParams = 'userToken=' + userToken;
+            xhr.open('GET', '/sso/status' + "?" + sendParams, false);
+
+            xhr.onload = function () {
+                if (userToken) {
+                    window.location.replace(params.ReturnURL ? params.ReturnURL : params.ReturnUrl);
+                }
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.IsSignedIn) {
+                        document.getElementById("logged-in").style.display = "block";
+                        document.getElementById("welcome").innerHTML = "Welcome, " + response.FirstName
+                        document.getElementById("updateRedirectUrl").setAttribute("href", response.UpdateRedirectURL);
+                        document.getElementById("updatePasswordRedirectUrl").setAttribute("href", response.UpdatePasswordRedirectURL);
+                    }
+                    else{
+                        document.getElementById("logged-out").style.display = "block";
+                    }
+                }
+            };
+            xhr.setRequestHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+            xhr.setRequestHeader('Pragma', 'no-cache');
+            xhr.setRequestHeader('Expires', '0');
+            xhr.send(null);
+        });
+    }(jQuery));
+
+    $('#sign-out').on('click', () => {
+        $.ajax({
+            url: '/sso/logout',
+            success: function (response) {
+                window.location.replace(response);
+            },
+        });
+    })
+
+
+            
+
+            
+
+
+            
+
+
+            
+
+                
+
+
+                
+
+
+
+
+
+
+    
+
+    
+
+    
+When autocomplete results are available use up and down arrows to review and enter to select.
+
+
+	
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+            
+
+        
+
+    
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+        
+
+            
+Get Certified
+
+            
+
+                            
+
+                
+CDM, CFPP Certification Process Overview
+
+            
+
+            
+
+                
+
+                    Eligibility
+                
+
+                
+
+                                
+
+                
+School Codes
+
+            
+
+
+                
+
+            
+
+            
+
+                
+Exam Sites and Scheduling
+
+            
+
+            
+
+                
+Get Prepared
+
+            
+
+            
+
+                
+Exam Scoring & Results
+
+            
+
+            
+
+                
+Register
+
+            
+
+            
+
+                
+Join ANFP
+
+            
+
+            
+
+                
+Activate Your Certification
+
+            
+
+            
+
+                
+What CDM, CFPP Means to Me
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Exam Prep
+
+            
+
+                            
+
+                
+CDM, CFPP Credentialing Exam Study Materials
+
+            
+
+            
+
+                
+CDM, CFPP Credentialing Exam FAQs
+
+            
+
+            
+
+                
+Exam Content Outline
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Maintain Your Credential
+
+            
+
+                            
+
+                
+Maintaining Your Credential
+
+            
+
+            
+
+                
+Qualifying CE Activities & Required Documentation
+
+            
+
+            
+
+                
+CE Self-Reporting
+
+            
+
+            
+
+                
+Recertification & CE Self-Reporting FAQs
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Continuing Competence
+
+            
+
+                            
+
+                
+Continuing Competence FAQs
+
+            
+
+            
+
+                
+Self-Assessment Tool
+
+            
+
+
+            
+
+        
+
+        
+
+            
+CE Audit
+
+            
+
+                            
+
+                
+CE Audit
+
+            
+
+            
+
+                
+CE Audit FAQs
+
+            
+
+
+            
+
+        
+
+        
+
+            
+Resources
+
+            
+
+                            
+
+                
+CDM, CFPP Career Info
+
+            
+
+            
+
+                
+CDM, CFPP Scope of Practice
+
+            
+
+            
+
+                
+CDM, CFPP Practice Standards
+
+            
+
+            
+
+                
+Find CE
+
+            
+
+            
+
+                
+Prior Approval
+
+            
+
+            
+
+                
+CDM, CFPP Code of Ethics
+
+            
+
+            
+
+                
+Guide to Maintaining Your Credential
+
+            
+
+            
+
+                
+Top 10 Tips to Maintain Your CDM, CFPP Credential
+
+            
+
+            
+
+                
+Top 10 Resource Lists
+
+            
+
+            
+
+                
+CDM, CFPP Informational Videos
+
+            
+
+            
+
+                
+Federal CMS Regulations for CDM, CFPPs 
+
+            
+
+            
+
+                
+Competencies for Food and Nutrition Services Employees
+
+            
+
+            
+
+                
+ Continuing Competence Level Assignments
+
+            
+
+
+            
+
+        
+
+        
+
+            
+About
+
+            
+
+                            
+
+                
+CBDM Leadership
+
+            
+
+            
+
+                
+
+                    CBDM News
+                
+
+                
+
+                                
+
+                
+CBDM Quarterly Newsletter
+
+            
+
+
+                
+
+            
+
+            
+
+                
+Contact Us
+
+            
+
+            
+
+                
+NCCA
+
+            
+
+            
+
+                
+Current & Past CBDM Board Chairs
+
+            
+
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var whetherToOpenOnClick = false;
+
+        var kendoMenu = $('.sfNavHorizontalDropDown').not('.k-menu').kendoMenu({
+            animation: false,
+            openOnClick: whetherToOpenOnClick,
+            open: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    var item = $(e.item);
+
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: item.find("a:first").text(),
+                        objectMetadata: [
+                            {
+                                'K': 'PageTitle',
+                                'V': document.title
+                            },
+                            {
+                                'K': 'PageUrl',
+                                'V': location.href
+                            }
+                        ]
+                    });
+                }
+            }
+        }).data('kendoMenu');
+
+        if (whetherToOpenOnClick && kendoMenu) {
+            jQuery(kendoMenu.element).find("li:has(ul) > a").attr("href", "javascript:void(0)");
+        }
+    })(jQuery);
+
+
+
+
+    
+
+    
+
+
+
+    
+
+    
+
+    
+
+        
+Get Certified
+
+
+            
+
+    
+
+        
+CDM, CFPP Certification Process Overview
+
+
+    
+
+    
+
+        
+Eligibility
+
+
+            
+
+    
+
+        
+School Codes
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Exam Sites and Scheduling
+
+
+    
+
+    
+
+        
+Get Prepared
+
+
+    
+
+    
+
+        
+Exam Scoring & Results
+
+
+    
+
+    
+
+        
+Register
+
+
+    
+
+    
+
+        
+Join ANFP
+
+
+    
+
+    
+
+        
+Activate Your Certification
+
+
+    
+
+    
+
+        
+What CDM, CFPP Means to Me
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Exam Prep
+
+
+            
+
+    
+
+        
+CDM, CFPP Credentialing Exam Study Materials
+
+
+    
+
+    
+
+        
+CDM, CFPP Credentialing Exam FAQs
+
+
+    
+
+    
+
+        
+Exam Content Outline
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Maintain Your Credential
+
+
+            
+
+    
+
+        
+Maintaining Your Credential
+
+
+    
+
+    
+
+        
+Qualifying CE Activities & Required Documentation
+
+
+    
+
+    
+
+        
+CE Self-Reporting
+
+
+    
+
+    
+
+        
+Recertification & CE Self-Reporting FAQs
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Continuing Competence
+
+
+            
+
+    
+
+        
+Continuing Competence FAQs
+
+
+    
+
+    
+
+        
+Self-Assessment Tool
+
+
+    
+
+            
+
+    
+
+    
+
+        
+CE Audit
+
+
+            
+
+    
+
+        
+CE Audit
+
+
+    
+
+    
+
+        
+CE Audit FAQs
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Resources
+
+
+            
+
+    
+
+        
+CDM, CFPP Career Info
+
+
+    
+
+    
+
+        
+CDM, CFPP Scope of Practice
+
+
+    
+
+    
+
+        
+CDM, CFPP Practice Standards
+
+
+    
+
+    
+
+        
+Find CE
+
+
+    
+
+    
+
+        
+Prior Approval
+
+
+    
+
+    
+
+        
+CDM, CFPP Code of Ethics
+
+
+    
+
+    
+
+        
+Guide to Maintaining Your Credential
+
+
+    
+
+    
+
+        
+Top 10 Tips to Maintain Your CDM, CFPP Credential
+
+
+    
+
+    
+
+        
+Top 10 Resource Lists
+
+
+    
+
+    
+
+        
+CDM, CFPP Informational Videos
+
+
+    
+
+    
+
+        
+Federal CMS Regulations for CDM, CFPPs 
+
+
+    
+
+    
+
+        
+Competencies for Food and Nutrition Services Employees
+
+
+    
+
+    
+
+        
+ Continuing Competence Level Assignments
+
+
+    
+
+            
+
+    
+
+    
+
+        
+About
+
+
+            
+
+    
+
+        
+CBDM Leadership
+
+
+    
+
+    
+
+        
+CBDM News
+
+
+            
+
+    
+
+        
+CBDM Quarterly Newsletter
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Contact Us
+
+
+    
+
+    
+
+        
+NCCA
+
+
+    
+
+    
+
+        
+Current & Past CBDM Board Chairs
+
+
+    
+
+            
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+							{
+								'K': 'PageTitle',
+								'V': document.title
+							},
+							{
+								'K': 'PageUrl',
+								'V': location.href
+							}
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.collapse(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+
+
+
+
+    
+
+
+    
+
+FAQS
+
+
+    
+
+Verify Credentials
+
+
+    
+
+Contact Us
+
+
+    
+
+ANFPonline.org
+
+
+
+
+    
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+    
+
+        
+
+
+
+
+    
+
+    
+
+    
+
+        
+CBDM Leadership
+
+
+    
+
+    
+
+        
+CBDM News
+
+
+            
+
+    
+
+        
+CBDM Quarterly Newsletter
+
+
+    
+
+            
+
+    
+
+    
+
+        
+Contact Us
+
+
+    
+
+    
+
+        
+NCCA
+
+
+    
+
+    
+
+        
+Current & Past CBDM Board Chairs
+
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    (function ($) {
+        var kendoTreeView = $('.sfNavTreeview').not('div.k-treeview .sfNavTreeview').kendoTreeView({
+            animation: false,
+            expand: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: this.dataItem(e.node).text,
+                        objectMetadata: [
+							{
+								'K': 'PageTitle',
+								'V': document.title
+							},
+							{
+								'K': 'PageUrl',
+								'V': location.href
+							}
+                        ]
+                    });
+                }
+            }
+        }).data('kendoTreeView');
+        if (kendoTreeView) {
+            kendoTreeView.collapse(kendoTreeView.element.find(".k-item"));
+        }
+    })(jQuery);
+
+
+        
+
+    
+
+    
+
+        
+
+            
+
+
+
+    
+
+CBDM News
+
+    
+
+
+            
+
+            
+
+
+ 
+
+            
+
+            
+
+
+
+    
+
+                
+
+Home
+
+
+                
+
+About
+
+
+                
+CBDM News
+
+    
+
+
+
+            
+
+            
+
+
+
+    
+
+
+    
+
+
+
+
+    
+
+            
+
+                
+
+                    
+CBDM FY25 Annual Report
+
+                
+
+                
+The Certifying Board for Dietary Managers Fiscal Year 2025 Annual Report is now available.
+
+                
+Read The Full Article
+
+            
+
+            
+
+                
+
+                    
+New CE Audit Extension Fee (Effective June 1, 2026)
+
+                
+
+                
+
+
+                
+Read The Full Article
+
+            
+
+            
+
+                
+
+                    
+2025 National CDM, CFPP Day of the Year Acknowledged in Congress
+
+                
+
+                
+
+
+                
+Read The Full Article
+
+            
+
+            
+
+                
+
+                    
+CBDM Releases Updated CDM, CFPP Practice Standards
+
+                
+
+                
+
+
+                
+Read The Full Article
+
+            
+
+            
+
+                
+
+                    
+CBDM Announces Update to Book CE Policy
+
+                
+
+                
+
+
+                
+Read The Full Article
+
+            
+
+            
+
+                
+
+                    
+Congratulations, New CDM, CFPPs!
+
+                
+
+                
+The Certifying Board for Dietary Managers had 83 individuals pass the CDM, CFPP Credentialing Exam in October 2026.
+
+                
+Read The Full Article
+
+            
+
+    
+
+
+
+
+
+    
+
+                        
+
+                    
+1
+
+                
+
+                
+
+                    
+2
+
+                
+
+                
+
+                    
+3
+
+                
+
+            
+
+
+
+
+
+            
+
+        
+
+    
+
+
+
+ 
+ 
+ 
+
+
+    
+
+
+
+    
+
+Certifying Board for Dietary Managers
+
+
+PO Box 3610
+
+St. Charles, IL 60174
+
+800.323.1908
+
+
+info@CBDMonline.org
+
+    
+
+
+    
+
+    
+
+
+    
+
+
+
+    
+
+Get Certified
+
+
+
+    
+
+Eligibility
+
+
+    
+
+Exam Sites and Scheduling
+
+
+    
+
+Register
+
+
+    
+
+Activate
+
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+Exam
+
+
+
+    
+
+Study Materials
+
+
+    
+
+Exam FAQs
+
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+Maintaining Credential
+
+
+
+Maintaining Your Credential
+
+
+
+CE Self-Reporting
+
+
+
+CE Audit Information
+
+
+
+    
+
+
+    
+
+     
+
+
+
+    
+
+About CBDM
+
+
+
+    
+
+Contact Us
+
+
+    
+
+Leadership
+
+
+    
+
+
+    
+
+Join ANFP
+
+
+
+
+    
+
+
+    
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+Privacy Policy
+
+
+
+Terms of Use
+
+
+
+Sitemap
+
+
+
+Contact Us
+
+
+
+Non-Discrimination Statement
+
+
+
+© 2025 Certifying Board for Dietary Managers
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+ 
+ 
+
+
+
+ 
+
+  
+
+
+
+
+
+(function(d, w) {
+    w.PropFuel = w.PropFuel || [];
+    if (w.PropFuel.__LOADED) return;
+    w.PropFuel.__LOADED = true;
+
+    var m = ['init','identify'];
+    m.forEach(function(n) {
+        w.PropFuel[n] = function(){ w.PropFuel.push([n].concat([].slice.call(arguments))) };
+    });
+    
+    var script = d.createElement('script');
+    script.src = 'https://web.propfuel.com/plugin.js';
+    script.async = true;
+    d.getElementsByTagName('head')[0].appendChild(script);
+
+    w.PropFuel.init('95ad412e921f444bbd9145e8f0e19e77', {
+    });
+})(document, window);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+$( document ).ready(function() {
+  $(".rwdBtn").click(function() {
+    $(".rwdNav").slideToggle();
+     });
+    $(".rwdSearch").click(function() {
+    $(".search").slideToggle();
+    });  
+    $(".btnClose").click(function() {
+    $(".search").slideToggle();
+    });
+  $(".loginwelcome").click(function() {
+    $(".loginMenu").slideToggle();
+   });
+});
+
+
+
+  !function(f,e,a,t,h,r){if(!f[h]){r=f[h]=function(){r.invoke?
+  r.invoke.apply(r,arguments):r.queue.push(arguments)},
+  r.queue=[],r.loaded=1*new Date,r.version="1.0.0",
+  f.FeathrBoomerang=r;var g=e.createElement(a),
+  h=e.getElementsByTagName("head")[0]||e.getElementsByTagName("script")[0].parentNode;
+  g.async=!0,g.src=t,h.appendChild(g)}
+  }(window,document,"script","https://cdn.feathr.co/js/boomerang.min.js","feathr");
+
+  feathr("fly", "5d76d993e5c03a0033a2478b");
+  feathr("sprinkle", "page_view");
+
+
+
+
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0012/6013.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+ 
+ 

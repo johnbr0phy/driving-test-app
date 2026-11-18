@@ -1,0 +1,902 @@
+[
+  {
+    "reviewId": "R001",
+    "category": "epa609Equipment",
+    "optionA": "Oxidation of lubricant additives",
+    "optionB": "Evaporation of lighter components",
+    "optionC": "Absorption of atmospheric moisture",
+    "optionD": "Temperature-related viscosity reduction",
+    "question": "Which process does the term hygroscopic describe when PAG oil is exposed to workshop air?"
+  },
+  {
+    "reviewId": "R002",
+    "category": "epa609Service",
+    "optionA": "18 mL of extra liquid refrigerant",
+    "optionB": "18 mL of new specified lubricant",
+    "optionC": "Full compressor capacity of new oil",
+    "optionD": "18 mL of the recovered lubricant",
+    "question": "Recovery removes 18 mL of oil. What normally replaces that amount before the system returns to service?"
+  },
+  {
+    "reviewId": "R003",
+    "category": "epa609Service",
+    "optionA": "Draining the sump before every use",
+    "optionB": "Adding compressor lubricant to the sump",
+    "optionC": "Changing its oil at specified intervals",
+    "optionD": "Topping up existing oil indefinitely",
+    "question": "Which routine maintenance commonly preserves the performance of the vacuum pump used before recharging?"
+  },
+  {
+    "reviewId": "R004",
+    "category": "epa609Yf",
+    "optionA": "As soon as cabin air temperature rises",
+    "optionB": "After high-side pressure has decreased",
+    "optionC": "Before pressure starts to equalize",
+    "optionD": "Only while the compressor clutch is engaged",
+    "question": "When should service equipment be connected to an R-1234yf system after the compressor stops?"
+  },
+  {
+    "reviewId": "R005",
+    "category": "epa609Rules",
+    "optionA": "Section 608 Type II certification",
+    "optionB": "Section 609 technician certification",
+    "optionC": "Section 608 Type I certification",
+    "optionD": "Section 608 Type III certification",
+    "question": "Which requirement still applies to paid R-744 vehicle A/C service despite its venting exemption?"
+  },
+  {
+    "reviewId": "R006",
+    "category": "epa609Service",
+    "optionA": "Whether the blower control has failed",
+    "optionB": "Whether excessive oil was installed",
+    "optionC": "Where the refrigerant escaped",
+    "optionD": "Whether the expansion device is blocked",
+    "question": "An A/C circuit has no pressure before recovery starts. What service issue should be investigated?"
+  },
+  {
+    "reviewId": "R007",
+    "category": "epa609Service",
+    "optionA": "Required charge for every vehicle",
+    "optionB": "Maximum possible delivery error",
+    "optionC": "Interval between accuracy checks",
+    "optionD": "Smallest displayed increment",
+    "question": "A charging scale displays tenths of a pound. What does that display resolution establish?"
+  },
+  {
+    "reviewId": "R008",
+    "category": "epa609Rules",
+    "optionA": "No new filing solely for this purchase",
+    "optionB": "Annual filing covering all current machines",
+    "optionC": "New filing for each different refrigerant",
+    "optionD": "New filing for each machine serial number",
+    "question": "A previously registered shop adds approved R-1234yf equipment. What does EPA require concerning equipment certification filings?"
+  },
+  {
+    "reviewId": "R009",
+    "category": "epa609Service",
+    "optionA": "Local atmospheric pressure is lower",
+    "optionB": "Lower refrigerant vapor pressure",
+    "optionC": "Higher residual lubricant viscosity",
+    "optionD": "Higher pump rated flow capacity",
+    "question": "Why can a sound vacuum pump show a lower maximum gauge vacuum at higher elevation?"
+  },
+  {
+    "reviewId": "R010",
+    "category": "epa609Service",
+    "optionA": "Add a fresh full dose of dye",
+    "optionB": "Allow circulation before reinspecting",
+    "optionC": "Switch to a higher dye concentration",
+    "optionD": "Remove existing dye by flushing",
+    "question": "Factory dye is present, but no leak fluoresces immediately. What is the appropriate next step?"
+  },
+  {
+    "reviewId": "R011",
+    "category": "epa609Rules",
+    "optionA": "Equipment warranty registration",
+    "optionB": "Proof of technician certification",
+    "optionC": "Refrigerant purchase invoices",
+    "optionD": "Annual equipment calibration reports",
+    "question": "What documentation must a shop keep for each person authorized to operate its MVAC service equipment?"
+  },
+  {
+    "reviewId": "R012",
+    "category": "epa609Service",
+    "optionA": "Guaranteed removal of debris from every passage",
+    "optionB": "Approval to flush every vehicle manufacturer's system",
+    "optionC": "Guaranteed evaporation during any vacuum cycle",
+    "optionD": "Tested compatibility with system components",
+    "question": "A flushing material meets SAE J2670. What does that alone establish about its use?"
+  },
+  {
+    "reviewId": "R013",
+    "category": "epa609Equipment",
+    "optionA": "Ferrule just covering the cut hose edge",
+    "optionB": "Hose visible through the inspection hole",
+    "optionC": "Tube touching the first crimping die",
+    "optionD": "Fitting held by friction at its first rib",
+    "question": "Before crimping an A/C hose, what indicates that its end is fully inserted into the fitting?"
+  },
+  {
+    "reviewId": "R014",
+    "category": "epa609Rules",
+    "optionA": "Infrared radiation",
+    "optionB": "Visible solar radiation",
+    "optionC": "Cosmic radiation",
+    "optionD": "UVB radiation",
+    "question": "What increases at Earth's surface when refrigerant emissions damage the protective stratospheric ozone layer?"
+  },
+  {
+    "reviewId": "R015",
+    "category": "epa609Equipment",
+    "optionA": "Connect the grounding lead after opening it",
+    "optionB": "Leave power on with recovery paused",
+    "optionC": "Unplug the unit",
+    "optionD": "Turn the display brightness to zero",
+    "question": "Before routine machine maintenance, what is the normal electrical precaution unless its instructions direct otherwise?"
+  },
+  {
+    "reviewId": "R016",
+    "category": "epa609Rules",
+    "optionA": "Sale of recovered refrigerant",
+    "optionB": "Uncompensated private maintenance",
+    "optionC": "Service for consideration",
+    "optionD": "Disposal of an MVAC appliance",
+    "question": "A technician accepts used tools as payment for an A/C repair. How does Section 609 classify this?"
+  },
+  {
+    "reviewId": "R017",
+    "category": "epa609Service",
+    "optionA": "It cannot separate them into pure refrigerants",
+    "optionB": "It separates them by extended evacuation",
+    "optionC": "It separates them by repeated filtering",
+    "optionD": "It restores purity by removing air alone",
+    "question": "What can an ordinary MVAC recycling machine do with a mixture of different refrigerants?"
+  },
+  {
+    "reviewId": "R018",
+    "category": "epa609Yf",
+    "optionA": "Oil addition or compressor cycling",
+    "optionB": "Full charge or automatic top-off",
+    "optionC": "Full charge or vacuum bypass",
+    "optionD": "Recovery or re-evacuation",
+    "question": "A leak is detected after the partial R-1234yf test charge. Which machine operations remain available?"
+  },
+  {
+    "reviewId": "R019",
+    "category": "epa609Equipment",
+    "optionA": "Ordinary prescription lenses only",
+    "optionB": "Face covering without eye coverage",
+    "optionC": "Hearing protection in place of eyewear",
+    "optionD": "Appropriate eye protection",
+    "question": "Which protection is needed while connecting equipment where pressurized refrigerant could spray toward the technician?"
+  },
+  {
+    "reviewId": "R020",
+    "category": "epa609Rules",
+    "optionA": "Automotive mechanical license",
+    "optionB": "Section 608 Type II",
+    "optionC": "Section 608 Type III",
+    "optionD": "Section 608 Type I",
+    "question": "Which credential can substitute for Section 609 when servicing an agricultural tractor's MVAC-like appliance?"
+  },
+  {
+    "reviewId": "R021",
+    "category": "epa609Yf",
+    "optionA": "SAE J2912",
+    "optionB": "SAE J3030",
+    "optionC": "SAE J2851",
+    "optionD": "SAE J2788",
+    "question": "Which standard specifically covers equipment intended to recover, recycle and recharge both R-1234yf and R-134a?"
+  },
+  {
+    "reviewId": "R022",
+    "category": "epa609Rules",
+    "optionA": "It contributes to harmful smog",
+    "optionB": "It shields skin from ultraviolet light",
+    "optionC": "It is confined to the stratosphere",
+    "optionD": "It filters UVB above the clouds",
+    "question": "How does ground-level ozone differ from the ozone layer that refrigerant controls help protect?"
+  },
+  {
+    "reviewId": "R023",
+    "category": "epa609Service",
+    "optionA": "Removing only the visible separated lubricant",
+    "optionB": "Automotive recycling without prior reclamation",
+    "optionC": "Mixing it with an equal quantity of virgin fluid",
+    "optionD": "Reclamation to the applicable purity standard",
+    "question": "What processing is needed before refrigerant from a stationary system is suitable for MVAC use?"
+  },
+  {
+    "reviewId": "R024",
+    "category": "epa609Service",
+    "optionA": "Operate with the high-side port isolated",
+    "optionB": "Operate using the partial detection charge",
+    "optionC": "Restore the specified operating charge",
+    "optionD": "Operate only at maximum blower speed",
+    "question": "A system contains only enough refrigerant for leak detection. What is needed before evaluating compressor cooling performance?"
+  },
+  {
+    "reviewId": "R025",
+    "category": "epa609Rules",
+    "optionA": "Section 608 Type I technician",
+    "optionB": "Certified vehicle safety inspector",
+    "optionC": "Section 609-certified technician",
+    "optionD": "Licensed motor vehicle dealer",
+    "question": "Before reclamation, to whom may restricted refrigerant recovered at a vehicle disposal facility be sold?"
+  },
+  {
+    "reviewId": "R026",
+    "category": "epa609Service",
+    "optionA": "Desiccant releases its stored refrigerant",
+    "optionB": "Discharge valves trap vapor in the compressor",
+    "optionC": "Expansion-valve closure isolates the liquid",
+    "optionD": "Cooling slows its release from oil",
+    "question": "Why can refrigerant remain in a cold accumulator after the initial recovery pull reaches vacuum?"
+  },
+  {
+    "reviewId": "R027",
+    "category": "epa609Equipment",
+    "optionA": "Galvanic corrosion of service couplers",
+    "optionB": "Permanent increase in cylinder capacity",
+    "optionC": "Hazardous chemical decomposition",
+    "optionD": "Ultraviolet emission from liquid refrigerant",
+    "question": "Which hazard can result when refrigerant contacts hot metal during vehicle A/C service?"
+  },
+  {
+    "reviewId": "R028",
+    "category": "epa609Rules",
+    "optionA": "Records only after customer authorization",
+    "optionB": "Records only after the next annual filing",
+    "optionC": "Premises and required service records",
+    "optionD": "Premises only when all technicians agree",
+    "question": "An EPA representative presents credentials at an MVAC shop. What access must the shop provide?"
+  },
+  {
+    "reviewId": "R029",
+    "category": "epa609Equipment",
+    "optionA": "100% of rated volume at 21 C",
+    "optionB": "60% of rated volume at 21 C",
+    "optionC": "80% of rated volume at 21 C",
+    "optionD": "80% of gross weight at 21 C",
+    "question": "Under SAE J2788, what storage-container limit must overfill protection enforce during refrigerant recovery?"
+  },
+  {
+    "reviewId": "R030",
+    "category": "epa609Yf",
+    "optionA": "1.5 ounces per year",
+    "optionB": "0.5 ounce per year",
+    "optionC": "5 ounces per year",
+    "optionD": "0.15 ounce per year",
+    "question": "What minimum small-leak capability does the manual specify for a J2913 detector at its most sensitive setting?"
+  },
+  {
+    "reviewId": "R031",
+    "category": "epa609Service",
+    "optionA": "640 grams",
+    "optionB": "570 grams",
+    "optionC": "590 grams",
+    "optionD": "620 grams",
+    "question": "A specification gives 600 grams with a tolerance of plus 30, minus zero. Which charge is acceptable?"
+  },
+  {
+    "reviewId": "R032",
+    "category": "epa609Service",
+    "optionA": "Compressor cycling interval",
+    "optionB": "Refrigerant mass",
+    "optionC": "Discharge air temperature",
+    "optionD": "Static low-side pressure",
+    "question": "What must be measured to verify the amount added when recharging a critical-charge vehicle system?"
+  },
+  {
+    "reviewId": "R033",
+    "category": "epa609Equipment",
+    "optionA": "Cleaning without removal from the vehicle",
+    "optionB": "Separation of mixed refrigerants into components",
+    "optionC": "Removal without cleaning for reuse",
+    "optionD": "Recharging without measuring extracted oil",
+    "question": "What function distinguishes a recovery-only machine from equipment that also recycles the extracted refrigerant?"
+  },
+  {
+    "reviewId": "R034",
+    "category": "epa609Equipment",
+    "optionA": "Recovery rules only for ozone-depleting fluids",
+    "optionB": "Recordkeeping rules instead of recovery rules",
+    "optionC": "Shop rules only after returning the equipment",
+    "optionD": "Same requirements as at the shop",
+    "question": "Approved recovery equipment is taken to a customer's premises. Which service requirements apply there?"
+  },
+  {
+    "reviewId": "R035",
+    "category": "epa609Yf",
+    "optionA": "Against the condenser front face",
+    "optionB": "Center of a floor-duct outlet",
+    "optionC": "Beside the compressor drive pulley",
+    "optionD": "At the high-side service-port cap",
+    "question": "During the R-1234yf precharge evaporator check, where should the operating leak-detector probe be placed?"
+  },
+  {
+    "reviewId": "R036",
+    "category": "epa609Rules",
+    "optionA": "Refrigerant compatibility warranty statement",
+    "optionB": "Recommended compressor maintenance interval",
+    "optionC": "Cylinder temperature storage warning",
+    "optionD": "Purchaser training and certification restriction",
+    "question": "What notice must accompany retail sales of qualifying ozone-depleting MVAC refrigerant containers under 20 pounds?"
+  },
+  {
+    "reviewId": "R037",
+    "category": "epa609Service",
+    "optionA": "Saturated desiccant",
+    "optionB": "Compressor shaft seal",
+    "optionC": "High-side pressure-relief valve",
+    "optionD": "Expansion-valve sensing bulb",
+    "question": "Refrigerant lines remain uncapped through prolonged collision repairs. Which component may need replacement for moisture control?"
+  },
+  {
+    "reviewId": "R038",
+    "category": "epa609Service",
+    "optionA": "Moisture boiling near the evaporator",
+    "optionB": "Restricted flow through service valve cores",
+    "optionC": "Gauge calibration for a higher elevation",
+    "optionD": "Oil vapor returning from the vacuum pump",
+    "question": "Why can a service gauge show deep vacuum before the whole A/C circuit reaches that condition?"
+  },
+  {
+    "reviewId": "R039",
+    "category": "epa609Yf",
+    "optionA": "Manual entry of the underhood label",
+    "optionB": "Entry of the vehicle production year",
+    "optionC": "Input from a J2912-compliant identifier",
+    "optionD": "Comparison of two static pressure readings",
+    "question": "A J2843 machine lacks an integrated identifier. How can it obtain an acceptable refrigerant identification result?"
+  },
+  {
+    "reviewId": "R040",
+    "category": "epa609Service",
+    "optionA": "Low-side pressure cutoff",
+    "optionB": "Compressor high-pressure cutoff",
+    "optionC": "Compressor motor thermal protector",
+    "optionD": "Evaporator temperature thermostat",
+    "question": "Which protective control responds directly to excessive discharge pressure in an overcharged A/C system?"
+  },
+  {
+    "reviewId": "R041",
+    "category": "epa609Rules",
+    "optionA": "Remove or completely cover its information",
+    "optionB": "Change only the printed charge quantity",
+    "optionC": "Keep it readable beside the new label",
+    "optionD": "Leave it until the next scheduled service",
+    "question": "After a CFC-12 retrofit, what should happen to the vehicle's obsolete refrigerant label?"
+  },
+  {
+    "reviewId": "R042",
+    "category": "epa609Service",
+    "optionA": "After tightening the replacement joint",
+    "optionB": "Before opening the connection",
+    "optionC": "After loosening the connection",
+    "optionD": "After evacuating the repaired circuit",
+    "question": "When should dirt around an A/C line connection be removed during component replacement?"
+  },
+  {
+    "reviewId": "R043",
+    "category": "epa609Equipment",
+    "optionA": "Label showing recovery speed alone",
+    "optionB": "Manufacturer membership in an industry group",
+    "optionC": "Warranty covering automotive service work",
+    "optionD": "Certification by an approved testing organization",
+    "question": "What identifies compliant R-134a recovery and recycling equipment rather than merely a manufacturer's performance claim?"
+  },
+  {
+    "reviewId": "R044",
+    "category": "epa609Rules",
+    "optionA": "Carbon dioxide (R-744)",
+    "optionB": "HFC-134a",
+    "optionC": "Propane-based hydrocarbon refrigerant",
+    "optionD": "HFO-1234yf",
+    "question": "Which refrigerant is listed as unacceptable for both new and retrofit motor vehicle air conditioning?"
+  },
+  {
+    "reviewId": "R045",
+    "category": "epa609Rules",
+    "optionA": "Recycling unit, with rented recovery",
+    "optionB": "Recovery unit, with outsourced recycling",
+    "optionC": "Both recovery and recycling units",
+    "optionD": "Neither, if each operator is certified",
+    "question": "For off-site recycling, what equipment must the person owning or operating the extraction shop own?"
+  },
+  {
+    "reviewId": "R046",
+    "category": "epa609Equipment",
+    "optionA": "Its previous refrigerant purity",
+    "optionB": "Its remaining label legibility",
+    "optionC": "Approval for refilling",
+    "optionD": "Its original net contents",
+    "question": "A supply cylinder has been emptied. What determines whether it can receive refrigerant during recovery?"
+  },
+  {
+    "reviewId": "R047",
+    "category": "epa609Equipment",
+    "optionA": "Resistance to liquid penetration",
+    "optionB": "Loose weave for ventilation",
+    "optionC": "Ability to absorb spilled oil",
+    "optionD": "High grip despite oil saturation",
+    "question": "Which glove property matters when handling PAG lubricant that can irritate the skin?"
+  },
+  {
+    "reviewId": "R048",
+    "category": "epa609Service",
+    "optionA": "Material and lubricant compatibility",
+    "optionB": "Leak detection time for every system",
+    "optionC": "Charge accuracy of the dye injector",
+    "optionD": "Existing dye concentration in a vehicle",
+    "question": "What does SAE J2297 compatibility testing establish about an approved refrigerant leak-detection dye?"
+  },
+  {
+    "reviewId": "R049",
+    "category": "epa609Rules",
+    "optionA": "Passing an identification test alone",
+    "optionB": "Separating only the recovered oil",
+    "optionC": "Transferring it to a clean cylinder",
+    "optionD": "Processing in an approved recycler",
+    "question": "Which procedure permits recovered refrigerant to be returned to its original vehicle after repair?"
+  },
+  {
+    "reviewId": "R050",
+    "category": "epa609Rules",
+    "optionA": "Acquire approved recovery equipment",
+    "optionB": "Acquire only a calibrated charging scale",
+    "optionC": "Acquire only electronic leak detectors",
+    "optionD": "Acquire recovery equipment after repairs begin",
+    "question": "A shop only tops off passenger-car refrigerant. What equipment obligation still applies under Section 609?"
+  },
+  {
+    "reviewId": "R051",
+    "category": "epa609Rules",
+    "optionA": "Section 609-certified technician",
+    "optionB": "Uncertified DIY vehicle owner",
+    "optionC": "Section 608 Type I technician only",
+    "optionD": "Section 608 Type III technician only",
+    "question": "Who may buy a small CFC-12 container for servicing vehicles rather than for resale?"
+  },
+  {
+    "reviewId": "R052",
+    "category": "epa609Equipment",
+    "optionA": "Two-wire 18 AWG cord with an adapter",
+    "optionB": "Short two-wire 14 AWG cord",
+    "optionC": "Short grounded three-wire 14 AWG cord",
+    "optionD": "Long grounded three-wire 18 AWG cord",
+    "question": "If an extension cord is unavoidable for recovery equipment, which specification meets the manual's minimum guidance?"
+  },
+  {
+    "reviewId": "R053",
+    "category": "epa609Service",
+    "optionA": "Proceed to the evacuation stage",
+    "optionB": "Zero the low-pressure gauge",
+    "optionC": "Start the pressure leak check",
+    "optionD": "Resume recovery of remaining refrigerant",
+    "question": "System pressure rises above vacuum during the recovery pause. What should the technician do next?"
+  },
+  {
+    "reviewId": "R054",
+    "category": "epa609Service",
+    "optionA": "Programmed hose length",
+    "optionB": "Vehicle charge specification",
+    "optionC": "Oil replacement measurement units",
+    "optionD": "Vacuum gauge elevation correction",
+    "question": "Longer charging hoses replace the original hoses. Which machine setting may need adjustment for accurate delivery?"
+  },
+  {
+    "reviewId": "R055",
+    "category": "epa609Equipment",
+    "optionA": "ASME tank defined in UL 1963",
+    "optionB": "DOT cylinder containing virgin refrigerant",
+    "optionC": "DOT cylinder with a new relief valve",
+    "optionD": "DOT cylinder used only on-site",
+    "question": "Which storage vessel is exempt from the five-year retesting requirement stated in SAE J2788?"
+  },
+  {
+    "reviewId": "R056",
+    "category": "epa609Rules",
+    "optionA": "Section 608 Type I",
+    "optionB": "Section 608 Type III",
+    "optionC": "Section 609 only",
+    "optionD": "Section 608 Type II",
+    "question": "Which certification applies to servicing a passenger bus air conditioner that uses HCFC-22 refrigerant?"
+  },
+  {
+    "reviewId": "R057",
+    "category": "epa609Yf",
+    "optionA": "Removal of refrigerant as electrical isolation",
+    "optionB": "Model-specific high-voltage isolation procedure",
+    "optionC": "Disconnection of only the cabin blower fuse",
+    "optionD": "Selection of the lowest thermostat setting",
+    "question": "What must precede repairs on a high-voltage electric A/C compressor in a hybrid vehicle?"
+  },
+  {
+    "reviewId": "R058",
+    "category": "epa609Equipment",
+    "optionA": "Brake hydraulic bleeder",
+    "optionB": "Fuel-injection test port",
+    "optionC": "Cooling-system pressure cap",
+    "optionD": "Power-steering reservoir inlet",
+    "question": "Which connection can accept a CFC-12 hose coupling despite belonging to another vehicle system?"
+  },
+  {
+    "reviewId": "R059",
+    "category": "epa609Rules",
+    "optionA": "Greater ozone loss relative to CFC-12",
+    "optionB": "Greater climate effect relative to CO2",
+    "optionC": "Higher system pressure at equal temperature",
+    "optionD": "Higher ignition temperature in workshop air",
+    "question": "A refrigerant has a higher GWP than another. What does that comparison describe?"
+  },
+  {
+    "reviewId": "R060",
+    "category": "epa609Rules",
+    "optionA": "Pickup truck cabin unit",
+    "optionB": "Highway tractor cab unit",
+    "optionC": "Passenger car cabin unit",
+    "optionD": "Sealed refrigerated cargo unit",
+    "question": "Which vehicle cooling system falls outside the regulatory definition of a motor vehicle air conditioner?"
+  },
+  {
+    "reviewId": "R061",
+    "category": "epa609Service",
+    "optionA": "Plastic shipping plug without a seal",
+    "optionB": "Valve-core spring pressure alone",
+    "optionC": "Correctly sealed service-port cap",
+    "optionD": "Tightness of exposed fitting threads",
+    "question": "What provides the primary seal against leakage at an MVAC service port after equipment is disconnected?"
+  },
+  {
+    "reviewId": "R062",
+    "category": "epa609Equipment",
+    "optionA": "Mixed with air under pressure",
+    "optionB": "Contained in a warm sealed cylinder",
+    "optionC": "Evacuated below atmospheric pressure",
+    "optionD": "Separated from compressor lubricant",
+    "question": "Under which condition can HFC-134a become combustible despite its usual classification as nonflammable?"
+  },
+  {
+    "reviewId": "R063",
+    "category": "epa609Equipment",
+    "optionA": "Refrigerant out to the atmosphere",
+    "optionB": "Surrounding air into the hose",
+    "optionC": "Equal flow inward and outward",
+    "optionD": "No flow below atmospheric pressure",
+    "question": "In which direction can gas flow through a leaking service hose while recovery creates a vacuum?"
+  },
+  {
+    "reviewId": "R064",
+    "category": "epa609Service",
+    "optionA": "Running compressors close all possible leaks",
+    "optionB": "Air movement can disperse escaping vapor",
+    "optionC": "Engine heat changes detector calibration",
+    "optionD": "Engine electrical noise mimics refrigerant",
+    "question": "Why should the vehicle engine be off during an electronic refrigerant leak check?"
+  },
+  {
+    "reviewId": "R065",
+    "category": "epa609Rules",
+    "optionA": "Receiving facility name and address",
+    "optionB": "Shipping technician certification number",
+    "optionC": "Recovered quantity by vehicle VIN",
+    "optionD": "Refrigerant type and recovery date",
+    "question": "Which record does Section 609 require when a service shop sends recovered refrigerant off-site?"
+  },
+  {
+    "reviewId": "R066",
+    "category": "epa609Rules",
+    "optionA": "Provide the shop business license",
+    "optionB": "Provide a pending course enrollment receipt",
+    "optionC": "Provide written proof of a certified employee",
+    "optionD": "Provide its recovery-machine purchase record",
+    "question": "How can an employer buy MVAC refrigerant through a representative without personally holding technician certification?"
+  },
+  {
+    "reviewId": "R067",
+    "category": "epa609Service",
+    "optionA": "Cleaner can interfere with the detector",
+    "optionB": "Cleaner raises the system static pressure",
+    "optionC": "Cloth activates the system fluorescent dye",
+    "optionD": "Cloth replaces an instrument calibration",
+    "question": "Why should a suspect joint be wiped with a clean cloth rather than solvent before electronic testing?"
+  },
+  {
+    "reviewId": "R068",
+    "category": "epa609Yf",
+    "optionA": "It is blocked pending leak correction",
+    "optionB": "It continues at half the programmed charge",
+    "optionC": "It increases the charge to replace leakage",
+    "optionD": "It advances to the pressure-test charge",
+    "question": "An R-1234yf machine detects excessive vacuum decay during its initial check. What happens to recharging?"
+  },
+  {
+    "reviewId": "R069",
+    "category": "epa609Equipment",
+    "optionA": "To change the compressor oil viscosity",
+    "optionB": "To remove moisture from the refrigerant hoses",
+    "optionC": "Isolate this job's collected quantity",
+    "optionD": "To increase refrigerant storage capacity",
+    "question": "Why should the machine's oil collection reservoir be emptied before starting another vehicle's recovery?"
+  },
+  {
+    "reviewId": "R070",
+    "category": "epa609Service",
+    "optionA": "Measure concentration from dye brightness",
+    "optionB": "Correct an unsuitable lamp wavelength",
+    "optionC": "Protect eyes and enhance dye contrast",
+    "optionD": "Permit direct viewing of the UV bulb",
+    "question": "Why use the specified glasses when inspecting an A/C system with a UV dye lamp?"
+  },
+  {
+    "reviewId": "R071",
+    "category": "epa609Service",
+    "optionA": "It alters the pressure-switch calibration",
+    "optionB": "It can dilute the lubricating oil",
+    "optionC": "It always increases lubricant viscosity",
+    "optionD": "It changes compressor clutch clearances",
+    "question": "Why can flushing solvent left inside an A/C circuit damage the compressor after service?"
+  },
+  {
+    "reviewId": "R072",
+    "category": "epa609Rules",
+    "optionA": "Two-pound can with a piercing-only closure",
+    "optionB": "Three-pound can with a self-sealing valve",
+    "optionC": "Two-pound can with a self-sealing valve",
+    "optionD": "Three-pound can sold with a charging hose",
+    "question": "With required fittings, which substitute-refrigerant container qualifies for uncertified DIY sales?"
+  },
+  {
+    "reviewId": "R073",
+    "category": "epa609Service",
+    "optionA": "Compare pressure with a chart alone",
+    "optionB": "Read the cylinder approval marking",
+    "optionC": "Check the printed supplier trade name",
+    "optionD": "Test with a suitable refrigerant identifier",
+    "question": "Which method checks the actual contents of a newly purchased refrigerant cylinder before use?"
+  },
+  {
+    "reviewId": "R074",
+    "category": "epa609Service",
+    "optionA": "Reduced compressor oil circulation",
+    "optionB": "Excess oil coating the heat exchangers",
+    "optionC": "Increased liquid slugging of the compressor",
+    "optionD": "Excessive pressure from an overfilled circuit",
+    "question": "Why can continued operation with too little refrigerant eventually damage a vehicle A/C compressor?"
+  },
+  {
+    "reviewId": "R075",
+    "category": "epa609Rules",
+    "optionA": "HFC-134a can still be used for service",
+    "optionB": "Its compressor must be converted to CO2",
+    "optionC": "Its next recharge must use HFO-1234yf",
+    "optionD": "Its existing refrigerant must be removed",
+    "question": "How do federal new-vehicle HFC restrictions affect servicing an existing vehicle designed for HFC-134a?"
+  },
+  {
+    "reviewId": "R076",
+    "category": "epa609Rules",
+    "optionA": "Its MVAC listing and use conditions",
+    "optionB": "Its approval in any refrigeration sector",
+    "optionC": "Its pressure matching the original fluid",
+    "optionD": "Its supplier describing it as compatible",
+    "question": "A substitute is accepted for commercial refrigeration. What establishes whether it is permitted in vehicle A/C?"
+  },
+  {
+    "reviewId": "R077",
+    "category": "epa609Service",
+    "optionA": "Oil increases evaporator air temperature sensing",
+    "optionB": "Oil coats heat-transfer surfaces",
+    "optionC": "Oil changes the pressure-switch setting",
+    "optionD": "Oil reduces the specified refrigerant mass",
+    "question": "How can excessive compressor oil reduce cooling even if the refrigerant quantity is otherwise correct?"
+  },
+  {
+    "reviewId": "R078",
+    "category": "epa609Rules",
+    "optionA": "Condenser fan timer relay",
+    "optionB": "Evaporator temperature probe",
+    "optionC": "High-pressure shutoff switch",
+    "optionD": "Low-pressure cycling switch",
+    "question": "A retrofit system has a pressure-relief device but no compressor cutoff. What additional control is required?"
+  },
+  {
+    "reviewId": "R079",
+    "category": "epa609Yf",
+    "optionA": "New unit complying with SAE J2842",
+    "optionB": "Original unit repaired by soldering",
+    "optionC": "R-134a unit with matching hose fittings",
+    "optionD": "Used unit with matching external dimensions",
+    "question": "Which replacement is appropriate for a leaking evaporator in an HFO-1234yf vehicle A/C system?"
+  },
+  {
+    "reviewId": "R080",
+    "category": "epa609Yf",
+    "optionA": "Enable a pressurized leak check",
+    "optionB": "Measure the compressor cooling capacity",
+    "optionC": "Replace the preceding vacuum decay check",
+    "optionD": "Determine the final charge by pressure",
+    "question": "Why does R-1234yf charging equipment introduce a partial charge before delivering the full programmed amount?"
+  },
+  {
+    "reviewId": "R081",
+    "category": "epa609Service",
+    "optionA": "91 ounces",
+    "optionB": "17.5 ounces",
+    "optionC": "28 ounces",
+    "optionD": "16.75 ounces",
+    "question": "A charge specification is 1.75 pounds. How many ounces should a scale set to ounces deliver?"
+  },
+  {
+    "reviewId": "R082",
+    "category": "epa609Equipment",
+    "optionA": "Mixed liquid and air phase",
+    "optionB": "Liquid phase",
+    "optionC": "Vapor phase",
+    "optionD": "Phase with the highest oil content",
+    "question": "From which phase must recycled HFC-134a be withdrawn for recharging or transfer under J2788?"
+  },
+  {
+    "reviewId": "R083",
+    "category": "epa609Yf",
+    "optionA": "SAE J2851",
+    "optionB": "SAE J2844",
+    "optionC": "SAE J2842",
+    "optionD": "SAE J2297",
+    "question": "Which equipment standard addresses recovery of contaminated R-134a or R-1234yf from vehicle air conditioners?"
+  },
+  {
+    "reviewId": "R084",
+    "category": "epa609Equipment",
+    "optionA": "Evacuate hoses; reset the service counter",
+    "optionB": "Purge air; restart the cleaning cycle",
+    "optionC": "Drain oil; reset the service counter",
+    "optionD": "Replace cartridge; verify its identity",
+    "question": "Which action satisfies a J2788 machine's maintenance requirement after its desiccant capacity is exhausted?"
+  },
+  {
+    "reviewId": "R085",
+    "category": "epa609Yf",
+    "optionA": "Highly flammable like propane",
+    "optionB": "Mildly flammable",
+    "optionC": "Nonflammable in every mixture",
+    "optionD": "Flammable only as a liquid",
+    "question": "How is HFO-1234yf described by its A2L flammability classification for mobile air conditioning?"
+  },
+  {
+    "reviewId": "R086",
+    "category": "epa609Rules",
+    "optionA": "It is a potent greenhouse gas",
+    "optionB": "It blocks the production of atmospheric oxygen",
+    "optionC": "It primarily increases incoming UVB",
+    "optionD": "It directly destroys stratospheric ozone",
+    "question": "Why does containing HFC-134a still matter environmentally even though it does not deplete ozone?"
+  },
+  {
+    "reviewId": "R087",
+    "category": "epa609Yf",
+    "optionA": "Vacuum decay gauge",
+    "optionB": "Compatible electronic leak detector",
+    "optionC": "UV dye inspection lamp",
+    "optionD": "Refrigerant purity identifier",
+    "question": "Which tool locates escaping HFO-1234yf vapor rather than checking refrigerant identity or system pressure?"
+  },
+  {
+    "reviewId": "R088",
+    "category": "epa609Yf",
+    "optionA": "Vehicle-specific lubricant specification",
+    "optionB": "Compressor motor voltage rating",
+    "optionC": "Refrigerant supplier compatibility chart",
+    "optionD": "Measured viscosity of recovered oil",
+    "question": "Which information determines the correct oil for an electrically driven compressor using HFO-1234yf?"
+  },
+  {
+    "reviewId": "R089",
+    "category": "epa609Rules",
+    "optionA": "Vehicle owner before transfer",
+    "optionB": "First dismantler receiving the vehicle",
+    "optionC": "Last shop performing A/C repairs",
+    "optionD": "Final person in the disposal chain",
+    "question": "Who must ensure refrigerant has been removed before an MVAC reaches final disposal?"
+  },
+  {
+    "reviewId": "R090",
+    "category": "epa609Equipment",
+    "optionA": "Liquid expansion reduces vapor space",
+    "optionB": "Warm vapor condenses into more liquid",
+    "optionC": "Heat raises the relief valve opening pressure",
+    "optionD": "Heat increases the cylinder internal volume",
+    "question": "Why must a refrigerant cylinder be protected from excessive heat during storage or transport?"
+  },
+  {
+    "reviewId": "R091",
+    "category": "epa609Equipment",
+    "optionA": "Increase coupler tightening force",
+    "optionB": "Add lubricant to restore its dimensions",
+    "optionC": "Extend the evacuation time before use",
+    "optionD": "Install an undamaged replacement",
+    "question": "A service-hose seal is swollen and distorted. Which maintenance action addresses that condition?"
+  },
+  {
+    "reviewId": "R092",
+    "category": "epa609Equipment",
+    "optionA": "Anywhere upstream of the tank valve",
+    "optionB": "Within 12 inches of the manifold end",
+    "optionC": "Within 12 inches of the vehicle end",
+    "optionD": "At the center of a six-foot hose",
+    "question": "Where should a service hose shutoff valve be located to limit refrigerant released during disconnection?"
+  },
+  {
+    "reviewId": "R093",
+    "category": "epa609Equipment",
+    "optionA": "Hose cut longer than its original length",
+    "optionB": "Worn carriers or mismatched dies",
+    "optionC": "Excess lubricant at the hose end",
+    "optionD": "Incorrect depth of fitting insertion",
+    "question": "An A/C hose crimp is oblong and irregular. Which equipment problem most directly explains that shape?"
+  },
+  {
+    "reviewId": "R094",
+    "category": "epa609Yf",
+    "optionA": "Released vapor can accumulate there",
+    "optionB": "Cold floor surfaces consume oxygen",
+    "optionC": "Low spaces prevent refrigerant from boiling",
+    "optionD": "Refrigerant ignites only below floor level",
+    "question": "Why must R-1234yf service areas include ventilation near pits and other low spaces?"
+  },
+  {
+    "reviewId": "R095",
+    "category": "epa609Service",
+    "optionA": "Keep air out of the refrigerant circuit",
+    "optionB": "Raise the circuit static pressure",
+    "optionC": "Cool the connection below ambient",
+    "optionD": "Concentrate escaping vapor",
+    "question": "Why temporarily enclose a suspect connection in foil before sampling it with a leak detector?"
+  },
+  {
+    "reviewId": "R096",
+    "category": "epa609Service",
+    "optionA": "Large openings at service connections",
+    "optionB": "Very fine multi-flow passages",
+    "optionC": "Wide spacing between external fins",
+    "optionD": "Single large-bore tube circuit",
+    "question": "Which condenser feature can make internal debris especially difficult to remove by flushing?"
+  },
+  {
+    "reviewId": "R097",
+    "category": "epa609Rules",
+    "optionA": "To limit refrigerant permeation",
+    "optionB": "To increase the required burst pressure",
+    "optionC": "To prevent a change in lubricant viscosity",
+    "optionD": "To match a different coupling diameter",
+    "question": "Why can a CFC-12 retrofit blend containing HCFC-22 require replacement with barrier hoses?"
+  },
+  {
+    "reviewId": "R098",
+    "category": "epa609Yf",
+    "optionA": "They use identical service connections",
+    "optionB": "Their refrigerant charge weights are identical",
+    "optionC": "Their vapor pressures can be very similar",
+    "optionD": "They have the same chemical composition",
+    "question": "Why is a familiar pressure reading insufficient to identify HFO-1234yf rather than HFC-134a?"
+  },
+  {
+    "reviewId": "R099",
+    "category": "epa609Equipment",
+    "optionA": "Permanent fitting only at gauge end",
+    "optionB": "Interchangeable fitting at vehicle end",
+    "optionC": "Permanent fitting at vehicle end",
+    "optionD": "Interchangeable fittings at both ends",
+    "question": "Which hose connection arrangement satisfies EPA requirements for refrigerant-specific fittings on a manifold gauge?"
+  },
+  {
+    "reviewId": "R100",
+    "category": "epa609Service",
+    "optionA": "Original label regardless of later revisions",
+    "optionB": "Quantity used before installing any replacement parts",
+    "optionC": "Largest quantity listed for the model range",
+    "optionD": "Revised quantity applicable to that vehicle",
+    "question": "A current manufacturer bulletin revises the original charge label. Which quantity should guide the recharge?"
+  }
+]

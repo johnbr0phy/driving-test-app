@@ -1,0 +1,10 @@
+lang fr  len-scale 1.2  rows 36  categories {'frvtcT3p': 36}
+letters {'A': 9, 'B': 9, 'C': 9, 'D': 9}  avg option 41 chars  key-longest 25%  key>1.2x 8%
+FAIL: stem echo: picking the option that alone repeats the stem's words is right 10 of 18 times, 7.6 marks per 50 over guessing (limit 4.5); e.g. FRVTC-T3P-006, FRVTC-T3P-009, FRVTC-T3P-010, FRVTC-T3P-013, FRVTC-T3P-016, FRVTC-T3P-019
+FAIL (1 errors)
+Traceback (most recent call last):
+  File "/Users/johnbrophy/tigertest-next20-progress/frvtc-research/validate-current.py", line 7, in <module>
+    subprocess.run(cmd,cwd=R,check=True)
+  File "/Users/johnbrophy/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/johnbrophy/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/bin/python3', '.claude/skills/exam-bank/scripts/validate_bank.py', '/Users/johnbrophy/tigertest-next20-progress/frvtc-research/t3p-final.json', '--rows', '36', '--lang', 'fr']' returned non-zero exit status 1.

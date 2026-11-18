@@ -26,6 +26,8 @@ repository. They are the same rules Claude Code follows.
 - **Edit the bank's source files** (under `tools/`) and rebuild; never hand-edit only the built JSON.
 - **Every fact comes from the exam owner's official documents**, recorded in the bank's
   `sources.md`. Never from prep sites, sample questions or memory.
+- **Short stems**: say the fact or situation and the ask, nothing more (median 12 to 18 words; `tools/check_stem_length.py`).
+- **Landing pages** are copies of the template; **a v2 exam with two tests** holds out only Test 2.
 - **An options-only review and perfectly even answer letters do not prove a bank is good.** Review
   stem and options together, as a test-wise candidate would.
 - Plain apostrophes, no em or en dashes, and never refer to an option by its position.

@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  linuxplus: {
+    answer:
+      "The CompTIA Linux+ exam (XK0-006) has a maximum of 90 questions in 90 minutes, multiple choice and performance-based, and you need 720 on a 100 to 900 scale to pass. It covers System Management 23%, Services and User Management 20%, Security 18%, Automation, Orchestration, and Scripting 17% and Troubleshooting 22%. XK0-006 launched on July 15, 2025, and the English XK0-005 exam retired on January 13, 2026.",
+    rows: [
+      { label: "Questions", value: "Up to 90" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "720 on a 100 to 900 scale" },
+      { label: "Exam code", value: "XK0-006 (replaced XK0-005)" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "CompTIA, at Pearson VUE or online" },
+    ],
+    basedOn: "the CompTIA Linux+ XK0-006 exam objectives (Document Version 5.0)",
+    source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/linux/" },
+  },
   nailtech: {
     answer:
       "Most US states license nail technicians (called manicurists in some states) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Nail Technology Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline weights infection control and safety 15 percent, anatomy and physiology 15 percent, chemistry of nail products 10 percent, pre-service 5 percent, nail service tools 13 percent, manicure and pedicure services 18 percent, nail enhancement services 20 percent and post-service 4 percent. Each state board sets its passing score; many use 75. Training hours, fees and the practical exam vary by state, and some states use a different exam provider.",

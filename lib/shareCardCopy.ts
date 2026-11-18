@@ -296,6 +296,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   mykpp: { title: "Malaysia KPP01 Theory Test", description: "Review road signs, markings, traffic rules, expressways and KEJARA points for your JPJ test." },
   hkdrive: { title: "Hong Kong Driving Written Test", description: "Study signs, junctions, expressways, seat belts and parking from the Road Users' Code." },
   netplus: { title: "CompTIA Network+ N10-009", description: "Practise networking concepts, implementation, operations, security and troubleshooting." },
+  linuxplus: { title: "CompTIA Linux+ XK0-006", description: "Practise system management, services and users, security, automation and scripting, and troubleshooting." },
   fortinse: { title: "Fortinet NSE 1 (FCF)", description: "Practice all ten modules of NSE 1 Cybersecurity and Cloud Fundamentals, the course that replaced FCF." },
   pentestplus: { title: "CompTIA PenTest+ PT0-003", description: "Practise scoping, reconnaissance, vulnerability analysis, exploitation and post-exploitation, all explained." },
   isc2cc: { title: "ISC2 CC", description: "Practise ISC2 Certified in Cybersecurity questions on security principles, governance, IAM, networks, cloud and incident response." },

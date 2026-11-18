@@ -178,6 +178,7 @@ export const TEACHES: Record<string, string> = {
   lsat: "LSAT prep",
   iimcat: "CAT coaching",
   netplus: "a networking or Network+ course",
+  linuxplus: "a Linux administration or Linux+ course",
   cysa: "a cybersecurity analyst or CySA+ course",
   ceh: "a CEH or ethical hacking course",
   sc200: "an SC-200 or Microsoft security operations course",

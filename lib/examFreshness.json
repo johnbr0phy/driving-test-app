@@ -477,6 +477,23 @@
       "what": "Editorial reminder to check the announced 2027–28 CSP redesign; this is not an official effective date.",
       "action": "Read the new CED when published and schedule a bank/format review before the redesigned course begins.",
       "source": "https://apcentral.collegeboard.org/courses/ap-computer-science-principles"
+    },
+    {
+      "exam": "linuxplus",
+      "date": "2026-01-13",
+      "kind": "sunset",
+      "what": "CompTIA retired the English Linux+ XK0-005 exam (Japanese, Portuguese and Spanish on April 14, 2026); XK0-006 (Linux+ V8, launched July 15, 2025) is the only version.",
+      "action": "Built to XK0-006 from the start; nothing to change.",
+      "source": "https://www.comptia.org/en-us/certifications/linux/",
+      "done": "2026-11-18"
+    },
+    {
+      "exam": "linuxplus",
+      "date": "2028-07-15",
+      "kind": "sunset",
+      "what": "CompTIA estimates XK0-006 retires about three years after its July 15, 2025 launch (estimated 2028).",
+      "action": "Watch for the XK0-007 objectives and rebuild when published.",
+      "source": "https://www.comptia.org/en-us/certifications/linux/"
     }
   ]
 }

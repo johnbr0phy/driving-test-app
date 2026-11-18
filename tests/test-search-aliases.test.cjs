@@ -7,6 +7,9 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["linux+", "US", "linuxplus"],
+  ["xk0-006", "US", "linuxplus"],
+  ["linux plus", "GB", "linuxplus"],
   ["servicenow csa", "US", "servicenowcsa"],
   ["service now csa", "UK", "servicenowcsa"],
   ["servicenow certified system administrator", "IN", "servicenowcsa"],

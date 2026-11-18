@@ -2402,6 +2402,19 @@
     --brand-border-light: 252 34% 89%;
     --brand-gradient-to: 265 50% 96%;
   }
+  /* CompTIA Linux+ XK0-006 theme: muted khaki amber (v2 exam; matches lib/v2/exams/linuxplus.ts theme) */
+  [data-theme="linuxplus"] {
+    --brand: 39 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 39 30% 96%;
+    --brand-hover: 39 25% 37%;
+    --brand-dark: 39 25% 33%;
+    --brand-darker: 39 28% 22%;
+    --brand-muted: 39 18% 70%;
+    --brand-border: 39 22% 80%;
+    --brand-border-light: 39 20% 89%;
+    --brand-gradient-to: 50 30% 96%;
+  }
 
   /* CompTIA CySA+ theme: deep magenta violet (v2 exam; matches lib/v2/exams/cysa.ts theme) */
   [data-theme="cysa"] {
@@ -8183,6 +8196,16 @@
     --brand-muted: 252 35% 45%;
     --brand-dark: 252 40% 65%;
     --brand-darker: 252 30% 78%;
+  }
+
+  .dark [data-theme="linuxplus"] {
+    --brand-light: 39 30% 13%;
+    --brand-gradient-to: 50 30% 11%;
+    --brand-border-light: 39 20% 24%;
+    --brand-border: 39 22% 34%;
+    --brand-muted: 39 18% 45%;
+    --brand-dark: 39 25% 65%;
+    --brand-darker: 39 28% 78%;
   }
 
   .dark [data-theme="cysa"] {

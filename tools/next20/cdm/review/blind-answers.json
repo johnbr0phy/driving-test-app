@@ -1,0 +1,1409 @@
+{
+ "CDM-NUT-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard2: 'recall all foods and beverages consumed in the past 24 hours, including portion sizes and meal timings'"
+ },
+ "CDM-NUT-002": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard1: 'Consult with the RDN or NDTR and Pharmacist to determine food-drug interactions'"
+ },
+ "CDM-NUT-003": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "cms-section-k: K0100 'whether any of the listed symptoms ... were evident during the 7-day look-back'"
+ },
+ "CDM-NUT-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard4: 'Focus on incorporating real foods first'"
+ },
+ "CDM-NUT-005": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-007": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "cms-section-k: 'At a point closest to 30 days ... closest to 180 days preceding the current weight'"
+ },
+ "CDM-NUT-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-011": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard4: 'Develop and maintain a standardized list of approved substitutions'"
+ },
+ "CDM-NUT-013": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Only option that has both a number and a time frame without hedging; answerable from SMART acronym logic alone (borderline: SMART is on the standard).",
+  "source": "practicestandards_nutrition-standard3: SMART objectives"
+ },
+ "CDM-NUT-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "cms-section-k: 'K0520C, mechanically altered diet ... (e.g., pureed food, thickened liquids)'"
+ },
+ "CDM-NUT-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard3: 'baseline care plan sections within the required 48 hours of admission'"
+ },
+ "CDM-NUT-020": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard3: 'completing the MDS within 14 days'"
+ },
+ "CDM-NUT-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-023": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "cms-section-k: 'Code 1, yes on physician-prescribed weight-loss regimen'"
+ },
+ "CDM-NUT-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "cms-section-k: 'K0520D, therapeutic diet (e.g., low salt, diabetic...)'"
+ },
+ "CDM-NUT-026": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "niddk-ckd: 'salt substitutes, which can be high in potassium'"
+ },
+ "CDM-NUT-028": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-029": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard4: 'Utilize Dietary Reference Intakes (DRIs) and Recommended Dietary Allowances (RDAs)'"
+ },
+ "CDM-NUT-030": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-031": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-032": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-033": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-034": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-035": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_nutrition-standard1: '>5% in 30 days'; 150->140 = 6.7%"
+ },
+ "CDM-NUT-036": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-037": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "niddk-ckd: 'words with PHOS'"
+ },
+ "CDM-NUT-038": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "niddk-ckd: 'damaged kidneys can't remove extra fluid'"
+ },
+ "CDM-NUT-039": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-NUT-040": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "'join the team meeting about changing her diet' maps directly to 'participation in care planning' by wording; other options are unrelated rights.",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Tare a Digital Scale'"
+ },
+ "CDM-FOO-002": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Marketing Guide ... amount of each fresh vegetable or fruit to purchase that, when trimmed...'"
+ },
+ "CDM-FOO-004": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Step 1: Review Recipes & Production Records'"
+ },
+ "CDM-FOO-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard2: specification list includes 'Product use'"
+ },
+ "CDM-FOO-006": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-007": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-008": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [],
+  "note": "ICN glossary lists braising both as moist-heat and as 'combination-cooking method'; answer still clear.",
+  "source": "icn-keystones: 'Braise \u2013 A combination-cooking method' (glossary also lists braising under moist heat)"
+ },
+ "CDM-FOO-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-011": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-013": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: '#16 (1/4 cup)'"
+ },
+ "CDM-FOO-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard3: 'Report QAPI results as needed to the Interdisciplinary Team'"
+ },
+ "CDM-FOO-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Emulsion \u2013 A uniform mixture of two unmixable liquids'"
+ },
+ "CDM-FOO-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard2: 'waste log to record and analyze discarded items'"
+ },
+ "CDM-FOO-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard2: 'policy requiring managerial approval for ingredient substitutions'"
+ },
+ "CDM-FOO-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-024": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Coagulation \u2013 irreversible transformation of proteins'"
+ },
+ "CDM-FOO-025": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Reduce \u2013 thickening and intensifying the flavor'"
+ },
+ "CDM-FOO-026": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard1: 'Comply with the most stringent state or federal regulation'"
+ },
+ "CDM-FOO-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard2/1: 'Test and adapt the recipe to the facility\u2019s specific conditions'"
+ },
+ "CDM-FOO-028": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-029": {
+  "answer": "C",
+  "confidence": "low",
+  "flags": [],
+  "note": "No source in research folder gives dice sizes; 1/2 inch is the common culinary standard (some texts use 3/8 inch).",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-030": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'two parts onion to one part each of celery and carrot'"
+ },
+ "CDM-FOO-031": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Blooming \u2013 spices are gently heated in oil'"
+ },
+ "CDM-FOO-032": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-033": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 4-204.112: 'warmest part of a mechanically refrigerated unit'"
+ },
+ "CDM-FOO-034": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 4-402.12(B): 'clearance space may be only 10 centimeters (4 inches)'"
+ },
+ "CDM-FOO-035": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Carryover cooking'"
+ },
+ "CDM-FOO-036": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-037": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Batch cook \u2013 Prepare a menu item in small amounts'"
+ },
+ "CDM-FOO-038": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Package size is variable depending on the supplier'"
+ },
+ "CDM-FOO-039": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-040": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-041": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_foodservice-standard2: 'nutritionally equivalent and suitable for special diets'"
+ },
+ "CDM-FOO-042": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-FOO-043": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'bottom of the meniscus ... eyes are level'"
+ },
+ "CDM-FOO-044": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "icn-keystones: 'Poach ... at 160 \u00b0F to 180 \u00b0F'"
+ },
+ "CDM-PER-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_personnelcommunications-standard1: '2,080 hours per year'"
+ },
+ "CDM-PER-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "practicestandards_personnelcommunications-standard2: 'behavioral interview questions that require ... examples of past experiences'"
+ },
+ "CDM-PER-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-401.11(B): 'may drink from a closed BEVERAGE container'"
+ },
+ "CDM-PER-006": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard1: 'staggered shifts or part-time positions, to reduce the need for overtime'"
+ },
+ "CDM-PER-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard2: 'Acknowledge and reward outstanding performance to motivate and retain'"
+ },
+ "CDM-PER-009": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "outline: 'Track absence/tardy records in personnel files'"
+ },
+ "CDM-PER-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard2: 'Develop personalized plans to address performance gaps'"
+ },
+ "CDM-PER-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard2 4.1: 'Communicate specific performance issues to the employee'"
+ },
+ "CDM-PER-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-303.11: 'Except for a plain ring such as a wedding band'"
+ },
+ "CDM-PER-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard3: 'Establishing contingency plans'"
+ },
+ "CDM-PER-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard2: 'Send out meeting minutes and follow up on action items'"
+ },
+ "CDM-PER-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "fmla: 'at least 50 employees at the site or within 75 miles'"
+ },
+ "CDM-PER-018": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard2: 'Develop comprehensive onboarding checklists'"
+ },
+ "CDM-PER-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "eeoc-disability: 'all individuals selected for the same job ... same examination'"
+ },
+ "CDM-PER-022": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-024": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard1: 'Cross-training ... provide full-time employment opportunities'"
+ },
+ "CDM-PER-025": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-026": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "fmla-guide: 'fitness-for-duty certification'"
+ },
+ "CDM-PER-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "userra: 'five years or less of cumulative service'"
+ },
+ "CDM-PER-028": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "userra: 'displaying the text of this notice where they customarily place notices'"
+ },
+ "CDM-PER-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-201.12(B): exclude if diagnosed with hepatitis A without symptoms"
+ },
+ "CDM-PER-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-031": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-302.11(B): 'Unless wearing intact gloves ... may not wear ... artificial fingernails'"
+ },
+ "CDM-PER-032": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-033": {
+  "answer": "B",
+  "confidence": "low",
+  "flags": [
+   "second",
+   "unclear"
+  ],
+  "note": "Food Code requires both an impermeable cover (finger cot) AND a single-use glove over it; 'what must cover a bandaged finger' lets a candidate defend Finger cot. Reword to 'what must be worn over the impermeable cover'.",
+  "source": "foodcode 2-201.11/2-201.13(I): 'impermeable cover such as a finger cot or stall and a single-use glove over the impermeable cover'"
+ },
+ "CDM-PER-034": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-201.12(C): 'Typhoid fever within the past 3 months'"
+ },
+ "CDM-PER-035": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-036": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "userra: 'advance written or verbal notice'"
+ },
+ "CDM-PER-037": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "userra: 'up to 24 months'"
+ },
+ "CDM-PER-038": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "outline: 'develop an appropriate plan of correction'"
+ },
+ "CDM-PER-039": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-PER-040": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "personnel-standard3: 'Divide objectives into smaller, manageable tasks, assign responsibilities, and establish a timeline'"
+ },
+ "CDM-SAF-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-501.15(B): 'maximum heat transfer ... Loosely covered'"
+ },
+ "CDM-SAF-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-501.17: 'maximum of 7 days. The day of preparation shall be counted as Day 1'"
+ },
+ "CDM-SAF-006": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-009": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-010": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-602.12(C): 'written notification'"
+ },
+ "CDM-SAF-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-013": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-014": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-202.11(B)/3-501.16: eggs 'ambient air temperature of 7\u00b0C (45\u00b0F) or less'"
+ },
+ "CDM-SAF-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-301.12: 'for at least 20 seconds'"
+ },
+ "CDM-SAF-017": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-018": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-201.12(D): asymptomatic Norovirus exclude in HSP, restrict otherwise"
+ },
+ "CDM-SAF-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 2-201.12(H): sore throat with fever restrict if not HSP"
+ },
+ "CDM-SAF-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 4-203.11(B): '\u00b12oF'"
+ },
+ "CDM-SAF-023": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-024": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-025": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-501.14: 'Within a total of 6 hours from 57\u00baC (135\u00baF) to 5\u00baC (41\u00b0F)'"
+ },
+ "CDM-SAF-026": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-027": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-028": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-203.12: 'retaining product tags ... for 90 calendar days'"
+ },
+ "CDM-SAF-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-031": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 8-404.12 resumption of operations by regulatory authority"
+ },
+ "CDM-SAF-032": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-033": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 3-501.14(B): 'within 4 hours ... if prepared from ingredients at ambient temperature'"
+ },
+ "CDM-SAF-034": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-035": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-036": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-037": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-038": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 4-501.112: '(2) For all other machines, 82oC (180oF)'"
+ },
+ "CDM-SAF-039": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-040": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-041": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-042": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "Duplicates CDM-SAF-045.",
+  "source": "foodcode 3-403.11(B): 'allowed to stand covered for 2 minutes'"
+ },
+ "CDM-SAF-043": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-044": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 5-202.13: 'twice the diameter ... not less than 25 mm (1 inch)'"
+ },
+ "CDM-SAF-045": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "Duplicates CDM-SAF-042 (same 3-403.11(B) stand-covered-2-minutes fact).",
+  "source": "foodcode 3-403.11(B): 'allowed to stand covered for 2 minutes'"
+ },
+ "CDM-SAF-046": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 4-602.11(B): 'succession of ... raw MEAT and POULTRY each requiring a higher cooking temperature'"
+ },
+ "CDM-SAF-047": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-SAF-048": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "foodcode 4-602.11(C): 'at least every 4 hours'"
+ },
+ "CDM-BUS-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "businessoperations-standard1: 'Complete a cost-benefit analysis to analyze replacing or repairing equipment'"
+ },
+ "CDM-BUS-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-006": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-008": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "Source is a USDA CSFP warehouse guide (sub-agency pickup receipts), an odd fit for a CDM kitchen, but key is defensible.",
+  "source": "inventory: 'The receipts can be compared to a book count to determine where inventory errors may'"
+ },
+ "CDM-BUS-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-011": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "businessoperations-standard3: ROI"
+ },
+ "CDM-BUS-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-020": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-021": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "businessoperations-standard1: 'Divide annual expenses and revenues into monthly amounts'"
+ },
+ "CDM-BUS-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-023": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-024": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-025": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-026": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ },
+ "CDM-BUS-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "businessoperations-standard3: 'permissible variance standard (e.g., 2-3%)'"
+ },
+ "CDM-BUS-028": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (computed or general knowledge)"
+ }
+}

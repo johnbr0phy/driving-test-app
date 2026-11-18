@@ -1,0 +1,802 @@
+[
+  {
+    "questionId": "CDM-NUT-001",
+    "sourceTags": "N2"
+  },
+  {
+    "questionId": "CDM-NUT-002",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-003",
+    "sourceTags": "CMS-K0100"
+  },
+  {
+    "questionId": "CDM-NUT-004",
+    "sourceTags": "N4"
+  },
+  {
+    "questionId": "CDM-NUT-005",
+    "sourceTags": "N4"
+  },
+  {
+    "questionId": "CDM-NUT-006",
+    "sourceTags": "CDC-BMI"
+  },
+  {
+    "questionId": "CDM-NUT-007",
+    "sourceTags": "CMS-K0300"
+  },
+  {
+    "questionId": "CDM-NUT-008",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-009",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-010",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-011",
+    "sourceTags": "CMS-K0100;N1"
+  },
+  {
+    "questionId": "CDM-NUT-012",
+    "sourceTags": "N4"
+  },
+  {
+    "questionId": "CDM-NUT-013",
+    "sourceTags": "NIDDK-CELIAC;FC1-201.10"
+  },
+  {
+    "questionId": "CDM-NUT-014",
+    "sourceTags": "N3"
+  },
+  {
+    "questionId": "CDM-NUT-015",
+    "sourceTags": "CDC-BMI"
+  },
+  {
+    "questionId": "CDM-NUT-016",
+    "sourceTags": "FDA-LABEL"
+  },
+  {
+    "questionId": "CDM-NUT-017",
+    "sourceTags": "N4"
+  },
+  {
+    "questionId": "CDM-NUT-018",
+    "sourceTags": "CMS-K0520"
+  },
+  {
+    "questionId": "CDM-NUT-019",
+    "sourceTags": "N3"
+  },
+  {
+    "questionId": "CDM-NUT-020",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-021",
+    "sourceTags": "N3"
+  },
+  {
+    "questionId": "CDM-NUT-022",
+    "sourceTags": "NIDDK-CELIAC"
+  },
+  {
+    "questionId": "CDM-NUT-023",
+    "sourceTags": "CMS-K0300"
+  },
+  {
+    "questionId": "CDM-NUT-024",
+    "sourceTags": "N4"
+  },
+  {
+    "questionId": "CDM-NUT-025",
+    "sourceTags": "CMS-K0520"
+  },
+  {
+    "questionId": "CDM-NUT-026",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-027",
+    "sourceTags": "NIDDK-CKD"
+  },
+  {
+    "questionId": "CDM-NUT-028",
+    "sourceTags": "FDA-LABEL"
+  },
+  {
+    "questionId": "CDM-NUT-029",
+    "sourceTags": "N4"
+  },
+  {
+    "questionId": "CDM-NUT-030",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-031",
+    "sourceTags": "FDA-LABEL"
+  },
+  {
+    "questionId": "CDM-NUT-032",
+    "sourceTags": "NIDDK-LACTOSE"
+  },
+  {
+    "questionId": "CDM-NUT-033",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-034",
+    "sourceTags": "NIDDK-LACTOSE"
+  },
+  {
+    "questionId": "CDM-NUT-035",
+    "sourceTags": "N1"
+  },
+  {
+    "questionId": "CDM-NUT-036",
+    "sourceTags": "NIDDK-CKD;FC1-201.10"
+  },
+  {
+    "questionId": "CDM-NUT-037",
+    "sourceTags": "NIDDK-CKD"
+  },
+  {
+    "questionId": "CDM-NUT-038",
+    "sourceTags": "NIDDK-CKD"
+  },
+  {
+    "questionId": "CDM-NUT-039",
+    "sourceTags": "CFR483.10"
+  },
+  {
+    "questionId": "CDM-NUT-040",
+    "sourceTags": "CFR483.10"
+  },
+  {
+    "questionId": "CDM-FOO-001",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-002",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-003",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-004",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-005",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-006",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-FOO-007",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-008",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-009",
+    "sourceTags": "F3"
+  },
+  {
+    "questionId": "CDM-FOO-010",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-011",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-012",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-013",
+    "sourceTags": "F1/F3"
+  },
+  {
+    "questionId": "CDM-FOO-014",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-015",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-016",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-017",
+    "sourceTags": "F3"
+  },
+  {
+    "questionId": "CDM-FOO-018",
+    "sourceTags": "F3"
+  },
+  {
+    "questionId": "CDM-FOO-019",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-020",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-021",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-022",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-023",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-024",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-025",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-026",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-027",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-028",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-029",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-030",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-031",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-032",
+    "sourceTags": "F3"
+  },
+  {
+    "questionId": "CDM-FOO-033",
+    "sourceTags": "FC4-204.112"
+  },
+  {
+    "questionId": "CDM-FOO-034",
+    "sourceTags": "FC4-402.12(B)"
+  },
+  {
+    "questionId": "CDM-FOO-035",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-036",
+    "sourceTags": "F1/F2"
+  },
+  {
+    "questionId": "CDM-FOO-037",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-038",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-039",
+    "sourceTags": "F3"
+  },
+  {
+    "questionId": "CDM-FOO-040",
+    "sourceTags": "F1"
+  },
+  {
+    "questionId": "CDM-FOO-041",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-042",
+    "sourceTags": "F2"
+  },
+  {
+    "questionId": "CDM-FOO-043",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-FOO-044",
+    "sourceTags": "ICN-KEYSTONES"
+  },
+  {
+    "questionId": "CDM-PER-001",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-002",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-003",
+    "sourceTags": "P2"
+  },
+  {
+    "questionId": "CDM-PER-004",
+    "sourceTags": "P2"
+  },
+  {
+    "questionId": "CDM-PER-005",
+    "sourceTags": "FC2-401.11"
+  },
+  {
+    "questionId": "CDM-PER-006",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-007",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-008",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-009",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-010",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-011",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-012",
+    "sourceTags": "FC2-303.11"
+  },
+  {
+    "questionId": "CDM-PER-013",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-014",
+    "sourceTags": "P3"
+  },
+  {
+    "questionId": "CDM-PER-015",
+    "sourceTags": "P2"
+  },
+  {
+    "questionId": "CDM-PER-016",
+    "sourceTags": "DOL-FMLA"
+  },
+  {
+    "questionId": "CDM-PER-017",
+    "sourceTags": "DOL-FMLA"
+  },
+  {
+    "questionId": "CDM-PER-018",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-019",
+    "sourceTags": "P2"
+  },
+  {
+    "questionId": "CDM-PER-020",
+    "sourceTags": "P1/P3"
+  },
+  {
+    "questionId": "CDM-PER-021",
+    "sourceTags": "EEOC-ADA"
+  },
+  {
+    "questionId": "CDM-PER-022",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-023",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-024",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-025",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-026",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-027",
+    "sourceTags": "DOL-USERRA"
+  },
+  {
+    "questionId": "CDM-PER-028",
+    "sourceTags": "DOL-USERRA"
+  },
+  {
+    "questionId": "CDM-PER-029",
+    "sourceTags": "FC2-201.12"
+  },
+  {
+    "questionId": "CDM-PER-030",
+    "sourceTags": "P1"
+  },
+  {
+    "questionId": "CDM-PER-031",
+    "sourceTags": "FC2-302.11"
+  },
+  {
+    "questionId": "CDM-PER-032",
+    "sourceTags": "DOL-USERRA"
+  },
+  {
+    "questionId": "CDM-PER-033",
+    "sourceTags": "FC2-401.13"
+  },
+  {
+    "questionId": "CDM-PER-034",
+    "sourceTags": "FC2-201.12"
+  },
+  {
+    "questionId": "CDM-PER-035",
+    "sourceTags": "P2;F1"
+  },
+  {
+    "questionId": "CDM-PER-036",
+    "sourceTags": "DOL-USERRA"
+  },
+  {
+    "questionId": "CDM-PER-037",
+    "sourceTags": "DOL-USERRA;CMS-COBRA"
+  },
+  {
+    "questionId": "CDM-PER-038",
+    "sourceTags": "P2;P3"
+  },
+  {
+    "questionId": "CDM-PER-039",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-PER-040",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
+    "questionId": "CDM-SAF-001",
+    "sourceTags": "FC3-501.16"
+  },
+  {
+    "questionId": "CDM-SAF-002",
+    "sourceTags": "FC3-501.14"
+  },
+  {
+    "questionId": "CDM-SAF-003",
+    "sourceTags": "FC3-401.11"
+  },
+  {
+    "questionId": "CDM-SAF-004",
+    "sourceTags": "FC3-501.15"
+  },
+  {
+    "questionId": "CDM-SAF-005",
+    "sourceTags": "FC3-501.17"
+  },
+  {
+    "questionId": "CDM-SAF-006",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-007",
+    "sourceTags": "FC3-202.11"
+  },
+  {
+    "questionId": "CDM-SAF-008",
+    "sourceTags": "FC2-301.14"
+  },
+  {
+    "questionId": "CDM-SAF-009",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-010",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-011",
+    "sourceTags": "FC3-602.12"
+  },
+  {
+    "questionId": "CDM-SAF-012",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-013",
+    "sourceTags": "FC3-403.11"
+  },
+  {
+    "questionId": "CDM-SAF-014",
+    "sourceTags": "FC3-202.11(C)"
+  },
+  {
+    "questionId": "CDM-SAF-015",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-016",
+    "sourceTags": "FC2-301.12"
+  },
+  {
+    "questionId": "CDM-SAF-017",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-018",
+    "sourceTags": "FC2-201.12(D)"
+  },
+  {
+    "questionId": "CDM-SAF-019",
+    "sourceTags": "FC3-501.17"
+  },
+  {
+    "questionId": "CDM-SAF-020",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-021",
+    "sourceTags": "FC2-201.12(H)"
+  },
+  {
+    "questionId": "CDM-SAF-022",
+    "sourceTags": "FC4-203.11"
+  },
+  {
+    "questionId": "CDM-SAF-023",
+    "sourceTags": "FC3-401.11"
+  },
+  {
+    "questionId": "CDM-SAF-024",
+    "sourceTags": "FC7-102.11"
+  },
+  {
+    "questionId": "CDM-SAF-025",
+    "sourceTags": "FC3-501.14"
+  },
+  {
+    "questionId": "CDM-SAF-026",
+    "sourceTags": "FC1-201.10"
+  },
+  {
+    "questionId": "CDM-SAF-027",
+    "sourceTags": "S2"
+  },
+  {
+    "questionId": "CDM-SAF-028",
+    "sourceTags": "FC3-501.19"
+  },
+  {
+    "questionId": "CDM-SAF-029",
+    "sourceTags": "FC3-203.12"
+  },
+  {
+    "questionId": "CDM-SAF-030",
+    "sourceTags": "FC3-501.16"
+  },
+  {
+    "questionId": "CDM-SAF-031",
+    "sourceTags": "FC8-404.12"
+  },
+  {
+    "questionId": "CDM-SAF-032",
+    "sourceTags": "FC2-103.11(O)"
+  },
+  {
+    "questionId": "CDM-SAF-033",
+    "sourceTags": "FC3-501.14"
+  },
+  {
+    "questionId": "CDM-SAF-034",
+    "sourceTags": "FC3-202.11(D)"
+  },
+  {
+    "questionId": "CDM-SAF-035",
+    "sourceTags": "OSHA-SDS"
+  },
+  {
+    "questionId": "CDM-SAF-036",
+    "sourceTags": "FC3-501.13"
+  },
+  {
+    "questionId": "CDM-SAF-037",
+    "sourceTags": "FC4-501.116"
+  },
+  {
+    "questionId": "CDM-SAF-038",
+    "sourceTags": "FC4-501.112"
+  },
+  {
+    "questionId": "CDM-SAF-039",
+    "sourceTags": "FC3-501.13"
+  },
+  {
+    "questionId": "CDM-SAF-040",
+    "sourceTags": "S3"
+  },
+  {
+    "questionId": "CDM-SAF-041",
+    "sourceTags": "OSHA-SDS"
+  },
+  {
+    "questionId": "CDM-SAF-042",
+    "sourceTags": "FC3-403.11"
+  },
+  {
+    "questionId": "CDM-SAF-043",
+    "sourceTags": "FC2-201.13(A)(1)"
+  },
+  {
+    "questionId": "CDM-SAF-044",
+    "sourceTags": "FC5-202.13"
+  },
+  {
+    "questionId": "CDM-SAF-045",
+    "sourceTags": "FC3-403.11"
+  },
+  {
+    "questionId": "CDM-SAF-046",
+    "sourceTags": "FC4-602.11(B)"
+  },
+  {
+    "questionId": "CDM-SAF-047",
+    "sourceTags": "FC3-202.16"
+  },
+  {
+    "questionId": "CDM-SAF-048",
+    "sourceTags": "FC4-602.11"
+  },
+  {
+    "questionId": "CDM-BUS-001",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-002",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-003",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-004",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-005",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-006",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-007",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-008",
+    "sourceTags": "WA-INVENTORY"
+  },
+  {
+    "questionId": "CDM-BUS-009",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-010",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-011",
+    "sourceTags": "B3"
+  },
+  {
+    "questionId": "CDM-BUS-012",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-013",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-014",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-015",
+    "sourceTags": "B3"
+  },
+  {
+    "questionId": "CDM-BUS-016",
+    "sourceTags": "B2"
+  },
+  {
+    "questionId": "CDM-BUS-017",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-018",
+    "sourceTags": "B3"
+  },
+  {
+    "questionId": "CDM-BUS-019",
+    "sourceTags": "B2/B3"
+  },
+  {
+    "questionId": "CDM-BUS-020",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-021",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-022",
+    "sourceTags": "B1"
+  },
+  {
+    "questionId": "CDM-BUS-023",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-024",
+    "sourceTags": "B3"
+  },
+  {
+    "questionId": "CDM-BUS-025",
+    "sourceTags": "B4"
+  },
+  {
+    "questionId": "CDM-BUS-026",
+    "sourceTags": "WA-INVENTORY"
+  },
+  {
+    "questionId": "CDM-BUS-027",
+    "sourceTags": "B3"
+  },
+  {
+    "questionId": "CDM-BUS-028",
+    "sourceTags": "B1"
+  }
+]

@@ -39,6 +39,7 @@ import "./appraiser";
 import "./zafirearm";
 import "./nccco";
 import "./vtne";
+import "./cdm";
 import "./caqc";
 import "./uklgv";
 import "./auqld";

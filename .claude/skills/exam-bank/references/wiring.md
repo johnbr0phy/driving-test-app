@@ -103,7 +103,11 @@ Then run `npx tsx scripts/build-training-parts.ts` (it writes the exam's practic
 `lib/trainingParts.json`).
 
 ## 9. `app/<landing>/page.tsx`
-Model on `app/vtne-practice-test/page.tsx`. Keep the structure: the `<h1>` reads "Free <Name> Practice
+Copy `app/vtne-practice-test/page.tsx` (v1) or `app/isc2-cc-practice-test/page.tsx` (v2) and change
+only the content: same sections, same classes, same order. Do not write a shorter layout of your own
+(a batch of ten did in Nov 2026: left-aligned hero copy, no How It Works cards, plain sections).
+`tests/landing-template.test.cjs` fails a landing without the centred hero, `id="how-it-works"`,
+facts, sample questions, related tests and the final gradient CTA. Keep the structure: the `<h1>` reads "Free <Name> Practice
 Test <year>" and the metadata title says Free too (`tests/landing-free-to-start.test.cjs`), metadata (title with the
 year, description, keywords, canonical, OG image `/og/<id>`), `WebApplication` + `Organization`
 + `FAQPage` JSON-LD, `<ExamLandingHero>` with `shots` at

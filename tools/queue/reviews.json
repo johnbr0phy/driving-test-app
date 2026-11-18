@@ -102,7 +102,14 @@
         "status": "pending",
         "optionsOnlyCorrect": 140,
         "optionsOnlyTotal": 200,
-        "note": "All 200 intended keys matched; two final wording corrections applied. Not a completed quality review. See tools/next20/cdm/REVIEW_STATUS.md."
+        "note": "Codex draft. Superseded by the 2026-11-18 review; see tools/next20/cdm/REVIEW.md."
+      },
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 880,
+        "findings": 7,
+        "note": "Blind keys 198/200, both disagreements fixed. Options-only 126/200 under the cue-based rule; 15 surface-cue items rewritten, recheck at the 3% limit. See tools/next20/cdm/REVIEW.md."
       }
     ]
   }

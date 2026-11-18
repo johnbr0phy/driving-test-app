@@ -1,0 +1,77 @@
+{
+"X001": {
+"key": "C",
+"questionId": "CDM-FOO-022",
+"category": "cdmFoodservice"
+},
+"X002": {
+"key": "B",
+"questionId": "CDM-PER-007",
+"category": "cdmPersonnel"
+},
+"X003": {
+"key": "D",
+"questionId": "CDM-FOO-013",
+"category": "cdmFoodservice"
+},
+"X004": {
+"key": "B",
+"questionId": "CDM-PER-010",
+"category": "cdmPersonnel"
+},
+"X005": {
+"key": "D",
+"questionId": "CDM-NUT-007",
+"category": "cdmNutrition"
+},
+"X006": {
+"key": "D",
+"questionId": "CDM-PER-024",
+"category": "cdmPersonnel"
+},
+"X007": {
+"key": "D",
+"questionId": "CDM-NUT-014",
+"category": "cdmNutrition"
+},
+"X008": {
+"key": "C",
+"questionId": "CDM-SAF-026",
+"category": "cdmSafety"
+},
+"X009": {
+"key": "A",
+"questionId": "CDM-FOO-017",
+"category": "cdmFoodservice"
+},
+"X010": {
+"key": "A",
+"questionId": "CDM-BUS-002",
+"category": "cdmBusiness"
+},
+"X011": {
+"key": "A",
+"questionId": "CDM-PER-040",
+"category": "cdmPersonnel"
+},
+"X012": {
+"key": "B",
+"questionId": "CDM-PER-008",
+"category": "cdmPersonnel"
+},
+"X013": {
+"key": "B",
+"questionId": "CDM-PER-011",
+"category": "cdmPersonnel"
+},
+"X014": {
+"key": "B",
+"questionId": "CDM-NUT-028",
+"category": "cdmNutrition"
+},
+"X015": {
+"key": "A",
+"questionId": "CDM-FOO-041",
+"category": "cdmFoodservice"
+}
+}

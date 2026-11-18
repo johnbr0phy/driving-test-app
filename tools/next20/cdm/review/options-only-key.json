@@ -1,0 +1,1002 @@
+{
+"X001": {
+"key": "B",
+"questionId": "CDM-NUT-001",
+"category": "cdmNutrition"
+},
+"X002": {
+"key": "A",
+"questionId": "CDM-PER-004",
+"category": "cdmPersonnel"
+},
+"X003": {
+"key": "B",
+"questionId": "CDM-FOO-040",
+"category": "cdmFoodservice"
+},
+"X004": {
+"key": "B",
+"questionId": "CDM-NUT-004",
+"category": "cdmNutrition"
+},
+"X005": {
+"key": "C",
+"questionId": "CDM-NUT-022",
+"category": "cdmNutrition"
+},
+"X006": {
+"key": "B",
+"questionId": "CDM-SAF-015",
+"category": "cdmSafety"
+},
+"X007": {
+"key": "D",
+"questionId": "CDM-FOO-031",
+"category": "cdmFoodservice"
+},
+"X008": {
+"key": "A",
+"questionId": "CDM-NUT-037",
+"category": "cdmNutrition"
+},
+"X009": {
+"key": "A",
+"questionId": "CDM-BUS-017",
+"category": "cdmBusiness"
+},
+"X010": {
+"key": "B",
+"questionId": "CDM-SAF-010",
+"category": "cdmSafety"
+},
+"X011": {
+"key": "D",
+"questionId": "CDM-FOO-005",
+"category": "cdmFoodservice"
+},
+"X012": {
+"key": "C",
+"questionId": "CDM-SAF-001",
+"category": "cdmSafety"
+},
+"X013": {
+"key": "C",
+"questionId": "CDM-SAF-003",
+"category": "cdmSafety"
+},
+"X014": {
+"key": "D",
+"questionId": "CDM-NUT-035",
+"category": "cdmNutrition"
+},
+"X015": {
+"key": "A",
+"questionId": "CDM-BUS-026",
+"category": "cdmBusiness"
+},
+"X016": {
+"key": "D",
+"questionId": "CDM-PER-029",
+"category": "cdmPersonnel"
+},
+"X017": {
+"key": "B",
+"questionId": "CDM-PER-033",
+"category": "cdmPersonnel"
+},
+"X018": {
+"key": "C",
+"questionId": "CDM-PER-012",
+"category": "cdmPersonnel"
+},
+"X019": {
+"key": "D",
+"questionId": "CDM-SAF-004",
+"category": "cdmSafety"
+},
+"X020": {
+"key": "D",
+"questionId": "CDM-FOO-022",
+"category": "cdmFoodservice"
+},
+"X021": {
+"key": "B",
+"questionId": "CDM-NUT-034",
+"category": "cdmNutrition"
+},
+"X022": {
+"key": "A",
+"questionId": "CDM-FOO-026",
+"category": "cdmFoodservice"
+},
+"X023": {
+"key": "C",
+"questionId": "CDM-PER-018",
+"category": "cdmPersonnel"
+},
+"X024": {
+"key": "A",
+"questionId": "CDM-SAF-006",
+"category": "cdmSafety"
+},
+"X025": {
+"key": "A",
+"questionId": "CDM-FOO-032",
+"category": "cdmFoodservice"
+},
+"X026": {
+"key": "C",
+"questionId": "CDM-PER-039",
+"category": "cdmPersonnel"
+},
+"X027": {
+"key": "B",
+"questionId": "CDM-SAF-021",
+"category": "cdmSafety"
+},
+"X028": {
+"key": "C",
+"questionId": "CDM-NUT-011",
+"category": "cdmNutrition"
+},
+"X029": {
+"key": "B",
+"questionId": "CDM-PER-014",
+"category": "cdmPersonnel"
+},
+"X030": {
+"key": "B",
+"questionId": "CDM-NUT-021",
+"category": "cdmNutrition"
+},
+"X031": {
+"key": "C",
+"questionId": "CDM-BUS-021",
+"category": "cdmBusiness"
+},
+"X032": {
+"key": "D",
+"questionId": "CDM-FOO-044",
+"category": "cdmFoodservice"
+},
+"X033": {
+"key": "B",
+"questionId": "CDM-FOO-027",
+"category": "cdmFoodservice"
+},
+"X034": {
+"key": "B",
+"questionId": "CDM-FOO-016",
+"category": "cdmFoodservice"
+},
+"X035": {
+"key": "D",
+"questionId": "CDM-SAF-011",
+"category": "cdmSafety"
+},
+"X036": {
+"key": "D",
+"questionId": "CDM-PER-019",
+"category": "cdmPersonnel"
+},
+"X037": {
+"key": "B",
+"questionId": "CDM-FOO-034",
+"category": "cdmFoodservice"
+},
+"X038": {
+"key": "D",
+"questionId": "CDM-PER-025",
+"category": "cdmPersonnel"
+},
+"X039": {
+"key": "A",
+"questionId": "CDM-PER-015",
+"category": "cdmPersonnel"
+},
+"X040": {
+"key": "B",
+"questionId": "CDM-NUT-028",
+"category": "cdmNutrition"
+},
+"X041": {
+"key": "C",
+"questionId": "CDM-SAF-014",
+"category": "cdmSafety"
+},
+"X042": {
+"key": "D",
+"questionId": "CDM-SAF-017",
+"category": "cdmSafety"
+},
+"X043": {
+"key": "B",
+"questionId": "CDM-NUT-039",
+"category": "cdmNutrition"
+},
+"X044": {
+"key": "B",
+"questionId": "CDM-NUT-026",
+"category": "cdmNutrition"
+},
+"X045": {
+"key": "A",
+"questionId": "CDM-PER-035",
+"category": "cdmPersonnel"
+},
+"X046": {
+"key": "C",
+"questionId": "CDM-SAF-048",
+"category": "cdmSafety"
+},
+"X047": {
+"key": "D",
+"questionId": "CDM-BUS-022",
+"category": "cdmBusiness"
+},
+"X048": {
+"key": "A",
+"questionId": "CDM-SAF-016",
+"category": "cdmSafety"
+},
+"X049": {
+"key": "A",
+"questionId": "CDM-PER-010",
+"category": "cdmPersonnel"
+},
+"X050": {
+"key": "C",
+"questionId": "CDM-SAF-034",
+"category": "cdmSafety"
+},
+"X051": {
+"key": "C",
+"questionId": "CDM-NUT-027",
+"category": "cdmNutrition"
+},
+"X052": {
+"key": "B",
+"questionId": "CDM-SAF-039",
+"category": "cdmSafety"
+},
+"X053": {
+"key": "C",
+"questionId": "CDM-FOO-036",
+"category": "cdmFoodservice"
+},
+"X054": {
+"key": "B",
+"questionId": "CDM-BUS-011",
+"category": "cdmBusiness"
+},
+"X055": {
+"key": "B",
+"questionId": "CDM-SAF-040",
+"category": "cdmSafety"
+},
+"X056": {
+"key": "A",
+"questionId": "CDM-PER-009",
+"category": "cdmPersonnel"
+},
+"X057": {
+"key": "A",
+"questionId": "CDM-SAF-012",
+"category": "cdmSafety"
+},
+"X058": {
+"key": "B",
+"questionId": "CDM-FOO-024",
+"category": "cdmFoodservice"
+},
+"X059": {
+"key": "B",
+"questionId": "CDM-FOO-002",
+"category": "cdmFoodservice"
+},
+"X060": {
+"key": "D",
+"questionId": "CDM-BUS-012",
+"category": "cdmBusiness"
+},
+"X061": {
+"key": "B",
+"questionId": "CDM-NUT-040",
+"category": "cdmNutrition"
+},
+"X062": {
+"key": "A",
+"questionId": "CDM-NUT-038",
+"category": "cdmNutrition"
+},
+"X063": {
+"key": "D",
+"questionId": "CDM-FOO-020",
+"category": "cdmFoodservice"
+},
+"X064": {
+"key": "D",
+"questionId": "CDM-NUT-016",
+"category": "cdmNutrition"
+},
+"X065": {
+"key": "D",
+"questionId": "CDM-SAF-025",
+"category": "cdmSafety"
+},
+"X066": {
+"key": "D",
+"questionId": "CDM-PER-016",
+"category": "cdmPersonnel"
+},
+"X067": {
+"key": "A",
+"questionId": "CDM-FOO-025",
+"category": "cdmFoodservice"
+},
+"X068": {
+"key": "A",
+"questionId": "CDM-BUS-013",
+"category": "cdmBusiness"
+},
+"X069": {
+"key": "C",
+"questionId": "CDM-BUS-006",
+"category": "cdmBusiness"
+},
+"X070": {
+"key": "D",
+"questionId": "CDM-PER-020",
+"category": "cdmPersonnel"
+},
+"X071": {
+"key": "A",
+"questionId": "CDM-SAF-046",
+"category": "cdmSafety"
+},
+"X072": {
+"key": "D",
+"questionId": "CDM-FOO-004",
+"category": "cdmFoodservice"
+},
+"X073": {
+"key": "C",
+"questionId": "CDM-PER-031",
+"category": "cdmPersonnel"
+},
+"X074": {
+"key": "A",
+"questionId": "CDM-SAF-002",
+"category": "cdmSafety"
+},
+"X075": {
+"key": "A",
+"questionId": "CDM-SAF-042",
+"category": "cdmSafety"
+},
+"X076": {
+"key": "C",
+"questionId": "CDM-PER-034",
+"category": "cdmPersonnel"
+},
+"X077": {
+"key": "D",
+"questionId": "CDM-BUS-003",
+"category": "cdmBusiness"
+},
+"X078": {
+"key": "A",
+"questionId": "CDM-SAF-038",
+"category": "cdmSafety"
+},
+"X079": {
+"key": "A",
+"questionId": "CDM-PER-001",
+"category": "cdmPersonnel"
+},
+"X080": {
+"key": "A",
+"questionId": "CDM-SAF-027",
+"category": "cdmSafety"
+},
+"X081": {
+"key": "B",
+"questionId": "CDM-NUT-012",
+"category": "cdmNutrition"
+},
+"X082": {
+"key": "C",
+"questionId": "CDM-PER-026",
+"category": "cdmPersonnel"
+},
+"X083": {
+"key": "D",
+"questionId": "CDM-FOO-008",
+"category": "cdmFoodservice"
+},
+"X084": {
+"key": "C",
+"questionId": "CDM-SAF-037",
+"category": "cdmSafety"
+},
+"X085": {
+"key": "D",
+"questionId": "CDM-PER-030",
+"category": "cdmPersonnel"
+},
+"X086": {
+"key": "D",
+"questionId": "CDM-BUS-015",
+"category": "cdmBusiness"
+},
+"X087": {
+"key": "C",
+"questionId": "CDM-NUT-023",
+"category": "cdmNutrition"
+},
+"X088": {
+"key": "D",
+"questionId": "CDM-BUS-016",
+"category": "cdmBusiness"
+},
+"X089": {
+"key": "D",
+"questionId": "CDM-PER-024",
+"category": "cdmPersonnel"
+},
+"X090": {
+"key": "C",
+"questionId": "CDM-SAF-013",
+"category": "cdmSafety"
+},
+"X091": {
+"key": "B",
+"questionId": "CDM-BUS-005",
+"category": "cdmBusiness"
+},
+"X092": {
+"key": "B",
+"questionId": "CDM-BUS-001",
+"category": "cdmBusiness"
+},
+"X093": {
+"key": "B",
+"questionId": "CDM-PER-028",
+"category": "cdmPersonnel"
+},
+"X094": {
+"key": "A",
+"questionId": "CDM-FOO-014",
+"category": "cdmFoodservice"
+},
+"X095": {
+"key": "D",
+"questionId": "CDM-FOO-029",
+"category": "cdmFoodservice"
+},
+"X096": {
+"key": "C",
+"questionId": "CDM-PER-023",
+"category": "cdmPersonnel"
+},
+"X097": {
+"key": "A",
+"questionId": "CDM-NUT-017",
+"category": "cdmNutrition"
+},
+"X098": {
+"key": "B",
+"questionId": "CDM-NUT-024",
+"category": "cdmNutrition"
+},
+"X099": {
+"key": "B",
+"questionId": "CDM-PER-006",
+"category": "cdmPersonnel"
+},
+"X100": {
+"key": "C",
+"questionId": "CDM-PER-027",
+"category": "cdmPersonnel"
+},
+"X101": {
+"key": "C",
+"questionId": "CDM-PER-017",
+"category": "cdmPersonnel"
+},
+"X102": {
+"key": "D",
+"questionId": "CDM-SAF-035",
+"category": "cdmSafety"
+},
+"X103": {
+"key": "B",
+"questionId": "CDM-FOO-043",
+"category": "cdmFoodservice"
+},
+"X104": {
+"key": "C",
+"questionId": "CDM-PER-037",
+"category": "cdmPersonnel"
+},
+"X105": {
+"key": "A",
+"questionId": "CDM-PER-032",
+"category": "cdmPersonnel"
+},
+"X106": {
+"key": "C",
+"questionId": "CDM-SAF-032",
+"category": "cdmSafety"
+},
+"X107": {
+"key": "A",
+"questionId": "CDM-NUT-005",
+"category": "cdmNutrition"
+},
+"X108": {
+"key": "A",
+"questionId": "CDM-FOO-035",
+"category": "cdmFoodservice"
+},
+"X109": {
+"key": "A",
+"questionId": "CDM-SAF-022",
+"category": "cdmSafety"
+},
+"X110": {
+"key": "C",
+"questionId": "CDM-PER-005",
+"category": "cdmPersonnel"
+},
+"X111": {
+"key": "D",
+"questionId": "CDM-PER-038",
+"category": "cdmPersonnel"
+},
+"X112": {
+"key": "D",
+"questionId": "CDM-BUS-009",
+"category": "cdmBusiness"
+},
+"X113": {
+"key": "D",
+"questionId": "CDM-FOO-018",
+"category": "cdmFoodservice"
+},
+"X114": {
+"key": "C",
+"questionId": "CDM-FOO-019",
+"category": "cdmFoodservice"
+},
+"X115": {
+"key": "C",
+"questionId": "CDM-PER-008",
+"category": "cdmPersonnel"
+},
+"X116": {
+"key": "D",
+"questionId": "CDM-SAF-019",
+"category": "cdmSafety"
+},
+"X117": {
+"key": "C",
+"questionId": "CDM-NUT-030",
+"category": "cdmNutrition"
+},
+"X118": {
+"key": "D",
+"questionId": "CDM-FOO-030",
+"category": "cdmFoodservice"
+},
+"X119": {
+"key": "D",
+"questionId": "CDM-FOO-038",
+"category": "cdmFoodservice"
+},
+"X120": {
+"key": "D",
+"questionId": "CDM-BUS-023",
+"category": "cdmBusiness"
+},
+"X121": {
+"key": "C",
+"questionId": "CDM-NUT-036",
+"category": "cdmNutrition"
+},
+"X122": {
+"key": "D",
+"questionId": "CDM-BUS-020",
+"category": "cdmBusiness"
+},
+"X123": {
+"key": "D",
+"questionId": "CDM-FOO-042",
+"category": "cdmFoodservice"
+},
+"X124": {
+"key": "C",
+"questionId": "CDM-NUT-013",
+"category": "cdmNutrition"
+},
+"X125": {
+"key": "D",
+"questionId": "CDM-PER-003",
+"category": "cdmPersonnel"
+},
+"X126": {
+"key": "A",
+"questionId": "CDM-NUT-003",
+"category": "cdmNutrition"
+},
+"X127": {
+"key": "C",
+"questionId": "CDM-PER-013",
+"category": "cdmPersonnel"
+},
+"X128": {
+"key": "D",
+"questionId": "CDM-PER-022",
+"category": "cdmPersonnel"
+},
+"X129": {
+"key": "D",
+"questionId": "CDM-SAF-045",
+"category": "cdmSafety"
+},
+"X130": {
+"key": "A",
+"questionId": "CDM-NUT-009",
+"category": "cdmNutrition"
+},
+"X131": {
+"key": "A",
+"questionId": "CDM-BUS-004",
+"category": "cdmBusiness"
+},
+"X132": {
+"key": "D",
+"questionId": "CDM-NUT-007",
+"category": "cdmNutrition"
+},
+"X133": {
+"key": "A",
+"questionId": "CDM-BUS-014",
+"category": "cdmBusiness"
+},
+"X134": {
+"key": "B",
+"questionId": "CDM-FOO-013",
+"category": "cdmFoodservice"
+},
+"X135": {
+"key": "A",
+"questionId": "CDM-PER-021",
+"category": "cdmPersonnel"
+},
+"X136": {
+"key": "D",
+"questionId": "CDM-SAF-031",
+"category": "cdmSafety"
+},
+"X137": {
+"key": "B",
+"questionId": "CDM-BUS-010",
+"category": "cdmBusiness"
+},
+"X138": {
+"key": "C",
+"questionId": "CDM-FOO-015",
+"category": "cdmFoodservice"
+},
+"X139": {
+"key": "B",
+"questionId": "CDM-SAF-008",
+"category": "cdmSafety"
+},
+"X140": {
+"key": "A",
+"questionId": "CDM-SAF-043",
+"category": "cdmSafety"
+},
+"X141": {
+"key": "A",
+"questionId": "CDM-SAF-009",
+"category": "cdmSafety"
+},
+"X142": {
+"key": "A",
+"questionId": "CDM-FOO-003",
+"category": "cdmFoodservice"
+},
+"X143": {
+"key": "D",
+"questionId": "CDM-SAF-005",
+"category": "cdmSafety"
+},
+"X144": {
+"key": "B",
+"questionId": "CDM-PER-002",
+"category": "cdmPersonnel"
+},
+"X145": {
+"key": "A",
+"questionId": "CDM-SAF-036",
+"category": "cdmSafety"
+},
+"X146": {
+"key": "D",
+"questionId": "CDM-SAF-028",
+"category": "cdmSafety"
+},
+"X147": {
+"key": "D",
+"questionId": "CDM-FOO-009",
+"category": "cdmFoodservice"
+},
+"X148": {
+"key": "C",
+"questionId": "CDM-FOO-039",
+"category": "cdmFoodservice"
+},
+"X149": {
+"key": "B",
+"questionId": "CDM-FOO-012",
+"category": "cdmFoodservice"
+},
+"X150": {
+"key": "A",
+"questionId": "CDM-SAF-007",
+"category": "cdmSafety"
+},
+"X151": {
+"key": "C",
+"questionId": "CDM-PER-007",
+"category": "cdmPersonnel"
+},
+"X152": {
+"key": "D",
+"questionId": "CDM-NUT-029",
+"category": "cdmNutrition"
+},
+"X153": {
+"key": "A",
+"questionId": "CDM-BUS-027",
+"category": "cdmBusiness"
+},
+"X154": {
+"key": "B",
+"questionId": "CDM-FOO-010",
+"category": "cdmFoodservice"
+},
+"X155": {
+"key": "D",
+"questionId": "CDM-FOO-023",
+"category": "cdmFoodservice"
+},
+"X156": {
+"key": "D",
+"questionId": "CDM-NUT-025",
+"category": "cdmNutrition"
+},
+"X157": {
+"key": "A",
+"questionId": "CDM-NUT-015",
+"category": "cdmNutrition"
+},
+"X158": {
+"key": "A",
+"questionId": "CDM-FOO-017",
+"category": "cdmFoodservice"
+},
+"X159": {
+"key": "C",
+"questionId": "CDM-FOO-001",
+"category": "cdmFoodservice"
+},
+"X160": {
+"key": "D",
+"questionId": "CDM-NUT-033",
+"category": "cdmNutrition"
+},
+"X161": {
+"key": "C",
+"questionId": "CDM-FOO-041",
+"category": "cdmFoodservice"
+},
+"X162": {
+"key": "C",
+"questionId": "CDM-FOO-007",
+"category": "cdmFoodservice"
+},
+"X163": {
+"key": "A",
+"questionId": "CDM-BUS-018",
+"category": "cdmBusiness"
+},
+"X164": {
+"key": "D",
+"questionId": "CDM-PER-036",
+"category": "cdmPersonnel"
+},
+"X165": {
+"key": "B",
+"questionId": "CDM-SAF-033",
+"category": "cdmSafety"
+},
+"X166": {
+"key": "D",
+"questionId": "CDM-SAF-030",
+"category": "cdmSafety"
+},
+"X167": {
+"key": "C",
+"questionId": "CDM-SAF-024",
+"category": "cdmSafety"
+},
+"X168": {
+"key": "D",
+"questionId": "CDM-SAF-044",
+"category": "cdmSafety"
+},
+"X169": {
+"key": "C",
+"questionId": "CDM-FOO-006",
+"category": "cdmFoodservice"
+},
+"X170": {
+"key": "A",
+"questionId": "CDM-SAF-041",
+"category": "cdmSafety"
+},
+"X171": {
+"key": "B",
+"questionId": "CDM-NUT-020",
+"category": "cdmNutrition"
+},
+"X172": {
+"key": "C",
+"questionId": "CDM-NUT-018",
+"category": "cdmNutrition"
+},
+"X173": {
+"key": "A",
+"questionId": "CDM-SAF-020",
+"category": "cdmSafety"
+},
+"X174": {
+"key": "D",
+"questionId": "CDM-FOO-021",
+"category": "cdmFoodservice"
+},
+"X175": {
+"key": "C",
+"questionId": "CDM-SAF-029",
+"category": "cdmSafety"
+},
+"X176": {
+"key": "B",
+"questionId": "CDM-BUS-024",
+"category": "cdmBusiness"
+},
+"X177": {
+"key": "A",
+"questionId": "CDM-SAF-026",
+"category": "cdmSafety"
+},
+"X178": {
+"key": "C",
+"questionId": "CDM-SAF-018",
+"category": "cdmSafety"
+},
+"X179": {
+"key": "D",
+"questionId": "CDM-PER-040",
+"category": "cdmPersonnel"
+},
+"X180": {
+"key": "D",
+"questionId": "CDM-BUS-008",
+"category": "cdmBusiness"
+},
+"X181": {
+"key": "D",
+"questionId": "CDM-NUT-014",
+"category": "cdmNutrition"
+},
+"X182": {
+"key": "C",
+"questionId": "CDM-BUS-025",
+"category": "cdmBusiness"
+},
+"X183": {
+"key": "A",
+"questionId": "CDM-PER-011",
+"category": "cdmPersonnel"
+},
+"X184": {
+"key": "B",
+"questionId": "CDM-NUT-002",
+"category": "cdmNutrition"
+},
+"X185": {
+"key": "C",
+"questionId": "CDM-BUS-002",
+"category": "cdmBusiness"
+},
+"X186": {
+"key": "C",
+"questionId": "CDM-NUT-019",
+"category": "cdmNutrition"
+},
+"X187": {
+"key": "C",
+"questionId": "CDM-NUT-032",
+"category": "cdmNutrition"
+},
+"X188": {
+"key": "C",
+"questionId": "CDM-SAF-023",
+"category": "cdmSafety"
+},
+"X189": {
+"key": "A",
+"questionId": "CDM-BUS-019",
+"category": "cdmBusiness"
+},
+"X190": {
+"key": "A",
+"questionId": "CDM-NUT-006",
+"category": "cdmNutrition"
+},
+"X191": {
+"key": "C",
+"questionId": "CDM-FOO-033",
+"category": "cdmFoodservice"
+},
+"X192": {
+"key": "A",
+"questionId": "CDM-FOO-011",
+"category": "cdmFoodservice"
+},
+"X193": {
+"key": "D",
+"questionId": "CDM-BUS-007",
+"category": "cdmBusiness"
+},
+"X194": {
+"key": "D",
+"questionId": "CDM-FOO-037",
+"category": "cdmFoodservice"
+},
+"X195": {
+"key": "C",
+"questionId": "CDM-BUS-028",
+"category": "cdmBusiness"
+},
+"X196": {
+"key": "C",
+"questionId": "CDM-NUT-010",
+"category": "cdmNutrition"
+},
+"X197": {
+"key": "C",
+"questionId": "CDM-FOO-028",
+"category": "cdmFoodservice"
+},
+"X198": {
+"key": "A",
+"questionId": "CDM-SAF-047",
+"category": "cdmSafety"
+},
+"X199": {
+"key": "B",
+"questionId": "CDM-NUT-031",
+"category": "cdmNutrition"
+},
+"X200": {
+"key": "C",
+"questionId": "CDM-NUT-008",
+"category": "cdmNutrition"
+}
+}

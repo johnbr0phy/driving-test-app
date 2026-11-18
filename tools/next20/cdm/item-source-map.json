@@ -81,7 +81,7 @@
   },
   {
     "questionId": "CDM-NUT-021",
-    "sourceTags": "N1"
+    "sourceTags": "N3"
   },
   {
     "questionId": "CDM-NUT-022",
@@ -89,7 +89,7 @@
   },
   {
     "questionId": "CDM-NUT-023",
-    "sourceTags": "N1"
+    "sourceTags": "CMS-K0300"
   },
   {
     "questionId": "CDM-NUT-024",
@@ -97,7 +97,7 @@
   },
   {
     "questionId": "CDM-NUT-025",
-    "sourceTags": "N4"
+    "sourceTags": "CMS-K0520"
   },
   {
     "questionId": "CDM-NUT-026",
@@ -161,7 +161,7 @@
   },
   {
     "questionId": "CDM-FOO-001",
-    "sourceTags": "F1"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-002",
@@ -169,11 +169,11 @@
   },
   {
     "questionId": "CDM-FOO-003",
-    "sourceTags": "F1"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-004",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-005",
@@ -189,7 +189,7 @@
   },
   {
     "questionId": "CDM-FOO-008",
-    "sourceTags": "F1"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-009",
@@ -201,7 +201,7 @@
   },
   {
     "questionId": "CDM-FOO-011",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-012",
@@ -213,11 +213,11 @@
   },
   {
     "questionId": "CDM-FOO-014",
-    "sourceTags": "F1"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-015",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-016",
@@ -265,7 +265,7 @@
   },
   {
     "questionId": "CDM-FOO-027",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-028",
@@ -273,15 +273,15 @@
   },
   {
     "questionId": "CDM-FOO-029",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-030",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-031",
-    "sourceTags": "F1"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-032",
@@ -305,11 +305,11 @@
   },
   {
     "questionId": "CDM-FOO-037",
-    "sourceTags": "F1;F3"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-038",
-    "sourceTags": "F1"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-039",
@@ -329,11 +329,11 @@
   },
   {
     "questionId": "CDM-FOO-043",
-    "sourceTags": "F2/F3"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-FOO-044",
-    "sourceTags": "F2"
+    "sourceTags": "ICN-KEYSTONES"
   },
   {
     "questionId": "CDM-PER-001",
@@ -353,7 +353,7 @@
   },
   {
     "questionId": "CDM-PER-005",
-    "sourceTags": "P2"
+    "sourceTags": "FC2-401.11"
   },
   {
     "questionId": "CDM-PER-006",
@@ -365,23 +365,23 @@
   },
   {
     "questionId": "CDM-PER-008",
-    "sourceTags": "P2"
+    "sourceTags": "DOL-FMLA-GUIDE"
   },
   {
     "questionId": "CDM-PER-009",
-    "sourceTags": "P2"
-  },
-  {
-    "questionId": "CDM-PER-010",
     "sourceTags": "P1"
   },
   {
+    "questionId": "CDM-PER-010",
+    "sourceTags": "DOL-FMLA-GUIDE"
+  },
+  {
     "questionId": "CDM-PER-011",
-    "sourceTags": "P2"
+    "sourceTags": "DOL-FMLA-GUIDE"
   },
   {
     "questionId": "CDM-PER-012",
-    "sourceTags": "P2"
+    "sourceTags": "FC2-303.11"
   },
   {
     "questionId": "CDM-PER-013",
@@ -389,7 +389,7 @@
   },
   {
     "questionId": "CDM-PER-014",
-    "sourceTags": "P2;B2"
+    "sourceTags": "P3"
   },
   {
     "questionId": "CDM-PER-015",
@@ -405,7 +405,7 @@
   },
   {
     "questionId": "CDM-PER-018",
-    "sourceTags": "P2;P3"
+    "sourceTags": "DOL-FMLA-GUIDE"
   },
   {
     "questionId": "CDM-PER-019",
@@ -437,15 +437,15 @@
   },
   {
     "questionId": "CDM-PER-026",
-    "sourceTags": "P3"
+    "sourceTags": "DOL-FMLA-GUIDE"
   },
   {
     "questionId": "CDM-PER-027",
-    "sourceTags": "P2"
+    "sourceTags": "DOL-USERRA"
   },
   {
     "questionId": "CDM-PER-028",
-    "sourceTags": "P1"
+    "sourceTags": "DOL-USERRA"
   },
   {
     "questionId": "CDM-PER-029",
@@ -457,7 +457,7 @@
   },
   {
     "questionId": "CDM-PER-031",
-    "sourceTags": "P2"
+    "sourceTags": "FC2-302.11"
   },
   {
     "questionId": "CDM-PER-032",
@@ -465,11 +465,11 @@
   },
   {
     "questionId": "CDM-PER-033",
-    "sourceTags": "P3"
+    "sourceTags": "FC2-401.13"
   },
   {
     "questionId": "CDM-PER-034",
-    "sourceTags": "P1"
+    "sourceTags": "FC2-201.12"
   },
   {
     "questionId": "CDM-PER-035",
@@ -485,7 +485,7 @@
   },
   {
     "questionId": "CDM-PER-038",
-    "sourceTags": "P2"
+    "sourceTags": "P2;P3"
   },
   {
     "questionId": "CDM-PER-039",
@@ -493,7 +493,7 @@
   },
   {
     "questionId": "CDM-PER-040",
-    "sourceTags": "P3"
+    "sourceTags": "DOL-FMLA-GUIDE"
   },
   {
     "questionId": "CDM-SAF-001",
@@ -537,7 +537,7 @@
   },
   {
     "questionId": "CDM-SAF-011",
-    "sourceTags": "S3"
+    "sourceTags": "FC3-602.12"
   },
   {
     "questionId": "CDM-SAF-012",
@@ -549,7 +549,7 @@
   },
   {
     "questionId": "CDM-SAF-014",
-    "sourceTags": "FC3-202.11"
+    "sourceTags": "FC3-202.11(C)"
   },
   {
     "questionId": "CDM-SAF-015",
@@ -581,7 +581,7 @@
   },
   {
     "questionId": "CDM-SAF-022",
-    "sourceTags": "S2"
+    "sourceTags": "FC4-203.11"
   },
   {
     "questionId": "CDM-SAF-023",
@@ -609,7 +609,7 @@
   },
   {
     "questionId": "CDM-SAF-029",
-    "sourceTags": "FC3-202.15"
+    "sourceTags": "FC3-203.12"
   },
   {
     "questionId": "CDM-SAF-030",
@@ -617,11 +617,11 @@
   },
   {
     "questionId": "CDM-SAF-031",
-    "sourceTags": "S3"
+    "sourceTags": "FC8-404.12"
   },
   {
     "questionId": "CDM-SAF-032",
-    "sourceTags": "S3"
+    "sourceTags": "FC2-103.11(O)"
   },
   {
     "questionId": "CDM-SAF-033",
@@ -629,7 +629,7 @@
   },
   {
     "questionId": "CDM-SAF-034",
-    "sourceTags": "S2"
+    "sourceTags": "FC3-202.11(D)"
   },
   {
     "questionId": "CDM-SAF-035",
@@ -645,7 +645,7 @@
   },
   {
     "questionId": "CDM-SAF-038",
-    "sourceTags": "S2/S3"
+    "sourceTags": "FC4-501.112"
   },
   {
     "questionId": "CDM-SAF-039",
@@ -713,7 +713,7 @@
   },
   {
     "questionId": "CDM-BUS-007",
-    "sourceTags": "B2"
+    "sourceTags": "B1"
   },
   {
     "questionId": "CDM-BUS-008",
@@ -785,7 +785,7 @@
   },
   {
     "questionId": "CDM-BUS-025",
-    "sourceTags": "B1"
+    "sourceTags": "B4"
   },
   {
     "questionId": "CDM-BUS-026",

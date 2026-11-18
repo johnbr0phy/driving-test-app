@@ -41,7 +41,7 @@ Q = [
  "Recapture the excess depreciation", ["Keep depreciating as before", "Recapture all depreciation taken", "Switch to 150% declining balance"],
  "Section 280F(b)(2) recaptures the excess of depreciation claimed over what straight-line ADS would have allowed once qualified business use drops to 50% or less, and ADS applies from then on."),
 ("A business without an applicable financial statement may elect to deduct property costing up to what amount under the de minimis safe harbor?",
- "$2,500 per invoice or item", ["$5,000 per invoice or item", "$2,500 per tax year in total", "$1,000 per invoice or item"],
+ "$2,500 per invoice or item", ["$5,000 per invoice or item", "$1,000 per invoice or item", "$500 per invoice or item"],
  "Notice 2015-82 raised the de minimis safe harbor to $2,500 per invoice or item for taxpayers without an applicable financial statement. Those with one may use $5,000."),
 ("Building maintenance qualifies for the routine maintenance safe harbor if the owner expects to do it:",
  "More than once in 10 years", ["More than once in 5 years", "At least once every year", "Once in the building's life"],

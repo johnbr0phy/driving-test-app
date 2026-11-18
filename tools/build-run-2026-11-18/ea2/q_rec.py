@@ -71,7 +71,7 @@ Q = [
  "Treated similar workers alike", ["Paid each over $600 a year", "Withheld income tax for them", "Signed contracts with each"],
  "Section 530 of the Revenue Act of 1978 requires reporting consistency, substantive consistency (no similar worker treated as an employee) and a reasonable basis. Withholding would show employee treatment."),
 ("For 2025 the employer shared responsibility rules apply to an employer that last year averaged at least:",
- "50 full-time and equivalent employees", ["50 full-time employees only", "25 full-time and equivalent employees", "100 full-time and equivalent employees"],
+ "50 full-time and equivalent employees", ["25 full-time and equivalent employees", "75 full-time and equivalent employees", "100 full-time and equivalent employees"],
  "Section 4980H applies to an applicable large employer, one with an average of at least 50 full-time employees, counting full-time equivalents, in the prior calendar year."),
 ("Under the Affordable Care Act employer rules, a full-time employee averages at least:",
  "30 hours a week", ["40 hours a week", "35 hours a week", "20 hours a week"],

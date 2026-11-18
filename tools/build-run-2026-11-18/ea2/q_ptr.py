@@ -35,7 +35,7 @@ Q = [
  "Have substantial U.S. presence", ["Own a partnership interest", "Be a CPA or enrolled agent", "Hold over half the capital"],
  "Section 6223 allows a partner or other person with a substantial presence in the United States to be the partnership representative. That person need not be a partner or a licensed practitioner."),
 ("A partnership may elect out of the centralized audit regime for 2025 only if it has:",
- "100 or fewer eligible partners", ["100 or fewer partners of any kind", "50 or fewer eligible partners", "10 or fewer individual partners"],
+ "100 or fewer eligible partners", ["200 or fewer eligible partners", "50 or fewer eligible partners", "35 or fewer eligible partners"],
  "An eligible partnership has 100 or fewer partners, all individuals, C corporations, S corporations (counting their shareholders), eligible foreign entities or estates of deceased partners. The election is made each year on Schedule B-2."),
 ("A partnership has eight partners, one of which is another partnership. For the centralized audit regime it:",
  "Cannot elect out that year", ["May elect out on Schedule B-2", "May elect out with partner consent", "Is out by default under 10 partners"],

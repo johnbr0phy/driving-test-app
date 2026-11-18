@@ -50,7 +50,7 @@ Q = [
  "Not reported at all", ["Fully taxable", "Taxable after expenses", "Taxable above $1,000"],
  "Section 280A(g) excludes rent when a dwelling used as a home is rented fewer than 15 days in the year, and no rental expenses are deducted."),
 ("A vacation home is treated as a residence if personal use exceeds the greater of:",
- "14 days or 10% of days rented", ["14 days or 10% of the year", "30 days or 10% of days rented", "14 days or 15% of days rented"],
+ "14 days or 10% of days rented", ["30 days or 15% of days rented", "7 days or 5% of days rented", "21 days or 20% of days rented"],
  "Section 280A(d)(1) treats a dwelling as a residence when personal use is more than the greater of 14 days or 10% of the days it is rented at fair rent, and then limits rental deductions to rental income."),
 ("A landlord collects a refundable security deposit at signing. The deposit is:",
  "Not income when received", ["Income when it is received", "Income when the lease starts", "Income spread over the lease"],

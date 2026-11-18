@@ -73,10 +73,10 @@
     "format": "single",
     "stem": "A legacy service cannot meet a required configuration until a signed replacement contract completes. The risk owner permits temporary compensating controls, but the exception has no review boundary. What should be added?",
     "options": [
-      "A second compensating control on the same legacy service",
-      "A residual risk score recalculated with the new controls",
-      "A note in the asset inventory marking the service legacy",
-      "An expiry or mandatory review date on the approved exception"
+      "Second compensating control on the same legacy service",
+      "Residual risk score recalculated with the new controls",
+      "Note in the asset inventory marking the service legacy",
+      "Expiry or mandatory review date on the approved exception"
     ],
     "correct": [
       3
@@ -220,10 +220,10 @@
     "format": "single",
     "stem": "A critical outsourcing contract names internal and vendor incident contacts, but neither team has tested escalation or evidence handoff. Which activity most directly checks whether those arrangements work?",
     "options": [
-      "An annual review of the vendor incident response policy",
-      "A penetration test of the vendor customer portal",
-      "A joint tabletop exercise with the vendor response team",
-      "A contract amendment adding stricter notification hours"
+      "Annual review of the vendor incident response policy",
+      "Penetration test of the vendor customer portal",
+      "Joint tabletop exercise with the vendor response team",
+      "Contract amendment adding stricter notification hours"
     ],
     "correct": [
       2
@@ -493,10 +493,10 @@
     "format": "single",
     "stem": "A regional service will move personal records to a foreign processor. The same processing purpose continues. Which issue needs specific review before the move?",
     "options": [
-      "The data classification labels applied to each customer record",
-      "The legal transfer mechanism for that country",
+      "Data classification labels applied to each customer record",
+      "Legal transfer mechanism for that country",
       "Whether the processing purpose is still compatible",
-      "The retention schedule for the regional records"
+      "Retention schedule for the regional records"
     ],
     "correct": [
       1
@@ -661,10 +661,10 @@
     "format": "single",
     "stem": "A benefits system gives a model's recommendation final authority over consequential eligibility decisions. The policy requires an accountable reviewer to assess evidence and exceptions. Which safeguard satisfies that requirement?",
     "options": [
-      "A confidence threshold above which the model decides alone",
+      "Confidence threshold above which the model decides alone",
       "Schema validation on each recommendation the model returns",
-      "A monthly sample audit of model eligibility outcomes",
-      "A trained caseworker who makes the final call on each case"
+      "Monthly sample audit of model eligibility outcomes",
+      "Trained caseworker who makes the final call on each case"
     ],
     "correct": [
       3
@@ -850,10 +850,10 @@
     "format": "single",
     "stem": "Leadership states that sensitive customer information must be protected throughout its lifecycle and assigns organizational accountability. Which documentation layer expresses this broad direction?",
     "options": [
-      "A policy",
-      "A standard",
-      "A procedure",
-      "A baseline"
+      "Policy",
+      "Standard",
+      "Procedure",
+      "Baseline"
     ],
     "correct": [
       0
@@ -871,10 +871,10 @@
     "format": "single",
     "stem": "An organization specifies an approved minimum configuration that every managed server must meet unless an exception is granted. Which documentation type fits this mandatory baseline?",
     "options": [
-      "An advisory guideline",
-      "A technical standard",
-      "A security policy",
-      "A runbook procedure"
+      "Advisory guideline",
+      "Technical standard",
+      "Security policy",
+      "Runbook procedure"
     ],
     "correct": [
       1
@@ -892,10 +892,10 @@
     "format": "single",
     "stem": "An on-call runbook identifies the ordered steps, approval checks and rollback actions for rotating a service credential. Which documentation type is this?",
     "options": [
-      "A cryptography policy",
-      "A key length standard",
-      "A best practice guideline",
-      "An operational procedure"
+      "Cryptography policy",
+      "Key length standard",
+      "Best practice guideline",
+      "Operational procedure"
     ],
     "correct": [
       3
@@ -913,10 +913,10 @@
     "format": "single",
     "stem": "A security team publishes optional examples of useful dashboard layouts. Teams may choose alternatives without requesting an exception. Which documentation type fits?",
     "options": [
-      "A guideline",
-      "A standard",
-      "A policy",
-      "A control objective"
+      "Guideline",
+      "Standard",
+      "Policy",
+      "Control objective"
     ],
     "correct": [
       0
@@ -934,10 +934,10 @@
     "format": "single",
     "stem": "A crisis exercise reveals that staff receive conflicting public statements because several departments brief the media independently. Which plan element needs focused testing?",
     "options": [
-      "The communications plan and approved spokespeople",
-      "The recovery order in the continuity plan",
-      "The evidence preservation procedure",
-      "The delegation of emergency shutdown authority"
+      "Communications plan and approved spokespeople",
+      "Recovery order in the continuity plan",
+      "Evidence preservation procedure",
+      "Delegation of emergency shutdown authority"
     ],
     "correct": [
       0
@@ -955,9 +955,9 @@
     "format": "single",
     "stem": "During a breach exercise, responders overwrite relevant records while rebuilding systems. Which plan element needs correction to support later investigation?",
     "options": [
-      "The communications plan for regulators",
-      "The recovery time objective for the systems",
-      "The call tree for incident responders",
+      "Communications plan for regulators",
+      "Recovery time objective for the systems",
+      "Call tree for incident responders",
       "Evidence capture before any reimaging begins"
     ],
     "correct": [
@@ -976,10 +976,10 @@
     "format": "single",
     "stem": "A recovery drill restores a reporting service before the identity service it requires, delaying all usable access. Which planning element should be revised?",
     "options": [
-      "The communications plan for affected users",
-      "The recovery sequence based on system dependencies",
-      "The recovery point objective for the reporting data",
-      "The backup schedule for the identity service"
+      "Communications plan for affected users",
+      "Recovery sequence based on system dependencies",
+      "Recovery point objective for the reporting data",
+      "Backup schedule for the identity service"
     ],
     "correct": [
       1
@@ -997,10 +997,10 @@
     "format": "single",
     "stem": "A simulated incident occurs while the primary executive is unavailable. No participant knows who can authorize an emergency service shutdown. What governance element is missing?",
     "options": [
-      "A post-incident review of the executive absence",
+      "Post-incident review of the executive absence",
       "Named alternates with delegated decision authority",
-      "An updated contact list for the executive team",
-      "A pre-written shutdown procedure for the service"
+      "Updated contact list for the executive team",
+      "Pre-written shutdown procedure for the service"
     ],
     "correct": [
       1
@@ -1020,7 +1020,7 @@
     "options": [
       "Require device compliance before entry to the gateway",
       "Add multifactor authentication at the zone gateway",
-      "A policy enforcement point per application",
+      "Policy enforcement point per application",
       "Split each zone into smaller VLANs with stricter ACLs"
     ],
     "correct": [
@@ -1081,10 +1081,10 @@
     "format": "single",
     "stem": "A session remains authorized after the identity risk score rises sharply. New sessions are correctly blocked under the same policy. What capability is missing for existing access?",
     "options": [
-      "A daily report of users with elevated risk scores",
+      "Daily report of users with elevated risk scores",
       "Continuous evaluation of open sessions",
       "Longer token lifetimes to reduce reauthentication prompts",
-      "A stricter policy rule applied at initial login only"
+      "Stricter policy rule applied at initial login only"
     ],
     "correct": [
       1
@@ -1145,7 +1145,7 @@
     "stem": "A service supplies a signed assertion about the authenticated user to an authorization system. It does not determine whether that user may read the requested file. Which role best fits?",
     "options": [
       "Data loss prevention service inspecting files",
-      "An identity provider for the organization",
+      "Identity provider for the organization",
       "Policy engine making the file access decision",
       "Enforcement gateway in front of the file share"
     ],
@@ -1165,10 +1165,10 @@
     "format": "single",
     "stem": "An endpoint service reports patch state and integrity measurements to an access engine. It neither authenticates the human user nor opens the connection. Which role is this?",
     "options": [
-      "A policy administrator for session setup",
-      "A device posture data source",
-      "A policy enforcement point on the endpoint",
-      "An identity provider for device users"
+      "Policy administrator for session setup",
+      "Device posture data source",
+      "Policy enforcement point on the endpoint",
+      "Identity provider for device users"
     ],
     "correct": [
       1
@@ -1354,7 +1354,7 @@
     "format": "single",
     "stem": "An unauthorized direct push bypassed required review on a release branch. Which CI/CD control directly addresses the bypass?",
     "options": [
-      "A canary deployment for each new release",
+      "Canary deployment for each new release",
       "Nightly regression tests on the release branch",
       "Signing build artifacts after the release",
       "Branch protection with required reviews"
@@ -1375,10 +1375,10 @@
     "format": "single",
     "stem": "A reviewed update may interact unexpectedly with real traffic. The team wants to expose only a small controlled population before wider release. Which technique fits?",
     "options": [
-      "A full regression suite in the test environment",
-      "A rollback plan stored with the release notes",
-      "A canary to a few percent of users first",
-      "A blue-green switch of all traffic at once"
+      "Full regression suite in the test environment",
+      "Rollback plan stored with the release notes",
+      "Canary to a few percent of users first",
+      "Blue-green switch of all traffic at once"
     ],
     "correct": [
       2
@@ -1438,10 +1438,10 @@
     "format": "single",
     "stem": "An acquirer needs a structured list of the libraries included in a delivered application so it can identify affected products after a dependency advisory. Which artifact supports this?",
     "options": [
-      "A penetration test report for the product",
-      "A software bill of materials for each release",
-      "A code-signing certificate for the vendor",
-      "A vendor attestation of secure development"
+      "Penetration test report for the product",
+      "Software bill of materials for each release",
+      "Code-signing certificate for the vendor",
+      "Vendor attestation of secure development"
     ],
     "correct": [
       1
@@ -1459,10 +1459,10 @@
     "format": "single",
     "stem": "Before accepting bids, a buyer needs all software suppliers to understand the required authentication, logging and support capabilities. Which item establishes comparable expectations?",
     "options": [
-      "A vulnerability disclosure policy from each bidder",
-      "A documented security specification in the tender",
-      "An SBOM from each bidder current product",
-      "A right-to-audit clause in the final contract"
+      "Vulnerability disclosure policy from each bidder",
+      "Documented security specification in the tender",
+      "SBOM from each bidder current product",
+      "Right-to-audit clause in the final contract"
     ],
     "correct": [
       1
@@ -1480,10 +1480,10 @@
     "format": "single",
     "stem": "A distributor needs recipients to verify that a downloaded release was signed by its authorized publisher and has not changed. Which mechanism provides that evidence?",
     "options": [
-      "A software bill of materials shipped with the release",
+      "Software bill of materials shipped with the release",
       "TLS encryption on the download server",
-      "A publisher digital signature",
-      "A SHA-256 checksum posted on the same download page"
+      "Publisher digital signature",
+      "SHA-256 checksum posted on the same download page"
     ],
     "correct": [
       2
@@ -1501,10 +1501,10 @@
     "format": "single",
     "stem": "Researchers need an established channel and handling process for reporting flaws in a deployed product. Which supplier capability meets this need?",
     "options": [
-      "A software bill of materials for each version",
-      "An annual third-party penetration test",
-      "A vulnerability disclosure policy",
-      "A code-signing process for every release"
+      "Software bill of materials for each version",
+      "Annual third-party penetration test",
+      "Vulnerability disclosure policy",
+      "Code-signing process for every release"
     ],
     "correct": [
       2
@@ -1543,7 +1543,7 @@
     "format": "single",
     "stem": "A sensitive application depends entirely on one gateway control. Designers want a compromise of that gateway not to remove every protection for the data. Which principle should guide the change?",
     "options": [
-      "A second identical gateway in an active-passive pair",
+      "Second identical gateway in an active-passive pair",
       "Least functionality on the gateway operating system",
       "Defense in depth with independent layers behind it",
       "Fail-open behavior so the gateway never blocks users"
@@ -1606,10 +1606,10 @@
     "format": "single",
     "stem": "A scheduled reporting job must read one storage location without using an employee's password. Which identity design best fits its ongoing nonhuman role?",
     "options": [
-      "A shared administrator account with a vaulted password",
-      "The job owner account with MFA disabled for automation",
-      "A break-glass account reserved for scheduled tasks",
-      "A managed workload identity limited to that one bucket"
+      "Shared administrator account with a vaulted password",
+      "Job owner account with MFA disabled for automation",
+      "Break-glass account reserved for scheduled tasks",
+      "Managed workload identity limited to that one bucket"
     ],
     "correct": [
       3
@@ -1627,10 +1627,10 @@
     "format": "single",
     "stem": "An engineer needs elevated rights for a short approved maintenance window, then should return to ordinary permissions automatically. Which design fits?",
     "options": [
-      "A separate standing admin account for the engineer",
-      "A shared root credential checked out from a vault",
+      "Separate standing admin account for the engineer",
+      "Shared root credential checked out from a vault",
       "Just-in-time access that lapses automatically",
-      "A permanent membership in the administrators group"
+      "Permanent membership in the administrators group"
     ],
     "correct": [
       2
@@ -1649,7 +1649,7 @@
     "stem": "Employees already authenticate through an enterprise identity provider. A new SaaS application should accept that managed identity lifecycle instead of separate local passwords. Which design fits?",
     "options": [
       "Local SaaS accounts synchronized by a nightly script",
-      "A password manager shared among the SaaS users",
+      "Password manager shared among the SaaS users",
       "Separate SaaS passwords with a strict rotation policy",
       "Federated SSO with the enterprise IdP"
     ],
@@ -1669,10 +1669,10 @@
     "format": "single",
     "stem": "The primary identity provider may be unavailable during recovery. A tightly controlled, audited access path must work independently for essential administrators. Which design addresses this dependency?",
     "options": [
-      "A monitored break-glass account outside it",
-      "A just-in-time role issued by the same identity provider",
-      "A service principal for each administrator",
-      "A secondary federation trust to the same provider"
+      "Monitored break-glass account outside it",
+      "Just-in-time role issued by the same identity provider",
+      "Service principal for each administrator",
+      "Secondary federation trust to the same provider"
     ],
     "correct": [
       0
@@ -1690,7 +1690,7 @@
     "format": "single",
     "stem": "A registration workflow receives a certificate request for a newly acquired company. Before issuance, the operator must establish that the requester is entitled to the claimed identity. Which activity is needed?",
     "options": [
-      "A revocation check against the CA OCSP responder",
+      "Revocation check against the CA OCSP responder",
       "Signature of the request by the issuing CA",
       "Hostname matching of the requested subject name",
       "RA proofing of the party making the request"
@@ -1774,10 +1774,10 @@
     "format": "single",
     "stem": "A cloud security requirement calls for blocking prohibited uploads before they reach a SaaS service. The approved architecture routes those uploads through an inspection point. Which control placement fits?",
     "options": [
-      "A CSPM tool checking the SaaS configuration",
-      "A SIEM rule alerting on large uploads",
-      "An inline forward proxy CASB that blocks in transit",
-      "An API-mode CASB scanning the tenant afterwards"
+      "CSPM tool checking the SaaS configuration",
+      "SIEM rule alerting on large uploads",
+      "Inline forward proxy CASB that blocks in transit",
+      "API-mode CASB scanning the tenant afterwards"
     ],
     "correct": [
       2
@@ -1795,10 +1795,10 @@
     "format": "single",
     "stem": "The security team must inspect existing files already stored in an approved SaaS tenant, including uploads made before the control was installed. Which approach can reach that stored content?",
     "options": [
-      "An API-mode CASB integration",
-      "An inline forward proxy on the corporate network",
-      "A host firewall rule on each laptop",
-      "A cloud workload protection agent"
+      "API-mode CASB integration",
+      "Inline forward proxy on the corporate network",
+      "Host firewall rule on each laptop",
+      "Cloud workload protection agent"
     ],
     "correct": [
       0
@@ -1837,10 +1837,10 @@
     "format": "single",
     "stem": "A container service needs evidence of unexpected process execution inside running workloads. Which sensor provides the most direct observation?",
     "options": [
-      "An API-mode CASB on the SaaS tenant",
-      "A runtime agent such as eBPF on each node",
-      "A CSPM scan of the container cluster settings",
-      "An image scan in the container registry"
+      "API-mode CASB on the SaaS tenant",
+      "Runtime agent such as eBPF on each node",
+      "CSPM scan of the container cluster settings",
+      "Image scan in the container registry"
     ],
     "correct": [
       1
@@ -1922,8 +1922,8 @@
     "stem": "An organization needs to investigate who altered a cloud resource's policy. Preventive permissions are already in place. Which capability supplies the missing historical evidence?",
     "options": [
       "Control-plane audit logs such as CloudTrail",
-      "A CSPM snapshot of the current policy",
-      "The resource tags showing its owner",
+      "CSPM snapshot of the current policy",
+      "Resource tags showing its owner",
       "VPC flow logs for every subnet the resource is attached to"
     ],
     "correct": [
@@ -2089,10 +2089,10 @@
     "format": "single",
     "stem": "A decommissioning plan requires proof that retained media was sanitized under the approved method. Which lifecycle record supports closure?",
     "options": [
-      "A signed sanitization certificate for each device",
-      "The asset inventory entry marked as retired",
-      "A purchase order for the replacement hardware",
-      "The change ticket approving the decommission"
+      "Signed sanitization certificate for each device",
+      "Asset inventory entry marked as retired",
+      "Purchase order for the replacement hardware",
+      "Change ticket approving the decommission"
     ],
     "correct": [
       0
@@ -2215,10 +2215,10 @@
     "format": "single",
     "stem": "A partner needs one reporting API but should not inherit access to all internal applications after authentication. Which authorization choice addresses the boundary?",
     "options": [
-      "A shared API key used by every partner",
-      "An OAuth scope limited to the reporting API",
-      "A partner role with access to all internal apps",
-      "A VPN connection into the partner network segment"
+      "Shared API key used by every partner",
+      "OAuth scope limited to the reporting API",
+      "Partner role with access to all internal apps",
+      "VPN connection into the partner network segment"
     ],
     "correct": [
       1
@@ -2257,10 +2257,10 @@
     "format": "single",
     "stem": "A privileged operation is validly authorized and completed. The organization must later establish the actor, target, time and outcome. Which capability addresses that requirement?",
     "options": [
-      "A tamper-protected audit log of privileged actions",
+      "Tamper-protected audit log of privileged actions",
       "Step-up authentication before each operation",
-      "A just-in-time role for the operator",
-      "A quarterly review of privileged group members"
+      "Just-in-time role for the operator",
+      "Quarterly review of privileged group members"
     ],
     "correct": [
       0
@@ -2342,7 +2342,7 @@
     "stem": "During an exercise, service was actually restored two hours after the disruption began. Which value records the observed performance rather than a planned limit?",
     "options": [
       "Recovery point objective for the data",
-      "The measured recovery time",
+      "Measured recovery time",
       "Recovery time objective in the plan",
       "Maximum tolerable downtime from the BIA"
     ],
@@ -2446,10 +2446,10 @@
     "format": "single",
     "stem": "A partner's assertions are rejected after its approved issuer identifier changed. User accounts and entitlements are unchanged, and validation fails before permission evaluation. Which configuration needs review?",
     "options": [
-      "The federation metadata",
-      "The group mappings for the partner users",
-      "The conditional access device rules",
-      "The partner users password policy"
+      "Federation metadata",
+      "Group mappings for the partner users",
+      "Conditional access device rules",
+      "Partner users password policy"
     ],
     "correct": [
       0
@@ -2488,10 +2488,10 @@
     "format": "single",
     "stem": "Conditional access denies a managed laptop because its integrity evidence is older than the policy permits. The user has passed authentication and has the correct role. What should be refreshed?",
     "options": [
-      "The user group memberships in the directory",
-      "The user MFA registration and factors",
-      "The TLS certificate on the access gateway",
-      "The device health attestation from the laptop"
+      "User group memberships in the directory",
+      "User MFA registration and factors",
+      "TLS certificate on the access gateway",
+      "Device health attestation from the laptop"
     ],
     "correct": [
       3
@@ -2594,9 +2594,9 @@
     "stem": "A privileged action is properly scoped, time-limited and approved. Investigators still cannot reconstruct what the operator did. Which added capability answers that need?",
     "options": [
       "Session recording kept beyond the operator reach",
-      "A second approver from another team for each privileged action",
-      "A shorter expiry on the privileged role",
-      "A narrower role scoped to fewer servers"
+      "Second approver from another team for each privileged action",
+      "Shorter expiry on the privileged role",
+      "Narrower role scoped to fewer servers"
     ],
     "correct": [
       0
@@ -2656,9 +2656,9 @@
     "format": "single",
     "stem": "A local application keeps authorizing a user after the organization disables the user's account upstream. Which integration property should be corrected?",
     "options": [
-      "A longer local cache of the user group memberships and roles",
+      "Longer local cache of the user group memberships and roles",
       "Stronger MFA on the upstream directory",
-      "A wider audience on the issued tokens",
+      "Wider audience on the issued tokens",
       "SCIM deprovisioning that ends local access"
     ],
     "correct": [
@@ -2678,9 +2678,9 @@
     "stem": "Administrators cannot recover a failed identity service because their only administrative login depends on that same service. Which design change breaks the circular dependency?",
     "options": [
       "Longer admin sessions issued by the failed service",
-      "A just-in-time admin role from the failed service",
-      "An emergency account independent of that service",
-      "A second federation trust through the same provider"
+      "Just-in-time admin role from the failed service",
+      "Emergency account independent of that service",
+      "Second federation trust through the same provider"
     ],
     "correct": [
       2
@@ -2699,9 +2699,9 @@
     "stem": "A kiosk must execute only a small approved set of signed applications. The immediate requirement is to prevent other executables from starting. Which endpoint capability fits?",
     "options": [
       "Endpoint detection and response alerting",
-      "A host firewall limiting outbound connections",
+      "Host firewall limiting outbound connections",
       "Full disk encryption on the kiosk drive",
-      "An allowlist that blocks every other binary"
+      "Allowlist that blocks every other binary"
     ],
     "correct": [
       3
@@ -2719,10 +2719,10 @@
     "format": "single",
     "stem": "A workstation runs an approved interpreter that begins unusual child-process and credential-access behavior. The team needs to detect and investigate that behavior. Which capability is most direct?",
     "options": [
-      "A host firewall rule on the workstation",
-      "A web proxy that blocks script downloads",
-      "An EDR agent on the workstation",
-      "An application allowlist for the interpreter"
+      "Host firewall rule on the workstation",
+      "Web proxy that blocks script downloads",
+      "EDR agent on the workstation",
+      "Application allowlist for the interpreter"
     ],
     "correct": [
       2
@@ -2740,10 +2740,10 @@
     "format": "single",
     "stem": "A server must accept management connections only from a dedicated administration subnet, including when upstream routing changes. Which host control enforces this local network boundary?",
     "options": [
-      "A network firewall rule at the data center edge",
-      "An application allowlist on the server",
-      "An EDR agent with behavioral detection",
-      "A local firewall permitting that subnet only"
+      "Network firewall rule at the data center edge",
+      "Application allowlist on the server",
+      "EDR agent with behavioral detection",
+      "Local firewall permitting that subnet only"
     ],
     "correct": [
       3
@@ -2762,9 +2762,9 @@
     "stem": "Staff must view untrusted external websites while keeping website execution separated from their ordinary workstation environment. Which capability addresses that requirement?",
     "options": [
       "Remote browser isolation",
-      "A host firewall blocking unknown destinations",
-      "An application allowlist for the browser",
-      "A secure web gateway with URL categories"
+      "Host firewall blocking unknown destinations",
+      "Application allowlist for the browser",
+      "Secure web gateway with URL categories"
     ],
     "correct": [
       0
@@ -2826,8 +2826,8 @@
     "options": [
       "Dropping the SYS_ADMIN capability only",
       "Running the container in the host network",
-      "An immutable root with one writable tmpfs",
-      "A memory limit on the container process"
+      "Immutable root with one writable tmpfs",
+      "Memory limit on the container process"
     ],
     "correct": [
       2
@@ -2846,9 +2846,9 @@
     "stem": "A defective container consumes nearly all host memory, starving unrelated services. Which container setting most directly limits this failure's resource impact?",
     "options": [
       "Dropping unused kernel capabilities",
-      "A seccomp profile on the container",
-      "A cgroup memory limit",
-      "A read-only root filesystem"
+      "Seccomp profile on the container",
+      "Cgroup memory limit",
+      "Read-only root filesystem"
     ],
     "correct": [
       2
@@ -2887,10 +2887,10 @@
     "format": "single",
     "stem": "A newly deployed server presents its leaf certificate without the required intermediate. Clients trust the root but cannot build a path to it. What should the server administrator supply?",
     "options": [
-      "The intermediate CA certificate",
-      "A new leaf with an extra SAN entry",
-      "A renewed root certificate on each client",
-      "A stapled OCSP response for the leaf"
+      "Intermediate CA certificate",
+      "New leaf with an extra SAN entry",
+      "Renewed root certificate on each client",
+      "Stapled OCSP response for the leaf"
     ],
     "correct": [
       0
@@ -2908,10 +2908,10 @@
     "format": "single",
     "stem": "A TLS handshake fails before certificate verification. Logs show the client and server have no mutually supported protocol parameters. What should be aligned within the approved security baseline?",
     "options": [
-      "The certificate validity period",
-      "The client trust store contents",
-      "A shared TLS version and cipher suite",
-      "The certificate chain served by the server"
+      "Certificate validity period",
+      "Client trust store contents",
+      "Shared TLS version and cipher suite",
+      "Certificate chain served by the server"
     ],
     "correct": [
       2
@@ -2950,10 +2950,10 @@
     "format": "single",
     "stem": "A receiver needs to know whether an SMTP sender is authorized to use the envelope MAIL FROM domain. Which mechanism's evidence should it inspect?",
     "options": [
-      "The SPF record of the MAIL FROM domain",
-      "The DKIM signature in the message header",
-      "The DMARC aggregate report for the domain",
-      "The MTA-STS policy of the receiving domain"
+      "SPF record of the MAIL FROM domain",
+      "DKIM signature in the message header",
+      "DMARC aggregate report for the domain",
+      "MTA-STS policy of the receiving domain"
     ],
     "correct": [
       0
@@ -2971,10 +2971,10 @@
     "format": "single",
     "stem": "A mail gateway needs to verify a domain's cryptographic responsibility for selected headers and the covered message body. Which evidence addresses that question?",
     "options": [
-      "A DKIM signature check",
-      "An SPF lookup of the connecting server address",
-      "A DMARC policy published by the domain",
-      "A TLS certificate on the sending server"
+      "DKIM signature check",
+      "SPF lookup of the connecting server address",
+      "DMARC policy published by the domain",
+      "TLS certificate on the sending server"
     ],
     "correct": [
       0
@@ -2992,10 +2992,10 @@
     "format": "single",
     "stem": "A resolver needs to validate the origin and integrity of DNS data using the DNSSEC trust chain. Which evidence is relevant?",
     "options": [
-      "An SPF record published in the zone",
+      "SPF record published in the zone",
       "RRSIG and DS records up to the root",
       "DNS over HTTPS encryption of the query",
-      "A TLS certificate for the authoritative server"
+      "TLS certificate for the authoritative server"
     ],
     "correct": [
       1
@@ -3181,10 +3181,10 @@
     "format": "single",
     "stem": "A recovery design stores its trusted verification basis where ordinary compromised software can overwrite it. Which design element most needs protection?",
     "options": [
-      "The operating system boot loader",
-      "The immutable root of trust and its key",
-      "The backup firmware image file",
-      "The firmware update download server"
+      "Operating system boot loader",
+      "Immutable root of trust and its key",
+      "Backup firmware image file",
+      "Firmware update download server"
     ],
     "correct": [
       1
@@ -3203,9 +3203,9 @@
     "stem": "A signing service must perform private-key operations while keeping the signing key inside a dedicated protected cryptographic boundary. Which technology role best fits?",
     "options": [
       "Self-encrypting drives on the signing server",
-      "A secure enclave running the web front end",
-      "An HSM performing the signatures",
-      "A trusted platform module measuring boot"
+      "Secure enclave running the web front end",
+      "HSM performing the signatures",
+      "Trusted platform module measuring boot"
     ],
     "correct": [
       2
@@ -3223,9 +3223,9 @@
     "format": "single",
     "stem": "A remote verifier needs trustworthy evidence about a device's boot measurements, rooted in protected hardware state. Which capability is most relevant?",
     "options": [
-      "A secure enclave for application data",
+      "Secure enclave for application data",
       "TPM-backed attestation with PCR quotes",
-      "An HSM holding the device signing key",
+      "HSM holding the device signing key",
       "Full disk encryption with a recovery key"
     ],
     "correct": [
@@ -3244,10 +3244,10 @@
     "format": "single",
     "stem": "A workload must process sensitive data inside a hardware-supported protected execution boundary. The concern is exposure during processing, not only on disk. Which capability fits?",
     "options": [
-      "A trusted enclave for confidential computing",
+      "Trusted enclave for confidential computing",
       "Self-encrypting drives for data at rest",
       "TLS between the workload and its clients",
-      "A TPM sealing the boot configuration"
+      "TPM sealing the boot configuration"
     ],
     "correct": [
       0
@@ -3265,9 +3265,9 @@
     "format": "single",
     "stem": "The primary threat is physical theft of a powered-off drive. Which capability directly protects the stored contents when its keys remain protected?",
     "options": [
-      "An HSM for the application signing key",
+      "HSM for the application signing key",
       "Full disk encryption with a TPM-sealed key",
-      "A trusted execution environment for processing",
+      "Trusted execution environment for processing",
       "Remote attestation of the boot chain"
     ],
     "correct": [
@@ -3287,9 +3287,9 @@
     "stem": "A fragile industrial controller has not been assessed for active scan safety. The immediate need is to learn its normal communications without probing it. Which method fits?",
     "options": [
       "Passive monitoring from a SPAN port on the OT switch",
-      "An authenticated vulnerability scan of the controller",
-      "A ping sweep of the control network segment",
-      "A port scan during a maintenance window"
+      "Authenticated vulnerability scan of the controller",
+      "Ping sweep of the control network segment",
+      "Port scan during a maintenance window"
     ],
     "correct": [
       0
@@ -3329,9 +3329,9 @@
     "stem": "An unsupported controller must remain in service during an approved replacement interval. It needs communication with only two known systems. Which compensating boundary reduces unnecessary reachability?",
     "options": [
       "Passive monitoring of all controller traffic",
-      "A password change on the controller console",
-      "An antivirus agent on the engineering workstation",
-      "A conduit allowing only those two systems to reach it"
+      "Password change on the controller console",
+      "Antivirus agent on the engineering workstation",
+      "Conduit allowing only those two systems to reach it"
     ],
     "correct": [
       3
@@ -3391,10 +3391,10 @@
     "format": "single",
     "stem": "A required OT update involves a reboot that would interrupt an active process. Testing is complete and the process can safely stop during a planned outage. What should be arranged?",
     "options": [
-      "An immediate reboot to close the exposure",
-      "A remote reboot during the night shift",
-      "A rollback plan without operator involvement",
-      "A maintenance window agreed with plant operations"
+      "Immediate reboot to close the exposure",
+      "Remote reboot during the night shift",
+      "Rollback plan without operator involvement",
+      "Maintenance window agreed with plant operations"
     ],
     "correct": [
       3
@@ -3433,10 +3433,10 @@
     "format": "single",
     "stem": "An embedded sensor cannot support the standard endpoint agent. A risk owner approves specific network protections and a review date while replacement is planned. What governance record is needed?",
     "options": [
-      "A purchase order for the replacement sensor",
-      "A note in the asset inventory marking it as OT",
-      "A formal exception record with controls and an end date",
-      "A compliance attestation showing the sensor meets policy"
+      "Purchase order for the replacement sensor",
+      "Note in the asset inventory marking it as OT",
+      "Formal exception record with controls and an end date",
+      "Compliance attestation showing the sensor meets policy"
     ],
     "correct": [
       2
@@ -3455,9 +3455,9 @@
     "stem": "A remediation webhook is delivered twice. The second execution duplicates an irreversible business-side action. Which workflow property is needed to handle retries safely?",
     "options": [
       "HMAC verification of the webhook signature",
-      "A narrower role for the automation account",
-      "A human approval step for every webhook the service receives",
-      "An idempotency key checked on each delivery"
+      "Narrower role for the automation account",
+      "Human approval step for every webhook the service receives",
+      "Idempotency key checked on each delivery"
     ],
     "correct": [
       3
@@ -3476,9 +3476,9 @@
     "stem": "An automated playbook can isolate a hospital's shared identity service based on a low-confidence signal. Policy requires an authorized human decision for that business impact. Which gate is missing?",
     "options": [
       "HMAC validation of the triggering alert",
-      "A scoped automation account for isolation",
+      "Scoped automation account for isolation",
       "Deduplication of repeated alerts",
-      "A manual approval before isolation"
+      "Manual approval before isolation"
     ],
     "correct": [
       3
@@ -3541,7 +3541,7 @@
       "Policy-as-code checks on the Terraform plan in CI",
       "Drift detection on the live production resources",
       "Auto-remediation after the resource is created",
-      "A CSPM scan of the production account"
+      "CSPM scan of the production account"
     ],
     "correct": [
       0
@@ -3559,8 +3559,8 @@
     "format": "single",
     "stem": "A production resource differs from its approved infrastructure definition after a manual console change. Which capability first identifies this discrepancy?",
     "options": [
-      "A policy check on the next pull request",
-      "A peer review of the original definition by another engineer",
+      "Policy check on the next pull request",
+      "Peer review of the original definition by another engineer",
       "Unit tests for the infrastructure module",
       "Drift detection against the code"
     ],
@@ -3623,7 +3623,7 @@
     "stem": "A message payload must remain secret and detect unauthorized alteration under an established symmetric key. Which mechanism best addresses both needs?",
     "options": [
       "AES-GCM authenticated encryption",
-      "An RSA signature over the payload",
+      "RSA signature over the payload",
       "HMAC-SHA-256 over the plaintext",
       "AES-CBC encryption without a MAC"
     ],
@@ -3644,9 +3644,9 @@
     "stem": "A distributor publishes a readable software package and needs customers to verify its origin and integrity using a trusted public key. Which mechanism fits?",
     "options": [
       "AES-GCM encryption of the package",
-      "A salted bcrypt hash of the package",
-      "An HMAC with a key shared with customers",
-      "An EdDSA or RSA signature by the publisher"
+      "Salted bcrypt hash of the package",
+      "HMAC with a key shared with customers",
+      "EdDSA or RSA signature by the publisher"
     ],
     "correct": [
       3
@@ -3664,9 +3664,9 @@
     "format": "single",
     "stem": "A login service needs to verify passwords without retaining a reversibly encrypted copy. Which storage mechanism is appropriate?",
     "options": [
-      "A salted, slow hash such as bcrypt",
+      "Salted, slow hash such as bcrypt",
       "AES-GCM encryption of each password",
-      "A single unsalted SHA-256 digest",
+      "Single unsalted SHA-256 digest",
       "Tokenization of each password in a separate vault service"
     ],
     "correct": [
@@ -3686,7 +3686,7 @@
     "stem": "A business wants routine systems to use a substitute identifier while a tightly controlled service maintains the association with the original sensitive value. Which mechanism fits?",
     "options": [
       "Masking of the value on display screens",
-      "A digital signature over the value",
+      "Digital signature over the value",
       "Tokenization with a protected token vault",
       "Format-preserving hashing of the value"
     ],
@@ -3793,7 +3793,7 @@
       "Key escrow with a split-knowledge custodian",
       "Perfect forward secrecy using ECDHE",
       "Post-quantum key encapsulation with ML-KEM",
-      "A longer RSA key for the server certificate"
+      "Longer RSA key for the server certificate"
     ],
     "correct": [
       1
@@ -3832,10 +3832,10 @@
     "format": "single",
     "stem": "Attackers have obtained password-verifier records. The system wants each offline guess to require substantial computation and memory while keeping legitimate verification practical. Which technique addresses this?",
     "options": [
-      "A single round of salted SHA-256",
+      "Single round of salted SHA-256",
       "AES encryption of each password",
       "Threshold splitting of the verifier key",
-      "A slow, memory-hard hash such as scrypt"
+      "Slow, memory-hard hash such as scrypt"
     ],
     "correct": [
       3
@@ -3919,7 +3919,7 @@
       "IPsec with a single pre-shared key for all hosts",
       "Mutual TLS with client and server certificates",
       "Server-only TLS with an API key in the body",
-      "A shared HMAC over each request body"
+      "Shared HMAC over each request body"
     ],
     "correct": [
       1
@@ -3940,7 +3940,7 @@
       "Deleting the files and emptying the recycle bin",
       "Rotating the key-encryption key to a new version in the KMS",
       "Cryptographic erase of every copy of the media key",
-      "A single overwrite pass of zeros on the drive"
+      "Single overwrite pass of zeros on the drive"
     ],
     "correct": [
       2
@@ -4000,10 +4000,10 @@
     "format": "single",
     "stem": "One application has produced no central events since its forwarding agent stopped. Other sources and parsing remain healthy. What should be restored first?",
     "options": [
-      "The dashboard panels for that application",
-      "The agent that ships its logs",
-      "The parser rules for the application logs",
-      "The correlation rules that use those logs"
+      "Dashboard panels for that application",
+      "Agent that ships its logs",
+      "Parser rules for the application logs",
+      "Correlation rules that use those logs"
     ],
     "correct": [
       1
@@ -4042,10 +4042,10 @@
     "format": "single",
     "stem": "Two equally credible compromise alerts affect otherwise similar hosts. One supports emergency clinical care and the other a disposable training environment. Which factor should most directly distinguish response priority?",
     "options": [
-      "The CVSS score of the exploited flaw",
+      "CVSS score of the exploited flaw",
       "The time each alert was received",
-      "The vendor severity label on each alert",
-      "The business criticality of each host"
+      "Vendor severity label on each alert",
+      "Business criticality of each host"
     ],
     "correct": [
       3
@@ -4063,8 +4063,8 @@
     "format": "single",
     "stem": "A feed labels an indicator severe but provides no provenance, context or corroboration. Before treating that label as reliable, which characteristic should an analyst assess?",
     "options": [
-      "The number of other feeds that ingest it",
-      "The age of the indicator in days",
+      "Number of other feeds that ingest it",
+      "Age of the indicator in days",
       "The format the feed uses to deliver it",
       "How trustworthy its source has been"
     ],
@@ -4085,9 +4085,9 @@
     "stem": "A backup server transfers large volumes nightly as expected. A rule flags its ordinary schedule as an anomaly. What context should be used to evaluate the alert?",
     "options": [
       "Its usual schedule for that time of night",
-      "A single volume threshold for every host",
-      "The geographic location of the destination",
-      "The patch level of the backup server"
+      "Single volume threshold for every host",
+      "Geographic location of the destination",
+      "Patch level of the backup server"
     ],
     "correct": [
       0
@@ -4150,7 +4150,7 @@
       "Server-side validation of the description length",
       "Encoding the value before it reaches the page",
       "Parameterized queries when storing the description",
-      "An allowlist of outbound server destinations"
+      "Allowlist of outbound server destinations"
     ],
     "correct": [
       1
@@ -4210,9 +4210,9 @@
     "format": "single",
     "stem": "Two concurrent redemption requests each read a voucher as unused before either marks it used, so both succeed. Which fix addresses the race at its source?",
     "options": [
-      "An atomic compare-and-set on the voucher status",
+      "Atomic compare-and-set on the voucher status",
       "Validation of the voucher code format",
-      "A rate limit on redemption requests per user",
+      "Rate limit on redemption requests per user",
       "Logging of every redemption request"
     ],
     "correct": [
@@ -4315,10 +4315,10 @@
     "format": "single",
     "stem": "A forensic image has been acquired and its integrity verified. The analyst needs to perform repeated searches without altering the preserved master. Which artifact should be used?",
     "options": [
-      "A logical export of selected folders",
-      "A verified working copy of the image",
-      "The original seized drive",
-      "The master image mounted read-write"
+      "Logical export of selected folders",
+      "Verified working copy of the image",
+      "Original seized drive",
+      "Master image mounted read-write"
     ],
     "correct": [
       1
@@ -4336,10 +4336,10 @@
     "format": "single",
     "stem": "An evidence package moves from an incident responder to an external examiner. Which record supports accountability for that handoff?",
     "options": [
-      "A new SHA-256 hash of the image",
+      "New SHA-256 hash of the image",
       "A ticket noting the package was shipped",
-      "An email confirming the examiner received it",
-      "A chain of custody form signed by both parties"
+      "Email confirming the examiner received it",
+      "Chain of custody form signed by both parties"
     ],
     "correct": [
       3
@@ -4378,10 +4378,10 @@
     "format": "single",
     "stem": "The incident lead needs evidence of a suspicious process's current in-memory state before an approved shutdown. Which acquisition target is most time-sensitive?",
     "options": [
-      "The cloud control-plane audit logs",
-      "The firewall flow records for the host",
-      "A RAM capture of the running host",
-      "A full image of the system disk"
+      "Cloud control-plane audit logs",
+      "Firewall flow records for the host",
+      "RAM capture of the running host",
+      "Full image of the system disk"
     ],
     "correct": [
       2
@@ -4399,10 +4399,10 @@
     "format": "single",
     "stem": "Investigators need deleted-file remnants and filesystem metadata from a powered-off workstation. Which evidence source most directly addresses that question?",
     "options": [
-      "The proxy logs for the workstation",
-      "A full image of the disk",
-      "A memory capture from the workstation",
-      "The cloud provider audit trail"
+      "Proxy logs for the workstation",
+      "Full image of the disk",
+      "Memory capture from the workstation",
+      "Cloud provider audit trail"
     ],
     "correct": [
       1
@@ -4420,8 +4420,8 @@
     "format": "single",
     "stem": "A storage policy was changed through a provider's management API. Investigators need the actor and request history for that control-plane action. Which source is most relevant?",
     "options": [
-      "The cloud audit trail, such as CloudTrail",
-      "A disk image of the application server",
+      "Cloud audit trail, such as CloudTrail",
+      "Disk image of the application server",
       "Memory from the administrator laptop",
       "Packet captures from the office network"
     ],
@@ -4441,10 +4441,10 @@
     "format": "single",
     "stem": "The team needs to determine which observed internal host contacted a destination during a specific interval. Packet or flow telemetry was collected at the relevant boundary. Which source should be preserved?",
     "options": [
-      "The saved NetFlow and PCAP data",
-      "The current firewall rule set",
-      "The endpoint antivirus quarantine list",
-      "The DHCP scope configuration"
+      "Saved NetFlow and PCAP data",
+      "Current firewall rule set",
+      "Endpoint antivirus quarantine list",
+      "DHCP scope configuration"
     ],
     "correct": [
       0
@@ -4462,10 +4462,10 @@
     "format": "single",
     "stem": "A hunt begins with a broad concern about misuse of administrative tools but no defined behavior or scope to investigate. What should the team establish first?",
     "options": [
-      "A full export of every log source available",
-      "A new SIEM alert for administrative tools",
-      "A list of all administrators in the directory",
-      "A specific hypothesis tied to an ATT&CK technique"
+      "Full export of every log source available",
+      "New SIEM alert for administrative tools",
+      "List of all administrators in the directory",
+      "Specific hypothesis tied to an ATT&CK technique"
     ],
     "correct": [
       3
@@ -4546,10 +4546,10 @@
     "format": "single",
     "stem": "An analyst wants a reusable rule describing characteristic byte or text patterns in suspicious files. Which artifact type most directly serves that purpose?",
     "options": [
-      "A STIX indicator",
-      "A TAXII collection",
-      "A YARA rule",
-      "A Sigma rule"
+      "STIX indicator",
+      "TAXII collection",
+      "YARA rule",
+      "Sigma rule"
     ],
     "correct": [
       2
@@ -4567,10 +4567,10 @@
     "format": "single",
     "stem": "A team wants to express a detection over normalized log events in a portable rule format before translating it to its SIEM. Which artifact type fits?",
     "options": [
-      "An OpenIOC file",
-      "A Sigma rule",
-      "A YARA rule",
-      "A Snort signature"
+      "OpenIOC file",
+      "Sigma rule",
+      "YARA rule",
+      "Snort signature"
     ],
     "correct": [
       1
@@ -4588,10 +4588,10 @@
     "format": "single",
     "stem": "Several organizations need a machine-readable representation of an indicator and its relationships to observed activity. Which artifact category fits?",
     "options": [
-      "A YARA rule set",
-      "A CSV list of IP addresses and domain names",
+      "YARA rule set",
+      "CSV list of IP addresses and domain names",
       "Linked STIX domain objects",
-      "A TAXII server endpoint"
+      "TAXII server endpoint"
     ],
     "correct": [
       2
@@ -4609,10 +4609,10 @@
     "format": "single",
     "stem": "Partners already agree on the structured threat data format and now need an API mechanism to exchange collections. Which capability addresses delivery?",
     "options": [
-      "A YARA rule feed",
-      "A TAXII server",
-      "A STIX bundle schema",
-      "A Sigma rule repository"
+      "YARA rule feed",
+      "TAXII server",
+      "STIX bundle schema",
+      "Sigma rule repository"
     ],
     "correct": [
       1
@@ -4694,7 +4694,7 @@
     "stem": "The immediate incident is resolved, but the team needs to understand how an unauthorized trust change passed the change process. Which activity supports prevention of recurrence?",
     "options": [
       "Adding the account to a watch list",
-      "A root cause analysis",
+      "Root cause analysis",
       "Closing the ticket with a summary note",
       "Restoring the trust setting from backup"
     ],

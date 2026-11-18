@@ -7,7 +7,7 @@ Q = [
  "A written offer must exist first", ["A verbal offer is enough", "Only the vendor can decide", "The form wording is optional"],
  "REA's case commentary says a multi-offer situation requires an offer to be in writing, and a form implying otherwise was inconsistent with that requirement."),
 ("A salesperson says a back-up offer exists to press a buyer, but none exists. This is:",
- "A false claim to customers", ["A permitted negotiation line", "A harmless marketing puff", "A matter for the vendor to judge"],
+ "False claim to customers", ["Permitted negotiation line", "Harmless marketing puff", "Matter for the vendor to judge"],
  "REA's case summary describes telling a buyer there was a back-up offer when there was not as dealing unfairly and giving false information, contrary to rule 6.4."),
 ("A salesperson says they verbally advised a buyer about a flood zone, but made no file note. Why does this matter?",
  "No record backs their account", ["Verbal advice is never valid", "File notes are the buyer's duty", "The vendor must write the note"],

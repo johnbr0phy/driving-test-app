@@ -22,34 +22,34 @@ Q('A cleaned system and verified backup are ready, and the owner authorizes rest
  'Returning the service to production',['Removing the persistence mechanism','Isolating the host from the network','Imaging the disk for evidence'],
  'Restoration returns a trusted service to operation under the recovery plan. Cleaning and isolation are already complete.')
 Q('A recovered service is running, and responders watch for recurrence or residual behavior. Which activity is this?',
- 'Post-restoration monitoring',['Further containment','A second eradication pass','Evidence acquisition'],
+ 'Post-restoration monitoring',['Further containment','Second eradication pass','Evidence acquisition'],
  'Monitoring after restoration helps identify incomplete recovery or renewed compromise.')
 Q('The response lead must give business teams a factual update on scope, impact and next steps. Which activity is this?',
- 'A status briefing via the agreed channel',['A public statement on social media','A legal hold notice to custodians','A technical root-cause report'],
+ 'Status briefing via the agreed channel',['Public statement on social media','Legal hold notice to custodians','Technical root-cause report'],
  'Status communication coordinates stakeholders using verified information and the agreed channel. A root-cause report comes later and serves a different audience.')
 Q('An analyst is about to work on the only copy of a relevant storage image. Which safeguard is needed first?',
  'Make a verified duplicate and analyze that instead',['Analyze the image directly and log every action','Hash the image once analysis is finished','Compress the image first to save space'],
  'Preserve the original and work on controlled copies so the source evidence remains available. Logging actions does not undo changes to the only copy.')
 Q('An evidence drive passes from the collector to the forensic examiner. Which record preserves the handoff?',
- 'A chain-of-custody record',['A forensic analysis report','An evidence hash list','A case timeline'],
+ 'Chain-of-custody record',['Forensic analysis report','Evidence hash list','Case timeline'],
  'Record who transferred and received the evidence, when, and under what handling conditions. A hash shows the content is unchanged but not who held it.')
 Q('An examination would extend to privately owned devices outside the current authorization. What must be resolved first?',
- 'A legal basis to examine those devices',['Hashes of the private devices before imaging','Tools that can read the private devices','Storage for the private device images'],
+ 'Legal basis to examine those devices',['Hashes of the private devices before imaging','Tools that can read the private devices','Storage for the private device images'],
  'Confirm legal and organizational authority for the additional scope rather than assuming access permission. Tools and storage are irrelevant until authority exists.')
 Q('An examiner\'s conclusion relies on several tools and transformations. Which record lets a peer assess the reasoning?',
- 'Notes on methods, tool versions and assumptions',['The final conclusion with the examiner\'s signature','The list of evidence items received','The custody log for the evidence'],
+ 'Notes on methods, tool versions and assumptions',['Final conclusion with the examiner\'s signature','List of evidence items received','Custody log for the evidence'],
  'Document methods, tool details, assumptions and relevant results so the analysis can be repeated and evaluated.')
 Q('An examiner needs running-process and memory state that is lost at power-off. Which evidence activity fits?',
  'Volatile data collection',['Disk imaging after shutdown','Log export from the SIEM','Hashing the powered-off drive'],
  'Capture relevant volatile evidence using an approved method before it disappears, while recording any changes caused by collection.')
 Q('A case needs a controlled copy of stored files and file-system metadata for later study. Which activity fits?',
- 'Forensic disk imaging',['Live memory capture','Network packet capture','A screenshot of the desktop'],
+ 'Forensic disk imaging',['Live memory capture','Network packet capture','Screenshot of the desktop'],
  'Acquire persistent storage evidence using approved procedures that preserve file-system metadata. Memory and packet capture collect different evidence.')
 Q('After moving a collected image, an examiner compares its digest with the acquisition digest. What is the purpose?',
  'To confirm the copy matches what was acquired',['To encrypt the copy while it is transferred','To prove who created the original files','To timestamp the evidence for court use'],
  'The comparison checks that the copied evidence matches the recorded image; it does not encrypt it or prove every fact about its source.')
 Q('Responders must order validated login, process and transfer events to see how compromise unfolded. Which product serves this?',
- 'An incident timeline',['An evidence inventory','A chain-of-custody form','A root-cause statement'],
+ 'Incident timeline',['Evidence inventory','Chain-of-custody form','Root-cause statement'],
  'An incident timeline combines supported events and time assumptions into an ordered account.')
 Q('A plan targets restoring a business function within four hours of disruption. Which measure is this?',
  'Recovery time objective (RTO)',['Recovery point objective (RPO)','Maximum tolerable downtime (MTD)','Mean time to repair (MTTR)'],
@@ -64,40 +64,40 @@ Q('Policy keeps weekly backup copies for six months before expiry. Which measure
  'Backup retention period',['Backup frequency','Backup window','Recovery point objective'],
  'Retention specifies how long backup copies are kept. Frequency is how often they are taken, and the window is when the job runs.')
 Q('A backup copies all data in scope, regardless of earlier backups. Which approach is this?',
- 'A full backup',['An incremental backup','A differential backup','A transaction log backup'],
+ 'Full backup',['Incremental backup','Differential backup','Transaction log backup'],
  'A full backup copies the whole selected scope.')
 Q('A backup copies changes since the most recent backup of any type, full or incremental. Which approach is this?',
- 'An incremental backup',['A differential backup','A full backup','A mirror copy'],
+ 'Incremental backup',['Differential backup','Full backup','Mirror copy'],
  'Incremental backup captures changes since the preceding backup; restoration may require the complete relevant chain.')
 Q('A backup copies all changes since the last full backup, even ones copied yesterday. Which approach is this?',
- 'A differential backup',['An incremental backup','A full backup','A continuous replica'],
+ 'Differential backup',['Incremental backup','Full backup','Continuous replica'],
  'Differential backup accumulates changes since the full baseline, so each one grows until the next full backup.')
 Q('Operators rebuild an isolated service from a retained copy and verify its data and functions. What was performed?',
- 'A restoration test',['A backup integrity checksum','A backup job completion check','A replication health check'],
+ 'Restoration test',['Backup integrity checksum','Backup job completion check','Replication health check'],
  'A restoration test checks recoverability and function; a checksum or completed job does not show the service can be rebuilt.')
 Q('Ransomware could reach production and always-writable backups through the same credentials. Which design feature addresses this?',
- 'An offline or immutable backup copy',['A second copy on the same storage array','More frequent snapshots on production','Backups encrypted with the production key'],
+ 'Offline or immutable backup copy',['Second copy on the same storage array','More frequent snapshots on production','Backups encrypted with the production key'],
  'An isolated copy reduces the chance that the same compromised access can alter all recovery data. Extra copies or snapshots on reachable storage share the same weakness.')
 Q('Primary and recovery facilities sit in the same flood zone. Which design feature addresses this?',
- 'An alternate site in a different hazard area',['A warm site across the street','A UPS and generator at the primary site','A second rack in the same building'],
+ 'Alternate site in a different hazard area',['Warm site across the street','UPS and generator at the primary site','Second rack in the same building'],
  'Geographic separation should account for shared hazards and dependencies, not just a different street address.')
 Q('A service must keep running when one server fails, without a rebuild. Which feature addresses this?',
- 'Redundant servers with automatic failover',['Nightly backups of the server','A cold standby built on demand','An extended hardware support contract'],
+ 'Redundant servers with automatic failover',['Nightly backups of the server','Cold standby built on demand','Extended hardware support contract'],
  'Redundant live capacity supports continuity after a component failure. Backups and cold standby require a rebuild first.')
 Q('A service runs at an alternate site and must return to normal without losing new records. Which plan is required?',
- 'A documented failback procedure',['A failover runbook','A tabletop exercise','A backup rotation schedule'],
+ 'Documented failback procedure',['Failover runbook','Tabletop exercise','Backup rotation schedule'],
  'Failback planning coordinates return, synchronization and validation after alternate operation. A failover runbook covers moving away, not back.')
 Q('Participants check a recovery plan line by line for contacts and roles, with no scenario. Which activity is this?',
- 'A read-through review',['A tabletop exercise','A parallel test','A full interruption test'],
+ 'Read-through review',['Tabletop exercise','Parallel test','Full interruption test'],
  'A read-through (checklist) review checks the documented plan, contacts and roles. A tabletop or structured walkthrough adds a scenario to discuss.')
 Q('Participants discuss decisions and escalation during a simulated outage, without moving live workloads. Which exercise is this?',
- 'A tabletop exercise',['A checklist review','A live failover simulation','A full interruption test'],
+ 'Tabletop exercise',['Checklist review','Live failover simulation','Full interruption test'],
  'A tabletop uses a scenario to practice coordination and decision-making without executing a live recovery.')
 Q('Technicians rebuild an isolated application from retained data copies and test it. Which exercise is this?',
- 'A backup restoration test',['A tabletop exercise','A checklist review','A full interruption test'],
+ 'Backup restoration test',['Tabletop exercise','Checklist review','Full interruption test'],
  'A technical restoration exercise verifies the ability to reconstruct and use the service from recovery material without disrupting production.')
 Q('Under a test plan, a service moves real processing to its alternate environment and checks continuity. Which exercise is this?',
- 'A full interruption test',['A parallel test','A tabletop exercise','A structured walkthrough'],
+ 'Full interruption test',['Parallel test','Tabletop exercise','Structured walkthrough'],
  'A full interruption test moves real processing to the alternate site and proves continuity there. A parallel test runs the alternate site alongside production without moving it.')
 Q('RTO is four hours and RPO 30 minutes. Recovery takes three hours and loses 20 minutes of records. Which is correct?',
  'Both targets are met',['Only the RTO is met','Only the RPO is met','Neither target is met'],

@@ -338,7 +338,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
     totalAccounts++;
     const d = doc.data() as Record<string, unknown>;
     const sub = (d.subscription || {}) as Record<string, unknown>;
-    const paid = sub.isPremium === true || paidAt.has(doc.id);
+    const paid = (sub.isPremium === true && sub.grantedBy !== 'millionth') || paidAt.has(doc.id);
     const stats = (d._stats || {}) as Record<string, unknown>;
     const statsAnswers = num(stats.trainingQuestionsAnswered) + num(stats.testQuestionsAnswered);
     if (statsAnswers > 0) population.push(Math.floor(statsAnswers));

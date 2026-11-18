@@ -4,16 +4,16 @@ def Q(stem,key,wrong,why):
  assert len(wrong)==3
  ITEMS.append((stem,[key]+list(wrong),why))
 Q('An organized group has the intent and capability to disrupt the organization. What does the group represent?',
- 'A threat source',['A vulnerability','An attack vector','A residual risk'],
+ 'Threat source',['Vulnerability','Attack vector','Residual risk'],
  'The actor is a threat source. A weakness it might exploit would be a vulnerability, and the path it uses would be an attack vector.')
 Q('A public application runs an unsupported component with a known exploitable flaw. What does that weakness represent?',
- 'A vulnerability',['A threat agent','An exploit','A risk event'],
+ 'Vulnerability',['Threat agent','Exploit','Risk event'],
  'The exploitable weakness is a vulnerability. An exploit is the code or technique that takes advantage of it, and a threat agent is the actor.')
 Q('A service interruption would prevent payroll processing and create contractual penalties. What do those consequences represent?',
  'Impact on the business',['Likelihood of occurrence','Threat events','Control gaps'],
  'The consequences to organizational objectives are business impacts. Likelihood concerns how probable the event is, not what it would cost.')
 Q('A deployed access gateway enforces approved connection policy. What does this measure represent?',
- 'A safeguard',['A residual risk','A vulnerability','A threat vector'],
+ 'Safeguard',['Residual risk','Vulnerability','Threat vector'],
  'An implemented safeguard modifies risk by enforcing a protective measure. Residual risk is what remains after such measures.')
 Q('A business drops a proposed service because its exposure exceeds tolerance and no controls fit. Which treatment is this?',
  'Risk avoidance',['Risk mitigation','Risk transfer','Risk deferral'],
@@ -64,16 +64,16 @@ Q('A patch job reports success, but proof is needed that the vulnerability is go
  'Rescan or retest the system',['Rely on the deployment log','Close the ticket on the vendor notice','Ask the owner to confirm by email'],
  'Verification checks the resulting condition; a successful deployment log or an owner\'s statement alone is insufficient.')
 Q('An alert flags a malicious login, but the login proves legitimate. How is the alert classified?',
- 'A false positive',['A false negative','A true negative','A test alert'],
+ 'False positive',['False negative','True negative','Test alert'],
  'A false positive flags an event as malicious when the malicious condition is absent.')
 Q('A confirmed malicious transfer occurred, but the rule did not alert. How is the result classified?',
- 'A false negative',['A false positive','A true negative','A duplicate alert'],
+ 'False negative',['False positive','True negative','Duplicate alert'],
  'A false negative misses the malicious condition that was present.')
 Q('A rule alerts on a file transfer that investigation confirms was malicious. How is this classified?',
- 'A true positive',['A false positive','A true negative','An informational alert'],
+ 'True positive',['False positive','True negative','Informational alert'],
  'A true positive correctly detects the malicious condition.')
 Q('A benign health check occurs and the detection system correctly raises no alert. How is this classified?',
- 'A true negative',['A false negative','A true positive','A suppressed alert'],
+ 'True negative',['False negative','True positive','Suppressed alert'],
  'A true negative correctly leaves the absent malicious condition unflagged. A suppressed alert would mean an alert fired and was hidden.')
 Q('A team cannot tell unusual outbound volume from nightly processing because normal is undefined. Which task closes the gap?',
  'Profiling expected traffic over time',['Raising the outbound volume threshold','Correlating volume with login events','Blocking all nightly outbound transfers'],
@@ -91,13 +91,13 @@ Q('Assessors will inspect packages and settings on each host with an approved re
  'Credentialed vulnerability scanning',['Unauthenticated network scanning','Penetration testing','Passive traffic analysis'],
  'Credentialed assessment can inspect internal configuration that an unauthenticated scan may not reveal.')
 Q('A team needs to know which services are reachable from the internet without internal credentials. Which approach fits?',
- 'An external unauthenticated scan',['A credentialed scan of each host','An internal segmentation test','A static code review'],
+ 'External unauthenticated scan',['Credentialed scan of each host','Internal segmentation test','Static code review'],
  'External exposure assessment examines the organization from the relevant outside vantage point.')
 Q('Under signed rules of engagement, testers check whether weaknesses can be chained to reach an agreed goal. Which approach fits?',
- 'A penetration test',['A vulnerability scan','A compliance audit','A tabletop exercise'],
+ 'Penetration test',['Vulnerability scan','Compliance audit','Tabletop exercise'],
  'Authorized penetration testing validates exploitation paths within explicit scope and constraints. A scan finds weaknesses but does not chain them.')
 Q('An assessor checks retained approvals and access-review records against a stated requirement. Which approach fits?',
- 'A compliance audit',['A penetration test of the access system','A vulnerability scan of the review tool','A red team exercise'],
+ 'Compliance audit',['Penetration test of the access system','Vulnerability scan of the review tool','Red team exercise'],
  'Compliance evidence review assesses conformity to stated requirements, rather than actively exploiting systems.')
 Q('A team must decide when old customer records may be deleted, sparing those under legal hold. Which obligation applies?',
  'Retention obligations',['Data localization obligations','Breach notification obligations','Purpose limitation obligations'],

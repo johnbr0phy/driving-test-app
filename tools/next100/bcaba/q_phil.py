@@ -12,7 +12,7 @@ Q = [
  "Pragmatism", ["Parsimony", "Determinism", "Empiricism"],
  "Pragmatism judges the truth of an idea by its practical consequences. Parsimony favors the simplest adequate explanation."),
 ("Saying a child hits 'because he is aggressive', when the only evidence of aggressiveness is the hitting, is an example of:",
- "A circular explanation", ["A functional explanation", "A parsimonious account", "An operational definition"],
+ "Circular explanation", ["Functional explanation", "Parsimonious account", "Operational definition"],
  "An explanatory fiction uses a label inferred from the behavior to explain that same behavior, which is circular and points to no variable that can be changed."),
 ("Which view accepts only publicly observable events as scientific data and sets private events aside?",
  "Methodological behaviorism", ["Radical behaviorism", "Applied behavior analysis research", "Conceptual selectionism"],

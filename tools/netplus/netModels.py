@@ -77,7 +77,7 @@ ITEMS = [
           ["A handshake that sets up the connection before data is sent",
            "Sequence numbers and acknowledgments so lost data is resent",
            "Delivery of one datagram to every host on the local subnet",
-           "A smaller header that adds less overhead to each message",
+           "Smaller header that adds less overhead to each message",
            "Port numbers that identify the sending and receiving application"],
           "TCP is connection-oriented: the three-way handshake sets up the session, and sequencing with acknowledgments lets it detect and resend lost segments. Both TCP and UDP use port numbers, UDP has the smaller header, and TCP cannot broadcast."),
     single(2, "OSI layers", 1,

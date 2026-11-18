@@ -115,10 +115,10 @@
     "skill": "creative",
     "stem": "A cooking app description says it filters recipes, sorts by preparation time, then displays the first five. What does that statement primarily describe?",
     "options": [
-      "The results of its testing",
+      "Results of its testing",
       "Its sequence of operations",
       "Its overall purpose",
-      "The data types of its inputs"
+      "Data types of its inputs"
     ],
     "correct": [
       1
@@ -157,10 +157,10 @@
     "skill": "creative",
     "stem": "A report says a checkout feature was tried with an empty basket, one item and several items. What does that statement describe?",
     "options": [
-      "The program's algorithm",
-      "The user requirements",
-      "The input data types",
-      "The test cases used"
+      "Program's algorithm",
+      "User requirements",
+      "Input data types",
+      "Test cases used"
     ],
     "correct": [
       3
@@ -178,10 +178,10 @@
     "skill": "creative",
     "stem": "A quiz always reports success because its comparison is reversed. The program runs without stopping. Which error category best fits?",
     "options": [
-      "A logic error",
-      "A syntax error",
-      "A run-time error",
-      "A hardware failure"
+      "Logic error",
+      "Syntax error",
+      "Run-time error",
+      "Hardware failure"
     ],
     "correct": [
       0
@@ -199,10 +199,10 @@
     "skill": "creative",
     "stem": "A parser rejects a statement because a required closing parenthesis is missing. Which error category best fits?",
     "options": [
-      "A rounding error",
-      "A syntax error",
-      "A logic error",
-      "A run-time error"
+      "Rounding error",
+      "Syntax error",
+      "Logic error",
+      "Run-time error"
     ],
     "correct": [
       1
@@ -220,10 +220,10 @@
     "skill": "creative",
     "stem": "A program attempts 24 / count when count is zero and the environment stops execution. Which error category best fits?",
     "options": [
-      "A logic error",
-      "An overflow error",
-      "A run-time error",
-      "A syntax error"
+      "Logic error",
+      "Overflow error",
+      "Run-time error",
+      "Syntax error"
     ],
     "correct": [
       2
@@ -241,10 +241,10 @@
     "skill": "creative",
     "stem": "A fixed-width integer counter cannot represent the result of adding one to its largest value. Which error category best fits?",
     "options": [
-      "A run-time error",
-      "A logic error",
-      "A rounding error",
-      "An overflow error"
+      "Run-time error",
+      "Logic error",
+      "Rounding error",
+      "Overflow error"
     ],
     "correct": [
       3
@@ -262,10 +262,10 @@
     "skill": "creative",
     "stem": "A garden program receives a new moisture measurement from a sensor. What role does that incoming number play?",
     "options": [
-      "An input to the program",
-      "An output from the program",
-      "A constant written into the code",
-      "An event triggered by a user"
+      "Input to the program",
+      "Output from the program",
+      "Constant written into the code",
+      "Event triggered by a user"
     ],
     "correct": [
       0
@@ -283,10 +283,10 @@
     "skill": "creative",
     "stem": "A sound-monitoring program sends a brightness value to an external lamp controller. What role does the sent value play?",
     "options": [
-      "A loop counter",
+      "Loop counter",
       "Program output",
       "Program input",
-      "A Boolean condition"
+      "Boolean condition"
     ],
     "correct": [
       1
@@ -304,8 +304,8 @@
     "skill": "creative",
     "stem": "A drawing program retains the currently selected brush width between pointer movements. How is that retained value best classified?",
     "options": [
-      "An event caused by the user",
-      "A value returned by a procedure",
+      "Event caused by the user",
+      "Value returned by a procedure",
       "Program state stored in a variable",
       "Output displayed to the user"
     ],
@@ -325,10 +325,10 @@
     "skill": "creative",
     "stem": "A button press causes a drawing program to run its clear-screen handler. What triggers the handler?",
     "options": [
-      "A program output",
-      "A loop condition",
-      "A stored list",
-      "A user event"
+      "Program output",
+      "Loop condition",
+      "Stored list",
+      "User event"
     ],
     "correct": [
       3
@@ -346,9 +346,9 @@
     "skill": "creative",
     "stem": "A team has not implemented route search but wants passengers to try the planned screen navigation. Which artifact is most directly useful?",
     "options": [
-      "A clickable mock-up of the interface",
-      "A list of expected test outputs",
-      "A trace table of variables",
+      "Clickable mock-up of the interface",
+      "List of expected test outputs",
+      "Trace table of variables",
       "Comments in the source code"
     ],
     "correct": [
@@ -367,9 +367,9 @@
     "skill": "creative",
     "stem": "A team wants a reference against which to compare outputs from a finished tax calculator using several chosen inputs. Which artifact is most directly useful?",
     "options": [
-      "A flowchart of the algorithm",
-      "A table of expected results",
-      "A paper prototype of the interface",
+      "Flowchart of the algorithm",
+      "Table of expected results",
+      "Paper prototype of the interface",
       "Notes from user interviews"
     ],
     "correct": [
@@ -389,9 +389,9 @@
     "stem": "A developer must locate where an incorrect subtotal first appears during program execution. Which artifact is most directly useful?",
     "options": [
       "Responses from a user survey of the app",
-      "The program's written purpose statement",
+      "Program's written purpose statement",
       "A trace of variable values as the code runs",
-      "A clickable prototype of the interface"
+      "Clickable prototype of the interface"
     ],
     "correct": [
       2
@@ -409,9 +409,9 @@
     "skill": "creative",
     "stem": "A developer wants to call a library function without reading its implementation. Which artifact is most directly useful?",
     "options": [
-      "A trace of its internal variable values",
-      "The full source code of the library",
-      "A storyboard of the screens in the app",
+      "Trace of its internal variable values",
+      "Full source code of the library",
+      "Storyboard of the screens in the app",
       "Documentation of its parameters and return value"
     ],
     "correct": [
@@ -472,10 +472,10 @@
     "skill": "creative",
     "stem": "Before implementing route search, a team wants users to evaluate the planned interaction. Which TWO artifacts fit this goal?",
     "options": [
-      "A benchmark of route-search speed",
-      "A table of route-search test outputs",
-      "A clickable screen prototype",
-      "A storyboard of user actions"
+      "Benchmark of route-search speed",
+      "Table of route-search test outputs",
+      "Clickable screen prototype",
+      "Storyboard of user actions"
     ],
     "correct": [
       2,
@@ -495,10 +495,10 @@
     "skill": "creative",
     "stem": "After implementing route search, a team wants evidence of its performance and correctness. Which TWO artifacts fit this goal?",
     "options": [
-      "A table of route-search test outputs",
+      "Table of route-search test outputs",
       "Interview notes from potential users",
-      "A sketch of the menu layout",
-      "A benchmark of route-search speed"
+      "Sketch of the menu layout",
+      "Benchmark of route-search speed"
     ],
     "correct": [
       0,
@@ -854,7 +854,7 @@
     "skill": "data",
     "stem": "A computing-interest survey includes only members of an optional coding club but is used to describe all students. What threatens the conclusion?",
     "options": [
-      "A biased sample",
+      "Biased sample",
       "Too few questions asked",
       "Inconsistent data formats",
       "Missing metadata"
@@ -899,7 +899,7 @@
       "Too few entries for each year",
       "Dates stored as text, not numbers",
       "Doubt about which number is the month",
-      "A missing time zone on each entry"
+      "Missing time zone on each entry"
     ],
     "correct": [
       2
@@ -918,8 +918,8 @@
     "stem": "Readings 6.2 and 6.4 are both stored as the integer 6. What prevents recovery of their original difference?",
     "options": [
       "Lossless compression of the file",
-      "An overflow of the stored value",
-      "A sampling bias in the readings",
+      "Overflow of the stored value",
+      "Sampling bias in the readings",
       "Rounding to whole numbers"
     ],
     "correct": [
@@ -940,8 +940,8 @@
     "options": [
       "How many different people borrowed",
       "How many loans were made",
-      "The average loans per borrower",
-      "The most frequent borrower"
+      "Average loans per borrower",
+      "Most frequent borrower"
     ],
     "correct": [
       0
@@ -959,10 +959,10 @@
     "skill": "data",
     "stem": "An event log has exactly one row for each recorded bicycle rental. What does counting all rows calculate?",
     "options": [
-      "The busiest rental station",
+      "Busiest rental station",
       "How many rentals took place",
       "How many different riders there were",
-      "The average rental length"
+      "Average rental length"
     ],
     "correct": [
       1
@@ -980,10 +980,10 @@
     "skill": "data",
     "stem": "A file records one trip duration per journey. What does summing durations and dividing by the number of journeys calculate?",
     "options": [
-      "The longest single trip",
-      "The number of trips taken",
-      "The average trip length",
-      "The total time of all trips"
+      "Longest single trip",
+      "Number of trips taken",
+      "Average trip length",
+      "Total time of all trips"
     ],
     "correct": [
       2
@@ -1001,10 +1001,10 @@
     "skill": "data",
     "stem": "An analyst sorts measured daily rainfall from greatest to least and reads the first value. What has the analyst found?",
     "options": [
-      "The median daily rainfall",
-      "The total rainfall over the period",
-      "The driest day in the data",
-      "The wettest day in the data"
+      "Median daily rainfall",
+      "Total rainfall over the period",
+      "Driest day in the data",
+      "Wettest day in the data"
     ],
     "correct": [
       3
@@ -1106,10 +1106,10 @@
     "skill": "data",
     "stem": "A table shows that warmer days tend to have higher bicycle rental counts, without a controlled experiment. What relation is directly established?",
     "options": [
-      "A correlation only",
+      "Correlation only",
       "Proof that warmth increases rentals",
-      "A sampling error",
-      "A trend over the years"
+      "Sampling error",
+      "Trend over the years"
     ],
     "correct": [
       0
@@ -1128,7 +1128,7 @@
     "stem": "A randomized controlled trial changes only reminder delivery and finds a reliable attendance difference between groups. What type of conclusion does that design support?",
     "options": [
       "A result that holds for every population",
-      "A cause-and-effect conclusion",
+      "Cause-and-effect conclusion",
       "Only a correlation, never causation",
       "No conclusion about either group"
     ],
@@ -1149,7 +1149,7 @@
     "stem": "Published data give mean screen time for four age groups. Comparing these four figures directly describes what?",
     "options": [
       "Whether age causes screen use",
-      "The spread of individual values",
+      "Spread of individual values",
       "How the averages compare across ages",
       "How each person's use changed"
     ],
@@ -1169,10 +1169,10 @@
     "skill": "data",
     "stem": "A station's annual rainfall is plotted from 2001 through 2020. What can that single-variable plot directly show?",
     "options": [
-      "A correlation between two variables",
+      "Correlation between two variables",
       "The cause of the changes",
-      "A comparison of several stations",
-      "A trend across those years"
+      "Comparison of several stations",
+      "Trend across those years"
     ],
     "correct": [
       3
@@ -1211,8 +1211,8 @@
     "skill": "data",
     "stem": "A recorder takes one sample each second instead of ten per second. What change reduces its temporal detail?",
     "options": [
-      "A smaller file format",
-      "A lower sampling rate",
+      "Smaller file format",
+      "Lower sampling rate",
       "Fewer bits per sample",
       "Lossless compression"
     ],
@@ -2164,10 +2164,10 @@
     "skill": "algorithms",
     "stem": "A drawing operation is named drawTile(size) and reused with different sizes instead of copying its statements. Which abstraction is central?",
     "options": [
-      "A Boolean flag",
-      "A nested loop",
-      "A procedure with a parameter",
-      "A list storing the tile sizes"
+      "Boolean flag",
+      "Nested loop",
+      "Procedure with a parameter",
+      "List storing the tile sizes"
     ],
     "correct": [
       2
@@ -2185,10 +2185,10 @@
     "skill": "algorithms",
     "stem": "A program replaces score1 through score50 with one collection traversed by a loop. Which abstraction is central?",
     "options": [
-      "A procedure with fifty parameters",
-      "A Boolean expression",
-      "A string of comma-separated text",
-      "A list of related values"
+      "Procedure with fifty parameters",
+      "Boolean expression",
+      "String of comma-separated text",
+      "List of related values"
     ],
     "correct": [
       3
@@ -2206,10 +2206,10 @@
     "skill": "algorithms",
     "stem": "A program represents whether someone meets both membership and age requirements with one true/false expression. Which representation is central?",
     "options": [
-      "A Boolean value",
-      "A list of the requirements",
-      "A procedure with two parameters",
-      "A string label"
+      "Boolean value",
+      "List of the requirements",
+      "Procedure with two parameters",
+      "String label"
     ],
     "correct": [
       0
@@ -2227,10 +2227,10 @@
     "skill": "algorithms",
     "stem": "A flood study represents a valley with a grid and omits small surface features to estimate water movement. Which abstraction is central?",
     "options": [
-      "A Boolean expression",
-      "A simulation model",
-      "A data compression scheme",
-      "A heuristic search"
+      "Boolean expression",
+      "Simulation model",
+      "Data compression scheme",
+      "Heuristic search"
     ],
     "correct": [
       1
@@ -2332,9 +2332,9 @@
     "skill": "algorithms",
     "stem": "A minimum-finding procedure must handle any nonempty numeric list, including lists with only negative values. Which initialization fits?",
     "options": [
-      "A large value such as 1000",
-      "The length of the list",
-      "The first item in the list",
+      "Large value such as 1000",
+      "Length of the list",
+      "First item in the list",
       "Zero"
     ],
     "correct": [
@@ -2354,8 +2354,8 @@
     "stem": "A program will add each item to a running sum and must give the correct total for an empty list. Which initialization fits?",
     "options": [
       "One",
-      "The first list item",
-      "The number of items",
+      "First list item",
+      "Number of items",
       "Zero"
     ],
     "correct": [
@@ -2376,8 +2376,8 @@
     "options": [
       "One",
       "Zero",
-      "The first factor in the list",
-      "The number of factors"
+      "First factor in the list",
+      "Number of factors"
     ],
     "correct": [
       0
@@ -2395,9 +2395,9 @@
     "skill": "algorithms",
     "stem": "A program will append selected records in traversal order and should return no records when none match. Which initialization fits?",
     "options": [
-      "An empty string",
-      "An empty list",
-      "A list holding the first record",
+      "Empty string",
+      "Empty list",
+      "List holding the first record",
       "Zero"
     ],
     "correct": [
@@ -2417,7 +2417,7 @@
     "stem": "An ordered list is searched by comparing its middle value and discarding the half that cannot contain the target. Which method is used?",
     "options": [
       "Selection sort",
-      "A random search",
+      "Random search",
       "Binary search",
       "Linear search"
     ],
@@ -2438,7 +2438,7 @@
     "stem": "An unsorted list is checked from its first item onward until a match is found or the list ends. Which method is used?",
     "options": [
       "Binary search",
-      "A heuristic",
+      "Heuristic",
       "Merge sort",
       "Linear search"
     ],
@@ -2458,8 +2458,8 @@
     "skill": "algorithms",
     "stem": "A route planner calculates the length of every possible ordering of stops and selects the shortest. Which method is used?",
     "options": [
-      "An exhaustive search",
-      "A greedy heuristic",
+      "Exhaustive search",
+      "Greedy heuristic",
       "Binary search",
       "Sorting the stops by distance"
     ],
@@ -2479,10 +2479,10 @@
     "skill": "algorithms",
     "stem": "A route planner repeatedly visits the closest unvisited stop and accepts that the final route may not be optimal. Which method is used?",
     "options": [
-      "An undecidable procedure",
-      "A heuristic approach",
-      "An exhaustive search of all routes",
-      "A binary search"
+      "Undecidable procedure",
+      "Heuristic approach",
+      "Exhaustive search of all routes",
+      "Binary search"
     ],
     "correct": [
       1
@@ -2500,10 +2500,10 @@
     "skill": "algorithms",
     "stem": "A problem has no algorithm that returns the correct yes/no answer for every allowed instance. What classification applies?",
     "options": [
-      "A heuristic problem",
-      "An optimization problem",
-      "An undecidable problem",
-      "A problem with no reasonable-time solution"
+      "Heuristic problem",
+      "Optimization problem",
+      "Undecidable problem",
+      "Problem with no reasonable-time solution"
     ],
     "correct": [
       2
@@ -2521,10 +2521,10 @@
     "skill": "algorithms",
     "stem": "A procedure always finds the optimum but its exhaustive search takes impractical time for large inputs. What description applies?",
     "options": [
-      "An undecidable problem",
+      "Undecidable problem",
       "A heuristic that may miss the optimum",
-      "A program with a logic error",
-      "An algorithm without reasonable run time"
+      "Program with a logic error",
+      "Algorithm without reasonable run time"
     ],
     "correct": [
       3
@@ -2542,10 +2542,10 @@
     "skill": "algorithms",
     "stem": "A queue model draws customer arrivals at random and repeats the experiment to estimate waiting-time variation. What description applies?",
     "options": [
-      "A simulation",
-      "A brute-force search",
-      "An undecidable problem",
-      "A sorting algorithm"
+      "Simulation",
+      "Brute-force search",
+      "Undecidable problem",
+      "Sorting algorithm"
     ],
     "correct": [
       0
@@ -2563,10 +2563,10 @@
     "skill": "algorithms",
     "stem": "A planner uses a fixed greedy rule with fixed tie-breaking, producing the same potentially nonoptimal route for the same input. What description applies?",
     "options": [
-      "An undecidable problem",
-      "A deterministic heuristic",
-      "A random simulation",
-      "An exact exhaustive search"
+      "Undecidable problem",
+      "Deterministic heuristic",
+      "Random simulation",
+      "Exact exhaustive search"
     ],
     "correct": [
       1
@@ -2974,10 +2974,10 @@
     "skill": "networks",
     "stem": "Which part of a packet helps a router choose where to forward it?",
     "options": [
-      "The destination address",
-      "The data payload",
-      "A sequence number",
-      "An error-detecting code"
+      "Destination address",
+      "Data payload",
+      "Sequence number",
+      "Error-detecting code"
     ],
     "correct": [
       0
@@ -2995,10 +2995,10 @@
     "skill": "networks",
     "stem": "Pieces of one message arrive in a different order from the one in which they were sent. Which header field lets the receiver rebuild the message correctly?",
     "options": [
-      "A time-to-live counter",
-      "A sequence number",
-      "The destination address",
-      "The source address"
+      "Time-to-live counter",
+      "Sequence number",
+      "Destination address",
+      "Source address"
     ],
     "correct": [
       1
@@ -3016,10 +3016,10 @@
     "skill": "networks",
     "stem": "A packet carries a piece of a photograph. Which part contains those image data rather than information about delivery?",
     "options": [
-      "The sequence number",
-      "The sender's address",
-      "The payload",
-      "The routing header"
+      "Sequence number",
+      "Sender's address",
+      "Payload",
+      "Routing header"
     ],
     "correct": [
       2
@@ -3037,10 +3037,10 @@
     "skill": "networks",
     "stem": "A receiver checks whether packet bits were altered in transit. Which type of information supports this check?",
     "options": [
-      "A sequence number",
-      "The destination address",
-      "An encryption key",
-      "An error-detecting code"
+      "Sequence number",
+      "Destination address",
+      "Encryption key",
+      "Error-detecting code"
     ],
     "correct": [
       3
@@ -3123,7 +3123,7 @@
     "options": [
       "Higher-bandwidth connections",
       "Redundant network paths",
-      "A separate message format for each brand",
+      "Separate message format for each brand",
       "Open, standard protocols"
     ],
     "correct": [
@@ -3142,10 +3142,10 @@
     "skill": "networks",
     "stem": "All traffic from A to C must pass through B, with no other path. What role makes B a vulnerability?",
     "options": [
-      "A single point of failure",
-      "A redundant router",
-      "A bandwidth upgrade",
-      "A fault-tolerant node"
+      "Single point of failure",
+      "Redundant router",
+      "Bandwidth upgrade",
+      "Fault-tolerant node"
     ],
     "correct": [
       0
@@ -3166,7 +3166,7 @@
       "Lower latency on A-B-D",
       "Redundancy",
       "Higher bandwidth on A-B-D",
-      "A single point of failure"
+      "Single point of failure"
     ],
     "correct": [
       1
@@ -3184,9 +3184,9 @@
     "skill": "networks",
     "stem": "A job must finish validating all input before any processing task can begin. What limits overlap between these phases?",
     "options": [
-      "A lack of redundant paths",
+      "Lack of redundant paths",
       "Too many processors in use",
-      "A sequential part of the work",
+      "Sequential part of the work",
       "Too little network bandwidth"
     ],
     "correct": [
@@ -3206,9 +3206,9 @@
     "stem": "Several laboratories process separate image batches on their own computers and send back results. What arrangement is illustrated?",
     "options": [
       "Sequential processing on one machine",
-      "A single point of failure",
+      "Single point of failure",
       "Lossless compression of images",
-      "A distributed system"
+      "Distributed system"
     ],
     "correct": [
       3
@@ -3382,7 +3382,7 @@
     "skill": "impact",
     "stem": "What access improvement do RideLink's stop displays provide?",
     "options": [
-      "The displays collect device travel histories",
+      "Displays collect device travel histories",
       "Riders without a phone can see predictions",
       "Riders can submit reports at the stop",
       "Outer routes receive more volunteer reports"
@@ -3535,9 +3535,9 @@
     "stem": "A message impersonates payroll and directs a worker to a copied sign-in page. Which threat is illustrated?",
     "options": [
       "Phishing",
-      "A keylogger",
-      "A computer virus",
-      "A rogue access point"
+      "Keylogger",
+      "Computer virus",
+      "Rogue access point"
     ],
     "correct": [
       0
@@ -3555,7 +3555,7 @@
     "skill": "impact",
     "stem": "A hidden program records typed passwords and sends them to an attacker. Which threat is illustrated?",
     "options": [
-      "A denial-of-service attack",
+      "Denial-of-service attack",
       "Keylogging",
       "Phishing",
       "Ransomware"
@@ -3576,9 +3576,9 @@
     "skill": "impact",
     "stem": "An attacker operates a wireless network using a cafe's name to attract connections. Which threat is illustrated?",
     "options": [
-      "A computer virus",
+      "Computer virus",
       "Malware on a USB drive",
-      "A rogue access point",
+      "Rogue access point",
       "Phishing"
     ],
     "correct": [
@@ -3597,9 +3597,9 @@
     "skill": "impact",
     "stem": "An attacker tries passwords leaked from a game site against the same users' email accounts. Which threat is illustrated?",
     "options": [
-      "A phishing message",
+      "Phishing message",
       "Keylogging software",
-      "A rogue access point",
+      "Rogue access point",
       "Reuse of stolen credentials"
     ],
     "correct": [
@@ -3620,8 +3620,8 @@
     "options": [
       "Multifactor authentication",
       "Encryption of the account data",
-      "A stronger password policy",
-      "A network firewall"
+      "Stronger password policy",
+      "Network firewall"
     ],
     "correct": [
       0
@@ -3639,7 +3639,7 @@
     "skill": "impact",
     "stem": "A backup file is made unreadable without a secret key before it is stored remotely. Which protection is applied?",
     "options": [
-      "A cloud backup policy",
+      "Cloud backup policy",
       "Encryption",
       "Multifactor authentication",
       "Data compression"
@@ -3702,10 +3702,10 @@
     "skill": "impact",
     "stem": "A remote-learning program assumes every student has a reliable laptop and home Internet. Which concern applies to students who lack them?",
     "options": [
-      "The digital divide",
+      "Digital divide",
       "Algorithmic bias",
-      "A privacy breach",
-      "A copyright restriction"
+      "Privacy breach",
+      "Copyright restriction"
     ],
     "correct": [
       0
@@ -3725,8 +3725,8 @@
     "options": [
       "Overflow in the model",
       "Bias in the training data",
-      "The digital divide",
-      "A lack of encryption"
+      "Digital divide",
+      "Lack of encryption"
     ],
     "correct": [
       1
@@ -3744,7 +3744,7 @@
     "skill": "impact",
     "stem": "A public dataset omits names but reveals each device's nightly location over many weeks. Which concern remains?",
     "options": [
-      "A digital divide among device owners",
+      "Digital divide among device owners",
       "Bias in how the data were collected",
       "Identifying people from their locations",
       "Copyright on the published dataset"
@@ -3765,7 +3765,7 @@
     "skill": "impact",
     "stem": "A developer finds an online image whose license prohibits commercial reuse. Which concern applies to placing it in a paid app?",
     "options": [
-      "The digital divide",
+      "Digital divide",
       "Personal data privacy",
       "Algorithmic bias in apps",
       "Copyright infringement"
@@ -3787,7 +3787,7 @@
     "stem": "A program's code is published under terms allowing inspection, modification and redistribution. Which description best applies?",
     "options": [
       "Open-source software",
-      "A public-domain work",
+      "Public-domain work",
       "Proprietary software",
       "Freeware with no source code"
     ],
@@ -3808,9 +3808,9 @@
     "stem": "A text is no longer covered by copyright because its protection has expired. Which description best applies?",
     "options": [
       "Fair use",
-      "A public-domain work",
+      "Public-domain work",
       "Open-source software",
-      "A Creative Commons license"
+      "Creative Commons license"
     ],
     "correct": [
       1
@@ -3830,8 +3830,8 @@
     "options": [
       "Open-source software",
       "Plagiarism of the work",
-      "A Creative Commons license",
-      "A public-domain work"
+      "Creative Commons license",
+      "Public-domain work"
     ],
     "correct": [
       2
@@ -3870,10 +3870,10 @@
     "skill": "impact",
     "stem": "To send confidential public-key encrypted mail to a recipient, which item does the sender use to encrypt?",
     "options": [
-      "The recipient's public key",
-      "The recipient's private key",
-      "The sender's public key",
-      "The sender's private key"
+      "Recipient's public key",
+      "Recipient's private key",
+      "Sender's public key",
+      "Sender's private key"
     ],
     "correct": [
       0
@@ -3891,10 +3891,10 @@
     "skill": "impact",
     "stem": "A recipient needs to decrypt mail encrypted with that recipient's public key. Which item is required?",
     "options": [
-      "A certificate authority's key",
-      "The recipient's private key",
-      "The recipient's public key",
-      "The sender's public key"
+      "Certificate authority's key",
+      "Recipient's private key",
+      "Recipient's public key",
+      "Sender's public key"
     ],
     "correct": [
       1
@@ -3913,8 +3913,8 @@
     "stem": "Two devices use symmetric encryption to communicate privately. Which item must they both possess?",
     "options": [
       "Matching public and private key pairs",
-      "A digital certificate",
-      "The same secret key",
+      "Digital certificate",
+      "Same secret key",
       "Each other's public keys"
     ],
     "correct": [
@@ -3933,10 +3933,10 @@
     "skill": "impact",
     "stem": "A browser checks a trusted issuer's statement associating a site name with its encryption key. What is it checking?",
     "options": [
-      "The site's private key",
-      "A shared symmetric key",
-      "A password hash",
-      "A digital certificate"
+      "Site's private key",
+      "Shared symmetric key",
+      "Password hash",
+      "Digital certificate"
     ],
     "correct": [
       3
@@ -3978,7 +3978,7 @@
       "Machine learning",
       "Citizen science",
       "Crowdfunding",
-      "A controlled experiment"
+      "Controlled experiment"
     ],
     "correct": [
       1
@@ -4039,9 +4039,9 @@
     "stem": "A classifier makes substantially more mistakes for one demographic group than another. What issue is demonstrated?",
     "options": [
       "Algorithmic bias",
-      "The digital divide",
+      "Digital divide",
       "Overfitting to too much data",
-      "A privacy violation"
+      "Privacy violation"
     ],
     "correct": [
       0
@@ -4059,7 +4059,7 @@
     "skill": "impact",
     "stem": "A feed increasingly shows only opinions similar to articles a reader previously selected. What possible effect is illustrated?",
     "options": [
-      "A digital divide in news access",
+      "Digital divide in news access",
       "Less exposure to differing views",
       "Bias in a hiring model",
       "Loss of personal privacy"
@@ -4101,10 +4101,10 @@
     "skill": "impact",
     "stem": "A routing app saves drivers time by sending traffic through a residential street, increasing noise for residents. What effect is illustrated?",
     "options": [
-      "A digital divide among drivers",
-      "A privacy breach of drivers' locations",
-      "A copyright issue with the map data",
-      "A benefit for some and a harm for others"
+      "Digital divide among drivers",
+      "Privacy breach of drivers' locations",
+      "Copyright issue with the map data",
+      "Benefit for some and a harm for others"
     ],
     "correct": [
       3
@@ -4206,10 +4206,10 @@
     "skill": "impact",
     "stem": "Which TWO fields refer to individual devices or accounts rather than aggregate observations?",
     "options": [
-      "A persistent device identifier",
-      "An account email address",
-      "A citywide daily visit count",
-      "A regionwide monthly rainfall mean"
+      "Persistent device identifier",
+      "Account email address",
+      "Citywide daily visit count",
+      "Regionwide monthly rainfall mean"
     ],
     "correct": [
       0,
@@ -4229,10 +4229,10 @@
     "skill": "impact",
     "stem": "Which TWO fields are aggregate measurements rather than individual device or account identifiers?",
     "options": [
-      "A phone number used to sign in",
-      "A citywide daily visit count",
-      "A regionwide monthly rainfall mean",
-      "A home street address"
+      "Phone number used to sign in",
+      "Citywide daily visit count",
+      "Regionwide monthly rainfall mean",
+      "Home street address"
     ],
     "correct": [
       1,

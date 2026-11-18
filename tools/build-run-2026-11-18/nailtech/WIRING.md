@@ -11,7 +11,7 @@ Rebuild: `python3 -I tools/build-run-2026-11-18/nailtech/build.py`, then validat
 `python3 -I .claude/skills/exam-bank/scripts/validate_bank.py data/nail-technician-questions.json --pool nailInfection=32 --pool nailStructure=16 --pool nailDisorders=16 --pool nailChemistry=20 --pool nailConsult=16 --pool nailTools=24 --pool nailManiPedi=36 --pool nailEnhance=40`
 
 Format: 4 tests x 50, four topic sets (52/48/60/40), 8 dashboard steps; pools exactly 4x per test.
-Pass line 75% (NIC reports a scaled score; boards set the cut, many at 75, e.g. South Carolina).
+Pass line 75% (each board sets the cut; many use 75, e.g. South Carolina).
 
 ## lib/exams.ts
 
@@ -37,8 +37,8 @@ const nailtech: ExamConfig = {
   // March 1, 2026: 110 items, 100 scored, 90 minutes. Infection Control and Safety 15%, Anatomy
   // and Physiology 15% (split here into structure 4 and disorders 4), Chemistry of Nail Products
   // 10%, Pre-service 5% + Post-service 4% (consultation 4), Nail Service Tools 13%, Manicure and
-  // Pedicure Services 18%, Nail Enhancement Services 20%. NIC reports a scaled score; each board
-  // sets its pass mark (75 in many, e.g. South Carolina). References: Milady Standard Nail
+  // Pedicure Services 18%, Nail Enhancement Services 20%. Each board sets its pass mark
+  // (75 in many, e.g. South Carolina). References: Milady Standard Nail
   // Technology 8th ed., Pivot Point Fundamentals: Nails. All items original.
   blueprint: {
     nailInfection: 8,
@@ -166,11 +166,11 @@ Nothing: US is the default region (cosmetology and barber have no `TEST_REGIONS`
 ```ts
   nailtech: {
     answer:
-      "Most US states license nail technicians (called manicurists in some states) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Nail Technology Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline weights infection control and safety 15 percent, anatomy and physiology 15 percent, chemistry of nail products 10 percent, pre-service 5 percent, nail service tools 13 percent, manicure and pedicure services 18 percent, nail enhancement services 20 percent and post-service 4 percent. NIC reports a scaled score and each board sets its passing score; many use 75. Training hours, fees and the practical exam vary by state, and some states use a different exam provider.",
+      "Most US states license nail technicians (called manicurists in some states) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Nail Technology Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline weights infection control and safety 15 percent, anatomy and physiology 15 percent, chemistry of nail products 10 percent, pre-service 5 percent, nail service tools 13 percent, manicure and pedicure services 18 percent, nail enhancement services 20 percent and post-service 4 percent. Each state board sets its passing score; many use 75. Training hours, fees and the practical exam vary by state, and some states use a different exam provider.",
     rows: [
       { label: "Questions", value: "110 (100 scored), four options each" },
       { label: "Time", value: "90 minutes" },
-      { label: "Passing score", value: "Scaled; set by each board, 75 in many states (e.g. South Carolina)" },
+      { label: "Passing score", value: "Set by each board; 75 in many states (e.g. South Carolina)" },
       { label: "Largest area", value: "Nail enhancement services, 20%" },
       { label: "Also required", value: "Usually a practical exam (varies by state)" },
       { label: "Developed by", value: "NIC (National-Interstate Council of State Boards of Cosmetology)" },
@@ -210,5 +210,5 @@ Run `npx tsx scripts/build-training-parts.ts`. No set exceeds 60 (largest 60, se
 ## CLAUDE.md (under Additional Exams, after the Barber bullet)
 
 ```md
-- **Nail Technician** (`nailtech`, NIC National Nail Technology Theory Examination, the written state board exam for nail technicians and manicurists in NIC states, `/nail-technician/*`, landing `/nail-technician-practice-test`): `data/nail-technician-questions.json` (200 original questions on the NIC Nail Technology theory CIB effective September 1, 2025, revised March 1, 2026 (110 items, 100 scored, 90 minutes): infection control and safety (OSHA nail salon guidance: exhaust ventilation at least 50%, HVAC fan On, monthly charcoal filters, self-closing metal cans, nitrile gloves and latex or vinyl for acetone, N95 for dust only, goggles when transferring products, ergonomics) 32, nail, skin and limb anatomy 16, nail and skin disorders 16, chemistry of nail products (FDA: MMA, formaldehyde hardeners, toluene, DBP, EMA) 20, consultation and post-service 16, nail service tools 24, manicures and pedicures (shapes, massage, polish, paraffin, add-ons) 36, nail enhancements (tips, acrylic, soft, hard and hybrid gels, dip) 40), test IDs 34401-34404, sets 34401-34404 (Infection Control & Chemistry 52, Anatomy, Disorders & Consultation 48, Tools, Manicures & Pedicures 60, Nail Enhancements 40), state `NAILTECH`, prefix `NAIL-`, 75% pass (NIC reports a scaled score and each board sets its cut; 75 in many states, e.g. South Carolina). 8/4/4/5/4/6/9/10 per test (the outline's 15/15/10/9/13/18/20 rounded). Training hours, fees, scope rules and the practical exam vary by state and are not asked. Checked against `cosmetology`, `barber` and `mblex` for repeated fact-and-answer pairs. Built by `tools/build-run-2026-11-18/nailtech/build.py`; sources in `tools/build-run-2026-11-18/nailtech/sources.md`. Region US, hub group "Workplace & job certifications" (after barber), `[data-theme="nailtech"]` nail-polish raspberry (331 85% 36%), borrows the cosmetology tiger, teacher-led (nail technology schools).
+- **Nail Technician** (`nailtech`, NIC National Nail Technology Theory Examination, the written state board exam for nail technicians and manicurists in NIC states, `/nail-technician/*`, landing `/nail-technician-practice-test`): `data/nail-technician-questions.json` (200 original questions on the NIC Nail Technology theory CIB effective September 1, 2025, revised March 1, 2026 (110 items, 100 scored, 90 minutes): infection control and safety (OSHA nail salon guidance: exhaust ventilation at least 50%, HVAC fan On, monthly charcoal filters, self-closing metal cans, nitrile gloves and latex or vinyl for acetone, N95 for dust only, goggles when transferring products, ergonomics) 32, nail, skin and limb anatomy 16, nail and skin disorders 16, chemistry of nail products (FDA: MMA, formaldehyde hardeners, toluene, DBP, EMA) 20, consultation and post-service 16, nail service tools 24, manicures and pedicures (shapes, massage, polish, paraffin, add-ons) 36, nail enhancements (tips, acrylic, soft, hard and hybrid gels, dip) 40), test IDs 34401-34404, sets 34401-34404 (Infection Control & Chemistry 52, Anatomy, Disorders & Consultation 48, Tools, Manicures & Pedicures 60, Nail Enhancements 40), state `NAILTECH`, prefix `NAIL-`, 75% pass (each board sets its cut; 75 in many states, e.g. South Carolina). 8/4/4/5/4/6/9/10 per test (the outline's 15/15/10/9/13/18/20 rounded). Training hours, fees, scope rules and the practical exam vary by state and are not asked. Checked against `cosmetology`, `barber` and `mblex` for repeated fact-and-answer pairs. Built by `tools/build-run-2026-11-18/nailtech/build.py`; sources in `tools/build-run-2026-11-18/nailtech/sources.md`. Region US, hub group "Workplace & job certifications" (after barber), `[data-theme="nailtech"]` nail-polish raspberry (331 85% 36%), borrows the cosmetology tiger, teacher-led (nail technology schools).
 ```

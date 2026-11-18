@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "What score do you need to pass?",
-    a: "NIC reports a scaled score, and each state board sets its passing score. Many boards use 75, for example South Carolina, which requires a passing score of 75% on the NIC theory and practical exams. The practice tests here use 75% as a readiness line.",
+    a: "Each state board sets its passing score; NIC publishes no national pass mark. Many boards use 75, for example South Carolina, which requires a passing score of 75% on the NIC theory and practical exams. The practice tests here use 75% as a readiness line.",
   },
   {
     q: "What does the nail technician theory exam cover?",

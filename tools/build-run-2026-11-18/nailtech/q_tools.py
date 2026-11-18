@@ -19,7 +19,7 @@ Q = [
  "Foot file", ["Cuticle pusher", "Curette", "Toenail clipper"],
  "A foot file (paddle) gently reduces dry, built-up skin on the heels and balls of the feet."),
 ("After one client, an electric file sanding band is:",
- "Thrown away", ["Soaked and reused", "Rinsed and reused", "Wiped and reused"],
+ "Thrown away", ["Soaked in disinfectant", "Brushed and reused", "Stored in a UV box"],
  "Sanding bands are porous and cannot be disinfected, so they are single-use."),
 ("A finger bowl is used to:",
  "Soak fingertips", ["Store implements", "Mix acrylic monomer", "Hold disinfectant"],
@@ -70,6 +70,6 @@ Q = [
  "Implements", ["Equipment", "Supplies", "Products"],
  "Implements are hand tools that can be cleaned and disinfected between clients. Supplies such as cotton are used up."),
 ("To mix nail polish without creating air bubbles, the technician should:",
- "Roll it between the palms", ["Shake the bottle hard", "Warm it in a hot water bath", "Thin it with acetone"],
+ "Roll it between the palms", ["Shake it for a minute", "Tap it on the table", "Stir it with the brush"],
  "Rolling mixes the color gently. Shaking adds bubbles that dry into the film, and acetone ruins the formula."),
 ]

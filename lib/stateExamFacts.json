@@ -30,6 +30,52 @@
    }
   ]
  },
+ "realestate-co": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Colorado Real Estate Commission and Division of Real Estate (DORA)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, under contract with the Division",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/2598"
+   },
+   {
+    "label": "Exam structure",
+    "value": "Two parts, a national (general) portion and a Colorado (state) portion"
+   },
+   {
+    "label": "National portion",
+    "value": "80 items, 60 correct to pass, 120 minutes"
+   },
+   {
+    "label": "Colorado portion",
+    "value": "74 items, 53 correct to pass, 110 minutes"
+   },
+   {
+    "label": "Experimental items",
+    "value": "5 to 10 unscored items may be added; they count against time"
+   },
+   {
+    "label": "Parts scored separately",
+    "value": "Yes; a failed part may be retaken alone"
+   },
+   {
+    "label": "Score validity",
+    "value": "A passing score on either part is valid one year; apply within one year"
+   },
+   {
+    "label": "Prelicense education",
+    "value": "168 hours: 48 law and practice, 48 Colorado contracts, 72 trust accounts, closings, legal issues, practical applications"
+   },
+   {
+    "label": "CE and reciprocal use",
+    "value": "CE and reciprocal candidates take only the 74-item state portion"
+   }
+  ]
+ },
  "realestate-fl": {
   "accessed": "2026-10-17",
   "rows": [

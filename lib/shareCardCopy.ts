@@ -165,6 +165,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   "realestate-wa": { title: "Washington Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Washington real estate rules." },
   "realestate-az": { title: "Arizona Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Arizona real estate rules." },
   "realestate-la": { title: "Louisiana Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Louisiana real estate rules." },
+  "realestate-co": { title: "Colorado Real Estate Broker", description: "Review property, contracts, agency, disclosures, financing and Colorado real estate rules." },
   "realestate-md": { title: "Maryland Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Maryland real estate rules." },
   "realestate-ma": { title: "Massachusetts Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Massachusetts real estate rules." },
   "realestate-mo": { title: "Missouri Real Estate Salesperson", description: "Review property, contracts, agency, disclosures, financing and Missouri real estate rules." },

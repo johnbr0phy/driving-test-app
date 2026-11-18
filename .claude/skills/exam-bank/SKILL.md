@@ -289,7 +289,10 @@ cue: length, tone, the odd one out, the most complete or the safest option, repe
 or G (guess). `score` then judges the bank:
 - **A surface cue that finds the key is a writing fault.** Every S hit is listed and rewritten
   (parallel wrong options in the same form, not a puzzle). The bank fails while S hits exceed
-  3% of items or, from 10 S picks up, 40% of them.
+  3% of items or, from 10 S picks up, 40% of them. S tags vary a lot between reviewers (two
+  passes on one bank flagged nearly disjoint sets, mostly knowledge), so each tagged hit then
+  goes to a second reviewer who reads the whole question and says whether the options really
+  give the key away; its verdicts go in `confirm.json` and only confirmed hits count.
 - **Knowledge is not a fault.** A reviewer who knows the subject picks "20 seconds" for
   handwashing without the stem, and so would a real exam's options. Live banks scored 64% (real
   estate) and 82% (food manager) on Nov 18 2026, almost all from knowledge, so there is no flat

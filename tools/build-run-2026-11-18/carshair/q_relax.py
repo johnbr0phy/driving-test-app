@@ -2,11 +2,11 @@ CAT = "rshairRelax"; SEG = "REL"
 # RSOS task E-12: chemically relaxes hair (applies, processes, removes chemical relaxers and
 # neutralizing products).
 Q = [
-("A relaxer is sold as \"no-lye.\" What does it still contain?",
- "A different hydroxide", ["Ammonium thioglycolate", "Hydrogen peroxide", "A mild acid"],
- "No-lye relaxers drop sodium hydroxide (lye) but still use a hydroxide such as guanidine or lithium hydroxide. They are not thio products and are still strongly alkaline."),
+("A relaxer is sold as \"no-lye.\" Which active ingredient might it contain?",
+ "Guanidine hydroxide", ["Sodium hydroxide", "Ammonium thioglycolate", "Glyceryl thioglycolate"],
+ "No-lye relaxers drop sodium hydroxide (lye) but still use a hydroxide such as guanidine or lithium hydroxide. Sodium hydroxide is lye itself, and the thioglycolates are thio products."),
 ("During a relaxer retouch, product runs onto the previously relaxed ends. What is the main risk?",
- "Breakage", ["Extra curl", "Brassy tones", "Uneven colour"],
+ "Breakage", ["Curl reverting", "Scalp irritation", "Colour fading"],
  "Relaxer on hair that is already relaxed processes it twice and weakens it until it breaks. The retouch stays on the regrowth only."),
 ("On a virgin relaxer, where does application usually begin?",
  "The most resistant area", ["The front hairline", "The finest hair", "The ends first"],
@@ -18,7 +18,7 @@ Q = [
  "Finer and more fragile", ["Coarser and resistant", "Already relaxed", "Darker in colour"],
  "Hairline hair is often finer and processes faster, so it gets less time. The most resistant area, often the back, goes first."),
 ("Many neutralizing shampoos change colour during lathering. What does this show?",
- "Whether alkali remains", ["When to add toner", "The hair's porosity", "The relaxer strength"],
+ "Whether relaxer remains", ["Whether the bonds re-formed", "Whether the pH is too low", "Whether the scalp is irritated"],
  "Colour-signal shampoos change when relaxer residue is still in the hair, so the stylist keeps shampooing until the colour shows it is gone."),
 ("A thio relaxer has straightened the hair. What re-forms the bonds?",
  "An oxidizing neutralizer", ["A second thio lotion", "A hydroxide cream", "A plain water rinse"],

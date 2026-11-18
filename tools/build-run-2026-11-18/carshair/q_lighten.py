@@ -9,7 +9,7 @@ Q = [
  "Powder lightener", ["Oil lightener", "Cream lightener", "Demi toner"],
  "Powder (quick) lighteners give the most lift and can irritate skin, so they are mostly used off the scalp. Oil and cream lighteners suit on-scalp work."),
 ("Why is cream lightener a common choice for a full-head, on-scalp application?",
- "It stays put and conditions", ["It lifts the most levels", "It needs no developer", "It deposits a toner too"],
+ "Thick, with conditioners", ["Fast, with high lift", "Thin, with toner added", "Dry, needing no developer"],
  "Cream lighteners hold their shape without running and contain conditioners that cushion the scalp. Powder gives more lift but is harsher on skin."),
 ("For lightener applied directly on the scalp, which developer strength is generally the limit?",
  "20 volume", ["30 volume", "40 volume", "50 volume"],
@@ -36,6 +36,6 @@ Q = [
  "Slicing", ["Weaving", "Chunking", "Blocking"],
  "Slicing takes a fine, straight section so the whole sheet lightens, giving a stronger stripe of colour. Weaving picks out separate fine strands for a softer blend."),
 ("A client complains of hot, stinging scalp halfway through an on-scalp lightener. What first?",
- "Rinse it off now", ["Rinse when it reaches level", "Blot the scalp and continue", "Add barrier cream and continue"],
- "Monitoring client safety and comfort is part of every lightening service. Burning means removing the product right away and checking the scalp."),
+ "Rinse off with cool water", ["Rinse off with warm water", "Rinse at the next check", "Rinse once it reaches level"],
+ "Monitoring client safety and comfort is part of every lightening service. Burning means rinsing the product off right away with cool water and checking the scalp. Warm water adds heat to an irritated scalp, and waiting for the next check or the target level leaves the product burning."),
 ]

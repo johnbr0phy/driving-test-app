@@ -20,7 +20,7 @@ Q = [
  "Molecules enlarge as they oxidize", ["Molecules coat the cuticle", "Molecules stain the medulla", "Molecules seal the cuticle shut"],
  "Small dye precursors enter the cortex and join into large coloured molecules when the developer oxidizes them, so they cannot wash out. Temporary colour only coats the cuticle."),
 ("A client has had the same permanent colour for years with no reaction. Health Canada advises:",
- "Test before each use", ["Skip the test now", "Test once a year", "Test after any reaction"],
+ "Test before each use", ["Test once a year", "Test for new shades only", "Test after a reaction only"],
  "Health Canada notes sensitivity may not show up until a dye has been used several times, so the skin test is repeated before every use."),
 ("Where does Health Canada suggest placing the dye for a skin allergy test?",
  "Behind the ear", ["On the scalp crown", "On the back of the hand", "Along the hairline"],
@@ -47,6 +47,6 @@ Q = [
  "Green", ["Orange", "Violet", "Brown"],
  "Yellow and blue are primaries that make green, a secondary colour. Red and yellow make orange, and red and blue make violet."),
 ("Before rinsing a colour, the stylist checks a strand to see if:",
- "Level and tone match", ["The cuticle has closed", "The developer is used up", "The scalp has cooled"],
+ "Level and tone match", ["The grey is softened", "The porosity is even", "The ends have darkened"],
  "A strand test near the end of processing shows whether the colour has reached the desired level and tone, or needs more time."),
 ]

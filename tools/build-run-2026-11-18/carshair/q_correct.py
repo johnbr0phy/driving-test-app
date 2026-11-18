@@ -5,7 +5,7 @@ Q = [
 ("Hair dyed level 3 at home is now wanted at level 6. Why won't a level 6 permanent colour do it?",
  "Colour won't lift colour", ["The level is too warm", "Developer is too weak", "Porous hair resists it"],
  "Permanent colour can lift natural pigment but not artificial pigment, so a lighter tint over old dark colour does little. A remover or lightener is needed first."),
-("How does an oxidative colour remover work?",
+("How does a non-oxidative (reducing) colour remover work?",
  "It shrinks the dye molecules", ["It lifts natural pigment", "It deposits a lighter tone", "It closes the cuticle"],
  "A colour remover breaks the large artificial dye molecules into small ones that rinse out. It does not lighten the hair's natural pigment like a lightener."),
 ("After a colour remover, the hair is rinsed. Why test a strand with developer before recolouring?",

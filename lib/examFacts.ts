@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  nailtech: {
+    answer:
+      "Most US states license nail technicians (called manicurists in some states) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Nail Technology Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline weights infection control and safety 15 percent, anatomy and physiology 15 percent, chemistry of nail products 10 percent, pre-service 5 percent, nail service tools 13 percent, manicure and pedicure services 18 percent, nail enhancement services 20 percent and post-service 4 percent. Each state board sets its passing score; many use 75. Training hours, fees and the practical exam vary by state, and some states use a different exam provider.",
+    rows: [
+      { label: "Questions", value: "110 (100 scored), four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Set by each board; 75 in many states (e.g. South Carolina)" },
+      { label: "Largest area", value: "Nail enhancement services, 20%" },
+      { label: "Also required", value: "Usually a practical exam (varies by state)" },
+      { label: "Developed by", value: "NIC (National-Interstate Council of State Boards of Cosmetology)" },
+    ],
+    basedOn: "the NIC National Nail Technology Theory Examination candidate information bulletin, effective September 1, 2025 (revised March 1, 2026), checked November 2026",
+    source: { name: "NIC Nail Technology Theory CIB", url: "https://prov-testing.github.io/nic_cib/nail_technology_national_theory_english.html" },
+  },
   cdm: {
     answer: "The CBDM CDM, CFPP exam has 160 multiple-choice questions in three hours: 140 scored and 20 unscored pretest items. Its five domains are nutrition, foodservice, personnel and communications, sanitation and safety, and business operations.",
     rows: [

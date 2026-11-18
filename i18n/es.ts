@@ -2925,6 +2925,14 @@ export const es: TranslationKeys = {
     nzreCouncil: "Council, Building & Planning",
     nzreOtherLaw: "Other Laws Licensees Meet",
     nzreMarketing: "Marketing & Sales Practice",
+    nailInfection: "Infection Control & Safety",
+    nailStructure: "Nail, Skin & Limb Anatomy",
+    nailDisorders: "Nail & Skin Disorders",
+    nailChemistry: "Chemistry of Nail Products",
+    nailConsult: "Consultation & Post-Service",
+    nailTools: "Nail Service Tools",
+    nailManiPedi: "Manicures & Pedicures",
+    nailEnhance: "Nail Enhancements",
   } as Record<string, string>,
 
   // Training set names

@@ -1939,6 +1939,19 @@
     --brand-border-light: 4 34% 89%;
     --brand-gradient-to: 215 70% 96%;
   }
+  /* Nail technician theme: nail-polish raspberry */
+  [data-theme="nailtech"] {
+    --brand: 331 85% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 331 80% 96%;
+    --brand-hover: 331 85% 30%;
+    --brand-dark: 331 85% 24%;
+    --brand-darker: 331 75% 15%;
+    --brand-muted: 331 35% 70%;
+    --brand-border: 331 35% 80%;
+    --brand-border-light: 331 30% 89%;
+    --brand-gradient-to: 345 70% 96%;
+  }
 
   /* Firefighter I theme */
   [data-theme="ffi"] {
@@ -7775,6 +7788,18 @@
     --brand-muted: 4 35% 45%;
     --brand-dark: 4 60% 65%;
     --brand-darker: 4 50% 78%;
+  }
+
+  .dark [data-theme="nailtech"] {
+    --brand: 331 85% 47.7%;
+    --brand-hover: 331 85% 39.7%;
+    --brand-light: 331 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 331 30% 24%;
+    --brand-border: 331 35% 34%;
+    --brand-muted: 331 35% 45%;
+    --brand-dark: 331 85% 65%;
+    --brand-darker: 331 75% 78%;
   }
 
   .dark [data-theme="ffi"] {

@@ -9,6 +9,7 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  frcivique: "a French civic exam preparation class",
   frvtc: "a French VTC chauffeur preparation course",
   zafirearm: "a Firearms Control Act knowledge course",
   appraiser: "a real property appraisal course",

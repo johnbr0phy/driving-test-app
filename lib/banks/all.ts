@@ -262,6 +262,7 @@ import "./sgvl";
 import "./itcils";
 import "./itceli";
 import "./itpatente";
+import "./frcivique";
 import "./frvtc";
 import "./frcode";
 import "./aufirearmsqld";

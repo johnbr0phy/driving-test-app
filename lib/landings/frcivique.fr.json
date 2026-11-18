@@ -1,0 +1,120 @@
+{
+  "metaTitle": "Examen civique 2026 : test d'entraînement gratuit en français",
+  "metaDescription": "Prépare l'examen civique avec 240 questions originales : principes de la République, institutions, droits et devoirs, histoire et vie en France. Six tests de 40 questions, du titre de séjour à la naturalisation. Gratuit pour commencer.",
+  "keywords": "examen civique, test examen civique, QCM examen civique, examen civique naturalisation, examen civique carte de résident, examen civique carte de séjour pluriannuelle, questions examen civique, entraînement examen civique 2026",
+  "breadcrumb": {
+    "home": "Accueil",
+    "allTests": "Tous les tests",
+    "current": "Examen civique"
+  },
+  "h1": "Examen civique 2026 : entraînement gratuit",
+  "subtitle": "240 questions originales sur les cinq thèmes de l'examen, avec une explication pour chaque réponse. Six tests de 40 questions en 45 minutes : deux pour la carte de séjour pluriannuelle, deux pour la carte de résident et deux pour la naturalisation. Gratuit pour commencer, sans compte.",
+  "facts": {
+    "h2": "L'examen civique en bref",
+    "answer": "Depuis le 1er janvier 2026, l'examen civique est exigé pour une première carte de séjour pluriannuelle, une première carte de résident et une demande de naturalisation. C'est un QCM de 40 questions en français, en 45 minutes au plus, passé sur ordinateur ou tablette dans un centre agréé par le ministère de l'Intérieur. Il comprend 28 questions de connaissances et 12 mises en situation. Il faut 80 % de bonnes réponses, soit 32 sur 40, quel que soit le titre demandé. Le programme est le même pour les trois mentions ; seul le niveau des questions change.",
+    "tigertest": "Tigertest propose 240 questions originales et un démarrage gratuit. Chaque test suit la répartition officielle des thèmes et des mises en situation. Les tests 1 et 2 visent le niveau de la carte de séjour pluriannuelle, les tests 3 et 4 celui de la carte de résident, les tests 5 et 6 celui de la naturalisation. Aucune question de la liste officielle n'est reprise. La relecture du français est faite par un modèle, pas par un relecteur humain.",
+    "rows": [
+      {
+        "label": "Questions",
+        "value": "40 QCM : 28 de connaissances et 12 mises en situation"
+      },
+      {
+        "label": "Durée",
+        "value": "45 minutes au plus, sur ordinateur ou tablette"
+      },
+      {
+        "label": "Réussite",
+        "value": "80 %, soit 32 bonnes réponses sur 40, pour les trois mentions"
+      },
+      {
+        "label": "Notation",
+        "value": "1 point par bonne réponse, 0 pour une erreur ou une absence de réponse"
+      },
+      {
+        "label": "Qui est concerné",
+        "value": "Première carte de séjour pluriannuelle, première carte de résident, naturalisation"
+      },
+      {
+        "label": "Validité",
+        "value": "Une réussite reste valable sans limite de durée"
+      }
+    ],
+    "footnote": "Format et programme fixés par l'arrêté du 10 octobre 2025 et le CESEDA, consultés le 18 novembre 2026. Les exemptions dépendent du titre demandé et de ta situation. Tigertest est indépendant du ministère de l'Intérieur et des organismes agréés. Consulte les règles officielles sur",
+    "source": {
+      "name": "Légifrance : arrêté du 10 octobre 2025 relatif à l'examen civique",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052381620"
+    }
+  },
+  "howItWorks": {
+    "h2": "Comment ça marche",
+    "cards": [
+      {
+        "h3": "Travaille un thème à la fois",
+        "p": "Sept séries couvrent la devise et la laïcité, les valeurs en situation, les institutions, les droits et devoirs, les droits en situation, l'histoire et la géographie, puis la vie en France. Chaque réponse est expliquée et les questions ratées reviennent jusqu'à ce que tu les maîtrises."
+      },
+      {
+        "h3": "Passe un test au niveau de ton titre",
+        "p": "Chaque test reprend la répartition officielle : 40 questions, dont 12 mises en situation, en 45 minutes. Commence par les tests 1 et 2, puis monte en difficulté. Si tu demandes la naturalisation, termine par les tests 5 et 6, rédigés au niveau le plus exigeant."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Les cinq thèmes de l'examen",
+    "p": "Chaque test de 40 questions suit exactement la répartition de l'arrêté du 10 octobre 2025, la même pour les trois mentions.",
+    "items": [
+      "Principes et valeurs de la République : 11 questions, dont 6 mises en situation",
+      "Système institutionnel et politique : 6 questions",
+      "Droits et devoirs : 11 questions, dont 6 mises en situation",
+      "Histoire, géographie et culture : 8 questions",
+      "Vivre dans la société française : 4 questions"
+    ]
+  },
+  "howToPass": {
+    "h2": "Organise ta préparation",
+    "steps": [
+      {
+        "h3": "1. Commence par les fiches officielles",
+        "p": "Le site formation-civique.interieur.gouv.fr propose des fiches gratuites par thème et la liste officielle des questions de connaissances pour chaque mention. Lis-les avant de t'entraîner ici."
+      },
+      {
+        "h3": "2. Vise mieux que 32 sur 40",
+        "p": "Le seuil est élevé : huit erreurs au plus. Entraîne-toi jusqu'à dépasser régulièrement 34 bonnes réponses pour garder une marge le jour de l'examen."
+      },
+      {
+        "h3": "3. Comprends la règle derrière chaque situation",
+        "p": "Les mises en situation portent sur la laïcité, l'égalité, les discriminations et le respect de la loi. Lis l'explication de chaque réponse, même quand tu as juste, pour savoir quelle règle s'applique."
+      },
+      {
+        "h3": "4. Vérifie ta situation",
+        "p": "Les exemptions et les démarches dépendent du titre demandé, de ton âge et de ta nationalité. Vérifie-les sur service-public.gouv.fr ou auprès de ta préfecture avant de t'inscrire."
+      }
+    ]
+  },
+  "faqTitle": "Questions fréquentes sur l'examen civique",
+  "faqs": [
+    {
+      "q": "Qui doit passer l'examen civique ?",
+      "a": "Depuis le 1er janvier 2026, il est exigé pour une première carte de séjour pluriannuelle, une première carte de résident et une demande de naturalisation par décret. Le renouvellement d'un titre n'en demande pas. Des exemptions existent, par exemple à partir de 65 ans pour les titres de séjour ; pour la naturalisation, seule une raison de santé ou de handicap attestée par un médecin en dispense."
+    },
+    {
+      "q": "Le test est-il différent pour la naturalisation ?",
+      "a": "Le format, le programme et le seuil de 80 % sont les mêmes pour les trois mentions. Les questions sont plus exigeantes pour la carte de résident et encore plus pour la naturalisation. C'est pourquoi nos tests 1 et 2, 3 et 4, puis 5 et 6 correspondent à ces trois niveaux."
+    },
+    {
+      "q": "Combien de questions faut-il réussir ?",
+      "a": "Il faut au moins 32 bonnes réponses sur 40, soit 80 %. Une mauvaise réponse ou une absence de réponse vaut 0 point ; il n'y a pas de points retirés."
+    },
+    {
+      "q": "S'agit-il des questions officielles ?",
+      "a": "Non. Les 240 questions sont originales, rédigées à partir des textes et des fiches officielles. Le ministère publie la liste des questions de connaissances, sans les réponses : nous ne la reprenons pas, mais nous t'invitons à la lire. La relecture du français est faite par un modèle, pas par un relecteur humain."
+    },
+    {
+      "q": "Puis-je commencer gratuitement ?",
+      "a": "Oui, tu peux commencer gratuitement, sans compte. Les dernières étapes du tableau de bord font partie de Tigertest Premium, avec un paiement unique et sans abonnement. Un compte gratuit permet de retrouver tes progrès sur tes appareils."
+    }
+  ],
+  "finalCta": {
+    "h2": "Commence ta préparation à l'examen civique",
+    "p": "Un thème à la fois, avec une explication pour chaque réponse. Gratuit pour commencer, sans compte."
+  }
+}

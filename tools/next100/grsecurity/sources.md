@@ -7,10 +7,15 @@ the course outline below.
 ## Official and primary sources (the source watch reads the first three https URLs)
 
 1. https://www.eoppep.gr/ : ΕΟΠΠΕΠ, the certifying body. The site did not render its security
-   pages to the fetch tool; the 2026 call's application form is at
-   https://eoppep.gr/images/security/aitisi_symmetoxis_security_2026_01.pdf (linked from the
-   alfavita.gr notice below). Exam details below therefore come from ΕΟΠΠΕΠ notices as reprinted
-   by alfavita.gr.
+   pages to the fetch tool when first built; the 2026 1st-period application form
+   (eoppep.gr/images/security/aitisi_symmetoxis_security_2026_01.pdf) returned 404 by November
+   2026 and was dropped. ΕΟΠΠΕΠ's own announcement of the 2nd period 2026 exams, read 2026-11-18:
+   https://www.eoppep.gr/index.php/el/announcements/2224-announcement-exetaseis-security-2026-2
+   says the theory part is «είκοσι (20) ισοδύναμες ερωτήσεις πολλαπλής επιλογής» drawn
+   electronically and lasts one hour; the practical part is oral, four topics scored 0 to 5, 10
+   to 20 minutes per candidate; both parts are compulsory and graded 1 to 20, and a final grade
+   of 10 to 20 (the average of the two) passes. This matches the alfavita.gr reprints below,
+   which the rest of this file was first written from.
 2. https://www.taxheaven.gr/law/2518/1997 : Law 2518/1997 «Άσκηση επαγγέλματος ιδιωτικής
    ασφάλειας» as amended (consolidated text). Articles read:
    - art. 1 (activities α to ια; «προσωπικό ασφαλείας»; para. 3 own-premises guarding),

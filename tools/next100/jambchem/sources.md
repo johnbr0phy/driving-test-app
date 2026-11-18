@@ -7,9 +7,10 @@ Checked 1 November 2026.
   GENERAL OBJECTIVES ... Unified Tertiary Matriculation Examination (UTME) syllabus in Chemistry"),
   hosted by myeduvantage for the 2026/2027 cycle:
   https://myeduvantage.com/wp-content/uploads/2026/01/syllabus-for-chemistry.pdf (downloaded and
-  read in full 1 November 2026). The page that links it is
-  https://myeduvantage.com/jamb-syllabus-for-chemistry/ ("JAMB Syllabus for Chemistry 2027").
-  JAMB's own IBASS (https://ibass.jamb.gov.ng) is script-rendered and could not be read.
+  read in full 1 November 2026). The myeduvantage page that links it is listed at the end of this
+  file (a guide site, so not watched). JAMB's own IBASS (https://ibass.jamb.gov.ng) is
+  script-rendered and could not be read; JAMB's home page (https://www.jamb.gov.ng/) is the
+  official page watched for syllabus and brochure news.
   18 topics: 1 separation of mixtures and purification; 2 chemical combination; 3 kinetic theory of
   matter and gas laws; 4 atomic structure and bonding; 5 nuclear chemistry; 6 solubility;
   7 environmental pollution (air, air pollution, water and soil pollution); 8 acids, bases and salts;
@@ -59,3 +60,8 @@ Checked 1 November 2026.
   used. Relative atomic masses and constants are given in each stem, as UTME papers do.
 - Checked for overlap against neet, jeemain, mhtcet, jambphys, jambbio and every other bank on disk
   (stem similarity with the same key, and shared numbers); repeats were rewritten.
+
+## Guide pages (not official)
+- myeduvantage, "JAMB Syllabus for Chemistry 2027" (re-read 2026-11-18: same topic list, no
+  changes announced; moved here so the source watch follows JAMB's own pages):
+  https://myeduvantage.com/jamb-syllabus-for-chemistry/

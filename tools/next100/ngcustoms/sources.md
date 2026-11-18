@@ -21,16 +21,13 @@ not opened or copied. Checked 2026-11-01 unless noted.
   - The release gives NO number of questions, duration, subjects or pass mark.
 - Nairametrics, 7 October 2025, "Nigeria Customs to hold CBT exams for recruitment exercise on
   Oct 9": Inspectorate and Customs Assistant CBT on 9 October 2025 in batches A, B and C; login with
-  NIN; calculators, phones and other devices not allowed.
-  https://nairametrics.com/2025/10/07/nigeria-customs-to-hold-cbt-exams-for-recruitment-exercise-on-oct-9
+  NIN; calculators, phones and other devices not allowed (link under "News reports" below).
 - The Frontier, "10 things candidates should know about Customs recruitment CBT exams" (restates
-  the press release; no count, time or subjects).
-  https://thefrontierng.com/10-things-candidates-should-know-about-customs-recruitment-cbt-exams/
+  the press release; no count, time or subjects; link below).
 - Entry qualifications by cadre (news reports of the December 2024 advertisement, via search,
   2026-11-01; not read on an NCS page): Superintendent, a degree or HND with NYSC discharge or
   exemption; Inspectorate, ND or NCE; Customs Assistant, O'Level (WAEC or NECO). An age range of
-  18 to 30 appears only on a guide site (awajis.com) and is NOT used.
-  https://nairametrics.com/2024/12/27/nigeria-customs-service-opens-applications-for-2025-recruitment
+  18 to 30 appears only on a guide site (awajis.com) and is NOT used (Nairametrics link below).
 - Subjects: guides (teststreams.com, androidpols.com.ng, via search) list English language,
   general mathematics, general knowledge and current affairs, with questions on the Service.
   Guides only; NCS has not published a subject list. One guide says "1 to 2 hours"; not used.
@@ -44,8 +41,8 @@ ECOWAS trade, world geography). Current affairs and office-holders are left out 
 - Nigeria Customs Service Act 2023 repeals the Customs and Excise Management Act (CEMA), Cap. C45
   LFN 2004, first enacted 1958; establishes the Service and its powers (KPMG Tax newsflash July 2023;
   UNEP LEAP entry "Nigeria Customs Service Act No. 35, 2023"; Mondaq review).
-  https://assets.kpmg.com/content/dam/kpmg/us/pdf/2023/07/tnf-nigeria-july14-2023.pdf
   https://leap.unep.org/en/countries/ng/national-legislation/nigeria-customs-service-act-no-35-2023
+  (KPMG newsflash link below).
   The signing date is reported differently (April or May 2023), so no date is asked.
 - NCS supervised by the Federal Ministry of Finance; head titled Comptroller-General of Customs
   (customs.gov.ng; general knowledge, not dated).
@@ -92,3 +89,16 @@ Yaounde, N'Djamena and Mali were dropped because `ngarmy` asks them.
   Malacca and IMF items replaced by Kiel Canal, Mombasa, Jebel Ali, Shanghai and Afreximbank;
   lucid, frugal, lenient, scarce and meticulous replaced by succinct, illicit, covert, conspicuous
   and lax; deny + gerund and "between you and me" replaced by "object to" and "except him".
+
+## News reports and secondary sources (not official)
+Moved here on 2026-11-18 so the watched links (the first three) are the NCS press release, the
+Act and the WCO. No NCS web page repeats the October 2025 CBT details: the NCS posted them on its
+verified X and Facebook accounts, which cannot be fetched, so the Nairametrics report (re-read
+2026-11-18, same facts as above) stays as the best source for them. Nothing in the bank changed.
+- Nairametrics, 7 October 2025:
+  https://nairametrics.com/2025/10/07/nigeria-customs-to-hold-cbt-exams-for-recruitment-exercise-on-oct-9
+- The Frontier: https://thefrontierng.com/10-things-candidates-should-know-about-customs-recruitment-cbt-exams/
+- Nairametrics, 27 December 2024:
+  https://nairametrics.com/2024/12/27/nigeria-customs-service-opens-applications-for-2025-recruitment
+- KPMG Tax newsflash, July 2023:
+  https://assets.kpmg.com/content/dam/kpmg/us/pdf/2023/07/tnf-nigeria-july14-2023.pdf

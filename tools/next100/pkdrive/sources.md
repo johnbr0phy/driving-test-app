@@ -5,6 +5,18 @@ search results but not opened or copied. Signs are described in words (no images
 2026-10-31 unless noted.
 
 ## Who runs the test
+Official sources (listed first on 2026-11-18 so the source watch follows government pages, not
+guides; each is cited for its facts further down):
+- Punjab Transport Department, the Provincial Motor Vehicles Ordinance 1965 as amended to
+  30-11-2023 (PDF, 118 pages, loaded 2026-11-18):
+  https://transport.punjab.gov.pk/system/files/The%20Provincial%20Motor%20Vehicles%20Ordinance%2C%201965%20%2830-11-2023%29_0.pdf
+- Punjab driving licence system: https://dlims.punjab.gov.pk/
+- Punjab Police learner page: https://mtwds.punjabpolice.gov.pk/node/29
+No licensing authority publishes the format of its computerised sign test (count, time or pass
+mark), so the guide and news links below stay the only sources for it; the bank asserts none of
+those figures. PakWheels re-read 2026-11-18: still ten multiple-choice sign questions at a
+Khidmat centre, at least five right; unchanged.
+
 There is no single national test. Licences are issued by each province's licensing authority and
 by the Islamabad Capital Territory (ICT); all recognise each other's licences.
 - Wikipedia, "Driving licence in Pakistan" (read 2026-10-31): licences issued by each district,

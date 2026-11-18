@@ -24,8 +24,13 @@ press. Signs are described in words (no images). Checked 2026-10-31 unless state
 
 ## Federal law
 - Federal Decree-Law No. 14 of 2024 on Traffic Regulation, issued 30 Sep 2024, in force 29 Mar 2025,
-  replacing Federal Law 21 of 1995 (Gulf News "New UAE traffic law comes into force";
-  https://gulfnews.com/uae/transport/new-uae-traffic-law-comes-into-force-1.2051739).
+  replacing Federal Law 21 of 1995. Official source (re-read 2026-11-18): the u.ae Road safety page
+  above says "The UAE applies Federal Decree-Law No. 14 of 2024 On Traffic Regulation", which "came
+  into effect on 29 March 2025", and that licence applicants "must be at least 17 years old". The
+  Gulf News page cited here before ("New UAE traffic law comes into force", 1.2051739) turned out,
+  when re-read on 2026-11-18, to be a 2018 article about an amendment to the old law, so it was
+  dropped. The issue date and the repeal of Law 21 of 1995 are not on the u.ae page (the official
+  text on uaelegislation.gov.ae returned 403); no question asks either.
 - u.ae Road safety page (above): pedestrians may not cross roads where the speed limit exceeds
   80 km/h (ROW-029); driving under the influence of alcohol, drugs or psychotropic substances is a
   serious violation (LIC-008); horn use within city limits only in emergencies (LIC-013); no parking,
@@ -34,7 +39,7 @@ press. Signs are described in words (no images). Checked 2026-10-31 unless state
   vehicle safely (LIC-016); fleeing an accident scene and driving with a suspended licence are
   violations (LIC-020); minor accidents can be reported online through police apps (CON-016).
 - Gulf News, "New UAE traffic law: Provide first aid only if you have the necessary medical knowledge"
-  (https://gulfnews.com/living-in-uae/ask-us/new-uae-traffic-law-provide-first-aid-only-if-you-have-the-necessary-medical-knowledge-1.1730195615314): CON-021.
+  (news report; link in "News reports" at the end): CON-021.
 
 ## Emergencies
 - u.ae Handling emergencies (https://u.ae/en/information-and-services/justice-safety-and-the-law/handling-emergencies):
@@ -74,3 +79,8 @@ press. Signs are described in words (no images). Checked 2026-10-31 unless state
 - Every fine amount, black point total and impoundment period.
 - Default speed limits and the speed "buffer" (they differ by emirate and road).
 - A precise minimum driving age; tinting rules; Salik and other tolls.
+
+## News reports (not official)
+Moved here on 2026-11-18 so the watched links (the first three) are the RTA and u.ae pages.
+- Gulf News, first aid under the new traffic law:
+  https://gulfnews.com/living-in-uae/ask-us/new-uae-traffic-law-provide-first-aid-only-if-you-have-the-necessary-medical-knowledge-1.1730195615314

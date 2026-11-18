@@ -8,7 +8,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "In \"The basket is beside the door\", what kind of word is \"basket\"?",
+    "stem": "\"The basket is beside the door.\" What kind of word is \"basket\"?",
     "options": [
       "A noun",
       "A verb",
@@ -92,7 +92,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Complete the sentence: \"Every morning, Ravi ___ to the bus stop.\"",
+    "stem": "Complete: \"Every morning, Ravi ___ to the bus stop.\"",
     "options": [
       "walks",
       "walk",
@@ -113,7 +113,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Complete the sentence: \"Yesterday, Neha ___ home with her aunt.\"",
+    "stem": "Complete: \"Yesterday, Neha ___ home with her aunt.\"",
     "options": [
       "walks",
       "walked",
@@ -134,7 +134,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Complete the sentence: \"Tomorrow, if the weather is fine, Amir ___ to the market.\"",
+    "stem": "Complete: \"If it is sunny tomorrow, Amir ___ to the market.\"",
     "options": [
       "walked",
       "walks",
@@ -155,7 +155,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Complete the sentence: \"Look! The baby ___ across the room right now.\"",
+    "stem": "Complete: \"Look! The baby ___ across the room right now.\"",
     "options": [
       "walks",
       "was walking",
@@ -176,7 +176,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Choose the pronoun: \"Lata has a new book, and ___ wants to read it.\"",
+    "stem": "Choose the pronoun: \"Lata has a book, and ___ wants to read it.\"",
     "options": [
       "she",
       "he",
@@ -197,7 +197,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Choose the pronoun: \"The two players arrived early because ___ wanted to practise.\"",
+    "stem": "Choose the pronoun: \"The two players came because ___ wanted to practise.\"",
     "options": [
       "he",
       "they",
@@ -239,7 +239,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Choose the pronoun: \"My brother and I packed our bags because ___ were leaving.\"",
+    "stem": "Choose the pronoun: \"My brother and I packed because ___ were leaving.\"",
     "options": [
       "they",
       "us",
@@ -260,7 +260,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A cat is directly below a table, resting on the floor. Complete: \"The cat is ___ the table.\"",
+    "stem": "A cat lies below a table. Complete: \"The cat is ___ the table.\"",
     "options": [
       "under",
       "over",
@@ -281,7 +281,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "One house stands with a shop on its left and a school on its right. Complete: \"The house is ___ the shop and the school.\"",
+    "stem": "Complete: \"The house is ___ the shop and the school, one on each side.\"",
     "options": [
       "behind",
       "between",
@@ -302,7 +302,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A child stands at the back of a tree, hidden from a person in front. Complete: \"The child is ___ the tree.\"",
+    "stem": "A child hides at the back of a tree. Complete: \"The child is ___ the tree.\"",
     "options": [
       "in front of",
       "beside",
@@ -323,7 +323,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A kite is higher in the sky than the roof. Complete: \"The kite is ___ the roof.\"",
+    "stem": "Complete: \"The kite flies high ___ the roof.\"",
     "options": [
       "below",
       "behind",
@@ -344,7 +344,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which word gives the reason: \"We stayed indoors ___ the rain was heavy\"?",
+    "stem": "Which word gives a reason: \"We stayed indoors ___ it rained\"?",
     "options": [
       "because",
       "but",
@@ -386,7 +386,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which word states the required order: \"Wash your hands ___ you begin eating\"?",
+    "stem": "Which word fits: \"Wash your hands ___ you start eating\"?",
     "options": [
       "after",
       "because",
@@ -407,7 +407,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which word simply adds another item: \"Please bring a pencil ___ an eraser\"?",
+    "stem": "Which word adds an item: \"Please bring a pencil ___ an eraser\"?",
     "options": [
       "but",
       "or",
@@ -428,7 +428,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Sana carried the full glass slowly so that no water spilled. Which word best describes how she acted?",
+    "stem": "Sana carried a full glass slowly so none spilled. Which word describes her?",
     "options": [
       "careful",
       "hurried",
@@ -449,7 +449,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "After a long walk, Dev yawned and wanted to rest. Which word best describes him?",
+    "stem": "After a long walk, Dev yawned. How did he feel?",
     "options": [
       "excited",
       "tired",
@@ -470,7 +470,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Nila smiled widely when her lost kitten returned. Which word best describes her feeling?",
+    "stem": "Nila smiled when her lost kitten came home. How did she feel?",
     "options": [
       "worried",
       "jealous",
@@ -491,7 +491,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Omar stared at the strange instructions and asked what they meant. Which word best describes his feeling?",
+    "stem": "Omar did not understand the instructions. How did he feel?",
     "options": [
       "pleased",
       "sleepy",
@@ -512,7 +512,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A jar was full in the morning, but every seed was removed. Which word now describes the jar?",
+    "stem": "A jar had all its seeds taken out. Which word describes it now?",
     "options": [
       "empty",
       "full",
@@ -533,7 +533,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A wooden board feels uneven and scratchy, rather than smooth. Which word describes its surface?",
+    "stem": "A board feels bumpy and scratchy. Which word describes it?",
     "options": [
       "smooth",
       "rough",
@@ -554,7 +554,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "A train expected at noon arrived at 11:45 a.m. Which word describes its arrival?",
+    "stem": "A train due at noon came at 11:45 a.m. How did it arrive?",
     "options": [
       "late",
       "on time",
@@ -575,7 +575,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "The noisy workshop stopped its machines and became almost silent. Which word describes it now?",
+    "stem": "A noisy workshop stopped its machines. How is it now?",
     "options": [
       "noisy",
       "busy",
@@ -596,7 +596,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which mark should end \"Where is the nearest well\" when it is written to ask something?",
+    "stem": "Which mark ends the question \"Where is the nearest well\"?",
     "options": [
       "A question mark",
       "A full stop",
@@ -617,7 +617,7 @@
     "skill": "english",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which mark separates \"rice\" and \"beans\" in the list \"rice, beans and peas\"?",
+    "stem": "Which mark goes between \"rice\" and \"beans\" in \"rice, beans and peas\"?",
     "options": [
       "A full stop",
       "A comma",
@@ -848,7 +848,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "Six boxes each contain 4 chalk sticks. How many chalk sticks are there altogether?",
+    "stem": "Six boxes each hold 4 chalk sticks. How many sticks in all?",
     "options": [
       "24",
       "10",
@@ -890,7 +890,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A school has 144 seedlings and puts an equal number in each of 3 beds. How many go in one bed?",
+    "stem": "144 seedlings are shared equally among 3 beds. How many in each bed?",
     "options": [
       "38",
       "141",
@@ -911,7 +911,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A class collected 27 bottles on Monday and 33 on Tuesday. How many did it collect in all?",
+    "stem": "A class collected 27 bottles, then 33 more. How many in all?",
     "options": [
       "50",
       "61",
@@ -932,7 +932,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A ribbon is divided into 8 equal parts. Four parts are coloured. What fraction is coloured, in simplest form?",
+    "stem": "A ribbon has 8 equal parts and 4 are coloured. What fraction is coloured?",
     "options": [
       "1/2",
       "1/4",
@@ -953,7 +953,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A child eats 3 of 12 equal slices of melon. What fraction of the melon is eaten?",
+    "stem": "A child eats 3 of 12 equal melon slices. What fraction is eaten?",
     "options": [
       "1/3",
       "1/4",
@@ -1058,7 +1058,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A piece of string is 0.4 m long and another is 0.35 m. What is their total length in metres?",
+    "stem": "Add 0.4 m and 0.35 m. What is the total in metres?",
     "options": [
       "0.39",
       "0.79",
@@ -1079,7 +1079,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "One metre of ribbon is shared equally among five children. How many metres does each receive?",
+    "stem": "Share 1 m of ribbon equally among 5 children. How many metres each?",
     "options": [
       "0.5",
       "0.25",
@@ -1100,7 +1100,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A lesson starts at 10:20 a.m. and ends at 10:35 a.m. How long does it last?",
+    "stem": "A lesson runs from 10:20 a.m. to 10:35 a.m. How long is it?",
     "options": [
       "15 minutes",
       "25 minutes",
@@ -1121,7 +1121,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A bus leaves at 11:50 a.m. and arrives at 12:20 p.m. How long is the journey?",
+    "stem": "How long is it from 11:50 a.m. to 12:20 p.m.?",
     "options": [
       "70 minutes",
       "30 minutes",
@@ -1142,7 +1142,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A programme lasts three quarters of an hour. How long is that in minutes?",
+    "stem": "How many minutes are in three quarters of an hour?",
     "options": [
       "75 minutes",
       "40 minutes",
@@ -1205,7 +1205,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A 1 kg bag of rice is split into two equal portions. How many grams are in one portion?",
+    "stem": "How many grams are in half of 1 kg?",
     "options": [
       "50",
       "500",
@@ -1226,7 +1226,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A rope is 7 m 50 cm long. What is its length in centimetres?",
+    "stem": "How many centimetres is 7 m 50 cm?",
     "options": [
       "75",
       "7050",
@@ -1268,7 +1268,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the line segment from the centre of a circle to its edge called?",
+    "stem": "What is the line from a circle's centre to its edge called?",
     "options": [
       "A radius",
       "A diameter",
@@ -1289,7 +1289,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is a straight line segment through a circle's centre with both ends on its edge called?",
+    "stem": "What is a straight line across a circle through its centre called?",
     "options": [
       "A radius",
       "A diameter",
@@ -1352,7 +1352,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A rectangle has sides 6 cm and 3 cm. What is its area in square centimetres?",
+    "stem": "Find the area of a 6 cm by 3 cm rectangle in square cm.",
     "options": [
       "18",
       "9",
@@ -1373,7 +1373,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A square has side length 5 cm. What is its perimeter in centimetres?",
+    "stem": "What is the perimeter of a square with 5 cm sides, in cm?",
     "options": [
       "25",
       "20",
@@ -1394,7 +1394,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A rectangular garden is 10 m long and 4 m wide. What is its perimeter in metres?",
+    "stem": "What is the perimeter of a 10 m by 4 m rectangle, in metres?",
     "options": [
       "40",
       "14",
@@ -1415,7 +1415,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A tiled rectangle has 8 rows of 4 square tiles. How many tiles cover it?",
+    "stem": "A rectangle has 8 rows of 4 tiles. How many tiles in all?",
     "options": [
       "12",
       "36",
@@ -1562,7 +1562,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "What number is represented by 4 thousands, 0 hundreds, 0 tens and 0 ones?",
+    "stem": "Which number has 4 thousands, 0 hundreds, 0 tens and 0 ones?",
     "options": [
       "400",
       "40000",
@@ -1604,7 +1604,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A table shows Monday: 4 visitors, Tuesday: 7, Wednesday: 6. How many visited on Tuesday?",
+    "stem": "Visitors: Monday 4, Tuesday 7, Wednesday 6. How many came on Tuesday?",
     "options": [
       "7",
       "4",
@@ -1625,7 +1625,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "One team scored 6 points before lunch and 4 afterward. How many points did it score?",
+    "stem": "A team scored 6 points, then 4 more. How many points in all?",
     "options": [
       "2",
       "10",
@@ -1646,7 +1646,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "A pictograph uses one symbol for 2 trees. It shows 6 whole symbols and a half symbol. How many trees does this represent?",
+    "stem": "In a pictograph, one symbol means 2 trees. How many trees do 6 and a half symbols show?",
     "options": [
       "12",
       "14",
@@ -1667,7 +1667,7 @@
     "skill": "maths",
     "difficulty": 2,
     "format": "single",
-    "stem": "The numbers of red, blue and green balls are 5,8 and 3. How many balls are there altogether?",
+    "stem": "There are 5 red, 8 blue and 3 green balls. How many in all?",
     "options": [
       "15",
       "13",
@@ -1688,7 +1688,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which plant parts usually absorb water from soil and help anchor the plant?",
+    "stem": "Which plant part takes in water from the soil?",
     "options": [
       "Roots",
       "Stem",
@@ -1709,7 +1709,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which main plant part supports the leaves and provides a route for water moving upward from the roots?",
+    "stem": "Which plant part holds up the leaves and carries water up?",
     "options": [
       "Roots",
       "Stem",
@@ -1730,7 +1730,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "In a typical green plant, which broad green parts capture sunlight for making food?",
+    "stem": "Which green plant parts catch sunlight to make food?",
     "options": [
       "Roots",
       "Stem",
@@ -1751,7 +1751,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "On a mustard or mango plant, which structures usually have petals and help the plant form seeds?",
+    "stem": "Which plant parts have petals and help make seeds?",
     "options": [
       "Leaves",
       "Roots",
@@ -1772,7 +1772,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A shallow puddle becomes smaller on a dry sunny day without draining away. Liquid water enters the air as vapour. What is this change?",
+    "stem": "A puddle dries up in the sun. What is this change called?",
     "options": [
       "Evaporation",
       "Condensation",
@@ -1793,7 +1793,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Water vapour in the air forms droplets on the outside of a cold glass. What is this change?",
+    "stem": "Drops form on the outside of a cold glass. What is this change?",
     "options": [
       "Evaporation",
       "Condensation",
@@ -1814,7 +1814,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Liquid water is cooled until it becomes solid ice. What is this change?",
+    "stem": "Water is cooled until it turns to ice. What is this change?",
     "options": [
       "Melting",
       "Condensation",
@@ -1856,7 +1856,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which tool should a pupil use to compare the temperatures of two water samples?",
+    "stem": "Which tool measures the temperature of water?",
     "options": [
       "A thermometer",
       "A measuring jug",
@@ -1919,7 +1919,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which tool should a pupil use to pour out exactly 300 mL of water?",
+    "stem": "Which tool measures out exactly 300 mL of water?",
     "options": [
       "A balance",
       "A measuring tape",
@@ -1940,7 +1940,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A child wants to borrow a storybook from a community collection. Which institution is most directly suited to this?",
+    "stem": "Where can a child borrow a storybook?",
     "options": [
       "A library",
       "A bookshop",
@@ -1961,7 +1961,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A family wants to send a letter through the postal service. Which institution handles that service?",
+    "stem": "Where does a family go to send a letter?",
     "options": [
       "A bank",
       "A post office",
@@ -1982,7 +1982,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A community needs a place where trained staff provide basic medical care. Which institution serves this role?",
+    "stem": "Where do trained staff give basic medical care?",
     "options": [
       "A fire station",
       "A bank",
@@ -2003,7 +2003,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "An adult wants to deposit savings in an account. Which institution ordinarily provides this service?",
+    "stem": "Where can an adult put savings in an account?",
     "options": [
       "A fire station",
       "A ration shop",
@@ -2024,7 +2024,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "An empty food jar is cleaned and used to store pencils. Which practice is illustrated?",
+    "stem": "A clean empty jar is used to hold pencils. What practice is this?",
     "options": [
       "Reusing an object",
       "Recycling a material",
@@ -2045,7 +2045,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Used paper is processed into pulp to make new paper. Which practice is illustrated?",
+    "stem": "Old paper is pulped to make new paper. What practice is this?",
     "options": [
       "Reusing an object",
       "Recycling a material",
@@ -2066,7 +2066,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Dry leaves and vegetable scraps are allowed to break down into material for the garden. Which practice is illustrated?",
+    "stem": "Leaves and food scraps rot into soil for the garden. What is this?",
     "options": [
       "Recycling",
       "Reusing",
@@ -2087,7 +2087,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A roof channel directs rain into a storage tank for watering plants. Which practice is illustrated?",
+    "stem": "Rain from a roof is saved in a tank. What practice is this?",
     "options": [
       "Measuring rainfall",
       "Recycling waste water",
@@ -2108,7 +2108,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A pupil can clearly see printed words through a clean glass sheet. What property is shown?",
+    "stem": "You can see clearly through glass. What property is this?",
     "options": [
       "It is transparent",
       "It is waterproof",
@@ -2171,7 +2171,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "After stirring sugar into water, the grains are no longer visible, but the sugar remains in the solution. What property is shown?",
+    "stem": "Stirred sugar vanishes from view but stays in the water. What property is shown?",
     "options": [
       "It floats on water",
       "It melts in water",
@@ -2192,7 +2192,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Two similar seedlings have equal light, warmth and pot size. One receives 20 mL of water daily; the other receives 40 mL. What condition differs for the second seedling?",
+    "stem": "Two seedlings get the same light and warmth. One gets 20 mL of water a day, the other 40 mL. What differs?",
     "options": [
       "The amount of water",
       "The amount of light",
@@ -2213,11 +2213,11 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Two similar seedlings receive equal water, warmth and soil. One is kept under a grow light for longer each day. What condition increases for that seedling?",
+    "stem": "Two seedlings are alike, but one has its lamp on longer each day. What increases?",
     "options": [
       "Amount of water",
       "Hours of light",
-      "Warmth of the room",
+      "Size of the pot",
       "Richness of the soil"
     ],
     "correct": [
@@ -2234,7 +2234,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A root-bound seedling is moved to a larger pot while water, light and temperature stay the same. What is increased?",
+    "stem": "A seedling with crowded roots moves to a bigger pot. Water and light stay the same. What increases?",
     "options": [
       "Amount of sunlight",
       "Daily water",
@@ -2255,7 +2255,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Two equal trays of damp seeds are kept in the same light. One tray is placed in a warmer room. What condition increases for that tray?",
+    "stem": "Two trays of seeds are the same, but one is in a warmer room. What increases?",
     "options": [
       "Light",
       "Moisture",
@@ -2276,7 +2276,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A dry wooden block remains at the surface when gently placed in water. What is it doing?",
+    "stem": "A wooden block stays on top of the water. What is it doing?",
     "options": [
       "Floating",
       "Sinking",
@@ -2297,7 +2297,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A stone drops to the bottom of a bowl of water. What is it doing?",
+    "stem": "A stone drops to the bottom of water. What is it doing?",
     "options": [
       "Floating",
       "Sinking",
@@ -2318,7 +2318,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "Salt crystals spread through water as a solution when stirred. What process is occurring?",
+    "stem": "Stirred salt mixes into water and cannot be seen. What is happening?",
     "options": [
       "Melting",
       "Evaporating",
@@ -2339,7 +2339,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A sponge takes water into its small spaces when placed in a spill. What process is occurring?",
+    "stem": "A sponge takes up water from a spill. What is happening?",
     "options": [
       "Dissolving",
       "Floating",
@@ -2360,7 +2360,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A cow eats grass growing in a field. What does the grass provide to the cow?",
+    "stem": "What does grass give a cow that eats it?",
     "options": [
       "A source of food",
       "A place to hide",
@@ -2381,7 +2381,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A bird rests inside a hollow part of a tree during a storm. What does the hollow provide?",
+    "stem": "In a storm, a bird rests in a tree hollow. What does the hollow give?",
     "options": [
       "Food for the bird",
       "Shelter from the weather",
@@ -2402,7 +2402,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A hooked seed catches on an animal's fur and is carried to another place. What role does the animal play?",
+    "stem": "A hooked seed sticks to an animal's fur and is carried away. How does the animal help?",
     "options": [
       "It pollinates the flower",
       "It eats the seed",
@@ -2423,7 +2423,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A bee carries pollen from one flower to another. What role does the bee play?",
+    "stem": "A bee carries pollen between flowers. What does the bee do?",
     "options": [
       "It eats the flowers",
       "It spreads the seeds",
@@ -2444,7 +2444,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A class measures water in two containers using the same marked cup for both. Why is using the same unit useful?",
+    "stem": "A class measures water in two jars with the same cup. Why use the same cup?",
     "options": [
       "To compare the amounts fairly",
       "To make the containers bigger",
@@ -2465,7 +2465,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A pupil marks a plant's height every Monday on a chart. What is the main purpose of these dated measurements?",
+    "stem": "A pupil marks a plant's height every Monday. Why?",
     "options": [
       "To make it grow faster",
       "To see how it grows over time",
@@ -2486,7 +2486,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A class sorts collected leaves into piles with smooth edges and toothed edges. What is the main purpose?",
+    "stem": "A class sorts leaves into smooth-edged and toothed piles. Why?",
     "options": [
       "To count all the leaves",
       "To find the oldest leaf",
@@ -2507,7 +2507,7 @@
     "skill": "science",
     "difficulty": 2,
     "format": "single",
-    "stem": "A pupil repeats a simple floating test three times with the same object and conditions. What is the main purpose?",
+    "stem": "A pupil repeats a floating test three times the same way. Why?",
     "options": [
       "To make the object float",
       "To change the conditions",
@@ -2528,7 +2528,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A child faces west and turns right through a quarter-turn. Which direction does the child face?",
+    "stem": "A child faces west and turns right a quarter-turn. Which way now?",
     "options": [
       "North",
       "South",
@@ -2549,7 +2549,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "On a map with north at the top, a pond lies directly to the right of a school. In which direction is the pond from the school?",
+    "stem": "North is up on a map. A pond is just right of a school. Which direction is the pond from the school?",
     "options": [
       "West",
       "East",
@@ -2570,7 +2570,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A walker moves 3 steps north, then 5 steps south along the same line. In which direction is the walker from the starting point?",
+    "stem": "A walker goes 3 steps north, then 5 steps south. Which direction is the walker from the start?",
     "options": [
       "North",
       "North-east",
@@ -2591,7 +2591,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A shop is east of a library. In which direction is the library from the shop?",
+    "stem": "A shop is east of a library. Which direction is the library from the shop?",
     "options": [
       "East",
       "North",
@@ -2633,7 +2633,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Asha, Bina, Chirag and Deep finish a race without ties. Deep finishes first, Chirag third and Asha fourth. Who finishes second?",
+    "stem": "Asha, Bina, Chirag and Deep race. Deep is first, Chirag third, Asha fourth. Who is second?",
     "options": [
       "Chirag",
       "Bina",
@@ -2654,7 +2654,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "In a row from left to right are Deep, Asha, Chirag and Bina. Who stands immediately to the right of Asha?",
+    "stem": "Left to right stand Deep, Asha, Chirag and Bina. Who is just right of Asha?",
     "options": [
       "Deep",
       "Bina",
@@ -2696,7 +2696,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which shape is different from the others because its boundary has exactly three straight sides?",
+    "stem": "Which shape is different because it has exactly three straight sides?",
     "options": [
       "A triangle",
       "A square",
@@ -2717,7 +2717,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A four-sided tile has four right angles and all its sides are equal. Which is its most specific name?",
+    "stem": "A tile has four right angles and four equal sides. What is its most exact name?",
     "options": [
       "A rectangle",
       "A square",
@@ -2738,7 +2738,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which shape has no corners and has every boundary point equally far from its centre?",
+    "stem": "Which shape has no corners and every point on its edge the same distance from the centre?",
     "options": [
       "An oval",
       "A square",
@@ -2759,7 +2759,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A shape has four right angles, with opposite sides equal, but its length is greater than its width. Which shape is it?",
+    "stem": "A shape has four right angles and opposite sides equal, but is longer than it is wide. What is it?",
     "options": [
       "A square",
       "A circle",
@@ -2780,7 +2780,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Continue the alphabet pattern: A, C, __, G. Which letter fills the gap?",
+    "stem": "Continue the pattern: A, C, __, G. Which letter fills the gap?",
     "options": [
       "E",
       "D",
@@ -2801,7 +2801,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Starting at K, move three letters backward in the alphabet. Which letter do you reach?",
+    "stem": "Count three letters back from K in the alphabet. Which letter is it?",
     "options": [
       "N",
       "H",
@@ -2822,7 +2822,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A code replaces each letter with the next alphabet letter. What replaces L?",
+    "stem": "Each letter is replaced by the next letter. What replaces L?",
     "options": [
       "K",
       "N",
@@ -2843,7 +2843,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Letters in a row are P, Q, R, S, T. Which letter is in the middle?",
+    "stem": "Which letter is in the middle of P, Q, R, S, T?",
     "options": [
       "Q",
       "S",
@@ -2906,7 +2906,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A number pattern adds 2, then 3, then 4, then 5: 7,9,12,16,__ . What comes next?",
+    "stem": "Add 2, then 3, then 4, then 5: 7, 9, 12, 16, __. What comes next?",
     "options": [
       "20",
       "22",
@@ -2948,7 +2948,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Complete the shelter relationship: a dog may rest in a kennel; a sparrow rests in a __.",
+    "stem": "A dog rests in a kennel; a sparrow rests in a __.",
     "options": [
       "Nest",
       "Burrow",
@@ -2969,7 +2969,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Complete: bee is to hive as a ground-dwelling rabbit is to which shelter?",
+    "stem": "Bee is to hive as rabbit is to what?",
     "options": [
       "Nest",
       "Burrow",
@@ -2990,7 +2990,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which place is to a bee colony as a nest is to many birds?",
+    "stem": "A nest is to birds as what is to a bee colony?",
     "options": [
       "Nest",
       "Web",
@@ -3053,7 +3053,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Each lesson comes three days after the one before it. One lesson is on Saturday. On which day is the next lesson?",
+    "stem": "A lesson is on Saturday. The next lesson is three days later. Which day is it?",
     "options": [
       "Monday",
       "Tuesday",
@@ -3074,7 +3074,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A fair starts on Sunday and lasts five days, counting Sunday as day one. On which day does it end?",
+    "stem": "A five-day fair starts on Sunday. On which day does it end?",
     "options": [
       "Friday",
       "Wednesday",
@@ -3116,7 +3116,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A box is only for objects that are red and also round. Which of these two conditions does a red round bead meet?",
+    "stem": "A box takes only red, round objects. Which conditions does a red round bead meet?",
     "options": [
       "Both conditions are met",
       "Only the colour condition is met",
@@ -3200,7 +3200,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Four bags have labels: red=books, blue=seeds, green=cloth, yellow=tools. Which bag should someone open to find books?",
+    "stem": "Bags: red=books, blue=seeds, green=cloth, yellow=tools. Which bag has the books?",
     "options": [
       "The red bag",
       "The blue bag",
@@ -3221,7 +3221,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "The green bag is lighter than the blue bag. The red bag is lighter than the green bag, and the yellow bag is lighter than the red bag. Which is heaviest?",
+    "stem": "The green bag is lighter than the blue bag. The red bag is lighter than the green one, and the yellow one is lighter than red. Which bag is heaviest?",
     "options": [
       "Green",
       "Blue",
@@ -3242,7 +3242,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A box holds four bags: a yellow, a red, a blue and a green bag. The yellow bag is taken out, then the red bag, then the blue bag. Which bag is still in the box?",
+    "stem": "A box holds a yellow, red, blue and green bag. Yellow, red and blue are taken out. Which bag is left?",
     "options": [
       "The red bag",
       "The blue bag",
@@ -3284,7 +3284,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A row has five spaces. The middle space is occupied. How many spaces lie to its left?",
+    "stem": "In a row of five spaces, how many lie left of the middle one?",
     "options": [
       "2",
       "3",
@@ -3305,7 +3305,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Six children stand in a queue, one behind another. How many children stand behind the child who is third from the front?",
+    "stem": "Six children stand in a queue. How many are behind the third from the front?",
     "options": [
       "4",
       "3",
@@ -3326,7 +3326,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A path has one flag at the start, one at the end, and two between them. How many flags are there?",
+    "stem": "A path has a flag at each end and two in between. How many flags?",
     "options": [
       "2",
       "3",
@@ -3347,7 +3347,7 @@
     "skill": "reasoning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A stack has seven books. The top two are removed. How many books remain?",
+    "stem": "Seven books are stacked and the top two removed. How many remain?",
     "options": [
       "9",
       "4",

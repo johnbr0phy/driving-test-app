@@ -6,7 +6,14 @@ A median over 20 words is flagged: the site's median is about 15, and the
 Nov 2026 batch that ran 20 to 26 read as wordy. Reading and data-heavy exams
 can run longer; compare with their nearest peers before trimming.
 
-Usage: python3 -I tools/check_stem_length.py data/x-questions.json data/v2/y
+Usage:
+  python3 -I tools/check_stem_length.py data/x-questions.json data/v2/y
+  python3 -I tools/check_stem_length.py --all --baseline tools/stem_length_baseline.json
+  python3 -I tools/check_stem_length.py --all --write-baseline tools/stem_length_baseline.json
+
+With --all it fails (exit 1) on any bank whose median is over the limit and
+not in the baseline, or whose median grew past its baseline. Older banks over
+the limit are listed in the baseline and may only get shorter.
 """
 import glob
 import json
@@ -31,9 +38,12 @@ def stems(path):
             out += [words(q.get("stem")) for q in (d["questions"] if isinstance(d, dict) else d)]
         return out
     d = json.load(open(path))
-    if not isinstance(d, list) or not d or "question" not in d[0]:
+    qs = d["questions"] if isinstance(d, dict) else d
+    if not isinstance(qs, list) or not qs:
         return []
-    return [words(q["question"]) for q in d]
+    if "question" in qs[0]:
+        return [words(q["question"]) for q in qs]
+    return [words(q.get("stem")) for q in qs]
 
 
 def all_banks():
@@ -42,7 +52,46 @@ def all_banks():
     return v1 + v2
 
 
+def key(path):
+    rel = os.path.relpath(os.path.abspath(path), ROOT)
+    return rel.replace(os.sep, "/")
+
+
+def check_all(argv):
+    base_path = argv[argv.index("--baseline") + 1] if "--baseline" in argv else None
+    write_path = argv[argv.index("--write-baseline") + 1] if "--write-baseline" in argv else None
+    baseline = json.load(open(base_path)) if base_path else {}
+    over, failed = {}, []
+    for p in sorted(all_banks()):
+        s = stems(p)
+        if len(s) < 50:
+            continue
+        m = st.median(s)
+        if m <= LIMIT:
+            continue
+        k = key(p)
+        over[k] = m
+        b = baseline.get(k)
+        if b is None or m > b:
+            failed.append(f"{k}: median {m:.0f} words per stem (limit {LIMIT}" + (f", baseline {b:.0f})" if b is not None else ")"))
+    if write_path:
+        with open(write_path, "w") as f:
+            json.dump(dict(sorted(over.items())), f, indent=1)
+            f.write("\n")
+        print(f"wrote {len(over)} banks over {LIMIT} words to {write_path}")
+        return 0
+    if failed:
+        print("Question stems too long:\n  " + "\n  ".join(failed))
+        print("Say the fact or situation and the ask, nothing more: cut scenario padding and stacked qualifiers "
+              "(.claude/skills/exam-bank, Short stems).")
+        return 1
+    print("stem length: OK (none over the limit except baselined banks, none longer than their baseline)")
+    return 0
+
+
 def main(argv):
+    if "--all" in argv:
+        return check_all(argv)
     if not argv:
         print(__doc__)
         return 2

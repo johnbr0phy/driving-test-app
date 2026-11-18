@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  carshair: {
+    answer:
+      "The Red Seal Hairstylist exam is the interprovincial certificate of qualification exam for hairstylists in Canada. It has 120 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Hairstylist across 8 Major Work Activities, led by altering hair colour (25 questions) and cutting hair (24). Ontario (trade 332A) does not currently offer the Red Seal endorsement for this trade and uses its own Certificate of Qualification exam.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Hair colour 25, cutting 24, chemical texture 17, styling 16" },
+      { label: "Other areas", value: "Common occupational skills 14, hair and scalp care 11, salon operations 7, specialized services 6" },
+      { label: "Standard", value: "Red Seal Occupational Standard for Hairstylist" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal Hairstylist exam breakdown and the Red Seal Exam Preparation Guide, checked November 2026",
+    source: { name: "Red Seal: Hairstylist exam information", url: "https://red-seal.ca/eng/trades/hairstylists/exam-information.shtml" },
+  },
   carscook: {
     answer:
       "The Red Seal Cook exam is the interprovincial certificate of qualification exam for cooks in Canada (trade code 415A in Ontario). It has 150 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Cook across 13 Major Work Activities, led by meats, game, poultry and variety meats (16 questions) and fish and seafood (15).",

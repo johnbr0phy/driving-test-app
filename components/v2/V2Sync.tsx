@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useV2Store, EMPTY_V2, V2Data } from "@/store/useV2Store";
 import { loadV2, mergeV2, saveV2 } from "@/lib/v2/sync";
+import { withLocalChanges } from "@/lib/v2/merge";
 import { shouldPreferRemoteMcpProgress } from "@/lib/mcpProgressGuard";
 
 const pick = (s: V2Data): V2Data => ({ sessions: s.sessions, results: s.results, drills: s.drills, basics: s.basics, goals: s.goals, questionStats: s.questionStats ?? {} });
@@ -38,7 +39,8 @@ export function V2Sync() {
     (async () => {
       try {
         // Another account's copy on this browser is not ours to merge.
-        const local = state.syncedUid && state.syncedUid !== uid ? EMPTY_V2 : pick(useV2Store.getState());
+        const before = pick(useV2Store.getState());
+        const local = state.syncedUid && state.syncedUid !== uid ? EMPTY_V2 : before;
         const remote = await loadV2(uid);
         if (cancelled) return;
         // Do not resurrect an assistant reset by unioning the stale account
@@ -46,15 +48,11 @@ export function V2Sync() {
         const merged = shouldPreferRemoteMcpProgress(uid, 'v2', state.syncedUid)
           ? remote ?? EMPTY_V2
           : remote ? mergeV2(local, remote) : local;
-        // A goal picked while the account was loading is newer than the
-        // account's copy: keep it instead of snapping back to the saved one.
-        const goalsNow = useV2Store.getState().goals;
-        if (goalsNow !== local.goals) {
-          const changed = Object.fromEntries(Object.entries(goalsNow).filter(([k, v]) => local.goals[k] !== v));
-          merged.goals = { ...merged.goals, ...changed };
-        }
-        useV2Store.getState().replaceData(merged, uid);
-        await saveV2(uid, merged);
+        // Anything done here while the account was loading (a test started
+        // with Start module, a drill answer, a goal) is newer than either copy.
+        const synced = withLocalChanges(merged, before, pick(useV2Store.getState()));
+        useV2Store.getState().replaceData(synced, uid);
+        await saveV2(uid, synced);
         if (cancelled) return;
         ready.current = uid;
         unsubscribe = useV2Store.subscribe((next, prev) => {

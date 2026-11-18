@@ -547,6 +547,10 @@ export const zh: TranslationKeys = {
     pcLiability: "Commercial Liability & Workers Comp",
     pcOther: "Flood, Surety & Other Coverages",
     // VTNE categories
+    epa609Rules: "Rules & Environmental Effects",
+    epa609Equipment: "Equipment & Safe Handling",
+    epa609Service: "Recovery, Leaks & Charging",
+    epa609Yf: "R-1234yf Procedures",
     vtCare: "Animal Care & Nursing",
     vtPharm: "Pharmacy & Pharmacology",
     vtSurgical: "Surgical Nursing",

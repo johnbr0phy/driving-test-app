@@ -1,0 +1,22 @@
+{
+"X001": {
+"key": "D",
+"questionId": "EPA609-SRV-007",
+"category": "epa609Service"
+},
+"X002": {
+"key": "A",
+"questionId": "EPA609-REG-006",
+"category": "epa609Rules"
+},
+"X003": {
+"key": "B",
+"questionId": "EPA609-EQP-014",
+"category": "epa609Equipment"
+},
+"X004": {
+"key": "D",
+"questionId": "EPA609-SRV-019",
+"category": "epa609Service"
+}
+}

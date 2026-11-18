@@ -1,0 +1,621 @@
+{
+ "EPA609-REG-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-004": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [
+   "unclear"
+  ],
+  "note": "MACS says even top-off-only passenger-car work needs certified techs and equipment; D (off-road/MVAC-like top-off needs no recovery equipment) rests on a Section 608 'opening' nuance not in the sources and is reachable only by elimination."
+ },
+ "EPA609-REG-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-023": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-024": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-025": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-026": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [
+   "second"
+  ],
+  "note": "EPA servicing page says 'any person working on an MVAC system' for consideration must be 609 certified; a candidate reading that literally could defend C. Reg ties 609 to service involving the refrigerant."
+ },
+ "EPA609-REG-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-028": {
+  "answer": "A",
+  "confidence": "low",
+  "flags": [
+   "unclear",
+   "factual"
+  ],
+  "note": "Sources only say recovered refrigerant is recycled on-site with approved equipment or reclaimed off-site; nothing establishes which facility must recycle salvage refrigerant. Key not verifiable from the sources."
+ },
+ "EPA609-EQP-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-003": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "J2788 80% volume limit not in sources; MACS gives a separate 60% gross-weight transfer rule."
+ },
+ "EPA609-EQP-004": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-005": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "J2788 filter-identity requirement not in sources; Robinair filter code entry consistent."
+ },
+ "EPA609-EQP-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-008": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "J2788 5-year retest exemption not in sources; answered from knowledge."
+ },
+ "EPA609-EQP-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [
+   "strawman"
+  ],
+  "note": "Loose weave / absorb oil distractors are not tempting."
+ },
+ "EPA609-EQP-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [
+   "scope"
+  ],
+  "note": "One Robinair model's filter-change screen sequence ('machine clears the existing filter'); not 609 knowledge."
+ },
+ "EPA609-EQP-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-016": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-018": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-022": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": "MACS (J2209 text): recovered refrigerant recycled only with equipment owned by the same company or individual."
+ },
+ "EPA609-EQP-023": {
+  "answer": "D",
+  "confidence": "low",
+  "flags": [],
+  "note": "J2788 liquid-phase withdrawal rule not in sources; answered from knowledge."
+ },
+ "EPA609-EQP-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-004": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-006": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [
+   "scope"
+  ],
+  "note": "Robinair 22791 is not in the sources; general MACS probe technique (move slowly, within 1/4 inch, no contact). Model-specific framing."
+ },
+ "EPA609-SRV-007": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-019": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-024": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-025": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-026": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-028": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-029": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-030": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-031": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [
+   "scope"
+  ],
+  "note": "One machine's vacuum pump sight-glass level."
+ },
+ "EPA609-SRV-032": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-002": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-004": {
+  "answer": "C",
+  "confidence": "low",
+  "flags": [
+   "scope"
+  ],
+  "note": "DENSO ND-oil 11/12 not in sources; one supplier's oil line (ND-oil 11 electric POE, 12 mechanical)."
+ },
+ "EPA609-YF-005": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-008": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [
+   "scope"
+  ],
+  "note": "Tesla Model 3 HV isolation procedure is one maker's procedure, not in sources."
+ },
+ "EPA609-YF-009": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [],
+  "note": "MACS names J2843 or J3030 for yf R/R/R; J3030 as the dual R-134a/R-1234yf standard is from knowledge."
+ },
+ "EPA609-YF-010": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "MACS: connect only when high-side pressures have decreased, usually after 3+ minutes."
+ },
+ "EPA609-YF-016": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ }
+}

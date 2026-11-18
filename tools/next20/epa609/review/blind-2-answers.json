@@ -1,0 +1,606 @@
+{
+ "EPA609-REG-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-005": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-006": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-012": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-014": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-016": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "MACS/EPA: HCFC-22 buses are high-pressure equipment, not MVAC; Type II inferred (not stated by type in sources)."
+ },
+ "EPA609-REG-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-019": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-020": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-021": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-022": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-023": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-025": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-026": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-027": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-REG-028": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-002": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-004": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-013": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [
+   "scope"
+  ],
+  "note": "14 AWG is Robinair 34788NI manual-specific (MACS also says No. 14 AWG generally); the stem names one machine model."
+ },
+ "EPA609-EQP-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-021": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-022": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-023": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-EQP-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-005": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-006": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Answerable from the stem's own wording (display resolution = smallest displayed increment) without MVAC knowledge."
+ },
+ "EPA609-SRV-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-009": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-013": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-017": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-020": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-022": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-025": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-026": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-027": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-028": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-029": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-031": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-SRV-032": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-006": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-007": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-013": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "EPA609-YF-015": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "MACS: connect when high-side pressures have decreased, 'usually after ... three minutes'; option A is close but the governing condition is C."
+ },
+ "EPA609-YF-016": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ }
+}

@@ -16,7 +16,7 @@ export const SECURITYX: ExamV2Config = {
     modules: [{ module: 1, questionCount: 90, timeLimit: 165 * 60 }],
     directions: "90 original multiple-choice questions in 165 minutes. Choose one answer, flag questions and return to them. This is conceptual practice across the four CAS-005 domains. The real exam includes interactive performance-based questions that are not included here. Practice percentages do not predict CompTIA’s pass/fail result.",
     scale: percentScale(90), domains }],
-  tests: [{ number: 1, name: "Practice Test 1", heldOut: true }, { number: 2, name: "Practice Test 2", heldOut: true }],
+  tests: [{ number: 1, name: "Practice Test 1" }, { number: 2, name: "Practice Test 2", heldOut: true }],
   domainLabels: { securityxGrc: "Governance, Risk and Compliance", securityxArchitecture: "Security Architecture", securityxEngineering: "Security Engineering", securityxOperations: "Security Operations" },
   drills: [
     { key: "governance", name: "Governance, Risk and Compliance", section: "securityx", domains: ["securityxGrc"], blurb: "Risk decisions, supplier obligations, threat modeling and AI governance." },

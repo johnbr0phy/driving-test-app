@@ -90,3 +90,35 @@ export function withoutExamV2(data: V2Data, examId: string): V2Data {
     questionStats,
   };
 }
+
+type MapKey = "sessions" | "drills" | "basics" | "goals" | "questionStats";
+const MAP_KEYS: MapKey[] = ["sessions", "drills", "basics", "goals", "questionStats"];
+
+/**
+ * Re-apply what changed on this device while the account copy was loading.
+ * V2Sync takes a snapshot (`before`), awaits the account, then writes the
+ * merged copy back; anything done in between (a test started with Start
+ * module, a drill answer, a goal) is in `after` but not in `before`, and
+ * would otherwise be overwritten: the test you just started vanished and the
+ * start screen came back. Entries that changed win, entries removed during
+ * the load are removed, and new results are added.
+ */
+export function withLocalChanges(merged: V2Data, before: V2Data, after: V2Data): V2Data {
+  const out: V2Data = { ...merged };
+  for (const key of MAP_KEYS) {
+    const b = (before[key] ?? {}) as Record<string, unknown>;
+    const a = (after[key] ?? {}) as Record<string, unknown>;
+    if (a === b) continue;
+    const next = { ...((merged[key] ?? {}) as Record<string, unknown>) };
+    for (const k of Object.keys(a)) if (a[k] !== b[k]) next[k] = a[k];
+    for (const k of Object.keys(b)) if (!(k in a)) delete next[k];
+    (out as Record<MapKey, unknown>)[key] = next;
+  }
+  if (after.results !== before.results) {
+    const known = new Set(before.results);
+    const added = after.results.filter((r) => !known.has(r));
+    const ids = new Set(merged.results.map((r) => `${r.examId}|${r.completedAt}`));
+    out.results = [...merged.results, ...added.filter((r) => !ids.has(`${r.examId}|${r.completedAt}`))];
+  }
+  return out;
+}

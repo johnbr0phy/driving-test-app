@@ -15,7 +15,7 @@ export const SERVICENOWCSA: ExamV2Config = {
     modules: [{ module: 1, questionCount: 60, timeLimit: 90 * 60 }],
     directions: "60 original questions in 90 minutes. Single-answer questions have one correct choice. Multiple-select questions state how many choices to select; all correct choices and no incorrect choices are required for credit. This is selected conceptual and applied administration practice, not a hands-on platform assessment or exhaustive feature coverage. The official cut score is not public; practice percentages do not predict an official result.",
     scale: percentScale(60), domains }],
-  tests: [{ number: 1, name: "Practice Test 1", heldOut: true }, { number: 2, name: "Practice Test 2", heldOut: true }],
+  tests: [{ number: 1, name: "Practice Test 1" }, { number: 2, name: "Practice Test 2", heldOut: true }],
   domainLabels: {
     servicenowcsaNavigation: "Platform Overview and Navigation", servicenowcsaConfiguration: "Instance Configuration",
     servicenowcsaCollaboration: "Configuring Applications for Collaboration", servicenowcsaAutomation: "Self Service and Automation",

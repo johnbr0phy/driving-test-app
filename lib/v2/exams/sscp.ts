@@ -15,7 +15,7 @@ export const SSCP: ExamV2Config = {
     modules: [{ module: 1, questionCount: 100, timeLimit: 120 * 60 }],
     directions: "100 original single-answer questions in 120 minutes. You may flag and revisit questions here. The real SSCP uses computerized adaptive testing with 100-125 items, including unscored and advanced items, and does not permit revisiting finalized answers. This fixed-length MCQ practice does not reproduce those features. Practice percentages do not convert to ISC2's passing standard.",
     scale: percentScale(100), domains }],
-  tests: [{ number: 1, name: "Practice Test 1", heldOut: true }, { number: 2, name: "Practice Test 2", heldOut: true }],
+  tests: [{ number: 1, name: "Practice Test 1" }, { number: 2, name: "Practice Test 2", heldOut: true }],
   domainLabels: {
     sscpConcepts: "Security Concepts and Practices", sscpAccess: "Access Controls",
     sscpRisk: "Risk Identification, Monitoring and Analysis", sscpIncident: "Incident Response and Recovery",

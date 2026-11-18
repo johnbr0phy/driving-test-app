@@ -1,3 +1,5 @@
+> Current status: the first independent pedagogy gate failed. A corrective revision is awaiting fresh independent review; see [revision-review-v3.md](revision-review-v3.md). Earlier results below are historical, not approval of the current bank.
+
 # FRVTC author self-review, 17 November 2026
 
 This is a model author review, not an independent, native-speaker or human review. All 200 stems, all 800 options, all keys and all explanations were read in category order and compared across the complete bank before wiring. All 200 source-map entries resolve to the source catalog. The initial broad blueprint is reconciled with the final per-item objectives in item-source-map.json.

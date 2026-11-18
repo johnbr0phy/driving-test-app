@@ -1,3 +1,5 @@
+> Current status: the first independent pedagogy gate failed. A corrective revision is awaiting fresh independent review; see [revision-review-v3.md](revision-review-v3.md). Earlier results below are historical, not approval of the current bank.
+
 # French VTC research checkpoint, 2026-11-17
 
 The 200-question original draft has been authored and self-read in full (stems, all four options, keys and explanations). App integration and repository checks are complete; independent review remains pending. No official samples, annales, past papers, or question pools were opened. Research downloads are outside the worktree at `/Users/johnbrophy/tigertest-next20-progress/frvtc-research`.

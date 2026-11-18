@@ -1023,7 +1023,7 @@
   },
   {
     "questionId": "FRVTC-COM-006",
-    "objective": "Identifier un changement de l'environnement du marché",
+    "objective": "Mesurer le recoupement entre une offre de substitution et les trajets vendus",
     "sources": [
       "MARKET"
     ]
@@ -1410,7 +1410,7 @@
   },
   {
     "questionId": "FRVTC-REG-025",
-    "objective": "Reconnaître les supports de preuve autorisés",
+    "objective": "Distinguer une mention obligatoire de réservation et une donnée accessoire",
     "sources": [
       "RES-1"
     ]

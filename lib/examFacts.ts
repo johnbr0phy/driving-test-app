@@ -79,6 +79,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   "tigertest": "200 original French-language questions in four shorter 50-question tests. Free to start. Each item has one correct answer out of four. Written production, spelling assessment, official weighted section scoring, oral interaction and practical driving are not reproduced. Model language review only."
 },
+  cdm: {
+    answer: "The CBDM CDM, CFPP exam has 160 multiple-choice questions in three hours: 140 scored and 20 unscored pretest items. Its five domains are nutrition, foodservice, personnel and communications, sanitation and safety, and business operations.",
+    rows: [
+      { label: "Questions", value: "160 total; 140 scored and 20 pretest" },
+      { label: "Time", value: "180 minutes" },
+      { label: "Passing score", value: "CBDM-set cut score; historically about 70% of scored items" },
+      { label: "Delivery", value: "Computer-based through PSI" },
+      { label: "Practice target", value: "70% on these shorter 50-question tests" },
+    ],
+    basedOn: "CBDM content outline effective March 1, 2025; CBDM 2025 practice standards and FDA Food Code 2022. Sources checked November 17, 2026.",
+    source: { name: "CBDM official exam FAQ and scoring", url: "https://www.cbdmonline.org/exam-prep/credentialing-exam-faq" },
+    tigertest: "200 original questions in five topic sets and four 50-question tests. Focused study, not a full-length simulation or exhaustive textbook replacement. Free to start; later steps require Premium.",
+  },
+
   zafirearm: {
   "answer": "South African firearm competency involves prescribed legal knowledge and practical training through an accredited provider, followed by the SAPS competency process and the appropriate firearm licence. This independent practice focuses on Firearms Control Act knowledge associated with SAQA Unit Standard 117705. It does not award credits, practical proficiency, a competency certificate or a firearm licence.",
   "rows": [

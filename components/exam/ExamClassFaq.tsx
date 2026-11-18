@@ -88,6 +88,7 @@ export const TEACHES: Record<string, string> = {
   paramedic: "a paramedic program",
   teas: "TEAS prep",
   hesi: "HESI A2 prep",
+  cdm: "a dietary management or foodservice program",
   vtne: "a veterinary technology program",
   ukcare: "Care Certificate induction training",
   // High school, military and college classes

@@ -93,6 +93,25 @@
     "servicenowcsa": [{"date": "2026-11-17", "kind": "blind review at build", "pr": 877, "findings": 0, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/servicenowcsa/review.md"}, {"date": "2026-11-17", "kind": "second blind review after rewrite", "findings": 1}, {"date": "2026-11-17", "kind": "third review: keyless blind answering (Opus) plus source check of every flag", "findings": 9}, {"date": "2026-11-18", "kind": "stem trim, then keyless blind answering (Opus) of every changed question plus source check of every flag", "findings": 7}]
   },
   "pendingReviews": {
+    "cdm": [
+      {
+        "date": "2026-11-17",
+        "kind": "draft blind factual review; options-only gate unresolved",
+        "pr": 880,
+        "findings": 2,
+        "status": "pending",
+        "optionsOnlyCorrect": 140,
+        "optionsOnlyTotal": 200,
+        "note": "Codex draft. Superseded by the 2026-11-18 review; see tools/next20/cdm/REVIEW.md."
+      },
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 880,
+        "findings": 7,
+        "note": "Blind keys 198/200, both disagreements fixed. Options-only 126/200 under the cue-based rule; 15 surface-cue items rewritten, recheck at the 3% limit. See tools/next20/cdm/REVIEW.md."
+      }
+    ],
     "frvtc": [
       {
         "date": "2026-11-17",

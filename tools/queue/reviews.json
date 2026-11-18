@@ -131,6 +131,15 @@
         "note": "Blind keys 200/200 twice. Options-only 139/200 with 52 surface-cue hits, rewritten; then 130/200 with 16, 12 rewritten; recheck of changed items leaves about 6. Model French review only. See tools/next20/frvtc/REVIEW.md."
       }
     ],
+    "frcivique": [
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 896,
+        "findings": 22,
+        "note": "Blind keys 240/240, then 239/240 by a fresh reviewer (fixed); options-only 75% with 8 cue hits, then 74% with 5 (pass), all rewritten; hedged-wording pattern in situation keys fixed; changed items rechecked blind. Model French review only. See tools/next20/frcivique/REVIEW.md."
+      }
+    ],
     "realestatebroker": [
       {
         "date": "2026-11-18",

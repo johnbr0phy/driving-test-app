@@ -4508,6 +4508,24 @@
         "qcm vtc",
         "carte professionnelle vtc"
       ]
+    },
+    {
+      "id": "frcivique",
+      "name": "French Civic Exam (Examen civique)",
+      "owner": "Ministère de l'Intérieur",
+      "region": "FR",
+      "engine": "v1",
+      "siblings": [
+        "itcils",
+        "dkindfoed",
+        "uklitu"
+      ],
+      "sells": 1,
+      "search": [
+        "examen civique",
+        "test naturalisation france",
+        "qcm examen civique"
+      ]
     }
   ]
 }

@@ -1,0 +1,1922 @@
+[
+  {
+    "questionId": "FRCIV-PRI-001",
+    "notion": "Devise et symboles",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/la-devise-francaise/ (La devise française, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-002",
+    "notion": "Devise et symboles",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/le-drapeau-fran%C3%A7ais/ (Le drapeau français, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-003",
+    "notion": "Devise et symboles",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/la-fete-nationale/ (La fête nationale, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-004",
+    "notion": "Laïcité",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-definition-de-la-laicite-1/ (La définition de la laïcité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-005",
+    "notion": "Laïcité",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/histoire-de-la-laicite/ (Histoire de la laïcité, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-006",
+    "notion": "Devise et symboles",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/hymne-francais/ (L'hymne français, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-007",
+    "notion": "Devise et symboles",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/marianne/ (Marianne, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-008",
+    "notion": "Devise et symboles",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/le-coq/ (Le coq, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-009",
+    "notion": "Laïcité",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-a-ecole-1/ (La laïcité à l'école 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-010",
+    "notion": "Laïcité",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-definition-de-la-laicite-1/ (La définition de la laïcité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-011",
+    "notion": "Devise et symboles",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/la-devise-francaise/ (La devise française, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-012",
+    "notion": "Devise et symboles",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/le-drapeau-fran%C3%A7ais/ (Le drapeau français, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-013",
+    "notion": "Devise et symboles",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/la-fete-nationale/ (La fête nationale, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-014",
+    "notion": "Laïcité",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/histoire-de-la-laicite/ (Histoire de la laïcité, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-015",
+    "notion": "Laïcité",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-definition-de-la-laicite-1/ (La définition de la laïcité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-016",
+    "notion": "Devise et symboles",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/fraternite-1/ (La fraternité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-017",
+    "notion": "Devise et symboles",
+    "level": "B1",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, art. 1 à 3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-018",
+    "notion": "Devise et symboles",
+    "level": "B1",
+    "sources": [
+      "https://www.elysee.fr/la-presidence/la-marseillaise-de-rouget-de-lisle (La Marseillaise, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-019",
+    "notion": "Laïcité",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-au-travail/ (La laïcité au travail, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-020",
+    "notion": "Laïcité",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/le-blaspheme/ (Le blasphème, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-021",
+    "notion": "Devise et symboles",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, art. 1 à 3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-022",
+    "notion": "Devise et symboles",
+    "level": "B2",
+    "sources": [
+      "https://www.elysee.fr/la-presidence/marianne (Marianne, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-023",
+    "notion": "Devise et symboles",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/la-langue-de-la-republique/la-langue-fran%C3%A7aise/ (La langue française, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-024",
+    "notion": "Laïcité",
+    "level": "B2",
+    "sources": [
+      "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000508749 (Loi du 9 décembre 1905, art. 1, 2 et 31, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-025",
+    "notion": "Laïcité",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-espace-public/ (La laïcité dans l'espace public, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-026",
+    "notion": "Devise et symboles",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, art. 1 à 3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-027",
+    "notion": "Devise et symboles",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, art. 1 à 3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-028",
+    "notion": "Devise et symboles",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/fraternite-1/ (La fraternité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-029",
+    "notion": "Laïcité",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/histoire-de-la-laicite/ (Histoire de la laïcité, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRI-030",
+    "notion": "Laïcité",
+    "level": "B2",
+    "sources": [
+      "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000508749 (Loi du 9 décembre 1905, art. 1, 2 et 31, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-001",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-au-travail/ (La laïcité au travail, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-002",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902818 (Code du travail, art. L3221-2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-003",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination : définition, recours et sanctions, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-004",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-a-ecole-1/ (La laïcité à l'école 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-005",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/fraternite-2/ (La fraternité 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-006",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/les-symboles-de-la-republique/le-drapeau-fran%C3%A7ais/ (Le drapeau français, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-007",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/egalite-2/ (L'égalité 2/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-008",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-les-services-publics/ (La laïcité dans les services publics, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-009",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/le-blaspheme/ (Le blasphème, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-010",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/fraternite-2/ (La fraternité 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-011",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-espace-public/ (La laïcité dans l'espace public, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-012",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination : définition, recours et sanctions, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-013",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-au-travail/ (La laïcité au travail, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-014",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-au-travail/ (La laïcité au travail, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-015",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-les-services-publics/ (La laïcité dans les services publics, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-016",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/egalite-2/ (L'égalité 2/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-017",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-a-ecole-1/ (La laïcité à l'école 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-018",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/le-proselytisme/ (Le prosélytisme, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-019",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination : définition, recours et sanctions, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-020",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-a-ecole-2/ (La laïcité à l'école 2/2, Charte de la laïcité à l'école, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-021",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/la-liberte/ (La liberté, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-022",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/fraternite-1/ (La fraternité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-023",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000508749 (Loi du 9 décembre 1905, art. 2 et 31, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-024",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/egalite-1/ (L'égalité 1/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-025",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-au-travail/ (La laïcité au travail, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-026",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-les-services-publics/ (La laïcité dans les services publics, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-027",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/egalite-3/ (L'égalité 3/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-028",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/le-blaspheme/ (Le blasphème, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-029",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902818 (Code du travail, art. L3221-2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-030",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-espace-public/ (La laïcité dans l'espace public, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-031",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000508749 (Loi du 9 décembre 1905, art. 2 et 31, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-032",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-a-ecole-1/ (La laïcité à l'école 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-033",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/le-contrat-dengagement-%C3%A0-respecter-les-principes-de-la-republique/le-contrat-engagement-republicain/ (Le contrat d'engagement républicain, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-034",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/laicite/la-laicite-dans-les-services-publics/ (La laïcité dans les services publics, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-035",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/egalite-1/ (L'égalité 1/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-PRS-036",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/principes-et-valeurs-de-la-republique/devise-et-symboles-de-la-republique/fraternite-1/ (La fraternité 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-001",
+    "notion": "Démocratie et droit de vote",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-les-conditions-pour-voter-en-france-1/ (Les conditions pour voter en France 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-002",
+    "notion": "Démocratie et droit de vote",
+    "level": "A2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-003",
+    "notion": "Démocratie et droit de vote",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-les-conditions-pour-voter-en-france-1/ (Les conditions pour voter en France 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-004",
+    "notion": "Organisation de la République française",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/etat-de-droit-et-separation-des-pouvoirs/etat-de-droit-et-separation-des-pouvoirs-presentation-des-3-pouvoirs-1/ (Présentation des 3 pouvoirs 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-005",
+    "notion": "Organisation de la République française",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-la-democratie-et-la-republique-2/ (La démocratie et la République 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-006",
+    "notion": "Institutions européennes",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/institutions-europeennes/les-symboles-europeens-1/ (Les symboles européens 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-007",
+    "notion": "Démocratie et droit de vote",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-les-conditions-pour-voter-en-france-1/ (Les conditions pour voter en France 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-008",
+    "notion": "Démocratie et droit de vote",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-la-democratie-et-la-republique-1/ (La démocratie et la République 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-009",
+    "notion": "Démocratie et droit de vote",
+    "level": "A2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-010",
+    "notion": "Organisation de la République française",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/organisation-de-la-r%C3%A9publique-fran%C3%A7aise/le-decoupage-administratif-de-la-france-1/ (Le découpage administratif de la France 1/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-011",
+    "notion": "Organisation de la République française",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/organisation-de-la-r%C3%A9publique-fran%C3%A7aise/le-decoupage-administratif-de-la-france-1/ (Le découpage administratif de la France 1/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-012",
+    "notion": "Institutions européennes",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/institutions-europeennes/le-fonctionnement-europeen-2/ (Le fonctionnement européen 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-013",
+    "notion": "Démocratie et droit de vote",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/etat-de-droit-et-separation-des-pouvoirs/etat-de-droit-et-separation-des-pouvoirs-presentation-des-3-pouvoirs-1/ (Présentation des 3 pouvoirs 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-014",
+    "notion": "Démocratie et droit de vote",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/etat-de-droit-et-separation-des-pouvoirs/etat-de-droit-et-separation-des-pouvoirs--presentation-de-letat-de-droit-et-principe-de-la-separation-des-pouvoirs/ (État de droit et séparation des pouvoirs, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-015",
+    "notion": "Démocratie et droit de vote",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-le-principe-de-pluralite-des-partis/ (Le principe de pluralité des partis, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-016",
+    "notion": "Organisation de la République française",
+    "level": "B1",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-017",
+    "notion": "Organisation de la République française",
+    "level": "B1",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-018",
+    "notion": "Institutions européennes",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/institutions-europeennes/le-fonctionnement-europeen-2/ (Le fonctionnement européen 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-019",
+    "notion": "Démocratie et droit de vote",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/democratie-et-droit-de-vote-les-conditions-pour-voter-en-france-2/ (Les conditions pour voter en France 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-020",
+    "notion": "Démocratie et droit de vote",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/comment-voter-une-loi-2/ (Comment voter une loi 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-021",
+    "notion": "Démocratie et droit de vote",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/etat-de-droit-et-separation-des-pouvoirs/etat-de-droit-et-separation-des-pouvoirs-presentation-des-3-pouvoirs-2/ (Présentation des 3 pouvoirs 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-022",
+    "notion": "Organisation de la République française",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/organisation-de-la-r%C3%A9publique-fran%C3%A7aise/le-decoupage-administratif-de-la-france-2/ (Le découpage administratif de la France 2/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-023",
+    "notion": "Organisation de la République française",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/organisation-de-la-r%C3%A9publique-fran%C3%A7aise/le-decoupage-administratif-de-la-france-1/ (Le découpage administratif de la France 1/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-024",
+    "notion": "Institutions européennes",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/institutions-europeennes/les-symboles-europeens-2/ (Les symboles européens 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-025",
+    "notion": "Démocratie et droit de vote",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-026",
+    "notion": "Démocratie et droit de vote",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/democratie-et-droit-de-vote/comment-voter-une-loi-1/ (Comment voter une loi 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-027",
+    "notion": "Démocratie et droit de vote",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-028",
+    "notion": "Organisation de la République française",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-029",
+    "notion": "Organisation de la République française",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-030",
+    "notion": "Institutions européennes",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/institutions-europeennes/le-fonctionnement-europeen-2/ (Le fonctionnement européen 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-031",
+    "notion": "Démocratie et droit de vote",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/etat-de-droit-et-separation-des-pouvoirs/etat-de-droit-et-separation-des-pouvoirs--presentation-de-letat-de-droit-et-principe-de-la-separation-des-pouvoirs/ (État de droit et séparation des pouvoirs, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-032",
+    "notion": "Démocratie et droit de vote",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/etat-de-droit-et-separation-des-pouvoirs/etat-de-droit-et-separation-des-pouvoirs-presentation-des-3-pouvoirs-2/ (Présentation des 3 pouvoirs 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-033",
+    "notion": "Démocratie et droit de vote",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-034",
+    "notion": "Organisation de la République française",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-035",
+    "notion": "Organisation de la République française",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral en vigueur, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-INS-036",
+    "notion": "Institutions européennes",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/systeme-institutionnel-et-politique/institutions-europeennes/les-etapes-cles-de-la-construction-europeenne/ (Les étapes clés de la construction européenne, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-001",
+    "notion": "Droits fondamentaux",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/introduction-aux-droits-fondamentaux/ (Introduction aux droits fondamentaux, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-002",
+    "notion": "Droits fondamentaux",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-libertes-au-sein-du-couple/ (Les libertés au sein du couple, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-003",
+    "notion": "Obligations et devoirs",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-protection-des-victimes-de-violences/ (Protection des victimes, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-004",
+    "notion": "Obligations et devoirs",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-resident-francais/ (Les obligations en tant que résident, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-005",
+    "notion": "Obligations et devoirs",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/obligations-et-devoirs-des-personnes-residants-en-france-adopter-une-attitude-respectueuse-vis-a-vis-de-environnement/ (Attitude respectueuse de l'environnement, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-006",
+    "notion": "Droits fondamentaux",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-declaraion-des-droits-de-lhomme-et-du-citoyen/ (La DDHC, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-007",
+    "notion": "Droits fondamentaux",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/un-droit-fondamental-le-droit-de-disposer-de-son-corps/ (Le droit de disposer de son corps, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-008",
+    "notion": "Obligations et devoirs",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-protection-des-victimes-de-violences/ (Protection des victimes, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-009",
+    "notion": "Obligations et devoirs",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-protection-des-victimes-de-violences/ (Protection des victimes, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-010",
+    "notion": "Obligations et devoirs",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/l-interdiction-des-violences-faites-aux-enfants/ (Violences faites aux enfants, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-011",
+    "notion": "Droits fondamentaux",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-constitution-de-la-5-republique/ (La Constitution de la Ve République, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-012",
+    "notion": "Droits fondamentaux",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-droits-inherents-a-la-personne-humaine/ (Les droits liés à la personne humaine, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-013",
+    "notion": "Obligations et devoirs",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-limite-des-libertes-individuelles/ (La limite des libertés individuelles, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-014",
+    "notion": "Obligations et devoirs",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-acteurs-institutionnels/ (Les acteurs institutionnels, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-015",
+    "notion": "Obligations et devoirs",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/se-conformer-aux-lois-les-acteurs/ (Police et gendarmerie, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-016",
+    "notion": "Droits fondamentaux",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/droits-economiques-sociaux-troisieme-generation/ (Les droits économiques et sociaux, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-017",
+    "notion": "Droits fondamentaux",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-libertes-au-sein-du-couple/ (Les libertés au sein du couple, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-018",
+    "notion": "Obligations et devoirs",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/se-conformer-aux-lois-les-infractions/ (Les infractions, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-019",
+    "notion": "Obligations et devoirs",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-resident-francais/ (Les obligations en tant que résident, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-020",
+    "notion": "Obligations et devoirs",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-resident-francais/ (Les obligations en tant que résident, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-021",
+    "notion": "Droits fondamentaux",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, texte intégral, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-022",
+    "notion": "Droits fondamentaux",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-charte-de-lenvironnement/ (La Charte de l'environnement, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-023",
+    "notion": "Obligations et devoirs",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-citoyen-francais/ (Les obligations en tant que citoyen, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-024",
+    "notion": "Obligations et devoirs",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-declaraion-des-droits-de-lhomme-et-du-citoyen/ (La DDHC, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-025",
+    "notion": "Obligations et devoirs",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/se-conformer-aux-lois-les-infractions/ (Les infractions, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-026",
+    "notion": "Droits fondamentaux",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-constitution-de-la-5-republique/ (La Constitution de la Ve République, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-027",
+    "notion": "Droits fondamentaux",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/la-diginite-humaine/ (La dignité humaine, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-028",
+    "notion": "Obligations et devoirs",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-declaraion-des-droits-de-lhomme-et-du-citoyen/ (La DDHC, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-029",
+    "notion": "Obligations et devoirs",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/l-interdiction-des-violences-faites-aux-enfants/ (Violences faites aux enfants, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRO-030",
+    "notion": "Obligations et devoirs",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-charte-de-lenvironnement/ (La Charte de l'environnement, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-001",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-resident-francais/ (Les obligations en tant que résident, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-002",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/se-conformer-aux-lois-les-infractions/ (Les infractions, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-003",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-protection-des-victimes-de-violences/ (Protection des victimes, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-004",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/linterdiction-de-toutes-les-formes-de-violences/ (Interdiction de toutes les formes de violences, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-005",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F1435 (Porter plainte, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-006",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/le-role-des-temoins-en-cas-de-violences/ (Le rôle des témoins, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-007",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-008",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/un-droit-fondamental-le-droit-de-disposer-de-son-corps/ (Le droit de disposer de son corps, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-009",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/linterdiction-des-violences-sexuelles/ (Interdiction des violences sexuelles, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-010",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/l-interdiction-des-violences-faites-aux-enfants/ (Violences faites aux enfants, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-011",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F358 (Impôt sur le revenu, déclaration de revenus annuelle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-012",
+    "notion": "Mises en situation",
+    "level": "A2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-013",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-citoyen-francais/ (Les obligations en tant que citoyen, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-014",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-015",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F1435 (Porter plainte, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-016",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/linterdiction-des-violences-sexuelles/ (Interdiction des violences sexuelles, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-017",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-limite-des-libertes-individuelles/ (La limite des libertés individuelles, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-018",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-resident-francais/ (Les obligations en tant que résident, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-019",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/le-role-des-temoins-en-cas-de-violences/ (Le rôle des témoins, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-020",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-protection-des-victimes-de-violences/ (Protection des victimes, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-021",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-022",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-charte-de-lenvironnement/ (La Charte de l'environnement, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-023",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-acteurs-institutionnels/ (Les acteurs institutionnels, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-024",
+    "notion": "Mises en situation",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/linterdiction-des-mutilations-sexuelles-f%C3%A9minines/ (Interdiction des mutilations sexuelles féminines, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-025",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, articles 61-1 et 71-1, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-026",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur (Constitution du 4 octobre 1958, articles 61-1 et 71-1, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-027",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-028",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-029",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F19448 (Discrimination, vérifié le 10 mars 2026, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-030",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/le-role-des-temoins-en-cas-de-violences/ (Le rôle des témoins, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-031",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-limite-des-libertes-individuelles/ (La limite des libertés individuelles, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-032",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-limite-des-libertes-individuelles/ (La limite des libertés individuelles, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-033",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/les-obligations-en-tant-que-citoyen-francais/ (Les obligations en tant que citoyen, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-034",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/obligations-et-devoirs-des-personnes-residant-en-france/la-traite-des-etres-humains-et-la-prostitution/ (Traite des êtres humains et prostitution, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-035",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-principaux-textes-la-charte-de-lenvironnement/ (La Charte de l'environnement, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-DRS-036",
+    "notion": "Mises en situation",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/droits-et-devoirs/droits-fondamentaux/les-libertes-au-sein-du-couple/ (Les libertés au sein du couple, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-001",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/l-ancien-regime-jusqu-en-1789/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-002",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-conflits-mondiaux-et-le-nouvel-ordre-mondial/la-seconde-guerre-mondiale-1939-1945-le-contexte/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-003",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/zoom-sur/focus-sur-la-seconde-guerre-mondiale-la-resistance-et-la-lib%C3%A9ration/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-004",
+    "notion": "Territoires et géographie",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-fleuves-fran%C3%A7ais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-005",
+    "notion": "Territoires et géographie",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-frontieres-de-la-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-006",
+    "notion": "Territoires et géographie",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regions-fran%C3%A7aises/la-reunion/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-007",
+    "notion": "Patrimoine français",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/zoom-sur/patrimoine-francais-les-jours-feries/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-008",
+    "notion": "Patrimoine français",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-sites-emblematiques-et-gastronomie-de-normandie/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-009",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/le-1er-empire-1804-1815/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-010",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/le-gouvernement-provisoire-de-la-republique-francaise-1944-1946/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-011",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/la-cinquieme-republique/focus-sur-la-cinquieme-republique-5/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-012",
+    "notion": "Territoires et géographie",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-fleuves-fran%C3%A7ais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-013",
+    "notion": "Territoires et géographie",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-frontieres-de-la-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-014",
+    "notion": "Territoires et géographie",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-frontieres-de-la-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-015",
+    "notion": "Patrimoine français",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-sites-emblematiques-et-gastronomie-de-normandie/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-016",
+    "notion": "Patrimoine français",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-artistes-emblematiques-parmi-les-auteurs-2/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-017",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/la-fin-de-la-monarchie-absolue-et-le-debut-de-la-iere-republique-1789-1792/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-018",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/zoom-sur/focus-sur-la-seconde-guerre-mondiale-la-resistance-et-la-lib%C3%A9ration/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-019",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-conflits-mondiaux-et-le-nouvel-ordre-mondial/la-construction-europeenne/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-020",
+    "notion": "Territoires et géographie",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/le-territoire-de-la-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-021",
+    "notion": "Territoires et géographie",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-fleuves-fran%C3%A7ais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-022",
+    "notion": "Territoires et géographie",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/la-france-dans-leurope-et-dans-le-monde/les-ports-francais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-023",
+    "notion": "Patrimoine français",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-artistes-emblematiques-parmi-les-peintres/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-024",
+    "notion": "Patrimoine français",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-la-langue-francaise-dans-le-monde/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-025",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/la-premiere-republique-1792-1804/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-026",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/la-troisieme-republique-1870-1940/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-027",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-conflits-mondiaux-et-le-nouvel-ordre-mondial/la-decolonisation/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-028",
+    "notion": "Territoires et géographie",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regions-fran%C3%A7aises/ile-de-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-029",
+    "notion": "Territoires et géographie",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-fleuves-fran%C3%A7ais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-030",
+    "notion": "Territoires et géographie",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/la-france-dans-leurope-et-dans-le-monde/une-puissance-maritime/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-031",
+    "notion": "Patrimoine français",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-artistes-emblematiques-parmi-les-auteurs-3/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-032",
+    "notion": "Patrimoine français",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-sites-emblematiques-et-gastronomie-d-ile-de-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-033",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/la-deuxieme-republique-1848-1851/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-034",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/la-cinquieme-republique/focus-sur-la-cinquieme-republique-le-droit-a-l-avortement/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-035",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-conflits-mondiaux-et-le-nouvel-ordre-mondial/la-premiere-guerre-mondiale-2/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-036",
+    "notion": "Territoires et géographie",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/le-territoire-de-la-france/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-037",
+    "notion": "Territoires et géographie",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-fleuves-fran%C3%A7ais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-038",
+    "notion": "Territoires et géographie",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/la-france-terre-industrielle/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-039",
+    "notion": "Patrimoine français",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-artistes-emblematiques-parmi-les-auteurs-3/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-040",
+    "notion": "Patrimoine français",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-artistes-emblematiques-devenus-francais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-041",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/le-consulat-1799-1804/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-042",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/les-regimes-politiques-depuis-1789/la-cinquieme-republique/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-043",
+    "notion": "Principales périodes et personnages historiques",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/zoom-sur/focus-sur-la-seconde-guerre-mondiale-la-shoah/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-044",
+    "notion": "Territoires et géographie",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/la-france-aire-urbaine-et-metropolisation/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-045",
+    "notion": "Territoires et géographie",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/la-france-dans-leurope-et-dans-le-monde/une-puissance-maritime/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-046",
+    "notion": "Territoires et géographie",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/atlas-de-la-france/les-fleuves-fran%C3%A7ais/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-047",
+    "notion": "Patrimoine français",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-artistes-emblematiques-parmi-les-peintres/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-HIS-048",
+    "notion": "Patrimoine français",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-sites-emblematiques-et-gastronomie-dans-le-centre-val-de-loire/ (fiche officielle, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-001",
+    "notion": "S'installer et résider en France",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/la-declaration-de-naissance/ (fiche La déclaration de naissance, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-002",
+    "notion": "L'accès aux soins",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/annexe-les-numeros-durgence/ (fiche Annexe : les numéros d'urgence, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-003",
+    "notion": "Travailler en France",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/emploi/le-droit-au-travail-1/ (fiche Le droit du travail 1/5, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-004",
+    "notion": "Autorité parentale et système éducatif",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/parentalite/le-systeme-educatif/ (fiche Le système éducatif, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-005",
+    "notion": "S'installer et résider en France",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/les-demarches-relatives-au-sejour-en-france/ (fiche Les démarches relatives au séjour en France, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-006",
+    "notion": "L'accès aux soins",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/sante/sante-la-prise-en-charge-les-demarches-pour-etre-rembourse/ (fiche La prise en charge et le remboursement, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-007",
+    "notion": "Travailler en France",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/emploi/orientation-1/ (fiche Orientation 1/5, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-008",
+    "notion": "Autorité parentale et système éducatif",
+    "level": "A2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/parentalite/le-systeme-educatif/ (fiche Le système éducatif, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-009",
+    "notion": "S'installer et résider en France",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/les-demarches-relatives-au-logement-2/ (fiche Les démarches relatives au logement 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-010",
+    "notion": "L'accès aux soins",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/sante/acces-aux-soins-le-parcours-de-sante/ (fiche Accès aux soins : le parcours de santé, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-011",
+    "notion": "Travailler en France",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/emploi/types-emploi-1/ (fiche Types d'emploi 1/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-012",
+    "notion": "Autorité parentale et système éducatif",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/parentalite/exercice-de-l-autorite-parentale-1/ (fiche Exercice de l'autorité parentale 1/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-013",
+    "notion": "S'installer et résider en France",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/les-demarches-du-quotidien-comme-le-permis-de-conduire-2/ (fiche Le permis de conduire 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-014",
+    "notion": "L'accès aux soins",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/sante/la-prise-en-charge-les-differentes-couvertures-maladie/ (fiche Les différentes couvertures maladie, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-015",
+    "notion": "Travailler en France",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/emploi/le-droit-au-travail-2/ (fiche Le droit du travail 2/5, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-016",
+    "notion": "Autorité parentale et système éducatif",
+    "level": "B1",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/parentalite/exercice-de-l-autorite-parentale-2/ (fiche Exercice de l'autorité parentale 2/2, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-017",
+    "notion": "S'installer et résider en France",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/les-demarches-dacces-a-la-nationalite-francaise/ (fiche Les démarches d'accès à la nationalité française, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-018",
+    "notion": "L'accès aux soins",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/sante/sante-les-droits-du-patient/ (fiche Les droits et les devoirs du patient, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-019",
+    "notion": "Travailler en France",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/emploi/le-droit-au-travail-1/ (fiche Le droit du travail 1/5, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-020",
+    "notion": "Autorité parentale et système éducatif",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/parentalite/retrait-de-l-autorite-parentale/ (fiche Retrait de l'autorité parentale, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-021",
+    "notion": "S'installer et résider en France",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/demarches-administratives/les-demarches-du-quotidien-comme-la-domiciliation/ (fiche La domiciliation, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-022",
+    "notion": "L'accès aux soins",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/sante/la-prise-en-charge-les-differentes-couvertures-maladie/ (fiche Les différentes couvertures maladie, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-023",
+    "notion": "Travailler en France",
+    "level": "B2",
+    "sources": [
+      "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/vivre-dans-la-societe-fran%C3%A7aise/emploi/types-emploi-2/ (fiche Types d'emploi 2/3, read 2026-11-18)"
+    ]
+  },
+  {
+    "questionId": "FRCIV-VIV-024",
+    "notion": "Autorité parentale et système éducatif",
+    "level": "B2",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F1898 (Instruction obligatoire, vérifié le 6 novembre 2025, read 2026-11-18)"
+    ]
+  }
+]

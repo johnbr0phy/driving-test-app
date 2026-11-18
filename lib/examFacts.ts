@@ -44,6 +44,24 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  frcivique: {
+  "answer": "France's examen civique has been required since 1 January 2026 for a first multi-year residence card (carte de séjour pluriannuelle), a first resident card (carte de résident) and naturalisation by decree. It is a 40-question multiple-choice test in French, 45 minutes at most, taken on a computer or tablet at a centre approved by the Ministry of the Interior: 28 knowledge questions and 12 situations across five themes. The pass mark is 80% (32 of 40) for all three pathways; the questions get harder from the residence card to naturalisation.",
+  "rows": [
+    { "label": "Questions", "value": "40 multiple choice: 28 knowledge, 12 situations" },
+    { "label": "Time", "value": "45 minutes at most, on a computer or tablet" },
+    { "label": "Pass mark", "value": "80% (32 of 40), the same for all three pathways" },
+    { "label": "Scoring", "value": "1 point per right answer; wrong or blank answers score 0" },
+    { "label": "Who takes it", "value": "First multi-year residence card, first resident card, naturalisation" },
+    { "label": "Themes", "value": "Republican principles 11, institutions 6, rights and duties 11, history and geography 8, daily life 4" },
+    { "label": "Validity", "value": "A pass does not expire" }
+  ],
+  "basedOn": "Arrêté du 10 octobre 2025, CESEDA R413-12-1, D413-12-2 and R413-15, and the Ministry of the Interior's formation civique pages, checked November 18, 2026",
+  "source": {
+    "name": "Légifrance: arrêté du 10 octobre 2025 on the examen civique",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052381620"
+  },
+  "tigertest": "240 original French-language questions in six 40-question tests that follow the official split of themes and situations, 45 minutes and 80% to pass. Tests 1 and 2 are written at the multi-year residence card level, 3 and 4 at the resident card level, 5 and 6 at the naturalisation level. Free to start. No question from the official list is reused. Model language review only."
+  },
   frvtc: {
   "answer": "France's VTC chauffeur theory examination has seven weighted subjects, with 91 multiple-choice questions and 16 short written answers over 230 minutes. Eligibility for the separate practical assessment requires a weighted average of at least 10/20 and at least 6/20 in every subject except English, which requires 4/20. The practical assessment includes at least 20 minutes of driving and requires 12/20.",
   "rows": [

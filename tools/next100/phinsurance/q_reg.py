@@ -1,10 +1,10 @@
 CAT = "phinsRegulation"; SEG = "REG"
 Q = [
 ("Which government body regulates insurance companies and agents in the Philippines?",
- "The Insurance Commission", ["The Bangko Sentral", "The SEC alone", "The Department of Health"],
+ "Insurance Commission", ["Bangko Sentral", "SEC alone", "Department of Health"],
  "The Insurance Commission, attached to the Department of Finance, administers the Insurance Code and licenses insurers, agents and brokers."),
 ("The Insurance Commissioner is appointed by:",
- "The President", ["The Senate", "The insurers", "The Supreme Court"],
+ "President", ["Senate", "Insurers", "Supreme Court"],
  "Section 437 provides that the Commissioner is appointed by the President for a term of six years without reappointment."),
 ("Before an insurer may use a new life policy form in the Philippines, the form must be:",
  "Approved by the Commissioner", ["Signed by every agent", "Printed in two colors", "Filed with a court of law"],
@@ -25,7 +25,7 @@ Q = [
  "No, it cannot", ["Yes, with 10 days' notice", "Yes, after one year", "Yes, if premiums are high"],
  "The cancellation rules of Section 64 apply to insurance other than life; a life policy in force cannot be cancelled by the insurer because the insured's health changed."),
 ("A life insurer wants to reinsure its whole risk on one individual life. It first needs:",
- "The Commissioner's permission", ["The insured's spouse's consent", "A court order", "The agent's approval"],
+ "Commissioner's permission", ["Insured's spouse's consent", "Court order", "Agent's approval"],
  "Section 228 bars a life insurer from reinsuring its whole risk on an individual life without first obtaining the Commissioner's written permission."),
 ("Selling an insurer's products to bank customers in the bank's premises is called:",
  "Bancassurance", ["Brokerage", "Reinsurance", "Microinsurance"],
@@ -43,9 +43,9 @@ Q = [
  "Financial regulator", ["Trial court", "Collection agent", "Tax collector"],
  "The Financial Products and Services Consumer Protection Act names the Insurance Commission among the financial regulators (Section 3(d)), that enforce consumer protection for the products they supervise."),
 ("Under the Financial Products and Services Consumer Protection Act (R.A. 11765), a policy buyer has the right to:",
- "Fair and honest treatment", ["Guaranteed dividends", "A free policy loan", "Set his own premium rate"],
+ "Fair and honest treatment", ["Guaranteed dividends", "Free policy loan", "Set his own premium rate"],
  "R.A. 11765 (2022) protects financial consumers, including insurance buyers, with rights (Section 2) to equitable and fair treatment, disclosure and transparency, protection of their assets, data privacy and timely redress of complaints."),
 ("A policy owner's complaint against an insurer that is not resolved by the company may be brought to:",
- "The Insurance Commission", ["The Bureau of Internal Revenue", "The Land Transportation Office", "The Commission on Elections"],
+ "Insurance Commission", ["Bureau of Internal Revenue", "Land Transportation Office", "Commission on Elections"],
  "Under Section 439 the Commissioner may adjudicate claims and complaints filed by the insured against an insurer, within the limit the Code sets, concurrently with the courts."),
 ]

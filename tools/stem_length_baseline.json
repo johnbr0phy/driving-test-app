@@ -64,30 +64,5 @@
   "data/v2/secplus": 24.5,
   "data/v2/securityx": 25.0
  },
- "articles": {
-  "data/ase-questions.json": 0.486,
-  "data/bcaba-questions.json": 0.254,
-  "data/canadian-citizenship-questions.json": 0.256,
-  "data/cehrs-questions.json": 0.38,
-  "data/cisa-questions.json": 0.292,
-  "data/cmaa-questions.json": 0.26,
-  "data/hk-le-paper-1-questions.json": 0.287,
-  "data/medication-aide-questions.json": 0.271,
-  "data/nsw-firearms-questions.json": 0.271,
-  "data/nz-drone-questions.json": 0.275,
-  "data/nz-real-estate-questions.json": 0.344,
-  "data/philippines-insurance-questions.json": 0.334,
-  "data/red-seal-automotive-questions.json": 0.354,
-  "data/romania-taxi-attestation-questions.json": 0.282,
-  "data/safe-pass-questions.json": 0.273,
-  "data/salesforce-admin-questions.json": 0.399,
-  "data/series-63-questions.json": 0.254,
-  "data/singapore-res-questions.json": 0.258,
-  "data/uk-personal-licence-questions.json": 0.259,
-  "data/uk-registered-building-inspector-questions.json": 0.366,
-  "data/v2/az900": 0.264,
-  "data/v2/capm": 0.427,
-  "data/v2/netplus": 0.287,
-  "data/v2/prince2": 0.328
- }
+ "articles": {}
 }

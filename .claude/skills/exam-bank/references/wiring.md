@@ -8,6 +8,10 @@ Placeholders: `<id>` exam id (e.g. `forklift`), `<CODE>` stateCode, `<slug>` rou
 
 Sectioned, timed exams (SAT-style modules, NGN item formats, adaptive) are v2 exams: follow
 "To add a v2 exam" in CLAUDE.md instead, copying the newest v2 exam (`lib/v2/exams/ged.ts`).
+With two or more practice tests, hold out only the last one (`heldOut: true` on Test 2, never on
+Test 1): drills train on Test 1 plus the drill-only items. Three exams in Nov 2026 held out every
+test, so their drills had 12 to 20 questions against tests of 60 to 100
+(`tests/v2-held-out.test.cjs` now fails that).
 
 ## 0. Inherit the site, never fork it
 A new exam looks and behaves like every other exam because its pages are thin wrappers around

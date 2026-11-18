@@ -96,6 +96,13 @@ in the explanation, not the option. Numeric distractors are the values a plausib
 produces: the adjacent step on the scale, the number from the other standard, the result of the
 wrong operation (for "10 gallons per acre over 4 acres": 40, 14, 2.5 and 10).
 
+**Short stems.** Say what the question needs and stop: the fact or the situation, then the ask.
+Aim for a bank median of 12 to 18 words per stem (the site's median is 14; reading passages, code
+and data tables are extra and do not count). Do not wrap a plain fact in a made-up scenario, and
+do not stack qualifiers to rule out a second answer: fix the options instead. Compare with the
+nearest existing banks before you finish (`python3 -I tools/check_stem_length.py <bank>`); the
+Nov 2026 batch ran 20 to 26 words, 40% over its peers, and read as wordy.
+
 **The key must not stand out.** Aim for the correct option within 20% of the average length of
 the three wrong ones. Across the bank the key may be the single longest option in at most a
 quarter of items, and may exceed the wrong-option average by 20% in at most 30% of items (the

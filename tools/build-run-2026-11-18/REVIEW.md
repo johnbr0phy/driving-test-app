@@ -11,8 +11,10 @@ file. Do not run git, npm, tsc, builds or Playwright. Never edit the bank or its
    source and decide: wrong-key, factual, outdated, ambiguous (a second option a prepared candidate
    could defend), weak (a strawman distractor or a cue), or ok.
 3. **Options-only pass**, per `.claude/skills/exam-bank/SKILL.md` section 3:
-   `python3 -I tools/options_only.py make ...` (read its `--help`), pick from the blind file only
-   (never read the private key), tag K/S/G, then `score`. List every S hit.
+   `python3 -I tools/options_only.py make ...` (read its `--help`). You have read the stems, so you
+   must NOT make the picks yourself: spawn a fresh subagent that is given only the blind file path
+   and the K/S/G instructions (never the bank, the stems or the private key), then `score` its
+   picks. List every S hit.
 4. Check the landing (`app/<landing>/page.tsx`) and the examFacts block in the bank's WIRING.md
    against the owner's pages: format, pass mark, dates, prices or claims.
 

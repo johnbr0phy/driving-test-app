@@ -10,8 +10,8 @@
     "skill": "Consumption-based model",
     "stem": "A startup wants to pay only for the compute it actually uses each month, with no upfront hardware purchase. Which cloud characteristic does this describe?",
     "options": [
-      "A fixed-capacity private cloud",
-      "The consumption-based model",
+      "Fixed-capacity private cloud",
+      "Consumption-based model",
       "Prepaid hardware leasing terms",
       "Capital expenditure on servers"
     ],
@@ -55,7 +55,7 @@
       "Azure Storage Explorer",
       "Azure Arc",
       "Azure Cloud Shell",
-      "An ARM template"
+      "ARM template"
     ],
     "correct": [
       2
@@ -115,9 +115,9 @@
     "skill": "Availability zones",
     "stem": "What is an Azure availability zone?",
     "options": [
-      "A logical container that groups resources for one solution",
+      "Logical container that groups resources for one solution",
       "Physically separate datacenters within one region",
-      "A separate instance of Azure built for government compliance",
+      "Separate instance of Azure built for government compliance",
       "Two regions in the same geography paired for disaster recovery"
     ],
     "correct": [
@@ -178,8 +178,8 @@
     "skill": "CapEx and OpEx",
     "stem": "A company receives a monthly Azure bill for virtual machines that changes with how much it uses them. Which type of expense is this?",
     "options": [
-      "A depreciating capital asset purchase",
-      "An upfront hardware licensing cost",
+      "Depreciating capital asset purchase",
+      "Upfront hardware licensing cost",
       "Capital expenditure (CapEx)",
       "Operational expenditure (OpEx)"
     ],
@@ -199,10 +199,10 @@
     "skill": "Budgets",
     "stem": "A team wants an email when its subscription's spending reaches 80 percent of a monthly limit. What should it set up?",
     "options": [
-      "A ReadOnly lock on the subscription",
-      "A budget with an alert in Cost Management",
-      "A Service Health alert for the company's region",
-      "An Azure Policy rule with the Deny effect"
+      "ReadOnly lock on the subscription",
+      "Budget with an alert in Cost Management",
+      "Service Health alert for the company's region",
+      "Azure Policy rule with the Deny effect"
     ],
     "correct": [
       1
@@ -290,7 +290,7 @@
     "skill": "Tags",
     "stem": "A finance team wants to report Azure costs by department across many resource groups and subscriptions. What should be applied to resources?",
     "options": [
-      "A separate region for each department",
+      "Separate region for each department",
       "Resource locks on every resource",
       "Tags such as Department: Finance",
       "Availability sets for each department"
@@ -360,10 +360,10 @@
     "skill": "ARM templates",
     "stem": "A team wants to deploy the same set of resources again and again, consistently, from a declarative JSON file. What should it use?",
     "options": [
-      "A series of manual steps in the Azure portal",
-      "An Azure Resource Manager (ARM) template",
-      "A Microsoft Purview data map",
-      "An Azure Advisor recommendation"
+      "Series of manual steps in the Azure portal",
+      "Azure Resource Manager (ARM) template",
+      "Microsoft Purview data map",
+      "Azure Advisor recommendation"
     ],
     "correct": [
       1
@@ -403,7 +403,7 @@
     "stem": "A company wants to require multifactor authentication only when users sign in from outside the corporate network. What should it use?",
     "options": [
       "Microsoft Entra Conditional Access",
-      "An Azure resource lock",
+      "Azure resource lock",
       "Microsoft Entra Domain Services",
       "Azure role-based access control (RBAC)"
     ],
@@ -606,7 +606,7 @@
     "skill": "Azure Service Health",
     "stem": "An administrator wants to know whether an Azure incident is affecting the services and regions the company actually uses. Which tool should they check?",
     "options": [
-      "The public Azure status page",
+      "Public Azure status page",
       "Microsoft Cost Management",
       "Azure Service Health",
       "Azure Advisor"
@@ -629,8 +629,8 @@
     "options": [
       "Azure ExpressRoute",
       "Virtual network peering",
-      "A site-to-site VPN through Azure VPN Gateway",
-      "An Azure DNS private zone"
+      "Site-to-site VPN through Azure VPN Gateway",
+      "Azure DNS private zone"
     ],
     "correct": [
       0
@@ -648,9 +648,9 @@
     "skill": "Serverless",
     "stem": "A developer wants code to run only when a file arrives in storage, without managing any servers, and to pay only while the code runs. Which approach fits?",
     "options": [
-      "A virtual machine kept running around the clock",
-      "A reserved virtual machine instance",
-      "A dedicated host in a private cloud",
+      "Virtual machine kept running around the clock",
+      "Reserved virtual machine instance",
+      "Dedicated host in a private cloud",
       "Serverless compute, such as Azure Functions"
     ],
     "correct": [
@@ -669,10 +669,10 @@
     "skill": "Resource locks",
     "stem": "An administrator wants to stop anyone, including subscription Owners, from deleting a production database by mistake, while still allowing changes to it. What should be applied?",
     "options": [
-      "The Reader role for all users",
-      "A ReadOnly lock",
-      "A Cost Management budget",
-      "A Delete (CanNotDelete) lock"
+      "Reader role for all users",
+      "ReadOnly lock",
+      "Cost Management budget",
+      "Delete (CanNotDelete) lock"
     ],
     "correct": [
       3
@@ -768,10 +768,10 @@
     "skill": "PaaS responsibilities",
     "stem": "In PaaS, which of these does the customer manage?",
     "options": [
-      "The middleware and runtime updates",
-      "The operating system and its patches",
-      "The applications and data they deploy",
-      "The physical servers, storage and network"
+      "Middleware and runtime updates",
+      "Operating system and its patches",
+      "Applications and data they deploy",
+      "Physical servers, storage and network"
     ],
     "correct": [
       2
@@ -789,10 +789,10 @@
     "skill": "Sovereign regions",
     "stem": "A US federal agency needs Azure services in a physically isolated instance of Azure that is built for government requirements. What should it use?",
     "options": [
-      "A region pair",
+      "Region pair",
       "Azure Government",
-      "A management group",
-      "An availability zone"
+      "Management group",
+      "Availability zone"
     ],
     "correct": [
       1
@@ -978,10 +978,10 @@
     "skill": "Azure RBAC",
     "stem": "A developer must be able to view the resources in one resource group but not change them. Which assignment follows the principle of least privilege?",
     "options": [
-      "The Reader role on the management group",
-      "The Contributor role on the subscription",
-      "The Owner role on that resource group",
-      "The Reader role on that resource group"
+      "Reader role on the management group",
+      "Contributor role on the subscription",
+      "Owner role on that resource group",
+      "Reader role on that resource group"
     ],
     "correct": [
       3
@@ -1045,11 +1045,11 @@
     "select": 2,
     "stem": "An administrator creates an Azure virtual machine. Which two resources does the VM need? (Choose two.)",
     "options": [
-      "A management group",
-      "A managed disk for the operating system",
-      "A Log Analytics workspace for monitoring data",
-      "A virtual network",
-      "An Azure Functions app"
+      "Management group",
+      "Managed disk for the operating system",
+      "Log Analytics workspace for monitoring data",
+      "Virtual network",
+      "Azure Functions app"
     ],
     "correct": [
       1,
@@ -1167,7 +1167,7 @@
       "Microsoft Cost Management",
       "Azure Service Health",
       "Microsoft Purview",
-      "The Azure pricing calculator"
+      "Azure pricing calculator"
     ],
     "correct": [
       0
@@ -1187,7 +1187,7 @@
     "options": [
       "Azure Storage Explorer",
       "Azure CLI",
-      "An ARM template",
+      "ARM template",
       "Azure PowerShell"
     ],
     "correct": [
@@ -1207,8 +1207,8 @@
     "stem": "Two Azure virtual networks need to communicate privately with each other. What should you configure?",
     "options": [
       "Virtual network peering",
-      "A public endpoint on each network",
-      "An Azure DNS zone",
+      "Public endpoint on each network",
+      "Azure DNS zone",
       "Azure ExpressRoute"
     ],
     "correct": [
@@ -1248,10 +1248,10 @@
     "skill": "Management groups",
     "stem": "A company has 20 subscriptions and wants one set of Azure Policy and access assignments to apply to all of them. What should it use?",
     "options": [
-      "An availability set that contains the subscriptions",
-      "A region pair that contains the subscriptions",
-      "A resource group that contains the subscriptions",
-      "A management group that contains the subscriptions"
+      "Availability set that contains the subscriptions",
+      "Region pair that contains the subscriptions",
+      "Resource group that contains the subscriptions",
+      "Management group that contains the subscriptions"
     ],
     "correct": [
       3
@@ -1311,7 +1311,7 @@
     "skill": "Pricing models",
     "stem": "A company has a steady workload that will run all day, every day, for the next three years and must not be interrupted. Which pricing option usually costs the least?",
     "options": [
-      "A three-year reservation",
+      "Three-year reservation",
       "Azure Spot Virtual Machines",
       "Pay-as-you-go pricing",
       "A one-month free account"
@@ -1332,10 +1332,10 @@
     "skill": "Policy initiatives",
     "stem": "What is an Azure Policy initiative?",
     "options": [
-      "A spending limit applied to a management group",
+      "Spending limit applied to a management group",
       "A lock that blocks changes to a group of resources",
-      "A group of related policy definitions assigned together",
-      "A report of Advisor recommendations to improve reliability"
+      "Group of related policy definitions assigned together",
+      "Report of Advisor recommendations to improve reliability"
     ],
     "correct": [
       2
@@ -1353,7 +1353,7 @@
     "skill": "Log Analytics",
     "stem": "Which Azure Monitor tool lets you write and run queries against the log data it collects?",
     "options": [
-      "The pricing calculator",
+      "Pricing calculator",
       "Azure Advisor",
       "Log Analytics",
       "Azure Service Health"
@@ -1395,9 +1395,9 @@
     "skill": "Spot pricing",
     "stem": "Which workload is the best fit for Azure Spot Virtual Machines?",
     "options": [
-      "A checkout service with a strict uptime target",
+      "Checkout service with a strict uptime target",
       "A batch job that can stop and resume later",
-      "A domain controller for the company network",
+      "Domain controller for the company network",
       "A production database that must stay online"
     ],
     "correct": [
@@ -1479,10 +1479,10 @@
     "skill": "Azure Monitor alerts",
     "stem": "An operations team wants a text message when a VM's CPU stays above 90 percent for 10 minutes. What should it configure?",
     "options": [
-      "A Service Health advisory",
-      "A Cost Management budget",
-      "An Azure Monitor alert",
-      "An Azure Advisor recommendation"
+      "Service Health advisory",
+      "Cost Management budget",
+      "Azure Monitor alert",
+      "Azure Advisor recommendation"
     ],
     "correct": [
       2
@@ -1521,7 +1521,7 @@
     "skill": "Defense in depth",
     "stem": "What is the purpose of the defense-in-depth model?",
     "options": [
-      "A single sign-in that grants access to every application",
+      "Single sign-in that grants access to every application",
       "One strong perimeter firewall that protects every resource behind it",
       "A rule that all data must be stored in one secure region",
       "Layers of protection so no single failed control exposes data"
@@ -1571,11 +1571,11 @@
     "select": 2,
     "stem": "Which two factors affect the cost of Azure resources? (Choose two.)",
     "options": [
-      "The number of management groups above it",
-      "The amount of outbound network traffic",
-      "The number of tags on the resource",
+      "Number of management groups above it",
+      "Amount of outbound network traffic",
+      "Number of tags on the resource",
       "The region the resource is deployed in",
-      "The name of the resource group"
+      "Name of the resource group"
     ],
     "correct": [
       1,
@@ -1616,7 +1616,7 @@
     "stem": "Which part of Azure Service Health shows the health of an individual resource, such as one specific VM?",
     "options": [
       "Cost analysis",
-      "The Azure status page",
+      "Azure status page",
       "Azure Advisor",
       "Resource Health"
     ],
@@ -1637,9 +1637,9 @@
     "stem": "A company deploys a web app to Azure App Service, a PaaS offering. Who is responsible for patching the underlying operating system?",
     "options": [
       "Microsoft",
-      "The customer",
-      "The app's end users",
-      "The customer and Microsoft equally"
+      "Customer",
+      "App's end users",
+      "Customer and Microsoft equally"
     ],
     "correct": [
       0
@@ -1685,10 +1685,10 @@
     "skill": "Resources",
     "stem": "What is an Azure resource?",
     "options": [
-      "A manageable item such as a VM, storage account or virtual network",
+      "Manageable item such as a VM, storage account or virtual network",
       "A container that holds the related items for one Azure solution",
-      "A billing agreement between a company and Microsoft for all its usage",
-      "A physical building that houses the servers that run Azure"
+      "Billing agreement between a company and Microsoft for all its usage",
+      "Physical building that houses the servers that run Azure"
     ],
     "correct": [
       0
@@ -1727,10 +1727,10 @@
     "skill": "Azure portal",
     "stem": "Which statement describes the Azure portal?",
     "options": [
-      "A web console for building, managing and monitoring resources",
-      "A physical device for shipping data to Azure",
-      "A command-line tool installed on each administrator's local computer",
-      "A JSON file that declares the resources to deploy"
+      "Web console for building, managing and monitoring resources",
+      "Physical device for shipping data to Azure",
+      "Command-line tool installed on each administrator's local computer",
+      "JSON file that declares the resources to deploy"
     ],
     "correct": [
       0
@@ -2111,7 +2111,7 @@
     "options": [
       "Platform as a service (PaaS)",
       "Software as a service (SaaS)",
-      "A private cloud",
+      "Private cloud",
       "Infrastructure as a service (IaaS)"
     ],
     "correct": [
@@ -2229,8 +2229,8 @@
     "options": [
       "Azure Spot Virtual Machines",
       "Azure Hybrid Benefit",
-      "An Azure free account",
-      "An Azure savings plan for compute"
+      "Azure free account",
+      "Azure savings plan for compute"
     ],
     "correct": [
       1
@@ -2311,10 +2311,10 @@
     "skill": "Passwordless authentication",
     "stem": "Which is a passwordless sign-in method?",
     "options": [
-      "A shared password kept in a vault",
-      "A password plus security questions",
-      "A long password changed every 30 days",
-      "A FIDO2 security key"
+      "Shared password kept in a vault",
+      "Password plus security questions",
+      "Long password changed every 30 days",
+      "FIDO2 security key"
     ],
     "correct": [
       3
@@ -2332,10 +2332,10 @@
     "skill": "Bicep",
     "stem": "What is Bicep?",
     "options": [
-      "A command-line tool for copying large amounts of data to Azure",
-      "A service that manages servers in other clouds",
-      "A declarative language for deploying Azure resources",
-      "A dashboard of Azure outages in your regions"
+      "Command-line tool for copying large amounts of data to Azure",
+      "Service that manages servers in other clouds",
+      "Declarative language for deploying Azure resources",
+      "Dashboard of Azure outages in your regions"
     ],
     "correct": [
       2
@@ -2437,10 +2437,10 @@
     "skill": "Fault domains",
     "stem": "In an availability set, what does a fault domain represent?",
     "options": [
-      "A group of VMs that share power and network hardware",
-      "A group of VMs restarted together for planned maintenance",
-      "A set of VMs all created from one image",
-      "A separate Azure region used for failover"
+      "Group of VMs that share power and network hardware",
+      "Group of VMs restarted together for planned maintenance",
+      "Set of VMs all created from one image",
+      "Separate Azure region used for failover"
     ],
     "correct": [
       0
@@ -2479,9 +2479,9 @@
     "skill": "Multifactor authentication",
     "stem": "Which sign-in combination is multifactor authentication?",
     "options": [
-      "A username and a password",
-      "A password and an answer to a security question",
-      "A password and an Authenticator app code",
+      "Username and a password",
+      "Password and an answer to a security question",
+      "Password and an Authenticator app code",
       "Two different passwords"
     ],
     "correct": [
@@ -2633,10 +2633,10 @@
     "skill": "Microsoft Purview",
     "stem": "Which statement describes Microsoft Purview?",
     "options": [
-      "A dashboard of Azure outages that affect you",
-      "A tool that estimates the monthly cost of planned Azure services",
-      "A service that enforces rules on Azure resource settings",
-      "A family of data governance, risk and compliance solutions"
+      "Dashboard of Azure outages that affect you",
+      "Tool that estimates the monthly cost of planned Azure services",
+      "Service that enforces rules on Azure resource settings",
+      "Family of data governance, risk and compliance solutions"
     ],
     "correct": [
       3
@@ -2696,7 +2696,7 @@
     "skill": "Azure status",
     "stem": "Which tool shows the health of every Azure service in every region, for anyone, without signing in?",
     "options": [
-      "The Azure status page",
+      "Azure status page",
       "Resource Health in Service Health",
       "Log Analytics",
       "Azure Advisor"
@@ -2718,7 +2718,7 @@
     "stem": "Under the shared responsibility model, which is always the customer's responsibility, whatever the cloud service type?",
     "options": [
       "Accounts and identities",
-      "The physical network",
+      "Physical network",
       "Operating system patching",
       "Physical hosts"
     ],
@@ -2795,10 +2795,10 @@
     "skill": "Public endpoints",
     "stem": "A storage account can be reached from the internet at its public URL. What kind of endpoint is this?",
     "options": [
-      "A public endpoint",
-      "A private endpoint",
-      "A peering endpoint",
-      "A gateway subnet"
+      "Public endpoint",
+      "Private endpoint",
+      "Peering endpoint",
+      "Gateway subnet"
     ],
     "correct": [
       0
@@ -2923,7 +2923,7 @@
     "stem": "Which statement describes reliability in the cloud?",
     "options": [
       "Adding more resources when demand for an app increases",
-      "A system's ability to recover from failures and keep working",
+      "System's ability to recover from failures and keep working",
       "Managing every resource from a single command line",
       "Knowing in advance exactly what a workload will cost each month"
     ],
@@ -3011,8 +3011,8 @@
     "options": [
       "Any region pair located inside Europe",
       "Azure operated by 21Vianet in China",
-      "The availability zones in East US",
-      "A region that supports Azure Arc"
+      "Availability zones in East US",
+      "Region that supports Azure Arc"
     ],
     "correct": [
       1
@@ -3053,8 +3053,8 @@
     "stem": "A company wants to lower the cost of virtual machines that run all the time. Which two options reduce the price compared with pay-as-you-go? (Choose two.)",
     "options": [
       "Azure Reservations",
-      "An Azure savings plan for compute",
-      "A larger virtual machine size with more memory",
+      "Azure savings plan for compute",
+      "Larger virtual machine size with more memory",
       "Azure Monitor metric alerts",
       "Premium SSD managed disks"
     ],

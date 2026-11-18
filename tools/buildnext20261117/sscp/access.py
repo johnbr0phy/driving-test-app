@@ -4,16 +4,16 @@ def Q(stem,key,wrong,why):
  assert len(wrong)==3
  ITEMS.append((stem,[key]+list(wrong),why))
 Q('A verifier checks a memorized passphrase. Which category describes this evidence?',
- 'A knowledge factor',['A possession factor','An inherence factor','A location factor'],
+ 'Knowledge factor',['Possession factor','Inherence factor','Location factor'],
  'A memorized secret is a knowledge factor.')
 Q('A user completes the challenge of a registered hardware authenticator. Which factor category is the device?',
  'Something you have',['Something you know','Something you are','Somewhere you are'],
  'Control of the authenticator is a possession factor; the device being familiar to the user does not make it a knowledge factor.')
 Q('An authenticator compares a fingerprint with its enrolled template. Which category describes the biometric characteristic?',
- 'An inherence factor',['A knowledge factor','A possession factor','A behavioral risk signal'],
+ 'Inherence factor',['Knowledge factor','Possession factor','Behavioral risk signal'],
  'A biometric characteristic is an inherence factor. Its use within an authenticator does not turn it into a memorized secret.')
 Q('An access service notes an unusual login location alongside authentication. What is the location?',
- 'A risk signal rather than a factor',['A possession factor the user holds','A knowledge factor the user supplies','An inherence factor of the user'],
+ 'Risk signal rather than a factor',['A possession factor the user holds','Knowledge factor the user supplies','Inherence factor of the user'],
  'Location can influence risk assessment, but is not by itself proof of knowledge, possession or a biometric characteristic.')
 Q('Before issuing an account, an organization validates evidence linking an applicant to a claimed identity. Which process is this?',
  'Identity proofing',['Authentication','Identity federation','Provisioning'],
@@ -61,7 +61,7 @@ Q('A client needs an identity layer over OAuth that returns an ID token. Which m
  'OpenID Connect',['OAuth 2.0 on its own','SAML 2.0','RADIUS'],
  'OpenID Connect adds an authentication and identity layer, including ID tokens, to OAuth. OAuth alone issues access tokens, not ID tokens.')
 Q('A file server grants access because the account is in an approved group on the domain controller. Which mechanism is this?',
- 'Directory group membership',['A SAML group attribute asserted by a partner','An OAuth scope granted to a client app','An OpenID Connect group claim from a social login'],
+ 'Directory group membership',['SAML group attribute asserted by a partner','OAuth scope granted to a client app','OpenID Connect group claim from a social login'],
  'Membership in a directory group maps the account to the local entitlement. No federation or token exchange with an outside party is involved.')
 Q('A validly signed token was issued for a different application. Which check stops this service accepting it?',
  'Audience (aud) validation',['Expiry (exp) validation','Issuer (iss) validation','Signature validation'],
@@ -73,7 +73,7 @@ Q('A token names an identity provider this service never agreed to trust. Which 
  'Issuer (iss) validation',['Audience (aud) validation','Signature algorithm validation','Scope validation'],
  'The service must trust and validate the issuer, not merely accept a structurally valid token.')
 Q('A valid token for this service permits reading, but the caller requests deletion. Which check should deny it?',
- 'A permission check for that operation',['Signature validation of the presented token','Audience validation of the token','Expiry validation of the token'],
+ 'Permission check for that operation',['Signature validation of the presented token','Audience validation of the token','Expiry validation of the token'],
  'Authorization must compare the requested operation with the granted permissions; the token being valid, current and meant for this service is not enough.')
 Q('Administrators need elevated rights only in maintenance windows but keep them all month. Which improvement fits?',
  'Just-in-time privileged access',['Quarterly recertification of the admin rights','Separate admin accounts kept active all month','Longer passwords on the admin accounts'],
@@ -91,19 +91,19 @@ Q('Authentication must be bound to the real verifier so a lookalike site cannot 
  'FIDO2 / WebAuthn passkeys',['SMS one-time passcodes','Authenticator-app one-time codes','Push notifications to approve sign-in'],
  'Origin-bound public-key authenticators resist phishing. A typed one-time code or an approved push can be relayed by a lookalike site in real time.')
 Q('A captured authentication response must not work in a later login. Which design meets this?',
- 'A fresh random challenge for each login',['A longer static password','A longer session timeout','Encrypting the response under a static key'],
+ 'Fresh random challenge for each login',['Longer static password','Longer session timeout','Encrypting the response under a static key'],
  'Replay resistance comes from fresh challenges or nonces, so a previously accepted response is not valid again.')
 Q('At enrollment, the system rejects common and known compromised passwords. Which safeguard is this?',
  'Blocklist screening of new passwords',['Mandatory periodic password expiry','Composition rules requiring symbols','Stored password hints for recovery'],
  'Blocklist screening rejects unsuitable password choices at establishment or change. Expiry and composition rules do not reject known compromised values.')
 Q('A caller who lost all authenticators requests a replacement credential. Which process must confirm their claim?',
- 'Identity-verified account recovery',['A reset based on the caller ID shown','A reset after answering security questions only','Emailing a temporary password to the caller'],
+ 'Identity-verified account recovery',['Reset based on the caller ID shown','Reset after answering security questions only','Emailing a temporary password to the caller'],
  'Recovery verification protects the account when normal authenticators are unavailable; convenience must not bypass identity assurance.')
 Q('A disabled account\'s existing session still works because the application never invalidated it. Which action fixes this?',
  'Terminate the session on the server side',['Wait for the existing session to time out','Reset the disabled account\'s password','Lock the account a second time'],
  'Invalidate active sessions as supported by the application; disabling the account or resetting its password may not end a session that is already open.')
 Q('A user no longer wants a third-party app to reach their documents through an approved delegation. What should be withdrawn?',
- 'The app\'s OAuth grant and its tokens',['The user\'s own account password','The user\'s directory group memberships','The document sharing links the user created'],
+ 'App\'s OAuth grant and its tokens',['User\'s own account password','User\'s directory group memberships','Document sharing links the user created'],
  'Revoke the delegated authorization grant and its token access. Changing the user\'s password may not revoke tokens already issued to the app.')
 Q('A transferred employee keeps access only through an old departmental group. Which change removes that access?',
  'Take the user out of the old departmental group',['Rename the old departmental group','Add a deny rule to the new group','Recertify the old group at next year\'s review'],
@@ -121,6 +121,6 @@ Q('A trust allows recognition through an intermediate trusted domain, without di
  'Transitive trust',['Non-transitive trust','One-way trust','Explicit pairwise trust'],
  'Transitivity allows trust to extend through defined relationships. It must not be assumed for every trust arrangement.')
 Q('A system trusts a partner identity but still checks each requested operation against policy. Which decision stays separate?',
- 'Resource-level authorization',['The identity federation agreement','User authentication at sign-in','The cross-domain trust setup'],
+ 'Resource-level authorization',['Identity federation agreement','User authentication at sign-in','Cross-domain trust setup'],
  'Recognition of an identity does not automatically authorize every resource operation. Resource authorization remains necessary.')
 assert len(ITEMS)==40

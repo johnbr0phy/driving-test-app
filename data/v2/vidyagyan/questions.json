@@ -10,10 +10,10 @@
     "format": "single",
     "stem": "\"The basket is beside the door.\" What kind of word is \"basket\"?",
     "options": [
-      "A noun",
-      "A verb",
-      "An adjective",
-      "A pronoun"
+      "Noun",
+      "Verb",
+      "Adjective",
+      "Pronoun"
     ],
     "correct": [
       0
@@ -31,10 +31,10 @@
     "format": "single",
     "stem": "In \"Birds build nests\", what kind of word is \"build\"?",
     "options": [
-      "A noun",
-      "A verb",
-      "An adverb",
-      "A preposition"
+      "Noun",
+      "Verb",
+      "Adverb",
+      "Preposition"
     ],
     "correct": [
       1
@@ -52,10 +52,10 @@
     "format": "single",
     "stem": "In \"We crossed a narrow bridge\", what kind of word is \"narrow\"?",
     "options": [
-      "An adverb",
-      "A verb",
-      "An adjective",
-      "A conjunction"
+      "Adverb",
+      "Verb",
+      "Adjective",
+      "Conjunction"
     ],
     "correct": [
       2
@@ -73,10 +73,10 @@
     "format": "single",
     "stem": "In \"Meera closed the gate quietly\", what kind of word is \"quietly\"?",
     "options": [
-      "An adjective",
-      "A noun",
-      "A pronoun",
-      "An adverb"
+      "Adjective",
+      "Noun",
+      "Pronoun",
+      "Adverb"
     ],
     "correct": [
       3
@@ -598,10 +598,10 @@
     "format": "single",
     "stem": "Which mark ends the question \"Where is the nearest well\"?",
     "options": [
-      "A question mark",
-      "A full stop",
-      "A comma",
-      "An exclamation mark"
+      "Question mark",
+      "Full stop",
+      "Comma",
+      "Exclamation mark"
     ],
     "correct": [
       0
@@ -619,10 +619,10 @@
     "format": "single",
     "stem": "Which mark goes between \"rice\" and \"beans\" in \"rice, beans and peas\"?",
     "options": [
-      "A full stop",
-      "A comma",
-      "An apostrophe",
-      "A colon"
+      "Full stop",
+      "Comma",
+      "Apostrophe",
+      "Colon"
     ],
     "correct": [
       1
@@ -640,10 +640,10 @@
     "format": "single",
     "stem": "Which mark normally ends the ordinary statement \"The bus has arrived\"?",
     "options": [
-      "A question mark",
-      "An apostrophe",
-      "A full stop",
-      "A comma"
+      "Question mark",
+      "Apostrophe",
+      "Full stop",
+      "Comma"
     ],
     "correct": [
       2
@@ -661,10 +661,10 @@
     "format": "single",
     "stem": "Which mark replaces missing letters in the short form \"don't\"?",
     "options": [
-      "A comma",
-      "A hyphen",
-      "A full stop",
-      "An apostrophe"
+      "Comma",
+      "Hyphen",
+      "Full stop",
+      "Apostrophe"
     ],
     "correct": [
       3
@@ -746,7 +746,7 @@
     "stem": "The school garden needed care during a holiday. One pupil could not visit every day, so the group made a rota. Each child chose two days. They wrote notes about watering and checked the plants when their turn came. The garden stayed healthy because the job did not depend on only one person. Which idea is best supported by this story?",
     "options": [
       "One pupil looked after the garden alone",
-      "The plants needed water only twice",
+      "Plants needed water only twice",
       "The holiday was too short to harm the plants",
       "Sharing the work kept the garden healthy"
     ],
@@ -766,10 +766,10 @@
     "format": "single",
     "stem": "Mina went shopping with a basket. On the way home she crossed a bridge, passed a bakery and stopped at the library. At the library door she noticed that the handle of something she carried had broken. She moved the vegetables into a cloth bag and left the broken object with the caretaker. Which object had broken?",
     "options": [
-      "The basket",
-      "The cloth bag",
-      "The library door",
-      "The bridge"
+      "Basket",
+      "Cloth bag",
+      "Library door",
+      "Bridge"
     ],
     "correct": [
       0
@@ -787,10 +787,10 @@
     "format": "single",
     "stem": "A notice at the river said that the bridge to the village was closed for repair. Arun could still buy bread at the bakery and return books at the library, but he needed a different route to the village on the opposite bank. He put his lunch basket down while studying the map. What was closed for repair?",
     "options": [
-      "The bakery",
-      "The bridge",
-      "The library",
-      "The village market"
+      "Bakery",
+      "Bridge",
+      "Library",
+      "Village market"
     ],
     "correct": [
       1
@@ -808,10 +808,10 @@
     "format": "single",
     "stem": "Farah borrowed a storybook at the library, crossed the bridge and followed the smell of fresh bread. She entered a shop where trays of rolls were cooling. After buying two rolls, she placed them in her basket and continued home. Which place did she enter after following the smell?",
     "options": [
-      "The library",
-      "A vegetable stall",
-      "The bakery",
-      "The bridge"
+      "Library",
+      "Vegetable stall",
+      "Bakery",
+      "Bridge"
     ],
     "correct": [
       2
@@ -829,10 +829,10 @@
     "format": "single",
     "stem": "A village notice said: \"Please return borrowed books by Friday. Our shelves will be rearranged over the weekend, and borrowing will begin again on Monday.\" The notice was pinned near the bridge, beside an advertisement for a bakery. Hari read it while carrying an empty basket. Which place issued the book notice?",
     "options": [
-      "The bakery",
-      "A bookshop",
-      "The post office",
-      "The library"
+      "Bakery",
+      "Bookshop",
+      "Post office",
+      "Library"
     ],
     "correct": [
       3
@@ -1270,10 +1270,10 @@
     "format": "single",
     "stem": "What is the line from a circle's centre to its edge called?",
     "options": [
-      "A radius",
-      "A diameter",
-      "A chord",
-      "A circumference"
+      "Radius",
+      "Diameter",
+      "Chord",
+      "Circumference"
     ],
     "correct": [
       0
@@ -1291,10 +1291,10 @@
     "format": "single",
     "stem": "What is a straight line across a circle through its centre called?",
     "options": [
-      "A radius",
-      "A diameter",
-      "An arc",
-      "A circumference"
+      "Radius",
+      "Diameter",
+      "Arc",
+      "Circumference"
     ],
     "correct": [
       1
@@ -1858,10 +1858,10 @@
     "format": "single",
     "stem": "Which tool measures the temperature of water?",
     "options": [
-      "A thermometer",
-      "A measuring jug",
-      "A ruler",
-      "A balance"
+      "Thermometer",
+      "Measuring jug",
+      "Ruler",
+      "Balance"
     ],
     "correct": [
       0
@@ -1879,10 +1879,10 @@
     "format": "single",
     "stem": "Which tool compares the masses of two packets of seeds?",
     "options": [
-      "A thermometer",
-      "A balance",
-      "A measuring tape",
-      "A clock"
+      "Thermometer",
+      "Balance",
+      "Measuring tape",
+      "Clock"
     ],
     "correct": [
       1
@@ -1900,10 +1900,10 @@
     "format": "single",
     "stem": "Which tool helps record how long a journey takes?",
     "options": [
-      "A calendar",
-      "A ruler",
-      "A clock",
-      "A thermometer"
+      "Calendar",
+      "Ruler",
+      "Clock",
+      "Thermometer"
     ],
     "correct": [
       2
@@ -1921,10 +1921,10 @@
     "format": "single",
     "stem": "Which tool measures out exactly 300 mL of water?",
     "options": [
-      "A balance",
-      "A measuring tape",
-      "A drinking glass",
-      "A measuring jug"
+      "Balance",
+      "Measuring tape",
+      "Drinking glass",
+      "Measuring jug"
     ],
     "correct": [
       3
@@ -1942,10 +1942,10 @@
     "format": "single",
     "stem": "Where can a child borrow a storybook?",
     "options": [
-      "A library",
-      "A bookshop",
-      "A school office",
-      "A post office"
+      "Library",
+      "Bookshop",
+      "School office",
+      "Post office"
     ],
     "correct": [
       0
@@ -1963,10 +1963,10 @@
     "format": "single",
     "stem": "Where does a family go to send a letter?",
     "options": [
-      "A bank",
-      "A post office",
-      "A police station",
-      "A library"
+      "Bank",
+      "Post office",
+      "Police station",
+      "Library"
     ],
     "correct": [
       1
@@ -1984,10 +1984,10 @@
     "format": "single",
     "stem": "Where do trained staff give basic medical care?",
     "options": [
-      "A fire station",
-      "A bank",
-      "A health centre",
-      "A school"
+      "Fire station",
+      "Bank",
+      "Health centre",
+      "School"
     ],
     "correct": [
       2
@@ -2005,10 +2005,10 @@
     "format": "single",
     "stem": "Where can an adult put savings in an account?",
     "options": [
-      "A fire station",
-      "A ration shop",
-      "A library",
-      "A bank"
+      "Fire station",
+      "Ration shop",
+      "Library",
+      "Bank"
     ],
     "correct": [
       3
@@ -2194,10 +2194,10 @@
     "format": "single",
     "stem": "Two seedlings get the same light and warmth. One gets 20 mL of water a day, the other 40 mL. What differs?",
     "options": [
-      "The amount of water",
-      "The amount of light",
-      "The size of the pot",
-      "The temperature"
+      "Amount of water",
+      "Amount of light",
+      "Size of the pot",
+      "Temperature"
     ],
     "correct": [
       0
@@ -2362,10 +2362,10 @@
     "format": "single",
     "stem": "What does grass give a cow that eats it?",
     "options": [
-      "A source of food",
-      "A place to hide",
-      "A source of water",
-      "A nesting site"
+      "Source of food",
+      "Place to hide",
+      "Source of water",
+      "Nesting site"
     ],
     "correct": [
       0
@@ -2385,8 +2385,8 @@
     "options": [
       "Food for the bird",
       "Shelter from the weather",
-      "A place to store water",
-      "A perch for singing"
+      "Place to store water",
+      "Perch for singing"
     ],
     "correct": [
       1
@@ -2698,10 +2698,10 @@
     "format": "single",
     "stem": "Which shape is different because it has exactly three straight sides?",
     "options": [
-      "A triangle",
-      "A square",
-      "A circle",
-      "A pentagon"
+      "Triangle",
+      "Square",
+      "Circle",
+      "Pentagon"
     ],
     "correct": [
       0
@@ -2719,10 +2719,10 @@
     "format": "single",
     "stem": "A tile has four right angles and four equal sides. What is its most exact name?",
     "options": [
-      "A rectangle",
-      "A square",
-      "A rhombus",
-      "A triangle"
+      "Rectangle",
+      "Square",
+      "Rhombus",
+      "Triangle"
     ],
     "correct": [
       1
@@ -2740,10 +2740,10 @@
     "format": "single",
     "stem": "Which shape has no corners and every point on its edge the same distance from the centre?",
     "options": [
-      "An oval",
-      "A square",
-      "A circle",
-      "A semicircle"
+      "Oval",
+      "Square",
+      "Circle",
+      "Semicircle"
     ],
     "correct": [
       2
@@ -2761,10 +2761,10 @@
     "format": "single",
     "stem": "A shape has four right angles and opposite sides equal, but is longer than it is wide. What is it?",
     "options": [
-      "A square",
-      "A circle",
-      "A trapezium",
-      "A rectangle"
+      "Square",
+      "Circle",
+      "Trapezium",
+      "Rectangle"
     ],
     "correct": [
       3
@@ -3202,10 +3202,10 @@
     "format": "single",
     "stem": "Bags: red=books, blue=seeds, green=cloth, yellow=tools. Which bag has the books?",
     "options": [
-      "The red bag",
-      "The blue bag",
-      "The green bag",
-      "The bag labelled tools"
+      "Red bag",
+      "Blue bag",
+      "Green bag",
+      "Bag labelled tools"
     ],
     "correct": [
       0
@@ -3244,9 +3244,9 @@
     "format": "single",
     "stem": "A box holds a yellow, red, blue and green bag. Yellow, red and blue are taken out. Which bag is left?",
     "options": [
-      "The red bag",
-      "The blue bag",
-      "The green bag",
+      "Red bag",
+      "Blue bag",
+      "Green bag",
       "No bag is left"
     ],
     "correct": [
@@ -3265,10 +3265,10 @@
     "format": "single",
     "stem": "From smallest to largest, the bags are blue, red, yellow, green. Which bag is second largest?",
     "options": [
-      "The red bag",
-      "The green bag",
-      "The blue bag",
-      "The yellow bag"
+      "Red bag",
+      "Green bag",
+      "Blue bag",
+      "Yellow bag"
     ],
     "correct": [
       3

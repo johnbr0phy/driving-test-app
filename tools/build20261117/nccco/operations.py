@@ -1,28 +1,28 @@
 ITEMS=[]
 def Q(stem,key,d1,d2,d3,why):ITEMS.append((stem,[key,d1,d2,d3],why))
 Q('Which aid tells the operator the boom\'s inclination rather than the load\'s weight?',
- 'A boom-angle indicator','A load-moment indicator','A boom-length indicator','A drum-rotation indicator',
+ 'Boom-angle indicator','Load-moment indicator','Boom-length indicator','Drum-rotation indicator',
  'A boom-angle indicator shows boom inclination. A load-moment indicator works from load and radius, and a length indicator shows extension, not angle.')
 Q('Which aid prevents or warns of the hook being drawn into the boom tip?',
- 'An anti-two-block device','A load-moment limiter','A boom-hoist limiting device','A drum-rotation indicator',
+ 'Anti-two-block device','Load-moment limiter','Boom-hoist limiting device','Drum-rotation indicator',
  'An anti-two-block device addresses contact between the lower block or ball and the boom tip or upper block. A boom-hoist limiter stops the boom being raised too far, a different hazard.')
 Q('Which aid detects motion of a hoist drum the operator cannot see?',
- 'A drum-rotation indicator','A drum brake lock','A hoist line-pull meter','A boom-angle indicator',
+ 'Drum-rotation indicator','Drum brake lock','Hoist line-pull meter','Boom-angle indicator',
  'A drum-rotation indicator reports drum movement to the operator. A line-pull meter shows force, not whether the drum is turning.')
 Q('Which aid indicates the weight being supported?',
- 'A load-weighing device','A boom-angle indicator','A drum-rotation indicator','A boom-length indicator',
+ 'Load-weighing device','Boom-angle indicator','Drum-rotation indicator','Boom-length indicator',
  'A load-weighing device indicates load weight, subject to its proper setup and limitations. The other aids report geometry or drum motion.')
 Q('Which device shows whether the machine sits true on its supports?',
- 'A crane-level indicator','A boom-angle indicator','An outrigger position sensor','A load-moment indicator',
+ 'Crane-level indicator','Boom-angle indicator','Outrigger position sensor','Load-moment indicator',
  'OSHA 1926.1415 requires a crane-level indicator on covered equipment, with specified exceptions. An outrigger sensor reports extension, not whether the machine is level.')
 Q('Which device gives an immediate audible warning to people around the crane?',
- 'A horn within the operator\'s reach','A rotating beacon on the cab','A radio to the signal person','An anti-two-block alarm',
+ 'Horn within the operator\'s reach','Rotating beacon on the cab','Radio to the signal person','Anti-two-block alarm',
  'A horn must be built in or immediately available to the operator under 1926.1415. A beacon is visual, and a radio reaches only the signal person.')
 Q('Which hydraulic-outrigger feature retains jack support against unintended hydraulic movement?',
- 'An integral holding valve','A manual pin through the beam','An outrigger position sensor','A pressure gauge on each jack',
+ 'Integral holding valve','Manual pin through the beam','Outrigger position sensor','Pressure gauge on each jack',
  'Hydraulic outrigger and stabilizer jacks require an integral holding device or check valve. A gauge only shows pressure; it does not hold it.')
 Q('Which device keeps a foot-pedal brake in its holding position?',
- 'A lock on the brake pedal','A pedal return spring','A pedal-brake warning light','A parking brake on the carrier',
+ 'Lock on the brake pedal','Pedal return spring','Pedal-brake warning light','Parking brake on the carrier',
  'Equipment with foot-pedal brakes must have locks under 1926.1415. A return spring does the opposite of holding the pedal down.')
 Q('A blind lift relies on radio, and the link fails. What is required?',
  'Stop until communication is restored','Finish the lift using hand signals','Continue slowly with the horn','Let the operator judge the landing',
@@ -31,31 +31,31 @@ Q('Standard hand signals cannot direct a special attachment. What must the opera
  'Agree on them before the operation','Write them on the load itself','Use the standard set anyway','Let the signal person improvise',
  'Non-standard signals must be agreed before the operation under 1926.1419(c)(2). Improvised signals risk being misread.')
 Q('A signal person faces the operator across the load. From whose viewpoint are left and right given?',
- 'The operator\'s','The signal person\'s','The load\'s direction of travel','The lift director\'s',
+ 'Operator\'s','Signal person\'s','Load\'s direction of travel','Lift director\'s',
  'All directions must use the operator\'s perspective, which avoids reversed instructions when the signal person faces the cab.')
 Q('One signal person directs two cranes on one channel. What makes each command\'s recipient clear?',
- 'Naming the crane before each command','A louder voice for the nearer crane','Giving both cranes the same instruction','Hand signals in place of radio',
+ 'Naming the crane before each command','Louder voice for the nearer crane','Giving both cranes the same instruction','Hand signals in place of radio',
  'The crane must be identified before the function and direction, or by an equally effective method, so neither operator acts on the other\'s instruction.')
 Q('Before a radio-controlled lift, what confirms signal transmission is reliable at that site?',
- 'An on-site test of the devices','The radio supplier\'s certificate','A test done at the yard last week','The signal person\'s experience',
+ 'On-site test of the devices','Radio supplier\'s certificate','Test done at the yard last week','Signal person\'s experience',
  'The transmitting devices must be tested on site before operations under 1926.1420(a); local interference cannot be checked anywhere else.')
 Q('Which reception arrangement lets the operator hear transmitted instructions without holding a communication device?',
- 'A hands-free receiver','A handheld radio on the console','A phone held to one ear','A speaker mounted outside the cab',
+ 'Hands-free receiver','Handheld radio on the console','Phone held to one ear','Speaker mounted outside the cab',
  'OSHA 1926.1420(c) requires hands-free reception by the operator. A speaker outside the cab may not be heard over engine noise.')
 Q('Unrelated radio traffic is interfering with lift instructions. Which channel arrangement does OSHA generally require?',
- 'A dedicated signal channel','A shared site channel','Any open channel nearby','A cell phone line',
+ 'Dedicated signal channel','Shared site channel','Any open channel nearby','Cell phone line',
  'Signal transmission generally uses a dedicated channel, with specified exceptions for coordinated operations. A shared channel is what lets the unrelated traffic in.')
 Q('The operator and signal person speak different languages. What must be set for voice signals?',
- 'A language all parties understand','A translator at the cab door','Hand signals only, with no voice','Signals spoken more loudly',
+ 'Language all parties understand','Translator at the cab door','Hand signals only, with no voice','Signals spoken more loudly',
  'The operator, signal person and lift director must be able to communicate effectively in the language used.')
 Q('Before two cranes support one load, who must develop the lift plan?',
- 'A qualified person','Either crane operator','The site safety officer','The rigger on the ground',
+ 'Qualified person','Either crane operator','Site safety officer','Rigger on the ground',
  'A qualified person develops the multiple-crane lift plan under 1926.1432(a). An operator may help but is not named for it by role.')
 Q('Who must review a multiple-crane lift plan with all involved workers before the lift?',
- 'The lift director','The plan\'s author only','The crane owner','Each crane operator',
+ 'Lift director','Plan\'s author only','Crane owner','Each crane operator',
  'The lift director reviews the plan with the involved workers under 1926.1432(b).')
 Q('For a power-line plan using Table A, who provides the requested line-voltage information?',
- 'The utility owner or operator','The crane operator','The local building inspector','The site electrician',
+ 'Utility owner or operator','Crane operator','Local building inspector','Site electrician',
  'The utility owner/operator provides voltage information under 1926.1408(c).')
 Q('Who may give the emergency-stop signal when someone is in immediate danger?',
  'Anyone who sees the danger','Only the designated signal person','Only the lift director','Only the A/D director',
@@ -70,28 +70,28 @@ Q('Immediately before starting the engine, what operational check does OSHA requ
  'Controls set and personnel clear','Fuel level and oil checked','Load chart reviewed with the rigger first','Horn tested twice',
  'The operator verifies that controls are in their proper starting positions and that all personnel are clear.')
 Q('A setup requires ballast, and extra is nearby. What determines the amount installed?',
- 'The manufacturer\'s specified amount','All the spare that is available','The heaviest the carrier can hold','The operator\'s estimate of the load',
+ 'Manufacturer\'s specified amount','All the spare that is available','The heaviest the carrier can hold','Operator\'s estimate of the load',
  'The manufacturer-specified counterweight or ballast must be installed, and the specified maximum must not be exceeded. Adding spare weight can overload the machine.')
 Q('A required horn fails and no other compliant horn is available. What must happen before operation resumes?',
  'The horn must be repaired first','Use hand signals in its place','Run for up to 7 days meanwhile','Run for up to 30 days meanwhile',
  'A horn is a required safety device; 1926.1415 does not permit alternative measures. The 7 and 30 day periods apply to operational aids, not safety devices.')
 Q('A listed operational aid fails, and OSHA names a stopgap for the repair period. What allows operation to continue?',
- 'Using the alternative measure OSHA lists','No operation until the aid is fixed','A higher rated capacity','Doubling the number of signal persons',
+ 'Using the alternative measure OSHA lists','No operation until the aid is fixed','Higher rated capacity','Doubling the number of signal persons',
  'For an operational aid, the temporary alternative named in 1926.1416 may be used during the allowed repair period. Stopping until repair is the rule for safety devices.')
 Q('The cab\'s only load chart is electronic and its display fails. What must be restored?',
- 'Access to the rated capacities','Power to the cab heater','The radio link to the ground','A paper inspection log',
+ 'Access to the rated capacities','Power to the cab heater','Radio link to the ground','Paper inspection log',
  'Rated capacities must again be accessible to the operator, electronically or otherwise, before operations resume.')
 Q('An operator finds repairs are needed. How must the employer\'s designated person and next operator be told?',
- 'Prompt written notice','A spoken mention at shift end','A call after the job finishes','A note in next month\'s log',
+ 'Prompt written notice','Spoken mention at shift end','Call after the job finishes','Note in next month\'s log',
  'Under 1926.1417(j) the operator must promptly inform those persons in writing.')
 Q('A tag line is needed within a power-line encroachment-control plan. What type is required?',
- 'A nonconductive tag line','A wire-rope tag line','A damp natural-fibre line','A steel-cored synthetic line',
+ 'Nonconductive tag line','Wire-rope tag line','Damp natural-fibre line','Steel-cored synthetic line',
  'Tag lines used under 1926.1408(b) must be nonconductive. A wet natural-fibre or metal-cored line can conduct.')
 Q('An equipment package has no marked weight. What reliable information establishes its weight?',
- 'A shipping or maker\'s weight record','The rigger\'s estimate by eye','The chart capacity at that radius','Its marked dimensions only',
+ 'Shipping or maker\'s weight record','Rigger\'s estimate by eye','Chart capacity at that radius','Its marked dimensions only',
  'A manufacturer record or other equally reliable weight information supports capacity verification. Chart capacity is the limit, not the load.')
 Q('A crew proposes moving the crane with a suspended load. Which instructions must be checked for a prohibition?',
- 'The manufacturer\'s procedures','The site traffic plan','The rigging manufacturer\'s catalogue','The general OSHA travel table',
+ 'Manufacturer\'s procedures','Site traffic plan','Rigging manufacturer\'s catalogue','General OSHA travel table',
  'Travel with a load is prohibited if the manufacturer prohibits it; other supervised-travel requirements also apply.')
 Q('A load swings outward as the upperworks rotate. Which variable must be limited?',
  'Swing speed','Hoist speed','Boom length','Travel speed',
@@ -139,10 +139,10 @@ Q('A telescopic boom-length indicator fails. Which temporary method establishes 
  'Marked or measured length of the boom','Use the boom length from the last lift','Estimate it from the boom angle','Count the hydraulic pump strokes',
  'Measured marks on the boom or direct measurement are among the permitted alternatives under 1926.1416(e)(3).')
 Q('An outrigger-extension monitor fails. What must the operator verify before outrigger-dependent operations?',
- 'The actual outrigger positions','The monitor\'s fuse rating','The outrigger hydraulic pressure','The tire pressure',
+ 'Actual outrigger positions','Monitor\'s fuse rating','Outrigger hydraulic pressure','Tire pressure',
  'The actual outrigger or stabilizer position must be verified as correct under the manufacturer\'s procedures. Pressure does not show extension.')
 Q('An out-of-view drum\'s rotation indicator fails. What temporary measure lets drum movement be seen?',
- 'A drum mark visible by mirror or camera','Listening for drum noise','Counting turns of the hoist lever','A second operator watching the hook block',
+ 'Drum mark visible by mirror or camera','Listening for drum noise','Counting turns of the hoist lever','Second operator watching the hook block',
  'Under 1926.1416(e)(5) the drum is marked and mirrors or video are provided if necessary so the operator can see the mark.')
 Q('In repetitive lifts each over 90% of maximum line pull, when does the lift-and-brake test apply?',
  'On the first lift only','On every lift in the sequence','On every tenth lift','Only after the brake slips',
@@ -163,9 +163,9 @@ Q('Which change can increase crane force as a submerged object emerges from wate
  'Reduced buoyancy','Cooler hoist rope','Lower wind at the surface','Shorter hoist line',
  'Buoyant support decreases as the object leaves the water, so the crane carries more of its weight.')
 Q('A moving load is stopped abruptly. Which effect can raise forces beyond the static load?',
- 'A dynamic shock load','A lighter static load','Reduced line tension','Increased buoyancy',
+ 'Dynamic shock load','Lighter static load','Reduced line tension','Increased buoyancy',
  'Abrupt acceleration or stopping introduces dynamic force, commonly called shock loading.')
 Q('Dragging a load sideways with the hoist line imposes which force on the boom?',
- 'A side load on the boom','Extra vertical load only','A pure compression load','Less load than a straight lift',
+ 'Side load on the boom','Extra vertical load only','Pure compression load','Less load than a straight lift',
  'Side pulling imposes lateral loading the boom is not rated for; OSHA 1926.1417(q) prohibits dragging or pulling loads sideways.')
 assert len(ITEMS)==56

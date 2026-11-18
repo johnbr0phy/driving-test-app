@@ -1,16 +1,16 @@
 # Original language items and independent reading passages.
 # Each entry is (stem, [key, wrong, wrong, wrong], explanation); every question has its own options.
 ITEMS = [('"The basket is beside the door." What kind of word is "basket"?',
-  ['A noun', 'A verb', 'An adjective', 'A pronoun'],
+  ['Noun', 'Verb', 'Adjective', 'Pronoun'],
   'Basket names an object, so it is a noun.'),
  ('In "Birds build nests", what kind of word is "build"?',
-  ['A verb', 'A noun', 'An adverb', 'A preposition'],
+  ['Verb', 'Noun', 'Adverb', 'Preposition'],
   'Build expresses an action, so it is a verb.'),
  ('In "We crossed a narrow bridge", what kind of word is "narrow"?',
-  ['An adjective', 'An adverb', 'A verb', 'A conjunction'],
+  ['Adjective', 'Adverb', 'Verb', 'Conjunction'],
   'Narrow describes the bridge, so it is an adjective.'),
  ('In "Meera closed the gate quietly", what kind of word is "quietly"?',
-  ['An adverb', 'An adjective', 'A noun', 'A pronoun'],
+  ['Adverb', 'Adjective', 'Noun', 'Pronoun'],
   'Quietly describes how the action was done, so it is an adverb.'),
  ('Complete: "Every morning, Ravi ___ to the bus stop."',
   ['walks', 'walk', 'walked', 'walking'],
@@ -85,16 +85,16 @@ ITEMS = [('"The basket is beside the door." What kind of word is "basket"?',
   ['quiet', 'noisy', 'busy', 'crowded'],
   'Quiet describes the absence of much noise.'),
  ('Which mark ends the question "Where is the nearest well"?',
-  ['A question mark', 'A full stop', 'A comma', 'An exclamation mark'],
+  ['Question mark', 'Full stop', 'Comma', 'Exclamation mark'],
   'A direct question ends with a question mark.'),
  ('Which mark goes between "rice" and "beans" in "rice, beans and peas"?',
-  ['A comma', 'A full stop', 'An apostrophe', 'A colon'],
+  ['Comma', 'Full stop', 'Apostrophe', 'Colon'],
   'A comma separates items in the list.'),
  ('Which mark normally ends the ordinary statement "The bus has arrived"?',
-  ['A full stop', 'A question mark', 'An apostrophe', 'A comma'],
+  ['Full stop', 'Question mark', 'Apostrophe', 'Comma'],
   'A full stop ends an ordinary statement.'),
  ('Which mark replaces missing letters in the short form "don\'t"?',
-  ['An apostrophe', 'A comma', 'A hyphen', 'A full stop'],
+  ['Apostrophe', 'Comma', 'Hyphen', 'Full stop'],
   'The apostrophe marks the omitted letter in do not.'),
  ('Before their class picnic, Riya checked the route, counted the water bottles and asked each group to carry a small '
   'bag for rubbish. She also checked when the return bus would leave. On the day, the group had what it needed and '
@@ -125,27 +125,27 @@ ITEMS = [('"The basket is beside the door." What kind of word is "basket"?',
   'stayed healthy because the job did not depend on only one person. Which idea is best supported by this story?',
   ['Sharing the work kept the garden healthy',
    'One pupil looked after the garden alone',
-   'The plants needed water only twice',
+   'Plants needed water only twice',
    'The holiday was too short to harm the plants'],
   'The group divided the work so that several people helped care for the garden.'),
  ('Mina went shopping with a basket. On the way home she crossed a bridge, passed a bakery and stopped at the library. '
   'At the library door she noticed that the handle of something she carried had broken. She moved the vegetables into '
   'a cloth bag and left the broken object with the caretaker. Which object had broken?',
-  ['The basket', 'The cloth bag', 'The library door', 'The bridge'],
+  ['Basket', 'Cloth bag', 'Library door', 'Bridge'],
   'She carried the vegetables in her basket, and its broken handle is why she moved them into the cloth bag; the door '
   'and the bridge were not things she carried.'),
  ('A notice at the river said that the bridge to the village was closed for repair. Arun could still buy bread at the bakery '
   'and return books at the library, but he needed a different route to the village on the opposite bank. He put his '
   'lunch basket down while studying the map. What was closed for repair?',
-  ['The bridge', 'The bakery', 'The library', 'The village market'],
+  ['Bridge', 'Bakery', 'Library', 'Village market'],
   'The notice says the bridge was closed; the bakery and library were still open, and the market is not mentioned as closed.'),
  ('Farah borrowed a storybook at the library, crossed the bridge and followed the smell of fresh bread. She entered a '
   'shop where trays of rolls were cooling. After buying two rolls, she placed them in her basket and continued home. '
   'Which place did she enter after following the smell?',
-  ['The bakery', 'The library', 'A vegetable stall', 'The bridge'],
+  ['Bakery', 'Library', 'Vegetable stall', 'Bridge'],
   'A shop making and selling bread is a bakery.'),
  ('A village notice said: "Please return borrowed books by Friday. Our shelves will be rearranged over the weekend, '
   'and borrowing will begin again on Monday." The notice was pinned near the bridge, beside an advertisement for a '
   'bakery. Hari read it while carrying an empty basket. Which place issued the book notice?',
-  ['The library', 'The bakery', 'A bookshop', 'The post office'],
+  ['Library', 'Bakery', 'Bookshop', 'Post office'],
   'Borrowing and returning books are services of the library.')]

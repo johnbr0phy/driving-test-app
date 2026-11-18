@@ -40,6 +40,6 @@ Q = [
  "Taking client money", ["Charging a fair commission", "Filing returns on time", "Recording phone orders"],
  "Enforcement actions commonly follow misconduct such as misappropriation, market misconduct, internal control failures and misleading clients."),
 ("Who decides whether to bring criminal market misconduct cases on indictment?",
- "The Department of Justice", ["HKEX's Listing Committee", "The Takeovers Panel", "The Investor Compensation Company"],
+ "Department of Justice", ["HKEX's Listing Committee", "Takeovers Panel", "Investor Compensation Company"],
  "Indictable offences, including serious market misconduct offences under Part XIV, are prosecuted by the Department of Justice; the SFC can prosecute summary offences itself."),
 ]

@@ -10,10 +10,10 @@
     "format": "single",
     "stem": "Which Next Experience header menu holds only the pages a user has starred?",
     "options": [
-      "The Favorites menu",
-      "The History menu",
-      "The All menu",
-      "The Workspaces menu"
+      "Favorites menu",
+      "History menu",
+      "All menu",
+      "Workspaces menu"
     ],
     "correct": [
       0
@@ -94,10 +94,10 @@
     "format": "single",
     "stem": "Which interface shows number, priority and assignment group for many incidents side by side?",
     "options": [
-      "The incident list",
-      "The incident form",
-      "A related list on one incident",
-      "The activity stream"
+      "Incident list",
+      "Incident form",
+      "Related list on one incident",
+      "Activity stream"
     ],
     "correct": [
       0
@@ -115,10 +115,10 @@
     "format": "single",
     "stem": "Which interface shows every field of one incident for editing, including fields that are not list columns?",
     "options": [
-      "The list editor in a cell",
-      "The incident form",
-      "The incident list",
-      "A list report on Incident"
+      "List editor in a cell",
+      "Incident form",
+      "Incident list",
+      "List report on Incident"
     ],
     "correct": [
       1
@@ -136,10 +136,10 @@
     "format": "single",
     "stem": "Which feature finds a remembered phrase in records from any application or table?",
     "options": [
-      "A list filter on the incident table",
-      "A search of the Favorites menu",
+      "List filter on the incident table",
+      "Search of the Favorites menu",
       "Global search in the header",
-      "The filter at the top of the All menu"
+      "Filter at the top of the All menu"
     ],
     "correct": [
       2
@@ -157,9 +157,9 @@
     "format": "single",
     "stem": "Where does a user set larger text and a different theme for their own sessions only?",
     "options": [
-      "The System Properties module",
-      "The form layout of the user table",
-      "The instance theme in Theme Builder",
+      "System Properties module",
+      "Form layout of the user table",
+      "Instance theme in Theme Builder",
       "Their user preferences in the user menu"
     ],
     "correct": [
@@ -199,10 +199,10 @@
     "format": "single",
     "stem": "The scope picker shows Global, but a new table must belong to the Facilities app. What must change first?",
     "options": [
-      "The impersonated user",
-      "The current application scope",
-      "The current update set only",
-      "The form view of the table"
+      "Impersonated user",
+      "Current application scope",
+      "Current update set only",
+      "Form view of the table"
     ],
     "correct": [
       1
@@ -220,10 +220,10 @@
     "format": "single",
     "stem": "An administrator's header still shows a colleague's name from an earlier test. What must end before other work?",
     "options": [
-      "The current update set",
-      "The selected application scope",
-      "The impersonation session",
-      "The elevated security_admin role"
+      "Current update set",
+      "Selected application scope",
+      "Impersonation session",
+      "Elevated security_admin role"
     ],
     "correct": [
       2
@@ -241,8 +241,8 @@
     "format": "single",
     "stem": "Two agents with the same roles see different field arrangements on the same incident. What should be compared first?",
     "options": [
-      "The ACLs on the incident table",
-      "The application scope of each session",
+      "ACLs on the incident table",
+      "Application scope of each session",
       "The instance each one is logged in to",
       "The form view each one has selected"
     ],
@@ -262,10 +262,10 @@
     "format": "single",
     "stem": "A user opens a page from a direct link but finds no entry in the All menu. What should be checked first?",
     "options": [
-      "The application menu or module settings",
-      "The read ACL on the target table",
-      "The user's saved list filter",
-      "The user's personalized list columns"
+      "Application menu or module settings",
+      "Read ACL on the target table",
+      "User's saved list filter",
+      "User's personalized list columns"
     ],
     "correct": [
       0
@@ -283,10 +283,10 @@
     "format": "single",
     "stem": "A module shows in the All menu, but one confidential record gives a security message. What should be investigated?",
     "options": [
-      "The column layout of the incident list",
-      "The ACLs that control access to that record",
-      "The module's roles in the application menu",
-      "The order of entries in the user's Favorites"
+      "Column layout of the incident list",
+      "ACLs that control access to that record",
+      "Module's roles in the application menu",
+      "Order of entries in the user's Favorites"
     ],
     "correct": [
       1
@@ -304,10 +304,10 @@
     "format": "single",
     "stem": "The incident list breadcrumb shows Active = true, and closed records are missing. The user has read access. Why?",
     "options": [
-      "A personalized column layout",
-      "A different form view",
-      "The list filter conditions",
-      "A read ACL on closed incidents"
+      "Personalized column layout",
+      "Different form view",
+      "List filter conditions",
+      "Read ACL on closed incidents"
     ],
     "correct": [
       2
@@ -325,9 +325,9 @@
     "format": "single",
     "stem": "Only Maria sees unusual incident list columns, and Reset to column defaults fixes it. What caused the difference?",
     "options": [
-      "A change to the shared list layout",
-      "A list control setting for the table",
-      "An ACL hiding the other columns",
+      "Change to the shared list layout",
+      "List control setting for the table",
+      "ACL hiding the other columns",
       "Her own personalization of the list"
     ],
     "correct": [
@@ -369,8 +369,8 @@
     "options": [
       "Its default update set",
       "Its required dependencies",
-      "The ACLs on its tables",
-      "The form views it adds"
+      "ACLs on its tables",
+      "Form views it adds"
     ],
     "correct": [
       1
@@ -430,10 +430,10 @@
     "format": "single",
     "stem": "An agent wants more compact list text in her own sessions only. What should she change?",
     "options": [
-      "A setting in her own preferences",
-      "A system property for list density",
-      "The list layout for the incident table",
-      "The form view for her group"
+      "Setting in her own preferences",
+      "System property for list density",
+      "List layout for the incident table",
+      "Form view for her group"
     ],
     "correct": [
       0
@@ -451,10 +451,10 @@
     "format": "single",
     "stem": "Marketing wants the company logo in every user's header. What kind of change is this?",
     "options": [
-      "A UI policy on the user table",
-      "An instance branding change",
-      "A personal user preference",
-      "A form layout change"
+      "UI policy on the user table",
+      "Instance branding change",
+      "Personal user preference",
+      "Form layout change"
     ],
     "correct": [
       1
@@ -472,10 +472,10 @@
     "format": "single",
     "stem": "A support team needs a named Triage arrangement showing only the incident fields they use. What should be configured?",
     "options": [
-      "A personal list layout",
-      "A new incident table",
-      "A form view called Triage",
-      "A UI policy called Triage"
+      "Personal list layout",
+      "New incident table",
+      "Form view called Triage",
+      "UI policy called Triage"
     ],
     "correct": [
       2
@@ -493,10 +493,10 @@
     "format": "single",
     "stem": "A justification field must be mandatory only when the request type is Hardware, without code. Which tool fits?",
     "options": [
-      "An onLoad client script",
-      "A before business rule",
-      "A dictionary override on the field",
-      "A UI policy with a condition"
+      "OnLoad client script",
+      "Before business rule",
+      "Dictionary override on the field",
+      "UI policy with a condition"
     ],
     "correct": [
       3
@@ -577,10 +577,10 @@
     "format": "single",
     "stem": "Impersonation confirms a user cannot do a task that colleagues in the same job can. What should be reviewed next?",
     "options": [
-      "The user's Favorites and History",
+      "User's Favorites and History",
       "The form view the user has selected",
-      "The current application scope of the user",
-      "The user's roles and group memberships"
+      "Current application scope of the user",
+      "User's roles and group memberships"
     ],
     "correct": [
       3
@@ -619,10 +619,10 @@
     "format": "single",
     "stem": "An administrator has several in-progress update sets. What decides which one captures the next configuration changes?",
     "options": [
-      "The import set row filter",
-      "The current update set",
-      "The current application scope",
-      "The update set's Complete state"
+      "Import set row filter",
+      "Current update set",
+      "Current application scope",
+      "Update set's Complete state"
     ],
     "correct": [
       1
@@ -640,9 +640,9 @@
     "format": "single",
     "stem": "A change is approved for the test instance only. What confirms the right instance is open?",
     "options": [
-      "The time zone in user preferences",
-      "The name of the current update set",
-      "The URL in the browser address bar",
+      "Time zone in user preferences",
+      "Name of the current update set",
+      "URL in the browser address bar",
       "The form view that is selected"
     ],
     "correct": [
@@ -661,10 +661,10 @@
     "format": "single",
     "stem": "A feature in the newer-version documentation is missing on an otherwise configured instance. What should be compared?",
     "options": [
-      "The administrator's personal preferences",
-      "The column layout of the incident list",
-      "The version of the user's web browser",
-      "The installed application or family version"
+      "Administrator's personal preferences",
+      "Column layout of the incident list",
+      "Version of the user's web browser",
+      "Installed application or family version"
     ],
     "correct": [
       3
@@ -725,9 +725,9 @@
     "stem": "A new application lacks a feature that its documentation says needs another plugin. What should be checked?",
     "options": [
       "Its business rules' order values",
-      "The admin's list personalization",
+      "Admin's list personalization",
       "Whether that plugin is active",
-      "The form view of the application"
+      "Form view of the application"
     ],
     "correct": [
       2
@@ -871,10 +871,10 @@
     "format": "single",
     "stem": "A shared incident form needs a Resolution section grouping existing fields. What should be configured?",
     "options": [
-      "A personal list personalization",
-      "The form layout for that view",
-      "The list layout for incident",
-      "A list control on incident"
+      "Personal list personalization",
+      "Form layout for that view",
+      "List layout for incident",
+      "List control on incident"
     ],
     "correct": [
       1
@@ -892,10 +892,10 @@
     "format": "single",
     "stem": "Which feature fills in the same category, priority and short description for a technician's repeated incidents?",
     "options": [
-      "A default value in the dictionary",
-      "A dictionary override",
-      "A template",
-      "A UI policy"
+      "Default value in the dictionary",
+      "Dictionary override",
+      "Template",
+      "UI policy"
     ],
     "correct": [
       2
@@ -913,10 +913,10 @@
     "format": "single",
     "stem": "What should be added to the user form to list the incidents where that user is the caller?",
     "options": [
-      "A reference field",
-      "A dot-walked field",
-      "A form section",
-      "A related list"
+      "Reference field",
+      "Dot-walked field",
+      "Form section",
+      "Related list"
     ],
     "correct": [
       3
@@ -1105,7 +1105,7 @@
       "Freeform",
       "Guided",
       "Flexible",
-      "A dashboard"
+      "Dashboard"
     ],
     "correct": [
       0
@@ -1165,10 +1165,10 @@
     "format": "single",
     "stem": "A service owner wants several workload and performance charts on one page, not movable cards. What should be built?",
     "options": [
-      "A guided board",
-      "A flexible board",
-      "A list report",
-      "A dashboard"
+      "Guided board",
+      "Flexible board",
+      "List report",
+      "Dashboard"
     ],
     "correct": [
       3
@@ -1189,7 +1189,7 @@
       "When to send",
       "Who will receive",
       "What it will contain",
-      "The email template"
+      "Email template"
     ],
     "correct": [
       0
@@ -1417,10 +1417,10 @@
     "format": "single",
     "stem": "New hardware requests should open with Priority 3, which the requester may change. What should be configured?",
     "options": [
-      "A read-only UI policy",
-      "A data policy",
-      "A reference qualifier",
-      "A default value"
+      "Read-only UI policy",
+      "Data policy",
+      "Reference qualifier",
+      "Default value"
     ],
     "correct": [
       3
@@ -1438,10 +1438,10 @@
     "format": "single",
     "stem": "A chart meant to show all incidents omits resolved ones. Its conditions include Active is true. Why?",
     "options": [
-      "The report's filter conditions",
-      "The aggregation method used",
-      "The Group by field chosen",
-      "The chart type selected"
+      "Report's filter conditions",
+      "Aggregation method used",
+      "Group by field chosen",
+      "Chart type selected"
     ],
     "correct": [
       0
@@ -1459,10 +1459,10 @@
     "format": "single",
     "stem": "A report sums the price field, but the manager wanted a count of requests. What should be changed?",
     "options": [
-      "The chart type from bar to pie",
-      "The aggregation from Sum to Count",
-      "The Group by field to Price",
-      "The filter conditions on price"
+      "Chart type from bar to pie",
+      "Aggregation from Sum to Count",
+      "Group by field to Price",
+      "Filter conditions on price"
     ],
     "correct": [
       1
@@ -1480,10 +1480,10 @@
     "format": "single",
     "stem": "A report's totals are right but split by location, not assignment group. Which setting explains this?",
     "options": [
-      "The filter conditions",
-      "The report source table",
-      "The Group by field",
-      "The aggregation"
+      "Filter conditions",
+      "Report source table",
+      "Group by field",
+      "Aggregation"
     ],
     "correct": [
       2
@@ -1700,8 +1700,8 @@
     "options": [
       "Can Read user criteria",
       "Can Contribute user criteria",
-      "The knowledge_admin role for them",
-      "A Published workflow on the articles"
+      "Knowledge_admin role for them",
+      "Published workflow on the articles"
     ],
     "correct": [
       0
@@ -1719,7 +1719,7 @@
     "format": "single",
     "stem": "An editorial team must create and update articles in a knowledge base. Which setting should be reviewed?",
     "options": [
-      "The article's Valid to date",
+      "Article's Valid to date",
       "Can Contribute user criteria",
       "Can Read user criteria",
       "Cannot Read user criteria"
@@ -1740,9 +1740,9 @@
     "format": "single",
     "stem": "A reader meets the read criteria but cannot see a new article still being written. What should be checked?",
     "options": [
-      "The knowledge base category",
-      "The reader's list filter",
-      "The article's workflow state",
+      "Knowledge base category",
+      "Reader's list filter",
+      "Article's workflow state",
       "The reader's Can Contribute criteria"
     ],
     "correct": [
@@ -1763,7 +1763,7 @@
     "options": [
       "Impersonate User only",
       "The knowledge base's Can Read list",
-      "The system log",
+      "System log",
       "User Criteria Diagnostics"
     ],
     "correct": [
@@ -1866,10 +1866,10 @@
     "format": "single",
     "stem": "Employees should request a docking station through normal request, requested item and catalog task fulfillment. What should be created?",
     "options": [
-      "A catalog item",
-      "A record producer",
-      "An order guide",
-      "A catalog client script"
+      "Catalog item",
+      "Record producer",
+      "Order guide",
+      "Catalog client script"
     ],
     "correct": [
       0
@@ -1887,10 +1887,10 @@
     "format": "single",
     "stem": "Which catalog component is a simple form that creates an incident directly, not a requested item?",
     "options": [
-      "A catalog UI policy",
-      "A record producer",
-      "A catalog item",
-      "An order guide"
+      "Catalog UI policy",
+      "Record producer",
+      "Catalog item",
+      "Order guide"
     ],
     "correct": [
       1
@@ -1908,10 +1908,10 @@
     "format": "single",
     "stem": "Which catalog component walks a new-hire requester through a laptop, a phone and building access in one submission?",
     "options": [
-      "A variable set",
-      "A catalog category",
-      "An order guide",
-      "A record producer"
+      "Variable set",
+      "Catalog category",
+      "Order guide",
+      "Record producer"
     ],
     "correct": [
       2
@@ -1929,10 +1929,10 @@
     "format": "single",
     "stem": "Several catalog items ask the same location and contact questions. What keeps them in one place?",
     "options": [
-      "An order guide",
-      "A catalog client script",
-      "A record producer",
-      "A variable set"
+      "Order guide",
+      "Catalog client script",
+      "Record producer",
+      "Variable set"
     ],
     "correct": [
       3
@@ -1951,9 +1951,9 @@
     "stem": "An item in a restricted category also appears in an open category. The item itself must be restricted. What should be configured?",
     "options": [
       "Available For criteria on the item",
-      "A second restricted category for it",
-      "A read ACL on the catalog category",
-      "A UI policy on the item's order form"
+      "Second restricted category for it",
+      "Read ACL on the catalog category",
+      "UI policy on the item's order form"
     ],
     "correct": [
       0
@@ -1974,7 +1974,7 @@
       "The item needs a variable set",
       "Not Available For overrides Available For",
       "Available For needs every criterion matched",
-      "The category criteria take priority"
+      "Category criteria take priority"
     ],
     "correct": [
       1
@@ -2055,10 +2055,10 @@
     "format": "single",
     "stem": "A flow should run when an existing change request moves to the Assess state. Which trigger fits?",
     "options": [
-      "A Service Catalog trigger",
+      "Service Catalog trigger",
       "Record Updated with a State condition",
       "Record Created with a State condition",
-      "A daily Scheduled trigger"
+      "Daily Scheduled trigger"
     ],
     "correct": [
       1
@@ -2076,10 +2076,10 @@
     "format": "single",
     "stem": "A cleanup flow should start every Sunday night whether or not any record changes. Which trigger fits?",
     "options": [
-      "A Record Created trigger",
-      "An inbound email trigger",
-      "A Scheduled trigger",
-      "A Record Updated trigger"
+      "Record Created trigger",
+      "Inbound email trigger",
+      "Scheduled trigger",
+      "Record Updated trigger"
     ],
     "correct": [
       2
@@ -2118,10 +2118,10 @@
     "format": "single",
     "stem": "Several flows repeat the same approval and notification steps. What gives them one maintained copy to call?",
     "options": [
-      "A subflow",
-      "A new trigger in each flow",
-      "A decision table",
-      "A topic block"
+      "Subflow",
+      "New trigger in each flow",
+      "Decision table",
+      "Topic block"
     ],
     "correct": [
       0
@@ -2205,7 +2205,7 @@
       "Decision inputs",
       "Decision rows",
       "Result columns",
-      "A default answer"
+      "Default answer"
     ],
     "correct": [
       0
@@ -2223,10 +2223,10 @@
     "format": "single",
     "stem": "A decision table has inputs and a result column but no lines mapping condition values to outcomes. What is missing?",
     "options": [
-      "A flow trigger",
+      "Flow trigger",
       "Decision rows",
       "Decision inputs",
-      "A subflow call"
+      "Subflow call"
     ],
     "correct": [
       1
@@ -2244,10 +2244,10 @@
     "format": "single",
     "stem": "A decision matches the intended row but returns the wrong assignment group value. Which part should be reviewed?",
     "options": [
-      "The order of the table's rows",
-      "The trigger of the calling flow",
-      "The result column value in that row",
-      "The decision inputs and their types"
+      "Order of the table's rows",
+      "Trigger of the calling flow",
+      "Result column value in that row",
+      "Decision inputs and their types"
     ],
     "correct": [
       2
@@ -2307,10 +2307,10 @@
     "format": "single",
     "stem": "What lets several Virtual Agent topics share one series of steps that ask for and show a user's open incidents?",
     "options": [
-      "A copy in each topic",
-      "A topic block",
-      "A subflow",
-      "An order guide"
+      "Copy in each topic",
+      "Topic block",
+      "Subflow",
+      "Order guide"
     ],
     "correct": [
       1
@@ -2370,10 +2370,10 @@
     "format": "single",
     "stem": "A flow set to start only for Software never starts for a new Hardware record. Where is the cause?",
     "options": [
-      "The trigger conditions",
-      "The action inputs",
-      "The subflow outputs",
-      "The flow's reporting level"
+      "Trigger conditions",
+      "Action inputs",
+      "Subflow outputs",
+      "Flow's reporting level"
     ],
     "correct": [
       0
@@ -2392,9 +2392,9 @@
     "stem": "A flow's Send Email action gets a recipient other than the requester. What helps trace the wrong mapping?",
     "options": [
       "The Who will receive section of a notification",
-      "The action's runtime inputs in the execution details",
-      "The flow's trigger type and its conditions",
-      "The description field on the subflow record"
+      "Action's runtime inputs in the execution details",
+      "Flow's trigger type and its conditions",
+      "Description field on the subflow record"
     ],
     "correct": [
       1
@@ -2412,10 +2412,10 @@
     "format": "single",
     "stem": "A test run stops at one action while earlier steps finished. What should be examined first?",
     "options": [
-      "The first action's output values",
-      "The scheduled start time of the flow",
-      "The error details for that action",
-      "The trigger conditions of the flow"
+      "First action's output values",
+      "Scheduled start time of the flow",
+      "Error details for that action",
+      "Trigger conditions of the flow"
     ],
     "correct": [
       2
@@ -2433,10 +2433,10 @@
     "format": "single",
     "stem": "A past production run shows no action values because none were recorded then. Which setting explains this?",
     "options": [
-      "The flow trigger type",
-      "The subflow output names",
-      "The user criteria on the flow",
-      "The flow reporting level"
+      "Flow trigger type",
+      "Subflow output names",
+      "User criteria on the flow",
+      "Flow reporting level"
     ],
     "correct": [
       3
@@ -2475,9 +2475,9 @@
     "format": "single",
     "stem": "An article is published but contains steps meant only for the internal network team. What still needs checking?",
     "options": [
-      "The publishing workflow of the knowledge base",
+      "Publishing workflow of the knowledge base",
       "The knowledge base's Can Read user criteria",
-      "The article's workflow state",
+      "Article's workflow state",
       "The category the article is filed in"
     ],
     "correct": [
@@ -2496,8 +2496,8 @@
     "format": "single",
     "stem": "A shared subflow output gets a new name and meaning, and several flows call it. What must be reviewed?",
     "options": [
-      "The subflow's most recent test log",
-      "The catalog items in the same scope",
+      "Subflow's most recent test log",
+      "Catalog items in the same scope",
       "Every flow that uses that output",
       "Only the subflow's own inputs"
     ],
@@ -2538,10 +2538,10 @@
     "format": "single",
     "stem": "A new app needs its own collection of equipment-inspection records with their own fields. What should be created?",
     "options": [
-      "A new table",
-      "A new field on Task",
-      "A new record on sys_user",
-      "A new form view on Incident"
+      "New table",
+      "New field on Task",
+      "New record on sys_user",
+      "New form view on Incident"
     ],
     "correct": [
       0
@@ -2601,10 +2601,10 @@
     "format": "single",
     "stem": "Which field design links an inspection to the technician's existing user account and its details?",
     "options": [
-      "A string field holding his name",
-      "A choice field of technician names",
-      "A journal field for his details",
-      "A reference field to sys_user"
+      "String field holding his name",
+      "Choice field of technician names",
+      "Journal field for his details",
+      "Reference field to sys_user"
     ],
     "correct": [
       3
@@ -2706,10 +2706,10 @@
     "format": "single",
     "stem": "A field has the wrong data type on its table. Rearranging the form has not helped. What should be examined?",
     "options": [
-      "The field's dictionary entry",
-      "The form layout for the table",
-      "The list layout for the table",
-      "The UI policy on the field"
+      "Field's dictionary entry",
+      "Form layout for the table",
+      "List layout for the table",
+      "UI policy on the field"
     ],
     "correct": [
       0
@@ -2727,10 +2727,10 @@
     "format": "single",
     "stem": "An inherited field is mandatory on Incident but optional on the parent Task table. What most likely explains this?",
     "options": [
-      "A list control on Incident",
-      "A dictionary override on Incident",
-      "A reference qualifier on Task",
-      "A UI policy on the Task form"
+      "List control on Incident",
+      "Dictionary override on Incident",
+      "Reference qualifier on Task",
+      "UI policy on the Task form"
     ],
     "correct": [
       1
@@ -2748,10 +2748,10 @@
     "format": "single",
     "stem": "What should an administrator review to see which tables extend Task before changing one of its fields?",
     "options": [
-      "The filter on the incident list",
-      "The ACLs on the Task table",
-      "The table hierarchy in Tables or Schema Map",
-      "The form layout of the Task table"
+      "Filter on the incident list",
+      "ACLs on the Task table",
+      "Table hierarchy in Tables or Schema Map",
+      "Form layout of the Task table"
     ],
     "correct": [
       2
@@ -2769,10 +2769,10 @@
     "format": "single",
     "stem": "One incident shows the wrong department in a reference field, while the definition and other incidents are fine. What should be investigated?",
     "options": [
-      "The field's dictionary entry",
-      "A dictionary override on Incident",
-      "The reference qualifier on the field",
-      "The value stored on that incident"
+      "Field's dictionary entry",
+      "Dictionary override on Incident",
+      "Reference qualifier on the field",
+      "Value stored on that incident"
     ],
     "correct": [
       3
@@ -2790,10 +2790,10 @@
     "format": "single",
     "stem": "Two users share a name. What decides which one a reference field points to?",
     "options": [
-      "The sys_id stored in the field",
-      "The name shown on the form",
-      "The field's reference qualifier",
-      "The department of each user"
+      "Sys_id stored in the field",
+      "Name shown on the form",
+      "Field's reference qualifier",
+      "Department of each user"
     ],
     "correct": [
       0
@@ -2811,10 +2811,10 @@
     "format": "single",
     "stem": "A reference field shows a readable name, not a long identifier. What is the form showing?",
     "options": [
-      "A dot-walked field from the record",
-      "The referenced record's display value",
-      "The referenced record's sys_id",
-      "The default value of the field"
+      "Dot-walked field from the record",
+      "Referenced record's display value",
+      "Referenced record's sys_id",
+      "Default value of the field"
     ],
     "correct": [
       1
@@ -2832,10 +2832,10 @@
     "format": "single",
     "stem": "A Department reference lookup offers inactive departments that should not be picked. What should be configured on the field?",
     "options": [
-      "A UI policy on the form",
-      "A delete ACL on department",
-      "A reference qualifier",
-      "A dictionary override on Department"
+      "UI policy on the form",
+      "Delete ACL on department",
+      "Reference qualifier",
+      "Dictionary override on Department"
     ],
     "correct": [
       2
@@ -2916,8 +2916,8 @@
     "format": "single",
     "stem": "An employee leaves the Network team and should lose that team's access. What should be removed?",
     "options": [
-      "The Network group itself",
-      "The roles from the Network group",
+      "Network group itself",
+      "Roles from the Network group",
       "His membership in the Network group",
       "His user account in the instance"
     ],
@@ -2937,8 +2937,8 @@
     "format": "single",
     "stem": "After removing a user from a group, he still has the role that group grants. What should be checked?",
     "options": [
-      "The form layout of the group record",
-      "The description field on the role",
+      "Form layout of the group record",
+      "Description field on the role",
       "His own list personalization settings",
       "Other groups and any direct role grants for him"
     ],
@@ -3065,8 +3065,8 @@
     "options": [
       "The record is in another scope",
       "The ACL condition is not met",
-      "The role check failed",
-      "The ACL script returned true"
+      "Role check failed",
+      "ACL script returned true"
     ],
     "correct": [
       1
@@ -3126,10 +3126,10 @@
     "format": "single",
     "stem": "Some imported spreadsheet dates were malformed before any target records were touched. Where should the administrator look first?",
     "options": [
-      "The import set table rows",
-      "The transform map field maps",
-      "The target table records",
-      "The coalesce field"
+      "Import set table rows",
+      "Transform map field maps",
+      "Target table records",
+      "Coalesce field"
     ],
     "correct": [
       0
@@ -3147,10 +3147,10 @@
     "format": "single",
     "stem": "A test import puts the source phone number into the target City field. What must be corrected?",
     "options": [
-      "The ACLs on the target table",
-      "The field map in the transform map",
-      "The coalesce setting on the key",
-      "The columns of the import set table"
+      "ACLs on the target table",
+      "Field map in the transform map",
+      "Coalesce setting on the key",
+      "Columns of the import set table"
     ],
     "correct": [
       1
@@ -3168,10 +3168,10 @@
     "format": "single",
     "stem": "A recurring import should update the asset with the same serial number, not add a duplicate. What should be set?",
     "options": [
-      "A unique index on the staging table",
-      "A business rule on the import set",
+      "Unique index on the staging table",
+      "Business rule on the import set",
       "Coalesce on the serial number field map",
-      "A reference qualifier on serial number"
+      "Reference qualifier on serial number"
     ],
     "correct": [
       2
@@ -3189,10 +3189,10 @@
     "format": "single",
     "stem": "After a transform runs, where does an administrator see inserted, updated and errored row counts?",
     "options": [
-      "The transform map's field maps",
-      "The import set table's columns",
-      "The file type set on the data source",
-      "The import set's transform history"
+      "Transform map's field maps",
+      "Import set table's columns",
+      "File type set on the data source",
+      "Import set's transform history"
     ],
     "correct": [
       3
@@ -3315,10 +3315,10 @@
     "format": "single",
     "stem": "The CMDB holds an application CI and its database CI, but the dependency between them is missing. What needs attention?",
     "options": [
-      "The CMDB list layout",
-      "The CI relationship between them",
-      "The application CI's attributes",
-      "The class of the database CI"
+      "CMDB list layout",
+      "CI relationship between them",
+      "Application CI's attributes",
+      "Class of the database CI"
     ],
     "correct": [
       1
@@ -3336,10 +3336,10 @@
     "format": "single",
     "stem": "Teams store the same service information in different tables and use clashing terms for it. Which ServiceNow guidance should they follow?",
     "options": [
-      "The update set naming guide",
-      "The knowledge base workflow",
-      "The Common Service Data Model",
-      "The Shared Responsibility Model"
+      "Update set naming guide",
+      "Knowledge base workflow",
+      "Common Service Data Model",
+      "Shared Responsibility Model"
     ],
     "correct": [
       2
@@ -3357,10 +3357,10 @@
     "format": "single",
     "stem": "A third-party feed sends valid data, but it lands in the wrong CMDB fields. What needs correcting?",
     "options": [
-      "The CI relationships it creates",
-      "The CMDB class hierarchy",
-      "The form views for the CIs",
-      "The integration's field mapping"
+      "CI relationships it creates",
+      "CMDB class hierarchy",
+      "Form views for the CIs",
+      "Integration's field mapping"
     ],
     "correct": [
       3
@@ -3378,10 +3378,10 @@
     "format": "single",
     "stem": "Under the Shared Responsibility Model, who corrects an overly broad role an organization gave many of its users?",
     "options": [
-      "The customer",
+      "Customer",
       "ServiceNow",
-      "The data center provider",
-      "The implementation partner"
+      "Data center provider",
+      "Implementation partner"
     ],
     "correct": [
       0
@@ -3399,10 +3399,10 @@
     "format": "single",
     "stem": "Under the Shared Responsibility Model, who decides how long a business's records are kept in its instance?",
     "options": [
-      "The implementation partner's",
-      "The customer's",
+      "Implementation partner's",
+      "Customer's",
       "ServiceNow's",
-      "The hosting region's"
+      "Hosting region's"
     ],
     "correct": [
       1
@@ -3420,10 +3420,10 @@
     "format": "single",
     "stem": "Under the Shared Responsibility Model, who answers for securing the platform's data centers and infrastructure?",
     "options": [
-      "The customer's users",
-      "The application developer",
+      "Customer's users",
+      "Application developer",
       "ServiceNow",
-      "The customer's admin team"
+      "Customer's admin team"
     ],
     "correct": [
       2
@@ -3442,9 +3442,9 @@
     "stem": "Under the Shared Responsibility Model, who fixes a flaw in the access logic of a scoped app the organization built itself?",
     "options": [
       "ServiceNow",
-      "The hosting provider",
-      "The end users",
-      "The customer"
+      "Hosting provider",
+      "End users",
+      "Customer"
     ],
     "correct": [
       3
@@ -3730,10 +3730,10 @@
     "format": "single",
     "stem": "A justification field must be mandatory when a checkbox is ticked, without code. Which tool fits?",
     "options": [
-      "A UI policy",
-      "A client script",
-      "A business rule",
-      "An ACL"
+      "UI policy",
+      "Client script",
+      "Business rule",
+      "ACL"
     ],
     "correct": [
       0
@@ -3751,10 +3751,10 @@
     "format": "single",
     "stem": "Which tool runs browser code to recalculate a displayed field as soon as another field changes?",
     "options": [
-      "A scheduled job",
-      "A client script",
-      "A business rule",
-      "A data policy"
+      "Scheduled job",
+      "Client script",
+      "Business rule",
+      "Data policy"
     ],
     "correct": [
       1
@@ -3772,10 +3772,10 @@
     "format": "single",
     "stem": "A calculation must run on the server before a record is saved, however the record is submitted. Which tool fits?",
     "options": [
-      "A UI policy",
-      "A UI action",
-      "A before business rule",
-      "An onSubmit client script"
+      "UI policy",
+      "UI action",
+      "Before business rule",
+      "OnSubmit client script"
     ],
     "correct": [
       2
@@ -3793,10 +3793,10 @@
     "format": "single",
     "stem": "A finished set of configuration changes must move from the development instance to the test instance. What carries them?",
     "options": [
-      "An import set",
-      "A transform map",
-      "A form template",
-      "An update set"
+      "Import set",
+      "Transform map",
+      "Form template",
+      "Update set"
     ],
     "correct": [
       3
@@ -3814,10 +3814,10 @@
     "format": "single",
     "stem": "When should a server rule run to clean up a value just before the update is written?",
     "options": [
-      "A before business rule",
-      "An after business rule",
-      "An onSubmit client script",
-      "A scheduled job"
+      "Before business rule",
+      "After business rule",
+      "OnSubmit client script",
+      "Scheduled job"
     ],
     "correct": [
       0
@@ -3835,10 +3835,10 @@
     "format": "single",
     "stem": "When should a business rule run to update a related record in the same transaction after saving?",
     "options": [
-      "A before business rule",
-      "An after business rule",
-      "An async business rule",
-      "A display business rule"
+      "Before business rule",
+      "After business rule",
+      "Async business rule",
+      "Display business rule"
     ],
     "correct": [
       1
@@ -3856,10 +3856,10 @@
     "format": "single",
     "stem": "When should a business rule run to queue a slow server task so the user does not wait?",
     "options": [
-      "A before business rule",
-      "An onSubmit client script",
-      "An async business rule",
-      "An after business rule"
+      "Before business rule",
+      "OnSubmit client script",
+      "Async business rule",
+      "After business rule"
     ],
     "correct": [
       2
@@ -3877,10 +3877,10 @@
     "format": "single",
     "stem": "Which tool prepares extra server-side information as a record is fetched for a form?",
     "options": [
-      "A before business rule",
-      "An onLoad client script",
-      "A scheduled job",
-      "A display business rule"
+      "Before business rule",
+      "OnLoad client script",
+      "Scheduled job",
+      "Display business rule"
     ],
     "correct": [
       3
@@ -3898,10 +3898,10 @@
     "format": "single",
     "stem": "Two developers plan to move one customization to production from two source instances. What should be settled first?",
     "options": [
-      "A single development, test and production path",
-      "A shared naming convention for both sets",
+      "Single development, test and production path",
+      "Shared naming convention for both sets",
       "A list of the form views each will copy",
-      "A schedule for nightly data imports"
+      "Schedule for nightly data imports"
     ],
     "correct": [
       0
@@ -3982,10 +3982,10 @@
     "format": "single",
     "stem": "Which client script type shows a message as soon as the form opens?",
     "options": [
-      "An onLoad client script",
-      "An onChange client script",
-      "An onSubmit client script",
-      "An onCellEdit client script"
+      "OnLoad client script",
+      "OnChange client script",
+      "OnSubmit client script",
+      "OnCellEdit client script"
     ],
     "correct": [
       0
@@ -4003,10 +4003,10 @@
     "format": "single",
     "stem": "A form must update an estimate when the user changes the quantity field. Which client script type fits?",
     "options": [
-      "A before business rule",
-      "An onChange client script",
-      "An onCellEdit client script",
-      "An onLoad client script"
+      "Before business rule",
+      "OnChange client script",
+      "OnCellEdit client script",
+      "OnLoad client script"
     ],
     "correct": [
       1
@@ -4024,10 +4024,10 @@
     "format": "single",
     "stem": "Which browser-side tool runs as the form is saved and can cancel the save?",
     "options": [
-      "A before business rule",
-      "A UI policy",
-      "An onSubmit client script",
-      "An onChange client script"
+      "Before business rule",
+      "UI policy",
+      "OnSubmit client script",
+      "OnChange client script"
     ],
     "correct": [
       2
@@ -4045,10 +4045,10 @@
     "format": "single",
     "stem": "Which client script type validates a value edited directly in a list cell?",
     "options": [
-      "An onChange client script",
-      "An onSubmit client script",
-      "A data policy on the field",
-      "An onCellEdit client script"
+      "OnChange client script",
+      "OnSubmit client script",
+      "Data policy on the field",
+      "OnCellEdit client script"
     ],
     "correct": [
       3
@@ -4108,10 +4108,10 @@
     "format": "single",
     "stem": "An update set commit finished with errors, and the administrator needs the details of what failed. Where should she look?",
     "options": [
-      "The preview problems list only",
-      "The user's History menu",
-      "The update set's commit log",
-      "The source instance's system log"
+      "Preview problems list only",
+      "User's History menu",
+      "Update set's commit log",
+      "Source instance's system log"
     ],
     "correct": [
       2
@@ -4150,10 +4150,10 @@
     "format": "multi",
     "stem": "A change must warn users as they fill in a form and block bad data from any source. Choose the two tools.",
     "options": [
-      "A client script or UI policy",
-      "A data policy or business rule",
-      "An update set",
-      "A transform map"
+      "Client script or UI policy",
+      "Data policy or business rule",
+      "Update set",
+      "Transform map"
     ],
     "correct": [
       0,
@@ -4173,10 +4173,10 @@
     "format": "multi",
     "stem": "A release adds server-side validation and carries it to the test instance. Choose the two items involved.",
     "options": [
-      "An import set",
-      "A before business rule",
-      "An update set",
-      "An onChange client script"
+      "Import set",
+      "Before business rule",
+      "Update set",
+      "OnChange client script"
     ],
     "correct": [
       1,
@@ -4196,10 +4196,10 @@
     "format": "multi",
     "stem": "A rollout moves form configuration to another instance and loads a supplier spreadsheet into assets. Choose the two items involved.",
     "options": [
-      "A display business rule",
-      "A form template",
-      "An update set",
-      "An import set with a transform map"
+      "Display business rule",
+      "Form template",
+      "Update set",
+      "Import set with a transform map"
     ],
     "correct": [
       2,
@@ -4219,10 +4219,10 @@
     "format": "multi",
     "stem": "On one instance, a task adds messages while a form is edited and loads a supplier spreadsheet into assets. Nothing moves between instances. Choose the two items.",
     "options": [
-      "An import set with a transform map",
-      "An update set",
-      "An after business rule",
-      "A client script"
+      "Import set with a transform map",
+      "Update set",
+      "After business rule",
+      "Client script"
     ],
     "correct": [
       0,

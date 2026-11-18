@@ -31,10 +31,10 @@
     "skill": "Organizational ecosystem",
     "stem": "What is the organizational ecosystem?",
     "options": [
-      "The business, user and supplier groups on the project board",
-      "The people assigned to roles in the project management team",
+      "Business, user and supplier groups on the project board",
+      "People assigned to roles in the project management team",
       "The users who will operate the project's products after handover to business as usual",
-      "An organization's internal elements together with its external relationships"
+      "Organization's internal elements together with its external relationships"
     ],
     "correct": [
       3
@@ -346,10 +346,10 @@
     "skill": "Output, outcome, benefit",
     "stem": "A new online booking system goes live. Customers now book without phoning, and call costs fall by 15%. What is the fall in call costs?",
     "options": [
-      "A benefit",
-      "An outcome",
-      "An output",
-      "A capability"
+      "Benefit",
+      "Outcome",
+      "Output",
+      "Capability"
     ],
     "correct": [
       0
@@ -388,9 +388,9 @@
     "skill": "Acceptance criteria",
     "stem": "What are acceptance criteria?",
     "options": [
-      "The quality measures applied by reviewers to each specialist product in every stage of the project",
+      "Quality measures applied by reviewers to each specialist product in every stage of the project",
       "The standards the supplier uses to build its specialist products",
-      "The checks the project board makes before authorizing a stage",
+      "Checks the project board makes before authorizing a stage",
       "A prioritized list of criteria the project product must meet for the user to accept it"
     ],
     "correct": [
@@ -409,10 +409,10 @@
     "skill": "Risk owner and action owner",
     "stem": "Who is the risk owner?",
     "options": [
-      "The person who carries out an agreed action in response to a risk",
-      "The person assigned to take responsibility for responding to a risk",
-      "The project board member whose budget or area of concern the risk affects",
-      "The person who first identified the risk and recorded it"
+      "Person who carries out an agreed action in response to a risk",
+      "Person assigned to take responsibility for responding to a risk",
+      "Project board member whose budget or area of concern the risk affects",
+      "Person who first identified the risk and recorded it"
     ],
     "correct": [
       1
@@ -430,10 +430,10 @@
     "skill": "Types of issue",
     "stem": "A user asks for an extra report to be added to a system whose specification has already been approved. What type of issue is this?",
     "options": [
-      "A request for change",
-      "A business opportunity",
-      "A problem",
-      "An off-specification"
+      "Request for change",
+      "Business opportunity",
+      "Problem",
+      "Off-specification"
     ],
     "correct": [
       0
@@ -580,7 +580,7 @@
       "A cost that was left out of the business case",
       "A benefit that is realized later than planned",
       "A risk that would have a negative effect on business objectives",
-      "A measurable decline from an outcome seen as negative"
+      "Measurable decline from an outcome seen as negative"
     ],
     "correct": [
       3
@@ -682,10 +682,10 @@
     "skill": "Event-driven control",
     "stem": "Which is an example of an event-driven control?",
     "options": [
-      "A fortnightly team progress meeting",
-      "A weekly checkpoint report from a team",
-      "An end stage report at the end of a stage",
-      "A monthly highlight report to the project board"
+      "Fortnightly team progress meeting",
+      "Weekly checkpoint report from a team",
+      "End stage report at the end of a stage",
+      "Monthly highlight report to the project board"
     ],
     "correct": [
       2
@@ -808,10 +808,10 @@
     "skill": "Tailoring factors",
     "stem": "Which is a factor that influences how PRINCE2 is tailored to a project?",
     "options": [
-      "The date the project mandate arrived",
-      "The capability of the project team",
-      "The names of the project board members",
-      "The number of principles to apply"
+      "Date the project mandate arrived",
+      "Capability of the project team",
+      "Names of the project board members",
+      "Number of principles to apply"
     ],
     "correct": [
       1
@@ -892,8 +892,8 @@
     "skill": "Risk appetite",
     "stem": "What is risk appetite?",
     "options": [
-      "The money set aside to fund the responses to threats and opportunities",
-      "The combined effect of all the project's threats and opportunities",
+      "Money set aside to fund the responses to threats and opportunities",
+      "Combined effect of all the project's threats and opportunities",
       "The amount and type of risk the business will take for its objectives",
       "The threshold for each objective beyond which risk is escalated"
     ],
@@ -914,7 +914,7 @@
     "stem": "What is the project baseline?",
     "options": [
       "The first version of the project plan, kept unchanged for later comparison",
-      "The set of tolerances agreed between the board and business",
+      "Set of tolerances agreed between the board and business",
       "The list of products the project will hand over to users",
       "The current approved versions of products that are under change control"
     ],
@@ -936,8 +936,8 @@
     "options": [
       "A risk that has a high probability and impact",
       "Any change to a product after it has been approved by the board",
-      "A forecast deviation beyond the agreed tolerance levels",
-      "A request from the board for more information"
+      "Forecast deviation beyond the agreed tolerance levels",
+      "Request from the board for more information"
     ],
     "correct": [
       2
@@ -997,9 +997,9 @@
     "skill": "Project assurance",
     "stem": "Who is accountable for the project assurance of their own area of concern?",
     "options": [
-      "The project board members",
-      "The project manager",
-      "The project manager and team managers",
+      "Project board members",
+      "Project manager",
+      "Project manager and team managers",
       "Project support"
     ],
     "correct": [
@@ -1105,8 +1105,8 @@
     "options": [
       "The hierarchy of all the products to be produced during the plan",
       "The sequence in which products are produced and their dependencies",
-      "The people responsible for producing each product",
-      "The costs, durations and resources needed for each product in turn"
+      "People responsible for producing each product",
+      "Costs, durations and resources needed for each product in turn"
     ],
     "correct": [
       1
@@ -1124,10 +1124,10 @@
     "skill": "Concession",
     "stem": "A product will not meet one of its quality specifications, and the project board accepts it without corrective action. What is this called?",
     "options": [
-      "An exception plan",
-      "A concession",
-      "A request for change",
-      "A quality review"
+      "Exception plan",
+      "Concession",
+      "Request for change",
+      "Quality review"
     ],
     "correct": [
       1
@@ -1187,10 +1187,10 @@
     "skill": "Tolerance levels",
     "stem": "Who sets the work package tolerances for a team manager?",
     "options": [
-      "The business layer",
-      "The project board",
-      "The project manager",
-      "The senior supplier"
+      "Business layer",
+      "Project board",
+      "Project manager",
+      "Senior supplier"
     ],
     "correct": [
       2
@@ -1208,10 +1208,10 @@
     "skill": "Four organizational levels",
     "stem": "Which organizational level sets the project tolerances and provides the project mandate?",
     "options": [
-      "The project manager",
-      "The project board",
-      "The team managers",
-      "The business layer"
+      "Project manager",
+      "Project board",
+      "Team managers",
+      "Business layer"
     ],
     "correct": [
       3
@@ -1229,10 +1229,10 @@
     "skill": "Culture",
     "stem": "How does PRINCE2 describe culture?",
     "options": [
-      "The organization's written policies and standards for projects",
+      "Organization's written policies and standards for projects",
       "Shared attitudes, values, goals and ways of working of a group",
-      "The rules for how often reports go to the project board",
-      "The skills and experience of the project manager"
+      "Rules for how often reports go to the project board",
+      "Skills and experience of the project manager"
     ],
     "correct": [
       1
@@ -1293,10 +1293,10 @@
     "skill": "Project ecosystem",
     "stem": "What is the project ecosystem?",
     "options": [
-      "The organization's whole investment in all of its projects, programmes and other change",
-      "The business areas involved in or affected by the project, plus users and suppliers",
-      "The products and work packages delivered in a stage",
-      "The four levels of the project's management structure"
+      "Organization's whole investment in all of its projects, programmes and other change",
+      "Business areas involved in or affected by the project, plus users and suppliers",
+      "Products and work packages delivered in a stage",
+      "Four levels of the project's management structure"
     ],
     "correct": [
       1
@@ -1356,10 +1356,10 @@
     "skill": "Business case definition",
     "stem": "What does the business case document?",
     "options": [
-      "The roles and reporting lines of the project management team",
+      "Roles and reporting lines of the project management team",
       "The way the project will be tailored to its environment",
       "The products to be delivered and their quality specifications and acceptance criteria",
-      "The justification for the project, weighing costs, benefits and risks"
+      "Justification for the project, weighing costs, benefits and risks"
     ],
     "correct": [
       3
@@ -1441,7 +1441,7 @@
     "stem": "How does PRINCE2 define an issue?",
     "options": [
       "A product that has failed its quality review",
-      "A complaint raised by a stakeholder outside the project",
+      "Complaint raised by a stakeholder outside the project",
       "An uncertain event that, if it occurs, may affect the project's objectives",
       "An event relevant to the project that needs management consideration"
     ],
@@ -1462,9 +1462,9 @@
     "stem": "Who produces a checkpoint report, and for whom?",
     "options": [
       "Project assurance, for the executive",
-      "The project manager, for the project board",
-      "The project board, for the business layer",
-      "A team manager, for the project manager"
+      "Project manager, for the project board",
+      "Project board, for the business layer",
+      "Team manager, for the project manager"
     ],
     "correct": [
       3
@@ -1525,9 +1525,9 @@
     "stem": "How does PRINCE2 define a project?",
     "options": [
       "A permanent team that runs and improves an organization's business as usual services each day",
-      "A temporary organization created to deliver business products to an agreed business case",
-      "A plan of activities with fixed start and end dates agreed by a sponsor",
-      "A set of related programmes managed together to meet strategic objectives"
+      "Temporary organization created to deliver business products to an agreed business case",
+      "Plan of activities with fixed start and end dates agreed by a sponsor",
+      "Set of related programmes managed together to meet strategic objectives"
     ],
     "correct": [
       1
@@ -1566,10 +1566,10 @@
     "skill": "Initiating objectives",
     "stem": "Which document is produced in initiating a project and used by the board to authorize the project?",
     "options": [
-      "The end project report",
-      "The project mandate",
-      "The full business case",
-      "The outline business case"
+      "End project report",
+      "Project mandate",
+      "Full business case",
+      "Outline business case"
     ],
     "correct": [
       2
@@ -1608,10 +1608,10 @@
     "skill": "Outcome",
     "stem": "A council installs smart street lights (the project's product). Residents then feel safer walking at night. What is the residents feeling safer?",
     "options": [
-      "A business objective",
-      "A dis-benefit",
-      "An outcome",
-      "An output"
+      "Business objective",
+      "Dis-benefit",
+      "Outcome",
+      "Output"
     ],
     "correct": [
       2
@@ -1692,10 +1692,10 @@
     "skill": "Off-specification",
     "stem": "Testing shows a delivered product will not meet one of its agreed quality specifications. What type of issue is this?",
     "options": [
-      "A business opportunity",
-      "An off-specification",
-      "A request for change",
-      "A concern"
+      "Business opportunity",
+      "Off-specification",
+      "Request for change",
+      "Concern"
     ],
     "correct": [
       1
@@ -1734,10 +1734,10 @@
     "skill": "Change management approach",
     "stem": "Which part of the PID sets out how the project will help people move from the current state to the target state?",
     "options": [
-      "The change management approach",
-      "The issue management approach",
-      "The communication management approach",
-      "The quality management approach"
+      "Change management approach",
+      "Issue management approach",
+      "Communication management approach",
+      "Quality management approach"
     ],
     "correct": [
       0
@@ -1776,10 +1776,10 @@
     "skill": "Team manager",
     "stem": "To whom does a team manager report?",
     "options": [
-      "The executive",
-      "The project board",
-      "The project manager",
-      "The senior supplier"
+      "Executive",
+      "Project board",
+      "Project manager",
+      "Senior supplier"
     ],
     "correct": [
       2
@@ -1863,7 +1863,7 @@
       "Every team plan",
       "Every stage plan",
       "Every exception plan only",
-      "The project plan only"
+      "Project plan only"
     ],
     "correct": [
       3
@@ -2007,10 +2007,10 @@
     "skill": "Work breakdown structure",
     "stem": "What links the product breakdown structure to the work packages?",
     "options": [
-      "The project management team structure",
-      "The quality register",
-      "The work breakdown structure",
-      "The product flow diagram"
+      "Project management team structure",
+      "Quality register",
+      "Work breakdown structure",
+      "Product flow diagram"
     ],
     "correct": [
       2
@@ -2049,7 +2049,7 @@
     "skill": "Collaboration",
     "stem": "In PRINCE2, what is collaboration?",
     "options": [
-      "The project board meeting to approve a stage plan",
+      "Project board meeting to approve a stage plan",
       "Suppliers agreeing a contract with the commissioning business",
       "People across the project ecosystem working together to the objectives",
       "Team managers sending regular checkpoint reports to the project manager"
@@ -2070,10 +2070,10 @@
     "skill": "How the method is applied",
     "stem": "Initiating a project ensures a common understanding of how the project applies business policies, methods and guidance. Which management product brings this initiation information together to gain authorization for the project?",
     "options": [
-      "The daily log",
-      "The lessons log",
-      "The communication management approach",
-      "The project initiation documentation"
+      "Daily log",
+      "Lessons log",
+      "Communication management approach",
+      "Project initiation documentation"
     ],
     "correct": [
       3
@@ -2091,10 +2091,10 @@
     "skill": "Sustainability management approach",
     "stem": "What does the sustainability management approach define?",
     "options": [
-      "The suppliers allowed to work on the project",
+      "Suppliers allowed to work on the project",
       "Actions, reviews and controls to meet sustainability targets",
       "The environmental benefits that will help to pay for the project",
-      "The tolerance for the project's overall cost"
+      "Tolerance for the project's overall cost"
     ],
     "correct": [
       1
@@ -2134,9 +2134,9 @@
     "stem": "What does a product description include?",
     "options": [
       "The names of the people who will accept the product",
-      "The product's purpose, composition and quality specifications",
+      "Product's purpose, composition and quality specifications",
       "The risks and issues raised while the team was building the product",
-      "The product's cost, schedule and resource allocation"
+      "Product's cost, schedule and resource allocation"
     ],
     "correct": [
       1
@@ -2175,8 +2175,8 @@
     "skill": "Change budget",
     "stem": "What is a change budget?",
     "options": [
-      "The cost tolerance agreed for a stage",
-      "The total project budget approved by the board",
+      "Cost tolerance agreed for a stage",
+      "Total project budget approved by the board",
       "Money set aside to fund planned responses to threats and opportunities",
       "Money or authorized constraints set aside to cover changes"
     ],
@@ -2259,10 +2259,10 @@
     "skill": "Role combinations",
     "stem": "On a small project, which role combination does PRINCE2 allow?",
     "options": [
-      "The project manager also doing the team manager role",
+      "Project manager also doing the team manager role",
       "Project support also doing project assurance",
-      "The executive also performing the project manager role",
-      "The project manager also doing user assurance"
+      "Executive also performing the project manager role",
+      "Project manager also doing user assurance"
     ],
     "correct": [
       0
@@ -2584,10 +2584,10 @@
     "skill": "Leading change",
     "stem": "What does PRINCE2 say is needed to deliver the change that a project introduces?",
     "options": [
-      "A fixed-price contract",
+      "Fixed-price contract",
       "Effective leadership",
-      "A single delivery method",
-      "A large project board"
+      "Single delivery method",
+      "Large project board"
     ],
     "correct": [
       1
@@ -2605,10 +2605,10 @@
     "skill": "Time-driven control",
     "stem": "Which is an example of a time-driven control?",
     "options": [
-      "An end stage report at the end of a stage",
-      "A highlight report sent every two weeks",
-      "An exception report after a forecast breach",
-      "An end project report at closure"
+      "End stage report at the end of a stage",
+      "Highlight report sent every two weeks",
+      "Exception report after a forecast breach",
+      "End project report at closure"
     ],
     "correct": [
       1
@@ -2648,9 +2648,9 @@
     "stem": "How does PRINCE2 define quality?",
     "options": [
       "The degree to which a product was delivered on time",
-      "The agreement of the users that they like the finished product overall",
-      "The absence of any defects in the finished product",
-      "The degree to which inherent characteristics fulfil requirements"
+      "Agreement of the users that they like the finished product overall",
+      "Absence of any defects in the finished product",
+      "Degree to which inherent characteristics fulfil requirements"
     ],
     "correct": [
       3
@@ -2668,10 +2668,10 @@
     "skill": "Cause, event, effect",
     "stem": "A risk is written as: 'Because the venue has no backup generator, a power cut may stop the event, delaying the launch.' What is 'a power cut may stop the event'?",
     "options": [
-      "The risk response",
-      "The risk cause",
-      "The risk effect",
-      "The risk event"
+      "Risk response",
+      "Risk cause",
+      "Risk effect",
+      "Risk event"
     ],
     "correct": [
       3
@@ -2689,10 +2689,10 @@
     "skill": "Problem",
     "stem": "Which type of issue has an immediate and negative impact?",
     "options": [
-      "A concern",
-      "A problem",
-      "A request for change",
-      "An off-specification"
+      "Concern",
+      "Problem",
+      "Request for change",
+      "Off-specification"
     ],
     "correct": [
       1
@@ -2712,7 +2712,7 @@
     "options": [
       "A limit on how much a plan may deviate before escalation",
       "A task the project manager must complete in each stage",
-      "A measurable outcome showing progress toward the organization's strategy",
+      "Measurable outcome showing progress toward the organization's strategy",
       "A product that the project must deliver to gain the users' formal acceptance"
     ],
     "correct": [
@@ -2731,10 +2731,10 @@
     "skill": "Project manager authority",
     "stem": "Within what does the project manager run the project on behalf of the project board?",
     "options": [
-      "The agreed project tolerances and constraints",
-      "The risk appetite of the senior supplier",
-      "The work package tolerances set by team managers",
-      "The budget agreed with project support"
+      "Agreed project tolerances and constraints",
+      "Risk appetite of the senior supplier",
+      "Work package tolerances set by team managers",
+      "Budget agreed with project support"
     ],
     "correct": [
       0
@@ -2773,10 +2773,10 @@
     "skill": "Project mandate",
     "stem": "What triggers starting up a project?",
     "options": [
-      "The project mandate",
+      "Project mandate",
       "The first highlight report",
-      "The project initiation documentation",
-      "The project brief"
+      "Project initiation documentation",
+      "Project brief"
     ],
     "correct": [
       0
@@ -2857,10 +2857,10 @@
     "skill": "Schedule",
     "stem": "In PRINCE2, what is a schedule?",
     "options": [
-      "The record of the time-driven reports sent to the project board",
+      "Record of the time-driven reports sent to the project board",
       "A list of the products to be produced during a plan",
-      "A description of a product's quality specifications",
-      "A graphical representation of a plan, such as a Gantt chart"
+      "Description of a product's quality specifications",
+      "Graphical representation of a plan, such as a Gantt chart"
     ],
     "correct": [
       3
@@ -2920,10 +2920,10 @@
     "skill": "Business opportunity issue",
     "stem": "A team finds that a component it built can also be sold to another department, a positive result nobody expected. What type of issue is this?",
     "options": [
-      "A business opportunity",
-      "A concession",
-      "A request for change",
-      "A newly identified opportunity risk"
+      "Business opportunity",
+      "Concession",
+      "Request for change",
+      "Newly identified opportunity risk"
     ],
     "correct": [
       0
@@ -2962,10 +2962,10 @@
     "skill": "Output",
     "stem": "In PRINCE2, what is an output?",
     "options": [
-      "The tangible or intangible deliverable of an activity",
-      "The measurable improvement from an outcome",
-      "The completed set of project outputs needed for an outcome",
-      "The result of change in real-world behaviour"
+      "Tangible or intangible deliverable of an activity",
+      "Measurable improvement from an outcome",
+      "Completed set of project outputs needed for an outcome",
+      "Result of change in real-world behaviour"
     ],
     "correct": [
       0
@@ -2983,10 +2983,10 @@
     "skill": "Change authority",
     "stem": "The project board delegates the review of small requests for change to a nominated group with a budget. What is this group called?",
     "options": [
-      "A project assurance team",
-      "A project office",
+      "Project assurance team",
+      "Project office",
       "Project support",
-      "A change authority"
+      "Change authority"
     ],
     "correct": [
       3
@@ -3025,10 +3025,10 @@
     "skill": "Business justification over time",
     "stem": "What does the business justification principle require of a project?",
     "options": [
-      "A justification reviewed only when the project closes",
-      "A justification written only for projects with external suppliers",
-      "A justification to start and an ongoing one to its completion",
-      "A justification approved once by the business before start-up"
+      "Justification reviewed only when the project closes",
+      "Justification written only for projects with external suppliers",
+      "Justification to start and an ongoing one to its completion",
+      "Justification approved once by the business before start-up"
     ],
     "correct": [
       2
@@ -3046,10 +3046,10 @@
     "skill": "Impact on project performance",
     "stem": "What does PRINCE2 say a project's performance depends on?",
     "options": [
-      "The seniority of the people on the project board",
-      "The number of management products the project produces",
+      "Seniority of the people on the project board",
+      "Number of management products the project produces",
       "How closely the project team follows the whole method without any tailoring",
-      "The team's capability, its relationships and the people the change affects"
+      "Team's capability, its relationships and the people the change affects"
     ],
     "correct": [
       3
@@ -3172,10 +3172,10 @@
     "skill": "Issue register",
     "stem": "Who should monitor the issue register on a regular basis?",
     "options": [
-      "The senior user",
-      "The project assurance team",
-      "The project manager",
-      "The team manager"
+      "Senior user",
+      "Project assurance team",
+      "Project manager",
+      "Team manager"
     ],
     "correct": [
       2
@@ -3214,10 +3214,10 @@
     "skill": "Project brief",
     "stem": "Which management product supports the business case practice by giving the project a well-defined starting point?",
     "options": [
-      "The checkpoint report",
-      "The quality register",
-      "The issue register",
-      "The project brief"
+      "Checkpoint report",
+      "Quality register",
+      "Issue register",
+      "Project brief"
     ],
     "correct": [
       3
@@ -3235,10 +3235,10 @@
     "skill": "Commercial management approach",
     "stem": "Which part of the PID describes the organizational and commercial arrangements with suppliers?",
     "options": [
-      "The commercial management approach",
-      "The communication management approach",
-      "The benefits management approach",
-      "The quality management approach"
+      "Commercial management approach",
+      "Communication management approach",
+      "Benefits management approach",
+      "Quality management approach"
     ],
     "correct": [
       0
@@ -3298,10 +3298,10 @@
     "skill": "Forecast",
     "stem": "In PRINCE2, what is a forecast?",
     "options": [
-      "A prediction made by studying historical data and past patterns",
-      "A record of the products accepted so far",
-      "A plan that replaces the current stage plan after an exception occurs",
-      "A target set by the business for the project"
+      "Prediction made by studying historical data and past patterns",
+      "Record of the products accepted so far",
+      "Plan that replaces the current stage plan after an exception occurs",
+      "Target set by the business for the project"
     ],
     "correct": [
       0
@@ -3361,7 +3361,7 @@
     "skill": "Requirement",
     "stem": "In PRINCE2, what is a requirement?",
     "options": [
-      "A contract term agreed with an external supplier",
+      "Contract term agreed with an external supplier",
       "A limit on cost that must not be exceeded",
       "A wish from a user that has not yet been written down or agreed",
       "A need or expectation documented in an approved management product"
@@ -3382,7 +3382,7 @@
     "skill": "Residual risk",
     "stem": "What is residual risk?",
     "options": [
-      "A risk left over from a previous project",
+      "Risk left over from a previous project",
       "A risk that has already occurred and turned into an issue",
       "The risk remaining after a response has been applied",
       "A risk that nobody has been assigned to own"
@@ -3573,7 +3573,7 @@
     "options": [
       "The list of users who will receive the products from each stage plan",
       "The money set aside in a plan to cover changes",
-      "The product, delivery and management activities in an approved plan",
+      "Product, delivery and management activities in an approved plan",
       "The period over which the benefits are realized"
     ],
     "correct": [
@@ -3593,9 +3593,9 @@
     "stem": "What are quality specifications?",
     "options": [
       "The quality measures and the levels a finished product must meet",
-      "The independent checks the business makes on the project",
-      "The prioritized list of criteria for accepting the project product",
-      "The user's general statement of the quality they expect"
+      "Independent checks the business makes on the project",
+      "Prioritized list of criteria for accepting the project product",
+      "User's general statement of the quality they expect"
     ],
     "correct": [
       0
@@ -3949,9 +3949,9 @@
     "skill": "Lesson",
     "stem": "In PRINCE2, what is a lesson?",
     "options": [
-      "A request to the project board for its approval to close the project at the end",
-      "A minor problem or concern that the project manager handles informally in the daily log",
-      "A quality check carried out on a specialist product during a stage of the project",
+      "Request to the project board for its approval to close the project at the end",
+      "Minor problem or concern that the project manager handles informally in the daily log",
+      "Quality check carried out on a specialist product during a stage of the project",
       "Information that helps this or other projects and promotes learning"
     ],
     "correct": [
@@ -3991,10 +3991,10 @@
     "skill": "Project context",
     "stem": "A project is part of a programme, uses an external supplier under contract and must meet strict environmental targets. Which integrated element of PRINCE2 covers these circumstances?",
     "options": [
-      "The organizing practice",
-      "The people",
-      "The project context",
-      "The processes"
+      "Organizing practice",
+      "People",
+      "Project context",
+      "Processes"
     ],
     "correct": [
       2
@@ -4098,8 +4098,8 @@
     "options": [
       "The chance that a given risk will occur at some point during the current stage",
       "The amount and type of risk the business is willing to take overall",
-      "The length of time between a risk occurring and its effect being felt",
-      "A measurable threshold for the tolerable range of outcomes per objective"
+      "Length of time between a risk occurring and its effect being felt",
+      "Measurable threshold for the tolerable range of outcomes per objective"
     ],
     "correct": [
       3
@@ -4117,10 +4117,10 @@
     "skill": "Issue management approach",
     "stem": "Which management product describes how issues will be handled and changes controlled on the project?",
     "options": [
-      "The communication management approach",
-      "The issue register",
-      "The issue management approach",
-      "The risk management approach"
+      "Communication management approach",
+      "Issue register",
+      "Issue management approach",
+      "Risk management approach"
     ],
     "correct": [
       2
@@ -4180,10 +4180,10 @@
     "skill": "Dashboard",
     "stem": "In PRINCE2, what is a dashboard?",
     "options": [
-      "A plan showing every product and its dependencies",
-      "A graphic summary of key decision-support data on progress",
-      "A formal report that replaces the highlight report each week",
-      "A list of open issues sorted by priority"
+      "Plan showing every product and its dependencies",
+      "Graphic summary of key decision-support data on progress",
+      "Formal report that replaces the highlight report each week",
+      "List of open issues sorted by priority"
     ],
     "correct": [
       1

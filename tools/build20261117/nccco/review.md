@@ -272,3 +272,21 @@ The bank was first built as option "families" (four questions sharing one option
 - NCCCO-CHART-013: too easy (stem gave the conversion). Now 1.5 short tons, no conversion given; distractors 1.5 tonnes (3,307 lb), 1.5 long tons (3,360 lb), 1,500 lb.
 - NCCCO-CHART-028: key said "reach" for a hook-height shortfall; now "The hook height falls 6 ft short", explanation shows 76 - 70.
 - NCCCO-CHART-036: stem now states the 7 ft move is straight outward along the radius line.
+
+## Stem trim, 2026-11-18
+
+Median stem length cut from 20 words to 15 (peers: OSHA 14, forklift 12). 167 of 200 stems shortened in the source files and the bank rebuilt; keys, options and explanations unchanged, and every load chart, reeving and radius question keeps the numbers its calculation needs. Option reuse, answer patterns, check_banks and validate_bank all pass.
+
+## Review after stem trim (blind, Opus), 2026-11-18
+A blind reviewer answered the 167 shortened stems: 166 of 167 agreed with the key. I adjudicated 15 listed questions and checked the rules on osha.gov (1926.1411 Table T and (b), 1926.1413(a)(2)(ii)(A)).
+- NCCCO-TECH-025 (the one disagreement): key right. OSHA's 1926.1413(a)(2)(ii)(A)(2) reads "two randomly distributed broken wires in six rope diameters"; the reviewer used ASME B30.5's "more than two". Stem now says "Under OSHA" up front, and the explanation cites the paragraph and notes the ASME wording.
+- NCCCO-SITE-015: Table T is "while traveling with no load" with the boom lowered sufficiently under (b). Stem now names both conditions.
+- NCCCO-CHART-007: key reworded to "The lowest rating of any sector it passes"; explanation says the lowest governs.
+- NCCCO-OPS-053: near-duplicate of CHART-009 (loaded radius from deflection). Replaced with a question on when operating radius is taken (with the load on the hook), with its own options.
+- NCCCO-SITE-042: key "suitable support points" was vague and "under the connecting pins" could be a specified point. Key now "Where the assembly procedures specify"; distractors lacing at midspan, most level ground, one central point.
+- NCCCO-OPS-028: "employer's recipient" replaced with 1417(j)'s "employer's designated person". Key unchanged.
+- NCCCO-OPS-040: key "specified shutdown steps" vague; now "Follow the manufacturer's securing procedure".
+- NCCCO-OPS-045: key now "Measure the radius or angle directly".
+- NCCCO-CHART-042: key echoed the stem's "beam"; options now its full 1,000 lb, half shared with the hook, nothing as rigging, only its lugs.
+- NCCCO-SITE-002, SITE-029, SITE-031, OPS-011, TECH-042, CHART-004: no problem; keys match the rules and no option is a second defensible answer (no option for SITE-002 names the employer).
+Rebuilt; median stem 15 words. Option reuse, answer patterns, check_banks and validate_bank all pass.

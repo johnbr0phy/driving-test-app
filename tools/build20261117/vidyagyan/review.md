@@ -223,3 +223,24 @@ Blind agreement: 160/160. Seven questions were listed for wording; no key change
 | VIDYAGYAN-REASONING-038 | Ambiguous | Red-herring "fourth from the front" sentence and "including that child" removed; asks how many stand behind the child third from the front. |
 
 Checks after rebuild: option reuse and stem echo OK (gain -1.2), answer patterns none, check_banks PASS, validate_v2_bank 0 problems.
+
+## Stem trim, 2026-11-18
+
+Median stem length cut from 15 words to 12 (peers JNVST 12, AISSEE 13). 111 stems changed: scenario wrapping and filler dropped, simpler words for a 9-year-old; reading passages and the facts each reasoning puzzle needs kept. Keys and options unchanged. Two stems reworded again so the key is not the only option echoing the stem (SCIENCE-014, SCIENCE-026). All checks pass (stem length, option reuse, answer patterns, check_banks, validate_v2_bank).
+
+## Review after stem trim (blind, Opus), 2026-11-18
+
+A blind reviewer answered every question changed by the stem trim: 111/111 agreed with the key. Eight questions were listed for wording; no key changed.
+
+| Question | Verdict | Change |
+|---|---|---|
+| VIDYAGYAN-ENGLISH-007 | Wording | "If it is fine tomorrow" became "If it is sunny tomorrow", since "fine" for weather may be unfamiliar to a 9-year-old. |
+| VIDYAGYAN-ENGLISH-021 | Wording | "How did she act?" (which invites an adverb) became "Which word describes her?" to fit the adjective options. |
+| VIDYAGYAN-SCIENCE-013 | No problem | The science pool covers everyday and community knowledge by design (see validation.md); the item is clear. |
+| VIDYAGYAN-SCIENCE-026 | Two defensible answers | A lamp also warms, so "Warmth of the room" was replaced by "Size of the pot". |
+| VIDYAGYAN-REASONING-011 | Wording | "every edge point" became "every point on its edge". |
+| VIDYAGYAN-REASONING-019 | No problem | Easy by design for the age; the rule is stated and the answer is unambiguous. |
+| VIDYAGYAN-REASONING-026 | Ambiguous | "Lessons are three days apart" (countable as Saturday, Sunday, Monday) became "A lesson is on Saturday. The next lesson is three days later. Which day is it?" |
+| VIDYAGYAN-REASONING-034 | Missing fact | Stem now says each colour is a bag ("The green bag is lighter than the blue bag..."). |
+
+Checks after rebuild: stem length median 12 words; option reuse and stem echo OK (gain -1.2); answer patterns none; check_banks PASS; validate_v2_bank 0 problems.

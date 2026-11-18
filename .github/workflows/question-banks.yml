@@ -57,6 +57,13 @@ jobs:
         # older banks over a limit; they may only get better.
         run: python3 -I tools/check_option_reuse.py --all --baseline tools/option_reuse_baseline.json
 
+      - name: Question stems are not padded (blocking)
+        # The Nov 2026 batch ran 20 to 26 words per stem against a site median
+        # of 14, from scenario wrapping and stacked qualifiers. A bank's median
+        # may not exceed 20 words; older banks over it are in the baseline and
+        # may only get shorter.
+        run: python3 -I tools/check_stem_length.py --all --baseline tools/stem_length_baseline.json
+
       - name: Freshness registry is well formed (blocking)
         run: python3 -I tools/check_freshness.py
 

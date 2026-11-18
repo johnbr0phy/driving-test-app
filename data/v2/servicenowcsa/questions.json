@@ -8,7 +8,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An analyst bookmarked a handful of pages she opens every morning and wants only that hand-picked set, not every page she has opened. Where in the Next Experience header should she look?",
+    "stem": "Which Next Experience header menu holds only the pages a user has starred?",
     "options": [
       "The Favorites menu",
       "The History menu",
@@ -29,7 +29,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user opened an incident an hour ago, did not star it and cannot remember its number. Which header menu is designed to retrace pages and records visited recently?",
+    "stem": "Which header menu retraces recently visited pages and records that were never starred?",
     "options": [
       "Global search",
       "History",
@@ -50,7 +50,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An agent who has the right roles wants to open the dedicated agent experience for service operations from the unified navigation header. Which menu lists the experiences of that kind open to him?",
+    "stem": "Which header menu lists the dedicated agent experiences a user can open, such as for service operations?",
     "options": [
       "Favorites",
       "Help",
@@ -71,7 +71,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator remembers that a module is called something like \"Dictionary\" and wants to jump to it from the application list. What is the quickest way to narrow the entries in the All menu?",
+    "stem": "What is the quickest way to find a module named something like \"Dictionary\" in the All menu?",
     "options": [
       "Run a global search for the word",
       "Open the History menu",
@@ -92,7 +92,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A coordinator needs to compare number, priority and assignment group across many incidents at once before opening any of them. Which interface shows them side by side?",
+    "stem": "Which interface shows number, priority and assignment group for many incidents side by side?",
     "options": [
       "The incident list",
       "The incident form",
@@ -113,7 +113,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A technician must review and edit every field of one incident, including fields that are not columns in the list. Which interface fits?",
+    "stem": "Which interface shows every field of one incident for editing, including fields that are not list columns?",
     "options": [
       "The list editor in a cell",
       "The incident form",
@@ -134,7 +134,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user remembers a distinctive phrase from a record but not which application or table holds it. Which feature looks for that phrase in records from every application?",
+    "stem": "Which feature finds a remembered phrase in records from any application or table?",
     "options": [
       "A list filter on the incident table",
       "A search of the Favorites menu",
@@ -155,7 +155,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user wants larger text and a different theme for their own sessions without changing what colleagues see. Where should they make the change?",
+    "stem": "Where does a user set larger text and a different theme for their own sessions only?",
     "options": [
       "The System Properties module",
       "The form layout of the user table",
@@ -176,7 +176,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A tester cannot find a record he just created, then notices the browser address is the production URL rather than the test URL. What explains the missing record?",
+    "stem": "A tester cannot find a record he just created, and the browser shows the production URL, not the test URL. Why?",
     "options": [
       "He is working on a different instance",
       "He is in the wrong application scope",
@@ -197,7 +197,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A developer is about to create a table for the Facilities app, but the scope picker in the header still shows Global. What must be changed first?",
+    "stem": "The scope picker shows Global, but a new table must belong to the Facilities app. What must change first?",
     "options": [
       "The impersonated user",
       "The current application scope",
@@ -218,7 +218,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "While reproducing a ticket, an administrator notices that the header still shows a colleague's name from an earlier test. What must be ended before continuing other work?",
+    "stem": "An administrator's header still shows a colleague's name from an earlier test. What must end before other work?",
     "options": [
       "The current update set",
       "The selected application scope",
@@ -239,7 +239,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Two agents with the same roles open the same incident, but each sees a different arrangement of fields. Which setting should be compared first?",
+    "stem": "Two agents with the same roles see different field arrangements on the same incident. What should be compared first?",
     "options": [
       "The ACLs on the incident table",
       "The application scope of each session",
@@ -260,7 +260,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user can open an approved page from a direct link but cannot find its entry anywhere in the All menu. What should the administrator check first?",
+    "stem": "A user opens a page from a direct link but finds no entry in the All menu. What should be checked first?",
     "options": [
       "The application menu or module settings",
       "The read ACL on the target table",
@@ -281,7 +281,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A module is visible in the All menu, but opening one confidential record gives a security message. What should the administrator investigate?",
+    "stem": "A module shows in the All menu, but one confidential record gives a security message. What should be investigated?",
     "options": [
       "The column layout of the incident list",
       "The ACLs that control access to that record",
@@ -302,7 +302,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user reports that the incident list is missing records. The breadcrumb shows Active = true and the missing records are closed. The user has read access. What explains the result?",
+    "stem": "The incident list breadcrumb shows Active = true, and closed records are missing. The user has read access. Why?",
     "options": [
       "A personalized column layout",
       "A different form view",
@@ -323,7 +323,7 @@
     "skill": "navigation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Only Maria sees an unusual set of columns on the incident list, and Reset to column defaults restores the usual columns for her. What caused the difference?",
+    "stem": "Only Maria sees unusual incident list columns, and Reset to column defaults fixes it. What caused the difference?",
     "options": [
       "A change to the shared list layout",
       "A list control setting for the table",
@@ -344,7 +344,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team asks for a plugin to be turned on, but another administrator may already have done it. What should be done before planning another activation?",
+    "stem": "Another administrator may already have activated a requested plugin. What should be done before planning activation?",
     "options": [
       "Check whether it is already active",
       "Submit an activation request to ServiceNow",
@@ -365,7 +365,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "The details page for an application lists other plugins it needs. What should be reviewed before installing it?",
+    "stem": "An application's details page lists other plugins it needs. What should be reviewed before installing it?",
     "options": [
       "Its default update set",
       "Its required dependencies",
@@ -386,7 +386,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A plugin cannot be activated from the instance by the administrator, and the documentation says ServiceNow must turn it on. What should the administrator do?",
+    "stem": "The documentation says ServiceNow must activate a plugin the administrator cannot activate. What should the administrator do?",
     "options": [
       "Import it through an import set",
       "Copy it from another instance in an update set",
@@ -407,7 +407,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An approved plugin changes an existing business process. A sub-production instance is available. What should happen before it is activated in production?",
+    "stem": "An approved plugin changes an existing business process. What should happen before it is activated in production?",
     "options": [
       "Activate it in production during a quiet hour",
       "Clone production over the sub-production instance",
@@ -428,7 +428,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "One agent wants the list text to appear more compact in her own sessions without changing the layout for anyone else. What should she change?",
+    "stem": "An agent wants more compact list text in her own sessions only. What should she change?",
     "options": [
       "A setting in her own preferences",
       "A system property for list density",
@@ -449,7 +449,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Marketing wants the company logo in the header of every user's screen. What kind of change is this?",
+    "stem": "Marketing wants the company logo in every user's header. What kind of change is this?",
     "options": [
       "A UI policy on the user table",
       "An instance branding change",
@@ -470,7 +470,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A support team needs a named arrangement of incident fields, called Triage, that shows only the fields they use. What should be configured?",
+    "stem": "A support team needs a named Triage arrangement showing only the incident fields they use. What should be configured?",
     "options": [
       "A personal list layout",
       "A new incident table",
@@ -491,7 +491,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A justification field must become mandatory only when the request type is Hardware, and this should be done without code. Which tool fits?",
+    "stem": "A justification field must be mandatory only when the request type is Hardware, without code. Which tool fits?",
     "options": [
       "An onLoad client script",
       "A before business rule",
@@ -512,7 +512,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An authorized administrator needs to see exactly what one agent sees in order to reproduce a reported problem. Which feature fits?",
+    "stem": "An administrator needs to see exactly what one agent sees to reproduce a problem. Which feature fits?",
     "options": [
       "Impersonate User from the user menu",
       "Elevate Role from the user menu",
@@ -533,7 +533,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator has the security_admin role assigned but must activate it before editing an ACL. Which action does that?",
+    "stem": "An administrator holds security_admin but must activate it before editing an ACL. Which action does that?",
     "options": [
       "Log out and log back in",
       "Elevate Role in the user menu",
@@ -554,7 +554,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "After testing a problem as another user, an administrator needs to continue work under her own identity. What should she do?",
+    "stem": "After testing as another user, an administrator must resume work as herself. What should she do?",
     "options": [
       "Change the current update set",
       "Clear the list filter",
@@ -575,7 +575,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user cannot perform a task that colleagues in the same job can. Impersonation reproduced the problem. What should the administrator review next?",
+    "stem": "Impersonation confirms a user cannot do a task that colleagues in the same job can. What should be reviewed next?",
     "options": [
       "The user's Favorites and History",
       "The form view the user has selected",
@@ -596,7 +596,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A new table must belong to the Finance application, not to Global. What should be confirmed before creating it?",
+    "stem": "A new table must belong to Finance, not Global. What should be confirmed before creating it?",
     "options": [
       "The current application scope is Finance",
       "The current update set is named Finance",
@@ -617,7 +617,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator has several in-progress update sets and wants the next configuration changes captured in one of them. What must be set?",
+    "stem": "An administrator has several in-progress update sets. What decides which one captures the next configuration changes?",
     "options": [
       "The import set row filter",
       "The current update set",
@@ -638,9 +638,9 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A change is approved for the test instance only. What should the administrator check before applying it to avoid touching production?",
+    "stem": "A change is approved for the test instance only. What confirms the right instance is open?",
     "options": [
-      "The time zone in her preferences",
+      "The time zone in user preferences",
       "The name of the current update set",
       "The URL in the browser address bar",
       "The form view that is selected"
@@ -659,7 +659,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A feature described in the documentation for a newer version is missing on an instance where everything else is configured. What should be compared with the documentation?",
+    "stem": "A feature in the newer-version documentation is missing on an otherwise configured instance. What should be compared?",
     "options": [
       "The administrator's personal preferences",
       "The column layout of the incident list",
@@ -680,7 +680,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A list layout change shows for the administrator who made it, but colleagues with the same roles still see the old columns. What is the likely cause?",
+    "stem": "A list layout change shows for its author, but colleagues with the same roles see the old columns. Why?",
     "options": [
       "She personalized her own list, not the shared layout",
       "A read ACL on each column hides them from others",
@@ -701,7 +701,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A catalog change works when tested as an admin, but agents without admin cannot complete it. What testing gap should be closed?",
+    "stem": "A catalog change works when tested as admin but fails for agents without admin. What testing gap should be closed?",
     "options": [
       "Test with the security_admin role elevated",
       "Test while impersonating a typical agent",
@@ -722,7 +722,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A newly installed application is missing a feature, and its documentation says that feature needs another plugin. What should be checked?",
+    "stem": "A new application lacks a feature that its documentation says needs another plugin. What should be checked?",
     "options": [
       "Its business rules' order values",
       "The admin's list personalization",
@@ -743,7 +743,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Instructions describe a control on the classic incident form, but the agent works in Service Operations Workspace and cannot find it. What should be checked?",
+    "stem": "Instructions describe a control on the classic incident form, but the agent uses Service Operations Workspace. What should be checked?",
     "options": [
       "Whether the agent has a read ACL on incident",
       "Whether the incident list has a filter applied",
@@ -764,7 +764,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A request says only \"make the instance easier to use\" with no users, screens or outcome named. What should come first?",
+    "stem": "A request says only \"make the instance easier to use\". What should come first?",
     "options": [
       "Agree and write down the specific requirement",
       "Create a UI policy for the incident form",
@@ -806,7 +806,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator saved a new UI policy but has not opened the form to see whether the field really becomes mandatory. What is still needed?",
+    "stem": "A new UI policy is saved but has not been tried on the form. What is still needed?",
     "options": [
       "Move it straight to production",
       "Mark the update set as Complete",
@@ -827,7 +827,7 @@
     "skill": "configuration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A configuration passed acceptance testing. Support staff will need to understand it when they troubleshoot later. What closes the work?",
+    "stem": "A configuration passed acceptance testing, and support must understand it later. What closes the work?",
     "options": [
       "Delete the update set that was used",
       "Clear the UI policy description field",
@@ -848,7 +848,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Agents want to see the assignment group next to the number on the incident list without opening each record. What should be changed?",
+    "stem": "Agents want the assignment group beside the number on the incident list. What should be changed?",
     "options": [
       "Add a column to the incident list layout",
       "Add a section to the incident form",
@@ -869,7 +869,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A shared incident form needs a new Resolution section that groups several existing fields. What should be configured?",
+    "stem": "A shared incident form needs a Resolution section grouping existing fields. What should be configured?",
     "options": [
       "A personal list personalization",
       "The form layout for that view",
@@ -890,7 +890,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A technician often creates the same type of incident with the same category, priority and short description. What feature fills in those values for him?",
+    "stem": "Which feature fills in the same category, priority and short description for a technician's repeated incidents?",
     "options": [
       "A default value in the dictionary",
       "A dictionary override",
@@ -911,7 +911,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user record should show the incidents where that user is the caller, below the main fields. What should be added to the user form?",
+    "stem": "What should be added to the user form to list the incidents where that user is the caller?",
     "options": [
       "A reference field",
       "A dot-walked field",
@@ -932,7 +932,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A list must show incidents that are active and also assigned to the Network group. How should the two conditions be combined?",
+    "stem": "How should conditions be combined to list incidents that are active and also assigned to Network?",
     "options": [
       "AND",
       "OR",
@@ -953,7 +953,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A review should include incidents assigned to the Database group or to the Network group. How should the two conditions be joined?",
+    "stem": "How should conditions be joined to include incidents assigned to Database or to Network?",
     "options": [
       "Is not",
       "OR",
@@ -995,7 +995,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A filter on incidents must use the department of the referenced caller, a field that is not stored on the incident itself. How is that field selected?",
+    "stem": "How does an incident filter use the caller's department, which is not stored on the incident?",
     "options": [
       "Add a Department column to incident",
       "Use a related list condition on users",
@@ -1016,7 +1016,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A list holds six records. Three are active; two of those three belong to Support. The other three are inactive. How many records match Active is true AND Group is Support?",
+    "stem": "Six records: three active, two of those in Support, and three inactive. How many match Active is true AND Group is Support?",
     "options": [
       "2",
       "3",
@@ -1037,7 +1037,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Five records have these Priority and Assigned to values: (High, Lee), (Low, empty), (High, empty), (Low, Kim), (Low, Pat). How many match Priority is High OR Assigned to is empty?",
+    "stem": "Records (Priority, Assigned to): (High, Lee), (Low, empty), (High, empty), (Low, Kim), (Low, Pat). How many match Priority is High OR Assigned to is empty?",
     "options": [
       "1",
       "3",
@@ -1058,7 +1058,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Seven records are in a list: three Closed, two Open and two Pending. A filter excludes Closed records and has no other condition. How many records remain?",
+    "stem": "Of seven records, three are Closed, two Open and two Pending. How many remain if only Closed is excluded?",
     "options": [
       "2",
       "7",
@@ -1079,7 +1079,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Eight requests each reference one caller. Five callers are in Sales and three in Finance. How many requests match the condition Caller.Department is Sales?",
+    "stem": "Eight requests have callers: five in Sales, three in Finance. How many match Caller.Department is Sales?",
     "options": [
       "3",
       "8",
@@ -1100,7 +1100,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team wants a board that mixes personal to-dos with incidents and changes, with lanes they name and move themselves. Which Visual Task Board type fits?",
+    "stem": "Which Visual Task Board type mixes personal to-dos with incidents and changes in lanes the team names?",
     "options": [
       "Freeform",
       "Guided",
@@ -1121,7 +1121,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A manager wants board lanes that match the State values of the underlying incidents, so moving a card updates the State. Which Visual Task Board type fits?",
+    "stem": "Which Visual Task Board type has lanes matching incident State values, so moving a card updates State?",
     "options": [
       "Agile planning board",
       "Guided",
@@ -1142,7 +1142,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team wants cards from one filtered list of incidents but lanes that do not match any field value. Which Visual Task Board type fits?",
+    "stem": "Which Visual Task Board type takes cards from one filtered incident list, with lanes that match no field value?",
     "options": [
       "Freeform",
       "Personal task list",
@@ -1163,7 +1163,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A service owner wants several charts of workload and performance on one page, not a board of movable cards. What should be built?",
+    "stem": "A service owner wants several workload and performance charts on one page, not movable cards. What should be built?",
     "options": [
       "A guided board",
       "A flexible board",
@@ -1184,7 +1184,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An email notification fires on every update, but it should only go out when Priority changes to 1. Which part of the notification record should be fixed?",
+    "stem": "A notification fires on every update but should go only when Priority changes to 1. Which part needs fixing?",
     "options": [
       "When to send",
       "Who will receive",
@@ -1205,7 +1205,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A notification goes out at the right time with the right text, but to the opened-by user instead of the assigned-to user. Which section needs correcting?",
+    "stem": "A notification goes to the opened-by user instead of the assigned-to user. Which section needs correcting?",
     "options": [
       "Email layout",
       "Who will receive",
@@ -1226,7 +1226,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A notification reaches the right people at the right time, but the message lacks the incident number. Which section should be edited?",
+    "stem": "A notification is otherwise right but lacks the incident number. Which section should be edited?",
     "options": [
       "Who will receive",
       "Notification category",
@@ -1247,7 +1247,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Before activating a new notification, an administrator wants to see the rendered message and the users who would get it, without sending anything. What should she use?",
+    "stem": "Which tool shows a new notification's rendered message and recipients without sending anything?",
     "options": [
       "Send a test email from the email log",
       "Activate it for one hour",
@@ -1268,7 +1268,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A manager wants to compare current open incident counts across several assignment groups. Which visualization is a good fit?",
+    "stem": "Which visualization fits comparing current open incident counts across several assignment groups?",
     "options": [
       "Bar chart",
       "Time series",
@@ -1289,7 +1289,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A service owner wants to see how the backlog changed week by week over six months. Which visualization fits?",
+    "stem": "Which visualization fits showing how the backlog changed week by week over six months?",
     "options": [
       "Single score",
       "Time series",
@@ -1310,7 +1310,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Four non-overlapping request categories make up all the workload, and the goal is to show each category's share of the whole. Which visualization fits?",
+    "stem": "Which visualization shows each of four non-overlapping request categories' share of the whole workload?",
     "options": [
       "Line chart",
       "Single score",
@@ -1331,7 +1331,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An analyst wants incident counts for every combination of assignment group and priority, with row and column totals. Which visualization fits?",
+    "stem": "Which visualization gives incident counts for every assignment group and priority combination, with row and column totals?",
     "options": [
       "Bar chart",
       "Pie chart",
@@ -1352,7 +1352,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "When the impact is High, users must enter a justification before they can submit the form. Which UI policy action fits?",
+    "stem": "When impact is High, users must enter a justification before submitting. Which UI policy action fits?",
     "options": [
       "Set the field mandatory",
       "Set the field read only",
@@ -1373,7 +1373,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Users should see a calculated field on the form but not be able to change it there. Which UI policy action fits?",
+    "stem": "Users should see a calculated field but not change it on the form. Which UI policy action fits?",
     "options": [
       "Set a default value",
       "Set the field read only",
@@ -1394,7 +1394,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A field is irrelevant when the category is Software and should not be shown then. No data needs protecting. Which UI policy action fits?",
+    "stem": "A field should be hidden when the category is Software, and no data needs protecting. Which UI policy action fits?",
     "options": [
       "Set the field mandatory",
       "Set a reference qualifier",
@@ -1415,7 +1415,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Every new hardware request should open with Priority already set to 3, though the requester may still change it. What should be configured on the field?",
+    "stem": "New hardware requests should open with Priority 3, which the requester may change. What should be configured?",
     "options": [
       "A read-only UI policy",
       "A data policy",
@@ -1436,7 +1436,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A chart is meant to show all incidents but leaves out resolved ones. Its conditions include Active is true. What explains the gap?",
+    "stem": "A chart meant to show all incidents omits resolved ones. Its conditions include Active is true. Why?",
     "options": [
       "The report's filter conditions",
       "The aggregation method used",
@@ -1457,7 +1457,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A manager expected a count of requests, but the report adds up their price field. Which setting should be changed?",
+    "stem": "A report sums the price field, but the manager wanted a count of requests. What should be changed?",
     "options": [
       "The chart type from bar to pie",
       "The aggregation from Sum to Count",
@@ -1478,7 +1478,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A report has the right totals but splits them by location instead of by assignment group. Which setting explains the breakdown?",
+    "stem": "A report's totals are right but split by location, not assignment group. Which setting explains this?",
     "options": [
       "The filter conditions",
       "The report source table",
@@ -1499,7 +1499,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator sees all bars in a shared report, but an agent who lacks read access to some incidents sees smaller bars. What explains this?",
+    "stem": "In a shared report, an agent without read access to some incidents sees smaller bars than an admin. Why?",
     "options": [
       "The report data is cached for the agent",
       "The agent has a different form view selected",
@@ -1520,7 +1520,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A list column of approved costs holds 20, 30 and 40. The manager wants the combined cost, 90, at the bottom of the column. Which list calculation fits?",
+    "stem": "A cost column holds 20, 30 and 40. Which list calculation shows 90 at the bottom?",
     "options": [
       "Total",
       "Average",
@@ -1541,7 +1541,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A response-time column holds 4, 7 and 9 minutes. An analyst wants the fastest response, 4. Which list calculation fits?",
+    "stem": "A response-time column holds 4, 7 and 9 minutes. Which list calculation gives 4?",
     "options": [
       "Count",
       "Minimum",
@@ -1562,7 +1562,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A duration column holds 12, 18 and 15 minutes. An analyst wants the longest duration, 18. Which list calculation fits?",
+    "stem": "A duration column holds 12, 18 and 15 minutes. Which list calculation gives 18?",
     "options": [
       "Average",
       "Count",
@@ -1583,7 +1583,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An effort column holds 2, 4 and 9 hours. The analyst wants the mean, 5 hours. Which list calculation fits?",
+    "stem": "An effort column holds 2, 4 and 9 hours. Which list calculation gives 5?",
     "options": [
       "Total",
       "Minimum",
@@ -1604,7 +1604,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "An analyst needs only active requests, newest first. No grouping or totals are needed. Choose two list actions that meet this.",
+    "stem": "Choose two list actions that show only active requests, newest first.",
     "options": [
       "Apply a filter Active is true",
       "Sort descending by Created",
@@ -1627,7 +1627,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A coordinator wants requests shown in sections by assignment group, each section ordered by due date. Choose two list actions.",
+    "stem": "Choose two list actions that show requests in sections by assignment group, each ordered by due date.",
     "options": [
       "Filter Due date is today",
       "Group by Assignment group",
@@ -1650,7 +1650,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A finance review needs records split by cost center with the total cost shown for each one. Choose two list actions.",
+    "stem": "Choose two list actions that split records by cost center with the total cost for each.",
     "options": [
       "Sort by Cost center",
       "Filter Cost is not empty",
@@ -1673,7 +1673,7 @@
     "skill": "collaboration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A reviewer needs the total effort for only the tasks opened in the last quarter, with no sections. Choose two list actions.",
+    "stem": "Choose two list actions that give the total effort of last quarter's tasks only, without sections.",
     "options": [
       "Add a Total calculation on Effort",
       "Group by Opened on",
@@ -1696,7 +1696,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An approved audience needs to view the articles in an HR knowledge base but must not author or retire them. What should be configured on the knowledge base?",
+    "stem": "An audience must view HR knowledge base articles but not author or retire them. What should be configured?",
     "options": [
       "Can Read user criteria",
       "Can Contribute user criteria",
@@ -1717,7 +1717,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An editorial team must create and update articles in a knowledge base. Which setting on the knowledge base should be reviewed?",
+    "stem": "An editorial team must create and update articles in a knowledge base. Which setting should be reviewed?",
     "options": [
       "The article's Valid to date",
       "Can Contribute user criteria",
@@ -1738,7 +1738,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A reader meets the knowledge base's read criteria, but cannot see a new article that the author is still writing. What should be checked?",
+    "stem": "A reader meets the read criteria but cannot see a new article still being written. What should be checked?",
     "options": [
       "The knowledge base category",
       "The reader's list filter",
@@ -1759,7 +1759,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator needs proof of which user criteria a particular user matches, to explain why she can or cannot read a knowledge base. Which tool fits?",
+    "stem": "Which tool shows which user criteria a particular user matches, to explain her knowledge base access?",
     "options": [
       "Impersonate User only",
       "The knowledge base's Can Read list",
@@ -1780,7 +1780,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An author is writing a new version of a knowledge article and has not submitted it for approval yet. Which workflow state is it in?",
+    "stem": "A new version of an article is being written and not yet submitted. Which workflow state is it in?",
     "options": [
       "Draft",
       "Review",
@@ -1801,7 +1801,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A knowledge article has been sent to the approvers, who have not yet approved or rejected it. Which workflow state is it in?",
+    "stem": "An article is with approvers who have not yet decided. Which workflow state is it in?",
     "options": [
       "Retired",
       "Review",
@@ -1843,7 +1843,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A published article has been submitted for withdrawal, but the retirement approval is not finished. Which workflow state is it in?",
+    "stem": "A published article's withdrawal has been submitted, but approval is not finished. Which workflow state is it in?",
     "options": [
       "Retired",
       "Review",
@@ -1864,7 +1864,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Employees should request a docking station that goes through the normal request, requested item and catalog task fulfillment. What should be created?",
+    "stem": "Employees should request a docking station through normal request, requested item and catalog task fulfillment. What should be created?",
     "options": [
       "A catalog item",
       "A record producer",
@@ -1885,7 +1885,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team wants a simple self-service form in the catalog that creates an incident directly, not a requested item. Which catalog component fits?",
+    "stem": "Which catalog component is a simple form that creates an incident directly, not a requested item?",
     "options": [
       "A catalog UI policy",
       "A record producer",
@@ -1906,7 +1906,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A new-hire request should walk the requester through a laptop, a phone and building access as several related items in one submission. Which component fits?",
+    "stem": "Which catalog component walks a new-hire requester through a laptop, a phone and building access in one submission?",
     "options": [
       "A variable set",
       "A catalog category",
@@ -1927,7 +1927,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Several catalog items ask the same location and contact questions, and the team wants to maintain those questions in one place. What should be created?",
+    "stem": "Several catalog items ask the same location and contact questions. What keeps them in one place?",
     "options": [
       "An order guide",
       "A catalog client script",
@@ -1948,7 +1948,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A category is restricted, but one item in it also appears through another category that everyone can see. The item itself must be restricted. What should be configured?",
+    "stem": "An item in a restricted category also appears in an open category. The item itself must be restricted. What should be configured?",
     "options": [
       "Available For criteria on the item",
       "A second restricted category for it",
@@ -1969,7 +1969,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user matches an item's Available For criteria but still cannot order it. She also matches one of its Not Available For criteria. What explains this?",
+    "stem": "A user matches both an item's Available For and Not Available For criteria and cannot order it. Why?",
     "options": [
       "The item needs a variable set",
       "Not Available For overrides Available For",
@@ -1990,7 +1990,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A service should be found under both Facilities and Workplace without keeping two copies of it. What should be done?",
+    "stem": "How can a service appear under both Facilities and Workplace without keeping two copies?",
     "options": [
       "Create an order guide for each category",
       "Add a record producer to Workplace",
@@ -2011,7 +2011,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "An item is hidden in the catalog by user criteria, yet a user can open its underlying table record from the list. Which distinction applies?",
+    "stem": "A catalog item hidden by user criteria can still be opened from its table list. Which distinction applies?",
     "options": [
       "The user criteria result is cached for her",
       "The item is also in a second catalog category",
@@ -2095,7 +2095,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A flow should fulfill a requested item when it is ordered from the catalog. Which trigger is designed for this?",
+    "stem": "Which trigger is designed to fulfill a requested item ordered from the catalog?",
     "options": [
       "Record Created on sc_task",
       "Scheduled",
@@ -2116,7 +2116,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Several flows repeat the same approval and notification steps. The administrator wants one maintained copy that all of them call. What should be built?",
+    "stem": "Several flows repeat the same approval and notification steps. What gives them one maintained copy to call?",
     "options": [
       "A subflow",
       "A new trigger in each flow",
@@ -2158,7 +2158,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A subflow works out a routing group that a later step in the calling flow needs. How does the caller get that value?",
+    "stem": "How does a calling flow get a routing group that its subflow works out?",
     "options": [
       "From the flow trigger",
       "From the execution details only",
@@ -2179,7 +2179,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A subflow misbehaves and the designer wants to run it alone with chosen sample values on a sub-production instance. What should she do?",
+    "stem": "How should a designer run a misbehaving subflow alone with chosen sample values?",
     "options": [
       "Activate the subflow in production to watch it",
       "Add a scheduled trigger to the subflow",
@@ -2200,7 +2200,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A routing decision must consider country and request category, but neither value is defined in the decision table yet. What must be added?",
+    "stem": "A decision must use country and request category, which the decision table does not define yet. What must be added?",
     "options": [
       "Decision inputs",
       "Decision rows",
@@ -2263,7 +2263,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A decision table is saved, and its owner wants to confirm its answers for normal, edge and unusual cases before a flow uses it. What should she do?",
+    "stem": "How should an owner confirm a saved decision table's answers for normal, edge and unusual cases?",
     "options": [
       "Attach it to every catalog item first",
       "Convert it into a subflow to run it",
@@ -2284,7 +2284,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A Virtual Agent topic is finished but still inactive, so users cannot reach it. Which action makes it available?",
+    "stem": "A finished Virtual Agent topic is inactive. Which action makes it available to users?",
     "options": [
       "Publish the topic",
       "Save it as a draft",
@@ -2305,7 +2305,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Several Virtual Agent topics need the same series of conversation steps that ask for and show a user's open incidents. What reduces duplicated maintenance?",
+    "stem": "What lets several Virtual Agent topics share one series of steps that ask for and show a user's open incidents?",
     "options": [
       "A copy in each topic",
       "A topic block",
@@ -2326,7 +2326,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A designer is about to build a topic for the HR application, but the header shows another application scope. What should she do first?",
+    "stem": "A topic is for the HR application, but the header shows another scope. What should be done first?",
     "options": [
       "Publish an empty topic first",
       "Open the topic in a different view",
@@ -2347,7 +2347,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "One branch of a published topic has never been tried with real answers. How can the designer check that the branch ends where intended?",
+    "stem": "How can a designer check that a never-tried branch of a published topic ends where intended?",
     "options": [
       "Publish the topic again to refresh it",
       "Add a topic block to that branch",
@@ -2368,7 +2368,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A new record with category Hardware never starts the expected flow, which was set up to start only for Software. Where is the cause?",
+    "stem": "A flow set to start only for Software never starts for a new Hardware record. Where is the cause?",
     "options": [
       "The trigger conditions",
       "The action inputs",
@@ -2389,7 +2389,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A flow runs, but the recipient passed to the Send Email action is not the requester on the record. What helps trace the wrong mapping?",
+    "stem": "A flow's Send Email action gets a recipient other than the requester. What helps trace the wrong mapping?",
     "options": [
       "The Who will receive section of a notification",
       "The action's runtime inputs in the execution details",
@@ -2431,7 +2431,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A past production run shows no action values because the flow was not set to record execution details at the time. Which setting explains this?",
+    "stem": "A past production run shows no action values because none were recorded then. Which setting explains this?",
     "options": [
       "The flow trigger type",
       "The subflow output names",
@@ -2494,7 +2494,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A shared subflow is changed so that one of its outputs has a new name and meaning. Several flows call it. What must be reviewed?",
+    "stem": "A shared subflow output gets a new name and meaning, and several flows call it. What must be reviewed?",
     "options": [
       "The subflow's most recent test log",
       "The catalog items in the same scope",
@@ -2515,7 +2515,7 @@
     "skill": "automation",
     "difficulty": 2,
     "format": "single",
-    "stem": "A flow's execution shows Completed, but nobody has checked whether the right records and assignments were created. What is still needed?",
+    "stem": "A flow shows Completed, but nobody has checked the records and assignments it made. What is still needed?",
     "options": [
       "Turn off flow reporting to save space",
       "Rerun the flow once more in production",
@@ -2578,7 +2578,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "The inspection table is already correct. A technician now needs to log the results of one more inspection. What should he do?",
+    "stem": "The inspection table is already correct. How does a technician log one more inspection's results?",
     "options": [
       "Create a child table",
       "Import a new dictionary entry",
@@ -2599,7 +2599,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An inspection should point to the technician's existing user account so that his other details are available. Which field design fits?",
+    "stem": "Which field design links an inspection to the technician's existing user account and its details?",
     "options": [
       "A string field holding his name",
       "A choice field of technician names",
@@ -2620,7 +2620,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A record must store how many devices were inspected, as a whole number that can be compared and summed. Which field type fits?",
+    "stem": "Which field type stores how many devices were inspected as a whole number to compare and sum?",
     "options": [
       "Integer",
       "String",
@@ -2641,7 +2641,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A record must hold the scheduled moment of a maintenance visit, down to the hour and minute. Which field type fits?",
+    "stem": "Which field type holds a maintenance visit's scheduled moment, to the hour and minute?",
     "options": [
       "Integer",
       "Date/Time",
@@ -2662,7 +2662,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A request must point to one existing department record and let users see that department's other fields. Which field type fits?",
+    "stem": "Which field type points to one existing department record and shows its other fields?",
     "options": [
       "List",
       "String",
@@ -2683,7 +2683,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A record needs a yes or no indicator of whether its checklist is complete. Which field type fits?",
+    "stem": "Which field type holds a yes or no indicator of whether a checklist is complete?",
     "options": [
       "Choice",
       "String",
@@ -2725,7 +2725,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An inherited field on Incident is mandatory, but it is optional on the parent Task table. Which setting most likely explains this?",
+    "stem": "An inherited field is mandatory on Incident but optional on the parent Task table. What most likely explains this?",
     "options": [
       "A list control on Incident",
       "A dictionary override on Incident",
@@ -2746,7 +2746,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "Before changing a field on Task, an administrator wants to know which tables extend Task and would inherit the change. What should she review?",
+    "stem": "What should an administrator review to see which tables extend Task before changing one of its fields?",
     "options": [
       "The filter on the incident list",
       "The ACLs on the Task table",
@@ -2767,7 +2767,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "One incident shows the wrong department in a reference field, while the field definition and all other incidents are correct. What should be investigated?",
+    "stem": "One incident shows the wrong department in a reference field, while the definition and other incidents are fine. What should be investigated?",
     "options": [
       "The field's dictionary entry",
       "A dictionary override on Incident",
@@ -2788,7 +2788,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "Two users share the same name. An administrator needs to know which one a reference field actually points to. What decides it?",
+    "stem": "Two users share a name. What decides which one a reference field points to?",
     "options": [
       "The sys_id stored in the field",
       "The name shown on the form",
@@ -2809,7 +2809,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A reference field shows a readable name on the form rather than a long identifier. What is the form showing?",
+    "stem": "A reference field shows a readable name, not a long identifier. What is the form showing?",
     "options": [
       "A dot-walked field from the record",
       "The referenced record's display value",
@@ -2851,7 +2851,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A report on tasks must show the city of the location each task references. How should the city be included?",
+    "stem": "How should a task report show the city of each task's referenced location?",
     "options": [
       "Add a City field to the task table",
       "Create a related list of locations",
@@ -2872,7 +2872,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "Every member of the Service Desk group needs the itil role. How should it be granted to avoid assigning it person by person?",
+    "stem": "How should every Service Desk group member get the itil role without granting it person by person?",
     "options": [
       "Assign the role to the group",
       "Assign the role to each group member",
@@ -3040,7 +3040,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An ACL lists two roles in Requires role. A reviewer assumes a user needs both, but the user has only one. What is correct?",
+    "stem": "An ACL lists two roles in Requires role, and a user has only one. What is correct?",
     "options": [
       "Any one of the listed roles is enough",
       "The user needs every listed role",
@@ -3061,7 +3061,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user has the role an ACL requires, but the ACL also requires Department to be Finance and the record's department is HR. Why is access denied?",
+    "stem": "A user has the required role, but the ACL requires Department Finance and the record is HR. Why is access denied?",
     "options": [
       "The record is in another scope",
       "The ACL condition is not met",
@@ -3082,7 +3082,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An ACL's role and condition both pass, but its script sets answer to false. What is the result for that ACL?",
+    "stem": "An ACL's role and condition pass, but its script sets answer to false. What is the result for that ACL?",
     "options": [
       "It grants read but not write",
       "It is skipped and ignored",
@@ -3124,7 +3124,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An import loaded a spreadsheet, and some dates were already malformed before any target records were touched. Where should the administrator look first?",
+    "stem": "Some imported spreadsheet dates were malformed before any target records were touched. Where should the administrator look first?",
     "options": [
       "The import set table rows",
       "The transform map field maps",
@@ -3166,7 +3166,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A recurring import should update the existing asset record with the same serial number instead of adding a duplicate. What should be set?",
+    "stem": "A recurring import should update the asset with the same serial number, not add a duplicate. What should be set?",
     "options": [
       "A unique index on the staging table",
       "A business rule on the import set",
@@ -3187,12 +3187,12 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A transform finished, but the administrator needs the numbers of inserted, updated and errored rows before accepting the load. What should he review?",
+    "stem": "After a transform runs, where does an administrator see inserted, updated and errored row counts?",
     "options": [
       "The transform map's field maps",
       "The import set table's columns",
       "The file type set on the data source",
-      "The import set's transform results"
+      "The import set's transform history"
     ],
     "correct": [
       3
@@ -3208,7 +3208,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A target table holds unique keys A and B. A two-row import has keys A and C, coalescing on that key, with no errors. What is the result?",
+    "stem": "A target holds keys A and B. An error-free import of keys A and C coalesces on the key. What is the result?",
     "options": [
       "One update and one insert",
       "Two updates and no insert",
@@ -3229,7 +3229,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A target table holds asset keys D and E. An import has one changed row for D and one for E, coalescing on the key. What is the result?",
+    "stem": "A target holds keys D and E. An import with one changed row each for D and E coalesces on the key. What is the result?",
     "options": [
       "No updates and one insert",
       "Two updates and no inserts",
@@ -3271,7 +3271,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "One valid row has external key F, exactly one target record has F, and coalesce is set on that key. What is the result?",
+    "stem": "One valid row has key F, exactly one target record has F, and coalesce is set on that key. What is the result?",
     "options": [
       "A second F record is inserted",
       "The row is skipped",
@@ -3376,7 +3376,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An organization has given an overly broad role to many users in its own instance. Under the Shared Responsibility Model, who must correct this?",
+    "stem": "Under the Shared Responsibility Model, who corrects an overly broad role an organization gave many of its users?",
     "options": [
       "The customer",
       "ServiceNow",
@@ -3397,7 +3397,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A business has never decided how long its records should be kept in its instance. Under the Shared Responsibility Model, whose decision is it?",
+    "stem": "Under the Shared Responsibility Model, who decides how long a business's records are kept in its instance?",
     "options": [
       "The implementation partner's",
       "The customer's",
@@ -3418,7 +3418,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An auditor asks how the hosted platform's data centers and infrastructure are secured. Under the Shared Responsibility Model, who answers for that?",
+    "stem": "Under the Shared Responsibility Model, who answers for securing the platform's data centers and infrastructure?",
     "options": [
       "The customer's users",
       "The application developer",
@@ -3439,7 +3439,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A scoped app that an organization built itself has a flaw in its own access logic. Under the Shared Responsibility Model, who is responsible for fixing it?",
+    "stem": "Under the Shared Responsibility Model, who fixes a flaw in the access logic of a scoped app the organization built itself?",
     "options": [
       "ServiceNow",
       "The hosting provider",
@@ -3460,7 +3460,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A security admin wants to see how many recommended hardening practices are applied on the instance and how that changed over time. Which section of the Security Center posture console fits?",
+    "stem": "Which Security Center posture console section shows how many recommended hardening practices are applied over time?",
     "options": [
       "Best Practices",
       "Active privileged accounts",
@@ -3481,7 +3481,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "A review covers users who still sign in and hold elevated roles such as admin. Which Security Center posture dashboard card applies?",
+    "stem": "Which Security Center posture card covers users who still sign in and hold elevated roles such as admin?",
     "options": [
       "Active integration accounts",
       "Active privileged accounts",
@@ -3502,7 +3502,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator wants to look at enabled accounts that have never signed in. Which Security Center posture dashboard card supports that?",
+    "stem": "Which Security Center posture card flags accounts that were created but never used?",
     "options": [
       "Best Practices",
       "Active integration accounts",
@@ -3523,7 +3523,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "single",
-    "stem": "An operator needs the list of remediation items her manager gave her to work on. Which posture console section shows it?",
+    "stem": "Which posture console section shows the remediation items a manager assigned to an operator?",
     "options": [
       "Active integration accounts",
       "Active privileged accounts",
@@ -3533,7 +3533,7 @@
     "correct": [
       3
     ],
-    "explanation": "My Security Tasks lists the most urgent security tasks assigned to her, while the other sections show summary counts."
+    "explanation": "My Security Tasks lists the most urgent security tasks assigned to the signed-in user, while the other sections show summary counts."
   },
   {
     "id": "SERVICENOWCSA-DATABASE-049",
@@ -3544,7 +3544,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A reviewer must view existing records and correct approved values, but must neither add nor remove records. Choose the two ACL operations the requirement allows.",
+    "stem": "A reviewer may view records and correct values but not add or remove records. Choose the two ACL operations allowed.",
     "options": [
       "read",
       "write",
@@ -3567,7 +3567,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A service account may insert new records and update existing ones. Viewing is handled separately and deletion is forbidden. Choose the two ACL operations this grants.",
+    "stem": "A service account may insert and update records but not delete them; viewing is separate. Choose the two ACL operations.",
     "options": [
       "report_on",
       "create",
@@ -3590,7 +3590,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A cleanup job is authorized to add replacement records and remove obsolete ones. Updating and viewing are outside this grant. Choose the two ACL operations.",
+    "stem": "A job may add replacement records and remove obsolete ones, but not update or view. Choose the two ACL operations.",
     "options": [
       "read",
       "report_on",
@@ -3613,7 +3613,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "An archive reviewer may view records and remove those approved for disposal, but may not insert or edit records. Choose the two ACL operations.",
+    "stem": "A reviewer may view records and remove approved ones, but not insert or edit. Choose the two ACL operations.",
     "options": [
       "delete",
       "write",
@@ -3636,7 +3636,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "Before an import, the team must prove that the serial number finds the right existing records and that each source column reaches the right target field. Choose the two checks.",
+    "stem": "Before an import, which two checks prove the serial number finds the right records and each column reaches the right field?",
     "options": [
       "Confirm the coalesce field is unique in the target",
       "Test the transform map field maps",
@@ -3659,7 +3659,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A trial import sends values into the wrong target fields, and the staged rows with personal data can be read by an unintended group. Choose the two fixes.",
+    "stem": "A trial import fills the wrong target fields, and staged personal data is readable by an unintended group. Choose the two fixes.",
     "options": [
       "Rename the data source",
       "Correct the transform map field maps",
@@ -3682,7 +3682,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A completed import has not been checked against the expected target records, and its staging table holds personal data with unreviewed access. Choose the two checks.",
+    "stem": "A finished import is unreconciled, and its staging table holds personal data with unreviewed access. Choose the two checks.",
     "options": [
       "Add a reference qualifier to the target",
       "Change the transform map order",
@@ -3705,7 +3705,7 @@
     "skill": "database",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A recurring import created duplicate records, and the final target has not been reconciled. Field maps and staging access are already verified. Choose the two remaining checks.",
+    "stem": "A recurring import made duplicates and is unreconciled; field maps and staging access are verified. Choose the two remaining checks.",
     "options": [
       "Reconcile and clean up the target records",
       "Retest the transform field maps",
@@ -3728,7 +3728,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A justification field must become mandatory when a checkbox is ticked on the form, and the team wants to do it without writing code. Which tool fits?",
+    "stem": "A justification field must be mandatory when a checkbox is ticked, without code. Which tool fits?",
     "options": [
       "A UI policy",
       "A client script",
@@ -3749,7 +3749,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An administrator needs browser code that recalculates a displayed field as soon as another field changes. Which tool runs where this requirement says?",
+    "stem": "Which tool runs browser code to recalculate a displayed field as soon as another field changes?",
     "options": [
       "A scheduled job",
       "A client script",
@@ -3812,7 +3812,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A server-side rule must clean up a value on the current record just before the update is written to the database. When should it run?",
+    "stem": "When should a server rule run to clean up a value just before the update is written?",
     "options": [
       "A before business rule",
       "An after business rule",
@@ -3833,7 +3833,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A related record must be updated in the same transaction, right after the current record is saved. When should the business rule run?",
+    "stem": "When should a business rule run to update a related record in the same transaction after saving?",
     "options": [
       "A before business rule",
       "An after business rule",
@@ -3854,7 +3854,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A slow server task should be queued in the background after an update so the user does not wait for it. When should the business rule run?",
+    "stem": "When should a business rule run to queue a slow server task so the user does not wait?",
     "options": [
       "A before business rule",
       "An onSubmit client script",
@@ -3875,7 +3875,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A server rule must prepare extra information as a record is fetched from the database to be shown on a form. When should it run?",
+    "stem": "Which tool prepares extra server-side information as a record is fetched for a form?",
     "options": [
       "A before business rule",
       "An onLoad client script",
@@ -3896,7 +3896,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Two developers plan to move the same customization to production separately from two different source instances. What should be settled first?",
+    "stem": "Two developers plan to move one customization to production from two source instances. What should be settled first?",
     "options": [
       "A single development, test and production path",
       "A shared naming convention for both sets",
@@ -3959,7 +3959,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Support staff cannot tell which of several similar update sets is the follow-up fix for a given problem. What helps them identify it?",
+    "stem": "Support cannot tell which of several similar update sets is the follow-up fix for a problem. What helps?",
     "options": [
       "One larger update set holding every fix",
       "Committing them in whatever order is easiest",
@@ -3980,17 +3980,17 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A client script must show a message as soon as the form opens, before the user enters anything. Which type fits?",
+    "stem": "Which client script type shows a message as soon as the form opens?",
     "options": [
       "An onLoad client script",
       "An onChange client script",
-      "A display business rule",
-      "A UI policy"
+      "An onSubmit client script",
+      "An onCellEdit client script"
     ],
     "correct": [
       0
     ],
-    "explanation": "onLoad scripts run when the form first loads."
+    "explanation": "onLoad scripts run when the form first loads. onChange, onSubmit and onCellEdit scripts wait for a field change, a save or a list edit."
   },
   {
     "id": "SERVICENOWCSA-MIGRATION-014",
@@ -4022,10 +4022,10 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A browser check must run when the user saves the form and be able to stop the save. Which client script type fits?",
+    "stem": "Which browser-side tool runs as the form is saved and can cancel the save?",
     "options": [
       "A before business rule",
-      "A UI action",
+      "A UI policy",
       "An onSubmit client script",
       "An onChange client script"
     ],
@@ -4043,7 +4043,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Validation must run in the browser when a user edits a value directly in a list cell, without opening the form. Which client script type fits?",
+    "stem": "Which client script type validates a value edited directly in a list cell?",
     "options": [
       "An onChange client script",
       "An onSubmit client script",
@@ -4064,7 +4064,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Previewing a retrieved update set reports that the target has a newer change to the same record. What is the right next step?",
+    "stem": "An update set preview reports a newer change to the same record on the target. What is the right next step?",
     "options": [
       "Resolve the preview problem before committing",
       "Commit it now and fix the record afterwards",
@@ -4085,7 +4085,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A customization refers to a table from a plugin that is not active on the target instance. What should happen before committing?",
+    "stem": "A customization uses a table from a plugin inactive on the target. What should happen before committing?",
     "options": [
       "Remove the table from the target dictionary",
       "Make the missing component available on the target",
@@ -4148,7 +4148,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A change must give users instant warnings while they fill in a form and also stop bad data being saved from any source. Choose the two tools.",
+    "stem": "A change must warn users as they fill in a form and block bad data from any source. Choose the two tools.",
     "options": [
       "A client script or UI policy",
       "A data policy or business rule",
@@ -4171,7 +4171,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A release adds a server-side validation and must carry that configuration to the test instance. No data is loaded and no form messages change. Choose the two items involved.",
+    "stem": "A release adds server-side validation and carries it to the test instance. Choose the two items involved.",
     "options": [
       "An import set",
       "A before business rule",
@@ -4194,7 +4194,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "A rollout moves form configuration to another instance and, separately, loads a supplier's spreadsheet into asset records. Choose the two items involved.",
+    "stem": "A rollout moves form configuration to another instance and loads a supplier spreadsheet into assets. Choose the two items involved.",
     "options": [
       "A display business rule",
       "A form template",
@@ -4217,7 +4217,7 @@
     "skill": "migration",
     "difficulty": 2,
     "format": "multi",
-    "stem": "An administrator improves messages shown while users edit a form and loads an incoming asset file into target records. No configuration transfer or server validation is asked for. Choose the two items involved.",
+    "stem": "On one instance, a task adds messages while a form is edited and loads a supplier spreadsheet into assets. Nothing moves between instances. Choose the two items.",
     "options": [
       "An import set with a transform map",
       "An update set",
@@ -4228,7 +4228,7 @@
       0,
       3
     ],
-    "explanation": "Form messages come from a client script and the file is loaded through an import set and transform map.",
+    "explanation": "Messages while editing come from a client script, and the spreadsheet is loaded through an import set and transform map. No update set is needed because nothing moves to another instance, and no server rule is asked for.",
     "select": 2
   }
 ]

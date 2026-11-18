@@ -38,3 +38,18 @@ Blind agreement 120/120. Two questions were listed for adjudication (agreed, med
 - POETRY-008 (final consonance, "blank, think, trunk"): verdict no problem. The vowels differ, so it is not full rhyme or assonance, and the shared final nk consonants are the pattern named; no change.
 
 Rebuilt; option reuse (0% shared, echo gain -0.7), answer patterns (strict), check_banks and validate_v2_bank all pass.
+
+## Stem trim, 2026-11-18
+
+Median stem length cut from 26 to 17 words (118 of 120 stems changed). Scenario wrapping, stacked qualifiers and long asks were shortened; quoted extracts and passages kept intact. Keys and options unchanged. Rebuilt and passed check_stem_length, check_option_reuse, check_answer_patterns, check_banks and validate_v2_bank.
+
+## Review after stem trim (blind, Opus), 2026-11-18
+
+A blind reviewer answered every changed question (118 of 118 agreed with the key). Four were listed for adjudication (all agreed):
+
+- DRAMA-004 (tragicomedy: comic journey, near execution, rescue with an irreversible loss): verdict no problem. Comic action plus serious danger and a mixed ending is tragicomedy; tragedy needs ruin, melodrama a sensational clear-cut resolution. No change.
+- DRAMA-014 (loose railing, later breaks): verdict wording fix. The ask "What does the remark do?" did not fit noun options; stem now ends "Which technique is the remark?". Key (Foreshadowing) and options unchanged.
+- PROSE-009 (generous yet jealous, explored in depth): verdict no problem. The stem shows complexity, not change, so round character is right and dynamic character is a fair distractor. No change.
+- POETRY-028 ("a slight inconvenience" after a flood): verdict tighten to rule out euphemism. Stem now says the traveller "jokes it was" a slight inconvenience, and the explanation says understatement shrinks the size of the loss while euphemism only swaps in a gentler name. Key and options unchanged.
+
+Rebuilt; stem length median 17 words, option reuse (0% shared, echo gain -0.4), answer patterns (strict), check_banks and validate_v2_bank all pass.

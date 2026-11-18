@@ -34,3 +34,17 @@ Blind agreement 260/260. Nine questions were listed (medium confidence, alternat
 - NETWORK-024: echo. Stem now describes a laptop plugged into a meeting room wall jack, no "port".
 
 Rebuilt with build.py. Checks: option reuse OK (0 shared sets, echo 0/60, gain -2.9), answer patterns strict OK, check_banks PASS, v2 validator 260 questions 0 problems.
+
+## Stem trim, 2026-11-18
+
+Median stem length cut from 21 to 17 words; 250 of 260 stems changed (scenario padding and stacked qualifiers removed; asks, keys and options unchanged). Stem-length, option-reuse, answer-pattern, check_banks and validate_v2_bank checks pass.
+
+## Review after stem trim (blind, Opus), 2026-11-18
+
+Blind agreement 250/250 on the changed questions. Three were listed and adjudicated:
+
+- ACCESS-004: no problem. Location is offered only as a risk signal against the three factor types; no "somewhere you are" option competes.
+- INCIDENT-032: giveaway. Distractor "A parallel test with no switchover" told the reader it was wrong; now "A parallel test" (the explanation says why it does not move production).
+- SYSTEMS-014: MDM was defensible. Stem now says the company must control only its business apps and data on staff-owned phones, which only MAM does.
+
+Rebuilt with build.py. Checks: stem length (median 17), option reuse OK (0 shared sets, gain -3.0), answer patterns strict OK, check_banks PASS, v2 validator 260 questions 0 problems.

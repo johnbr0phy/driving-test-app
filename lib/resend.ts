@@ -21,6 +21,7 @@ import {
   markQuotaExhausted,
   type SendKind,
 } from "@/lib/email-quota";
+import { SEED_BLOCKED_DOMAINS, emailDomain, isProtectedDomain } from "@/lib/emailDomainBlock";
 
 let client: Resend | null = null;
 
@@ -43,6 +44,28 @@ export interface SendResult {
   error?: string;
   /** The provider may have accepted the message. Retry only with the same key. */
   uncertain?: boolean;
+  /** Not sent: the address's domain only bounces (lib/emailDomainBlock). Not a failure to retry. */
+  blockedDomain?: boolean;
+}
+
+/**
+ * Whether the recipient's domain is blocked. The seed list is checked
+ * offline; the bounce-learned list needs Firestore, so it is read only where
+ * the admin credential is configured (production), never in tests.
+ */
+async function recipientDomainBlocked(to: string): Promise<boolean> {
+  const domain = emailDomain(to);
+  if (!domain || isProtectedDomain(domain)) return false;
+  if (!process.env.FIREBASE_SERVICE_ACCOUNT_KEY) {
+    return (SEED_BLOCKED_DOMAINS as readonly string[]).includes(domain);
+  }
+  try {
+    const { isEmailDomainBlocked } = await import("@/lib/server/emailDomains");
+    return await isEmailDomainBlocked(to);
+  } catch (err) {
+    console.error("[resend] blocked-domain check failed:", err);
+    return (SEED_BLOCKED_DOMAINS as readonly string[]).includes(domain);
+  }
 }
 
 /** Error names/messages Resend uses when the account is over its send allowance. */
@@ -106,6 +129,11 @@ export async function sendEmail(payload: SendEmailPayload, options: { previousUn
   }
   if (payload.kind === "campaign" && !process.env.EMAIL_POSTAL_ADDRESS?.trim()) {
     return { ok: false, quotaExhausted: false, error: "EMAIL_POSTAL_ADDRESS is required for campaign mail", uncertain: false };
+  }
+  // A domain that refuses outside mail only adds bounces. A retry of an
+  // uncertain attempt must still replay the same request, so it is exempt.
+  if (!options.previousUncertain && await recipientDomainBlocked(payload.to)) {
+    return { ok: false, quotaExhausted: false, uncertain: false, blockedDomain: true, error: `Recipient domain is blocked (only bounces): ${emailDomain(payload.to)}` };
   }
   let reservation = await reserveSend(payload.kind, payload.idempotencyKey, options.previousUncertain === true);
   if (!reservation) {

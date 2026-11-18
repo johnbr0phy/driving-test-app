@@ -1,8 +1,8 @@
 // The 1,000,000th question (Nov 2026). Once the all-time count passes
 // MILLIONTH_TARGET, the first signed-in (non-internal) account to send an
 // answer batch gets Premium free and an email; guests are passed over, so
-// the winner may have answered just after the millionth, and the email says
-// so. The count is the figure the /admin Growth tab shows: the sum of
+// the winner may have answered just after the millionth (John chose to call
+// it the millionth in the email anyway). The count is the figure the /admin Growth tab shows: the sum of
 // analytics/questions.daily (backfilled days included), seeded once and then
 // advanced by every batch in a transaction on a small doc of its own.
 // John is emailed when it happens.
@@ -108,9 +108,9 @@ function winnerEmail(firstName: string | null, alreadyPremium: boolean): string 
   return `<!doctype html><html><body style="margin:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#111827">
 <div style="max-width:560px;margin:0 auto;padding:32px 24px">
 <p style="font-size:40px;margin:0 0 8px">🎉🐯</p>
-<h1 style="font-size:24px;margin:0 0 16px">We just hit 1,000,000 questions, and you were there</h1>
+<h1 style="font-size:24px;margin:0 0 16px">You answered our 1,000,000th question</h1>
 <p style="font-size:16px;line-height:1.6">${hello}</p>
-<p style="font-size:16px;line-height:1.6">People have now answered one million questions on Tigertest. You were the first person with an account to answer one after we got there.</p>
+<p style="font-size:16px;line-height:1.6">People have now answered one million questions on Tigertest, and the one that took us to a million was yours.</p>
 <p style="font-size:16px;line-height:1.6">${prize}</p>
 <p style="margin:28px 0"><a href="${SITE_URL}/" style="background:#111827;color:#fff;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:600;display:inline-block">Keep practicing</a></p>
 <p style="font-size:16px;line-height:1.6">Good luck on the real thing. Just hit reply if you ever want to tell me how it went.</p>
@@ -133,7 +133,7 @@ export async function awardMillionth(uid: string, winner: MillionthWinner): Prom
   if (email) {
     await sendEmail({
       to: email,
-      subject: 'We just hit 1,000,000 questions, and you were there 🎉',
+      subject: 'You answered our 1,000,000th question 🎉',
       html: winnerEmail(name, alreadyPremium),
       replyTo: OWNER,
       kind: 'transactional',

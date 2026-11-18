@@ -31,4 +31,7 @@ repository. They are the same rules Claude Code follows.
 - **Landing pages** are copies of the template; **a v2 exam with two tests** holds out only Test 2.
 - **An options-only review and perfectly even answer letters do not prove a bank is good.** Review
   stem and options together, as a test-wise candidate would.
+- **Options-only review** (`tools/options_only.py`): rewrite every item whose key a surface cue
+  finds; a reviewer recognising the true fact is not a fault, so never twist a sound item into a
+  logic puzzle to lower the score. Every item must need exam knowledge.
 - Plain apostrophes, no em or en dashes, and never refer to an option by its position.

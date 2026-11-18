@@ -612,7 +612,7 @@ export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alr
           : `To say thank you, <strong style="font-weight: 700;">Premium is now on your account, free, for good.</strong> Every locked set, test and stat on Tigertest is open to you.`
       ),
       cta(DASH(v, "millionth"), "Keep Practicing"),
-      p("Good luck on the real thing. Just hit reply if you ever want to tell me how it went."),
+      p("Thanks for studying with us, and good luck on your test."),
       signoff("Cheers,"),
     ].join("\n"),
   });

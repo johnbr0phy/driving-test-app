@@ -1,0 +1,1410 @@
+{
+ "FRVTC-T3P-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "t3p-platform-carpool-harassment-web.txt: 'déplacement que le conducteur effectue pour son propre compte'"
+ },
+ "FRVTC-T3P-002": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same: 'Leur mise en relation, à cette fin, peut être effectuée à titre onéreux'"
+ },
+ "FRVTC-T3P-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-005": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi-current-web.txt: 'apposée dans le véhicule de manière à être visible de l'extérieur'"
+ },
+ "FRVTC-T3P-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "transport-code-2025.txt: 'Le conducteur restitue sa carte professionnelle lorsqu'il cesse définitivement'"
+ },
+ "FRVTC-T3P-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi-current-web.txt: 'adressée à la préfecture du département de domicile'"
+ },
+ "FRVTC-T3P-009": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'Seul un médecin agréé peut faire ce contrôle'"
+ },
+ "FRVTC-T3P-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi-current-web.txt: 'tous les 5 ans un stage de formation continue, de 14 h'"
+ },
+ "FRVTC-T3P-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "t3p-scope-platform-web.txt: 'assurance couvrant leur responsabilité civile professionnelle'"
+ },
+ "FRVTC-T3P-014": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi-current-web.txt: 'Depuis le 12 août 2026, l'expérience professionnelle ne permet plus d'être dispensé'"
+ },
+ "FRVTC-T3P-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "transport-code-2025.txt L1326-2: 'la distance..., la destination et le prix minimal garanti'"
+ },
+ "FRVTC-T3P-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "L1326-2: 'ne peut ... mettre fin à la relation contractuelle ... refusé une ou plusieurs propositions'"
+ },
+ "FRVTC-T3P-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "L1326-4 2° b: 'recourir, simultanément, à plusieurs intermédiaires'"
+ },
+ "FRVTC-T3P-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "L1326-4 2° c: 'déterminent librement leur itinéraire'"
+ },
+ "FRVTC-T3P-021": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "discrimination-current-web.txt: 'deux conditions cumulatives : critère défini par la loi ET situation visée par la loi'"
+ },
+ "FRVTC-T3P-022": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Only option naming a protected criterion; stem 'se trompe sur la caractéristique' points to 'qu'on lui attribue'.",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "dog-current-web.txt: 'CMI avec les mentions invalidité et priorité'"
+ },
+ "FRVTC-T3P-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "dog-current-web.txt: 'ne doit pas subir de surfacturation' -> 38+6=44"
+ },
+ "FRVTC-T3P-026": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "'spécifique' -> 'porte sur l'acte précis' is a synonym match; other options map to the other legal adjectives, so mild.",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-027": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Stem gives 'retirer à tout moment'; answer is just the adjective for that (révocable) — vocabulary, not VTC knowledge.",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-028": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [],
+  "note": "idem; option A wording 'Aucun consentement' reads as 'nothing can be deduced' — acceptable.",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-T3P-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "t3p-platform...: 222-33 I 'imposer ... de façon répétée'"
+ },
+ "FRVTC-T3P-030": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "222-33 2°: 'successivement ... même en l'absence de concertation, savent que ... caractérisent une répétition'"
+ },
+ "FRVTC-T3P-031": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "222-33 II: 'Est assimilé au harcèlement sexuel ... même non répété ... pression grave'"
+ },
+ "FRVTC-T3P-032": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "common-transport-outrage-web.txt: 'considéré comme une contravention'"
+ },
+ "FRVTC-T3P-033": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "Délit because committed aboard a VTC (Service Public list) -> 6 ans; tests a subtle aggravation.",
+  "source": "common-transport-outrage-web.txt: délit 'à bord d'un VTC' -> plainte '6 ans ... si l'outrage constitue un délit'"
+ },
+ "FRVTC-T3P-034": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same: 'tous ces documents doivent être datés'"
+ },
+ "FRVTC-T3P-035": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same: 'Police Secours en composant le 17'"
+ },
+ "FRVTC-T3P-036": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same: 'messagerie instantanée (tchat) vous permet de signaler ces faits'"
+ },
+ "FRVTC-GES-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-003": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-005": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "business-accounting-current-web.txt FRNG: 'excédent de ressources stables une fois ... financées les immobilisations'"
+ },
+ "FRVTC-GES-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-016": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "business-forms.txt: 'patrimoine professionnel automatiquement séparé'"
+ },
+ "FRVTC-GES-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "business-forms.txt: 'président de la SASU ... assimilé-salarié lorsqu'il est rémunéré'"
+ },
+ "FRVTC-GES-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "facturation.txt: séries de numérotation distinctes"
+ },
+ "FRVTC-GES-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "facturation.txt: après paiement 'facture d'avoir ... son propre numéro'"
+ },
+ "FRVTC-GES-023": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-GES-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-priority-web.txt: 'cycles ... circulant dans les deux sens sur les pistes cyclables'"
+ },
+ "FRVTC-SEC-005": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-007": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-overtaking-web.txt: 'sauf si cette manoeuvre laisse libre la partie ... à gauche d'une ligne continue'"
+ },
+ "FRVTC-SEC-012": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-speed-web.txt: '110 km/h ... autoroutes où la limite normale est de 130'"
+ },
+ "FRVTC-SEC-014": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-general2-web.txt: 'au moins deux secondes' -> 50 m"
+ },
+ "FRVTC-SEC-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-018": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-general2-web.txt: écran 'ne constituant pas une aide à la conduite ou à la navigation est interdit'"
+ },
+ "FRVTC-SEC-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-021": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "no source; lane-change rule (R412-24) inferred",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "ceinture.txt: exemption 'Conducteur de taxi en service'"
+ },
+ "FRVTC-SEC-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "ceinture.txt: 'dos à la route ... L'airbag doit être désactivé'"
+ },
+ "FRVTC-SEC-026": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "medicine-current-web.txt: 'niveau 3 (fond rouge) ... formellement déconseillée'"
+ },
+ "FRVTC-SEC-028": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "fatigue-alcohol-web.txt: 'permis probatoire ... 0,1 mg par litre d'air expiré'"
+ },
+ "FRVTC-SEC-029": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": "annual CT for VTC (R323-24) not in source pack",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-general2-web.txt R412-6 IV: 'l'immobilisation du véhicule peut être prescrite'"
+ },
+ "FRVTC-SEC-031": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-other-web.txt: 'au ralenti plus de 20 secondes'"
+ },
+ "FRVTC-SEC-032": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-033": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-other-web.txt: 'privilégiez les coffres de toit ... les enlever après utilisation'"
+ },
+ "FRVTC-SEC-034": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-035": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-SEC-036": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-007": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-010": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-014": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-018": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-020": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-022": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-023": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-FRA-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-007": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-ANG-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-003": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "market-study.txt: 'Pour les entreprises : les effectifs'"
+ },
+ "FRVTC-COM-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "market-study.txt: 'Économiques : ... taux de chômage ... revenu disponible'"
+ },
+ "FRVTC-COM-005": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "market-study.txt: étapes demande puis offre"
+ },
+ "FRVTC-COM-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-008": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "prix.txt: deux questions sur le prix psychologique"
+ },
+ "FRVTC-COM-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-014": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Stem 'contacts compatibles avec votre zone et vos horaires' paraphrases option A 'demandes réalisables / reçues'.",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-016": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "marketing.txt: 'Le SEO répond à une demande exprimée dans les moteurs de recherche'"
+ },
+ "FRVTC-COM-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "marketing.txt: 'premier point de mesure à 30 jours'"
+ },
+ "FRVTC-COM-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "marketing.txt: médias gagnés = 'liens entrants'"
+ },
+ "FRVTC-COM-020": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "marketing.txt: 'le CRM devient la mémoire commerciale'"
+ },
+ "FRVTC-COM-021": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "cnil-communication-web.txt: 'liste d'opposition (ou liste repoussoir)'"
+ },
+ "FRVTC-COM-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-026": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "cnil-communication-web.txt: 'l'exécution du contrat ... (notamment les messages transactionnels)'"
+ },
+ "FRVTC-COM-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "legal-marketing-web.txt: 'saisir son service client' puis médiateur"
+ },
+ "FRVTC-COM-028": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-029": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-031": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-032": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-033": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-034": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-035": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-COM-036": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-REG-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'Ancienneté de 7 ans maximum'"
+ },
+ "FRVTC-REG-002": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-vehicle-web.txt R3122-6: dimensions 'autres que les véhicules hybrides et électriques'"
+ },
+ "FRVTC-REG-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-6: 'au moins quatre et au plus neuf places, y compris celle du conducteur'"
+ },
+ "FRVTC-REG-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'supérieure ou égale à 84 kW'"
+ },
+ "FRVTC-REG-005": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi: '4,50 mètres ... 1,70 mètre'"
+ },
+ "FRVTC-REG-006": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-REG-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-REG-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "Source text 'inamovible sans détruire les vignettes' = cannot be removed without destroying them; A matches.",
+  "source": "signage-current-full-web.txt art 4: 'collées de manière inamovible sans détruire les vignettes'"
+ },
+ "FRVTC-REG-009": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art 4: avant en bas à gauche, arrière en bas à droite"
+ },
+ "FRVTC-REG-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-9: 'contrat de location d'une durée d'au moins six mois'"
+ },
+ "FRVTC-REG-011": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art 3: temporaire ne peut excéder 30 jours ouvrés 'ni ... la date de fin du recours'"
+ },
+ "FRVTC-REG-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-REG-013": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1: 'quinze jours francs'"
+ },
+ "FRVTC-REG-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-2: 'au moins trois mois avant le terme'"
+ },
+ "FRVTC-REG-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "L3122-3: 'renouvelable tous les cinq ans'"
+ },
+ "FRVTC-REG-016": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1 III: 'ne peut excéder un mois'"
+ },
+ "FRVTC-REG-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1 III: documents 2° et 3° (certificats d'immatriculation, cartes professionnelles)"
+ },
+ "FRVTC-REG-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-4: radiation ... 'à titre onéreux ou non' après mise en demeure"
+ },
+ "FRVTC-REG-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R*3122-5: 'Le préfet de la région d'Ile-de-France'"
+ },
+ "FRVTC-REG-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1: 'représentants légaux, seuls habilités'"
+ },
+ "FRVTC-REG-021": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-2: refus 'après qu'une mise en demeure'"
+ },
+ "FRVTC-REG-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-4: 'information préalable ... à la demande de l'exploitant'"
+ },
+ "FRVTC-REG-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "reservation arrêté 2025 art 1 7°: 'Lieu de prise en charge indiqué par le client'"
+ },
+ "FRVTC-REG-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same: 'fournit, sans délai, à l'agent de contrôle, les moyens de prendre contact'"
+ },
+ "FRVTC-REG-025": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-REG-026": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same 2°: numéro d'inscription au registre"
+ },
+ "FRVTC-REG-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art 1: 'exemplaire transmis par l'Imprimerie nationale par voie électronique'"
+ },
+ "FRVTC-REG-028": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi: 'plus d'une heure avant la prise en charge'"
+ },
+ "FRVTC-REG-029": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "t3p-full-web.txt: 'retourner au lieu d'établissement ... ou ... hors de la chaussée'"
+ },
+ "FRVTC-REG-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / stem computation)"
+ },
+ "FRVTC-REG-031": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi: 'forfaitaire ... dès la commande, ou ... durée ... distance ... après'"
+ },
+ "FRVTC-REG-032": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art 3: 'lorsque l'inscription en cours ... arrive à échéance'"
+ }
+}

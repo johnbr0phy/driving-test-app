@@ -1,0 +1,67 @@
+{
+"X001": {
+"key": "C",
+"questionId": "FRVTC-COM-020",
+"category": "frvtcCommercial"
+},
+"X002": {
+"key": "D",
+"questionId": "FRVTC-REG-027",
+"category": "frvtcReglementation"
+},
+"X003": {
+"key": "A",
+"questionId": "FRVTC-COM-019",
+"category": "frvtcCommercial"
+},
+"X004": {
+"key": "C",
+"questionId": "FRVTC-REG-014",
+"category": "frvtcReglementation"
+},
+"X005": {
+"key": "B",
+"questionId": "FRVTC-REG-008",
+"category": "frvtcReglementation"
+},
+"X006": {
+"key": "A",
+"questionId": "FRVTC-COM-007",
+"category": "frvtcCommercial"
+},
+"X007": {
+"key": "D",
+"questionId": "FRVTC-T3P-027",
+"category": "frvtcT3p"
+},
+"X008": {
+"key": "A",
+"questionId": "FRVTC-GES-016",
+"category": "frvtcGestion"
+},
+"X009": {
+"key": "B",
+"questionId": "FRVTC-T3P-016",
+"category": "frvtcT3p"
+},
+"X010": {
+"key": "C",
+"questionId": "FRVTC-ANG-007",
+"category": "frvtcAnglais"
+},
+"X011": {
+"key": "C",
+"questionId": "FRVTC-REG-032",
+"category": "frvtcReglementation"
+},
+"X012": {
+"key": "A",
+"questionId": "FRVTC-COM-024",
+"category": "frvtcCommercial"
+},
+"X013": {
+"key": "B",
+"questionId": "FRVTC-GES-020",
+"category": "frvtcGestion"
+}
+}

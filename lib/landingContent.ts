@@ -51,6 +51,7 @@ import semedbSv from "@/lib/landings/semedb.sv.json";
 import dkteoriDa from "@/lib/landings/dkteori.da.json";
 import dkindfoedDa from "@/lib/landings/dkindfoed.da.json";
 import itpatenteIt from "@/lib/landings/itpatente.it.json";
+import frvtcFr from "@/lib/landings/frvtc.fr.json";
 import frcodeFr from "@/lib/landings/frcode.fr.json";
 import itceliIt from "@/lib/landings/itceli.it.json";
 import itcilsIt from "@/lib/landings/itcils.it.json";
@@ -97,6 +98,7 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "dkteori.da": dkteoriDa as TranslatedLandingContent,
   "dkindfoed.da": dkindfoedDa as TranslatedLandingContent,
   "itpatente.it": itpatenteIt as TranslatedLandingContent,
+  "frvtc.fr": frvtcFr as TranslatedLandingContent,
   "frcode.fr": frcodeFr as TranslatedLandingContent,
   "itceli.it": itceliIt as TranslatedLandingContent,
   "itcils.it": itcilsIt as TranslatedLandingContent,

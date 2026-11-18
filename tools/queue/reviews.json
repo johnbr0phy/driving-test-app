@@ -111,6 +111,51 @@
         "findings": 7,
         "note": "Blind keys 198/200, both disagreements fixed. Options-only 126/200 under the cue-based rule; 15 surface-cue items rewritten, recheck at the 3% limit. See tools/next20/cdm/REVIEW.md."
       }
+    ],
+    "frvtc": [
+      {
+        "date": "2026-11-17",
+        "kind": "draft blind factual and model-language review; options-only gate unresolved",
+        "pr": 886,
+        "findings": 11,
+        "status": "pending",
+        "optionsOnlyCorrect": 163,
+        "optionsOnlyTotal": 200,
+        "note": "All 200 intended keys and explanations checked; final11 changes blindly checked with3 wording repairs. Not completed quality approval. Codex draft; superseded by the 2026-11-18 review, see tools/next20/frvtc/REVIEW.md."
+      },
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 886,
+        "findings": 70,
+        "note": "Blind keys 200/200 twice. Options-only 139/200 with 52 surface-cue hits, rewritten; then 130/200 with 16, 12 rewritten; recheck of changed items leaves about 6. Model French review only. See tools/next20/frvtc/REVIEW.md."
+      }
+    ],
+    "realestatebroker": [
+      {
+        "date": "2026-11-18",
+        "kind": "unfinished draft review",
+        "pr": 888,
+        "status": "pending",
+        "findings": 18,
+        "optionsOnly": "163/200 full bank; 42/46 revised subset",
+        "note": "Codex draft; superseded by the 2026-11-18 review, see tools/next20/realestatebroker/REVIEW.md."
+      },
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 888,
+        "findings": 45,
+        "note": "Blind keys 200/200 twice. Options-only 60% with 13 surface-cue hits, then 66% with 16 (a different set); about 45 items rewritten or replaced. Raw tags still about 13; most are knowledge or arithmetic. See tools/next20/realestatebroker/REVIEW.md."
+      }
+    ],
+    "epa609": [
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "findings": 26,
+        "notes": "Pilot40-v5 integrated; scope, unverifiable and cue items replaced or rewritten. Blind keys 100/100 twice. See tools/next20/epa609/REVIEW.md."
+      }
     ]
   }
 }

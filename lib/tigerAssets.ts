@@ -66,7 +66,9 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  frvtc: "driving",
   zafirearm: "capal",
+  realestatebroker: "realestate",
   appraiser: "realestate",
   nccco: "osha",
   prince2: "pmp",
@@ -196,6 +198,7 @@ const BORROWED_SETS: Record<string, string> = {
   cdm: "rdexam",
   // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
   ase: "caauto",
+  epa609: "caauto", // Automotive refrigerant technician practice.
   // CEN (BCEN Certified Emergency Nurse) borrows the NCLEX tiger.
   cen: "nclex",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal

@@ -214,6 +214,49 @@
    }
   ]
  },
+ "realestate-mo": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/6274"
+   },
+   {
+    "label": "Handbook",
+    "value": "Missouri Real Estate Commission Real Estate Candidate Handbook, copyright 2024, dated 7/18/2024 (bulletin 6274; bulletin 4673 is the same text)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/6274"
+   },
+   {
+    "label": "National portion",
+    "value": "100 items (100 points), 150 minutes, 70% to pass"
+   },
+   {
+    "label": "State portion",
+    "value": "40 items (40 points), 120 minutes, 75% to pass"
+   },
+   {
+    "label": "Pretest",
+    "value": "5 to 10 unscored experimental questions may be added; they count against time"
+   },
+   {
+    "label": "Pass and retakes",
+    "value": "Portions scored separately; a failed candidate may retake one or both portions"
+   },
+   {
+    "label": "Education",
+    "value": "48-hour Salesperson Pre-Examination Course before the exam; 24-hour Missouri Real Estate Practice Course before applying"
+   },
+   {
+    "label": "Apply after passing",
+    "value": "Within six months of completing the 48-hour course; course and exam credit then expire"
+   },
+   {
+    "label": "Other-state licensees",
+    "value": "State portion only plus the 24-hour practice course; 48-hour course waived"
+   }
+  ]
+ },
  "realestate-nc": {
   "accessed": "2026-10-18",
   "rows": [

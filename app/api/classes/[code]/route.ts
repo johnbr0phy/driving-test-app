@@ -22,8 +22,10 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
   return NextResponse.json(info);
 }
 
-// Rename a class (its teacher or a site admin). Class quizzes carry a copy of
-// the name for their gate, so those are renamed too.
+// Edit a class's details (its teacher or a site admin): any of name,
+// teacherName and school, for a teacher who got one wrong when making it.
+// Class quizzes carry copies of the class and teacher names for their gate,
+// so those change too. The exam is fixed: progress is stored against it.
 export async function PATCH(request: NextRequest, { params }: { params: Promise<{ code: string }> }) {
   const code = normalizeClassCode((await params).code);
   if (!isClassCode(code)) return NextResponse.json({ error: "No such class" }, { status: 404 });
@@ -31,14 +33,31 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   if (!owner.ok) return owner.response;
 
   const body = await request.json().catch(() => ({}));
-  const name = cleanName(body.name);
-  if (!name) return NextResponse.json({ error: "Give the class a name" }, { status: 400 });
+  const update: { name?: string; teacherName?: string; school?: string } = {};
+  if (body.name !== undefined) {
+    const name = cleanName(body.name);
+    if (!name) return NextResponse.json({ error: "Give the class a name" }, { status: 400 });
+    update.name = name;
+  }
+  if (body.teacherName !== undefined) {
+    const teacherName = cleanName(body.teacherName);
+    if (!teacherName) return NextResponse.json({ error: "Add the name your students know you by" }, { status: 400 });
+    update.teacherName = teacherName;
+  }
+  // School is optional, so an empty one clears it.
+  if (body.school !== undefined) update.school = cleanName(body.school);
+  if (!Object.keys(update).length) return NextResponse.json({ error: "Nothing to change" }, { status: 400 });
 
   const db = getAdminDb();
   const batch = db.batch();
-  batch.update(db.collection("classes").doc(code), { name });
-  const quizzes = await db.collection("quizzes").where("classCode", "==", code).get();
-  for (const q of quizzes.docs) batch.update(q.ref, { className: name });
+  batch.update(db.collection("classes").doc(code), update);
+  if (update.name !== undefined || update.teacherName !== undefined) {
+    const quizzes = await db.collection("quizzes").where("classCode", "==", code).get();
+    const quizUpdate: Record<string, string> = {};
+    if (update.name !== undefined) quizUpdate.className = update.name;
+    if (update.teacherName !== undefined) quizUpdate.classTeacherName = update.teacherName;
+    for (const q of quizzes.docs) batch.update(q.ref, quizUpdate);
+  }
   await batch.commit();
-  return NextResponse.json({ name });
+  return NextResponse.json(update);
 }

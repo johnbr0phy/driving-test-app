@@ -4610,14 +4610,14 @@
     "state": "CA",
     "questionId": "CA-010",
     "category": "gdlLicensing",
-    "question": "¿Puede un titular de licencia provisional de California usar un teléfono celular manos libres mientras conduce?",
+    "question": "Fuera de una emergencia, ¿puede un conductor de California menor de 18 años usar un teléfono celular manos libres mientras conduce?",
     "optionA": "Sí, si está montado correctamente",
     "optionB": "No, ni siquiera manos libres",
     "optionC": "Sí, pero solo para GPS",
-    "optionD": "Sí, pero solo para emergencias",
+    "optionD": "Sí, pero solo en autopistas",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los titulares de licencia provisional de California menores de 18 años no pueden usar ningún dispositivo de comunicación electrónica mientras conducen, ni siquiera en modo manos libres, excepto para emergencias."
+    "explanation": "Los conductores de California menores de 18 años no pueden usar un teléfono celular ni un dispositivo inalámbrico mientras conducen, ni siquiera en modo manos libres. La única excepción es llamar para pedir ayuda de emergencia."
   },
   {
     "type": "State-Specific",

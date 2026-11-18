@@ -4050,14 +4050,14 @@
     "state": "CA",
     "questionId": "CA-010",
     "category": "gdlLicensing",
-    "question": "Can a California provisional license holder use a cell phone hands-free while driving?",
+    "question": "Outside of an emergency, can a California driver under 18 use a cell phone hands-free while driving?",
     "optionA": "Yes, if mounted properly",
     "optionB": "No, not even hands-free",
     "optionC": "Yes, but only for GPS",
-    "optionD": "Yes, but only for emergencies",
+    "optionD": "Yes, but only on freeways",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "California provisional license holders under 18 cannot use any electronic communication device while driving, even in hands-free mode, except for emergencies."
+    "explanation": "California drivers under 18 may not use a cell phone or electronic wireless device while driving, even in hands-free mode. The only exception is calling for emergency assistance."
   },
   {
     "type": "State-Specific",

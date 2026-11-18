@@ -1,0 +1,49 @@
+{
+ "runId": "2026-11-18-57068a",
+ "at": "2026-11-18T13:28:55.101Z",
+ "model": "claude-opus-5-5",
+ "checked": 4,
+ "blindChecked": 4,
+ "disagreements": 2,
+ "adjudicated": 4,
+ "findings": [
+  {
+   "examId": "dmv",
+   "questionId": "CA-010",
+   "file": "data/questions.json",
+   "trigger": [
+    "report"
+   ],
+   "notes": [
+    "A student reported: wrong_answer"
+   ],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "high",
+    "defensibleOthers": [
+     "D"
+    ],
+    "problem": "Under CVC 23124, drivers under 18 may not use a phone even hands-free, but there is an emergency exception (calling police, fire, or medical services). That makes D arguably correct as well. The question also assumes a provisional license holder is under 18."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "ambiguous",
+    "confidence": "high",
+    "correctAnswer": [
+     "B",
+     "D"
+    ],
+    "reason": "CVC 23124 bars drivers under 18 from using a wireless phone or communications device even hands-free, so B is the intended answer. However, the statute expressly allows use to contact police, fire, a health care provider or other emergency services, which makes D (\"Yes, but only for emergencies\") a defensible answer. The key's own explanation concedes the emergency exception, so a well-prepared candidate could reasonably choose D. The stem also assumes the provisional license holder is under 18, but the explanation limits the rule to drivers under 18.",
+    "fix": "Replace option D with: \"Yes, but only on freeways\". Change the stem to: \"Outside of an emergency, can a California provisional license holder under 18 use a cell phone in hands-free mode while driving?\" Keep key B. Revise the explanation to: \"Under CVC 23124, drivers under 18 may not use a cell phone or electronic wireless communications device while driving, even hands-free. The only exception is contacting law enforcement, a health care provider, the fire department or other emergency services in an emergency.\""
+   },
+   "signalExamId": "dmv",
+   "n": 0
+  }
+ ],
+ "signalsCleared": 3
+}

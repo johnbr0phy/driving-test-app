@@ -1,0 +1,7 @@
+[
+  {
+    "id": "dmv__CA-010",
+    "status": "fixed",
+    "note": "Stem now asks about drivers under 18 outside an emergency and D is now on freeways only, because the CA DMV handbook (Section 8) allows emergency calls. Key B kept; es, vi, ko and zh match. Source in tools/dmv/sources.md."
+  }
+]

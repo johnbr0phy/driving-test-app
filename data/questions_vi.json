@@ -4050,14 +4050,14 @@
   "state": "CA",
   "questionId": "CA-010",
   "category": "gdlLicensing",
-  "question": "Người giữ bằng lái tạm thời ở California có được dùng điện thoại rảnh tay (hands-free) khi lái xe không?",
+  "question": "Ngoài trường hợp khẩn cấp, tài xế dưới 18 tuổi ở California có được dùng điện thoại rảnh tay (hands-free) khi lái xe không?",
   "optionA": "Có, nếu được gắn giá đỡ đúng cách",
   "optionB": "Không, kể cả rảnh tay cũng không",
   "optionC": "Có, nhưng chỉ để dùng GPS",
-  "optionD": "Có, nhưng chỉ trong trường hợp khẩn cấp",
+  "optionD": "Có, nhưng chỉ trên xa lộ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Người giữ bằng lái tạm thời dưới 18 tuổi ở California không được sử dụng bất kỳ thiết bị liên lạc điện tử nào khi lái xe, kể cả ở chế độ rảnh tay, ngoại trừ trường hợp khẩn cấp."
+  "explanation": "Tài xế dưới 18 tuổi ở California không được dùng điện thoại hay thiết bị không dây khi lái xe, kể cả ở chế độ rảnh tay. Ngoại lệ duy nhất là gọi để xin trợ giúp khẩn cấp."
  },
  {
   "type": "State-Specific",

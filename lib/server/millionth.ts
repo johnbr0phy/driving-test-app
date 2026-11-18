@@ -1,14 +1,11 @@
-// The 1,000,000th question (Nov 2026). Whoever sends the answer batch that
-// takes the all-time count past MILLIONTH_TARGET gets Premium free and an
-// email. The count is the same figure the /admin Growth tab shows: the sum
-// of analytics/questions.daily (backfilled days included), seeded once and
-// then advanced by every batch in a transaction on a small doc of its own.
-//
-// A signed-in winner gets Premium at once. A guest winner gets a claim
-// token their browser keeps (components/MillionthCard.tsx), and Premium
-// lands on the account they sign up or sign in with
-// (/api/millionth/claim). John is emailed the moment it happens.
-import { createHash, randomBytes } from 'crypto';
+// The 1,000,000th question (Nov 2026). Once the all-time count passes
+// MILLIONTH_TARGET, the first signed-in (non-internal) account to send an
+// answer batch gets Premium free and an email; guests are passed over, so
+// the winner may have answered just after the millionth, and the email says
+// so. The count is the figure the /admin Growth tab shows: the sum of
+// analytics/questions.daily (backfilled days included), seeded once and then
+// advanced by every batch in a transaction on a small doc of its own.
+// John is emailed when it happens.
 import type { Firestore } from 'firebase-admin/firestore';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { sendEmail } from '@/lib/resend';
@@ -19,20 +16,16 @@ export const MILLIONTH_DOC = 'analytics/millionthQuestion';
 const OWNER = process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io';
 
 export interface MillionthWinner {
-  uid: string | null;
-  browserId: string | null;
+  uid: string;
   at: string;
   /** The all-time count after the winning batch. */
   count: number;
   batch: number;
-  claimToken: string;
-  claimedBy?: string;
-  claimedAt?: string;
 }
 
 interface MillionthState {
   count: number;
-  /** The target was passed by an internal batch; the next eligible one wins. */
+  /** The target was passed by a guest or internal batch; the next signed-in one wins. */
   pending?: boolean;
   /** Seeded already past the target: nobody can be crowned honestly. */
   missed?: boolean;
@@ -41,10 +34,6 @@ interface MillionthState {
 
 /** Lets each server instance stop reading the doc once it is decided. */
 let decided = false;
-
-export function hashBrowserId(browserId: string): string {
-  return createHash('sha256').update(`millionth:${browserId}`).digest('hex').slice(0, 24);
-}
 
 function sumDaily(data: Record<string, unknown> | undefined): number {
   const daily = (data?.daily as Record<string, unknown>) || {};
@@ -57,7 +46,7 @@ function sumDaily(data: Record<string, unknown> | undefined): number {
  */
 export async function advanceMillionth(
   db: Firestore,
-  input: { count: number; uid: string | null; browserId: string | null; internal: boolean }
+  input: { count: number; uid: string | null; internal: boolean }
 ): Promise<MillionthWinner | null> {
   if (decided || input.count <= 0) return null;
   const ref = db.doc(MILLIONTH_DOC);
@@ -79,16 +68,8 @@ export async function advanceMillionth(
     }
     const next = prev + input.count;
     const crossed = next >= MILLIONTH_TARGET;
-    const eligible = !input.internal && !!(input.uid || input.browserId);
-    if (crossed && eligible) {
-      const winner: MillionthWinner = {
-        uid: input.uid,
-        browserId: input.browserId,
-        at: new Date().toISOString(),
-        count: next,
-        batch: input.count,
-        claimToken: randomBytes(18).toString('base64url'),
-      };
+    if (crossed && !input.internal && input.uid) {
+      const winner: MillionthWinner = { uid: input.uid, at: new Date().toISOString(), count: next, batch: input.count };
       tx.set(ref, { count: next, pending: false, winner });
       return { done: true, winner };
     }
@@ -127,9 +108,9 @@ function winnerEmail(firstName: string | null, alreadyPremium: boolean): string 
   return `<!doctype html><html><body style="margin:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#111827">
 <div style="max-width:560px;margin:0 auto;padding:32px 24px">
 <p style="font-size:40px;margin:0 0 8px">🎉🐯</p>
-<h1 style="font-size:24px;margin:0 0 16px">You answered our 1,000,000th question</h1>
+<h1 style="font-size:24px;margin:0 0 16px">We just hit 1,000,000 questions, and you were there</h1>
 <p style="font-size:16px;line-height:1.6">${hello}</p>
-<p style="font-size:16px;line-height:1.6">People have now answered one million questions on Tigertest, and the one that took us to a million was yours.</p>
+<p style="font-size:16px;line-height:1.6">People have now answered one million questions on Tigertest. You were the first person with an account to answer one after we got there.</p>
 <p style="font-size:16px;line-height:1.6">${prize}</p>
 <p style="margin:28px 0"><a href="${SITE_URL}/" style="background:#111827;color:#fff;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:600;display:inline-block">Keep practicing</a></p>
 <p style="font-size:16px;line-height:1.6">Good luck on the real thing. Just hit reply if you ever want to tell me how it went.</p>
@@ -137,7 +118,7 @@ function winnerEmail(firstName: string | null, alreadyPremium: boolean): string 
 </div></body></html>`;
 }
 
-/** Give a winner (or a guest's claiming account) the prize and the email. */
+/** Give the winner the prize and the email. */
 export async function awardMillionth(uid: string, winner: MillionthWinner): Promise<void> {
   const alreadyPremium = await grantPremium(uid, winner.at);
   let email: string | undefined;
@@ -152,7 +133,7 @@ export async function awardMillionth(uid: string, winner: MillionthWinner): Prom
   if (email) {
     await sendEmail({
       to: email,
-      subject: 'You answered our 1,000,000th question 🎉',
+      subject: 'We just hit 1,000,000 questions, and you were there 🎉',
       html: winnerEmail(name, alreadyPremium),
       replyTo: OWNER,
       kind: 'transactional',
@@ -171,16 +152,5 @@ export async function notifyOwner(subject: string, html: string): Promise<void> 
 
 /** Called once, right after a batch wins. */
 export async function handleMillionthWin(winner: MillionthWinner): Promise<void> {
-  if (winner.uid) {
-    await getAdminDb().doc(MILLIONTH_DOC).set(
-      { winner: { claimedBy: winner.uid, claimedAt: winner.at } },
-      { merge: true }
-    );
-    await awardMillionth(winner.uid, winner);
-    return;
-  }
-  await notifyOwner(
-    'Millionth question answered by a guest',
-    `<p>A signed-out browser answered the 1,000,000th question at ${winner.at}. Its browser now shows a card asking them to sign up to claim Premium. You will get another email if they claim it.</p>`
-  );
+  await awardMillionth(winner.uid, winner);
 }

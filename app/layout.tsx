@@ -16,7 +16,6 @@ import { SITE_URL } from "@/lib/siteUrl";
 import { URL_LANG_INIT_SCRIPT } from "@/lib/urlLanguage";
 import { ANALYTICS_INIT_SCRIPT, GA_ID } from "@/lib/privacyRegion";
 import { AnalyticsConsent } from "@/components/AnalyticsConsent";
-import { MillionthCard } from "@/components/MillionthCard";
 import { VercelPageAnalytics } from "@/components/VercelPageAnalytics";
 
 // viewport-fit=cover (page extends behind the notch/home indicator) is
@@ -129,7 +128,6 @@ export default function RootLayout({
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>
           <Footer />
           <AnalyticsConsent />
-          <MillionthCard />
           <VercelPageAnalytics />
         </Providers>
         <Script

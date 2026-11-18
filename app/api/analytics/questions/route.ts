@@ -94,9 +94,8 @@ export async function POST(request: NextRequest) {
         uid = null;
       }
     }
-    // Older clients send browserId only when they want the learner recorded;
-    // newer ones send it on every batch (for the millionth question) and say
-    // whether to record the learner with `wal`.
+    // Signed-in clients now send their token on every batch (for the
+    // millionth question) and say whether to record the learner with `wal`.
     const reportLearner = body.wal !== false;
     if (reportLearner && !internal && (uid || browserId)) {
       try {
@@ -112,18 +111,14 @@ export async function POST(request: NextRequest) {
     }
 
     // The 1,000,000th question (lib/server/millionth). Never fails the count.
-    let millionth: { claimToken: string; signedIn: boolean } | null = null;
     try {
-      const winner = await advanceMillionth(db, { count, uid, browserId, internal });
-      if (winner) {
-        millionth = { claimToken: winner.claimToken, signedIn: !!winner.uid };
-        after(() => handleMillionthWin(winner).catch((err) => console.error('Millionth prize failed:', err)));
-      }
+      const winner = await advanceMillionth(db, { count, uid, internal });
+      if (winner) after(() => handleMillionthWin(winner).catch((err) => console.error('Millionth prize failed:', err)));
     } catch (err) {
       console.error('Error advancing the millionth question:', err);
     }
 
-    return NextResponse.json({ ok: true, learner, ...(millionth ? { millionth } : {}) });
+    return NextResponse.json({ ok: true, learner });
   } catch (error) {
     console.error('Error tracking answered questions:', error);
     return NextResponse.json({ ok: false }, { status: 500 });

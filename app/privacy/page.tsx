@@ -70,8 +70,8 @@ export default function PrivacyPage() {
                 <strong>Device and visit:</strong> your approximate country from your IP address (used to show your
                 country&apos;s tests and prices and to decide which privacy rules apply; we do not store your IP address
                 with your account), the page that sent you here, a random browser ID kept in your browser, and whether
-                you came from a school learning system. For our 1,000,000th question we keep the browser ID (and
-                account, if signed in) that answered it, so that person can claim their prize.
+                you came from a school learning system. When we pass 1,000,000 questions answered we note the first
+                signed-in account to answer after it, to give them a prize.
               </li>
               <li>
                 <strong>Payments:</strong> if you buy Premium, Stripe handles the card or other payment method. We receive

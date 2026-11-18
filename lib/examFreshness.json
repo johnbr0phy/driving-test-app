@@ -527,6 +527,15 @@
       "action": "Bank written to the amended rules; re-check basic-operation items (CADRONE-LAW, -OPS, -AIR) against any further Part IX amendment or a new TP 15263 edition.",
       "source": "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html",
       "done": "2026-11-18"
+    },
+    {
+      "exam": "sfpd1",
+      "date": "2026-11-18",
+      "kind": "review",
+      "what": "Apex API version 67.0 (Summer '26) made classes without a sharing keyword run with sharing, made Apex run in user context by default and disallowed WITH SECURITY_ENFORCED; the Visualforce guide still says custom controllers run in system mode.",
+      "action": "Built with version-named questions on these defaults only. Recheck when Salesforce's Platform Developer exam guide names the release it aligns to.",
+      "source": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf",
+      "done": "2026-11-18"
     }
   ]
 }

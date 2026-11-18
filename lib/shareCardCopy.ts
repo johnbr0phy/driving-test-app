@@ -249,6 +249,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ukgas: { title: "Gas Safe ACS (CCN1) Practice Test", description: "Practise the gas safety law, unsafe situations, CO, ventilation, flues and tightness testing for ACS CCN1." },
   ccaf: { title: "Claude Certified Architect", description: "Practice agent design, Claude Code configuration, prompts, tools and MCP, and context management." },
   sfadmin: { title: "Salesforce Platform Administrator", description: "Practice users and security, objects, reports, Flow automation, sales and service, and Agentforce." },
+  sfpd1: { title: "Salesforce Platform Developer", description: "Practise Apex, SOQL, triggers, Lightning Web Components, security, testing and deployment." },
   cfal1: { title: "CFA Level I", description: "Practice ethics, quant, financial statement analysis, equity, fixed income and derivatives." },
   cpaaud: { title: "CPA AUD Exam", description: "Review independence, risk assessment, internal control, evidence, sampling and audit reports." },
   accafa: { title: "ACCA Financial Accounting (FA)", description: "Practice double entry, inventories, depreciation, reconciliations, IFRS statements and consolidation." },

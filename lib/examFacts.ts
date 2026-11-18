@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  sfpd1: {
+    answer:
+      "The Salesforce Certified Platform Developer exam, formerly Platform Developer I (PDI), tests building custom business logic and interfaces on the Salesforce Platform with Apex, SOQL, triggers and Lightning Web Components. Guides quoting the current exam guide give 60 scored multiple-choice and multiple-select questions plus up to 5 unscored ones in 105 minutes, with 68% needed to pass. Salesforce's Trailhead cert prep weights its four sections Developer Fundamentals 27%, Process Automation and Logic 28%, User Interface 25%, and Testing, Debugging, and Deployment 20%.",
+    rows: [
+      { label: "Questions", value: "60 scored, plus up to 5 unscored (guides say)" },
+      { label: "Time", value: "105 minutes (guides say)" },
+      { label: "Passing score", value: "68% (guides say)" },
+      { label: "Largest section", value: "Process Automation and Logic, 28%" },
+      { label: "Formerly", value: "Platform Developer I (PDI)" },
+      { label: "Run by", value: "Salesforce, registered through Trailhead" },
+    ],
+    basedOn: "Salesforce's Trailhead Platform Developer cert prep section weights, and the exam guide as quoted by study guides, checked November 2026",
+    source: { name: "Trailhead: Salesforce Certified Platform Developer", url: "https://trailhead.salesforce.com/credentials/platformdeveloperi" },
+  },
   carshair: {
     answer:
       "The Red Seal Hairstylist exam is the interprovincial certificate of qualification exam for hairstylists in Canada. It has 120 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Hairstylist across 8 Major Work Activities, led by altering hair colour (25 questions) and cutting hair (24). Ontario (trade 332A) does not currently offer the Red Seal endorsement for this trade and uses its own Certificate of Qualification exam.",

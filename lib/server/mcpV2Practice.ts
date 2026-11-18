@@ -73,6 +73,7 @@ import '@/lib/v2/banks/iimcat';
 import '@/lib/v2/banks/sehp';
 import '@/lib/v2/banks/netplus';
 import '@/lib/v2/banks/linuxplus';
+import '@/lib/v2/banks/sfpd1';
 import '@/lib/v2/banks/cysa';
 import '@/lib/v2/banks/fortinse';
 import '@/lib/v2/banks/pentestplus';

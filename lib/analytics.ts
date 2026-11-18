@@ -105,6 +105,19 @@ function markWalSent(id: string, day: string) {
 }
 
 // examKey: a v1 analytics key, or a v2 exam id (sat, act...) from useV2Store.
+// The 1,000,000th question (lib/server/millionth, components/MillionthCard).
+export const MILLIONTH_KEY = "tigertest-millionth";
+export const MILLIONTH_EVENT = "tigertest-millionth";
+
+export function saveMillionthWin(win: { claimToken: string; signedIn: boolean; claimed?: boolean }) {
+  try {
+    localStorage.setItem(MILLIONTH_KEY, JSON.stringify(win));
+  } catch {
+    // The status check on the next visit finds it again.
+  }
+  window.dispatchEvent(new Event(MILLIONTH_EVENT));
+}
+
 export function trackQuestionsAnswered(count = 1, examKey: ExamAnalyticsKey | string = DMV_ANALYTICS_KEY) {
   if (count <= 0 || isInternalBrowser(auth.currentUser?.email)) return;
   trackFunnelStep("answered");
@@ -131,7 +144,7 @@ async function flushAnsweredQuestions() {
   const reportLearner = !!learnerKey && !isInternalBrowser(user?.email) && !walAlreadySent(learnerKey, day);
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
-    if (user && reportLearner) {
+    if (user) {
       try {
         headers.Authorization = `Bearer ${await user.getIdToken()}`;
       } catch {
@@ -144,13 +157,18 @@ async function flushAnsweredQuestions() {
       body: JSON.stringify({
         count,
         byExam,
-        ...(reportLearner && browserId ? { browserId } : {}),
+        ...(browserId ? { browserId } : {}),
+        wal: reportLearner,
       }),
       keepalive: true,
     });
-    if (res.ok && reportLearner && learnerKey) {
-      const body = (await res.json().catch(() => ({}))) as { learner?: boolean };
-      if (body.learner) markWalSent(learnerKey, day);
+    if (res.ok) {
+      const body = (await res.json().catch(() => ({}))) as {
+        learner?: boolean;
+        millionth?: { claimToken: string; signedIn: boolean };
+      };
+      if (reportLearner && learnerKey && body.learner) markWalSent(learnerKey, day);
+      if (body.millionth) saveMillionthWin(body.millionth);
     }
   } catch {
     // Re-queue so the counts ride along with the next flush.

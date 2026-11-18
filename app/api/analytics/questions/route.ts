@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { FieldValue } from 'firebase-admin/firestore';
 import { EXAM_ANALYTICS_KEYS } from '@/lib/exams';
@@ -8,6 +8,7 @@ import { grantAnswers, requestIp } from '@/lib/server/answerRateLimit';
 import { BROWSER_ID_RE, recordAnswerActivity } from '@/lib/server/weeklyActiveLearners';
 import { isBotRequest } from '@/lib/botUserAgent';
 import { visitorCountry } from '@/lib/server/visitorCountry';
+import { advanceMillionth, handleMillionthWin } from '@/lib/server/millionth';
 
 // Largest batch a client can legitimately accumulate: a full test completion
 // (171 questions on the ACT) plus a burst of training answers.
@@ -93,7 +94,11 @@ export async function POST(request: NextRequest) {
         uid = null;
       }
     }
-    if (!internal && (uid || browserId)) {
+    // Older clients send browserId only when they want the learner recorded;
+    // newer ones send it on every batch (for the millionth question) and say
+    // whether to record the learner with `wal`.
+    const reportLearner = body.wal !== false;
+    if (reportLearner && !internal && (uid || browserId)) {
       try {
         learner = await recordAnswerActivity(db, {
           uid,
@@ -106,7 +111,19 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    return NextResponse.json({ ok: true, learner });
+    // The 1,000,000th question (lib/server/millionth). Never fails the count.
+    let millionth: { claimToken: string; signedIn: boolean } | null = null;
+    try {
+      const winner = await advanceMillionth(db, { count, uid, browserId, internal });
+      if (winner) {
+        millionth = { claimToken: winner.claimToken, signedIn: !!winner.uid };
+        after(() => handleMillionthWin(winner).catch((err) => console.error('Millionth prize failed:', err)));
+      }
+    } catch (err) {
+      console.error('Error advancing the millionth question:', err);
+    }
+
+    return NextResponse.json({ ok: true, learner, ...(millionth ? { millionth } : {}) });
   } catch (error) {
     console.error('Error tracking answered questions:', error);
     return NextResponse.json({ ok: false }, { status: 500 });

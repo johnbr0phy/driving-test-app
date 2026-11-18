@@ -5374,6 +5374,19 @@
     --brand-border-light: 39 30% 88%;
     --brand-gradient-to: 54 50% 95%;
   }
+  /* IRS Enrolled Agent SEE Part 2 theme: dark olive taupe */
+  [data-theme="ea2"] {
+    --brand: 49 20% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 49 50% 95%;
+    --brand-hover: 49 20% 17%;
+    --brand-dark: 49 20% 15%;
+    --brand-darker: 49 15% 10%;
+    --brand-muted: 49 20% 70%;
+    --brand-border: 49 30% 78%;
+    --brand-border-light: 49 30% 88%;
+    --brand-gradient-to: 64 50% 95%;
+  }
 
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
@@ -10733,6 +10746,18 @@
     --brand-muted: 39 25% 45%;
     --brand-dark: 39 85% 65%;
     --brand-darker: 39 80% 78%;
+  }
+
+  .dark [data-theme="ea2"] {
+    --brand: 49 20% 40.8%;
+    --brand-hover: 49 20% 32.8%;
+    --brand-light: 49 45% 13%;
+    --brand-gradient-to: 64 40% 11%;
+    --brand-border-light: 49 30% 24%;
+    --brand-border: 49 30% 34%;
+    --brand-muted: 49 20% 45%;
+    --brand-dark: 49 20% 65%;
+    --brand-darker: 49 15% 78%;
   }
 
   .dark [data-theme="hspachl"] {

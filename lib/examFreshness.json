@@ -494,6 +494,22 @@
       "what": "CompTIA estimates XK0-006 retires about three years after its July 15, 2025 launch (estimated 2028).",
       "action": "Watch for the XK0-007 objectives and rebuild when published.",
       "source": "https://www.comptia.org/en-us/certifications/linux/"
+    },
+    {
+      "exam": "ea2",
+      "date": "2027-03-01",
+      "kind": "law",
+      "what": "The July 1, 2026 to February 28, 2027 SEE window ends; the next window (after the March to April update) is expected to test calendar year 2026 law.",
+      "action": "Read the new PSI bulletin; move 2025-dated items (bonus 40%/100% split, $600 Form 1099-NEC, 10% corporate charitable limit without the 1% floor) to the tax year it names, and update the landing and examFacts dates.",
+      "source": "https://test-takers.psigov.us/api/content/bulletin/12238"
+    },
+    {
+      "exam": "ea1",
+      "date": "2027-03-01",
+      "kind": "law",
+      "what": "The July 1, 2026 to February 28, 2027 SEE window ends; the next window (after the March to April update) is expected to test calendar year 2026 law.",
+      "action": "Read the new PSI bulletin; move 2025-dated items (bonus 40%/100% split, $600 Form 1099-NEC, 10% corporate charitable limit without the 1% floor) to the tax year it names, and update the landing and examFacts dates.",
+      "source": "https://test-takers.psigov.us/api/content/bulletin/12238"
     }
   ]
 }

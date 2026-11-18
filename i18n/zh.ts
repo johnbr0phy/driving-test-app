@@ -2935,6 +2935,14 @@ export const zh: TranslationKeys = {
     nailTools: "Nail Service Tools",
     nailManiPedi: "Manicures & Pedicures",
     nailEnhance: "Nail Enhancements",
+    ea2Entities: "Business Entities & Elections",
+    ea2Partnerships: "Partnerships",
+    ea2Corporations: "C & S Corporations",
+    ea2Income: "Business Income & Expenses",
+    ea2Assets: "Business Assets & Depreciation",
+    ea2Records: "Records, Methods & Advising",
+    ea2Trusts: "Trusts, Estates & Exempt Orgs",
+    ea2Retirement: "Retirement, Farmers & Rentals",
   } as Record<string, string>,
 
   // Training set names

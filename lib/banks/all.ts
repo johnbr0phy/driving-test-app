@@ -306,3 +306,4 @@ import "./cacore";
 import "./chtheory";
 import "./cabcguard";
 import "./nailtech";
+import "./ea2";

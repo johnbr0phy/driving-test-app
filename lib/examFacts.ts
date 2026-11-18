@@ -44,6 +44,23 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  ea2: {
+    answer:
+      "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 2 covers businesses. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 2's three domains are business entities and considerations (30 scored questions), business tax preparation (37) and specialized returns and taxpayers (18). For exams from July 1, 2026 to February 28, 2027, questions follow tax law as amended through December 31, 2025 and relate to calendar year 2025.",
+    rows: [
+      { label: "Questions", value: "100 (85 scored, 15 unscored)" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Tax year tested", value: "2025, for July 1, 2026 to February 28, 2027" },
+      { label: "Largest domain", value: "Business tax preparation, 37 scored questions" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
+      { label: "Attempts", value: "Up to four per part each testing window" },
+      { label: "Passed parts", value: "Carry over for three years" },
+      { label: "Given by", value: "PSI for the IRS" },
+    ],
+    basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
+    source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
+  },
   linuxplus: {
     answer:
       "The CompTIA Linux+ exam (XK0-006) has a maximum of 90 questions in 90 minutes, multiple choice and performance-based, and you need 720 on a 100 to 900 scale to pass. It covers System Management 23%, Services and User Management 20%, Security 18%, Automation, Orchestration, and Scripting 17% and Troubleshooting 22%. XK0-006 launched on July 15, 2025, and the English XK0-005 exam retired on January 13, 2026.",

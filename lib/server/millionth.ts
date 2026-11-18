@@ -9,7 +9,8 @@
 import type { Firestore } from 'firebase-admin/firestore';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import { sendEmail } from '@/lib/resend';
-import { SITE_URL } from '@/lib/siteUrl';
+import { MILLIONTH_SUBJECT, millionthEmail } from '@/lib/email-templates';
+import { voiceFor } from '@/lib/email-voice';
 
 export const MILLIONTH_TARGET = 1_000_000;
 export const MILLIONTH_DOC = 'analytics/millionthQuestion';
@@ -81,7 +82,7 @@ export async function advanceMillionth(
 }
 
 /** Premium on the account, marked as a prize so /admin never counts it as revenue. */
-async function grantPremium(uid: string, at: string): Promise<boolean> {
+async function grantPremium(uid: string, at: string): Promise<{ already: boolean; examId: string | undefined }> {
   const db = getAdminDb();
   const ref = db.collection('users').doc(uid);
   return db.runTransaction(async (tx) => {
@@ -96,37 +97,19 @@ async function grantPremium(uid: string, at: string): Promise<boolean> {
       },
       { merge: true }
     );
-    return already;
+    return { already, examId: typeof data.primaryExam === 'string' ? data.primaryExam : undefined };
   });
-}
-
-function winnerEmail(firstName: string | null, alreadyPremium: boolean): string {
-  const hello = firstName ? `Hi ${firstName},` : 'Hi there,';
-  const prize = alreadyPremium
-    ? 'You already have Premium, so instead of a prize we owe you a very big thank you. Reply and tell me what test you are studying for.'
-    : 'To say thank you, Premium is now on your account, free, for good. Every locked set, test and stat on Tigertest is open to you.';
-  return `<!doctype html><html><body style="margin:0;background:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#111827">
-<div style="max-width:560px;margin:0 auto;padding:32px 24px">
-<p style="font-size:40px;margin:0 0 8px">🎉🐯</p>
-<h1 style="font-size:24px;margin:0 0 16px">You answered our 1,000,000th question</h1>
-<p style="font-size:16px;line-height:1.6">${hello}</p>
-<p style="font-size:16px;line-height:1.6">People have now answered one million questions on Tigertest, and the one that took us to a million was yours.</p>
-<p style="font-size:16px;line-height:1.6">${prize}</p>
-<p style="margin:28px 0"><a href="${SITE_URL}/" style="background:#111827;color:#fff;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:600;display:inline-block">Keep practicing</a></p>
-<p style="font-size:16px;line-height:1.6">Good luck on the real thing. Just hit reply if you ever want to tell me how it went.</p>
-<p style="font-size:16px;line-height:1.6">John<br>Tigertest</p>
-</div></body></html>`;
 }
 
 /** Give the winner the prize and the email. */
 export async function awardMillionth(uid: string, winner: MillionthWinner): Promise<void> {
-  const alreadyPremium = await grantPremium(uid, winner.at);
+  const { already: alreadyPremium, examId } = await grantPremium(uid, winner.at);
   let email: string | undefined;
   let name: string | null = null;
   try {
     const record = await getAdminAuth().getUser(uid);
     email = record.email ?? undefined;
-    name = record.displayName?.trim().split(/\s+/)[0]?.replace(/[<>&"]/g, '') || null;
+    name = record.displayName?.trim().split(/\s+/)[0] || null;
   } catch {
     email = undefined;
   }
@@ -134,8 +117,8 @@ export async function awardMillionth(uid: string, winner: MillionthWinner): Prom
     await sendEmail({
       to: email,
       from: 'John from Tigertest <john@tigertest.io>',
-      subject: 'You answered our 1,000,000th question 🎉',
-      html: winnerEmail(name, alreadyPremium),
+      subject: MILLIONTH_SUBJECT,
+      html: millionthEmail(voiceFor(examId), { firstName: name, alreadyPremium }),
       replyTo: OWNER,
       kind: 'transactional',
       idempotencyKey: `millionth-${uid}`,

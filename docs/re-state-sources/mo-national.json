@@ -173,7 +173,7 @@
       "question": "A buyer agreement pays 2.5% of price, minus any seller contribution. Price is $412,000; the seller contributes $6,000. The buyer owes:"
     },
     "RE-VAL-008": {
-      "question": "A vacant office-zoned lot is worth most if developed as a small office building. This is its:"
+      "question": "An appraiser tests a vacant lot's uses for being legal, physically possible, financially feasible and most productive. The use that passes is its:"
     },
     "RE-CON-014": {
       "question": "A seller breaches a valid contract. To get the house itself, the buyer should sue for:"
@@ -381,6 +381,10 @@
     },
     "RE-MATH-013": {
       "question": "A $350,000 purchase has a 90% loan-to-value loan with 1.5 discount points. What do the points cost?"
+    },
+    "RE-CON-034": {
+      "optionC": "The listing salesperson leaving the brokerage",
+      "explanation": "A listing is a contract with the broker, not the salesperson, so it survives when the salesperson who took it leaves the firm. Destruction of the property, the seller's bankruptcy and expiration of the term all end the agency."
     }
   }
 }

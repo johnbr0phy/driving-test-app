@@ -1,7 +1,8 @@
 # Builder brief: one exam, build run 2026-11-18
 
-You build ONE Tigertest practice exam in your own git worktree (path in your prompt), branched from
-the batch branch. Other builders work at the same time in other worktrees on other exams. The
+You build ONE Tigertest practice exam in the batch checkout `/Users/johnbrophy/tt-b1` (branch
+`claude/build-tests-2026-11-18-b1`). Up to two other builders work in the same folder at the same
+time on other exams, so touch only your own files. The
 integrator (the session that started you) merges your branch, applies the shared-file wiring,
 runs the full checks, screenshots and opens the PR.
 
@@ -41,8 +42,8 @@ freshness event if the exam has a dated change. Do not edit any shared file.
 ## Machine rules (this is John's laptop; keep it healthy)
 - Never run `npm install`, `npm run build`, `next build`, `next dev`, `npm test`, `npx tsc`,
   `npm run lint` or Playwright. The integrator runs those once for the whole batch.
-- `tools/validate_v2_bank.py` rewrites `lib/v2/bankSizes.ts`: run it, then
-  `git checkout lib/v2/bankSizes.ts` and put your line in WIRING.md.
+- `tools/validate_v2_bank.py` rewrites `lib/v2/bankSizes.ts`: run it from a copy of the script
+  with that write stubbed out (as `tools/next100/BRIEF.md` says), and put your line in WIRING.md.
 - Allowed: python3 -I validators and your build.py, grep/read, curl of source pages.
 - Kill anything you start that runs over 10 minutes. Keep downloads small; delete scratch files
   you no longer need.
@@ -65,6 +66,6 @@ freshness event if the exam has a dated change. Do not edit any shared file.
 - No em-dashes. "Tigertest". Country spelling and units. No fees, fines, office-holders.
 
 ## Finish
-Commit your files on your branch (`git add` explicit paths only, never `-a`; message
-"<id>: bank, config, landing"; end with the Co-Authored-By line from your prompt). Then print:
+Do not run git at all (no add, commit, checkout or stash: others share the folder; for bankSizes,
+put the original line back by editing the file). The integrator commits. Print:
 validator output, key-longest share, files written, and anything the integrator must check.

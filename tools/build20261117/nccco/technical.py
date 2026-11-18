@@ -9,7 +9,7 @@ Q('Which crane has its rotating upperworks on a base that travels on railway tra
 Q('Which crane has its upperworks on an automotive chassis equipped with its own travel powerplant?',
  'A truck crane','A rough-terrain crane','A crawler crane','A carry-deck crane',
  'A truck crane is mounted on an automotive truck with a powerplant for travel.')
-Q('A telescopic crane\'s operating station stays put rather than turning with the upperworks. Which crane type is this?',
+Q('A telescopic crane\'s operating station does not turn with the upperworks. Which type is this?',
  'A fixed-cab telescopic crane','A swing-cab telescopic crane','A lattice-boom crawler','A tower crane',
  'The current CCO handbook defines fixed-cab telescopic cranes by the non-rotating operator station; a swing-cab crane\'s cab turns with the upperworks.')
 Q('Which mechanism uses a drum and reeving system to raise or lower the boom?',
@@ -24,16 +24,16 @@ Q('Which assembly supplements machine weight to provide stability for lifting wo
 Q('Which device engages or disengages transmission of power rather than principally retarding motion?',
  'A clutch','A brake','A pawl','A governor',
  'A clutch engages or disengages power; a brake retards or stops motion.')
-Q('Which inspection does a competent person start before each work period begins and finish before or during it?',
+Q('Which inspection does a competent person begin before each work period?',
  'The shift inspection','The monthly inspection','The annual inspection','The post-assembly inspection',
  'The each-shift visual inspection begins before the shift under 1926.1412(d).')
-Q('Which inspection repeats the shift-inspection items on a longer cycle and needs a record kept at least three months?',
+Q('Which inspection repeats shift items on a longer cycle, with records kept three months?',
  'The monthly inspection','The shift inspection','The annual inspection','The idle-equipment inspection',
  'The monthly inspection and its documentation are required by 1926.1412(e).')
-Q('Which inspection is performed by a qualified person at least every 12 months and includes additional component checks and functional testing?',
+Q('Which inspection does a qualified person perform at least every 12 months, with functional testing?',
  'The annual inspection','The monthly inspection','The shift inspection','The periodic load test',
  'The annual/comprehensive inspection has this expanded scope under 1926.1412(f).')
-Q('Once a crane has been erected on site, which inspection must a qualified person complete before use to confirm its configuration?',
+Q('After erection on site, which inspection must a qualified person complete before use?',
  'The post-assembly inspection','The pre-assembly review','The monthly inspection','The annual inspection',
  'The post-assembly inspection by a qualified person verifies configuration under 1926.1412(c).')
 Q('How long must the employer retain monthly crane inspection documentation under OSHA 1926.1412(e)?',
@@ -42,10 +42,10 @@ Q('How long must the employer retain monthly crane inspection documentation unde
 Q('How long must annual/comprehensive crane inspection documentation be retained under OSHA 1926.1412(f)?',
  'Twelve months','Three months','Thirty-six months','Six months',
  'Annual/comprehensive records must be retained at least 12 months.')
-Q('Without invoking the documented-parts-order exception, what is the ordinary repair deadline for a Category I operational aid under OSHA 1926.1416?',
+Q('Absent a documented parts order, what is OSHA\'s repair deadline for a Category I operational aid?',
  '7 calendar days','30 calendar days','3 calendar days','14 calendar days',
  'Category I aids ordinarily must be repaired within 7 calendar days; specified temporary measures and any stricter manufacturer measures still apply.')
-Q('Without invoking the documented-parts-order exception, what is the ordinary repair deadline for a Category II operational aid under OSHA 1926.1416?',
+Q('Absent a documented parts order, what is OSHA\'s repair deadline for a Category II operational aid?',
  '30 calendar days','7 calendar days','60 calendar days','90 calendar days',
  'Category II aids ordinarily must be repaired within 30 calendar days; the rule has a specific documented-order exception.')
 Q('A control lever sticks instead of returning normally. Which inspection area is directly implicated?',
@@ -54,40 +54,40 @@ Q('A control lever sticks instead of returning normally. Which inspection area i
 Q('A flexible pressure line shows blistering near a fitting. Which inspection area requires attention?',
  'Hydraulic hose condition','Wire rope condition','Electrical wiring condition','Tire condition',
  'Hydraulic and pressurised hoses must be checked for leakage, deformation and signs of impending failure.')
-Q('The load attachment has a cracked throat area and a damaged closing latch. Which inspection area is implicated?',
+Q('The load attachment has a cracked throat and damaged latch. Which inspection area is implicated?',
  'The hook and its latch','Shackle pins and their latches','Sheaves and drums','Wire rope end fittings',
  'Hooks and latches must be inspected for cracks, deformation, wear and other damage; the throat is part of the hook.')
-Q('A large crack across the operator\'s windshield interferes with seeing the load path. Which inspection area is implicated?',
+Q('A windshield crack blocks the operator\'s view. Which inspection area is implicated?',
  'Cab window condition','Mirror alignment','Boom-angle indicator display','Operator seat adjustment',
  'Cab windows must be checked for defects that hamper the operator\'s view.')
-Q('A wire rope has a sharp permanent bend after a loop was pulled tight. Which apparent deficiency best describes it?',
+Q('A loop pulled tight left a sharp permanent bend in a wire rope. Which deficiency is this?',
  'A kink','Birdcaging','Core protrusion','Abrasion',
  'A kink is structural distortion from a loop pulled tight and is a Category I apparent deficiency requiring competent-person assessment. Birdcaging is strands opening up, not a bend.')
 Q('Inspection finds heavy rusting and material deterioration on rope strands. Which apparent deficiency is indicated?',
  'Significant corrosion','Heat damage','Crushing','Kinking',
  'Significant corrosion is a listed Category I deficiency.')
-Q('A rope has been exposed to a hot process and shows evidence of thermal deterioration, with no power-line contact. Which deficiency category description fits?',
+Q('A rope shows thermal deterioration from a hot process, with no power-line contact. Which category fits?',
  'Heat damage, Category I','Heat damage, Category III','Electric arc, Category II','Power-line contact, Category III',
  'Heat damage is a Category I apparent deficiency under 1926.1413; prior contact with an energized power line is the separate Category III condition.')
-Q('A rope itself appears sound, but its socket is visibly cracked. Which specific item requires assessment?',
+Q('A rope looks sound, but its socket is cracked. Which item needs assessment?',
  'A damaged end connection','Nothing, as the rope is sound','A core protrusion','Corroded strands',
  'Cracked or otherwise damaged end connections are listed apparent deficiencies; sound rope does not make a damaged termination acceptable.')
-Q('For rotation-resistant rope, how many randomly distributed broken wires within six rope diameters meet OSHA\'s listed Category II count?',
+Q('Under OSHA, how many random broken wires in six diameters make rotation-resistant rope Category II?',
  'Two broken wires','Three broken wires','Four broken wires','One broken wire',
- 'Two randomly distributed breaks within 6 rope diameters meet this criterion under 1926.1413(a); four is the count over 30 diameters.')
-Q('For ordinary running rope, how many broken wires in one strand within one rope lay meet OSHA\'s listed Category II count?',
+ '1926.1413(a)(2)(ii)(A)(2) lists two randomly distributed broken wires in six rope diameters; four is the count over 30 diameters. ASME B30.5 words its removal criterion as more than two, so check which rule a question names.')
+Q('For running rope, how many broken wires in one strand within one lay meet OSHA\'s Category II count?',
  'Three broken wires','Two broken wires','Six broken wires','Five broken wires',
  'Three broken wires in one strand within one rope lay meet that criterion; six is the count for breaks spread over the whole lay.')
-Q('For rotation-resistant rope, how many randomly distributed broken wires within 30 rope diameters meet OSHA\'s listed Category II count?',
+Q('For rotation-resistant rope, how many random broken wires within 30 diameters meet OSHA\'s Category II count?',
  'Four broken wires','Two broken wires','Six broken wires','Eight broken wires',
  'Four randomly distributed breaks within 30 rope diameters meet that criterion; two is the count over 6 diameters.')
-Q('For ordinary running rope, how many randomly distributed broken wires within one rope lay meet OSHA\'s listed Category II count?',
+Q('For running rope, how many random broken wires within one lay meet OSHA\'s Category II count?',
  'Six broken wires','Three broken wires','Four broken wires','Twelve broken wires',
  'Six randomly distributed breaks in one rope lay meet that criterion; the separate single-strand criterion is three.')
 Q('A wire rope has contacted an energized power line. What disposition addresses this Category III condition?',
  'Replace it; no severing or repair','Inspect it monthly from now on','Cut out the contacted length and splice','Halve its rated load',
  'Under 1926.1413(a)(4)(iii) the rope must be replaced before operations with it resume. Severing out a localized deficiency is allowed only for deficiencies other than power line contact, splicing is prohibited, and repair of rope that contacted an energized power line is prohibited.')
-Q('At an annual inspection, the qualified person finds a condition that is not yet a safety hazard but explicitly requires monitoring. What must the employer arrange?',
+Q('An annual inspection finds a condition not yet a hazard but needing monitoring. What must the employer arrange?',
  'Checks at each monthly inspection','A recheck at the next annual inspection','Immediate removal from service','A written note only',
  'The condition must be checked in the monthly inspections under 1926.1412(f)(6); waiting a year is too long.')
 Q('A manufacturer requires a safety-related inspection more often than OSHA\'s minimum interval. Which schedule controls?',
@@ -99,19 +99,19 @@ Q('A crane has remained idle for four months. What must occur before initial reu
 Q('A synthetic web sling has cut fibres and broken stitching. What is the required disposition?',
  'Remove it from service','Derate it by one quarter','Turn it so the damage faces out','Tape the cut and continue',
  'Damaged or defective slings must be removed from service; cuts and broken stitching are listed removal conditions for web slings.')
-Q('A rigger must determine whether a shackle is suitable for an intended load. Which source identifies the manufacturer\'s working-load limit?',
+Q('Where is a shackle\'s manufacturer working-load limit found?',
  'Its permanent rated-load marking','The shackle\'s pin diameter alone','The crane\'s load chart','The sling\'s identification tag',
  'The permanently affixed, legible marking states the rated capacity, which must not be exceeded. Pin size alone does not establish it.')
-Q('A sound sling will bear against an abrasive load edge. Which preparation directly addresses damage at that contact point?',
+Q('A sling will bear on an abrasive load edge. What protects it at that contact point?',
  'Padding or softeners at the corner','A longer sling at the same angle','A tighter choke on the load','A visual check after the lift',
  'Protect the sling from sharp or abrasive contact with suitable padding and the manufacturer\'s instructions; a check afterward finds damage too late.')
-Q('A sling assembly is no longer needed and lies across the crew\'s path. What storage action addresses the immediate hazard?',
+Q('An unneeded sling lies across the crew\'s path. What action addresses the hazard?',
  'Remove it from the work area','Coil it beside the path','Leave it for the next lift','Cover it with a tarp',
  'Unused rigging must be removed from the immediate work area so it does not create a hazard under 1926.251(a)(3).')
-Q('Manufacturer capacity-related operating procedures are unavailable. Who must develop and sign replacement capacity procedures under OSHA 1926.1417(b)?',
+Q('Without manufacturer capacity procedures, who must develop and sign replacements under OSHA 1926.1417(b)?',
  'A registered engineer (RPE)','A qualified person','A competent person','The crane\'s operator',
  'A registered professional engineer familiar with the equipment must develop and sign capacity-related procedures.')
-Q('Manufacturer procedures for operating the controls are unavailable. What level of author is required to develop those control procedures?',
+Q('Without manufacturer procedures for operating the controls, who must develop them?',
  'A qualified person','A registered engineer (RPE)','A competent person','The equipment dealer',
  'A qualified person develops operational-control procedures; capacity procedures carry the separate registered engineer requirement.')
 Q('Who must begin the ordinary each-shift visual crane inspection under OSHA 1926.1412(d)?',
@@ -123,16 +123,16 @@ Q('Which authority establishes the safe working load shown on the identification
 Q('An originally supplied cab handhold is loose and unsafe. Which obligation directly addresses it?',
  'Keep original access aids repaired','Remove it to avoid misuse','Add a warning sticker beside it','Report it at the next annual inspection',
  'Originally equipped steps, handholds, ladders and rails must be maintained in good condition under 1926.1423.')
-Q('On covered equipment manufactured after November 8, 2011, what property is required for walking/stepping surfaces other than crawler treads?',
+Q('On equipment made after November 8, 2011, what must walking surfaces other than crawler treads have?',
  'Slip-resistant features','Yellow paint markings','Rubber matting only','Fold-down guardrails',
  'Those surfaces must have slip-resistant features or properties under 1926.1423(c)(3).')
-Q('A new inspector needs to understand deficiencies previously found during the retained-record period. Which information must be made available?',
+Q('A new inspector needs deficiencies found earlier in the retention period. What must be made available?',
  'Prior inspection records','The inspector\'s certification card','The original sales invoice','The site\'s weather log',
  'Inspection documents must remain available to persons conducting inspections during the retention period.')
-Q('A rope must be removed from service, but the crane has a separate unaffected hoist. What identification prevents use of the defective-rope function?',
+Q('A rope must be removed, but the crane has another unaffected hoist. What prevents use of the defective-rope function?',
  'A tag-out on the affected hoist','A tag on the unaffected hoist','Spoken notice to the crew','A note in the monthly log',
  'Either the whole equipment or the affected hoist must be tagged out until the rope is repaired or replaced as permitted.')
-Q('Which definition explains why a load block and shackles must be accounted for with the lifted object?',
+Q('Which definition explains why the load block and shackles count with the lifted object?',
  'Working load includes attaching gear','Rated load excludes the block','Net load equals the object weight','Gross capacity ignores rigging',
  'OSHA 1910.180 defines working load to include load-attaching equipment such as blocks, shackles and slings.')
 Q('Which definition identifies the rope length used when counting breaks over one lay?',

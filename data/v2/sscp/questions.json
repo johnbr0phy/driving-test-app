@@ -3184,12 +3184,12 @@
       "A parallel test",
       "A tabletop exercise",
       "A structured walkthrough",
-      "A live failover test"
+      "A full interruption test"
     ],
     "correct": [
       3
     ],
-    "explanation": "Controlled failover tests the operational transition to alternate capacity. A parallel test runs both sites without moving production processing."
+    "explanation": "A full interruption test moves real processing to the alternate site and proves continuity there. A parallel test runs the alternate site alongside production without moving it."
   },
   {
     "id": "SSCP-INCIDENT-033",

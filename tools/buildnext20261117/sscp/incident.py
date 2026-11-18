@@ -97,8 +97,8 @@ Q('Technicians rebuild an isolated application from retained data copies and tes
  'A backup restoration test',['A tabletop exercise','A checklist review','A full interruption test'],
  'A technical restoration exercise verifies the ability to reconstruct and use the service from recovery material without disrupting production.')
 Q('Under a test plan, a service moves real processing to its alternate environment and checks continuity. Which exercise is this?',
- 'A live failover test',['A parallel test','A tabletop exercise','A structured walkthrough'],
- 'Controlled failover tests the operational transition to alternate capacity. A parallel test runs both sites without moving production processing.')
+ 'A full interruption test',['A parallel test','A tabletop exercise','A structured walkthrough'],
+ 'A full interruption test moves real processing to the alternate site and proves continuity there. A parallel test runs the alternate site alongside production without moving it.')
 Q('RTO is four hours and RPO 30 minutes. Recovery takes three hours and loses 20 minutes of records. Which is correct?',
  'Both targets are met',['Only the RTO is met','Only the RPO is met','Neither target is met'],
  'Three hours is within four, and 20 minutes is within 30, so both targets are met.')

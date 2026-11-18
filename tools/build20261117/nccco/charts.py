@@ -18,7 +18,7 @@ Q('Two chart pages differ only in full or intermediate beam deployment. What sel
 Q('Two ratings differ only in ballast package. Which installed feature selects the rating?',
  'The counterweight actually fitted','The heavier package listed','The boom length','The outrigger extension',
  'The installed counterweight must match the chart; using a heavier-package chart would overstate capacity.')
-Q('A chart rates over-side and over-rear lifts differently. What selects the rating?',
+Q('A load will swing from over the side to over the rear. Which chart rating applies?',
  'The lowest rating of any sector it passes','The higher of the two ratings','The carrier\'s direction of travel','The load\'s height above ground',
  'The rating for every sector the load passes through must hold throughout the lift, so the lowest of them governs; using the higher rating everywhere is the common mistake.')
 Q('A chart family separates main-boom lifts from offset-jib lifts. What must match the chosen page?',

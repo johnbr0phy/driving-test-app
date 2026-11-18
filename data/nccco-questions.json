@@ -2160,7 +2160,7 @@
     "state": "ALL",
     "questionId": "NCCCO-CHART-007",
     "category": "ncccoCharts",
-    "question": "A chart rates over-side and over-rear lifts differently. What selects the rating?",
+    "question": "A load will swing from over the side to over the rear. Which chart rating applies?",
     "optionA": "The higher of the two ratings",
     "optionB": "The carrier's direction of travel",
     "optionC": "The lowest rating of any sector it passes",

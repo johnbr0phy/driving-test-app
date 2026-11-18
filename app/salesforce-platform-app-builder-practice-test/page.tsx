@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "What is the passing score for Platform App Builder?",
-    a: "You need 73 percent on the current exam, which was refreshed on August 21, 2026 to match the Summer '26 release. Older guides that say 63 or 68 percent describe earlier versions. Aim for 80 percent on these practice tests before you book.",
+    a: "You need 73 percent on the current exam, which was refreshed in August 2026 to match the Summer '26 release. Older guides that say 63 or 68 percent describe earlier versions. Aim for 80 percent on these practice tests before you book.",
   },
   {
     q: "What is on the Platform App Builder exam?",

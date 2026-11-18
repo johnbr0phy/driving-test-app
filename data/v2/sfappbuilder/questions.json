@@ -344,13 +344,13 @@
     "skill": "AgentExchange",
     "difficulty": 1,
     "format": "single",
-    "stem": "A team needs e-signatures on quotes within weeks and has no developers. What should the app builder check first?",
-    "explanation": "AgentExchange (formerly AppExchange) lists ready-made apps and components that meet Salesforce's security review, so a common need like e-signature is usually met there before anything is built.",
+    "stem": "A team needs e-signatures on quotes and has no developers. What should the app builder check first?",
+    "explanation": "AgentExchange (formerly AppExchange) lists ready-made apps that meet Salesforce's security review, so a common need like e-signature is usually met there. External Services still needs a signing provider's API, and the other tools only change data or layout.",
     "options": [
-      "Apex integration with a vendor API",
+      "External Services with a REST spec",
       "AgentExchange for an existing app",
-      "Screen flow that collects a name",
-      "External object for signed files"
+      "Dynamic Forms on the quote page",
+      "Lightning Object Creator template"
     ],
     "correct": [
       1
@@ -365,16 +365,16 @@
     "skill": "External data",
     "difficulty": 2,
     "format": "single",
-    "stem": "Order history lives in an ERP and must show on accounts without being copied into the org. What fits?",
-    "explanation": "Salesforce Connect maps external tables to external objects and reads the data live, so nothing is stored in Salesforce. An import or a big object copies the data in.",
+    "stem": "ERP order history must show as related records on accounts without being copied into the org. What fits?",
+    "explanation": "Salesforce Connect maps external tables to external objects and reads the data live, so nothing is stored in Salesforce. An indirect lookup needs an external object as the child, and a web tab does not show records on the account.",
     "options": [
-      "Custom object filled by a nightly flow",
-      "Nightly Data Loader import",
-      "Big object for the orders",
-      "External object via Salesforce Connect"
+      "Web tab that opens the ERP",
+      "Indirect lookup on a custom object",
+      "External object via Salesforce Connect",
+      "Nightly Data Loader import"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -1178,18 +1178,18 @@
     "module": 1,
     "domain": "sfappDataModel",
     "skill": "Data model choice",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "Users must pick from about 500 vendors, which other users add and retire over time. How should the vendor field be built?",
-    "explanation": "A long list that users maintain belongs in its own object with a lookup to it, where vendors can be added like any record. A picklist must be edited in Setup.",
+    "stem": "Each purchase request must name one of about 500 vendors that users add and retire, and requests keep their own owners. How should the field be built?",
+    "explanation": "A lookup to a Vendor custom object lets users maintain vendors as records while each request keeps its own owner. Master-detail would take ownership from the vendor and delete requests with it, and an external lookup needs an external object.",
     "options": [
-      "Picklist of vendor names",
-      "Global value set of vendors",
-      "Text field with help text",
-      "Lookup to a Vendor object"
+      "Master-detail to a Vendor object",
+      "Lookup to a Vendor object",
+      "External lookup to a Vendor object",
+      "Dependent picklist of vendors"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2115,16 +2115,16 @@
     "skill": "Flow orchestration",
     "difficulty": 3,
     "format": "single",
-    "stem": "A hiring process passes work between HR, IT and a manager in stages over several days. What fits?",
-    "explanation": "An orchestration groups flows into stages and steps assigned to different users or groups, and moves on when each step is done.",
+    "stem": "A hiring process gives HR, then IT, then a manager their own screens to complete over several days. What fits?",
+    "explanation": "An orchestration groups flows into stages and steps assigned to different users or groups as work items, and moves on when each step is done. An approval process only asks for approve or reject, and one screen flow runs for one user at a time.",
     "options": [
-      "One long screen flow",
-      "An escalation rule",
-      "Flow orchestration",
-      "A scheduled report"
+      "Approval process with three steps",
+      "Record-triggered flow with scheduled paths",
+      "Screen flow shared by all three",
+      "Flow orchestration"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -2494,7 +2494,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which Salesforce tool tracks work items and moves changes through pipeline stages with source control, without the CLI?",
-    "explanation": "Lifecycle Center (formerly DevOps Center) manages work items and promotes changes through a pipeline backed by a source repository, with clicks.",
+    "explanation": "Lifecycle Center (formerly next-generation DevOps Center, renamed from October 2026) manages work items and promotes changes through a pipeline backed by a source repository, with clicks.",
     "options": [
       "Data Loader",
       "Change sets",
@@ -2913,16 +2913,16 @@
     "skill": "Session-based access",
     "difficulty": 3,
     "format": "single",
-    "stem": "Extra access should apply only during sessions where the user has signed in with stronger verification. What fits?",
-    "explanation": "A session-based permission set is only active while its session activation condition is met, such as a high assurance session.",
+    "stem": "Extra access must be active only after the user signs in with multi-factor verification, not on every login. What fits?",
+    "explanation": "A session-based permission set is active only while its session activation condition is met, such as a high assurance session after multi-factor verification. An expiration date or muting does not depend on how the user signed in.",
     "options": [
+      "Permission set with an expiration date",
+      "Login IP ranges on the profile",
       "Session-based permission set",
-      "Permission set group",
-      "Login hours on the profile",
-      "Delegated administration"
+      "Permission set group with muting"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -3359,12 +3359,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A record page should show only the account's open cases, filtered and sorted, without code. What fits?",
-    "explanation": "The Dynamic Related List - Single component shows one related list with its own filters, sort and fields. The Related Lists component shows the lists from the page layout as they are.",
+    "explanation": "The Dynamic Related List - Single component shows one related list with its own filters, sort and fields. Dynamic Forms places fields of the record itself, Dynamic Actions places buttons, and Dynamic Interactions lets components talk to each other; none of them lists related records.",
     "options": [
       "Dynamic Related List - Single",
-      "Report Chart component",
-      "Related Lists component on the page",
-      "Compact layout"
+      "Dynamic Actions on the page",
+      "Dynamic Forms field section",
+      "Dynamic Interactions event"
     ],
     "correct": [
       0
@@ -3612,12 +3612,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Each account has many site visits, each with a date, a rating and notes. How should the visits be stored?",
-    "explanation": "Repeating records with their own fields belong in a child object linked to Account. Packing them into one account field makes them impossible to report on or validate.",
+    "explanation": "Repeating records with their own fields belong in a child object linked to Account. Fields on Account hold only one visit, and a text log cannot be reported on or validated.",
     "options": [
-      "Formula field on Account",
-      "Multi-select picklist on Account",
-      "Long Text Area on Account",
-      "Custom object related to Account"
+      "Multi-select picklist of visit dates",
+      "Custom date and rating fields on Account",
+      "Rich Text Area log on Account",
+      "Custom object with a lookup to Account"
     ],
     "correct": [
       3
@@ -3758,16 +3758,16 @@
     "skill": "Permission set groups",
     "difficulty": 1,
     "format": "single",
-    "stem": "Every new recruiter needs the same five permission sets. What makes assigning them easiest?",
-    "explanation": "A permission set group bundles permission sets so one assignment gives all of them. A public group controls record sharing, not permissions.",
+    "stem": "Every new recruiter needs the same five permission sets, assigned in one step. What fits?",
+    "explanation": "A permission set group bundles permission sets so one assignment gives all of them. A muting permission set only removes permissions inside a group, and a permission set license grants the right to use certain features.",
     "options": [
-      "Sharing rule",
-      "Permission set group",
-      "Public group",
-      "Custom profile clone"
+      "Muting permission set",
+      "Cloned standard profile",
+      "Permission set license",
+      "Permission set group"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3906,12 +3906,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A field must keep the value it had when an opportunity closed, even if its inputs change later. What fits?",
-    "explanation": "A formula recalculates whenever it is read, so it can never freeze a past value. A flow that writes the value into a regular field when the stage changes to closed keeps it as it was.",
+    "explanation": "A formula recalculates whenever it is read and cannot use PRIORVALUE, and a default value is set only on create. A record-triggered flow that writes the value into a regular field when the stage closes keeps it as it was.",
     "options": [
-      "Default value on the field",
-      "Roll-up summary on the account",
-      "Formula field that reads the inputs",
-      "Flow that copies the value at close"
+      "Roll-up summary with a date filter",
+      "Default value formula on the field",
+      "Formula field using PRIORVALUE",
+      "Record-triggered flow that writes the field"
     ],
     "correct": [
       3

@@ -71,7 +71,7 @@ ITEMS = assign([
     single("DevOps tools", 2,
            "Which Salesforce tool tracks work items and moves changes through pipeline stages with source control, without the CLI?",
            ["Lifecycle Center", "Change sets", "Data Loader", "Schema Builder canvas"],
-           "Lifecycle Center (formerly DevOps Center) manages work items and promotes changes through a pipeline backed by a source repository, with clicks."),
+           "Lifecycle Center (formerly next-generation DevOps Center, renamed from October 2026) manages work items and promotes changes through a pipeline backed by a source repository, with clicks."),
 
     # ---------------- Drill only ----------------
     single("Change sets", 2,

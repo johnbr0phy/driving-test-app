@@ -10,7 +10,7 @@ prefix `SFAPP-`, unused before this build), `lib/v2/exams/sfappbuilder.ts` (expo
 
 ## Exam checked
 Salesforce Certified Platform App Builder. The exam guide (Help article 005298964, linked from the
-Trailhead trail) was refreshed on August 21, 2026 to the Summer '26 release: 60 scored
+Trailhead trail) was refreshed in August 2026 to the Summer '26 release: 60 scored
 multiple-choice and multiple-select questions plus up to 5 unscored, 105 minutes, 73% to pass
 (it was 63%, older guides also say 68%). Sections: Salesforce Fundamentals 18%, Data Modeling and
 Management 20%, Business Logic and Process Automation 32%, User Interface 17%, App Deployment 13%.
@@ -123,13 +123,13 @@ builder" and "app builder" opening `sfappbuilder`. Check that "lightning app bui
 ```ts
   sfappbuilder: {
     answer:
-      "The Salesforce Certified Platform App Builder exam has 60 scored multiple-choice and multiple-select questions, plus up to 5 unscored ones, in 105 minutes, and you need 73% to pass. It was refreshed on August 21, 2026 to the Summer '26 release, with Business Logic and Process Automation 32%, Data Modeling and Management 20%, Salesforce Fundamentals 18%, User Interface 17% and App Deployment 13%. Older guides that give 63% or 68% to pass describe earlier versions.",
+      "The Salesforce Certified Platform App Builder exam has 60 scored multiple-choice and multiple-select questions, plus up to 5 unscored ones, in 105 minutes, and you need 73% to pass. It was refreshed in August 2026 to the Summer '26 release, with Business Logic and Process Automation 32%, Data Modeling and Management 20%, Salesforce Fundamentals 18%, User Interface 17% and App Deployment 13%. Older guides that give 63% or 68% to pass describe earlier versions.",
     rows: [
       { label: "Questions", value: "60 scored, plus up to 5 unscored" },
       { label: "Time", value: "105 minutes" },
       { label: "Passing score", value: "73%" },
       { label: "Largest section", value: "Business Logic and Process Automation, 32%" },
-      { label: "Exam guide", value: "Refreshed August 21, 2026 (Summer '26)" },
+      { label: "Exam guide", value: "Refreshed in August 2026 (Summer '26)" },
       { label: "Run by", value: "Salesforce, registered through Trailhead" },
     ],
     basedOn: "the Salesforce Certified Platform App Builder exam guide (Summer '26), checked November 2026",
@@ -151,9 +151,9 @@ Bump `EXAM_LANDINGS_UPDATED_AT` with a comment naming Salesforce Platform App Bu
 ```json
     {
       "exam": "sfappbuilder",
-      "date": "2026-08-21",
+      "date": "2026-08-01",
       "kind": "outline",
-      "what": "Salesforce refreshed the Platform App Builder exam guide to the Summer '26 release: weights 18/20/32/17/13, 73% to pass (was 63%), deeper Flow and Agentforce as an automation tool.",
+      "what": "Salesforce refreshed the Platform App Builder exam guide in August 2026 to the Summer '26 release: weights 18/20/32/17/13, 73% to pass (was 63%), deeper Flow and Agentforce as an automation tool.",
       "action": "Built to the refreshed guide from the start; nothing to change.",
       "source": "https://help.salesforce.com/s/articleView?id=005298964&type=1&language=en_US",
       "done": "2026-11-18"
@@ -167,4 +167,4 @@ Trailhead trail and the Trailhead prep documents first).
 ## CLAUDE.md
 Add in the v2 exams section, after the Salesforce Platform Developer (sfpd1) bullet:
 
-- **Salesforce Platform App Builder** (`sfappbuilder`, v2, Salesforce Certified Platform App Builder, `/salesforce-app-builder/*`, landing `/salesforce-platform-app-builder-practice-test`, `[data-theme="sfappbuilder"]` violet (278 80% 40%; the blue band is full), region GLOBAL, hub group "IT certifications" (after sfpd1), Premium, borrows the AWS tiger like sfadmin, teacher-led (Salesforce App Builder courses)): the exam guide (Help article 005298964) was refreshed on August 21, 2026 to the Summer '26 release: 60 scored multiple-choice and multiple-select questions plus up to 5 unscored in 105 minutes, 73% to pass (63% before; older guides also say 68%), Salesforce Fundamentals 18%, Data Modeling and Management 20%, Business Logic and Process Automation 32%, User Interface 17%, App Deployment 13%. The Help page does not render for automated fetchers, so its text was read from the help.salesforce.com search index and confirmed by two dated guides; the 2021 Trailhead prep documents (23/22/28/17/10, 63%) are out of date. One section `pab`, one 60-item module in 105 minutes, two tests with Test 2 held out, 8 drills, one per domain file (`sfappFundamentals` 5 and `sfappSecurity` 6 = Fundamentals; `sfappDataModel` 7 and `sfappDataMgmt` 5 = Data Modeling and Management; `sfappFormulas` 8 and `sfappFlow` 11 = Business Logic; `sfappUI` 10; `sfappDeploy` 8 per test), 10 drill-only per domain, no Basics, 10 dashboard steps (Premium: Practice Test 2 and the UI and Deploy drills). Bank `data/v2/sfappbuilder/questions.json` (200 items, prefix `SFAPP-`, plain array; single plus 12 choose-two, 2 typed numeric, 1 order, 1 matrix; all-number options sorted and locked) built by `python3 -I tools/build-run-2026-11-18/sfappbuilder/build.py` from one source per domain (key first, shuffled by a stem seed). Facts from Salesforce's Winter '27 PDFs on resources.docs.salesforce.com (Data Loader Guide, validation and formula examples, limits quick reference, packaging guides) and Trailhead data modeling, formulas, data security, actions and record-triggered flow units; product names AgentExchange (formerly AppExchange) and Lifecycle Center (formerly DevOps Center) follow the Trailhead trail. Kept clear of the `sfadmin` and `sfpd1` banks (about 30 items that shared a fact and answer with sfadmin rewritten to other facts). Sources in `tools/build-run-2026-11-18/sfappbuilder/sources.md`.
+- **Salesforce Platform App Builder** (`sfappbuilder`, v2, Salesforce Certified Platform App Builder, `/salesforce-app-builder/*`, landing `/salesforce-platform-app-builder-practice-test`, `[data-theme="sfappbuilder"]` violet (278 80% 40%; the blue band is full), region GLOBAL, hub group "IT certifications" (after sfpd1), Premium, borrows the AWS tiger like sfadmin, teacher-led (Salesforce App Builder courses)): the exam guide (Help article 005298964) was refreshed in August 2026 to the Summer '26 release: 60 scored multiple-choice and multiple-select questions plus up to 5 unscored in 105 minutes, 73% to pass (63% before; older guides also say 68%), Salesforce Fundamentals 18%, Data Modeling and Management 20%, Business Logic and Process Automation 32%, User Interface 17%, App Deployment 13%. The Help page does not render for automated fetchers, so its text was read from the help.salesforce.com search index and confirmed by two dated guides; the 2021 Trailhead prep documents (23/22/28/17/10, 63%) are out of date. One section `pab`, one 60-item module in 105 minutes, two tests with Test 2 held out, 8 drills, one per domain file (`sfappFundamentals` 5 and `sfappSecurity` 6 = Fundamentals; `sfappDataModel` 7 and `sfappDataMgmt` 5 = Data Modeling and Management; `sfappFormulas` 8 and `sfappFlow` 11 = Business Logic; `sfappUI` 10; `sfappDeploy` 8 per test), 10 drill-only per domain, no Basics, 10 dashboard steps (Premium: Practice Test 2 and the UI and Deploy drills). Bank `data/v2/sfappbuilder/questions.json` (200 items, prefix `SFAPP-`, plain array; single plus 12 choose-two, 2 typed numeric, 1 order, 1 matrix; all-number options sorted and locked) built by `python3 -I tools/build-run-2026-11-18/sfappbuilder/build.py` from one source per domain (key first, shuffled by a stem seed). Facts from Salesforce's Winter '27 PDFs on resources.docs.salesforce.com (Data Loader Guide, validation and formula examples, limits quick reference, packaging guides) and Trailhead data modeling, formulas, data security, actions and record-triggered flow units; product names AgentExchange (formerly AppExchange) and Lifecycle Center (formerly next-generation DevOps Center, renamed from October 2026) follow the Trailhead trail. Kept clear of the `sfadmin` and `sfpd1` banks (about 30 items that shared a fact and answer with sfadmin rewritten to other facts). Sources in `tools/build-run-2026-11-18/sfappbuilder/sources.md`.

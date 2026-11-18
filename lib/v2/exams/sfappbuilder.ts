@@ -1,7 +1,7 @@
 import { ExamV2Config } from "../types";
 import { percentScale, overallPercent } from "../scales";
 
-// Salesforce Certified Platform App Builder, exam guide refreshed August 21,
+// Salesforce Certified Platform App Builder, exam guide refreshed in August
 // 2026 (questions align to the Summer '26 release): 60 scored multiple-choice
 // and multiple-select questions (plus up to 5 unscored) in 105 minutes, 73% to
 // pass. Weighted to the guide: Salesforce Fundamentals 18%, Data Modeling and

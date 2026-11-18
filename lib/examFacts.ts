@@ -44,6 +44,41 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  frvtc: {
+  "answer": "France's VTC chauffeur theory examination has seven weighted subjects, with 91 multiple-choice questions and 16 short written answers over 230 minutes. Eligibility for the separate practical assessment requires a weighted average of at least 10/20 and at least 6/20 in every subject except English, which requires 4/20. The practical assessment includes at least 20 minutes of driving and requires 12/20.",
+  "rows": [
+    {
+      "label": "Official theory",
+      "value": "7 subjects; 91 QCM and 16 short answers"
+    },
+    {
+      "label": "Official theory time",
+      "value": "230 minutes"
+    },
+    {
+      "label": "Theory threshold",
+      "value": "Weighted average 10/20 plus subject minima of 6/20 (English 4/20)"
+    },
+    {
+      "label": "Language",
+      "value": "French, with English at CEFR A2"
+    },
+    {
+      "label": "Separate practical assessment",
+      "value": "At least 20 minutes of driving; 12/20 required"
+    },
+    {
+      "label": "Practice target",
+      "value": "70% (35/50); editorial study target, not an official score conversion"
+    }
+  ],
+  "basedOn": "Consolidated 6 April 2017 order and Annex I, including the 2024 syllabus addition; current primary transport, road and business sources checked November 17, 2026",
+  "source": {
+    "name": "Légifrance: VTC examination order",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379046"
+  },
+  "tigertest": "200 original French-language questions in four shorter 50-question tests. Free to start. Each item has one correct answer out of four. Written production, spelling assessment, official weighted section scoring, oral interaction and practical driving are not reproduced. Model language review only."
+},
   zafirearm: {
   "answer": "South African firearm competency involves prescribed legal knowledge and practical training through an accredited provider, followed by the SAPS competency process and the appropriate firearm licence. This independent practice focuses on Firearms Control Act knowledge associated with SAQA Unit Standard 117705. It does not award credits, practical proficiency, a competency certificate or a firearm licence.",
   "rows": [

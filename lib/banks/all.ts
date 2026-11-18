@@ -260,6 +260,7 @@ import "./sgvl";
 import "./itcils";
 import "./itceli";
 import "./itpatente";
+import "./frvtc";
 import "./frcode";
 import "./aufirearmsqld";
 import "./bcba";

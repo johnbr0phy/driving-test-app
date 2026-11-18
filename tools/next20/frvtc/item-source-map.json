@@ -1,0 +1,1468 @@
+[
+  {
+    "questionId": "FRVTC-T3P-001",
+    "objective": "Identifier le trajet pour compte propre",
+    "sources": [
+      "CARPOOL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-002",
+    "objective": "Distinguer rémunération de l'intermédiaire et du conducteur",
+    "sources": [
+      "CARPOOL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-003",
+    "objective": "Distinguer transport collectif et T3P",
+    "sources": [
+      "T3P-SCOPE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-004",
+    "objective": "Reconnaître une prise en charge sans réservation",
+    "sources": [
+      "T3P-MARAUDE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-005",
+    "objective": "Reconnaître la maraude électronique",
+    "sources": [
+      "T3P-MARAUDE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-006",
+    "objective": "Appliquer la visibilité de la carte",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-007",
+    "objective": "Restituer une carte après cessation",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-008",
+    "objective": "Identifier la préfecture compétente pour la carte",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-009",
+    "objective": "Identifier le contrôle médical professionnel",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-010",
+    "objective": "Distinguer formation réglementaire et réunion commerciale",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-011",
+    "objective": "Planifier la formation continue",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-012",
+    "objective": "Adapter l'assurance à l'usage payant",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-013",
+    "objective": "Distinguer RC professionnelle et garanties facultatives",
+    "sources": [
+      "T3P-INSURANCE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-014",
+    "objective": "Relier une condamnation à l'honorabilité",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-015",
+    "objective": "Distinguer autorisation du conducteur et de l'entreprise",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-016",
+    "objective": "Appliquer la réforme de l'accès par expérience",
+    "sources": [
+      "BPI-VTC",
+      "REFORM-2026"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-017",
+    "objective": "Identifier une information préalable obligatoire",
+    "sources": [
+      "PLATFORM-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-018",
+    "objective": "Distinguer refus de proposition et inexécution",
+    "sources": [
+      "PLATFORM-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-019",
+    "objective": "Reconnaître la pluralité des canaux d'activité",
+    "sources": [
+      "PLATFORM-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-020",
+    "objective": "Distinguer suggestion et liberté d'itinéraire",
+    "sources": [
+      "PLATFORM-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-021",
+    "objective": "Distinguer critère protégé et contrainte matérielle",
+    "sources": [
+      "DISCRIMINATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-022",
+    "objective": "Reconnaître un critère supposé",
+    "sources": [
+      "DISCRIMINATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-023",
+    "objective": "Identifier le recours spécialisé",
+    "sources": [
+      "DISCRIMINATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-024",
+    "objective": "Distinguer chien guide et animal de compagnie",
+    "sources": [
+      "GUIDE-DOG"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-025",
+    "objective": "Appliquer l'absence de surfacturation du chien guide",
+    "sources": [
+      "GUIDE-DOG"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-026",
+    "objective": "Appliquer le caractère spécifique du consentement",
+    "sources": [
+      "CONSENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-027",
+    "objective": "Reconnaître la révocabilité du consentement",
+    "sources": [
+      "CONSENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-028",
+    "objective": "Ne pas déduire le consentement du silence",
+    "sources": [
+      "CONSENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-029",
+    "objective": "Reconnaître le harcèlement par propos répétés",
+    "sources": [
+      "HARASSMENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-030",
+    "objective": "Reconnaître le harcèlement concerté",
+    "sources": [
+      "HARASSMENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-031",
+    "objective": "Reconnaître une pression grave non répétée",
+    "sources": [
+      "HARASSMENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-032",
+    "objective": "Distinguer outrage et harcèlement répété",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-033",
+    "objective": "Identifier la circonstance de transport VTC",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-034",
+    "objective": "Préserver des éléments factuels datés",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-035",
+    "objective": "Distinguer urgence et voies administratives",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-T3P-036",
+    "objective": "Identifier le signalement officiel écrit",
+    "sources": [
+      "OUTRAGE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-001",
+    "objective": "Calculer le résultat d'un exercice",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-002",
+    "objective": "Distinguer financement et produit",
+    "sources": [
+      "BPI-RESULT",
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-003",
+    "objective": "Séparer remboursement et intérêts",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-004",
+    "objective": "Reconnaître une charge calculée",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-005",
+    "objective": "Identifier une créance non encaissée",
+    "sources": [
+      "BILAN",
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-006",
+    "objective": "Classer investissement et financement",
+    "sources": [
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-007",
+    "objective": "Affecter un mouvement au mois du paiement",
+    "sources": [
+      "BPI-RESULT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-008",
+    "objective": "Calculer un besoin de financement d'exploitation",
+    "sources": [
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-009",
+    "objective": "Relier délai client et besoin de financement",
+    "sources": [
+      "BILAN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-010",
+    "objective": "Distinguer coût fixe et coût variable",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-011",
+    "objective": "Calculer la marge sur coûts variables",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-012",
+    "objective": "Déterminer le seuil de rentabilité",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-013",
+    "objective": "Calculer le résultat après couverture des coûts fixes",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-014",
+    "objective": "Convertir un seuil en point mort dans un modèle régulier",
+    "sources": [
+      "BPI-BREAKEVEN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-015",
+    "objective": "Déclarer le montant brut encaissé en micro",
+    "sources": [
+      "MICRO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-016",
+    "objective": "Distinguer abattement micro et frais réels",
+    "sources": [
+      "MICRO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-017",
+    "objective": "Reconnaître les sociétés unipersonnelles",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-018",
+    "objective": "Identifier une forme pluripersonnelle",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-019",
+    "objective": "Comprendre le principe de séparation patrimoniale en EI",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-020",
+    "objective": "Distinguer assimilation sociale et assurance chômage",
+    "sources": [
+      "FORMS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-021",
+    "objective": "Appliquer la continuité d'une série de factures",
+    "sources": [
+      "INVOICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-022",
+    "objective": "Corriger une facture déjà réglée",
+    "sources": [
+      "INVOICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-023",
+    "objective": "Choisir le document adapté avant l'accord",
+    "sources": [
+      "INVOICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-GES-024",
+    "objective": "Identifier la formalité de création d'entreprise",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-001",
+    "objective": "Appliquer la priorité à droite",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-002",
+    "objective": "Distinguer sortie privée et intersection ordinaire",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-003",
+    "objective": "Connaître la priorité à l'entrée du giratoire",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-004",
+    "objective": "Traverser une piste cyclable bidirectionnelle",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-005",
+    "objective": "Ne pas bloquer une intersection autorisée par un feu",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-006",
+    "objective": "Reconnaître l'intention claire d'un piéton",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-007",
+    "objective": "Distinguer arrêt obligatoire et simple cédez-le-passage",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-008",
+    "objective": "Appliquer la marge latérale hors agglomération",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-009",
+    "objective": "Appliquer une exception au dépassement par la gauche",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-010",
+    "objective": "Agir correctement pendant un dépassement subi",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-011",
+    "objective": "Relier dépassement et visibilité de la voie opposée",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-012",
+    "objective": "Distinguer progression en files et dépassement",
+    "sources": [
+      "PASS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-013",
+    "objective": "Appliquer la limitation sous la pluie",
+    "sources": [
+      "SPEED"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-014",
+    "objective": "Appliquer le plafond de visibilité très réduite",
+    "sources": [
+      "FOG"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-015",
+    "objective": "Convertir deux secondes de suivi en distance",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-016",
+    "objective": "Faciliter la sortie d'un autobus urbain",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-017",
+    "objective": "Adapter le corridor de sécurité à l'impossibilité de changer de voie",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-018",
+    "objective": "Distinguer oreillette et audio intégré",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-019",
+    "objective": "Identifier un affichage de navigation autorisé",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-020",
+    "objective": "Revenir à la position normale de circulation",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-021",
+    "objective": "Changer de voie dans un giratoire",
+    "sources": [
+      "PRIORITY"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-022",
+    "objective": "Appliquer l'exception de sécurité au jaune fixe",
+    "sources": [
+      "AMBER"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-023",
+    "objective": "Distinguer les règles enfant du taxi et du VTC",
+    "sources": [
+      "BELT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-024",
+    "objective": "Appliquer la ceinture au chauffeur VTC",
+    "sources": [
+      "BELT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-025",
+    "objective": "Installer un siège dos à la route à l'avant",
+    "sources": [
+      "BELT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-026",
+    "objective": "Interpréter le niveau 2 des médicaments",
+    "sources": [
+      "MEDS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-027",
+    "objective": "Réagir à une somnolence pendant le trajet",
+    "sources": [
+      "MEDS"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-028",
+    "objective": "Relier temps de réaction et distance avant freinage",
+    "sources": [
+      "ALCOHOL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-029",
+    "objective": "Connaître la périodicité technique professionnelle",
+    "sources": [
+      "INSPECTION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-030",
+    "objective": "Préserver la liberté de mouvement du conducteur",
+    "sources": [
+      "DRIVING"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-031",
+    "objective": "Comprendre l'effet du sous-gonflage",
+    "sources": [
+      "ECO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-032",
+    "objective": "Anticiper pour une conduite souple",
+    "sources": [
+      "ECO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-033",
+    "objective": "Réduire la charge et l'équipement inutiles",
+    "sources": [
+      "ECO"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-034",
+    "objective": "Protéger les passagers après immobilisation",
+    "sources": [
+      "ACCIDENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-035",
+    "objective": "Donner une localisation exploitable aux secours",
+    "sources": [
+      "ACCIDENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-SEC-036",
+    "objective": "Éviter un déplacement aggravant d'un blessé",
+    "sources": [
+      "ACCIDENT"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-001",
+    "objective": "Lire une modification d'itinéraire sans déplacer les horaires",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-002",
+    "objective": "Distinguer les acteurs d'une organisation",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-003",
+    "objective": "Repérer une information dans une succession de messages",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-004",
+    "objective": "Reconstituer l'ordre d'une consigne",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-005",
+    "objective": "Identifier le référent d'un pronom",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-006",
+    "objective": "Suivre des repères spatiaux dans un itinéraire",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-007",
+    "objective": "Reconnaître une relation de conséquence",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-008",
+    "objective": "Délimiter la portée d'une exception de planning",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-009",
+    "objective": "Comprendre une concession",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-010",
+    "objective": "Attribuer une tâche dans une consigne procédurale",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-011",
+    "objective": "Interpréter une correction introduite par une négation",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-012",
+    "objective": "Comparer deux descriptions de prestation",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-013",
+    "objective": "Distinguer deux statuts dans un même dossier",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-014",
+    "objective": "Choisir le sens d'un mot en contexte",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-015",
+    "objective": "Synthétiser deux évolutions et un total",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-016",
+    "objective": "Associer un événement à son heure",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-017",
+    "objective": "Appliquer une instruction à une chronologie particulière",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-018",
+    "objective": "Comprendre une demande à partir d'un document chiffré",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-019",
+    "objective": "Distinguer disponibilité du client et rendez-vous convenu",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-020",
+    "objective": "Identifier la finalité explicite d'une instruction",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-021",
+    "objective": "Reformuler une demande professionnelle précise",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-022",
+    "objective": "Suivre une quantité au fil d'un récit",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-023",
+    "objective": "Lire un calendrier de projet",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-FRA-024",
+    "objective": "Distinguer deux conditions cumulatives",
+    "sources": [
+      "SYLLABUS-D",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-001",
+    "objective": "Confirmer l'identité du passager attendu",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-002",
+    "objective": "Comprendre une heure et un repère temporel",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-003",
+    "objective": "Demander une précision sur la destination",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-004",
+    "objective": "Proposer une aide matérielle",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-005",
+    "objective": "Comprendre une demande de confort",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-006",
+    "objective": "Distinguer permission et demande d'action",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-007",
+    "objective": "Comprendre un retard possible",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-008",
+    "objective": "Comprendre une demande de justificatif",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-009",
+    "objective": "Identifier un objet perdu et son emplacement",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-010",
+    "objective": "Comprendre une comparaison et une concession",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-011",
+    "objective": "Comprendre deux indications spatiales",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-ANG-012",
+    "objective": "Prendre congé en contexte",
+    "sources": [
+      "SYLLABUS-E",
+      "CEFR-A2",
+      "BRITISH-COUNCIL",
+      "LANGUAGE-ORIGINAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-001",
+    "objective": "Distinguer solutions concurrentes directes et indirectes",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-002",
+    "objective": "Séparer achat et utilisation",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-003",
+    "objective": "Segmenter selon les besoins",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-004",
+    "objective": "Repérer un biais d'échantillonnage",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-005",
+    "objective": "Distinguer pic ponctuel et demande régulière",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-006",
+    "objective": "Identifier un changement de l'environnement du marché",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-007",
+    "objective": "Comparer des prix à périmètre équivalent",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-008",
+    "objective": "Relier prix et bénéfice perçu par la cible",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-009",
+    "objective": "Identifier une stratégie tarifaire",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-010",
+    "objective": "Identifier un intermédiaire prescripteur",
+    "sources": [
+      "MARKET"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-011",
+    "objective": "Calculer une conversion commerciale",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-012",
+    "objective": "Calculer un coût d'acquisition",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-013",
+    "objective": "Mesurer le réachat d'une cohorte",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-014",
+    "objective": "Mesurer la qualité des contacts",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-015",
+    "objective": "Interpréter simultanément taux et volume",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-016",
+    "objective": "Localiser une difficulté dans le parcours client",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-017",
+    "objective": "Choisir un canal selon l'intention d'achat",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-018",
+    "objective": "Isoler un facteur dans un test commercial",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-019",
+    "objective": "Distinguer médias détenus, payants et gagnés",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-020",
+    "objective": "Utiliser un suivi commercial partagé",
+    "sources": [
+      "DIGITAL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-021",
+    "objective": "Distinguer compte créé et consentement publicitaire",
+    "sources": [
+      "CNIL-MAIL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-022",
+    "objective": "Appliquer l'exception des services analogues",
+    "sources": [
+      "CNIL-MAIL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-023",
+    "objective": "Reconnaître une sollicitation professionnelle pertinente",
+    "sources": [
+      "CNIL-MAIL"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-024",
+    "objective": "Rendre durable le droit d'opposition",
+    "sources": [
+      "CNIL-COMMUNICATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-025",
+    "objective": "Limiter les données à une finalité déterminée",
+    "sources": [
+      "CNIL-DATA"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-026",
+    "objective": "Distinguer message transactionnel et promotion",
+    "sources": [
+      "CNIL-COMMUNICATION"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-027",
+    "objective": "Identifier le recours amiable après réclamation",
+    "sources": [
+      "CONSUMER"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-028",
+    "objective": "Inclure les kilomètres à vide dans le coût",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-029",
+    "objective": "Calculer un tarif à composantes temporelle et kilométrique",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-030",
+    "objective": "Distinguer taux de marque et taux de marge",
+    "sources": [
+      "MARGIN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-031",
+    "objective": "Former un prix à partir d'un taux de marge",
+    "sources": [
+      "MARGIN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-032",
+    "objective": "Intégrer une commission proportionnelle au prix",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-033",
+    "objective": "Mesurer l'effet d'une remise sur la marge",
+    "sources": [
+      "PRICE",
+      "MARGIN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-034",
+    "objective": "Pondérer les coûts d'un ensemble de prestations",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-035",
+    "objective": "Arbitrer l'usage d'une capacité limitée",
+    "sources": [
+      "PRICE"
+    ]
+  },
+  {
+    "questionId": "FRVTC-COM-036",
+    "objective": "Distinguer nouveau tarif et modification contractuelle",
+    "sources": [
+      "CONTRACT-1193"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-001",
+    "objective": "Appliquer la limite d'ancienneté thermique",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-002",
+    "objective": "Distinguer exception électrique et règle générale",
+    "sources": [
+      "VEH-2",
+      "CODE-VEH-6"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-003",
+    "objective": "Compter le conducteur dans les places",
+    "sources": [
+      "CODE-VEH-6"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-004",
+    "objective": "Utiliser la bonne mesure de puissance",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-005",
+    "objective": "Vérifier deux dimensions indépendantes",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-006",
+    "objective": "Distinguer portes et places",
+    "sources": [
+      "VEH-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-007",
+    "objective": "Reconnaître un équipement réservé aux taxis",
+    "sources": [
+      "CODE-VEH-7"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-008",
+    "objective": "Appliquer la fixation obligatoire actualisée",
+    "sources": [
+      "SIGN-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-009",
+    "objective": "Situer la signalétique définitive",
+    "sources": [
+      "SIGN-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-010",
+    "objective": "Reconnaître le justificatif d'une location longue",
+    "sources": [
+      "CODE-VEH-9"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-011",
+    "objective": "Articuler deux limites de validité",
+    "sources": [
+      "SIGN-3"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-012",
+    "objective": "Distinguer conducteur, entreprise et exploitant inscrit",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-013",
+    "objective": "Respecter le délai de mise à jour du registre",
+    "sources": [
+      "CODE-REG-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-014",
+    "objective": "Anticiper le renouvellement de l'inscription",
+    "sources": [
+      "CODE-REG-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-015",
+    "objective": "Identifier la période de l'inscription",
+    "sources": [
+      "L3122-3"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-016",
+    "objective": "Distinguer remplacement exceptionnel et flotte régulière",
+    "sources": [
+      "CODE-REG-1-III"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-017",
+    "objective": "Déclarer préalablement un renfort événementiel",
+    "sources": [
+      "CODE-REG-1-III"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-018",
+    "objective": "Appliquer l'interdiction de prêt d'inscription",
+    "sources": [
+      "L3122-3"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-019",
+    "objective": "Identifier le gestionnaire national du REVTC",
+    "sources": [
+      "CODE-REG-5"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-020",
+    "objective": "Distinguer représentation légale et participation à l'activité",
+    "sources": [
+      "CODE-REG-1-I"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-021",
+    "objective": "Comprendre la procédure d'un dossier incomplet",
+    "sources": [
+      "CODE-REG-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-022",
+    "objective": "Relier cessation sectorielle et radiation",
+    "sources": [
+      "CODE-REG-4"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-023",
+    "objective": "Distinguer enregistrement et exécution d'une réservation",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-024",
+    "objective": "Appliquer l'alternative de contact immédiat du client",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-025",
+    "objective": "Reconnaître les supports de preuve autorisés",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-026",
+    "objective": "Distinguer identifiant d'entreprise et inscription VTC",
+    "sources": [
+      "RES-1"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-027",
+    "objective": "Identifier l'origine de la vignette temporaire",
+    "sources": [
+      "SIGN-1",
+      "SIGN-2"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-028",
+    "objective": "Calculer la période d'attente liée à une réservation en gare",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-029",
+    "objective": "Choisir un lieu de retrait autorisé",
+    "sources": [
+      "RETURN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-030",
+    "objective": "Appliquer l'exception de réservation suivante",
+    "sources": [
+      "RETURN"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-031",
+    "objective": "Appliquer le forfait convenu à la réservation",
+    "sources": [
+      "BPI-VTC"
+    ]
+  },
+  {
+    "questionId": "FRVTC-REG-032",
+    "objective": "Relier la signalétique à l'inscription de l'exploitant",
+    "sources": [
+      "SIGN-3"
+    ]
+  }
+]

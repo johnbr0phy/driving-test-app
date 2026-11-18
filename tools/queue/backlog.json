@@ -4490,6 +4490,24 @@
         "ncpt",
         "ncct phlebotomy"
       ]
+    },
+    {
+      "id": "frvtc",
+      "name": "French VTC Chauffeur Theory Exam",
+      "owner": "Chambres de métiers et de l’artisanat",
+      "region": "FR",
+      "engine": "v1",
+      "siblings": [
+        "frcode",
+        "pttvde",
+        "rotaxi"
+      ],
+      "sells": 1,
+      "search": [
+        "examen vtc",
+        "qcm vtc",
+        "carte professionnelle vtc"
+      ]
     }
   ]
 }

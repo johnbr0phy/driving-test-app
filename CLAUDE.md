@@ -105,6 +105,9 @@ The "Questions by exam" table's Enrolled column counts distinct people with at l
 
 ### Additional Exams (CDL, HTL, CST, CRCST)
 
+- **French VTC** (`frvtc`, `/vtc/*`, native landing `/fr/examen-vtc`): `data/france-vtc-questions.json`, 200 original French questions with English A2 contexts. Pools T3P 36, management 24, road safety 36, French 24, English 12, commercial 36, VTC regulation 32; per-test 9/6/9/6/3/9/8. Four 50-question tests 34101–34104 and five topic sets 34101–34105; state `FRVTC`, prefix `FRVTC-`. Consolidated 6 April 2017 order including 2024 additions, current primary laws checked 17 November 2026. Official theory has 91 QCM and 16 QRC in 230 minutes, weighted mean 10/20 with subject minima (6/20, English 4/20), then a separate practical assessment. Our 70% target (35/50) is an editorial study target, not a conversion; written production, official section scoring, oral interaction and driving are not reproduced. `tools/next20/frvtc/build.py` rebuilds the category sources; `sources.md` and `item-source-map.json` trace each objective. French model review only. EU driving theory hub, France region, violet theme 276/75/32, borrowed driving mascot; normal v1 Premium steps.
+
+
 - South Africa Firearm Competency legal knowledge: `/zafirearm`, landing `/south-africa-firearm-competency-practice-test`, `data/zafirearm-questions.json`; pools Legal40/Licensing60/Custody48/Duties52, tests/sets33901–33904, stateZAFIREARM. Editorial10/15/12/13 per50 and70%study target, not official provider format. SAQA117705, Firearms Control Act and amended regulations; South Africa firearm competency group. Practical assessment/accreditation/licensing excluded.
 
 

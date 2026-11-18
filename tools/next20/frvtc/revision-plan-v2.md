@@ -1,0 +1,208 @@
+# Corrective rebuild plan, after independent review v1
+
+The first independent pedagogy gate failed (174/200 options-only). All 200 stem-based keys matched; this is not pedagogical approval. Retain stable IDs and counts. Facts remain anchored to already read primary sources; any new legal claim requires another primary read. No shared choice families.
+
+## Per-item intervention plan
+
+- FRVTC-T3P-001 (R039): Comparer des trajets dont le motif du conducteur et la rémunération diffèrent
+- FRVTC-T3P-002 (R162): Comparer des trajets dont le motif du conducteur et la rémunération diffèrent
+- FRVTC-T3P-003 (R100): Classer un service ou une annonce parmi des situations concrètes comparables
+- FRVTC-T3P-004 (R185): Classer un service ou une annonce parmi des situations concrètes comparables
+- FRVTC-T3P-005 (R082): Classer un service ou une annonce parmi des situations concrètes comparables
+- FRVTC-T3P-006 (R117): Sélectionner une pièce, un destinataire ou une action dans un dossier professionnel situé
+- FRVTC-T3P-007 (R138): Sélectionner une pièce, un destinataire ou une action dans un dossier professionnel situé
+- FRVTC-T3P-008 (R091): Sélectionner une pièce, un destinataire ou une action dans un dossier professionnel situé
+- FRVTC-T3P-009 (R023): Sélectionner une pièce, un destinataire ou une action dans un dossier professionnel situé
+- FRVTC-T3P-010 (R081): Sélectionner une pièce, un destinataire ou une action dans un dossier professionnel situé
+- FRVTC-T3P-011 (R017): Distinguer échéances, garanties, qualité du titulaire et voie d’accès à partir de données concrètes
+- FRVTC-T3P-012 (R097): Distinguer échéances, garanties, qualité du titulaire et voie d’accès à partir de données concrètes
+- FRVTC-T3P-013 (R028): Distinguer échéances, garanties, qualité du titulaire et voie d’accès à partir de données concrètes
+- FRVTC-T3P-014 (R096): Distinguer échéances, garanties, qualité du titulaire et voie d’accès à partir de données concrètes
+- FRVTC-T3P-015 (R077): Distinguer échéances, garanties, qualité du titulaire et voie d’accès à partir de données concrètes
+- FRVTC-T3P-016 (R156): Distinguer échéances, garanties, qualité du titulaire et voie d’accès à partir de données concrètes
+- FRVTC-T3P-017 (R065): Distinguer les données de proposition et les décisions de la plateforme à chaque stade
+- FRVTC-T3P-018 (R014): Distinguer les données de proposition et les décisions de la plateforme à chaque stade
+- FRVTC-T3P-019 (R176): Distinguer les données de proposition et les décisions de la plateforme à chaque stade
+- FRVTC-T3P-020 (R141): Distinguer les données de proposition et les décisions de la plateforme à chaque stade
+- FRVTC-T3P-021 (R127): Comparer décisions de service, orientation du recours et lignes de facturation
+- FRVTC-T3P-022 (R198): Comparer décisions de service, orientation du recours et lignes de facturation
+- FRVTC-T3P-023 (R200): Comparer décisions de service, orientation du recours et lignes de facturation
+- FRVTC-T3P-024 (R184): Comparer décisions de service, orientation du recours et lignes de facturation
+- FRVTC-T3P-025 (R059): Comparer décisions de service, orientation du recours et lignes de facturation
+- FRVTC-T3P-026 (R165): Repérer la portée précise du consentement dans une séquence d’interactions
+- FRVTC-T3P-027 (R098): Repérer la portée précise du consentement dans une séquence d’interactions
+- FRVTC-T3P-028 (R121): Repérer la portée précise du consentement dans une séquence d’interactions
+- FRVTC-T3P-029 (R053): Distinguer les faits constitutifs sans proposer de fausses conditions générales
+- FRVTC-T3P-030 (R056): Distinguer les faits constitutifs sans proposer de fausses conditions générales
+- FRVTC-T3P-031 (R052): Distinguer les faits constitutifs sans proposer de fausses conditions générales
+- FRVTC-T3P-032 (R040): Distinguer les faits constitutifs sans proposer de fausses conditions générales
+- FRVTC-T3P-033 (R170): Distinguer les faits constitutifs sans proposer de fausses conditions générales
+- FRVTC-T3P-034 (R088): Choisir les informations ou le canal adaptés au signalement décrit
+- FRVTC-T3P-035 (R063): Choisir les informations ou le canal adaptés au signalement décrit
+- FRVTC-T3P-036 (R114): Choisir les informations ou le canal adaptés au signalement décrit
+- FRVTC-GES-001 (R146): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-002 (R140): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-003 (R049): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-004 (R106): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-005 (R149): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-006 (R092): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-007 (R171): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-008 (R050): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-009 (R166): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-010 (R186): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-011 (R129): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-012 (R070): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-013 (R048): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-014 (R066): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-015 (R194): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-016 (R004): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-017 (R134): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-018 (R118): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-019 (R054): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-020 (R002): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-021 (R030): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-022 (R047): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-023 (R147): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-GES-024 (R086): Conserver les calculs ; transformer les définitions en choix entre opérations, postes ou dossiers concrets ; numéro de facture : série et date
+- FRVTC-SEC-001 (R111): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-002 (R012): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-003 (R026): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-004 (R155): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-005 (R038): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-006 (R072): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-007 (R060): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-008 (R051): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-009 (R032): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-010 (R159): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-011 (R062): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-012 (R041): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-013 (R193): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-014 (R132): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-015 (R076): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-016 (R071): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-017 (R057): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-018 (R142): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-019 (R168): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-020 (R034): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-021 (R177): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-022 (R157): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-023 (R107): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-024 (R029): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-025 (R103): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-026 (R160): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-027 (R087): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-028 (R195): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-029 (R178): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-030 (R042): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-031 (R104): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-032 (R182): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-033 (R145): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-034 (R175): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-035 (R158): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-SEC-036 (R112): Conserver les calculs et conditions discriminantes ; reformuler priorités avec acteurs symétriques ; comparer observations/configurations pour sécurité et équipements
+- FRVTC-FRA-001 (R044): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-002 (R101): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-003 (R061): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-004 (R003): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-005 (R083): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-006 (R020): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-007 (R013): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-008 (R150): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-009 (R135): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-010 (R069): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-011 (R025): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-012 (R108): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-013 (R031): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-014 (R045): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-015 (R021): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-016 (R169): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-017 (R120): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-018 (R188): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-019 (R035): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-020 (R172): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-021 (R161): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-022 (R152): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-023 (R074): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-FRA-024 (R148): Diversifier genres et tâches (itinéraire, compte rendu, facture, note, consigne, courriel). Quatre interprétations de même ton, chacune avec acteur/date/condition déterminés. Supprimer remplissage et variantes extrêmes.
+- FRVTC-ANG-001 (R164): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-002 (R190): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-003 (R122): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-004 (R075): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-005 (R153): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-006 (R180): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-007 (R151): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-008 (R058): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-009 (R124): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-010 (R093): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-011 (R007): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-ANG-012 (R005): Conserver localisation/objet/heure solides ; réponses naturelles de même forme distinguées par acteur, moment, sens ou quantité.
+- FRVTC-COM-001 (R183): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-002 (R016): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-003 (R009): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-004 (R084): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-005 (R136): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-006 (R043): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-007 (R033): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-008 (R154): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-009 (R125): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-010 (R116): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-011 (R192): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-012 (R105): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-013 (R131): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-014 (R174): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-015 (R102): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-016 (R037): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-017 (R199): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-018 (R055): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-019 (R144): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-020 (R173): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-021 (R189): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-022 (R011): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-023 (R090): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-024 (R095): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-025 (R179): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-026 (R109): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-027 (R089): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-028 (R163): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-029 (R018): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-030 (R073): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-031 (R067): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-032 (R015): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-033 (R046): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-034 (R130): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-035 (R027): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-COM-036 (R024): Conserver calculs ; comparer segments, mesures, protocoles et traitements de fichiers concrets selon le contexte, sans promesse vertueuse unique
+- FRVTC-REG-001 (R196): Comparer fiches de véhicules ou états à différentes dates, sans assertions techniques universellement fausses
+- FRVTC-REG-002 (R079): Comparer fiches de véhicules ou états à différentes dates, sans assertions techniques universellement fausses
+- FRVTC-REG-003 (R126): Comparer fiches de véhicules ou états à différentes dates, sans assertions techniques universellement fausses
+- FRVTC-REG-004 (R110): Comparer fiches de véhicules ou états à différentes dates, sans assertions techniques universellement fausses
+- FRVTC-REG-005 (R001): Comparer fiches de véhicules ou états à différentes dates, sans assertions techniques universellement fausses
+- FRVTC-REG-006 (R022): Comparer fiches de véhicules ou états à différentes dates, sans assertions techniques universellement fausses
+- FRVTC-REG-007 (R123): Comparer montages et emplacements ou échéances ; conserver le cas à deux limites
+- FRVTC-REG-008 (R019): Comparer montages et emplacements ou échéances ; conserver le cas à deux limites
+- FRVTC-REG-009 (R115): Comparer montages et emplacements ou échéances ; conserver le cas à deux limites
+- FRVTC-REG-010 (R133): Comparer montages et emplacements ou échéances ; conserver le cas à deux limites
+- FRVTC-REG-011 (R006): Comparer montages et emplacements ou échéances ; conserver le cas à deux limites
+- FRVTC-REG-012 (R010): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-013 (R080): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-014 (R197): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-015 (R113): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-016 (R078): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-017 (R187): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-018 (R181): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-019 (R036): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-020 (R137): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-021 (R064): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-022 (R128): Sélectionner acte, date, titulaire ou pièces à partir d’un dossier situé ; ne pas demander la seule règle vraie
+- FRVTC-REG-023 (R119): Lire des extraits de justificatifs et distinguer client réservataire, dates et documents
+- FRVTC-REG-024 (R085): Lire des extraits de justificatifs et distinguer client réservataire, dates et documents
+- FRVTC-REG-025 (R143): Lire des extraits de justificatifs et distinguer client réservataire, dates et documents
+- FRVTC-REG-026 (R099): Lire des extraits de justificatifs et distinguer client réservataire, dates et documents
+- FRVTC-REG-027 (R094): Lire des extraits de justificatifs et distinguer client réservataire, dates et documents
+- FRVTC-REG-028 (R191): Choisir le véhicule ou déplacement concerné par une règle de réservation/attente/validité
+- FRVTC-REG-029 (R068): Choisir le véhicule ou déplacement concerné par une règle de réservation/attente/validité
+- FRVTC-REG-030 (R167): Choisir le véhicule ou déplacement concerné par une règle de réservation/attente/validité
+- FRVTC-REG-031 (R139): Choisir le véhicule ou déplacement concerné par une règle de réservation/attente/validité
+- FRVTC-REG-032 (R008): Choisir le véhicule ou déplacement concerné par une règle de réservation/attente/validité
+
+Every rewrite must be read with all four options and its explanation. Preserve legitimate safety and consent rules; difficulty must come from distinguishing the facts, not ambiguity or misleading guidance. Specific reviewer corrections: REG024 client réservataire; REG008 cannot be removed without destruction; FRA004 fiche de découverte; temporary-sign date phrasing; plain scope wording; T3P034 propos entendus; French facts row note minimale.

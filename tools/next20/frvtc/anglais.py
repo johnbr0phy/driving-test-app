@@ -1,0 +1,113 @@
+"""Original source-backed items; corrective design in revision-plan-v2.md."""
+ROWS = [("Vous attendez Mme Brown à l'aéroport. Un voyageur vous demande : ‘Are you here for Ms Brown?’ Quelle réponse "
+  'décrit votre situation actuelle ?',
+  ['Yes, I have just dropped off Ms Brown.',
+   "Yes, I'm waiting for Ms Brown.",
+   'Yes, I travelled here with Ms Brown.',
+   "Yes, I'm going to visit Ms Brown."],
+  1,
+  "I'm waiting for signifie « j'attends ». Les autres phrases décrivent une dépose terminée, un trajet fait ensemble "
+  'ou une visite.',
+  "Confirmer l'identité du passager attendu"),
+ ('Un client précise : ‘Please pick me up at a quarter to seven tomorrow morning.’ À quelle heure demande-t-il la '
+  'prise en charge ?',
+  ['Demain à 7 h 15', "Aujourd'hui à 6 h 45", 'Demain à 6 h 45', 'Demain à 19 h 15'],
+  2,
+  "‘A quarter to seven’ signifie un quart d'heure avant sept heures, donc 6 h 45. ‘Tomorrow morning’ situe le "
+  'rendez-vous demain matin.',
+  'Comprendre une heure et un repère temporel'),
+ ('Le client dit : ‘I need to go to the station.’ Vous savez déjà à quelle heure il part, mais la ville possède deux '
+  "gares. Quelle question obtient l'information qui manque ?",
+  ['Which station are you going to?',
+   'What time does your train leave?',
+   'How many bags are you taking?',
+   'Where did your journey start?'],
+  0,
+  "Which station demande laquelle des gares est visée. Les autres questions portent sur l'heure, les bagages ou le "
+  'point de départ.',
+  'Demander une précision sur la destination'),
+ ('Vous êtes près du coffre ouvert, le client tient deux valises. Vous voulez proposer de les charger vous-même. '
+  'Quelle phrase exprime cette offre ?',
+  ['Could you put the bags in the boot?',
+   'May I take my bag out of the boot?',
+   'Would you like to carry your bags inside?',
+   'Shall I put your bags in the boot?'],
+  3,
+  "Shall I propose une action faite par celui qui parle. Could you demande à l'autre d'agir ; les autres phrases "
+  'demandent une permission ou proposent une autre action. Boot désigne le coffre en anglais britannique.',
+  'Proposer une aide matérielle'),
+ ("Le passager dit : ‘It's a bit cold in here. Could you turn the heating up?’ Que souhaite-t-il ?",
+  ['Une température plus élevée',
+   'Une ventilation moins bruyante',
+   'Une fenêtre légèrement ouverte',
+   'Une climatisation plus froide'],
+  0,
+  "‘Turn the heating up’ demande d'augmenter le chauffage. ‘A bit cold’ indique qu'il trouve l'habitacle un peu "
+  'froid.',
+  'Comprendre une demande de confort'),
+ ("La vitre côté chauffeur est fermée. Vous souhaitez l'ouvrir vous-même après avoir obtenu l'accord du passager. "
+  'Quelle phrase convient ?',
+  ['Could you open your window a little?',
+   'Shall I close the window now?',
+   'May I open the window a little?',
+   'Would you like me to leave it closed?'],
+  2,
+  "May I demande l'autorisation d'agir soi-même. Could you demande l'action à l'autre ; close et leave it closed "
+  'concernent la fermeture.',
+  "Distinguer permission et demande d'action"),
+ ('Vous dites au client : ‘The road is busy, so we may arrive ten minutes late.’ Quelle information lui '
+  'transmettez-vous ?',
+  ['Le départ a été reporté de dix minutes',
+   "L'arrivée pourrait avoir dix minutes de retard",
+   'Le trajet durera encore exactement dix minutes',
+   'La route sera fermée dans dix minutes'],
+  1,
+  "‘May’ exprime une possibilité. ‘Arrive ten minutes late’ concerne le retard à l'arrivée, sans annoncer une durée "
+  'restante exacte.',
+  'Comprendre un retard possible'),
+ ('Après avoir payé, une cliente demande : ‘Could you email me the receipt, please?’ Que demande-t-elle ?',
+  ["L'envoi du devis par courrier",
+   'La modification du moyen de paiement',
+   'Le remboursement de la réservation',
+   "L'envoi du reçu par courriel"],
+  3,
+  '‘Receipt’ désigne le reçu et ‘email me’ demande un envoi électronique. La cliente ne demande ni devis ni '
+  'remboursement.',
+  'Comprendre une demande de justificatif'),
+ ('Un client téléphone : ‘I think I left a blue scarf on the back seat.’ Quel objet recherche-t-il ?',
+  ['Une veste bleue près du coffre',
+   'Un sac bleu sur le siège avant',
+   'Une écharpe bleue sur la banquette arrière',
+   "Un manteau bleu à l'arrêt de départ"],
+  2,
+  "‘Scarf’ signifie écharpe et ‘back seat’ désigne le siège ou la banquette arrière. ‘I think’ indique qu'il n'en "
+  'est pas certain.',
+  'Identifier un objet perdu et son emplacement'),
+ ("Le passager explique : ‘I'd prefer the cheaper route, even if it takes longer.’ Quelle préférence exprime-t-il ?",
+  ['Un trajet moins coûteux malgré une durée supérieure',
+   "Un trajet plus rapide même s'il coûte davantage",
+   'Un trajet plus court à condition de gagner du temps',
+   "Un trajet au même prix avec moins d'arrêts"],
+  0,
+  '‘Cheaper’ signifie moins cher et ‘even if’ introduit une concession. Le client accepte une durée plus longue pour '
+  'payer moins.',
+  'Comprendre une comparaison et une concession'),
+ ('Un message indique : ‘Wait opposite the hotel, next to the pharmacy.’ Où faut-il attendre ?',
+  ["Dans l'hôtel, près de la réception",
+   "Face à l'hôtel, à côté de la pharmacie",
+   "Derrière la pharmacie, dans la cour de l'hôtel",
+   "Devant l'hôtel, en face de la pharmacie"],
+  1,
+  "‘Opposite the hotel’ signifie en face de l'hôtel ; ‘next to the pharmacy’ signifie à côté de la pharmacie. Les "
+  "deux indications décrivent le même point d'attente.",
+  'Comprendre deux indications spatiales'),
+ ("Le client vient d'arriver pour une semaine de vacances. Son vol est terminé, mais son séjour commence. Quelle "
+  'formule porte sur la période qui débute ?',
+  ['Have a safe flight home!',
+   'I hope you enjoyed your stay!',
+   'I hope your flight was comfortable!',
+   'Have a lovely stay here!'],
+  3,
+  'Have a lovely stay souhaite un bon séjour à venir. Les autres formules concernent un vol de retour futur, un '
+  'séjour terminé ou le vol déjà effectué.',
+  'Prendre congé en contexte')]

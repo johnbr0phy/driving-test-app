@@ -547,6 +547,11 @@ export const ko: TranslationKeys = {
     pcLiability: "Commercial Liability & Workers Comp",
     pcOther: "Flood, Surety & Other Coverages",
     // VTNE categories
+    cdmNutrition: "Nutrition",
+    cdmFoodservice: "Foodservice",
+    cdmPersonnel: "Personnel & Communications",
+    cdmSafety: "Sanitation & Safety",
+    cdmBusiness: "Business Operations",
     vtCare: "Animal Care & Nursing",
     vtPharm: "Pharmacy & Pharmacology",
     vtSurgical: "Surgical Nursing",

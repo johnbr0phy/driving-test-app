@@ -11517,3 +11517,26 @@ html:not([data-ltq="control"]) .landing-shots {
   background-color: rgb(17 24 39);
   box-shadow: inset 0 -1px 0 rgb(31 41 55);
 }
+
+/* CDM: distinct deep blue; white button contrast 9.45:1. */
+[data-theme="cdm"] {
+  --brand: 240 75% 48%;
+  --brand-foreground: 0 0% 100%;
+  --brand-light: 240 75% 96%;
+  --brand-hover: 240 75% 43%;
+  --brand-dark: 240 75% 43%;
+  --brand-darker: 240 75% 20%;
+  --brand-muted: 240 75% 72%;
+  --brand-border: 240 75% 78%;
+  --brand-border-light: 240 75% 88%;
+  --brand-gradient-to: 240 25% 96%;
+}
+.dark [data-theme="cdm"] {
+  --brand-light: 240 75% 13%;
+  --brand-gradient-to: 240 25% 11%;
+  --brand-dark: 240 75% 70%;
+  --brand-darker: 240 75% 80%;
+  --brand-muted: 240 75% 45%;
+  --brand-border: 240 75% 34%;
+  --brand-border-light: 240 75% 24%;
+}

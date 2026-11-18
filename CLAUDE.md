@@ -105,6 +105,8 @@ The "Questions by exam" table's Enrolled column counts distinct people with at l
 
 ### Additional Exams (CDL, HTL, CST, CRCST)
 
+- **CDM, CFPP**: `/cdm`, landing `/cdm-practice-test`, `data/cdm-questions.json`: Nutrition 40, Foodservice 44, Personnel 40, Safety 48, Business 28. Tests 34001–34004; topic sets 34001–34005; type CDM. 70% practice target only; official cut score set by CBDM. Per-test 10/11/10/12/7 follows CBDM March 2025 outline. Healthcare hub.
+
 - South Africa Firearm Competency legal knowledge: `/zafirearm`, landing `/south-africa-firearm-competency-practice-test`, `data/zafirearm-questions.json`; pools Legal40/Licensing60/Custody48/Duties52, tests/sets33901–33904, stateZAFIREARM. Editorial10/15/12/13 per50 and70%study target, not official provider format. SAQA117705, Firearms Control Act and amended regulations; South Africa firearm competency group. Practical assessment/accreditation/licensing excluded.
 
 

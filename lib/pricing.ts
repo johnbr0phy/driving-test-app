@@ -7,6 +7,9 @@
 // that is a normal price, about $5 where $10 is a lot of money (marked "ppp").
 // Change a number here and both the paywall and checkout follow. Only currencies
 // the Stripe account accepts (a US account takes no Ghanaian cedi, for one).
+// Left on dollars on purpose: three-decimal Gulf currencies (KWD, BHD, OMR,
+// JOD, all pegged to the dollar), Stripe's special cases (ISK, UGX) and
+// currencies too unstable to hand-price (ARS).
 
 export interface PremiumPrice {
   /** ISO 4217, lowercase, as Stripe takes it. */
@@ -59,9 +62,22 @@ const PRICES: Record<string, number> = {
   bdt: 599,
   lkr: 1500,
   try: 199,
+  cop: 19900,
+  clp: 4990,
+  pen: 19.9,
+  dop: 299,
+  jmd: 799,
+  ttd: 34.99,
+  npr: 649,
+  kzt: 2490,
+  uah: 199,
+  rsd: 549,
+  gel: 14.99,
+  mad: 49,
+  tzs: 12900,
 };
 
-const EURO = ["AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR", "HR", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PT", "SI", "SK", "AD", "MC", "SM", "VA", "ME", "XK"];
+const EURO = ["AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR", "HR", "BG", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PT", "SI", "SK", "AD", "MC", "SM", "VA", "ME", "XK"];
 
 /** Country (ISO 3166-1 alpha-2) to currency. */
 const CURRENCY_BY_COUNTRY: Record<string, string> = {
@@ -76,10 +92,12 @@ const CURRENCY_BY_COUNTRY: Record<string, string> = {
   MX: "mxn", BR: "brl",
   IN: "inr", PH: "php", MY: "myr", ZA: "zar", NG: "ngn", KE: "kes", PK: "pkr",
   ID: "idr", TH: "thb", VN: "vnd", EG: "egp", BD: "bdt", LK: "lkr", TR: "try",
+  CO: "cop", CL: "clp", PE: "pen", DO: "dop", JM: "jmd", TT: "ttd",
+  NP: "npr", KZ: "kzt", UA: "uah", RS: "rsd", GE: "gel", MA: "mad", TZ: "tzs",
 };
 
 /** Currencies Stripe counts in whole units (no cents). */
-const ZERO_DECIMAL = new Set(["jpy", "krw", "vnd"]);
+const ZERO_DECIMAL = new Set(["jpy", "krw", "vnd", "clp"]);
 
 export function premiumPriceFor(country: string | null | undefined): PremiumPrice {
   const currency = country ? CURRENCY_BY_COUNTRY[country.toUpperCase()] : undefined;

@@ -586,3 +586,34 @@ export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
     ].filter(Boolean).join("\n"),
   });
 }
+
+// ── The 1,000,000th question (lib/server/millionth) ──────────────────────────
+// One email, to one person. Transactional: no unsubscribe link.
+
+export const MILLIONTH_SUBJECT = "You answered our 1,000,000th question 🎉";
+
+export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alreadyPremium: boolean }): string {
+  // No exam branding: the site's own crowned tiger and "TIGERTEST" at the top.
+  // The button still goes to the dashboard of the test they last studied.
+  return emailShell({
+    expression: 1,
+    eyebrow: "1,000,000 QUESTIONS",
+    title: MILLIONTH_SUBJECT,
+    preheader: "The question that took Tigertest to a million was yours. Premium is on us.",
+    heading: "You answered our 1,000,000th question.",
+    unsubscribe: false,
+    footerNote: "You are getting this because you answered our 1,000,000th question.",
+    body: [
+      p(c.firstName ? `Hi ${esc(c.firstName)},` : "Hi there,"),
+      p("People have now answered one million questions on Tigertest, and the one that took us to a million was yours."),
+      p(
+        c.alreadyPremium
+          ? "You already have Premium, so instead of a prize we owe you a very big thank you. Reply and tell me what test you are studying for."
+          : `To say thank you, <strong style="font-weight: 700;">Premium is now on your account, free, for good.</strong> Every locked set, test and stat on Tigertest is open to you.`
+      ),
+      cta(DASH(v, "millionth"), "Keep Practicing"),
+      p("Thanks for studying with us, and good luck on your test."),
+      signoff("Cheers,"),
+    ].join("\n"),
+  });
+}

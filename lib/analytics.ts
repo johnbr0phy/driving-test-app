@@ -55,6 +55,8 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     const user = auth.currentUser;
+    // Signed in: always send the token, so the server knows who answered
+    // (the 1,000,000th question, lib/server/millionth).
     if (user) {
       try {
         headers.Authorization = `Bearer ${await user.getIdToken()}`;
@@ -131,7 +133,9 @@ async function flushAnsweredQuestions() {
   const reportLearner = !!learnerKey && !isInternalBrowser(user?.email) && !walAlreadySent(learnerKey, day);
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
-    if (user && reportLearner) {
+    // Signed in: always send the token, so the server knows who answered
+    // (the 1,000,000th question, lib/server/millionth).
+    if (user) {
       try {
         headers.Authorization = `Bearer ${await user.getIdToken()}`;
       } catch {
@@ -145,6 +149,7 @@ async function flushAnsweredQuestions() {
         count,
         byExam,
         ...(reportLearner && browserId ? { browserId } : {}),
+        wal: reportLearner,
       }),
       keepalive: true,
     });

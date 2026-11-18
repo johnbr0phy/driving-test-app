@@ -1,0 +1,502 @@
+{
+"X001": {
+"key": "C",
+"questionId": "EPA609-REG-022",
+"category": "epa609Rules"
+},
+"X002": {
+"key": "D",
+"questionId": "EPA609-REG-018",
+"category": "epa609Rules"
+},
+"X003": {
+"key": "B",
+"questionId": "EPA609-SRV-009",
+"category": "epa609Service"
+},
+"X004": {
+"key": "B",
+"questionId": "EPA609-SRV-012",
+"category": "epa609Service"
+},
+"X005": {
+"key": "B",
+"questionId": "EPA609-REG-012",
+"category": "epa609Rules"
+},
+"X006": {
+"key": "A",
+"questionId": "EPA609-REG-016",
+"category": "epa609Rules"
+},
+"X007": {
+"key": "A",
+"questionId": "EPA609-EQP-004",
+"category": "epa609Equipment"
+},
+"X008": {
+"key": "C",
+"questionId": "EPA609-SRV-005",
+"category": "epa609Service"
+},
+"X009": {
+"key": "C",
+"questionId": "EPA609-SRV-019",
+"category": "epa609Service"
+},
+"X010": {
+"key": "C",
+"questionId": "EPA609-REG-004",
+"category": "epa609Rules"
+},
+"X011": {
+"key": "C",
+"questionId": "EPA609-EQP-011",
+"category": "epa609Equipment"
+},
+"X012": {
+"key": "D",
+"questionId": "EPA609-YF-011",
+"category": "epa609Yf"
+},
+"X013": {
+"key": "C",
+"questionId": "EPA609-YF-003",
+"category": "epa609Yf"
+},
+"X014": {
+"key": "C",
+"questionId": "EPA609-EQP-017",
+"category": "epa609Equipment"
+},
+"X015": {
+"key": "D",
+"questionId": "EPA609-REG-007",
+"category": "epa609Rules"
+},
+"X016": {
+"key": "C",
+"questionId": "EPA609-SRV-022",
+"category": "epa609Service"
+},
+"X017": {
+"key": "B",
+"questionId": "EPA609-REG-002",
+"category": "epa609Rules"
+},
+"X018": {
+"key": "C",
+"questionId": "EPA609-EQP-014",
+"category": "epa609Equipment"
+},
+"X019": {
+"key": "C",
+"questionId": "EPA609-EQP-012",
+"category": "epa609Equipment"
+},
+"X020": {
+"key": "D",
+"questionId": "EPA609-SRV-030",
+"category": "epa609Service"
+},
+"X021": {
+"key": "B",
+"questionId": "EPA609-YF-014",
+"category": "epa609Yf"
+},
+"X022": {
+"key": "C",
+"questionId": "EPA609-SRV-016",
+"category": "epa609Service"
+},
+"X023": {
+"key": "A",
+"questionId": "EPA609-YF-006",
+"category": "epa609Yf"
+},
+"X024": {
+"key": "A",
+"questionId": "EPA609-SRV-032",
+"category": "epa609Service"
+},
+"X025": {
+"key": "D",
+"questionId": "EPA609-SRV-020",
+"category": "epa609Service"
+},
+"X026": {
+"key": "A",
+"questionId": "EPA609-YF-007",
+"category": "epa609Yf"
+},
+"X027": {
+"key": "D",
+"questionId": "EPA609-EQP-021",
+"category": "epa609Equipment"
+},
+"X028": {
+"key": "C",
+"questionId": "EPA609-YF-008",
+"category": "epa609Yf"
+},
+"X029": {
+"key": "A",
+"questionId": "EPA609-EQP-018",
+"category": "epa609Equipment"
+},
+"X030": {
+"key": "D",
+"questionId": "EPA609-SRV-006",
+"category": "epa609Service"
+},
+"X031": {
+"key": "D",
+"questionId": "EPA609-REG-001",
+"category": "epa609Rules"
+},
+"X032": {
+"key": "C",
+"questionId": "EPA609-SRV-026",
+"category": "epa609Service"
+},
+"X033": {
+"key": "D",
+"questionId": "EPA609-YF-012",
+"category": "epa609Yf"
+},
+"X034": {
+"key": "C",
+"questionId": "EPA609-SRV-004",
+"category": "epa609Service"
+},
+"X035": {
+"key": "A",
+"questionId": "EPA609-REG-015",
+"category": "epa609Rules"
+},
+"X036": {
+"key": "D",
+"questionId": "EPA609-EQP-019",
+"category": "epa609Equipment"
+},
+"X037": {
+"key": "C",
+"questionId": "EPA609-SRV-007",
+"category": "epa609Service"
+},
+"X038": {
+"key": "D",
+"questionId": "EPA609-EQP-008",
+"category": "epa609Equipment"
+},
+"X039": {
+"key": "A",
+"questionId": "EPA609-EQP-022",
+"category": "epa609Equipment"
+},
+"X040": {
+"key": "B",
+"questionId": "EPA609-SRV-018",
+"category": "epa609Service"
+},
+"X041": {
+"key": "B",
+"questionId": "EPA609-REG-003",
+"category": "epa609Rules"
+},
+"X042": {
+"key": "D",
+"questionId": "EPA609-SRV-031",
+"category": "epa609Service"
+},
+"X043": {
+"key": "C",
+"questionId": "EPA609-SRV-013",
+"category": "epa609Service"
+},
+"X044": {
+"key": "B",
+"questionId": "EPA609-EQP-020",
+"category": "epa609Equipment"
+},
+"X045": {
+"key": "B",
+"questionId": "EPA609-SRV-027",
+"category": "epa609Service"
+},
+"X046": {
+"key": "D",
+"questionId": "EPA609-SRV-003",
+"category": "epa609Service"
+},
+"X047": {
+"key": "A",
+"questionId": "EPA609-EQP-024",
+"category": "epa609Equipment"
+},
+"X048": {
+"key": "A",
+"questionId": "EPA609-REG-014",
+"category": "epa609Rules"
+},
+"X049": {
+"key": "C",
+"questionId": "EPA609-REG-013",
+"category": "epa609Rules"
+},
+"X050": {
+"key": "B",
+"questionId": "EPA609-SRV-015",
+"category": "epa609Service"
+},
+"X051": {
+"key": "D",
+"questionId": "EPA609-YF-010",
+"category": "epa609Yf"
+},
+"X052": {
+"key": "B",
+"questionId": "EPA609-REG-005",
+"category": "epa609Rules"
+},
+"X053": {
+"key": "A",
+"questionId": "EPA609-REG-025",
+"category": "epa609Rules"
+},
+"X054": {
+"key": "C",
+"questionId": "EPA609-REG-028",
+"category": "epa609Rules"
+},
+"X055": {
+"key": "B",
+"questionId": "EPA609-EQP-010",
+"category": "epa609Equipment"
+},
+"X056": {
+"key": "B",
+"questionId": "EPA609-EQP-002",
+"category": "epa609Equipment"
+},
+"X057": {
+"key": "B",
+"questionId": "EPA609-SRV-024",
+"category": "epa609Service"
+},
+"X058": {
+"key": "D",
+"questionId": "EPA609-YF-016",
+"category": "epa609Yf"
+},
+"X059": {
+"key": "C",
+"questionId": "EPA609-YF-001",
+"category": "epa609Yf"
+},
+"X060": {
+"key": "A",
+"questionId": "EPA609-EQP-001",
+"category": "epa609Equipment"
+},
+"X061": {
+"key": "B",
+"questionId": "EPA609-REG-024",
+"category": "epa609Rules"
+},
+"X062": {
+"key": "A",
+"questionId": "EPA609-YF-015",
+"category": "epa609Yf"
+},
+"X063": {
+"key": "A",
+"questionId": "EPA609-SRV-002",
+"category": "epa609Service"
+},
+"X064": {
+"key": "A",
+"questionId": "EPA609-SRV-029",
+"category": "epa609Service"
+},
+"X065": {
+"key": "B",
+"questionId": "EPA609-SRV-023",
+"category": "epa609Service"
+},
+"X066": {
+"key": "D",
+"questionId": "EPA609-YF-002",
+"category": "epa609Yf"
+},
+"X067": {
+"key": "D",
+"questionId": "EPA609-YF-013",
+"category": "epa609Yf"
+},
+"X068": {
+"key": "C",
+"questionId": "EPA609-EQP-006",
+"category": "epa609Equipment"
+},
+"X069": {
+"key": "A",
+"questionId": "EPA609-EQP-023",
+"category": "epa609Equipment"
+},
+"X070": {
+"key": "C",
+"questionId": "EPA609-YF-009",
+"category": "epa609Yf"
+},
+"X071": {
+"key": "C",
+"questionId": "EPA609-SRV-014",
+"category": "epa609Service"
+},
+"X072": {
+"key": "B",
+"questionId": "EPA609-REG-021",
+"category": "epa609Rules"
+},
+"X073": {
+"key": "C",
+"questionId": "EPA609-YF-005",
+"category": "epa609Yf"
+},
+"X074": {
+"key": "D",
+"questionId": "EPA609-REG-027",
+"category": "epa609Rules"
+},
+"X075": {
+"key": "A",
+"questionId": "EPA609-YF-004",
+"category": "epa609Yf"
+},
+"X076": {
+"key": "B",
+"questionId": "EPA609-EQP-013",
+"category": "epa609Equipment"
+},
+"X077": {
+"key": "C",
+"questionId": "EPA609-SRV-001",
+"category": "epa609Service"
+},
+"X078": {
+"key": "A",
+"questionId": "EPA609-EQP-003",
+"category": "epa609Equipment"
+},
+"X079": {
+"key": "A",
+"questionId": "EPA609-SRV-028",
+"category": "epa609Service"
+},
+"X080": {
+"key": "A",
+"questionId": "EPA609-EQP-016",
+"category": "epa609Equipment"
+},
+"X081": {
+"key": "B",
+"questionId": "EPA609-REG-011",
+"category": "epa609Rules"
+},
+"X082": {
+"key": "B",
+"questionId": "EPA609-EQP-015",
+"category": "epa609Equipment"
+},
+"X083": {
+"key": "B",
+"questionId": "EPA609-REG-008",
+"category": "epa609Rules"
+},
+"X084": {
+"key": "B",
+"questionId": "EPA609-REG-019",
+"category": "epa609Rules"
+},
+"X085": {
+"key": "A",
+"questionId": "EPA609-SRV-008",
+"category": "epa609Service"
+},
+"X086": {
+"key": "A",
+"questionId": "EPA609-REG-009",
+"category": "epa609Rules"
+},
+"X087": {
+"key": "D",
+"questionId": "EPA609-REG-020",
+"category": "epa609Rules"
+},
+"X088": {
+"key": "B",
+"questionId": "EPA609-REG-006",
+"category": "epa609Rules"
+},
+"X089": {
+"key": "A",
+"questionId": "EPA609-REG-026",
+"category": "epa609Rules"
+},
+"X090": {
+"key": "B",
+"questionId": "EPA609-SRV-021",
+"category": "epa609Service"
+},
+"X091": {
+"key": "A",
+"questionId": "EPA609-REG-010",
+"category": "epa609Rules"
+},
+"X092": {
+"key": "C",
+"questionId": "EPA609-EQP-005",
+"category": "epa609Equipment"
+},
+"X093": {
+"key": "B",
+"questionId": "EPA609-SRV-011",
+"category": "epa609Service"
+},
+"X094": {
+"key": "D",
+"questionId": "EPA609-EQP-009",
+"category": "epa609Equipment"
+},
+"X095": {
+"key": "C",
+"questionId": "EPA609-REG-017",
+"category": "epa609Rules"
+},
+"X096": {
+"key": "B",
+"questionId": "EPA609-SRV-025",
+"category": "epa609Service"
+},
+"X097": {
+"key": "B",
+"questionId": "EPA609-EQP-007",
+"category": "epa609Equipment"
+},
+"X098": {
+"key": "B",
+"questionId": "EPA609-REG-023",
+"category": "epa609Rules"
+},
+"X099": {
+"key": "D",
+"questionId": "EPA609-SRV-017",
+"category": "epa609Service"
+},
+"X100": {
+"key": "C",
+"questionId": "EPA609-SRV-010",
+"category": "epa609Service"
+}
+}

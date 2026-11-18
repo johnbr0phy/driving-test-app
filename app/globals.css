@@ -127,6 +127,19 @@
   }
 
   /* EPA 608 theme: green */
+  [data-theme="epa609"] {
+    --brand: 112 30% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 112 30% 95%;
+    --brand-hover: 112 30% 30%;
+    --brand-dark: 112 30% 24%;
+    --brand-darker: 112 30% 16%;
+    --brand-muted: 112 30% 65%;
+    --brand-border: 112 30% 75%;
+    --brand-border-light: 112 30% 86%;
+    --brand-gradient-to: 112 30% 94%;
+  }
+
   [data-theme="epa608"] {
     --brand: 150 60% 32.2%;
     --brand-foreground: 0 0% 100%;
@@ -654,6 +667,20 @@
     --brand-border: 320 40% 78%;
     --brand-border-light: 320 35% 88%;
     --brand-gradient-to: 345 80% 96%;
+  }
+
+  /* National real estate broker theme */
+  [data-theme="realestatebroker"] {
+    --brand: 176 60% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 176 65% 95%;
+    --brand-hover: 176 60% 28%;
+    --brand-dark: 176 60% 22%;
+    --brand-darker: 176 50% 16%;
+    --brand-muted: 176 40% 72%;
+    --brand-border: 176 40% 78%;
+    --brand-border-light: 176 35% 88%;
+    --brand-gradient-to: 161 65% 95%;
   }
 
   /* VTNE theme: teal green */
@@ -2967,6 +2994,20 @@
     --brand-border: 294 45% 80%;
     --brand-border-light: 294 45% 90%;
     --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* French VTC: violet, distinct from existing themes and CDM. */
+  [data-theme="frvtc"] {
+    --brand: 276 75% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 276 75% 96%;
+    --brand-hover: 276 75% 27%;
+    --brand-dark: 276 75% 22%;
+    --brand-darker: 276 75% 17%;
+    --brand-muted: 276 35% 65%;
+    --brand-border: 276 35% 78%;
+    --brand-border-light: 276 35% 90%;
+    --brand-gradient-to: 276 35% 98%;
   }
 
   /* French Driving Theory Test (Code de la route) theme */
@@ -6279,6 +6320,18 @@
     --chart-5: 340 75% 55%;
   }
 
+  .dark [data-theme="frvtc"] {
+    --brand: 276 75% 50%;
+    --brand-hover: 276 75% 42%;
+    --brand-light: 276 45% 13%;
+    --brand-gradient-to: 276 35% 11%;
+    --brand-border-light: 276 35% 24%;
+    --brand-border: 276 35% 34%;
+    --brand-muted: 276 35% 45%;
+    --brand-dark: 276 75% 65%;
+    --brand-darker: 276 75% 78%;
+  }
+
   /* Brand tints on a dark page. Generated from the light blocks above by
      tools/gen_dark_brand_css.py: surfaces (brand-light, gradient-to,
      border-light) become deep tints of the same hue, text shades (brand-dark,
@@ -6363,6 +6416,18 @@
     --brand-muted: 32 45% 45%;
     --brand-dark: 32 90% 65%;
     --brand-darker: 32 70% 78%;
+  }
+
+  .dark [data-theme="epa609"] {
+    --brand: 112 30% 39%;
+    --brand-hover: 112 30% 31%;
+    --brand-light: 112 30% 13%;
+    --brand-gradient-to: 112 30% 11%;
+    --brand-border-light: 112 30% 24%;
+    --brand-border: 112 30% 34%;
+    --brand-muted: 112 30% 45%;
+    --brand-dark: 112 30% 65%;
+    --brand-darker: 112 30% 78%;
   }
 
   .dark [data-theme="epa608"] {
@@ -6817,6 +6882,16 @@
     --brand-muted: 320 40% 45%;
     --brand-dark: 320 60% 65%;
     --brand-darker: 320 50% 78%;
+  }
+
+  .dark [data-theme="realestatebroker"] {
+    --brand-light: 176 45% 13%;
+    --brand-gradient-to: 161 40% 11%;
+    --brand-border-light: 176 35% 24%;
+    --brand-border: 176 40% 34%;
+    --brand-muted: 176 40% 45%;
+    --brand-dark: 176 60% 65%;
+    --brand-darker: 176 50% 78%;
   }
 
   .dark [data-theme="vtne"] {

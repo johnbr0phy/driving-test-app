@@ -196,6 +196,41 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NIC National Nail Technology Theory Examination candidate information bulletin, effective September 1, 2025 (revised March 1, 2026), checked November 2026",
     source: { name: "NIC Nail Technology Theory CIB", url: "https://prov-testing.github.io/nic_cib/nail_technology_national_theory_english.html" },
   },
+  frvtc: {
+  "answer": "France's VTC chauffeur theory examination has seven weighted subjects, with 91 multiple-choice questions and 16 short written answers over 230 minutes. Eligibility for the separate practical assessment requires a weighted average of at least 10/20 and at least 6/20 in every subject except English, which requires 4/20. The practical assessment includes at least 20 minutes of driving and requires 12/20.",
+  "rows": [
+    {
+      "label": "Official theory",
+      "value": "7 subjects; 91 QCM and 16 short answers"
+    },
+    {
+      "label": "Official theory time",
+      "value": "230 minutes"
+    },
+    {
+      "label": "Theory threshold",
+      "value": "Weighted average 10/20 plus subject minima of 6/20 (English 4/20)"
+    },
+    {
+      "label": "Language",
+      "value": "French, with English at CEFR A2"
+    },
+    {
+      "label": "Separate practical assessment",
+      "value": "At least 20 minutes of driving; 12/20 required"
+    },
+    {
+      "label": "Practice target",
+      "value": "70% (35/50); editorial study target, not an official score conversion"
+    }
+  ],
+  "basedOn": "Consolidated 6 April 2017 order and Annex I, including the 2024 syllabus addition; current primary transport, road and business sources checked November 17, 2026",
+  "source": {
+    "name": "Légifrance: VTC examination order",
+    "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379046"
+  },
+  "tigertest": "200 original French-language questions in four shorter 50-question tests. Free to start. Each item has one correct answer out of four. Written production, spelling assessment, official weighted section scoring, oral interaction and practical driving are not reproduced. Model language review only."
+},
   cdm: {
     answer: "The CBDM CDM, CFPP exam has 160 multiple-choice questions in three hours: 140 scored and 20 unscored pretest items. Its five domains are nutrition, foodservice, personnel and communications, sanitation and safety, and business operations.",
     rows: [
@@ -1079,6 +1114,18 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), free to start with no account required.",
   },
+  epa609: {
+    answer: "EPA Section 609 certification covers motor vehicle air-conditioning refrigerant handling, recovery equipment, environmental effects and applicable rules. EPA-approved programs administer their own tests. MACS online/home testing uses 25 multiple-choice questions, is untimed and open book, and requires 21 correct (84%); classroom testing differs. Tigertest provides 100 original practice questions, not approved training or certification.",
+    rows: [
+      { label: "MACS online/home test", value: "25 multiple-choice questions" },
+      { label: "MACS online/home conditions", value: "Untimed, open book" },
+      { label: "MACS online/home passing score", value: "21 of 25 (84%)" },
+      { label: "Tigertest practice", value: "Four 25-question tests; editorial weights" },
+      { label: "Certification", value: "Through an EPA-approved program" },
+    ],
+    basedOn: "EPA Section 609 requirements and the January 2025 MACS training manual, checked November 18, 2026",
+    source: { name: "MACS Section 609 certification information", url: "https://macsmobileairclimate.org/about-609-certification/" },
+  },
   epa608: {
     answer:
       "The EPA Section 608 exam has four sections (Core, Type I, Type II, Type III) of 25 multiple-choice questions each, and you need 18 correct (72%) on each section. Core plus one type earns that type; Core plus all three is Universal certification, 100 questions in total. Type II and III are always proctored and closed book.",
@@ -1437,6 +1484,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the NIC National Cosmetology Theory Examination content outline, effective July 1, 2022 (110 items, 90 minutes; NIC only)",
     source: { name: "NIC Cosmetology Theory CIB", url: "https://prov-testing.github.io/nic_cib/cosmetology_national_theory_english.html" },
+  },
+  realestatebroker: {
+    answer: "This practice bank follows Pearson VUE's National/General Broker outline, effective March 1, 2025. Its national portion has 80 scored questions plus 5 pretest questions across eight topics. State-specific law, eligibility, timing and passing requirements must be checked with your licensing jurisdiction. Tigertest provides four shorter 50-question tests; 70% is a study target.",
+    rows: [
+      { label: "Scope", value: "US national broker portion; Pearson VUE outline" },
+      { label: "Official national questions", value: "80 scored + 5 pretest" },
+      { label: "Topics", value: "8, from property through real estate math" },
+      { label: "Practice format", value: "4 tests of 50 original questions" },
+      { label: "Timing and passing", value: "Check your licensing jurisdiction" },
+      { label: "State-law portion", value: "Separate preparation required" },
+    ],
+    basedOn: "Pearson VUE National/General Broker outline, effective March 2025; checked November 17, 2026",
+    source: { name: "Pearson VUE real estate content outlines, national broker pages 5–8", url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf" },
   },
   vtne: {
     answer:

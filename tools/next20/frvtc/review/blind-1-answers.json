@@ -1,0 +1,1424 @@
+{
+ "FRVTC-T3P-001": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [
+   "language"
+  ],
+  "note": "'Léa rejoint sa famille, même sans passager' is ambiguous; better 'Léa fait un trajet qu'elle ferait de toute façon pour rejoindre sa famille'.",
+  "source": "t3p-platform-carpool-harassment-web.txt: 'déplacement que le conducteur effectue pour son propre compte'"
+ },
+ "FRVTC-T3P-002": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "same: 'Leur mise en relation ... peut être effectuée à titre onéreux'"
+ },
+ "FRVTC-T3P-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-004": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-005": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-006": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-007": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "transport-code-2025.txt R3122-10: 'préfet du département dans lequel le demandeur a élu domicile'"
+ },
+ "FRVTC-T3P-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-010": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'Tous les 5 ans ... stage dure 2 jours (14 heures)'"
+ },
+ "FRVTC-T3P-012": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'À compter du 12 août 2026, l'expérience professionnelle ne permet plus d'accéder'"
+ },
+ "FRVTC-T3P-017": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "transport-code-2025.txt L1326-2: 'la distance ..., la destination et le prix minimal garanti'"
+ },
+ "FRVTC-T3P-018": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "L1326-2: 'peuvent refuser une proposition ... sans faire l'objet d'une quelconque pénalité'"
+ },
+ "FRVTC-T3P-019": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-020": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "t3p-platform: 'Les travailleurs déterminent librement leur itinéraire'"
+ },
+ "FRVTC-T3P-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-022": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "dog-current-web.txt: 'carte mobilité inclusion (CMI) avec les mentions invalidité'"
+ },
+ "FRVTC-T3P-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "dog-current-web.txt: 'ne doit pas subir de surfacturation en raison de la présence de son chien guide'; 38+6=44"
+ },
+ "FRVTC-T3P-026": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Answer is restated in the stem (gave number, did not accept gesture); no legal knowledge needed. Also a dating scenario ('Alex', 'rencontre') with no link to VTC context.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Stem quotes 'je ne veux plus continuer'; option A just restates it.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-028": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Stem says 'lors de plusieurs trajets'; 'forme répétée' -> 'retour des propos' is readable from stem.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-030": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Stem says 'harcèlement concerté'; option A 'préparation commune' is the paraphrase.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-031": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-032": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-033": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "common-transport-outrage-web.txt: aggravé 'à bord d'un VTC'"
+ },
+ "FRVTC-T3P-034": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-T3P-035": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "common-transport-outrage-web.txt: 'Police Secours en composant le 17'"
+ },
+ "FRVTC-T3P-036": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "common-transport-outrage-web.txt: 'messagerie instantanée (tchat) ... policier ou un gendarme'"
+ },
+ "FRVTC-GES-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-007": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-008": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Option B itself states 'sans part liée à l'usage', matching 'indépendante du nombre de courses'.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-016": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-019": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-021": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [
+   "language"
+  ],
+  "note": "'Deux séries justifiées' is unclear French; say 'Deux séries de numérotation distinctes (justifiées par l'organisation)'.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-GES-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-002": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-priority: débouchant d'un accès non ouvert à la circulation publique"
+ },
+ "FRVTC-SEC-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-*: écran ne constituant pas une aide à la conduite ou à la navigation est interdit"
+ },
+ "FRVTC-SEC-020": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-021": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "road-priority: 'changement de voie à l'intérieur du carrefour ... soumise aux règles de la priorité'"
+ },
+ "FRVTC-SEC-022": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-023": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "ceinture.txt: exception taxi only; <10 ans dispositif homologué"
+ },
+ "FRVTC-SEC-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "ceinture.txt: 'Conducteur de taxi en service'"
+ },
+ "FRVTC-SEC-025": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "ceinture.txt: 'dos à la route ... L'airbag doit être désactivé'"
+ },
+ "FRVTC-SEC-026": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-028": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-029": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'contrôle technique ... 1 fois par an'"
+ },
+ "FRVTC-SEC-030": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-031": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-032": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-033": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-034": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-035": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-SEC-036": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-002": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-008": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [
+   "language"
+  ],
+  "note": "'Une fiche tarifaire fictive' is unnatural in an exam stem; drop 'fictive' ('Une fiche tarifaire indique...'). Also 'document de paiement' vague; 'justificatif de paiement' or 'facture' better.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-022": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-023": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-FRA-024": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-002": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-ANG-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-001": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-002": {
+  "answer": "A",
+  "confidence": "medium",
+  "flags": [
+   "language"
+  ],
+  "note": "'M. Diallo, technicien transporté' is odd; 'M. Diallo, le technicien qui voyage'.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-006": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "'arrivées tardives' -> 'prises en charge à l'heure' is pure word matching.",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-009": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-010": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-014": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [
+   "unclear"
+  ],
+  "note": "Stem says '500 visites' but option A speaks of 'page tarif'; align wording ('Des visites au début de formulaire').",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-020": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-026": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-027": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-028": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-030": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-031": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-032": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-033": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-034": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-035": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-COM-036": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-REG-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi-current-web.txt: 'âgées de moins de sept ans'"
+ },
+ "FRVTC-REG-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-bpi-current-web.txt art.2: non applicables aux hybrides et électriques"
+ },
+ "FRVTC-REG-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-6: 'au plus neuf places, y compris celle du conducteur'"
+ },
+ "FRVTC-REG-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "arrêté 26 mars 2015: '≥ 84 kilowatts'"
+ },
+ "FRVTC-REG-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "arrêté: 4,50 m x 1,70 m"
+ },
+ "FRVTC-REG-006": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-REG-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-7: équipements de nature à créer une confusion avec un taxi"
+ },
+ "FRVTC-REG-008": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage-current-full-web.txt art.4: 'collées de manière inamovible sans détruire les vignettes'"
+ },
+ "FRVTC-REG-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art.4: avant bas gauche côté conducteur, arrière bas droite"
+ },
+ "FRVTC-REG-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-9: 'contrat de location d'une durée d'au moins six mois'"
+ },
+ "FRVTC-REG-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art.3: temporaire ≤30 jours ouvrés ni au-delà de la fin du recours"
+ },
+ "FRVTC-REG-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-REG-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1: 'délai maximum de quinze jours francs'"
+ },
+ "FRVTC-REG-014": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-2: 'au moins trois mois avant le terme'"
+ },
+ "FRVTC-REG-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: inscription renouvelée tous les 5 ans"
+ },
+ "FRVTC-REG-016": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1 III: 'durée ne peut excéder un mois'"
+ },
+ "FRVTC-REG-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1 III: documents 2° et 3° du II (certificat d'immatriculation, carte professionnelle)"
+ },
+ "FRVTC-REG-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-4: met à disposition d'un tiers, à titre onéreux ou non"
+ },
+ "FRVTC-REG-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R*3122-5: 'préfet de la région d'Ile-de-France'"
+ },
+ "FRVTC-REG-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-1: 'représentants légaux, seuls habilités à présenter la demande'"
+ },
+ "FRVTC-REG-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-2: 'mise en demeure, invitant l'exploitant à compléter le dossier'"
+ },
+ "FRVTC-REG-022": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "R3122-4: radiés lorsque l'exploitant cesse son activité"
+ },
+ "FRVTC-REG-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "arrêté 6 août 2025: date et heure de la réservation / de la prise en charge"
+ },
+ "FRVTC-REG-024": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "arrêté 6 août 2025: 'fournit, sans délai, ... les moyens de prendre contact avec le client'"
+ },
+ "FRVTC-REG-025": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "arrêté 6 août 2025 art.1 list (no bagages)"
+ },
+ "FRVTC-REG-026": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "arrêté 6 août 2025 2°"
+ },
+ "FRVTC-REG-027": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art.1: 'exemplaire transmis par l'Imprimerie nationale par voie électronique'"
+ },
+ "FRVTC-REG-028": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'stationnement ne doit pas dépasser 1 heure maximum'"
+ },
+ "FRVTC-REG-029": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "vtc-service-complete.txt: 'lieu, hors de la chaussée, où le stationnement est autorisé'"
+ },
+ "FRVTC-REG-030": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-REG-031": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "none found (general knowledge / reading / computed)"
+ },
+ "FRVTC-REG-032": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": "",
+  "source": "signage art.3: 'lorsque l'inscription en cours de l'exploitant arrive à échéance'"
+ }
+}

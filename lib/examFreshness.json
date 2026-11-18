@@ -545,6 +545,15 @@
       "action": "Built to the refreshed guide from the start; nothing to change.",
       "source": "https://help.salesforce.com/s/articleView?id=005298964&type=1&language=en_US",
       "done": "2026-11-18"
+    },
+    {
+      "exam": "frvtc",
+      "date": "2026-08-12",
+      "kind": "law",
+      "what": "Decree 2026-764 removes the domestic professional-experience exemption for new VTC access applications.",
+      "action": "Use the current access rule; distinguish pending files and European qualification recognition.",
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054658967",
+      "done": "2026-11-17"
     }
   ]
 }

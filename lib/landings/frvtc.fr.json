@@ -1,0 +1,122 @@
+{
+  "metaTitle": "Examen VTC 2026 : entraînement gratuit aux questions théoriques",
+  "metaDescription": "Prépare les sept matières de l'examen théorique VTC avec 200 questions originales en français, anglais A2 inclus. Quatre tests de 50 questions et des explications. Gratuit pour commencer.",
+  "keywords": "examen VTC, test VTC gratuit, QCM VTC, carte professionnelle VTC, CMA, réglementation T3P, gestion VTC, sécurité routière, anglais VTC, examen VTC 2026",
+  "breadcrumb": {
+    "home": "Accueil",
+    "allTests": "Tous les tests",
+    "current": "Examen VTC"
+  },
+  "h1": "Examen VTC 2026 : entraînement gratuit à la théorie",
+  "subtitle": "200 questions originales sur les matières communes et spécifiques au VTC, avec des explications en français et des situations en anglais A2. Cinq séries par thème et quatre tests de 50 questions pour vérifier tes acquis. Gratuit pour commencer, sans compte.",
+  "facts": {
+    "h2": "L'examen VTC en bref",
+    "answer": "L'admissibilité à l'examen VTC comporte sept épreuves théoriques organisées par les chambres de métiers et de l'artisanat : réglementation T3P, gestion, sécurité routière, français, anglais, développement commercial et réglementation nationale VTC. Elles totalisent 91 QCM et 16 questions à réponses courtes, pour 3 h 50 d'épreuves. Il faut une moyenne pondérée d'au moins 10/20, sans note inférieure à 6/20 dans chaque matière, sauf en anglais où le minimum est de 4/20.",
+    "tigertest": "Tigertest propose 200 questions originales et un démarrage gratuit. Ici, chaque question propose quatre choix et une seule bonne réponse. Ces exercices ne reproduisent pas les réponses courtes rédigées, la correction de l'expression écrite, les coefficients et les minima par matière. Ils ne remplacent pas la préparation à l'oral ni à la conduite. Le seuil affiché de 70 %, soit 35 bonnes réponses sur 50, est notre objectif de travail : il n'a pas d'équivalence avec l'admissibilité officielle.",
+    "rows": [
+      {
+        "label": "Matières théoriques",
+        "value": "7, avec des coefficients de 1 à 3"
+      },
+      {
+        "label": "Questions officielles",
+        "value": "91 QCM et 16 réponses courtes"
+      },
+      {
+        "label": "Durée cumulée",
+        "value": "230 minutes, soit 3 h 50"
+      },
+      {
+        "label": "Admissibilité",
+        "value": "Moyenne pondérée ≥ 10/20 et minima par matière"
+      },
+      {
+        "label": "Anglais",
+        "value": "Niveau A2 ; minimum de 4/20"
+      },
+      {
+        "label": "Épreuve pratique séparée",
+        "value": "Au moins 20 minutes de conduite ; note minimale de 12/20"
+      }
+    ],
+    "footnote": "Programme et format de l'arrêté du 6 avril 2017, avec ses modifications, consultés le 17 novembre 2026. Les textes applicables à chaque thème sont détaillés dans nos sources. Tigertest est indépendant des CMA. Consulte les règles officielles sur",
+    "source": {
+      "name": "Légifrance : arrêté du 6 avril 2017, version en vigueur",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379046"
+    }
+  },
+  "howItWorks": {
+    "h2": "Comment ça marche",
+    "cards": [
+      {
+        "h3": "Travaille les thèmes avec les explications",
+        "p": "Commence par Réglementation T3P et gestion, puis passe à la sécurité routière, au français et à l'anglais, au développement commercial et à la réglementation VTC. Les questions ratées reviennent pour t'aider à corriger tes erreurs."
+      },
+      {
+        "h3": "Vérifie tes acquis sur 50 questions",
+        "p": "Les quatre tests mélangent les sept matières. Vise d'abord 35 bonnes réponses, puis travaille les points qui restent fragiles. Ce repère de 70 % sert à suivre tes progrès : il ne simule ni la moyenne pondérée ni les notes éliminatoires de l'examen."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Les sept matières travaillées",
+    "p": "Notre répartition suit les matières de l'annexe I, y compris les discriminations et les violences sexistes et sexuelles ajoutées en 2024. Les nombres ci-dessous sont notre répartition pédagogique sur 50 questions, pas les coefficients officiels. Les exercices de langue reposent sur des textes et des échanges originaux.",
+    "items": [
+      "Réglementation du T3P : 9 questions sur 50",
+      "Gestion : 6 sur 50",
+      "Sécurité routière : 9 sur 50",
+      "Compréhension du français : 6 sur 50",
+      "Anglais A2 : 3 sur 50",
+      "Développement commercial et gestion propre au VTC : 9 sur 50",
+      "Réglementation nationale VTC : 8 sur 50"
+    ]
+  },
+  "howToPass": {
+    "h2": "Organise ta préparation",
+    "steps": [
+      {
+        "h3": "1. Travaille chaque matière",
+        "p": "Une bonne moyenne ne compense pas une note sous le minimum exigé dans une épreuve. Repère les thèmes où tes erreurs persistent, même si ton score global progresse."
+      },
+      {
+        "h3": "2. Refais les calculs",
+        "p": "Pour les coûts, les marges et la trésorerie, écris ton raisonnement avant de regarder l'explication. Distingue ce qui est facturé, encaissé ou payé, et vérifie les unités."
+      },
+      {
+        "h3": "3. Entraîne-toi aussi à rédiger",
+        "p": "Complète les choix de réponses par des exercices de réponses courtes et de français écrit. Ces tâches font partie de l'examen officiel et ne sont pas évaluées ici."
+      },
+      {
+        "h3": "4. Prépare la mise en situation",
+        "p": "Lis les consignes de ta CMA et travaille la relation client, les échanges oraux et la conduite avec une préparation adaptée. Réussir les exercices de théorie ne valide pas l'épreuve pratique."
+      }
+    ]
+  },
+  "faqTitle": "Questions fréquentes sur l'examen VTC",
+  "faqs": [
+    {
+      "q": "Quelles matières faut-il préparer pour l'examen VTC ?",
+      "a": "Cinq matières sont communes : réglementation T3P, gestion, sécurité routière, français et anglais. Deux sont spécifiques au VTC : développement commercial et gestion propre à l'activité, puis réglementation nationale VTC. Nos exercices couvrent des objectifs de ces sept matières."
+    },
+    {
+      "q": "Quelle note faut-il obtenir pour être admissible ?",
+      "a": "La moyenne pondérée des sept épreuves doit atteindre 10/20. Chaque note doit atteindre 6/20, sauf l'anglais où 4/20 suffit. Les coefficients sont 3 en T3P, sécurité routière, développement commercial et réglementation VTC ; 2 en gestion et français ; 1 en anglais. Notre objectif de 35/50 ne convertit pas ces règles."
+    },
+    {
+      "q": "S'agit-il des questions officielles ?",
+      "a": "Non. Les 200 questions, les passages et les situations sont originaux, rédigés à partir des textes et des compétences du programme. Aucun sujet officiel, annale ou banque de questions n'a été repris. La révision linguistique est effectuée par un modèle ; nous ne revendiquons pas de relecture humaine native."
+    },
+    {
+      "q": "Cet entraînement reproduit-il tout l'examen ?",
+      "a": "Ici, chaque question propose quatre choix et une seule bonne réponse. Ces exercices ne reproduisent pas les réponses courtes rédigées, la correction de l'expression écrite, les coefficients et les minima par matière. Ils ne remplacent pas la préparation à l'oral ni à la conduite. L'épreuve pratique est distincte : elle comprend au moins 20 minutes de conduite et demande une note d'au moins 12/20."
+    },
+    {
+      "q": "Puis-je commencer gratuitement ?",
+      "a": "Oui, tu peux commencer gratuitement, sans compte. Les dernières étapes du tableau de bord font partie de Tigertest Premium, avec un paiement unique et sans abonnement. Un compte gratuit permet de retrouver tes progrès sur tes appareils."
+    }
+  ],
+  "finalCta": {
+    "h2": "Commence ta préparation VTC",
+    "p": "Travaille les règles et comprends tes erreurs, une série à la fois. Gratuit pour commencer, sans compte."
+  }
+}

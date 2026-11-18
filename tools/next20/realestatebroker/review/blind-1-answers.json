@@ -1,0 +1,1206 @@
+{
+ "REBR-PROP-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-004": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-006": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-007": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-009": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-011": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-019": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-020": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-021": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-022": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PROP-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-002": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-003": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-007": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-008": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-012": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-015": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-016": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-018": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-TITLE-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [
+   "puzzle"
+  ],
+  "note": "Answerable by plain logic (jointly signed amendment governs); no real estate knowledge needed."
+ },
+ "REBR-TITLE-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-001": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-008": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-009": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-014": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": "Cost to cure exceeds value added, so incurable functional obsolescence."
+ },
+ "REBR-VALUE-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-021": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-022": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-023": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-VALUE-024": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-003": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-010": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-011": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-014": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-016": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-019": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-023": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-024": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-025": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-026": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-028": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-030": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-031": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-032": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-033": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-034": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-035": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-AGENCY-036": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-001": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-003": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-004": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-005": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-007": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-009": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-011": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-013": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-014": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-015": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-017": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-020": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-021": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-022": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-023": {
+  "answer": "D",
+  "confidence": "medium",
+  "flags": [
+   "scope"
+  ],
+  "note": "Least-privilege access control is general IT security; only loosely under the outline's privacy item."
+ },
+ "REBR-PRACT-024": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-025": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-026": {
+  "answer": "C",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-027": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-028": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-029": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-030": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-031": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-PRACT-032": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-006": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-011": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-012": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-013": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-014": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-015": {
+  "answer": "B",
+  "confidence": "medium",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-016": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-020": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-021": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-022": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-023": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-ENV-024": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-001": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-003": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-004": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-005": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-007": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-008": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-010": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-012": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-013": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-014": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-015": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-017": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-018": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-019": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-FIN-020": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-001": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-002": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-003": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-004": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-005": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-006": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-007": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-008": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-009": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-010": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-011": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-012": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-013": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-014": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-015": {
+  "answer": "B",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-016": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-017": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-018": {
+  "answer": "D",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-019": {
+  "answer": "C",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ },
+ "REBR-MATH-020": {
+  "answer": "A",
+  "confidence": "high",
+  "flags": [],
+  "note": ""
+ }
+}

@@ -673,6 +673,11 @@
   "https://www.kent.gov.uk/education-and-children/schools/school-places/kent-test/prepare-for-the-kent-test",
   "https://cognito.org/blog/gl-assessment-11-plus-guide"
  ],
+ "epa609": [
+  "https://www.epa.gov/mvac/section-609-technician-training-and-certification-programs",
+  "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-B",
+  "https://macsmobileairclimate.org/wp-content/uploads/2025/01/MACS-609-CertTrainingManual-2025.pdf"
+ ],
  "eqao9": [
   "https://eqao.com/the-assessments/grade-9-math",
   "https://www.eqao.com/framework-grade9-assessment-of-mathematics/",
@@ -750,6 +755,12 @@
   "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694",
   "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803494",
   "https://www.securite-routiere.gouv.fr/passer-son-permis-de-conduire/preparation-de-lexamen-du-code-de-la-route"
+ ],
+ "frvtc": [
+  "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379046",
+  "https://www.artisanat.fr/nous-connaitre/vous-accompagner/examens-taxi-vtc-vmdtr",
+  "https://www.ecologie.gouv.fr/politiques-publiques/taxi-vtc-vmdtr-cpa-reglementation-transports-publics-particuliers-personnes",
+  "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054658967"
  ],
  "fsmaths": [
   "https://www.gov.uk/government/publications/functional-skills-subject-content-mathematics/subject-content-functional-skills-maths",
@@ -1501,6 +1512,11 @@
   "https://www.cdrnet.org/vault/2459/web//2027-2031%20RD%20Test%20Specifications%20and%20Expanded%20Study%20Outline.pdf",
   "https://admin.cdrnet.org/vault/2459/web/4.5%20RD%20Test%20Specifications%202022-2026.pdf",
   "https://www.cdrnet.org/vault/2459/web//Exam%20FAQ%202025.pdf"
+ ],
+ "realestatebroker": [
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf",
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094400.pdf",
+  "https://www.pearsonvue.com/us/en/tx/realestate.html"
  ],
  "reet": [
   "https://rajeduboard.rajasthan.gov.in",

@@ -23495,7 +23495,7 @@ const smartserve: ExamConfig = {
 const nailtech: ExamConfig = {
   id: "nailtech",
   stateCode: "NAILTECH",
-  idBase: 34400,
+  idBase: 34500,
   slug: "/nail-technician",
   landingPath: "/nail-technician-practice-test",
   name: "Nail Technician Practice Test",
@@ -23525,10 +23525,10 @@ const nailtech: ExamConfig = {
     nailEnhance: 10,
   },
   trainingSets: [
-    { setNumber: 1, id: 34401, name: "Infection Control & Chemistry", categories: ["nailInfection", "nailChemistry"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 2, id: 34402, name: "Anatomy, Disorders & Consultation", categories: ["nailStructure", "nailDisorders", "nailConsult"], size: 48, weightLabel: "12 of 50 test questions" },
-    { setNumber: 3, id: 34403, name: "Tools, Manicures & Pedicures", categories: ["nailTools", "nailManiPedi"], size: 60, weightLabel: "15 of 50 test questions" },
-    { setNumber: 4, id: 34404, name: "Nail Enhancements", categories: ["nailEnhance"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 1, id: 34501, name: "Infection Control & Chemistry", categories: ["nailInfection", "nailChemistry"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 34502, name: "Anatomy, Disorders & Consultation", categories: ["nailStructure", "nailDisorders", "nailConsult"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 34503, name: "Tools, Manicures & Pedicures", categories: ["nailTools", "nailManiPedi"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 34504, name: "Nail Enhancements", categories: ["nailEnhance"], size: 40, weightLabel: "10 of 50 test questions" },
   ],
   categoryLabels: {
     nailInfection: "Infection Control & Safety",

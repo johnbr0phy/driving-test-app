@@ -21,7 +21,7 @@ Add `"nailtech"` to the `ExamId` union. Icon `sparkles` already exists (used by 
 const nailtech: ExamConfig = {
   id: "nailtech",
   stateCode: "NAILTECH",
-  idBase: 34400,
+  idBase: 34500,
   slug: "/nail-technician",
   landingPath: "/nail-technician-practice-test",
   name: "Nail Technician Practice Test",
@@ -51,10 +51,10 @@ const nailtech: ExamConfig = {
     nailEnhance: 10,
   },
   trainingSets: [
-    { setNumber: 1, id: 34401, name: "Infection Control & Chemistry", categories: ["nailInfection", "nailChemistry"], size: 52, weightLabel: "13 of 50 test questions" },
-    { setNumber: 2, id: 34402, name: "Anatomy, Disorders & Consultation", categories: ["nailStructure", "nailDisorders", "nailConsult"], size: 48, weightLabel: "12 of 50 test questions" },
-    { setNumber: 3, id: 34403, name: "Tools, Manicures & Pedicures", categories: ["nailTools", "nailManiPedi"], size: 60, weightLabel: "15 of 50 test questions" },
-    { setNumber: 4, id: 34404, name: "Nail Enhancements", categories: ["nailEnhance"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 1, id: 34501, name: "Infection Control & Chemistry", categories: ["nailInfection", "nailChemistry"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 34502, name: "Anatomy, Disorders & Consultation", categories: ["nailStructure", "nailDisorders", "nailConsult"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 34503, name: "Tools, Manicures & Pedicures", categories: ["nailTools", "nailManiPedi"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 34504, name: "Nail Enhancements", categories: ["nailEnhance"], size: 40, weightLabel: "10 of 50 test questions" },
   ],
   categoryLabels: {
     nailInfection: "Infection Control & Safety",
@@ -86,7 +86,7 @@ const nailtech: ExamConfig = {
 
 Append `nailtech` to the `EXAMS` array right after `barber` (or after `cosmetology`).
 
-Check: 34401-34404 (tests and sets) must be free; the run assigned idBase 34400.
+Check: 34501-34504 (tests and sets) must be free; the run assigned idBase 34500.
 
 ## lib/banks/all.ts
 
@@ -205,10 +205,10 @@ Run `npx tsx scripts/build-training-parts.ts`. No set exceeds 60 (largest 60, se
 
 ## Screenshots
 
-`node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing nailtech:nail-technician:34401`
+`node .claude/skills/exam-bank/scripts/shoot_landing.js http://localhost:3123 public/landing nailtech:nail-technician:34501`
 
 ## CLAUDE.md (under Additional Exams, after the Barber bullet)
 
 ```md
-- **Nail Technician** (`nailtech`, NIC National Nail Technology Theory Examination, the written state board exam for nail technicians and manicurists in NIC states, `/nail-technician/*`, landing `/nail-technician-practice-test`): `data/nail-technician-questions.json` (200 original questions on the NIC Nail Technology theory CIB effective September 1, 2025, revised March 1, 2026 (110 items, 100 scored, 90 minutes): infection control and safety (OSHA nail salon guidance: exhaust ventilation at least 50%, HVAC fan On, monthly charcoal filters, self-closing metal cans, nitrile gloves and latex or vinyl for acetone, N95 for dust only, goggles when transferring products, ergonomics) 32, nail, skin and limb anatomy 16, nail and skin disorders 16, chemistry of nail products (FDA: MMA, formaldehyde hardeners, toluene, DBP, EMA) 20, consultation and post-service 16, nail service tools 24, manicures and pedicures (shapes, massage, polish, paraffin, add-ons) 36, nail enhancements (tips, acrylic, soft, hard and hybrid gels, dip) 40), test IDs 34401-34404, sets 34401-34404 (Infection Control & Chemistry 52, Anatomy, Disorders & Consultation 48, Tools, Manicures & Pedicures 60, Nail Enhancements 40), state `NAILTECH`, prefix `NAIL-`, 75% pass (each board sets its cut; 75 in many states, e.g. South Carolina). 8/4/4/5/4/6/9/10 per test (the outline's 15/15/10/9/13/18/20 rounded). Training hours, fees, scope rules and the practical exam vary by state and are not asked. Checked against `cosmetology`, `barber` and `mblex` for repeated fact-and-answer pairs. Built by `tools/build-run-2026-11-18/nailtech/build.py`; sources in `tools/build-run-2026-11-18/nailtech/sources.md`. Region US, hub group "Workplace & job certifications" (after barber), `[data-theme="nailtech"]` nail-polish raspberry (331 85% 36%), borrows the cosmetology tiger, teacher-led (nail technology schools).
+- **Nail Technician** (`nailtech`, NIC National Nail Technology Theory Examination, the written state board exam for nail technicians and manicurists in NIC states, `/nail-technician/*`, landing `/nail-technician-practice-test`): `data/nail-technician-questions.json` (200 original questions on the NIC Nail Technology theory CIB effective September 1, 2025, revised March 1, 2026 (110 items, 100 scored, 90 minutes): infection control and safety (OSHA nail salon guidance: exhaust ventilation at least 50%, HVAC fan On, monthly charcoal filters, self-closing metal cans, nitrile gloves and latex or vinyl for acetone, N95 for dust only, goggles when transferring products, ergonomics) 32, nail, skin and limb anatomy 16, nail and skin disorders 16, chemistry of nail products (FDA: MMA, formaldehyde hardeners, toluene, DBP, EMA) 20, consultation and post-service 16, nail service tools 24, manicures and pedicures (shapes, massage, polish, paraffin, add-ons) 36, nail enhancements (tips, acrylic, soft, hard and hybrid gels, dip) 40), test IDs 34501-34504, sets 34501-34504 (Infection Control & Chemistry 52, Anatomy, Disorders & Consultation 48, Tools, Manicures & Pedicures 60, Nail Enhancements 40), state `NAILTECH`, prefix `NAIL-`, 75% pass (each board sets its cut; 75 in many states, e.g. South Carolina). 8/4/4/5/4/6/9/10 per test (the outline's 15/15/10/9/13/18/20 rounded). Training hours, fees, scope rules and the practical exam vary by state and are not asked. Checked against `cosmetology`, `barber` and `mblex` for repeated fact-and-answer pairs. Built by `tools/build-run-2026-11-18/nailtech/build.py`; sources in `tools/build-run-2026-11-18/nailtech/sources.md`. Region US, hub group "Workplace & job certifications" (after barber), `[data-theme="nailtech"]` nail-polish raspberry (331 85% 36%), borrows the cosmetology tiger, teacher-led (nail technology schools).
 ```

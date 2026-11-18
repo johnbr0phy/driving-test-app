@@ -79,9 +79,9 @@ Q = [
  "609.6 m (2,000 ft)", ["122 m (400 ft)", "305 m (1,000 ft)", "914 m (3,000 ft)"],
  "The TC AIM quotes the Marine Activities in the Saguenay-St. Lawrence Marine Park Regulations: no flying below 609.6 m (2,000 ft) over the water, or taking off or landing in the park, without a special activity permit."),
 ("What may be needed to take off in a migratory bird sanctuary?",
- "A permit", ["A NOTAM", "An advanced certificate", "A transponder"],
- "The TC AIM says the Migratory Birds Regulations may apply, and landing or taking off in a bird sanctuary may require a permit."),
+ "An ECCC permit", ["A NOTAM", "A landowner letter", "A provincial licence"],
+ "The TC AIM says the Migratory Birds Regulations may apply, landing or taking off in a bird sanctuary may require a permit, and contacts are on the Environment and Climate Change Canada (ECCC) website."),
 ("What do you need to fly a drone in Class A airspace?",
- "TC and NAV CANADA authorization", ["An advanced certificate only", "A basic certificate and a radio", "Only ATC permission"],
+ "TC and NAV CANADA authorization", ["ATC and airport authorization", "TC and DND authorization", "An advanced certificate and ATC"],
  "The TC AIM says Class A, which starts around FL 180 in southern airspace, needs specific authorization from both Transport Canada and NAV CANADA, through an SFOC."),
 ]

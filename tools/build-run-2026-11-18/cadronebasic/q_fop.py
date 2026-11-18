@@ -1,7 +1,7 @@
 CAT = "cdrFlightOps"; SEG = "FLT"
 Q = [
 ("Which emergency must your procedures cover under CAR 901.23?",
- "A flyaway", ["A bird strike", "A battery fire", "A crew injury"],
+ "A loss of the C2 link", ["A sudden rain shower", "A crew member's injury", "A lost phone signal"],
  "CAR 901.23(1)(b) lists control station failure, equipment failure, RPA failure, lost link, flyaway, flight termination and detecting and avoiding traffic."),
 ("What is a flyaway?",
  "Lost link, unpredictable path", ["Lost link, return-to-home works", "Any lost link, however brief", "Wind pushing it off course"],

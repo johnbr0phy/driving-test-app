@@ -67,7 +67,7 @@ Q = [
  "No idle chatter", ["Disinfected controls", "A fenced launch area", "Radios switched off"],
  "The TC AIM says the visual observer helps keep the operating environment sterile, free of irrelevant conversation, to limit distractions."),
 ("What does the TC AIM say about fatigue?",
- "It can go unnoticed", ["It only follows lost sleep", "It mostly affects vision", "It clears with a short rest"],
+ "It can go unnoticed", ["It mainly follows lost sleep", "It mostly affects vision", "It clears with a short rest"],
  "The TC AIM says fatigue's effects can be present without the person realizing it. Work stress, family issues, emotional state and health add to it, not just lost sleep."),
 ("After a dive with no decompression stops, how long should you avoid sites up to 8,000 ft ASL?",
  "12 hours", ["24 hours", "6 hours", "48 hours"],

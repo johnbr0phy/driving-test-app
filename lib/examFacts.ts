@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cahambasic: {
+    answer:
+      "In Canada, Innovation, Science and Economic Development Canada (ISED) issues the Amateur Radio Operator Certificate with Basic Qualification and a call sign, which together let you operate an amateur station without a separate station licence. The Basic exam has 100 multiple-choice questions, one drawn from each of the 100 topics in ISED's Basic syllabus (RIC-3), and the pass mark is 70%. A score of 80% or more earns Basic with Honours, which adds the amateur bands below 30 MHz; Basic alone covers every band above 30 MHz. ISED-accredited examiners give the exam in person or by videoconference. It is closed book except for ISED's approved formula and block diagram sheet, a calculator that cannot store formulas or text is allowed, and there is no set time limit. Since July 15, 2025 every Basic exam uses ISED's updated question bank.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one from each of 100 syllabus topics" },
+      { label: "Pass mark", value: "70%; 80% or more gives Basic with Honours" },
+      { label: "Time", value: "No set limit; most finish within an hour" },
+      { label: "Aids", value: "ISED formula and block diagram sheet; calculator without memory" },
+      { label: "Run by", value: "ISED-accredited examiners, in person or by videoconference" },
+      { label: "Basic privileges", value: "All amateur bands above 30 MHz, up to 250 W DC input" },
+      { label: "Honours adds", value: "All amateur bands below 30 MHz (HF)" },
+    ],
+    basedOn: "ISED RIC-3 Issue 5 (March 2022), RIC-1 Issue 8 (May 2025), RBR-4 Issue 3 (July 2022) and the amateur radio exam generator page (updated July 15, 2025), checked November 2026",
+    source: { name: "ISED: RIC-3, Information on the Amateur Radio Service", url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

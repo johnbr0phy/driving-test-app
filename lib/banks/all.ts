@@ -308,3 +308,4 @@ import "./cabcguard";
 import "./nailtech";
 import "./ea2";
 import "./ea3";
+import "./cahambasic";

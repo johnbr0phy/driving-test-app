@@ -2948,6 +2948,16 @@ export const vi: TranslationKeys = {
     ea3Collection: "Collection & Abatement",
     ea3Exam: "Examinations & Appeals",
     ea3Filing: "Filing Process & E-file",
+    cahamRegs: "Regulations & Licensing",
+    cahamBands: "Bands, Power & Technical Rules",
+    cahamOperating: "Operating & Procedures",
+    cahamStation: "Station Layout, Transmitters & Receivers",
+    cahamPowerSafety: "Power Supplies & Safety",
+    cahamComponents: "Circuit Components",
+    cahamElectronics: "Basic Electronics & Theory",
+    cahamAntennas: "Feed Lines & Antennas",
+    cahamPropagation: "Radio Wave Propagation",
+    cahamInterference: "Interference & Suppression",
   } as Record<string, string>,
 
   // Training set names

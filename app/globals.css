@@ -1200,6 +1200,19 @@
     --brand-border-light: 60 40% 88%;
     --brand-gradient-to: 45 80% 95%;
   }
+  /* Canada amateur radio Basic Qualification (ISED) theme */
+  [data-theme="cahambasic"] {
+    --brand: 356 30% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 30% 96%;
+    --brand-hover: 356 30% 40%;
+    --brand-dark: 356 30% 38%;
+    --brand-darker: 356 28% 28%;
+    --brand-muted: 356 18% 72%;
+    --brand-border: 356 18% 82%;
+    --brand-border-light: 356 15% 90%;
+    --brand-gradient-to: 0 30% 96%;
+  }
 
   /* REx-PN theme: deep purple (v2 exam; matches lib/v2/exams/rexpn.ts theme) */
   [data-theme="rexpn"] {
@@ -7199,6 +7212,18 @@
     --brand-muted: 60 40% 45%;
     --brand-dark: 60 70% 65%;
     --brand-darker: 60 60% 78%;
+  }
+
+  .dark [data-theme="cahambasic"] {
+    --brand: 356 30% 50%;
+    --brand-hover: 356 30% 42%;
+    --brand-light: 356 30% 13%;
+    --brand-gradient-to: 0 30% 11%;
+    --brand-border-light: 356 15% 24%;
+    --brand-border: 356 18% 34%;
+    --brand-muted: 356 18% 45%;
+    --brand-dark: 356 30% 65%;
+    --brand-darker: 356 28% 78%;
   }
 
   .dark [data-theme="naplan"] {

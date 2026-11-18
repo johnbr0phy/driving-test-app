@@ -91,6 +91,7 @@ const BORROWED_SETS: Record<string, string> = {
   ascpmlt: "htl",
   aufirearmsnsw: "capal",
   nzham: "ham",
+  cahambasic: "ham",
   cadc: "nce",
   nzdrone: "part107",
   crfsc: "capal",

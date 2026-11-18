@@ -1,0 +1,14 @@
+{
+ "data/real-estate-ca-questions.json": {
+  "shared_pct": 0.013,
+  "echo_gain": 5.2
+ },
+ "v2:pentestplus": {
+  "shared_pct": 0.035,
+  "echo_gain": 7.8
+ },
+ "v2:prince2": {
+  "shared_pct": 0.06,
+  "echo_gain": 5.2
+ }
+}

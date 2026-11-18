@@ -1,0 +1,34 @@
+# AP CSP independent review
+
+The first full independent pass agreed with all 200 keys but failed the options-only gate: 135/200 guesses correct, with every category above 40%. This failure prompted a structural rewrite of conceptual scenarios and distractors, replacement of two misclassified Impact items, and clearer numerical boundary conditions.
+
+A fresh independent reviewer then read only the newly randomized options file and locked 200 guesses. It separately answered every full question before opening private keys. Final content agreement was 200/200, including exact matching on all 16 choose-two items. No wrong key, factual error or unresolved ambiguity was found.
+
+| Domain | Options-only | Full-content |
+|---|---:|---:|
+| Creative Development | 7/24 (29.17%) | 24/24 |
+| Data | 11/40 (27.50%) | 40/40 |
+| Algorithms and Programming | 20/64 (31.25%) | 64/64 |
+| Computer Systems and Networks | 8/26 (30.77%) | 26/26 |
+| Impact of Computing | 13/46 (28.26%) | 46/46 |
+| Total | 59/200 (29.5%) | 200/200 |
+
+All categories passed the specified 40% cue threshold. This does not prove the absence of every possible cue or establish AP score prediction. The reviewer noted that repeated answer-label families offer contrast practice but can feel repetitive; future expansion can add richer scenarios. No required correction remains in this reviewed snapshot.
+
+The complete second-round ledger and calculations are retained in `review-v2-audit.md`. Application validation and scope limitations are recorded in `validation.md` and `sources.md`.
+
+## Rewrite, 2026-11-17
+
+The bank was first built as option "families" (four questions sharing one option set, each option keyed once), and keys often repeated the stem's words. Both were rewritten: every question now has its own wrong options and no stem echo (`tools/check_option_reuse.py`: 0% shared option sets, echo gain under 0). Keys, ids and test slots are unchanged. The options-only figures above describe the old build.
+
+## Second review, 2026-11-17
+
+All 200 questions answered blind from stem and options (including hand-traced code, binary, storage, MOD and loop items). 200/200 matched the key, including all 16 choose-two items. No fixes needed; no bank changes. Checks: option reuse OK (0% shared sets, echo gain -3.0), answer patterns none, check_banks PASS, validate_v2_bank 1/2 tests x 70 mcq.
+
+## Third review (blind, Opus), 2026-11-17
+
+Blind agreement: 200/200. One item was listed for a medium-confidence note.
+
+- APCSP-IMPACT-005: key right, but the key "They have no way to contribute data" was more absolute than the passage. Reworded to "Their bus sightings cannot enter the app" (the passage says submitting reports requires a smartphone and data plan) and the explanation now quotes that rule. Distractors unchanged; key and id unchanged.
+
+Checks after rebuild: option reuse OK (0% shared sets, echo gain -3.1), answer patterns none, check_banks PASS, validate_v2_bank tests 1 and 2 x 70 mcq OK.

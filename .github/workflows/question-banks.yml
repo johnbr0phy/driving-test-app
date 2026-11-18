@@ -50,6 +50,13 @@ jobs:
         # holds what older banks have today and may only shrink.
         run: python3 -I tools/check_answer_patterns.py --all --baseline tools/answer_patterns_baseline.json
 
+      - name: Each question has its own options, and the key does not echo the stem (blocking)
+        # The Nov 2026 "quartet" build (#876, #877): four questions sharing one
+        # option set, each option keyed once, and keys that repeated the stem's
+        # words, so picking the echo scored 44 to 49% blind. The baseline lists
+        # older banks over a limit; they may only get better.
+        run: python3 -I tools/check_option_reuse.py --all --baseline tools/option_reuse_baseline.json
+
       - name: Freshness registry is well formed (blocking)
         run: python3 -I tools/check_freshness.py
 

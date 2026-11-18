@@ -146,6 +146,35 @@ reports the result as marks a test-wise student gains per 50-question test, meas
 student meets (a DMV state's 200, not all 2,200); RBT's scenarios gained about 5 before the fix; run it on the bank as a whole
 (`python3 -I tools/check_answer_patterns.py data/<file>.json`) while writing, not only at the end.
 
+**Every question gets its own options. Never build in "families".** In Nov 2026 a ten-bank
+batch (#876, #877) was written with a `family(options, rows)` helper: four questions shared the
+same four options and each option was keyed exactly once. It looks clean on paper (keys exactly
+25% per letter, a 25% options-only review) and it is a bad bank: a training set shows the same
+four options four times, so after three the last falls to elimination, and the wrong options are
+borrowed from neighbouring questions instead of written for the one on screen ("The additional
+licence lapses on moving" offered on a question about appeals). So:
+- Write the key and three wrong options for each question on its own. No exact option set may
+  appear in two questions. The only exceptions are a standard answer format of the real exam used
+  across many questions (UPSC "1 only / 2 only / Both / Neither", data sufficiency, True / False /
+  Not Given), number answers, and questions on one shared passage or puzzle.
+- Terminology questions are where the temptation is strongest: for each one, pick the three terms
+  most confusable with that example (for a synecdoche: metonymy, personification, hyperbole), not
+  the same four every time.
+- Even letters come from rotating the key's slot as you write (above), never from a helper that
+  hands out the same options.
+
+**The key must not echo the stem.** The other half of that batch's failure: the key was often the
+only option repeating a word of the question ("Which measure protects the sling?" with "Protect
+synthetic sling edges"). Always picking "the option that alone shares the most words with the
+question" scored 44 to 49% on five of those banks with no knowledge, against 25 to 29% on good
+banks. An options-only review hides the stem, so it can never see this. When a stem word shows up
+in the key, reword the key, reword the stem, or let wrong options use that word too.
+
+`tools/check_option_reuse.py` measures both (shared option sets as a share of questions, limit
+10%; echo gain in marks per 50 over guessing, limit 4.5, aim for 2 or less). It runs inside both
+validators and in CI. Run `python3 -I tools/check_option_reuse.py --list data/<file>.json` while
+writing: it lists the shared sets and the echo-keyed ids to fix.
+
 **Stems are self-contained.** One question, ending in a question mark or a colon-completion.
 Reading and paragraph items embed the passage in the stem (60 to 120 words). Math items have one
 numeric answer with the key step in the explanation; describe graphs and tables in words. Quote

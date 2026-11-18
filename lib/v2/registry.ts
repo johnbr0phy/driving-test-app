@@ -66,6 +66,9 @@ import { SEHP } from "./exams/sehp";
 import { NETPLUS } from "./exams/netplus";
 import { CYSA } from "./exams/cysa";
 import { FORTINSE } from "./exams/fortinse";
+import { SSCP } from "./exams/sscp";
+import { SERVICENOWCSA } from "./exams/servicenowcsa";
+import { SECURITYX } from "./exams/securityx";
 import { PENTESTPLUS } from "./exams/pentestplus";
 import { CEH } from "./exams/ceh";
 import { SC200 } from "./exams/sc200";
@@ -94,6 +97,10 @@ import { JAMBMATH } from "./exams/jambmath";
 import { WASSCEMATH } from "./exams/wasscemath";
 import { JAMBBIO } from "./exams/jambbio";
 import { JAMBCHEM } from "./exams/jambchem";
+import { OSSSC } from "./exams/osssc";
+import { VIDYAGYAN } from "./exams/vidyagyan";
+import { APCSP } from "./exams/apcsp";
+import { JAMBLIT } from "./exams/jamblit";
 import { JAMBPHYS } from "./exams/jambphys";
 import { WASSCEENG } from "./exams/wassceeng";
 import { APPSYCH } from "./exams/appsych";
@@ -133,17 +140,21 @@ import { APHUG } from "./exams/aphug";
 import { WONDERLIC } from "./exams/wonderlic";
 import { lockedStepCount } from "../examLocks";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, SC900, SC200, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH, ISC2CC];
+export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, APCSP, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, APLUS, AWS, AWSSAA, AZ900, SC900, SC200, GCDL, GCPPCA, CCNA, PMP, CAPM, PSM, ITIL, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, OSSSC, VIDYAGYAN, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, JAMBLIT, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH, ISC2CC, SECURITYX, SERVICENOWCSA, SSCP];
 
 /**
  * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
  * the last quarter of the drills and practice tests (lockedStepCount) needs
  * the one-time purchase, everything before it is free. Only career, licensing, government-job and
  * graduate-admission exams are listed. School, college-entrance and
+  "servicenowcsa",
+  "sscp",
+  "securityx",
  * children's tests (SAT, ACT, AP, GED, GCSE, KS2, 11+, NAPLAN, JAMB, JEE,
  * NEET and the rest) are never sold: leave a new one off this list.
  */
 export const PREMIUM_V2_IDS: string[] = [
+  "osssc",
   "praxis", "cbest", "gre", "gmat", "lsat", "mcat", "dat", "ieltsread", "toeflread", "teas", "hesi", "asvab", "afoqt",
   "nclex", "nclexpn", "rexpn", "uknmc", "naplex", "nzensf", "nziqn", "emt", "paramedic", "faapvt",
   "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",

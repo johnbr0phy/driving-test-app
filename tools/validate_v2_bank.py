@@ -101,6 +101,23 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import check_option_refs
 errors += [f'{qid}: {field} points at an option by position ("{hit}"); name what the option says, or set lockedOrder'
            for rel, qid, field, hit, _ in check_option_refs.scan_v2() if rel.startswith(f"v2/{exam}/")]
+# Option families and stem echo (tools/check_option_reuse.py): four questions
+# sharing one option set, or a key that alone repeats the stem's words.
+import check_option_reuse as cor
+from check_answer_patterns import load_items
+_paths = sorted(glob.glob(f"{root}/*.json"))
+_items = [it for p in _paths for it in load_items(p)]
+if len(_items) >= 20:
+    _r = cor.analyse(_items, cor.stimuli(_paths))
+    _base = json.load(open("tools/option_reuse_baseline.json")).get(f"v2:{exam}")
+    _worse = cor.over(_r) and (_base is None or _r["shared_pct"] > _base["shared_pct"] + 0.005
+                               or _r["echo_gain"] > _base["echo_gain"] + 0.05)
+    if _worse and _r["shared_pct"] >= cor.FAMILY_LIMIT:
+        errors.append(f'{_r["shared"]} questions share an exact option set with another question ({_r["shared_pct"]:.0%}); '
+                      "write each question its own wrong options")
+    if _worse and _r["echo_gain"] >= cor.ECHO_LIMIT:
+        errors.append(f'stem echo: the option that alone repeats the stem\'s words is the key {_r["echo_hit"]} of {_r["echo_fire"]} times, '
+                      f'{_r["echo_gain"]:.1f} marks per 50 over guessing (limit {cor.ECHO_LIMIT}); e.g. {", ".join(_r["echoed"][:6])}')
 print(f"{exam}: {len(questions)} questions, {len(stimuli)} stimuli, {len(errors)} problems")
 # keep the catalog's question count in step with the bank
 sizes_path = "lib/v2/bankSizes.ts"

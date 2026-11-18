@@ -44,6 +44,121 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  zafirearm: {
+  "answer": "South African firearm competency involves prescribed legal knowledge and practical training through an accredited provider, followed by the SAPS competency process and the appropriate firearm licence. This independent practice focuses on Firearms Control Act knowledge associated with SAQA Unit Standard 117705. It does not award credits, practical proficiency, a competency certificate or a firearm licence.",
+  "rows": [
+    {
+      "label": "Knowledge scope",
+      "value": "Unit Standard 117705: Firearms Control Act and relevant regulations"
+    },
+    {
+      "label": "This practice",
+      "value": "200 original questions; four 50-question tests"
+    },
+    {
+      "label": "Question weights",
+      "value": "Editorial topic balance, not an official blueprint"
+    },
+    {
+      "label": "Study target",
+      "value": "70%; not a provider pass requirement"
+    },
+    {
+      "label": "Separate requirements",
+      "value": "Accredited training, practical assessment, SAPS competency and licensing"
+    },
+    {
+      "label": "Language",
+      "value": "English legal knowledge practice"
+    }
+  ],
+  "basedOn": "SAQA 117705 and current PFTC quality-assurance listing; Firearms Control Act with enacted amendments and Firearms Control Regulations, checked November 17, 2026",
+  "source": {
+    "name": "SAQA Unit Standard 117705",
+    "url": "https://allqs.saqa.org.za/showUnitStandard.php?id=117705"
+  }
+},
+  appraiser: {
+  "answer": "The national AQB Licensed Residential Real Property Appraiser examination has 125 questions: 110 scored and 15 unscored, with four hours allowed. The April 2026 outline covers market analysis, property description, land valuation, sales comparison, cost, income, reconciliation, USPAP and statistics. These 200 original questions provide four shorter practice tests. They do not cover Certified Residential, Certified General or state licensing requirements.",
+  "rows": [
+    {
+      "label": "Official questions",
+      "value": "125: 110 scored and 15 unscored"
+    },
+    {
+      "label": "Official time",
+      "value": "4 hours"
+    },
+    {
+      "label": "Official passing score",
+      "value": "75 scaled; not 75% correct"
+    },
+    {
+      "label": "This practice",
+      "value": "Four 50-question tests; 70% study target only"
+    },
+    {
+      "label": "Standards",
+      "value": "USPAP 2024, current edition"
+    },
+    {
+      "label": "Scope",
+      "value": "National Licensed Residential; state rules and full guidance manual excluded"
+    }
+  ],
+  "basedOn": "AQB Licensed Residential outline effective April 1, 2026; current USPAP 2024; national scoring information in the PSI Colorado bulletin, checked November 17, 2026",
+  "source": {
+    "name": "The Appraisal Foundation national examination overview",
+    "url": "https://appraisalfoundation.org/pages/national-uniform-licensing-and-certification-examination"
+  }
+},
+  nccco: {
+  "answer": "The CCO Mobile Crane Operator Core examination covers site conditions, operations, technical knowledge and load charts. The current handbook lists 95 questions in 90 minutes without a calculator. Certification also requires the applicable specialty written examination and practical examination. These 200 original questions provide shorter Core knowledge practice, not a full certification simulation or operator qualification.",
+  "rows": [
+    {
+      "label": "Core questions",
+      "value": "95"
+    },
+    {
+      "label": "Core time",
+      "value": "90 minutes"
+    },
+    {
+      "label": "Calculator",
+      "value": "Not permitted"
+    },
+    {
+      "label": "Official domains",
+      "value": "Site 22%, Operations 28%, Technical 23%, Load Charts 27%"
+    },
+    {
+      "label": "This practice",
+      "value": "Four 50-question tests; 70% study target only"
+    },
+    {
+      "label": "Excluded",
+      "value": "Specialty exams, practical skills and actual manufacturer charts"
+    }
+  ],
+  "basedOn": "CCO Mobile Crane Operator Candidate Handbook, cover revision January 2025, linked by CCO on November 17, 2026; OSHA construction crane rules",
+  "source": {
+    "name": "CCO current handbooks and forms",
+    "url": "https://ccocert.org/en/handbooks-forms/"
+  }
+},
+  osssc: {
+    answer: "OSSSC CRE-2025 advertisement IIE-120/2025-3219 covers RI, ICDS Supervisor, VAW, Junior Assistant, ARI, Amin and SFS recruitment. Its Stage I written paper has 100 questions in 90 minutes: mathematics 20, general studies 20, English 20, Odia 15, computer knowledge 15 and logical reasoning 10, at minimum HSC standard. Stage II is a qualifying basic-computer practical; this is distinct from OSSC, Odisha Police and OSSSC CRE-2025(II).",
+    rows: [
+      { label: "Official written paper", value: "100 MCQs, 100 marks, 90 minutes" },
+      { label: "Official marking", value: "+1 correct, −0.25 wrong, 0 blank; not reproduced by this practice score" },
+      { label: "Computer practical", value: "Stage II: 50 marks, 60 minutes, 40% qualifying; excluded here" },
+      { label: "Practice scope", value: "Two 85-question English-language tests; Odia, current affairs and practical excluded" },
+      { label: "Practice score", value: "Percentage correct only; no negative marking or normalization, no selection prediction" },
+    ],
+    basedOn: "OSSSC CRE-2025 advertisement IIE-120/2025-3219 dated 30 December 2025, pages 10–11, checked November 2026. Selected written subjects only, not an exhaustive syllabus simulation.",
+    source: { name: "OSSSC CRE-2025 official advertisement", url: "https://www.osssc.gov.in/Docs/CRE-2025-3219.pdf" },
+    tigertest: "200 original questions, five subject drills and two 85-question tests with a chosen 90-minute subset timer. Free to start; the last quarter of steps requires Premium. The second test stays out of drills.",
+  },
   bcrealestate: {
       answer:
         "The British Columbia real estate trading services exam is the final exam of the UBC Sauder Real Estate Trading Services Licensing Course, the course BCFSA requires before a representative licence to provide trading services (selling, leasing and advising on real estate) under the Real Estate Services Act. UBC's Real Estate Division gives it as 100 multiple-choice questions, one mark each, in three hours, with a passing grade of 70%. After passing, candidates complete the Residential or Commercial Trading Services Applied Practice Course run by BCFSA before applying for a licence. The exam is not offered outside Canada.",
@@ -215,6 +330,51 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "EC-Council's CEH Exam Blueprint v5.0, the CEH certification page and the CEH Candidate Handbook, checked November 2026",
     source: { name: "EC-Council: Certified Ethical Hacker", url: "https://cert.eccouncil.org/certified-ethical-hacker.html" },
+  },
+  sscp: {
+    answer: "ISC2 SSCP assesses operational security across seven domains. The current exam uses computerized adaptive testing: 100-125 items in two hours, including multiple-choice and advanced item types. Tigertest provides 260 original MCQs, seven drills and two fixed 100-question tests. CAT, unscored items and advanced interactive formats are not simulated.",
+    rows: [
+      { label: "Current outline", value: "Effective 1 October 2025; seven domains" },
+      { label: "Official format", value: "CAT; 100-125 items, including 25 unscored items" },
+      { label: "Official time", value: "2 hours" },
+      { label: "Official passing standard", value: "700/1000; not a 70% raw-score cutoff" },
+      { label: "Practice coverage", value: "260 original MCQs; seven drills and two fixed 100-question tests" },
+      { label: "Not simulated", value: "CAT, no-backtracking rule, unscored items and advanced formats" },
+      { label: "Practice scoring", value: "Percentage correct; 80% editorial study goal" },
+      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+    ],
+    basedOn: "ISC2 SSCP outline effective October 2025 and current CAT FAQ, checked 17 November 2026. Each practice test follows domain weights of 16/15/15/14/9/16/15% exactly. Selected concepts, not exhaustive outline coverage",
+    source: { name: "ISC2 SSCP exam outline", url: "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline" },
+  },
+  servicenowcsa: {
+    answer: "ServiceNow CSA assesses platform administration across six domains. The January 2026 blueprint specifies 60 questions in 90 minutes, including single-answer and multiple-select items. Tigertest provides 200 original questions, six drills and two 60-question practice tests. This is selected conceptual and applied practice, not a hands-on platform assessment.",
+    rows: [
+      { label: "Current blueprint", value: "Updated January 2026; six domains" },
+      { label: "Official format", value: "60 single-answer and multiple-select questions" },
+      { label: "Official time", value: "90 minutes" },
+      { label: "Official cut score", value: "Not published; no fixed raw-percentage claim" },
+      { label: "Practice coverage", value: "200 original questions; six drills and two 60-question tests" },
+      { label: "Multiple-select scoring", value: "All correct choices required; no partial credit" },
+      { label: "Practice goal", value: "80% editorial study target, not a passing-score prediction" },
+      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+    ],
+    basedOn: "ServiceNow CSA blueprint updated January 2026, checked 17 November 2026. Domain weights 7/10/20/20/30/13% become 4/6/12/12/18/8 questions per test after rounding. Selected coverage; no official exam-release codename claimed",
+    source: { name: "ServiceNow CSA exam blueprint", url: "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554" },
+  },
+  securityx: {
+    answer: "CompTIA SecurityX (CAS-005, formerly CASP+) assesses advanced enterprise security across governance, architecture, engineering and operations. The exam has a maximum of 90 multiple-choice and performance-based questions in 165 minutes. Tigertest provides 240 original conceptual MCQs, four drills and two 90-question tests. Interactive performance tasks are not included.",
+    rows: [
+      { label: "Current outline", value: "CAS-005 V5; objectives document version 7.0" },
+      { label: "Official format", value: "Maximum 90 questions; multiple-choice and performance-based" },
+      { label: "Official time", value: "165 minutes" },
+      { label: "Official result", value: "Pass/fail only; no scaled score" },
+      { label: "Practice coverage", value: "240 original MCQs; four drills and two 90-question tests" },
+      { label: "Not included", value: "Interactive performance tasks and exhaustive technology coverage" },
+      { label: "Practice scoring", value: "Percentage correct; 80% study goal is not an official threshold" },
+      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+    ],
+    basedOn: "CompTIA CAS-005 V5 objectives document version 7.0, checked 17 November 2026. Official domain weights 20/27/31/22% are rounded to 18/24/28/20 questions per practice test",
+    source: { name: "CompTIA SecurityX CAS-005 objectives", url: "https://lecbyo.files.cmp.optimizely.com/download/35cf5f02b73211efa0ca8e42e80f1a8f" },
   },
   pentestplus: {
     answer:
@@ -5581,6 +5741,45 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the JAMB UTME Chemistry syllabus (copy for the 2026/2027 cycle), the JAMB website and UTME guides, checked November 2026",
     source: { name: "JAMB", url: "https://www.jamb.gov.ng" },
+  },
+  vidyagyan: {
+    answer: "VidyaGyan is a Shiv Nadar Foundation residential-school initiative with Class 6 admissions. The UP entrance process includes preliminary and main examinations. The latest accessible owner subject notice, for the 2026–27 main exam, describes Class 4–5 language, mathematics, science, general knowledge and aptitude skills. Tigertest offers English-language supporting skills practice, not a simulation of either current entrance stage. Prepare Hindi separately and follow current official instructions.",
+    rows: [
+      { label: "Practice scope", value: "English-language Class 4–5 skills for Class 6 preparation" },
+      { label: "Practice bank", value: "160 originals; four drills and two 40-question skills tests" },
+      { label: "Practice timer", value: "60 minutes; a Tigertest choice, not official stage timing" },
+      { label: "Practice score", value: "Percentage correct, not a selection cutoff" },
+      { label: "Not covered", value: "Hindi, picture-only reasoning, OMR mechanics and interviews" },
+      { label: "Price", value: "All drills and both skills tests are free" },
+    ],
+    basedOn: "VidyaGyan's 2026–27 main-exam subject notice and current admissions portal, checked 17 November 2026. No detailed current-year blueprint was located; practice weights and timer are chosen by Tigertest",
+    source: { name: "VidyaGyan admissions", url: "https://vidyagyan.in/admissions" },
+  },
+  apcsp: {
+    answer: "AP Computer Science Principles introduces computing, data, algorithms, networks and computing impacts. Its current multiple-choice section has 70 questions in 120 minutes and contributes 70% of the AP score. Create and its written responses contribute 30%. Tigertest provides 200 original MCQ questions, five drills and two full-length MCQ tests; it does not assess Create or AP Computer Science A.",
+    rows: [
+      { label: "Multiple choice", value: "70 questions in 120 minutes; 70% of AP score" },
+      { label: "Question types", value: "57 standalone single-answer, 5 passage single-answer, 8 choose-two" },
+      { label: "Create and written response", value: "30% of AP score; not covered here" },
+      { label: "Practice score", value: "Percentage correct; no AP 1–5 conversion" },
+      { label: "Practice bank", value: "200 originals, five drills, two 70-question tests" },
+      { label: "Price", value: "All drills and both tests are free" },
+    ],
+    basedOn: "College Board CSP CED effective Fall 2023 and current exam page, checked 17 November 2026. A redesign is announced for the 2027–28 school year; this bank follows the current framework",
+    source: { name: "College Board AP CSP exam", url: "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam" },
+  },
+  jamblit: {
+    answer: "JAMB Literature in English is a UTME subject for applicants whose chosen courses require it. The current IBASS syllabus covers drama, prose, poetry, general literary terms and appreciation of unseen extracts, as well as prescribed plays, novels and poems. Tigertest offers 120 original literary-skills questions, four drills and two 40-question practice tests. It does not cover prescribed-book knowledge or reproduce JAMB past questions. Read the current prescribed texts separately.",
+    rows: [
+      { label: "Exam owner", value: "Joint Admissions and Matriculation Board (JAMB), Nigeria" },
+      { label: "Practice format", value: "Two 40-question tests, four literary-skills drills" },
+      { label: "Practice timer", value: "30 minutes per test, chosen by Tigertest" },
+      { label: "Practice score", value: "Percentage correct; a study target, not an admission pass mark" },
+      { label: "Not covered", value: "Knowledge of the prescribed books and poems" },
+      { label: "Price", value: "All drills and both practice tests are free" },
+    ],
+    basedOn: "JAMB's current IBASS Literature in English syllabus, fetched 17 November 2026; no effective year or topic weights printed. Practice weights and timer are Tigertest choices",
+    source: { name: "JAMB IBASS Literature syllabus", url: "https://ibass.jamb.gov.ng/static/media/Literature.f24a00818658eb8ecbd0.pdf" },
   },
   jambphys: {
     answer:

@@ -452,6 +452,31 @@
       "what": "The Security Services and Investigators Regulation (AR 52/2010) and Ministerial Regulation (AR 55/2010) expire on March 31, 2028 unless repassed, possibly amended.",
       "action": "Read the new or repassed regulations and update the licensing, uniform, baton and reporting items.",
       "source": "https://kings-printer.alberta.ca/documents/Regs/2010_055.pdf"
+    },
+    {
+      "exam": "appraiser",
+      "date": "2026-04-01",
+      "kind": "outline",
+      "what": "Revised AQB national examination content outline takes effect, including Licensed Residential weights.",
+      "action": "New bank follows the Licensed Residential column with whole-question rounding for 50-item practice.",
+      "source": "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/229905.pdf",
+      "done": "2026-11-17"
+    },
+    {
+      "exam": "zafirearm",
+      "date": "2028-06-30",
+      "kind": "sunset",
+      "what": "SAQA117705 currently lists this as the last date for enrolment; last achievement2031-06-30.",
+      "action": "Check SAQA and PFTC for extensions or replacement before continuing to label the practice as current enrolment preparation.",
+      "source": "https://allqs.saqa.org.za/showUnitStandard.php?id=117705"
+    },
+    {
+      "exam": "apcsp",
+      "date": "2027-04-01",
+      "kind": "review",
+      "what": "Editorial reminder to check the announced 2027–28 CSP redesign; this is not an official effective date.",
+      "action": "Read the new CED when published and schedule a bank/format review before the redesigned course begins.",
+      "source": "https://apcentral.collegeboard.org/courses/ap-computer-science-principles"
     }
   ]
 }

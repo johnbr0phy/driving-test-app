@@ -91,5 +91,18 @@
     "securityx": [{"date": "2026-11-17", "kind": "blind review at build", "pr": 877, "findings": 1, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/securityx/review.md"}, {"date": "2026-11-17", "kind": "second blind review after rewrite", "findings": 0}, {"date": "2026-11-17", "kind": "third review: keyless blind answering (Opus) plus source check of every flag", "findings": 9}],
     "sscp": [{"date": "2026-11-17", "kind": "blind review at build", "pr": 877, "findings": 1, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/sscp/review.md"}, {"date": "2026-11-17", "kind": "second blind review after rewrite", "findings": 0}, {"date": "2026-11-17", "kind": "third review: keyless blind answering (Opus) plus source check of every flag", "findings": 7}, {"date": "2026-11-18", "kind": "stem trim, then keyless blind answering (Opus) of every changed question plus source check of every flag", "findings": 3}],
     "servicenowcsa": [{"date": "2026-11-17", "kind": "blind review at build", "pr": 877, "findings": 0, "notes": "All material findings resolved; full review and limitations in tools/buildnext20261117/servicenowcsa/review.md"}, {"date": "2026-11-17", "kind": "second blind review after rewrite", "findings": 1}, {"date": "2026-11-17", "kind": "third review: keyless blind answering (Opus) plus source check of every flag", "findings": 9}, {"date": "2026-11-18", "kind": "stem trim, then keyless blind answering (Opus) of every changed question plus source check of every flag", "findings": 7}]
+  },
+  "pendingReviews": {
+    "realestatebroker": [
+      {
+        "date": "2026-11-18",
+        "kind": "unfinished draft review",
+        "pr": 888,
+        "status": "pending",
+        "findings": 18,
+        "optionsOnly": "163/200 full bank; 42/46 revised subset",
+        "note": "All200 blind keys and explanations checked; 46 revisions independently checked; quality gate unresolved, not approved."
+      }
+    ]
   }
 }

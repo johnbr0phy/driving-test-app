@@ -133,6 +133,7 @@ export async function awardMillionth(uid: string, winner: MillionthWinner): Prom
   if (email) {
     await sendEmail({
       to: email,
+      from: 'John from Tigertest <john@tigertest.io>',
       subject: 'You answered our 1,000,000th question 🎉',
       html: winnerEmail(name, alreadyPremium),
       replyTo: OWNER,

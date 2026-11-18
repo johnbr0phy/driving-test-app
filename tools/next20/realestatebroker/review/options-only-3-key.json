@@ -1,0 +1,52 @@
+{
+"X001": {
+"key": "C",
+"questionId": "REBR-PRACT-016",
+"category": "rebPractice"
+},
+"X002": {
+"key": "C",
+"questionId": "REBR-ENV-008",
+"category": "rebEnvironment"
+},
+"X003": {
+"key": "D",
+"questionId": "REBR-VALUE-006",
+"category": "rebValue"
+},
+"X004": {
+"key": "D",
+"questionId": "REBR-PROP-001",
+"category": "rebProperty"
+},
+"X005": {
+"key": "B",
+"questionId": "REBR-ENV-020",
+"category": "rebEnvironment"
+},
+"X006": {
+"key": "C",
+"questionId": "REBR-VALUE-003",
+"category": "rebValue"
+},
+"X007": {
+"key": "C",
+"questionId": "REBR-ENV-004",
+"category": "rebEnvironment"
+},
+"X008": {
+"key": "C",
+"questionId": "REBR-PROP-014",
+"category": "rebProperty"
+},
+"X009": {
+"key": "D",
+"questionId": "REBR-AGENCY-007",
+"category": "rebAgency"
+},
+"X010": {
+"key": "D",
+"questionId": "REBR-TITLE-015",
+"category": "rebTitle"
+}
+}

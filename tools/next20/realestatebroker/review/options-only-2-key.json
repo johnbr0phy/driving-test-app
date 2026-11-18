@@ -1,0 +1,1002 @@
+{
+"X001": {
+"key": "D",
+"questionId": "REBR-PROP-019",
+"category": "rebProperty"
+},
+"X002": {
+"key": "B",
+"questionId": "REBR-MATH-007",
+"category": "rebMath"
+},
+"X003": {
+"key": "C",
+"questionId": "REBR-ENV-020",
+"category": "rebEnvironment"
+},
+"X004": {
+"key": "A",
+"questionId": "REBR-TITLE-010",
+"category": "rebTitle"
+},
+"X005": {
+"key": "B",
+"questionId": "REBR-AGENCY-029",
+"category": "rebAgency"
+},
+"X006": {
+"key": "D",
+"questionId": "REBR-ENV-015",
+"category": "rebEnvironment"
+},
+"X007": {
+"key": "A",
+"questionId": "REBR-PRACT-023",
+"category": "rebPractice"
+},
+"X008": {
+"key": "D",
+"questionId": "REBR-AGENCY-034",
+"category": "rebAgency"
+},
+"X009": {
+"key": "C",
+"questionId": "REBR-PRACT-011",
+"category": "rebPractice"
+},
+"X010": {
+"key": "B",
+"questionId": "REBR-MATH-008",
+"category": "rebMath"
+},
+"X011": {
+"key": "A",
+"questionId": "REBR-PRACT-016",
+"category": "rebPractice"
+},
+"X012": {
+"key": "B",
+"questionId": "REBR-PRACT-027",
+"category": "rebPractice"
+},
+"X013": {
+"key": "D",
+"questionId": "REBR-AGENCY-008",
+"category": "rebAgency"
+},
+"X014": {
+"key": "C",
+"questionId": "REBR-ENV-004",
+"category": "rebEnvironment"
+},
+"X015": {
+"key": "C",
+"questionId": "REBR-PROP-012",
+"category": "rebProperty"
+},
+"X016": {
+"key": "D",
+"questionId": "REBR-ENV-024",
+"category": "rebEnvironment"
+},
+"X017": {
+"key": "B",
+"questionId": "REBR-FIN-006",
+"category": "rebFinance"
+},
+"X018": {
+"key": "B",
+"questionId": "REBR-PRACT-010",
+"category": "rebPractice"
+},
+"X019": {
+"key": "C",
+"questionId": "REBR-ENV-009",
+"category": "rebEnvironment"
+},
+"X020": {
+"key": "D",
+"questionId": "REBR-ENV-014",
+"category": "rebEnvironment"
+},
+"X021": {
+"key": "B",
+"questionId": "REBR-PROP-014",
+"category": "rebProperty"
+},
+"X022": {
+"key": "C",
+"questionId": "REBR-PRACT-005",
+"category": "rebPractice"
+},
+"X023": {
+"key": "D",
+"questionId": "REBR-VALUE-007",
+"category": "rebValue"
+},
+"X024": {
+"key": "C",
+"questionId": "REBR-AGENCY-004",
+"category": "rebAgency"
+},
+"X025": {
+"key": "D",
+"questionId": "REBR-AGENCY-027",
+"category": "rebAgency"
+},
+"X026": {
+"key": "C",
+"questionId": "REBR-PROP-018",
+"category": "rebProperty"
+},
+"X027": {
+"key": "B",
+"questionId": "REBR-MATH-017",
+"category": "rebMath"
+},
+"X028": {
+"key": "C",
+"questionId": "REBR-AGENCY-010",
+"category": "rebAgency"
+},
+"X029": {
+"key": "C",
+"questionId": "REBR-PROP-010",
+"category": "rebProperty"
+},
+"X030": {
+"key": "D",
+"questionId": "REBR-MATH-002",
+"category": "rebMath"
+},
+"X031": {
+"key": "A",
+"questionId": "REBR-PRACT-031",
+"category": "rebPractice"
+},
+"X032": {
+"key": "B",
+"questionId": "REBR-AGENCY-025",
+"category": "rebAgency"
+},
+"X033": {
+"key": "B",
+"questionId": "REBR-AGENCY-018",
+"category": "rebAgency"
+},
+"X034": {
+"key": "D",
+"questionId": "REBR-AGENCY-031",
+"category": "rebAgency"
+},
+"X035": {
+"key": "A",
+"questionId": "REBR-PROP-017",
+"category": "rebProperty"
+},
+"X036": {
+"key": "B",
+"questionId": "REBR-AGENCY-006",
+"category": "rebAgency"
+},
+"X037": {
+"key": "A",
+"questionId": "REBR-PRACT-022",
+"category": "rebPractice"
+},
+"X038": {
+"key": "B",
+"questionId": "REBR-AGENCY-014",
+"category": "rebAgency"
+},
+"X039": {
+"key": "D",
+"questionId": "REBR-VALUE-024",
+"category": "rebValue"
+},
+"X040": {
+"key": "C",
+"questionId": "REBR-MATH-013",
+"category": "rebMath"
+},
+"X041": {
+"key": "A",
+"questionId": "REBR-PRACT-025",
+"category": "rebPractice"
+},
+"X042": {
+"key": "D",
+"questionId": "REBR-ENV-008",
+"category": "rebEnvironment"
+},
+"X043": {
+"key": "B",
+"questionId": "REBR-ENV-007",
+"category": "rebEnvironment"
+},
+"X044": {
+"key": "D",
+"questionId": "REBR-AGENCY-017",
+"category": "rebAgency"
+},
+"X045": {
+"key": "B",
+"questionId": "REBR-PROP-024",
+"category": "rebProperty"
+},
+"X046": {
+"key": "D",
+"questionId": "REBR-AGENCY-005",
+"category": "rebAgency"
+},
+"X047": {
+"key": "B",
+"questionId": "REBR-VALUE-015",
+"category": "rebValue"
+},
+"X048": {
+"key": "D",
+"questionId": "REBR-FIN-015",
+"category": "rebFinance"
+},
+"X049": {
+"key": "C",
+"questionId": "REBR-PRACT-024",
+"category": "rebPractice"
+},
+"X050": {
+"key": "B",
+"questionId": "REBR-ENV-010",
+"category": "rebEnvironment"
+},
+"X051": {
+"key": "C",
+"questionId": "REBR-VALUE-002",
+"category": "rebValue"
+},
+"X052": {
+"key": "C",
+"questionId": "REBR-VALUE-012",
+"category": "rebValue"
+},
+"X053": {
+"key": "B",
+"questionId": "REBR-PROP-008",
+"category": "rebProperty"
+},
+"X054": {
+"key": "B",
+"questionId": "REBR-TITLE-012",
+"category": "rebTitle"
+},
+"X055": {
+"key": "B",
+"questionId": "REBR-PROP-006",
+"category": "rebProperty"
+},
+"X056": {
+"key": "C",
+"questionId": "REBR-PROP-002",
+"category": "rebProperty"
+},
+"X057": {
+"key": "D",
+"questionId": "REBR-VALUE-013",
+"category": "rebValue"
+},
+"X058": {
+"key": "D",
+"questionId": "REBR-MATH-018",
+"category": "rebMath"
+},
+"X059": {
+"key": "C",
+"questionId": "REBR-VALUE-022",
+"category": "rebValue"
+},
+"X060": {
+"key": "D",
+"questionId": "REBR-MATH-019",
+"category": "rebMath"
+},
+"X061": {
+"key": "B",
+"questionId": "REBR-AGENCY-001",
+"category": "rebAgency"
+},
+"X062": {
+"key": "A",
+"questionId": "REBR-TITLE-020",
+"category": "rebTitle"
+},
+"X063": {
+"key": "D",
+"questionId": "REBR-PROP-009",
+"category": "rebProperty"
+},
+"X064": {
+"key": "C",
+"questionId": "REBR-PRACT-021",
+"category": "rebPractice"
+},
+"X065": {
+"key": "C",
+"questionId": "REBR-VALUE-008",
+"category": "rebValue"
+},
+"X066": {
+"key": "A",
+"questionId": "REBR-VALUE-005",
+"category": "rebValue"
+},
+"X067": {
+"key": "D",
+"questionId": "REBR-AGENCY-023",
+"category": "rebAgency"
+},
+"X068": {
+"key": "A",
+"questionId": "REBR-AGENCY-033",
+"category": "rebAgency"
+},
+"X069": {
+"key": "B",
+"questionId": "REBR-FIN-013",
+"category": "rebFinance"
+},
+"X070": {
+"key": "B",
+"questionId": "REBR-AGENCY-021",
+"category": "rebAgency"
+},
+"X071": {
+"key": "C",
+"questionId": "REBR-TITLE-017",
+"category": "rebTitle"
+},
+"X072": {
+"key": "D",
+"questionId": "REBR-VALUE-011",
+"category": "rebValue"
+},
+"X073": {
+"key": "A",
+"questionId": "REBR-PROP-011",
+"category": "rebProperty"
+},
+"X074": {
+"key": "C",
+"questionId": "REBR-PRACT-018",
+"category": "rebPractice"
+},
+"X075": {
+"key": "C",
+"questionId": "REBR-PRACT-004",
+"category": "rebPractice"
+},
+"X076": {
+"key": "B",
+"questionId": "REBR-AGENCY-024",
+"category": "rebAgency"
+},
+"X077": {
+"key": "D",
+"questionId": "REBR-FIN-008",
+"category": "rebFinance"
+},
+"X078": {
+"key": "C",
+"questionId": "REBR-AGENCY-003",
+"category": "rebAgency"
+},
+"X079": {
+"key": "B",
+"questionId": "REBR-VALUE-014",
+"category": "rebValue"
+},
+"X080": {
+"key": "C",
+"questionId": "REBR-PROP-013",
+"category": "rebProperty"
+},
+"X081": {
+"key": "B",
+"questionId": "REBR-ENV-006",
+"category": "rebEnvironment"
+},
+"X082": {
+"key": "D",
+"questionId": "REBR-MATH-020",
+"category": "rebMath"
+},
+"X083": {
+"key": "D",
+"questionId": "REBR-VALUE-001",
+"category": "rebValue"
+},
+"X084": {
+"key": "D",
+"questionId": "REBR-AGENCY-016",
+"category": "rebAgency"
+},
+"X085": {
+"key": "A",
+"questionId": "REBR-ENV-011",
+"category": "rebEnvironment"
+},
+"X086": {
+"key": "A",
+"questionId": "REBR-VALUE-018",
+"category": "rebValue"
+},
+"X087": {
+"key": "D",
+"questionId": "REBR-ENV-013",
+"category": "rebEnvironment"
+},
+"X088": {
+"key": "A",
+"questionId": "REBR-MATH-010",
+"category": "rebMath"
+},
+"X089": {
+"key": "A",
+"questionId": "REBR-VALUE-023",
+"category": "rebValue"
+},
+"X090": {
+"key": "A",
+"questionId": "REBR-PROP-020",
+"category": "rebProperty"
+},
+"X091": {
+"key": "B",
+"questionId": "REBR-FIN-012",
+"category": "rebFinance"
+},
+"X092": {
+"key": "D",
+"questionId": "REBR-PROP-016",
+"category": "rebProperty"
+},
+"X093": {
+"key": "B",
+"questionId": "REBR-VALUE-004",
+"category": "rebValue"
+},
+"X094": {
+"key": "B",
+"questionId": "REBR-TITLE-005",
+"category": "rebTitle"
+},
+"X095": {
+"key": "A",
+"questionId": "REBR-AGENCY-032",
+"category": "rebAgency"
+},
+"X096": {
+"key": "D",
+"questionId": "REBR-MATH-005",
+"category": "rebMath"
+},
+"X097": {
+"key": "D",
+"questionId": "REBR-AGENCY-009",
+"category": "rebAgency"
+},
+"X098": {
+"key": "C",
+"questionId": "REBR-TITLE-016",
+"category": "rebTitle"
+},
+"X099": {
+"key": "A",
+"questionId": "REBR-PROP-007",
+"category": "rebProperty"
+},
+"X100": {
+"key": "D",
+"questionId": "REBR-ENV-018",
+"category": "rebEnvironment"
+},
+"X101": {
+"key": "D",
+"questionId": "REBR-ENV-002",
+"category": "rebEnvironment"
+},
+"X102": {
+"key": "B",
+"questionId": "REBR-FIN-009",
+"category": "rebFinance"
+},
+"X103": {
+"key": "D",
+"questionId": "REBR-FIN-002",
+"category": "rebFinance"
+},
+"X104": {
+"key": "B",
+"questionId": "REBR-FIN-001",
+"category": "rebFinance"
+},
+"X105": {
+"key": "B",
+"questionId": "REBR-AGENCY-002",
+"category": "rebAgency"
+},
+"X106": {
+"key": "C",
+"questionId": "REBR-TITLE-001",
+"category": "rebTitle"
+},
+"X107": {
+"key": "B",
+"questionId": "REBR-FIN-004",
+"category": "rebFinance"
+},
+"X108": {
+"key": "A",
+"questionId": "REBR-MATH-011",
+"category": "rebMath"
+},
+"X109": {
+"key": "B",
+"questionId": "REBR-AGENCY-036",
+"category": "rebAgency"
+},
+"X110": {
+"key": "B",
+"questionId": "REBR-TITLE-006",
+"category": "rebTitle"
+},
+"X111": {
+"key": "A",
+"questionId": "REBR-FIN-010",
+"category": "rebFinance"
+},
+"X112": {
+"key": "B",
+"questionId": "REBR-MATH-001",
+"category": "rebMath"
+},
+"X113": {
+"key": "B",
+"questionId": "REBR-ENV-012",
+"category": "rebEnvironment"
+},
+"X114": {
+"key": "C",
+"questionId": "REBR-PRACT-012",
+"category": "rebPractice"
+},
+"X115": {
+"key": "C",
+"questionId": "REBR-VALUE-017",
+"category": "rebValue"
+},
+"X116": {
+"key": "D",
+"questionId": "REBR-MATH-009",
+"category": "rebMath"
+},
+"X117": {
+"key": "A",
+"questionId": "REBR-ENV-023",
+"category": "rebEnvironment"
+},
+"X118": {
+"key": "B",
+"questionId": "REBR-PRACT-030",
+"category": "rebPractice"
+},
+"X119": {
+"key": "C",
+"questionId": "REBR-FIN-016",
+"category": "rebFinance"
+},
+"X120": {
+"key": "C",
+"questionId": "REBR-AGENCY-019",
+"category": "rebAgency"
+},
+"X121": {
+"key": "A",
+"questionId": "REBR-PRACT-014",
+"category": "rebPractice"
+},
+"X122": {
+"key": "A",
+"questionId": "REBR-FIN-017",
+"category": "rebFinance"
+},
+"X123": {
+"key": "D",
+"questionId": "REBR-ENV-022",
+"category": "rebEnvironment"
+},
+"X124": {
+"key": "A",
+"questionId": "REBR-TITLE-007",
+"category": "rebTitle"
+},
+"X125": {
+"key": "B",
+"questionId": "REBR-ENV-001",
+"category": "rebEnvironment"
+},
+"X126": {
+"key": "A",
+"questionId": "REBR-VALUE-019",
+"category": "rebValue"
+},
+"X127": {
+"key": "C",
+"questionId": "REBR-TITLE-013",
+"category": "rebTitle"
+},
+"X128": {
+"key": "C",
+"questionId": "REBR-AGENCY-020",
+"category": "rebAgency"
+},
+"X129": {
+"key": "D",
+"questionId": "REBR-MATH-006",
+"category": "rebMath"
+},
+"X130": {
+"key": "B",
+"questionId": "REBR-AGENCY-026",
+"category": "rebAgency"
+},
+"X131": {
+"key": "C",
+"questionId": "REBR-MATH-004",
+"category": "rebMath"
+},
+"X132": {
+"key": "A",
+"questionId": "REBR-PRACT-013",
+"category": "rebPractice"
+},
+"X133": {
+"key": "A",
+"questionId": "REBR-PRACT-003",
+"category": "rebPractice"
+},
+"X134": {
+"key": "D",
+"questionId": "REBR-PRACT-008",
+"category": "rebPractice"
+},
+"X135": {
+"key": "B",
+"questionId": "REBR-ENV-019",
+"category": "rebEnvironment"
+},
+"X136": {
+"key": "B",
+"questionId": "REBR-FIN-003",
+"category": "rebFinance"
+},
+"X137": {
+"key": "A",
+"questionId": "REBR-PRACT-026",
+"category": "rebPractice"
+},
+"X138": {
+"key": "C",
+"questionId": "REBR-MATH-014",
+"category": "rebMath"
+},
+"X139": {
+"key": "D",
+"questionId": "REBR-AGENCY-013",
+"category": "rebAgency"
+},
+"X140": {
+"key": "A",
+"questionId": "REBR-PRACT-028",
+"category": "rebPractice"
+},
+"X141": {
+"key": "B",
+"questionId": "REBR-TITLE-015",
+"category": "rebTitle"
+},
+"X142": {
+"key": "A",
+"questionId": "REBR-TITLE-011",
+"category": "rebTitle"
+},
+"X143": {
+"key": "D",
+"questionId": "REBR-AGENCY-035",
+"category": "rebAgency"
+},
+"X144": {
+"key": "C",
+"questionId": "REBR-PROP-004",
+"category": "rebProperty"
+},
+"X145": {
+"key": "B",
+"questionId": "REBR-VALUE-021",
+"category": "rebValue"
+},
+"X146": {
+"key": "B",
+"questionId": "REBR-TITLE-014",
+"category": "rebTitle"
+},
+"X147": {
+"key": "A",
+"questionId": "REBR-TITLE-004",
+"category": "rebTitle"
+},
+"X148": {
+"key": "C",
+"questionId": "REBR-VALUE-020",
+"category": "rebValue"
+},
+"X149": {
+"key": "D",
+"questionId": "REBR-PRACT-009",
+"category": "rebPractice"
+},
+"X150": {
+"key": "C",
+"questionId": "REBR-PROP-023",
+"category": "rebProperty"
+},
+"X151": {
+"key": "D",
+"questionId": "REBR-PRACT-002",
+"category": "rebPractice"
+},
+"X152": {
+"key": "A",
+"questionId": "REBR-AGENCY-011",
+"category": "rebAgency"
+},
+"X153": {
+"key": "B",
+"questionId": "REBR-MATH-003",
+"category": "rebMath"
+},
+"X154": {
+"key": "A",
+"questionId": "REBR-PRACT-020",
+"category": "rebPractice"
+},
+"X155": {
+"key": "A",
+"questionId": "REBR-PRACT-006",
+"category": "rebPractice"
+},
+"X156": {
+"key": "C",
+"questionId": "REBR-VALUE-009",
+"category": "rebValue"
+},
+"X157": {
+"key": "A",
+"questionId": "REBR-MATH-016",
+"category": "rebMath"
+},
+"X158": {
+"key": "B",
+"questionId": "REBR-PROP-021",
+"category": "rebProperty"
+},
+"X159": {
+"key": "B",
+"questionId": "REBR-PRACT-015",
+"category": "rebPractice"
+},
+"X160": {
+"key": "A",
+"questionId": "REBR-PRACT-017",
+"category": "rebPractice"
+},
+"X161": {
+"key": "C",
+"questionId": "REBR-AGENCY-015",
+"category": "rebAgency"
+},
+"X162": {
+"key": "D",
+"questionId": "REBR-PRACT-019",
+"category": "rebPractice"
+},
+"X163": {
+"key": "B",
+"questionId": "REBR-ENV-017",
+"category": "rebEnvironment"
+},
+"X164": {
+"key": "A",
+"questionId": "REBR-MATH-015",
+"category": "rebMath"
+},
+"X165": {
+"key": "D",
+"questionId": "REBR-PRACT-001",
+"category": "rebPractice"
+},
+"X166": {
+"key": "B",
+"questionId": "REBR-TITLE-009",
+"category": "rebTitle"
+},
+"X167": {
+"key": "A",
+"questionId": "REBR-AGENCY-030",
+"category": "rebAgency"
+},
+"X168": {
+"key": "C",
+"questionId": "REBR-ENV-021",
+"category": "rebEnvironment"
+},
+"X169": {
+"key": "A",
+"questionId": "REBR-PROP-005",
+"category": "rebProperty"
+},
+"X170": {
+"key": "D",
+"questionId": "REBR-FIN-011",
+"category": "rebFinance"
+},
+"X171": {
+"key": "A",
+"questionId": "REBR-AGENCY-007",
+"category": "rebAgency"
+},
+"X172": {
+"key": "C",
+"questionId": "REBR-PROP-015",
+"category": "rebProperty"
+},
+"X173": {
+"key": "C",
+"questionId": "REBR-ENV-003",
+"category": "rebEnvironment"
+},
+"X174": {
+"key": "A",
+"questionId": "REBR-FIN-007",
+"category": "rebFinance"
+},
+"X175": {
+"key": "C",
+"questionId": "REBR-PRACT-032",
+"category": "rebPractice"
+},
+"X176": {
+"key": "D",
+"questionId": "REBR-TITLE-018",
+"category": "rebTitle"
+},
+"X177": {
+"key": "C",
+"questionId": "REBR-AGENCY-012",
+"category": "rebAgency"
+},
+"X178": {
+"key": "D",
+"questionId": "REBR-FIN-020",
+"category": "rebFinance"
+},
+"X179": {
+"key": "C",
+"questionId": "REBR-MATH-012",
+"category": "rebMath"
+},
+"X180": {
+"key": "C",
+"questionId": "REBR-VALUE-010",
+"category": "rebValue"
+},
+"X181": {
+"key": "A",
+"questionId": "REBR-PROP-022",
+"category": "rebProperty"
+},
+"X182": {
+"key": "A",
+"questionId": "REBR-TITLE-008",
+"category": "rebTitle"
+},
+"X183": {
+"key": "A",
+"questionId": "REBR-TITLE-003",
+"category": "rebTitle"
+},
+"X184": {
+"key": "B",
+"questionId": "REBR-VALUE-016",
+"category": "rebValue"
+},
+"X185": {
+"key": "B",
+"questionId": "REBR-VALUE-003",
+"category": "rebValue"
+},
+"X186": {
+"key": "D",
+"questionId": "REBR-TITLE-002",
+"category": "rebTitle"
+},
+"X187": {
+"key": "B",
+"questionId": "REBR-PROP-003",
+"category": "rebProperty"
+},
+"X188": {
+"key": "C",
+"questionId": "REBR-FIN-014",
+"category": "rebFinance"
+},
+"X189": {
+"key": "D",
+"questionId": "REBR-FIN-005",
+"category": "rebFinance"
+},
+"X190": {
+"key": "C",
+"questionId": "REBR-FIN-019",
+"category": "rebFinance"
+},
+"X191": {
+"key": "B",
+"questionId": "REBR-PRACT-029",
+"category": "rebPractice"
+},
+"X192": {
+"key": "A",
+"questionId": "REBR-TITLE-019",
+"category": "rebTitle"
+},
+"X193": {
+"key": "C",
+"questionId": "REBR-PROP-001",
+"category": "rebProperty"
+},
+"X194": {
+"key": "D",
+"questionId": "REBR-AGENCY-022",
+"category": "rebAgency"
+},
+"X195": {
+"key": "C",
+"questionId": "REBR-FIN-018",
+"category": "rebFinance"
+},
+"X196": {
+"key": "C",
+"questionId": "REBR-AGENCY-028",
+"category": "rebAgency"
+},
+"X197": {
+"key": "A",
+"questionId": "REBR-PRACT-007",
+"category": "rebPractice"
+},
+"X198": {
+"key": "B",
+"questionId": "REBR-VALUE-006",
+"category": "rebValue"
+},
+"X199": {
+"key": "A",
+"questionId": "REBR-ENV-005",
+"category": "rebEnvironment"
+},
+"X200": {
+"key": "A",
+"questionId": "REBR-ENV-016",
+"category": "rebEnvironment"
+}
+}

@@ -84,7 +84,7 @@ Final author review checked 2026-11-18. Source fetch dates above record the orig
 
 ## Revision v2 primary reads — 2026-11-18
 
-The following primary pages were fetched through the web tool and their specified explanatory passages read before the corresponding replacements. No source exam or sample questions were used. Revision notes are in revision-v2-changes.json. A successful source read does not mean the independent quality gate passed.
+The following primary pages were fetched through the web tool and their specified explanatory passages read before the corresponding replacements. No source exam or sample questions were used. Review history is in REVIEW.md.
 
 - ASC-ABOUT: Appraisal Subcommittee, About. https://www.asc.gov/index.php/about fetched 2026-11-18. Read framework, mission and monitoring of state programs and the Appraisal Foundation. Used federal oversight only, not an assertion that ASC performs individual appraisals or directly issues state licenses.
 - CFPB-APPRAISAL: What are appraisals and why do I need to look at them? https://www.consumerfinance.gov/ask-cfpb/what-are-appraisals-and-why-do-i-need-to-look-at-them-en-167/ fetched 2026-11-18. Read independent value assessment and copies; corroborative background, no copy deadline item authored.

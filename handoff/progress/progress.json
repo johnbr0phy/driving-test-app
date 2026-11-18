@@ -557,13 +557,20 @@
     "order": 3,
     "id": "realestatebroker",
     "pr": "https://github.com/johnbr0phy/driving-test-app/pull/888",
-    "status": "in progress"
+    "status": "ready for review, not merged",
+    "branch": "codex/next20-realestatebroker",
+    "commit": "82fd4be0",
+    "reviews": "blind keys 200/200 twice; options-only 60% then 66%; raw S-tags ~13 (mostly knowledge), tag noise raised with John"
    },
    {
     "order": 4,
     "id": "epa609",
-    "status": "queued; files in this branch, pilot40-v5 not integrated"
+    "status": "in progress: pilot40-v5 integrated via build overlay; repair of scope/strawman/cue items running",
+    "branch": "codex/next20-epa609 (new, from main + handoff files)"
    }
+  ],
+  "openQuestions": [
+   "Options-only S tags vary run to run (broker: two passes flagged nearly disjoint sets). Consider judging S hits by a second read rather than a raw count."
   ]
  }
 }

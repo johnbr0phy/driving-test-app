@@ -25,7 +25,7 @@ All 200 questions are original, written in French from primary rules and compete
 - SIGN-1 / SIGN-2 / SIGN-3 / SIGN-4: signage order including August 2025 amendment; fetched 2026-11-17. https://www.legifrance.gouv.fr/loda/id/JORFTEXT000034379025/2026-02-12 . Full order: official temporary issue, limits, placement, permanent stickers fixed so removal destroys them, validity.
 - RES-1: 6 August 2025 booking-evidence order; fetched 2026-11-17. https://www.legifrance.gouv.fr/loda/id/JORFTEXT000052153206/ . Successful full Article 1 response preserved by coordinating agent and read before authoring: operator/customer data, two timestamps, place, paper/electronic format and immediate client-contact exception. Article 4's two-month commencement overrides metadata; no date item written.
 - RETURN: L3122-9; fetched 2026-11-17. https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029529985 . Full article: establishment/off-road lawful waiting and next-booking exception.
-- INSPECTION: Service Public Entreprendre, verified 12 August 2026; fetched 2026-11-17. https://entreprendre.service-public.gouv.fr/vosdroits/F31027 . Complete downloaded text; annual technical inspection paragraph used. Summary discrepancies excluded below.
+- INSPECTION: Service Public Entreprendre, verified 12 August 2026; fetched 2026-11-17. https://entreprendre.service-public.gouv.fr/vosdroits/F31027 . Complete downloaded text; annual technical inspection paragraph and the 3-year licence condition used. Summary discrepancies excluded below.
 
 ## Road safety
 

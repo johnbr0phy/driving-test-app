@@ -102,7 +102,14 @@
         "status": "pending",
         "optionsOnlyCorrect": 163,
         "optionsOnlyTotal": 200,
-        "note": "All 200 intended keys and explanations checked; final11 changes blindly checked with3 wording repairs. Not completed quality approval. See tools/next20/frvtc/draft-checkpoint.md."
+        "note": "All 200 intended keys and explanations checked; final11 changes blindly checked with3 wording repairs. Not completed quality approval. Codex draft; superseded by the 2026-11-18 review, see tools/next20/frvtc/REVIEW.md."
+      },
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 886,
+        "findings": 70,
+        "note": "Blind keys 200/200 twice. Options-only 139/200 with 52 surface-cue hits, rewritten; then 130/200 with 16, 12 rewritten; recheck of changed items leaves about 6. Model French review only. See tools/next20/frvtc/REVIEW.md."
       }
     ]
   }

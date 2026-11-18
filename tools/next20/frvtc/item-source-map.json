@@ -130,7 +130,8 @@
     "questionId": "FRVTC-T3P-019",
     "objective": "Reconnaître la pluralité des canaux d'activité",
     "sources": [
-      "PLATFORM-4"
+      "PLATFORM-4",
+      "T3P-MARAUDE"
     ]
   },
   {
@@ -142,7 +143,7 @@
   },
   {
     "questionId": "FRVTC-T3P-021",
-    "objective": "Distinguer critère protégé et contrainte matérielle",
+    "objective": "Identifier les deux conditions de la discrimination",
     "sources": [
       "DISCRIMINATION"
     ]
@@ -184,9 +185,9 @@
   },
   {
     "questionId": "FRVTC-T3P-027",
-    "objective": "Reconnaître la révocabilité du consentement",
+    "objective": "Connaître les conditions d'accès à la profession",
     "sources": [
-      "CONSENT"
+      "INSPECTION"
     ]
   },
   {
@@ -233,7 +234,7 @@
   },
   {
     "questionId": "FRVTC-T3P-034",
-    "objective": "Préserver des éléments factuels datés",
+    "objective": "Dater les éléments de preuve",
     "sources": [
       "OUTRAGE"
     ]
@@ -312,7 +313,7 @@
   },
   {
     "questionId": "FRVTC-GES-009",
-    "objective": "Relier délai client et besoin de financement",
+    "objective": "Distinguer fonds de roulement et besoin en fonds de roulement",
     "sources": [
       "BILAN"
     ]
@@ -459,7 +460,7 @@
   },
   {
     "questionId": "FRVTC-SEC-006",
-    "objective": "Reconnaître l'intention claire d'un piéton",
+    "objective": "Connaître les espaces où le piéton est prioritaire",
     "sources": [
       "PRIORITY"
     ]
@@ -557,9 +558,9 @@
   },
   {
     "questionId": "FRVTC-SEC-020",
-    "objective": "Revenir à la position normale de circulation",
+    "objective": "Revenir à droite après un dépassement",
     "sources": [
-      "DRIVING"
+      "PASS"
     ]
   },
   {
@@ -606,14 +607,14 @@
   },
   {
     "questionId": "FRVTC-SEC-027",
-    "objective": "Réagir à une somnolence pendant le trajet",
+    "objective": "Interpréter le niveau 3 des médicaments",
     "sources": [
       "MEDS"
     ]
   },
   {
     "questionId": "FRVTC-SEC-028",
-    "objective": "Relier temps de réaction et distance avant freinage",
+    "objective": "Connaître la limite d'alcool en permis probatoire",
     "sources": [
       "ALCOHOL"
     ]
@@ -634,7 +635,7 @@
   },
   {
     "questionId": "FRVTC-SEC-031",
-    "objective": "Comprendre l'effet du sous-gonflage",
+    "objective": "Couper le moteur lors d'un arrêt prolongé",
     "sources": [
       "ECO"
     ]
@@ -655,7 +656,7 @@
   },
   {
     "questionId": "FRVTC-SEC-034",
-    "objective": "Protéger les passagers après immobilisation",
+    "objective": "Appliquer l'ordre protéger, alerter, secourir",
     "sources": [
       "ACCIDENT"
     ]
@@ -796,7 +797,7 @@
   },
   {
     "questionId": "FRVTC-FRA-016",
-    "objective": "Associer un événement à son heure",
+    "objective": "Accorder le participe passé employé avec avoir",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -804,7 +805,7 @@
   },
   {
     "questionId": "FRVTC-FRA-017",
-    "objective": "Appliquer une instruction à une chronologie particulière",
+    "objective": "Employer le temps correct après \"si\"",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -828,7 +829,7 @@
   },
   {
     "questionId": "FRVTC-FRA-020",
-    "objective": "Identifier la finalité explicite d'une instruction",
+    "objective": "Employer le subjonctif après une conjonction de but",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -836,7 +837,7 @@
   },
   {
     "questionId": "FRVTC-FRA-021",
-    "objective": "Reformuler une demande professionnelle précise",
+    "objective": "Formuler une question indirecte professionnelle",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -844,7 +845,7 @@
   },
   {
     "questionId": "FRVTC-FRA-022",
-    "objective": "Suivre une quantité au fil d'un récit",
+    "objective": "Distinguer des homophones grammaticaux",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -852,7 +853,7 @@
   },
   {
     "questionId": "FRVTC-FRA-023",
-    "objective": "Lire un calendrier de projet",
+    "objective": "Choisir le sens d'un mot en contexte",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -860,7 +861,7 @@
   },
   {
     "questionId": "FRVTC-FRA-024",
-    "objective": "Distinguer deux conditions cumulatives",
+    "objective": "Accorder \"quel que\" devant le verbe être",
     "sources": [
       "SYLLABUS-D",
       "LANGUAGE-ORIGINAL"
@@ -918,7 +919,7 @@
   },
   {
     "questionId": "FRVTC-ANG-006",
-    "objective": "Distinguer permission et demande d'action",
+    "objective": "Demander une permission avec un modal",
     "sources": [
       "SYLLABUS-E",
       "CEFR-A2",
@@ -1002,30 +1003,31 @@
   },
   {
     "questionId": "FRVTC-COM-003",
-    "objective": "Segmenter selon les besoins",
+    "objective": "Choisir des critères de segmentation",
     "sources": [
       "MARKET"
     ]
   },
   {
     "questionId": "FRVTC-COM-004",
-    "objective": "Repérer un biais d'échantillonnage",
+    "objective": "Analyser l'environnement avec la méthode PESTEL",
     "sources": [
       "MARKET"
     ]
   },
   {
     "questionId": "FRVTC-COM-005",
-    "objective": "Distinguer pic ponctuel et demande régulière",
+    "objective": "Ordonner les étapes de l'étude de marché",
     "sources": [
       "MARKET"
     ]
   },
   {
     "questionId": "FRVTC-COM-006",
-    "objective": "Mesurer le recoupement entre une offre de substitution et les trajets vendus",
+    "objective": "Analyser l'offre concurrente",
     "sources": [
-      "MARKET"
+      "MARKET",
+      "PRICE"
     ]
   },
   {
@@ -1037,7 +1039,7 @@
   },
   {
     "questionId": "FRVTC-COM-008",
-    "objective": "Relier prix et bénéfice perçu par la cible",
+    "objective": "Relier prix et valeur perçue par la cible",
     "sources": [
       "PRICE"
     ]
@@ -1107,7 +1109,7 @@
   },
   {
     "questionId": "FRVTC-COM-018",
-    "objective": "Isoler un facteur dans un test commercial",
+    "objective": "Planifier la mesure d'une action commerciale",
     "sources": [
       "DIGITAL"
     ]
@@ -1137,7 +1139,8 @@
     "questionId": "FRVTC-COM-022",
     "objective": "Appliquer l'exception des services analogues",
     "sources": [
-      "CNIL-MAIL"
+      "CNIL-MAIL",
+      "CNIL-COMMUNICATION"
     ]
   },
   {
@@ -1151,12 +1154,13 @@
     "questionId": "FRVTC-COM-024",
     "objective": "Rendre durable le droit d'opposition",
     "sources": [
-      "CNIL-COMMUNICATION"
+      "CNIL-COMMUNICATION",
+      "CNIL-MAIL"
     ]
   },
   {
     "questionId": "FRVTC-COM-025",
-    "objective": "Limiter les données à une finalité déterminée",
+    "objective": "Documenter un traitement de données commerciales",
     "sources": [
       "CNIL-DATA"
     ]
@@ -1256,7 +1260,7 @@
   },
   {
     "questionId": "FRVTC-REG-003",
-    "objective": "Compter le conducteur dans les places",
+    "objective": "Connaître le nombre de places imposé aux VTC",
     "sources": [
       "CODE-VEH-6"
     ]
@@ -1321,7 +1325,8 @@
     "questionId": "FRVTC-REG-012",
     "objective": "Distinguer conducteur, entreprise et exploitant inscrit",
     "sources": [
-      "BPI-VTC"
+      "BPI-VTC",
+      "L3122-3"
     ]
   },
   {
@@ -1363,7 +1368,8 @@
     "questionId": "FRVTC-REG-018",
     "objective": "Appliquer l'interdiction de prêt d'inscription",
     "sources": [
-      "L3122-3"
+      "L3122-3",
+      "CODE-REG-4"
     ]
   },
   {
@@ -1396,7 +1402,7 @@
   },
   {
     "questionId": "FRVTC-REG-023",
-    "objective": "Distinguer enregistrement et exécution d'une réservation",
+    "objective": "Connaître les mentions de prise en charge du justificatif",
     "sources": [
       "RES-1"
     ]
@@ -1453,7 +1459,7 @@
   },
   {
     "questionId": "FRVTC-REG-031",
-    "objective": "Appliquer le forfait convenu à la réservation",
+    "objective": "Appliquer les modes de fixation du prix",
     "sources": [
       "BPI-VTC"
     ]

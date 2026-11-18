@@ -2892,6 +2892,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* French VTC: violet, distinct from existing themes and CDM. */
+  [data-theme="frvtc"] {
+    --brand: 276 75% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 276 75% 96%;
+    --brand-hover: 276 75% 27%;
+    --brand-dark: 276 75% 22%;
+    --brand-darker: 276 75% 17%;
+    --brand-muted: 276 35% 65%;
+    --brand-border: 276 35% 78%;
+    --brand-border-light: 276 35% 90%;
+    --brand-gradient-to: 276 35% 98%;
+  }
+
   /* French Driving Theory Test (Code de la route) theme */
   [data-theme="frcode"] {
     --brand: 234 100% 22%;
@@ -6161,6 +6175,18 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  .dark [data-theme="frvtc"] {
+    --brand: 276 75% 50%;
+    --brand-hover: 276 75% 42%;
+    --brand-light: 276 45% 13%;
+    --brand-gradient-to: 276 35% 11%;
+    --brand-border-light: 276 35% 24%;
+    --brand-border: 276 35% 34%;
+    --brand-muted: 276 35% 45%;
+    --brand-dark: 276 75% 65%;
+    --brand-darker: 276 75% 78%;
   }
 
   /* Brand tints on a dark page. Generated from the light blocks above by
@@ -11540,4 +11566,27 @@ html:not([data-ltq="control"]) .landing-shots {
 .dark .admin-thead-stuck th {
   background-color: rgb(17 24 39);
   box-shadow: inset 0 -1px 0 rgb(31 41 55);
+}
+
+/* CDM: distinct deep blue; white button contrast 9.45:1. */
+[data-theme="cdm"] {
+  --brand: 240 75% 48%;
+  --brand-foreground: 0 0% 100%;
+  --brand-light: 240 75% 96%;
+  --brand-hover: 240 75% 43%;
+  --brand-dark: 240 75% 43%;
+  --brand-darker: 240 75% 20%;
+  --brand-muted: 240 75% 72%;
+  --brand-border: 240 75% 78%;
+  --brand-border-light: 240 75% 88%;
+  --brand-gradient-to: 240 25% 96%;
+}
+.dark [data-theme="cdm"] {
+  --brand-light: 240 75% 13%;
+  --brand-gradient-to: 240 25% 11%;
+  --brand-dark: 240 75% 70%;
+  --brand-darker: 240 75% 80%;
+  --brand-muted: 240 75% 45%;
+  --brand-border: 240 75% 34%;
+  --brand-border-light: 240 75% 24%;
 }

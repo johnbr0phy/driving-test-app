@@ -65,8 +65,10 @@ routes, landing, facts, catalog entry, theme, search aliases, CLAUDE.md entry.
 
 Every bank gets a blind review by a reviewer that did not write it: it answers every question
 without the key, recomputes every number, and lists disagreements. It also does an options-only
-pass (see the exam-bank skill): reading only the options, category by category, a guess
-that beats 40% means the options carry a cue, and those items are rewritten. An options-only
+pass with `tools/options_only.py` (see the exam-bank skill): every pick it makes on a surface
+cue that finds the key is rewritten, and the bank fails while those exceed 3% of items. Picks
+from subject knowledge are not faults (live banks score 64 to 82% this way), and no item may be
+answerable from the stem's logic alone. An options-only
 pass cannot see two shortcuts, so the reviewer also reads stem and options together for them:
 the key being the only option that repeats the question's words (stem echo), and options shared
 between questions. `python3 -I tools/check_option_reuse.py --list <bank>` must pass for every bank

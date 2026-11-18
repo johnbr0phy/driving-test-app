@@ -477,6 +477,15 @@
       "what": "Editorial reminder to check the announced 2027–28 CSP redesign; this is not an official effective date.",
       "action": "Read the new CED when published and schedule a bank/format review before the redesigned course begins.",
       "source": "https://apcentral.collegeboard.org/courses/ap-computer-science-principles"
+    },
+    {
+      "exam": "frvtc",
+      "date": "2026-08-12",
+      "kind": "law",
+      "what": "Decree 2026-764 removes the domestic professional-experience exemption for new VTC access applications.",
+      "action": "Use the current access rule; distinguish pending files and European qualification recognition.",
+      "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054658967",
+      "done": "2026-11-17"
     }
   ]
 }

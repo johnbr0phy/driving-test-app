@@ -66,6 +66,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  frvtc: "driving",
   zafirearm: "capal",
   realestatebroker: "realestate",
   appraiser: "realestate",
@@ -194,6 +195,7 @@ const BORROWED_SETS: Record<string, string> = {
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
+  cdm: "rdexam",
   // ASE A1-A8 (US automobile technicians) borrows the Red Seal automotive mechanic tiger (no flag).
   ase: "caauto",
   // CEN (BCEN Certified Emergency Nurse) borrows the NCLEX tiger.

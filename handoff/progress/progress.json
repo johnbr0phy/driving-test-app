@@ -565,8 +565,17 @@
    {
     "order": 4,
     "id": "epa609",
-    "status": "in progress: pilot40-v5 integrated via build overlay; repair of scope/strawman/cue items running",
-    "branch": "codex/next20-epa609 (new, from main + handoff files)"
+    "status": "ready for review, not merged",
+    "branch": "codex/next20-epa609",
+    "pr": "https://github.com/johnbr0phy/driving-test-app/pull/892",
+    "commit": "9b2966e9",
+    "reviews": "blind keys 100/100 twice; options-only 71% -> 67%; raw S-tags ~8, EQP-005 clearest remaining cue",
+    "checks": "automerge-checks PASS (after adding email-brand and launch date)"
+   },
+   {
+    "order": 5,
+    "id": "frexamencivique",
+    "status": "not started"
    }
   ],
   "openQuestions": [

@@ -153,7 +153,7 @@ import type { QuestionV2 } from "@/lib/v2/types";
 export interface ClassQuestionDisplay {
   question: string;
   options: string[];
-  /** The correct answer as text ("" when the format has no single answer to show). */
+  /** The correct answer as text, for every format ("" only when the item has no key). */
   answer: string;
   category: string;
   explanation: string;
@@ -169,12 +169,46 @@ function fromV1(q: Question): ClassQuestionDisplay {
   };
 }
 
+/** Every v2 format's answer as one line of text (report replies, the class page). */
+export function v2AnswerText(q: QuestionV2): string {
+  const key = q.correct ?? [];
+  const pick = (list: string[] | undefined, i: number) => list?.[i] ?? "";
+  switch (q.format) {
+    case "single":
+    case "multi":
+      return key.map((i) => pick(q.options, i)).filter(Boolean).join("; ");
+    case "numeric":
+      return String(q.numeric?.answers?.[0] ?? "");
+    case "order":
+      return key.map((i) => pick(q.options, i)).filter(Boolean).join(" → ");
+    case "matrix":
+      return (q.rows ?? []).map((row, r) => `${row}: ${pick(q.columns, key[r])}`).join(" · ");
+    case "cloze":
+      return (q.blanks ?? []).map((b, i) => pick(b, key[i])).filter(Boolean).join(" · ");
+    case "bowtie": {
+      const flat = (q.groups ?? []).flatMap((g) => g.options);
+      return key.map((i) => flat[i] ?? "").filter(Boolean).join("; ");
+    }
+    case "highlight": {
+      const marks = [...(q.passage || q.stem).matchAll(/\{\{([^{}]+)\}\}/g)].map((m) => m[1]);
+      return key.map((i) => marks[i] ?? "").filter(Boolean).join("; ");
+    }
+    default:
+      return "";
+  }
+}
+
+/** The stem as plain reading text: highlight markers unwrapped, cloze blanks as ___. */
+function plainStem(stem: string): string {
+  return stem.replace(/\{\{([^{}]+)\}\}/g, "$1").replace(/\[\[\d+\]\]/g, "___");
+}
+
 function fromV2(q: QuestionV2): ClassQuestionDisplay {
   const choice = (q.format === "single" || q.format === "multi") && q.options && q.correct;
   return {
-    question: q.stem,
+    question: plainStem(q.stem),
     options: choice ? q.options! : [],
-    answer: choice ? q.correct!.map((i) => q.options![i]).join("; ") : q.format === "numeric" ? String(q.numeric?.answers?.[0] ?? "") : "",
+    answer: v2AnswerText(q),
     category: q.domain,
     explanation: q.explanation ?? "",
   };

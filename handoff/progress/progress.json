@@ -546,13 +546,18 @@
     "order": 2,
     "id": "frvtc",
     "pr": "https://github.com/johnbr0phy/driving-test-app/pull/886",
-    "status": "next"
+    "status": "ready for review, not merged",
+    "branch": "codex/next20-frvtc",
+    "commit": "46313dc6",
+    "checks": "automerge-checks PASS; validator --lang fr, reuse/echo, stem median 16, answer patterns PASS",
+    "reviews": "blind keys 200/200 twice; options-only S-hits 52 -> ~6; model French review only",
+    "screenshots": "public/landing/frvtc-*-fr*.png light+dark"
    },
    {
     "order": 3,
     "id": "realestatebroker",
     "pr": "https://github.com/johnbr0phy/driving-test-app/pull/888",
-    "status": "queued"
+    "status": "in progress"
    },
    {
     "order": 4,

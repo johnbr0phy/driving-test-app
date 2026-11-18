@@ -656,6 +656,20 @@
     --brand-gradient-to: 345 80% 96%;
   }
 
+  /* National real estate broker theme */
+  [data-theme="realestatebroker"] {
+    --brand: 176 60% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 176 65% 95%;
+    --brand-hover: 176 60% 28%;
+    --brand-dark: 176 60% 22%;
+    --brand-darker: 176 50% 16%;
+    --brand-muted: 176 40% 72%;
+    --brand-border: 176 40% 78%;
+    --brand-border-light: 176 35% 88%;
+    --brand-gradient-to: 161 65% 95%;
+  }
+
   /* VTNE theme: teal green */
   [data-theme="vtne"] {
     --brand: 158 60% 32%;
@@ -6687,6 +6701,16 @@
     --brand-muted: 320 40% 45%;
     --brand-dark: 320 60% 65%;
     --brand-darker: 320 50% 78%;
+  }
+
+  .dark [data-theme="realestatebroker"] {
+    --brand-light: 176 45% 13%;
+    --brand-gradient-to: 161 40% 11%;
+    --brand-border-light: 176 35% 24%;
+    --brand-border: 176 40% 34%;
+    --brand-muted: 176 40% 45%;
+    --brand-dark: 176 60% 65%;
+    --brand-darker: 176 50% 78%;
   }
 
   .dark [data-theme="vtne"] {

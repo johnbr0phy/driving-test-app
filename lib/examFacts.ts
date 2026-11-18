@@ -1272,6 +1272,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NIC National Cosmetology Theory Examination content outline, effective July 1, 2022 (110 items, 90 minutes; NIC only)",
     source: { name: "NIC Cosmetology Theory CIB", url: "https://prov-testing.github.io/nic_cib/cosmetology_national_theory_english.html" },
   },
+  realestatebroker: {
+    answer: "This practice bank follows Pearson VUE's National/General Broker outline, effective March 1, 2025. Its national portion has 80 scored questions plus 5 pretest questions across eight topics. State-specific law, eligibility, timing and passing requirements must be checked with your licensing jurisdiction. Tigertest provides four shorter 50-question tests; 70% is a study target.",
+    rows: [
+      { label: "Scope", value: "US national broker portion; Pearson VUE outline" },
+      { label: "Official national questions", value: "80 scored + 5 pretest" },
+      { label: "Topics", value: "8, from property through real estate math" },
+      { label: "Practice format", value: "4 tests of 50 original questions" },
+      { label: "Timing and passing", value: "Check your licensing jurisdiction" },
+      { label: "State-law portion", value: "Separate preparation required" },
+    ],
+    basedOn: "Pearson VUE National/General Broker outline, effective March 2025; checked November 17, 2026",
+    source: { name: "Pearson VUE real estate content outlines, national broker pages 5–8", url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/094401.pdf" },
+  },
   vtne: {
     answer:
       "The Veterinary Technician National Examination (VTNE), given by the AAVSB, has 170 multiple-choice questions, 150 scored and 20 unscored pilot items, in 3 hours at Prometric centers. It is scored on a 200 to 800 scale and 425 passes. The outline approved in March 2023 has ten domains: animal care and nursing is 20%, pharmacology, surgical nursing and anesthesia about 13% each, laboratory procedures 9%, imaging 6%, and dentistry, emergency and critical care, pain management and communication 5 to 7% each.",

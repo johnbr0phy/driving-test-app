@@ -105,6 +105,9 @@ The "Questions by exam" table's Enrolled column counts distinct people with at l
 
 ### Additional Exams (CDL, HTL, CST, CRCST)
 
+- **US real estate broker national portion** (`realestatebroker`): `/real-estate-broker`, landing `/real-estate-broker-practice-test`, bank `data/realestatebroker-questions.json` (200 original questions; pools rebProperty 24, rebTitle 20, rebValue 24, rebAgency 36, rebPractice 32, rebEnvironment 24, rebFinance 20, rebMath 20). Test/set IDs 34201–34204, state `REBROKER`, prefix `REBR-`. Four 50-question tests use 6/5/6/9/8/6/5/5 allocation; 70% is a study target. Pearson VUE National/General Broker outline effective March 2025, edition 01/2026; national only, state-law preparation separate. Real estate/finance hub; four topic sets and Premium later steps.
+
+
 - South Africa Firearm Competency legal knowledge: `/zafirearm`, landing `/south-africa-firearm-competency-practice-test`, `data/zafirearm-questions.json`; pools Legal40/Licensing60/Custody48/Duties52, tests/sets33901–33904, stateZAFIREARM. Editorial10/15/12/13 per50 and70%study target, not official provider format. SAQA117705, Firearms Control Act and amended regulations; South Africa firearm competency group. Practical assessment/accreditation/licensing excluded.
 
 

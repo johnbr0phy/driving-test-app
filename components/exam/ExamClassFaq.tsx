@@ -266,6 +266,7 @@ export const TEACHES: Record<string, string> = {
   lifeguard: "lifeguard classes",
   cosmetology: "at a cosmetology school",
   hunter: "hunter education",
+  realestatebroker: "a real estate broker licensing course",
   realestate: "a real estate pre-licensing course",
   insurance: "a life and health insurance pre-licensing course",
   pnc: "a property and casualty pre-licensing course",

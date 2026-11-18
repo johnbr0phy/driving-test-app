@@ -67,6 +67,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  */
 const BORROWED_SETS: Record<string, string> = {
   zafirearm: "capal",
+  realestatebroker: "realestate",
   appraiser: "realestate",
   nccco: "osha",
   prince2: "pmp",

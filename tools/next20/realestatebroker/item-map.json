@@ -1,0 +1,1218 @@
+[
+  {
+    "questionId": "REBR-PROP-001",
+    "source": "DRE4:Fixtures",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-002",
+    "source": "DRE4:Things affixed; personal property",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-003",
+    "source": "DRE4:Fixtures",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-004",
+    "source": "DRE4:Historical derivations",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-005",
+    "source": "DRE4:Personal property; things affixed",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-006",
+    "source": "DRE5:Assuring marketability",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-007",
+    "source": "DRE4:Fixtures",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-008",
+    "source": "DRE4:Recorded map",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-009",
+    "source": "DRE4:Metes and bounds",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-010",
+    "source": "DRE4:Recorded map",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-011",
+    "source": "DRE4:Township and section",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-012",
+    "source": "DRE5:Encroachments",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-013",
+    "source": "OUTLINE:I.B;DRE15:Location",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-014",
+    "source": "DRE15:Supply and demand",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Recognize that simultaneous supply and demand increases do not determine price direction without relative magnitudes."
+  },
+  {
+    "questionId": "REBR-PROP-015",
+    "source": "OUTLINE:I.B;DRE4:The modern view",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-016",
+    "source": "DRE15:Rights of ownership",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-017",
+    "source": "DRE5:Easements",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-018",
+    "source": "DRE5:Easements in gross",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-019",
+    "source": "DRE5:Appurtenant easements",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-020",
+    "source": "DRE16:Benefit assessments",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-021",
+    "source": "DRE15:Rights of ownership",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-022",
+    "source": "DRE6:Eminent domain",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-023",
+    "source": "DRE5:Restrictions",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PROP-024",
+    "source": "DRE5:Easements;appurtenant easements",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-001",
+    "source": "DRE4:Freehold estates",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-002",
+    "source": "DRE4:Freehold estates",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-003",
+    "source": "DRE4:Freehold estates;DRE5:Conditions",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-004",
+    "source": "DRE5:Tenancy in common",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-005",
+    "source": "DRE5:Joint tenancy",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-006",
+    "source": "DRE9:Introduction",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-007",
+    "source": "DRE9:Types of leasehold estates",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-008",
+    "source": "DRE9:Types of leasehold estates",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-009",
+    "source": "DRE7:Types of deeds",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-010",
+    "source": "DRE7:Quitclaim deed;WA-RCW64.04.050:Express after-acquired-title exception",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-011",
+    "source": "DRE7:Deeds in general;warranty deed",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-012",
+    "source": "DRE5:Actual versus constructive notice",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-013",
+    "source": "DRE5:Effect of recording",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-014",
+    "source": "DRE5:Abstract of title;title insurance",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-015",
+    "source": "DRE7:Consistency of names",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-016",
+    "source": "DRE5:Easements;title insurance exclusions",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Integrate legal scope and spatial location to evaluate proposed construction; distinguish those from insurance coverage alone."
+  },
+  {
+    "questionId": "REBR-TITLE-017",
+    "source": "DRE5:Assuring marketability",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-018",
+    "source": "DRE5:Special lien situations",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-019",
+    "source": "DRE8:Escrow holder;principals",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-TITLE-020",
+    "source": "DRE7:Reconveyance deed",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-001",
+    "source": "DRE15:Contribution",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-002",
+    "source": "DRE15:Value designations",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-003",
+    "source": "DRE15:The appraisal process and methods;effective date",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-004",
+    "source": "DRE15:Highest and best use",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-005",
+    "source": "DRE15:The appraisal process and methods;intended use",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-006",
+    "source": "DRE15:Highest and best use;cost approach",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Compare continued use with redevelopment net of demolition rather than rank gross values."
+  },
+  {
+    "questionId": "REBR-VALUE-007",
+    "source": "DRE15:Sales comparison procedure",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-008",
+    "source": "DRE15:Sales comparison procedure",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-009",
+    "source": "DRE15:Sales comparison procedure;condition at time of sale",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-010",
+    "source": "DRE15:Sales comparison procedure",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-011",
+    "source": "DRE15:Cost approach",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-012",
+    "source": "DRE15:Replacement cost new",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-013",
+    "source": "DRE15:Depreciation",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-014",
+    "source": "DRE15:Depreciation",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-015",
+    "source": "DRE15:Obsolescence",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Distinguish physical repairability from economic curability by comparing correction cost and value contribution."
+  },
+  {
+    "questionId": "REBR-VALUE-016",
+    "source": "DRE15:The appraisal process and methods;scope of work",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-017",
+    "source": "DRE15:Income and expenses",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-018",
+    "source": "DRE15:Gross multipliers;income approach",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Evaluate a gross-income proxy when operating expense ratios differ; identify the omitted source of value difference."
+  },
+  {
+    "questionId": "REBR-VALUE-019",
+    "source": "DRE15:Capitalizing net income",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-020",
+    "source": "DRE15:Gross multipliers",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Diagnose a period mismatch and determine its multiplicative effect rather than merely calculate a valid estimate."
+  },
+  {
+    "questionId": "REBR-VALUE-021",
+    "source": "DRE15:Appraisal Client",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-022",
+    "source": "CFPB-VALUATIONS:BPO;AVM;appraisal",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-023",
+    "source": "ASC-ABOUT:Mission",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-VALUE-024",
+    "source": "DRE15:Methods of appraising properties;reconciliation",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Evaluate competing approaches using the relative reliability of their underlying evidence."
+  },
+  {
+    "questionId": "REBR-AGENCY-001",
+    "source": "DRE6:Classification",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-002",
+    "source": "DRE6:Classification",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-003",
+    "source": "DRE6:Classification",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-004",
+    "source": "DRE6:Classification;genuine assent",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-005",
+    "source": "DRE6:Definite contract terms;Sufficient consideration",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-006",
+    "source": "DRE6:Acceptance",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-007",
+    "source": "DRE6:Termination of offer",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-008",
+    "source": "DRE6:Acceptance",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-009",
+    "source": "DRE6:Termination of offer",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-010",
+    "source": "DRE6:Assignable contract",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-011",
+    "source": "DRE6:Novation",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-012",
+    "source": "DRE6:Genuine assent",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-013",
+    "source": "DRE6:Genuine assent",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-014",
+    "source": "DRE6:Liquidated damages",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-015",
+    "source": "DRE6:Mutual consent;condition precedent",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-016",
+    "source": "DRE6:Discharge of contracts",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-017",
+    "source": "DRE6:Performance;novation;time",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-018",
+    "source": "DRE6:Classification;statute of limitations",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-019",
+    "source": "DRE10:Introduction",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-020",
+    "source": "DRE10:General and special agents",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-021",
+    "source": "DRE10:Special agents;restrictions on authority",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-022",
+    "source": "DRE10:Special agents",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-023",
+    "source": "DRE10:Apparent authority",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Separate privately limited actual authority from principal-created appearances and third-party reliance."
+  },
+  {
+    "questionId": "REBR-AGENCY-024",
+    "source": "DRE10:Dual agency;informed consent",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-025",
+    "source": "DRE10:Creation of agency relationships",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-026",
+    "source": "DRE6:Specific performance",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-027",
+    "source": "DRE10:Scope of authority",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-028",
+    "source": "DRE10:Agency relationships;compensation",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-029",
+    "source": "DRE10:Introduction;confidentiality",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Classify two confidential disclosures differently: bargaining limit versus material physical defect."
+  },
+  {
+    "questionId": "REBR-AGENCY-030",
+    "source": "DRE10:Broker acting for own account",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-031",
+    "source": "DRE10:Emergency broadens authority",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-032",
+    "source": "DRE10:Delegation of powers",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-033",
+    "source": "DRE10:Termination of agency",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-034",
+    "source": "DRE6:Fraud",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-035",
+    "source": "DRE5:Conditions;DRE6:Land contracts",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-AGENCY-036",
+    "source": "DRE6:Mutual consent;definite contract terms",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-001",
+    "source": "DRE10:Types of listing agreements",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-002",
+    "source": "DRE10:Open listing",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-003",
+    "source": "DRE10:Net listing",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-004",
+    "source": "DRE10:Types of listing agreements",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-005",
+    "source": "DRE22:Management Contract;Earnings",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-006",
+    "source": "DRE22:Rent Schedule",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-007",
+    "source": "DRE22:Vacancies;Merchandising the Space",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Distinguish a marketing-reach explanation from price competitiveness using stable rents and declining showings."
+  },
+  {
+    "questionId": "REBR-PRACT-008",
+    "source": "DRE22:Management Contract",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-009",
+    "source": "DRE2026:Separate Record for Each Beneficiary",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-010",
+    "source": "DRE2026:Separate records;Trust Account Reconciliation",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Compare bank, control and beneficiary records to locate the missing posting rather than adjust all records."
+  },
+  {
+    "questionId": "REBR-PRACT-011",
+    "source": "DRE2026:Separate records;trust-account reconciliation",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-012",
+    "source": "DRE2026:Trust Account Reconciliation",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-013",
+    "source": "DOJ-FHA:Protected classes",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-014",
+    "source": "DOJ-FHA:Race or color",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-015",
+    "source": "DOJ-FHA:Race or color;false availability",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-016",
+    "source": "DOJ-FHA:Familial status",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-017",
+    "source": "DOJ-FHA:Disability",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-018",
+    "source": "DOJ-FHA:Disability group homes",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-019",
+    "source": "DOJ-FHA:Sex including sexual harassment",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-020",
+    "source": "DOJ-FHA:Individual complaints",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-021",
+    "source": "FTC-PRICE:Price fixing",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-022",
+    "source": "DOJ-ADA:III-1.2000;public accommodations in residential facilities",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-023",
+    "source": "FTC-DATA:Scale Down;least privilege",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-024",
+    "source": "FTC-TSR:Entity-specific Do Not Call;EBR",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-025",
+    "source": "FTC-TSR:Established business relationship",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-026",
+    "source": "FTC-TSR:Do Not Call compliance",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-027",
+    "source": "SBA-INS:Six common types",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-028",
+    "source": "SBA-INS:Six common types",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-029",
+    "source": "DRE22:Maintenance and Purchasing Operations",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-030",
+    "source": "DRE22:Reports to Owner",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-PRACT-031",
+    "source": "DRE22:Tenant Relationships;Vacancies",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Compare net returns of alternatives after incorporating replacement-specific turnover costs."
+  },
+  {
+    "questionId": "REBR-PRACT-032",
+    "source": "DRE22:Earnings;Management Contract",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-001",
+    "source": "EPA-LEAD:Covered housing",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-002",
+    "source": "EPA-LEAD:Disclosure before contract",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-003",
+    "source": "EPA-LEAD:Inspection opportunity",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-004",
+    "source": "EPA-LEAD:Available records and reports",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-005",
+    "source": "EPA-LEAD:No testing requirement",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-006",
+    "source": "EPA-LEAD:Record retention",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-007",
+    "source": "EPA-RADON:Action level",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-008",
+    "source": "EPA-RADON:Testing your home",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-009",
+    "source": "EPA-RADON:Buying a home;test location",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-010",
+    "source": "EPA-MOLD:Moisture control;drying water-damaged areas",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-011",
+    "source": "EPA-MOLD:Test or sampling for mold",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-012",
+    "source": "EPA-ASBESTOS:What to do",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-013",
+    "source": "EPA-ASBESTOS:Repair and removal",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-014",
+    "source": "EPA-AAI:Liability protections",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-015",
+    "source": "EPA-AAI:When AAI must be conducted",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-016",
+    "source": "EPA-AAI:Specific required activities",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-017",
+    "source": "EPA-COMMON:Continuing obligations;EPA-AAI:Specific activities",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-018",
+    "source": "NFIP-ELIG:Mortgage requirements",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-019",
+    "source": "NFIP-ZONES:Zone D",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-020",
+    "source": "EPA-UST:Why be concerned about USTs",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-021",
+    "source": "EPA-CWA404:Overview",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-022",
+    "source": "EPA-CWA404:Overview",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-023",
+    "source": "EPA-CAA:Summary",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-ENV-024",
+    "source": "EPA-UST:What is an UST",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-001",
+    "source": "DRE5:Lien theory versus legal title theory",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-002",
+    "source": "DRE12:Blanket deeds of trust or mortgages",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-003",
+    "source": "CFPB-TERMS:Amortization",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-004",
+    "source": "CFPB-TERMS:Amortization;balloon",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-005",
+    "source": "CFPB-TERMS:Annual percentage rate",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-006",
+    "source": "CFPB-TERMS:Conventional loan",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-007",
+    "source": "VA-PURCHASE:Eligibility",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-008",
+    "source": "USDA502:Program overview;eligibility",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-009",
+    "source": "CFPB-MI:Who is protected",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-010",
+    "source": "OCC-FRAUD:Definition;warning signs",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-011",
+    "source": "CFPB-ECOA:Income sources",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-012",
+    "source": "FREDDIE-MBS:Primary and secondary mortgage markets",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-013",
+    "source": "CFPB-REGZ:1026.2(a)(13);1026.19(f)(1)(ii)(A)",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-014",
+    "source": "CFPB-TRID:Corrected disclosures",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-015",
+    "source": "CFPB-RESPA:Section 8a;8c",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-016",
+    "source": "CFPB-RESPA:Section 8;reasonable value of services",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-017",
+    "source": "CFPB-ESCROW:Changes in taxes and insurance",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-018",
+    "source": "CFPB-CD-EXPLAIN:Cash to Close",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-019",
+    "source": "CFPB-TERMS:Margin;index",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-FIN-020",
+    "source": "CFPB-CD-EXPLAIN:Prepaids;Initial Escrow Payment",
+    "cognitiveLevel": "knowledge",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-001",
+    "source": "OUTLINE:Math calculation notes;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-002",
+    "source": "OUTLINE:VIII.A;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-003",
+    "source": "DRE15:Determining net annual income;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-004",
+    "source": "DRE15:Overall Rate Formula;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-005",
+    "source": "DRE15:Gross multipliers;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-006",
+    "source": "CFPB-TERMS:Equity;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-007",
+    "source": "DRE16:Ad valorem taxation;OUTLINE:VIII.B;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-008",
+    "source": "DRE10:Compensation agreements;OUTLINE:VIII.C;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-009",
+    "source": "DRE10:Compensation agreements;OUTLINE:VIII.C;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-010",
+    "source": "CFPB-TERMS:Loan-to-value;original arithmetic",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Distinguish the borrowing limit based on collateral value from the cash gap measured against purchase price."
+  },
+  {
+    "questionId": "REBR-MATH-011",
+    "source": "CFPB-TERMS:Interest rate;OUTLINE:Math calculation notes;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-012",
+    "source": "CFPB-POINTS:Points;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-013",
+    "source": "CFPB-CD-EXPLAIN:Cash to Close;original arithmetic",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Classify financing, prior deposit, credits and costs by their effect on remaining cash due, then reconcile."
+  },
+  {
+    "questionId": "REBR-MATH-014",
+    "source": "OUTLINE:VIII.E;CFPB-CD-EXPLAIN:Settlement costs;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-015",
+    "source": "CFPB-CD-EXPLAIN:Items unpaid by seller;OUTLINE:Math calculation notes;original arithmetic",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Select debit and credit directions from unpaid-tax responsibility and calculate the prorated amount."
+  },
+  {
+    "questionId": "REBR-MATH-016",
+    "source": "CFPB-ESCROW;CFPB-CD-EXPLAIN:Estimated total payment;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-017",
+    "source": "OUTLINE:VIII.F appreciation;original arithmetic",
+    "cognitiveLevel": "analysis",
+    "cognitiveStatus": "provisional author estimate",
+    "reasoningOperation": "Model successive changes against changing bases instead of canceling equal percentage increases and decreases."
+  },
+  {
+    "questionId": "REBR-MATH-018",
+    "source": "DRE15:Appraiser and owner viewpoints;OUTLINE:VIII.F;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-019",
+    "source": "DRE9:Lease as contract;OUTLINE:VIII.G;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  },
+  {
+    "questionId": "REBR-MATH-020",
+    "source": "CFPB-POINTS:Compare loan offers;original arithmetic",
+    "cognitiveLevel": "application",
+    "cognitiveStatus": "provisional author estimate"
+  }
+]

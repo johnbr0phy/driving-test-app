@@ -1,0 +1,116 @@
+{
+  "fullBankOptions": {
+    "correct": 163,
+    "total": 200,
+    "categories": {
+      "rebAgency": [
+        31,
+        36
+      ],
+      "rebEnvironment": [
+        22,
+        24
+      ],
+      "rebFinance": [
+        18,
+        20
+      ],
+      "rebMath": [
+        10,
+        20
+      ],
+      "rebPractice": [
+        25,
+        32
+      ],
+      "rebProperty": [
+        22,
+        24
+      ],
+      "rebTitle": [
+        18,
+        20
+      ],
+      "rebValue": [
+        17,
+        24
+      ]
+    },
+    "cues": {
+      "prior": [
+        71,
+        90
+      ],
+      "surface": [
+        18,
+        22
+      ],
+      "knowledge": [
+        68,
+        74
+      ],
+      "none": [
+        6,
+        14
+      ]
+    },
+    "gate": "NOT PASSED"
+  },
+  "changedSubsetOptions": {
+    "correct": 42,
+    "total": 46,
+    "categories": {
+      "rebTitle": [
+        4,
+        4
+      ],
+      "rebEnvironment": [
+        8,
+        8
+      ],
+      "rebPractice": [
+        6,
+        7
+      ],
+      "rebValue": [
+        8,
+        8
+      ],
+      "rebAgency": [
+        6,
+        7
+      ],
+      "rebFinance": [
+        6,
+        7
+      ],
+      "rebProperty": [
+        3,
+        3
+      ],
+      "rebMath": [
+        1,
+        2
+      ]
+    },
+    "cues": {
+      "knowledge": [
+        17,
+        17
+      ],
+      "none": [
+        16,
+        20
+      ],
+      "surface": [
+        9,
+        9
+      ]
+    },
+    "scope": "changed subset, NOT full-bank gate"
+  },
+  "fullBankBlindCorrect": 200,
+  "changedSubsetBlindCorrect": 46,
+  "gate": "NOT PASSED",
+  "note": "Changed subset is not a full-bank retest or comparable improvement metric. Both reviewers were models, not human exam specialists."
+}

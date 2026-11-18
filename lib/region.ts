@@ -119,6 +119,7 @@ export function regionInfo(r: Region) {
 export type TestRegion = Region | "GLOBAL";
 
 const TEST_REGIONS: Record<string, TestRegion> = {
+  realestatebroker: "US",
   zafirearm: "ZA",
   appraiser: "US",
   nccco: "US",

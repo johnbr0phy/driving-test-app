@@ -1676,12 +1676,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which of these can Apex not do, according to the Apex Developer Guide?",
-    "explanation": "The guide lists what Apex cannot do: render UI other than error messages, change standard functionality, create temporary files and spawn threads. Callouts, email and scheduling are supported.",
+    "explanation": "The guide lists what Apex cannot do: render UI other than error messages, change standard functionality, create temporary files and spawn threads. Queueable jobs, JSON parsing and static method calls are all supported.",
     "options": [
-      "Send email messages",
-      "Make HTTP callouts",
+      "Parse JSON from a callout",
+      "Run asynchronously in a queue",
       "Spawn its own threads",
-      "Run as a scheduled job"
+      "Call another class's static method"
     ],
     "correct": [
       2
@@ -2034,7 +2034,7 @@
     "difficulty": 3,
     "format": "single",
     "stem": "In API version 67.0 and later, whose object and field permissions does Apex enforce by default?",
-    "explanation": "From API version 67.0, Apex runs in user context by default, enforcing the current user's object permissions and field-level security; to ignore them code must ask for system mode. Earlier versions defaulted to system mode.",
+    "explanation": "From API version 67.0, Apex runs in user context by default, enforcing the current user's object permissions and field-level security; to ignore them code must ask for system mode. In API version 66.0 and earlier, Apex ran in system mode by default, ignoring the user's object permissions and field-level security unless code checked them.",
     "options": [
       "The org's admin user's",
       "The class author's",
@@ -2678,7 +2678,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "In API version 67.0 and later, how does a class with no sharing keyword run?",
-    "explanation": "From API version 67.0, Apex without an explicit sharing declaration runs with sharing, unless it extends a parent class, whose mode it adopts. Salesforce recommends always declaring it.",
+    "explanation": "From API version 67.0, Apex without an explicit sharing declaration runs with sharing, unless it extends a parent class, whose mode it adopts. In API version 66.0 and earlier, such a class usually ran without sharing unless it was an Aura or LWC controller or was called from a with sharing class. Salesforce recommends always declaring it.",
     "options": [
       "It fails to compile",
       "Without sharing",
@@ -2866,16 +2866,16 @@
     "skill": "User mode",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which DML call runs with the user's object, field and sharing permissions?",
-    "explanation": "Passing AccessLevel.USER_MODE to a Database method enforces the running user's permissions for that operation. SYSTEM_MODE ignores them, and false only sets partial success.",
+    "stem": "Which DML call enforces the running user's object, field and sharing permissions whatever the class's API version?",
+    "explanation": "Passing AccessLevel.USER_MODE to a Database method enforces the running user's permissions for that operation. SYSTEM_MODE and insert as system ignore them, and false only sets partial success. A plain insert follows the default, which changed in API version 67.0.",
     "options": [
+      "$\\texttt{Database.insert(rec, AccessLevel.USER\\_MODE)}$",
       "$\\texttt{Database.insert(rec, false)}$",
       "$\\texttt{Database.insert(rec, AccessLevel.SYSTEM\\_MODE)}$",
-      "$\\texttt{insert rec;}$",
-      "$\\texttt{Database.insert(rec, AccessLevel.USER\\_MODE)}$"
+      "$\\texttt{insert as system rec;}$"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -3455,16 +3455,16 @@
     "skill": "Static variables in tests",
     "difficulty": 3,
     "format": "single",
-    "stem": "A test method changes a static variable set in @TestSetup. What does the next test method see?",
-    "explanation": "Each test method, and the setup method, runs as its own transaction, and the static context is reinitialized before each, so the change does not carry over.",
+    "stem": "A static variable is initialized to 5. One test method changes it to 9. What does the next test method see?",
+    "explanation": "Each test method, and the setup method, runs as its own transaction, and the static context is reinitialized before each, so static initializers run again and the next method sees 5.",
     "options": [
+      "9",
       "null",
-      "The original value",
-      "The changed value",
+      "5",
       "A compile error"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -3898,12 +3898,12 @@
     "difficulty": 3,
     "format": "single",
     "stem": "When will an upsert on a custom external ID match the value ABC123 to an existing abc123?",
-    "explanation": "Custom field matching is case-insensitive only when the field is Unique with the option to treat ABC and abc as duplicate values; otherwise ABC123 and abc123 are different keys.",
+    "explanation": "Custom field matching is case-insensitive only when the field is Unique with the option to treat ABC and abc as duplicate values; otherwise, including an External ID field that is not Unique or is case-sensitive, ABC123 and abc123 are different keys.",
     "options": [
-      "Never, as matching is case-sensitive",
+      "Field set as Unique and case-sensitive",
       "Field set as Unique and case-insensitive",
-      "Only when the field is also marked required",
-      "Always, as matching ignores case"
+      "Field set as Required and External ID",
+      "Field set as External ID only"
     ],
     "correct": [
       1

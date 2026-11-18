@@ -54,6 +54,10 @@ type Stored = {
   answers?: number;
   /** Steps already sent, so each counts once per browser. */
   sent?: LandingTryStep[];
+  /** In the answer-count cohort (enrolled once answer counting shipped, Nov 17 2026). */
+  ac?: boolean;
+  /** Answers already added to the arm's total. */
+  reported?: number;
 };
 
 /**
@@ -119,7 +123,7 @@ function send(r: Stored, step: LandingTryStep) {
   void fetch("/api/analytics/landing-try", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ test: LANDING_TRY_TEST_ID, arm: r.arm, step, exam: r.exam }),
+    body: JSON.stringify({ test: LANDING_TRY_TEST_ID, arm: r.arm, step, exam: r.exam, ...(r.ac && { ac: true }) }),
     keepalive: true,
   }).catch(() => {});
 }
@@ -133,7 +137,42 @@ export function noteLandingTryEnrolled(examId: string) {
   r.enrolledAt = Date.now();
   r.exam = examId.slice(0, 40);
   r.answers = 0;
+  r.ac = true;
+  r.reported = 0;
   send(r, "enrolled");
+}
+
+// ── Answers per visitor ─────────────────────────────────────────────────────
+// Each browser in the answer-count cohort adds its answers (within the 7-day
+// window) to its arm's total, plus the matching change in the sum of squares
+// so the admin card can test the means. Sent at milestones and when the page
+// is hidden, so a browser costs a handful of writes, not one per answer.
+
+/** Answer counts the card shows as "reached N+" (and that trigger a send). */
+export const LANDING_TRY_MILESTONES = [1, 3, 5, 10, 20, 50, 100] as const;
+/** One browser's answers count up to this, so a stuck script cannot skew the mean. */
+export const LANDING_TRY_ANSWER_CAP = 1000;
+
+function flushAnswers(r: Stored, reached?: number) {
+  if (!r.ac) return;
+  const prev = r.reported ?? 0;
+  const now = Math.min(r.answers ?? 0, LANDING_TRY_ANSWER_CAP);
+  if (now <= prev && reached === undefined) return;
+  r.reported = Math.max(prev, now);
+  save(r);
+  if (isInternalBrowser(auth.currentUser?.email)) return;
+  void fetch("/api/analytics/landing-try", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ test: LANDING_TRY_TEST_ID, arm: r.arm, step: "answers", prev, now: r.reported, reached }),
+    keepalive: true,
+  }).catch(() => {});
+}
+
+let flushOnHide = false;
+function flushPendingAnswers() {
+  const r = load();
+  if (r && r.ac && (r.answers ?? 0) > (r.reported ?? 0)) flushAnswers(r);
 }
 
 /** Every answered exam question (from lib/questionPicks.ts). */
@@ -145,6 +184,15 @@ export function noteLandingTryAnswer() {
   save(r);
   send(r, "answered");
   if (r.answers >= LANDING_TRY_ENGAGED) send(r, "engaged");
+  if (!r.ac) return;
+  if ((LANDING_TRY_MILESTONES as readonly number[]).includes(r.answers)) flushAnswers(r, r.answers);
+  else if (!flushOnHide) {
+    flushOnHide = true;
+    window.addEventListener("pagehide", flushPendingAnswers);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") flushPendingAnswers();
+    });
+  }
 }
 
 export function noteLandingTrySignup() {
@@ -196,4 +244,55 @@ export function landingTryResult(card: LandingTryCounts, control: LandingTryCoun
   else if (n1 >= LANDING_TRY_TARGET_PER_ARM && n2 >= LANDING_TRY_TARGET_PER_ARM) verdict = "drop";
   else verdict = "running";
   return { verdict, lift, pAnswered, pSignup };
+}
+
+/** Answers-per-visitor counters for one arm (analytics/landingTryTest.answers). */
+export type LandingTryAnswerCounts = {
+  /** Browsers enrolled into the answer-count cohort. */
+  enrolled?: number;
+  /** Their answers within 7 days. */
+  total?: number;
+  /** Sum of each browser's answers squared, for the variance. */
+  sq?: number;
+  /** Browsers that reached each milestone. */
+  reached?: Record<string, number>;
+};
+
+export type LandingTryMeans = {
+  /** Mean answers per enrolled browser, per arm. */
+  card: number;
+  control: number;
+  /** Mean answers among browsers that answered at least one. */
+  cardPerAnswerer: number;
+  controlPerAnswerer: number;
+  /** Welch test of the per-visitor means. */
+  p: number;
+};
+
+function normalP(z: number): number {
+  const t = 1 / (1 + 0.3275911 * (Math.abs(z) / Math.SQRT2));
+  const erfc =
+    t * (0.254829592 + t * (-0.284496736 + t * (1.421413741 + t * (-1.453152027 + t * 1.061405429)))) * Math.exp(-(z * z) / 2);
+  return Math.min(1, Math.max(0, erfc));
+}
+
+/** Mean answers per new visitor in each arm and whether they differ. */
+export function landingTryMeans(card: LandingTryAnswerCounts, control: LandingTryAnswerCounts): LandingTryMeans {
+  const stats = (a: LandingTryAnswerCounts) => {
+    const n = a.enrolled ?? 0;
+    const mean = n ? (a.total ?? 0) / n : 0;
+    const variance = n > 1 ? Math.max(0, ((a.sq ?? 0) - n * mean * mean) / (n - 1)) : 0;
+    const answerers = a.reached?.["1"] ?? 0;
+    return { n, mean, variance, perAnswerer: answerers ? (a.total ?? 0) / answerers : 0 };
+  };
+  const a = stats(card);
+  const b = stats(control);
+  const se = a.n && b.n ? Math.sqrt(a.variance / a.n + b.variance / b.n) : 0;
+  return {
+    card: a.mean,
+    control: b.mean,
+    cardPerAnswerer: a.perAnswerer,
+    controlPerAnswerer: b.perAnswerer,
+    p: se ? normalP((a.mean - b.mean) / se) : 1,
+  };
 }

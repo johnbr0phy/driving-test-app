@@ -16,9 +16,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free Singapore Security Officer Practice Test 2026 - PLRD Licence Questions";
 const metaDescription =
-  "Free practice for the Singapore security officer licence: 200 original questions on the PSIA and licensing conditions, guard and patrol, access control, security equipment, incident response, recognising terrorist threats, fire safety and first aid. Four 50-question mock tests, every answer explained.";
+  "Start free: practice for the Singapore security officer licence with 200 original questions on the PSIA and licensing conditions, guard and patrol, access control, security equipment, incident response, recognising terrorist threats, fire safety and first aid. Four 50-question mock tests, every answer explained.";
 const description =
-  "Free practice for the WSQ Basic Licensing Units a new security officer must pass before the Police Licensing and Regulatory Department (PLRD) grants a security officer licence under the Private Security Industry Act 2007: 200 original questions on the PSIA, the Conduct Regulations and the licensing conditions, guard and patrol duties, access control and security equipment, incident response, recognising terrorist threats, fire safety and emergencies, and first aid. Four 50-question mock tests and four training sets.";
+  "Start-free practice for the WSQ Basic Licensing Units a new security officer must pass before being deployed under a security officer licence from the Police Licensing and Regulatory Department (PLRD), under the Private Security Industry Act 2007: 200 original questions on the PSIA, the Conduct Regulations and the licensing conditions, guard and patrol duties, access control and security equipment, incident response, recognising terrorist threats, fire safety and emergencies, and first aid. Four 50-question mock tests and four training sets.";
 
 export const metadata: Metadata = {
   title,

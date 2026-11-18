@@ -16,13 +16,13 @@ Q("Which process keeps a licence valid beyond its approaching expiry date?",
  "Applying to renew it under section 24","Applying for a copy under section 29","Notifying a change of circumstances","Applying for a new competency certificate",
  "Renewal under section 24 deals with the continued validity of a licence that is about to expire.")
 Q("A licence holder moves house. Which step deals with the new residence?",
- "A section 25 address notification","A renewal application","A new competency application","A section 29 copy application",
+ "Section 25 address notification","Renewal application","New competency application","Section 29 copy application",
  "Section 25 requires written notification of a changed physical or postal address.")
 Q("Application information changes but the addresses stay the same. Which notification applies?",
- "A section 26 notice of changed particulars","An address notice under section 25","A renewal application under section 24","A copy request under section 29",
+ "Section 26 notice of changed particulars","Address notice under section 25","Renewal application under section 24","Copy request under section 29",
  "Section 26 requires notification of changes to the information submitted with the application. Section 25 covers only addresses.")
 Q("A licence card is damaged and unreadable but not expired. Which application addresses it?",
- "A copy application under section 29","Renewing the licence ahead of expiry","Applying for a new licence for it","Notifying a change of particulars",
+ "Copy application under section 29","Renewing the licence ahead of expiry","Applying for a new licence for it","Notifying a change of particulars",
  "Section 29 provides for a copy when a document is defaced, lost or stolen. This is separate from renewing the licence.")
 Q("Under section 29, how soon must a stolen licence card be reported?",
  "Within 24 hours","Within 48 hours","Within 7 days","Within 30 days",
@@ -61,10 +61,10 @@ Q("What must a section 20 business licence state to limit the company's use of t
  "The purpose for which it is issued","The name of every employee who may carry it","The number of rounds it may fire each year","The province where the company is registered",
  "A section 20 licence must specify the business purpose for which it is issued, and use is limited to that purpose.")
 Q("A section 21 authorisation allows possession only. What is needed before using the firearm?",
- "The Registrar's endorsement permitting use","A competency certificate for that firearm only","Written consent from the previous owner","Permission from a range officer",
+ "Registrar's endorsement permitting use","Competency certificate for that firearm only","Written consent from the previous owner","Permission from a range officer",
  "Section 21(5) requires the Registrar's endorsement permitting use, and use must follow its conditions.")
 Q("Which approval is needed to dispose of a firearm held under a section 21 authorisation?",
- "The Registrar's written consent","The local DFO's verbal approval","None, since it is held only temporarily","The buyer's competency certificate alone",
+ "Registrar's written consent","Local DFO's verbal approval","None, since it is held only temporarily","Buyer's competency certificate alone",
  "Section 21(6) requires the Registrar's written consent for disposal, subject to any conditions imposed.")
 Q("A temporary authorisation says where the firearm may be kept. What must the holder do?",
  "Comply with the conditions it states","Keep it anywhere the holder thinks secure","Tell the DFO only when it is moved","Reapply for the authorisation every 30 days",
@@ -73,10 +73,10 @@ Q("What must an heir do to keep an inherited ordinary firearm permanently?",
  "Apply for the appropriate licence","Register the will with the DFO","Nothing, as the estate's licence passes on","Obtain a section 21 authorisation only",
  "Section 148 requires the appropriate licence, permit or authorisation. Inheritance alone does not give the right to possess.")
 Q("Which detail tells apart two firearms of the same make and model?",
- "Its serial number or other mark","Its calibre and barrel length","Its licence category and number","The manufacturer's model name",
+ "Its serial number or other mark","Its calibre and barrel length","Its licence category and number","Manufacturer's model name",
  "The manufacturer's serial number or another authorised identifying mark distinguishes one firearm from an identical one.")
 Q("A DFO compares the person at the counter with their ID book. What is being verified?",
- "The applicant's identity","The firearm's serial number","The applicant's competency","The applicant's home address",
+ "Applicant's identity","Firearm's serial number","Applicant's competency","Applicant's home address",
  "This check concerns who the applicant is, not the firearm or the applicant's competence.")
 Q("An official asks a buyer for the licence or permit covering a firearm. What is being checked?",
  "That the buyer may legally hold it","That the price was paid in full","That the buyer now owns it outright","That the buyer's tax affairs are in order",
@@ -97,19 +97,19 @@ Q("Under section 21(1), who may receive a temporary authorisation to possess a f
  "Any person, including a non-citizen","Only South African citizens","Only citizens and permanent residents","Only people who already hold a firearm licence",
  "Section 21(1) allows the Registrar to issue a temporary authorisation to possess a firearm to any person, including a non-citizen, for a period and on conditions the Registrar sets.")
 Q("Who supplies the declaration supporting dedicated hunter status?",
- "Their accredited hunting association","Any registered hunting club nearby","A professional hunting outfitter","The provincial nature conservation office",
+ "Their accredited hunting association","Any registered hunting club nearby","Professional hunting outfitter","Provincial nature conservation office",
  "Section 16 requires the declaration from the relevant accredited hunting association, not from any club or outfitter.")
 Q("Who provides the section 16 declaration for a dedicated sport shooter?",
- "The accredited sport-shooting body","The provincial sport department","The range where the person shoots","The Registrar's sport desk at head office",
+ "Accredited sport-shooting body","Provincial sport department","Range where the person shoots","Registrar's sport desk at head office",
  "The relevant accredited sport-shooting organisation supplies the declaration for dedicated sport status.")
 Q("Who provides the declaration supporting private collector status?",
- "The accredited collectors association","A licensed dealer who values the firearm","A museum curator","A collectors' club that is not accredited",
+ "Accredited collectors association","Licensed dealer who values the firearm","Museum curator","A collectors' club that is not accredited",
  "The accredited collectors association provides the support section 17 requires. A club without accreditation cannot.")
 Q("Who must hold the business licence for a security officer's work firearm?",
- "The security firm that employs the officer","The security officer in their own name","The client whose site is being guarded","The private security industry regulator",
+ "Security firm that employs the officer","Security officer in their own name","The client whose site is being guarded","Private security industry regulator",
  "Section 20 requires the security service provider that holds the business licence to supply the firearm only to a competent security officer in its service, subject to the prescribed conditions.")
 Q("A relative offers an unlicensed person an ordinary firearm as a gift. What must come first?",
- "Obtaining lawful authority first","Taking it home, then applying within 30 days","A signed deed of donation","Nothing, since it is a family gift",
+ "Obtaining lawful authority first","Taking it home, then applying within 30 days","Signed deed of donation","Nothing, since it is a family gift",
  "A gift does not override the general prohibition on possession. The recipient must obtain the appropriate legal authority before taking possession.")
 Q("A new licence has a clerical mistake. What should the holder do?",
  "Apply to correct it via the DFO","Correct it neatly in ink","Leave it until the next renewal","Ask the selling dealer to amend it",
@@ -145,37 +145,37 @@ Q("An organisation can run events but cannot support the Act's wider aims. Which
  "Capacity to advance the Act's purposes","Capacity to run its own events","Trustworthiness of its chairperson","Suitability of its premises",
  "Section 8 also requires capacity to advance the purposes of the Act, beyond running the organisation's own activities.")
 Q("Ownership passes to another for an agreed price. Which transfer is this?",
- "A sale","A donation","A loan","A rental",
+ "Sale","Donation","Loan","Rental",
  "Selling is included in the statutory definition of transfer. Payment does not remove the lawful-possession requirements.")
 Q("A firearm is given free for the recipient to keep. Which transfer is this?",
- "A donation","A sale on credit","A loan","A rental",
+ "Donation","Sale on credit","Loan","Rental",
  "A donation is a transfer under the Act and still requires lawful authority for possession.")
 Q("A firearm is handed over free for a while, to be returned. Which transfer is this?",
- "A loan","A rental","A donation","A sale with a buy-back",
+ "Loan","Rental","Donation","Sale with a buy-back",
  "Lending is included in transfer. The owner keeping ownership does not remove the Act's requirements.")
 Q("A firearm is handed over for an agreed period for a fee. Which transfer is this?",
- "Letting, that is a rental","A free loan","A sale","A donation with conditions",
+ "Letting, that is a rental","Free loan","Sale","Donation with conditions",
  "Letting is included in transfer. A hire arrangement cannot replace the legally required authority.")
 Q("A trust deed is silent on whether the trust may own weapons. Which section 7 element is missing?",
- "A clause authorising it to hold firearms","A clause listing each firearm's value","A clause naming who inherits the firearms","A clause naming the trust's auditors",
+ "Clause authorising it to hold firearms","Clause listing each firearm's value","Clause naming who inherits the firearms","Clause naming the trust's auditors",
  "The deed must clearly provide for possession of the relevant firearms, ammunition or muzzle loading firearms.")
 Q("A trust deed allows firearms but never says what the trust will use them for. Which section 7(5) requirement is unmet?",
- "A clearly stated intended purpose","A list of the trust's beneficiaries","The date the trust was registered","A clause allowing the trust to possess firearms",
+ "Clearly stated intended purpose","List of the trust's beneficiaries","The date the trust was registered","Clause allowing the trust to possess firearms",
  "Section 7(5)(b) requires the deed to stipulate clearly the intended purpose of possession. This deed already provides for possession, so section 7(5)(a) is met.")
 Q("A trust deed sets no limit on how long firearms may be held. What is missing?",
- "A clause ending possession once the purpose no longer requires it","A clause naming a successor trustee for the firearms","A clause requiring the firearms to be insured","A clause requiring every trustee to be a dedicated hunter",
+ "A clause ending possession once the purpose no longer requires it","Clause naming a successor trustee for the firearms","A clause requiring the firearms to be insured","A clause requiring every trustee to be a dedicated hunter",
  "Section 7(5)(c) requires that possession last only while it is necessary to achieve the stated intended purpose.")
 Q("A company has named nobody to make its firearm application. What appointment is required?",
- "A natural person to act for it","A juristic person as guarantor","An accredited association as sponsor","An auditor to sign the application",
+ "Natural person to act for it","Juristic person as guarantor","Accredited association as sponsor","Auditor to sign the application",
  "A juristic applicant must nominate a natural person to act as its responsible person under section 7.")
 Q("An appeal notice does not say what was refused or cancelled. What is missing?",
- "The decision being challenged","A sworn affidavit by the DFO","A copy of the competency certificate","A letter from a legal representative",
+ "Decision being challenged","Sworn affidavit by the DFO","Copy of the competency certificate","Letter from a legal representative",
  "Regulation 91 requires the notice to identify the decision being appealed.")
 Q("An appeal notice omits when the Registrar ruled. What is missing?",
- "The date of the decision","The appellant's date of birth","The firearm's date of purchase","The licence's expiry date",
+ "Date of the decision","Appellant's date of birth","Firearm's date of purchase","Licence's expiry date",
  "The date of the decision must be stated. It matters for the appeal period.")
 Q("An appeal notice gives no reasons for changing the decision. What is missing?",
- "The grounds relied on","A list of the appellant's other firearms","The DFO's comments on the case","A request for legal costs",
+ "Grounds relied on","List of the appellant's other firearms","DFO's comments on the case","Request for legal costs",
  "The notice must clearly state the ground or grounds of appeal.")
 Q("An appellant's written arguments are not included with the appeal notice. What must be done?",
  "Attach them to the notice","Send them once the notice is acknowledged","Send them to the DFO some weeks later","Read them out at the hearing instead",

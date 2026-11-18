@@ -179,9 +179,9 @@
     "stem": "A technician is asked to assess a supplier system outside the signed authorization, without supplier consent. What is needed first?",
     "options": [
       "Written sign-off from the third-party owner to test it",
-      "A verbal go-ahead from the internal colleague who asked",
-      "A scan schedule agreed with the internal help desk",
-      "A non-disclosure agreement signed by the tester"
+      "Verbal go-ahead from the internal colleague who asked",
+      "Scan schedule agreed with the internal help desk",
+      "Non-disclosure agreement signed by the tester"
     ],
     "correct": [
       0
@@ -262,10 +262,10 @@
     "format": "single",
     "stem": "A service rejects connections that fail a machine-enforced network rule. Which control category is this?",
     "options": [
-      "A logical (technical) control",
-      "An administrative control",
-      "A physical control",
-      "An operational control"
+      "Logical (technical) control",
+      "Administrative control",
+      "Physical control",
+      "Operational control"
     ],
     "correct": [
       0
@@ -283,10 +283,10 @@
     "format": "single",
     "stem": "A secured doorway restricts entry to a room of confidential paper records. Which control category is the doorway?",
     "options": [
-      "A compensating control",
-      "A physical control",
-      "A technical control",
-      "An administrative control"
+      "Compensating control",
+      "Physical control",
+      "Technical control",
+      "Administrative control"
     ],
     "correct": [
       1
@@ -304,10 +304,10 @@
     "format": "single",
     "stem": "Management issues a binding rule on who may approve access exceptions. Which category is the rule?",
     "options": [
-      "A physical control",
-      "A corrective control",
-      "An administrative control",
-      "A technical control"
+      "Physical control",
+      "Corrective control",
+      "Administrative control",
+      "Technical control"
     ],
     "correct": [
       2
@@ -325,10 +325,10 @@
     "format": "single",
     "stem": "Operators get role-specific practice and are assessed on secure recovery tasks. Which kind of control is this?",
     "options": [
-      "A technical recovery control",
-      "A physical security control",
-      "A detective monitoring control",
-      "A personnel training control"
+      "Technical recovery control",
+      "Physical security control",
+      "Detective monitoring control",
+      "Personnel training control"
     ],
     "correct": [
       3
@@ -430,9 +430,9 @@
     "format": "single",
     "stem": "A virtual machine processes production data, but no team owns it. Which record brings it under management?",
     "options": [
-      "An inventory entry naming an accountable owner",
-      "A vulnerability scan report for the machine",
-      "A patch schedule for its guest operating system",
+      "Inventory entry naming an accountable owner",
+      "Vulnerability scan report for the machine",
+      "Patch schedule for its guest operating system",
       "A classification label for the data it holds"
     ],
     "correct": [
@@ -514,10 +514,10 @@
     "format": "single",
     "stem": "An unapproved network change would alter access paths to a regulated service. Which assessment should inform approval?",
     "options": [
-      "A security impact analysis",
-      "A post-implementation review",
-      "A rollback rehearsal",
-      "A capacity forecast"
+      "Security impact analysis",
+      "Post-implementation review",
+      "Rollback rehearsal",
+      "Capacity forecast"
     ],
     "correct": [
       0
@@ -621,8 +621,8 @@
     "options": [
       "Emailing the updated contact list",
       "Role rehearsal for the named responders",
-      "A general phishing awareness module",
-      "A quiz on the plan's handoff section"
+      "General phishing awareness module",
+      "Quiz on the plan's handoff section"
     ],
     "correct": [
       1
@@ -640,10 +640,10 @@
     "format": "single",
     "stem": "Management wants evidence that an awareness campaign improved handling, not just attendance. What should be evaluated?",
     "options": [
-      "The number of posters displayed in offices",
+      "Number of posters displayed in offices",
       "Staff satisfaction scores for the campaign",
       "Changes in how staff report and handle threats",
-      "The percentage of staff who completed the course"
+      "Percentage of staff who completed the course"
     ],
     "correct": [
       2
@@ -703,10 +703,10 @@
     "format": "single",
     "stem": "A visitor is approved to inspect one equipment room under supervision. Which control keeps the visit in scope?",
     "options": [
-      "A camera covering the building entrance",
-      "A staff escort for the whole visit",
-      "A visitor badge valid throughout the building",
-      "A signed confidentiality agreement"
+      "Camera covering the building entrance",
+      "Staff escort for the whole visit",
+      "Visitor badge valid throughout the building",
+      "Signed confidentiality agreement"
     ],
     "correct": [
       1
@@ -745,9 +745,9 @@
     "format": "single",
     "stem": "Investigators must establish whether a technician entered a restricted room at a disputed time. Which evidence is relevant?",
     "options": [
-      "The technician's current badge entitlements",
-      "The reception visitor sign-in sheet",
-      "The room's planned maintenance schedule",
+      "Technician's current badge entitlements",
+      "Reception visitor sign-in sheet",
+      "Room's planned maintenance schedule",
       "Door access logs for that room and period"
     ],
     "correct": [
@@ -789,7 +789,7 @@
     "options": [
       "Routing error reports to the vendor help desk",
       "Named accountability for running and reviewing it",
-      "A higher accuracy threshold for the model",
+      "Higher accuracy threshold for the model",
       "Publication of the model's training data sources"
     ],
     "correct": [
@@ -829,10 +829,10 @@
     "format": "single",
     "stem": "Policy requires explaining later how an automated access recommendation was produced and who approved it. What should be kept?",
     "options": [
-      "The final business outcome stored in the case file",
-      "The model's overall accuracy statistics",
-      "The vendor's product documentation for the model",
-      "The inputs, model version and who signed off"
+      "Final business outcome stored in the case file",
+      "Model's overall accuracy statistics",
+      "Vendor's product documentation for the model",
+      "Inputs, model version and who signed off"
     ],
     "correct": [
       3
@@ -850,10 +850,10 @@
     "format": "single",
     "stem": "A verifier checks a memorized passphrase. Which category describes this evidence?",
     "options": [
-      "A knowledge factor",
-      "A possession factor",
-      "An inherence factor",
-      "A location factor"
+      "Knowledge factor",
+      "Possession factor",
+      "Inherence factor",
+      "Location factor"
     ],
     "correct": [
       0
@@ -892,10 +892,10 @@
     "format": "single",
     "stem": "An authenticator compares a fingerprint with its enrolled template. Which category describes the biometric characteristic?",
     "options": [
-      "A possession factor",
-      "A behavioral risk signal",
-      "An inherence factor",
-      "A knowledge factor"
+      "Possession factor",
+      "Behavioral risk signal",
+      "Inherence factor",
+      "Knowledge factor"
     ],
     "correct": [
       2
@@ -914,9 +914,9 @@
     "stem": "An access service notes an unusual login location alongside authentication. What is the location?",
     "options": [
       "A possession factor the user holds",
-      "A knowledge factor the user supplies",
-      "An inherence factor of the user",
-      "A risk signal rather than a factor"
+      "Knowledge factor the user supplies",
+      "Inherence factor of the user",
+      "Risk signal rather than a factor"
     ],
     "correct": [
       3
@@ -1249,9 +1249,9 @@
     "format": "single",
     "stem": "A file server grants access because the account is in an approved group on the domain controller. Which mechanism is this?",
     "options": [
-      "A SAML group attribute asserted by a partner",
-      "An OAuth scope granted to a client app",
-      "An OpenID Connect group claim from a social login",
+      "SAML group attribute asserted by a partner",
+      "OAuth scope granted to a client app",
+      "OpenID Connect group claim from a social login",
       "Directory group membership"
     ],
     "correct": [
@@ -1336,7 +1336,7 @@
       "Signature validation of the presented token",
       "Audience validation of the token",
       "Expiry validation of the token",
-      "A permission check for that operation"
+      "Permission check for that operation"
     ],
     "correct": [
       3
@@ -1460,9 +1460,9 @@
     "stem": "A captured authentication response must not work in a later login. Which design meets this?",
     "options": [
       "Encrypting the response under a static key",
-      "A fresh random challenge for each login",
-      "A longer static password",
-      "A longer session timeout"
+      "Fresh random challenge for each login",
+      "Longer static password",
+      "Longer session timeout"
     ],
     "correct": [
       1
@@ -1501,8 +1501,8 @@
     "format": "single",
     "stem": "A caller who lost all authenticators requests a replacement credential. Which process must confirm their claim?",
     "options": [
-      "A reset based on the caller ID shown",
-      "A reset after answering security questions only",
+      "Reset based on the caller ID shown",
+      "Reset after answering security questions only",
       "Emailing a temporary password to the caller",
       "Identity-verified account recovery"
     ],
@@ -1543,10 +1543,10 @@
     "format": "single",
     "stem": "A user no longer wants a third-party app to reach their documents through an approved delegation. What should be withdrawn?",
     "options": [
-      "The document sharing links the user created",
-      "The app's OAuth grant and its tokens",
-      "The user's own account password",
-      "The user's directory group memberships"
+      "Document sharing links the user created",
+      "App's OAuth grant and its tokens",
+      "User's own account password",
+      "User's directory group memberships"
     ],
     "correct": [
       1
@@ -1669,9 +1669,9 @@
     "format": "single",
     "stem": "A system trusts a partner identity but still checks each requested operation against policy. Which decision stays separate?",
     "options": [
-      "The identity federation agreement",
+      "Identity federation agreement",
       "User authentication at sign-in",
-      "The cross-domain trust setup",
+      "Cross-domain trust setup",
       "Resource-level authorization"
     ],
     "correct": [
@@ -1690,10 +1690,10 @@
     "format": "single",
     "stem": "An organized group has the intent and capability to disrupt the organization. What does the group represent?",
     "options": [
-      "A threat source",
-      "A vulnerability",
-      "An attack vector",
-      "A residual risk"
+      "Threat source",
+      "Vulnerability",
+      "Attack vector",
+      "Residual risk"
     ],
     "correct": [
       0
@@ -1711,10 +1711,10 @@
     "format": "single",
     "stem": "A public application runs an unsupported component with a known exploitable flaw. What does that weakness represent?",
     "options": [
-      "A risk event",
-      "A vulnerability",
-      "A threat agent",
-      "An exploit"
+      "Risk event",
+      "Vulnerability",
+      "Threat agent",
+      "Exploit"
     ],
     "correct": [
       1
@@ -1753,10 +1753,10 @@
     "format": "single",
     "stem": "A deployed access gateway enforces approved connection policy. What does this measure represent?",
     "options": [
-      "A residual risk",
-      "A vulnerability",
-      "A threat vector",
-      "A safeguard"
+      "Residual risk",
+      "Vulnerability",
+      "Threat vector",
+      "Safeguard"
     ],
     "correct": [
       3
@@ -2110,10 +2110,10 @@
     "format": "single",
     "stem": "An alert flags a malicious login, but the login proves legitimate. How is the alert classified?",
     "options": [
-      "A false positive",
-      "A false negative",
-      "A true negative",
-      "A test alert"
+      "False positive",
+      "False negative",
+      "True negative",
+      "Test alert"
     ],
     "correct": [
       0
@@ -2131,10 +2131,10 @@
     "format": "single",
     "stem": "A confirmed malicious transfer occurred, but the rule did not alert. How is the result classified?",
     "options": [
-      "A duplicate alert",
-      "A false negative",
-      "A false positive",
-      "A true negative"
+      "Duplicate alert",
+      "False negative",
+      "False positive",
+      "True negative"
     ],
     "correct": [
       1
@@ -2152,10 +2152,10 @@
     "format": "single",
     "stem": "A rule alerts on a file transfer that investigation confirms was malicious. How is this classified?",
     "options": [
-      "A true negative",
-      "An informational alert",
-      "A true positive",
-      "A false positive"
+      "True negative",
+      "Informational alert",
+      "True positive",
+      "False positive"
     ],
     "correct": [
       2
@@ -2173,10 +2173,10 @@
     "format": "single",
     "stem": "A benign health check occurs and the detection system correctly raises no alert. How is this classified?",
     "options": [
-      "A false negative",
-      "A true positive",
-      "A suppressed alert",
-      "A true negative"
+      "False negative",
+      "True positive",
+      "Suppressed alert",
+      "True negative"
     ],
     "correct": [
       3
@@ -2299,10 +2299,10 @@
     "format": "single",
     "stem": "A team needs to know which services are reachable from the internet without internal credentials. Which approach fits?",
     "options": [
-      "A static code review",
-      "An external unauthenticated scan",
-      "A credentialed scan of each host",
-      "An internal segmentation test"
+      "Static code review",
+      "External unauthenticated scan",
+      "Credentialed scan of each host",
+      "Internal segmentation test"
     ],
     "correct": [
       1
@@ -2320,10 +2320,10 @@
     "format": "single",
     "stem": "Under signed rules of engagement, testers check whether weaknesses can be chained to reach an agreed goal. Which approach fits?",
     "options": [
-      "A compliance audit",
-      "A tabletop exercise",
-      "A penetration test",
-      "A vulnerability scan"
+      "Compliance audit",
+      "Tabletop exercise",
+      "Penetration test",
+      "Vulnerability scan"
     ],
     "correct": [
       2
@@ -2341,10 +2341,10 @@
     "format": "single",
     "stem": "An assessor checks retained approvals and access-review records against a stated requirement. Which approach fits?",
     "options": [
-      "A penetration test of the access system",
-      "A vulnerability scan of the review tool",
-      "A red team exercise",
-      "A compliance audit"
+      "Penetration test of the access system",
+      "Vulnerability scan of the review tool",
+      "Red team exercise",
+      "Compliance audit"
     ],
     "correct": [
       3
@@ -2656,7 +2656,7 @@
     "format": "single",
     "stem": "A recovered service is running, and responders watch for recurrence or residual behavior. Which activity is this?",
     "options": [
-      "A second eradication pass",
+      "Second eradication pass",
       "Evidence acquisition",
       "Post-restoration monitoring",
       "Further containment"
@@ -2677,10 +2677,10 @@
     "format": "single",
     "stem": "The response lead must give business teams a factual update on scope, impact and next steps. Which activity is this?",
     "options": [
-      "A public statement on social media",
-      "A legal hold notice to custodians",
-      "A technical root-cause report",
-      "A status briefing via the agreed channel"
+      "Public statement on social media",
+      "Legal hold notice to custodians",
+      "Technical root-cause report",
+      "Status briefing via the agreed channel"
     ],
     "correct": [
       3
@@ -2719,10 +2719,10 @@
     "format": "single",
     "stem": "An evidence drive passes from the collector to the forensic examiner. Which record preserves the handoff?",
     "options": [
-      "A case timeline",
-      "A chain-of-custody record",
-      "A forensic analysis report",
-      "An evidence hash list"
+      "Case timeline",
+      "Chain-of-custody record",
+      "Forensic analysis report",
+      "Evidence hash list"
     ],
     "correct": [
       1
@@ -2742,7 +2742,7 @@
     "options": [
       "Tools that can read the private devices",
       "Storage for the private device images",
-      "A legal basis to examine those devices",
+      "Legal basis to examine those devices",
       "Hashes of the private devices before imaging"
     ],
     "correct": [
@@ -2761,9 +2761,9 @@
     "format": "single",
     "stem": "An examiner's conclusion relies on several tools and transformations. Which record lets a peer assess the reasoning?",
     "options": [
-      "The final conclusion with the examiner's signature",
-      "The list of evidence items received",
-      "The custody log for the evidence",
+      "Final conclusion with the examiner's signature",
+      "List of evidence items received",
+      "Custody log for the evidence",
       "Notes on methods, tool versions and assumptions"
     ],
     "correct": [
@@ -2803,7 +2803,7 @@
     "format": "single",
     "stem": "A case needs a controlled copy of stored files and file-system metadata for later study. Which activity fits?",
     "options": [
-      "A screenshot of the desktop",
+      "Screenshot of the desktop",
       "Forensic disk imaging",
       "Live memory capture",
       "Network packet capture"
@@ -2845,10 +2845,10 @@
     "format": "single",
     "stem": "Responders must order validated login, process and transfer events to see how compromise unfolded. Which product serves this?",
     "options": [
-      "An evidence inventory",
-      "A chain-of-custody form",
-      "A root-cause statement",
-      "An incident timeline"
+      "Evidence inventory",
+      "Chain-of-custody form",
+      "Root-cause statement",
+      "Incident timeline"
     ],
     "correct": [
       3
@@ -2950,10 +2950,10 @@
     "format": "single",
     "stem": "A backup copies all data in scope, regardless of earlier backups. Which approach is this?",
     "options": [
-      "A full backup",
-      "An incremental backup",
-      "A differential backup",
-      "A transaction log backup"
+      "Full backup",
+      "Incremental backup",
+      "Differential backup",
+      "Transaction log backup"
     ],
     "correct": [
       0
@@ -2971,10 +2971,10 @@
     "format": "single",
     "stem": "A backup copies changes since the most recent backup of any type, full or incremental. Which approach is this?",
     "options": [
-      "A mirror copy",
-      "An incremental backup",
-      "A differential backup",
-      "A full backup"
+      "Mirror copy",
+      "Incremental backup",
+      "Differential backup",
+      "Full backup"
     ],
     "correct": [
       1
@@ -2992,10 +2992,10 @@
     "format": "single",
     "stem": "A backup copies all changes since the last full backup, even ones copied yesterday. Which approach is this?",
     "options": [
-      "A full backup",
-      "A continuous replica",
-      "A differential backup",
-      "An incremental backup"
+      "Full backup",
+      "Continuous replica",
+      "Differential backup",
+      "Incremental backup"
     ],
     "correct": [
       2
@@ -3013,10 +3013,10 @@
     "format": "single",
     "stem": "Operators rebuild an isolated service from a retained copy and verify its data and functions. What was performed?",
     "options": [
-      "A backup integrity checksum",
-      "A backup job completion check",
-      "A replication health check",
-      "A restoration test"
+      "Backup integrity checksum",
+      "Backup job completion check",
+      "Replication health check",
+      "Restoration test"
     ],
     "correct": [
       3
@@ -3034,8 +3034,8 @@
     "format": "single",
     "stem": "Ransomware could reach production and always-writable backups through the same credentials. Which design feature addresses this?",
     "options": [
-      "An offline or immutable backup copy",
-      "A second copy on the same storage array",
+      "Offline or immutable backup copy",
+      "Second copy on the same storage array",
       "More frequent snapshots on production",
       "Backups encrypted with the production key"
     ],
@@ -3055,10 +3055,10 @@
     "format": "single",
     "stem": "Primary and recovery facilities sit in the same flood zone. Which design feature addresses this?",
     "options": [
-      "A second rack in the same building",
-      "An alternate site in a different hazard area",
-      "A warm site across the street",
-      "A UPS and generator at the primary site"
+      "Second rack in the same building",
+      "Alternate site in a different hazard area",
+      "Warm site across the street",
+      "UPS and generator at the primary site"
     ],
     "correct": [
       1
@@ -3076,8 +3076,8 @@
     "format": "single",
     "stem": "A service must keep running when one server fails, without a rebuild. Which feature addresses this?",
     "options": [
-      "A cold standby built on demand",
-      "An extended hardware support contract",
+      "Cold standby built on demand",
+      "Extended hardware support contract",
       "Redundant servers with automatic failover",
       "Nightly backups of the server"
     ],
@@ -3097,10 +3097,10 @@
     "format": "single",
     "stem": "A service runs at an alternate site and must return to normal without losing new records. Which plan is required?",
     "options": [
-      "A failover runbook",
-      "A tabletop exercise",
-      "A backup rotation schedule",
-      "A documented failback procedure"
+      "Failover runbook",
+      "Tabletop exercise",
+      "Backup rotation schedule",
+      "Documented failback procedure"
     ],
     "correct": [
       3
@@ -3118,10 +3118,10 @@
     "format": "single",
     "stem": "Participants check a recovery plan line by line for contacts and roles, with no scenario. Which activity is this?",
     "options": [
-      "A read-through review",
-      "A tabletop exercise",
-      "A parallel test",
-      "A full interruption test"
+      "Read-through review",
+      "Tabletop exercise",
+      "Parallel test",
+      "Full interruption test"
     ],
     "correct": [
       0
@@ -3139,10 +3139,10 @@
     "format": "single",
     "stem": "Participants discuss decisions and escalation during a simulated outage, without moving live workloads. Which exercise is this?",
     "options": [
-      "A full interruption test",
-      "A tabletop exercise",
-      "A checklist review",
-      "A live failover simulation"
+      "Full interruption test",
+      "Tabletop exercise",
+      "Checklist review",
+      "Live failover simulation"
     ],
     "correct": [
       1
@@ -3160,10 +3160,10 @@
     "format": "single",
     "stem": "Technicians rebuild an isolated application from retained data copies and test it. Which exercise is this?",
     "options": [
-      "A checklist review",
-      "A full interruption test",
-      "A backup restoration test",
-      "A tabletop exercise"
+      "Checklist review",
+      "Full interruption test",
+      "Backup restoration test",
+      "Tabletop exercise"
     ],
     "correct": [
       2
@@ -3181,10 +3181,10 @@
     "format": "single",
     "stem": "Under a test plan, a service moves real processing to its alternate environment and checks continuity. Which exercise is this?",
     "options": [
-      "A parallel test",
-      "A tabletop exercise",
-      "A structured walkthrough",
-      "A full interruption test"
+      "Parallel test",
+      "Tabletop exercise",
+      "Structured walkthrough",
+      "Full interruption test"
     ],
     "correct": [
       3
@@ -3307,10 +3307,10 @@
     "format": "single",
     "stem": "A sender encrypts a small secret with the recipient's public key, so only the private key recovers it. Which mechanism is this?",
     "options": [
-      "A digital signature",
+      "Digital signature",
       "Asymmetric encryption",
       "Symmetric encryption",
-      "An HMAC"
+      "HMAC"
     ],
     "correct": [
       1
@@ -3328,10 +3328,10 @@
     "format": "single",
     "stem": "A fixed-length digest of a file is published separately so recipients can check downloads. What produces the digest?",
     "options": [
-      "A digital signature",
-      "A stream cipher keystream",
-      "A cryptographic hash function",
-      "An HMAC with a shared secret key"
+      "Digital signature",
+      "Stream cipher keystream",
+      "Cryptographic hash function",
+      "HMAC with a shared secret key"
     ],
     "correct": [
       2
@@ -3349,10 +3349,10 @@
     "format": "single",
     "stem": "A publisher signs a release with a private key so recipients verify integrity and origin with the public key. Which mechanism is this?",
     "options": [
-      "An HMAC",
+      "HMAC",
       "Public-key encryption of the release",
-      "A published SHA-256 hash",
-      "A digital signature"
+      "Published SHA-256 hash",
+      "Digital signature"
     ],
     "correct": [
       3
@@ -3373,7 +3373,7 @@
       "Authenticated encryption such as AES-GCM",
       "AES in CBC mode on its own",
       "AES in ECB mode",
-      "A SHA-256 digest stored with the ciphertext"
+      "SHA-256 digest stored with the ciphertext"
     ],
     "correct": [
       0
@@ -3391,9 +3391,9 @@
     "format": "single",
     "stem": "Two services share a secret and must verify message authenticity without hiding or publicly verifying it. Which mechanism fits?",
     "options": [
-      "A plain SHA-256 digest",
-      "An HMAC",
-      "A digital signature",
+      "Plain SHA-256 digest",
+      "HMAC",
+      "Digital signature",
       "AES encryption under the shared secret"
     ],
     "correct": [
@@ -3414,7 +3414,7 @@
     "options": [
       "One unsalted SHA-256 hash per password",
       "Base64 encoding of each password",
-      "A slow, salted hash such as bcrypt or Argon2",
+      "Slow, salted hash such as bcrypt or Argon2",
       "AES encryption of each password"
     ],
     "correct": [
@@ -3433,10 +3433,10 @@
     "format": "single",
     "stem": "A system needs unpredictable key material, not values derived from a timestamp. What should supply it?",
     "options": [
-      "A seed taken from the system clock",
-      "A standard non-cryptographic random function",
-      "A hash of the hostname and time",
-      "A CSPRNG seeded from system entropy"
+      "Seed taken from the system clock",
+      "Standard non-cryptographic random function",
+      "Hash of the hostname and time",
+      "CSPRNG seeded from system entropy"
     ],
     "correct": [
       3
@@ -3687,7 +3687,7 @@
     "options": [
       "TLS on the backup network",
       "IPsec between the sites",
-      "A hash of each volume",
+      "Hash of each volume",
       "Encryption at rest"
     ],
     "correct": [
@@ -3811,10 +3811,10 @@
     "format": "single",
     "stem": "A rule permits TCP port 443 and denies TCP port 23. Which type of check is this?",
     "options": [
-      "A data-link-layer (Layer 2) filter",
-      "A transport-layer (Layer 4) filter",
-      "A network-layer (Layer 3) route",
-      "An application-layer (Layer 7) inspection"
+      "Data-link-layer (Layer 2) filter",
+      "Transport-layer (Layer 4) filter",
+      "Network-layer (Layer 3) route",
+      "Application-layer (Layer 7) inspection"
     ],
     "correct": [
       1
@@ -3874,10 +3874,10 @@
     "format": "single",
     "stem": "A perimeter device tracks connection state and uses it to judge return traffic. Which control is this?",
     "options": [
-      "A stateful firewall",
-      "A stateless packet filter",
-      "A web application firewall",
-      "A network intrusion detection sensor"
+      "Stateful firewall",
+      "Stateless packet filter",
+      "Web application firewall",
+      "Network intrusion detection sensor"
     ],
     "correct": [
       0
@@ -3895,10 +3895,10 @@
     "format": "single",
     "stem": "A team needs a control for suspicious HTTP request patterns aimed at a public web application. Which control fits?",
     "options": [
-      "An application-aware forward proxy",
-      "A web application firewall",
-      "A stateful network firewall",
-      "A network intrusion detection sensor"
+      "Application-aware forward proxy",
+      "Web application firewall",
+      "Stateful network firewall",
+      "Network intrusion detection sensor"
     ],
     "correct": [
       1
@@ -3916,10 +3916,10 @@
     "format": "single",
     "stem": "A sensor gets mirrored traffic and raises alerts but sits outside the forwarding path and cannot drop packets. Which control is this?",
     "options": [
-      "A stateful firewall",
-      "A network access control appliance",
-      "A network intrusion detection system",
-      "A network intrusion prevention system"
+      "Stateful firewall",
+      "Network access control appliance",
+      "Network intrusion detection system",
+      "Network intrusion prevention system"
     ],
     "correct": [
       2
@@ -3937,9 +3937,9 @@
     "format": "single",
     "stem": "A joining endpoint is checked against device and identity policy before getting network access. Which control is this?",
     "options": [
-      "A stateful firewall",
-      "A network intrusion detection sensor",
-      "A VPN concentrator",
+      "Stateful firewall",
+      "Network intrusion detection sensor",
+      "VPN concentrator",
       "802.1X with NAC posture checks"
     ],
     "correct": [
@@ -3958,10 +3958,10 @@
     "format": "single",
     "stem": "Visitor laptops share an unrestricted network with internal workstations. Which change first separates them?",
     "options": [
-      "A separate guest VLAN or SSID",
+      "Separate guest VLAN or SSID",
       "WPA3 encryption on the shared network",
       "MAC filtering of the visitor laptops",
-      "A longer passphrase for the shared Wi-Fi"
+      "Longer passphrase for the shared Wi-Fi"
     ],
     "correct": [
       0
@@ -3981,7 +3981,7 @@
     "options": [
       "Port security on the access switches",
       "ACLs allowing only the required flows",
-      "A third VLAN for the servers",
+      "Third VLAN for the servers",
       "New VLAN ID numbers on both segments"
     ],
     "correct": [
@@ -4042,10 +4042,10 @@
     "format": "single",
     "stem": "Two office gateways keep a protected tunnel between their private networks. Which pattern is this?",
     "options": [
-      "A site-to-site VPN",
-      "A remote-access VPN",
-      "A reverse proxy",
-      "A virtual desktop service"
+      "Site-to-site VPN",
+      "Remote-access VPN",
+      "Reverse proxy",
+      "Virtual desktop service"
     ],
     "correct": [
       0
@@ -4063,10 +4063,10 @@
     "format": "single",
     "stem": "A managed laptop opens an authenticated tunnel into the organization from outside the office. Which pattern is this?",
     "options": [
-      "A reverse proxy",
-      "A remote-access VPN",
-      "A site-to-site VPN",
-      "A jump server"
+      "Reverse proxy",
+      "Remote-access VPN",
+      "Site-to-site VPN",
+      "Jump server"
     ],
     "correct": [
       1
@@ -4084,10 +4084,10 @@
     "format": "single",
     "stem": "A user works in a centrally hosted desktop session where apps and data stay hosted. Which pattern is this?",
     "options": [
-      "A site-to-site VPN",
+      "Site-to-site VPN",
       "Split-tunnel VPN access",
-      "A VDI service",
-      "A remote-access VPN"
+      "VDI service",
+      "Remote-access VPN"
     ],
     "correct": [
       2
@@ -4105,10 +4105,10 @@
     "format": "single",
     "stem": "External users reach one web app through a gateway that forwards to its backend, without joining the network. Which pattern is this?",
     "options": [
-      "A forward proxy",
-      "A remote-access VPN",
-      "A site-to-site VPN",
-      "A reverse proxy"
+      "Forward proxy",
+      "Remote-access VPN",
+      "Site-to-site VPN",
+      "Reverse proxy"
     ],
     "correct": [
       3
@@ -4147,7 +4147,7 @@
     "format": "single",
     "stem": "An organization must revoke one employee's Wi-Fi access without changing a shared secret. Which design supports this?",
     "options": [
-      "A hidden SSID",
+      "Hidden SSID",
       "WPA3-Enterprise with 802.1X",
       "WPA3-Personal with a shared passphrase",
       "MAC address filtering"
@@ -4171,7 +4171,7 @@
       "WPA3-Personal encryption",
       "Band steering between radios",
       "Client (peer-to-peer) isolation",
-      "A hidden network SSID"
+      "Hidden network SSID"
     ],
     "correct": [
       2
@@ -4232,9 +4232,9 @@
     "stem": "On hotel Wi-Fi, an attacker relays a guest's traffic through their laptop and alters it. Which threat is this?",
     "options": [
       "Port scanning",
-      "An on-path (man-in-the-middle) attack",
-      "A distributed denial of service",
-      "A replay of captured traffic"
+      "On-path (man-in-the-middle) attack",
+      "Distributed denial of service",
+      "Replay of captured traffic"
     ],
     "correct": [
       1
@@ -4273,10 +4273,10 @@
     "format": "single",
     "stem": "A visitor plugs a personal laptop into a wall jack and gets an internal address meant for managed devices. Which threat is this?",
     "options": [
-      "An evil twin access point",
+      "Evil twin access point",
       "VLAN hopping through a trunk port",
       "MAC flooding of the switch",
-      "A rogue endpoint on a wired port"
+      "Rogue endpoint on a wired port"
     ],
     "correct": [
       3
@@ -4295,7 +4295,7 @@
     "stem": "A volumetric attack saturates the internet circuit before local equipment sees the traffic. Which measure helps?",
     "options": [
       "Upstream scrubbing by the ISP",
-      "A larger on-premises firewall",
+      "Larger on-premises firewall",
       "Rate limiting on the web server",
       "Faster ports on the local switch"
     ],
@@ -4315,10 +4315,10 @@
     "format": "single",
     "stem": "A client on an untrusted network must detect peer impersonation and message tampering. Which control protects the exchange?",
     "options": [
-      "A hidden wireless SSID",
-      "A mutually authenticated TLS channel",
-      "A private VLAN on the client side",
-      "An unkeyed hash of each message"
+      "Hidden wireless SSID",
+      "Mutually authenticated TLS channel",
+      "Private VLAN on the client side",
+      "Unkeyed hash of each message"
     ],
     "correct": [
       1
@@ -4462,10 +4462,10 @@
     "format": "single",
     "stem": "Nobody can explain or own an active firewall exception. Which governance information is missing?",
     "options": [
-      "A named owner and business justification",
-      "The rule's hit count",
-      "The rule's position in the policy",
-      "The rule's creation timestamp"
+      "Named owner and business justification",
+      "Rule's hit count",
+      "Rule's position in the policy",
+      "Rule's creation timestamp"
     ],
     "correct": [
       0
@@ -4483,10 +4483,10 @@
     "format": "single",
     "stem": "In a first-match policy, a deny rule never fires because an earlier broad allow matches first. What must be examined?",
     "options": [
-      "The rule's object group names",
-      "The sequence of rules in the policy",
-      "The deny rule's logging setting",
-      "The default deny at the end"
+      "Rule's object group names",
+      "Sequence of rules in the policy",
+      "Deny rule's logging setting",
+      "Default deny at the end"
     ],
     "correct": [
       1
@@ -4507,7 +4507,7 @@
       "Peer review of the rule text",
       "Comparing rule counts before and after",
       "Testing allowed and denied flows",
-      "A configuration syntax check"
+      "Configuration syntax check"
     ],
     "correct": [
       2
@@ -4609,10 +4609,10 @@
     "format": "single",
     "stem": "A replacement appliance must be rebuilt after hardware failure. Which artifact helps restore its policy?",
     "options": [
-      "The device's original factory configuration",
-      "The vendor's hardening guide",
-      "The last syslog export",
-      "A backup of the known-good configuration"
+      "Device's original factory configuration",
+      "Vendor's hardening guide",
+      "Last syslog export",
+      "Backup of the known-good configuration"
     ],
     "correct": [
       3
@@ -4633,7 +4633,7 @@
       "Application allowlisting",
       "Antivirus signature scanning",
       "Endpoint detection and response",
-      "A host-based firewall"
+      "Host-based firewall"
     ],
     "correct": [
       0
@@ -4651,7 +4651,7 @@
     "format": "single",
     "stem": "A team needs visibility into suspicious process chains and host activity to investigate compromise. Which capability fits?",
     "options": [
-      "A host-based firewall",
+      "Host-based firewall",
       "Endpoint detection and response",
       "Application allowlisting policy",
       "Full-disk encryption"
@@ -4672,8 +4672,8 @@
     "format": "single",
     "stem": "An organization wants to limit disclosure from a stolen, powered-off laptop. Which endpoint safeguard addresses this?",
     "options": [
-      "A host-based firewall",
-      "A firmware password",
+      "Host-based firewall",
+      "Firmware password",
       "Full-disk encryption",
       "File-level access permissions"
     ],
@@ -4695,8 +4695,8 @@
     "options": [
       "Full-disk encryption",
       "Application allowlisting",
-      "An on-demand VPN client",
-      "A host-based firewall"
+      "On-demand VPN client",
+      "Host-based firewall"
     ],
     "correct": [
       3
@@ -4714,9 +4714,9 @@
     "format": "single",
     "stem": "An apparent document utility secretly performs unauthorized actions once installed. Which malware type is this?",
     "options": [
-      "A Trojan",
-      "A worm",
-      "A virus",
+      "Trojan",
+      "Worm",
+      "Virus",
       "Adware"
     ],
     "correct": [
@@ -4735,10 +4735,10 @@
     "format": "single",
     "stem": "A malicious program spreads between vulnerable systems on its own, without a host file. Which malware type is this?",
     "options": [
-      "A logic bomb",
-      "A worm",
-      "A virus",
-      "A Trojan"
+      "Logic bomb",
+      "Worm",
+      "Virus",
+      "Trojan"
     ],
     "correct": [
       1
@@ -4756,8 +4756,8 @@
     "format": "single",
     "stem": "A program makes business files inaccessible and demands payment for recovery. Which malware type is this?",
     "options": [
-      "A rootkit",
-      "A wiper",
+      "Rootkit",
+      "Wiper",
       "Ransomware",
       "Spyware"
     ],
@@ -4778,7 +4778,7 @@
     "stem": "An unauthorized program silently records browsing and activity for an outside party. Which malware type is this?",
     "options": [
       "Adware",
-      "A rootkit",
+      "Rootkit",
       "Ransomware",
       "Spyware"
     ],
@@ -4884,7 +4884,7 @@
     "options": [
       "Mobile device management (MDM)",
       "Mobile application management (MAM)",
-      "A remote wipe service",
+      "Remote wipe service",
       "Network access control"
     ],
     "correct": [
@@ -4903,10 +4903,10 @@
     "format": "single",
     "stem": "A company must control only its business apps and data on staff-owned phones. Which capability fits?",
     "options": [
-      "A mobile VPN profile",
+      "Mobile VPN profile",
       "Mobile application management (MAM)",
       "Mobile device management (MDM)",
-      "A full-device remote wipe"
+      "Full-device remote wipe"
     ],
     "correct": [
       1
@@ -4924,8 +4924,8 @@
     "format": "single",
     "stem": "A bring-your-own-device program must keep work documents apart from personal photos and messages. Which principle applies?",
     "options": [
-      "A full-device wipe policy",
-      "A mobile VPN profile",
+      "Full-device wipe policy",
+      "Mobile VPN profile",
       "Containerization of work data",
       "Full-device encryption"
     ],
@@ -4946,9 +4946,9 @@
     "stem": "A managed phone with sensitive work data is lost, and policy allows removing that data remotely. Which capability is needed?",
     "options": [
       "Remote location tracking",
-      "A remote lock with a new PIN",
-      "A carrier SIM block",
-      "A remote wipe command"
+      "Remote lock with a new PIN",
+      "Carrier SIM block",
+      "Remote wipe command"
     ],
     "correct": [
       3
@@ -5218,10 +5218,10 @@
     "format": "single",
     "stem": "VMs run under a hypervisor installed directly on hardware, with no host operating system beneath. Which architecture is this?",
     "options": [
-      "A type 1 (bare-metal) hypervisor",
-      "A type 2 (hosted) hypervisor",
-      "A container runtime",
-      "A hardware emulator"
+      "Type 1 (bare-metal) hypervisor",
+      "Type 2 (hosted) hypervisor",
+      "Container runtime",
+      "Hardware emulator"
     ],
     "correct": [
       0
@@ -5239,10 +5239,10 @@
     "format": "single",
     "stem": "A desktop virtualization app runs on top of a general-purpose host operating system. Which architecture is this?",
     "options": [
-      "A hardware emulator",
-      "A type 2 hypervisor",
-      "A type 1 hypervisor",
-      "A container on the host kernel"
+      "Hardware emulator",
+      "Type 2 hypervisor",
+      "Type 1 hypervisor",
+      "Container on the host kernel"
     ],
     "correct": [
       1
@@ -5281,10 +5281,10 @@
     "format": "single",
     "stem": "An administrator saves a VM's state at a point in time for short-term rollback. What is created?",
     "options": [
-      "A golden image template",
-      "A live migration",
-      "A VM export to OVF",
-      "A VM snapshot"
+      "Golden image template",
+      "Live migration",
+      "VM export to OVF",
+      "VM snapshot"
     ],
     "correct": [
       3
@@ -5430,7 +5430,7 @@
     "options": [
       "Encrypted record identifiers",
       "Rate limiting of record requests",
-      "An object-level authorization check",
+      "Object-level authorization check",
       "Stronger session tokens"
     ],
     "correct": [

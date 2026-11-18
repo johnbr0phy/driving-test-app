@@ -7,25 +7,25 @@ Q('A data store uses one secret key to both encrypt and decrypt records. Which m
  'Symmetric encryption, such as AES',['Asymmetric encryption, such as RSA','Hashing, such as SHA-256','Key stretching, such as PBKDF2'],
  'Symmetric encryption uses a shared secret key for encryption and decryption. A hash is one-way and cannot be decrypted.')
 Q('A sender encrypts a small secret with the recipient\'s public key, so only the private key recovers it. Which mechanism is this?',
- 'Asymmetric encryption',['Symmetric encryption','An HMAC','A digital signature'],
+ 'Asymmetric encryption',['Symmetric encryption','HMAC','Digital signature'],
  'Public-key encryption uses a key pair, with the private key retained by the recipient. A signature uses the sender\'s private key and does not hide the content.')
 Q('A fixed-length digest of a file is published separately so recipients can check downloads. What produces the digest?',
- 'A cryptographic hash function',['An HMAC with a shared secret key','A digital signature','A stream cipher keystream'],
+ 'Cryptographic hash function',['HMAC with a shared secret key','Digital signature','Stream cipher keystream'],
  'A cryptographic hash maps the file to a digest. The trusted delivery of the reference digest matters because a bare hash does not authenticate its publisher.')
 Q('A publisher signs a release with a private key so recipients verify integrity and origin with the public key. Which mechanism is this?',
- 'A digital signature',['An HMAC','Public-key encryption of the release','A published SHA-256 hash'],
+ 'Digital signature',['HMAC','Public-key encryption of the release','Published SHA-256 hash'],
  'A digital signature supports integrity and origin authentication when the verifying key is trusted. It does not by itself hide the software contents.')
 Q('A storage design needs secrecy plus detection of ciphertext tampering from one symmetric construction. Which mechanism fits?',
- 'Authenticated encryption such as AES-GCM',['AES in CBC mode on its own','AES in ECB mode','A SHA-256 digest stored with the ciphertext'],
+ 'Authenticated encryption such as AES-GCM',['AES in CBC mode on its own','AES in ECB mode','SHA-256 digest stored with the ciphertext'],
  'Authenticated encryption combines confidentiality with integrity protection when used correctly. CBC or ECB alone gives no tamper detection.')
 Q('Two services share a secret and must verify message authenticity without hiding or publicly verifying it. Which mechanism fits?',
- 'An HMAC',['A digital signature','AES encryption under the shared secret','A plain SHA-256 digest'],
+ 'HMAC',['Digital signature','AES encryption under the shared secret','Plain SHA-256 digest'],
  'A keyed MAC supports shared-key message authentication without encryption. A plain hash has no key, and a signature is for public verification.')
 Q('A password store must keep no recoverable passwords and give identical passwords distinct verifiers. Which mechanism fits?',
- 'A slow, salted hash such as bcrypt or Argon2',['AES encryption of each password','One unsalted SHA-256 hash per password','Base64 encoding of each password'],
+ 'Slow, salted hash such as bcrypt or Argon2',['AES encryption of each password','One unsalted SHA-256 hash per password','Base64 encoding of each password'],
  'A suitable password hashing scheme with unique salts protects stored verifiers. Encrypted passwords are recoverable, and unsalted hashes make identical passwords match.')
 Q('A system needs unpredictable key material, not values derived from a timestamp. What should supply it?',
- 'A CSPRNG seeded from system entropy',['A seed taken from the system clock','A standard non-cryptographic random function','A hash of the hostname and time'],
+ 'CSPRNG seeded from system entropy',['Seed taken from the system clock','Standard non-cryptographic random function','Hash of the hostname and time'],
  'A cryptographically secure random generator supplies suitable unpredictability. Clock values and ordinary random functions can be predicted.')
 Q('An organization must stop others producing signatures under its software-publisher identity. Which safeguard addresses this?',
  'Keep the signing key in an HSM with controlled use',['Publish the public key on more servers','Extend the code signing certificate\'s validity','Keep the verification key secret'],
@@ -61,7 +61,7 @@ Q('An administrator needs an encrypted interactive command session to a remote s
  'SSH',['Telnet','SFTP','SNMPv3'],
  'SSH supports secure remote administration with host and user authentication. Telnet is unencrypted, and SFTP is for file transfer.')
 Q('Off-site backup volumes must stay protected if one is taken without its separately held key. Which mechanism addresses this?',
- 'Encryption at rest',['TLS on the backup network','IPsec between the sites','A hash of each volume'],
+ 'Encryption at rest',['TLS on the backup network','IPsec between the sites','Hash of each volume'],
  'Stored-data encryption protects the volume under the stated key condition. Channel encryption protects data in transit, and a hash does not hide anything.')
 Q('An application keeps readable decryption keys beside the encrypted records in a widely accessible location. Which change fixes this?',
  'Move the keys into a separate key management service',['Use a longer key length','Compress the records before encrypting them','Encrypt the keys with a key hard-coded in the app'],

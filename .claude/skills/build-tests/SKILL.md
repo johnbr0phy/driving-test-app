@@ -73,7 +73,7 @@ between questions. `python3 -I tools/check_option_reuse.py --list <bank>` must p
 (no option set shared between questions; echo gain 2 marks per 50 or less is the target, 4.5 the
 hard limit). A perfectly even 25% per letter together with a 25% options-only score is not
 evidence of a good bank: the Nov 2026 "quartet" batch (#876, #877) scored exactly that and a
-blind echo guesser still got 44 to 49%. Run `python3 -I tools/check_stem_length.py <bank>` too: a median over 20 words per stem means scenario
+blind echo guesser still got 44 to 49%. Run `python3 -I tools/check_stem_length.py <bank>` too (it also reports options opening with The/A/An; over 25% is filler): a median over 20 words per stem means scenario
 padding and stacked qualifiers to cut before the PR. Also check the wiring the Nov 2026 batch got
 wrong: the landing is a copy of the template (`tests/landing-template.test.cjs`), and a v2 exam with
 two tests holds out only Test 2 (`tests/v2-held-out.test.cjs`). Check each finding against the

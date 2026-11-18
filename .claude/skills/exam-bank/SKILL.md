@@ -104,6 +104,12 @@ nearest existing banks before you finish (`python3 -I tools/check_stem_length.py
 Nov 2026 batch ran 20 to 26 words, 40% over its peers, and read as wordy. CI fails a new bank
 whose median is over 20 words (`--all --baseline tools/stem_length_baseline.json`).
 
+**Lean answers.** Write options as bare noun phrases: "Appeal Board", not "The Appeal Board";
+"Rated-capacity chart", not "The rated-capacity chart". Keep a leading The/A/An only where the
+option needs it (a full sentence, or "A comma" in a punctuation question). The site's median is
+about 12% of options opening with an article; the Nov 2026 batch ran 28% to 46%. The same check
+fails a new English bank where more than 25% of options start with The, A or An.
+
 **The key must not stand out.** Aim for the correct option within 20% of the average length of
 the three wrong ones. Across the bank the key may be the single longest option in at most a
 quarter of items, and may exceed the wrong-option average by 20% in at most 30% of items (the

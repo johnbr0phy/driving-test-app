@@ -2467,6 +2467,19 @@
     --brand-border-light: 266 40% 90%;
     --brand-gradient-to: 276 60% 96%;
   }
+  /* Salesforce Platform App Builder theme: violet (v2 exam; matches lib/v2/exams/sfappbuilder.ts theme) */
+  [data-theme="sfappbuilder"] {
+    --brand: 278 80% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 278 80% 96%;
+    --brand-hover: 278 80% 35%;
+    --brand-dark: 278 80% 31%;
+    --brand-darker: 278 80% 21%;
+    --brand-muted: 278 40% 70%;
+    --brand-border: 278 50% 82%;
+    --brand-border-light: 278 50% 90%;
+    --brand-gradient-to: 290 70% 96%;
+  }
 
   /* CompTIA CySA+ theme: deep magenta violet (v2 exam; matches lib/v2/exams/cysa.ts theme) */
   [data-theme="cysa"] {
@@ -8345,6 +8358,18 @@
     --brand-muted: 266 40% 45%;
     --brand-dark: 266 100% 68%;
     --brand-darker: 266 90% 78%;
+  }
+
+  .dark [data-theme="sfappbuilder"] {
+    --brand: 278 80% 50%;
+    --brand-hover: 278 80% 42%;
+    --brand-light: 278 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 278 35% 24%;
+    --brand-border: 278 40% 34%;
+    --brand-muted: 278 40% 45%;
+    --brand-dark: 278 80% 65%;
+    --brand-darker: 278 80% 78%;
   }
 
   .dark [data-theme="cysa"] {

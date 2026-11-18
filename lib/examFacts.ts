@@ -44,6 +44,20 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  sfappbuilder: {
+    answer:
+      "The Salesforce Certified Platform App Builder exam has 60 scored multiple-choice and multiple-select questions, plus up to 5 unscored ones, in 105 minutes, and you need 73% to pass. It was refreshed in August 2026 to the Summer '26 release, with Business Logic and Process Automation 32%, Data Modeling and Management 20%, Salesforce Fundamentals 18%, User Interface 17% and App Deployment 13%. Older guides that give 63% or 68% to pass describe earlier versions.",
+    rows: [
+      { label: "Questions", value: "60 scored, plus up to 5 unscored" },
+      { label: "Time", value: "105 minutes" },
+      { label: "Passing score", value: "73%" },
+      { label: "Largest section", value: "Business Logic and Process Automation, 32%" },
+      { label: "Exam guide", value: "Refreshed in August 2026 (Summer '26)" },
+      { label: "Run by", value: "Salesforce, registered through Trailhead" },
+    ],
+    basedOn: "the Salesforce Certified Platform App Builder exam guide (Summer '26), checked November 2026",
+    source: { name: "Trailhead: Salesforce Certified Platform App Builder", url: "https://trailhead.salesforce.com/credentials/platformappbuilder" },
+  },
   sfpd1: {
     answer:
       "The Salesforce Certified Platform Developer exam, formerly Platform Developer I (PDI), tests building custom business logic and interfaces on the Salesforce Platform with Apex, SOQL, triggers and Lightning Web Components. Guides quoting the current exam guide give 60 scored multiple-choice and multiple-select questions plus up to 5 unscored ones in 105 minutes, with 68% needed to pass. Salesforce's Trailhead cert prep weights its four sections Developer Fundamentals 27%, Process Automation and Logic 28%, User Interface 25%, and Testing, Debugging, and Deployment 20%.",

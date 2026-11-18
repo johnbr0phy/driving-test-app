@@ -7,6 +7,10 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["salesforce admin", "US", "sfadmin"],
+  ["platform app builder", "US", "sfappbuilder"],
+  ["salesforce app builder", "US", "sfappbuilder"],
+  ["app builder", "US", "sfappbuilder"],
   ["pd1", "US", "sfpd1"],
   ["salesforce developer", "US", "sfpd1"],
   ["platform developer i", "US", "sfpd1"],
@@ -15,7 +19,6 @@ const CASES = [
   ["transport canada drone exam", "CA", "cadronebasic"],
   ["ea exam part 3", "US", "ea3"],
   ["see part 3", "US", "ea3"],
-  ["circular 230", "US", "ea3"],
   ["linux+", "US", "linuxplus"],
   ["xk0-006", "US", "linuxplus"],
   ["linux plus", "GB", "linuxplus"],

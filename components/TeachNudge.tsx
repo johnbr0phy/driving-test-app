@@ -138,7 +138,7 @@ const TEACHER_LED = new Set([
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
   "nailtech",
-  "sfpd1",
+  "sfpd1", "sfappbuilder",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

@@ -536,6 +536,15 @@
       "action": "Built with version-named questions on these defaults only. Recheck when Salesforce's Platform Developer exam guide names the release it aligns to.",
       "source": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf",
       "done": "2026-11-18"
+    },
+    {
+      "exam": "sfappbuilder",
+      "date": "2026-08-01",
+      "kind": "outline",
+      "what": "Salesforce refreshed the Platform App Builder exam guide in August 2026 to the Summer '26 release: weights 18/20/32/17/13, 73% to pass (was 63%), deeper Flow and Agentforce as an automation tool.",
+      "action": "Built to the refreshed guide from the start; nothing to change.",
+      "source": "https://help.salesforce.com/s/articleView?id=005298964&type=1&language=en_US",
+      "done": "2026-11-18"
     }
   ]
 }

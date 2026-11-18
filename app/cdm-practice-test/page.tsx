@@ -76,6 +76,13 @@ export default function CdmLandingPage() {
     <section className="max-w-3xl mx-auto px-6 py-16"><h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-10">CDM Frequently Asked Questions</h2><div className="space-y-8">{faqs.map(({ question, answer }) => <div key={question}><h3 className="text-lg font-semibold text-gray-900 dark:text-gray-50 mb-2">{question}</h3><p className="text-gray-600 dark:text-gray-300">{answer}</p></div>)}<ExamClassFaq examId="cdm" /></div></section>
     <ExamSampleQuestions examId="cdm" />
     <ExamRelatedTests examId="cdm" />
-    <section className="max-w-4xl mx-auto px-6 py-16 text-center"><h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 mb-6">Start Your CDM Practice</h2><p className="text-gray-600 dark:text-gray-300 mb-8">Five domains, explanations on every question, and progress you can revisit.</p><ExamLandingCTA dashboardHref="/cdm/dashboard" /></section>
+    <div className="relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
+      <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Start Your CDM Practice</h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Five domains, explanations on every question, and progress you can revisit.</p>
+        <ExamLandingCTA dashboardHref="/cdm/dashboard" />
+      </div>
+    </div>
   </div>;
 }

@@ -12,8 +12,11 @@ Checked 2026-11-18.
   performance-based, 90 minutes, passing score 720 on a scale of 100 to 900, language English;
   recommended 12 months of hands-on experience with Linux servers and A+, Network+ or Server+ (or
   comparable knowledge). Taken at Pearson VUE test centers or online with remote proctoring.
-  Valid for three years, renewed with 50 CEUs or a higher CompTIA certification. The page's FAQ
-  states: "If you are preparing for the V7 exam (XK0-005), the English version retires January 13,
+  The page's FAQ accordion (its answers are in the page's HTML source and may not show in a
+  text-only fetch; re-read 2026-11-18 with curl) says, verbatim: "Your Linux+ certification is
+  valid for three years. You can renew it by earning 50 Continuing Education Units (CEUs)...";
+  "You can take the CompTIA Linux+ exam at Pearson VUE testing centers or online with remote
+  proctoring."; and, under "When does CompTIA Linux+ V7 retire?": "If you are preparing for the V7 exam (XK0-005), the English version retires January 13,
   2026. The Japanese, Portuguese, and Spanish versions retire on April 14, 2026." Both dates have
   passed, so XK0-006 is the exam in force for every candidate on the build date; the bank is built
   to XK0-006 only.

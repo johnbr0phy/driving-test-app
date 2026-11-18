@@ -346,12 +346,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Why does a package manager check a package's GPG signature before installing it?",
-    "explanation": "The signature proves the package was built by the holder of the repository's key and was not altered afterwards. Dependency solving and mirror choice are separate steps.",
+    "explanation": "The signature proves the package was built by the holder of the repository's key and was not altered afterwards. It does not encrypt the download, and license and architecture are package metadata.",
     "options": [
       "To confirm its origin and integrity",
-      "To compress it for faster download",
-      "To choose the fastest mirror",
-      "To work out its dependencies"
+      "To keep it private in transit",
+      "To match it to the CPU architecture",
+      "To check its license terms"
     ],
     "correct": [
       0
@@ -808,12 +808,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What does shift left testing mean in a CI/CD pipeline?",
-    "explanation": "Shifting left moves testing, including security checks, toward the start of the pipeline, where problems are cheaper to fix. DevSecOps applies the same idea to security.",
+    "explanation": "Shifting left moves testing, including security checks, toward the start of the pipeline, where problems are cheaper to fix. A staging environment is still late in the pipeline, and parallel runs or automatic rollback change speed and recovery, not when testing happens.",
     "options": [
       "Testing earlier in development",
-      "Rolling back failed releases",
-      "Testing only in production",
-      "Handing all tests to operations"
+      "Running tests in parallel",
+      "Testing in a staging copy",
+      "Rolling back on failed tests"
     ],
     "correct": [
       0
@@ -997,11 +997,11 @@
     "difficulty": 3,
     "format": "single",
     "stem": "Which command lets httpd make outbound network connections and keeps that setting after a reboot?",
-    "explanation": "setsebool changes a boolean and -P writes it to the policy so it persists. Without -P the change lasts only until reboot, and setenforce 0 would switch off enforcement for everything.",
+    "explanation": "setsebool changes a boolean and -P writes it to the policy so it persists. Without -P, or with togglesebool, the change lasts only until reboot, and chcon changes a file label, which does nothing for network connections.",
     "options": [
       "$\\texttt{setsebool -P httpd\\_can\\_network\\_connect on}$",
-      "$\\texttt{setenforce 0}$",
-      "$\\texttt{getsebool -a | grep httpd\\_can\\_network\\_connect}$",
+      "$\\texttt{chcon -t httpd\\_sys\\_rw\\_content\\_t /var/www}$",
+      "$\\texttt{togglesebool httpd\\_can\\_network\\_connect}$",
       "$\\texttt{setsebool httpd\\_can\\_network\\_connect on}$"
     ],
     "correct": [
@@ -1081,12 +1081,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which test is true only when /etc/app.conf exists and is a regular file?",
-    "explanation": "-f checks for a regular file and -d for a directory. -z and -n test whether a string is empty or not, so they look at the text of the path, not the file.",
+    "explanation": "-f is true only for a regular file. -e is true for anything at that path, including a directory or device, -s for anything that exists and is not empty, and -d only for a directory.",
     "options": [
-      "$\\texttt{[ -n /etc/app.conf ]}$",
+      "$\\texttt{[ -d /etc/app.conf ]}$",
       "$\\texttt{[ -f /etc/app.conf ]}$",
-      "$\\texttt{[ -z /etc/app.conf ]}$",
-      "$\\texttt{[ -d /etc/app.conf ]}$"
+      "$\\texttt{[ -s /etc/app.conf ]}$",
+      "$\\texttt{[ -e /etc/app.conf ]}$"
     ],
     "correct": [
       1
@@ -1252,12 +1252,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "curl reports that an internal site's certificate has expired. What fixes it properly?",
-    "explanation": "An expired certificate must be reissued and deployed, ideally with automated renewal. Skipping verification or turning off TLS removes the protection instead of restoring it.",
+    "explanation": "An expired certificate must be reissued and deployed, ideally with automated renewal. Trusting the CA or updating the client's CA bundle fixes an unknown issuer, not an expiry date, and a restart only reloads the same expired certificate.",
     "options": [
-      "Use curl -k in every script",
+      "Add the CA to the trust store",
       "Renew the certificate",
-      "Set the server clock back",
-      "Switch the site to plain HTTP"
+      "Restart the web server",
+      "Update the client's CA bundle"
     ],
     "correct": [
       1
@@ -1273,11 +1273,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Traffic to port 443 on the gateway must be forwarded to an internal web server. Which kind of translation is this?",
-    "explanation": "Destination NAT rewrites the destination address (and port) of incoming packets, which is how port forwarding works. SNAT and masquerading rewrite the source address of outgoing traffic.",
+    "explanation": "Destination NAT rewrites the destination address (and port) of incoming packets, which is how port forwarding works. SNAT and masquerading rewrite the source address of outgoing traffic, and NAT64 translates between IPv6 and IPv4.",
     "options": [
       "SNAT",
-      "PAT",
       "Masquerading",
+      "NAT64",
       "DNAT"
     ],
     "correct": [
@@ -1504,12 +1504,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which sshd_config setting blocks direct SSH logins as root?",
-    "explanation": "PermitRootLogin no refuses root over SSH, so admins log in as themselves and use sudo, which leaves an audit trail. PermitEmptyPasswords no is good practice but does nothing about root.",
+    "explanation": "PermitRootLogin no refuses root over SSH by any method, so admins log in as themselves and use sudo, which leaves an audit trail. prohibit-password still lets root in with a key, PasswordAuthentication no blocks passwords for everyone but still allows root keys, and PermitEmptyPasswords no only blocks blank passwords.",
     "options": [
       "$\\texttt{PermitEmptyPasswords no}$",
-      "$\\texttt{X11Forwarding no}$",
+      "$\\texttt{PasswordAuthentication no}$",
       "$\\texttt{PermitRootLogin no}$",
-      "$\\texttt{AllowUsers root}$"
+      "$\\texttt{PermitRootLogin prohibit-password}$"
     ],
     "correct": [
       2
@@ -1546,12 +1546,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What is the main security gain of running containers rootless or unprivileged?",
-    "explanation": "If a process breaks out of an unprivileged container, it lands as an ordinary user on the host rather than as root. A privileged container gets broad access to the host's devices.",
+    "explanation": "If a process breaks out of an unprivileged container, it lands as an ordinary user on the host rather than as root. Image signing, network isolation and PID namespaces are separate controls that work with or without root.",
     "options": [
-      "Images pull from registries faster",
-      "No port mapping is needed",
+      "Images are verified before running",
+      "Containers get no network access",
       "An escape gains only user rights",
-      "Logs go straight to the host"
+      "Processes cannot see each other"
     ],
     "correct": [
       2
@@ -1661,7 +1661,7 @@
     "options": [
       "Network latency",
       "CPU cores",
-      "DNS lookups",
+      "Memory bandwidth",
       "Storage I/O"
     ],
     "correct": [
@@ -1744,7 +1744,7 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Which signal does $\\texttt{kill}$ send when no signal is named?",
-    "explanation": "By default kill sends SIGTERM, which asks the process to shut down cleanly. SIGKILL cannot be caught and is the last resort; SIGINT is what Ctrl+C sends.",
+    "explanation": "By default kill sends SIGTERM, which asks the process to shut down cleanly. SIGKILL (9) cannot be caught and is the last resort, SIGHUP (1) is a hangup that many daemons treat as a reload, and SIGSTOP (19) pauses the process.",
     "options": [
       "SIGHUP (1)",
       "SIGSTOP (19)",
@@ -1837,11 +1837,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A 4-core server shows a load average of 12.0. What does that suggest?",
-    "explanation": "Load average counts tasks running or waiting to run (and in uninterruptible waits). Twelve on four cores means a long queue, from CPU demand or blocked I/O.",
+    "explanation": "Load average counts tasks running or waiting to run (and in uninterruptible waits), not a CPU percentage or logins. Twelve on four cores means about three tasks for every core, a long queue from CPU demand or blocked I/O.",
     "options": [
-      "A lightly loaded server",
-      "CPU use of exactly 12%",
-      "Twelve users logged in",
+      "CPU use of about 300 percent",
+      "Normal load for four cores",
+      "Twelve active SSH sessions",
       "A long queue for the CPUs"
     ],
     "correct": [
@@ -1882,12 +1882,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "An LLM wrote a regular expression for a log parser. What should the admin do before it goes into production?",
-    "explanation": "AI output must be verified like any untested code: run it on representative samples, including edge cases. Asking the same model to check itself is not independent review.",
+    "explanation": "AI output must be verified like any untested code: run it on representative samples, including edge cases, before production. Reading it or asking the model to explain it is not a test, and trying it on the live server is testing in production.",
     "options": [
-      "Ship it once it compiles",
+      "Read through it line by line",
       "Test it against sample logs",
-      "Ask the LLM if it is correct",
-      "Run it on live customer data"
+      "Have the LLM explain each part",
+      "Try it once on the live server"
     ],
     "correct": [
       1
@@ -2390,9 +2390,9 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A monitoring system should post alerts into a team chat channel over HTTPS. Which method fits?",
-    "explanation": "A webhook is an HTTP request sent to a URL when an event fires, which chat tools accept. A health check is a probe of a service, not a way to deliver alerts.",
+    "explanation": "A webhook is an HTTP request sent to a URL when an event fires, which chat tools accept. Syslog forwarding ships log lines to a log server, and a health check is a probe of a service, not a way to deliver alerts.",
     "options": [
-      "Log rotation",
+      "Syslog forwarding",
       "Webhook",
       "SNMP trap",
       "Health check"
@@ -2411,12 +2411,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "$\\texttt{ip link}$ shows eth1 as DOWN with NO-CARRIER. What should be checked?",
-    "explanation": "NO-CARRIER means the NIC sees no signal from the other end, which is a physical problem: an unplugged or bad cable, or a disabled switch port. Nothing at the IP layer can fix it.",
+    "explanation": "NO-CARRIER means the NIC sees no signal from the other end, which is a physical problem: an unplugged or bad cable, or a disabled switch port. Addresses, profiles and MTU are all set above the physical link.",
     "options": [
       "Cable and switch port",
-      "Default route",
-      "Firewall zone rules",
-      "DNS resolver settings"
+      "Its NetworkManager profile",
+      "The interface MTU",
+      "The interface's IP address"
     ],
     "correct": [
       0
@@ -2537,11 +2537,11 @@
     "difficulty": 3,
     "format": "single",
     "stem": "Which command makes a custom web root's SELinux label survive a full filesystem relabel?",
-    "explanation": "semanage fcontext -a adds a rule to the policy's file-context list, and restorecon then applies it; a relabel keeps it because the policy now knows the path. A label set with chcon is lost on relabel.",
+    "explanation": "semanage fcontext -a adds a rule to the policy's file-context list, and restorecon then applies it; a relabel keeps it because the policy now knows the path. A label set with chcon is lost on relabel, restorecon -F only resets files to the rules that already exist, and semanage boolean changes booleans, not labels.",
     "options": [
       "$\\texttt{chcon -t httpd\\_sys\\_content\\_t}$",
-      "$\\texttt{restorecon -n}$",
-      "$\\texttt{setsebool -P}$",
+      "$\\texttt{restorecon -R -F}$",
+      "$\\texttt{semanage boolean -m}$",
       "$\\texttt{semanage fcontext -a}$"
     ],
     "correct": [
@@ -2579,12 +2579,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "An application crashes with Segmentation fault right after an update. What does that mean?",
-    "explanation": "A segfault is the kernel stopping a process that touched an invalid or protected memory address, usually a bug or a library mismatch. A missing config gives an error message instead.",
+    "explanation": "A segfault is the kernel stopping a process that touched an invalid or protected memory address (SIGSEGV), usually a bug or a library mismatch. The OOM killer, CPU limits and systemd stop processes with other signals and messages.",
     "options": [
       "It accessed memory it may not use",
-      "It could not find its config file",
-      "It lost its network link",
-      "It ran out of free disk space"
+      "It exceeded a CPU time limit",
+      "systemd sent it SIGTERM",
+      "The OOM killer stopped it"
     ],
     "correct": [
       0
@@ -2663,12 +2663,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "An admin wants routine dnf updates to skip the kernel package. What fits?",
-    "explanation": "An exclude (excludepkgs) entry in dnf.conf or the repo file tells dnf to ignore matching packages. Removing the key or the whole repository would block every update, not just the kernel.",
+    "explanation": "An exclude (excludepkgs) entry in dnf.conf or the repo file tells dnf to ignore matching packages. installonly_limit only caps how many kernels are kept, the kernel has no systemd unit to mask, and dnf mark changes whether a package counts as user-installed.",
     "options": [
       "An exclude line in dnf.conf",
-      "Masking the kernel unit",
-      "Removing the repo GPG key",
-      "Disabling the base repository"
+      "installonly_limit=1 in dnf.conf",
+      "Masking the kernel's unit",
+      "dnf mark remove kernel"
     ],
     "correct": [
       0
@@ -2726,10 +2726,10 @@
     "difficulty": 2,
     "format": "single",
     "stem": "In GitOps, what is the source of truth for the desired state of the environment?",
-    "explanation": "GitOps keeps the declared configuration in Git, and an automated process makes the environment match it. Changes go through commits and reviews rather than manual edits on the systems.",
+    "explanation": "GitOps keeps the declared configuration in Git, and an automated process makes the environment match it. The registry stores the images that configuration points to, and the running cluster is what gets reconciled to Git, not the other way round.",
     "options": [
-      "Admin's notes",
-      "Monitoring dashboard",
+      "CI pipeline logs",
+      "Container registry",
       "Running cluster",
       "Git repository"
     ],
@@ -2768,12 +2768,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A service's memory use climbs steadily for days and only drops when it is restarted. What is the likely problem?",
-    "explanation": "Memory that is allocated and never freed grows until a restart or the OOM killer clears it. More swap would only delay the problem.",
+    "explanation": "Memory that is allocated and never freed grows until a restart or the OOM killer clears it. Page cache also grows but belongs to the kernel and is given back on demand, a zombie holds no memory, and more swap would only delay the problem.",
     "options": [
       "Memory leak",
-      "Kernel panic",
+      "Swap partition too small",
       "Zombie process",
-      "Swap partition too small"
+      "Page cache growth"
     ],
     "correct": [
       0
@@ -2789,12 +2789,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "$\\texttt{ss}$ shows a service listening on 0.0.0.0:8443 and local curl works, but remote clients time out. What should be checked?",
-    "explanation": "The service is up and bound to every address, so something between the network and the socket drops the traffic. A timeout rather than a refusal is typical of a firewall drop.",
+    "explanation": "The service is up and bound to every address, so the bind address is fine, and a certificate problem would fail after connecting, not time out. Something between the network and the socket drops the traffic, which is typical of a firewall drop.",
     "options": [
-      "Service unit file",
-      "DNS records",
+      "The service's bind address",
+      "The service's TLS certificate",
       "Host firewall rules",
-      "Process nice value"
+      "The client's DNS cache"
     ],
     "correct": [
       2
@@ -2852,12 +2852,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which command adds user sam to the docker group and keeps the other groups he is in?",
-    "explanation": "-G sets the supplementary groups and -a appends to the current list. Without -a, usermod -G replaces his groups with docker alone.",
+    "explanation": "-G sets the supplementary groups and -a appends to the current list. Without -a, usermod -G replaces his groups with docker alone; -g changes his primary group instead, and newgrp only switches the group of the current shell.",
     "options": [
       "$\\texttt{usermod -aG docker sam}$",
-      "$\\texttt{groupmod -n docker sam}$",
+      "$\\texttt{usermod -g docker sam}$",
       "$\\texttt{usermod -G docker sam}$",
-      "$\\texttt{gpasswd -A docker sam}$"
+      "$\\texttt{newgrp docker}$"
     ],
     "correct": [
       0
@@ -2957,12 +2957,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A new network card is listed by lspci but has no interface in $\\texttt{ip link}$. What should be checked first?",
-    "explanation": "lspci proves the hardware is on the bus; with no interface, the driver is likely missing or not loaded. lspci -k shows the driver in use, and modprobe loads it.",
+    "explanation": "lspci proves the hardware is on the bus; with no interface at all, the driver is likely missing or not loaded. lspci -k shows the driver in use, and modprobe loads it. Unmanaged, unplugged and down interfaces all still appear in ip link.",
     "options": [
-      "The interface MTU",
+      "Whether the interface is down",
       "Whether its driver is loaded",
-      "The default gateway route",
-      "The DNS resolver settings"
+      "Whether its cable has link",
+      "Whether NetworkManager manages it"
     ],
     "correct": [
       1
@@ -3149,12 +3149,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "dnf refuses an install because of a conflicting library version. What is a sensible first step?",
-    "explanation": "Conflicts usually come from mixing repositories or versions, so start by seeing which repo provides each package. Forcing with --nodeps leaves a broken system that the package manager cannot repair.",
+    "explanation": "Conflicts usually come from mixing repositories or versions, so start by seeing which repo provides each package (dnf repoquery or dnf info). A missing key gives a signature error, low space a disk error and a damaged RPM database a database error, not a version conflict.",
     "options": [
-      "Install it with rpm --nodeps",
+      "Check the repo's GPG key",
       "Find which repo supplies each",
-      "Turn off GPG signature checking",
-      "Delete the library by hand"
+      "Rebuild the RPM database",
+      "Check free space under /var"
     ],
     "correct": [
       1
@@ -3169,16 +3169,16 @@
     "skill": "File attributes",
     "difficulty": 2,
     "format": "single",
-    "stem": "Root cannot delete a file, and its permissions and ownership look normal. Which command reveals why?",
+    "stem": "SELinux is disabled on this host. Root cannot delete a file, and its permissions and ownership look normal. Which command reveals why?",
     "explanation": "Root bypasses mode bits but not the immutable attribute, which lsattr shows as i. chattr -i removes it.",
     "options": [
+      "$\\texttt{lsattr}$",
       "$\\texttt{id}$",
-      "$\\texttt{getenforce}$",
       "$\\texttt{ls -Z}$",
-      "$\\texttt{lsattr}$"
+      "$\\texttt{getenforce}$"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -3191,11 +3191,11 @@
     "difficulty": 3,
     "format": "single",
     "stem": "A database listens on port 5432 only on the server's localhost. How can an admin reach it securely from a workstation?",
-    "explanation": "ssh -L forwards a local port through the encrypted session to localhost:5432 on the server, so the database never has to listen on the network. FTP sends data in clear text.",
+    "explanation": "ssh -L forwards a port on the workstation through the encrypted session to localhost:5432 on the server. Remote forwarding (-R) works the other way, exposing a workstation port on the server, a firewall rule cannot help a service bound only to localhost, and SFTP moves files, not database sessions.",
     "options": [
-      "Bind it to every interface",
-      "Copy dumps over FTP",
-      "Drop the firewall briefly",
+      "SSH remote port forwarding",
+      "SFTP session to the server",
+      "Firewall rule for the workstation",
       "SSH local port forwarding"
     ],
     "correct": [
@@ -3302,12 +3302,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A container named web exits right after it starts. Which command shows what it printed before exiting?",
-    "explanation": "docker logs shows the container's standard output and error even after it has stopped. docker exec needs a running container, so it cannot help here.",
+    "explanation": "docker logs shows the container's standard output and error even after it has stopped. docker exec, top and stats all need a running container, so they cannot help here.",
     "options": [
-      "$\\texttt{docker pull web}$",
+      "$\\texttt{docker stats web}$",
       "$\\texttt{docker logs web}$",
       "$\\texttt{docker exec web sh}$",
-      "$\\texttt{docker tag web}$"
+      "$\\texttt{docker top web}$"
     ],
     "correct": [
       1
@@ -3365,11 +3365,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Clients fail the TLS handshake with a server that only offers TLS 1.0. What is the right fix?",
-    "explanation": "TLS 1.0 and 1.1 are deprecated and turned off in current clients and crypto policies, so the server must offer TLS 1.2 or 1.3. Weakening every client spreads the risk instead.",
+    "explanation": "TLS 1.0 and 1.1 are deprecated and turned off in current clients and crypto policies, so the server must offer TLS 1.2 or 1.3. A new certificate or better ciphers do not change the protocol version the clients refuse.",
     "options": [
-      "Turn off certificate checking",
-      "Allow TLS 1.0 on every client",
-      "Fall back to SSL 3.0",
+      "Install a new certificate on it",
+      "Enable TLS 1.1 on the server",
+      "Use stronger TLS 1.0 ciphers",
       "Enable TLS 1.2 or later on it"
     ],
     "correct": [
@@ -3470,12 +3470,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Data written inside a container disappears when the container is deleted. What keeps it?",
-    "explanation": "A volume lives outside the container's writable layer, so it survives when the container is removed and can be mounted into a new one.",
+    "explanation": "A volume lives outside the container's writable layer, so it survives when the container is removed and can be mounted into a new one. A restart policy or a clean stop does not help once the container is deleted, and tmpfs lives in memory.",
     "options": [
-      "Using the host network mode",
-      "Pruning old images",
+      "Giving it a larger tmpfs",
+      "Stopping it before removal",
       "Mounting a named volume",
-      "Adding an image tag"
+      "Adding --restart always"
     ],
     "correct": [
       2
@@ -3560,12 +3560,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "After a disk controller change, an fstab entry for /dev/sdb1 mounts the wrong disk. How should the entry be written?",
-    "explanation": "Device names such as sdb can change when hardware changes, but the UUID belongs to the filesystem itself. blkid shows it.",
+    "explanation": "Device names such as sdb can change when hardware changes, but the UUID belongs to the filesystem itself; blkid shows it. A by-path name encodes the controller and port, so it changes with the controller, and nofail or automount change when it mounts, not which disk.",
     "options": [
-      "With the noatime option",
-      "With the nosuid option",
+      "By its /dev/disk/by-path name",
+      "With the nofail option added",
       "By the filesystem's UUID",
-      "As a tmpfs mount instead"
+      "With x-systemd.automount"
     ],
     "correct": [
       2
@@ -3581,11 +3581,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Auth logs show thousands of failed SSH logins from many addresses. Which change cuts this risk most directly?",
-    "explanation": "Brute-force guessing needs password authentication; with PasswordAuthentication no only key holders can log in. fail2ban and AllowUsers add further limits.",
+    "explanation": "Brute-force guessing needs password authentication; with PasswordAuthentication no only key holders can log in. Another port only cuts log noise from scanners, more logging records the attacks without stopping them, and a banner deters no automated tool.",
     "options": [
-      "Add more swap space",
-      "Rotate the logs more often",
-      "Raise the MaxSessions limit",
+      "Show a legal warning banner",
+      "Turn on verbose SSH logging",
+      "Move sshd to another port",
       "Allow only key-based logins"
     ],
     "correct": [
@@ -3644,12 +3644,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which command overwrites a file's contents several times and then deletes it?",
-    "explanation": "shred overwrites the data in place (three passes by default) and -u removes the file afterwards. rm and unlink only remove the name, leaving the blocks readable until reused. On SSDs and copy-on-write filesystems, encryption is the safer route.",
+    "explanation": "shred overwrites the data in place (three passes by default) and -u removes the file afterwards. rm only removes the name and leaves the blocks readable until reused, wipefs only erases filesystem signatures, and truncate frees the blocks without overwriting them. On SSDs and copy-on-write filesystems, encryption is the safer route.",
     "options": [
-      "$\\texttt{unlink secret.txt}$",
+      "$\\texttt{truncate -s 0 secret.txt}$",
       "$\\texttt{rm -f secret.txt}$",
       "$\\texttt{shred -u secret.txt}$",
-      "$\\texttt{truncate -s 0 secret.txt}$"
+      "$\\texttt{wipefs -a secret.txt}$"
     ],
     "correct": [
       2
@@ -3947,11 +3947,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Before pasting a server config into a public LLM for help, what should the admin remove?",
-    "explanation": "Data sent to a public model may be kept or used for training, so passwords, keys and internal details must be stripped first, and company AI policy followed. A local model avoids sending the data out.",
+    "explanation": "Data sent to a public model may be kept or used for training, so passwords, keys, tokens and internal names must be stripped first, and company AI policy followed. Comments, whitespace and version strings carry no secrets; a local model avoids sending the data out at all.",
     "options": [
       "Secrets and internal hostnames",
-      "Every IPv6 address",
-      "All indentation and tabs",
+      "Indentation and whitespace",
+      "Version numbers and dates",
       "Comments and blank lines"
     ],
     "correct": [
@@ -3968,12 +3968,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "CPU alerts fire many times a day for spikes that last a few seconds. What reduces this noise?",
-    "explanation": "Adding a duration to the threshold means only sustained problems alert. Lowering the threshold would make the noise worse, and turning it off hides real trouble.",
+    "explanation": "Adding a duration to the threshold means only sustained problems alert. Sampling more often or alerting per core would catch even more short spikes, and a higher severity changes who is paged, not how often.",
     "options": [
       "Require a sustained breach",
-      "Lower the threshold",
-      "Alert on every sample",
-      "Turn the CPU alert off"
+      "Raise the alert severity",
+      "Sample CPU more often",
+      "Alert on each CPU core"
     ],
     "correct": [
       0
@@ -4157,12 +4157,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "dnf fails with a GPG check error for packages from a newly added repository. What is the right fix?",
-    "explanation": "The packages are signed with a key dnf does not trust yet, so import the vendor's key after checking where it came from. Turning off gpgcheck would accept tampered packages too.",
+    "explanation": "The packages are signed with a key dnf does not trust yet, so import the vendor's GPG key (after checking where it came from), for example with rpm --import or the repo's gpgkey line. Clearing the cache or rebuilding the RPM database does not add a key, and the CA bundle is for TLS certificates, not package signatures.",
     "options": [
-      "Set gpgcheck=0 for the repo",
-      "Clear the dnf metadata cache",
+      "Run dnf clean all and retry",
+      "Rebuild the RPM database",
       "Import the repo's signing key",
-      "Reinstall the base repository"
+      "Update the CA certificate bundle"
     ],
     "correct": [
       2

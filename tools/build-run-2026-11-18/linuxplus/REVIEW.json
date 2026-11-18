@@ -1,0 +1,207 @@
+{
+ "id": "linuxplus",
+ "blind_agreement": "204/204",
+ "blind_notes": "Every key (188 single, 4 multi, 3 numeric, 3 order, 6 matrix) matched my blind answers; octal modes 750, 644, 700 recomputed. Only soft doubts: T1-061 (PAT), T2-060 (SELinux), both listed.",
+ "options_only": {
+  "score": "143/188 (76%); K 25/25, S 18/18, G 100/145",
+  "s_hits": [
+   "LINUXPLUS-D-006",
+   "LINUXPLUS-D-007",
+   "LINUXPLUS-D-016",
+   "LINUXPLUS-T1-039",
+   "LINUXPLUS-T1-048",
+   "LINUXPLUS-T1-052",
+   "LINUXPLUS-T1-060",
+   "LINUXPLUS-T1-072",
+   "LINUXPLUS-T1-089",
+   "LINUXPLUS-T2-030",
+   "LINUXPLUS-T2-039",
+   "LINUXPLUS-T2-045",
+   "LINUXPLUS-T2-059",
+   "LINUXPLUS-T2-061",
+   "LINUXPLUS-T2-069",
+   "LINUXPLUS-T2-078",
+   "LINUXPLUS-T2-079",
+   "LINUXPLUS-T2-082"
+  ],
+  "verdict": "FAIL",
+  "method": "188 single-answer items converted to the v1 shape in a scratch copy and run through tools/options_only.py. Multi items (5 options, 2 keys) cannot be represented by the tool and were reviewed in the blind pass only. Because the main reviewer had already read every stem, the options-only picks were made by a separate fresh agent that saw only blind.json; a first, contaminated self-run was discarded.",
+  "fail_reasons": [
+   "surface-cue hits 18 > 3% of items (6)",
+   "S picks hit 18/18, above 40%"
+  ]
+ },
+ "findings": [
+  {
+   "questionId": "LINUXPLUS-D-006",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Secrets and internal hostnames is the only meaningful option. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-D-007",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Require a sustained breach reads as the best-practice answer. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-D-016",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Import the signing key is the only safe fix; others are insecure strawmen. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-039",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Testing earlier in development stands alone against strawmen. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-048",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Only the -P option sounds persistent/best practice. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-052",
+   "severity": "weak",
+   "issue": "Options-only surface cue: [ -f ] is the only sensible file test. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-060",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Renew the certificate vs insecure strawmen. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-072",
+   "severity": "weak",
+   "issue": "Options-only surface cue: PermitRootLogin no is the obvious hardening default. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-089",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Test against sample logs vs reckless options. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-030",
+   "severity": "weak",
+   "issue": "Options-only surface cue: semanage fcontext is the only persistent-sounding fix. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-039",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Git repository as source of truth is given away by the option set. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-045",
+   "severity": "weak",
+   "issue": "Options-only surface cue: -aG is the well-known safe usermod habit. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-059",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Find which repo supplies each vs forceful hacks. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-061",
+   "severity": "weak",
+   "issue": "Options-only surface cue: SSH local port forwarding is the only secure option. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-069",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Enable TLS 1.2 or later vs insecure strawmen. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-078",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Mount by UUID reads as best practice; others irrelevant options. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-079",
+   "severity": "weak",
+   "issue": "Options-only surface cue: Allow only key-based logins is the only security change listed. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-082",
+   "severity": "weak",
+   "issue": "Options-only surface cue: shred -u is the most thorough-sounding delete. A reader picks the key without the stem.",
+   "source": "",
+   "fix": "Replace the strawman distractors with plausible but wrong admin choices of the same kind (e.g. other real, defensible-sounding commands or fixes)."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-061",
+   "severity": "ambiguous (low)",
+   "issue": "Port forwarding 443 to an internal server is DNAT in netfilter terms, but many network courses call it static PAT / port address translation; PAT is offered as a distractor and the explanation does not address it.",
+   "source": "https://www.netfilter.org/documentation/HOWTO/NAT-HOWTO-6.html",
+   "fix": "Replace PAT with a non-overlapping distractor (e.g. NAT64) or reword the stem to 'Which iptables/nftables NAT type'."
+  },
+  {
+   "questionId": "LINUXPLUS-T2-060",
+   "severity": "ambiguous (low)",
+   "issue": "SELinux can also stop root deleting a file with normal mode bits, and ls -Z / getenforce are offered. Immutable (lsattr) is the intended answer but the stem gives no error text to rule SELinux out.",
+   "source": "https://man7.org/linux/man-pages/man1/chattr.1.html",
+   "fix": "Add 'with Operation not permitted, and SELinux is disabled' to the stem, or swap the SELinux distractors."
+  },
+  {
+   "questionId": "LINUXPLUS-T1-083",
+   "severity": "minor",
+   "issue": "Explanation mentions SIGINT (Ctrl+C), which is not among the options (SIGHUP, SIGSTOP, SIGKILL, SIGTERM); SIGHUP and SIGSTOP are not explained.",
+   "source": "https://man7.org/linux/man-pages/man1/kill.1.html",
+   "fix": "Explain SIGHUP and SIGSTOP instead of SIGINT."
+  },
+  {
+   "questionId": "(bank-wide)",
+   "severity": "note",
+   "issue": "In the fresh options-only pass, genuine guesses (G) were right 100/145 (69%, chance 25%), so many distractor sets are weak even where no single cue was named; overall 76% is under the 82% ceiling.",
+   "source": "",
+   "fix": "When rewriting the S items, also strengthen distractors in the troubleshooting and services domains."
+  }
+ ],
+ "landing_findings": [
+  {
+   "issue": "Confirmed on https://www.comptia.org/en-us/certifications/linux/ (2026-11-18): XK0-006, launched July 15 2025, max 90 questions MC + PBQ, 90 minutes, 720 on 100-900, English, retirement est. 2028. Landing title, FAQ and examFacts agree.",
+   "severity": "ok"
+  },
+  {
+   "issue": "XK0-005 English retirement January 13 2026 (landing FAQ, examFacts answer, freshness entry) and the Japanese/Portuguese/Spanish date April 14 2026 are not on the CompTIA page as fetched (no FAQ rendered, no XK0-005 mention); only a third-party guide (trainingcamp.com) states Jan 13 2026.",
+   "severity": "unverified",
+   "source": "https://www.comptia.org/en-us/certifications/linux/",
+   "fix": "Confirm on a CompTIA retirement page or drop the exact date and say XK0-005 has retired."
+  },
+  {
+   "issue": "examFacts rows 'Valid for: 3 years' and 'Given by: CompTIA, at Pearson VUE or online' are not on the Linux+ page fetched; standard CompTIA policy but not sourced to an official page in sources.md beyond the builder's note.",
+   "severity": "low",
+   "fix": "Cite CompTIA's continuing education / testing pages for these two rows."
+  }
+ ]
+}

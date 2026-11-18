@@ -39,7 +39,7 @@ ITEMS = [
     single(1, "Signals", 1,
            "Which signal does " + cmd("kill") + " send when no signal is named?",
            ["SIGTERM (15)", "SIGKILL (9)", "SIGHUP (1)", "SIGSTOP (19)"],
-           "By default kill sends SIGTERM, which asks the process to shut down cleanly. SIGKILL cannot be caught and is the last resort; SIGINT is what Ctrl+C sends."),
+           "By default kill sends SIGTERM, which asks the process to shut down cleanly. SIGKILL (9) cannot be caught and is the last resort, SIGHUP (1) is a hangup that many daemons treat as a reload, and SIGSTOP (19) pauses the process."),
 
     # ---------------- Test 2 ----------------
     single(2, "File utilities", 1,
@@ -60,8 +60,8 @@ ITEMS = [
            "getent queries the databases listed in /etc/nsswitch.conf, so it finds directory users that are not in the local file. grep only reads /etc/passwd itself."),
     single(2, "Modifying accounts", 2,
            "Which command adds user sam to the docker group and keeps the other groups he is in?",
-           [cmd("usermod -aG docker sam"), cmd("usermod -G docker sam"), cmd("groupmod -n docker sam"), cmd("gpasswd -A docker sam")],
-           "-G sets the supplementary groups and -a appends to the current list. Without -a, usermod -G replaces his groups with docker alone."),
+           [cmd("usermod -aG docker sam"), cmd("usermod -G docker sam"), cmd("usermod -g docker sam"), cmd("newgrp docker")],
+           "-G sets the supplementary groups and -a appends to the current list. Without -a, usermod -G replaces his groups with docker alone; -g changes his primary group instead, and newgrp only switches the group of the current shell."),
     multi(2, "Listing accounts", 1,
           "Which two commands show who is logged in right now? (Choose two.)",
           [cmd("w"), cmd("who"), cmd("lastlog"), cmd("groups"), cmd("chsh")],

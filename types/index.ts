@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "FRCIVIQUE" | "EPA609" | "REBROKER" | "FRVTC" | "CDM" | "ZAFIREARM" | "APPRAISER" | "NCCCO" | "SGSNB" | "NZBOAT" | "EA1" | "CPABAR" | "CEHRS" | "CPCTA" | "PANCE" | "CPATCP" | "AUFAWA" | "HSPACIS" | "MACE" | "NCMA" | "AUFAVIC" | "CMAA" | "CBSPD" | "ASCPMLT" | "AUFANSW" | "NZHAM" | "CADC" | "NZDRONE" | "CRFSC" | "ASCPPBT" | "RPT" | "HSPACHL" | "HSPACER" | "BCABA" | "BCBA" | "AUFAQLD" | "MBLEX" | "CCAF" | "ASE" | "UKGAS" | "UKBREGS" | "UKRBI" | "UKPLUMB" | "UKG3" | "UKWATER" | "PHNAT" | "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "RMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "CCRN" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "BEMOTO" | "BEVRACHT" | "BETOEL" | "BEFSMA" | "DKTEORI" | "DKMOTO" | "DKTRUCK" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "FIMOTO" | "FITRUCK" | "FIHYGIENE" | "FIHUNT" | "GRDRIVE" | "GRMOTO" | "GRCITIZEN" | "GRINSURE" | "GRSECURITY" | "RODRPCIV" | "ROCPI" | "ROTAXI" | "ROADMED" | "ROREZID" | "HUKRESZ" | "HUKRMOTO" | "HUGKI" | "HUELSOSEG" | "HUBIZT" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL" | "FGT" | "ITCILS" | "ITCELI" | "ITPATENTE" | "FRCODE" | "AAFCS" | "CEN" | "IEHCAP" | "UKDSC1" | "HKNURSE" | "BCRE" | "AERERA" | "NZRE" | "CACORE" | "CHTHEORY" | "QABAABAT" | "NZSECURITY" | "NCPT" | "SMARTSERVE" | "CAHUNTERON" | "INBDE" | "CABCGUARD" | "CAABGUARD" | "CAAIRBRAKE";
+export type QuestionType = "FRCIVIQUE" | "EPA609" | "REBROKER" | "FRVTC" | "CDM" | "ZAFIREARM" | "APPRAISER" | "NCCCO" | "SGSNB" | "NZBOAT" | "EA1" | "CPABAR" | "CEHRS" | "CPCTA" | "PANCE" | "CPATCP" | "AUFAWA" | "HSPACIS" | "MACE" | "NCMA" | "AUFAVIC" | "CMAA" | "CBSPD" | "ASCPMLT" | "AUFANSW" | "NZHAM" | "CADC" | "NZDRONE" | "CRFSC" | "ASCPPBT" | "RPT" | "HSPACHL" | "HSPACER" | "BCABA" | "BCBA" | "AUFAQLD" | "MBLEX" | "CCAF" | "ASE" | "UKGAS" | "UKBREGS" | "UKRBI" | "UKPLUMB" | "UKG3" | "UKWATER" | "PHNAT" | "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "RMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "CCRN" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "BEMOTO" | "BEVRACHT" | "BETOEL" | "BEFSMA" | "DKTEORI" | "DKMOTO" | "DKTRUCK" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "FIMOTO" | "FITRUCK" | "FIHYGIENE" | "FIHUNT" | "GRDRIVE" | "GRMOTO" | "GRCITIZEN" | "GRINSURE" | "GRSECURITY" | "RODRPCIV" | "ROCPI" | "ROTAXI" | "ROADMED" | "ROREZID" | "HUKRESZ" | "HUKRMOTO" | "HUGKI" | "HUELSOSEG" | "HUBIZT" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL" | "FGT" | "ITCILS" | "ITCELI" | "ITPATENTE" | "FRCODE" | "AAFCS" | "CEN" | "IEHCAP" | "UKDSC1" | "HKNURSE" | "BCRE" | "AERERA" | "NZRE" | "CACORE" | "CHTHEORY" | "QABAABAT" | "NZSECURITY" | "NCPT" | "SMARTSERVE" | "CAHUNTERON" | "INBDE" | "CABCGUARD" | "CAABGUARD" | "CAAIRBRAKE" | "CAHAIR" | "CACOOK" | "CADRONE" | "CAHAM" | "EA3" | "EA2" | "NAILTECH";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -2997,7 +2997,81 @@ export type QuestionCategory =
   | "nzreTenure"
   | "nzreCouncil"
   | "nzreOtherLaw"
-  | "nzreMarketing";
+  | "nzreMarketing"
+  // Nail technician (NIC nail technology theory)
+  | "nailInfection"
+  | "nailStructure"
+  | "nailDisorders"
+  | "nailChemistry"
+  | "nailConsult"
+  | "nailTools"
+  | "nailManiPedi"
+  | "nailEnhance"
+  // IRS Enrolled Agent SEE Part 2 (Businesses)
+  | "ea2Entities"
+  | "ea2Partnerships"
+  | "ea2Corporations"
+  | "ea2Income"
+  | "ea2Assets"
+  | "ea2Records"
+  | "ea2Trusts"
+  | "ea2Retirement"
+  // IRS SEE Part 3 (ea3)
+  | "ea3Practice"
+  | "ea3Sanctions"
+  | "ea3Poa"
+  | "ea3Case"
+  | "ea3Collection"
+  | "ea3Exam"
+  | "ea3Filing"
+  // Canada amateur radio Basic Qualification (ISED)
+  | "cahamRegs"
+  | "cahamBands"
+  | "cahamOperating"
+  | "cahamStation"
+  | "cahamPowerSafety"
+  | "cahamComponents"
+  | "cahamElectronics"
+  | "cahamAntennas"
+  | "cahamPropagation"
+  | "cahamInterference"
+  // Transport Canada Small Basic Exam (cadronebasic)
+  | "cdrLaw"
+  | "cdrRules"
+  | "cdrAirspace"
+  | "cdrSystems"
+  | "cdrHuman"
+  | "cdrWeather"
+  | "cdrNav"
+  | "cdrFlightOps"
+  // Red Seal Cook (Canada)
+  | "rscookSafety"
+  | "rscookSkills"
+  | "rscookProduce"
+  | "rscookStocks"
+  | "rscookSauces"
+  | "rscookDairy"
+  | "rscookPasta"
+  | "rscookGrains"
+  | "rscookMeats"
+  | "rscookFish"
+  | "rscookSalads"
+  | "rscookSpecialty"
+  | "rscookBaking"
+  // Red Seal Hairstylist (Canada)
+  | "rshairSafety"
+  | "rshairClient"
+  | "rshairScalp"
+  | "rshairCut"
+  | "rshairFacial"
+  | "rshairStyle"
+  | "rshairWave"
+  | "rshairRelax"
+  | "rshairColour"
+  | "rshairLighten"
+  | "rshairCorrect"
+  | "rshairSpecial"
+  | "rshairSalon";
 
 export interface Question {
   type: QuestionType;

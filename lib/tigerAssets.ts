@@ -66,6 +66,9 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  * Remove an entry once that exam has its own eight expressions.
  */
 const BORROWED_SETS: Record<string, string> = {
+  carshair: "cosmetology",
+  carscook: "foodhandler",
+  nailtech: "cosmetology",
   frvtc: "driving",
   zafirearm: "capal",
   realestatebroker: "realestate",
@@ -79,6 +82,8 @@ const BORROWED_SETS: Record<string, string> = {
   cabcguard: "caguard",
   nzboat: "boating",
   ea1: "cpareg",
+  ea2: "cpareg",
+  ea3: "cpareg",
   cpabar: "cpafar",
   cpcta: "cna",
   cpatcp: "cpareg",
@@ -90,8 +95,10 @@ const BORROWED_SETS: Record<string, string> = {
   ascpmlt: "htl",
   aufirearmsnsw: "capal",
   nzham: "ham",
+  cahambasic: "ham",
   cadc: "nce",
   nzdrone: "part107",
+  cadronebasic: "part107",
   crfsc: "capal",
   ascppbt: "phleb",
   rpt: "phleb",
@@ -123,7 +130,7 @@ const BORROWED_SETS: Record<string, string> = {
   awssaa: "aws", az900: "aws", ccna: "aplus", gulfrn: "nclex", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", securityx: "secplus", ceh: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", isc2cc: "cissp", servicenowcsa: "cissp", sscp: "cissp",
+  psat: "sat", netplus: "secplus", linuxplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", securityx: "secplus", ceh: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", isc2cc: "cissp", servicenowcsa: "cissp", sscp: "cissp",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   osssc: "ssccgl", ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", vidyagyan: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
@@ -187,7 +194,7 @@ const BORROWED_SETS: Record<string, string> = {
   cca: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
-  cma: "ccma", rma: "ccma", nbdhe: "danb", inbde: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", cfal1: "series7",
+  cma: "ccma", rma: "ccma", nbdhe: "danb", inbde: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", sfpd1: "aws", sfappbuilder: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.

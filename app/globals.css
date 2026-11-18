@@ -1227,6 +1227,19 @@
     --brand-border-light: 60 40% 88%;
     --brand-gradient-to: 45 80% 95%;
   }
+  /* Canada amateur radio Basic Qualification (ISED) theme */
+  [data-theme="cahambasic"] {
+    --brand: 356 30% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 30% 96%;
+    --brand-hover: 356 30% 40%;
+    --brand-dark: 356 30% 38%;
+    --brand-darker: 356 28% 28%;
+    --brand-muted: 356 18% 72%;
+    --brand-border: 356 18% 82%;
+    --brand-border-light: 356 15% 90%;
+    --brand-gradient-to: 0 30% 96%;
+  }
 
   /* REx-PN theme: deep purple (v2 exam; matches lib/v2/exams/rexpn.ts theme) */
   [data-theme="rexpn"] {
@@ -1366,6 +1379,32 @@
     --brand-border: 16 40% 78%;
     --brand-border-light: 16 35% 88%;
     --brand-gradient-to: 32 70% 95%;
+  }
+  /* Red Seal Cook theme (Canada) */
+  [data-theme="carscook"] {
+    --brand: 350 100% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 350 80% 96%;
+    --brand-hover: 350 100% 27%;
+    --brand-dark: 350 100% 24%;
+    --brand-darker: 350 90% 16%;
+    --brand-muted: 350 45% 72%;
+    --brand-border: 350 45% 78%;
+    --brand-border-light: 350 40% 89%;
+    --brand-gradient-to: 10 80% 96%;
+  }
+  /* Red Seal Hairstylist theme (Canada) */
+  [data-theme="carshair"] {
+    --brand: 340 85% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 80% 96%;
+    --brand-hover: 340 85% 34%;
+    --brand-dark: 340 85% 30%;
+    --brand-darker: 340 80% 20%;
+    --brand-muted: 340 45% 72%;
+    --brand-border: 340 45% 78%;
+    --brand-border-light: 340 40% 89%;
+    --brand-gradient-to: 355 80% 96%;
   }
 
   /* NAPLAN Year 9 theme: green (v2 exam; matches lib/v2/exams/naplan.ts theme) */
@@ -1966,6 +2005,19 @@
     --brand-border-light: 4 34% 89%;
     --brand-gradient-to: 215 70% 96%;
   }
+  /* Nail technician theme: nail-polish raspberry */
+  [data-theme="nailtech"] {
+    --brand: 331 85% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 331 80% 96%;
+    --brand-hover: 331 85% 30%;
+    --brand-dark: 331 85% 24%;
+    --brand-darker: 331 75% 15%;
+    --brand-muted: 331 35% 70%;
+    --brand-border: 331 35% 80%;
+    --brand-border-light: 331 30% 89%;
+    --brand-gradient-to: 345 70% 96%;
+  }
 
   /* Firefighter I theme */
   [data-theme="ffi"] {
@@ -2415,6 +2467,45 @@
     --brand-border: 252 38% 80%;
     --brand-border-light: 252 34% 89%;
     --brand-gradient-to: 265 50% 96%;
+  }
+  /* CompTIA Linux+ XK0-006 theme: muted khaki amber (v2 exam; matches lib/v2/exams/linuxplus.ts theme) */
+  [data-theme="linuxplus"] {
+    --brand: 39 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 39 30% 96%;
+    --brand-hover: 39 25% 37%;
+    --brand-dark: 39 25% 33%;
+    --brand-darker: 39 28% 22%;
+    --brand-muted: 39 18% 70%;
+    --brand-border: 39 22% 80%;
+    --brand-border-light: 39 20% 89%;
+    --brand-gradient-to: 50 30% 96%;
+  }
+  /* Salesforce Certified Platform Developer theme: deep violet (v2 exam; matches lib/v2/exams/sfpd1.ts theme) */
+  [data-theme="sfpd1"] {
+    --brand: 266 100% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 266 60% 96%;
+    --brand-hover: 266 100% 28%;
+    --brand-dark: 266 100% 25%;
+    --brand-darker: 266 90% 17%;
+    --brand-muted: 266 40% 72%;
+    --brand-border: 266 45% 82%;
+    --brand-border-light: 266 40% 90%;
+    --brand-gradient-to: 276 60% 96%;
+  }
+  /* Salesforce Platform App Builder theme: violet (v2 exam; matches lib/v2/exams/sfappbuilder.ts theme) */
+  [data-theme="sfappbuilder"] {
+    --brand: 278 80% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 278 80% 96%;
+    --brand-hover: 278 80% 35%;
+    --brand-dark: 278 80% 31%;
+    --brand-darker: 278 80% 21%;
+    --brand-muted: 278 40% 70%;
+    --brand-border: 278 50% 82%;
+    --brand-border-light: 278 50% 90%;
+    --brand-gradient-to: 290 70% 96%;
   }
 
   /* CompTIA CySA+ theme: deep magenta violet (v2 exam; matches lib/v2/exams/cysa.ts theme) */
@@ -5047,6 +5138,19 @@
     --brand-border-light: 194 30% 88%;
     --brand-gradient-to: 209 50% 95%;
   }
+  /* Transport Canada Small Basic Exam (drone) theme: twilight violet */
+  [data-theme="cadronebasic"] {
+    --brand: 287 45% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 287 40% 95%;
+    --brand-hover: 287 45% 28%;
+    --brand-dark: 287 45% 22%;
+    --brand-darker: 287 40% 14%;
+    --brand-muted: 287 20% 70%;
+    --brand-border: 287 25% 80%;
+    --brand-border-light: 287 25% 89%;
+    --brand-gradient-to: 302 40% 95%;
+  }
 
   [data-theme="bcrealestate"] {
     --brand: 158 95% 20%;
@@ -5402,6 +5506,32 @@
     --brand-border: 39 30% 78%;
     --brand-border-light: 39 30% 88%;
     --brand-gradient-to: 54 50% 95%;
+  }
+  /* IRS Enrolled Agent SEE Part 2 theme: dark olive taupe */
+  [data-theme="ea2"] {
+    --brand: 49 20% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 49 50% 95%;
+    --brand-hover: 49 20% 17%;
+    --brand-dark: 49 20% 15%;
+    --brand-darker: 49 15% 10%;
+    --brand-muted: 49 20% 70%;
+    --brand-border: 49 30% 78%;
+    --brand-border-light: 49 30% 88%;
+    --brand-gradient-to: 64 50% 95%;
+  }
+  /* IRS SEE Part 3 theme: dark olive */
+  [data-theme="ea3"] {
+    --brand: 82 25% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 82 50% 95%;
+    --brand-hover: 82 25% 17%;
+    --brand-dark: 82 25% 15%;
+    --brand-darker: 82 20% 10%;
+    --brand-muted: 82 25% 70%;
+    --brand-border: 82 30% 78%;
+    --brand-border-light: 82 30% 88%;
+    --brand-gradient-to: 97 50% 95%;
   }
 
   [data-theme="hspachl"] {
@@ -7250,6 +7380,18 @@
     --brand-darker: 60 60% 78%;
   }
 
+  .dark [data-theme="cahambasic"] {
+    --brand: 356 30% 50%;
+    --brand-hover: 356 30% 42%;
+    --brand-light: 356 30% 13%;
+    --brand-gradient-to: 0 30% 11%;
+    --brand-border-light: 356 15% 24%;
+    --brand-border: 356 18% 34%;
+    --brand-muted: 356 18% 45%;
+    --brand-dark: 356 30% 65%;
+    --brand-darker: 356 28% 78%;
+  }
+
   .dark [data-theme="naplan"] {
     --brand: 142 64% 32.1%;
     --brand-hover: 142 64% 25%;
@@ -7510,6 +7652,30 @@
     --brand-muted: 16 40% 45%;
     --brand-dark: 16 85% 65%;
     --brand-darker: 16 75% 78%;
+  }
+
+  .dark [data-theme="carscook"] {
+    --brand: 350 100% 46%;
+    --brand-hover: 350 100% 38%;
+    --brand-light: 350 45% 13%;
+    --brand-gradient-to: 10 40% 11%;
+    --brand-border-light: 350 35% 24%;
+    --brand-border: 350 40% 34%;
+    --brand-muted: 350 45% 45%;
+    --brand-dark: 350 100% 65%;
+    --brand-darker: 350 90% 78%;
+  }
+
+  .dark [data-theme="carshair"] {
+    --brand: 340 85% 48.5%;
+    --brand-hover: 340 85% 40.5%;
+    --brand-light: 340 45% 13%;
+    --brand-gradient-to: 355 40% 11%;
+    --brand-border-light: 340 35% 24%;
+    --brand-border: 340 40% 34%;
+    --brand-muted: 340 45% 45%;
+    --brand-dark: 340 85% 65%;
+    --brand-darker: 340 80% 78%;
   }
 
   .dark [data-theme="naplan7"] {
@@ -7876,6 +8042,18 @@
     --brand-muted: 4 35% 45%;
     --brand-dark: 4 60% 65%;
     --brand-darker: 4 50% 78%;
+  }
+
+  .dark [data-theme="nailtech"] {
+    --brand: 331 85% 47.7%;
+    --brand-hover: 331 85% 39.7%;
+    --brand-light: 331 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 331 30% 24%;
+    --brand-border: 331 35% 34%;
+    --brand-muted: 331 35% 45%;
+    --brand-dark: 331 85% 65%;
+    --brand-darker: 331 75% 78%;
   }
 
   .dark [data-theme="ffi"] {
@@ -8259,6 +8437,40 @@
     --brand-muted: 252 35% 45%;
     --brand-dark: 252 40% 65%;
     --brand-darker: 252 30% 78%;
+  }
+
+  .dark [data-theme="linuxplus"] {
+    --brand-light: 39 30% 13%;
+    --brand-gradient-to: 50 30% 11%;
+    --brand-border-light: 39 20% 24%;
+    --brand-border: 39 22% 34%;
+    --brand-muted: 39 18% 45%;
+    --brand-dark: 39 25% 65%;
+    --brand-darker: 39 28% 78%;
+  }
+
+  .dark [data-theme="sfpd1"] {
+    --brand: 266 100% 50%;
+    --brand-hover: 266 100% 42%;
+    --brand-light: 266 45% 13%;
+    --brand-gradient-to: 276 40% 11%;
+    --brand-border-light: 266 35% 24%;
+    --brand-border: 266 40% 34%;
+    --brand-muted: 266 40% 45%;
+    --brand-dark: 266 100% 68%;
+    --brand-darker: 266 90% 78%;
+  }
+
+  .dark [data-theme="sfappbuilder"] {
+    --brand: 278 80% 50%;
+    --brand-hover: 278 80% 42%;
+    --brand-light: 278 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 278 35% 24%;
+    --brand-border: 278 40% 34%;
+    --brand-muted: 278 40% 45%;
+    --brand-dark: 278 80% 65%;
+    --brand-darker: 278 80% 78%;
   }
 
   .dark [data-theme="cysa"] {
@@ -10465,6 +10677,18 @@
     --brand-darker: 194 55% 78%;
   }
 
+  .dark [data-theme="cadronebasic"] {
+    --brand: 287 45% 50%;
+    --brand-hover: 287 45% 42%;
+    --brand-light: 287 40% 13%;
+    --brand-gradient-to: 302 40% 11%;
+    --brand-border-light: 287 25% 24%;
+    --brand-border: 287 25% 34%;
+    --brand-muted: 287 20% 45%;
+    --brand-dark: 287 45% 65%;
+    --brand-darker: 287 40% 78%;
+  }
+
   .dark [data-theme="bcrealestate"] {
     --brand: 158 95% 37.6%;
     --brand-hover: 158 95% 29.8%;
@@ -10786,6 +11010,30 @@
     --brand-muted: 39 25% 45%;
     --brand-dark: 39 85% 65%;
     --brand-darker: 39 80% 78%;
+  }
+
+  .dark [data-theme="ea2"] {
+    --brand: 49 20% 40.8%;
+    --brand-hover: 49 20% 32.8%;
+    --brand-light: 49 45% 13%;
+    --brand-gradient-to: 64 40% 11%;
+    --brand-border-light: 49 30% 24%;
+    --brand-border: 49 30% 34%;
+    --brand-muted: 49 20% 45%;
+    --brand-dark: 49 20% 65%;
+    --brand-darker: 49 15% 78%;
+  }
+
+  .dark [data-theme="ea3"] {
+    --brand: 82 25% 38.7%;
+    --brand-hover: 82 25% 30.7%;
+    --brand-light: 82 45% 13%;
+    --brand-gradient-to: 97 40% 11%;
+    --brand-border-light: 82 30% 24%;
+    --brand-border: 82 30% 34%;
+    --brand-muted: 82 25% 45%;
+    --brand-dark: 82 25% 65%;
+    --brand-darker: 82 20% 78%;
   }
 
   .dark [data-theme="hspachl"] {

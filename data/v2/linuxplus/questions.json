@@ -1,0 +1,4339 @@
+[
+  {
+    "id": "LINUXPLUS-T1-001",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "File permissions",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A directory must give its owner full access, its group read and enter, and others nothing. What octal mode should chmod set? Type the number only.",
+    "explanation": "Owner rwx is 4+2+1 = 7, group r-x is 4+1 = 5 and others get 0, so the mode is 750. Directories need execute to be entered.",
+    "numeric": {
+      "answers": [
+        "750"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "LINUXPLUS-T1-002",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Ansible",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is it called when Ansible runs one module against a group of hosts straight from the command line, with no playbook?",
+    "explanation": "An ad hoc command such as ansible web -m ping runs a single task once. Playbooks hold repeatable sets of tasks, and collections are distribution packages of modules and plugins.",
+    "options": [
+      "Role",
+      "Collection",
+      "Ad hoc command",
+      "Fact gathering"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-003",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "LVM",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps in order to create a new LVM volume on an empty disk and start using it.",
+    "explanation": "LVM stacks physical volumes into a volume group, and logical volumes are carved from the group. Only then is there a block device to format and mount.",
+    "options": [
+      "Run pvcreate on the disk",
+      "Create the volume group with vgcreate",
+      "Create the logical volume with lvcreate",
+      "Make a filesystem on the logical volume",
+      "Mount it and add it to /etc/fstab"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-004",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "FHS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Under the Filesystem Hierarchy Standard, which directory holds the kernel image and initial RAM disk?",
+    "explanation": "The FHS puts the static files of the boot loader, including the kernel and initrd, in /boot. /lib holds shared libraries and kernel modules, not the kernel itself.",
+    "options": [
+      "$\\texttt{/sbin}$",
+      "$\\texttt{/var}$",
+      "$\\texttt{/lib}$",
+      "$\\texttt{/boot}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-005",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Service monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team tracks the share of requests answered within 300 ms. What is that measurement called?",
+    "explanation": "An SLI is the measured value itself. The SLO is the target for it, such as 99% within 300 ms, and the SLA is the contract that promises a level of service to a customer.",
+    "options": [
+      "Service-level indicator",
+      "Service-level objective",
+      "Service-level agreement",
+      "Management information base"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-006",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "DNS issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Names fail to resolve on a host that uses systemd-resolved. Which command shows the DNS servers it is using for each interface?",
+    "explanation": "resolvectl status lists the global and per-link DNS servers and search domains that systemd-resolved is using, which shows at once whether a link lost its servers. hostnamectl only manages the host name.",
+    "options": [
+      "$\\texttt{hostnamectl status}$",
+      "$\\texttt{resolvectl status}$",
+      "$\\texttt{ip -s link}$",
+      "$\\texttt{cat /etc/hostname}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-007",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Links",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When the original file is deleted, which kind of link stops working?",
+    "explanation": "A symbolic link stores a path, so it dangles once the target is gone. A hard link is another name for the same inode, and the data stays until the last hard link is removed.",
+    "options": [
+      "Hard link",
+      "Symbolic link",
+      "Reflink copy",
+      "Bind mount"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-008",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Package managers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On Debian or Ubuntu, which command installs nginx and its dependencies from the configured repositories?",
+    "explanation": "apt resolves dependencies and downloads from the repositories. dpkg -i installs a local .deb file and does not fetch missing dependencies, and rpm and dnf belong to Red Hat-family systems.",
+    "options": [
+      "$\\texttt{dpkg -i nginx}$",
+      "$\\texttt{dnf install nginx}$",
+      "$\\texttt{rpm -i nginx}$",
+      "$\\texttt{apt install nginx}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-009",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "umask",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "With a umask of 022, what octal permissions does a newly created regular file get? Type the number only.",
+    "explanation": "New files start from 666 (no execute) and the umask clears bits: 666 with 022 removed gives 644, so rw-r--r--. A new directory would start from 777 and get 755.",
+    "numeric": {
+      "answers": [
+        "644"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "LINUXPLUS-T1-010",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Ansible",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Ansible, what are facts?",
+    "explanation": "At the start of a play Ansible gathers facts such as the OS, IP addresses and memory from each host, and tasks can use them as variables. The inventory is the list of hosts.",
+    "options": [
+      "Downloadable module packages",
+      "Encrypted variable files",
+      "Data gathered from managed hosts",
+      "Lists of target hosts"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-011",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Filesystem utilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ext4 logical volume was extended with lvextend. Which command grows the filesystem to match?",
+    "explanation": "resize2fs grows (or shrinks) ext2, ext3 and ext4 filesystems. xfs_growfs is the XFS equivalent, and growpart enlarges a partition, not a filesystem. lvextend -r can also call the right tool for you.",
+    "options": [
+      "$\\texttt{growpart}$",
+      "$\\texttt{xfs\\_growfs}$",
+      "$\\texttt{resize2fs}$",
+      "$\\texttt{fsck}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-012",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Kernel modules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command loads a kernel module and also loads any modules it depends on?",
+    "explanation": "modprobe reads the dependency list built by depmod and loads what the module needs first. insmod inserts one module file and resolves nothing, so it fails when a dependency is missing.",
+    "options": [
+      "$\\texttt{insmod}$",
+      "$\\texttt{modprobe}$",
+      "$\\texttt{lsmod}$",
+      "$\\texttt{modinfo -d}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-013",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "SNMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SNMP message does a device send on its own, without being polled, when an event happens?",
+    "explanation": "A trap is an unsolicited notification from the agent to the manager, for example when a link goes down. Gets and walks are the manager polling the agent.",
+    "options": [
+      "Trap",
+      "Walk",
+      "Set request",
+      "Get request"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-014",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Routing issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows the route and source address the kernel would use to reach 203.0.113.9?",
+    "explanation": "ip route get asks the kernel to look up one destination and prints the chosen route, gateway, interface and source address, which settles questions about overlapping or wrong routes. ip neigh shows the ARP cache.",
+    "options": [
+      "$\\texttt{ip neigh show 203.0.113.9}$",
+      "$\\texttt{ss -t dst 203.0.113.9}$",
+      "$\\texttt{dig -x 203.0.113.9}$",
+      "$\\texttt{ip route get 203.0.113.9}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-015",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Special permissions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which permission on /tmp lets every user create files there but delete only their own?",
+    "explanation": "With the sticky bit set on a world-writable directory, only a file's owner, the directory's owner or root can delete or rename it. ls -l shows it as a t in the last position.",
+    "options": [
+      "setuid",
+      "Sticky bit",
+      "setgid",
+      "Execute bit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-016",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Finding files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists files under /home that are larger than 100 MB?",
+    "explanation": "find -size +100M matches files bigger than 100 MiB anywhere below the path. -mtime +100 matches files modified more than 100 days ago, and ls -S only sorts one directory by size.",
+    "options": [
+      "$\\texttt{find /home -mtime +100}$",
+      "$\\texttt{ls -S /home}$",
+      "$\\texttt{locate -i /home}$",
+      "$\\texttt{find /home -size +100M}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-017",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "GPG signatures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a package manager check a package's GPG signature before installing it?",
+    "explanation": "The signature proves the package was built by the holder of the repository's key and was not altered afterwards. It does not encrypt the download, and license and architecture are package metadata.",
+    "options": [
+      "To confirm its origin and integrity",
+      "To keep it private in transit",
+      "To match it to the CPU architecture",
+      "To check its license terms"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-018",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Infrastructure as code",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does OpenTofu use its state file for?",
+    "explanation": "OpenTofu records which real resources it manages for each block in the configuration, so a plan can compare desired and actual state. Providers are plugins that talk to each platform's API.",
+    "options": [
+      "Caching container base images",
+      "Holding playbook task order",
+      "Storing provider plugin code",
+      "Mapping config to real resources"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-019",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Special permissions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "New files in /srv/team must belong to the team group no matter who creates them. Which bit on the directory does that?",
+    "explanation": "setgid on a directory makes new files inherit the directory's group instead of the creator's primary group. setuid has no such effect on directories in Linux.",
+    "options": [
+      "Sticky bit",
+      "setgid",
+      "Immutable flag",
+      "setuid"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-020",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Filesystem formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which limit of XFS matters when planning to give space back from a volume?",
+    "explanation": "XFS can grow online with xfs_growfs but has no way to shrink. To reclaim space you back up, recreate a smaller filesystem and restore. ext4 can be shrunk while unmounted.",
+    "options": [
+      "It cannot grow while mounted",
+      "It cannot be shrunk",
+      "It caps files at 2 TB",
+      "It has no journal"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-021",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Unattended deployment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool configures a cloud VM on its first boot from user data, for example adding SSH keys and packages?",
+    "explanation": "cloud-init reads the user data the cloud platform passes in and applies it at first boot. Kickstart answers an OS installer's questions instead, so it is used when installing from media or PXE.",
+    "options": [
+      "Kickstart",
+      "cloud-init",
+      "Puppet agent",
+      "dracut"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-022",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Name resolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's /etc/nsswitch.conf contains hosts: files dns. Where is a hostname looked up first?",
+    "explanation": "The hosts line lists sources in order, and files means the local /etc/hosts file. Only when it has no match does the resolver query the DNS servers named in /etc/resolv.conf.",
+    "options": [
+      "DHCP lease file",
+      "NetworkManager cache",
+      "Servers in $\\texttt{/etc/resolv.conf}$",
+      "$\\texttt{/etc/hosts}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-023",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Storage issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\texttt{df -h}$ shows /srv at 40% used, yet creating files fails with No space left on device. What should be checked next?",
+    "explanation": "Every file needs an inode, and a filesystem full of tiny files can run out of inodes while blocks remain free. df -i shows inode use per filesystem.",
+    "options": [
+      "$\\texttt{free -h}$",
+      "$\\texttt{df -i /srv}$",
+      "$\\texttt{lsblk /srv}$",
+      "$\\texttt{mdadm --detail}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-024",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Interface misconfiguration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command checks whether 1472-byte pings reach 10.0.0.9 without being fragmented?",
+    "explanation": "-s sets the payload size and -M do sets the don't-fragment flag, so a reply proves a 1500-byte packet (1472 plus 28 bytes of headers) fits the path MTU. -c is a count, -i an interval and -t a TTL.",
+    "options": [
+      "$\\texttt{ping -M do -s 1472 10.0.0.9}$",
+      "$\\texttt{ping -t 1472 -n 10.0.0.9}$",
+      "$\\texttt{ping -c 1472 -W 2 10.0.0.9}$",
+      "$\\texttt{ping -i 1472 -q 10.0.0.9}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-025",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "User profile templates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which directory holds the template files copied into each new user's home directory?",
+    "explanation": "useradd -m and adduser copy the contents of /etc/skel, such as a starter .bashrc, into the new home. /etc/profile.d holds scripts that run for every login shell.",
+    "options": [
+      "$\\texttt{/etc/skel}$",
+      "$\\texttt{/etc/profile.d}$",
+      "$\\texttt{/etc/security}$",
+      "$\\texttt{/etc/default}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-026",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Unit states",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command keeps the cups service from being started at all, even when another unit asks for it?",
+    "explanation": "mask links the unit to /dev/null so nothing can start it. disable only removes the boot-time links, so a dependency or a manual start can still run it.",
+    "options": [
+      "$\\texttt{systemctl reload cups}$",
+      "$\\texttt{systemctl mask cups}$",
+      "$\\texttt{systemctl disable cups}$",
+      "$\\texttt{systemctl stop cups}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-027",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "File attributes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command stops even root from changing or deleting app.conf until the flag is removed?",
+    "explanation": "The immutable attribute blocks writes, renames and deletion for every user, root included, until chattr -i clears it. +a allows appending only, and root ignores mode bits such as 000.",
+    "options": [
+      "$\\texttt{chattr +i app.conf}$",
+      "$\\texttt{chmod 000 app.conf}$",
+      "$\\texttt{chattr +a app.conf}$",
+      "$\\texttt{chown root app.conf}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-028",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Kubernetes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Kubernetes object should hold a database password that a pod needs?",
+    "explanation": "A Secret is the object meant for small amounts of sensitive data such as passwords and tokens. A ConfigMap is for non-confidential settings, and its values are not treated as sensitive.",
+    "options": [
+      "Deployment",
+      "Secret",
+      "Service",
+      "ConfigMap"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-029",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Mount options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data disk listed in /etc/fstab is sometimes missing, and then the server stalls at boot. Which mount option lets boot continue?",
+    "explanation": "nofail tells the boot process not to treat a missing device as an error. noexec and nodev restrict what can run or be opened on the filesystem and do nothing about a missing disk.",
+    "options": [
+      "$\\texttt{remount}$",
+      "$\\texttt{nofail}$",
+      "$\\texttt{nodev}$",
+      "$\\texttt{noexec}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-030",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Access control lists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command gives user ana read access to report.txt without changing its owner, group or mode bits?",
+    "explanation": "setfacl -m adds an ACL entry for one named user. getfacl only displays ACLs, and chmod o+r would open the file to every other user.",
+    "options": [
+      "$\\texttt{chgrp ana report.txt}$",
+      "$\\texttt{getfacl -m u:ana:r report.txt}$",
+      "$\\texttt{setfacl -m u:ana:r report.txt}$",
+      "$\\texttt{chmod o+r report.txt}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-031",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Netplan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin edits a Netplan file on a remote server and wants the change undone if they lose the connection. Which command fits?",
+    "explanation": "netplan try applies the configuration and rolls it back automatically unless the admin confirms within the timeout, 120 seconds by default. netplan apply makes the change with no safety net.",
+    "options": [
+      "$\\texttt{netplan status}$",
+      "$\\texttt{netplan apply}$",
+      "$\\texttt{netplan generate}$",
+      "$\\texttt{netplan try}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-032",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Storage issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After deleting a 30 GB log file, df still shows the filesystem full. What is the likely reason?",
+    "explanation": "The space is freed only when the last open handle closes. lsof +L1 lists deleted files that are still open; restarting or signalling the process releases the space. Truncating a log is safer than deleting it.",
+    "options": [
+      "The inode table is corrupt",
+      "The filesystem journal is replaying",
+      "Swap is using that space",
+      "A process still holds the file open"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-033",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "IP conflicts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before assigning 10.0.0.50 by hand, which command checks whether another host on the LAN already uses it?",
+    "explanation": "arping -D does duplicate address detection: it sends ARP probes and reports a reply if any host already holds the address. Adding it first and checking later is how IP conflicts start.",
+    "options": [
+      "$\\texttt{ip addr add 10.0.0.50/24 dev eth0}$",
+      "$\\texttt{ss -tn dst 10.0.0.50}$",
+      "$\\texttt{ping -b 10.0.0.255}$",
+      "$\\texttt{arping -D -I eth0 10.0.0.50}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-034",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Kubernetes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Kubernetes object keeps a set number of pod replicas running and rolls out new versions?",
+    "explanation": "A Deployment manages ReplicaSets, replacing failed pods and updating them gradually to a new image. A single Pod is not recreated if its node fails.",
+    "options": [
+      "Service",
+      "ConfigMap",
+      "Pod",
+      "Deployment"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-035",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Password aging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command makes user dana change her password the next time she logs in?",
+    "explanation": "Setting the last change date to 0 forces a change at the next login. chage -E 0 expires the whole account, and passwd -l and usermod -L lock the password so she cannot log in at all.",
+    "options": [
+      "$\\texttt{chage -E 0 dana}$",
+      "$\\texttt{passwd -l dana}$",
+      "$\\texttt{usermod -L dana}$",
+      "$\\texttt{chage -d 0 dana}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-036",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Unit states",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After editing a unit file under /etc/systemd/system, what must run before systemd uses the change?",
+    "explanation": "daemon-reload makes systemd re-read unit files from disk. reload asks a running service to reread its own configuration, which is a different thing, and verify only checks a unit for errors.",
+    "options": [
+      "$\\texttt{systemctl reload sshd}$",
+      "$\\texttt{systemd-analyze verify sshd}$",
+      "$\\texttt{systemctl unmask sshd}$",
+      "$\\texttt{systemctl daemon-reload}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-037",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "sudo",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should /etc/sudoers be edited with visudo instead of a plain text editor?",
+    "explanation": "visudo locks the file and refuses to save a version with syntax errors, which could otherwise leave no one able to use sudo. Drop-in files in /etc/sudoers.d can be checked with visudo -f.",
+    "options": [
+      "It encrypts the file at rest",
+      "It copies the file to every other host",
+      "It restarts sshd once saved",
+      "It checks the syntax before saving"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-038",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "RAID",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file shows the state of software RAID arrays, including a rebuild in progress?",
+    "explanation": "The md driver reports every array, its members and any resync or recovery progress in /proc/mdstat. mdadm --detail gives more about one array.",
+    "options": [
+      "$\\texttt{/etc/fstab}$",
+      "$\\texttt{/proc/mounts}$",
+      "$\\texttt{/proc/mdstat}$",
+      "$\\texttt{/etc/mtab}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-039",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "CI/CD",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does shift left testing mean in a CI/CD pipeline?",
+    "explanation": "Shifting left moves testing, including security checks, toward the start of the pipeline, where problems are cheaper to fix. A staging environment is still late in the pipeline, and parallel runs or automatic rollback change speed and recovery, not when testing happens.",
+    "options": [
+      "Testing earlier in development",
+      "Running tests in parallel",
+      "Testing in a staging copy",
+      "Rolling back on failed tests"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-040",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Device tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool reads the firmware's SMBIOS table to report details such as the BIOS version and memory slots?",
+    "explanation": "dmidecode decodes the DMI (SMBIOS) table, which lists the board, BIOS version and each memory slot. lsmem shows memory blocks as the kernel sees them, not the physical slots.",
+    "options": [
+      "$\\texttt{lsusb -v}$",
+      "$\\texttt{dmesg -T}$",
+      "$\\texttt{lsmem -a}$",
+      "$\\texttt{dmidecode}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-041",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Killed processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The kernel log shows $\\texttt{Out of memory: Killed process 2211 (java)}$. What happened?",
+    "explanation": "When memory and swap run out, the kernel's out-of-memory killer picks a process to end and logs this message. Check for leaks, limits and whether the host simply needs more RAM.",
+    "options": [
+      "A systemd timer stopped it",
+      "It hit a segmentation fault",
+      "A user sent it SIGKILL",
+      "The OOM killer ended it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-042",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Link negotiation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's NIC links at 100 Mb/s half duplex on a gigabit switch port. Which tool shows and sets its speed and duplex?",
+    "explanation": "ethtool reports the negotiated speed, duplex and link state and can force settings. A half-duplex link on a modern switch usually means a negotiation fault or a bad cable.",
+    "options": [
+      "$\\texttt{mtr}$",
+      "$\\texttt{dig}$",
+      "$\\texttt{ip route}$",
+      "$\\texttt{ethtool}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-043",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "SELinux",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web file moved from a home directory keeps the wrong SELinux type. Which command resets it to the policy default for its new path?",
+    "explanation": "restorecon applies the label the policy defines for the path. chcon sets a label by hand, which a later relabel undoes, and setenforce only switches between enforcing and permissive.",
+    "options": [
+      "$\\texttt{getsebool}$",
+      "$\\texttt{setenforce}$",
+      "$\\texttt{restorecon}$",
+      "$\\texttt{chcon}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-044",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Disk usage",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command shows how much space each directory under /var uses?",
+    "explanation": "du adds up the space used by files under a path, so du -sh /var/* gives one total per directory. df reports free and used space for the whole filesystem, not per directory.",
+    "options": [
+      "$\\texttt{stat -f /var}$",
+      "$\\texttt{lsblk -f /var}$",
+      "$\\texttt{du -sh /var/*}$",
+      "$\\texttt{df -h /var}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-045",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Account types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On most current distributions, which UID range does useradd give regular human accounts by default?",
+    "explanation": "UID_MIN in /etc/login.defs is 1000 on most current distributions, and lower numbers are kept for root (0) and system or service accounts. 65534 is usually the nobody account.",
+    "options": [
+      "0 only",
+      "1000 and above",
+      "1 to 999",
+      "65534 and above"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-046",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "systemd units",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which systemd unit type can take the place of a cron job?",
+    "explanation": "A .timer unit starts a matching .service on a calendar schedule or after an interval. Targets group units, mounts describe mount points, and sockets start services on demand when a connection arrives.",
+    "options": [
+      "Socket",
+      "Mount",
+      "Target",
+      "Timer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-047",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Return codes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In Bash, which variable holds the exit status of the last command?",
+    "explanation": "\\$? is 0 after success and non-zero after a failure, which scripts test to decide what to do next. \\$! is the PID of the last background job and \\$# the number of arguments.",
+    "options": [
+      "$\\texttt{\\$0}$",
+      "$\\texttt{\\$\\#}$",
+      "$\\texttt{\\$?}$",
+      "$\\texttt{\\$!}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-048",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "SELinux booleans",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command lets httpd make outbound network connections and keeps that setting after a reboot?",
+    "explanation": "setsebool changes a boolean and -P writes it to the policy so it persists. Without -P, or with togglesebool, the change lasts only until reboot, and chcon changes a file label, which does nothing for network connections.",
+    "options": [
+      "$\\texttt{setsebool -P httpd\\_can\\_network\\_connect on}$",
+      "$\\texttt{chcon -t httpd\\_sys\\_rw\\_content\\_t /var/www}$",
+      "$\\texttt{togglesebool httpd\\_can\\_network\\_connect}$",
+      "$\\texttt{setsebool httpd\\_can\\_network\\_connect on}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-049",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "VM networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VM must sit on the office LAN and get its address from the same DHCP server as the physical hosts. Which network type fits?",
+    "explanation": "A bridged network connects the guest's virtual NIC to the physical segment, so it looks like any other host on the LAN. NAT hides guests behind the host's address on a private subnet.",
+    "options": [
+      "Host-only",
+      "Routed",
+      "Bridged",
+      "NAT"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-050",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Partition not writable",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Writes to /data suddenly fail with Read-only file system, and dmesg shows ext4 errors. What is the likely cause?",
+    "explanation": "ext4 mounted with errors=remount-ro switches to read-only when it finds corruption, to stop more damage. Unmount it, run fsck and check the disk's health before remounting.",
+    "options": [
+      "Kernel remounted it after errors",
+      "SELinux denied the write calls",
+      "The noexec option was set",
+      "The user exceeded a disk quota"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-051",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "SELinux issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "httpd gets permission denied on a file with mode 644. Running $\\texttt{setenforce 0}$ briefly makes it work. What is the cause?",
+    "explanation": "If the access works only in permissive mode, the normal permissions are fine and SELinux is blocking it. Check the AVC denials, fix the file's context or boolean, and set enforcing again.",
+    "options": [
+      "SELinux label or policy",
+      "Full filesystem",
+      "Missing ACL mask entry",
+      "Wrong mode bits"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-052",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Tests",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which test is true only when /etc/app.conf exists and is a regular file?",
+    "explanation": "-f is true only for a regular file. -e is true for anything at that path, including a directory or device, -s for anything that exists and is not empty, and -d only for a directory.",
+    "options": [
+      "$\\texttt{[ -d /etc/app.conf ]}$",
+      "$\\texttt{[ -f /etc/app.conf ]}$",
+      "$\\texttt{[ -s /etc/app.conf ]}$",
+      "$\\texttt{[ -e /etc/app.conf ]}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-053",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Redirection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command appends both the standard output and standard error of backup.sh to job.log?",
+    "explanation": "Redirections are read left to right: >> sends stdout to the file in append mode, then 2>&1 points stderr at the same place. Writing 2>&1 first copies stderr to the terminal before stdout moves, and a single > overwrites the log.",
+    "options": [
+      "$\\texttt{./backup.sh >> job.log 2>/dev/null}$",
+      "$\\texttt{./backup.sh 2>\\&1 >> job.log}$",
+      "$\\texttt{./backup.sh >> job.log 2>\\&1}$",
+      "$\\texttt{./backup.sh > job.log 2>\\&1}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-054",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "firewalld",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin ran $\\texttt{firewall-cmd --add-service=https}$ and the rule vanished after a reboot. Which option was missing?",
+    "explanation": "firewalld keeps runtime and permanent configuration apart. A rule added without --permanent changes only the running firewall; add it with --permanent too, or run --runtime-to-permanent.",
+    "options": [
+      "$\\texttt{--add-port}$",
+      "$\\texttt{--permanent}$",
+      "$\\texttt{--zone=public}$",
+      "$\\texttt{--timeout=0}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-055",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Process states",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\texttt{ps}$ shows a process in state Z. What is it?",
+    "explanation": "A zombie has exited but its parent has not yet collected its exit status. A job stopped with Ctrl+Z shows as T, and uninterruptible disk waits show as D.",
+    "options": [
+      "Process paused with Ctrl+Z",
+      "Task blocked waiting on disk I/O",
+      "Thread running on a CPU",
+      "Finished child not yet reaped"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-056",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Building images",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a Dockerfile, which instruction sets the default command or arguments that $\\texttt{docker run}$ can easily override?",
+    "explanation": "CMD supplies defaults that are replaced by anything given after the image name on docker run. ENTRYPOINT sets the fixed executable, which takes an explicit --entrypoint to change.",
+    "options": [
+      "$\\texttt{USER}$",
+      "$\\texttt{FROM}$",
+      "$\\texttt{ENTRYPOINT}$",
+      "$\\texttt{CMD}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-057",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Interpreter directive",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does $\\texttt{\\#!/bin/bash}$ on the first line of a script do?",
+    "explanation": "The kernel reads the #! line and runs the script with that interpreter. The file still needs execute permission, which chmod sets.",
+    "options": [
+      "Loads the user's .bashrc first",
+      "Names the interpreter to run it",
+      "Marks the script as safe",
+      "Sets the execute permission"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-058",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Software licensing",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements describe a copyleft license such as the GPL? (Choose two.)",
+    "explanation": "Copyleft lets anyone use and change the code, but modified versions that are distributed must carry the same license and make the source available. Commercial use is allowed; what copyleft blocks is closing the code.",
+    "options": [
+      "Changes may be released as closed source",
+      "The code must stay unpublished",
+      "Distributed binaries must come with source access",
+      "Derived works must keep the same license",
+      "Only noncommercial use is allowed"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "LINUXPLUS-T1-059",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "GRUB misconfiguration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin edited /etc/default/grub, but the next boot ignored the change. What step was skipped?",
+    "explanation": "/etc/default/grub is only input: grub2-mkconfig (update-grub on Debian-family systems) must rewrite grub.cfg from it. The initramfs and modules are unrelated to the menu settings.",
+    "options": [
+      "Reinstalling the kernel",
+      "Regenerating the GRUB config",
+      "Rebuilding the initramfs",
+      "Updating module dependencies"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-060",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Certificate issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "curl reports that an internal site's certificate has expired. What fixes it properly?",
+    "explanation": "An expired certificate must be reissued and deployed, ideally with automated renewal. Trusting the CA or updating the client's CA bundle fixes an unknown issuer, not an expiry date, and a restart only reloads the same expired certificate.",
+    "options": [
+      "Add the CA to the trust store",
+      "Renew the certificate",
+      "Restart the web server",
+      "Update the client's CA bundle"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-061",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Address translation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Traffic to port 443 on the gateway must be forwarded to an internal web server. Which kind of translation is this?",
+    "explanation": "Destination NAT rewrites the destination address (and port) of incoming packets, which is how port forwarding works. SNAT and masquerading rewrite the source address of outgoing traffic, and NAT64 translates between IPv6 and IPv4.",
+    "options": [
+      "SNAT",
+      "Masquerading",
+      "NAT64",
+      "DNAT"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-062",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Shell configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Bash, which file runs for each new interactive shell that is not a login shell, such as a new terminal tab?",
+    "explanation": "Bash reads ~/.bashrc for interactive non-login shells. ~/.bash_profile (or ~/.profile when it is missing) runs for login shells, which is why many profiles source .bashrc.",
+    "options": [
+      "~/.bash_profile",
+      "~/.profile",
+      "~/.bashrc",
+      "~/.bash_logout"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-063",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Expansion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which line stores today's date, as given by $\\texttt{date +\\%F}$, in the variable d?",
+    "explanation": "\\$( ) is command substitution: it runs the command and inserts its output. \\${ } is parameter expansion of a variable, spaces around = make Bash treat d as a command, and ( ) makes an array.",
+    "options": [
+      "$\\texttt{d=\\$\\{date +\\%F\\}}$",
+      "$\\texttt{d=(date +\\%F)}$",
+      "$\\texttt{d=\\$(date +\\%F)}$",
+      "$\\texttt{d = \\$(date +\\%F)}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-064",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "IP forwarding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Linux host must route packets between its two interfaces. Which kernel setting must be 1?",
+    "explanation": "net.ipv4.ip_forward tells the kernel to pass packets between interfaces; it is off by default on most systems. Set it with sysctl and save it in a file under /etc/sysctl.d.",
+    "options": [
+      "$\\texttt{net.ipv4.ip\\_forward}$",
+      "$\\texttt{vm.swappiness}$",
+      "$\\texttt{kernel.panic}$",
+      "$\\texttt{net.ipv4.tcp\\_syncookies}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-065",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Priority",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which nice value gives a process the lowest scheduling priority?",
+    "explanation": "Niceness runs from -20 (most favored) to 19 (least favored), and new processes start at 0. Only root can set negative values.",
+    "options": [
+      "10",
+      "19",
+      "0",
+      "-20"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-066",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Container networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which docker run option publishes a container's port 80 on port 8080 of the host?",
+    "explanation": "The publish option is host port first, then container port. -v maps volumes and -e sets environment variables.",
+    "options": [
+      "$\\texttt{-v 8080:80}$",
+      "$\\texttt{-p 8080:80}$",
+      "$\\texttt{-p 80:8080}$",
+      "$\\texttt{-e 8080:80}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-067",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "DNS tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command does a reverse lookup of 203.0.113.7 and prints its PTR record?",
+    "explanation": "dig -x builds the in-addr.arpa name for the address and asks for its PTR record. Asking for an MX or A record of an IP address does not do a reverse lookup.",
+    "options": [
+      "$\\texttt{dig -x 203.0.113.7}$",
+      "$\\texttt{ping -R 203.0.113.7}$",
+      "$\\texttt{dig mx 203.0.113.7}$",
+      "$\\texttt{host -t a 203.0.113.7}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-068",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Systemd unit failures",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A service named app shows as failed. Which command shows its state together with its most recent log lines?",
+    "explanation": "systemctl status prints the unit's state, main PID, exit code and the last journal lines. systemctl cat shows the unit file, and is-enabled only says whether it starts at boot.",
+    "options": [
+      "$\\texttt{systemctl is-enabled app}$",
+      "$\\texttt{systemctl status app}$",
+      "$\\texttt{systemctl mask app}$",
+      "$\\texttt{systemctl cat app}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-069",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Swapping",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\texttt{vmstat}$ shows high si and so values, and the system crawls. What is happening?",
+    "explanation": "si and so are pages swapped in and out per second. Constant swapping means the working set does not fit in RAM; find the memory hog or add memory.",
+    "options": [
+      "Packet drops on the NIC",
+      "A single-core CPU bottleneck",
+      "Swapping from memory pressure",
+      "A full root filesystem"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-070",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Python",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why set up a Python virtual environment for an admin script?",
+    "explanation": "A venv has its own interpreter path and site-packages, so pip installs there do not clash with the packages the OS itself relies on. Create one with python3 -m venv.",
+    "options": [
+      "Compile it into a binary",
+      "Give it root privileges",
+      "Keep its packages apart",
+      "Make the script run faster"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-071",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Text utilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command prints only the first colon-separated field of each line in /etc/passwd?",
+    "explanation": "cut -d: sets the delimiter and -f1 selects the first field, the user name. sort -k1 sorts by that field but still prints whole lines, and head -n1 prints the whole first line.",
+    "options": [
+      "$\\texttt{sort -t: -k1 /etc/passwd}$",
+      "$\\texttt{head -n1 /etc/passwd}$",
+      "$\\texttt{wc -l /etc/passwd}$",
+      "$\\texttt{cut -d: -f1 /etc/passwd}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-072",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Secure remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sshd_config setting blocks direct SSH logins as root?",
+    "explanation": "PermitRootLogin no refuses root over SSH by any method, so admins log in as themselves and use sudo, which leaves an audit trail. prohibit-password still lets root in with a key, PasswordAuthentication no blocks passwords for everyone but still allows root keys, and PermitEmptyPasswords no only blocks blank passwords.",
+    "options": [
+      "$\\texttt{PermitEmptyPasswords no}$",
+      "$\\texttt{PasswordAuthentication no}$",
+      "$\\texttt{PermitRootLogin no}$",
+      "$\\texttt{PermitRootLogin prohibit-password}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-073",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Job management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command keeps long.sh running even if the SSH connection to the server drops?",
+    "explanation": "nohup makes the command ignore SIGHUP, which the shell passes to its jobs when the session hangs up, and & puts it in the background. A plain background job can still be killed by that hangup.",
+    "options": [
+      "$\\texttt{./long.sh \\&}$",
+      "$\\texttt{exec ./long.sh}$",
+      "$\\texttt{source ./long.sh \\&}$",
+      "$\\texttt{nohup ./long.sh \\&}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-074",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Privileged containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main security gain of running containers rootless or unprivileged?",
+    "explanation": "If a process breaks out of an unprivileged container, it lands as an ordinary user on the host rather than as root. Image signing, network isolation and PID namespaces are separate controls that work with or without root.",
+    "options": [
+      "Images are verified before running",
+      "Containers get no network access",
+      "An escape gains only user rights",
+      "Processes cannot see each other"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-075",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Git",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin must switch branches but has edits that are not ready to commit. Which command shelves them for later?",
+    "explanation": "git stash saves uncommitted changes and cleans the working tree; git stash pop brings them back. reset --hard throws the changes away.",
+    "options": [
+      "$\\texttt{git tag}$",
+      "$\\texttt{git reset --hard}$",
+      "$\\texttt{git fetch}$",
+      "$\\texttt{git stash}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-076",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Secure remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool watches log files and bans IP addresses after repeated failed logins?",
+    "explanation": "fail2ban matches failed-login patterns in logs and adds a temporary firewall ban for the source address. rkhunter looks for rootkits, and AIDE checks file integrity.",
+    "options": [
+      "$\\texttt{fail2ban}$",
+      "$\\texttt{sssd}$",
+      "$\\texttt{rkhunter}$",
+      "$\\texttt{aide}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-077",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Boot process",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each boot component to its job.",
+    "explanation": "The boot loader loads the kernel and passes it parameters, the initial RAM disk holds the drivers needed to find and mount the real root filesystem, and the kernel then starts PID 1, usually systemd.",
+    "rows": [
+      "GRUB2",
+      "initrd",
+      "Kernel"
+    ],
+    "columns": [
+      "Manages hardware and starts the init system",
+      "Loads the kernel with its parameters",
+      "Supplies early drivers to reach the root filesystem"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-078",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Quota issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One user gets Disk quota exceeded while the filesystem still has free space. Which command shows that user's usage and limits?",
+    "explanation": "quota reports a user's block and inode use against their soft and hard limits. df and du show filesystem and directory totals, which is why they look fine here.",
+    "options": [
+      "$\\texttt{df -h /home}$",
+      "$\\texttt{quota -u kim}$",
+      "$\\texttt{chage -l kim}$",
+      "$\\texttt{du -sh /home}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-079",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "High I/O wait",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\texttt{top}$ shows low user and system CPU but a high wa value. Where is the bottleneck?",
+    "explanation": "wa is time the CPUs sat idle waiting for disk I/O to complete. iostat or iotop shows which device and process are responsible.",
+    "options": [
+      "Network latency",
+      "CPU cores",
+      "Memory bandwidth",
+      "Storage I/O"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-080",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Archiving",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command creates a gzip-compressed tar archive of /etc named etc.tar.gz?",
+    "explanation": "-c creates, -z filters through gzip and -f names the archive. -x extracts, -t lists the contents, and -j would use bzip2, giving a .bz2 file with the wrong name.",
+    "options": [
+      "$\\texttt{tar -czf etc.tar.gz /etc}$",
+      "$\\texttt{tar -tzf etc.tar.gz /etc}$",
+      "$\\texttt{tar -xzf etc.tar.gz /etc}$",
+      "$\\texttt{tar -cjf etc.tar.gz /etc}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-081",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Git",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps in order to change a file in a shared repository and publish the change.",
+    "explanation": "Changes must be staged before they can be committed, and only commits can be pushed. Clone comes first because there is no local copy until then.",
+    "options": [
+      "Clone the repository",
+      "Edit the file and stage it with git add",
+      "Record it with git commit",
+      "Send it to the remote with git push"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-082",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Data at rest",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technology encrypts a whole block device so the data is unreadable if the disk is stolen?",
+    "explanation": "LUKS2 is the Linux standard for full-disk or partition encryption, with keys protected by a passphrase run through Argon2. GPG encrypts individual files, and HMAC and SHA-256 do not encrypt at all.",
+    "options": [
+      "SHA-256",
+      "HMAC",
+      "GPG",
+      "LUKS2"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-083",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Signals",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which signal does $\\texttt{kill}$ send when no signal is named?",
+    "explanation": "By default kill sends SIGTERM, which asks the process to shut down cleanly. SIGKILL (9) cannot be caught and is the last resort, SIGHUP (1) is a hangup that many daemons treat as a reload, and SIGSTOP (19) pauses the process.",
+    "options": [
+      "SIGHUP (1)",
+      "SIGSTOP (19)",
+      "SIGKILL (9)",
+      "SIGTERM (15)"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-084",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Unit states",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Match each systemctl action to its effect.",
+    "explanation": "enable creates the links that start the unit at boot but does not start it now (enable --now does both). start runs it immediately, and restart stops and starts it.",
+    "rows": [
+      "$\\texttt{enable}$",
+      "$\\texttt{start}$",
+      "$\\texttt{restart}$"
+    ],
+    "columns": [
+      "Start it at every boot",
+      "Stop it, then start it",
+      "Start it now"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-085",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Socket tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists listening TCP sockets along with the process that owns each one?",
+    "explanation": "ss shows sockets: -t for TCP, -l for listening, -n for numeric ports and -p for the owning process. ip route shows the routing table, and ethtool -S shows NIC counters.",
+    "options": [
+      "$\\texttt{ss -tlnp}$",
+      "$\\texttt{arp -n}$",
+      "$\\texttt{ethtool -S eth0}$",
+      "$\\texttt{ip route show}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-086",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Kernel panic",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two problems can cause a kernel panic early in boot? (Choose two.)",
+    "explanation": "If the kernel cannot load or cannot reach the root filesystem it has nothing to run, so it panics. A full /home or an expired password affects users after boot, not the kernel.",
+    "options": [
+      "Full /home filesystem",
+      "Stopped cron service",
+      "Expired user password",
+      "Corrupt kernel image",
+      "Initramfs missing the root disk driver"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "LINUXPLUS-T1-087",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "High load average",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 4-core server shows a load average of 12.0. What does that suggest?",
+    "explanation": "Load average counts tasks running or waiting to run (and in uninterruptible waits), not a CPU percentage or logins. Twelve on four cores means about three tasks for every core, a long queue from CPU demand or blocked I/O.",
+    "options": [
+      "CPU use of about 300 percent",
+      "Normal load for four cores",
+      "Twelve active SSH sessions",
+      "A long queue for the CPUs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-088",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Backup tools",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Why might an admin use rsync instead of cp for a nightly copy to another server? (Choose two.)",
+    "explanation": "rsync's delta transfer sends only what changed since the last run, and it can use SSH to reach another host. It copies files as files; tar or cpio make archives, and ddrescue deals with bad sectors.",
+    "options": [
+      "It repairs bad sectors on the source",
+      "It works with no network at all",
+      "It can copy to a remote host over SSH",
+      "It packs the files into a tar archive",
+      "It sends only the changed parts of files"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "LINUXPLUS-T1-089",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Responsible AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An LLM wrote a regular expression for a log parser. What should the admin do before it goes into production?",
+    "explanation": "AI output must be verified like any untested code: run it on representative samples, including edge cases, before production. Reading it or asking the model to explain it is not a test, and trying it on the live server is testing in production.",
+    "options": [
+      "Read through it line by line",
+      "Test it against sample logs",
+      "Have the LLM explain each part",
+      "Try it once on the live server"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T1-090",
+    "section": "linux",
+    "test": 1,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Logging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows journal entries for the nginx unit from the current boot only?",
+    "explanation": "-u filters by unit and -b limits output to the current boot. -k shows kernel messages only, and logrotate rotates log files rather than reading them.",
+    "options": [
+      "$\\texttt{journalctl -k -b}$",
+      "$\\texttt{dmesg -T}$",
+      "$\\texttt{logrotate -f /etc/nginx}$",
+      "$\\texttt{journalctl -u nginx -b}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-001",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "umask",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "With a umask of 077, what octal permissions does a newly created directory get? Type the number only.",
+    "explanation": "Directories start from 777, and 077 clears every group and other bit, leaving 700, or rwx------. A new file under the same umask gets 600.",
+    "numeric": {
+      "answers": [
+        "700"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "LINUXPLUS-T2-002",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Ansible",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Ansible, which unit does the actual work in a task, such as installing a package or copying a file?",
+    "explanation": "Each task calls a module, for example ansible.builtin.dnf or ansible.builtin.copy, which Ansible runs on the managed host. Handlers are tasks that run only when notified by a change.",
+    "options": [
+      "Module",
+      "Handler",
+      "Inventory",
+      "Fact"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-003",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "LVM",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command adds a new physical volume, /dev/sdc, to the existing volume group datavg?",
+    "explanation": "vgextend adds physical volumes to a group that already exists. vgcreate would try to make a new group with that name, and lvcreate makes logical volumes, not group members.",
+    "options": [
+      "$\\texttt{lvcreate datavg /dev/sdc}$",
+      "$\\texttt{vgextend datavg /dev/sdc}$",
+      "$\\texttt{pvmove /dev/sdc datavg}$",
+      "$\\texttt{vgcreate datavg /dev/sdc}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-004",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "FHS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Under the Filesystem Hierarchy Standard, where do logs, spool files and caches that change during operation belong?",
+    "explanation": "/var is for variable data such as logs, mail and print spools and caches. /usr holds shareable, mostly read-only programs and libraries, and /etc holds host configuration.",
+    "options": [
+      "$\\texttt{/var}$",
+      "$\\texttt{/etc}$",
+      "$\\texttt{/usr}$",
+      "$\\texttt{/opt}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-005",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Data acquisition",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A monitoring tool collects metrics over SSH without installing any software on the servers. Which approach is this?",
+    "explanation": "Agentless monitoring reaches into hosts with protocols they already run, such as SSH or SNMP polling. Agent-based tools install a collector on every host, which can gather more detail.",
+    "options": [
+      "SNMP trap",
+      "Agentless",
+      "Agent-based",
+      "Webhook"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-006",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "DHCP issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hosts get correct DHCP addresses, but their default route points to a router that no longer exists. Where should this be fixed?",
+    "explanation": "Clients take their gateway from the router option the DHCP server hands out, so fixing the scope fixes every client at renewal. Editing hosts one by one would be undone at the next lease.",
+    "options": [
+      "Each host's nsswitch.conf",
+      "Switch port VLAN settings",
+      "DHCP scope's router option",
+      "Each host's /etc/hosts file"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-007",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "File utilities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command shows a file's inode number, size and its access, modify and change times?",
+    "explanation": "stat prints the inode details, including all three timestamps. file guesses the content type, and touch updates timestamps rather than showing them.",
+    "options": [
+      "$\\texttt{file}$",
+      "$\\texttt{lsof}$",
+      "$\\texttt{touch}$",
+      "$\\texttt{stat}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-008",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Package managers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows which installed RPM package owns /etc/ssh/sshd_config?",
+    "explanation": "-qf queries the package that owns a file. -ql lists a package's files and -qi shows a package's details, so both expect a package name, and -e erases a package.",
+    "options": [
+      "$\\texttt{rpm -ql /etc/ssh/sshd\\_config}$",
+      "$\\texttt{rpm -e /etc/ssh/sshd\\_config}$",
+      "$\\texttt{rpm -qi /etc/ssh/sshd\\_config}$",
+      "$\\texttt{rpm -qf /etc/ssh/sshd\\_config}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-009",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Special permissions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why remove setuid bits that are not needed when hardening a server?",
+    "explanation": "A setuid-root program runs with root's effective UID, so any bug in it is a path to privilege escalation. Fewer setuid binaries means fewer such paths.",
+    "options": [
+      "They slow file reads",
+      "A flaw in them can run as root",
+      "They hide files from ls",
+      "They stop backups from working"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-010",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Puppet",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a Puppet agent prove its identity to the Puppet server?",
+    "explanation": "The agent creates a certificate request on first contact, and once the server's certificate authority signs it, the two use it to authenticate every run.",
+    "options": [
+      "SSH key in the inventory",
+      "API token in the state file",
+      "Signed SSL certificate",
+      "Shared password in a fact"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-011",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "LVM",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Before taking an old disk out of a volume group, which command moves its allocated extents onto other disks in the group?",
+    "explanation": "pvmove relocates the data on one physical volume to free space elsewhere in the group. Only after it finishes do vgreduce (to drop the disk from the group) and pvremove (to wipe its LVM label) make sense.",
+    "options": [
+      "$\\texttt{lvresize}$",
+      "$\\texttt{pvremove}$",
+      "$\\texttt{vgreduce}$",
+      "$\\texttt{pvmove}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-012",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "initrd management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After adding a storage driver the server needs at boot, which tool rebuilds the initramfs on a RHEL-family system?",
+    "explanation": "dracut builds the initramfs image, so it must run again when a driver needed before the root filesystem mounts is added. grub2-mkconfig rewrites the boot menu, not the initramfs.",
+    "options": [
+      "$\\texttt{grub2-mkconfig}$",
+      "$\\texttt{depmod}$",
+      "$\\texttt{mkfs}$",
+      "$\\texttt{dracut}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-013",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "SNMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does an SNMP management information base (MIB) define?",
+    "explanation": "A MIB describes the variables an agent exposes, each with an object identifier, so a manager knows what it can read or set. Trap destinations are set in the agent's configuration.",
+    "options": [
+      "Alert thresholds on the server",
+      "Keys used by SNMPv3",
+      "Objects a device can report",
+      "Hosts that receive traps"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-014",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Dual stack issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A site loads slowly by default, but $\\texttt{curl -4}$ to it is fast. What is likely?",
+    "explanation": "Clients prefer IPv6 when a name has an AAAA record, and a broken IPv6 route makes them wait for a timeout before falling back. Forcing IPv4 with -4 avoids the delay, which points to the IPv6 path.",
+    "options": [
+      "IPv4 MTU set too high",
+      "Expired TLS certificate",
+      "Wrong DNS search domain",
+      "Broken IPv6 path tried first"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-015",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "sudo",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does NOPASSWD do in a sudoers rule?",
+    "explanation": "NOPASSWD lets the listed commands run through sudo without asking for the user's password. It is handy for automation but means anyone at that session can use the rule.",
+    "options": [
+      "Blocks password logins over SSH",
+      "Lets the user reset root's password",
+      "Skips the password prompt",
+      "Deletes the user's password"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-016",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Open files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A filesystem mounted on /mnt/data will not unmount because it is busy. Which command shows what has it open?",
+    "explanation": "lsof lists open files and the processes holding them, so it shows which process is keeping the mount busy. fuser -m does a similar job.",
+    "options": [
+      "$\\texttt{file /mnt/data}$",
+      "$\\texttt{df /mnt/data}$",
+      "$\\texttt{lsof /mnt/data}$",
+      "$\\texttt{stat /mnt/data}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-017",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Language package managers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which package manager installs libraries (crates) for the Rust language?",
+    "explanation": "cargo is Rust's build tool and package manager. npm serves JavaScript and pip serves Python.",
+    "options": [
+      "$\\texttt{pipx}$",
+      "$\\texttt{gem}$",
+      "$\\texttt{cargo}$",
+      "$\\texttt{npm}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-018",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Unattended deployment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file answers the installer's questions to automate a RHEL-family installation?",
+    "explanation": "A Kickstart file lists the choices the Anaconda installer would ask for, such as partitions, packages and users, so an install can run with no one at the console.",
+    "options": [
+      "cloud-init user data",
+      "Puppet manifest",
+      "Compose file",
+      "Kickstart file"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-019",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Privilege escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does $\\texttt{su -}$ give that plain $\\texttt{su}$ does not?",
+    "explanation": "The dash starts a login shell, so the target user's PATH, home directory and profile files apply. Plain su keeps most of the caller's environment.",
+    "options": [
+      "Access to only one listed command",
+      "Root rights without any password",
+      "A log entry in /var/log/su",
+      "The target user's login environment"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-020",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Partitions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows each block device's filesystem type and UUID, handy when writing /etc/fstab?",
+    "explanation": "blkid reads the superblocks and prints TYPE, UUID and LABEL for each device. Mounting by UUID keeps an fstab entry valid when device names change.",
+    "options": [
+      "$\\texttt{du}$",
+      "$\\texttt{fio}$",
+      "$\\texttt{mdadm}$",
+      "$\\texttt{blkid}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-021",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Kubernetes",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each Kubernetes object to its role.",
+    "explanation": "A Pod is the smallest unit Kubernetes schedules, a ConfigMap supplies settings as variables or files, and a Service load-balances to a changing set of pods behind one name and address.",
+    "rows": [
+      "Pod",
+      "ConfigMap",
+      "Service"
+    ],
+    "columns": [
+      "Runs one or more containers together",
+      "Gives pods one stable address",
+      "Holds non-secret settings"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-022",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Kernel parameters",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin wants to add a kernel parameter for one boot only, to reach a rescue target. Where is that done?",
+    "explanation": "Pressing e at the GRUB menu edits the kernel line for that boot alone. /etc/default/grub changes every boot once the config is regenerated, and sysctl.conf sets runtime kernel tunables, not boot parameters.",
+    "options": [
+      "$\\texttt{/etc/default/grub}$",
+      "$\\texttt{/etc/sysctl.conf}$",
+      "$\\texttt{/etc/modprobe.d}$",
+      "GRUB menu edit screen"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-023",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Data acquisition",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A monitoring system should post alerts into a team chat channel over HTTPS. Which method fits?",
+    "explanation": "A webhook is an HTTP request sent to a URL when an event fires, which chat tools accept. Syslog forwarding ships log lines to a log server, and a health check is a probe of a service, not a way to deliver alerts.",
+    "options": [
+      "Syslog forwarding",
+      "Webhook",
+      "SNMP trap",
+      "Health check"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-024",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Link down",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "$\\texttt{ip link}$ shows eth1 as DOWN with NO-CARRIER. What should be checked?",
+    "explanation": "NO-CARRIER means the NIC sees no signal from the other end, which is a physical problem: an unplugged or bad cable, or a disabled switch port. Addresses, profiles and MTU are all set above the physical link.",
+    "options": [
+      "Cable and switch port",
+      "Its NetworkManager profile",
+      "The interface MTU",
+      "The interface's IP address"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-025",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Device types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What type of device file is /dev/sda?",
+    "explanation": "Disks are block devices, read and written in blocks and shown with a b in ls -l. Terminals and /dev/null are character devices, marked c.",
+    "options": [
+      "Character device",
+      "Block device",
+      "Socket",
+      "Named pipe"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-026",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Update alternatives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two Java versions are installed. Which tool chooses which one runs when anyone types java?",
+    "explanation": "The alternatives system manages a symlink for a generic name such as java and lets the admin pick which installed version it points to. An alias would only affect one user's shell.",
+    "options": [
+      "$\\texttt{systemctl set-default}$",
+      "$\\texttt{ldconfig}$",
+      "$\\texttt{update-alternatives}$",
+      "$\\texttt{alias java}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-027",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "SELinux",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which SELinux mode logs policy violations but does not block them?",
+    "explanation": "Permissive mode records denials in the audit log while letting the action go ahead, which is useful for testing. Targeted is the name of a policy, not a mode.",
+    "options": [
+      "Permissive",
+      "Targeted policy",
+      "Enforcing",
+      "Disabled"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-028",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Docker Swarm",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Docker Swarm, which command runs five replicas of the web service?",
+    "explanation": "docker service scale sets the number of tasks for a service, and the swarm spreads them over the nodes. docker node commands manage the hosts themselves.",
+    "options": [
+      "$\\texttt{docker service scale web=5}$",
+      "$\\texttt{docker node update web=5}$",
+      "$\\texttt{docker network create web=5}$",
+      "$\\texttt{docker compose logs web=5}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-029",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Mount options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "/tmp is writable by every user. Which mount option stops programs stored there from being run directly?",
+    "explanation": "noexec blocks executing binaries on that filesystem. nosuid only ignores setuid and setgid bits, and noatime stops access-time updates for performance.",
+    "options": [
+      "$\\texttt{noexec}$",
+      "$\\texttt{noatime}$",
+      "$\\texttt{nodev}$",
+      "$\\texttt{nosuid}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-030",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "SELinux",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command makes a custom web root's SELinux label survive a full filesystem relabel?",
+    "explanation": "semanage fcontext -a adds a rule to the policy's file-context list, and restorecon then applies it; a relabel keeps it because the policy now knows the path. A label set with chcon is lost on relabel, restorecon -F only resets files to the rules that already exist, and semanage boolean changes booleans, not labels.",
+    "options": [
+      "$\\texttt{chcon -t httpd\\_sys\\_content\\_t}$",
+      "$\\texttt{restorecon -R -F}$",
+      "$\\texttt{semanage boolean -m}$",
+      "$\\texttt{semanage fcontext -a}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-031",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Network boot",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a typical PXE boot, which protocol does the client use to download its boot loader?",
+    "explanation": "PXE firmware gets an address and a boot file name from DHCP, then fetches the file over the Trivial File Transfer Protocol. Larger installer files may later come over HTTP or NFS.",
+    "options": [
+      "SMB",
+      "NFS",
+      "SFTP",
+      "TFTP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-032",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Segmentation fault",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application crashes with Segmentation fault right after an update. What does that mean?",
+    "explanation": "A segfault is the kernel stopping a process that touched an invalid or protected memory address (SIGSEGV), usually a bug or a library mismatch. The OOM killer, CPU limits and systemd stop processes with other signals and messages.",
+    "options": [
+      "It accessed memory it may not use",
+      "It exceeded a CPU time limit",
+      "systemd sent it SIGTERM",
+      "The OOM killer stopped it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-033",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Bonding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file shows the state of each member link in the bonded interface bond0?",
+    "explanation": "The bonding driver reports the mode, the active slave and each member's link status there. /proc/mdstat is the equivalent for software RAID.",
+    "options": [
+      "$\\texttt{/proc/mounts}$",
+      "$\\texttt{/proc/net/bonding/bond0}$",
+      "$\\texttt{/proc/mdstat}$",
+      "$\\texttt{/etc/sysconfig/network}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-034",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Compose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command stops and removes the containers and networks a Compose file created?",
+    "explanation": "down stops the services and removes their containers and networks; volumes stay unless -v is added. stop halts the containers but leaves them in place.",
+    "options": [
+      "$\\texttt{docker compose pull}$",
+      "$\\texttt{docker compose stop}$",
+      "$\\texttt{docker compose logs}$",
+      "$\\texttt{docker compose down}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-035",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Listing accounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command returns a user's entry from every configured source, including LDAP, not only /etc/passwd?",
+    "explanation": "getent queries the databases listed in /etc/nsswitch.conf, so it finds directory users that are not in the local file. grep only reads /etc/passwd itself.",
+    "options": [
+      "$\\texttt{lastlog -u dana}$",
+      "$\\texttt{grep dana /etc/passwd}$",
+      "$\\texttt{getent passwd dana}$",
+      "$\\texttt{groups dana}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-036",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Repository exclusions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin wants routine dnf updates to skip the kernel package. What fits?",
+    "explanation": "An exclude (excludepkgs) entry in dnf.conf or the repo file tells dnf to ignore matching packages. installonly_limit only caps how many kernels are kept, the kernel has no systemd unit to mask, and dnf mark changes whether a package counts as user-installed.",
+    "options": [
+      "An exclude line in dnf.conf",
+      "installonly_limit=1 in dnf.conf",
+      "Masking the kernel's unit",
+      "dnf mark remove kernel"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-037",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "SELinux",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool turns logged SELinux denials into a local policy module that allows them?",
+    "explanation": "audit2allow reads AVC denials and writes allow rules that can be built into a module. sealert explains denials in plain language but does not write policy. Check a denial is legitimate before allowing it.",
+    "options": [
+      "$\\texttt{audit2allow}$",
+      "$\\texttt{getenforce}$",
+      "$\\texttt{semanage}$",
+      "$\\texttt{sealert -a}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-038",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Filesystem formats",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which filesystem type keeps its files in memory, so they are gone after a reboot?",
+    "explanation": "tmpfs lives in RAM (and swap) and is often used for /run or /tmp. btrfs, xfs and ext4 are on-disk filesystems.",
+    "options": [
+      "$\\texttt{xfs}$",
+      "$\\texttt{btrfs}$",
+      "$\\texttt{tmpfs}$",
+      "$\\texttt{ext4}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-039",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "CI/CD",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In GitOps, what is the source of truth for the desired state of the environment?",
+    "explanation": "GitOps keeps the declared configuration in Git, and an automated process makes the environment match it. The registry stores the images that configuration points to, and the running cluster is what gets reconciled to Git, not the other way round.",
+    "options": [
+      "CI pipeline logs",
+      "Container registry",
+      "Running cluster",
+      "Git repository"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-040",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Graphical interface",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which display protocol replaces the X11 server model by having the compositor draw windows itself?",
+    "explanation": "In Wayland the compositor is the display server, so there is no separate X server between applications and the screen. GDM is a display manager that shows the login screen.",
+    "options": [
+      "LightDM",
+      "VNC",
+      "Wayland",
+      "Xorg"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-041",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Memory leaks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service's memory use climbs steadily for days and only drops when it is restarted. What is the likely problem?",
+    "explanation": "Memory that is allocated and never freed grows until a restart or the OOM killer clears it. Page cache also grows but belongs to the kernel and is given back on demand, a zombie holds no memory, and more swap would only delay the problem.",
+    "options": [
+      "Memory leak",
+      "Swap partition too small",
+      "Zombie process",
+      "Page cache growth"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-042",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Misconfigured firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "$\\texttt{ss}$ shows a service listening on 0.0.0.0:8443 and local curl works, but remote clients time out. What should be checked?",
+    "explanation": "The service is up and bound to every address, so the bind address is fine, and a certificate problem would fail after connecting, not time out. Something between the network and the socket drops the traffic, which is typical of a firewall drop.",
+    "options": [
+      "The service's bind address",
+      "The service's TLS certificate",
+      "Host firewall rules",
+      "The client's DNS cache"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-043",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "firewalld",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which firewalld feature allows SSH only from 10.0.5.0/24 and no other source?",
+    "explanation": "A rich rule can combine a source address, a service and an action in one rule. Panic mode drops all traffic, and masquerading is source NAT.",
+    "options": [
+      "Panic mode",
+      "Port forward",
+      "Masquerading",
+      "Rich rule"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-044",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Network mounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users' NFS home directories should mount only when someone opens them and unmount after they sit idle. Which service does that?",
+    "explanation": "autofs (the automounter) mounts a share on first access and unmounts it after a timeout. nfs-server exports shares from a server; it does not mount them on clients.",
+    "options": [
+      "$\\texttt{smbd}$",
+      "$\\texttt{rsyncd}$",
+      "$\\texttt{nfs-server}$",
+      "$\\texttt{autofs}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-045",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Modifying accounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command adds user sam to the docker group and keeps the other groups he is in?",
+    "explanation": "-G sets the supplementary groups and -a appends to the current list. Without -a, usermod -G replaces his groups with docker alone; -g changes his primary group instead, and newgrp only switches the group of the current shell.",
+    "options": [
+      "$\\texttt{usermod -aG docker sam}$",
+      "$\\texttt{usermod -g docker sam}$",
+      "$\\texttt{usermod -G docker sam}$",
+      "$\\texttt{newgrp docker}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-046",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "systemd utilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists units by how long each took to start during the last boot?",
+    "explanation": "systemd-analyze blame sorts units by their start-up time, which helps find a slow boot. journalctl -b shows the boot's log messages but not a ranked list.",
+    "options": [
+      "$\\texttt{systemctl list-units}$",
+      "$\\texttt{journalctl -b -p err}$",
+      "$\\texttt{systemctl list-timers}$",
+      "$\\texttt{systemd-analyze blame}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-047",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Comparisons",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which test compares the integers in a and b for equality in Bash?",
+    "explanation": "-eq compares numbers. = compares text, so 07 and 7 would not match, and -ne and -ge test inequality and greater-or-equal.",
+    "options": [
+      "$\\texttt{[ \\$a = \\$b ]}$",
+      "$\\texttt{[ \\$a -eq \\$b ]}$",
+      "$\\texttt{[ \\$a -ge \\$b ]}$",
+      "$\\texttt{[ \\$a -ne \\$b ]}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-048",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Uncomplicated Firewall",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "On Ubuntu, which command opens TCP port 443 with UFW?",
+    "explanation": "ufw allow followed by a port and protocol adds an allow rule. ufw enable turns the firewall on and takes no port, and default allow would open everything.",
+    "options": [
+      "$\\texttt{ufw allow 443/tcp}$",
+      "$\\texttt{ufw deny 443/tcp}$",
+      "$\\texttt{ufw enable 443}$",
+      "$\\texttt{ufw default allow}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-049",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool combines traceroute and ping, showing packet loss and latency for every hop as it runs?",
+    "explanation": "mtr keeps probing each hop and updates loss and round-trip times live. tracepath finds the path and its MTU once but does not keep a running loss count per hop.",
+    "options": [
+      "$\\texttt{mtr}$",
+      "$\\texttt{nc}$",
+      "$\\texttt{iperf3}$",
+      "$\\texttt{tracepath}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-050",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Missing drivers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new network card is listed by lspci but has no interface in $\\texttt{ip link}$. What should be checked first?",
+    "explanation": "lspci proves the hardware is on the bus; with no interface at all, the driver is likely missing or not loaded. lspci -k shows the driver in use, and modprobe loads it. Unmanaged, unplugged and down interfaces all still appear in ip link.",
+    "options": [
+      "Whether the interface is down",
+      "Whether its driver is loaded",
+      "Whether its cable has link",
+      "Whether NetworkManager manages it"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-051",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Permission issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user in a file's group with rw access still gets permission denied, and ls -l shows a + after the mode. What should be run next?",
+    "explanation": "The + means the file has an ACL, and an ACL entry or mask can deny what the group bits seem to allow. getfacl shows the entries and the effective rights.",
+    "options": [
+      "$\\texttt{stat}$",
+      "$\\texttt{getfacl}$",
+      "$\\texttt{chage -l}$",
+      "$\\texttt{lsattr}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-052",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Conditional statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script must branch on whether its first argument is start, stop or restart. Which construct suits a list of fixed values?",
+    "explanation": "case compares one value against several patterns and runs the matching block, which reads better than a chain of if and elif. until, for and while are loops.",
+    "options": [
+      "$\\texttt{case}$",
+      "$\\texttt{for}$",
+      "$\\texttt{until}$",
+      "$\\texttt{while}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-053",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Redirection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the $\\texttt{<<<}$ operator do in Bash?",
+    "explanation": "<<< is a here string: the word after it becomes the command's standard input. << starts a here document, which reads lines until the delimiter, and >> appends.",
+    "options": [
+      "Reads lines until a delimiter word",
+      "Appends output to a file",
+      "Sends errors to standard output",
+      "Passes one string as input"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-054",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Stateful firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes a firewall stateful?",
+    "explanation": "A stateful firewall keeps a connection table, so return traffic for an allowed connection is let through without its own rule. A stateless filter checks every packet against the rules alone.",
+    "options": [
+      "It filters only by MAC address",
+      "It judges each packet on its own",
+      "It logs all traffic without any filtering",
+      "It tracks connections and their replies"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-055",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Listing accounts",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which two commands show who is logged in right now? (Choose two.)",
+    "explanation": "who lists the current sessions, and w adds what each user is running and the load. lastlog shows each account's most recent login, whether or not they are on now.",
+    "options": [
+      "$\\texttt{chsh}$",
+      "$\\texttt{who}$",
+      "$\\texttt{groups}$",
+      "$\\texttt{lastlog}$",
+      "$\\texttt{w}$"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "LINUXPLUS-T2-056",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "systemd utilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool sets the system time zone and turns network time sync on or off?",
+    "explanation": "timedatectl set-timezone and set-ntp manage the clock settings. hostnamectl sets the host name, and resolvectl shows DNS settings for systemd-resolved.",
+    "options": [
+      "$\\texttt{hostnamectl}$",
+      "$\\texttt{sysctl}$",
+      "$\\texttt{timedatectl}$",
+      "$\\texttt{resolvectl}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-057",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Inside a Bash function, which keyword keeps a variable from overwriting a global one with the same name?",
+    "explanation": "local limits the variable to the function and the functions it calls. export does the opposite job, passing a variable to child processes.",
+    "options": [
+      "$\\texttt{local}$",
+      "$\\texttt{unset}$",
+      "$\\texttt{export}$",
+      "$\\texttt{set}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-058",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To measure throughput between two servers, an admin starts a listener on one and a client on the other. Which tool is this?",
+    "explanation": "iperf3 runs in server mode on one host and client mode on the other and reports the bandwidth achieved. tcpdump captures packets but does not generate a test load.",
+    "options": [
+      "$\\texttt{nmap}$",
+      "$\\texttt{iperf3}$",
+      "$\\texttt{tcpdump}$",
+      "$\\texttt{curl}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-059",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Package dependency issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "dnf refuses an install because of a conflicting library version. What is a sensible first step?",
+    "explanation": "Conflicts usually come from mixing repositories or versions, so start by seeing which repo provides each package (dnf repoquery or dnf info). A missing key gives a signature error, low space a disk error and a damaged RPM database a database error, not a version conflict.",
+    "options": [
+      "Check the repo's GPG key",
+      "Find which repo supplies each",
+      "Rebuild the RPM database",
+      "Check free space under /var"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-060",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "File attributes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "SELinux is disabled on this host. Root cannot delete a file, and its permissions and ownership look normal. Which command reveals why?",
+    "explanation": "Root bypasses mode bits but not the immutable attribute, which lsattr shows as i. chattr -i removes it.",
+    "options": [
+      "$\\texttt{lsattr}$",
+      "$\\texttt{id}$",
+      "$\\texttt{ls -Z}$",
+      "$\\texttt{getenforce}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-061",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "SSH tunneling",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A database listens on port 5432 only on the server's localhost. How can an admin reach it securely from a workstation?",
+    "explanation": "ssh -L forwards a port on the workstation through the encrypted session to localhost:5432 on the server. Remote forwarding (-R) works the other way, exposing a workstation port on the server, a firewall rule cannot help a service bound only to localhost, and SFTP moves files, not database sessions.",
+    "options": [
+      "SSH remote port forwarding",
+      "SFTP session to the server",
+      "Firewall rule for the workstation",
+      "SSH local port forwarding"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-062",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Environment variables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which variable tells graphical programs which X display to draw on?",
+    "explanation": "X clients read DISPLAY, for example :0, to find the server to connect to. PS1 sets the shell prompt, and SHELL names the user's login shell.",
+    "options": [
+      "$\\texttt{PS1}$",
+      "$\\texttt{DISPLAY}$",
+      "$\\texttt{SHELL}$",
+      "$\\texttt{XDG\\_TERM}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-063",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Regular expressions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which test checks whether the value of ip matches the regular expression in re?",
+    "explanation": "=~ inside [[ ]] matches an extended regular expression, and BASH_REMATCH holds the groups. == inside [[ ]] does shell glob matching, not regex.",
+    "options": [
+      "$\\texttt{[ -n \\$ip -a -n \\$re ]}$",
+      "$\\texttt{[[ \\$ip =\\~{} \\$re ]]}$",
+      "$\\texttt{[[ \\$ip == \\$re ]]}$",
+      "$\\texttt{[ \\$ip -eq \\$re ]}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-064",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Cryptography",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each need to the tool that fits it.",
+    "explanation": "GPG encrypts files to a recipient's public key, LUKS2 encrypts block devices, and an HMAC combines a hash with a secret key so the receiver can check both integrity and origin.",
+    "rows": [
+      "Encrypt one file for a colleague",
+      "Encrypt a whole laptop disk",
+      "Prove a message came from a shared-key holder"
+    ],
+    "columns": [
+      "LUKS2",
+      "GPG",
+      "HMAC"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-065",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Scheduling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which crontab entry runs /opt/report.sh at 02:30 every Monday?",
+    "explanation": "The fields are minute, hour, day of month, month and day of week, and day of week 1 is Monday. Putting 1 in the day-of-month field runs it on the 1st, and in the month field every day of January.",
+    "options": [
+      "$\\texttt{30 2 * * 1 /opt/report.sh}$",
+      "$\\texttt{30 2 1 * * /opt/report.sh}$",
+      "$\\texttt{2 30 * * 1 /opt/report.sh}$",
+      "$\\texttt{30 2 * 1 * /opt/report.sh}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-066",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Container operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container named web exits right after it starts. Which command shows what it printed before exiting?",
+    "explanation": "docker logs shows the container's standard output and error even after it has stopped. docker exec, top and stats all need a running container, so they cannot help here.",
+    "options": [
+      "$\\texttt{docker stats web}$",
+      "$\\texttt{docker logs web}$",
+      "$\\texttt{docker exec web sh}$",
+      "$\\texttt{docker top web}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-067",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Virtualization tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command-line tool manages libvirt guests, for example starting a VM or listing its snapshots?",
+    "explanation": "virsh is the libvirt shell for guest life cycle tasks such as start, shutdown and snapshot. virt-manager does the same through a graphical window, and qemu-img works on disk images.",
+    "options": [
+      "$\\texttt{virsh}$",
+      "$\\texttt{virt-manager}$",
+      "$\\texttt{lscpu}$",
+      "$\\texttt{qemu-img}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-068",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "PATH misconfiguration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a user edits ~/.bash_profile, ls and cp give command not found, yet /bin/ls works. What is wrong?",
+    "explanation": "Setting PATH=/new/dir instead of appending with PATH=\\$PATH:/new/dir drops the system directories, so the shell no longer finds the commands by name. Full paths still work.",
+    "options": [
+      "The shell is /sbin/nologin",
+      "PATH was overwritten",
+      "The umask is 077",
+      "HOME is unset"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-069",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Obsolete protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Clients fail the TLS handshake with a server that only offers TLS 1.0. What is the right fix?",
+    "explanation": "TLS 1.0 and 1.1 are deprecated and turned off in current clients and crypto policies, so the server must offer TLS 1.2 or 1.3. A new certificate or better ciphers do not change the protocol version the clients refuse.",
+    "options": [
+      "Install a new certificate on it",
+      "Enable TLS 1.1 on the server",
+      "Use stronger TLS 1.0 ciphers",
+      "Enable TLS 1.2 or later on it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-070",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Python",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Python type stores key and value pairs, such as hostnames mapped to IP addresses?",
+    "explanation": "A dictionary maps each key to a value, so lookups by name are direct. A list is an ordered sequence reached by position.",
+    "options": [
+      "Floating point",
+      "String",
+      "List",
+      "Dictionary"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-071",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Text utilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin wants the output of ps both on screen and saved to ps.txt. What goes after the pipe?",
+    "explanation": "tee copies its standard input to standard output and to the named file. cat > ps.txt would save it but show nothing, and less only pages the output.",
+    "options": [
+      "$\\texttt{cat > ps.txt}$",
+      "$\\texttt{less ps.txt}$",
+      "$\\texttt{tee ps.txt}$",
+      "$\\texttt{xargs ps.txt}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-072",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "File integrity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool compares files against a stored database of hashes to detect changes?",
+    "explanation": "AIDE (Advanced Intrusion Detection Environment) builds a baseline of file hashes and attributes and reports what has changed since. The database itself must be kept where an intruder cannot rewrite it.",
+    "options": [
+      "$\\texttt{fail2ban}$",
+      "$\\texttt{logrotate}$",
+      "$\\texttt{shred}$",
+      "$\\texttt{aide}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-073",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Scheduling",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which tool runs a command once at a set time, such as 11 PM tonight?",
+    "explanation": "at queues a one-time job. crontab and anacron are for jobs that repeat, and nohup only protects a command from hangups.",
+    "options": [
+      "$\\texttt{nohup}$",
+      "$\\texttt{at}$",
+      "$\\texttt{anacron}$",
+      "$\\texttt{crontab}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-074",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Volume operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Data written inside a container disappears when the container is deleted. What keeps it?",
+    "explanation": "A volume lives outside the container's writable layer, so it survives when the container is removed and can be mounted into a new one. A restart policy or a clean stop does not help once the container is deleted, and tmpfs lives in memory.",
+    "options": [
+      "Giving it a larger tmpfs",
+      "Stopping it before removal",
+      "Mounting a named volume",
+      "Adding --restart always"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-075",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Python",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does PEP 8 recommend for each indentation level in Python code?",
+    "explanation": "PEP 8 says to use 4 spaces per indentation level and to prefer spaces to tabs. Indentation is part of Python's syntax, so mixing styles can break code.",
+    "options": [
+      "Four spaces",
+      "One tab",
+      "Eight spaces",
+      "Two spaces"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-076",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Standards and audit",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool scans a system against a security profile and reports pass or fail for each rule?",
+    "explanation": "OpenSCAP evaluates SCAP content, such as a hardening profile, and produces a report of each rule's result. rkhunter checks for rootkits only.",
+    "options": [
+      "logrotate",
+      "WireGuard",
+      "rkhunter",
+      "OpenSCAP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-077",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Device tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each command to what it reports or does.",
+    "explanation": "lscpu summarises the processors, lsusb lists USB devices, and ipmitool talks to the server's baseboard management controller over IPMI, for example to read sensors or power cycle it.",
+    "rows": [
+      "$\\texttt{lscpu}$",
+      "$\\texttt{lsusb}$",
+      "$\\texttt{ipmitool}$"
+    ],
+    "columns": [
+      "Out-of-band server management",
+      "Devices on the USB buses",
+      "CPU model, cores and architecture"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-078",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Filesystem will not mount",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a disk controller change, an fstab entry for /dev/sdb1 mounts the wrong disk. How should the entry be written?",
+    "explanation": "Device names such as sdb can change when hardware changes, but the UUID belongs to the filesystem itself; blkid shows it. A by-path name encodes the controller and port, so it changes with the controller, and nofail or automount change when it mounts, not which disk.",
+    "options": [
+      "By its /dev/disk/by-path name",
+      "With the nofail option added",
+      "By the filesystem's UUID",
+      "With x-systemd.automount"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-079",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Failed log-in attempts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Auth logs show thousands of failed SSH logins from many addresses. Which change cuts this risk most directly?",
+    "explanation": "Brute-force guessing needs password authentication; with PasswordAuthentication no only key holders can log in. Another port only cuts log noise from scanners, more logging records the attacks without stopping them, and a banner deters no automated tool.",
+    "options": [
+      "Show a legal warning banner",
+      "Turn on verbose SSH logging",
+      "Move sshd to another port",
+      "Allow only key-based logins"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-080",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Backup tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool should image a failing disk, retrying bad areas and keeping a map of what it has read?",
+    "explanation": "ddrescue copies the good areas first, comes back for the bad ones and records progress in a map file so it can resume. Plain dd stops or pads on errors with no record of what was missed.",
+    "options": [
+      "$\\texttt{rsync -a}$",
+      "$\\texttt{ddrescue}$",
+      "$\\texttt{dd}$",
+      "$\\texttt{cpio -o}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-081",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Git",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does $\\texttt{git pull}$ do that $\\texttt{git fetch}$ does not?",
+    "explanation": "git pull runs git fetch and then merges (or rebases) the fetched branch into the current one. git fetch only downloads, leaving the working branch untouched.",
+    "options": [
+      "Adds a new remote",
+      "Deletes stale local branches",
+      "Downloads new commits",
+      "Merges them into your branch"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-082",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Secure data destruction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command overwrites a file's contents several times and then deletes it?",
+    "explanation": "shred overwrites the data in place (three passes by default) and -u removes the file afterwards. rm only removes the name and leaves the blocks readable until reused, wipefs only erases filesystem signatures, and truncate frees the blocks without overwriting them. On SSDs and copy-on-write filesystems, encryption is the safer route.",
+    "options": [
+      "$\\texttt{truncate -s 0 secret.txt}$",
+      "$\\texttt{rm -f secret.txt}$",
+      "$\\texttt{shred -u secret.txt}$",
+      "$\\texttt{wipefs -a secret.txt}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-083",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Priority",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A running backup, PID 4120, is slowing users down. Which command lowers its priority?",
+    "explanation": "renice changes the niceness of a process that is already running, and a higher number means a lower priority. nice only sets the value when starting a new command, and a negative value would raise the priority.",
+    "options": [
+      "$\\texttt{nice -n 10 -p 4120}$",
+      "$\\texttt{kill -15 4120}$",
+      "$\\texttt{renice -n -10 -p 4120}$",
+      "$\\texttt{renice -n 10 -p 4120}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-084",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Volume operations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "On an SELinux host, a container cannot read the bind-mounted folder /srv. Which mount option relabels it for the container?",
+    "explanation": "The :Z suffix makes Docker or Podman relabel the content with a private SELinux label the container may use (:z shares it between containers). :ro only makes the mount read-only and does not fix the label.",
+    "options": [
+      "$\\texttt{-v /srv:/srv:rw}$",
+      "$\\texttt{-v /srv:/srv:Z}$",
+      "$\\texttt{-v /srv:/srv:ro}$",
+      "$\\texttt{-v /srv:/srv:nocopy}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-085",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Virtualization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why give a KVM guest VirtIO disk and network devices instead of emulated hardware?",
+    "explanation": "VirtIO is a paravirtualized interface: the guest knows it is virtual and talks to the hypervisor efficiently instead of through slow emulation of real hardware. It does not encrypt anything.",
+    "options": [
+      "They encrypt guest disk traffic",
+      "Paravirtual drivers cut overhead",
+      "They let the VM skip the kernel",
+      "They remove the need for a hypervisor"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-086",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Boot process",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these boot stages in the order they happen.",
+    "explanation": "Knowing the order tells you where a failure sits: no boot menu points to firmware or the bootloader, a panic before login to the kernel or initramfs, and a failed service to systemd.",
+    "options": [
+      "Firmware runs and finds a boot device",
+      "Bootloader loads the kernel and initramfs",
+      "Kernel mounts the root filesystem",
+      "systemd starts the default target"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-087",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "CPU bottleneck",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$\\texttt{mpstat -P ALL}$ shows one core at 100% while the others sit idle, and the app is slow. What is likely?",
+    "explanation": "One saturated core with idle neighbours means the work cannot spread across CPUs, typically a single-threaded process. Adding cores will not help; the app or its configuration must.",
+    "options": [
+      "High disk latency",
+      "Swap space exhaustion",
+      "Single-threaded bottleneck",
+      "Network packet loss"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-088",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Compression tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each command to its task.",
+    "explanation": "zgrep and zcat work on compressed files without unpacking them to disk first. cpio reads a list of file names, often from find, and writes an archive.",
+    "rows": [
+      "$\\texttt{zgrep}$",
+      "$\\texttt{zcat}$",
+      "$\\texttt{cpio}$"
+    ],
+    "columns": [
+      "Copy a list of files into an archive",
+      "Search inside a gzip file",
+      "Print a gzip file uncompressed"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-089",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Git",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Build output and a local secrets file should never be committed. Where are they listed so Git ignores them?",
+    "explanation": "Patterns in .gitignore keep untracked files out of git status and git add. It does not remove files that are already tracked, so a committed secret must also be removed and rotated.",
+    "options": [
+      "$\\texttt{.gitignore}$",
+      "$\\texttt{.git/HEAD}$",
+      "$\\texttt{.git/config}$",
+      "$\\texttt{.gitmodules}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-T2-090",
+    "section": "linux",
+    "test": 2,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Security banners",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file holds the warning shown before login on remote sessions, as opposed to the local console?",
+    "explanation": "/etc/issue.net is the pre-login banner for network logins (sshd shows it when its Banner setting points to it). /etc/issue is for local consoles, and /etc/motd is shown after login.",
+    "options": [
+      "$\\texttt{/etc/issue}$",
+      "$\\texttt{/etc/issue.net}$",
+      "$\\texttt{/etc/motd}$",
+      "$\\texttt{/etc/hosts.allow}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-001",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Kernel modules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After copying a new module file into /lib/modules, which command rebuilds the module dependency list?",
+    "explanation": "depmod scans the installed modules and writes modules.dep, which modprobe reads to load dependencies. modinfo only prints details about one module.",
+    "options": [
+      "$\\texttt{depmod}$",
+      "$\\texttt{insmod}$",
+      "$\\texttt{modinfo}$",
+      "$\\texttt{rmmod}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-002",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Partitions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cloud disk was enlarged from 20 GB to 50 GB. Which command grows partition 1 on /dev/vda into the new space?",
+    "explanation": "growpart extends a partition to fill the free space after it. The filesystem inside still has to be grown afterwards, with resize2fs or xfs_growfs.",
+    "options": [
+      "$\\texttt{xfs\\_repair /dev/vda 1}$",
+      "$\\texttt{resize2fs /dev/vda 1}$",
+      "$\\texttt{growpart /dev/vda 1}$",
+      "$\\texttt{lvextend /dev/vda 1}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-003",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Account attributes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A user runs passwd, which is setuid root. Which identifier is root while it runs?",
+    "explanation": "The setuid bit sets the effective UID to the file's owner, so passwd can write the shadow file. The real UID stays the user's, which is how passwd knows whose password to change.",
+    "options": [
+      "Real UID",
+      "Primary GID",
+      "Effective UID",
+      "Saved group ID"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-004",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Container networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which container network type gives a container its own MAC address on the physical LAN?",
+    "explanation": "macvlan attaches the container to a parent interface with its own MAC, so it looks like a separate device on the network. The default bridge network hides containers behind the host with NAT.",
+    "options": [
+      "$\\texttt{bridge}$",
+      "$\\texttt{host}$",
+      "$\\texttt{overlay}$",
+      "$\\texttt{macvlan}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-005",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Data in transit",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which VPN is built into the Linux kernel and identifies each peer by a public key?",
+    "explanation": "WireGuard runs in the kernel with a small configuration in which every peer is a public key and its allowed addresses. OpenSSL is a TLS and crypto library, not a VPN.",
+    "options": [
+      "LDAP",
+      "LibreSSL",
+      "WireGuard",
+      "OpenSSL"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-006",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Responsible AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before pasting a server config into a public LLM for help, what should the admin remove?",
+    "explanation": "Data sent to a public model may be kept or used for training, so passwords, keys, tokens and internal names must be stripped first, and company AI policy followed. Comments, whitespace and version strings carry no secrets; a local model avoids sending the data out at all.",
+    "options": [
+      "Secrets and internal hostnames",
+      "Indentation and whitespace",
+      "Version numbers and dates",
+      "Comments and blank lines"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-007",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Alert configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "CPU alerts fire many times a day for spikes that last a few seconds. What reduces this noise?",
+    "explanation": "Adding a duration to the threshold means only sustained problems alert. Sampling more often or alerting per core would catch even more short spikes, and a higher severity changes who is paged, not how often.",
+    "options": [
+      "Require a sustained breach",
+      "Raise the alert severity",
+      "Sample CPU more often",
+      "Alert on each CPU core"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-008",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Packet drops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users report random timeouts, and $\\texttt{ip -s link show eth0}$ shows a rising RX dropped count. What does that tell you?",
+    "explanation": "RX dropped counts packets the host received but discarded, often because buffers or rings filled up. ethtool -S gives driver detail and ethtool -G can enlarge the ring.",
+    "options": [
+      "The switch port is shut down",
+      "DNS answers are being cached",
+      "The host discards received packets",
+      "The default route is missing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-009",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Server architectures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On an ARM server, which value does $\\texttt{uname -m}$ most likely print?",
+    "explanation": "aarch64 is the 64-bit ARM architecture name. x86_64 (also called AMD64) is 64-bit Intel and AMD, and riscv64 is 64-bit RISC-V.",
+    "options": [
+      "$\\texttt{aarch64}$",
+      "$\\texttt{i686}$",
+      "$\\texttt{riscv64}$",
+      "$\\texttt{x86\\_64}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-010",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Filesystem utilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool benchmarks storage by running configurable read and write workloads?",
+    "explanation": "fio (flexible I/O tester) runs synthetic workloads and reports IOPS, bandwidth and latency. fsck checks a filesystem for errors.",
+    "options": [
+      "$\\texttt{blkid}$",
+      "$\\texttt{fsck}$",
+      "$\\texttt{df}$",
+      "$\\texttt{fio}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-011",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Process verification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command shows running processes as a tree of parents and children?",
+    "explanation": "pstree draws the process hierarchy from PID 1 down. strace traces one process's system calls, and mpstat reports per-CPU use.",
+    "options": [
+      "$\\texttt{mpstat}$",
+      "$\\texttt{pidstat}$",
+      "$\\texttt{pstree}$",
+      "$\\texttt{strace}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-012",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Image operations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command removes dangling images to free disk space?",
+    "explanation": "docker image prune deletes images with no tag that no container uses. docker system df only reports how much space images, containers and volumes take.",
+    "options": [
+      "$\\texttt{docker system df}$",
+      "$\\texttt{docker image prune}$",
+      "$\\texttt{docker volume create}$",
+      "$\\texttt{docker image tag}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-013",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Authentication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which system issues tickets so a user signs in once and then reaches many network services?",
+    "explanation": "Kerberos gives the user a ticket-granting ticket at login and then service tickets without re-entering a password. PAM is the local framework that decides how a program checks credentials.",
+    "options": [
+      "SSSD cache",
+      "Kerberos",
+      "PAM",
+      "polkit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-014",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Field separators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which shell variable sets the characters Bash uses to split words, such as fields read from a CSV line?",
+    "explanation": "The Internal Field Separator controls word splitting; setting IFS=, before read splits on commas. It defaults to space, tab and newline.",
+    "options": [
+      "$\\texttt{PS1}$",
+      "$\\texttt{HOME}$",
+      "$\\texttt{IFS}$",
+      "$\\texttt{PATH}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-015",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Log aggregation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why send logs from every server to one central system?",
+    "explanation": "Central aggregation lets an admin follow one request or attack across many hosts and keeps a copy an intruder on one server cannot erase. Local logs still need rotation.",
+    "options": [
+      "To skip log rotation entirely",
+      "To correlate events in one place",
+      "To free the disk on each server",
+      "To speed up the services"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-016",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Repository issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "dnf fails with a GPG check error for packages from a newly added repository. What is the right fix?",
+    "explanation": "The packages are signed with a key dnf does not trust yet, so import the vendor's GPG key (after checking where it came from), for example with rpm --import or the repo's gpgkey line. Clearing the cache or rebuilding the RPM database does not add a key, and the CA bundle is for TLS certificates, not package signatures.",
+    "options": [
+      "Run dnf clean all and retry",
+      "Rebuild the RPM database",
+      "Import the repo's signing key",
+      "Update the CA certificate bundle"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-017",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxSystem",
+    "skill": "Disk images",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool converts a VM disk image from VMDK to qcow2 format?",
+    "explanation": "qemu-img convert changes an image from one format to another and can also resize images and show their properties. virsh manages guests, not image formats.",
+    "options": [
+      "$\\texttt{mkfs.xfs}$",
+      "$\\texttt{qemu-img}$",
+      "$\\texttt{virsh}$",
+      "$\\texttt{parted}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-018",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxStorage",
+    "skill": "Text utilities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which pipeline counts how many times each line appears in names.txt?",
+    "explanation": "uniq only merges adjacent duplicates, so the file must be sorted first; then uniq -c prefixes each line with its count. sort -u removes duplicates without counting them.",
+    "options": [
+      "$\\texttt{wc -l names.txt}$",
+      "$\\texttt{uniq -c names.txt | sort}$",
+      "$\\texttt{sort -u names.txt}$",
+      "$\\texttt{sort names.txt | uniq -c}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-019",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxFiles",
+    "skill": "Scheduling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop is often off overnight. Which tool still runs daily jobs that were missed while it was off?",
+    "explanation": "anacron records when each periodic job last ran and runs it at the next chance if a period was missed. cron simply skips jobs whose time passed while the machine was off, and batch only waits for a low load.",
+    "options": [
+      "$\\texttt{anacron}$",
+      "$\\texttt{crontab -r}$",
+      "$\\texttt{watch}$",
+      "$\\texttt{batch}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-020",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxServices",
+    "skill": "Common services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol syncs clocks to sub-microsecond accuracy, using hardware timestamps on supporting NICs?",
+    "explanation": "The Precision Time Protocol is built for very tight sync on a LAN and uses hardware timestamping. NTP is accurate to milliseconds over the internet, which is enough for most servers.",
+    "options": [
+      "SMTP",
+      "PTP",
+      "DHCP",
+      "NTP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-021",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxSecurity",
+    "skill": "Restricted shells",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A service account must never get an interactive login. Which shell should it have?",
+    "explanation": "/sbin/nologin prints a message and exits, so no shell session starts. rbash is a restricted Bash: it limits what a user can do but still gives them a shell.",
+    "options": [
+      "$\\texttt{/sbin/nologin}$",
+      "$\\texttt{/usr/bin/zsh}$",
+      "$\\texttt{/bin/bash}$",
+      "$\\texttt{/bin/rbash}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-022",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxAutomation",
+    "skill": "Git",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which merge option combines all of a feature branch's commits into a single change on the current branch?",
+    "explanation": "git merge --squash stages the branch's combined changes without making a merge commit, so one commit records them. --no-ff forces a merge commit and keeps every commit, and rebase -i rewrites the branch itself rather than merging it.",
+    "options": [
+      "$\\texttt{git merge --no-ff}$",
+      "$\\texttt{git reset --soft HEAD}$",
+      "$\\texttt{git merge --squash}$",
+      "$\\texttt{git rebase -i}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-023",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxTroubleSystem",
+    "skill": "Unresponsive process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hung process ignores $\\texttt{kill 3310}$. What is the usual next step?",
+    "explanation": "SIGKILL (9) cannot be caught or ignored, so the kernel ends the process; it gets no chance to clean up, so it is the last resort after SIGTERM. SIGHUP often just makes a daemon reload.",
+    "options": [
+      "$\\texttt{nohup 3310}$",
+      "$\\texttt{kill -1 3310}$",
+      "$\\texttt{renice 19 3310}$",
+      "$\\texttt{kill -9 3310}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "LINUXPLUS-D-024",
+    "section": "linux",
+    "test": 0,
+    "module": 1,
+    "domain": "linuxTroubleNetSec",
+    "skill": "Context switching",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "$\\texttt{vmstat 1}$ shows the cs column at hundreds of thousands per second while useful work stays low. What does it point to?",
+    "explanation": "cs counts context switches per second. A very high rate with little throughput usually means too many threads or processes fighting over the CPUs, or heavy lock contention, so the scheduler spends its time switching. Swapping shows in si and so instead.",
+    "options": [
+      "Heavy swapping to disk",
+      "Excessive context switching",
+      "Dropped network packets",
+      "High disk I/O wait"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]

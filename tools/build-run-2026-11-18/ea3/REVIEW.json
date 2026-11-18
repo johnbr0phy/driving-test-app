@@ -1,0 +1,144 @@
+{
+  "id": "ea3",
+  "blind_agreement": "197/200",
+  "blind_notes": "Disagreements (3): CAS-011 (no confident answer; ambiguous, see findings) and COL-025 (I picked audit reconsideration; Pub. 3598 confirms the key: a paid-in-full liability needs a formal claim). COL-028 (no blind answer; CP508C to taxpayer only) confirmed by the IRS passport page ('will not send a copy ... to a taxpayer's power of attorney'). All other keys agree. IRC 6601(e)(3) read on Cornell LII: 21 calendar days (10 business days if the amount is $100,000 or more) -> EXA-020 correct. Also confirmed in source text: 6694(c) 15%/30 days, 6696(d) 3 years after filing, 6060(c) July 1, 6672(b) 60 days and 90-day extension, 7602(c) 45 days, 7605(b) one inspection, 6213 90/150 days and 60-day math error abatement, 6651(h) 0.25% and (d) 10 days after levy notice, 7122 20% and 24 months, 6511(b)(2)(A) 3 years plus extension (CAS-016 math checks: lookback to Mar 1 2023, withholding deemed paid Apr 18 2023); Circ. 230 10.6 (72/6, 16/2, 2 hours a month, 50-minute contact hour, 60-day address), 10.25, 10.27 (120 days, refund-of-fee = contingent), 10.28, 10.29 (30 days, 36 months), 10.30 (30 days, solicitation identified, 36 months), 10.36, 10.81 (5 years), 10.82 (4 of 5 years); i2848 (45/60 days, 60 days abroad, 3 years from Dec 31, Form 907 needs line 5a); Pub 1345 ($50/$14, 24 hours, 5th and 10th calendar day, 8879 kept 3 years from later of due or received date, Form 8888 3 accounts); Pub 3112 (18 years, LPAs fingerprinted, 30-day updates, Level Two 1-2 years, 30 calendar days review, reprimand not appealable, 5 years, ad copies to end of following year); Pub 1660 (1-year equivalent hearing); Pub 5 ($25,000, 365 days); Pub 556 (10 days recording notice, repeat exams, 21 days); Form 911 (30-day delay); Collection Financial Standards (dependents on latest return, out-of-pocket per person). No wrong-key, factual or outdated finding.",
+  "options_only": {
+    "score": "191/200 (96%); K 158/159, S 13/13, G 20/28",
+    "s_hits": [
+      "EA3-CAS-009",
+      "EA3-CAS-010",
+      "EA3-CAS-018",
+      "EA3-CAS-021",
+      "EA3-CAS-028",
+      "EA3-COL-023",
+      "EA3-EXA-001",
+      "EA3-FIL-001",
+      "EA3-FIL-002",
+      "EA3-PRA-007",
+      "EA3-PRA-028",
+      "EA3-SAN-022",
+      "EA3-SAN-024"
+    ],
+    "verdict": "FAIL",
+    "note": "Fails on the S rule (13 hits > 3% of items, 13/13 right). The 96% overall exceeds the 82% ceiling but is contaminated: per REVIEW.md order this reviewer did the blind pass (stems + options) first, so many K tags reflect memory of stems; treat the ceiling breach as unreliable and the S list as the actionable result."
+  },
+  "findings": [
+    {
+      "questionId": "EA3-CAS-011",
+      "severity": "ambiguous",
+      "issue": "Asks which record 'carries the most weight' for a questioned S corporation officer salary. Key C (board minutes approving it) vs A (payroll records for the year): both are contemporaneous records, and payroll records are the primary proof the salary was paid. A prepared candidate can defend A; no official source ranks minutes above payroll records.",
+      "source": "https://www.irs.gov/businesses/small-businesses-self-employed/wage-compensation-for-s-corporation-officers",
+      "fix": "Make the comparison clean: replace option A with a non-contemporaneous item (e.g. 'A salary summary prepared for the audit') or reword the stem to ask which record shows the board set the salary when it was paid."
+    },
+    {
+      "questionId": "EA3-CAS-009",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Only the key carries a culpable word; make the wrong options plausible non-dischargeable candidates (e.g. a return filed 20 months before the petition, a substitute-for-return assessment the client never signed, tax assessed 200 days before the petition) so the reader must know the fraud rule."
+    },
+    {
+      "questionId": "EA3-CAS-010",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Distractors are obviously weak proof; use other official records (school enrollment record listing the parent, Medicaid card, adoption agency letter) so choosing needs knowledge of what proves age AND relationship."
+    },
+    {
+      "questionId": "EA3-CAS-018",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "'Reply and document the dispute' is the only reasonable-sounding action; make wrong options equally procedural (call the number and agree orally, sign and return the response page agreeing to all, file Form 843 for the disputed part)."
+    },
+    {
+      "questionId": "EA3-CAS-021",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Only one option is lawful on its face; use legal-sounding but evasive options (backdating a sale contract, recording a gift as a loan) against the deferral so the reader must know the line."
+    },
+    {
+      "questionId": "EA3-CAS-028",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "'Refer her to an attorney now' pairs with 'after the audit' (repeated wording cue) and is the safest; replace the paired distractor with a different-form option (e.g. 'Ask the client to sign Form 8821 for an attorney', 'Request the case be moved to Appeals')."
+    },
+    {
+      "questionId": "EA3-COL-023",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Only the hospital stay sounds like a real excuse; add other events that the IRS does NOT accept or only sometimes accepts (reliance on preparer for filing, lack of funds, records held by an ex-spouse) to make it knowledge-based."
+    },
+    {
+      "questionId": "EA3-EXA-001",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "'Reasonable under the circumstances' is the stock legal phrase and the others are absolute; write parallel qualified options (e.g. 'At the taxpayer's principal residence', 'At the place records are kept, if the taxpayer asks') ."
+    },
+    {
+      "questionId": "EA3-FIL-001",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Key is the only diligent action; replace strawman options (file as computed, ask vendor after filing) with plausible professional actions that are wrong (have the client sign a statement accepting the credit, file and attach Form 8275)."
+    },
+    {
+      "questionId": "EA3-FIL-002",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Wrong options are unrelated to comparing returns; use other things a year-over-year comparison might catch but less typically, or ask about a different specific omission."
+    },
+    {
+      "questionId": "EA3-PRA-007",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "'Supervised with care' echoes 'presumed diligent' (reasonable care) in the stem; make distractors also care-sounding (reviewed every return in full, held a CE credential, followed firm checklists)."
+    },
+    {
+      "questionId": "EA3-PRA-028",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Only the key builds competence; others are non-answers. Use 10.35 alternatives as distractors (consulting an expert is also allowed, so avoid that), e.g. 'Getting the client's written consent to her inexperience', 'Limiting the engagement in writing'."
+    },
+    {
+      "questionId": "EA3-SAN-022",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Only the key is intentional conduct; add other badges-of-fraud-sounding but non-fraud facts (large unexplained deduction, inconsistent records corrected later) to require IRM 25.1.2 knowledge."
+    },
+    {
+      "questionId": "EA3-SAN-024",
+      "severity": "weak",
+      "issue": "Options-only pass: key found by a surface cue (only reasonable/ethical/lawful-sounding option) without the stem.",
+      "source": "tools/options_only.py score",
+      "fix": "Only one option is negative; restate with parallel negatives (e.g. 'Failing to file Form 8275 for a reasonable-basis position', 'Not keeping receipts for a small deduction') where only one meets 6662(c)."
+    }
+  ],
+  "landing_findings": [
+    {
+      "issue": "Facts match the PSI Candidate Information Bulletin (revised Oct 9, 2026): 100 questions (85 scored, 15 unscored), 3.5 hours, scaled 200-800 with 500 to pass, Part 3 domains 26/25/20/14, law through Dec 31 2025 for Jul 1 2026-Feb 28 2027, up to four attempts a part a window, three-year carryover, no testing in March-April, no in-person international testing and international scheduling delayed. examFacts in WIRING.md also match.",
+      "severity": "ok",
+      "source": "https://test-takers.psigov.us/api/content/bulletin/12238"
+    },
+    {
+      "issue": "Landing says the 50-question mock tests run 'at the same pace' / 'at the real exam's pace'. v1 practice tests are untimed (only ExamConfig.mockExams get a clock), so the claim is not delivered.",
+      "severity": "minor",
+      "fix": "Say 'about 105 minutes at the real exam's pace if you time yourself', or drop 'at the real exam's pace', or add a timed mock via mockExams.",
+      "source": "app/enrolled-agent-part-3-practice-test/page.tsx lines 53, 157"
+    },
+    {
+      "issue": "Meta description and JSON-LD say 'Free ... four 50-question mock tests' while Premium locks the last steps (v1 default). Title 'Free ... Practice Test' is allowed, and the hero ends 'Free to start', but the description reads as everything free.",
+      "severity": "minor",
+      "fix": "Add 'free to start' to the meta description, as the copy rule asks.",
+      "source": "CLAUDE.md v1 exam locks copy rule"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+ "id": "cadronebasic",
+ "blind_agreement": "198/200",
+ "blind_notes": "My blind answers matched 198 keys; the two I missed (AIR-012 Class E 700 ft AGL, HUM-024 12 hours after a no-decompression dive) are correct per the TC AIM 2026-2 RPA chapter and RPAS 101. Every distance, altitude, weight and age was checked against CARs Part IX on Justice Laws (current consolidation, includes SOR/2025-70, -98, -226): 250 g registration (900.13), owner 14 (900.15), 7-day notices and 60-day missing rule (900.18-900.19), certificate of registration accessible (900.20), 30 m at any altitude (901.26, 901.53), 122 m AGL / 30 m above a structure within 61 m (901.25), 3 NM / 1 NM / DND 3 NM (901.47), 12 h alcohol (901.19), five aircraft (901.40), records 12 and 24 months (901.48), incident analysis 12 months (901.49), basic age 14, direct supervision, 24-month recency and 24-month record (901.54-901.57), 24-hour retake (901.59), carriage of persons only under SFOC (901.22, new in SOR/2025-70), emergency security perimeter now 900.08, forest fire 5 NM / 3,000 ft AGL (601.15), indoor flights excluded (102.01(b.1)). No key states a pre-2025 rule. Recomputed: 920 Kv x 14.8 V = 13,616; 4 cm at 1:50 000 = 2 km; 1800Z = 11:00 PDT; 3,600 + 400 = 4,000 ft ASL; 45-degree load factor 1/cos45 = 1.41 G; 1 NM = 1,852 m; 1 SM = 5,280 ft. Keys run A,B,C,D in strict rotation in ID order (shuffled on screen, so not a defect).",
+ "options_only": {
+  "score": "135/200 (68%), ceiling 82%; K 79/91, S 12/13, G 44/96 (46%, well above chance)",
+  "s_hits": [
+   "CADRONE-FLT-001",
+   "CADRONE-LAW-011",
+   "CADRONE-LAW-023",
+   "CADRONE-OPS-013",
+   "CADRONE-OPS-014",
+   "CADRONE-OPS-017",
+   "CADRONE-OPS-021",
+   "CADRONE-OPS-029",
+   "CADRONE-SYS-014",
+   "CADRONE-WX-020",
+   "CADRONE-WX-022",
+   "CADRONE-WX-023"
+  ],
+  "verdict": "FAIL"
+ },
+ "findings": [
+  {
+   "questionId": "CADRONE-LAW-011",
+   "severity": "weak",
+   "issue": "Options-only S hit: the three distractors all end in 'only', so the one option without an absolute word is the key.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Make distractors parallel non-absolute surfaces/places (e.g. 'A rooftop deck', 'A gravel pit', 'A farm field') or give every option the same form; keep 'A frozen lake' or swap to 'Any area of land or water'."
+  },
+  {
+   "questionId": "CADRONE-LAW-023",
+   "severity": "weak",
+   "issue": "S hit: 'No reckless flying' is the only general-conduct rule among three certification/registration items; odd one out.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Use parallel distractors that are also conduct rules but not in Division II (e.g. 'Keep 30 m from bystanders' (901.26, Subpart 1 only), 'Stay below 122 m AGL' (901.25), 'Give way to balloons' (901.17))."
+  },
+  {
+   "questionId": "CADRONE-OPS-013",
+   "severity": "weak",
+   "issue": "S hit: 'Their qualifications' is the only aviation-relevant option; the others (medical history, years of flying, drone ownership) are implausible.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Draw distractors from other real pre-flight duties: 'Their home addresses', 'Their registration numbers', 'Their recency records' (only the pilot's recency is required), or ask which item 901.24 lists among site survey results, declaration and crew qualifications."
+  },
+  {
+   "questionId": "CADRONE-OPS-014",
+   "severity": "weak",
+   "issue": "S hit: 'Uninvolved people' echoes the program's dominant 30 m theme; the other three are not in 901.27 and look generic.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Use distractors that sound like 901.27 factors but are not (e.g. 'Distance to the nearest road', 'Distance to the landowner's house', 'Distance to the nearest radio tower') or ask which listed factor applies only to VLOS (g) vs BVLOS (h) with 'populated areas' as a distractor."
+  },
+  {
+   "questionId": "CADRONE-OPS-017",
+   "severity": "weak",
+   "issue": "S hit: 'Rotors and propellers' is the only lifting/control surface; the others are obviously not aerodynamic.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Use aerodynamic-sounding distractors not in 901.35(3) unless named by the manual: 'Camera lens and sensors', 'Antennas and GPS dome', 'Motor housings'; or flip to 'Which is NOT listed' with wings/stabilizers/propellers as the others."
+  },
+  {
+   "questionId": "CADRONE-OPS-021",
+   "severity": "weak",
+   "issue": "S hit: all four options start 'Arranged ...' and only 'before take-off' differs in timing from the other three 'at handover/once both see' timings; the key reads as the safest.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Ask what 901.42 requires besides a pre-arrangement made before take-off (key: 'A procedure to limit loss-of-control risk') with parallel distractors ('ATC approval', 'A visual observer for each pilot', 'Both pilots holding advanced certificates')."
+  },
+  {
+   "questionId": "CADRONE-OPS-029",
+   "severity": "weak",
+   "issue": "S hit: 'Working for the authority' is the only option that is not a self-chosen technique; reads as the obvious exception.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Make distractors permission-based too: 'With the landowner's consent', 'With a press accreditation', 'With an advanced certificate' (900.08(2) excepts only operations in the service of a public authority)."
+  },
+  {
+   "questionId": "CADRONE-SYS-014",
+   "severity": "weak",
+   "issue": "S hit: 'Height above launch' pairs with 'reads 0 at take-off'; reader with no subject knowledge can infer it.",
+   "source": "https://tc.canada.ca/sites/default/files/2026-10/aim-2026-2_rpa_en.pdf",
+   "fix": "Remove the 'reads 0 at take-off' cue from the stem (e.g. 'You launch from a hilltop 300 m above the valley and climb 50 m. What will the barometric altitude display show?') with options 50 m / 350 m / 300 m / depends on QNH."
+  },
+  {
+   "questionId": "CADRONE-WX-020",
+   "severity": "weak",
+   "issue": "S hit: two options name 'west' ('Toward the west', 'From the west'), so the key is one of the pair and 'From' matches the stem's 'come from'.",
+   "source": "https://tc.canada.ca/sites/default/files/2026-10/aim-2026-2_rpa_en.pdf",
+   "fix": "Use four 'From the ...' options (west, east, north, south) or ask the stem as a heading conversion (e.g. 'wind 090') so wording does not cue."
+  },
+  {
+   "questionId": "CADRONE-WX-022",
+   "severity": "weak",
+   "issue": "S hit: 'Local micro climate effects' repeats the stem idea (launch site vs regional) and is the only local option.",
+   "source": "https://tc.canada.ca/sites/default/files/2026-10/aim-2026-2_rpa_en.pdf",
+   "fix": "Give parallel local-sounding distractors ('Local magnetic variation', 'Local airspace class', 'Local time zone') or ask for an example of a micro climate effect."
+  },
+  {
+   "questionId": "CADRONE-WX-023",
+   "severity": "weak",
+   "issue": "S hit: 'C2 link and GPS' is the only radio-signal pair; the others (battery/motors, camera/gimbal, IMU/barometer) are obviously unaffected by space weather.",
+   "source": "https://tc.canada.ca/sites/default/files/2026-10/aim-2026-2_rpa_en.pdf",
+   "fix": "Use radio-adjacent distractors: 'Compass only', 'Barometer and altitude hold', 'Video feed brightness' so recognising the GNSS/HF effect is needed."
+  },
+  {
+   "questionId": "CADRONE-FLT-001",
+   "severity": "weak",
+   "issue": "S hit: 'A flyaway' is the only drone-specific emergency; bird strike, battery fire, crew injury read as generic.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Ask which listed 901.23(1)(b) item it is with distractors that are plausible but not listed: 'A bird strike', 'A lithium battery fire', 'A medical emergency in the crew' are fine if one of them is replaced by a listed-looking non-listed item such as 'A sudden wind gust'; or ask which item is NOT on the list."
+  },
+  {
+   "questionId": "CADRONE-OPS-015",
+   "severity": "ambiguous-minor",
+   "issue": "Key 'Safe distance from the pilot' is vague: 901.28(c) is the maximum distance from the pilot the aircraft can travel without endangering safety. A candidate could read 'safe distance from the pilot' as how far the drone must stay away from the pilot.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Reword key to 'How far it can fly from the pilot safely' or 'Maximum safe range from the pilot'."
+  },
+  {
+   "questionId": "CADRONE-LAW-026",
+   "severity": "ok-wording",
+   "issue": "901.43(1)(b) names 'weapons, ammunition or other equipment designed for use in war'; a firearm is a weapon so the key holds, but the explanation should cite (b) and (c) (a payload that could injure persons).",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Optional: stem 'a weapon' instead of 'a firearm', or add 901.43(1)(c) to the explanation."
+  }
+ ],
+ "landing_findings": [
+  {
+   "issue": "None blocking. Format (35 MCQ, 90 min, 65%, age 14, 24-hour retake, unlimited retakes, certificate does not expire) matches TC's Small Basic Exam page (modified 2025-11-04). Rules in the FAQ match CARs Part IX as amended by SOR/2025-70. Fee correctly omitted (TC page shows a blank fee). 'English or French' comes from TP 15263 per sources.md, not the exam page itself.",
+   "source": "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic",
+   "fix": "none"
+  },
+  {
+   "issue": "examFacts answer says a pilot certificate is needed to fly a 250 g to 25 kg drone; 901.54(2) also lets an uncertified person fly under direct supervision of a certified pilot. Minor simplification.",
+   "source": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html",
+   "fix": "Optional: add 'unless directly supervised by a certified pilot'."
+  }
+ ]
+}

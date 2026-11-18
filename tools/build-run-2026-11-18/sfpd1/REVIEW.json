@@ -1,0 +1,60 @@
+{
+  "id": "sfpd1",
+  "blind_agreement": "199/201 recorded; both mismatches (SFPD1-T2-055, SFPD1-D-019) were slips entering my answers, not disagreements, so 201/201 on substance",
+  "api67_claim": "CONFIRMED in Salesforce's Apex Developer Guide v68.0 (Winter '27, updated 2026-10-23), sections 'Use the with sharing, without sharing, and inherited sharing Keywords' and 'Enforce Object and Field Permissions' (Versioned Behavior Changes), and its Version 67.0 history appendix: 'Database Operations in User Mode by Default', 'Apex Classes Enforce Sharing by Default', 'WITH_SECURITY_ENFORCED Not Supported'. The D-007 explanation's subclass rule is in the same guide ('if an Apex class without an explicit sharing declaration extends from a parent class, it adopts the same sharing mode as the parent class'). The Summer '26 release notes page itself was not fetched.",
+  "governor_limits": "Every number recomputed against the guide's limits table: SOQL 100/200, 50,000 rows, SOSL 20 and 2,000 rows, DML 150 and 10,000 rows, enqueueJob 50/1, CPU 10,000/60,000 ms, scheduled Apex uses synchronous limits. T1-035 (7/2 = 3) and T2-024 (String == case-insensitive, true) recomputed. All correct.",
+  "options_only": {
+    "score": "145/195 (74%), ceiling 82%; K 135/174, S 2/3, G 8/18 (single items only; the 6 choose-two items were left out since tools/options_only.py is v1-only, run on a v1-shaped scratch copy)",
+    "s_hits": ["SFPD1-D-065", "SFPD1-T2-020"],
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "questionId": "SFPD1-D-016",
+      "severity": "ambiguous",
+      "issue": "The stem has no API version. From API 67.0, plain 'insert rec;' also runs in user mode (the running user's object and field permissions), and a class with no sharing keyword runs with sharing, so option C is defensible on a current org.",
+      "source": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf",
+      "fix": "Replace option C with a call that never enforces the user's access, such as 'insert as system rec;', or change the stem to 'Which call enforces the running user's object, field and sharing permissions whatever the class's API version?'"
+    },
+    {
+      "questionId": "SFPD1-D-065",
+      "severity": "weak",
+      "issue": "Options-only S hit: the key is the only option that names a specific field setting; the others are flat 'never', 'always' or an unrelated attribute.",
+      "source": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf",
+      "fix": "Write the wrong options in the same form, each naming a field setting: 'Field set as External ID only', 'Field set as Unique and case-sensitive', 'Field set as Required and External ID'."
+    },
+    {
+      "questionId": "SFPD1-T2-020",
+      "severity": "weak",
+      "issue": "Options-only S hit: 'Spawn its own threads' is the odd one out among three everyday Apex features, so it can be picked without knowing the guide's list.",
+      "source": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf",
+      "fix": "Use plausible capabilities as wrong options, for example 'Run asynchronously in a queue', 'Parse JSON from a callout', 'Call another class's static method'."
+    },
+    {
+      "questionId": "SFPD1-D-044",
+      "severity": "weak",
+      "issue": "Stem says the static variable is set in @TestSetup; the guide says a change made in the setup method does not persist either, so 'The original value' could be read as the value @TestSetup set, which the next test method does not see.",
+      "source": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf",
+      "fix": "Change the key to 'The value from its initializer' or the stem to 'A static variable is initialized to 5. A test method changes it to 9. What does the next test method see?'"
+    },
+    {
+      "questionId": "SFPD1-T2-037, SFPD1-D-007",
+      "severity": "note",
+      "issue": "Correct and versioned, but the real exam is said by guides to align to an earlier release (Winter '25), where a class without a sharing keyword usually runs without sharing and Apex runs in system mode. Candidates may meet the old default on the exam.",
+      "source": "https://www.fastlanetraining.ca/certification/sfcpdi",
+      "fix": "Optionally add one sentence to each explanation giving the API 66.0-and-earlier behavior, so candidates know both."
+    }
+  ],
+  "landing_findings": [
+    {
+      "issue": "Format (60 scored, 105 minutes, 68%) could not be confirmed on any Salesforce page: the Help exam guide still returns 'Sorry to interrupt / CSS Error' to WebFetch. The only official Salesforce document found (an old Winter '19 exam guide PDF on developer.salesforce.com) says 110 minutes and 65%. The FAQ hedges correctly ('Guides that quote...'), but the examFacts rows in WIRING.md state 105 minutes and 68% flat.",
+      "source": "https://developer.salesforce.com/resources2/certification-site/files/SGCertifiedPlatformDeveloperI.pdf",
+      "fix": "Keep the figures (two independent guides agree and the 65%/110 figure is old), but word the Time and Passing score rows as 'guides say' or rely on the hedged answer text."
+    },
+    {
+      "issue": "Section weights (27/28/25/20), credential name, Premium wording (Practice Test 2 and the last two drills locked, matching 25% of 11 steps) and the governor limit facts in the study-guide copy all check out. No fees or dates are claimed.",
+      "source": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-i-certification-prep-fundamentals-and-database-modeling/pd1-1-get-started",
+      "fix": "None."
+    }
+  ]
+}

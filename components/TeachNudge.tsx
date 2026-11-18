@@ -42,6 +42,7 @@ const TEACHER_LED = new Set([
   "cbspd",
   "ascpmlt",
   "nzham",
+  "cahambasic",
   "cadc",
   "ascppbt",
   "rpt",
@@ -103,12 +104,12 @@ const TEACHER_LED = new Set([
   "realestate", "insurance", "pnc", "ham", "civics",
   "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
-  "caauto", "caplumb", "cacarp", "caweld", "cawhmis", "caguard", "caabguard",
+  "caauto", "caplumb", "cacarp", "caweld", "carscook", "carshair", "cawhmis", "caguard", "caabguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "prince2", "psm", "capm",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "prince2", "psm", "capm",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "osssc", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "vidyagyan", "jambeng", "appsych",
@@ -139,6 +140,8 @@ const TEACHER_LED = new Set([
   "nzrealestate", "caairbrake",
   // International batch 2 (November 2026): the PRC board exams and the criminology board exam
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
+  "nailtech",
+  "sfpd1", "sfappbuilder",
 ]);
 
 export function isTeacherLedExam(id: string): boolean {

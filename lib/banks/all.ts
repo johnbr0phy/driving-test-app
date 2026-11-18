@@ -308,5 +308,12 @@ import "./nzsecurity";
 import "./cacore";
 import "./chtheory";
 import "./cabcguard";
+import "./nailtech";
+import "./ea2";
+import "./ea3";
+import "./cahambasic";
+import "./cadronebasic";
+import "./carscook";
+import "./carshair";
 
 import "./realestatebroker";

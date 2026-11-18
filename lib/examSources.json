@@ -337,6 +337,12 @@
   "https://internationalcredentialing.org/icrc-credentials/credentials/",
   "https://internationalcredentialing.org/prep-and-study-materials/"
  ],
+ "cadronebasic": [
+  "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic",
+  "https://tc.canada.ca/en/aviation/publications/knowledge-requirements-pilots-remotely-piloted-aircraft-systems-250-g-including-150-kg-basic-advanced-operations-tp-15263",
+  "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/getting-drone-pilot-certificate",
+  "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html"
+ ],
  "caelec": [
   "https://red-seal.ca/eng/trades/constelectric/exam-information.shtml",
   "https://red-seal.ca/eng/trades/constelectric/previous/exam-weightings.shtml",
@@ -346,6 +352,11 @@
   "https://www.ontario.ca/page/security-guard-and-private-investigator-testing",
   "https://www.ontario.ca/page/security-guard-study-guide",
   "https://www.ontario.ca/document/training-syllabus-security-guards"
+ ],
+ "cahambasic": [
+  "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service",
+  "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-1-guide-examiners-accredited-conduct-examinations-amateur-radio-operator-certificates",
+  "https://ised-isde.canada.ca/site/amateur-radio-operator-certificate-services/en/amateur-radio-exam-generator"
  ],
  "cahunteron": [
   "https://www.ontario.ca/page/hunter-education",
@@ -391,6 +402,16 @@
   "https://saaq.gouv.qc.ca/blob/saaq/documents/permis-conduire/reference-guide-licence-classe-5.pdf",
   "https://saaq.gouv.qc.ca/blob/saaq/documents/publications/demerit-points-driver-licence.pdf",
   "https://saaq.gouv.qc.ca/blob/saaq/documents/publications/accompagning-rider-guide-vehicle.pdf"
+ ],
+ "carscook": [
+  "https://red-seal.ca/eng/trades/cooks/exam-information.shtml",
+  "https://red-seal.ca/eng/trades/cooks/exam-weightings.shtml",
+  "https://www.red-seal.ca/_conf/assets/custom/docms/cook/rsos-eng.pdf"
+ ],
+ "carshair": [
+  "https://red-seal.ca/eng/trades/hairstylists/exam-information.shtml",
+  "https://red-seal.ca/eng/trades/hairstylists/exam-weightings.shtml",
+  "https://www.red-seal.ca/_conf/assets/custom/docms/hairstylist/rsos.pdf"
  ],
  "casfa": [
   "https://scc-ccn.ca/standardsdb/standards/4032281",
@@ -636,6 +657,16 @@
   "https://test-takers.psigov.us/api/content/bulletin/12238",
   "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions",
   "https://www.irs.gov/node/776"
+ ],
+ "ea2": [
+  "https://test-takers.psigov.us/api/content/bulletin/12238",
+  "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions",
+  "https://www.irs.gov/instructions/i4562"
+ ],
+ "ea3": [
+  "https://test-takers.psigov.us/api/content/bulletin/12238",
+  "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions",
+  "https://www.irs.gov/pub/irs-pdf/pcir230.pdf"
  ],
  "elevenplus": [
   "https://11plus.gl-assessment.co.uk/free-materials/",
@@ -1030,6 +1061,11 @@
   "https://www.gov.uk/government/publications/key-stage-2-english-reading-test-framework",
   "https://dera.ioe.ac.uk/25864/1/2016_KS2_EnglishGPS_framework_PDFA.pdf"
  ],
+ "linuxplus": [
+  "https://www.comptia.org/en-us/certifications/linux/",
+  "https://lecbyo.files.cmp.optimizely.com/download/90b9ac985c0e11f0b004a2a93c999a21",
+  "https://lecbyo.files.cmp.optimizely.com/download/4ae79a48529711f08baa4a1390fb0d85"
+ ],
  "llqp": [
   "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/",
   "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
@@ -1104,6 +1140,11 @@
   "https://aiiasia.org/programmes/pre-contract-examination-for-insurance-agents-pceia/",
   "https://aiiasia.org/exam-faqs/",
   "https://aiiasia.org/wp-content/uploads/2024/10/MII-Guide-Book-1.pdf"
+ ],
+ "nailtech": [
+  "https://prov-testing.github.io/nic_cib/nail_technology_national_theory_english.html",
+  "https://apps.provexam.online/sample-apps/cib_selection_app/",
+  "https://nictesting.org/nic-exam-types/"
  ],
  "naplan": [
   "https://www.nap.edu.au/naplan/whats-in-the-tests",
@@ -1620,6 +1661,17 @@
   "https://trailhead.salesforce.com/credentials/platformadministrator",
   "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
   "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US"
+ ],
+ "sfappbuilder": [
+  "https://help.salesforce.com/s/articleView?id=005298964&type=1&language=en_US",
+  "https://trailhead.salesforce.com/help?article=Salesforce-Certified-Platform-App-Builder-Exam-Guide",
+  "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification"
+ ],
+ "sfpd1": [
+  "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+  "https://trailheadacademy.salesforce.com/certificate/exam-platform-dev1---Plat-Dev-201",
+  "https://trailhead.salesforce.com/content/learn/modules/platform-developer-i-certification-prep-fundamentals-and-database-modeling/pd1-1-get-started",
+  "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_apex_developer_guide.pdf"
  ],
  "sgbtt": [
   "https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/BT-ENG-24126.pdf",

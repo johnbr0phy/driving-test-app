@@ -37,7 +37,7 @@ Q = [
  "Overdriving the transmitter", ["Too little microphone gain", "A low-pass filter at the output", "A well-matched antenna"],
  "Too much audio drive or compression pushes the amplifier into non-linear operation, which spreads the signal well beyond its normal bandwidth."),
 ("To keep your transmitter's harmonics out of VHF receivers nearby, fit a:",
- "Low-pass filter at the transmitter", ["High-pass filter at the transmitter", "Low-pass filter at each receiver", "Band-reject filter on the mains"],
+ "Low-pass filter at the transmitter", ["High-pass filter at the transmitter", "Low-pass filter at each receiver", "Band-pass filter at each receiver"],
  "Harmonics are above the operating frequency, so a low-pass filter at the transmitter output passes the wanted signal and removes them before they are radiated."),
 ("A filter at a TV antenna input that blocks your HF signals while passing TV channels is a:",
  "High-pass filter", ["Low-pass filter", "Audio filter", "Band-pass HF filter"],

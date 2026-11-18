@@ -68,7 +68,7 @@ Q = [
  "Indicating overmodulation", ["Recording every transmission", "Limiting output to 100 W", "Measuring field strength"],
  "RBR-4 section 11 requires a way to determine the transmit frequency as accurately as a crystal calibrator, and for radiotelephone, a way to indicate or prevent overmodulation."),
 ("In bands marked with an asterisk in Schedule I, amateur stations must:",
- "Accept interference, cause none", ["Keep power below 100 W", "Use FM emissions only", "Register each station with ISED"],
+ "Accept interference, cause none", ["Use them for disaster relief", "Keep to 100 W PEP ERP", "Hold the Advanced Qualification"],
  "In RBR-4 Schedule I an asterisk means amateur transmissions shall not cause interference to, nor be protected from, stations licensed in other services in that band."),
 ("Which ISED document sets the procedure for installing amateur antenna systems?",
  "CPC-2-0-03", ["RSS-102", "CPC-2-1-23", "RIC-3"],

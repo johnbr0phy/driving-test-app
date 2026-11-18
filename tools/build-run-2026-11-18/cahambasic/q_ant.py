@@ -86,7 +86,7 @@ Q = [
 ("Each element of a cubical quad antenna is a loop about:",
  "One wavelength around", ["Half a wavelength around", "A quarter wavelength around", "Two wavelengths around"],
  "A quad uses loops about one wavelength in circumference, which is why ISED's loop formula, 306 / F, is close to a full wavelength."),
-("An antenna's bandwidth is the range of frequencies over which:",
- "Its SWR stays acceptable", ["It radiates its harmonics", "Its gain exceeds 10 dBi", "Its feed line is lossless"],
- "Bandwidth is the span in which the antenna keeps an acceptable match, usually given as the range where SWR stays below a set figure such as 2:1."),
+("Antenna gain measured against a half-wave dipole is written in:",
+ "dBd", ["dBi", "dBm", "dBc"],
+ "dBd compares gain with a half-wave dipole, and dBi with an isotropic radiator; a dipole has about 2.15 dBi. dBm is power relative to 1 mW and dBc is relative to the carrier."),
 ]

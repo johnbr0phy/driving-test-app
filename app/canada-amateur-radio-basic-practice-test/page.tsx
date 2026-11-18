@@ -24,7 +24,7 @@ const description =
 const faqs = [
   {
     q: "What is the Basic Qualification?",
-    a: "The Amateur Radio Operator Certificate with Basic Qualification is the certificate Innovation, Science and Economic Development Canada (ISED) issues to new amateur radio operators, with a call sign. It lets you operate on every amateur band above 30 MHz, such as 2 m and 70 cm, at up to 250 W DC input, and build station equipment from commercial kits. The exam is given by ISED-accredited examiners, in person or by videoconference, and there is no age or nationality limit.",
+    a: "The Amateur Radio Operator Certificate with Basic Qualification is the certificate Innovation, Science and Economic Development Canada (ISED) issues to new amateur radio operators, with a call sign. It lets you operate on every amateur band above 30 MHz, such as 2 m and 70 cm, at up to 250 W DC input, and build any station equipment except transmitters, which must be assembled from commercial kits of professional design. The exam is given by ISED-accredited examiners, in person or by videoconference, and there is no age or nationality limit.",
   },
   {
     q: "How many questions are on the Basic exam, and what is the pass mark?",

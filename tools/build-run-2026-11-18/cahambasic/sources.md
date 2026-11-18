@@ -98,11 +98,37 @@ reactance, lowest-loss feed line) were rewritten. Checked 2026-11-18.
   Meanings of QRL, QRM, QRN, QRS, QRT, QRV, QRZ, QSA, QSB, QSL, QSY, QTH and of CQ, CP, CS, K, AR,
   AS, VA, CL. The phonetic words (Juliett, Quebec) are those of ITU Radio Regulations Appendix 14.
 
+## Added after the independent review (fetched 2026-11-18)
+
+- Radio Amateurs of Canada, Recommended Repeater Operating Procedures, fetched 2026-11-18:
+  https://rac.ca/repeater-operation/
+  Monitor (listen) to see whether the repeater is in use before transmitting; pause between
+  transmissions so others can identify themselves; do not break into a contact without
+  something to add. Used for OPS-001 and OPS-002 (the national society's guidance, no ISED text).
+- CCOHS, Electrical Hazards, fetched 2026-11-18:
+  https://www.ccohs.ca/oshanswers/safety_haz/electrical.html
+  A larger fuse can cause excessive current in the wiring and start a fire (PSU-008); a Class A
+  GFCI trips at a maximum of 6 mA (PSU-013); tools grounded or double-insulated (PSU-010).
+- CCOHS, Fall protection: body belts, harnesses and lanyards, fetched 2026-11-18:
+  https://www.ccohs.ca/oshanswers/prevention/ppe/belts.html
+  Body belts and saddles are for work positioning and travel restraint, not fall arrest; full-body
+  harnesses are CSA Z259.10 (PSU-012).
+- CCOHS, Welding: electrical hazards, fetched 2026-11-18:
+  https://www.ccohs.ca/oshanswers/safety_haz/welding/electric.html
+  The current's path through the body, especially across the chest, decides how severe a shock
+  is (PSU-011).
+- New operating items OPS-005 (call sign at start and end, RBR-4 s 9), OPS-006 (unmodulated
+  carrier below 30 MHz only for brief tests, RBR-4 s 11), OPS-010 (US licensee on Morse adds an
+  oblique stroke and the Schedule V prefix, RBR-4 s 9) and OPS-011 (international emergency
+  third-party traffic unless a foreign administration forbids it, RBR-4 s 6, RIC-3 s 8.3) replace
+  the RST, CQ-procedure and tune-up courtesy items, which had no official source. PSU-013 (GFCI)
+  replaces the arrester location item, whose rule (Canadian Electrical Code Section 54) is
+  paywalled.
+
 ## Not from an ISED page
 
-- Operating courtesy items (listen before calling, pause between overs, give your call to join,
-  check a frequency before tuning up) and the RST report scale are long-standing amateur practice
-  named in RIC-3 topics 2-1 to 2-6 but not written out in an ISED document; they are kept general.
+- No RST, CQ-procedure or tune-up courtesy items: RIC-3 names those topics but no official
+  Canadian page defines them.
 - Electronics, receiver, antenna, propagation and interference items follow standard textbook
   physics within the RIC-3 topic list, and every calculation is computed and asserted in its
   q_*.py file using ISED's formula sheet.

@@ -5031,6 +5031,19 @@
     --brand-border-light: 194 30% 88%;
     --brand-gradient-to: 209 50% 95%;
   }
+  /* Transport Canada Small Basic Exam (drone) theme: twilight violet */
+  [data-theme="cadronebasic"] {
+    --brand: 287 45% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 287 40% 95%;
+    --brand-hover: 287 45% 28%;
+    --brand-dark: 287 45% 22%;
+    --brand-darker: 287 40% 14%;
+    --brand-muted: 287 20% 70%;
+    --brand-border: 287 25% 80%;
+    --brand-border-light: 287 25% 89%;
+    --brand-gradient-to: 302 40% 95%;
+  }
 
   [data-theme="bcrealestate"] {
     --brand: 158 95% 20%;
@@ -10461,6 +10474,18 @@
     --brand-muted: 194 25% 45%;
     --brand-dark: 194 60% 65%;
     --brand-darker: 194 55% 78%;
+  }
+
+  .dark [data-theme="cadronebasic"] {
+    --brand: 287 45% 50%;
+    --brand-hover: 287 45% 42%;
+    --brand-light: 287 40% 13%;
+    --brand-gradient-to: 302 40% 11%;
+    --brand-border-light: 287 25% 24%;
+    --brand-border: 287 25% 34%;
+    --brand-muted: 287 20% 45%;
+    --brand-dark: 287 45% 65%;
+    --brand-darker: 287 40% 78%;
   }
 
   .dark [data-theme="bcrealestate"] {

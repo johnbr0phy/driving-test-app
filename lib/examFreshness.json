@@ -518,6 +518,15 @@
       "what": "SEE testing pauses in March and April 2027 while the exam is updated; the next window will test law as amended through December 31, 2026 under a new Candidate Information Bulletin.",
       "action": "Read the new bulletin's Part 3 outline and weights; update any item a 2026 law change or revised IRS publication touches (Circular 230, Pubs. 1345 and 3112, Form 2848 instructions, the First Time Abate move to Automatic Exemption from Penalty).",
       "source": "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions"
+    },
+    {
+      "exam": "cadronebasic",
+      "date": "2025-11-04",
+      "kind": "law",
+      "what": "SOR/2025-70 amended CARs Part IX in two stages (1 April and 4 November 2025): Level 1 Complex certificate and lower-risk BVLOS, medium RPA to 150 kg, sheltered and EVLOS for advanced pilots, basic operations redefined as uncontrolled airspace and 30 m at any altitude, micro drones at advertised events need an SFOC.",
+      "action": "Bank written to the amended rules; re-check basic-operation items (CADRONE-LAW, -OPS, -AIR) against any further Part IX amendment or a new TP 15263 edition.",
+      "source": "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html",
+      "done": "2026-11-18"
     }
   ]
 }

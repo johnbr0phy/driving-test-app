@@ -44,6 +44,23 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  cadronebasic: {
+    answer:
+      "In Canada, anyone flying a drone that weighs 250 g to 25 kg needs a pilot certificate from Transport Canada, unless directly supervised by a certified pilot, and the drone must be registered and marked. The Pilot Certificate - Basic Operations comes from passing the Small Basic Exam online in Transport Canada's Drone Management Portal: 35 multiple-choice questions in 90 minutes, with 65% or higher to pass, open to people 14 and older. Questions are based on Transport Canada's knowledge requirements document TP 15263. A basic certificate covers flights in uncontrolled airspace, at least 30 m horizontally from people not involved, below 122 m (400 ft) above ground and outside 3 nautical miles of an airport and 1 nautical mile of a heliport. Flying in controlled airspace or near people needs the advanced certificate. The certificate does not expire, but pilots must show recent activity within 24 months.",
+    rows: [
+      { label: "Questions", value: "35 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "65%" },
+      { label: "Minimum age", value: "14" },
+      { label: "Based on", value: "TP 15263 (Fourth Edition, March 2025) and CARs Part IX" },
+      { label: "Where", value: "Online, Transport Canada Drone Management Portal, English or French" },
+      { label: "Retakes", value: "After a 24-hour wait, as often as needed" },
+      { label: "Certificate", value: "Does not expire; 24-month recency rule" },
+      { label: "Run by", value: "Transport Canada" },
+    ],
+    basedOn: "Transport Canada's Small Basic Exam page and TP 15263, and CARs Part IX as amended by SOR/2025-70, checked November 2026",
+    source: { name: "Transport Canada: Small Basic Exam", url: "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic" },
+  },
   cahambasic: {
     answer:
       "In Canada, Innovation, Science and Economic Development Canada (ISED) issues the Amateur Radio Operator Certificate with Basic Qualification and a call sign, which together let you operate an amateur station without a separate station licence. The Basic exam has 100 multiple-choice questions, one drawn from each of the 100 topics in ISED's Basic syllabus (RIC-3), and the pass mark is 70%. A score of 80% or more earns Basic with Honours, which adds the amateur bands below 30 MHz; Basic alone covers every band above 30 MHz. ISED-accredited examiners give the exam in person or by videoconference. It is closed book except for ISED's approved formula and block diagram sheet, a calculator that cannot store formulas or text is allowed, and there is no set time limit. Since July 15, 2025 every Basic exam uses ISED's updated question bank.",

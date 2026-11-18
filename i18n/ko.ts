@@ -2960,6 +2960,14 @@ export const ko: TranslationKeys = {
     cahamAntennas: "Feed Lines & Antennas",
     cahamPropagation: "Radio Wave Propagation",
     cahamInterference: "Interference & Suppression",
+    cdrLaw: "Air Law, Registration & Certificates",
+    cdrRules: "General Operating Rules",
+    cdrAirspace: "Airspace & Aerodromes",
+    cdrSystems: "Drone Systems & Batteries",
+    cdrHuman: "Human Factors",
+    cdrWeather: "Meteorology",
+    cdrNav: "Navigation, Charts & Time",
+    cdrFlightOps: "Flight Operations & Emergencies",
   } as Record<string, string>,
 
   // Training set names

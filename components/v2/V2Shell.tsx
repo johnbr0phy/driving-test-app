@@ -1,12 +1,15 @@
 import type { CSSProperties } from "react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { V2Sync } from "./V2Sync";
+import { V2UiProvider } from "@/lib/v2/ui";
+import type { Language } from "@/i18n";
 import { v2DarkThemeStyle } from "@/lib/v2/darkTheme";
 import "./v2.css";
 
 /** Scopes the v2 theme tokens and styles to the exam's pages. Takes only the
- *  theme (plain strings) so a server layout can render it. */
-export function V2Shell({ theme, children }: { theme: ExamV2Config["theme"]; children: React.ReactNode }) {
+ *  theme (plain strings) and the exam's language so a server layout can
+ *  render it; the language sets the v2 interface strings (lib/v2/ui). */
+export function V2Shell({ theme, language, children }: { theme: ExamV2Config["theme"]; language?: Language; children: React.ReactNode }) {
   const style = {
     "--v2-brand-override": theme.brand,
     "--v2-brand-dark-override": theme.brandDark,
@@ -16,7 +19,7 @@ export function V2Shell({ theme, children }: { theme: ExamV2Config["theme"]; chi
   return (
     <div className="v2-shell flex flex-1 flex-col bg-gray-50 dark:bg-gray-950" style={style}>
       <V2Sync />
-      {children}
+      <V2UiProvider language={language}>{children}</V2UiProvider>
     </div>
   );
 }

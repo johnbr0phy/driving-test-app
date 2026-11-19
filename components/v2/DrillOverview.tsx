@@ -14,6 +14,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useV2Premium } from "@/hooks/useV2Premium";
 import { hasDrillProgress, isDrillLocked } from "@/lib/v2/premium";
 import { DrillLockScreen } from "./DrillLockScreen";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * Front door of a drill's Basics: the skill list, with the exam-level
@@ -25,6 +26,8 @@ import { DrillLockScreen } from "./DrillLockScreen";
 export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; drillKeyParam: string | null }) {
   const router = useRouter();
   const routes = v2Routes(exam);
+  const allUi = useV2Ui();
+  const ui = allUi.dashboard;
   const hydrated = useHydration();
   const drill = exam.drills.find((d) => d.key === drillKeyParam);
   const skills = drill ? basicsFor(drill) : [];
@@ -37,7 +40,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   }, [hydrated, drill, router, routes.dashboard]);
 
   if (!hydrated || !drill) {
-    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
+    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">{allUi.common.loading}</div>;
   }
 
   const section = getSectionV2(exam, drill.section);
@@ -51,10 +54,10 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
   // A Premium drill, Basics included, stays open only for anyone already in it.
   const premiumDrill = !!exam.premium?.lockedDrills.includes(drill.key);
   if (premiumDrill && !premiumReady) {
-    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</div>;
+    return <div className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">{allUi.common.loading}</div>;
   }
   if (isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill)) {
-    return <DrillLockScreen exam={exam} drill={drill} detail={`${skills.length} Basics skills and ${questions.length} exam-level questions`} />;
+    return <DrillLockScreen exam={exam} drill={drill} detail={ui.drillLockDetail(skills.length, questions.length)} />;
   }
 
   const examButton = (label: string) => (
@@ -65,7 +68,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
     <div className="v2-focus">
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
-          <Link href={routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back to dashboard">
+          <Link href={routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={ui.backToDashboardAria}>
             <ArrowLeft className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1">
@@ -77,7 +80,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
 
       <div className="v2-scroll">
         <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
-          <Stage title="Basics" count={`${learned}/${skills.length}`} sub="Learn one rule, practice it right away. About 2 minutes per skill. Free." />
+          <Stage title={ui.basicsStageTitle} count={`${learned}/${skills.length}`} sub={ui.basicsStageSub} />
           <div className="flex flex-col gap-2">
             {skills.map((s) => {
               const done = !!basicsMap[basicsKey(exam.id, s.id)]?.done;
@@ -92,7 +95,7 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
                     <div className="text-[15px] font-bold text-gray-900 dark:text-gray-50">{s.name}</div>
                     <div className="text-[13px] text-gray-500 dark:text-gray-400">{s.sub}</div>
                   </div>
-                  <div className={`shrink-0 text-xs font-bold ${done ? "text-green-700 dark:text-green-300" : "text-gray-500 dark:text-gray-400"}`}>{done ? "Learned ✓" : `${s.questions.length} quick Qs`}</div>
+                  <div className={`shrink-0 text-xs font-bold ${done ? "text-green-700 dark:text-green-300" : "text-gray-500 dark:text-gray-400"}`}>{done ? ui.skillLearned : ui.quickQuestions(s.questions.length)}</div>
                 </Link>
               );
             })}
@@ -104,10 +107,10 @@ export function DrillOverview({ exam, drillKeyParam }: { exam: ExamV2Config; dri
         <div className="mx-auto max-w-2xl">
           {nextSkill ? (
             <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl bg-brand text-base font-bold text-white">
-              {learned ? "Next skill" : "Start Basics"}: {nextSkill.name}
+              {learned ? ui.nextSkillButton(nextSkill.name) : ui.startBasicsButton(nextSkill.name)}
             </Link>
           ) : (
-            examButton(mastered ? "Continue exam level" : "Start exam level")
+            examButton(mastered ? ui.continueExamLevel : ui.startExamLevel)
           )}
         </div>
       </div>

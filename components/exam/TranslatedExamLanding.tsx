@@ -9,7 +9,8 @@ import { EXAM_FACTS } from "@/lib/examFacts";
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { examBaseLanguage, getExamById, localizeExam, type ExamId } from "@/lib/exams";
-import { examLandingAlternates, examLandingLocale, examOffers } from "@/lib/examSeo";
+import { examLandingAlternates, examLandingLocale, examOffers, landingExam } from "@/lib/examSeo";
+import { SampleQuestionsV2 } from "@/components/v2/SampleQuestionsV2";
 import { regionOfTest } from "@/lib/region";
 import type { TranslatedLandingContent } from "@/lib/landingContent";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
@@ -48,7 +49,8 @@ function urls(examId: string, lang: Language) {
 }
 
 function landingUrls(examId: string, lang: Language) {
-  const exam = getExamById(examId);
+  // A native-language v2 exam (the Italian A2 test, CILS B2) uses this page too.
+  const exam = landingExam(examId);
   if (!exam) return null;
   const path = lang === examBaseLanguage(exam) ? exam.landingPath : exam.translations?.[lang]?.landingPath;
   return path ? { exam, url: `${siteUrl}${path}` } : null;
@@ -91,7 +93,8 @@ export function TranslatedExamLanding({
   related?: boolean;
 }) {
   const { exam, url } = urls(examId, lang);
-  const localized = localizeExam(exam, lang);
+  const v1 = !!getExamById(examId);
+  const localized = v1 ? localizeExam(exam, lang) : exam;
   const facts = EXAM_FACTS[examId];
   const source = c.facts.source ?? facts?.source;
   const inLanguage = examLandingLocale(examId, lang);
@@ -144,7 +147,7 @@ export function TranslatedExamLanding({
         <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">{c.h1}</h1>
-          <ExamLandingHero dashboardHref={dashboardHref} shortName={localized.shortName} lang={lang} subtitle={c.subtitle} shots={shots} />
+          <ExamLandingHero dashboardHref={dashboardHref} shortName={localized.shortName} lang={lang} subtitle={c.subtitle} shots={shots} tryQuestion={v1} />
         </div>
       </div>
 
@@ -241,7 +244,7 @@ export function TranslatedExamLanding({
         </div>
       </div>
 
-      {samples && <ExamSampleQuestions examId={examId as ExamId} lang={lang} />}
+      {samples && (v1 ? <ExamSampleQuestions examId={examId as ExamId} lang={lang} /> : <SampleQuestionsV2 examId={examId} />)}
 
       {/* FAQ */}
       <div className="bg-gray-50 dark:bg-gray-950">

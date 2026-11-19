@@ -423,6 +423,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   sgvl: { title: "TDVL and PDVL Practice Test", description: "Practise road safety, passengers, VLPS demerit points, bookings, fares and routes." },
   jeemain: { title: "JEE Main Mock Test", description: "Full 75-question JEE Main Paper 1 mock tests in Mathematics, Physics and Chemistry, with numerical value questions." },
   neet: { title: "NEET Mock Test", description: "Practice Physics, Chemistry and Biology on the NCERT syllabus in timed mock tests at the real pace." },
+  kcet: { title: "KCET Mock Test", description: "Practice Physics, Chemistry and Mathematics in timed KCET mock tests at the real pace, on the I and II PUC syllabus." },
   mhtcet: { title: "MHT-CET Mock Test", description: "Practice Physics, Chemistry and Mathematics in timed MHT-CET PCM mock tests at the real pace." },
   cuet: { title: "CUET General Test Practice", description: "Practise GK, mental ability, numerical ability and reasoning in full 50-question, 60-minute CUET (UG) General Aptitude Test mocks." },
   reet: { title: "REET Level 1 (Classes 1 to 5)", description: "Practise child development and pedagogy, Hindi, English, maths and EVS with Rajasthan, with content and pedagogy questions." },

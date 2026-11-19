@@ -51,6 +51,10 @@ export function pageLanguage(pathname: string | null | undefined, preferred: Lan
     if (tr) return tr[0] as Language;
     return preferred;
   }
+  // A native-language v2 exam (Högskoleprovet, the Italian A2 test) runs in
+  // its own language on its landing and app pages, like a v1 exam's.
+  const v2 = getExamV2ByPath(pathname);
+  if (v2?.language) return v2.language;
   // The DMV landing and state pages have one URL per DMV language.
   if (isDmvLandingPath(pathname)) return DMV_LANGUAGES.includes(preferred) ? preferred : "en";
   const home = HOME_LANG.get(pathname);
@@ -83,6 +87,8 @@ export function testPageLanguage(
     if (onLanding) return null;
     return testLanguageFor(testLanguages[exam.id], examLanguages(exam), preferred, examBaseLanguage(exam));
   }
+  const v2 = getExamV2ByPath(pathname);
+  if (v2?.language && pathname !== v2.landingPath) return v2.language;
   if (DMV_BASES.some((b) => pathname === b || pathname.startsWith(`${b}/`))) {
     return testLanguageFor(testLanguages.dmv, dmvLanguagesFor(dmvState), preferred, "en");
   }

@@ -1,0 +1,115 @@
+{
+ "id": "sfappbuilder",
+ "blind_agreement": "200/200",
+ "blind_notes": "Answered all 200 (185 single, 11 multi, 2 numeric, 1 order, 1 matrix) before seeing keys; after correcting my own transcription slips the only disagreement was D-072, where my pick 'Install without access' is not a real install option, so the key 'Install for admins only' stands. Numerics recomputed: T1-057 Dec 15 - Dec 1 = 14; T2-057 80,000 x 25% = 20,000. Spot-checked against Help: T2-028 required fields prefill create-action layouts; Data Import Wizard objects, 18-month field history, report type 4 objects, quick deploy 10 days, sandbox refresh 1/5/29 days all hold.",
+ "options_only": {
+  "score": "122/185 (66%) on the 185 single-answer items (multi/numeric/order/matrix excluded; tools/options_only.py is v1-only, so a v1-shaped copy was made in scratch); K 50/57, S 9/10, G 63/118",
+  "s_hits": [
+   "SFAPP-D-018",
+   "SFAPP-D-039",
+   "SFAPP-D-051",
+   "SFAPP-D-058",
+   "SFAPP-D-065",
+   "SFAPP-T1-017",
+   "SFAPP-T1-018",
+   "SFAPP-T1-056",
+   "SFAPP-T2-040"
+  ],
+  "verdict": "FAIL"
+ },
+ "findings": [
+  {
+   "questionId": "SFAPP-D-018",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): the key is the only option naming a session or verification feature; the others are obviously unrelated admin tools.",
+   "source": "",
+   "fix": "Use distractors of the same family: e.g. 'Permission set with an expiration date', 'Permission set group with a muting permission set', 'Login IP ranges on the profile'."
+  },
+  {
+   "questionId": "SFAPP-D-039",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): key is the most specific, longest named component.",
+   "source": "",
+   "fix": "Make all four specific Lightning components: e.g. 'Related List - Single (standard)', 'Related Lists', 'Related List Quick Links', 'Dynamic Related List - Single'; the stem's filter and sort requirement then decides."
+  },
+  {
+   "questionId": "SFAPP-D-051",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): three options are fields 'on Account' and the key is the odd one out.",
+   "source": "",
+   "fix": "Mix structures: e.g. 'Custom object with a lookup to Account', 'Custom fields on Account per visit', 'Related Activities (tasks) on Account', 'Long Text Area on Account'."
+  },
+  {
+   "questionId": "SFAPP-D-058",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): only the key contains 'permission set', echoing the stem.",
+   "source": "",
+   "fix": "Use permission-set-family distractors: 'Permission set license', 'Muting permission set', 'User access policy' (or rewrite the stem so 'permission set' does not cue)."
+  },
+  {
+   "questionId": "SFAPP-D-065",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): key is the only active, process-describing option ('copies the value at close'), mirroring the stem's 'when it closed'.",
+   "source": "",
+   "fix": "Phrase all options as mechanisms: 'Record-triggered flow that writes the field', 'Formula field with PRIORVALUE', 'Roll-up summary with a date filter', 'Default value formula'."
+  },
+  {
+   "questionId": "SFAPP-T1-017",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): the stem says 'no developers' and 'within weeks', so the only no-build option stands out; AgentExchange is also the only branded name.",
+   "source": "https://help.salesforce.com/s/articleView?id=000004937&language=en_US&type=1",
+   "fix": "Give three no-code options: e.g. 'Screen flow with a signature component', 'AgentExchange for an existing app', 'Lightning Object Creator', and keep one coded."
+  },
+  {
+   "questionId": "SFAPP-T1-018",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): the stem's 'without being copied' rules out three options that all copy data; key is the only non-copying one.",
+   "source": "",
+   "fix": "Add non-copying distractors: 'Indirect lookup on Account', 'Web tab to the ERP', 'External Services call in a flow'."
+  },
+  {
+   "questionId": "SFAPP-T1-056",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): key is the only non-picklist/text option; 'users add and retire' points straight at an object.",
+   "source": "",
+   "fix": "Use relationship distractors: 'Master-detail to a Vendor object', 'External lookup to a Vendor object', 'Dependent picklist of vendors'."
+  },
+  {
+   "questionId": "SFAPP-T2-040",
+   "severity": "weak",
+   "issue": "Options-only reviewer found the key from form alone (S hit): distractors are strawmen (scheduled report, escalation rule); key is the only multi-step process tool.",
+   "source": "",
+   "fix": "Use plausible flow tools: 'Screen flow with pause elements', 'Approval process with three steps', 'Scheduled-path record-triggered flow', 'Flow orchestration'."
+  },
+  {
+   "questionId": "SFAPP-T2-058",
+   "severity": "minor",
+   "issue": "Salesforce Help names Lifecycle Center as 'formerly next-generation DevOps Center' and says the rename applies beginning October 2026; the managed-package DevOps Center remains a separate version. Key is right; the explanation's 'formerly DevOps Center' is slightly loose.",
+   "source": "https://help.salesforce.com/s/articleView?language=en_US&id=platform.next_generation_devops_center.htm&type=5",
+   "fix": "Explanation: 'Lifecycle Center (formerly next-generation DevOps Center, renamed in October 2026)'."
+  }
+ ],
+ "landing_findings": [
+  {
+   "questionId": "landing FAQ (pass mark) + WIRING examFacts answer/row + examFreshness date",
+   "severity": "factual-unconfirmed",
+   "issue": "'Refreshed on August 21, 2026' is not on any official Salesforce page found: the exam guide (005298964, indexed text) gives SU '26, 60 scored + up to 5 unscored, 105 min, 73% and weights 18/20/32/17/13 (all confirmed), but no date; Salesforce Admins blog (Aug 27, 2026) only says the exam was refreshed. The date comes from Salesforce Ben, a third party.",
+   "source": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+   "fix": "Hedge to 'refreshed in August 2026 to the Summer '26 release' in the landing FAQ, examFacts answer and 'Exam guide' row; examFreshness date may stay 2026-08-21 as an internal date but cite it as third-party."
+  },
+  {
+   "questionId": "landing/examFacts format",
+   "severity": "ok",
+   "issue": "60 scored + up to 5 unscored, 105 minutes, 73%, 32% Business Logic and Process Automation and the other weights confirmed against the Salesforce Help exam guide 005298964 (indexed text; the page itself is a JS shell).",
+   "source": "https://help.salesforce.com/s/articleView?id=005298964&type=1&language=en_US",
+   "fix": "none"
+  },
+  {
+   "questionId": "AgentExchange (formerly AppExchange)",
+   "severity": "ok",
+   "issue": "Confirmed: appexchange.salesforce.com reads 'Salesforce AppExchange is now AgentExchange'; Salesforce Program Agreement says formerly known as AppExchange.",
+   "source": "https://help.salesforce.com/s/articleView?id=000004937&language=en_US&type=1",
+   "fix": "none"
+  }
+ ]
+}

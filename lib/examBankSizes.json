@@ -21,6 +21,10 @@
   "realestate-az": 140,
   "realestate-tn": 120,
   "realestate-la": 135,
+  "realestate-co": 150,
+  "realestate-md": 110,
+  "realestate-ma": 120,
+  "realestate-mo": 140,
   "insurance-ny": 150,
   "insurance-pa": 150,
   "insurance-il": 150,
@@ -41,6 +45,7 @@
   "pnc-nj": 150,
   "pnc-va": 135,
   "pnc-wa": 150,
+  "frcivique": 240,
   "epa609": 100,
   "realestatebroker": 200,
   "frvtc": 200,
@@ -344,5 +349,12 @@
   "inbde": 200,
   "cabcguard": 200,
   "caabguard": 200,
-  "caairbrake": 200
+  "caairbrake": 200,
+  "nailtech": 200,
+  "carscook": 200,
+  "carshair": 200,
+  "cadronebasic": 200,
+  "cahambasic": 200,
+  "ea2": 200,
+  "ea3": 200
 }

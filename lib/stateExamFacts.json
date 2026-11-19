@@ -30,6 +30,52 @@
    }
   ]
  },
+ "realestate-co": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Colorado Real Estate Commission and Division of Real Estate (DORA)"
+   },
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC, under contract with the Division",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/2598"
+   },
+   {
+    "label": "Exam structure",
+    "value": "Two parts, a national (general) portion and a Colorado (state) portion"
+   },
+   {
+    "label": "National portion",
+    "value": "80 items, 60 correct to pass, 120 minutes"
+   },
+   {
+    "label": "Colorado portion",
+    "value": "74 items, 53 correct to pass, 110 minutes"
+   },
+   {
+    "label": "Experimental items",
+    "value": "5 to 10 unscored items may be added; they count against time"
+   },
+   {
+    "label": "Parts scored separately",
+    "value": "Yes; a failed part may be retaken alone"
+   },
+   {
+    "label": "Score validity",
+    "value": "A passing score on either part is valid one year; apply within one year"
+   },
+   {
+    "label": "Prelicense education",
+    "value": "168 hours: 48 law and practice, 48 Colorado contracts, 72 trust accounts, closings, legal issues, practical applications"
+   },
+   {
+    "label": "CE and reciprocal use",
+    "value": "CE and reciprocal candidates take only the 74-item state portion"
+   }
+  ]
+ },
  "realestate-fl": {
   "accessed": "2026-10-17",
   "rows": [
@@ -172,6 +218,92 @@
    }
   ]
  },
+ "realestate-ma": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Massachusetts Board of Registration of Real Estate Brokers and Salespersons (Division of Occupational Licensure)"
+   },
+   {
+    "label": "Vendor and handbook",
+    "value": "PSI, \"Examination Candidate Information Bulletin (CIB)\", updated 06/12/2025 (no form number printed)",
+    "url": "https://www.mass.gov/doc/psi-candidate-information-bulletin/download"
+   },
+   {
+    "label": "Outline",
+    "value": "\"Examination Content Outlines for Salesperson and Broker\" in the same bulletin (pp. 15-18): PSI general portion by percent, state portion with item counts; no separate effective date printed"
+   },
+   {
+    "label": "Format",
+    "value": "Salesperson: general 80 scored items, 150 minutes; state 40 scored items, 90 minutes; both 120 items, 240 minutes"
+   },
+   {
+    "label": "Pretest",
+    "value": "5 to 10 unscored experimental questions that count against exam time"
+   },
+   {
+    "label": "Pass",
+    "value": "Minimum 70% to pass; general and state portions are passed separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed portion; it must be passed within 2 years of the education certificate date, or both portions are retaken"
+   },
+   {
+    "label": "Education",
+    "value": "40 classroom hours of approved courses before the exam; certificate valid 24 months"
+   }
+  ]
+ },
+ "realestate-md": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Regulator",
+    "value": "Maryland Real Estate Commission (MREC), Maryland Department of Labor",
+    "url": "https://labor.maryland.gov/license/mrec/mrecexam.shtml"
+   },
+   {
+    "label": "Vendor and bulletin",
+    "value": "PSI Services LLC, \"State of Maryland Real Estate Commission Candidate Information Bulletin\", (c) 2024, updated 8/15/2024 (no form number printed)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/528"
+   },
+   {
+    "label": "Outline",
+    "value": "National portion: PSI salesperson outline by percent; Maryland state portion with item counts; both approved by MREC. No separate outline date printed"
+   },
+   {
+    "label": "Format (salesperson)",
+    "value": "National 80 items, 90 minutes; State 30 items, 30 minutes; both 110 items, 120 minutes"
+   },
+   {
+    "label": "Experimental items",
+    "value": "1 to 10 unscored items, about 10% of the form, counted against exam time"
+   },
+   {
+    "label": "Pass",
+    "value": "56 of 80 national and 21 of 30 state (70% on each portion); parts scored separately"
+   },
+   {
+    "label": "Retakes",
+    "value": "Retake only the failed portion; no limit on retakes; both portions within 1 year of course completion or retake the course"
+   },
+   {
+    "label": "After passing",
+    "value": "Apply for the license within 1 year of passing or the score expires"
+   },
+   {
+    "label": "Education",
+    "value": "60 clock-hour prelicensing course including a 3 clock-hour ethics course; 15 CE hours each 2-year term"
+   },
+   {
+    "label": "Exam fee",
+    "value": "Not tested. MREC page says $44 paid to PSI",
+    "url": "https://labor.maryland.gov/license/mrec/mrecexam.shtml"
+   }
+  ]
+ },
  "realestate-mi": {
   "accessed": "2026-10-18",
   "rows": [
@@ -211,6 +343,49 @@
    {
     "label": "Exam fee",
     "value": "$79"
+   }
+  ]
+ },
+ "realestate-mo": {
+  "accessed": "2026-11-18",
+  "rows": [
+   {
+    "label": "Vendor",
+    "value": "PSI Services LLC",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/6274"
+   },
+   {
+    "label": "Handbook",
+    "value": "Missouri Real Estate Commission Real Estate Candidate Handbook, copyright 2024, dated 7/18/2024 (bulletin 6274; bulletin 4673 is the same text)",
+    "url": "https://test-takers.psiexams.com/api/content/bulletin/6274"
+   },
+   {
+    "label": "National portion",
+    "value": "100 items (100 points), 150 minutes, 70% to pass"
+   },
+   {
+    "label": "State portion",
+    "value": "40 items (40 points), 120 minutes, 75% to pass"
+   },
+   {
+    "label": "Pretest",
+    "value": "5 to 10 unscored experimental questions may be added; they count against time"
+   },
+   {
+    "label": "Pass and retakes",
+    "value": "Portions scored separately; a failed candidate may retake one or both portions"
+   },
+   {
+    "label": "Education",
+    "value": "48-hour Salesperson Pre-Examination Course before the exam; 24-hour Missouri Real Estate Practice Course before applying"
+   },
+   {
+    "label": "Apply after passing",
+    "value": "Within six months of completing the 48-hour course; course and exam credit then expire"
+   },
+   {
+    "label": "Other-state licensees",
+    "value": "State portion only plus the 24-hour practice course; 48-hour course waived"
    }
   ]
  },

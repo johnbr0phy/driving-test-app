@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake";
+export type ExamId = "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -8895,6 +8895,77 @@ const realestatebroker: ExamConfig = {
 // 91 QCM + 16 QRC, 230 minutes; weighted mean >=10/20 with section minima 6/20
 // (English 4/20). This single-answer practice omits QRC production, section scoring
 // and the separate practical assessment. 70% is a study target, not a mark conversion.
+const frcivique: ExamConfig = {
+  id: "frcivique",
+  stateCode: "FRCIVIQUE",
+  idBase: 34400,
+  slug: "/examen-civique",
+  landingPath: "/fr/examen-civique-test",
+  name: "Examen civique",
+  shortName: "Examen civique",
+  examLabel: "Examen civique",
+  fullName: "Examen civique : carte de séjour pluriannuelle, carte de résident et naturalisation",
+  questionIdPrefix: "FRCIV-",
+  icon: "flag",
+  testCount: 6,
+  questionsPerTest: 40,
+  passPct: 80,
+  language: "fr",
+  locale: "fr-FR",
+  english: {
+    name: "French Civic Exam (Examen civique)",
+    shortName: "French civic exam",
+    fullName: "France's examen civique for multi-year residence cards, resident cards and naturalisation, in French",
+  },
+  review: { fr: "model" },
+  // Arrêté du 10 octobre 2025: 40 QCM in 45 minutes, 28 knowledge + 12 situations, 80% for all
+  // three mentions. Each test follows the official split. Pools are written in six blocks, so
+  // tests 1-2 are at about A2 (carte de séjour pluriannuelle), 3-4 B1 (carte de résident) and
+  // 5-6 B2 (naturalisation). Built by tools/next20/frcivique/build.py.
+  blueprint: {
+    frciviquePrincipes: 5,
+    frciviquePrincipesSit: 6,
+    frciviqueInstitutions: 6,
+    frciviqueDroits: 5,
+    frciviqueDroitsSit: 6,
+    frciviqueHistoire: 8,
+    frciviqueVivre: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 34401, name: "Devise, symboles et laïcité", categories: ["frciviquePrincipes"], size: 30, weightLabel: "5 questions sur 40 par test" },
+    { setNumber: 2, id: 34402, name: "Principes et valeurs en situation", categories: ["frciviquePrincipesSit"], size: 36, weightLabel: "6 questions sur 40 par test" },
+    { setNumber: 3, id: 34403, name: "Institutions et vie politique", categories: ["frciviqueInstitutions"], size: 36, weightLabel: "6 questions sur 40 par test" },
+    { setNumber: 4, id: 34404, name: "Droits et devoirs", categories: ["frciviqueDroits"], size: 30, weightLabel: "5 questions sur 40 par test" },
+    { setNumber: 5, id: 34405, name: "Droits et devoirs en situation", categories: ["frciviqueDroitsSit"], size: 36, weightLabel: "6 questions sur 40 par test" },
+    { setNumber: 6, id: 34406, name: "Histoire, géographie et culture", categories: ["frciviqueHistoire"], size: 48, weightLabel: "8 questions sur 40 par test" },
+    { setNumber: 7, id: 34407, name: "Vivre en France", categories: ["frciviqueVivre"], size: 24, weightLabel: "4 questions sur 40 par test" },
+  ],
+  categoryLabels: {
+    frciviquePrincipes: "Devise, symboles et laïcité",
+    frciviquePrincipesSit: "Principes et valeurs en situation",
+    frciviqueInstitutions: "Institutions et vie politique",
+    frciviqueDroits: "Droits et devoirs",
+    frciviqueDroitsSit: "Droits et devoirs en situation",
+    frciviqueHistoire: "Histoire, géographie et culture",
+    frciviqueVivre: "Vivre en France",
+  },
+  copy: {
+    guestPrompt: "pour enregistrer tes progrès et retrouver les questions à revoir",
+    trainingHeading: "Séries d'entraînement",
+    trainingSub: "Travaille les thèmes à ton rythme. Chaque réponse est expliquée et les questions ratées reviennent jusqu'à ce que tu les maîtrises.",
+    testsHeading: "Tests d'entraînement · 40 questions en 45 minutes, 32 bonnes réponses pour réussir",
+    heroSubs: [
+      "Sept séries et six tests. Commence par la devise, les symboles et la laïcité.",
+      "Termine les séries, puis fais le test 1 pour repérer les points à revoir.",
+      "Les tests 3 et 4 sont au niveau de la carte de résident.",
+      "Les tests 5 et 6 sont au niveau de la naturalisation. Vise plus de 32 sur 40.",
+      "Toutes les étapes sont terminées. Inscris-toi dans un centre agréé.",
+    ],
+    sourceLine: "Questions originales fondées sur l'arrêté du 10 octobre 2025 et les fiches officielles de formation-civique.interieur.gouv.fr, consultés le 18 novembre 2026. Tigertest est indépendant du ministère de l'Intérieur.",
+    analyticsKey: "frcivique",
+  },
+};
+
 const frvtc: ExamConfig = {
   id: "frvtc",
   stateCode: "FRVTC",
@@ -10140,6 +10211,224 @@ const realestateLA: ExamConfig = {
       "All done. Go schedule your Pearson VUE exam.",
     ],
     sourceLine: "Source-checked practice on the Pearson VUE Louisiana outlines (national Apr 2025, state Sept 2021). Not affiliated with the LREC or Pearson VUE; confirm rules in official LREC materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateCO: ExamConfig = {
+  id: "realestate-co",
+  variantOf: "realestate",
+  jurisdiction: { code: "CO", name: "Colorado" },
+  stateCode: "REALESTATE_CO",
+  idBase: 40200,
+  slug: "/real-estate/co",
+  landingPath: "/real-estate-practice-test",
+  name: "Colorado Real Estate Practice Test",
+  shortName: "CO Real Estate",
+  examLabel: "Colorado Broker",
+  fullName: "Colorado real estate broker exam",
+  questionIdPrefix: "RECO-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 150,
+  passPct: 75,
+  // PSI Colorado candidate information bulletin (October 2023): 78 national and 72 state scored items. Built by
+  // tools/build_state_variant.py from docs/re-state-sources/co-national.json and
+  // co-state-items.json, sources in docs/re-state-sources/co.md. ID block 40200.
+  blueprint: {
+    rePropertyCharacteristics: 11,
+    reOwnershipTitle: 9,
+    reValuation: 6,
+    reContractsAgency: 44,
+    rePractice: 51,
+    reDisclosures: 11,
+    reFinancing: 13,
+    reMath: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40201, name: "Property, Title & Disclosures", categories: ["rePropertyCharacteristics", "reOwnershipTitle", "reDisclosures"], size: 31, weightLabel: "21% of the practice exam" },
+    { setNumber: 2, id: 40202, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 44, weightLabel: "29% of the practice exam" },
+    { setNumber: 3, id: 40203, name: "License Law & Practice", categories: ["rePractice"], size: 51, weightLabel: "34% of the practice exam" },
+    { setNumber: 4, id: 40204, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 24, weightLabel: "16% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Colorado real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 150 source-checked questions for Colorado, national topics plus forms, closings, trust accounts and brokerage relationships. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 150 questions, 78 national and 72 Colorado",
+    heroSubs: [
+      "National topics plus Colorado rules.",
+      "Master each set, then take the full exam.",
+      "Keep going. Take the full test to see where you stand.",
+      "Review your mistakes, then retake the test. The national part needs 75%.",
+      "All done. Go schedule your PSI exam.",
+    ],
+    sourceLine: "Source-checked practice on the PSI Colorado candidate information bulletin (October 2023). Not affiliated with the Colorado Division of Real Estate or PSI; confirm rules in official Colorado Division of Real Estate materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateMD: ExamConfig = {
+  id: "realestate-md",
+  variantOf: "realestate",
+  jurisdiction: { code: "MD", name: "Maryland" },
+  stateCode: "REALESTATE_MD",
+  idBase: 40150,
+  slug: "/real-estate/md",
+  landingPath: "/real-estate-practice-test",
+  name: "Maryland Real Estate Practice Test",
+  shortName: "MD Real Estate",
+  examLabel: "Maryland Salesperson",
+  fullName: "Maryland real estate salesperson exam",
+  questionIdPrefix: "REMD-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 110,
+  passPct: 70,
+  // PSI Maryland candidate information bulletin (August 2024): 80 national and 30 state scored items. Built by
+  // tools/build_state_variant.py from docs/re-state-sources/md-national.json and
+  // md-state-items.json, sources in docs/re-state-sources/md.md. ID block 40150.
+  blueprint: {
+    rePropertyCharacteristics: 9,
+    reOwnershipTitle: 8,
+    reValuation: 6,
+    reContractsAgency: 29,
+    rePractice: 36,
+    reDisclosures: 7,
+    reFinancing: 9,
+    reMath: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40151, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 17, weightLabel: "15% of the practice exam" },
+    { setNumber: 2, id: 40152, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 29, weightLabel: "26% of the practice exam" },
+    { setNumber: 3, id: 40153, name: "License Law, Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 43, weightLabel: "39% of the practice exam" },
+    { setNumber: 4, id: 40154, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 21, weightLabel: "19% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Maryland real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 110 source-checked questions for Maryland, national topics plus license law, brokerage relationships and supervision. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 110 questions, 80 national and 30 Maryland",
+    heroSubs: [
+      "National topics plus Maryland rules.",
+      "Master each set, then take the full exam.",
+      "Keep going. Take the full test to see where you stand.",
+      "Review your mistakes, then retake the test. 70% passes each part.",
+      "All done. Go schedule your PSI exam.",
+    ],
+    sourceLine: "Source-checked practice on the PSI Maryland candidate information bulletin (August 2024). Not affiliated with the Maryland Real Estate Commission or PSI; confirm rules in official Maryland Real Estate Commission materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateMA: ExamConfig = {
+  id: "realestate-ma",
+  variantOf: "realestate",
+  jurisdiction: { code: "MA", name: "Massachusetts" },
+  stateCode: "REALESTATE_MA",
+  idBase: 40050,
+  slug: "/real-estate/ma",
+  landingPath: "/real-estate-practice-test",
+  name: "Massachusetts Real Estate Practice Test",
+  shortName: "MA Real Estate",
+  examLabel: "Massachusetts Salesperson",
+  fullName: "Massachusetts real estate salesperson exam",
+  questionIdPrefix: "REMA-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 120,
+  passPct: 70,
+  // PSI Massachusetts candidate information bulletin (June 2025): 80 national and 40 state scored items. Built by
+  // tools/build_state_variant.py from docs/re-state-sources/ma-national.json and
+  // ma-state-items.json, sources in docs/re-state-sources/ma.md. ID block 40050.
+  blueprint: {
+    rePropertyCharacteristics: 11,
+    reOwnershipTitle: 9,
+    reValuation: 6,
+    reContractsAgency: 32,
+    rePractice: 32,
+    reDisclosures: 16,
+    reFinancing: 8,
+    reMath: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40051, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 20, weightLabel: "17% of the practice exam" },
+    { setNumber: 2, id: 40052, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 32, weightLabel: "27% of the practice exam" },
+    { setNumber: 3, id: 40053, name: "License Law, Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 48, weightLabel: "40% of the practice exam" },
+    { setNumber: 4, id: 40054, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 20, weightLabel: "17% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Massachusetts real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 120 source-checked questions for Massachusetts, national topics plus license law, consumer protection and landlord-tenant law. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 120 questions, 80 national and 40 Massachusetts",
+    heroSubs: [
+      "National topics plus Massachusetts rules.",
+      "Master each set, then take the full exam.",
+      "Keep going. Take the full test to see where you stand.",
+      "Review your mistakes, then retake the test. 70% passes each part.",
+      "All done. Go schedule your PSI exam.",
+    ],
+    sourceLine: "Source-checked practice on the PSI Massachusetts candidate information bulletin (June 2025). Not affiliated with the Massachusetts Board of Real Estate Brokers and Salespersons or PSI; confirm rules in official Massachusetts Board of Real Estate Brokers and Salespersons materials.",
+    analyticsKey: "realestate",
+  },
+};
+
+const realestateMO: ExamConfig = {
+  id: "realestate-mo",
+  variantOf: "realestate",
+  jurisdiction: { code: "MO", name: "Missouri" },
+  stateCode: "REALESTATE_MO",
+  idBase: 40000,
+  slug: "/real-estate/mo",
+  landingPath: "/real-estate-practice-test",
+  name: "Missouri Real Estate Practice Test",
+  shortName: "MO Real Estate",
+  examLabel: "Missouri Salesperson",
+  fullName: "Missouri real estate salesperson exam",
+  questionIdPrefix: "REMO-",
+  icon: "house",
+  testCount: 1,
+  questionsPerTest: 140,
+  passPct: 75,
+  // PSI Missouri candidate handbook (7/18/2024): 100 national items (70% to pass) and 40
+  // state items (75% to pass), scored separately; the practice form uses the stricter 75.
+  // Built by tools/build_state_variant.py from docs/re-state-sources/mo-national.json and
+  // mo-state-items.json, sources in docs/re-state-sources/mo.md. ID block 40000, the first
+  // of the 40000 to 41750 range reserved for the remaining salesperson states.
+  blueprint: {
+    rePropertyCharacteristics: 11,
+    reOwnershipTitle: 11,
+    reValuation: 8,
+    reContractsAgency: 41,
+    rePractice: 43,
+    reDisclosures: 9,
+    reFinancing: 10,
+    reMath: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40001, name: "Property, Ownership & Title", categories: ["rePropertyCharacteristics", "reOwnershipTitle"], size: 22, weightLabel: "16% of the practice exam" },
+    { setNumber: 2, id: 40002, name: "Contracts & Agency", categories: ["reContractsAgency"], size: 41, weightLabel: "29% of the practice exam" },
+    { setNumber: 3, id: 40003, name: "License Law, Practice & Disclosures", categories: ["rePractice", "reDisclosures"], size: 52, weightLabel: "37% of the practice exam" },
+    { setNumber: 4, id: 40004, name: "Valuation, Financing & Math", categories: ["reValuation", "reFinancing", "reMath"], size: 25, weightLabel: "18% of the practice exam" },
+  ],
+  categoryLabels: realestate.categoryLabels,
+  copy: {
+    guestPrompt: "to save your Missouri real estate progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets with 140 source-checked questions for Missouri, national topics plus license law, brokerage relationships and commission rules. Missed questions come back until you master them.",
+    testsHeading: "Full-length practice exam \u00b7 140 questions, 100 national and 40 Missouri",
+    heroSubs: [
+      "National topics plus Missouri rules.",
+      "Master each set, then take the full exam.",
+      "Keep going. Take the full test to see where you stand.",
+      "Review your mistakes, then retake the test. The state part needs 75%.",
+      "All done. Go schedule your PSI exam.",
+    ],
+    sourceLine: "Source-checked practice on the PSI Missouri candidate handbook (July 2024). Not affiliated with the MREC or PSI; confirm rules in official MREC materials.",
     analyticsKey: "realestate",
   },
 };
@@ -23203,11 +23492,498 @@ const smartserve: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake];
+const nailtech: ExamConfig = {
+  id: "nailtech",
+  stateCode: "NAILTECH",
+  idBase: 34500,
+  slug: "/nail-technician",
+  landingPath: "/nail-technician-practice-test",
+  name: "Nail Technician Practice Test",
+  shortName: "Nail Tech",
+  examLabel: "Nail technician state board",
+  fullName: "NIC National Nail Technology Theory Examination",
+  questionIdPrefix: "NAIL-",
+  icon: "sparkles",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // NIC National Nail Technology Theory Examination CIB, effective September 1, 2025, revised
+  // March 1, 2026: 110 items, 100 scored, 90 minutes. Infection Control and Safety 15%, Anatomy
+  // and Physiology 15% (split here into structure 4 and disorders 4), Chemistry of Nail Products
+  // 10%, Pre-service 5% + Post-service 4% (consultation 4), Nail Service Tools 13%, Manicure and
+  // Pedicure Services 18%, Nail Enhancement Services 20%. Each board sets its pass mark
+  // (75 in many, e.g. South Carolina). References: Milady Standard Nail
+  // Technology 8th ed., Pivot Point Fundamentals: Nails. All items original.
+  blueprint: {
+    nailInfection: 8,
+    nailStructure: 4,
+    nailDisorders: 4,
+    nailChemistry: 5,
+    nailConsult: 4,
+    nailTools: 6,
+    nailManiPedi: 9,
+    nailEnhance: 10,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 34501, name: "Infection Control & Chemistry", categories: ["nailInfection", "nailChemistry"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 34502, name: "Anatomy, Disorders & Consultation", categories: ["nailStructure", "nailDisorders", "nailConsult"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 34503, name: "Tools, Manicures & Pedicures", categories: ["nailTools", "nailManiPedi"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 34504, name: "Nail Enhancements", categories: ["nailEnhance"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nailInfection: "Infection Control & Safety",
+    nailStructure: "Nail, Skin & Limb Anatomy",
+    nailDisorders: "Nail & Skin Disorders",
+    nailChemistry: "Chemistry of Nail Products",
+    nailConsult: "Consultation & Post-Service",
+    nailTools: "Nail Service Tools",
+    nailManiPedi: "Manicures & Pedicures",
+    nailEnhance: "Nail Enhancements",
+  },
+  copy: {
+    guestPrompt: "to save your nail tech exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the NIC nail technology theory outline: infection control and chemistry; anatomy, disorders and consultation; tools, manicures and pedicures; and nail enhancements. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the NIC proportions, 75% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Infection Control & Chemistry.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go pass your state board.",
+    ],
+    sourceLine: "Based on the NIC National Nail Technology Theory Examination outline (bulletin effective September 1, 2025: 110 items, 100 scored, 90 minutes). Original questions. Some states use a different exam; check your board. Not affiliated with NIC.",
+    analyticsKey: "nailtech",
+  },
+};
+
+const ea2: ExamConfig = {
+  id: "ea2",
+  stateCode: "EA2",
+  idBase: 34600,
+  slug: "/enrolled-agent-part-2",
+  landingPath: "/enrolled-agent-part-2-practice-test",
+  name: "Enrolled Agent Part 2 Practice Test",
+  shortName: "EA Exam Part 2",
+  examLabel: "SEE Part 2",
+  fullName: "IRS Special Enrollment Examination (SEE) Part 2: Businesses",
+  questionIdPrefix: "EA2-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // IRS SEE Candidate Information Bulletin (PSI), revised October 9, 2026, Part 2 content outline:
+  // 85 scored of 100 questions in 3.5 hours. Domains of 85: Business Entities and Considerations
+  // 30, Business Tax Preparation 37, Specialized Returns and Taxpayers 18. Scaled to 50 as
+  // 18/22/10 (Tigertest's rounding) and split by Tigertest into eight topic categories:
+  // entities 4, partnerships 6, C and S corporations 8; income and expenses 9, assets 6,
+  // records, methods and advising 7; trusts, estates and exempt organizations 5; retirement
+  // plans, farmers and rentals 5. The July 1, 2026 to February 28, 2027 window tests calendar
+  // year 2025 (law as amended through December 31, 2025). The real result is scaled 200 to 800
+  // with 500 to pass; 70% is a readiness marker. All items original.
+  blueprint: {
+    ea2Entities: 4,
+    ea2Partnerships: 6,
+    ea2Corporations: 8,
+    ea2Income: 9,
+    ea2Assets: 6,
+    ea2Records: 7,
+    ea2Trusts: 5,
+    ea2Retirement: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 34601, name: "Business Entities & Partnerships", categories: ["ea2Entities", "ea2Partnerships"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 34602, name: "C & S Corporations", categories: ["ea2Corporations"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 34603, name: "Business Income & Expenses", categories: ["ea2Income"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 34604, name: "Assets, Records & Advising", categories: ["ea2Assets", "ea2Records"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 34605, name: "Specialized Returns & Taxpayers", categories: ["ea2Trusts", "ea2Retirement"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ea2Entities: "Business Entities & Elections",
+    ea2Partnerships: "Partnerships",
+    ea2Corporations: "C & S Corporations",
+    ea2Income: "Business Income & Expenses",
+    ea2Assets: "Business Assets & Depreciation",
+    ea2Records: "Records, Methods & Advising",
+    ea2Trusts: "Trusts, Estates & Exempt Orgs",
+    ea2Retirement: "Retirement, Farmers & Rentals",
+  },
+  copy: {
+    guestPrompt: "to save your Enrolled Agent Part 2 progress and track every question you miss",
+    trainingHeading: "Train by IRS Part 2 topic",
+    trainingSub: "Five sets covering all three domains of the IRS Part 2 outline, on 2025 tax law. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Business Entities & Partnerships.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for SEE Part 2.",
+    ],
+    sourceLine: "Based on the IRS SEE Part 2 content outline and 2025 tax law. Original questions; 50 per test, weighted like the real exam. Not affiliated with the IRS or PSI.",
+    analyticsKey: "ea2",
+  },
+};
+
+const ea3: ExamConfig = {
+  id: "ea3",
+  stateCode: "EA3",
+  idBase: 34700,
+  slug: "/enrolled-agent-part-3",
+  landingPath: "/enrolled-agent-part-3-practice-test",
+  name: "Enrolled Agent Part 3 Practice Test",
+  shortName: "EA Exam Part 3",
+  examLabel: "SEE Part 3",
+  fullName: "IRS Special Enrollment Examination (SEE) Part 3: Representation, Practices and Procedures",
+  questionIdPrefix: "EA3-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // IRS SEE Candidate Information Bulletin (PSI), revised October 9, 2026, Part 3 content outline:
+  // 85 scored of 100 questions in 3.5 hours. Domains of 85: Practices and Procedures 26,
+  // Representation before the IRS 25, Specific Areas of Representation 20, Filing Process 14.
+  // Scaled to 50: 15/15/12/8, split as Practice 9 + Sanctions 6, Power of Attorney 7 + Case 8,
+  // Collection 7 + Exam 5, Filing 8 (Tigertest's split inside each domain). The July 1, 2026 to
+  // February 28, 2027 window uses law as amended through December 31, 2025. The real result is
+  // scaled 200 to 800 with 500 to pass; 70% is a readiness marker. All items original.
+  blueprint: {
+    ea3Practice: 9,
+    ea3Sanctions: 6,
+    ea3Poa: 7,
+    ea3Case: 8,
+    ea3Collection: 7,
+    ea3Exam: 5,
+    ea3Filing: 8,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 34701, name: "Practices & Procedures", categories: ["ea3Practice", "ea3Sanctions"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 34702, name: "Representation Before the IRS", categories: ["ea3Poa", "ea3Case"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 34703, name: "Collections, Audits & Appeals", categories: ["ea3Collection", "ea3Exam"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 34704, name: "Filing Process", categories: ["ea3Filing"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ea3Practice: "Practice Before the IRS",
+    ea3Sanctions: "Sanctions & Penalties",
+    ea3Poa: "Power of Attorney & Disclosure",
+    ea3Case: "Building the Taxpayer's Case",
+    ea3Collection: "Collection & Abatement",
+    ea3Exam: "Examinations & Appeals",
+    ea3Filing: "Filing Process & E-file",
+  },
+  copy: {
+    guestPrompt: "to save your Enrolled Agent Part 3 progress and track every question you miss",
+    trainingHeading: "Train by IRS Part 3 domain",
+    trainingSub: "Four sets covering all four domains of the IRS Part 3 outline: Circular 230, representation, collections, audits and appeals, and e-file. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Practices & Procedures.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for SEE Part 3.",
+    ],
+    sourceLine: "Based on the IRS SEE Part 3 content outline and Circular 230. Original questions; 50 per test, weighted like the real exam. Not affiliated with the IRS or PSI.",
+    analyticsKey: "ea3",
+  },
+};
+// IDs: tests 34701-34704, sets 34701-34704 (block 34700 assigned for this run).
+
+const cahambasic: ExamConfig = {
+  id: "cahambasic",
+  stateCode: "CAHAM",
+  idBase: 34800,
+  slug: "/canada-amateur-radio-basic",
+  landingPath: "/canada-amateur-radio-basic-practice-test",
+  name: "Canadian Amateur Radio Basic Practice Test",
+  shortName: "Canada Amateur Radio Basic",
+  examLabel: "amateur radio Basic exam",
+  fullName: "Amateur Radio Operator Certificate with Basic Qualification (ISED)",
+  questionIdPrefix: "CAHAM-",
+  icon: "radio",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ISED RIC-3 Issue 5 (March 2022, current in November 2026), section 5.1: 100 questions, one from
+  // each of 100 topics in eight sections: Regulations and Policies 25, Operating and Procedures 9,
+  // Station Assembly, Practice and Safety 21, Circuit Components 6, Basic Electronics and Theory 13,
+  // Feedlines and Antenna Systems 13, Radio Wave Propagation 8, Interference and Suppression 5.
+  // Halved to 50 per test: section 1 split into licensing (7) and bands/technical rules (6),
+  // section 3 into station layout (7) and power/safety (4). Pass 70%, Honours 80% (RIC-1 Issue 8).
+  // Rules from RBR-4 Issue 3, the Radiocommunication Regulations and Act; formulas and block diagrams
+  // from ISED's May 2025 reference material. All items original; ISED's question bank is never used.
+  blueprint: {
+    cahamRegs: 7,
+    cahamBands: 6,
+    cahamOperating: 4,
+    cahamStation: 7,
+    cahamPowerSafety: 4,
+    cahamComponents: 3,
+    cahamElectronics: 6,
+    cahamAntennas: 6,
+    cahamPropagation: 4,
+    cahamInterference: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 34801, name: "Regulations & Bands", categories: ["cahamRegs", "cahamBands"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 34802, name: "Operating & Station Layout", categories: ["cahamOperating", "cahamStation"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 34803, name: "Electronics, Components & Safety", categories: ["cahamPowerSafety", "cahamComponents", "cahamElectronics"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 34804, name: "Antennas, Propagation & Interference", categories: ["cahamAntennas", "cahamPropagation", "cahamInterference"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cahamRegs: "Regulations & Licensing",
+    cahamBands: "Bands, Power & Technical Rules",
+    cahamOperating: "Operating & Procedures",
+    cahamStation: "Station Layout, Transmitters & Receivers",
+    cahamPowerSafety: "Power Supplies & Safety",
+    cahamComponents: "Circuit Components",
+    cahamElectronics: "Basic Electronics & Theory",
+    cahamAntennas: "Feed Lines & Antennas",
+    cahamPropagation: "Radio Wave Propagation",
+    cahamInterference: "Interference & Suppression",
+  },
+  copy: {
+    guestPrompt: "to save your amateur radio progress and track every question you miss",
+    trainingHeading: "Train by syllabus section",
+    trainingSub: "Four sets covering the eight sections of ISED's Basic syllabus. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Regulations & Bands.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your Basic exam.",
+    ],
+    sourceLine: "Based on ISED's Basic syllabus (RIC-3), RBR-4, the Radiocommunication Regulations and ISED's formula and block diagram sheet. Original questions; 50 per test, weighted like the real exam. Not affiliated with ISED.",
+    analyticsKey: "cahambasic",
+  },
+};
+
+const cadronebasic: ExamConfig = {
+  id: "cadronebasic",
+  stateCode: "CADRONE",
+  idBase: 35000,
+  slug: "/canada-drone-basic",
+  landingPath: "/canada-drone-basic-exam-practice-test",
+  name: "Canada Drone Basic Exam Practice Test",
+  shortName: "Drone Basic (Canada)",
+  examLabel: "Small Basic Exam",
+  fullName: "Transport Canada Small Basic Exam (Pilot Certificate - Basic Operations)",
+  questionIdPrefix: "CADRONE-",
+  icon: "plane",
+  testCount: 5,
+  questionsPerTest: 35,
+  passPct: 65,
+  // Transport Canada Small Basic Exam page (modified 2025-11-04, checked 2026-11-18): 35 multiple-
+  // choice questions, 90 minutes, 65% to pass, age 14, questions based on TP 15263 (Fourth Edition,
+  // 03/2025). TC publishes no per-topic counts; these follow the topics TP 15263 marks "Basic":
+  // air law and registration 5, Part IX operating rules 6, airspace and aerodromes 5, RPAS systems
+  // 4, human factors 4, meteorology 4, navigation and time 3, flight operations and theory of
+  // flight 4. Five real-length tests; pools are 5x each count plus 25 training-only spares.
+  // passPct 65 = ceil(0.65 * 35) = 23. Rules as in force on 2026-11-18, after SOR/2025-70 (in force
+  // 1 April and 4 November 2025). All items original.
+  blueprint: {
+    cdrLaw: 5,
+    cdrRules: 6,
+    cdrAirspace: 5,
+    cdrSystems: 4,
+    cdrHuman: 4,
+    cdrWeather: 4,
+    cdrNav: 3,
+    cdrFlightOps: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 35001, name: "Air Law & Airspace", categories: ["cdrLaw", "cdrAirspace"], size: 56, weightLabel: "10 of 35 test questions" },
+    { setNumber: 2, id: 35002, name: "Operating Rules & Navigation", categories: ["cdrRules", "cdrNav"], size: 50, weightLabel: "9 of 35 test questions" },
+    { setNumber: 3, id: 35003, name: "Drone Systems & Weather", categories: ["cdrSystems", "cdrWeather"], size: 48, weightLabel: "8 of 35 test questions" },
+    { setNumber: 4, id: 35004, name: "Human Factors & Flight Ops", categories: ["cdrHuman", "cdrFlightOps"], size: 46, weightLabel: "8 of 35 test questions" },
+  ],
+  categoryLabels: {
+    cdrLaw: "Air Law, Registration & Certificates",
+    cdrRules: "General Operating Rules",
+    cdrAirspace: "Airspace & Aerodromes",
+    cdrSystems: "Drone Systems & Batteries",
+    cdrHuman: "Human Factors",
+    cdrWeather: "Meteorology",
+    cdrNav: "Navigation, Charts & Time",
+    cdrFlightOps: "Flight Operations & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your drone exam progress and track every question you miss",
+    trainingHeading: "Train by TP 15263 topic",
+    trainingSub: "Four sets covering every topic Transport Canada marks for basic operations: air law and airspace, operating rules and navigation, drone systems and weather, and human factors and flight operations. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 35 questions like the real Small Basic Exam",
+    heroSubs: [
+      "Four training sets, five real-length mock exams. Start with Air Law & Airspace.",
+      "Master each set, then take a mock exam.",
+      "Keep going. Take a mock exam to see where you stand.",
+      "Review your mistakes, then retake any mock exam you haven't passed.",
+      "All done. Book your Small Basic Exam in the Drone Management Portal.",
+    ],
+    sourceLine: "Based on CARs Part IX, TP 15263 and the TC AIM. Original questions; 35 per test like the real exam. Not affiliated with Transport Canada.",
+    analyticsKey: "cadronebasic",
+  },
+};
+// IDs: tests 35001-35005, sets 35001-35004 (block 35000 assigned for this run).
+
+const carscook: ExamConfig = {
+  id: "carscook",
+  stateCode: "CACOOK",
+  idBase: 34900,
+  slug: "/red-seal-cook",
+  landingPath: "/red-seal-cook-practice-test",
+  name: "Red Seal Cook Practice Test",
+  shortName: "Red Seal Cook",
+  examLabel: "Red Seal Cook exam",
+  fullName: "Red Seal Cook interprovincial exam (415A in Ontario)",
+  questionIdPrefix: "CACOOK-",
+  icon: "chef",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Cook exam breakdown (red-seal.ca exam information and weightings, Red Seal
+  // Occupational Standard for Cook 2020; checked 2026-11-18): 150 four-option questions, 4 hours,
+  // 70%. MWA A hygiene, sanitation and safety 13, B common occupational skills 11, C produce 12,
+  // D stocks, broths and soups 12, E sauces 13, F cheese, dairy and eggs 10, G pastas, noodles and
+  // dumplings 10, H grains, pulses, seeds, nuts and alternative proteins 11, I meats, game,
+  // poultry and variety meats 16, J fish and seafood 15, K salads and sandwiches 9, L specialty
+  // preparation 8, M baked goods and desserts 10. Scaled to 50 by largest remainder. Food safety
+  // figures from Health Canada; provincial food premises rules are not asked.
+  blueprint: {
+    rscookSafety: 5,
+    rscookSkills: 4,
+    rscookProduce: 4,
+    rscookStocks: 4,
+    rscookSauces: 4,
+    rscookDairy: 3,
+    rscookPasta: 3,
+    rscookGrains: 4,
+    rscookMeats: 5,
+    rscookFish: 5,
+    rscookSalads: 3,
+    rscookSpecialty: 3,
+    rscookBaking: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 34901, name: "Hygiene, Safety & Kitchen Skills", categories: ["rscookSafety", "rscookSkills"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 34902, name: "Produce, Stocks & Sauces", categories: ["rscookProduce", "rscookStocks", "rscookSauces"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 34903, name: "Dairy, Eggs, Pasta & Grains", categories: ["rscookDairy", "rscookPasta", "rscookGrains"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 34904, name: "Meats, Poultry, Fish & Seafood", categories: ["rscookMeats", "rscookFish"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 34905, name: "Salads, Charcuterie & Baking", categories: ["rscookSalads", "rscookSpecialty", "rscookBaking"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rscookSafety: "Hygiene, Sanitation & Safety",
+    rscookSkills: "Common Occupational Skills",
+    rscookProduce: "Produce",
+    rscookStocks: "Stocks, Broths & Soups",
+    rscookSauces: "Sauces",
+    rscookDairy: "Cheese, Dairy & Eggs",
+    rscookPasta: "Pastas, Noodles & Dumplings",
+    rscookGrains: "Grains, Pulses, Nuts & Alt. Proteins",
+    rscookMeats: "Meats, Poultry & Variety Meats",
+    rscookFish: "Fish & Seafood",
+    rscookSalads: "Salads & Sandwiches",
+    rscookSpecialty: "Specialty Preparation",
+    rscookBaking: "Baked Goods & Desserts",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal Cook progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets that follow the 13 Major Work Activities of the Red Seal Occupational Standard for Cook, from hygiene and safety to baking. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Hygiene, Safety & Kitchen Skills.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your Red Seal exam.",
+    ],
+    sourceLine: "Based on the Red Seal exam breakdown for Cook and Health Canada food safety guidance. Original questions; always follow your province's food premises rules.",
+    analyticsKey: "carscook",
+  },
+};
+
+const carshair: ExamConfig = {
+  id: "carshair",
+  stateCode: "CAHAIR",
+  idBase: 35100,
+  slug: "/red-seal-hairstylist",
+  landingPath: "/red-seal-hairstylist-practice-test",
+  name: "Red Seal Hairstylist Practice Test",
+  shortName: "Red Seal Hairstylist",
+  examLabel: "Red Seal Hairstylist exam",
+  fullName: "Red Seal Hairstylist interprovincial exam",
+  questionIdPrefix: "CAHAIR-",
+  icon: "scissors",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Red Seal Hairstylist exam breakdown (red-seal.ca exam information and weightings, Red Seal
+  // Occupational Standard for Hairstylist 2019; checked 2026-11-18): 120 four-option questions,
+  // 4 hours, 70%. MWA A common occupational skills 14 (A-1 4, A-2 4, A-3 3, A-4 3), B hair and
+  // scalp care 11, C cuts hair 24 (C-7 19, C-8 5), D styles hair 16, E chemical texture services
+  // 17 (E-11 10, E-12 7), F alters hair colour 25 (F-13 9, F-14 7, F-15 9), G specialized services
+  // 6, H salon operations 7. Scaled to 50 by largest remainder: A 6, B 5, C 10, D 7, E 7, F 10,
+  // G 2, H 3, split inside each MWA by task counts.
+  blueprint: {
+    rshairSafety: 3,
+    rshairClient: 3,
+    rshairScalp: 5,
+    rshairCut: 8,
+    rshairFacial: 2,
+    rshairStyle: 7,
+    rshairWave: 4,
+    rshairRelax: 3,
+    rshairColour: 4,
+    rshairLighten: 3,
+    rshairCorrect: 3,
+    rshairSpecial: 2,
+    rshairSalon: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 35101, name: "Safety, Clients & Hair Care", categories: ["rshairSafety", "rshairClient", "rshairScalp"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 35102, name: "Cutting & Facial Hair", categories: ["rshairCut", "rshairFacial"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 35103, name: "Styling, Perms & Relaxers", categories: ["rshairStyle", "rshairWave", "rshairRelax"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 35104, name: "Colour, Lightening & Correction", categories: ["rshairColour", "rshairLighten", "rshairCorrect"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 35105, name: "Wigs, Face Services & Salon", categories: ["rshairSpecial", "rshairSalon"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rshairSafety: "Safety, Tools & Equipment",
+    rshairClient: "Client Prep & Communication",
+    rshairScalp: "Hair & Scalp Care",
+    rshairCut: "Haircutting",
+    rshairFacial: "Facial & Nape Hair",
+    rshairStyle: "Styling & Finishing",
+    rshairWave: "Chemical Waving",
+    rshairRelax: "Chemical Relaxing",
+    rshairColour: "Hair Colouring",
+    rshairLighten: "Lightening & Toning",
+    rshairCorrect: "Colour Correction",
+    rshairSpecial: "Wigs, Extensions & Face Services",
+    rshairSalon: "Salon Operations",
+  },
+  copy: {
+    guestPrompt: "to save your Red Seal Hairstylist progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets that follow the 8 Major Work Activities of the Red Seal Occupational Standard for Hairstylist, from safety and consultation to colour correction and salon operations. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the Red Seal exam's proportions, 70% to pass",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Safety, Clients & Hair Care.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Book your Red Seal exam.",
+    ],
+    sourceLine: "Based on the Red Seal exam breakdown for Hairstylist, Health Canada and CCOHS. Original questions; always follow the manufacturer's directions and your province's salon rules.",
+    analyticsKey: "carshair",
+  },
+};
+
+export const EXAMS: ExamConfig[] = [frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, carscook, carshair, cadronebasic, cahambasic, ea2, ea3];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */
-export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
+export const EXAM_VARIANTS: ExamConfig[] = [realestateCA, realestateNJ, realestateTX, realestateFL, realestateNY, insuranceTX, insuranceFL, insuranceCA, pncTX, pncFL, pncCA, realestatePA, realestateIL, realestateOH, realestateGA, realestateNC, realestateMI, realestateVA, realestateWA, realestateAZ, realestateTN, realestateLA, realestateCO, realestateMD, realestateMA, realestateMO, insuranceNY, insurancePA, insuranceIL, insuranceOH, insuranceGA, insuranceNC, insuranceMI, insuranceNJ, insuranceVA, insuranceWA, pncNY, pncPA, pncIL, pncOH, pncGA, pncNC, pncMI, pncNJ, pncVA, pncWA];
 /** Every exam the store and app routes resolve, variants first. */
 export const ALL_EXAMS: ExamConfig[] = [...EXAM_VARIANTS, ...EXAMS];
 

@@ -1,0 +1,28 @@
+CAT = "rshairSpecial"; SEG = "SPE"
+# RSOS tasks G-16 (hair extensions, wigs and hairpieces) and G-17 (basic face and nape services).
+Q = [
+("Which wig measurement runs from the front hairline over the top of the head to the nape?",
+ "Hairline to nape", ["Ear to ear", "Temple to temple", "Circumference"],
+ "Hairline-to-nape, ear-to-ear and temple-to-temple are the head measurements in the standard. Ear to ear runs across the top from one ear to the other."),
+("Why is a standard synthetic wig not coloured with permanent dye?",
+ "The fibre won't take it", ["It fades within days", "It needs a filler first", "It must be pre-softened"],
+ "Synthetic fibre has no cortex for oxidative dye to enter, so permanent colour does not take. Human hair pieces can be coloured with care."),
+("A standard synthetic wig has been washed. How is it dried?",
+ "Air-dried on a stand", ["Hood-dried on low", "Towel-rubbed dry", "Diffused on medium"],
+ "Standard synthetic fibre frizzes or distorts under heat and rubbing, so it is blotted and air-dried on a stand or block. Human hair pieces can take blow-drying and thermal tools."),
+("In sugaring, which way is the paste flicked off the skin?",
+ "With the hair growth", ["Against the hair growth", "Straight up from the skin", "Across the hair growth"],
+ "Sugaring paste is spread against the growth and flicked off with it, which pulls the hair out in its natural direction. Strip wax is removed against the growth."),
+("Brows are shaped with a twisted cotton strand that lifts out a row of hairs at once. This is:",
+ "Threading", ["Sugaring", "Tweezing", "Strip waxing"],
+ "Threading rolls a twisted thread over the skin to trap and lift whole rows of hair. Tweezing removes one hair at a time."),
+("A beard is coloured to blend grey. Which developer suits facial hair colour?",
+ "10 volume", ["20 volume", "30 volume", "40 volume"],
+ "The standard lists 5 and 10 volume developer for facial hair colour, never stronger: the skin of the face is sensitive and beard colour needs deposit, not lift."),
+("Wax residue is left on the skin after a strip comes off. What removes it?",
+ "Wax removal oil", ["Alcohol toner", "More warm wax", "Hot water scrub"],
+ "Wax removal oil dissolves leftover wax gently. Scrubbing or adding more wax irritates skin that has just been waxed."),
+("Before ordering clip-in extensions, what is matched to the client's own hair?",
+ "Shade and texture", ["Head measurements", "Growth direction", "Elasticity reading"],
+ "The consultation matches the piece to the client's hair colour, texture and style and prepares a cost estimate before ordering. Head measurements are taken for a full wig, not for clip-in pieces."),
+]

@@ -9,6 +9,10 @@ import { teachPathFor } from "@/lib/teachPages";
 // page's FAQPage graph; keep the two in step.
 
 export const TEACHES: Record<string, string> = {
+  frcivique: "a French civic exam preparation class",
+  sfappbuilder: "a Salesforce App Builder or Salesforce admin course",
+  sfpd1: "a Salesforce developer course or bootcamp",
+  nailtech: "at a nail technology school",
   frvtc: "a French VTC chauffeur preparation course",
   zafirearm: "a Firearms Control Act knowledge course",
   appraiser: "a real property appraisal course",
@@ -28,6 +32,7 @@ export const TEACHES: Record<string, string> = {
   cbspd: "a sterile processing program",
   ascpmlt: "an MLT program",
   nzham: "an amateur radio club licence class",
+  cahambasic: "an amateur radio club Basic course",
   cadc: "an addiction counseling program",
   ascppbt: "a phlebotomy program",
   rpt: "a phlebotomy program",
@@ -178,6 +183,7 @@ export const TEACHES: Record<string, string> = {
   lsat: "LSAT prep",
   iimcat: "CAT coaching",
   netplus: "a networking or Network+ course",
+  linuxplus: "a Linux administration or Linux+ course",
   cysa: "a cybersecurity analyst or CySA+ course",
   ceh: "a CEH or ethical hacking course",
   sc200: "an SC-200 or Microsoft security operations course",
@@ -290,6 +296,8 @@ export const TEACHES: Record<string, string> = {
   caplumb: "a plumbing apprenticeship class",
   cacarp: "a carpentry apprenticeship or pre-apprenticeship program",
   caweld: "a welding program",
+  carscook: "a culinary apprenticeship program",
+  carshair: "a hairstyling apprenticeship program",
   cawhmis: "WHMIS training for new hires or a co-op class",
   caguard: "an Ontario security guard course",
   caabguard: "an Alberta Basic Security Training course",

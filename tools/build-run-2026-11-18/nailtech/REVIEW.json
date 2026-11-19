@@ -1,0 +1,395 @@
+{
+  "id": "nailtech",
+  "blind_agreement": "200/200",
+  "options_only": {
+    "score": "169/200 (84%, ceiling 82%); K 9/9, S 45/45, G 115/146. Caveat: the reviewer had read every stem in the blind pass first (REVIEW.md order), so the G and overall figures are inflated by recall; the 45 S hits are not.",
+    "s_hits": [
+      "NAIL-CHM-008",
+      "NAIL-CHM-015",
+      "NAIL-CON-001",
+      "NAIL-CON-002",
+      "NAIL-CON-005",
+      "NAIL-CON-006",
+      "NAIL-CON-007",
+      "NAIL-CON-008",
+      "NAIL-CON-009",
+      "NAIL-CON-010",
+      "NAIL-CON-012",
+      "NAIL-CON-016",
+      "NAIL-ENH-006",
+      "NAIL-ENH-018",
+      "NAIL-ENH-019",
+      "NAIL-ENH-020",
+      "NAIL-ENH-024",
+      "NAIL-ENH-026",
+      "NAIL-ENH-027",
+      "NAIL-ENH-034",
+      "NAIL-ENH-035",
+      "NAIL-ENH-036",
+      "NAIL-ENH-038",
+      "NAIL-INF-003",
+      "NAIL-INF-012",
+      "NAIL-INF-013",
+      "NAIL-INF-014",
+      "NAIL-INF-015",
+      "NAIL-INF-018",
+      "NAIL-INF-022",
+      "NAIL-INF-023",
+      "NAIL-INF-029",
+      "NAIL-INF-030",
+      "NAIL-INF-031",
+      "NAIL-INF-032",
+      "NAIL-MAN-010",
+      "NAIL-MAN-014",
+      "NAIL-MAN-015",
+      "NAIL-MAN-016",
+      "NAIL-MAN-023",
+      "NAIL-MAN-027",
+      "NAIL-MAN-031",
+      "NAIL-MAN-034",
+      "NAIL-TOO-007",
+      "NAIL-TOO-024"
+    ],
+    "verdict": "FAIL"
+  },
+  "findings": [
+    {
+      "questionId": "NAIL-CHM-008",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CHM-015",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-001",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-002",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. odd one out: the one contraindication among three ordinary conditions",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-005",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-006",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-007",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-008",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-009",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-010",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-012",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-CON-016",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-006",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. middle-of-the-range option (medium among very wet/very dry/liquid only)",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-018",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-019",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-020",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. only safe option; microwave, hot plate and flame are strawmen",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-024",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-026",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-027",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-034",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-035",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-036",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-ENH-038",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-003",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. odd one out: Viruses among three bacteria names",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-012",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-013",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-014",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-015",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-018",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-022",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-023",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. odd one out: the one bad practice among three correct ones (stem asks what to avoid)",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-029",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-030",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. only sensible/hygienic option; distractors (eat at the manicure table, beside the polish rack) false on their face",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-031",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. only ergonomic-sounding option; 'work faster', 'lean in closer' are strawmen",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-INF-032",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-010",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-014",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. odd one out: 'Joint movement' vs three '... stroke' options",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-015",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. odd one out: a medical condition among three parts of the foot",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-016",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-023",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. odd one out: the one contraindication among three conditions paraffin treats",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-027",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-031",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-MAN-034",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-TOO-007",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "NAIL-TOO-024",
+      "severity": "weak",
+      "issue": "Options-only surface-cue hit: key found without the stem. key is the only safe, hygienic or professional option; the three distractors are plainly bad practice or nonsense",
+      "source": "tools/options_only.py score (SKILL.md section 3)",
+      "fix": "Rewrite distractors as parallel, plausible options in the same form (real but wrong practices a half-prepared candidate might choose), then re-run options_only on the rewritten items."
+    },
+    {
+      "questionId": "(bank)",
+      "severity": "weak",
+      "issue": "Answer keys rotate strictly A,B,C,D,A,B,... through all 200 items in ID order. Options are shuffled on screen so this is not a live cue, but any surface that shows raw option order (exports, the audit index, printed samples) leaks every key.",
+      "source": "data/nail-technician-questions.json",
+      "fix": "Let the build place keys in a seeded balanced slot instead of a fixed rotation."
+    }
+  ],
+  "landing_findings": [
+    {
+      "where": "app/nail-technician-practice-test/page.tsx FAQ 'passing score' and WIRING.md examFacts answer and 'Passing score' row",
+      "severity": "minor",
+      "issue": "States 'NIC reports a scaled score'. The CIB (effective 2025-09-01, revised 2026-03-01) does not say so, and sources.md cites no page for it; South Carolina LLR states a 75% passing score.",
+      "source": "https://prov-testing.github.io/nic_cib/nail_technology_national_theory_english.html",
+      "fix": "Drop 'scaled' or cite an NIC/Prov page that says it; keep 'each board sets its passing score; many use 75 (e.g. South Carolina)'."
+    },
+    {
+      "where": "landing and examFacts: 110 items, 100 scored, 90 minutes, four options one correct, eight areas 15/15/10/5/13/18/20/4, CIB dates; SC 75%",
+      "severity": "ok",
+      "issue": "Checked against the CIB and https://llr.sc.gov/cosmo/examins.aspx on 2026-11-18: all match.",
+      "source": "https://prov-testing.github.io/nic_cib/nail_technology_national_theory_english.html",
+      "fix": "none"
+    }
+  ]
+}

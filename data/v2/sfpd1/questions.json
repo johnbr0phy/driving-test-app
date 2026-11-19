@@ -1,0 +1,4248 @@
+[
+  {
+    "id": "SFPD1-T1-001",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Decorators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A parent component must set a child component's property in markup. Which decorator goes on the child's field?",
+    "explanation": "@api makes a field public, so a parent can set it as an attribute. @track only observes changes inside objects and arrays, and @AuraEnabled is an Apex annotation.",
+    "options": [
+      "$\\texttt{@track}$",
+      "$\\texttt{@wire}$",
+      "$\\texttt{@AuraEnabled}$",
+      "$\\texttt{@api}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-002",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Multitenancy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why does the Apex runtime enforce governor limits?",
+    "explanation": "Apex runs on a multitenant platform where many orgs share the same resources, so limits stop one transaction from monopolizing them. Orgs do not get dedicated servers.",
+    "options": [
+      "Each org runs its own server",
+      "Orgs share platform resources",
+      "Apex compiles to Java bytecode",
+      "Users pay per CPU second"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-003",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Master-detail",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Apex inserts a detail record of a master-detail relationship but leaves the master field empty. What happens?",
+    "explanation": "A detail record depends on its master and cannot stand alone, so the master-detail field must be filled. A lookup field, by contrast, can usually be left blank.",
+    "options": [
+      "It links to the running user",
+      "It links to the last master used",
+      "The insert fails",
+      "It saves with no parent"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-004",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Coverage",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What Apex test coverage does Salesforce require to deploy to production?",
+    "explanation": "Unit tests must cover at least 75% of the Apex code and all tests must pass; each trigger also needs some coverage. The 75% is cumulative, not per class.",
+    "options": [
+      "Any coverage, with all tests passing",
+      "At least 90% overall, all tests passing",
+      "At least 75% overall, all tests passing",
+      "At least 75% per class, all tests passing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-005",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Declarative automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a Fast Field Updates flow cost less than an after-save flow updating the same record?",
+    "explanation": "Fast Field Updates run before the record is saved, so changes ride along with the save. An after-save flow updating the same record needs another DML and save cycle.",
+    "options": [
+      "It runs asynchronously later",
+      "It is exempt from governor limits",
+      "It needs no extra DML or second save",
+      "It runs in its own transaction"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-006",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "SOSL",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A search box must find a word in Account, Contact and Lead text fields at once. Which tool fits?",
+    "explanation": "SOSL searches text across several objects in one statement and returns a list of lists. SOQL queries one object (plus related ones), so LIKE would need a query per object.",
+    "options": [
+      "SOSL",
+      "SOQL with LIKE",
+      "A formula field",
+      "Three SOQL queries"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-007",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "SOQL injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Dynamic SOQL adds a search term typed by the user. What best prevents SOQL injection?",
+    "explanation": "A bind variable passes the input as a value, never as query text; user mode and access checks limit what a query can read but do not stop injected clauses. If the string must be built by hand, String.escapeSingleQuotes escapes the quote marks an attacker would use.",
+    "options": [
+      "HTML-encoding the term first",
+      "Checking isAccessible() first",
+      "Running the query WITH USER_MODE",
+      "A bind variable for the term"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-008",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trigger must set a field on each incoming Account without a DML statement. Which context fits?",
+    "explanation": "Records in Trigger.new can be changed directly only in before triggers, and the change is saved with no extra DML. In after triggers Trigger.new is read-only.",
+    "options": [
+      "before insert",
+      "after update",
+      "after insert",
+      "before delete"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-009",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Scratch orgs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants short-lived, source-driven orgs built from a definition file. Which org type fits?",
+    "explanation": "Scratch orgs are created from a definition file such as config/project-scratch-def.json and expire, by default after 7 days and at most 30. Sandboxes are copies of production.",
+    "options": [
+      "Partial Copy sandbox",
+      "Full sandbox",
+      "Scratch org",
+      "Developer Edition org"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-010",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a child component tell its parent that a tile was clicked?",
+    "explanation": "A child sends data up by creating a CustomEvent and calling this.dispatchEvent; the parent listens with an on-prefixed attribute such as ontileclick. querySelector reaches down to children, not up.",
+    "options": [
+      "Set a parent @track field",
+      "Wire the parent with @wire",
+      "Dispatch a CustomEvent",
+      "Call a parent @api method"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-011",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Governor limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A loop issues its 101st SOQL query in a synchronous transaction. What happens?",
+    "explanation": "Exceeding a governor limit throws System.LimitException, which a try/catch block cannot handle, and the transaction rolls back. Nothing is deferred or moved to asynchronous processing.",
+    "options": [
+      "Query is queued for the next transaction",
+      "Catch block handles the LimitException",
+      "Remaining queries run async",
+      "Uncatchable LimitException is thrown"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-012",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Junction objects",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Enrollment__c is a junction object between Course__c and Student__c. Which query lists one student's course names?",
+    "explanation": "The junction holds a master-detail field to each object, so the query starts from Enrollment__c, filters on Student__c and reads the course through the __r relationship. Course__c has no Student__c field.",
+    "options": [
+      "$\\texttt{SELECT Course\\_\\_r.Name FROM Enrollment\\_\\_c WHERE Student\\_\\_c = :sid}$",
+      "$\\texttt{SELECT Enrollment\\_\\_r.Name FROM Student\\_\\_c WHERE Id = :sid}$",
+      "$\\texttt{SELECT Course\\_\\_c.Name FROM Enrollment\\_\\_c WHERE Student\\_\\_c = :sid}$",
+      "$\\texttt{SELECT Name FROM Course\\_\\_c WHERE Student\\_\\_c = :sid}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-013",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "startTest",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does code between Test.startTest() and Test.stopTest() get?",
+    "explanation": "Code between startTest and stopTest gets its own set of governor limits, so set-up queries and DML do not use up the limits of the code under test.",
+    "options": [
+      "Faster asynchronous processing",
+      "System mode for every query",
+      "A new set of governor limits",
+      "Access to org data"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-014",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Invocable methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow must call an Apex method. Which annotation exposes it as a flow action?",
+    "explanation": "@InvocableMethod marks a static method that flows and other tools run as an action. @AuraEnabled serves Lightning components, @RemoteAction serves Visualforce JavaScript and @NamespaceAccessible only widens package visibility.",
+    "options": [
+      "$\\texttt{@NamespaceAccessible}$",
+      "$\\texttt{@AuraEnabled}$",
+      "$\\texttt{@RemoteAction}$",
+      "$\\texttt{@InvocableMethod}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-015",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Query limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many SOQL queries can one synchronous Apex transaction issue?",
+    "explanation": "The synchronous limit is 100 SOQL queries; asynchronous Apex gets 200. 150 is the DML statement limit.",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "300"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-T1-016",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "XSS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Visualforce markup is open to cross-site scripting?",
+    "explanation": "Standard apex components escape HTML characters by default. Setting escape to false outputs user input unfiltered, so a script in it runs in the victim's browser.",
+    "options": [
+      "apex:outputText with escape set to false",
+      "apex:outputField bound to a record field",
+      "apex:outputText with escape left at default",
+      "apex:inputText bound to a property"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-017",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Apex from LWC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which annotation lets an LWC wire an Apex method that only reads data?",
+    "explanation": "Wired Apex methods must be cacheable, so they need @AuraEnabled(cacheable=true), and they must be static and public or global. A plain @AuraEnabled method can only be called imperatively.",
+    "options": [
+      "$\\texttt{@AuraEnabled}$",
+      "$\\texttt{@InvocableMethod}$",
+      "$\\texttt{@AuraEnabled(cacheable=true)}$",
+      "$\\texttt{@AuraEnabled(continuation=true)}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-018",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger context",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "In which two trigger contexts is Trigger.old available? (Choose two.)",
+    "explanation": "Trigger.old holds the earlier versions of records, so it exists only for update and delete events. Inserted and undeleted records have no prior version in the trigger.",
+    "options": [
+      "after delete",
+      "before update",
+      "before insert",
+      "after undelete",
+      "after insert"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFPD1-T1-019",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Debug logs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user reports an error. What must be set so their next actions produce a debug log?",
+    "explanation": "Logs are kept for a user when a trace flag is set for that user. Class and trigger trace flags only override log levels; they do not cause logging on their own.",
+    "options": [
+      "A class trace flag",
+      "A user trace flag",
+      "A checkpoint in the class",
+      "A Setup Audit Trail entry"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-020",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Roll-up summary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A parent object needs the total Amount of its child records. Which declarative feature fits when the relationship is master-detail?",
+    "explanation": "A roll-up summary field on the master calculates COUNT, SUM, MIN or MAX over its detail records without code. A cross-object formula reads parent fields from the child, the other direction.",
+    "options": [
+      "Before-save flow on the parent",
+      "Lookup filter",
+      "Cross-object formula field",
+      "Roll-up summary field"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-021",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Upsert",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Apex upsert statement names no external ID field. Which key does it use to match records?",
+    "explanation": "Upsert matches on the record Id unless a custom external ID field (or an idLookup standard field) is named. Records with no Id are inserted.",
+    "options": [
+      "The Name field",
+      "The record Id",
+      "The first unique field",
+      "Any external ID field"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-022",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Asynchronous tests",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test enqueues a Queueable job. When can it assert on the job's results?",
+    "explanation": "Asynchronous calls made after startTest are collected, and stopTest runs them synchronously, so asserts after stopTest see the results.",
+    "options": [
+      "Only in a separate test method",
+      "After Test.stopTest()",
+      "After calling Test.runAsync()",
+      "Right after System.enqueueJob"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-023",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Lightning Data Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A component shows one record's fields from its page layout and lets the user edit them. What is the simplest choice?",
+    "explanation": "lightning-record-form views and edits a record with fields from a layout and needs no code. The view and edit forms are for custom layouts, and Apex is not needed for one record.",
+    "options": [
+      "$\\texttt{An Apex controller with DML}$",
+      "$\\texttt{lightning-record-view-form}$",
+      "$\\texttt{lightning-datatable}$",
+      "$\\texttt{lightning-record-form}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-024",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Constants",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which declaration makes a class-level constant in Apex?",
+    "explanation": "A constant is declared static final and assigned once. Apex has no const, readonly or var keywords for this; final is what stops reassignment.",
+    "options": [
+      "$\\texttt{public const Integer MAX = 5;}$",
+      "$\\texttt{static readonly Integer MAX = 5;}$",
+      "$\\texttt{final var MAX = 5;}$",
+      "$\\texttt{static final Integer MAX = 5;}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-025",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "DML partial success",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which call inserts the valid records in a list and skips the ones that fail?",
+    "explanation": "Setting allOrNone to false allows partial success; each Database.SaveResult says which records failed. The insert statement and allOrNone true roll back the whole list on any error.",
+    "options": [
+      "$\\texttt{Database.insert(recs, false)}$",
+      "$\\texttt{Database.insert(recs, AccessLevel.USER\\_MODE)}$",
+      "$\\texttt{Database.insert(recs, true)}$",
+      "$\\texttt{insert recs;}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-026",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "User mode",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SOQL clause makes a query enforce the running user's object, field and sharing access?",
+    "explanation": "WITH USER_MODE runs the query with the user's object permissions, field-level security and sharing. WITH SHARING is a class keyword, not a SOQL clause.",
+    "options": [
+      "$\\texttt{WITH USER\\_MODE}$",
+      "$\\texttt{FOR VIEW}$",
+      "$\\texttt{WITH SHARING}$",
+      "$\\texttt{WITH SYSTEM\\_MODE}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-027",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Declarative versus code",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which requirement still calls for Apex rather than a declarative tool?",
+    "explanation": "Exposing a custom SOAP or REST web service needs an Apex class. Formula fields, record-triggered flows and validation rules cover the other three without code.",
+    "options": [
+      "Field update when a record is saved",
+      "Calculated field shown on a page layout",
+      "Required field enforced on save",
+      "Custom web service for an outside app"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-028",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Relationship names",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Invoice__c has a lookup field Customer__c to Account. How does a query on Invoice__c read the account name?",
+    "explanation": "A custom relationship is traversed with the field name ending in __r. The __c name holds only the Id, and the relationship is named after the field, not the target object.",
+    "options": [
+      "$\\texttt{Customer\\_\\_c.Name}$",
+      "$\\texttt{Account\\_\\_r.Name}$",
+      "$\\texttt{Customer.Name}$",
+      "$\\texttt{Customer\\_\\_r.Name}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-029",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Order of execution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In the save order of execution, what runs right after the before triggers?",
+    "explanation": "After before triggers, Salesforce runs most system validation again plus custom validation rules, then duplicate rules, then saves and runs after triggers. Before-save flows run before the before triggers.",
+    "options": [
+      "System and custom validation",
+      "After triggers",
+      "Before-save record-triggered flows",
+      "Assignment rules"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-030",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Reactivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A component changes one property inside an object stored in a plain field. Why doesn't the template update?",
+    "explanation": "All fields are reactive when reassigned, but the framework only observes changes inside an object or array when the field has @track. @api makes a field public.",
+    "options": [
+      "Field lacks @track for inner changes",
+      "Template needs lwc:if to re-render it",
+      "Field lacks @api for reactivity",
+      "Fields are never reactive"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-031",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Test data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several test methods need the same Accounts. Where should they be created once?",
+    "explanation": "A @TestSetup method runs before the test methods and its records are available to each of them; any changes a test makes are rolled back before the next.",
+    "options": [
+      "A shared production record",
+      "A @TestSetup method",
+      "Each method's first line",
+      "A static block in the class"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-032",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Salesforce CLI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Salesforce CLI command pushes local source from force-app to an org?",
+    "explanation": "sf project deploy start deploys local source to the target org; sf project retrieve start pulls changes back. sf org create scratch makes a new org.",
+    "options": [
+      "$\\texttt{sf apex run --source-dir force-app}$",
+      "$\\texttt{sf project retrieve start --source-dir force-app}$",
+      "$\\texttt{sf org create scratch --source-dir force-app}$",
+      "$\\texttt{sf project deploy start --source-dir force-app}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-033",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "MVC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Visualforce's model-view-controller design, which part is the controller?",
+    "explanation": "In Visualforce the view is the page markup, the model is the data (sObjects and Apex classes that represent it) and the controller is a standard controller or Apex class holding the logic.",
+    "options": [
+      "Static resource with the styles",
+      "Apex class with the page logic",
+      "Markup that renders the page",
+      "sObjects and their fields"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-034",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Schema describe",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Apex call returns a map of every sObject name to its token?",
+    "explanation": "Schema.getGlobalDescribe() returns a Map of sObject names to Schema.SObjectType tokens. describeSObjects needs the names you want, and getDescribe describes one type.",
+    "options": [
+      "$\\texttt{Database.getGlobalTypes()}$",
+      "$\\texttt{SObjectType.getDescribe()}$",
+      "$\\texttt{Schema.describeSObjects()}$",
+      "$\\texttt{Schema.getGlobalDescribe()}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-035",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does this Apex print?\n$$\\begin{array}{l}\\texttt{Integer a = 7;}\\\\\\texttt{Integer b = 2;}\\\\\\texttt{System.debug(a / b);}\\end{array}$$",
+    "explanation": "Dividing one Integer by another in Apex returns an Integer, dropping the remainder, so 7 / 2 is 3. Casting one operand to Decimal would give 3.5.",
+    "options": [
+      "3.5",
+      "3",
+      "1",
+      "4"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-036",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "SOQL for loops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why use a SOQL for loop over a very large query result?",
+    "explanation": "A SOQL for loop retrieves records in chunks of 200, which keeps heap use low. The rows still count toward the 50,000-row limit, and the loop runs in one transaction.",
+    "options": [
+      "It skips the SOQL query count",
+      "It processes records in batches of 200",
+      "It runs each batch in a new transaction",
+      "It removes the 50,000-row limit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-037",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Sharing keywords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A utility class must run in the sharing mode of whichever class calls it. Which declaration fits?",
+    "explanation": "inherited sharing takes the caller's sharing mode at run time; as an entry point, such as an @AuraEnabled method, it runs with sharing. with caller sharing is not an Apex keyword.",
+    "options": [
+      "$\\texttt{with caller sharing}$",
+      "$\\texttt{with sharing}$",
+      "$\\texttt{without sharing}$",
+      "$\\texttt{inherited sharing}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-038",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Wire service",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In $\\texttt{@wire(getContacts, \\{ accountId: \\$recordId \\}) contacts;}$, what does the dollar sign do?",
+    "explanation": "A dollar-sign prefix on a property name in the wire configuration makes it reactive: when recordId changes, the wire service calls the method again with the new value.",
+    "options": [
+      "Marks recordId as an Apex parameter",
+      "Passes recordId as a string literal",
+      "Reruns the call when recordId changes",
+      "Caches the result for the whole session"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-039",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Callout tests",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Test methods can't make real HTTP callouts. How does a test cover callout code?",
+    "explanation": "Tests do not support real callouts by default, so a class implementing HttpCalloutMock returns a fake response registered with Test.setMock. SeeAllData only opens org data.",
+    "options": [
+      "$\\texttt{@IsTest(SeeAllData=true) on the test class}$",
+      "$\\texttt{Test.setMock with an HttpCalloutMock}$",
+      "$\\texttt{@future(callout=true) in the test}$",
+      "$\\texttt{Test.startTest around the callout}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-040",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Lightning Component Framework",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Salesforce's Aura guide says to choose which model for a new component, unless it needs an unsupported feature?",
+    "explanation": "The Lightning Aura Components Developer Guide says to always choose Lightning Web Components unless you need a feature it does not support. LWC uses web standards and runs faster.",
+    "options": [
+      "Visualforce components",
+      "Lightning Web Components",
+      "Aura components",
+      "Lightning Out components"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-041",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Polymorphic fields",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Task's WhatId can point to an Account or an Opportunity. Which SOQL feature returns different fields per type?",
+    "explanation": "TYPEOF in the SELECT clause picks fields by the type the polymorphic field points to, with WHEN and ELSE branches. GROUP BY aggregates and FOR VIEW updates recently viewed data.",
+    "options": [
+      "$\\texttt{GROUP BY}$",
+      "$\\texttt{WITH DATA CATEGORY}$",
+      "$\\texttt{TYPEOF}$",
+      "$\\texttt{FOR VIEW}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-042",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Asynchronous Apex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trigger must send each new Lead to an external API. How should the callout be made?",
+    "explanation": "Callouts from a trigger must be asynchronous so the save is not held waiting. A future method needs callout=true, since the default blocks callouts.",
+    "options": [
+      "$\\texttt{HTTP callout inside the trigger}$",
+      "$\\texttt{@future method with default settings}$",
+      "$\\texttt{before insert trigger callout}$",
+      "$\\texttt{@future(callout=true) method}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-043",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where in Setup does an admin see the status of a running Batch Apex job?",
+    "explanation": "The Apex Jobs page lists asynchronous jobs with their status and batches processed; code can query the same data from AsyncApexJob. Deployment Status tracks deployments.",
+    "options": [
+      "Debug Logs",
+      "Scheduled Jobs only",
+      "Deployment Status",
+      "Apex Jobs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-044",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Lifecycle hooks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which lifecycle hook runs when a component is inserted into the DOM?",
+    "explanation": "connectedCallback is invoked when the component is inserted into the DOM, a common place to load data. disconnectedCallback runs when it is removed.",
+    "options": [
+      "$\\texttt{constructor()}$",
+      "$\\texttt{disconnectedCallback()}$",
+      "$\\texttt{renderedCallback()}$",
+      "$\\texttt{connectedCallback()}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-045",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Exceptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which custom exception declaration compiles?",
+    "explanation": "A custom exception class must extend Exception (or another custom exception) and its name must end with Exception. Exception is a class, so implements does not apply.",
+    "options": [
+      "$\\texttt{public class OrderException implements Exception \\{\\}}$",
+      "$\\texttt{public class OrderError extends Exception \\{\\}}$",
+      "$\\texttt{public class OrderException extends Error \\{\\}}$",
+      "$\\texttt{public class OrderException extends Exception \\{\\}}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-046",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Query exceptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens when this query finds no matching Account?\n$$\\begin{array}{l}\\texttt{Account a = [SELECT Id FROM Account WHERE Name = :n];}\\end{array}$$",
+    "explanation": "Assigning a query to a single sObject requires exactly one row; zero rows throws QueryException (List has no rows for assignment to SObject). Querying into a List avoids it.",
+    "options": [
+      "A compile error",
+      "a is set to null",
+      "a is set to a new empty Account",
+      "A QueryException is thrown"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-047",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Visualforce controllers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A page uses the Account standard controller and needs one extra action. What should the developer write?",
+    "explanation": "A controller extension adds or overrides behavior while keeping the standard controller's actions and its enforcement of user permissions. A custom controller must reimplement everything.",
+    "options": [
+      "A new custom controller",
+      "A Visualforce component",
+      "A controller extension",
+      "A second standard controller"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-048",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Bulk tests",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a trigger test insert 200 or more records?",
+    "explanation": "Salesforce advises testing bulk cases as well as single records; 200 records fill a trigger batch and expose queries or DML inside loops that would hit governor limits.",
+    "options": [
+      "To make the test run in batches",
+      "To avoid a mixed DML error",
+      "To prove the trigger is bulkified",
+      "To reach 75% code coverage more quickly"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-049",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Formula fields",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field must show Days Open from CreatedDate and is never edited. Which is the best fit?",
+    "explanation": "A formula field is calculated when the record is read, so it stays current with no code or stored value to maintain. A trigger or scheduled job would store a number that goes stale.",
+    "options": [
+      "Formula field",
+      "Scheduled Apex job",
+      "Before-insert trigger",
+      "Number field updated by a flow"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-050",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Master-detail",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How is access to a detail record decided in a master-detail relationship?",
+    "explanation": "The master controls who can view a detail record's data, so detail records do not get their own sharing. A lookup child keeps its own owner and sharing.",
+    "options": [
+      "It follows the master record",
+      "It is set by each detail's sharing rules",
+      "It is public read/write by default",
+      "It follows the detail record's owner"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-051",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Agentforce actions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does Agentforce decide when to call an Apex agent action?",
+    "explanation": "Agent Builder takes the action's label and instructions from the @InvocableMethod label and description, and the reasoning engine uses them to pick the action, so they must be clear.",
+    "options": [
+      "Comments above the class and method",
+      "The method's name and its return type in Apex",
+      "Its @InvocableMethod label and description",
+      "The order the actions were added in"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-052",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Recursion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An after update trigger updates the same records again and fires itself. What is a common guard?",
+    "explanation": "Static variables last for the whole transaction, so a static flag (or a static Set of processed Ids) stops the second pass. Instance variables reset with each new object.",
+    "options": [
+      "A static Boolean set on first run",
+      "A try/catch around the update",
+      "An instance variable in the trigger",
+      "A custom field set to true"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-053",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Developer Console",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two tasks does the Developer Console support? (Choose two.)",
+    "explanation": "The Developer Console writes, compiles, debugs and tests Apex, shows debug logs and checkpoints, and runs SOQL in its Query Editor. Scratch orgs come from the Salesforce CLI and a Dev Hub.",
+    "options": [
+      "Installing unlocked packages",
+      "Viewing debug logs and checkpoints",
+      "Running SOQL in the Query Editor",
+      "Building outbound change sets",
+      "Creating scratch orgs from a definition"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFPD1-T1-054",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Safe navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does acct?.Owner?.Name return when acct is null?",
+    "explanation": "The safe navigation operator short-circuits on a null reference and returns null instead of throwing a NullPointerException.",
+    "options": [
+      "An empty string",
+      "null",
+      "A NullPointerException",
+      "The running user's name"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-055",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Aggregate queries",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What type does Apex return for a SOQL query with SUM(Amount) and GROUP BY?",
+    "explanation": "Aggregate queries with GROUP BY return AggregateResult rows, read with get using the alias. SELECT COUNT() with no field list returns an Integer.",
+    "options": [
+      "$\\texttt{List<AggregateResult>}$",
+      "$\\texttt{Map<String, Decimal>}$",
+      "$\\texttt{List<Opportunity>}$",
+      "$\\texttt{Integer}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T1-056",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Field-level security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which method removes fields the user cannot read from a list of queried records?",
+    "explanation": "Security.stripInaccessible returns the records with fields the user cannot access removed, so code can work on what remains. escapeSingleQuotes sanitizes input for queries.",
+    "options": [
+      "$\\texttt{Database.setSavepoint()}$",
+      "$\\texttt{Security.stripInaccessible()}$",
+      "$\\texttt{Schema.describeFields()}$",
+      "$\\texttt{String.escapeSingleQuotes()}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-057",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "runAs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where can System.runAs be used?",
+    "explanation": "runAs runs a block as a given user, enforcing that user's sharing and permissions, and it is available only in test methods. Each call counts toward the DML statement limit.",
+    "options": [
+      "In any Apex class",
+      "Only in triggers",
+      "Only in test methods",
+      "Only in anonymous Apex"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T1-058",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Agentforce Vibes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Agentforce Vibes (formerly Agentforce for Developers) is asked the same prompt twice. What does Salesforce say to expect?",
+    "explanation": "Salesforce says the generative AI output is often nondeterministic and can be inaccurate, so the developer reviews each result before use. It also writes LWC JavaScript, HTML and CSS.",
+    "options": [
+      "Output cached for the whole org",
+      "Identical output for the same prompt",
+      "Output limited to Apex code",
+      "Output that can differ each time"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T1-059",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "sObjects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement creates an Account in memory without saving it?",
+    "explanation": "Calling the constructor with field names only builds the sObject in memory; nothing is saved until a DML statement runs. The insert forms write to the database.",
+    "options": [
+      "$\\texttt{Account a = [SELECT Name FROM Account];}$",
+      "$\\texttt{Account a = new Account(Name = n);}$",
+      "$\\texttt{Account a = Database.insert(n);}$",
+      "$\\texttt{insert new Account(Name = n);}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T1-060",
+    "section": "pd",
+    "test": 1,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Template directives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which directive renders a block only when the property isReady is true?",
+    "explanation": "lwc:if, with lwc:elseif and lwc:else, renders content conditionally and supersedes the older if:true and if:false. for:each repeats markup for each item in a list.",
+    "options": [
+      "$\\texttt{if:show=\\{isReady\\}}$",
+      "$\\texttt{lwc:if=\\{isReady\\}}$",
+      "$\\texttt{for:each=\\{isReady\\}}$",
+      "$\\texttt{lwc:render=\\{isReady\\}}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-001",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Decorators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a parent component call a method named play() on a child component?",
+    "explanation": "A child method marked @api is public, and the parent calls it through this.template.querySelector on the child element. Events carry data from child to parent instead.",
+    "options": [
+      "Child marks play() with @api",
+      "Parent fires a play event",
+      "Child marks play() with @wire",
+      "Child marks play() with @track"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-002",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Governor limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice best keeps a trigger within governor limits?",
+    "explanation": "Bulkified code runs one query for the whole set of records, then works through the results. Queries inside a loop multiply with the batch size, and a LimitException cannot be caught.",
+    "options": [
+      "Query each record inside the loop",
+      "Query once outside the loop",
+      "Catch LimitException and retry",
+      "Move each record to its own future call"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-003",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Relationships",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Contact must be able to exist without a Region__c, and deleting a region must not delete contacts. Which field fits?",
+    "explanation": "A lookup relationship is optional and loosely coupled, so the child can exist alone and survives a deleted parent. A master-detail detail must have a master and is deleted with it.",
+    "options": [
+      "Master-detail to Region__c",
+      "Roll-up summary on Region__c",
+      "Formula on Contact",
+      "Lookup to Region__c"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-004",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Org data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "By default, can an Apex test method saved with API version 24.0 or later see existing records in the org?",
+    "explanation": "From API version 24.0 tests cannot see org data by default, so each test creates its own. @IsTest(SeeAllData=true) opens access to all org data.",
+    "options": [
+      "Only setup records like Users",
+      "Only records it owns",
+      "Yes, it sees all records",
+      "No, unless SeeAllData=true"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-005",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Declarative automation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of a record-triggered flow can send an email alert after the record is saved?",
+    "explanation": "The Actions and Related Records option runs after save and can call actions such as email alerts or update other records. Fast Field Updates can only change the triggering record.",
+    "options": [
+      "Before-save entry criteria",
+      "Actions and Related Records",
+      "Fast Field Updates",
+      "A validation rule formula"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-006",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "DML limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many DML statements can one Apex transaction issue?",
+    "explanation": "The limit is 150 DML statements, synchronous or asynchronous. 10,000 is the number of records DML can process, a separate limit.",
+    "options": [
+      "150",
+      "200",
+      "250",
+      "10,000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-T2-007",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Sharing keywords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does declaring a class without sharing do?",
+    "explanation": "without sharing stops the class enforcing the current user's sharing rules, so it can reach records the user cannot see. It is about record access, not field permissions.",
+    "options": [
+      "Ignores the user's sharing rules",
+      "Ignores field-level security",
+      "Runs the code as the org's admin user",
+      "Applies the caller's sharing mode"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-008",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which context variable gives a map of Ids to the new record versions in an after insert trigger?",
+    "explanation": "Trigger.newMap maps Ids to new versions; it exists in before update and in after insert, update and undelete. Trigger.new is a list, and oldMap is for update and delete.",
+    "options": [
+      "$\\texttt{Trigger.new}$",
+      "$\\texttt{Trigger.newMap}$",
+      "$\\texttt{Trigger.idMap}$",
+      "$\\texttt{Trigger.oldMap}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-009",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Deployment tests",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A deployment to production includes Apex classes and sets no test level. Which tests run?",
+    "explanation": "With no test level, a production deployment containing Apex runs all tests except those from managed packages; a deployment with no Apex runs none by default.",
+    "options": [
+      "All tests outside managed packages",
+      "No tests, as none were named",
+      "Only tests named in the package",
+      "Only tests in the new classes"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-010",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Apex from LWC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An LWC must update a record through Apex when a button is clicked. How is the method called?",
+    "explanation": "Methods that change data cannot be cacheable, and wired methods must be cacheable, so the component imports the method and calls it imperatively, handling the promise with then and catch.",
+    "options": [
+      "With @wire on a reactive property",
+      "Through lightning-record-form",
+      "With @wire and cacheable=true",
+      "Imperatively, returning a promise"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-011",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Roll-up summary",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Invoice__c has a lookup to Account. How can Account show its invoice total without changing the relationship?",
+    "explanation": "Roll-up summary fields need master-detail, so with a lookup the total must be calculated by automation such as a trigger or flow with an aggregate. A cross-object formula reads parent fields from the child.",
+    "options": [
+      "A roll-up summary field on Account",
+      "Apex or a flow that sums the invoices",
+      "A cross-object formula on Account",
+      "A lookup filter on Invoice__c"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-012",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "External IDs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An upsert on an external ID field finds two records with the same value. What happens?",
+    "explanation": "Upsert inserts when the key is not matched and updates when it is matched once. If the key matches more than once, an error is generated and nothing is inserted or updated for that record.",
+    "options": [
+      "A new record is inserted",
+      "The most recently edited one is updated",
+      "Both matching records are updated",
+      "The record errors and is not saved"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-013",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Test data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When are records made in a @TestSetup method rolled back?",
+    "explanation": "Test setup records are rolled back when the whole class finishes, while changes a test method makes to them are rolled back after that method, so each test starts from the same data.",
+    "options": [
+      "After the setup method itself",
+      "They are never rolled back",
+      "At the end of the test class",
+      "At the end of the day"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-014",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Invocable methods",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which signature is valid for an @InvocableMethod?",
+    "explanation": "An invocable method must be static and public or global, and its one input and its output must be lists so the flow can pass records in bulk. A single Id is not allowed.",
+    "options": [
+      "$\\texttt{public List<String> run(List<Id> ids)}$",
+      "$\\texttt{private static List<String> run(List<Id> ids)}$",
+      "$\\texttt{public static List<String> run(List<Id> ids)}$",
+      "$\\texttt{public static String run(Id recordId)}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-015",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Bind variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which query uses an Apex variable safely in the WHERE clause?",
+    "explanation": "A colon before the variable makes it a bind variable, which Apex passes as a value, never as query text. The other forms are not valid SOQL.",
+    "options": [
+      "$\\texttt{[SELECT Id FROM Lead WHERE Email = :addr]}$",
+      "$\\texttt{[SELECT Id FROM Lead WHERE Email = @addr]}$",
+      "$\\texttt{[SELECT Id FROM Lead WHERE Email = \\{addr\\}]}$",
+      "$\\texttt{[SELECT Id FROM Lead WHERE Email = addr]}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-016",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Visualforce controllers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which constructor does a controller extension for a standard controller need?",
+    "explanation": "An extension of a standard controller takes ApexPages.StandardController as its constructor argument, which gives access to the record. StandardSetController is the argument for a list controller extension.",
+    "options": [
+      "$\\texttt{public Ext()}$",
+      "$\\texttt{public Ext(ApexPages.StandardSetController ssc)}$",
+      "$\\texttt{public Ext(ApexPages.StandardController sc)}$",
+      "$\\texttt{public Ext(Id recordId)}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-017",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Apex from LWC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "From which module does an LWC import the getCases method of the Apex class CaseCtrl?",
+    "explanation": "Apex methods are imported from the @salesforce/apex namespace as ClassName.methodName. @salesforce/schema imports object and field references.",
+    "options": [
+      "$\\texttt{lightning/apex}$",
+      "$\\texttt{@salesforce/schema/CaseCtrl.getCases}$",
+      "$\\texttt{c/CaseCtrl}$",
+      "$\\texttt{@salesforce/apex/CaseCtrl.getCases}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-018",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger bulk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data load inserts 1,000 records. How does an insert trigger on that object run?",
+    "explanation": "DML on more than 200 records is split into batches of 200, and the trigger fires once per batch; Trigger.size gives the current batch's count.",
+    "options": [
+      "Once for each record",
+      "Once for all 1,000 records",
+      "In batches of 50 records",
+      "In batches of 200 records"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-019",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Sandboxes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do coverage numbers in a Full sandbox match production more closely than in a Developer sandbox?",
+    "explanation": "A Full sandbox copies production's data as well as metadata, so tests that touch data behave as in production. The Apex guide recommends it for staging production deployments.",
+    "options": [
+      "It runs tests in parallel",
+      "It has higher governor limits",
+      "It skips managed package tests",
+      "It copies production's data too"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-020",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Apex limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these can Apex not do, according to the Apex Developer Guide?",
+    "explanation": "The guide lists what Apex cannot do: render UI other than error messages, change standard functionality, create temporary files and spawn threads. Queueable jobs, JSON parsing and static method calls are all supported.",
+    "options": [
+      "Parse JSON from a callout",
+      "Run asynchronously in a queue",
+      "Spawn its own threads",
+      "Call another class's static method"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-021",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "External IDs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An Opportunity is related to an Account by setting Account to new Account(ERP_Id__c = id) before insert. What does this need?",
+    "explanation": "A parent reference built with only an external ID field resolves the foreign key during the DML, so no query for the parent Id is needed. The field must be an external ID on the parent.",
+    "options": [
+      "ERP_Id__c marked as External ID",
+      "A master-detail field to Account",
+      "A query for the Account's Id first",
+      "The Account inserted in the same list"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-022",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Test annotations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test needs to read a private variable in the class under test. Which annotation allows it?",
+    "explanation": "@TestVisible lets test methods reach private or protected members of the class under test without making them public.",
+    "options": [
+      "$\\texttt{@IsTest}$",
+      "$\\texttt{@SuppressWarnings}$",
+      "$\\texttt{@TestVisible}$",
+      "$\\texttt{@TestSetup}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-023",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Refreshing data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A component wires a cacheable Apex method, then updates a record imperatively. How does it get fresh data?",
+    "explanation": "A cacheable result is refreshed by calling refreshApex with the value the wire provisioned. Calling the cacheable method imperatively does not refresh the wire's cache.",
+    "options": [
+      "Calling the method imperatively",
+      "refreshApex on the wired result",
+      "Calling connectedCallback again",
+      "Setting the wired field to null"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-024",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Strings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The String name holds a word. What does this set b to?\n$$\\begin{array}{l}\\texttt{String up = name.toUpperCase();}\\\\\\texttt{String low = name.toLowerCase();}\\\\\\texttt{Boolean b = (up == low);}\\end{array}$$",
+    "explanation": "In Apex, == compares strings without regard to case, so the upper and lower case versions are equal. Use the equals method for a case-sensitive comparison.",
+    "options": [
+      "A compile error",
+      "null",
+      "true",
+      "false"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-025",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "SOSL limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many records can a single SOSL query return?",
+    "explanation": "One SOSL query returns at most 2,000 records, and a transaction can run 20 SOSL queries. SOQL has the 50,000-row limit.",
+    "options": [
+      "2,000",
+      "5,000",
+      "10,000",
+      "50,000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-T2-026",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "SOQL injection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What does String.escapeSingleQuotes do to user input?",
+    "explanation": "escapeSingleQuotes adds a backslash before each single quote so the input stays inside the string literal instead of ending it early and adding query text.",
+    "options": [
+      "Removes every single quote from the string",
+      "Encodes it as HTML entities",
+      "Wraps the string in double quotes",
+      "Escapes each single quote with a backslash"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-027",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Apex compilation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens when a developer saves an Apex class to the platform?",
+    "explanation": "The application server compiles Apex into instructions for the runtime interpreter and saves them as metadata. At run time those stored instructions are retrieved and interpreted.",
+    "options": [
+      "It is copied to every org on the instance",
+      "It is compiled and stored as metadata",
+      "It is stored as source and compiled on each run",
+      "It is uploaded to a separate app server"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-028",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Relationship names",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which subquery returns each Account's Contacts?",
+    "explanation": "A parent-to-child subquery uses the child relationship name, which for standard objects is usually the plural, Contacts. Custom child relationships end in __r.",
+    "options": [
+      "$\\texttt{(SELECT Contact.LastName)}$",
+      "$\\texttt{(SELECT LastName FROM Contacts\\_\\_r)}$",
+      "$\\texttt{(SELECT LastName FROM Contact)}$",
+      "$\\texttt{(SELECT LastName FROM Contacts)}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-029",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Order of execution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A workflow field update changes a record that was just saved. What runs again?",
+    "explanation": "Workflow field updates cause before update and after update triggers to fire one more time, and only once. Custom validation rules and flows are not run again.",
+    "options": [
+      "Before and after update triggers, once",
+      "Every validation rule and flow",
+      "Only the after insert trigger",
+      "Nothing, since the record is already committed"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-030",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Lightning Data Service",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two records must be created so that both save or neither does. Why use Apex rather than LDS createRecord?",
+    "explanation": "LDS functions work on single records and each runs in its own transaction, so there is no shared rollback. Apex DML in one method commits or rolls back together.",
+    "options": [
+      "Each LDS call is its own transaction",
+      "LDS skips validation rules and triggers",
+      "LDS can't create records",
+      "LDS needs a wired property"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-031",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Assertions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which assertion throws an error when the expected and actual values differ?",
+    "explanation": "Assert.areEqual throws an assertion error that fails the test when the values differ. System.debug only logs, and isInstanceOfType checks a value's type.",
+    "options": [
+      "$\\texttt{Assert.isInstanceOfType(actual, t)}$",
+      "$\\texttt{Assert.areEqual(expected, actual)}$",
+      "$\\texttt{System.debug(expected == actual)}$",
+      "$\\texttt{Test.isRunningTest()}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-032",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Debug logs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A debug log grows past 20 MB. What happens?",
+    "explanation": "Each debug log must be 20 MB or smaller; larger logs are reduced by removing older lines, such as earlier System.debug output, from anywhere in the log.",
+    "options": [
+      "The transaction is rolled back",
+      "Logging stops for that user",
+      "Older lines are removed to shrink it",
+      "The log is split into two smaller files"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-033",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Declarative versus code",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which requirement is better met declaratively than with an Apex trigger?",
+    "explanation": "A before-save record-triggered flow or default value sets a field on create with no code to test or maintain. Callouts, batch processing and web services need Apex.",
+    "options": [
+      "Set a default field value on create",
+      "Call an external REST service on save",
+      "Expose a method to an external app",
+      "Process 30,000 records in batches"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-034",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Schema describe",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which expression tells Apex whether the running user can read Account.Industry?",
+    "explanation": "The DescribeFieldResult method isAccessible checks field-level read access for the running user. isQueryable is object-level, and isUpdateable checks edit access.",
+    "options": [
+      "$\\texttt{Schema.sObjectType.Account.fields.Industry.isUpdateable()}$",
+      "$\\texttt{Schema.sObjectType.Account.isQueryable()}$",
+      "$\\texttt{Schema.sObjectType.Account.fields.Industry.isAccessible()}$",
+      "$\\texttt{Account.Industry.isVisible()}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-035",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Pass by value",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A method receives a String and assigns it a new value. What does the caller's variable hold afterward?",
+    "explanation": "Primitive arguments such as String are passed by value, so reassigning the parameter inside the method does not change the caller's variable.",
+    "options": [
+      "The new value",
+      "A copy with both values",
+      "null",
+      "Its original value"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-036",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "DML results",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After Database.update(recs, false), how does code find the reason a record failed?",
+    "explanation": "With allOrNone false no exception is thrown for failed records; each Database.SaveResult reports isSuccess and getErrors. Only all-or-nothing DML throws DmlException.",
+    "options": [
+      "SaveResult.getErrors()",
+      "Database.getLastError()",
+      "The record's Error__c field",
+      "The caught DmlException"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-037",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "User mode",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In API version 67.0 and later, whose object and field permissions does Apex enforce by default?",
+    "explanation": "From API version 67.0, Apex runs in user context by default, enforcing the current user's object permissions and field-level security; to ignore them code must ask for system mode. In API version 66.0 and earlier, Apex ran in system mode by default, ignoring the user's object permissions and field-level security unless code checked them.",
+    "options": [
+      "The org's admin user's",
+      "The class author's",
+      "The running user's",
+      "None, it runs in system mode"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-038",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which event type name follows the LWC naming rules?",
+    "explanation": "Event types should have no uppercase letters and no spaces, using underscores if words must be split. The parent's handler adds the on prefix, as in ontileselect.",
+    "options": [
+      "$\\texttt{tileselect}$",
+      "$\\texttt{onTileSelect}$",
+      "$\\texttt{tileSelect}$",
+      "$\\texttt{tile select}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-039",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Test data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method loads test records from a CSV file stored as a static resource?",
+    "explanation": "Test.loadData reads a static resource CSV and inserts the records for the test. setFixedSearchResults defines what a SOSL query returns in a test.",
+    "options": [
+      "$\\texttt{Test.createStub}$",
+      "$\\texttt{Database.import}$",
+      "$\\texttt{Test.loadData}$",
+      "$\\texttt{Test.setFixedSearchResults}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-040",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Lightning Component Framework",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do Lightning Web Components load faster than Aura components?",
+    "explanation": "LWC uses core Web Components standards that browsers run natively and adds only what is needed, so it is lighter than the Aura framework. Both render in the browser, not on the server.",
+    "options": [
+      "Rendered on the Salesforce server",
+      "Built on native web standards",
+      "Compiled into Visualforce pages",
+      "Cached in the Apex heap"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-041",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Hierarchical relationships",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On which object can a hierarchical relationship field be created?",
+    "explanation": "A hierarchical relationship is a special lookup available only on the User object, such as a Manager field. Other objects relate records to themselves with an ordinary lookup.",
+    "options": [
+      "Contact",
+      "User",
+      "Account",
+      "Any custom object"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-042",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Asynchronous Apex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which asynchronous tool returns a job Id and can take an sObject list as a member variable?",
+    "explanation": "Queueable Apex returns a job Id from System.enqueueJob, supports non-primitive types and can chain jobs. Future methods take only primitive parameters and return no Id.",
+    "options": [
+      "A platform event trigger",
+      "Queueable Apex",
+      "Scheduled Apex",
+      "A future method"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-043",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Salesforce DX",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file defines a Salesforce DX project's package directories and API version?",
+    "explanation": "sfdx-project.json configures the DX project, including its package directories. project-scratch-def.json describes the shape of a scratch org.",
+    "options": [
+      "$\\texttt{project-scratch-def.json}$",
+      "$\\texttt{sfdx-project.json}$",
+      "$\\texttt{package.xml}$",
+      "$\\texttt{force-app.json}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-044",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Wire service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When @wire decorates a property, where do the results arrive?",
+    "explanation": "The wire service sets the property to an object with data and error properties. Imperative Apex calls return promises instead.",
+    "options": [
+      "In a promise from the property",
+      "In a CustomEvent named wired",
+      "In the component's errorCallback",
+      "In its data and error properties"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-045",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Control flow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Apex statement picks a branch by matching one value against several literals?",
+    "explanation": "Apex's switch statement starts with switch on and lists when branches, with when else as the default. select case, if case and case of are not Apex.",
+    "options": [
+      "$\\texttt{case of}$",
+      "$\\texttt{switch on}$",
+      "$\\texttt{if case}$",
+      "$\\texttt{select case}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-046",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Record locking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SOQL keywords lock the returned records so another process cannot change them mid-update?",
+    "explanation": "FOR UPDATE locks the queried records until the transaction ends. FOR VIEW updates the recently viewed list, and ALL ROWS includes deleted records.",
+    "options": [
+      "$\\texttt{FOR UPDATE}$",
+      "$\\texttt{FOR VIEW}$",
+      "$\\texttt{WITH LOCK}$",
+      "$\\texttt{ALL ROWS}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-047",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "View state",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Visualforce page's view state is too large. Which change reduces it?",
+    "explanation": "Transient instance variables are not saved in the view state, which has a 170 KB limit. More forms add view state, and actionRegion limits what is processed, not what is stored.",
+    "options": [
+      "Mark request-only fields transient",
+      "Wrap fields in apex:actionRegion",
+      "Move fields to a static resource",
+      "Add more apex:form tags"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-048",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Code limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do classes marked @IsTest count toward the org's limit on Apex code size?",
+    "explanation": "Classes defined with the @IsTest annotation do not count against the org's limit for the total size of Apex code.",
+    "options": [
+      "They don't count against it",
+      "They count like any class",
+      "They count double",
+      "They count only if they fail"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-049",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Formula fields",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about formula fields are true? (Choose two.)",
+    "explanation": "A formula field is read-only and calculated each time the record is read, and cross-object formulas can reference parent fields. Summing children takes a roll-up summary field.",
+    "options": [
+      "Value is calculated when the record is read",
+      "Can sum the values of child records",
+      "Value is stored and indexed on save",
+      "Can be edited by users with access",
+      "Can reference fields on a parent record"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFPD1-T2-050",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Relationships",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two features are only available when the child uses a master-detail relationship? (Choose two.)",
+    "explanation": "Roll-up summaries and inherited sharing need master-detail. Cross-object formulas, related lists and lookup filters work with lookup relationships too.",
+    "options": [
+      "Child records listed in a related list",
+      "Sharing inherited from the parent",
+      "Lookup filters on the field",
+      "Roll-up summary fields on the parent",
+      "Cross-object formula fields"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFPD1-T2-051",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Message service",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two components on one Lightning page are not in the same DOM tree. Which feature lets them communicate?",
+    "explanation": "Lightning Message Service publishes messages on a message channel across the DOM, between LWC, Aura and Visualforce. Events and @api need a parent-child relationship.",
+    "options": [
+      "A bubbling, composed CustomEvent",
+      "Lightning Message Service",
+      "Parent @api properties",
+      "A shared @track field"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-052",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Errors in triggers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a before trigger stop one record from saving and show the user a message?",
+    "explanation": "addError on the record (or one of its fields) blocks that record's save and shows the message. An uncaught exception fails the whole operation, not just the one record.",
+    "options": [
+      "$\\texttt{Trigger.new.remove(record)}$",
+      "$\\texttt{System.assert(false, msg)}$",
+      "$\\texttt{throw new DmlException(msg)}$",
+      "$\\texttt{record.addError(msg)}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-T2-053",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team moves Apex from a sandbox to its own production org through Setup, with no CLI. Which tool fits?",
+    "explanation": "Change sets deploy metadata between related orgs, such as a sandbox and its production org, over a deployment connection. Data Loader moves records, not code.",
+    "options": [
+      "Scratch org push",
+      "Outbound change set",
+      "Data Loader export",
+      "Unlocked package install"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-054",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Exceptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When does the code in a finally block run?",
+    "explanation": "A finally block always runs after the try and any catch, so it suits cleanup. A LimitException ends the transaction and cannot be caught at all.",
+    "options": [
+      "Only when no exception occurs",
+      "Whether or not an exception occurs",
+      "Only after a LimitException",
+      "Only when the catch block rethrows"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-055",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Merge",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many records of the same sObject type can one merge operation combine?",
+    "explanation": "merge combines up to three records of the same type, keeping the master record and deleting the others while reparenting their related records.",
+    "options": [
+      "Three",
+      "Two",
+      "Five",
+      "Four"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-056",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "XSS",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which code is not protected by Visualforce's built-in XSS filtering?",
+    "explanation": "Standard apex components escape output by default, but custom JavaScript and code inside apex:includeScript have no built-in XSS protection; the developer must escape it.",
+    "options": [
+      "Text in apex:outputText",
+      "Values in apex:outputField",
+      "Custom JavaScript on the page",
+      "Labels in apex:pageBlock"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-T2-057",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "startTest",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A test runs 98 queries, calls Test.startTest(), then runs code. How many queries can that code make?",
+    "explanation": "startTest adds a fresh context with its own limit of 100 synchronous queries. After stopTest the test is back in the first context with only 2 left.",
+    "options": [
+      "2",
+      "98",
+      "100",
+      "200"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-T2-058",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Agentforce Vibes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a developer use the Agentforce Vibes extension (formerly Agentforce for Developers)?",
+    "explanation": "The extension ships with the Salesforce Extension Pack for Visual Studio Code and works with Salesforce DX projects, giving inline completions and an agentic chat.",
+    "options": [
+      "In VS Code with a Salesforce DX project",
+      "In the Setup menu's Flow Builder",
+      "In Developer Console's Query Editor",
+      "In the Visualforce development mode footer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-T2-059",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "sObjects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why use the generic sObject type in a method?",
+    "explanation": "The sObject type can hold any record, which suits code that handles several objects; you cast to Account or Contact to use their fields. It does not change DML or security.",
+    "options": [
+      "It makes queries run in system mode",
+      "It can hold a record of any object",
+      "It saves records without DML",
+      "It skips field-level security"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-T2-060",
+    "section": "pd",
+    "test": 2,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Decorators",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about LWC decorators are true? (Choose two.)",
+    "explanation": "A property or function can have only one decorator, and every public @api property is reactive. Since Spring '20 fields are reactive without @track, which observes inner changes.",
+    "options": [
+      "@track is required on every field",
+      "Public @api properties are reactive",
+      "@api fields can be set only by Apex",
+      "A field can have only one decorator",
+      "@wire can be combined with @api"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFPD1-D-001",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Governor limits",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two per-transaction limits are the same for synchronous and asynchronous Apex? (Choose two.)",
+    "explanation": "DML statements (150) and SOQL rows (50,000) do not change. SOQL queries rise to 200 and CPU time to 60,000 ms asynchronously, while System.enqueueJob drops from 50 jobs to 1.",
+    "options": [
+      "50 jobs added with enqueueJob",
+      "150 DML statements",
+      "50,000 SOQL rows retrieved",
+      "100 SOQL queries",
+      "10,000 ms of CPU time"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFPD1-D-002",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Relationships",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many levels of parent-to-child subqueries can a SOQL query have in API version 58.0 and later?",
+    "explanation": "From API version 58.0, SOQL can nest up to five levels of parent-to-child relationships; earlier versions allowed one. A query with more than five levels errors.",
+    "options": [
+      "Ten",
+      "One",
+      "Five",
+      "Three"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-003",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Null coalescing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does $\\texttt{label ?? fallback}$ return when label is null?",
+    "explanation": "The null coalescing operator ?? returns its right-hand operand when the left one is null, replacing an explicit null check.",
+    "options": [
+      "null",
+      "The value of fallback",
+      "An empty string",
+      "A NullPointerException"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-004",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Query limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many records can all SOQL queries in one transaction retrieve in total?",
+    "explanation": "SOQL queries can retrieve 50,000 records per transaction. 10,000 is the DML row limit, and 2,000 is the most one SOSL query returns.",
+    "options": [
+      "2,000",
+      "10,000",
+      "20,000",
+      "50,000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-D-005",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which trigger context lets code read the records being deleted, by Id?",
+    "explanation": "Delete triggers have Trigger.old and Trigger.oldMap. Trigger.new and newMap are not available because the records have no new version.",
+    "options": [
+      "$\\texttt{Trigger.oldMap}$",
+      "$\\texttt{Trigger.new}$",
+      "$\\texttt{Trigger.deleted}$",
+      "$\\texttt{Trigger.newMap}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-006",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Template directives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must each item in a for:each loop have?",
+    "explanation": "Salesforce's guide says every item rendered with for:each or iterator needs a key with a unique Id, so the framework can track which items change.",
+    "options": [
+      "An @api decorator",
+      "A data-id attribute set to its index",
+      "A unique key attribute",
+      "An lwc:if directive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-007",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Sharing keywords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In API version 67.0 and later, how does a class with no sharing keyword run?",
+    "explanation": "From API version 67.0, Apex without an explicit sharing declaration runs with sharing, unless it extends a parent class, whose mode it adopts. In API version 66.0 and earlier, such a class usually ran without sharing unless it was an Aura or LWC controller or was called from a with sharing class. Salesforce recommends always declaring it.",
+    "options": [
+      "It fails to compile",
+      "Without sharing",
+      "In the caller's mode always",
+      "With sharing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-008",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Coverage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does Salesforce say to focus on instead of the coverage percentage?",
+    "explanation": "The Apex guide says not to focus on the percentage but on testing every use case: positive and negative, and bulk as well as single records.",
+    "options": [
+      "Raising coverage to 100% on every class",
+      "Testing positive, negative and bulk cases",
+      "Testing against copies of production data",
+      "Testing only the longest methods"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-009",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Scratch orgs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the longest a scratch org can last?",
+    "explanation": "A scratch org can be set to last from 1 to 30 days when created; the default is 7. An expired scratch org cannot be restored.",
+    "options": [
+      "1 day",
+      "7 days",
+      "30 days",
+      "90 days"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-010",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Governor limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who can get an email when Apex uses more than 50% of a governor limit?",
+    "explanation": "You can specify users in the org to receive an email when their Apex surpasses 50% of an allocated per-request limit. These warnings do not count against the daily single email limit.",
+    "options": [
+      "Users named in Setup",
+      "The Apex class author only",
+      "The record owner only",
+      "The org's system administrators only"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-011",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Relationships",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many levels up can a child-to-parent relationship path go in SOQL, as in Contact.Account.Owner.Name?",
+    "explanation": "The SOQL reference allows no more than five levels in a child-to-parent relationship, and no more than 55 child-to-parent relationships in one query.",
+    "options": [
+      "Five",
+      "Two",
+      "Ten",
+      "Three"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-012",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Collections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which collection keeps only unique values with no guaranteed order?",
+    "explanation": "A Set holds unique elements; adding a value already present has no effect. Lists and arrays keep order and allow duplicates, and a Map stores key-value pairs.",
+    "options": [
+      "$\\texttt{Map<Id, Id>}$",
+      "$\\texttt{Set<Id>}$",
+      "$\\texttt{Id[]}$",
+      "$\\texttt{List<Id>}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-013",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Query limits",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A query on Account includes one Contacts subquery. How does it count against the query limits?",
+    "explanation": "Each parent-child relationship subquery counts as an extra query, against a separate limit three times the top-level one. Rows from the subquery count toward the row limit.",
+    "options": [
+      "Both count as one query",
+      "Subquery counts as an extra query",
+      "Subquery is not counted",
+      "Each Contact row counts as a query"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-014",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which context variable returns a value such as BEFORE_UPDATE for use in a switch?",
+    "explanation": "Trigger.operationType returns a System.TriggerOperation enum value like BEFORE_UPDATE or AFTER_INSERT. isExecuting only says the code is running in a trigger.",
+    "options": [
+      "$\\texttt{Trigger.size}$",
+      "$\\texttt{Trigger.operationType}$",
+      "$\\texttt{Trigger.isExecuting}$",
+      "$\\texttt{Trigger.event}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-015",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Markup naming",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A child has the public property itemName. Which attribute sets it in the parent's markup?",
+    "explanation": "Markup attributes use kebab case, so item-name maps to the JavaScript property itemName.",
+    "options": [
+      "$\\texttt{item-name}$",
+      "$\\texttt{item\\_name}$",
+      "$\\texttt{itemName}$",
+      "$\\texttt{ItemName}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-016",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "User mode",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which DML call enforces the running user's object, field and sharing permissions whatever the class's API version?",
+    "explanation": "Passing AccessLevel.USER_MODE to a Database method enforces the running user's permissions for that operation. SYSTEM_MODE and insert as system ignore them, and false only sets partial success. A plain insert follows the default, which changed in API version 67.0.",
+    "options": [
+      "$\\texttt{Database.insert(rec, AccessLevel.USER\\_MODE)}$",
+      "$\\texttt{Database.insert(rec, false)}$",
+      "$\\texttt{Database.insert(rec, AccessLevel.SYSTEM\\_MODE)}$",
+      "$\\texttt{insert as system rec;}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-017",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Asynchronous tests",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a test, what happens to a batch job started between startTest and stopTest?",
+    "explanation": "All asynchronous work started after startTest runs synchronously when stopTest executes, so the batch's results can be asserted right after.",
+    "options": [
+      "It is skipped in test context",
+      "It runs synchronously at stopTest",
+      "It must be mocked with a stub",
+      "It runs after the whole test method ends"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-018",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Dev Hub",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must the Salesforce CLI connect to before it can create scratch orgs?",
+    "explanation": "Scratch orgs are created from a Dev Hub, an org with the Dev Hub feature enabled, that the CLI is authorized to. Packages are built from the Dev Hub too.",
+    "options": [
+      "A Dev Hub org",
+      "A Full sandbox",
+      "The Developer Console",
+      "An unlocked package"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-019",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Multitenancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why must trigger code be written to handle many records in one call?",
+    "explanation": "DML on many records fires a trigger once per chunk of 200, and governor limits count for the whole transaction, so code that queries or saves per record runs out of limits.",
+    "options": [
+      "Bulk API loads skip the trigger",
+      "One call can carry 200 records",
+      "Each record runs in its own transaction",
+      "Limits apply per record, not per call"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-020",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "External IDs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method upserts a list of Assets using Line_Item_Id__c as the match key?",
+    "explanation": "Database.upsert takes the list and a field token naming the external ID field (the statement form is upsert assets Asset.Line_Item_Id__c;). merge combines duplicates of one object.",
+    "options": [
+      "$\\texttt{upsert assets WHERE Line\\_Item\\_Id\\_\\_c}$",
+      "$\\texttt{Database.upsert(assets, Asset.Line\\_Item\\_Id\\_\\_c)}$",
+      "$\\texttt{Database.upsert(assets, Line\\_Item\\_Id\\_\\_c, true)}$",
+      "$\\texttt{Database.merge(assets, Asset.Line\\_Item\\_Id\\_\\_c)}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-021",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Collections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Map<Id, Account> is asked for a key it does not contain. What does get return?",
+    "explanation": "Map.get returns null for a missing key, so check for null or use containsKey before using the result. Index errors are thrown by lists, not maps.",
+    "options": [
+      "null",
+      "A ListException",
+      "The first value in the map",
+      "An empty Account"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-022",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "DML limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many records can DML statements process in one transaction?",
+    "explanation": "DML can process 10,000 records per transaction. 150 is the number of DML statements, and 50,000 is the SOQL row limit.",
+    "options": [
+      "150",
+      "2,000",
+      "10,000",
+      "50,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-D-023",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Trigger order",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An object has two before insert triggers. In what order do they fire?",
+    "explanation": "When more than one trigger exists for the same object and event, the firing order is not guaranteed. That is a reason to keep one trigger per object that calls a handler.",
+    "options": [
+      "By API version",
+      "Alphabetical by name",
+      "Not guaranteed",
+      "Oldest trigger first"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-024",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Apex from LWC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Apex method signature can an LWC call?",
+    "explanation": "Methods called from Lightning components must be static, public or global, and annotated @AuraEnabled. Instance and private methods are not exposed, and a method without the annotation is not reachable.",
+    "options": [
+      "$\\texttt{@AuraEnabled public List<Case> getCases()}$",
+      "$\\texttt{@AuraEnabled public static List<Case> getCases()}$",
+      "$\\texttt{@AuraEnabled private static List<Case> getCases()}$",
+      "$\\texttt{public static List<Case> getCases()}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-025",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Visualforce controllers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which page attribute lets a standard controller work with a list of records?",
+    "explanation": "Adding recordSetVar to an apex:page with a standardController makes it a standard list controller over a set of records. extensions names controller extension classes.",
+    "options": [
+      "$\\texttt{recordSetVar}$",
+      "$\\texttt{extensions}$",
+      "$\\texttt{listController}$",
+      "$\\texttt{standardList}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-026",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Test data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do test methods create their own records rather than rely on org data?",
+    "explanation": "Tests that build their own data pass in every org they are deployed to and are not broken by changes to real records. Test data is never committed.",
+    "options": [
+      "Org data is read-only in tests",
+      "Tests must work in any org",
+      "It doubles the coverage",
+      "Created data skips validation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-027",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Salesforce CLI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which CLI command runs Apex tests in an org?",
+    "explanation": "sf apex run test runs Apex tests and reports results, for example with --result-format human. sf apex get log fetches a debug log.",
+    "options": [
+      "$\\texttt{sf project deploy start}$",
+      "$\\texttt{sf apex get log}$",
+      "$\\texttt{sf apex run test}$",
+      "$\\texttt{sf org open}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-028",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Roll-up summary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A master object must show the latest Close Date among its detail records. Which roll-up type fits?",
+    "explanation": "MAX returns the highest value of a number, currency, percent, date or date/time field, so the latest date. MIN would give the earliest.",
+    "options": [
+      "MAX",
+      "SUM",
+      "MIN",
+      "COUNT"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-029",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Junction objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Salesforce describes AccountContactRelation, linking contacts to many accounts, as which kind of object?",
+    "explanation": "A junction object has two master-detail relationships and models a many-to-many relationship; AccountContactRelation lets one contact relate to several accounts.",
+    "options": [
+      "Hierarchical object",
+      "Big object",
+      "Junction object",
+      "External object"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-030",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is true of Apex methods and classes by default?",
+    "explanation": "Methods and classes are final by default; the virtual modifier allows extension and overriding, and an override must use the override keyword.",
+    "options": [
+      "They are global",
+      "They are final",
+      "They are virtual",
+      "They are static"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-031",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Savepoints",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does Database.setSavepoint() count against governor limits?",
+    "explanation": "Setting a savepoint and rolling back each count toward the DML statement limit but not the DML row limit. Static variables are not reverted by a rollback.",
+    "options": [
+      "It counts against no governor limit",
+      "Against the DML row limit",
+      "Against the DML statement limit",
+      "Against the SOQL query limit"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-032",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Cascading",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Deleting an Account cascades to its child records. Which records fire delete triggers?",
+    "explanation": "Cascading delete operations do not invoke triggers on the cascaded records; only the record that started the delete is evaluated.",
+    "options": [
+      "The Account and every child",
+      "None, as deletes skip triggers",
+      "Only the child records",
+      "Only the Account itself"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-033",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Apex from LWC",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In API version 55.0 and later, what is not allowed on @AuraEnabled methods?",
+    "explanation": "From API version 55.0 an @AuraEnabled method cannot be overloaded; give each method a different name. Static, public and list-returning methods are normal.",
+    "options": [
+      "Static methods",
+      "List return types",
+      "Public methods",
+      "Overloaded methods"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-034",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Visualforce controllers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A page shows {!greeting}. Which controller member supplies the value?",
+    "explanation": "A merge field such as {!greeting} calls the getter getGreeting (or reads a public property). Setters write values from the page, and a private field without a getter is not visible.",
+    "options": [
+      "$\\texttt{private String greet;}$",
+      "$\\texttt{public void greeting()}$",
+      "$\\texttt{public String setGreeting()}$",
+      "$\\texttt{public String getGreeting()}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-035",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "startTest",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many times can one test method call Test.startTest()?",
+    "explanation": "Each test method may call startTest only once and stopTest only once.",
+    "options": [
+      "As often as needed",
+      "Once",
+      "Twice",
+      "Once per DML statement"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-036",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Debug logs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How long are system debug logs kept?",
+    "explanation": "System debug logs are kept for 24 hours; monitoring debug logs are kept for seven days.",
+    "options": [
+      "24 hours",
+      "7 days",
+      "1 hour",
+      "30 days"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-037",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Declarative versus code",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Case must not save if another open Case on the same Account has the same Type. What is needed?",
+    "explanation": "The check needs to read other Case records, which a validation rule formula on the saved record cannot count, and Account to Case is a lookup, so no roll-up summary is possible. A before trigger queries them in bulk and calls addError.",
+    "options": [
+      "A before trigger using addError",
+      "A roll-up of open Cases on Account",
+      "A formula field counting open Cases",
+      "A validation rule on the Case"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-038",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Formula fields",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Apex changes Amount on a queried record, then reads a formula field built on Amount. What value does it get?",
+    "explanation": "Formula fields return their value as of the query; changes to the fields they use show only after the record is saved and queried again, or after Formula.recalculateFormulas.",
+    "options": [
+      "The value from when it was queried",
+      "Null until the record is saved",
+      "An error for reading a stale field",
+      "The new value, recalculated at once"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-039",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Access modifiers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which access modifier lets code outside the namespace, such as a managed package's subscribers, call a method?",
+    "explanation": "global makes a method usable outside the application or namespace. public is visible only inside the namespace, and a global method needs a global class.",
+    "options": [
+      "$\\texttt{protected}$",
+      "$\\texttt{private}$",
+      "$\\texttt{global}$",
+      "$\\texttt{public}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-040",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Deleted records",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which keywords let a SOQL query return records in the Recycle Bin?",
+    "explanation": "ALL ROWS returns deleted and archived records, for example to undelete them. It cannot be combined with FOR UPDATE.",
+    "options": [
+      "$\\texttt{WITH DELETED}$",
+      "$\\texttt{ALL ROWS}$",
+      "$\\texttt{INCLUDE ARCHIVED}$",
+      "$\\texttt{FOR UPDATE}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-041",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Batch Apex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which three methods does a class implementing Database.Batchable define?",
+    "explanation": "start gathers the records (a QueryLocator or Iterable), execute processes each batch with fresh governor limits, and finish runs once at the end.",
+    "options": [
+      "$\\texttt{init, run, complete}$",
+      "$\\texttt{begin, execute, end}$",
+      "$\\texttt{start, execute, finish}$",
+      "$\\texttt{query, process, close}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-042",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Apex from LWC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What can't a method annotated @AuraEnabled(cacheable=true) do?",
+    "explanation": "Cacheable methods may only read data, so DML is not allowed. They can still be called imperatively as well as wired.",
+    "options": [
+      "Perform DML",
+      "Be called imperatively",
+      "Return a list",
+      "Run a SOQL query"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-043",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Visualforce controllers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a Visualforce action method return to send the user to another page?",
+    "explanation": "An action method returns a PageReference to navigate, or null to stay on the same page. ApexPages.Message is for adding messages to the page.",
+    "options": [
+      "$\\texttt{String}$",
+      "$\\texttt{PageReference}$",
+      "$\\texttt{Boolean}$",
+      "$\\texttt{ApexPages.Message}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-044",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Static variables in tests",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A static variable is initialized to 5. One test method changes it to 9. What does the next test method see?",
+    "explanation": "Each test method, and the setup method, runs as its own transaction, and the static context is reinitialized before each, so static initializers run again and the next method sees 5.",
+    "options": [
+      "9",
+      "null",
+      "5",
+      "A compile error"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-045",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Deployment tests",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which test level runs only the classes you name when deploying?",
+    "explanation": "RunSpecifiedTests with --tests runs only the listed test classes, and they must still meet coverage for the deployed code. RunLocalTests runs every test outside managed packages.",
+    "options": [
+      "$\\texttt{RunLocalTests}$",
+      "$\\texttt{NoTestRun}$",
+      "$\\texttt{RunAllTestsInOrg}$",
+      "$\\texttt{RunSpecifiedTests}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-046",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Custom metadata",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which configuration records can be deployed between orgs with the metadata?",
+    "explanation": "Records of custom metadata types are metadata, so they move with change sets and Metadata API deployments. Custom setting and custom object records are data and must be loaded separately.",
+    "options": [
+      "Hierarchy custom setting records",
+      "Custom metadata type records",
+      "Records of a custom object",
+      "List custom setting records"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-047",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "Schema describe",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describe call returns the values of a picklist field?",
+    "explanation": "DescribeFieldResult.getPicklistValues returns the field's PicklistEntry list. getReferenceTo lists the objects a lookup can point to.",
+    "options": [
+      "$\\texttt{getReferenceTo()}$",
+      "$\\texttt{getRecordTypeInfos()}$",
+      "$\\texttt{getChildRelationships()}$",
+      "$\\texttt{getPicklistValues()}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-048",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Exceptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A DML insert fails a validation rule. Which exception type can the code catch?",
+    "explanation": "A failed DML operation throws System.DmlException, whose getDmlMessage gives the rule's error. QueryException comes from SOQL, and LimitException cannot be caught.",
+    "options": [
+      "$\\texttt{LimitException}$",
+      "$\\texttt{QueryException}$",
+      "$\\texttt{DmlException}$",
+      "$\\texttt{ListException}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-049",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Mixed DML",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why does inserting a User with a role and an Account in one transaction fail?",
+    "explanation": "DML on setup objects such as User (with a role) and on non-setup objects such as Account in one transaction causes a mixed DML error. Move one part to a future method.",
+    "options": [
+      "Users can't be inserted in Apex",
+      "Account must be inserted async",
+      "Setup and non-setup DML can't mix",
+      "User needs a SOSL search first"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-050",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Batch Apex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the default batch size for Database.executeBatch?",
+    "explanation": "The default scope is 200 records. With a QueryLocator the scope can be set up to 2,000.",
+    "options": [
+      "50",
+      "100",
+      "200",
+      "2,000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFPD1-D-051",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Lightning Data Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do two components showing the same record stay in sync after one edits it through LDS?",
+    "explanation": "Lightning Data Service keeps a client-side cache shared across components, so a change made through LDS shows in every component using that record. Apex results are cached separately.",
+    "options": [
+      "Apex pushes a platform event",
+      "Each polls the server every second",
+      "They share the LDS client cache",
+      "The page reloads on save"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-052",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Visualforce controllers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Whose permissions does a standard controller enforce on a Visualforce page?",
+    "explanation": "Standard controllers run in user mode, enforcing the current user's permissions, field-level security and sharing; that is why extending one keeps a page within the user's access.",
+    "options": [
+      "The page creator's",
+      "The org's admin's",
+      "None, it runs as system",
+      "The current user's"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-053",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Test annotations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which annotation marks a class that holds only test code?",
+    "explanation": "@IsTest marks test classes and test methods. @TestSetup marks the method that builds shared data, and @TestVisible exposes private members to tests.",
+    "options": [
+      "$\\texttt{@Deprecated}$",
+      "$\\texttt{@IsTest}$",
+      "$\\texttt{@TestVisible}$",
+      "$\\texttt{@TestSetup}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-054",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Developer Console",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Developer Console feature runs a block of Apex once without saving a class?",
+    "explanation": "Execute Anonymous compiles and runs a code block once, and its output appears in a debug log. The Query Editor only runs SOQL.",
+    "options": [
+      "Query Editor",
+      "Checkpoints",
+      "Execute Anonymous",
+      "Test Runner"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-055",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Custom metadata",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do SOQL queries on custom metadata types count against the per-transaction query limit?",
+    "explanation": "The Apex guide says the SOQL query limit does not apply to custom metadata types, so a transaction can run unlimited queries on custom metadata records.",
+    "options": [
+      "They don't count against it",
+      "They count only above 100 records",
+      "Each counts as three queries",
+      "Each counts as one query"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-056",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "sObjects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Contact has the fields AccountId and Account. What does the Account field hold?",
+    "explanation": "Each relationship has two fields: an Id field (AccountId) and a field of the parent's type (Account) that points to the related sObject, so contact.Account.Name works after a query.",
+    "options": [
+      "The Account's 18-character Id",
+      "A list of the Account's contacts",
+      "The Account's record name",
+      "The related Account sObject"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-057",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Loops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which loop runs once for every element of the list accts?",
+    "explanation": "Apex's list or set iteration loop is for (Type variable : collection). in, foreach and as belong to other languages.",
+    "options": [
+      "$\\texttt{for (Account a : accts) \\{\\}}$",
+      "$\\texttt{foreach (Account a : accts) \\{\\}}$",
+      "$\\texttt{for (accts as Account a) \\{\\}}$",
+      "$\\texttt{for (Account a in accts) \\{\\}}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-058",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Dynamic SOQL",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method runs a SOQL query built as a String at run time?",
+    "explanation": "Database.query runs dynamic SOQL and counts toward the SOQL limit. Search.query runs dynamic SOSL, and the other two methods do not exist.",
+    "options": [
+      "$\\texttt{Search.query(soql)}$",
+      "$\\texttt{Database.query(soql)}$",
+      "$\\texttt{System.runQuery(soql)}$",
+      "$\\texttt{Database.find(soql)}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-059",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Future methods",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why can't a future method take a List<Account> parameter?",
+    "explanation": "Future method parameters must be primitives or collections of them. An sObject could change between the call and the run, so pass Ids and query fresh data.",
+    "options": [
+      "Lists exceed the heap limit",
+      "Future methods take no parameters",
+      "sObjects can't be serialized",
+      "Records may change before it runs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-060",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Lightning Data Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When would you choose lightning-record-edit-form over lightning-record-form?",
+    "explanation": "The view and edit forms let you lay out fields yourself, prepopulate values and change rendering. lightning-record-form is the quick option driven by a layout or field list.",
+    "options": [
+      "To lay out fields or prefill values",
+      "To call Apex on save",
+      "To show a list of many records",
+      "To create a record with no fields"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-061",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Data access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describe check confirms the user may create Contact records before an insert?",
+    "explanation": "isCreateable checks the object-level create permission. isAccessible is read, isUpdateable is edit and isDeletable is delete.",
+    "options": [
+      "$\\texttt{Schema.sObjectType.Contact.isUpdateable()}$",
+      "$\\texttt{Schema.sObjectType.Contact.isCreateable()}$",
+      "$\\texttt{Schema.sObjectType.Contact.isAccessible()}$",
+      "$\\texttt{Schema.sObjectType.Contact.isDeletable()}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-062",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "SOSL tests",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A SOSL query in a test returns no records. Which method makes it return chosen record Ids?",
+    "explanation": "SOSL in a test returns nothing unless Test.setFixedSearchResults supplies the Ids it should return. loadData inserts records from a CSV.",
+    "options": [
+      "$\\texttt{Test.setFixedSearchResults}$",
+      "$\\texttt{Test.isRunningTest}$",
+      "$\\texttt{Test.setMock}$",
+      "$\\texttt{Test.loadData}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-063",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Debugging",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which tool lets a developer step through a recorded debug log in VS Code with breakpoints?",
+    "explanation": "Apex Replay Debugger reads a debug log and replays it with breakpoints and variable inspection in VS Code, with no extra license.",
+    "options": [
+      "Query Plan tool",
+      "Setup Audit Trail",
+      "Apex Replay Debugger",
+      "Execute Anonymous"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-064",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Multitenancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When Apex load grows, who handles scaling the platform it runs on?",
+    "explanation": "The Apex guide says that in a multitenant cloud you do not have to scale your code because the platform does it for you; governor limits keep any one transaction from monopolizing it.",
+    "options": [
+      "Each org's admin, by adding servers",
+      "The developer, by tuning threads",
+      "Salesforce, as part of the platform",
+      "Each org, by buying more capacity"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-065",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "External IDs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When will an upsert on a custom external ID match the value ABC123 to an existing abc123?",
+    "explanation": "Custom field matching is case-insensitive only when the field is Unique with the option to treat ABC and abc as duplicate values; otherwise, including an External ID field that is not Unique or is case-sensitive, ABC123 and abc123 are different keys.",
+    "options": [
+      "Field set as Unique and case-sensitive",
+      "Field set as Unique and case-insensitive",
+      "Field set as Required and External ID",
+      "Field set as External ID only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-066",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Static members",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How long does a static variable in an Apex class keep its value?",
+    "explanation": "Static variables are initialized once per transaction and keep their value only for that transaction, which is why they suit recursion flags in triggers.",
+    "options": [
+      "Until the class is redeployed",
+      "Until the org restarts",
+      "For the current transaction",
+      "For the user's session"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-067",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "SOSL",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a SOSL query in Apex return?",
+    "explanation": "SOSL returns a list of lists, one inner list per object in the RETURNING clause, in that order.",
+    "options": [
+      "$\\texttt{List<AggregateResult>}$",
+      "$\\texttt{Map<String, SObject>}$",
+      "$\\texttt{List<List<SObject>>}$",
+      "$\\texttt{List<SObject>}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-068",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Scheduled Apex",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which interface does a class implement to run Apex at a set time?",
+    "explanation": "A Schedulable class has an execute(SchedulableContext) method and is scheduled with System.schedule or from Setup. Synchronous limits apply to scheduled jobs.",
+    "options": [
+      "$\\texttt{Database.Batchable}$",
+      "$\\texttt{Database.Stateful}$",
+      "$\\texttt{Schedulable}$",
+      "$\\texttt{Queueable}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-069",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Lifecycle hooks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which hook is the place to clean up, such as removing a listener, when a component leaves the page?",
+    "explanation": "disconnectedCallback is invoked when the component is removed from the DOM, so cleanup belongs there. connectedCallback runs on insertion.",
+    "options": [
+      "$\\texttt{errorCallback()}$",
+      "$\\texttt{connectedCallback()}$",
+      "$\\texttt{renderedCallback()}$",
+      "$\\texttt{disconnectedCallback()}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-070",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "Data access",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Code uses without sharing to show records the user cannot normally see. What does Salesforce advise?",
+    "explanation": "Salesforce recommends without sharing only for classes that require system-level access, since they can reach records beyond the user's access. Triggers cannot carry a sharing keyword.",
+    "options": [
+      "Put it on the trigger itself",
+      "Use it on every Visualforce controller",
+      "Pair it with WITH SECURITY_ENFORCED",
+      "Only for classes that need system access"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-071",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "runAs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Inside a runAs block, whose sharing mode applies to a method defined in another class?",
+    "explanation": "The guide says a user-defined method called in a runAs block uses the sharing mode of the class where it is defined, not the test class's.",
+    "options": [
+      "That other class's",
+      "Always without sharing",
+      "Always with sharing",
+      "The test class's"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-072",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Debug logs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What happens when an org writes more than 1,000 MB of debug logs in 15 minutes?",
+    "explanation": "Generating over 1,000 MB of logs in a 15-minute window disables trace flags, and the users who last changed them are told they can re-enable them after 15 minutes.",
+    "options": [
+      "Log levels drop to ERROR",
+      "Trace flags are disabled",
+      "The org's API calls are blocked",
+      "Oldest logs are emailed out"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-073",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdPlatform",
+    "skill": "Agentforce Vibes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must be enabled before Agentforce Vibes works in VS Code?",
+    "explanation": "Salesforce says to enable Salesforce telemetry in VS Code and the Salesforce CLI before using Agentforce Vibes, then reload the window.",
+    "options": [
+      "The Metadata API in Setup",
+      "Lightning Web Security",
+      "Salesforce telemetry",
+      "Debug log trace flags"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-074",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDataModel",
+    "skill": "sObjects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Apex reads a field that was not in the SOQL query for that record. What happens?",
+    "explanation": "Reading a field that the query did not retrieve throws System.SObjectException at run time. Apex does not fetch it automatically.",
+    "options": [
+      "A compile error occurs",
+      "The field is queried lazily",
+      "SObjectException is thrown",
+      "The field returns null"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-075",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdApex",
+    "skill": "Interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which keyword makes a class provide the methods of an interface?",
+    "explanation": "A class implements an interface and must define all its methods. extends is for inheriting from a virtual or abstract class.",
+    "options": [
+      "$\\texttt{implements}$",
+      "$\\texttt{inherits}$",
+      "$\\texttt{extends}$",
+      "$\\texttt{override}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-076",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdQueries",
+    "skill": "Upsert",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which DML operation inserts new records and updates existing ones in one call?",
+    "explanation": "upsert matches records on Id or an external ID: unmatched records are inserted and matched ones updated. merge combines duplicates.",
+    "options": [
+      "$\\texttt{update}$",
+      "$\\texttt{undelete}$",
+      "$\\texttt{upsert}$",
+      "$\\texttt{merge}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFPD1-D-077",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTriggers",
+    "skill": "Order of execution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When do queueable jobs enqueued during a save actually run?",
+    "explanation": "Enqueued asynchronous Apex, including queueable jobs and future methods, is post-commit logic: it starts only after all DML is committed.",
+    "options": [
+      "Right after System.enqueueJob",
+      "After the transaction commits",
+      "Before duplicate rules run",
+      "Before the after triggers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-078",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdLwc",
+    "skill": "Agentforce actions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An ISV packages an Apex agent action. What access must the @InvocableMethod class have?",
+    "explanation": "Agents cannot yet be packaged with a namespace, so they reach only global Apex in a managed package: the class, the method, the wrapper classes and their invocable variables.",
+    "options": [
+      "$\\texttt{public}$",
+      "$\\texttt{global}$",
+      "$\\texttt{public virtual}$",
+      "$\\texttt{private}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFPD1-D-079",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdUiSecurity",
+    "skill": "SOQL injection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is a bind variable safer than adding user input to a dynamic SOQL string?",
+    "explanation": "A bind variable is passed to the query engine as data, so input such as a quote and an OR clause cannot change the query's logic.",
+    "options": [
+      "Input is treated as a value, not code",
+      "Binds escape HTML characters",
+      "Binds cap the rows returned",
+      "Binds check field-level security"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFPD1-D-080",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdTesting",
+    "skill": "Controller tests",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a test set the page a Visualforce controller reads its parameters from?",
+    "explanation": "Test.setCurrentPage sets the current PageReference, so ApexPages.currentPage().getParameters() in the controller reads the values the test puts on it.",
+    "options": [
+      "$\\texttt{Test.setPage(pageRef)}$",
+      "$\\texttt{ApexPages.setPage(pageRef)}$",
+      "$\\texttt{PageReference.load(pageRef)}$",
+      "$\\texttt{Test.setCurrentPage(pageRef)}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFPD1-D-081",
+    "section": "pd",
+    "test": 0,
+    "module": 1,
+    "domain": "sfpdDeploy",
+    "skill": "Environments",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer needs to fix a bug in production Apex. Where must the change be made?",
+    "explanation": "Apex cannot be developed directly in a production org; it is written in a sandbox, scratch org or Developer Edition org and deployed with tests.",
+    "options": [
+      "In production's Developer Console",
+      "In a production anonymous block",
+      "In another org, then deployed",
+      "Directly in production Setup"
+    ],
+    "correct": [
+      2
+    ]
+  }
+]

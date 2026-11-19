@@ -44,6 +44,176 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  frcivique: {
+  "answer": "France's examen civique has been required since 1 January 2026 for a first multi-year residence card (carte de séjour pluriannuelle), a first resident card (carte de résident) and naturalisation by decree. It is a 40-question multiple-choice test in French, 45 minutes at most, taken on a computer or tablet at a centre approved by the Ministry of the Interior: 28 knowledge questions and 12 situations across five themes. The pass mark is 80% (32 of 40) for all three pathways; the questions get harder from the residence card to naturalisation.",
+  "rows": [
+    { "label": "Questions", "value": "40 multiple choice: 28 knowledge, 12 situations" },
+    { "label": "Time", "value": "45 minutes at most, on a computer or tablet" },
+    { "label": "Pass mark", "value": "80% (32 of 40), the same for all three pathways" },
+    { "label": "Scoring", "value": "1 point per right answer; wrong or blank answers score 0" },
+    { "label": "Who takes it", "value": "First multi-year residence card, first resident card, naturalisation" },
+    { "label": "Themes", "value": "Republican principles 11, institutions 6, rights and duties 11, history and geography 8, daily life 4" },
+    { "label": "Validity", "value": "A pass does not expire" }
+  ],
+  "basedOn": "Arrêté du 10 octobre 2025, CESEDA R413-12-1, D413-12-2 and R413-15, and the Ministry of the Interior's formation civique pages, checked November 18, 2026",
+  "source": {
+    "name": "Légifrance: arrêté du 10 octobre 2025 on the examen civique",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052381620"
+  },
+  "tigertest": "240 original French-language questions in six 40-question tests that follow the official split of themes and situations, 45 minutes and 80% to pass. Tests 1 and 2 are written at the multi-year residence card level, 3 and 4 at the resident card level, 5 and 6 at the naturalisation level. Free to start. No question from the official list is reused. Model language review only."
+  },
+  sfappbuilder: {
+    answer:
+      "The Salesforce Certified Platform App Builder exam has 60 scored multiple-choice and multiple-select questions, plus up to 5 unscored ones, in 105 minutes, and you need 73% to pass. It was refreshed in August 2026 to the Summer '26 release, with Business Logic and Process Automation 32%, Data Modeling and Management 20%, Salesforce Fundamentals 18%, User Interface 17% and App Deployment 13%. Older guides that give 63% or 68% to pass describe earlier versions.",
+    rows: [
+      { label: "Questions", value: "60 scored, plus up to 5 unscored" },
+      { label: "Time", value: "105 minutes" },
+      { label: "Passing score", value: "73%" },
+      { label: "Largest section", value: "Business Logic and Process Automation, 32%" },
+      { label: "Exam guide", value: "Refreshed in August 2026 (Summer '26)" },
+      { label: "Run by", value: "Salesforce, registered through Trailhead" },
+    ],
+    basedOn: "the Salesforce Certified Platform App Builder exam guide (Summer '26), checked November 2026",
+    source: { name: "Trailhead: Salesforce Certified Platform App Builder", url: "https://trailhead.salesforce.com/credentials/platformappbuilder" },
+  },
+  sfpd1: {
+    answer:
+      "The Salesforce Certified Platform Developer exam, formerly Platform Developer I (PDI), tests building custom business logic and interfaces on the Salesforce Platform with Apex, SOQL, triggers and Lightning Web Components. Guides quoting the current exam guide give 60 scored multiple-choice and multiple-select questions plus up to 5 unscored ones in 105 minutes, with 68% needed to pass. Salesforce's Trailhead cert prep weights its four sections Developer Fundamentals 27%, Process Automation and Logic 28%, User Interface 25%, and Testing, Debugging, and Deployment 20%.",
+    rows: [
+      { label: "Questions", value: "60 scored, plus up to 5 unscored (guides say)" },
+      { label: "Time", value: "105 minutes (guides say)" },
+      { label: "Passing score", value: "68% (guides say)" },
+      { label: "Largest section", value: "Process Automation and Logic, 28%" },
+      { label: "Formerly", value: "Platform Developer I (PDI)" },
+      { label: "Run by", value: "Salesforce, registered through Trailhead" },
+    ],
+    basedOn: "Salesforce's Trailhead Platform Developer cert prep section weights, and the exam guide as quoted by study guides, checked November 2026",
+    source: { name: "Trailhead: Salesforce Certified Platform Developer", url: "https://trailhead.salesforce.com/credentials/platformdeveloperi" },
+  },
+  carshair: {
+    answer:
+      "The Red Seal Hairstylist exam is the interprovincial certificate of qualification exam for hairstylists in Canada. It has 120 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Hairstylist across 8 Major Work Activities, led by altering hair colour (25 questions) and cutting hair (24). Ontario (trade 332A) does not currently offer the Red Seal endorsement for this trade and uses its own Certificate of Qualification exam.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Hair colour 25, cutting 24, chemical texture 17, styling 16" },
+      { label: "Other areas", value: "Common occupational skills 14, hair and scalp care 11, salon operations 7, specialized services 6" },
+      { label: "Standard", value: "Red Seal Occupational Standard for Hairstylist" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal Hairstylist exam breakdown and the Red Seal Exam Preparation Guide, checked November 2026",
+    source: { name: "Red Seal: Hairstylist exam information", url: "https://red-seal.ca/eng/trades/hairstylists/exam-information.shtml" },
+  },
+  carscook: {
+    answer:
+      "The Red Seal Cook exam is the interprovincial certificate of qualification exam for cooks in Canada (trade code 415A in Ontario). It has 150 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Cook across 13 Major Work Activities, led by meats, game, poultry and variety meats (16 questions) and fish and seafood (15).",
+    rows: [
+      { label: "Questions", value: "150 multiple choice, 4 options each" },
+      { label: "Time", value: "Up to 4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Meats and poultry 16, fish and seafood 15, hygiene and safety 13, sauces 13" },
+      { label: "Other areas", value: "Produce 12, stocks and soups 12, kitchen skills 11, grains and nuts 11, dairy and eggs 10, pasta 10, baking 10, salads 9, specialty 8" },
+      { label: "Standard", value: "Red Seal Occupational Standard for Cook" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal Cook exam breakdown and the Red Seal Exam Preparation Guide, checked November 2026",
+    source: { name: "Red Seal: Cook exam information", url: "https://red-seal.ca/eng/trades/cooks/exam-information.shtml" },
+  },
+  cadronebasic: {
+    answer:
+      "In Canada, anyone flying a drone that weighs 250 g to 25 kg needs a pilot certificate from Transport Canada, unless directly supervised by a certified pilot, and the drone must be registered and marked. The Pilot Certificate - Basic Operations comes from passing the Small Basic Exam online in Transport Canada's Drone Management Portal: 35 multiple-choice questions in 90 minutes, with 65% or higher to pass, open to people 14 and older. Questions are based on Transport Canada's knowledge requirements document TP 15263. A basic certificate covers flights in uncontrolled airspace, at least 30 m horizontally from people not involved, below 122 m (400 ft) above ground and outside 3 nautical miles of an airport and 1 nautical mile of a heliport. Flying in controlled airspace or near people needs the advanced certificate. The certificate does not expire, but pilots must show recent activity within 24 months.",
+    rows: [
+      { label: "Questions", value: "35 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "65%" },
+      { label: "Minimum age", value: "14" },
+      { label: "Based on", value: "TP 15263 (Fourth Edition, March 2025) and CARs Part IX" },
+      { label: "Where", value: "Online, Transport Canada Drone Management Portal, English or French" },
+      { label: "Retakes", value: "After a 24-hour wait, as often as needed" },
+      { label: "Certificate", value: "Does not expire; 24-month recency rule" },
+      { label: "Run by", value: "Transport Canada" },
+    ],
+    basedOn: "Transport Canada's Small Basic Exam page and TP 15263, and CARs Part IX as amended by SOR/2025-70, checked November 2026",
+    source: { name: "Transport Canada: Small Basic Exam", url: "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic" },
+  },
+  cahambasic: {
+    answer:
+      "In Canada, Innovation, Science and Economic Development Canada (ISED) issues the Amateur Radio Operator Certificate with Basic Qualification and a call sign, which together let you operate an amateur station without a separate station licence. The Basic exam has 100 multiple-choice questions, one drawn from each of the 100 topics in ISED's Basic syllabus (RIC-3), and the pass mark is 70%. A score of 80% or more earns Basic with Honours, which adds the amateur bands below 30 MHz; Basic alone covers every band above 30 MHz. ISED-accredited examiners give the exam in person or by videoconference. It is closed book except for ISED's approved formula and block diagram sheet, a calculator that cannot store formulas or text is allowed, and there is no set time limit. Since July 15, 2025 every Basic exam uses ISED's updated question bank.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one from each of 100 syllabus topics" },
+      { label: "Pass mark", value: "70%; 80% or more gives Basic with Honours" },
+      { label: "Time", value: "No set limit; most finish within an hour" },
+      { label: "Aids", value: "ISED formula and block diagram sheet; calculator without memory" },
+      { label: "Run by", value: "ISED-accredited examiners, in person or by videoconference" },
+      { label: "Basic privileges", value: "All amateur bands above 30 MHz, up to 250 W DC input" },
+      { label: "Honours adds", value: "All amateur bands below 30 MHz (HF)" },
+    ],
+    basedOn: "ISED RIC-3 Issue 5 (March 2022), RIC-1 Issue 8 (May 2025), RBR-4 Issue 3 (July 2022) and the amateur radio exam generator page (updated July 15, 2025), checked November 2026",
+    source: { name: "ISED: RIC-3, Information on the Amateur Radio Service", url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service" },
+  },
+  ea3: {
+    answer:
+      "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",
+    rows: [
+      { label: "Questions", value: "100 (85 scored, 15 unscored)" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Rules tested", value: "Law as of December 31, 2025, for July 1, 2026 to February 28, 2027" },
+      { label: "Largest domains", value: "Practices and procedures 26, representation 25" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
+      { label: "Attempts", value: "Up to four per part each testing window" },
+      { label: "Passed parts", value: "Carry over for three years" },
+      { label: "Given by", value: "PSI for the IRS" },
+    ],
+    basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
+    source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
+  },
+  ea2: {
+    answer:
+      "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 2 covers businesses. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 2's three domains are business entities and considerations (30 scored questions), business tax preparation (37) and specialized returns and taxpayers (18). For exams from July 1, 2026 to February 28, 2027, questions follow tax law as amended through December 31, 2025 and relate to calendar year 2025.",
+    rows: [
+      { label: "Questions", value: "100 (85 scored, 15 unscored)" },
+      { label: "Time", value: "3.5 hours" },
+      { label: "Passing score", value: "500 on a 200 to 800 scale" },
+      { label: "Tax year tested", value: "2025, for July 1, 2026 to February 28, 2027" },
+      { label: "Largest domain", value: "Business tax preparation, 37 scored questions" },
+      { label: "Where", value: "PSI test center or remote proctoring, both in the U.S.; international testing delayed" },
+      { label: "Attempts", value: "Up to four per part each testing window" },
+      { label: "Passed parts", value: "Carry over for three years" },
+      { label: "Given by", value: "PSI for the IRS" },
+    ],
+    basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
+    source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
+  },
+  linuxplus: {
+    answer:
+      "The CompTIA Linux+ exam (XK0-006) has a maximum of 90 questions in 90 minutes, multiple choice and performance-based, and you need 720 on a 100 to 900 scale to pass. It covers System Management 23%, Services and User Management 20%, Security 18%, Automation, Orchestration, and Scripting 17% and Troubleshooting 22%. XK0-006 launched on July 15, 2025, and the English XK0-005 exam retired on January 13, 2026.",
+    rows: [
+      { label: "Questions", value: "Up to 90" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "720 on a 100 to 900 scale" },
+      { label: "Exam code", value: "XK0-006 (replaced XK0-005)" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "CompTIA, at Pearson VUE or online" },
+    ],
+    basedOn: "the CompTIA Linux+ XK0-006 exam objectives (Document Version 5.0)",
+    source: { name: "CompTIA", url: "https://www.comptia.org/en-us/certifications/linux/" },
+  },
+  nailtech: {
+    answer:
+      "Most US states license nail technicians (called manicurists in some states) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Nail Technology Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline weights infection control and safety 15 percent, anatomy and physiology 15 percent, chemistry of nail products 10 percent, pre-service 5 percent, nail service tools 13 percent, manicure and pedicure services 18 percent, nail enhancement services 20 percent and post-service 4 percent. Each state board sets its passing score; many use 75. Training hours, fees and the practical exam vary by state, and some states use a different exam provider.",
+    rows: [
+      { label: "Questions", value: "110 (100 scored), four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Set by each board; 75 in many states (e.g. South Carolina)" },
+      { label: "Largest area", value: "Nail enhancement services, 20%" },
+      { label: "Also required", value: "Usually a practical exam (varies by state)" },
+      { label: "Developed by", value: "NIC (National-Interstate Council of State Boards of Cosmetology)" },
+    ],
+    basedOn: "the NIC National Nail Technology Theory Examination candidate information bulletin, effective September 1, 2025 (revised March 1, 2026), checked November 2026",
+    source: { name: "NIC Nail Technology Theory CIB", url: "https://prov-testing.github.io/nic_cib/nail_technology_national_theory_english.html" },
+  },
   frvtc: {
   "answer": "France's VTC chauffeur theory examination has seven weighted subjects, with 91 multiple-choice questions and 16 short written answers over 230 minutes. Eligibility for the separate practical assessment requires a weighted average of at least 10/20 and at least 6/20 in every subject except English, which requires 4/20. The practical assessment includes at least 20 minutes of driving and requires 12/20.",
   "rows": [

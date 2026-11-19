@@ -6,6 +6,8 @@ export const TIGER_EXAM_IDS = [
   "cmaa", "mace",
   // Reviewed physician-assistant and electronic-health-records specialists.
   "pance", "cehrs",
+  // Reviewed French civic-study and nail-care specialists.
+  "frcivique", "nailtech",
   "driving", // Car-test mascot; original site branding remains at the public root.
   "cdl", "cdlx", "moto", "civics", "part107", "ham", "epa608",
   "cna", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
@@ -68,7 +70,6 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
 const BORROWED_SETS: Record<string, string> = {
   carshair: "cosmetology",
   carscook: "foodhandler",
-  nailtech: "cosmetology",
   frvtc: "driving",
   zafirearm: "capal",
   realestatebroker: "realestate",

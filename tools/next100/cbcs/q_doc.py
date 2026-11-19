@@ -8,7 +8,7 @@ Q = [
  'Assessment', ['Subjective', 'Objective', 'Plan'],
  "Subjective holds the patient's account, Objective the exam and test findings, Assessment the diagnosis, and Plan the treatment and follow-up."),
 ('Which provider query follows compliant practice?',
- 'Open question citing the record', ['One naming the payment gain', 'One suggesting a single answer', 'One asking to rewrite the note'],
+ 'Open question citing the record', ['Question listing only one diagnosis', 'Open question noting the DRG impact', 'Question asking to amend for coverage'],
  'A compliant query presents the clinical facts from the record and lets the provider choose, without leading or mentioning reimbursement.'),
 ('Which suffix names a surgical repair?',
  '-plasty', ['-ectomy', '-otomy', '-ostomy'],
@@ -23,6 +23,6 @@ Q = [
  'Query the provider', ['Code the unspecified side', 'Code both sides', 'Use the later note'],
  "ICD-10-CM Section I.B.13 says conflicting documentation about the affected side should be clarified by querying the patient's provider."),
 ("Which record shows the reason for an office visit and the provider's findings that day?",
- 'Progress note', ['Encounter form', 'Remittance advice', 'Patient registration form'],
+ 'Progress note', ['Encounter form', 'Superbill', 'Problem list'],
  'The progress note documents the visit: the complaint, findings, assessment and plan. The encounter form lists the services checked for charge entry.'),
 ]

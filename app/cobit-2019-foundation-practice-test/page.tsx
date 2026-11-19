@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Is COBIT 2019 Foundation still available now that COBIT 7 is out?",
-    a: "ISACA replaced the COBIT 2019 Foundation certificate with the COBIT 7 Foundation certificate on 19 November 2026. ISACA's page says you can still buy the COBIT 2019 exam until 30 June 2027 to earn the COBIT 2019 certificate. This practice test covers COBIT 2019 only; COBIT 7 content is not modelled yet, and we will add it once ISACA publishes the COBIT 7 framework material.",
+    a: "ISACA replaced the COBIT 2019 Foundation certificate with the COBIT 7 Foundation certificate on 19 November 2026. ISACA's page says you can still buy the COBIT 2019 exam until 30 June 2027 to earn the COBIT 2019 certificate. This practice test covers COBIT 2019 only. ISACA sells the COBIT 7 framework through COBIT 7 Premium Access and has not published it openly, so COBIT 7 content is not modelled yet; we will add it once we can work from ISACA's public COBIT 7 material.",
   },
   {
     q: "What topics does the COBIT 2019 Foundation exam cover?",

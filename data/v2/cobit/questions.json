@@ -11,12 +11,12 @@
     "stem": "How many governance and management objectives does the COBIT 2019 core model contain?",
     "options": [
       "35",
-      "34",
       "40",
+      "34",
       "37"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The core model has 40 objectives: 5 governance objectives in EDM and 35 management objectives in APO, BAI, DSS and MEA. COBIT 5 had 37 processes."
   },
@@ -157,13 +157,13 @@
     "skill": "Workflow first step",
     "stem": "What is the first step of the COBIT 2019 governance system design workflow?",
     "options": [
-      "Refine the scope of the governance system",
       "Understand the enterprise context and strategy",
+      "Refine the scope of the governance system",
       "Resolve conflicts between design factors",
       "Set target capability levels for every process"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The workflow is: understand the enterprise context and strategy, determine the initial scope, refine the scope, then resolve conflicts and conclude the design."
   },
@@ -263,12 +263,12 @@
     "stem": "In COBIT 2019, what does enterprise I&T cover?",
     "options": [
       "Only the enterprise systems owned and run by the IT department",
-      "All I&T processing used to reach enterprise goals, wherever it happens",
       "Only the technology bought under contracts signed by the CIO",
-      "Only the information systems that external auditors place in scope"
+      "Only the information systems that external auditors place in scope",
+      "All I&T processing used to reach enterprise goals, wherever it happens"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Enterprise I&T means all the technology and information processing the enterprise puts in place to achieve its goals, wherever it happens. It includes the IT department but is not limited to it."
   },
@@ -283,13 +283,13 @@
     "skill": "Scheme",
     "stem": "Which scheme is COBIT 2019 performance management based on?",
     "options": [
-      "CMMI",
       "ISO 9001",
+      "CMMI",
       "The balanced scorecard",
       "Six Sigma"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "COBIT 2019 performance management uses a CMMI-based scheme for capability and maturity levels. COBIT 5 used a process assessment model based on an ISO/IEC standard."
   },
@@ -431,12 +431,12 @@
     "stem": "Which objective was new in COBIT 2019?",
     "options": [
       "BAI06 Managed IT Changes",
-      "APO14 Managed Data",
       "APO12 Managed Risk",
+      "APO14 Managed Data",
       "DSS03 Managed Problems"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "COBIT 2019 added APO14 Managed Data, BAI11 Managed Projects and MEA04 Managed Assurance. APO14 restores a data focus that COBIT 4.1 had as Manage Data."
   },
@@ -452,12 +452,12 @@
     "stem": "Guidance lists the inputs and outputs of each practice, with where each comes from and goes to. Which component is it?",
     "options": [
       "Services, infrastructure and applications",
-      "Organizational structures",
       "Information",
+      "Organizational structures",
       "Processes"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The information component covers the information flows and items tied to each practice, listing inputs and outputs with their origin and destination. The process component lists the practices and activities themselves."
   },
@@ -493,13 +493,13 @@
     "skill": "Initial scope",
     "stem": "Which design factors are used to determine the initial scope of the governance system?",
     "options": [
+      "Enterprise strategy, enterprise goals, risk profile and I&T-related issues",
       "Threat landscape, compliance requirements, role of IT and IT sourcing model",
       "Focus areas, components, capability levels and practices",
-      "Enterprise strategy, enterprise goals, risk profile and I&T-related issues",
       "Enterprise size, technology adoption and IT implementation methods"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The initial scope comes from strategy, enterprise goals, risk profile and current I&T-related issues. The scope is then refined with threat landscape, compliance, role of IT, sourcing, methods, technology adoption and size."
   },
@@ -537,11 +537,11 @@
     "options": [
       "Principles, policies and procedures",
       "Culture, ethics and behavior",
-      "Organizational structures",
-      "People, skills and competencies"
+      "People, skills and competencies",
+      "Organizational structures"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "People, skills and competencies identifies the human resources and skills needed to achieve an objective, and COBIT points to skills frameworks such as SFIA for detail."
   },
@@ -558,11 +558,11 @@
     "options": [
       "Holistic approach",
       "Provide stakeholder value",
-      "Dynamic governance system",
-      "End-to-end governance system"
+      "End-to-end governance system",
+      "Dynamic governance system"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Dynamic governance system: when one or more design factors change, such as strategy or technology, the impact on the governance system must be considered. Open and flexible is a framework principle about adding content to COBIT."
   },
@@ -599,12 +599,12 @@
     "stem": "An enterprise sets up a plan to keep critical business services running after a major disruption. Which objective is this?",
     "options": [
       "DSS01 Managed Operations",
-      "DSS05 Managed Security Services",
       "DSS04 Managed Continuity",
+      "DSS05 Managed Security Services",
       "BAI04 Managed Availability and Capacity"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "DSS04 Managed Continuity covers business continuity: policy and scope, resilience, the response, testing the plans, training and backups."
   },
@@ -640,13 +640,13 @@
     "skill": "Phase 2",
     "stem": "In which phase does the enterprise assess the current capability of its processes?",
     "options": [
-      "Phase 2, Where are we now?",
       "Phase 3, Where do we want to be?",
       "Phase 1, What are the drivers?",
+      "Phase 2, Where are we now?",
       "Phase 6, Did we get there?"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Phase 2 assesses the current state, including which processes are in place and their capability levels. Phase 6 measures whether the targets were reached after the changes."
   },
@@ -1061,12 +1061,12 @@
     "stem": "In the COBIT 2019 core model, how does each objective relate to processes?",
     "options": [
       "Each spans processes in every domain",
-      "Each maps to exactly one process",
       "Each has one process per focus area",
-      "Objectives are not linked to processes"
+      "Objectives are not linked to processes",
+      "Each maps to exactly one process"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Each governance or management objective relates to one process, plus the other related components needed to achieve it, so the core model contains 40 processes."
   },
@@ -1271,12 +1271,12 @@
     "stem": "In COBIT 2019, at what level is related guidance from other standards and frameworks given?",
     "options": [
       "Only for the governance objectives",
-      "For each domain as a whole",
       "For each governance component",
+      "For each domain as a whole",
       "Only for the process component"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "COBIT 5 gave related guidance only at process level. COBIT 2019 lists applicable standards, frameworks and compliance requirements for each governance component."
   },
@@ -1291,13 +1291,13 @@
     "skill": "Stakeholders",
     "stem": "Which is an external stakeholder in enterprise governance of I&T?",
     "options": [
+      "A regulator",
       "A risk manager",
       "An assurance provider",
-      "A regulator",
       "A business manager"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Regulators, business partners and IT vendors are external stakeholders. Executive management, business managers, IT managers, assurance providers and risk management are internal ones."
   },
@@ -1354,13 +1354,13 @@
     "skill": "Design factor effects",
     "stem": "Which is one way design factors shape a governance system?",
     "options": [
-      "They help set target capability levels",
       "They assign RACI roles to each activity",
+      "They help set target capability levels",
       "They replace the goals cascade entirely",
       "They define the seven component types"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Design factors help prioritize objectives, set target capability levels for processes and choose specific variants of components. The goals cascade is itself part of the design factors."
   },
@@ -1376,12 +1376,12 @@
     "stem": "Which objective covers deciding which I&T investments to fund and in what mix?",
     "options": [
       "APO06 Managed Budget and Costs",
+      "APO05 Managed Portfolio",
       "EDM04 Ensured Resource Optimization",
-      "BAI01 Managed Programs",
-      "APO05 Managed Portfolio"
+      "BAI01 Managed Programs"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "APO05 Managed Portfolio covers the mix of programs, services and assets to invest in. APO06 manages budgets and costs once funds are allocated."
   },
@@ -1459,13 +1459,13 @@
     "skill": "Design and implementation",
     "stem": "Which implementation phases does the COBIT 2019 design workflow cover?",
     "options": [
-      "Phases 1 to 4",
       "Phase 7 only",
       "Phases 3 to 7",
+      "Phases 1 to 4",
       "Phases 1 and 2 only"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Tailoring the governance system with the Design Guide covers phases 1 to 4 of the seven-phase life cycle in the Implementation Guide. The two guides complement each other."
   },
@@ -1480,13 +1480,13 @@
     "skill": "EGIT outcomes",
     "stem": "Which three outcomes does enterprise governance of I&T aim to balance in creating value?",
     "options": [
-      "Benefits realization, risk optimization, resource optimization",
       "Service quality, change speed and staff retention",
       "Strategic alignment, cost reduction and regulatory audit readiness",
+      "Benefits realization, risk optimization, resource optimization",
       "Compliance, innovation and capacity planning"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "EGIT is about value creation: realizing benefits while optimizing risk and resources. These map to the governance objectives EDM02, EDM03 and EDM04."
   },
@@ -1502,12 +1502,12 @@
     "stem": "An enterprise's governance system satisfies stakeholder needs and generates value from I&T. Which principle is this?",
     "options": [
       "Governance distinct from management",
-      "Provide stakeholder value",
       "Aligned to major standards",
-      "End-to-end governance system"
+      "End-to-end governance system",
+      "Provide stakeholder value"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Provide stakeholder value is the first governance system principle: each enterprise needs a governance system that satisfies stakeholder needs and creates value from its use of I&T."
   },
@@ -1586,12 +1586,12 @@
     "stem": "What does APO stand for in the COBIT core model?",
     "options": [
       "Assess, Prioritize and Optimize",
-      "Align, Plan and Organize",
       "Assure, Protect and Oversee",
+      "Align, Plan and Organize",
       "Acquire, Process and Operate"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "APO is Align, Plan and Organize, the management domain for the overall organization, strategy and supporting activities for I&T."
   },
@@ -1650,11 +1650,11 @@
     "options": [
       "Alignment goals",
       "Governance and management objectives",
-      "Capability targets",
-      "Stakeholder drivers and needs"
+      "Stakeholder drivers and needs",
+      "Capability targets"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "The cascade starts with stakeholder drivers and needs, such as improving efficiency or cutting costs, which are turned into enterprise goals."
   },
@@ -1670,12 +1670,12 @@
     "stem": "Which edition of COBIT did COBIT 2019 replace?",
     "options": [
       "COBIT 4.1",
-      "COBIT 3",
       "COBIT 5",
+      "COBIT 3",
       "COBIT 6"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "COBIT 2019 was the first update since COBIT 5, released in 2012. There was no COBIT 6, and COBIT 4.1 came before COBIT 5."
   },
@@ -1712,12 +1712,12 @@
     "stem": "Which management domain has the most objectives?",
     "options": [
       "MEA, with 4",
-      "APO, with 14",
       "BAI, with 11",
+      "APO, with 14",
       "DSS, with 6"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "APO has 14 objectives (APO01 to APO14), BAI 11, DSS 6 and MEA 4."
   },
@@ -1753,13 +1753,13 @@
     "skill": "Not a component",
     "stem": "Which of these is NOT a COBIT 2019 component type?",
     "options": [
-      "Design factors",
       "Processes",
       "Information",
+      "Design factors",
       "Organizational structures"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Design factors influence how the governance system is designed; they are not one of its seven components. Processes, information and organizational structures are components."
   },
@@ -1838,12 +1838,12 @@
     "stem": "For which part of the organization is COBIT 2019 intended?",
     "options": [
       "The IT department only",
-      "The whole enterprise",
       "The board of directors only",
+      "The whole enterprise",
       "The internal audit team only"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "COBIT is aimed at the whole enterprise, because enterprise I&T covers all technology and information processing used to reach enterprise goals, not only what the IT department runs."
   },
@@ -1859,12 +1859,12 @@
     "stem": "In COBIT 2019, maturity levels are used to measure what?",
     "options": [
       "Single practices",
-      "Single activities",
       "Focus areas",
+      "Single activities",
       "Enterprise goals"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Capability levels apply to processes; maturity levels apply to focus areas, giving a higher-level view of how a set of objectives performs together."
   },
@@ -1879,13 +1879,13 @@
     "skill": "Identify the component",
     "stem": "An I&T steering committee and a chief information security officer are examples of which component?",
     "options": [
-      "Organizational structures",
       "Services, infrastructure and applications",
       "Principles, policies and procedures",
-      "People, skills and competencies"
+      "People, skills and competencies",
+      "Organizational structures"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Committees, boards and key roles are organizational structures, the decision-making entities in the enterprise. The skills those people hold belong to a different component."
   },
@@ -1900,13 +1900,13 @@
     "skill": "Domain purpose",
     "stem": "Which domain covers running I&T operations day to day and helping users, including security?",
     "options": [
+      "Deliver, Service and Support (DSS)",
       "Monitor, Evaluate and Assess (MEA)",
       "Align, Plan and Organize (APO)",
-      "Build, Acquire and Implement (BAI)",
-      "Deliver, Service and Support (DSS)"
+      "Build, Acquire and Implement (BAI)"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "DSS covers running I&T services day to day and supporting them, including security services and continuity."
   },
@@ -1943,12 +1943,12 @@
     "stem": "What does the goals cascade let an enterprise do?",
     "options": [
       "Choose which components each focus area must contain",
-      "Rank objectives by the importance of its enterprise goals",
       "Assign a capability level to each activity in a process",
-      "Measure how far each enterprise goal has been met"
+      "Measure how far each enterprise goal has been met",
+      "Rank objectives by the importance of its enterprise goals"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The goals cascade translates stakeholder needs into enterprise goals, then alignment goals, so the governance and management objectives can be prioritized by what matters to the enterprise."
   },
@@ -2028,11 +2028,11 @@
     "options": [
       "Culture, ethics and behavior",
       "Organizational structures",
-      "Processes",
-      "Information"
+      "Information",
+      "Processes"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Reports and other information items that flow between practices and roles belong to the information component."
   },
@@ -2089,13 +2089,13 @@
     "skill": "Match the objective",
     "stem": "Which objective deals with finding the root cause of recurring incidents?",
     "options": [
+      "DSS03 Managed Problems",
       "DSS02 Managed Service Requests and Incidents",
       "MEA01 Managed Performance and Conformance Monitoring",
-      "BAI07 Managed IT Change Acceptance and Transitioning",
-      "DSS03 Managed Problems"
+      "BAI07 Managed IT Change Acceptance and Transitioning"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "DSS03 Managed Problems identifies and resolves the root causes of incidents. DSS02 restores service when an incident happens."
   },
@@ -2194,13 +2194,13 @@
     "skill": "Management activities",
     "stem": "Which four verbs describe the management activities in COBIT 2019?",
     "options": [
+      "Plan, build, run and monitor",
       "Define, measure, analyze and improve",
       "Evaluate, direct, monitor and assure",
-      "Plan, build, run and monitor",
       "Align, design, deliver and audit"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Management plans, builds, runs and monitors activities in line with governance direction, which matches the four management domains APO, BAI, DSS and MEA. Evaluate, direct and monitor are the governance verbs."
   },
@@ -2237,12 +2237,12 @@
     "stem": "Which component is mainly about the knowledge staff need to carry out activities well?",
     "options": [
       "Culture, ethics and behavior",
-      "People, skills and competencies",
       "Principles, policies and procedures",
-      "Organizational structures"
+      "Organizational structures",
+      "People, skills and competencies"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "People, skills and competencies covers the skills and competencies needed for good decisions and corrective action. Culture covers behavior and attitudes."
   },
@@ -2257,13 +2257,13 @@
     "skill": "Match the objective",
     "stem": "Which objective covers the blueprint linking business, information, data, applications and technology?",
     "options": [
-      "APO03 Managed Enterprise Architecture",
       "APO14 Managed Data",
+      "APO03 Managed Enterprise Architecture",
       "BAI03 Managed Solutions Identification and Build",
       "APO02 Managed Strategy"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "APO03 Managed Enterprise Architecture covers the architecture across business, information, data, applications and technology. APO02 sets the I&T strategy."
   },
@@ -2341,13 +2341,13 @@
     "skill": "Activities",
     "stem": "What is attached to each process activity in COBIT 2019 that COBIT 5 did not have?",
     "options": [
+      "A capability level",
       "A design factor score",
       "A RACI chart",
-      "An enterprise goal",
-      "A capability level"
+      "An enterprise goal"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Each activity in COBIT 2019 is linked to a capability level, which shows at what level the activity is expected. RACI charts are given per practice, not per activity."
   },
@@ -2446,13 +2446,13 @@
     "skill": "Design factor count",
     "stem": "How many design factors does COBIT 2019 describe?",
     "options": [
-      "11",
       "7",
       "13",
-      "9"
+      "9",
+      "11"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "COBIT 2019 describes 11 design factors and leaves room for future factors. There are 13 enterprise goals and 7 component types."
   },
@@ -2594,12 +2594,12 @@
     "stem": "What does each objective's goals cascade section include besides the related alignment and enterprise goals?",
     "options": [
       "Design factor values",
-      "Focus area variants",
       "Example metrics",
+      "Focus area variants",
       "Capability levels"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "For each objective, COBIT 2019 lists the applicable alignment goals and enterprise goals together with example metrics for them."
   },
@@ -2635,13 +2635,13 @@
     "skill": "Match the objective",
     "stem": "Which objective covers meeting the laws, regulations and contract terms that apply to I&T?",
     "options": [
-      "MEA03 Managed Compliance With External Requirements",
       "MEA02 Managed System of Internal Control",
+      "MEA03 Managed Compliance With External Requirements",
       "EDM01 Ensured Governance Framework Setting and Maintenance",
       "MEA04 Managed Assurance"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "MEA03 covers external requirements such as laws, regulations and contracts. MEA02 covers the internal control system."
   },
@@ -2698,13 +2698,13 @@
     "skill": "Identify the component",
     "stem": "An enterprise trains staff to treat customer data with care and leaders model that care. Which component does the leaders' example shape?",
     "options": [
+      "Culture, ethics and behavior",
       "Principles, policies and procedures",
       "People, skills and competencies",
-      "Culture, ethics and behavior",
       "Information"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Tone set by leaders shapes culture, ethics and behavior. Training builds skills, and written data rules are policies, but the example leaders set works on behavior."
   },
@@ -2803,13 +2803,13 @@
     "skill": "Purpose",
     "stem": "What is the main purpose of the business case for a governance initiative?",
     "options": [
+      "To win approval and funding by showing expected value",
       "To replace the design factors used in the design workflow",
       "To record the capability level of each process",
-      "To win approval and funding by showing expected value",
       "To set target capability levels for processes"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "A business case justifies the initiative to sponsors: why it is needed, what it will cost and what value it should deliver, so the plan and budget can be approved."
   },
@@ -2825,12 +2825,12 @@
     "stem": "COBIT 5's Ensure Stakeholder Transparency became which COBIT 2019 objective?",
     "options": [
       "EDM01 Ensured Governance Framework Setting and Maintenance",
+      "EDM05 Ensured Stakeholder Engagement",
       "MEA01 Managed Performance and Conformance Monitoring",
-      "EDM05 Ensured Stakeholder Transparency",
-      "EDM05 Ensured Stakeholder Engagement"
+      "EDM05 Ensured Stakeholder Transparency"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "COBIT 2019 renamed the transparency objective to EDM05 Ensured Stakeholder Engagement, keeping it in the governance domain."
   },
@@ -2868,11 +2868,11 @@
     "options": [
       "Governance and Management Objectives",
       "Implementation Guide",
-      "Introduction and Methodology",
-      "Design Guide"
+      "Design Guide",
+      "Introduction and Methodology"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Introduction and Methodology lays out the framework structure, the principles and the basic concepts. The objectives book details the core model, and the two guides cover design and implementation."
   },
@@ -2888,12 +2888,12 @@
     "stem": "A capability level's activities are achieved at 70 percent. How is that level rated?",
     "options": [
       "Fully achieved",
-      "Largely achieved",
       "Partially achieved",
-      "Not achieved"
+      "Not achieved",
+      "Largely achieved"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Fully is over 85 percent, largely 50 to 85, partially 15 to 50 and not under 15 percent. 70 percent falls in largely."
   },
@@ -2908,13 +2908,13 @@
     "skill": "Governance distinct from management",
     "stem": "Why does COBIT keep governance distinct from management?",
     "options": [
-      "They are different activities with different structures and purposes",
       "Governance needs a framework and management does not need one",
       "Management covers I&T while governance covers business processes",
+      "They are different activities with different structures and purposes",
       "Governance is done by auditors and management by the IT department alone"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Governance and management encompass different types of activities, need different organizational structures and serve different purposes. Neither is limited to auditors or the IT department."
   },
@@ -3035,12 +3035,12 @@
     "stem": "Who should initiate and sponsor a governance improvement program, according to ISACA's guidance?",
     "options": [
       "The IT service desk team",
+      "Executive management",
       "An external audit firm",
-      "The enterprise's main vendor",
-      "Executive management"
+      "The enterprise's main vendor"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Governance programs should be initiated and sponsored by executive management, be properly scoped and set objectives the enterprise can absorb."
   },
@@ -3139,13 +3139,13 @@
     "skill": "Practices",
     "stem": "In the core model, roughly how many practices are spread across the 40 objectives?",
     "options": [
-      "About 40",
       "About 230",
+      "About 40",
       "About 80",
       "About 1,200"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "There are 231 practices across the 40 objectives, and about 1,202 activities beneath them."
   },
@@ -3160,13 +3160,13 @@
     "skill": "Domain names",
     "stem": "What does MEA stand for in the COBIT core model?",
     "options": [
+      "Monitor, Evaluate and Assess",
       "Measure, Evaluate and Adjust",
       "Manage, Execute and Audit",
-      "Monitor, Evaluate and Assess",
       "Monitor, Escalate and Assure"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "MEA is Monitor, Evaluate and Assess. It covers monitoring performance and conformance with internal targets, internal control and external requirements."
   },
@@ -3182,12 +3182,12 @@
     "stem": "Which pair are both COBIT 2019 component types?",
     "options": [
       "Design factors, plus information",
-      "Information, plus organizational structures",
       "Information, plus enterprise goals",
+      "Information, plus organizational structures",
       "Focus areas, plus organizational structures"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Information and organizational structures are both component types. Enterprise goals, focus areas and design factors are other COBIT concepts, not components."
   },
@@ -3200,17 +3200,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Named goals",
-    "stem": "Portfolio of competitive products and services is which COBIT 2019 goal?",
+    "stem": "Delivery of I&T services in line with business requirements is which COBIT 2019 goal?",
     "options": [
-      "Enterprise goal EG13",
-      "Enterprise goal EG01",
-      "Alignment goal AG07",
-      "Alignment goal AG01"
+      "Enterprise goal EG05",
+      "Management objective APO05",
+      "Alignment goal AG05",
+      "Management objective DSS05"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "EG01 is portfolio of competitive products and services. Alignment goals are numbered AG01 to AG13 and describe I&T contributions rather than business results."
+    "explanation": "AG05 is delivery of I&T services in line with business requirements, an alignment goal: it describes what I&T contributes. Enterprise goals (EG) describe business results, and APO and DSS IDs are management objectives."
   },
   {
     "id": "COBIT-D-004",
@@ -3225,11 +3225,11 @@
     "options": [
       "2016",
       "2012",
-      "2019",
-      "2018"
+      "2018",
+      "2019"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Despite its name, COBIT 2019 was released at the end of 2018. COBIT 5 was released in 2012."
   },
@@ -3287,7 +3287,7 @@
     "stem": "Which phase comes right after Where are we now?",
     "options": [
       "What needs to be done?",
-      "How do we get there?",
+      "How do we keep the momentum going?",
       "Where do we want to be?",
       "What are the drivers?"
     ],
@@ -3307,13 +3307,13 @@
     "skill": "Domain size",
     "stem": "How many objectives are in the DSS domain?",
     "options": [
-      "6",
       "5",
       "11",
-      "4"
+      "4",
+      "6"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "DSS has six objectives, DSS01 Managed Operations to DSS06 Managed Business Process Controls."
   },
@@ -3329,12 +3329,12 @@
     "stem": "A process achieves its purpose, is well defined and its performance is measured quantitatively. Which level is this?",
     "options": [
       "Level 2",
+      "Level 4",
       "Level 5",
-      "Level 3",
-      "Level 4"
+      "Level 3"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Level 4 adds quantitative measurement of performance to a well-defined process. Level 5 adds continuous improvement on top of that."
   },
@@ -3431,17 +3431,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Free publications",
-    "stem": "Which pair of COBIT 2019 publications did ISACA make free to members and non-members alike?",
+    "stem": "When COBIT 2019 was launched, which pair of its publications were free PDF downloads to members and non-members alike?",
     "options": [
+      "The two framework books",
       "The framework introduction and the Design Guide",
       "The Design Guide and the Implementation Guide",
-      "The two framework books",
       "The objectives book and the Implementation Guide"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "Introduction and Methodology and Governance and Management Objectives were free downloads for everyone. At launch, the Design Guide and Implementation Guide were free downloads for members."
+    "explanation": "At launch, Introduction and Methodology and Governance and Management Objectives were free PDF downloads for everyone, while the Design Guide and Implementation Guide were free downloads for members. ISACA later listed all four as complimentary downloads."
   },
   {
     "id": "COBIT-D-015",
@@ -3476,12 +3476,12 @@
     "stem": "Which objective covers defining what the business needs from a new solution before it is built or bought?",
     "options": [
       "APO04 Managed Innovation",
-      "BAI02 Managed Requirements Definition",
       "BAI11 Managed Projects",
+      "BAI02 Managed Requirements Definition",
       "BAI03 Managed Solutions Identification and Build"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "BAI02 covers identifying and defining requirements. BAI03 identifies and builds the solution that meets them."
   },
@@ -3496,13 +3496,13 @@
     "skill": "Design starting point",
     "stem": "From what does the design of a tailored governance system start?",
     "options": [
-      "The COBIT core model",
       "The previous year's audit plan",
       "A blank list of processes",
+      "The COBIT core model",
       "A vendor's reference model"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Tailoring starts from the COBIT core model and adapts it to the enterprise's priorities, using the design factors."
   },
@@ -3518,12 +3518,12 @@
     "stem": "Why should a governance improvement program set attainable objectives?",
     "options": [
       "So capability targets can all be set to level 5",
-      "So the enterprise can absorb the planned change",
       "So the program needs no business case",
-      "So the program can skip the current-state assessment"
+      "So the program can skip the current-state assessment",
+      "So the enterprise can absorb the planned change"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "ISACA advises that programs be properly scoped with objectives the enterprise can absorb. Too much change at once overwhelms the people who must adopt it."
   },
@@ -3538,13 +3538,13 @@
     "skill": "Identify the component",
     "stem": "Which component holds the practices and activities that achieve an objective?",
     "options": [
-      "Processes",
       "Principles, policies and procedures",
+      "Processes",
       "Information",
       "Organizational structures"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "A process is an organized set of practices and activities to achieve certain objectives. It is the process component that carries them."
   },
@@ -3559,13 +3559,13 @@
     "skill": "Stakeholder drivers",
     "stem": "Which is an example of a stakeholder driver that enters the goals cascade?",
     "options": [
-      "Reducing operational costs",
       "Rating a practice as largely achieved",
       "Reaching capability level 3",
+      "Reducing operational costs",
       "Assigning a RACI chart"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Stakeholder drivers and needs include improving efficiency, reducing operational costs, faster delivery and increasing revenue. Capability levels and ratings belong to performance management."
   },
@@ -3623,12 +3623,12 @@
     "stem": "Which principle is reflected in COBIT keeping governance objectives in their own domain, EDM?",
     "options": [
       "Based on a conceptual model",
-      "Governance distinct from management",
       "Aligned to major standards",
+      "Governance distinct from management",
       "Holistic approach"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The EDM domain holds the five governance objectives, and the four other domains hold the management objectives. That split reflects governance distinct from management."
   },
@@ -3707,12 +3707,12 @@
     "stem": "In COBIT 2019's mapping tables, what do P and S mean?",
     "options": [
       "Process and structure components",
-      "Planned and spent budgets",
       "Primary and secondary relationships",
+      "Planned and spent budgets",
       "Practice and subpractice IDs"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Mapping tables between enterprise goals, alignment goals and objectives mark each relationship as primary (P) or secondary (S)."
   },
@@ -3853,13 +3853,13 @@
     "skill": "Open-ended",
     "stem": "What makes COBIT 2019 open-ended, according to ISACA?",
     "options": [
-      "The goals cascade",
       "Focus areas",
+      "The goals cascade",
       "Mapping tables",
       "Capability levels"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "ISACA says focus areas make COBIT open-ended: there can be virtually any number of them, and new ones are added as topics emerge."
   },
@@ -3939,11 +3939,11 @@
     "options": [
       "MEA04 Managed Assurance",
       "DSS01 Managed Operations",
-      "BAI04 Managed Availability and Capacity",
-      "DSS04 Managed Continuity"
+      "DSS04 Managed Continuity",
+      "BAI04 Managed Availability and Capacity"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "DSS04.04 is exercise, test and review the BCP and DRP. Other DSS04 practices cover the continuity policy, resilience, the response, training, backups and post-resumption review."
   },
@@ -3977,17 +3977,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Measuring progress",
-    "stem": "What does ISACA call a fundamental requirement for continual improvement after implementation?",
+    "stem": "In phase 7, How do we keep the momentum going?, how does ISACA guidance say each win, loss or near win should be shown?",
     "options": [
-      "A larger IT budget",
-      "A new COBIT edition",
-      "Metrics, such as KPIs",
-      "An external certification"
+      "By measurements",
+      "By an external certification",
+      "By a new COBIT edition",
+      "By vendor testimonials"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "Continual improvement needs metrics, such as key performance indicators, to show whether changes worked and where to go next."
+    "explanation": "ISACA's transition guidance says to prove every win, loss or near win by measurements in phase 7, alongside lessons-learned sessions. Metrics such as KPIs, reported and monitored regularly, show whether changes worked and where to go next."
   },
   {
     "id": "COBIT-D-041",
@@ -4001,12 +4001,12 @@
     "stem": "Which COBIT 2019 term replaced the process reference model of COBIT 5?",
     "options": [
       "The focus area model",
-      "The Design Guide Toolkit",
       "The COBIT Core Model",
+      "The Design Guide Toolkit",
       "The goals cascade"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "COBIT 5's process reference model became the COBIT Core Model in COBIT 2019, with 40 governance and management objectives instead of 37 processes."
   },
@@ -4042,13 +4042,13 @@
     "skill": "Identify the component",
     "stem": "Which component would a data dictionary and a master data record belong to?",
     "options": [
+      "Information",
       "Services, infrastructure and applications",
       "Processes",
-      "Information",
       "Principles, policies and procedures"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Information items of any kind, including data and reports, belong to the information component. The databases that store them are infrastructure and applications."
   },

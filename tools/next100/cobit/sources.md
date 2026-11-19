@@ -16,7 +16,8 @@ commercial practice question was used, and no prep provider is named. Checked 20
   Governance and Management Objectives 25%, Performance Management 10%, Designing a Tailored
   Governance System 5%, Business Case 1%, Implementation 8% (as printed; they add to 98%). ISACA
   has published no COBIT 7 framework text we could read: https://www.isaca.org/resources/cobit
-  (fetched 2026-11-19) lists only COBIT 2019 publications. COBIT 7 content is therefore NOT
+  (fetched 2026-11-19) lists only COBIT 2019 publications; the COBIT 7 Foundation page sells it as
+  "COBIT 7 Premium Access" (rechecked by the second reviewer, 2026-11-19). COBIT 7 content is therefore NOT
   modelled; a freshness event (lib/examFreshness.json) asks for a COBIT 7 build when ISACA
   publishes its material, and the landing says so.
 
@@ -77,8 +78,10 @@ commercial practice question was used, and no prep provider is named. Checked 20
   conclude); the 11 design factors figure with "future factors"; I&T-related issues as pain points.
 - ISACA Journal 2021 vol. 6, "Building a Maturity Model for COBIT 2019 Based on CMMI",
   https://www.isaca.org/-/media/files/isacadp/project/isaca/articles/journal/2021/volume-6/building-a-maturity-model-for-cobit-2019-based-on-cmmi-joa-spa-1221.pdf
-  (fetched 2026-11-19): the capability level definitions 0 to 5 (from COBIT 2019 Governance and
-  Management Objectives); 1,202 activities and 231 practices; EDM01.01 and EDM01.02 practice names.
+  (fetched 2026-11-19): 1,202 activities and 231 practices; EDM01.01 and EDM01.02 practice names.
+  The capability level definitions 0 to 5 are figure 2 of the English article,
+  https://www.isaca.org/resources/isaca-journal/issues/2021/volume-6/building-a-maturity-model-for-cobit-2019-based-on-cmmi
+  (image 21v6-building-a-maturity-model-2.png, read 2026-11-19 by the second reviewer).
 - ISACA Now blog, "A COBIT 2019 Use Case: Financial Institutions in Georgia" (2022),
   https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2022/a-cobit-2019-use-case-financial-institutions-in-georgia
   (fetched 2026-11-19): governance versus management definitions; rating scale Fully over 85%,
@@ -99,8 +102,8 @@ commercial practice question was used, and no prep provider is named. Checked 20
   stakeholders; the business case should include regulatory and management requirements.
 - ISACA COBIT Fact Sheet (2020),
   https://www.isaca.org/-/media/files/isacadp/project/isaca/why-isaca/fact-sheets/cobit-fact-sheet_0420.pdf
-  (fetched 2026-11-19): COBIT 2019 is the first update since COBIT 5 (2012); the publications;
-  benefits.
+  (fetched 2026-11-19): COBIT 2019 is the first update since COBIT 5 (2012); all four publications
+  listed as complimentary downloads (in 2020); benefits, including a common language.
 - ISACA Industry News, "Effective Capability and Maturity Assessment Using COBIT 2019" (2020),
   https://www.isaca.org/resources/news-and-trends/industry-news/2020/effective-capability-and-maturity-assessment-using-cobit-2019
   (fetched 2026-11-19): capability measures how well a process is implemented and performing;
@@ -108,7 +111,8 @@ commercial practice question was used, and no prep provider is named. Checked 20
 
 ## Not confirmed, so left out
 - The full lists of the 13 enterprise goals and 13 alignment goals: only a few IDs are named in
-  ISACA's public pages (EG01, EG06, AG02, AG05, AG07, AG09). Questions use only those.
+  ISACA's public pages (EG06, AG02, AG05, AG07, AG08, AG09). Questions use only those. (A drill item on
+  EG01 was replaced by the second reviewer: no public ISACA page we read names EG01.)
 - The values of most design factors (role of IT, sourcing model, technology adoption, threat
   landscape, enterprise size): not in a page we could read. Only the strategy archetypes,
   compliance High/Normal/Low and the Agile/DevOps/Traditional methods are asked.

@@ -1,0 +1,4243 @@
+[
+  {
+    "id": "ISTQB-T1-001",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.1 Risk level",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which two factors together express a risk level?",
+    "explanation": "A risk is characterized by its likelihood (probability of occurring) and its impact (the harm if it does). Together they express the risk level.",
+    "options": [
+      "Severity and priority",
+      "Likelihood and impact",
+      "Impact and defect density",
+      "Likelihood and test effort"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-002",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.3 Test-first approaches",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In test-driven development, what happens right after a new test is written?",
+    "explanation": "In TDD the test is written first, then code is written to satisfy it, and then both are refactored.",
+    "options": [
+      "The test is refactored",
+      "Acceptance criteria are agreed",
+      "Code is written to pass it",
+      "The test joins the CI pipeline"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-003",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.1 Statement testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which single test achieves 100% statement coverage of this code?\n\n$$\\begin{array}{l}\\texttt{READ a}\\\\\\texttt{READ b}\\\\\\texttt{IF a > b THEN}\\\\\\texttt{\\ \\ PRINT a}\\\\\\texttt{ENDIF}\\\\\\texttt{PRINT b}\\end{array}$$",
+    "explanation": "Only a test where a is greater than b executes PRINT a inside the IF. With a = 5 and b = 2 every statement runs; the other tests skip that statement.",
+    "options": [
+      "a = 0, b = 1",
+      "a = 4, b = 4",
+      "a = 2, b = 5",
+      "a = 5, b = 2"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-004",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.3.1 Testing principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team has run the same regression suite unchanged for two years, and it no longer finds new defects. Which principle explains this?",
+    "explanation": "Tests that are repeated many times become less effective at finding new defects, so tests and test data need updating. Exhaustive testing being impossible is about scope, not repetition.",
+    "options": [
+      "Tests wear out",
+      "Testing is context dependent",
+      "Exhaustive testing is impossible",
+      "Defects cluster together"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-005",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.1.1 Technique categories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do black-box test cases stay useful when the implementation changes but the required behaviour does not?",
+    "explanation": "Black-box techniques are based on the specified behaviour without reference to internal structure, so the test cases are independent of how the software is implemented.",
+    "options": [
+      "They test only the user interface",
+      "They come from tester experience",
+      "They do not depend on the code",
+      "They are always automated"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-006",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.3 Review roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which review role mediates, manages time and keeps the meeting safe for everyone to speak?",
+    "explanation": "The moderator (facilitator) ensures review meetings run effectively, including mediation, time management and a safe environment. The review leader organizes the review overall.",
+    "options": [
+      "Moderator",
+      "Review leader",
+      "Manager",
+      "Scribe"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-007",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "For a testing task, experts give most optimistic 4, most likely 10 and most pessimistic 22 person-days. Using E = (a + 4m + b) / 6, what is the estimate in person-days?",
+    "explanation": "E = (4 + 4 x 10 + 22) / 6 = 66 / 6 = 11 person-days. 12 is the plain average of the three figures and 10 is just the most likely value.",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T1-008",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which test activity answers the question \"how to test?\"",
+    "explanation": "Test design elaborates test conditions into test cases and other testware, answering how to test. Test analysis answers what to test.",
+    "options": [
+      "Test analysis",
+      "Test monitoring",
+      "Test planning",
+      "Test design"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-009",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.2 Project and product risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a project risk?",
+    "explanation": "Project risks concern managing and controlling the project, including supplier issues such as a third party failing or going bankrupt. Wrong calculations, slow responses and security holes are product risks.",
+    "options": [
+      "The login page is slow",
+      "The tool supplier goes bankrupt",
+      "A form allows SQL injection",
+      "Tax totals are calculated wrongly"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-010",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.5 Shift left",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice is an example of shift left?",
+    "explanation": "Shift left means testing earlier in the SDLC, for example reviewing specifications, writing tests before code and running static analysis before dynamic testing.",
+    "options": [
+      "Static analysis before execution",
+      "Regression tests added after go-live",
+      "Performance tests left to system test",
+      "User acceptance after the release"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-011",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.2 Branch testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the minimum number of test cases for 100% branch coverage of this code?\n\n$$\\begin{array}{l}\\texttt{IF x > 0 THEN}\\\\\\texttt{\\ \\ y = 1}\\\\\\texttt{ELSE}\\\\\\texttt{\\ \\ y = 2}\\\\\\texttt{ENDIF}\\\\\\texttt{IF z > 0 THEN}\\\\\\texttt{\\ \\ w = 1}\\\\\\texttt{ENDIF}\\end{array}$$",
+    "explanation": "Each decision has a true and a false outcome. One test with x > 0 and z > 0 and another with x <= 0 and z <= 0 cover all four, so 2 tests are enough.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T1-012",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.3 Error, defect, failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer misreads a requirement and codes a 15% discount instead of 5%. At checkout, customers are overcharged. What is the overcharging?",
+    "explanation": "The misreading is the error (a human mistake), the wrong discount in the code is the defect, and the wrong charge seen when the code runs is the failure.",
+    "options": [
+      "An error",
+      "A defect",
+      "A failure",
+      "A root cause"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-013",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.1 Equivalence partitioning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An order quantity field rejects 0 and negative values. Orders of 1 to 49 get no discount, 50 to 199 get 5% off, and 200 or more get the bulk price. How many equivalence partitions are there?",
+    "explanation": "There is one invalid partition (0 and below) and three valid ones (1 to 49, 50 to 199, 200 and above), so 4 partitions. A test for each one gives 100% EP coverage.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T1-014",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.4 Product risk control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which response to a product risk is mitigation by testing?",
+    "explanation": "Mitigating by testing includes choosing skilled testers, an appropriate level of independence, reviews and static analysis, suitable techniques and coverage, and dynamic testing. Insurance is risk transfer.",
+    "options": [
+      "Accepting the risk as it is",
+      "Preparing a contingency plan",
+      "Taking out an insurance policy",
+      "More independent testing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-015",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.4 Review types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which review type is led by the author?",
+    "explanation": "A walkthrough is led by the author and can educate reviewers, build consensus and find anomalies. A technical review is led by a moderator, and in an inspection the author cannot lead.",
+    "options": [
+      "Inspection",
+      "Walkthrough",
+      "Technical review",
+      "Audit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-016",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.3 Entry and exit criteria",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a typical entry criterion?",
+    "explanation": "Entry criteria are preconditions for starting, such as available resources and testware and an initial quality level like passed smoke tests. The other three are typical exit criteria.",
+    "options": [
+      "The coverage target is reached",
+      "Regression tests are automated",
+      "All smoke tests have passed",
+      "All defects found are reported"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-017",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.1 Test levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Testing the interface between a web shop and an external payment provider is which test level?",
+    "explanation": "System integration testing focuses on the interfaces of the system under test with other systems and external services. Component integration testing covers interfaces between components inside the system.",
+    "options": [
+      "System integration testing",
+      "System testing",
+      "Component integration testing",
+      "Acceptance testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-018",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.2 Branch testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about statement and branch coverage is true?",
+    "explanation": "Branch coverage subsumes statement coverage: 100% branch coverage also gives 100% statement coverage, but not the other way round, because an IF with no ELSE can be fully covered by statements without its false branch.",
+    "options": [
+      "Full statement coverage gives full branch coverage",
+      "Branch coverage counts only unconditional branches",
+      "They always need the same number of tests",
+      "Full branch coverage gives full statement coverage"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-019",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.1.2 Testing and debugging",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Dynamic testing triggers a failure. Which activity then reproduces it, diagnoses the defect and removes it?",
+    "explanation": "Debugging finds, analyzes and eliminates the cause of a failure. Confirmation testing comes afterwards and checks that the fix worked.",
+    "options": [
+      "Confirmation testing",
+      "Debugging",
+      "Regression testing",
+      "Test analysis"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-020",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During which activity are test procedures arranged into a test execution schedule?",
+    "explanation": "Test implementation creates the testware needed for execution, organizes test procedures into suites and arranges them in a test execution schedule. It also builds and verifies the test environment.",
+    "options": [
+      "Test monitoring and control",
+      "Test design",
+      "Test execution",
+      "Test implementation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-021",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.2 Boundary value analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A temperature setting accepts whole numbers from 10 to 30. Which values give 100% 2-value BVA coverage of the valid partition's boundaries?",
+    "explanation": "In 2-value BVA each boundary has two coverage items: the boundary value and its closest neighbour in the adjacent partition. That gives 9 and 10 at the lower boundary, 30 and 31 at the upper. The six-value set is 3-value BVA.",
+    "options": [
+      "10, 20, 30",
+      "10, 11, 29, 30",
+      "9, 10, 30, 31",
+      "9, 10, 11, 29, 30, 31"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-022",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3.1 Test metrics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Defect density is which kind of test metric?",
+    "explanation": "Defect metrics include the number and priorities of defects found and fixed, defect density and defect detection percentage. Mean time to failure is a product quality metric.",
+    "options": [
+      "A coverage metric",
+      "A defect metric",
+      "A test progress metric",
+      "A product quality metric"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-023",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.3 Confirmation and regression",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After a fix, a tester reruns the test that exposed the defect. What is this?",
+    "explanation": "Confirmation testing checks that the original defect has been fixed. Regression testing checks that the change has not broken anything else.",
+    "options": [
+      "Confirmation testing",
+      "Smoke testing",
+      "Regression testing",
+      "Component integration testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-024",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.2 Exploratory testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In session-based exploratory testing, what guides the tester during the time box?",
+    "explanation": "In session-based testing the tester works within a time box guided by a test charter of test objectives, and the session is usually followed by a debriefing.",
+    "options": [
+      "A detailed test script",
+      "A test execution schedule",
+      "A decision table",
+      "A test charter"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-025",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1.3 Static versus dynamic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which defect is typically easier to find by static testing than by dynamic testing?",
+    "explanation": "Static testing finds coding defects such as unreachable or duplicated code and undefined variables. Performance and runtime behaviour need the code to execute.",
+    "options": [
+      "Unreachable code",
+      "Wrong results at runtime",
+      "A crash under heavy load",
+      "Slow page loads"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-026",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.6 Test pyramid",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the test pyramid, what are the tests in the top layer like?",
+    "explanation": "Higher layers have lower granularity and isolation and longer execution time. The top holds a few slow end-to-end tests; the bottom holds many small, fast, isolated ones.",
+    "options": [
+      "Fast, isolated and many",
+      "Fast, high-level and few",
+      "Slow, high-level and few",
+      "Slow, isolated and many"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-027",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3.2 Test reports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which item belongs in a test progress report?",
+    "explanation": "Progress reports are produced regularly during testing and include the testing period, progress, impediments, metrics, new risks and the testing planned next. Lessons learned and the final summary go in a completion report.",
+    "options": [
+      "Lessons learned for the next project",
+      "Testing planned for the next period",
+      "Unmitigated risks at closure",
+      "The final test summary"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-028",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.2 Testing and quality assurance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which description fits quality assurance rather than testing?",
+    "explanation": "QA is process-oriented and preventive: it improves the processes so that a good product follows. Testing is product-oriented, corrective, and a form of quality control.",
+    "options": [
+      "Measuring a product against requirements",
+      "Product-oriented and corrective",
+      "A major form of quality control",
+      "Process-oriented and preventive"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-029",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.3 Decision table testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A shop's shipping rules are shown below. A test uses a non-member whose order total is 60. Which rule does it exercise?\n\n| Condition or action | R1 | R2 | R3 | R4 |\n|---|---|---|---|---|\n| Member | T | T | F | F |\n| Order over 100 | T | F | T | F |\n| Free shipping | X | X | X | |",
+    "explanation": "A non-member is Member = F, and a total of 60 is Order over 100 = F. Only R4 has F for both, and its expected action is no free shipping.",
+    "options": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T1-030",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.3.1 Maintenance testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which event triggers maintenance testing?",
+    "explanation": "Maintenance testing is triggered by modifications, upgrades or migrations of the operational environment, and retirement.",
+    "options": [
+      "A sprint retrospective",
+      "Migrating to a new platform",
+      "Approving the test plan",
+      "Adding a new tester to the team"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-031",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.3 Checklist-based testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which item should be left out of a checklist for checklist-based testing?",
+    "explanation": "Checklists should not hold items that can be checked automatically, items better suited as entry or exit criteria, or items too general. Each item should be checkable on its own.",
+    "options": [
+      "A usability heuristic",
+      "A question about error messages",
+      "Something a tool checks automatically",
+      "A check that required field labels show"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-032",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.5.1 Defect report",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A defect report gives an identifier, a title, the test steps, severity and priority. Which key information is missing?",
+    "explanation": "A defect report logged in dynamic testing should include the expected and actual results, along with the test object and environment, context, date and author, status and references.",
+    "options": [
+      "Expected and actual results",
+      "The developer's fix estimate",
+      "The defect's root cause",
+      "The test manager's approval"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-033",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.3 Testware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which work product typically comes from test analysis?",
+    "explanation": "Test analysis produces prioritized test conditions and defect reports on the test basis. Test procedures and environment items come from implementation, and test logs from execution.",
+    "options": [
+      "Prioritized test conditions",
+      "Test logs",
+      "Test procedures and scripts",
+      "Test environment items"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-034",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.2 Review process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which review activity is each anomaly given a status, an owner and actions?",
+    "explanation": "Anomalies are not necessarily defects, so in communication and analysis each is discussed and given a status, ownership and required actions, usually in a review meeting.",
+    "options": [
+      "Review initiation",
+      "Communication and analysis",
+      "Individual review",
+      "Fixing and reporting"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-035",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.5 Test case prioritization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Priority 1 is the highest. In what order should these test cases run?\n\n| Test | Priority | Depends on |\n|---|---|---|\n| A | 3 | none |\n| B | 1 | D |\n| C | 2 | none |\n| D | 4 | none |",
+    "explanation": "B has the highest priority but depends on D, so D must run first, then B. The rest follow by priority: C (2), then A (3).",
+    "options": [
+      "D, C, B, A",
+      "B, C, A, D",
+      "D, B, C, A",
+      "B, D, C, A"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T1-036",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.5.3 Independence of testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who brings the highest level of independence to testing a component?",
+    "explanation": "Testers from outside the organization give very high independence. A tester from another team in the same organization gives high independence, a peer gives some, and the author gives none.",
+    "options": [
+      "A tester from another team",
+      "The developer who wrote it",
+      "A peer on the author's team",
+      "An external testing company"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T1-037",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.4 State transition testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A document workflow has these valid transitions. What is the fewest event sequences, each starting in Draft, that give 100% valid transitions coverage?\n\n| From | Event | To |\n|---|---|---|\n| Draft | submit | In review |\n| In review | reject | Draft |\n| In review | approve | Approved |\n| Approved | publish | Published |",
+    "explanation": "One sequence (one test case) covers all four transitions: submit, reject, submit again, approve, publish. A single test case may, and usually will, cover several transitions.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T1-038",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.2 Test types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Checking that a search returns results within two seconds is which test type?",
+    "explanation": "Response time is performance efficiency, a non-functional quality characteristic: it is about how well the system behaves, not what it does.",
+    "options": [
+      "Functional testing",
+      "Non-functional testing",
+      "White-box testing",
+      "Component integration testing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T1-039",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.3 ATDD",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In ATDD, which test cases does the team usually write first?",
+    "explanation": "The first ATDD test cases are typically positive, confirming correct behaviour without errors. Negative testing follows, then non-functional characteristics. Tests should not go beyond the story.",
+    "options": [
+      "Positive cases for expected behaviour",
+      "Non-functional performance cases",
+      "Cases that go beyond the story",
+      "Negative cases for every error condition"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T1-040",
+    "section": "ctfl",
+    "test": 1,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-6.2.1 Benefits and risks of automation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a risk of test automation?",
+    "explanation": "Risks include unrealistic expectations, inaccurate estimates, over-reliance on the tool and dependency on a vendor that may retire the tool or give poor support. The others are benefits.",
+    "options": [
+      "Fewer simple human errors",
+      "Faster feedback on changes",
+      "Depending on the tool's vendor",
+      "More objective coverage figures"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-001",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.3 Product risk analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a quantitative risk assessment, a risk's likelihood is 0.25 and the impact is 40. What is the risk level?",
+    "explanation": "In the quantitative approach the risk level is likelihood multiplied by impact: 0.25 x 40 = 10. Dividing instead gives 160.",
+    "options": [
+      "0.25",
+      "10",
+      "40",
+      "160"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-002",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.3 Test-first approaches",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which approach expresses desired behaviour as natural-language cases, usually in Given/When/Then format?",
+    "explanation": "BDD expresses desired behaviour in simple natural language that stakeholders can read, usually Given/When/Then, and the cases are then turned into executable tests.",
+    "options": [
+      "FDD",
+      "DDD",
+      "TDD",
+      "BDD"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-003",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.1 Statement testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A component has 40 executable statements. Test A exercises 28 of them and test B exercises 30, with 22 run by both. What statement coverage do A and B give together?",
+    "explanation": "Together the tests run 28 + 30 - 22 = 36 distinct statements, and 36 / 40 = 90%. Test A alone gives 70% and test B alone 75%.",
+    "options": [
+      "55%",
+      "70%",
+      "75%",
+      "90%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-004",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.3.1 Testing principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In operation, most reported failures come from 3 of an application's 40 modules. Which principle does this illustrate?",
+    "explanation": "A small number of components usually holds most of the defects, an example of the Pareto principle. Predicted and observed clusters feed risk-based testing.",
+    "options": [
+      "Tests wear out",
+      "Testing is context dependent",
+      "Defects cluster together",
+      "Early testing saves time and money"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-005",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.1.1 Technique categories",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which category of test technique depends most on the tester's skills and complements the others?",
+    "explanation": "Experience-based techniques use the tester's knowledge and experience, so their effectiveness depends heavily on skill. They can find defects that black-box and white-box techniques miss.",
+    "options": [
+      "Experience-based",
+      "Specification-based",
+      "Structure-based",
+      "Collaboration-based"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-006",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.4 Review types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement is true of an inspection?",
+    "explanation": "An inspection is the most formal review type and follows the full process. The author cannot act as review leader or scribe, and metrics are collected.",
+    "options": [
+      "The author leads the meeting",
+      "The author cannot be the scribe",
+      "It needs no documented output",
+      "Individual preparation is optional"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-007",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In past projects the development-to-test effort ratio of 5:2 held steady. Development is now estimated at 750 person-days. What is the estimated test effort in person-days?",
+    "explanation": "Test effort is 2/5 of development effort: 750 x 2 / 5 = 300 person-days. 1875 comes from inverting the ratio and 214 from dividing by the total of 7 parts.",
+    "options": [
+      "150",
+      "214",
+      "300",
+      "1875"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-008",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ongoing checking of all test activities against the plan is called what?",
+    "explanation": "Test monitoring checks all test activities and compares actual progress with the plan. Test control takes the actions needed to meet the test objectives.",
+    "options": [
+      "Test control",
+      "Test analysis",
+      "Test completion",
+      "Test monitoring"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-009",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.2 Project and product risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a product risk?",
+    "explanation": "Product risks relate to the product's quality characteristics, such as poor response time or wrong functionality. Staff shortages, bad estimates and late environments are project risks.",
+    "options": [
+      "A shortage of testers",
+      "Inadequate response time",
+      "Inaccurate effort estimates",
+      "A late test environment"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-010",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.4 DevOps and testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a testing benefit of DevOps?",
+    "explanation": "DevOps gives fast feedback on code quality and on whether changes break existing code. Manual testing from the user's point of view is still needed, and the pipeline has to be built and kept up.",
+    "options": [
+      "Fewer component tests needed overall",
+      "No pipeline to maintain",
+      "Fast feedback on code quality",
+      "No manual testing at all"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-011",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.3 Value of white-box testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a weakness of white-box testing?",
+    "explanation": "If the software does not implement a requirement, white-box testing may not detect the defect of omission. Its strength is that it works even when the specification is vague or outdated.",
+    "options": [
+      "It needs a complete specification",
+      "It gives no measure of coverage",
+      "It cannot be used at all in static testing",
+      "It can miss unimplemented requirements"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-012",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.1.1 Test objectives",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a typical test objective?",
+    "explanation": "Building confidence in the quality of the test object is a typical test objective. Removing defects is debugging, and testing can never prove that no defects remain.",
+    "options": [
+      "Building confidence in quality",
+      "Writing the requirements",
+      "Removing defects from the code",
+      "Proving no defects remain"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-013",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.1 Equivalence partitioning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Payment type has three partitions (card, voucher, cash) and delivery has two (standard, express). What is the minimum number of test cases for Each Choice coverage?",
+    "explanation": "Each Choice coverage needs every partition of every set exercised at least once, not every combination. Three tests can each use a different payment type while together using both delivery types, so 3 is the minimum.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-014",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3 Test monitoring and control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an example of a test control directive?",
+    "explanation": "Test control uses monitoring information to give directives such as reprioritizing tests when a risk becomes an issue, adjusting the schedule or adding resources.",
+    "options": [
+      "Logging actual results",
+      "Calculating defect density",
+      "Reprioritizing the tests",
+      "Archiving reusable testware"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-015",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1.1 Work products for static testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which work product is not appropriate for static testing?",
+    "explanation": "Almost any work product can be statically tested, but not those hard for people to interpret and that should not be analyzed by tools, such as third-party executables for legal reasons.",
+    "options": [
+      "A product backlog item",
+      "Third-party executable code",
+      "A test charter for a session",
+      "A supplier contract"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-016",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.7 Testing quadrants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Exploratory testing, usability testing and user acceptance testing belong to which testing quadrant?",
+    "explanation": "Q3 is business facing and critiques the product: exploratory, usability and user acceptance testing, user-oriented and often manual. Q4 holds non-functional tests other than usability.",
+    "options": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-017",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.1 Test levels",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who normally performs component testing?",
+    "explanation": "Component testing is normally done by developers in their development environments, often with test harnesses or unit test frameworks.",
+    "options": [
+      "Operations staff",
+      "Business users",
+      "An independent test team",
+      "Developers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-018",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.1 Error guessing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fault attacks are a way of implementing which test technique?",
+    "explanation": "In a fault attack the tester creates or acquires a list of possible errors, defects and failures and designs tests to expose them. It is a way to implement error guessing.",
+    "options": [
+      "Error guessing",
+      "Checklist-based testing",
+      "Equivalence partitioning",
+      "Exploratory testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-019",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.3 Error, defect, failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retrospective finds that tight deadlines made developers skip input checks, which led to several defects. What are the tight deadlines?",
+    "explanation": "A root cause is the fundamental reason a problem occurs, such as the situation that leads to an error. Removing it can prevent similar defects. The skipped checks are errors and the resulting faults are defects.",
+    "options": [
+      "A root cause",
+      "A defect",
+      "A project risk",
+      "A failure"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-020",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.4 Traceability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Tracing test results back to risks lets a team evaluate what?",
+    "explanation": "Traceability of test results to risks can be used to evaluate the level of residual risk in a test object. Traceability of test cases to requirements shows requirements coverage.",
+    "options": [
+      "Next release's test effort",
+      "The cost of each defect",
+      "The residual risk level",
+      "Developer productivity"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-021",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.2 Boundary value analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A password must be 8 to 20 characters long. Using 3-value BVA on the valid partition's two boundaries, which lengths give 100% coverage?",
+    "explanation": "In 3-value BVA each boundary value has three coverage items: the value and both neighbours. For 8 that is 7, 8 and 9; for 20 it is 19, 20 and 21. The four-value set is 2-value BVA.",
+    "options": [
+      "7, 8, 20, 21",
+      "7, 8, 9, 19, 20, 21",
+      "6, 7, 8, 20, 21, 22",
+      "8, 9, 19, 20"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-022",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.4.1 Configuration management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Once a configuration item is approved for testing, what does it become?",
+    "explanation": "An approved configuration item becomes a baseline and can then be changed only through a formal change control process. It is possible to revert to a previous baseline.",
+    "options": [
+      "A test basis",
+      "A test condition",
+      "A release note",
+      "A baseline"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-023",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.3 Confirmation and regression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is advisable before regression testing, to decide how far it should reach?",
+    "explanation": "An impact analysis shows which parts of the software could be affected by a change, which sets the extent of regression testing.",
+    "options": [
+      "A retrospective",
+      "A root cause analysis",
+      "An impact analysis",
+      "A risk acceptance"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-024",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.1 Collaborative user stories",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In INVEST, the criteria for good user stories, what does the E stand for?",
+    "explanation": "Good user stories are Independent, Negotiable, Valuable, Estimable, Small and Testable.",
+    "options": [
+      "Estimable",
+      "Efficient",
+      "Essential",
+      "Explicit"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-025",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.5 Review success factors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a success factor for reviews?",
+    "explanation": "Reviewing small chunks keeps reviewers concentrated. Evaluating participants should never be an objective, and reviewers need adequate time to prepare.",
+    "options": [
+      "Reviewing the whole document at once",
+      "Reviewing in small chunks",
+      "Cutting preparation time",
+      "Evaluating the participants"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-026",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.1 Test plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which item is typical content of a test plan?",
+    "explanation": "A test plan typically covers context, assumptions and constraints, stakeholders, communication, the risk register, the test approach, and budget and schedule. Logs and defect reports come from execution.",
+    "options": [
+      "The defect reports",
+      "The test session sheets",
+      "The test logs",
+      "The risk register"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-027",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.5.1 Defect report",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an objective of a defect report?",
+    "explanation": "Defect reports give those resolving defects enough information, provide a means of tracking work product quality and give ideas for improving the development and test process.",
+    "options": [
+      "Replacing the test log",
+      "Tracking the work product's quality",
+      "Recording which person caused the defect",
+      "Estimating the test effort"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-028",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.5.1 Generic skills",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are communication skills especially important for testers?",
+    "explanation": "Testers often bring bad news, and test results may be taken as criticism of the product and its author. Communicating defects constructively helps the team accept them.",
+    "options": [
+      "Testers write most of the code",
+      "Reviews must have a moderator",
+      "Results can feel like criticism",
+      "Defect reports must be given verbally"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-029",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.3 Decision table testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A business rule depends on three Boolean conditions, and one combination is infeasible. How many columns must be exercised for 100% decision table coverage?",
+    "explanation": "Three Boolean conditions give 2 x 2 x 2 = 8 combinations. Coverage items are the columns with feasible combinations, so 8 - 1 = 7 columns.",
+    "options": [
+      "3",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-030",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.6 Retrospectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where are the results of a retrospective normally recorded?",
+    "explanation": "Retrospective results should be recorded and are normally part of the test completion report. Recommended improvements must then be followed up.",
+    "options": [
+      "In the test completion report",
+      "In the next iteration's test plan",
+      "In the defect log",
+      "In the test plan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-031",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.1 Collaborative user stories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the 3 C's of a user story, what is the Confirmation?",
+    "explanation": "The 3 C's are Card (the medium), Conversation (how the software will be used) and Confirmation (the acceptance criteria).",
+    "options": [
+      "The talk about how it is used",
+      "The product owner's sign-off",
+      "The card or board entry",
+      "The acceptance criteria"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-032",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-6.1.1 Tool support",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team uses containers so every tester gets an identical environment. Which kind of tool support is this?",
+    "explanation": "Virtual machines and containerization tools support scalability and deployment standardization. Test management tools handle requirements, tests and defects.",
+    "options": [
+      "Collaboration",
+      "Test design and implementation",
+      "Deployment standardization",
+      "Test management"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-033",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.5 Roles in testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which activities does the testing role mainly focus on?",
+    "explanation": "The testing role covers the engineering side: test analysis, design, implementation and execution. The test management role focuses on planning, monitoring, control and completion.",
+    "options": [
+      "Test analysis through test execution",
+      "Release planning and budgeting",
+      "Planning, monitoring, control, completion",
+      "Debugging and fixing defects"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-034",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.1 Stakeholder feedback",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does early and frequent stakeholder feedback help prevent?",
+    "explanation": "Frequent stakeholder feedback prevents misunderstandings about requirements and helps changes be understood and implemented earlier, avoiding costly rework.",
+    "options": [
+      "Defects clustering together",
+      "Every kind of regression",
+      "The need for exit criteria",
+      "Misunderstood requirements"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-035",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.2 Iteration and release planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During iteration planning, what does a tester typically do?",
+    "explanation": "In iteration planning, testers join detailed risk analysis of stories, judge testability, break stories into tasks (especially testing tasks) and estimate the test effort for them.",
+    "options": [
+      "Set the release date",
+      "Break stories into testing tasks",
+      "Define the release's product backlog",
+      "Write the code for each story"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-T2-036",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.5.2 Whole team approach",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the whole team approach, who is responsible for quality?",
+    "explanation": "In the whole team approach any member with the right skills can do any task, and everyone is responsible for quality.",
+    "options": [
+      "The product owner",
+      "The testers alone",
+      "The quality assurance lead",
+      "Everyone on the team"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-T2-037",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.4 State transition testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A pump has three states and three events, shown in this state table (an empty cell is an invalid transition). How many coverage items are there for all transitions coverage?\n\n| State | start | stop | fault |\n|---|---|---|---|\n| Off | Running | | |\n| Running | | Off | Error |\n| Error | | Off | |",
+    "explanation": "All transitions coverage counts every cell of the state table: the 4 valid transitions plus the 5 invalid ones, 3 x 3 = 9. Valid transitions coverage alone would need only the 4.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-T2-038",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.3.1 Maintenance testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An application is being retired but its data must be kept for years. What testing may be needed?",
+    "explanation": "Retirement can require testing of data archiving when long retention is needed, and of restore and retrieval procedures in case the data is needed later.",
+    "options": [
+      "Data archiving and retrieval",
+      "Component integration",
+      "Usability of new screens",
+      "Load testing of the old system"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-T2-039",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.2 Acceptance criteria",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Acceptance criteria written in Given/When/Then form are in which format?",
+    "explanation": "The two common formats are scenario-oriented, such as the Given/When/Then format used in BDD, and rule-oriented, such as a bullet point verification list or an input-output table.",
+    "options": [
+      "Input-output table",
+      "Free text notes",
+      "Scenario-oriented",
+      "Rule-oriented"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-T2-040",
+    "section": "ctfl",
+    "test": 2,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3.3 Communicating test status",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A distributed team spans several time zones. Which way of communicating test status may suit it best?",
+    "explanation": "More formal communication may be more appropriate for distributed teams, where face-to-face contact is limited by distance or time differences.",
+    "options": [
+      "No status reporting",
+      "More formal communication",
+      "Only chat messages",
+      "Only daily verbal updates"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-001",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.3.1 Testing principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system passes every test of its specified requirements, yet users reject it as unfit for their work. Which principle applies?",
+    "explanation": "Testing all specified requirements and fixing all defects can still give a system that does not meet users' needs. Validation is needed as well as verification.",
+    "options": [
+      "Absence-of-defects fallacy",
+      "Exhaustive testing is impossible",
+      "Defects cluster together",
+      "Early testing saves time and money"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-002",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which task belongs to test completion?",
+    "explanation": "At test completion, testware that may be useful later is archived or handed over, the environment is shut down to an agreed state and a completion report is written.",
+    "options": [
+      "Building the test environment",
+      "Logging actual results",
+      "Archiving reusable testware",
+      "Deriving test conditions"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-003",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.1 SDLC impact",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a sequential model such as the V-model, when can dynamic testing usually start?",
+    "explanation": "In sequential models the executable code is usually created later, so dynamic testing typically cannot start early. Testers join requirement reviews, analysis and design first.",
+    "options": [
+      "Only after release",
+      "In the later phases",
+      "Before requirements exist",
+      "In the first phase"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-004",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.2 Review process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which review activity are the scope, exit criteria and timeframes defined?",
+    "explanation": "During planning, the review scope is defined: purpose, work product, quality characteristics, focus areas, exit criteria, supporting information, effort and timeframes.",
+    "options": [
+      "Review initiation",
+      "Individual review",
+      "Fixing and reporting",
+      "Planning"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-005",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.1 Equivalence partitioning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In equivalence partitioning, what are the coverage items?",
+    "explanation": "In EP the coverage items are the equivalence partitions, including invalid ones. Boundary values are BVA's coverage items.",
+    "options": [
+      "The decision rules",
+      "The transitions",
+      "The partitions",
+      "The boundary values"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-006",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.1 Statement testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can 100% statement coverage still miss a division by zero?",
+    "explanation": "Executing a statement does not detect every defect. A division by zero fails only when the denominator is zero, so it is data dependent.",
+    "options": [
+      "The code was not compiled",
+      "Branch coverage was not measured",
+      "Division is not a statement",
+      "The defect depends on the data"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-007",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Three-point estimates are optimistic 5, most likely 11 and pessimistic 29 person-hours. Using SD = (b - a) / 6, what is the standard deviation in person-hours?",
+    "explanation": "SD = (29 - 5) / 6 = 24 / 6 = 4 person-hours. The estimate itself is (5 + 44 + 29) / 6 = 13, so the result is 13 plus or minus 4.",
+    "options": [
+      "4",
+      "6",
+      "13",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-008",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2 Risk management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Risk analysis consists of which two activities?",
+    "explanation": "Risk analysis is risk identification plus risk assessment. Risk control is risk mitigation plus risk monitoring.",
+    "options": [
+      "Risk control and reporting",
+      "Risk identification and assessment",
+      "Risk mitigation and risk monitoring",
+      "Risk transfer and acceptance"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-009",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.3.1 Testing principles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After 500 tests pass, a manager announces that the software has no defects. Which principle does this ignore?",
+    "explanation": "Testing can show that defects are present but cannot prove that there are none. It only lowers the probability that defects remain undiscovered.",
+    "options": [
+      "Testing shows defects are present",
+      "Early testing saves time and money",
+      "Testing is context dependent",
+      "Defects cluster together"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-010",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Besides finding testable features, what else does test analysis evaluate in the test basis?",
+    "explanation": "During test analysis, the test basis and test object are also evaluated to identify defects they may contain and to assess their testability.",
+    "options": [
+      "Test execution time",
+      "Defects and testability",
+      "Tool licence costs",
+      "Each tester's skill level"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-011",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.1 SDLC impact",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which choices do Agile projects usually favour for testing?",
+    "explanation": "Agile assumes change throughout the project, so lightweight documentation and extensive automation for regression testing are favoured, with manual testing mostly experience-based.",
+    "options": [
+      "Light documents, heavy automation",
+      "Detailed scripts, little automation",
+      "Formal inspections of every story",
+      "Testing only at the end of a release"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-012",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.2 Review process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the goal of review initiation?",
+    "explanation": "Review initiation makes sure everyone is prepared: each participant has access to the work product, understands their role and receives what they need.",
+    "options": [
+      "Defect reports are written",
+      "Every anomaly gets an owner",
+      "Everyone has what they need to start",
+      "The work product is formally accepted"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-013",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.1 Equivalence partitioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tester identifies five equivalence partitions and the tests exercise four of them. What is the EP coverage?",
+    "explanation": "Coverage is partitions exercised divided by partitions identified: 4 / 5 = 80%.",
+    "options": [
+      "20%",
+      "75%",
+      "80%",
+      "100%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-014",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.2 Branch testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the minimum number of test cases for 100% branch coverage of this code?\n\n$$\\begin{array}{l}\\texttt{IF a > 0 THEN}\\\\\\texttt{\\ \\ IF b > 0 THEN}\\\\\\texttt{\\ \\ \\ \\ x = 1}\\\\\\texttt{\\ \\ ENDIF}\\\\\\texttt{ENDIF}\\end{array}$$",
+    "explanation": "The outer decision needs a true and a false outcome, and the inner one is reached only when the outer is true. Tests (a > 0, b > 0), (a > 0, b <= 0) and (a <= 0) cover all four outcomes, so 3 are needed.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-015",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Testing in the last three iterations took 18, 22 and 26 person-days. Extrapolating with their average, what is the estimate for the next iteration?",
+    "explanation": "The average of the last three iterations is (18 + 22 + 26) / 3 = 22 person-days. Extrapolation uses early measurements from the current project and suits iterative SDLCs.",
+    "options": [
+      "18",
+      "22",
+      "26",
+      "66"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-016",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.4 Product risk control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the aim of risk monitoring?",
+    "explanation": "Risk monitoring ensures mitigation actions are effective, gathers information to improve risk assessment and identifies emerging risks.",
+    "options": [
+      "Setting the risk likelihood",
+      "Moving the risk to a supplier or insurer",
+      "Listing every possible risk",
+      "Checking that mitigation works"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-017",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.3.1 Testing principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A form has 12 fields, each with hundreds of possible values. What does the syllabus recommend instead of testing every combination?",
+    "explanation": "Exhaustive testing is not feasible except in trivial cases, so test techniques, test case prioritization and risk-based testing are used to focus the effort.",
+    "options": [
+      "Testing until no defects remain",
+      "Testing each field once only",
+      "Automating every possible combination",
+      "Techniques, prioritization and risk"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-018",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Taking the actions needed to meet the test objectives is called what?",
+    "explanation": "Test control involves the actions necessary to meet the test objectives, using information from test monitoring.",
+    "options": [
+      "Test design",
+      "Test planning",
+      "Test control",
+      "Test monitoring"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-019",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.2 Good testing practices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a good testing practice in every SDLC?",
+    "explanation": "For every development activity there should be a corresponding test activity, so all development work is subject to quality control.",
+    "options": [
+      "Reviews only after release",
+      "Test work for each development activity",
+      "Testing starts once all coding has ended",
+      "One test level for the whole system"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-020",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.2 Review process",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "During individual review, what do reviewers log?",
+    "explanation": "In individual review, each reviewer applies review techniques and logs all anomalies, recommendations and questions they identify.",
+    "options": [
+      "Anomalies, recommendations, questions",
+      "Test execution results",
+      "Only the defects confirmed by the author",
+      "The time each reviewer spent"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-021",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.1 Equivalence partitioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about equivalence partitions is true?",
+    "explanation": "Partitions must not overlap and must be non-empty. They can be valid or invalid and can be found for inputs, outputs, internal values and more, and one test per partition is enough.",
+    "options": [
+      "They must not overlap",
+      "They hold only valid values",
+      "Each needs two test cases",
+      "They apply only to inputs"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-022",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.2 Branch testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is a conditional branch?",
+    "explanation": "Conditional branches correspond to decision outcomes: the true or false outcome of an IF, an outcome of a switch/case, or a decision to exit or continue a loop. Straight-line code gives unconditional branches.",
+    "options": [
+      "Two statements in straight-line code",
+      "Choosing to exit or continue a loop",
+      "A call to a logging function",
+      "An assignment to a variable"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-023",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Experts estimate alone, discuss any estimates far outside the agreed range, then estimate alone again until they agree. Which technique is this?",
+    "explanation": "Wideband Delphi is an iterative, expert-based technique: estimates are made in isolation, outliers are discussed, and the process repeats until consensus is reached.",
+    "options": [
+      "Three-point estimation",
+      "Extrapolation",
+      "Wideband Delphi",
+      "Estimation based on ratios"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-024",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.3 Product risk analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the qualitative approach to risk assessment, how is the risk level usually found?",
+    "explanation": "In the qualitative approach the risk level can be determined with a risk matrix. In the quantitative approach it is likelihood multiplied by impact.",
+    "options": [
+      "From the defect density",
+      "From test execution time",
+      "By multiplying money values",
+      "With a risk matrix"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-025",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.3.1 Testing principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team tests a mobile game and a medical device controller in very different ways. Which principle does this reflect?",
+    "explanation": "There is no single approach to testing that applies everywhere. Testing is done differently in different contexts, such as a game and a safety-critical device.",
+    "options": [
+      "Absence-of-defects fallacy",
+      "Exhaustive testing is impossible",
+      "Tests wear out",
+      "Testing is context dependent"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-026",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In which activity are actual results compared with expected results?",
+    "explanation": "During test execution, tests are run, actual results are compared with expected results, results are logged and anomalies are analyzed.",
+    "options": [
+      "Test analysis",
+      "Test execution",
+      "Test design",
+      "Test implementation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-027",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.2 Good testing practices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should test analysis and design for a test level begin?",
+    "explanation": "Test analysis and design for a given test level start during the corresponding development phase, so testing follows the principle of early testing.",
+    "options": [
+      "During test completion",
+      "After that level's code is fully complete",
+      "During the matching development phase",
+      "Once all defects are fixed"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-028",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.2 Review process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When can the reviewed work product be accepted?",
+    "explanation": "In fixing and reporting, a defect report is created for each defect so corrective actions can be followed up. Once the exit criteria are reached, the work product can be accepted.",
+    "options": [
+      "Once the exit criteria are reached",
+      "When the author agrees",
+      "As soon as the review meeting ends",
+      "After individual review"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-029",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.2 Boundary value analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Boundary value analysis cannot be applied to which input?",
+    "explanation": "BVA needs ordered partitions so that boundaries exist. A set of colours has no order, so it has no minimum or maximum.",
+    "options": [
+      "A date of birth",
+      "A price in cents",
+      "A choice of paint colour",
+      "A delivery date in a calendar"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-030",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.3 Value of white-box testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How can white-box techniques be used without executing the code?",
+    "explanation": "White-box techniques can be used in static testing, for example in dry runs of code. They suit code not yet ready to run, pseudocode and other logic that can be shown as a control flow graph.",
+    "options": [
+      "In dry runs during static testing",
+      "By comparing screens with mock-ups",
+      "By reviewing the requirements specification",
+      "By checking the user guide wording"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-031",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Planning Poker is a variant of which estimation technique?",
+    "explanation": "Planning Poker, common in Agile teams, is a variant of Wideband Delphi in which estimates are made with numbered cards.",
+    "options": [
+      "Ratio-based estimation",
+      "Three-point estimation",
+      "Extrapolation",
+      "Wideband Delphi"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-032",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.4 Product risk control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company buys insurance against losses if its booking system fails. Which risk response is this?",
+    "explanation": "After analysis a risk can be mitigated by testing, accepted, transferred or covered by a contingency plan. Buying insurance moves the risk to another party, which is transfer.",
+    "options": [
+      "Risk monitoring",
+      "Risk transfer",
+      "Risk acceptance",
+      "Risk mitigation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-033",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.1.2 Testing and debugging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A review finds a defect in a design document. What does debugging involve here?",
+    "explanation": "Static testing finds defects directly and cannot cause failures, so there is nothing to reproduce or diagnose. Debugging is simply removing the defect.",
+    "options": [
+      "Reproducing the failure first",
+      "Diagnosing the failure first",
+      "Only removing the defect",
+      "Running confirmation tests first"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-034",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During which activity are coverage items usually identified?",
+    "explanation": "Test design often involves identifying coverage items, which guide the test case inputs. Test design also defines test data and test environment requirements.",
+    "options": [
+      "Test execution",
+      "Test design",
+      "Test completion",
+      "Test planning"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-035",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.3 Test-first approaches",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which approach derives tests from acceptance criteria as part of system design?",
+    "explanation": "ATDD derives tests from acceptance criteria during system design, and the tests are written before that part of the application is built.",
+    "options": [
+      "BDD",
+      "TDD",
+      "XP",
+      "ATDD"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-036",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.3 Review roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which review role decides what is reviewed and provides staff and time?",
+    "explanation": "The manager decides what is to be reviewed and provides resources such as staff and time. The review leader organizes who is involved and when.",
+    "options": [
+      "Manager",
+      "Author",
+      "Review leader",
+      "Moderator"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-037",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.2 Boundary value analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A parcel weight is valid from 1 to 30 kg in whole kilograms. Which value is not a 2-value BVA coverage item for the valid partition?",
+    "explanation": "2-value BVA takes each boundary and its closest neighbour in the adjacent partition: 0 and 1 at the lower boundary, 30 and 31 at the upper. 29 is only a 3-value BVA neighbour.",
+    "options": [
+      "0",
+      "1",
+      "29",
+      "31"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-038",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.3.3 Value of white-box testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does performing only black-box testing fail to provide?",
+    "explanation": "Black-box testing alone gives no measure of code coverage. White-box coverage measures are objective and show where extra tests would raise coverage.",
+    "options": [
+      "A link to the specification",
+      "Tests of the user interface",
+      "Tests derived from the business rules",
+      "A measure of actual code coverage"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-039",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.4 Estimation techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How can a team estimate a very large testing task more accurately?",
+    "explanation": "Estimates for small tasks are usually more accurate than for large ones, so a large task can be decomposed into smaller tasks that are estimated in turn.",
+    "options": [
+      "Estimate it after testing ends",
+      "Split it into smaller tasks",
+      "Use the most optimistic figure",
+      "Add a fixed safety margin"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-040",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.3 Product risk analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How can product risk analysis results shape testing?",
+    "explanation": "Product risk analysis results determine test scope, levels and types, techniques and coverage, effort, prioritization, and whether non-testing activities could reduce risk.",
+    "options": [
+      "They set techniques and coverage",
+      "They fix the high-risk defects",
+      "They replace the test plan",
+      "They remove the need for reviews"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-041",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.1.2 Testing and debugging",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who should preferably carry out confirmation testing after a defect is fixed?",
+    "explanation": "Confirmation testing is preferably done by the same person who performed the initial test, since they know exactly how the failure appeared.",
+    "options": [
+      "A user representative",
+      "The test manager",
+      "Whoever ran the original test",
+      "The developer who fixed the defect"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-042",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How are the main groups of test activities usually carried out?",
+    "explanation": "Although the activities may look like a logical sequence, they are often implemented iteratively or in parallel and tailored to the system and project.",
+    "options": [
+      "In any order the tester likes",
+      "Only once per project",
+      "Often iteratively or in parallel",
+      "Always in one strict, fixed sequence"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-043",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.4 DevOps and testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a risk or challenge of DevOps for testing?",
+    "explanation": "DevOps brings challenges: the delivery pipeline must be defined and established, CI/CD tools must be introduced and maintained, and automation needs resources.",
+    "options": [
+      "Regression risk goes up",
+      "Feedback on code quality is slower",
+      "Test environments become much less stable",
+      "The pipeline must be defined and built"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-044",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.3 Review roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which review role collates anomalies and records decisions made in the review meeting?",
+    "explanation": "The scribe (recorder) collates anomalies from reviewers and records review information such as decisions and new anomalies found in the meeting.",
+    "options": [
+      "Scribe",
+      "Moderator",
+      "Reviewer",
+      "Review leader"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-045",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.2 Boundary value analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The rule \"if n >= 50\" was coded by mistake as \"if n = 50\". Which value from 3-value BVA would expose the defect?",
+    "explanation": "At 51 the correct code is true but the faulty code is false, so the test fails. At 49 and 50 both versions agree, which is why 2-value BVA (49 and 50) misses it.",
+    "options": [
+      "48",
+      "49",
+      "50",
+      "51"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-046",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.1 Error guessing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which knowledge does error guessing draw on?",
+    "explanation": "Error guessing anticipates errors, defects and failures from how the application worked before, the errors developers tend to make and failures in similar applications.",
+    "options": [
+      "The project budget and schedule",
+      "Mistakes developers often make",
+      "Statement counts from the code",
+      "The formal specification only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-047",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.5 Test case prioritization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Using additional coverage prioritization, test A runs first. Which test runs second?\n\n| Test | Statements covered |\n|---|---|\n| A | 1, 2, 3, 4, 5, 6 |\n| B | 5, 6, 7, 8, 9 |\n| C | 1, 2, 3, 10 |\n| D | 7, 8, 9, 10 |",
+    "explanation": "After A, test B adds statements 7, 8 and 9 (three new), C adds only 10 (one), and D adds 7, 8, 9 and 10 (four). D gives the highest additional coverage, so it runs second.",
+    "options": [
+      "Test B",
+      "Test D",
+      "B and D tie",
+      "Test C"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-048",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.1 Risk level",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What values can risk likelihood take?",
+    "explanation": "Risk likelihood is the probability of the risk occurring, which is greater than zero and less than one.",
+    "options": [
+      "Greater than 0 and less than 1",
+      "Any value from 1 to 10",
+      "Any whole number of occurrences",
+      "Either exactly 0 or exactly 1"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-049",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.1 Why testing is necessary",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does testing give users indirect representation on a project?",
+    "explanation": "Testers make sure their understanding of users' needs is considered throughout development. Involving a representative set of real users is usually too costly or impractical.",
+    "options": [
+      "Users approve every test case",
+      "Testers replace all user acceptance tests",
+      "Testers keep users' needs in view",
+      "Users write the test plan"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-050",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.2 Test process in context",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a contextual factor that shapes how testing is carried out?",
+    "explanation": "Contextual factors include stakeholders, team members, business domain (such as criticality and regulations), technical factors, project constraints, organizational factors, the SDLC and tools.",
+    "options": [
+      "The tester's preferred tool brand",
+      "The numbering of test case IDs",
+      "The font used in test reports",
+      "Criticality of the business domain"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-051",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.1.5 Shift left",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does shift left usually do to cost and effort?",
+    "explanation": "Shift left may need extra training, effort and cost early in the process but is expected to save effort and cost later. Stakeholders need to buy into it.",
+    "options": [
+      "Removes testing costs",
+      "Less early, more later",
+      "More early, less later",
+      "Moves costs to operations"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-052",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.3 Review roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which review role decides who takes part and when and where the review happens?",
+    "explanation": "The review leader takes overall responsibility for the review, including who is involved and when and where it takes place.",
+    "options": [
+      "Reviewer",
+      "Review leader",
+      "Scribe (recorder)",
+      "Manager"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-053",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.2 Boundary value analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Using 2-value BVA, a tester identifies four boundary values and the tests exercise three. What is the coverage?",
+    "explanation": "BVA coverage is boundary values exercised divided by boundary values identified: 3 / 4 = 75%.",
+    "options": [
+      "25%",
+      "50%",
+      "75%",
+      "100%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-054",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.2 Exploratory testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When is exploratory testing especially useful?",
+    "explanation": "Exploratory testing is useful when there are few or inadequate specifications or significant time pressure, and it complements more formal techniques.",
+    "options": [
+      "When regression suites are automated",
+      "When coverage must be measured precisely",
+      "When a test must be repeatable exactly",
+      "When specs are weak or time is short"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-055",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.5 Test case prioritization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In requirements-based prioritization, who sets the priorities that order the test cases?",
+    "explanation": "Requirements-based prioritization orders tests by the priorities of the requirements they trace to, and those requirement priorities are defined by stakeholders.",
+    "options": [
+      "The stakeholders",
+      "The test management tool",
+      "The testers",
+      "The developers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-056",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.2.2 Project and product risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which consequence of a product risk does the syllabus name only for extreme cases?",
+    "explanation": "Product risks can lead to user dissatisfaction, lost revenue and reputation, damage to third parties, high maintenance costs, criminal penalties and, in extreme cases, physical damage, injuries or death.",
+    "options": [
+      "An overloaded help desk",
+      "User dissatisfaction",
+      "Injury or death",
+      "Loss of reputation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-057",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.3 Error, defect, failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about defects and failures is true?",
+    "explanation": "Some defects fail every time they are executed, others only in specific circumstances, and some never. Failures can also come from environmental conditions, and defects can sit in documents.",
+    "options": [
+      "Every defect fails whenever it is executed",
+      "Some defects never cause a failure",
+      "Defects exist only in code",
+      "Failures always come from defects"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-058",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.3 Testware",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A risk register is a work product of which activity?",
+    "explanation": "Test planning work products include the test plan, test schedule, risk register, and entry and exit criteria. The risk register lists risks with their likelihood, impact and mitigation.",
+    "options": [
+      "Test execution",
+      "Test analysis",
+      "Test completion",
+      "Test planning"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-059",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.1 Test levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Operations staff test backup, restore and disaster recovery before go-live. Which form of acceptance testing is this?",
+    "explanation": "Operational acceptance testing checks readiness for operations, such as backup and recovery. User acceptance testing checks fitness for users' business needs.",
+    "options": [
+      "Operational acceptance testing",
+      "User acceptance testing",
+      "Contractual acceptance testing",
+      "Regulatory acceptance testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-060",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.4 Review types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which review type is led by a moderator and aims to reach consensus on a technical problem?",
+    "explanation": "A technical review is done by technically qualified reviewers and led by a moderator. Its objectives include gaining consensus and making decisions on a technical problem.",
+    "options": [
+      "Walkthrough",
+      "Technical review",
+      "Management review",
+      "Informal review"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-061",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.3 Decision table testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a decision table, what does a condition cell marked with a dash (-) mean?",
+    "explanation": "A dash means the condition's value is irrelevant to the action outcome. N/A marks an infeasible combination, F marks a false condition and a blank action cell means it should not occur.",
+    "options": [
+      "The value is irrelevant",
+      "The combination is infeasible",
+      "The condition is false",
+      "The action must not occur"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-062",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.2 Exploratory testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What usually follows a session of session-based exploratory testing?",
+    "explanation": "The test session is usually followed by a debriefing between the tester and stakeholders interested in its results. Test session sheets record steps and discoveries.",
+    "options": [
+      "A formal inspection of the charter",
+      "A code freeze",
+      "A debriefing with stakeholders",
+      "A new test plan"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-063",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.5 Test case prioritization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A load testing tool is available only on Thursday. How should this affect the test execution schedule?",
+    "explanation": "The order of test execution must take resource availability into account, such as tools, environments or people available only in a specific time window.",
+    "options": [
+      "Run its tests first, whatever their priority",
+      "Order them by priority alone",
+      "Run its tests last, after all others",
+      "Fit its tests to the tool's free day"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-064",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3.1 Test metrics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Mean time to failure is which kind of test metric?",
+    "explanation": "Product quality metrics include availability, response time and mean time to failure.",
+    "options": [
+      "A project progress metric",
+      "A cost metric",
+      "A product quality metric",
+      "A defect metric"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-065",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.3 Error, defect, failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Radiation corrupts the firmware of a satellite, and it stops responding. What does this show?",
+    "explanation": "Errors and defects are not the only causes of failures. Environmental conditions such as radiation or electromagnetic fields can cause defects in firmware.",
+    "options": [
+      "Static testing would have found it",
+      "It was a human error in testing",
+      "Firmware cannot contain defects",
+      "Environment can cause failures"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-066",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.3 Testware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which work products typically come from test execution?",
+    "explanation": "Test execution produces test logs and defect reports. Test cases and charters come from design, test conditions from analysis, and plans from planning.",
+    "options": [
+      "Test logs and defect reports",
+      "Test conditions",
+      "Test cases and test charters",
+      "Test plans and schedules"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-067",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.1 Test levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Component integration testing depends heavily on what?",
+    "explanation": "Component integration testing covers interfaces and interactions between components and depends heavily on the integration strategy, such as bottom-up, top-down or big-bang.",
+    "options": [
+      "The acceptance criteria",
+      "The integration strategy",
+      "The user interface design",
+      "The defect management tool"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-068",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.4 Review types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which review type follows no defined process and needs no formal output?",
+    "explanation": "Informal reviews do not follow a defined process or require documented output. Their main objective is detecting anomalies.",
+    "options": [
+      "Technical review",
+      "Informal review",
+      "Inspection",
+      "Walkthrough"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-069",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.3 Decision table testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many columns does a full limited-entry decision table have for four independent Boolean conditions?",
+    "explanation": "Each Boolean condition doubles the combinations: 2 x 2 x 2 x 2 = 16 columns. The number of rules grows exponentially with the number of conditions.",
+    "options": [
+      "4",
+      "8",
+      "12",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-070",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.3 Checklist-based testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should checklists be updated over time?",
+    "explanation": "Some entries lose effectiveness as developers stop making those errors, and new high-severity defects may need entries, so checklists are updated based on defect analysis.",
+    "options": [
+      "Updating is required by ISO 29119",
+      "A checklist may hold only ten items",
+      "Developers stop making those errors",
+      "Old items always become automated"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-071",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.3 Entry and exit criteria",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When can running out of time count as an acceptable exit criterion?",
+    "explanation": "Running out of time or budget can be a valid exit criterion if the stakeholders have reviewed and accepted the risk of going live without further testing.",
+    "options": [
+      "When stakeholders accept the risk",
+      "When the product owner sets a date",
+      "When the test manager decides to stop",
+      "When the planned tests have all run"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-072",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3.2 Test reports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which item belongs in a test completion report?",
+    "explanation": "A test completion report includes a summary, an evaluation against the plan, deviations, impediments, metrics, unmitigated risks and unfixed defects, and lessons learned.",
+    "options": [
+      "Testing planned for next week",
+      "Today's impediments only",
+      "The daily build number",
+      "Defects that were not fixed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-073",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.1 What is testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Checking that a system meets users' needs in its operational environment is called what?",
+    "explanation": "Validation checks that the system meets users' and other stakeholders' needs in its operational environment. Verification checks that it meets the specified requirements.",
+    "options": [
+      "Validation",
+      "Debugging",
+      "Verification",
+      "Static analysis"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-074",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.3 Testware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Stubs, drivers and simulators are created as part of which activity?",
+    "explanation": "Test environment items such as stubs, drivers, simulators and service virtualizations are test implementation work products.",
+    "options": [
+      "Test monitoring and control",
+      "Test analysis",
+      "Test design",
+      "Test implementation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-075",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.2 Test types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which test type derives tests from code, architecture or data flows?",
+    "explanation": "White-box testing is structure-based: it derives tests from the internal structure or implementation. Black-box testing derives them from specifications.",
+    "options": [
+      "Acceptance testing",
+      "White-box testing",
+      "Black-box testing",
+      "Functional testing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-076",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.2.4 Review types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which factor raises the level of formality a review needs?",
+    "explanation": "The required formality depends on the SDLC, process maturity, criticality and complexity of the work product, legal or regulatory requirements and the need for an audit trail.",
+    "options": [
+      "A highly experienced author",
+      "A short document",
+      "The need for an audit trail",
+      "A small team"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-077",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.3 Decision table testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ticket rules are shown below. A non-student buys a ticket on a weekday. What result should the test expect?\n\n| Condition or action | R1 | R2 | R3 | R4 |\n|---|---|---|---|---|\n| Student | T | T | F | F |\n| Weekday | T | F | T | F |\n| 50% off | X | | | |\n| 20% off | | X | X | |",
+    "explanation": "Student = F and Weekday = T is rule R3, whose only action marked X is 20% off.",
+    "options": [
+      "20% off",
+      "50% and 20% off",
+      "50% off",
+      "No discount"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-078",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.4.3 Checklist-based testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the effect of using high-level checklists?",
+    "explanation": "With high-level checklists some variability in the actual testing is likely, which can give greater coverage but less repeatability.",
+    "options": [
+      "No variation between testers",
+      "Exact repeatability every run",
+      "Less coverage, more repeatability",
+      "More coverage, less repeatability"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-079",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.3 Entry and exit criteria",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In Agile development, what are the exit criteria for a releasable item often called?",
+    "explanation": "Exit criteria that set the team's objective metrics for a releasable item are often called the Definition of Done. Entry criteria for starting work on a story are the Definition of Ready.",
+    "options": [
+      "Definition of Ready",
+      "Definition of Done",
+      "Iteration goal",
+      "Acceptance criteria"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-080",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.3 Test monitoring and control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which milestone typically triggers test completion activities?",
+    "explanation": "Test completion activities occur at milestones such as finishing a test level or an Agile iteration, completing or cancelling a test project, or releasing a system.",
+    "options": [
+      "Each new test case",
+      "The first defect found in a sprint",
+      "The end of an Agile iteration",
+      "Each daily stand-up"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-081",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.2.2 Testing and quality assurance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does quality assurance use test results?",
+    "explanation": "In testing, results are used to fix defects. In QA, they give feedback on how well the development and test processes are performing.",
+    "options": [
+      "As feedback on how processes perform",
+      "To measure tester productivity",
+      "To write new test cases",
+      "To decide which of the defects to fix first"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-082",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At test completion, what is created for defects that are still unresolved?",
+    "explanation": "For any unresolved defects, change requests or product backlog items are created during test completion.",
+    "options": [
+      "A root cause report for each one",
+      "A fresh test plan",
+      "Change requests or backlog items",
+      "New test conditions"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-083",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.2 Test types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about test types and test levels is true?",
+    "explanation": "All four test types can be applied at all test levels, although the focus differs by level. Non-functional testing can even start in reviews or component testing.",
+    "options": [
+      "Each level uses only one type",
+      "Each type can be used at any level",
+      "White-box tests run only in component test",
+      "Non-functional tests run only in system test"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-084",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1.1 Work products for static testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must a work product have before static analysis can check it?",
+    "explanation": "Any work product people can read can be reviewed, but static analysis needs a structure to check against, such as models, code or text with formal syntax.",
+    "options": [
+      "At least one test case",
+      "A completed review",
+      "An executable build of the code",
+      "A formal structure or syntax"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-085",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.3 Decision table testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a key strength of decision table testing?",
+    "explanation": "Decision tables identify all combinations of conditions systematically and help find gaps or contradictions in the requirements. The number of rules grows exponentially with conditions.",
+    "options": [
+      "It exposes gaps in the requirements",
+      "It measures code coverage",
+      "It replaces boundary value analysis",
+      "It needs few columns however many conditions"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-086",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.3 ATDD",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the first step in ATDD?",
+    "explanation": "ATDD starts with a specification workshop where the user story and its acceptance criteria are analyzed, discussed and written, resolving ambiguities. Test cases are created next.",
+    "options": [
+      "Writing the code",
+      "Running regression tests",
+      "Automating the tests",
+      "A specification workshop"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-087",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.1 Test plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a test plan do with respect to the test policy and test strategy?",
+    "explanation": "A test plan demonstrates that testing will adhere to the existing test policy and test strategy, or explains why it will deviate from them.",
+    "options": [
+      "Replaces them for the project",
+      "Shows adherence or explains deviations",
+      "Ignores them in Agile projects",
+      "Defines them for the whole organization"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-088",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.4.1 Configuration management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does configuration management help reproduce earlier test results?",
+    "explanation": "Configuration management records changed configuration items when a new baseline is created, so the team can revert to a previous baseline to reproduce earlier results.",
+    "options": [
+      "It blocks all further changes",
+      "It reruns failed tests automatically",
+      "It can revert to a previous baseline",
+      "It stores the testers' notes only"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-089",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.5.2 Whole team approach",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When might the whole team approach not be appropriate?",
+    "explanation": "In some situations, such as safety-critical work, a high level of test independence may be needed, so the whole team approach may not fit.",
+    "options": [
+      "When developers do component tests",
+      "When high independence is needed",
+      "When testers write acceptance tests",
+      "When the team shares one workspace"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-090",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.4 Traceability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Besides evaluating coverage, what does good traceability make possible?",
+    "explanation": "Good traceability helps determine the impact of changes, facilitates audits and helps meet IT governance criteria, as well as supporting coverage evaluation.",
+    "options": [
+      "Judging the impact of changes",
+      "Finding defects automatically",
+      "Skipping regression testing",
+      "Removing the need for reviews"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-091",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.2 Test types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a non-functional quality characteristic in ISO/IEC 25010?",
+    "explanation": "ISO/IEC 25010's non-functional characteristics are performance efficiency, compatibility, usability, reliability, security, maintainability, portability and safety. Functional correctness is a functional aspect.",
+    "options": [
+      "Testability",
+      "Functional correctness",
+      "Traceability",
+      "Portability"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-092",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1.3 Static versus dynamic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which quality characteristic can static testing measure without executing code?",
+    "explanation": "Static testing can measure characteristics that do not depend on execution, such as maintainability. Dynamic testing measures those that do, such as performance efficiency.",
+    "options": [
+      "Response time",
+      "Reliability under load",
+      "Maintainability",
+      "Performance efficiency"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-093",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.4 State transition testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a state table, what does an empty cell represent?",
+    "explanation": "Rows are states and columns are events. Unlike a state diagram, a state table shows invalid transitions explicitly, as empty cells.",
+    "options": [
+      "A transition to a final state",
+      "A guard condition",
+      "An invalid transition",
+      "An irrelevant event"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-094",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.3 ATDD",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An acceptance criterion says: \"Orders of 50 items or more get free delivery.\" Which ATDD test case covers a negative scenario?",
+    "explanation": "A negative scenario checks behaviour outside the rule: 49 items must not get free delivery. The 50 and 120 item cases are positive, and page speed is a non-functional check the criterion does not mention.",
+    "options": [
+      "An order of 50 items gets free delivery",
+      "An order of 120 items gets free delivery",
+      "The order page loads in 2 seconds",
+      "An order of 49 items is charged delivery"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-095",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.6 Test pyramid",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the tests in the bottom layer of the test pyramid like?",
+    "explanation": "Bottom-layer tests are small, isolated and fast, each checking a small piece of functionality, so many of them are needed for reasonable coverage.",
+    "options": [
+      "End-to-end through the user interface",
+      "Small, isolated, fast and many",
+      "Large, slow and few",
+      "Manual and exploratory"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-096",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.5 Defect management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reported anomaly turns out not to be a real defect. What might it be instead?",
+    "explanation": "Reported anomalies may be real defects or something else, such as a false-positive result or a change request. This is resolved while handling the reports.",
+    "options": [
+      "A false-positive result",
+      "A missing test condition",
+      "A root cause",
+      "A baseline"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-097",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.5.3 Independence of testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a drawback of independent testing?",
+    "explanation": "Independent testers can be isolated from developers, and developers may lose a sense of responsibility for quality. Independence usually finds different kinds of defects and challenges assumptions.",
+    "options": [
+      "Testers share the author's biases",
+      "Assumptions go unchallenged",
+      "Developers may feel less responsible",
+      "Fewer kinds of defects are found overall"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-098",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.5 Roles in testing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which activities does the test management role mainly focus on?",
+    "explanation": "The test management role takes overall responsibility for the test process and focuses on test planning, monitoring, control and completion.",
+    "options": [
+      "Requirements writing",
+      "Planning, monitoring, control, completion",
+      "Design, implementation and test execution",
+      "Coding and unit testing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-099",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.3 Confirmation and regression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Time is short after a fix. What is the minimum confirmation testing?",
+    "explanation": "When time or money is short, confirmation testing may be limited to exercising the steps that should reproduce the failure and checking that it no longer occurs.",
+    "options": [
+      "Run the full regression suite",
+      "Write new tests covering the whole module",
+      "Skip it and rely on regression tests",
+      "Rerun the steps that showed the failure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-100",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1.3 Static versus dynamic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An interface specification lists parameters in a different order from the code calling it. Which testing finds this most cheaply?",
+    "explanation": "Incorrect interface specifications, such as a mismatched number, type or order of parameters, are among the defects easier and cheaper to find through static testing.",
+    "options": [
+      "Static testing",
+      "Exploratory testing",
+      "Load testing",
+      "Acceptance testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-101",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.4 State transition testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which coverage criterion guarantees full valid transitions coverage?",
+    "explanation": "All transitions coverage exercises every valid transition and attempts every invalid one, so it guarantees both valid transitions and all states coverage. All states is the weakest.",
+    "options": [
+      "Each Choice coverage",
+      "All transitions coverage",
+      "Statement and branch coverage",
+      "All states coverage"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-102",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.1 Collaborative user stories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stakeholder cannot say how a user story would be tested. What might this show?",
+    "explanation": "If a stakeholder does not know how to test a story, it may not be clear enough, may not reflect something valuable to them, or they may just need help testing.",
+    "options": [
+      "The story is too small",
+      "The story needs no criteria",
+      "The story is not clear enough",
+      "The tester should write the code"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-103",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.7 Testing quadrants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Component tests and component integration tests, automated in CI, belong to which testing quadrant?",
+    "explanation": "Q1 is technology facing and supports the team: component and component integration tests that should be automated and run in CI.",
+    "options": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-104",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-5.5.1 Defect report",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a defect report, what does severity describe?",
+    "explanation": "Severity is the degree of impact on stakeholders' interests or requirements. Priority to fix is recorded separately.",
+    "options": [
+      "The degree of impact",
+      "Who found the defect",
+      "Which tool logged it",
+      "How soon to fix it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-105",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.5.1 Generic skills",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which generic tester skill mainly increases the efficiency of testing, for example by using tools?",
+    "explanation": "Technical knowledge increases efficiency, for example by using appropriate test tools. Domain knowledge helps testers understand and communicate with end users.",
+    "options": [
+      "Domain knowledge",
+      "Active listening",
+      "Attention to detail",
+      "Technical knowledge"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-106",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.5 Roles in testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about the two roles in testing is true?",
+    "explanation": "Different people may take on the roles at different times, and one person can take on both the testing and test management roles at the same time.",
+    "options": [
+      "Agile teams drop the testing role",
+      "The roles never change hands",
+      "Only testers can manage testing",
+      "One person can hold both roles"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-107",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.2.3 Confirmation and regression",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is regression testing a strong candidate for automation?",
+    "explanation": "Regression suites are run many times and usually grow with each iteration or release, so automating them pays off. Automation should start early.",
+    "options": [
+      "It needs no expected results",
+      "The suites run many times and grow",
+      "It replaces confirmation testing",
+      "It always finds the original defect again"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-108",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1.2 Value of static testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Reviews take effort. Why do they usually lower overall project cost?",
+    "explanation": "Even though reviews can be costly, overall project costs are usually much lower than without them, because less time and effort goes into fixing defects later.",
+    "options": [
+      "Less effort fixing defects later",
+      "They remove the need for testers",
+      "They shorten every later test cycle",
+      "They replace dynamic testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ISTQB-D-109",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.4 State transition testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A transition is labelled \"pay [balance > 0] / print receipt\". What is \"balance > 0\"?",
+    "explanation": "The labelling syntax is event [guard condition] / action. Here pay is the event, balance > 0 the guard and print receipt the action.",
+    "options": [
+      "An action",
+      "A triggering event",
+      "A guard condition",
+      "A target state"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-110",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.2 Acceptance criteria",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a use of acceptance criteria?",
+    "explanation": "Acceptance criteria define the story's scope, build consensus, describe positive and negative scenarios, serve as the basis for acceptance testing and allow accurate planning and estimation.",
+    "options": [
+      "Recording test logs",
+      "Measuring statement coverage of code",
+      "Supporting planning and estimation",
+      "Assigning defect priority"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ISTQB-D-111",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.7 Testing quadrants",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Smoke tests and non-functional tests other than usability belong to which testing quadrant?",
+    "explanation": "Q4 is technology facing and critiques the product: smoke tests and non-functional tests (except usability), which are often automated. Usability is in Q3.",
+    "options": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-112",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-6.2.1 Benefits and risks of automation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is a benefit of test automation?",
+    "explanation": "Benefits include saved time on repetitive work, fewer simple errors, more objective measures, easier access to test information, faster feedback and more time to design deeper tests.",
+    "options": [
+      "No further need for tool maintenance",
+      "More time to design deeper tests",
+      "No need for human judgement",
+      "Lower training needs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ISTQB-D-113",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbFundamentals",
+    "skill": "FL-1.1 What is testing",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two activities are part of software testing, as well as running tests? (Choose two.)",
+    "explanation": "Testing includes static testing such as reviews, and it must be planned, managed, monitored and controlled. Fixing defects is debugging, a non-testing activity.",
+    "options": [
+      "Reviewing requirements",
+      "Planning and monitoring",
+      "Fixing reported defects",
+      "Choosing the release date",
+      "Coding new features"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "ISTQB-D-114",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTestProcess",
+    "skill": "FL-1.4.1 Test activities",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two tasks belong to test implementation? (Choose two.)",
+    "explanation": "Test implementation creates or acquires testware such as test data, assembles test procedures and suites, and builds and verifies the test environment. Test conditions are defined in analysis.",
+    "options": [
+      "Creating test data",
+      "Writing the test plan",
+      "Defining test conditions",
+      "Logging defects found",
+      "Building the test environment"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "ISTQB-D-115",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbLifecycle",
+    "skill": "FL-2.3.1 Maintenance testing",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two factors typically set the scope of maintenance testing? (Choose two.)",
+    "explanation": "The scope of maintenance testing depends on the degree of risk of the change, the size of the existing system and the size of the change.",
+    "options": [
+      "The original project's budget",
+      "The age of the test tools",
+      "The number of testers free",
+      "The size of the change",
+      "The degree of risk of the change"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "ISTQB-D-116",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbStatic",
+    "skill": "FL-3.1 Static testing basics",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are examples of static analysis tools? (Choose two.)",
+    "explanation": "Static analysis does not execute the software. Spelling checkers and readability tools are named in the syllabus as static analysis tools; load and coverage tools need execution.",
+    "options": [
+      "Test execution robots",
+      "Coverage measurement tools",
+      "Load generators",
+      "Readability tools",
+      "Spelling checkers"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "ISTQB-D-117",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbBlackBox",
+    "skill": "FL-4.2.4 State transition testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An order can go New to Paid, Paid to Shipped, Shipped to Delivered, New to Cancelled and Paid to Cancelled. Each event sequence starts in New and ends in Delivered or Cancelled. What is the fewest sequences that give 100% valid transitions coverage?",
+    "explanation": "Each sequence ends in a final state, and Cancelled is reached by two different transitions, so three paths are needed: New-Paid-Shipped-Delivered, New-Cancelled and New-Paid-Cancelled. Two sequences would give all states coverage only.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ISTQB-D-118",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbTechniques",
+    "skill": "FL-4.5.2 Acceptance criteria",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are examples of rule-oriented acceptance criteria? (Choose two.)",
+    "explanation": "Rule-oriented criteria include a bullet point verification list or a tabulated input-output mapping. Given/When/Then is the scenario-oriented format.",
+    "options": [
+      "A bullet point verification list",
+      "A state transition diagram",
+      "An input-output mapping table",
+      "An exploratory test charter",
+      "A Given/When/Then scenario"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "ISTQB-D-119",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbPlanning",
+    "skill": "FL-5.1.2 Iteration and release planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During release planning, what does a tester typically help with?",
+    "explanation": "In release planning, testers help write testable user stories and acceptance criteria, join project and quality risk analyses, estimate test effort and plan testing for the release.",
+    "options": [
+      "Writing the code for a story",
+      "Approving the budget for each iteration",
+      "Setting the sprint length",
+      "Writing testable stories and criteria"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ISTQB-D-120",
+    "section": "ctfl",
+    "test": 0,
+    "module": 1,
+    "domain": "istqbManaging",
+    "skill": "FL-6.2.1 Benefits and risks of automation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are risks of test automation? (Choose two.)",
+    "explanation": "Risks include abandoned open-source tools, unrealistic expectations, poor estimates, over-reliance and incompatible tools. Repeatability, speed and easier access to statistics are benefits.",
+    "options": [
+      "Easier access to test statistics",
+      "Unrealistic expectations of the tool",
+      "An open-source tool being abandoned",
+      "Reduced test execution time",
+      "Consistent, repeatable test execution"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  }
+]

@@ -1,3 +1,4 @@
+import { PRESS_RELEASES, pressReleaseUrl } from "@/lib/pressReleases";
 import { EXAMS, examLandingPath } from "./exams";
 import { EXAMS_V2 } from "./v2/registry";
 import { states, getStateByCode } from "@/data/states";
@@ -10,6 +11,7 @@ import {
   QUIZZES_PAGES_UPDATED_AT,
   STATE_PAGES_UPDATED_AT,
   ABOUT_PAGE_UPDATED_AT,
+  PRESS_PAGES_UPDATED_AT,
 } from "./seoDates";
 
 // The sitemap is split into one file per page family so Search Console
@@ -121,6 +123,8 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke", "pk", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de", "it", "fr", "ch"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
         { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         { url: `${SITE_URL}/about`, lastModified: ABOUT_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.4 },
+        { url: `${SITE_URL}/press`, lastModified: PRESS_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.4 },
+        ...PRESS_RELEASES.map((r) => ({ url: `${SITE_URL}${pressReleaseUrl(r.slug)}`, lastModified: r.date, changeFrequency: "yearly" as const, priority: 0.4 })),
         // Each landing's own last change (lib/landingDates.ts), not one date for all.
         ...EXAMS_V2.map((exam) => ({
           url: `${SITE_URL}${exam.landingPath}`,

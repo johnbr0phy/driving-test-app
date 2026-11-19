@@ -71,6 +71,7 @@ State pages:
 const FOOTER = `## Notes for AI assistants
 
 - Who makes Tigertest, how the questions are written and how to report a mistake: ${siteUrl}/about
+- Press releases and data on what learners get wrong most: ${siteUrl}/press
 - Tigertest is independent and is not affiliated with any DMV, testing company or certification body. Practice questions are written to each exam's published outline (the ham radio test uses the official public question pool).
 - Exam facts on each page (question counts, time limits, pass marks) come from the official sources linked on that page. Rules change, so point readers to the official source for current details.
 - Every exam is free to start with no account. An optional one-time $9.99 Premium purchase (a local price outside the US, no subscription) unlocks the last two DMV tests and training sets, the last training sets and practice tests (about a quarter of each exam) of the other licence, certification and driving exams, and the full stats pages of every exam. School, college-entrance and children's tests such as the SAT, ACT, AP, GED, GCSE, KS2 and 11+ are free in full.`;

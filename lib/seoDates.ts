@@ -15,4 +15,6 @@ export const STATE_EXAM_LANDINGS_UPDATED_AT = "2026-11-10"; // first published
 export const TOPIC_PAGES_UPDATED_AT = "2026-11-14"; // CCRN (Adult) added; v2 exams (ASVAB subtests and AFQT, TEAS, HESI, GED, SAT, ACT, NCLEX, EMT) added; CDL endorsement titles; first published 2026-11-10
 
 // /about.
-export const ABOUT_PAGE_UPDATED_AT = "2026-11-10";
+export const ABOUT_PAGE_UPDATED_AT = "2026-11-19"; // links /press
+// /press and its releases.
+export const PRESS_PAGES_UPDATED_AT = "2026-11-19"; // first release

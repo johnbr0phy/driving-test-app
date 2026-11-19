@@ -129,6 +129,7 @@ export default function AboutPage() {
                 {CONTACT}
               </a>{" "}
               and it will be fixed. See also the <Link className={a} href="/tests">full list of tests</Link>, the{" "}
+              <Link className={a} href="/press">press page</Link>, the{" "}
               <Link className={a} href="/privacy">privacy policy</Link> and the <Link className={a} href="/terms">terms</Link>.
             </p>
           </section>

@@ -3,8 +3,8 @@ CAT = "ita2Azioni"; SEG = "AZI"
 Q = [
 ("Entri in un ufficio pubblico alle dieci di mattina. Che cosa dici all'impiegata?", "Buongiorno.", ["Buonanotte.", "Ciao ciao!", "Arrivederci."],
  "Di mattina, con una persona che non conosci, si saluta con buongiorno. Arrivederci si dice quando si va via, non quando si arriva."),
-("Non hai capito quello che ha detto l'impiegato allo sportello. Che cosa gli chiedi?", "Può ripetere, per favore?", ["Può firmare qui, per favore?", "Posso ripassare domani?", "Mi dà il resto, per favore?"],
- "Quando non capisci, chiedi di ripetere: Può ripetere, per favore? Ripassare domani non risolve il problema di capire."),
+("Non hai capito quello che ha detto l'impiegato allo sportello. Che cosa gli chiedi?", "Può ripetere, per favore?", ['Può aspettare un momento, per favore?', 'Può chiamare il direttore, per favore?', 'Può darmi un modulo, per favore?'],
+ "Quando non capisci, chiedi di ripetere: Può ripetere, per favore? Aspettare o chiamare il direttore non ti aiuta a capire."),
 ("Al bar vuoi ordinare qualcosa da bere. Che cosa dici al barista?", "Un cappuccino, per favore.", ["Quanto le devo, signore?", "Mi porta il conto?", "Scusi, dov'è il bagno?"],
  "Per ordinare si dice che cosa si vuole e si aggiunge per favore. Quanto le devo si chiede quando si paga."),
 ("Arrivi al lavoro tardi perché i treni non passavano. Che cosa dici al capo?", "Scusi, il treno era in ritardo.", ["Scusi, oggi devo uscire prima.", "Mi dispiace, domani non posso venire.", "Grazie, oggi sono arrivato presto."],

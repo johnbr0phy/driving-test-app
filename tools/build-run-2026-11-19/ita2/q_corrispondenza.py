@@ -41,7 +41,7 @@ Q = [
  "Lavora la mattina", ["Lavora anche il sabato", "Lavora meno giorni", "Cambia responsabile"],
  "L'orario passa dalle 14-20 alle 7-13: Olena lavorerà la mattina. Il sabato resta libero."),
 ("Leggi l'avviso dell'amministratore: «Gentili condomini, mercoledì 10 dalle 8 alle 12 l'acqua viene chiusa in tutto il palazzo per lavori ai tubi. Vi consigliamo di prendere un po' d'acqua prima. Ci scusiamo per il disagio. L'Amministratore, Studio Galli.» Che cosa consiglia l'amministratore?",
- "Tenere un po' d'acqua", ["Chiudere i rubinetti", "Uscire dal palazzo la mattina", "Riparare i tubi di casa"],
+ "Tenere un po' d'acqua", ["Chiudere l'acqua di casa prima", "Usare l'acqua solo la sera", 'Avvisare lo Studio Galli prima'],
  "L'amministratore consiglia di prendere un po' d'acqua prima, perché dalle 8 alle 12 l'acqua è chiusa."),
 ("Leggi il messaggio della farmacia: «Gentile cliente, il medicinale che ha ordinato è arrivato. Può ritirarlo in farmacia da oggi. Si ricordi di portare la ricetta del medico. Siamo aperti dalle 8:30 alle 19:30, anche il sabato. Farmacia Centrale.» Perché la farmacia scrive al cliente?",
  "Il medicinale è arrivato", ["La ricetta del medico è scaduta", "Cambia l'orario di apertura", "Il medicinale non c'è più"],

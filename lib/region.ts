@@ -477,7 +477,7 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     lead: "Esercitati per l'esame di teoria della patente B: domande originali su segnali, precedenze, limiti di velocità e guida sicura secondo il Codice della Strada, ogni risposta spiegata. Senza registrazione.",
     cta: { label: "Quiz patente B", href: "/it/quiz-patente-b" },
     testsTitle: "Test di pratica per l'Italia",
-    testsSub: "Il quiz di teoria per la patente B secondo il Codice della Strada, in km/h e con circolazione a destra. Inoltre le certificazioni di lingua italiana di livello B1 per la cittadinanza: CILS B1 Cittadinanza e CELI 2.",
+    testsSub: "Il quiz di teoria per la patente B secondo il Codice della Strada, in km/h e con circolazione a destra. Inoltre le prove di lingua italiana: il test A2 per il permesso di soggiorno, CILS B1 Cittadinanza e CELI 2 (B1) per la cittadinanza e CILS DUE-B2.",
   },
   // Written in French (REGIONS[].lang).
   FR: {

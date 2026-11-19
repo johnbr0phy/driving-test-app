@@ -59,6 +59,13 @@ const CASES = [
   ["backflow tester", "US", "backflow"],
   ["asse 5110", "US", "backflow"],
   ["rpz test", "US", "backflow"],
+  // Local words for "test", "exam" and "free" are dropped like the English ones (Nov 2026).
+  ["τεστ κοκ", "GR", "grdriving"],
+  ["quiz patente gratis", "IT", "itpatente"],
+  ["prova a2", "IT", "ita2"],
+  ["kresz teszt", "HU", "hukresz"],
+  ["führerschein prüfung", "DE", "detheorie"],
+  ["test dgt", "ES", "esdgt"],
   ["a2 cil", "IT", "ita2"],
   ["test italiano a2", "IT", "ita2"],
   ["test italiano permesso di soggiorno", "IT", "ita2"],

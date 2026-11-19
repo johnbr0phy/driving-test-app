@@ -13,7 +13,7 @@ export const TIGER_EXAM_IDS = [
   "teas", "aws", "aplus", "foodhandler", "boating", "hunter", "secplus", "hesi",
   "asvab", "cpr", "osha", "forklift", "alcohol", "accuplacer",
   "security", "lifeguard", "pnc", "sat", "act", "nclex",
-  "cosmetology", "vtne", "paramedic", "nclexpn", "ged", "timestables",
+  "cosmetology", "esthetics", "vtne", "paramedic", "nclexpn", "ged", "timestables",
   // Dedicated admissions and English-reading mascots: eight reviewed expressions each.
   "mcat", "lsat", "ieltsread",
   // UK: reviewed school, workplace and trade artwork.
@@ -91,7 +91,7 @@ const BORROWED_SETS: Record<string, string> = {
   istqb: "itil",
   ascpmls: "htl",
   ascpht: "htl",
-  esthetician: "cosmetology",
+  esthetician: "esthetics",
   afsp: "cpareg",
   cpabar: "cpafar",
   cpcta: "cna",

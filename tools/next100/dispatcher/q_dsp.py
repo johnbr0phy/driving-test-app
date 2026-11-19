@@ -28,7 +28,7 @@ Q = [
  "It strains accountability", ["It voids mutual aid", "It cancels the IAP", "It shifts command to them"],
  "NIMS says unrequested resources should refrain from spontaneous deployment to avoid overburdening the recipient and compounding accountability challenges."),
 ("Which duty is on APCO's list of fire telecommunicator notifications?",
- "Conducting safety briefings", ["Issuing burn permits", "Inspecting hydrants", "Setting station staffing budgets"],
+ "Conducting safety briefings", ["Notifying the news media", "Calling the property insurer", "Contacting the building owner"],
  "APCO 9.1.5 lists notifying ECC leadership and command staff, activating mutual aid, special notifications and conducting shift and safety briefings."),
 ("After a difficult incident, APCO says EMS telecommunicators shall take part in post-incident activities such as:",
  "CISM briefings", ["Media interviews", "Unit inspections", "Patient follow-up visits"],

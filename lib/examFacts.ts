@@ -3169,6 +3169,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NFPA 1010 (2024 edition) and state fire certification guidance, checked October 2026",
     source: { name: "NFPA 1010: Standard on Professional Qualifications for Firefighters", url: "https://www.nfpa.org/codes-and-standards/nfpa-1010-standard-development/1010" },
   },
+  dispatcher: {
+    answer:
+      "A 911 dispatcher, or public safety telecommunicator, answers emergency and non-emergency calls and dispatches law enforcement, fire and EMS. The baseline training is APCO ANS 3.103.3-2025, Minimum Training Standards for Public Safety Telecommunicators, with chapters for call takers and law enforcement, fire and EMS telecommunicators. Many agencies use APCO's Public Safety Telecommunicator 1 course, whose final exam earns APCO certification; APCO does not publish its length or pass mark. Some states certify telecommunicators themselves, and requirements vary by state.",
+    rows: [
+      { label: "Training standard", value: "APCO ANS 3.103.3-2025" },
+      { label: "Common course", value: "APCO PST1, 8th edition (40 CDEs)" },
+      { label: "Certification", value: "PST1 final exam, or state certification where required" },
+      { label: "Pass mark", value: "Not published by APCO; states set their own" },
+      { label: "Answer standard", value: "NENA: 90% of 911 calls within 15 seconds" },
+      { label: "Recertification (APCO)", value: "48 hours of CDE every two years" },
+      { label: "Varies by state", value: "Required hours, exams and EMD certification" },
+    ],
+    basedOn: "APCO ANS 3.103.3-2025, APCO's PST1 8th edition course page and NENA-STA-020.2-2026, checked November 2026",
+    source: { name: "APCO ANS 3.103.3-2025 Minimum Training Standards for Public Safety Telecommunicators", url: "https://www.apcointl.org/standards/3-103-3-2025-minimum-training-standards-for-public-safety-telecommunicators/" },
+  },
   police: {
     answer:
       "There is no single national police exam. Most US agencies start hiring with a multiple-choice written test, from a testing company, a state board such as California POST (the PELLETB) or a civil service commission, that checks reading comprehension, writing and grammar, report writing, basic math and judgment. Each agency sets its own passing score, often 70 percent, and many rank candidates by score. Passing leads to a physical ability test, an oral board, a background investigation and psychological and medical exams.",

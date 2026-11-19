@@ -191,6 +191,7 @@ export const TEACHES: Record<string, string> = {
   barber: "at a barber school",
   ffi: "a fire academy",
   police: "a criminal justice or police exam prep course",
+  dispatcher: "a 911 dispatch academy or telecommunicator course",
   faapvt: "a private pilot ground school",
   psat: "PSAT prep",
   praxis: "a teacher preparation program",

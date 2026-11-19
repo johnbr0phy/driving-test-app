@@ -5536,6 +5536,19 @@
     --brand-gradient-to: 120 50% 95%;
   }
 
+  [data-theme="dispatcher"] {
+    --brand: 321 100% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 321 50% 95%;
+    --brand-hover: 321 100% 15%;
+    --brand-dark: 321 100% 13%;
+    --brand-darker: 321 90% 9%;
+    --brand-muted: 321 25% 70%;
+    --brand-border: 321 30% 78%;
+    --brand-border-light: 321 30% 88%;
+    --brand-gradient-to: 336 50% 95%;
+  }
+
   [data-theme="cpaisc"] {
     --brand: 303 75% 22%;
     --brand-foreground: 0 0% 100%;
@@ -11387,6 +11400,18 @@
     --brand-muted: 105 25% 45%;
     --brand-dark: 105 75% 65%;
     --brand-darker: 105 70% 78%;
+  }
+
+  .dark [data-theme="dispatcher"] {
+    --brand: 321 100% 43.8%;
+    --brand-hover: 321 100% 35.8%;
+    --brand-light: 321 45% 13%;
+    --brand-gradient-to: 336 40% 11%;
+    --brand-border-light: 321 30% 24%;
+    --brand-border: 321 30% 34%;
+    --brand-muted: 321 25% 45%;
+    --brand-dark: 321 100% 65%;
+    --brand-darker: 321 90% 78%;
   }
 
   .dark [data-theme="cpaisc"] {

@@ -693,6 +693,11 @@
   "https://fahrerlaubnis.tuev-dekra.de/en/",
   "https://bmdv.bund.de/"
  ],
+ "dispatcher": [
+  "https://www.apcointl.org/~documents/standard/31033-2025-public-safety-telecommunicator",
+  "https://www.apcointl.org/standards/standards-to-download/",
+  "https://www.apcointl.org/standards/3-103-3-2025-minimum-training-standards-for-public-safety-telecommunicators/"
+ ],
  "dkindfoed": [
   "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve",
   "https://ucplusdansk.dk/en/dansk-og-vidensproever/indfoedsretsproeven/",

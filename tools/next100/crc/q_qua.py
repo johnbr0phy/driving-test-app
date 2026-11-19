@@ -1,0 +1,28 @@
+SEG = 'QUA'
+CAT = 'crcQuality'
+Q = [
+("Medicare Part C and D Star Ratings rate contracts on what scale?",
+ '1 to 5 stars', ['1 to 10 stars', '0 to 100 points', 'Grades A to F'],
+ 'CMS rates measures, domains, summaries and overall performance on a 5-star scale, from 1 (poor) to 5 (excellent).'),
+("At which Star Ratings levels does CMS assign half stars?",
+ 'Summary and overall', ['Measure and domain levels', 'Domain level only', 'Every rating level'],
+ 'Measures and domains use whole stars; CMS assigns half stars to summary and overall ratings to allow more variation.'),
+("Who develops and maintains HEDIS?",
+ 'NCQA', ['CMS', 'AHRQ', 'The Joint Commission'],
+ 'HEDIS is the National Committee for Quality Assurance\'s set of health plan performance measures; CMS uses HEDIS measures in the Star Ratings.'),
+("In the Star Ratings, Diabetes Care, Blood Sugar Controlled is classified as which type of measure?",
+ 'Intermediate outcome', ['Clinical process measure', 'Access measure', 'Patient experience'],
+ 'The Technical Notes give it as the example of an intermediate outcome measure: an action that helps improve the beneficiary\'s health status.'),
+("CAHPS survey measures in the Star Ratings capture:",
+ 'Member experience', ['Clinical lab results', 'Claims payment accuracy', 'Coding completeness'],
+ 'CAHPS is a member survey; its Star measures cover patient experience such as getting needed care and customer service.'),
+("Accurate diagnosis coding supports HEDIS and Star measures mainly by:",
+ 'Placing members in measures', ["Raising each measure's cut point", 'Replacing medical record review', 'Raising CAHPS survey scores'],
+ 'Condition-specific measures such as diabetes care depend on members with that condition being identified from coded diagnoses, the same data risk adjustment uses.'),
+("The Star Ratings Categorical Adjustment Index adjusts for a contract's share of members who are:",
+ 'Low income, dual or disabled', ['Living in rural or frontier areas', 'Newly enrolled this year', 'Aged 85 years or older'],
+ 'The CAI groups members by LIS/dual eligible status and disability to adjust ratings for differences in enrollment that affect measure scores.'),
+("The Health Outcomes Survey (HOS) feeds Star measures on:",
+ 'Physical and mental health', ['Drug pricing accuracy', 'Call center wait times', 'Appeal decision timeliness'],
+ 'HOS measures whether members\' physical and mental health was maintained or improved; for 2027 those two measures carry a weight of 3.'),
+]

@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* Esthetician theme: dusty rose */
+  [data-theme="esthetician"] {
+    --brand: 330 20% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 25% 96%;
+    --brand-hover: 330 20% 34%;
+    --brand-dark: 330 20% 28%;
+    --brand-darker: 330 20% 18%;
+    --brand-muted: 330 15% 70%;
+    --brand-border: 330 15% 80%;
+    --brand-border-light: 330 15% 89%;
+    --brand-gradient-to: 345 25% 96%;
+  }
   /* IRS Annual Filing Season Program AFTR theme */
   [data-theme="afsp"] {
     --brand: 12 45% 44%;

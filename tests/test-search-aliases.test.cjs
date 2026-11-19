@@ -152,6 +152,7 @@ const CASES = [
   ["ea exam part 1", "US", "ea1"],
   ["see part 1", "US", "ea1"],
   ["special enrollment examination", "US", "ea1"],
+  ["esthetician state board", "US", "esthetician"],
   ["aftr", "US", "afsp"],
   ["annual federal tax refresher", "US", "afsp"],
   ["annual filing season program", "US", "afsp"],

@@ -315,6 +315,7 @@ import "./cahambasic";
 import "./cadronebasic";
 import "./carscook";
 import "./carshair";
+import "./esthetician";
 import "./afsp";
 
 import "./realestatebroker";

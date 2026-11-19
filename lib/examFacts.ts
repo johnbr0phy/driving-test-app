@@ -169,6 +169,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "IRS Publications 6079 (Rev. 5-2026), 6012 (Rev. 3-2026) and 6026 and the IRS Annual Filing Season Program FAQs, checked November 2026",
     source: { name: "IRS: Annual Filing Season Program frequently asked questions", url: "https://www.irs.gov/tax-professionals/frequently-asked-questions-annual-filing-season-program" },
   },
+  esthetician: {
+    answer:
+      "Most US states license estheticians (skin care specialists) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Esthetics Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline has two domains: Scientific Concepts, 55 percent (microbiology, infection control and safety, anatomy and physiology, the skin, skin disorders, hair and chemistry), and Skin Care and Services, 45 percent (consultation and skin analysis, facial procedures, electrical equipment, makeup, body treatments, lash and brow services, hair removal and advanced treatments). Each state board sets its passing score; many use 75. Training hours, fees, scope of practice and the practical exam vary by state, and some states use a different exam provider.",
+    rows: [
+      { label: "Questions", value: "110 (100 scored), four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Set by each board; 75 in many states (e.g. South Carolina)" },
+      { label: "Largest domain", value: "Scientific Concepts, 55%" },
+      { label: "Also required", value: "Usually a practical exam (varies by state)" },
+      { label: "Developed by", value: "NIC (National-Interstate Council of State Boards of Cosmetology)" },
+    ],
+    basedOn: "the NIC National Esthetics Theory Examination candidate information bulletin, effective September 1, 2025 (revised March 1, 2026), checked November 2026",
+    source: { name: "NIC Esthetics Theory CIB", url: "https://prov-testing.github.io/nic_cib/esthetics_national_theory_english.html" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

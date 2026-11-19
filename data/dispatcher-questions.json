@@ -578,7 +578,7 @@
     "state": "ALL",
     "questionId": "DISP-TEC-018",
     "category": "dispTech",
-    "question": "A VoIP provider detects a customer calling 911 from somewhere other than the registered address. It must:",
+    "question": "A VoIP provider detects a customer calling 911 from somewhere other than the registered address. One option the FCC gives it is to:",
     "optionA": "Block the 911 call",
     "optionB": "Prompt for a new location",
     "optionC": "Route to the statewide PSAP",
@@ -2318,7 +2318,7 @@
     "optionA": "Notifying the news media",
     "optionB": "Conducting safety briefings",
     "optionC": "Calling the property insurer",
-    "optionD": "Contacting the building owner",
+    "optionD": "Assigning fireground tactics",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "APCO 9.1.5 lists notifying ECC leadership and command staff, activating mutual aid, special notifications and conducting shift and safety briefings."

@@ -230,7 +230,7 @@ export default function DispatcherLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Learn the numbers that are standards</h3>
               <p>
-                Answer 90% of 911 calls within 15 seconds, 60 seconds to dispatch an imminent threat, two failed voice attempts before a TTY response, 30 minutes for station identification in continuous operation: these figures come straight from NENA, APCO and the FCC, and questions test them exactly.
+                Answer 90% of 911 calls within 15 seconds, 60 seconds to dispatch an imminent threat, two failed voice attempts before a TTY response, 30 minutes for Public Safety Pool station identification in continuous operation: these figures come straight from NENA, APCO and the FCC, and questions test them exactly.
               </p>
             </div>
             <div>

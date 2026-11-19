@@ -994,6 +994,14 @@
         "pr": null,
         "findings": 4
       }
+    ],
+    "dispatcher": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 3
+      }
     ]
   },
   "pendingReviews": {

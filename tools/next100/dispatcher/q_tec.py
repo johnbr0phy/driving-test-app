@@ -51,7 +51,7 @@ Q = [
 ("For interconnected VoIP 911, the address a customer gives the provider before service starts is the:",
  "Registered location", ["Dispatchable location", "Service location code", "Billing location"],
  "47 CFR 9.11 requires VoIP providers to get the Registered Location before service starts and give customers a way to update it."),
-("A VoIP provider detects a customer calling 911 from somewhere other than the registered address. It must:",
+("A VoIP provider detects a customer calling 911 from somewhere other than the registered address. One option the FCC gives it is to:",
  "Prompt for a new location", ["Block the 911 call", "Route to the statewide PSAP", "Send cell site data"],
  "Under 47 CFR 9.11 the provider must identify use from a different location and either prompt for a new Registered Location or update it automatically."),
 ("A mobile phone with no valid carrier contract that can still dial 911 is called:",

@@ -942,7 +942,7 @@
     "state": "ALL",
     "questionId": "GRDRV-REG-022",
     "category": "grRegulatory",
-    "question": "A red-bordered circle with \"50\", crossed by grey diagonal lines, means:",
+    "question": "A white circle with a grey \"50\", crossed by grey diagonal lines, means:",
     "optionA": "50 km/h zone ahead",
     "optionB": "End of 50 km/h limit",
     "optionC": "No vehicles over 50 t",

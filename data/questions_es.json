@@ -2314,7 +2314,7 @@
     "state": "AK",
     "questionId": "AK-006",
     "category": "gdlLicensing",
-    "question": "¿Durante qué horas un titular de licencia provisional no puede conducir a menos que esté acompañado por alguien de 21 años o mayor?",
+    "question": "En Alaska, ¿durante qué horas un titular de licencia provisional no puede conducir a menos que esté acompañado por alguien de 21 años o mayor?",
     "optionA": "Medianoche a 6 AM",
     "optionB": "1 AM a 5 AM",
     "optionC": "2 AM a 6 AM",
@@ -4610,14 +4610,14 @@
     "state": "CA",
     "questionId": "CA-010",
     "category": "gdlLicensing",
-    "question": "¿Puede un titular de licencia provisional de California usar un teléfono celular manos libres mientras conduce?",
+    "question": "Fuera de una emergencia, ¿puede un titular de licencia provisional de California menor de 18 años usar un teléfono celular manos libres mientras conduce?",
     "optionA": "Sí, si está montado correctamente",
     "optionB": "No, ni siquiera manos libres",
     "optionC": "Sí, pero solo para GPS",
-    "optionD": "Sí, pero solo para emergencias",
+    "optionD": "Sí, pero solo en autopistas",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Los titulares de licencia provisional de California menores de 18 años no pueden usar ningún dispositivo de comunicación electrónica mientras conducen, ni siquiera en modo manos libres, excepto para emergencias."
+    "explanation": "En California, los conductores menores de 18 años no pueden usar un teléfono celular ni otro dispositivo inalámbrico mientras conducen, ni siquiera en modo manos libres. La única excepción es comunicarse en una emergencia con la policía, un proveedor de atención médica, los bomberos u otros servicios de emergencia."
   },
   {
     "type": "State-Specific",
@@ -20248,14 +20248,14 @@
     "state": "NV",
     "questionId": "NV-007",
     "category": "gdlLicensing",
-    "question": "¿Cuándo se permite a los titulares de licencia intermedia conducir durante las horas de toque de queda en Nevada?",
+    "question": "En Nevada, ¿cuándo puede un conductor menor de 18 años conducir entre las 10 p.m. y las 5 a.m.?",
     "optionA": "Solo actividades recreativas",
     "optionB": "En cualquier momento con permiso de los padres",
-    "optionC": "Para escuela, trabajo o emergencias",
+    "optionC": "Cuando va o vuelve de un evento programado, como la escuela o el trabajo",
     "optionD": "Nunca durante las horas de toque de queda",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Los titulares de licencia intermedia pueden conducir durante las horas de toque de queda solo por motivos de escuela, trabajo o emergencias."
+    "explanation": "Según NRS 484B.907, un conductor menor de 18 años no puede conducir entre las 10 p.m. y las 5 a.m. salvo que vaya o vuelva de un evento programado, como la escuela o el trabajo."
   },
   {
     "type": "State-Specific",

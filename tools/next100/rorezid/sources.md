@@ -95,3 +95,6 @@ Reviewer re-checked by web search: 15 November 2026, 200 questions in 4 hours, 9
 pass at 60% of the national top score in the domain, answer key from 16:00 on the exam day
 (Agerpres, 15 May 2026: https://agerpres.ro/educatie-stiinta/2026/05/15/p-rezidentiat-2026-cifre-ale-sesiunii-2025-pregatirea-pentru-15-noiembrie-si-ce-se-discuta-despre-20--1556428 ;
 Edupedu registration article above). rezidentiat.ms.ro not reached again.
+
+## Audit 2026-11-19
+- CDC/HICPAC, Guideline for Prevention of Surgical Site Infection, 1999, Table 7 (https://stacks.cdc.gov/view/cdc/7160/cdc_7160_DS1.pdf), read 2026-11-19: Class II clean-contaminated covers biliary tract operations "provided no evidence of infection or major break in technique is encountered"; Class III contaminated includes "incisions in which acute, nonpurulent inflammation is encountered". ROREZ-CHG-007 (cholecystectomy for uncomplicated acute cholecystitis) is now keyed Contaminată.

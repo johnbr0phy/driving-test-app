@@ -97,3 +97,6 @@ results were not opened). Signs are described in words. Checked 2026-11-01 unles
 Fines, point totals and withdrawal periods (they changed in 2025); the exact built-up 50 km/h
 exceptions beyond the one stated; minimum distances for warning triangles and parking from
 junctions (not confirmed); KTEO intervals; driving school hour counts; fees; the practical test.
+
+## Audit 2026-11-19
+- GRDRV-REG-022: stem reworded (English and Greek) to describe the end-of-50-km/h-limit sign as a white disc with a grey "50" crossed by grey diagonal lines, without the red border it does not have. Key and fact unchanged.

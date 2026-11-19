@@ -3038,12 +3038,12 @@
         "A multi-region bucket spanning several continents",
         "A dual-region bucket in that country",
         "A bucket in another country that has lower prices",
-        "A single-zone bucket"
+        "A zonal bucket in a single zone of one region"
       ],
       "correct": [
         1
       ],
-      "explanation": "A dual-region bucket stores data redundantly in two specific regions, which keeps it in the chosen country and serves both areas well. Multi-region locations span large areas such as a whole continent, and buckets are regional or wider, never single-zone."
+      "explanation": "A dual-region bucket stores data redundantly in two specific regions, which can both be in the chosen country, so it keeps data in-country and serves users in both areas with low latency. Multi-region locations span large areas such as a whole continent, so data could leave the country. A zonal bucket, offered only with Rapid Bucket, keeps data in one zone for co-located high-performance compute; it has no cross-region redundancy and does not suit users in two cities."
     },
     {
       "id": "GCPPCA-D-020",

@@ -1,0 +1,10 @@
+[
+  { "id": "dmv__AK-006", "status": "fixed", "note": "Stem now says \"In Alaska\" (en, es, vi, ko); key B and the 1 AM to 5 AM fact unchanged." },
+  { "id": "dmv__AL-026", "status": "dismissed", "note": "ALEA's own speed limit page (alea.gov/dps/highway-patrol/speed-limits) lists \"25 MPH Residential areas\", which is the key." },
+  { "id": "dmv__CA-010", "status": "fixed", "note": "Stem now says \"Outside an emergency\" and \"under 18\", option D replaced with \"Yes, but only on freeways\", explanation states the emergency exception (all languages); key B unchanged." },
+  { "id": "dmv__NV-007", "status": "fixed", "note": "NRS 484B.907 allows 10 p.m. to 5 a.m. driving only to or from a scheduled event; stem asks about drivers under 18, option C and explanation drop emergencies (all languages); key C unchanged." },
+  { "id": "gcppca__GCPPCA-D-019", "status": "fixed", "note": "Google Cloud bucket locations page says zonal locations exist with Rapid Bucket; option D is now a zonal bucket and the explanation no longer says never single-zone. Key unchanged." },
+  { "id": "grdriving__GRDRV-REG-022", "status": "fixed", "note": "Stem (English and Greek) describes the end-of-limit sign as a white disc with a grey 50, without the red border; key unchanged." },
+  { "id": "insurance-pa__LHPA-PALIC-003", "status": "dismissed", "note": "Insurance Department Act 608-A(b)(1), read on palegis.us, lets a licensee carry forward excess CE hours up to 24, so 16 hours is right." },
+  { "id": "rorezid__ROREZ-CHG-007", "status": "fixed", "note": "CDC 1999 SSI guideline Table 7 puts acute nonpurulent inflammation in Class III; key changed to Contaminata, stem says uncomplicated acute cholecystitis, explanation rewritten." }
+]

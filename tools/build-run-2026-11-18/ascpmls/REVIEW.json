@@ -1,0 +1,23 @@
+{
+  "id": "ascpmls",
+  "blind_agreement": "200/200",
+  "options_only": null,
+  "findings": [
+    {
+      "questionId": "MLS-MIC-002",
+      "severity": "low",
+      "issue": "Distractor D 'Cysteine and iron' half-overlaps the right answer: nutritionally variant streptococci are supported by pyridoxal OR L-cysteine, so a prepared candidate may hesitate. Key B (pyridoxal) is correct and D is wrong because of 'iron', but the distractor is closer than it needs to be.",
+      "source": "standard microbiology (Abiotrophia/Granulicatella growth requirements)",
+      "fix": "Replace D with a clearly wrong requirement, e.g. 'Hemin and NAD together' or 'Thiamine (vitamin B1)'."
+    },
+    {
+      "questionId": "(bank-wide)",
+      "severity": "info",
+      "issue": "Stored correctAnswer letters rotate A, B, C, D in strict ID order across all 200 items. Harmless on screen because options are shuffled every showing and check_answer_patterns looks at words, not letters, but anyone reading the JSON in ID order can predict every key.",
+      "source": "data/ascp-mls-questions.json",
+      "fix": "Optional: let build.py place keys by a stem-seeded shuffle instead of i % 4."
+    }
+  ],
+  "landing_findings": [],
+  "notes": "Every computed key recomputed: CCI 10,000; KB 2.17 -> 3 vials; pH 7.10; TIBC 360; MCHC 30.0; corrected retic 3.6%; CSF 50/uL; CD4 300; INR 2.83; CV 4.0%; NPV 95%; dilution 240; Ca 10 mg/dL. Landing and examFacts checked against the BOC MLS content guideline PDF (fetched 2026-11-18, revised September 25, 2025): 100 questions, 2 h 30 min, CAT, one best answer, 17-22% / 5-10% ranges, donor eligibility as of June 2023 all match. The 100-999 / 400 pass figure is attributed to the BOC About the Examination page (ascp.org 403s), consistent with the MLT and HT builds. No prices or exam-date claims on the landing; 'Free to start' wording present."
+}

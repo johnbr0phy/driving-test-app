@@ -5691,6 +5691,19 @@
     --brand-border-light: 252 60% 90%;
     --brand-gradient-to: 266 80% 97%;
   }
+  /* AAPC CRC theme: burnt vermilion (20 90% 40%) */
+  [data-theme="crc"] {
+    --brand: 20 90% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 20 80% 97%;
+    --brand-hover: 20 90% 34%;
+    --brand-dark: 20 90% 26%;
+    --brand-darker: 20 85% 16%;
+    --brand-muted: 20 50% 70%;
+    --brand-border: 20 60% 82%;
+    --brand-border-light: 20 60% 90%;
+    --brand-gradient-to: 34 80% 97%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -12049,6 +12062,17 @@
     --brand-muted: 48 30% 45%;
     --brand-dark: 48 40% 65%;
     --brand-darker: 48 40% 78%;
+  }
+  .dark [data-theme="crc"] {
+    --brand: 20 90% 42%;
+    --brand-hover: 20 90% 34%;
+    --brand-light: 20 45% 13%;
+    --brand-gradient-to: 34 40% 11%;
+    --brand-border-light: 20 35% 24%;
+    --brand-border: 20 40% 34%;
+    --brand-muted: 20 45% 45%;
+    --brand-dark: 20 90% 65%;
+    --brand-darker: 20 85% 78%;
   }
   .dark [data-theme="cpb"] {
     --brand: 252 95% 50%;

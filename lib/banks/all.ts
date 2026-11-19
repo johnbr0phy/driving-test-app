@@ -333,3 +333,4 @@ import "./bowhunter";
 import "./trapper";
 import "./ieplumbt2";
 import "./cpb";
+import "./crc";

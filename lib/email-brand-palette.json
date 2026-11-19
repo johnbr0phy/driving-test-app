@@ -409,6 +409,7 @@
   "trapper": ["#473f1f","#faf7eb","#201c0e","#eae6d7"],
   "ieplumbt2": ["#1f2747","#ebeefa","#0e1120","#d7dbea"],
   "cpb": ["#3506ef","#f4f1fd","#1a066b","#dcd6f5"],
+  "crc": ["#c2470a","#fdf5f1","#4b1d06","#f5e0d6"],
   "istqb": ["#7305bd","#f9f1fd","#360557","#e9d6f5"],
   "ascpmls": ["#865086","#f7f2f7","#493149","#e9dde9"],
   "ascpht": ["#9717a1","#fbeefc","#4a0e4e","#ebd9ed"],

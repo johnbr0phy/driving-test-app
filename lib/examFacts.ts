@@ -225,6 +225,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  crc: {
+    answer:
+      "The CRC exam is AAPC's certification test for risk adjustment coders. It has 100 multiple-choice questions in one 4-hour sitting, and you need 70 percent to pass, so more than 30 wrong answers fails. You may bring a current or prior year ICD-10-CM code book, and an on-screen calculator is provided. The questions cover eight domains: compliance (15), diagnosis coding (30), documentation improvement (12), pathophysiology, terminology and anatomy (5), purpose and use of risk adjustment models (10), quality of care (3), risk adjustment models such as CMS-HCC, ACA and CDPS (15) and coding cases at the end of the exam (10). You can take it at a testing center or at home with a live remote proctor.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% (no more than 30 wrong)" },
+      { label: "Code book", value: "ICD-10-CM only" },
+      { label: "Biggest domain", value: "Diagnosis coding, 30 questions" },
+      { label: "Where", value: "Testing center or live remote proctor" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the CRC exam page, checked November 2026",
+    source: { name: "AAPC: Taking the CRC exam", url: "https://www.aapc.com/certifications/crc/taking-the-crc-exam" },
+  },
   cpb: {
     answer:
       "The CPB exam is AAPC's certification test for professional medical billers. It has 135 multiple-choice questions in one 4-hour sitting, and you need 70 percent, at least 95 correct, to pass. You may bring the approved AMA CPT Professional Edition, ICD-10-CM and HCPCS Level II code books, and an on-screen calculator is provided. The questions cover seven domains: types of insurance (29), billing regulations (17), HIPAA and compliance (7), reimbursement and collections (19), claims and billing (19), coding (10) and case analysis with source documents such as claim forms, payment policies and appeal letters (34). You can take it at a testing center or at home with a live remote proctor.",

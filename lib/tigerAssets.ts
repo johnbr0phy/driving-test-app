@@ -93,6 +93,7 @@ const BORROWED_SETS: Record<string, string> = {
   bowhunter: "hunter",
   trapper: "hunter",
   ieplumbt2: "caplumb",
+  crc: "cpc",
   cpb: "cpc",
   istqb: "itil",
   ascpmls: "htl",

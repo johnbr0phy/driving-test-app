@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStripe, PREMIUM_PRODUCT } from '@/lib/stripe';
+import { getStripe, getPremiumProductId, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
@@ -112,24 +112,25 @@ export async function POST(request: NextRequest) {
     const country = visitorCountry(request);
     const price = premiumPriceFor(country);
 
+    const productId = price.currency === 'usd' ? null : await getPremiumProductId();
+
     // Create Checkout Session
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'payment',
-      // Always inline, so every buyer sees the same description (the fixed
-      // Stripe Price carried DMV-only text from the dashboard).
+      // Dollars use the Stripe price; other currencies the same Stripe product,
+      // so the description and image are set once, in the Stripe dashboard.
       line_items: [
-        {
-          price_data: {
-            currency: price.currency,
-            unit_amount: stripeUnitAmount(price),
-            product_data: {
-              name: PREMIUM_PRODUCT.name,
-              description: PREMIUM_PRODUCT.description,
+        PREMIUM_PRICE_ID && price.currency === 'usd'
+          ? { price: PREMIUM_PRICE_ID, quantity: 1 }
+          : {
+              price_data: {
+                currency: price.currency,
+                unit_amount: stripeUnitAmount(price),
+                ...(productId ? { product: productId } : { product_data: PREMIUM_PRODUCT }),
+              },
+              quantity: 1,
             },
-          },
-          quantity: 1,
-        },
       ],
       success_url: `${baseUrl}${returnPath}?session_id={CHECKOUT_SESSION_ID}&success=true`,
       cancel_url: `${baseUrl}${returnPath}?canceled=true`,

@@ -398,15 +398,23 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
   );
 }
 
-/** Trending searches for a homepage: what people searched most this week,
- *  topped up with this week's busiest tests from the country (or worldwide),
- *  then the country's own tests, so the list is never short. */
+/** Trending searches for a homepage: what people searched most this week, topped up
+ *  with test names (the country's own first outside the US), so the list is never short. */
 async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; answered: number | null }[], lang: string): Promise<string[]> {
-  const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
-  const feed: TestCatalogEntry[] = ranked.filter((p) => local(p.test.id)).map((p) => p.test);
+  // Outside the US the country's own tests come first (busiest first, then the rest of
+  // them), then the busiest worldwide ones, so /it never tops up with six IT certs.
+  const own = (id: string) => regionOfTest(id) === region;
+  const feed: TestCatalogEntry[] =
+    region === "US"
+      ? ranked.filter((p) => own(p.test.id) || regionOfTest(p.test.id) === "GLOBAL").map((p) => p.test)
+      : [
+          ...ranked.filter((p) => own(p.test.id) && (p.answered ?? 0) > 0).map((p) => p.test),
+          ...TEST_CATALOG.filter((t) => own(t.id)),
+          ...ranked.filter((p) => regionOfTest(p.test.id) === "GLOBAL").map((p) => p.test),
+        ].filter((t, i, all) => all.indexOf(t) === i);
   for (const test of TEST_CATALOG) {
     if (feed.length >= 6) break;
-    if (regionOfTest(test.id) === region && !feed.includes(test)) feed.push(test);
+    if (own(test.id) && !feed.includes(test)) feed.push(test);
   }
   // Outside the US only searches made there, so /uk never shows the US list.
   const trending = await getTrendingSearches(6, region === "US" ? undefined : region);

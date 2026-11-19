@@ -78,7 +78,7 @@ ITEMS = [
     S(2, 2, "Tools",
       "What should a tool's description say so that generative orchestration uses it at the right time?",
       "What the tool does and when to use it",
-      ["Only the connector's version number", "The maker's name and email", "The list of channels the agent uses"],
+      ["Only the connector's version number", "The environment the agent runs in", "The list of channels the agent uses"],
       "The agent picks tools using their name and description, so a good description states what the tool does and when to use it."),
     S(2, 2, "Tools",
       "Before a tool that changes data runs, the agent should get the user's go-ahead. Which tool setting does this?",

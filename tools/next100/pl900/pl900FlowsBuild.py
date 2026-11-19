@@ -130,7 +130,7 @@ ITEMS = [
     S(0, 2, "Copilot in cloud flows",
       "After Copilot suggests a flow structure that isn't quite right, what should the maker do?",
       "Add more details for Copilot to regenerate it",
-      ["Delete the environment and start again", "Export it to a desktop flow", "Ask an admin to move the connector to the Business data group"],
+      ["Switch the flow to the classic designer", "Export it to a desktop flow", "Ask an admin to move the connector to the Business data group"],
       "You can add more details in the prompt box and Copilot regenerates the suggested trigger and actions before you keep it."),
     S(0, 1, "Copilot in cloud flows",
       "When Copilot drafts a cloud flow from a description, what does the draft structure contain?",

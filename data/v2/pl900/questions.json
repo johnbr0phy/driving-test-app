@@ -1868,7 +1868,7 @@
     "options": [
       "Only the connector's version number",
       "What the tool does and when to use it",
-      "The maker's name and email",
+      "The environment the agent runs in",
       "The list of channels the agent uses"
     ],
     "correct": [
@@ -2743,7 +2743,7 @@
     "skill": "Plan designer",
     "stem": "Plans in Power Apps is generally available and on by default. How can an organization turn it off?",
     "options": [
-      "An admin deletes the default environment",
+      "An admin turns off Copilot in the environment settings",
       "A maker turns off a toggle in Power Apps Studio",
       "A tenant admin contacts Microsoft Support",
       "An admin removes the Basic User role"
@@ -3086,8 +3086,8 @@
     "skill": "Code apps",
     "stem": "Which kind of framework can developers use to build a Power Apps code app?",
     "options": [
-      "Only C# and .NET MAUI with a Windows desktop installer",
-      "Only VBA macros",
+      "Only C# with .NET MAUI",
+      "Only Power Apps component framework controls",
       "Only Power Fx",
       "Web frameworks such as React and Vue"
     ],
@@ -4151,7 +4151,7 @@
     "stem": "After Copilot suggests a flow structure that isn't quite right, what should the maker do?",
     "options": [
       "Add more details for Copilot to regenerate it",
-      "Delete the environment and start again",
+      "Switch the flow to the classic designer",
       "Ask an admin to move the connector to the Business data group",
       "Export it to a desktop flow"
     ],

@@ -225,6 +225,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  cpb: {
+    answer:
+      "The CPB exam is AAPC's certification test for professional medical billers. It has 135 multiple-choice questions in one 4-hour sitting, and you need 70 percent, at least 95 correct, to pass. You may bring the approved AMA CPT Professional Edition, ICD-10-CM and HCPCS Level II code books, and an on-screen calculator is provided. The questions cover seven domains: types of insurance (29), billing regulations (17), HIPAA and compliance (7), reimbursement and collections (19), claims and billing (19), coding (10) and case analysis with source documents such as claim forms, payment policies and appeal letters (34). You can take it at a testing center or at home with a live remote proctor.",
+    rows: [
+      { label: "Questions", value: "135 multiple choice" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% (95 of 135)" },
+      { label: "Code books", value: "CPT Professional, ICD-10-CM, HCPCS Level II" },
+      { label: "Biggest domain", value: "Case analysis, 34 questions" },
+      { label: "Where", value: "Testing center or live remote proctor" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the CPB exam page, checked November 2026",
+    source: { name: "AAPC: Taking the CPB exam", url: "https://www.aapc.com/certifications/cpb/taking-the-cpb-exam" },
+  },
   ieplumbt2: {
     answer:
       "Phase 2 of the SOLAS National Plumbing Apprenticeship is the first off-the-job phase: 21 weeks in an Education and Training Board (ETB) training centre. It has four modules: Thermal Processes and Mild Steel Pipework, Domestic Hot and Cold Water Services, Central Heating, and Communications and Team Leadership. Apprentices are assessed by theory exams, practical assessments and skills demonstrations, set centrally by SOLAS, marked out of 100 by the training centre and graded fail, pass, merit or distinction. The SOLAS pass grade is 50%; an apprentice who falls short is referred and may sit again. SOLAS does not publish the number of questions or the time for each theory paper. The whole apprenticeship takes at least four years and leads to a Level 6 Advanced Certificate Craft - Plumbing.",

@@ -332,3 +332,4 @@ import "./pesticide";
 import "./bowhunter";
 import "./trapper";
 import "./ieplumbt2";
+import "./cpb";

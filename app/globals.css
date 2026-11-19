@@ -5678,6 +5678,19 @@
     --brand-border-light: 228 30% 88%;
     --brand-gradient-to: 238 60% 94%;
   }
+  /* CPB (AAPC) Certified Professional Biller theme: electric blue violet */
+  [data-theme="cpb"] {
+    --brand: 252 95% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 80% 97%;
+    --brand-hover: 252 95% 42%;
+    --brand-dark: 252 95% 34%;
+    --brand-darker: 252 90% 22%;
+    --brand-muted: 252 50% 72%;
+    --brand-border: 252 60% 82%;
+    --brand-border-light: 252 60% 90%;
+    --brand-gradient-to: 266 80% 97%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -12036,6 +12049,17 @@
     --brand-muted: 48 30% 45%;
     --brand-dark: 48 40% 65%;
     --brand-darker: 48 40% 78%;
+  }
+  .dark [data-theme="cpb"] {
+    --brand: 252 95% 50%;
+    --brand-hover: 252 95% 42%;
+    --brand-light: 252 45% 13%;
+    --brand-gradient-to: 266 40% 11%;
+    --brand-border-light: 252 35% 24%;
+    --brand-border: 252 40% 34%;
+    --brand-muted: 252 45% 45%;
+    --brand-dark: 252 95% 70%;
+    --brand-darker: 252 90% 78%;
   }
   .dark [data-theme="ieplumbt2"] {
     --brand: 228 40% 50%;

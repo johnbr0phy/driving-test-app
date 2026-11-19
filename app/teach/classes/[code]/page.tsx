@@ -16,6 +16,7 @@ import { ClassShare } from "@/components/teach/ClassShare";
 import { ClassQuestions } from "@/components/teach/ClassQuestions";
 import { StudentDetail } from "@/components/teach/StudentDetail";
 import { ClassDetailsForm } from "@/components/teach/ClassDetailsForm";
+import { DeleteClassButton } from "@/components/teach/DeleteClassButton";
 import { scoreBar, scoreChip, scoreLevel, scoreTrack } from "@/components/teach/scoreColors";
 
 function pct(correct: number, answered: number): number {
@@ -224,6 +225,7 @@ export default function ClassPage() {
             />
           </>
         )}
+        {user && <DeleteClassButton user={user} code={code} className={report.name} memberCount={report.memberCount} />}
         <p className="text-xs text-gray-500 dark:text-gray-400">
           Students join with a name only. Practice counts from the device they joined on. Class code {code}.
         </p>

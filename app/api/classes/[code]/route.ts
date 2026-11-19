@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { FieldValue } from "firebase-admin/firestore";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { requireClassOwner } from "@/lib/server/classAuth";
 import { classExamNameById, cleanName, isClassCode, normalizeClassCode, type ClassPublicInfo } from "@/lib/classes";
@@ -60,4 +61,32 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   }
   await batch.commit();
   return NextResponse.json(update);
+}
+
+// Delete a class (its teacher or a site admin): the class doc and every
+// student's member doc. Quizzes set to "My class" become "Only me", so they
+// are kept for the teacher but nobody else can open them. Students' browsers
+// hear 410 on their next progress report and drop the membership.
+export async function DELETE(request: NextRequest, { params }: { params: Promise<{ code: string }> }) {
+  const code = normalizeClassCode((await params).code);
+  if (!isClassCode(code)) return NextResponse.json({ error: "No such class" }, { status: 404 });
+  const owner = await requireClassOwner(request, code);
+  if (!owner.ok) return owner.response;
+
+  const db = getAdminDb();
+  const quizzes = await db.collection("quizzes").where("classCode", "==", code).get();
+  if (!quizzes.empty) {
+    const batch = db.batch();
+    for (const q of quizzes.docs) {
+      batch.update(q.ref, {
+        visibility: "private",
+        classCode: FieldValue.delete(),
+        className: FieldValue.delete(),
+        classTeacherName: FieldValue.delete(),
+      });
+    }
+    await batch.commit();
+  }
+  await db.recursiveDelete(db.collection("classes").doc(code));
+  return NextResponse.json({ ok: true, quizzesMadePrivate: quizzes.size });
 }

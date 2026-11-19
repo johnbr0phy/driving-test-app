@@ -24,7 +24,7 @@ Q = [
  "13", ["17", "19", "6"],
  "Section 21 covers care for a dependent child under 13, or a spouse or dependent unable to care for themselves. 17 is the child tax credit age."),
 ("Care costs count for the child and dependent care credit when they let the parent:",
- "Work or look for work", ["Attend a gym", "Do volunteer work", "Go to medical visits"],
+ "Work or look for work", ["Run personal errands", "Do volunteer work", "Go to medical visits"],
  "Only work-related expenses qualify: care that lets the taxpayer, and a spouse if married, work or actively look for work."),
 ("To claim the American opportunity credit, the student must be enrolled at least:",
  "Half-time", ["Full-time", "Quarter-time", "In one course"],

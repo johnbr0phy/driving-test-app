@@ -46,7 +46,7 @@ Q = [
  "Rental income", ["Not reported", "A gift", "A reduction of basis"],
  "Expenses a tenant pays for the landlord are rental income. The landlord may then deduct them if they are deductible rental expenses."),
 ("A homeowner rents one bedroom of her house to a tenant all year. Her house insurance is:",
- "Split between rental and personal", ["All a rental expense", "All a personal expense", "Deductible only on Schedule A"],
+ "Split by rental use", ["All a rental expense", "All a personal expense", "Deductible only on Schedule A"],
  "Publication 527 says that when you rent part of your property you divide expenses such as insurance between the rented part and the part you use yourself."),
 ("A landlord's mortgage interest on a rental house is deducted on:",
  "Schedule E", ["Schedule A", "Schedule C", "Form 4952"],

@@ -77,7 +77,7 @@ Q = [
  "Other income on Schedule 1", ["Schedule C gross receipts", "Excluded income", "Capital gain"],
  "Hobby income goes on Schedule 1 as other income. Hobby expenses are not deductible, since the deduction for them is suspended."),
 ("Qualified Medicaid waiver payments for caring for someone in your own home can be:",
- "Excludable", ["Taxed as wages", "Schedule C income", "Deferred five years"],
+ "Excluded from income", ["Taxed as wages", "Schedule C income", "Deferred five years"],
  "Notice 2014-7 treats qualified Medicaid waiver payments as difficulty-of-care payments that can be excluded. A provider may choose to include them as earned income for the EIC."),
 ("Sick pay a worker receives from the employer is:",
  "Taxable as wages", ["Excluded as a fringe benefit", "Taxable over $5,000", "Taxed as capital gain"],

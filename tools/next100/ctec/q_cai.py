@@ -22,7 +22,7 @@ Q = [
  "Added to income", ["Also exempt", "Exempt up to $10,000", "Taxed at half"],
  "California exempts interest only on California state and local bonds. Interest on other states' municipal bonds is added back on Schedule CA."),
 ("A California state income tax refund included in federal income is, for California:",
- "Subtracted", ["Taxed in full", "Taxed if itemized", "Taxed above $600"],
+ "Removed from income", ["Taxed in full", "Taxed if itemized", "Taxed above $600"],
  "California does not tax its own income tax refund. The amount included federally is subtracted in column B of Schedule CA."),
 ("A teacher deducted $300 of educator expenses federally for 2025. On her California return the deduction is:",
  "Added back", ["Allowed in full", "Raised to $350", "Allowed above 2% of AGI"],

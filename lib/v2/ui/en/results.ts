@@ -108,7 +108,7 @@ export const results = {
   /** Estimated gain on a topic: "about +30 pts" / "about +4%". */
   gainAbout: (n: number, percent: boolean) => (percent ? `about +${n}%` : `about +${n} pts`),
   /** Locked chip label. */
-  pointsLabel: (percent: boolean) => (percent ? "points" : "pts"),
+  pointsLabel: (percent: boolean): string => (percent ? "points" : "pts"),
   moreTopicsWorth: (count: number, gain: number, percent: boolean) =>
     `${count} more topics worth an estimated ${percent ? `+${gain}%` : `+${gain} pts`}`,
   moreTopics: (count: number) => `${count} more topics in your plan`,
@@ -130,7 +130,7 @@ export const results = {
   noMistakesYet: "Nothing yet. Every question you miss lands here so you can retry it.",
   mistakesIntro: "Every question you've missed. Tap one to try it again.",
   /** Chip label under a miss count. */
-  missLabel: (n: number) => (n === 1 ? "miss" : "misses"),
+  missLabel: (n: number): string => (n === 1 ? "miss" : "misses"),
   masteredSince: " · mastered since",
   moreMistakes: (n: number) => `${n} more mistakes saved`,
   mistakesLockSubtitle: "Retry every question you've missed until it sticks",

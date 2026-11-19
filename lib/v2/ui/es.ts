@@ -31,7 +31,7 @@ export const ES: V2UiTranslation = {
     clockStartsLinear: "El reloj empieza cuando tocas Empezar.",
     clockStartsReview: "El reloj empieza cuando tocas Empezar y sigue corriendo en la pantalla de revisión.",
     noClock: "Esta sección no tiene reloj. Tómate el tiempo que necesites.",
-    linearRule: "Responde cada pregunta antes de seguir. Como en el examen real por computadora, no puedes volver atrás.",
+    linearRule: "Responde cada pregunta antes de seguir. Como en el examen real por ordenador, no puedes volver atrás.",
     freeRule: "Muévete libremente entre las preguntas. Marca las que quieras revisar.",
     autoSubmit: "Cuando se acaba el tiempo, la sección se envía sola.",
     resumeModule: "Reanudar módulo",
@@ -184,7 +184,7 @@ export const ES: V2UiTranslation = {
     basicsRowLabel: (drillName: string, subtitle: string) => `${drillName} Basics: ${subtitle}`,
     drillItemLabel: (drillName: string) => `Práctica de ${drillName}`,
 
-    desktopHeading: "Examen de práctica completo · en una computadora, con tiempo",
+    desktopHeading: "Examen de práctica completo · en un ordenador, con tiempo",
     testShapeQuestions: (n: number) => `${n} ${preguntas(n)}`,
     testShapeSections: (n: number) => `${n} ${n === 1 ? "sección" : "secciones"}`,
     testSubtitle: (shape: string, length: string, adaptive: boolean, heldOut: boolean) =>
@@ -264,7 +264,7 @@ export const ES: V2UiTranslation = {
     yourNextStep: "Tu siguiente paso",
     drillTonight: (drillName: string) => `Practica ${drillName} en tu móvil esta noche`,
     nextStepBody: (correct: number, total: number, domainLabel: string) =>
-      `Acertaste ${correct} de ${total} en ${domainLabel}. La práctica te repite cada fallo hasta que lo domines; luego repite el examen en una computadora.`,
+      `Acertaste ${correct} de ${total} en ${domainLabel}. La práctica te repite cada fallo hasta que lo domines; luego repite el examen en un ordenador.`,
     startTheDrill: "Empezar la práctica",
 
     review: "Revisión",

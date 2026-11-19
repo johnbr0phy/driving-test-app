@@ -9,7 +9,8 @@ import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
 import { FieldValue } from 'firebase-admin/firestore';
 import { purchaseExam } from '@/lib/purchaseAttribution';
-import { isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
+import { guestSignInLink, isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
+import { SITE_URL } from '@/lib/siteUrl';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -214,7 +215,11 @@ export async function POST(request: NextRequest) {
           uid: userId, dedupeKey: `purchase/${session.id}`, emailKey: `purchaseWelcome:${session.id}`,
           payload: { to: buyer.email, subject: EMAIL_INBOX.purchaseWelcome(voiceFor(fulfillment?.examId)).subject,
             replyTo: process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io',
-            html: purchaseWelcomeHtml(voiceFor(fulfillment?.examId), guestBuyer ? { guest: guestBuyer } : undefined), kind: 'transactional' },
+            html: purchaseWelcomeHtml(voiceFor(fulfillment?.examId), guestBuyer ? { guest: {
+              ...guestBuyer,
+              // One-tap sign-in on another device, for accounts made here.
+              signInLink: guestBuyer.createdForGuest ? await guestSignInLink(session.id, guestBuyer, SITE_URL) : undefined,
+            } } : undefined), kind: 'transactional' },
           retryPolicy: makePurchaseRetryPolicy((await userRef.get()).data()?.subscription),
           eligible: data => data.subscription?.isPremium === true,
         });

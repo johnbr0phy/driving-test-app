@@ -147,3 +147,39 @@ export function maskEmail(email: string): string {
   if (!domain) return '***';
   return `${local.slice(0, 2)}***@${domain}`;
 }
+
+/**
+ * The receipt's one-tap sign-in link for an account a guest checkout made.
+ * Opening it proves the buyer owns the inbox, so it works on any device for
+ * a week (then Forgot password does the same job). The token sits in the
+ * URL's fragment, which browsers never send to a server or to analytics; the
+ * page posts it to /api/account/guest-link.
+ *
+ * One link per Checkout Session, made once: a retried webhook must send the
+ * same receipt it would have sent the first time.
+ */
+export const GUEST_LINK_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+
+export async function guestSignInLink(sessionId: string, buyer: GuestBuyer, siteUrl: string, now = new Date()): Promise<string> {
+  const ref = getAdminDb().collection('guestLoginLinks').doc(sessionId);
+  const url = (token: string) => `${siteUrl}/login/link#s=${encodeURIComponent(sessionId)}&t=${token}`;
+  const existing = await ref.get();
+  if (existing.exists) return url(existing.data()!.token);
+  const token = randomBytes(32).toString('base64url');
+  try {
+    await ref.create({ token, uid: buyer.uid, email: buyer.email, createdAt: now.toISOString(), expiresAt: new Date(now.getTime() + GUEST_LINK_TTL_MS) });
+    return url(token);
+  } catch (err) {
+    const winner = (await ref.get()).data();
+    if (!winner) throw err;
+    return url(winner.token);
+  }
+}
+
+/** Whether a token from the link matches the stored one (constant time). */
+export function guestLinkTokenMatches(stored: string | undefined, given: string | undefined | null): boolean {
+  if (!stored || !given) return false;
+  const a = Buffer.from(sha256(stored));
+  const b = Buffer.from(sha256(given));
+  return timingSafeEqual(a, b);
+}

@@ -78,7 +78,8 @@ export default function PrivacyPage() {
                 the amount, currency, country, date, the page you bought from and how you first found Tigertest (the
                 first page you opened and whether you came from a search engine, an AI assistant, a friend&apos;s link
                 or directly), never your card number. If you buy without being signed in, we use the email you give
-                Stripe to add Premium to your Tigertest account, or to make one for you if you don&apos;t have one.
+                Stripe to add Premium to your Tigertest account, or to make one for you if you don&apos;t have one;
+                a new account&apos;s receipt carries a sign-in link that works for 7 days.
               </li>
               <li>
                 <strong>AI assistants:</strong> if you connect Claude, ChatGPT or another assistant, the sign-in link

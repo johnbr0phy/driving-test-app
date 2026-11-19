@@ -26,6 +26,9 @@ test('a guest receipt names the account and links to sign in', () => {
   assert.match(made, /new@example\.com/);
   assert.match(made, /Forgot password/);
   assert.match(made, /https:\/\/www\.tigertest\.io\/login/);
+  const linked = purchaseWelcomeHtml(v, { guest: { email: 'new@example.com', createdForGuest: true, signInLink: 'https://www.tigertest.io/login/link#s=cs_1&t=abc' } });
+  assert.match(linked, /login\/link#s=cs_1/);
+  assert.match(linked, /7 days/);
   const existing = purchaseWelcomeHtml(v, { guest: { email: 'old@example.com', createdForGuest: false } });
   assert.match(existing, /already had/);
   // A signed-in buyer's receipt is unchanged.

@@ -144,7 +144,7 @@ const STATS = (v: EmailVoice, campaign: string) => statsUrl(v, campaign);
  */
 export function purchaseWelcomeHtml(
   v: EmailVoice,
-  opts?: { guest?: { email: string; createdForGuest: boolean } },
+  opts?: { guest?: { email: string; createdForGuest: boolean; signInLink?: string } },
 ): string {
   const campaign = "purchase_welcome";
   const isV2 = EXAMS_V2.some((e) => e.id === v.id);
@@ -161,7 +161,7 @@ export function purchaseWelcomeHtml(
       p("Your purchase is confirmed. Premium is active on your Tigertest account, on every device you sign in on."),
       ...(opts?.guest
         ? opts.guest.createdForGuest
-          ? [p(`We made your Tigertest account with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>, the email you paid with. To sign in on another device, open the sign-in page and tap Forgot password to set a password (or use Sign in with Google if it is a Google address).`)]
+          ? [p(`We made your Tigertest account with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>, the email you paid with.${opts.guest.signInLink ? ` To use it on any device, open this email there and tap the button below: it signs you in, no password needed, for the next 7 days. After that, open the sign-in page and tap Forgot password to set a password (or use Sign in with Google if it is a Google address).` : ` To sign in on another device, open the sign-in page and tap Forgot password to set a password (or use Sign in with Google if it is a Google address).`}`)]
           : [p(`Premium is on the Tigertest account you already had with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>. Sign in with that address to use it.`)]
         : []),
       p("Premium includes the DMV's extra training sets and practice tests, and full stats on exams where those require paid access."),
@@ -169,7 +169,7 @@ export function purchaseWelcomeHtml(
       ...(isV2 ? [p(`Your ${v.shortName} tests, drills, study plan and mistake notebook were already free. This purchase adds the account-wide Premium features above.`)] : []),
       // A guest may open this on a device they never signed in on.
       opts?.guest
-        ? cta(`${SITE}/login`, "Sign In to Tigertest")
+        ? cta(opts.guest.signInLink || `${SITE}/login`, "Sign In to Tigertest")
         : cta(knownPaidStats ? STATS(v, campaign) : DASH(v, campaign), knownPaidStats ? `Open My ${v.shortName} Stats` : "Open Tigertest"),
       p("Reply if anything looks wrong and a human will read it."),
       signoff("Thanks,"),

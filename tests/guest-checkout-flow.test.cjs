@@ -43,7 +43,7 @@ const auth = {
   },
   getUser: async uid => { const u = users.get(uid); if (!u) throw authErr('auth/user-not-found'); return u; },
   createCustomToken: async uid => `custom-${uid}`,
-  updateUser: async (uid, { providersToUnlink }) => { const u = users.get(uid); u.providerData = u.providerData.filter(p => !providersToUnlink.includes(p.providerId)); },
+  updateUser: async (uid, { providersToUnlink = [], emailVerified }) => { const u = users.get(uid); u.providerData = u.providerData.filter(p => !providersToUnlink.includes(p.providerId)); if (emailVerified !== undefined) u.emailVerified = emailVerified; },
   revokeRefreshTokens: async uid => { users.get(uid).revokedAt = Date.now(); },
 };
 const addUser = (email, providers = ['password'], createdAgoMs = 86400000 * 30) => {
@@ -86,14 +86,17 @@ try {
 } finally { Module._load = oldLoad; }
 
 const { NextRequest } = require('next/server');
-let claim;
+let claim, linkRoute;
 {
   const old = Module._load;
   Module._load = function (request, parent, main) {
     if (request === '@/lib/firebase-admin') return { getAdminDb: () => db, getAdminAuth: () => auth };
     return old.call(this, request, parent, main);
   };
-  try { claim = require('../app/api/account/guest-claim/route.ts').POST; } finally { Module._load = old; }
+  try {
+    claim = require('../app/api/account/guest-claim/route.ts').POST;
+    linkRoute = require('../app/api/account/guest-link/route.ts').POST;
+  } finally { Module._load = old; }
 }
 const post = (fn, path, body, token, cookieHeader) => fn(new NextRequest(`https://www.tigertest.io${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}), ...(cookieHeader ? { cookie: cookieHeader } : {}) }, body: JSON.stringify(body) }));
 const json = async r => ({ status: r.status, body: await r.json() });
@@ -368,4 +371,81 @@ test('junk or unknown session ids are refused', async () => {
   assert.equal((await back('../../x')).status, 400);
   assert.equal((await back(123)).status, 400);
   assert.equal((await back('cs_test_nope')).status, 500);
+});
+
+// ---- the receipt's one-tap sign-in link --------------------------------
+const linkOf = html => { const m = html.match(/href="https:\/\/www\.tigertest\.io\/login\/link#s=([^&"]+)&amp;t=([^"]+)"/) || html.match(/href="https:\/\/www\.tigertest\.io\/login\/link#s=([^&"]+)&t=([^"]+)"/); return m && { s: decodeURIComponent(m[1]), t: m[2] }; };
+const useLink = async l => json(await post(linkRoute, '/api/account/guest-link', l));
+
+test('new account: the receipt carries a sign-in link that works on another device', async () => {
+  const id = await startGuest();
+  pay(id, 'new@example.com');
+  await fireWebhook(id);
+  const l = linkOf(receipts[0].payload.html);
+  assert.ok(l, 'receipt has the link');
+  assert.equal(l.s, id);
+  const uid = rows.get(`guestCheckouts/${id}`).uid;
+  const r = await useLink(l);
+  assert.equal(r.body.status, 'sign_in');
+  assert.equal(r.body.customToken, `custom-${uid}`);
+  assert.equal(users.get(uid).emailVerified, true);
+  // Reusable within the week (another device).
+  assert.equal((await useLink(l)).body.status, 'sign_in');
+});
+
+test('a retried webhook sends the same link, not a new one', async () => {
+  const id = await startGuest();
+  pay(id, 'new@example.com');
+  await fireWebhook(id); await fireWebhook(id);
+  assert.equal(receipts.length, 2);
+  const links = receipts.map(r => linkOf(r.payload.html)?.t).filter(Boolean);
+  assert.equal(links.length, 2);
+  assert.equal(new Set(links).size, 1);
+});
+
+test('an account that already existed gets no sign-in link', async () => {
+  addUser('old@example.com');
+  const id = await startGuest();
+  pay(id, 'old@example.com');
+  await fireWebhook(id);
+  assert.equal(linkOf(receipts[0].payload.html), null);
+  assert.match(receipts[0].payload.html, /https:\/\/www\.tigertest\.io\/login"/);
+});
+
+test('using the link the first time takes the account from whoever else added a sign-in', async () => {
+  const id = await startGuest();
+  pay(id, 'victim@example.com');
+  await fireWebhook(id);
+  const uid = rows.get(`guestCheckouts/${id}`).uid;
+  users.get(uid).providerData = [{ providerId: 'password' }]; // set by the payer, not the inbox owner
+  const r = await useLink(linkOf(receipts[0].payload.html));
+  assert.equal(r.body.status, 'sign_in');
+  assert.deepEqual(users.get(uid).providerData, []);
+  assert.ok(users.get(uid).revokedAt);
+  // Later uses do not unlink what the owner adds afterwards.
+  users.get(uid).providerData = [{ providerId: 'google.com' }];
+  users.get(uid).revokedAt = undefined;
+  await useLink(linkOf(receipts[0].payload.html));
+  assert.deepEqual(users.get(uid).providerData, [{ providerId: 'google.com' }]);
+  assert.equal(users.get(uid).revokedAt, undefined);
+});
+
+test('a wrong, unknown or expired link signs no one in', async () => {
+  const id = await startGuest();
+  pay(id, 'new@example.com');
+  await fireWebhook(id);
+  const l = linkOf(receipts[0].payload.html);
+  assert.equal((await useLink({ s: l.s, t: l.t + 'x' })).body.status, 'invalid');
+  assert.equal((await useLink({ s: 'cs_test_999', t: l.t })).body.status, 'invalid');
+  assert.equal((await useLink({ s: '../users/x', t: l.t })).status, 400);
+  rows.get(`guestLoginLinks/${id}`).expiresAt = new Date(Date.now() - 1000);
+  assert.equal((await useLink(l)).body.status, 'expired');
+});
+
+test('a link stops working once the account changes its email', async () => {
+  const id = await startGuest();
+  pay(id, 'new@example.com');
+  await fireWebhook(id);
+  users.get(rows.get(`guestCheckouts/${id}`).uid).email = 'other@example.com';
+  assert.equal((await useLink(linkOf(receipts[0].payload.html))).body.status, 'invalid');
 });

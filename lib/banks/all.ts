@@ -261,6 +261,8 @@ import "./sgm5";
 import "./sgvl";
 import "./itcils";
 import "./itceli";
+import "./ita2";
+import "./itcilsb2";
 import "./itpatente";
 import "./frcivique";
 import "./frvtc";

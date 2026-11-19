@@ -981,6 +981,11 @@
   "https://www.admission.org/assessments/isee/about",
   "https://www.admission.org/assessments/isee/preparation"
  ],
+ "ita2": [
+  "https://www.gazzettaufficiale.it/eli/gu/2022/02/12/36/sg/pdf",
+  "https://lentepubblica.it/wp-content/uploads/2022/02/Decreto-ministeriale-7-dicembre-2021.pdf",
+  "https://prefettura.interno.gov.it/sites/default/files/75/2024-08/decreto-4.6.2010-modalita-di-svolgimento.pdf"
+ ],
  "itceli": [
   "https://cvcl.unistrapg.it/pagine/esami-celi-generici",
   "https://cvcl.unistrapg.it/pagine/esami-celi-immigrati",
@@ -990,6 +995,11 @@
   "https://cils.unistrasi.it/1/89/382/Prove_Liv._B1_c.htm",
   "https://cils.unistrasi.it/public/articoli/382/B1%20Cittadinanza_Sillabo.pdf",
   "https://cils.unistrasi.it/public/articoli/382/Criteri%20di%20valutazione%20B1%20cittadinanza_nuovi.pdf"
+ ],
+ "itcilsb2": [
+  "https://cils.unistrasi.it/1/79/74/Livello__CILS_DUE-B2.htm",
+  "https://cils.unistrasi.it/1/117/83/La_valutazione.htm",
+  "https://cils.unistrasi.it/1/83/15/Le_prove.htm"
  ],
  "itil": [
   "https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil-4-foundation-2565",

@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech";
+export type ExamId = "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "ita2" | "itcilsb2" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -5810,6 +5810,145 @@ const itceli: ExamConfig = {
     ],
     sourceLine: "Domande originali sulla comprensione della lettura e sulla lingua del livello B1, novembre 2026. Scrittura, ascolto e orale non sono inclusi.",
     analyticsKey: "itceli",
+  },
+};
+
+const ita2: ExamConfig = {
+  id: "ita2",
+  stateCode: "ITA2",
+  idBase: 35200,
+  slug: "/test-italiano-a2",
+  landingPath: "/it/test-italiano-a2-permesso-di-soggiorno",
+  name: "Test di italiano A2 per il permesso di soggiorno",
+  shortName: "Test di italiano A2",
+  examLabel: "Test di italiano A2",
+  fullName: "Test di conoscenza della lingua italiana A2 per il permesso di soggiorno UE per soggiornanti di lungo periodo (Prefettura)",
+  questionIdPrefix: "ITA2-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  language: "it",
+  locale: "it-IT",
+  english: { name: "Italian A2 test for the long-term residence permit", shortName: "Italian A2 residence permit test", fullName: "The Prefettura's Italian A2 test for the EU long-term residence permit, in Italian" },
+  review: { it: "model" },
+  // D.M. 7 dicembre 2021 (GU n. 36, 12-2-2022; same rules as D.M. 4 giugno 2010): A2, test on
+  // "comprensione di brevi testi e capacità di interazione", 80% to pass. The MIUR vademecum gives
+  // three prove in 60 minutes: listening 10 items (30%), reading 10 items (35%), written
+  // interaction (35%). Modelled: reading by the vademecum's four sub-skills (corrispondenza 5,
+  // orientarsi 6, informarsi 4, istruzioni 5), written interaction as single-answer items 6,
+  // socio-communicative acts 6, and A2 vocabulary 8 and grammar 10 from the vademecum's tables
+  // (Tigertest's addition; the real test has no grammar part). Listening is not modelled.
+  blueprint: {
+    ita2Corrispondenza: 5,
+    ita2Orientarsi: 6,
+    ita2Informarsi: 4,
+    ita2Istruzioni: 5,
+    ita2Interazione: 6,
+    ita2Azioni: 6,
+    ita2Lessico: 8,
+    ita2Grammatica: 10,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 35201, name: "Leggere lettere, avvisi e cartelli", categories: ["ita2Corrispondenza", "ita2Orientarsi"], size: 44, weightLabel: "11 di 50 domande per prova" },
+    { setNumber: 2, id: 35202, name: "Leggere articoli e istruzioni", categories: ["ita2Informarsi", "ita2Istruzioni"], size: 36, weightLabel: "9 di 50 domande per prova" },
+    { setNumber: 3, id: 35203, name: "Scrivere e comunicare", categories: ["ita2Interazione", "ita2Azioni"], size: 48, weightLabel: "12 di 50 domande per prova" },
+    { setNumber: 4, id: 35204, name: "Grammatica di base", categories: ["ita2Grammatica"], size: 40, weightLabel: "10 di 50 domande per prova" },
+    { setNumber: 5, id: 35205, name: "Parole di tutti i giorni", categories: ["ita2Lessico"], size: 32, weightLabel: "8 di 50 domande per prova" },
+  ],
+  categoryLabels: {
+    ita2Corrispondenza: "Lettere e messaggi",
+    ita2Orientarsi: "Avvisi, cartelli e orari",
+    ita2Informarsi: "Articoli e volantini",
+    ita2Istruzioni: "Istruzioni e regole",
+    ita2Interazione: "Rispondere e compilare moduli",
+    ita2Azioni: "Frasi per la vita di tutti i giorni",
+    ita2Lessico: "Parole di tutti i giorni",
+    ita2Grammatica: "Grammatica di base",
+  },
+  copy: {
+    guestPrompt: "per salvare i tuoi progressi verso il test di italiano A2 e tenere traccia di ogni errore",
+    trainingHeading: "Set di allenamento",
+    trainingSub: "Ogni set copre un tema: lettura, scrivere e comunicare, grammatica, parole. Vedi subito la risposta, e le domande che sbagli tornano finché non le sai.",
+    testsHeading: "Prove · 50 domande, 40 per superarle",
+    heroSubs: [
+      "Cinque set di allenamento e quattro prove da 50 domande. Comincia da lettere, avvisi e cartelli.",
+      "Prendi sicurezza nel set, poi fai la prova.",
+      "Continua così. Ripassa le risposte ai messaggi e i moduli.",
+      "Ripeti i tuoi errori e rifai la prova.",
+      "Tutto verde. Sei pronto per il test di italiano A2 in Prefettura.",
+    ],
+    sourceLine: "Domande originali sul D.M. 7 dicembre 2021 e sul vademecum del Ministero (lettura e interazione scritta di livello A2), novembre 2026. L'ascolto non è incluso.",
+    analyticsKey: "ita2",
+  },
+};
+
+const itcilsb2: ExamConfig = {
+  id: "itcilsb2",
+  stateCode: "ITCILSB2",
+  idBase: 35300,
+  slug: "/cils-b2",
+  landingPath: "/it/cils-b2-test",
+  name: "CILS DUE-B2",
+  shortName: "CILS B2",
+  examLabel: "CILS DUE-B2",
+  fullName: "CILS DUE-B2 (certificazione di italiano come lingua straniera, livello B2, Università per Stranieri di Siena)",
+  questionIdPrefix: "ITB2-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 55,
+  language: "it",
+  locale: "it-IT",
+  english: { name: "CILS B2 (Italian B2 certificate)", shortName: "CILS B2 Italian test", fullName: "CILS DUE-B2, the Italian B2 language certificate from the Università per Stranieri di Siena, in Italian" },
+  review: { it: "model" },
+  // CILS DUE-B2 (Centro CILS, Università per Stranieri di Siena; Le prove, La valutazione, B2 exam
+  // booklet, read 2026-11-19): five tests, scored out of 100 with the sufficiency (11 of 20) needed in
+  // every skill. Modelled: comprensione della lettura (articles 6, information present in the text
+  // 5, text reconstruction and cohesion 4) and analisi delle strutture di comunicazione (pronouns
+  // and adjectives 6, verb forms 10, periodo ipotetico, discorso indiretto and connettivi 7,
+  // communicative situations 5, vocabulary 7). Split is Tigertest's; CILS publishes no topic
+  // weights. Ascolto, produzione scritta and orale are not modelled. All items original.
+  blueprint: {
+    itb2Articoli: 6,
+    itb2Informazioni: 5,
+    itb2Coesione: 4,
+    itb2Pronomi: 6,
+    itb2Verbi: 10,
+    itb2Periodo: 7,
+    itb2Situazioni: 5,
+    itb2Lessico: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 35301, name: "Comprensione della lettura", categories: ["itb2Articoli", "itb2Informazioni", "itb2Coesione"], size: 60, weightLabel: "15 di 50 domande per prova" },
+    { setNumber: 2, id: 35302, name: "Forme verbali", categories: ["itb2Verbi"], size: 40, weightLabel: "10 di 50 domande per prova" },
+    { setNumber: 3, id: 35303, name: "Periodo ipotetico e lessico", categories: ["itb2Periodo", "itb2Lessico"], size: 56, weightLabel: "14 di 50 domande per prova" },
+    { setNumber: 4, id: 35304, name: "Pronomi e situazioni", categories: ["itb2Pronomi", "itb2Situazioni"], size: 44, weightLabel: "11 di 50 domande per prova" },
+  ],
+  categoryLabels: {
+    itb2Articoli: "Articoli di giornale",
+    itb2Informazioni: "Informazioni nel testo",
+    itb2Coesione: "Ordine e coesione del testo",
+    itb2Pronomi: "Pronomi e aggettivi",
+    itb2Verbi: "Forme verbali",
+    itb2Periodo: "Periodo ipotetico, discorso indiretto e connettivi",
+    itb2Situazioni: "Situazioni di comunicazione",
+    itb2Lessico: "Lessico ed espressioni",
+  },
+  copy: {
+    guestPrompt: "per salvare i tuoi progressi verso il CILS B2 e tenere traccia di ogni errore",
+    trainingHeading: "Set di allenamento",
+    trainingSub: "Ogni set copre un tema: lettura, verbi, periodo ipotetico e lessico, pronomi e situazioni. Vedi subito la risposta, e le domande che sbagli tornano finché non le sai.",
+    testsHeading: "Prove · 50 domande, 28 per superarle",
+    heroSubs: [
+      "Quattro set di allenamento e quattro prove da 50 domande. Comincia dalla comprensione della lettura.",
+      "Prendi sicurezza nel set, poi fai la prova.",
+      "Continua così. Ripassa il congiuntivo e la concordanza dei tempi.",
+      "Ripeti i tuoi errori e rifai la prova.",
+      "Tutto verde. Lettura e strutture del CILS B2 non ti fanno più paura.",
+    ],
+    sourceLine: "Domande originali sul formato CILS DUE-B2 (comprensione della lettura e analisi delle strutture di comunicazione), novembre 2026. Ascolto, produzione scritta e orale non sono incluse.",
+    analyticsKey: "itcilsb2",
   },
 };
 
@@ -23979,7 +24118,7 @@ const carshair: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, carscook, carshair, cadronebasic, cahambasic, ea2, ea3];
+export const EXAMS: ExamConfig[] = [frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, ita2, itcilsb2, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, carscook, carshair, cadronebasic, cahambasic, ea2, ea3];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

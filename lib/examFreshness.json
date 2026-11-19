@@ -554,6 +554,14 @@
       "action": "Use the current access rule; distinguish pending files and European qualification recognition.",
       "source": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054658967",
       "done": "2026-11-17"
+    },
+    {
+      "exam": "afsp",
+      "date": "2027-06-01",
+      "kind": "outline",
+      "what": "Providers start offering the 2027 AFTR course (for 2027 returns and the 2028 AFSP) from a new Publication 6079 outline, with 2027 inflation adjustments from the next revenue procedure.",
+      "action": "Read the new Publication 6079 and 6012; move every 2026 figure (Rev. Proc. 2025-32 amounts, Notice 2026-10 mileage, 6695 amounts for returns filed in 2027, SALT $40,400 and $505,000) to the 2027 amounts, and update the landing, examFacts and the source dates.",
+      "source": "https://www.irs.gov/pub/irs-pdf/p6079.pdf"
     }
   ]
 }

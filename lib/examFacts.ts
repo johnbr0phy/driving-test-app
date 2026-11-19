@@ -152,6 +152,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ISED RIC-3 Issue 5 (March 2022), RIC-1 Issue 8 (May 2025), RBR-4 Issue 3 (July 2022) and the amateur radio exam generator page (updated July 15, 2025), checked November 2026",
     source: { name: "ISED: RIC-3, Information on the Amateur Radio Service", url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service" },
   },
+  afsp: {
+    answer:
+      "The Annual Federal Tax Refresher (AFTR) is a 6-hour continuing education course with a comprehension test at the end, part of the IRS Annual Filing Season Program for tax return preparers who are not attorneys, CPAs or enrolled agents. Each AFTR test has 100 multiple-choice questions with four answers and one correct answer, in at most 3 continuous hours, and 70 percent correct is needed to pass. IRS-approved continuing education providers write and give the test from the IRS course outline. The 2026 course covers preparing 2026 individual returns, must be finished by December 31, 2026, and counts toward the 2027 Annual Filing Season Program Record of Completion with 10 more hours of federal tax law and 2 of ethics.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, 4 answers each" },
+      { label: "Time", value: "Up to 3 continuous hours" },
+      { label: "Passing score", value: "70% correct" },
+      { label: "Course", value: "6 CE hours, ending in the test" },
+      { label: "Tax year covered", value: "2026 returns (2026 course, for the 2027 program)" },
+      { label: "Deadline", value: "Course and test done by December 31" },
+      { label: "Domains", value: "New tax law, general review, practices and procedures" },
+      { label: "Given by", value: "IRS-approved continuing education providers" },
+      { label: "Record of Completion", value: "18 CE hours, a renewed PTIN and Circular 230 consent" },
+    ],
+    basedOn: "IRS Publications 6079 (Rev. 5-2026), 6012 (Rev. 3-2026) and 6026 and the IRS Annual Filing Season Program FAQs, checked November 2026",
+    source: { name: "IRS: Annual Filing Season Program frequently asked questions", url: "https://www.irs.gov/tax-professionals/frequently-asked-questions-annual-filing-season-program" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

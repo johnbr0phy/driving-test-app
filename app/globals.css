@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* IRS Annual Filing Season Program AFTR theme */
+  [data-theme="afsp"] {
+    --brand: 12 45% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 45% 96%;
+    --brand-hover: 12 45% 38%;
+    --brand-dark: 12 45% 36%;
+    --brand-darker: 12 40% 26%;
+    --brand-muted: 12 25% 70%;
+    --brand-border: 12 25% 80%;
+    --brand-border-light: 12 20% 89%;
+    --brand-gradient-to: 17 50% 96%;
+  }
 
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;

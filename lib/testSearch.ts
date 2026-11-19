@@ -54,7 +54,22 @@ function editDistance(a: string, b: string, max: number): number {
 
 // Words nearly every test has in its name or blurb. Dropped from a query when
 // it has other words, so "sat practice test" searches for "sat".
-const GENERIC = new Set(["practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027"]);
+const GENERIC = new Set([
+  "practice", "test", "tests", "exam", "exams", "mock", "free", "quiz", "questions", "question", "prep", "online", "sample", "paper", "papers", "2026", "2027",
+  // The same words in the other homepage languages, typed into /de, /it, /gr... (Nov 2026)
+  "prüfung", "pruefung", "übung", "uebung", "übungstest", "kostenlos", "fragen", // de
+  "examen", "exámenes", "gratis", "preguntas", "práctica", "practica", // es
+  "exame", "exames", "teste", "testes", "grátis", "treino", "perguntas", // pt
+  "examens", "gratuit", "entraînement", "entrainement", // fr
+  "esame", "esami", "prova", "prove", "esercitazione", "domande", // it
+  "oefenen", "oefentoets", "oefenexamen", "toets", "vragen", // nl
+  "prov", "övningsprov", "ovningsprov", "frågor", // sv
+  "prøve", "prøver", "øvelsesprøve", "spørgsmål", // da
+  "koe", "kokeet", "harjoituskoe", "harjoituskokeet", "ilmainen", "kysymykset", // fi
+  "vizsga", "teszt", "tesztek", "gyakorló", "ingyenes", "kérdések", // hu
+  "chestionare", "gratuite", "întrebări", // ro
+  "τεστ", "εξέταση", "εξετάσεις", "δωρεάν", "ερωτήσεις", // el
+]);
 
 // Spellings and plurals of one word, so "maths" (UK) finds the SAT's "math",
 // "licence" finds "license" and the reverse. Applied to every query term.

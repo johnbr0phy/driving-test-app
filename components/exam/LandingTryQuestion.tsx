@@ -6,8 +6,9 @@ import { Check, MousePointerClick, X } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
+import { useV2Store } from "@/store/useV2Store";
 import { useSound } from "@/hooks/useSound";
-import { recordClassAnswer } from "@/lib/classProgress";
+import { recordClassAnswer, recordClassAnswerById } from "@/lib/classProgress";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 import type { Language } from "@/i18n";
 import type { Question } from "@/types";
@@ -15,9 +16,10 @@ import type { Question } from "@/types";
 // The playable question in a landing hero (lib/landingTryQuestion.ts). The
 // answer is a real training answer: it starts a guest session like the
 // Start button, is recorded in set 1 (which also counts the funnel's first
-// answer), and "Keep going" carries on in that set.
+// answer), and "Keep going" carries on in that set. On a v2 exam the answer
+// goes to its first drill instead, and "Keep going" opens that drill.
 
-const LETTERS = ["A", "B", "C", "D"] as const;
+const LETTERS = ["A", "B", "C", "D", "E", "F"] as const;
 
 const COPY: Partial<Record<Language, { label: string; hint: string; right: string; wrong: string; next: string; saved: string }>> = {
   en: { label: "Try one now", hint: "Pick an answer", right: "Correct!", wrong: "Not quite.", next: "Keep going", saved: "Counted in your first practice set." },
@@ -45,6 +47,7 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
   const isGuest = useStore((s) => s.isGuest);
   const startGuestSession = useStore((s) => s.startGuestSession);
   const answerTrainingSetQuestion = useStore((s) => s.answerTrainingSetQuestion);
+  const answerDrill = useV2Store((s) => s.answerDrill);
   const { playCorrectSound, playIncorrectSound } = useSound();
   const [picked, setPicked] = useState<number | null>(null);
   const copy = COPY[lang ?? "en"] ?? COPY.en!;
@@ -86,6 +89,11 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
     else playIncorrectSound();
     // Lets the hero hold its Start button text, so nothing above the card moves.
     onAnswer?.();
+    if (q.v2) {
+      answerDrill(q.v2.drillKey, q.questionId, ok);
+      recordClassAnswerById(q.examId, q.questionId, q.v2.domain, ok, q.v2.order[i]);
+      return;
+    }
     if (!loading && !user && !isGuest) startGuestSession();
     answerTrainingSetQuestion(q.setId, q.questionId, ok);
     recordClassAnswer(q.examId, { questionId: q.questionId, category: q.category as Question["category"], optionOrder: q.optionOrder }, ok, LETTERS[i]);

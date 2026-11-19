@@ -13,6 +13,7 @@ export const TEACHES: Record<string, string> = {
   sfappbuilder: "a Salesforce App Builder or Salesforce admin course",
   sfpd1: "a Salesforce developer course or bootcamp",
   nailtech: "at a nail technology school",
+  ascpmls: "an MLS program",
   ascpht: "a histotechnician program",
   esthetician: "at an esthetics school",
   frvtc: "a French VTC chauffeur preparation course",

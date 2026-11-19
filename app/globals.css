@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* MLS(ASCP) Medical Laboratory Scientist theme: muted mauve */
+  [data-theme="ascpmls"] {
+    --brand: 300 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 25% 96%;
+    --brand-hover: 300 25% 36%;
+    --brand-dark: 300 25% 32%;
+    --brand-darker: 300 20% 24%;
+    --brand-muted: 300 25% 70%;
+    --brand-border: 300 25% 80%;
+    --brand-border-light: 300 20% 89%;
+    --brand-gradient-to: 315 50% 96%;
+  }
   /* HT(ASCP) Histotechnician theme */
   [data-theme="ascpht"] {
     --brand: 296 75% 36%;

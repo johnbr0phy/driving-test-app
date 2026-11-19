@@ -197,6 +197,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ASCP BOC Histotechnician HT(ASCP) and Scientist in Histotechnology HTL(ASCP) Examination Content Guideline (revised June 24, 2026), checked November 2026",
     source: { name: "ASCP BOC: HT and HTL Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_ht_htl_content_guideline.pdf" },
   },
+  ascpmls: {
+    answer:
+      "The MLS(ASCP) exam is the medical laboratory scientist certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the MLS(ASCP) credential (MLS(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Blood Banking, Chemistry, Hematology and Microbiology are 17 to 22% each, and Urinalysis and Other Body Fluids, Immunology and Laboratory Operations are 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score from 100 to 999, with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest areas", value: "Blood banking, chemistry, hematology and microbiology, 17 to 22% each" },
+      { label: "Pass mark", value: "Scaled score of 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Medical Laboratory Scientist MLS(ASCP) and MLS(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+    source: { name: "ASCP BOC: MLS(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

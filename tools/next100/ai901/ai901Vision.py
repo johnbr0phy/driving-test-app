@@ -69,7 +69,7 @@ ITEMS = [
     S(0, 2, "Creating visual output",
       "Where in the Foundry portal can you try image generation prompts without writing code?",
       "The Images playground",
-      ["The agents trace view", "The Speech Studio", "The quota page"],
+      ["The agents trace view", "Speech Studio", "The quota page"],
       "Images can be generated through the Image generation API, the Responses API or the Images playground in the Foundry portal."),
     S(0, 2, "Creating visual output",
       "Which parameter sets how many images an image generation request returns?",

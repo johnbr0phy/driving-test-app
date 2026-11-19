@@ -47,6 +47,16 @@ def MT(test, diff, skill, stem, columns, rows, exp):
 
 
 def shuffled(q):
+    if q["format"] == "matrix":
+        # Rows are written in source order (yes/no sets mostly Yes, Yes, No, No;
+        # matching sets mostly column order), so shuffle them by a stem seed too.
+        seed = int(hashlib.sha256(("rows" + q["stem"]).encode()).hexdigest()[:12], 16)
+        order = list(range(len(q["rows"])))
+        random.Random(seed).shuffle(order)
+        out = dict(q)
+        out["rows"] = [q["rows"][i] for i in order]
+        out["correct"] = [q["correct"][i] for i in order]
+        return out
     if q["format"] not in ("single", "multi"):
         return q
     seed = int(hashlib.sha256(q["stem"].encode()).hexdigest()[:12], 16)

@@ -11,9 +11,9 @@
     "stem": "Match each scenario to the AI workload it describes.",
     "rows": [
       "Counting cars in a parking lot camera feed",
-      "Finding the main complaints in thousands of written reviews",
+      "Booking a meeting room after checking several calendars",
       "Captioning a live webinar as people talk",
-      "Booking a meeting room after checking several calendars"
+      "Finding the main complaints in thousands of written reviews"
     ],
     "columns": [
       "Speech",
@@ -23,9 +23,9 @@
     ],
     "correct": [
       1,
-      2,
+      3,
       0,
-      3
+      2
     ],
     "explanation": "Working with camera images is computer vision. Pulling themes from written reviews is text analysis. Turning live talk into captions is speech recognition. An assistant that plans steps and takes actions with tools is agentic AI."
   },
@@ -62,9 +62,9 @@
     "stem": "At its core, what does a large language model do when it writes a reply to a prompt?",
     "options": [
       "Predicts the most likely next token, one token at a time",
-      "Looks up a stored answer that matches the prompt",
-      "Runs a matching rule that a developer wrote for each question",
-      "Searches the web and copies the best page"
+      "Retrieves the closest stored reply from its training data",
+      "Writes the whole reply at once, then checks its grammar",
+      "Translates the prompt into a query and runs it"
     ],
     "correct": [
       0
@@ -166,10 +166,10 @@
     "skill": "Visual input",
     "stem": "An app sends a photo of a dented car to a vision-enabled model and asks for a damage summary. How is the image included in the request?",
     "options": [
-      "As alt text typed by the user",
-      "As a link in the system message only",
+      "As a file uploaded to a vector store first",
+      "As an embedding computed before the request",
       "As an image content part next to the text, by URL or as base64 data",
-      "As a separate file added to the model's training set before the request"
+      "As a file attached to the system message only"
     ],
     "correct": [
       2
@@ -313,9 +313,9 @@
     "skill": "Field extraction",
     "stem": "Match each field to the Content Understanding method that produces it.",
     "rows": [
-      "The invoice date exactly as printed on a document",
       "Whether a support call's sentiment is positive, neutral or negative",
-      "A short summary of what was said in a recorded call"
+      "A short summary of what was said in a recorded call",
+      "The invoice date exactly as printed on a document"
     ],
     "columns": [
       "Extract",
@@ -323,9 +323,9 @@
       "Generate"
     ],
     "correct": [
-      0,
       1,
-      2
+      2,
+      0
     ],
     "explanation": "Extract pulls values as they appear (documents only). Classify picks from a predefined set of categories. Generate produces values freely, such as summaries or scene descriptions."
   },
@@ -446,9 +446,9 @@
     "stem": "For each statement about Microsoft's responsible AI principles, select Yes if it is true or No if it is false.",
     "rows": [
       "Inclusiveness means designing so people with disabilities can use the system.",
-      "Accountability means the AI system is the final authority on decisions about people.",
+      "Privacy and security applies only after a model is deployed, not to its training data.",
       "Reliability and safety includes responding safely to unexpected conditions.",
-      "Privacy and security applies only after a model is deployed, not to its training data."
+      "Accountability means the AI system is the final authority on decisions about people."
     ],
     "columns": [
       "Yes",
@@ -536,9 +536,9 @@
     "skill": "Testing agents",
     "stem": "After creating an agent in the Foundry portal, where can you chat with it to check its answers before publishing?",
     "options": [
-      "The deployment's quota page",
-      "The Azure Advisor recommendations page",
-      "The model's pricing calculator",
+      "The Deployments list",
+      "The Models catalog",
+      "The Guardrails page",
       "The agents playground"
     ],
     "correct": [
@@ -600,9 +600,9 @@
     "stem": "For each statement about computer vision and image generation, select Yes if it is true or No if it is false.",
     "rows": [
       "Object detection finds where each object is in an image, not just what the image shows.",
+      "Image classification draws a box around every item it finds.",
       "Optical character recognition reads printed or handwritten text in an image.",
-      "An image generation model is the right tool to count people in a photo.",
-      "Image classification draws a box around every item it finds."
+      "An image generation model is the right tool to count people in a photo."
     ],
     "columns": [
       "Yes",
@@ -610,8 +610,8 @@
     ],
     "correct": [
       0,
-      0,
       1,
+      0,
       1
     ],
     "explanation": "Object detection returns each object's location, and OCR extracts text from images. Image generation creates new pictures; it doesn't analyze existing ones. Classification labels the whole image rather than locating items."
@@ -628,9 +628,9 @@
     "stem": "In the Foundry quickstart, after creating an AIProjectClient, how does the Python code send a prompt to a deployed model?",
     "options": [
       "It gets an OpenAI client from the project and calls responses.create",
-      "It calls project.deploy and reads the deployment log",
-      "It posts the prompt as JSON to the Azure portal URL of the project resource",
-      "It writes the prompt to a storage queue for the model to pick up"
+      "It calls project.agents.create_version with the prompt",
+      "It calls project.deployments.get and reads the reply",
+      "It calls project.connections.get and passes the prompt"
     ],
     "correct": [
       0
@@ -690,9 +690,9 @@
     "skill": "Choosing a model",
     "stem": "Match each requirement to the kind of model that fits it.",
     "rows": [
+      "Answer questions about a photo the user uploads",
       "Turn product descriptions into vectors for similarity search",
-      "Create a new banner picture from a text description",
-      "Answer questions about a photo the user uploads"
+      "Create a new banner picture from a text description"
     ],
     "columns": [
       "Embedding model",
@@ -700,9 +700,9 @@
       "Multimodal chat model"
     ],
     "correct": [
+      2,
       0,
-      1,
-      2
+      1
     ],
     "explanation": "Embedding models turn text into numeric vectors for search and similarity. Image generation models such as the gpt-image series create pictures from prompts. A multimodal chat model accepts an image in the prompt and answers about it."
   },
@@ -717,20 +717,20 @@
     "skill": "Agent client app",
     "stem": "For each statement about the Python agent sample, select Yes if it is true or No if it is false.",
     "rows": [
-      "project.agents.create_version creates an agent or a new version of it.",
-      "get_openai_client(agent_name=...) returns a client bound to that agent.",
+      "Each new question needs a brand-new agent to keep history.",
       "The agent's instructions must be resent in every user message.",
-      "Each new question needs a brand-new agent to keep history."
+      "get_openai_client(agent_name=...) returns a client bound to that agent.",
+      "project.agents.create_version creates an agent or a new version of it."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
-      0,
       1,
-      1
+      1,
+      0,
+      0
     ],
     "explanation": "create_version with a PromptAgentDefinition creates the agent, and get_openai_client(agent_name=...) binds a client to it. The agent keeps its instructions, so you don't resend them, and a conversation keeps the history."
   },
@@ -768,8 +768,8 @@
     "rows": [
       "Repeating key instructions at the end of a prompt can help because of recency bias.",
       "Telling the model to reply 'not found' when the answer isn't in the text can reduce made-up answers.",
-      "Separators such as --- make a prompt harder for the model to follow.",
-      "Zero-shot means the prompt includes several worked examples."
+      "Zero-shot means the prompt includes several worked examples.",
+      "Separators such as --- make a prompt harder for the model to follow."
     ],
     "columns": [
       "Yes",
@@ -794,20 +794,20 @@
     "skill": "Azure Speech in Foundry Tools",
     "stem": "For each statement about Azure Speech in Foundry Tools, select Yes if it is true or No if it is false.",
     "rows": [
-      "SSML can adjust pitch, speaking rate and pronunciation of synthesized speech.",
-      "Azure Speech can run in containers closer to your data.",
+      "Fast transcription is meant for live, streaming microphone audio.",
       "Custom speech models are trained only on images.",
-      "Fast transcription is meant for live, streaming microphone audio."
+      "SSML can adjust pitch, speaking rate and pronunciation of synthesized speech.",
+      "Azure Speech can run in containers closer to your data."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
-      0,
       1,
-      1
+      1,
+      0,
+      0
     ],
     "explanation": "SSML fine-tunes pitch, rate, volume and pronunciation, and Speech can run in containers. Custom speech trains on acoustic, language and pronunciation data. Fast transcription is for pre-recorded files; real-time transcription handles streams."
   },
@@ -822,9 +822,9 @@
     "skill": "Documents and forms",
     "stem": "A RAG solution must index scanned manuals, including the meaning of their charts and diagrams. Which Content Understanding output suits search ingestion?",
     "options": [
-      "A WEBP thumbnail of each page",
-      "An SSML file for each section",
-      "A single sentiment score and a language code for each manual",
+      "JSON with only the fields in a custom schema",
+      "Plain OCR text with the layout removed",
+      "A classification label for each page",
       "Markdown with figure descriptions and preserved layout"
     ],
     "correct": [
@@ -864,10 +864,10 @@
     "skill": "Deployment options",
     "stem": "For each statement about Foundry deployment types, select Yes if it is true or No if it is false.",
     "rows": [
-      "Global Batch targets a 24-hour turnaround at a lower cost than Global Standard.",
       "Data Zone Standard keeps processing inside a Microsoft-defined data zone such as the EU.",
       "Provisioned deployments are billed per token with no reserved capacity.",
-      "A Developer deployment is meant for production traffic and has an SLA."
+      "A Developer deployment is meant for production traffic and has an SLA.",
+      "Global Batch targets a 24-hour turnaround at a lower cost than Global Standard."
     ],
     "columns": [
       "Yes",
@@ -875,9 +875,9 @@
     ],
     "correct": [
       0,
-      0,
       1,
-      1
+      1,
+      0
     ],
     "explanation": "Batch types give about 50% savings with a 24-hour target. Data Zone types process only inside the US, EU or APAC zone. Provisioned types reserve capacity in PTUs. Developer deployments are for evaluating fine-tuned models, last 24 hours and have no SLA."
   },
@@ -958,8 +958,8 @@
     "stem": "For each statement about image generation with gpt-image models, select Yes if it is true or No if it is false.",
     "rows": [
       "Generated images are returned as base64 data, not as URLs.",
-      "Prompts and generated images pass through a content filter.",
       "WEBP is a supported output format.",
+      "Prompts and generated images pass through a content filter.",
       "One request can return no more than one image."
     ],
     "columns": [
@@ -968,8 +968,8 @@
     ],
     "correct": [
       0,
-      0,
       1,
+      0,
       1
     ],
     "explanation": "GPT-image models return b64_json only. Prompts and results are moderated. Output formats are PNG (default) and JPEG, not WEBP, and n can be 1 to 10 images per request."
@@ -985,10 +985,10 @@
     "skill": "Text analysis apps",
     "stem": "Which developer tools can an app use to call Azure Language features?",
     "options": [
-      "Only Power BI dashboards",
-      "Only a hosted agent container",
+      "Azure Data Factory pipelines only",
+      "The Speech SDK and the Speech CLI",
       "REST APIs and client libraries, or the Foundry portal",
-      "Only the Speech CLI"
+      "The Foundry portal only; it has no public API"
     ],
     "correct": [
       2
@@ -1007,9 +1007,9 @@
     "stem": "For each statement about Azure Content Understanding in Foundry Tools, select Yes if it is true or No if it is false.",
     "rows": [
       "It offers prebuilt analyzers for scenarios such as tax and contract processing.",
-      "You can create custom analyzers with your own field schema.",
+      "It needs no Foundry resource to use.",
       "It works only with printed documents, not audio or video.",
-      "It needs no Foundry resource to use."
+      "You can create custom analyzers with your own field schema."
     ],
     "columns": [
       "Yes",
@@ -1017,9 +1017,9 @@
     ],
     "correct": [
       0,
-      0,
       1,
-      1
+      1,
+      0
     ],
     "explanation": "Content Understanding has industry prebuilt analyzers and supports custom analyzers. It processes documents, images, audio and video, and it is used through a Foundry resource."
   },
@@ -1034,8 +1034,8 @@
     "skill": "Responsible AI principles",
     "stem": "Match each practice to the responsible AI principle it supports most directly.",
     "rows": [
-      "Testing a speech app with speakers of many accents and speech patterns",
       "Comparing error rates across age and gender groups",
+      "Testing a speech app with speakers of many accents and speech patterns",
       "Stress testing a model with unusual and adversarial inputs"
     ],
     "columns": [
@@ -1044,8 +1044,8 @@
       "Reliability and safety"
     ],
     "correct": [
-      1,
       0,
+      1,
       2
     ],
     "explanation": "Designing for the widest range of users is inclusiveness. Comparing outcomes across sensitive groups is a fairness check. Testing behaviour under unexpected or hostile input is reliability and safety."
@@ -1062,7 +1062,7 @@
     "stem": "A chatbot confidently states a refund policy that the company never had. What is the best way to reduce this?",
     "options": [
       "Raise the temperature so it explores more answers",
-      "Remove the system message so the model is less limited",
+      "Add few-shot examples of polite refund replies",
       "Switch to a model with a bigger context window and keep the prompt",
       "Ground the model by adding the real policy text to the prompt"
     ],
@@ -1168,9 +1168,9 @@
     "skill": "System and user prompts",
     "stem": "A support bot's answers drift away from the company's return policy. Which prompt change is most likely to keep it accurate?",
     "options": [
-      "Tell the model to be confident in every answer",
-      "Ask the model to keep replies under ten words",
-      "Remove the system message so the model can use more of its own general knowledge",
+      "Raise the temperature so it considers more answers",
+      "Switch to a larger model and leave the prompt unchanged",
+      "Add few-shot examples of friendly greetings",
       "Add the policy text to the prompt and tell the model to answer only from it"
     ],
     "correct": [
@@ -1294,9 +1294,9 @@
     "skill": "Visual input",
     "stem": "A vision app passes image links from a storage account that is reachable only through a private endpoint, and the requests fail. Why?",
     "options": [
-      "The model needs a Batch deployment to read stored images",
-      "Only GIF images are supported",
-      "Only GIF images can be read from storage",
+      "The model can't read PNG images from storage",
+      "Image URLs must use the high detail setting",
+      "The request needs a Batch deployment",
       "Image URLs must be publicly accessible"
     ],
     "correct": [
@@ -1462,9 +1462,9 @@
     "skill": "Speech capabilities",
     "stem": "Match each requirement to the speech feature it needs.",
     "rows": [
-      "Read an e-book aloud as an audiobook",
       "Give a live talk in Spanish subtitles while the speaker uses English",
-      "Turn recorded support calls into searchable transcripts"
+      "Turn recorded support calls into searchable transcripts",
+      "Read an e-book aloud as an audiobook"
     ],
     "columns": [
       "Speech to text",
@@ -1472,9 +1472,9 @@
       "Speech translation"
     ],
     "correct": [
-      1,
       2,
-      0
+      0,
+      1
     ],
     "explanation": "Turning text into audio is text to speech. Converting speech in one language into another is speech translation. Producing transcripts from recordings is speech to text."
   },
@@ -1532,8 +1532,8 @@
     "stem": "A client app sends a question and then a follow-up to an agent. What lets the agent answer the follow-up in context?",
     "options": [
       "Creating a new agent version for the follow-up",
-      "Raising the temperature on the second call",
-      "Switching to a different project",
+      "Adding the follow-up to the agent's instructions",
+      "Calling get_openai_client again before the follow-up",
       "Sending both requests in the same conversation"
     ],
     "correct": [
@@ -1617,10 +1617,10 @@
     "skill": "Foundry SDK chat client",
     "stem": "A chat client must remember earlier turns so a follow-up such as \"And what is the capital?\" makes sense. What does the quickstart use to keep that history?",
     "options": [
-      "A new project for each question",
+      "A new agent version for each follow-up",
       "A conversation, passed by its id to each responses.create call",
-      "A separate model deployment that stores each turn of the conversation",
-      "A higher temperature on the follow-up"
+      "A system message rewritten on each turn",
+      "A larger max output tokens value"
     ],
     "correct": [
       1
@@ -1640,8 +1640,8 @@
     "options": [
       "Change temperature or top_p, but not both at once",
       "Always set both to the same value",
-      "Use top_p only for image generation models, never for chat",
-      "Leave temperature at 2 and tune only top_p"
+      "Raise both together so the effect is easier to see",
+      "Set temperature to 0 and top_p to 1 for creative text"
     ],
     "correct": [
       0
@@ -1681,8 +1681,8 @@
     "stem": "Match each app requirement to the Azure Language feature that fits it.",
     "rows": [
       "Find dates, people and places in news text without training",
-      "Extract the company's own part numbers and contract terms",
-      "Work out whether a user wants to book, cancel or change a flight"
+      "Work out whether a user wants to book, cancel or change a flight",
+      "Extract the company's own part numbers and contract terms"
     ],
     "columns": [
       "Custom NER",
@@ -1691,8 +1691,8 @@
     ],
     "correct": [
       1,
-      0,
-      2
+      2,
+      0
     ],
     "explanation": "Prebuilt NER finds standard entity types with no training. Custom NER learns your own entity categories from labeled text. CLU predicts the intent of an utterance."
   },
@@ -1707,10 +1707,10 @@
     "skill": "Audio and video",
     "stem": "A call center wants a summary, the caller's main issue and the sentiment from each recorded call. Which tool fits?",
     "options": [
-      "A Developer deployment of an embedding model for the call audio",
-      "An image generation model with a mask",
+      "Azure Language key phrase extraction on the audio file",
+      "Azure Speech batch transcription alone",
       "Content Understanding with an analyzer for audio",
-      "The Speech CLI text to speech command"
+      "An embedding model deployment"
     ],
     "correct": [
       2
@@ -1749,8 +1749,8 @@
     "skill": "System and user prompts",
     "stem": "Match each prompt to the technique it uses.",
     "rows": [
-      "First list the factual claims, then write a search query for each claim",
       "Return each finding in the format BEHAVIOR(\"reason\")",
+      "First list the factual claims, then write a search query for each claim",
       "Answer only from the following product manual text"
     ],
     "columns": [
@@ -1759,8 +1759,8 @@
       "Provide grounding context"
     ],
     "correct": [
-      0,
       1,
+      0,
       2
     ],
     "explanation": "Splitting work into steps is breaking the task down. Asking for a set format is specifying the output structure. Supplying source text to answer from is grounding."
@@ -1824,20 +1824,20 @@
     "skill": "How generative AI models work",
     "stem": "For each statement about generative AI models, select Yes if it is true or No if it is false.",
     "rows": [
-      "A model can produce fluent text that is factually wrong.",
       "Few-shot examples in a prompt permanently retrain the model.",
       "Rare words are often split into more than one token.",
-      "A model's answers come from looking up a database of facts."
+      "A model's answers come from looking up a database of facts.",
+      "A model can produce fluent text that is factually wrong."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
       1,
       0,
-      1
+      1,
+      0
     ],
     "explanation": "Models can generate fluent but false content, so answers need checking. Examples in a prompt only shape that one request; nothing is retrained. Uncommon words break into several tokens. Models predict text rather than querying a fact database."
   },
@@ -1852,9 +1852,9 @@
     "skill": "Agent tools",
     "stem": "Match each need to the built-in agent tool that fits it.",
     "rows": [
-      "Find this week's public news about a competitor",
       "Answer from the company's uploaded HR handbook",
-      "Plot monthly sales from a spreadsheet the user attaches"
+      "Plot monthly sales from a spreadsheet the user attaches",
+      "Find this week's public news about a competitor"
     ],
     "columns": [
       "Web search",
@@ -1862,9 +1862,9 @@
       "Code interpreter"
     ],
     "correct": [
-      0,
       1,
-      2
+      2,
+      0
     ],
     "explanation": "Current public information needs web search. Answers from your own documents need file search. Computing and charting data needs code interpreter."
   },
@@ -1879,20 +1879,20 @@
     "skill": "Text analysis techniques",
     "stem": "For each statement about text analysis, select Yes if it is true or No if it is false.",
     "rows": [
-      "Language detection tells you which language a passage is written in.",
-      "PII detection can find details such as phone numbers and addresses so they can be redacted.",
+      "Abstractive summaries can only reuse sentences exactly as written.",
       "Sentiment analysis returns a list of every person named in the text.",
-      "Abstractive summaries can only reuse sentences exactly as written."
+      "PII detection can find details such as phone numbers and addresses so they can be redacted.",
+      "Language detection tells you which language a passage is written in."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
-      0,
       1,
-      1
+      1,
+      0,
+      0
     ],
     "explanation": "Language detection identifies the language, and PII detection finds personal details to redact. Listing people is entity recognition. Abstractive summaries write new sentences; extractive ones reuse the original sentences."
   },
@@ -1972,20 +1972,20 @@
     "skill": "Responsible AI principles",
     "stem": "For each statement about the six principles, select Yes if it is true or No if it is false.",
     "rows": [
-      "Microsoft's Responsible AI Standard is built on six principles.",
-      "A system can be fair to every group and still be unreliable.",
       "Transparency requires publishing the model's training data in full.",
-      "Inclusiveness is met once a system works well for the majority of users."
+      "A system can be fair to every group and still be unreliable.",
+      "Inclusiveness is met once a system works well for the majority of users.",
+      "Microsoft's Responsible AI Standard is built on six principles."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
+      1,
       0,
       1,
-      1
+      0
     ],
     "explanation": "The Standard rests on six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency and accountability. The principles are separate, so meeting one does not meet another. Transparency is about useful explanation, not publishing all data, and inclusiveness reaches beyond the majority."
   },
@@ -2045,7 +2045,7 @@
       "Detecting the language of a support ticket",
       "Sorting last month's invoices by their total amount, highest first",
       "Counting how many times a word appears",
-      "Drafting a first version of a customer email from bullet points"
+      "Writing a reply to a customer review in the brand's voice"
     ],
     "correct": [
       3
@@ -2063,9 +2063,9 @@
     "skill": "Deploying a model",
     "stem": "For each statement about deploying and calling models in Foundry, select Yes if it is true or No if it is false.",
     "rows": [
-      "The model parameter in responses.create names the deployment to call.",
       "The same project endpoint is used for model calls and agents.",
       "Every model in the catalog must be fine-tuned before it can be deployed.",
+      "The model parameter in responses.create names the deployment to call.",
       "A deployment is a copy of the model that you must host on your own servers."
     ],
     "columns": [
@@ -2074,8 +2074,8 @@
     ],
     "correct": [
       0,
-      0,
       1,
+      0,
       1
     ],
     "explanation": "The model argument is the deployment name, such as gpt-5-mini, and one project endpoint serves models and agents. Catalog models deploy as they are, and models sold by Azure run on Azure, not your servers."
@@ -2091,9 +2091,9 @@
     "skill": "Visual input",
     "stem": "A developer sends 14 photos in one chat request to a vision-enabled model. What happens?",
     "options": [
-      "The model switches to image generation",
+      "The model reads all 14 at low detail only",
+      "The images are processed in two batches of seven",
       "Only the first image is read and the other thirteen are silently ignored",
-      "All 14 are merged into one collage automatically",
       "The request is over the limit of 10 images per chat request"
     ],
     "correct": [
@@ -2199,8 +2199,8 @@
     "stem": "For each statement about Foundry agents, select Yes if it is true or No if it is false.",
     "rows": [
       "A voice-based prompt agent connects through Voice Live for spoken conversations.",
-      "Agent versions let you roll back to an earlier definition.",
       "A prompt agent requires you to manage its container compute.",
+      "Agent versions let you roll back to an earlier definition.",
       "Agents can only use models made by Microsoft."
     ],
     "columns": [
@@ -2209,8 +2209,8 @@
     ],
     "correct": [
       0,
-      0,
       1,
+      0,
       1
     ],
     "explanation": "Voice-based prompt agents use Voice Live. Versions are snapshotted so you can roll back. Prompt agents need no compute to manage, and Agent Service works with many catalog models, such as GPT-4o, Llama and DeepSeek."
@@ -2270,9 +2270,9 @@
     "skill": "How generative AI models work",
     "stem": "What makes generative AI different from a model that only classifies input?",
     "options": [
-      "It can only answer yes or no questions",
-      "It can only work with numbers stored in structured tables",
-      "It needs no training data at all",
+      "It can only answer questions about its training data",
+      "It needs labeled examples in every prompt",
+      "It labels input with categories it learned in training",
       "It creates new content: text, images or code"
     ],
     "correct": [
@@ -2375,9 +2375,9 @@
     "skill": "Agent components",
     "stem": "What is an agent in Microsoft Foundry?",
     "options": [
-      "A storage account for prompts",
-      "A dashboard in the portal that charts each model's usage and cost over time",
-      "A list of approved deployment regions",
+      "A saved prompt template that fills in user variables",
+      "A model deployment with a fixed system message and no tools",
+      "A workflow of fixed steps that always runs in the same order",
       "A model paired with instructions and tools that can reason and act"
     ],
     "correct": [
@@ -2396,10 +2396,10 @@
     "skill": "Visual input",
     "stem": "Which image formats can be sent to a vision-enabled chat model?",
     "options": [
-      "Only BMP and TIFF files, with GIF and WEBP refused",
-      "Only RAW camera files",
+      "JPEG and PNG only",
+      "JPEG, PNG and animated GIF (every frame)",
       "JPEG, PNG, GIF (first frame only) and WEBP",
-      "Only SVG"
+      "JPEG, PNG, BMP and TIFF"
     ],
     "correct": [
       2
@@ -2417,10 +2417,10 @@
     "skill": "Content Understanding",
     "stem": "What does Azure Content Understanding in Foundry Tools turn unstructured content into?",
     "options": [
-      "A trained image generation model for each document type",
-      "A new Azure subscription",
+      "A fine-tuned model for each document type",
+      "A translated copy of each file",
       "Output in a user-defined format, like a field schema",
-      "A spoken audio file"
+      "A searchable vector index that the service hosts for you"
     ],
     "correct": [
       2
@@ -2522,9 +2522,9 @@
     "skill": "System and user prompts",
     "stem": "Which instruction follows Microsoft's advice to be specific in a prompt?",
     "options": [
-      "Tell me about the email",
-      "Make the email better",
-      "Read the following email carefully and do something useful with it",
+      "Write something about this email for a manager",
+      "Tell me what this email says in a useful way",
+      "Summarize this email",
       "Summarize this email in three bullet points for a manager"
     ],
     "correct": [
@@ -2690,10 +2690,10 @@
     "skill": "System and user prompts",
     "stem": "Why might a prompt ask the model to cite which source passage supports each statement?",
     "options": [
-      "Citations let the model skip the system message and answer more freely each time",
+      "Citations let the model use sources outside the prompt",
       "Citations make grounded statements more likely and errors easier to spot",
-      "Citations make the model answer faster",
-      "Citations stop the model from using tokens"
+      "Citations stop the model from ever making errors",
+      "Citations reduce the number of tokens in the reply"
     ],
     "correct": [
       1
@@ -2732,10 +2732,10 @@
     "skill": "Visual input",
     "stem": "An app has an image saved on the local disk, not on the web. How can it send that image to a vision-enabled model?",
     "options": [
+      "Pass the local file path as the image URL",
       "Upload it to the model's fine-tuning job",
-      "Paste its file path into the prompt",
       "Encode it as base64 in a data URL",
-      "Convert it to an audio file"
+      "Send it as the system message text"
     ],
     "correct": [
       2
@@ -2753,10 +2753,10 @@
     "skill": "Images",
     "stem": "A field team photographs equipment nameplates and needs the model number and serial number as data. Which Foundry tool fits?",
     "options": [
-      "Batch transcription",
+      "An embedding model that indexes the photos",
       "A gpt-image edit request with a mask over the nameplate",
       "Content Understanding analyzing the images",
-      "A text to speech avatar"
+      "Azure Language named entity recognition on the photos"
     ],
     "correct": [
       2
@@ -2921,9 +2921,9 @@
     "skill": "Lightweight extraction app",
     "stem": "Which output formats does Content Understanding offer for its results?",
     "options": [
-      "MP3 audio and SSML",
-      "Excel workbooks with macros and plain CSV files only",
-      "WEBP images and GIFs",
+      "HTML for search and XML matching your schema",
+      "HTML pages for search and XML documents that match your schema",
+      "Plain text only, with no field values",
       "Markdown for search and JSON matching your schema"
     ],
     "correct": [
@@ -3215,9 +3215,9 @@
     "skill": "Publishing agents",
     "stem": "What does publishing an agent give a client application?",
     "options": [
-      "A lower token price",
-      "A new Azure subscription",
-      "A copy of the model's weights",
+      "A higher tokens-per-minute quota",
+      "A new Foundry project",
+      "A fine-tuned copy of the model",
       "A stable endpoint it can call"
     ],
     "correct": [
@@ -3236,10 +3236,10 @@
     "skill": "Creating visual output",
     "stem": "An image request is refused with a content_policy_violation error. What caused this?",
     "options": [
-      "The deployment hit its default rate limit of five images a minute",
+      "The requested size isn't supported by the model",
       "The safety system filtered the prompt or the image",
-      "The prompt was written in lowercase",
-      "The deployment ran out of disk space"
+      "The mask didn't match the image's dimensions",
+      "The deployment hit its default rate limit of five images a minute"
     ],
     "correct": [
       1
@@ -3300,8 +3300,8 @@
     "stem": "Why might a team choose the cascaded voice design over native speech-to-speech?",
     "options": [
       "It offers more text model and voice choices and more control",
-      "It needs no speech recognition step",
-      "It works without any model deployment",
+      "It keeps the speaker's tone and emotion in the model's input",
+      "It needs only one model deployment",
       "It always has lower end-to-end latency than a native realtime model"
     ],
     "correct": [
@@ -3344,9 +3344,9 @@
     "stem": "Which source can Content Understanding extract information from?",
     "options": [
       "Documents, images, audio and video",
-      "Only live phone calls",
-      "Only typed text files",
-      "Only scanned PDF documents and photos of forms"
+      "Audio and video only",
+      "Documents and images only",
+      "Documents, images and audio, but not video"
     ],
     "correct": [
       0
@@ -3433,8 +3433,8 @@
     "skill": "Confidence and grounding",
     "stem": "For each statement about confidence scores and grounding, select Yes if it is true or No if it is false.",
     "rows": [
-      "Low confidence fields can be routed to a person for review.",
       "Grounding shows where a value came from in the source.",
+      "Low confidence fields can be routed to a person for review.",
       "A confidence score of 0.98 means the value was certainly correct.",
       "Grounding is only available for image generation."
     ],
@@ -3484,8 +3484,8 @@
     "rows": [
       "Text analytics for health is a prebuilt feature that doesn't need a custom model.",
       "Custom text classification lets you train a model on your own categories.",
-      "Key phrase extraction must be trained on labeled examples first.",
-      "Language detection needs a speech recording as its input."
+      "Language detection needs a speech recording as its input.",
+      "Key phrase extraction must be trained on labeled examples first."
     ],
     "columns": [
       "Yes",
@@ -3510,9 +3510,9 @@
     "skill": "Responsible AI principles",
     "stem": "Match each concern to the responsible AI principle it falls under.",
     "rows": [
-      "Customers can't tell why the system refused their application",
       "Nobody in the company owns the decision to launch the model",
-      "Prompts sent to the model include customers' health records"
+      "Prompts sent to the model include customers' health records",
+      "Customers can't tell why the system refused their application"
     ],
     "columns": [
       "Transparency",
@@ -3520,9 +3520,9 @@
       "Privacy and security"
     ],
     "correct": [
-      0,
       1,
-      2
+      2,
+      0
     ],
     "explanation": "Not understanding a decision is a transparency issue. No owner for the launch is an accountability gap. Sensitive personal data in prompts is a privacy and security concern."
   },
@@ -3537,8 +3537,8 @@
     "skill": "AI workloads",
     "stem": "Match each scenario to the text analysis technique it needs.",
     "rows": [
-      "Redact credit card and phone numbers from chat logs",
       "Route each email to the support team that reads its language",
+      "Redact credit card and phone numbers from chat logs",
       "Recap a two-hour meeting transcript in a few paragraphs"
     ],
     "columns": [
@@ -3547,8 +3547,8 @@
       "Summarization"
     ],
     "correct": [
-      0,
       1,
+      0,
       2
     ],
     "explanation": "Finding and redacting personal details is PII detection. Routing by language needs language detection. Condensing a long transcript is summarization."
@@ -3585,8 +3585,8 @@
     "skill": "Agent types",
     "stem": "Match each team to the way of building that fits it.",
     "rows": [
-      "Wants a quick internal FAQ agent with nothing to host",
       "Has a custom multi-agent framework to run in a container",
+      "Wants a quick internal FAQ agent with nothing to host",
       "Keeps the agent definition inside its own app code"
     ],
     "columns": [
@@ -3595,8 +3595,8 @@
       "Responses API from own code"
     ],
     "correct": [
-      0,
       1,
+      0,
       2
     ],
     "explanation": "Prompt agents need no code or infrastructure. Hosted agents run your own code as a container. Calling the Responses API directly builds an ephemeral agent defined in your app."
@@ -3612,8 +3612,8 @@
     "skill": "Visual input",
     "stem": "For each statement about sending images to a multimodal model, select Yes if it is true or No if it is false.",
     "rows": [
-      "A single message can combine text and an image.",
       "High detail processes extra 512x512 segments and uses more tokens.",
+      "A single message can combine text and an image.",
       "Image input requires an image generation model.",
       "Low detail always gives more accurate fine text reading than high."
     ],
@@ -3640,18 +3640,18 @@
     "skill": "Field extraction",
     "stem": "Match each field in a video analyzer to the method that produces it.",
     "rows": [
-      "The type of chart shown: bar, line or pie",
-      "A one-paragraph description of each scene",
+      "A list of key moments in the presenter's own words",
       "Whether the speaker sounds calm or upset",
-      "A list of key moments in the presenter's own words"
+      "The type of chart shown: bar, line or pie",
+      "A one-paragraph description of each scene"
     ],
     "columns": [
       "Classify",
       "Generate"
     ],
     "correct": [
-      0,
       1,
+      0,
       0,
       1
     ],
@@ -3761,20 +3761,20 @@
     "skill": "System and user prompts",
     "stem": "For each statement about writing prompts, select Yes if it is true or No if it is false.",
     "rows": [
-      "Few-shot examples in a chat prompt are often written as sample user and assistant turns.",
+      "Markdown or XML in a prompt confuses models trained on web content.",
       "The order of information in a prompt can change the answer.",
       "A clever prompt removes the need to check the model's answers.",
-      "Markdown or XML in a prompt confuses models trained on web content."
+      "Few-shot examples in a chat prompt are often written as sample user and assistant turns."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
+      1,
       0,
       1,
-      1
+      0
     ],
     "explanation": "Few-shot examples are commonly given as sample turns after the system message, and order matters. Even good prompts need answers checked. Microsoft suggests Markdown or XML because models saw a lot of it."
   },
@@ -3789,9 +3789,9 @@
     "skill": "Tracing and evaluation",
     "stem": "Why would you run evaluations on an agent?",
     "options": [
-      "To move the agent to another region",
-      "To give the agent more tools",
-      "To lower the price the project pays for every input and output token",
+      "To roll the agent back to an earlier version",
+      "To block harmful content in the agent's replies",
+      "To see each tool call the agent made during one run",
       "To measure answer quality and catch regressions between versions"
     ],
     "correct": [
@@ -3852,9 +3852,9 @@
     "skill": "Deployment options",
     "stem": "Match each requirement to the deployment type that fits it.",
     "rows": [
-      "Lowest price and newest models, no residency rule",
+      "Discounted overnight jobs processed inside the EU data zone",
       "Reserved throughput with processing inside one Azure geography",
-      "Discounted overnight jobs processed inside the EU data zone"
+      "Lowest price and newest models, no residency rule"
     ],
     "columns": [
       "Global Standard",
@@ -3862,9 +3862,9 @@
       "Data Zone Batch"
     ],
     "correct": [
-      0,
+      2,
       1,
-      2
+      0
     ],
     "explanation": "Global Standard is the default starting point. Regional Provisioned reserves PTUs within an Azure geography. Data Zone Batch gives batch savings with processing inside a data zone."
   },
@@ -3880,8 +3880,8 @@
     "stem": "Match each scenario to the Azure Speech feature it needs.",
     "rows": [
       "Show live captions during a meeting",
-      "Let a tourist hear a guide's English in French",
-      "Score a learner reading a paragraph aloud"
+      "Score a learner reading a paragraph aloud",
+      "Let a tourist hear a guide's English in French"
     ],
     "columns": [
       "Real-time transcription",
@@ -3890,8 +3890,8 @@
     ],
     "correct": [
       0,
-      1,
-      2
+      2,
+      1
     ],
     "explanation": "Live captions use real-time transcription. Hearing speech in another language is speech translation. Scoring accuracy and fluency is pronunciation assessment."
   },
@@ -3929,8 +3929,8 @@
     "rows": [
       "Speech translation can produce translated speech as well as translated text.",
       "Reading invoice totals from scanned files is an information extraction task.",
-      "Key phrase extraction writes a new summary in its own words.",
-      "Object detection is a speech workload."
+      "Object detection is a speech workload.",
+      "Key phrase extraction writes a new summary in its own words."
     ],
     "columns": [
       "Yes",
@@ -3955,10 +3955,10 @@
     "skill": "Deploying a model",
     "stem": "Which new resource model replaced the hub plus Azure OpenAI plus Azure AI Services setup in Microsoft Foundry?",
     "options": [
-      "A virtual machine running the model",
-      "A separate Azure subscription for each model",
+      "A hub resource that holds several Foundry resources",
+      "A separate Azure OpenAI resource for each model",
       "A single Foundry resource with projects",
-      "One storage account per model"
+      "An Azure Machine Learning workspace per project"
     ],
     "correct": [
       2
@@ -3976,19 +3976,19 @@
     "skill": "Agent tools",
     "stem": "For each statement about agent tools, select Yes if it is true or No if it is false.",
     "rows": [
-      "Web search lets an agent use current public information.",
+      "An agent can use only one tool in its lifetime.",
       "Custom functions can be added as agent tools.",
-      "File search runs Python code on uploaded files.",
-      "An agent can use only one tool in its lifetime."
+      "Web search lets an agent use current public information.",
+      "File search runs Python code on uploaded files."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
-      0,
       1,
+      0,
+      0,
       1
     ],
     "explanation": "Web search brings in current public information, and functions, OpenAPI specs and MCP servers add custom tools. Running code is code interpreter's job. An agent can have many tools."
@@ -4005,8 +4005,8 @@
     "stem": "Match each image request to the parameter that controls it.",
     "rows": [
       "Make the image 1536x1024",
-      "Use the high setting for a sharper result",
-      "Return a JPEG instead of a PNG"
+      "Return a JPEG instead of a PNG",
+      "Use the high setting for a sharper result"
     ],
     "columns": [
       "size",
@@ -4015,8 +4015,8 @@
     ],
     "correct": [
       0,
-      1,
-      2
+      2,
+      1
     ],
     "explanation": "size sets the dimensions, quality sets low, medium or high, and output_format chooses PNG or JPEG."
   },
@@ -4094,20 +4094,20 @@
     "skill": "Responsible AI principles",
     "stem": "For each statement about responsible AI practices, select Yes if it is true or No if it is false.",
     "rows": [
-      "Guardrails that block harmful content support reliability and safety.",
+      "Collecting more personal data than needed supports privacy.",
       "Removing a human review step always improves accountability.",
       "Explaining why a loan was declined supports transparency.",
-      "Collecting more personal data than needed supports privacy."
+      "Guardrails that block harmful content support reliability and safety."
     ],
     "columns": [
       "Yes",
       "No"
     ],
     "correct": [
-      0,
+      1,
       1,
       0,
-      1
+      0
     ],
     "explanation": "Blocking harmful output keeps a system safe. Human review keeps people answerable, so removing it weakens accountability. Explaining decisions is transparency. Privacy favours collecting only the data a task needs."
   },
@@ -4143,8 +4143,8 @@
     "skill": "Foundry SDK chat client",
     "stem": "Match each piece of the Python quickstart to what it does.",
     "rows": [
-      "Signs the app in with the identity from az login",
       "Connects to the Foundry project at its endpoint",
+      "Signs the app in with the identity from az login",
       "Sends the input to the model and returns a response"
     ],
     "columns": [
@@ -4153,8 +4153,8 @@
       "responses.create"
     ],
     "correct": [
-      1,
       0,
+      1,
       2
     ],
     "explanation": "DefaultAzureCredential supplies the identity, AIProjectClient connects to the project endpoint, and responses.create on the OpenAI client sends the prompt to the model."
@@ -4170,10 +4170,10 @@
     "skill": "Agent security",
     "stem": "Which feature lets each agent reach other resources securely without sharing credentials?",
     "options": [
-      "A public storage account",
+      "A Data Zone Standard deployment",
       "A Microsoft Entra agent identity",
-      "A shared API key in the instructions",
-      "A custom neural voice"
+      "A toolbox shared by the agents",
+      "An API key saved in a project connection"
     ],
     "correct": [
       1
@@ -4191,10 +4191,10 @@
     "skill": "Lightweight vision app",
     "stem": "Which authentication approach does Microsoft recommend for an image app calling Foundry, instead of API keys?",
     "options": [
-      "A shared password in the prompt",
+      "A shared access signature token",
       "Microsoft Entra ID, for example a managed identity",
-      "Anonymous access with no credentials",
-      "An API key written into the app's source code for convenience"
+      "A connection string with the account key",
+      "An API key stored in an environment variable"
     ],
     "correct": [
       1
@@ -4236,9 +4236,9 @@
     "stem": "Why can the same prompt give a slightly different answer each time?",
     "options": [
       "The model samples from likely next tokens, so randomness is built in",
-      "The prompt is translated before it reaches the model",
-      "Azure sends each request to a different randomly chosen model in the catalog",
-      "The model's training data changes between requests"
+      "Each request is routed to a different version of the model",
+      "The deployment caches old answers and mixes them in",
+      "The model learns from each request and changes its weights"
     ],
     "correct": [
       0
@@ -4382,10 +4382,10 @@
     "skill": "Content Understanding",
     "stem": "Where do the generative models that power Content Understanding's field extraction come from?",
     "options": [
-      "A model hidden inside each PDF",
-      "A model downloaded to the user's phone",
+      "A fixed built-in model that you can't change",
+      "The prebuilt models of Azure Language",
       "Your own Foundry model deployments",
-      "The Speech service's neural voices"
+      "A model you must fine-tune for each analyzer"
     ],
     "correct": [
       2

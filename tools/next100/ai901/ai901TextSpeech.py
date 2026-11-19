@@ -28,7 +28,7 @@ ITEMS = [
     S(1, 2, "Text analysis apps",
       "Which developer tools can an app use to call Azure Language features?",
       "REST APIs and client libraries, or the Foundry portal",
-      ["Only the Speech CLI", "Only Power BI dashboards", "Only a hosted agent container"],
+      ["The Foundry portal only; it has no public API", "Azure Data Factory pipelines only", "The Speech SDK and the Speech CLI"],
       "Azure Language can be used through the Foundry portal, REST APIs and client libraries, and its features are also offered as tools in the Azure Language MCP server."),
 
     # ---- Test 2 ----
@@ -94,7 +94,7 @@ ITEMS = [
     S(0, 3, "Spoken prompts",
       "Why might a team choose the cascaded voice design over native speech-to-speech?",
       "It offers more text model and voice choices and more control",
-      ["It always has lower end-to-end latency than a native realtime model", "It needs no speech recognition step", "It works without any model deployment"],
+      ["It always has lower end-to-end latency than a native realtime model", "It keeps the speaker's tone and emotion in the model's input", "It needs only one model deployment"],
       "The cascaded design offers broader text-model and Azure voice choices and explicit control over transcription and turn detection, but each stage adds latency."),
     YN(0, 2, "Text analysis apps",
        "For each statement about Azure Language, select Yes if it is true or No if it is false.",

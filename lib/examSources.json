@@ -39,6 +39,11 @@
   "https://rmn.ph/iskedyul-ng-afpsat-sa-rehiyon-dos-inanunsyo-ng-afp",
   "https://supertutor.ph/resources/blog/gov-eligibility/afpsat-2026-complete-guide/"
  ],
+ "afsp": [
+  "https://www.irs.gov/pub/irs-pdf/p6079.pdf",
+  "https://www.irs.gov/pub/irs-pdf/p6012.pdf",
+  "https://www.irs.gov/pub/irs-pdf/p6026.pdf"
+ ],
  "agniveer": [
   "https://joinindianarmy.nic.in",
   "https://www.py.gov.in/sites/default/files/indianarmy01042025pr.pdf",
@@ -117,6 +122,16 @@
   "https://www.arrt.org/news/article/2026/05/01/updated-radiography-documents-2026",
   "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/99c55d51-15bb-4a87-89f3-d6e7013d8a74/Radiography_Content_Specifications_2027.pdf",
   "https://www.arrt.org/pages/arrt-reference-documents/by-document-type/examination-content-specifications"
+ ],
+ "ascpht": [
+  "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_ht_htl_content_guideline.pdf",
+  "https://www.ascp.org/boc/earn-a-credential/examination-process/about-the-examination",
+  "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1048"
+ ],
+ "ascpmls": [
+  "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf",
+  "https://www.ascp.org/boc/earn-a-credential/examination-process/about-the-examination",
+  "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-610/subpart-F/section-610.53"
  ],
  "ascpmlt": [
   "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mlt_content_guideline.pdf",
@@ -530,6 +545,11 @@
   "https://riversideinsights.com/hubfs/CitC/Overview_of_CogAT_for_Parents.pdf",
   "https://www.riversideinsights.com/cogat"
  ],
+ "contractorlaw": [
+  "https://test-takers.psiexams.com/api/content/bulletin/972",
+  "https://test-takers.psiexams.com/api/content/bulletin/10625",
+  "https://www.nascla.org/state-business-and-law-exams"
+ ],
  "cpaaud": [
   "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
   "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf",
@@ -705,11 +725,21 @@
   "https://www.boe.es/datosabiertos/api/boe/sumario/20260710",
   "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/"
  ],
+ "esthetician": [
+  "https://prov-testing.github.io/nic_cib/esthetics_national_theory_english.html",
+  "https://nictesting.org/nic-exam-types/",
+  "https://llr.sc.gov/cosmo/examins.aspx"
+ ],
  "esvigilante": [
   "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-813",
   "https://boe.es/boe/dias/2026/01/14/pdfs/BOE-A-2026-813.pdf",
   "https://redopositor.com/blog/es-oposiciones-proves-seleccio-per-vigilant-seguretat-ministerio-del-interior-2026/",
   "https://www.boe.es/buscar/act.php?id=BOE-A-1995-608"
+ ],
+ "excpt": [
+  "https://info.nhanow.com/hubfs/Test%20Plans/2023%20ExCPT%20Test%20Plan.pdf",
+  "https://info.nhanow.com/mediacenter/coming-soon-new-excpt-certification-exam-study-materials",
+  "https://www.nhanow.com/certification/nha-certifications/certified-pharmacy-technician-(cpht"
  ],
  "fihunt": [
   "https://riista.fi/wp-content/uploads/2026/02/OHJE_metsastajatutkinto_2026.pdf",
@@ -981,6 +1011,11 @@
   "https://www.admission.org/assessments/isee/about",
   "https://www.admission.org/assessments/isee/preparation"
  ],
+ "istqb": [
+  "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
+  "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+  "https://istqb.org/news/"
+ ],
  "itceli": [
   "https://cvcl.unistrapg.it/pagine/esami-celi-generici",
   "https://cvcl.unistrapg.it/pagine/esami-celi-immigrati",
@@ -1165,6 +1200,11 @@
   "https://support.nasm.org/how-many-questions-are-on-the-cpt-exam-and-how-long-do-i-have-to-complete-it",
   "https://support.nasm.org/how-many-attempts-am-i-provided-for-my-nasm-personal-trainer-certificate-exam-and-what-is-the-passing-score",
   "https://www.nasm.org/docs/pdf/cpt7-nasm-exam-blueprint.pdf"
+ ],
+ "natecore": [
+  "https://natex.org/wp-content/uploads/2022/06/Core-KATE-Final.pdf",
+  "https://natex.org/technician/take-an-exam/kate",
+  "https://natex.org/technician/take-an-exam/traditional-pathway"
  ],
  "nbdhe": [
   "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/nbdhe_candidate_guide.pdf",
@@ -1503,6 +1543,13 @@
   "https://qababoard.com/pages/job-task-analysis-for-abat-certification/",
   "https://qababoard.com/pages/?p=8977",
   "https://qababoard.com/pages/?document=abat-candidate-handbook"
+ ],
+ "r410a": [
+  "https://www.escogroup.org/Training/R410A.aspx",
+  "https://www.escogroup.org/Certifications/Specialty.aspx",
+  "https://www.escogroup.org/practice/",
+  "https://www.ecfr.gov/current/title-40/section-84.54",
+  "https://www.ecfr.gov/current/title-40/section-84.116"
  ],
  "rajpolice": [
   "https://police.rajasthan.gov.in",

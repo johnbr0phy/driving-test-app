@@ -19,6 +19,7 @@ export function usePurchaseReturn(): { justPurchased: boolean; dismiss: () => vo
   const pathname = usePathname();
   const { user } = useAuth();
   const setPremiumStatus = useStore((s) => s.setPremiumStatus);
+  const loadedUid = useStore((s) => s.loadedUid);
   const [justPurchased, setJustPurchased] = useState(false);
 
   useEffect(() => {
@@ -29,7 +30,8 @@ export function usePurchaseReturn(): { justPurchased: boolean; dismiss: () => vo
       router.replace(pathname);
       return;
     }
-    if (!sessionId || success !== "true" || !user?.uid) return;
+    // Only once this account has loaded, or the load would undo the flag.
+    if (!sessionId || success !== "true" || !user?.uid || loadedUid !== user.uid) return;
 
     let cancelled = false;
     (async () => {
@@ -59,7 +61,7 @@ export function usePurchaseReturn(): { justPurchased: boolean; dismiss: () => vo
     return () => {
       cancelled = true;
     };
-  }, [params, user?.uid, setPremiumStatus, router, pathname]);
+  }, [params, user?.uid, loadedUid, setPremiumStatus, router, pathname]);
 
   return { justPurchased, dismiss: () => setJustPurchased(false) };
 }

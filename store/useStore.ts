@@ -47,7 +47,6 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
     currentTests?: Record<string, { answers?: Record<string, unknown> }>;
     trainingAnswerHistory?: unknown[];
     selectedState?: string | null;
-    subscription?: { isPremium?: boolean };
   };
   const hasCompletedTests = (d.completedTests?.length ?? 0) > 0;
   const hasTestAttempts = (d.testAttempts?.length ?? 0) > 0;
@@ -60,7 +59,9 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
   );
   const hasAnswerHistory = (d.trainingAnswerHistory?.length ?? 0) > 0;
   const hasSelectedState = !!d.selectedState;
-  const hasPremium = d.subscription?.isPremium === true;
+  // Premium alone is not progress: an account whose only data is a purchase
+  // (a guest checkout just made it, or bought before practising) takes the
+  // guest's progress without asking. Saves never write subscription.
   return (
     hasCompletedTests ||
     hasTestAttempts ||
@@ -68,8 +69,7 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
     hasTrainingSets ||
     hasInProgressTests ||
     hasAnswerHistory ||
-    hasSelectedState ||
-    hasPremium
+    hasSelectedState
   );
 }
 
@@ -1427,6 +1427,15 @@ export const useStore = create<AppState>()(
         // we're about to push the local guest state up — there's no remote
         // record to wait on, and gated UI shouldn't block.
         set({ userId, isGuest: false, firestoreLoaded: true, loadedUid: userId });
+        // The account may already hold a purchase (a guest checkout, or bought
+        // before practising): show it. Saves never write subscription.
+        try {
+          const snap = await getDoc(doc(db, 'users', userId));
+          const sub = snap.data()?.subscription;
+          if (sub?.isPremium === true) set({ subscription: sub });
+        } catch (error) {
+          console.error('Reading the account\'s purchase failed:', error);
+        }
         // Save all existing guest progress to Firestore
         await get().saveToFirestore();
       },

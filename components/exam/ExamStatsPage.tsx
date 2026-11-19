@@ -90,7 +90,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   // state version, since the analytics keys allow no hyphens).
   const paywallLocation = `${source.variantOf ?? source.id}_stats`;
 
-  const handleUpgrade = () => startCheckout({ location: paywallLocation, returnPath: pathname });
+  const handleUpgrade = () => startCheckout({ location: paywallLocation, returnPath: activeTab === "community" ? `${pathname}?tab=community` : pathname });
 
   // Redirect guests to signup (Common Mistakes is open to them)
   const wantsCommunity = activeTab === "community";

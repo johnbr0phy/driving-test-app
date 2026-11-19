@@ -30,10 +30,11 @@ const authErr = code => Object.assign(new Error(code), { code });
 const auth = {
   verifyIdToken: async t => { const u = users.get(t.replace('tok-', '')); if (!u) throw authErr('auth/argument-error'); return { uid: u.uid, email: u.email }; },
   getUserByEmail: async email => { await tick(); for (const u of users.values()) if (u.email === email.toLowerCase()) return u; throw authErr('auth/user-not-found'); },
-  createUser: async ({ email }) => {
+  createUser: async ({ uid, email }) => {
     await tick();
+    if (uid && users.has(uid)) throw authErr('auth/uid-already-exists');
     for (const u of users.values()) if (u.email === email) throw authErr('auth/email-already-exists');
-    const u = { uid: `u${++uidSeq}`, email, providerData: [], metadata: { creationTime: new Date().toUTCString() } };
+    const u = { uid: uid ?? `u${++uidSeq}`, email, providerData: [], metadata: { creationTime: new Date().toUTCString() } };
     users.set(u.uid, u); return u;
   },
   getUser: async uid => { const u = users.get(uid); if (!u) throw authErr('auth/user-not-found'); return u; },
@@ -54,9 +55,10 @@ const stripe = {
     retrieve: async id => { const s = sessions.get(id); if (!s) throw new Error('No such checkout.session'); return s; },
   } },
   webhooks: { constructEvent: () => event },
+  refunds: { create: async (p, o) => { refunds.push({ ...p, key: o?.idempotencyKey }); return { id: 're_1' }; } },
   paymentIntents: { retrieve: async () => ({}) },
 };
-let receipts = [];
+let receipts = [], refunds = [], cookie = '';
 
 const oldLoad = Module._load;
 let checkout, webhook, guestSession, verify;
@@ -76,11 +78,16 @@ try {
 } finally { Module._load = oldLoad; }
 
 const { NextRequest } = require('next/server');
-const post = (fn, path, body, token) => fn(new NextRequest(`https://www.tigertest.io${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}) }, body: JSON.stringify(body) }));
+const post = (fn, path, body, token, cookieHeader) => fn(new NextRequest(`https://www.tigertest.io${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}), ...(cookieHeader ? { cookie: cookieHeader } : {}) }, body: JSON.stringify(body) }));
 const json = async r => ({ status: r.status, body: await r.json() });
 
 async function startGuest(body = {}) {
-  const r = await json(await post(checkout, '/api/stripe/checkout', { location: 'stats_page', returnPath: '/cdl/stats', ...body }));
+  const res = await post(checkout, '/api/stripe/checkout', { location: 'stats_page', returnPath: '/cdl/stats', ...body });
+  const set = res.headers.get('set-cookie') || '';
+  assert.match(set, /tt-guest-checkout=[^;]+;.*HttpOnly/i);
+  assert.match(set, /Path=\/api\/stripe/);
+  cookie = set.split(';')[0];
+  const r = await json(res);
   assert.equal(r.status, 200, JSON.stringify(r.body));
   return [...sessions.keys()].pop();
 }
@@ -93,11 +100,11 @@ const fireWebhook = async (id, type = 'checkout.session.completed') => {
   event = { id: `evt_${id}_${type}`, type, data: { object: sessions.get(id) } };
   return json(await webhook(new NextRequest('https://www.tigertest.io/api/stripe/webhook', { method: 'POST', headers: { 'stripe-signature': 's' }, body: '{}' })));
 };
-const back = async id => json(await post(guestSession, '/api/stripe/guest-session', { sessionId: id }));
+const back = async (id, c = cookie) => json(await post(guestSession, '/api/stripe/guest-session', { sessionId: id }, undefined, c));
 const verifyAs = async (id, uid) => json(await post(verify, '/api/stripe/verify-purchase', { sessionId: id }, `tok-${uid}`));
 const premium = uid => rows.get(`users/${uid}`)?.subscription?.isPremium === true;
 
-beforeEach(() => { rows.clear(); users = new Map(); sessions.clear(); created = []; receipts = []; });
+beforeEach(() => { rows.clear(); users = new Map(); sessions.clear(); created = []; receipts = []; refunds = []; cookie = ''; });
 
 // ---- scenarios ----------------------------------------------------------
 test('guest checkout: no customer, Stripe makes one, metadata has no userId', async () => {
@@ -106,6 +113,8 @@ test('guest checkout: no customer, Stripe makes one, metadata has no userId', as
   assert.equal(p.customer, undefined);
   assert.equal(p.customer_creation, 'always');
   assert.deepEqual([p.metadata.guest, p.metadata.userId, p.metadata.email], ['1', undefined, undefined]);
+  assert.match(p.metadata.guestKey, /^[0-9a-f]{64}$/);
+  assert.ok(!cookie.includes(p.metadata.guestKey), 'the cookie holds the key, the metadata only its hash');
   assert.match(p.success_url, /\/cdl\/stats\?session_id=\{CHECKOUT_SESSION_ID\}&success=true$/);
   assert.ok(id);
 });
@@ -134,8 +143,9 @@ test('new email, webhook first: account made, Premium on, buyer signed in, verif
   assert.equal(rows.get(`payments/pi_${id}`).guestCheckout, 'new_account');
   assert.equal(receipts.length, 1);
   assert.match(receipts[0].payload.html, /new@example\.com/);
+  assert.match(u.uid, /^gc_/);
   const r = await back(id);
-  assert.deepEqual([r.body.status, r.body.customToken], ['sign_in', `custom-${u.uid}`]);
+  assert.deepEqual([r.body.status, r.body.customToken, r.body.uid], ['sign_in', `custom-${u.uid}`, u.uid]);
   assert.equal((await verifyAs(id, u.uid)).body.isPremium, true);
 });
 
@@ -193,16 +203,58 @@ test('attacker pays with a victim\'s Google-only email: never signed in to it', 
   assert.ok(premium(victim.uid));
 });
 
-test('second guest purchase on an account an earlier guest checkout made but never signed in to', async () => {
-  const a = await startGuest(); pay(a, 'twice@example.com');
+test('second guest purchase on an account an earlier guest checkout made: Premium only, no sign-in, refunded', async () => {
+  const a = await startGuest(); const cookieA = cookie; pay(a, 'twice@example.com');
   await fireWebhook(a);
-  // Seconds later, inside the clock-skew allowance on the account's age.
   const b = await startGuest(); pay(b, 'twice@example.com');
   await fireWebhook(b);
   assert.equal(users.size, 1);
-  // The account was made for session a, so b may not sign in from a payment.
   assert.equal((await back(b)).body.status, 'existing_account');
-  assert.equal((await back(a)).body.status, 'sign_in');
+  assert.equal((await back(a, cookieA)).body.status, 'sign_in');
+  // Already Premium: b is refunded once, never granted twice, no second receipt.
+  assert.deepEqual(refunds.map(r => [r.payment_intent, r.key]), [[`pi_${b}`, `guest-duplicate-${b}`]]);
+  await fireWebhook(b);
+  assert.equal(refunds.length, 2); assert.equal(refunds[1].key, refunds[0].key); // Stripe dedupes by key
+  assert.equal(receipts.length, 1);
+});
+
+test('attacker opens a checkout early, victim pays as a guest, attacker then pays with the victim\'s email', async () => {
+  const attacker = await startGuest(); const attackerCookie = cookie;
+  const victim = await startGuest(); pay(victim, 'victim@example.com');
+  await fireWebhook(victim);
+  pay(attacker, 'victim@example.com');
+  await fireWebhook(attacker);
+  const r = await back(attacker, attackerCookie);
+  assert.equal(r.body.status, 'existing_account');
+  assert.equal(r.body.customToken, undefined);
+});
+
+test('a leaked success URL opened in another browser gets nothing', async () => {
+  const id = await startGuest(); pay(id, 'leak@example.com');
+  await fireWebhook(id);
+  for (const c of ['', 'tt-guest-checkout=wrong', 'other=1']) {
+    const r = await back(id, c);
+    assert.equal(r.body.status, 'other_browser');
+    assert.equal(r.body.email, undefined);
+  }
+  assert.equal((await back(id)).body.status, 'sign_in');
+});
+
+test('the sign-in token is handed out once; a second ask is told to sign in', async () => {
+  const id = await startGuest(); pay(id, 'once@example.com');
+  assert.equal((await back(id)).body.status, 'sign_in');
+  const again = await back(id);
+  assert.deepEqual([again.body.status, again.body.customToken], ['sign_in_used', undefined]);
+});
+
+test('a return path may keep a simple query; anything else falls back', async () => {
+  await startGuest({ returnPath: '/cdl/stats?tab=community' });
+  assert.match(created[0].success_url, /\/cdl\/stats\?tab=community&session_id=/);
+  assert.match(created[0].cancel_url, /\/cdl\/stats\?tab=community&canceled=true$/);
+  await startGuest({ returnPath: '/x?a=<script>' });
+  assert.match(created[1].success_url, /\/dmv\/dashboard\?session_id=/);
+  await startGuest({ returnPath: '//evil.com' });
+  assert.match(created[2].success_url, /^https:\/\/www\.tigertest\.io\/dmv\/dashboard/);
 });
 
 test('success URL used after the buyer set a password: no more sign-in from it', async () => {
@@ -210,7 +262,7 @@ test('success URL used after the buyer set a password: no more sign-in from it',
   await fireWebhook(id);
   const u = [...users.values()][0];
   u.providerData = [{ providerId: 'password' }];
-  assert.equal((await back(id)).body.status, 'existing_account');
+  assert.equal((await back(id)).body.status, 'sign_in_used');
 });
 
 test('success URL older than a day: no sign-in from it', async () => {

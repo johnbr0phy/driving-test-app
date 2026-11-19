@@ -83,6 +83,7 @@ export async function POST(request: NextRequest) {
         const [fulfilled, user, payment] = await Promise.all([tx.get(checkoutRef), tx.get(userRef), tx.get(paymentRef)]);
         if (fulfilled.exists) {
           if (fulfilled.data()?.userId !== userId) throw new Error('Checkout ownership mismatch');
+          if (fulfilled.data()?.duplicateGuestPurchase === true) return 'duplicate';
           return fulfilled.data()?.legacyProcessed === true ? 'legacy' : 'current';
         }
         const data = user.data() ?? {};
@@ -100,6 +101,13 @@ export async function POST(request: NextRequest) {
             reconciledAt: new Date().toISOString() });
           return 'legacy';
         }
+        // A guest who paid with the email of an account that already has
+        // Premium bought nothing new: refunded below, never granted twice.
+        if (guestBuyer && data.subscription?.isPremium === true) {
+          tx.set(checkoutRef, { userId, eventId: event.id, duplicateGuestPurchase: true,
+            stripePaymentIntentId: paymentIntentId ?? null, fulfilledAt: new Date().toISOString() });
+          return 'duplicate';
+        }
         const receiptExam = checkoutExam ?? (isKnownExamId(data.firstSignupExamId) ? data.firstSignupExamId : null);
         tx.set(userRef, {
           subscription: { isPremium: true, purchasedAt: new Date().toISOString(),
@@ -113,6 +121,19 @@ export async function POST(request: NextRequest) {
         return 'current';
       });
       if (fulfillmentStatus === 'legacy') return NextResponse.json({ received: true, skipped: 'legacy_processed' });
+      if (fulfillmentStatus === 'duplicate') {
+        // Idempotent: a retried event refunds nothing twice.
+        if (paymentIntentId) {
+          try {
+            await stripe.refunds.create({ payment_intent: paymentIntentId, reason: 'duplicate' }, { idempotencyKey: `guest-duplicate-${session.id}` });
+          } catch (err) {
+            console.error(`[webhook] duplicate guest purchase ${session.id} not refunded yet:`, err);
+            return NextResponse.json({ error: 'Refund pending; retry required' }, { status: 503 });
+          }
+        }
+        console.log(`Guest purchase ${session.id} refunded: account ${userId} already had Premium`);
+        return NextResponse.json({ received: true, skipped: 'already_premium_refunded' });
+      }
 
       // What Stripe settled in dollars, for /admin revenue when the buyer paid
       // in another currency (lib/pricing.ts). Best-effort: a failed lookup

@@ -156,7 +156,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
             // Check if this account already has saved data. An account a
             // guest checkout just made holds only Premium: always take the
             // guest's progress onto it (lib/guestPurchaseSignIn.ts).
-            const fromGuestPurchase = takeGuestPurchaseSignIn();
+            const fromGuestPurchase = takeGuestPurchaseSignIn(user.uid);
             const hasExistingData = !fromGuestPurchase && await checkUserHasData(user.uid);
 
             if (hasExistingData) {

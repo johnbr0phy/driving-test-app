@@ -1,3 +1,4 @@
+import { createHash, randomBytes, timingSafeEqual } from 'node:crypto';
 import type Stripe from 'stripe';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 
@@ -10,16 +11,25 @@ import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
  * the webhook and the success page (whichever runs first) always agree on the
  * account, and a retry never makes a second one.
  *
- * Only an account this checkout created may be signed in from the success
- * page (createdForGuest). An email that already had an account gets Premium
- * but must sign in the usual way: typing someone's address into Stripe and
- * paying must never sign you in to their account.
+ * Who may be signed in from the success page, and only once:
+ *  - the account must have been made by this very session: its uid is derived
+ *    from the session id (guestUidFor), so no other session, however early it
+ *    was opened, can claim an account another one made;
+ *  - the request must come from the browser that started the checkout: it
+ *    holds a random key in an httpOnly cookie whose hash is in the session's
+ *    metadata, so a leaked success URL (history, analytics, a screenshot) is
+ *    worth nothing on its own.
+ * An email that already had an account gets Premium but must sign in the
+ * usual way: paying with someone's address never signs you in to theirs.
  */
 
 export type GuestBuyer = { uid: string; email: string; createdForGuest: boolean };
 
 /** How long after paying the success page may still sign the buyer in. */
 export const GUEST_SIGN_IN_WINDOW_MS = 24 * 60 * 60 * 1000;
+
+/** The cookie holding the browser's guest checkout key. */
+export const GUEST_KEY_COOKIE = 'tt-guest-checkout';
 
 export function isGuestSession(session: Stripe.Checkout.Session): boolean {
   return session.metadata?.guest === '1' && !session.metadata?.userId;
@@ -30,32 +40,48 @@ export function guestSessionEmail(session: Stripe.Checkout.Session): string | nu
   return email ? email.trim().toLowerCase() : null;
 }
 
+const sha256 = (s: string) => createHash('sha256').update(s).digest('hex');
+
+/** The uid an account made for this Checkout Session gets (and only it). */
+export function guestUidFor(sessionId: string): string {
+  return `gc_${sha256(`guest-checkout:${sessionId}`).slice(0, 26)}`;
+}
+
+/** A new browser key for the cookie, and the hash that goes in the metadata. */
+export function newGuestKey(): { key: string; hash: string } {
+  const key = randomBytes(24).toString('base64url');
+  return { key, hash: sha256(key) };
+}
+
+/** Whether the cookie's key is the one this session was started with. */
+export function guestKeyMatches(session: Stripe.Checkout.Session, cookieKey: string | undefined | null): boolean {
+  const expected = session.metadata?.guestKey;
+  if (!expected || !cookieKey) return false;
+  const a = Buffer.from(sha256(cookieKey));
+  const b = Buffer.from(expected);
+  return a.length === b.length && timingSafeEqual(a, b);
+}
+
 function isAuthError(err: unknown, code: string): boolean {
   return typeof err === 'object' && err !== null && (err as { code?: string }).code === code;
 }
 
-async function findOrCreateUser(email: string, sessionCreatedSec: number): Promise<{ uid: string; created: boolean }> {
+async function findOrCreateUser(email: string, sessionId: string): Promise<string> {
   const auth = getAdminAuth();
-  let user;
   try {
-    user = await auth.getUserByEmail(email);
+    return (await auth.getUserByEmail(email)).uid;
   } catch (err) {
     if (!isAuthError(err, 'auth/user-not-found')) throw err;
-    try {
-      // Not marked verified: Stripe checked a card, not that they own the inbox.
-      user = await auth.createUser({ email });
-    } catch (createErr) {
-      // Another request (the webhook or the success page) made it just now.
-      if (!isAuthError(createErr, 'auth/email-already-exists')) throw createErr;
-      user = await auth.getUserByEmail(email);
-    }
   }
-  // Made for this checkout: created after the session opened and nobody has
-  // signed in to it with a password or Google yet. Judged from the account
-  // itself, so it comes out the same whichever request created it.
-  const createdMs = Date.parse(user.metadata.creationTime);
-  const created = createdMs >= sessionCreatedSec * 1000 - 60_000 && user.providerData.length === 0;
-  return { uid: user.uid, created };
+  try {
+    // Not marked verified: Stripe checked a card, not that they own the inbox.
+    return (await auth.createUser({ uid: guestUidFor(sessionId), email })).uid;
+  } catch (err) {
+    // The webhook and the success page made it at the same moment (same uid),
+    // or someone else signed up with this email a moment ago.
+    if (!isAuthError(err, 'auth/email-already-exists') && !isAuthError(err, 'auth/uid-already-exists')) throw err;
+    return (await auth.getUserByEmail(email)).uid;
+  }
 }
 
 /** The account a paid guest Checkout Session belongs to, made if needed. */
@@ -69,33 +95,34 @@ export async function resolveGuestBuyer(session: Stripe.Checkout.Session): Promi
 
   const email = guestSessionEmail(session);
   if (!email) throw new Error(`Guest checkout ${session.id} has no email`);
-  const found = await findOrCreateUser(email, session.created);
-  const { uid } = found;
-  // An account another guest checkout already made belongs to that one: a
-  // second purchase with the same email (even a minute later) adds Premium
-  // but never signs anyone in to it.
-  let created = found.created;
-  if (created) {
-    const others = await getAdminDb().collection('guestCheckouts').where('uid', '==', uid).limit(5).get();
-    if (others.docs.some(d => d.id !== session.id && d.data().createdForGuest === true)) created = false;
-  }
+  const uid = await findOrCreateUser(email, session.id);
+  const createdForGuest = uid === guestUidFor(session.id);
 
   try {
-    await ref.create({
-      uid,
-      email,
-      createdForGuest: created,
-      createdAt: new Date().toISOString(),
-    });
-    return { uid, email, createdForGuest: created };
+    await ref.create({ uid, email, createdForGuest, createdAt: new Date().toISOString() });
+    return { uid, email, createdForGuest };
   } catch (err) {
-    // The webhook and the success page raced: the first pin wins. If both
-    // saw "no account", Auth refused the second createUser, so both hold the
-    // same uid; only the flag can differ, and the stored one is right.
+    // The webhook and the success page raced: the first pin wins. Both
+    // computed the same answer, since it depends only on the session.
     const winner = (await ref.get()).data();
     if (!winner) throw err;
     return { uid: winner.uid, email: winner.email, createdForGuest: winner.createdForGuest === true };
   }
+}
+
+/**
+ * Marks the session's sign-in as used and says whether this call got it.
+ * The success page signs in once; a reload after that is already signed in.
+ */
+export async function redeemGuestSignIn(sessionId: string): Promise<boolean> {
+  const db = getAdminDb();
+  const ref = db.collection('guestCheckouts').doc(sessionId);
+  return db.runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    if (!snap.exists || snap.data()?.signedInAt) return false;
+    tx.set(ref, { signedInAt: new Date().toISOString() }, { merge: true });
+    return true;
+  });
 }
 
 /** Hide most of an address for the success page: "jo***@gmail.com". */

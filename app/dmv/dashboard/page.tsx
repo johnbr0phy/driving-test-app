@@ -157,13 +157,17 @@ function DashboardContent() {
     });
   }, [hydrated]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const loadedUid = useStore((state) => state.loadedUid);
   // Handle post-purchase verification
   useEffect(() => {
     const sessionId = searchParams.get("session_id");
     const success = searchParams.get("success");
     const canceled = searchParams.get("canceled");
 
-    if (sessionId && success === "true" && user?.uid) {
+    // Only once this account has loaded: loading it afterwards would replace
+    // the Premium flag set here with the account's copy, which the webhook
+    // may not have written yet.
+    if (sessionId && success === "true" && user?.uid && loadedUid === user.uid) {
       const sendVerification = async () => {
         const idToken = await auth.currentUser?.getIdToken();
         if (!idToken) return;
@@ -198,7 +202,7 @@ function DashboardContent() {
     if (canceled === "true") {
       router.replace("/dmv/dashboard");
     }
-  }, [searchParams, user?.uid, setPremiumStatus, router]);
+  }, [searchParams, user?.uid, loadedUid, setPremiumStatus, router]);
 
   // Handle paywall click
   const handlePremiumClick = (feature: "training_set_4" | "practice_test_4", cardId: string, cardLabel: string) => {

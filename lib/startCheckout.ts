@@ -21,6 +21,9 @@ export async function startCheckout(opts: {
   feature?: string;
 }): Promise<void> {
   try {
+    // Wait for Firebase to restore a session: a signed-in buyer tapping
+    // during page load must not go down the guest path.
+    await auth.authStateReady();
     const current = auth.currentUser;
     const idToken = current ? await current.getIdToken() : null;
     const response = await fetch("/api/stripe/checkout", {

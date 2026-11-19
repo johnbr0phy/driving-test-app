@@ -5,6 +5,7 @@ import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywal
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
 import { visitorCountry } from '@/lib/server/visitorCountry';
 import { SITE_URL } from '@/lib/siteUrl';
+import { GUEST_KEY_COOKIE, GUEST_SIGN_IN_WINDOW_MS, newGuestKey } from '@/lib/server/guestCheckout';
 
 export async function POST(request: NextRequest) {
   try {
@@ -38,10 +39,13 @@ export async function POST(request: NextRequest) {
     const email: string | null = isGuest ? null : decodedToken!.email || bodyEmail || null;
     // Where the buyer lands afterwards (and where the purchase is verified).
     // Same-site paths only: "/sat", never "//evil.com" or a full URL.
+    // A simple query may ride along ("/cdl/stats?tab=community") so a guest
+    // comes back to the tab they paid from.
     const returnPath =
-      typeof rawReturnPath === 'string' && /^\/[A-Za-z0-9/_-]*$/.test(rawReturnPath) && !rawReturnPath.startsWith('//')
+      typeof rawReturnPath === 'string' && /^\/[A-Za-z0-9/_-]*(\?[A-Za-z0-9=&_-]{1,80})?$/.test(rawReturnPath) && !rawReturnPath.startsWith('//')
         ? rawReturnPath
         : '/dmv/dashboard';
+    const returnJoin = returnPath.includes('?') ? '&' : '?';
     const userId: string | null = decodedToken?.uid ?? null;
 
     // Validate required fields
@@ -81,6 +85,10 @@ export async function POST(request: NextRequest) {
     }
 
     const stripe = getStripe();
+
+    // A guest's browser gets a random key (httpOnly cookie, hash in the
+    // metadata): only this browser can be signed in from the success page.
+    const guestKey = isGuest ? newGuestKey() : null;
 
     // Create or retrieve Stripe customer (signed in). A guest's customer is
     // made by Checkout from the email they type there.
@@ -141,10 +149,10 @@ export async function POST(request: NextRequest) {
               quantity: 1,
             },
       ],
-      success_url: `${baseUrl}${returnPath}?session_id={CHECKOUT_SESSION_ID}&success=true`,
-      cancel_url: `${baseUrl}${returnPath}?canceled=true`,
+      success_url: `${baseUrl}${returnPath}${returnJoin}session_id={CHECKOUT_SESSION_ID}&success=true`,
+      cancel_url: `${baseUrl}${returnPath}${returnJoin}canceled=true`,
       metadata: {
-        ...(userId && email ? { userId, email } : { guest: '1' }),
+        ...(userId && email ? { userId, email } : { guest: '1', guestKey: guestKey!.hash }),
         ...(location && { location }),
         ...(country && { country }),
         ...(source && { source }),
@@ -158,7 +166,17 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    return NextResponse.json({ checkoutUrl: session.url });
+    const res = NextResponse.json({ checkoutUrl: session.url });
+    if (guestKey) {
+      res.cookies.set(GUEST_KEY_COOKIE, guestKey.key, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        path: '/api/stripe',
+        maxAge: GUEST_SIGN_IN_WINDOW_MS / 1000,
+      });
+    }
+    return res;
   } catch (error) {
     console.error('Checkout error:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';

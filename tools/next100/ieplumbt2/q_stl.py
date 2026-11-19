@@ -2,7 +2,7 @@ CAT = 'iept2Steel'; SEG = 'STL'
 Q = [
 ('Steel tube for welding and threading to I.S. EN 10255 comes in which two common weights?',
  'Medium and heavy', ['Standard and reinforced', 'Schedule 40 and 80', 'Class A and class B'],
- 'I.S. EN 10255 covers non-alloy steel tubes suitable for welding and threading in medium and heavy series. Schedules are an American system.'),
+ 'I.S. EN 10255 covers non-alloy steel tubes suitable for welding and threading; the medium and heavy series are the two used for pipework (light series also exist). Schedules are an American system.'),
 ('Why is galvanised steel tube not heat-bent with a torch?',
  'Heat burns off the zinc coating', ['The tube splits along the seam', 'It cannot be threaded afterwards', 'The zinc makes it too hard'],
  'Heating destroys the zinc coating that protects the tube and gives off zinc oxide fume. Galvanised tube is bent cold.'),

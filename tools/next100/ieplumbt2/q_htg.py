@@ -72,7 +72,7 @@ Q = [
 ('An extra trap outside the boiler gives the condensate a 75 mm seal. What must be provided?',
  'An air gap', ['A non-return valve', 'A second 22 mm trap', 'A copper tail pipe'],
  'TGD H paragraph 1.2.2.7: if an additional trap is fitted outside the boiler to give the 75 mm seal, an air gap should be provided between boiler and trap.'),
-('A solid fuel boiler may be fitted to a sealed system with an expansion vessel:',
+('With no thermal storage interface device, a solid fuel boiler may go on a sealed system with an expansion vessel:',
  'Only if the maker permits it', ['Always, with a larger vessel', 'Never under any conditions', 'Only with a gravity primary'],
  'The guide says solid fuel appliances should not go on sealed systems except where the manufacturer specifically permits it or a thermal storage interface device is used.'),
 ('Why does most solid fuel central heating need a heat leak radiator?',

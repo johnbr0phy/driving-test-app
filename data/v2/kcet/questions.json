@@ -54,15 +54,15 @@
     "stem": "A wire 2 m long with cross-section 1 mm² stretches by 1 mm under a 100 N load. What is its Young's modulus?",
     "options": [
       "$2 \\times 10^{5}$ Pa",
+      "$2 \\times 10^{8}$ Pa",
       "$1 \\times 10^{11}$ Pa",
-      "$2 \\times 10^{11}$ Pa",
-      "$4 \\times 10^{11}$ Pa"
+      "$2 \\times 10^{11}$ Pa"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$Y = \\frac{FL}{A\\Delta L} = \\frac{100 \\times 2}{10^{-6} \\times 10^{-3}} = 2 \\times 10^{11}$ Pa. $2 \\times 10^{5}$ Pa leaves the area in mm², and $1 \\times 10^{11}$ Pa leaves out the length."
+    "explanation": "$Y = \\frac{FL}{A\\Delta L} = \\frac{100 \\times 2}{10^{-6} \\times 10^{-3}} = 2 \\times 10^{11}$ Pa. $2 \\times 10^{5}$ Pa leaves the area in mm², $1 \\times 10^{11}$ Pa leaves out the length, and $2 \\times 10^{8}$ Pa leaves the extension in mm."
   },
   {
     "id": "KCET-T1-004",
@@ -140,16 +140,16 @@
     "skill": "Mechanical properties of fluids",
     "stem": "A small sphere falls through oil with a terminal speed of 2 cm/s. What is the terminal speed of a sphere of the same material with three times the radius?",
     "options": [
+      "2 cm/s",
+      "3.5 cm/s",
       "6 cm/s",
-      "12 cm/s",
-      "18 cm/s",
-      "54 cm/s"
+      "18 cm/s"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "From Stokes' law $v_t = \\frac{2r^2(\\rho - \\sigma)g}{9\\eta}$, so $v_t \\propto r^2$: $2 \\times 9 = 18$ cm/s. 6 cm/s treats the speed as proportional to r, and 54 cm/s to $r^3$."
+    "explanation": "From Stokes' law $v_t = \\frac{2r^2(\\rho - \\sigma)g}{9\\eta}$, so $v_t \\propto r^2$: $2 \\times 9 = 18$ cm/s. 6 cm/s treats the speed as proportional to r, 3.5 cm/s to $\\sqrt{r}$, and 2 cm/s wrongly assumes terminal speed does not depend on size."
   },
   {
     "id": "KCET-T1-008",
@@ -184,16 +184,16 @@
     "skill": "Motion in a plane",
     "stem": "A ball thrown at 45° to the horizontal lands 40 m away on level ground. Taking g = 10 m/s², what was its launch speed?",
     "options": [
-      "14.1 m/s",
       "20 m/s",
       "28.3 m/s",
-      "40 m/s"
+      "40 m/s",
+      "400 m/s"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "At 45° the range is $R = \\frac{u^2}{g}$, so $u = \\sqrt{40 \\times 10} = 20$ m/s. 14.1 m/s comes from writing $R = \\frac{2u^2}{g}$, and 28.3 m/s from $R = \\frac{u^2}{2g}$."
+    "explanation": "At 45° the range is $R = \\frac{u^2}{g}$, so $u = \\sqrt{40 \\times 10} = 20$ m/s. 400 m/s forgets the square root, 28.3 m/s comes from writing $R = \\frac{u^2}{2g}$, and 40 m/s takes the speed equal to the range."
   },
   {
     "id": "KCET-T1-010",
@@ -228,16 +228,16 @@
     "skill": "Thermal properties of matter",
     "stem": "A steel rod 2 m long is heated from 20 °C to 70 °C. If α = 1.2 × 10⁻⁵ K⁻¹, by how much does it lengthen?",
     "options": [
-      "0.6 mm",
       "1.2 mm",
       "2.4 mm",
+      "3.6 mm",
       "12 mm"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\Delta L = L\\alpha\\Delta T = 2 \\times 1.2 \\times 10^{-5} \\times 50 = 1.2 \\times 10^{-3}$ m, or 1.2 mm. 0.6 mm uses a 1 m rod, and 12 mm slips a power of ten in converting to millimetres."
+    "explanation": "$\\Delta L = L\\alpha\\Delta T = 2 \\times 1.2 \\times 10^{-5} \\times 50 = 1.2 \\times 10^{-3}$ m, or 1.2 mm. 2.4 mm and 3.6 mm use the area and volume coefficients 2α and 3α, and 12 mm slips a power of ten in converting to millimetres."
   },
   {
     "id": "KCET-T1-012",
@@ -577,16 +577,16 @@
     "skill": "Waves",
     "stem": "A string under a tension of 100 N has a mass per unit length of 0.01 kg/m. What is the speed of transverse waves on it?",
     "options": [
+      "0.01 m/s",
+      "1 m/s",
       "10 m/s",
-      "100 m/s",
-      "1000 m/s",
-      "10000 m/s"
+      "100 m/s"
     ],
     "correct": [
-      1
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$v = \\sqrt{T/\\mu} = \\sqrt{100/0.01} = \\sqrt{10^4} = 100$ m/s. 10000 m/s is $T/\\mu$ without the square root, and 10 m/s is $\\sqrt{T}$ alone."
+    "explanation": "$v = \\sqrt{T/\\mu} = \\sqrt{100/0.01} = \\sqrt{10^4} = 100$ m/s. 10 m/s is $\\sqrt{T}$ alone, 1 m/s is $\\sqrt{T\\mu}$, and 0.01 m/s inverts the ratio to $\\sqrt{\\mu/T}$."
   },
   {
     "id": "KCET-T1-028",
@@ -684,16 +684,16 @@
     "skill": "Some basic concepts",
     "stem": "4 g of NaOH (molar mass 40 g/mol) is dissolved in water to make 250 mL of solution. What is its molarity?",
     "options": [
+      "0.016 mol/L",
       "0.04 mol/L",
       "0.1 mol/L",
-      "0.4 mol/L",
-      "1.6 mol/L"
+      "0.4 mol/L"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Moles of NaOH = 4/40 = 0.1, and 0.1 mol in 0.25 L gives 0.4 mol/L. 0.1 mol/L forgets to divide by the volume in litres."
+    "explanation": "Moles of NaOH = 4/40 = 0.1, and 0.1 mol in 0.25 L gives 0.4 mol/L. 0.1 mol/L forgets to divide by the volume, and 0.016 mol/L divides grams by millilitres."
   },
   {
     "id": "KCET-T1-033",
@@ -813,16 +813,16 @@
     "skill": "Thermodynamics",
     "stem": "For N₂(g) + 3H₂(g) → 2NH₃(g) at 298 K, what is ΔH minus ΔU? (R = 8.314 J/K mol)",
     "options": [
-      "-9.91 kJ",
       "-4.96 kJ",
       "-2.48 kJ",
+      "2.48 kJ",
       "4.96 kJ"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\Delta H - \\Delta U = \\Delta n_g RT$ with $\\Delta n_g = 2 - 4 = -2$, so $-2 \\times 8.314 \\times 298 = -4955$ J, about -4.96 kJ. +4.96 kJ takes Δn as reactants minus products."
+    "explanation": "$\\Delta H - \\Delta U = \\Delta n_g RT$ with $\\Delta n_g = 2 - 4 = -2$, so $-2 \\times 8.314 \\times 298 = -4955$ J, about -4.96 kJ. +4.96 kJ takes Δn as reactants minus products, and ±2.48 kJ uses a Δn of only 1."
   },
   {
     "id": "KCET-T1-039",
@@ -921,14 +921,14 @@
     "stem": "Which of these isoelectronic ions is the smallest?",
     "options": [
       "Mg²⁺",
-      "F⁻",
+      "NH₄⁺",
       "O²⁻",
       "Na⁺"
     ],
     "correct": [
       0
     ],
-    "explanation": "All have 10 electrons, so the ion with the most protons, Mg²⁺ with 12, pulls them in closest. O²⁻, with only 8 protons, is the largest."
+    "explanation": "All have 10 electrons. Mg²⁺, with 12 protons on one nucleus, pulls them in closest; NH₄⁺ spreads its charge over five atoms and is much larger. O²⁻, with only 8 protons, is the largest."
   },
   {
     "id": "KCET-T1-044",
@@ -942,15 +942,15 @@
     "stem": "What is the pH of a 0.001 M solution of barium hydroxide, Ba(OH)₂, at 25 °C? (log 2 = 0.3)",
     "options": [
       "2.7",
+      "10.7",
       "11",
-      "11.3",
-      "12"
+      "11.3"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Each Ba(OH)₂ gives two OH⁻, so $[OH^-] = 0.002$ M and pOH $= 3 - 0.3 = 2.7$, giving pH = 14 - 2.7 = 11.3. 11 forgets the second hydroxide ion, and 2.7 is the pOH, not the pH."
+    "explanation": "Each Ba(OH)₂ gives two OH⁻, so $[OH^-] = 0.002$ M and pOH $= 3 - 0.3 = 2.7$, giving pH = 14 - 2.7 = 11.3. 11 forgets the second hydroxide ion, 10.7 subtracts log 2 the wrong way, and 2.7 is the pOH."
   },
   {
     "id": "KCET-T1-045",
@@ -1070,15 +1070,15 @@
     "stem": "A non-volatile solute is present at a mole fraction of 0.05. The pure solvent's vapour pressure is 80 kPa. What is the solution's vapour pressure?",
     "options": [
       "4 kPa",
+      "40 kPa",
       "72 kPa",
-      "76 kPa",
-      "84 kPa"
+      "76 kPa"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "By Raoult's law $p = x_{solvent} p^\\circ = 0.95 \\times 80 = 76$ kPa. 4 kPa is the lowering itself, not the remaining vapour pressure."
+    "explanation": "By Raoult's law $p = x_{solvent} p^\\circ = 0.95 \\times 80 = 76$ kPa. 4 kPa is the lowering itself, not the remaining vapour pressure, and 72 kPa subtracts the lowering twice."
   },
   {
     "id": "KCET-T1-051",
@@ -1199,16 +1199,16 @@
     "skill": "Electrochemistry",
     "stem": "For the Cu²⁺/Cu electrode, E° = 0.34 V. What is its potential at 298 K when [Cu²⁺] = 0.01 M?",
     "options": [
-      "0.222 V",
       "0.281 V",
+      "0.311 V",
       "0.34 V",
       "0.399 V"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$E = E^\\circ + \\frac{0.059}{2}\\log[Cu^{2+}] = 0.34 + 0.0295 \\times (-2) = 0.281$ V. 0.222 V uses n = 1, and 0.399 V gets the sign of the log term wrong."
+    "explanation": "$E = E^\\circ + \\frac{0.059}{2}\\log[Cu^{2+}] = 0.34 + 0.0295 \\times (-2) = 0.281$ V. 0.311 V takes log 0.01 as -1, and 0.399 V gets the sign of the log term wrong."
   },
   {
     "id": "KCET-T1-057",
@@ -1242,16 +1242,16 @@
     "skill": "Coordination compounds",
     "stem": "What is the oxidation state of cobalt in [Co(NH₃)₅Cl]Cl₂?",
     "options": [
+      "0",
       "+1",
       "+2",
-      "+3",
-      "+5"
+      "+3"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Two Cl⁻ outside the bracket give the complex ion a 2+ charge. Ammonia is neutral and the bound chloride is -1, so x - 1 = +2 and x = +3. +2 reads the ion's charge as cobalt's."
+    "explanation": "Two Cl⁻ outside the bracket give the complex ion a 2+ charge. Ammonia is neutral and the bound chloride is -1, so x - 1 = +2 and x = +3. +2 reads the ion's charge as cobalt's, and 0 treats the whole compound as if the metal were neutral."
   },
   {
     "id": "KCET-T1-059",
@@ -1482,16 +1482,16 @@
     "skill": "Probability",
     "stem": "Two fair dice are thrown. What is the probability that the sum of the numbers is 9?",
     "options": [
+      "1/36",
+      "1/18",
       "1/12",
-      "1/9",
-      "5/36",
-      "1/6"
+      "1/9"
     ],
     "correct": [
-      1
+      3
     ],
     "lockedOrder": true,
-    "explanation": "The sum 9 comes from (3, 6), (4, 5), (5, 4) and (6, 3): 4 of the 36 outcomes, so $\\frac{4}{36} = \\frac{1}{9}$. 5/36 is the chance of a sum of 8."
+    "explanation": "The sum 9 comes from (3, 6), (4, 5), (5, 4) and (6, 3): 4 of the 36 outcomes, so $\\frac{4}{36} = \\frac{1}{9}$. 1/18 counts unordered pairs, (3, 6) and (4, 5) only, and 1/36 counts a single outcome."
   },
   {
     "id": "KCET-T1-070",
@@ -1830,16 +1830,16 @@
     "skill": "Sequences and series",
     "stem": "What is the sum of the first 20 terms of the AP 4, 7, 10, ...?",
     "options": [
-      "325",
       "650",
       "680",
+      "710",
       "1300"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$S_{20} = \\frac{20}{2}[2(4) + 19(3)] = 10 \\times 65 = 650$. 680 uses $20d$ instead of $19d$, and 1300 forgets to halve."
+    "explanation": "$S_{20} = \\frac{20}{2}[2(4) + 19(3)] = 10 \\times 65 = 650$. 680 uses $20d$ instead of $19d$, 1300 forgets to halve, and 710 starts the AP at 7, the second term."
   },
   {
     "id": "KCET-T1-086",
@@ -2135,16 +2135,16 @@
     "skill": "Motion in a plane",
     "stem": "A river 80 m wide flows at 3 m/s. A swimmer heads straight across at 4 m/s relative to the water. How far downstream does she land?",
     "options": [
-      "48 m",
       "60 m",
       "80 m",
-      "100 m"
+      "100 m",
+      "106.7 m"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "Crossing takes 80/4 = 20 s, and the current carries her 3 × 20 = 60 m downstream. 100 m is the length of her actual path, the hypotenuse."
+    "explanation": "Crossing takes 80/4 = 20 s, and the current carries her 3 × 20 = 60 m downstream. 100 m is the length of her actual path, the hypotenuse, and 106.7 m swaps the two speeds, 80 × 4/3."
   },
   {
     "id": "KCET-T2-010",
@@ -2529,16 +2529,16 @@
     "skill": "Waves",
     "stem": "A pipe 0.5 m long is closed at one end. Taking the speed of sound as 340 m/s, what is its fundamental frequency?",
     "options": [
-      "85 Hz",
       "170 Hz",
       "340 Hz",
+      "510 Hz",
       "680 Hz"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "A pipe closed at one end has a quarter wavelength in its length, so $f = \\frac{v}{4L} = \\frac{340}{2} = 170$ Hz. 340 Hz is the fundamental of an open pipe of the same length."
+    "explanation": "A pipe closed at one end has a quarter wavelength in its length, so $f = \\frac{v}{4L} = \\frac{340}{2} = 170$ Hz. 340 Hz is the fundamental of an open pipe of the same length, 510 Hz is the closed pipe's first overtone, and 680 Hz is v/L."
   },
   {
     "id": "KCET-T2-028",
@@ -2572,16 +2572,16 @@
     "skill": "Gravitation",
     "stem": "A satellite orbiting just above the Earth's surface moves at 7.9 km/s. What is the orbital speed of one at a height equal to the Earth's radius?",
     "options": [
+      "1.98 km/s",
+      "2.79 km/s",
       "3.95 km/s",
-      "5.6 km/s",
-      "7.9 km/s",
-      "11.2 km/s"
+      "5.6 km/s"
     ],
     "correct": [
-      1
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$v_o = \\sqrt{GM/r} \\propto 1/\\sqrt{r}$, and doubling the orbit radius divides the speed by $\\sqrt{2}$: $7.9/1.414 = 5.6$ km/s. 3.95 km/s halves it as if $v \\propto 1/r$."
+    "explanation": "$v_o = \\sqrt{GM/r} \\propto 1/\\sqrt{r}$, and doubling the orbit radius divides the speed by $\\sqrt{2}$: $7.9/1.414 = 5.6$ km/s. 3.95 km/s halves it as if $v \\propto 1/r$, 1.98 km/s takes $v \\propto 1/r^2$, and 2.79 km/s takes $v \\propto r^{-3/2}$, mixing in Kepler's law for the period."
   },
   {
     "id": "KCET-T2-030",
@@ -3084,16 +3084,16 @@
     "skill": "Solutions",
     "stem": "NaCl is dissolved at 0.1 mol/kg in water and dissociates fully. By how much does the freezing point fall? (Kf = 1.86 K kg/mol)",
     "options": [
-      "0.186 K",
       "0.372 K",
       "0.744 K",
-      "1.86 K"
+      "1.86 K",
+      "3.72 K"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\Delta T_f = iK_f m = 2 \\times 1.86 \\times 0.1 = 0.372$ K. 0.186 K forgets that NaCl gives two ions, i = 2."
+    "explanation": "$\\Delta T_f = iK_f m = 2 \\times 1.86 \\times 0.1 = 0.372$ K. 0.744 K counts i as 4, and 3.72 K leaves out the molality of 0.1 mol/kg."
   },
   {
     "id": "KCET-T2-054",
@@ -3150,12 +3150,12 @@
     "stem": "A 0.05 M electrolyte solution has a conductivity of 6.0 × 10⁻³ S/cm. What is its molar conductivity?",
     "options": [
       "0.12 S cm²/mol",
+      "1.2 S cm²/mol",
       "12 S cm²/mol",
-      "120 S cm²/mol",
-      "1200 S cm²/mol"
+      "120 S cm²/mol"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
     "explanation": "$\\Lambda_m = \\frac{\\kappa \\times 1000}{c} = \\frac{6.0 \\times 10^{-3} \\times 1000}{0.05} = 120$ S cm²/mol. 0.12 S cm²/mol leaves out the factor of 1000 that converts litres to cubic centimetres."
@@ -3214,13 +3214,13 @@
     "skill": "Chemical kinetics",
     "stem": "The rate of a reaction doubles when the temperature rises from 300 K to 310 K. What is its activation energy? (R = 8.314 J/K mol, log 2 = 0.301)",
     "options": [
+      "0.536 kJ/mol",
       "5.36 kJ/mol",
       "23.3 kJ/mol",
-      "53.6 kJ/mol",
-      "107 kJ/mol"
+      "53.6 kJ/mol"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
     "explanation": "$\\log 2 = \\frac{E_a}{2.303R}\\left(\\frac{T_2 - T_1}{T_1 T_2}\\right)$, so $E_a = 2.303 \\times 8.314 \\times 0.301 \\times \\frac{300 \\times 310}{10} = 53.6$ kJ/mol. 23.3 kJ/mol leaves out the 2.303."
@@ -3626,16 +3626,16 @@
     "skill": "Binomial theorem",
     "stem": "What is the coefficient of $x^3$ in the expansion of $(1 + 2x)^5$?",
     "options": [
+      "8",
       "10",
       "40",
-      "80",
-      "160"
+      "80"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "The term is $^5C_3 (2x)^3 = 10 \\times 8x^3 = 80x^3$. 10 forgets to cube the 2, and 40 squares it instead."
+    "explanation": "The term is $^5C_3 (2x)^3 = 10 \\times 8x^3 = 80x^3$. 10 forgets to cube the 2, 40 squares it instead, and 8 drops the binomial coefficient $^5C_3$."
   },
   {
     "id": "KCET-T2-079",
@@ -3778,16 +3778,16 @@
     "skill": "Determinants",
     "stem": "What is the value of $\\begin{vmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 10 \\end{vmatrix}$?",
     "options": [
-      "-9",
       "-3",
       "0",
-      "3"
+      "3",
+      "15"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 is a sign slip on the middle cofactor."
+    "explanation": "Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 is a sign slip on the middle cofactor, and 15 takes the last minor as $35 - 32$."
   },
   {
     "id": "KCET-T2-086",
@@ -3865,16 +3865,16 @@
     "skill": "Permutations and combinations",
     "stem": "A committee of 3 men and 2 women is chosen from 6 men and 5 women. How many committees are possible?",
     "options": [
-      "30",
       "200",
       "462",
+      "1200",
       "2400"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "Men can be chosen in $^6C_3 = 20$ ways and women in $^5C_2 = 10$ ways; the choices are independent, so $20 \\times 10 = 200$. 30 adds instead of multiplying, and 462 is $^{11}C_5$, which ignores the 3 and 2 split."
+    "explanation": "Men can be chosen in $^6C_3 = 20$ ways and women in $^5C_2 = 10$ ways; the choices are independent, so $20 \\times 10 = 200$. 1200 arranges the men in order ($^6P_3$), and 462 is $^{11}C_5$, which ignores the 3 and 2 split."
   },
   {
     "id": "KCET-T2-090",
@@ -3995,16 +3995,16 @@
     "skill": "Laws of motion",
     "stem": "A road curve of radius 50 m is banked so that tan θ = 0.2. Taking g = 10 m/s², at what speed is no friction needed?",
     "options": [
-      "5 m/s",
       "10 m/s",
       "22.4 m/s",
+      "50 m/s",
       "100 m/s"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "For a banked curve $\\tan\\theta = \\frac{v^2}{rg}$, so $v = \\sqrt{50 \\times 10 \\times 0.2} = 10$ m/s. 100 m/s is $v^2$ with the square root forgotten, and 22.4 m/s leaves out $\\tan\\theta$."
+    "explanation": "For a banked curve $\\tan\\theta = \\frac{v^2}{rg}$, so $v = \\sqrt{50 \\times 10 \\times 0.2} = 10$ m/s. 100 m/s is $v^2$ with the square root forgotten, 22.4 m/s leaves out $\\tan\\theta$, and 50 m/s divides by $\\tan\\theta$ instead of multiplying."
   },
   {
     "id": "KCET-D-006",
@@ -4775,12 +4775,12 @@
     "stem": "What is the denticity of the EDTA⁴⁻ ligand?",
     "options": [
       "2",
+      "3",
       "4",
-      "6",
-      "8"
+      "6"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
     "explanation": "EDTA binds through two nitrogen atoms and four carboxylate oxygens, six donor atoms, so it is hexadentate. 4 counts only the carboxylate groups."

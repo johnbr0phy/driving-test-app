@@ -1857,9 +1857,9 @@
     "optionB": "Vacío de 4 pulgadas de Hg",
     "optionC": "Vacío de 10 pulgadas de Hg",
     "optionD": "Vacío de 29 pulgadas de Hg",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "El R-410A es un \"otro\" refrigerante de alta presión; los equipos con menos de 200 lb deben evacuarse a un vacío de 10 pulgadas de Hg con equipo posterior a 1993 (Tabla 1 de 40 CFR 82.156)."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "El R-410A es un refrigerante de alta presión. Según la tabla 1 de 40 CFR 82.156, un equipo de alta presión con una carga completa de menos de 200 lb debe evacuarse a 0 pulgadas de Hg de vacío (0 psig) antes de abrirlo, sea cual sea la antigüedad de la máquina de recuperación. El nivel de 10 pulgadas de Hg se aplica solo a partir de 200 lb."
   },
   {
     "type": "EPA608",

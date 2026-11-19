@@ -11812,6 +11812,105 @@
     --brand-dark: 193 15% 65%;
     --brand-darker: 193 15% 78%;
   }
+  .dark [data-theme="afsp"] {
+    --brand: 12 45% 49%;
+    --brand-hover: 12 45% 41%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 17 40% 11%;
+    --brand-border-light: 12 20% 24%;
+    --brand-border: 12 25% 34%;
+    --brand-muted: 12 25% 45%;
+    --brand-dark: 12 45% 65%;
+    --brand-darker: 12 40% 78%;
+  }
+  .dark [data-theme="esthetician"] {
+    --brand: 330 20% 50%;
+    --brand-hover: 330 20% 42%;
+    --brand-light: 330 25% 13%;
+    --brand-gradient-to: 345 25% 11%;
+    --brand-border-light: 330 15% 24%;
+    --brand-border: 330 15% 34%;
+    --brand-muted: 330 15% 45%;
+    --brand-dark: 330 20% 65%;
+    --brand-darker: 330 20% 78%;
+  }
+  .dark [data-theme="ascpht"] {
+    --brand: 296 75% 47.3%;
+    --brand-hover: 296 75% 39.3%;
+    --brand-light: 296 45% 13%;
+    --brand-gradient-to: 310 40% 11%;
+    --brand-border-light: 296 35% 24%;
+    --brand-border: 296 40% 34%;
+    --brand-muted: 296 40% 45%;
+    --brand-dark: 296 75% 65%;
+    --brand-darker: 296 70% 78%;
+  }
+  .dark [data-theme="ascpmls"] {
+    --brand: 300 25% 49.4%;
+    --brand-hover: 300 25% 41.4%;
+    --brand-light: 300 25% 13%;
+    --brand-gradient-to: 315 40% 11%;
+    --brand-border-light: 300 20% 24%;
+    --brand-border: 300 25% 34%;
+    --brand-muted: 300 25% 45%;
+    --brand-dark: 300 25% 65%;
+    --brand-darker: 300 20% 78%;
+  }
+  .dark [data-theme="istqb"] {
+    --brand: 276 95% 50%;
+    --brand-hover: 276 95% 42%;
+    --brand-light: 276 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 276 35% 24%;
+    --brand-border: 276 40% 34%;
+    --brand-muted: 276 45% 45%;
+    --brand-dark: 276 95% 65%;
+    --brand-darker: 276 90% 78%;
+  }
+  .dark [data-theme="r410a"] {
+    --brand: 287 75% 50%;
+    --brand-hover: 287 75% 42%;
+    --brand-light: 287 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 287 30% 24%;
+    --brand-border: 287 35% 34%;
+    --brand-muted: 287 35% 45%;
+    --brand-dark: 287 75% 65%;
+    --brand-darker: 287 70% 78%;
+  }
+  .dark [data-theme="natecore"] {
+    --brand: 290 20% 50%;
+    --brand-hover: 290 20% 42%;
+    --brand-light: 290 20% 13%;
+    --brand-gradient-to: 300 15% 11%;
+    --brand-border-light: 290 15% 24%;
+    --brand-border: 290 15% 34%;
+    --brand-muted: 290 15% 45%;
+    --brand-dark: 290 20% 65%;
+    --brand-darker: 290 20% 78%;
+  }
+  .dark [data-theme="contractorlaw"] {
+    --brand: 344 25% 50%;
+    --brand-hover: 344 25% 42%;
+    --brand-light: 344 25% 13%;
+    --brand-gradient-to: 359 40% 11%;
+    --brand-border-light: 344 20% 24%;
+    --brand-border: 344 25% 34%;
+    --brand-muted: 344 25% 45%;
+    --brand-dark: 344 25% 65%;
+    --brand-darker: 344 20% 78%;
+  }
+  .dark [data-theme="excpt"] {
+    --brand: 287 100% 48%;
+    --brand-hover: 287 100% 40%;
+    --brand-light: 287 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 287 35% 24%;
+    --brand-border: 287 40% 34%;
+    --brand-muted: 287 40% 45%;
+    --brand-dark: 287 100% 65%;
+    --brand-darker: 287 90% 78%;
+  }
 
 }
 

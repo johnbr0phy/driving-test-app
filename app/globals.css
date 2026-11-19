@@ -5848,6 +5848,19 @@
     --brand-border-light: 258 40% 90%;
     --brand-gradient-to: 238 50% 96%;
   }
+  /* Juniper JNCIA-Junos theme: deep forest green (v2 exam; matches lib/v2/exams/jncia.ts theme) */
+  [data-theme="jncia"] {
+    --brand: 106 95% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 106 60% 96%;
+    --brand-hover: 106 95% 13%;
+    --brand-dark: 106 95% 12%;
+    --brand-darker: 106 85% 8%;
+    --brand-muted: 106 35% 70%;
+    --brand-border: 106 40% 82%;
+    --brand-border-light: 106 40% 90%;
+    --brand-gradient-to: 86 50% 96%;
+  }
   /* Microsoft PL-900 theme: vivid Power Platform magenta (v2 exam; matches lib/v2/exams/pl900.ts theme) */
   [data-theme="pl900"] {
     --brand: 314 100% 30%;
@@ -12299,6 +12312,17 @@
     --brand-muted: 20 45% 45%;
     --brand-dark: 20 90% 65%;
     --brand-darker: 20 85% 78%;
+  }
+  .dark [data-theme="jncia"] {
+    --brand: 106 95% 27.2%;
+    --brand-hover: 106 95% 19.2%;
+    --brand-light: 106 45% 13%;
+    --brand-gradient-to: 86 40% 11%;
+    --brand-border-light: 106 35% 24%;
+    --brand-border: 106 40% 34%;
+    --brand-muted: 106 35% 45%;
+    --brand-dark: 106 95% 65%;
+    --brand-darker: 106 85% 78%;
   }
   .dark [data-theme="pl900"] {
     --brand: 314 100% 42.8%;

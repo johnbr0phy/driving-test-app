@@ -817,6 +817,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
     source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
   },
+  jncia: {
+    answer:
+      "JNCIA-Junos (Junos, Associate) is Juniper Networks' entry-level certification for Junos OS, earned by passing exam JN0-106, which replaced JN0-105 on April 6, 2026. It covers networking fundamentals, Junos OS architecture (the Routing Engine and Packet Forwarding Engine), the CLI and configuration files, configuration basics, operational monitoring and maintenance, routing fundamentals, and routing policy and firewall filters, based on Junos OS 21.2. The exam has 65 multiple-choice questions in 90 minutes, in English, at Pearson VUE. Juniper reports pass or fail right after the exam and publishes no passing score. The certification is valid for three years, and there is no prerequisite.",
+    rows: [
+      { label: "Exam code", value: "JN0-106 (replaced JN0-105 on April 6, 2026)" },
+      { label: "Questions", value: "65 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Not published; pass or fail shown at the end" },
+      { label: "Software", value: "Junos OS 21.2" },
+      { label: "Language", value: "English" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "Juniper Networks, through Pearson VUE" },
+    ],
+    basedOn: "the Juniper Learning Portal JNCIA-Junos exam page and certification news, checked November 2026",
+    source: { name: "Juniper: Junos, Associate (JNCIA-Junos)", url: "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14354" },
+  },
   pl900: {
     answer:
       "PL-900, Microsoft Power Platform Fundamentals, is Microsoft's beginner exam for people starting to build solutions with Power Platform, and the only exam for the Microsoft Certified: Power Platform Fundamentals certification. It covers the business value of Power Platform, Microsoft Dataverse and environment administration, Power Apps, Power Automate and agents in Microsoft Copilot Studio. The skills measured as of July 24, 2026 dropped Power BI and the separate Power Pages area and added Copilot Studio at 20 to 25 percent. Candidates have 45 minutes; Microsoft publishes no question count for PL-900. Scores run from 1 to 1000 and 700 is needed to pass. Microsoft says the English exam will be updated on December 18, 2026. It is offered in English and 11 other languages, and the price depends on the country where it is taken.",

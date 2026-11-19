@@ -7,6 +7,9 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["jncia", "US", "jncia"],
+  ["jn0-105", "IN", "jncia"],
+  ["junos associate", "UK", "jncia"],
   ["pl-900", "US", "pl900"],
   ["power platform fundamentals", "IN", "pl900"],
   ["power apps certification", "UK", "pl900"],

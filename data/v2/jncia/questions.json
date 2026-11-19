@@ -177,11 +177,11 @@
     "skill": "Subnetting",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "How many usable host addresses does an IPv4 /27 subnet provide? Type the number only.",
-    "explanation": "A /27 leaves 5 host bits: 2 to the 5th is 32 addresses, minus the network and broadcast addresses, gives 30 usable hosts.",
+    "stem": "An interface is configured with 172.20.4.1/25. How many usable host addresses are in its subnet? Type the number only.",
+    "explanation": "A /25 leaves 7 host bits: 2 to the 7th is 128 addresses, minus the network and broadcast addresses, gives 126 usable hosts.",
     "numeric": {
       "answers": [
-        "30"
+        "126"
       ],
       "tolerance": 0,
       "wholeNumber": true
@@ -1185,9 +1185,9 @@
     "difficulty": 2,
     "format": "single",
     "stem": "An administrator has a complete configuration file saved as /var/tmp/R1-new.conf and wants it to replace the whole candidate configuration. Which command does this?",
-    "explanation": "$\\texttt{load override}$ discards the current candidate and loads the file as the whole configuration. $\\texttt{load merge}$ combines the file with the existing candidate, and $\\texttt{load patch}$ applies a change file made with $\\texttt{show | compare}$.",
+    "explanation": "$\\texttt{load override}$ discards the current candidate and loads the file as the whole configuration. $\\texttt{load merge}$ combines the file with the existing candidate, $\\texttt{load patch}$ applies a change file made with $\\texttt{show | compare}$, and $\\texttt{load set}$ reads a file of set commands.",
     "options": [
-      "$\\texttt{load update /var/tmp/R1-new.conf}$",
+      "$\\texttt{load set /var/tmp/R1-new.conf}$",
       "$\\texttt{load patch /var/tmp/R1-new.conf}$",
       "$\\texttt{load merge /var/tmp/R1-new.conf}$",
       "$\\texttt{load override /var/tmp/R1-new.conf}$"

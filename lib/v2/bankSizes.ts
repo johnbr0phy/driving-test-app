@@ -153,4 +153,5 @@ export const BANK_SIZES: Record<string, number> = {
   cobit: 195,
   ai901: 198,
   pl900: 198,
+  jncia: 186,
 };

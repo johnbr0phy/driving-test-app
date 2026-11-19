@@ -138,6 +138,45 @@ ${rows.join("\n")}
 const DASH = (v: EmailVoice, campaign: string) => dashboardUrl(v, campaign);
 const STATS = (v: EmailVoice, campaign: string) => statsUrl(v, campaign);
 
+/**
+ * The purchase receipt. A guest buyer (paid without signing in) is told which
+ * account Premium went to and how to sign in to it on another device.
+ */
+export function purchaseWelcomeHtml(
+  v: EmailVoice,
+  opts?: { guest?: { email: string; createdForGuest: boolean; signInLink?: string } },
+): string {
+  const campaign = "purchase_welcome";
+  const isV2 = EXAMS_V2.some((e) => e.id === v.id);
+  const knownPaidStats = v.id !== "unknown" && !isV2;
+  return emailShell({
+    eyebrow: "PURCHASE CONFIRMATION",
+    expression: 1,
+    voice: v,
+    title: EMAIL_INBOX.purchaseWelcome(v).subject,
+    preheader: EMAIL_INBOX.purchaseWelcome(v).preheader,
+    heading: "Your Premium access is ready.",
+    unsubscribe: false,
+    body: [
+      p("Your purchase is confirmed. Premium is active on your Tigertest account, on every device you sign in on."),
+      ...(opts?.guest
+        ? opts.guest.createdForGuest
+          ? [p(`We made your Tigertest account with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>, the email you paid with.${opts.guest.signInLink ? ` To use it on any device, open this email there and tap the button below: it signs you in, no password needed, for the next 7 days. After that, open the sign-in page and tap Forgot password to set a password (or use Sign in with Google if it is a Google address).` : ` To sign in on another device, open the sign-in page and tap Forgot password to set a password (or use Sign in with Google if it is a Google address).`}`)]
+          : [p(`Premium is on the Tigertest account you already had with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>. Sign in with that address to use it.`)]
+        : []),
+      p("Premium includes the DMV's extra training sets and practice tests, and full stats on exams where those require paid access."),
+      ...(knownPaidStats ? [p(`Start with your full ${v.shortName} stats.`)] : []),
+      ...(isV2 ? [p(`Your ${v.shortName} tests, drills, study plan and mistake notebook were already free. This purchase adds the account-wide Premium features above.`)] : []),
+      // A guest may open this on a device they never signed in on.
+      opts?.guest
+        ? cta(opts.guest.signInLink || `${SITE}/login`, "Sign In to Tigertest")
+        : cta(knownPaidStats ? STATS(v, campaign) : DASH(v, campaign), knownPaidStats ? `Open My ${v.shortName} Stats` : "Open Tigertest"),
+      p("Reply if anything looks wrong and a human will read it."),
+      signoff("Thanks,"),
+    ].join("\n"),
+  });
+}
+
 export type EmailTemplate = (voice: EmailVoice) => string;
 
 export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
@@ -245,29 +284,7 @@ export const EMAIL_TEMPLATES: Record<string, EmailTemplate> = {
   // Sent after confirmed payment. Context identifies the purchase page, not
   // the current exam. Unknown purchase context stays account-wide; v2 study
   // plans are free and must never be presented as a paid unlock.
-  purchaseWelcome: (v) => {
-    const campaign = "purchase_welcome";
-    const isV2 = EXAMS_V2.some((e) => e.id === v.id);
-    const knownPaidStats = v.id !== "unknown" && !isV2;
-    return emailShell({
-      eyebrow: "PURCHASE CONFIRMATION",
-      expression: 1,
-      voice: v,
-      title: EMAIL_INBOX.purchaseWelcome(v).subject,
-      preheader: EMAIL_INBOX.purchaseWelcome(v).preheader,
-      heading: "Your Premium access is ready.",
-      unsubscribe: false,
-      body: [
-        p("Your purchase is confirmed. Premium is active on your Tigertest account, on every device you sign in on."),
-        p("Premium includes the DMV's extra training sets and practice tests, and full stats on exams where those require paid access."),
-        ...(knownPaidStats ? [p(`Start with your full ${v.shortName} stats.`)] : []),
-        ...(isV2 ? [p(`Your ${v.shortName} tests, drills, study plan and mistake notebook were already free. This purchase adds the account-wide Premium features above.`)] : []),
-        cta(knownPaidStats ? STATS(v, campaign) : DASH(v, campaign), knownPaidStats ? `Open My ${v.shortName} Stats` : "Open Tigertest"),
-        p("Reply if anything looks wrong and a human will read it."),
-        signoff("Thanks,"),
-      ].join("\n"),
-    });
-  },
+  purchaseWelcome: (v) => purchaseWelcomeHtml(v),
 
   // 5+ days idle with at least one test completed.
   reengagement: (v) =>

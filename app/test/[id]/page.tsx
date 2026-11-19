@@ -1,5 +1,6 @@
 "use client";
 
+import { startCheckout } from "@/lib/startCheckout";
 import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
@@ -15,14 +16,10 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { useAuth } from "@/contexts/AuthContext";
-import { auth } from "@/lib/firebase";
-import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
+import { trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 import { DMV_ROUTES } from "@/lib/examRoutes";
-import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
-import { checkoutAttribution } from "@/lib/funnel";
 
 export default function TestPage() {
   const params = useParams();
@@ -44,48 +41,8 @@ export default function TestPage() {
   const isGuest = useStore((state) => state.isGuest);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const isPremium = hydrated ? hasPremiumAccess() : false;
-  const { user } = useAuth();
 
-  const handleUpgrade = async () => {
-    if (!user?.email || !user?.uid) {
-      router.push("/signup");
-      return;
-    }
-    try {
-      const idToken = await auth.currentUser?.getIdToken();
-      if (!idToken) {
-        alert("Authentication error. Please sign in again.");
-        return;
-      }
-      const response = await fetch("/api/stripe/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${idToken}`,
-        },
-        body: JSON.stringify({
-          email: user.email,
-          returnUrl: window.location.origin,
-          ...checkoutAttribution(),
-          paywallVariant: paywallVariantForCheckout(),
-          paywallHit: paywallHitForCheckout(),
-          paywallReturn: paywallReturnForCheckout(),
-          location: "practice_test_4",
-        }),
-      });
-      const data = await response.json();
-      if (data.error) {
-        alert(`Error: ${data.error}`);
-        return;
-      }
-      if (data.checkoutUrl) {
-        trackBeginCheckout("practice_test_4");
-        window.location.href = data.checkoutUrl;
-      }
-    } catch {
-      alert("Failed to start checkout. Please check your connection and try again.");
-    }
-  };
+  const handleUpgrade = () => startCheckout({ location: "practice_test_4" });
 
   const selectedState = useStore((state) => state.selectedState);
   const getCurrentTest = useStore((state) => state.getCurrentTest);

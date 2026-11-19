@@ -1143,7 +1143,14 @@ export const useStore = create<AppState>()(
         try {
           const userDoc = await getDoc(doc(db, 'users', userId));
           if (userDoc.exists()) {
-            return userDataHasProgress(userDoc.data());
+            const data = userDoc.data();
+            // An account a guest checkout made ("gc_") starts with nothing but
+            // Premium: that alone is not progress to protect from the guest's.
+            if (userId.startsWith('gc_') && data?.subscription) {
+              const { subscription: _premium, ...rest } = data;
+              return userDataHasProgress(rest);
+            }
+            return userDataHasProgress(data);
           }
           return false;
         } catch (error) {
@@ -1427,6 +1434,15 @@ export const useStore = create<AppState>()(
         // we're about to push the local guest state up — there's no remote
         // record to wait on, and gated UI shouldn't block.
         set({ userId, isGuest: false, firestoreLoaded: true, loadedUid: userId });
+        // The account may already hold a purchase (a guest checkout, or bought
+        // before practising): show it. Saves never write subscription.
+        try {
+          const snap = await getDoc(doc(db, 'users', userId));
+          const sub = snap.data()?.subscription;
+          if (sub?.isPremium === true) set({ subscription: sub });
+        } catch (error) {
+          console.error('Reading the account\'s purchase failed:', error);
+        }
         // Save all existing guest progress to Firestore
         await get().saveToFirestore();
       },

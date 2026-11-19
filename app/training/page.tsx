@@ -1,5 +1,6 @@
 "use client";
 
+import { startCheckout } from "@/lib/startCheckout";
 import { useState, useEffect, Suspense, useRef, useCallback } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
@@ -22,18 +23,14 @@ import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { states } from "@/data/states";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { useAuth } from "@/contexts/AuthContext";
-import { auth } from "@/lib/firebase";
-import { trackBeginCheckout, trackStatsEntry } from "@/lib/analytics";
+import { trackStatsEntry } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
-import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { useSharePrompt } from "@/hooks/useSharePrompt";
 import { SharePromptStep } from "@/components/SharePromptStep";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { v1GuestCounts } from "@/components/GuestSaveCard";
-import { checkoutAttribution } from "@/lib/funnel";
 
 function TrainingPageContent() {
   const router = useRouter();
@@ -47,7 +44,6 @@ function TrainingPageContent() {
   const selectedState = useStore((state) => state.selectedState);
   const isGuest = useStore((state) => state.isGuest);
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
-  const { user } = useAuth();
   const [paywallOpen, setPaywallOpen] = useState(false);
   // Picked after mount so the server HTML and first client render match.
   const [ctaIndex, setCtaIndex] = useState(0);
@@ -61,46 +57,7 @@ function TrainingPageContent() {
   const dmvAnswered = v1GuestCounts(selectedState, completedTests, trainingAnswerHistory).answered;
   const sharePrompt = useSharePrompt(hydrated && premiumReady && !isPremium && language === "en", dmvAnswered, "dmv_training");
 
-  const handleUpgrade = async () => {
-    if (!user?.email || !user?.uid) {
-      router.push("/signup");
-      return;
-    }
-    try {
-      const idToken = await auth.currentUser?.getIdToken();
-      if (!idToken) {
-        alert("Authentication error. Please sign in again.");
-        return;
-      }
-      const response = await fetch("/api/stripe/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${idToken}`,
-        },
-        body: JSON.stringify({
-          email: user.email,
-          returnUrl: window.location.origin,
-          ...checkoutAttribution(),
-          paywallVariant: paywallVariantForCheckout(),
-          paywallHit: paywallHitForCheckout(),
-          paywallReturn: paywallReturnForCheckout(),
-          location: "training_set_4",
-        }),
-      });
-      const data = await response.json();
-      if (data.error) {
-        alert(`Error: ${data.error}`);
-        return;
-      }
-      if (data.checkoutUrl) {
-        trackBeginCheckout("training_set_4");
-        window.location.href = data.checkoutUrl;
-      }
-    } catch {
-      alert("Failed to start checkout. Please check your connection and try again.");
-    }
-  };
+  const handleUpgrade = () => startCheckout({ location: "training_set_4" });
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);

@@ -4,10 +4,13 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { sendDurableEmail } from '@/lib/server/durableEmail';
 import { makePurchaseRetryPolicy } from '@/lib/server/emailRetryPolicy';
 import { EMAIL_INBOX } from '@/lib/email-inbox';
-import { EMAIL_TEMPLATES } from '@/lib/email-templates';
+import { purchaseWelcomeHtml } from '@/lib/email-templates';
 import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
+import { FieldValue } from 'firebase-admin/firestore';
 import { purchaseExam } from '@/lib/purchaseAttribution';
+import { guestSignInLink, isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
+import { SITE_URL } from '@/lib/siteUrl';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -45,8 +48,19 @@ export async function POST(request: NextRequest) {
 
       if (session.payment_status !== 'paid') return NextResponse.json({ received: true, skipped: 'unpaid' });
 
-      // Get user ID from metadata
-      const userId = session.metadata?.userId;
+      // The buyer's account: in the metadata when they were signed in, or
+      // found or made from the email they typed into Stripe as a guest.
+      let userId = session.metadata?.userId;
+      let guestBuyer: GuestBuyer | null = null;
+      if (!userId && isGuestSession(session)) {
+        try {
+          guestBuyer = await resolveGuestBuyer(session);
+          userId = guestBuyer.uid;
+        } catch (err) {
+          console.error(`[webhook] guest checkout ${session.id} has no account yet:`, err);
+          return NextResponse.json({ error: 'Guest account pending; retry required' }, { status: 503 });
+        }
+      }
       if (!userId) {
         console.error('No userId in session metadata');
         return NextResponse.json(
@@ -71,6 +85,7 @@ export async function POST(request: NextRequest) {
         const [fulfilled, user, payment] = await Promise.all([tx.get(checkoutRef), tx.get(userRef), tx.get(paymentRef)]);
         if (fulfilled.exists) {
           if (fulfilled.data()?.userId !== userId) throw new Error('Checkout ownership mismatch');
+          if (fulfilled.data()?.duplicateGuestPurchase === true) return 'duplicate';
           return fulfilled.data()?.legacyProcessed === true ? 'legacy' : 'current';
         }
         const data = user.data() ?? {};
@@ -88,6 +103,13 @@ export async function POST(request: NextRequest) {
             reconciledAt: new Date().toISOString() });
           return 'legacy';
         }
+        // A guest who paid with the email of an account that already has
+        // Premium bought nothing new: refunded below, never granted twice.
+        if (guestBuyer && data.subscription?.isPremium === true) {
+          tx.set(checkoutRef, { userId, eventId: event.id, duplicateGuestPurchase: true,
+            stripePaymentIntentId: paymentIntentId ?? null, fulfilledAt: new Date().toISOString() });
+          return 'duplicate';
+        }
         const receiptExam = checkoutExam ?? (isKnownExamId(data.firstSignupExamId) ? data.firstSignupExamId : null);
         tx.set(userRef, {
           subscription: { isPremium: true, purchasedAt: new Date().toISOString(),
@@ -101,6 +123,35 @@ export async function POST(request: NextRequest) {
         return 'current';
       });
       if (fulfillmentStatus === 'legacy') return NextResponse.json({ received: true, skipped: 'legacy_processed' });
+      if (fulfillmentStatus === 'duplicate') {
+        // Idempotent: a retried event refunds nothing twice.
+        if (paymentIntentId) {
+          try {
+            await stripe.refunds.create({ payment_intent: paymentIntentId, reason: 'duplicate' }, { idempotencyKey: `guest-duplicate-${session.id}` });
+          } catch (err) {
+            const code = (err as { code?: string; type?: string })?.code;
+            const type = (err as { type?: string })?.type;
+            // Refunded by hand already: done.
+            if (code !== 'charge_already_refunded') {
+              // A request Stripe will always refuse (Stripe also replays it for
+              // this idempotency key for a day) is recorded for a person to
+              // refund by hand; retrying it would only loop for days.
+              if (type === 'StripeInvalidRequestError') {
+                console.error(`[webhook] duplicate guest purchase ${session.id} cannot be refunded:`, err);
+                await adminDb.collection('guestCheckoutProblems').doc(session.id).set({
+                  problem: 'duplicate_refund_failed', userId, paymentIntentId,
+                  error: String((err as Error)?.message ?? err).slice(0, 300), at: new Date().toISOString(),
+                }, { merge: true });
+                return NextResponse.json({ received: true, skipped: 'duplicate_refund_failed' });
+              }
+              console.error(`[webhook] duplicate guest purchase ${session.id} not refunded yet:`, err);
+              return NextResponse.json({ error: 'Refund pending; retry required' }, { status: 503 });
+            }
+          }
+        }
+        console.log(`Guest purchase ${session.id} refunded: account ${userId} already had Premium`);
+        return NextResponse.json({ received: true, skipped: 'already_premium_refunded' });
+      }
 
       // What Stripe settled in dollars, for /admin revenue when the buyer paid
       // in another currency (lib/pricing.ts). Best-effort: a failed lookup
@@ -132,7 +183,9 @@ export async function POST(request: NextRequest) {
         amountUsdCents,
         country: session.metadata?.country || null,
         status: 'succeeded',
-        email: session.metadata?.email || session.customer_email,
+        email: session.metadata?.email || session.customer_email || session.customer_details?.email || null,
+        // Paid without being signed in (lib/server/guestCheckout.ts).
+        guestCheckout: guestBuyer ? (guestBuyer.createdForGuest ? 'new_account' : 'existing_account') : null,
         // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.
         location: session.metadata?.location || null,
         exam: checkoutExam,
@@ -162,12 +215,21 @@ export async function POST(request: NextRequest) {
           uid: userId, dedupeKey: `purchase/${session.id}`, emailKey: `purchaseWelcome:${session.id}`,
           payload: { to: buyer.email, subject: EMAIL_INBOX.purchaseWelcome(voiceFor(fulfillment?.examId)).subject,
             replyTo: process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io',
-            html: EMAIL_TEMPLATES.purchaseWelcome(voiceFor(fulfillment?.examId)), kind: 'transactional' },
+            html: purchaseWelcomeHtml(voiceFor(fulfillment?.examId), guestBuyer ? { guest: {
+              ...guestBuyer,
+              // One-tap sign-in on another device, for accounts made here.
+              signInLink: guestBuyer.createdForGuest ? await guestSignInLink(session.id, guestBuyer, SITE_URL) : undefined,
+            } } : undefined), kind: 'transactional' },
           retryPolicy: makePurchaseRetryPolicy((await userRef.get()).data()?.subscription),
           eligible: data => data.subscription?.isPremium === true,
         });
         if (!['sent', 'already_sent'].includes(outcome)) {
           throw new Error(`Receipt pending reconciliation: ${outcome}`);
+        }
+        // A guest-made account's receipt is its welcome: the hourly backstop
+        // must not follow it with a "pick your test" signup email.
+        if (guestBuyer?.createdForGuest) {
+          await userRef.set({ emailsSent: FieldValue.arrayUnion('welcome'), emailConsent: (await userRef.get()).data()?.emailConsent ?? false }, { merge: true });
         }
       } catch (mailErr) {
         console.error(`[webhook] receipt pending for ${session.id}:`, mailErr);

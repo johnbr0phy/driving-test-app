@@ -119,20 +119,30 @@ export function SupportPaywallModal({
         ) : (
           <div className="flex flex-col items-center gap-1">
             <Button
-              onClick={isGuest ? onSignUp : handleUpgrade}
+              onClick={isGuest && isNative ? onSignUp : handleUpgrade}
               disabled={loading}
               className="w-full bg-brand hover:bg-brand-hover text-white font-semibold py-6 text-base rounded-full"
             >
               {loading ? (
                 "Loading..."
               ) : (
-                isGuest ? "Sign up free to chip in" : `Chip in ${price}`
+                isGuest && isNative ? "Sign up free to chip in" : `Chip in ${price}`
               )}
             </Button>
-            {!isGuest && (
+            {!(isGuest && isNative) && (
               <div className="text-sm font-medium text-gray-600 dark:text-gray-300">
                 One-time payment
               </div>
+            )}
+            {/* Guests pay without an account; Stripe's email makes one. */}
+            {isGuest && !isNative && onSignUp && (
+              <button
+                onClick={onSignUp}
+                disabled={loading}
+                className="text-sm text-gray-600 dark:text-gray-300 py-1 disabled:opacity-50"
+              >
+                Or <span className="underline">create a free account</span> first
+              </button>
             )}
             <button
               onClick={() => onOpenChange(false)}

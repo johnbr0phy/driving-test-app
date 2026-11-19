@@ -225,6 +225,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  bowhunter: {
+    answer:
+      "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or buy an archery license; others accept a general hunter education course. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",
+    rows: [
+      { label: "Program", value: "International Bowhunter Education Program (NBEF)" },
+      { label: "Content standard", value: "IHEA-USA bowhunter education standards" },
+      { label: "Who requires it", value: "Some states and provinces; check your own" },
+      { label: "Question count and pass mark", value: "Set by each state's course" },
+      { label: "Formats", value: "Online course or instructor-led class" },
+      { label: "Covers", value: "Equipment, crossbows, tree stands, shot placement, recovery, ethics" },
+    ],
+    basedOn: "the IHEA-USA bowhunter education standards (hosted by NBEF) and the NBEF-approved course study guide, checked November 2026",
+    source: { name: "National Bowhunter Education Foundation", url: "https://nbef.org/" },
+  },
   pesticide: {
     answer:
       "Anyone who uses or supervises restricted use pesticides in the US must be certified by a state, tribe or federal agency under 40 CFR 171. Commercial applicators pass a written core exam on the general standards every applicator needs (label comprehension, safety, the environment, pests, pesticides, equipment, application methods, laws, supervising noncertified applicators and professionalism) plus an exam for each category of work; private applicators, who produce agricultural commodities, are certified to a similar general standard. Federal rules require the exam to be written and proctored, with photo ID (government-issued or another form the agency accepts) and only reference materials the agency approves, and commercial applicators must be at least 18. Each certifying authority sets its own question count, time limit and passing score. Certification lasts at most five years before recertification by exam or continuing education.",

@@ -19,6 +19,7 @@ export const TEACHES: Record<string, string> = {
   r410a: "an HVAC program or refrigerant safety class",
   backflow: "a backflow tester certification course",
   pesticide: "a pesticide applicator training course",
+  bowhunter: "a bowhunter education class",
   ascpmls: "an MLS program",
   ascpht: "a histotechnician program",
   esthetician: "at an esthetics school",

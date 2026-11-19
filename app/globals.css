@@ -5639,6 +5639,19 @@
     --brand-border-light: 70 30% 88%;
     --brand-gradient-to: 80 60% 94%;
   }
+  /* Bowhunter education theme: dark chestnut bark */
+  [data-theme="bowhunter"] {
+    --brand: 14 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 14 60% 95%;
+    --brand-hover: 14 50% 14%;
+    --brand-dark: 14 50% 12%;
+    --brand-darker: 14 50% 8%;
+    --brand-muted: 14 30% 68%;
+    --brand-border: 14 30% 78%;
+    --brand-border-light: 14 30% 88%;
+    --brand-gradient-to: 24 60% 94%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -11975,6 +11988,17 @@
     --brand-muted: 70 35% 45%;
     --brand-dark: 70 80% 65%;
     --brand-darker: 70 80% 78%;
+  }
+  .dark [data-theme="bowhunter"] {
+    --brand: 14 50% 48%;
+    --brand-hover: 14 50% 40%;
+    --brand-light: 14 45% 13%;
+    --brand-gradient-to: 24 40% 11%;
+    --brand-border-light: 14 30% 24%;
+    --brand-border: 14 30% 34%;
+    --brand-muted: 14 30% 45%;
+    --brand-dark: 14 50% 65%;
+    --brand-darker: 14 50% 78%;
   }
   .dark [data-theme="natecore"] {
     --brand: 290 20% 50%;

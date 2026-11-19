@@ -6796,6 +6796,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
     source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
   },
+  titleagent: {
+    answer:
+      "The title insurance agent exam is the licensing test a state insurance department requires before someone can issue title insurance policies as an agent or title producer. There is no national exam: each state sets its own, usually through PSI, Pearson VUE or Prometric, with a general part on title insurance, real property, search, closing and federal rules and a part on that state's law. Alabama's has 150 questions in 180 minutes with 105 correct needed; Ohio's has 100 in 2 hours with a 70% passing score; Pennsylvania's has 60 scored items in 80 minutes.",
+    rows: [
+      { label: "Run by", value: "Each state's insurance department, through a test vendor" },
+      { label: "Questions", value: "Varies: 150 (Alabama), 100 (Ohio), 60 (Pennsylvania)" },
+      { label: "Time", value: "Varies: 180 min (AL), 2 hours (OH), 80 min (PA)" },
+      { label: "Pass mark", value: "Set by each state; 70% in Alabama (105 of 150) and Ohio" },
+      { label: "Content", value: "Real property, title policies and commitments, search and clearing title, escrow and closing, federal rules, plus state law" },
+      { label: "Policy forms", value: "2021 ALTA commitment, owner's and loan policies" },
+      { label: "Where", value: "Vendor test centers; booking and fees vary by state" },
+    ],
+    basedOn: "The Alabama DOI title agent outline (rev. July 2023), Ohio PSI Series 11-37 and Pennsylvania PSI Series 16-10 (effective March 2026) outlines, checked November 2026",
+    source: { name: "Alabama DOI: Title Insurance Agent Examination Content Outline", url: "https://aldoi.gov/PDF/Licensing/2023TitleOutline.pdf" },
+  },
   aswbbach: {
     answer:
       "The ASWB Bachelors exam is the Association of Social Work Boards licensing exam for basic generalist practice by social workers with a bachelor's degree in social work; states that license bachelor-level social workers use it for licenses such as the LBSW or LSW, and ASWB's Associate exam uses the same questions. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The outline has three content areas: Values and Ethics 35%, Assessment and Planning 33%, and Intervention and Practice 32%, with more recall questions than the Masters and Clinical exams. The result is pass or fail, with the number of correct answers needed set for each exam form.",

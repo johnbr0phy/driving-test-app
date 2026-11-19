@@ -5691,6 +5691,19 @@
     --brand-border-light: 252 60% 90%;
     --brand-gradient-to: 266 80% 97%;
   }
+  /* Title insurance agent theme: vivid violet (296 100% 36%) */
+  [data-theme="titleagent"] {
+    --brand: 296 100% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 296 80% 97%;
+    --brand-hover: 296 100% 30%;
+    --brand-dark: 296 100% 23%;
+    --brand-darker: 296 90% 15%;
+    --brand-muted: 296 55% 72%;
+    --brand-border: 296 65% 83%;
+    --brand-border-light: 296 60% 91%;
+    --brand-gradient-to: 280 80% 97%;
+  }
   /* ASWB Bachelors theme: raspberry (337 100% 42%) */
   [data-theme="aswbbach"] {
     --brand: 337 100% 42%;
@@ -12088,6 +12101,17 @@
     --brand-muted: 48 30% 45%;
     --brand-dark: 48 40% 65%;
     --brand-darker: 48 40% 78%;
+  }
+  .dark [data-theme="titleagent"] {
+    --brand: 296 100% 42.7%;
+    --brand-hover: 296 100% 34.7%;
+    --brand-light: 296 45% 13%;
+    --brand-gradient-to: 280 40% 11%;
+    --brand-border-light: 296 35% 24%;
+    --brand-border: 296 40% 34%;
+    --brand-muted: 296 45% 45%;
+    --brand-dark: 296 100% 65%;
+    --brand-darker: 296 90% 78%;
   }
   .dark [data-theme="aswbbach"] {
     --brand: 337 100% 45.4%;

@@ -214,7 +214,12 @@ export function flushClassProgress() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ memberId: q.memberId, answers: q.answers.slice(0, 200), tests: q.tests }),
       keepalive: true,
-    }).catch(() => {});
+    })
+      .then((res) => {
+        // 410: the teacher deleted the class, so stop reporting and drop the banner.
+        if (res.status === 410) leaveClass(code);
+      })
+      .catch(() => {});
   }
 }
 

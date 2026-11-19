@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import type { ExamV2Config } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
-import { drillKey, drillQuestions } from "@/lib/v2/training";
+import { v1CarryOverPatch } from "@/lib/v2/training";
 import { useV2Store } from "@/store/useV2Store";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
@@ -25,23 +25,7 @@ export function V1ProgressCarryOver({ exam }: { exam: ExamV2Config }) {
 
   useEffect(() => {
     if (!hydrated || !exam.fromV1) return;
-    const patch: Record<string, { masteredIds: string[]; wrongQueue: string[]; seen: number; correct: number }> = {};
-    for (const drill of exam.drills) {
-      const key = drillKey(exam.id, drill.key);
-      const setIds = exam.fromV1.drills[drill.key];
-      if (!setIds || drills[key]) continue;
-      const ids = new Set(drillQuestions(getBank(exam.id).questions, drill, exam).map((q) => q.id));
-      const mastered = new Set<string>();
-      const wrong = new Set<string>();
-      for (const id of setIds) {
-        const v1 = trainingSets[id];
-        if (!v1) continue;
-        v1.masteredIds.forEach((q) => ids.has(q) && mastered.add(q));
-        v1.wrongQueue.forEach((q) => ids.has(q) && !mastered.has(q) && wrong.add(q));
-      }
-      if (mastered.size === 0 && wrong.size === 0) continue;
-      patch[key] = { masteredIds: [...mastered], wrongQueue: [...wrong], seen: mastered.size + wrong.size, correct: mastered.size };
-    }
+    const patch = v1CarryOverPatch(exam, getBank(exam.id).questions, trainingSets, drills);
     if (Object.keys(patch).length) seedDrills(patch);
   }, [hydrated, exam, trainingSets, drills, seedDrills]);
 

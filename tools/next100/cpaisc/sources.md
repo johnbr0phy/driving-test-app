@@ -72,6 +72,11 @@ question, sample test, commercial review course or app item was used. Checked 20
   https://www.aicpa-cima.com/category/resources/audit-assurance/audit-and-assurance-greater-than-soc-3
   (title checked via search 2026-11-19; the page body did not render): SOC 3 is the general use
   report.
+- AICPA, Journal of Accountancy, "3 faces of SOC" (June 2016),
+  https://www.journalofaccountancy.com/newsletters/2016/jun/3-face-of-soc/ (fetched 2026-11-19 by
+  the second reviewer): SOC 3 covers the SOC 2 subject matter, its use and distribution is not
+  restricted, and it does not include a description of the service auditor's tests of controls
+  and results. Confirms the SOC 3 general-use and "leaves out tests and results" items.
 
 ## Security, privacy and IT frameworks and law
 - NIST CSWP 29, The NIST Cybersecurity Framework (CSF) 2.0, February 26, 2024,
@@ -93,6 +98,10 @@ question, sample test, commercial review course or app item was used. Checked 20
   (both fetched 2026-11-19): the seven components of a governance system; design factors; six
   governance system principles and three framework principles (counts only). The COBIT 2019
   framework PDF itself needs an ISACA login, so principle names are not asked.
+  Second reviewer, 2026-11-19: re-read the 2018 article, which lists the seven components word
+  for word (processes; organizational structures; information flows and items; people, skills and
+  competencies; culture, ethics and behavior; policies and procedures; services, infrastructure
+  and applications). ISACA owns COBIT, so this is the framework owner's own statement.
 - PCI SSC, "Payment Card Industry Data Security Standard: Requirements and Testing Procedures,
   v4.0.1" (June 2024), the Council's PDF as hosted at
   https://www.middlebury.edu/sites/default/files/2025-01/PCI-DSS-v4_0_1.pdf (fetched 2026-11-19;

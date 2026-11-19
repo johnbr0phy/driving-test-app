@@ -1446,14 +1446,14 @@
     "state": "ALL",
     "questionId": "CPAISC-THR-004",
     "category": "cpaiscThreats",
-    "question": "An attacker types ' OR 1=1 -- into a login form's user name field. This is:",
-    "optionA": "Cross-site scripting",
-    "optionB": "Buffer overflow",
-    "optionC": "Replay attack",
-    "optionD": "SQL injection",
+    "question": "Typing ' OR 1=1 -- into a login form's user name field lets an attacker in without a password. The attack works because the application:",
+    "optionA": "Stores passwords as salted hashes",
+    "optionB": "Limits login attempts per minute",
+    "optionC": "Encrypts its traffic with TLS",
+    "optionD": "Builds its query from raw user input",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The input changes the database query's logic so the condition is always true. Validating input and using parameterized queries prevent it."
+    "explanation": "This is SQL injection: the input is pasted into the database query and changes its logic so the condition is always true. Salted hashes, login limits and TLS are sound controls that do not stop it; validating input and using parameterized queries do."
   },
   {
     "type": "CPAISC",
@@ -1684,14 +1684,14 @@
     "state": "ALL",
     "questionId": "CPAISC-MIT-005",
     "category": "cpaiscMitigation",
-    "question": "Using firewalls, endpoint protection and access controls together, so one failed control does not expose data, is:",
-    "optionA": "Defense in depth",
-    "optionB": "Single sign-on",
-    "optionC": "Security through obscurity",
-    "optionD": "Least privilege",
+    "question": "A company follows defense in depth. An attacker gets past its perimeter firewall. What should the design ensure?",
+    "optionA": "Other layers can still stop the attack",
+    "optionB": "The firewall rules are reset at once",
+    "optionC": "Every user is locked out of the network",
+    "optionD": "Insurance pays any loss straight away",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Defense in depth layers different controls so an attacker must defeat several. Least privilege limits each user's rights but is one layer, not the layering itself."
+    "explanation": "Defense in depth layers different controls, such as network, endpoint, access and data controls, so the failure of one layer does not expose the asset. Resetting the firewall or locking everyone out is not what layering provides, and insurance transfers loss rather than stopping an attack."
   },
   {
     "type": "CPAISC",
@@ -1964,14 +1964,14 @@
     "state": "ALL",
     "questionId": "CPAISC-CNF-005",
     "category": "cpaiscPrivacy",
-    "question": "Replacing a card number with a random surrogate value, with the real number kept in a secured vault, is:",
-    "optionA": "Tokenization",
-    "optionB": "Hashing",
-    "optionC": "Static data masking",
-    "optionD": "Compression",
+    "question": "A retailer swaps the card numbers it stores for random tokens, with the mapping kept in a secured vault. Unlike an encrypted card number, a token:",
+    "optionA": "Can't be reversed without the vault",
+    "optionB": "Is read back with the same secret key",
+    "optionC": "Is derived from the card number itself",
+    "optionD": "May be stored with the card's CVV code",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A token has no mathematical link to the card number; only the vault can map it back. A hash is derived from the input itself."
+    "explanation": "A token has no mathematical link to the card number, so only a lookup in the vault maps it back. Encrypted data can be decrypted with the key, a hash is derived from the input, and PCI DSS never allows the card verification code to be stored after authorization."
   },
   {
     "type": "CPAISC",
@@ -1992,14 +1992,14 @@
     "state": "ALL",
     "questionId": "CPAISC-CNF-007",
     "category": "cpaiscPrivacy",
-    "question": "A tool that blocks outgoing emails containing card numbers or Social Security numbers is:",
-    "optionA": "Intrusion detection",
-    "optionB": "Spam filtering",
-    "optionC": "Data loss prevention",
-    "optionD": "Web application firewall",
+    "question": "A data loss prevention tool scans the files saved on a shared network drive for card numbers. Which state of data is it protecting?",
+    "optionA": "Data in motion",
+    "optionB": "Data in use",
+    "optionC": "Data at rest",
+    "optionD": "Data in transit",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "DLP inspects data in motion, at rest or in use and blocks sensitive data from leaving. A spam filter screens incoming mail."
+    "explanation": "DLP can watch data in motion (crossing the network), at rest (stored, as on a shared drive) and in use (open on an endpoint). Files sitting on a drive are data at rest; data in transit is another name for data in motion."
   },
   {
     "type": "CPAISC",

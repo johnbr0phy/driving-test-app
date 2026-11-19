@@ -57,7 +57,7 @@ ITEMS = [
       ans=6 / (1 - 1 / 3)),
     S(2, 2, "Determinants", r"What is the value of $\begin{vmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 10 \end{vmatrix}$?",
       ["-3", "3", "0", "15"],
-      r"Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 is a sign slip on the middle cofactor, and 15 takes the last minor as $35 - 32$.",
+      r"Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 reverses the sign of the whole expansion, and 15 takes the last minor as $35 - 32$.",
       ans=1 * (50 - 48) - 2 * (40 - 42) + 3 * (32 - 35)),
     S(2, 3, "Permutations and combinations", "A committee of 3 men and 2 women is chosen from 6 men and 5 women. How many committees are possible?",
       ["200", "1200", "462", "2400"],
@@ -83,7 +83,7 @@ ITEMS = [
       r"Put $x = 1$: $(2 - 1)^7 = 1$. 128 is $2^7$, the sum of the binomial coefficients $^7C_r$, which ignores the 2 and the minus sign.",
       ans=(2 * 1 - 1) ** 7),
     S(0, 3, "Sequences and series", "A student in Bengaluru saves 500 rupees in the first month and 50 rupees more each month after that. How much is saved in 2 years?",
-      ["25800 rupees", "27000 rupees", "12900 rupees", "24600 rupees"],
-      r"This is an AP with $a = 500$, $d = 50$, $n = 24$: $S_{24} = 12[2(500) + 23(50)] = 12 \times 2150 = 25800$. 27000 uses $24d$ instead of $23d$, and 12900 forgets that $\frac{n}{2}$ is 12, not 6.",
+      ["25800 rupees", "9300 rupees", "12900 rupees", "1650 rupees"],
+      r"This is an AP with $a = 500$, $d = 50$, $n = 24$: $S_{24} = 12[2(500) + 23(50)] = 12 \times 2150 = 25800$. 12900 takes $\frac{n}{2}$ as 6 instead of 12, 9300 counts only 12 months, $6[2(500) + 11(50)]$, and 1650 is the 24th month's saving alone, $500 + 23(50)$.",
       ans=12 * (1000 + 23 * 50)),
 ]

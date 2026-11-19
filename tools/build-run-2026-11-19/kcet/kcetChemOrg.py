@@ -27,7 +27,7 @@ ITEMS = [
       "SN2 is one concerted step in which the nucleophile attacks as the halide leaves, so both concentrations appear and the reaction is second order. A rate depending on [RX] only is the SN1 case."),
     S(1, 2, HAL, "Which alkyl chloride is hydrolysed fastest by the SN1 mechanism?",
       ["2-Chloro-2-methylpropane", "1-Chloro-2-methylpropane", "2-Chlorobutane", "Chloromethane"],
-      "SN1 goes through a carbocation, and 2-chloro-2-methylpropane gives the stable tertiary cation. 1-Chloro-2-methylpropane is a primary halide despite its branched chain, so its cation is the least stable of the three."),
+      "SN1 goes through a carbocation, and 2-chloro-2-methylpropane gives the stable tertiary cation. 1-Chloro-2-methylpropane is a primary halide despite its branched chain, so it would give an unstable primary cation; chloromethane would give the even less stable methyl cation."),
     S(1, 2, ALC, "Ethanol heated with concentrated H₂SO₄ at 443 K gives mainly:",
       ["Ethene", "Ethoxyethane", "Ethanal", "Ethanoic acid"],
       "At 443 K the protonated alcohol loses water intramolecularly to give ethene. Ethoxyethane is the main product at the lower temperature of 413 K with excess ethanol. Sulphuric acid here dehydrates, it does not oxidise."),

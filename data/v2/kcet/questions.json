@@ -31,16 +31,16 @@
     "skill": "Electric charges and fields",
     "stem": "Two point charges of +2 µC and +8 µC are 30 cm apart in air. What force does each exert on the other?",
     "options": [
-      "0.48 N",
       "1.6 N",
       "5.33 N",
+      "6.4 N",
       "160 N"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$F = \\frac{kq_1q_2}{r^2} = \\frac{9 \\times 10^9 \\times 2 \\times 10^{-6} \\times 8 \\times 10^{-6}}{0.3^2} = 1.6$ N. 0.48 N divides by $r$ instead of $r^2$, 5.33 N divides by $r^3$, and 160 N comes from taking 30 cm as 0.03 m."
+    "explanation": "$F = \\frac{kq_1q_2}{r^2} = \\frac{9 \\times 10^9 \\times 2 \\times 10^{-6} \\times 8 \\times 10^{-6}}{0.3^2} = 1.6$ N. 6.4 N uses half the separation, 5.33 N divides by $r^3$, and 160 N comes from taking 30 cm as 0.03 m."
   },
   {
     "id": "KCET-T1-003",
@@ -118,16 +118,16 @@
     "skill": "Electrostatic potential and capacitance",
     "stem": "A 4 µF parallel-plate capacitor has its plate gap halved and then filled with a dielectric of constant 5. What is its new capacitance?",
     "options": [
+      "8 µF",
       "10 µF",
       "20 µF",
-      "40 µF",
-      "80 µF"
+      "40 µF"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$C = \\frac{K\\varepsilon_0 A}{d}$, so the dielectric multiplies $C$ by 5 and halving $d$ doubles it: $4 \\times 5 \\times 2 = 40$ µF. 10 µF halves instead of doubling, and 20 µF ignores the change in gap."
+    "explanation": "$C = \\frac{K\\varepsilon_0 A}{d}$, so the dielectric multiplies $C$ by 5 and halving $d$ doubles it: $4 \\times 5 \\times 2 = 40$ µF. 10 µF halves instead of doubling, 20 µF ignores the change in gap, and 8 µF ignores the dielectric."
   },
   {
     "id": "KCET-T1-007",
@@ -162,16 +162,16 @@
     "skill": "Ray optics",
     "stem": "Glass has refractive index √2. What is its critical angle for light going from glass to air?",
     "options": [
+      "22.5°",
       "30°",
-      "45°",
-      "60°",
-      "90°"
+      "41.8°",
+      "45°"
     ],
     "correct": [
-      1
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$\\sin C = \\frac{1}{n} = \\frac{1}{\\sqrt{2}}$, so $C = 45°$. 30° would need $n = 2$, and 60° would need $n \\approx 1.15$."
+    "explanation": "$\\sin C = \\frac{1}{n} = \\frac{1}{\\sqrt{2}}$, so $C = 45°$. 30° would need $n = 2$, 41.8° is the critical angle for $n = 1.5$, and 22.5° halves the right value."
   },
   {
     "id": "KCET-T1-009",
@@ -207,15 +207,15 @@
     "stem": "A wire of resistance 12 Ω is stretched uniformly to twice its length. What is its new resistance?",
     "options": [
       "6 Ω",
+      "12 Ω",
       "24 Ω",
-      "48 Ω",
-      "96 Ω"
+      "48 Ω"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "The volume stays fixed, so doubling the length halves the area, and $R = \\frac{\\rho l}{A}$ rises by $2 \\times 2 = 4$: $R = 48$ Ω. 24 Ω forgets that the wire also gets thinner."
+    "explanation": "The volume stays fixed, so doubling the length halves the area, and $R = \\frac{\\rho l}{A}$ rises by $2 \\times 2 = 4$: $R = 48$ Ω. 24 Ω forgets that the wire also gets thinner, 6 Ω halves instead of multiplying, and 12 Ω assumes stretching changes nothing."
   },
   {
     "id": "KCET-T1-011",
@@ -250,16 +250,16 @@
     "skill": "Wave optics",
     "stem": "In a double-slit experiment, the slits are 0.5 mm apart, the screen is 1 m away and λ = 600 nm. What is the fringe width?",
     "options": [
-      "0.12 mm",
-      "0.6 mm",
       "1.2 mm",
-      "2.4 mm"
+      "2.4 mm",
+      "12 mm",
+      "24 mm"
     ],
     "correct": [
-      2
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\beta = \\frac{\\lambda D}{d} = \\frac{600 \\times 10^{-9} \\times 1}{0.5 \\times 10^{-3}} = 1.2 \\times 10^{-3}$ m $= 1.2$ mm. 0.6 mm halves the result, as if the slit gap were doubled, and 0.12 mm is a power-of-ten slip."
+    "explanation": "$\\beta = \\frac{\\lambda D}{d} = \\frac{600 \\times 10^{-9} \\times 1}{0.5 \\times 10^{-3}} = 1.2 \\times 10^{-3}$ m $= 1.2$ mm. 2.4 mm doubles it, as if the slits were 0.25 mm apart, and the other two are power-of-ten slips."
   },
   {
     "id": "KCET-T1-013",
@@ -294,13 +294,13 @@
     "skill": "Moving charges and magnetism",
     "stem": "A proton (mass 1.67 × 10⁻²⁷ kg, charge 1.6 × 10⁻¹⁹ C) moves at 2 × 10⁶ m/s at right angles to a 0.5 T field. What is the radius of its path?",
     "options": [
-      "0.418 cm",
       "4.18 cm",
       "8.35 cm",
-      "41.8 cm"
+      "41.8 cm",
+      "418 cm"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
     "explanation": "$r = \\frac{mv}{qB} = \\frac{1.67 \\times 10^{-27} \\times 2 \\times 10^6}{1.6 \\times 10^{-19} \\times 0.5} = 0.0418$ m $= 4.18$ cm. 8.35 cm is the diameter of the circle, and the other two are power-of-ten slips."
@@ -424,16 +424,16 @@
     "skill": "Atoms",
     "stem": "The ground-state energy of hydrogen is -13.6 eV. What is the energy of its n = 3 level?",
     "options": [
+      "-13.6 eV",
       "-4.53 eV",
       "-3.4 eV",
-      "-1.51 eV",
-      "-0.85 eV"
+      "-1.51 eV"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$E_n = -\\frac{13.6}{n^2} = -\\frac{13.6}{9} = -1.51$ eV. -4.53 eV divides by $n$ instead of $n^2$, and -3.4 eV is the $n = 2$ level."
+    "explanation": "$E_n = -\\frac{13.6}{n^2} = -\\frac{13.6}{9} = -1.51$ eV. -4.53 eV divides by $n$ instead of $n^2$, -3.4 eV is the $n = 2$ level, and -13.6 eV is the ground state."
   },
   {
     "id": "KCET-T1-021",
@@ -444,17 +444,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Rotational motion",
-    "stem": "What is the moment of inertia of a uniform solid sphere of mass M and radius R about a tangent to its surface?",
+    "stem": "A flywheel with moment of inertia 2 kg m² spins at 20 rad/s about a fixed axis. What is its rotational kinetic energy?",
     "options": [
-      "$\\frac{7}{5}MR^2$",
-      "$\\frac{3}{2}MR^2$",
-      "$\\frac{5}{3}MR^2$",
-      "$\\frac{2}{5}MR^2$"
+      "20 J",
+      "40 J",
+      "200 J",
+      "400 J"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "About a diameter $I = \\frac{2}{5}MR^2$; the parallel axis theorem adds $MR^2$, giving $\\frac{7}{5}MR^2$. $\\frac{5}{3}MR^2$ is the value for a thin hollow sphere about a tangent."
+    "lockedOrder": true,
+    "explanation": "$KE = \\frac{1}{2}I\\omega^2 = 0.5 \\times 2 \\times 400 = 400$ J. 40 J is $I\\omega$, the angular momentum value, 20 J is $\\frac{1}{2}I\\omega$ with $\\omega$ not squared, and 200 J applies the half twice."
   },
   {
     "id": "KCET-T1-022",
@@ -511,16 +512,16 @@
     "skill": "Nuclei",
     "stem": "A nucleus of 10 nucleons has a mass defect of 0.08 u. What is its binding energy per nucleon? (1 u = 931.5 MeV)",
     "options": [
-      "0.745 MeV",
       "7.45 MeV",
       "74.5 MeV",
-      "745 MeV"
+      "745 MeV",
+      "7450 MeV"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "Total binding energy $= 0.08 \\times 931.5 = 74.5$ MeV, and per nucleon $= 74.5/10 = 7.45$ MeV. 74.5 MeV is the total, not the value per nucleon."
+    "explanation": "Total binding energy $= 0.08 \\times 931.5 = 74.5$ MeV, and per nucleon $= 74.5/10 = 7.45$ MeV. 74.5 MeV is the total, not the value per nucleon, and the other two are power-of-ten slips."
   },
   {
     "id": "KCET-T1-025",
@@ -542,7 +543,7 @@
       2
     ],
     "lockedOrder": true,
-    "explanation": "$v_e = \\sqrt{2GM/R}$ with $M = \\frac{4}{3}\\pi R^3\\rho$ gives $v_e \\propto R\\sqrt{\\rho}$, so twice the radius doubles it to 22.4 km/s. 15.8 km/s assumes the mass stays the same, and 44.8 km/s squares the radius ratio."
+    "explanation": "$v_e = \\sqrt{2GM/R}$ with $M = \\frac{4}{3}\\pi R^3\\rho$ gives $v_e \\propto R\\sqrt{\\rho}$, so twice the radius doubles it to 22.4 km/s. 15.8 km/s takes $v_e \\propto \\sqrt{R}$, and 44.8 km/s squares the radius ratio."
   },
   {
     "id": "KCET-T1-026",
@@ -555,16 +556,16 @@
     "skill": "Alternating current",
     "stem": "A series LCR circuit has L = 0.2 H and C = 5 µF. At what angular frequency does it resonate?",
     "options": [
+      "31.6 rad/s",
       "100 rad/s",
       "159 rad/s",
-      "1000 rad/s",
-      "10000 rad/s"
+      "1000 rad/s"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$\\omega_0 = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{0.2 \\times 5 \\times 10^{-6}}} = \\frac{1}{10^{-3}} = 1000$ rad/s. 159 rad/s divides by $2\\pi$, which gives the resonant frequency in hertz, not the angular frequency."
+    "explanation": "$\\omega_0 = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{0.2 \\times 5 \\times 10^{-6}}} = \\frac{1}{10^{-3}} = 1000$ rad/s. 159 rad/s divides by $2\\pi$, which gives the resonant frequency in hertz, not the angular frequency, and 31.6 rad/s takes C as 5 mF."
   },
   {
     "id": "KCET-T1-027",
@@ -971,7 +972,7 @@
     "correct": [
       3
     ],
-    "explanation": "SN1 goes through a carbocation, and 2-chloro-2-methylpropane gives the stable tertiary cation. 1-Chloro-2-methylpropane is a primary halide despite its branched chain, so its cation is the least stable of the three."
+    "explanation": "SN1 goes through a carbocation, and 2-chloro-2-methylpropane gives the stable tertiary cation. 1-Chloro-2-methylpropane is a primary halide despite its branched chain, so it would give an unstable primary cation; chloromethane would give the even less stable methyl cation."
   },
   {
     "id": "KCET-T1-046",
@@ -1460,7 +1461,7 @@
     "skill": "Continuity and differentiability",
     "stem": "$f(x) = \\frac{x^2 - 9}{x - 3}$ for $x \\neq 3$ and $f(3) = k$. For which k is f continuous at $x = 3$?",
     "options": [
-      "-3",
+      "-6",
       "0",
       "3",
       "6"
@@ -1469,7 +1470,7 @@
       3
     ],
     "lockedOrder": true,
-    "explanation": "For $x \\neq 3$, $f(x) = x + 3$, so $\\lim_{x \\to 3} f(x) = 6$ and continuity needs $k = 6$. 3 keeps only the $x$ of $x + 3$, 0 comes from putting $x = 3$ into the numerator, and -3 factors the numerator as $(x - 3)(x - 3)$ wrongly."
+    "explanation": "For $x \\neq 3$, $f(x) = x + 3$, so $\\lim_{x \\to 3} f(x) = 6$ and continuity needs $k = 6$. 3 keeps only the $x$ of $x + 3$, 0 comes from putting $x = 3$ into the numerator, and -6 reads the denominator as $3 - x$, which flips the sign."
   },
   {
     "id": "KCET-T1-069",
@@ -1585,21 +1586,21 @@
     "test": 1,
     "module": 1,
     "domain": "kcetMathCalc",
-    "difficulty": 2,
+    "difficulty": 1,
     "format": "single",
     "skill": "Application of derivatives",
-    "stem": "What is the slope of the normal to the curve $y = x^3 - 2x$ at $x = 2$?",
+    "stem": "The side of a square grows at 0.5 cm/s. How fast is its area growing when the side is 8 cm?",
     "options": [
-      "-10",
-      "-1/10",
-      "-1/12",
-      "1/10"
+      "8 cm²/s",
+      "16 cm²/s",
+      "32 cm²/s",
+      "64 cm²/s"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "The tangent slope is $y' = 3x^2 - 2 = 10$ at $x = 2$. The normal is perpendicular, so its slope is $-\\frac{1}{10}$. -10 is minus the tangent slope instead of its negative reciprocal, -1/12 forgets the $-2$ in $y'$, and 1/10 forgets the minus sign."
+    "explanation": "$A = a^2$, so $\\frac{dA}{dt} = 2a\\frac{da}{dt} = 2 \\times 8 \\times 0.5 = 8$ cm²/s. 16 forgets the factor $\\frac{da}{dt} = 0.5$, 32 uses the perimeter $4a$, and 64 is the area itself."
   },
   {
     "id": "KCET-T1-075",
@@ -1657,15 +1658,15 @@
     "stem": "What is the minimum value of $x + \\frac{9}{x}$ for $x > 0$?",
     "options": [
       "6",
+      "9",
       "10",
-      "12",
       "18"
     ],
     "correct": [
       0
     ],
     "lockedOrder": true,
-    "explanation": "$f'(x) = 1 - \\frac{9}{x^2} = 0$ at $x = 3$, and $f''(3) > 0$, so the minimum is $3 + 3 = 6$. 10 is the value at $x = 1$ (or $x = 9$), 12 is the value at $x = 3/4$, and 18 wrongly applies AM-GM as $2 \\times 9$."
+    "explanation": "$f'(x) = 1 - \\frac{9}{x^2} = 0$ at $x = 3$, and $f''(3) > 0$, so the minimum is $3 + 3 = 6$. 10 is the value at $x = 1$ (or $x = 9$), 9 just reads off the constant in $\\frac{9}{x}$, and 18 wrongly applies AM-GM as $2 \\times 9$."
   },
   {
     "id": "KCET-T1-078",
@@ -1982,16 +1983,16 @@
     "skill": "Electric charges and fields",
     "stem": "An infinitely long straight wire carries a uniform charge of 2 µC/m. What is the field 18 cm from it?",
     "options": [
+      "$2 \\times 10^3$ N/C",
       "$3.6 \\times 10^4$ N/C",
       "$1 \\times 10^5$ N/C",
-      "$2 \\times 10^5$ N/C",
-      "$4 \\times 10^5$ N/C"
+      "$2 \\times 10^5$ N/C"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r} = \\frac{2k\\lambda}{r} = \\frac{2 \\times 9 \\times 10^9 \\times 2 \\times 10^{-6}}{0.18} = 2 \\times 10^5$ N/C. $1 \\times 10^5$ N/C drops the factor 2, and $3.6 \\times 10^4$ N/C forgets to divide by $r$."
+    "explanation": "$E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r} = \\frac{2k\\lambda}{r} = \\frac{2 \\times 9 \\times 10^9 \\times 2 \\times 10^{-6}}{0.18} = 2 \\times 10^5$ N/C. $1 \\times 10^5$ N/C drops the factor 2, $3.6 \\times 10^4$ N/C forgets to divide by $r$, and $2 \\times 10^3$ N/C leaves $r$ in centimetres."
   },
   {
     "id": "KCET-T2-003",
@@ -2025,16 +2026,16 @@
     "skill": "Ray optics",
     "stem": "A convex lens of focal length 25 cm is in contact with a concave lens of focal length 50 cm. What is the power of the pair?",
     "options": [
+      "-6 D",
       "-2 D",
       "+0.02 D",
-      "+2 D",
-      "+6 D"
+      "+2 D"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Powers add: $P = \\frac{100}{25} - \\frac{100}{50} = 4 - 2 = +2$ D. +6 D adds the concave lens as if it were converging, and +0.02 D keeps the focal lengths in centimetres."
+    "explanation": "Powers add: $P = \\frac{100}{25} - \\frac{100}{50} = 4 - 2 = +2$ D. -6 D treats the convex lens as diverging too, -2 D swaps the signs, and +0.02 D keeps the focal lengths in centimetres."
   },
   {
     "id": "KCET-T2-005",
@@ -2069,16 +2070,16 @@
     "skill": "Electrostatic potential and capacitance",
     "stem": "How much work is needed to move a 3 µC charge from a point at 50 V to a point at 250 V?",
     "options": [
-      "$1.5 \\times 10^{-4}$ J",
       "$6 \\times 10^{-4}$ J",
       "$7.5 \\times 10^{-4}$ J",
-      "$9 \\times 10^{-4}$ J"
+      "$9 \\times 10^{-4}$ J",
+      "$6 \\times 10^{2}$ J"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$W = q(V_B - V_A) = 3 \\times 10^{-6} \\times 200 = 6 \\times 10^{-4}$ J. $9 \\times 10^{-4}$ J adds the potentials instead of taking the difference, and $7.5 \\times 10^{-4}$ J uses only the final potential."
+    "explanation": "$W = q(V_B - V_A) = 3 \\times 10^{-6} \\times 200 = 6 \\times 10^{-4}$ J. $9 \\times 10^{-4}$ J adds the potentials instead of taking the difference, $7.5 \\times 10^{-4}$ J uses only the final potential, and $6 \\times 10^{2}$ J forgets the micro in µC."
   },
   {
     "id": "KCET-T2-007",
@@ -2114,15 +2115,15 @@
     "stem": "A coin lies at the bottom of a tank of water 24 cm deep. Seen from directly above, how deep does it appear? (n = 4/3)",
     "options": [
       "6 cm",
-      "18 cm",
-      "24 cm",
-      "32 cm"
+      "12 cm",
+      "13.5 cm",
+      "18 cm"
     ],
     "correct": [
-      1
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Apparent depth $= \\frac{\\text{real depth}}{n} = \\frac{24}{4/3} = 18$ cm. 32 cm multiplies by $n$ instead of dividing, and 6 cm is the apparent rise of the coin, not its depth."
+    "explanation": "Apparent depth $= \\frac{\\text{real depth}}{n} = \\frac{24}{4/3} = 18$ cm. 13.5 cm divides by $n$ twice, 12 cm halves the depth, and 6 cm is the apparent rise of the coin, not its depth."
   },
   {
     "id": "KCET-T2-009",
@@ -2133,18 +2134,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Motion in a plane",
-    "stem": "A river 80 m wide flows at 3 m/s. A swimmer heads straight across at 4 m/s relative to the water. How far downstream does she land?",
+    "stem": "A ball is thrown horizontally at 15 m/s from the top of a cliff 20 m high. Taking g = 10 m/s², how far from the base does it land?",
     "options": [
-      "60 m",
-      "80 m",
-      "100 m",
-      "106.7 m"
+      "15 m",
+      "20 m",
+      "21.2 m",
+      "30 m"
     ],
     "correct": [
-      0
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Crossing takes 80/4 = 20 s, and the current carries her 3 × 20 = 60 m downstream. 100 m is the length of her actual path, the hypotenuse, and 106.7 m swaps the two speeds, 80 × 4/3."
+    "explanation": "The fall takes $t = \\sqrt{2h/g} = 2$ s, and the ball moves $15 \\times 2 = 30$ m horizontally. 21.2 m comes from writing $h = gt^2$ without the half, 20 m confuses the range with the height, and 15 m takes the fall time as 1 s."
   },
   {
     "id": "KCET-T2-010",
@@ -2155,18 +2156,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Current electricity",
-    "stem": "In a meter bridge with 6 Ω in the right gap, the balance point is 40 cm from the left end. What is the resistance in the left gap?",
+    "stem": "A Wheatstone bridge with arms P = 10 Ω, Q = 15 Ω, R = 8 Ω and an unknown S shows no galvanometer current. Taking the balance condition P/Q = R/S, what is S?",
     "options": [
-      "2.4 Ω",
-      "4 Ω",
-      "9 Ω",
-      "15 Ω"
+      "12 Ω",
+      "18.75 Ω",
+      "33 Ω",
+      "120 Ω"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "At balance $\\frac{X}{6} = \\frac{40}{100 - 40}$, so $X = 6 \\times \\frac{40}{60} = 4$ Ω. 9 Ω inverts the ratio of the lengths, and 2.4 Ω uses 40/100 instead of 40/60."
+    "explanation": "At balance $\\frac{P}{Q} = \\frac{R}{S}$, so $S = \\frac{RQ}{P} = \\frac{8 \\times 15}{10} = 12$ Ω. 18.75 Ω computes $PQ/R$ by mixing up the arms, 33 Ω just adds the three known resistances, and 120 Ω multiplies R by Q without dividing by P."
   },
   {
     "id": "KCET-T2-011",
@@ -2289,16 +2290,16 @@
     "skill": "Dual nature of radiation and matter",
     "stem": "An electron is accelerated from rest through 100 V. What is its de Broglie wavelength?",
     "options": [
-      "0.0123 nm",
       "0.123 nm",
+      "0.388 nm",
       "1.23 nm",
       "12.3 nm"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "For an electron $\\lambda = \\frac{1.227}{\\sqrt{V}}$ nm $= \\frac{1.227}{10} = 0.123$ nm. 0.0123 nm divides by $V$ instead of $\\sqrt{V}$, and the other two are power-of-ten slips."
+    "explanation": "For an electron $\\lambda = \\frac{1.227}{\\sqrt{V}}$ nm $= \\frac{1.227}{10} = 0.123$ nm. 0.388 nm puts 10 V in place of 100 V, and the other two are power-of-ten slips."
   },
   {
     "id": "KCET-T2-017",
@@ -2333,16 +2334,16 @@
     "skill": "Magnetism and matter",
     "stem": "A bar magnet of moment 2 A m² makes 60° with a uniform 0.3 T field. What is its potential energy?",
     "options": [
-      "-0.6 J",
-      "-0.52 J",
       "-0.3 J",
-      "0.3 J"
+      "0.3 J",
+      "0.52 J",
+      "0.6 J"
     ],
     "correct": [
-      2
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$U = -mB\\cos\\theta = -2 \\times 0.3 \\times 0.5 = -0.3$ J. -0.52 J uses $\\sin 60°$ (that belongs to the torque), and +0.3 J drops the minus sign."
+    "explanation": "$U = -mB\\cos\\theta = -2 \\times 0.3 \\times 0.5 = -0.3$ J. +0.3 J drops the minus sign, 0.52 J also uses $\\sin 60°$ (that belongs to the torque), and 0.6 J is just $mB$."
   },
   {
     "id": "KCET-T2-019",
@@ -2376,16 +2377,16 @@
     "skill": "Atoms",
     "stem": "How much energy is needed to ionise a hydrogen atom that is in its first excited state?",
     "options": [
-      "1.51 eV",
       "3.4 eV",
+      "6.8 eV",
       "10.2 eV",
       "13.6 eV"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "The first excited state is $n = 2$, with $E_2 = -\\frac{13.6}{4} = -3.4$ eV, so 3.4 eV frees the electron. 13.6 eV is for the ground state, and 10.2 eV is the energy to excite it from $n = 1$ to $n = 2$."
+    "explanation": "The first excited state is $n = 2$, with $E_2 = -\\frac{13.6}{4} = -3.4$ eV, so 3.4 eV frees the electron. 13.6 eV is for the ground state, 6.8 eV divides by $n$ instead of $n^2$, and 10.2 eV is the energy to excite it from $n = 1$ to $n = 2$."
   },
   {
     "id": "KCET-T2-021",
@@ -2396,18 +2397,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Rotational motion",
-    "stem": "A uniform solid cylinder of mass 2 kg rolls without slipping at 3 m/s. What is its total kinetic energy?",
+    "stem": "A disc with moment of inertia 0.6 kg m² turns freely at 30 rad/s. A ring of moment of inertia 0.3 kg m² is placed on it coaxially and they turn together. What is their common angular speed?",
     "options": [
-      "4.5 J",
-      "9.0 J",
-      "13.5 J",
-      "18.0 J"
+      "20 rad/s",
+      "30 rad/s",
+      "45 rad/s",
+      "60 rad/s"
     ],
     "correct": [
-      2
+      0
     ],
     "lockedOrder": true,
-    "explanation": "With $I = \\frac{1}{2}mr^2$, $KE = \\frac{1}{2}mv^2 + \\frac{1}{4}mv^2 = \\frac{3}{4} \\times 2 \\times 9 = 13.5$ J. 9.0 J is the translational part only, 18.0 J treats the cylinder as a ring with $I = mr^2$, and 4.5 J is the rotational part only."
+    "explanation": "No external torque acts, so angular momentum is conserved: $0.6 \\times 30 = 0.9\\,\\omega$, giving $\\omega = 20$ rad/s. 45 rad/s inverts the ratio of moments of inertia, 60 rad/s uses the ratio 0.6/0.3, and 30 rad/s ignores the added ring."
   },
   {
     "id": "KCET-T2-022",
@@ -2464,16 +2465,16 @@
     "skill": "Nuclei",
     "stem": "What is the ratio of the radius of a nucleus of mass number 64 to that of a nucleus of mass number 8?",
     "options": [
-      "1/2",
       "2",
+      "2.83",
       "4",
       "8"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$R = R_0A^{1/3}$, so the ratio is $(64/8)^{1/3} = 8^{1/3} = 2$. 8 is the ratio of the mass numbers (and of the volumes), and 4 is the ratio of the surface areas."
+    "explanation": "$R = R_0A^{1/3}$, so the ratio is $(64/8)^{1/3} = 8^{1/3} = 2$. 8 is the ratio of the mass numbers (and of the volumes), 4 is the ratio of the surface areas, and 2.83 takes a square root in place of a cube root."
   },
   {
     "id": "KCET-T2-025",
@@ -2507,16 +2508,16 @@
     "skill": "Alternating current",
     "stem": "A series circuit with R = 30 Ω and inductive reactance 40 Ω is connected to a 200 V rms supply. What is the rms current?",
     "options": [
-      "2.86 A",
       "4 A",
       "5 A",
-      "6.67 A"
+      "6.67 A",
+      "20 A"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$Z = \\sqrt{R^2 + X_L^2} = \\sqrt{900 + 1600} = 50$ Ω, so $I = \\frac{200}{50} = 4$ A. 2.86 A adds R and $X_L$ directly (70 Ω), and 6.67 A ignores the reactance."
+    "explanation": "$Z = \\sqrt{R^2 + X_L^2} = \\sqrt{900 + 1600} = 50$ Ω, so $I = \\frac{200}{50} = 4$ A. 20 A subtracts R from $X_L$ (10 Ω), 6.67 A ignores the reactance, and 5 A ignores the resistance."
   },
   {
     "id": "KCET-T2-027",
@@ -3787,7 +3788,7 @@
       0
     ],
     "lockedOrder": true,
-    "explanation": "Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 is a sign slip on the middle cofactor, and 15 takes the last minor as $35 - 32$."
+    "explanation": "Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 reverses the sign of the whole expansion, and 15 takes the last minor as $35 - 32$."
   },
   {
     "id": "KCET-T2-086",
@@ -3798,18 +3799,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Application of integrals",
-    "stem": "What is the area enclosed by the curves $y = x$ and $y = x^3$ in the first quadrant?",
+    "stem": "What is the area bounded by $y = x^3$, the x-axis and the lines $x = -1$ and $x = 1$?",
     "options": [
+      "0",
       "1/4",
       "1/2",
-      "3/4",
-      "1"
+      "2"
     ],
     "correct": [
-      0
+      2
     ],
     "lockedOrder": true,
-    "explanation": "They meet at $x = 0$ and $x = 1$, with $x \\ge x^3$ between them. Area $= \\int_0^1 (x - x^3)\\,dx = \\frac{1}{2} - \\frac{1}{4} = \\frac{1}{4}$. 1/2 adds the matching region in the third quadrant, and 3/4 adds the two integrals."
+    "explanation": "The curve is below the axis on $[-1, 0]$, so add the two parts as positive areas: $2\\int_0^1 x^3\\,dx = 2 \\times \\frac{1}{4} = \\frac{1}{2}$. 0 is the signed integral, where the halves cancel, 1/4 counts one side only, and 2 forgets to divide $x^4$ by 4."
   },
   {
     "id": "KCET-T2-087",
@@ -3951,16 +3952,16 @@
     "skill": "Electric charges and fields",
     "stem": "A charge of 5.31 nC sits at the centre of a cube. What electric flux passes through one face? (ε₀ = 8.85 × 10⁻¹² C² N⁻¹ m⁻²)",
     "options": [
-      "16.7 N m²/C",
-      "50 N m²/C",
       "100 N m²/C",
-      "600 N m²/C"
+      "200 N m²/C",
+      "600 N m²/C",
+      "3600 N m²/C"
     ],
     "correct": [
-      2
+      0
     ],
     "lockedOrder": true,
-    "explanation": "By Gauss's law the total flux is $q/\\varepsilon_0 = 600$ N m²/C, shared equally by six faces: 100 N m²/C each. 600 N m²/C is the flux through the whole cube."
+    "explanation": "By Gauss's law the total flux is $q/\\varepsilon_0 = 600$ N m²/C, shared equally by six faces: 100 N m²/C each. 600 N m²/C is the flux through the whole cube, 200 N m²/C shares it among three faces, and 3600 N m²/C multiplies by 6 instead of dividing."
   },
   {
     "id": "KCET-D-004",
@@ -3973,16 +3974,16 @@
     "skill": "Optical instruments",
     "stem": "An astronomical telescope in normal adjustment has an objective of focal length 150 cm and an eyepiece of 5 cm. What is its magnifying power?",
     "options": [
-      "0.033",
       "30",
+      "31",
       "155",
       "750"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "In normal adjustment $m = \\frac{f_o}{f_e} = \\frac{150}{5} = 30$. 155 is the tube length in centimetres, 750 multiplies the focal lengths, and 0.033 inverts the ratio."
+    "explanation": "In normal adjustment $m = \\frac{f_o}{f_e} = \\frac{150}{5} = 30$. 155 is the tube length in centimetres, 750 multiplies the focal lengths, and 31 adds 1 as in the simple magnifier formula."
   },
   {
     "id": "KCET-D-005",
@@ -4310,7 +4311,7 @@
       2
     ],
     "lockedOrder": true,
-    "explanation": "$U = \\frac{1}{2}LI^2 = 0.5 \\times 0.4 \\times 9 = 1.8$ J. 3.6 J leaves out the half, and 1.2 J forgets to square the current."
+    "explanation": "$U = \\frac{1}{2}LI^2 = 0.5 \\times 0.4 \\times 9 = 1.8$ J. 3.6 J leaves out the half, 1.2 J leaves out both the half and the square (it is just $LI$), and 0.6 J forgets to square the current."
   },
   {
     "id": "KCET-D-020",
@@ -5093,21 +5094,21 @@
     "test": 0,
     "module": 1,
     "domain": "kcetMathCalc",
-    "difficulty": 2,
+    "difficulty": 1,
     "format": "single",
     "skill": "Continuity and differentiability",
-    "stem": "For $f(x) = x^2$ on $[1, 3]$, which c satisfies the mean value theorem?",
+    "stem": "If $f(x) = e^{2x}$, what is $f''(0)$?",
     "options": [
+      "1/2",
+      "1",
       "2",
-      "5/2",
-      "3",
       "4"
     ],
     "correct": [
-      0
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$\\frac{f(3) - f(1)}{3 - 1} = \\frac{9 - 1}{2} = 4$, and $f'(c) = 2c = 4$ gives $c = 2$. 4 is the slope of the chord, not the point c, and 3 is an endpoint, where the theorem never places c."
+    "explanation": "$f'(x) = 2e^{2x}$ and $f''(x) = 4e^{2x}$, so $f''(0) = 4$. 2 is $f'(0)$, 1 is $f(0)$, and 1/2 divides by 2 as in integrating instead of differentiating."
   },
   {
     "id": "KCET-D-057",
@@ -5251,16 +5252,16 @@
     "skill": "Sequences and series",
     "stem": "A student in Bengaluru saves 500 rupees in the first month and 50 rupees more each month after that. How much is saved in 2 years?",
     "options": [
+      "1650 rupees",
+      "9300 rupees",
       "12900 rupees",
-      "24600 rupees",
-      "25800 rupees",
-      "27000 rupees"
+      "25800 rupees"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "This is an AP with $a = 500$, $d = 50$, $n = 24$: $S_{24} = 12[2(500) + 23(50)] = 12 \\times 2150 = 25800$. 27000 uses $24d$ instead of $23d$, and 12900 forgets that $\\frac{n}{2}$ is 12, not 6."
+    "explanation": "This is an AP with $a = 500$, $d = 50$, $n = 24$: $S_{24} = 12[2(500) + 23(50)] = 12 \\times 2150 = 25800$. 12900 takes $\\frac{n}{2}$ as 6 instead of 12, 9300 counts only 12 months, $6[2(500) + 11(50)]$, and 1650 is the 24th month's saving alone, $500 + 23(50)$."
   },
   {
     "id": "KCET-D-064",

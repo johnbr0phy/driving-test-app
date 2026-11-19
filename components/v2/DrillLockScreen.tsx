@@ -7,9 +7,9 @@ import { DrillDef, ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
-import { otherPremiumExams, premiumTestName } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * Full-screen lock for a Premium drill, shared by the Basics overview, the
@@ -18,13 +18,18 @@ import { usePremiumPrice } from "@/hooks/usePremiumPrice";
  */
 export function DrillLockScreen({ exam, drill, detail, backHref }: { exam: ExamV2Config; drill: DrillDef; detail: string; backHref?: string }) {
   const price = usePremiumPrice();
+  const allUi = useV2Ui();
+  const ui = allUi.dashboard;
+  // The Premium test's name ("Practice Test 2"), for the lock copy.
+  const lockedTest = exam.premium?.lockedTests[0];
+  const premiumTest = lockedTest === undefined ? null : exam.tests.find((t) => t.number === lockedTest)?.name ?? ui.practiceTestN(lockedTest);
   const routes = v2Routes(exam);
   const paywall = useV2Paywall(exam, "drill");
   const isNative = useIsNativeApp();
   return (
     <div className="v2-focus">
       <div className="v2-safe-top shrink-0 bg-white dark:bg-gray-900 px-3 pb-2">
-        <Link href={backHref ?? routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back">
+        <Link href={backHref ?? routes.dashboard} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={allUi.common.back}>
           <X className="h-5 w-5" />
         </Link>
       </div>
@@ -35,16 +40,16 @@ export function DrillLockScreen({ exam, drill, detail, backHref }: { exam: ExamV
             <Lock className="h-5 w-5 text-gray-500 dark:text-gray-400" /> {drill.name}
           </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-            {drill.blurb} {detail}, part of Tigertest Premium along with {premiumTestName(exam) ?? "full stats"} and {otherPremiumExams(exam)}.
+            {ui.drillLockBody(drill.blurb, detail, premiumTest, ui.otherPremiumExams)}
           </p>
           <button
             type="button"
-            onClick={() => paywall.open(`drill_${drill.key}`, `${drill.name} drill`)}
+            onClick={() => paywall.open(`drill_${drill.key}`, ui.drillItemLabel(drill.name))}
             className="v2-tap mt-6 w-full rounded-xl bg-brand text-base font-bold text-white"
           >
-            Unlock with Premium{isNative ? "" : ` · ${price}`}
+            {ui.unlockWithPremium(isNative ? null : price)}
           </button>
-          <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500 dark:text-gray-400">Back to the dashboard</Link>
+          <Link href={routes.dashboard} className="mt-3 block text-sm font-semibold text-gray-500 dark:text-gray-400">{ui.backToDashboardLink}</Link>
         </div>
       </div>
       <V2Paywall exam={exam} {...paywall.modalProps} />

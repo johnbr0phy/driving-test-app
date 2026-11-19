@@ -17,8 +17,11 @@ import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { QuestionView } from "./QuestionView";
+import { useV2Ui } from "@/lib/v2/ui";
 
 export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber: number }) {
+  const ui = useV2Ui();
+  const t = ui.results;
   const routes = v2Routes(exam);
   const hydrated = useHydration();
   const results = useV2Store((s) => s.results);
@@ -41,13 +44,13 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   }, [hydrated, latestResult, goal]);
   const earned = !!latestResult && earnedResult === `v2:${latestResult.key}:${latestResult.completedAt}`;
 
-  if (!hydrated) return <div className="p-8 text-center text-gray-600 dark:text-gray-300">Loading...</div>;
+  if (!hydrated) return <div className="p-8 text-center text-gray-600 dark:text-gray-300">{ui.common.loading}</div>;
   const result: TestResultV2 | undefined = history[0];
   if (!result) {
     return (
       <div className="mx-auto w-full max-w-xl px-4 py-12 text-center">
-        <h1 className="text-xl font-bold">No result yet for Practice Test {testNumber}</h1>
-        <Link href={routes.test(testNumber)} className="mt-4 inline-block rounded-xl bg-brand px-5 py-3 font-bold text-white">Take the test</Link>
+        <h1 className="text-xl font-bold">{t.noResultYet(testNumber)}</h1>
+        <Link href={routes.test(testNumber)} className="mt-4 inline-block rounded-xl bg-brand px-5 py-3 font-bold text-white">{t.takeTheTest}</Link>
       </div>
     );
   }
@@ -69,47 +72,47 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-6 md:py-10">
       {earned && <Fireworks duration={5000} />}
-      <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{exam.shortName} · Practice Test {testNumber}</div>
+      <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{t.eyebrow(exam.shortName, testNumber)}</div>
       {result.composite >= goal ? (
         <AchievementCelebration
           examId={exam.id}
           earned={earned}
           headingLevel={1}
           className="mt-4"
-          eyebrow="Practice goal reached"
-          title={exam.id === "timestables" ? "Full marks!" : "You hit your goal!"}
-          description={`Practice Test ${testNumber} is complete. See it turn green on your dashboard.`}
+          eyebrow={t.goalReachedEyebrow}
+          title={exam.id === "timestables" ? t.fullMarks : t.hitYourGoal}
+          description={t.testCompleteGreen(testNumber)}
           detail={
             <>
               <span className="block text-4xl font-black tabular-nums">{result.composite}{exam.composite.max === 100 ? "%" : ""}</span>
-              <span className="block mt-1">{exam.copy.scoreLabel ?? `${exam.composite.name} estimate`} · goal {goal}</span>
-              <span className="block mt-1">At your goal</span>
-              {delta !== null && <span className="block mt-1">{delta >= 0 ? "+" : ""}{delta} vs last attempt</span>}
+              <span className="block mt-1">{t.scoreLabelWithGoal(exam.copy.scoreLabel ?? t.compositeEstimate(exam.composite.name), goal)}</span>
+              <span className="block mt-1">{t.atYourGoal}</span>
+              {delta !== null && <span className="block mt-1">{t.vsLastAttempt(delta)}</span>}
             </>
           }
         >
-          <Link href={`${routes.dashboard}?completed=test:${testNumber}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 py-3 font-bold text-white">See your progress</Link>
-          <a href="#result-breakdown" className="v2-tap flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">Review your answers</a>
+          <Link href={`${routes.dashboard}?completed=test:${testNumber}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 py-3 font-bold text-white">{t.seeYourProgress}</Link>
+          <a href="#result-breakdown" className="v2-tap flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200">{t.reviewYourAnswers}</a>
         </AchievementCelebration>
       ) : (
       <div className="mt-2 flex flex-wrap items-end gap-x-6 gap-y-2">
         <Image src={getTigerAsset(exam.id, result.composite >= goal ? 2 : 4)} alt="" width={80} height={80} className="h-20 w-20 shrink-0 object-contain" />
         <div>
           <div className="text-5xl font-black tabular-nums md:text-6xl">{result.composite}</div>
-          <div className="text-sm text-gray-600 dark:text-gray-300">{exam.copy.scoreLabel ?? `${exam.composite.name} estimate`} · goal {goal}</div>
+          <div className="text-sm text-gray-600 dark:text-gray-300">{t.scoreLabelWithGoal(exam.copy.scoreLabel ?? t.compositeEstimate(exam.composite.name), goal)}</div>
         </div>
         {delta !== null && (
           <div className={`rounded-full px-3 py-1 text-sm font-bold ${delta >= 0 ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300"}`}>
-            {delta >= 0 ? "+" : ""}{delta} vs last attempt
+            {t.vsLastAttempt(delta)}
           </div>
         )}
         <div className={`rounded-full px-3 py-1 text-sm font-bold ${result.composite >= goal ? "bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300" : "bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300"}`}>
-          {result.composite >= goal ? "At your goal" : `${goal - result.composite} to your goal`}
+          {result.composite >= goal ? t.atYourGoal : t.toYourGoal(goal - result.composite)}
         </div>
       </div>
       )}
       <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{exam.copy.scoreNote}</p>
-      {result.timing === "untimed" && <p className="mt-1 text-sm font-semibold">Untimed practice. This attempt did not simulate the exam time limit.</p>}
+      {result.timing === "untimed" && <p className="mt-1 text-sm font-semibold">{t.untimedNote}</p>}
 
       <div id="result-breakdown" className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {
@@ -120,18 +123,18 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
             <div key={s.section} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
               <div className="flex items-baseline justify-between">
                 <div className="font-bold">{def.name}</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">{s.raw} / {s.total} correct</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400">{t.correctOfTotal(s.raw, s.total)}</div>
               </div>
               <div className="mt-1 text-3xl font-black tabular-nums">
                 {s.scaled}{scale.max === 100 && scale.min === 0 ? "%" : ""}{" "}
-                {scale.band > 0 && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">({Math.max(scale.min, s.scaled - scale.band)} to {Math.min(scale.max, s.scaled + scale.band)})</span>}
+                {scale.band > 0 && <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">{t.scoreBand(Math.max(scale.min, s.scaled - scale.band), Math.min(scale.max, s.scaled + scale.band))}</span>}
               </div>
               <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                {s.byModule.map((m) => `Module ${m.module}${m.variant ? ` (${m.variant === "upper" ? "harder" : "easier"})` : ""}: ${m.raw}/${m.total}`).join(" · ")}
+                {s.byModule.map((m) => t.moduleLine(m.module, m.variant, m.raw, m.total)).join(" · ")}
               </div>
               {capped && (
                 <p className="mt-2 text-xs font-medium text-amber-800 dark:text-amber-300">
-                  Module 1 sent you to the easier Module 2, which caps this section near {scale.max}. Get {Math.round((def.modules.find((m) => m.adaptive)?.adaptive?.threshold ?? 0.6) * 100)}% of Module 1 right to reach the harder path and the full {def.scale.max}.
+                  {t.cappedNote(scale.max, Math.round((def.modules.find((m) => m.adaptive)?.adaptive?.threshold ?? 0.6) * 100), def.scale.max)}
                 </p>
               )}
               <div className="mt-4 space-y-2">
@@ -158,31 +161,31 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
 
       {weakDrill && weakest && (
         <div className="mt-6 rounded-2xl border border-brand bg-brand-light p-5">
-          <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">Your next step</div>
-          <div className="mt-1 font-bold">Drill {weakDrill.name} on your phone tonight</div>
+          <div className="text-sm font-semibold uppercase tracking-wide text-brand-dark">{t.yourNextStep}</div>
+          <div className="mt-1 font-bold">{t.drillTonight(weakDrill.name)}</div>
           <p className="mt-1 text-sm text-gray-700 dark:text-gray-200">
-            You got {weakest.correct} of {weakest.total} in {exam.domainLabels[weakest.domain]}. The drill brings every miss back until you master it, then retake the test on a desktop.
+            {t.nextStepBody(weakest.correct, weakest.total, exam.domainLabels[weakest.domain])}
           </p>
-          <Link href={routes.drill(weakDrill.key)} className="v2-tap mt-3 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">Start the drill</Link>
+          <Link href={routes.drill(weakDrill.key)} className="v2-tap mt-3 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">{t.startTheDrill}</Link>
         </div>
       )}
 
       <div className="mt-8">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-lg font-bold">Review</h2>
+          <h2 className="text-lg font-bold">{t.review}</h2>
           <div className="flex flex-wrap items-center gap-3 text-sm">
-            <select aria-label="Filter review by section" value={sectionFilter} onChange={(e) => setSectionFilter(e.target.value)} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 pl-3 pr-8 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
-              <option value="all">All sections</option>
+            <select aria-label={t.filterBySection} value={sectionFilter} onChange={(e) => setSectionFilter(e.target.value)} className="v2-tap rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 pl-3 pr-8 text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-brand">
+              <option value="all">{t.allSections}</option>
               {exam.sections.map((s) => <option key={s.key} value={s.key}>{s.name}</option>)}
             </select>
             <div className="flex gap-1">
-              <button type="button" aria-pressed={filter === "all"} onClick={() => setFilter("all")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "all" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>All</button>
-              <button type="button" aria-pressed={filter === "wrong"} onClick={() => setFilter("wrong")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "wrong" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>Missed</button>
+              <button type="button" aria-pressed={filter === "all"} onClick={() => setFilter("all")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "all" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>{t.filterAll}</button>
+              <button type="button" aria-pressed={filter === "wrong"} onClick={() => setFilter("wrong")} className={`v2-tap rounded-lg px-3 font-semibold ${filter === "wrong" ? "bg-brand text-white" : "bg-gray-100 dark:bg-gray-800"}`}>{t.filterMissed}</button>
             </div>
           </div>
         </div>
         <div className="mt-3 space-y-2">
-          {items.length === 0 && <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-6 text-center text-sm text-gray-500 dark:text-gray-400">Nothing to show here. Nice.</div>}
+          {items.length === 0 && <div className="rounded-xl border border-dashed border-gray-300 dark:border-gray-700 p-6 text-center text-sm text-gray-500 dark:text-gray-400">{t.nothingToShow}</div>}
           {items.map((it) => {
             const q = byId.get(it.id);
             if (!q) return null;
@@ -190,7 +193,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
             return (
               <div key={it.id} className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
                 <button type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : it.id)} className="v2-tap flex w-full items-center gap-3 px-4 text-left">
-                  <span className="sr-only">{it.correct ? "Correct. " : "Incorrect. "}</span>
+                  <span className="sr-only">{it.correct ? t.srCorrect : t.srIncorrect}</span>
                   <span aria-hidden="true" className={`h-2.5 w-2.5 shrink-0 rounded-full ${it.correct ? "bg-green-500" : "bg-red-400"}`} />
                   <span className="min-w-0 flex-1 truncate text-sm">
                     <span className="font-semibold">{getSectionV2(exam, it.section).shortName} {numbers.get(it.id)}</span>
@@ -210,8 +213,8 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
       </div>
 
       <div className="mt-8 flex flex-col gap-2 sm:flex-row">
-        <Link href={routes.test(testNumber)} className="v2-tap flex flex-1 items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">Retake Practice Test {testNumber}</Link>
-        <Link href={routes.dashboard} className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">Back to dashboard</Link>
+        <Link href={routes.test(testNumber)} className="v2-tap flex flex-1 items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">{t.retakeTest(testNumber)}</Link>
+        <Link href={routes.dashboard} className="v2-tap flex flex-1 items-center justify-center rounded-xl border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm font-semibold">{t.backToDashboard}</Link>
       </div>
     </div>
   );

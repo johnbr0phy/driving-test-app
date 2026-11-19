@@ -39,6 +39,7 @@ import { v2GuestAnswered } from "@/components/GuestSaveCard";
 import { recordClassAnswerById, v2Pick } from "@/lib/classProgress";
 import { ReportExamQuestion } from "@/components/ReportExamQuestion";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * Phone-first mastery drill: one question, one tap, instant feedback, big
@@ -46,6 +47,8 @@ import { AchievementCelebration } from "@/components/AchievementCelebration";
  */
 export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drillKeyParam: string | null }) {
   const router = useRouter();
+  const ui = useV2Ui();
+  const t = ui.drill;
   const routes = v2Routes(exam);
   // Primary school exams get the warmer celebration copy.
   const childFriendly = exam.id === "timestables" || exam.id === "ks2";
@@ -187,11 +190,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   };
 
   if (!hydrated || !drill || !gateReady) {
-    return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
+    return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">{ui.common.loading}</FocusMode>;
   }
 
   if (locked) {
-    return <DrillLockScreen exam={exam} drill={drill} detail={`${allQuestions.length} questions`} backHref={backHref} />;
+    return <DrillLockScreen exam={exam} drill={drill} detail={t.lockDetail(allQuestions.length)} backHref={backHref} />;
   }
 
   const mastered = state.masteredIds.filter((id) => questions.some((q) => q.id === id)).length;
@@ -204,14 +207,14 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
-          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back">
+          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={ui.common.back}>
             <X className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-bold">{drill.name}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">{mastered} of {questions.length} mastered{state.wrongQueue.length ? ` · ${state.wrongQueue.length} to retry` : ""}</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">{t.masteredCount(mastered, questions.length)}{state.wrongQueue.length ? t.toRetry(state.wrongQueue.length) : ""}</div>
           </div>
-          <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Reset this drill">
+          <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={t.resetAria}>
             <RotateCcw className="h-5 w-5" />
           </button>
         </div>
@@ -226,13 +229,13 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
             <AchievementCelebration
               examId={exam.id}
               earned={earnedMastery}
-              eyebrow="Drill mastered"
-              title={childFriendly ? "You did it! All green!" : "Every question. Mastered."}
-              description={`You answered every question in ${drill.name} correctly. ${childFriendly ? "Look how far you've come!" : "Your practice has paid off."}`}
-              detail={`${questions.length} of ${questions.length} questions mastered · ${drill.name}`}
+              eyebrow={t.masteredEyebrow}
+              title={childFriendly ? t.masteredTitleChild : t.masteredTitle}
+              description={t.masteredDescription(drill.name, childFriendly)}
+              detail={t.masteredDetail(questions.length, drill.name)}
             >
-              <Link href={`${routes.dashboard}?completed=${encodeURIComponent(`drill:${drill.key}`)}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">See your progress</Link>
-              <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap rounded-xl border-2 border-gray-200 bg-white text-sm font-semibold dark:border-gray-700 dark:bg-gray-900">Practise again</button>
+              <Link href={`${routes.dashboard}?completed=${encodeURIComponent(`drill:${drill.key}`)}`} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">{t.seeProgress}</Link>
+              <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap rounded-xl border-2 border-gray-200 bg-white text-sm font-semibold dark:border-gray-700 dark:bg-gray-900">{t.practiseAgain}</button>
             </AchievementCelebration>
           ) : guestPrompt.showing ? (
             <GuestPromptStep
@@ -261,12 +264,12 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
           ) : null}
           {missedSkill && !guestPrompt.showing && !sharePrompt.showing && (
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
-              <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Brush up on the basics</div>
+              <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">{t.brushUpHeading}</div>
               <button type="button" onClick={() => { setBrushUp(true); trackBasics("brushup", exam.id, drill.key, { skill: missedSkill.id }); }} className="v2-tap mt-1 flex w-full items-center gap-3 text-left">
                 {hasExplainer(missedSkill) ? <Play className="h-5 w-5 shrink-0 text-brand-dark" /> : <BookOpen className="h-5 w-5 shrink-0 text-brand-dark" />}
                 <span className="min-w-0 flex-1">
                   <span className="block text-[17px] font-bold text-gray-900 dark:text-gray-50">{missedSkill.name}</span>
-                  <span className="block text-sm text-gray-500 dark:text-gray-400">{hasExplainer(missedSkill) ? "Listen to the 30-second explainer, or read the rule" : "The rule, the trick and two examples"}</span>
+                  <span className="block text-sm text-gray-500 dark:text-gray-400">{hasExplainer(missedSkill) ? t.brushUpListen : t.brushUpRead}</span>
                 </span>
               </button>
             </div>
@@ -283,11 +286,11 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
-              <button ref={nextRef} type="button" onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">Next</button>
+              <button ref={nextRef} type="button" onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">{ui.common.next}</button>
             ) : question.format === "single" ? (
-              <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer to check it</div>
+              <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">{t.tapToCheck}</div>
             ) : (
-              <button type="button" onClick={() => check()} disabled={!isComplete(question, answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">Check</button>
+              <button type="button" onClick={() => check()} disabled={!isComplete(question, answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">{t.check}</button>
             )}
           </div>
         </div>
@@ -298,13 +301,13 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
       {missedSkill && <BasicsRuleSheet exam={exam} skill={missedSkill} open={brushUp} onClose={() => setBrushUp(false)} />}
 
       {confirmReset && (
-        <AccessibleOverlay onClose={() => setConfirmReset(false)} aria-label="Reset this drill?" className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog">
+        <AccessibleOverlay onClose={() => setConfirmReset(false)} aria-label={t.resetTitle} className="fixed inset-0 z-[90] flex items-center justify-center bg-black/50 p-4" role="alertdialog">
           <div className="v2-pop w-full max-w-sm rounded-2xl bg-white dark:bg-gray-900 p-5 shadow-xl">
-            <div className="text-lg font-bold">Reset this drill?</div>
-            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">Mastery for {drill.name} starts over. Your test scores are not affected.</p>
+            <div className="text-lg font-bold">{t.resetTitle}</div>
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{t.resetBody(drill.name)}</p>
             <div className="mt-4 flex gap-2">
-              <button type="button" onClick={() => setConfirmReset(false)} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-sm font-semibold">Cancel</button>
-              <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setFireworks(false); setEarnedMastery(false); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">Reset</button>
+              <button type="button" onClick={() => setConfirmReset(false)} className="v2-tap flex-1 rounded-xl border-2 border-gray-300 dark:border-gray-700 text-sm font-semibold">{ui.common.cancel}</button>
+              <button type="button" onClick={() => { resetDrill(key); setConfirmReset(false); currentId.current = null; setQuestion(null); setFireworks(false); setEarnedMastery(false); setDone(false); }} className="v2-tap flex-1 rounded-xl bg-brand text-sm font-bold text-white">{t.reset}</button>
             </div>
           </div>
         </AccessibleOverlay>

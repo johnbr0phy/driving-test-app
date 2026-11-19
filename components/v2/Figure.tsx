@@ -4,27 +4,29 @@ import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 
 import { useState } from "react";
 import { Figure as FigureT } from "@/lib/v2/types";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /** Question figure: inline, tap to open full-width (phones) with pinch zoom. */
 export function Figure({ figure, compact = false }: { figure: FigureT; compact?: boolean }) {
   const [open, setOpen] = useState(false);
+  const ui = useV2Ui();
   return (
     <>
       <button
         type="button"
         onClick={() => setOpen(true)}
         className={`block w-full rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-2 text-left ${compact ? "max-w-xs" : "max-w-md"}`}
-        aria-label={`Open figure full size: ${figure.alt}`}
+        aria-label={ui.runner.openFigure(figure.alt)}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={figure.src} alt={figure.alt} className="mx-auto h-auto w-full max-h-72 object-contain dark:invert" loading="lazy" />
-        <div className="mt-1 text-center text-[11px] text-gray-500 dark:text-gray-400">Tap to enlarge</div>
+        <div className="mt-1 text-center text-[11px] text-gray-500 dark:text-gray-400">{ui.runner.tapToEnlarge}</div>
       </button>
       {open && (
-        <AccessibleOverlay onClose={() => setOpen(false)} aria-label="Figure full size" className="fixed inset-0 z-[80] flex flex-col bg-black/90" onClick={() => setOpen(false)}>
+        <AccessibleOverlay onClose={() => setOpen(false)} aria-label={ui.runner.figureFullSize} className="fixed inset-0 z-[80] flex flex-col bg-black/90" onClick={() => setOpen(false)}>
           <div className="flex justify-end p-3 v2-safe-top">
             <button type="button" className="v2-tap rounded-full bg-white/15 px-4 text-sm font-semibold text-white" onClick={() => setOpen(false)}>
-              Close
+              {ui.common.close}
             </button>
           </div>
           <div className="flex flex-1 items-center justify-center overflow-auto p-3">

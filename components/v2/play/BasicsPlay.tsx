@@ -2,6 +2,7 @@
 
 import { useCallback, useState } from "react";
 import { SOLVE_X_PROBLEMS, SolveXBoard, solveXPrompt } from "./SolveXBoard";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * A walkthrough step the student does with their hands: a drag board
@@ -18,6 +19,7 @@ export default function BasicsPlay({ play, onSolved, onStart }: {
   /** The first move on the board. */
   onStart?: () => void;
 }) {
+  const t = useV2Ui().drill;
   const [round, setRound] = useState(0);
   const [stage, setStage] = useState<0 | 1 | 2 | 3 | 4>(0);
   const [nudge, setNudge] = useState<string | null>(null);
@@ -45,7 +47,7 @@ export default function BasicsPlay({ play, onSolved, onStart }: {
       <SolveXBoard key={round} problem={problem} onStage={onStage} onWrongMove={setNudge} />
       <div aria-live="polite" className="w-full">
         <p className={`text-[16px] leading-snug ${stage === 4 ? "font-semibold text-green-800 dark:text-green-300" : "text-gray-700 dark:text-gray-200"}`}>
-          {solveXPrompt(problem, stage)}
+          {solveXPrompt(problem, stage, t.solveX)}
         </p>
         {nudge && <p className="v2-pop mt-2 text-[15px] leading-snug text-amber-800 dark:text-amber-300">{nudge}</p>}
       </div>
@@ -59,7 +61,7 @@ export default function BasicsPlay({ play, onSolved, onStart }: {
           }}
           className="mt-1 self-start text-sm font-semibold text-brand-dark underline underline-offset-2"
         >
-          Try another one
+          {t.tryAnotherOne}
         </button>
       )}
     </div>

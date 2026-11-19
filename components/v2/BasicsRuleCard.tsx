@@ -2,6 +2,7 @@
 
 import { ReactNode } from "react";
 import { BasicsSkill, BasicsTable } from "@/lib/v2/basics";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /** The text side of a Basics skill: the rule card, the ELI5 toggle and the passage and table blocks it reads from. */
 
@@ -11,9 +12,10 @@ export function SectionLabel({ children }: { children: ReactNode }) {
 
 /** The skill explained like you're five: a picture a kid already knows, plus a tiny example story. */
 export function Eli5Card({ skill }: { skill: BasicsSkill }) {
+  const t = useV2Ui().drill;
   return (
     <div>
-      <SectionLabel>ELI5 · explained like you&apos;re five</SectionLabel>
+      <SectionLabel>{t.eli5Label}</SectionLabel>
       <p className="mt-1.5 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">{skill.another.text}</p>
       <div className="mt-3 whitespace-pre-line border-l-2 border-brand pl-3 text-[17px] leading-relaxed text-gray-800 dark:text-gray-100">{skill.another.example}</div>
     </div>
@@ -22,32 +24,34 @@ export function Eli5Card({ skill }: { skill: BasicsSkill }) {
 
 /** "Still confused? ELI5" link that turns into the ELI5 card. */
 export function Eli5Toggle({ skill, open, onOpen }: { skill: BasicsSkill; open: boolean; onOpen: () => void }) {
+  const t = useV2Ui().drill;
   if (open) return <Eli5Card skill={skill} />;
   return (
     <button type="button" onClick={onOpen} className="self-start text-[15px] font-semibold text-brand-dark">
-      Still confused? ELI5
+      {t.eli5Toggle}
     </button>
   );
 }
 
 /** The rule, the trick, the skill's table if any, and the examples. */
 export function RuleCard({ skill }: { skill: BasicsSkill }) {
+  const t = useV2Ui().drill;
   const marks = { good: "✓", bad: "✗", eg: "→" };
   const markClass = { good: "text-green-600 dark:text-green-300", bad: "text-red-500 dark:text-red-300", eg: "text-brand-dark" };
   return (
     <div className="flex flex-col gap-5">
       <div>
-        <SectionLabel>The rule</SectionLabel>
+        <SectionLabel>{t.theRule}</SectionLabel>
         <p className="mt-1.5 text-xl font-semibold leading-snug text-gray-900 dark:text-gray-50">{skill.rule}</p>
       </div>
       <div>
-        <SectionLabel>The trick</SectionLabel>
+        <SectionLabel>{t.trickLabel}</SectionLabel>
         <p className="mt-1.5 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">{skill.trick}</p>
       </div>
       {skill.table && <DataTable table={skill.table} />}
       {skill.passage && <Passage text={skill.passage} />}
       <div>
-        <SectionLabel>Examples</SectionLabel>
+        <SectionLabel>{t.examples}</SectionLabel>
         <ul className="mt-1 divide-y divide-gray-200 dark:divide-gray-800">
           {skill.examples.map((e, i) => (
             <li key={i} className="flex items-start gap-3 py-2.5">

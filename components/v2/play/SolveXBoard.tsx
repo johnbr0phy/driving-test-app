@@ -2,6 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Draggable, DraggableRenderer, translate } from "dragology";
+import { useV2Ui, type V2UiStrings } from "@/lib/v2/ui";
+
+type SolveXStrings = V2UiStrings["drill"]["solveX"];
 
 /**
  * "Now you try" for the solveX Basics skill: an equation the student
@@ -45,19 +48,19 @@ const minus = (n: number) => (n < 0 ? `−${-n}` : `${n}`);
 const signed = (n: number) => (n < 0 ? `− ${-n}` : `+ ${n}`);
 
 /** What the student is told under the board at each stage. */
-export function solveXPrompt(p: SolveXProblem, stage: Stage): string {
+export function solveXPrompt(p: SolveXProblem, stage: Stage, t: SolveXStrings): string {
   const loose = signed(p.b).replace(" ", "");
   switch (stage) {
     case 0:
-      return `Drag the ${loose} across the = sign (or tap it). It flips sign on the other side.`;
+      return t.stage0(loose);
     case 1:
-      return `Now tap ${minus(p.c)} ${signed(-p.b)} to work it out.`;
+      return t.stage1(minus(p.c), signed(-p.b));
     case 2:
-      return `x is still stuck to the ${p.a}. Drag the ${p.a} under the ${minus(p.c - p.b)} (or tap it) to divide.`;
+      return t.stage2(p.a, minus(p.c - p.b));
     case 3:
-      return `Tap the fraction to work it out.`;
+      return t.stage3;
     default:
-      return `x = ${(p.c - p.b) / p.a}. Check: ${p.a} × ${(p.c - p.b) / p.a} ${signed(p.b)} = ${p.c} ✓`;
+      return t.solved((p.c - p.b) / p.a, p.a, signed(p.b), p.c);
   }
 }
 
@@ -68,6 +71,7 @@ export function SolveXBoard({ problem, onStage, onWrongMove }: {
   /** A tap on a part that cannot move yet. */
   onWrongMove: (message: string) => void;
 }) {
+  const copy = useV2Ui().drill.solveX;
   const [state, setState] = useState<State>({ stage: 0 });
   const p = problem;
   const right = p.c - p.b;
@@ -121,11 +125,11 @@ export function SolveXBoard({ problem, onStage, onWrongMove }: {
       const toward = (stage + 1) as Stage;
       const looseShort = signed(p.b).replace(" ", "");
       const wrong: Record<string, string> = {
-        "0:coef": `Not yet. Undo in reverse order: move the loose ${looseShort} first.`,
-        "0:x": `Leave x where it is. Move the ${looseShort} away from it.`,
-        "0:c": `Start with the ${looseShort} on the left.`,
-        "2:x": `x stays. Move the ${p.a} that is stuck to it.`,
-        "2:c": `Drag the ${p.a} instead. It is stuck to x by multiplying.`,
+        "0:coef": copy.wrongCoefFirst(looseShort),
+        "0:x": copy.wrongXFirst(looseShort),
+        "0:c": copy.wrongCFirst(looseShort),
+        "2:x": copy.wrongXSecond(p.a),
+        "2:c": copy.wrongCSecond(p.a),
       };
       // Drag moves, and "work it out" taps on the right side (stages 1 and 3).
       const dragMoves = new Set(["0:loose", "2:coef"]);
@@ -163,7 +167,7 @@ export function SolveXBoard({ problem, onStage, onWrongMove }: {
             onKeyDown={canDrag ? keys(() => act(sl.id)) : undefined}
             tabIndex={canDrag ? 0 : undefined}
             role={canDrag ? "button" : undefined}
-            aria-label={canDrag ? (sl.id === "loose" ? `${sl.text}. Move it to the other side of the equals sign.` : `${sl.text}. Divide both sides by ${sl.text}.`) : undefined}
+            aria-label={canDrag ? (sl.id === "loose" ? copy.moveAria(sl.text) : copy.divideAria(sl.text)) : undefined}
             aria-hidden={canDrag ? undefined : true}
             style={{ cursor: canDrag ? (lifted ? "grabbing" : "grab") : nudge ? "pointer" : "default", outline: "none", pointerEvents: canDrag || nudge ? "auto" : "none" }}
           >
@@ -202,7 +206,7 @@ export function SolveXBoard({ problem, onStage, onWrongMove }: {
             onKeyDown={workStage ? keys(() => go({ stage: toward })) : undefined}
             tabIndex={workStage ? 0 : undefined}
             role={workStage ? "button" : undefined}
-            aria-label={workStage ? (stage === 1 ? `${c.text} ${slots.loose.text}. Work it out.` : `${c.text} divided by ${p.a}. Work it out.`) : undefined}
+            aria-label={workStage ? (stage === 1 ? copy.workSubtractAria(c.text, slots.loose.text) : copy.workDivideAria(c.text, p.a)) : undefined}
             aria-hidden={workStage ? undefined : true}
             style={{ cursor: workStage ? "pointer" : "default", outline: "none" }}
           >
@@ -216,7 +220,7 @@ export function SolveXBoard({ problem, onStage, onWrongMove }: {
         </g>
       );
     };
-  }, [p.a, p.b, p.c, right, answer, go, onWrongMove]);
+  }, [p.a, p.b, p.c, right, answer, go, onWrongMove, copy]);
 
   // The library reads the SVG's on-screen size against its width to map the
   // pointer, so the board is scaled with a CSS transform to fit narrow phones.

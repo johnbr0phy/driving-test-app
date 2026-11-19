@@ -1,4 +1,4 @@
-import "@/lib/banks/ita2";
+import "@/lib/v2/banks/ita2";
 import type { Metadata } from "next";
 import content from "@/lib/landings/ita2.it.json";
 import { TranslatedExamLanding, translatedLandingMetadata, type TranslatedLandingContent } from "@/components/exam/TranslatedExamLanding";

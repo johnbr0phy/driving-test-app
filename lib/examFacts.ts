@@ -5975,6 +5975,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "State CET Cell syllabus and marking scheme for MHT-CET 2026 and its PCM result notices of 16 and 19 June 2026",
     source: { name: "State Common Entrance Test Cell, Maharashtra", url: "https://cetcell.mahacet.org" },
   },
+  kcet: {
+    answer:
+      "KCET (UGCET) is the Karnataka Examinations Authority's Common Entrance Test for admission to engineering, farm science, veterinary, nursing and pharmacy courses in Karnataka. It has four papers over two days: Physics and Chemistry on the first day, Mathematics and Biology on the second. Each paper has 60 multiple choice questions with four options, one mark each, in 80 minutes, answered on an OMR sheet. There is no negative marking, but a question with more than one answer marked scores nothing. Questions are based on the First and Second PUC syllabi of Karnataka's Department of Pre-University Education. Engineering candidates take Physics, Chemistry and Mathematics, and the engineering rank uses CET and qualifying-examination marks in those subjects in equal proportion.",
+    rows: [
+      { label: "Papers", value: "Physics, Chemistry, Mathematics, Biology" },
+      { label: "Questions", value: "60 per paper, four options" },
+      { label: "Marks", value: "1 per question, 60 per paper" },
+      { label: "Time", value: "80 minutes per paper" },
+      { label: "Negative marking", value: "None (multiple answers score nothing)" },
+      { label: "Engineering stream", value: "Physics, Chemistry, Mathematics" },
+      { label: "Syllabus", value: "I and II PUC, Karnataka Department of Pre-University Education" },
+      { label: "Engineering rank", value: "CET and II PUC PCM marks, equal proportion" },
+      { label: "Given by", value: "Karnataka Examinations Authority (KEA)" },
+    ],
+    basedOn: "the KEA Information Bulletin for UGCET-2026 (17 January 2026)",
+    source: { name: "Karnataka Examinations Authority", url: "https://cetonline.karnataka.gov.in/kea/" },
+  },
   cuet: {
     answer:
       "The CUET (UG) General Aptitude Test (test code 501) is one of the 37 papers of the Common University Entrance Test for undergraduate admission to central and participating universities, conducted by the National Testing Agency. Under the CUET (UG) 2026 Information Bulletin it has 50 compulsory multiple-choice questions in 60 minutes, taken as a computer based test in 13 mediums. Each right answer earns 5 marks and each wrong one loses 1. The syllabus is general knowledge, current affairs, general mental ability, numerical ability, quantitative reasoning (arithmetic, algebra, geometry, mensuration and statistics) and logical and analytical reasoning; NTA's 2026 syllabus for test 501 also lists general science and environment literacy. Candidates may take up to five CUET papers, and each university decides which papers a course requires.",

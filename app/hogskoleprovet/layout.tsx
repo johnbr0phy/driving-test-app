@@ -6,5 +6,5 @@ import { SEHP } from "@/lib/v2/exams/sehp";
 export const metadata: Metadata = examV2AppMetadata(SEHP);
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <V2Shell theme={SEHP.theme}>{children}</V2Shell>;
+  return <V2Shell theme={SEHP.theme} language={SEHP.language}>{children}</V2Shell>;
 }

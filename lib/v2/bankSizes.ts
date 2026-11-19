@@ -145,4 +145,6 @@ export const BANK_SIZES: Record<string, number> = {
   sscp: 260,
   servicenowcsa: 200,
   kcet: 246,
+  ita2: 200,
+  itcilsb2: 200,
 };

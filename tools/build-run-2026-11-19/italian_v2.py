@@ -35,13 +35,6 @@ EXAMS = {
 }
 
 
-def inner_quotes(q):
-    a, b = q.find("«"), q.rfind("»")
-    if a < 0 or b < 0:
-        return q
-    return q[:a + 1] + q[a + 1:b].replace("«", "“").replace("»", "”") + q[b:]
-
-
 def split_reading(q):
     a, b = q.find("«"), q.rfind("»")
     assert a > 0 and b > a, q[:80]
@@ -68,7 +61,8 @@ def build(exam_id):
         spec.loader.exec_module(mod)
         assert len(mod.Q) == 4 * per, (m, len(mod.Q), per)
         for i, (q, key, wrong, expl) in enumerate(mod.Q):
-            q = inner_quotes(q)
+            # A passage sits in its own box, so a quote inside it keeps « »;
+            # a short quote inside a grammar stem does too.
             assert len(wrong) == 3 and key not in wrong and len(set(wrong)) == 3, (m, i)
             for bad in BAD:
                 assert bad not in q + key + "".join(wrong) + expl, (m, i, bad)

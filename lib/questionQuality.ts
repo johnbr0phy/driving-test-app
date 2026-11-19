@@ -80,9 +80,15 @@ export function reviewFresh(review: FlagReview | undefined, n: number, now = Dat
   return now - Date.parse(review.at) < REVIEW_STALE_DAYS * 86_400_000;
 }
 
-/** True while a review that found nothing wrong still stands for these statistics. */
+/**
+ * True while a review that found nothing wrong still stands for these
+ * statistics. A low-confidence doubt counts as nothing wrong: the audit could
+ * not make a case against the key, so the key is kept (no one reviews these by
+ * hand). A medium or high confidence problem becomes an audit finding instead.
+ */
 export function reviewClears(review: FlagReview | undefined, n: number, now = Date.now()): boolean {
-  return review?.verdict === "ok" && reviewFresh(review, n, now);
+  if (!review) return false;
+  return (review.verdict === "ok" || review.confidence === "low") && reviewFresh(review, n, now);
 }
 
 export type ReviewedFlag = QuestionFlag & { review?: FlagReview; cleared?: boolean };
@@ -184,7 +190,9 @@ export function flagQuestion(examId: string, questionId: string, q: QuestionPick
  * - updated / replaced: that PR merged (bank updated, or the URL swapped for an
  *   official one in sources.md).
  * - needs_person: the run could not settle it (page unreadable from the runner,
- *   or a change it was unsure about). Only these are shown on /admin.
+ *   or a change it was unsure about). Retried after 7 days; a second
+ *   needs_person on the same page settles it as kept (scripts/source-triage.ts),
+ *   so nothing waits on a person.
  */
 export type SourceTriageVerdict = "noise" | "pending" | "updated" | "replaced" | "needs_person";
 

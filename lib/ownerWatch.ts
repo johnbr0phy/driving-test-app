@@ -4,7 +4,8 @@
 //    timestamp behind. When one is older than it should be, the job stopped
 //    or keeps failing, and John gets one email about it (jobAlerts()).
 // 2. The owner digest (/api/cron/owner-digest, Mondays): one email listing
-//    only what needs a person (buildOwnerDigest()). Everything the automation
+//    only what needs a person (buildOwnerDigest()): stopped jobs and open pull
+//    requests. Question quality never appears there; what the automation
 //    settled by itself is a count in the last line, nothing more.
 //
 // Pure functions only, pinned by tests/owner-watch.test.cjs. The Firestore and
@@ -90,20 +91,27 @@ export interface DigestInput {
   /** Open pull requests; null when GitHub could not be read. */
   prs: DigestPr[] | null;
   jobs: JobProblem[];
-  /** Changed or broken official pages the triage could not settle. */
-  sources: { url: string; exams: string[]; reason: string }[];
-  /** Audit findings still open (the fix run could not settle them). */
-  findings: { examId: string; questionId: string; verdict: string; createdAt: string }[];
-  /** Statistical flags not cleared by a review. */
-  openFlags: number;
-  /** Open student reports, with when each was made. */
-  reports: { createdAt: string }[];
-  /** Dated exam changes not marked done. */
-  freshness: { exam: string; date: string; what: string; state: string }[];
-  /** Exams past their yearly review, oldest first. */
-  reviewDue: { exam: string; lastChanged: string }[];
-  /** Pages the source triage handled alone in the last 7 days. */
-  sourcesHandled: number;
+  /** What the automation settled on its own in the last 7 days, for the footer. */
+  handled: HandledWeek;
+}
+
+/**
+ * Question quality is not in the digest: the daily audit, the source triage
+ * and the weekly exam upkeep settle findings, student reports, flags, changed
+ * pages, dated exam changes and yearly reviews themselves (John, Nov 19 2026:
+ * he does not review question banks). Only these counts are reported.
+ */
+export interface HandledWeek {
+  /** Questions changed by a merged fix. */
+  fixed: number;
+  /** Findings checked against the source and kept as they were. */
+  kept: number;
+  /** Students emailed how their report ended. */
+  replies: number;
+  /** Changed or broken official pages the triage settled. */
+  sources: number;
+  /** Dated exam changes and yearly reviews merged. */
+  upkeep: number;
 }
 
 export interface DigestSection {
@@ -122,21 +130,14 @@ export interface OwnerDigest {
   html: string;
 }
 
-/** A finding or report the daily run has had this long to settle and did not. */
-export const SETTLE_DAYS = 2;
-/** Dated exam changes are listed this many days ahead. */
-export const FRESHNESS_AHEAD_DAYS = 30;
-
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
 export function buildOwnerDigest(input: DigestInput): OwnerDigest {
   const now = input.now ?? Date.now();
-  const questionsTab = `${input.siteUrl}/admin?tab=questions`;
   const sections: DigestSection[] = [];
   const daysOld = (iso: string) => Math.max(0, Math.floor((now - Date.parse(iso)) / DAY));
-  const settled = (iso: string) => !iso || now - Date.parse(iso) > SETTLE_DAYS * DAY;
 
   if (input.jobs.length) {
     sections.push({
@@ -145,6 +146,7 @@ export function buildOwnerDigest(input: DigestInput): OwnerDigest {
     });
   }
 
+  // Automatic fix PRs merge or close themselves, so what is left open is new tests and work started by hand.
   const prs = (input.prs ?? []).filter((p) => !p.draft);
   if (prs.length) {
     sections.push({
@@ -156,62 +158,22 @@ export function buildOwnerDigest(input: DigestInput): OwnerDigest {
     });
   }
 
-  if (input.sources.length) {
-    sections.push({
-      title: "Official pages the triage could not settle",
-      href: questionsTab,
-      lines: input.sources.slice(0, 8).map((s) => ({
-        text: `${s.exams.join(", ") || "unknown exam"}: ${s.reason || "not triaged yet"}`,
-        href: s.url,
-      })),
-    });
-  }
-
-  const findings = input.findings.filter((f) => settled(f.createdAt));
-  if (findings.length) {
-    sections.push({
-      title: "Audit findings the fix run left open",
-      href: questionsTab,
-      lines: findings.slice(0, 8).map((f) => ({ text: `${f.examId} ${f.questionId}: ${f.verdict}` })),
-    });
-  }
-
-  const reports = input.reports.filter((r) => settled(r.createdAt));
-  if (reports.length || input.openFlags) {
-    const lines: DigestSection["lines"] = [];
-    if (reports.length) lines.push({ text: `${plural(reports.length, "student report", "student reports")} open for more than ${SETTLE_DAYS} days` });
-    if (input.openFlags) lines.push({ text: `${plural(input.openFlags, "question", "questions")} flagged by answer statistics and not cleared by the audit` });
-    sections.push({ title: "Questions students or statistics doubt", href: questionsTab, lines });
-  }
-
-  const ahead = new Date(now + FRESHNESS_AHEAD_DAYS * DAY).toISOString().slice(0, 10);
-  const changes = input.freshness.filter((e) => e.state !== "done" && e.date <= ahead);
-  if (changes.length) {
-    sections.push({
-      title: "Exam changes due or coming within 30 days",
-      href: questionsTab,
-      lines: changes.map((e) => ({ text: `${e.exam}, ${e.date}: ${e.what}` })),
-    });
-  }
-
-  if (input.reviewDue.length) {
-    const first = input.reviewDue.slice(0, 5).map((r) => r.exam).join(", ");
-    sections.push({
-      title: "Yearly reviews due",
-      href: questionsTab,
-      lines: [{ text: `${plural(input.reviewDue.length, "exam", "exams")} last changed over a year ago, oldest first: ${first}` }],
-    });
-  }
-
   const count = sections.reduce((n, s) => n + s.lines.length, 0);
   const subject = count === 0 ? "Tigertest: nothing needs you this week" : `Tigertest: ${plural(count, "thing needs", "things need")} you`;
+  const h = input.handled;
+  const done: string[] = [];
+  if (h.fixed) done.push(`${plural(h.fixed, "question", "questions")} fixed`);
+  if (h.kept) done.push(`${plural(h.kept, "doubted question", "doubted questions")} checked and kept`);
+  if (h.replies) done.push(`${plural(h.replies, "student", "students")} told how their report ended`);
+  if (h.sources) done.push(`${plural(h.sources, "changed official page", "changed official pages")} handled`);
+  if (h.upkeep) done.push(`${plural(h.upkeep, "exam update", "exam updates")} merged`);
   const footerParts: string[] = [];
-  if (input.sourcesHandled) footerParts.push(`${plural(input.sourcesHandled, "changed source page", "changed source pages")} handled without you in the last 7 days`);
+  if (done.length) footerParts.push(`Handled without you in the last 7 days: ${done.join(", ")}`);
   if (input.prs === null) footerParts.push("GitHub could not be read, so open pull requests are not listed");
   const footer = footerParts.length ? `${footerParts.join(". ")}.` : "";
 
   const body = count === 0
-    ? `<p>Nothing needs you this week. The audits, source triage and nightly jobs all ran.</p>`
+    ? `<p>Nothing needs you this week. The audits, source triage, exam upkeep and nightly jobs all ran.</p>`
     : sections
         .map((s) => {
           const items = s.lines

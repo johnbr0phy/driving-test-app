@@ -21,9 +21,18 @@
  * Every flagged or reported question the judge rules on gets a review in
  * questionFlagReviews/{examId} (verdict, reason, answers at the time). A flag
  * reviewed "ok" is cleared on /admin and not sent again until its answers
- * double or 180 days pass (reviewFresh in lib/questionQuality.ts); a report
- * is judged once. A verdict too unsure to be a finding stays on /admin for a
- * person, who can clear it there. A question with an open finding is not judged again.
+ * double or 180 days pass (reviewFresh in lib/questionQuality.ts). A verdict
+ * too unsure to be a finding keeps the question as it is. A question with an
+ * open finding is not judged again.
+ *
+ * Nobody reviews any of this by hand. A report is judged once and closed: "ok"
+ * (or a low-confidence doubt) closes it with a "the key is right" reply, a
+ * finding closes it when the fix merges (--resolve) with a "fixed" reply, or a
+ * "right" reply when the fix run checked the source and kept the key
+ * (lib/server/reportClose.ts; /api/cron/report-replies sends the emails).
+ * Findings the fix run did not settle are carried into the next run's report
+ * (attempts on the finding doc); after MAX_ATTEMPTS they are closed with the
+ * question kept as it is.
  *
  * Writes audits/<date>.json and audits/<date>.md (the PR body the GitHub
  * Action uses), and in Firestore questionAudits/{runId}, one
@@ -46,6 +55,8 @@ const MODEL = "claude-opus-5-5";
 const CONCURRENCY = 6;
 const RECENT_DAYS = 90;
 const LETTERS = "ABCDEF";
+/** A finding the fix run could not settle this many times is closed, question kept as it is. */
+const MAX_ATTEMPTS = 3;
 
 // ── Arguments ───────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -179,12 +190,15 @@ if (RESOLVE) {
       const f = snap.data()!;
       const { resetQuestionSignals } = await import("@/lib/server/questionFlagReviews");
       await resetQuestionSignals(db, f.signalExamId || f.examId, f.questionId);
-      const reports = await db.collection("questionReports").where("questionId", "==", f.questionId).get();
-      for (const d of reports.docs) if (d.data().status === "open") await d.ref.update({ status: "fixed", closedAt });
+      const { closeQuestionReports } = await import("@/lib/server/reportClose");
+      await closeQuestionReports(db, f.questionId, "fixed", "fixed", r.note ?? "Fixed by the question audit.");
     } else {
       const f = snap.data()!;
       const { clearQuestionReview } = await import("@/lib/server/questionFlagReviews");
       await clearQuestionReview(db, f.signalExamId || f.examId, f.questionId, r.note || "Checked in review: not a problem.");
+      // Checked against the official source and kept: the reporter hears why the answer stands.
+      const { closeQuestionReports } = await import("@/lib/server/reportClose");
+      await closeQuestionReports(db, f.questionId, "dismissed", "right", r.note || "Checked against the official source: the key is right.");
     }
     n++;
   }
@@ -230,6 +244,8 @@ const recentCutoff = new Date(Date.now() - RECENT_DAYS * 86_400_000).toISOString
 const auditedAt = new Map<string, string>();
 const openFindings = new Map<string, { status: string; verdict: string }>();
 const reviews = new Map<string, FlagReview>();
+/** Findings an earlier run raised and no fix settled: handed to the fix step again. */
+const carried: Record<string, unknown>[] = [];
 
 if (db) {
   const [reports, flagsDoc, log, findings, sources, reviewDocs] = await Promise.all([
@@ -245,11 +261,44 @@ if (db) {
   const awaitingFix = (q: { examId: string; id: string } | undefined) => !!q && openFindings.get(`${q.examId}__${q.id}`)?.status === "open";
   for (const d of log.docs) for (const [id, at] of Object.entries(d.data())) auditedAt.set(`${d.id}|${id}`, at as string);
   for (const d of findings.docs) openFindings.set(d.id, { status: d.data().status, verdict: d.data().verdict });
+  const { closeQuestionReports } = await import("@/lib/server/reportClose");
+  // Open findings no fix settled: retried by the next fix run, then closed with the question kept.
+  for (const d of findings.docs) {
+    const f = d.data();
+    if (f.status !== "open") continue;
+    const attempts = (f.attempts as number | undefined) ?? 1;
+    if (attempts >= MAX_ATTEMPTS) {
+      if (DRY) continue;
+      const note = `Not settled after ${attempts} fix runs: no official source confirmed a change, so the question is kept as it is.`;
+      await d.ref.update({ status: "dismissed", closedAt: new Date().toISOString(), closedNote: note, gaveUp: true });
+      const { clearQuestionReview } = await import("@/lib/server/questionFlagReviews");
+      await clearQuestionReview(db, f.signalExamId || f.examId, f.questionId, note);
+      // Unsure either way, so no reply that claims the key is right.
+      await closeQuestionReports(db, f.questionId, "dismissed", null, note);
+      openFindings.set(d.id, { status: "dismissed", verdict: f.verdict });
+      continue;
+    }
+    const q = find(f.examId, f.questionId);
+    carried.push({ ...f, id: d.id, attempts, file: q?.file ?? "", question: q ? render(q, true) : "(not in the index)" });
+  }
   for (const d of reports.docs) {
     const r = d.data();
     const q = find(r.examId, r.questionId);
-    // Each report is judged once; it then waits on /admin with the verdict beside it.
-    if (awaitingFix(q) || (reviews.get(`${r.examId}|${r.questionId}`)?.at ?? "") > (r.createdAt ?? "")) continue;
+    if (!q) {
+      // The question left the bank (rewritten or retired): nothing to judge or reply about.
+      if (!DRY) await d.ref.update({ status: "dismissed", closedAt: new Date().toISOString(), closedReason: "The question is no longer in the bank." });
+      continue;
+    }
+    if (awaitingFix(q)) continue;
+    // Judged since it was made (a report filed before this change, or one the
+    // judge saw with another report): close it on that verdict now.
+    const review = reviews.get(`${r.examId}|${r.questionId}`);
+    if (review && review.at > (r.createdAt ?? "")) {
+      if (!DRY && (review.verdict === "ok" || review.confidence === "low")) {
+        await closeQuestionReports(db, r.questionId, "dismissed", "right", review.reason || "Checked against the sources: the key is right.");
+      }
+      continue;
+    }
     enqueue(q, "report", `A student reported: ${r.reason}${r.note ? `: "${r.note}"` : ""}`, { examId: r.examId });
   }
   for (const f of (flagsDoc.data()?.flags ?? []).slice(0, MAX_FLAGS)) {
@@ -284,7 +333,7 @@ pool.sort((a, b) => seeded(a.id).localeCompare(seeded(b.id)));
 for (const q of pool.slice(0, SIGNALS ? 0 : SWEEP)) enqueue(q, "sweep");
 
 console.log(`[audit] ${index.length} questions indexed, ${queue.size} queued (${[...queue.values()].filter((i) => !i.trigger.has("sweep")).length} from reports, stats and freshness)`);
-if (!queue.size && !DRY) {
+if (!queue.size && !carried.length && !DRY) {
   console.log("[audit] nothing new to check");
   return;
 }
@@ -457,7 +506,12 @@ const summary = {
   // Flagged or reported questions the judge looked at and found nothing wrong with.
   signalsCleared: results.filter((r) => r.signalExamId && r.verdict?.verdict === "ok").length,
 };
-writeFileSync(`${OUT}/${today}.json`, JSON.stringify({ ...summary, findings: confirmed }, null, 1) + "\n");
+// Earlier findings no fix settled go to the fix step again, beside today's.
+const carriedFindings = carried.filter((c) => !confirmed.some((r) => `${r.examId}__${r.questionId}` === c.id));
+writeFileSync(
+  `${OUT}/${today}.json`,
+  JSON.stringify({ ...summary, findings: [...confirmed, ...carriedFindings.map((c) => ({ ...c, carried: true }))] }, null, 1) + "\n",
+);
 
 const md = [
   `# Question audit ${today}`,
@@ -474,6 +528,27 @@ const md = [
     `- Fix: ${r.verdict!.fix || "(none given)"}`,
     "",
   ]),
+  ...(carriedFindings.length
+    ? [
+        "",
+        `# Earlier findings not settled yet (${carriedFindings.length})`,
+        "",
+        `Raised by an earlier run; no fix settled them. Decide each one now. After ${MAX_ATTEMPTS} runs a finding is closed with the question kept as it is.`,
+        "",
+        ...carriedFindings.flatMap((c) => [
+          `## ${String(c.verdict).replace("_", " ")}: ${c.examId} ${c.questionId} (${c.confidence}, attempt ${Number(c.attempts) + 1} of ${MAX_ATTEMPTS})`,
+          "",
+          `- File: \`${c.file}\``,
+          `- Finding: ${c.reason}`,
+          `- Fix: ${c.fix || "(none given)"}`,
+          "",
+          "```",
+          String(c.question),
+          "```",
+          "",
+        ]),
+      ]
+    : []),
 ].join("\n");
 writeFileSync(`${OUT}/${today}.md`, md + "\n");
 console.log(`[audit] ${summary.findings} findings; wrote ${OUT}/${today}.json and ${OUT}/${today}.md`);
@@ -499,8 +574,11 @@ if (db) {
       runId,
       status: "open",
       createdAt: summary.at,
+      attempts: 1,
     });
   }
+  // One more fix run is about to see each carried finding.
+  for (const c of carriedFindings) batch.update(db.collection("questionAuditFindings").doc(String(c.id)), { attempts: Number(c.attempts) + 1 });
   const log: Record<string, Record<string, string>> = {};
   for (const r of results) (log[r.examId] ??= {})[r.questionId] = summary.at;
   for (const [examId, entries] of Object.entries(log)) batch.set(db.collection("questionAuditLog").doc(examId), entries, { merge: true });
@@ -512,6 +590,17 @@ if (db) {
   }
   for (const [examId, entries] of Object.entries(reviewed)) batch.set(db.collection("questionFlagReviews").doc(examId), entries, { merge: true });
   await batch.commit();
+  // Reported questions the judge found right (or could not fault with any
+  // confidence): close the reports now, with a reply saying the key stands.
+  // A confirmed problem keeps its reports open until the fix merges (--resolve).
+  const { closeQuestionReports } = await import("@/lib/server/reportClose");
+  let replied = 0;
+  for (const r of results) {
+    if (!r.trigger.includes("report") || !r.verdict) continue;
+    if (r.verdict.verdict !== "ok" && r.verdict.confidence !== "low") continue;
+    replied += await closeQuestionReports(db, r.questionId, "dismissed", "right", r.verdict.reason || "Checked against the sources: the key is right.");
+  }
+  if (replied) console.log(`[audit] closed ${replied} reports on questions found right`);
   console.log(`[audit] saved run ${runId} to Firestore`);
 }
 }

@@ -15,7 +15,7 @@ for i, e in enumerate(reg.get("events", [])):
     where = f"event {i} ({e.get('exam')})"
     if e.get("exam") not in ids:
         errors.append(f"{where}: unknown exam id")
-    for key in ("date", "done"):
+    for key in ("date", "done", "recheck"):
         if key in e:
             try:
                 datetime.date.fromisoformat(e[key])
@@ -30,6 +30,14 @@ for i, e in enumerate(reg.get("events", [])):
             errors.append(f"{where}: no {key}")
     if not str(e.get("source", "")).startswith("https://"):
         errors.append(f"{where}: source must be an https URL")
+# lib/examReviews.json: {exam id: YYYY-MM-DD of the last yearly review} (scripts/exam-upkeep.ts).
+for exam, day in json.load(open("lib/examReviews.json", encoding="utf-8")).items():
+    if exam not in ids:
+        errors.append(f"examReviews.json: unknown exam id {exam!r}")
+    try:
+        datetime.date.fromisoformat(day)
+    except Exception:  # noqa: BLE001
+        errors.append(f"examReviews.json: {exam} {day!r} is not YYYY-MM-DD")
 if not isinstance(reg.get("reviewAfterDays"), int):
     errors.append("reviewAfterDays must be a number of days")
 print(f"{len(reg.get('events', []))} freshness events")

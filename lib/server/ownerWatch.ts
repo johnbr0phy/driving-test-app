@@ -1,5 +1,7 @@
 import type { Firestore } from "firebase-admin/firestore";
-import type { DigestPr, JobHeartbeat, JobProblem, WatchdogState } from "@/lib/ownerWatch";
+import type { DigestPr, HandledWeek, JobHeartbeat, JobProblem, WatchdogState } from "@/lib/ownerWatch";
+import FRESHNESS from "@/lib/examFreshness.json";
+import REVIEWS from "@/lib/examReviews.json";
 
 // Firestore and GitHub reads for the watchdog and the weekly owner digest
 // (lib/ownerWatch.ts has the rules).
@@ -95,4 +97,25 @@ export async function readOpenPrs(): Promise<DigestPr[] | null> {
   } catch {
     return null;
   }
+}
+
+/** What the question automation settled by itself in the last 7 days (the digest's footer). */
+export async function readHandledWeek(db: Firestore, now = Date.now()): Promise<HandledWeek> {
+  const since = new Date(now - 7 * 86_400_000).toISOString();
+  const day = since.slice(0, 10);
+  const [findings, replies, sources] = await Promise.all([
+    db.collection("questionAuditFindings").where("closedAt", ">=", since).select("status").get(),
+    db.collection("questionReports").where("emailedAt", ">=", since).select().get(),
+    db.collection("sourceWatch").where("triage.at", ">=", since).select("triage").get(),
+  ]);
+  const upkeep =
+    (FRESHNESS.events as { done?: string }[]).filter((e) => e.done && e.done >= day).length +
+    Object.values(REVIEWS as Record<string, string>).filter((d) => d >= day).length;
+  return {
+    fixed: findings.docs.filter((d) => d.data().status === "fixed").length,
+    kept: findings.docs.filter((d) => d.data().status === "dismissed").length,
+    replies: replies.size,
+    sources: sources.docs.filter((d) => d.data().triage?.verdict !== "needs_person").length,
+    upkeep,
+  };
 }

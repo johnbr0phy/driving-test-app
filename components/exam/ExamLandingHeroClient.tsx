@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
@@ -14,7 +14,6 @@ import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
 import { LandingTryQuestion } from "@/components/exam/LandingTryQuestion";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
-import { LANDING_TRY_INIT_SCRIPT, landingTryArm, noteLandingTryEnrolled } from "@/lib/landingTryTest";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
 // subtitle, black pill CTA that turns into "Go to Dashboard" once there is a
@@ -207,16 +206,6 @@ export function ExamLandingHeroClient({
   // visitor reads. Hold the label it had when they answered.
   const [heldLabel, setHeldLabel] = useState<string | null>(null);
   const label = heldLabel ?? (hasSession ? copy.dashboard : copy.start);
-  // The A/B test of the card (lib/landingTryTest.ts): the inline script picks
-  // the arm before paint and CSS hides the card for control; once mounted,
-  // control drops it and new visitors are enrolled.
-  const [hideTry, setHideTry] = useState(false);
-  const tryExam = tryQuestion?.examId;
-  useEffect(() => {
-    if (!tryExam) return;
-    if (landingTryArm() === "control") setHideTry(true);
-    noteLandingTryEnrolled(tryExam);
-  }, [tryExam]);
 
   return (
     <LandingIntro subtitle={subtitle} action={
@@ -226,15 +215,12 @@ export function ExamLandingHeroClient({
           </Link>
         </Button>
       }>
-      {tryQuestion && !hideTry && (
-        <div className="landing-try">
-          <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_INIT_SCRIPT }} />
-          <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
-        </div>
+      {tryQuestion && (
+        <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
       )}
-      {/* The question takes the screenshots' place; control (and pages with no
-          question) keep them. CSS hides them before paint for the card arm. */}
-      <div className={`${tryQuestion && !hideTry ? "landing-shots " : ""}mt-16 flex flex-col md:flex-row items-center justify-center gap-8`}>
+      {/* The question takes the screenshots' place; pages with no question keep them. */}
+      {!tryQuestion && (
+      <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
             <ThemedScreenshot
@@ -263,6 +249,7 @@ export function ExamLandingHeroClient({
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-6 text-center">{copy.desktop}</p>
         </div>
       </div>
+      )}
     </LandingIntro>
   );
 }

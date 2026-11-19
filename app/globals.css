@@ -12095,15 +12095,6 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
   }
 }
 
-/* "Try one now" A/B test (lib/landingTryTest.ts): the control arm never sees the card. */
-html[data-ltq="control"] .landing-try {
-  display: none;
-}
-/* With the card showing, the question takes the place of the screenshots. */
-html:not([data-ltq="control"]) .landing-shots {
-  display: none;
-}
-
 /* The landing's playable question (components/exam/LandingTryQuestion.tsx):
    the answer letters pulse twice when the card comes into view, so it reads
    as tappable rather than a screenshot. */

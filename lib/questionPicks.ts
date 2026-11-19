@@ -1,7 +1,6 @@
 "use client";
 
 import { isTestBrowser } from "@/lib/internal";
-import { noteLandingTryAnswer } from "@/lib/landingTryTest";
 import { STRONG_ACCURACY, STRONG_MIN_ANSWERS } from "@/lib/questionQuality";
 
 // Anonymous option picks for question quality (lib/questionQuality.ts):
@@ -43,7 +42,6 @@ export function recordQuestionPick(examId: string, questionId: string, correct: 
   }
   if (internal) return;
   // Outcome of the "Try one now" A/B test, for browsers enrolled in it.
-  noteLandingTryAnswer();
 
   const all = skill();
   const mine = all[examId] ?? { n: 0, c: 0 };

@@ -175,7 +175,7 @@ export default function CbcsLandingPage() {
                 Weighted Like the Real Exam
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                NHA's test plan sets how many of the 100 scored questions come from each domain, and every practice test here keeps those proportions at 50 questions. Billing and coding instructors can set Tigertest as practice at{" "}
+                NHA&apos;s test plan sets how many of the 100 scored questions come from each domain, and every practice test here keeps those proportions at 50 questions. Billing and coding instructors can set Tigertest as practice at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which areas the class misses most.
               </p>

@@ -10,6 +10,7 @@ import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsExplainer } from "./BasicsExplainer";
 import { BasicsWalkthrough } from "./BasicsWalkthrough";
 import { Eli5Toggle, RuleCard } from "./BasicsRuleCard";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * The bottom sheet with a skill's rule card, used from a Basics question's
@@ -18,13 +19,15 @@ import { Eli5Toggle, RuleCard } from "./BasicsRuleCard";
  * instead"; either swaps the sheet for the lesson, whose "Read it" comes
  * back here.
  */
-export function BasicsRuleSheet({ exam, skill, open, onClose, doneLabel = "Back to the question" }: {
+export function BasicsRuleSheet({ exam, skill, open, onClose, doneLabel: doneLabelProp }: {
   exam: ExamV2Config;
   skill: BasicsSkill;
   open: boolean;
   onClose: () => void;
   doneLabel?: string;
 }) {
+  const t = useV2Ui().drill;
+  const doneLabel = doneLabelProp ?? t.backToQuestion;
   const [eli5, setEli5] = useState(false);
   const [listening, setListening] = useState(false);
   const [walking, setWalking] = useState(false);
@@ -48,17 +51,17 @@ export function BasicsRuleSheet({ exam, skill, open, onClose, doneLabel = "Back 
   }
 
   return (
-    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" aria-label="The rule" onClick={onClose}>
+    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[90] flex items-end justify-center bg-black/50" aria-label={t.ruleSheetAria} onClick={onClose}>
       <div className="v2-pop max-h-[85%] w-full max-w-2xl overflow-y-auto rounded-t-2xl bg-white dark:bg-gray-900 p-4" onClick={(e) => e.stopPropagation()}>
         <div className="flex flex-col gap-5">
           {walkable && (
             <button type="button" onClick={() => setWalking(true)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
-              <ListChecks className="h-4 w-4" /> Walk through it, step by step
+              <ListChecks className="h-4 w-4" /> {t.walkStepByStep}
             </button>
           )}
           {voiced && (
             <button type="button" onClick={() => setListening(true)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
-              <Play className="h-4 w-4" /> Listen instead · 30 seconds
+              <Play className="h-4 w-4" /> {t.listenInstead}
             </button>
           )}
           <RuleCard skill={skill} />

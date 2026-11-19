@@ -1,9 +1,9 @@
 "use client";
 
-import "@/lib/banks/itcils";
-import { ExamStatsPage } from "@/components/exam/ExamStatsPage";
-import { getExamById } from "@/lib/exams";
+import { StatsV2 } from "@/components/v2/StatsV2";
+import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/itcils";
 
-export default function ItcilsStatsPage() {
-  return <ExamStatsPage exam={getExamById("itcils")!} />;
+export default function StatsPage() {
+  return <StatsV2 exam={getExamV2("itcils")} />;
 }

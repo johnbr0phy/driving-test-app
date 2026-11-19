@@ -1,0 +1,4062 @@
+[
+  {
+    "id": "ITCILS-AVV-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'avviso nell'ingresso di un condominio*\n\nGentili condomini, lunedì 14 marzo dalle 8 alle 13 l'acqua sarà chiusa in tutto il palazzo per la sostituzione dei tubi in cantina. Vi chiediamo di non usare la lavatrice nella mattinata e di tenere chiusi tutti i rubinetti. Chi ha bisogno di acqua per motivi di salute può rivolgersi al portiere, che distribuirà alcune bottiglie. L'ascensore funzionerà normalmente. L'amministratore.",
+    "stem": "Che cosa chiede l'amministratore ai condomini?",
+    "options": [
+      "Di non fare il bucato la mattina",
+      "Di non usare l'ascensore quel giorno",
+      "Di comprare acqua in bottiglia",
+      "Di aprire i rubinetti alle 13"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'avviso chiede di non usare la lavatrice nella mattinata, cioè di non fare il bucato. L'ascensore invece funziona normalmente, e le bottiglie le distribuisce il portiere a chi ne ha bisogno."
+  },
+  {
+    "id": "ITCILS-AVV-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'annuncio della biblioteca comunale*\n\nDa settembre la biblioteca cambia orario. Il lunedì resterà chiusa; dal martedì al venerdì sarà aperta dalle 9 alle 19 senza interruzione; il sabato solo la mattina. Per prendere in prestito i libri bisogna avere la tessera, che si fa gratis allo sportello con un documento d'identità. I libri si possono tenere per trenta giorni e il prestito si può rinnovare una volta, anche per telefono.",
+    "stem": "Che cosa serve per fare la tessera?",
+    "options": [
+      "Una foto e una firma",
+      "Un documento d'identità",
+      "Il pagamento di una quota",
+      "Una telefonata alla biblioteca"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'annuncio dice che la tessera si fa gratis allo sportello con un documento d'identità. Il telefono serve solo per rinnovare il prestito."
+  },
+  {
+    "id": "ITCILS-AVV-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso della palestra*\n\nForma Più»: «Cari soci, dal 1° ottobre per entrare in sala pesi sarà obbligatorio portare un asciugamano e scarpe pulite, usate solo all'interno. Gli armadietti dello spogliatoio vanno liberati ogni sera: gli oggetti lasciati dopo la chiusura saranno portati in segreteria. I corsi di gruppo si prenotano dall'app fino a due ore prima dell'inizio. Grazie per la collaborazione.",
+    "stem": "Che cosa succede agli oggetti lasciati negli armadietti?",
+    "options": [
+      "Vengono buttati via",
+      "Restano chiusi lì fino a lunedì",
+      "Vengono portati in segreteria",
+      "Vengono dati in beneficenza"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Secondo l'avviso gli oggetti lasciati dopo la chiusura sono portati in segreteria, dove il socio può riprenderli."
+  },
+  {
+    "id": "ITCILS-AVV-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso del Comune di Valmonte*\n\nSi informano i cittadini che da novembre la raccolta della carta passa dal martedì al giovedì. Il contenitore va esposto davanti a casa la sera prima, dopo le 20. Il cartone grande deve essere piegato e legato. Non si possono mettere nella carta i fazzoletti usati e i cartoni della pizza sporchi, che vanno nell'organico. Per informazioni chiamare il numero verde.",
+    "stem": "Quando bisogna mettere fuori il contenitore della carta?",
+    "options": [
+      "Il martedì sera dopo le 20",
+      "Il giovedì mattina prima delle 7",
+      "Il giovedì sera dopo le 20",
+      "Il mercoledì sera dopo le 20"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La raccolta è il giovedì e il contenitore va esposto la sera prima, quindi il mercoledì dopo le 20. Il martedì era il giorno della raccolta prima di novembre."
+  },
+  {
+    "id": "ITCILS-AVV-005",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il cartello in farmacia*\n\nPer motivi organizzativi, le misurazioni gratuite della pressione si fanno solo il mercoledì e il venerdì dalle 15 alle 18. Non serve la prenotazione, ma chiediamo di arrivare almeno dieci minuti prima della chiusura. Le analisi del colesterolo, invece, sono a pagamento e si prenotano al banco. Il servizio è riservato ai maggiorenni. Per i bambini rivolgersi al pediatra.",
+    "stem": "Che cosa è vero per la misurazione della pressione?",
+    "options": [
+      "È gratuita e non si prenota",
+      "Si prenota al banco",
+      "Costa poco e si fa ogni giorno",
+      "È riservata ai minorenni"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il cartello dice che la misurazione della pressione è gratuita e non serve la prenotazione. Si prenotano al banco solo le analisi del colesterolo."
+  },
+  {
+    "id": "ITCILS-AVV-006",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'avviso alla fermata dell'autobus*\n\nDal 3 al 9 maggio, per lavori in via Garibaldi, le linee 4 e 7 non passano per il centro. La linea 4 segue un percorso diverso lungo viale Roma; la linea 7 termina in piazza della Stazione. In quei giorni le fermate di via Garibaldi sono sospese. I biglietti già acquistati restano validi. Ci scusiamo per il disagio.",
+    "stem": "Che cosa succede alla linea 7 durante i lavori?",
+    "options": [
+      "Passa lungo viale Roma",
+      "Si ferma in piazza della Stazione",
+      "Non funziona per tutta la settimana",
+      "Ferma solo in via Garibaldi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La linea 7 termina in piazza della Stazione. È la linea 4 che passa lungo viale Roma, e le fermate di via Garibaldi sono sospese."
+  },
+  {
+    "id": "ITCILS-AVV-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'annuncio del supermercato*\n\nSabato e domenica, ogni due confezioni di pasta acquistate, la terza è in regalo. L'offerta vale solo per i clienti con la carta fedeltà, che si può richiedere alla cassa centrale in pochi minuti. Non è possibile cumulare l'offerta con altri sconti. La promozione riguarda tutte le marche esposte nel reparto della pasta secca. Fino a esaurimento scorte.",
+    "stem": "Che cosa deve avere il cliente per avere la pasta in regalo?",
+    "options": [
+      "Uno sconto del giornale",
+      "Lo scontrino della settimana prima",
+      "La carta fedeltà del negozio",
+      "Un buono della cassa centrale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'offerta vale solo per chi ha la carta fedeltà, che si richiede alla cassa centrale. Non si può unire ad altri sconti."
+  },
+  {
+    "id": "ITCILS-AVV-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso della scuola primaria*\n\nGianni Rodari»: «Si ricorda ai genitori che venerdì 20 i bambini usciranno alle 12.30 per una riunione degli insegnanti. Il servizio mensa non sarà attivo. Gli alunni che usano lo scuolabus torneranno a casa con il primo giro, che partirà alle 12.40. I genitori che non possono venire a prendere i figli devono avvisare la segreteria entro mercoledì.",
+    "stem": "Che cosa devono fare i genitori che non possono prendere i figli?",
+    "options": [
+      "Iscriverli alla mensa di venerdì",
+      "Parlare con gli insegnanti venerdì",
+      "Scrivere al servizio scuolabus",
+      "Avvisare la segreteria in tempo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'avviso chiede ai genitori che non possono venire di avvisare la segreteria entro mercoledì. La mensa quel giorno non funziona."
+  },
+  {
+    "id": "ITCILS-AVV-009",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il regolamento della piscina comunale*\n\nIn vasca è obbligatorio indossare la cuffia. Prima di entrare in acqua bisogna fare la doccia. I bambini sotto gli 8 anni possono entrare solo con un adulto che resta a bordo vasca. È vietato correre e tuffarsi nella parte bassa. Cibo e bevande si consumano solo nell'area bar. Il bagnino può allontanare chi non rispetta le regole.",
+    "stem": "Chi deve stare a bordo vasca?",
+    "options": [
+      "Chi accompagna un bambino piccolo",
+      "Il bagnino che controlla l'area bar",
+      "Chi non ha la cuffia",
+      "Chi vuole tuffarsi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I bambini sotto gli 8 anni possono entrare solo con un adulto che resta a bordo vasca."
+  },
+  {
+    "id": "ITCILS-AVV-010",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'annuncio in bacheca*\n\nAffittasi camera singola in appartamento con due studentesse, a dieci minuti a piedi dall'università. Cucina e bagno in comune, lavatrice, internet incluso. Le spese di luce e gas si dividono ogni due mesi. Si cerca una ragazza non fumatrice, possibilmente per tutto l'anno. Animali non ammessi. Per vedere la camera scrivere a Laura, non telefonare.",
+    "stem": "Come si deve contattare Laura?",
+    "options": [
+      "Telefonandole la sera",
+      "Scrivendole un messaggio",
+      "Passando dall'università",
+      "Chiedendo alle studentesse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'annuncio dice di scrivere a Laura e di non telefonare."
+  },
+  {
+    "id": "ITCILS-AVV-011",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'avviso dell'Ufficio anagrafe*\n\nDal 1° febbraio la carta d'identità elettronica si richiede solo su appuntamento, prenotando sul sito del Comune. Il giorno dell'appuntamento bisogna portare una fototessera recente e il vecchio documento. Chi ha perso la carta deve presentare anche la denuncia di smarrimento. La nuova carta arriva per posta all'indirizzo indicato entro sei giorni lavorativi. Chi non può aspettare può chiedere allo sportello un certificato provvisorio.",
+    "stem": "Che cosa deve portare chi ha perso la carta d'identità?",
+    "options": [
+      "Solo la vecchia carta d'identità",
+      "La ricevuta della posta",
+      "Anche la denuncia di smarrimento",
+      "Un certificato di residenza"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chi ha perso la carta deve presentare, oltre alla fototessera, anche la denuncia di smarrimento. Non ha più il vecchio documento da portare."
+  },
+  {
+    "id": "ITCILS-AVV-012",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'annuncio di un corso*\n\nIl Centro per adulti di Borgo San Paolo organizza un corso serale gratuito di informatica di base. Le lezioni si tengono il martedì e il giovedì dalle 18 alle 20, da ottobre a dicembre. Si impara a usare la posta elettronica, a compilare moduli online e a prenotare servizi pubblici. I posti sono 15: le iscrizioni si fanno in segreteria fino al 25 settembre.",
+    "stem": "Che cosa si impara nel corso?",
+    "options": [
+      "A riparare i computer",
+      "A scrivere programmi",
+      "A vendere prodotti su internet",
+      "A usare la posta elettronica"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il corso insegna a usare la posta elettronica, a compilare moduli online e a prenotare servizi pubblici."
+  },
+  {
+    "id": "ITCILS-AVV-013",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso del museo civico*\n\nOgni prima domenica del mese l'ingresso è gratuito per tutti. Negli altri giorni il biglietto intero costa otto euro, il ridotto cinque. Il ridotto spetta ai ragazzi dai 12 ai 18 anni e agli studenti universitari; i bambini sotto i 12 anni non pagano. Il museo è chiuso il lunedì. Le visite guidate partono ogni ora e vanno prenotate almeno un giorno prima, per telefono o alla biglietteria.",
+    "stem": "Quando entra gratis un adulto?",
+    "options": [
+      "La prima domenica del mese",
+      "Ogni lunedì mattina",
+      "Con una visita guidata",
+      "Con un bambino sotto i 12 anni"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'ingresso è gratuito per tutti la prima domenica del mese. Il lunedì il museo è chiuso, e la gratuità per i bambini vale solo per loro."
+  },
+  {
+    "id": "ITCILS-AVV-014",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso sul treno regionale*\n\nSi informano i viaggiatori che il biglietto regionale deve essere convalidato prima di salire, nelle macchine gialle in stazione. Chi ha il biglietto digitale non deve convalidarlo, ma deve mostrarlo al controllore sul telefono. I viaggiatori senza biglietto valido pagano una multa. In caso di guasto alla macchina, avvisare subito il personale di bordo, che scriverà a mano l'ora sul biglietto.",
+    "stem": "Che cosa deve fare chi ha il biglietto sul telefono?",
+    "options": [
+      "Convalidarlo nella macchina gialla",
+      "Mostrarlo al controllore",
+      "Stamparlo prima di salire",
+      "Avvisare il personale alla partenza"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il biglietto digitale non si convalida: basta mostrarlo al controllore sul telefono. Le macchine gialle servono per il biglietto di carta."
+  },
+  {
+    "id": "ITCILS-AVV-015",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'avviso dell'asilo nido*\n\nIl Girasole»: «Le domande di iscrizione per il prossimo anno si presentano online dal 1° al 31 marzo. Possono iscriversi i bambini nati dal 2024 in poi, residenti nel Comune. Alla domanda va allegato l'ISEE per calcolare la retta mensile. A maggio sarà pubblicata la graduatoria sul sito. Prima dell'inizio i genitori saranno invitati a un incontro con le educatrici.",
+    "stem": "A che cosa serve l'ISEE?",
+    "options": [
+      "A scegliere la classe del bambino",
+      "A entrare nella graduatoria nazionale",
+      "A stabilire quanto si paga al mese",
+      "A prenotare l'incontro con le educatrici"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'ISEE va allegato per calcolare la retta mensile, cioè quanto la famiglia paga ogni mese."
+  },
+  {
+    "id": "ITCILS-AVV-016",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello in un parcheggio*\n\nParcheggio riservato ai clienti del centro commerciale. La sosta è gratuita per le prime due ore. Dopo, si paga un euro per ogni ora successiva alla cassa automatica, prima di tornare all'auto. Il parcheggio chiude alle 22: le auto ancora presenti dopo la chiusura restano chiuse dentro fino alle 8 del giorno dopo. Il personale non può aprire i cancelli durante la notte.",
+    "stem": "Che cosa succede a chi resta tre ore?",
+    "options": [
+      "Non paga niente",
+      "Paga tre ore in contanti",
+      "Deve lasciare l'auto lì fino alle 8",
+      "Paga un'ora alla cassa automatica"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Le prime due ore sono gratuite e si paga un euro per ogni ora dopo: con tre ore si paga solo la terza."
+  },
+  {
+    "id": "ITCILS-AVV-017",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'avviso dell'azienda sanitaria*\n\nDal 15 gennaio gli esami del sangue si fanno senza prenotazione, dal lunedì al sabato dalle 7.30 alle 9.30. Bisogna presentarsi a digiuno, con l'impegnativa del medico e la tessera sanitaria. I risultati si possono scaricare online dopo tre giorni oppure ritirare allo sportello. Chi ha più di 75 anni ha un accesso dedicato, senza fila, dall'ingresso laterale.",
+    "stem": "Che cosa si deve portare all'esame?",
+    "options": [
+      "L'impegnativa e la tessera",
+      "La prenotazione e un documento",
+      "Il risultato degli esami precedenti",
+      "Solo la tessera sanitaria"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'avviso chiede di presentarsi a digiuno con l'impegnativa del medico e la tessera sanitaria. La prenotazione non serve più."
+  },
+  {
+    "id": "ITCILS-AVV-018",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'annuncio di lavoro*\n\nRistorante in centro cerca aiuto cuoco per la stagione estiva, da giugno a settembre. Si richiedono esperienza di almeno un anno, disponibilità a lavorare la sera e nel fine settimana e conoscenza dell'italiano. Offriamo contratto regolare e un giorno libero a settimana. Mandare il curriculum per email; i candidati scelti saranno chiamati per un colloquio.",
+    "stem": "Che cosa offre il ristorante?",
+    "options": [
+      "Un lavoro fisso a tempo indeterminato",
+      "Un contratto regolare per l'estate",
+      "Il fine settimana sempre libero",
+      "Un corso di cucina gratuito"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il ristorante offre un contratto regolare per la stagione estiva, da giugno a settembre, con un giorno libero a settimana. Il fine settimana bisogna invece essere disponibili."
+  },
+  {
+    "id": "ITCILS-AVV-019",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso di un ufficio postale*\n\nDal lunedì al venerdì l'ufficio è aperto dalle 8.20 alle 13.45, il sabato fino alle 12.45. Per pagare i bollettini si può usare anche il totem all'ingresso, con carta o bancomat. Per spedire un pacco bisogna prendere il numero allo sportello B. I pacchi in giacenza si ritirano con l'avviso e un documento d'identità. Chi ritira per un'altra persona deve avere anche la sua delega firmata.",
+    "stem": "Che cosa serve per ritirare un pacco in giacenza?",
+    "options": [
+      "Il numero dello sportello B",
+      "Una carta o un bancomat",
+      "L'avviso e un documento",
+      "La ricevuta del bollettino"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "I pacchi in giacenza si ritirano presentando l'avviso e un documento d'identità. Il numero dello sportello B serve invece per spedire."
+  },
+  {
+    "id": "ITCILS-AVV-020",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAvvisi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'avviso del mercato rionale*\n\nDa aprile il mercato del sabato si sposta da piazza Dante al parcheggio di via Verdi, perché la piazza sarà chiusa per lavori. L'orario resta lo stesso, dalle 7 alle 13. Nel parcheggio di via Verdi non si potrà sostare il venerdì sera e il sabato. I clienti possono lasciare l'auto nel parcheggio dello stadio, a cinque minuti a piedi.",
+    "stem": "Perché il mercato cambia posto?",
+    "options": [
+      "Perché cambia l'orario",
+      "Perché il parcheggio di via Verdi è chiuso",
+      "Perché lo stadio è più vicino",
+      "Perché ci sono lavori nella piazza"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il mercato si sposta perché piazza Dante sarà chiusa per lavori. L'orario invece resta uguale."
+  },
+  {
+    "id": "ITCILS-MAI-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la mail*\n\nGentile signora Ferri, le scrivo perché la lavatrice che ho comprato nel vostro negozio il 3 giugno non funziona più. Dopo due settimane ha cominciato a perdere acqua dal basso. Ho ancora lo scontrino e la garanzia. Vorrei sapere se posso portarla in negozio o se un tecnico può venire a casa, perché è molto pesante. Resto in attesa di una risposta. Cordiali saluti, Amina Diallo.",
+    "stem": "Che cosa vuole sapere Amina?",
+    "options": [
+      "Come far riparare la lavatrice",
+      "Quanto costa una nuova lavatrice",
+      "Dove ha messo lo scontrino",
+      "Quando apre il negozio"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amina chiede se può portare la lavatrice in negozio o se un tecnico può venire a casa: vuole sapere come farla riparare in garanzia."
+  },
+  {
+    "id": "ITCILS-MAI-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio di Marco alla collega*\n\nCiao Giulia, domani non posso venire in ufficio perché ho la febbre. Ho già avvisato il capo. Ti posso chiedere un favore? Alle 10 c'è la riunione con il signor Bassi: puoi dirgli che gli mando i documenti per email entro venerdì? La cartella blu sulla mia scrivania è per la contabilità, se passi tu da loro. Grazie mille!",
+    "stem": "Che cosa chiede Marco a Giulia?",
+    "options": [
+      "Di avvisare il capo",
+      "Di avvisare il signor Bassi",
+      "Di mandare i documenti per email",
+      "Di spostare la riunione con Bassi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Marco ha già avvisato il capo e manderà lui i documenti; chiede a Giulia di dire al signor Bassi che riceverà i documenti entro venerdì."
+  },
+  {
+    "id": "ITCILS-MAI-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la lettera del condominio*\n\nGentile signor Rossi, alcuni vicini si sono lamentati perché la sua bicicletta resta spesso nell'atrio, davanti alle cassette della posta. Le ricordiamo che il regolamento del condominio permette di lasciare le biciclette solo nel cortile, nell'apposita rastrelliera. Le biciclette nell'atrio rendono difficile il passaggio, soprattutto per le persone anziane e per chi entra con un passeggino. La preghiamo di spostarla al più presto. Restiamo a disposizione per qualsiasi chiarimento. L'amministrazione.",
+    "stem": "Perché l'amministrazione scrive al signor Rossi?",
+    "options": [
+      "Perché non paga le spese del condominio",
+      "Perché fa rumore la sera",
+      "Perché lascia la bici nell'atrio",
+      "Perché ha rotto la rastrelliera"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "I vicini si lamentano perché la bicicletta del signor Rossi resta nell'atrio, mentre il regolamento la permette solo nel cortile."
+  },
+  {
+    "id": "ITCILS-MAI-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail della scuola di lingue*\n\nCaro Pedro, grazie per la tua iscrizione al corso di italiano B1. Il test d'ingresso sarà lunedì alle 17 nell'aula 3: dura circa un'ora e serve a formare i gruppi. Porta una penna e il documento che hai usato per l'iscrizione. Le lezioni cominciano il lunedì dopo. Se non puoi venire al test, scrivici: puoi farlo anche online mercoledì. A presto, la segreteria.",
+    "stem": "A che cosa serve il test di lunedì?",
+    "options": [
+      "A dare il certificato B1",
+      "A pagare la quota d'iscrizione al corso",
+      "A scegliere l'insegnante",
+      "A dividere gli studenti in gruppi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La segreteria dice che il test serve a formare i gruppi, cioè a dividere gli studenti secondo il livello."
+  },
+  {
+    "id": "ITCILS-MAI-005",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il messaggio della vicina*\n\nBuongiorno signora Elena, sono Rita del terzo piano. Sabato e domenica sono via per un matrimonio a Napoli. Potrebbe dare da mangiare al mio gatto? Le lascio le chiavi nella cassetta della posta venerdì sera. Il cibo è nell'armadio della cucina, basta una scatoletta la mattina. Se non può, nessun problema, chiedo a mio fratello. Grazie!",
+    "stem": "Dove troverà le chiavi la signora Elena?",
+    "options": [
+      "Nella cassetta della posta",
+      "Nell'armadio della cucina",
+      "Dal fratello di Rita",
+      "Sotto lo zerbino del terzo piano"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rita scrive che lascerà le chiavi nella cassetta della posta venerdì sera. Nell'armadio della cucina c'è il cibo del gatto."
+  },
+  {
+    "id": "ITCILS-MAI-006",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la mail di un cliente a un albergo*\n\nBuonasera, ho prenotato una camera doppia per il 12 e 13 agosto a nome Kowalski. Purtroppo mia moglie si è fatta male a un piede e non può salire le scale. Sarebbe possibile avere una camera al piano terra o vicino all'ascensore? Se c'è una differenza di prezzo, siamo disposti a pagarla. La ringrazio in anticipo. Piotr Kowalski.",
+    "stem": "Che cosa chiede il signor Kowalski?",
+    "options": [
+      "Di cancellare la prenotazione",
+      "Una camera facile da raggiungere",
+      "Uno sconto sul prezzo",
+      "Di cambiare le date del soggiorno"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il signor Kowalski chiede una camera al piano terra o vicino all'ascensore, perché sua moglie non può fare le scale. Il prezzo è disposto anche a pagarlo di più."
+  },
+  {
+    "id": "ITCILS-MAI-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la risposta dell'azienda*\n\nGentile cliente, ci dispiace per il ritardo nella consegna del suo ordine n. 4512. Il pacco è partito ieri dal nostro magazzino e arriverà entro tre giorni lavorativi. Come scusa, le abbiamo inviato un buono sconto del dieci per cento sul prossimo acquisto. Se il pacco non arriva entro martedì, ci contatti a questo indirizzo. Il servizio clienti.",
+    "stem": "Che cosa ha ricevuto il cliente come scusa?",
+    "options": [
+      "Il rimborso dell'ordine",
+      "Una consegna gratuita entro martedì",
+      "Uno sconto per un prossimo ordine",
+      "Un secondo pacco in regalo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'azienda gli ha inviato un buono sconto del dieci per cento sul prossimo acquisto."
+  },
+  {
+    "id": "ITCILS-MAI-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il messaggio della maestra*\n\nCari genitori, giovedì andremo con la classe al parco della Rocca per una lezione sulle piante. Partiremo a piedi alle 9 e torneremo per il pranzo. I bambini devono avere scarpe comode, un cappellino e una bottiglietta d'acqua. Chi non vuole che il figlio partecipi, me lo dica entro martedì: il bambino resterà a scuola con un'altra classe. Maestra Carla.",
+    "stem": "Che cosa succede ai bambini che non vanno al parco?",
+    "options": [
+      "Restano a casa con i genitori",
+      "Vanno al parco nel pomeriggio",
+      "Pranzano a scuola con la maestra Carla",
+      "Restano a scuola con un'altra classe"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La maestra spiega che chi non partecipa resterà a scuola con un'altra classe."
+  },
+  {
+    "id": "ITCILS-MAI-009",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail al proprietario di casa*\n\nGentile signor Neri, le scrivo per dirle che il riscaldamento del mio appartamento non funziona da tre giorni. Ho controllato la caldaia e sul display c'è una luce rossa. Siccome il contratto dice che la manutenzione della caldaia è a carico suo, le chiedo di mandare un tecnico appena possibile. Sono a casa tutti i pomeriggi dopo le 15. Saluti, Yusuf Demir.",
+    "stem": "Perché Yusuf chiede al proprietario di mandare il tecnico?",
+    "options": [
+      "Perché il contratto lo prevede",
+      "Perché lui non è mai a casa",
+      "Perché la caldaia è nuova",
+      "Perché il tecnico è un amico del proprietario"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Yusuf scrive che secondo il contratto la manutenzione della caldaia è a carico del proprietario, per questo chiede a lui di mandare il tecnico."
+  },
+  {
+    "id": "ITCILS-MAI-010",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il messaggio di un'amica*\n\nCiao Fatima! Ti ricordi che venerdì è il compleanno di Sara? Pensavamo di farle una festa a sorpresa a casa mia verso le 8. Io preparo la cena, tu potresti portare il dolce? Mi raccomando, non dire niente a Sara: Luca la porta da me dicendo che andiamo al cinema. Fammi sapere se vieni! Baci, Chiara.",
+    "stem": "Che cosa deve fare Fatima?",
+    "options": [
+      "Preparare la cena per tutti",
+      "Portare il dolce alla festa",
+      "Andare al cinema con Sara",
+      "Accompagnare Sara a casa di Chiara"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chiara prepara la cena e chiede a Fatima di portare il dolce. È Luca che accompagna Sara."
+  },
+  {
+    "id": "ITCILS-MAI-011",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la mail dell'ufficio del personale*\n\nGentili colleghi, vi ricordiamo che le richieste di ferie per agosto devono arrivare entro il 30 aprile tramite il modulo sul portale interno. Le ferie saranno assegnate cercando di accontentare tutti, ma nello stesso reparto non possono essere assenti più di due persone per settimana. Chi ha figli in età scolare avrà la precedenza in caso di richieste uguali.",
+    "stem": "Chi ha la precedenza se due richieste sono uguali?",
+    "options": [
+      "Chi ha mandato la richiesta prima",
+      "Chi lavora da più anni",
+      "Chi ha figli che vanno a scuola",
+      "Chi chiede meno giorni"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La mail dice che, in caso di richieste uguali, ha la precedenza chi ha figli in età scolare."
+  },
+  {
+    "id": "ITCILS-MAI-012",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio del medico di famiglia*\n\nGentile paziente, dal prossimo mese lo studio cambia orario. Le visite senza appuntamento si faranno solo il lunedì e il giovedì mattina. Negli altri giorni si riceve solo su appuntamento, da prendere per telefono dalle 8 alle 10. Le ricette dei farmaci abituali si possono chiedere via email e saranno inviate direttamente in farmacia. Dottor Lombardi.",
+    "stem": "Come si possono chiedere le ricette dei farmaci abituali?",
+    "options": [
+      "Telefonando allo studio dalle 8 alle 10",
+      "Andando il lunedì mattina",
+      "Chiedendo in farmacia",
+      "Mandando un'email allo studio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il medico scrive che le ricette dei farmaci abituali si chiedono via email e arrivano poi in farmacia."
+  },
+  {
+    "id": "ITCILS-MAI-013",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la lettera del Comune*\n\nGentile signora Okafor, la informiamo che la sua domanda di contributo per l'affitto è stata accettata. L'importo sarà versato sul conto corrente indicato nella domanda entro sessanta giorni. Per ricevere il contributo anche il prossimo anno sarà necessario presentare una nuova domanda nei tempi del nuovo bando. Per informazioni può rivolgersi all'Ufficio casa il martedì mattina.",
+    "stem": "Che cosa deve fare la signora per avere il contributo l'anno prossimo?",
+    "options": [
+      "Fare una nuova domanda",
+      "Aprire un nuovo conto",
+      "Andare all'Ufficio casa ogni martedì",
+      "Aspettare sessanta giorni"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La lettera spiega che per il prossimo anno serve una nuova domanda, secondo il nuovo bando. Il contributo di quest'anno arriva entro sessanta giorni."
+  },
+  {
+    "id": "ITCILS-MAI-014",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail di un collega*\n\nCiao Ahmed, purtroppo la sala riunioni del secondo piano è occupata giovedì. Ho spostato la presentazione per i clienti alla sala piccola del primo piano, sempre alle 11. Lì non c'è il proiettore, quindi porto io quello portatile. Puoi stampare dieci copie del programma e portarle tu? Io arrivo mezz'ora prima per preparare la sala. Grazie, Davide.",
+    "stem": "Che cosa cambia per la presentazione?",
+    "options": [
+      "L'ora in cui comincia",
+      "Il posto dove si farà",
+      "Il giorno della settimana",
+      "Il numero di clienti"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Davide sposta la presentazione nella sala piccola del primo piano, ma il giorno e l'ora restano giovedì alle 11."
+  },
+  {
+    "id": "ITCILS-MAI-015",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi la mail di un'agenzia immobiliare*\n\nGentile signor Pereira, l'appartamento di via dei Mille che ha visto sabato è ancora disponibile. Il proprietario chiede un contratto di quattro anni e due mesi di deposito cauzionale. Le spese condominiali sono di quaranta euro al mese, escluso il riscaldamento, che è autonomo. Se è interessato, possiamo fissare un appuntamento per firmare la settimana prossima.",
+    "stem": "Che cosa è vero per il riscaldamento?",
+    "options": [
+      "È compreso nei quaranta euro al mese",
+      "Lo paga il proprietario",
+      "Non è nelle spese condominiali",
+      "Si paga con il deposito"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Le spese condominiali sono di quaranta euro escluso il riscaldamento, che è autonomo: si paga a parte."
+  },
+  {
+    "id": "ITCILS-MAI-016",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio della compagnia telefonica*\n\nGentile cliente, dal 1° luglio il costo della sua offerta passerà da nove a undici euro al mese, con dieci giga di internet in più. Se non è d'accordo, può recedere dal contratto o cambiare operatore senza penali entro il 30 giugno, scrivendo al servizio clienti o chiamando il numero gratuito. Se non fa niente, dal 1° luglio pagherà il nuovo prezzo e avrà i giga in più.",
+    "stem": "Che cosa può fare il cliente se non vuole pagare di più?",
+    "options": [
+      "Avere dieci giga gratis per sempre",
+      "Pagare nove euro fino a dicembre",
+      "Chiedere un rimborso dopo luglio",
+      "Chiudere il contratto senza penali"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Se non è d'accordo, il cliente può recedere dal contratto o cambiare operatore senza penali entro il 30 giugno."
+  },
+  {
+    "id": "ITCILS-MAI-017",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la mail di un genitore all'insegnante*\n\nGentile professoressa Galli, mio figlio Omar lunedì non è venuto a scuola perché aveva una visita in ospedale. Ho già scritto la giustificazione sul libretto. Le chiedo però se può indicarmi le pagine da studiare per la verifica di geografia di giovedì, perché lui non ha capito bene quali sono. La ringrazio molto. Distinti saluti, Karima Benali.",
+    "stem": "Che cosa chiede la madre di Omar?",
+    "options": [
+      "Quali pagine deve studiare il figlio",
+      "Di spostare la verifica di geografia",
+      "Di firmare la giustificazione",
+      "Un appuntamento in ospedale"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La madre ha già scritto la giustificazione; chiede le pagine da studiare per la verifica di giovedì."
+  },
+  {
+    "id": "ITCILS-MAI-018",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il messaggio del corriere*\n\nGentile cliente, oggi alle 11.20 abbiamo provato a consegnare il suo pacco, ma non c'era nessuno. Faremo un secondo tentativo domani nella stessa fascia oraria. Se preferisce, può ritirare il pacco nel punto di ritiro di via Mazzini a partire da dopodomani, oppure scegliere un'altra data dal link qui sotto. Dopo il secondo tentativo il pacco resta in deposito per cinque giorni.",
+    "stem": "Che cosa succederà domani?",
+    "options": [
+      "Il pacco arriverà in via Mazzini",
+      "Il corriere tornerà a consegnare",
+      "Il pacco tornerà al mittente",
+      "Il cliente riceverà un nuovo link"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il corriere farà un secondo tentativo di consegna domani nella stessa fascia oraria. In via Mazzini il pacco si ritira solo da dopodomani."
+  },
+  {
+    "id": "ITCILS-MAI-019",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la lettera della banca*\n\nGentile cliente, la sua carta di debito scadrà alla fine del mese. La nuova carta le è già stata spedita all'indirizzo di residenza e il PIN resterà lo stesso. Quando la riceve, la attivi con il primo prelievo a uno sportello automatico. La carta vecchia, dopo la scadenza, va tagliata a metà. Non risponda a email o telefonate che le chiedono i codici della carta.",
+    "stem": "Come si attiva la nuova carta?",
+    "options": [
+      "Chiamando la banca",
+      "Rispondendo per email a questa lettera",
+      "Facendo un prelievo allo sportello",
+      "Cambiando il PIN online"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La lettera dice di attivare la carta con il primo prelievo a uno sportello automatico. Il PIN resta lo stesso."
+  },
+  {
+    "id": "ITCILS-MAI-020",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsMail",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi la mail di un'associazione*\n\nCari volontari, sabato 18 raccoglieremo cibo per le famiglie del quartiere davanti a tre supermercati. Abbiamo bisogno di persone per due turni, dalle 9 alle 13 e dalle 14 alle 18. Chi può, risponda indicando il turno e il supermercato che preferisce. Daremo a tutti una pettorina gialla. Il cibo raccolto sarà portato domenica al magazzino dell'associazione.",
+    "stem": "Che cosa devono indicare i volontari nella risposta?",
+    "options": [
+      "Il cibo che vogliono portare sabato",
+      "Quante famiglie conoscono",
+      "Se hanno una pettorina gialla",
+      "Il turno e il supermercato scelti"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'associazione chiede di rispondere indicando il turno e il supermercato preferiti. La pettorina la dà l'associazione a tutti."
+  },
+  {
+    "id": "ITCILS-TES-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nA Castelverde gli anziani che vivono da soli non sono più soli a pranzo. Da gennaio il Comune e un gruppo di volontari organizzano il progetto «Tavola comune»: tre volte alla settimana chi ha più di settant'anni può pranzare gratis nella sala della parrocchia. Chi non può uscire di casa riceve il pasto a domicilio. Il progetto è nato dopo un'indagine che ha mostrato che molti anziani passavano intere giornate senza parlare con nessuno.",
+    "stem": "Perché è nato il progetto?",
+    "options": [
+      "Per far stare insieme gli anziani",
+      "Per insegnare a cucinare ai giovani",
+      "Per aiutare la parrocchia",
+      "Per ridurre i costi del Comune"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il progetto è nato dopo un'indagine che ha mostrato che molti anziani passavano le giornate senza parlare con nessuno: lo scopo è farli stare in compagnia."
+  },
+  {
+    "id": "ITCILS-TES-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni di un forno a microonde*\n\nPrima del primo uso togliere tutto il materiale dell'imballaggio dall'interno. Non accendere mai il forno vuoto. Non usare contenitori di metallo o piatti con decorazioni dorate. Per scaldare i liquidi, mescolarli a metà cottura e aspettare un minuto prima di toglierli. Pulire l'interno con un panno umido e un detersivo neutro, senza prodotti abrasivi. Se la porta non si chiude bene, non usare il forno e chiamare l'assistenza.",
+    "stem": "Che cosa NON si deve fare?",
+    "options": [
+      "Mescolare i liquidi a metà della cottura",
+      "Mettere nel forno un piatto di metallo",
+      "Pulire con un panno umido",
+      "Aspettare un minuto prima di toglierli"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Le istruzioni vietano i contenitori di metallo. Mescolare, aspettare un minuto e pulire con un panno umido sono invece consigliati."
+  },
+  {
+    "id": "ITCILS-TES-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nSempre più italiani lavorano da casa almeno un giorno alla settimana. Secondo un'indagine di un'associazione di consumatori, chi lavora da casa risparmia in media un'ora al giorno di viaggio, ma spende di più per luce e riscaldamento. Molti lavoratori dicono di essere più concentrati, mentre altri sentono la mancanza dei colleghi. Per questo diverse aziende preferiscono una formula mista: due o tre giorni in ufficio e gli altri a casa.",
+    "stem": "Che cosa preferiscono molte aziende?",
+    "options": [
+      "Far lavorare tutti da casa",
+      "Pagare luce e riscaldamento",
+      "Alternare ufficio e casa",
+      "Chiudere gli uffici il venerdì"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'articolo dice che diverse aziende scelgono una formula mista, con alcuni giorni in ufficio e altri a casa."
+  },
+  {
+    "id": "ITCILS-TES-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la pagina web di un parco naturale*\n\nIl parco è aperto tutto l'anno. I sentieri sono segnati con colori diversi: il blu è adatto a tutti, anche alle famiglie con passeggino; il rosso è per escursionisti allenati e richiede scarpe da montagna. È vietato accendere fuochi e raccogliere fiori. I cani sono ammessi solo al guinzaglio. In caso di pioggia forte, il sentiero rosso viene chiuso.",
+    "stem": "Quale sentiero è adatto a una famiglia con un passeggino?",
+    "options": [
+      "Il sentiero segnato in rosso",
+      "Il sentiero chiuso quando piove",
+      "Quello con le scarpe da montagna",
+      "Il sentiero segnato in blu"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Secondo la pagina, il sentiero blu è adatto a tutti, anche alle famiglie con passeggino. Il rosso è per escursionisti allenati."
+  },
+  {
+    "id": "ITCILS-TES-005",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nIl mercato di piazza Vittorio compie cento anni. Nato come piccolo mercato di frutta e verdura, oggi ospita banchi di cibo da tutto il mondo: accanto al formaggio delle colline ci sono le spezie indiane e il pane arabo. I commercianti più anziani raccontano che negli anni Settanta i clienti erano quasi solo del quartiere; oggi arrivano anche turisti e studenti. Per festeggiare, sabato ci sarà musica in piazza.",
+    "stem": "Che cosa è cambiato nel mercato?",
+    "options": [
+      "Vende prodotti di molti paesi",
+      "Vende ancora solo frutta e verdura",
+      "È stato chiuso per la festa",
+      "Ha cambiato piazza"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il mercato è nato vendendo frutta e verdura e oggi ha banchi di cibo da tutto il mondo."
+  },
+  {
+    "id": "ITCILS-TES-006",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni per il ritiro dei rifiuti ingombranti*\n\nDivani, materassi e mobili vecchi non si lasciano vicino ai cassonetti. Il ritiro è gratuito e si prenota per telefono o sul sito dell'azienda dei rifiuti. Il giorno stabilito bisogna mettere gli oggetti davanti al portone entro le 7, senza bloccare il marciapiede. Ogni famiglia può prenotare fino a cinque pezzi per volta. Chi abbandona i rifiuti in strada rischia una multa.",
+    "stem": "Dove devono essere lasciati gli oggetti il giorno del ritiro?",
+    "options": [
+      "Vicino ai cassonetti",
+      "Davanti al portone di casa",
+      "Nel cortile del condominio",
+      "All'azienda dei rifiuti"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Le istruzioni dicono di mettere gli oggetti davanti al portone entro le 7. Lasciarli vicino ai cassonetti è vietato."
+  },
+  {
+    "id": "ITCILS-TES-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nImparare una lingua da adulti è possibile, ma serve costanza. Secondo un'insegnante di un centro per adulti, è meglio studiare venti minuti ogni giorno che tre ore una volta alla settimana. È utile anche ascoltare la radio, leggere notizie semplici e non avere paura di sbagliare quando si parla. «Chi fa errori impara», dice, «mentre chi resta in silenzio per paura non migliora.»",
+    "stem": "Qual è il consiglio principale dell'insegnante?",
+    "options": [
+      "Studiare tre ore una volta a settimana",
+      "Parlare solo senza errori",
+      "Studiare un po' tutti i giorni",
+      "Evitare la radio all'inizio"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'insegnante dice che è meglio studiare venti minuti ogni giorno che tre ore una volta alla settimana."
+  },
+  {
+    "id": "ITCILS-TES-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il regolamento di un orto comunale*\n\nGli orti sono assegnati per tre anni ai residenti che non hanno un giardino. Ogni assegnatario deve curare il proprio orto e tenere pulito lo spazio comune. Non si possono usare prodotti chimici: sono ammessi solo concimi naturali. L'acqua si può usare dalle 18 alle 21 in estate. Chi lascia l'orto abbandonato per due mesi perde l'assegnazione.",
+    "stem": "Che cosa succede a chi non cura l'orto per due mesi?",
+    "options": [
+      "Paga una multa al Comune",
+      "Riceve un orto più piccolo",
+      "Deve usare concimi naturali",
+      "Perde il diritto all'orto"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il regolamento dice che chi lascia l'orto abbandonato per due mesi perde l'assegnazione."
+  },
+  {
+    "id": "ITCILS-TES-009",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nDopo due anni di lavori, la stazione di Montebello riapre con un nuovo ascensore e rampe per le carrozzine. Finalmente anche chi usa la sedia a rotelle o porta una valigia pesante può raggiungere tutti i binari senza scale. Il Comune ha anche aggiunto un parcheggio per biciclette coperto. Restano da finire i bagni, che saranno aperti in primavera.",
+    "stem": "Che cosa non è ancora pronto?",
+    "options": [
+      "I bagni della stazione",
+      "L'ascensore per i binari",
+      "Il parcheggio per biciclette",
+      "Le rampe per le carrozzine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'articolo dice che i bagni devono ancora essere finiti e apriranno in primavera. L'ascensore, le rampe e il parcheggio sono già pronti."
+  },
+  {
+    "id": "ITCILS-TES-010",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi le istruzioni sul sito di un ente pubblico*\n\nPer chiedere un appuntamento allo sportello bisogna prima accedere all'area personale con SPID o carta d'identità elettronica. Nella sezione «Appuntamenti» si sceglie il servizio e la sede. Si riceve poi un'email con il giorno e l'ora. Chi non può presentarsi deve annullare l'appuntamento almeno un giorno prima, per lasciare il posto ad altri. Allo sportello bisogna portare un documento d'identità e il codice fiscale.",
+    "stem": "Che cosa si deve fare prima di chiedere l'appuntamento?",
+    "options": [
+      "Mandare un'email alla sede",
+      "Entrare nell'area personale",
+      "Annullare gli altri appuntamenti",
+      "Presentarsi allo sportello"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Le istruzioni dicono di accedere prima all'area personale con SPID o carta d'identità elettronica."
+  },
+  {
+    "id": "ITCILS-TES-011",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nIl caldo di luglio preoccupa i medici. Il consiglio è di bere molta acqua anche senza sete, mangiare frutta e verdura e non uscire nelle ore più calde, tra le 12 e le 17. Le persone anziane e i bambini piccoli sono i più a rischio. Chi vive da solo può chiamare il numero del Comune per avere una visita a domicilio da parte dei volontari.",
+    "stem": "A chi è dedicato il servizio dei volontari?",
+    "options": [
+      "A chi lavora all'aperto",
+      "Ai medici di famiglia",
+      "A chi abita da solo",
+      "Alle famiglie con bambini"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'articolo dice che chi vive da solo può chiamare il Comune per avere una visita dei volontari."
+  },
+  {
+    "id": "ITCILS-TES-012",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni di una lavastoviglie*\n\nPrima di mettere i piatti, togliere i resti di cibo più grandi; non è necessario sciacquarli. Mettere i bicchieri nel cestello superiore e le pentole in quello inferiore. Il sale si aggiunge quando si accende la spia arancione. Non lavare in lavastoviglie i coltelli con il manico di legno. Pulire il filtro una volta al mese.",
+    "stem": "Quando bisogna aggiungere il sale?",
+    "options": [
+      "Ogni volta che parte il lavaggio",
+      "Una volta al mese",
+      "Prima di mettere i piatti",
+      "Quando si accende la spia arancione"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il sale si aggiunge quando si accende la spia arancione. Una volta al mese si pulisce il filtro."
+  },
+  {
+    "id": "ITCILS-TES-013",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nNel paese di San Lorenzo la scuola elementare rischiava di chiudere perché c'erano pochi bambini. Negli ultimi tre anni però sono arrivate diverse famiglie da altri paesi, attirate dagli affitti bassi e dal lavoro nelle aziende agricole della zona. Oggi le classi sono di nuovo piene e la scuola ha aperto anche un corso di italiano per i genitori.",
+    "stem": "Perché la scuola non ha chiuso?",
+    "options": [
+      "Perché sono arrivate nuove famiglie",
+      "Perché gli affitti sono aumentati",
+      "Perché il corso di italiano era pieno",
+      "Perché le aziende hanno chiuso"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sono arrivate nuove famiglie, attirate dagli affitti bassi e dal lavoro, e le classi si sono riempite di nuovo."
+  },
+  {
+    "id": "ITCILS-TES-014",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la pagina web di un servizio di car sharing*\n\nPer usare le nostre auto bisogna avere almeno 21 anni e la patente da un anno. Dopo la registrazione nell'app si caricano le foto della patente e di un documento. L'auto si apre con il telefono. Si paga a minuto e il prezzo comprende carburante e assicurazione. L'auto va lasciata nelle zone indicate sulla mappa, non nei parcheggi privati.",
+    "stem": "Che cosa è compreso nel prezzo?",
+    "options": [
+      "Il parcheggio privato",
+      "La benzina e l'assicurazione",
+      "La patente digitale",
+      "Il primo mese di noleggio dell'auto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La pagina dice che il prezzo a minuto comprende carburante e assicurazione."
+  },
+  {
+    "id": "ITCILS-TES-015",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nLo scorso fine settimana il festival del libro di Riva ha avuto più visitatori del previsto: circa diecimila persone in due giorni. Gli incontri con gli autori erano gratuiti, ma per i laboratori dei bambini bisognava prenotare, e i posti sono finiti in poche ore. Gli organizzatori hanno già promesso che l'anno prossimo i laboratori saranno di più.",
+    "stem": "Che cosa promettono gli organizzatori?",
+    "options": [
+      "Incontri con gli autori a pagamento",
+      "Un festival di tre giorni",
+      "Più laboratori per i bambini",
+      "Più posti per i visitatori adulti"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Gli organizzatori promettono che l'anno prossimo ci saranno più laboratori, perché i posti sono finiti in poche ore."
+  },
+  {
+    "id": "ITCILS-TES-016",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni per la spedizione di un pacco*\n\nUsare una scatola resistente e riempire gli spazi vuoti con carta o materiale morbido. Scrivere l'indirizzo del destinatario in modo chiaro sul lato più grande e quello del mittente in alto a sinistra. Non spedire liquidi infiammabili. Per oggetti di valore conviene scegliere la spedizione assicurata e conservare la ricevuta fino alla consegna. Il numero sulla ricevuta permette di seguire il pacco sul sito.",
+    "stem": "Che cosa conviene fare per un oggetto di valore?",
+    "options": [
+      "Scrivere l'indirizzo in alto a sinistra",
+      "Usare una scatola di carta",
+      "Spedirlo senza ricevuta",
+      "Scegliere la spedizione assicurata"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per gli oggetti di valore le istruzioni consigliano la spedizione assicurata e di tenere la ricevuta."
+  },
+  {
+    "id": "ITCILS-TES-017",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nUna ricerca di un'università italiana dice che chi va al lavoro in bicicletta arriva più rilassato di chi usa l'auto. Il problema, spiegano i ricercatori, è la sicurezza: in molte città mancano le piste ciclabili e i ciclisti hanno paura del traffico. Dove le piste ci sono, il numero di persone che usano la bici è raddoppiato in cinque anni.",
+    "stem": "Che cosa manca in molte città, secondo l'articolo?",
+    "options": [
+      "Strade sicure per le biciclette",
+      "Posti per le auto in centro",
+      "Ricerche universitarie sull'uso della bici",
+      "Lavoratori rilassati"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I ricercatori spiegano che in molte città mancano le piste ciclabili e per questo i ciclisti si sentono poco sicuri."
+  },
+  {
+    "id": "ITCILS-TES-018",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il regolamento di una mensa aziendale*\n\nLa mensa è aperta dalle 12 alle 14.30. Ogni dipendente ha diritto a un pasto al giorno pagato dall'azienda; un secondo pasto si paga alla cassa. Chi segue una dieta per motivi di salute o di religione può chiedere un menù diverso in cucina, con un giorno di anticipo. È vietato portare fuori dalla mensa piatti e posate.",
+    "stem": "Come si può avere un menù diverso?",
+    "options": [
+      "Pagandolo alla cassa",
+      "Chiedendolo in cucina il giorno prima",
+      "Portando un certificato medico al capo reparto",
+      "Arrivando prima delle 12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chi ha bisogno di un menù diverso deve chiederlo in cucina con un giorno di anticipo."
+  },
+  {
+    "id": "ITCILS-TES-019",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nDa quest'anno nella regione i musei statali hanno un biglietto unico: con quindici euro si possono visitare tutti per una settimana. L'idea è piaciuta soprattutto alle famiglie, perché i ragazzi sotto i diciotto anni entrano sempre gratis. Alcuni piccoli musei, però, si lamentano: secondo loro i turisti visitano solo i musei più famosi e il biglietto unico non li aiuta.",
+    "stem": "Di che cosa si lamentano alcuni piccoli musei?",
+    "options": [
+      "Del prezzo troppo alto",
+      "Dell'ingresso gratis per tutti i ragazzi",
+      "Di avere pochi visitatori lo stesso",
+      "Degli orari dei musei famosi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "I piccoli musei dicono che i turisti vanno solo nei musei famosi, quindi il biglietto unico non porta loro visitatori."
+  },
+  {
+    "id": "ITCILS-TES-020",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsTesti",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi le istruzioni di un termometro digitale*\n\nPremere il pulsante per accendere il termometro. Mettere la punta sotto l'ascella e tenere il braccio vicino al corpo. Dopo circa un minuto il termometro emette un suono: a quel punto si può leggere la temperatura. Pulire la punta con un po' di alcol dopo ogni uso. Cambiare la pila quando sul display appare il simbolo della batteria.",
+    "stem": "Quando si può leggere la temperatura?",
+    "options": [
+      "Subito dopo l'accensione",
+      "Quando appare il simbolo della batteria",
+      "Dopo averlo pulito con l'alcol",
+      "Quando il termometro fa un suono"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dopo circa un minuto il termometro emette un suono e solo allora si legge la temperatura."
+  },
+  {
+    "id": "ITCILS-PRE-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho lasciato le chiavi ___ della cucina.» Quale forma completa la frase?",
+    "options": [
+      "sul tavolo",
+      "sullo tavolo",
+      "sulla tavolo",
+      "sui tavolo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tavolo è maschile singolare e comincia con una consonante semplice: su + il fa sul. Sullo si usa davanti a s più consonante, z, gn, ps."
+  },
+  {
+    "id": "ITCILS-PRE-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho messo i documenti ___ blu.» Quale forma completa la frase?",
+    "options": [
+      "nel zaino",
+      "nello zaino",
+      "nella zaino",
+      "negli zaino"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Davanti a z il maschile singolare vuole l'articolo lo, quindi in + lo diventa nello."
+  },
+  {
+    "id": "ITCILS-PRE-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Il libro ___ è rimasto sul banco.» Quale forma completa la frase?",
+    "options": [
+      "del studente",
+      "dei studente",
+      "dello studente",
+      "degli studente"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Studente comincia con s più consonante, quindi l'articolo è lo: di + lo fa dello. Dei e degli sono plurali."
+  },
+  {
+    "id": "ITCILS-PRE-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Sono andata ___ a prendere gli occhiali nuovi.» Quale forma completa la frase?",
+    "options": [
+      "dal ottico",
+      "dallo ottico",
+      "nell'ottico",
+      "dall'ottico"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Con le persone e i negozi indicati dal mestiere si usa da: vado dal medico, dall'ottico. Davanti a vocale l'articolo si apostrofa, quindi dall'."
+  },
+  {
+    "id": "ITCILS-PRE-005",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Mio marito è nato ___, in Nigeria.» Quale forma completa la frase?",
+    "options": [
+      "a Lagos",
+      "in Lagos",
+      "di Lagos",
+      "alla Lagos"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Con i nomi di città si usa a: sono nato a Roma, a Lagos. Con i paesi si usa in: in Nigeria."
+  },
+  {
+    "id": "ITCILS-PRE-006",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Mio fratello lavora ___ da due anni.» Quale forma completa la frase?",
+    "options": [
+      "a Svizzera",
+      "in Svizzera",
+      "alla Svizzera",
+      "di Svizzera"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con i nomi di paesi e regioni si usa in senza articolo: lavoro in Svizzera, in Francia. A si usa con le città."
+  },
+  {
+    "id": "ITCILS-PRE-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Il corso di italiano comincia ___ e finisce alle nove.» Quale forma completa la frase?",
+    "options": [
+      "a sette",
+      "le sette",
+      "alle sette",
+      "nelle sette"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per l'ora si usa a con l'articolo: alle sette, all'una, a mezzogiorno. A sette senza articolo non è corretto."
+  },
+  {
+    "id": "ITCILS-PRE-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Lavoro in questa azienda ___.» Quale forma completa la frase?",
+    "options": [
+      "tre anni fa",
+      "a tre anni",
+      "dei tre anni",
+      "da tre anni"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per un'azione cominciata nel passato che continua ancora si usa il presente con da: lavoro qui da tre anni. Tre anni fa si usa con un'azione finita."
+  },
+  {
+    "id": "ITCILS-PRE-009",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Domani ho un appuntamento con ___ della scuola.» Quale forma completa la frase?",
+    "options": [
+      "lo psicologo",
+      "il psicologo",
+      "l'psicologo",
+      "la psicologo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Davanti a ps il maschile singolare vuole lo: lo psicologo, lo pneumatico. La non va con un nome maschile."
+  },
+  {
+    "id": "ITCILS-PRE-010",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Domenica ho invitato a pranzo ___ di mio marito.» Quale forma completa la frase?",
+    "options": [
+      "i zii",
+      "gli zii",
+      "le zii",
+      "lo zii"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il plurale di lo è gli: lo zio, gli zii. I si usa davanti a consonante semplice, come i nonni."
+  },
+  {
+    "id": "ITCILS-PRE-011",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Domenica pranziamo ___, che compie ottant'anni.» Quale forma completa la frase?",
+    "options": [
+      "alla nonna",
+      "nella nonna",
+      "dalla nonna",
+      "della nonna"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per dire a casa di una persona si usa da: pranzo dalla nonna, dormo da un amico."
+  },
+  {
+    "id": "ITCILS-PRE-012",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho lasciato il cappotto ___ del dentista.» Quale forma completa la frase?",
+    "options": [
+      "nel ambulatorio",
+      "nello ambulatorio",
+      "nella ambulatorio",
+      "nell'ambulatorio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ambulatorio comincia con una vocale, quindi l'articolo è l': in + l' fa nell'ambulatorio."
+  },
+  {
+    "id": "ITCILS-PRE-013",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Ho bisogno ___ per firmare il contratto.» Quale forma completa la frase?",
+    "options": [
+      "di una penna",
+      "da una penna",
+      "a una penna",
+      "per una penna"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Avere bisogno vuole sempre la preposizione di: ho bisogno di una penna, di aiuto, di riposare."
+  },
+  {
+    "id": "ITCILS-PRE-014",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Per l'appuntamento devi telefonare ___ in mattinata.» Quale forma completa la frase?",
+    "options": [
+      "il medico",
+      "al medico",
+      "del medico",
+      "nel medico"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Telefonare regge a: telefono a Marco, al medico. Non ha un complemento oggetto, quindi telefonare il medico è sbagliato."
+  },
+  {
+    "id": "ITCILS-PRE-015",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Dopo il corso ho trovato lavoro ___ di scarpe.» Quale forma completa la frase?",
+    "options": [
+      "a una fabbrica",
+      "su una fabbrica",
+      "in una fabbrica",
+      "da una fabbrica"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per il luogo di lavoro si usa in: lavoro in una fabbrica, in un negozio, in ufficio."
+  },
+  {
+    "id": "ITCILS-PRE-016",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho lasciato la macchina ___ del supermercato.» Quale forma completa la frase?",
+    "options": [
+      "nello parcheggio",
+      "nella parcheggio",
+      "nei parcheggio",
+      "nel parcheggio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Parcheggio è maschile singolare e comincia con p: in + il diventa nel. Nei è plurale."
+  },
+  {
+    "id": "ITCILS-PRE-017",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Per la minestra mi serve ancora ___.» Quale forma completa la frase?",
+    "options": [
+      "uno zucchino",
+      "un zucchino",
+      "una zucchino",
+      "un' zucchino"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Davanti a z l'articolo maschile indeterminativo è uno: uno zucchino, uno zaino. Un' con l'apostrofo si usa solo davanti a un nome femminile."
+  },
+  {
+    "id": "ITCILS-PRE-018",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Stasera viene a cena ___ di mia figlia.» Quale forma completa la frase?",
+    "options": [
+      "un amica",
+      "un'amica",
+      "uno amica",
+      "una' amica"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amica è femminile e comincia con una vocale: una si apostrofa e diventa un'. Un amica senza apostrofo è maschile, quindi è sbagliato."
+  },
+  {
+    "id": "ITCILS-PRE-019",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«I barattoli della farina sono ___ in alto.» Quale forma completa la frase?",
+    "options": [
+      "sui scaffali",
+      "sulli scaffali",
+      "sugli scaffali",
+      "sulle scaffali"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scaffale comincia con s più consonante: lo scaffale, gli scaffali. Su + gli fa sugli."
+  },
+  {
+    "id": "ITCILS-PRE-020",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPreposizioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Stasera esco ___ alle sei e passo a prenderti.» Quale forma completa la frase?",
+    "options": [
+      "dal ufficio",
+      "dallo ufficio",
+      "della ufficio",
+      "dall'ufficio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per il punto di partenza si usa da. Davanti a vocale l'articolo è l', quindi da + l' diventa dall'ufficio."
+  },
+  {
+    "id": "ITCILS-PAS-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri sera Marta ___ al cinema con le amiche.» Quale forma completa la frase?",
+    "options": [
+      "è andata",
+      "è andato",
+      "ha andato",
+      "ha andata"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Andare forma il passato prossimo con essere, e con essere il participio si accorda con il soggetto: Marta è andata."
+  },
+  {
+    "id": "ITCILS-PAS-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri sera, mentre mio marito ___ i piatti, è andata via la luce.» Quale forma completa la frase?",
+    "options": [
+      "ha lavato",
+      "lavava",
+      "lava",
+      "lavato"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con mentre si descrive un'azione in corso nel passato, interrotta da un'altra: serve l'imperfetto, lavava."
+  },
+  {
+    "id": "ITCILS-PAS-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Sabato scorso ___ due volte la lavatrice.» Quale forma completa la frase?",
+    "options": [
+      "facevo",
+      "sono fatto",
+      "ho fatto",
+      "ho fatta"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Un'azione conclusa in un momento preciso del passato, contata due volte, vuole il passato prossimo. Fare usa avere e il participio fatto non si accorda con l'oggetto."
+  },
+  {
+    "id": "ITCILS-PAS-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Dopo la partita i miei figli ___ a casa alle sei.» Quale forma completa la frase?",
+    "options": [
+      "sono tornate",
+      "hanno tornato",
+      "sono tornato",
+      "sono tornati"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tornare usa essere; il participio si accorda con i miei figli, maschile plurale: sono tornati."
+  },
+  {
+    "id": "ITCILS-PAS-005",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Quando sono uscita di casa, ___ molto freddo.» Quale forma completa la frase?",
+    "options": [
+      "faceva",
+      "era fatto",
+      "facevano",
+      "fatto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il tempo atmosferico come sfondo di un'azione passata si descrive con l'imperfetto: faceva freddo. Il verbo è impersonale e resta al singolare."
+  },
+  {
+    "id": "ITCILS-PAS-006",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Stamattina Lucia ___ alle sei.» Quale forma completa la frase?",
+    "options": [
+      "si ha alzata",
+      "si è alzata",
+      "si è alzato",
+      "ha alzato"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "I verbi riflessivi formano il passato prossimo con essere e il participio si accorda con il soggetto: Lucia si è alzata."
+  },
+  {
+    "id": "ITCILS-PAS-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Le bollette? ___ stamattina in tabaccheria.» Quale forma completa la frase?",
+    "options": [
+      "Le ho pagato",
+      "L'ho pagate",
+      "Le ho pagate",
+      "Gli ho pagate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Quando il pronome diretto le viene prima del verbo, il participio si accorda: le bollette, le ho pagate."
+  },
+  {
+    "id": "ITCILS-PAS-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri ___ con il direttore per un'ora.» Quale forma completa la frase?",
+    "options": [
+      "sono parlato",
+      "ho parlata",
+      "parlato",
+      "ho parlato"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Parlare forma il passato prossimo con avere e il participio resta parlato."
+  },
+  {
+    "id": "ITCILS-PAS-009",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Mia figlia ___ a Bologna nel 2019.» Quale forma completa la frase?",
+    "options": [
+      "è nata",
+      "ha nata",
+      "è nato",
+      "ha nato"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nascere usa essere e il participio si accorda con il soggetto femminile: è nata."
+  },
+  {
+    "id": "ITCILS-PAS-010",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Ieri pomeriggio ___ un'ora in fila alla posta.» Quale forma completa la frase?",
+    "options": [
+      "sono aspettato",
+      "ho aspettato",
+      "ho aspettata",
+      "aspettato"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Aspettare usa avere. Un'azione con una durata precisa e finita, un'ora, va al passato prossimo."
+  },
+  {
+    "id": "ITCILS-PAS-011",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Mentre i bambini ___ in giardino, io leggevo il giornale.» Quale forma completa la frase?",
+    "options": [
+      "hanno giocato",
+      "giocano",
+      "giocavano",
+      "sono giocati"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Due azioni contemporanee in corso nel passato, unite da mentre, vanno tutte e due all'imperfetto: giocavano, leggevo."
+  },
+  {
+    "id": "ITCILS-PAS-012",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Mio fratello ___ la patente la settimana scorsa.» Quale forma completa la frase?",
+    "options": [
+      "è preso",
+      "ha presa",
+      "prendeva",
+      "ha preso"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prendere usa avere e ha il participio irregolare preso. Un fatto concluso la settimana scorsa vuole il passato prossimo."
+  },
+  {
+    "id": "ITCILS-PAS-013",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri le mie amiche ___ a trovarmi.» Quale forma completa la frase?",
+    "options": [
+      "sono venute",
+      "sono venuti",
+      "hanno venute",
+      "è venuta"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Venire usa essere; il participio si accorda con le mie amiche, femminile plurale: sono venute."
+  },
+  {
+    "id": "ITCILS-PAS-014",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Non ___ la tua email perché non avevo internet.» Quale forma completa la frase?",
+    "options": [
+      "ho letta",
+      "ho letto",
+      "sono letto",
+      "ho leggiuto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Leggere usa avere e ha il participio irregolare letto. Senza un pronome prima del verbo il participio non si accorda con l'oggetto."
+  },
+  {
+    "id": "ITCILS-PAS-015",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Ieri ___ una lettera a mio cugino in Brasile.» Quale forma completa la frase?",
+    "options": [
+      "ho scrivuto",
+      "sono scritto",
+      "ho scritto",
+      "ho scritta"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrivere ha il participio irregolare scritto e forma il passato prossimo con avere."
+  },
+  {
+    "id": "ITCILS-PAS-016",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Siamo stanchi perché stanotte non ___ bene.» Quale forma completa la frase?",
+    "options": [
+      "siamo dormiti",
+      "abbiamo dormiti",
+      "siamo dormito",
+      "abbiamo dormito"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dormire forma il passato prossimo con avere e il participio resta dormito, senza accordo."
+  },
+  {
+    "id": "ITCILS-PAS-017",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Mia madre ___ in Italia nel 2010.» Quale forma completa la frase?",
+    "options": [
+      "è arrivata",
+      "ha arrivato",
+      "è arrivato",
+      "ha arrivata"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Arrivare usa essere e il participio si accorda con il soggetto: mia madre è arrivata."
+  },
+  {
+    "id": "ITCILS-PAS-018",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Il film era lungo e noioso, così a metà ___.» Quale forma completa la frase?",
+    "options": [
+      "abbiamo usciti",
+      "siamo usciti",
+      "abbiamo uscito",
+      "siamo uscito"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Uscire usa essere; con il soggetto noi il participio va al plurale: siamo usciti."
+  },
+  {
+    "id": "ITCILS-PAS-019",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«___ in macchina, ho sentito la notizia alla radio.» Quale forma completa la frase?",
+    "options": [
+      "Mentre ho guidato",
+      "Mentre guido",
+      "Mentre guidavo",
+      "Mentre guidato"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'azione in corso, interrotta da un'altra azione finita, va all'imperfetto: mentre guidavo, ho sentito."
+  },
+  {
+    "id": "ITCILS-PAS-020",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri mattina Paolo e Ines ___ in Comune per sposarsi.» Quale forma completa la frase?",
+    "options": [
+      "sono andate",
+      "hanno andati",
+      "è andato",
+      "sono andati"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Andare usa essere. Con un soggetto maschile e uno femminile il participio va al maschile plurale: sono andati."
+  },
+  {
+    "id": "ITCILS-PAS-021",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Che cosa ___ ieri sera? Siete usciti?» Quale forma completa la frase?",
+    "options": [
+      "avete fatto",
+      "siete fatti",
+      "avete fatti",
+      "siete fatto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fare usa avere e il participio fatto non cambia. Il soggetto è voi, come mostra siete usciti."
+  },
+  {
+    "id": "ITCILS-PAS-022",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Il medico mi ___ di riposare per tre giorni.» Quale forma completa la frase?",
+    "options": [
+      "è detto",
+      "ha detto",
+      "ha dicuto",
+      "ha diceto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dire usa avere e ha il participio irregolare detto."
+  },
+  {
+    "id": "ITCILS-PAS-023",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Le ragazze ___ in piscina tutto il pomeriggio.» Quale forma completa la frase?",
+    "options": [
+      "hanno rimasto",
+      "sono rimasti",
+      "sono rimaste",
+      "sono restato"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rimanere usa essere e ha il participio irregolare rimasto; con le ragazze diventa rimaste."
+  },
+  {
+    "id": "ITCILS-PAS-024",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPassato",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Quando abitavo a Roma, ___ al lavoro in metro ogni mattina.» Quale forma completa la frase?",
+    "options": [
+      "ho andato",
+      "andato",
+      "sono andavo",
+      "andavo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Un'abitudine del passato, ogni mattina, si esprime con l'imperfetto: andavo. Ho andato è sbagliato perché andare usa essere."
+  },
+  {
+    "id": "ITCILS-VER-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Mamma, ___ il telefono, per favore!» Quale forma completa la frase?",
+    "options": [
+      "dammi",
+      "dami",
+      "darmi",
+      "dai mi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "All'imperativo di tu, da' più il pronome mi raddoppia la consonante: dammi. Il pronome si unisce al verbo."
+  },
+  {
+    "id": "ITCILS-VER-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Signora, ___ pure: il dottore arriva subito.» Quale forma completa la frase?",
+    "options": [
+      "accomodati",
+      "si accomodi",
+      "accomodatevi",
+      "si accomodare"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A una persona a cui si dà del Lei si usa l'imperativo formale con il pronome prima: si accomodi. Accomodati è la forma del tu."
+  },
+  {
+    "id": "ITCILS-VER-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Non ___ il cellulare durante la lezione, Ahmed!» Quale forma completa la frase?",
+    "options": [
+      "usate",
+      "usando",
+      "usare",
+      "usato"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'imperativo negativo di tu si fa con non più l'infinito: non usare, non parlare."
+  },
+  {
+    "id": "ITCILS-VER-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Io e mio marito ___ andare in Puglia quest'estate.» Quale forma completa la frase?",
+    "options": [
+      "vorrebbero",
+      "vorrei",
+      "vorreste",
+      "vorremmo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il soggetto io e mio marito corrisponde a noi: il condizionale di volere è vorremmo."
+  },
+  {
+    "id": "ITCILS-VER-005",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Domani non posso venire perché ___ lavorare fino a tardi.» Quale forma completa la frase?",
+    "options": [
+      "devo",
+      "dovo",
+      "dovere",
+      "dovuto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il presente di dovere alla prima persona è devo. Dopo perché serve un verbo coniugato, non l'infinito."
+  },
+  {
+    "id": "ITCILS-VER-006",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Mio figlio ___ sempre tardi la domenica.» Quale forma completa la frase?",
+    "options": [
+      "sveglia",
+      "si sveglia",
+      "si svegliano",
+      "si sveglio"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Svegliarsi è riflessivo: io mi sveglio, lui si sveglia. Senza si il verbo vorrebbe un oggetto."
+  },
+  {
+    "id": "ITCILS-VER-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Che cosa ___ stasera? Andiamo al cinema?» Quale forma completa la frase?",
+    "options": [
+      "faciamo",
+      "fiamo",
+      "facciamo",
+      "facemo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il presente di fare alla persona noi è facciamo, con due c."
+  },
+  {
+    "id": "ITCILS-VER-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«I miei genitori ___ dal Marocco la settimana prossima.» Quale forma completa la frase?",
+    "options": [
+      "venono",
+      "veniscono",
+      "vengano",
+      "vengono"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il presente di venire alla terza plurale è vengono. Il presente si usa anche per un futuro vicino e programmato."
+  },
+  {
+    "id": "ITCILS-VER-009",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Non so ___ bicicletta, me lo insegni?» Quale forma completa la frase?",
+    "options": [
+      "andare in",
+      "andando in",
+      "vado in",
+      "andato in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dopo sapere, nel senso di essere capace, si usa l'infinito: so nuotare, non so andare in bicicletta."
+  },
+  {
+    "id": "ITCILS-VER-010",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ti ___ venire a cena da noi sabato?» Quale forma completa la frase?",
+    "options": [
+      "andrebbe a",
+      "andrebbe di",
+      "andresti di",
+      "andrebbero di"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per invitare in modo gentile si dice ti andrebbe di più infinito: il soggetto grammaticale è la cosa, quindi il verbo è alla terza singolare."
+  },
+  {
+    "id": "ITCILS-VER-011",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Prima di uscire, Luca, ___ la luce, per favore.» Quale forma completa la frase?",
+    "options": [
+      "spegne",
+      "spegnete",
+      "spegni",
+      "spegnere"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Luca si dà del tu: l'imperativo di spegnere è spegni. Spegnere senza non è un imperativo affermativo."
+  },
+  {
+    "id": "ITCILS-VER-012",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Signor Bianchi, ___ questo modulo e lo porti allo sportello.» Quale forma completa la frase?",
+    "options": [
+      "compila",
+      "compilate",
+      "compilare",
+      "compili"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Al signor Bianchi si dà del Lei, come mostra lo porti: l'imperativo formale di compilare è compili."
+  },
+  {
+    "id": "ITCILS-VER-013",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Secondo me, tu ___ chiedere aiuto allo sportello del Comune.» Quale forma completa la frase?",
+    "options": [
+      "dovresti",
+      "dovrei",
+      "doveresti",
+      "dovrebbi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Per dare un consiglio si usa il condizionale di dovere. Con tu la forma è dovresti; il condizionale di dovere perde la e: dovrei, dovresti."
+  },
+  {
+    "id": "ITCILS-VER-014",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Scusa, mi ___ prestare la penna?» Quale forma completa la frase?",
+    "options": [
+      "pui",
+      "puoi",
+      "posso",
+      "potete"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con scusa si dà del tu: il presente di potere alla seconda persona è puoi."
+  },
+  {
+    "id": "ITCILS-VER-015",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Qui è vietato ___ con la macchina.» Quale forma completa la frase?",
+    "options": [
+      "sosta",
+      "sostando",
+      "sostare",
+      "sostato"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dopo è vietato si usa l'infinito: è vietato fumare, è vietato sostare."
+  },
+  {
+    "id": "ITCILS-VER-016",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ogni mattina ___ un caffè al bar sotto casa.» Quale forma completa la frase?",
+    "options": [
+      "bevio",
+      "beo",
+      "bevvo",
+      "bevo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bere al presente si coniuga come bevere: io bevo, tu bevi, lui beve."
+  },
+  {
+    "id": "ITCILS-VER-017",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Mi dispiace, ma non ___ a che ora apre la banca.» Quale forma completa la frase?",
+    "options": [
+      "so",
+      "sapo",
+      "saio",
+      "sapere"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il presente di sapere alla prima persona è irregolare: io so."
+  },
+  {
+    "id": "ITCILS-VER-018",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Ragazzi, ___ silenzio, il bambino dorme!» Quale forma completa la frase?",
+    "options": [
+      "fa'",
+      "fate",
+      "fanno",
+      "facete"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ai ragazzi si dà del voi: l'imperativo di fare alla seconda plurale è fate. Fa' è la forma del tu."
+  },
+  {
+    "id": "ITCILS-VER-019",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Scusi, mi ___ dire a che ora parte il treno?» Quale forma completa la frase?",
+    "options": [
+      "saprebbi",
+      "saperebbe",
+      "saprebbe",
+      "saprei"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per una domanda gentile a chi si dà del Lei si usa il condizionale alla terza persona: saprebbe. Il futuro e il condizionale di sapere perdono la e: saprei, saprebbe."
+  },
+  {
+    "id": "ITCILS-VER-020",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsVerbi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Domani i bambini ___ a casa perché la scuola è chiusa.» Quale forma completa la frase?",
+    "options": [
+      "stano",
+      "stiano",
+      "staiono",
+      "stanno"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il presente di stare alla terza plurale è stanno, con due n."
+  },
+  {
+    "id": "ITCILS-PRO-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Hai incontrato il nuovo vicino? Sì, ___ stamattina in ascensore.» Quale forma completa la frase?",
+    "options": [
+      "l'ho incontrato",
+      "gli ho incontrato",
+      "l'ho incontrata",
+      "ci ho incontrato"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Incontrare vuole un complemento diretto: il vicino diventa lo, che davanti a ho si apostrofa. Il participio si accorda con lo: incontrato."
+  },
+  {
+    "id": "ITCILS-PRO-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Hai telefonato a tua madre? No, ___ stasera.» Quale forma completa la frase?",
+    "options": [
+      "la telefono",
+      "le telefono",
+      "ci telefono",
+      "lo telefono"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Telefonare regge a: a tua madre diventa il pronome indiretto femminile le."
+  },
+  {
+    "id": "ITCILS-PRO-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Quanti figli hai? ___ due.» Quale forma completa la frase?",
+    "options": [
+      "Li ho",
+      "Ci ho",
+      "Ne ho",
+      "Ho ne"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Con un numero o una quantità si usa ne, che indica una parte: ne ho due. Ne va prima del verbo coniugato."
+  },
+  {
+    "id": "ITCILS-PRO-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Vai spesso a Bologna? Sì, ___ ogni settimana per lavoro.» Quale forma completa la frase?",
+    "options": [
+      "ne vado",
+      "la vado",
+      "gli vado",
+      "ci vado"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ci sostituisce un luogo già nominato: a Bologna, ci vado."
+  },
+  {
+    "id": "ITCILS-PRO-005",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Mi presti la bicicletta? Sì, ___ volentieri.» Quale forma completa la frase?",
+    "options": [
+      "te la presto",
+      "ti la presto",
+      "te lo presto",
+      "la ti presto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nei pronomi combinati ti diventa te e va prima del pronome diretto: te la. La bicicletta è femminile, quindi la."
+  },
+  {
+    "id": "ITCILS-PRO-006",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho comprato dei fiori per la nonna e ___ ieri.» Quale forma completa la frase?",
+    "options": [
+      "gliele ho portate",
+      "glieli ho portati",
+      "le li ho portati",
+      "glielo ho portati"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A lei più li fa glieli. Fiori è maschile plurale, quindi li e portati."
+  },
+  {
+    "id": "ITCILS-PRO-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«La signora ___ al piano di sopra è molto gentile.» Quale forma completa la frase?",
+    "options": [
+      "cui abita",
+      "chi abita",
+      "che abita",
+      "dove abita"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La signora è il soggetto di abita: il relativo soggetto è che. Cui si usa dopo una preposizione."
+  },
+  {
+    "id": "ITCILS-PRO-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Questa è l'amica ___ sono andata in vacanza.» Quale forma completa la frase?",
+    "options": [
+      "con che",
+      "con chi",
+      "con quale",
+      "con cui"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dopo una preposizione il pronome relativo è cui: l'amica con cui sono andata. Quale vuole l'articolo: con la quale."
+  },
+  {
+    "id": "ITCILS-PRO-009",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«La città ___ abito adesso è piccola ma tranquilla.» Quale forma completa la frase?",
+    "options": [
+      "in cui",
+      "in che",
+      "che",
+      "a cui"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Per il luogo si dice abitare in una città, quindi il relativo è in cui. Che da solo non può sostituire un complemento con preposizione."
+  },
+  {
+    "id": "ITCILS-PRO-010",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ho comprato questi fiori ___, mamma!» Quale forma completa la frase?",
+    "options": [
+      "per ti",
+      "per te",
+      "per tu",
+      "a ti"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dopo una preposizione si usa il pronome tonico: per te, con me, a lui. Ti è atono e tu è soggetto."
+  },
+  {
+    "id": "ITCILS-PRO-011",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ragazzi, ___ domani a scuola!» Quale forma completa la frase?",
+    "options": [
+      "voi vedo",
+      "ve vedo",
+      "vi vedo",
+      "gli vedo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il pronome diretto atono di voi è vi e va prima del verbo: vi vedo. Voi è la forma tonica."
+  },
+  {
+    "id": "ITCILS-PRO-012",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Il dottore ___ di bere molta acqua.» Quale forma completa la frase?",
+    "options": [
+      "me ha detto",
+      "io ha detto",
+      "mio ha detto",
+      "mi ha detto"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dire qualcosa a qualcuno: a me diventa il pronome indiretto atono mi. Me si usa solo prima di un altro pronome, come in me lo."
+  },
+  {
+    "id": "ITCILS-PRO-013",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Conosci i genitori di Ali? No, non ___.» Quale forma completa la frase?",
+    "options": [
+      "li conosco",
+      "gli conosco",
+      "lo conosco",
+      "le conosco"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I genitori è maschile plurale e complemento diretto: il pronome è li. Gli è indiretto."
+  },
+  {
+    "id": "ITCILS-PRO-014",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Vuoi del pane? Sì, ___ un pezzo, grazie.» Quale forma completa la frase?",
+    "options": [
+      "lo prendo",
+      "ne prendo",
+      "ci prendo",
+      "la prendo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Quando si prende una parte di qualcosa, un pezzo, si usa ne."
+  },
+  {
+    "id": "ITCILS-PRO-015",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Hai detto a Paola che la riunione è spostata? Sì, ___ stamattina.» Quale forma completa la frase?",
+    "options": [
+      "le l'ho detto",
+      "lo le ho detto",
+      "gliel'ho detto",
+      "gli lo ho detto"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A lei più lo diventa glielo, che davanti a ho si apostrofa: gliel'ho detto. Le e lo insieme non si usano mai."
+  },
+  {
+    "id": "ITCILS-PRO-016",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Hai prenotato il ristorante? No, ma ___ io domani.» Quale forma completa la frase?",
+    "options": [
+      "ne penso",
+      "lo penso",
+      "gli penso",
+      "ci penso"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pensare a qualcosa: a questa cosa diventa ci. Ci penso io significa me ne occupo io."
+  },
+  {
+    "id": "ITCILS-PRO-017",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri sera i bambini ___ presto.» Quale forma completa la frase?",
+    "options": [
+      "si sono addormentati",
+      "si hanno addormentati",
+      "sono addormentati",
+      "ci sono addormentati"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Addormentarsi è riflessivo: al passato prossimo vuole si più essere, e il participio si accorda con i bambini."
+  },
+  {
+    "id": "ITCILS-PRO-018",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Questo è il libro ___ ti ho parlato.» Quale forma completa la frase?",
+    "options": [
+      "che",
+      "di cui",
+      "di che",
+      "a cui"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Si dice parlare di un libro: dopo la preposizione di il relativo è cui. Che non può avere una preposizione davanti."
+  },
+  {
+    "id": "ITCILS-PRO-019",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Se vedi Anna, ___ i miei saluti.» Quale forma completa la frase?",
+    "options": [
+      "portala",
+      "portali",
+      "portale",
+      "portile"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Portare i saluti a qualcuno: ad Anna diventa le, che all'imperativo di tu si unisce al verbo: portale."
+  },
+  {
+    "id": "ITCILS-PRO-020",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsPronomi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Che bel vestito! Dove ___?» Quale forma completa la frase?",
+    "options": [
+      "lo hai comprata",
+      "gli hai comprato",
+      "la hai comprato",
+      "l'hai comprato"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il vestito è maschile: lo, che davanti a hai si apostrofa. Il participio si accorda con lo: comprato."
+  },
+  {
+    "id": "ITCILS-AGG-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«___ lavora come infermiera in ospedale.» Quale forma completa la frase?",
+    "options": [
+      "Mia madre",
+      "La mia madre",
+      "Mio madre",
+      "Il mia madre"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Con i nomi di parentela al singolare il possessivo non vuole l'articolo: mia madre, mio padre."
+  },
+  {
+    "id": "ITCILS-AGG-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«___ arrivano domani dalla Romania.» Quale forma completa la frase?",
+    "options": [
+      "Mie amiche",
+      "Le mie amiche",
+      "I miei amiche",
+      "La mia amiche"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Al plurale il possessivo vuole l'articolo, e tutto si accorda con amiche, femminile plurale: le mie amiche."
+  },
+  {
+    "id": "ITCILS-AGG-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Questa casa è ___ di quella dove abitavo prima.» Quale forma completa la frase?",
+    "options": [
+      "più grande che",
+      "più grandissima",
+      "più grande",
+      "più maggiore"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il comparativo si fa con più più l'aggettivo, e il secondo termine è introdotto da di. Maggiore è già un comparativo."
+  },
+  {
+    "id": "ITCILS-AGG-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ieri ho visto ___ di cui mi hai parlato.» Quale forma completa la frase?",
+    "options": [
+      "quello film",
+      "quell film",
+      "quella film",
+      "quel film"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Davanti a una consonante semplice il dimostrativo maschile è quel: quel film, quel libro."
+  },
+  {
+    "id": "ITCILS-AGG-005",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Mi piace molto ___ rosso in vetrina.» Quale forma completa la frase?",
+    "options": [
+      "quello zaino",
+      "quel zaino",
+      "quell'zaino",
+      "quella zaino"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Davanti a z, s più consonante, gn e ps il dimostrativo è quello: quello zaino, quello studente."
+  },
+  {
+    "id": "ITCILS-AGG-006",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«In ___ ci sono venti studenti.» Quale forma completa la frase?",
+    "options": [
+      "ogni classi",
+      "ogni classe",
+      "tutti classe",
+      "qualche classi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ogni vuole sempre un nome al singolare: ogni classe, ogni giorno."
+  },
+  {
+    "id": "ITCILS-AGG-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Non c'è ___ in ufficio, sono tutti in pausa.» Quale forma completa la frase?",
+    "options": [
+      "nessun",
+      "ognuno",
+      "nessuno",
+      "ciascun"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per dire non c'è una sola persona si usa il pronome nessuno, con la negazione non."
+  },
+  {
+    "id": "ITCILS-AGG-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ho ancora ___ in tasca, possiamo prendere un caffè.» Quale forma completa la frase?",
+    "options": [
+      "qualche euri",
+      "qualchi euro",
+      "alcune euro",
+      "qualche euro"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Qualche non cambia e vuole il nome al singolare: qualche euro, qualche giorno."
+  },
+  {
+    "id": "ITCILS-AGG-009",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Questo è il ristorante ___ della città.» Quale forma completa la frase?",
+    "options": [
+      "più caro",
+      "carissimo",
+      "più carissimo",
+      "molto più caro"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il superlativo relativo si fa con l'articolo più più l'aggettivo e di: il ristorante più caro della città."
+  },
+  {
+    "id": "ITCILS-AGG-010",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Oggi fa ___ di ieri.» Quale forma completa la frase?",
+    "options": [
+      "caldissimo",
+      "più caldo",
+      "più caldissimo",
+      "così caldo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con di ieri serve un comparativo: più caldo di ieri. Caldissimo non confronta due cose."
+  },
+  {
+    "id": "ITCILS-AGG-011",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Mio figlio adesso è ___ suo padre.» Quale forma completa la frase?",
+    "options": [
+      "alto di",
+      "più alto come",
+      "alto come",
+      "alto che"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il comparativo di uguaglianza si fa con come o quanto: alto come suo padre."
+  },
+  {
+    "id": "ITCILS-AGG-012",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«È una ___ per tutta la famiglia!» Quale forma completa la frase?",
+    "options": [
+      "molto bellissima notizia",
+      "bel notizia",
+      "più bellissima notizia",
+      "bellissima notizia"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bellissima è già un superlativo, quindi non vuole molto o più. Bel si usa solo con nomi maschili."
+  },
+  {
+    "id": "ITCILS-AGG-013",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«___ ha tua figlia?» Quale forma completa la frase?",
+    "options": [
+      "Quanti anni",
+      "Quanto anni",
+      "Quante anni",
+      "Quali anni"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quanto si accorda con il nome: anni è maschile plurale, quindi quanti anni."
+  },
+  {
+    "id": "ITCILS-AGG-014",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri Carlo è venuto alla festa ___.» Quale forma completa la frase?",
+    "options": [
+      "con la sua moglie",
+      "con sua moglie",
+      "con suo moglie",
+      "con sue moglie"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con un nome di parentela al singolare il possessivo non vuole l'articolo e si accorda con il nome: sua moglie."
+  },
+  {
+    "id": "ITCILS-AGG-015",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Abbiamo invitato a cena Luca e ___.» Quale forma completa la frase?",
+    "options": [
+      "suoi fratelli",
+      "i sui fratelli",
+      "i suoi fratelli",
+      "le sue fratelli"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Con i nomi di parentela al plurale il possessivo vuole l'articolo: i suoi fratelli."
+  },
+  {
+    "id": "ITCILS-AGG-016",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsAggettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«___ deve portare un documento d'identità.» Quale forma completa la frase?",
+    "options": [
+      "Ciascun studente",
+      "Ciascuni studenti",
+      "Ogni studenti",
+      "Ciascuno studente"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ciascuno si comporta come uno: davanti a s più consonante resta ciascuno. Non ha plurale."
+  },
+  {
+    "id": "ITCILS-CON-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Volevo uscire con gli amici, ___ pioveva troppo.» Quale parola completa la frase?",
+    "options": [
+      "ma",
+      "quindi",
+      "cioè",
+      "infatti"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Le due frasi si oppongono, il desiderio e l'ostacolo: serve un connettivo avversativo, ma."
+  },
+  {
+    "id": "ITCILS-CON-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Non sono venuto alla festa ___ ero malato.» Quale parola completa la frase?",
+    "options": [
+      "ma",
+      "perché",
+      "quindi",
+      "però"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La seconda frase spiega la causa della prima: si usa perché."
+  },
+  {
+    "id": "ITCILS-CON-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«___ il negozio era chiuso, siamo tornati a casa.» Quale parola completa la frase?",
+    "options": [
+      "Perciò",
+      "Invece",
+      "Siccome",
+      "Però"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "All'inizio della frase, per dare la causa prima della conseguenza, si usa siccome."
+  },
+  {
+    "id": "ITCILS-CON-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Sono uscito tardi dal lavoro, ___ ho perso l'ultimo autobus.» Quale parola completa la frase?",
+    "options": [
+      "perché",
+      "però",
+      "siccome",
+      "quindi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Perdere l'autobus è la conseguenza dell'uscita tardi: il connettivo è quindi."
+  },
+  {
+    "id": "ITCILS-CON-005",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«___ esci, chiudi la porta a chiave.» Quale parola completa la frase?",
+    "options": [
+      "Quando",
+      "Prima di",
+      "Dopo di",
+      "Durante"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Davanti a un verbo coniugato, esci, serve una congiunzione: quando. Prima di e dopo di vogliono l'infinito, durante vuole un nome."
+  },
+  {
+    "id": "ITCILS-CON-006",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Prima ___, lavati le mani.» Quale parola completa la frase?",
+    "options": [
+      "mangiare",
+      "di mangiare",
+      "a mangiare",
+      "per mangiare"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Prima di vuole l'infinito: prima di mangiare, prima di uscire."
+  },
+  {
+    "id": "ITCILS-CON-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Spero ___ presto un lavoro.» Quale parola completa la frase?",
+    "options": [
+      "trovare",
+      "a trovare",
+      "di trovare",
+      "che trovo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Quando il soggetto è lo stesso, dopo sperare si usa di più l'infinito: spero di trovare."
+  },
+  {
+    "id": "ITCILS-CON-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ho deciso ___ un corso di cucina.» Quale parola completa la frase?",
+    "options": [
+      "a fare",
+      "fare",
+      "per fare",
+      "di fare"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Decidere vuole di più l'infinito: ho deciso di fare, di partire."
+  },
+  {
+    "id": "ITCILS-CON-009",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Mio figlio ha cominciato ___ l'italiano a scuola.» Quale parola completa la frase?",
+    "options": [
+      "a studiare",
+      "di studiare",
+      "studiare",
+      "per studiare"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cominciare vuole a più l'infinito: ha cominciato a studiare."
+  },
+  {
+    "id": "ITCILS-CON-010",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Non bevo ___ caffè né tè: preferisco l'acqua.» Quale parola completa la frase?",
+    "options": [
+      "o",
+      "né",
+      "e",
+      "sia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per negare due cose insieme si usa né... né: non bevo né caffè né tè."
+  },
+  {
+    "id": "ITCILS-CON-011",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Mia sorella ama il mare, io ___ preferisco la montagna.» Quale parola completa la frase?",
+    "options": [
+      "perché",
+      "cioè",
+      "invece",
+      "siccome"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La seconda frase presenta una preferenza opposta: invece indica il contrasto."
+  },
+  {
+    "id": "ITCILS-CON-012",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Sono molto stanca: ___, stanotte ho dormito solo tre ore.» Quale parola completa la frase?",
+    "options": [
+      "invece",
+      "però",
+      "quindi",
+      "infatti"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La seconda frase conferma e spiega la prima: infatti introduce una prova di quello che si è detto."
+  },
+  {
+    "id": "ITCILS-CON-013",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ti chiamo ___ arrivo a casa.» Quale parola completa la frase?",
+    "options": [
+      "appena",
+      "prima di",
+      "dopo di",
+      "durante"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Appena indica il momento subito dopo un'azione e regge un verbo coniugato: appena arrivo."
+  },
+  {
+    "id": "ITCILS-CON-014",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho telefonato in ufficio ___ un'informazione.» Quale parola completa la frase?",
+    "options": [
+      "che chiedere",
+      "per chiedere",
+      "di chiedere",
+      "chiedere"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per indicare lo scopo si usa per più l'infinito: ho telefonato per chiedere."
+  },
+  {
+    "id": "ITCILS-CON-015",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Lavoro tutto il giorno in piedi, ___ la sera sono stanco.» Quale parola completa la frase?",
+    "options": [
+      "perché",
+      "invece",
+      "perciò",
+      "cioè"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Essere stanco è la conseguenza del lavoro: perciò introduce la conseguenza."
+  },
+  {
+    "id": "ITCILS-CON-016",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsConnettivi",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Arrivo dopodomani, ___ giovedì.» Quale parola completa la frase?",
+    "options": [
+      "però",
+      "perché",
+      "invece",
+      "cioè"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cioè introduce una spiegazione o una precisazione di quello che si è appena detto."
+  },
+  {
+    "id": "ITCILS-LES-001",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Per fare la carta d'identità devo prendere un ___ in Comune.» Quale parola completa la frase?",
+    "options": [
+      "appuntamento",
+      "appartamento",
+      "impiegato",
+      "incontro"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Negli uffici pubblici si prende un appuntamento, cioè si fissa un giorno e un'ora per essere ricevuti."
+  },
+  {
+    "id": "ITCILS-LES-002",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Il medico mi ha fatto la ___ per gli antibiotici.» Quale parola completa la frase?",
+    "options": [
+      "ricevuta",
+      "ricetta",
+      "recita",
+      "risposta"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La ricetta è il foglio del medico per avere un farmaco in farmacia. La ricevuta prova invece un pagamento."
+  },
+  {
+    "id": "ITCILS-LES-003",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Alla posta c'era molta gente e ho dovuto fare la ___ per mezz'ora.» Quale parola completa la frase?",
+    "options": [
+      "filo",
+      "folla",
+      "fila",
+      "festa"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fare la fila significa aspettare il proprio turno dietro altre persone."
+  },
+  {
+    "id": "ITCILS-LES-004",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Il mio contratto di lavoro ___ a dicembre: spero che lo rinnovino.» Quale parola completa la frase?",
+    "options": [
+      "cade",
+      "scende",
+      "sceglie",
+      "scade"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Un contratto o un documento scade quando arriva alla data in cui non vale più."
+  },
+  {
+    "id": "ITCILS-LES-005",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ho ricevuto la ___ del gas: devo pagare entro il 15.» Quale parola completa la frase?",
+    "options": [
+      "bolletta",
+      "borsetta",
+      "bottiglia",
+      "bolla"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La bolletta è il documento con l'importo da pagare per luce, gas, acqua o telefono."
+  },
+  {
+    "id": "ITCILS-LES-006",
+    "section": "grammatica",
+    "test": 1,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Oggi sono in ___ perché ho l'influenza: il medico ha mandato il certificato.» Quale parola completa la frase?",
+    "options": [
+      "malato",
+      "malattia",
+      "malanno",
+      "medicina"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Essere in malattia significa restare a casa dal lavoro con un certificato medico."
+  },
+  {
+    "id": "ITCILS-LES-007",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Cerco un appartamento in ___: non ho abbastanza soldi per comprarlo.» Quale parola completa la frase?",
+    "options": [
+      "vendita",
+      "prestito",
+      "affitto",
+      "regalo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chi non compra una casa la prende in affitto e paga ogni mese al proprietario."
+  },
+  {
+    "id": "ITCILS-LES-008",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Il ___ di casa vuole aumentare l'affitto.» Quale parola completa la frase?",
+    "options": [
+      "inquilino",
+      "portiere",
+      "vicino",
+      "proprietario"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'affitto lo decide il proprietario della casa. L'inquilino è chi abita in affitto e lo paga."
+  },
+  {
+    "id": "ITCILS-LES-009",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Per iscrivere mio figlio a scuola devo ___ un modulo.» Quale parola completa la frase?",
+    "options": [
+      "compilare",
+      "compiere",
+      "comporre",
+      "compatire"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Compilare un modulo significa scrivere nei suoi spazi i dati richiesti."
+  },
+  {
+    "id": "ITCILS-LES-010",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Ho perso il portafoglio: devo fare ___ ai carabinieri.» Quale parola completa la frase?",
+    "options": [
+      "la ricevuta",
+      "la denuncia",
+      "la ricetta",
+      "la prenotazione"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per un documento o un oggetto perso o rubato si fa la denuncia alle forze dell'ordine."
+  },
+  {
+    "id": "ITCILS-LES-011",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Il treno è in ___ di venti minuti.» Quale parola completa la frase?",
+    "options": [
+      "ritiro",
+      "riposo",
+      "ritardo",
+      "ritorno"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Un treno è in ritardo quando arriva o parte dopo l'orario previsto."
+  },
+  {
+    "id": "ITCILS-LES-012",
+    "section": "grammatica",
+    "test": 2,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Il negozio fa uno ___ del trenta per cento su tutti i cappotti.» Quale parola completa la frase?",
+    "options": [
+      "scontro",
+      "conto",
+      "scontrino",
+      "sconto"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lo sconto è una riduzione del prezzo. Lo scontrino è il foglio che si riceve dopo aver pagato."
+  },
+  {
+    "id": "ITCILS-LES-013",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Dopo che ho pagato, la cassiera mi ha dato lo ___.» Quale parola completa la frase?",
+    "options": [
+      "scontrino",
+      "sportello",
+      "scaffale",
+      "stipendio"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lo scontrino è la prova del pagamento che si riceve alla cassa."
+  },
+  {
+    "id": "ITCILS-LES-014",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Per diventare infermiera, Grace ha ___ un esame molto difficile.» Quale parola completa la frase?",
+    "options": [
+      "sorpassato",
+      "superato",
+      "sopportato",
+      "suonato"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Superare un esame significa passarlo con successo. Sorpassare si usa per un veicolo che ne supera un altro."
+  },
+  {
+    "id": "ITCILS-LES-015",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Domani c'è lo ___ dei treni: meglio prendere la macchina.» Quale parola completa la frase?",
+    "options": [
+      "scioglimento",
+      "scivolo",
+      "sciopero",
+      "sciroppo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lo sciopero è quando i lavoratori si fermano per protesta, e i treni possono non partire."
+  },
+  {
+    "id": "ITCILS-LES-016",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Il riscaldamento è ___: chiamo il tecnico.» Quale parola completa la frase?",
+    "options": [
+      "gusto",
+      "guardato",
+      "gustato",
+      "guasto"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Guasto significa rotto, che non funziona."
+  },
+  {
+    "id": "ITCILS-LES-017",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In una mail all'ufficio tecnico del Comune, quale saluto iniziale è adatto?",
+    "options": [
+      "Gentile responsabile,",
+      "Ciao bello,",
+      "Caro amico,",
+      "Ehi, ciao,"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In una mail formale a un ufficio si usa un registro neutro e cortese, come Gentile responsabile o Gentile signora."
+  },
+  {
+    "id": "ITCILS-LES-018",
+    "section": "grammatica",
+    "test": 3,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Quale formula è adatta per chiudere una mail al direttore della scuola?",
+    "options": [
+      "Un abbraccio",
+      "Distinti saluti",
+      "Baci",
+      "A dopo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Distinti saluti o Cordiali saluti chiudono una mail formale. Un abbraccio e baci si usano con amici e familiari."
+  },
+  {
+    "id": "ITCILS-LES-019",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In una mail formale, come chiedi gentilmente un'informazione?",
+    "options": [
+      "Dimmi subito se",
+      "Voglio che mi dici",
+      "Vorrei sapere se",
+      "Spiegami un po' se"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il condizionale vorrei rende la richiesta gentile. Gli imperativi con il tu sono informali e bruschi."
+  },
+  {
+    "id": "ITCILS-LES-020",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Per lavorare in Italia ti serve il ___ fiscale.» Quale parola completa la frase?",
+    "options": [
+      "conto",
+      "calcolo",
+      "cartello",
+      "codice"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il codice fiscale identifica ogni persona per le tasse, il lavoro e la sanità."
+  },
+  {
+    "id": "ITCILS-LES-021",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Ho chiesto un giorno di ___ al mio capo per il matrimonio di mio fratello.» Quale parola completa la frase?",
+    "options": [
+      "permesso",
+      "permanenza",
+      "promessa",
+      "perdono"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Un permesso è un'assenza dal lavoro autorizzata dal datore di lavoro."
+  },
+  {
+    "id": "ITCILS-LES-022",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Quando ho cambiato casa, ho fatto il cambio di ___ in Comune.» Quale parola completa la frase?",
+    "options": [
+      "resistenza",
+      "residenza",
+      "residuo",
+      "rendita"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La residenza è l'indirizzo dove si abita, registrato all'anagrafe del Comune."
+  },
+  {
+    "id": "ITCILS-LES-023",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Il mio vicino è molto ___: mi aiuta sempre a portare la spesa.» Quale parola completa la frase?",
+    "options": [
+      "gentilezza",
+      "sgarbato",
+      "gentile",
+      "geloso"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chi aiuta gli altri è gentile. Gentilezza è un nome e non può stare dopo è molto."
+  },
+  {
+    "id": "ITCILS-LES-024",
+    "section": "grammatica",
+    "test": 4,
+    "module": 1,
+    "domain": "itcilsLessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Al telefono con un impiegato che non conosci, come lo saluti alla fine?",
+    "options": [
+      "Ciao, a dopo",
+      "Baci, ciao",
+      "Ci sentiamo, bello",
+      "Arrivederci, grazie"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Con una persona che non si conosce si usa un saluto formale come arrivederci. Ciao e baci sono informali."
+  }
+]

@@ -9,7 +9,7 @@ import Image from "next/image";
 import { ListChecks, Play, X } from "lucide-react";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
-import { BasicsQuestion, BasicsRun, BasicsSkill, PUNCTUATION_NAMES, answerBasics, basicsFor, basicsKey, basicsOptionOrder, hasWalkthrough, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
+import { BasicsQuestion, BasicsRun, BasicsSkill, answerBasics, basicsFor, basicsKey, basicsOptionOrder, hasWalkthrough, isPunctuationQuestion, newBasicsRun } from "@/lib/v2/basics";
 import { hasExplainer } from "@/lib/v2/explainer";
 import { BasicsExplainer } from "./BasicsExplainer";
 import { BasicsWalkthrough } from "./BasicsWalkthrough";
@@ -25,6 +25,7 @@ import { DrillLockScreen } from "./DrillLockScreen";
 import { Fireworks } from "@/components/Fireworks";
 import { trackBasics } from "@/lib/v2/basicsTracking";
 import { AchievementCelebration } from "@/components/AchievementCelebration";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * One Basics skill on the phone: learn it, then a handful of one-line
@@ -37,6 +38,8 @@ import { AchievementCelebration } from "@/components/AchievementCelebration";
  */
 export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: ExamV2Config; drillKeyParam: string | null; skillIdParam: string | null }) {
   const router = useRouter();
+  const ui = useV2Ui();
+  const t = ui.drill;
   const routes = v2Routes(exam);
   const hydrated = useHydration();
   const { playCorrectSound, playIncorrectSound } = useSound();
@@ -111,11 +114,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     if (openable && drill && skill) trackBasics("skill_open", exam.id, drill.key, { skill: skill.id });
   }, [openable, exam.id, drill, skill]);
   if (!hydrated || !drill || !skill || screen === null || (premiumDrill && !premiumReady)) {
-    return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
+    return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">{ui.common.loading}</FocusMode>;
   }
   const overviewHref = routes.drill(drill.key);
   if (isDrillLocked(exam, drill.key, isPremium) && !hasDrillProgress(drillsMap, basicsMap, exam, drill)) {
-    return <DrillLockScreen exam={exam} drill={drill} detail={`${skills.length} Basics skills`} backHref={overviewHref} />;
+    return <DrillLockScreen exam={exam} drill={drill} detail={t.basicsLockDetail(skills.length)} backHref={overviewHref} />;
   }
 
   const nextSkill = skills.find((s, i) => i !== skillIndex && !basicsMap[basicsKey(exam.id, s.id)]?.done);
@@ -179,25 +182,25 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     setRuleOpen(true);
   };
   const overlay = walking ? (
-    <BasicsWalkthrough exam={exam} skill={skill} drillKey={drill.key} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
+    <BasicsWalkthrough exam={exam} skill={skill} drillKey={drill.key} doneLabel={t.tryAgainLabel} onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
   ) : explainer ? (
-    <BasicsExplainer exam={exam} skill={skill} doneLabel="Try it again" onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
+    <BasicsExplainer exam={exam} skill={skill} doneLabel={t.tryAgainLabel} onDone={closeOverlay} onClose={closeOverlay} onRead={openRuleSheet} />
   ) : null;
   // On the text card, the way back to the lesson.
   const watchButton = walkable ? (
     <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
-      <ListChecks className="h-4 w-4" /> Walk through it instead
+      <ListChecks className="h-4 w-4" /> {t.walkInstead}
     </button>
   ) : explainable ? (
     <button type="button" onClick={() => setReadMode(false)} className="flex items-center gap-1.5 self-start text-[15px] font-semibold text-brand-dark">
-      <Play className="h-4 w-4" /> Watch it instead · 30 seconds
+      <Play className="h-4 w-4" /> {t.watchInstead}
     </button>
   ) : null;
 
   // ---- Learn / review: the walkthrough or the video first, the text card behind "Read it" ----
   if (screen === "learn" || screen === "review") {
     const review = screen === "review";
-    const doneLabel = review ? "Got it, keep going" : `Got it, try ${total} questions`;
+    const doneLabel = review ? t.keepGoing : t.tryQuestions(total);
     // X leaves the skill for the drill's Basics list, like the text card's X; "Read it" is the way to the card.
     const exitToOverview = () => router.push(overviewHref);
     if (walkable && !readMode) {
@@ -208,12 +211,12 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     }
     return (
       <FocusMode className="v2-focus">
-        <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />
+        <Header title={skill.name} sub={t.basicsSub(drill.name)} closeHref={overviewHref} closeLabel={t.backToDrillAria} />
         <div className="v2-scroll">
           <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
-            <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">{review ? "One more look" : "Learn it · 20 seconds"}</div>
+            <div className="text-xs font-semibold uppercase tracking-wider text-brand-dark">{review ? t.oneMoreLook : t.learnIt}</div>
             <h1 className="text-2xl font-bold leading-tight text-gray-900 dark:text-gray-50">{skill.name}</h1>
-            {review && <p className="text-sm text-gray-600 dark:text-gray-300">That one&apos;s tricky. Here&apos;s the rule again before the next question.</p>}
+            {review && <p className="text-sm text-gray-600 dark:text-gray-300">{t.reviewIntro}</p>}
             {watchButton}
             <RuleCard skill={skill} />
             <Eli5Toggle skill={skill} open={another} onOpen={() => setAnother(true)} />
@@ -222,7 +225,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto max-w-2xl">
             <button type="button" onClick={start} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">
-              {review ? "Got it, keep going" : `Got it, try ${total} questions`}
+              {doneLabel}
             </button>
           </div>
         </div>
@@ -251,31 +254,31 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     return (
       <FocusMode className="v2-focus">
         {fireworks && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
-        {revisit && <Header title={skill.name} sub={`Basics · ${drill.name}`} closeHref={overviewHref} />}
+        {revisit && <Header title={skill.name} sub={t.basicsSub(drill.name)} closeHref={overviewHref} closeLabel={t.backToDrillAria} />}
         <div className="v2-scroll">
           <div className="px-4 py-6 sm:py-10">
             <AchievementCelebration
               examId={exam.id}
               headingLevel={1}
               earned={earnedMilestone !== null}
-              eyebrow={allBasicsDone ? "Basics complete" : "Skill learned"}
-              title={allBasicsDone ? (childFriendly ? "All your basics are green!" : "A strong foundation, complete.") : (childFriendly && !revisit ? "One more skill is green!" : skill.name)}
+              eyebrow={allBasicsDone ? t.basicsCompleteEyebrow : t.skillLearnedEyebrow}
+              title={allBasicsDone ? (childFriendly ? t.allBasicsTitleChild : t.allBasicsTitle) : (childFriendly && !revisit ? t.oneMoreSkillChild : skill.name)}
               description={allBasicsDone
-                ? `You learned all ${skills.length} ${skills.length === 1 ? "skill" : "skills"} in ${drill.name}. ${childFriendly ? "Your practice questions are next." : "You're ready to put them into practice."}`
+                ? t.allBasicsDescription(skills.length, drill.name, childFriendly)
                 : childFriendly
-                  ? `You've learned ${skill.name}. ${revisit ? "You can practise it again any time." : "That's another step forward."}`
-                  : revisit ? "You've already learned this skill. Come back any time for a refresher." : retried ? "You worked through every question, including the ones that needed another try." : "Every question answered correctly on your first try."}
+                  ? t.skillLearnedChild(skill.name, revisit)
+                  : revisit ? t.revisitDescription : retried ? t.retriedDescription : t.perfectDescription}
               detail={allBasicsDone
-                ? `${skills.length} of ${skills.length} basics skills learned · ${drill.name}`
-                : <><span>{firstTry} of {outOf} right first try</span>{retried > 0 && <span className="block">{retried} fixed on a retry</span>}</>}
+                ? t.allBasicsDetail(skills.length, drill.name)
+                : <><span>{t.firstTryDetail(firstTry, outOf)}</span>{retried > 0 && <span className="block">{t.retriedDetail(retried)}</span>}</>}
             >
-              <Link href={dashboardHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">See your progress</Link>
+              <Link href={dashboardHref} className="v2-tap flex items-center justify-center rounded-xl bg-brand px-4 text-base font-bold text-white">{t.seeProgress}</Link>
               {nextSkill ? (
-                <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 bg-white px-3 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-50">Next skill: {nextSkill.name}</Link>
+                <Link href={routes.basics(drill.key, nextSkill.id)} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 bg-white px-3 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-50">{t.nextSkill(nextSkill.name)}</Link>
               ) : (
-                <Link href={routes.drillQuestions(drill.key)} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 bg-white px-3 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-50">{childFriendly ? "Try the practice questions" : "Try exam-level questions"}</Link>
+                <Link href={routes.drillQuestions(drill.key)} className="v2-tap flex items-center justify-center rounded-xl border-2 border-gray-200 bg-white px-3 text-sm font-semibold text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-50">{childFriendly ? t.tryPracticeChild : t.tryExamLevel}</Link>
               )}
-              <button type="button" onClick={learnAgain} className="v2-tap rounded-xl text-sm font-semibold text-gray-600 dark:text-gray-300">Learn it again</button>
+              <button type="button" onClick={learnAgain} className="v2-tap rounded-xl text-sm font-semibold text-gray-600 dark:text-gray-300">{t.learnAgain}</button>
             </AchievementCelebration>
           </div>
         </div>
@@ -285,7 +288,7 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   }
 
   // ---- Question ----
-  if (!run || current === null) return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">Loading...</FocusMode>;
+  if (!run || current === null) return <FocusMode className="v2-focus items-center justify-center text-gray-600 dark:text-gray-300">{ui.common.loading}</FocusMode>;
   const q = skill.questions[current];
   const revealed = picked !== null;
   const correct = revealed && picked === q.answer;
@@ -298,15 +301,15 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
     <FocusMode className="v2-focus">
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
-          <Link href={overviewHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back to the drill">
+          <Link href={overviewHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={t.backToDrillAria}>
             <X className="h-5 w-5" />
           </Link>
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-bold">{skill.name}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">{run.mastered.length} of {total} right{comingBack ? ` · ${comingBack} coming back` : ""}</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">{t.rightCount(run.mastered.length, total)}{comingBack ? t.comingBack(comingBack) : ""}</div>
           </div>
           <button type="button" onClick={() => setRuleOpen(true)} className="rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand-dark">
-            Rule
+            {t.rule}
           </button>
         </div>
         <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
@@ -316,10 +319,10 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
 
       <div className="v2-scroll">
         <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-5">
-          {run.retried.includes(current) && !revealed && <div className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-300">Back for another try</div>}
+          {run.retried.includes(current) && !revealed && <div className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-300">{t.backForAnother}</div>}
           {q.passage && <Passage text={q.passage} />}
           <div ref={promptRef} tabIndex={-1} className="outline-none">
-            <Prompt q={q} revealed={revealed} punct={punct} />
+            <Prompt q={q} revealed={revealed} punct={punct} label={punct ? t.whichPunctuation : t.whichWord} />
           </div>
           {table && <DataTable table={table} />}
           <div className="flex flex-col gap-2.5">
@@ -332,37 +335,37 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
                   {punct ? (
                     <>
                       <span className="min-w-[1.5rem] text-center text-2xl font-bold" aria-hidden="true">{o === "" ? "∅" : o}</span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">{PUNCTUATION_NAMES[o]}</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">{t.punctuationNames[o]}</span>
                     </>
                   ) : (
                     <span>{o}</span>
                   )}
-                  {revealed && i === q.answer && <span className="sr-only"> (right answer)</span>}
-                  {revealed && i === picked && i !== q.answer && <span className="sr-only"> (your answer)</span>}
+                  {revealed && i === q.answer && <span className="sr-only">{t.rightAnswerSr}</span>}
+                  {revealed && i === picked && i !== q.answer && <span className="sr-only">{t.yourAnswerSr}</span>}
                 </button>
               );
             })}
           </div>
-          <div role="status" className="sr-only">{revealed ? `${correct ? "Right" : "Not quite"}. ${q.why}` : ""}</div>
+          <div role="status" className="sr-only">{revealed ? `${correct ? t.right : t.notQuite}. ${q.why}` : ""}</div>
           {revealed && (
             <div className={`v2-pop flex items-start gap-3 rounded-2xl p-4 ${correct ? "bg-green-50 dark:bg-green-950" : "bg-amber-50 dark:bg-amber-950"}`}>
               <Image src={getTigerAsset(exam.id, correct ? 1 : 5)} alt="" width={56} height={56} className="h-14 w-14 shrink-0 object-contain" />
               <div className="flex min-w-0 flex-col gap-1.5">
-                <div className={`text-lg font-bold ${correct ? "text-green-800 dark:text-green-300" : "text-amber-800 dark:text-amber-300"}`}>{correct ? (run.retried.includes(current) ? "Got it this time" : "Right") : "Not quite"}</div>
+                <div className={`text-lg font-bold ${correct ? "text-green-800 dark:text-green-300" : "text-amber-800 dark:text-amber-300"}`}>{correct ? (run.retried.includes(current) ? t.gotItThisTime : t.right) : t.notQuite}</div>
                 <p className="text-[15px] text-gray-800 dark:text-gray-100">{q.why}</p>
                 {!correct && (
                   <>
-                    <p className="text-sm text-gray-800 dark:text-gray-100"><b>The trick:</b> {skill.trick}</p>
+                    <p className="text-sm text-gray-800 dark:text-gray-100"><b>{t.theTrick}</b> {skill.trick}</p>
                     {walkable ? (
                       <button type="button" onClick={() => setWalking(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand-dark shadow-sm">
-                        <ListChecks className="h-4 w-4" /> Walk through it again
+                        <ListChecks className="h-4 w-4" /> {t.walkAgain}
                       </button>
                     ) : explainable ? (
                       <button type="button" onClick={() => setExplainer(true)} className="v2-tap mt-1 flex items-center justify-center gap-2 self-start rounded-xl bg-white dark:bg-gray-900 px-4 text-[15px] font-bold text-brand-dark shadow-sm">
-                        <Play className="h-4 w-4" /> Watch the explainer · 30 seconds
+                        <Play className="h-4 w-4" /> {t.watchExplainer}
                       </button>
                     ) : null}
-                    <p className="text-xs text-gray-500 dark:text-gray-400">This one will come back in a minute.</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{t.comesBack}</p>
                   </>
                 )}
               </div>
@@ -375,10 +378,10 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
         <div className="mx-auto max-w-2xl">
           {revealed ? (
             <button ref={nextRef} type="button" onClick={() => next(run)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">
-              {run.mastered.length === total ? "Finish" : "Next"}
+              {run.mastered.length === total ? t.finish : ui.common.next}
             </button>
           ) : (
-            <div className="v2-tap flex items-center justify-center text-sm text-gray-500 dark:text-gray-400">Tap an answer</div>
+            <div className="v2-tap flex items-center justify-center text-sm text-gray-500 dark:text-gray-400">{t.tapAnswer}</div>
           )}
         </div>
       </div>
@@ -389,11 +392,11 @@ export function BasicsRunner({ exam, drillKeyParam, skillIdParam }: { exam: Exam
   );
 }
 
-function Header({ title, sub, closeHref }: { title: string; sub: string; closeHref: string }) {
+function Header({ title, sub, closeHref, closeLabel }: { title: string; sub: string; closeHref: string; closeLabel: string }) {
   return (
     <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
       <div className="flex items-center gap-2">
-        <Link href={closeHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Back to the drill">
+        <Link href={closeHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={closeLabel}>
           <X className="h-5 w-5" />
         </Link>
         <div className="min-w-0 flex-1">
@@ -405,13 +408,13 @@ function Header({ title, sub, closeHref }: { title: string; sub: string; closeHr
   );
 }
 
-function Prompt({ q, revealed, punct }: { q: BasicsQuestion; revealed: boolean; punct: boolean }) {
+function Prompt({ q, revealed, punct, label }: { q: BasicsQuestion; revealed: boolean; punct: boolean; label: string }) {
   if (!q.blank) return <p className="text-[21px] font-medium leading-snug text-gray-900 dark:text-gray-50">{q.stem}</p>;
   const [before, after] = q.blank.split("__");
   const answer = q.options[q.answer];
   return (
     <div>
-      <p className="text-sm text-gray-500 dark:text-gray-400">{punct ? "Which punctuation goes in the blank?" : "Which word goes in the blank?"}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400">{label}</p>
       <p className="mt-1 text-[21px] font-medium leading-snug text-gray-900 dark:text-gray-50">
         {before}
         {revealed ? (

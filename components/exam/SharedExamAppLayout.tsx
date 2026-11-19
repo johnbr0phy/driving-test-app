@@ -17,6 +17,6 @@ export async function sharedExamAppMetadata(params: Promise<{ slug: string }>): 
 export async function SharedExamAppLayout({ params, children }: { params: Promise<{ slug: string }>; children: React.ReactNode }) {
   const route = examForAppSlug((await params).slug);
   if (!route) notFound();
-  if (route.kind === "v2") return <V2Shell theme={route.exam.theme}>{children}</V2Shell>;
+  if (route.kind === "v2") return <V2Shell theme={route.exam.theme} language={route.exam.language}>{children}</V2Shell>;
   return <div data-theme={route.exam.id} className="flex-1 flex flex-col">{children}</div>;
 }

@@ -200,6 +200,13 @@ export interface ExamV2Config {
    */
   drillSize?: number;
   drills: DrillDef[];
+  /**
+   * An exam that moved from the v1 engine: the v1 training set ids whose mastered
+   * and wrong-queue questions seed each drill (by drill key) the first time it is
+   * opened with no v2 progress (components/v2/V1ProgressCarryOver.tsx). Question
+   * ids are the same in both engines.
+   */
+  fromV1?: { drills: Record<string, number[]> };
   /** Composite from the scored sections (scaled, raw and total per section, in exam order). */
   composite: { name: string; min: number; max: number; combine: (sections: SectionResult[]) => number };
   /** Default goal for the goal picker. */

@@ -9,7 +9,9 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 # (module, pool). Four 50-question tests: 10/12/8/5/5/4/6 per test, pools exactly 4x.
 ORDER = [("avvisi", 40), ("testi", 48), ("verbi", 32), ("pronomi", 20),
          ("preposizioni", 20), ("connettivi", 16), ("lessico", 24)]
-out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "italy-celi-2-questions.json")
+if len(sys.argv) < 2:
+    sys.exit("v2 since Nov 2026: run tools/build-run-2026-11-19/italian_v1_to_v2.py, which calls this with a temporary output path")
+out = sys.argv[1]
 BAD = ["—", "–", '"', "Tutte le precedenti", "Nessuna delle precedenti", "Entrambe"]
 
 rows = []

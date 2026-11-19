@@ -24,7 +24,7 @@ for (const [id, mascot] of Object.entries(mappings)) {
   });
 }
  test('related role and other countries keep their existing artwork', () => {
-  for(const [id,mascot] of Object.entries({esthetician:'cosmetology',carshair:'cosmetology',cosmetology:'cosmetology',itcils:'itlanguage',ita2:'itlanguage',itcilsb2:'itlanguage',pance:'pance',cehrs:'cehrs',civics:'civics'})) assert.equal(getTigerAsset(id), `/tigers/${mascot}/tiger_face_03.png`);
+  for(const [id,mascot] of Object.entries({esthetician:'esthetics',carshair:'cosmetology',cosmetology:'cosmetology',itcils:'itlanguage',ita2:'itlanguage',itcilsb2:'itlanguage',pance:'pance',cehrs:'cehrs',civics:'civics'})) assert.equal(getTigerAsset(id), `/tigers/${mascot}/tiger_face_03.png`);
  });
 for (const id of dedicated) {
   test(`${id} has eight exact reviewed transparent 512px exports`, async () => {
@@ -60,4 +60,3 @@ for (const id of dedicated) {
     assert.equal(decodedHashes.size, 8, 'Every expression must have distinct pixels');
   });
 }
-

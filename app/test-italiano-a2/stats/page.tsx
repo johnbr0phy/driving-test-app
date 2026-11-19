@@ -1,9 +1,9 @@
 "use client";
 
-import "@/lib/banks/ita2";
-import { ExamStatsPage } from "@/components/exam/ExamStatsPage";
-import { getExamById } from "@/lib/exams";
+import { StatsV2 } from "@/components/v2/StatsV2";
+import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/ita2";
 
-export default function Ita2StatsPage() {
-  return <ExamStatsPage exam={getExamById("ita2")!} />;
+export default function StatsPage() {
+  return <StatsV2 exam={getExamV2("ita2")} />;
 }

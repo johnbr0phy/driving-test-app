@@ -12,6 +12,7 @@ import { DataTable, Passage } from "./BasicsRuleCard";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { useSound } from "@/hooks/useSound";
 import { trackBasics } from "@/lib/v2/basicsTracking";
+import { useV2Ui } from "@/lib/v2/ui";
 
 // The drag boards carry their own library, so they load only on a step that has one.
 const BasicsPlay = dynamic(() => import("./play/BasicsPlay"), {
@@ -40,6 +41,8 @@ export function BasicsWalkthrough({ exam, skill, drillKey, doneLabel, onDone, on
   /** "Read it" in the header, when the text card is the alternative. */
   onRead?: () => void;
 }) {
+  const ui = useV2Ui();
+  const t = ui.drill;
   const walk = skill.walkthrough!;
   const steps = walk.steps;
   const { playCorrectSound, playIncorrectSound } = useSound();
@@ -108,19 +111,19 @@ export function BasicsWalkthrough({ exam, skill, drillKey, doneLabel, onDone, on
   const face = isPlay ? (solved ? 1 : 4) : !isAsk ? 3 : solved ? 1 : wrong.length ? 5 : 4;
 
   return (
-    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" aria-label={`${skill.name} walkthrough`}>
+    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" aria-label={t.walkthroughAria(skill.name)}>
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
-          <button type="button" onClick={onClose} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Close the walkthrough">
+          <button type="button" onClick={onClose} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={t.closeWalkthroughAria}>
             <X className="h-5 w-5" />
           </button>
           <div className="min-w-0 flex-1">
             <div className="truncate text-sm font-bold">{skill.name}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">Walk through it · step {index + 1} of {steps.length}</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">{t.walkStep(index + 1, steps.length)}</div>
           </div>
           {onRead && (
             <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand-dark">
-              <BookOpen className="h-4 w-4" /> Read it
+              <BookOpen className="h-4 w-4" /> {t.readIt}
             </button>
           )}
         </div>
@@ -166,15 +169,15 @@ export function BasicsWalkthrough({ exam, skill, drillKey, doneLabel, onDone, on
                       return (
                         <button key={i} type="button" disabled={solved} aria-disabled={wrong.includes(i) || undefined} onClick={() => pick(i)} className={`v2-tap flex min-h-[3.25rem] w-full items-center rounded-xl border-2 px-4 py-2.5 text-left text-[17px] leading-snug tabular-nums ${cls}`}>
                           {o}
-                          {solved && i === step.answer && <span className="sr-only"> (right)</span>}
-                          {!solved && wrong.includes(i) && <span className="sr-only"> (not this one)</span>}
+                          {solved && i === step.answer && <span className="sr-only">{t.rightSr}</span>}
+                          {!solved && wrong.includes(i) && <span className="sr-only">{t.notThisOneSr}</span>}
                         </button>
                       );
                     })}
                   </div>
                   <div aria-live="polite">
                     {!solved && wrong.length > 0 && (
-                      <p className="v2-pop mt-3 text-[15px] leading-snug text-amber-800 dark:text-amber-300">{step.hint ?? "Not that one. Try again."}</p>
+                      <p className="v2-pop mt-3 text-[15px] leading-snug text-amber-800 dark:text-amber-300">{step.hint ?? t.notThatOne}</p>
                     )}
                     {solved && step.then && <p className="v2-pop mt-3 text-[16px] leading-snug text-green-800 dark:text-green-300">{step.then}</p>}
                   </div>
@@ -206,13 +209,13 @@ export function BasicsWalkthrough({ exam, skill, drillKey, doneLabel, onDone, on
         <div className="mx-auto flex max-w-2xl items-center gap-2">
           {solved ? (
             <button ref={nextRef} type="button" onClick={next} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
-              {last ? doneLabel : "Next"}
+              {last ? doneLabel : ui.common.next}
             </button>
           ) : (
             <>
-              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{isPlay ? "Solve it on the board" : "Tap an answer"}</div>
+              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{isPlay ? t.solveOnBoard : t.tapAnswer}</div>
               <button type="button" onClick={onDone} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
-                Skip
+                {t.skip}
               </button>
             </>
           )}

@@ -1,0 +1,5331 @@
+[
+  {
+    "id": "KCET-T1-001",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units and measurements",
+    "stem": "Planck's constant is energy divided by frequency. What is its dimensional formula?",
+    "options": [
+      "[M L² T⁻²]",
+      "[M L² T]",
+      "[M L² T⁻¹]",
+      "[M L T⁻¹]"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Energy is [M L² T⁻²] and frequency is [T⁻¹], so h = E/ν has [M L² T⁻¹]. [M L² T⁻²] is energy itself, and [M L T⁻¹] is linear momentum."
+  },
+  {
+    "id": "KCET-T1-002",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electric charges and fields",
+    "stem": "Two point charges of +2 µC and +8 µC are 30 cm apart in air. What force does each exert on the other?",
+    "options": [
+      "1.6 N",
+      "5.33 N",
+      "6.4 N",
+      "160 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$F = \\frac{kq_1q_2}{r^2} = \\frac{9 \\times 10^9 \\times 2 \\times 10^{-6} \\times 8 \\times 10^{-6}}{0.3^2} = 1.6$ N. 6.4 N uses half the separation, 5.33 N divides by $r^3$, and 160 N comes from taking 30 cm as 0.03 m."
+  },
+  {
+    "id": "KCET-T1-003",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mechanical properties of solids",
+    "stem": "A wire 2 m long with cross-section 1 mm² stretches by 1 mm under a 100 N load. What is its Young's modulus?",
+    "options": [
+      "$2 \\times 10^{5}$ Pa",
+      "$2 \\times 10^{8}$ Pa",
+      "$1 \\times 10^{11}$ Pa",
+      "$2 \\times 10^{11}$ Pa"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$Y = \\frac{FL}{A\\Delta L} = \\frac{100 \\times 2}{10^{-6} \\times 10^{-3}} = 2 \\times 10^{11}$ Pa. $2 \\times 10^{5}$ Pa leaves the area in mm², $1 \\times 10^{11}$ Pa leaves out the length, and $2 \\times 10^{8}$ Pa leaves the extension in mm."
+  },
+  {
+    "id": "KCET-T1-004",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ray optics",
+    "stem": "An object stands 20 cm in front of a concave mirror of focal length 12 cm. Where is the image formed?",
+    "options": [
+      "60 cm in front",
+      "30 cm behind",
+      "7.5 cm in front",
+      "30 cm in front"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With $u = -20$ cm and $f = -12$ cm, $\\frac{1}{v} = \\frac{1}{f} - \\frac{1}{u} = -\\frac{1}{12} + \\frac{1}{20} = -\\frac{1}{30}$, so $v = -30$ cm: a real image 30 cm in front. 7.5 cm comes from adding the reciprocals, and 30 cm behind drops the sign."
+  },
+  {
+    "id": "KCET-T1-005",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion in a straight line",
+    "stem": "A car starts from rest with a uniform acceleration of 3 m/s². How far does it travel during the 4th second?",
+    "options": [
+      "10.5 m",
+      "12 m",
+      "13.5 m",
+      "24 m"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Distance in the nth second is $s_n = u + \\frac{a}{2}(2n - 1) = 0 + 1.5 \\times 7 = 10.5$ m. 24 m is the total in the first 4 s, and 13.5 m is the distance in the 5th second."
+  },
+  {
+    "id": "KCET-T1-006",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrostatic potential and capacitance",
+    "stem": "A 4 µF parallel-plate capacitor has its plate gap halved and then filled with a dielectric of constant 5. What is its new capacitance?",
+    "options": [
+      "8 µF",
+      "10 µF",
+      "20 µF",
+      "40 µF"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$C = \\frac{K\\varepsilon_0 A}{d}$, so the dielectric multiplies $C$ by 5 and halving $d$ doubles it: $4 \\times 5 \\times 2 = 40$ µF. 10 µF halves instead of doubling, 20 µF ignores the change in gap, and 8 µF ignores the dielectric."
+  },
+  {
+    "id": "KCET-T1-007",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mechanical properties of fluids",
+    "stem": "A small sphere falls through oil with a terminal speed of 2 cm/s. What is the terminal speed of a sphere of the same material with three times the radius?",
+    "options": [
+      "2 cm/s",
+      "3.5 cm/s",
+      "6 cm/s",
+      "18 cm/s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "From Stokes' law $v_t = \\frac{2r^2(\\rho - \\sigma)g}{9\\eta}$, so $v_t \\propto r^2$: $2 \\times 9 = 18$ cm/s. 6 cm/s treats the speed as proportional to r, 3.5 cm/s to $\\sqrt{r}$, and 2 cm/s wrongly assumes terminal speed does not depend on size."
+  },
+  {
+    "id": "KCET-T1-008",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ray optics",
+    "stem": "Glass has refractive index √2. What is its critical angle for light going from glass to air?",
+    "options": [
+      "22.5°",
+      "30°",
+      "41.8°",
+      "45°"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin C = \\frac{1}{n} = \\frac{1}{\\sqrt{2}}$, so $C = 45°$. 30° would need $n = 2$, 41.8° is the critical angle for $n = 1.5$, and 22.5° halves the right value."
+  },
+  {
+    "id": "KCET-T1-009",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion in a plane",
+    "stem": "A ball thrown at 45° to the horizontal lands 40 m away on level ground. Taking g = 10 m/s², what was its launch speed?",
+    "options": [
+      "20 m/s",
+      "28.3 m/s",
+      "40 m/s",
+      "400 m/s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "At 45° the range is $R = \\frac{u^2}{g}$, so $u = \\sqrt{40 \\times 10} = 20$ m/s. 400 m/s forgets the square root, 28.3 m/s comes from writing $R = \\frac{u^2}{2g}$, and 40 m/s takes the speed equal to the range."
+  },
+  {
+    "id": "KCET-T1-010",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Current electricity",
+    "stem": "A wire of resistance 12 Ω is stretched uniformly to twice its length. What is its new resistance?",
+    "options": [
+      "6 Ω",
+      "12 Ω",
+      "24 Ω",
+      "48 Ω"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The volume stays fixed, so doubling the length halves the area, and $R = \\frac{\\rho l}{A}$ rises by $2 \\times 2 = 4$: $R = 48$ Ω. 24 Ω forgets that the wire also gets thinner, 6 Ω halves instead of multiplying, and 12 Ω assumes stretching changes nothing."
+  },
+  {
+    "id": "KCET-T1-011",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermal properties of matter",
+    "stem": "A steel rod 2 m long is heated from 20 °C to 70 °C. If α = 1.2 × 10⁻⁵ K⁻¹, by how much does it lengthen?",
+    "options": [
+      "1.2 mm",
+      "2.4 mm",
+      "3.6 mm",
+      "12 mm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\Delta L = L\\alpha\\Delta T = 2 \\times 1.2 \\times 10^{-5} \\times 50 = 1.2 \\times 10^{-3}$ m, or 1.2 mm. 2.4 mm and 3.6 mm use the area and volume coefficients 2α and 3α, and 12 mm slips a power of ten in converting to millimetres."
+  },
+  {
+    "id": "KCET-T1-012",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wave optics",
+    "stem": "In a double-slit experiment, the slits are 0.5 mm apart, the screen is 1 m away and λ = 600 nm. What is the fringe width?",
+    "options": [
+      "1.2 mm",
+      "2.4 mm",
+      "12 mm",
+      "24 mm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\beta = \\frac{\\lambda D}{d} = \\frac{600 \\times 10^{-9} \\times 1}{0.5 \\times 10^{-3}} = 1.2 \\times 10^{-3}$ m $= 1.2$ mm. 2.4 mm doubles it, as if the slits were 0.25 mm apart, and the other two are power-of-ten slips."
+  },
+  {
+    "id": "KCET-T1-013",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "Blocks of 3 kg and 2 kg touch on a frictionless floor. A 15 N horizontal push acts on the 3 kg block. What force does it exert on the 2 kg block?",
+    "options": [
+      "6 N",
+      "7.5 N",
+      "9 N",
+      "15 N"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Both blocks share a = 15/5 = 3 m/s², and the only horizontal force on the 2 kg block is the contact force, 2 × 3 = 6 N. 9 N is the net force on the 3 kg block, and 7.5 N splits the push equally."
+  },
+  {
+    "id": "KCET-T1-014",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Moving charges and magnetism",
+    "stem": "A proton (mass 1.67 × 10⁻²⁷ kg, charge 1.6 × 10⁻¹⁹ C) moves at 2 × 10⁶ m/s at right angles to a 0.5 T field. What is the radius of its path?",
+    "options": [
+      "4.18 cm",
+      "8.35 cm",
+      "41.8 cm",
+      "418 cm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$r = \\frac{mv}{qB} = \\frac{1.67 \\times 10^{-27} \\times 2 \\times 10^6}{1.6 \\times 10^{-19} \\times 0.5} = 0.0418$ m $= 4.18$ cm. 8.35 cm is the diameter of the circle, and the other two are power-of-ten slips."
+  },
+  {
+    "id": "KCET-T1-015",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "A gas absorbs 500 J of heat and does 200 J of work on its surroundings. What is the change in its internal energy?",
+    "options": [
+      "-300 J",
+      "200 J",
+      "300 J",
+      "700 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "By the first law ΔU = Q - W = 500 - 200 = 300 J, an increase. 700 J adds the work instead of subtracting it, which is the sign for work done on the gas."
+  },
+  {
+    "id": "KCET-T1-016",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dual nature of radiation and matter",
+    "stem": "Light of wavelength 310 nm falls on a metal of work function 2 eV. What is the stopping potential? (hc = 1240 eV nm)",
+    "options": [
+      "1 V",
+      "2 V",
+      "4 V",
+      "6 V"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Photon energy $= \\frac{1240}{310} = 4$ eV, so $K_{max} = 4 - 2 = 2$ eV and the stopping potential is 2 V. 4 V forgets to subtract the work function, and 6 V adds it."
+  },
+  {
+    "id": "KCET-T1-017",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work, energy and power",
+    "stem": "A pump raises 600 kg of water through a height of 15 m in one minute. Taking g = 10 m/s², what is its output power?",
+    "options": [
+      "150 W",
+      "1500 W",
+      "3000 W",
+      "90000 W"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Power is work per second: mgh/t = 600 × 10 × 15 / 60 = 1500 W. 90000 W is the work in joules, left undivided by the 60 s."
+  },
+  {
+    "id": "KCET-T1-018",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Magnetism and matter",
+    "stem": "For a paramagnetic substance, the magnetic susceptibility is:",
+    "options": [
+      "Large and positive",
+      "Small and positive",
+      "Exactly zero",
+      "Small and negative"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Paramagnetic materials are weakly magnetised along the applied field, so their susceptibility is small and positive. Small and negative describes diamagnetic materials, and large and positive describes ferromagnetic ones."
+  },
+  {
+    "id": "KCET-T1-019",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "Taking Boltzmann's constant as 1.38 × 10⁻²³ J/K, what is the mean translational kinetic energy of a gas molecule at 27 °C?",
+    "options": [
+      "$6.2 \\times 10^{-21}$ J",
+      "$5.6 \\times 10^{-22}$ J",
+      "$4.1 \\times 10^{-21}$ J",
+      "$1.2 \\times 10^{-20}$ J"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\bar{E} = \\frac{3}{2}kT = 1.5 \\times 1.38 \\times 10^{-23} \\times 300 = 6.2 \\times 10^{-21}$ J. $4.1 \\times 10^{-21}$ J is kT without the 3/2, and $5.6 \\times 10^{-22}$ J uses 27 K instead of 300 K."
+  },
+  {
+    "id": "KCET-T1-020",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Atoms",
+    "stem": "The ground-state energy of hydrogen is -13.6 eV. What is the energy of its n = 3 level?",
+    "options": [
+      "-13.6 eV",
+      "-4.53 eV",
+      "-3.4 eV",
+      "-1.51 eV"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$E_n = -\\frac{13.6}{n^2} = -\\frac{13.6}{9} = -1.51$ eV. -4.53 eV divides by $n$ instead of $n^2$, -3.4 eV is the $n = 2$ level, and -13.6 eV is the ground state."
+  },
+  {
+    "id": "KCET-T1-021",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rotational motion",
+    "stem": "A flywheel with moment of inertia 2 kg m² spins at 20 rad/s about a fixed axis. What is its rotational kinetic energy?",
+    "options": [
+      "20 J",
+      "40 J",
+      "200 J",
+      "400 J"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$KE = \\frac{1}{2}I\\omega^2 = 0.5 \\times 2 \\times 400 = 400$ J. 40 J is $I\\omega$, the angular momentum value, 20 J is $\\frac{1}{2}I\\omega$ with $\\omega$ not squared, and 200 J applies the half twice."
+  },
+  {
+    "id": "KCET-T1-022",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electromagnetic induction",
+    "stem": "A coil of 200 turns has the flux through each turn fall from 6 mWb to 2 mWb in 0.02 s. What is the average induced emf?",
+    "options": [
+      "0.2 V",
+      "20 V",
+      "40 V",
+      "80 V"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\varepsilon = N\\frac{\\Delta\\Phi}{\\Delta t} = 200 \\times \\frac{0.004}{0.02} = 40$ V. 0.2 V leaves out the number of turns, and 80 V adds the two flux values instead of taking their difference."
+  },
+  {
+    "id": "KCET-T1-023",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Oscillations",
+    "stem": "A simple pendulum has a period of 1.5 s. If its length is made four times as long, what is its new period?",
+    "options": [
+      "0.75 s",
+      "2.1 s",
+      "3 s",
+      "6 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$T = 2\\pi\\sqrt{L/g}$, so the period goes as $\\sqrt{L}$ and four times the length doubles it to 3 s. 6 s treats the period as proportional to the length."
+  },
+  {
+    "id": "KCET-T1-024",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Nuclei",
+    "stem": "A nucleus of 10 nucleons has a mass defect of 0.08 u. What is its binding energy per nucleon? (1 u = 931.5 MeV)",
+    "options": [
+      "7.45 MeV",
+      "74.5 MeV",
+      "745 MeV",
+      "7450 MeV"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Total binding energy $= 0.08 \\times 931.5 = 74.5$ MeV, and per nucleon $= 74.5/10 = 7.45$ MeV. 74.5 MeV is the total, not the value per nucleon, and the other two are power-of-ten slips."
+  },
+  {
+    "id": "KCET-T1-025",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "A planet has the same mean density as the Earth but twice its radius. If the Earth's escape speed is 11.2 km/s, what is the planet's?",
+    "options": [
+      "11.2 km/s",
+      "15.8 km/s",
+      "22.4 km/s",
+      "44.8 km/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$v_e = \\sqrt{2GM/R}$ with $M = \\frac{4}{3}\\pi R^3\\rho$ gives $v_e \\propto R\\sqrt{\\rho}$, so twice the radius doubles it to 22.4 km/s. 15.8 km/s takes $v_e \\propto \\sqrt{R}$, and 44.8 km/s squares the radius ratio."
+  },
+  {
+    "id": "KCET-T1-026",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternating current",
+    "stem": "A series LCR circuit has L = 0.2 H and C = 5 µF. At what angular frequency does it resonate?",
+    "options": [
+      "31.6 rad/s",
+      "100 rad/s",
+      "159 rad/s",
+      "1000 rad/s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\omega_0 = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{0.2 \\times 5 \\times 10^{-6}}} = \\frac{1}{10^{-3}} = 1000$ rad/s. 159 rad/s divides by $2\\pi$, which gives the resonant frequency in hertz, not the angular frequency, and 31.6 rad/s takes C as 5 mF."
+  },
+  {
+    "id": "KCET-T1-027",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Waves",
+    "stem": "A string under a tension of 100 N has a mass per unit length of 0.01 kg/m. What is the speed of transverse waves on it?",
+    "options": [
+      "0.01 m/s",
+      "1 m/s",
+      "10 m/s",
+      "100 m/s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$v = \\sqrt{T/\\mu} = \\sqrt{100/0.01} = \\sqrt{10^4} = 100$ m/s. 10 m/s is $\\sqrt{T}$ alone, 1 m/s is $\\sqrt{T\\mu}$, and 0.01 m/s inverts the ratio to $\\sqrt{\\mu/T}$."
+  },
+  {
+    "id": "KCET-T1-028",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semiconductor electronics",
+    "stem": "Which impurity added to silicon makes it an n-type semiconductor?",
+    "options": [
+      "Arsenic",
+      "Boron",
+      "Gallium",
+      "Aluminium"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Arsenic is pentavalent, so each atom gives one extra electron to the crystal. Boron, aluminium and gallium are trivalent and create holes, giving p-type silicon."
+  },
+  {
+    "id": "KCET-T1-029",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Motion in a straight line",
+    "stem": "A stone is thrown straight up at 20 m/s. Taking g = 10 m/s², what total distance does it travel in the first 3 s?",
+    "options": [
+      "5 m",
+      "15 m",
+      "20 m",
+      "25 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "It rises for 2 s to a height of 20 m, then falls for 1 s through 5 m, so the path length is 25 m. 15 m is the displacement after 3 s, not the distance."
+  },
+  {
+    "id": "KCET-T1-030",
+    "section": "phy",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electromagnetic waves",
+    "stem": "Which electromagnetic radiation has the shortest wavelength?",
+    "options": [
+      "Gamma rays",
+      "Ultraviolet rays",
+      "Microwaves",
+      "X-rays"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gamma rays sit at the high-frequency end of the spectrum, below about 10⁻¹² m, so their wavelength is the shortest. X-rays come next, with somewhat longer wavelengths."
+  },
+  {
+    "id": "KCET-T1-031",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Basic principles of organic chemistry",
+    "stem": "What is the hybridisation of the carbon atom in the methyl carbocation, CH₃⁺?",
+    "options": [
+      "sp",
+      "sp²",
+      "sp³",
+      "dsp²"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The carbocation carbon has three bonding pairs and an empty p orbital, so it is sp² and planar. sp³ would need a fourth electron pair, as in the methyl carbanion."
+  },
+  {
+    "id": "KCET-T1-032",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Some basic concepts",
+    "stem": "4 g of NaOH (molar mass 40 g/mol) is dissolved in water to make 250 mL of solution. What is its molarity?",
+    "options": [
+      "0.016 mol/L",
+      "0.04 mol/L",
+      "0.1 mol/L",
+      "0.4 mol/L"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Moles of NaOH = 4/40 = 0.1, and 0.1 mol in 0.25 L gives 0.4 mol/L. 0.1 mol/L forgets to divide by the volume, and 0.016 mol/L divides grams by millilitres."
+  },
+  {
+    "id": "KCET-T1-033",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Structure of atom",
+    "stem": "How many radial nodes does a 3p orbital have?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Radial nodes = n - l - 1 = 3 - 1 - 1 = 1. 2 is the total number of nodes, which also counts the one angular node."
+  },
+  {
+    "id": "KCET-T1-034",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Basic principles of organic chemistry",
+    "stem": "Which carbocation is stabilised most by hyperconjugation?",
+    "options": [
+      "(CH₃)₃C⁺",
+      "CH₃CH₂⁺",
+      "CH₃⁺",
+      "(CH₃)₂CH⁺"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The tert-butyl cation has nine C-H bonds next to the positive carbon that can overlap with its empty p orbital, more than the isopropyl (six) or ethyl (three) cations. CH₃⁺ has none."
+  },
+  {
+    "id": "KCET-T1-035",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Some basic concepts",
+    "stem": "A compound contains 40% carbon, 6.67% hydrogen and 53.3% oxygen by mass. What is its empirical formula?",
+    "options": [
+      "C₂H₃O",
+      "CHO",
+      "CH₃O",
+      "CH₂O"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dividing by atomic masses gives C 3.33, H 6.67, O 3.33 mol, a 1:2:1 ratio, so CH₂O. CHO forgets that hydrogen's mole count is twice carbon's."
+  },
+  {
+    "id": "KCET-T1-036",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Structure of atom",
+    "stem": "Using the Bohr model, what is the energy of the electron in the n = 2 orbit of He⁺?",
+    "options": [
+      "-54.4 eV",
+      "-13.6 eV",
+      "-6.8 eV",
+      "-3.4 eV"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$E_n = -13.6\\frac{Z^2}{n^2}$ eV $= -13.6 \\times \\frac{4}{4} = -13.6$ eV. -3.4 eV leaves out Z² and is the hydrogen value, and -54.4 eV is the n = 1 level of He⁺."
+  },
+  {
+    "id": "KCET-T1-037",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrocarbons",
+    "stem": "HBr adds to propene in the dark without peroxide. The main product is:",
+    "options": [
+      "Propan-2-ol",
+      "2-Bromopropane",
+      "1,2-Dibromopropane",
+      "1-Bromopropane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "By Markovnikov's rule H goes to the CH₂ end and Br to the middle carbon, through the more stable secondary carbocation. 1-Bromopropane forms only with peroxide (anti-Markovnikov addition)."
+  },
+  {
+    "id": "KCET-T1-038",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "For N₂(g) + 3H₂(g) → 2NH₃(g) at 298 K, what is ΔH minus ΔU? (R = 8.314 J/K mol)",
+    "options": [
+      "-4.96 kJ",
+      "-2.48 kJ",
+      "2.48 kJ",
+      "4.96 kJ"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\Delta H - \\Delta U = \\Delta n_g RT$ with $\\Delta n_g = 2 - 4 = -2$, so $-2 \\times 8.314 \\times 298 = -4955$ J, about -4.96 kJ. +4.96 kJ takes Δn as reactants minus products, and ±2.48 kJ uses a Δn of only 1."
+  },
+  {
+    "id": "KCET-T1-039",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrocarbons",
+    "stem": "How many structural isomers does pentane, C₅H₁₂, have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The chain isomers are n-pentane, 2-methylbutane and 2,2-dimethylpropane, so 3. Counting 3-methylbutane as new gives 4, but it is the same molecule as 2-methylbutane."
+  },
+  {
+    "id": "KCET-T1-040",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification of elements",
+    "stem": "Which order of first ionisation enthalpy is correct?",
+    "options": [
+      "O < N < C < B",
+      "C < B < O < N",
+      "B < C < O < N",
+      "B < C < N < O"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ionisation enthalpy rises across period 2, but oxygen is below nitrogen because N has a stable half-filled 2p³ set. Putting O above N misses that exception."
+  },
+  {
+    "id": "KCET-T1-041",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Equilibrium",
+    "stem": "For which gas-phase equilibrium is Kp equal to Kc?",
+    "options": [
+      "N₂ + 3H₂ ⇌ 2NH₃",
+      "2SO₂ + O₂ ⇌ 2SO₃",
+      "H₂ + I₂ ⇌ 2HI",
+      "PCl₅ ⇌ PCl₃ + Cl₂"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$K_p = K_c(RT)^{\\Delta n_g}$, and only for the hydrogen iodide equilibrium is $\\Delta n_g = 2 - 2 = 0$. The PCl₅ dissociation has $\\Delta n_g = +1$, so Kp is larger than Kc there."
+  },
+  {
+    "id": "KCET-T1-042",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Haloalkanes and haloarenes",
+    "stem": "For an SN2 reaction of alkyl halide RX with nucleophile Nu⁻, the rate equals k multiplied by:",
+    "options": [
+      "[RX][Nu⁻]",
+      "[RX] only",
+      "[Nu⁻] only",
+      "[RX]²"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SN2 is one concerted step in which the nucleophile attacks as the halide leaves, so both concentrations appear and the reaction is second order. A rate depending on [RX] only is the SN1 case."
+  },
+  {
+    "id": "KCET-T1-043",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification of elements",
+    "stem": "Which of these isoelectronic ions is the smallest?",
+    "options": [
+      "Mg²⁺",
+      "NH₄⁺",
+      "O²⁻",
+      "Na⁺"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "All have 10 electrons. Mg²⁺, with 12 protons on one nucleus, pulls them in closest; NH₄⁺ spreads its charge over five atoms and is much larger. O²⁻, with only 8 protons, is the largest."
+  },
+  {
+    "id": "KCET-T1-044",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equilibrium",
+    "stem": "What is the pH of a 0.001 M solution of barium hydroxide, Ba(OH)₂, at 25 °C? (log 2 = 0.3)",
+    "options": [
+      "2.7",
+      "10.7",
+      "11",
+      "11.3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each Ba(OH)₂ gives two OH⁻, so $[OH^-] = 0.002$ M and pOH $= 3 - 0.3 = 2.7$, giving pH = 14 - 2.7 = 11.3. 11 forgets the second hydroxide ion, 10.7 subtracts log 2 the wrong way, and 2.7 is the pOH."
+  },
+  {
+    "id": "KCET-T1-045",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Haloalkanes and haloarenes",
+    "stem": "Which alkyl chloride is hydrolysed fastest by the SN1 mechanism?",
+    "options": [
+      "1-Chloro-2-methylpropane",
+      "Chloromethane",
+      "2-Chlorobutane",
+      "2-Chloro-2-methylpropane"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SN1 goes through a carbocation, and 2-chloro-2-methylpropane gives the stable tertiary cation. 1-Chloro-2-methylpropane is a primary halide despite its branched chain, so it would give an unstable primary cation; chloromethane would give the even less stable methyl cation."
+  },
+  {
+    "id": "KCET-T1-046",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alcohols, phenols and ethers",
+    "stem": "Ethanol heated with concentrated H₂SO₄ at 443 K gives mainly:",
+    "options": [
+      "Ethanal",
+      "Ethanoic acid",
+      "Ethene",
+      "Ethoxyethane"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At 443 K the protonated alcohol loses water intramolecularly to give ethene. Ethoxyethane is the main product at the lower temperature of 413 K with excess ethanol. Sulphuric acid here dehydrates, it does not oxidise."
+  },
+  {
+    "id": "KCET-T1-047",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Redox reactions",
+    "stem": "What is the oxidation number of phosphorus in hypophosphorous acid, H₃PO₂?",
+    "options": [
+      "-1",
+      "+1",
+      "+3",
+      "+5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "3(+1) + x + 2(-2) = 0 gives x = +1. +3 is phosphorus in H₃PO₃ and +5 in H₃PO₄."
+  },
+  {
+    "id": "KCET-T1-048",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "What is the shape of the ClF₃ molecule?",
+    "options": [
+      "Pyramidal",
+      "T-shaped",
+      "See-saw",
+      "Trigonal planar"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chlorine has 3 bond pairs and 2 lone pairs, sp³d. The lone pairs sit in equatorial positions, leaving a T shape. Trigonal planar would need no lone pairs."
+  },
+  {
+    "id": "KCET-T1-049",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alcohols, phenols and ethers",
+    "stem": "Which of these is the strongest acid?",
+    "options": [
+      "4-Nitrophenol",
+      "Ethanol",
+      "4-Methylphenol",
+      "Phenol"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The nitro group at the para position withdraws electrons by resonance and induction and spreads the negative charge of the phenoxide ion, so 4-nitrophenol is most acidic. A methyl group releases electrons and makes 4-methylphenol weaker than phenol; ethanol is weaker still."
+  },
+  {
+    "id": "KCET-T1-050",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solutions",
+    "stem": "A non-volatile solute is present at a mole fraction of 0.05. The pure solvent's vapour pressure is 80 kPa. What is the solution's vapour pressure?",
+    "options": [
+      "4 kPa",
+      "40 kPa",
+      "72 kPa",
+      "76 kPa"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "By Raoult's law $p = x_{solvent} p^\\circ = 0.95 \\times 80 = 76$ kPa. 4 kPa is the lowering itself, not the remaining vapour pressure, and 72 kPa subtracts the lowering twice."
+  },
+  {
+    "id": "KCET-T1-051",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "According to molecular orbital theory, what is the bond order of O₂⁺?",
+    "options": [
+      "1.5",
+      "2",
+      "2.5",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "O₂ has bond order 2. Removing one electron from an antibonding π* orbital raises it to (10 - 5)/2 = 2.5. 1.5 is O₂⁻, where an antibonding electron is added."
+  },
+  {
+    "id": "KCET-T1-052",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aldehydes, ketones and acids",
+    "stem": "Which compound undergoes the Cannizzaro reaction with concentrated NaOH?",
+    "options": [
+      "Propanone",
+      "Acetophenone",
+      "Ethanal",
+      "Benzaldehyde"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Cannizzaro reaction needs an aldehyde with no α-hydrogen, and benzaldehyde gives benzyl alcohol and sodium benzoate. Ethanal has α-hydrogens and undergoes aldol condensation instead; the ketones do not disproportionate this way."
+  },
+  {
+    "id": "KCET-T1-053",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Solutions",
+    "stem": "Assuming complete dissociation, what is the van't Hoff factor of K₄[Fe(CN)₆] in water?",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "10"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "It gives 4 K⁺ and one [Fe(CN)₆]⁴⁻ ion, five particles in all. The complex ion stays intact, so counting the cyanide ions separately is wrong, and 4 forgets the complex ion."
+  },
+  {
+    "id": "KCET-T1-054",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Aldehydes, ketones and acids",
+    "stem": "Clemmensen reduction (zinc amalgam and concentrated HCl) converts propanone into:",
+    "options": [
+      "Propanal",
+      "Propane",
+      "Propan-2-ol",
+      "Propene"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clemmensen reduction turns the C=O group into CH₂, so propanone gives propane. Reduction only to the alcohol, propan-2-ol, is what NaBH₄ or LiAlH₄ would give."
+  },
+  {
+    "id": "KCET-T1-055",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "d- and f-block elements",
+    "stem": "What is the spin-only magnetic moment of Fe³⁺ (Z of Fe = 26)?",
+    "options": [
+      "1.73 BM",
+      "3.87 BM",
+      "4.90 BM",
+      "5.92 BM"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Fe³⁺ is 3d⁵ with 5 unpaired electrons, so $\\mu = \\sqrt{n(n+2)} = \\sqrt{35} = 5.92$ BM. 4.90 BM is Fe²⁺, which has 4 unpaired electrons."
+  },
+  {
+    "id": "KCET-T1-056",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrochemistry",
+    "stem": "For the Cu²⁺/Cu electrode, E° = 0.34 V. What is its potential at 298 K when [Cu²⁺] = 0.01 M?",
+    "options": [
+      "0.281 V",
+      "0.311 V",
+      "0.34 V",
+      "0.399 V"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$E = E^\\circ + \\frac{0.059}{2}\\log[Cu^{2+}] = 0.34 + 0.0295 \\times (-2) = 0.281$ V. 0.311 V takes log 0.01 as -1, and 0.399 V gets the sign of the log term wrong."
+  },
+  {
+    "id": "KCET-T1-057",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Amines",
+    "stem": "Which of these amines is the strongest base in aqueous solution?",
+    "options": [
+      "Trimethylamine",
+      "Methylamine",
+      "Dimethylamine",
+      "Aniline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In water basicity depends on both the +I effect of methyl groups and the solvation of the protonated amine, giving the order (CH₃)₂NH > CH₃NH₂ > (CH₃)₃N. Trimethylamine has the most methyl groups but its cation is poorly hydrated. Aniline is weakest because its lone pair is delocalised into the ring."
+  },
+  {
+    "id": "KCET-T1-058",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coordination compounds",
+    "stem": "What is the oxidation state of cobalt in [Co(NH₃)₅Cl]Cl₂?",
+    "options": [
+      "0",
+      "+1",
+      "+2",
+      "+3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Two Cl⁻ outside the bracket give the complex ion a 2+ charge. Ammonia is neutral and the bound chloride is -1, so x - 1 = +2 and x = +3. +2 reads the ion's charge as cobalt's, and 0 treats the whole compound as if the metal were neutral."
+  },
+  {
+    "id": "KCET-T1-059",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemical kinetics",
+    "stem": "What are the units of the rate constant of a second-order reaction?",
+    "options": [
+      "s⁻¹",
+      "mol L⁻¹ s⁻¹",
+      "L mol⁻¹ s⁻¹",
+      "L² mol⁻² s⁻¹"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For rate = k[A]², k = rate/[A]² = (mol L⁻¹ s⁻¹)/(mol L⁻¹)² = L mol⁻¹ s⁻¹. mol L⁻¹ s⁻¹ is the unit of a zero-order constant and s⁻¹ of a first-order one."
+  },
+  {
+    "id": "KCET-T1-060",
+    "section": "chem",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biomolecules",
+    "stem": "Which of these sugars is a non-reducing sugar?",
+    "options": [
+      "Lactose",
+      "Sucrose",
+      "Maltose",
+      "Glucose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In sucrose the glycosidic bond joins C1 of glucose to C2 of fructose, so neither reducing group is free and it does not reduce Fehling's or Tollens' reagent. Maltose and lactose keep one free hemiacetal group."
+  },
+  {
+    "id": "KCET-T1-061",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Limits and derivatives",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{1 - \\cos 4x}{x^2}$?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$1 - \\cos 4x = 2\\sin^2 2x$, and $\\frac{\\sin 2x}{x} \\to 2$, so the limit is $2 \\times 2^2 = 8$. 16 squares the 4 but drops the half in $2\\sin^2$, and 4 forgets to square the 2."
+  },
+  {
+    "id": "KCET-T1-062",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sets",
+    "stem": "If $n(A) = 25$, $n(B) = 18$ and $n(A \\cap B) = 7$, what is $n(A \\cup B)$?",
+    "options": [
+      "29",
+      "36",
+      "43",
+      "50"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 25 + 18 - 7 = 36$. 43 forgets to subtract the common elements, which are counted twice."
+  },
+  {
+    "id": "KCET-T1-063",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometric functions",
+    "stem": "What is the exact value of $\\tan 75°$?",
+    "options": [
+      "$2 - \\sqrt{3}$",
+      "$\\sqrt{3} - 1$",
+      "$\\sqrt{3} + 1$",
+      "$2 + \\sqrt{3}$"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan(45° + 30°) = \\frac{1 + \\frac{1}{\\sqrt{3}}}{1 - \\frac{1}{\\sqrt{3}}} = \\frac{\\sqrt{3} + 1}{\\sqrt{3} - 1} = 2 + \\sqrt{3}$. $2 - \\sqrt{3}$ is $\\tan 15°$, from subtracting the angles."
+  },
+  {
+    "id": "KCET-T1-064",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the variance of the observations 2, 4, 6, 8 and 10?",
+    "options": [
+      "2.83",
+      "8",
+      "10",
+      "40"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 6 and the squared deviations are 16, 4, 0, 4, 16, which add to 40. Variance $= \\frac{40}{5} = 8$. 10 divides by $n - 1$, and 2.83 is the standard deviation $\\sqrt{8}$."
+  },
+  {
+    "id": "KCET-T1-065",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Limits and derivatives",
+    "stem": "If $f(x) = \\frac{x^2 + 1}{x}$, what is $f'(2)$?",
+    "options": [
+      "1/4",
+      "3/4",
+      "5/4",
+      "5/2"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$f(x) = x + \\frac{1}{x}$, so $f'(x) = 1 - \\frac{1}{x^2}$ and $f'(2) = 1 - \\frac{1}{4} = \\frac{3}{4}$. 5/4 adds the $\\frac{1}{x^2}$ term instead of subtracting it, and 5/2 is $f(2)$ itself."
+  },
+  {
+    "id": "KCET-T1-066",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relations and functions",
+    "stem": "Set P has 3 elements and set Q has 2 elements. How many relations are there from P to Q?",
+    "options": [
+      "6",
+      "9",
+      "32",
+      "64"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A relation is any subset of $P \\times Q$, which has $3 \\times 2 = 6$ elements, so there are $2^6 = 64$ relations. 6 counts only the ordered pairs, not the subsets."
+  },
+  {
+    "id": "KCET-T1-067",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Inverse trigonometric functions",
+    "stem": "What is the principal value of $\\cos^{-1}\\left(-\\frac{\\sqrt{3}}{2}\\right)$?",
+    "options": [
+      "$-\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{5\\pi}{6}$",
+      "$\\frac{7\\pi}{6}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The principal range of $\\cos^{-1}$ is $[0, \\pi]$, and $\\cos^{-1}(-x) = \\pi - \\cos^{-1}x$, so the value is $\\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$. $-\\frac{\\pi}{6}$ lies outside that range, and $\\frac{7\\pi}{6}$ also has cosine $-\\frac{\\sqrt{3}}{2}$ but is not principal."
+  },
+  {
+    "id": "KCET-T1-068",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "$f(x) = \\frac{x^2 - 9}{x - 3}$ for $x \\neq 3$ and $f(3) = k$. For which k is f continuous at $x = 3$?",
+    "options": [
+      "-6",
+      "0",
+      "3",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For $x \\neq 3$, $f(x) = x + 3$, so $\\lim_{x \\to 3} f(x) = 6$ and continuity needs $k = 6$. 3 keeps only the $x$ of $x + 3$, 0 comes from putting $x = 3$ into the numerator, and -6 reads the denominator as $3 - x$, which flips the sign."
+  },
+  {
+    "id": "KCET-T1-069",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Two fair dice are thrown. What is the probability that the sum of the numbers is 9?",
+    "options": [
+      "1/36",
+      "1/18",
+      "1/12",
+      "1/9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The sum 9 comes from (3, 6), (4, 5), (5, 4) and (6, 3): 4 of the 36 outcomes, so $\\frac{4}{36} = \\frac{1}{9}$. 1/18 counts unordered pairs, (3, 6) and (4, 5) only, and 1/36 counts a single outcome."
+  },
+  {
+    "id": "KCET-T1-070",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relations and functions",
+    "stem": "The function $f: \\mathbb{R} \\to \\mathbb{R}$ is $f(x) = 2x + 3$. What is $f^{-1}(x)$?",
+    "options": [
+      "$\\frac{x + 3}{2}$",
+      "$2x - 3$",
+      "$\\frac{1}{2x + 3}$",
+      "$\\frac{x - 3}{2}$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Put $y = 2x + 3$ and solve for $x$: $x = \\frac{y - 3}{2}$, so $f^{-1}(x) = \\frac{x - 3}{2}$. $\\frac{1}{2x + 3}$ is the reciprocal of $f$, not its inverse."
+  },
+  {
+    "id": "KCET-T1-071",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "What is $\\frac{d}{dx}\\sin(x^3)$?",
+    "options": [
+      "$3x^2\\cos(x^3)$",
+      "$3x^2\\sin(x^3)$",
+      "$x^3\\cos(3x^2)$",
+      "$\\cos(x^3)$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "By the chain rule, the derivative of $\\sin u$ is $\\cos u \\cdot u'$ with $u = x^3$, $u' = 3x^2$. $\\cos(x^3)$ leaves out the inner derivative."
+  },
+  {
+    "id": "KCET-T1-072",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Straight lines",
+    "stem": "What is the distance between the parallel lines $3x + 4y = 7$ and $6x + 8y + 11 = 0$?",
+    "options": [
+      "3/10",
+      "5/4",
+      "5/2",
+      "18/5"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Halve the second line: $3x + 4y + 5.5 = 0$. With the first as $3x + 4y - 7 = 0$, the distance is $\\frac{|-7 - 5.5|}{\\sqrt{9 + 16}} = \\frac{12.5}{5} = \\frac{5}{2}$. 18/5 uses 11 without halving the equation first."
+  },
+  {
+    "id": "KCET-T1-073",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complex numbers",
+    "stem": "If $z = \\frac{3 + 4i}{1 - i}$, what is $|z|^2$?",
+    "options": [
+      "5/2",
+      "25/2",
+      "49/2",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$|z| = \\frac{|3 + 4i|}{|1 - i|} = \\frac{5}{\\sqrt{2}}$, so $|z|^2 = \\frac{25}{2}$. 25 forgets to divide by $|1 - i|^2 = 2$."
+  },
+  {
+    "id": "KCET-T1-074",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Application of derivatives",
+    "stem": "The side of a square grows at 0.5 cm/s. How fast is its area growing when the side is 8 cm?",
+    "options": [
+      "8 cm²/s",
+      "16 cm²/s",
+      "32 cm²/s",
+      "64 cm²/s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$A = a^2$, so $\\frac{dA}{dt} = 2a\\frac{da}{dt} = 2 \\times 8 \\times 0.5 = 8$ cm²/s. 16 forgets the factor $\\frac{da}{dt} = 0.5$, 32 uses the perimeter $4a$, and 64 is the area itself."
+  },
+  {
+    "id": "KCET-T1-075",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "What is the eccentricity of the ellipse $\\frac{x^2}{16} + \\frac{y^2}{7} = 1$?",
+    "options": [
+      "3/16",
+      "7/16",
+      "9/16",
+      "3/4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$c^2 = a^2 - b^2 = 16 - 7 = 9$, so $c = 3$ and $e = \\frac{c}{a} = \\frac{3}{4}$. 9/16 forgets the square root ($c^2/a^2$), 7/16 is $b^2/a^2$, and 3/16 divides c by $a^2$."
+  },
+  {
+    "id": "KCET-T1-076",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "If $P(A) = 0.6$, $P(B) = 0.5$ and $P(A \\cap B) = 0.2$, what is $P(A \\mid B)$?",
+    "options": [
+      "0.2",
+      "0.3",
+      "1/3",
+      "0.4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{0.2}{0.5} = 0.4$. 1/3 is $P(B \\mid A)$, dividing by $P(A)$ instead, and 0.3 is $P(A)P(B)$."
+  },
+  {
+    "id": "KCET-T1-077",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Application of derivatives",
+    "stem": "What is the minimum value of $x + \\frac{9}{x}$ for $x > 0$?",
+    "options": [
+      "6",
+      "9",
+      "10",
+      "18"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 1 - \\frac{9}{x^2} = 0$ at $x = 3$, and $f''(3) > 0$, so the minimum is $3 + 3 = 6$. 10 is the value at $x = 1$ (or $x = 9$), 9 just reads off the constant in $\\frac{9}{x}$, and 18 wrongly applies AM-GM as $2 \\times 9$."
+  },
+  {
+    "id": "KCET-T1-078",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2 - 5x + 3 = 0$, what is $\\alpha^3 + \\beta^3$?",
+    "options": [
+      "80",
+      "116",
+      "125",
+      "170"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\alpha + \\beta = 5$ and $\\alpha\\beta = 3$. $\\alpha^3 + \\beta^3 = (\\alpha + \\beta)^3 - 3\\alpha\\beta(\\alpha + \\beta) = 125 - 45 = 80$. 116 drops the factor $(\\alpha + \\beta)$ from the second term, and 170 adds it instead of subtracting."
+  },
+  {
+    "id": "KCET-T1-079",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vector algebra",
+    "stem": "What is the angle between the vectors $\\hat{i} + \\hat{j}$ and $\\hat{j} + \\hat{k}$?",
+    "options": [
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{\\pi}{2}$"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The dot product is $0 + 1 + 0 = 1$ and each magnitude is $\\sqrt{2}$, so $\\cos\\theta = \\frac{1}{2}$ and $\\theta = \\frac{\\pi}{3}$. $\\frac{\\pi}{2}$ assumes the vectors are perpendicular because they share only one unit vector."
+  },
+  {
+    "id": "KCET-T1-080",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrals",
+    "stem": "What is $\\int \\frac{\\sec^2 x}{1 + \\tan x}\\,dx$?",
+    "options": [
+      "$\\log|1 + \\tan x| + c$",
+      "$\\frac{1}{1 + \\tan x} + c$",
+      "$\\log|\\sec x| + c$",
+      "$(1 + \\tan x)^2 + c$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Put $t = 1 + \\tan x$, so $dt = \\sec^2 x\\,dx$ and the integral is $\\int \\frac{dt}{t} = \\log|t| + c$. $\\log|\\sec x|$ is the integral of $\\tan x$, a different integrand."
+  },
+  {
+    "id": "KCET-T1-081",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Permutations and combinations",
+    "stem": "In how many ways can the letters of the word MYSURU be arranged?",
+    "options": [
+      "120",
+      "180",
+      "360",
+      "720"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "MYSURU has 6 letters with U repeated twice, so the count is $\\frac{6!}{2!} = 360$. 720 treats the two U's as different."
+  },
+  {
+    "id": "KCET-T1-082",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Linear programming",
+    "stem": "The corner points of a feasible region are (0, 0), (5, 0), (3, 4) and (0, 6). What is the maximum of Z = 4x + 3y?",
+    "options": [
+      "18",
+      "20",
+      "24",
+      "27"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Z takes the values 0, 20, 24 and 18 at the four corners, so the maximum is 24 at (3, 4). 20 at (5, 0) is the largest value on the axes, which is where a quick guess usually stops."
+  },
+  {
+    "id": "KCET-T1-083",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrals",
+    "stem": "What is $\\int_0^1 x e^x\\,dx$?",
+    "options": [
+      "e + 1",
+      "e - 1",
+      "e",
+      "1"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By parts, $\\int x e^x\\,dx = x e^x - e^x$, so the value is $(e - e) - (0 - 1) = 1$. $e - 1$ is $\\int_0^1 e^x\\,dx$, which drops the factor $x$."
+  },
+  {
+    "id": "KCET-T1-084",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Three dimensional geometry",
+    "stem": "What is the cosine of the angle between two lines with direction ratios 1, 2, 2 and 2, -1, 2?",
+    "options": [
+      "4/81",
+      "2/9",
+      "1/3",
+      "4/9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\cos\\theta = \\frac{|1(2) + 2(-1) + 2(2)|}{3 \\times 3} = \\frac{4}{9}$. 4/81 divides by the squares of the magnitudes, and 2/9 halves the dot product."
+  },
+  {
+    "id": "KCET-T1-085",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sequences and series",
+    "stem": "What is the sum of the first 20 terms of the AP 4, 7, 10, ...?",
+    "options": [
+      "650",
+      "680",
+      "710",
+      "1300"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$S_{20} = \\frac{20}{2}[2(4) + 19(3)] = 10 \\times 65 = 650$. 680 uses $20d$ instead of $19d$, 1300 forgets to halve, and 710 starts the AP at 7, the second term."
+  },
+  {
+    "id": "KCET-T1-086",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Application of integrals",
+    "stem": "What is the area enclosed by the parabola $y^2 = 4x$ and the line $x = 1$?",
+    "options": [
+      "4/3",
+      "2",
+      "8/3",
+      "16/3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The region is symmetric about the x-axis: area $= 2\\int_0^1 2\\sqrt{x}\\,dx = 2 \\times \\frac{4}{3} = \\frac{8}{3}$. 4/3 counts only the half above the x-axis, and 16/3 doubles twice."
+  },
+  {
+    "id": "KCET-T1-087",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Bag I has 3 red and 2 black balls; bag II has 2 red and 3 black. A bag is chosen at random and a red ball is drawn. What is the probability it came from bag I?",
+    "options": [
+      "3/10",
+      "2/5",
+      "1/2",
+      "3/5"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "By Bayes' theorem: $\\frac{\\frac{1}{2} \\cdot \\frac{3}{5}}{\\frac{1}{2} \\cdot \\frac{3}{5} + \\frac{1}{2} \\cdot \\frac{2}{5}} = \\frac{3}{5}$. 3/10 is $P(\\text{bag I and red})$, the numerator alone."
+  },
+  {
+    "id": "KCET-T1-088",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Introduction to 3D geometry",
+    "stem": "What is the distance between the points (1, -2, 3) and (4, 2, 3)?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "25"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sqrt{(4 - 1)^2 + (2 + 2)^2 + 0^2} = \\sqrt{9 + 16} = 5$. 25 forgets the square root, 7 adds the differences 3 and 4 directly, and 9 keeps only the first squared difference."
+  },
+  {
+    "id": "KCET-T1-089",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Matrices",
+    "stem": "For $A = \\begin{pmatrix} 2 & 1 \\\\ 0 & 3 \\end{pmatrix}$, what is $A^2 - 5A$?",
+    "options": [
+      "$-6I$",
+      "$-5I$",
+      "$6I$",
+      "$-6A$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$A^2 = \\begin{pmatrix} 4 & 5 \\\\ 0 & 9 \\end{pmatrix}$ and $5A = \\begin{pmatrix} 10 & 5 \\\\ 0 & 15 \\end{pmatrix}$, so $A^2 - 5A = \\begin{pmatrix} -6 & 0 \\\\ 0 & -6 \\end{pmatrix} = -6I$. $6I$ is a sign slip in the subtraction."
+  },
+  {
+    "id": "KCET-T1-090",
+    "section": "math",
+    "test": 1,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Differential equations",
+    "stem": "What are the order and degree of $\\left(\\frac{d^2y}{dx^2}\\right)^3 + \\left(\\frac{dy}{dx}\\right)^4 + y = 0$?",
+    "options": [
+      "order 3, degree 2",
+      "order 4, degree 3",
+      "order 2, degree 4",
+      "order 2, degree 3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The order is that of the highest derivative, $\\frac{d^2y}{dx^2}$, so 2. The degree is the power of that highest derivative, 3. Degree 4 wrongly takes the power of $\\frac{dy}{dx}$."
+  },
+  {
+    "id": "KCET-T2-001",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units and measurements",
+    "stem": "How many significant figures are there in the measurement 0.007020 kg?",
+    "options": [
+      "3",
+      "4",
+      "6",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Leading zeros only fix the decimal point, so the digits 7, 0, 2 and the trailing 0 after the decimal point count: 4. Dropping the trailing zero gives 3."
+  },
+  {
+    "id": "KCET-T2-002",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric charges and fields",
+    "stem": "An infinitely long straight wire carries a uniform charge of 2 µC/m. What is the field 18 cm from it?",
+    "options": [
+      "$2 \\times 10^3$ N/C",
+      "$3.6 \\times 10^4$ N/C",
+      "$1 \\times 10^5$ N/C",
+      "$2 \\times 10^5$ N/C"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r} = \\frac{2k\\lambda}{r} = \\frac{2 \\times 9 \\times 10^9 \\times 2 \\times 10^{-6}}{0.18} = 2 \\times 10^5$ N/C. $1 \\times 10^5$ N/C drops the factor 2, $3.6 \\times 10^4$ N/C forgets to divide by $r$, and $2 \\times 10^3$ N/C leaves $r$ in centimetres."
+  },
+  {
+    "id": "KCET-T2-003",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mechanical properties of solids",
+    "stem": "Wires A and B are of the same material and carry equal loads. A is half as long as B and has twice B's diameter. What is the ratio of their extensions, A to B?",
+    "options": [
+      "8 : 1",
+      "1 : 4",
+      "1 : 2",
+      "1 : 8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Extension is $\\Delta L = \\frac{FL}{AY} \\propto \\frac{L}{d^2}$. For A this is $\\frac{1}{2} \\times \\frac{1}{4} = \\frac{1}{8}$ of B's. 1 : 4 uses the diameter ratio without squaring it."
+  },
+  {
+    "id": "KCET-T2-004",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ray optics",
+    "stem": "A convex lens of focal length 25 cm is in contact with a concave lens of focal length 50 cm. What is the power of the pair?",
+    "options": [
+      "-6 D",
+      "-2 D",
+      "+0.02 D",
+      "+2 D"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Powers add: $P = \\frac{100}{25} - \\frac{100}{50} = 4 - 2 = +2$ D. -6 D treats the convex lens as diverging too, -2 D swaps the signs, and +0.02 D keeps the focal lengths in centimetres."
+  },
+  {
+    "id": "KCET-T2-005",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion in a straight line",
+    "stem": "A particle's position is $x = 6t^2 - t^3$ metres, with t in seconds. At what time after t = 0 is its velocity zero?",
+    "options": [
+      "2 s",
+      "3 s",
+      "4 s",
+      "6 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$v = \\frac{dx}{dt} = 12t - 3t^2 = 3t(4 - t)$, which is zero again at t = 4 s. 6 s is when x returns to zero, and 2 s is when the acceleration $12 - 6t$ is zero."
+  },
+  {
+    "id": "KCET-T2-006",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electrostatic potential and capacitance",
+    "stem": "How much work is needed to move a 3 µC charge from a point at 50 V to a point at 250 V?",
+    "options": [
+      "$6 \\times 10^{-4}$ J",
+      "$7.5 \\times 10^{-4}$ J",
+      "$9 \\times 10^{-4}$ J",
+      "$6 \\times 10^{2}$ J"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$W = q(V_B - V_A) = 3 \\times 10^{-6} \\times 200 = 6 \\times 10^{-4}$ J. $9 \\times 10^{-4}$ J adds the potentials instead of taking the difference, $7.5 \\times 10^{-4}$ J uses only the final potential, and $6 \\times 10^{2}$ J forgets the micro in µC."
+  },
+  {
+    "id": "KCET-T2-007",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mechanical properties of fluids",
+    "stem": "A hydraulic press has pistons of area 10 cm² and 500 cm². A 200 N force acts on the small piston. What load can the large piston lift?",
+    "options": [
+      "0.004 kN",
+      "1 kN",
+      "10 kN",
+      "500 kN"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Pascal's law gives equal pressure on both pistons, so the force grows by the area ratio 50: $200 \\times 50 = 10\\,000$ N, or 10 kN. 500 kN squares the area ratio as if it were a ratio of diameters."
+  },
+  {
+    "id": "KCET-T2-008",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ray optics",
+    "stem": "A coin lies at the bottom of a tank of water 24 cm deep. Seen from directly above, how deep does it appear? (n = 4/3)",
+    "options": [
+      "6 cm",
+      "12 cm",
+      "13.5 cm",
+      "18 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Apparent depth $= \\frac{\\text{real depth}}{n} = \\frac{24}{4/3} = 18$ cm. 13.5 cm divides by $n$ twice, 12 cm halves the depth, and 6 cm is the apparent rise of the coin, not its depth."
+  },
+  {
+    "id": "KCET-T2-009",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion in a plane",
+    "stem": "A ball is thrown horizontally at 15 m/s from the top of a cliff 20 m high. Taking g = 10 m/s², how far from the base does it land?",
+    "options": [
+      "15 m",
+      "20 m",
+      "21.2 m",
+      "30 m"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The fall takes $t = \\sqrt{2h/g} = 2$ s, and the ball moves $15 \\times 2 = 30$ m horizontally. 21.2 m comes from writing $h = gt^2$ without the half, 20 m confuses the range with the height, and 15 m takes the fall time as 1 s."
+  },
+  {
+    "id": "KCET-T2-010",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Current electricity",
+    "stem": "A Wheatstone bridge with arms P = 10 Ω, Q = 15 Ω, R = 8 Ω and an unknown S shows no galvanometer current. Taking the balance condition P/Q = R/S, what is S?",
+    "options": [
+      "12 Ω",
+      "18.75 Ω",
+      "33 Ω",
+      "120 Ω"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "At balance $\\frac{P}{Q} = \\frac{R}{S}$, so $S = \\frac{RQ}{P} = \\frac{8 \\times 15}{10} = 12$ Ω. 18.75 Ω computes $PQ/R$ by mixing up the arms, 33 Ω just adds the three known resistances, and 120 Ω multiplies R by Q without dividing by P."
+  },
+  {
+    "id": "KCET-T2-011",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermal properties of matter",
+    "stem": "How much heat turns 10 g of ice at 0 °C into water at 20 °C? Take latent heat 336 J/g and specific heat 4.2 J/(g K).",
+    "options": [
+      "840 J",
+      "2520 J",
+      "3360 J",
+      "4200 J"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Melting needs 10 × 336 = 3360 J and warming the water needs 10 × 4.2 × 20 = 840 J, a total of 4200 J. 3360 J stops after melting, and 2520 J subtracts the warming instead of adding it."
+  },
+  {
+    "id": "KCET-T2-012",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Wave optics",
+    "stem": "Light of wavelength 600 nm in air enters glass of refractive index 1.5. What is its wavelength in the glass?",
+    "options": [
+      "300 nm",
+      "400 nm",
+      "600 nm",
+      "900 nm"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The frequency stays the same while the speed falls by $n$, so $\\lambda_g = \\frac{600}{1.5} = 400$ nm. 900 nm multiplies by $n$, and 600 nm assumes the wavelength does not change."
+  },
+  {
+    "id": "KCET-T2-013",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "A 4 kg block on a floor with kinetic friction coefficient 0.25 is pulled by a 20 N horizontal force. Taking g = 10 m/s², what is its acceleration?",
+    "options": [
+      "1.25 m/s²",
+      "2.5 m/s²",
+      "5 m/s²",
+      "7.5 m/s²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Friction is μmg = 0.25 × 40 = 10 N, so the net force is 10 N and a = 10/4 = 2.5 m/s². 5 m/s² ignores friction, and 7.5 m/s² adds friction to the pull."
+  },
+  {
+    "id": "KCET-T2-014",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Moving charges and magnetism",
+    "stem": "A circular coil of 50 turns and radius 10 cm carries 2 A. What is the magnetic field at its centre?",
+    "options": [
+      "$1.26 \\times 10^{-5}$ T",
+      "$3.14 \\times 10^{-4}$ T",
+      "$6.28 \\times 10^{-4}$ T",
+      "$1.26 \\times 10^{-3}$ T"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$B = \\frac{\\mu_0 NI}{2r} = \\frac{4\\pi \\times 10^{-7} \\times 50 \\times 2}{0.2} = 6.28 \\times 10^{-4}$ T. $1.26 \\times 10^{-3}$ T drops the 2 in the denominator, and $3.14 \\times 10^{-4}$ T uses the diameter for the radius."
+  },
+  {
+    "id": "KCET-T2-015",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "A gas expands at a constant pressure of 2 × 10⁵ Pa from 1 litre to 3 litres. How much work does it do?",
+    "options": [
+      "4 J",
+      "200 J",
+      "400 J",
+      "600 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$W = P\\Delta V = 2 \\times 10^5 \\times 2 \\times 10^{-3} = 400$ J. 600 J uses the final volume instead of the change, and 4 J slips the litre conversion."
+  },
+  {
+    "id": "KCET-T2-016",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dual nature of radiation and matter",
+    "stem": "An electron is accelerated from rest through 100 V. What is its de Broglie wavelength?",
+    "options": [
+      "0.123 nm",
+      "0.388 nm",
+      "1.23 nm",
+      "12.3 nm"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For an electron $\\lambda = \\frac{1.227}{\\sqrt{V}}$ nm $= \\frac{1.227}{10} = 0.123$ nm. 0.388 nm puts 10 V in place of 100 V, and the other two are power-of-ten slips."
+  },
+  {
+    "id": "KCET-T2-017",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Work, energy and power",
+    "stem": "A ball moving at 6 m/s hits an identical ball at rest head-on in a perfectly elastic collision. What is the first ball's speed just afterwards?",
+    "options": [
+      "0 m/s",
+      "2 m/s",
+      "3 m/s",
+      "6 m/s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "In a head-on elastic collision of equal masses the velocities are exchanged, so the first ball stops and the second moves off at 6 m/s. 3 m/s each would conserve momentum but lose kinetic energy, which only happens in an inelastic collision."
+  },
+  {
+    "id": "KCET-T2-018",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Magnetism and matter",
+    "stem": "A bar magnet of moment 2 A m² makes 60° with a uniform 0.3 T field. What is its potential energy?",
+    "options": [
+      "-0.3 J",
+      "0.3 J",
+      "0.52 J",
+      "0.6 J"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$U = -mB\\cos\\theta = -2 \\times 0.3 \\times 0.5 = -0.3$ J. +0.3 J drops the minus sign, 0.52 J also uses $\\sin 60°$ (that belongs to the torque), and 0.6 J is just $mB$."
+  },
+  {
+    "id": "KCET-T2-019",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "What is the ratio of the rms speed of oxygen molecules to that of hydrogen molecules at the same temperature?",
+    "options": [
+      "1 : 2",
+      "4 : 1",
+      "1 : 4",
+      "1 : 16"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$v_{rms} = \\sqrt{3RT/M}$, so the ratio is $\\sqrt{M_{H_2}/M_{O_2}} = \\sqrt{2/32} = 1/4$. 1 : 16 forgets the square root, and 4 : 1 inverts the ratio."
+  },
+  {
+    "id": "KCET-T2-020",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atoms",
+    "stem": "How much energy is needed to ionise a hydrogen atom that is in its first excited state?",
+    "options": [
+      "3.4 eV",
+      "6.8 eV",
+      "10.2 eV",
+      "13.6 eV"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The first excited state is $n = 2$, with $E_2 = -\\frac{13.6}{4} = -3.4$ eV, so 3.4 eV frees the electron. 13.6 eV is for the ground state, 6.8 eV divides by $n$ instead of $n^2$, and 10.2 eV is the energy to excite it from $n = 1$ to $n = 2$."
+  },
+  {
+    "id": "KCET-T2-021",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rotational motion",
+    "stem": "A disc with moment of inertia 0.6 kg m² turns freely at 30 rad/s. A ring of moment of inertia 0.3 kg m² is placed on it coaxially and they turn together. What is their common angular speed?",
+    "options": [
+      "20 rad/s",
+      "30 rad/s",
+      "45 rad/s",
+      "60 rad/s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "No external torque acts, so angular momentum is conserved: $0.6 \\times 30 = 0.9\\,\\omega$, giving $\\omega = 20$ rad/s. 45 rad/s inverts the ratio of moments of inertia, 60 rad/s uses the ratio 0.6/0.3, and 30 rad/s ignores the added ring."
+  },
+  {
+    "id": "KCET-T2-022",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electromagnetic induction",
+    "stem": "The current in a 0.3 H inductor falls steadily from 5 A to 1 A in 0.1 s. What emf is induced in it?",
+    "options": [
+      "1.2 V",
+      "3 V",
+      "12 V",
+      "18 V"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\varepsilon = L\\frac{\\Delta I}{\\Delta t} = 0.3 \\times \\frac{4}{0.1} = 12$ V. 1.2 V forgets to divide by the time, and 18 V uses the sum of the currents instead of their change."
+  },
+  {
+    "id": "KCET-T2-023",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oscillations",
+    "stem": "A particle in SHM has amplitude 4 cm and angular frequency 5 rad/s. What is its speed when it is 2 cm from the mean position?",
+    "options": [
+      "10.0 cm/s",
+      "17.3 cm/s",
+      "20.0 cm/s",
+      "50.0 cm/s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$v = \\omega\\sqrt{A^2 - x^2} = 5\\sqrt{16 - 4} = 5\\sqrt{12} = 17.3$ cm/s. 20.0 cm/s is the maximum speed at the mean position, and 10.0 cm/s is $\\omega x$."
+  },
+  {
+    "id": "KCET-T2-024",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nuclei",
+    "stem": "What is the ratio of the radius of a nucleus of mass number 64 to that of a nucleus of mass number 8?",
+    "options": [
+      "2",
+      "2.83",
+      "4",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$R = R_0A^{1/3}$, so the ratio is $(64/8)^{1/3} = 8^{1/3} = 2$. 8 is the ratio of the mass numbers (and of the volumes), 4 is the ratio of the surface areas, and 2.83 takes a square root in place of a cube root."
+  },
+  {
+    "id": "KCET-T2-025",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rotational motion",
+    "stem": "A 2 kg particle sits at x = 0 and a 3 kg particle at x = 5 m. Where is their centre of mass?",
+    "options": [
+      "x = 3.5 m",
+      "x = 2 m",
+      "x = 2.5 m",
+      "x = 3 m"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "$x_{cm} = \\frac{2 \\times 0 + 3 \\times 5}{5} = 3$ m, nearer the heavier particle. x = 2.5 m is the midpoint, which treats the masses as equal, and x = 2 m weights the positions the wrong way round."
+  },
+  {
+    "id": "KCET-T2-026",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternating current",
+    "stem": "A series circuit with R = 30 Ω and inductive reactance 40 Ω is connected to a 200 V rms supply. What is the rms current?",
+    "options": [
+      "4 A",
+      "5 A",
+      "6.67 A",
+      "20 A"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$Z = \\sqrt{R^2 + X_L^2} = \\sqrt{900 + 1600} = 50$ Ω, so $I = \\frac{200}{50} = 4$ A. 20 A subtracts R from $X_L$ (10 Ω), 6.67 A ignores the reactance, and 5 A ignores the resistance."
+  },
+  {
+    "id": "KCET-T2-027",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Waves",
+    "stem": "A pipe 0.5 m long is closed at one end. Taking the speed of sound as 340 m/s, what is its fundamental frequency?",
+    "options": [
+      "170 Hz",
+      "340 Hz",
+      "510 Hz",
+      "680 Hz"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "A pipe closed at one end has a quarter wavelength in its length, so $f = \\frac{v}{4L} = \\frac{340}{2} = 170$ Hz. 340 Hz is the fundamental of an open pipe of the same length, 510 Hz is the closed pipe's first overtone, and 680 Hz is v/L."
+  },
+  {
+    "id": "KCET-T2-028",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semiconductor electronics",
+    "stem": "When a p-n junction is forward biased, its depletion layer:",
+    "options": [
+      "Becomes narrower",
+      "Stays the same width",
+      "Becomes wider",
+      "Fills with holes only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Forward bias pushes majority carriers toward the junction and lowers the barrier, so the depletion layer narrows. It widens under reverse bias."
+  },
+  {
+    "id": "KCET-T2-029",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "A satellite orbiting just above the Earth's surface moves at 7.9 km/s. What is the orbital speed of one at a height equal to the Earth's radius?",
+    "options": [
+      "1.98 km/s",
+      "2.79 km/s",
+      "3.95 km/s",
+      "5.6 km/s"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$v_o = \\sqrt{GM/r} \\propto 1/\\sqrt{r}$, and doubling the orbit radius divides the speed by $\\sqrt{2}$: $7.9/1.414 = 5.6$ km/s. 3.95 km/s halves it as if $v \\propto 1/r$, 1.98 km/s takes $v \\propto 1/r^2$, and 2.79 km/s takes $v \\propto r^{-3/2}$, mixing in Kepler's law for the period."
+  },
+  {
+    "id": "KCET-T2-030",
+    "section": "phy",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electromagnetic waves",
+    "stem": "Which part of the electromagnetic spectrum is used in radar systems?",
+    "options": [
+      "X-rays",
+      "Gamma rays",
+      "Infrared waves",
+      "Microwaves"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Radar uses microwaves, whose short wavelengths suit narrow beams and reflection from aircraft. Infrared waves are used for heating, remote controls and night vision instead."
+  },
+  {
+    "id": "KCET-T2-031",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Basic principles of organic chemistry",
+    "stem": "In the Lassaigne test, nitrogen in an organic compound is shown by a colour of:",
+    "options": [
+      "Blood red",
+      "Violet",
+      "Black precipitate",
+      "Prussian blue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sodium fusion extract contains NaCN, which with FeSO₄ and acid gives Prussian blue ferric ferrocyanide. Blood red means nitrogen and sulphur together (thiocyanate); violet with sodium nitroprusside and a black lead sulphide precipitate show sulphur."
+  },
+  {
+    "id": "KCET-T2-032",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Some basic concepts",
+    "stem": "2 mol of H₂ react with 2 mol of O₂ to form water. How many moles of water form?",
+    "options": [
+      "1 mol",
+      "2 mol",
+      "3 mol",
+      "4 mol"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "2H₂ + O₂ → 2H₂O. The 2 mol of H₂ need only 1 mol of O₂, so H₂ is limiting and gives 2 mol of water. 4 mol assumes O₂ is limiting."
+  },
+  {
+    "id": "KCET-T2-033",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Structure of atom",
+    "stem": "How many orbitals are there in the shell with principal quantum number n = 4?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The number of orbitals in a shell is n² = 16. 32 is 2n², the maximum number of electrons in that shell."
+  },
+  {
+    "id": "KCET-T2-034",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Basic principles of organic chemistry",
+    "stem": "What is the IUPAC name of CH₃CH(CH₃)CH₂CH₃?",
+    "options": [
+      "2-Methylbutane",
+      "3-Methylbutane",
+      "2-Methylpentane",
+      "2-Ethylpropane"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The longest chain has four carbons with a methyl on carbon 2, numbered from the end nearer the branch. 3-Methylbutane numbers from the wrong end, and 2-ethylpropane misses the longest chain."
+  },
+  {
+    "id": "KCET-T2-035",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Some basic concepts",
+    "stem": "What mass of oxygen atoms is present in 0.5 mol of carbon dioxide? (O = 16)",
+    "options": [
+      "8 g",
+      "16 g",
+      "22 g",
+      "32 g"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "0.5 mol of CO₂ contains 1 mol of oxygen atoms, which is 16 g. 8 g counts one oxygen per molecule, and 22 g is the mass of the whole CO₂."
+  },
+  {
+    "id": "KCET-T2-036",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification of elements",
+    "stem": "Which element has the most negative electron gain enthalpy?",
+    "options": [
+      "Fluorine",
+      "Oxygen",
+      "Bromine",
+      "Chlorine"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fluorine is so small that an added electron is strongly repelled by its compact 2p electrons, so chlorine releases more energy. Fluorine is the tempting answer from the trend alone."
+  },
+  {
+    "id": "KCET-T2-037",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hydrocarbons",
+    "stem": "But-2-ene is treated with ozone and then with zinc and water. The product is:",
+    "options": [
+      "Methanal and propanal",
+      "Ethanal and methanal",
+      "Ethanal only",
+      "Propanone only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ozonolysis splits the C=C bond and puts an oxygen on each carbon. CH₃CH=CHCH₃ is symmetric, so both halves become CH₃CHO and the only product is ethanal. Methanal and propanal would come from but-1-ene."
+  },
+  {
+    "id": "KCET-T2-038",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "Bond enthalpies: H-H 436, Cl-Cl 242 and H-Cl 431 kJ/mol. What is ΔH for H₂ + Cl₂ → 2HCl?",
+    "options": [
+      "-184 kJ",
+      "-92 kJ",
+      "+184 kJ",
+      "+247 kJ"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "ΔH = bonds broken minus bonds formed = (436 + 242) - 2(431) = -184 kJ. +247 kJ counts only one H-Cl bond formed, and -92 kJ is the value per mole of HCl."
+  },
+  {
+    "id": "KCET-T2-039",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hydrocarbons",
+    "stem": "Which compound is aromatic by Hückel's rule?",
+    "options": [
+      "Benzene",
+      "Cyclooctatetraene",
+      "Cyclohexene",
+      "Cyclobutadiene"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Benzene is planar, cyclic and fully conjugated with six π electrons, which fits 4n + 2 with n = 1. Cyclobutadiene and cyclooctatetraene have 4 and 8 π electrons, and cyclohexene is not fully conjugated."
+  },
+  {
+    "id": "KCET-T2-040",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification of elements",
+    "stem": "Which of these oxides is amphoteric?",
+    "options": [
+      "MgO",
+      "Cl₂O₇",
+      "Al₂O₃",
+      "Na₂O"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aluminium oxide reacts with both acids and bases. Na₂O and MgO are basic, and Cl₂O₇ is strongly acidic."
+  },
+  {
+    "id": "KCET-T2-041",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "1 mol of an ideal gas expands isothermally and reversibly at 300 K from 10 L to 100 L. What is the work done on the gas? (R = 8.314 J/K mol)",
+    "options": [
+      "-11.5 kJ",
+      "-5.74 kJ",
+      "-2.49 kJ",
+      "5.74 kJ"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$w = -2.303\\,nRT\\log\\frac{V_2}{V_1} = -2.303 \\times 8.314 \\times 300 \\times 1 = -5744$ J. -2.49 kJ drops the 2.303 that converts log to ln, and +5.74 kJ is the work done by the gas."
+  },
+  {
+    "id": "KCET-T2-042",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Haloalkanes and haloarenes",
+    "stem": "Chlorobenzene resists nucleophilic substitution far more than chloromethane mainly because its C-Cl bond:",
+    "options": [
+      "Involves an sp³ hybrid carbon",
+      "Has partial double bond character",
+      "Is more polar than in alkyl halides",
+      "Is longer than in chloromethane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The chlorine lone pair is in resonance with the ring, giving the C-Cl bond partial double bond character, so it is shorter and stronger. The carbon is sp² hybridised, and the bond is actually shorter and less polar than in chloromethane."
+  },
+  {
+    "id": "KCET-T2-043",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "What is the hybridisation of phosphorus in PCl₅?",
+    "options": [
+      "sp³d",
+      "sp³",
+      "sp³d²",
+      "dsp²"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Five bond pairs and no lone pair need five hybrid orbitals, sp³d, giving a trigonal bipyramid. sp³d² gives six orbitals, as in SF₆."
+  },
+  {
+    "id": "KCET-T2-044",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Equilibrium",
+    "stem": "For N₂O₄(g) ⇌ 2NO₂(g), what happens when the pressure is increased at constant temperature?",
+    "options": [
+      "More N₂O₄ forms",
+      "Nothing changes",
+      "More NO₂ forms",
+      "K rises sharply"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Higher pressure favours the side with fewer gas moles, here N₂O₄ (1 mol against 2). K depends only on temperature, so it does not change."
+  },
+  {
+    "id": "KCET-T2-045",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Haloalkanes and haloarenes",
+    "stem": "How many chiral carbon atoms does 2,3-dichlorobutane, CH₃CHClCHClCH₃, contain?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Carbons 2 and 3 each carry H, Cl, CH₃ and the rest of the chain, four different groups, so there are 2 chiral centres. The molecule also has a meso form, but that does not change the count of chiral carbons."
+  },
+  {
+    "id": "KCET-T2-046",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alcohols, phenols and ethers",
+    "stem": "Phenol is warmed with chloroform and NaOH, then acidified (Reimer-Tiemann reaction). The main product is:",
+    "options": [
+      "Benzaldehyde",
+      "Salicylaldehyde",
+      "Salicylic acid",
+      "Phenyl methanoate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dichlorocarbene attacks the ortho position of the phenoxide ion, and hydrolysis gives a CHO group, so the product is 2-hydroxybenzaldehyde (salicylaldehyde). Salicylic acid comes from the Kolbe reaction with CO₂."
+  },
+  {
+    "id": "KCET-T2-047",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equilibrium",
+    "stem": "A buffer has acetic acid (pKa = 4.74) and sodium acetate in which the salt concentration is ten times the acid's. What is its pH?",
+    "options": [
+      "3.74",
+      "4.74",
+      "5.74",
+      "6.74"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Henderson equation: pH = pKa + log([salt]/[acid]) = 4.74 + log 10 = 5.74. 3.74 inverts the ratio, putting acid over salt."
+  },
+  {
+    "id": "KCET-T2-048",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "Which of these molecules has zero dipole moment?",
+    "options": [
+      "H₂O",
+      "BF₃",
+      "NF₃",
+      "NH₃"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BF₃ is trigonal planar, so its three B-F bond dipoles cancel. NH₃ and NF₃ are pyramidal with a lone pair, so their dipoles do not cancel."
+  },
+  {
+    "id": "KCET-T2-049",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alcohols, phenols and ethers",
+    "stem": "Anisole (methoxybenzene) is heated with HI. The products are:",
+    "options": [
+      "Phenol and iodomethane",
+      "Iodobenzene and methanol",
+      "Phenol and methane",
+      "Benzene and methanol"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Iodide attacks the methyl carbon of the protonated ether, because the O-C bond to the ring has partial double bond character and the phenyl carbon resists attack. So phenol and iodomethane form, not iodobenzene."
+  },
+  {
+    "id": "KCET-T2-050",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Redox reactions",
+    "stem": "In the reaction 2Cu⁺ → Cu²⁺ + Cu, the copper(I) ion is:",
+    "options": [
+      "Neither oxidised nor reduced",
+      "Both oxidised and reduced",
+      "Only oxidised",
+      "Only reduced"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "One Cu⁺ goes to +2 (oxidation) and the other to 0 (reduction), so this is disproportionation. Saying only oxidised ignores the copper metal formed."
+  },
+  {
+    "id": "KCET-T2-051",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "d- and f-block elements",
+    "stem": "Because of the lanthanoid contraction, which pair of elements has almost identical atomic radii?",
+    "options": [
+      "Ti and Zr",
+      "Sc and Y",
+      "Zr and Hf",
+      "Cr and Mo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The lanthanoids, placed between Zr's period and Hf's, shrink the radius of Hf until it matches Zr (about 160 pm). Ti and Zr differ, because no lanthanoids sit between periods 4 and 5."
+  },
+  {
+    "id": "KCET-T2-052",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aldehydes, ketones and acids",
+    "stem": "Which of these carboxylic acids has the lowest pKa?",
+    "options": [
+      "Trichloroethanoic acid",
+      "2,2-Dimethylpropanoic acid",
+      "Chloroethanoic acid",
+      "Dichloroethanoic acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each chlorine withdraws electrons and stabilises the carboxylate ion, so three chlorines make the strongest acid. Alkyl groups release electrons, so 2,2-dimethylpropanoic acid is weaker even than ethanoic acid."
+  },
+  {
+    "id": "KCET-T2-053",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solutions",
+    "stem": "NaCl is dissolved at 0.1 mol/kg in water and dissociates fully. By how much does the freezing point fall? (Kf = 1.86 K kg/mol)",
+    "options": [
+      "0.372 K",
+      "0.744 K",
+      "1.86 K",
+      "3.72 K"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\Delta T_f = iK_f m = 2 \\times 1.86 \\times 0.1 = 0.372$ K. 0.744 K counts i as 4, and 3.72 K leaves out the molality of 0.1 mol/kg."
+  },
+  {
+    "id": "KCET-T2-054",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aldehydes, ketones and acids",
+    "stem": "Which aldehyde undergoes aldol condensation in dilute NaOH?",
+    "options": [
+      "Ethanal",
+      "Methanal",
+      "Benzaldehyde",
+      "2,2-Dimethylpropanal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aldol condensation needs an α-hydrogen to form the enolate, and ethanal has three. Methanal, benzaldehyde and 2,2-dimethylpropanal have no α-hydrogen and give the Cannizzaro reaction instead."
+  },
+  {
+    "id": "KCET-T2-055",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coordination compounds",
+    "stem": "How many geometrical isomers does square planar [Pt(NH₃)₂Cl₂] have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "In a square plane the two chlorides can be next to each other (cis) or opposite (trans): two isomers. A tetrahedral MA₂B₂ complex would have only 1."
+  },
+  {
+    "id": "KCET-T2-056",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrochemistry",
+    "stem": "A 0.05 M electrolyte solution has a conductivity of 6.0 × 10⁻³ S/cm. What is its molar conductivity?",
+    "options": [
+      "0.12 S cm²/mol",
+      "1.2 S cm²/mol",
+      "12 S cm²/mol",
+      "120 S cm²/mol"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\Lambda_m = \\frac{\\kappa \\times 1000}{c} = \\frac{6.0 \\times 10^{-3} \\times 1000}{0.05} = 120$ S cm²/mol. 0.12 S cm²/mol leaves out the factor of 1000 that converts litres to cubic centimetres."
+  },
+  {
+    "id": "KCET-T2-057",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amines",
+    "stem": "Hofmann bromamide degradation of ethanamide, CH₃CONH₂, with Br₂ and NaOH gives:",
+    "options": [
+      "Methanamine",
+      "Ethanenitrile",
+      "Ethanamine",
+      "Ethanoic acid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The reaction removes the carbonyl carbon as carbonate, so the amine has one carbon fewer than the amide: CH₃NH₂, methanamine. Ethanamine would keep both carbons, which is what LiAlH₄ reduction of the amide gives."
+  },
+  {
+    "id": "KCET-T2-058",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coordination compounds",
+    "stem": "How many unpaired electrons are there in [Fe(CN)₆]⁴⁻?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Iron is Fe²⁺, 3d⁶. Cyanide is a strong field ligand, so all six electrons pair in the t₂g set, leaving none unpaired. 4 is the high-spin count with a weak field ligand."
+  },
+  {
+    "id": "KCET-T2-059",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chemical kinetics",
+    "stem": "The rate of a reaction doubles when the temperature rises from 300 K to 310 K. What is its activation energy? (R = 8.314 J/K mol, log 2 = 0.301)",
+    "options": [
+      "0.536 kJ/mol",
+      "5.36 kJ/mol",
+      "23.3 kJ/mol",
+      "53.6 kJ/mol"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\log 2 = \\frac{E_a}{2.303R}\\left(\\frac{T_2 - T_1}{T_1 T_2}\\right)$, so $E_a = 2.303 \\times 8.314 \\times 0.301 \\times \\frac{300 \\times 310}{10} = 53.6$ kJ/mol. 23.3 kJ/mol leaves out the 2.303."
+  },
+  {
+    "id": "KCET-T2-060",
+    "section": "chem",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Biomolecules",
+    "stem": "Which nitrogenous base occurs in RNA but not in DNA?",
+    "options": [
+      "Uracil",
+      "Thymine",
+      "Adenine",
+      "Cytosine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "RNA has uracil where DNA has thymine. Adenine, guanine and cytosine occur in both."
+  },
+  {
+    "id": "KCET-T2-061",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Limits and derivatives",
+    "stem": "What is $\\lim_{x \\to 2} \\frac{x^4 - 16}{x - 2}$?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\lim_{x \\to a} \\frac{x^n - a^n}{x - a} = na^{n - 1} = 4 \\times 2^3 = 32$. 16 is $a^n$ itself, 8 is $a^{n-1}$ without the $n$, and 4 is $n$ alone."
+  },
+  {
+    "id": "KCET-T2-062",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sets",
+    "stem": "How many subsets does a set with 5 elements have?",
+    "options": [
+      "10",
+      "25",
+      "31",
+      "32"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A set with $n$ elements has $2^n$ subsets, here $2^5 = 32$. 31 counts only the proper subsets, leaving out the set itself."
+  },
+  {
+    "id": "KCET-T2-063",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trigonometric functions",
+    "stem": "If $\\sin x = \\frac{3}{5}$ and x lies in the second quadrant, what is $\\tan x$?",
+    "options": [
+      "-4/3",
+      "-5/4",
+      "-4/5",
+      "-3/4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\cos x = -\\frac{4}{5}$ in the second quadrant, so $\\tan x = \\frac{3/5}{-4/5} = -\\frac{3}{4}$. $-\\frac{4}{3}$ is $\\cot x$, $-\\frac{5}{4}$ is $\\sec x$, and $-\\frac{4}{5}$ is $\\cos x$."
+  },
+  {
+    "id": "KCET-T2-064",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the mean deviation about the mean of 3, 7, 8, 10 and 12?",
+    "options": [
+      "0",
+      "2.4",
+      "9.2",
+      "12"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The mean is 8 and the absolute deviations are 5, 1, 0, 2, 4, which add to 12. Mean deviation $= \\frac{12}{5} = 2.4$. 0 is the sum of the signed deviations, which always cancel, and 12 forgets to divide by 5. 9.2 averages the squared deviations, which gives the variance."
+  },
+  {
+    "id": "KCET-T2-065",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Limits and derivatives",
+    "stem": "If $f(x) = x^2\\cos x$, what is $f'(\\pi)$?",
+    "options": [
+      "$-\\pi^2$",
+      "$-2\\pi$",
+      "$2\\pi$",
+      "$\\pi^2$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "By the product rule, $f'(x) = 2x\\cos x - x^2\\sin x$. At $x = \\pi$, $\\cos\\pi = -1$ and $\\sin\\pi = 0$, so $f'(\\pi) = -2\\pi$. $2\\pi$ takes $\\cos\\pi$ as $+1$."
+  },
+  {
+    "id": "KCET-T2-066",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Relations and functions",
+    "stem": "On the set $\\{1, 2, 3\\}$, the relation $R = \\{(1, 1), (2, 2), (3, 3), (1, 2)\\}$ is:",
+    "options": [
+      "Symmetric and transitive only",
+      "Reflexive and transitive only",
+      "Reflexive and symmetric only",
+      "An equivalence relation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every (a, a) is in R, so it is reflexive. (1, 2) is in R but (2, 1) is not, so it is not symmetric and not an equivalence relation. Every chain such as (1, 1), (1, 2) gives a pair already in R, so it is transitive."
+  },
+  {
+    "id": "KCET-T2-067",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inverse trigonometric functions",
+    "stem": "What is $\\tan^{-1}\\frac{1}{4} + \\tan^{-1}\\frac{3}{5}$?",
+    "options": [
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{\\pi}{4}$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{3\\pi}{4}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{\\frac{1}{4} + \\frac{3}{5}}{1 - \\frac{3}{20}} = \\frac{17/20}{17/20} = 1$, and the product $\\frac{3}{20} < 1$, so the sum is $\\tan^{-1}1 = \\frac{\\pi}{4}$. $\\frac{3\\pi}{4}$ would apply only if the product exceeded 1; both angles here are below $\\frac{\\pi}{4}$, so their sum is below $\\frac{\\pi}{2}$."
+  },
+  {
+    "id": "KCET-T2-068",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "$f(x) = kx + 1$ for $x \\le 2$ and $f(x) = 3x - 1$ for $x > 2$. For which k is f continuous at $x = 2$?",
+    "options": [
+      "2",
+      "5/2",
+      "3",
+      "5"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The left value is $2k + 1$ and the right limit is $3(2) - 1 = 5$. Setting $2k + 1 = 5$ gives $k = 2$. 5/2 solves $2k = 5$ and forgets the $+1$, 3 just copies the slope of the right piece, and 5 is the common value at $x = 2$, not k."
+  },
+  {
+    "id": "KCET-T2-069",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "One card is drawn from a well shuffled pack of 52. What is the probability that it is a king or a heart?",
+    "options": [
+      "1/52",
+      "1/4",
+      "4/13",
+      "17/52"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(K \\cup H) = \\frac{4}{52} + \\frac{13}{52} - \\frac{1}{52} = \\frac{16}{52} = \\frac{4}{13}$. 17/52 counts the king of hearts twice."
+  },
+  {
+    "id": "KCET-T2-070",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Linear inequalities",
+    "stem": "How many integers $x$ satisfy $2 \\le 3x - 4 < 11$?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Add 4: $6 \\le 3x < 15$, so $2 \\le x < 5$. The integers are 2, 3 and 4. 4 wrongly includes $x = 5$, where $3x - 4 = 11$ fails the strict inequality."
+  },
+  {
+    "id": "KCET-T2-071",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "For $0 < x < \\frac{1}{\\sqrt{2}}$, what is $\\frac{d}{dx}\\sin^{-1}\\left(2x\\sqrt{1 - x^2}\\right)$?",
+    "options": [
+      "$\\frac{2}{\\sqrt{1 - x^2}}$",
+      "$\\frac{2}{1 + x^2}$",
+      "$\\frac{1}{\\sqrt{1 - x^2}}$",
+      "$\\frac{-2}{\\sqrt{1 - x^2}}$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Put $x = \\sin\\theta$ with $0 < \\theta < \\frac{\\pi}{4}$: $2x\\sqrt{1 - x^2} = \\sin 2\\theta$, so the function is $2\\theta = 2\\sin^{-1}x$, with derivative $\\frac{2}{\\sqrt{1 - x^2}}$. $\\frac{2}{1 + x^2}$ is the derivative of $2\\tan^{-1}x$."
+  },
+  {
+    "id": "KCET-T2-072",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Straight lines",
+    "stem": "Which line passes through (2, -1) and is perpendicular to 3x - 4y + 5 = 0?",
+    "options": [
+      "4x + 3y = 5",
+      "4x - 3y = 11",
+      "3x + 4y = 2",
+      "3x - 4y = 10"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The given line has slope $\\frac{3}{4}$, so a perpendicular has slope $-\\frac{4}{3}$, the form $4x + 3y = k$. At (2, -1), $k = 8 - 3 = 5$. 3x - 4y = 10 passes through the point but is parallel to the given line."
+  },
+  {
+    "id": "KCET-T2-073",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Complex numbers",
+    "stem": "What is the conjugate of $\\frac{1}{2 + i}$?",
+    "options": [
+      "$\\frac{2 + i}{5}$",
+      "$\\frac{2 + i}{3}$",
+      "$\\frac{2 - i}{5}$",
+      "$2 - i$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "$\\frac{1}{2 + i} = \\frac{2 - i}{(2 + i)(2 - i)} = \\frac{2 - i}{5}$, whose conjugate is $\\frac{2 + i}{5}$. $\\frac{2 - i}{5}$ is the number itself, and 3 in the denominator comes from $4 - 1$ instead of $4 + 1$."
+  },
+  {
+    "id": "KCET-T2-074",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Application of derivatives",
+    "stem": "The volume of a cube grows at 9 cm³/s. How fast is its surface area growing when the edge is 10 cm?",
+    "options": [
+      "0.36 cm²/s",
+      "1.8 cm²/s",
+      "3.6 cm²/s",
+      "7.2 cm²/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{dV}{dt} = 3a^2\\frac{da}{dt}$, so $\\frac{da}{dt} = \\frac{9}{300} = 0.03$ cm/s. Then $\\frac{dS}{dt} = 12a\\frac{da}{dt} = 12 \\times 10 \\times 0.03 = 3.6$ cm²/s. 1.8 uses $6a$ in place of $12a$."
+  },
+  {
+    "id": "KCET-T2-075",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "What is the focus of the parabola $x^2 = -8y$?",
+    "options": [
+      "(-2, 0)",
+      "(0, -2)",
+      "(0, 2)",
+      "(0, -8)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Compare with $x^2 = -4ay$: $4a = 8$, so $a = 2$ and the focus is $(0, -a) = (0, -2)$. (0, -8) uses $4a$ in place of $a$, and (0, 2) misses that the parabola opens downward."
+  },
+  {
+    "id": "KCET-T2-076",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A and B are independent events with $P(A) = 0.3$ and $P(B) = 0.4$. What is $P(A \\cup B)$?",
+    "options": [
+      "0.12",
+      "0.42",
+      "0.58",
+      "0.7"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Independence gives $P(A \\cap B) = 0.3 \\times 0.4 = 0.12$, so $P(A \\cup B) = 0.3 + 0.4 - 0.12 = 0.58$. 0.7 treats the events as mutually exclusive."
+  },
+  {
+    "id": "KCET-T2-077",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Application of derivatives",
+    "stem": "What is the maximum value of $\\sin x + \\cos x$?",
+    "options": [
+      "1",
+      "$\\sqrt{2}$",
+      "2",
+      "$2\\sqrt{2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\sin x + \\cos x = \\sqrt{2}\\sin\\left(x + \\frac{\\pi}{4}\\right)$, whose largest value is $\\sqrt{2}$, at $x = \\frac{\\pi}{4}$. 2 adds the two separate maxima, but they never occur at the same x."
+  },
+  {
+    "id": "KCET-T2-078",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binomial theorem",
+    "stem": "What is the coefficient of $x^3$ in the expansion of $(1 + 2x)^5$?",
+    "options": [
+      "8",
+      "10",
+      "40",
+      "80"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The term is $^5C_3 (2x)^3 = 10 \\times 8x^3 = 80x^3$. 10 forgets to cube the 2, 40 squares it instead, and 8 drops the binomial coefficient $^5C_3$."
+  },
+  {
+    "id": "KCET-T2-079",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "What is the eccentricity of the hyperbola $\\frac{x^2}{9} - \\frac{y^2}{16} = 1$?",
+    "options": [
+      "3/5",
+      "5/4",
+      "4/3",
+      "5/3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "For a hyperbola $c^2 = a^2 + b^2 = 25$, so $c = 5$ and $e = \\frac{c}{a} = \\frac{5}{3}$. 3/5 inverts it (a hyperbola needs $e > 1$), and 5/4 divides by b."
+  },
+  {
+    "id": "KCET-T2-080",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrals",
+    "stem": "What is $\\int x\\sin x\\,dx$?",
+    "options": [
+      "$-x\\cos x - \\sin x + c$",
+      "$x\\cos x - \\sin x + c$",
+      "$\\sin x - x\\cos x + c$",
+      "$\\frac{x^2}{2}\\sin x + c$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "By parts with $u = x$, $dv = \\sin x\\,dx$: $-x\\cos x + \\int\\cos x\\,dx = \\sin x - x\\cos x + c$. $-x\\cos x - \\sin x$ gets the sign of $\\int\\cos x\\,dx$ wrong."
+  },
+  {
+    "id": "KCET-T2-081",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sequences and series",
+    "stem": "What is the sum to infinity of the GP $6 + 2 + \\frac{2}{3} + \\dots$?",
+    "options": [
+      "4.5",
+      "9",
+      "12",
+      "18"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Here $a = 6$ and $r = \\frac{1}{3}$, so $S_\\infty = \\frac{a}{1 - r} = \\frac{6}{2/3} = 9$. 18 divides by $r$ instead of $1 - r$, and 4.5 divides by $1 + r$."
+  },
+  {
+    "id": "KCET-T2-082",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear programming",
+    "stem": "For a bounded feasible region, the maximum of a linear objective function Z = ax + by occurs:",
+    "options": [
+      "Only at the origin",
+      "At a corner point of the region",
+      "At the centroid of the region",
+      "At an interior point of the region"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The corner point theorem: on a bounded feasible region a linear objective function attains both its maximum and minimum at corner points. An interior point can always be improved by moving in the direction that increases Z."
+  },
+  {
+    "id": "KCET-T2-083",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrals",
+    "stem": "What is $\\int_0^{\\pi} |\\cos x|\\,dx$?",
+    "options": [
+      "0",
+      "1/2",
+      "1",
+      "2"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$|\\cos x|$ is symmetric about $\\frac{\\pi}{2}$, so the integral is $2\\int_0^{\\pi/2}\\cos x\\,dx = 2 \\times 1 = 2$. 0 ignores the modulus, so the positive and negative halves cancel, and 1 integrates only over $[0, \\frac{\\pi}{2}]$."
+  },
+  {
+    "id": "KCET-T2-084",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vector algebra",
+    "stem": "What is the area of the parallelogram whose adjacent sides are $4\\hat{i} + \\hat{j}$ and $\\hat{i} + 3\\hat{j}$?",
+    "options": [
+      "1",
+      "11/2",
+      "7",
+      "11"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The cross product is $(4 \\times 3 - 1 \\times 1)\\hat{k} = 11\\hat{k}$, so the area is 11. 11/2 is the area of the triangle on those sides, 7 is the dot product, and 1 pairs the components the wrong way, $4 \\times 1 - 1 \\times 3$."
+  },
+  {
+    "id": "KCET-T2-085",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Determinants",
+    "stem": "What is the value of $\\begin{vmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 10 \\end{vmatrix}$?",
+    "options": [
+      "-3",
+      "0",
+      "3",
+      "15"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Expanding along the first row: $1(50 - 48) - 2(40 - 42) + 3(32 - 35) = 2 + 4 - 9 = -3$. 0 is the value when the last entry is 9, where the rows are in AP; 3 reverses the sign of the whole expansion, and 15 takes the last minor as $35 - 32$."
+  },
+  {
+    "id": "KCET-T2-086",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Application of integrals",
+    "stem": "What is the area bounded by $y = x^3$, the x-axis and the lines $x = -1$ and $x = 1$?",
+    "options": [
+      "0",
+      "1/4",
+      "1/2",
+      "2"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The curve is below the axis on $[-1, 0]$, so add the two parts as positive areas: $2\\int_0^1 x^3\\,dx = 2 \\times \\frac{1}{4} = \\frac{1}{2}$. 0 is the signed integral, where the halves cancel, 1/4 counts one side only, and 2 forgets to divide $x^4$ by 4."
+  },
+  {
+    "id": "KCET-T2-087",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Three fair coins are tossed. Given that the first coin shows a head, what is the probability of at least two heads?",
+    "options": [
+      "1/4",
+      "3/8",
+      "1/2",
+      "3/4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "With the first coin a head, at least two heads needs at least one head in the other two tosses: $1 - \\frac{1}{4} = \\frac{3}{4}$. 1/2 is the unconditional probability of at least two heads."
+  },
+  {
+    "id": "KCET-T2-088",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Three dimensional geometry",
+    "stem": "What are the direction cosines of a line with direction ratios 2, -1, 2?",
+    "options": [
+      "2/3, -1/3, 2/3",
+      "2/9, -1/9, 2/9",
+      "2/5, -1/5, 2/5",
+      "2/3, 1/3, 2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Divide each ratio by $\\sqrt{4 + 1 + 4} = 3$, giving $\\frac{2}{3}, -\\frac{1}{3}, \\frac{2}{3}$. Dividing by 9 forgets the square root, and dividing by 5 adds the ratios as $2 + 1 + 2$."
+  },
+  {
+    "id": "KCET-T2-089",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Permutations and combinations",
+    "stem": "A committee of 3 men and 2 women is chosen from 6 men and 5 women. How many committees are possible?",
+    "options": [
+      "200",
+      "462",
+      "1200",
+      "2400"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Men can be chosen in $^6C_3 = 20$ ways and women in $^5C_2 = 10$ ways; the choices are independent, so $20 \\times 10 = 200$. 1200 arranges the men in order ($^6P_3$), and 462 is $^{11}C_5$, which ignores the 3 and 2 split."
+  },
+  {
+    "id": "KCET-T2-090",
+    "section": "math",
+    "test": 2,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differential equations",
+    "stem": "What is the general solution of $\\frac{dy}{dx} = e^{x - y}$?",
+    "options": [
+      "$e^{-y} = e^x + C$",
+      "$e^y = e^x + C$",
+      "$e^{x + y} = C$",
+      "$e^y = e^{-x} + C$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{dy}{dx} = \\frac{e^x}{e^y}$, so $e^y\\,dy = e^x\\,dx$ and integrating gives $e^y = e^x + C$. $e^{-y} = e^x + C$ comes from moving $e^y$ to the wrong side."
+  },
+  {
+    "id": "KCET-D-001",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Units and measurements",
+    "stem": "The SI unit of impulse is the same as the SI unit of which quantity?",
+    "options": [
+      "pressure",
+      "torque",
+      "momentum",
+      "acceleration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Impulse is force times time, N s, which equals kg m/s, the unit of momentum. Torque is N m, a force times a distance, not a time."
+  },
+  {
+    "id": "KCET-D-002",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mechanical properties of fluids",
+    "stem": "A soap bubble has a radius of 2 cm and the soap film's surface tension is 0.03 N/m. What is the excess pressure inside it?",
+    "options": [
+      "1.5 Pa",
+      "3 Pa",
+      "6 Pa",
+      "12 Pa"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A bubble has two surfaces, so $\\Delta P = \\frac{4T}{r} = \\frac{0.12}{0.02} = 6$ Pa. 3 Pa is $\\frac{2T}{r}$, the value for a liquid drop with one surface."
+  },
+  {
+    "id": "KCET-D-003",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric charges and fields",
+    "stem": "A charge of 5.31 nC sits at the centre of a cube. What electric flux passes through one face? (ε₀ = 8.85 × 10⁻¹² C² N⁻¹ m⁻²)",
+    "options": [
+      "100 N m²/C",
+      "200 N m²/C",
+      "600 N m²/C",
+      "3600 N m²/C"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "By Gauss's law the total flux is $q/\\varepsilon_0 = 600$ N m²/C, shared equally by six faces: 100 N m²/C each. 600 N m²/C is the flux through the whole cube, 200 N m²/C shares it among three faces, and 3600 N m²/C multiplies by 6 instead of dividing."
+  },
+  {
+    "id": "KCET-D-004",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Optical instruments",
+    "stem": "An astronomical telescope in normal adjustment has an objective of focal length 150 cm and an eyepiece of 5 cm. What is its magnifying power?",
+    "options": [
+      "30",
+      "31",
+      "155",
+      "750"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "In normal adjustment $m = \\frac{f_o}{f_e} = \\frac{150}{5} = 30$. 155 is the tube length in centimetres, 750 multiplies the focal lengths, and 31 adds 1 as in the simple magnifier formula."
+  },
+  {
+    "id": "KCET-D-005",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "A road curve of radius 50 m is banked so that tan θ = 0.2. Taking g = 10 m/s², at what speed is no friction needed?",
+    "options": [
+      "10 m/s",
+      "22.4 m/s",
+      "50 m/s",
+      "100 m/s"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "For a banked curve $\\tan\\theta = \\frac{v^2}{rg}$, so $v = \\sqrt{50 \\times 10 \\times 0.2} = 10$ m/s. 100 m/s is $v^2$ with the square root forgotten, 22.4 m/s leaves out $\\tan\\theta$, and 50 m/s divides by $\\tan\\theta$ instead of multiplying."
+  },
+  {
+    "id": "KCET-D-006",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thermal properties of matter",
+    "stem": "At what temperature do the Celsius and Fahrenheit scales give the same reading?",
+    "options": [
+      "-40 degrees",
+      "-32 degrees",
+      "32 degrees",
+      "40 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Set $F = \\frac{9}{5}C + 32$ equal to C: $-\\frac{4}{5}C = 32$, so C = -40. 32 degrees Fahrenheit is the ice point, 0 °C, not a matching reading."
+  },
+  {
+    "id": "KCET-D-007",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electrostatic potential and capacitance",
+    "stem": "How much energy is stored in a 10 µF capacitor charged to 200 V?",
+    "options": [
+      "0.001 J",
+      "0.2 J",
+      "0.4 J",
+      "2 J"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$U = \\frac{1}{2}CV^2 = 0.5 \\times 10 \\times 10^{-6} \\times 200^2 = 0.2$ J. 0.4 J leaves out the half, and 0.001 J forgets to square the voltage."
+  },
+  {
+    "id": "KCET-D-008",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wave optics",
+    "stem": "Light of wavelength 500 nm falls on a single slit 0.2 mm wide. At what angle is the first minimum?",
+    "options": [
+      "$2.5 \\times 10^{-6}$ rad",
+      "$1.25 \\times 10^{-3}$ rad",
+      "$2.5 \\times 10^{-3}$ rad",
+      "$5 \\times 10^{-3}$ rad"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The first minimum is at $\\sin\\theta \\approx \\theta = \\frac{\\lambda}{a} = \\frac{500 \\times 10^{-9}}{0.2 \\times 10^{-3}} = 2.5 \\times 10^{-3}$ rad. $5 \\times 10^{-3}$ rad is the full angular width of the central maximum, and $2.5 \\times 10^{-6}$ rad takes the slit width as 0.2 m."
+  },
+  {
+    "id": "KCET-D-009",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Work, energy and power",
+    "stem": "A spring of force constant 200 N/m is compressed by 0.1 m. How much elastic potential energy does it store?",
+    "options": [
+      "1 J",
+      "2 J",
+      "10 J",
+      "20 J"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$U = \\frac{1}{2}kx^2 = 0.5 \\times 200 \\times 0.01 = 1$ J. 2 J forgets the half, and 10 J uses $\\frac{1}{2}kx$ without squaring x."
+  },
+  {
+    "id": "KCET-D-010",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "A heat engine absorbs 800 J from the hot reservoir and rejects 600 J to the cold one in each cycle. What is its efficiency?",
+    "options": [
+      "25%",
+      "33%",
+      "43%",
+      "75%"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Work out is 800 - 600 = 200 J, and efficiency is 200/800 = 25%. 75% is the fraction of heat rejected, and 33% divides the work by the rejected heat."
+  },
+  {
+    "id": "KCET-D-011",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Current electricity",
+    "stem": "A cell of emf 3 V and internal resistance 0.5 Ω drives current through a 2.5 Ω resistor. What is the terminal voltage?",
+    "options": [
+      "0.5 V",
+      "2.5 V",
+      "3 V",
+      "3.5 V"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$I = \\frac{3}{2.5 + 0.5} = 1$ A, so $V = \\varepsilon - Ir = 3 - 0.5 = 2.5$ V. 0.5 V is the drop inside the cell, and 3.5 V adds that drop instead of subtracting it."
+  },
+  {
+    "id": "KCET-D-012",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dual nature of radiation and matter",
+    "stem": "A metal has a work function of 4.14 eV. What is its threshold frequency? (h = 4.14 × 10⁻¹⁵ eV s)",
+    "options": [
+      "$1 \\times 10^{14}$ Hz",
+      "$1 \\times 10^{15}$ Hz",
+      "$4.14 \\times 10^{15}$ Hz",
+      "$1 \\times 10^{16}$ Hz"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\nu_0 = \\frac{\\phi}{h} = \\frac{4.14}{4.14 \\times 10^{-15}} = 1 \\times 10^{15}$ Hz. $4.14 \\times 10^{15}$ Hz forgets to divide by the 4.14 in $h$, and the other two slip the exponent."
+  },
+  {
+    "id": "KCET-D-013",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gravitation",
+    "stem": "What is the acceleration due to gravity at a depth of one quarter of the Earth's radius below the surface?",
+    "options": [
+      "g/4",
+      "3g/4",
+      "9g/16",
+      "16g/25"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Below the surface $g_d = g(1 - d/R) = \\frac{3g}{4}$. 9g/16 squares that factor, and 16g/25 is the value at a height of R/4 above the surface."
+  },
+  {
+    "id": "KCET-D-014",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Kinetic theory",
+    "stem": "What is the ratio $C_p/C_v$ for an ideal monatomic gas?",
+    "options": [
+      "9/7",
+      "4/3",
+      "7/5",
+      "5/3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "A monatomic gas has 3 translational degrees of freedom: $C_v = \\frac{3}{2}R$ and $C_p = \\frac{5}{2}R$, so $\\gamma = \\frac{5}{3}$. 7/5 is the value for a diatomic gas with 5 degrees of freedom."
+  },
+  {
+    "id": "KCET-D-015",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Moving charges and magnetism",
+    "stem": "Two long parallel wires 5 cm apart carry 10 A and 15 A. What is the force per metre between them?",
+    "options": [
+      "$6 \\times 10^{-6}$ N/m",
+      "$3 \\times 10^{-4}$ N/m",
+      "$6 \\times 10^{-4}$ N/m",
+      "$1.2 \\times 10^{-3}$ N/m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\frac{F}{l} = \\frac{\\mu_0 I_1 I_2}{2\\pi d} = \\frac{2 \\times 10^{-7} \\times 150}{0.05} = 6 \\times 10^{-4}$ N/m. $3 \\times 10^{-4}$ N/m uses $\\mu_0/4\\pi$ in place of $\\mu_0/2\\pi$, and $6 \\times 10^{-6}$ N/m leaves the distance in centimetres."
+  },
+  {
+    "id": "KCET-D-016",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Atoms",
+    "stem": "In the alpha-particle scattering experiment, most alpha particles passed straight through the gold foil. This showed that:",
+    "options": [
+      "Most of the atom is empty space",
+      "The nucleus carries negative charge",
+      "Electrons are spread through the atom",
+      "Alpha particles have no charge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If most alpha particles meet nothing, most of the atom must be empty, with its mass and positive charge in a tiny nucleus. The nucleus is positive, which is why the few that came close were repelled."
+  },
+  {
+    "id": "KCET-D-017",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Motion in a plane",
+    "stem": "A particle moves round a circle of radius 2 m at a steady 4 m/s. What is its centripetal acceleration?",
+    "options": [
+      "2 m/s²",
+      "8 m/s²",
+      "16 m/s²",
+      "32 m/s²"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "$a = \\frac{v^2}{r} = \\frac{16}{2} = 8$ m/s². 16 m/s² is $v^2$ alone, and 32 m/s² multiplies by r instead of dividing."
+  },
+  {
+    "id": "KCET-D-018",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oscillations",
+    "stem": "A 0.5 kg mass hangs on a spring of force constant 200 N/m. What is the period of its vertical oscillations?",
+    "options": [
+      "0.050 s",
+      "0.157 s",
+      "0.314 s",
+      "125.7 s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$T = 2\\pi\\sqrt{m/k} = 2\\pi\\sqrt{0.0025} = 2\\pi \\times 0.05 = 0.314$ s. 0.157 s drops the factor 2, and 125.7 s inverts the ratio to $\\sqrt{k/m}$."
+  },
+  {
+    "id": "KCET-D-019",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electromagnetic induction",
+    "stem": "How much energy is stored in the magnetic field of a 0.4 H inductor carrying 3 A?",
+    "options": [
+      "0.6 J",
+      "1.2 J",
+      "1.8 J",
+      "3.6 J"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$U = \\frac{1}{2}LI^2 = 0.5 \\times 0.4 \\times 9 = 1.8$ J. 3.6 J leaves out the half, 1.2 J leaves out both the half and the square (it is just $LI$), and 0.6 J forgets to square the current."
+  },
+  {
+    "id": "KCET-D-020",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Nuclei",
+    "stem": "The force that holds nucleons together in a nucleus is:",
+    "options": [
+      "Short range and charge independent",
+      "Inverse square, like the gravitational force",
+      "Short range, acting on protons only",
+      "Long range and charge dependent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The nuclear force acts only over a few femtometres and is nearly the same between proton-proton, neutron-neutron and proton-neutron pairs. It acts on neutrons too, so it is not limited to protons."
+  },
+  {
+    "id": "KCET-D-021",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyMech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rotational motion",
+    "stem": "A flywheel with moment of inertia 5 kg m² starts from rest under a steady torque of 10 N m. What is its angular speed after 3 s?",
+    "options": [
+      "1.5 rad/s",
+      "2 rad/s",
+      "6 rad/s",
+      "15 rad/s"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\alpha = \\tau/I = 2$ rad/s², so $\\omega = \\alpha t = 6$ rad/s. 2 rad/s is the angular acceleration, and 1.5 rad/s divides the torque the wrong way."
+  },
+  {
+    "id": "KCET-D-022",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyThermo",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Waves",
+    "stem": "Two tuning forks of 256 Hz and 260 Hz are sounded together. How many beats are heard each second?",
+    "options": [
+      "2 per second",
+      "4 per second",
+      "8 per second",
+      "258 per second"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The beat frequency is the difference of the two frequencies, 260 - 256 = 4 per second. 258 is their average, the pitch of the sound heard, not the beat rate."
+  },
+  {
+    "id": "KCET-D-023",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyElec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternating current",
+    "stem": "A series AC circuit has resistance 60 Ω and impedance 100 Ω. What is its power factor?",
+    "options": [
+      "0.36",
+      "0.6",
+      "0.8",
+      "1.67"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Power factor $\\cos\\phi = \\frac{R}{Z} = \\frac{60}{100} = 0.6$. 0.8 is $\\sin\\phi$, and 1.67 inverts the ratio, which a power factor never exceeding 1 rules out."
+  },
+  {
+    "id": "KCET-D-024",
+    "section": "phy",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetPhyModern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Semiconductor electronics",
+    "stem": "A full-wave rectifier is fed from a 50 Hz AC supply. What is the frequency of the ripple in its output?",
+    "options": [
+      "25 Hz",
+      "50 Hz",
+      "100 Hz",
+      "200 Hz"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A full-wave rectifier gives one output pulse for each half-cycle of the input, so two pulses per cycle: 2 × 50 = 100 Hz. 50 Hz is the ripple of a half-wave rectifier."
+  },
+  {
+    "id": "KCET-D-025",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Some basic concepts",
+    "stem": "How many significant figures are there in 0.02040?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Leading zeros are not significant, but the zero between 2 and 4 and the trailing zero after the decimal point are, so 2, 0, 4, 0 make four. 3 wrongly drops the trailing zero."
+  },
+  {
+    "id": "KCET-D-026",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Structure of atom",
+    "stem": "Which set of quantum numbers is not allowed for an electron?",
+    "options": [
+      "n = 2, l = 2, m = 0",
+      "n = 1, l = 0, m = 0",
+      "n = 3, l = 2, m = +2",
+      "n = 2, l = 1, m = -1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "l can only go from 0 to n - 1, so l = 2 is impossible when n = 2. n = 3, l = 2, m = +2 is fine, since m runs from -l to +l."
+  },
+  {
+    "id": "KCET-D-027",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Basic principles of organic chemistry",
+    "stem": "Which of these species acts as a nucleophile?",
+    "options": [
+      "NO₂⁺",
+      "BF₃",
+      "AlCl₃",
+      "NH₃"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ammonia has a lone pair it can donate to an electron-poor carbon. BF₃ and AlCl₃ have an incomplete octet and NO₂⁺ is positive, so all three are electrophiles."
+  },
+  {
+    "id": "KCET-D-028",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thermodynamics",
+    "stem": "Water has ΔvapH = 40.8 kJ/mol at its boiling point of 373 K. What is ΔvapS?",
+    "options": [
+      "0.109 J/K mol",
+      "9.14 J/K mol",
+      "15.2 J/K mol",
+      "109 J/K mol"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "At the boiling point $\\Delta S = \\frac{\\Delta H}{T} = \\frac{40800}{373} = 109$ J/K mol. 0.109 leaves ΔH in kilojoules, and 9.14 divides T by ΔH."
+  },
+  {
+    "id": "KCET-D-029",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification of elements",
+    "stem": "Which of these atoms has the largest atomic radius?",
+    "options": [
+      "K",
+      "Na",
+      "Mg",
+      "Ca"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Radius grows down a group and shrinks across a period, so potassium, in period 4 and group 1, is the largest. Calcium is also in period 4 but has a higher nuclear charge."
+  },
+  {
+    "id": "KCET-D-030",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydrocarbons",
+    "stem": "In the nitration of benzene with concentrated HNO₃ and H₂SO₄, the electrophile is:",
+    "options": [
+      "NO⁺",
+      "NO₂⁺",
+      "NO₂⁻",
+      "NO₃⁻"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sulphuric acid protonates nitric acid, which loses water to give the nitronium ion, NO₂⁺. The nitrite and nitrate ions are negative and cannot attack the electron-rich ring."
+  },
+  {
+    "id": "KCET-D-031",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Equilibrium",
+    "stem": "What does adding sodium acetate to a solution of acetic acid do?",
+    "options": [
+      "Raises the degree of ionisation",
+      "Leaves the pH unchanged",
+      "Lowers the pH of solution",
+      "Lowers the degree of ionisation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The common acetate ion pushes CH₃COOH ⇌ CH₃COO⁻ + H⁺ to the left, so less acid ionises and the pH rises. It does not lower the pH, since [H⁺] falls."
+  },
+  {
+    "id": "KCET-D-032",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "How many sigma and pi bonds are there in ethyne, C₂H₂?",
+    "options": [
+      "2 σ and 2 π",
+      "2 σ and 3 π",
+      "3 σ and 2 π",
+      "5 σ and 0 π"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "H-C≡C-H has two C-H sigma bonds and a triple bond made of one sigma and two pi bonds: 3 σ and 2 π. 2 σ and 2 π forgets the sigma bond inside the triple bond."
+  },
+  {
+    "id": "KCET-D-033",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Haloalkanes and haloarenes",
+    "stem": "How many structural isomers have the formula C₄H₉Cl?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "1-Chlorobutane, 2-chlorobutane, 1-chloro-2-methylpropane and 2-chloro-2-methylpropane make 4. Counting the two enantiomers of 2-chlorobutane separately gives 5, but those are stereoisomers, not structural isomers."
+  },
+  {
+    "id": "KCET-D-034",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solutions",
+    "stem": "A solution showing a large positive deviation from Raoult's law forms which kind of azeotrope?",
+    "options": [
+      "Minimum boiling",
+      "Ideal mixture",
+      "No azeotrope ever",
+      "Maximum boiling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Positive deviation means weaker solute-solvent attraction, a higher vapour pressure and so a lower boiling point: a minimum boiling azeotrope, like ethanol and water. Negative deviation gives a maximum boiling one."
+  },
+  {
+    "id": "KCET-D-035",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical bonding",
+    "stem": "Which order of bond angle is correct?",
+    "options": [
+      "H₂O > NH₃ > CH₄",
+      "CH₄ > NH₃ > H₂O",
+      "CH₄ > H₂O > NH₃",
+      "NH₃ > CH₄ > H₂O"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "All three are near sp³, but lone pairs repel more than bond pairs: 109.5° with none, about 107° with one (NH₃) and about 104.5° with two (H₂O)."
+  },
+  {
+    "id": "KCET-D-036",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alcohols, phenols and ethers",
+    "stem": "Propan-2-ol is oxidised with acidified K₂Cr₂O₇. The product is:",
+    "options": [
+      "Propanal",
+      "Propene",
+      "Propanoic acid",
+      "Propanone"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A secondary alcohol is oxidised to a ketone, here propanone, and stops there. Propanal and propanoic acid come from the primary alcohol propan-1-ol."
+  },
+  {
+    "id": "KCET-D-037",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrochemistry",
+    "stem": "How much charge is needed to reduce 1 mol of Al³⁺ ions to aluminium metal? (F = 96500 C/mol)",
+    "options": [
+      "96500 C",
+      "193000 C",
+      "289500 C",
+      "386000 C"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Al³⁺ + 3e⁻ → Al, so 3 F = 3 × 96500 = 289500 C. 96500 C is enough for only a singly charged ion."
+  },
+  {
+    "id": "KCET-D-038",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "d- and f-block elements",
+    "stem": "Besides +3, which oxidation state does cerium show because it gives an empty 4f set?",
+    "options": [
+      "+2",
+      "+4",
+      "+5",
+      "+6"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Ce is 4f¹5d¹6s², so losing four electrons leaves the stable noble gas configuration with an empty 4f set, giving Ce⁴⁺. +2 is the extra state of europium, which reaches a half-filled 4f⁷."
+  },
+  {
+    "id": "KCET-D-039",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Amines",
+    "stem": "Which amine does not react with benzenesulphonyl chloride (Hinsberg's reagent)?",
+    "options": [
+      "N,N-Dimethylethanamine",
+      "N-Methylpropan-2-amine",
+      "Ethanamine",
+      "Propan-1-amine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The reagent needs an N-H hydrogen to replace. N,N-Dimethylethanamine is a tertiary amine with none. N-Methylpropan-2-amine is secondary and gives an insoluble sulphonamide; the primary amines give alkali-soluble ones."
+  },
+  {
+    "id": "KCET-D-040",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemPhys",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical kinetics",
+    "stem": "A zero-order reaction has [A]₀ = 0.8 M and k = 0.02 M/s. What is its half-life?",
+    "options": [
+      "10 s",
+      "20 s",
+      "34.7 s",
+      "40 s"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "For zero order $t_{1/2} = \\frac{[A]_0}{2k} = \\frac{0.8}{0.04} = 20$ s. 34.7 s uses the first-order formula 0.693/k."
+  },
+  {
+    "id": "KCET-D-041",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemInorg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coordination compounds",
+    "stem": "What is the denticity of the EDTA⁴⁻ ligand?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "EDTA binds through two nitrogen atoms and four carboxylate oxygens, six donor atoms, so it is hexadentate. 4 counts only the carboxylate groups."
+  },
+  {
+    "id": "KCET-D-042",
+    "section": "chem",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetChemOrg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Biomolecules",
+    "stem": "Hydrolysis of sucrose with dilute acid gives:",
+    "options": [
+      "Glucose only",
+      "Glucose and galactose",
+      "Glucose and fructose",
+      "Fructose and galactose"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sucrose is a disaccharide of D-glucose and D-fructose, and its hydrolysis gives equal amounts of the two (invert sugar). Glucose and galactose come from lactose, and glucose only from maltose."
+  },
+  {
+    "id": "KCET-D-043",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relations and functions",
+    "stem": "If $f(x) = x^2$ and $g(x) = x + 1$, what is $(f \\circ g)(2)$?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$(f \\circ g)(2) = f(g(2)) = f(3) = 9$. 5 is $(g \\circ f)(2) = g(4)$, the composition in the wrong order."
+  },
+  {
+    "id": "KCET-D-044",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "What is $\\frac{d}{dx}\\log(\\sec x + \\tan x)$?",
+    "options": [
+      "$\\sec x\\tan x$",
+      "$\\sec^2 x$",
+      "$\\tan x$",
+      "$\\sec x$"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The derivative of $\\sec x + \\tan x$ is $\\sec x\\tan x + \\sec^2 x = \\sec x(\\sec x + \\tan x)$. Dividing by $\\sec x + \\tan x$ leaves $\\sec x$. $\\sec x\\tan x$ differentiates only the first term."
+  },
+  {
+    "id": "KCET-D-045",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Trigonometric functions",
+    "stem": "What is the period of $\\sin 3x + \\cos 3x$?",
+    "options": [
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{2\\pi}{3}$",
+      "$\\frac{3\\pi}{2}$",
+      "$6\\pi$"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Both terms repeat every $\\frac{2\\pi}{3}$, so the sum does too. $6\\pi$ multiplies the period by 3 instead of dividing, $\\frac{3\\pi}{2}$ inverts the ratio, and $\\frac{\\pi}{3}$ halves it as for $\\sin^2$."
+  },
+  {
+    "id": "KCET-D-046",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "Five observations are all equal to 7. What is their standard deviation?",
+    "options": [
+      "0",
+      "1",
+      "7",
+      "49"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every observation equals the mean, 7, so every deviation is zero and the standard deviation is 0. 7 is the mean, not the spread."
+  },
+  {
+    "id": "KCET-D-047",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "For which values of $k$ does $x^2 + kx + 16 = 0$ have equal roots?",
+    "options": [
+      "$k = \\pm 8$",
+      "$k = \\pm 2$",
+      "$k = \\pm 16$",
+      "$k = \\pm 4$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Equal roots need discriminant zero: $k^2 - 4(1)(16) = 0$, so $k^2 = 64$ and $k = \\pm 8$. $\\pm 4$ is $\\sqrt{16}$, forgetting the factor 4 in $4ac$."
+  },
+  {
+    "id": "KCET-D-048",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "If $y = x\\log x$, what is $\\frac{d^2y}{dx^2}$?",
+    "options": [
+      "$\\frac{1}{x^2}$",
+      "$\\frac{1}{x}$",
+      "$\\log x + 1$",
+      "$-\\frac{1}{x^2}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "$\\frac{dy}{dx} = \\log x + 1$, and differentiating again gives $\\frac{1}{x}$. $\\log x + 1$ is only the first derivative, and $-\\frac{1}{x^2}$ goes one step too far."
+  },
+  {
+    "id": "KCET-D-049",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inverse trigonometric functions",
+    "stem": "What is the domain of $\\sin^{-1}(2x)$?",
+    "options": [
+      "$\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right]$",
+      "$[-1, 1]$",
+      "$\\left[-\\frac{1}{2}, \\frac{1}{2}\\right]$",
+      "$[-2, 2]$"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "$\\sin^{-1}$ needs its input in $[-1, 1]$, so $-1 \\le 2x \\le 1$, giving $-\\frac{1}{2} \\le x \\le \\frac{1}{2}$. $[-2, 2]$ multiplies the bounds by 2 instead of dividing, and $\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right]$ halves the range of $\\sin^{-1}$, not its domain."
+  },
+  {
+    "id": "KCET-D-050",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "If every observation in a data set is multiplied by 3, the variance is multiplied by:",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "27"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each deviation from the mean is multiplied by 3, so each squared deviation, and the variance, is multiplied by $3^2 = 9$. 3 is the factor for the standard deviation."
+  },
+  {
+    "id": "KCET-D-051",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Matrices",
+    "stem": "For matrices A and B for which the product AB is defined, $(AB)^T$ equals:",
+    "options": [
+      "$B^T A^T$",
+      "$A^T B^T$",
+      "$A B^T$",
+      "$(BA)^T$"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The transpose of a product reverses the order: $(AB)^T = B^T A^T$. $A^T B^T$ keeps the order and is not even defined unless the sizes happen to fit."
+  },
+  {
+    "id": "KCET-D-052",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "At how many points is $f(x) = |x - 1| + |x - 2|$ not differentiable?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each modulus term has a corner where its inside is zero, at $x = 1$ and $x = 2$, and the corners do not cancel. So there are 2 such points. 1 counts only one corner."
+  },
+  {
+    "id": "KCET-D-053",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Straight lines",
+    "stem": "What is the tangent of the acute angle between two lines with slopes 1 and 2?",
+    "options": [
+      "1/3",
+      "1/2",
+      "1",
+      "3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\tan\\theta = \\left|\\frac{m_2 - m_1}{1 + m_1 m_2}\\right| = \\frac{1}{3}$. 3 inverts the formula, 1 leaves out the denominator, and 1/2 divides by $1 + m_1$ only."
+  },
+  {
+    "id": "KCET-D-054",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "A and B are mutually exclusive events with P(A) = 0.3 and P(B) = 0.45. What is the probability that neither occurs?",
+    "options": [
+      "0.135",
+      "0.25",
+      "0.385",
+      "0.75"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Mutually exclusive events have $P(A \\cup B) = 0.3 + 0.45 = 0.75$, so $P(\\text{neither}) = 1 - 0.75 = 0.25$. 0.385 wrongly subtracts $0.3 \\times 0.45$ as if the events were independent."
+  },
+  {
+    "id": "KCET-D-055",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Determinants",
+    "stem": "What is the area of the triangle with vertices (1, 2), (4, 6) and (7, 2)?",
+    "options": [
+      "6",
+      "12",
+      "16",
+      "24"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Area $= \\frac{1}{2}\\left|1(6 - 2) + 4(2 - 2) + 7(2 - 6)\\right| = \\frac{1}{2}|4 + 0 - 28| = 12$. 24 forgets the factor $\\frac{1}{2}$ in front of the determinant."
+  },
+  {
+    "id": "KCET-D-056",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Continuity and differentiability",
+    "stem": "If $f(x) = e^{2x}$, what is $f''(0)$?",
+    "options": [
+      "1/2",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "$f'(x) = 2e^{2x}$ and $f''(x) = 4e^{2x}$, so $f''(0) = 4$. 2 is $f'(0)$, 1 is $f(0)$, and 1/2 divides by 2 as in integrating instead of differentiating."
+  },
+  {
+    "id": "KCET-D-057",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conic sections",
+    "stem": "What is the radius of the circle $x^2 + y^2 - 6x + 4y - 12 = 0$?",
+    "options": [
+      "1",
+      "$\\sqrt{13}$",
+      "5",
+      "25"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The centre is (3, -2) and $r = \\sqrt{3^2 + 2^2 + 12} = 5$. $\\sqrt{13}$ leaves out the constant term, 1 adds it with the wrong sign, and 25 is $r^2$."
+  },
+  {
+    "id": "KCET-D-058",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Two cards are drawn one after the other without replacement from a pack of 52. What is the probability that both are aces?",
+    "options": [
+      "1/221",
+      "1/169",
+      "2/221",
+      "1/13"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$P = \\frac{4}{52} \\times \\frac{3}{51} = \\frac{12}{2652} = \\frac{1}{221}$. 1/169 is $\\left(\\frac{4}{52}\\right)^2$, which is the answer with replacement."
+  },
+  {
+    "id": "KCET-D-059",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Binomial theorem",
+    "stem": "What is the sum of the coefficients in the expansion of $(2x - 1)^7$?",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "128"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Put $x = 1$: $(2 - 1)^7 = 1$. 128 is $2^7$, the sum of the binomial coefficients $^7C_r$, which ignores the 2 and the minus sign."
+  },
+  {
+    "id": "KCET-D-060",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Integrals",
+    "stem": "What is $\\int_0^2 (3x^2 + 1)\\,dx$?",
+    "options": [
+      "10",
+      "12",
+      "13",
+      "26"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "$\\left[x^3 + x\\right]_0^2 = 8 + 2 = 10$. 12 is the derivative $6x$ at $x = 2$, 13 is the integrand at $x = 2$, and 26 integrates $3x^2$ as $3x^3$."
+  },
+  {
+    "id": "KCET-D-061",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vector algebra",
+    "stem": "What is the projection of $2\\hat{i} + 3\\hat{j} + 2\\hat{k}$ on $\\hat{i} + 2\\hat{j} + \\hat{k}$?",
+    "options": [
+      "$10$",
+      "$\\frac{10}{\\sqrt{6}}$",
+      "$\\frac{10}{\\sqrt{17}}$",
+      "$\\frac{10}{6}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The projection of $\\vec{a}$ on $\\vec{b}$ is $\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} = \\frac{2 + 6 + 2}{\\sqrt{6}} = \\frac{10}{\\sqrt{6}}$. $\\frac{10}{\\sqrt{17}}$ divides by $|\\vec{a}|$, which gives the projection the other way round."
+  },
+  {
+    "id": "KCET-D-062",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Linear programming",
+    "stem": "Maximise Z = 3x + 2y subject to $x + 2y \\le 8$, $x \\ge 0$, $y \\ge 0$. What is the maximum value?",
+    "options": [
+      "8",
+      "12",
+      "16",
+      "24"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The corner points are (0, 0), (8, 0) and (0, 4), giving Z = 0, 24 and 8. The maximum is 24 at (8, 0). 8 is the value at (0, 4)."
+  },
+  {
+    "id": "KCET-D-063",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathAlg",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sequences and series",
+    "stem": "A student in Bengaluru saves 500 rupees in the first month and 50 rupees more each month after that. How much is saved in 2 years?",
+    "options": [
+      "1650 rupees",
+      "9300 rupees",
+      "12900 rupees",
+      "25800 rupees"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "This is an AP with $a = 500$, $d = 50$, $n = 24$: $S_{24} = 12[2(500) + 23(50)] = 12 \\times 2150 = 25800$. 12900 takes $\\frac{n}{2}$ as 6 instead of 12, 9300 counts only 12 months, $6[2(500) + 11(50)]$, and 1650 is the 24th month's saving alone, $500 + 23(50)$."
+  },
+  {
+    "id": "KCET-D-064",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathCalc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Differential equations",
+    "stem": "What is the integrating factor of $\\frac{dy}{dx} + \\frac{2}{x}y = x$ for $x > 0$?",
+    "options": [
+      "$\\frac{1}{x^2}$",
+      "$x^2$",
+      "$2\\log x$",
+      "$e^{2x}$"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The integrating factor is $e^{\\int P\\,dx}$ with $P = \\frac{2}{x}$: $e^{2\\log x} = x^2$. $2\\log x$ is only the exponent, and $\\frac{1}{x^2}$ comes from taking $P$ with the wrong sign."
+  },
+  {
+    "id": "KCET-D-065",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathGeom",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Three dimensional geometry",
+    "stem": "A line makes angles $\\alpha, \\beta, \\gamma$ with the coordinate axes. What is $\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma$?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The direction cosines satisfy $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$, so the sines give $3 - 1 = 2$. 1 is the sum of the cosine squares."
+  },
+  {
+    "id": "KCET-D-066",
+    "section": "math",
+    "test": 0,
+    "module": 1,
+    "domain": "kcetMathStats",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Probability",
+    "stem": "Machine P makes 60% of a factory's bolts, 2% of them defective; machine Q makes the rest, 3% defective. A bolt is defective. What is the probability it came from Q?",
+    "options": [
+      "0.03",
+      "0.4",
+      "0.5",
+      "0.6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "$P(\\text{defective}) = 0.6(0.02) + 0.4(0.03) = 0.012 + 0.012 = 0.024$. By Bayes' theorem $P(Q \\mid \\text{defective}) = \\frac{0.012}{0.024} = 0.5$. 0.4 is Q's share of all bolts, before the defect is known."
+  }
+]

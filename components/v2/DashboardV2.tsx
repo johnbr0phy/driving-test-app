@@ -26,26 +26,17 @@ import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 import { useV2Premium } from "@/hooks/useV2Premium";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useCommunityAvailable } from "@/hooks/useCommunityStats";
-import { hasDrillProgress, isDrillLocked, isTestLocked, otherPremiumExams } from "@/lib/v2/premium";
+import { hasDrillProgress, isDrillLocked, isTestLocked } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
+import { V1ProgressCarryOver } from "./V1ProgressCarryOver";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { TeachNudge } from "@/components/TeachNudge";
 import { heroLine } from "@/lib/heroCopy";
 import { useHeroVariant } from "@/hooks/useHeroVariant";
 import { regionOfTest } from "@/lib/region";
-
-function heroTitle(done: number, total: number, completedTitle = "You're ready"): string {
-  if (done === 0) return `Complete all ${total} steps`;
-  if (done === total) return completedTitle;
-  if (done === total - 1) return "One left";
-  if (done === 1) return `Good start. 1 of ${total} done`;
-  const frac = done / total;
-  if (frac < 0.45) return `${done} of ${total} done`;
-  if (frac < 0.55) return "Halfway there";
-  if (frac < 0.8) return "More than halfway";
-  return `${done} of ${total}, almost there`;
-}
+import { useV2Language, useV2Ui } from "@/lib/v2/ui";
+import type { Language } from "@/i18n";
 
 /** Same ladder as the v1 dashboards: worried at 0, beaming at 100%. */
 function tigerFace(done: number, total: number, examId: string): string {
@@ -54,12 +45,14 @@ function tigerFace(done: number, total: number, examId: string): string {
   return getTigerAsset(examId, expr);
 }
 
-function shortDate(iso: string, examId: string) {
-  return new Date(iso).toLocaleDateString(regionOfTest(examId) === "UK" ? "en-GB" : "en-US", { month: "short", day: "numeric" });
+function shortDate(iso: string, examId: string, lang: Language) {
+  const locale = lang === "en" ? (regionOfTest(examId) === "UK" ? "en-GB" : "en-US") : lang;
+  return new Date(iso).toLocaleDateString(locale, { month: "short", day: "numeric" });
 }
 
 export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const routes = v2Routes(exam);
+  const ui = useV2Ui().dashboard;
   const heroVariant = useHeroVariant();
   const hydrated = useHydration();
   // Opening this dashboard makes it the current test (the logo's home).
@@ -157,10 +150,10 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const goalPicker = (
     <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
       <div className="flex items-center gap-4">
-        <Image src={getTigerAsset(exam.id, 3)} alt="Tiger mascot" width={48} height={48} className="w-12 h-12 flex-shrink-0" />
+        <Image src={getTigerAsset(exam.id, 3)} alt={ui.tigerAlt} width={48} height={48} className="w-12 h-12 flex-shrink-0" />
         <div className="flex-1 min-w-0">
-          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{editingGoal ? "Change your goal" : "What score are you aiming for?"}</h1>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Pick a target. Your plan finishes when a full practice test hits it.</p>
+          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{editingGoal ? ui.goalChangeTitle : ui.goalAskTitle}</h1>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{ui.goalPickHint}</p>
         </div>
       </div>
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
@@ -187,7 +180,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
       {exam.copy.progressNote && <p className="mt-3 text-xs text-gray-600 dark:text-gray-300">{exam.copy.progressNote}</p>}
       {editingGoal && (
         <button type="button" onClick={() => setEditingGoal(false)} className="mt-3 w-full text-center text-xs font-semibold text-gray-500 dark:text-gray-400">
-          Keep {goal}
+          {ui.keepGoal(goal)}
         </button>
       )}
     </div>
@@ -195,6 +188,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
+      {exam.fromV1 && <V1ProgressCarryOver exam={exam} />}
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
@@ -219,16 +213,16 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
             /* Hero: tiger, steps title, counter, then the goal strip */
             <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 mb-6">
               <div className="flex items-center gap-4">
-                <Image src={tigerFace(doneSteps, totalSteps, exam.id)} alt="Tiger mascot" width={48} height={48} className="w-12 h-12 flex-shrink-0" />
+                <Image src={tigerFace(doneSteps, totalSteps, exam.id)} alt={ui.tigerAlt} width={48} height={48} className="w-12 h-12 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
-                  <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{heroTitle(doneSteps, totalSteps, exam.copy.completedTitle)}</h1>
+                  <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{ui.heroTitle(doneSteps, totalSteps, exam.copy.completedTitle)}</h1>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{heroLine(exam.copy.heroSubs, doneSteps, totalSteps, heroVariant, exam.language ?? "en")}</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
                   <div className={`text-2xl font-bold tabular-nums ${doneSteps === totalSteps ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>
                     {doneSteps}/{totalSteps}
                   </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">complete</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">{ui.complete}</div>
                 </div>
               </div>
               <GoalStrip exam={exam} goal={goal} best={bestOverall} onEdit={fixedGoal ? undefined : () => setEditingGoal(true)} />
@@ -239,7 +233,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
           {/* Drills: one per skill area, built for the phone */}
           <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1.5">
-            <Smartphone className="h-3.5 w-3.5" /> Train by skill · on your phone
+            <Smartphone className="h-3.5 w-3.5" /> {ui.phoneHeading}
           </p>
           <div className="mb-6 space-y-1.5">
             {phoneSteps.map((step, index) => {
@@ -253,19 +247,19 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
               // A Premium drill gates both its steps, Basics included.
               const gated = s.locked;
               const stamp = step.complete
-                ? { label: "Complete!", color: "green" as const }
+                ? { label: ui.stampComplete, color: "green" as const }
                 : isStartHere && hasGoal
-                  ? { label: "Start here", color: "amber" as const }
+                  ? { label: ui.stampStartHere, color: "amber" as const }
                   : step.started
-                    ? { label: "Keep going", color: "amber" as const }
+                    ? { label: ui.stampKeepGoing, color: "amber" as const }
                     : undefined;
               const subtitle = basics
                 ? gated
-                  ? `Premium · ${s.skills} skills`
-                  : `${s.learned}/${s.skills} skills learned`
+                  ? ui.basicsSubtitleLocked(s.skills)
+                  : ui.basicsSubtitle(s.learned, s.skills)
                 : gated
-                  ? `Premium · ${s.total} questions`
-                  : `${s.mastered}/${s.total} mastered`;
+                  ? ui.drillSubtitleLocked(s.total)
+                  : ui.drillSubtitle(s.mastered, s.total);
               // Basics opens the skill list; the exam step goes straight to the
               // questions. Anyone who already knows the basics just taps step 2.
               const firstSkill = basicsFor(s.def)[0];
@@ -284,19 +278,19 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                 <div
                   id={`progress-${basics ? "basics" : "drill"}:${s.def.key}`}
                   tabIndex={-1}
-                  aria-label={`${s.def.name}${basics ? " Basics" : ""}: ${subtitle}`}
+                  aria-label={basics ? ui.basicsRowLabel(s.def.name, subtitle) : ui.rowLabel(s.def.name, subtitle)}
                   onBlur={() => setReturnedTo(null)}
                   className={`progress-row rounded-xl scroll-mt-6 focus:outline-none ${returnedTo === `${basics ? "basics" : "drill"}:${s.def.key}` ? `focus:ring-2 ${step.complete ? "focus:ring-green-500" : "focus:ring-brand"} focus:ring-offset-4 dark:focus:ring-offset-gray-950` : ""}`}
                 >
                   <ProgressCard
-                    title={basics ? `${s.def.name} [Basics]` : s.def.name}
+                    title={basics ? ui.basicsStepTitle(s.def.name) : s.def.name}
                     subtitle={subtitle}
                     completed={step.complete}
                     stepNumber={index + 1}
                     stamp={stamp}
                     isPremiumLocked={gated}
                     href={gated ? undefined : href}
-                    onClick={gated ? () => paywall.open(`drill_${s.def.key}`, `${s.def.name} drill`) : undefined}
+                    onClick={gated ? () => paywall.open(`drill_${s.def.key}`, ui.drillItemLabel(s.def.name)) : undefined}
                   />
                 </div>
                 </div>
@@ -306,7 +300,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
           {/* Full-length tests: the desktop simulation */}
           <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1.5">
-            <Monitor className="h-3.5 w-3.5" /> Full practice test · on a desktop, timed
+            <Monitor className="h-3.5 w-3.5" /> {ui.desktopHeading}
           </p>
           <div className="mb-6 space-y-1.5">
             {testSteps.map((s, index) => {
@@ -316,20 +310,20 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
               const adaptive = exam.sections.some((x) => x.modules.some((m) => m.adaptive));
               // One-section exams name their length in questions, not "1 sections".
-              const shape = exam.sections.length === 1 ? `${exam.sections[0].modules.reduce((n, m) => n + m.questionCount, 0)} questions` : `${exam.sections.length} sections`;
-              let subtitle = `${shape} · ${exam.testLength}${adaptive ? " · adaptive" : ""}${s.def.heldOut ? " · never in drills" : ""}`;
-              if (s.locked) subtitle = `Premium · ${shape} · ${exam.testLength}${s.def.heldOut ? " · never in drills" : ""}`;
-              else if (s.session && def) subtitle = `In progress · ${def.section.name}, module ${def.module.module}`;
-              else if (s.complete && s.best !== null) subtitle = `Best ${s.best} · goal ${goal} hit`;
-              else if (s.best !== null) subtitle = `Best ${s.best} · ${goal - s.best} to your goal of ${goal}`;
+              const shape = exam.sections.length === 1 ? ui.testShapeQuestions(exam.sections[0].modules.reduce((n, m) => n + m.questionCount, 0)) : ui.testShapeSections(exam.sections.length);
+              let subtitle = ui.testSubtitle(shape, exam.testLength, adaptive, !!s.def.heldOut);
+              if (s.locked) subtitle = ui.testSubtitleLocked(shape, exam.testLength, !!s.def.heldOut);
+              else if (s.session && def) subtitle = ui.testInProgress(def.section.name, def.module.module);
+              else if (s.complete && s.best !== null) subtitle = ui.testBestHit(s.best, goal);
+              else if (s.best !== null) subtitle = ui.testBestToGo(s.best, goal);
 
               let stamp: { label: string; color: "green" | "amber" | "red" } | undefined;
-              if (s.session) stamp = { label: "Keep going", color: "amber" };
-              else if (s.complete) stamp = { label: "Goal hit!", color: "green" };
-              else if (hasAttempts) stamp = { label: "Retake it", color: "amber" };
+              if (s.session) stamp = { label: ui.stampKeepGoing, color: "amber" };
+              else if (s.complete) stamp = { label: ui.stampGoalHit, color: "green" };
+              else if (hasAttempts) stamp = { label: ui.stampRetake, color: "amber" };
 
               return (
-                <div key={s.def.number} id={`progress-test:${s.def.number}`} tabIndex={-1} aria-label={`${s.def.name}: ${subtitle}`} onBlur={() => setReturnedTo(null)} className={`progress-row rounded-xl scroll-mt-6 focus:outline-none ${returnedTo === `test:${s.def.number}` ? "focus:ring-2 focus:ring-green-500 focus:ring-offset-4 dark:focus:ring-offset-gray-950" : ""}`}>
+                <div key={s.def.number} id={`progress-test:${s.def.number}`} tabIndex={-1} aria-label={ui.rowLabel(s.def.name, subtitle)} onBlur={() => setReturnedTo(null)} className={`progress-row rounded-xl scroll-mt-6 focus:outline-none ${returnedTo === `test:${s.def.number}` ? "focus:ring-2 focus:ring-green-500 focus:ring-offset-4 dark:focus:ring-offset-gray-950" : ""}`}>
                   <ProgressCard
                     title={`🎯 ${s.def.name}`}
                     subtitle={subtitle}
@@ -350,7 +344,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   >
                     {hasAttempts && (
                       <p className={`text-xs mt-1 ${s.complete ? "text-green-600 dark:text-green-400" : "text-gray-500 dark:text-gray-400"}`}>
-                        {s.attempts.length === 1 ? "1 attempt" : `${s.attempts.length} attempts`} <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
+                        {ui.attempts(s.attempts.length)} <span aria-hidden="true">{isExpanded ? "▴" : "▾"}</span>
                       </p>
                     )}
                   </ProgressCard>
@@ -379,8 +373,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                 <BarChart3 className="h-4 w-4 text-brand-dark" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Your stats</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Your score today and where your next points are</p>
+                <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">{ui.statsTitle}</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{ui.statsSub}</p>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </div>
@@ -393,8 +387,8 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
                   <Users className="h-4 w-4 text-brand-dark" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">Common Mistakes</h3>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">The {exam.shortName} questions most students get wrong</p>
+                  <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-50">{ui.communityTitle}</h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{ui.communitySub(exam.shortName)}</p>
                 </div>
                 <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
               </div>
@@ -415,18 +409,19 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
 /** Thank-you strip after Stripe sends the buyer back here. */
 function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
+  const ui = useV2Ui().dashboard;
   const { justPurchased, dismiss } = usePurchaseReturn();
   if (!justPurchased) return null;
   return (
     <div className="mb-4 flex items-center gap-3 rounded-xl border border-green-200 dark:border-green-800 bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 p-4">
       <CheckCircle className="h-8 w-8 flex-shrink-0 text-green-500 dark:text-green-400" />
       <div className="flex-1">
-        <p className="text-base font-bold text-green-900 dark:text-green-200">Welcome to Premium!</p>
+        <p className="text-base font-bold text-green-900 dark:text-green-200">{ui.welcomePremium}</p>
         <p className="mt-0.5 text-xs text-green-700 dark:text-green-300">
-          Every {exam.shortName} drill and practice test is unlocked, and so is {otherPremiumExams(exam)}.
+          {ui.premiumUnlocked(exam.shortName, ui.otherPremiumExams)}
         </p>
       </div>
-      <button type="button" onClick={dismiss} className="text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300" aria-label="Dismiss">
+      <button type="button" onClick={dismiss} className="text-green-600 dark:text-green-400 hover:text-green-800 dark:hover:text-green-300" aria-label={ui.dismiss}>
         &times;
       </button>
     </div>
@@ -435,6 +430,7 @@ function PurchaseBanner({ exam }: { exam: ExamV2Config }) {
 
 /** Goal vs best on the exam scale. Fixed targets have no edit control. */
 function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: number; best: number | null; onEdit?: () => void }) {
+  const ui = useV2Ui().dashboard;
   const { min, max } = exam.composite;
   const pos = (v: number) => `${Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100))}%`;
   const hit = best !== null && best >= goal;
@@ -442,15 +438,15 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
     <div className="mt-4 border-t border-gray-100 dark:border-gray-800 pt-3">
       <div className="flex items-center justify-between text-xs">
         <span className="text-gray-500 dark:text-gray-400">
-          Goal <span className="font-bold text-gray-900 dark:text-gray-50 tabular-nums">{goal}{exam.fixedGoal !== undefined && exam.composite.max === 100 ? "%" : ""}</span>
+          {ui.goalLabel} <span className="font-bold text-gray-900 dark:text-gray-50 tabular-nums">{goal}{exam.fixedGoal !== undefined && exam.composite.max === 100 ? "%" : ""}</span>
           {best !== null && (
             <>
-              {" · "}Best <span className={`font-bold tabular-nums ${hit ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{best}</span>
+              {" · "}{ui.bestLabel} <span className={`font-bold tabular-nums ${hit ? "text-green-600 dark:text-green-400" : "text-gray-900 dark:text-gray-50"}`}>{best}</span>
             </>
           )}
         </span>
         {onEdit && <button type="button" onClick={onEdit} className="flex items-center gap-1 font-semibold text-brand-dark">
-          <Pencil className="h-3 w-3" /> Change
+          <Pencil className="h-3 w-3" /> {ui.changeGoal}
         </button>}
       </div>
       <div className="relative mt-2 h-2 rounded-full bg-gray-100 dark:bg-gray-800">
@@ -459,7 +455,7 @@ function GoalStrip({ exam, goal, best, onEdit }: { exam: ExamV2Config; goal: num
       </div>
       <div className="mt-1 flex justify-between text-[10px] tabular-nums text-gray-500 dark:text-gray-400">
         <span>{min}</span>
-        <span>{best === null ? "Take the full test to see your score" : hit ? "Goal hit" : `${goal - best} to go`}</span>
+        <span>{best === null ? ui.takeTestToSeeScore : hit ? ui.goalHitShort : ui.pointsToGo(goal - best)}</span>
         <span>{max}</span>
       </div>
     </div>
@@ -485,13 +481,15 @@ function AttemptsPanel({
   inProgress: boolean;
   onDiscard?: () => void;
 }) {
+  const ui = useV2Ui().dashboard;
+  const lang = useV2Language();
   return (
     <div className={`rounded-b-xl border border-t-0 px-4 pb-4 ${complete ? "bg-gradient-to-r from-green-50 dark:from-green-950 to-emerald-50 dark:to-emerald-950 border-green-200 dark:border-green-800" : "bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800"}`}>
       <div className="divide-y divide-gray-100 dark:divide-gray-800">
         {attempts.map((a, i) => (
           <div key={a.completedAt} className="flex items-center justify-between py-2 text-sm">
             <span className="text-gray-500 dark:text-gray-400">
-              {i === attempts.length - 1 ? "First" : `#${attempts.length - i}`} · {shortDate(a.completedAt, exam.id)}
+              {i === attempts.length - 1 ? ui.attemptFirst : ui.attemptNumber(attempts.length - i)} · {shortDate(a.completedAt, exam.id, lang)}
             </span>
             <span className="flex items-center gap-3 tabular-nums">
               <span className="text-xs text-gray-500 dark:text-gray-400">{a.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}</span>
@@ -502,20 +500,20 @@ function AttemptsPanel({
       </div>
       <div className="mt-2 space-y-2">
         <Link href={resultsHref} className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-brand text-white font-bold text-sm px-4 py-3">
-          Review the latest attempt <ChevronRight className="h-4 w-4" />
+          {ui.reviewLatest} <ChevronRight className="h-4 w-4" />
         </Link>
         <Link href={testHref} className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-100 font-bold text-sm px-4 py-3">
-          {inProgress ? "Resume the test" : "Retake the test"} <ChevronRight className="h-4 w-4" />
+          {inProgress ? ui.resumeTest : ui.retakeTest} <ChevronRight className="h-4 w-4" />
         </Link>
         {onDiscard && (
           <button
             type="button"
             onClick={() => {
-              if (window.confirm("Discard the test in progress and start over next time?")) onDiscard();
+              if (window.confirm(ui.discardConfirm)) onDiscard();
             }}
             className="w-full text-center text-xs font-semibold text-gray-500 dark:text-gray-400"
           >
-            Discard the attempt in progress
+            {ui.discardAttempt}
           </button>
         )}
       </div>

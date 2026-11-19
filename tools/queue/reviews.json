@@ -890,6 +890,14 @@
         "pr": null,
         "findings": 4
       }
+    ],
+    "trapper": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 9
+      }
     ]
   },
   "pendingReviews": {

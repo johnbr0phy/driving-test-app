@@ -34,7 +34,7 @@ Q = [
  "Somewhere more remote", ["Right on the lane", "Just off the lane's edge", "On the lane, with a cage trap"],
  "Trails shared with people, pets and livestock are poor places for sets even when furbearers use them."),
 ("Why talk with other people who use the land you trap?",
- "To learn who is there and when", ["To ask them to keep pets home", "To tell them where your sets are", "To split the fur money"],
+ "To learn who is there and when", ["To ask them to keep pets home", "To tell them where your sets are", "To ask them to stay off the land"],
  "Knowing who else has permission and when they will be there helps you avoid catching their dogs and avoid conflicts."),
 ("Most furbearers are nocturnal. How can you use that to avoid hunting dogs on public land?",
  "Set at dusk, pull by morning", ["Set at dawn, check by noon", "Set only on weekday afternoons", "Check sets every other day"],

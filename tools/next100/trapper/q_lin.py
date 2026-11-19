@@ -13,7 +13,7 @@ Q = [
  "First light each morning", ["Around midday each day", "Late in the evening", "After dark each night"],
  "Most furbearers are nocturnal, so checking at first light shortens the time an animal is held."),
 ("You are sick and cannot run your line. What should you do?",
- "Have a licensed trapper check it", ["Check it twice as long tomorrow", "Ask the landowner to look at it", "Leave it until you recover"],
+ "Have a licensed trapper check it", ["Have an unlicensed friend check it", "Ask the landowner to look at it", "Check it as soon as you can drive"],
  "A licensed friend or family member who knows your sets can check or remove your traps; keep sketches so they can find them."),
 ("What is the most important reason to check traps early each morning?",
  "Animal welfare", ["Less fur theft", "Time to remake sets", "Fewer predators at the catch"],

@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is trapper education?",
-    a: "Trapper education is a course that teaches safe, humane, selective and legal trapping. The Association of Fish and Wildlife Agencies (AFWA) developed the North American Trapper Education Program and its manual so that every state teaches the same core content: furbearer management, regulations, Best Management Practices, traps and sets, safety, running a trapline and handling fur.",
+    a: "Trapper education is a course that teaches safe, humane, selective and legal trapping. The Association of Fish and Wildlife Agencies (AFWA) runs the North American Trapper Education Program and publishes its manual so that every state teaches the same core content: furbearer management, regulations, Best Management Practices, traps and sets, safety, running a trapline and handling fur.",
   },
   {
     q: "Do I need trapper education to get a trapping license?",

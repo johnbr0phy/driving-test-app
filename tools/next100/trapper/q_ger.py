@@ -25,7 +25,7 @@ Q = [
  "Folding lock-back", ["Fixed-blade skinner", "Serrated hunting knife", "Multi-tool blade"],
  "Folding lock-back knives are recommended; you will find many uses for one on the trapline."),
 ("Why should a beginner start with gear for only one or two species?",
- "To keep start-up costs low", ["New trappers are limited to two", "Fur buyers take only two", "Most traps fit only one species"],
+ "To keep start-up costs low", ["New trappers are limited to two", "Gear wears out faster with more sets", "Most traps fit only one species"],
  "Buying everything at once costs a lot. Learn with basic gear, earn some money from fur, then invest as you gain experience."),
 ("Why are uncovered flesh baits a problem at a set?",
  "Hawks and owls hunt by sight", ["Furbearers avoid visible bait", "Rain washes the scent away", "They spoil faster in the open"],

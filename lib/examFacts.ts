@@ -227,7 +227,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   trapper: {
     answer:
-      "Trapper education is a course, not a single national exam. The Association of Fish and Wildlife Agencies (AFWA) developed the North American Trapper Education Program and its manual, updated in 2022, so that state courses teach the same core content. Many states require first-time trappers to complete the course before buying a trapping license; each state runs its own course, often online followed by a field day, and sets its own test and passing score. The manual covers trapping's history and role, furbearer management, regulations, Best Management Practices, traps and equipment, selective water and land sets, cable devices, safety, running a trapline and handling fur.",
+      "Trapper education is a course, not a single national exam. The Association of Fish and Wildlife Agencies (AFWA) runs the North American Trapper Education Program and publishes its manual, updated in 2022, so that state courses teach the same core content. Many states require first-time trappers to complete the course before buying a trapping license; each state runs its own course, often online followed by a field day, and sets its own test and passing score. The manual covers trapping's history and role, furbearer management, regulations, Best Management Practices, traps and equipment, selective water and land sets, cable devices, safety, running a trapline and handling fur.",
     rows: [
       { label: "Program", value: "North American Trapper Education Program (AFWA)" },
       { label: "Course text", value: "AFWA Trapper Education Manual (2022)" },

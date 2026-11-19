@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
+import { getStripe, getPremiumProductId, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
@@ -112,10 +112,14 @@ export async function POST(request: NextRequest) {
     const country = visitorCountry(request);
     const price = premiumPriceFor(country);
 
+    const productId = price.currency === 'usd' ? null : await getPremiumProductId();
+
     // Create Checkout Session
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'payment',
+      // Dollars use the Stripe price; other currencies the same Stripe product,
+      // so the description and image are set once, in the Stripe dashboard.
       line_items: [
         PREMIUM_PRICE_ID && price.currency === 'usd'
           ? { price: PREMIUM_PRICE_ID, quantity: 1 }
@@ -123,10 +127,7 @@ export async function POST(request: NextRequest) {
               price_data: {
                 currency: price.currency,
                 unit_amount: stripeUnitAmount(price),
-                product_data: {
-                  name: PREMIUM_PRODUCT.name,
-                  description: PREMIUM_PRODUCT.description,
-                },
+                ...(productId ? { product: productId } : { product_data: PREMIUM_PRODUCT }),
               },
               quantity: 1,
             },

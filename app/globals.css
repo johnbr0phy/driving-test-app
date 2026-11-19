@@ -5549,6 +5549,20 @@
     --brand-gradient-to: 318 50% 95%;
   }
 
+  /* California CTEC tax preparer theme: muted periwinkle blue */
+  [data-theme="ctec"] {
+    --brand: 230 35% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 230 50% 95%;
+    --brand-hover: 230 35% 43%;
+    --brand-dark: 230 35% 41%;
+    --brand-darker: 230 30% 36%;
+    --brand-muted: 230 25% 70%;
+    --brand-border: 230 30% 78%;
+    --brand-border-light: 230 30% 88%;
+    --brand-gradient-to: 245 50% 95%;
+  }
+
   [data-theme="ea1"] {
     --brand: 39 85% 20%;
     --brand-foreground: 0 0% 100%;
@@ -11385,6 +11399,18 @@
     --brand-muted: 303 25% 45%;
     --brand-dark: 303 75% 65%;
     --brand-darker: 303 70% 78%;
+  }
+
+  .dark [data-theme="ctec"] {
+    --brand: 230 35% 50%;
+    --brand-hover: 230 35% 43%;
+    --brand-light: 230 45% 13%;
+    --brand-gradient-to: 245 40% 11%;
+    --brand-border-light: 230 30% 24%;
+    --brand-border: 230 30% 34%;
+    --brand-muted: 230 25% 45%;
+    --brand-dark: 230 35% 65%;
+    --brand-darker: 230 30% 78%;
   }
 
   .dark [data-theme="ea1"] {

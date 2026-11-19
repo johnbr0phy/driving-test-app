@@ -293,6 +293,7 @@ import "./cpcta";
 import "./cehrs";
 import "./cpabar";
 import "./cpaisc";
+import "./ctec";
 import "./ea1";
 import "./nzboat";
 import "./sgsnb";

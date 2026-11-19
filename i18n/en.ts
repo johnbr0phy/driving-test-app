@@ -1316,6 +1316,17 @@ export const en = {
     cehrsCompliance: "Regulatory Compliance",
     cehrsReporting: "Reporting",
     // cpabar
+    // ctec
+    ctecEthics: "Ethics & Preparer Rules",
+    ctecFiling: "Filing, Status & Dependents",
+    ctecIncome: "Income & Exclusions",
+    ctecGains: "Basis, Gains & Losses",
+    ctecBusiness: "Schedule C, SE Tax & Rentals",
+    ctecDeductions: "Adjustments & Deductions",
+    ctecCredits: "Credits & Payments",
+    ctecCaResidency: "California Residency & Filing",
+    ctecCaIncome: "California Adjustments",
+    ctecCaCredits: "California Credits & Payments",
     cpaiscInfra: "IT Infrastructure & Cloud",
     cpaiscAis: "Enterprise & Accounting Systems",
     cpaiscAvail: "Availability & Recovery",

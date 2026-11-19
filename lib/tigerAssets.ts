@@ -105,6 +105,7 @@ const BORROWED_SETS: Record<string, string> = {
   afsp: "cpareg",
   cpabar: "cpafar",
   cpaisc: "cpafar",
+  ctec: "cpareg",
   cpcta: "cna",
   cpatcp: "cpareg",
   aufirearmswa: "capal",

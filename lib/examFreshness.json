@@ -586,6 +586,14 @@
       "what": "The disposable cylinder heel rule of 40 CFR 84.116 takes effect.",
       "action": "Check the rule is still in force before that date (the Emissions Reduction and Reclamation rule is under reconsideration; the May 2026 proposal covers refrigerated transport only) and update the cylinder items if it changed.",
       "source": "https://www.ecfr.gov/current/title-40/section-84.116"
+    },
+    {
+      "exam": "ctec",
+      "date": "2027-01-01",
+      "kind": "outline",
+      "what": "CTEC's updated CP23A qualifying education guidelines take effect, and courses move to tax year 2026 law (returns filed in 2027).",
+      "action": "Read the new CP23A exhibit, then update every 2025 figure (standard deductions, credits, CalEITC and renter's credit limits, exemption credits, mileage) to the 2026 IRS and FTB amounts and add any new required topics.",
+      "source": "https://ctec.org/education-providers/"
     }
   ]
 }

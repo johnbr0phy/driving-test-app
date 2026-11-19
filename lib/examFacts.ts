@@ -169,6 +169,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "IRS Publications 6079 (Rev. 5-2026), 6012 (Rev. 3-2026) and 6026 and the IRS Annual Filing Season Program FAQs, checked November 2026",
     source: { name: "IRS: Annual Filing Season Program frequently asked questions", url: "https://www.irs.gov/tax-professionals/frequently-asked-questions-annual-filing-season-program" },
   },
+  ctec: {
+    answer:
+      "California requires anyone who prepares tax returns for a fee to register with the California Tax Education Council (CTEC) unless they are a California CPA, an enrolled agent or a State Bar attorney. A new preparer completes a 60-hour qualifying education course from a CTEC approved provider, 45 hours of federal tax subjects (2 of them ethics) and 15 hours of California tax law, which ends in a final exam. CTEC's provider standards require at least five multiple-choice questions per course hour, at least 300 in all, with the federal, ethics and California parts tested separately and 70 percent correct needed to pass. Within 18 months of the course the preparer registers with a Live Scan background check, an IRS PTIN and a $5,000 surety bond, then renews by October 31 each year with 20 hours of continuing education.",
+    rows: [
+      { label: "Course", value: "60 hours: 45 federal (2 ethics) and 15 California" },
+      { label: "Final exam", value: "At least 5 multiple-choice questions per hour, 300 or more" },
+      { label: "Passing score", value: "70% correct, each part tested separately" },
+      { label: "Given by", value: "CTEC approved education providers" },
+      { label: "Tax year covered", value: "2025 returns in this practice" },
+      { label: "Register within", value: "18 months of finishing the course" },
+      { label: "Also required", value: "Live Scan, IRS PTIN and a $5,000 surety bond" },
+      { label: "Renewal", value: "By October 31, with 20 CE hours (10 federal, 3 update, 2 ethics, 5 California)" },
+      { label: "Exempt", value: "California CPAs, enrolled agents and State Bar attorneys" },
+    ],
+    basedOn: "CTEC's 2026 qualifying education provider application with the CP23A curriculum guidelines (revised July 24, 2026), its new preparer and FAQ pages, and the 2025 IRS and Franchise Tax Board publications, checked November 2026",
+    source: { name: "CTEC: New preparer application", url: "https://ctec.org/taxpreparers/new-application/" },
+  },
   esthetician: {
     answer:
       "Most US states license estheticians (skin care specialists) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Esthetics Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline has two domains: Scientific Concepts, 55 percent (microbiology, infection control and safety, anatomy and physiology, the skin, skin disorders, hair and chemistry), and Skin Care and Services, 45 percent (consultation and skin analysis, facial procedures, electrical equipment, makeup, body treatments, lash and brow services, hair removal and advanced treatments). Each state board sets its passing score; many use 75. Training hours, fees, scope of practice and the practical exam vary by state, and some states use a different exam provider.",

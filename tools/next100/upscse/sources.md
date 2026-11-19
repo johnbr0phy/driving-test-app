@@ -2,6 +2,13 @@
 
 All checked 2026-11-01.
 
+**2026-11-19, official calendar.** UPSC, Examination Calendar page, https://upsc.gov.in/examination-calendar/
+(read with curl; it lists "Annual Calendar 2027", uploaded 20 May 2026, last updated 11 Jun 2026, no revisions), and
+the calendar itself, https://www.upsc.gov.in/uploads/2026/06/Calendar-Year-2027-Engl-200526.pdf ("As on 20.05.2026",
+text extracted from the PDF): row 9, "Civil Services (Preliminary) Examination, 2027", notification 13.01.2027, last
+date for applications 02.02.2027, commencement 23.05.2027 (Sunday), 1 day; Civil Services (Main) from 20.08.2027,
+5 days. This replaces the coaching-site calendar below as the source for the 2027 dates, which agree.
+
 ## Pattern followed
 
 **Union Public Service Commission, Examination Notice No. 05/2026-CSE, dated 04.02.2026** (Civil Services
@@ -36,9 +43,8 @@ The landing labels them "guides list".
 
 **Dates.** Preliminary 2026 held on 24 May 2026 (UPSC exam page as quoted in search results and the Insights page,
 https://www.insightsonindia.com/2026/02/04/upsc-2026-notification/). The UPSC calendar for 2027, released in May 2026,
-puts the CSE 2027 Preliminary on 23 May 2027, notification 13 January 2027 (secondary reports: Drishti IAS
-https://www.drishtiias.com/blog/upsc-calendar-2027-exam-dates, Business Today, Careers360, Free Press Journal; the
-calendar PDF itself was not opened). Used only for "2027" in the landing title.
+puts the CSE 2027 Preliminary on 23 May 2027, notification 13 January 2027 (first from secondary reports: Drishti IAS, Business Today, Careers360, Free Press Journal; confirmed on the
+official calendar PDF on 2026-11-19, see the top of this file). Used only for "2027" in the landing title.
 
 ## What is modelled
 

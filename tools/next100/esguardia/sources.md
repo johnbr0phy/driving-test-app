@@ -33,12 +33,15 @@ academy's test bank or a commercial app. Checked 2026-11-06 unless noted.
   Px = Y/T [A - (E/(N-1))], A right answers, E wrong answers, N options. With N=4 each wrong answer
   subtracts one third of a right answer.
   https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/oposiciones/cuerpo-de-la-guardia-civil/escala-de-cabos-y-guardias/pruebas-de-seleccion/
-  Redopositor's 2026 guide says the same ("1 acierto por cada 3 errores"):
-  https://redopositor.com/blog/es-examen-guardia-civil-2026-estructura-prueba-conocimientos/
 - Resolución de 11 de junio de 2026 (BOE-A-2026-12817), provisional list of admitted candidates:
   first test (conocimientos and psicotécnica) on 11 July 2026, 07:30 on the peninsula and the
   Balearics, 06:30 in the Canaries, at 20 venues. Read 2026-11-06:
   https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-12817
+- Not official, kept for reference only (moved below the BOE links 2026-11-19 so the official pages are
+  the ones watched): Redopositor's 2026 guide, re-read 2026-11-19, still gives 140 minutes, 100
+  conocimientos questions with four options (minimum 50), 20 English questions (minimum 8), the
+  six-error rule for ortografía and gramática and the formula with N=4, which agree with the BOE above:
+  https://redopositor.com/blog/es-examen-guardia-civil-2026-estructura-prueba-conocimientos/
 - Candidate numbers (press, not used in copy): 26.806 sat the 11 July 2026 exam per democrata.es,
   https://www.democrata.es/sociedad/oposiciones-guardia-civil-2026-26806-aspirantes-3240-plazas/
 

@@ -9,8 +9,11 @@ an academy's test bank or an app. Checked 2026-11-06 unless noted.
   oposición libre ... Escala Básica, categoría de Policía (BOE núm. 167, 10 July 2026,
   BOE-A-2026-15055, pp. 96257-96305), downloaded and read 2026-11-06:
   https://www.boe.es/boe/dias/2026/07/10/pdfs/BOE-A-2026-15055.pdf
-  (found through the BOE sumario API for 2026-07-10:
-  https://www.boe.es/datosabiertos/api/boe/sumario/20260710)
+  and its HTML text on the BOE, re-read 2026-11-19 (base 6.1.1 still "cincuenta minutos", "cien
+  preguntas", "tres alternativas", formula [A-E/(n-1)]):
+  https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-15055
+  (it was found through the BOE sumario API for 2026-07-10, www.boe.es/datosabiertos/api/boe/sumario/20260710,
+  which answers HTTP 400 without an Accept header, so it is no longer linked as a watched source)
   - Base 6.1: every test of the fase de oposición is eliminatory.
   - Base 6.1.1, primera prueba (de conocimientos): "contestación por escrito en cincuenta minutos a un
     cuestionario de cien preguntas, con un enunciado y tres alternativas de respuestas de las que

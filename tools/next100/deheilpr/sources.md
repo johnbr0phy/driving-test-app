@@ -20,7 +20,9 @@ Leitlinien; no past paper, school trainer or app question was used.
 URLs:
 - Landratsamt München, Merkblatt für die Heilpraktikerkenntnisüberprüfung, Stand Juli 2025 (copy hosted by LRA Erding): https://www.landkreis-erding.de/media/23374/merkblatt-heilpraktiker-stand-juli-2023.pdf
 - Landratsamt Fürstenfeldbruck, Merkblatt für Heilpraktikeranwärter/innen, Stand 09/2025: https://www.lra-ffb.de/fileadmin/user_upload/lra-ffb/pdf/4/45/Merkblatt_fuer_Heilpraktiker_und_Psychotherapeuten_09_25.pdf
-- Landkreis Bayreuth, Heilpraktikeranwärter ab 2024 (listed in the brief, not re-read): https://www.landkreis-bayreuth.de/media/11968/heilpraktikeranwaerter-ab-2024.pdf
+- Landkreis Bayreuth, "Heilpraktikeranwärter ab 2024" (listed in the brief, never re-read and not relied on):
+  its PDF answered HTTP 404 on 2026-11-19 and was removed from the watched links; the two Merkblätter
+  above and the HeilprG below carry every fact used.
 
 Not confirmed, so not stated anywhere: a national candidate count, national pass rates, fees
 (each authority sets its own), exam dates outside Bavaria.

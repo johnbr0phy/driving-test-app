@@ -5,7 +5,9 @@ All checked 5 November 2026.
 ## Official (law and regulation)
 
 - Law No. (12) of 2016 Regulating the Security Industry in the Emirate of Dubai, Dubai Legislation
-  Portal: https://dlp.dubai.gov.ae/Legislation%20Reference/2016/Law%20No.%20(12)%20of%202016.html
+  Portal: https://dlp.dubai.gov.ae/Legislation%20Reference/2016/Law%20No.%20%2812%29%20of%202016.html
+  (2026-11-19: brackets in this and the 2018 link are now written %28 and %29, because the source
+  watcher cut the URL at "(" and got HTTP 404; the full link answers 200.)
   - Establishes the Security Industry Regulatory Agency (SIRA); Art. 17(a) no person may provide
     security services in Dubai without a licence; Art. 7 SIRA develops or approves training
     curricula and supervises training and testing; Art. 22 nominated SIRA employees act as law
@@ -44,7 +46,7 @@ All checked 5 November 2026.
   - Art. 25: public events need guarding and visitor entry and exit by a SIRA-licensed provider, and
     warning and guidance signs as SIRA approves.
 - Resolution No. (1) of 2018 (English, superseded July 2026, checked only for context):
-  https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Resolution%20No.%20(1)%20of%202018.html
+  https://dlp.dubai.gov.ae/Legislation%20Reference/2018/Resolution%20No.%20%281%29%20of%202018.html
 
 ## Exam format (not published by SIRA)
 

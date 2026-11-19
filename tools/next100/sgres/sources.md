@@ -20,7 +20,9 @@
   Unit 1 11 h (1.1 1.5, 1.2 1, 1.3 1.5, 1.4 2, 1.5 1, 1.6 1, 1.7 1.5, 1.8 1.5); Unit 2 23 h (2.1 5,
   2.2 3, 2.3 3, 2.4 3, 2.5 1.5, 2.6 to 2.11 1 each, 2.12 2.5); Unit 3 24 h; Unit 4 15 h.
 - CEA, "Anticipated FAQs on revision of RES Examination Syllabus" (version as at 27 Aug 2025):
-  https://isomer-user-content.by.gov.sg/71/e331bb2c-1bcd-46d7-85f1-8f2d8c448c68/RES%20FAQs%20(Version%20as%20at%2027%20Aug%202025)v1.pdf
+  https://isomer-user-content.by.gov.sg/71/e331bb2c-1bcd-46d7-85f1-8f2d8c448c68/RES%20FAQs%20%28Version%20as%20at%2027%20Aug%202025%29v1.pdf
+  (2026-11-19: the brackets in this link are now written %28 and %29, because the source watcher
+  cut the URL at "(" and got HTTP 403; the full link answers 200 with the same PDF.)
   New units 3.2 (professional practice, ethics and conduct), 3.4 (PMLPFTF obligations) and 3.9
   (green buildings and leases); foreign worker housing removed; no change to format or duration
   from 2027; the RES course certificate is valid two years from course completion; a pass in one

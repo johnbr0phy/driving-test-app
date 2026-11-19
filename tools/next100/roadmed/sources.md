@@ -37,14 +37,21 @@ Two official documents were read in full:
     organic compounds, isomerism, alcohols, phenols, amines, aldehydes and ketones, carboxylic
     acids and derivatives, carbohydrates, amino acids, proteins, fats, nucleic acids, enzymes,
     hormones, vitamins, medicines, yield and conversion. Textbooks: Chimie IX, X and XI (C1).
-- edupedu.ro, "Admitere Medicină 2026. Caietele cu întrebări de concurs la Chimie și Fizică, UMF
-  Carol Davila" (read 2026-11-07): test on Sunday 26 July 2026 from 9:00; 6,916 candidates
-  registered at Carol Davila.
-  https://www.edupedu.ro/admitere-medicina-2026-caietele-cu-intrebari-de-concurs-la-chimie-si-fizica-umf-carol-davila-descarca/
+- UMF "Iuliu Hațieganu" Cluj-Napoca, calendar of the July 2026 admission (official PDF, text
+  read 2026-11-19): registration 7 to 23 July 2026, "26 iulie 2026 examen scris de admitere",
+  confirmation of places 29 July to 12 August 2026:
+  https://cdn.umfcluj.ro/uploads/2026/02/Admitere-2026-Calendarul-concursului-de-admitere-pentru-iulie-2026.pdf
 
 So: number of questions, time, single versus multiple answers, the second subject and the
 syllabus extracts all vary by university and year. The landing says so and gives the Carol Davila
 and Cluj figures as examples, dated 2026. No question asks about the test itself.
+
+Not official, kept for reference only (moved below the official documents 2026-11-19 so they are
+the pages watched; nothing in the bank or landing rests on it): edupedu.ro, "Admitere Medicină
+2026. Caietele cu întrebări de concurs la Chimie și Fizică, UMF Carol Davila" (read 2026-11-07,
+re-read 2026-11-19): test on Sunday 26 July from 9:00, the date the Cluj Ghid above also gives;
+it links the published Chemistry and Physics booklets, which were not used.
+https://www.edupedu.ro/admitere-medicina-2026-caietele-cu-intrebari-de-concurs-la-chimie-si-fizica-umf-carol-davila-descarca/
 
 ## How the bank models it
 - Four practice tests of 50: 30 biology, 20 chemistry, the 60:40 Carol Davila split.

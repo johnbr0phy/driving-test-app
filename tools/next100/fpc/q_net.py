@@ -56,7 +56,7 @@ Q = [
 ("Ten employees each earn $5,000 in the first quarter, and the employer gets the full state credit. For first-quarter FUTA the employer should:",
  "Carry it to the next quarter", ["Deposit $300 by April 30", "Deposit $300 by April 15", "Pay $300 with Form 941"],
  "FUTA is $50,000 x 0.6% = $300. A quarterly liability of $500 or less carries forward until the cumulative amount is more than $500."),
-("The same ten employees each earn $6,000 in the second quarter. Second-quarter FUTA liability at 0.6% is:",
+("Ten employees each earned $5,000 in the first quarter and earn $6,000 each in the second. Second-quarter FUTA liability at 0.6% is:",
  "$120.00", ["$360.00", "$420.00", "$1,200.00"],
  "Each has only $2,000 left under the $7,000 base, so FUTA wages are $20,000 x 0.6% = $120. $420 is the cumulative figure.", C(10 * (7000 - 5000) * 0.006)),
 ("Paying wages in a credit reduction state means the employer:",

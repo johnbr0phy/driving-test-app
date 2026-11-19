@@ -954,6 +954,14 @@
         "pr": null,
         "findings": 3
       }
+    ],
+    "fpc": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 6
+      }
     ]
   },
   "pendingReviews": {

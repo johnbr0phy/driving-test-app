@@ -253,6 +253,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NATE's Core exam KATE, Traditional Pathway and Recertification FAQ pages, checked November 2026",
     source: { name: "NATE Core exam KATE (PDF)", url: "https://natex.org/wp-content/uploads/2022/06/Core-KATE-Final.pdf" },
   },
+  contractorlaw: {
+    answer:
+      "The contractor Business and Law exam is the business part of the licensing exam that many state contractor boards require, often next to a trade exam. Each state writes and runs its own, usually through PSI or Prometric, and many base it on a state edition of the NASCLA Contractors Guide to Business, Law and Project Management. Georgia's is 50 questions in 120 minutes with 70 percent to pass and open book; Hawaii's is 80 questions in 180 minutes with 75 percent to pass, closed book. Topics include licensing, estimating and bidding, financial management, tax and labor law, contracts, project management and liens, risk management and safety.",
+    rows: [
+      { label: "Questions", value: "Varies by state (Georgia 50, Hawaii 80)" },
+      { label: "Time", value: "Varies (Georgia 120 min, Hawaii 180 min)" },
+      { label: "Passing score", value: "Varies (Georgia 70%, Hawaii 75%)" },
+      { label: "Format", value: "Open or closed book, set by each state" },
+      { label: "Reference", value: "Often a state edition of the NASCLA Contractors Guide" },
+      { label: "Given by", value: "State contractor boards via PSI or Prometric" },
+    ],
+    basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
+    source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

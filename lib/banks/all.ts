@@ -315,6 +315,7 @@ import "./cahambasic";
 import "./cadronebasic";
 import "./carscook";
 import "./carshair";
+import "./contractorlaw";
 import "./natecore";
 import "./r410a";
 import "./ascpmls";

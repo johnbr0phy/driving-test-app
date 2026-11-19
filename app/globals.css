@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* Contractor Business and Law theme: muted dusty rose */
+  [data-theme="contractorlaw"] {
+    --brand: 344 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 344 25% 96%;
+    --brand-hover: 344 25% 36%;
+    --brand-dark: 344 25% 32%;
+    --brand-darker: 344 20% 24%;
+    --brand-muted: 344 25% 70%;
+    --brand-border: 344 25% 80%;
+    --brand-border-light: 344 20% 89%;
+    --brand-gradient-to: 359 50% 96%;
+  }
   /* NATE Core exam theme: muted slate mauve */
   [data-theme="natecore"] {
     --brand: 290 20% 40%;

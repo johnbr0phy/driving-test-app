@@ -115,3 +115,30 @@ dates, payer order, modifiers, collections), standing in for AAPC's source-docum
 - Credentialing, A/R aging, superbills, clearinghouses and claim audits are asked as general
   billing-office concepts, not as any payer's rule. Patient dismissal is not asked.
 - No fees, dollar thresholds that change yearly, conversion factor values or deductibles.
+
+## Second review (2026-11-19)
+
+Blind pass by a second reviewer: 199 of 200 keys matched. Changes:
+
+- CPB-CAS-025: key was "Excess units denied". For a claim-line MUE (MAI 1), all units on the line
+  are denied when the units exceed the MUE value (CMS Medicare NCCI MUE FAQ and Policy Manual
+  ch. 1, https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-faq-library,
+  checked 2026-11-19). Key now "The whole line is denied".
+- CPB-PAY-034: "Other plan pays slowly" was also defensible (conditional payment for no-fault and
+  liability). Stem now limited to a primary group health plan; distractor replaced.
+- Options cued the key in HIPAA and compliance: HIP-006, HIP-007, HIP-008, HIP-009, HIP-012,
+  REM-024, REM-027 rewritten with plausible distractors or new facts.
+- Fact-and-answer pairs already asked in the cpc, cca, ccs, cmaa or cehrs banks were replaced
+  (PAY-001, PAY-007, PAY-009, REG-001, REG-002, REG-003, REG-009, REG-015, REG-016, REG-019,
+  REG-024, HIP-001, HIP-003, HIP-011, CLM-020, CLM-026, COD-002, COD-005, COD-010, COD-013, COD-015,
+  COD-016, CAS-020, REM-001). New facts rest on:
+  - 42 CFR 424.32(d)(1)(viii), ASCA small provider (fewer than 10 FTEs for physicians and suppliers,
+    25 for providers of services), eCFR, checked 2026-11-19.
+  - 45 CFR 164.524(a)(4), review of a denial by an uninvolved licensed health care professional,
+    eCFR, checked 2026-11-19; unencrypted e-mail at the individual's request after warning:
+    Omnibus HIPAA Rule preamble, 78 FR 5566, 5634 (Jan. 25, 2013).
+  - Social Security Act section 1128J(d) (42 U.S.C. 1320a-7k(d)): report and return an identified
+    overpayment within 60 days; a kept overpayment is an obligation under the False Claims Act.
+  - CMS Medicare Claims Processing Manual ch. 12 (above): 090 global period, modifier 78 with no new
+    global period, new patient rule by exact specialty; ch. 29: form CMS-20027; MSP booklet (above):
+    COBRA secondary for aged beneficiaries, workers' compensation denials.

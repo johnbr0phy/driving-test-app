@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* ExCPT (NHA) pharmacy technician theme */
+  [data-theme="excpt"] {
+    --brand: 287 100% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 287 70% 96%;
+    --brand-hover: 287 100% 25%;
+    --brand-dark: 287 100% 22%;
+    --brand-darker: 287 90% 14%;
+    --brand-muted: 287 40% 72%;
+    --brand-border: 287 40% 80%;
+    --brand-border-light: 287 35% 90%;
+    --brand-gradient-to: 300 60% 96%;
+  }
   /* Contractor Business and Law theme: muted dusty rose */
   [data-theme="contractorlaw"] {
     --brand: 344 25% 42%;

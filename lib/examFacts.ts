@@ -267,6 +267,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
     source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
   },
+  excpt: {
+    answer:
+      "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 pretest)" },
+      { label: "Time", value: "2 hours 10 minutes" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Largest domain", value: "Dispensing process, 43 of 100" },
+      { label: "Current plan", value: "2023 job analysis, exams from July 9, 2025" },
+      { label: "Eligibility", value: "Training program within 5 years, or 1 year (1,200 hours) of supervised work in the last 3 years" },
+      { label: "Where", value: "PSI testing center or live remote proctoring" },
+      { label: "Renewal", value: "Every 2 years, 20 CE credits (1 law, 1 patient safety)" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's ExCPT test plan (2023 job analysis), CPhT certification page and 2024 pass rate report, checked November 2026",
+    source: { name: "NHA: Certified Pharmacy Technician (CPhT)", url: "https://www.nhanow.com/certification/nha-certifications/certified-pharmacy-technician-(cpht)" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

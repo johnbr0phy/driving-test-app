@@ -142,6 +142,7 @@ const TEACHER_LED = new Set([
   "phnle", "phmedtech", "phpharm", "phmidwife", "phpsychom", "phcle", "phrebroker",
   "nailtech",
   "sfpd1", "sfappbuilder",
+  "excpt",
   "contractorlaw",
   "natecore",
   "r410a",

@@ -866,6 +866,14 @@
         "kind": "stem trim, then keyless blind answering (Opus) of every changed question plus source check of every flag",
         "findings": 7
       }
+    ],
+    "backflow": [
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 0
+      }
     ]
   },
   "pendingReviews": {

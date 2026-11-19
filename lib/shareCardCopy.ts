@@ -17,6 +17,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cbspd: { title: "Free CBSPD CSPDT Practice Test", description: "200 original questions on CBSPD's technician exam outline, from decontamination to sterilization and storage. Free to start." },
   ascpmlt: { title: "Free MLT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC medical laboratory technician content guideline, four 50-question practice tests." },
   istqb: { title: "ISTQB Foundation Level (CTFL v4.0)", description: "Practise the 40-question CTFL exam: principles, test levels, reviews, test techniques, test management and tools." },
+  cobit: { title: "COBIT 2019 Foundation", description: "Practise the 75-question COBIT 2019 Foundation exam: principles, components, the goals cascade, the 40 objectives, design and implementation." },
   ascpht: { title: "Free HT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC histotechnician content guideline, four 50-question practice tests." },
   aufirearmsnsw: { title: "NSW Firearms Safety Practice Test", description: "Review NSW firearms law, licence categories, permits, storage and safe handling before your course." },
   nzham: { title: "Free NZ Amateur Radio Practice Test", description: "200 original questions on the New Zealand amateur radio syllabus, the GURL and PIB 46. Four 50-question practice tests. Free to start." },

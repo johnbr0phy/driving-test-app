@@ -211,6 +211,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ASCP BOC Medical Laboratory Scientist MLS(ASCP) and MLS(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
     source: { name: "ASCP BOC: MLS(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf" },
   },
+  cobit: {
+    answer:
+      "The ISACA COBIT 2019 Foundation exam has 75 multiple-choice questions in 2 hours, taken online with a remote proctor, and you need a score of 65 percent or higher to pass. There are no prerequisites. ISACA weights it by domain: Governance System and Components 30 percent, Governance and Management Objectives 23, Principles 13, Framework Introduction 12, Implementation 8, Designing a Tailored Governance System 7, Performance Management 4 and Business Case 3. ISACA replaced it with the COBIT 7 Foundation certificate on 19 November 2026, and the COBIT 2019 exam can still be bought until 30 June 2027.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "65 percent or higher" },
+      { label: "Biggest domain", value: "Governance System and Components, 30%" },
+      { label: "Delivery", value: "Online, remotely proctored" },
+      { label: "Last day to buy", value: "30 June 2027 (COBIT 7 Foundation replaces it)" },
+    ],
+    basedOn: "ISACA's COBIT Foundation certificate page and ISACA's public COBIT 2019 material, checked November 2026",
+    source: { name: "ISACA", url: "https://www.isaca.org/credentialing/cobit/cobit-foundation" },
+  },
   istqb: {
     answer:
       "The ISTQB Certified Tester Foundation Level (CTFL v4.0) exam has 40 multiple-choice questions worth one point each, and you need 26 points (65 percent) to pass. You have 60 minutes, or 75 minutes if you take it in a language that is not your native one. Questions come from six syllabus chapters: Fundamentals of Testing 8, Testing Throughout the SDLC 6, Static Testing 4, Test Analysis and Design 11, Managing the Test Activities 9 and Test Tools 2. The current syllabus document is v4.0.1.",

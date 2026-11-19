@@ -5704,6 +5704,19 @@
     --brand-border-light: 20 60% 90%;
     --brand-gradient-to: 34 80% 97%;
   }
+  /* COBIT 2019 Foundation theme: vivid magenta (v2 exam; matches lib/v2/exams/cobit.ts theme) */
+  [data-theme="cobit"] {
+    --brand: 324 100% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 324 80% 97%;
+    --brand-hover: 324 100% 29%;
+    --brand-dark: 324 100% 25%;
+    --brand-darker: 324 90% 16%;
+    --brand-muted: 324 50% 72%;
+    --brand-border: 324 60% 82%;
+    --brand-border-light: 324 60% 90%;
+    --brand-gradient-to: 338 80% 97%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -12073,6 +12086,17 @@
     --brand-muted: 20 45% 45%;
     --brand-dark: 20 90% 65%;
     --brand-darker: 20 85% 78%;
+  }
+  .dark [data-theme="cobit"] {
+    --brand: 324 100% 44.1%;
+    --brand-hover: 324 100% 36.1%;
+    --brand-light: 324 45% 13%;
+    --brand-gradient-to: 338 40% 11%;
+    --brand-border-light: 324 35% 24%;
+    --brand-border: 324 40% 34%;
+    --brand-muted: 324 45% 45%;
+    --brand-dark: 324 100% 65%;
+    --brand-darker: 324 90% 78%;
   }
   .dark [data-theme="cpb"] {
     --brand: 252 95% 50%;

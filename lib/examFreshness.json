@@ -91,6 +91,14 @@
       "source": "https://www.peoplecert.org/help-and-support/faq-itil"
     },
     {
+      "exam": "cobit",
+      "date": "2027-06-30",
+      "kind": "sunset",
+      "what": "Last day to buy ISACA's COBIT 2019 Foundation exam; COBIT 7 Foundation replaced it on 19 November 2026.",
+      "action": "Build COBIT 7 Foundation from ISACA's COBIT 7 material once it is public, then retire COBIT 2019.",
+      "source": "https://www.isaca.org/credentialing/cobit/cobit-foundation"
+    },
+    {
       "exam": "netplus",
       "date": "2027-06-01",
       "kind": "sunset",

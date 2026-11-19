@@ -82,6 +82,7 @@ import "@/lib/v2/banks/sc900";
 import "@/lib/v2/banks/cissp";
 import "@/lib/v2/banks/itil";
 import "@/lib/v2/banks/istqb";
+import "@/lib/v2/banks/cobit";
 import "@/lib/v2/banks/prince2";
 import "@/lib/v2/banks/psm";
 import "@/lib/v2/banks/capm";

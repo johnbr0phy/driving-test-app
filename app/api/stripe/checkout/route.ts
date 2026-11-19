@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStripe, PREMIUM_PRODUCT, premiumDescription } from '@/lib/stripe';
+import { getStripe, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
@@ -116,8 +116,8 @@ export async function POST(request: NextRequest) {
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'payment',
-      // Always inline: the description names the exam the buyer came from
-      // (the fixed Stripe Price carried DMV-only text, shown to CDL buyers too).
+      // Always inline, so every buyer sees the same description (the fixed
+      // Stripe Price carried DMV-only text from the dashboard).
       line_items: [
         {
           price_data: {
@@ -125,7 +125,7 @@ export async function POST(request: NextRequest) {
             unit_amount: stripeUnitAmount(price),
             product_data: {
               name: PREMIUM_PRODUCT.name,
-              description: premiumDescription(typeof location === 'string' ? location : null),
+              description: PREMIUM_PRODUCT.description,
             },
           },
           quantity: 1,

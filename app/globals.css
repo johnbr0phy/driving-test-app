@@ -5704,6 +5704,19 @@
     --brand-border-light: 252 60% 90%;
     --brand-gradient-to: 266 80% 97%;
   }
+  /* CBCS (NHA) Certified Billing and Coding Specialist theme: muted orchid rose */
+  [data-theme="cbcs"] {
+    --brand: 322 45% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 322 45% 97%;
+    --brand-hover: 322 45% 42%;
+    --brand-dark: 322 45% 34%;
+    --brand-darker: 322 45% 22%;
+    --brand-muted: 322 30% 72%;
+    --brand-border: 322 35% 82%;
+    --brand-border-light: 322 35% 90%;
+    --brand-gradient-to: 336 45% 97%;
+  }
   /* Title insurance agent theme: vivid violet (296 100% 36%) */
   [data-theme="titleagent"] {
     --brand: 296 100% 36%;
@@ -12217,6 +12230,17 @@
     --brand-muted: 252 45% 45%;
     --brand-dark: 252 95% 70%;
     --brand-darker: 252 90% 78%;
+  }
+  .dark [data-theme="cbcs"] {
+    --brand: 322 45% 50%;
+    --brand-hover: 322 45% 42%;
+    --brand-light: 322 45% 13%;
+    --brand-gradient-to: 336 40% 11%;
+    --brand-border-light: 322 35% 24%;
+    --brand-border: 322 35% 34%;
+    --brand-muted: 322 30% 45%;
+    --brand-dark: 322 45% 65%;
+    --brand-darker: 322 45% 78%;
   }
   .dark [data-theme="ieplumbt2"] {
     --brand: 228 40% 50%;

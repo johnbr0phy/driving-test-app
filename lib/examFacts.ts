@@ -254,6 +254,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAPC's Taking the CRC exam page, checked November 2026",
     source: { name: "AAPC: Taking the CRC exam", url: "https://www.aapc.com/certifications/crc/taking-the-crc-exam" },
   },
+  cbcs: {
+    answer:
+      "The Certified Billing and Coding Specialist (CBCS) exam is the National Healthcareer Association's (NHA) certification exam for medical billing and coding specialists. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 3 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2020 job analysis, has four domains: Billing and Reimbursement 33 items, Coding and Coding Guidelines 32, Insurance Eligibility and Other Payer Requirements 20, and The Revenue Cycle and Regulatory Compliance 15. Since September 24, 2024 code books are not allowed; each coding question shows the information it needs. It is taken at a school, a PSI test center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "125 (100 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Domains", value: "Billing and Reimbursement 33, Coding 32, Insurance Eligibility 20, Revenue Cycle and Compliance 15" },
+      { label: "Code books", value: "Not allowed since September 24, 2024" },
+      { label: "Eligibility", value: "Billing and coding program within 5 years, or diploma plus 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
+      { label: "Where", value: "School, PSI test center or live remote proctoring" },
+      { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CBCS test plan (2020 job analysis), CBCS FAQ (June 2025), certification page and Candidate Handbook (updated October 2026), checked November 2026",
+    source: { name: "NHA: Billing and Coding Specialist (CBCS)", url: "https://www.nhanow.com/certifications/billing-coding" },
+  },
   cpb: {
     answer:
       "The CPB exam is AAPC's certification test for professional medical billers. It has 135 multiple-choice questions in one 4-hour sitting, and you need 70 percent, at least 95 correct, to pass. You may bring the approved AMA CPT Professional Edition, ICD-10-CM and HCPCS Level II code books, and an on-screen calculator is provided. The questions cover seven domains: types of insurance (29), billing regulations (17), HIPAA and compliance (7), reimbursement and collections (19), claims and billing (19), coding (10) and case analysis with source documents such as claim forms, payment policies and appeal letters (34). You can take it at a testing center or at home with a live remote proctor.",

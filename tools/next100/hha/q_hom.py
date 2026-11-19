@@ -44,7 +44,7 @@ Q = [
  'Let the RN know', ['Give both doses now', 'Throw the pills away', 'Leave them, say nothing'],
  'Aides assist with self-administered medicines but do not decide how to handle a missed dose. The nurse decides with the prescriber.'),
 ('When shopping for a patient, the aide:',
- 'Returns receipt and change', ['Buys her own items too', 'Keeps small change as a tip', 'Pays with her own card'],
+ 'Returns receipt and change', ['Pays cash, keeps the receipt', 'Uses her own card, then is repaid', 'Buys only what is on sale'],
  "Returning the receipt and exact change protects the patient's money and the aide from any claim of misappropriation."),
 ('A patient with poor eyesight needs to call her pharmacy. How does the aide help?',
  'Dial and let her talk', ['Speak for her without asking', 'Tell her to wait for family', 'Text the pharmacy for her'],
@@ -71,6 +71,6 @@ Q = [
  'Help her get there and back', ['Speak for her in the visit', 'Change her next appointment', 'Ask for new prescriptions'],
  'The DC outline lists accompanying the client to appointments. The patient still speaks for herself about her care.'),
 ("Which keeps a patient's home healthy and comfortable?",
- 'Clean, clutter-free rooms', ['Rearranging her belongings', 'Throwing out her mail', 'Keeping the blinds closed'],
- 'The DC outline includes keeping the home in a condition that promotes health and comfort, without moving or discarding her belongings.'),
+ 'Clean, clutter-free rooms', ['Air freshener in every room', 'The heat turned up high', 'Windows kept shut all day'],
+ 'The DC outline includes keeping the home in a condition that promotes health and comfort, kept clean and free of clutter.'),
 ]

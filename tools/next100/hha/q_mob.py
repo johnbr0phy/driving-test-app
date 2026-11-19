@@ -46,7 +46,7 @@ Q = [
 ('Moving the arm out from the side of the body is:',
  'Abduction', ['Adduction', 'Flexion', 'Extension'],
  "Abduction moves a limb away from the body's midline. Adduction brings it back toward the body."),
-('During range of motion of the knee, the aide supports the leg at the:',
+('During range of motion of the knee, the aide supports the leg at:',
  'Knee and ankle', ['The foot only', 'The thigh only', 'The toes and heel'],
  'The skills listing supports the leg at the knee and ankle so the joint moves without strain.'),
 ('Passive range of motion means the:',

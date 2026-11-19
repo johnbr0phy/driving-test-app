@@ -97,6 +97,10 @@ syntax.
   hour above 90°F); thaw in the refrigerator, cold water or microwave, never on the counter.
 - FDA, Are You Storing Food Safely?, fetched 2026-11-19:
   https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely
+- NIDDK (NIH), Diabetes and Foot Problems, fetched 2026-11-19 (second review):
+  https://www.niddk.nih.gov/health-information/diabetes/overview/preventing-problems/foot-problems
+  "Have a foot doctor trim your toenails if" the person cannot see, feel or reach her feet, or
+  the nails are thick or yellowed. Source for HHA-PER toenail item (key: a foot doctor).
 - MedlinePlus, Using oxygen at home, fetched 2026-11-19:
   https://medlineplus.gov/ency/patientinstructions/000049.htm
   No smoking where oxygen is used, no petroleum-based creams on the face, keep away from flames

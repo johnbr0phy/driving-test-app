@@ -7,6 +7,7 @@ import {
   User,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  signInWithCustomToken,
   signOut,
   onAuthStateChanged,
   GoogleAuthProvider,
@@ -85,6 +86,26 @@ async function sendWelcomeEmail(userId: string) {
   }
 }
 
+// Once per account per page load: the route itself refuses a second claim.
+const guestClaimsTried = new Set<string>();
+
+async function claimGuestAccount(user: User) {
+  if (guestClaimsTried.has(user.uid)) return;
+  guestClaimsTried.add(user.uid);
+  try {
+    const res = await fetch('/api/account/guest-claim', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${await user.getIdToken(true)}` },
+    });
+    const data = await res.json();
+    // Every other session was just signed out, this one included: carry on
+    // with a fresh token for the same account.
+    if (data?.claimed && data.customToken) await signInWithCustomToken(auth, data.customToken);
+  } catch (err) {
+    console.error('Guest account claim failed:', err);
+  }
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
@@ -133,6 +154,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (isInternalEmail(user?.email)) markInternalBrowser();
       // Move this browser's guest "enrolled" marks onto the account (lib/enrollment).
       if (user) claimEnrollments();
+      // An account a guest checkout made, now signed in to with the email
+      // verified: its owner takes it over (app/api/account/guest-claim).
+      if (user && user.uid.startsWith('gc_') && user.emailVerified && user.providerData.length > 0) {
+        void claimGuestAccount(user);
+      }
       try {
         if (user) {
           // firestoreLoaded is persisted to localStorage, so on a fresh

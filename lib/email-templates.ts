@@ -161,7 +161,7 @@ export function purchaseWelcomeHtml(
       p("Your purchase is confirmed. Premium is active on your Tigertest account, on every device you sign in on."),
       ...(opts?.guest
         ? opts.guest.createdForGuest
-          ? [p(`We made your Tigertest account with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>, the email you paid with. To sign in on another device, use Sign in with Google with that address, or open the sign-in page, tap Forgot password and set one.`)]
+          ? [p(`We made your Tigertest account with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>, the email you paid with. To sign in on another device, open the sign-in page and tap Forgot password to set a password (or use Sign in with Google if it is a Google address).`)]
           : [p(`Premium is on the Tigertest account you already had with <strong style="font-weight: 600;">${esc(opts.guest.email)}</strong>. Sign in with that address to use it.`)]
         : []),
       p("Premium includes the DMV's extra training sets and practice tests, and full stats on exams where those require paid access."),

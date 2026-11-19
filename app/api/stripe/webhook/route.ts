@@ -7,6 +7,7 @@ import { EMAIL_INBOX } from '@/lib/email-inbox';
 import { purchaseWelcomeHtml } from '@/lib/email-templates';
 import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
+import { FieldValue } from 'firebase-admin/firestore';
 import { purchaseExam } from '@/lib/purchaseAttribution';
 import { isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
 
@@ -127,8 +128,24 @@ export async function POST(request: NextRequest) {
           try {
             await stripe.refunds.create({ payment_intent: paymentIntentId, reason: 'duplicate' }, { idempotencyKey: `guest-duplicate-${session.id}` });
           } catch (err) {
-            console.error(`[webhook] duplicate guest purchase ${session.id} not refunded yet:`, err);
-            return NextResponse.json({ error: 'Refund pending; retry required' }, { status: 503 });
+            const code = (err as { code?: string; type?: string })?.code;
+            const type = (err as { type?: string })?.type;
+            // Refunded by hand already: done.
+            if (code !== 'charge_already_refunded') {
+              // A request Stripe will always refuse (Stripe also replays it for
+              // this idempotency key for a day) is recorded for a person to
+              // refund by hand; retrying it would only loop for days.
+              if (type === 'StripeInvalidRequestError') {
+                console.error(`[webhook] duplicate guest purchase ${session.id} cannot be refunded:`, err);
+                await adminDb.collection('guestCheckoutProblems').doc(session.id).set({
+                  problem: 'duplicate_refund_failed', userId, paymentIntentId,
+                  error: String((err as Error)?.message ?? err).slice(0, 300), at: new Date().toISOString(),
+                }, { merge: true });
+                return NextResponse.json({ received: true, skipped: 'duplicate_refund_failed' });
+              }
+              console.error(`[webhook] duplicate guest purchase ${session.id} not refunded yet:`, err);
+              return NextResponse.json({ error: 'Refund pending; retry required' }, { status: 503 });
+            }
           }
         }
         console.log(`Guest purchase ${session.id} refunded: account ${userId} already had Premium`);
@@ -203,6 +220,11 @@ export async function POST(request: NextRequest) {
         });
         if (!['sent', 'already_sent'].includes(outcome)) {
           throw new Error(`Receipt pending reconciliation: ${outcome}`);
+        }
+        // A guest-made account's receipt is its welcome: the hourly backstop
+        // must not follow it with a "pick your test" signup email.
+        if (guestBuyer?.createdForGuest) {
+          await userRef.set({ emailsSent: FieldValue.arrayUnion('welcome'), emailConsent: (await userRef.get()).data()?.emailConsent ?? false }, { merge: true });
         }
       } catch (mailErr) {
         console.error(`[webhook] receipt pending for ${session.id}:`, mailErr);

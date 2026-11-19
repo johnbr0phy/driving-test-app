@@ -5,7 +5,8 @@ import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywal
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
 import { visitorCountry } from '@/lib/server/visitorCountry';
 import { SITE_URL } from '@/lib/siteUrl';
-import { GUEST_KEY_COOKIE, GUEST_SIGN_IN_WINDOW_MS, newGuestKey } from '@/lib/server/guestCheckout';
+import { allowGuestCheckout, guestKeyCookie, GUEST_SIGN_IN_WINDOW_MS, newGuestKey } from '@/lib/server/guestCheckout';
+import { requestIp } from '@/lib/server/answerRateLimit';
 
 export async function POST(request: NextRequest) {
   try {
@@ -30,6 +31,9 @@ export async function POST(request: NextRequest) {
       }
     }
     const isGuest = decodedToken === null;
+    if (isGuest && !(await allowGuestCheckout(requestIp(request)))) {
+      return NextResponse.json({ error: 'Too many checkouts from this network today. Please sign in to buy, or try again tomorrow.' }, { status: 429 });
+    }
 
     const body = await request.json();
     const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, paywallHit, paywallReturn, source: bodySource, landing: bodyLanding } = body;
@@ -168,7 +172,7 @@ export async function POST(request: NextRequest) {
 
     const res = NextResponse.json({ checkoutUrl: session.url });
     if (guestKey) {
-      res.cookies.set(GUEST_KEY_COOKIE, guestKey.key, {
+      res.cookies.set(guestKeyCookie(session.id), guestKey.key, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
         sameSite: 'lax',

@@ -16,20 +16,30 @@ import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
  *    from the session id (guestUidFor), so no other session, however early it
  *    was opened, can claim an account another one made;
  *  - the request must come from the browser that started the checkout: it
- *    holds a random key in an httpOnly cookie whose hash is in the session's
- *    metadata, so a leaked success URL (history, analytics, a screenshot) is
- *    worth nothing on its own.
+ *    holds a random key in an httpOnly cookie (one per checkout, so two tabs
+ *    never clobber each other) whose hash is in the session's metadata, so a
+ *    leaked success URL (history, analytics, a screenshot) is worth nothing.
+ * That browser may ask again (a sign-in that failed on the way is retried)
+ * until someone sets a password or links Google on the account, or a day
+ * has passed.
  * An email that already had an account gets Premium but must sign in the
  * usual way: paying with someone's address never signs you in to theirs.
  */
+
+const sha256 = (s: string) => createHash('sha256').update(s).digest('hex');
 
 export type GuestBuyer = { uid: string; email: string; createdForGuest: boolean };
 
 /** How long after paying the success page may still sign the buyer in. */
 export const GUEST_SIGN_IN_WINDOW_MS = 24 * 60 * 60 * 1000;
 
-/** The cookie holding the browser's guest checkout key. */
-export const GUEST_KEY_COOKIE = 'tt-guest-checkout';
+/** The cookie holding the browser's key for one guest checkout. */
+export function guestKeyCookie(sessionId: string): string {
+  return `tt-gc-${sha256(`cookie:${sessionId}`).slice(0, 16)}`;
+}
+
+/** Guest checkouts one IP may open in a day: plenty for a family or a school. */
+export const GUEST_CHECKOUTS_PER_IP_PER_DAY = 30;
 
 export function isGuestSession(session: Stripe.Checkout.Session): boolean {
   return session.metadata?.guest === '1' && !session.metadata?.userId;
@@ -39,8 +49,6 @@ export function guestSessionEmail(session: Stripe.Checkout.Session): string | nu
   const email = session.customer_details?.email || session.customer_email || null;
   return email ? email.trim().toLowerCase() : null;
 }
-
-const sha256 = (s: string) => createHash('sha256').update(s).digest('hex');
 
 /** The uid an account made for this Checkout Session gets (and only it). */
 export function guestUidFor(sessionId: string): string {
@@ -111,18 +119,26 @@ export async function resolveGuestBuyer(session: Stripe.Checkout.Session): Promi
 }
 
 /**
- * Marks the session's sign-in as used and says whether this call got it.
- * The success page signs in once; a reload after that is already signed in.
+ * Counts a guest checkout against the IP's daily budget and says whether it
+ * may go ahead. Anyone can open one without signing in, so a script could
+ * otherwise spend the Stripe API's rate limit. Fails open on a Firestore
+ * error: a real buyer must never be blocked by it.
  */
-export async function redeemGuestSignIn(sessionId: string): Promise<boolean> {
+export async function allowGuestCheckout(ip: string, now = new Date()): Promise<boolean> {
   const db = getAdminDb();
-  const ref = db.collection('guestCheckouts').doc(sessionId);
-  return db.runTransaction(async (tx) => {
-    const snap = await tx.get(ref);
-    if (!snap.exists || snap.data()?.signedInAt) return false;
-    tx.set(ref, { signedInAt: new Date().toISOString() }, { merge: true });
+  const day = now.toISOString().slice(0, 10);
+  const ref = db.collection('guestCheckoutLimits').doc(`${sha256(`guest-checkout-ip:${ip}`).slice(0, 32)}_${day}`);
+  try {
+    return await db.runTransaction(async (tx) => {
+      const used = ((await tx.get(ref)).data()?.count as number) || 0;
+      if (used >= GUEST_CHECKOUTS_PER_IP_PER_DAY) return false;
+      tx.set(ref, { count: used + 1, expiresAt: new Date(now.getTime() + 3 * 86400000) }, { merge: true });
+      return true;
+    });
+  } catch (err) {
+    console.error('Guest checkout limit check failed:', err);
     return true;
-  });
+  }
 }
 
 /** Hide most of an address for the success page: "jo***@gmail.com". */

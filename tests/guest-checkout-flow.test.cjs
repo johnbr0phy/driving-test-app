@@ -28,17 +28,23 @@ let users = new Map(); // uid -> user
 let uidSeq = 0;
 const authErr = code => Object.assign(new Error(code), { code });
 const auth = {
-  verifyIdToken: async t => { const u = users.get(t.replace('tok-', '')); if (!u) throw authErr('auth/argument-error'); return { uid: u.uid, email: u.email }; },
+  verifyIdToken: async t => {
+    const [id, provider = 'password', verified] = t.replace('tok-', '').split('|');
+    const u = users.get(id); if (!u) throw authErr('auth/argument-error');
+    return { uid: u.uid, email: u.email, email_verified: verified === 'v', firebase: { sign_in_provider: provider } };
+  },
   getUserByEmail: async email => { await tick(); for (const u of users.values()) if (u.email === email.toLowerCase()) return u; throw authErr('auth/user-not-found'); },
   createUser: async ({ uid, email }) => {
     await tick();
     if (uid && users.has(uid)) throw authErr('auth/uid-already-exists');
-    for (const u of users.values()) if (u.email === email) throw authErr('auth/email-already-exists');
+    for (const u of users.values()) if (u.email === email.toLowerCase()) throw authErr('auth/email-already-exists');
     const u = { uid: uid ?? `u${++uidSeq}`, email, providerData: [], metadata: { creationTime: new Date().toUTCString() } };
     users.set(u.uid, u); return u;
   },
   getUser: async uid => { const u = users.get(uid); if (!u) throw authErr('auth/user-not-found'); return u; },
   createCustomToken: async uid => `custom-${uid}`,
+  updateUser: async (uid, { providersToUnlink }) => { const u = users.get(uid); u.providerData = u.providerData.filter(p => !providersToUnlink.includes(p.providerId)); },
+  revokeRefreshTokens: async uid => { users.get(uid).revokedAt = Date.now(); },
 };
 const addUser = (email, providers = ['password'], createdAgoMs = 86400000 * 30) => {
   const u = { uid: `u${++uidSeq}`, email, providerData: providers.map(p => ({ providerId: p })), metadata: { creationTime: new Date(Date.now() - createdAgoMs).toUTCString() } };
@@ -51,14 +57,16 @@ let event;
 const stripe = {
   customers: { list: async () => ({ data: [] }), create: async ({ email }) => ({ id: `cus_${email}` }) },
   checkout: { sessions: {
-    create: async params => { created.push(params); const id = `cs_test_${created.length}`; sessions.set(id, { id, created: Math.floor(Date.now() / 1000), metadata: params.metadata, payment_status: 'unpaid', currency: 'usd', amount_total: 999, payment_intent: `pi_${id}` }); return { url: `https://checkout.stripe.test/${id}` }; },
+    create: async params => { created.push(params); const id = `cs_test_${created.length}`; sessions.set(id, { id, created: Math.floor(Date.now() / 1000), metadata: params.metadata, payment_status: 'unpaid', currency: 'usd', amount_total: 999, payment_intent: `pi_${id}` }); return { id, url: `https://checkout.stripe.test/${id}` }; },
     retrieve: async id => { const s = sessions.get(id); if (!s) throw new Error('No such checkout.session'); return s; },
   } },
   webhooks: { constructEvent: () => event },
-  refunds: { create: async (p, o) => { refunds.push({ ...p, key: o?.idempotencyKey }); return { id: 're_1' }; } },
+  refunds: { create: async (p, o) => { if (refundError) throw refundError; refunds.push({ ...p, key: o?.idempotencyKey }); return { id: 're_1' }; } },
   paymentIntents: { retrieve: async () => ({}) },
 };
-let receipts = [], refunds = [], cookie = '';
+let receipts = [], refunds = [], cookie = '', refundError = null;
+const jar = new Map(); // one browser's cookies
+const jarHeader = () => [...jar].map(([k, v]) => `${k}=${v}`).join('; ');
 
 const oldLoad = Module._load;
 let checkout, webhook, guestSession, verify;
@@ -78,15 +86,26 @@ try {
 } finally { Module._load = oldLoad; }
 
 const { NextRequest } = require('next/server');
+let claim;
+{
+  const old = Module._load;
+  Module._load = function (request, parent, main) {
+    if (request === '@/lib/firebase-admin') return { getAdminDb: () => db, getAdminAuth: () => auth };
+    return old.call(this, request, parent, main);
+  };
+  try { claim = require('../app/api/account/guest-claim/route.ts').POST; } finally { Module._load = old; }
+}
 const post = (fn, path, body, token, cookieHeader) => fn(new NextRequest(`https://www.tigertest.io${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}), ...(cookieHeader ? { cookie: cookieHeader } : {}) }, body: JSON.stringify(body) }));
 const json = async r => ({ status: r.status, body: await r.json() });
 
 async function startGuest(body = {}) {
   const res = await post(checkout, '/api/stripe/checkout', { location: 'stats_page', returnPath: '/cdl/stats', ...body });
   const set = res.headers.get('set-cookie') || '';
-  assert.match(set, /tt-guest-checkout=[^;]+;.*HttpOnly/i);
+  assert.match(set, /^tt-gc-[0-9a-f]{16}=[^;]+;.*HttpOnly/i);
   assert.match(set, /Path=\/api\/stripe/);
   cookie = set.split(';')[0];
+  const [k, v] = cookie.split('=');
+  jar.set(k, v);
   const r = await json(res);
   assert.equal(r.status, 200, JSON.stringify(r.body));
   return [...sessions.keys()].pop();
@@ -100,11 +119,12 @@ const fireWebhook = async (id, type = 'checkout.session.completed') => {
   event = { id: `evt_${id}_${type}`, type, data: { object: sessions.get(id) } };
   return json(await webhook(new NextRequest('https://www.tigertest.io/api/stripe/webhook', { method: 'POST', headers: { 'stripe-signature': 's' }, body: '{}' })));
 };
-const back = async (id, c = cookie) => json(await post(guestSession, '/api/stripe/guest-session', { sessionId: id }, undefined, c));
+// The success page, from this browser (all its cookies) or with given ones.
+const back = async (id, c = jarHeader()) => json(await post(guestSession, '/api/stripe/guest-session', { sessionId: id }, undefined, c));
 const verifyAs = async (id, uid) => json(await post(verify, '/api/stripe/verify-purchase', { sessionId: id }, `tok-${uid}`));
 const premium = uid => rows.get(`users/${uid}`)?.subscription?.isPremium === true;
 
-beforeEach(() => { rows.clear(); users = new Map(); sessions.clear(); created = []; receipts = []; refunds = []; cookie = ''; });
+beforeEach(() => { rows.clear(); users = new Map(); sessions.clear(); created = []; receipts = []; refunds = []; cookie = ''; refundError = null; jar.clear(); });
 
 // ---- scenarios ----------------------------------------------------------
 test('guest checkout: no customer, Stripe makes one, metadata has no userId', async () => {
@@ -204,13 +224,15 @@ test('attacker pays with a victim\'s Google-only email: never signed in to it', 
 });
 
 test('second guest purchase on an account an earlier guest checkout made: Premium only, no sign-in, refunded', async () => {
-  const a = await startGuest(); const cookieA = cookie; pay(a, 'twice@example.com');
+  const a = await startGuest(); pay(a, 'twice@example.com');
   await fireWebhook(a);
   const b = await startGuest(); pay(b, 'twice@example.com');
   await fireWebhook(b);
   assert.equal(users.size, 1);
-  assert.equal((await back(b)).body.status, 'existing_account');
-  assert.equal((await back(a, cookieA)).body.status, 'sign_in');
+  // Already Premium, refunded: told so, never signed in.
+  const rb = await back(b);
+  assert.deepEqual([rb.body.status, rb.body.customToken], ['already_premium', undefined]);
+  assert.equal((await back(a)).body.status, 'sign_in');
   // Already Premium: b is refunded once, never granted twice, no second receipt.
   assert.deepEqual(refunds.map(r => [r.payment_intent, r.key]), [[`pi_${b}`, `guest-duplicate-${b}`]]);
   await fireWebhook(b);
@@ -219,20 +241,20 @@ test('second guest purchase on an account an earlier guest checkout made: Premiu
 });
 
 test('attacker opens a checkout early, victim pays as a guest, attacker then pays with the victim\'s email', async () => {
-  const attacker = await startGuest(); const attackerCookie = cookie;
+  const attacker = await startGuest(); const attackerCookie = cookie; jar.clear(); // the victim's own browser
   const victim = await startGuest(); pay(victim, 'victim@example.com');
   await fireWebhook(victim);
   pay(attacker, 'victim@example.com');
   await fireWebhook(attacker);
   const r = await back(attacker, attackerCookie);
-  assert.equal(r.body.status, 'existing_account');
+  assert.equal(r.body.status, 'already_premium'); // and refunded
   assert.equal(r.body.customToken, undefined);
 });
 
 test('a leaked success URL opened in another browser gets nothing', async () => {
   const id = await startGuest(); pay(id, 'leak@example.com');
   await fireWebhook(id);
-  for (const c of ['', 'tt-guest-checkout=wrong', 'other=1']) {
+  for (const c of ['', `${[...jar.keys()][0]}=wrong`, 'other=1']) {
     const r = await back(id, c);
     assert.equal(r.body.status, 'other_browser');
     assert.equal(r.body.email, undefined);
@@ -240,11 +262,62 @@ test('a leaked success URL opened in another browser gets nothing', async () => 
   assert.equal((await back(id)).body.status, 'sign_in');
 });
 
-test('the sign-in token is handed out once; a second ask is told to sign in', async () => {
-  const id = await startGuest(); pay(id, 'once@example.com');
+test('a sign-in that failed on the way can be asked for again from the same browser', async () => {
+  const id = await startGuest(); pay(id, 'again@example.com');
   assert.equal((await back(id)).body.status, 'sign_in');
-  const again = await back(id);
-  assert.deepEqual([again.body.status, again.body.customToken], ['sign_in_used', undefined]);
+  assert.equal((await back(id)).body.status, 'sign_in');
+});
+
+test('two tabs, two guest checkouts, one browser: paying in the first tab still signs in', async () => {
+  const first = await startGuest();
+  const second = await startGuest();
+  assert.equal(jar.size, 2, 'one cookie per checkout');
+  pay(first, 'tabs@example.com');
+  assert.equal((await back(first)).body.status, 'sign_in');
+  assert.equal((await back(second)).body.status, 'unpaid');
+});
+
+test('a refund Stripe refuses for good is recorded once, not retried for days', async () => {
+  const a = await startGuest(); pay(a, 'dup@example.com'); await fireWebhook(a);
+  const b = await startGuest(); pay(b, 'dup@example.com');
+  refundError = Object.assign(new Error('No such payment_intent'), { type: 'StripeInvalidRequestError', code: 'resource_missing' });
+  assert.deepEqual((await fireWebhook(b)).body, { received: true, skipped: 'duplicate_refund_failed' });
+  assert.equal(rows.get(`guestCheckoutProblems/${b}`).problem, 'duplicate_refund_failed');
+  refundError = Object.assign(new Error('Charge already refunded'), { type: 'StripeInvalidRequestError', code: 'charge_already_refunded' });
+  assert.equal((await fireWebhook(b)).body.skipped, 'already_premium_refunded');
+  refundError = Object.assign(new Error('socket hang up'), { type: 'StripeConnectionError' });
+  assert.equal((await fireWebhook(b)).status, 503);
+});
+
+test('one network may open only so many guest checkouts a day', async () => {
+  for (let i = 0; i < 30; i++) await startGuest();
+  const r = await json(await post(checkout, '/api/stripe/checkout', { location: 'stats_page' }));
+  assert.equal(r.status, 429);
+  // Signed-in buyers are not counted.
+  const u = addUser('me@example.com');
+  assert.equal((await json(await post(checkout, '/api/stripe/checkout', {}, `tok-${u.uid}`))).status, 200);
+});
+
+test('the inbox owner reclaims a guest-made account: other sign-ins unlinked, other sessions out', async () => {
+  const id = await startGuest(); pay(id, 'squat@example.com'); await fireWebhook(id);
+  const u = [...users.values()][0];
+  // The payer (maybe not the owner) linked a Google account of their own.
+  u.providerData = [{ providerId: 'google.com' }, { providerId: 'password' }];
+  const call = async t => json(await claim(new NextRequest('https://www.tigertest.io/api/account/guest-claim', { method: 'POST', headers: { authorization: `Bearer ${t}` } })));
+  // Without a verified email (the payer's own Google or password), nothing happens.
+  assert.equal((await call(`tok-${u.uid}|google.com`)).body.claimed, false);
+  assert.equal((await call(`tok-${u.uid}|custom|v`)).body.claimed, false);
+  // The owner, through the reset email (email verified, password provider):
+  const r = await call(`tok-${u.uid}|password|v`);
+  assert.equal(r.body.claimed, true);
+  assert.deepEqual(r.body.unlinked, ['google.com']);
+  assert.ok(u.revokedAt);
+  assert.equal(r.body.customToken, `custom-${u.uid}`);
+  // Only once.
+  assert.equal((await call(`tok-${u.uid}|password|v`)).body.claimed, false);
+  // Never for an ordinary account.
+  const plain = addUser('plain@example.com', ['google.com']);
+  assert.equal((await call(`tok-${plain.uid}|google.com|v`)).body.claimed, false);
 });
 
 test('a return path may keep a simple query; anything else falls back', async () => {
@@ -269,7 +342,8 @@ test('success URL older than a day: no sign-in from it', async () => {
   const id = await startGuest(); pay(id, 'old@example.com');
   await fireWebhook(id);
   sessions.get(id).created -= 25 * 3600;
-  assert.equal((await back(id)).body.status, 'existing_account');
+  const r = await back(id);
+  assert.deepEqual([r.body.status, r.body.customToken], ['sign_in_used', undefined]);
 });
 
 test('async payment: nothing until it succeeds, then the account and Premium', async () => {

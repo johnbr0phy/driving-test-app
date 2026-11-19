@@ -47,6 +47,7 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
     currentTests?: Record<string, { answers?: Record<string, unknown> }>;
     trainingAnswerHistory?: unknown[];
     selectedState?: string | null;
+    subscription?: { isPremium?: boolean };
   };
   const hasCompletedTests = (d.completedTests?.length ?? 0) > 0;
   const hasTestAttempts = (d.testAttempts?.length ?? 0) > 0;
@@ -59,9 +60,7 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
   );
   const hasAnswerHistory = (d.trainingAnswerHistory?.length ?? 0) > 0;
   const hasSelectedState = !!d.selectedState;
-  // Premium alone is not progress: an account whose only data is a purchase
-  // (a guest checkout just made it, or bought before practising) takes the
-  // guest's progress without asking. Saves never write subscription.
+  const hasPremium = d.subscription?.isPremium === true;
   return (
     hasCompletedTests ||
     hasTestAttempts ||
@@ -69,7 +68,8 @@ export function userDataHasProgress(data: Record<string, unknown> | undefined): 
     hasTrainingSets ||
     hasInProgressTests ||
     hasAnswerHistory ||
-    hasSelectedState
+    hasSelectedState ||
+    hasPremium
   );
 }
 
@@ -1143,7 +1143,14 @@ export const useStore = create<AppState>()(
         try {
           const userDoc = await getDoc(doc(db, 'users', userId));
           if (userDoc.exists()) {
-            return userDataHasProgress(userDoc.data());
+            const data = userDoc.data();
+            // An account a guest checkout made ("gc_") starts with nothing but
+            // Premium: that alone is not progress to protect from the guest's.
+            if (userId.startsWith('gc_') && data?.subscription) {
+              const { subscription: _premium, ...rest } = data;
+              return userDataHasProgress(rest);
+            }
+            return userDataHasProgress(data);
           }
           return false;
         } catch (error) {

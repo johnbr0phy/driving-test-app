@@ -9,11 +9,11 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { trackFunnelSignup } from "@/lib/funnel";
 import { clearGuestPurchaseSignIn, markGuestPurchaseSignIn } from "@/lib/guestPurchaseSignIn";
-import { defaultEmailConsent } from "@/lib/privacyRegion";
 
 type Notice =
   | { kind: "existing"; email: string }
   | { kind: "used"; email: string }
+  | { kind: "duplicate"; email: string }
   | { kind: "pending" }
   | { kind: "elsewhere" }
   | { kind: "error" };
@@ -57,10 +57,9 @@ export function GuestPurchaseReturn() {
         const data = await res.json();
         if (data?.status === "sign_in" && data.customToken && data.uid) {
           // Whatever this browser practised as a guest goes onto the new
-          // account (AuthContext converts a guest store on sign-in), with the
-          // marketing choice this region starts from, since they never saw
-          // the sign-up page's box.
-          useStore.setState({ isGuest: true, emailConsent: defaultEmailConsent() });
+          // account (AuthContext converts a guest store on sign-in). They
+          // never saw the sign-up page's marketing box, so it starts off.
+          useStore.setState({ isGuest: true, emailConsent: false });
           markGuestPurchaseSignIn(data.uid);
           try {
             await signInWithCustomToken(auth, data.customToken);
@@ -71,6 +70,8 @@ export function GuestPurchaseReturn() {
           trackFunnelSignup();
         } else if (data?.status === "existing_account" && data.email) {
           setNotice({ kind: "existing", email: data.email });
+        } else if (data?.status === "already_premium" && data.email) {
+          setNotice({ kind: "duplicate", email: data.email });
         } else if (data?.status === "sign_in_used" && data.email) {
           setNotice({ kind: "used", email: data.email });
         } else if (data?.status === "unpaid") {
@@ -140,8 +141,13 @@ export function GuestPurchaseReturn() {
       </>
     ) : notice.kind === "used" ? (
       <>
-        <strong>Thanks, your payment went through.</strong> Premium is on your account, {notice.email}. Sign in
-        with Google using that email, or tap Forgot password on the sign-in page to set one.
+        <strong>Thanks, your payment went through.</strong> Premium is on your account, {notice.email}. To sign in,
+        tap Forgot password on the sign-in page to set a password for it (or use Sign in with Google if it is a Google address).
+      </>
+    ) : notice.kind === "duplicate" ? (
+      <>
+        Your account, {notice.email}, already has Premium, so we&apos;ve refunded this payment. Sign in with that
+        email to use it.
       </>
     ) : notice.kind === "pending" ? (
       <>
@@ -150,7 +156,8 @@ export function GuestPurchaseReturn() {
       </>
     ) : notice.kind === "elsewhere" ? (
       <>
-        This purchase was made in another browser. Sign in with the email you paid with to use Premium here.
+        <strong>Thanks, your payment went through.</strong> To use Premium here, sign in with the email you
+        paid with: tap Forgot password on the sign-in page to set a password for it (or use Sign in with Google if it is a Google address).
       </>
     ) : (
       <>

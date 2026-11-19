@@ -562,6 +562,22 @@
       "what": "Providers start offering the 2027 AFTR course (for 2027 returns and the 2028 AFSP) from a new Publication 6079 outline, with 2027 inflation adjustments from the next revenue procedure.",
       "action": "Read the new Publication 6079 and 6012; move every 2026 figure (Rev. Proc. 2025-32 amounts, Notice 2026-10 mileage, 6695 amounts for returns filed in 2027, SALT $40,400 and $505,000) to the 2027 amounts, and update the landing, examFacts and the source dates.",
       "source": "https://www.irs.gov/pub/irs-pdf/p6079.pdf"
+    },
+    {
+      "exam": "r410a",
+      "date": "2027-01-01",
+      "kind": "notice",
+      "what": "VRF systems with a GWP above 700 built from components made before 2026 may no longer be installed (40 CFR 84.54(c)(2)); January 1, 2028 for projects with a building permit.",
+      "action": "None for the bank (the EPA rules items already state these dates); re-read EPA's Technology Transitions page and check the dates still stand.",
+      "source": "https://www.ecfr.gov/current/title-40/section-84.54"
+    },
+    {
+      "exam": "r410a",
+      "date": "2028-01-01",
+      "kind": "law",
+      "what": "The disposable cylinder heel rule of 40 CFR 84.116 takes effect.",
+      "action": "Check the rule is still in force before that date (the Emissions Reduction and Reclamation rule is under reconsideration; the May 2026 proposal covers refrigerated transport only) and update the cylinder items if it changed.",
+      "source": "https://www.ecfr.gov/current/title-40/section-84.116"
     }
   ]
 }

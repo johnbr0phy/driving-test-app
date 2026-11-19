@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* R-410A safety certification theme: gauge violet */
+  [data-theme="r410a"] {
+    --brand: 287 75% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 287 70% 96%;
+    --brand-hover: 287 75% 34%;
+    --brand-dark: 287 75% 27%;
+    --brand-darker: 287 70% 17%;
+    --brand-muted: 287 35% 70%;
+    --brand-border: 287 35% 80%;
+    --brand-border-light: 287 30% 89%;
+    --brand-gradient-to: 300 60% 96%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;

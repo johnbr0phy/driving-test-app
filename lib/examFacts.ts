@@ -225,6 +225,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  r410a: {
+    answer:
+      "The R-410A Safety Certification is a specialty certification offered by the ESCO Institute, from the AC&R Safety Coalition program. ESCO describes it as a 50-question exam covering proper safety, handling and application of R-410A refrigerant systems, and persons who pass receive a certificate and an AC&R Safety Coalition R-410A patch. ESCO's training manual covers servicing R-410A and R-407C systems, the R-22 phase-out, refrigerant and oil applications, service techniques and safe handling. ESCO does not publish a time limit or passing score for this exam on its program pages. It does not replace EPA Section 608 certification, which federal law requires to buy and handle R-410A for stationary equipment.",
+    rows: [
+      { label: "Questions", value: "50" },
+      { label: "Covers", value: "Proper safety, handling and application of R-410A" },
+      { label: "Passing score", value: "Not published by ESCO; Tigertest uses 70% as a readiness line" },
+      { label: "On passing", value: "Certificate and AC&R Safety Coalition R-410A patch" },
+      { label: "Prerequisite", value: "None listed" },
+      { label: "Offered by", value: "ESCO Institute (HVAC Excellence)" },
+    ],
+    basedOn: "ESCO Institute's R-410A Safety & Training and Specialty Certifications pages, checked November 2026",
+    source: { name: "ESCO Institute R-410A program", url: "https://www.escogroup.org/Training/R410A.aspx" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

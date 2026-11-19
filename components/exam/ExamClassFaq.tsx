@@ -64,6 +64,8 @@ export const TEACHES: Record<string, string> = {
   dkindfoed: "a language school course for the indfødsretsprøve",
   itcils: "an Italian course for CILS B1 Cittadinanza",
   itceli: "an Italian course for CELI 2",
+  ita2: "an A2 Italian course at a CPIA or language school",
+  itcilsb2: "an Italian course for CILS B2",
   dkmedborger: "a language school course for the medborgerskabsprøve",
   fihygiene: "Hygiene Passport courses",
   fihunt: "a metsästäjätutkinto preparation course",

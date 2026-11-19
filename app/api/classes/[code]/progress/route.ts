@@ -18,6 +18,10 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
   const db = getAdminDb();
   const ref = db.collection("classes").doc(code).collection("members").doc(body.memberId);
   const found = await applyMemberProgress(db, ref, answers, tests);
+  if (!found && !(await db.collection("classes").doc(code).get()).exists) {
+    // The teacher deleted the class: the browser drops its membership.
+    return NextResponse.json({ error: "This class was deleted", closed: true }, { status: 410 });
+  }
   if (!found) return NextResponse.json({ error: "Not in this class" }, { status: 404 });
   return NextResponse.json({ ok: true });
 }

@@ -8,6 +8,7 @@ import { db } from "@/lib/firebase";
 import { Button } from "@/components/ui/button";
 import { CARD, TableScroll, TabError, TabHeader, TabLoading, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { regionOfTest } from "@/lib/region";
+import { BlockedEmailDomainsCard } from "@/components/admin/BlockedEmailDomainsCard";
 
 // The Users tab on /admin: the 100 most recently active accounts (search,
 // filter, delete), DMV pass rate by state and Super Amazing adoption, from
@@ -382,6 +383,8 @@ export function UsersTab() {
           </div>
         )}
       </div>
+
+      <BlockedEmailDomainsCard />
     </>
   );
 }

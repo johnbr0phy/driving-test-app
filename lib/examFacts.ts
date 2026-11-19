@@ -4186,6 +4186,39 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The CVCL (Università per Stranieri di Perugia) CELI pages and the Regolamento degli esami CELI (2024), checked November 2026",
     source: { name: "CVCL: Esami CELI generici", url: "https://cvcl.unistrapg.it/pagine/esami-celi-generici" },
   },
+  ita2: {
+    answer:
+      "Italy's long-term EU residence permit (permesso di soggiorno UE per soggiornanti di lungo periodo) needs Italian at CEFR A2. Applicants aged 14 and over without an A2 certificate or another accepted qualification take the Prefettura's test: requested online, held within 60 days, usually at a CPIA. It is on computer (paper on request), about 60 minutes, with listening, reading and a written reply or form, and needs at least 80% of the total score. A failed test can be requested again.",
+    rows: [
+      { label: "Level", value: "CEFR A2" },
+      { label: "Who takes it", value: "Long-term permit applicants aged 14+ without an A2 certificate" },
+      { label: "Parts", value: "Listening, reading, written interaction" },
+      { label: "Length", value: "About 60 minutes" },
+      { label: "Pass mark", value: "At least 80% of the total score" },
+      { label: "Where", value: "The venue in the Prefettura's letter, usually a CPIA" },
+      { label: "Retakes", value: "A new request after a fail" },
+      { label: "Rules", value: "D.M. 7 dicembre 2021 (before that D.M. 4 giugno 2010)" },
+    ],
+    basedOn: "D.M. 7 dicembre 2021 (Gazzetta Ufficiale n. 36, 12 February 2022) and the Ministry's vademecum on the test, checked November 2026",
+    source: { name: "Gazzetta Ufficiale: D.M. 7 dicembre 2021", url: "https://www.gazzettaufficiale.it/eli/gu/2022/02/12/36/sg/pdf" },
+  },
+  itcilsb2: {
+    answer:
+      "CILS DUE-B2 is the B2 Italian certificate of the Centro CILS at the Università per Stranieri di Siena, the minimum Italian level for enrolling at an Italian university and widely used for study and work. It has five tests: listening, reading comprehension, analysis of communicative structures (grammar and usage), writing and speaking. Each skill is scored separately and every skill must reach the sufficiency; skills passed can be kept for 18 months while the others are retaken. The certificate does not expire.",
+    rows: [
+      { label: "Level", value: "CEFR B2" },
+      { label: "Tests", value: "Listening, reading, structures, writing, speaking" },
+      { label: "Reading", value: "Multiple choice, information in the text, text reconstruction" },
+      { label: "Structures", value: "Pronouns and adjectives, verb forms, cloze, situations" },
+      { label: "To pass", value: "The sufficiency in every skill" },
+      { label: "Partial pass", value: "Retake the failed skills within 18 months" },
+      { label: "Validity", value: "No expiry" },
+      { label: "Run by", value: "Centro CILS, Università per Stranieri di Siena" },
+    ],
+    basedOn: "The Centro CILS pages (DUE-B2 level, Le prove, La valutazione) and the B2 exam booklet, checked November 2026",
+    source: { name: "Centro CILS: Livello DUE-B2", url: "https://cils.unistrasi.it/1/79/74/Livello__CILS_DUE-B2.htm" },
+  },
+
   itpatente: {
     answer:
       "The Italian theory test for a category B car licence (esame di teoria, quiz patente B) is taken on a computer at the Motorizzazione civile, or at a driving school with approved rooms: 30 statements, each marked true or false (vero o falso), in 20 minutes, and you pass with no more than 3 errors. It must be passed within six months of the licence application, with at most two attempts and at least a month between them; a pass brings the learner permit (foglio rosa), valid for twelve months, for the practical test.",

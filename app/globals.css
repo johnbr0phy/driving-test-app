@@ -2996,6 +2996,34 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* Italian A2 residence permit test: deep plum magenta */
+  [data-theme="ita2"] {
+    --brand: 312 85% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 312 85% 96%;
+    --brand-hover: 312 85% 17%;
+    --brand-dark: 312 85% 12%;
+    --brand-darker: 312 85% 7%;
+    --brand-muted: 312 40% 70%;
+    --brand-border: 312 45% 80%;
+    --brand-border-light: 312 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* CILS B2 Italian certificate: deep indigo */
+  [data-theme="itcilsb2"] {
+    --brand: 246 95% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 246 95% 96%;
+    --brand-hover: 246 95% 19%;
+    --brand-dark: 246 95% 14%;
+    --brand-darker: 246 95% 9%;
+    --brand-muted: 246 40% 70%;
+    --brand-border: 246 45% 80%;
+    --brand-border-light: 246 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* French examen civique: deep brick red, distinct from frvtc violet and frcode blue. */
   [data-theme="frcivique"] {
     --brand: 10 100% 22%;
@@ -9023,6 +9051,28 @@
     --brand-muted: 294 40% 45%;
     --brand-dark: 294 70% 65%;
     --brand-darker: 294 70% 78%;
+  }
+  .dark [data-theme="ita2"] {
+    --brand: 312 85% 45.4%;
+    --brand-hover: 312 85% 37.4%;
+    --brand-light: 312 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 312 35% 24%;
+    --brand-border: 312 40% 34%;
+    --brand-muted: 312 40% 45%;
+    --brand-dark: 312 85% 65%;
+    --brand-darker: 312 85% 78%;
+  }
+  .dark [data-theme="itcilsb2"] {
+    --brand: 246 95% 50%;
+    --brand-hover: 246 95% 42%;
+    --brand-light: 246 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 246 35% 24%;
+    --brand-border: 246 40% 34%;
+    --brand-muted: 246 40% 45%;
+    --brand-dark: 246 95% 71%;
+    --brand-darker: 246 95% 78%;
   }
   .dark [data-theme="dkindfoed"] {
     --brand: 350 90% 48.1%;

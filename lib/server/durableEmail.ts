@@ -159,6 +159,8 @@ export async function sendDurableEmail(opts: DurableEmailOptions): Promise<Durab
   const result = await sendEmail(claim.payload!, { previousUncertain: claim.retryUncertain, notAfter: Math.min(claim.firstAttemptAt + RETRY_WINDOW_MS, claim.retryPolicy?.expiresAt ?? Infinity) });
   if (!result.ok) {
     const uncertain = result.uncertain === true || claim.retryUncertain;
+    // A blocked domain is a known, final "do not send": record it and skip.
+    const blockedDomain = result.blockedDomain === true && !uncertain;
     await db.runTransaction(async tx => {
       const [currentDoc, freshUser] = await Promise.all([tx.get(ref), tx.get(userRef)]);
       const current = currentDoc.data();
@@ -167,6 +169,7 @@ export async function sendDurableEmail(opts: DurableEmailOptions): Promise<Durab
         lastError: result.error ?? 'Send failed' }, { merge: true });
       if (campaign && !uncertain && freshUser.data()?.marketingEmailLease?.deliveryId === id) tx.set(userRef, { marketingEmailLease: FieldValue.delete() }, { merge: true });
     });
+    if (blockedDomain) return 'ineligible';
     if (result.quotaExhausted) throw new QuotaExhaustedError(result.error);
     throw new Error(result.error ?? 'Send failed');
   }

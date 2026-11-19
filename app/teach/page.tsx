@@ -84,7 +84,7 @@ export default function TeachPage() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="font-semibold text-gray-900 dark:text-gray-50 truncate">{c.name}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 truncate">{c.examName} · code {c.code}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 truncate">{[c.examName, c.school, `code ${c.code}`].filter(Boolean).join(" · ")}</p>
                   </div>
                   <span className="text-sm text-gray-600 dark:text-gray-300 flex-shrink-0">
                     {c.memberCount} {c.memberCount === 1 ? "student" : "students"}

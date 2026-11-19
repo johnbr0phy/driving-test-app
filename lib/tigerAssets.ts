@@ -163,7 +163,7 @@ const BORROWED_SETS: Record<string, string> = {
   // Citizenship and residence share the reviewed Danish flag and civic-study set.
   dkmoto: "moto", dktruck: "cdl", dkjagt: "hunter", dkmedborger: "dkindfoed",
   // Italy: CILS and CELI share Italian language-study art, never US civics.
-  itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage",
+  itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage", ita2: "itlanguage", itcilsb2: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.
   frcode: "driving",
   // Switzerland (Nov 2026): the car tiger.

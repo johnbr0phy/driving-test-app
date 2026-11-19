@@ -29,7 +29,7 @@ const BATCH_C_MASCOT_IDS = new Set(["rdexam", "phr"]);
 const EU_MASCOT_IDS = new Set(["semedb", "dkindfoed", "dkmedborger", "grcitizen", "rorezid", "deheilpr"]);
 
 // Italian language artwork replaces the incorrect US civics flag.
-const ITALIAN_MASCOT_IDS = new Set(["itcils", "itceli"]);
+const ITALIAN_MASCOT_IDS = new Set(["itcils", "itceli", "ita2", "itcilsb2"]);
 
 // Dedicated MCAT, LSAT and IELTS artwork replaces the borrowed mascots.
 const ADMISSIONS_MASCOT_IDS = new Set(["mcat", "lsat", "ieltsread"]);

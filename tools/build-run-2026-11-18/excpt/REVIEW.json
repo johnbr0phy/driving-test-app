@@ -1,11 +1,32 @@
 {
   "id": "excpt",
   "blind_agreement": "200/200",
-  "options_only": null,
+  "options_only": {
+    "score": "140/200 on pass 3 (passes 1 and 2 failed with 18 and 7 cue hits, all rewritten)",
+    "verdict": "PASS"
+  },
   "findings": [
-    {"questionId": "EXCPT-ROL-013", "severity": "ambiguous-minor", "issue": "PAR (periodic automatic replenishment) is used in many hospital and textbook settings as the stocking level to refill up to, so 'The highest shelf capacity allowed' can be defended against the keyed 'stock level that triggers a reorder'.", "source": "general pharmacy inventory usage (no federal source)", "fix": "Reword the stem to 'the minimum stock level that triggers a reorder', or change distractor C to something clearly unrelated to stock levels (e.g. 'The number of units in one case')."},
-    {"questionId": "EXCPT-DSP-022", "severity": "low", "issue": "Key (household member) is right under the DEA ultimate-user definition the Pharmacist's Manual uses, but federal rules do not literally restrict pickup to household members; caregivers and agents pick up routinely. Distractors are clearly worse, so no wrong key.", "source": "https://www.deadiversion.usdoj.gov/GDP/(DEA-DC-046R1)(EO-DEA154R1)_Pharmacist's_Manual_DEA.pdf", "fix": "Optional: stem 'Under DEA's definition of an ultimate user, who besides the patient may receive...'."},
-    {"questionId": "EXCPT-SAF-012, EXCPT-SAF-014, EXCPT-SAF-026, EXCPT-SAF-028, EXCPT-ROL-027", "severity": "weak", "issue": "Strawman distractors ('Cover it and tell no one', 'Guess where the count stopped', 'Leave it for the next shift', 'Skip the barcode scan', 'Posting the alarm code by the door') make these near-free.", "source": "", "fix": "Replace one or two distractors per item with plausible wrong practices."}
+    {
+      "questionId": "EXCPT-ROL-013",
+      "severity": "ambiguous-minor",
+      "issue": "PAR (periodic automatic replenishment) is used in many hospital and textbook settings as the stocking level to refill up to, so 'The highest shelf capacity allowed' can be defended against the keyed 'stock level that triggers a reorder'.",
+      "source": "general pharmacy inventory usage (no federal source)",
+      "fix": "Reword the stem to 'the minimum stock level that triggers a reorder', or change distractor C to something clearly unrelated to stock levels (e.g. 'The number of units in one case')."
+    },
+    {
+      "questionId": "EXCPT-DSP-022",
+      "severity": "low",
+      "issue": "Key (household member) is right under the DEA ultimate-user definition the Pharmacist's Manual uses, but federal rules do not literally restrict pickup to household members; caregivers and agents pick up routinely. Distractors are clearly worse, so no wrong key.",
+      "source": "https://www.deadiversion.usdoj.gov/GDP/(DEA-DC-046R1)(EO-DEA154R1)_Pharmacist's_Manual_DEA.pdf",
+      "fix": "Optional: stem 'Under DEA's definition of an ultimate user, who besides the patient may receive...'."
+    },
+    {
+      "questionId": "EXCPT-SAF-012, EXCPT-SAF-014, EXCPT-SAF-026, EXCPT-SAF-028, EXCPT-ROL-027",
+      "severity": "weak",
+      "issue": "Strawman distractors ('Cover it and tell no one', 'Guess where the count stopped', 'Leave it for the next shift', 'Skip the barcode scan', 'Posting the alarm code by the door') make these near-free.",
+      "source": "",
+      "fix": "Replace one or two distractors per item with plausible wrong practices."
+    }
   ],
   "verified": [
     "All 16 calculations recomputed (alligation 45 g/75 g, Clark 60 mg, 77F=25C, 0.9% x 250 mL=2.25 g, 22.5 mL KCl, 30% markup, etc.): all keys right.",
@@ -16,6 +37,22 @@
   ],
   "notes": "Keys rotate A,B,C,D in ID order within each category (on-screen shuffle hides this). NHA site (nhanow.com HTML) rejected automated fetches, so the 2 h 10 min time and 200-500 scale could not be re-read here; the 2024 pass-rate PDF was read and confirms ExCPT 16,519 exams, 62.22% passed, 44,599 certificants.",
   "landing_findings": [
-    {"issue": "Landing and examFacts (120 items, 100 scored, 2 h 10 min, 390 on 200-500, July 9 2025 plan, domain counts 15/9/6/8/5/13/13/7/10/14, PSI or live remote, 62% 2024 pass rate) match sources.md and the pass-rate PDF; the time and scale were not re-verifiable live (NHA HTML blocked). No problems found.", "severity": "ok"}
-  ]
+    {
+      "issue": "Landing and examFacts (120 items, 100 scored, 2 h 10 min, 390 on 200-500, July 9 2025 plan, domain counts 15/9/6/8/5/13/13/7/10/14, PSI or live remote, 62% 2024 pass rate) match sources.md and the pass-rate PDF; the time and scale were not re-verifiable live (NHA HTML blocked). No problems found.",
+      "severity": "ok"
+    }
+  ],
+  "recheck": {
+    "ids": 45,
+    "agreement": "45/45",
+    "findings": [
+      {
+        "questionId": "EXCPT-SAF-017",
+        "severity": "ambiguous-minor",
+        "issue": "'The directions do not match' is arguably defensible, since the directions say 'tablet' while the vial holds capsules; the keyed dosage-form mismatch is the better answer.",
+        "fix": "Change distractor B to an unrelated mismatch (e.g. 'The patient name does not match')."
+      }
+    ],
+    "verified": "ROL-005 (423.153(d) annual CMR), ROL-027 (1301.76(a) CS-related felony), INT-020 (1306.25(a) one-time transfer without a shared real-time database), DSP-002 (1306.04 corresponding responsibility), SAF-012 (1910.1030(d)(3)(i) PPE at no cost), SAF-020 (Class III not likely to cause adverse health consequences), SAF-021 (DSCSA 24 hours), SAF-025 (456.705 patient profile), SAF-007/015 Tall Man pairs (vinBLAStine/vinCRIStine, niCARdipine/NIFEdipine) all correct; ROL-013 and DSP-022 findings from the first review are fixed in the rewrite."
+  }
 }

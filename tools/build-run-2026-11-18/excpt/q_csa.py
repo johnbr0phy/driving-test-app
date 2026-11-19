@@ -8,7 +8,7 @@ Q = [
  "60 days after it was signed", ["30 days after it was signed", "Until the end of March", "6 months after it was signed"],
  "21 CFR 1305.13(b): no DEA Form 222 is valid more than 60 days after the purchaser executes it, and partial shipments must also come within those 60 days."),
 ("Who must sign a power of attorney that lets a technician sign DEA Forms 222?",
- "Registrant, technician, two witnesses", ["The technician and the pharmacist in charge", "The registrant and a notary public", "The DEA field office"],
+ "The registrant, the technician and two witnesses", ["The registrant, the technician and a notary", "The registrant and two witnesses", "The technician, the pharmacist in charge and a notary"],
  "21 CFR 1305.05(d) requires the signatures of the person granting the power, the person receiving it and two witnesses. It is not sent to DEA."),
 ("During the biennial inventory, how is an opened bottle of 1,500 alprazolam tablets counted?",
  "By an exact count", ["By an estimated count", "By weighing the bottle", "It is left off the inventory"],

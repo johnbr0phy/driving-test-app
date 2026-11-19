@@ -25,6 +25,8 @@ test("an ok review clears a flag until its answers double or 180 days pass", () 
   assert.strictEqual(reviewClears(review("ok", 40), 80), false);
   assert.strictEqual(reviewClears(review("ok", 40, 181), 41), false);
   assert.strictEqual(reviewClears(review("wrong_key", 40), 41), false);
+  // A low-confidence doubt is not a case against the key: kept, cleared.
+  assert.strictEqual(reviewClears({ ...review("wrong_key", 40), confidence: "low" }, 41), true);
   // Any fresh review stops the audit judging the same statistics again.
   assert.strictEqual(reviewFresh(review("wrong_key", 40), 41), true);
   assert.strictEqual(reviewFresh(undefined, 41), false);

@@ -15,9 +15,15 @@ name: Question audit
 # The PR merges itself when the fix step finished and settled a finding, a second
 # Claude Code run that did not write the fixes re-checked every changed
 # question against the exam's sources and objected to none, and the checks a
-# PR gets (scripts/automerge-checks.sh) pass. Otherwise it stays open with a
-# comment saying which of them failed. A PR merged by hand closes its
-# findings through the resolve job.
+# PR gets (scripts/automerge-checks.sh) pass. Otherwise the PR is closed with a
+# comment saying which of them failed, and its findings stay open: the next run
+# carries them into its report and tries again. After 3 runs a finding is closed
+# with the question kept as it is (scripts/question-audit.ts). No person is in
+# this loop. A PR merged by hand still closes its findings through the resolve job.
+#
+# Student reports close themselves too: a question found right closes its
+# reports with a "the key is right" reply, a merged fix with a "fixed" reply
+# (lib/server/reportClose.ts; /api/cron/report-replies sends the emails).
 #
 # Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY
 # (without the Firebase key it runs the sweep and freshness checks only).
@@ -163,11 +169,22 @@ jobs:
             Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
 
+            The report may end with "Earlier findings not settled yet": those count as
+            findings too. No person reads these findings; you are the one who decides.
+
             For each finding, decide for yourself whether it is right: open the question
-            in its bank and the exam's tools/**/sources.md, and check the rule. Fix only
-            the ones you agree with. Your fix is merged without a person reading it once
-            the checks pass, so change a key only when the official rule says so plainly;
-            otherwise leave the finding out of the resolutions file so it stays open.
+            in its bank and the exam's tools/**/sources.md, and check the rule on the
+            official source. Then settle it one of two ways:
+            - fixed: the official source says the question is wrong or unclear. Fix it.
+            - dismissed: the official source supports the question as it stands, or the
+              finding is a matter of wording that does not mislead. Keep it.
+            Leave a finding out of the resolutions file only when you could not read any
+            official source for it today; it is then retried on the next run, and closed
+            with the question kept after three runs. Your fix is merged without a person
+            reading it once the checks pass, so change a key only when the official rule
+            says so plainly. A finding about wording (unclear, typo, two defensible
+            answers) may be fixed by rewording the stem or a distractor so only the key
+            fits, without a source, as long as the key and its fact do not change.
 
             Official sources only. A question, key, explanation or fact may change only
             when you have read the change yourself (WebFetch, never a search snippet) on
@@ -199,8 +216,8 @@ jobs:
             open. When the PR merges, this file closes those findings.
 
             Your fixes are checked by a second reviewer and then merged without a
-            person reading them, so change a question only when its sources settle it;
-            when in doubt, leave the finding out of the resolutions file.
+            person reading them, so change a key or a fact only when its official
+            source settles it; when the source supports the current key, dismiss.
 
             Do not commit; a later step opens the PR.
 
@@ -300,13 +317,15 @@ jobs:
           f="${{ steps.findings.outputs.resolutions }}"
           if [ -f "$f" ]; then npx tsx scripts/question-audit.ts --resolve "$f"; fi
 
-      - name: Leave it open for a person
+      # Nobody reviews these by hand: close the PR and let the next run try again
+      # (its findings stay open and are carried into the next report).
+      - name: Close it for a retry
         if: ${{ steps.pr.outputs.pull-request-number && steps.merge.outcome != 'success' }}
         env:
           GH_TOKEN: ${{ github.token }}
           NOTE: ${{ steps.verdict.outputs.note }}
         run: |
-          gh pr comment "${{ steps.pr.outputs.pull-request-number }}" --body "Not merged automatically (run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+          gh pr close "${{ steps.pr.outputs.pull-request-number }}" --delete-branch --comment "Not merged automatically, so closed; the next audit run retries these findings (run ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
 
           - Fix step: ${{ steps.fix.outcome }}
           - Second review: ${{ steps.verdict.outputs.ok == 'true' && 'no objections' || 'objections or no verdict' }}

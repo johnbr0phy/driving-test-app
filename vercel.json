@@ -75,6 +75,10 @@
     {
       "path": "/api/cron/owner-digest",
       "schedule": "10 12 * * 1"
+    },
+    {
+      "path": "/api/cron/report-replies",
+      "schedule": "20 14 * * *"
     }
   ]
 }

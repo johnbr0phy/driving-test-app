@@ -9,14 +9,17 @@
  *     changed. A page left as needs_person is retried after 7 days. Prints the
  *     count. Each entry carries the exam's sources.md paths.
  *
- *   npx tsx scripts/source-triage.ts --apply <decisions.json> [--merged] [--run <id>]
+ *   npx tsx scripts/source-triage.ts --apply <decisions.json> [--merged | --failed] [--run <id>]
  *     Writes Claude Code's decisions back to sourceWatch. The file is an array of
  *     { id, url, verdict, reason }, verdict one of noise | updated | replaced |
  *     needs_person. noise re-baselines the page now (today's page becomes the one
  *     the next check compares to). updated and replaced are recorded as pending
  *     until the fix PR merges; with --merged (the workflow's push job) they
- *     re-baseline too. needs_person stays on the /admin Questions tab with the
- *     reason. Rules shared with /admin: sourceNeedsPerson in lib/questionQuality.ts.
+ *     re-baseline too. needs_person is retried after RETRY_DAYS; a second
+ *     needs_person in a row on the same page settles it as kept (re-baselined,
+ *     nothing changed), so no page ever waits on a person. With --failed (the fix
+ *     PR failed its checks and was closed) updated and replaced pages go back to
+ *     needs_person for a retry. Rules: sourceNeedsPerson in lib/questionQuality.ts.
  *
  * Needs FIREBASE_SERVICE_ACCOUNT_KEY.
  */
@@ -106,6 +109,7 @@ async function main() {
   const applyFrom = arg("apply");
   if (applyFrom) {
     const merged = args.includes("--merged");
+    const failed = args.includes("--failed");
     const runId = arg("run");
     const decisions = JSON.parse(readFileSync(applyFrom, "utf8")) as Decision[];
     let n = 0;
@@ -114,15 +118,22 @@ async function main() {
         console.warn(`[source-triage] skipped a bad entry: ${JSON.stringify(d).slice(0, 200)}`);
         continue;
       }
-      // After the merge only the PR's own pages move; noise and needs_person were written the day of the run.
-      if (merged && d.verdict !== "updated" && d.verdict !== "replaced") continue;
+      // After the merge (or a failed, closed PR) only the PR's own pages move; noise and needs_person were written the day of the run.
+      if ((merged || failed) && d.verdict !== "updated" && d.verdict !== "replaced") continue;
       const ref = db.collection("sourceWatch").doc(d.id);
       const snap = await ref.get();
       if (!snap.exists) continue;
       const v = snap.data()!;
-      const reason = String(d.reason || "").slice(0, 300);
-      const settled = d.verdict === "noise" || (merged && (d.verdict === "updated" || d.verdict === "replaced"));
-      const verdict: SourceTriage["verdict"] = d.verdict === "noise" || d.verdict === "needs_person" ? d.verdict : merged ? d.verdict : "pending";
+      let reason = String(d.reason || "").slice(0, 300);
+      let asked: Decision["verdict"] = failed ? "needs_person" : d.verdict;
+      if (failed) reason = `The fix failed its checks and was closed; retried later. ${reason}`.slice(0, 300);
+      // Unsettled twice in a row: keep everything as it is and watch the page from today's version.
+      if (!failed && asked === "needs_person" && v.triage?.verdict === "needs_person") {
+        asked = "noise";
+        reason = `Could not be settled on two tries, so nothing was changed and the page is watched from today's version. ${reason}`.slice(0, 300);
+      }
+      const settled = asked === "noise" || (merged && (asked === "updated" || asked === "replaced"));
+      const verdict: SourceTriage["verdict"] = asked === "noise" || asked === "needs_person" ? asked : merged ? asked : "pending";
       const triage: SourceTriage = { verdict, reason, at: now, ...(runId && { runId }) };
       if (settled && v.latest) {
         await ref.update({ triage, baseline: v.latest, baselineAt: now, changed: false, ratio: 0, reviewedAt: now });
@@ -131,11 +142,11 @@ async function main() {
       }
       n++;
     }
-    console.log(`[source-triage] applied ${n} of ${decisions.length} decisions${merged ? " (merged)" : ""}`);
+    console.log(`[source-triage] applied ${n} of ${decisions.length} decisions${merged ? " (merged)" : failed ? " (failed fix, retry)" : ""}`);
     return;
   }
 
-  console.error("usage: --export <file> | --apply <file> [--merged] [--run <id>]");
+  console.error("usage: --export <file> | --apply <file> [--merged | --failed] [--run <id>]");
   process.exit(1);
 }
 

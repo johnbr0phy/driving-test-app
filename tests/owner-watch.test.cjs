@@ -27,17 +27,18 @@ test("alert once per problem, again after three days, never when nothing is wron
   assert.strictEqual(shouldAlert([...p, { id: "flags", title: "t", detail: "d" }], { alertedIds: ["stats"], alertedAt: hoursAgo(2) }, NOW), true);
 });
 
-const empty = { now: NOW, siteUrl: "https://www.tigertest.io", prs: [], jobs: [], sources: [], findings: [], openFlags: 0, reports: [], freshness: [], reviewDue: [], sourcesHandled: 0 };
+const none = { fixed: 0, kept: 0, replies: 0, sources: 0, upkeep: 0 };
+const empty = { now: NOW, siteUrl: "https://www.tigertest.io", prs: [], jobs: [], handled: none };
 
-test("a quiet week still sends one line", () => {
-  const d = buildOwnerDigest({ ...empty, sourcesHandled: 12 });
+test("a quiet week still sends one line, with what the automation did", () => {
+  const d = buildOwnerDigest({ ...empty, handled: { ...none, fixed: 3, replies: 1, sources: 12 } });
   assert.strictEqual(d.count, 0);
   assert.strictEqual(d.subject, "Tigertest: nothing needs you this week");
   assert.match(d.html, /Nothing needs you this week/);
-  assert.match(d.footer, /12 changed source pages handled without you/);
+  assert.match(d.footer, /3 questions fixed, 1 student told how their report ended, 12 changed official pages handled/);
 });
 
-test("the digest lists what needs a person and leaves out what the automation may still settle", () => {
+test("the digest lists only stopped jobs and open pull requests, never question quality", () => {
   const d = buildOwnerDigest({
     ...empty,
     prs: [
@@ -45,46 +46,18 @@ test("the digest lists what needs a person and leaves out what the automation ma
       { number: 802, title: "Draft", url: "https://github.com/o/r/pull/802", createdAt: hoursAgo(5), draft: true },
     ],
     jobs: [{ id: "stats", title: "Nightly stats", detail: "It last finished 3 days ago." }],
-    sources: [{ url: "https://dmv.example/handbook", exams: ["dmv"], reason: "Could not read the PDF." }],
-    findings: [
-      { examId: "cdl", questionId: "CDL-001", verdict: "wrong_key", createdAt: hoursAgo(100) },
-      // Raised this morning: the fix run has not had its two days yet.
-      { examId: "cdl", questionId: "CDL-002", verdict: "ambiguous", createdAt: hoursAgo(6) },
-    ],
-    openFlags: 3,
-    reports: [{ createdAt: hoursAgo(90) }, { createdAt: hoursAgo(3) }],
-    freshness: [
-      { exam: "ccna", date: "2026-12-01", what: "v2.0 outline", state: "soon" },
-      { exam: "nce", date: "2027-07-01", what: "new format", state: "later" },
-      { exam: "itil", date: "2026-10-01", what: "handled", state: "done" },
-    ],
-    reviewDue: [{ exam: "htl", lastChanged: "2025-10-01" }],
   });
-  const titles = d.sections.map((s) => s.title);
-  assert.deepStrictEqual(titles, [
-    "Jobs that stopped running",
-    "Pull requests waiting for you",
-    "Official pages the triage could not settle",
-    "Audit findings the fix run left open",
-    "Questions students or statistics doubt",
-    "Exam changes due or coming within 30 days",
-    "Yearly reviews due",
-  ]);
+  assert.deepStrictEqual(d.sections.map((s) => s.title), ["Jobs that stopped running", "Pull requests waiting for you"]);
   const text = JSON.stringify(d.sections);
   assert.match(text, /#801/);
   assert.doesNotMatch(text, /#802/);
-  assert.match(text, /CDL-001/);
-  assert.doesNotMatch(text, /CDL-002/);
-  assert.match(text, /1 student report open/);
-  assert.match(text, /ccna/);
-  assert.doesNotMatch(text, /nce|itil/);
-  assert.strictEqual(d.count, 8);
-  assert.strictEqual(d.subject, "Tigertest: 8 things need you");
+  assert.doesNotMatch(d.html, /tab=questions/);
+  assert.strictEqual(d.count, 2);
+  assert.strictEqual(d.subject, "Tigertest: 2 things need you");
 });
 
-test("links are full URLs on the www host, and text is escaped", () => {
-  const d = buildOwnerDigest({ ...empty, sources: [{ url: "https://a.example/x", exams: ["cdl"], reason: "<b>odd</b> page" }] });
-  assert.match(d.html, /href="https:\/\/www\.tigertest\.io\/admin\?tab=questions"/);
+test("text is escaped", () => {
+  const d = buildOwnerDigest({ ...empty, jobs: [{ id: "x", title: "<b>odd</b> job", detail: "d" }] });
   assert.match(d.html, /&lt;b&gt;odd&lt;\/b&gt;/);
   assert.strictEqual(buildOwnerDigest({ ...empty, prs: null }).footer, "GitHub could not be read, so open pull requests are not listed.");
 });

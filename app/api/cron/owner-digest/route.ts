@@ -3,18 +3,17 @@
  * weekly question audit and that morning's source triage and watchdog.
  *
  * One email to John listing only what needs a person (buildOwnerDigest in
- * lib/ownerWatch.ts): jobs that stopped, pull requests the automation did not
- * merge, source pages the triage could not settle, audit findings the fix run
- * left open, old student reports, exam changes due within 30 days and yearly
- * reviews due. A week with nothing still sends one line, so silence always
- * means the digest itself broke. `?dry=1` returns the digest without sending.
+ * lib/ownerWatch.ts): jobs that stopped and open pull requests (new tests).
+ * Question quality is never in it: the audit, source triage and exam upkeep
+ * settle all of it, and the footer only counts what they did. A week with
+ * nothing still sends one line, so silence always means the digest itself
+ * broke. `?dry=1` returns the digest without sending.
  */
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminDb } from "@/lib/firebase-admin";
 import { CAMPAIGN_REPLY_TO, verifyCronSecret } from "@/lib/cron-email";
 import { buildOwnerDigest } from "@/lib/ownerWatch";
-import { readOpenPrs, readWatchdogState } from "@/lib/server/ownerWatch";
-import { buildQuestionHealth } from "@/lib/server/questionHealth";
+import { readHandledWeek, readOpenPrs, readWatchdogState } from "@/lib/server/ownerWatch";
 import { sendEmail } from "@/lib/resend";
 import { SITE_URL } from "@/lib/siteUrl";
 
@@ -24,20 +23,9 @@ export async function GET(req: NextRequest) {
   if (!verifyCronSecret(req)) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   const dry = req.nextUrl.searchParams.get("dry") === "1";
   const db = getAdminDb();
-  const [health, prs, watchdog] = await Promise.all([buildQuestionHealth(), readOpenPrs(), readWatchdogState(db)]);
+  const [handled, prs, watchdog] = await Promise.all([readHandledWeek(db), readOpenPrs(), readWatchdogState(db)]);
 
-  const digest = buildOwnerDigest({
-    siteUrl: SITE_URL,
-    prs,
-    jobs: watchdog.problems ?? [],
-    sources: health.sources.map((s) => ({ url: s.url, exams: s.exams, reason: s.triage?.reason ?? (s.changed ? "changed, not triaged yet" : `failing to load: ${s.error ?? "unknown error"}`) })),
-    findings: health.findings.map((f) => ({ examId: f.examId, questionId: f.questionId, verdict: f.verdict, createdAt: f.createdAt })),
-    openFlags: health.totalFlags,
-    reports: health.reports.map((r) => ({ createdAt: r.createdAt })),
-    freshness: health.freshness,
-    reviewDue: health.reviewDue,
-    sourcesHandled: health.sourcesHandled,
-  });
+  const digest = buildOwnerDigest({ siteUrl: SITE_URL, prs, jobs: watchdog.problems ?? [], handled });
   if (dry) return NextResponse.json({ dry: true, subject: digest.subject, count: digest.count, sections: digest.sections, footer: digest.footer });
 
   const result = await sendEmail({

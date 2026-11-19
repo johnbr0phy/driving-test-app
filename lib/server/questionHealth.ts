@@ -1,89 +1,46 @@
 import { getAdminDb } from "@/lib/firebase-admin";
-import { classQuestionLookup, type ClassQuestionDisplay } from "@/lib/server/classQuestions";
 import FRESHNESS from "@/lib/examFreshness.json";
-import LANDING_DATES from "@/lib/landingDates.json";
-import { applyFlagReviews, sourceNeedsPerson, type FlagReview, type QuestionFlag, type ReviewedFlag, type SourceTriage } from "@/lib/questionQuality";
 import EXAM_SOURCES from "@/lib/examSources.json";
+import { applyFlagReviews, sourceNeedsPerson, type QuestionFlag, type WatchedSource } from "@/lib/questionQuality";
+import type { HandledWeek } from "@/lib/ownerWatch";
 import { loadFlagReviews } from "@/lib/server/questionFlagReviews";
+import { readHandledWeek } from "@/lib/server/ownerWatch";
 
-// The /admin Questions tab (components/admin/QuestionsTab.tsx): the nightly
-// flags (globalStats/questionFlags), open user reports, findings from the
-// weekly Claude audit (questionAuditFindings), pages whose source changed
-// (sourceWatch) and dated exam changes (lib/examFreshness.json).
+// The /admin Questions tab (components/admin/QuestionsTab.tsx): a read-only
+// log of what the question automation did. Nothing here waits for a person
+// (John, Nov 19 2026): the daily audit settles flags and student reports and
+// fixes findings in PRs that merge themselves, the source triage settles
+// changed official pages, the weekly exam upkeep applies dated exam changes
+// and yearly reviews, and students are emailed how their report ended.
 
-export interface ReportRow {
-  id: string;
-  examId: string;
-  questionId: string;
-  reason: string;
-  note: string;
-  lang: string;
-  picked: number | null;
-  /** Signed-in reporter's uid; null for a guest and for reports before Nov 6 2026. */
-  uid?: string | null;
-  /** The account email, or the email a guest typed; null when neither. */
-  email?: string | null;
-  createdAt: string;
-  /** The audit's decision on this question, when it was made after the report. */
-  review?: FlagReview;
-}
-
-export interface FindingRow {
-  id: string;
+export interface ClosedFinding {
   examId: string;
   questionId: string;
   verdict: string;
-  confidence: string;
+  outcome: "fixed" | "kept" | "gave_up";
+  note: string;
+  at: string;
+}
+
+export interface ClosedReport {
+  examId: string;
+  questionId: string;
   reason: string;
-  fix: string;
-  modelAnswer: string;
-  trigger: string[];
-  runId: string;
-  createdAt: string;
-}
-
-export interface SourceRow {
-  id: string;
-  url: string;
-  exams: string[];
-  changed: boolean;
-  changedAt: string | null;
-  ratio: number;
-  failures: number;
-  error: string | null;
-  checkedAt: string | null;
-  triage: SourceTriage | null;
-}
-
-export interface FreshnessRow {
-  exam: string;
-  date: string;
-  kind: string;
-  what: string;
-  action: string;
-  source: string;
-  done?: string;
-  state: "due" | "soon" | "later" | "done";
+  outcome: "fixed" | "right" | "closed";
+  /** True once the student was emailed; false when they left no email or it is still to go. */
+  emailed: boolean;
+  at: string;
 }
 
 export interface QuestionHealthPayload {
-  /** Flags that still need someone first, then the ones the audit cleared. */
-  flags: (ReviewedFlag & { text?: ClassQuestionDisplay })[];
-  flagsUpdatedAt: string | null;
-  totalFlags: number;
-  clearedFlags: number;
-  byKind: Record<string, number>;
-  answeredByExam: Record<string, { questions: number; answers: number }>;
-  reports: (ReportRow & { text?: ClassQuestionDisplay })[];
-  reportTotals: { total: number; byReason: Record<string, number> };
-  findings: (FindingRow & { text?: ClassQuestionDisplay })[];
-  lastAudit: { runId: string; at: string; checked: number; disagreements: number; findings: number; model: string } | null;
-  sources: SourceRow[];
-  sourcesWatched: number;
-  /** Changed or broken pages the source triage settled in the last 7 days. */
-  sourcesHandled: number;
-  freshness: FreshnessRow[];
-  reviewDue: { exam: string; lastChanged: string }[];
+  lastAudit: { at: string; checked: number; findings: number; signalsCleared: number } | null;
+  week: HandledWeek;
+  /** Still inside the automatic runs (they settle each within a few days). */
+  inProgress: { findings: number; reports: number; flags: number; sources: number };
+  findings: ClosedFinding[];
+  reports: ClosedReport[];
+  /** Dated exam changes not done yet: the weekly upkeep takes each when it is due. */
+  upcoming: { exam: string; date: string; what: string; recheck?: string }[];
   generatedAt: string;
 }
 
@@ -91,95 +48,70 @@ const DAY = 86_400_000;
 
 export async function buildQuestionHealth(): Promise<QuestionHealthPayload> {
   const db = getAdminDb();
-  const [flagsDoc, reportsSnap, totalsDoc, findingsSnap, auditSnap, sourcesSnap, reviews] = await Promise.all([
+  const since = new Date(Date.now() - 14 * DAY).toISOString();
+  const [week, flagsDoc, openFindings, openReports, closedFindings, closedReports, auditSnap, sourcesSnap, reviews] = await Promise.all([
+    readHandledWeek(db),
     db.doc("globalStats/questionFlags").get(),
-    db.collection("questionReports").where("status", "==", "open").limit(500).get(),
-    db.doc("analytics/questionReports").get(),
-    db.collection("questionAuditFindings").where("status", "==", "open").limit(300).get(),
+    db.collection("questionAuditFindings").where("status", "==", "open").select().get(),
+    db.collection("questionReports").where("status", "==", "open").select().get(),
+    db.collection("questionAuditFindings").where("closedAt", ">=", since).get(),
+    db.collection("questionReports").where("closedAt", ">=", since).get(),
     db.collection("questionAudits").orderBy("at", "desc").limit(1).get(),
-    db.collection("sourceWatch").select("url", "exams", "changed", "changedAt", "ratio", "failures", "error", "checkedAt", "triage").get(),
+    db.collection("sourceWatch").select("url", "changed", "changedAt", "failures", "triage").get(),
     loadFlagReviews(db),
   ]);
 
-  const lookups = new Map<string, (id: string) => ClassQuestionDisplay | undefined>();
-  const textFor = (examId: string, questionId: string) => {
-    if (!lookups.has(examId)) lookups.set(examId, classQuestionLookup(examId));
-    return lookups.get(examId)!(questionId);
-  };
+  const flags = applyFlagReviews((flagsDoc.data()?.flags as QuestionFlag[]) ?? [], reviews);
+  const watched = new Set(Object.values(EXAM_SOURCES as Record<string, string[]>).flat());
+  const sources = sourcesSnap.docs.filter((d) => {
+    const v = d.data();
+    const s: WatchedSource = { url: v.url, changed: v.changed === true, changedAt: v.changedAt ?? null, failures: v.failures ?? 0, triage: v.triage ?? null };
+    return sourceNeedsPerson(s, watched);
+  }).length;
 
-  const flagsData = flagsDoc.data() ?? {};
-  // Joined here as well as in the nightly cron, so a review from this morning's audit shows at once.
-  const reviewed = applyFlagReviews((flagsData.flags as QuestionFlag[]) ?? [], reviews);
-  const flags = reviewed.flags.slice(0, 200).map((f) => ({ ...f, text: textFor(f.examId, f.questionId) }));
+  const findings: ClosedFinding[] = closedFindings.docs
+    .map((d) => {
+      const f = d.data();
+      return {
+        examId: f.examId,
+        questionId: f.questionId,
+        verdict: f.verdict,
+        outcome: (f.status === "fixed" ? "fixed" : f.gaveUp ? "gave_up" : "kept") as ClosedFinding["outcome"],
+        note: f.closedNote ?? f.reason ?? "",
+        at: f.closedAt,
+      };
+    })
+    .sort((a, b) => b.at.localeCompare(a.at))
+    .slice(0, 100);
 
-  const reports = reportsSnap.docs
-    .map((d) => ({ id: d.id, ...(d.data() as Omit<ReportRow, "id">) }))
-    .sort((a, b) => (b.createdAt || "").localeCompare(a.createdAt || ""))
-    .map((r) => {
-      const review = reviews[r.examId]?.[r.questionId];
-      return { ...r, ...(review && review.at > (r.createdAt || "") ? { review } : {}), text: textFor(r.examId, r.questionId) };
-    });
-
-  const findings = findingsSnap.docs
-    .map((d) => ({ id: d.id, ...(d.data() as Omit<FindingRow, "id">) }))
-    .sort((a, b) => (b.createdAt || "").localeCompare(a.createdAt || ""))
-    .map((f) => ({ ...f, text: textFor(f.examId, f.questionId) }));
+  const reports: ClosedReport[] = closedReports.docs
+    .map((d) => {
+      const r = d.data();
+      return {
+        examId: r.examId,
+        questionId: r.questionId,
+        reason: r.reason,
+        outcome: (r.replyOutcome ?? "closed") as ClosedReport["outcome"],
+        emailed: !!r.emailedAt,
+        at: r.closedAt,
+      };
+    })
+    .sort((a, b) => b.at.localeCompare(a.at))
+    .slice(0, 100);
 
   const audit = auditSnap.docs[0]?.data();
+  const upcoming = (FRESHNESS.events as { exam: string; date: string; what: string; done?: string; recheck?: string }[])
+    .filter((e) => !e.done)
+    .map(({ exam, date, what, recheck }) => ({ exam, date, what, ...(recheck ? { recheck } : {}) }))
+    .sort((a, b) => (a.recheck ?? a.date).localeCompare(b.recheck ?? b.date));
 
-  const allSources: SourceRow[] = sourcesSnap.docs
-    .map((d) => {
-      const v = d.data();
-      return {
-        id: d.id,
-        url: v.url,
-        exams: v.exams ?? [],
-        changed: v.changed === true,
-        changedAt: v.changedAt ?? null,
-        ratio: v.ratio ?? 0,
-        failures: v.failures ?? 0,
-        error: v.error ?? null,
-        checkedAt: v.checkedAt ?? null,
-        triage: v.triage ?? null,
-      };
-    });
-  // The daily source triage settles most changed pages itself; /admin shows
-  // only what it could not (sourceNeedsPerson), and counts the rest.
-  const watchedUrls = new Set(Object.values(EXAM_SOURCES as Record<string, string[]>).flat());
-  const sourcesHandled = allSources.filter((s) => s.triage && s.triage.at >= new Date(Date.now() - 7 * DAY).toISOString() && s.triage.verdict !== "needs_person").length;
-  const sources = allSources.filter((s) => sourceNeedsPerson(s, watchedUrls));
-
-  const today = new Date().toISOString().slice(0, 10);
-  const soon = new Date(Date.now() + 60 * DAY).toISOString().slice(0, 10);
-  const freshness: FreshnessRow[] = (FRESHNESS.events as Omit<FreshnessRow, "state">[])
-    .map((e) => ({ ...e, state: (e.done ? "done" : e.date <= today ? "due" : e.date <= soon ? "soon" : "later") as FreshnessRow["state"] }))
-    .sort((a, b) => a.date.localeCompare(b.date));
-
-  const cutoff = new Date(Date.now() - FRESHNESS.reviewAfterDays * DAY).toISOString().slice(0, 10);
-  const reviewDue = Object.entries(LANDING_DATES as Record<string, string>)
-    .filter(([, d]) => d < cutoff)
-    .map(([exam, lastChanged]) => ({ exam, lastChanged }))
-    .sort((a, b) => a.lastChanged.localeCompare(b.lastChanged));
-
-  const totals = totalsDoc.data() ?? {};
   return {
-    flags,
-    flagsUpdatedAt: flagsData.updatedAt ?? null,
-    totalFlags: reviewed.open,
-    clearedFlags: reviewed.cleared,
-    byKind: reviewed.byKind,
-    answeredByExam: flagsData.answeredByExam ?? {},
-    reports,
-    reportTotals: { total: totals.total ?? 0, byReason: totals.byReason ?? {} },
+    lastAudit: audit ? { at: audit.at, checked: audit.checked ?? 0, findings: audit.findings ?? 0, signalsCleared: audit.signalsCleared ?? 0 } : null,
+    week,
+    inProgress: { findings: openFindings.size, reports: openReports.size, flags: flags.open, sources },
     findings,
-    lastAudit: audit
-      ? { runId: auditSnap.docs[0].id, at: audit.at, checked: audit.checked ?? 0, disagreements: audit.disagreements ?? 0, findings: audit.findings ?? 0, model: audit.model ?? "" }
-      : null,
-    sources,
-    sourcesWatched: sourcesSnap.size,
-    sourcesHandled,
-    freshness,
-    reviewDue,
+    reports,
+    upcoming,
     generatedAt: new Date().toISOString(),
   };
 }

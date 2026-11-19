@@ -239,6 +239,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ESCO Institute's R-410A Safety & Training and Specialty Certifications pages, checked November 2026",
     source: { name: "ESCO Institute R-410A program", url: "https://www.escogroup.org/Training/R410A.aspx" },
   },
+  natecore: {
+    answer:
+      "The NATE Core exam is the knowledge exam from North American Technician Excellence (NATE) that tests an HVACR technician's general knowledge, construction knowledge and HVACR knowledge in safety, tools, basic construction, basic science, achieving desired conditions, taking measurements and basic electricity. NATE says it is a requirement for most installation or service specialty certifications. It has 50 questions, is closed book with a 1.5 hour time limit, and is scored pass/fail; NATE sets the passing score through a Passing Score Study and does not publish a percentage. On the traditional pathway a technician passes the Core exam and a 100-question Specialty exam. NATE certifications are renewed every two years.",
+    rows: [
+      { label: "Questions", value: "50" },
+      { label: "Time limit", value: "1.5 hours, closed book" },
+      { label: "Scoring", value: "Pass/fail; no percentage published (Tigertest uses 70% as a readiness line)" },
+      { label: "Weights", value: "Electricity 26%, Safety 18%, Measurements 14%, Desired Conditions 14%, Tools 10%, Basic Science 10%, Construction 8%" },
+      { label: "Needed for", value: "Most NATE installation or service specialty certifications" },
+      { label: "Renewal", value: "Every two years (16 continuing education hours or a Specialty retake)" },
+    ],
+    basedOn: "NATE's Core exam KATE, Traditional Pathway and Recertification FAQ pages, checked November 2026",
+    source: { name: "NATE Core exam KATE (PDF)", url: "https://natex.org/wp-content/uploads/2022/06/Core-KATE-Final.pdf" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

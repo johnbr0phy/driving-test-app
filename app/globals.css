@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* NATE Core exam theme: muted slate mauve */
+  [data-theme="natecore"] {
+    --brand: 290 20% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 290 20% 96%;
+    --brand-hover: 290 20% 34%;
+    --brand-dark: 290 20% 27%;
+    --brand-darker: 290 20% 17%;
+    --brand-muted: 290 15% 70%;
+    --brand-border: 290 15% 80%;
+    --brand-border-light: 290 15% 89%;
+    --brand-gradient-to: 300 15% 96%;
+  }
   /* R-410A safety certification theme: gauge violet */
   [data-theme="r410a"] {
     --brand: 287 75% 40%;

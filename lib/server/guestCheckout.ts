@@ -69,7 +69,16 @@ export async function resolveGuestBuyer(session: Stripe.Checkout.Session): Promi
 
   const email = guestSessionEmail(session);
   if (!email) throw new Error(`Guest checkout ${session.id} has no email`);
-  const { uid, created } = await findOrCreateUser(email, session.created);
+  const found = await findOrCreateUser(email, session.created);
+  const { uid } = found;
+  // An account another guest checkout already made belongs to that one: a
+  // second purchase with the same email (even a minute later) adds Premium
+  // but never signs anyone in to it.
+  let created = found.created;
+  if (created) {
+    const others = await getAdminDb().collection('guestCheckouts').where('uid', '==', uid).limit(5).get();
+    if (others.docs.some(d => d.id !== session.id && d.data().createdForGuest === true)) created = false;
+  }
 
   try {
     await ref.create({

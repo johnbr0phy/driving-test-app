@@ -1,6 +1,7 @@
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata } from "next";
-import { getExamById, examBaseLanguage, examLandingPath } from "./exams";
+import { getExamById, examBaseLanguage, examLandingPath, type ExamConfig } from "./exams";
+import { EXAMS_V2 } from "./v2/registry";
 import type { Language } from "@/i18n";
 import { isRegion, regionInfo, regionOfTest } from "./region";
 import type { ExamV2Config } from "./v2/types";
@@ -72,8 +73,18 @@ const LANGUAGE_LOCALE: Partial<Record<Language, string>> = {
   sv: "sv-SE", da: "da-DK", fi: "fi-FI", hu: "hu-HU", ro: "ro-RO", el: "el-GR",
 };
 
+/**
+ * The exam a landing belongs to, v1 or v2. A native-language v2 exam (the
+ * Italian A2 test, CILS B2) has a translated-style landing too; it carries the
+ * fields the landing helpers read (id, slug, landingPath, language, locale),
+ * and no translations.
+ */
+export function landingExam(examId: string): ExamConfig | undefined {
+  return getExamById(examId) ?? (EXAMS_V2.find((e) => e.id === examId) as unknown as ExamConfig | undefined);
+}
+
 export function examLandingLocale(examId: string, lang: Language): string {
-  const exam = getExamById(examId)!;
+  const exam = landingExam(examId)!;
   const region = regionOfTest(examId);
   const country = isRegion(region) ? region : null;
   if (lang === examBaseLanguage(exam)) {
@@ -96,7 +107,7 @@ export function examLandingLocale(examId: string, lang: Language): string {
  * English one).
  */
 export function examLandingAlternates(examId: string): Record<string, string> {
-  const exam = getExamById(examId)!;
+  const exam = landingExam(examId)!;
   const base = examBaseLanguage(exam);
   const baseUrl = `${siteUrl}${examLandingPath(exam)}`;
   const baseKey = base === "en" ? "en" : examLandingLocale(examId, base);

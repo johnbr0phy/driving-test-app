@@ -316,7 +316,7 @@ test('each real complex format completes a canonical shared drill transaction, n
 
 test('SAT, ACT and every school or children\'s test stay free; paid v2 exams lock only their last drills and test', async () => {
   const paid = EXAMS_V2.filter((e) => e.premium);
-  const kids = /^(sat|psat|act|ged|ap(?:psych|ush|gov|world|hug|lang|bio|calcab)|gcse|ks2|elevenplus|timestables|fsmaths|osslt|eqao9|naplan|ocnsw|nswsel|vicsel|hscmaths|jnvst|aissee|jamb|jeemain|neet|mhtcet|cuet|sehp|accuplacer|nda)/;
+  const kids = /^(sat|psat|act|ged|ap(?:psych|ush|gov|world|hug|lang|bio|calcab)|gcse|ks2|elevenplus|timestables|fsmaths|osslt|eqao9|naplan|ocnsw|nswsel|vicsel|hscmaths|jnvst|aissee|jamb|jeemain|neet|mhtcet|kcet|cuet|sehp|accuplacer|nda)/;
   assert.ok(paid.length > 0);
   for (const e of paid) {
     assert.ok(!kids.test(e.id), e.id);

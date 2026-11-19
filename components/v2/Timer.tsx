@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Clock, EyeOff } from "lucide-react";
+import { useV2Ui } from "@/lib/v2/ui";
 
 export function formatClock(seconds: number) {
   const s = Math.max(0, Math.ceil(seconds));
@@ -15,6 +16,7 @@ export function Timer({ remaining, onExpire }: { remaining: () => number; onExpi
   const [left, setLeft] = useState(remaining());
   const [hidden, setHidden] = useState(false);
   const expired = useRef(false);
+  const t = useV2Ui().runner;
 
   useEffect(() => {
     const tick = () => {
@@ -37,7 +39,7 @@ export function Timer({ remaining, onExpire }: { remaining: () => number; onExpi
   }, [remaining, onExpire]);
 
   const low = left <= 5 * 60;
-  const announcement = left <= 0 ? "Time is up." : left <= 60 ? "One minute or less remaining." : low ? "Five minutes or less remaining." : "";
+  const announcement = left <= 0 ? t.timeUp : left <= 60 ? t.oneMinuteLeft : low ? t.fiveMinutesLeft : "";
   return (
     <>
     <span className="sr-only" role="status" aria-atomic="true">{announcement}</span>
@@ -45,11 +47,11 @@ export function Timer({ remaining, onExpire }: { remaining: () => number; onExpi
       type="button"
       onClick={() => setHidden((h) => !h)}
       className={`v2-tap flex items-center gap-1.5 rounded-full px-3 text-sm font-semibold tabular-nums ${low ? "bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300" : "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100"}`}
-      aria-label={hidden && !low ? "Show timer" : `${formatClock(left)} remaining. ${hidden ? "Show" : "Hide"} timer`}
+      aria-label={hidden && !low ? t.showTimer : t.timerRemaining(formatClock(left), hidden)}
       aria-pressed={!hidden}
     >
       {hidden ? <EyeOff className="h-4 w-4" /> : <Clock className="h-4 w-4" />}
-      {hidden && !low ? "Timer" : formatClock(left)}
+      {hidden && !low ? t.timer : formatClock(left)}
     </button>
     </>
   );

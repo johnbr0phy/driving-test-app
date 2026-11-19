@@ -31,6 +31,25 @@ if (!base || !outDir || pairs.length === 0) {
 const themes = (process.env.THEMES || "light,dark").split(",");
 const lang = process.env.SHOT_LANG || "";
 
+// The v2 chrome runs in the exam's language (lib/v2/ui/<lang>.ts), so the
+// words this script waits for come from that file when SHOT_LANG is set.
+function v2Words() {
+  const words = { start: "Start module", question: "Question", check: "Check", tap: "Tap an answer" };
+  if (!lang || lang === "en") return words;
+  const fs = require("fs");
+  const file = path.join(__dirname, "..", "..", "..", "..", "lib", "v2", "ui", `${lang}.ts`);
+  if (!fs.existsSync(file)) return words;
+  const src = fs.readFileSync(file, "utf8");
+  const pick = (re) => (src.match(re) || [])[1];
+  words.start = pick(/startModule:\s*"([^"]+)"/) || words.start;
+  words.question = pick(/questionNumber:[^`]*`([^$`]+)\$\{n\}/)?.trim() || words.question;
+  words.check = pick(/\bcheck:\s*"([^"]+)"/) || words.check;
+  words.tap = pick(/tapAnswer:\s*"([^"]+)"/) || words.tap;
+  return words;
+}
+const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const W = v2Words();
+
 // Hide the Next.js dev badge in case the server is `next dev`.
 const NAV = { waitUntil: "load", timeout: 120000 };
 const HIDE_DEV = "nextjs-portal{display:none!important}";
@@ -71,10 +90,10 @@ async function settle(page, selector) {
       if (v2) {
         await page.goto(`${base}/${slug}/test/1`, NAV);
         // Get past the intro screen to the first question.
-        await page.waitForSelector("text=/Start module|Begin|Question 1/", { timeout: 120000 });
-        const start = page.getByRole("button", { name: /^(start|begin)/i }).first();
+        await page.waitForSelector(`text=/${esc(W.start)}|Begin|${esc(W.question)} 1/`, { timeout: 120000 });
+        const start = page.getByRole("button", { name: new RegExp(`^(${esc(W.start)}|start|begin)`, "i") }).first();
         if (await start.isVisible().catch(() => false)) await start.click();
-        await settle(page, "text=/Question 1/");
+        await settle(page, `text=/${esc(W.question)} 1/`);
       } else {
         await page.goto(`${base}/${slug}/dashboard`, NAV);
         await page.goto(`${base}/${slug}/test/${a}`, NAV);
@@ -86,7 +105,7 @@ async function settle(page, selector) {
       ({ ctx, page } = await open(browser, theme, { viewport: { width: 384, height: 640 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true }));
       if (v2) {
         await page.goto(`${base}/${slug}/train?drill=${b}&level=exam`, NAV);
-        await settle(page, "text=/Tap an answer|Check/");
+        await settle(page, `text=/${esc(W.tap)}|${esc(W.check)}/`);
       } else {
         await page.goto(`${base}/${slug}/dashboard`, NAV);
         await page.goto(`${base}/${slug}/training?set=1`, NAV);

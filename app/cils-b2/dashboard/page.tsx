@@ -1,8 +1,9 @@
 "use client";
 
-import { ExamDashboard } from "@/components/exam/ExamDashboard";
-import { getExamById } from "@/lib/exams";
+import { DashboardV2 } from "@/components/v2/DashboardV2";
+import { getExamV2 } from "@/lib/v2/registry";
+import "@/lib/v2/banks/itcilsb2";
 
-export default function Itcilsb2DashboardPage() {
-  return <ExamDashboard exam={getExamById("itcilsb2")!} />;
+export default function DashboardPage() {
+  return <DashboardV2 exam={getExamV2("itcilsb2")} />;
 }

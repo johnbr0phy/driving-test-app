@@ -4573,6 +4573,19 @@
     --brand-border-light: 104 21% 90%;
     --brand-gradient-to: 116 30% 96%;
   }
+  /* KCET theme: dark mustard gold, Karnataka yellow (v2 exam; matches lib/v2/exams/kcet.ts theme) */
+  [data-theme="kcet"] {
+    --brand: 52 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 52 100% 95%;
+    --brand-hover: 52 100% 15%;
+    --brand-dark: 52 100% 12%;
+    --brand-darker: 52 100% 8%;
+    --brand-muted: 52 30% 70%;
+    --brand-border: 52 35% 78%;
+    --brand-border-light: 52 35% 90%;
+    --brand-gradient-to: 40 100% 95%;
+  }
 
   /* CUET (UG) General Aptitude Test theme: deep plum (v2 exam; matches lib/v2/exams/cuet.ts theme) */
   [data-theme="cuet"] {

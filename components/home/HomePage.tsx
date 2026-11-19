@@ -2,12 +2,9 @@ import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { TEST_CATALOG } from "@/lib/testCatalog";
-import { TestCatalogGrid } from "@/components/TestCatalogGrid";
 import { TestCard } from "@/components/TestCard";
 import { TestCatalogStatic } from "@/components/TestCatalogStatic";
-import { CountUp } from "@/components/CountUp";
 import { getPopularTests } from "@/lib/server/popularTests";
 import { getTrendingSearches } from "@/lib/server/trendingSearches";
 import { SearchHome } from "@/components/home/SearchHome";
@@ -20,12 +17,13 @@ import type { TestCatalogEntry } from "@/lib/testCatalog";
 import { countryNameIn, homeCopy } from "@/components/home/homeCopy";
 import type { Language } from "@/i18n";
 import { landingContent } from "@/lib/landingContent";
-import { getExamById } from "@/lib/exams";
 import { SITE_URL } from "@/lib/siteUrl";
 import { regionHeadline } from "@/lib/regionHeadline";
 
 const siteUrl = SITE_URL;
 const examCount = TEST_CATALOG.length;
+/** How many of a country's own tests "About each test" describes (the rest stay in the catalog below). */
+const LOCAL_TESTS_SHOWN = 8;
 
 const title = `Tigertest: Free Practice Tests for ${examCount} Exams - DMV, SAT & More`;
 const description = `Free practice tests for ${examCount} exams: the DMV permit test in all 50 states, SAT, ACT, CDL, nursing and healthcare certifications, IT certs, real estate, insurance and more. Every answer explained. No account needed.`;
@@ -150,13 +148,6 @@ function aboutTest(t: TestCatalogEntry, lang: string): string | undefined {
 }
 
 /** A test's name in the page's language: a native exam's own name on its country's page, else the English one. */
-/** The catalog test a landing path belongs to: its main landing or one of its translated ones. */
-function catalogTestForHref(href: string): TestCatalogEntry | undefined {
-  return TEST_CATALOG.find(
-    (t) => t.href === href || Object.values(getExamById(t.id)?.translations ?? {}).some((tr) => tr?.landingPath === href)
-  );
-}
-
 function nameIn(t: TestCatalogEntry, lang: string): string {
   return t.nativeName && t.language === lang ? t.nativeName : t.name;
 }
@@ -228,9 +219,16 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
         .filter((p) => p.answered !== null && p.answered > 0 && (regionOfTest(p.test.id) === region || regionOfTest(p.test.id) === "GLOBAL"))
         .slice(0, 6);
   // Outside the US: the country's own tests, busiest first.
-  const answeredById = new Map(ranked.map((p) => [p.test.id, p.answered]));
+  const answeredById = new Map(allRanked.map((p) => [p.test.id, p.answered]));
   const byAnswered = (a: { id: string }, b: { id: string }) => (answeredById.get(b.id) ?? 0) - (answeredById.get(a.id) ?? 0);
-  const localTests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region && !NON_DRIVING_TESTS.has(t.id)).sort(byAnswered);
+  // The country's own tests for "About each test": every driving test, then the
+  // busiest of the rest, LOCAL_TESTS_SHOWN in all (Nov 2026: it used to show the
+  // driving tests only, so /in described 1 of its 39 tests and /it 1 of 5).
+  const ownTests = TEST_CATALOG.filter((t) => regionOfTest(t.id) === region);
+  const localTests = [
+    ...ownTests.filter((t) => !NON_DRIVING_TESTS.has(t.id)).sort(byAnswered),
+    ...ownTests.filter((t) => NON_DRIVING_TESTS.has(t.id)).sort(byAnswered),
+  ].slice(0, Math.max(LOCAL_TESTS_SHOWN, ownTests.filter((t) => !NON_DRIVING_TESTS.has(t.id)).length));
   const home = us ? null : REGION_HOME[region];
   const nativeLang = regionInfo(region).lang;
   const lang = pickedLang ?? nativeLang;
@@ -238,29 +236,42 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
   const faqs = faqsFor(region, lang);
   const inName = countryNameIn(region, lang);
   const c = homeCopy(lang);
-  // A country's main CTA points at its first test (or that test's landing in
-  // the page's language); it waits until that test is in the catalog.
-  const ctaTest = home ? catalogTestForHref(home.cta.href) : undefined;
-  const cta = home && ctaTest ? (native ? home.cta : { label: nameIn(ctaTest, lang), href: ctaTest.href }) : null;
-
-  // English homepages open on the search (one box over every test, Nov 2026);
-  // the other languages keep the hero, How it works and the catalog below.
-  const search = lang === "en";
+  // Every homepage opens on the search (one box over every test): English since Nov 2026,
+  // the other languages since Nov 18 2026 (they had a hero, How it works and a card catalog).
   const popularity: Record<string, number> = {};
   for (const p of allRanked) popularity[p.test.id] = p.answered ?? 0;
-  const trending = search ? await trendingFor(region, allRanked) : [];
-  // An English country page's own h1 and lead, from the catalog (lib/regionHeadline.ts).
-  const headline = search && !us ? regionHeadline(region) : null;
+  const trending = await trendingFor(region, allRanked, lang);
+  // A country page's own h1 and lead: built from the catalog in English (lib/regionHeadline.ts),
+  // the country's own title and tests line in its language (REGION_HOME), else the generic ones.
+  const headline = !home
+    ? null
+    : lang === "en"
+      ? regionHeadline(region as Exclude<Region, "US">)
+      : native
+        ? { h1: home.title.replace(/\s*\|\s*Tigertest$/, ""), lead: home.testsSub }
+        : { h1: c.testsFor(inName), lead: c.countryLead(inName) };
 
   return (
-    <div className={`flex-1 bg-white ${search ? "dark:bg-gray-950" : "dark:bg-gray-900"}`}>
+    <div className={`flex-1 bg-white dark:bg-gray-950`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFor(region)) }} />
 
-      {search && <SearchHome initialRegion={region} popularity={popularity} trending={trending} answeredThisWeek={totalAnswered} headline={headline?.h1} />}
+      <SearchHome
+        initialRegion={region}
+        popularity={popularity}
+        trending={trending}
+        answeredThisWeek={totalAnswered}
+        headline={headline?.h1}
+        lang={lang}
+        locale={lang === nativeLang ? regionInfo(region).locale : lang}
+        labels={
+          lang === "en"
+            ? undefined
+            : { placeholder: c.search.placeholder, label: c.search.label, clear: c.search.clear, answered: c.answeredThisWeek, findYourTest: c.findYourTest }
+        }
+      />
 
       {/* The search homepages: every test right under the box, like /tests (the US
           lists every country's tests, other countries their own and worldwide). */}
-      {search && (
       <div id="all-tests" data-search-rest className="max-w-5xl mx-auto px-6 pt-10 pb-16 md:pb-24 scroll-mt-6">
         <h2 className={`text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center ${headline ? "mb-3" : "mb-6"}`}>
           {us ? c.everyTest : c.testsFor(inName)}
@@ -289,64 +300,6 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
           </Link>
         </div>
       </div>
-      )}
-
-      {!search && (<>
-      {/* Hero */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
-        <div className="relative max-w-4xl mx-auto px-6 pt-14 pb-12 md:pt-20 md:pb-16 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 tracking-tight mb-6">
-            {c.heroTitle}
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            {home ? (native ? home.lead : c.countryLead(inName)) : c.usLead(examCount)}
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="#all-tests"
-              className="inline-flex items-center gap-2 rounded-full bg-gray-900 dark:bg-white px-8 py-4 text-lg font-semibold text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-            >
-              {c.findYourTest} <ArrowRight className="h-5 w-5" aria-hidden="true" />
-            </a>
-            {(us || cta) && (
-            <Link
-              href={cta ? cta.href : "/dmv-practice-test"}
-              className="inline-flex items-center rounded-full border border-gray-300 dark:border-gray-700 px-8 py-4 text-lg font-semibold text-gray-900 dark:text-gray-50 hover:border-brand hover:text-brand transition-colors"
-            >
-              {cta ? cta.label : c.dmv.cta}
-            </Link>
-            )}
-          </div>
-          {totalAnswered !== null && totalAnswered > 0 && (
-            <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
-              <CountUp value={totalAnswered} className="font-semibold text-gray-900 dark:text-gray-50" />
-              <span className="ml-1">{c.answeredThisWeek}</span>
-            </p>
-          )}
-        </div>
-      </div>
-
-      </>)}
-
-      {/* Popular this week (outside the US only once someone there has answered questions) */}
-      {!search && popular.length > 0 && (
-      <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-20">
-        <div className="flex items-end justify-between mb-5">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">
-            {popular[0]?.answered !== null ? c.popularThisWeek : c.popularTests}
-          </h2>
-          <Link href="/tests" className="text-sm font-medium text-brand-dark hover:underline">
-            {c.allTests(examCount)} &rarr;
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {popular.map(({ test, answered }) => (
-            <TestCard key={test.id} test={test} answered={answered} lang={lang} />
-          ))}
-        </div>
-      </div>
-      )}
 
       {/* The US: the DMV state grid */}
       {us && (
@@ -389,28 +342,12 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
       )}
 
       {/* Outside the US: the country's own tests (none yet on a brand-new country page) */}
-      {home && localTests.length > 0 && (!search || localTests.some((t) => aboutTest(t, lang))) && (
-          <div data-search-rest className={`max-w-5xl mx-auto px-6 pb-16 md:pb-20 ${search ? "pt-4" : ""}`}>
-            {!search && (<>
-            <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2 mb-5">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50">{native ? home.testsTitle : c.testsFor(inName)}</h2>
-                {native && <p className="mt-2 max-w-2xl text-gray-600 dark:text-gray-300">{home.testsSub}</p>}
-              </div>
-              <Link href="/tests" className="text-sm font-medium text-brand-dark hover:underline">
-                {c.allTests(examCount)} &rarr;
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {localTests.map((test) => (
-                <TestCard key={test.id} test={test} answered={answeredById.get(test.id) ?? null} lang={lang} />
-              ))}
-            </div>
-            </>)}
+      {home && localTests.some((t) => aboutTest(t, lang)) && (
+          <div data-search-rest className="max-w-5xl mx-auto px-6 pb-16 md:pb-20 pt-4">
             {/* The facts of each real test in plain sentences: what search
                 snippets and AI answers quote for "<country> driving test". */}
             {localTests.some((t) => aboutTest(t, lang)) && (
-              <div className={search ? "" : "mt-12"}>
+              <div>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mb-6">
                   {localTests.length === 1 ? c.aboutTheTest : c.aboutEachTest}
                 </h2>
@@ -428,80 +365,6 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
             )}
           </div>
       )}
-
-      {!search && (<>
-      {/* How it works: real screens from the app, one step per row */}
-      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-14 md:mb-20">
-          {c.howItWorks}
-        </h2>
-
-        <div className="space-y-16 md:space-y-24">
-          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
-            <div className="md:col-span-2">
-              <p className="text-sm font-semibold text-brand-dark mb-2">{c.steps[0].label}</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.steps[0].title}</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">{c.steps[0].body}</p>
-            </div>
-            <div className="md:col-span-3 flex justify-center items-start gap-3 sm:gap-4">
-              {[
-                { src: "/landing/sat-mobile.png", alt: c.shotAlts.phones[0] },
-                { src: "/landing/cst-mobile.png", alt: c.shotAlts.phones[1] },
-                { src: "/landing/cna-mobile.png", alt: c.shotAlts.phones[2] },
-              ].map((shot, i) => (
-                <div
-                  key={shot.src}
-                  className={`rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 w-[30%] max-w-[180px] ${i === 1 ? "md:-mt-6" : "md:mt-6"}`}
-                >
-                  <ThemedScreenshot src={shot.src} alt={shot.alt} width={768} height={1280} sizes="(min-width: 768px) 180px, 30vw" className="w-full h-auto" />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
-            <div className="md:col-span-2 md:order-2">
-              <p className="text-sm font-semibold text-brand-dark mb-2">{c.steps[1].label}</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.steps[1].title}</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">{c.steps[1].body}</p>
-            </div>
-            <div className="md:col-span-3 md:order-1">
-              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                <ThemedScreenshot src="/landing/sat-desktop.png" alt={c.shotAlts.desktop} width={1215} height={790} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
-              </div>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
-            <div className="md:col-span-2">
-              <p className="text-sm font-semibold text-brand-dark mb-2">{c.steps[2].label}</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 mb-3">{c.steps[2].title}</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300">{c.steps[2].body}</p>
-            </div>
-            <div className="md:col-span-3">
-              <div className="rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
-                <ThemedScreenshot src="/dashboard.png" alt={c.shotAlts.dashboard} width={1320} height={1143} sizes="(min-width: 1024px) 560px, 100vw" className="w-full h-auto" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Every test */}
-      <div id="all-tests" className="max-w-5xl mx-auto px-6 py-16 md:py-24 scroll-mt-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-8">
-          {us ? c.everyTest : c.testsFor(inName)}
-        </h2>
-        <TestCatalogGrid showPopular={false} nested region={region} regionPicker localOnly lang={lang} />
-        {!us && (
-          <p className="mt-10 text-center text-sm text-gray-600 dark:text-gray-300">
-            {c.usExamPrompt}{" "}
-            <Link href="/tests" className="font-medium text-brand-dark hover:underline">{c.seeAllTests(examCount)}</Link>
-          </p>
-        )}
-      </div>
-
-      </>)}
 
       {/* FAQ */}
       <div data-search-rest className="bg-gray-50 dark:bg-gray-950 py-16 md:py-24">
@@ -538,7 +401,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
 /** Trending searches for a homepage: what people searched most this week,
  *  topped up with this week's busiest tests from the country (or worldwide),
  *  then the country's own tests, so the list is never short. */
-async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; answered: number | null }[]): Promise<string[]> {
+async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; answered: number | null }[], lang: string): Promise<string[]> {
   const local = (id: string) => regionOfTest(id) === region || regionOfTest(id) === "GLOBAL";
   const feed: TestCatalogEntry[] = ranked.filter((p) => local(p.test.id)).map((p) => p.test);
   for (const test of TEST_CATALOG) {
@@ -549,7 +412,7 @@ async function trendingFor(region: Region, ranked: { test: TestCatalogEntry; ans
   const trending = await getTrendingSearches(6, region === "US" ? undefined : region);
   for (const test of feed) {
     if (trending.length >= 6) break;
-    const name = test.name.toLowerCase();
+    const name = nameIn(test, lang).toLowerCase();
     if (!trending.includes(name)) trending.push(name);
   }
   return trending;

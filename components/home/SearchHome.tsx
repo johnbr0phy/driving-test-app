@@ -14,15 +14,16 @@ import { Region, TestRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { normalizeQuery, searchAllTests, SearchHit, SearchResult } from "@/lib/testSearch";
 import { TEST_CATALOG } from "@/lib/testCatalog";
 import { asNotifyEmail } from "@/lib/test-requests";
+import { searchCopy, type SearchCopy } from "./searchCopy";
 
 const flagOf = (r: TestRegion) => (r === "GLOBAL" ? "🌐" : FLAGS[r]);
 const SETTLE_MS = 800;
 
-function progressLine(mastered: number, testsTaken: number): string {
+function progressLine(s: SearchCopy, mastered: number, testsTaken: number): string {
   const parts = [];
-  if (mastered > 0) parts.push(testsTaken > 0 ? `${mastered} mastered` : `${mastered} question${mastered === 1 ? "" : "s"} mastered`);
-  if (testsTaken > 0) parts.push(`${testsTaken} test${testsTaken === 1 ? "" : "s"} taken`);
-  return parts.join(" · ") || "Started";
+  if (mastered > 0) parts.push(testsTaken > 0 ? s.mastered(mastered) : s.questionsMastered(mastered));
+  if (testsTaken > 0) parts.push(s.testsTaken(testsTaken));
+  return parts.join(" · ") || s.started;
 }
 
 // The bit of the Web Speech API the mic button uses (not in the TS DOM lib).
@@ -36,7 +37,7 @@ interface SpeechRec {
 }
 
 /**
- * The search at the top of every English homepage (/, /uk, /ca...): one box, every test in every country,
+ * The search at the top of every homepage (/, /uk, /de...), in the page's language: one box, every test in every country,
  * a flag on each result, a tap goes straight to the test. What people type is
  * tracked (api/analytics/search) so searches that find nothing become the list
  * of tests to build.
@@ -47,6 +48,9 @@ export function SearchHome({
   trending,
   answeredThisWeek,
   headline,
+  lang = "en",
+  locale = "en-US",
+  labels,
 }: {
   initialRegion: Region;
   popularity: Record<string, number>;
@@ -58,7 +62,14 @@ export function SearchHome({
    *  lib/regionHeadline.ts). Rendered visually hidden (the page
    *  looks like the US one) and the wordmark is no longer the heading; the US page leaves it unset. */
   headline?: string;
+  /** The page's language (searchCopy) and BCP 47 tag (voice search). */
+  lang?: string;
+  locale?: string;
+  /** Strings the homepage copy already has, in the page's language (homeCopy). English pages keep the defaults. */
+  labels?: { placeholder: string; label: string; clear: string; answered: string; findYourTest: string };
 }) {
+  const s = searchCopy(lang);
+  const l = labels ?? { placeholder: "Search for your test", label: "Search for a test", clear: "Clear search", answered: "questions answered this week", findYourTest: "Find your test" };
   const router = useRouter();
   const { user } = useAuth();
   const [region, setRegion] = useState<Region>(initialRegion);
@@ -84,7 +95,7 @@ export function SearchHome({
     const Rec = w.SpeechRecognition || w.webkitSpeechRecognition;
     if (!Rec || listening) return;
     const rec = new Rec();
-    rec.lang = navigator.language || "en-US";
+    rec.lang = lang === "en" ? navigator.language || locale : locale;
     rec.interimResults = true;
     rec.onresult = (e) => setQuery(Array.from(e.results).map((r) => r[0].transcript).join(""));
     rec.onend = () => setListening(false);
@@ -156,7 +167,7 @@ export function SearchHome({
   const started = useTestsInProgress();
 
   return (
-    <section aria-label="Find your test" data-search-home data-searching={showResults || undefined} className="bg-white dark:bg-gray-950">
+    <section aria-label={l.findYourTest} data-search-home data-searching={showResults || undefined} className="bg-white dark:bg-gray-950">
       <div className="mx-auto w-full max-w-2xl px-4">
         {/* The wordmark. Shrinks to one line while searching so results stay above a phone keyboard. */}
         <div className={`flex items-center justify-center ${showResults ? "gap-2 pt-3 pb-4" : "gap-3 pt-10 pb-3 sm:pt-[12vh] sm:pb-4"}`}>
@@ -167,7 +178,7 @@ export function SearchHome({
             <h1 className={`font-extrabold tracking-tight text-gray-900 dark:text-gray-50 ${showResults ? "text-2xl" : "text-5xl sm:text-7xl"}`}>
               Tigertest
               {/* What the page is, for search engines and screen readers; the wordmark stays the visible heading. */}
-              <span className="sr-only">: free practice tests for {TEST_CATALOG.length} exams</span>
+              <span className="sr-only">{s.srExams(TEST_CATALOG.length)}</span>
             </h1>
           )}
         </div>
@@ -178,12 +189,12 @@ export function SearchHome({
 
         {!showResults && (
           <>
-            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">Any test, anywhere. Start free.</p>
+            <p className="text-center text-base text-gray-600 dark:text-gray-300 sm:text-lg">{s.tagline}</p>
             {answeredThisWeek !== null && answeredThisWeek > 0 ? (
               <p className="pt-2 pb-7 text-center text-sm text-gray-500 dark:text-gray-400 sm:pb-9">
                 <span aria-hidden className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-green-500 align-middle ring-[3px] ring-green-500/25" />
                 <CountUp value={answeredThisWeek} className="font-semibold text-gray-900 dark:text-gray-50 tabular-nums" />
-                <span className="ml-1">questions answered this week</span>
+                <span className="ml-1">{l.answered}</span>
               </p>
             ) : (
               <div className="pb-8 sm:pb-10" />
@@ -203,8 +214,8 @@ export function SearchHome({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={onKeyDown}
-            placeholder="Search for your test"
-            aria-label="Search for a test"
+            placeholder={l.placeholder}
+            aria-label={l.label}
             role="combobox"
             aria-expanded={showResults}
             aria-controls="test-search-results"
@@ -219,7 +230,7 @@ export function SearchHome({
                   setQuery("");
                   inputRef.current?.focus();
                 }}
-                aria-label="Clear search"
+                aria-label={l.clear}
                 className="p-2.5 rounded-full text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
               >
                 <X className="w-5 h-5" />
@@ -229,7 +240,7 @@ export function SearchHome({
               <button
                 type="button"
                 onClick={listen}
-                aria-label={listening ? "Listening" : "Search by voice"}
+                aria-label={listening ? s.listening : s.voice}
                 className={`p-2.5 rounded-full ${listening ? "text-red-500 animate-pulse" : "text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"}`}
               >
                 <Mic className="w-5 h-5" />
@@ -242,10 +253,10 @@ export function SearchHome({
           <div className="mt-3 pb-10">
             {result.partial && settled ? (
               <p className="px-4 pb-2 text-sm text-gray-600 dark:text-gray-300">
-                We don&apos;t have &ldquo;{query.trim()}&rdquo; yet. Closest matches:
+                {s.notYet(query.trim())}
               </p>
             ) : (
-              result.fuzzy && <p className="px-4 pb-2 text-sm text-gray-500 dark:text-gray-400">Closest matches:</p>
+              result.fuzzy && <p className="px-4 pb-2 text-sm text-gray-500 dark:text-gray-400">{s.closest}</p>
             )}
             <ul id="test-search-results" role="listbox" className="rounded-3xl bg-white dark:bg-gray-900 overflow-hidden border border-gray-100 dark:border-gray-800">
               {result.hits.map((hit, i) => (
@@ -256,11 +267,11 @@ export function SearchHome({
                     onMouseEnter={() => setActive(i)}
                     className={`w-full flex items-center gap-4 px-5 py-3.5 text-left ${i === active ? "bg-gray-100 dark:bg-gray-800" : ""}`}
                   >
-                    <span className="text-2xl leading-none shrink-0" title={hit.region === "GLOBAL" ? "Worldwide" : regionInfo(hit.region).name}>
+                    <span className="text-2xl leading-none shrink-0" title={hit.region === "GLOBAL" ? s.worldwide : regionInfo(hit.region).name}>
                       {flagOf(hit.region)}
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block font-semibold text-gray-900 dark:text-gray-50 truncate">{hit.title}</span>
+                      <span className="block font-semibold text-gray-900 dark:text-gray-50 truncate">{hit.test.nativeName && hit.test.language === lang && hit.key === hit.test.id ? hit.test.nativeName : hit.title}</span>
                       <span className="block text-sm text-gray-500 dark:text-gray-400 truncate">{hit.subtitle}</span>
                     </span>
                     <ArrowUpRight className="w-5 h-5 shrink-0 text-gray-400" />
@@ -269,12 +280,12 @@ export function SearchHome({
               ))}
             </ul>
             {result.partial && settled && (
-              <MissingTest query={query.trim()} signedInEmail={user?.email ?? null} />
+              <MissingTest query={query.trim()} signedInEmail={user?.email ?? null} s={s} />
             )}
           </div>
         )}
 
-        {miss && <MissingTest query={query.trim()} signedInEmail={user?.email ?? null} />}
+        {miss && <MissingTest query={query.trim()} signedInEmail={user?.email ?? null} s={s} />}
       </div>
 
       {!showResults && (
@@ -282,7 +293,7 @@ export function SearchHome({
           {/* Anyone with progress on this device or account: their tests, the current one first. */}
           {started.length > 0 && (
             <section>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Pick up where you left off</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">{s.pickUp}</h2>
               <ul>
                 {started.slice(0, 4).map(({ test, mastered, testsTaken }) => (
                   <li key={test.id} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
@@ -293,7 +304,7 @@ export function SearchHome({
                       <History className="w-5 h-5 shrink-0 text-gray-600 dark:text-gray-300" aria-hidden />
                       <span className="min-w-0 flex-1">
                         <span className="block text-base font-medium text-gray-900 dark:text-gray-50 truncate">{test.name}</span>
-                        <span className="block text-sm text-gray-500 dark:text-gray-400 truncate">{progressLine(mastered, testsTaken)}</span>
+                        <span className="block text-sm text-gray-500 dark:text-gray-400 truncate">{progressLine(s, mastered, testsTaken)}</span>
                       </span>
                       <span className="text-xl leading-none shrink-0">{flagOf(regionOfTest(test.id))}</span>
                       <ChevronRight className="w-5 h-5 shrink-0 text-gray-400" />
@@ -307,7 +318,7 @@ export function SearchHome({
           {/* Like Google: what people are searching for. A tap runs the search. */}
           {trending.length > 0 && (
             <section>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">Trending searches</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">{s.trending}</h2>
               <ul>
                 {trending.map((text) => (
                   <li key={text} className="border-b border-gray-200 dark:border-gray-800 last:border-b-0">
@@ -335,7 +346,8 @@ export function SearchHome({
  * can say when the test ships. Posts to the test-request endpoint with the
  * search as the named test, so it lands on the Growth tab and emails John.
  */
-function MissingTest({ query, signedInEmail }: { query: string; signedInEmail: string | null }) {
+function MissingTest({ query, signedInEmail, s }: { query: string; signedInEmail: string | null; s: SearchCopy }) {
+  const m = s.missing;
   const [email, setEmail] = useState(signedInEmail ?? "");
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [sentFor, setSentFor] = useState("");
@@ -368,19 +380,15 @@ function MissingTest({ query, signedInEmail }: { query: string; signedInEmail: s
     <div className="mt-4 rounded-3xl bg-gray-100 dark:bg-gray-900 p-6 text-center">
       {done ? (
         <>
-          <p className="font-semibold text-gray-900 dark:text-gray-50">Thanks! We&apos;re on it.</p>
-          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
-            We&apos;ll email {email.trim()} when &ldquo;{query}&rdquo; ships.
-          </p>
+          <p className="font-semibold text-gray-900 dark:text-gray-50">{m.thanks}</p>
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.willEmail(email.trim(), query)}</p>
         </>
       ) : (
         <>
-          <p className="font-semibold text-gray-900 dark:text-gray-50">Are we missing your test?</p>
-          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
-            Let us know and we&apos;ll build it for you. Add your email address and we&apos;ll let you know when it ships.
-          </p>
+          <p className="font-semibold text-gray-900 dark:text-gray-50">{m.title}</p>
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{m.body}</p>
           <form onSubmit={submit} className="mt-4 mx-auto flex max-w-md flex-col sm:flex-row gap-2">
-            <label htmlFor="missing-test-email" className="sr-only">Email address</label>
+            <label htmlFor="missing-test-email" className="sr-only">{m.email}</label>
             <input
               id="missing-test-email"
               type="email"
@@ -400,16 +408,16 @@ function MissingTest({ query, signedInEmail }: { query: string; signedInEmail: s
               disabled={!valid || state === "sending"}
               className="inline-flex items-center justify-center rounded-full bg-black text-white dark:bg-white dark:text-black px-5 py-2.5 text-sm font-semibold disabled:opacity-50"
             >
-              {state === "sending" ? "Sending..." : "Let me know"}
+              {state === "sending" ? m.sending : m.send}
             </button>
           </form>
           {state === "error" && (
-            <p className="mt-2 text-sm text-red-600 dark:text-red-400">That didn&apos;t go through. Please try again.</p>
+            <p className="mt-2 text-sm text-red-600 dark:text-red-400">{m.error}</p>
           )}
           <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-            Can&apos;t wait?{" "}
+            {m.cantWait}{" "}
             <Link href="/create" className="font-semibold text-gray-900 dark:text-gray-50 underline underline-offset-2">
-              Make your own quiz now
+              {m.makeQuiz}
             </Link>
           </p>
         </>

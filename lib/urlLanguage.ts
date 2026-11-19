@@ -6,9 +6,10 @@
 // before first paint for screen readers and rendering crawlers.
 // contexts/LanguageContext.tsx keeps it while the person browses: such a
 // page's content is in its URL's language even when the header and footer
-// follow the person's own (lib/pageLanguage.ts). /es and /pt themselves are English
-// country homepages, so only the pages under them count. /fi, /hu and /ro are
-// also country homepages (/fi, /hu and /ro in their own language by default), so, like /es, only the pages under them count.
+// follow the person's own (lib/pageLanguage.ts). A country homepage (/es, /fi...) is
+// in its country's language by default but can be shown in the language the person
+// picked, so the prefixes below cover only the pages under it; the homepage itself
+// gets its Content-Language header from COUNTRY_HOME_LANGUAGES.
 
 export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot: boolean }[] = [
   { prefix: "/es", lang: "es", includeRoot: false },
@@ -40,11 +41,37 @@ export function urlLanguage(pathname: string | null | undefined): string | null 
 /** next.config.ts headers(): Content-Language on every page written in another language,
  *  and on a country homepage whose default language is not English (what crawlers get). */
 export function urlLanguageHeaders() {
-  return URL_LANGUAGE_PREFIXES.flatMap(({ prefix, lang, includeRoot }) => [
-    ...(includeRoot ? [{ source: prefix, headers: [{ key: "Content-Language", value: lang }] }] : []),
-    { source: `${prefix}/:path+`, headers: [{ key: "Content-Language", value: lang }] },
-  ]);
+  const roots = new Set(URL_LANGUAGE_PREFIXES.filter((p) => p.includeRoot).map((p) => p.prefix));
+  return [
+    ...URL_LANGUAGE_PREFIXES.flatMap(({ prefix, lang, includeRoot }) => [
+      ...(includeRoot ? [{ source: prefix, headers: [{ key: "Content-Language", value: lang }] }] : []),
+      { source: `${prefix}/:path+`, headers: [{ key: "Content-Language", value: lang }] },
+    ]),
+    ...COUNTRY_HOME_LANGUAGES.filter(({ path }) => !roots.has(path)).map(({ path, lang }) => ({
+      source: path,
+      headers: [{ key: "Content-Language", value: lang }],
+    })),
+  ];
 }
+
+/** Every country homepage written in a language other than English (REGIONS[].lang in
+ *  lib/region.ts, kept in step by tests/url-language.test.cjs). Only the page itself: the
+ *  pages under /es or /pt are covered above, and /se, /dk, /gr, /be have no pages under them.
+ *  Kept here rather than read from lib/region.ts because next.config.ts imports this file. */
+export const COUNTRY_HOME_LANGUAGES: { path: string; lang: string }[] = [
+  { path: "/es", lang: "es" },
+  { path: "/pt", lang: "pt" },
+  { path: "/ro", lang: "ro" },
+  { path: "/se", lang: "sv" },
+  { path: "/gr", lang: "el" },
+  { path: "/dk", lang: "da" },
+  { path: "/hu", lang: "hu" },
+  { path: "/be", lang: "nl" },
+  { path: "/fi", lang: "fi" },
+  { path: "/de", lang: "de" },
+  { path: "/it", lang: "it" },
+  { path: "/fr", lang: "fr" },
+];
 
 // The pages under a prefix only: a country homepage (/de) can be shown in
 // the language the person picked, which LanguageContext applies.

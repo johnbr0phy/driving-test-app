@@ -217,6 +217,7 @@ import "./nptepta";
 import "./aswbclin";
 import "./aswbbach";
 import "./titleagent";
+import "./fpc";
 import "./phr";
 import "./cisa";
 import "./fortigate";

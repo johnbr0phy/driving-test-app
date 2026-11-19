@@ -5704,6 +5704,19 @@
     --brand-border-light: 296 60% 91%;
     --brand-gradient-to: 280 80% 97%;
   }
+  /* FPC (Fundamental Payroll Certification) theme: deep aubergine (291 100% 19%) */
+  [data-theme="fpc"] {
+    --brand: 291 100% 19%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 291 60% 96%;
+    --brand-hover: 291 100% 15%;
+    --brand-dark: 291 100% 13%;
+    --brand-darker: 291 100% 9%;
+    --brand-muted: 291 35% 70%;
+    --brand-border: 291 40% 80%;
+    --brand-border-light: 291 35% 90%;
+    --brand-gradient-to: 300 55% 95%;
+  }
   /* ASWB Bachelors theme: raspberry (337 100% 42%) */
   [data-theme="aswbbach"] {
     --brand: 337 100% 42%;
@@ -12125,6 +12138,17 @@
     --brand-muted: 296 45% 45%;
     --brand-dark: 296 100% 65%;
     --brand-darker: 296 90% 78%;
+  }
+  .dark [data-theme="fpc"] {
+    --brand: 291 100% 45.6%;
+    --brand-hover: 291 100% 37.6%;
+    --brand-light: 291 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 291 35% 24%;
+    --brand-border: 291 40% 34%;
+    --brand-muted: 291 35% 45%;
+    --brand-dark: 291 100% 65%;
+    --brand-darker: 291 100% 78%;
   }
   .dark [data-theme="aswbbach"] {
     --brand: 337 100% 45.4%;

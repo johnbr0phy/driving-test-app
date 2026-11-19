@@ -6811,6 +6811,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
     source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
   },
+  fpc: {
+    answer:
+      "The FPC (Fundamental Payroll Certification) is PayrollOrg's entry-level payroll certification. The exam has 150 multiple-choice questions (125 scored, 25 unscored pre-test) with four choices each, taken in 3 hours at a Pearson VUE center or online through OnVUE in North America. There are no eligibility requirements. PayrollOrg sets each form's passing raw score with the Bookmark method and reports it as a scaled 300; no percentage is published. Exams from September 2026 to September 2027 test federal law in effect January 1, 2026.",
+    rows: [
+      { label: "Run by", value: "PayrollOrg (formerly the American Payroll Association), delivered by Pearson VUE" },
+      { label: "Questions", value: "150 multiple choice: 125 scored, 25 unscored pre-test" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 300; raw cut set per form by the Bookmark method" },
+      { label: "Content", value: "Core concepts 29%, paycheck calculation 24%, systems 13%, compliance 12%, audits 8%, accounting 8%, administration 6%" },
+      { label: "Law tested", value: "Federal law in effect January 1, 2026, for exams September 2026 to September 2027" },
+      { label: "Valid for", value: "Three full calendar years; recertify with 60 RCHs or by retaking the exam" },
+    ],
+    basedOn: "PayrollOrg's FPC exam outline and KSAs effective September 5, 2026 and the 2026-2027 FPC Candidate Handbook, checked November 2026",
+    source: { name: "PayrollOrg: FPC exam outline", url: "https://payroll.org/certification/fundamental-payroll-certification-(fpc)/fpc-exam-outline" },
+  },
   titleagent: {
     answer:
       "The title insurance agent exam is the licensing test a state insurance department requires before someone can issue title insurance policies as an agent or title producer. There is no national exam: each state sets its own, usually through PSI, Pearson VUE or Prometric, with a general part on title insurance, real property, search, closing and federal rules and a part on that state's law. Alabama's has 150 questions in 180 minutes with 105 correct needed; Ohio's has 100 in 2 hours with a 70% passing score; Pennsylvania's has 60 scored items in 80 minutes.",

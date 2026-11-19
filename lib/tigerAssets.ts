@@ -104,6 +104,7 @@ const BORROWED_SETS: Record<string, string> = {
   esthetician: "esthetics",
   afsp: "cpareg",
   cpabar: "cpafar",
+  cpaisc: "cpafar",
   cpcta: "cna",
   cpatcp: "cpareg",
   aufirearmswa: "capal",

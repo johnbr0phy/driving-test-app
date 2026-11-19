@@ -706,6 +706,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
     source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
   },
+  cpaisc: {
+    answer:
+      "ISC, Information Systems and Controls, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. ISC runs 4 hours with 82 multiple-choice questions in two testlets of 41 and 6 task-based simulations; multiple choice is 60% of the score and simulations 40%, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026 it covers information systems and data management (35 to 45%), security, confidentiality and privacy (35 to 45%) and considerations for SOC engagements (15 to 25%); the 2027 changes only narrow its blockchain coverage.",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "82, in two testlets of 41" },
+      { label: "Task-based simulations", value: "6" },
+      { label: "Score weighting", value: "60% MCQ, 40% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Smallest area", value: "SOC engagements, 15 to 25%" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
   cpabar: {
     answer:
       "BAR, Business Analysis and Reporting, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. BAR runs 4 hours with 50 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, with only one task reworded for 2027, it covers business analysis (40 to 50%), technical accounting and reporting (35 to 45%) and state and local governments (10 to 20%).",

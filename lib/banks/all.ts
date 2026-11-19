@@ -292,6 +292,7 @@ import "./pance";
 import "./cpcta";
 import "./cehrs";
 import "./cpabar";
+import "./cpaisc";
 import "./ea1";
 import "./nzboat";
 import "./sgsnb";

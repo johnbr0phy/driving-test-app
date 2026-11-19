@@ -914,6 +914,14 @@
         "pr": null,
         "findings": 33
       }
+    ],
+    "crc": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 2
+      }
     ]
   },
   "pendingReviews": {

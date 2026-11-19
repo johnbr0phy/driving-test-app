@@ -211,6 +211,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ASCP BOC Medical Laboratory Scientist MLS(ASCP) and MLS(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
     source: { name: "ASCP BOC: MLS(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf" },
   },
+  istqb: {
+    answer:
+      "The ISTQB Certified Tester Foundation Level (CTFL v4.0) exam has 40 multiple-choice questions worth one point each, and you need 26 points (65 percent) to pass. You have 60 minutes, or 75 minutes if you take it in a language that is not your native one. Questions come from six syllabus chapters: Fundamentals of Testing 8, Testing Throughout the SDLC 6, Static Testing 4, Test Analysis and Design 11, Managing the Test Activities 9 and Test Tools 2. The current syllabus document is v4.0.1.",
+    rows: [
+      { label: "Questions", value: "40 multiple choice, one point each" },
+      { label: "Time", value: "60 minutes (75 in a non-native language)" },
+      { label: "Pass mark", value: "26 of 40 points (65 percent)" },
+      { label: "Biggest chapter", value: "Test Analysis and Design, 11 of 40" },
+      { label: "Syllabus", value: "CTFL v4.0, document v4.0.1 (2024)" },
+      { label: "Given by", value: "ISTQB member boards and exam providers" },
+    ],
+    basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
+    source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

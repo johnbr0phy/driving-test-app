@@ -195,6 +195,7 @@ export const TEACHES: Record<string, string> = {
   gcdl: "a cloud fundamentals course",
   gcppca: "a cloud architecture course",
   itil: "an IT service management course",
+  istqb: "a software testing or ISTQB Foundation course",
   prince2: "a PRINCE2 course",
   psm: "a Scrum or agile course",
   capm: "a project management course",

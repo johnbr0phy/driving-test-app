@@ -84,6 +84,7 @@ const BORROWED_SETS: Record<string, string> = {
   ea1: "cpareg",
   ea2: "cpareg",
   ea3: "cpareg",
+  istqb: "itil",
   ascpmls: "htl",
   ascpht: "htl",
   esthetician: "cosmetology",

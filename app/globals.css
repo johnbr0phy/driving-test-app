@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
+  [data-theme="istqb"] {
+    --brand: 276 95% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 276 80% 97%;
+    --brand-hover: 276 95% 33%;
+    --brand-dark: 276 95% 28%;
+    --brand-darker: 276 90% 18%;
+    --brand-muted: 276 50% 72%;
+    --brand-border: 276 60% 82%;
+    --brand-border-light: 276 60% 90%;
+    --brand-gradient-to: 290 80% 97%;
+  }
   /* MLS(ASCP) Medical Laboratory Scientist theme: muted mauve */
   [data-theme="ascpmls"] {
     --brand: 300 25% 42%;

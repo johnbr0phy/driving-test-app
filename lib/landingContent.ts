@@ -56,6 +56,8 @@ import frvtcFr from "@/lib/landings/frvtc.fr.json";
 import frcodeFr from "@/lib/landings/frcode.fr.json";
 import itceliIt from "@/lib/landings/itceli.it.json";
 import itcilsIt from "@/lib/landings/itcils.it.json";
+import ita2It from "@/lib/landings/ita2.it.json";
+import itcilsb2It from "@/lib/landings/itcilsb2.it.json";
 import dkmedborgerDa from "@/lib/landings/dkmedborger.da.json";
 import dkjagtDa from "@/lib/landings/dkjagt.da.json";
 import fitheoryFi from "@/lib/landings/fitheory.fi.json";
@@ -104,6 +106,8 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "frcode.fr": frcodeFr as TranslatedLandingContent,
   "itceli.it": itceliIt as TranslatedLandingContent,
   "itcils.it": itcilsIt as TranslatedLandingContent,
+  "ita2.it": ita2It as TranslatedLandingContent,
+  "itcilsb2.it": itcilsb2It as TranslatedLandingContent,
   "dkmedborger.da": dkmedborgerDa as TranslatedLandingContent,
   "dkjagt.da": dkjagtDa as TranslatedLandingContent,
   "fitheory.fi": fitheoryFi as TranslatedLandingContent,

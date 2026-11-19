@@ -82,7 +82,7 @@ test('flag-bearing sets are never silently borrowed by unrelated exam families',
   const permitted = {
     civics: ['civics'], uklitu: ['uklitu'], cacit: ['cacit'], aucit: ['aucit'],
     semedb: ['semedb'], dkindfoed: ['dkindfoed', 'dkmedborger'],
-    grcitizen: ['grcitizen'], itlanguage: ['itcils', 'itceli'],
+    grcitizen: ['grcitizen'], itlanguage: ['itcils', 'itceli', 'ita2', 'itcilsb2'],
   };
   for (const exam of EXAMS) {
     const family = examFamilyId(exam);

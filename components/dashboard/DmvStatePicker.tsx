@@ -16,7 +16,7 @@ import { states } from "@/data/states";
 import { trackStateSelected } from "@/lib/analytics";
 import { trackFunnelStep } from "@/lib/funnel";
 import type { Language } from "@/i18n";
-import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
+import { LanguageLabel, TestLanguageChoice, TestLanguageRow, TestSettingsLine } from "@/components/TestLanguageChoice";
 
 // The visitor's state from IP geolocation (/api/geo). The DMV dashboard sets
 // it for anyone with no state yet, as if they had chosen it; Change switches
@@ -173,11 +173,11 @@ export function DmvStateLine({ language }: { language?: TestLanguageSetting }) {
         <span className="font-semibold text-gray-800 dark:text-gray-100 min-w-0">{name}</span>
         {stateSelect(
           t("common.change"),
-          "w-auto h-auto px-0 py-1 -my-1 border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
+          "w-auto h-auto px-0 py-1 -my-1 bg-transparent border-none shadow-none focus:ring-0 focus:ring-offset-0 text-brand-dark font-medium text-xs gap-1 flex-shrink-0"
         )}
       </div>
       {choosesLanguage && (
-        <TestLanguageChoice offered={language.offered} value={language.value} onChange={language.onChange} className="mt-3" />
+        <TestLanguageRow offered={language.offered} value={language.value} onChange={language.onChange} className="mt-2" />
       )}
     </>
   );

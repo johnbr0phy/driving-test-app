@@ -25,7 +25,7 @@ import { computeMissSummary } from "@/lib/missedQuestions";
 import { ExamConfig, TrainingPart, examFamilyId, examLandingPath, examTestLength, getExamById, examTrainingParts, getExamVariant, isMockTest, trainingPartName, trainingPartOf } from "@/lib/exams";
 import { useTestSetMigration } from "@/hooks/useTestSetMigration";
 import { ExamStateLine, ExamStatePrompt } from "@/components/exam/ExamStatePicker";
-import { LanguageLabel, TestLanguageChoice, TestSettingsLine } from "@/components/TestLanguageChoice";
+import { LanguageLabel, TestLanguageChoice, TestLanguageRow, TestSettingsLine } from "@/components/TestLanguageChoice";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { TeachNudge } from "@/components/TeachNudge";
@@ -453,7 +453,12 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
                 <TestLanguageChoice offered={testLanguages} value={lang} onChange={setTestLanguage} className="justify-start" />
               </TestSettingsLine>
             ) : (
-              <TestLanguageChoice offered={testLanguages} value={lang} onChange={setTestLanguage} className="mt-3" />
+              <TestLanguageRow
+                offered={testLanguages}
+                value={lang}
+                onChange={setTestLanguage}
+                className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-800"
+              />
             ))}
           <TeachNudge dashboardKey={exam.id} examId={exam.variantOf ?? exam.id} done={completedSteps} />
         </div>

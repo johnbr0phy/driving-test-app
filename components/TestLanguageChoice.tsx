@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { LANGUAGES, type Language } from "@/i18n";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 /**
  * "Questions in: English | Español" on a test's dashboard: the languages this
@@ -50,6 +51,48 @@ export function TestLanguageChoice({
           );
         })}
       </div>
+    </div>
+  );
+}
+
+/**
+ * The same choice as one compact hero row: "Questions in" on the left and the
+ * current language as a dropdown on the right, lined up with the state row
+ * above it. Used before the language is settled, so a newcomer sees it
+ * without a wrapping wall of pills on a phone.
+ */
+export function TestLanguageRow({
+  offered,
+  value,
+  onChange,
+  className = "",
+}: {
+  offered: Language[];
+  value: Language;
+  onChange: (lang: Language) => void;
+  className?: string;
+}) {
+  const { t } = useTranslation();
+  if (offered.length < 2) return null;
+  const options = LANGUAGES.filter((l) => offered.includes(l.code));
+  return (
+    <div className={`flex items-center justify-between gap-3 text-xs ${className}`}>
+      <span className="text-gray-600 dark:text-gray-300 min-w-0">{t("languageChoice.questionsIn")}</span>
+      <Select value={value} onValueChange={(v) => onChange(v as Language)}>
+        <SelectTrigger
+          aria-label={t("languageChoice.questionsIn")}
+          className="w-auto h-8 gap-1.5 rounded-full px-3 text-xs font-semibold flex-shrink-0"
+        >
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent align="end">
+          {options.map((l) => (
+            <SelectItem key={l.code} value={l.code} lang={l.code}>
+              <span aria-hidden="true">{l.flag}</span> {l.label}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
     </div>
   );
 }

@@ -1022,5 +1022,77 @@
       "pr": 900,
       "findings": 10
     }
+  ],
+  "afsp": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 3
+    }
+  ],
+  "esthetician": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 39
+    }
+  ],
+  "ascpht": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 0
+    }
+  ],
+  "ascpmls": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 1
+    }
+  ],
+  "istqb": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 4
+    }
+  ],
+  "r410a": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 6
+    }
+  ],
+  "natecore": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 2
+    }
+  ],
+  "contractorlaw": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 3
+    }
+  ],
+  "excpt": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 905,
+      "findings": 32
+    }
   ]
 }

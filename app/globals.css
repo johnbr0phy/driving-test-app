@@ -5691,6 +5691,19 @@
     --brand-border-light: 252 60% 90%;
     --brand-gradient-to: 266 80% 97%;
   }
+  /* ASWB Bachelors theme: raspberry (337 100% 42%) */
+  [data-theme="aswbbach"] {
+    --brand: 337 100% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 337 80% 97%;
+    --brand-hover: 337 100% 36%;
+    --brand-dark: 337 100% 27%;
+    --brand-darker: 337 90% 17%;
+    --brand-muted: 337 55% 72%;
+    --brand-border: 337 65% 83%;
+    --brand-border-light: 337 60% 91%;
+    --brand-gradient-to: 350 80% 97%;
+  }
   /* AAPC CRC theme: burnt vermilion (20 90% 40%) */
   [data-theme="crc"] {
     --brand: 20 90% 40%;
@@ -12075,6 +12088,17 @@
     --brand-muted: 48 30% 45%;
     --brand-dark: 48 40% 65%;
     --brand-darker: 48 40% 78%;
+  }
+  .dark [data-theme="aswbbach"] {
+    --brand: 337 100% 45.4%;
+    --brand-hover: 337 100% 37.4%;
+    --brand-light: 337 45% 13%;
+    --brand-gradient-to: 350 40% 11%;
+    --brand-border-light: 337 35% 24%;
+    --brand-border: 337 40% 34%;
+    --brand-muted: 337 45% 45%;
+    --brand-dark: 337 100% 65%;
+    --brand-darker: 337 90% 78%;
   }
   .dark [data-theme="crc"] {
     --brand: 20 90% 42%;

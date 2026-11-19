@@ -215,6 +215,7 @@ import "./nbdhe";
 import "./inbde";
 import "./nptepta";
 import "./aswbclin";
+import "./aswbbach";
 import "./phr";
 import "./cisa";
 import "./fortigate";

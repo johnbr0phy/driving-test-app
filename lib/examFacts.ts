@@ -6796,6 +6796,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
     source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
   },
+  aswbbach: {
+    answer:
+      "The ASWB Bachelors exam is the Association of Social Work Boards licensing exam for basic generalist practice by social workers with a bachelor's degree in social work; states that license bachelor-level social workers use it for licenses such as the LBSW or LSW, and ASWB's Associate exam uses the same questions. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The outline has three content areas: Values and Ethics 35%, Assessment and Planning 33%, and Intervention and Practice 32%, with more recall questions than the Masters and Clinical exams. The result is pass or fail, with the number of correct answers needed set for each exam form.",
+    rows: [
+      { label: "Questions", value: "122 multiple choice (110 scored, 12 pretest)" },
+      { label: "Time", value: "4 hours, two sections of 61" },
+      { label: "Options", value: "3 or 4 per question" },
+      { label: "Pass mark", value: "Pass/fail; number correct needed varies slightly by exam form" },
+      { label: "Content", value: "Values and Ethics 35%, Assessment and Planning 33%, Intervention and Practice 32%" },
+      { label: "Eligibility", value: "Bachelor's degree in social work, with approval from your state board" },
+      { label: "Since", value: "August 3, 2026 (2026 outline, 3 content areas)" },
+      { label: "Where", value: "Pearson test centers, after board approval" },
+      { label: "Run by", value: "Association of Social Work Boards (ASWB)" },
+    ],
+    basedOn: "The ASWB Examination Guidebook (August 2026), Bachelors/Associate content outline, checked November 2026",
+    source: { name: "ASWB: Examination Guidebook", url: "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf" },
+  },
   aswbclin: {
     answer:
       "The ASWB Clinical exam is the Association of Social Work Boards licensing exam that most US states and several Canadian provinces use for the clinical social work license, often called the LCSW, usually after a master's degree in social work and about two years of supervised clinical experience. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The Clinical outline has three content areas: Values and Ethics 36%, Assessment and Planning 32%, and Intervention and Practice 32%. The result is pass or fail, with the number of correct answers needed set for each exam form.",

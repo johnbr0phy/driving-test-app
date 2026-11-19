@@ -19,7 +19,7 @@ const title = "Free ASWB Bachelors Practice Test 2026 - LBSW Exam Questions";
 const metaDescription =
   "Free ASWB Bachelors practice test: 200 original questions on the 2026 content outline, four 50-question mock exams and four training sets, every answer explained.";
 const description =
-  "Free practice for the ASWB Bachelors social work licensing exam (used for the LBSW, LSW and similar bachelor-level licenses): 200 original questions written from the three-area Bachelors content outline used since August 2026. Four 50-question mock exams weighted like the real exam, and four training sets covering ethics and service delivery, diversity and human behavior, assessment and planning, and generalist intervention, evaluation and supervision.";
+  "Practice, free to start, for the ASWB Bachelors social work licensing exam (used for the LBSW, LSW and similar bachelor-level licenses): 200 original questions written from the three-area Bachelors content outline used since August 2026. Four 50-question mock exams weighted like the real exam, and four training sets covering ethics and service delivery, diversity and human behavior, assessment and planning, and generalist intervention, evaluation and supervision.";
 
 export const metadata: Metadata = {
   title,
@@ -60,7 +60,7 @@ const FAQ = [
   },
   {
     q: "What score do you need to pass the ASWB Bachelors exam?",
-    a: "The result is pass or fail. Your score report shows the number of questions you needed to answer correctly and the number you got right. ASWB adjusts that number slightly for each version of the exam so every version is equally hard, so there is no fixed percentage. The 70 percent line on these practice tests is a readiness target, not the official passing score.",
+    a: "The result is pass or fail. ASWB sets the number of correct answers needed for each version of the exam from its difficulty, so no version gives an advantage; ASWB says it generally ranges from 66 to 78 of the 110 scored questions, so there is no fixed percentage. The 70 percent line on these practice tests is a readiness target, not the official passing score.",
   },
   {
     q: "Are these the real ASWB exam questions?",

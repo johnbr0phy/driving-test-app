@@ -6803,7 +6803,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Questions", value: "122 multiple choice (110 scored, 12 pretest)" },
       { label: "Time", value: "4 hours, two sections of 61" },
       { label: "Options", value: "3 or 4 per question" },
-      { label: "Pass mark", value: "Pass/fail; number correct needed varies slightly by exam form" },
+      { label: "Pass mark", value: "Pass/fail; set per exam form, generally 66 to 78 of 110 scored" },
       { label: "Content", value: "Values and Ethics 35%, Assessment and Planning 33%, Intervention and Practice 32%" },
       { label: "Eligibility", value: "Bachelor's degree in social work, with approval from your state board" },
       { label: "Since", value: "August 3, 2026 (2026 outline, 3 content areas)" },

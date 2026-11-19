@@ -51,13 +51,35 @@ product.
   supervision, 3.03 performance evaluation on clearly stated criteria, 3.04 client records kept for the
   years law and policy require and limited to relevant information, 3.07 open and fair resource
   allocation) and 6.03 (public emergencies) are from the same Code.
-- HIPAA Privacy Rule, 45 CFR 164.501 (definitions), https://www.law.cornell.edu/cfr/text/45/164.501 ,
-  fetched 2026-11-19; the notice of privacy practices (164.520) and the right to request an amendment
-  (164.526) are stated at concept level only.
+- HIPAA Privacy Rule, read on eCFR (versioner API, 2026-11-01 text) by the second reviewer on 2026-11-19:
+  45 CFR 160.103 "protected health information" (excludes employment records held by a covered entity in
+  its role as employer), https://www.ecfr.gov/current/title-45/section-160.103 ; 164.520(a)(1) right to
+  adequate notice of uses and disclosures (the notice of privacy practices),
+  https://www.ecfr.gov/current/title-45/section-164.520 ; 164.526(a)(1) right to have a covered entity
+  amend PHI, with denial allowed if it is accurate and complete, and action within 60 days (one 30-day
+  extension), https://www.ecfr.gov/current/title-45/section-164.526 .
+- Second-reviewer checks of program facts written from memory (2026-11-19): TANF 60 cumulative months of
+  federal assistance with a hardship exception for up to 20% of families, 45 CFR 264.1(a) and (c),
+  https://www.ecfr.gov/current/title-45/section-264.1 ; Patient Self-Determination Act duties (inform
+  adults in writing of advance directive rights, document whether one exists, not condition care),
+  42 CFR 489.102(a), https://www.ecfr.gov/current/title-42/section-489.102 ; McKinney-Vento school of
+  origin for the duration of homelessness, 42 U.S.C. 11432(g)(3)(A),
+  https://www.law.cornell.edu/uscode/text/42/11432 ; Family First prevention services (mental health,
+  substance use and in-home parent skill programs for candidates for foster care), 42 U.S.C. 671(e)(1),
+  https://www.law.cornell.edu/uscode/text/42/671 .
+- NASW Code 1.03(b) (qualified interpreter or translator whenever possible), 1.07(o) (inform clients of
+  unauthorized access to records) and 1.13(b) (bartering only in very limited circumstances), read on
+  the Code's clients page 2026-11-19. The limited-English item was rewritten to rest on 1.03(b) rather
+  than federal Title VI language-access guidance, which changed in 2025 (EO 13166 revoked).
+- ASWB, Exam overview, https://www.aswb.org/exam/ , and Exam scoring,
+  https://www.aswb.org/exam/exam-scoring/ , fetched 2026-11-19: 122 questions (110 scored, 12
+  unscored), three- and four-option questions, four hours, Pearson test centers; pass/fail with the
+  passing number set per form, "generally ranges from 66 to 78 correct answers out of 110 scored
+  questions".
 - Federal programs, stated at concept level: TANF's 60-month lifetime limit (PRWORA, 1996), Medicaid as
   a joint federal-state program, the McKinney-Vento school-of-origin right, the Older Americans Act, the
   Medicare hospice benefit, the Family First Prevention Services Act (2018), the Patient
-  Self-Determination Act (1990), the Fair Housing Act (familial status), Title VI language access,
+  Self-Determination Act (1990), the Fair Housing Act (familial status),
   the ADA, Section 504, the U.S. refugee program and the Housing Choice Voucher program.
 - Human behavior and practice theory from the guidebook's reference list (Hepworth et al.; Kirst-Ashman
   and Hull; Zastrow; Sheafor and Horejsi; Toseland and Rivas): Erikson, Piaget, Elkind, Baumrind,

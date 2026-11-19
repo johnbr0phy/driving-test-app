@@ -50,7 +50,7 @@ Q = [
  'The allowed amount', ['Nothing at all', 'The full billed charge', 'Only a copay'],
  'CARC 1 is the deductible amount. With the whole allowed amount applied to her deductible, she owes that allowed amount, not the full charge.'),
 ('Why track denials by reason code?',
- 'To fix recurring causes', ['To raise the fee schedule', 'To change the claim form', 'To skip timely filing'],
+ 'To fix recurring causes', ['To set the fee schedule', 'To rank payers by volume', 'To decide which claims to write off'],
  'Grouping denials by CARC shows patterns, such as missing authorizations or eligibility gaps, so the front-end process can be fixed.'),
 ('The share of claims paid on first submission, with no rework, is the:',
  'Clean claim rate', ['Collection ratio', 'Days in A/R', 'Denial write-off'],

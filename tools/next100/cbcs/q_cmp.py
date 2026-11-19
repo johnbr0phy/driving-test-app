@@ -38,7 +38,7 @@ Q = [
  'Presumed not needed', ['They are always required', 'They last five years', 'They depend on the amount'],
  'OIG states a presumption against requiring integrity agreement obligations for disclosing parties, releasing them from permissive exclusion without integrity measures.'),
 ("An internal audit uncovers a billing problem. Under OIG's guidance, what should follow?",
- 'Investigate and correct it', ['File it for next year', 'Wait for a payer audit', 'Delete the audit report'],
+ 'Investigate and correct it', ['Wait for a payer audit', 'Log it for the next annual review', 'Refund only if the payer asks'],
  "Element 7 of OIG's General Compliance Program Guidance calls for responding to detected offenses and developing corrective action, including repayment where owed."),
 ('Which feature lets staff raise a compliance concern without giving their name?',
  'Anonymous reporting line', ['Annual performance review', 'Open-door policy only', 'Exit interview'],

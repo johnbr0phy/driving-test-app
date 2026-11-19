@@ -62,12 +62,13 @@ the local python3 is 3.9 with no PDF library; `build.py` needs no shim because i
   https://www.cms.gov/medicare/coding-billing/icd-10-codes
 - CMS, Medicare Claims Processing Manual, chapter 26 (CMS-1500 items), fetched 2026-11-19:
   https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/clm104c26.pdf
-  Items 11, 12 (signature by mark), 13, 17, 21 (no decimal, ICD indicator 0), 23, 24B, 24E (one
-  pointer), 24F, 24G (anesthesia minutes, units), 24J (incident-to supervisor), 32, 33.
+  Items 11, 12 (signature by mark), 13, 17, 21 (no decimal, ICD indicator 0), 23, 24B, 24F, 24G (anesthesia minutes, units), 24J (incident-to supervisor), 32, 33.
 - NUCC, 1500 Claim Form Reference Instruction Manual, version 13.0 7/25, fetched 2026-11-19:
   https://www.nucc.org/images/stories/PDF/1500_claim_form_instruction_manual_2025_07-v13.pdf
   Item 22 frequency codes 7 (replacement) and 8 (void/cancel); item 23 prior authorization,
-  referral, mammography or CLIA number.
+  referral, mammography or CLIA number. Item 24E (read by the second reviewer, 2026-11-19): the field
+  allows 4 characters, pointer letters A to L, primary first, no commas. The Medicare manual's older
+  "one reference letter per line" wording is not asked.
 - CMS, Medicare Claims Processing Manual, chapter 12 (physician services), fetched 2026-11-19:
   https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/clm104c12.pdf
   Modifiers 22 (statement plus operative report; 0, 10 or 90 day globals), 54, 55, 58, 62, 66,

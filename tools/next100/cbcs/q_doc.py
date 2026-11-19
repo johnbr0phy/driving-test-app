@@ -17,7 +17,7 @@ Q = [
  'Lower leg', ['Forearm', 'Upper arm', 'Thigh'],
  'The tibia (shinbone) and fibula form the lower leg. The femur is the thigh bone; the radius and ulna make up the forearm.'),
 ('The abbreviation COPD stands for:',
- 'Chronic obstructive pulmonary disease', ['Chronic open pleural drainage', 'Congestive obstructive pulmonary disorder', 'Chronic oxygen perfusion deficit'],
+ 'Chronic obstructive pulmonary disease', ['Chronic open pleural drainage', 'Congestive obstructive pulmonary disorder', 'Chronic obstructive pleural disease'],
  'COPD is chronic obstructive pulmonary disease, a lung condition coded in category J44. Reading acronyms correctly is part of abstracting from the record.'),
 ('Two notes in the record give different sides for the same injury. What should the coder do?',
  'Query the provider', ['Code the unspecified side', 'Code both sides', 'Use the later note'],

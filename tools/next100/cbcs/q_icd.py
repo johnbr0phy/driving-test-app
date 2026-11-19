@@ -20,7 +20,7 @@ Q = [
  'Nothing more is needed', ['Follow it before coding', 'Report both terms', 'Query the provider'],
  'A "see also" note points to another main term that may help. Following it is not needed when the original term already provides the code.'),
 ('An injury also causes minor damage to a nearby peripheral nerve. Which is sequenced first?',
- 'The primary injury', ['The nerve injury', 'An external cause code', 'Whichever is more costly'],
+ 'The primary injury', ['The nerve injury', 'An external cause code', 'Both, in either order'],
  'Section I.C.19.b.2: when a primary injury causes minor nerve or blood vessel damage, the primary injury goes first; if the main injury is to the nerve or vessel, that goes first.'),
 ('Appendicitis is documented with no further detail. Which code is assigned?',
  'Index default code', ['An "other specified" code', 'A symptom code for pain', 'No code until a query'],

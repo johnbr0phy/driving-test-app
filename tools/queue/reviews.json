@@ -962,6 +962,14 @@
         "pr": null,
         "findings": 6
       }
+    ],
+    "cbcs": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 14
+      }
     ]
   },
   "pendingReviews": {

@@ -32,7 +32,7 @@ Q = [
  'Same-day admit and discharge codes', ['Admission code plus discharge code', 'Two subsequent care codes', 'An observation code only'],
  'CMS directs same-day admission and discharge to codes 99234-99236 rather than separate admission and discharge codes.'),
 ("A continuous hospital service starts at 11:30 p.m. and runs past midnight. To which date is all the time applied?",
- 'The date it began', ['The date it ended', 'Split between both dates', 'Whichever date pays more'],
+ 'The date it began', ['The date it ended', 'Split between both dates', 'The date the note is signed'],
  'CMS treats a continuous service spanning midnight as one service and lets all its time count on the calendar date the encounter started.'),
 ("Under Medicare's primary care exception, how does a teaching physician select the office visit level?",
  'By MDM alone', ['By total time alone', 'By MDM or by time', 'By history and exam'],

@@ -704,7 +704,7 @@
     "stem": "Which command shows the routes that have actually been installed for forwarding?",
     "explanation": "$\\texttt{show route forwarding-table}$ shows what the Routing Engine pushed to the Packet Forwarding Engine. $\\texttt{show route}$ shows the routing table, including routes that are not active.",
     "options": [
-      "$\\texttt{show route all}$",
+      "$\\texttt{show route table inet.0 extensive}$",
       "$\\texttt{show route forwarding-table}$",
       "$\\texttt{show route hidden}$",
       "$\\texttt{show route protocol static}$"
@@ -831,7 +831,7 @@
     "explanation": "This is a floating static route: with a preference above OSPF internal's 10, OSPF wins while its route exists, and the static route takes over when the OSPF route disappears.",
     "options": [
       "Exactly 10",
-      "Lower than 10, such as 3",
+      "Lower than 10, such as 1 or 5",
       "0, so it is always active",
       "Higher than 10, such as 20"
     ],
@@ -1858,7 +1858,7 @@
       "The Routing Engine receives it and replies",
       "It is dropped because loopback addresses do not answer pings",
       "It is transit traffic answered by the Packet Forwarding Engine",
-      "It is flooded out every interface in the VLAN as a broadcast"
+      "It is passed to the management interface for a reply"
     ],
     "correct": [
       0
@@ -2005,7 +2005,7 @@
     "options": [
       "The forwarding table holds only the configured static routes",
       "The forwarding table holds the active routes only",
-      "The two tables always contain exactly the same routes",
+      "The two tables are identical",
       "The routing table is copied from the forwarding table"
     ],
     "correct": [
@@ -2339,9 +2339,9 @@
     "stem": "A branch office has a single link to the head office and no other exits. Which routing setup is simplest for the branch router?",
     "explanation": "A stub site with one way out needs nothing more than a default route; a dynamic protocol adds work without giving the branch any path choices.",
     "options": [
-      "OSPF with dozens of areas",
+      "OSPF in its own separate area",
       "Full BGP routes from the head office",
-      "A routing instance for every subnet",
+      "RIP running on every interface",
       "A static default route"
     ],
     "correct": [
@@ -2443,7 +2443,7 @@
     "explanation": "The Routing Engine has far less packet capacity than the forwarding hardware, so exception traffic is limited to protect routing protocols and management from a flood, such as a denial of service attack.",
     "options": [
       "Because the Routing Engine cannot process routing protocol packets",
-      "To force management traffic onto the console port",
+      "To keep the routing tables from growing too large",
       "To slow transit traffic so routes can converge",
       "To protect the control plane from floods"
     ],
@@ -2634,7 +2634,7 @@
     "stem": "Which command shows only the routes in the table that were learned from OSPF?",
     "explanation": "The protocol keyword filters $\\texttt{show route}$ to one route source. $\\texttt{show ospf route}$ is a separate command that shows OSPF's own calculated routes.",
     "options": [
-      "$\\texttt{show ospf route table}$",
+      "$\\texttt{show route receive-protocol ospf}$",
       "$\\texttt{show route ospf}$",
       "$\\texttt{show route protocol ospf}$",
       "$\\texttt{show route table ospf.0}$"
@@ -2879,11 +2879,11 @@
     "skill": "Subnetting",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "What is the smallest prefix length that gives at least 500 usable hosts in one IPv4 subnet? Type the number only.",
-    "explanation": "500 hosts need 9 host bits (2 to the 9th is 512, minus 2 is 510), and 32 minus 9 is 23. A /24 gives only 254.",
+    "stem": "What is the longest prefix length that still gives at least 1000 usable hosts in one IPv4 subnet? Type the number only.",
+    "explanation": "1000 hosts need 10 host bits (2 to the 10th is 1024, minus 2 is 1022), and 32 minus 10 is 22. A /23 gives only 510.",
     "numeric": {
       "answers": [
-        "23"
+        "22"
       ],
       "tolerance": 0,
       "wholeNumber": true

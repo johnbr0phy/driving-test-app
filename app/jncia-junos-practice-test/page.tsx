@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How many questions are on the JNCIA-Junos exam?",
-    a: "JN0-106 has 65 multiple-choice questions and you have 90 minutes. It is given in English at Pearson VUE test centers or online, and it is based on Junos OS 21.2.",
+    a: "JN0-106 has 65 multiple-choice questions and you have 90 minutes. It is given in English through Pearson VUE, and it is based on Junos OS 21.2.",
   },
   {
     q: "What is the passing score for JN0-106?",

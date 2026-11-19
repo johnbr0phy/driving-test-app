@@ -1010,6 +1010,14 @@
         "pr": null,
         "findings": 5
       }
+    ],
+    "jncia": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 5
+      }
     ]
   },
   "pendingReviews": {

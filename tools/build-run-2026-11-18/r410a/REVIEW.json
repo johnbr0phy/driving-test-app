@@ -1,0 +1,95 @@
+{
+  "id": "r410a",
+  "blind_agreement": "200/200 (R22-006 and REG-007 agreed with the key but a second option is defensible)",
+  "options_only": {
+    "score": "139/200, 2 S hits, both rewritten",
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "questionId": "R410A-R22-006",
+      "severity": "high",
+      "issue": "ambiguous: two options are correct. The stem asks which indoor coil metering device Carrier's R-410A guide rules out; key B (capillary tube) is right, but Carrier's Step 6 (Check Indoor Expansion Device) also says 'Do not install with evaporator coils having capillary tube metering devices or pistons', so distractor D 'Fixed piston' is also ruled out by the same guide.",
+      "source": "https://www.shareddocs.com/hvac/docs/1009/Public/01/38YXA-1SI.pdf",
+      "fix": "Replace distractor D 'Fixed piston' with a device the guide allows, e.g. 'Hard shutoff R-410A TXV' (and reword A to 'R-410A TXV kit' so the two do not read as duplicates), or ask for the device the guide requires (hard shutoff TXV designed for R-410A) instead."
+    },
+    {
+      "questionId": "R410A-REG-007",
+      "severity": "medium",
+      "issue": "ambiguous: 'Which sale is exempt from the refrigerant sales restriction?' key C (sealed, precharged appliance, 82.154(c)(1)(vii)) is right, but distractor A 'A 25 lb cylinder for resale' is also an allowed sale in the same list, 82.154(c)(1)(v) (refrigerant sold only for eventual resale to certified persons, e.g. manufacturer to wholesaler).",
+      "source": "https://www.ecfr.gov/current/title-40/section-82.154",
+      "fix": "Replace A with a sale that is not excepted, e.g. 'A 25 lb cylinder for a handyman' or 'A 25 lb cylinder for a property manager'."
+    },
+    {
+      "questionId": "(sources.md)",
+      "severity": "low",
+      "issue": "The Carrier 38YXA installation instructions used for about 45 items are a 1997 document ('Copyright 1997 CARRIER Corp.'; its quick reference still says R-410A cylinders are rose colored). The facts drawn from it (POE, 600 psig driers, 800/250/550 manifold, dip tube, deep vacuum 500 microns, triple evacuation, wet cloth, no soft solder) are still standard, and items are attributed to 'Carrier's guide', but sources.md should state the document's date so a later audit does not treat it as current product data.",
+      "source": "https://www.shareddocs.com/hvac/docs/1009/Public/01/38YXA-1SI.pdf",
+      "fix": "Add '(1997 edition)' to the Carrier entry in sources.md; no bank change needed."
+    },
+    {
+      "questionId": "(whole bank)",
+      "severity": "info",
+      "issue": "Keys run strictly A,B,C,D,A,B,C,D in ID order (50 each). Harmless on screen since options are shuffled, but anyone reading the JSON or a printed sample in ID order sees the pattern.",
+      "source": "data/r410a-questions.json",
+      "fix": "Optional: have build.py place keys by a stem-seeded shuffle instead of rotation."
+    },
+    {
+      "questionId": "data/epa608-questions.json EPA-T2-021 (sibling, not this bank)",
+      "severity": "info",
+      "issue": "Confirmed the builder's note: current 40 CFR 82.156 Table 1 requires 0 inches Hg for a high-pressure appliance (R-410A is high-pressure under 82.152) with a full charge under 200 lb, with equipment made before or after Nov 15, 1993. A 10 in Hg key for a 12 lb R-410A split system is wrong under current text.",
+      "source": "https://www.ecfr.gov/current/title-40/section-82.156",
+      "fix": "Integrator: check and fix EPA-T2-021 in the epa608 bank."
+    }
+  ],
+  "verified": "Checked against current eCFR text read 2026-11-18: 82.154 (exempt substitutes incl. CO2 any application, R-290 in self-contained room AC; MVAC cans 2 lb with self-sealing valve; invoices name/date/quantity), 82.156 (Table 1; 0 psig non-major; 5 psig oil changes), 84.54 (Jan 1 2025 GWP 700; pre-2025 components may still be installed, no 2026 deadline in current text; VRF 2027 / 2028 with pre-Oct 5 2023 permit; dehumidifiers 2025; installation includes assembling from used or new components and increasing cooling capacity), 84.106 (15 lb, GWP > 53, residential/light commercial AC exempt, owner calculates, tech documents, 365 days, 10-day follow-up, mothballing), 84.108 (1,500 lb, 10/100 ppm, annual audit), 84.112 (15% virgin; 2029 reclaimed for supermarkets), 84.116 (15 in Hg heel, statement to final processor), 29 CFR 1910.252 (torch brazing shade 3 or 4, fire watch half hour, 35 ft). Daikin SDS (all 30+ SDS items match), Carrier guide (all charging, evacuation and brazing items match), ESCO PT values recomputed (superheat 11 F, subcooling 13 F, 336/208 = 1.62, 336 psig + 14.7 = 351 psia, GWP 0.5*675 + 0.5*3500 = 2087.5, 2088 - 675 = 1413, 25 ft x 0.6 = 15 oz, 5 ft x 0.6 = 3 oz, 18.2 - 15.7 = 2.5 lb, 31.5 - 6.5 = 25 lb, 110 - 85 = 25 F, 80.2 - 63.2 = 17.0).",
+  "landing_findings": [
+    {
+      "issue": "Format claims match ESCO's two pages (50-question exam on proper safety, handling and application; certificate and AC&R Safety Coalition patch; manual covers R-410A and R-407C, the R-22 phase-out, refrigerant and oil applications, service techniques). No time, pass mark or fee claimed. OK.",
+      "severity": "ok",
+      "source": "https://www.escogroup.org/Training/R410A.aspx"
+    },
+    {
+      "issue": "FAQ 'Can new R-410A systems still be installed?' says R-410A residential and light commercial AC and heat pumps 'may no longer be made or imported from January 1, 2025'. 84.54(a)(1) bans manufacture/import of self-contained products; split systems are governed by the installation rule in 84.54(c)(1). The rest of the answer (pre-2025 components may still be installed, no 2026 deadline, existing systems may be serviced) is correct.",
+      "severity": "low",
+      "source": "https://www.ecfr.gov/current/title-40/section-84.54",
+      "fix": "Say 'self-contained units with a GWP of 700 or more may no longer be made or imported from January 1, 2025, and new split systems may be installed only if all their components were made or imported before 2025'."
+    },
+    {
+      "issue": "Study guide step 4 says 'aim for 85% before your exam' while the tests use a 70% readiness line. Not wrong, but two numbers may confuse.",
+      "severity": "low",
+      "source": "app/r410a-certification-practice-test/page.tsx",
+      "fix": "Optional: 'aim well above the 70% line, around 85%'."
+    }
+  ],
+  "recheck": {
+    "ids": 4,
+    "agreement": "4/4",
+    "findings": [
+      {
+        "questionId": "R410A-R22-006",
+        "severity": "ok",
+        "issue": "Now asks what the guide requires: hard-shutoff R-410A TXV (Step 6). Capillary tube, piston and R-22 TXV are all ruled out by the guide. One defensible answer.",
+        "source": "https://www.shareddocs.com/hvac/docs/1009/Public/01/38YXA-1SI.pdf"
+      },
+      {
+        "questionId": "R410A-REG-007",
+        "severity": "ok",
+        "issue": "Resale option removed. Only the precharged appliance is a 82.154(c)(1) exception; handyman, homeowner and property manager are not allowed buyers. One defensible answer.",
+        "source": "https://www.ecfr.gov/current/title-40/section-82.154"
+      },
+      {
+        "questionId": "R410A-OIL-004",
+        "severity": "ok",
+        "issue": "Carrier quick reference: \"A liquid-line filter drier is required on every unit\"; suction-line drier must never go in the liquid line, burnout and sight-glass driers are not required. One defensible answer.",
+        "source": "https://www.shareddocs.com/hvac/docs/1009/Public/01/38YXA-1SI.pdf"
+      },
+      {
+        "questionId": "R410A-SVC-024",
+        "severity": "ok",
+        "issue": "Guide order is sweat connection, then Leak Checking (all joints), then Evacuate. Charging, crankcase heater power and running the compressor all come later (never run the compressor in a vacuum). One defensible answer.",
+        "source": "https://www.shareddocs.com/hvac/docs/1009/Public/01/38YXA-1SI.pdf"
+      }
+    ]
+  }
+}

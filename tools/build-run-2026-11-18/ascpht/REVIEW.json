@@ -1,0 +1,14 @@
+{
+  "id": "ascpht",
+  "blind_agreement": "200/200",
+  "options_only": null,
+  "findings": [
+    {"questionId": "(bank-wide)", "severity": "low", "issue": "In each category the stored keys run A, B, C, D, A, B... in ID order. Harmless in the app (options are shuffled on screen) and the validator reports a balanced 50/50/50/50, but anyone reading the JSON in order can predict every key. My blind answers were made on content and all 200 agree.", "source": "data/ascp-ht-questions.json", "fix": "Optional: let build.py place keys by a stem-seeded shuffle instead of a strict rotation."},
+    {"questionId": "HT-FIX-003, HT-SNC-004, HT-SCT-002, HT-SCT-016, HT-SNC-009", "severity": "low", "issue": "Borderline with the guideline's HTL ONLY 'Reagents: chemistry principles/theories' (formaldehyde oxidizing to formic acid, sodium iodate ripening, sulfurous acid decolorizing basic fuchsin, oil red O solubility, metachromasia). Each can also be read as reagent 'types/components' or 'properties/functions/actions', which the HT exam does cover, so I would keep them.", "source": "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_ht_htl_content_guideline.pdf", "fix": "None required."},
+    {"questionId": "HT-PRO-002", "severity": "low", "issue": "Asks why cleared tissue looks translucent (refractive indices matched). Refractive index is HTL ONLY only under Mounting Procedures; this is a clearing property, so it is in HT scope.", "source": "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_ht_htl_content_guideline.pdf", "fix": "None required."},
+    {"questionId": "HT-SNC-017, HT-SNC-018, HT-SNC-019, HT-SNC-021", "severity": "ok", "issue": "IHC items stay on terminology (DAB, epitope), counterstain and CLIA QC frequency; none asks staining theory, antigen retrieval, control selection or detection theory (HTL ONLY).", "source": "guideline p.6 footnote **", "fix": "None."}
+  ],
+  "landing_findings": [
+    {"issue": "Checked against the guideline (revised June 24, 2026, fetched 2026-11-18): 100 multiple-choice one-best-answer questions, 2 h 30 min, CAT, content ranges 15-25/10-20/15-25/30-40/10-15, regulatory questions on U.S. sources, HTL-only list. Landing and examFacts match. Per-test split 10/7/10/17/6 sits inside every range. The 100-999 scale with 400 to pass is not in the guideline; it is sourced to the BOC About the Examination page summary (403 to automated fetches) and the copy hedges it the same way as the MLT build. No fees, dates or pass-rate claims.", "severity": "ok"}
+  ]
+}

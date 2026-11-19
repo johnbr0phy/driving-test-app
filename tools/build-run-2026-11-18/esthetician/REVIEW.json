@@ -1,0 +1,69 @@
+{
+  "id": "esthetician",
+  "blind_agreement": "200/200",
+  "options_only": {
+    "score": "118/200, 3 S hits, all rewritten",
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "questionId": "(bank)",
+      "severity": "info",
+      "issue": "Key letters run A,B,C,D,A,... in strict ID order (balanced 50/50/50/50). Harmless because options are shuffled on screen, but anyone reading the raw JSON or a printed sample in ID order could infer keys.",
+      "source": "",
+      "fix": "Optional: let build.py place keys in a seeded balanced slot instead of a fixed rotation."
+    },
+    {
+      "questionId": "ESTH-BOD-005",
+      "severity": "weak",
+      "issue": "Distractor 'Heated until smoking' is a strawman; the item still tests the right fact. [Resolved in rebuild; recheck ok.]",
+      "source": "",
+      "fix": "Optional: replace with a plausible wrong choice such as 'Applied neat to the face'."
+    },
+    {
+      "questionId": "ESTH-BOD-007",
+      "severity": "weak",
+      "issue": "Distractors 'Right after surgery, unchecked' and 'In place of follow-up visits' are easy to rule out. [Resolved in rebuild; recheck ok.]",
+      "source": "",
+      "fix": "Optional: use a plausible timing distractor (e.g. 'Only after the incision has fully scarred')."
+    },
+    {
+      "questionId": "ESTH-HRL-004",
+      "severity": "ok",
+      "issue": "About 1/4 inch is right; texts give 1/4 to 1/2 inch, and no distractor falls in that range.",
+      "source": "",
+      "fix": "none"
+    }
+  ],
+  "landing_findings": [
+    {
+      "issue": "Checked against the NIC Esthetics Theory CIB (effective Sept 1 2025, revised Mar 1 2026): 110 items, 100 scored, 90 minutes, four options with one correct, Scientific Concepts 55% / Skin Care and Services 45%. Landing, examFacts and WIRING match. Pass-mark wording ('set by each board, many use 75, e.g. South Carolina') is properly hedged; the SC LLR page was not re-read in this review (the builder's fetch is recorded in sources.md). 'Free to start' wording is correct.",
+      "severity": "ok",
+      "source": "https://prov-testing.github.io/nic_cib/esthetics_national_theory_english.html"
+    }
+  ],
+  "recheck": {
+    "ids": 36,
+    "agreement": "36/36",
+    "findings": [
+      {
+        "questionId": "ESTH-CON-005",
+        "severity": "ok",
+        "issue": "Medication list is a plausible pre-peel item, but a physician release is the standard answer for a client under a physician's care; one defensible key.",
+        "fix": "none"
+      },
+      {
+        "questionId": "ESTH-BOD-005",
+        "severity": "ok",
+        "issue": "Earlier strawman distractor replaced; now plausible.",
+        "fix": "none"
+      },
+      {
+        "questionId": "ESTH-BOD-007",
+        "severity": "ok",
+        "issue": "Earlier weak distractors replaced; now plausible.",
+        "fix": "none"
+      }
+    ]
+  }
+}

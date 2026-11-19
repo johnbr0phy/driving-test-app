@@ -1853,13 +1853,13 @@
     "questionId": "EPA-T2-021",
     "category": "epaType2",
     "question": "Before a major repair, a technician recovers R-410A from a 12-lb split system using a new recovery machine. What level is required?",
-    "optionA": "0 psig",
+    "optionA": "0 inches Hg vacuum",
     "optionB": "4 inches Hg vacuum",
     "optionC": "10 inches Hg vacuum",
     "optionD": "29 inches Hg vacuum",
-    "correctAnswer": "C",
-    "correctIndex": 2,
-    "explanation": "R-410A is an other high-pressure refrigerant; appliances with less than 200 lb must be evacuated to 10 inches Hg vacuum with post-1993 equipment (40 CFR 82.156 Table 1)."
+    "correctAnswer": "A",
+    "correctIndex": 0,
+    "explanation": "R-410A is a high-pressure refrigerant. Under 40 CFR 82.156 Table 1, a high-pressure appliance with a full charge under 200 lb must be evacuated to 0 inches Hg vacuum (0 psig) before it is opened, whatever the age of the recovery machine. The 10 inches Hg level applies only at 200 lb or more."
   },
   {
     "type": "EPA608",

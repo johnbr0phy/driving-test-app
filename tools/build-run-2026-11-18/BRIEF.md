@@ -1,7 +1,7 @@
 # Builder brief: one exam, build run 2026-11-18
 
 You build ONE Tigertest practice exam in the batch checkout `/Users/johnbrophy/tt-b1` (branch
-`claude/build-tests-2026-11-18-b1`). Up to two other builders work in the same folder at the same
+`claude/build-tests-2026-11-18-b2`). Up to two other builders work in the same folder at the same
 time on other exams, so touch only your own files. The
 integrator (the session that started you) merges your branch, applies the shared-file wiring,
 runs the full checks, screenshots and opens the PR.

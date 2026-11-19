@@ -5561,6 +5561,123 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* ExCPT (NHA) pharmacy technician theme */
+  [data-theme="excpt"] {
+    --brand: 287 100% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 287 70% 96%;
+    --brand-hover: 287 100% 25%;
+    --brand-dark: 287 100% 22%;
+    --brand-darker: 287 90% 14%;
+    --brand-muted: 287 40% 72%;
+    --brand-border: 287 40% 80%;
+    --brand-border-light: 287 35% 90%;
+    --brand-gradient-to: 300 60% 96%;
+  }
+  /* Contractor Business and Law theme: muted dusty rose */
+  [data-theme="contractorlaw"] {
+    --brand: 344 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 344 25% 96%;
+    --brand-hover: 344 25% 36%;
+    --brand-dark: 344 25% 32%;
+    --brand-darker: 344 20% 24%;
+    --brand-muted: 344 25% 70%;
+    --brand-border: 344 25% 80%;
+    --brand-border-light: 344 20% 89%;
+    --brand-gradient-to: 359 50% 96%;
+  }
+  /* NATE Core exam theme: muted slate mauve */
+  [data-theme="natecore"] {
+    --brand: 290 20% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 290 20% 96%;
+    --brand-hover: 290 20% 34%;
+    --brand-dark: 290 20% 27%;
+    --brand-darker: 290 20% 17%;
+    --brand-muted: 290 15% 70%;
+    --brand-border: 290 15% 80%;
+    --brand-border-light: 290 15% 89%;
+    --brand-gradient-to: 300 15% 96%;
+  }
+  /* R-410A safety certification theme: gauge violet */
+  [data-theme="r410a"] {
+    --brand: 287 75% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 287 70% 96%;
+    --brand-hover: 287 75% 34%;
+    --brand-dark: 287 75% 27%;
+    --brand-darker: 287 70% 17%;
+    --brand-muted: 287 35% 70%;
+    --brand-border: 287 35% 80%;
+    --brand-border-light: 287 30% 89%;
+    --brand-gradient-to: 300 60% 96%;
+  }
+  /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
+  [data-theme="istqb"] {
+    --brand: 276 95% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 276 80% 97%;
+    --brand-hover: 276 95% 33%;
+    --brand-dark: 276 95% 28%;
+    --brand-darker: 276 90% 18%;
+    --brand-muted: 276 50% 72%;
+    --brand-border: 276 60% 82%;
+    --brand-border-light: 276 60% 90%;
+    --brand-gradient-to: 290 80% 97%;
+  }
+  /* MLS(ASCP) Medical Laboratory Scientist theme: muted mauve */
+  [data-theme="ascpmls"] {
+    --brand: 300 25% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 25% 96%;
+    --brand-hover: 300 25% 36%;
+    --brand-dark: 300 25% 32%;
+    --brand-darker: 300 20% 24%;
+    --brand-muted: 300 25% 70%;
+    --brand-border: 300 25% 80%;
+    --brand-border-light: 300 20% 89%;
+    --brand-gradient-to: 315 50% 96%;
+  }
+  /* HT(ASCP) Histotechnician theme */
+  [data-theme="ascpht"] {
+    --brand: 296 75% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 296 70% 96%;
+    --brand-hover: 296 75% 30%;
+    --brand-dark: 296 75% 27%;
+    --brand-darker: 296 70% 18%;
+    --brand-muted: 296 40% 72%;
+    --brand-border: 296 40% 78%;
+    --brand-border-light: 296 35% 89%;
+    --brand-gradient-to: 310 70% 96%;
+  }
+  /* Esthetician theme: dusty rose */
+  [data-theme="esthetician"] {
+    --brand: 330 20% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 25% 96%;
+    --brand-hover: 330 20% 34%;
+    --brand-dark: 330 20% 28%;
+    --brand-darker: 330 20% 18%;
+    --brand-muted: 330 15% 70%;
+    --brand-border: 330 15% 80%;
+    --brand-border-light: 330 15% 89%;
+    --brand-gradient-to: 345 25% 96%;
+  }
+  /* IRS Annual Filing Season Program AFTR theme */
+  [data-theme="afsp"] {
+    --brand: 12 45% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 45% 96%;
+    --brand-hover: 12 45% 38%;
+    --brand-dark: 12 45% 36%;
+    --brand-darker: 12 40% 26%;
+    --brand-muted: 12 25% 70%;
+    --brand-border: 12 25% 80%;
+    --brand-border-light: 12 20% 89%;
+    --brand-gradient-to: 17 50% 96%;
+  }
 
   [data-theme="hspachl"] {
     --brand: 316 40% 22%;
@@ -11744,6 +11861,105 @@
     --brand-muted: 193 12% 45%;
     --brand-dark: 193 15% 65%;
     --brand-darker: 193 15% 78%;
+  }
+  .dark [data-theme="afsp"] {
+    --brand: 12 45% 49%;
+    --brand-hover: 12 45% 41%;
+    --brand-light: 12 45% 13%;
+    --brand-gradient-to: 17 40% 11%;
+    --brand-border-light: 12 20% 24%;
+    --brand-border: 12 25% 34%;
+    --brand-muted: 12 25% 45%;
+    --brand-dark: 12 45% 65%;
+    --brand-darker: 12 40% 78%;
+  }
+  .dark [data-theme="esthetician"] {
+    --brand: 330 20% 50%;
+    --brand-hover: 330 20% 42%;
+    --brand-light: 330 25% 13%;
+    --brand-gradient-to: 345 25% 11%;
+    --brand-border-light: 330 15% 24%;
+    --brand-border: 330 15% 34%;
+    --brand-muted: 330 15% 45%;
+    --brand-dark: 330 20% 65%;
+    --brand-darker: 330 20% 78%;
+  }
+  .dark [data-theme="ascpht"] {
+    --brand: 296 75% 47.3%;
+    --brand-hover: 296 75% 39.3%;
+    --brand-light: 296 45% 13%;
+    --brand-gradient-to: 310 40% 11%;
+    --brand-border-light: 296 35% 24%;
+    --brand-border: 296 40% 34%;
+    --brand-muted: 296 40% 45%;
+    --brand-dark: 296 75% 65%;
+    --brand-darker: 296 70% 78%;
+  }
+  .dark [data-theme="ascpmls"] {
+    --brand: 300 25% 49.4%;
+    --brand-hover: 300 25% 41.4%;
+    --brand-light: 300 25% 13%;
+    --brand-gradient-to: 315 40% 11%;
+    --brand-border-light: 300 20% 24%;
+    --brand-border: 300 25% 34%;
+    --brand-muted: 300 25% 45%;
+    --brand-dark: 300 25% 65%;
+    --brand-darker: 300 20% 78%;
+  }
+  .dark [data-theme="istqb"] {
+    --brand: 276 95% 50%;
+    --brand-hover: 276 95% 42%;
+    --brand-light: 276 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 276 35% 24%;
+    --brand-border: 276 40% 34%;
+    --brand-muted: 276 45% 45%;
+    --brand-dark: 276 95% 65%;
+    --brand-darker: 276 90% 78%;
+  }
+  .dark [data-theme="r410a"] {
+    --brand: 287 75% 50%;
+    --brand-hover: 287 75% 42%;
+    --brand-light: 287 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 287 30% 24%;
+    --brand-border: 287 35% 34%;
+    --brand-muted: 287 35% 45%;
+    --brand-dark: 287 75% 65%;
+    --brand-darker: 287 70% 78%;
+  }
+  .dark [data-theme="natecore"] {
+    --brand: 290 20% 50%;
+    --brand-hover: 290 20% 42%;
+    --brand-light: 290 20% 13%;
+    --brand-gradient-to: 300 15% 11%;
+    --brand-border-light: 290 15% 24%;
+    --brand-border: 290 15% 34%;
+    --brand-muted: 290 15% 45%;
+    --brand-dark: 290 20% 65%;
+    --brand-darker: 290 20% 78%;
+  }
+  .dark [data-theme="contractorlaw"] {
+    --brand: 344 25% 50%;
+    --brand-hover: 344 25% 42%;
+    --brand-light: 344 25% 13%;
+    --brand-gradient-to: 359 40% 11%;
+    --brand-border-light: 344 20% 24%;
+    --brand-border: 344 25% 34%;
+    --brand-muted: 344 25% 45%;
+    --brand-dark: 344 25% 65%;
+    --brand-darker: 344 20% 78%;
+  }
+  .dark [data-theme="excpt"] {
+    --brand: 287 100% 48%;
+    --brand-hover: 287 100% 40%;
+    --brand-light: 287 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 287 35% 24%;
+    --brand-border: 287 40% 34%;
+    --brand-muted: 287 40% 45%;
+    --brand-dark: 287 100% 65%;
+    --brand-darker: 287 90% 78%;
   }
 
 }

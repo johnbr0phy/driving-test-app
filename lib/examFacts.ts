@@ -152,6 +152,138 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ISED RIC-3 Issue 5 (March 2022), RIC-1 Issue 8 (May 2025), RBR-4 Issue 3 (July 2022) and the amateur radio exam generator page (updated July 15, 2025), checked November 2026",
     source: { name: "ISED: RIC-3, Information on the Amateur Radio Service", url: "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/radiocom-information-circulars-ric/ric-3-information-amateur-radio-service" },
   },
+  afsp: {
+    answer:
+      "The Annual Federal Tax Refresher (AFTR) is a 6-hour continuing education course with a comprehension test at the end, part of the IRS Annual Filing Season Program for tax return preparers who are not attorneys, CPAs or enrolled agents. Each AFTR test has 100 multiple-choice questions with four answers and one correct answer, in at most 3 continuous hours, and 70 percent correct is needed to pass. IRS-approved continuing education providers write and give the test from the IRS course outline. The 2026 course covers preparing 2026 individual returns, must be finished by December 31, 2026, and counts toward the 2027 Annual Filing Season Program Record of Completion with 10 more hours of federal tax law and 2 of ethics.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, 4 answers each" },
+      { label: "Time", value: "Up to 3 continuous hours" },
+      { label: "Passing score", value: "70% correct" },
+      { label: "Course", value: "6 CE hours, ending in the test" },
+      { label: "Tax year covered", value: "2026 returns (2026 course, for the 2027 program)" },
+      { label: "Deadline", value: "Course and test done by December 31" },
+      { label: "Domains", value: "New tax law, general review, practices and procedures" },
+      { label: "Given by", value: "IRS-approved continuing education providers" },
+      { label: "Record of Completion", value: "18 CE hours, a renewed PTIN and Circular 230 consent" },
+    ],
+    basedOn: "IRS Publications 6079 (Rev. 5-2026), 6012 (Rev. 3-2026) and 6026 and the IRS Annual Filing Season Program FAQs, checked November 2026",
+    source: { name: "IRS: Annual Filing Season Program frequently asked questions", url: "https://www.irs.gov/tax-professionals/frequently-asked-questions-annual-filing-season-program" },
+  },
+  esthetician: {
+    answer:
+      "Most US states license estheticians (skin care specialists) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Esthetics Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline has two domains: Scientific Concepts, 55 percent (microbiology, infection control and safety, anatomy and physiology, the skin, skin disorders, hair and chemistry), and Skin Care and Services, 45 percent (consultation and skin analysis, facial procedures, electrical equipment, makeup, body treatments, lash and brow services, hair removal and advanced treatments). Each state board sets its passing score; many use 75. Training hours, fees, scope of practice and the practical exam vary by state, and some states use a different exam provider.",
+    rows: [
+      { label: "Questions", value: "110 (100 scored), four options each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Set by each board; 75 in many states (e.g. South Carolina)" },
+      { label: "Largest domain", value: "Scientific Concepts, 55%" },
+      { label: "Also required", value: "Usually a practical exam (varies by state)" },
+      { label: "Developed by", value: "NIC (National-Interstate Council of State Boards of Cosmetology)" },
+    ],
+    basedOn: "the NIC National Esthetics Theory Examination candidate information bulletin, effective September 1, 2025 (revised March 1, 2026), checked November 2026",
+    source: { name: "NIC Esthetics Theory CIB", url: "https://prov-testing.github.io/nic_cib/esthetics_national_theory_english.html" },
+  },
+  ascpht: {
+    answer:
+      "The HT(ASCP) exam is the histotechnician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the HT(ASCP) credential (HT(ASCPi) internationally). The BOC content guideline (revised June 24, 2026) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Content areas are Staining 30 to 40%, Fixation 15 to 25%, Embedding/Microtomy 15 to 25%, Processing 10 to 20% and Laboratory Operations 10 to 15%. Regulatory questions are based on U.S. sources. Some topics, such as immunohistochemistry staining theory, enzyme histochemistry staining and management, are on the HTL exam only. The BOC reports a scaled score from 100 to 999, with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest area", value: "Staining, 30 to 40%" },
+      { label: "Pass mark", value: "Scaled score of 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Histotechnician HT(ASCP) and Scientist in Histotechnology HTL(ASCP) Examination Content Guideline (revised June 24, 2026), checked November 2026",
+    source: { name: "ASCP BOC: HT and HTL Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_ht_htl_content_guideline.pdf" },
+  },
+  ascpmls: {
+    answer:
+      "The MLS(ASCP) exam is the medical laboratory scientist certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the MLS(ASCP) credential (MLS(ASCPi) internationally). The BOC content guideline (revised September 25, 2025) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Blood Banking, Chemistry, Hematology and Microbiology are 17 to 22% each, and Urinalysis and Other Body Fluids, Immunology and Laboratory Operations are 5 to 10% each. Regulatory questions are based on U.S. sources. The BOC reports a scaled score from 100 to 999, with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest areas", value: "Blood banking, chemistry, hematology and microbiology, 17 to 22% each" },
+      { label: "Pass mark", value: "Scaled score of 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Medical Laboratory Scientist MLS(ASCP) and MLS(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
+    source: { name: "ASCP BOC: MLS(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf" },
+  },
+  istqb: {
+    answer:
+      "The ISTQB Certified Tester Foundation Level (CTFL v4.0) exam has 40 multiple-choice questions worth one point each, and you need 26 points (65 percent) to pass. You have 60 minutes, or 75 minutes if you take it in a language that is not your native one. Questions come from six syllabus chapters: Fundamentals of Testing 8, Testing Throughout the SDLC 6, Static Testing 4, Test Analysis and Design 11, Managing the Test Activities 9 and Test Tools 2. The current syllabus document is v4.0.1.",
+    rows: [
+      { label: "Questions", value: "40 multiple choice, one point each" },
+      { label: "Time", value: "60 minutes (75 in a non-native language)" },
+      { label: "Pass mark", value: "26 of 40 points (65 percent)" },
+      { label: "Biggest chapter", value: "Test Analysis and Design, 11 of 40" },
+      { label: "Syllabus", value: "CTFL v4.0, document v4.0.1 (2024)" },
+      { label: "Given by", value: "ISTQB member boards and exam providers" },
+    ],
+    basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
+    source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
+  },
+  r410a: {
+    answer:
+      "The R-410A Safety Certification is a specialty certification offered by the ESCO Institute, from the AC&R Safety Coalition program. ESCO describes it as a 50-question exam covering proper safety, handling and application of R-410A refrigerant systems, and persons who pass receive a certificate and an AC&R Safety Coalition R-410A patch. ESCO's training manual covers servicing R-410A and R-407C systems, the R-22 phase-out, refrigerant and oil applications, service techniques and safe handling. ESCO does not publish a time limit or passing score for this exam on its program pages. It does not replace EPA Section 608 certification, which federal law requires to buy and handle R-410A for stationary equipment.",
+    rows: [
+      { label: "Questions", value: "50" },
+      { label: "Covers", value: "Proper safety, handling and application of R-410A" },
+      { label: "Passing score", value: "Not published by ESCO; Tigertest uses 70% as a readiness line" },
+      { label: "On passing", value: "Certificate and AC&R Safety Coalition R-410A patch" },
+      { label: "Prerequisite", value: "None listed" },
+      { label: "Offered by", value: "ESCO Institute (HVAC Excellence)" },
+    ],
+    basedOn: "ESCO Institute's R-410A Safety & Training and Specialty Certifications pages, checked November 2026",
+    source: { name: "ESCO Institute R-410A program", url: "https://www.escogroup.org/Training/R410A.aspx" },
+  },
+  natecore: {
+    answer:
+      "The NATE Core exam is the knowledge exam from North American Technician Excellence (NATE) that tests an HVACR technician's general knowledge, construction knowledge and HVACR knowledge in safety, tools, basic construction, basic science, achieving desired conditions, taking measurements and basic electricity. NATE says it is a requirement for most installation or service specialty certifications. It has 50 questions, is closed book with a 1.5 hour time limit, and is scored pass/fail; NATE sets the passing score through a Passing Score Study and does not publish a percentage. On the traditional pathway a technician passes the Core exam and a 100-question Specialty exam. NATE certifications are renewed every two years.",
+    rows: [
+      { label: "Questions", value: "50" },
+      { label: "Time limit", value: "1.5 hours, closed book" },
+      { label: "Scoring", value: "Pass/fail; no percentage published (Tigertest uses 70% as a readiness line)" },
+      { label: "Weights", value: "Electricity 26%, Safety 18%, Measurements 14%, Desired Conditions 14%, Tools 10%, Basic Science 10%, Construction 8%" },
+      { label: "Needed for", value: "Most NATE installation or service specialty certifications" },
+      { label: "Renewal", value: "Every two years (16 continuing education hours or a Specialty retake)" },
+    ],
+    basedOn: "NATE's Core exam KATE, Traditional Pathway and Recertification FAQ pages, checked November 2026",
+    source: { name: "NATE Core exam KATE (PDF)", url: "https://natex.org/wp-content/uploads/2022/06/Core-KATE-Final.pdf" },
+  },
+  contractorlaw: {
+    answer:
+      "The contractor Business and Law exam is the business part of the licensing exam that many state contractor boards require, often next to a trade exam. Each state writes and runs its own, usually through PSI or Prometric, and many base it on a state edition of the NASCLA Contractors Guide to Business, Law and Project Management. Georgia's is 50 questions in 120 minutes with 70 percent to pass and open book; Hawaii's is 80 questions in 180 minutes with 75 percent to pass, closed book. Topics include licensing, estimating and bidding, financial management, tax and labor law, contracts, project management and liens, risk management and safety.",
+    rows: [
+      { label: "Questions", value: "Varies by state (Georgia 50, Hawaii 80)" },
+      { label: "Time", value: "Varies (Georgia 120 min, Hawaii 180 min)" },
+      { label: "Passing score", value: "Varies (Georgia 70%, Hawaii 75%)" },
+      { label: "Format", value: "Open or closed book, set by each state" },
+      { label: "Reference", value: "Often a state edition of the NASCLA Contractors Guide" },
+      { label: "Given by", value: "State contractor boards via PSI or Prometric" },
+    ],
+    basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
+    source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
+  },
+  excpt: {
+    answer:
+      "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 pretest)" },
+      { label: "Time", value: "2 hours 10 minutes" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Largest domain", value: "Dispensing process, 43 of 100" },
+      { label: "Current plan", value: "2023 job analysis, exams from July 9, 2025" },
+      { label: "Eligibility", value: "Training program within 5 years, or 1 year (1,200 hours) of supervised work in the last 3 years" },
+      { label: "Where", value: "PSI testing center or live remote proctoring" },
+      { label: "Renewal", value: "Every 2 years, 20 CE credits (1 law, 1 patient safety)" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's ExCPT test plan (2023 job analysis), CPhT certification page and 2024 pass rate report, checked November 2026",
+    source: { name: "NHA: Certified Pharmacy Technician (CPhT)", url: "https://www.nhanow.com/certification/nha-certifications/certified-pharmacy-technician-(cpht)" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

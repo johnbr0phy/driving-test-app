@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "ita2" | "itcilsb2" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech";
+export type ExamId = "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itcils" | "itceli" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "contractorlaw" | "excpt" | "ita2" | "itcilsb2";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -24118,7 +24118,544 @@ const carshair: ExamConfig = {
   },
 };
 
-export const EXAMS: ExamConfig[] = [frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, jelec, ase, nhie, cna, ptcb, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, ita2, itcilsb2, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, carscook, carshair, cadronebasic, cahambasic, ea2, ea3];
+const afsp: ExamConfig = {
+  id: "afsp",
+  stateCode: "AFSP",
+  idBase: 40400,
+  slug: "/annual-federal-tax-refresher",
+  landingPath: "/annual-federal-tax-refresher-practice-test",
+  name: "AFTR Practice Test",
+  shortName: "AFTR Test",
+  examLabel: "AFTR test",
+  fullName: "IRS Annual Filing Season Program: Annual Federal Tax Refresher (AFTR) Course Test",
+  questionIdPrefix: "AFSP-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // IRS Publication 6079 (Rev. 5-2026), AFTR Course Outline for preparing 2026 individual 1040
+  // returns: Domain 1 New Tax Law/Recent Updates (1.1-1.14), Domain 2 General Review (2.1-2.16),
+  // Domain 3 Practices, Procedures and Professional Responsibility (3.1-3.8). The IRS sets no domain
+  // weights (Publication 6012 only requires every topic tested), so 14/26/10 per 50 is Tigertest's,
+  // by topic count: updates 3, new credits 3, new deductions 8; filing 4, income 6, Schedule C 4,
+  // itemized 3, credits 4, general topics 5; security 4, practice 6. The real test is 100
+  // questions in 3 hours with 70% to pass. 2026 figures from Rev. Proc. 2025-32. All items original.
+  blueprint: {
+    afspAdjust: 3,
+    afspNewCred: 3,
+    afspNewDed: 8,
+    afspFiling: 4,
+    afspIncome: 6,
+    afspSchC: 4,
+    afspItemized: 3,
+    afspCredits: 4,
+    afspGeneral: 5,
+    afspSecurity: 4,
+    afspPractice: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40401, name: "New Tax Law & Recent Updates", categories: ["afspAdjust", "afspNewCred", "afspNewDed"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 40402, name: "Filing Status, Income & Schedule C", categories: ["afspFiling", "afspIncome", "afspSchC"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 40403, name: "Deductions, Credits & General Topics", categories: ["afspItemized", "afspCredits", "afspGeneral"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 40404, name: "Practices & Responsibility", categories: ["afspSecurity", "afspPractice"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    afspAdjust: "Inflation Adjustments & Reporting",
+    afspNewCred: "New Credit Rules",
+    afspNewDed: "New Deductions & Accounts",
+    afspFiling: "Filing Status & Dependents",
+    afspIncome: "Income & Retirement",
+    afspSchC: "Schedule C Business",
+    afspItemized: "Itemized Deductions",
+    afspCredits: "Tax Credits",
+    afspGeneral: "General Topics & Due Dates",
+    afspSecurity: "Identity Theft & Data Security",
+    afspPractice: "Preparer Rules & AFSP",
+  },
+  copy: {
+    guestPrompt: "to save your AFTR progress and track every question you miss",
+    trainingHeading: "Train by AFTR outline domain",
+    trainingSub: "Four sets covering all three domains of the IRS 2026 AFTR course outline, on 2026 tax law. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across all three domains",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with New Tax Law & Recent Updates.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the AFTR test.",
+    ],
+    sourceLine: "Based on the IRS 2026 AFTR course outline (Publication 6079) and 2026 tax law. Original questions; 50 per test, 70% target like the real test. Not affiliated with the IRS or any CE provider.",
+    analyticsKey: "afsp",
+  },
+};
+const esthetician: ExamConfig = {
+  id: "esthetician",
+  stateCode: "ESTH",
+  idBase: 40500,
+  slug: "/esthetician",
+  landingPath: "/esthetician-practice-test",
+  name: "Esthetician Practice Test",
+  shortName: "Esthetician",
+  examLabel: "Esthetician state board",
+  fullName: "NIC National Esthetics Theory Examination",
+  questionIdPrefix: "ESTH-",
+  icon: "sparkles",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // NIC National Esthetics Theory Examination CIB, effective September 1, 2025, revised
+  // March 1, 2026: 110 items, 100 scored, 90 minutes. Scientific Concepts 55% (here 27: infection
+  // control 6, anatomy 5, skin 5, disorders 6, hair 2, chemistry 3) and Skin Care and Services 45%
+  // (here 23: consultation 5, facials 7, equipment 3, makeup 3, hair removal and lashes 3, body
+  // and other services 2); the split inside each domain is Tigertest's. Each board sets its pass
+  // mark (75 in many, e.g. South Carolina). References: Milady Standard Esthetics 12th ed., Pivot
+  // Point Fundamentals: Esthetics. All items original.
+  blueprint: {
+    esthInfection: 6,
+    esthAnatomy: 5,
+    esthSkin: 5,
+    esthDisorders: 6,
+    esthHair: 2,
+    esthChemistry: 3,
+    esthConsult: 5,
+    esthFacial: 7,
+    esthElectric: 3,
+    esthMakeup: 3,
+    esthHairRemoval: 3,
+    esthBody: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40501, name: "Infection Control & Chemistry", categories: ["esthInfection", "esthChemistry"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 40502, name: "Anatomy, Skin & Hair", categories: ["esthAnatomy", "esthSkin", "esthHair"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 40503, name: "Skin Disorders & Consultation", categories: ["esthDisorders", "esthConsult"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 40504, name: "Facials & Body Treatments", categories: ["esthFacial", "esthBody"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 40505, name: "Equipment, Makeup & Hair Removal", categories: ["esthElectric", "esthMakeup", "esthHairRemoval"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    esthInfection: "Infection Control & Safety",
+    esthAnatomy: "Anatomy & Physiology",
+    esthSkin: "Skin Histology & Functions",
+    esthDisorders: "Skin Disorders & Diseases",
+    esthHair: "Hair & Hair Growth",
+    esthChemistry: "Chemistry & Ingredients",
+    esthConsult: "Consultation & Skin Analysis",
+    esthFacial: "Facial Procedures",
+    esthElectric: "Equipment & Advanced Treatments",
+    esthMakeup: "Makeup",
+    esthHairRemoval: "Hair Removal, Lashes & Brows",
+    esthBody: "Body & Other Services",
+  },
+  copy: {
+    guestPrompt: "to save your esthetics exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the NIC esthetics theory outline: infection control and chemistry; anatomy, skin and hair; skin disorders and consultation; facials and body treatments; and equipment, makeup and hair removal. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions in the NIC proportions, 75% readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Infection Control & Chemistry.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go pass your state board.",
+    ],
+    sourceLine: "Based on the NIC National Esthetics Theory Examination outline (bulletin effective September 1, 2025: 110 items, 100 scored, 90 minutes). Original questions. Some states use a different exam; check your board. Not affiliated with NIC.",
+    analyticsKey: "esthetician",
+  },
+};
+const ascpht: ExamConfig = {
+  id: "ascpht",
+  stateCode: "ASCPHT",
+  idBase: 40600,
+  slug: "/ascp-ht",
+  landingPath: "/ascp-ht-practice-test",
+  name: "HT(ASCP) Practice Test",
+  shortName: "HT(ASCP)",
+  examLabel: "HT exam",
+  fullName: "ASCP Histotechnician HT(ASCP) Certification Exam",
+  questionIdPrefix: "HT-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASCP BOC Histotechnician HT(ASCP)/HT(ASCPi) and HTL Examination Content Guideline (revised
+  // June 24, 2026, checked November 2026): 100 questions in 2 hours 30 minutes, computer adaptive.
+  // Fixation 15-25%, Processing 10-20%, Embedding/Microtomy 15-25%, Staining 30-40%, Laboratory
+  // Operations 10-15%; HTL-only items left out. Per 50-question fixed form: 10/7/10/17/6
+  // (20/14/20/34/12%), all inside the ranges; the staining split 6/6/5 is Tigertest's. The real
+  // exam is CAT and scaled; 70% here is a readiness marker. All items original.
+  blueprint: {
+    htFix: 10,
+    htProc: 7,
+    htEmbed: 10,
+    htStainNuc: 6,
+    htStainCt: 6,
+    htStainPig: 5,
+    htOps: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40601, name: "Fixation", categories: ["htFix"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 40602, name: "Processing & Decalcification", categories: ["htProc"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 40603, name: "Embedding & Microtomy", categories: ["htEmbed"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 40604, name: "H&E, Carbohydrate & Connective Stains", categories: ["htStainNuc", "htStainCt"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 40605, name: "Special Stains & Lab Operations", categories: ["htStainPig", "htOps"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    htFix: "Fixation",
+    htProc: "Processing & Decalcification",
+    htEmbed: "Embedding & Microtomy",
+    htStainNuc: "H&E, Mounting, Cytology & IHC Basics",
+    htStainCt: "Carbohydrate, Connective Tissue, Nerve & Lipid Stains",
+    htStainPig: "Microorganism, Pigment & Mineral Stains",
+    htOps: "Laboratory Operations",
+  },
+  copy: {
+    guestPrompt: "to save your HT(ASCP) progress and track every question you miss",
+    trainingHeading: "Train by BOC content area",
+    trainingSub: "Five sets covering the five content areas of the ASCP BOC histotechnician guideline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Fixation.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the HT(ASCP).",
+    ],
+    sourceLine: "Based on the ASCP BOC HT and HTL Examination Content Guideline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the American Society for Clinical Pathology.",
+    analyticsKey: "ascpht",
+  },
+};
+const ascpmls: ExamConfig = {
+  id: "ascpmls",
+  stateCode: "ASCPMLS",
+  idBase: 40700,
+  slug: "/ascp-mls",
+  landingPath: "/ascp-mls-practice-test",
+  name: "MLS(ASCP) Practice Test",
+  shortName: "MLS(ASCP)",
+  examLabel: "MLS exam",
+  fullName: "ASCP Medical Laboratory Scientist MLS(ASCP) Certification Exam",
+  questionIdPrefix: "MLS-",
+  icon: "microscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASCP BOC Medical Laboratory Scientist MLS(ASCP) and MLS(ASCPi) Examination Content Guideline
+  // (revised September 25, 2025, checked November 2026): 100 questions in 2 hours 30 minutes,
+  // computer adaptive. Blood Banking 17-22%, Urinalysis and Other Body Fluids 5-10%, Chemistry
+  // 17-22%, Hematology (with hemostasis) 17-22%, Immunology 5-10%, Microbiology 17-22%,
+  // Laboratory Operations 5-10%. Per 50-question fixed form: 10/4/9/10/4/9/4
+  // (20/8/18/20/8/18/8%), all inside the ranges; blood banking 4/6, chemistry 5/4 and
+  // hematology 6/4 are Tigertest's splits. The real exam is CAT and scaled; 70% here is a
+  // readiness marker. All items original.
+  blueprint: {
+    mlsBbProd: 4,
+    mlsBbSero: 6,
+    mlsUa: 4,
+    mlsChemGen: 5,
+    mlsChemSpec: 4,
+    mlsHeme: 6,
+    mlsHemost: 4,
+    mlsImmuno: 4,
+    mlsMicro: 9,
+    mlsOps: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40701, name: "Blood Banking", categories: ["mlsBbProd", "mlsBbSero"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 40702, name: "Urinalysis & Chemistry", categories: ["mlsUa", "mlsChemGen", "mlsChemSpec"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 40703, name: "Hematology & Hemostasis", categories: ["mlsHeme", "mlsHemost"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 40704, name: "Microbiology", categories: ["mlsMicro"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 40705, name: "Immunology & Lab Operations", categories: ["mlsImmuno", "mlsOps"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    mlsBbProd: "Blood Products & Transfusion Practice",
+    mlsBbSero: "Blood Groups & Serologic Testing",
+    mlsUa: "Urinalysis & Other Body Fluids",
+    mlsChemGen: "Carbohydrates, Lipids, Proteins & Enzymes",
+    mlsChemSpec: "Acid-Base, Electrolytes, Hormones & Drugs",
+    mlsHeme: "Hematology Physiology, Disease & Testing",
+    mlsHemost: "Hemostasis",
+    mlsImmuno: "Immunology",
+    mlsMicro: "Microbiology",
+    mlsOps: "Laboratory Operations",
+  },
+  copy: {
+    guestPrompt: "to save your MLS(ASCP) progress and track every question you miss",
+    trainingHeading: "Train by BOC content area",
+    trainingSub: "Five sets covering the seven content areas of the ASCP BOC MLS guideline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Blood Banking.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the MLS(ASCP).",
+    ],
+    sourceLine: "Based on the ASCP BOC MLS(ASCP) Examination Content Guideline. Original questions; 50 per test, weighted like the real exam. Not affiliated with the American Society for Clinical Pathology.",
+    analyticsKey: "ascpmls",
+  },
+};
+const r410a: ExamConfig = {
+  id: "r410a",
+  stateCode: "R410A",
+  idBase: 40900,
+  slug: "/r410a",
+  landingPath: "/r410a-certification-practice-test",
+  name: "R-410A Certification Practice Test",
+  shortName: "R-410A",
+  examLabel: "R-410A Safety Certification",
+  fullName: "ESCO Institute R-410A Safety Certification exam",
+  questionIdPrefix: "R410A-",
+  icon: "thermometer",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ESCO Institute R-410A Safety Training Program (AC&R Safety Coalition exam), escogroup.org
+  // Training/R410A.aspx and Certifications/Specialty.aspx, read 2026-11-18: a 50-question exam
+  // covering proper safety, handling and application of R-410A; the manual covers R-410A and
+  // R-407C service, the R-22 phase-out, refrigerant and oil applications, service techniques
+  // and safe handling. ESCO publishes no weights, time or pass mark, so this split and the 70%
+  // line are Tigertest's. Facts from ESCO's 2026 PT chart, 40 CFR 82 Subpart F, 40 CFR 84
+  // (Technology Transitions as revised May 2026; Emissions Reduction and Reclamation), DOT
+  // 49 CFR 173/178, OSHA 29 CFR 1910, the R-410A SDS and Carrier's R-410A quick reference guide.
+  blueprint: {
+    r410Safety: 9,
+    r410Cylinders: 6,
+    r410Props: 10,
+    r410Oil: 5,
+    r410Retrofit: 3,
+    r410Regs: 10,
+    r410Service: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 40901, name: "Safety & Cylinder Handling", categories: ["r410Safety", "r410Cylinders"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 40902, name: "Pressures, Oil & Evacuation", categories: ["r410Props", "r410Oil"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 40903, name: "Retrofits, Installation & Charging", categories: ["r410Retrofit", "r410Service"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 40904, name: "EPA Rules & the HFC Transition", categories: ["r410Regs"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    r410Safety: "Personal Safety & First Aid",
+    r410Cylinders: "Cylinders, Tools & Storage",
+    r410Props: "Properties & Pressures",
+    r410Oil: "Oil, Moisture & Evacuation",
+    r410Retrofit: "R-22 Phase-Out & Retrofits",
+    r410Regs: "EPA Rules & the HFC Transition",
+    r410Service: "Installation & Charging",
+  },
+  copy: {
+    guestPrompt: "to save your R-410A certification progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on safe handling, pressures and POE oil, installation and charging, and the EPA rules for HFCs. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions like the real exam, 70% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Safety & Cylinder Handling.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go earn your R-410A card.",
+    ],
+    sourceLine: "Based on ESCO's R-410A safety program (a 50-question exam on safety, handling and application), EPA, DOT and OSHA rules, the R-410A SDS and a manufacturer's R-410A guide. Original questions. Not affiliated with the ESCO Institute or the AC&R Safety Coalition.",
+    analyticsKey: "r410a",
+  },
+};
+const natecore: ExamConfig = {
+  id: "natecore",
+  stateCode: "NATECORE",
+  idBase: 41000,
+  slug: "/nate-core",
+  landingPath: "/nate-core-practice-test",
+  name: "NATE Core Exam Practice Test",
+  shortName: "NATE Core",
+  examLabel: "NATE Core Exam",
+  fullName: "NATE (North American Technician Excellence) Core exam",
+  questionIdPrefix: "NATE-",
+  icon: "thermometer",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NATE Core Exam KATE (Knowledge Areas of Technician Expertise), natex.org, read 2026-11-18:
+  // 50 questions, closed book, 1.5 hours, pass/fail; Basic Electricity 26%, Safety 18%, Taking
+  // Temp. & Humidity Measurements 14%, Achieving Desired Conditions 14%, Tools 10%, Using Basic
+  // Science 10%, Basic Construction 8%, scaled to 50 below. NATE publishes no percentage cut
+  // score, so 70% is Tigertest's readiness line. Facts from OSHA 29 CFR 1910/1926, DOT 49 CFR
+  // 172/177, EPA, EIA, ENERGY STAR and ACCA pages, Copeland AE4-1331 R9, Fluke, and physics.
+  blueprint: {
+    nateSafety: 9,
+    nateTools: 5,
+    nateConstruction: 4,
+    nateScience: 5,
+    nateComfort: 7,
+    nateMeasure: 7,
+    nateElectric: 13,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41001, name: "Safety & Tools", categories: ["nateSafety", "nateTools"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 41002, name: "Basic Construction & Science", categories: ["nateConstruction", "nateScience"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 41003, name: "Comfort & Measurements", categories: ["nateComfort", "nateMeasure"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 41004, name: "Basic Electricity", categories: ["nateElectric"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nateSafety: "Safety",
+    nateTools: "Tools",
+    nateConstruction: "Basic Construction",
+    nateScience: "Using Basic Science",
+    nateComfort: "Achieving Desired Conditions",
+    nateMeasure: "Temperature & Humidity Measurements",
+    nateElectric: "Basic Electricity",
+  },
+  copy: {
+    guestPrompt: "to save your NATE Core progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets in NATE's order: safety and tools, construction and basic science, comfort and measurements, and basic electricity. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions like the real Core exam, 70% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Safety & Tools.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go pass your NATE Core exam.",
+    ],
+    sourceLine: "Based on NATE's Core exam KATE outline and weights, OSHA and DOT safety rules, EPA, ENERGY STAR and ACCA guidance and HVAC physics. Original questions. Not affiliated with North American Technician Excellence (NATE).",
+    analyticsKey: "natecore",
+  },
+};
+const contractorlaw: ExamConfig = {
+  id: "contractorlaw",
+  stateCode: "CONTRLAW",
+  idBase: 41200,
+  slug: "/contractor-business-law",
+  landingPath: "/contractor-business-and-law-practice-test",
+  name: "Contractor Business and Law Practice Test",
+  shortName: "Business and Law",
+  examLabel: "contractor Business and Law exam",
+  fullName: "Contractor Business and Law (business and project management) exam",
+  questionIdPrefix: "CBL-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // No single national exam: each state contractor board runs its own Business and Law exam,
+  // usually through PSI or Prometric with a state edition of the NASCLA Contractors Guide as the
+  // reference. Blueprint follows the shared subject areas of the PSI bulletins for Georgia
+  // (updated 4/28/2025: 50 questions, 70%, open book) and Hawaii (1/20/2026: 80 questions, 75%,
+  // closed book), checked 2026-11-18, minus the state licensing area. Federal law only; state
+  // licensing and lien law are not asserted. All items original.
+  blueprint: {
+    cblOrg: 4,
+    cblFinance: 7,
+    cblEstimate: 7,
+    cblProject: 5,
+    cblContract: 6,
+    cblRisk: 4,
+    cblTax: 6,
+    cblLabor: 6,
+    cblSafety: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41201, name: "Business Organization & Finance", categories: ["cblOrg", "cblFinance"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 41202, name: "Estimating & Project Management", categories: ["cblEstimate", "cblProject"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 41203, name: "Contracts, Insurance & Bonds", categories: ["cblContract", "cblRisk"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 41204, name: "Tax & Labor Laws", categories: ["cblTax", "cblLabor"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 41205, name: "Jobsite Safety & Environment", categories: ["cblSafety"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cblOrg: "Business Organization",
+    cblFinance: "Financial Management",
+    cblEstimate: "Estimating & Bidding",
+    cblProject: "Project Management & Liens",
+    cblContract: "Contracts",
+    cblRisk: "Risk Management, Insurance & Bonds",
+    cblTax: "Tax Laws",
+    cblLabor: "Labor Laws",
+    cblSafety: "Safety & Environment",
+  },
+  copy: {
+    guestPrompt: "to save your Business and Law progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering the business, tax, labor, contract and safety topics state Business and Law exams test. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions across every topic, 70% to pass",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Business Organization & Finance.",
+      "Master each set, then test.",
+      "Try a practice test next.",
+      "Fix the misses, then retake.",
+      "All done. Book your Business and Law exam.",
+    ],
+    sourceLine: "Based on state Business and Law exam subject areas, federal tax, labor and OSHA rules, and standard construction business practice. Original questions; 50 per test, 70% to pass. State licensing and lien law not included.",
+    analyticsKey: "contractorlaw",
+  },
+};
+const excpt: ExamConfig = {
+  id: "excpt",
+  stateCode: "EXCPT",
+  idBase: 41300,
+  slug: "/excpt",
+  landingPath: "/excpt-practice-test",
+  name: "ExCPT Practice Test",
+  shortName: "ExCPT (NHA)",
+  examLabel: "ExCPT exam",
+  fullName: "Exam for the Certification of Pharmacy Technicians (ExCPT)",
+  questionIdPrefix: "EXCPT-",
+  icon: "pill",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA Certified Pharmacy Technician (CPhT) Test Plan for the ExCPT Exam, based on the 2023 job
+  // analysis, used for exams from July 9, 2025 (NHA media center; checked November 2026):
+  // 100 scored + 20 pretest items in 2 hours 10 minutes. Scored items: 1 technician role and
+  // practice 15; 2A federal requirements 9, 2B controlled substances 6; 3A drug classification 8,
+  // 3B top drugs 5; 4A intake and entry 13, 4B preparing and dispensing 13, 4C calculations 7,
+  // 4D compounding, unit dose and repackaging 10; 5 medication safety and QA 14. Scaled to 50:
+  // 7/5/3/4/3/6/6/4/5/7 (Tigertest's rounding). NHA reports a scaled score (200 to 500, 390 to
+  // pass, not a percent); 70% here is a readiness marker. Federal law only. All items original.
+  blueprint: {
+    excptRole: 7,
+    excptLaws: 5,
+    excptControlled: 3,
+    excptClasses: 4,
+    excptTopDrugs: 3,
+    excptIntake: 6,
+    excptDispense: 6,
+    excptCalc: 4,
+    excptCompound: 5,
+    excptSafety: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41301, name: "Technician Role & Pharmacy Law", categories: ["excptRole", "excptLaws"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 41302, name: "Controlled Substances & Drug Therapy", categories: ["excptControlled", "excptClasses", "excptTopDrugs"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 41303, name: "Prescription Intake & Dispensing", categories: ["excptIntake", "excptDispense"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 41304, name: "Calculations & Compounding", categories: ["excptCalc", "excptCompound"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 41305, name: "Medication Safety & Quality", categories: ["excptSafety"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    excptRole: "Technician Role & Practice",
+    excptLaws: "Federal Requirements",
+    excptControlled: "Controlled Substances",
+    excptClasses: "Drug Classes, Routes & Dosage Forms",
+    excptTopDrugs: "Top Drugs & Drug Therapy",
+    excptIntake: "Prescription Intake & Entry",
+    excptDispense: "Preparing & Dispensing",
+    excptCalc: "Calculations",
+    excptCompound: "Compounding & Repackaging",
+    excptSafety: "Medication Safety & Quality Assurance",
+  },
+  copy: {
+    guestPrompt: "to save your ExCPT progress and track every question you miss",
+    trainingHeading: "Train by NHA test plan domain",
+    trainingSub: "Five sets covering every domain of the NHA ExCPT test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Technician Role & Pharmacy Law.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the ExCPT.",
+    ],
+    sourceLine: "Based on the NHA ExCPT test plan (2023 job analysis). Original questions; 50 per test, weighted like the real exam. Not affiliated with the National Healthcareer Association.",
+    analyticsKey: "excpt",
+  },
+};
+// IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
+// Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
+export const EXAMS: ExamConfig[] = [frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, r410a, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itcils, itceli, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ita2, itcilsb2];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

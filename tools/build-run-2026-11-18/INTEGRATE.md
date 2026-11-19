@@ -1,6 +1,6 @@
 # Integrator brief: apply the shared-file wiring, build run 2026-11-18 batch 1
 
-Work in `/Users/johnbrophy/tt-b1` (branch `claude/build-tests-2026-11-18-b1`). The banks, wrappers
+Work in `/Users/johnbrophy/tt-b1` (branch `claude/build-tests-2026-11-18-b2`). The banks, wrappers
 and landings of each test are already committed. Your job is every shared-file change listed in
 each test's `tools/build-run-2026-11-18/<id>/WIRING.md`, applied one test at a time, in the order
 given in your prompt. Do not touch `sgsecurity` (held out; its tools folder stays for later).

@@ -51,6 +51,7 @@ export const BANK_SIZES: Record<string, number> = {
   sc900: 201,
   cissp: 224,
   itil: 160,
+  istqb: 200,
   psm: 200,
   capm: 180,
   gcdl: 200,

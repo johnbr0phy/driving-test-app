@@ -1,0 +1,42 @@
+{
+  "id": "contractorlaw",
+  "blind_agreement": "200/200",
+  "options_only": {
+    "score": "125/200, 1 S hit, rewritten",
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "questionId": "CBL-RSK-006",
+      "severity": "low",
+      "issue": "Key 'Federal construction contracts' omits the Miller Act dollar threshold (40 U.S.C. 3131(b)); the explanation already says 'above a set amount'. Correct as the best answer; no other option is defensible.",
+      "source": "https://www.law.cornell.edu/uscode/text/40/3131",
+      "fix": "Optional: 'Federal construction contracts above a set amount'."
+    },
+    {
+      "questionId": "(bank-wide)",
+      "severity": "info",
+      "issue": "In every category the key letter rotates A, B, C, D strictly in question-ID order (all 200 items). Options are shuffled on screen, so students never see it; noted only because the raw JSON is fully predictable.",
+      "source": "lib/shuffleOptions.ts",
+      "fix": "None needed; optionally seed-shuffle key slots in build.py."
+    }
+  ],
+  "fact_checks": [
+    "All 80+ computed keys recomputed (concrete 14.8 cy, 241,920 bid, 1,456 OT wages, 4,200 interest, 11-day critical path, 4-day float, 800 board feet, 375 loose cy, 13 truckloads, 14 gallons, depreciation 8,000 and 60,000 book value, POC 125,000, break-even 600,000, etc.): all correct.",
+    "Tax items match IRS Pub 15 (2026): 6.2%/1.45%, 0.9% employee-only, FUTA 6.0%/0.6% net, $500 quarterly FUTA deposit by month-end after quarter, 941 due April 30, 22% supplemental, 24% backup on Form 945, 4-year records, $100,000 next-day rule, lookback period, EFT deposits, employer liable when payroll is outsourced.",
+    "Labor items match eCFR: 8 CFR 274a.2 (3 business days, at hire under 3 days, no receipts then), 29 CFR 516.5/516.6 (3 and 2 years), 570.33/570.67/570.68 (no construction sites under 16, roofing 18 with no parent exemption, trenches over 4 ft), 825 (50/75/12), 5.5 weekly payrolls, ADEA 20, ADA 15.",
+    "OSHA/EPA items match 1904.29/.33/.35/.39/.40, 1926.21, 1926.20, 1926.651(g), 1926.1053(b)(5), 1926.1153, 40 CFR 745, 122.26, 112.1.",
+    "No item states one state's law as general; lien and pay-if-paid items say state law varies."
+  ],
+  "landing_findings": [
+    {
+      "issue": "none: Georgia (50 questions, 70% = 35 correct, 120 minutes, OPEN BOOK with the Georgia-NASCLA Contractors Guide 3rd ed., calculator allowed, PSI bulletin updated 4/28/2025) and Hawaii (80 questions, 75%, 180 minutes, CLOSED BOOK, PSI bulletin 1/20/2026, Public Works Law removed 3/30/2026) confirmed in the PSI bulletins 972 and 10625 fetched 2026-11-18. examFacts block in WIRING.md matches. 'Free to start' wording used; no prices or fees asserted.",
+      "source": "https://test-takers.psiexams.com/api/content/bulletin/972"
+    }
+  ],
+  "recheck": {
+    "ids": 2,
+    "agreement": "2/2",
+    "findings": []
+  }
+}

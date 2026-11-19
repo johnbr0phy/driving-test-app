@@ -1,0 +1,12 @@
+{
+  "id": "natecore",
+  "blind_agreement": "200/200",
+  "options_only": null,
+  "findings": [
+    {"questionId": "NATE-CON-010", "severity": "weak", "issue": "Stem and key read together as 'the distance between: Open distance between supports' (doubled wording). Key is right.", "source": "", "fix": "Stem: 'A room's clear span is:' and key 'The open distance between supports'."},
+    {"questionId": "NATE-CON-004", "severity": "weak", "issue": "Distractor 'American Society of Heating Engineers' is an invented body, a near-name of ASHRAE; invented organisation names read as strawmen.", "source": "https://www.energystar.gov/products/residential_windows_doors_and_skylights/key_product_criteria", "fix": "Replace with a real body that does not rate windows, e.g. 'ASHRAE' or 'Underwriters Laboratories'."},
+    {"questionId": "(all)", "severity": "info", "issue": "correctAnswer rotates A, B, C, D strictly in ID order within every category. Harmless on screen because options are shuffled on every showing (lib/shuffleOptions.ts), but worth knowing if any surface shows the stored order.", "source": "", "fix": "None needed; optionally let build.py place keys by a stem seed."}
+  ],
+  "landing_findings": [],
+  "notes": "Every computed key recomputed (Ohm's law, series/parallel, transformer ratio, power factor 1,173 W, psia 134.7, duct area 0.78 sq ft, 55 F = 12.8 C, 1.08 x CFM x dT = 25,920 and 1,000 CFM, 4.5 x CFM x dh = 36,000, 5 kW = 17,060 Btu/h, 2,000 Btu, imbalance 2.6%, 187-253 V, 6.4 ohms, 31.5 uF out of 32.9-37.1, 2-10 V at 6 V = 50%, clamp 12/4 = 3 A, 40 VA / 24 V = 1.7 A, 152 mm = 6.0 in, 1/4 in scale 22 ft). OSHA/DOT figures match the cited CFR sections. Landing and examFacts checked against natex.org Traditional Pathway (50-question Core + 100-question Specialty, confirmed 2026-11-18) and Recertification FAQs (two years, 16 CEHs or Specialty retake, 120-day grace, confirmed). The Core KATE PDF downloaded but is a Canva PDF whose text could not be extracted locally, so the 50 questions / 1.5 h / closed book / weights were not re-read by this reviewer; they agree with the Traditional Pathway page where it overlaps."
+}

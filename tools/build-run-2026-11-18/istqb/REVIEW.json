@@ -1,0 +1,59 @@
+{
+  "id": "istqb",
+  "blind_agreement": "200/200",
+  "options_only": {
+    "score": "127/194, 4 S hits, all rewritten",
+    "verdict": "PASS"
+  },
+  "findings": [
+    {
+      "questionId": "(bank)",
+      "severity": "low",
+      "issue": "Key letters on the 194 single-answer items are A 61, D 51, B 43, C 39 (A 31%, C 20%). Options are shuffled on screen so this does not show to students, but the source key placement leans to A.",
+      "source": "data/v2/istqb/questions.json",
+      "fix": "Optional: rebalance key slots in build.py if the shuffle is ever turned off; no change needed for launch."
+    }
+  ],
+  "spot_checks_against_syllabus": [
+    "D-041 same person does confirmation testing: syllabus v4.0.1 1.2.x 'Preferably, confirmation testing is done by the same person who performed the initial test' - ok",
+    "T2-030 retrospective results normally part of the test completion report (2.1.6) - ok",
+    "D-048 risk likelihood greater than zero and less than one (5.2.1) - ok",
+    "T1-006 moderator: mediation, time management, safe review environment (3.2.3) - ok",
+    "D-116 spelling checkers and readability tools are static analysis tools (3.1) - ok",
+    "D-071 running out of time or budget as valid exit criteria with stakeholder risk acceptance (5.1.3) - ok",
+    "D-088 revert to a previous baseline to reproduce test results (5.4) - ok",
+    "All computed keys recomputed by hand: T1-007 PERT 11, T2-001 risk 10, T2-003 union 36/40 = 90%, T2-007 750x2/5 = 300, T2-013 Each Choice 3, T2-021 3-value BVA 7,8,9,19,20,21, T2-029 8-1 = 7, T2-037 3x3 = 9, D-007 SD 4, D-013 80%, D-014 3 tests, D-015 22, D-037 29 not an item, D-045 51, D-047 D adds 4, D-053 75%, D-069 16, D-117 3 sequences, T1-011 2, T1-021, T1-035 D,B,C,A, T1-037 1 sequence - all match"
+  ],
+  "landing_findings": [],
+  "landing_notes": "Landing and examFacts claims (40 one-point MC questions, 60 minutes, 75 in a non-native language, pass 26 of 40 / 65%, chapters 8/6/4/11/9/2, K3 8, syllabus v4.0.1) match sources.md and the syllabus. The ISTQB certificate page renders by JavaScript and could not be read by curl, so the format figures were checked against the syllabus and sources.md, not re-read on the page. No fees, validity or delivery claims are made. Options-only pass skipped per integrator instruction.",
+  "recheck": {
+    "ids": 4,
+    "agreement": "4/4",
+    "findings": [
+      {
+        "questionId": "ISTQB-D-030",
+        "severity": "ok",
+        "issue": "Key A matches syllabus 4.3 (white-box techniques in static testing, dry runs of code); the other three options are not white-box.",
+        "source": "ISTQB CTFL Syllabus v4.0.1, 4.3"
+      },
+      {
+        "questionId": "ISTQB-D-056",
+        "severity": "ok",
+        "issue": "Key C matches 5.2.2 ('In extreme cases, physical damage, injuries or even death'); the other three are listed as ordinary consequences.",
+        "source": "ISTQB CTFL Syllabus v4.0.1, 5.2.2"
+      },
+      {
+        "questionId": "ISTQB-D-063",
+        "severity": "ok",
+        "issue": "Key D matches 5.1.5 (execution order must take into account resource availability, e.g. tools available only for a specific time window). The new key wording is clear and is the only defensible option: A and C fix a position regardless of the window, and B ignores resources.",
+        "source": "ISTQB CTFL Syllabus v4.0.1, 5.1.5"
+      },
+      {
+        "questionId": "ISTQB-D-071",
+        "severity": "ok",
+        "issue": "Key A matches 5.1.3 (running out of time or budget is a valid exit criterion if stakeholders have reviewed and accepted the risk); B, C and D omit stakeholder risk acceptance.",
+        "source": "ISTQB CTFL Syllabus v4.0.1, 5.1.3"
+      }
+    ]
+  }
+}

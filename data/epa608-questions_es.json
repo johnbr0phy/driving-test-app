@@ -1853,7 +1853,7 @@
     "questionId": "EPA-T2-021",
     "category": "epaType2",
     "question": "Antes de una reparación mayor, un técnico recupera R-410A de un sistema split de 12 lb con un equipo de recuperación nuevo. ¿Qué nivel se requiere?",
-    "optionA": "0 psig",
+    "optionA": "Vacío de 0 pulgadas de Hg",
     "optionB": "Vacío de 4 pulgadas de Hg",
     "optionC": "Vacío de 10 pulgadas de Hg",
     "optionD": "Vacío de 29 pulgadas de Hg",

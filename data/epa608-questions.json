@@ -1853,7 +1853,7 @@
     "questionId": "EPA-T2-021",
     "category": "epaType2",
     "question": "Before a major repair, a technician recovers R-410A from a 12-lb split system using a new recovery machine. What level is required?",
-    "optionA": "0 psig",
+    "optionA": "0 inches Hg vacuum",
     "optionB": "4 inches Hg vacuum",
     "optionC": "10 inches Hg vacuum",
     "optionD": "29 inches Hg vacuum",

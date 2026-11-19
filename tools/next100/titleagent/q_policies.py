@@ -49,7 +49,7 @@ Q = [
 ("Real estate taxes that first become due after the Date of Policy are:",
  "Excluded from the owner's policy", ["Covered by Covered Risk 2.b.", "Paid by the issuing agent", "Covered for the first policy year"],
  "Exclusion 6 removes taxes and assessments that become due and payable after the Date of Policy. Covered Risk 2.b. covers taxes due or payable but unpaid at that date."),
-("A homeowner's policy pays a claim of $40,000 on a $300,000 policy. The remaining Amount of Insurance is:",
+("A 2021 ALTA owner's policy pays a claim of $40,000 on a $300,000 policy. The remaining Amount of Insurance is:",
  "$260,000", ["$300,000", "$340,000", "$240,000"],
  "Condition 10 of the 2021 ALTA policies says every payment except costs, attorneys' fees and expenses reduces the Amount of Insurance by the amount paid."),
 ("If the insurer sues to establish title and loses, the 2021 ALTA owner's policy increases the Amount of Insurance by:",

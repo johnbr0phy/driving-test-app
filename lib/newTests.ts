@@ -56,6 +56,36 @@ export function mostRecent<T extends { id: string; day: string }>(launches: T[],
   return [...launches].sort((a, b) => b.day.localeCompare(a.day) || a.id.localeCompare(b.id)).slice(0, limit);
 }
 
+/** When this test's pages were sent to IndexNow (Bing), from indexNow/sent (lib/indexNowSent.mjs). */
+export interface BingSent {
+  /** First and latest time any of its pages was sent. */
+  first: string;
+  last: string;
+  /** How many of its pages (landings, topic and state pages) have been sent. */
+  pages: number;
+  /** Whether its main landing page is among them. */
+  landing: boolean;
+}
+
+/** Fold the sent map (path -> first, last) into one test's record, or null if none of its pages was sent. */
+export function bingSentFor(
+  sent: Array<{ path: string; first: string; last: string }>,
+  pages: TestPages,
+  landingPath: string,
+): BingSent | null {
+  const landing = landingPath.toLowerCase().replace(/\/+$/, "");
+  let out: BingSent | null = null;
+  for (const s of sent) {
+    if (!onTestPages(s.path, pages)) continue;
+    if (!out) out = { first: s.first, last: s.last, pages: 0, landing: false };
+    if (s.first < out.first) out.first = s.first;
+    if (s.last > out.last) out.last = s.last;
+    out.pages += 1;
+    if (s.path === landing) out.landing = true;
+  }
+  return out;
+}
+
 export interface NewTestRow {
   id: string;
   name: string;
@@ -71,4 +101,6 @@ export interface NewTestRow {
   /** Premium purchases credited to this test since launch, and their net revenue. */
   sales: number;
   revenueUsdCents: number;
+  /** Sent to Bing through IndexNow; null if never (or before records began). */
+  bing: BingSent | null;
 }

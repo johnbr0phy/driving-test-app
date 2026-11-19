@@ -2,8 +2,10 @@ name: IndexNow after deploy
 
 # Tells Bing (and so ChatGPT search) about recently changed pages as soon as
 # a production deploy is live, instead of waiting for the nightly cron. Vercel
-# posts a deployment status to GitHub when a deploy finishes. No secrets: the
-# script reads the public sitemap and the public IndexNow key.
+# posts a deployment status to GitHub when a deploy finishes. The send needs no secrets: the
+# script reads the public sitemap and the public IndexNow key. The
+# FIREBASE_SERVICE_ACCOUNT_KEY secret is only used to record the run for the
+# /admin New tests tab.
 on:
   deployment_status:
   workflow_dispatch:
@@ -30,7 +32,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          sparse-checkout: scripts/indexnow-recent.mjs
+          sparse-checkout: |
+            scripts/indexnow-recent.mjs
+            lib/indexNowSent.mjs
           sparse-checkout-cone-mode: false
 
       - uses: actions/setup-node@v4
@@ -41,7 +45,14 @@ jobs:
       - if: github.event_name == 'deployment_status'
         run: sleep 45
 
+      # Only to record the run for /admin (lib/indexNowSent.mjs); the send
+      # itself needs nothing installed. Pinned to the app's version.
+      - name: Install firebase-admin
+        run: npm install --prefix "$RUNNER_TEMP/fa" --no-save --no-package-lock --no-audit --no-fund firebase-admin@13.10.0
+
       - name: Send recent pages to IndexNow
         env:
           INDEXNOW_DAYS: ${{ github.event.inputs.days || '2' }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          FIREBASE_ADMIN_DIR: ${{ runner.temp }}/fa
         run: node scripts/indexnow-recent.mjs

@@ -11,6 +11,10 @@
 //   node scripts/indexnow-recent.mjs --days 7
 //   node scripts/indexnow-recent.mjs --dry-run
 
+import { createRequire } from "node:module";
+import { join } from "node:path";
+import { lastRunFields, mergeSent, runRecord, RUNS_COLLECTION, SENT_COLLECTION, SENT_DOC } from "../lib/indexNowSent.mjs";
+
 const SITE = process.env.SITE_URL || "https://www.tigertest.io";
 const args = process.argv.slice(2);
 const daysArg = args.indexOf("--days");
@@ -66,7 +70,43 @@ const res = await fetch("https://api.indexnow.org/IndexNow", {
   }),
 });
 console.log(`IndexNow answered ${res.status}`);
+await record(list, res.status, res.ok);
 if (!res.ok) {
   console.log(await res.text());
   process.exit(1);
+}
+
+// Keeps the run for the /admin New tests tab (lib/indexNowSent.mjs). Needs
+// FIREBASE_SERVICE_ACCOUNT_KEY and firebase-admin installed in
+// FIREBASE_ADMIN_DIR (the workflow installs it); without them it is skipped,
+// and a failed write never fails the run, since the pages have gone to Bing.
+async function record(urls, status, ok) {
+  const key = process.env.FIREBASE_SERVICE_ACCOUNT_KEY;
+  const dir = process.env.FIREBASE_ADMIN_DIR;
+  if (!key || !dir) {
+    console.log("Not recorded: FIREBASE_SERVICE_ACCOUNT_KEY or FIREBASE_ADMIN_DIR not set");
+    return;
+  }
+  try {
+    const req = createRequire(join(dir, "noop.js"));
+    const { initializeApp, cert } = req("firebase-admin/app");
+    const { getFirestore } = req("firebase-admin/firestore");
+    const creds = JSON.parse(key);
+    const db = getFirestore(initializeApp({ credential: cert(creds), projectId: creds.project_id }));
+    const at = new Date().toISOString();
+    const sentRef = db.collection(SENT_COLLECTION).doc(SENT_DOC);
+    if (ok) {
+      await db.runTransaction(async (tx) => {
+        const snap = await tx.get(sentRef);
+        tx.set(sentRef, { urls: mergeSent(snap.get("urls") || {}, urls, at), updatedAt: at }, { merge: true });
+      });
+    }
+    const source = process.env.GITHUB_EVENT_NAME === "workflow_dispatch" ? "manual" : "deploy";
+    const run = runRecord({ source, urls, status, ok, at, days, sha: process.env.GITHUB_SHA || null });
+    await db.collection(RUNS_COLLECTION).add(run);
+    await sentRef.set(lastRunFields(source, run), { merge: true });
+    console.log(`Recorded ${urls.length} pages for /admin`);
+  } catch (e) {
+    console.log(`Not recorded: ${e instanceof Error ? e.message : e}`);
+  }
 }

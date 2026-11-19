@@ -5,18 +5,49 @@ import { getCatalogEntry } from "@/lib/testCatalog";
 import { landingFromKey } from "@/lib/funnelLanding";
 import { paymentNetUsdCents } from "@/lib/pricing";
 import launchDates from "@/lib/examLaunchDates.json";
-import { daysLive, mostRecent, onTestPages, sumSince, testPages, type NewTestRow, type TestPages } from "@/lib/newTests";
+import { bingSentFor, daysLive, mostRecent, onTestPages, sumSince, testPages, type NewTestRow, type TestPages } from "@/lib/newTests";
+import { pathFromSentKey, RUNS_COLLECTION, SENT_COLLECTION, SENT_DOC } from "@/lib/indexNowSent.mjs";
 
-// Data for the /admin New tests tab: the 100 most recently launched tests
+// Data for the /admin New tests tab: the 200 most recently launched tests
 // (lib/examLaunchDates.json), each with what it has done since launch: first
 // visits that landed on its pages (funnelLandings/{day}), signups whose first
 // visit landed there (signupOrigins), questions answered on it
 // (analytics/questions.byExam, keyed by family id) and Premium sales credited
-// to it (payments.exam). Internal accounts are dropped where we know the uid.
+// to it (payments.exam), and when its pages were sent to Bing through
+// IndexNow (indexNow/sent and indexNowRuns, lib/indexNowSent.mjs). Internal
+// accounts are dropped where we know the uid.
+
+/** One IndexNow submission, for the "Sent to Bing" card. */
+export interface IndexNowRunRow {
+  at: string;
+  /** deploy (after a production deploy), nightly (the cron), manual or full. */
+  source: string;
+  count: number;
+  status: number;
+  ok: boolean;
+  /** Tests from this tab whose main landing page was in the submission. */
+  tests: { id: string; name: string }[];
+}
 
 export interface NewTestsPayload {
   generatedAt: string;
   tests: NewTestRow[];
+  indexNow: {
+    /** Latest submissions, newest first. */
+    runs: IndexNowRunRow[];
+    /** Latest run of each sender, so a stopped one shows. */
+    lastDeploy: string | null;
+    lastNightly: string | null;
+    /** Earliest time any page was recorded as sent (records began then). */
+    since: string | null;
+  };
+}
+
+/** Main landing path of a test, the page Bing should know first. */
+function mainLanding(id: string): string {
+  const v1 = ALL_EXAMS.find((e) => e.id === id);
+  if (v1) return examLandingPath(v1);
+  return EXAMS_V2.find((e) => e.id === id)?.landingPath ?? "";
 }
 
 function pagesFor(id: string): TestPages | null {
@@ -47,12 +78,18 @@ export async function buildNewTestsAdmin(db: Firestore, internalUids: Set<string
   );
   const since = launched.reduce((min, t) => (t.day < min ? t.day : min), today);
 
-  const [landingSnap, originsSnap, paymentsSnap, questionsSnap] = await Promise.all([
+  const [landingSnap, originsSnap, paymentsSnap, questionsSnap, sentSnap, runsSnap] = await Promise.all([
     db.collection("funnelLandings").where(FieldPath.documentId(), ">=", since).get(),
     db.collection("signupOrigins").where("at", ">=", since).get(),
     db.collection("payments").where("createdAt", ">=", since).get(),
     db.collection("analytics").where(FieldPath.documentId(), "==", "questions").select("byExam").get(),
+    db.collection(SENT_COLLECTION).doc(SENT_DOC).get(),
+    db.collection(RUNS_COLLECTION).orderBy("at", "desc").limit(15).get(),
   ]);
+
+  const sent = Object.entries((sentSnap.get("urls") ?? {}) as Record<string, { first?: string; last?: string }>)
+    .filter(([, v]) => typeof v?.first === "string" && typeof v?.last === "string")
+    .map(([k, v]) => ({ path: pathFromSentKey(k), first: v.first as string, last: v.last as string }));
 
   // Which test each landing key belongs to, worked out once per key.
   const ownerCache = new Map<string, { id: string; day: string } | null>();
@@ -109,8 +146,33 @@ export async function buildNewTestsAdmin(db: Firestore, internalUids: Set<string
       answered: sumSince(byExam[id]?.daily, day),
       sales: sales.get(id) ?? 0,
       revenueUsdCents: revenue.get(id) ?? 0,
+      bing: bingSentFor(sent, pagesFor(id)!, mainLanding(id)),
     };
   });
 
-  return { generatedAt: now.toISOString(), tests };
+  const nameOf = new Map(tests.map((t) => [t.id, t.name]));
+  const landingOwner = new Map(
+    launched.map((l) => [mainLanding(l.id).toLowerCase().replace(/\/+$/, ""), l.id] as const).filter(([p]) => p),
+  );
+  const runs: IndexNowRunRow[] = runsSnap.docs.map((d) => {
+    const paths = (d.get("paths") ?? []) as string[];
+    const ids = [...new Set(paths.map((p) => landingOwner.get(p)).filter((x): x is string => !!x))];
+    return {
+      at: String(d.get("at") ?? ""),
+      source: String(d.get("source") ?? ""),
+      count: Number(d.get("count") ?? 0),
+      status: Number(d.get("status") ?? 0),
+      ok: d.get("ok") === true,
+      tests: ids.map((id) => ({ id, name: nameOf.get(id) ?? id })),
+    };
+  });
+  const lastRun = (sentSnap.get("lastRun") ?? {}) as Record<string, { at?: string }>;
+  const latest = (source: string) => lastRun[source]?.at ?? null;
+  const firstSent = sent.reduce<string | null>((m, s) => (!m || s.first < m ? s.first : m), null);
+
+  return {
+    generatedAt: now.toISOString(),
+    tests,
+    indexNow: { runs, lastDeploy: latest("deploy"), lastNightly: latest("nightly"), since: firstSent },
+  };
 }

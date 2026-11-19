@@ -20,7 +20,7 @@ Q = [
  "Di mattina", ["Di sera", "Il lunedì", "Dopo mezzanotte"],
  "L'annuncio chiede di portare il curriculum al ristorante la mattina. Il lavoro invece è la sera."),
 ("Leggi il cartello in farmacia: «Farmacia di turno. Questa farmacia oggi è chiusa. È aperta tutta la notte la Farmacia San Marco, in via Torino 25.» Che cosa si può fare stanotte?",
- "Andare in via Torino", ["Comprare in questa farmacia", "Aspettare fino a domani", "Chiamare il medico di base"],
+ "Andare in via Torino", ['Andare in via Roma', 'Andare in piazza San Marco', 'Comprare in questa farmacia'],
  "La farmacia è chiusa, ma la Farmacia San Marco in via Torino 25 è aperta tutta la notte."),
 ("Leggi il cartello in un cantiere: «Attenzione! Cantiere. Vietato l'ingresso alle persone non autorizzate. Obbligatori il casco e le scarpe di sicurezza.» Che cosa devono indossare gli operai?",
  "Casco e scarpe da lavoro", ["Casco e pass del cantiere", "Guanti e scarpe di gomma", "Occhiali e giubbotto"],

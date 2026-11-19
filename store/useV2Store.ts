@@ -35,6 +35,8 @@ interface V2State {
   /** base: the state to build on when the key has none yet (a carried-over drill). */
   answerDrill: (key: string, questionId: string, correct: boolean, base?: DrillState) => void;
   resetDrill: (key: string) => void;
+  /** Seed drills that have no state yet (v1 progress carried over); existing drills are left alone. */
+  seedDrills: (patch: Record<string, DrillState>) => void;
   completeBasics: (key: string, state: Omit<BasicsSkillState, "done" | "completedAt">) => void;
   /** Delete one exam's sessions, results, drills and goal. */
   resetExam: (examId: string) => void;
@@ -87,6 +89,11 @@ export const useV2Store = create<V2State>()(
         });
       },
       resetDrill: (key) => set((s) => ({ drills: { ...s.drills, [key]: EMPTY_DRILL } })),
+      seedDrills: (patch) =>
+        set((s) => {
+          const add = Object.fromEntries(Object.entries(patch).filter(([k]) => !s.drills[k]));
+          return Object.keys(add).length ? { drills: { ...s.drills, ...add } } : {};
+        }),
       completeBasics: (key, state) => {
         trackFunnelStep("answered");
         trackQuestionsAnswered(state.total, examOf(key));

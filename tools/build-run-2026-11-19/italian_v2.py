@@ -54,11 +54,23 @@ def difficulty(i, n):
 def build(exam_id):
     cfg = EXAMS[exam_id]
     src = os.path.join(HERE, exam_id)
-    out, seen = [], set()
+    out, seen, stimuli = [], set(), []
     for m, section, per in cfg["order"]:
         spec = importlib.util.spec_from_file_location(m, os.path.join(src, f"q_{m}.py"))
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
+        shared = {}
+        if hasattr(mod, "T"):
+            # Shared texts: (heading, title, text, [questions]); every question on a
+            # text points at one stimulus, shown once beside all of them.
+            rows = []
+            for n, (heading, title, text, qs) in enumerate(mod.T):
+                sid = f"{cfg['prefix']}{mod.SEG}-T{n + 1:02d}"
+                stimuli.append({"id": sid, "title": f"{heading}: {title}", "text": text})
+                for q in qs:
+                    shared[len(rows)] = sid
+                    rows.append(q)
+            mod.Q = rows
         assert len(mod.Q) == 4 * per, (m, len(mod.Q), per)
         for i, (q, key, wrong, expl) in enumerate(mod.Q):
             # A passage sits in its own box, so a quote inside it keeps « »;
@@ -74,7 +86,10 @@ def build(exam_id):
             seen.add(qid)
             item = {"id": qid, "section": section, "test": i // per + 1, "module": 1, "domain": mod.CAT,
                     "difficulty": min(3, difficulty(i % per, per)), "format": "single"}
-            if m in cfg["reading"]:
+            if i in shared:
+                item["stimulusId"] = shared[i]
+                item["stem"] = q
+            elif m in cfg["reading"]:
                 item["passage"], item["stem"] = split_reading(q)
             else:
                 item["stem"] = q
@@ -83,7 +98,7 @@ def build(exam_id):
     path = os.path.join(ROOT, "data", "v2", exam_id, "questions.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+        json.dump({"stimuli": stimuli, "questions": out} if stimuli else out, f, ensure_ascii=False, indent=2)
         f.write("\n")
     words = sorted(len(x["stem"].split()) for x in out)
     print(f"{exam_id}: {len(out)} items -> {path}; median stem {words[len(words) // 2]} words, max {words[-1]}")

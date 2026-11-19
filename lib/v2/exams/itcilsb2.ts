@@ -86,6 +86,7 @@ export const ITCILSB2: ExamV2Config = {
     { key: "periodo", name: "Periodo ipotetico e lessico", section: "strutture", domains: ["itb2Periodo", "itb2Lessico"], blurb: "Periodo ipotetico, discorso indiretto, connettivi, parole ed espressioni." },
     { key: "pronomi", name: "Pronomi e situazioni", section: "strutture", domains: ["itb2Pronomi", "itb2Situazioni"], blurb: "Pronomi e aggettivi, e la frase giusta per ogni situazione." },
   ],
+  fromV1: { drills: { lettura: [35301], verbi: [35302], periodo: [35303], pronomi: [35304] } },
   composite: { name: "Risposte giuste", min: 0, max: 100, combine: overall },
   defaultGoal: 65,
   goalChoices: [55, 65, 75, 85],

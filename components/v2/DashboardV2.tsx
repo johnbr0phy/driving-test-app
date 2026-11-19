@@ -28,6 +28,7 @@ import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useCommunityAvailable } from "@/hooks/useCommunityStats";
 import { hasDrillProgress, isDrillLocked, isTestLocked } from "@/lib/v2/premium";
 import { useV2Paywall, V2Paywall } from "./V2Paywall";
+import { V1ProgressCarryOver } from "./V1ProgressCarryOver";
 import { SuperAmazingCard } from "@/components/SuperAmazingCard";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { TeachNudge } from "@/components/TeachNudge";
@@ -187,6 +188,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
 
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
+      {exam.fromV1 && <V1ProgressCarryOver exam={exam} />}
       <div className="relative">
         <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
         <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">

@@ -12,6 +12,7 @@ import type { AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getStimulus } from "@/lib/v2/bank";
 import { isComplete, isCorrect } from "@/lib/v2/grading";
 import { QuestionView } from "./QuestionView";
+import { useV2Ui } from "@/lib/v2/ui";
 import type { StatsChip } from "@/components/stats/StatsParts";
 
 export function V2StatsRow({ examId, question, chip, subtitle, footer, onAnswer }: {
@@ -22,6 +23,7 @@ export function V2StatsRow({ examId, question, chip, subtitle, footer, onAnswer 
   footer?: ReactNode;
   onAnswer?: (correct: boolean) => void;
 }) {
+  const t = useV2Ui().results;
   const [expanded, setExpanded] = useState(false);
   const [answer, setAnswer] = useState<AnswerValue | undefined>(undefined);
   const [revealed, setRevealed] = useState(false);
@@ -86,7 +88,7 @@ export function V2StatsRow({ examId, question, chip, subtitle, footer, onAnswer 
               disabled={!isComplete(question, answer)}
               className="v2-tap mt-3 w-full rounded-xl bg-brand text-sm font-bold text-white disabled:opacity-40"
             >
-              Check
+              {t.check}
             </button>
           )}
           {revealed && (
@@ -98,7 +100,7 @@ export function V2StatsRow({ examId, question, chip, subtitle, footer, onAnswer 
               }}
               className="mt-2 text-xs font-semibold text-brand-dark hover:underline"
             >
-              Try it again
+              {t.tryAgain}
             </button>
           )}
         </div>

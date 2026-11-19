@@ -41,6 +41,9 @@ import { GatedStatsList, LockedPreview, STATS_FREE_ROWS, StatsPageShell, StatsTa
 import { V2StatsRow, plainStem } from "./V2StatsRow";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { regionOfTest } from "@/lib/region";
+import { useV2Language, useV2Ui, type V2UiStrings } from "@/lib/v2/ui";
+
+type ResultsUi = V2UiStrings["results"];
 
 /** Whether v2 stats sell Premium. Off: the whole plan and notebook are free. */
 const V2_STATS_PAYWALL = false;
@@ -59,6 +62,9 @@ export function StatsV2({ exam }: { exam: ExamV2Config }) {
 
 function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const price = usePremiumPrice();
+  const ui = useV2Ui();
+  const t = ui.results;
+  const lang = useV2Language();
   const routes = v2Routes(exam);
   const router = useRouter();
   const hydrated = useHydration();
@@ -110,7 +116,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const pct = exam.composite.max === 100;
   const fmt = (n: number) => (pct ? `${n}%` : `${n}`);
   // Gains are estimates too, so they never read as a promise.
-  const pts = (n: number) => (pct ? `about +${n}%` : `about +${n} pts`);
+  const pts = (n: number) => t.gainAbout(n, pct);
   // "Not affiliated with ACT, Inc." from the exam's own footer line.
   const affiliation = exam.copy.sourceLine.match(/not affiliated[^.]*\./i)?.[0];
   const notAffiliated = affiliation ? affiliation[0].toUpperCase() + affiliation.slice(1) : "";
@@ -125,29 +131,23 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const lastTest = history[0];
 
   return (
-    <StatsPageShell backHref={routes.dashboard} backLabel="Back">
+    <StatsPageShell backHref={routes.dashboard} backLabel={ui.common.back}>
       <PaywallModal
         open={upgrade.paywallOpen}
         onOpenChange={upgrade.onOpenChange}
         feature="full_stats"
         onUpgrade={upgrade.handleUpgrade}
-        benefits={[
-          `Your full ${exam.shortName} study plan, every topic ranked by the points it's worth`,
-          "The exact skills you keep missing in each topic",
-          "Every mistake saved, to retry until it sticks",
-          "Full stats on every Tigertest exam",
-          "One payment, yours forever",
-        ]}
+        benefits={t.paywallBenefits(exam.shortName)}
         isGuest={isGuest}
         onSignUp={() => router.push(`/signup?redirect=${encodeURIComponent(routes.stats)}`)}
         // A scaled-score exam (SAT, ACT, GRE) has no pass or retest to sell
         // against; "2,000+ passed" is a DMV number, so it stays off here.
-        headline={pct ? undefined : ["Study smart.", "Score higher."]}
+        headline={pct ? undefined : t.paywallHeadline}
         badge={pct ? undefined : null}
         hideSocialProof
       />
 
-      {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel="Your Stats" communityLabel="Common Mistakes" />}
+      {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />}
 
       {showCommunity ? (
         <CommunityList
@@ -164,25 +164,25 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
           <div className="mx-auto mb-3 w-10 h-10 rounded-full bg-brand-light flex items-center justify-center">
             <Target className="h-5 w-5 text-brand-dark" />
           </div>
-          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">Estimate your {exam.shortName} score</h1>
+          <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{t.estimateYourScore(exam.shortName)}</h1>
           <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">
-            Answer {estimate.sections.length > 1 ? `${MIN_SECTION_ANSWERS} questions in each section` : `${MIN_SECTION_ANSWERS} questions`} and we&apos;ll estimate your score and show you where your next points are.
+            {t.answerToEstimate(MIN_SECTION_ANSWERS, estimate.sections.length > 1)}
           </p>
           <Link href={routes.dashboard} className="v2-tap mt-4 inline-flex items-center justify-center rounded-xl bg-brand px-5 text-sm font-bold text-white">
-            Start a drill
+            {t.startADrill}
           </Link>
         </div>
       ) : (
         <>
           {/* 1. Score today */}
           <section className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-5 mb-6 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Estimated {exam.shortName} score</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{t.estimatedScore(exam.shortName)}</p>
             {estimate.composite !== null ? (
               <>
                 <div className="mt-1 flex items-baseline gap-3">
                   <span className="text-5xl font-black tabular-nums text-gray-900 dark:text-gray-50">{fmt(estimate.composite)}</span>
                   <span className={`text-sm font-semibold ${estimate.composite >= goal ? "text-green-600 dark:text-green-400" : "text-gray-600 dark:text-gray-300"}`}>
-                    {estimate.composite >= goal ? `At your goal of ${fmt(goal)}` : `Goal ${fmt(goal)} · ${pct ? `${goal - estimate.composite} points` : goal - estimate.composite} to go`}
+                    {estimate.composite >= goal ? t.atYourGoalOf(fmt(goal)) : t.goalToGo(fmt(goal), goal - estimate.composite, pct)}
                   </span>
                 </div>
                 <ScoreBar min={exam.composite.min} max={exam.composite.max} value={estimate.composite} goal={goal} />
@@ -190,7 +190,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
             ) : (
               <>
                 <div className="mt-1 text-5xl font-black text-gray-300 dark:text-gray-700">–</div>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">{neededLine(estimate.sections)}</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">{neededLine(estimate.sections, t)}</p>
               </>
             )}
             {estimate.sections.length > 1 && (
@@ -199,7 +199,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                   <div key={s.section.key} className="rounded-xl bg-gray-50 dark:bg-gray-800 px-3 py-2">
                     <div className="text-[11px] text-gray-500 dark:text-gray-400 truncate">{s.section.shortName}</div>
                     {s.scaled === null && s.needed > 0 ? (
-                      <div className="text-sm font-semibold leading-7 text-gray-500 dark:text-gray-400">{s.needed} to go</div>
+                      <div className="text-sm font-semibold leading-7 text-gray-500 dark:text-gray-400">{t.sectionToGo(s.needed)}</div>
                     ) : (
                       <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-gray-50">
                         {s.scaled === null ? "–" : s.section.scale.max === 100 ? `${s.scaled}%` : s.scaled}
@@ -210,36 +210,36 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
               </div>
             )}
             <p className="mt-3 text-[11px] leading-snug text-gray-500 dark:text-gray-400">
-              An estimate from the {estimate.answered} practice question{estimate.answered === 1 ? "" : "s"} you&apos;ve answered (first try), not an official score.
+              {t.estimateFrom(estimate.answered)}
               {notAffiliated && <> {notAffiliated}</>}
-              {lastTest && <> Your last practice test: <span className="font-semibold">{fmt(lastTest.composite)}</span>.</>}
+              {lastTest && <> {t.lastPracticeTest} <span className="font-semibold">{fmt(lastTest.composite)}</span>.</>}
             </p>
           </section>
 
           {/* 2. Your fastest points */}
           <div className="flex items-baseline justify-between mb-2">
-            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Your fastest points</h2>
-            <span className="text-[11px] text-gray-500 dark:text-gray-400">estimated, if you get each topic to {Math.round(TARGET_ACCURACY * 100)}%</span>
+            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">{t.fastestPoints}</h2>
+            <span className="text-[11px] text-gray-500 dark:text-gray-400">{t.ifEachTopic(Math.round(TARGET_ACCURACY * 100))}</span>
           </div>
           {plan.length === 0 ? (
-            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">Answer a few more questions and your plan shows up here.</p>
+            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">{t.noPlanYet}</p>
           ) : (
             <div className="space-y-2 mb-6">
               {premiumReady ? (
                 <>
-                  {freePlan.map((t, i) => (
-                    <TopicCard key={t.drill.key} rank={i + 1} topic={t} pts={pts} href={routes.drill(t.drill.key)} open={i === 0} />
+                  {freePlan.map((tp, i) => (
+                    <TopicCard key={tp.drill.key} rank={i + 1} topic={tp} pts={pts} href={routes.drill(tp.drill.key)} open={i === 0} t={t} />
                   ))}
                   {lockedPlan.length > 0 && (
                     <LockedPreview
-                      rows={lockedPlan.slice(0, 4).map((t) => ({
-                        key: t.drill.key,
-                        chip: { value: "+??", label: pct ? "points" : "pts", color: "text-brand-dark" },
-                        text: t.drill.name,
+                      rows={lockedPlan.slice(0, 4).map((tp) => ({
+                        key: tp.drill.key,
+                        chip: { value: "+??", label: t.pointsLabel(pct), color: "text-brand-dark" },
+                        text: tp.drill.name,
                       }))}
-                      title={lockedGain > 0 ? `${lockedPlan.length} more topics worth an estimated ${pct ? `+${lockedGain}%` : `+${lockedGain}\u00a0pts`}` : `${lockedPlan.length} more topics in your plan`}
-                      subtitle="See every topic ranked by the points it's worth, and the exact skills you miss"
-                      cta={`Unlock your full plan · ${price}`}
+                      title={lockedGain > 0 ? t.moreTopicsWorth(lockedPlan.length, lockedGain, pct) : t.moreTopics(lockedPlan.length)}
+                      subtitle={t.planLockSubtitle}
+                      cta={t.unlockPlan(price)}
                       onUnlock={() => openPaywall("stats_plan", "Study Plan")}
                     />
                   )}
@@ -251,11 +251,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
           )}
 
           {/* 3. Practice tests */}
-          <h2 className="text-base font-bold text-gray-900 dark:text-gray-50 mb-2">Practice tests</h2>
+          <h2 className="text-base font-bold text-gray-900 dark:text-gray-50 mb-2">{t.practiceTests}</h2>
           {history.length === 0 ? (
             <Link href={routes.dashboard} className="mb-6 flex items-center gap-3 rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800">
               <TrendingUp className="h-4 w-4 text-brand-dark shrink-0" />
-              <span className="flex-1 text-sm text-gray-700 dark:text-gray-200">Take a full practice test for a real timed score.</span>
+              <span className="flex-1 text-sm text-gray-700 dark:text-gray-200">{t.takeFullTest}</span>
               <ChevronRight className="h-4 w-4 text-gray-300" />
             </Link>
           ) : (
@@ -264,10 +264,10 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                 <Link key={`${r.key}:${r.completedAt}`} href={routes.results(r.testNumber)} className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 dark:hover:bg-gray-800">
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-semibold text-gray-900 dark:text-gray-50">
-                      {exam.tests.find((t) => t.number === r.testNumber)?.name ?? `Practice Test ${r.testNumber}`}
+                      {exam.tests.find((x) => x.number === r.testNumber)?.name ?? t.practiceTestN(r.testNumber)}
                     </div>
                     <div className="text-[11px] text-gray-500 dark:text-gray-400">
-                      {new Date(r.completedAt).toLocaleDateString(regionOfTest(exam.id) === "UK" ? "en-GB" : undefined, { month: "short", day: "numeric", year: "numeric" })}
+                      {new Date(r.completedAt).toLocaleDateString(lang !== "en" ? lang : regionOfTest(exam.id) === "UK" ? "en-GB" : undefined, { month: "short", day: "numeric", year: "numeric" })}
                       {exam.sections.length > 1 && ` · ${r.sections.map((s) => `${getSectionV2(exam, s.section).shortName} ${s.scaled}`).join(" · ")}`}
                     </div>
                   </div>
@@ -280,14 +280,14 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
 
           {/* 4. Mistake notebook */}
           <div className="flex items-baseline justify-between mb-1">
-            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">Mistake notebook</h2>
-            {mistakes.length > 0 && <span className="text-[11px] text-gray-500 dark:text-gray-400">{mistakes.length} question{mistakes.length === 1 ? "" : "s"}</span>}
+            <h2 className="text-base font-bold text-gray-900 dark:text-gray-50">{t.mistakeNotebook}</h2>
+            {mistakes.length > 0 && <span className="text-[11px] text-gray-500 dark:text-gray-400">{t.questionCount(mistakes.length)}</span>}
           </div>
           {mistakes.length === 0 ? (
-            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">Nothing yet. Every question you miss lands here so you can retry it.</p>
+            <p className="mb-6 text-sm text-gray-500 dark:text-gray-400">{t.noMistakesYet}</p>
           ) : (
             <>
-              <p className="mb-3 text-xs text-gray-500 dark:text-gray-400">Every question you&apos;ve missed. Tap one to try it again.</p>
+              <p className="mb-3 text-xs text-gray-500 dark:text-gray-400">{t.mistakesIntro}</p>
               <div className="space-y-2 mb-6">
                 {premiumReady &&
                   (unlocked ? mistakes : mistakes.slice(0, FREE_MISTAKES)).map((m) => (
@@ -295,11 +295,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                       key={m.question.id}
                       examId={exam.id}
                       question={m.question}
-                      chip={{ value: `${m.wrong}`, label: m.wrong === 1 ? "miss" : "misses", color: m.mastered ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400" }}
+                      chip={{ value: `${m.wrong}`, label: t.missLabel(m.wrong), color: m.mastered ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400" }}
                       subtitle={
                         <>
                           {subtitle(m.question)}
-                          {m.mastered && <span className="text-green-600 dark:text-green-400"> · mastered since</span>}
+                          {m.mastered && <span className="text-green-600 dark:text-green-400">{t.masteredSince}</span>}
                         </>
                       }
                       onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_${exam.id}`)}
@@ -309,12 +309,12 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                   <LockedPreview
                     rows={mistakes.slice(FREE_MISTAKES, FREE_MISTAKES + 4).map((m) => ({
                       key: m.question.id,
-                      chip: { value: `${m.wrong}`, label: m.wrong === 1 ? "miss" : "misses", color: "text-red-600 dark:text-red-400" },
+                      chip: { value: `${m.wrong}`, label: t.missLabel(m.wrong), color: "text-red-600 dark:text-red-400" },
                       text: plainStem(m.question),
                     }))}
-                    title={`${mistakes.length - FREE_MISTAKES} more mistakes saved`}
-                    subtitle="Retry every question you've missed until it sticks"
-                    cta={`Unlock Premium for ${price}`}
+                    title={t.moreMistakes(mistakes.length - FREE_MISTAKES)}
+                    subtitle={t.mistakesLockSubtitle}
+                    cta={t.unlockPremiumFor(price)}
                     onUnlock={() => openPaywall("stats_mistakes", "Mistake Notebook")}
                   />
                 )}
@@ -332,8 +332,8 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
                 <Users className="h-4 w-4 text-brand-dark" />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="font-semibold text-sm text-gray-900 dark:text-gray-50">Common Mistakes</div>
-                <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">The {exam.shortName} questions most students get wrong</div>
+                <div className="font-semibold text-sm text-gray-900 dark:text-gray-50">{t.commonMistakes}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{t.commonMistakesCard(exam.shortName)}</div>
               </div>
               <ChevronRight className="h-5 w-5 text-gray-300 flex-shrink-0" />
             </button>
@@ -347,12 +347,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
 
 /** What is left before the estimate shows. Past two sections a list of every
  *  one runs on, so it says the rule and the tiles below carry the counts. */
-function neededLine(sections: SectionEstimate[]): string {
-  const q = (n: number) => `question${n === 1 ? "" : "s"}`;
-  if (sections.length === 1) return `${sections[0].needed} more ${q(sections[0].needed)} to see your score.`;
+function neededLine(sections: SectionEstimate[], t: ResultsUi): string {
+  if (sections.length === 1) return t.neededOne(sections[0].needed);
   const short = sections.filter((s) => s.needed > 0);
-  if (short.length <= 2) return `${short.map((s) => `${s.needed} more ${s.section.shortName} ${q(s.needed)}`).join(" and ")} to see your score.`;
-  return `Answer ${MIN_SECTION_ANSWERS} questions in each section to see your score.`;
+  if (short.length <= 2) return t.neededSections(short.map((s) => ({ needed: s.needed, sectionShortName: s.section.shortName })));
+  return t.neededEach(MIN_SECTION_ANSWERS);
 }
 
 function ScoreBar({ min, max, value, goal }: { min: number; max: number; value: number; goal: number }) {
@@ -371,7 +370,7 @@ function ScoreBar({ min, max, value, goal }: { min: number; max: number; value: 
   );
 }
 
-function TopicCard({ rank, topic, pts, href, open }: { rank: number; topic: TopicEstimate; pts: (n: number) => string; href: string; open: boolean }) {
+function TopicCard({ rank, topic, pts, href, open, t }: { rank: number; topic: TopicEstimate; pts: (n: number) => string; href: string; open: boolean; t: ResultsUi }) {
   const [expanded, setExpanded] = useState(open);
   const acc = topic.accuracy === null ? null : Math.round(topic.accuracy * 100);
   const missedSkills = topic.skills.filter((s) => s.missed > 0).slice(0, 3);
@@ -382,7 +381,7 @@ function TopicCard({ rank, topic, pts, href, open }: { rank: number; topic: Topi
         <span className="flex-1 min-w-0">
           <span className="block text-sm font-semibold text-gray-900 dark:text-gray-50 truncate">{topic.drill.name}</span>
           <span className="block text-[11px] text-gray-500 dark:text-gray-400">
-            {acc === null ? "Not tried yet" : `${acc}% right first try · ${topic.answered} answered`}
+            {acc === null ? t.notTriedYet : t.topicAccuracy(acc, topic.answered)}
           </span>
         </span>
         {topic.gain > 0 && (
@@ -401,13 +400,13 @@ function TopicCard({ rank, topic, pts, href, open }: { rank: number; topic: Topi
               {missedSkills.map((s) => (
                 <li key={s.skill} className="flex items-baseline justify-between gap-3 text-xs">
                   <span className="text-gray-700 dark:text-gray-200 truncate">{s.skill}</span>
-                  <span className="shrink-0 tabular-nums text-red-600 dark:text-red-400">missed {s.missed} of {s.answered}</span>
+                  <span className="shrink-0 tabular-nums text-red-600 dark:text-red-400">{t.missedOf(s.missed, s.answered)}</span>
                 </li>
               ))}
             </ul>
           )}
           <Link href={href} className="v2-tap inline-flex w-full items-center justify-center rounded-xl bg-brand text-sm font-bold text-white">
-            Practice {topic.drill.name}
+            {t.practiceDrill(topic.drill.name)}
           </Link>
         </div>
       )}
@@ -424,6 +423,7 @@ function CommunityList({ exam, loading, rows, totalUsers, unlocked, subtitle, on
   subtitle: (q: QuestionV2) => string;
   onUnlock: () => void;
 }) {
+  const t = useV2Ui().results;
   if (loading) {
     return (
       <div className="space-y-3">
@@ -431,16 +431,16 @@ function CommunityList({ exam, loading, rows, totalUsers, unlocked, subtitle, on
       </div>
     );
   }
-  if (rows.length === 0) return <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-8">Not enough data yet. Check back soon.</p>;
-  const chip = (r: { errorRate: number }) => ({ value: `${r.errorRate}%`, label: "get this wrong", color: "text-red-500 dark:text-red-400" });
+  if (rows.length === 0) return <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-8">{t.notEnoughData}</p>;
+  const chip = (r: { errorRate: number }) => ({ value: `${r.errorRate}%`, label: t.getThisWrong, color: "text-red-500 dark:text-red-400" });
   return (
     <div className="space-y-4">
       <p className="text-sm text-gray-500 dark:text-gray-400">
-        The {exam.shortName} questions students miss most
+        {t.communityIntro(exam.shortName)}
         {showsTestTakerCount(totalUsers) && (
           <>
-            , based on answers from{" "}
-            <span className="font-medium text-gray-700 dark:text-gray-200">{totalUsers.toLocaleString()} real test takers</span>
+            {t.basedOnAnswersFrom}{" "}
+            <span className="font-medium text-gray-700 dark:text-gray-200">{t.realTestTakers(totalUsers.toLocaleString())}</span>
           </>
         )}
       </p>
@@ -454,14 +454,14 @@ function CommunityList({ exam, loading, rows, totalUsers, unlocked, subtitle, on
             question={r.question}
             chip={chip(r)}
             subtitle={subtitle(r.question)}
-            footer={<p className="text-xs text-gray-500 dark:text-gray-400">{r.wrong} out of {r.total} people got this wrong</p>}
+            footer={<p className="text-xs text-gray-500 dark:text-gray-400">{t.peopleGotWrong(r.wrong, r.total)}</p>}
             onAnswer={(ok) => trackDailyQuizAnswer(ok, `stats_community_${exam.id}`)}
           />
         )}
         previewOf={(r) => ({ chip: chip(r), text: plainStem(r.question) })}
-        lockTitle={`${rows.length - STATS_FREE_ROWS} more questions locked`}
-        lockSubtitle="Upgrade to see the full list"
-        lockCta="Unlock with Premium"
+        lockTitle={t.moreLocked(rows.length - STATS_FREE_ROWS)}
+        lockSubtitle={t.upgradeFullList}
+        lockCta={t.unlockWithPremium}
         onUnlock={onUnlock}
       />
     </div>

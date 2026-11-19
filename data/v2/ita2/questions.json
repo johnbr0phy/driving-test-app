@@ -1,0 +1,4082 @@
+[
+  {
+    "id": "ITA2-COR-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio della scuola*\n\nGentili genitori, martedì 14 la scuola resta chiusa per le elezioni. Le lezioni ricominciano mercoledì 15 alle ore 8. Il servizio mensa riprende lo stesso giorno. Per informazioni potete telefonare alla segreteria dal lunedì al venerdì, dalle 9 alle 12. La Dirigente.",
+    "stem": "Quando tornano a scuola i bambini?",
+    "options": [
+      "Mercoledì alle 8",
+      "Martedì alle 8",
+      "Lunedì alle 9",
+      "Mercoledì alle 12"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il messaggio dice che le lezioni ricominciano mercoledì 15 alle ore 8. Martedì la scuola è chiusa per le elezioni."
+  },
+  {
+    "id": "ITA2-COR-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio di Giulia*\n\nCiao Amina! Sabato sera faccio una piccola festa a casa mia per il mio compleanno. Vengono anche Marco e Ana. Comincia alle 20. Non portare regali, per favore! Se vuoi, porta solo qualcosa da bere. Mi rispondi entro giovedì? Un abbraccio, Giulia.",
+    "stem": "Che cosa chiede Giulia ad Amina?",
+    "options": [
+      "Di portare dei regali",
+      "Di portare da bere",
+      "Di rispondere entro sabato",
+      "Di arrivare alle 18"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Giulia scrive di non portare regali e di portare, se vuole, qualcosa da bere."
+  },
+  {
+    "id": "ITA2-COR-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail del proprietario di casa*\n\nBuongiorno signor Kofi, la informo che giovedì mattina viene l'idraulico per controllare il bagno. Arriva verso le 10 e resta circa un'ora. Se lei lavora, può lasciare le chiavi alla portinaia, la signora Bruna. Mi scusi per il disturbo. Cordiali saluti, Paolo Ferri.",
+    "stem": "Perché viene l'idraulico?",
+    "options": [
+      "Per cambiare la serratura",
+      "Per lasciare le chiavi",
+      "Per controllare il bagno",
+      "Per riparare la caldaia"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il proprietario scrive che l'idraulico viene per controllare il bagno. Le chiavi, se serve, si lasciano alla portinaia."
+  },
+  {
+    "id": "ITA2-COR-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il messaggio del capo*\n\nOlena, domani c'è molto lavoro al ristorante perché abbiamo un pranzo di 40 persone. Puoi venire alle 9 invece che alle 11? Ti pago le due ore in più. Se non puoi, avvisami stasera così chiamo Yusuf. Grazie, Sandro.",
+    "stem": "Che cosa chiede Sandro a Olena?",
+    "options": [
+      "Di lavorare la sera",
+      "Di chiamare Yusuf",
+      "Di restare fino alle 11",
+      "Di arrivare prima"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sandro chiede a Olena di venire alle 9 invece che alle 11, cioè due ore prima del solito."
+  },
+  {
+    "id": "ITA2-COR-005",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi la lettera del Comune*\n\nGentile signora Li Wei, la sua carta d'identità è pronta. Può ritirarla allo sportello dell'Anagrafe, in via Roma 12, dal lunedì al venerdì, dalle 8:30 alle 12:30. Deve portare questa lettera e la ricevuta del pagamento. Comune di Valdora, Ufficio Anagrafe.",
+    "stem": "Che cosa deve portare Li Wei allo sportello?",
+    "options": [
+      "La lettera e la ricevuta",
+      "La carta d'identità vecchia",
+      "Il passaporto e la lettera",
+      "Il permesso di soggiorno"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il Comune scrive di portare questa lettera e la ricevuta del pagamento per ritirare la carta d'identità."
+  },
+  {
+    "id": "ITA2-COR-006",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio dello studio medico*\n\nGentile paziente, il dottor Russo è in ferie dal 5 al 19 agosto. In questo periodo lo sostituisce la dottoressa Monti, in via Garibaldi 3, dalle 15 alle 18. Per le ricette può telefonare la mattina allo 0123 45678. Lo studio di via Verdi riapre il 20 agosto.",
+    "stem": "Dove riceve la dottoressa Monti?",
+    "options": [
+      "In via Verdi",
+      "In via Garibaldi",
+      "All'ospedale",
+      "In via Roma"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La dottoressa Monti sostituisce il dottor Russo in via Garibaldi 3. Lo studio di via Verdi è chiuso fino al 20 agosto."
+  },
+  {
+    "id": "ITA2-COR-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio di Marco alla moglie*\n\nAmore, ho perso il treno delle 18 per pochi minuti. Prendo quello delle 18:40, quindi arrivo a casa verso le 20. Puoi andare tu a prendere Luca all'allenamento? Finisce alle 19. Il pane l'ho già comprato. Baci.",
+    "stem": "Perché Marco arriva tardi?",
+    "options": [
+      "Ha lavorato di più",
+      "È andato a prendere Luca",
+      "Ha perso il treno",
+      "Ha comprato il pane"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Marco scrive che ha perso il treno delle 18 e prende quello successivo, quindi arriva più tardi."
+  },
+  {
+    "id": "ITA2-COR-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail dell'agenzia*\n\nGentile signor Yusuf, la ringraziamo per il colloquio di ieri. Siamo felici di offrirle il posto di magazziniere. Il contratto è di sei mesi, a tempo pieno. Può venire in ufficio lunedì alle 9 per firmare? Porti il documento d'identità e il codice fiscale. Cordiali saluti, Agenzia Lavoro Più.",
+    "stem": "Perché Yusuf deve andare in ufficio lunedì?",
+    "options": [
+      "Per un colloquio da magazziniere",
+      "Per iniziare a lavorare",
+      "Per ritirare la busta paga",
+      "Per firmare il contratto"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'agenzia gli offre il posto e gli chiede di venire lunedì alle 9 per firmare. Il colloquio c'è già stato ieri."
+  },
+  {
+    "id": "ITA2-COR-009",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il messaggio della vicina*\n\nSignora Ana, buongiorno. Questa mattina il postino ha lasciato da me un pacco per lei, perché lei non era in casa. Io sono a casa fino alle 13, poi vado da mia figlia e torno stasera dopo le 19. Passi quando vuole. Rosa, secondo piano.",
+    "stem": "Quando può ritirare il pacco Ana?",
+    "options": [
+      "Entro le 13 o dopo le 19",
+      "Dopo le 13 o domani mattina",
+      "Fino alle 19 di stasera",
+      "Tra le 13 e le 19"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rosa è a casa fino alle 13 e torna dopo le 19: in quegli orari Ana può passare a prendere il pacco."
+  },
+  {
+    "id": "ITA2-COR-010",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi la lettera della Questura*\n\nGentile signor Kofi Mensah, il suo permesso di soggiorno è pronto. Deve presentarsi all'Ufficio Immigrazione il giorno 3 marzo alle ore 10:15. Porti il passaporto, la ricevuta della Posta e questa lettera. Se non può venire quel giorno, telefoni al numero indicato per cambiare l'appuntamento.",
+    "stem": "Che cosa deve fare Kofi se il 3 marzo non può andare?",
+    "options": [
+      "Scrivere per un'altra data",
+      "Telefonare per un'altra data",
+      "Andare all'Ufficio un altro giorno",
+      "Chiedere alla Posta un'altra data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La lettera dice di telefonare al numero indicato per cambiare l'appuntamento."
+  },
+  {
+    "id": "ITA2-COR-011",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio della maestra*\n\nCari genitori, venerdì i bambini fanno una gita al museo di scienze. Partiamo alle 8:30 con il pullman e torniamo alle 13. Ogni bambino deve portare il pranzo al sacco e un'autorizzazione firmata. Il costo è di 6 euro, da dare alla maestra entro mercoledì. Maestra Lucia.",
+    "stem": "Entro quando bisogna dare i 6 euro?",
+    "options": [
+      "Entro venerdì",
+      "Il giorno della gita",
+      "Entro mercoledì",
+      "Entro lunedì prossimo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La maestra scrive di dare i 6 euro entro mercoledì. La gita invece è venerdì."
+  },
+  {
+    "id": "ITA2-COR-012",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio di un amico*\n\nCiao Kofi, domenica andiamo al lago con la macchina di Davide. C'è un posto libero, vuoi venire? Partiamo alle 9 da piazza Garibaldi. Porta il costume e un asciugamano, il pranzo lo facciamo al ristorante. Torniamo nel pomeriggio. Fammi sapere! Stefano.",
+    "stem": "Dove si incontrano gli amici domenica?",
+    "options": [
+      "Al lago",
+      "A casa di Davide",
+      "Al ristorante del lago",
+      "In piazza Garibaldi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stefano scrive che partono alle 9 da piazza Garibaldi. Il lago è la meta e il ristorante è per il pranzo."
+  },
+  {
+    "id": "ITA2-COR-013",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail della ditta*\n\nGentile signora Olena, le ricordiamo che dal 1° luglio cambia il suo orario di lavoro. Lavorerà dal lunedì al venerdì, dalle 7 alle 13, invece che dalle 14 alle 20. Il sabato resta libero. Per domande può parlare con il responsabile, il signor Bianchi. Ufficio Personale.",
+    "stem": "Che cosa cambia per Olena dal 1° luglio?",
+    "options": [
+      "Lavora la mattina",
+      "Lavora anche il sabato",
+      "Lavora meno giorni",
+      "Cambia responsabile"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'orario passa dalle 14-20 alle 7-13: Olena lavorerà la mattina. Il sabato resta libero."
+  },
+  {
+    "id": "ITA2-COR-014",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso dell'amministratore*\n\nGentili condomini, mercoledì 10 dalle 8 alle 12 l'acqua viene chiusa in tutto il palazzo per lavori ai tubi. Vi consigliamo di prendere un po' d'acqua prima. Ci scusiamo per il disagio. L'Amministratore, Studio Galli.",
+    "stem": "Che cosa consiglia l'amministratore?",
+    "options": [
+      "Chiudere l'acqua di casa prima",
+      "Tenere un po' d'acqua",
+      "Usare l'acqua solo la sera",
+      "Avvisare lo Studio Galli prima"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'amministratore consiglia di prendere un po' d'acqua prima, perché dalle 8 alle 12 l'acqua è chiusa."
+  },
+  {
+    "id": "ITA2-COR-015",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il messaggio della farmacia*\n\nGentile cliente, il medicinale che ha ordinato è arrivato. Può ritirarlo in farmacia da oggi. Si ricordi di portare la ricetta del medico. Siamo aperti dalle 8:30 alle 19:30, anche il sabato. Farmacia Centrale.",
+    "stem": "Perché la farmacia scrive al cliente?",
+    "options": [
+      "La ricetta del medico è scaduta",
+      "Cambia l'orario di apertura",
+      "Il medicinale è arrivato",
+      "Il medicinale non c'è più"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La farmacia avvisa che il medicinale ordinato è arrivato e si può ritirare portando la ricetta."
+  },
+  {
+    "id": "ITA2-COR-016",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la mail di Amina alla scuola*\n\nGentile maestra, le scrivo perché mio figlio Samir domani non viene a scuola. Ha la febbre da ieri sera e il medico ha detto di restare a casa due o tre giorni. Può dire ai compagni di mandarmi i compiti? Grazie e cordiali saluti, Amina Diallo.",
+    "stem": "Che cosa chiede Amina alla maestra?",
+    "options": [
+      "Un certificato del medico",
+      "Di chiamare il medico di Samir",
+      "Di cambiare classe a Samir",
+      "Avere i compiti di Samir"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Amina chiede di dire ai compagni di mandarle i compiti, perché Samir resta a casa malato."
+  },
+  {
+    "id": "ITA2-COR-017",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il messaggio della banca*\n\nGentile cliente, la sua nuova carta di debito è pronta. Può ritirarla nella nostra filiale di via Dante 8 con un documento d'identità. La vecchia carta funziona fino al 30 novembre. Per ogni domanda chiami il numero verde. Banca del Lago.",
+    "stem": "Fino a quando si può usare la vecchia carta?",
+    "options": [
+      "Fino al 30 novembre",
+      "Fino a domani",
+      "Fino al 1° novembre",
+      "Fino al ritiro della nuova"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La banca scrive che la vecchia carta funziona fino al 30 novembre."
+  },
+  {
+    "id": "ITA2-COR-018",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il messaggio della signora che Ana assiste*\n\nAna cara, domani mattina non venire alle 8, perché mio figlio mi porta dal medico. Vieni pure alle 11, così prepariamo il pranzo insieme. Ricordati di comprare il latte e la frutta. Grazie, Carla.",
+    "stem": "A che ora deve arrivare Ana domani?",
+    "options": [
+      "Alle 8",
+      "Alle 11",
+      "Dopo pranzo",
+      "Alle 13"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La signora Carla scrive di non venire alle 8 ma alle 11, perché la mattina va dal medico con il figlio."
+  },
+  {
+    "id": "ITA2-COR-019",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la mail del corso di italiano*\n\nCari studenti, la lezione di giovedì 21 non si fa nell'aula 5, ma nella biblioteca al primo piano, perché nell'aula ci sono dei lavori. L'orario non cambia: dalle 18 alle 20. Portate il libro e il quaderno. La vostra insegnante, Marta.",
+    "stem": "Che cosa cambia per la lezione di giovedì?",
+    "options": [
+      "L'orario della lezione",
+      "L'insegnante del corso",
+      "Il posto della lezione",
+      "Il libro da portare"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La lezione si fa in biblioteca invece che nell'aula 5. L'orario resta dalle 18 alle 20."
+  },
+  {
+    "id": "ITA2-COR-020",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Corrispondenza",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il messaggio di Yusuf al collega*\n\nCiao Pietro, oggi al cantiere non vengo perché mia moglie sta male e devo portarla al pronto soccorso. Ho già chiamato il capo. Domani torno normalmente. Le chiavi del furgone sono nel mio armadietto, il numero 12, se ti servono. Grazie, Yusuf.",
+    "stem": "Perché Yusuf non va al cantiere?",
+    "options": [
+      "Sta male lui",
+      "Ha perso le chiavi",
+      "Il capo gli ha dato ferie",
+      "Accompagna la moglie"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Yusuf scrive che deve portare la moglie al pronto soccorso perché lei sta male."
+  },
+  {
+    "id": "ITA2-ORI-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello*\n\nUfficio Anagrafe. Orario di apertura: lunedì, mercoledì e venerdì dalle 8:30 alle 12:30. Martedì e giovedì dalle 14:30 alle 17:00. Sabato chiuso.",
+    "stem": "Quando è aperto l'ufficio il giovedì?",
+    "options": [
+      "Il pomeriggio",
+      "La mattina",
+      "Tutto il giorno",
+      "Non è aperto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il martedì e il giovedì l'Anagrafe è aperta dalle 14:30 alle 17:00, cioè il pomeriggio."
+  },
+  {
+    "id": "ITA2-ORI-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello all'ingresso del parco*\n\nParco comunale. Vietato entrare con le biciclette. I cani devono stare al guinzaglio. Il parco chiude alle 20 in estate e alle 18 in inverno.",
+    "stem": "Che cosa non si può fare nel parco?",
+    "options": [
+      "Portare i cani",
+      "Andare in bici",
+      "Entrare d'estate",
+      "Restare fino alle 18"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il cartello vieta di entrare con le biciclette. I cani sono permessi, ma al guinzaglio."
+  },
+  {
+    "id": "ITA2-ORI-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'annuncio*\n\nAffittasi stanza singola in appartamento con altre due ragazze, zona stazione. 300 euro al mese, spese incluse. Solo ragazze non fumatrici. Libera dal 1° settembre. Telefonare la sera dopo le 19 al 333 1234567.",
+    "stem": "Chi può affittare la stanza?",
+    "options": [
+      "Una ragazza che fuma poco",
+      "Una coppia che non fuma",
+      "Una ragazza che non fuma",
+      "Un ragazzo che non fuma"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'annuncio dice: solo ragazze non fumatrici. La stanza è singola, per una persona."
+  },
+  {
+    "id": "ITA2-ORI-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso alla fermata*\n\nLinea 7. Dal 10 al 20 luglio, per lavori in via Mazzini, l'autobus non ferma in piazza Duomo. Usate la fermata provvisoria in via Cavour.",
+    "stem": "Dove si prende il 7 dal 10 al 20 luglio?",
+    "options": [
+      "In piazza Duomo",
+      "In via Mazzini",
+      "Alla stazione",
+      "In via Cavour"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Durante i lavori in via Mazzini l'autobus non ferma in piazza Duomo: c'è una fermata provvisoria in via Cavour."
+  },
+  {
+    "id": "ITA2-ORI-005",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il menù*\n\nMenù del giorno, 12 euro. Primo: pasta al pomodoro o riso alle verdure. Secondo: pollo arrosto o pesce alla griglia. Contorno: insalata. Acqua e caffè compresi. Il dolce si paga a parte: 3 euro.",
+    "stem": "Che cosa non è compreso nei 12 euro?",
+    "options": [
+      "Il dolce",
+      "Il caffè",
+      "L'insalata",
+      "L'acqua"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il menù dice che il dolce si paga a parte, 3 euro. Acqua, caffè e contorno sono compresi."
+  },
+  {
+    "id": "ITA2-ORI-006",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'annuncio di lavoro*\n\nCercasi cameriere per ristorante in centro. Lavoro la sera, dal martedì alla domenica, dalle 18 a mezzanotte. Richiesta esperienza di almeno un anno. Portare il curriculum direttamente al ristorante, la mattina.",
+    "stem": "Quando bisogna portare il curriculum?",
+    "options": [
+      "Di sera",
+      "Di mattina",
+      "Il lunedì",
+      "Dopo mezzanotte"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'annuncio chiede di portare il curriculum al ristorante la mattina. Il lavoro invece è la sera."
+  },
+  {
+    "id": "ITA2-ORI-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello in farmacia*\n\nFarmacia di turno. Questa farmacia oggi è chiusa. È aperta tutta la notte la Farmacia San Marco, in via Torino 25.",
+    "stem": "Che cosa si può fare stanotte?",
+    "options": [
+      "Andare in via Roma",
+      "Andare in piazza San Marco",
+      "Andare in via Torino",
+      "Comprare in questa farmacia"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La farmacia è chiusa, ma la Farmacia San Marco in via Torino 25 è aperta tutta la notte."
+  },
+  {
+    "id": "ITA2-ORI-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello in un cantiere*\n\nAttenzione! Cantiere. Vietato l'ingresso alle persone non autorizzate. Obbligatori il casco e le scarpe di sicurezza.",
+    "stem": "Che cosa devono indossare gli operai?",
+    "options": [
+      "Casco e pass del cantiere",
+      "Guanti e scarpe di gomma",
+      "Occhiali e giubbotto",
+      "Casco e scarpe da lavoro"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il cartello dice che sono obbligatori il casco e le scarpe di sicurezza, cioè scarpe da lavoro adatte. Il pass non è citato."
+  },
+  {
+    "id": "ITA2-ORI-009",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso alla stazione*\n\nIl treno regionale delle 7:45 per Bologna oggi parte dal binario 4 invece che dal binario 2. Il treno ha un ritardo di 10 minuti.",
+    "stem": "A che ora parte oggi il treno?",
+    "options": [
+      "Alle 7:55",
+      "Alle 7:45",
+      "Alle 7:40",
+      "Alle 8:05"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il treno delle 7:45 ha 10 minuti di ritardo, quindi parte alle 7:55, dal binario 4."
+  },
+  {
+    "id": "ITA2-ORI-010",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il cartello sulla porta del negozio*\n\nChiuso per ferie dal 10 al 24 agosto. Riapriamo lunedì 25 con il solito orario. Buone vacanze!",
+    "stem": "Quando riapre il negozio?",
+    "options": [
+      "Domenica 24 agosto",
+      "Lunedì 25 agosto",
+      "Lunedì 10 agosto",
+      "A settembre"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il negozio è chiuso dal 10 al 24 agosto e riapre lunedì 25."
+  },
+  {
+    "id": "ITA2-ORI-011",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'offerta del supermercato*\n\nSolo questa settimana: frutta e verdura sconto 20%. Prendi 3 bottiglie d'olio, ne paghi 2. Offerta valida fino a domenica.",
+    "stem": "Quante bottiglie d'olio si pagano se se ne prendono 3?",
+    "options": [
+      "Tre",
+      "Una",
+      "Due",
+      "Quattro"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "L'offerta dice: prendi 3 bottiglie, ne paghi 2."
+  },
+  {
+    "id": "ITA2-ORI-012",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il cartello in ospedale*\n\nOrario visite ai pazienti: tutti i giorni dalle 12:30 alle 14 e dalle 18 alle 19:30. Massimo due persone per paziente. Non possono entrare i bambini sotto i 12 anni.",
+    "stem": "Chi non può entrare a fare visita?",
+    "options": [
+      "Un bambino di 13 anni",
+      "Un amico la sera",
+      "Una nonna di 80 anni",
+      "Un bambino di 8 anni"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "I bambini sotto i 12 anni non possono entrare. Un bambino di 8 anni è sotto i 12."
+  },
+  {
+    "id": "ITA2-ORI-013",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'avviso in ufficio postale*\n\nPer spedire una raccomandata prendete il biglietto con la lettera A. Per pagare le bollette prendete il biglietto con la lettera P. Per ritirare un pacco, sportello 3, senza biglietto.",
+    "stem": "Che cosa si fa per ritirare un pacco?",
+    "options": [
+      "Si va allo sportello 3",
+      "Si prende il biglietto A",
+      "Si prende il biglietto P",
+      "Si paga una bolletta"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Per ritirare un pacco si va direttamente allo sportello 3, senza biglietto."
+  },
+  {
+    "id": "ITA2-ORI-014",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'annuncio*\n\nVendo lavatrice usata, due anni di vita, funziona benissimo. 120 euro. Il trasporto è a carico di chi compra. Zona San Paolo. Scrivere solo messaggi, niente telefonate: 347 9876543.",
+    "stem": "Come si contatta chi vende?",
+    "options": [
+      "Con una telefonata",
+      "Con un messaggio",
+      "Con una mail",
+      "Di persona a San Paolo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'annuncio dice di scrivere solo messaggi, niente telefonate."
+  },
+  {
+    "id": "ITA2-ORI-015",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il cartello nel cortile*\n\nRaccolta rifiuti. Carta: lunedì. Plastica: mercoledì. Vetro: venerdì. L'umido si porta fuori martedì, giovedì e sabato. Mettere i sacchi fuori la sera prima, dopo le 20.",
+    "stem": "Quando si porta fuori la carta?",
+    "options": [
+      "Lunedì mattina",
+      "Lunedì dopo le 20",
+      "Domenica dopo le 20",
+      "Mercoledì sera"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La carta si raccoglie lunedì e i sacchi si mettono fuori la sera prima dopo le 20, quindi domenica sera."
+  },
+  {
+    "id": "ITA2-ORI-016",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il cartello nel bar*\n\nSi prega di pagare alla cassa prima di ordinare al banco. Per il servizio al tavolo il prezzo è diverso.",
+    "stem": "Che cosa si fa prima di ordinare al banco?",
+    "options": [
+      "Si chiede il servizio al tavolo",
+      "Si chiede il prezzo",
+      "Si chiama il cameriere",
+      "Si paga alla cassa"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il cartello chiede di pagare alla cassa prima di ordinare al banco."
+  },
+  {
+    "id": "ITA2-ORI-017",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'avviso nel palazzo*\n\nDal 15 ottobre al 15 aprile il riscaldamento è acceso dalle 6 alle 9 e dalle 17 alle 23. In caso di guasto chiamare l'amministratore al numero 02 1234567.",
+    "stem": "Che cosa si fa se il riscaldamento si rompe?",
+    "options": [
+      "Si chiama l'amministratore",
+      "Si chiama il Comune",
+      "Si chiama un tecnico della caldaia",
+      "Si chiama il portiere del palazzo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'avviso dice di chiamare l'amministratore in caso di guasto."
+  },
+  {
+    "id": "ITA2-ORI-018",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il cartello in piscina*\n\nObbligatoria la cuffia. Fare la doccia prima di entrare in acqua. Vietato mangiare a bordo vasca. I bambini sotto i 10 anni devono stare con un adulto.",
+    "stem": "Che cosa è vietato?",
+    "options": [
+      "Fare la doccia prima",
+      "Mangiare vicino all'acqua",
+      "Entrare con la cuffia",
+      "Nuotare con un adulto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il cartello vieta di mangiare a bordo vasca, cioè vicino all'acqua della piscina."
+  },
+  {
+    "id": "ITA2-ORI-019",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'orario della biblioteca*\n\nBiblioteca comunale. Lunedì chiusa. Da martedì a venerdì: 9-19. Sabato: 9-13. Il prestito dei libri finisce mezz'ora prima della chiusura.",
+    "stem": "Fino a che ora si può prendere un libro in prestito il sabato?",
+    "options": [
+      "Fino alle 13",
+      "Fino alle 18:30",
+      "Fino alle 12:30",
+      "Fino alle 19"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il sabato la biblioteca chiude alle 13 e il prestito finisce mezz'ora prima, cioè alle 12:30."
+  },
+  {
+    "id": "ITA2-ORI-020",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'annuncio*\n\nCercasi signora per pulizie in un ufficio, tre volte alla settimana, la sera dalle 18 alle 21. Contratto regolare. Non serve esperienza. Presentarsi in via Manzoni 4, primo piano, con un documento.",
+    "stem": "Che cosa non serve per questo lavoro?",
+    "options": [
+      "Un documento",
+      "Lavorare la sera",
+      "Andare in via Manzoni",
+      "L'esperienza"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'annuncio dice: non serve esperienza. Il documento invece bisogna portarlo."
+  },
+  {
+    "id": "ITA2-ORI-021",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il cartello del parcheggio*\n\nParcheggio a pagamento dal lunedì al sabato, dalle 8 alle 20: 1 euro all'ora. La domenica e i giorni festivi è gratuito.",
+    "stem": "Quando si parcheggia senza pagare?",
+    "options": [
+      "La domenica",
+      "Il sabato",
+      "Dalle 8 alle 20",
+      "Il lunedì mattina"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il parcheggio è gratuito la domenica e nei giorni festivi."
+  },
+  {
+    "id": "ITA2-ORI-022",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi l'avviso alla ASL*\n\nPer i prelievi del sangue non serve la prenotazione. Venire dal lunedì al venerdì dalle 7:30 alle 9:30, a digiuno. Portare la ricetta del medico e la tessera sanitaria.",
+    "stem": "Che cosa bisogna fare prima del prelievo?",
+    "options": [
+      "Prenotare per telefono",
+      "Non mangiare",
+      "Venire dopo le 9:30",
+      "Pagare alla cassa"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'avviso dice di venire a digiuno, cioè senza mangiare. La prenotazione non serve."
+  },
+  {
+    "id": "ITA2-ORI-023",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'orario del mercato*\n\nMercato di piazza Verdi: martedì e venerdì dalle 7 alle 13. Il sabato mercato dei contadini dalle 8 alle 12. In caso di festa il mercato si sposta al giorno dopo.",
+    "stem": "Quando c'è il mercato dei contadini?",
+    "options": [
+      "Il martedì mattina",
+      "Il venerdì pomeriggio",
+      "Il sabato mattina",
+      "Il giorno di festa"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il mercato dei contadini è il sabato dalle 8 alle 12."
+  },
+  {
+    "id": "ITA2-ORI-024",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Orientarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il cartello sull'autobus*\n\nÈ vietato salire senza biglietto. Il biglietto si compra in tabaccheria o con l'app, non dall'autista. Timbrare il biglietto appena si sale.",
+    "stem": "Dove non si può comprare il biglietto?",
+    "options": [
+      "In tabaccheria",
+      "Con l'app",
+      "Alla tabaccheria prima di salire",
+      "Dall'autista"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il cartello dice che il biglietto si compra in tabaccheria o con l'app, non dall'autista."
+  },
+  {
+    "id": "ITA2-INF-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nDa lunedì 3 marzo a Valdora parte la nuova linea di autobus numero 12. L'autobus collega la stazione con l'ospedale e passa anche davanti al mercato coperto. Le corse sono ogni venti minuti, dalle 6 alle 21. La domenica l'autobus non passa. Il biglietto è lo stesso delle altre linee della città.",
+    "stem": "Che cosa collega la nuova linea 12?",
+    "options": [
+      "La stazione e l'ospedale",
+      "Il mercato e la scuola",
+      "L'ospedale e il Comune di Valdora",
+      "La stazione e lo stadio"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il testo dice che l'autobus collega la stazione con l'ospedale. Il mercato coperto è solo un punto dove passa."
+  },
+  {
+    "id": "ITA2-INF-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il volantino*\n\nCorso gratuito di italiano al CPIA di via Garibaldi. Le lezioni sono il martedì e il giovedì dalle 18 alle 20. Il corso è per adulti stranieri che vogliono imparare a parlare e scrivere meglio. Per iscriversi bisogna portare un documento d'identità e il permesso di soggiorno. Le iscrizioni sono aperte fino al 30 settembre.",
+    "stem": "Quando sono le lezioni?",
+    "options": [
+      "Il lunedì e il mercoledì sera",
+      "Il martedì e il giovedì sera",
+      "Il martedì e il giovedì mattina",
+      "Tutti i giorni dopo pranzo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Le lezioni sono il martedì e il giovedì dalle 18 alle 20, quindi di sera. Il 30 settembre è la data di chiusura delle iscrizioni."
+  },
+  {
+    "id": "ITA2-INF-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nSabato in piazza Verdi torna il mercato dei prodotti del territorio. Dalle 8 alle 13 gli agricoltori della zona vendono frutta, verdura, formaggi e miele. Quest'anno c'è una novità: un angolo per i bambini, dove possono piantare semi e portare a casa una piccola pianta. L'ingresso è libero.",
+    "stem": "Qual è la novità di quest'anno?",
+    "options": [
+      "La vendita di miele",
+      "L'ingresso senza biglietto",
+      "Uno spazio per i bambini",
+      "L'apertura fino a sera"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il testo presenta come novità un angolo per i bambini, che possono piantare semi. Il miele e l'ingresso libero ci sono, ma non sono descritti come nuovi."
+  },
+  {
+    "id": "ITA2-INF-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il volantino dell'ASL*\n\nVaccino contro l'influenza: quest'anno è gratuito per le persone sopra i 60 anni, per le donne in gravidanza e per chi ha malattie croniche. Si può fare dal medico di base o in farmacia, su prenotazione. Il periodo migliore è tra ottobre e dicembre. Non serve pagare il ticket.",
+    "stem": "Dove si può fare il vaccino?",
+    "options": [
+      "All'ASL o in ospedale",
+      "In ospedale o al consultorio",
+      "Al pronto soccorso o all'ASL",
+      "Dal medico o in farmacia"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il volantino dice che il vaccino si fa dal medico di base o in farmacia, su prenotazione."
+  },
+  {
+    "id": "ITA2-INF-005",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nLa biblioteca comunale di Valdora cambia orario. Dal primo aprile apre anche il sabato mattina, dalle 9 alle 12, ma resta chiusa il lunedì. Negli altri giorni l'orario è sempre dalle 10 alle 19. In biblioteca ci sono libri in molte lingue e computer gratuiti per tutti i cittadini.",
+    "stem": "Che cosa cambia dal primo aprile?",
+    "options": [
+      "Apre anche il sabato mattina",
+      "Chiude alle 19 tutti i giorni",
+      "Apre anche il lunedì mattina",
+      "Ci sono computer gratuiti"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La novità è l'apertura del sabato mattina. Il lunedì resta chiuso e i computer gratuiti non sono presentati come una novità."
+  },
+  {
+    "id": "ITA2-INF-006",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'avviso del Comune*\n\nLavori in via Roma. Dal 10 al 20 giugno la strada è chiusa alle auto tra piazza Duomo e via Mazzini, perché si cambiano i tubi dell'acqua. Pedoni e biciclette possono passare. Gli autobus 4 e 7 fanno un percorso diverso, lungo viale Europa. Per informazioni chiamare l'ufficio traffico.",
+    "stem": "Perché la strada è chiusa?",
+    "options": [
+      "C'è il mercato della settimana",
+      "Si cambiano i tubi dell'acqua",
+      "Gli autobus fanno un percorso diverso",
+      "Si rifanno i marciapiedi"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'avviso spiega che la strada è chiusa perché si cambiano i tubi dell'acqua."
+  },
+  {
+    "id": "ITA2-INF-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nAl centro sportivo di via dei Pini apre una piscina nuova. Per i primi due mesi i bambini sotto i 12 anni entrano gratis, se sono con un adulto. Gli adulti pagano 5 euro. Ci sono anche corsi di nuoto per principianti, la sera dopo le 19. Per i corsi bisogna iscriversi alla reception.",
+    "stem": "Chi entra gratis in piscina?",
+    "options": [
+      "Gli adulti la sera",
+      "Gli iscritti ai corsi",
+      "I bambini con un adulto",
+      "Tutti nei primi due mesi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Entrano gratis i bambini sotto i 12 anni accompagnati da un adulto, solo per i primi due mesi. Gli adulti pagano 5 euro."
+  },
+  {
+    "id": "ITA2-INF-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il volantino*\n\nSportello per le famiglie straniere. Ogni mercoledì pomeriggio, in Comune, una mediatrice culturale aiuta i genitori a iscrivere i figli a scuola, a capire le comunicazioni degli insegnanti e a chiedere la mensa. Parla italiano, arabo e inglese. Il servizio è gratuito e non serve l'appuntamento.",
+    "stem": "Che cosa fa la mediatrice?",
+    "options": [
+      "Aiuta i genitori con il lavoro",
+      "Aiuta i genitori con la casa",
+      "Aiuta i genitori con la salute",
+      "Aiuta i genitori con la scuola"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La mediatrice aiuta i genitori a iscrivere i figli, a capire gli insegnanti e a chiedere la mensa: tutto riguarda la scuola."
+  },
+  {
+    "id": "ITA2-INF-009",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nRaccolta dei vestiti usati. Domenica davanti alla chiesa di San Marco i volontari raccolgono vestiti e scarpe in buono stato. I vestiti devono essere puliti e chiusi in un sacchetto. Non si prendono coperte, giocattoli o mobili. Tutto viene dato alle famiglie che ne hanno bisogno.",
+    "stem": "Che cosa non si può portare?",
+    "options": [
+      "Coperte e giocattoli",
+      "Scarpe in buono stato",
+      "Vestiti puliti per bambini",
+      "Sacchetti con giacche"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il testo dice che non si prendono coperte, giocattoli o mobili. Vestiti e scarpe puliti invece si possono portare."
+  },
+  {
+    "id": "ITA2-INF-010",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nPiù biciclette in città. Il Comune ha messo cento biciclette in affitto vicino alla stazione e alle scuole. Si prendono con un'applicazione sul telefono e si pagano 1 euro all'ora. La prima mezz'ora è gratuita. Le biciclette si possono lasciare solo nei parcheggi indicati sulla mappa.",
+    "stem": "Quanto costa la prima mezz'ora?",
+    "options": [
+      "Un euro all'ora",
+      "Niente, è gratuita",
+      "Cinquanta centesimi",
+      "Dipende dall'applicazione"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'articolo dice che la prima mezz'ora è gratuita; dopo si paga 1 euro all'ora."
+  },
+  {
+    "id": "ITA2-INF-011",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nUfficio postale di piazza Garibaldi chiuso per lavori dal 5 al 25 luglio. In questo periodo i cittadini possono andare all'ufficio postale di via Manzoni, aperto anche il sabato. Le raccomandate e i pacchi in giacenza si ritirano lì. Dal 26 luglio l'ufficio di piazza Garibaldi riapre con l'orario normale.",
+    "stem": "Dove si ritira un pacco in giacenza a metà luglio?",
+    "options": [
+      "In piazza Garibaldi",
+      "Al Comune",
+      "In via Manzoni",
+      "A casa con il postino"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Durante i lavori, dal 5 al 25 luglio, pacchi e raccomandate in giacenza si ritirano all'ufficio di via Manzoni."
+  },
+  {
+    "id": "ITA2-INF-012",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il volantino*\n\nSettimana della salute. Dal 14 al 18 ottobre, nella sala del quartiere, infermieri volontari misurano gratis la pressione e lo zucchero nel sangue. Non serve la prenotazione, basta presentarsi tra le 9 e le 12. Chi ha valori alti riceve un foglio da portare al proprio medico di base.",
+    "stem": "Che cosa riceve chi ha valori alti?",
+    "options": [
+      "Una visita dal medico in sala",
+      "Le medicine gratuite",
+      "Un appuntamento in sala",
+      "Un foglio per il medico"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il volantino dice che chi ha valori alti riceve un foglio da portare al proprio medico di base."
+  },
+  {
+    "id": "ITA2-INF-013",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nFesta dei popoli al parco Centrale. Sabato pomeriggio le associazioni della città preparano piatti tipici di molti Paesi: Marocco, Perù, Ucraina, Senegal, Cina. Ci sono anche musica e danze. Il ricavato della vendita del cibo serve a comprare libri per la scuola del quartiere.",
+    "stem": "A che cosa servono i soldi del cibo?",
+    "options": [
+      "A comprare libri per una scuola",
+      "A pagare i musicisti della festa",
+      "A comprare cibo per la festa",
+      "A sistemare il parco Centrale"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il testo dice che il ricavato della vendita del cibo serve a comprare libri per la scuola del quartiere."
+  },
+  {
+    "id": "ITA2-INF-014",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi l'articolo*\n\nIl Comune di Valdora offre un aiuto per le bollette del riscaldamento alle famiglie con redditi bassi. La domanda si fa online o allo sportello sociale, entro il 31 gennaio. Servono l'ISEE e una bolletta recente. Le famiglie con bambini piccoli hanno la precedenza.",
+    "stem": "Che cosa serve per fare la domanda?",
+    "options": [
+      "La busta paga e il contratto d'affitto",
+      "L'ISEE e una bolletta recente",
+      "La dichiarazione dei redditi e il contratto",
+      "Il modello 730 e la carta d'identità"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per la domanda servono l'ISEE e una bolletta recente, come dice l'articolo."
+  },
+  {
+    "id": "ITA2-INF-015",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi la notizia*\n\nDa gennaio i rifiuti di carta si raccolgono il martedì invece del venerdì. Il calendario nuovo arriva per posta in tutte le case. I sacchetti si mettono fuori dalla porta la sera prima, dopo le 20. Chi non riceve il calendario può scaricarlo dal sito del Comune.",
+    "stem": "Quando si mette fuori la carta?",
+    "options": [
+      "Il martedì mattina presto",
+      "Il giovedì sera dopo le 20",
+      "Il lunedì sera dopo le 20",
+      "Il venerdì dopo cena"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La carta si raccoglie il martedì e i sacchetti si mettono fuori la sera prima, cioè il lunedì sera dopo le 20."
+  },
+  {
+    "id": "ITA2-INF-016",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Informarsi",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi il volantino*\n\nCerchiamo volontari per il doposcuola. Due pomeriggi alla settimana aiutiamo i ragazzi delle medie a fare i compiti di matematica e italiano. Non serve essere insegnanti: basta avere pazienza e un'ora di tempo libero. Per dare la propria disponibilità scrivere all'associazione Insieme.",
+    "stem": "Che cosa cerca l'associazione?",
+    "options": [
+      "Persone che insegnano a pagamento",
+      "Persone che fanno sport con i ragazzi",
+      "Persone che preparano la merenda",
+      "Persone che aiutano nei compiti"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'associazione cerca volontari che aiutino i ragazzi a fare i compiti; il testo dice che non serve essere insegnanti."
+  },
+  {
+    "id": "ITA2-IST-001",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni della biglietteria automatica*\n\n1. Tocca lo schermo e scegli la lingua. 2. Scegli la stazione di arrivo. 3. Indica quante persone viaggiano. 4. Paga con monete, banconote o carta. 5. Ritira il biglietto e il resto. Ricorda: il biglietto va convalidato prima di salire sul treno.",
+    "stem": "Che cosa si fa prima di scegliere la stazione?",
+    "options": [
+      "Si sceglie la lingua",
+      "Si paga il biglietto",
+      "Si ritira il resto",
+      "Si convalida il biglietto"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il primo passo è toccare lo schermo e scegliere la lingua; la stazione di arrivo viene dopo."
+  },
+  {
+    "id": "ITA2-IST-002",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni del bancomat*\n\nInserisci la carta. Digita il codice segreto e premi Conferma. Scegli Prelievo e la cifra. Ritira prima la carta, poi i soldi. Non dire mai il codice a nessuno e copri la tastiera con la mano. Se sbagli il codice tre volte, la carta viene bloccata.",
+    "stem": "Che cosa succede dopo tre codici sbagliati?",
+    "options": [
+      "La banca ti manda un nuovo codice",
+      "La carta viene bloccata",
+      "Il bancomat trattiene i soldi",
+      "Devi aspettare un'ora"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il testo dice che se sbagli il codice tre volte la carta viene bloccata."
+  },
+  {
+    "id": "ITA2-IST-003",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi il cartello della lavanderia*\n\nLavatrice a gettoni. Metti i vestiti nel cestello senza riempirlo troppo. Versa il detersivo nella vaschetta. Chiudi bene lo sportello. Inserisci i gettoni e scegli il programma. Non aprire lo sportello durante il lavaggio. Alla fine aspetta un minuto prima di aprire.",
+    "stem": "Che cosa non bisogna fare?",
+    "options": [
+      "Usare il detersivo in vaschetta",
+      "Scegliere il programma",
+      "Aprire durante il lavaggio",
+      "Chiudere bene lo sportello del cestello"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il cartello dice di non aprire lo sportello durante il lavaggio. Le altre azioni sono passaggi da fare."
+  },
+  {
+    "id": "ITA2-IST-004",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi come prenotare una visita al CUP*\n\nPer prenotare servono la ricetta del medico e la tessera sanitaria. Puoi telefonare al numero verde, andare allo sportello o usare il sito. L'operatore ti propone una data e un ospedale. Se non puoi andare alla visita, devi disdire almeno tre giorni prima.",
+    "stem": "Che cosa devi fare se non puoi andare alla visita?",
+    "options": [
+      "Disdire il giorno della visita",
+      "Avvisare il medico tre giorni prima",
+      "Chiedere un'altra data allo sportello",
+      "Disdire tre giorni prima"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Le istruzioni dicono che se non puoi andare devi disdire almeno tre giorni prima."
+  },
+  {
+    "id": "ITA2-IST-005",
+    "section": "lettura",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi le regole della raccolta differenziata*\n\nNel bidone giallo vanno plastica e lattine, sciacquate. Nel bidone blu carta e cartone, piegati. Nel vetro bottiglie e vasetti, senza tappo. Il cibo avanzato va nell'umido, nel sacchetto biodegradabile. Pile e medicine scadute si portano negli appositi contenitori.",
+    "stem": "Dove si butta una bottiglia vuota di birra?",
+    "options": [
+      "Nel vetro, senza il tappo",
+      "Nel giallo, con le lattine",
+      "Nell'umido, con il cibo",
+      "Nel blu, con il cartone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Le bottiglie e i vasetti vanno nel vetro, senza tappo."
+  },
+  {
+    "id": "ITA2-IST-006",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello all'ingresso del cantiere*\n\nVietato entrare senza casco. Indossare sempre scarpe antinfortunistiche e gilet ad alta visibilità. I guanti sono obbligatori quando si usano attrezzi. Non passare sotto i carichi della gru. In caso di incidente avvisare subito il capocantiere.",
+    "stem": "Chi bisogna avvisare in caso di incidente?",
+    "options": [
+      "Il responsabile della sicurezza",
+      "Il capocantiere",
+      "Il medico del lavoro",
+      "L'ufficio del personale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il cartello dice di avvisare subito il capocantiere in caso di incidente."
+  },
+  {
+    "id": "ITA2-IST-007",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il foglietto della medicina*\n\nPrendere una compressa due volte al giorno, dopo i pasti, con un bicchiere d'acqua. Non prendere più di quattro compresse in un giorno. Non bere alcol durante la cura. Se compaiono macchie rosse sulla pelle, interrompere e chiamare il medico.",
+    "stem": "Quando si prende la compressa?",
+    "options": [
+      "A stomaco vuoto",
+      "Prima di dormire",
+      "Dopo mangiato",
+      "Una volta al giorno"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il foglietto dice di prendere la compressa dopo i pasti, con un bicchiere d'acqua."
+  },
+  {
+    "id": "ITA2-IST-008",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi le istruzioni per la macchinetta del caffè in ufficio*\n\nMetti una moneta o la chiavetta. Scegli la bevanda. Se vuoi lo zucchero, premi più volte il tasto Zucchero. Aspetta che la luce verde si spenga prima di prendere il bicchiere. Se la macchinetta non dà la bevanda, scrivi il problema sul foglio vicino.",
+    "stem": "Che cosa fai se la bevanda non esce?",
+    "options": [
+      "Batti sulla macchinetta",
+      "Metti un'altra moneta o la chiavetta",
+      "Premi di nuovo il tasto",
+      "Scrivi sul foglio vicino"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Le istruzioni dicono di scrivere il problema sul foglio vicino alla macchinetta."
+  },
+  {
+    "id": "ITA2-IST-009",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi le regole per le pulizie in ufficio*\n\nUsa i guanti con tutti i prodotti. Non mescolare mai la candeggina con altri detersivi: si formano gas pericolosi. Apri le finestre quando pulisci i bagni. Metti il cartello Pavimento bagnato dopo aver lavato per terra.",
+    "stem": "Perché non si mescola la candeggina con altri prodotti?",
+    "options": [
+      "Si formano gas pericolosi",
+      "Si macchia la pelle delle mani",
+      "Il prodotto diventa infiammabile",
+      "Si rovinano i tubi del bagno"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il testo spiega che mescolare la candeggina con altri detersivi forma gas pericolosi."
+  },
+  {
+    "id": "ITA2-IST-010",
+    "section": "lettura",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi l'avviso sull'autobus*\n\nSi sale dalla porta anteriore e si scende da quella centrale. Il biglietto va timbrato appena saliti. Chi viaggia senza biglietto valido paga una multa. I posti vicino alla porta sono per anziani, donne incinte e persone con disabilità.",
+    "stem": "Quando si timbra il biglietto?",
+    "options": [
+      "Prima di salire, alla fermata",
+      "Subito dopo essere saliti",
+      "All'arrivo, prima di scendere",
+      "Entro dieci minuti dalla salita"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'avviso dice che il biglietto va timbrato appena saliti sull'autobus."
+  },
+  {
+    "id": "ITA2-IST-011",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni del termometro*\n\nPrima di usarlo pulisci la punta con alcol. Metti il termometro sotto il braccio e tieni il braccio stretto. Aspetta il segnale acustico, circa un minuto. Leggi la temperatura sul display. Se è sopra 38 gradi per più di tre giorni, chiama il medico.",
+    "stem": "Che cosa fai prima di misurare la febbre?",
+    "options": [
+      "Leggi il display",
+      "Chiami il medico",
+      "Pulisci la punta",
+      "Aspetti il segnale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il primo passo è pulire la punta del termometro con alcol."
+  },
+  {
+    "id": "ITA2-IST-012",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il regolamento della cucina del ristorante*\n\nLavarsi le mani ogni volta che si entra in cucina e dopo aver toccato carne cruda. Tenere i capelli raccolti sotto la cuffia. Usare taglieri diversi per carne, pesce e verdura. Chi ha la febbre o la diarrea non può lavorare con il cibo e deve avvisare il responsabile.",
+    "stem": "Che cosa deve fare un cuoco con la febbre?",
+    "options": [
+      "Andare dal medico subito",
+      "Lavarsi le mani più spesso",
+      "Lavorare solo con la verdura",
+      "Avvisare il responsabile"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chi ha la febbre non può lavorare con il cibo e deve avvisare il responsabile."
+  },
+  {
+    "id": "ITA2-IST-013",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi le istruzioni dell'ascensore*\n\nPremi il pulsante del piano. Non entrare in più di sei persone o oltre 450 chili. In caso di incendio non usare l'ascensore: scendi dalle scale. Se l'ascensore si ferma tra due piani, premi il pulsante con la campana e aspetta l'aiuto.",
+    "stem": "Che cosa fai se c'è un incendio?",
+    "options": [
+      "Scendi a piedi dalle scale",
+      "Premi il pulsante con la campana",
+      "Aspetti i vigili vicino all'ascensore",
+      "Resti fermo al tuo piano"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Le istruzioni dicono di non usare l'ascensore in caso di incendio e di scendere dalle scale."
+  },
+  {
+    "id": "ITA2-IST-014",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi le istruzioni per il ritiro di una raccomandata*\n\nSe il postino non ti trova a casa, lascia un avviso nella cassetta. Porta l'avviso e un documento all'ufficio postale indicato. Se non puoi andare tu, una persona può andare con una tua delega firmata e una copia del tuo documento. Hai trenta giorni per il ritiro.",
+    "stem": "Che cosa serve a un'altra persona per ritirarla?",
+    "options": [
+      "Il tuo codice fiscale originale",
+      "Una tua delega firmata",
+      "Un certificato di residenza",
+      "Un modulo firmato dal postino"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Una persona diversa può ritirare la raccomandata con una delega firmata e una copia del tuo documento."
+  },
+  {
+    "id": "ITA2-IST-015",
+    "section": "lettura",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi le regole della piscina comunale*\n\nFare la doccia prima di entrare in acqua. La cuffia è obbligatoria. Non correre sul bordo della vasca. I bambini sotto gli 8 anni devono stare con un adulto. Non si può mangiare vicino alla vasca.",
+    "stem": "Che cosa è obbligatorio?",
+    "options": [
+      "Portare le ciabatte",
+      "Mettere gli occhialini",
+      "Mettere la cuffia",
+      "Fare la doccia dopo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il testo dice che la cuffia è obbligatoria. La doccia va fatta prima, non dopo; ciabatte e occhialini non sono nominati."
+  },
+  {
+    "id": "ITA2-IST-016",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi le istruzioni per l'assistente familiare*\n\nLa signora Bruna prende la pastiglia per la pressione alle 8, con la colazione. Deve bere almeno un litro d'acqua al giorno. Dopo pranzo riposa un'ora. Se ha mal di testa forte o le gira la testa, misurare la pressione e telefonare alla figlia.",
+    "stem": "Che cosa fa l'assistente se la signora ha mal di testa forte?",
+    "options": [
+      "Le dà un po' d'acqua",
+      "Chiama il medico di base",
+      "La fa riposare un'ora",
+      "Misura la pressione"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Le istruzioni dicono di misurare la pressione e poi telefonare alla figlia."
+  },
+  {
+    "id": "ITA2-IST-017",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 1,
+    "format": "single",
+    "passage": "*Leggi il cartello in fabbrica*\n\nPrima di pulire la macchina, spegnerla e staccare la spina. Non togliere mai le protezioni. Usare gli occhiali quando la macchina lavora il metallo. Se la macchina fa un rumore strano, fermarla e chiamare il caporeparto.",
+    "stem": "Che cosa si fa prima di pulire la macchina?",
+    "options": [
+      "Si spegne e si stacca la spina",
+      "Si mettono gli occhiali e i guanti",
+      "Si ferma e si chiama il caporeparto",
+      "Si apre e si controlla il motore"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il cartello dice che prima di pulire bisogna spegnere la macchina e staccare la spina."
+  },
+  {
+    "id": "ITA2-IST-018",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi le istruzioni del parcometro*\n\nScegli quanto tempo vuoi sostare. Paga con monete o con la carta. Ritira lo scontrino e mettilo sul cruscotto, in modo che si veda da fuori. La sosta è a pagamento dalle 8 alle 20, dal lunedì al sabato. La domenica è gratis.",
+    "stem": "Dove si mette lo scontrino?",
+    "options": [
+      "Nel portafoglio",
+      "Sul cruscotto",
+      "Sotto il tergicristallo",
+      "Dentro il parcometro"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lo scontrino va messo sul cruscotto, in modo che si veda da fuori."
+  },
+  {
+    "id": "ITA2-IST-019",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 2,
+    "format": "single",
+    "passage": "*Leggi le regole della mensa scolastica*\n\nI genitori comunicano allergie e diete speciali con il modulo e un certificato del medico. Il menù è appeso all'ingresso della scuola. Se il bambino è assente, bisogna avvisare entro le 9 di mattina, altrimenti il pasto si paga lo stesso.",
+    "stem": "Che cosa succede se non avvisi entro le 9?",
+    "options": [
+      "Il bambino resta senza pasto",
+      "Ricevi un altro menù",
+      "Paghi lo stesso il pasto",
+      "Devi portare un certificato"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Se non si avvisa entro le 9, il pasto si paga lo stesso."
+  },
+  {
+    "id": "ITA2-IST-020",
+    "section": "lettura",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Istruzioni",
+    "difficulty": 3,
+    "format": "single",
+    "passage": "*Leggi le istruzioni per il primo accesso al sito dell'ASL*\n\nClicca su Registrati. Inserisci il codice fiscale e il numero della tessera sanitaria. Scegli una password di almeno otto caratteri. Riceverai un SMS con un codice: scrivilo nella pagina entro cinque minuti. Dopo puoi vedere i referti delle analisi.",
+    "stem": "Che cosa devi fare con il codice dell'SMS?",
+    "options": [
+      "Usarlo come password",
+      "Scriverlo sulla tessera sanitaria",
+      "Mandarlo per email all'ASL",
+      "Scriverlo nella pagina"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il codice ricevuto per SMS va scritto nella pagina entro cinque minuti."
+  },
+  {
+    "id": "ITA2-INT-001",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "La tua amica Olena ti scrive: «Sabato faccio una festa per il compleanno di mio figlio. Vieni?» Tu non puoi andare. Che cosa rispondi?",
+    "options": [
+      "Scusa, sabato lavoro",
+      "Sì, sabato vengo volentieri",
+      "Sì, a che ora inizia?",
+      "Va bene, porto la torta"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chi non può andare ringrazia o si scusa e spiega il motivo. Le altre risposte accettano l'invito."
+  },
+  {
+    "id": "ITA2-INT-002",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Il collega Kofi ti scrive: «Domani puoi cambiare turno con me? Io faccio la notte e tu la mattina.» Tu accetti. Che cosa rispondi?",
+    "options": [
+      "No, mi dispiace tanto",
+      "Va bene, d'accordo",
+      "Non lo so, forse ieri",
+      "Grazie, buon appetito"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per accettare una richiesta si risponde in modo positivo, per esempio va bene. Buon appetito non c'entra con la richiesta."
+  },
+  {
+    "id": "ITA2-INT-003",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Scrivi alla maestra di tua figlia. Come inizi la mail?",
+    "options": [
+      "Ciao bella maestra,",
+      "Caro amico mio,",
+      "Gentile maestra,",
+      "Ehi, maestra Rossi,"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A una persona che non conosci bene si scrive in modo formale: Gentile maestra. Ciao ed Ehi sono troppo confidenziali."
+  },
+  {
+    "id": "ITA2-INT-004",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Scrivi una mail al tuo amico Marco. Come la chiudi?",
+    "options": [
+      "Distinti saluti, Ana",
+      "In attesa di riscontro, Ana",
+      "Con ossequi, Ana",
+      "Un abbraccio, Ana"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Con un amico si chiude in modo informale: un abbraccio. Distinti saluti e le altre formule sono da lettere formali."
+  },
+  {
+    "id": "ITA2-INT-005",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Scrivi all'ufficio anagrafe per chiedere un appuntamento. Come chiudi la mail?",
+    "options": [
+      "Cordiali saluti",
+      "Baci a tutti",
+      "Ci vediamo stasera",
+      "A dopo, ciao"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In una mail a un ufficio pubblico si usa una chiusura formale come Cordiali saluti."
+  },
+  {
+    "id": "ITA2-INT-006",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Completa la mail: «Gentile signor Ferri, le scrivo ___ chiederle un giorno di ferie venerdì prossimo.» Quale parola manca?",
+    "options": [
+      "con",
+      "per",
+      "a",
+      "di"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Per esprimere lo scopo prima dell'infinito si usa per: le scrivo per chiederle."
+  },
+  {
+    "id": "ITA2-INT-007",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Completa la mail al padrone di casa: «Gentile signora Conti, le scrivo perché in cucina ___ un tubo che perde acqua.» Quale parola manca?",
+    "options": [
+      "ci sono",
+      "ha",
+      "c'è",
+      "sono"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per dire che una cosa si trova in un luogo si usa c'è con un nome singolare: c'è un tubo."
+  },
+  {
+    "id": "ITA2-INT-008",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Luogo di nascita». Che cosa scrivi?",
+    "options": [
+      "12 marzo 1990",
+      "Via Roma 15",
+      "Cittadina nigeriana",
+      "Lagos, Nigeria"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il luogo di nascita è la città e il Paese dove sei nato. La data va nel campo Data di nascita."
+  },
+  {
+    "id": "ITA2-INT-009",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Stato civile». Che cosa scrivi?",
+    "options": [
+      "Coniugato",
+      "Marocchino",
+      "Operaio edile",
+      "Diploma"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lo stato civile dice se sei celibe o nubile, coniugato, separato, divorziato o vedovo. Marocchino indica la cittadinanza."
+  },
+  {
+    "id": "ITA2-INT-010",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Recapito telefonico». Che cosa scrivi?",
+    "options": [
+      "L'indirizzo di casa",
+      "Il tuo numero",
+      "L'indirizzo email",
+      "Il codice postale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il recapito telefonico è il numero a cui ti possono chiamare."
+  },
+  {
+    "id": "ITA2-INT-011",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Firma». Che cosa fai?",
+    "options": [
+      "Scrivi la data di oggi",
+      "Metti una crocetta",
+      "Scrivi il tuo nome a mano",
+      "Copi il codice fiscale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La firma è il tuo nome e cognome scritti a mano da te. Data e codice fiscale vanno in altri campi."
+  },
+  {
+    "id": "ITA2-INT-012",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Cittadinanza». Che cosa scrive Li Wei, nata a Shanghai?",
+    "options": [
+      "Shanghai",
+      "Nubile",
+      "Studentessa",
+      "Cinese"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La cittadinanza è lo Stato di cui sei cittadino: per Li Wei è cinese. Shanghai è il luogo di nascita."
+  },
+  {
+    "id": "ITA2-INT-013",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Nel modulo della scuola c'è scritto «Cognome del genitore». Yusuf Demir che cosa scrive?",
+    "options": [
+      "Demir",
+      "Yusuf",
+      "Padre",
+      "Turco"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il cognome è il nome di famiglia: Demir. Yusuf è il nome proprio."
+  },
+  {
+    "id": "ITA2-INT-014",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Il vicino ti scrive: «Stasera alle 8 c'è la riunione di condominio. Ci sei?» Tu vai, ma dopo le 8. Che cosa rispondi?",
+    "options": [
+      "No, ieri sono stato a casa",
+      "Sì, ma arrivo tardi",
+      "Sì, sono arrivato alle 7",
+      "Grazie, buona notte"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La risposta dice che partecipi e avvisa che arrivi in ritardo. Le altre non rispondono alla domanda o parlano del passato."
+  },
+  {
+    "id": "ITA2-INT-015",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Completa il messaggio al medico: «Buongiorno dottoressa, mio figlio ha la febbre da ieri. ___ portarlo in ambulatorio oggi pomeriggio?» Quale parola manca?",
+    "options": [
+      "Devo che",
+      "Vorrei di",
+      "Posso",
+      "Può io"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per chiedere il permesso si usa posso seguito dall'infinito: posso portarlo. Le altre forme sono sbagliate."
+  },
+  {
+    "id": "ITA2-INT-016",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ricevi l'invito: «Caro Kofi, ti invito a cena domenica sera. Fammi sapere!» Tu accetti. Che cosa scrivi?",
+    "options": [
+      "Purtroppo non posso venire",
+      "Scusa, non ho capito",
+      "Buon viaggio, a presto",
+      "Grazie, vengo con piacere"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per accettare un invito si ringrazia e si dice che si va: vengo con piacere."
+  },
+  {
+    "id": "ITA2-INT-017",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Completa la mail all'agenzia per il lavoro: «Buongiorno, ho visto il vostro annuncio per un posto da magazziniere e ___ fare un colloquio.» Quale parola manca?",
+    "options": [
+      "vorrei",
+      "volevo che",
+      "voglio di",
+      "vorrebbe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Per chiedere qualcosa in modo gentile si usa vorrei più l'infinito. Vorrebbe è la terza persona, non io."
+  },
+  {
+    "id": "ITA2-INT-018",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Scrivi al direttore della scuola. Quale saluto iniziale è giusto?",
+    "options": [
+      "Ciao caro Direttore,",
+      "Gentile Direttore,",
+      "Caro mio,",
+      "Salve a tutti voi,"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A una persona importante che non conosci si scrive in modo formale: Gentile Direttore."
+  },
+  {
+    "id": "ITA2-INT-019",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "La tua collega Giulia ti scrive: «Grazie per l'aiuto di ieri!» Che cosa rispondi?",
+    "options": [
+      "Scusa, non posso",
+      "Piacere, Giulia",
+      "Prego, figurati!",
+      "Buongiorno, signora"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A un grazie si risponde con prego o figurati. Piacere si dice quando si conosce una persona."
+  },
+  {
+    "id": "ITA2-INT-020",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Completa la mail di scuse al datore di lavoro: «Gentile signora Bassi, mi scusi, oggi non posso venire al lavoro ___ sto male.» Quale parola manca?",
+    "options": [
+      "quindi",
+      "però",
+      "allora",
+      "perché"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per dare il motivo si usa perché: non posso venire perché sto male."
+  },
+  {
+    "id": "ITA2-INT-021",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Data di nascita». Che cosa scrive Amina, nata il 5 aprile 1988?",
+    "options": [
+      "05/04/1988",
+      "Casablanca, Marocco",
+      "Femminile",
+      "Anni 38"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Nel campo Data di nascita si scrivono giorno, mese e anno. In Italia il giorno va prima del mese."
+  },
+  {
+    "id": "ITA2-INT-022",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nel modulo c'è scritto «Residenza». Che cosa scrivi?",
+    "options": [
+      "Dakar, 1 maggio 1985",
+      "Via Verdi 3, Valdora",
+      "Coniugata con figli",
+      "Domani mattina alle 9"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "La residenza è l'indirizzo dove vivi abitualmente, con via, numero e città."
+  },
+  {
+    "id": "ITA2-INT-023",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Il padrone di casa ti scrive: «Domani alle 10 viene l'idraulico a controllare la caldaia.» Tu non sei a casa. Che cosa rispondi?",
+    "options": [
+      "Va bene, a domani alle 10",
+      "Grazie, la caldaia va bene",
+      "Non ci sono, va bene alle 15?",
+      "Sì, ieri è venuto alle undici"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Se non sei a casa, lo dici e proponi un altro orario. Le altre risposte accettano o non rispondono."
+  },
+  {
+    "id": "ITA2-INT-024",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Interazione",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Completa la mail all'ufficio della Questura: «Buongiorno, mi chiamo Olena e ___ ucraina. Vorrei sapere quali documenti servono per il rinnovo del permesso di soggiorno.» Quale parola manca?",
+    "options": [
+      "ho",
+      "siamo",
+      "sei",
+      "sono"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chi scrive parla di sé: io sono ucraina. Per la nazionalità si usa essere, non avere."
+  },
+  {
+    "id": "ITA2-AZI-001",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Entri in un ufficio pubblico alle dieci di mattina. Che cosa dici all'impiegata?",
+    "options": [
+      "Buongiorno.",
+      "Buonanotte.",
+      "Ciao ciao!",
+      "Arrivederci."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Di mattina, con una persona che non conosci, si saluta con buongiorno. Arrivederci si dice quando si va via, non quando si arriva."
+  },
+  {
+    "id": "ITA2-AZI-002",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Non hai capito quello che ha detto l'impiegato allo sportello. Che cosa gli chiedi?",
+    "options": [
+      "Può aspettare un momento, per favore?",
+      "Può ripetere, per favore?",
+      "Può chiamare il direttore, per favore?",
+      "Può darmi un modulo, per favore?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Quando non capisci, chiedi di ripetere: Può ripetere, per favore? Aspettare o chiamare il direttore non ti aiuta a capire."
+  },
+  {
+    "id": "ITA2-AZI-003",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Al bar vuoi ordinare qualcosa da bere. Che cosa dici al barista?",
+    "options": [
+      "Quanto le devo, signore?",
+      "Mi porta il conto?",
+      "Un cappuccino, per favore.",
+      "Scusi, dov'è il bagno?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per ordinare si dice che cosa si vuole e si aggiunge per favore. Quanto le devo si chiede quando si paga."
+  },
+  {
+    "id": "ITA2-AZI-004",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Arrivi al lavoro tardi perché i treni non passavano. Che cosa dici al capo?",
+    "options": [
+      "Scusi, oggi devo uscire prima.",
+      "Mi dispiace, domani non posso venire.",
+      "Grazie, oggi sono arrivato presto.",
+      "Scusi, il treno era in ritardo."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ti scusi e spieghi il motivo del ritardo: il treno era in ritardo. Le altre frasi parlano di un'altra cosa."
+  },
+  {
+    "id": "ITA2-AZI-005",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Un collega ti ha aiutato a portare una scatola pesante. Che cosa gli dici?",
+    "options": [
+      "Grazie mille!",
+      "Prego, figurati!",
+      "Scusa tanto!",
+      "Permesso!"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quando qualcuno ti aiuta, lo ringrazi: grazie mille. Prego si risponde a chi ti dice grazie."
+  },
+  {
+    "id": "ITA2-AZI-006",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Dal medico vuoi dire che senti dolore alla pancia. Quale frase è corretta?",
+    "options": [
+      "Mi fanno male la pancia.",
+      "Mi fa male la pancia.",
+      "Ho fatto male la pancia.",
+      "Mi fa malata la pancia."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Si dice mi fa male + parte del corpo al singolare: mi fa male la pancia. Mi fanno male va con un plurale, per esempio le gambe."
+  },
+  {
+    "id": "ITA2-AZI-007",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Un amico ti invita a cena sabato, ma tu lavori. Che cosa gli rispondi?",
+    "options": [
+      "Volentieri, sabato vengo!",
+      "Sì, a che ora sabato?",
+      "Mi dispiace, sabato lavoro.",
+      "Grazie, sabato porto il dolce."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per rifiutare con gentilezza dici mi dispiace e spieghi il motivo. Le altre frasi accettano l'invito."
+  },
+  {
+    "id": "ITA2-AZI-008",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Un'amica ti invita alla sua festa di compleanno e tu vuoi andare. Che cosa le rispondi?",
+    "options": [
+      "No, grazie, sono impegnato.",
+      "Purtroppo quel giorno lavoro.",
+      "Mi dispiace, non posso.",
+      "Certo, vengo volentieri!"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vuoi andare, quindi accetti: certo, vengo volentieri. Le altre risposte rifiutano l'invito."
+  },
+  {
+    "id": "ITA2-AZI-009",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Sei in una città che non conosci e non sai come arrivare in farmacia. Che cosa chiedi a un passante?",
+    "options": [
+      "Scusi, come arrivo alla farmacia?",
+      "Scusi, a che ora apre la farmacia?",
+      "Scusi, la farmacia è chiusa oggi?",
+      "Scusi, quanto costa in farmacia?"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Non sai la strada, quindi chiedi come arrivare. L'orario di apertura non ti dice dove si trova la farmacia."
+  },
+  {
+    "id": "ITA2-AZI-010",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Vuoi entrare nell'ufficio del direttore e la porta è aperta. Che cosa dici?",
+    "options": [
+      "Prego, si accomodi.",
+      "Permesso, posso?",
+      "Avanti, entri pure.",
+      "Ecco, tenga pure."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chi entra chiede permesso: permesso, posso? Prego, si accomodi lo dice il direttore a chi entra."
+  },
+  {
+    "id": "ITA2-AZI-011",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In ufficio fa caldo e vuoi aprire la finestra. Che cosa chiedi ai colleghi?",
+    "options": [
+      "Potete chiudere la finestra?",
+      "Chi ha aperto la finestra?",
+      "Posso aprire la finestra?",
+      "Dovete aprire la porta?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per chiedere il permesso si usa posso + infinito: posso aprire la finestra? Chiudere è il contrario di quello che vuoi."
+  },
+  {
+    "id": "ITA2-AZI-012",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Sull'autobus pesti per sbaglio il piede a una signora. Che cosa le dici?",
+    "options": [
+      "Oh, permesso!",
+      "Oh, prego!",
+      "Oh, salute!",
+      "Oh, mi scusi!"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Quando fai male a qualcuno per sbaglio, chiedi scusa: mi scusi. Permesso si dice per passare tra le persone."
+  },
+  {
+    "id": "ITA2-AZI-013",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Venerdì sera esci dal lavoro e saluti un collega. Che cosa gli dici?",
+    "options": [
+      "Buon fine settimana!",
+      "Buon appetito!",
+      "Buongiorno a tutti!",
+      "Ben arrivato!"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il venerdì sera, prima di sabato e domenica, si augura buon fine settimana. Ben arrivato si dice a chi arriva."
+  },
+  {
+    "id": "ITA2-AZI-014",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Squilla il telefono di casa e tu rispondi. Che cosa dici per primo?",
+    "options": [
+      "Avanti?",
+      "Pronto?",
+      "Prego?",
+      "Eccomi?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In italiano si risponde al telefono con pronto. Avanti si dice a chi bussa alla porta."
+  },
+  {
+    "id": "ITA2-AZI-015",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Al ristorante hai finito di mangiare e vuoi pagare. Che cosa dici al cameriere?",
+    "options": [
+      "Il menù, per favore.",
+      "Un tavolo, per favore.",
+      "Il conto, per favore.",
+      "Il resto, per favore."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per pagare al ristorante chiedi il conto. Il menù si chiede prima di ordinare."
+  },
+  {
+    "id": "ITA2-AZI-016",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Al mercato vuoi sapere il prezzo delle mele. Che cosa chiedi?",
+    "options": [
+      "Quanto pesano le mele?",
+      "Dove sono le mele?",
+      "Di dove sono le mele?",
+      "Quanto costano le mele?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il prezzo si chiede con quanto costa, al plurale quanto costano. Quanto pesano chiede il peso, non il prezzo."
+  },
+  {
+    "id": "ITA2-AZI-017",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Al colloquio di lavoro ti presenti alla responsabile. Che cosa dici?",
+    "options": [
+      "Piacere, sono Kofi Mensah.",
+      "Prego, si accomodi pure.",
+      "Salve, cerco la responsabile.",
+      "Grazie, a presto, signora."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In una situazione formale ci si presenta con piacere e il nome completo. Si accomodi lo dice chi riceve, non chi si presenta."
+  },
+  {
+    "id": "ITA2-AZI-018",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Al telefono l'operatore parla molto veloce e non lo capisci. Che cosa gli chiedi?",
+    "options": [
+      "Può parlare più forte?",
+      "Può parlare più lentamente?",
+      "Può richiamare domani?",
+      "Può aspettare un attimo?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il problema è la velocità, quindi chiedi di parlare più lentamente. Più forte riguarda il volume, non la velocità."
+  },
+  {
+    "id": "ITA2-AZI-019",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Una tua amica ha appena avuto un bambino. Che cosa le scrivi?",
+    "options": [
+      "Condoglianze!",
+      "Buon viaggio!",
+      "Congratulazioni!",
+      "In bocca al lupo!"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per una bella notizia come una nascita si dice congratulazioni. Condoglianze si dice quando muore qualcuno."
+  },
+  {
+    "id": "ITA2-AZI-020",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Domani tua figlia ha un esame difficile a scuola. Che cosa le dici stasera?",
+    "options": [
+      "Buona guarigione!",
+      "Congratulazioni!",
+      "Condoglianze!",
+      "In bocca al lupo!"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prima di un esame si augura fortuna con in bocca al lupo. Congratulazioni si dice dopo, se l'esame è andato bene."
+  },
+  {
+    "id": "ITA2-AZI-021",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Un collega è a casa malato con l'influenza. Che cosa gli scrivi in un messaggio?",
+    "options": [
+      "Guarisci presto!",
+      "Buon compleanno!",
+      "Buone vacanze!",
+      "Buon divertimento!"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A una persona malata si augura di stare meglio: guarisci presto. Le altre frasi si dicono in occasioni felici."
+  },
+  {
+    "id": "ITA2-AZI-022",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In un negozio vedi dei pantaloni e vuoi sapere se ti stanno bene prima di comprarli. Che cosa chiedi?",
+    "options": [
+      "Posso pagarli dopo?",
+      "Posso provarli?",
+      "Posso cambiarli?",
+      "Posso ordinarli?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Prima di comprare un vestito si chiede di provarlo. Cambiarli si chiede dopo l'acquisto."
+  },
+  {
+    "id": "ITA2-AZI-023",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Hai un appuntamento con un amico, ma sei ancora sull'autobus. Che cosa gli scrivi?",
+    "options": [
+      "Sono arrivato da dieci minuti.",
+      "Ti aspetto da dieci minuti.",
+      "Arrivo tra dieci minuti.",
+      "Sono già davanti al cinema."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sei ancora in viaggio, quindi dici quando arrivi: tra dieci minuti. Le altre frasi dicono che sei già arrivato."
+  },
+  {
+    "id": "ITA2-AZI-024",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Azioni",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Entri nella sala d'attesa del medico e vuoi sapere dopo chi è il tuo turno. Che cosa chiedi?",
+    "options": [
+      "Chi è il primo?",
+      "Chi è il medico?",
+      "Chi è di turno?",
+      "Chi è l'ultimo?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per sapere dopo chi tocca a te chiedi chi è l'ultimo arrivato. Chi è il primo ti dice chi entra subito, non il tuo posto."
+  },
+  {
+    "id": "ITA2-LES-001",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ogni mese pago al proprietario di casa l'___ di 600 euro:",
+    "options": [
+      "affitto",
+      "acconto",
+      "anticipo",
+      "ingresso"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il denaro che si paga ogni mese al proprietario per abitare in una casa si chiama affitto. L'acconto è solo una parte di un pagamento."
+  },
+  {
+    "id": "ITA2-LES-002",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "La ___ della luce arriva ogni due mesi:",
+    "options": [
+      "ricevuta",
+      "bolletta",
+      "busta paga",
+      "multa"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il foglio con la spesa per luce, gas o acqua si chiama bolletta. La ricevuta si riceve dopo aver pagato."
+  },
+  {
+    "id": "ITA2-LES-003",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "D'inverno in casa fa freddo perché il ___ non funziona:",
+    "options": [
+      "frigorifero",
+      "rubinetto",
+      "riscaldamento",
+      "ascensore"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il riscaldamento scalda la casa d'inverno. Il frigorifero tiene fresco il cibo, non scalda le stanze."
+  },
+  {
+    "id": "ITA2-LES-004",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Il medico mi ha fatto la ___ per l'antibiotico:",
+    "options": [
+      "ricevuta",
+      "fattura",
+      "prenotazione",
+      "ricetta"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il foglio del medico per comprare una medicina in farmacia si chiama ricetta. Ricevuta ha un suono simile ma è la prova di un pagamento."
+  },
+  {
+    "id": "ITA2-LES-005",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Mio figlio si è rotto un braccio e l'ho portato subito al ___:",
+    "options": [
+      "pronto soccorso",
+      "centro commerciale",
+      "ufficio postale",
+      "commissariato"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Per un'emergenza di salute si va al pronto soccorso dell'ospedale. Il commissariato è un ufficio della polizia."
+  },
+  {
+    "id": "ITA2-LES-006",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Come si chiama il negozio dove si comprano le medicine?",
+    "options": [
+      "ferramenta",
+      "farmacia",
+      "profumeria",
+      "macelleria"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Le medicine si comprano in farmacia. In ferramenta si comprano attrezzi e chiodi."
+  },
+  {
+    "id": "ITA2-LES-007",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Per spedire una lettera all'estero devo comprare un ___:",
+    "options": [
+      "biglietto",
+      "bollettino",
+      "francobollo",
+      "abbonamento"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sulla busta si mette il francobollo per spedirla. Il bollettino serve per pagare un conto alla posta."
+  },
+  {
+    "id": "ITA2-LES-008",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Per essere sicuro che la lettera arrivi, la mando ___ con ricevuta di ritorno:",
+    "options": [
+      "cartolina",
+      "telegramma",
+      "pacchetto",
+      "raccomandata"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La raccomandata con ricevuta di ritorno ti dà la prova che la lettera è arrivata. Una cartolina non ha questa prova."
+  },
+  {
+    "id": "ITA2-LES-009",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "All'anagrafe aspetto il mio turno davanti allo ___ numero 3:",
+    "options": [
+      "sportello",
+      "scontrino",
+      "stipendio",
+      "scaffale"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Negli uffici pubblici l'impiegato riceve le persone allo sportello. Lo scontrino è il foglio che dà la cassa di un negozio."
+  },
+  {
+    "id": "ITA2-LES-010",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Per la domanda di residenza devo compilare questo ___ e firmarlo:",
+    "options": [
+      "timbro",
+      "modulo",
+      "bollo",
+      "sportello"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il foglio da riempire con i propri dati si chiama modulo. Il timbro lo mette l'ufficio, non si compila."
+  },
+  {
+    "id": "ITA2-LES-011",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Dopo il pagamento alla posta l'impiegato mi dà la ___:",
+    "options": [
+      "ricetta",
+      "bolletta",
+      "ricevuta",
+      "busta paga"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dopo aver pagato si riceve la ricevuta, la prova del pagamento. La bolletta arriva prima, quando devi ancora pagare."
+  },
+  {
+    "id": "ITA2-LES-012",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Per alcune domande bisogna mettere sul foglio una ___ da bollo:",
+    "options": [
+      "tessera",
+      "busta",
+      "moneta",
+      "marca"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Si dice marca da bollo: un piccolo foglio adesivo che si compra in tabaccheria e si attacca alla domanda."
+  },
+  {
+    "id": "ITA2-LES-013",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Questa settimana lavoro di notte: il mio ___ comincia alle 22:",
+    "options": [
+      "turno",
+      "posto",
+      "tempo",
+      "giro"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L'orario di lavoro che cambia tra i dipendenti si chiama turno: turno di notte, turno di giorno."
+  },
+  {
+    "id": "ITA2-LES-014",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Alla fine del mese ricevo la ___ con lo stipendio e le trattenute:",
+    "options": [
+      "bolletta",
+      "busta paga",
+      "ricetta",
+      "carta d'identità"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il documento che mostra lo stipendio del mese e le trattenute si chiama busta paga."
+  },
+  {
+    "id": "ITA2-LES-015",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ad agosto il ristorante chiude tre settimane e tutti i dipendenti vanno in ___:",
+    "options": [
+      "pensione",
+      "malattia",
+      "ferie",
+      "prova"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "I giorni di riposo pagati del lavoratore si chiamano ferie. In pensione si va alla fine della vita lavorativa, non per tre settimane."
+  },
+  {
+    "id": "ITA2-LES-016",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "La ditta cerca personale: vuole ___ due nuovi operai:",
+    "options": [
+      "licenziare",
+      "dimettere",
+      "pensionare",
+      "assumere"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Una ditta che cerca personale vuole assumere, cioè dare lavoro. Licenziare è il contrario: mandare via un lavoratore."
+  },
+  {
+    "id": "ITA2-LES-017",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Qual è il contrario di «assumere» un lavoratore?",
+    "options": [
+      "licenziare",
+      "promuovere",
+      "formare",
+      "pagare"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Assumere vuol dire dare un lavoro; licenziare vuol dire toglierlo. Promuovere vuol dire dare un posto più alto nella stessa ditta."
+  },
+  {
+    "id": "ITA2-LES-018",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ho firmato un ___ di lavoro a tempo indeterminato:",
+    "options": [
+      "contributo",
+      "contratto",
+      "concorso",
+      "contatto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'accordo scritto tra lavoratore e datore di lavoro si chiama contratto. Il contributo è una somma versata, per esempio per la pensione."
+  },
+  {
+    "id": "ITA2-LES-019",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Prendo l'autobus ogni giorno, quindi ho fatto l'___ mensile:",
+    "options": [
+      "appuntamento",
+      "indirizzo",
+      "abbonamento",
+      "orario"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per viaggiare tutto il mese si compra l'abbonamento mensile. L'orario dice solo a che ora passa l'autobus."
+  },
+  {
+    "id": "ITA2-LES-020",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Il treno per Milano parte dal ___ 4:",
+    "options": [
+      "vagone",
+      "posto",
+      "cancello",
+      "binario"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In stazione i treni partono dai binari, numerati. Il vagone è una parte del treno, non il luogo da cui parte."
+  },
+  {
+    "id": "ITA2-LES-021",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Scendo alla prossima ___ dell'autobus:",
+    "options": [
+      "fermata",
+      "corsia",
+      "corsa",
+      "partenza"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il punto dove l'autobus si ferma per far salire e scendere le persone si chiama fermata. La corsa è il viaggio dell'autobus."
+  },
+  {
+    "id": "ITA2-LES-022",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Appena salgo sull'autobus devo ___ il biglietto:",
+    "options": [
+      "consegnare",
+      "convalidare",
+      "noleggiare",
+      "restituire"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il biglietto si convalida nella macchinetta quando si sale. Non si consegna all'autista."
+  },
+  {
+    "id": "ITA2-LES-023",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "La madre di mia madre è mia:",
+    "options": [
+      "zia",
+      "suocera",
+      "nonna",
+      "cugina"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La madre della mamma o del papà è la nonna. La suocera è la madre del marito o della moglie."
+  },
+  {
+    "id": "ITA2-LES-024",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Il marito di mia figlia è mio:",
+    "options": [
+      "cognato",
+      "nipote",
+      "suocero",
+      "genero"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il marito della figlia si chiama genero. Il cognato è il fratello del marito o il marito della sorella."
+  },
+  {
+    "id": "ITA2-LES-025",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Il fratello di mio marito è mio:",
+    "options": [
+      "cognato",
+      "genero",
+      "zio",
+      "suocero"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il fratello del marito o della moglie è il cognato. Il suocero è il padre del marito."
+  },
+  {
+    "id": "ITA2-LES-026",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Fuori piove, quindi prendo l'___:",
+    "options": [
+      "orologio",
+      "ombrello",
+      "asciugamano",
+      "accappatoio"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con la pioggia si usa l'ombrello. L'asciugamano serve dopo la doccia."
+  },
+  {
+    "id": "ITA2-LES-027",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Fa freddo: al collo metto la ___ di lana:",
+    "options": [
+      "scarpa",
+      "cintura",
+      "sciarpa",
+      "giacca"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "La sciarpa si mette intorno al collo. Scarpa ha un suono simile ma si mette ai piedi."
+  },
+  {
+    "id": "ITA2-LES-028",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Al supermercato compro un ___ di latte:",
+    "options": [
+      "chilo",
+      "metro",
+      "pezzo",
+      "litro"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il latte è un liquido e si misura in litri. Il chilo si usa per pane, frutta, carne."
+  },
+  {
+    "id": "ITA2-LES-029",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Oggi è lunedì: dopodomani è:",
+    "options": [
+      "mercoledì",
+      "martedì",
+      "giovedì",
+      "domenica"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dopodomani vuol dire tra due giorni: dopo lunedì vengono martedì e poi mercoledì. Martedì è domani."
+  },
+  {
+    "id": "ITA2-LES-030",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Qual è il contrario di «in anticipo»?",
+    "options": [
+      "in orario",
+      "in ritardo",
+      "in fretta",
+      "in tempo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In anticipo vuol dire prima dell'ora giusta, in ritardo dopo. In orario vuol dire proprio all'ora giusta."
+  },
+  {
+    "id": "ITA2-LES-031",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Il medico di famiglia del servizio sanitario si chiama anche medico di:",
+    "options": [
+      "turno",
+      "guardia",
+      "base",
+      "reparto"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il medico di famiglia si chiama anche medico di base. Il medico di guardia lavora di notte e nei festivi, quando il medico di base non c'è."
+  },
+  {
+    "id": "ITA2-LES-032",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Lessico",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Con la ___ sanitaria prenoto le visite e prendo le medicine:",
+    "options": [
+      "patente",
+      "bolletta",
+      "busta",
+      "tessera"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "La tessera sanitaria contiene il codice fiscale e serve per visite e medicine. La patente serve per guidare."
+  },
+  {
+    "id": "ITA2-GRA-001",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho comprato ___ zaino nuovo per mio figlio.» Quale articolo manca?",
+    "options": [
+      "uno",
+      "un",
+      "una",
+      "un'"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Zaino è maschile e comincia con z: vuole l'articolo uno. Un si usa davanti agli altri nomi maschili, come un libro."
+  },
+  {
+    "id": "ITA2-GRA-002",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Dove sono ___ studenti del corso serale?» Quale articolo manca?",
+    "options": [
+      "i",
+      "gli",
+      "le",
+      "lo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Studenti è maschile plurale e comincia con s più consonante: l'articolo è gli. I va davanti agli altri nomi, come i ragazzi."
+  },
+  {
+    "id": "ITA2-GRA-003",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«___ ufficio anagrafe apre alle nove.» Quale articolo va all'inizio?",
+    "options": [
+      "Lo",
+      "Il",
+      "L'",
+      "La"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Davanti a un nome maschile singolare che comincia con vocale, lo diventa l': l'ufficio. Il e lo interi qui non vanno bene."
+  },
+  {
+    "id": "ITA2-GRA-004",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho trovato ___ appartamento in via Roma.» Quale articolo manca?",
+    "options": [
+      "un'",
+      "uno",
+      "lo",
+      "un"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Appartamento è maschile: l'articolo indeterminativo è un, senza apostrofo. Un' con l'apostrofo si usa solo con i nomi femminili, come un'amica."
+  },
+  {
+    "id": "ITA2-GRA-005",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«___ negozi del centro chiudono alle otto.» Quale articolo va all'inizio?",
+    "options": [
+      "I",
+      "Gli",
+      "Le",
+      "Li"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Negozi è maschile plurale e comincia con una consonante semplice: l'articolo è i. Gli si usa davanti a vocale, s più consonante o z."
+  },
+  {
+    "id": "ITA2-GRA-006",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Cerco ___ stanza in affitto vicino alla stazione.» Quale articolo manca?",
+    "options": [
+      "un",
+      "una",
+      "uno",
+      "lo"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stanza è femminile singolare e comincia con consonante: l'articolo indeterminativo è una. Un e uno sono maschili."
+  },
+  {
+    "id": "ITA2-GRA-007",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Stasera ceno ___ Giulia, a casa sua.» Quale preposizione manca?",
+    "options": [
+      "a",
+      "di",
+      "da",
+      "in"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per dire a casa di una persona si usa da: ceno da Giulia. Ceno a Giulia non è corretto."
+  },
+  {
+    "id": "ITA2-GRA-008",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Li Wei tiene il passaporto ___ cassetto.» Quale preposizione manca?",
+    "options": [
+      "al",
+      "dal",
+      "del",
+      "nel"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il passaporto sta dentro il cassetto: si usa in più l'articolo il, cioè nel. Dal indica la provenienza e non va bene con tenere."
+  },
+  {
+    "id": "ITA2-GRA-009",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Il libro di italiano è ___ tavolo della cucina.» Quale preposizione manca?",
+    "options": [
+      "sul",
+      "al",
+      "nel",
+      "del"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il libro è appoggiato sopra il tavolo: si usa su più il, cioè sul. Nel tavolo vorrebbe dire dentro il tavolo."
+  },
+  {
+    "id": "ITA2-GRA-010",
+    "section": "lingua",
+    "test": 1,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Questa sera andiamo ___ cinema con i bambini.» Quale preposizione manca?",
+    "options": [
+      "a",
+      "al",
+      "nel",
+      "in"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Si dice andare al cinema, con la preposizione articolata. A cinema senza articolo e in cinema non sono corretti."
+  },
+  {
+    "id": "ITA2-GRA-011",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«La riunione è ___ tre alle cinque.» Quale preposizione manca?",
+    "options": [
+      "alle",
+      "delle",
+      "dalle",
+      "dai"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Per indicare l'inizio di un orario si usa da più l'articolo le: dalle tre alle cinque. Delle e dai non indicano l'inizio."
+  },
+  {
+    "id": "ITA2-GRA-012",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ho preparato un regalo ___ la mia vicina.» Quale preposizione manca?",
+    "options": [
+      "a",
+      "di",
+      "da",
+      "per"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Per indicare la persona che riceve il regalo davanti a la mia vicina si usa per. Con a servirebbe la forma articolata alla, non a la."
+  },
+  {
+    "id": "ITA2-GRA-013",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Kofi abita ___ Torino da cinque anni.» Quale preposizione manca?",
+    "options": [
+      "a",
+      "in",
+      "da",
+      "per"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Con il nome di una città si usa a: abita a Torino. In si usa con le nazioni e le regioni, come in Italia."
+  },
+  {
+    "id": "ITA2-GRA-014",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Noi ___ al mercato il sabato mattina.» Quale forma del verbo andare è corretta?",
+    "options": [
+      "andamo",
+      "andiamo",
+      "vadiamo",
+      "vanno"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il presente di andare per noi è andiamo. Vanno è la forma di loro e non si accorda con noi."
+  },
+  {
+    "id": "ITA2-GRA-015",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«I bambini ___ i compiti dopo cena.» Quale forma del verbo fare è corretta?",
+    "options": [
+      "faccono",
+      "fano",
+      "fanno",
+      "fate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Il presente di fare per loro è fanno, con due n. Fate è la forma di voi."
+  },
+  {
+    "id": "ITA2-GRA-016",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Io ___ lavorare anche sabato.» Quale forma del verbo dovere è corretta?",
+    "options": [
+      "dovo",
+      "devi",
+      "deve",
+      "devo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il presente di dovere per io è devo. Devi è la forma di tu e deve quella di lui o lei."
+  },
+  {
+    "id": "ITA2-GRA-017",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Domani i miei cugini ___ da Tirana.» Quale forma del verbo venire è corretta?",
+    "options": [
+      "vengono",
+      "venono",
+      "veniono",
+      "vienono"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Il presente di venire per loro è vengono, con la g. Le altre forme non esistono."
+  },
+  {
+    "id": "ITA2-GRA-018",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Tu ___ un caffè o un tè?» Quale forma del verbo volere è corretta?",
+    "options": [
+      "voi",
+      "vuoi",
+      "vuole",
+      "voli"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il presente di volere per tu è vuoi. Voi è un pronome, non una forma del verbo; vuole è la forma di lui o lei."
+  },
+  {
+    "id": "ITA2-GRA-019",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Io e Amina ___ stanche dopo il turno.» Quale forma del verbo essere è corretta?",
+    "options": [
+      "sono",
+      "siete",
+      "siamo",
+      "semo"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Io e Amina equivale a noi: il presente di essere è siamo. Siete è la forma di voi."
+  },
+  {
+    "id": "ITA2-GRA-020",
+    "section": "lingua",
+    "test": 2,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ieri Yusuf ___ in ufficio alle otto.» Quale forma del passato prossimo è corretta?",
+    "options": [
+      "ha arrivato",
+      "è arrivata",
+      "ha arrivata",
+      "è arrivato"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Arrivare forma il passato prossimo con essere e il participio si accorda con Yusuf, maschile singolare: è arrivato."
+  },
+  {
+    "id": "ITA2-GRA-021",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Sabato io e mio marito ___ tutta la casa.» Quale forma del passato prossimo è corretta?",
+    "options": [
+      "abbiamo pulito",
+      "siamo puliti",
+      "abbiamo puliti",
+      "hanno pulito"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pulire usa avere e il participio non si accorda con il soggetto: abbiamo pulito. Io e mio marito vuole noi, non loro."
+  },
+  {
+    "id": "ITA2-GRA-022",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Le ragazze ___ al mare domenica.» Quale forma del passato prossimo è corretta?",
+    "options": [
+      "sono andati",
+      "sono andate",
+      "hanno andato",
+      "è andata"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Andare usa essere e il participio si accorda con le ragazze, femminile plurale: sono andate."
+  },
+  {
+    "id": "ITA2-GRA-023",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Ieri sera ___ un film alla televisione.» Quale forma del passato prossimo è corretta?",
+    "options": [
+      "sono visto",
+      "ho vedato",
+      "ho visto",
+      "ho vista"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vedere usa avere e ha il participio irregolare visto. Senza un pronome prima del verbo, il participio non cambia: ho visto un film."
+  },
+  {
+    "id": "ITA2-GRA-024",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«La raccomandata? L'ho ___ ieri alla posta.» Quale participio è corretto?",
+    "options": [
+      "spedito",
+      "speduta",
+      "spediti",
+      "spedita"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Il pronome l' sta per la raccomandata, femminile: con il pronome diretto prima del verbo il participio si accorda, l'ho spedita."
+  },
+  {
+    "id": "ITA2-GRA-025",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Stamattina Giulia ___ tardi.» Quale forma del passato prossimo è corretta?",
+    "options": [
+      "si è svegliata",
+      "si ha svegliata",
+      "si è svegliato",
+      "ha svegliata"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I verbi riflessivi usano essere e il participio si accorda con il soggetto: Giulia si è svegliata."
+  },
+  {
+    "id": "ITA2-GRA-026",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«___ madre lavora come badante a Verona.» Quale possessivo è corretto?",
+    "options": [
+      "La mia",
+      "Mia",
+      "Il mio",
+      "Mio"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con i nomi di famiglia al singolare, come madre, il possessivo non prende l'articolo: mia madre. Il mio e mio sono maschili."
+  },
+  {
+    "id": "ITA2-GRA-027",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Questi sono ___ fratelli, Ahmed e Karim.» Quale possessivo è corretto?",
+    "options": [
+      "miei",
+      "mie",
+      "i miei",
+      "le mie"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Con i nomi di famiglia al plurale l'articolo torna: i miei fratelli. Mie e le mie sono femminili."
+  },
+  {
+    "id": "ITA2-GRA-028",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ana è venuta alla festa con ___ marito.» Quale possessivo è corretto?",
+    "options": [
+      "il suo",
+      "sua",
+      "la sua",
+      "suo"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Marito è un nome di famiglia al singolare: il possessivo va senza articolo, suo marito. Sua è femminile."
+  },
+  {
+    "id": "ITA2-GRA-029",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Ho perso ___ chiavi di casa.» Quale possessivo è corretto?",
+    "options": [
+      "le mie",
+      "mie",
+      "i miei",
+      "la mia"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Chiavi è femminile plurale e non è un nome di famiglia: serve l'articolo, le mie chiavi. La mia è singolare."
+  },
+  {
+    "id": "ITA2-GRA-030",
+    "section": "lingua",
+    "test": 3,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Il biglietto dell'autobus? ___ compro in tabaccheria.» Quale pronome è corretto?",
+    "options": [
+      "La",
+      "Lo",
+      "Li",
+      "Gli"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Il biglietto è maschile singolare: il pronome diretto è lo. Gli è un pronome indiretto e significa a lui."
+  },
+  {
+    "id": "ITA2-GRA-031",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Le medicine? ___ prendo dopo i pasti.» Quale pronome è corretto?",
+    "options": [
+      "La",
+      "Li",
+      "Le",
+      "Gli"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Le medicine è femminile plurale: il pronome diretto è le. Li si usa per il maschile plurale."
+  },
+  {
+    "id": "ITA2-GRA-032",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Conosci i vicini del terzo piano? Sì, ___ conosco bene.» Quale pronome è corretto?",
+    "options": [
+      "gli",
+      "le",
+      "lo",
+      "li"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "I vicini è maschile plurale e conoscere regge un complemento diretto: il pronome è li. Gli è indiretto e qui non va bene."
+  },
+  {
+    "id": "ITA2-GRA-033",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Chiami tu la maestra? Sì, ___ chiamo domani.» Quale pronome è corretto?",
+    "options": [
+      "la",
+      "le",
+      "lo",
+      "gli"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La maestra è femminile singolare e chiamare regge un complemento diretto: la chiamo. Le sarebbe plurale o indiretto."
+  },
+  {
+    "id": "ITA2-GRA-034",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "«Nel mio palazzo ___ due ascensori.» Quale forma è corretta?",
+    "options": [
+      "c'è",
+      "ci sono",
+      "ci è",
+      "ce sono"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Con un nome plurale, due ascensori, si usa ci sono. C'è si usa con un nome singolare."
+  },
+  {
+    "id": "ITA2-GRA-035",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Scusi, ___ una farmacia qui vicino?» Quale forma è corretta?",
+    "options": [
+      "ci sono",
+      "ce",
+      "c'è",
+      "ci ha"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Con un nome singolare, una farmacia, si usa c'è. Ci sono va con i nomi plurali."
+  },
+  {
+    "id": "ITA2-GRA-036",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Amore, ___ il pane quando torni!» Quale forma dell'imperativo è corretta?",
+    "options": [
+      "comprare",
+      "comprate",
+      "comprato",
+      "compra"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "L'imperativo di comprare per tu è compra. Comprate è la forma per voi e l'infinito comprare si usa solo nell'imperativo negativo."
+  },
+  {
+    "id": "ITA2-GRA-037",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "«Signora, ___ qui in basso, per favore.» Quale forma dell'imperativo è corretta?",
+    "options": [
+      "firmi",
+      "firmare",
+      "firmato",
+      "firmando"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Con Lei, la forma di cortesia, l'imperativo di firmare è firmi. L'infinito, il participio e il gerundio non danno un ordine."
+  },
+  {
+    "id": "ITA2-GRA-038",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Luca, non ___ la finestra, fa freddo!» Quale forma è corretta?",
+    "options": [
+      "apri",
+      "aprire",
+      "apre",
+      "aperto"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "L'imperativo negativo per tu si forma con non più l'infinito: non aprire. Apri si usa solo senza non."
+  },
+  {
+    "id": "ITA2-GRA-039",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«A Li Wei ___ molto gli spaghetti.» Quale forma del verbo piacere è corretta?",
+    "options": [
+      "piace",
+      "piacono",
+      "piacciono",
+      "piaciono"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Con piacere il soggetto è la cosa che piace: gli spaghetti è plurale, quindi piacciono. Piace va con una cosa sola."
+  },
+  {
+    "id": "ITA2-GRA-040",
+    "section": "lingua",
+    "test": 4,
+    "module": 1,
+    "domain": "ita2Grammatica",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "«Al mercato ho comprato tre ___ per la spremuta.» Quale plurale è corretto?",
+    "options": [
+      "arancie",
+      "arancia",
+      "arancii",
+      "arance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "I nomi in -cia con una consonante prima della c fanno il plurale in -ce: arancia, arance. Arancie non è la forma corretta."
+  }
+]

@@ -7,6 +7,7 @@ import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { ExamV2Config } from "@/lib/v2/types";
 import { v2Routes } from "@/lib/v2/registry";
 import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * The shared Tigertest Premium paywall, worded for a v2 exam. Checkout
@@ -14,10 +15,11 @@ import { V2_PAYWALL_PREFIX } from "@/lib/v2/premium";
  */
 export function useV2Paywall(exam: ExamV2Config, location: string) {
   const routes = v2Routes(exam);
+  const ui = useV2Ui().dashboard;
   const upgrade = useUpgradeFlow(`${exam.id}_${location}`, routes.dashboard);
   return {
     open: (itemKey: string, itemLabel: string) =>
-      upgrade.openPaywall(`${exam.id}_premium`, `${V2_PAYWALL_PREFIX}${exam.id}_${itemKey}`, `${exam.shortName} ${itemLabel}`),
+      upgrade.openPaywall(`${exam.id}_premium`, `${V2_PAYWALL_PREFIX}${exam.id}_${itemKey}`, ui.paywallItem(exam.shortName, itemLabel)),
     modalProps: {
       open: upgrade.paywallOpen,
       onOpenChange: upgrade.onOpenChange,

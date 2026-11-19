@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * Small scientific calculator for the tools drawer. Evaluates with a
@@ -117,6 +118,7 @@ const KEYS: string[][] = [
 export function Calculator() {
   const [expr, setExpr] = useState("");
   const [result, setResult] = useState<string | null>(null);
+  const t = useV2Ui().runner;
 
   const press = (k: string) => {
     if (k === "C") { setExpr(""); setResult(null); return; }
@@ -126,7 +128,7 @@ export function Calculator() {
         const v = evaluate(expr);
         setResult(Number.isInteger(v) ? String(v) : String(Number(v.toPrecision(10))));
       } catch {
-        setResult("Error");
+        setResult(t.calcError);
       }
       return;
     }
@@ -144,7 +146,7 @@ export function Calculator() {
           inputMode="none"
           className="w-full bg-transparent text-right text-lg tabular-nums outline-none"
           placeholder="0"
-          aria-label="Calculator expression"
+          aria-label={t.calcExpression}
         />
         <div role="status" aria-live="polite" aria-atomic="true" className="min-h-6 text-2xl font-bold tabular-nums">{result ?? ""}</div>
       </div>
@@ -154,7 +156,7 @@ export function Calculator() {
             key={i}
             type="button"
             onClick={() => press(k)}
-            aria-label={k === "⌫" ? "Delete last character" : k === "C" ? "Clear calculator" : k}
+            aria-label={k === "⌫" ? t.calcDelete : k === "C" ? t.calcClear : k}
             className={`v2-tap rounded-lg border text-sm font-semibold ${k === "=" ? "border-brand bg-brand text-white" : /^[0-9.]$/.test(k) ? "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900" : "border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800"}`}
           >
             {k}
@@ -165,7 +167,7 @@ export function Calculator() {
         <button type="button" onClick={() => press("e")} className="v2-tap rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-800 text-sm font-semibold">e</button>
         <button type="button" onClick={() => press("=")} className="v2-tap col-span-2 rounded-lg border border-brand bg-brand text-sm font-semibold text-white">=</button>
       </div>
-      <p className="mt-2 text-[11px] text-gray-500 dark:text-gray-400">Trig functions take degrees. Type directly or tap the keys.</p>
+      <p className="mt-2 text-[11px] text-gray-500 dark:text-gray-400">{t.calcHint}</p>
     </div>
   );
 }

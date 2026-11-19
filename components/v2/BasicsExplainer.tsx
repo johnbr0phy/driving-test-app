@@ -9,6 +9,7 @@ import { ExamV2Config } from "@/lib/v2/types";
 import { BasicsSkill } from "@/lib/v2/basics";
 import { ExplainerBeat, ExplainerBeatTiming, ExplainerManifest, beatOffsets, buildExplainer, estimateTimings, explainerAudioUrl, explainerManifestUrl, explainerTemplate, hasExplainer, words } from "@/lib/v2/explainer";
 import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
+import { useV2Ui } from "@/lib/v2/ui";
 
 /**
  * The 30-second explainer for one Basics skill: the tiger walks through the
@@ -28,11 +29,6 @@ import { getTigerAsset, TigerExpression } from "@/lib/tigerAssets";
 type Status = "ready" | "starting" | "audio" | "silent";
 
 const FACES: Record<ExplainerBeat["id"], TigerExpression> = { rule: 3, trick: 4, bad: 6, good: 1, work1: 4, work2: 1, close: 2 };
-const LABELS: Record<ExplainerBeat["id"], string> = { rule: "The rule", trick: "The trick", bad: "Doesn't work", good: "Works", work1: "Worked example", work2: "One more", close: "" };
-const PLAY_COPY = {
-  sentence: "The rule, the trick, one sentence that breaks it and one that follows it. Sound on.",
-  worked: "The rule, the trick, then two examples worked step by step. Sound on.",
-};
 
 /** After Play, how long to wait for the manifest before running silently. */
 const MANIFEST_WAIT_MS = 8000;
@@ -48,6 +44,9 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
   /** "Read it instead" on the Play screen, when the text card is the alternative. */
   onRead?: () => void;
 }) {
+  const copy = useV2Ui().drill;
+  const LABELS: Record<ExplainerBeat["id"], string> = copy.beatLabels;
+  const PLAY_COPY = { sentence: copy.playCopySentence, worked: copy.playCopyWorked };
   const audioEnabled = hasExplainer(skill);
   const beats = useMemo(() => buildExplainer(skill), [skill]);
   const template = explainerTemplate(skill) ?? "sentence";
@@ -219,14 +218,14 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
   });
 
   // The real length once the manifest is in; before that, no number to flicker.
-  const length = manifest ? `${Math.round(manifest.duration)} seconds` : "half a minute";
-  const subline = status === "silent" ? `Explainer · ${Math.round(total)} seconds · no sound` : `Explainer · ${length}`;
+  const length = manifest ? copy.seconds(Math.round(manifest.duration)) : copy.halfMinute;
+  const subline = status === "silent" ? copy.explainerSilent(Math.round(total)) : copy.explainerLength(length);
 
   return (
-    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" aria-label={`${skill.name} explainer`}>
+    <AccessibleOverlay onClose={onClose} className="fixed inset-0 z-[95] flex flex-col bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-50" aria-label={copy.explainerAria(skill.name)}>
       <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
         <div className="flex items-center gap-2">
-          <button type="button" onClick={onClose} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label="Close the explainer">
+          <button type="button" onClick={onClose} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={copy.closeExplainerAria}>
             <X className="h-5 w-5" />
           </button>
           <div className="min-w-0 flex-1">
@@ -235,14 +234,14 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
           </div>
           {onRead && (
             <button type="button" onClick={onRead} className="flex items-center gap-1.5 rounded-full border-2 border-gray-200 dark:border-gray-800 px-3 py-1.5 text-sm font-semibold text-brand-dark">
-              <BookOpen className="h-4 w-4" /> Read it
+              <BookOpen className="h-4 w-4" /> {copy.readIt}
             </button>
           )}
         </div>
         <div className="mt-2 flex gap-1">
           {timings.map((tm, k) =>
             beats[k].id === "close" ? null : (
-              <button key={tm.id} type="button" disabled={!running} onClick={() => seek(tm.start)} className="-my-[9px] flex-1 py-[9px]" aria-label={`Jump to ${LABELS[tm.id]}`}>
+              <button key={tm.id} type="button" disabled={!running} onClick={() => seek(tm.start)} className="-my-[9px] flex-1 py-[9px]" aria-label={copy.jumpTo(LABELS[tm.id])}>
                 <span className="block h-1.5 overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
                   <span className="block h-full rounded-full bg-brand transition-[width] duration-150" style={{ width: running ? `${Math.round(Math.min(1, Math.max(0, (t - tm.start) / (tm.end - tm.start))) * 100)}%` : "0%" }} />
                 </span>
@@ -261,14 +260,14 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
                 {LABELS[beat.id] && <SectionLabel>{LABELS[beat.id]}</SectionLabel>}
                 <BeatBody beat={beat} spoken={spoken} />
               </Bubble>
-              {paused && !closing && <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Paused · tap to continue</div>}
+              {paused && !closing && <div className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">{copy.pausedTap}</div>}
             </>
           ) : (
             <>
               <Image src={getTigerAsset(exam.id, 3)} alt="" width={112} height={112} className="h-28 w-28 object-contain" />
               <Bubble>
                 <SectionLabel>{skill.sub}</SectionLabel>
-                <p className="text-2xl font-bold leading-tight">{skill.name}, in {length}.</p>
+                <p className="text-2xl font-bold leading-tight">{copy.playTitle(skill.name, length)}</p>
                 <p className="mt-2 text-[17px] leading-relaxed text-gray-600 dark:text-gray-300">{PLAY_COPY[template]}</p>
               </Bubble>
             </>
@@ -281,16 +280,16 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
           {!running ? (
             <>
               <button type="button" onClick={onDone} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
-                Skip
+                {copy.skip}
               </button>
               <button type="button" onClick={start} disabled={status === "starting"} className="v2-tap flex flex-1 items-center justify-center gap-2 rounded-xl bg-brand text-base font-bold text-white disabled:opacity-70">
-                <Play className="h-5 w-5 fill-current" /> {status === "starting" ? "Starting..." : "Play"}
+                <Play className="h-5 w-5 fill-current" /> {status === "starting" ? copy.starting : copy.play}
               </button>
             </>
           ) : closing || done ? (
             <>
-              <button type="button" onClick={() => seek(0)} className="v2-tap flex items-center justify-center gap-1.5 rounded-xl border-2 border-gray-200 dark:border-gray-800 px-4 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-label="Replay">
-                <RotateCcw className="h-4 w-4" /> Replay
+              <button type="button" onClick={() => seek(0)} className="v2-tap flex items-center justify-center gap-1.5 rounded-xl border-2 border-gray-200 dark:border-gray-800 px-4 text-sm font-semibold text-gray-700 dark:text-gray-200" aria-label={copy.replay}>
+                <RotateCcw className="h-4 w-4" /> {copy.replay}
               </button>
               <button type="button" onClick={onDone} className="v2-tap flex-1 rounded-xl bg-brand text-base font-bold text-white">
                 {doneLabel}
@@ -298,12 +297,12 @@ export function BasicsExplainer({ exam, skill, doneLabel, onDone, onClose, onRea
             </>
           ) : (
             <>
-              <button type="button" onClick={togglePause} className="v2-tap flex w-12 items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200" aria-label={paused ? "Play" : "Pause"}>
+              <button type="button" onClick={togglePause} className="v2-tap flex w-12 items-center justify-center rounded-xl border-2 border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-200" aria-label={paused ? copy.play : copy.pause}>
                 {paused ? <Play className="h-5 w-5" /> : <Pause className="h-5 w-5" />}
               </button>
-              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{buffering ? "Loading sound..." : "Tap anywhere to pause"}</div>
+              <div className="flex-1 text-center text-sm text-gray-500 dark:text-gray-400">{buffering ? copy.loadingSound : copy.tapToPause}</div>
               <button type="button" onClick={onDone} className="v2-tap px-3 text-sm font-semibold text-gray-500 dark:text-gray-400">
-                Skip
+                {copy.skip}
               </button>
             </>
           )}
@@ -328,6 +327,7 @@ function SectionLabel({ children }: { children: ReactNode }) {
 
 /** One beat's text, lit word by word; the Sentence template adds the strike and the fix, the Worked template the steps. */
 function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
+  const copy = useV2Ui().drill;
   const { showAt, tailAt } = beatOffsets(beat);
   const tokens = beat.tokens ?? words(beat.show).map((text) => ({ text, changed: false }));
   const showDone = spoken >= showAt + tokens.length;
@@ -358,7 +358,7 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
           return (
             <span key={i} className={`transition-colors duration-150 ${cls}`}>
               {tok.text}
-              {marked && <span className="sr-only">{beat.id === "bad" ? " (wrong word)" : " (fixed)"}</span>}
+              {marked && <span className="sr-only">{beat.id === "bad" ? copy.wrongWordSr : copy.fixedSr}</span>}
               {i < tokens.length - 1 ? " " : ""}
             </span>
           );
@@ -367,7 +367,7 @@ function BeatBody({ beat, spoken }: { beat: ExplainerBeat; spoken: number }) {
       {sentence && showDone && (
         <div className={`v2-pop flex items-center gap-2 text-[15px] font-bold ${beat.id === "bad" ? "text-red-600 dark:text-red-300" : "text-green-700 dark:text-green-300"}`}>
           <span className="text-xl leading-none" aria-hidden="true">{beat.id === "bad" ? "✗" : "✓"}</span>
-          {beat.id === "bad" ? "Breaks the rule" : "Follows the rule"}
+          {beat.id === "bad" ? copy.breaksRule : copy.followsRule}
         </div>
       )}
       {worked ? (

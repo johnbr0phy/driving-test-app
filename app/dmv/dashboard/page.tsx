@@ -1,5 +1,6 @@
 "use client";
 
+import { startCheckout } from "@/lib/startCheckout";
 import { getTigerAsset } from "@/lib/tigerAssets";
 
 import { useEffect, useRef, useState, Suspense } from "react";
@@ -22,11 +23,9 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { DmvStatePrompt, DmvStateLine, useSuggestedState } from "@/components/dashboard/DmvStatePicker";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { trackBeginCheckout, trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
+import { trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
-import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
-import { checkoutAttribution } from "@/lib/funnel";
 
 function DashboardContent() {
   const router = useRouter();
@@ -224,56 +223,7 @@ function DashboardContent() {
   }, [hydrated, authLoading, user, firestoreLoaded, isPremium]);
 
   // Handle upgrade (redirect to Stripe)
-  const handleUpgrade = async () => {
-    if (!user?.email || !user?.uid) {
-      router.push("/signup");
-      return;
-    }
-
-    try {
-      const idToken = await auth.currentUser?.getIdToken();
-      if (!idToken) {
-        alert("Authentication error. Please sign in again.");
-        return;
-      }
-
-      const response = await fetch("/api/stripe/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${idToken}`,
-        },
-        body: JSON.stringify({
-          email: user.email,
-          returnUrl: window.location.origin,
-          ...checkoutAttribution(),
-          paywallVariant: paywallVariantForCheckout(),
-          paywallHit: paywallHitForCheckout(),
-          paywallReturn: paywallReturnForCheckout(),
-          location: paywallFeature,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (data.error) {
-        console.error("Checkout error:", data.error);
-        alert(`Error: ${data.error}`);
-        return;
-      }
-
-      if (data.checkoutUrl) {
-        trackBeginCheckout(paywallFeature);
-        window.location.href = data.checkoutUrl;
-      } else {
-        console.error("No checkout URL returned:", data);
-        alert("Failed to start checkout. Please try again.");
-      }
-    } catch (error) {
-      console.error("Checkout error:", error);
-      alert("Failed to start checkout. Please check your connection and try again.");
-    }
-  };
+  const handleUpgrade = () => startCheckout({ location: paywallFeature });
 
   // Compute completion states
   const trainingSetComplete = (id: number) => {

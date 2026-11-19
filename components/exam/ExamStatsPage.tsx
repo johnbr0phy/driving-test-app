@@ -9,6 +9,7 @@
 // Common Mistakes tab joins it once the exam has enough answers
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
+import { startCheckout } from "@/lib/startCheckout";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useStore } from "@/store/useStore";
@@ -17,9 +18,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useAccountNavigation } from "@/hooks/useAccountNavigation";
 import { signupForDestination } from "@/lib/authDestination";
 import { AccountLoadRetry } from "@/components/AccountLoadRetry";
-import { auth } from "@/lib/firebase";
-import { trackBeginCheckout, trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
-import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
+import { trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { PaywallModal } from "@/components/PaywallModal";
@@ -33,17 +32,8 @@ import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { examPaywallCopy } from "@/lib/examPaywallCopy";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { CommunityWrongQuestionsList } from "@/components/CommunityWrongQuestions";
-import {
-  GatedStatsList,
-  STATS_FREE_ROWS,
-  StatsHeaderCard,
-  StatsPageShell,
-  StatsSortBar,
-  StatsTabs,
-  accuracyChipColor,
-} from "@/components/stats/StatsParts";
+import { GatedStatsList, STATS_FREE_ROWS, StatsHeaderCard, StatsPageShell, StatsSortBar, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
-import { checkoutAttribution } from "@/lib/funnel";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -100,55 +90,15 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   // state version, since the analytics keys allow no hyphens).
   const paywallLocation = `${source.variantOf ?? source.id}_stats`;
 
-  const handleUpgrade = async () => {
-    if (!user?.email || !user?.uid) {
-      router.push(signupDestination);
-      return;
-    }
-    try {
-      const idToken = await auth.currentUser?.getIdToken();
-      if (!idToken) {
-        alert("Authentication error. Please sign in again.");
-        return;
-      }
-      const response = await fetch("/api/stripe/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: `Bearer ${idToken}` },
-        body: JSON.stringify({
-          email: user.email,
-          returnUrl: window.location.origin,
-          ...checkoutAttribution(),
-          returnPath: pathname,
-          paywallVariant: paywallVariantForCheckout(),
-          paywallHit: paywallHitForCheckout(),
-          paywallReturn: paywallReturnForCheckout(),
-          location: paywallLocation,
-        }),
-      });
-      const data = await response.json();
-      if (data.error) {
-        console.error("Checkout error:", data.error);
-        alert(`Error: ${data.error}`);
-        return;
-      }
-      if (data.checkoutUrl) {
-        trackBeginCheckout(paywallLocation);
-        window.location.href = data.checkoutUrl;
-      } else {
-        console.error("No checkout URL returned:", data);
-        alert("Failed to start checkout. Please try again.");
-      }
-    } catch (error) {
-      console.error("Checkout error:", error);
-      alert("Failed to start checkout. Please check your connection and try again.");
-    }
-  };
+  const handleUpgrade = () => startCheckout({ location: paywallLocation, returnPath: pathname });
 
   // Redirect guests to signup (Common Mistakes is open to them)
   const wantsCommunity = activeTab === "community";
+  // Back from a guest checkout: GuestPurchaseReturn is signing them in.
+  const purchaseReturn = searchParams.get("success") === "true" && !!searchParams.get("session_id");
   useEffect(() => {
-    if (accountReady && (!user || isGuest) && !wantsCommunity) router.replace(signupDestination);
-  }, [accountReady, user, isGuest, wantsCommunity, signupDestination, router]);
+    if (accountReady && (!user || isGuest) && !wantsCommunity && !purchaseReturn) router.replace(signupDestination);
+  }, [accountReady, user, isGuest, wantsCommunity, purchaseReturn, signupDestination, router]);
 
   const examQuestions = useMemo(() => getExamQuestions(exam.id, lang), [exam.id, lang]);
 

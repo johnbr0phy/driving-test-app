@@ -19,7 +19,7 @@ try {
     if (request === '@/lib/server/welcomeEmail') return { WELCOME_MAX_AGE_MS: 86400000, sendWelcomeEmail: async () => { welcomes++; return { ok: true }; } };
     if (request === '@/lib/stripe') return { getStripe: () => ({ webhooks: { constructEvent: () => event } }) };
     if (request === '@/lib/server/durableEmail') return { sendDurableEmail: async options => { sends.push(options); if (receiptOutcome instanceof Error) throw receiptOutcome; return receiptOutcome; } };
-    if (request === '@/lib/email-templates') return { EMAIL_TEMPLATES: { purchaseWelcome: voice => `Receipt ${voice.id}` } };
+    if (request === '@/lib/email-templates') return { EMAIL_TEMPLATES: { purchaseWelcome: voice => `Receipt ${voice.id}` }, purchaseWelcomeHtml: voice => `Receipt ${voice.id}` };
     return oldLoad.call(this, request, parent, main);
   };
   welcome = require('../app/api/send-welcome-email/route.ts').POST;

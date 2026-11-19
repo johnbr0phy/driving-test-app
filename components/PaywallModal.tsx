@@ -156,7 +156,7 @@ export function PaywallModal({
         </div>
 
         {/* Price section */}
-        {!(isNative && !isGuest) && (
+        {!isNative && (
           <div className="mb-5">
             <div className="flex items-baseline justify-between">
               <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">{price}</span>
@@ -183,7 +183,7 @@ export function PaywallModal({
               {t("paywall.okGotIt")}
             </Button>
           </div>
-        ) : isGuest ? (
+        ) : isGuest && isNative ? (
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-1">
               {t("paywall.createFreeAccountPrompt")}
@@ -210,6 +210,17 @@ export function PaywallModal({
             >
               {loading ? t("common.loading") : t("paywall.getPremium")}
             </Button>
+            {/* Guests can pay without an account (lib/startCheckout.ts); one is
+                made from the email they give Stripe. */}
+            {isGuest && onSignUp && (
+              <button
+                onClick={onSignUp}
+                disabled={loading}
+                className="text-sm text-gray-600 dark:text-gray-300 py-1 disabled:opacity-50"
+              >
+                <span className="underline">{t("common.createAccount")}</span>
+              </button>
+            )}
             <button
               onClick={() => onOpenChange(false)}
               disabled={loading}

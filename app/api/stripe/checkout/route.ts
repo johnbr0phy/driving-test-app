@@ -16,29 +16,36 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Verify Firebase auth token
+    // A signed-in buyer sends their Firebase ID token. A guest sends none:
+    // Stripe asks for their email and the webhook makes or finds the account
+    // (lib/server/guestCheckout.ts).
     const authHeader = request.headers.get('authorization');
-    if (!authHeader?.startsWith('Bearer ')) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    let decodedToken: Awaited<ReturnType<ReturnType<typeof getAdminAuth>['verifyIdToken']>> | null = null;
+    if (authHeader?.startsWith('Bearer ')) {
+      try {
+        decodedToken = await getAdminAuth().verifyIdToken(authHeader.split('Bearer ')[1]);
+      } catch {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+      }
     }
-    const token = authHeader.split('Bearer ')[1];
-    const decodedToken = await getAdminAuth().verifyIdToken(token);
+    const isGuest = decodedToken === null;
 
     const body = await request.json();
     const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, paywallHit, paywallReturn, source: bodySource, landing: bodyLanding } = body;
     // The account's own address when it has one: an address from the body
-    // would attach this checkout to someone else's Stripe customer.
-    const email = decodedToken.email || bodyEmail;
+    // would attach this checkout to someone else's Stripe customer. A guest
+    // types theirs into Stripe instead.
+    const email: string | null = isGuest ? null : decodedToken!.email || bodyEmail || null;
     // Where the buyer lands afterwards (and where the purchase is verified).
     // Same-site paths only: "/sat", never "//evil.com" or a full URL.
     const returnPath =
       typeof rawReturnPath === 'string' && /^\/[A-Za-z0-9/_-]*$/.test(rawReturnPath) && !rawReturnPath.startsWith('//')
         ? rawReturnPath
         : '/dmv/dashboard';
-    const userId = decodedToken.uid;
+    const userId: string | null = decodedToken?.uid ?? null;
 
     // Validate required fields
-    if (!email) {
+    if (!isGuest && !email) {
       return NextResponse.json(
         { error: 'Missing required field: email' },
         { status: 400 }
@@ -47,10 +54,9 @@ export async function POST(request: NextRequest) {
 
     // Check if user already has premium
     const adminDb = getAdminDb();
-    const userDoc = await adminDb.collection('users').doc(userId).get();
-    if (userDoc.exists) {
-      const userData = userDoc.data();
-      if (userData?.subscription?.isPremium) {
+    if (userId) {
+      const userDoc = await adminDb.collection('users').doc(userId).get();
+      if (userDoc.data()?.subscription?.isPremium) {
         return NextResponse.json(
           { error: 'User already has premium access' },
           { status: 400 }
@@ -63,7 +69,7 @@ export async function POST(request: NextRequest) {
     // the payment so revenue can be read by landing page and channel.
     let source: string | null = typeof bodySource === 'string' && /^[a-z_]{2,20}$/.test(bodySource) ? bodySource : null;
     let landing: string | null = typeof bodyLanding === 'string' && /^\/[A-Za-z0-9/_.-]{0,120}$/.test(bodyLanding) ? bodyLanding : null;
-    if (!source || !landing) {
+    if (userId && (!source || !landing)) {
       try {
         const origin = await adminDb.collection('signupOrigins').doc(userId).get();
         const o = origin.data();
@@ -76,23 +82,26 @@ export async function POST(request: NextRequest) {
 
     const stripe = getStripe();
 
-    // Create or retrieve Stripe customer
-    let customerId: string;
-    const existingCustomers = await stripe.customers.list({
-      email,
-      limit: 1,
-    });
-
-    if (existingCustomers.data.length > 0) {
-      customerId = existingCustomers.data[0].id;
-    } else {
-      const customer = await stripe.customers.create({
+    // Create or retrieve Stripe customer (signed in). A guest's customer is
+    // made by Checkout from the email they type there.
+    let customerId: string | null = null;
+    if (!isGuest && email && userId) {
+      const existingCustomers = await stripe.customers.list({
         email,
-        metadata: {
-          firebaseUserId: userId,
-        },
+        limit: 1,
       });
-      customerId = customer.id;
+
+      if (existingCustomers.data.length > 0) {
+        customerId = existingCustomers.data[0].id;
+      } else {
+        const customer = await stripe.customers.create({
+          email,
+          metadata: {
+            firebaseUserId: userId,
+          },
+        });
+        customerId = customer.id;
+      }
     }
 
     // Determine the base URL for redirects
@@ -116,7 +125,7 @@ export async function POST(request: NextRequest) {
 
     // Create Checkout Session
     const session = await stripe.checkout.sessions.create({
-      customer: customerId,
+      ...(customerId ? { customer: customerId } : { customer_creation: 'always' as const }),
       mode: 'payment',
       // Dollars use the Stripe price; other currencies the same Stripe product,
       // so the description and image are set once, in the Stripe dashboard.
@@ -135,8 +144,7 @@ export async function POST(request: NextRequest) {
       success_url: `${baseUrl}${returnPath}?session_id={CHECKOUT_SESSION_ID}&success=true`,
       cancel_url: `${baseUrl}${returnPath}?canceled=true`,
       metadata: {
-        userId,
-        email,
+        ...(userId && email ? { userId, email } : { guest: '1' }),
         ...(location && { location }),
         ...(country && { country }),
         ...(source && { source }),

@@ -1,24 +1,18 @@
 "use client";
 
+import { startCheckout } from "@/lib/startCheckout";
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BarChart3, Lock, Users } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
-import {
-  trackBeginCheckout,
-  trackDailyQuizAnswer,
-  trackPaywallDismissed,
-  trackPaywallHit,
-  trackViewItem,
-} from "@/lib/analytics";
+import { trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
 import { useAccountNavigation } from "@/hooks/useAccountNavigation";
 import { signupForDestination } from "@/lib/authDestination";
 import { AccountLoadRetry } from "@/components/AccountLoadRetry";
 import { DmvStatePrompt } from "@/components/dashboard/DmvStatePicker";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
-import { auth } from "@/lib/firebase";
 import { PaywallModal } from "@/components/PaywallModal";
 import { Question } from "@/types";
 import { getQuestionsData } from "@/lib/testGenerator";
@@ -27,9 +21,7 @@ import { CommunityWrongQuestions } from "@/components/CommunityWrongQuestions";
 import { QuizRow } from "@/components/QuizRow";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { DMV_EXAM_ID } from "@/lib/classes";
-import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
-import { checkoutAttribution } from "@/lib/funnel";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
 type SortDirection = "asc" | "desc";
@@ -92,56 +84,7 @@ function StatsContent() {
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
   const [paywallOpen, setPaywallOpen] = useState(false);
 
-  const handleUpgrade = async () => {
-    if (!user?.email || !user?.uid) {
-      router.push(signupDestination);
-      return;
-    }
-
-    try {
-      const idToken = await auth.currentUser?.getIdToken();
-      if (!idToken) {
-        alert("Authentication error. Please sign in again.");
-        return;
-      }
-
-      const response = await fetch("/api/stripe/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${idToken}`,
-        },
-        body: JSON.stringify({
-          email: user.email,
-          returnUrl: window.location.origin,
-          ...checkoutAttribution(),
-          paywallVariant: paywallVariantForCheckout(),
-          paywallHit: paywallHitForCheckout(),
-          paywallReturn: paywallReturnForCheckout(),
-          location: "stats_page",
-        }),
-      });
-
-      const data = await response.json();
-
-      if (data.error) {
-        console.error("Checkout error:", data.error);
-        alert(`Error: ${data.error}`);
-        return;
-      }
-
-      if (data.checkoutUrl) {
-        trackBeginCheckout("stats_page");
-        window.location.href = data.checkoutUrl;
-      } else {
-        console.error("No checkout URL returned:", data);
-        alert("Failed to start checkout. Please try again.");
-      }
-    } catch (error) {
-      console.error("Checkout error:", error);
-      alert("Failed to start checkout. Please check your connection and try again.");
-    }
-  };
+  const handleUpgrade = () => startCheckout({ location: "stats_page" });
 
   // Auth and the current account's cloud read must settle before either gate.
   // A fresh browser can have isGuest=false while no user is signed in.

@@ -1,5 +1,6 @@
 "use client";
 
+import { takeGuestPurchaseSignIn } from "@/lib/guestPurchaseSignIn";
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import { trackFunnelSignup } from "@/lib/funnel";
 import {
@@ -152,8 +153,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           const wasGuest = useStore.getState().isGuest;
 
           if (wasGuest) {
-            // Check if this account already has saved data
-            const hasExistingData = await checkUserHasData(user.uid);
+            // Check if this account already has saved data. An account a
+            // guest checkout just made holds only Premium: always take the
+            // guest's progress onto it (lib/guestPurchaseSignIn.ts).
+            const fromGuestPurchase = takeGuestPurchaseSignIn();
+            const hasExistingData = !fromGuestPurchase && await checkUserHasData(user.uid);
 
             if (hasExistingData) {
               // Show conflict dialog - don't proceed until user chooses

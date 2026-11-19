@@ -1,6 +1,8 @@
 import { SkipLink } from "@/components/SkipLink";
 import { ClassMembershipSync } from "@/components/ClassMembershipSync";
 import { SyncNotice } from "@/components/SyncNotice";
+import { GuestPurchaseReturn } from "@/components/GuestPurchaseReturn";
+import { Suspense } from "react";
 import { shareImageUrl } from "@/lib/shareImageUrl";
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
@@ -123,6 +125,10 @@ export default function RootLayout({
           <SuperAmazingFireworks />
           <ClassMembershipSync />
           <SyncNotice />
+          {/* Signs a buyer in when they come back from a guest checkout. */}
+          <Suspense fallback={null}>
+            <GuestPurchaseReturn />
+          </Suspense>
           <SkipLink />
           <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>

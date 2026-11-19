@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStripe } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
+import { isGuestSession, resolveGuestBuyer } from '@/lib/server/guestCheckout';
 
 export async function POST(request: NextRequest) {
   try {
@@ -30,7 +31,13 @@ export async function POST(request: NextRequest) {
 
     // The session must be this account's own purchase: a paid session id is
     // not a voucher anyone can redeem.
-    if (session.metadata?.userId !== userId) {
+    // A guest checkout has no userId in it: it belongs to the account it was
+    // pinned to (lib/server/guestCheckout.ts).
+    let ownerId = session.metadata?.userId;
+    if (!ownerId && isGuestSession(session) && session.payment_status === 'paid') {
+      ownerId = (await resolveGuestBuyer(session)).uid;
+    }
+    if (ownerId !== userId) {
       return NextResponse.json({ isPremium: false, message: 'This purchase belongs to another account' });
     }
 

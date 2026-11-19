@@ -4,10 +4,11 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { sendDurableEmail } from '@/lib/server/durableEmail';
 import { makePurchaseRetryPolicy } from '@/lib/server/emailRetryPolicy';
 import { EMAIL_INBOX } from '@/lib/email-inbox';
-import { EMAIL_TEMPLATES } from '@/lib/email-templates';
+import { purchaseWelcomeHtml } from '@/lib/email-templates';
 import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
 import { purchaseExam } from '@/lib/purchaseAttribution';
+import { isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -45,8 +46,19 @@ export async function POST(request: NextRequest) {
 
       if (session.payment_status !== 'paid') return NextResponse.json({ received: true, skipped: 'unpaid' });
 
-      // Get user ID from metadata
-      const userId = session.metadata?.userId;
+      // The buyer's account: in the metadata when they were signed in, or
+      // found or made from the email they typed into Stripe as a guest.
+      let userId = session.metadata?.userId;
+      let guestBuyer: GuestBuyer | null = null;
+      if (!userId && isGuestSession(session)) {
+        try {
+          guestBuyer = await resolveGuestBuyer(session);
+          userId = guestBuyer.uid;
+        } catch (err) {
+          console.error(`[webhook] guest checkout ${session.id} has no account yet:`, err);
+          return NextResponse.json({ error: 'Guest account pending; retry required' }, { status: 503 });
+        }
+      }
       if (!userId) {
         console.error('No userId in session metadata');
         return NextResponse.json(
@@ -132,7 +144,9 @@ export async function POST(request: NextRequest) {
         amountUsdCents,
         country: session.metadata?.country || null,
         status: 'succeeded',
-        email: session.metadata?.email || session.customer_email,
+        email: session.metadata?.email || session.customer_email || session.customer_details?.email || null,
+        // Paid without being signed in (lib/server/guestCheckout.ts).
+        guestCheckout: guestBuyer ? (guestBuyer.createdForGuest ? 'new_account' : 'existing_account') : null,
         // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.
         location: session.metadata?.location || null,
         exam: checkoutExam,
@@ -162,7 +176,7 @@ export async function POST(request: NextRequest) {
           uid: userId, dedupeKey: `purchase/${session.id}`, emailKey: `purchaseWelcome:${session.id}`,
           payload: { to: buyer.email, subject: EMAIL_INBOX.purchaseWelcome(voiceFor(fulfillment?.examId)).subject,
             replyTo: process.env.EMAIL_REPLY_TO ?? 'john@tigertest.io',
-            html: EMAIL_TEMPLATES.purchaseWelcome(voiceFor(fulfillment?.examId)), kind: 'transactional' },
+            html: purchaseWelcomeHtml(voiceFor(fulfillment?.examId), guestBuyer ? { guest: guestBuyer } : undefined), kind: 'transactional' },
           retryPolicy: makePurchaseRetryPolicy((await userRef.get()).data()?.subscription),
           eligible: data => data.subscription?.isPremium === true,
         });

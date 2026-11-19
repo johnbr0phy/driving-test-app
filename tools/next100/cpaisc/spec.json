@@ -1,0 +1,27 @@
+{
+  "id": "cpaisc", "stateCode": "CPAISC", "idBase": 42800, "prefix": "CPAISC-",
+  "slug": "/cpa-isc", "landingPath": "/cpa-isc-practice-test", "dataFile": "data/cpa-isc-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 75,
+  "categories": [
+    {"key": "cpaiscInfra", "perTest": 4, "pool": 16, "segment": "INF", "area": "I.A.1"},
+    {"key": "cpaiscAis", "perTest": 4, "pool": 16, "segment": "AIS", "area": "I.A.2"},
+    {"key": "cpaiscAvail", "perTest": 4, "pool": 16, "segment": "AVL", "area": "I.A.3"},
+    {"key": "cpaiscChange", "perTest": 4, "pool": 16, "segment": "CHG", "area": "I.A.4"},
+    {"key": "cpaiscData", "perTest": 4, "pool": 16, "segment": "DAT", "area": "I.B"},
+    {"key": "cpaiscFrameworks", "perTest": 5, "pool": 20, "segment": "FRM", "area": "II.A"},
+    {"key": "cpaiscThreats", "perTest": 4, "pool": 16, "segment": "THR", "area": "II.B.1"},
+    {"key": "cpaiscMitigation", "perTest": 5, "pool": 20, "segment": "MIT", "area": "II.B.2"},
+    {"key": "cpaiscPrivacy", "perTest": 3, "pool": 12, "segment": "CNF", "area": "II.C"},
+    {"key": "cpaiscIncident", "perTest": 3, "pool": 12, "segment": "INC", "area": "II.B.3, II.D"},
+    {"key": "cpaiscSocPlan", "perTest": 5, "pool": 20, "segment": "SPL", "area": "III.A"},
+    {"key": "cpaiscSocReport", "perTest": 5, "pool": 20, "segment": "SRP", "area": "III.B"}
+  ],
+  "notes": "AICPA Uniform CPA Examination Blueprints effective January 1, 2026, ISC: Area I 35-45%, II 35-45%, III 15-25%. 2027 summary of changes removes the COSO blockchain reference and task only. Per 50-question test: I 20, II 20, III 10. Multiple choice only; task-based simulations not modelled.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 42801, "name": "IT Systems, Cloud & Availability", "categories": ["cpaiscInfra", "cpaiscAis", "cpaiscAvail"], "size": 48},
+    {"setNumber": 2, "id": 42802, "name": "Change & Data Management", "categories": ["cpaiscChange", "cpaiscData"], "size": 32},
+    {"setNumber": 3, "id": 42803, "name": "Frameworks & Threats", "categories": ["cpaiscFrameworks", "cpaiscThreats"], "size": 36},
+    {"setNumber": 4, "id": 42804, "name": "Security, Privacy & Incidents", "categories": ["cpaiscMitigation", "cpaiscPrivacy", "cpaiscIncident"], "size": 44},
+    {"setNumber": 5, "id": 42805, "name": "SOC Engagements", "categories": ["cpaiscSocPlan", "cpaiscSocReport"], "size": 40}
+  ]
+}

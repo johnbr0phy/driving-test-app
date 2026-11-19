@@ -7,6 +7,8 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["home health aide", "US", "hha"],
+  ["hha test", "US", "hha"],
   ["cbcs", "US", "cbcs"],
   ["billing and coding specialist", "US", "cbcs"],
   ["nha billing and coding", "US", "cbcs"],

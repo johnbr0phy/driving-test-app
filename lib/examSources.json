@@ -914,6 +914,11 @@
  "gulfrn": [
   "https://dhp.moph.gov.qa/en/Pages/QualifyingExamination.aspx"
  ],
+ "hha": [
+  "https://www.ecfr.gov/api/versioner/v1/full/2026-11-01/title-42.xml?part=484&section=484.80",
+  "https://doh.dc.gov/sites/default/files/dc/sites/doh/publication/attachments/2017%20HHA%20Candidate%20Handbook.pdf",
+  "https://kb-dchha.credentia.com/en/article/content-outline-home-health-aide"
+ ],
  "hiset": [
   "https://hiset.org",
   "https://hiset.org/wp-content/uploads/2025/05/taag.pdf",

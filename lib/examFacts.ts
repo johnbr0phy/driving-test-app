@@ -254,6 +254,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAPC's Taking the CRC exam page, checked November 2026",
     source: { name: "AAPC: Taking the CRC exam", url: "https://www.aapc.com/certifications/crc/taking-the-crc-exam" },
   },
+  hha: {
+    answer:
+      "The home health aide (HHA) competency evaluation is the test a home health aide must pass before caring for patients of a Medicare home health agency, under the federal rule 42 CFR 484.80. A registered nurse runs it, and it must cover every subject the rule lists: communication, vital signs, personal hygiene, transfers and range of motion are checked by watching the aide with a patient or stand-in, and the other subjects may be tested in writing, orally or by observation. States and agencies set their own written tests and pass marks. In the District of Columbia, for example, the written exam has 70 to 75 multiple-choice questions on four areas (role of the aide 25%, physical care 50%, psychosocial care 13%, household tasks 12%) plus a five-skill evaluation, and no passing percentage is published.",
+    rows: [
+      { label: "Rule", value: "42 CFR 484.80 (CMS home health Conditions of Participation)" },
+      { label: "Written part", value: "Set by each state or agency; DC: 70 to 75 multiple-choice questions" },
+      { label: "Skills part", value: "Observed by a registered nurse; DC: five skills, all must be Satisfactory" },
+      { label: "Passing score", value: "Varies; DC publishes none, NC recommends 80% for agency knowledge tests" },
+      { label: "Training", value: "At least 75 hours, with 16 classroom hours before 16 supervised practical hours" },
+      { label: "Fail rule", value: "Unsatisfactory in more than one required area fails the evaluation" },
+      { label: "In-service", value: "At least 12 hours every 12 months" },
+      { label: "Lapse", value: "24 months without paid aide work means a new program" },
+    ],
+    basedOn: "42 CFR 484.80, 484.50, 484.60 and 484.70 on eCFR, the DC Board of Nursing HHA candidate handbook and Credentia's DC HHA help center, and NC DHHS in-home aide testing directions, checked November 2026",
+    source: { name: "eCFR: 42 CFR 484.80 Home health aide services", url: "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.80" },
+  },
   cbcs: {
     answer:
       "The Certified Billing and Coding Specialist (CBCS) exam is the National Healthcareer Association's (NHA) certification exam for medical billing and coding specialists. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 3 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2020 job analysis, has four domains: Billing and Reimbursement 33 items, Coding and Coding Guidelines 32, Insurance Eligibility and Other Payer Requirements 20, and The Revenue Cycle and Regulatory Compliance 15. Since September 24, 2024 code books are not allowed; each coding question shows the information it needs. It is taken at a school, a PSI test center or by live remote proctoring.",

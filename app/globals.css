@@ -5717,6 +5717,19 @@
     --brand-border-light: 322 35% 90%;
     --brand-gradient-to: 336 45% 97%;
   }
+  /* Home health aide theme: deep violet (280 90% 20%) */
+  [data-theme="hha"] {
+    --brand: 280 90% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 70% 97%;
+    --brand-hover: 280 90% 16%;
+    --brand-dark: 280 90% 14%;
+    --brand-darker: 280 85% 9%;
+    --brand-muted: 280 30% 72%;
+    --brand-border: 280 35% 82%;
+    --brand-border-light: 280 35% 90%;
+    --brand-gradient-to: 290 70% 97%;
+  }
   /* Title insurance agent theme: vivid violet (296 100% 36%) */
   [data-theme="titleagent"] {
     --brand: 296 100% 36%;
@@ -12241,6 +12254,17 @@
     --brand-muted: 322 30% 45%;
     --brand-dark: 322 45% 65%;
     --brand-darker: 322 45% 78%;
+  }
+  .dark [data-theme="hha"] {
+    --brand: 280 90% 50%;
+    --brand-hover: 280 90% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 280 35% 24%;
+    --brand-border: 280 35% 34%;
+    --brand-muted: 280 30% 45%;
+    --brand-dark: 280 90% 65%;
+    --brand-darker: 280 85% 78%;
   }
   .dark [data-theme="ieplumbt2"] {
     --brand: 228 40% 50%;

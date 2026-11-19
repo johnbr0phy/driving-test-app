@@ -333,4 +333,5 @@ import "./trapper";
 import "./ieplumbt2";
 import "./cpb";
 import "./cbcs";
+import "./hha";
 import "./crc";

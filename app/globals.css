@@ -5533,6 +5533,19 @@
     --brand-border-light: 82 30% 88%;
     --brand-gradient-to: 97 50% 95%;
   }
+  /* HT(ASCP) Histotechnician theme */
+  [data-theme="ascpht"] {
+    --brand: 296 75% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 296 70% 96%;
+    --brand-hover: 296 75% 30%;
+    --brand-dark: 296 75% 27%;
+    --brand-darker: 296 70% 18%;
+    --brand-muted: 296 40% 72%;
+    --brand-border: 296 40% 78%;
+    --brand-border-light: 296 35% 89%;
+    --brand-gradient-to: 310 70% 96%;
+  }
   /* Esthetician theme: dusty rose */
   [data-theme="esthetician"] {
     --brand: 330 20% 40%;

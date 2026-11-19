@@ -15,6 +15,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cmaa: { title: "Free CMAA Practice Test", description: "200 original questions on the NHA CMAA test plan for medical administrative assistants. Free to start." },
   cbspd: { title: "Free CBSPD CSPDT Practice Test", description: "200 original questions on CBSPD's technician exam outline, from decontamination to sterilization and storage. Free to start." },
   ascpmlt: { title: "Free MLT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC medical laboratory technician content guideline, four 50-question practice tests." },
+  ascpht: { title: "Free HT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC histotechnician content guideline, four 50-question practice tests." },
   aufirearmsnsw: { title: "NSW Firearms Safety Practice Test", description: "Review NSW firearms law, licence categories, permits, storage and safe handling before your course." },
   nzham: { title: "Free NZ Amateur Radio Practice Test", description: "200 original questions on the New Zealand amateur radio syllabus, the GURL and PIB 46. Four 50-question practice tests. Free to start." },
   cadc: { title: "Free ADC (IC&RC) Practice Test", description: "200 original questions on the four IC&RC Alcohol and Drug Counselor domains, with every answer explained." },

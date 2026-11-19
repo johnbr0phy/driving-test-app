@@ -183,6 +183,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NIC National Esthetics Theory Examination candidate information bulletin, effective September 1, 2025 (revised March 1, 2026), checked November 2026",
     source: { name: "NIC Esthetics Theory CIB", url: "https://prov-testing.github.io/nic_cib/esthetics_national_theory_english.html" },
   },
+  ascpht: {
+    answer:
+      "The HT(ASCP) exam is the histotechnician certification exam of the American Society for Clinical Pathology Board of Certification (ASCP BOC), which earns the HT(ASCP) credential (HT(ASCPi) internationally). The BOC content guideline (revised June 24, 2026) gives 100 multiple-choice questions with one best answer in 2 hours 30 minutes, delivered as computer adaptive testing. Content areas are Staining 30 to 40%, Fixation 15 to 25%, Embedding/Microtomy 15 to 25%, Processing 10 to 20% and Laboratory Operations 10 to 15%. Regulatory questions are based on U.S. sources. Some topics, such as immunohistochemistry staining theory, enzyme histochemistry staining and management, are on the HTL exam only. The BOC reports a scaled score from 100 to 999, with 400 to pass.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one best answer" },
+      { label: "Time", value: "2 hours 30 minutes" },
+      { label: "Format", value: "Computer adaptive testing (CAT)" },
+      { label: "Largest area", value: "Staining, 30 to 40%" },
+      { label: "Pass mark", value: "Scaled score of 400 on a 100 to 999 scale" },
+      { label: "Run by", value: "ASCP Board of Certification (BOC)" },
+    ],
+    basedOn: "The ASCP BOC Histotechnician HT(ASCP) and Scientist in Histotechnology HTL(ASCP) Examination Content Guideline (revised June 24, 2026), checked November 2026",
+    source: { name: "ASCP BOC: HT and HTL Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_ht_htl_content_guideline.pdf" },
+  },
   ea3: {
     answer:
       "The Special Enrollment Examination (SEE) is the IRS exam for becoming an enrolled agent, a tax practitioner who can represent taxpayers before the IRS. Part 3 covers representation, practices and procedures. Each of the three parts has 100 multiple-choice questions, 85 scored and 15 unscored, in 3.5 hours, and results are scaled from 200 to 800 with 500 to pass, which is not a fixed percentage. Part 3's four domains are practices and procedures (26 scored questions), representation before the IRS (25), specific areas of representation (20) and the filing process (14). For exams from July 1, 2026 to February 28, 2027, questions follow the Code, regulations and IRS forms and publications as amended through December 31, 2025, and the bulletin names Treasury Department Circular 230 as a study source.",

@@ -147,6 +147,7 @@ const TEACHER_LED = new Set([
   "natecore",
   "r410a",
   "backflow",
+  "pesticide",
   "ascpmls",
   "ascpht",
   "esthetician",

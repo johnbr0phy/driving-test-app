@@ -89,6 +89,7 @@ const BORROWED_SETS: Record<string, string> = {
   natecore: "epa608",
   r410a: "epa608",
   backflow: "caplumb",
+  pesticide: "epa608",
   istqb: "itil",
   ascpmls: "htl",
   ascpht: "htl",

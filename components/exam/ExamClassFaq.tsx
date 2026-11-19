@@ -18,6 +18,7 @@ export const TEACHES: Record<string, string> = {
   natecore: "an HVAC program or NATE prep class",
   r410a: "an HVAC program or refrigerant safety class",
   backflow: "a backflow tester certification course",
+  pesticide: "a pesticide applicator training course",
   ascpmls: "an MLS program",
   ascpht: "a histotechnician program",
   esthetician: "at an esthetics school",

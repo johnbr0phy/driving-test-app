@@ -225,6 +225,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  pesticide: {
+    answer:
+      "Anyone who uses or supervises restricted use pesticides in the US must be certified by a state, tribe or federal agency under 40 CFR 171. Commercial applicators pass a written core exam on the general standards every applicator needs (label comprehension, safety, the environment, pests, pesticides, equipment, application methods, laws, supervising noncertified applicators and professionalism) plus an exam for each category of work; private applicators, who produce agricultural commodities, are certified to a similar general standard. Federal rules require the exam to be written and proctored, with government-issued photo ID and only reference materials the agency supplies, and commercial applicators must be at least 18. Each certifying authority sets its own question count, time limit and passing score. Certification lasts at most five years before recertification by exam or continuing education.",
+    rows: [
+      { label: "Who sets the exam", value: "Your state, tribal or federal certifying authority" },
+      { label: "Exam rules", value: "Written, proctored, photo ID required (40 CFR 171.103)" },
+      { label: "Minimum age", value: "18 for commercial applicators" },
+      { label: "Question count and pass mark", value: "Set by each certifying authority" },
+      { label: "Certification length", value: "5 years at most" },
+      { label: "Covers", value: "Labels, laws, IPM, formulations, toxicity, PPE, environment, storage, calibration" },
+    ],
+    basedOn: "40 CFR 171 (Certification of Pesticide Applicators, 2017 revision) and the National Pesticide Applicator Certification Core Manual, checked November 2026",
+    source: { name: "US EPA certification standards", url: "https://www.epa.gov/pesticide-worker-safety/certification-standards-pesticide-applicators" },
+  },
   backflow: {
     answer:
       "Water suppliers and states require backflow prevention assemblies, such as reduced pressure principle assemblies, double checks and pressure vacuum breakers, to be tested by a certified backflow tester. ASSE International certifies testers under its 5110 standard: a candidate completes a tester course built on ASSE's 14 instructional objectives, then sits a written exam and a practical exam on real assemblies. ASSE's written exam instructions allow 2 hours, closed book with no notes or references, a calculator for math questions, one correct or best answer per question, grading by ASSE, and a passing score of 70% or better. ASSE does not publish the number of questions. California's State Water Resources Control Board recognized ASSE 5110 in June 2025. Many programs accept other certifications too, such as ABPA's, so check which your water supplier or state accepts.",

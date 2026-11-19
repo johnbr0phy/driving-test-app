@@ -1,0 +1,31 @@
+{
+  "id": "afsp",
+  "blind_agreement": "197/200",
+  "blind_notes": "Answered all 200 from stems and options only. 3 doubts, all resolved as correct keys after checking official sources: AFSP-NCR-010 (IRC 25A(g)(1)(A) as amended by PL 119-21 requires the SSN for both credits; only the school EIN in 25A(g)(1)(B) is AOTC-only, so B is the single right answer), AFSP-GEN-008 (Rev. Proc. 2025-32 sec. 4.34 sets the 2026 ABLE aggregate limit at $20,000, not the $19,000 gift exclusion), AFSP-SEC-011 (Pub. 1915 and irs.gov/tin/itin/how-to-renew-an-itin: an ITIN unused for tax years 2023-2025 expires December 31 of/after the third tax year of non-use, i.e. December 31, 2025). Every computed key recomputed (dependent care 42%/50%/35%/30% under IRC 21(a)(2), IRC 68 2/37, SALT $40,400 less 30% over $505,000 with $10,000 floor, 90% wagering losses, overtime premium, SE tax $1,413, section 179 phase-down, CTC phaseout, AOTC, QBI, Social Security, IRA/Roth phaseouts, 6694/6695, failure-to-file minimum $300). Checked against Rev. Proc. 2025-32 (secs. 4.04-4.06, 4.12, 4.16, 4.24, 4.27, 4.34, 4.39, 4.42, 4.52, 4.54 and the AMT, standard deduction, FSA, kiddie tax and 0% gain tables), Rev. Proc. 2026-15 ($20,300 / $12,300), Notice 2026-5 ($150 DPC), Pub. 1915, IRC 21 and 25A on Cornell LII.",
+  "options_only": null,
+  "findings": [
+    {
+      "questionId": "AFSP-NCR-008",
+      "severity": "minor",
+      "issue": "Stem says 'Under the 2025 law' the AOTC claim must include each school's EIN. The EIN requirement dates from the PATH Act (2015); PL 119-21 only rewrote 25A(g)(1) and kept it. The key is right, but the framing implies the rule is new.",
+      "source": "https://www.law.cornell.edu/uscode/text/26/25A",
+      "fix": "Drop 'Under the 2025 law,' (e.g. 'A 2026 American opportunity credit claim must include the employer identification number of:')."
+    },
+    {
+      "questionId": "(bank-wide)",
+      "severity": "info",
+      "issue": "Answer keys rotate A, B, C, D strictly in question-ID order across all 200 items. Harmless in the app because options are shuffled on every showing, but anyone reading the JSON or a printed sample in ID order could predict the key.",
+      "source": "",
+      "fix": "Optional: let build.py place keys by a stem-seeded slot instead of strict rotation."
+    }
+  ],
+  "landing_findings": [
+    {
+      "where": "app/annual-federal-tax-refresher-practice-test/page.tsx lines 18 and 20 (meta description / long description)",
+      "severity": "minor",
+      "issue": "'Free AFTR practice for ...' and 'Free practice for the AFTR course test ...' read as everything free, while the exam has Premium steps. House rule: say 'free to start'; only page titles keep 'Free ... Practice Test'. The hero subtitle and final CTA already say free to start.",
+      "fix": "Use 'Free-to-start AFTR practice ...' or add 'Free to start.' in those two strings."
+    }
+  ],
+  "landing_checks_ok": "Format and dates match Pub. 6012 (Rev. 3-2026: 100 questions, 4 answers / 1 correct, 3 continuous hours with countdown clock, 70%, finished by December 31 midnight local time) and Pub. 6026 (exactly 6 CE hours, offered June 1 to December 31, 2026, supports the 2027 AFSP). examFacts block in WIRING.md matches the same sources; no fees or prices claimed."
+}

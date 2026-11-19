@@ -1,0 +1,60 @@
+CAT = "afspSchC"; SEG = "SCH"
+# AFTR outline 2.8: Schedule C income and deductions, business vs hobby, home office, records, meals,
+# section 179 (Rev. Proc. 2025-32 4.24), bonus depreciation (Notice 2026-11), luxury auto limits
+# (Rev. Proc. 2026-15), listed property. Pubs. 334, 535, 587, 463, 946, 583; Schedule SE. Tax year 2026.
+_simp = 250 * 5; assert _simp == 1250
+_reg = 3000 * 200 // 2000; assert _reg == 300
+_meal = 800 // 2; assert _meal == 400
+_179 = 2560000 - (4200000 - 4090000); assert _179 == 2450000
+_se = round(10000 * 0.9235 * 0.153); assert _se == 1413
+
+Q = [
+("For 2026, a taxpayer's hobby brings in $3,000 of income and $2,000 of costs. The costs are:",
+ "Not deductible", ["Deductible up to income", "Deductible on Schedule C", "Deductible over 2% of AGI"],
+ "Hobby income is reported on Schedule 1, but hobby expenses were miscellaneous itemized deductions, which the law no longer allows (Pub. 535). Only a business reports on Schedule C."),
+("An activity is presumed to be for profit when it shows a profit in at least how many of five consecutive years?",
+ "3", ["2", "4", "5"],
+ "Under IRC 183(d) an activity is presumed to be engaged in for profit if it makes a profit in 3 of 5 consecutive years (2 of 7 for horse breeding and racing)."),
+("A sole proprietor uses 250 square feet of her home only and regularly for business. Under the simplified method, her 2026 home office deduction is:",
+ f"${_simp:,}", ["$1,500", "$2,500", "$750"],
+ "The simplified method allows $5 a square foot for up to 300 square feet (Pub. 587). 250 x $5 = $1,250; the $1,500 maximum needs the full 300 square feet."),
+("Under the regular method, an office of 200 square feet in a 2,000-square-foot home is used for business. Of $3,000 of home utilities, the business part is:",
+ f"${_reg:,}", ["$3,000", "$600", "$150"],
+ "The business share is 200 / 2,000 = 10%, so 10% of the $3,000 of indirect expenses, $300, is a business expense on Form 8829 (Pub. 587)."),
+("To claim a home office deduction, the space generally must be used for business:",
+ "Exclusively and regularly", ["At least half the time", "On most weekdays", "For storage only"],
+ "The part of the home must be used exclusively and regularly as the principal place of business or to meet clients, with limited exceptions such as daycare and inventory storage (Pub. 587)."),
+("Generally, how long should a sole proprietor keep records that support income and deductions on a return?",
+ "3 years after filing", ["1 year after filing", "Until the next return", "7 years in all cases"],
+ "Records are generally kept until the period of limitations runs out, usually 3 years after the return is filed. Longer periods apply to unreported income, bad debts and property records (Pub. 583)."),
+("A consultant paid $800 for business meals with clients in 2026. The deductible amount is:",
+ f"${_meal:,}", ["$800", "$640", "$0"],
+ "Business meals are generally 50% deductible when the taxpayer or an employee is present and the food is not lavish (Pub. 463). 50% of $800 is $400."),
+("A sole proprietor buys concert tickets to entertain a client in 2026. The cost is:",
+ "Not deductible", ["50% deductible", "Fully deductible", "Deductible up to $25"],
+ "Entertainment expenses are not deductible even when business-related (Pub. 463). The $25 limit is for business gifts."),
+("A business places $4,200,000 of section 179 property in service in 2026. Its maximum section 179 deduction is:",
+ f"${_179:,}", ["$2,560,000", "$2,500,000", "$110,000"],
+ "For 2026 the limit is $2,560,000, reduced dollar for dollar by cost over $4,090,000 (Rev. Proc. 2025-32, section 4.24). $110,000 over leaves $2,450,000."),
+("A sole proprietor buys used equipment in 2026 from an unrelated seller; she never used it before. For bonus depreciation, it is:",
+ "Eligible like new property", ["Never eligible", "Eligible only at 40%", "Eligible only via section 179"],
+ "Used property can qualify for the additional first-year deduction if the taxpayer did not use it before and buys it from an unrelated party (IRC 168(k)(2)(E), Rev. Proc. 2026-15). For property acquired after January 19, 2025 the rate is 100%."),
+("A new car is placed in service in 2026, used 100% for business, with bonus depreciation. Its first-year depreciation cap is:",
+ "$20,300", ["$12,300", "$19,800", "$32,000"],
+ "Rev. Proc. 2026-15 sets the 2026 first-year limit at $20,300 when bonus depreciation applies and $12,300 when it does not. $32,000 is the section 179 cap for heavy SUVs."),
+("A car is used 40% for business in 2026. Because business use is 50% or less, the owner cannot claim:",
+ "Bonus depreciation", ["Business parking fees", "Any car expenses", "The standard mileage rate"],
+ "Listed property used 50% or less for business does not qualify for section 179 or bonus depreciation and must use the alternative depreciation system (Pub. 946). Mileage and parking for business use are still deductible."),
+("A sole proprietor has $10,000 of net profit for 2026. Rounded to the dollar, the self-employment tax is:",
+ f"${_se:,}", ["$1,530", "$765", "$1,224"],
+ "Net earnings are 92.35% of profit, $9,235, and the 15.3% rate gives $1,412.96, or $1,413 (Schedule SE). Half of it is an adjustment to income."),
+("A self-employed taxpayer subtracts half of the self-employment tax:",
+ "As an adjustment to income", ["On Schedule C as an expense", "As an itemized deduction", "As a tax credit"],
+ "The deductible half of self-employment tax is an adjustment on Schedule 1, which lowers AGI. It is not a business expense on Schedule C and does not lower self-employment tax itself."),
+("A freelancer was paid $1,200 by a client who issued no Form 1099-NEC. On Schedule C, the $1,200 is:",
+ "Gross receipts", ["Excluded income", "Other income on Schedule 1", "Reported only if over $2,000"],
+ "All business income is reported whether or not an information return is issued (Pub. 334). The $2,000 threshold only decides whether the payer must file a form."),
+("A sole proprietor wants the standard mileage rate for a car she owns. She generally must choose it:",
+ "In the car's first business year", ["In any year she likes", "After five years of actual costs", "Only for a leased car"],
+ "To use the standard mileage rate for an owned car, it must be chosen for the first year the car is used in business; later years may switch to actual expenses (Pub. 463)."),
+]

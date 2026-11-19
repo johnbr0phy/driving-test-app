@@ -5848,6 +5848,19 @@
     --brand-border-light: 258 40% 90%;
     --brand-gradient-to: 238 50% 96%;
   }
+  /* Microsoft PL-900 theme: vivid Power Platform magenta (v2 exam; matches lib/v2/exams/pl900.ts theme) */
+  [data-theme="pl900"] {
+    --brand: 314 100% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 314 60% 96%;
+    --brand-hover: 314 100% 25%;
+    --brand-dark: 314 100% 22%;
+    --brand-darker: 314 90% 15%;
+    --brand-muted: 314 35% 70%;
+    --brand-border: 314 40% 82%;
+    --brand-border-light: 314 40% 90%;
+    --brand-gradient-to: 294 50% 96%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -12286,6 +12299,17 @@
     --brand-muted: 20 45% 45%;
     --brand-dark: 20 90% 65%;
     --brand-darker: 20 85% 78%;
+  }
+  .dark [data-theme="pl900"] {
+    --brand: 314 100% 42.8%;
+    --brand-hover: 314 100% 34.8%;
+    --brand-light: 314 45% 13%;
+    --brand-gradient-to: 294 40% 11%;
+    --brand-border-light: 314 35% 24%;
+    --brand-border: 314 40% 34%;
+    --brand-muted: 314 35% 45%;
+    --brand-dark: 314 100% 65%;
+    --brand-darker: 314 90% 78%;
   }
   .dark [data-theme="ai901"] {
     --brand: 258 55% 50%;

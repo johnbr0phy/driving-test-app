@@ -157,6 +157,7 @@ export const TEACHES: Record<string, string> = {
   awssaa: "a cloud architecture course",
   az900: "a cloud computing course",
   ai901: "an introduction to AI or Azure AI course",
+  pl900: "a Power Platform or low-code course",
   ccna: "a CCNA or Cisco Networking Academy course",
   pmp: "a project management course",
   gulfrn: "a Gulf nursing exam review course",

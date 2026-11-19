@@ -164,7 +164,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   sbiclerk: "IN", sbipo: "IN", ibpsrrb: "IN", biharpolice: "IN", rajpolice: "IN", delhipolice: "IN", mppolice: "IN", jkssbja: "IN", tgsi: "IN",
   upscse: "IN", nda: "IN", agniveer: "IN", agniveervayu: "IN", rrbalp: "IN", rpfconst: "IN", ssccpo: "IN",
   neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", kcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN", iimcat: "IN",
-  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL", ai901: "GLOBAL",
+  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL", ai901: "GLOBAL", pl900: "GLOBAL",
   netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
   ccaf: "GLOBAL", sfadmin: "GLOBAL", sfpd1: "GLOBAL", sfappbuilder: "GLOBAL", cfal1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL",
 };
@@ -191,6 +191,7 @@ export const NON_DRIVING_TESTS = new Set([
   "sc200",
   "sc900",
   "ai901",
+  "pl900",
   "prince2",
   "fortinse",
   "wonderlic",

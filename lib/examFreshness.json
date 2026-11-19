@@ -594,6 +594,14 @@
       "what": "CTEC's updated CP23A qualifying education guidelines take effect, and courses move to tax year 2026 law (returns filed in 2027).",
       "action": "Read the new CP23A exhibit, then update every 2025 figure (standard deductions, credits, CalEITC and renter's credit limits, exemption credits, mileage) to the 2026 IRS and FTB amounts and add any new required topics.",
       "source": "https://ctec.org/education-providers/"
+    },
+    {
+      "exam": "pl900",
+      "date": "2026-12-18",
+      "kind": "outline",
+      "what": "Microsoft updates the English PL-900 exam on December 18, 2026 (notice on the certification page); until then the study guide lists the skills measured as of July 24, 2026.",
+      "action": "Read the updated study guide's skills measured and change log, then re-weight the blueprint and add or retire items to match.",
+      "source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900"
     }
   ]
 }

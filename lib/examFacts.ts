@@ -817,6 +817,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
     source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
   },
+  pl900: {
+    answer:
+      "PL-900, Microsoft Power Platform Fundamentals, is Microsoft's beginner exam for people starting to build solutions with Power Platform, and the only exam for the Microsoft Certified: Power Platform Fundamentals certification. It covers the business value of Power Platform, Microsoft Dataverse and environment administration, Power Apps, Power Automate and agents in Microsoft Copilot Studio. The skills measured as of July 24, 2026 dropped Power BI and the separate Power Pages area and added Copilot Studio at 20 to 25 percent. Candidates have 45 minutes; Microsoft publishes no question count for PL-900. Scores run from 1 to 1000 and 700 is needed to pass. Microsoft says the English exam will be updated on December 18, 2026. It is offered in English and 11 other languages, and the price depends on the country where it is taken.",
+    rows: [
+      { label: "Time", value: "45 minutes, proctored" },
+      { label: "Questions", value: "Not published for PL-900" },
+      { label: "Passing score", value: "700 on a scale of 1 to 1000" },
+      { label: "Skill areas", value: "Business value 5-10%, environment 20-25%, Power Apps 20-25%, Power Automate 20-25%, Copilot Studio agents 20-25%" },
+      { label: "Next update", value: "English exam updated December 18, 2026" },
+      { label: "Languages", value: "English and 11 others, including Spanish, German, French and Japanese" },
+      { label: "Given by", value: "Microsoft" },
+    ],
+    basedOn: "the Microsoft Learn PL-900 study guide (skills measured as of July 24, 2026) and the Power Platform Fundamentals certification page, checked November 2026",
+    source: { name: "Microsoft Learn: Study guide for Exam PL-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900" },
+  },
   ai901: {
     answer:
       "AI-901, Microsoft Azure AI Fundamentals, is Microsoft's beginner exam for people at the start of a career in AI solution development. It replaced AI-900, which Microsoft retired on June 30, 2026, and it is now the only exam for the Microsoft Certified: Azure AI Fundamentals certification. Unlike AI-900 it is hands on: candidates are expected to know Python syntax and Azure resources and to build small apps and agents in Microsoft Foundry. Fundamentals exams run 45 minutes, and Microsoft says most of its exams have 40 to 60 questions. Scores run from 1 to 1000 and 700 is needed to pass. The skills measured as of April 15, 2026 are Identify AI concepts and capabilities (40 to 45 percent) and Implement AI solutions by using Microsoft Foundry (55 to 60 percent). It is offered in English and 12 other languages, and the price depends on the country where it is taken.",

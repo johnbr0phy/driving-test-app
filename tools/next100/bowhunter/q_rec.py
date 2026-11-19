@@ -3,7 +3,7 @@ Q = [
 ("After the shot, a deer humps its back and walks away slowly. What hit does this suggest?",
  "A gut shot", ["A heart shot", "A spine shot", "A clean miss"],
  "A deer that humps up after the hit has a high likelihood of a gut shot. A spine hit drops the animal on the spot."),
-("You hear a hollow \"thud\" as your arrow strikes a deer. What does this often signal?",
+("You hear a \"thud\" as your arrow strikes a deer. What does this often signal?",
  "A solid chest hit", ["A broken leg bone", "A paunch hit", "A clean miss"],
  "A thud may signal a solid chest hit, a crack a broken bone and a plop a gut shot."),
 ("Right after releasing an arrow from a tree stand, what should you do?",

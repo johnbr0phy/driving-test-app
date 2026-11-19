@@ -19,7 +19,7 @@ Q = [
  "Your dominant eye", ["Your writing hand", "Your draw length", "Your arm span"],
  "Aim with the dominant, or master, eye. A right-eye-dominant archer is usually best served by a right-handed bow, even if the dominant hand differs."),
 ("During the triangle test for eye dominance, what does your weak eye see?",
- "The back of your hand", ["The distant object", "Two blurred triangles", "The object off-center"],
+ "The back of your hand", ["The distant object", "Two blurred triangles", "The object centered in the opening"],
  "Close one eye at a time. The dominant eye stays on the object through the opening; the weak eye sees the back of the hand."),
 ("IHEA-USA lists several reasons to aim with both eyes open. Which is one?",
  "Better depth perception", ["Sharper focus on the pin", "Less eye strain at full draw", "A steadier bow arm"],

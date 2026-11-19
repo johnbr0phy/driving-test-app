@@ -882,6 +882,14 @@
         "pr": null,
         "findings": 0
       }
+    ],
+    "bowhunter": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 4
+      }
     ]
   },
   "pendingReviews": {

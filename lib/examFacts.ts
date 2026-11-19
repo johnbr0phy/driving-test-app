@@ -227,7 +227,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   bowhunter: {
     answer:
-      "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or buy an archery license; others accept a general hunter education course. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",
+      "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or get a bowhunting license, so check your own. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",
     rows: [
       { label: "Program", value: "International Bowhunter Education Program (NBEF)" },
       { label: "Content standard", value: "IHEA-USA bowhunter education standards" },

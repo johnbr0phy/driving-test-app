@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Do I need a bowhunter education course to hunt with a bow?",
-    a: "It depends on where you hunt. Some states and provinces require a bowhunter education course before you can bowhunt or buy an archery license, and others accept a general hunter education course. Rules change, so check your state wildlife agency's regulations before the season.",
+    a: "It depends on where you hunt. Some states and provinces require a bowhunter education course before you can bowhunt or get a bowhunting license. Rules change, so check your state wildlife agency's regulations before the season.",
   },
   {
     q: "How many questions are on the bowhunter education test, and what score do I need?",
@@ -251,7 +251,7 @@ export default function BowhunterLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Know what to do after the shot</h3>
               <p>
-                How long to wait for each kind of hit, what blood and hair tell you, how to search when the trail goes cold and how to approach downed game. Then take the 50-question tests and aim for about 85%.
+                How long to wait for each kind of hit, what blood and hair tell you, how to search when the trail goes cold and how to approach downed game. Then take the 50-question tests and aim for 80% or better.
               </p>
             </div>
           </div>

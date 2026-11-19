@@ -55,7 +55,7 @@ Q = [
  "Three to five", ["One", "Two", "Six to eight"],
  "Ladder stands are big and heavy. Three to five people are needed to erect or take one down safely."),
 ("Using a ladder stand, when should you attach your FAS and tighten the tether?",
- "As soon as you reach the top", ["Before stepping on the ladder", "After you settle into the seat", "Once you have hauled up your bow"],
+ "As soon as you reach the top", ["Once you are halfway up the ladder", "After you settle into the seat", "Once you have hauled up your bow"],
  "With a ladder stand, attach the FAS to the tree and tighten the tether as soon as you reach the top of the ladder."),
 ("Why avoid a tree whose trunk leans toward you at the stand?",
  "It can push you off when you stand", ["It hides your body outline from game", "It makes your shots too short", "It sways less in strong wind"],

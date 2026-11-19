@@ -15,6 +15,9 @@ import realestateWaQuestions from "@/data/real-estate-wa-questions.json";
 import realestateAzQuestions from "@/data/real-estate-az-questions.json";
 import realestateTnQuestions from "@/data/real-estate-tn-questions.json";
 import realestateLaQuestions from "@/data/real-estate-la-questions.json";
+import realestateCoQuestions from "@/data/real-estate-co-questions.json";
+import realestateMdQuestions from "@/data/real-estate-md-questions.json";
+import realestateMaQuestions from "@/data/real-estate-ma-questions.json";
 import realestateMoQuestions from "@/data/real-estate-mo-questions.json";
 import { registerExamBanks } from "@/lib/examData";
 
@@ -37,5 +40,8 @@ registerExamBanks({
   "realestate-az": realestateAzQuestions as Question[],
   "realestate-tn": realestateTnQuestions as Question[],
   "realestate-la": realestateLaQuestions as Question[],
+  "realestate-co": realestateCoQuestions as Question[],
+  "realestate-md": realestateMdQuestions as Question[],
+  "realestate-ma": realestateMaQuestions as Question[],
   "realestate-mo": realestateMoQuestions as Question[],
 });

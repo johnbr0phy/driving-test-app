@@ -1,0 +1,4237 @@
+[
+  {
+    "id": "SFAPP-T1-001",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Record-triggered paths",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record-triggered flow must send data to an outside system after the save, without slowing the save. Which path fits?",
+    "explanation": "The Run Asynchronously path runs right after the transaction completes, which suits callouts and other long work. Fast Field Updates runs before the save and is for the triggering record only.",
+    "options": [
+      "Screen flow subflow",
+      "Fast Field Updates path",
+      "Before-delete trigger",
+      "Run Asynchronously path"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-002",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Dynamic Forms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record page has been upgraded to Dynamic Forms. Where are its fields now placed and arranged?",
+    "explanation": "Dynamic Forms moves fields and field sections out of the page layout and onto the Lightning page as components, each with its own visibility rules.",
+    "options": [
+      "Field components on the Lightning page",
+      "Fields of the compact layout",
+      "Sections of the page layout only",
+      "Rows of the highlights panel"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-003",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A validation rule must fire only when a user edits the Status field on an existing record. Which function should it use?",
+    "explanation": "ISCHANGED returns true when a field's value differs from its stored value on save. PRIORVALUE returns the old value but does not by itself say whether it changed.",
+    "options": [
+      "PRIORVALUE",
+      "ISNEW",
+      "ISCHANGED",
+      "ISBLANK"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-004",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandbox types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An app builder needs an isolated copy of production's setup to build a new object, without production records. What fits?",
+    "explanation": "A Developer sandbox copies metadata only. A Developer Edition org is a separate free org that is not a copy of production's configuration.",
+    "options": [
+      "Developer sandbox",
+      "Partial Copy sandbox",
+      "Full sandbox",
+      "Developer Edition org"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-005",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Master-detail limits",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In how many master-detail relationships can one custom object be the detail?",
+    "explanation": "A custom object can be the detail in at most two master-detail relationships, which is how a junction object links two masters. It can have many lookup relationships as well.",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Five"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-006",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Org-wide defaults",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Every user must see all accounts but edit only the accounts they own. Which org-wide default fits Account?",
+    "explanation": "Public Read Only lets everyone view every record while only the owner, and users above in the role hierarchy, can edit. Public Read/Write would let everyone edit.",
+    "options": [
+      "Private",
+      "Controlled by Parent",
+      "Public Read/Write",
+      "Public Read Only"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-007",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Declarative limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Logic must run when a deleted record is restored from the Recycle Bin. Which tool can do this?",
+    "explanation": "Record-triggered flows start when a record is created, updated or deleted, but not when it is undeleted. An Apex trigger has an after undelete event, so this need goes past what Flow offers.",
+    "options": [
+      "Scheduled path on the flow",
+      "Apex trigger on undelete",
+      "Record-triggered flow on update",
+      "Validation rule on the object"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-008",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Data Loader",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Data Loader must load a very large file in parallel batches processed in the background. Which setting fits?",
+    "explanation": "Turning on Use Bulk API makes Data Loader send large jobs through the Bulk API, which processes batches asynchronously and in parallel. The default SOAP API suits smaller loads.",
+    "options": [
+      "Batch size of 1",
+      "Insert null values",
+      "Use Bulk API",
+      "Use the import wizard"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-009",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Fast Field Updates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which task can a Fast Field Updates record-triggered flow not do?",
+    "explanation": "A before-save flow can look up data, make decisions and change the triggering record, but it cannot create, update or delete other records. That needs the Actions and Related Records path.",
+    "options": [
+      "Set a field on the triggering record",
+      "Read data with Get Records",
+      "Create a related record",
+      "Branch with a Decision element"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-010",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Page activation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An object has an org default record page and a different app default page for the Sales app. What do Sales app users see?",
+    "explanation": "An app default overrides the org default inside that app, and an app, record type and profile assignment overrides both.",
+    "options": [
+      "The page layout only",
+      "The page saved last",
+      "The org default page",
+      "The app default page"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-011",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rule must block moving Status from Closed back to Open. Which function returns the value Status had before the edit?",
+    "explanation": "PRIORVALUE returns a field's value before the current change, so the rule can test it was Closed. It works in validation rules and some automation formulas.",
+    "options": [
+      "ISCHANGED",
+      "TEXT",
+      "BLANKVALUE",
+      "PRIORVALUE"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-012",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandbox types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sandbox should hold a sample of accounts and contacts chosen by a template, not all records. Which type fits?",
+    "explanation": "A Partial Copy sandbox copies metadata plus a sample of data defined by a sandbox template. Developer and Developer Pro copy metadata only.",
+    "options": [
+      "Developer sandbox",
+      "Full sandbox",
+      "Partial Copy sandbox",
+      "Developer Pro sandbox"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-013",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Master-detail ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which standard field does a record on the detail side of a master-detail relationship not have?",
+    "explanation": "A detail record takes its ownership and sharing from its master, so the detail object has no Owner field. Name and the audit fields are still there.",
+    "options": [
+      "Created By",
+      "Last Modified By",
+      "Owner",
+      "Name"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-014",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Custom errors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record-triggered flow must stop a save and show a message on a field, the way a validation rule would. Which element fits?",
+    "explanation": "The Custom Error element shows a message on the page or on a field and rolls back the save. A fault path only handles errors that a flow element raises.",
+    "options": [
+      "Custom Error",
+      "Fault path",
+      "Decision",
+      "Screen element"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-015",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Field-level security",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where in Setup can an app builder see and change one field's access for every profile on a single screen?",
+    "explanation": "Field Accessibility shows a field's visibility and read-only state by profile or by record type in one grid. Sharing Settings controls record access, not field access.",
+    "options": [
+      "Field Accessibility",
+      "Setup Audit Trail",
+      "Sharing Settings",
+      "Login Access Policies"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-016",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Compact layouts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which field type can't be added to a compact layout?",
+    "explanation": "Compact layouts accept every field type except text area, long text area, rich text area and multi-select picklist.",
+    "options": [
+      "Currency",
+      "Long Text Area",
+      "Formula",
+      "Picklist"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-017",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "AgentExchange",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team needs e-signatures on quotes and has no developers. What should the app builder check first?",
+    "explanation": "AgentExchange (formerly AppExchange) lists ready-made apps that meet Salesforce's security review, so a common need like e-signature is usually met there. External Services still needs a signing provider's API, and the other tools only change data or layout.",
+    "options": [
+      "External Services with a REST spec",
+      "AgentExchange for an existing app",
+      "Dynamic Forms on the quote page",
+      "Lightning Object Creator template"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-018",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "External data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "ERP order history must show as related records on accounts without being copied into the org. What fits?",
+    "explanation": "Salesforce Connect maps external tables to external objects and reads the data live, so nothing is stored in Salesforce. An indirect lookup needs an external object as the child, and a web tab does not show records on the account.",
+    "options": [
+      "Web tab that opens the ERP",
+      "Indirect lookup on a custom object",
+      "External object via Salesforce Connect",
+      "Nightly Data Loader import"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-019",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Picklist formulas",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A formula must test whether the Rating picklist equals Hot. Which function should it use?",
+    "explanation": "Picklist fields can't be compared with = in most formulas, so ISPICKVAL(Rating, \"Hot\") is used. TEXT() would also work by turning the value into text first.",
+    "options": [
+      "VALUE",
+      "CONTAINS",
+      "INCLUDES",
+      "ISPICKVAL"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-020",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An outbound change set can't be uploaded to production. What must be set first?",
+    "explanation": "Production must have a deployment connection that allows inbound changes from that sandbox. Without it the sandbox cannot send change sets there.",
+    "options": [
+      "A Dev Hub is enabled",
+      "The sandbox is refreshed",
+      "Inbound changes allowed in production",
+      "A namespace is registered in production"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-021",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Delete triggers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When does a record-triggered flow set to run when a record is deleted actually run?",
+    "explanation": "Delete-triggered flows run before the record is removed, so the flow can still read its field values, for example to copy them to an archive.",
+    "options": [
+      "Only for mass deletes",
+      "Before the record is deleted",
+      "After the record is deleted",
+      "When the Recycle Bin is emptied"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-022",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Path",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A path on a custom Project object shows its steps from which kind of field?",
+    "explanation": "A path is built on a picklist, and each picklist value becomes a step with its own key fields and guidance. On opportunities that is Stage.",
+    "options": [
+      "A date field",
+      "A picklist field",
+      "A text field",
+      "A checkbox field"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-023",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Master-detail settings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Detail records must be movable to a different master after they are created. Which field setting allows it?",
+    "explanation": "By default a detail record stays with the master it was created under. Selecting Allow reparenting on the master-detail field lets users with edit access move it.",
+    "options": [
+      "Read/Write sharing setting",
+      "Required on the layout",
+      "Cascade delete option",
+      "Allow reparenting"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-024",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Subflows",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Three flows repeat the same address-checking steps. How should the app builder reuse them?",
+    "explanation": "A Subflow element calls one autolaunched flow from others and passes variables in and out, so the logic is kept and fixed in one place.",
+    "options": [
+      "Add a scheduled path to each",
+      "Call one subflow from each",
+      "Copy the elements into each",
+      "Build a global action for each"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-025",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Sharing rules",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two can a sharing rule share records with? (Choose two.)",
+    "explanation": "Sharing rules grant access to public groups, roles, roles and subordinates, and territories where they are enabled. They cannot target a profile or a permission set.",
+    "options": [
+      "Permission sets",
+      "Public groups",
+      "Profiles",
+      "Roles and subordinates"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T1-026",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A postal code must be five digits, optionally followed by a dash and four digits. Which function checks that pattern?",
+    "explanation": "REGEX tests text against a regular expression such as \\d{5}(-\\d{4})?. LEN only counts characters, so letters would still pass.",
+    "options": [
+      "REGEX",
+      "VALUE",
+      "LEN",
+      "CONTAINS"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-027",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field was deleted in a sandbox. How does a change set remove it from production?",
+    "explanation": "Change sets only add or update components. Deletions are made by hand in the target org, or with destructive changes through the Metadata API.",
+    "options": [
+      "Include the field's profiles",
+      "Add the deleted field to the change set",
+      "Deploy with Run All Tests",
+      "It can't; delete it there by hand"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-028",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Dynamic Actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Once Dynamic Actions is turned on for a record page, where are that page's actions managed?",
+    "explanation": "With Dynamic Actions the highlights panel takes its actions from the Lightning page, where each action can have visibility filters. The page layout's action list no longer controls that page.",
+    "options": [
+      "In the page layout's actions section",
+      "In the global publisher layout",
+      "In the object's compact layout",
+      "In Lightning App Builder"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-029",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report formats",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which report format lists rows only and has no groupings or subtotals?",
+    "explanation": "A tabular report is a simple list of rows with optional grand totals. Summary, matrix and joined reports all support groupings.",
+    "options": [
+      "Matrix",
+      "Tabular",
+      "Summary",
+      "Joined"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-030",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Lookup delete options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A custom lookup field keeps its default delete option. What happens to child records when the parent is deleted?",
+    "explanation": "The default for an optional lookup is to clear the value of the field when the parent is deleted, leaving the child record in place. Blocking or cascading are options the app builder must choose.",
+    "options": [
+      "The children are deleted",
+      "The lookup field is cleared",
+      "The children get a new parent",
+      "The lookup field blocks the delete"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-031",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "External data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An external object of ERP orders must link to accounts by the ERP customer code stored in a unique External ID field on Account. Which relationship fits?",
+    "explanation": "An indirect lookup links a child external object to a standard or custom parent by matching a unique External ID field on the parent. An external lookup points the other way, to an external parent.",
+    "options": [
+      "Indirect lookup",
+      "External lookup",
+      "Hierarchical",
+      "Master-detail"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-032",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow performance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow runs Get Records inside a loop over 500 records. What is the main risk?",
+    "explanation": "Every Get Records in a loop is another query, and a transaction allows only so many. Query once before the loop and work from the collection.",
+    "options": [
+      "Losing record owners",
+      "Flow can't be activated",
+      "Hitting query limits",
+      "Loop skips the first record"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-033",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Custom buttons",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two content sources can a custom button use in Lightning Experience? (Choose two.)",
+    "explanation": "Custom buttons and links can open a URL or a Visualforce page. OnClick JavaScript buttons are not supported in Lightning Experience, and a button cannot point straight at an Apex class.",
+    "options": [
+      "URL",
+      "Apex class",
+      "OnClick JavaScript",
+      "Visualforce page"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T1-034",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Cross-object formulas",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many relationships away can a cross-object formula reach for a parent field?",
+    "explanation": "A cross-object formula can reference fields on parent objects up to 10 relationships away. It can never reach down to child records.",
+    "options": [
+      "3",
+      "5",
+      "10",
+      "15"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFAPP-T1-035",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Package types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A free template app should be shared so recipients can change every component, with no upgrades from the author. Which package type fits?",
+    "explanation": "An unmanaged package gives the installer editable copies of its components and cannot be upgraded. A change set only moves metadata between related orgs.",
+    "options": [
+      "Managed package",
+      "Unlocked package",
+      "Outbound change set",
+      "Unmanaged package"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-036",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Queues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support queue should include everyone in the Support role automatically. What should be added as a member?",
+    "explanation": "Queue members can be users, public groups, roles, and roles and subordinates, so adding the role keeps membership current. Profiles cannot be queue members.",
+    "options": [
+      "The Support profile",
+      "A sharing rule",
+      "A permission set group",
+      "The Support role"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-037",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Screen flows",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A screen flow launched from a record page action needs the record's ID. What should the flow define?",
+    "explanation": "A text variable called recordId that is available for input receives the ID of the record the action runs on. A constant cannot receive values from outside.",
+    "options": [
+      "Get Records with no filters set",
+      "Output variable named Id",
+      "Constant named recordId",
+      "Input variable named recordId"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-038",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Relationship types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Project__c records must point to a parent project record. Which relationship fits?",
+    "explanation": "A lookup from an object to itself is a self-relationship, such as a parent project. Hierarchical relationships exist only on the User object, and an object cannot be the master of itself.",
+    "options": [
+      "Master-detail to itself",
+      "External lookup",
+      "Hierarchical relationship",
+      "Lookup to the same object"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T1-039",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Predefined values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An action on Account creates a case with Origin already set to Phone, while other new cases are unchanged. What fits?",
+    "explanation": "A predefined field value sets a field only for records created through that action. A default value on the field would apply to every new case.",
+    "options": [
+      "Record type default",
+      "Validation rule on Origin",
+      "Predefined field value",
+      "Default value on Origin"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-040",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While a record waits for approval, what stops other users from editing it?",
+    "explanation": "Submitting a record for approval locks it, so only admins and, if allowed, the approver can edit it until the request ends.",
+    "options": [
+      "A read-only layout",
+      "Record locking",
+      "A restriction rule",
+      "A validation rule"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-041",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Roll-up summaries",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A roll-up summary should count only the line items whose Status is Shipped. What should the app builder set?",
+    "explanation": "Roll-up summary fields can include only the detail records that meet filter criteria, such as Status equals Shipped. A report bucket would not change the stored value.",
+    "options": [
+      "A formula on each line item",
+      "Filter criteria on the roll-up",
+      "A second master-detail relationship",
+      "A bucket in a report"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-042",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Lifecycle",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the application lifecycle steps in order.",
+    "explanation": "Teams plan, develop and test changes, then combine them into a release, test that release in a staging environment, and only then deploy it to production.",
+    "options": [
+      "Plan the release",
+      "Develop",
+      "Test",
+      "Build the release",
+      "Test the release",
+      "Release"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "SFAPP-T1-043",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report uses Accounts WITH Opportunities, but only opportunities over 100,000 should count. What should be added?",
+    "explanation": "A cross filter can carry up to five subfilters on the related object, such as Amount greater than 100,000. An ordinary filter would hide rows, not change which accounts qualify.",
+    "options": [
+      "Row limit on the report",
+      "Subfilter on the cross filter",
+      "Filter logic on Amount",
+      "Bucket column on Amount"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-044",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Duplicate management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A matching rule should treat Jon Smith and John Smith as likely the same person. Which matching method fits the name field?",
+    "explanation": "A matching rule compares each field with an exact or fuzzy method, and fuzzy name matching allows nicknames and small spelling differences.",
+    "options": [
+      "Fuzzy",
+      "Exact",
+      "External ID",
+      "Unique"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-045",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Permission sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Permission sets should be assigned automatically whenever a user's Department is Finance. What fits?",
+    "explanation": "A user access policy assigns or removes permission sets, permission set groups, licenses, groups and queues when users match its criteria. A permission set group only bundles permission sets for manual assignment.",
+    "options": [
+      "User access policy",
+      "Criteria-based sharing rule",
+      "Profile default setting",
+      "Permission set group"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-046",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Global actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A New Task global action is used from the Home page. What is the new task related to?",
+    "explanation": "Global actions are not tied to an object, so the records they create have no automatic relationship. Object-specific actions link the new record to the record they were run from.",
+    "options": [
+      "The user's own account",
+      "The user's last record",
+      "Nothing automatically",
+      "The Home page record"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-047",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A submitter takes back a pending approval request. Which actions run?",
+    "explanation": "Recall actions run when a pending request is recalled, often to unlock the record or reset a status field. Final rejection actions run only when an approver rejects.",
+    "options": [
+      "Recall actions",
+      "Final rejection actions",
+      "Initial submission actions",
+      "Escalation actions"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-048",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Picklists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A picklist value should no longer be offered but must stay on existing records. What should the app builder do?",
+    "explanation": "A deactivated value disappears from the list for new edits but stays on the records that already use it. Deleting asks for a replacement or leaves those records blank.",
+    "options": [
+      "Delete the value",
+      "Deactivate the value",
+      "Restrict the picklist",
+      "Rename the value"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-049",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation rules",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Where can a validation rule's error message appear? (Choose two.)",
+    "explanation": "The error location is either Top of Page or a specific field, where the message shows beside it. Validation rules send no email.",
+    "options": [
+      "Only in the debug log",
+      "Next to a chosen field",
+      "In an email to the owner",
+      "At the top of the page"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T1-050",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Quick deploy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A change set was validated in production with tests passing. For how long can it be quick deployed?",
+    "explanation": "A validation with passing tests can be quick deployed within 10 days, skipping the tests on deployment.",
+    "options": [
+      "4 days",
+      "7 days",
+      "10 days",
+      "30 days"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFAPP-T1-051",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Lightning pages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer's Lightning web component doesn't appear in Lightning App Builder. What must its configuration file set?",
+    "explanation": "A component appears in Lightning App Builder only when its js-meta.xml file sets isExposed to true and lists targets such as lightning__RecordPage.",
+    "options": [
+      "isExposed and targets",
+      "A permission set",
+      "An Aura wrapper",
+      "A static resource"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-052",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Schedule-triggered flows",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two frequencies can a schedule-triggered flow use? (Choose two.)",
+    "explanation": "A schedule-triggered flow runs once, daily or weekly from its start time. Hourly and monthly are not offered.",
+    "options": [
+      "Monthly",
+      "Daily",
+      "Weekly",
+      "Hourly"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T1-053",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Core CRM objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which record links a lead or contact to a campaign with a status such as Responded?",
+    "explanation": "A campaign member record ties one lead or contact to a campaign and holds the member status. Campaign influence ties campaigns to opportunities.",
+    "options": [
+      "Opportunity contact role",
+      "Campaign influence",
+      "Campaign member",
+      "Contact relationship"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T1-054",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Data Loader",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Data Loader's update operation is used to change existing records. Which column must the file include?",
+    "explanation": "Update matches each row to a record by its Salesforce ID. Matching on an External ID needs the upsert operation instead.",
+    "options": [
+      "Created date",
+      "Salesforce record ID",
+      "An External ID field",
+      "Record owner's name"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-055",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Object permissions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user must edit, delete and transfer every Project__c record but needs no other org-wide power. Which permission fits?",
+    "explanation": "Modify All on one object grants read, edit, delete, transfer and approve on all its records, ignoring sharing. Modify All Data does that for every object, which is far more than needed.",
+    "options": [
+      "Modify All on Project__c",
+      "View All on Project__c",
+      "Public Read/Write default",
+      "Modify All Data"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-056",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Data model choice",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Each purchase request must name one of about 500 vendors that users add and retire, and requests keep their own owners. How should the field be built?",
+    "explanation": "A lookup to a Vendor custom object lets users maintain vendors as records while each request keeps its own owner. Master-detail would take ownership from the vendor and delete requests with it, and an external lookup needs an external object.",
+    "options": [
+      "Master-detail to a Vendor object",
+      "Lookup to a Vendor object",
+      "External lookup to a Vendor object",
+      "Dependent picklist of vendors"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T1-057",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Date math",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A formula is CloseDate - TODAY(). Close Date is December 15 and today is December 1 of the same year. What does it return? Type the number only.",
+    "explanation": "Subtracting one Date from another returns the number of days between them as a number: 15 minus 1 is 14.",
+    "numeric": {
+      "answers": [
+        "14"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SFAPP-T1-058",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandbox refresh",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each sandbox type to how often it can be refreshed.",
+    "explanation": "Developer and Developer Pro sandboxes can be refreshed daily, Partial Copy every 5 days and Full every 29 days.",
+    "rows": [
+      "Developer",
+      "Partial Copy",
+      "Full"
+    ],
+    "columns": [
+      "Every 29 days",
+      "Every day",
+      "Every 5 days"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-059",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Help text",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Users need a short hint beside a field that explains what to enter. What should be added?",
+    "explanation": "Help text shows as an info icon next to the field. The description is only seen by admins in Setup.",
+    "options": [
+      "Help text",
+      "Validation message",
+      "Field description",
+      "Path guidance"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T1-060",
+    "section": "pab",
+    "test": 1,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Case rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An active case assignment rule has several rule entries. How are they used when a case is saved?",
+    "explanation": "Rule entries are checked in their sort order, and the first entry whose criteria match assigns the case. Later entries are not checked.",
+    "options": [
+      "Each entry gets a share of cases",
+      "In order; the first match wins",
+      "All matching entries apply",
+      "The newest entry is checked first"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-001",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow run modes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An autolaunched flow must ignore the running user's record access. Which run setting fits?",
+    "explanation": "System context without sharing ignores object, field and record access. System context with sharing still applies record-level sharing.",
+    "options": [
+      "System context with sharing on",
+      "Run as the admin profile",
+      "User context",
+      "System context without sharing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-002",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Component visibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chart component on a record page should show on desktop only. What should be set?",
+    "explanation": "Components on Lightning pages can have visibility filters on device form factor, so they show on desktop or phone only.",
+    "options": [
+      "Visibility by device form factor",
+      "Removal from the compact layout fields",
+      "Profile page layout",
+      "A separate record type"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-003",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A validation rule should apply only when a record is first created. Which function should it use?",
+    "explanation": "ISNEW returns true when the record is being created and false on later edits. ISCHANGED is the reverse case: it only applies to edits.",
+    "options": [
+      "PRIORVALUE",
+      "ISCHANGED",
+      "NOW",
+      "ISNEW"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-004",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandbox types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers need a metadata-only sandbox with more storage for larger test data sets. Which type fits?",
+    "explanation": "Developer Pro copies the same metadata as Developer but has more data and file storage. Partial Copy also copies a sample of records.",
+    "options": [
+      "Full sandbox with a template",
+      "Partial Copy sandbox",
+      "Developer sandbox",
+      "Developer Pro sandbox"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-005",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Master-detail rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app builder wants Contact as the detail in a master-detail relationship with a custom Region object. Why is this blocked?",
+    "explanation": "A standard object such as Contact cannot be on the detail side of a master-detail relationship with a custom object. A lookup from Contact to Region works instead.",
+    "options": [
+      "Contact already looks up to Account",
+      "Contact needs a record type",
+      "Region has no roll-ups yet",
+      "Standard objects can't be details"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-006",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Org-wide defaults",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a custom object, managers must not automatically see the records their reports own. What should be cleared?",
+    "explanation": "Clearing Grant Access Using Hierarchies on a custom object means only the owner and users given access through sharing see its private records. This option can be turned off for custom objects only.",
+    "options": [
+      "The object's sharing rules",
+      "Grant Access Using Hierarchies",
+      "View All on the custom object",
+      "Manual sharing on records"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-007",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Declarative limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A partner's REST API is described in an OpenAPI file. What lets a flow call it after the file is registered?",
+    "explanation": "External Services reads an OpenAPI schema and turns its operations into actions that Flow can call. A named credential only stores the endpoint and login, and Salesforce Connect shows external data as external objects.",
+    "options": [
+      "External Services",
+      "Platform events",
+      "Salesforce Connect",
+      "Named credential alone"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-008",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Export tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How often can the Data Export Service be scheduled to run?",
+    "explanation": "Depending on edition, scheduled exports run every 7 days or every 29 days, and an export can also be started by hand.",
+    "options": [
+      "Weekly or monthly",
+      "Hourly or daily",
+      "Only on demand",
+      "Daily or weekly"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-009",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Platform events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow must publish a platform event for an outside listener. Which element publishes it?",
+    "explanation": "A platform event is published by creating an event record, so Create Records with the event object sends it.",
+    "options": [
+      "Update Records",
+      "Custom Error",
+      "Create Records",
+      "Send Email"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-010",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "List views",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Users want to work down a list and see each selected record beside it without leaving the list. Which view fits?",
+    "explanation": "Split view shows the list in a panel on the left and the chosen record on the right. Kanban shows cards in columns instead.",
+    "options": [
+      "Split view",
+      "Kanban view",
+      "Console subtab",
+      "Report table"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-011",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation functions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A validation rule must check a ZIP code against the valid codes stored in a custom object. Which function fits?",
+    "explanation": "VLOOKUP returns a field from a record of another object that matches a key, and it is available only in validation rules. REGEX can check a pattern but not a stored list.",
+    "options": [
+      "INCLUDES",
+      "VLOOKUP",
+      "REGEX",
+      "CONTAINS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-012",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandbox templates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What decides which objects' records a Partial Copy sandbox copies?",
+    "explanation": "A sandbox template lists the objects whose data is copied into Partial Copy and Full sandboxes.",
+    "options": [
+      "A sandbox data mapping file",
+      "A change set",
+      "A sandbox template",
+      "The org-wide defaults"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-013",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Master-detail settings",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A master-detail field's sharing setting is Read Only. What does a user need to create or edit detail records?",
+    "explanation": "The sharing setting on a master-detail field sets the access to the master needed to create, edit or delete details. Read Only asks for read access; Read/Write asks for edit access.",
+    "options": [
+      "Read access to the master",
+      "Ownership of the master",
+      "View All on the detail",
+      "Edit access to the master"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-014",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Only opportunities over 50,000 should go through an approval process. Where is this set?",
+    "explanation": "Entry criteria decide which records can be submitted to the process. Records that don't meet them cannot enter it.",
+    "options": [
+      "Final approval actions",
+      "The approver field",
+      "A validation rule",
+      "Process entry criteria"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-015",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Field-level security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field is editable on the page layout but read-only in the user's field permissions. What can the user do?",
+    "explanation": "When the page layout and field permissions disagree, the more restrictive setting wins. Read-only field access means the user sees the value and cannot change it.",
+    "options": [
+      "Edit it on the record page",
+      "Not see it at all",
+      "View it but not edit it",
+      "Edit it only in list views"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-016",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Highlights panel",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which standard component shows the compact layout fields and the record's actions at the top of a record page?",
+    "explanation": "The Highlights Panel shows the fields from the compact layout and the actions for the record. Record Detail shows the page layout or Dynamic Forms fields.",
+    "options": [
+      "Path",
+      "Highlights Panel",
+      "Activities",
+      "Record Detail"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-017",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At most how many blocks can one joined report hold?",
+    "explanation": "A joined report can hold up to five blocks, each with its own report type, filters and columns.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "10"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFAPP-T2-018",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "External data",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A custom Ticket object must point to an external object Device that holds data from another system. Which relationship fits?",
+    "explanation": "An external lookup relates a record to an external object parent, matched on the parent's External ID standard field. Indirect lookups have a Salesforce object as the parent.",
+    "options": [
+      "Self-relationship",
+      "External lookup",
+      "Indirect lookup",
+      "Master-detail"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-019",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Multi-select formulas",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function tests whether a multi-select picklist has a given value selected?",
+    "explanation": "INCLUDES checks one value of a multi-select picklist. ISPICKVAL works on single-select picklists only.",
+    "options": [
+      "CASE",
+      "INCLUDES",
+      "ISPICKVAL",
+      "CONTAINS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-020",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Can a change set move components between two unrelated production orgs?",
+    "explanation": "Change sets work only between orgs tied to the same production org, such as its sandboxes. Unrelated orgs need packages or the Metadata API.",
+    "options": [
+      "Yes, with a deployment connection",
+      "No, orgs must share a production",
+      "Only unmanaged components",
+      "Yes, if both are Enterprise"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-021",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An approval step goes to three approvers and needs every one to approve. Which option fits?",
+    "explanation": "When a step has several approvers you choose unanimous approval or the first response. Unanimous needs every approver to approve.",
+    "options": [
+      "Allow delegated approvers",
+      "Assign to a queue",
+      "Require unanimous approval",
+      "Approve on first response"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-022",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Update actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Agents need to change two case fields from the mobile action bar without opening the full edit page. Which action type fits?",
+    "explanation": "An Update a Record action shows only the fields on its layout and saves them to the current record.",
+    "options": [
+      "Log a Call",
+      "Send Email",
+      "Create a Record",
+      "Update a Record"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-023",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Junction objects",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What access does a user need to view a junction object record?",
+    "explanation": "Access to a junction record depends on the user's access to both of its master records. The primary relationship only decides the record's look and owner.",
+    "options": [
+      "View All on one of the masters",
+      "Read access to both masters",
+      "Read access to the primary master",
+      "Ownership of the junction record"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-024",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Salesforce now lets approval processes be built in which tool?",
+    "explanation": "Flow approval processes are built in Flow Builder with stages and steps. Workflow rules and Process Builder are retired tools.",
+    "options": [
+      "Process Builder",
+      "Workflow Rules",
+      "Schema Builder",
+      "Flow Builder"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-025",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Restriction rules",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Contractors need to see only the Project__c records in their region, while employees keep their wider access. Which feature narrows what the contractors see?",
+    "explanation": "A restriction rule limits which records a set of users can see, even when org-wide defaults or sharing would show more. Sharing rules and the role hierarchy can only add access.",
+    "options": [
+      "Restriction rule",
+      "Sharing rule",
+      "Permission set group",
+      "Role hierarchy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-026",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula settings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A formula adds two number fields, and when one is empty the result shows blank. What fixes it?",
+    "explanation": "Formulas have a blank field handling setting. Treat blank fields as zeros makes empty number fields count as 0, so the sum appears.",
+    "options": [
+      "Treat blank fields as zeros",
+      "Mark both fields unique",
+      "Wrap each field in ISNEW()",
+      "Treat blank fields as blanks"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-027",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Field-level security for a new field should deploy with it in a change set. What should be added to the set?",
+    "explanation": "Field permissions travel with the profiles or permission sets added to the set, for the components included. Without them the field arrives with no access.",
+    "options": [
+      "The profiles or permission sets",
+      "Nothing extra is needed",
+      "The page layout only",
+      "The record types that use the field"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-028",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Action layouts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a Create a Record action is first created, which fields are on its layout?",
+    "explanation": "New create actions start with the object's required fields, since removing them would leave users unable to save.",
+    "options": [
+      "No fields until added",
+      "The object's required fields",
+      "Every field on the object's layout",
+      "The compact layout fields"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-029",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report should show each opportunity's days from creation to close without adding a field to the object. What should it use?",
+    "explanation": "A row-level formula calculates a value for each record in the report only. A summary formula works on grouped totals, not single rows.",
+    "options": [
+      "Summary formula",
+      "Row-level formula",
+      "Cross filter on Cases",
+      "Bucket column"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-030",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Lookup delete options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users must not be able to delete a parent record that still has children through a lookup. Which option fits?",
+    "explanation": "Don't allow deletion of the lookup record blocks deleting a parent while children point to it. Clearing the value is the default and would let the delete go through.",
+    "options": [
+      "Don't allow deletion",
+      "Clear the value",
+      "Allow reparenting",
+      "Delete this record also"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-031",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Duplicate management",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "What can a duplicate rule do when a user saves a likely duplicate? (Choose two.)",
+    "explanation": "A duplicate rule can block the save, or allow it and alert the user, optionally reporting it. Merging stays a manual step.",
+    "options": [
+      "Merge the records automatically",
+      "Block the save",
+      "Allow it with an alert",
+      "Delete the older record"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T2-032",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Agentforce actions",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two can be added to an Agentforce agent as actions? (Choose two.)",
+    "explanation": "Agent actions can run autolaunched flows, Apex invocable actions and prompt templates. Record-triggered and schedule-triggered flows start on their own, from a record change or a clock, so an agent cannot call them.",
+    "options": [
+      "Prompt template",
+      "Schedule-triggered flow",
+      "Record-triggered flow",
+      "Autolaunched flow"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T2-033",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Lightning pages",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A one-page tool for quick tasks should appear as its own tab in an app's navigation bar. Which page type fits?",
+    "explanation": "An app page stands alone and is added to an app's navigation as a tab. Record pages need a record, and the Home page is the Home tab.",
+    "options": [
+      "Record page",
+      "App page",
+      "Utility page",
+      "Home page"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-034",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A formula field must show a clickable link to the account's website. Which function should it use?",
+    "explanation": "HYPERLINK builds a link from a URL and the text to show. IMAGE displays a picture from a URL instead.",
+    "options": [
+      "SUBSTITUTE",
+      "IMAGE",
+      "HYPERLINK",
+      "TEXT"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-035",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before deploying an inbound change set during a busy day, the app builder wants to know it will succeed. What should they do?",
+    "explanation": "Validating runs the deployment and tests without saving changes, and a passing validation can later be quick deployed.",
+    "options": [
+      "Clone it first",
+      "Export the data first",
+      "Validate it first",
+      "Upload it again"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-036",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Several reps must share access to one large opportunity, each with a role such as Sales Engineer. What fits?",
+    "explanation": "An opportunity team gives named users access to one opportunity with a team role and an access level. A queue or public group is not tied to a single record.",
+    "options": [
+      "Permission set group",
+      "Public group",
+      "Opportunity team",
+      "Opportunity sharing rule"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-037",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Collections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow must keep only the high-priority cases from a collection, without a loop. Which element fits?",
+    "explanation": "Collection Filter returns the items of a collection that meet conditions. Collection Sort only reorders them.",
+    "options": [
+      "Collection Filter",
+      "Transform",
+      "Assignment",
+      "Collection Sort element"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-038",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Picklists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An integration must never load values that are missing from a picklist's list. Which setting fits?",
+    "explanation": "Restricting a picklist to its defined values makes the API reject any other value. Without that, an integration can write values that are not in the list.",
+    "options": [
+      "Required field setting",
+      "Global value set",
+      "Dependent picklist",
+      "Restricted picklist"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-039",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Lightning apps",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are set up as part of a custom Lightning app? (Choose two.)",
+    "explanation": "The Lightning app wizard sets branding, navigation items, the utility bar and which profiles can use the app. Record and field access are set elsewhere.",
+    "options": [
+      "Navigation items",
+      "Org-wide defaults",
+      "User profiles assigned",
+      "Field-level security"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T2-040",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow orchestration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A hiring process gives HR, then IT, then a manager their own screens to complete over several days. What fits?",
+    "explanation": "An orchestration groups flows into stages and steps assigned to different users or groups as work items, and moves on when each step is done. An approval process only asks for approve or reject, and one screen flow runs for one user at a time.",
+    "options": [
+      "Approval process with three steps",
+      "Record-triggered flow with scheduled paths",
+      "Screen flow shared by all three",
+      "Flow orchestration"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-041",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Roll-up summaries",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A roll-up summary can't use a numeric formula field on the detail object. What is a likely reason?",
+    "explanation": "Roll-up summaries cannot aggregate formula fields that use functions that change on their own, such as TODAY() or NOW(), or that reference other objects.",
+    "options": [
+      "The formula uses TODAY()",
+      "The formula returns a number",
+      "The detail is in a master-detail",
+      "The formula has no decimals"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-042",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Package types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An internal team wants versioned, upgradeable modules of its own org's metadata. Which package type fits?",
+    "explanation": "Unlocked packages are built for an organization's own apps, with versions and upgrades. Managed packages are mainly for partners selling on AgentExchange.",
+    "options": [
+      "Managed packages",
+      "Unmanaged packages",
+      "Change sets",
+      "Unlocked packages"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-043",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After saving a custom report type, which setting can no longer be changed?",
+    "explanation": "Salesforce fixes a custom report type's primary object once it is saved. The label, the field layout and the In Development or Deployed status can all still be edited.",
+    "options": [
+      "Deployment status",
+      "Primary object",
+      "Report type label",
+      "Fields in the layout"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-044",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Big objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Billions of historical sensor readings must be kept inside Salesforce for occasional queries. What fits?",
+    "explanation": "Big objects are built to hold billions of records inside Salesforce with steady performance. External objects keep the data outside Salesforce.",
+    "options": [
+      "Big object",
+      "Custom setting",
+      "Custom object",
+      "External object"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-045",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Profiles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which setting is assigned through a profile rather than a permission set?",
+    "explanation": "Page layouts are assigned by profile and record type. Object, field and Apex class access can all be granted through permission sets, which Salesforce recommends.",
+    "options": [
+      "Page layout assignment",
+      "Object create permission",
+      "Apex class access",
+      "Field edit access"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-046",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Tabs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users should find a tab in the App Launcher but not see it in the navigation bar until they add it. Which tab setting fits?",
+    "explanation": "Default Off keeps the tab available but out of the navigation bar until the user adds it. Tab Hidden removes it from the user entirely.",
+    "options": [
+      "Default On",
+      "Tab Hidden",
+      "Default Off",
+      "Visible to admins"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-047",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Screen components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A screen must list several records with checkboxes so the user can pick some. Which component fits?",
+    "explanation": "The Data Table component shows a record collection in rows and lets users select one or many. A Lookup picks a single record.",
+    "options": [
+      "Lookup",
+      "Picklist",
+      "Data Table",
+      "Display Text"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-048",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Picklists",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two field types can be the controlling field for a dependent picklist? (Choose two.)",
+    "explanation": "A dependent picklist is controlled by a standard or custom picklist, or by a checkbox. Text and lookup fields cannot control one.",
+    "options": [
+      "Text",
+      "Picklist",
+      "Checkbox",
+      "Lookup"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-T2-049",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new validation rule is activated. Which records does it check?",
+    "explanation": "A validation rule runs when a record is saved, so existing records are only checked the next time someone edits them.",
+    "options": [
+      "Records in the next data load",
+      "Only records created today",
+      "Records as they are saved",
+      "All existing records at once"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-050",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Package types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which package type hides its Apex code from the org that installs it?",
+    "explanation": "Managed packages protect their Apex code and use a namespace. Unlocked and unmanaged packages leave their code visible.",
+    "options": [
+      "Managed package",
+      "Unlocked package",
+      "Change set",
+      "Unmanaged package"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-051",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Related records",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A case page should show and allow editing of fields from its parent account. Which component fits?",
+    "explanation": "The Related Record component shows a lookup record's fields and lets users edit them in place. A cross-object formula only displays a value.",
+    "options": [
+      "Compact layout",
+      "Related List - Single",
+      "Related Record",
+      "Cross-object formula"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-052",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Update Records",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An after-save flow on Opportunity should update the parent account. Which filter should Update Records use?",
+    "explanation": "\\$Record.AccountId holds the parent account's ID, so filtering Account on Id equals that value updates just the parent. \\$Record.Id is the opportunity's own ID.",
+    "options": [
+      "Id equals \\$Record.Id",
+      "OwnerId equals \\$Record.OwnerId",
+      "Id equals \\$Record.AccountId",
+      "Name equals \\$Record.Name"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-053",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report folders",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user must save reports into a shared folder and edit others' reports there, but not change who can see it. Which access fits?",
+    "explanation": "Report folder access has three levels. Viewer can run reports, Editor can also save and change reports in the folder, and Manager can also share the folder and rename it.",
+    "options": [
+      "Manager",
+      "Editor",
+      "Viewer",
+      "Owner only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-054",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Data Loader",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A monthly Data Loader job uses the same column-to-field matches every time. What should be saved?",
+    "explanation": "Data Loader can save a mapping as an .sdl file and load it in later runs, so the columns are matched the same way each time.",
+    "options": [
+      "A matching rule",
+      "The field mapping file",
+      "A sandbox template",
+      "A CSV of record IDs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-055",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Manual sharing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Sharing button is missing on records of a custom Project__c object. Which org-wide default is the likely cause?",
+    "explanation": "Manual sharing opens access beyond the default, so the Sharing button appears only when the default is less than Public Read/Write. With Public Read/Write everyone can already edit.",
+    "options": [
+      "Public Read/Write",
+      "Private without hierarchy access",
+      "Private",
+      "Public Read Only"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-T2-056",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Field types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field must record the exact moment a contract was signed, shown in each user's time zone. Which field type fits?",
+    "explanation": "A Date/Time field stores a moment and shows it in each user's time zone. A Date field has no time part.",
+    "options": [
+      "Time",
+      "Date/Time",
+      "Text (ISO format)",
+      "Date"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-T2-057",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula math",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A formula field is Amount * Probability. Amount is 80,000 and Probability is 25%. What value does it show? Type the number only.",
+    "explanation": "A percent field is used as a decimal in formulas, so 25% is 0.25 and 80,000 times 0.25 is 20,000.",
+    "numeric": {
+      "answers": [
+        "20000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SFAPP-T2-058",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Salesforce tool tracks work items and moves changes through pipeline stages with source control, without the CLI?",
+    "explanation": "Lifecycle Center (formerly next-generation DevOps Center, renamed from October 2026) manages work items and promotes changes through a pipeline backed by a source repository, with clicks.",
+    "options": [
+      "Data Loader",
+      "Change sets",
+      "Lifecycle Center",
+      "Schema Builder canvas"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-T2-059",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Flow on pages",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A guided screen flow should be embedded directly in a record page. Which component fits?",
+    "explanation": "The standard Flow component runs a screen flow inside a Lightning page and can pass the record ID into it.",
+    "options": [
+      "Rich Text",
+      "Path",
+      "Visualforce",
+      "Flow"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-T2-060",
+    "section": "pab",
+    "test": 2,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Update Records",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An after-save flow on Account must update all the account's open opportunities without a loop. Which element fits?",
+    "explanation": "Update Records can find records by conditions, such as AccountId equals the triggering account and IsClosed false, and set field values on all of them at once.",
+    "options": [
+      "Update Records with conditions",
+      "Get Records with a filter",
+      "Custom Error element",
+      "Assignment on a collection"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-001",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report tools",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Industry values must be grouped into Tech, Finance and Other in a report, with no new field. What should be used?",
+    "explanation": "A bucket column sorts field values into named categories inside one report. Nothing is added to the object, and other reports are not affected.",
+    "options": [
+      "Bucket column",
+      "Report type change",
+      "Cross filter",
+      "Row-level formula"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-002",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Profiles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Call center users must be blocked from logging in at night. Where should this be set?",
+    "explanation": "Login hours are set on the profile, and users on that profile cannot log in outside them. Session timeout only ends idle sessions.",
+    "options": [
+      "Login hours on their profile",
+      "Permission set expiration date",
+      "Password policies",
+      "Session timeout setting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-003",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Relationship changes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An app builder can't change a master-detail field into a lookup. What most likely blocks it?",
+    "explanation": "A master-detail field cannot become a lookup while the master has roll-up summary fields that use it. Delete those roll-ups first.",
+    "options": [
+      "A record type on the detail",
+      "Roll-ups on the master",
+      "Sharing rules on the master",
+      "Existing detail records"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-004",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Data Loader",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A nightly import from a file must run with nobody clicking anything. What fits?",
+    "explanation": "Data Loader can run from the command line, so a scheduler can start regular loads such as nightly imports. The Data Import Wizard is interactive only.",
+    "options": [
+      "Data Import Wizard set on a schedule",
+      "Data Loader run from a command line",
+      "Inbound change set",
+      "Weekly Data Export Service"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-005",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A formula field should show a traffic-light icon that depends on a score. Which function fits?",
+    "explanation": "IMAGE shows a picture from a URL, often chosen with IF or CASE. HYPERLINK builds a link rather than showing a picture.",
+    "options": [
+      "HYPERLINK",
+      "BR",
+      "IMAGE",
+      "TEXT"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-006",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After final approval the record must become editable again. What should the final approval actions set?",
+    "explanation": "Final approval actions include a record lock setting, which can unlock the record once it is approved. Recall is something the submitter does, not an action.",
+    "options": [
+      "Keep the record locked",
+      "Reassign the approver",
+      "Unlock the record",
+      "Recall the request"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-007",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Page activation",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An app builder saves a new record page, but users still see the old one. What step is missing?",
+    "explanation": "Saving a Lightning page does not show it to anyone. It must be activated as an org, app, or app, record type and profile assignment.",
+    "options": [
+      "A cache clear",
+      "A change set",
+      "A compact layout",
+      "Activation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-008",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A change set fails because a field it uses is missing in the target org. What could have prevented it?",
+    "explanation": "View and Add Dependencies lists components the set relies on, so they can be included before upload.",
+    "options": [
+      "Validating in the sandbox",
+      "Refreshing the target",
+      "Running all tests",
+      "Adding its dependencies"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-009",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report tools",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A summary formula must compare each month's total with the month before. Which function fits?",
+    "explanation": "PREVGROUPVAL returns a summary value from the previous group at the same level. PARENTGROUPVAL returns the value of a parent grouping.",
+    "options": [
+      "PARENTGROUPVAL",
+      "PRIORVALUE",
+      "PREVGROUPVAL",
+      "VLOOKUP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-010",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Permission sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A contractor needs extra access for 30 days only. What is the simplest way to grant it?",
+    "explanation": "Permission set and permission set group assignments can carry an expiration date, after which Salesforce removes them. A temporary profile would have to be swapped back by hand.",
+    "options": [
+      "Freezing the user once 30 days pass",
+      "Manual shares on each record",
+      "Assignment with an expiration date",
+      "Temporary custom profile"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-011",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Field types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A field must hold plain-text notes of up to 10,000 characters. Which field type fits?",
+    "explanation": "Long Text Area holds up to 131,072 characters of plain text. Text and Text Area stop at 255 characters, and Rich Text Area adds formatting the requirement does not ask for.",
+    "options": [
+      "Text",
+      "Rich Text Area",
+      "Long Text Area",
+      "Text Area"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-012",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Data Loader",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which user permission is needed to use Data Loader's hard delete operation?",
+    "explanation": "Hard delete runs through the Bulk API and needs the Bulk API Hard Delete permission on the user's profile or a permission set.",
+    "options": [
+      "Bulk API Hard Delete",
+      "API Enabled only",
+      "Delete on the object only",
+      "Manage Data Integrations"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-013",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula return types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A formula field should show true when Amount is over 100,000. Which return type fits?",
+    "explanation": "A Checkbox formula returns true or false and shows as a checked or empty box. A Text formula would show the words.",
+    "options": [
+      "Checkbox",
+      "Percent",
+      "Number",
+      "Text"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-014",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The app builder wants saved, repeatable tests that check a record-triggered flow's results. What fits?",
+    "explanation": "Flow tests set up a triggering record and assertions on the outcome, and can be run again after every change.",
+    "options": [
+      "Change set validation",
+      "Flow tests in Flow Builder",
+      "Apex test classes only",
+      "Debug logs for the running user"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-015",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Form factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An account record page should use a different page on phones than on desktops. What should be set?",
+    "explanation": "When a Lightning record page is activated you can assign it for desktop, phone or both, so phones can get their own page.",
+    "options": [
+      "A mobile page layout",
+      "Phone form factor assignment",
+      "A mobile-only compact layout",
+      "A separate record type"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-016",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After uploading, the app builder needs one more field in the same outbound change set. What should they do?",
+    "explanation": "An uploaded change set is locked. Cloning it makes an editable copy that can take the extra component and be uploaded.",
+    "options": [
+      "Rename the uploaded set",
+      "Recall it from production first",
+      "Clone it and add the field",
+      "Edit the uploaded set"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-017",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report export",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report should be exported as raw rows for another system, with no headers or groupings. Which export fits?",
+    "explanation": "Details Only exports the report's rows as a plain .csv or .xlsx file. Formatted Report keeps the header, groupings and filters.",
+    "options": [
+      "Subscription email",
+      "Details Only",
+      "Formatted Report",
+      "Printable View"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-018",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Session-based access",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Extra access must be active only after the user signs in with multi-factor verification, not on every login. What fits?",
+    "explanation": "A session-based permission set is active only while its session activation condition is met, such as a high assurance session after multi-factor verification. An expiration date or muting does not depend on how the user signed in.",
+    "options": [
+      "Permission set with an expiration date",
+      "Login IP ranges on the profile",
+      "Session-based permission set",
+      "Permission set group with muting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-019",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Relationship types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Child records must keep their own owner and sharing settings. Which relationship should link them to the parent?",
+    "explanation": "In a lookup, the child keeps its own owner and its own org-wide default. In a master-detail relationship the detail takes ownership and sharing from the master.",
+    "options": [
+      "Lookup",
+      "Hierarchical",
+      "Indirect lookup",
+      "Master-detail"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-020",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Import tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When the Data Import Wizard imports contacts, which field can it use to match existing contacts?",
+    "explanation": "For contacts the wizard can match on name, email or Salesforce ID. A last name alone or a phone number is not a matching choice.",
+    "options": [
+      "Email",
+      "Last Name",
+      "Phone",
+      "Mailing City"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-021",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Cross-object formulas",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can't a formula field on Account total values from the account's child records?",
+    "explanation": "Formula fields reach up relationships to parents, never down to children. Totals of children come from roll-up summaries or automation.",
+    "options": [
+      "Formulas read only parent fields",
+      "Account doesn't allow formulas",
+      "Child fields need a record type",
+      "Formulas can't use number fields"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-022",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow versions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many versions of one flow can be active at the same time?",
+    "explanation": "Only one version of a flow is active. Activating another version deactivates the current one.",
+    "options": [
+      "Two",
+      "Five",
+      "All of them",
+      "One"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-023",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Mobile actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which page layout section controls the actions shown on record pages in Lightning Experience and the mobile app?",
+    "explanation": "That section sets the actions on record pages in both places. If its defaults are overridden, standard and custom buttons must be added there as actions.",
+    "options": [
+      "Related Lists",
+      "Mobile Cards (Salesforce Mobile Only)",
+      "Custom Buttons",
+      "Salesforce Mobile and Lightning Experience Actions"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-024",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Deployment monitoring",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where in Setup can the app builder watch a deployment's progress and errors?",
+    "explanation": "Deployment Status shows running, pending and finished deployments with component and test errors.",
+    "options": [
+      "Apex Jobs",
+      "Deployment Status",
+      "Debug Logs",
+      "Setup Audit Trail"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-025",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Report types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many objects can a custom report type's chain of related objects include?",
+    "explanation": "A custom report type starts with a primary object and can add up to three related objects below it, four in all. Fields from lookup objects can be added on top of that.",
+    "options": [
+      "Up to two",
+      "Up to three",
+      "Up to six",
+      "Up to four"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-026",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Custom permissions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature lets a flow check whether the running user has been granted a named capability?",
+    "explanation": "A custom permission is a named switch granted through permission sets or profiles, and flows and formulas read it through \\$Permission. Checking a profile name breaks as soon as access is granted another way.",
+    "options": [
+      "Custom permission",
+      "Profile name check",
+      "Field-level security",
+      "Permission set group"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-027",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Field types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A site's latitude and longitude must be stored so distances can be calculated. Which field type fits?",
+    "explanation": "A Geolocation field stores latitude and longitude together and works with the DISTANCE formula function. Two plain number fields would lose that support.",
+    "options": [
+      "Text",
+      "Two Number fields",
+      "Address lookup",
+      "Geolocation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-028",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Import order",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Accounts and their contacts come from a legacy system. In which order should they be loaded?",
+    "explanation": "Parents load first so their new Salesforce IDs, or External IDs, can be put on the child rows. The contacts can then reference the account they belong to.",
+    "options": [
+      "Accounts, then contacts with account IDs",
+      "Both in one file at once",
+      "Contacts, then link by account name",
+      "Contacts, then accounts with contact IDs"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-029",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Validation bypass",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Integration users must skip one validation rule. What should the rule's formula check?",
+    "explanation": "Granting a custom permission to the integration user through a permission set lets the rule test \\$Permission and skip. Checking a profile name breaks when the user or profile changes.",
+    "options": [
+      "\\$Profile.Name of the user",
+      "ISNEW() before the other checks",
+      "\\$Permission custom permission",
+      "\\$User.IsActive for the user"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-030",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Agentforce actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An agent action runs a flow. What helps the agent decide when to use that action?",
+    "explanation": "Agents read each action's instructions and descriptions to choose when to run it and what to pass in. Clear instructions matter more than the underlying name.",
+    "options": [
+      "The flow's API name",
+      "The action's instructions",
+      "The page layout",
+      "The flow trigger order number"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-031",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Page templates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What decides how many regions a Lightning record page has?",
+    "explanation": "Each Lightning page uses a template, such as header and two columns, which sets its regions. Changing the template moves components into the new regions.",
+    "options": [
+      "Its page layout",
+      "Its compact layout",
+      "Its template",
+      "Its record type"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-032",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Development models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which model makes source control the source of truth and ships changes as versioned packages?",
+    "explanation": "In the package development model the repository holds the truth and changes ship as packages. The org development model deploys from source to one org without packages.",
+    "options": [
+      "Org development model",
+      "Change set development model",
+      "Sandbox refresh model",
+      "Package development model"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-033",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Historical trends",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report should compare opportunities' Amount and Close Date today with their values a few weeks ago, without a custom object. What fits?",
+    "explanation": "Historical trend reporting stores daily values of chosen fields and reports them with a historical trending report type. A reporting snapshot needs a target custom object.",
+    "options": [
+      "Reporting snapshot",
+      "Field history tracking",
+      "Bucket column",
+      "Historical trend reporting"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-034",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Record ownership",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two can own a lead or case record? (Choose two.)",
+    "explanation": "Records are owned by a user or, for objects that support it, a queue. Roles and public groups can receive shared access but cannot own records.",
+    "options": [
+      "A user",
+      "A public group",
+      "A queue",
+      "A role"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-D-035",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Custom settings",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Configuration values must differ by profile or by user, with an org-wide default. Which feature fits?",
+    "explanation": "A hierarchy custom setting returns the value set for the user, then the profile, then the org default. A list custom setting has the same values for everyone.",
+    "options": [
+      "Custom metadata type record",
+      "List custom setting",
+      "Hierarchy custom setting",
+      "Global value set"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-036",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Import tools",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two can the Data Import Wizard import into? (Choose two.)",
+    "explanation": "The wizard imports accounts, contacts, leads, solutions, campaign members, person accounts and custom objects. Cases and users need Data Loader.",
+    "options": [
+      "Custom objects",
+      "Cases",
+      "Users",
+      "Leads"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SFAPP-D-037",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Lead conversion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Validation rules on Account don't run when leads are converted. Which setting makes them run?",
+    "explanation": "In Lead Settings, Require Validation for Converted Leads makes validation rules on the converted records run during conversion.",
+    "options": [
+      "Hide Opportunity Section of Lead Convert",
+      "Require Validation for Converted Leads",
+      "Allow Reparenting on Account",
+      "Treat blank fields as zeros"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-038",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Agentforce actions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An agent runs a flow action but never uses the flow's result in its reply. What is most likely missing?",
+    "explanation": "An agent reads a flow's results only from variables marked available for output. Agent actions run autolaunched flows, so there are no screens.",
+    "options": [
+      "A screen element in the flow",
+      "A variable available for output",
+      "A trigger order number",
+      "A fault path on the flow"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-039",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Related lists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record page should show only the account's open cases, filtered and sorted, without code. What fits?",
+    "explanation": "The Dynamic Related List - Single component shows one related list with its own filters, sort and fields. Dynamic Forms places fields of the record itself, Dynamic Actions places buttons, and Dynamic Interactions lets components talk to each other; none of them lists related records.",
+    "options": [
+      "Dynamic Related List - Single",
+      "Dynamic Actions on the page",
+      "Dynamic Forms field section",
+      "Dynamic Interactions event"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-040",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Development models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team keeps changes in source control and deploys them to its one production org, without packaging. Which model is this?",
+    "explanation": "The org development model tracks changes in source control and deploys them to the org as one set. Change set development has no source control.",
+    "options": [
+      "Change set development",
+      "Package development model",
+      "Org development model",
+      "Managed package model"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-041",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Dashboards",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which dashboard component shows progress toward a target with color bands for low, middle and high values?",
+    "explanation": "A gauge shows one value against a range with breakpoints and colors. A metric shows a single number without a scale.",
+    "options": [
+      "Table",
+      "Metric",
+      "Funnel",
+      "Gauge"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-042",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An account owner wants to give named colleagues, each with a role, access to one account and its opportunities. What fits?",
+    "explanation": "An account team lists users with a team role and their access to the account and its related opportunities and cases. A sharing rule covers groups of records, not one account.",
+    "options": [
+      "Opportunity team on each deal",
+      "Queue for the account",
+      "Public group sharing rule",
+      "Account team"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-043",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Field types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A field must hold formatted notes with bold text and images. Which field type fits?",
+    "explanation": "Rich Text Area keeps formatting and pictures. Long Text Area holds only plain text.",
+    "options": [
+      "Long Text Area",
+      "Text Area",
+      "Rich Text Area",
+      "Formula (Text)"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-044",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Lightning Object Creator",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team has a spreadsheet of vendors and wants a custom object, its fields and its records built from it in one step. What fits?",
+    "explanation": "Lightning Object Creator builds a custom object from a spreadsheet, choosing field types from the columns and importing the rows. The Data Import Wizard needs the object to exist already.",
+    "options": [
+      "Object Manager with CSV",
+      "Data Import Wizard",
+      "Schema Builder",
+      "Lightning Object Creator"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-045",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Default values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new Due Date field should start at three days after the record is created, but users may change it. What fits?",
+    "explanation": "A default value formula such as TODAY() + 3 fills the field once on create and leaves it editable. A formula field recalculates and cannot be edited.",
+    "options": [
+      "Roll-up summary field",
+      "Validation rule",
+      "Default value formula",
+      "Formula field"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-046",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow needs a value worked out each time it is used, such as today's date plus 7 days. Which resource fits?",
+    "explanation": "A formula resource recalculates whenever it is referenced. A constant never changes after the flow is saved.",
+    "options": [
+      "Choice",
+      "Text template",
+      "Formula",
+      "Constant"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-047",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Visualforce",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An existing Visualforce page must sit beside standard components on a Lightning record page. What fits?",
+    "explanation": "The Visualforce standard component shows a Visualforce page inside a Lightning page. The page must be marked available for Lightning Experience.",
+    "options": [
+      "Flow component",
+      "Visualforce component",
+      "Rich Text component",
+      "Web tab"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-048",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandboxes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new sandbox should start as a copy of an existing sandbox, not production. What should be done?",
+    "explanation": "Sandbox cloning creates a sandbox from another sandbox, so work in progress is copied. A refresh copies from production again.",
+    "options": [
+      "Use a change set",
+      "Clone the sandbox",
+      "Use a template",
+      "Refresh the sandbox"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-049",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Field history",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How long does Salesforce keep field history data shown in a record's history related list?",
+    "explanation": "Field history is kept for 18 months in the app and 24 months through the API, unless Field Audit Trail extends it.",
+    "options": [
+      "6 months",
+      "12 months",
+      "18 months",
+      "36 months"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SFAPP-D-050",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Object permissions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Turning on Delete for an object in a permission set also turns on which permissions?",
+    "explanation": "Delete depends on Edit, and Edit depends on Read, so enabling Delete selects both. View All and Modify All are separate, broader permissions.",
+    "options": [
+      "Create and Read",
+      "Modify All",
+      "Read and Edit",
+      "View All"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-051",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Data model choice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each account has many site visits, each with a date, a rating and notes. How should the visits be stored?",
+    "explanation": "Repeating records with their own fields belong in a child object linked to Account. Fields on Account hold only one visit, and a text log cannot be reported on or validated.",
+    "options": [
+      "Multi-select picklist of visit dates",
+      "Custom date and rating fields on Account",
+      "Rich Text Area log on Account",
+      "Custom object with a lookup to Account"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-052",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Schema Builder",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Schema Builder diagram is cluttered with dozens of objects. How can the app builder focus on a few?",
+    "explanation": "Schema Builder lets you select which objects appear on the canvas, so only the part of the data model you care about is drawn.",
+    "options": [
+      "Choose the objects to display",
+      "Hide every lookup field",
+      "Delete the unused objects",
+      "Switch to Object Manager"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-053",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function maps several picklist values to results in one compact expression?",
+    "explanation": "CASE compares one expression with a list of values and returns the matching result, and it accepts a picklist field. ISPICKVAL tests one value at a time.",
+    "options": [
+      "CASE",
+      "INCLUDES",
+      "ISPICKVAL",
+      "VLOOKUP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-054",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Flow resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A flow builds an email body with merge fields and formatting. Which resource fits?",
+    "explanation": "A text template holds formatted text with merge fields, often used as an email body. A formula returns one calculated value.",
+    "options": [
+      "Constant",
+      "Text template",
+      "Record choice set",
+      "Formula"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-055",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Related lists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A record page should show a compact row of links to every related list, with counts, near the top. Which component fits?",
+    "explanation": "Related List Quick Links shows a link with a record count for each related list, and hovering opens a preview. The Related Lists component shows the full lists.",
+    "options": [
+      "Related List Quick Links",
+      "Related Lists",
+      "Dynamic Related List - Single",
+      "Highlights Panel"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-056",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandboxes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What happens to work in a sandbox when it is refreshed?",
+    "explanation": "A refresh makes a new copy from the source org and removes everything in the old sandbox, so deploy anything you want to keep first.",
+    "options": [
+      "It is kept in a backup",
+      "It is deployed first",
+      "It is merged into the new copy",
+      "It is replaced with a new copy"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-057",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Core CRM objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several contacts must be linked to one opportunity, each with a role such as Decision Maker. What should be used?",
+    "explanation": "Opportunity contact roles link contacts to an opportunity with a role. Opportunity teams list users, not contacts, and account contact relationships link contacts to accounts.",
+    "options": [
+      "Opportunity team members",
+      "Account contact relationships",
+      "Opportunity contact roles",
+      "Campaign members"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-058",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Permission set groups",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Every new recruiter needs the same five permission sets, assigned in one step. What fits?",
+    "explanation": "A permission set group bundles permission sets so one assignment gives all of them. A muting permission set only removes permissions inside a group, and a permission set license grants the right to use certain features.",
+    "options": [
+      "Muting permission set",
+      "Cloned standard profile",
+      "Permission set license",
+      "Permission set group"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-059",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Picklists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a picklist value is deleted, what can the app builder do with records that already use it?",
+    "explanation": "Deleting a picklist value offers a replacement value for records that use it, or the value can be left blank on them. Deactivating the value instead keeps it on existing records.",
+    "options": [
+      "Restore it from the Recycle Bin",
+      "Keep it locked on the records",
+      "Delete those records too",
+      "Map them to another value"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-060",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Record IDs",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why use 18-character record IDs in spreadsheets rather than 15-character ones?",
+    "explanation": "The 15-character ID is case-sensitive, so a tool that ignores case can confuse two records. The 18-character form adds a checksum that makes it safe without case.",
+    "options": [
+      "They show the creation date",
+      "They include the org ID",
+      "They are case-insensitive",
+      "They work in every org"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-061",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which function turns a picklist value into text so it can be joined with other text?",
+    "explanation": "TEXT converts a picklist value into a text string. VALUE does the reverse kind of job, turning text into a number.",
+    "options": [
+      "TEXT",
+      "ISPICKVAL",
+      "VALUE",
+      "LEFT"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-062",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Decision elements",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a Decision element, what happens when no outcome's conditions are met?",
+    "explanation": "Every Decision element has a default outcome that runs when no other outcome matches.",
+    "options": [
+      "The first outcome runs",
+      "The default outcome runs",
+      "The flow pauses",
+      "The flow fails with an error"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-063",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Custom tabs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An intranet web page must open from the app's navigation bar. Which tab type fits?",
+    "explanation": "A web tab shows an external web page inside Salesforce. A Lightning page tab shows an app page built in Lightning App Builder.",
+    "options": [
+      "Web tab",
+      "Object tab",
+      "Visualforce tab",
+      "Lightning page tab"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-064",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Sandboxes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does creating a sandbox change copied users' usernames?",
+    "explanation": "Usernames in a sandbox get a dot and the sandbox name appended, so they stay unique across orgs.",
+    "options": [
+      "Leaves them unchanged in the copy",
+      "Appends the sandbox name",
+      "Removes the domain",
+      "Adds a random number"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-065",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Declarative limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A field must keep the value it had when an opportunity closed, even if its inputs change later. What fits?",
+    "explanation": "A formula recalculates whenever it is read and cannot use PRIORVALUE, and a default value is set only on create. A record-triggered flow that writes the value into a regular field when the stage closes keeps it as it was.",
+    "options": [
+      "Roll-up summary with a date filter",
+      "Default value formula on the field",
+      "Formula field using PRIORVALUE",
+      "Record-triggered flow that writes the field"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-066",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Org-wide defaults",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When planning record access, how should org-wide defaults be set?",
+    "explanation": "Salesforce advises setting defaults to the most restrictive level and then using the role hierarchy, sharing rules and manual sharing to grant more. Sharing tools cannot take access away.",
+    "options": [
+      "Least restrictive, then lock down later",
+      "Same level as each profile",
+      "Most restrictive level, then open up",
+      "Public Read Only for every object"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-067",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Field type changes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change should an app builder try in a sandbox first because existing data can be lost?",
+    "explanation": "Changing a custom field's data type can convert or drop existing values, and Salesforce warns about this before saving. Labels, help text and layouts do not touch stored data.",
+    "options": [
+      "Adding a field to a layout",
+      "Renaming a field's label",
+      "Changing a field's data type",
+      "Editing a field's help text box"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-068",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "External data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Salesforce Connect reads external tables through which standard protocol?",
+    "explanation": "Salesforce Connect's main adapters use the Open Data Protocol (OData) 2.0 and 4.0. It also offers a cross-org adapter and custom adapters written in Apex.",
+    "options": [
+      "JDBC",
+      "OData",
+      "SOAP RPC",
+      "FTP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-069",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Roll-up summaries",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which standard parent can have roll-up summary fields over its standard children?",
+    "explanation": "Some standard relationships support roll-ups, such as Account over Opportunity and Opportunity over its products. Contact, Lead and User do not.",
+    "options": [
+      "Account over its opportunities",
+      "User over its accounts",
+      "Lead over its tasks",
+      "Contact over its related cases"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-070",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Approval processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which approval feature lets an approver respond by replying to the request email?",
+    "explanation": "With email approval response enabled, approvers can reply with a word such as approve or reject. A delegated approver is someone who approves on another's behalf.",
+    "options": [
+      "Approval email template",
+      "Delegated approver setting",
+      "Queue as approver",
+      "Email approval response"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-071",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Tabs component",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Many components on a record page should be grouped so users click a label to see each group. Which component fits?",
+    "explanation": "The Tabs component holds groups of components under labeled tabs. The highlights panel shows the compact layout and actions.",
+    "options": [
+      "Rich Text",
+      "Related Lists",
+      "Highlights Panel",
+      "Tabs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-072",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Package installs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app builder wants to install a package and decide access later with permission sets. Which install option fits?",
+    "explanation": "Installing for admins only gives other users no access, so the app builder can grant it afterward with permission sets.",
+    "options": [
+      "Install for admins only",
+      "Install without access",
+      "Install for chosen profiles",
+      "Install for all users"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-073",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFundamentals",
+    "skill": "Declarative limits",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which requirement still needs a developer rather than a declarative tool?",
+    "explanation": "A highly interactive interface that no standard component provides calls for a Lightning web component. Dynamic Forms, flows and roll-up summary fields cover the other three without code.",
+    "options": [
+      "Field shown only at one stage",
+      "Email sent when a case closes",
+      "Custom drag-and-drop calendar UI",
+      "Count of child records on a parent"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-074",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappSecurity",
+    "skill": "Role hierarchy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does the role hierarchy mainly control?",
+    "explanation": "Roles open access to records owned by users below in the hierarchy when defaults are less than Public Read/Write. Object permissions come from profiles and permission sets.",
+    "options": [
+      "Page layouts by job",
+      "Object permissions for each job",
+      "Login hours by team",
+      "Record visibility up the chain"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SFAPP-D-075",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataModel",
+    "skill": "Object settings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new custom object can't be added to a custom report type. Which object setting is most likely off?",
+    "explanation": "Allow Reports must be selected on a custom object before reports and custom report types can use it. Allow Activities only adds tasks and events to its records.",
+    "options": [
+      "Allow Sharing",
+      "Track Field History",
+      "Allow Reports",
+      "Allow Activities"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-076",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDataMgmt",
+    "skill": "Imports and validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a Data Loader insert, what happens with active validation rules?",
+    "explanation": "Validation rules run on every save, including saves made through the API by Data Loader. Rows that break a rule fail and appear in the error file.",
+    "options": [
+      "They only warn",
+      "They are enforced",
+      "They run on update only",
+      "They are skipped"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-077",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFormulas",
+    "skill": "Formula functions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which function does Salesforce recommend for checking whether a field is empty?",
+    "explanation": "ISBLANK returns true for an empty field of any type, and Salesforce recommends it over the older ISNULL. BLANKVALUE returns a substitute value rather than true or false.",
+    "options": [
+      "BLANKVALUE",
+      "LEN",
+      "ISBLANK",
+      "NULLVALUE"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SFAPP-D-078",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappFlow",
+    "skill": "Loops",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a Loop element step through, one item at a time?",
+    "explanation": "A Loop element works through each item in a collection, such as the records from Get Records. A single record variable holds only one record.",
+    "options": [
+      "A collection variable",
+      "A text template",
+      "A single record variable",
+      "A Decision element's outcomes"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SFAPP-D-079",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappUI",
+    "skill": "Custom tabs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app page built in Lightning App Builder should appear in an app's navigation. What is created for it?",
+    "explanation": "A Lightning page tab lets an app page be added to an app's navigation bar. Saving the page with the activation step can create the tab for you.",
+    "options": [
+      "Web tab",
+      "Lightning page tab",
+      "Custom object tab",
+      "Visualforce tab"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SFAPP-D-080",
+    "section": "pab",
+    "test": 0,
+    "module": 1,
+    "domain": "sfappDeploy",
+    "skill": "Change sets",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two can a change set deploy? (Choose two.)",
+    "explanation": "Change sets carry metadata such as fields, objects and flows. Records and users are data and are not moved.",
+    "options": [
+      "Records in a custom object",
+      "Custom fields",
+      "Flows",
+      "Users"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  }
+]

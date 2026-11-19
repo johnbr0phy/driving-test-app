@@ -1,0 +1,28 @@
+CAT = "rshairFacial"; SEG = "FAC"
+# RSOS task C-8: cuts facial and nape hair (C-8.01 trims, C-8.02 removes with straight razor).
+Q = [
+("Long sideburns that widen over the cheeks toward the corners of the mouth, with a shaved chin, are called:",
+ "Muttonchops", ["Goatee", "Chinstrap", "Pencil moustache"],
+ "Muttonchops are wide sideburns that flare over the cheeks while the chin stays clean. A chinstrap is a narrow line along the jaw joining the sideburns."),
+("A thin line of beard following the jaw from one sideburn to the other is a:",
+ "Chinstrap", ["Lumberjack", "Handlebar", "Lambchop"],
+ "A chinstrap traces the jawline in a narrow band. A lumberjack is a full, long beard, and a handlebar is a moustache with upturned ends."),
+("A moustache with long ends curled or waxed upward is a:",
+ "Handlebar", ["Pencil", "Goatee", "Chinstrap"],
+ "Handlebar moustaches are grown long at the ends and shaped upward. A pencil moustache is a narrow line just above the lip."),
+("Before a straight-razor shave of the nape, what is done to the skin under the blade?",
+ "Pull it taut", ["Pinch it into a fold", "Leave it relaxed", "Press it inward"],
+ "Stretching the skin flat lets the razor glide without catching and gives a close shave. Loose or folded skin is easily nicked."),
+("What is applied to the nape before a straight-razor outline so the blade glides?",
+ "Lather or shave gel", ["Witch hazel toner", "Talc powder", "Styptic powder"],
+ "Lather softens the hair and lets the razor slide over the skin. Toner and styptic powder are for after the shave, and talc is used with clippers, not under a razor."),
+("A small nick bleeds after a neckline shave. Which single-use product helps stop it?",
+ "Styptic powder", ["Cooling gel", "Talc powder", "Aloe lotion"],
+ "Styptic powder is a single-use astringent in the standard's tool list that helps close small cuts. Gloves go on before touching the area."),
+("A beard kept only on the chin, with the cheeks shaved clean, is a:",
+ "Goatee", ["Lambchop", "Lumberjack", "Muttonchops"],
+ "A goatee is a small beard on the chin, with or without a moustache. Lambchops and muttonchops are sideburn styles over the cheeks, and a lumberjack is a full beard."),
+("To clean stray hairs on the cheek line, the trimmer blade is laid:",
+ "Flat against the skin", ["Upright on its teeth", "Tipped onto its corner", "Angled at 45 degrees"],
+ "The standard describes laying the trimmer blade flat while moving it against the skin for a close, even finish. An upright blade digs in and nicks."),
+]

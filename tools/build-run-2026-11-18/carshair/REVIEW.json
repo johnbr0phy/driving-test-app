@@ -1,0 +1,61 @@
+{
+  "id": "carshair",
+  "blind_agreement": "200/200",
+  "options_only": {
+    "score": "110/200 (55%), ceiling 82%; K 40/45, S 21/27, G 49/128",
+    "s_hits": ["CAHAIR-CLI-004", "CAHAIR-CLI-005", "CAHAIR-CLI-006", "CAHAIR-COL-016", "CAHAIR-LIT-012", "CAHAIR-REL-001", "CAHAIR-REL-002", "CAHAIR-REL-006", "CAHAIR-SAF-003", "CAHAIR-SAF-006", "CAHAIR-SAF-007", "CAHAIR-SAF-008", "CAHAIR-SAF-010", "CAHAIR-SAF-011", "CAHAIR-SAF-012", "CAHAIR-SAL-008", "CAHAIR-SAL-009", "CAHAIR-SCA-011", "CAHAIR-SPE-008", "CAHAIR-STY-008", "CAHAIR-STY-015"],
+    "verdict": "FAIL"
+  },
+  "findings": [
+    {
+      "questionId": "CAHAIR-COR-002",
+      "severity": "factual",
+      "issue": "The stem asks how an 'oxidative' colour remover works, but the key ('shrinks the dye molecules') and explanation describe a reducing (non-oxidative) dye remover. An oxidative remover works like a lightener and also lifts natural pigment, so option A becomes defensible and the key is wrong for the stem as written. COR-003 (re-darkening check) also only fits a reducing remover.",
+      "source": "https://www.red-seal.ca/_conf/assets/custom/docms/hairstylist/rsos.pdf",
+      "fix": "Change the stem to 'How does a non-oxidative (reducing) colour remover work?' or just 'a dye remover', keeping key B."
+    },
+    {
+      "questionId": "SAFETY / CLIENT / SALON S hits (21 items listed in options_only.s_hits)",
+      "severity": "weak",
+      "issue": "Options-only pass FAIL: 21 surface-cue hits (10.5% of items, 78% of S picks right). Pattern: the key is the one safe/professional/complete option among obviously careless ones (Replace it now, Sharps container, Disposable gloves, Eyewash station, Rinse it off now, Rinse with cool water, A professional sharpener, Liability insurance, Confidentiality, Manufacturer's directions, Away from the scalp). Seven of the twelve rshairSafety items are hits.",
+      "source": "tools/options_only.py score",
+      "fix": "Rewrite each listed item so every wrong option is also a plausible professional action of the same form (e.g. SAF-008: eyewash station vs. saline eye drops vs. sterile pad and refer vs. cool running tap at a sink; SAL-008: liability vs. professional (E&O) vs. business interruption vs. property). Re-run options_only after the rewrite."
+    },
+    {
+      "questionId": "CAHAIR-STY-008",
+      "severity": "ambiguous",
+      "issue": "'While blow-drying, where is the airflow aimed?' Option A 'Toward the scalp for lift' is defensible: directing air at the base under a lifted section is standard root-lift technique. The explanation rests on a dryer-safety line from the RSOS, which the stem does not frame. Also an S hit.",
+      "source": "https://www.red-seal.ca/_conf/assets/custom/docms/hairstylist/rsos.pdf",
+      "fix": "Reframe as a smoothing question ('To smooth the cuticle, which way does the airflow run?' key 'Root to ends, down the shaft') with parallel wrong directions."
+    },
+    {
+      "questionId": "CAHAIR-CUT-013",
+      "severity": "low",
+      "issue": "Taper vs fade is a contested distinction in barbering (some define a taper as only the sideburns and nape, and a non-skin fade also leaves hair). Key A is the common teaching, but D/B are arguable for some readers.",
+      "source": "standard trade practice",
+      "fix": "Optional: add 'blends to bare skin' to the wrong options' stem contrast, e.g. ask which cut 'leaves hair covering the skin at the hairline rather than blending to bare skin'."
+    },
+    {
+      "questionId": "ALL",
+      "severity": "info",
+      "issue": "Keys cycle A, B, C, D strictly by question number within each category (001=A, 002=B, ...). Harmless on screen because options are shuffled, but anyone reading the JSON or a printed sample can predict every key.",
+      "source": "data/red-seal-hairstylist-questions.json",
+      "fix": "Optional: place keys by a stem-seeded shuffle in build.py instead of a fixed rotation."
+    }
+  ],
+  "verified_ok": [
+    "Money calculations: SAL-004 9.00 x 1.60 = 14.40 (D); SAL-005 1,350 x 0.40 = 540 (A); SAL-012 40.00 x 0.85 = 34.00 (D). All correct.",
+    "Developer and colour arithmetic: 30 vol = 9% (COL-001), 30+10 equal parts = 20 vol (COL-002), #4 guard = 4/8 in = about 13 mm (CUT-010).",
+    "Ontario: Skilled Trades Ontario trade page (fetched 2026-11-18): 'Hairstylist is an Interprovincial Red Seal trade, but Ontario does not currently offer a Red Seal Endorsement'; red-seal.ca trade page lists Designated Red Seal in AB, BC, MB, NB, NL, NS, NT, NU, PE, QC, SK, YT (no ON).",
+    "Health Canada hair dyes page: test behind the ear or on the inner forearm, wash after 24 hours, repeat before each use (COL-007 C, COL-008 D correct).",
+    "CCOHS WHMIS pictograms: flame over circle = oxidizing gases, liquids, solids (SAF-005 A correct). CCOHS hairdressers page supports gloves chosen for the product and ventilation.",
+    "Exam breakdown on red-seal.ca: 120 questions, A 14, B 11, C 24, D 16, E 17, F 25, G 6, H 7, matching the config comment and examFacts.",
+    "Technique keys (developer limits on scalp 20 vol, facial hair 5-10 vol, relaxer order: most resistant area first, scalp last, hairline last; filler red-orange for level 9 to 5; blue-violet toner on yellow-orange; over-processed perm frizzy wet and limp dry; oil lightener mildest; powder fastest) are the standard taught answers."
+  ],
+  "landing_findings": [
+    {
+      "issue": "None blocking. 120 questions, four options, 70%, up to four hours, MWA split and 'colour and cutting about 40%' (49/120 = 41%) all match red-seal.ca. The Ontario FAQ matches Skilled Trades Ontario and the copy never calls the exam 332A's. Hero subtitle ends 'Free to start, no account needed.' Four-hour writing time and 70% come from the Red Seal Exam Preparation Guide, which was not re-fetched in this review (red-seal.ca trade and exam pages were).",
+      "severity": "info"
+    }
+  ]
+}

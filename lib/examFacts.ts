@@ -752,6 +752,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
     source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
   },
+  ai901: {
+    answer:
+      "AI-901, Microsoft Azure AI Fundamentals, is Microsoft's beginner exam for people at the start of a career in AI solution development. It replaced AI-900, which Microsoft retired on June 30, 2026, and it is now the only exam for the Microsoft Certified: Azure AI Fundamentals certification. Unlike AI-900 it is hands on: candidates are expected to know Python syntax and Azure resources and to build small apps and agents in Microsoft Foundry. Fundamentals exams run 45 minutes, and Microsoft says most of its exams have 40 to 60 questions. Scores run from 1 to 1000 and 700 is needed to pass. The skills measured as of April 15, 2026 are Identify AI concepts and capabilities (40 to 45 percent) and Implement AI solutions by using Microsoft Foundry (55 to 60 percent). It is offered in English and 12 other languages, and the price depends on the country where it is taken.",
+    rows: [
+      { label: "Time", value: "45 minutes (Microsoft's length for fundamentals exams), proctored" },
+      { label: "Questions", value: "Not published for AI-901; Microsoft says most exams have 40 to 60" },
+      { label: "Passing score", value: "700 on a scale of 1 to 1000" },
+      { label: "Skill areas", value: "AI concepts and capabilities 40-45%, AI solutions with Microsoft Foundry 55-60%" },
+      { label: "Replaces", value: "AI-900, retired on June 30, 2026" },
+      { label: "Languages", value: "English and 12 others, including Japanese, Spanish, French and German" },
+      { label: "Given by", value: "Microsoft" },
+    ],
+    basedOn: "the Microsoft Learn AI-901 study guide (skills measured as of April 15, 2026), the AI-901 and AI-900 exam pages and Microsoft's exam duration page, checked November 2026",
+    source: { name: "Microsoft Learn: Study guide for Exam AI-901", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901" },
+  },
   sc900: {
     answer:
       "SC-900, Microsoft Security, Compliance, and Identity Fundamentals, is Microsoft's beginner exam for business stakeholders, IT professionals and students who want to understand Microsoft's security, compliance and identity solutions across Azure and Microsoft 365. Passing it earns the Microsoft Certified: Security, Compliance, and Identity Fundamentals certification. The exam is 45 minutes, proctored, and can include interactive question types; Microsoft does not publish a question count, but guides report 40 to 60 questions. Scores run from 1 to 1000 and 700 is needed to pass. The skills measured as of October 21, 2026 are the concepts of security, compliance and identity (10 to 15 percent), the capabilities of Microsoft Entra (25 to 30 percent), Microsoft security solutions (35 to 40 percent) and Microsoft compliance solutions (20 to 25 percent). A first retake is allowed after 24 hours, and the price depends on the country where the exam is taken.",

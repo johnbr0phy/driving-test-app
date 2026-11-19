@@ -7,6 +7,10 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["ai-900", "US", "ai901"],
+  ["ai900", "IN", "ai901"],
+  ["azure ai fundamentals", "US", "ai901"],
+  ["ai-901", "UK", "ai901"],
   ["title insurance", "US", "titleagent"],
   ["title agent exam", "US", "titleagent"],
   ["title insurance license", "US", "titleagent"],

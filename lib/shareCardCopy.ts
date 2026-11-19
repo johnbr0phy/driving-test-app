@@ -311,6 +311,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   pentestplus: { title: "CompTIA PenTest+ PT0-003", description: "Practise scoping, reconnaissance, vulnerability analysis, exploitation and post-exploitation, all explained." },
   isc2cc: { title: "ISC2 CC", description: "Practise ISC2 Certified in Cybersecurity questions on security principles, governance, IAM, networks, cloud and incident response." },
   sc200: { title: "Microsoft SC-200", description: "Practise Defender XDR, Microsoft Sentinel, detections, incident response and KQL threat hunting." },
+  ai901: { title: "Microsoft Azure AI Fundamentals AI-901", description: "Practise the AI-901 exam: responsible AI, models and deployments, prompts, agents, speech, vision and Content Understanding in Microsoft Foundry." },
   sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
   ceh: { title: "EC-Council CEH v13", description: "Practise footprinting, scanning, system, network, web, wireless, mobile, cloud and crypto attacks, all explained." },
   cysa: { title: "CompTIA CySA+ CS0-004", description: "Practise security operations, vulnerability management, incident response and reporting." },

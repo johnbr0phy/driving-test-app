@@ -50,6 +50,8 @@ interface Candidate {
   sells?: number;
   /** Words people would type into the site search. */
   search?: string[];
+  /** Id of the candidate that replaced this one (the real exam was retired); never picked. */
+  supersededBy?: string;
   note?: string;
 }
 
@@ -174,6 +176,7 @@ async function main() {
     let held: string | null = null;
     if (liveIds.includes(c.id)) held = "live";
     else if (liveNames.some((n) => n.includes(c.name.toLowerCase()))) held = "live under another id";
+    else if (c.supersededBy) held = `superseded by ${c.supersededBy}`;
     else if (s?.status === "skipped") held = "skipped";
     else if (s?.status === "pr" && age(s) < 21) held = "PR open";
     else if (s?.status === "failed" && ((s.attempts ?? 1) >= 2 || age(s) < 14)) held = "failed";

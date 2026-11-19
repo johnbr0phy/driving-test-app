@@ -1065,8 +1065,25 @@
       "sells": 1.0,
       "search": [
         "ai-900",
-        "ai-901",
         "ai900"
+      ],
+      "supersededBy": "ai901"
+    },
+    {
+      "id": "ai901",
+      "name": "Microsoft Azure AI Fundamentals AI-901",
+      "owner": "Microsoft",
+      "region": "GLOBAL",
+      "engine": "v2",
+      "siblings": [
+        "az900"
+      ],
+      "sells": 1.0,
+      "search": [
+        "ai-901",
+        "ai-900",
+        "ai 900",
+        "azure ai fundamentals"
       ]
     },
     {

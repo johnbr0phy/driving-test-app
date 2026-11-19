@@ -1,4 +1,4 @@
-import "@/lib/banks/itceli";
+import "@/lib/v2/banks/itceli";
 import type { Metadata } from "next";
 import content from "@/lib/landings/itceli.it.json";
 import { TranslatedExamLanding, translatedLandingMetadata, type TranslatedLandingContent } from "@/components/exam/TranslatedExamLanding";

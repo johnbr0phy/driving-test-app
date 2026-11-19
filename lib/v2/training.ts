@@ -69,3 +69,36 @@ export function drillStateFor(
   if (masteredIds.length === 0 && wrongQueue.length === 0) return EMPTY_DRILL;
   return { masteredIds, wrongQueue, seen: masteredIds.length + wrongQueue.length, correct: masteredIds.length };
 }
+
+/**
+ * For an exam that moved from the v1 engine (ExamV2Config.fromV1): the drill
+ * states to seed from v1 training-set progress, one per drill that has no v2
+ * state yet and some v1 progress on its questions. Question ids are the same
+ * in both engines; held-out test items are left out, as drills never show them.
+ */
+export function v1CarryOverPatch(
+  exam: ExamV2Config,
+  bank: QuestionV2[],
+  trainingSets: Record<number, { masteredIds: string[]; wrongQueue: string[] } | undefined>,
+  drills: Record<string, DrillState>
+): Record<string, DrillState> {
+  const patch: Record<string, DrillState> = {};
+  if (!exam.fromV1) return patch;
+  for (const drill of exam.drills) {
+    const key = drillKey(exam.id, drill.key);
+    const setIds = exam.fromV1.drills[drill.key];
+    if (!setIds || drills[key]) continue;
+    const ids = new Set(drillQuestions(bank, drill, exam).map((q) => q.id));
+    const mastered = new Set<string>();
+    const wrong = new Set<string>();
+    for (const id of setIds) {
+      const v1 = trainingSets[id];
+      if (!v1) continue;
+      for (const q of v1.masteredIds) if (ids.has(q)) mastered.add(q);
+      for (const q of v1.wrongQueue) if (ids.has(q) && !mastered.has(q)) wrong.add(q);
+    }
+    if (mastered.size === 0 && wrong.size === 0) continue;
+    patch[key] = { masteredIds: [...mastered], wrongQueue: [...wrong], seen: mastered.size + wrong.size, correct: mastered.size };
+  }
+  return patch;
+}

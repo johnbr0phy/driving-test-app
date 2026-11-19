@@ -12,7 +12,9 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 ORDER = [("avvisi", 20), ("mail", 20), ("testi", 20), ("preposizioni", 20), ("passato", 24),
          ("verbi", 20), ("pronomi", 20), ("aggettivi", 16), ("connettivi", 16), ("lessico", 24)]
 READING = {"avvisi", "mail", "testi"}
-out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "italy-cils-b1-questions.json")
+if len(sys.argv) < 2:
+    sys.exit("v2 since Nov 2026: run tools/build-run-2026-11-19/italian_v1_to_v2.py, which calls this with a temporary output path")
+out = sys.argv[1]
 BAD = ["\u2014", "\u2013", '"', "Tutte le precedenti", "Nessuna delle precedenti", "A e B"]
 
 

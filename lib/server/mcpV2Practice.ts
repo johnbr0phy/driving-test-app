@@ -147,6 +147,8 @@ import '@/lib/v2/banks/mhtcet';
 import '@/lib/v2/banks/kcet';
 import '@/lib/v2/banks/ita2';
 import '@/lib/v2/banks/itcilsb2';
+import '@/lib/v2/banks/itcils';
+import '@/lib/v2/banks/itceli';
 import '@/lib/v2/banks/cuet';
 import '@/lib/v2/banks/ugcnet';
 import '@/lib/v2/banks/reet';

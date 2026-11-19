@@ -86,6 +86,7 @@ export const ITA2: ExamV2Config = {
     { key: "grammatica", name: "Grammatica di base", section: "lingua", domains: ["ita2Grammatica"], blurb: "Articoli, preposizioni, verbi al presente e al passato, pronomi." },
     { key: "parole", name: "Parole di tutti i giorni", section: "lingua", domains: ["ita2Lessico"], blurb: "Casa, lavoro, salute, negozi, uffici e trasporti." },
   ],
+  fromV1: { drills: { messaggi: [35201], articoli: [35202], comunicare: [35203], grammatica: [35204], parole: [35205] } },
   composite: { name: "Risposte giuste", min: 0, max: 100, combine: overall },
   defaultGoal: 80,
   goalChoices: [60, 70, 80, 90],

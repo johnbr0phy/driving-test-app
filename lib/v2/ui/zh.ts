@@ -266,7 +266,7 @@ export const ZH: V2UiTranslation = {
     sectionToGo: (n: number) => `还差 ${n}`,
     neededOne: (n: number) => `再答 ${n} 道题即可查看分数。`,
     neededSections: (parts: { needed: number; sectionShortName: string }[]) =>
-      `再答 ${parts.map((p) => `${p.needed} 道${p.sectionShortName}题`).join("和 ")}即可查看分数。`,
+      `再答 ${parts.map((p) => `${p.needed} 道${p.sectionShortName}题`).join("、")}即可查看分数。`,
     neededEach: (minAnswers: number) => `每个部分答 ${minAnswers} 道题即可查看分数。`,
     estimateFrom: (answered: number) => `根据你已答的 ${answered} 道练习题（首次作答）估算，不是官方分数。`,
     lastPracticeTest: "你最近一次模拟考试：",

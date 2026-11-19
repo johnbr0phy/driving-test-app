@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStripe, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
+import { getStripe, PREMIUM_PRODUCT, premiumDescription } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
@@ -116,20 +116,20 @@ export async function POST(request: NextRequest) {
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
       mode: 'payment',
+      // Always inline: the description names the exam the buyer came from
+      // (the fixed Stripe Price carried DMV-only text, shown to CDL buyers too).
       line_items: [
-        PREMIUM_PRICE_ID && price.currency === 'usd'
-          ? { price: PREMIUM_PRICE_ID, quantity: 1 }
-          : {
-              price_data: {
-                currency: price.currency,
-                unit_amount: stripeUnitAmount(price),
-                product_data: {
-                  name: PREMIUM_PRODUCT.name,
-                  description: PREMIUM_PRODUCT.description,
-                },
-              },
-              quantity: 1,
+        {
+          price_data: {
+            currency: price.currency,
+            unit_amount: stripeUnitAmount(price),
+            product_data: {
+              name: PREMIUM_PRODUCT.name,
+              description: premiumDescription(typeof location === 'string' ? location : null),
             },
+          },
+          quantity: 1,
+        },
       ],
       success_url: `${baseUrl}${returnPath}?session_id={CHECKOUT_SESSION_ID}&success=true`,
       cancel_url: `${baseUrl}${returnPath}?canceled=true`,

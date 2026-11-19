@@ -1,0 +1,28 @@
+SEG = 'DOC'
+CAT = 'cbcsDocs'
+Q = [
+('Pre-op note: breast lump. The pathology report, back before coding, shows a fibroadenoma. Which diagnosis is coded?',
+ 'Fibroadenoma', ['Breast lump', 'Both lump and fibroadenoma', 'Lump, pending follow-up'],
+ 'Section IV.N of the ICD-10-CM guidelines says that when the postoperative diagnosis differs and is confirmed at coding, it is used because it is the most definitive.'),
+("In a SOAP progress note, where does the provider's diagnosis appear?",
+ 'Assessment', ['Subjective', 'Objective', 'Plan'],
+ "Subjective holds the patient's account, Objective the exam and test findings, Assessment the diagnosis, and Plan the treatment and follow-up."),
+('Which provider query follows compliant practice?',
+ 'Open question citing the record', ['Question listing only one diagnosis', 'Open question noting the DRG impact', 'Question asking to amend for coverage'],
+ 'A compliant query presents the clinical facts from the record and lets the provider choose, without leading or mentioning reimbursement.'),
+('Which suffix names a surgical repair?',
+ '-plasty', ['-ectomy', '-otomy', '-ostomy'],
+ 'The suffix -plasty means surgical repair or reconstruction. -ectomy is removal, -otomy is incision, and -ostomy creates an opening.'),
+('The tibia is located in the:',
+ 'Lower leg', ['Forearm', 'Upper arm', 'Thigh'],
+ 'The tibia (shinbone) and fibula form the lower leg. The femur is the thigh bone; the radius and ulna make up the forearm.'),
+('The abbreviation COPD stands for:',
+ 'Chronic obstructive pulmonary disease', ['Chronic open pleural drainage', 'Congestive obstructive pulmonary disorder', 'Chronic obstructive pleural disease'],
+ 'COPD is chronic obstructive pulmonary disease, a lung condition coded in category J44. Reading acronyms correctly is part of abstracting from the record.'),
+('Two notes in the record give different sides for the same injury. What should the coder do?',
+ 'Query the provider', ['Code the unspecified side', 'Code both sides', 'Use the later note'],
+ "ICD-10-CM Section I.B.13 says conflicting documentation about the affected side should be clarified by querying the patient's provider."),
+("Which record shows the reason for an office visit and the provider's findings that day?",
+ 'Progress note', ['Encounter form', 'Superbill', 'Problem list'],
+ 'The progress note documents the visit: the complaint, findings, assessment and plan. The encounter form lists the services checked for charge entry.'),
+]

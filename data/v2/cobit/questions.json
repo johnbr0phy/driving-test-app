@@ -1,0 +1,4097 @@
+[
+  {
+    "id": "COBIT-T1-001",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Objective count",
+    "stem": "How many governance and management objectives does the COBIT 2019 core model contain?",
+    "options": [
+      "35",
+      "40",
+      "34",
+      "37"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The core model has 40 objectives: 5 governance objectives in EDM and 35 management objectives in APO, BAI, DSS and MEA. COBIT 5 had 37 processes."
+  },
+  {
+    "id": "COBIT-T1-002",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Component count",
+    "stem": "How many types of components of a governance system does COBIT 2019 define?",
+    "options": [
+      "Six",
+      "Five",
+      "Seven",
+      "Eleven"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "COBIT 2019 defines seven component types: processes; organizational structures; principles, policies and procedures; information; culture, ethics and behavior; people, skills and competencies; and services, infrastructure and applications."
+  },
+  {
+    "id": "COBIT-T1-003",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Principle counts",
+    "stem": "How many governance system principles does COBIT 2019 set out?",
+    "options": [
+      "Six",
+      "Seven",
+      "Three",
+      "Five"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "COBIT 2019 has six governance system principles, up from five principles in COBIT 5. It also adds three separate governance framework principles."
+  },
+  {
+    "id": "COBIT-T1-004",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cascade order",
+    "stem": "In the COBIT 2019 goals cascade, what do enterprise goals translate into next?",
+    "options": [
+      "Process goals",
+      "Stakeholder drivers",
+      "Capability levels",
+      "Alignment goals"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The cascade runs from stakeholder drivers and needs to enterprise goals, then to alignment goals, then to the governance and management objectives to prioritize."
+  },
+  {
+    "id": "COBIT-T1-005",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "What COBIT is",
+    "stem": "COBIT 2019 is best described as a framework for which purpose?",
+    "options": [
+      "Auditing financial statements of listed companies",
+      "Governance and management of enterprise I&T",
+      "Management of IT services from design to retirement",
+      "Selecting technology products for the enterprise"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT is a framework for the governance and management of enterprise information and technology (EGIT), aimed at the whole enterprise. Service lifecycle management is closer to ITIL, and COBIT never selects products."
+  },
+  {
+    "id": "COBIT-T1-006",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Phase count",
+    "stem": "How many phases does the COBIT 2019 implementation life cycle have?",
+    "options": [
+      "Eleven",
+      "Seven",
+      "Six",
+      "Four"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The life cycle has seven phases, from What are the drivers? to How do we keep the momentum going? The design workflow has four steps."
+  },
+  {
+    "id": "COBIT-T1-007",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Governance domain",
+    "stem": "Which domain holds the governance objectives?",
+    "options": [
+      "Monitor, Evaluate and Assess (MEA)",
+      "Align, Plan and Organize (APO)",
+      "Deliver, Service and Support (DSS)",
+      "Evaluate, Direct and Monitor (EDM)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "All five governance objectives sit in EDM. MEA is a management domain about monitoring performance and conformance, despite its similar verbs."
+  },
+  {
+    "id": "COBIT-T1-008",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Workflow first step",
+    "stem": "What is the first step of the COBIT 2019 governance system design workflow?",
+    "options": [
+      "Understand the enterprise context and strategy",
+      "Refine the scope of the governance system",
+      "Resolve conflicts between design factors",
+      "Set target capability levels for every process"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The workflow is: understand the enterprise context and strategy, determine the initial scope, refine the scope, then resolve conflicts and conclude the design."
+  },
+  {
+    "id": "COBIT-T1-009",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Renamed term",
+    "stem": "What were the components of the governance system called in COBIT 5?",
+    "options": [
+      "Enablers",
+      "Practices",
+      "Drivers",
+      "Domains"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "COBIT 5 called them enablers. COBIT 2019 renamed them components and links each one directly to the governance and management objectives."
+  },
+  {
+    "id": "COBIT-T1-010",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Domain size",
+    "stem": "How many governance objectives are in the EDM domain?",
+    "options": [
+      "5",
+      "6",
+      "14",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EDM has five objectives, EDM01 to EDM05. APO has 14, BAI 11, DSS 6 and MEA 4."
+  },
+  {
+    "id": "COBIT-T1-011",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Framework principles",
+    "stem": "Which is a governance framework principle rather than a governance system principle?",
+    "options": [
+      "Dynamic governance system",
+      "Tailored to enterprise needs",
+      "Based on a conceptual model",
+      "Holistic approach"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The three governance framework principles say the framework should be based on a conceptual model, be open and flexible, and be aligned to major standards, frameworks and regulations. The other three are governance system principles."
+  },
+  {
+    "id": "COBIT-T1-012",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Goal counts",
+    "stem": "How many enterprise goals does the COBIT 2019 goals cascade define?",
+    "options": [
+      "13",
+      "17",
+      "40",
+      "11"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "COBIT 2019 has 13 generic enterprise goals and 13 alignment goals. COBIT 5 had 17 of each, there are 11 design factors and 40 objectives."
+  },
+  {
+    "id": "COBIT-T1-013",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Enterprise I&T scope",
+    "stem": "In COBIT 2019, what does enterprise I&T cover?",
+    "options": [
+      "Only the enterprise systems owned and run by the IT department",
+      "Only the technology bought under contracts signed by the CIO",
+      "Only the information systems that external auditors place in scope",
+      "All I&T processing used to reach enterprise goals, wherever it happens"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enterprise I&T means all the technology and information processing the enterprise puts in place to achieve its goals, wherever it happens. It includes the IT department but is not limited to it."
+  },
+  {
+    "id": "COBIT-T1-014",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scheme",
+    "stem": "Which scheme is COBIT 2019 performance management based on?",
+    "options": [
+      "ISO 9001",
+      "CMMI",
+      "The balanced scorecard",
+      "Six Sigma"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 2019 performance management uses a CMMI-based scheme for capability and maturity levels. COBIT 5 used a process assessment model based on an ISO/IEC standard."
+  },
+  {
+    "id": "COBIT-T1-015",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "A RACI chart shows who is accountable for each practice of an objective. Which component does this guidance belong to?",
+    "options": [
+      "Principles, policies and procedures",
+      "Organizational structures",
+      "People, skills and competencies",
+      "Culture, ethics and behavior"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Organizational structures guidance maps roles and bodies to practices in a responsibility and accountability chart. Skills guidance covers the competencies people need, not who holds accountability."
+  },
+  {
+    "id": "COBIT-T1-016",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Naming",
+    "stem": "How are COBIT 2019 management objectives named, for example APO12?",
+    "options": [
+      "Ensure Risk Optimization",
+      "Risk Management",
+      "Manage Risk",
+      "Managed Risk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "COBIT 2019 changed management objective names from the verb Manage to the adjective Managed, so APO12 is Managed Risk. Governance objectives use Ensured, such as EDM03 Ensured Risk Optimization."
+  },
+  {
+    "id": "COBIT-T1-017",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holistic approach",
+    "stem": "Which governance system principle says the system is built from several types of components that work together?",
+    "options": [
+      "End-to-end governance system",
+      "Based on a conceptual model",
+      "Holistic approach",
+      "Tailored to enterprise needs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Holistic approach means a governance system is built from components of different types, processes, structures, information, skills, culture and more, that work together. End-to-end is about covering the whole enterprise."
+  },
+  {
+    "id": "COBIT-T1-018",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Renamed term",
+    "stem": "What were COBIT 2019 alignment goals called in COBIT 5?",
+    "options": [
+      "IT-related goals",
+      "Control objectives",
+      "Process goals",
+      "Enabler goals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alignment goals were formerly IT-related goals. They emphasize aligning all I&T efforts with business objectives."
+  },
+  {
+    "id": "COBIT-T1-019",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "First phase",
+    "stem": "Which question does phase 1 of the implementation life cycle ask?",
+    "options": [
+      "What needs to be done?",
+      "Where are we now?",
+      "Did we get there?",
+      "What are the drivers?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Phase 1 asks what is driving the change, why the enterprise wants to implement or improve governance. Where are we now? is phase 2."
+  },
+  {
+    "id": "COBIT-T1-020",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitBusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "When written",
+    "stem": "In which implementation phase is the business case for a COBIT initiative first created?",
+    "options": [
+      "Phase 7, How do we keep the momentum going?",
+      "Phase 3, Where do we want to be?",
+      "Phase 5, How do we get there?",
+      "Phase 1, What are the drivers?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The business case is created in phase 1, when the drivers for change are understood, and updated in later phases as the current and target states become clear."
+  },
+  {
+    "id": "COBIT-T1-021",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "New objectives",
+    "stem": "Which objective was new in COBIT 2019?",
+    "options": [
+      "BAI06 Managed IT Changes",
+      "APO12 Managed Risk",
+      "APO14 Managed Data",
+      "DSS03 Managed Problems"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "COBIT 2019 added APO14 Managed Data, BAI11 Managed Projects and MEA04 Managed Assurance. APO14 restores a data focus that COBIT 4.1 had as Manage Data."
+  },
+  {
+    "id": "COBIT-T1-022",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Guidance lists the inputs and outputs of each practice, with where each comes from and goes to. Which component is it?",
+    "options": [
+      "Services, infrastructure and applications",
+      "Information",
+      "Organizational structures",
+      "Processes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The information component covers the information flows and items tied to each practice, listing inputs and outputs with their origin and destination. The process component lists the practices and activities themselves."
+  },
+  {
+    "id": "COBIT-T1-023",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "What COBIT is not",
+    "stem": "Which statement about COBIT 2019 is correct?",
+    "options": [
+      "It defines which decisions are needed and who takes them",
+      "It is a technical guide to managing each technology",
+      "It is a framework for organizing business processes",
+      "It prescribes the IT strategy an enterprise should adopt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "COBIT does not make IT decisions such as strategy, architecture or cost. It defines the components that describe which decisions should be taken, how and by whom. It is not a business process framework or a technical framework."
+  },
+  {
+    "id": "COBIT-T1-024",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Initial scope",
+    "stem": "Which design factors are used to determine the initial scope of the governance system?",
+    "options": [
+      "Enterprise strategy, enterprise goals, risk profile and I&T-related issues",
+      "Threat landscape, compliance requirements, role of IT and IT sourcing model",
+      "Focus areas, components, capability levels and practices",
+      "Enterprise size, technology adoption and IT implementation methods"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The initial scope comes from strategy, enterprise goals, risk profile and current I&T-related issues. The scope is then refined with threat landscape, compliance, role of IT, sourcing, methods, technology adoption and size."
+  },
+  {
+    "id": "COBIT-T1-025",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers logging what users ask for and getting things working again after an outage?",
+    "options": [
+      "BAI06 Managed IT Changes",
+      "DSS02 Managed Service Requests and Incidents",
+      "APO09 Managed Service Agreements",
+      "DSS03 Managed Problems"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DSS02 covers service requests and incidents. DSS03 Managed Problems deals with the root causes behind repeated incidents."
+  },
+  {
+    "id": "COBIT-T1-026",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "An enterprise uses SFIA to define what its continuity managers must be able to do. Which component is this?",
+    "options": [
+      "Principles, policies and procedures",
+      "Culture, ethics and behavior",
+      "People, skills and competencies",
+      "Organizational structures"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "People, skills and competencies identifies the human resources and skills needed to achieve an objective, and COBIT points to skills frameworks such as SFIA for detail."
+  },
+  {
+    "id": "COBIT-T1-027",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dynamic governance system",
+    "stem": "An enterprise moves most workloads to the cloud. Which principle says it should now assess the effect on its governance system?",
+    "options": [
+      "Holistic approach",
+      "Provide stakeholder value",
+      "End-to-end governance system",
+      "Dynamic governance system"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dynamic governance system: when one or more design factors change, such as strategy or technology, the impact on the governance system must be considered. Open and flexible is a framework principle about adding content to COBIT."
+  },
+  {
+    "id": "COBIT-T1-028",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Primary link",
+    "stem": "In the goals cascade, which goals give the primary link to governance and management objectives?",
+    "options": [
+      "Focus area goals",
+      "Alignment goals",
+      "Enterprise goals",
+      "Stakeholder needs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alignment goals relate to enterprise goals and provide the primary link to the governance and management objectives, so I&T work can be prioritized from business needs."
+  },
+  {
+    "id": "COBIT-T1-029",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "An enterprise sets up a plan to keep critical business services running after a major disruption. Which objective is this?",
+    "options": [
+      "DSS01 Managed Operations",
+      "DSS04 Managed Continuity",
+      "DSS05 Managed Security Services",
+      "BAI04 Managed Availability and Capacity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DSS04 Managed Continuity covers business continuity: policy and scope, resilience, the response, testing the plans, training and backups."
+  },
+  {
+    "id": "COBIT-T1-030",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Governance vs management",
+    "stem": "Which of these is a governance task under COBIT 2019?",
+    "options": [
+      "Building solutions in line with the direction set",
+      "Monitoring daily operations against service targets",
+      "Setting direction by prioritizing and making decisions",
+      "Planning and running I&T activities day to day"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Governance evaluates stakeholder needs, sets direction through prioritization and decision making, and monitors performance and compliance against that direction. Management plans, builds, runs and monitors activities in line with the direction set by governance."
+  },
+  {
+    "id": "COBIT-T1-031",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phase 2",
+    "stem": "In which phase does the enterprise assess the current capability of its processes?",
+    "options": [
+      "Phase 3, Where do we want to be?",
+      "Phase 1, What are the drivers?",
+      "Phase 2, Where are we now?",
+      "Phase 6, Did we get there?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Phase 2 assesses the current state, including which processes are in place and their capability levels. Phase 6 measures whether the targets were reached after the changes."
+  },
+  {
+    "id": "COBIT-T1-032",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Senior leaders openly praise staff who report security incidents early. Which component does this support?",
+    "options": [
+      "Organizational structures",
+      "Culture, ethics and behavior",
+      "Information",
+      "People, skills and competencies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Culture, ethics and behavior covers the behaviors and tone from the top that help an objective succeed. Rewarding early reporting shapes behavior rather than skills or structures."
+  },
+  {
+    "id": "COBIT-T1-033",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Domain purpose",
+    "stem": "Which domain covers creating or buying I&T solutions and putting them into business use?",
+    "options": [
+      "Build, Acquire and Implement (BAI)",
+      "Align, Plan and Organize (APO)",
+      "Evaluate, Direct and Monitor (EDM)",
+      "Deliver, Service and Support (DSS)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BAI covers building or buying solutions and putting them into the business. APO covers strategy and organization, and DSS covers running and supporting services."
+  },
+  {
+    "id": "COBIT-T1-034",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tailored to enterprise needs",
+    "stem": "Which governance system principle uses design factors as parameters to customize and prioritize governance components?",
+    "options": [
+      "Dynamic governance system",
+      "Aligned to major standards",
+      "Tailored to enterprise needs",
+      "Governance distinct from management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tailored to enterprise needs: a governance system should be tailored using design factors to prioritize and customize its components. Dynamic governance system covers what happens when those factors change."
+  },
+  {
+    "id": "COBIT-T1-035",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Balanced scorecard",
+    "stem": "Along which dimensions are COBIT 2019's enterprise goals structured?",
+    "options": [
+      "Strategic, tactical, operational, and environmental context",
+      "Financial, customer, internal, and learning and growth",
+      "Benefits, risk, resources, and stakeholders",
+      "Plan, build, run, and monitor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Enterprise goals follow the balanced scorecard dimensions: financial, customer, internal, and learning and growth. Contextual, strategic and tactical describe design factors."
+  },
+  {
+    "id": "COBIT-T1-036",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "COBIT first appeared in 1996. In which community did it start?",
+    "options": [
+      "Corporate finance",
+      "IT audit",
+      "Project management",
+      "Software development"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT began as a collection of controls and control objectives with audit guidelines from the IT audit community, then grew into a framework for governance and management of enterprise I&T."
+  },
+  {
+    "id": "COBIT-T1-037",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Which component covers what third parties provide, the platforms used and the types of software?",
+    "options": [
+      "Information",
+      "Services, infrastructure and applications",
+      "Processes",
+      "Culture, ethics and behavior"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Services, infrastructure and applications guidance covers the services, infrastructure and application types needed for an objective. It stays generic and names no vendors or products."
+  },
+  {
+    "id": "COBIT-T1-038",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers managing suppliers of I&T products and services?",
+    "options": [
+      "BAI09 Managed Assets",
+      "APO09 Managed Service Agreements",
+      "APO10 Managed Vendors",
+      "APO08 Managed Relationships"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "APO10 Managed Vendors covers I&T suppliers; COBIT 2019 changed the word supplier to vendor. APO08 Managed Relationships is about the relationship between the business and I&T."
+  },
+  {
+    "id": "COBIT-T1-039",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capability range",
+    "stem": "What range do process capability levels take in COBIT 2019?",
+    "options": [
+      "1 to 6",
+      "1 to 5",
+      "0 to 5",
+      "0 to 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A process can operate at capability levels from 0 to 5. Level 0 means a lack of basic capability."
+  },
+  {
+    "id": "COBIT-T1-040",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Strategy archetypes",
+    "stem": "An enterprise focuses on keeping short-term spending as low as possible. Which strategy archetype is this?",
+    "options": [
+      "Client service/stability",
+      "Growth/acquisition",
+      "Innovation/differentiation",
+      "Cost leadership"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Design Guide's four archetypes are growth/acquisition, innovation/differentiation, cost leadership and client service/stability. Cost leadership focuses on short-term cost minimization."
+  },
+  {
+    "id": "COBIT-T1-041",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "End-to-end",
+    "stem": "Which principle says governance reaches every part of the enterprise that uses technology and information, not only the IT function?",
+    "options": [
+      "Tailored to enterprise needs",
+      "End-to-end governance system",
+      "Holistic approach",
+      "Dynamic governance system"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "End-to-end governance system covers the enterprise end to end, all technology and information processing used to reach its goals, wherever it happens. Holistic approach is about the mix of component types."
+  },
+  {
+    "id": "COBIT-T1-042",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus areas",
+    "stem": "What is a focus area in COBIT 2019?",
+    "options": [
+      "A design factor that sets target capability levels",
+      "A domain of related objectives in the core model, such as APO or DSS",
+      "A governance topic addressed by a set of objectives and components",
+      "A group of practices inside one objective's process component"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A focus area describes a governance topic, domain or issue, such as small enterprises, cybersecurity or cloud, addressed by a collection of governance and management objectives and their components."
+  },
+  {
+    "id": "COBIT-T1-043",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which governance objective makes sure stakeholders get transparent reporting on I&T performance?",
+    "options": [
+      "EDM05 Ensured Stakeholder Engagement",
+      "APO08 Managed Relationships",
+      "EDM01 Ensured Governance Framework Setting and Maintenance",
+      "MEA01 Managed Performance and Conformance Monitoring"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EDM05 Ensured Stakeholder Engagement replaced COBIT 5's Ensure Stakeholder Transparency. MEA01 monitors performance as a management objective; it does not engage stakeholders at governance level."
+  },
+  {
+    "id": "COBIT-T1-044",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Process component",
+    "stem": "What does the process component of each objective contain?",
+    "options": [
+      "Enterprise goals and alignment goals",
+      "Inputs, outputs and data owners",
+      "Practices, activities and example metrics",
+      "Design factors, values and scores"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each objective's process component is made up of practices, each with example metrics and supporting activities. Goals sit in the goals cascade, and inputs and outputs belong to the information component."
+  },
+  {
+    "id": "COBIT-T1-045",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phase 3",
+    "stem": "In which phase does the enterprise set its target state, using the design factors to prioritize objectives?",
+    "options": [
+      "Phase 2, Where are we now?",
+      "Phase 3, Where do we want to be?",
+      "Phase 5, How do we get there?",
+      "Phase 4, What needs to be done?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phase 3 sets the target, which objectives matter most and what capability levels to aim for, and the gap to it. Phase 4 then works out what must be done."
+  },
+  {
+    "id": "COBIT-T1-046",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Versioning",
+    "stem": "How has ISACA said future editions of COBIT will be labelled after COBIT 2019?",
+    "options": [
+      "By a new version number each time",
+      "By the date of the latest update",
+      "By the year of the next exam outline",
+      "By the name of each focus area"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With COBIT 2019, ISACA said future updates would not carry version numbers. COBIT is identified by the date of its latest update, so the framework can be updated more often."
+  },
+  {
+    "id": "COBIT-T1-047",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Split objectives",
+    "stem": "COBIT 5 managed programs and projects in one process. How does COBIT 2019 handle them?",
+    "options": [
+      "Two objectives: APO05 Managed Portfolio and BAI01 Managed Programs",
+      "One objective: APO05 Managed Portfolio, Programs and Projects",
+      "Two objectives: BAI01 Managed Programs and BAI11 Managed Projects",
+      "One objective: BAI01 Managed Programs and Projects"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "COBIT 2019 split the single program and project process into BAI01 Managed Programs and the new BAI11 Managed Projects."
+  },
+  {
+    "id": "COBIT-T1-048",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Governance distinct from management",
+    "stem": "A bank's CIO chairs the body that sets I&T direction and also runs daily operations. Which principle does this most clearly strain?",
+    "options": [
+      "Governance distinct from management",
+      "Dynamic governance system",
+      "End-to-end governance system",
+      "Holistic approach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Governance and management are different activities with different structures and purposes, so COBIT keeps them distinct. One role setting direction and running operations blurs that line."
+  },
+  {
+    "id": "COBIT-T1-049",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus area number",
+    "stem": "How many focus areas can COBIT 2019 contain?",
+    "options": [
+      "Virtually unlimited; new ones can be added",
+      "Exactly six, one per governance principle",
+      "Exactly five, one per domain of objectives",
+      "Exactly eleven, one per design factor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ISACA says the number of focus areas is virtually unlimited, which is what makes COBIT open-ended. New ones are added as needed or as practitioners contribute them."
+  },
+  {
+    "id": "COBIT-T1-050",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "RACI change",
+    "stem": "In COBIT 2019, which roles does the organizational structures guidance show for each practice?",
+    "options": [
+      "Responsible and informed only",
+      "Accountable and consulted only",
+      "Responsible, accountable, consulted and informed",
+      "Responsible and accountable only"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "COBIT 5 showed all four RACI roles. COBIT 2019 shows only responsible and accountable, because who is consulted or informed depends on each enterprise's context and priorities."
+  },
+  {
+    "id": "COBIT-T1-051",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Objective and process",
+    "stem": "In the COBIT 2019 core model, how does each objective relate to processes?",
+    "options": [
+      "Each spans processes in every domain",
+      "Each has one process per focus area",
+      "Objectives are not linked to processes",
+      "Each maps to exactly one process"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each governance or management objective relates to one process, plus the other related components needed to achieve it, so the core model contains 40 processes."
+  },
+  {
+    "id": "COBIT-T1-052",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Design factor types",
+    "stem": "Enterprise size and threat landscape are largely outside the enterprise's control. What kind of design factors are they?",
+    "options": [
+      "Tactical",
+      "Strategic",
+      "Operational",
+      "Contextual"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Contextual factors are outside the enterprise's control, such as size and threat landscape. Strategic factors reflect its decisions, such as strategy, and tactical factors its implementation choices, such as sourcing."
+  },
+  {
+    "id": "COBIT-T1-053",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Publications",
+    "stem": "Which COBIT 2019 publication gives the detailed guidance for each of the 40 entries in the core model?",
+    "options": [
+      "COBIT 2019 Framework: Governance and Management Objectives",
+      "COBIT 2019 Framework: Introduction and Methodology",
+      "COBIT 2019 Implementation Guide",
+      "COBIT 2019 Design Guide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Governance and Management Objectives details the core model and each of its 40 objectives. Introduction and Methodology sets out the overall structure, the Design Guide covers tailoring, and the Implementation Guide covers the improvement road map."
+  },
+  {
+    "id": "COBIT-T1-054",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Generic vs variants",
+    "stem": "What is a variant of a governance component?",
+    "options": [
+      "A component borrowed from a different framework or from a standard",
+      "A component that applies only to the EDM governance domain",
+      "A component found missing during a capability assessment",
+      "A generic component adapted to a specific purpose or context"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Generic components are described in the core model and apply in principle to any situation. Variants are tailored for a specific purpose or context, such as a focus area or a small enterprise."
+  },
+  {
+    "id": "COBIT-T1-055",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers checks inside business activities that keep information accurate, complete and secure?",
+    "options": [
+      "DSS05 Managed Security Services",
+      "MEA02 Managed System of Internal Control",
+      "DSS06 Managed Business Process Controls",
+      "APO11 Managed Quality"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DSS06 covers controls inside business processes, such as traceability of information events and securing information assets. MEA02 monitors the internal control system as a whole."
+  },
+  {
+    "id": "COBIT-T1-056",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Open and flexible",
+    "stem": "Which framework principle lets ISACA add new focus area content to COBIT without losing consistency?",
+    "options": [
+      "Tailored to enterprise needs",
+      "Open and flexible",
+      "Dynamic governance system",
+      "Holistic approach"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Open and flexible means the framework can take new content and address new issues while keeping its integrity and consistency. Focus areas rely on it. Tailored and dynamic are governance system principles."
+  },
+  {
+    "id": "COBIT-T1-057",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Design factors",
+    "stem": "What is a design factor in COBIT 2019?",
+    "options": [
+      "Something that can shape how the governance system is built",
+      "A required capability level set for each governance objective",
+      "A component type that each of the 40 objectives must contain",
+      "A metric that shows whether an alignment goal is met"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Design factors are factors that can influence the design of an enterprise's governance system and position it for success in its use of I&T, such as strategy, risk profile and sourcing model."
+  },
+  {
+    "id": "COBIT-T1-058",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Phase 7",
+    "stem": "Which phase sustains the gains, reviews lessons learned and looks for the next improvements?",
+    "options": [
+      "Phase 5, How do we get there?",
+      "Phase 6, Did we get there?",
+      "Phase 1, What are the drivers?",
+      "Phase 7, How do we keep the momentum going?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Phase 7 reviews the overall success of the initiative, captures lessons learned and keeps continual improvement going. Phase 6 checks whether the targets were met."
+  },
+  {
+    "id": "COBIT-T1-059",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitBusinessCase",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Contents",
+    "stem": "What should a business case for a governance initiative include, according to ISACA's guidance?",
+    "options": [
+      "The regulatory and management requirements driving it",
+      "A promise that every objective will reach level 5",
+      "The final capability level reached by every single process",
+      "A list of preferred vendors for each new tool"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The business case should set out the drivers, including regulatory and management requirements, and the expected benefits. Final capability results are only known after implementation."
+  },
+  {
+    "id": "COBIT-T1-060",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective, new in COBIT 2019, covers independent reviews that give confidence over I&T?",
+    "options": [
+      "MEA03 Managed Compliance With External Requirements",
+      "MEA02 Managed System of Internal Control",
+      "MEA04 Managed Assurance",
+      "EDM03 Ensured Risk Optimization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "MEA04 Managed Assurance was new in COBIT 2019. MEA02 covers the internal control system and MEA03 compliance with laws, regulations and contracts."
+  },
+  {
+    "id": "COBIT-T1-061",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Related guidance",
+    "stem": "In COBIT 2019, at what level is related guidance from other standards and frameworks given?",
+    "options": [
+      "Only for the governance objectives",
+      "For each governance component",
+      "For each domain as a whole",
+      "Only for the process component"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 5 gave related guidance only at process level. COBIT 2019 lists applicable standards, frameworks and compliance requirements for each governance component."
+  },
+  {
+    "id": "COBIT-T1-062",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "Which is an external stakeholder in enterprise governance of I&T?",
+    "options": [
+      "A regulator",
+      "A risk manager",
+      "An assurance provider",
+      "A business manager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Regulators, business partners and IT vendors are external stakeholders. Executive management, business managers, IT managers, assurance providers and risk management are internal ones."
+  },
+  {
+    "id": "COBIT-T1-063",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Level 2",
+    "stem": "A process achieves its purpose through a basic but complete set of activities. Which capability level is this?",
+    "options": [
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Level 2 is a basic yet complete set of activities that can be called performed. Level 1 achieves its purpose only more or less, through an incomplete, intuitive set of activities."
+  },
+  {
+    "id": "COBIT-T1-064",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conceptual model",
+    "stem": "What does basing the framework on a conceptual model make possible, according to ISACA?",
+    "options": [
+      "Fixed targets for every process",
+      "One governance system for all firms",
+      "Consistency and automation",
+      "Certification of each enterprise"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The first framework principle bases COBIT on a conceptual model that identifies the key components and their relationships, to support consistency and allow automation. COBIT rejects a one-size-fits-all governance system."
+  },
+  {
+    "id": "COBIT-T1-065",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Design factor effects",
+    "stem": "Which is one way design factors shape a governance system?",
+    "options": [
+      "They assign RACI roles to each activity",
+      "They help set target capability levels",
+      "They replace the goals cascade entirely",
+      "They define the seven component types"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Design factors help prioritize objectives, set target capability levels for processes and choose specific variants of components. The goals cascade is itself part of the design factors."
+  },
+  {
+    "id": "COBIT-T1-066",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers deciding which I&T investments to fund and in what mix?",
+    "options": [
+      "APO06 Managed Budget and Costs",
+      "APO05 Managed Portfolio",
+      "EDM04 Ensured Resource Optimization",
+      "BAI01 Managed Programs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "APO05 Managed Portfolio covers the mix of programs, services and assets to invest in. APO06 manages budgets and costs once funds are allocated."
+  },
+  {
+    "id": "COBIT-T1-067",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "An enterprise writes rules that set out the acceptable use of AI tools by staff. Which component is this?",
+    "options": [
+      "Principles, policies and procedures",
+      "Culture, ethics and behavior",
+      "Information",
+      "People, skills and competencies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Written guidance that translates desired behavior into rules for day-to-day work belongs to principles, policies and procedures. Culture covers the behaviors themselves, which policies alone cannot create."
+  },
+  {
+    "id": "COBIT-T1-068",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Iterative design",
+    "stem": "When should an enterprise run the design workflow again?",
+    "options": [
+      "Only after a failed capability assessment of a key process",
+      "Only when ISACA publishes a new version of COBIT",
+      "Every year, whatever has changed in the enterprise",
+      "When its context, strategy or another design factor changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Designing a governance system is iterative: it should be repeated whenever the context, strategy or any other design factor changes."
+  },
+  {
+    "id": "COBIT-T1-069",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers keeping accurate records of CIs and how they relate to each other?",
+    "options": [
+      "BAI09 Managed Assets",
+      "BAI10 Managed Configuration",
+      "BAI06 Managed IT Changes",
+      "DSS01 Managed Operations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BAI10 Managed Configuration covers configuration items and their relationships. BAI09 Managed Assets covers the life cycle and value of I&T assets."
+  },
+  {
+    "id": "COBIT-T1-070",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Design and implementation",
+    "stem": "Which implementation phases does the COBIT 2019 design workflow cover?",
+    "options": [
+      "Phase 7 only",
+      "Phases 3 to 7",
+      "Phases 1 to 4",
+      "Phases 1 and 2 only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tailoring the governance system with the Design Guide covers phases 1 to 4 of the seven-phase life cycle in the Implementation Guide. The two guides complement each other."
+  },
+  {
+    "id": "COBIT-T1-071",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "EGIT outcomes",
+    "stem": "Which three outcomes does enterprise governance of I&T aim to balance in creating value?",
+    "options": [
+      "Service quality, change speed and staff retention",
+      "Strategic alignment, cost reduction and regulatory audit readiness",
+      "Benefits realization, risk optimization, resource optimization",
+      "Compliance, innovation and capacity planning"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EGIT is about value creation: realizing benefits while optimizing risk and resources. These map to the governance objectives EDM02, EDM03 and EDM04."
+  },
+  {
+    "id": "COBIT-T1-072",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stakeholder value",
+    "stem": "An enterprise's governance system satisfies stakeholder needs and generates value from I&T. Which principle is this?",
+    "options": [
+      "Governance distinct from management",
+      "Aligned to major standards",
+      "End-to-end governance system",
+      "Provide stakeholder value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Provide stakeholder value is the first governance system principle: each enterprise needs a governance system that satisfies stakeholder needs and creates value from its use of I&T."
+  },
+  {
+    "id": "COBIT-T1-073",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Named goals",
+    "stem": "Business service continuity and availability is which kind of goal in COBIT 2019?",
+    "options": [
+      "An alignment goal",
+      "A focus area",
+      "A governance objective",
+      "An enterprise goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Business service continuity and availability is enterprise goal EG06. Its primary alignment goal is security of information, processing infrastructure and applications, and privacy (AG07)."
+  },
+  {
+    "id": "COBIT-T1-074",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Components work together",
+    "stem": "Why does COBIT 2019 say an enterprise should not rely on processes alone?",
+    "options": [
+      "Processes are covered by other frameworks instead",
+      "Processes cannot be assessed against capability levels",
+      "Processes belong only to the governance domain",
+      "Objectives need all component types working together"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A governance system is built from a set of components that interact. A well-designed process still fails without the right structures, information, skills, culture, policies and tools."
+  },
+  {
+    "id": "COBIT-T1-075",
+    "section": "cobit",
+    "test": 1,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Practices",
+    "stem": "What is EDM01.02 in COBIT 2019?",
+    "options": [
+      "The objective Ensured Benefits Delivery",
+      "The activity Monitor the governance system",
+      "The practice Evaluate the governance system",
+      "The practice Direct the governance system"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EDM01 has three practices: EDM01.01 Evaluate the governance system, EDM01.02 Direct the governance system and EDM01.03 Monitor the governance system. EDM02 is Ensured Benefits Delivery."
+  },
+  {
+    "id": "COBIT-T2-001",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Domain names",
+    "stem": "What does APO stand for in the COBIT core model?",
+    "options": [
+      "Assess, Prioritize and Optimize",
+      "Assure, Protect and Oversee",
+      "Align, Plan and Organize",
+      "Acquire, Process and Operate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "APO is Align, Plan and Organize, the management domain for the overall organization, strategy and supporting activities for I&T."
+  },
+  {
+    "id": "COBIT-T2-002",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "List the components",
+    "stem": "Which is one of the seven COBIT 2019 component types?",
+    "options": [
+      "Domains",
+      "Alignment goals",
+      "Focus areas",
+      "Processes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Processes are one of the seven component types. Domains group the objectives, focus areas group objectives and components around a topic, and alignment goals sit in the goals cascade."
+  },
+  {
+    "id": "COBIT-T2-003",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Principle counts",
+    "stem": "How many governance framework principles does COBIT 2019 add?",
+    "options": [
+      "Three",
+      "Six",
+      "Two",
+      "Five"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "COBIT 2019 adds three governance framework principles: based on a conceptual model, open and flexible, and aligned to major standards, frameworks and regulations. Separately there are six governance system principles."
+  },
+  {
+    "id": "COBIT-T2-004",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Cascade start",
+    "stem": "Where does the COBIT 2019 goals cascade start?",
+    "options": [
+      "Alignment goals",
+      "Governance and management objectives",
+      "Stakeholder drivers and needs",
+      "Capability targets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cascade starts with stakeholder drivers and needs, such as improving efficiency or cutting costs, which are turned into enterprise goals."
+  },
+  {
+    "id": "COBIT-T2-005",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Previous edition",
+    "stem": "Which edition of COBIT did COBIT 2019 replace?",
+    "options": [
+      "COBIT 4.1",
+      "COBIT 5",
+      "COBIT 3",
+      "COBIT 6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 2019 was the first update since COBIT 5, released in 2012. There was no COBIT 6, and COBIT 4.1 came before COBIT 5."
+  },
+  {
+    "id": "COBIT-T2-006",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Last phase",
+    "stem": "Which question does the last phase of the implementation life cycle ask?",
+    "options": [
+      "Where do we want to be?",
+      "Did we get there?",
+      "How do we get there?",
+      "How do we keep the momentum going?"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Phase 7 is How do we keep the momentum going? Phase 6, Did we get there?, comes just before it."
+  },
+  {
+    "id": "COBIT-T2-007",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Domain size",
+    "stem": "Which management domain has the most objectives?",
+    "options": [
+      "MEA, with 4",
+      "BAI, with 11",
+      "APO, with 14",
+      "DSS, with 6"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "APO has 14 objectives (APO01 to APO14), BAI 11, DSS 6 and MEA 4."
+  },
+  {
+    "id": "COBIT-T2-008",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Toolkit",
+    "stem": "What tool supports the COBIT 2019 design workflow?",
+    "options": [
+      "The COBIT 5 Process Assessment Model",
+      "The goals cascade mapping poster",
+      "The Implementation Guide's road map template",
+      "The Design Guide Toolkit, an Excel workbook"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Design Guide Toolkit is an Excel tool that supports the workflow and comes with a filled-in sample. Users change its data to reflect their own enterprise."
+  },
+  {
+    "id": "COBIT-T2-009",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Not a component",
+    "stem": "Which of these is NOT a COBIT 2019 component type?",
+    "options": [
+      "Processes",
+      "Information",
+      "Design factors",
+      "Organizational structures"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Design factors influence how the governance system is designed; they are not one of its seven components. Processes, information and organizational structures are components."
+  },
+  {
+    "id": "COBIT-T2-010",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Governance naming",
+    "stem": "How are COBIT 2019 governance objective names phrased, for example EDM02?",
+    "options": [
+      "Ensure Benefits Delivery",
+      "Managed Benefits Delivery",
+      "Ensured Benefits Delivery",
+      "Benefits Delivery Management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Governance objectives changed from Ensure to Ensured in COBIT 2019, so EDM02 is Ensured Benefits Delivery."
+  },
+  {
+    "id": "COBIT-T2-011",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System principles",
+    "stem": "Which is one of the six governance system principles?",
+    "options": [
+      "Aligned to major standards",
+      "Open and flexible",
+      "Based on a conceptual model",
+      "Holistic approach"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The six system principles are provide stakeholder value, holistic approach, dynamic governance system, governance distinct from management, tailored to enterprise needs and end-to-end governance system. The other three options are framework principles."
+  },
+  {
+    "id": "COBIT-T2-012",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Goal counts",
+    "stem": "How many alignment goals does COBIT 2019 define?",
+    "options": [
+      "35",
+      "17",
+      "7",
+      "13"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "There are 13 alignment goals, matching the 13 enterprise goals. COBIT 5 had 17 IT-related goals."
+  },
+  {
+    "id": "COBIT-T2-013",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Who uses COBIT",
+    "stem": "For which part of the organization is COBIT 2019 intended?",
+    "options": [
+      "The IT department only",
+      "The board of directors only",
+      "The whole enterprise",
+      "The internal audit team only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "COBIT is aimed at the whole enterprise, because enterprise I&T covers all technology and information processing used to reach enterprise goals, not only what the IT department runs."
+  },
+  {
+    "id": "COBIT-T2-014",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Capability vs maturity",
+    "stem": "In COBIT 2019, maturity levels are used to measure what?",
+    "options": [
+      "Single practices",
+      "Focus areas",
+      "Single activities",
+      "Enterprise goals"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Capability levels apply to processes; maturity levels apply to focus areas, giving a higher-level view of how a set of objectives performs together."
+  },
+  {
+    "id": "COBIT-T2-015",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "An I&T steering committee and a chief information security officer are examples of which component?",
+    "options": [
+      "Services, infrastructure and applications",
+      "Principles, policies and procedures",
+      "People, skills and competencies",
+      "Organizational structures"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Committees, boards and key roles are organizational structures, the decision-making entities in the enterprise. The skills those people hold belong to a different component."
+  },
+  {
+    "id": "COBIT-T2-016",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Domain purpose",
+    "stem": "Which domain covers running I&T operations day to day and helping users, including security?",
+    "options": [
+      "Deliver, Service and Support (DSS)",
+      "Monitor, Evaluate and Assess (MEA)",
+      "Align, Plan and Organize (APO)",
+      "Build, Acquire and Implement (BAI)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DSS covers running I&T services day to day and supporting them, including security services and continuity."
+  },
+  {
+    "id": "COBIT-T2-017",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Purpose of each set",
+    "stem": "What do the governance framework principles describe?",
+    "options": [
+      "How a process should move from one capability level to the next",
+      "How the board should rank enterprise goals against alignment goals",
+      "What a single enterprise's governance system should achieve each year",
+      "What COBIT itself, as a model, should look like"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The governance system principles describe the core requirements for an enterprise's governance system. The governance framework principles describe what a framework, such as COBIT, should look like to build such a system."
+  },
+  {
+    "id": "COBIT-T2-018",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cascade purpose",
+    "stem": "What does the goals cascade let an enterprise do?",
+    "options": [
+      "Choose which components each focus area must contain",
+      "Assign a capability level to each activity in a process",
+      "Measure how far each enterprise goal has been met",
+      "Rank objectives by the importance of its enterprise goals"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The goals cascade translates stakeholder needs into enterprise goals, then alignment goals, so the governance and management objectives can be prioritized by what matters to the enterprise."
+  },
+  {
+    "id": "COBIT-T2-019",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phase order",
+    "stem": "Which phase of the implementation life cycle comes directly after What needs to be done?",
+    "options": [
+      "Did we get there?",
+      "How do we get there?",
+      "How do we keep the momentum going?",
+      "Where do we want to be?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The order is What are the drivers?, Where are we now?, Where do we want to be?, What needs to be done?, How do we get there?, Did we get there? and How do we keep the momentum going?"
+  },
+  {
+    "id": "COBIT-T2-020",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitBusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Updating",
+    "stem": "When should the business case be revisited after phase 1?",
+    "options": [
+      "Never; it is fixed once it is approved",
+      "Only once the whole program has closed",
+      "Only if an external auditor asks for it",
+      "As the current state and targets become clear"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The business case is a living document: it is updated as phase 2 shows the current state and later phases firm up the targets and costs."
+  },
+  {
+    "id": "COBIT-T2-021",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "New objectives",
+    "stem": "Which was NOT one of the objectives added in COBIT 2019?",
+    "options": [
+      "DSS05 Managed Security Services",
+      "BAI11 Managed Projects",
+      "MEA04 Managed Assurance",
+      "APO14 Managed Data"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The three new objectives were APO14 Managed Data, BAI11 Managed Projects and MEA04 Managed Assurance, which took the count from 37 to 40. DSS05 existed in COBIT 5."
+  },
+  {
+    "id": "COBIT-T2-022",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "A monthly I&T risk report sent to the risk committee is an example of which component?",
+    "options": [
+      "Culture, ethics and behavior",
+      "Organizational structures",
+      "Information",
+      "Processes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reports and other information items that flow between practices and roles belong to the information component."
+  },
+  {
+    "id": "COBIT-T2-023",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Governance body",
+    "stem": "Under COBIT 2019, which body evaluates strategic options and directs senior management on the one chosen?",
+    "options": [
+      "Executive management, led by the CEO",
+      "Internal audit, reporting to the audit committee",
+      "The governing body, usually the board",
+      "The IT steering committee, led by the CIO"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Governance is done by the governing body, usually the board of directors: it evaluates strategic options, directs senior management on the chosen ones and monitors achievement. Executive management then carries out that direction."
+  },
+  {
+    "id": "COBIT-T2-024",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Final step",
+    "stem": "What happens in the last step of the design workflow?",
+    "options": [
+      "Conflicting priorities are settled and the result is finalized",
+      "A business case is written and approved by the board",
+      "Each process is assessed against its own target capability level",
+      "Stakeholder drivers are turned into enterprise goals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The last step resolves the priority conflicts that different design factors can create, then concludes the governance system design."
+  },
+  {
+    "id": "COBIT-T2-025",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective deals with finding the root cause of recurring incidents?",
+    "options": [
+      "DSS03 Managed Problems",
+      "DSS02 Managed Service Requests and Incidents",
+      "MEA01 Managed Performance and Conformance Monitoring",
+      "BAI07 Managed IT Change Acceptance and Transitioning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DSS03 Managed Problems identifies and resolves the root causes of incidents. DSS02 restores service when an incident happens."
+  },
+  {
+    "id": "COBIT-T2-026",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "A shared monitoring platform and a hosted cloud offering support an objective. Which component do they belong to?",
+    "options": [
+      "Processes",
+      "Information",
+      "Services, infrastructure and applications",
+      "People, skills and competencies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Infrastructure, technology, applications and third-party services that support an objective are the services, infrastructure and applications component."
+  },
+  {
+    "id": "COBIT-T2-027",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "No one-size-fits-all",
+    "stem": "ISACA says there is no one-size-fits-all governance system for enterprise I&T. Which principle best reflects this?",
+    "options": [
+      "Holistic approach",
+      "Based on a conceptual model",
+      "Dynamic governance system",
+      "Tailored to enterprise needs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Because enterprises differ in strategy, size, risk and sourcing, COBIT says the governance system must be tailored to the enterprise using design factors."
+  },
+  {
+    "id": "COBIT-T2-028",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus area examples",
+    "stem": "Which is an example of a COBIT 2019 focus area?",
+    "options": [
+      "Capability level 3",
+      "Managed Problems",
+      "DevOps",
+      "Enterprise size"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DevOps, small and medium enterprises, information security, cybersecurity, cloud and digital transformation are focus areas. Managed Problems is an objective and enterprise size is a design factor."
+  },
+  {
+    "id": "COBIT-T2-029",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers recording, assessing and authorizing changes to I&T?",
+    "options": [
+      "BAI10 Managed Configuration",
+      "BAI06 Managed IT Changes",
+      "BAI05 Managed Organizational Change",
+      "BAI07 Managed IT Change Acceptance and Transitioning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BAI06 Managed IT Changes controls changes to I&T. BAI05 is about organizational change, the people side, and BAI07 covers accepting and transitioning changes into use."
+  },
+  {
+    "id": "COBIT-T2-030",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Management activities",
+    "stem": "Which four verbs describe the management activities in COBIT 2019?",
+    "options": [
+      "Plan, build, run and monitor",
+      "Define, measure, analyze and improve",
+      "Evaluate, direct, monitor and assure",
+      "Align, design, deliver and audit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Management plans, builds, runs and monitors activities in line with governance direction, which matches the four management domains APO, BAI, DSS and MEA. Evaluate, direct and monitor are the governance verbs."
+  },
+  {
+    "id": "COBIT-T2-031",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drivers",
+    "stem": "Which is an example of a driver that phase 1 of the implementation life cycle looks for?",
+    "options": [
+      "A target capability level of 3 for DSS04",
+      "A capability rating of largely achieved",
+      "A new regulation on handling customer data",
+      "A lessons-learned review of the last cycle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Phase 1 identifies why the enterprise wants to change: drivers such as new regulations, pain points or strategy changes. Ratings and targets come in phases 2 and 3, and lessons learned in phase 7."
+  },
+  {
+    "id": "COBIT-T2-032",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Which component is mainly about the knowledge staff need to carry out activities well?",
+    "options": [
+      "Culture, ethics and behavior",
+      "Principles, policies and procedures",
+      "Organizational structures",
+      "People, skills and competencies"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "People, skills and competencies covers the skills and competencies needed for good decisions and corrective action. Culture covers behavior and attitudes."
+  },
+  {
+    "id": "COBIT-T2-033",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers the blueprint linking business, information, data, applications and technology?",
+    "options": [
+      "APO14 Managed Data",
+      "APO03 Managed Enterprise Architecture",
+      "BAI03 Managed Solutions Identification and Build",
+      "APO02 Managed Strategy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "APO03 Managed Enterprise Architecture covers the architecture across business, information, data, applications and technology. APO02 sets the I&T strategy."
+  },
+  {
+    "id": "COBIT-T2-034",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aligned to standards",
+    "stem": "Which framework principle lets an enterprise use COBIT alongside ISO/IEC 27001, ITIL and the NIST Cybersecurity Framework?",
+    "options": [
+      "Aligned to major standards, frameworks and regulations",
+      "Dynamic governance system",
+      "Governance distinct from management",
+      "Provide stakeholder value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The third framework principle aligns COBIT to major related standards, frameworks and regulations, which is why each component lists related guidance."
+  },
+  {
+    "id": "COBIT-T2-035",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focus area content",
+    "stem": "What can a focus area contain?",
+    "options": [
+      "New domains that sit outside the core model",
+      "New design factors that replace the original eleven",
+      "Only a list of approved tools and vendors",
+      "Generic governance components and variants of them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A focus area can combine generic governance components with variants tailored to its topic. It works within the core model's objectives rather than adding new domains."
+  },
+  {
+    "id": "COBIT-T2-036",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COBIT 5 integration",
+    "stem": "COBIT 4.1 had two separate companion frameworks that COBIT 5 brought into one framework. Which were they?",
+    "options": [
+      "CMMI and ISO/IEC 38500",
+      "ITIL and PRINCE2",
+      "Val IT and Risk IT",
+      "COSO and Six Sigma"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Val IT (value) and Risk IT (risk) were ISACA frameworks that sat beside COBIT 4.1. COBIT 5 integrated them into a single governance and management framework, and COBIT 2019 builds on COBIT 5."
+  },
+  {
+    "id": "COBIT-T2-037",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Activities",
+    "stem": "What is attached to each process activity in COBIT 2019 that COBIT 5 did not have?",
+    "options": [
+      "A capability level",
+      "A design factor score",
+      "A RACI chart",
+      "An enterprise goal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each activity in COBIT 2019 is linked to a capability level, which shows at what level the activity is expected. RACI charts are given per practice, not per activity."
+  },
+  {
+    "id": "COBIT-T2-038",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which governance objective makes sure I&T-related risk stays within the enterprise's risk appetite?",
+    "options": [
+      "EDM04 Ensured Resource Optimization",
+      "APO12 Managed Risk",
+      "MEA02 Managed System of Internal Control",
+      "EDM03 Ensured Risk Optimization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "EDM03 is the governance objective for risk: the board sets and monitors risk appetite. APO12 Managed Risk is the management objective that identifies, assesses and reduces risk day to day."
+  },
+  {
+    "id": "COBIT-T2-039",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Level 0",
+    "stem": "Which description fits capability level 0?",
+    "options": [
+      "Activities defined across the organization",
+      "Incomplete, intuitive activities",
+      "Performance measured quantitatively",
+      "No basic ability to achieve the purpose"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Level 0 means a lack of any basic capability and an incomplete approach to the governance and management purpose. Incomplete, intuitive activities describe level 1."
+  },
+  {
+    "id": "COBIT-T2-040",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Design factor values",
+    "stem": "Compliance requirements is a design factor. Which values can it take?",
+    "options": [
+      "Agile, DevOps or traditional",
+      "High, normal or low",
+      "Initial, refined or concluded",
+      "Contextual, strategic or tactical"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each design factor has a set of values with scores. Compliance requirements is high, normal or low. Agile, DevOps and traditional are values of IT implementation methods."
+  },
+  {
+    "id": "COBIT-T2-041",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holistic approach",
+    "stem": "An enterprise writes strong security policies but ignores skills, culture and tools. Which principle is it missing?",
+    "options": [
+      "Governance distinct from management",
+      "Holistic approach",
+      "Open and flexible",
+      "Provide stakeholder value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Holistic approach means all component types, not only policies or processes, must work together. Policies alone, without the people, culture and infrastructure, will not achieve the objective."
+  },
+  {
+    "id": "COBIT-T2-042",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Design factor count",
+    "stem": "How many design factors does COBIT 2019 describe?",
+    "options": [
+      "7",
+      "13",
+      "9",
+      "11"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "COBIT 2019 describes 11 design factors and leaves room for future factors. There are 13 enterprise goals and 7 component types."
+  },
+  {
+    "id": "COBIT-T2-043",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers making sure I&T can meet current and future demand with the performance users need?",
+    "options": [
+      "BAI04 Managed Availability and Capacity",
+      "APO09 Managed Service Agreements",
+      "DSS01 Managed Operations",
+      "DSS04 Managed Continuity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BAI04 Managed Availability and Capacity balances current and future needs for availability, performance and capacity. DSS04 handles continuity after a disruption."
+  },
+  {
+    "id": "COBIT-T2-044",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Component link",
+    "stem": "How are components linked to governance and management objectives in COBIT 2019?",
+    "options": [
+      "Each objective uses one component type only",
+      "Each component type belongs to one domain only",
+      "Components are linked to focus areas, not objectives",
+      "Each objective has guidance for every component type"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For each of the 40 objectives, COBIT 2019 gives related guidance for all seven component types, so the objective is achieved through components working together."
+  },
+  {
+    "id": "COBIT-T2-045",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Phase 6",
+    "stem": "In phase 6, Did we get there?, what does the enterprise check?",
+    "options": [
+      "Whether the enterprise has written its I&T strategy for next year",
+      "Whether the improvements met targets and gave expected benefits",
+      "Whether the business case was approved by the sponsors",
+      "Whether the drivers for change still justify starting the program"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phase 6 confirms that the improvements were made and their targets reached, often by re-assessing process capability, and that the expected benefits are being realized."
+  },
+  {
+    "id": "COBIT-T2-046",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Benefits",
+    "stem": "Which is a benefit ISACA claims for using COBIT 2019?",
+    "options": [
+      "A guaranteed fall in IT operating costs within a year",
+      "A common language for meeting enterprise performance goals",
+      "A certified audit opinion on the enterprise's internal controls",
+      "A replacement for the enterprise's own risk appetite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ISACA lists a systematic approach and common language, clearer goals for decision making, help with stakeholder needs and a customized governance solution. COBIT guarantees no cost result and gives no audit opinion."
+  },
+  {
+    "id": "COBIT-T2-047",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "An enterprise runs a program to help staff adopt a new ERP system and change how they work. Which objective is this?",
+    "options": [
+      "APO07 Managed Human Resources",
+      "BAI05 Managed Organizational Change",
+      "BAI08 Managed Knowledge",
+      "BAI06 Managed IT Changes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BAI05 Managed Organizational Change covers the people side of change so new ways of working are adopted. BAI06 controls technical changes to I&T."
+  },
+  {
+    "id": "COBIT-T2-048",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dynamic governance system",
+    "stem": "After a merger doubles the size of an enterprise, its governance design is not revisited. Which principle is ignored?",
+    "options": [
+      "Dynamic governance system",
+      "Holistic approach",
+      "Based on a conceptual model",
+      "Governance distinct from management"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enterprise size is a design factor. Dynamic governance system says a change in any design factor should trigger a review of the governance system."
+  },
+  {
+    "id": "COBIT-T2-049",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Example metrics",
+    "stem": "What does each objective's goals cascade section include besides the related alignment and enterprise goals?",
+    "options": [
+      "Design factor values",
+      "Example metrics",
+      "Focus area variants",
+      "Capability levels"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For each objective, COBIT 2019 lists the applicable alignment goals and enterprise goals together with example metrics for them."
+  },
+  {
+    "id": "COBIT-T2-050",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Services guidance",
+    "stem": "Why does COBIT 2019 not name vendors in its services, infrastructure and applications guidance?",
+    "options": [
+      "ISACA certifies vendors in a separate scheme",
+      "Vendors are listed in each focus area instead",
+      "Vendor choice is covered in detail by the Implementation Guide",
+      "The guidance is kept generic so any enterprise can use it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The services, infrastructure and applications guidance names types of services, infrastructure and applications only, keeping it generic. COBIT does not make technology choices for the enterprise."
+  },
+  {
+    "id": "COBIT-T2-051",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers meeting the laws, regulations and contract terms that apply to I&T?",
+    "options": [
+      "MEA02 Managed System of Internal Control",
+      "MEA03 Managed Compliance With External Requirements",
+      "EDM01 Ensured Governance Framework Setting and Maintenance",
+      "MEA04 Managed Assurance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MEA03 covers external requirements such as laws, regulations and contracts. MEA02 covers the internal control system."
+  },
+  {
+    "id": "COBIT-T2-052",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Strategic vs tactical",
+    "stem": "Choosing to outsource and to use Agile are which kind of design factors?",
+    "options": [
+      "Generic",
+      "Tactical",
+      "Strategic",
+      "Contextual"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tactical design factors reflect implementation choices: sourcing model (outsourcing, cloud), IT methods (Agile, DevOps) and technology adoption."
+  },
+  {
+    "id": "COBIT-T2-053",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "What COBIT is not",
+    "stem": "A CIO wants COBIT 2019 to say which cloud provider to choose. What does COBIT provide instead?",
+    "options": [
+      "A cost model for each provider's pricing",
+      "A ranked list of approved providers",
+      "A standard contract for each provider",
+      "Guidance on who should decide and how"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "COBIT does not make or prescribe IT decisions such as sourcing or architecture. It describes the components needed to take such decisions well: who decides, how, and with what information."
+  },
+  {
+    "id": "COBIT-T2-054",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "An enterprise trains staff to treat customer data with care and leaders model that care. Which component does the leaders' example shape?",
+    "options": [
+      "Culture, ethics and behavior",
+      "Principles, policies and procedures",
+      "People, skills and competencies",
+      "Information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tone set by leaders shapes culture, ethics and behavior. Training builds skills, and written data rules are policies, but the example leaders set works on behavior."
+  },
+  {
+    "id": "COBIT-T2-055",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers making know-how available to staff and decision makers, such as a shared wiki?",
+    "options": [
+      "BAI08 Managed Knowledge",
+      "APO07 Managed Human Resources",
+      "BAI02 Managed Requirements Definition",
+      "APO14 Managed Data"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BAI08 Managed Knowledge covers the knowledge needed to support staff and decisions. APO14 Managed Data covers data as an enterprise asset."
+  },
+  {
+    "id": "COBIT-T2-056",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "End-to-end",
+    "stem": "A business unit runs its own analytics platform outside IT, and no governance covers it. Which principle is not met?",
+    "options": [
+      "End-to-end governance system",
+      "Dynamic governance system",
+      "Tailored to enterprise needs",
+      "Open and flexible"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "End-to-end governance covers all technology and information processing in the enterprise, wherever it takes place, not only what the IT department runs."
+  },
+  {
+    "id": "COBIT-T2-057",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cascade limits",
+    "stem": "ISACA notes the goals cascade alone is not enough to select content. Why?",
+    "options": [
+      "It only covers the five governance objectives in EDM",
+      "It was dropped in COBIT 2019 and survives only in COBIT 5",
+      "It is generic and ignores factors like size and sourcing",
+      "It must be replaced by a capability assessment first"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cascade is generic and does not take account of many factors that shape an enterprise, which is why COBIT 2019 adds the other design factors."
+  },
+  {
+    "id": "COBIT-T2-058",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Iterative approach",
+    "stem": "How does ISACA recommend running the implementation life cycle?",
+    "options": [
+      "As repeated cycles of continual improvement",
+      "Once, as a single project that then closes for good",
+      "Only after an external audit finding",
+      "Only when a new COBIT edition is released"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The life cycle is iterative: each pass through the seven phases is followed by another as needs and context change, so governance keeps improving."
+  },
+  {
+    "id": "COBIT-T2-059",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitBusinessCase",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Purpose",
+    "stem": "What is the main purpose of the business case for a governance initiative?",
+    "options": [
+      "To win approval and funding by showing expected value",
+      "To replace the design factors used in the design workflow",
+      "To record the capability level of each process",
+      "To set target capability levels for processes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A business case justifies the initiative to sponsors: why it is needed, what it will cost and what value it should deliver, so the plan and budget can be approved."
+  },
+  {
+    "id": "COBIT-T2-060",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Renamed objectives",
+    "stem": "COBIT 5's Ensure Stakeholder Transparency became which COBIT 2019 objective?",
+    "options": [
+      "EDM01 Ensured Governance Framework Setting and Maintenance",
+      "EDM05 Ensured Stakeholder Engagement",
+      "MEA01 Managed Performance and Conformance Monitoring",
+      "EDM05 Ensured Stakeholder Transparency"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 2019 renamed the transparency objective to EDM05 Ensured Stakeholder Engagement, keeping it in the governance domain."
+  },
+  {
+    "id": "COBIT-T2-061",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Practices",
+    "stem": "In COBIT 2019, what is DSS04.07?",
+    "options": [
+      "A focus area",
+      "A design factor",
+      "A management practice",
+      "An alignment goal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IDs such as DSS04.07 name management practices inside an objective's process component. DSS04 is the objective Managed Continuity, and .07 is one of its practices."
+  },
+  {
+    "id": "COBIT-T2-062",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Framework structure",
+    "stem": "Which COBIT 2019 publication sets out the overall structure of the framework and updates its principles?",
+    "options": [
+      "Governance and Management Objectives",
+      "Implementation Guide",
+      "Design Guide",
+      "Introduction and Methodology"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Introduction and Methodology lays out the framework structure, the principles and the basic concepts. The objectives book details the core model, and the two guides cover design and implementation."
+  },
+  {
+    "id": "COBIT-T2-063",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rating scale",
+    "stem": "A capability level's activities are achieved at 70 percent. How is that level rated?",
+    "options": [
+      "Fully achieved",
+      "Partially achieved",
+      "Not achieved",
+      "Largely achieved"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fully is over 85 percent, largely 50 to 85, partially 15 to 50 and not under 15 percent. 70 percent falls in largely."
+  },
+  {
+    "id": "COBIT-T2-064",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Governance distinct from management",
+    "stem": "Why does COBIT keep governance distinct from management?",
+    "options": [
+      "Governance needs a framework and management does not need one",
+      "Management covers I&T while governance covers business processes",
+      "They are different activities with different structures and purposes",
+      "Governance is done by auditors and management by the IT department alone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Governance and management encompass different types of activities, need different organizational structures and serve different purposes. Neither is limited to auditors or the IT department."
+  },
+  {
+    "id": "COBIT-T2-065",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Named goals",
+    "stem": "Managed I&T-related risk is which kind of goal in COBIT 2019?",
+    "options": [
+      "An enterprise goal",
+      "An alignment goal",
+      "A stakeholder driver",
+      "A management objective"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Managed I&T-related risk is alignment goal AG02. The management objective for risk is APO12 Managed Risk, which has a different name."
+  },
+  {
+    "id": "COBIT-T2-066",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Primary objectives",
+    "stem": "Alignment goal AG07 is about protecting information, processing infrastructure, applications and privacy. Which objective primarily supports it?",
+    "options": [
+      "APO13 Managed Security",
+      "APO11 Managed Quality",
+      "APO05 Managed Portfolio",
+      "BAI08 Managed Knowledge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AG07's primary objectives include EDM03, APO12, APO13 Managed Security, BAI10, DSS04 and DSS05. Quality, knowledge and portfolio are not among them."
+  },
+  {
+    "id": "COBIT-T2-067",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Generic components",
+    "stem": "Where are the generic governance components of COBIT 2019 described?",
+    "options": [
+      "In the Design Guide Toolkit",
+      "In the Implementation Guide",
+      "In the COBIT core model",
+      "In each focus area guide"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Generic components are described in the COBIT core model and apply in principle to any situation. Focus area guides then add variants for a specific topic."
+  },
+  {
+    "id": "COBIT-T2-068",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Using design factors",
+    "stem": "Must an enterprise use all 11 design factors when tailoring COBIT?",
+    "options": [
+      "No, only the first four may be used",
+      "No, only those relevant to its context",
+      "Yes, or the design is not valid",
+      "Yes, but only in the order listed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Not every design factor needs to be used. They are generally applicable and can be adapted, and an enterprise uses the ones relevant to it."
+  },
+  {
+    "id": "COBIT-T2-069",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Objective entry",
+    "stem": "Besides the domain, name and description, what high-level information does each COBIT 2019 objective entry give?",
+    "options": [
+      "Its maturity rating and target level",
+      "Its RACI chart and approval date",
+      "Its focus area and purpose statement",
+      "Its design factor values and scores"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each objective entry opens with the domain, focus area, objective name, description and purpose statement, then the goals cascade and the guidance for each component."
+  },
+  {
+    "id": "COBIT-T2-070",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sponsorship",
+    "stem": "Who should initiate and sponsor a governance improvement program, according to ISACA's guidance?",
+    "options": [
+      "The IT service desk team",
+      "Executive management",
+      "An external audit firm",
+      "The enterprise's main vendor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Governance programs should be initiated and sponsored by executive management, be properly scoped and set objectives the enterprise can absorb."
+  },
+  {
+    "id": "COBIT-T2-071",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Umbrella framework",
+    "stem": "Why does ISACA describe COBIT 2019 as an umbrella framework?",
+    "options": [
+      "It replaces every other framework an enterprise uses",
+      "It covers only the governance layer above other frameworks",
+      "It aligns to and draws on other standards and frameworks",
+      "It is owned jointly by several standards bodies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "COBIT sits over and aligns with other standards, frameworks and regulations, such as ISO/IEC standards, ITIL and NIST, so an enterprise can use them together. It does not replace them."
+  },
+  {
+    "id": "COBIT-T2-072",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "COBIT 5 change",
+    "stem": "Compared with COBIT 5, what happened to COBIT's principles in COBIT 2019?",
+    "options": [
+      "Five principles became seven principles in a single combined list",
+      "Five became six system principles plus three framework ones",
+      "The principles were replaced by the eleven design factors",
+      "Six principles were cut to three framework principles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 5 had five principles. COBIT 2019 revised them into six governance system principles and added three governance framework principles."
+  },
+  {
+    "id": "COBIT-T2-073",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cascade in design",
+    "stem": "How does the goals cascade relate to the 11 design factors?",
+    "options": [
+      "Enterprise goals are one of the design factors",
+      "The cascade replaces the design factors for small firms",
+      "The cascade and design factors are separate stages",
+      "The design factors are inputs to alignment goals only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The goals cascade is embedded in the design factors: enterprise goals is design factor 2, used in the initial scope of the design."
+  },
+  {
+    "id": "COBIT-T2-074",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Example metrics",
+    "stem": "In the process component, what are example metrics attached to?",
+    "options": [
+      "Each design factor",
+      "Each domain",
+      "Each practice",
+      "Each focus area"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each management or governance practice carries example metrics, followed by its activities. Domains and focus areas group objectives rather than carrying their own metrics in the process component."
+  },
+  {
+    "id": "COBIT-T2-075",
+    "section": "cobit",
+    "test": 2,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Practices",
+    "stem": "In the core model, roughly how many practices are spread across the 40 objectives?",
+    "options": [
+      "About 230",
+      "About 40",
+      "About 80",
+      "About 1,200"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are 231 practices across the 40 objectives, and about 1,202 activities beneath them."
+  },
+  {
+    "id": "COBIT-D-001",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Domain names",
+    "stem": "What does MEA stand for in the COBIT core model?",
+    "options": [
+      "Monitor, Evaluate and Assess",
+      "Measure, Evaluate and Adjust",
+      "Manage, Execute and Audit",
+      "Monitor, Escalate and Assure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MEA is Monitor, Evaluate and Assess. It covers monitoring performance and conformance with internal targets, internal control and external requirements."
+  },
+  {
+    "id": "COBIT-D-002",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "List the components",
+    "stem": "Which pair are both COBIT 2019 component types?",
+    "options": [
+      "Design factors, plus information",
+      "Information, plus enterprise goals",
+      "Information, plus organizational structures",
+      "Focus areas, plus organizational structures"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Information and organizational structures are both component types. Enterprise goals, focus areas and design factors are other COBIT concepts, not components."
+  },
+  {
+    "id": "COBIT-D-003",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Named goals",
+    "stem": "Delivery of I&T services in line with business requirements is which COBIT 2019 goal?",
+    "options": [
+      "Enterprise goal EG05",
+      "Management objective APO05",
+      "Alignment goal AG05",
+      "Management objective DSS05"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AG05 is delivery of I&T services in line with business requirements, an alignment goal: it describes what I&T contributes. Enterprise goals (EG) describe business results, and APO and DSS IDs are management objectives."
+  },
+  {
+    "id": "COBIT-D-004",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Release",
+    "stem": "In which year was COBIT 2019 released?",
+    "options": [
+      "2016",
+      "2012",
+      "2018",
+      "2019"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Despite its name, COBIT 2019 was released at the end of 2018. COBIT 5 was released in 2012."
+  },
+  {
+    "id": "COBIT-D-005",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "First principle",
+    "stem": "Which governance system principle comes first in COBIT 2019's list?",
+    "options": [
+      "End-to-end governance system",
+      "Tailored to enterprise needs",
+      "Holistic approach",
+      "Provide stakeholder value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The six system principles are listed starting with provide stakeholder value and ending with end-to-end governance system."
+  },
+  {
+    "id": "COBIT-D-006",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Strategy archetypes",
+    "stem": "An enterprise aims to offer products unlike anything its rivals sell. Which strategy archetype is this?",
+    "options": [
+      "Growth/acquisition",
+      "Innovation/differentiation",
+      "Cost leadership",
+      "Client service/stability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Innovation/differentiation focuses on offering different or innovative products and services. Growth/acquisition focuses on growing revenue."
+  },
+  {
+    "id": "COBIT-D-007",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Phase order",
+    "stem": "Which phase comes right after Where are we now?",
+    "options": [
+      "What needs to be done?",
+      "How do we keep the momentum going?",
+      "Where do we want to be?",
+      "What are the drivers?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The order is What are the drivers?, Where are we now?, Where do we want to be?, What needs to be done?, How do we get there?, Did we get there?, How do we keep the momentum going?"
+  },
+  {
+    "id": "COBIT-D-008",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Domain size",
+    "stem": "How many objectives are in the DSS domain?",
+    "options": [
+      "5",
+      "11",
+      "4",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DSS has six objectives, DSS01 Managed Operations to DSS06 Managed Business Process Controls."
+  },
+  {
+    "id": "COBIT-D-009",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Level 4",
+    "stem": "A process achieves its purpose, is well defined and its performance is measured quantitatively. Which level is this?",
+    "options": [
+      "Level 2",
+      "Level 4",
+      "Level 5",
+      "Level 3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Level 4 adds quantitative measurement of performance to a well-defined process. Level 5 adds continuous improvement on top of that."
+  },
+  {
+    "id": "COBIT-D-010",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Which component would include a policy on retaining backup media?",
+    "options": [
+      "Principles, policies and procedures",
+      "Information",
+      "Services, infrastructure and applications",
+      "Processes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Policies and the procedures that put them into practice belong to the principles, policies and procedures component, even when they govern technology."
+  },
+  {
+    "id": "COBIT-D-011",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Named goals",
+    "stem": "Delivering programs on time, on budget and meeting requirements and quality standards is which goal?",
+    "options": [
+      "Alignment goal AG09",
+      "Enterprise goal EG09",
+      "Management objective BAI11",
+      "Management objective BAI01"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AG09 is about delivering programs on time, on budget and to quality. BAI01 Managed Programs is a management objective that supports it."
+  },
+  {
+    "id": "COBIT-D-012",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers the overall approach to running technology, with its structures, roles and policies?",
+    "options": [
+      "APO02 Managed Strategy",
+      "MEA02 Managed System of Internal Control",
+      "EDM01 Ensured Governance Framework Setting and Maintenance",
+      "APO01 Managed I&T Management Framework"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "APO01 is the management framework for I&T. EDM01 is the governance framework, set and maintained by the governing body."
+  },
+  {
+    "id": "COBIT-D-013",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitBusinessCase",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ownership",
+    "stem": "Who should the business case for a governance initiative mainly convince?",
+    "options": [
+      "The process owners who will run the new practices day to day",
+      "The vendors who supply tools for the new processes in the program",
+      "The external auditors who certify the program's capability levels",
+      "The executives and board who approve its plan and budget"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The business case is aimed at the executives and governing body who sponsor the program and approve its plan and budget."
+  },
+  {
+    "id": "COBIT-D-014",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Free publications",
+    "stem": "When COBIT 2019 was launched, which pair of its publications were free PDF downloads to members and non-members alike?",
+    "options": [
+      "The two framework books",
+      "The framework introduction and the Design Guide",
+      "The Design Guide and the Implementation Guide",
+      "The objectives book and the Implementation Guide"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At launch, Introduction and Methodology and Governance and Management Objectives were free PDF downloads for everyone, while the Design Guide and Implementation Guide were free downloads for members. ISACA later listed all four as complimentary downloads."
+  },
+  {
+    "id": "COBIT-D-015",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Matching principles",
+    "stem": "Focus areas can be added to COBIT as new topics emerge. Which principle makes this possible?",
+    "options": [
+      "Governance distinct from management",
+      "End-to-end governance system",
+      "Open and flexible",
+      "Provide stakeholder value"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Open and flexible is the framework principle that allows new content and new issues to be added while keeping the framework consistent."
+  },
+  {
+    "id": "COBIT-D-016",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers defining what the business needs from a new solution before it is built or bought?",
+    "options": [
+      "APO04 Managed Innovation",
+      "BAI11 Managed Projects",
+      "BAI02 Managed Requirements Definition",
+      "BAI03 Managed Solutions Identification and Build"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BAI02 covers identifying and defining requirements. BAI03 identifies and builds the solution that meets them."
+  },
+  {
+    "id": "COBIT-D-017",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Design starting point",
+    "stem": "From what does the design of a tailored governance system start?",
+    "options": [
+      "The previous year's audit plan",
+      "A blank list of processes",
+      "The COBIT core model",
+      "A vendor's reference model"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tailoring starts from the COBIT core model and adapts it to the enterprise's priorities, using the design factors."
+  },
+  {
+    "id": "COBIT-D-018",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scope",
+    "stem": "Why should a governance improvement program set attainable objectives?",
+    "options": [
+      "So capability targets can all be set to level 5",
+      "So the program needs no business case",
+      "So the program can skip the current-state assessment",
+      "So the enterprise can absorb the planned change"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ISACA advises that programs be properly scoped with objectives the enterprise can absorb. Too much change at once overwhelms the people who must adopt it."
+  },
+  {
+    "id": "COBIT-D-019",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Which component holds the practices and activities that achieve an objective?",
+    "options": [
+      "Principles, policies and procedures",
+      "Processes",
+      "Information",
+      "Organizational structures"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A process is an organized set of practices and activities to achieve certain objectives. It is the process component that carries them."
+  },
+  {
+    "id": "COBIT-D-020",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholder drivers",
+    "stem": "Which is an example of a stakeholder driver that enters the goals cascade?",
+    "options": [
+      "Rating a practice as largely achieved",
+      "Reaching capability level 3",
+      "Reducing operational costs",
+      "Assigning a RACI chart"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stakeholder drivers and needs include improving efficiency, reducing operational costs, faster delivery and increasing revenue. Capability levels and ratings belong to performance management."
+  },
+  {
+    "id": "COBIT-D-021",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers agreeing I&T performance targets with the business and tracking them?",
+    "options": [
+      "APO09 Managed Service Agreements",
+      "APO10 Managed Vendors",
+      "DSS01 Managed Operations",
+      "APO08 Managed Relationships"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "APO09 Managed Service Agreements aligns I&T services and service levels with business needs. APO10 manages the vendors behind them."
+  },
+  {
+    "id": "COBIT-D-022",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Governance standard",
+    "stem": "COBIT's governance objectives follow evaluate, direct and monitor. Which international standard uses the same model?",
+    "options": [
+      "ISO/IEC 38500",
+      "ISO/IEC 20000",
+      "ISO 9001",
+      "ISO/IEC 27001"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ISO/IEC 38500 on governance of IT for the organization uses the evaluate, direct and monitor model that COBIT's EDM domain follows. ISO/IEC 27001 is information security management and ISO/IEC 20000 is service management."
+  },
+  {
+    "id": "COBIT-D-023",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Matching principles",
+    "stem": "Which principle is reflected in COBIT keeping governance objectives in their own domain, EDM?",
+    "options": [
+      "Based on a conceptual model",
+      "Aligned to major standards",
+      "Governance distinct from management",
+      "Holistic approach"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The EDM domain holds the five governance objectives, and the four other domains hold the management objectives. That split reflects governance distinct from management."
+  },
+  {
+    "id": "COBIT-D-024",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Level 3",
+    "stem": "Which capability level describes a process that achieves its purpose in a more organized way using organizational assets?",
+    "options": [
+      "Level 2",
+      "Level 4",
+      "Level 1",
+      "Level 3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Level 3 means the process uses organizational assets and is, in general, well defined. Level 2 is a basic but complete set of activities."
+  },
+  {
+    "id": "COBIT-D-025",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers hiring, developing and keeping I&T staff with the right skills?",
+    "options": [
+      "APO01 Managed I&T Management Framework",
+      "EDM04 Ensured Resource Optimization",
+      "APO07 Managed Human Resources",
+      "BAI08 Managed Knowledge"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "APO07 Managed Human Resources covers the I&T workforce. EDM04 is the governance objective for resources as a whole, including people."
+  },
+  {
+    "id": "COBIT-D-026",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Count of activities",
+    "stem": "Roughly how many activities do the 40 objectives of the COBIT 2019 core model contain in total?",
+    "options": [
+      "About 40",
+      "About 1,200",
+      "About 230",
+      "About 400"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The core model has about 1,202 activities grouped into 231 practices across the 40 objectives, each activity with an expected capability level."
+  },
+  {
+    "id": "COBIT-D-027",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mapping tables",
+    "stem": "In COBIT 2019's mapping tables, what do P and S mean?",
+    "options": [
+      "Process and structure components",
+      "Primary and secondary relationships",
+      "Planned and spent budgets",
+      "Practice and subpractice IDs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mapping tables between enterprise goals, alignment goals and objectives mark each relationship as primary (P) or secondary (S)."
+  },
+  {
+    "id": "COBIT-D-028",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Refined scope",
+    "stem": "In which design step are the threat landscape, role of IT and sourcing model considered?",
+    "options": [
+      "Refining the scope of the governance system",
+      "Understanding the enterprise context and strategy",
+      "Determining the initial scope of the governance system",
+      "Resolving conflicts and concluding the design"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The initial scope uses strategy, goals, risk profile and I&T-related issues. Threat landscape, compliance, role of IT, sourcing, methods, technology adoption and size refine it."
+  },
+  {
+    "id": "COBIT-D-029",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Phase 3",
+    "stem": "A team picks the objectives that matter most and the capability levels it wants for them. Which phase is this?",
+    "options": [
+      "Phase 3, Where do we want to be?",
+      "Phase 2, Where are we now?",
+      "Phase 4, What needs to be done?",
+      "Phase 6, Did we get there?"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Setting priorities and target capability levels defines the desired state, the work of phase 3."
+  },
+  {
+    "id": "COBIT-D-030",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers protecting information with controls such as malware defence and access management?",
+    "options": [
+      "APO13 Managed Security",
+      "DSS06 Managed Business Process Controls",
+      "BAI10 Managed Configuration",
+      "DSS05 Managed Security Services"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "DSS05 Managed Security Services runs the operational security controls. APO13 Managed Security defines and maintains the information security management system."
+  },
+  {
+    "id": "COBIT-D-031",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "New technology",
+    "stem": "Which of these did ISACA add to COBIT 2019 to address newer ways of working?",
+    "options": [
+      "ISO 9001 quality audits",
+      "DevOps and Agile concepts",
+      "Waterfall gate reviews",
+      "Six Sigma process charts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 2019 addresses newer trends: DevOps and Agile, off-premises operations, third-party providers and more detail on outsourcing. DevOps also has its own focus area."
+  },
+  {
+    "id": "COBIT-D-032",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Matching principles",
+    "stem": "A small firm adopts only the objectives and components that its strategy and risk call for. Which principle does it follow?",
+    "options": [
+      "Tailored to enterprise needs",
+      "End-to-end governance system",
+      "Aligned to major standards",
+      "Holistic approach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tailoring to enterprise needs means using design factors such as size and risk profile to choose and prioritize what the governance system includes."
+  },
+  {
+    "id": "COBIT-D-033",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Performance management scope",
+    "stem": "In COBIT 2019, which components does performance management cover?",
+    "options": [
+      "Processes only",
+      "Organizational structures only",
+      "Processes and information only",
+      "All seven types"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "COBIT 2019 extends performance management to cover all seven component types, not only processes as in COBIT 5."
+  },
+  {
+    "id": "COBIT-D-034",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Open-ended",
+    "stem": "What makes COBIT 2019 open-ended, according to ISACA?",
+    "options": [
+      "Focus areas",
+      "The goals cascade",
+      "Mapping tables",
+      "Capability levels"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ISACA says focus areas make COBIT open-ended: there can be virtually any number of them, and new ones are added as topics emerge."
+  },
+  {
+    "id": "COBIT-D-035",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective covers watching for new technology and finding ways to use it for the business?",
+    "options": [
+      "APO04 Managed Innovation",
+      "APO03 Managed Enterprise Architecture",
+      "BAI03 Managed Solutions Identification and Build",
+      "APO02 Managed Strategy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "APO04 Managed Innovation keeps track of emerging technology and how it could benefit the enterprise. APO02 sets the overall I&T strategy."
+  },
+  {
+    "id": "COBIT-D-036",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitBusinessCase",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Benefits",
+    "stem": "Which item belongs in the benefits section of a governance business case?",
+    "options": [
+      "The capability level each process reached last year",
+      "The names of the staff assigned to each project",
+      "Lower I&T-related risk and better value from I&T",
+      "The detailed RACI chart for each new practice"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Benefits describe the value expected, such as reduced I&T-related risk and better value from investments, which ties back to EGIT's benefits, risk and resource optimization."
+  },
+  {
+    "id": "COBIT-D-037",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Level achieved",
+    "stem": "When is a capability level considered achieved?",
+    "options": [
+      "When the target from the design toolkit is set",
+      "When every activity at all five levels is fully achieved",
+      "When the process owner signs off the activities",
+      "When its activities are rated largely or fully achieved"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A capability level is reached when the activities at that level are rated largely or fully achieved, that is, over 50 percent."
+  },
+  {
+    "id": "COBIT-D-038",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Practices",
+    "stem": "Exercise, test and review the BCP and DRP is a practice of which objective?",
+    "options": [
+      "MEA04 Managed Assurance",
+      "DSS01 Managed Operations",
+      "DSS04 Managed Continuity",
+      "BAI04 Managed Availability and Capacity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DSS04.04 is exercise, test and review the BCP and DRP. Other DSS04 practices cover the continuity policy, resilience, the response, training, backups and post-resumption review."
+  },
+  {
+    "id": "COBIT-D-039",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "I&T-related issues",
+    "stem": "What are I&T-related issues in the COBIT 2019 design factors?",
+    "options": [
+      "Pain points the enterprise is suffering from with I&T",
+      "Goals that the I&T function sets for itself",
+      "Risks the enterprise expects to face but has not yet seen",
+      "Ratings from last year's capability assessment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "I&T-related issues are current pain points, problems that have already happened, such as poor service from an outsourcer. The risk profile covers the I&T risk the enterprise is exposed to."
+  },
+  {
+    "id": "COBIT-D-040",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitImplementation",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Measuring progress",
+    "stem": "In phase 7, How do we keep the momentum going?, how does ISACA guidance say each win, loss or near win should be shown?",
+    "options": [
+      "By measurements",
+      "By an external certification",
+      "By a new COBIT edition",
+      "By vendor testimonials"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ISACA's transition guidance says to prove every win, loss or near win by measurements in phase 7, alongside lessons-learned sessions. Metrics such as KPIs, reported and monitored regularly, show whether changes worked and where to go next."
+  },
+  {
+    "id": "COBIT-D-041",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitIntro",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Core model",
+    "stem": "Which COBIT 2019 term replaced the process reference model of COBIT 5?",
+    "options": [
+      "The focus area model",
+      "The COBIT Core Model",
+      "The Design Guide Toolkit",
+      "The goals cascade"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "COBIT 5's process reference model became the COBIT Core Model in COBIT 2019, with 40 governance and management objectives instead of 37 processes."
+  },
+  {
+    "id": "COBIT-D-042",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitPrinciples",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Framework principles",
+    "stem": "Which pair are both governance framework principles?",
+    "options": [
+      "Holistic approach, and based on a conceptual model",
+      "Open and flexible, and based on a conceptual model",
+      "Dynamic governance system, and aligned to standards",
+      "Open and flexible, and tailored to enterprise needs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The framework principles are based on a conceptual model, open and flexible, and aligned to major standards, frameworks and regulations. Holistic approach, tailored to enterprise needs and dynamic governance system are system principles."
+  },
+  {
+    "id": "COBIT-D-043",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitComponents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Identify the component",
+    "stem": "Which component would a data dictionary and a master data record belong to?",
+    "options": [
+      "Information",
+      "Services, infrastructure and applications",
+      "Processes",
+      "Principles, policies and procedures"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Information items of any kind, including data and reports, belong to the information component. The databases that store them are infrastructure and applications."
+  },
+  {
+    "id": "COBIT-D-044",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitCascade",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Focus area guides",
+    "stem": "Which is a COBIT 2019 focus area guide ISACA has published?",
+    "options": [
+      "Threat Landscape",
+      "Information and Technology Risk",
+      "Alignment Goals",
+      "Managed Service Agreements"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ISACA has published focus area guides including Information Security, Information and Technology Risk, DevOps and Small and Medium Enterprises. Managed Service Agreements is APO09."
+  },
+  {
+    "id": "COBIT-D-045",
+    "section": "cobit",
+    "test": 0,
+    "module": 1,
+    "domain": "cobitObjectives",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Match the objective",
+    "stem": "Which objective keeps I&T spending within agreed limits and allocates it?",
+    "options": [
+      "EDM02 Ensured Benefits Delivery",
+      "EDM04 Ensured Resource Optimization",
+      "APO05 Managed Portfolio",
+      "APO06 Managed Budget and Costs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "APO06 Managed Budget and Costs covers budgeting and cost allocation for I&T. EDM02 is about ensuring investments deliver value."
+  }
+]

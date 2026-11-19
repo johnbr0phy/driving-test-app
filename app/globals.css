@@ -5536,6 +5536,46 @@
     --brand-gradient-to: 120 50% 95%;
   }
 
+  [data-theme="dispatcher"] {
+    --brand: 321 100% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 321 50% 95%;
+    --brand-hover: 321 100% 15%;
+    --brand-dark: 321 100% 13%;
+    --brand-darker: 321 90% 9%;
+    --brand-muted: 321 25% 70%;
+    --brand-border: 321 30% 78%;
+    --brand-border-light: 321 30% 88%;
+    --brand-gradient-to: 336 50% 95%;
+  }
+
+  [data-theme="cpaisc"] {
+    --brand: 303 75% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 303 50% 95%;
+    --brand-hover: 303 75% 17%;
+    --brand-dark: 303 75% 15%;
+    --brand-darker: 303 70% 10%;
+    --brand-muted: 303 25% 70%;
+    --brand-border: 303 30% 78%;
+    --brand-border-light: 303 30% 88%;
+    --brand-gradient-to: 318 50% 95%;
+  }
+
+  /* California CTEC tax preparer theme: muted periwinkle blue */
+  [data-theme="ctec"] {
+    --brand: 230 35% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 230 50% 95%;
+    --brand-hover: 230 35% 43%;
+    --brand-dark: 230 35% 41%;
+    --brand-darker: 230 30% 36%;
+    --brand-muted: 230 25% 70%;
+    --brand-border: 230 30% 78%;
+    --brand-border-light: 230 30% 88%;
+    --brand-gradient-to: 245 50% 95%;
+  }
+
   [data-theme="ea1"] {
     --brand: 39 85% 20%;
     --brand-foreground: 0 0% 100%;
@@ -5625,6 +5665,214 @@
     --brand-border: 287 35% 80%;
     --brand-border-light: 287 30% 89%;
     --brand-gradient-to: 300 60% 96%;
+  }
+  /* Backflow prevention assembly tester theme: deep valve green */
+  [data-theme="backflow"] {
+    --brand: 124 100% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 124 70% 96%;
+    --brand-hover: 124 100% 20%;
+    --brand-dark: 124 100% 16%;
+    --brand-darker: 124 90% 11%;
+    --brand-muted: 124 35% 70%;
+    --brand-border: 124 35% 80%;
+    --brand-border-light: 124 30% 89%;
+    --brand-gradient-to: 134 60% 96%;
+  }
+  /* Pesticide applicator core exam theme: dark field olive */
+  [data-theme="pesticide"] {
+    --brand: 70 80% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 70 60% 95%;
+    --brand-hover: 70 80% 14%;
+    --brand-dark: 70 80% 12%;
+    --brand-darker: 70 80% 8%;
+    --brand-muted: 70 35% 68%;
+    --brand-border: 70 35% 78%;
+    --brand-border-light: 70 30% 88%;
+    --brand-gradient-to: 80 60% 94%;
+  }
+  /* Bowhunter education theme: dark chestnut bark */
+  [data-theme="bowhunter"] {
+    --brand: 14 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 14 60% 95%;
+    --brand-hover: 14 50% 14%;
+    --brand-dark: 14 50% 12%;
+    --brand-darker: 14 50% 8%;
+    --brand-muted: 14 30% 68%;
+    --brand-border: 14 30% 78%;
+    --brand-border-light: 14 30% 88%;
+    --brand-gradient-to: 24 60% 94%;
+  }
+  /* Trapper education theme: dark muddy marsh brown */
+  [data-theme="trapper"] {
+    --brand: 48 40% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 60% 95%;
+    --brand-hover: 48 40% 16%;
+    --brand-dark: 48 40% 13%;
+    --brand-darker: 48 40% 9%;
+    --brand-muted: 48 30% 68%;
+    --brand-border: 48 30% 78%;
+    --brand-border-light: 48 30% 88%;
+    --brand-gradient-to: 58 60% 94%;
+  }
+  /* Ireland plumbing apprenticeship Phase 2 theme: deep slate pipe blue */
+  [data-theme="ieplumbt2"] {
+    --brand: 228 40% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 228 60% 95%;
+    --brand-hover: 228 40% 16%;
+    --brand-dark: 228 40% 13%;
+    --brand-darker: 228 40% 9%;
+    --brand-muted: 228 30% 68%;
+    --brand-border: 228 30% 78%;
+    --brand-border-light: 228 30% 88%;
+    --brand-gradient-to: 238 60% 94%;
+  }
+  /* CPB (AAPC) Certified Professional Biller theme: electric blue violet */
+  [data-theme="cpb"] {
+    --brand: 252 95% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 80% 97%;
+    --brand-hover: 252 95% 42%;
+    --brand-dark: 252 95% 34%;
+    --brand-darker: 252 90% 22%;
+    --brand-muted: 252 50% 72%;
+    --brand-border: 252 60% 82%;
+    --brand-border-light: 252 60% 90%;
+    --brand-gradient-to: 266 80% 97%;
+  }
+  /* CBCS (NHA) Certified Billing and Coding Specialist theme: muted orchid rose */
+  [data-theme="cbcs"] {
+    --brand: 322 45% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 322 45% 97%;
+    --brand-hover: 322 45% 42%;
+    --brand-dark: 322 45% 34%;
+    --brand-darker: 322 45% 22%;
+    --brand-muted: 322 30% 72%;
+    --brand-border: 322 35% 82%;
+    --brand-border-light: 322 35% 90%;
+    --brand-gradient-to: 336 45% 97%;
+  }
+  /* Home health aide theme: deep violet (280 90% 20%) */
+  [data-theme="hha"] {
+    --brand: 280 90% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 70% 97%;
+    --brand-hover: 280 90% 16%;
+    --brand-dark: 280 90% 14%;
+    --brand-darker: 280 85% 9%;
+    --brand-muted: 280 30% 72%;
+    --brand-border: 280 35% 82%;
+    --brand-border-light: 280 35% 90%;
+    --brand-gradient-to: 290 70% 97%;
+  }
+  /* Title insurance agent theme: vivid violet (296 100% 36%) */
+  [data-theme="titleagent"] {
+    --brand: 296 100% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 296 80% 97%;
+    --brand-hover: 296 100% 30%;
+    --brand-dark: 296 100% 23%;
+    --brand-darker: 296 90% 15%;
+    --brand-muted: 296 55% 72%;
+    --brand-border: 296 65% 83%;
+    --brand-border-light: 296 60% 91%;
+    --brand-gradient-to: 280 80% 97%;
+  }
+  /* FPC (Fundamental Payroll Certification) theme: deep aubergine (291 100% 19%) */
+  [data-theme="fpc"] {
+    --brand: 291 100% 19%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 291 60% 96%;
+    --brand-hover: 291 100% 15%;
+    --brand-dark: 291 100% 13%;
+    --brand-darker: 291 100% 9%;
+    --brand-muted: 291 35% 70%;
+    --brand-border: 291 40% 80%;
+    --brand-border-light: 291 35% 90%;
+    --brand-gradient-to: 300 55% 95%;
+  }
+  /* ASWB Bachelors theme: raspberry (337 100% 42%) */
+  [data-theme="aswbbach"] {
+    --brand: 337 100% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 337 80% 97%;
+    --brand-hover: 337 100% 36%;
+    --brand-dark: 337 100% 27%;
+    --brand-darker: 337 90% 17%;
+    --brand-muted: 337 55% 72%;
+    --brand-border: 337 65% 83%;
+    --brand-border-light: 337 60% 91%;
+    --brand-gradient-to: 350 80% 97%;
+  }
+  /* AAPC CRC theme: burnt vermilion (20 90% 40%) */
+  [data-theme="crc"] {
+    --brand: 20 90% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 20 80% 97%;
+    --brand-hover: 20 90% 34%;
+    --brand-dark: 20 90% 26%;
+    --brand-darker: 20 85% 16%;
+    --brand-muted: 20 50% 70%;
+    --brand-border: 20 60% 82%;
+    --brand-border-light: 20 60% 90%;
+    --brand-gradient-to: 34 80% 97%;
+  }
+  /* COBIT 2019 Foundation theme: vivid magenta (v2 exam; matches lib/v2/exams/cobit.ts theme) */
+  [data-theme="cobit"] {
+    --brand: 324 100% 34%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 324 80% 97%;
+    --brand-hover: 324 100% 29%;
+    --brand-dark: 324 100% 25%;
+    --brand-darker: 324 90% 16%;
+    --brand-muted: 324 50% 72%;
+    --brand-border: 324 60% 82%;
+    --brand-border-light: 324 60% 90%;
+    --brand-gradient-to: 338 80% 97%;
+  }
+  /* Microsoft AI-901 theme: muted violet (v2 exam; matches lib/v2/exams/ai901.ts theme) */
+  [data-theme="ai901"] {
+    --brand: 258 55% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 258 55% 96%;
+    --brand-hover: 258 55% 31%;
+    --brand-dark: 258 55% 26%;
+    --brand-darker: 258 50% 17%;
+    --brand-muted: 258 35% 70%;
+    --brand-border: 258 40% 82%;
+    --brand-border-light: 258 40% 90%;
+    --brand-gradient-to: 238 50% 96%;
+  }
+  /* Juniper JNCIA-Junos theme: deep forest green (v2 exam; matches lib/v2/exams/jncia.ts theme) */
+  [data-theme="jncia"] {
+    --brand: 106 95% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 106 60% 96%;
+    --brand-hover: 106 95% 13%;
+    --brand-dark: 106 95% 12%;
+    --brand-darker: 106 85% 8%;
+    --brand-muted: 106 35% 70%;
+    --brand-border: 106 40% 82%;
+    --brand-border-light: 106 40% 90%;
+    --brand-gradient-to: 86 50% 96%;
+  }
+  /* Microsoft PL-900 theme: vivid Power Platform magenta (v2 exam; matches lib/v2/exams/pl900.ts theme) */
+  [data-theme="pl900"] {
+    --brand: 314 100% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 314 60% 96%;
+    --brand-hover: 314 100% 25%;
+    --brand-dark: 314 100% 22%;
+    --brand-darker: 314 90% 15%;
+    --brand-muted: 314 35% 70%;
+    --brand-border: 314 40% 82%;
+    --brand-border-light: 314 40% 90%;
+    --brand-gradient-to: 294 50% 96%;
   }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
@@ -11180,6 +11428,42 @@
     --brand-darker: 105 70% 78%;
   }
 
+  .dark [data-theme="dispatcher"] {
+    --brand: 321 100% 43.8%;
+    --brand-hover: 321 100% 35.8%;
+    --brand-light: 321 45% 13%;
+    --brand-gradient-to: 336 40% 11%;
+    --brand-border-light: 321 30% 24%;
+    --brand-border: 321 30% 34%;
+    --brand-muted: 321 25% 45%;
+    --brand-dark: 321 100% 65%;
+    --brand-darker: 321 90% 78%;
+  }
+
+  .dark [data-theme="cpaisc"] {
+    --brand: 303 75% 45.8%;
+    --brand-hover: 303 75% 37.8%;
+    --brand-light: 303 45% 13%;
+    --brand-gradient-to: 318 40% 11%;
+    --brand-border-light: 303 30% 24%;
+    --brand-border: 303 30% 34%;
+    --brand-muted: 303 25% 45%;
+    --brand-dark: 303 75% 65%;
+    --brand-darker: 303 70% 78%;
+  }
+
+  .dark [data-theme="ctec"] {
+    --brand: 230 35% 50%;
+    --brand-hover: 230 35% 43%;
+    --brand-light: 230 45% 13%;
+    --brand-gradient-to: 245 40% 11%;
+    --brand-border-light: 230 30% 24%;
+    --brand-border: 230 30% 34%;
+    --brand-muted: 230 25% 45%;
+    --brand-dark: 230 35% 65%;
+    --brand-darker: 230 30% 78%;
+  }
+
   .dark [data-theme="ea1"] {
     --brand: 39 85% 33.4%;
     --brand-hover: 39 85% 25.4%;
@@ -11940,6 +12224,182 @@
     --brand-muted: 287 35% 45%;
     --brand-dark: 287 75% 65%;
     --brand-darker: 287 70% 78%;
+  }
+  .dark [data-theme="backflow"] {
+    --brand: 124 100% 26.8%;
+    --brand-hover: 124 100% 20%;
+    --brand-light: 124 45% 13%;
+    --brand-gradient-to: 134 40% 11%;
+    --brand-border-light: 124 30% 24%;
+    --brand-border: 124 35% 34%;
+    --brand-muted: 124 35% 45%;
+    --brand-dark: 124 100% 65%;
+    --brand-darker: 124 90% 78%;
+  }
+  .dark [data-theme="pesticide"] {
+    --brand: 70 80% 27.2%;
+    --brand-hover: 70 80% 19.2%;
+    --brand-light: 70 45% 13%;
+    --brand-gradient-to: 80 40% 11%;
+    --brand-border-light: 70 30% 24%;
+    --brand-border: 70 35% 34%;
+    --brand-muted: 70 35% 45%;
+    --brand-dark: 70 80% 65%;
+    --brand-darker: 70 80% 78%;
+  }
+  .dark [data-theme="bowhunter"] {
+    --brand: 14 50% 48%;
+    --brand-hover: 14 50% 40%;
+    --brand-light: 14 45% 13%;
+    --brand-gradient-to: 24 40% 11%;
+    --brand-border-light: 14 30% 24%;
+    --brand-border: 14 30% 34%;
+    --brand-muted: 14 30% 45%;
+    --brand-dark: 14 50% 65%;
+    --brand-darker: 14 50% 78%;
+  }
+  .dark [data-theme="trapper"] {
+    --brand: 48 40% 36.9%;
+    --brand-hover: 48 40% 28.9%;
+    --brand-light: 48 45% 13%;
+    --brand-gradient-to: 58 40% 11%;
+    --brand-border-light: 48 30% 24%;
+    --brand-border: 48 30% 34%;
+    --brand-muted: 48 30% 45%;
+    --brand-dark: 48 40% 65%;
+    --brand-darker: 48 40% 78%;
+  }
+  .dark [data-theme="titleagent"] {
+    --brand: 296 100% 42.7%;
+    --brand-hover: 296 100% 34.7%;
+    --brand-light: 296 45% 13%;
+    --brand-gradient-to: 280 40% 11%;
+    --brand-border-light: 296 35% 24%;
+    --brand-border: 296 40% 34%;
+    --brand-muted: 296 45% 45%;
+    --brand-dark: 296 100% 65%;
+    --brand-darker: 296 90% 78%;
+  }
+  .dark [data-theme="fpc"] {
+    --brand: 291 100% 45.6%;
+    --brand-hover: 291 100% 37.6%;
+    --brand-light: 291 45% 13%;
+    --brand-gradient-to: 300 40% 11%;
+    --brand-border-light: 291 35% 24%;
+    --brand-border: 291 40% 34%;
+    --brand-muted: 291 35% 45%;
+    --brand-dark: 291 100% 65%;
+    --brand-darker: 291 100% 78%;
+  }
+  .dark [data-theme="aswbbach"] {
+    --brand: 337 100% 45.4%;
+    --brand-hover: 337 100% 37.4%;
+    --brand-light: 337 45% 13%;
+    --brand-gradient-to: 350 40% 11%;
+    --brand-border-light: 337 35% 24%;
+    --brand-border: 337 40% 34%;
+    --brand-muted: 337 45% 45%;
+    --brand-dark: 337 100% 65%;
+    --brand-darker: 337 90% 78%;
+  }
+  .dark [data-theme="crc"] {
+    --brand: 20 90% 42%;
+    --brand-hover: 20 90% 34%;
+    --brand-light: 20 45% 13%;
+    --brand-gradient-to: 34 40% 11%;
+    --brand-border-light: 20 35% 24%;
+    --brand-border: 20 40% 34%;
+    --brand-muted: 20 45% 45%;
+    --brand-dark: 20 90% 65%;
+    --brand-darker: 20 85% 78%;
+  }
+  .dark [data-theme="jncia"] {
+    --brand: 106 95% 27.2%;
+    --brand-hover: 106 95% 19.2%;
+    --brand-light: 106 45% 13%;
+    --brand-gradient-to: 86 40% 11%;
+    --brand-border-light: 106 35% 24%;
+    --brand-border: 106 40% 34%;
+    --brand-muted: 106 35% 45%;
+    --brand-dark: 106 95% 65%;
+    --brand-darker: 106 85% 78%;
+  }
+  .dark [data-theme="pl900"] {
+    --brand: 314 100% 42.8%;
+    --brand-hover: 314 100% 34.8%;
+    --brand-light: 314 45% 13%;
+    --brand-gradient-to: 294 40% 11%;
+    --brand-border-light: 314 35% 24%;
+    --brand-border: 314 40% 34%;
+    --brand-muted: 314 35% 45%;
+    --brand-dark: 314 100% 65%;
+    --brand-darker: 314 90% 78%;
+  }
+  .dark [data-theme="ai901"] {
+    --brand: 258 55% 50%;
+    --brand-hover: 258 55% 42%;
+    --brand-light: 258 45% 13%;
+    --brand-gradient-to: 238 40% 11%;
+    --brand-border-light: 258 35% 24%;
+    --brand-border: 258 40% 34%;
+    --brand-muted: 258 35% 45%;
+    --brand-dark: 258 55% 65%;
+    --brand-darker: 258 50% 78%;
+  }
+  .dark [data-theme="cobit"] {
+    --brand: 324 100% 44.1%;
+    --brand-hover: 324 100% 36.1%;
+    --brand-light: 324 45% 13%;
+    --brand-gradient-to: 338 40% 11%;
+    --brand-border-light: 324 35% 24%;
+    --brand-border: 324 40% 34%;
+    --brand-muted: 324 45% 45%;
+    --brand-dark: 324 100% 65%;
+    --brand-darker: 324 90% 78%;
+  }
+  .dark [data-theme="cpb"] {
+    --brand: 252 95% 50%;
+    --brand-hover: 252 95% 42%;
+    --brand-light: 252 45% 13%;
+    --brand-gradient-to: 266 40% 11%;
+    --brand-border-light: 252 35% 24%;
+    --brand-border: 252 40% 34%;
+    --brand-muted: 252 45% 45%;
+    --brand-dark: 252 95% 70%;
+    --brand-darker: 252 90% 78%;
+  }
+  .dark [data-theme="cbcs"] {
+    --brand: 322 45% 50%;
+    --brand-hover: 322 45% 42%;
+    --brand-light: 322 45% 13%;
+    --brand-gradient-to: 336 40% 11%;
+    --brand-border-light: 322 35% 24%;
+    --brand-border: 322 35% 34%;
+    --brand-muted: 322 30% 45%;
+    --brand-dark: 322 45% 65%;
+    --brand-darker: 322 45% 78%;
+  }
+  .dark [data-theme="hha"] {
+    --brand: 280 90% 50%;
+    --brand-hover: 280 90% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 290 40% 11%;
+    --brand-border-light: 280 35% 24%;
+    --brand-border: 280 35% 34%;
+    --brand-muted: 280 30% 45%;
+    --brand-dark: 280 90% 65%;
+    --brand-darker: 280 85% 78%;
+  }
+  .dark [data-theme="ieplumbt2"] {
+    --brand: 228 40% 50%;
+    --brand-hover: 228 40% 42%;
+    --brand-light: 228 45% 13%;
+    --brand-gradient-to: 238 40% 11%;
+    --brand-border-light: 228 30% 24%;
+    --brand-border: 228 30% 34%;
+    --brand-muted: 228 30% 45%;
+    --brand-dark: 228 40% 65%;
+    --brand-darker: 228 40% 78%;
   }
   .dark [data-theme="natecore"] {
     --brand: 290 20% 50%;

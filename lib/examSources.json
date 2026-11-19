@@ -54,6 +54,11 @@
   "https://karnatakahelp.in/wp-content/uploads/2026/01/Air-Force-Agniveer-Vayu-Intake-01_2027-Detailed-Notification.pdf",
   "https://www.pw.live/defence/exams/indian-air-force-agniveer-vayu-intake-02-2027-recruitment-2026"
  ],
+ "ai901": [
+  "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+  "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-901/",
+  "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-900/"
+ ],
  "aissee": [
   "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2025/10/20251010937989896.pdf",
   "https://exams.nta.nic.in/sainik-school-society/",
@@ -151,6 +156,11 @@
  "aswb": [
   "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf",
   "https://www.aswb.org/2026-blueprints/"
+ ],
+ "aswbbach": [
+  "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf",
+  "https://www.aswb.org/2026-blueprints/",
+  "https://www.socialworkers.org/About/Ethics/Code-of-Ethics/Code-of-Ethics-English"
  ],
  "aswbclin": [
   "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf",
@@ -250,6 +260,11 @@
   "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
   "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/"
  ],
+ "backflow": [
+  "https://asse-plumbing.org/personnel-certification/backflow-prevention/guidelines-and-forms/asse-backflow-instructor-guide",
+  "https://asse-plumbing.org/media/kqhbe40w/tester-ioc.pdf",
+  "https://asse-plumbing.org/media/o2ucmdfd/tester-directions.pdf"
+ ],
  "barber": [
   "https://prov-testing.github.io/nic_cib/barber_national_theory_english.html"
  ],
@@ -300,6 +315,11 @@
   "https://csbc.bihar.gov.in",
   "https://csbc.bihar.gov.in/Advt/Advt-01-2025-Constables.pdf",
   "https://csbc.bihar.gov.in/Advt/Notice%20-%2012-06-2025.pdf"
+ ],
+ "bowhunter": [
+  "https://nbef.org/wp-content/uploads/2023/06/IHEAUSA_HunterEduStd_Bow_Digital23.pdf",
+  "https://nbef.org/",
+  "https://www.bowhunter-ed.com/national/"
  ],
  "caab": [
   "https://open.alberta.ca/publications/drivers-guide",
@@ -447,6 +467,11 @@
   "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system.html",
   "https://www.ccohs.ca/oshanswers/chemicals/whmis_ghs/general.html"
  ],
+ "cbcs": [
+  "https://fs.hubspotusercontent00.net/hubfs/1430252/Test%20Plans/2021-nha-certified-billing-and-coding-specialist-(cbcs",
+  "https://staticcontent.nhanow.com/externalcontent/cbcs/resources/NHA_CBCS_TestPlan.pdf",
+  "https://www.nhanow.com/certifications/billing-coding"
+ ],
  "cbest": [
   "https://www.ctcexams.nesinc.com/TestView.aspx?f=HTML_FRAG/CA_CBEST_TestPage.html",
   "https://www.ctcexams.nesinc.com/content/docs/CBESTUpdatedTestSpecs.pdf",
@@ -540,6 +565,11 @@
   "https://www.nhanow.com/docs/default-source/test-plans/nha_cmaa_test_plan_2021.pdf",
   "https://www.nhanow.com/certifications/medical-administrative-assistant"
  ],
+ "cobit": [
+  "https://www.isaca.org/credentialing/cobit/cobit-foundation",
+  "https://www.isaca.org/credentialing/cobit-7-foundation",
+  "https://www.isaca.org/resources/cobit"
+ ],
  "cogat": [
   "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf",
   "https://riversideinsights.com/hubfs/CitC/Overview_of_CogAT_for_Parents.pdf",
@@ -565,6 +595,11 @@
   "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
   "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf"
  ],
+ "cpaisc": [
+  "https://assets.ctfassets.net/rb9cdnjh59cm/5d2r66sSSE8wJRZTqAshlE/f97ec39c394eeb61b20a5824784306df/CPA_Exam_Blueprints_2026.pdf",
+  "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam",
+  "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf"
+ ],
  "cpareg": [
   "https://assets.ctfassets.net/rb9cdnjh59cm/71s84dkfo3KEsoLlz4vv6G/f4314469ec5368b5b4dd0d0184f00a71/CPA_Exam_Blueprints_2026.pdf",
   "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam",
@@ -575,6 +610,11 @@
   "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam",
   "https://assets.ctfassets.net/rb9cdnjh59cm/5CsrSRU2mFGsmWEo9FqwLy/83e5ec97beab5daff376dba518589e75/Summary_of_Changes_to_the_Exam_Blueprints_effective_01012027.pdf"
  ],
+ "cpb": [
+  "https://www.aapc.com/certifications/cpb/taking-the-cpb-exam",
+  "https://www.aapc.com/certifications/cpb",
+  "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c01.pdf"
+ ],
  "cpc": [
   "https://aapc.com/certifications/cpc/taking-the-cpc-exam"
  ],
@@ -582,6 +622,11 @@
   "https://info.nhanow.com/hubfs/Products/Certified%20Patient%20Care%20Technician%20%28CPCT%29/Test%20Plan/2025/NHA%202025%20CPCT%20Test%20Plan.pdf",
   "https://info.nhanow.com/mediacenter/coming-soon-new-cpcta-certification-exam-study-materials",
   "https://info.nhanow.com/hubfs/Test%20Plans/nha-2018-cpct-test-plan-1.pdf"
+ ],
+ "crc": [
+  "https://www.aapc.com/certifications/crc/taking-the-crc-exam",
+  "https://www.cms.gov/files/document/2027-announcement.pdf",
+  "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement"
  ],
  "crfsc": [
   "https://rcmp.ca/en/firearms/firearms-safety-training-transport-and-storage/safety-courses",
@@ -597,6 +642,12 @@
   "https://www.asq.org/cert/six-sigma-green-belt",
   "https://www.asq.org/cert/resource/pdf/certification/cssgb-cert-insert.pdf",
   "https://www.asq.org/cert/resource/pdf/certification/cert-fact-sheet-cssgb.pdf"
+ ],
+ "ctec": [
+  "https://ctecstorage.blob.core.windows.net/public/CTEC%20-%20Qualifying%20Education%20%28QE%29%20Provider%20Application%20-%202026.pdf",
+  "https://ctecstorage.blob.core.windows.net/public/CTEC%20-%20Continuing%20Education%20%28CE%29%20Provider%20Application%20-%202026.pdf",
+  "https://ctec.org/taxpreparers/new-application/",
+  "https://ctec.org/education-providers/"
  ],
  "cuet": [
   "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/01/202601031633478370.pdf",
@@ -642,6 +693,11 @@
   "https://www.tuev-nord.de/en/services/driving-licence-and-vehicle/theory-test/",
   "https://fahrerlaubnis.tuev-dekra.de/en/",
   "https://bmdv.bund.de/"
+ ],
+ "dispatcher": [
+  "https://www.apcointl.org/~documents/standard/31033-2025-public-safety-telecommunicator",
+  "https://www.apcointl.org/standards/standards-to-download/",
+  "https://www.apcointl.org/standards/3-103-3-2025-minimum-training-standards-for-public-safety-telecommunicators/"
  ],
  "dkindfoed": [
   "https://lex.dk/indf%C3%B8dsretspr%C3%B8ve",
@@ -781,6 +837,11 @@
   "https://training.fortinet.com/local/staticpage/view.php?page=nse_1",
   "https://training.fortinet.com/local/staticpage/view.php?page=library_cybersecurity-and-cloud-fundamentals"
  ],
+ "fpc": [
+  "https://payroll.org/certification/fundamental-payroll-certification-(fpc",
+  "https://info.payroll.org/pdfs/certification/fpc-ksa-outline02-09-05-26.pdf",
+  "https://payroll.org/certification/certification-faq"
+ ],
  "frcivique": [
   "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052381620",
   "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070158/LEGISCTA000042800838/",
@@ -868,6 +929,11 @@
  ],
  "gulfrn": [
   "https://dhp.moph.gov.qa/en/Pages/QualifyingExamination.aspx"
+ ],
+ "hha": [
+  "https://www.ecfr.gov/api/versioner/v1/full/2026-11-01/title-42.xml?part=484&section=484.80",
+  "https://doh.dc.gov/sites/default/files/dc/sites/doh/publication/attachments/2017%20HHA%20Candidate%20Handbook.pdf",
+  "https://kb-dchha.credentia.com/en/article/content-outline-home-health-aide"
  ],
  "hiset": [
   "https://hiset.org",
@@ -970,6 +1036,11 @@
   "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
   "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading",
   "https://ielts.idp.com/nepal/about/which-test-do-i-take/ielts-on-computer/reading-preparation"
+ ],
+ "ieplumbt2": [
+  "https://content.apprenticeship.ie/f/83224/x/4d1ad0289d/plumbing-v4-a4-brochure.pdf",
+  "https://www.solas.ie/f/70398/x/04d6f462bc/solas-craft-apprenticeship-assessment-rules-2023.pdf",
+  "https://www.qqi.ie/sites/default/files/media/file-uploads/Validation%20Report%20-%20SOLAS%2C%20five%20apprenticeship%20programmes%20leading%20to%20Advanced%20Certificate%20Craft%20Awards.pdf"
  ],
  "iepsa": [
   "https://qsearch.qqi.ie/WebPart/AwardDetails?awardCode=4N20604",
@@ -1085,6 +1156,11 @@
   "https://jkssb.nic.in/Pdf/ADVT08OF2025_27092025.pdf",
   "https://www.jkssb.nic.in/Pdf/Notice_24032026.pdf",
   "https://jkssb.nic.in/Pdf/Syllabus_JrAsstt_Steno_23122025.pdf"
+ ],
+ "jncia": [
+  "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14354",
+  "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14338",
+  "https://www.juniper.net/documentation/us/en/software/junos/junos-overview/topics/concept/junos-software-architecture.html"
  ],
  "jnvst": [
   "https://cbseitms.rcil.gov.in/nvs/assets/pdf/Final_Prospectus_2027.pdf",
@@ -1396,6 +1472,11 @@
   "https://lecbyo.files.cmp.optimizely.com/download/1e8cf0febef111efb260822b03028498",
   "https://www.comptia.jp/pdf/CompTIA%20PenTest%2B%20PT0-003%20Exam%20Objectives%20%283.0%29.pdf"
  ],
+ "pesticide": [
+  "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-40?part=171",
+  "https://www.epa.gov/pesticide-worker-safety/certification-standards-pesticide-applicators",
+  "https://www.michigan.gov/documents/mdard/National_Pesticide_Applicator_Core_Exam_Blueprint_505151_7.pdf"
+ ],
  "phcle": [
   "https://www.prc.gov.ph/sites/default/files/Crim%20Program%20of%20Exam%20August%202026.pdf",
   "https://www.prc.gov.ph/sites/default/files/Program%20of%20Exam%20Feb%202026%20LE%20for%20Criminologists.pdf",
@@ -1485,6 +1566,11 @@
   "https://pnmc.gov.pk/",
   "https://pnmc.gov.pk/pnmc-act/",
   "https://pnmc.gov.pk/wp-content/uploads/2023/09/PNMC-Amended-Act-2023.pdf"
+ ],
+ "pl900": [
+  "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900",
+  "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+  "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
  ],
  "pmp": [
   "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
@@ -1848,11 +1934,21 @@
   "https://doc.tgprb.in/SI+(Civil+et+al",
   "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf"
  ],
+ "titleagent": [
+  "https://aldoi.gov/PDF/Licensing/2023TitleOutline.pdf",
+  "https://aldoi.gov/Licensing/ExamOutlines.aspx",
+  "https://dam.assets.ohio.gov/image/upload/insurance.ohio.gov/Agent/Documents/PSI%20Candiate%20Handbook%20updated%208.1.23%5B51%5D.pdf"
+ ],
  "toeflread": [
   "https://www.eu.ets.org/pdfs/toefl/toefl-ibt-test-specifications-2026.pdf",
   "https://www.kr.ets.org/pdfs/toefl/toefl-ibt-test-overview.pdf",
   "https://www.ets.org/toefl/test-takers/ibt/about/content/reading.html",
   "https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html"
+ ],
+ "trapper": [
+  "https://www.fishwildlife.org/afwa-inspires/furbearer-management",
+  "https://www.fishwildlife.org/download_file/view/4323/1213",
+  "https://www.fishwildlife.org/download_file/view/3835/1213"
  ],
  "trcnpqe": [
   "https://trcn.gov.ng/pqe-curriculum",

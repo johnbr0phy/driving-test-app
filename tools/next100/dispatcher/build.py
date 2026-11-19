@@ -1,0 +1,44 @@
+"""Build data/dispatcher-questions.json from q_*.py (911 Public Safety Telecommunicator).
+Usage: python3 -I build.py [out]
+
+Each source holds CAT, SEG and Q, a list of (stem, key, [three wrong options], explanation).
+The key is authored first and placed in slot i % 4, so each letter lands near 25%.
+An item with a fifth element "fixed" lists all four options in their natural order (numbers,
+dates, durations ascending) with the key among them; its slot is wherever the key sits.
+"""
+import importlib.util, json, os, sys
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+ORDER = ["rol", "tec", "acc", "cal", "clr", "rad", "dsp", "nim"]
+POOLS = {"dispRole": 24, "dispTech": 28, "dispAccess": 20, "dispCall": 36,
+         "dispCaller": 24, "dispRadio": 24, "dispDispatch": 24, "dispNims": 20}
+out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "data", "dispatcher-questions.json")
+
+rows = []
+for m in ORDER:
+    p = os.path.join(HERE, "q_" + m + ".py")
+    spec = importlib.util.spec_from_file_location(m, p); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    for i, item in enumerate(mod.Q):
+        q, key, opts, expl = item[:4]
+        if len(item) == 5:
+            assert item[4] == "fixed", (m, i + 1)
+            assert len(opts) == 4 and opts.count(key) == 1, (m, i + 1, opts)
+            opts = list(opts); k = opts.index(key)
+        else:
+            assert len(opts) == 3 and key not in opts, (m, i + 1)
+            k = i % 4
+            opts = list(opts); opts.insert(k, key)
+        assert len(set(opts)) == 4, (m, i + 1, opts)
+        assert "—" not in q + expl + "".join(opts), (m, i + 1, "em dash")
+        rows.append({"type": "DISPATCH", "state": "ALL", "questionId": f"DISP-{mod.SEG}-{i+1:03d}",
+            "category": mod.CAT, "question": q, "optionA": opts[0], "optionB": opts[1], "optionC": opts[2],
+            "optionD": opts[3], "correctAnswer": "ABCD"[k], "correctIndex": k, "explanation": expl})
+
+for c, n in POOLS.items():
+    got = sum(1 for r in rows if r["category"] == c)
+    assert got == n, (c, got, n)
+
+with open(out, "w", encoding="utf-8") as f:
+    json.dump(rows, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+print(len(rows), "rows ->", out)

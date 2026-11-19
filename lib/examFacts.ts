@@ -169,6 +169,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "IRS Publications 6079 (Rev. 5-2026), 6012 (Rev. 3-2026) and 6026 and the IRS Annual Filing Season Program FAQs, checked November 2026",
     source: { name: "IRS: Annual Filing Season Program frequently asked questions", url: "https://www.irs.gov/tax-professionals/frequently-asked-questions-annual-filing-season-program" },
   },
+  ctec: {
+    answer:
+      "California requires anyone who prepares tax returns for a fee to register with the California Tax Education Council (CTEC) unless they are a California CPA, an enrolled agent or a State Bar attorney. A new preparer completes a 60-hour qualifying education course from a CTEC approved provider, 45 hours of federal tax subjects (2 of them ethics) and 15 hours of California tax law, which ends in a final exam. CTEC's provider standards require at least five multiple-choice questions per course hour, at least 300 in all, with the federal, ethics and California parts tested separately and 70 percent correct needed to pass. Within 18 months of the course the preparer registers with a Live Scan background check, an IRS PTIN and a $5,000 surety bond, then renews by October 31 each year with 20 hours of continuing education.",
+    rows: [
+      { label: "Course", value: "60 hours: 45 federal (2 ethics) and 15 California" },
+      { label: "Final exam", value: "At least 5 multiple-choice questions per hour, 300 or more" },
+      { label: "Passing score", value: "70% correct, each part tested separately" },
+      { label: "Given by", value: "CTEC approved education providers" },
+      { label: "Tax year covered", value: "2025 returns in this practice" },
+      { label: "Register within", value: "18 months of finishing the course" },
+      { label: "Also required", value: "Live Scan, IRS PTIN and a $5,000 surety bond" },
+      { label: "Renewal", value: "By October 31, with 20 CE hours (10 federal, 3 update, 2 ethics, 5 California)" },
+      { label: "Exempt", value: "California CPAs, enrolled agents and State Bar attorneys" },
+    ],
+    basedOn: "CTEC's 2026 qualifying education provider application with the CP23A curriculum guidelines (revised July 24, 2026), its new preparer and FAQ pages, and the 2025 IRS and Franchise Tax Board publications, checked November 2026",
+    source: { name: "CTEC: New preparer application", url: "https://ctec.org/taxpreparers/new-application/" },
+  },
   esthetician: {
     answer:
       "Most US states license estheticians (skin care specialists) and require a written theory exam and usually a practical exam. Many state boards use the NIC National Esthetics Theory Examination, developed by the National-Interstate Council of State Boards of Cosmetology. It has 110 multiple-choice questions, 100 of them scored, in 90 minutes, each with four options and one correct answer. The outline has two domains: Scientific Concepts, 55 percent (microbiology, infection control and safety, anatomy and physiology, the skin, skin disorders, hair and chemistry), and Skin Care and Services, 45 percent (consultation and skin analysis, facial procedures, electrical equipment, makeup, body treatments, lash and brow services, hair removal and advanced treatments). Each state board sets its passing score; many use 75. Training hours, fees, scope of practice and the practical exam vary by state, and some states use a different exam provider.",
@@ -211,6 +228,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ASCP BOC Medical Laboratory Scientist MLS(ASCP) and MLS(ASCPi) Examination Content Guideline (revised September 25, 2025), checked November 2026",
     source: { name: "ASCP BOC: MLS(ASCP) Examination Content Guideline", url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf" },
   },
+  cobit: {
+    answer:
+      "The ISACA COBIT 2019 Foundation exam has 75 multiple-choice questions in 2 hours, taken online with a remote proctor, and you need a score of 65 percent or higher to pass. There are no prerequisites. ISACA weights it by domain: Governance System and Components 30 percent, Governance and Management Objectives 23, Principles 13, Framework Introduction 12, Implementation 8, Designing a Tailored Governance System 7, Performance Management 4 and Business Case 3. ISACA replaced it with the COBIT 7 Foundation certificate on 19 November 2026, and the COBIT 2019 exam can still be bought until 30 June 2027.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "65 percent or higher" },
+      { label: "Biggest domain", value: "Governance System and Components, 30%" },
+      { label: "Delivery", value: "Online, remotely proctored" },
+      { label: "Last day to buy", value: "30 June 2027 (COBIT 7 Foundation replaces it)" },
+    ],
+    basedOn: "ISACA's COBIT Foundation certificate page and ISACA's public COBIT 2019 material, checked November 2026",
+    source: { name: "ISACA", url: "https://www.isaca.org/credentialing/cobit/cobit-foundation" },
+  },
   istqb: {
     answer:
       "The ISTQB Certified Tester Foundation Level (CTFL v4.0) exam has 40 multiple-choice questions worth one point each, and you need 26 points (65 percent) to pass. You have 60 minutes, or 75 minutes if you take it in a language that is not your native one. Questions come from six syllabus chapters: Fundamentals of Testing 8, Testing Throughout the SDLC 6, Static Testing 4, Test Analysis and Design 11, Managing the Test Activities 9 and Test Tools 2. The current syllabus document is v4.0.1.",
@@ -224,6 +255,140 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
+  },
+  crc: {
+    answer:
+      "The CRC exam is AAPC's certification test for risk adjustment coders. It has 100 multiple-choice questions in one 4-hour sitting, and you need 70 percent to pass, so more than 30 wrong answers fails. You may bring a current or prior year ICD-10-CM code book, and an on-screen calculator is provided. The questions cover eight domains: compliance (15), diagnosis coding (30), documentation improvement (12), pathophysiology, terminology and anatomy (5), purpose and use of risk adjustment models (10), quality of care (3), risk adjustment models such as CMS-HCC, ACA and CDPS (15) and coding cases at the end of the exam (10). You can take it at a testing center or at home with a live remote proctor.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% (no more than 30 wrong)" },
+      { label: "Code book", value: "ICD-10-CM only" },
+      { label: "Biggest domain", value: "Diagnosis coding, 30 questions" },
+      { label: "Where", value: "Testing center or live remote proctor" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the CRC exam page, checked November 2026",
+    source: { name: "AAPC: Taking the CRC exam", url: "https://www.aapc.com/certifications/crc/taking-the-crc-exam" },
+  },
+  hha: {
+    answer:
+      "The home health aide (HHA) competency evaluation is the test a home health aide must pass before caring for patients of a Medicare home health agency, under the federal rule 42 CFR 484.80. A registered nurse runs it, and it must cover every subject the rule lists: communication, vital signs, personal hygiene, transfers and range of motion are checked by watching the aide with a patient or stand-in, and the other subjects may be tested in writing, orally or by observation. States and agencies set their own written tests and pass marks. In the District of Columbia, for example, the written exam has 70 to 75 multiple-choice questions on four areas (role of the aide 25%, physical care 50%, psychosocial care 13%, household tasks 12%) plus a five-skill evaluation, and no passing percentage is published.",
+    rows: [
+      { label: "Rule", value: "42 CFR 484.80 (CMS home health Conditions of Participation)" },
+      { label: "Written part", value: "Set by each state or agency; DC: 70 to 75 multiple-choice questions" },
+      { label: "Skills part", value: "Observed by a registered nurse; DC: five skills, all must be Satisfactory" },
+      { label: "Passing score", value: "Varies; DC publishes none, NC recommends 80% for agency knowledge tests" },
+      { label: "Training", value: "At least 75 hours, with 16 classroom hours before 16 supervised practical hours" },
+      { label: "Fail rule", value: "Unsatisfactory in more than one required area fails the evaluation" },
+      { label: "In-service", value: "At least 12 hours every 12 months" },
+      { label: "Lapse", value: "24 months without paid aide work means a new program" },
+    ],
+    basedOn: "42 CFR 484.80, 484.50, 484.60 and 484.70 on eCFR, the DC Board of Nursing HHA candidate handbook and Credentia's DC HHA help center, and NC DHHS in-home aide testing directions, checked November 2026",
+    source: { name: "eCFR: 42 CFR 484.80 Home health aide services", url: "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.80" },
+  },
+  cbcs: {
+    answer:
+      "The Certified Billing and Coding Specialist (CBCS) exam is the National Healthcareer Association's (NHA) certification exam for medical billing and coding specialists. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 3 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2020 job analysis, has four domains: Billing and Reimbursement 33 items, Coding and Coding Guidelines 32, Insurance Eligibility and Other Payer Requirements 20, and The Revenue Cycle and Regulatory Compliance 15. Since September 24, 2024 code books are not allowed; each coding question shows the information it needs. It is taken at a school, a PSI test center or by live remote proctoring.",
+    rows: [
+      { label: "Questions", value: "125 (100 scored, 25 pretest)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "390 on a 200 to 500 scale" },
+      { label: "Domains", value: "Billing and Reimbursement 33, Coding 32, Insurance Eligibility 20, Revenue Cycle and Compliance 15" },
+      { label: "Code books", value: "Not allowed since September 24, 2024" },
+      { label: "Eligibility", value: "Billing and coding program within 5 years, or diploma plus 1 year of supervised work in the last 3 years (or 2 in the last 5)" },
+      { label: "Where", value: "School, PSI test center or live remote proctoring" },
+      { label: "Retakes", value: "After 30 days; three attempts, then one year between attempts" },
+      { label: "Given by", value: "NHA" },
+    ],
+    basedOn: "NHA's CBCS test plan (2020 job analysis), CBCS FAQ (June 2025), certification page and Candidate Handbook (updated October 2026), checked November 2026",
+    source: { name: "NHA: Billing and Coding Specialist (CBCS)", url: "https://www.nhanow.com/certifications/billing-coding" },
+  },
+  cpb: {
+    answer:
+      "The CPB exam is AAPC's certification test for professional medical billers. It has 135 multiple-choice questions in one 4-hour sitting, and you need 70 percent, at least 95 correct, to pass. You may bring the approved AMA CPT Professional Edition, ICD-10-CM and HCPCS Level II code books, and an on-screen calculator is provided. The questions cover seven domains: types of insurance (29), billing regulations (17), HIPAA and compliance (7), reimbursement and collections (19), claims and billing (19), coding (10) and case analysis with source documents such as claim forms, payment policies and appeal letters (34). You can take it at a testing center or at home with a live remote proctor.",
+    rows: [
+      { label: "Questions", value: "135 multiple choice" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% (95 of 135)" },
+      { label: "Code books", value: "CPT Professional, ICD-10-CM, HCPCS Level II" },
+      { label: "Biggest domain", value: "Case analysis, 34 questions" },
+      { label: "Where", value: "Testing center or live remote proctor" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the CPB exam page, checked November 2026",
+    source: { name: "AAPC: Taking the CPB exam", url: "https://www.aapc.com/certifications/cpb/taking-the-cpb-exam" },
+  },
+  ieplumbt2: {
+    answer:
+      "Phase 2 of the SOLAS National Plumbing Apprenticeship is the first off-the-job phase: 21 weeks in an Education and Training Board (ETB) training centre. It has four modules: Thermal Processes and Mild Steel Pipework, Domestic Hot and Cold Water Services, Central Heating, and Communications and Team Leadership. Apprentices are assessed by theory exams, practical assessments and skills demonstrations, set centrally by SOLAS, marked out of 100 by the training centre and graded fail, pass, merit or distinction. The SOLAS pass grade is 50%; an apprentice who falls short is referred and may sit again. SOLAS does not publish the number of questions or the time for each theory paper. The whole apprenticeship takes at least four years and leads to a Level 6 Advanced Certificate Craft - Plumbing.",
+    rows: [
+      { label: "Run by", value: "SOLAS, delivered in ETB training centres" },
+      { label: "Phase 2 length", value: "21 weeks off the job" },
+      { label: "Modules", value: "Thermal processes and mild steel pipework; domestic hot and cold water; central heating; communications and team leadership" },
+      { label: "Assessment", value: "Theory exams, practical assessments and skills demonstrations" },
+      { label: "Pass grade", value: "50% (graded fail, pass, merit or distinction)" },
+      { label: "Question count and time", value: "Not published by SOLAS" },
+      { label: "Award at the end", value: "Level 6 Advanced Certificate Craft - Plumbing" },
+    ],
+    basedOn: "the SOLAS plumbing programme brochure and the SOLAS Craft Apprenticeship Assessment Rules (2023), checked November 2026",
+    source: { name: "SOLAS Craft Apprenticeship Assessment Rules", url: "https://www.solas.ie/f/70398/x/04d6f462bc/solas-craft-apprenticeship-assessment-rules-2023.pdf" },
+  },
+  trapper: {
+    answer:
+      "Trapper education is a course, not a single national exam. The Association of Fish and Wildlife Agencies (AFWA) runs the North American Trapper Education Program and publishes its manual, updated in 2022, so that state courses teach the same core content. Many states require first-time trappers to complete the course before buying a trapping license; each state runs its own course, often online followed by a field day, and sets its own test and passing score. The manual covers trapping's history and role, furbearer management, regulations, Best Management Practices, traps and equipment, selective water and land sets, cable devices, safety, running a trapline and handling fur.",
+    rows: [
+      { label: "Program", value: "North American Trapper Education Program (AFWA)" },
+      { label: "Course text", value: "AFWA Trapper Education Manual (2022)" },
+      { label: "Who requires it", value: "Many states, for first-time trappers; check your own" },
+      { label: "Question count and pass mark", value: "Set by each state's course" },
+      { label: "Formats", value: "Online course, classroom and field day, varying by state" },
+      { label: "Covers", value: "Management, BMPs, traps, sets, cable devices, safety, fur handling" },
+    ],
+    basedOn: "the AFWA Trapper Education Manual (2022) and the AFWA trapping Best Management Practices, checked November 2026",
+    source: { name: "Association of Fish and Wildlife Agencies", url: "https://www.fishwildlife.org/afwa-inspires/furbearer-management" },
+  },
+  bowhunter: {
+    answer:
+      "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or get a bowhunting license, so check your own. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",
+    rows: [
+      { label: "Program", value: "International Bowhunter Education Program (NBEF)" },
+      { label: "Content standard", value: "IHEA-USA bowhunter education standards" },
+      { label: "Who requires it", value: "Some states and provinces; check your own" },
+      { label: "Question count and pass mark", value: "Set by each state's course" },
+      { label: "Formats", value: "Online course or instructor-led class" },
+      { label: "Covers", value: "Equipment, crossbows, tree stands, shot placement, recovery, ethics" },
+    ],
+    basedOn: "the IHEA-USA bowhunter education standards (hosted by NBEF) and the NBEF-approved course study guide, checked November 2026",
+    source: { name: "National Bowhunter Education Foundation", url: "https://nbef.org/" },
+  },
+  pesticide: {
+    answer:
+      "Anyone who uses or supervises restricted use pesticides in the US must be certified by a state, tribe or federal agency under 40 CFR 171. Commercial applicators pass a written core exam on the general standards every applicator needs (label comprehension, safety, the environment, pests, pesticides, equipment, application methods, laws, supervising noncertified applicators and professionalism) plus an exam for each category of work; private applicators, who produce agricultural commodities, are certified to a similar general standard. Federal rules require the exam to be written and proctored, with photo ID (government-issued or another form the agency accepts) and only reference materials the agency approves, and commercial applicators must be at least 18. Each certifying authority sets its own question count, time limit and passing score. Certification lasts at most five years before recertification by exam or continuing education.",
+    rows: [
+      { label: "Who sets the exam", value: "Your state, tribal or federal certifying authority" },
+      { label: "Exam rules", value: "Written, proctored, photo ID required (40 CFR 171.103)" },
+      { label: "Minimum age", value: "18 for commercial applicators" },
+      { label: "Question count and pass mark", value: "Set by each certifying authority" },
+      { label: "Certification length", value: "5 years at most" },
+      { label: "Covers", value: "Labels, laws, IPM, formulations, toxicity, PPE, environment, storage, calibration" },
+    ],
+    basedOn: "40 CFR 171 (Certification of Pesticide Applicators, 2017 revision) and the National Pesticide Applicator Certification Core Manual, checked November 2026",
+    source: { name: "US EPA certification standards", url: "https://www.epa.gov/pesticide-worker-safety/certification-standards-pesticide-applicators" },
+  },
+  backflow: {
+    answer:
+      "Water suppliers and states require backflow prevention assemblies, such as reduced pressure principle assemblies, double checks and pressure vacuum breakers, to be tested by a certified backflow tester. ASSE International certifies testers under its 5110 standard: a candidate completes a tester course built on ASSE's 14 instructional objectives, then sits a written exam and a practical exam on real assemblies. ASSE's written exam instructions allow 2 hours, closed book with no notes or references, a calculator for math questions, one correct or best answer per question, grading by ASSE, and a passing score of 70% or better. ASSE does not publish the number of questions. California's State Water Resources Control Board recognized ASSE 5110 in June 2025. Many programs accept other certifications too, such as ABPA's, so check which your water supplier or state accepts.",
+    rows: [
+      { label: "Written exam time", value: "2 hours" },
+      { label: "Book rule", value: "Closed book; calculator allowed" },
+      { label: "Passing score", value: "70% or better" },
+      { label: "Practical exam", value: "Yes, field tests on real assemblies" },
+      { label: "Graded by", value: "ASSE International" },
+      { label: "Covers", value: "Cross-connections, hydraulics, assemblies, test kits, test procedures, troubleshooting, safety" },
+    ],
+    basedOn: "ASSE's tester course objectives and written exam instructions, checked November 2026",
+    source: { name: "ASSE backflow instructor guide", url: "https://asse-plumbing.org/personnel-certification/backflow-prevention/guidelines-and-forms/asse-backflow-instructor-guide" },
   },
   r410a: {
     answer:
@@ -558,6 +723,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PSI Candidate Information Bulletin for the IRS SEE (revised October 9, 2026) and the IRS enrolled agent FAQs, checked November 2026",
     source: { name: "IRS: Enrolled agents frequently asked questions", url: "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions" },
   },
+  cpaisc: {
+    answer:
+      "ISC, Information Systems and Controls, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. ISC runs 4 hours with 82 multiple-choice questions in two testlets of 41 and 6 task-based simulations; multiple choice is 60% of the score and simulations 40%, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026 it covers information systems and data management (35 to 45%), security, confidentiality and privacy (35 to 45%) and considerations for SOC engagements (15 to 25%); the 2027 changes only narrow its blockchain coverage.",
+    rows: [
+      { label: "Section time", value: "4 hours" },
+      { label: "Multiple-choice questions", value: "82, in two testlets of 41" },
+      { label: "Task-based simulations", value: "6" },
+      { label: "Score weighting", value: "60% MCQ, 40% simulations" },
+      { label: "Passing score", value: "75 on a 0 to 99 scale" },
+      { label: "Smallest area", value: "SOC engagements, 15 to 25%" },
+      { label: "Run by", value: "AICPA, with NASBA and state boards of accountancy" },
+    ],
+    basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
+    source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
   cpabar: {
     answer:
       "BAR, Business Analysis and Reporting, is one of the three Discipline sections of the Uniform CPA Examination; candidates take the three Core sections and one Discipline section of their choice. BAR runs 4 hours with 50 multiple-choice questions and 7 task-based simulations, each worth half the score, and scores are reported from 0 to 99 with 75 to pass. Under the AICPA's blueprint effective January 2026, with only one task reworded for 2027, it covers business analysis (40 to 50%), technical accounting and reporting (35 to 45%) and state and local governments (10 to 20%).",
@@ -636,6 +816,52 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the AICPA's Uniform CPA Examination Blueprints effective January 2026, its summary of 2027 changes and NASBA's score information, checked November 2026",
     source: { name: "AICPA: Learn what is tested on the CPA Exam", url: "https://www.aicpa-cima.com/resources/download/learn-what-is-tested-on-the-cpa-exam" },
+  },
+  jncia: {
+    answer:
+      "JNCIA-Junos (Junos, Associate) is Juniper Networks' entry-level certification for Junos OS, earned by passing exam JN0-106, which replaced JN0-105 on April 6, 2026. It covers networking fundamentals, Junos OS architecture (the Routing Engine and Packet Forwarding Engine), the CLI and configuration files, configuration basics, operational monitoring and maintenance, routing fundamentals, and routing policy and firewall filters, based on Junos OS 21.2. The exam has 65 multiple-choice questions in 90 minutes, in English, at Pearson VUE. Juniper reports pass or fail right after the exam and publishes no passing score. The certification is valid for three years, and there is no prerequisite.",
+    rows: [
+      { label: "Exam code", value: "JN0-106 (replaced JN0-105 on April 6, 2026)" },
+      { label: "Questions", value: "65 multiple choice" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "Not published; pass or fail shown at the end" },
+      { label: "Software", value: "Junos OS 21.2" },
+      { label: "Language", value: "English" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "Juniper Networks, through Pearson VUE" },
+    ],
+    basedOn: "the Juniper Learning Portal JNCIA-Junos exam page and certification news, checked November 2026",
+    source: { name: "Juniper: Junos, Associate (JNCIA-Junos)", url: "https://learningportal.juniper.net/juniper/user_activity_info.aspx?id=14354" },
+  },
+  pl900: {
+    answer:
+      "PL-900, Microsoft Power Platform Fundamentals, is Microsoft's beginner exam for people starting to build solutions with Power Platform, and the only exam for the Microsoft Certified: Power Platform Fundamentals certification. It covers the business value of Power Platform, Microsoft Dataverse and environment administration, Power Apps, Power Automate and agents in Microsoft Copilot Studio. The skills measured as of July 24, 2026 dropped Power BI and the separate Power Pages area and added Copilot Studio at 20 to 25 percent. Candidates have 45 minutes; Microsoft publishes no question count for PL-900. Scores run from 1 to 1000 and 700 is needed to pass. Microsoft says the English exam will be updated on December 18, 2026. It is offered in English and 11 other languages, and the price depends on the country where it is taken.",
+    rows: [
+      { label: "Time", value: "45 minutes, proctored" },
+      { label: "Questions", value: "Not published for PL-900" },
+      { label: "Passing score", value: "700 on a scale of 1 to 1000" },
+      { label: "Skill areas", value: "Business value 5-10%, environment 20-25%, Power Apps 20-25%, Power Automate 20-25%, Copilot Studio agents 20-25%" },
+      { label: "Next update", value: "English exam updated December 18, 2026" },
+      { label: "Languages", value: "English and 11 others, including Spanish, German, French and Japanese" },
+      { label: "Given by", value: "Microsoft" },
+    ],
+    basedOn: "the Microsoft Learn PL-900 study guide (skills measured as of July 24, 2026) and the Power Platform Fundamentals certification page, checked November 2026",
+    source: { name: "Microsoft Learn: Study guide for Exam PL-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900" },
+  },
+  ai901: {
+    answer:
+      "AI-901, Microsoft Azure AI Fundamentals, is Microsoft's beginner exam for people at the start of a career in AI solution development. It replaced AI-900, which Microsoft retired on June 30, 2026, and it is now the only exam for the Microsoft Certified: Azure AI Fundamentals certification. Unlike AI-900 it is hands on: candidates are expected to know Python syntax and Azure resources and to build small apps and agents in Microsoft Foundry. Fundamentals exams run 45 minutes, and Microsoft says most of its exams have 40 to 60 questions. Scores run from 1 to 1000 and 700 is needed to pass. The skills measured as of April 15, 2026 are Identify AI concepts and capabilities (40 to 45 percent) and Implement AI solutions by using Microsoft Foundry (55 to 60 percent). It is offered in English and 12 other languages, and the price depends on the country where it is taken.",
+    rows: [
+      { label: "Time", value: "45 minutes (Microsoft's length for fundamentals exams), proctored" },
+      { label: "Questions", value: "Not published for AI-901; Microsoft says most exams have 40 to 60" },
+      { label: "Passing score", value: "700 on a scale of 1 to 1000" },
+      { label: "Skill areas", value: "AI concepts and capabilities 40-45%, AI solutions with Microsoft Foundry 55-60%" },
+      { label: "Replaces", value: "AI-900, retired on June 30, 2026" },
+      { label: "Languages", value: "English and 12 others, including Japanese, Spanish, French and German" },
+      { label: "Given by", value: "Microsoft" },
+    ],
+    basedOn: "the Microsoft Learn AI-901 study guide (skills measured as of April 15, 2026), the AI-901 and AI-900 exam pages and Microsoft's exam duration page, checked November 2026",
+    source: { name: "Microsoft Learn: Study guide for Exam AI-901", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901" },
   },
   sc900: {
     answer:
@@ -2973,6 +3199,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "NFPA 1010 (2024 edition) and state fire certification guidance, checked October 2026",
     source: { name: "NFPA 1010: Standard on Professional Qualifications for Firefighters", url: "https://www.nfpa.org/codes-and-standards/nfpa-1010-standard-development/1010" },
+  },
+  dispatcher: {
+    answer:
+      "A 911 dispatcher, or public safety telecommunicator, answers emergency and non-emergency calls and dispatches law enforcement, fire and EMS. The baseline training is APCO ANS 3.103.3-2025, Minimum Training Standards for Public Safety Telecommunicators, with chapters for call takers and law enforcement, fire and EMS telecommunicators. Many agencies use APCO's Public Safety Telecommunicator 1 course, whose final exam earns APCO certification; APCO does not publish its length or pass mark. Some states certify telecommunicators themselves, and requirements vary by state.",
+    rows: [
+      { label: "Training standard", value: "APCO ANS 3.103.3-2025" },
+      { label: "Common course", value: "APCO PST1, 8th edition (40 CDEs)" },
+      { label: "Certification", value: "PST1 final exam, or state certification where required" },
+      { label: "Pass mark", value: "Not published by APCO; states set their own" },
+      { label: "Answer standard", value: "NENA: 90% of 911 calls within 15 seconds" },
+      { label: "Recertification (APCO)", value: "48 hours of CDE every two years" },
+      { label: "Varies by state", value: "Required hours, exams and EMD certification" },
+    ],
+    basedOn: "APCO ANS 3.103.3-2025, APCO's PST1 8th edition course page and NENA-STA-020.2-2026, checked November 2026",
+    source: { name: "APCO ANS 3.103.3-2025 Minimum Training Standards for Public Safety Telecommunicators", url: "https://www.apcointl.org/standards/3-103-3-2025-minimum-training-standards-for-public-safety-telecommunicators/" },
   },
   police: {
     answer:
@@ -6697,6 +6938,53 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
     source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
+  },
+  fpc: {
+    answer:
+      "The FPC (Fundamental Payroll Certification) is PayrollOrg's entry-level payroll certification. The exam has 150 multiple-choice questions (125 scored, 25 unscored pre-test) with four choices each, taken in 3 hours at a Pearson VUE center or online through OnVUE in North America. There are no eligibility requirements. PayrollOrg sets each form's passing raw score with the Bookmark method and reports it as a scaled 300; no percentage is published. Exams from September 2026 to September 2027 test federal law in effect January 1, 2026.",
+    rows: [
+      { label: "Run by", value: "PayrollOrg (formerly the American Payroll Association), delivered by Pearson VUE" },
+      { label: "Questions", value: "150 multiple choice: 125 scored, 25 unscored pre-test" },
+      { label: "Time", value: "3 hours" },
+      { label: "Pass mark", value: "Scaled score of 300; raw cut set per form by the Bookmark method" },
+      { label: "Content", value: "Core concepts 29%, paycheck calculation 24%, systems 13%, compliance 12%, audits 8%, accounting 8%, administration 6%" },
+      { label: "Law tested", value: "Federal law in effect January 1, 2026, for exams September 2026 to September 2027" },
+      { label: "Valid for", value: "Three full calendar years; recertify with 60 RCHs or by retaking the exam" },
+    ],
+    basedOn: "PayrollOrg's FPC exam outline and KSAs effective September 5, 2026 and the 2026-2027 FPC Candidate Handbook, checked November 2026",
+    source: { name: "PayrollOrg: FPC exam outline", url: "https://payroll.org/certification/fundamental-payroll-certification-(fpc)/fpc-exam-outline" },
+  },
+  titleagent: {
+    answer:
+      "The title insurance agent exam is the licensing test a state insurance department requires before someone can issue title insurance policies as an agent or title producer. There is no national exam: each state sets its own, usually through PSI, Pearson VUE or Prometric, with a general part on title insurance, real property, search, closing and federal rules and a part on that state's law. Alabama's has 150 questions in 180 minutes with 105 correct needed; Ohio's has 100 in 2 hours with a 70% passing score; Pennsylvania's has 60 scored items in 80 minutes.",
+    rows: [
+      { label: "Run by", value: "Each state's insurance department, through a test vendor" },
+      { label: "Questions", value: "Varies: 150 (Alabama), 100 (Ohio), 60 (Pennsylvania)" },
+      { label: "Time", value: "Varies: 180 min (AL), 2 hours (OH), 80 min (PA)" },
+      { label: "Pass mark", value: "Set by each state; 70% in Alabama (105 of 150) and Ohio" },
+      { label: "Content", value: "Real property, title policies and commitments, search and clearing title, escrow and closing, federal rules, plus state law" },
+      { label: "Policy forms", value: "2021 ALTA commitment, owner's and loan policies" },
+      { label: "Where", value: "Vendor test centers; booking and fees vary by state" },
+    ],
+    basedOn: "The Alabama DOI title agent outline (rev. July 2023), Ohio PSI Series 11-37 and Pennsylvania PSI Series 16-10 (effective March 2026) outlines, checked November 2026",
+    source: { name: "Alabama DOI: Title Insurance Agent Examination Content Outline", url: "https://aldoi.gov/PDF/Licensing/2023TitleOutline.pdf" },
+  },
+  aswbbach: {
+    answer:
+      "The ASWB Bachelors exam is the Association of Social Work Boards licensing exam for basic generalist practice by social workers with a bachelor's degree in social work; states that license bachelor-level social workers use it for licenses such as the LBSW or LSW, and ASWB's Associate exam uses the same questions. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The outline has three content areas: Values and Ethics 35%, Assessment and Planning 33%, and Intervention and Practice 32%, with more recall questions than the Masters and Clinical exams. The result is pass or fail, with the number of correct answers needed set for each exam form.",
+    rows: [
+      { label: "Questions", value: "122 multiple choice (110 scored, 12 pretest)" },
+      { label: "Time", value: "4 hours, two sections of 61" },
+      { label: "Options", value: "3 or 4 per question" },
+      { label: "Pass mark", value: "Pass/fail; set per exam form, generally 66 to 78 of 110 scored" },
+      { label: "Content", value: "Values and Ethics 35%, Assessment and Planning 33%, Intervention and Practice 32%" },
+      { label: "Eligibility", value: "Bachelor's degree in social work, with approval from your state board" },
+      { label: "Since", value: "August 3, 2026 (2026 outline, 3 content areas)" },
+      { label: "Where", value: "Pearson test centers, after board approval" },
+      { label: "Run by", value: "Association of Social Work Boards (ASWB)" },
+    ],
+    basedOn: "The ASWB Examination Guidebook (August 2026), Bachelors/Associate content outline, checked November 2026",
+    source: { name: "ASWB: Examination Guidebook", url: "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf" },
   },
   aswbclin: {
     answer:

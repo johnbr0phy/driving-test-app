@@ -1,0 +1,58 @@
+CAT = "ctecGains"; SEG = "GNS"
+# CP23A VIII (basis, sale price, non-taxable transactions, capital gains and losses, virtual
+# currency). Pub. 17 (2025) and the 2025 Form 1040 instructions. Computed keys asserted.
+_gift = 12000 - 4000; assert _gift == 8000
+_inh = 70000 - 65000; assert _inh == 5000
+_home = (400000 - 24000) - 250000; assert _home == 126000
+_carry = 8000 - 3000; assert _carry == 5000
+_adj = 200000 + 30000 - 40000; assert _adj == 190000
+Q = [
+("Stock must be held for how long before its sale gives a long-term capital gain?",
+ "More than one year", ["At least six months", "Exactly one year", "More than two years"],
+ "Section 1222 makes a gain long-term when the asset was held more than one year. A sale on the one-year anniversary is still short-term."),
+("A donor's basis was $4,000 and the stock was worth $9,000 when given. The recipient sells it for $12,000. Her gain is:",
+ f"${_gift:,}", ["$3,000", "$5,000", "$12,000"],
+ "When gifted property is sold at a gain, the recipient uses the donor's basis (section 1015): $12,000 - $4,000 = $8,000."),
+("Dad bought land for $20,000. It was worth $65,000 at his death, and his son sold it for $70,000. The son's gain is:",
+ f"${_inh:,}", ["$45,000", "$50,000", "$70,000"],
+ "Inherited property generally takes a basis equal to fair market value at the date of death (section 1014): $70,000 - $65,000 = $5,000."),
+("What is the most a married couple filing jointly can exclude on the sale of their main home?",
+ "$500,000", ["$250,000", "$750,000", "$1,000,000"],
+ "Section 121 excludes up to $250,000 of gain, or $500,000 on a joint return if both spouses meet the use test and either meets the ownership test."),
+("To claim the full home sale exclusion, the seller must have owned and lived in the home for:",
+ "2 of the last 5 years", ["1 of the last 3 years", "3 of the last 5 years", "5 straight years"],
+ "Section 121 requires ownership and use as a main home for at least 2 years during the 5 years ending on the sale date. The 2 years need not be continuous."),
+("A home bought for $250,000 sells for $400,000, with $24,000 of selling commissions. The gain is:",
+ f"${_home:,}", ["$102,000", "$150,000", "$174,000"],
+ "The amount realized is the price less selling expenses: $376,000. Subtracting the $250,000 basis leaves a $126,000 gain, which may then be excluded."),
+("For 2025, a married person filing separately has a net capital loss of $4,000. How much carries to 2026?",
+ "$2,500", ["$1,000", "$1,500", "$4,000"],
+ "A separate filer can use only $1,500 of net capital loss against other income each year: $4,000 - $1,500 = $2,500 carries forward."),
+("For federal tax purposes, the IRS treats virtual currency as:",
+ "Property", ["Foreign currency", "Cash", "A collectible coin"],
+ "Notice 2014-21 treats virtual currency as property, so general property transaction rules apply to sales and exchanges."),
+("A client pays for a laptop with bitcoin worth more than he paid for it. Tax-wise, he has:",
+ "Gain on the coins he spent", ["No tax event", "Ordinary income from the seller", "A gift to the seller"],
+ "Spending virtual currency is a disposition of property. The difference between its value and the client's basis is a capital gain or loss."),
+("Gain on selling business equipment, up to the depreciation taken, is taxed as:",
+ "Ordinary income", ["Long-term capital gain", "Tax-exempt gain", "Unrecaptured 1250 gain"],
+ "Section 1245 recaptures depreciation on personal property as ordinary income. Only gain above the depreciation can be section 1231 gain."),
+("A rental cost $200,000. The owner added $30,000 of improvements and took $40,000 of depreciation. Adjusted basis is:",
+ f"${_adj:,}", ["$160,000", "$230,000", "$270,000"],
+ "Basis rises for capital improvements and falls for depreciation allowed or allowable (section 1016): $200,000 + $30,000 - $40,000 = $190,000."),
+("Heirs sell inherited stock two months after the death at a gain. The gain is:",
+ "Long-term", ["Short-term", "Ordinary income", "Tax-free"],
+ "Property acquired from a decedent is treated as held more than one year, so the gain is long-term however briefly the heir held it."),
+("Since 2018, a like-kind exchange can defer gain only when the property swapped is:",
+ "Real property", ["Business vehicles", "Equipment", "Any business asset"],
+ "Section 1031 now applies only to real property held for business or investment. Exchanges of vehicles, equipment and other personal property are taxable."),
+("Which of these is a capital asset in its owner's hands?",
+ "Her personal residence", ["Inventory held for sale", "Accounts receivable", "A patent she invented"],
+ "Section 1221 excludes inventory, business receivables and, since 2018, self-created patents and inventions from capital assets. A personal home is a capital asset."),
+("Net short-term capital gain is taxed at:",
+ "Ordinary income rates", ["0%, 15% or 20%", "A flat 28%", "Half the regular rate"],
+ "Only net long-term capital gain and qualified dividends get the preferential rates. Short-term gain is taxed like wages."),
+("A rental is destroyed in a fire, and insurance pays more than its basis. The gain can be postponed if the owner:",
+ "Reinvests in similar property", ["Pays the tax over 5 years", "Sells the land within a year", "Itemizes deductions"],
+ "Section 1033 lets an owner postpone gain from an involuntary conversion by reinvesting the proceeds in similar or related property within the replacement period."),
+]

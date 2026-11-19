@@ -1,6 +1,14 @@
 {
   "_": "Second-reviewer checks of whole banks: a reviewer that did not write the questions answered every one without the key and its findings were fixed. One entry per check. /build-tests adds an entry for each test it ships. Read by scripts/test-progress.ts. Tests built before 2026-11-14 are not listed: their reviews were not recorded per test.",
   "reviews": {
+    "pesticide": [
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 58
+      }
+    ],
     "qabaabat": [
       {
         "date": "2026-11-17",
@@ -865,6 +873,150 @@
         "date": "2026-11-18",
         "kind": "stem trim, then keyless blind answering (Opus) of every changed question plus source check of every flag",
         "findings": 7
+      }
+    ],
+    "backflow": [
+      {
+        "date": "2026-11-18",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 0
+      }
+    ],
+    "bowhunter": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 4
+      }
+    ],
+    "trapper": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 9
+      }
+    ],
+    "ieplumbt2": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 22
+      }
+    ],
+    "cpb": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 33
+      }
+    ],
+    "crc": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 2
+      }
+    ],
+    "cobit": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 5
+      }
+    ],
+    "aswbbach": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 55
+      }
+    ],
+    "titleagent": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 11
+      }
+    ],
+    "ai901": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 3
+      }
+    ],
+    "fpc": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 914,
+        "findings": 6
+      }
+    ],
+    "cbcs": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 100
+      }
+    ],
+    "hha": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 188
+      }
+    ],
+    "cpaisc": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 4
+      }
+    ],
+    "ctec": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 4
+      }
+    ],
+    "dispatcher": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 3
+      }
+    ],
+    "pl900": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 5
+      }
+    ],
+    "jncia": [
+      {
+        "date": "2026-11-19",
+        "kind": "blind review at build",
+        "pr": 915,
+        "findings": 5
       }
     ]
   },

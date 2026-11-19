@@ -1,0 +1,3908 @@
+[
+  {
+    "id": "JNCIA-T1-001",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Initial configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new Junos device is booted with its factory-default configuration. Which statement must be added before the first commit will succeed?",
+    "explanation": "Junos refuses to commit until the root account has a password. A host name, SSH and a time zone are all common first steps but are not required for a commit.",
+    "options": [
+      "$\\texttt{set system services ssh}$",
+      "$\\texttt{set system root-authentication plain-text-password}$",
+      "$\\texttt{set system host-name R1}$",
+      "$\\texttt{set system time-zone UTC}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-002",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Collision and broadcast domains",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Six PCs connect to one 8-port Ethernet switch with a single VLAN, and the switch uplinks to a router interface. How many broadcast domains do the six PCs share?",
+    "explanation": "A switch keeps every port in the same broadcast domain unless VLANs split it, so all six PCs are in one. Each switch port is its own collision domain, which is where the higher counts come from, and only the router interface ends the broadcast domain.",
+    "options": [
+      "1",
+      "2",
+      "6",
+      "7"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "JNCIA-T1-003",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI modes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user logged in as admin sees the prompt $\\texttt{admin@R1>}$. Which command enters configuration mode?",
+    "explanation": "$\\texttt{configure}$ moves from operational mode (the > prompt) to configuration mode (the # prompt). $\\texttt{edit}$ moves around inside configuration mode.",
+    "options": [
+      "$\\texttt{enable}$",
+      "$\\texttt{configure}$",
+      "$\\texttt{set cli}$",
+      "$\\texttt{edit}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-004",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Show commands",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command gives a one-line-per-interface summary of admin status, link status and addresses?",
+    "explanation": "$\\texttt{show interfaces terse}$ lists each physical and logical interface with Admin and Link state, protocol family and address. extensive and detail print long per-interface reports.",
+    "options": [
+      "$\\texttt{show interfaces extensive}$",
+      "$\\texttt{show interfaces terse}$",
+      "$\\texttt{show interfaces detail}$",
+      "$\\texttt{monitor interface traffic}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-005",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Route preference",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Junos router learns 10.8.0.0/16 from OSPF as an internal route and also has a static route to it with default settings. Which route becomes active?",
+    "explanation": "Lower preference wins. A static route has a default preference of 5, while an OSPF internal route has 10, so the static route is active.",
+    "options": [
+      "Neither until one is removed",
+      "The static route",
+      "The OSPF route",
+      "Both, load-balanced"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-006",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Default routing policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Without any export policy, what does OSPF on a Junos router advertise about static routes configured on that router?",
+    "explanation": "OSPF's default export policy rejects everything; OSPF floods its own link-state information by itself. To put static routes into OSPF, an export policy must accept them.",
+    "options": [
+      "All of them, as external routes",
+      "None of them",
+      "Only the static default route",
+      "All of them, as internal routes"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-007",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Routing Engine",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Junos device component runs the routing protocols and builds the routing tables?",
+    "explanation": "The Routing Engine is the control plane: it runs the routing protocol process, the CLI and system management, and it builds the routing tables. The Packet Forwarding Engine moves packets using the forwarding table the Routing Engine gives it.",
+    "options": [
+      "Routing Engine",
+      "Physical Interface Card",
+      "Switch fabric",
+      "Packet Forwarding Engine"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-008",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Login classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which predefined login class gives a user every permission?",
+    "explanation": "super-user has all permissions. operator has clear, network, reset, trace and view; read-only has view only; unauthorized has none.",
+    "options": [
+      "$\\texttt{read-only}$",
+      "$\\texttt{operator}$",
+      "$\\texttt{super-user}$",
+      "$\\texttt{unauthorized}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-009",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Subnetting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An interface is configured with 172.20.4.1/25. How many usable host addresses are in its subnet? Type the number only.",
+    "explanation": "A /25 leaves 7 host bits: 2 to the 7th is 128 addresses, minus the network and broadcast addresses, gives 126 usable hosts.",
+    "numeric": {
+      "answers": [
+        "126"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T1-010",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Active and candidate configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator enters several $\\texttt{set}$ commands in configuration mode but does not commit. What has changed?",
+    "explanation": "Configuration mode edits the candidate configuration. Nothing reaches the active configuration until $\\texttt{commit}$ checks and activates it.",
+    "options": [
+      "The candidate configuration only",
+      "The rescue configuration",
+      "The active configuration only",
+      "The candidate and the active configuration"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-011",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Interface statistics and errors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator suspects CRC and framing errors on ge-0/0/2. Which command shows the full error counters for that interface?",
+    "explanation": "The extensive level includes input and output error counters, including CRC and framing errors, plus MAC statistics. terse and brief leave the error counters out.",
+    "options": [
+      "$\\texttt{show interfaces ge-0/0/2 extensive}$",
+      "$\\texttt{show interfaces ge-0/0/2 terse}$",
+      "$\\texttt{show interfaces ge-0/0/2 brief}$",
+      "$\\texttt{show route interface ge-0/0/2}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-012",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Route preference",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the default route preference of a BGP route on a Junos device? Type the number only.",
+    "explanation": "BGP routes default to 170, higher than OSPF external routes at 150, so an IGP route to the same prefix normally wins.",
+    "numeric": {
+      "answers": [
+        "170"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T1-013",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Import and export policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A policy should change which routes a router advertises to its BGP neighbors. Where is it applied?",
+    "explanation": "Export policies control what goes from the routing table out to a protocol's neighbors; import policies control what comes in from them. Firewall filters act on packets, not routes.",
+    "options": [
+      "As an import policy under BGP",
+      "As an export policy under routing-options static",
+      "As an input firewall filter",
+      "As an export policy under BGP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-014",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Packet Forwarding Engine",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does the Packet Forwarding Engine get the table it uses to forward transit packets?",
+    "explanation": "The Routing Engine derives a forwarding table of active routes from its routing tables and copies it to the Packet Forwarding Engine, which can be updated without interrupting forwarding.",
+    "options": [
+      "It reads the candidate configuration directly",
+      "It runs its own copy of every routing protocol",
+      "The Routing Engine copies the forwarding table to it",
+      "It builds the table from received ARP replies alone"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-015",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "User accounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command creates a local user named sam who can view but not change anything?",
+    "explanation": "Users are defined under [edit system login user] and given a class; the predefined read-only class has the view permission only. The unauthorized class has no permissions at all.",
+    "options": [
+      "$\\texttt{set system login class sam permissions view}$",
+      "$\\texttt{set system login user sam class unauthorized}$",
+      "$\\texttt{set system user sam class read-only}$",
+      "$\\texttt{set system login user sam class read-only}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-016",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Decimal to binary",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the decimal value of the binary octet 11000000? Type the number only.",
+    "explanation": "The two high bits are worth 128 and 64, and 128 + 64 = 192. This is the octet that appears in a /26 mask, 255.255.255.192.",
+    "numeric": {
+      "answers": [
+        "192"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T1-017",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Comparing configurations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before committing, an administrator wants to see exactly what the candidate changes compared with the active configuration. Which command shows this?",
+    "explanation": "$\\texttt{show | compare}$ marks lines added to or removed from the candidate with + and - against the active configuration. $\\texttt{display set}$ reformats the output, $\\texttt{count}$ counts lines and $\\texttt{display inheritance}$ expands groups.",
+    "options": [
+      "$\\texttt{show | display set}$",
+      "$\\texttt{show | display inheritance}$",
+      "$\\texttt{show | compare}$",
+      "$\\texttt{show | count}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-018",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Monitor commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows an interface's traffic and error counters updating in real time?",
+    "explanation": "$\\texttt{monitor interface}$ refreshes the counters on screen about once a second until stopped. $\\texttt{monitor start}$ follows a log file instead.",
+    "options": [
+      "$\\texttt{show interfaces ge-0/0/2 statistics}$",
+      "$\\texttt{monitor interface ge-0/0/2}$",
+      "$\\texttt{show log ge-0/0/2}$",
+      "$\\texttt{monitor start messages}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-019",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing tables",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Junos routing table holds IPv4 unicast routes by default?",
+    "explanation": "inet.0 is the default IPv4 unicast table. inet6.0 holds IPv6 unicast routes, inet.3 MPLS paths used for BGP next hops and mpls.0 MPLS label switching.",
+    "options": [
+      "$\\texttt{inet.3}$",
+      "$\\texttt{inet.0}$",
+      "$\\texttt{inet6.0}$",
+      "$\\texttt{mpls.0}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-020",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Policy structure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At which configuration hierarchy are routing policy statements defined?",
+    "explanation": "policy-statement definitions live under [edit policy-options], each with terms of from conditions and then actions. They are applied with import and export under a protocol; firewall holds packet filters, not routing policy.",
+    "options": [
+      "$\\texttt{[edit routing-options]}$",
+      "$\\texttt{[edit firewall]}$",
+      "$\\texttt{[edit policy-options]}$",
+      "$\\texttt{[edit protocols]}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-021",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the interface name ge-1/2/3, what does the 2 identify?",
+    "explanation": "Junos names are type-fpc/pic/port, so ge-1/2/3 is Gigabit Ethernet in FPC 1, PIC 2, port 3. A logical unit follows a dot, as in ge-1/2/3.0.",
+    "options": [
+      "The logical unit",
+      "The port number",
+      "The PIC slot",
+      "The FPC slot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-022",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Longest match",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router's table holds 10.0.0.0/8, 10.20.0.0/16, 10.20.30.0/24 and 0.0.0.0/0. Which entry forwards a packet to 10.20.30.77?",
+    "explanation": "Every one of these prefixes contains 10.20.30.77, and the router uses the most specific one, the /24. The /16, the /8 and the default route would only be used if the longer prefixes were missing.",
+    "options": [
+      "10.0.0.0/8",
+      "10.20.0.0/16",
+      "0.0.0.0/0",
+      "10.20.30.0/24"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-023",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Reverting configurations",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the highest rollback number a Junos device keeps, counting rollback 0 as the active configuration? Type the number only.",
+    "explanation": "Junos saves the 50 most recently committed configurations: rollback 0 is the active one and rollback 1 to 49 are earlier commits.",
+    "numeric": {
+      "answers": [
+        "49"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T1-024",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Transit traffic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A packet arrives on ge-0/0/1 addressed to a server two hops beyond the router. Which component forwards it?",
+    "explanation": "That packet is transit traffic: it only passes through, so the Packet Forwarding Engine handles it with its forwarding table and the Routing Engine never sees it.",
+    "options": [
+      "Management Ethernet interface",
+      "Configuration database",
+      "Routing Engine",
+      "Packet Forwarding Engine"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-025",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Interface statistics and errors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command resets the counters on every interface to zero?",
+    "explanation": "$\\texttt{clear interfaces statistics all}$ zeroes the counters so new errors stand out. Restarting a process or deleting configuration would not just reset counters.",
+    "options": [
+      "$\\texttt{delete interfaces statistics}$",
+      "$\\texttt{clear interfaces statistics all}$",
+      "$\\texttt{request interfaces reset all}$",
+      "$\\texttt{restart interface-control}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-026",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Static routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command adds a static default route through the next hop 203.0.113.1?",
+    "explanation": "Static routes are configured under [edit routing-options static], not under protocols, and the forwarding address is given with next-hop.",
+    "options": [
+      "$\\texttt{set routing-options route 0.0.0.0/0 next-hop 203.0.113.1}$",
+      "$\\texttt{set routing-options static route 0.0.0.0/0 next-hop 203.0.113.1}$",
+      "$\\texttt{set routing-options static route 0.0.0.0/0 gateway 203.0.113.1}$",
+      "$\\texttt{set protocols static route 0.0.0.0/0 next-hop 203.0.113.1}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-027",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Policy flow",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An OSPF export chain is [ P1 P2 ]. A route matches no term in P1 and is accepted by a term in P2. What happens?",
+    "explanation": "Policies in a chain are read left to right. A route that matches nothing in one policy moves to the next, and the first accept or reject ends the evaluation. The default policy applies only if nothing in the chain decides.",
+    "options": [
+      "Evaluation stops at the end of P1 with no action",
+      "The default OSPF policy decides before P2 is read",
+      "The route is exported, because P2 accepts it",
+      "The route is rejected, because P1 did not match"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-028",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface properties",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command gives ge-0/0/1 the IPv4 address 10.1.1.1/24?",
+    "explanation": "Addresses belong to a protocol family on a logical unit: unit, then family inet for IPv4, then address. inet6 is the IPv6 family, and the address cannot sit directly on the physical interface.",
+    "options": [
+      "$\\texttt{set interfaces ge-0/0/1 family inet address 10.1.1.1/24}$",
+      "$\\texttt{set interfaces ge-0/0/1 unit 0 family inet address 10.1.1.1/24}$",
+      "$\\texttt{set interfaces ge-0/0/1 unit 0 family inet6 address 10.1.1.1/24}$",
+      "$\\texttt{set interfaces ge-0/0/1 unit 0 address 10.1.1.1/24}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-029",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Layer 2 addressing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A host knows the IPv4 address of its default gateway but not its MAC address. Which protocol does it use to learn the MAC address?",
+    "explanation": "ARP maps a known IPv4 address to a MAC address on the local segment with a broadcast request and a unicast reply. IPv6 does the same job with Neighbor Discovery, which runs over ICMPv6.",
+    "options": [
+      "ICMP",
+      "DHCP",
+      "ARP",
+      "NDP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-030",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Reverting configurations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to return to the configuration that was active before the last commit. Which sequence does this?",
+    "explanation": "$\\texttt{rollback 1}$ loads the previous configuration into the candidate, and it takes effect only after $\\texttt{commit}$. $\\texttt{rollback 0}$ reloads the current active configuration.",
+    "options": [
+      "$\\texttt{rollback 1}$, then $\\texttt{commit}$",
+      "$\\texttt{rollback 1}$ alone",
+      "$\\texttt{load factory-default}$, then $\\texttt{commit}$",
+      "$\\texttt{rollback 0}$, then $\\texttt{commit}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-031",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Transit and exception traffic",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Classify each packet arriving at a Junos router.",
+    "explanation": "Traffic addressed to the router itself, such as SSH sessions and routing protocol packets, is exception traffic sent up to the Routing Engine. Traffic that only passes through the router is transit traffic forwarded by the Packet Forwarding Engine.",
+    "rows": [
+      "An SSH session to the router's loopback address",
+      "A web request from a client to a server two hops away",
+      "An OSPF hello from a neighbor",
+      "A file transfer between two hosts on other networks"
+    ],
+    "columns": [
+      "Exception traffic",
+      "Transit traffic"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-032",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Configuration groups",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An interface inherits apply-groups [ G1 G2 ]. Both groups set the MTU, G1 to 1500 and G2 to 9000, and the interface sets no MTU of its own. Which MTU is used?",
+    "explanation": "When groups disagree, the first group listed in apply-groups takes priority, so G1's 1500 wins. A value set directly on the interface would override both groups.",
+    "options": [
+      "The interface default",
+      "1500",
+      "The commit fails on the conflict",
+      "9000"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-033",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A host 10.20.0.9 cannot be reached. Which command shows each router hop the path passes through?",
+    "explanation": "traceroute sends probes with increasing TTL and lists each hop that returns a time exceeded message. ping only shows whether the end host answers, and show route shows the local route only.",
+    "options": [
+      "$\\texttt{traceroute 10.20.0.9}$",
+      "$\\texttt{show route 10.20.0.9}$",
+      "$\\texttt{ping 10.20.0.9 rapid}$",
+      "$\\texttt{telnet 10.20.0.9}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-034",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing and forwarding tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows the routes that have actually been installed for forwarding?",
+    "explanation": "$\\texttt{show route forwarding-table}$ shows what the Routing Engine pushed to the Packet Forwarding Engine. $\\texttt{show route}$ shows the routing table, including routes that are not active.",
+    "options": [
+      "$\\texttt{show route table inet.0 extensive}$",
+      "$\\texttt{show route forwarding-table}$",
+      "$\\texttt{show route hidden}$",
+      "$\\texttt{show route protocol static}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-035",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Route filter match types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which route-filter match type matches 10.0.0.0/8 itself and every more specific prefix inside it?",
+    "explanation": "orlonger matches the prefix and anything longer within it. longer matches only the more specific prefixes, exact only 10.0.0.0/8, and upto /8 also only the /8 itself.",
+    "options": [
+      "$\\texttt{upto /8}$",
+      "$\\texttt{orlonger}$",
+      "$\\texttt{longer}$",
+      "$\\texttt{exact}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-036",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "IPv6 addressing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IPv6 interface address begins with fe80. What kind of address is it?",
+    "explanation": "fe80::/10 is the link-local range: every IPv6 interface has one and it is never routed off the link. Global unicast addresses start with 2000::/3, unique local with fc00::/7 and multicast with ff00::/8.",
+    "options": [
+      "Multicast",
+      "Unique local",
+      "Link-local",
+      "Global unicast"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-037",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Output filtering",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which pipe option shows only the lines of $\\texttt{show interfaces terse}$ that contain the text ge-?",
+    "explanation": "$\\texttt{match}$ keeps only lines matching the pattern. $\\texttt{except}$ hides them, $\\texttt{find}$ starts the output at the first match and shows everything after it, and $\\texttt{count}$ reports the number of lines.",
+    "options": [
+      "$\\texttt{| count}$",
+      "$\\texttt{| except ge-}$",
+      "$\\texttt{| find ge-}$",
+      "$\\texttt{| match ge-}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-038",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "NTP",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command points a Junos device at the NTP server 192.0.2.10?",
+    "explanation": "NTP servers are configured under [edit system ntp]. NTP is a system function, not a routing protocol, so it is not under protocols.",
+    "options": [
+      "$\\texttt{set system services ntp 192.0.2.10}$",
+      "$\\texttt{set system ntp server 192.0.2.10}$",
+      "$\\texttt{set protocols ntp server 192.0.2.10}$",
+      "$\\texttt{set system time-server 192.0.2.10}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-039",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Junos OS upgrades",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command installs a Junos software package that has been copied to /var/tmp?",
+    "explanation": "$\\texttt{request system software add}$ installs the package, which takes effect after a reboot. load override reads configuration files, not software.",
+    "options": [
+      "$\\texttt{request system software add /var/tmp/junos-install.tgz}$",
+      "$\\texttt{load override /var/tmp/junos-install.tgz}$",
+      "$\\texttt{file copy /var/tmp/junos-install.tgz /config}$",
+      "$\\texttt{request system snapshot /var/tmp/junos-install.tgz}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-040",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Static routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A static route to 10.50.0.0/16 must be used only when the OSPF route to it is gone. What preference should the static route have?",
+    "explanation": "This is a floating static route: with a preference above OSPF internal's 10, OSPF wins while its route exists, and the static route takes over when the OSPF route disappears.",
+    "options": [
+      "Exactly 10",
+      "Lower than 10, such as 1 or 5",
+      "0, so it is always active",
+      "Higher than 10, such as 20"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-041",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Firewall filter actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall filter term must drop matching packets without sending anything back to the source. Which action does this?",
+    "explanation": "discard drops silently. reject drops and returns an ICMP message, and count and log are nonterminating actions that do not drop anything.",
+    "options": [
+      "$\\texttt{discard}$",
+      "$\\texttt{log}$",
+      "$\\texttt{reject}$",
+      "$\\texttt{count}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-042",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Software architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does Junos OS gain by running its processes, such as routing and interface control, as separate processes in protected memory?",
+    "explanation": "Junos runs each function as its own process with protected memory, so a fault in one, such as the routing protocol process, does not corrupt the rest. The other options describe things Junos does not do.",
+    "options": [
+      "The router needs no separate forwarding hardware at all",
+      "Every process can write freely to the memory of the others",
+      "Configuration changes take effect at once without a commit",
+      "A failed process can restart alone"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-043",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Connection-oriented protocols",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which transport protocol sets up a session with a three-way handshake before it sends data?",
+    "explanation": "TCP is connection-oriented: SYN, SYN-ACK and ACK open the session, and it then acknowledges and retransmits data. UDP is connectionless and sends with no handshake.",
+    "options": [
+      "ARP",
+      "UDP",
+      "ICMP",
+      "TCP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-044",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator at $\\texttt{[edit interfaces ge-0/0/0 unit 0]}$ wants to jump straight back to the top of the configuration hierarchy. Which command does this?",
+    "explanation": "$\\texttt{top}$ returns to the top level of the hierarchy. $\\texttt{up}$ moves one level, and $\\texttt{exit configuration-mode}$ leaves configuration mode altogether.",
+    "options": [
+      "$\\texttt{top}$",
+      "$\\texttt{exit configuration-mode}$",
+      "$\\texttt{quit}$",
+      "$\\texttt{up}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-045",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "System logging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command writes messages of severity error and higher from every facility to a log file named errors?",
+    "explanation": "The syntax is file name, then facility, then severity. The facility any covers every source, and error includes error, critical, alert and emergency.",
+    "options": [
+      "$\\texttt{set system syslog file errors error any}$",
+      "$\\texttt{set system log file errors any error}$",
+      "$\\texttt{set system syslog errors any error}$",
+      "$\\texttt{set system syslog file errors any error}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-046",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Powering off",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before removing power from a Junos device, which command should be run to shut the software down cleanly?",
+    "explanation": "$\\texttt{request system halt}$ stops the software gracefully so the file system is not damaged when power is removed. zeroize erases the device, and clear system reboot cancels a scheduled reboot.",
+    "options": [
+      "$\\texttt{request system zeroize}$",
+      "$\\texttt{restart routing}$",
+      "$\\texttt{request system halt}$",
+      "$\\texttt{clear system reboot}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-047",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which routing instance type gives a router a separate routing table and its own interfaces, like a second router, without a VPN?",
+    "explanation": "A virtual-router instance has its own routing tables, interfaces and protocols but no VPN signaling. vrf is for Layer 3 VPNs, forwarding for filter-based forwarding, and vpls for a Layer 2 VPN service.",
+    "options": [
+      "$\\texttt{virtual-router}$",
+      "$\\texttt{forwarding}$",
+      "$\\texttt{vrf}$",
+      "$\\texttt{vpls}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-048",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Firewall filter concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A packet reaches the end of a firewall filter without matching any term. What happens to it?",
+    "explanation": "Every firewall filter ends with an implicit discard, so unmatched packets are dropped. A final term that accepts everything is needed to let other traffic through.",
+    "options": [
+      "It is sent to the Routing Engine",
+      "It is discarded",
+      "It is accepted",
+      "It is passed to the next filter only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-049",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Subnet masks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which subnet mask matches a /20 prefix?",
+    "explanation": "A /20 has 16 bits in the first two octets and 4 more in the third; the four high bits of an octet are 128 + 64 + 32 + 16 = 240. A /21 gives 248, a /19 gives 224, and 255.255.255.240 is a /28.",
+    "options": [
+      "255.255.248.0",
+      "255.255.224.0",
+      "255.255.255.240",
+      "255.255.240.0"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-050",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI functionality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While in configuration mode, an administrator wants to see the interface summary without leaving configuration mode. Which command works?",
+    "explanation": "$\\texttt{run}$ executes an operational mode command from configuration mode. In configuration mode, $\\texttt{show interfaces}$ shows the interfaces configuration instead, and $\\texttt{do}$ is not a Junos command.",
+    "options": [
+      "$\\texttt{exec show interfaces terse}$",
+      "$\\texttt{do show interfaces terse}$",
+      "$\\texttt{show interfaces terse}$",
+      "$\\texttt{run show interfaces terse}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-051",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "SNMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lets an SNMP manager poll the device with the community string monitor but not change settings?",
+    "explanation": "SNMP is configured at the top-level [edit snmp] hierarchy; read-only authorization allows gets but not sets. A trap group defines where notifications are sent.",
+    "options": [
+      "$\\texttt{set snmp community monitor authorization read-only}$",
+      "$\\texttt{set snmp trap-group monitor authorization read-only}$",
+      "$\\texttt{set snmp community monitor authorization read-write}$",
+      "$\\texttt{set system snmp community monitor read-only}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T1-052",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Control and forwarding planes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does separating the control plane from the forwarding plane help a router under heavy load?",
+    "explanation": "With the work split, the Packet Forwarding Engine keeps forwarding at full rate from its current table while the Routing Engine handles routing updates and management.",
+    "options": [
+      "Transit packets are queued until routes converge",
+      "The router stops accepting new management sessions until the load falls",
+      "Routing updates are processed by the forwarding hardware instead",
+      "Forwarding continues while routing updates are processed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-053",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Root password recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which access does root password recovery on a Junos device require?",
+    "explanation": "Recovery means rebooting into single-user or recovery mode and setting a new root password, which can only be done from the console. It does not work if the console port is configured as insecure.",
+    "options": [
+      "An SNMP read-write community",
+      "A console connection to the device",
+      "J-Web over HTTPS",
+      "An SSH session from any user account"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-054",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Dynamic routing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is an advantage of a dynamic routing protocol over static routes in a large network?",
+    "explanation": "Dynamic protocols share reachability and recalculate paths when the topology changes, so they scale and adapt. They do cost some bandwidth, CPU and configuration.",
+    "options": [
+      "It never sends any updates between routers",
+      "It uses no memory or CPU on the routers",
+      "It reroutes around failures on its own",
+      "It needs no configuration on any of the routers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-055",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Applying firewall filters",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command applies the filter PROTECT-RE to traffic arriving at the Routing Engine through any interface?",
+    "explanation": "An input filter on lo0 is applied to host-bound traffic from every interface, which is how the Routing Engine is protected. fxp0 covers only the management port.",
+    "options": [
+      "$\\texttt{set interfaces fxp0 unit 0 family inet filter input PROTECT-RE}$",
+      "$\\texttt{set interfaces lo0 unit 0 family inet filter output PROTECT-RE}$",
+      "$\\texttt{set firewall filter PROTECT-RE interface all}$",
+      "$\\texttt{set interfaces lo0 unit 0 family inet filter input PROTECT-RE}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-056",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Roles of routers and switches",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which device forwards traffic between IP subnets by looking up the destination IP address?",
+    "explanation": "A router makes forwarding decisions on Layer 3 addresses and joins different IP subnets. A Layer 2 switch forwards within one broadcast domain on MAC addresses, a hub repeats bits, and an access point bridges wireless clients onto the LAN.",
+    "options": [
+      "A Layer 2 switch",
+      "A hub",
+      "A wireless access point",
+      "A router"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-057",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Managing configuration files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator has a complete configuration file saved as /var/tmp/R1-new.conf and wants it to replace the whole candidate configuration. Which command does this?",
+    "explanation": "$\\texttt{load override}$ discards the current candidate and loads the file as the whole configuration. $\\texttt{load merge}$ combines the file with the existing candidate, $\\texttt{load patch}$ applies a change file made with $\\texttt{show | compare}$, and $\\texttt{load set}$ reads a file of set commands.",
+    "options": [
+      "$\\texttt{load set /var/tmp/R1-new.conf}$",
+      "$\\texttt{load patch /var/tmp/R1-new.conf}$",
+      "$\\texttt{load merge /var/tmp/R1-new.conf}$",
+      "$\\texttt{load override /var/tmp/R1-new.conf}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-058",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Rescue configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command saves the active configuration as the rescue configuration?",
+    "explanation": "$\\texttt{request system configuration rescue save}$, in operational mode, stores the current committed configuration as the rescue configuration. $\\texttt{rollback rescue}$ loads it back, and $\\texttt{request system snapshot}$ copies the software and configuration to the alternate media.",
+    "options": [
+      "$\\texttt{request system snapshot}$",
+      "$\\texttt{save rescue.conf}$",
+      "$\\texttt{rollback rescue}$",
+      "$\\texttt{request system configuration rescue save}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-059",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Exception traffic",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A transit packet arrives with a TTL of 1. How does a Junos router handle it?",
+    "explanation": "A packet whose TTL would expire cannot be forwarded, so it becomes exception traffic, and an ICMP time exceeded message goes back to the sender. Traceroute relies on that reply.",
+    "options": [
+      "The Packet Forwarding Engine forwards it unchanged to the next hop",
+      "It handles it as exception traffic and returns ICMP time exceeded",
+      "It drops the packet silently in the switch fabric with no reply to anyone",
+      "It sends the packet out the management interface so it can be logged"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T1-060",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Show commands",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command shows the Junos release running on the device?",
+    "explanation": "$\\texttt{show version}$ reports the host name, model and Junos release. show chassis hardware lists the installed components and their serial numbers.",
+    "options": [
+      "$\\texttt{show system software}$",
+      "$\\texttt{show chassis hardware}$",
+      "$\\texttt{show system uptime}$",
+      "$\\texttt{show version}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-061",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Traffic forwarding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has no route that matches a packet's destination and no default route. What does it do with the packet?",
+    "explanation": "With no matching route, the packet cannot be forwarded and is dropped; the router may send an ICMP destination unreachable message to the source.",
+    "options": [
+      "Floods it out every interface",
+      "Queues it until a route appears",
+      "Sends it back to the source",
+      "Drops it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T1-062",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Unicast RPF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does unicast reverse-path forwarding check on an incoming packet?",
+    "explanation": "Unicast RPF looks up the packet's source address; in strict mode it also checks that the packet arrived on an interface the router would use to reach that source. It drops spoofed sources.",
+    "options": [
+      "Whether its destination address is in the routing table",
+      "Whether its DSCP value matches a forwarding class",
+      "Whether a route exists back to its source",
+      "Whether its TTL is greater than one"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-063",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "IPv4 and IPv6",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two features are part of IPv6 but not IPv4? (Choose two.)",
+    "explanation": "IPv6 addresses are 128 bits and Neighbor Discovery replaces ARP. IPv6 has no broadcast addresses (multicast does that job) and drops the header checksum that IPv4 routers recompute at every hop.",
+    "options": [
+      "A header checksum checked at every hop",
+      "Neighbor Discovery in place of ARP",
+      "Broadcast addresses for each subnet",
+      "128-bit addresses",
+      "32-bit addresses written in dotted decimal"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "JNCIA-T1-064",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "J-Web",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is J-Web on a Junos device?",
+    "explanation": "J-Web is the graphical interface reached through a web browser. It covers common configuration, monitoring and maintenance tasks alongside the CLI.",
+    "options": [
+      "A routing instance used for management traffic",
+      "A Junos process that forwards web traffic in hardware",
+      "A browser-based interface for managing the device",
+      "A cloud service that stores rollback files"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T1-065",
+    "section": "jncia",
+    "test": 1,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Configuration archival",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement sends a copy of the configuration to a remote server every time a commit succeeds?",
+    "explanation": "transfer-on-commit uploads the configuration to the archive sites on each commit, while transfer-interval uploads it on a timer. The syslog archive statement rotates log files.",
+    "options": [
+      "$\\texttt{set system commit synchronize}$",
+      "$\\texttt{set system syslog archive files 10}$",
+      "$\\texttt{set system archival configuration transfer-interval 60}$",
+      "$\\texttt{set system archival configuration transfer-on-commit}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-001",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Initial configuration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command sets the device's host name to R2?",
+    "explanation": "The host name is set at [edit system host-name] and appears in the CLI prompt after the commit.",
+    "options": [
+      "$\\texttt{set hostname R2}$",
+      "$\\texttt{set system name R2}$",
+      "$\\texttt{set system host-name R2}$",
+      "$\\texttt{set system login host-name R2}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-002",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Subnetting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many /26 subnets fit inside one /24? Type the number only.",
+    "explanation": "Going from /24 to /26 borrows 2 bits, and 2 to the 2nd is 4 subnets of 64 addresses each.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T2-003",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI modes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which prompt character shows that a Junos session is in configuration mode?",
+    "explanation": "Configuration mode ends the prompt with #, operational mode with >. A % prompt is the Unix shell, which the root user reaches before starting the CLI.",
+    "options": [
+      "$\\texttt{\\$}$",
+      "$\\texttt{\\#}$",
+      "$\\texttt{\\%}$",
+      "$\\texttt{>}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-004",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists the installed hardware components, with their part and serial numbers?",
+    "explanation": "$\\texttt{show chassis hardware}$ gives the inventory of the chassis, Routing Engine, FPCs, PICs and transceivers with serial numbers.",
+    "options": [
+      "$\\texttt{show version}$",
+      "$\\texttt{show chassis hardware}$",
+      "$\\texttt{show chassis alarms}$",
+      "$\\texttt{show system storage}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-005",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Route preference",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the default route preference of an OSPF external route on a Junos device? Type the number only.",
+    "explanation": "OSPF internal routes default to 10 and OSPF AS external routes to 150.",
+    "numeric": {
+      "answers": [
+        "150"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T2-006",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Default routing policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the default BGP export policy on a Junos router?",
+    "explanation": "By default BGP readvertises the active routes it learned through BGP, except that an IBGP speaker does not pass IBGP-learned routes to other IBGP peers unless it is a route reflector. Other protocols' routes need an export policy.",
+    "options": [
+      "Advertise only directly connected routes",
+      "Advertise all routes in inet.0, including OSPF and static routes",
+      "Readvertise all active BGP routes, following the IBGP rules",
+      "Reject all routes until an export policy is applied"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-007",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Routing Engine",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these tasks belongs to the Routing Engine rather than the Packet Forwarding Engine?",
+    "explanation": "The Routing Engine handles the CLI, configuration, system management and routing protocols. Per-packet lookups and moving packets between interfaces are the Packet Forwarding Engine's job.",
+    "options": [
+      "Running the CLI and accepting configuration commits",
+      "Looking up each transit packet's destination in hardware",
+      "Moving frames between ingress and egress interfaces",
+      "Applying the forwarding table to line-rate traffic"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-008",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Login classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user needs to clear statistics and run ping and traceroute but must not change the configuration. Which predefined login class fits?",
+    "explanation": "operator has the clear, network, reset, trace and view permissions, which covers clearing counters and network tools without configuration rights. read-only has view only.",
+    "options": [
+      "$\\texttt{unauthorized}$",
+      "$\\texttt{operator}$",
+      "$\\texttt{super-user}$",
+      "$\\texttt{read-only}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-009",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Decimal to binary",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What decimal number is the binary value 00101101? Type the number only.",
+    "explanation": "The 1 bits are worth 32, 8, 4 and 1, and 32 + 8 + 4 + 1 = 45.",
+    "numeric": {
+      "answers": [
+        "45"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T2-010",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Help",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In operational mode, what does typing $\\texttt{show ?}$ display?",
+    "explanation": "A question mark lists the possible completions at that point with a short description of each, so $\\texttt{show ?}$ lists everything that can follow $\\texttt{show}$.",
+    "options": [
+      "The output of every show command",
+      "Every command entered in the session",
+      "The options that can follow the show command",
+      "The full Junos documentation for show"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-011",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Monitor commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command follows /var/log/messages on screen as new lines are written?",
+    "explanation": "$\\texttt{monitor start messages}$ streams new log entries to the session until $\\texttt{monitor stop}$ is entered.",
+    "options": [
+      "$\\texttt{monitor interface messages}$",
+      "$\\texttt{monitor start messages}$",
+      "$\\texttt{file show messages}$",
+      "$\\texttt{show log messages | last}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-012",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Route preference",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which route source has the most preferred default value on a Junos device?",
+    "explanation": "Directly connected networks have preference 0, the lowest and so most preferred. Static routes are 5, OSPF internal 10 and BGP 170.",
+    "options": [
+      "Static routes",
+      "OSPF internal routes",
+      "Direct routes",
+      "BGP routes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-013",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Route filter match types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which route filter matches 172.16.0.0/16 and any more specific prefix down to a /24, but nothing longer?",
+    "explanation": "upto /24 matches prefix lengths from /16 through /24 within 172.16.0.0/16. orlonger has no upper limit, longer leaves out the /16 itself, and the /24 orlonger filter starts at the wrong prefix.",
+    "options": [
+      "$\\texttt{route-filter 172.16.0.0/24 orlonger}$",
+      "$\\texttt{route-filter 172.16.0.0/16 orlonger}$",
+      "$\\texttt{route-filter 172.16.0.0/16 longer}$",
+      "$\\texttt{route-filter 172.16.0.0/16 upto /24}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-014",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Control and forwarding planes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In Junos terms, which component is the forwarding plane?",
+    "explanation": "The Packet Forwarding Engine is the forwarding plane, and the Routing Engine is the control plane. The routing table and the management process both live on the Routing Engine.",
+    "options": [
+      "Packet Forwarding Engine",
+      "Routing table",
+      "Management daemon",
+      "Routing Engine"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-015",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Authentication methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A device has $\\texttt{authentication-order [ radius password ]}$, and none of the configured RADIUS servers answer. How is a login checked?",
+    "explanation": "Junos tries the methods in the order listed. When no RADIUS server responds, it moves on to password, the local accounts under [edit system login].",
+    "options": [
+      "It is accepted with the read-only class",
+      "Against the local password database",
+      "It is denied until a RADIUS server answers",
+      "Against the TACACS+ servers instead"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-016",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Supernetting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which single prefix summarizes 172.16.8.0/24, 172.16.9.0/24, 172.16.10.0/24 and 172.16.11.0/24 with no extra addresses?",
+    "explanation": "The third octets 8 to 11 are 00001000 to 00001011, which share their first six bits, so 16 + 6 = 22 bits. A /23 covers only 8 and 9, and the /21 and /20 also take in networks that were not listed.",
+    "options": [
+      "172.16.8.0/21",
+      "172.16.8.0/23",
+      "172.16.8.0/22",
+      "172.16.0.0/20"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-017",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Committing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator is changing a firewall filter on a remote router and could lose access. Which command applies the change but reverts it automatically unless it is confirmed?",
+    "explanation": "$\\texttt{commit confirmed}$ activates the candidate and rolls back by itself unless another commit follows within the window, 10 minutes by default. $\\texttt{commit check}$ only validates, and $\\texttt{commit synchronize}$ copies the configuration to the other Routing Engine.",
+    "options": [
+      "$\\texttt{commit and-quit}$",
+      "$\\texttt{commit confirmed}$",
+      "$\\texttt{commit synchronize}$",
+      "$\\texttt{commit check}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-018",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Monitor commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command captures and decodes the packet headers that the Routing Engine sends and receives on ge-0/0/0?",
+    "explanation": "$\\texttt{monitor traffic}$ shows packets to and from the Routing Engine on that interface, like a packet capture. It does not show transit traffic, which never reaches the Routing Engine.",
+    "options": [
+      "$\\texttt{monitor interface ge-0/0/0}$",
+      "$\\texttt{monitor traffic interface ge-0/0/0}$",
+      "$\\texttt{show interfaces ge-0/0/0 extensive}$",
+      "$\\texttt{show log ge-0/0/0}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-019",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In $\\texttt{show route}$ output, what does the asterisk next to a route mean?",
+    "explanation": "An asterisk marks the active route for that prefix, the one installed in the forwarding table. Hidden routes do not appear without the hidden keyword.",
+    "options": [
+      "The route is the active route",
+      "The route is hidden",
+      "The route was learned from a static route",
+      "The route is waiting for a commit"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-020",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Route filter match types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which match type matches only the more specific prefixes inside 192.168.0.0/16, and not the /16 itself?",
+    "explanation": "longer matches prefixes longer than /16 within the range but excludes the /16. orlonger includes it, and exact matches only the /16.",
+    "options": [
+      "$\\texttt{orlonger}$",
+      "$\\texttt{exact}$",
+      "$\\texttt{upto /16}$",
+      "$\\texttt{longer}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-021",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which interface does Junos create automatically to hold the router's own stable address, often used as the router ID?",
+    "explanation": "lo0 is the loopback interface, which never goes down with a physical link. fxp0 is the management Ethernet interface on many platforms, ae0 an aggregated Ethernet bundle and irb an integrated routing and bridging interface.",
+    "options": [
+      "$\\texttt{irb}$",
+      "$\\texttt{fxp0}$",
+      "$\\texttt{ae0}$",
+      "$\\texttt{lo0}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-022",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Collision and broadcast domains",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has three Ethernet interfaces in use, each connected to a different switch with one VLAN. How many broadcast domains does the router separate?",
+    "explanation": "Each router interface is the edge of a broadcast domain, so three interfaces on three switches make three broadcast domains. Broadcasts never cross the router.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "JNCIA-T2-023",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Committing",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "If no time is given, how many minutes does $\\texttt{commit confirmed}$ wait for confirmation before rolling back? Type the number only.",
+    "explanation": "The default window is 10 minutes. A number after the command, such as $\\texttt{commit confirmed 3}$, sets a different window.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T2-024",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Exception traffic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network monitoring station pings the router's own loopback address. How is that ping handled?",
+    "explanation": "Traffic addressed to the router itself goes up to the Routing Engine, which generates the echo reply. Loopback addresses answer pings unless a filter blocks them.",
+    "options": [
+      "The Routing Engine receives it and replies",
+      "It is dropped because loopback addresses do not answer pings",
+      "It is transit traffic answered by the Packet Forwarding Engine",
+      "It is passed to the management interface for a reply"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-025",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which ping option sends the probes quickly back to back and prints a ! for each reply?",
+    "explanation": "rapid sends five probes by default in quick succession and prints ! for each reply and . for each timeout. count sets the number of probes.",
+    "options": [
+      "$\\texttt{detail}$",
+      "$\\texttt{rapid}$",
+      "$\\texttt{record-route}$",
+      "$\\texttt{count}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-026",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A virtual-router instance is named CUST-A. Which table holds its IPv4 routes?",
+    "explanation": "Each instance gets its own tables named after it, so IPv4 unicast routes go to CUST-A.inet.0 and IPv6 to CUST-A.inet6.0. inet.0 belongs to the master instance.",
+    "options": [
+      "$\\texttt{CUST-A.inet6.0}$",
+      "$\\texttt{CUST-A.inet.0}$",
+      "$\\texttt{inet.0}$",
+      "$\\texttt{inet.CUST-A}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-027",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Policy structure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A policy term has a from statement listing protocol static and route-filter 10.0.0.0/8 orlonger. Which routes match the term?",
+    "explanation": "Different match conditions in one from statement are combined with a logical AND, so a route must be static and inside 10.0.0.0/8.",
+    "options": [
+      "Routes inside 10.0.0.0/8 from any protocol except static",
+      "Static routes that fall inside 10.0.0.0/8",
+      "Any static route, or any route inside 10.0.0.0/8",
+      "Only the static route 10.0.0.0/8 itself"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-028",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface properties",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shuts down ge-0/0/4 administratively while keeping its configuration?",
+    "explanation": "The disable statement brings the interface administratively down; deleting it with $\\texttt{delete interfaces ge-0/0/4 disable}$ brings it back. Junos has no shutdown statement.",
+    "options": [
+      "$\\texttt{deactivate interfaces ge-0/0/4 description}$",
+      "$\\texttt{set interfaces ge-0/0/4 shutdown}$",
+      "$\\texttt{set interfaces ge-0/0/4 disable}$",
+      "$\\texttt{delete interfaces ge-0/0/4}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-029",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Ethernet",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many bits long is an Ethernet MAC address?",
+    "explanation": "A MAC address is 48 bits, written as six hexadecimal octets, with the first 24 bits identifying the manufacturer. 32 bits is an IPv4 address and 128 bits an IPv6 address.",
+    "options": [
+      "32",
+      "48",
+      "64",
+      "128"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "JNCIA-T2-030",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Reverting configurations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator has made many uncommitted changes and wants to throw them all away. Which command does this?",
+    "explanation": "$\\texttt{rollback 0}$ reloads the active configuration into the candidate, discarding the uncommitted edits. $\\texttt{rollback 1}$ would load the previous commit, and $\\texttt{delete}$ at the top level would erase the whole candidate.",
+    "options": [
+      "$\\texttt{delete}$",
+      "$\\texttt{rollback rescue}$",
+      "$\\texttt{rollback 1}$",
+      "$\\texttt{rollback 0}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-031",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Routing and forwarding tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the relationship between the routing table and the forwarding table on a Junos device?",
+    "explanation": "The routing table can hold several routes to a destination from different sources; the Routing Engine picks the active one and installs it in the forwarding table used by the Packet Forwarding Engine.",
+    "options": [
+      "The forwarding table holds only the configured static routes",
+      "The forwarding table holds the active routes only",
+      "The two tables are identical",
+      "The routing table is copied from the forwarding table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-032",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Configuration groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pipe option shows a configuration with the statements inherited from configuration groups expanded in place?",
+    "explanation": "$\\texttt{display inheritance}$ shows inherited statements and comments naming the group each came from.",
+    "options": [
+      "$\\texttt{| display set}$",
+      "$\\texttt{| compare}$",
+      "$\\texttt{| display inheritance}$",
+      "$\\texttt{| display groups}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-033",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to open a secure management session to a neighboring router from the Junos CLI. Which command does this?",
+    "explanation": "The CLI has ssh and telnet clients; ssh encrypts the session, while telnet sends everything, passwords included, in clear text.",
+    "options": [
+      "$\\texttt{file copy 10.0.0.2}$",
+      "$\\texttt{ping 10.0.0.2}$",
+      "$\\texttt{telnet 10.0.0.2}$",
+      "$\\texttt{ssh 10.0.0.2}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-034",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Static routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which static route next hop drops matching packets silently, with no ICMP message?",
+    "explanation": "A discard next hop drops packets silently, while reject drops them and sends an ICMP unreachable. Both are used to sink traffic for summary or blocked prefixes.",
+    "options": [
+      "$\\texttt{reject}$",
+      "$\\texttt{receive}$",
+      "$\\texttt{discard}$",
+      "$\\texttt{next-hop 0.0.0.0}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-035",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Policy actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which routing policy action skips the rest of the current policy and moves to the next policy in the chain?",
+    "explanation": "next policy jumps to the next policy in the chain, next term to the next term in this policy. accept and reject are terminating and end evaluation.",
+    "options": [
+      "$\\texttt{reject}$",
+      "$\\texttt{next policy}$",
+      "$\\texttt{accept}$",
+      "$\\texttt{next term}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-036",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Layer 2 addressing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To which destination MAC address does a host send an ARP request?",
+    "explanation": "An ARP request is a Layer 2 broadcast to ff:ff:ff:ff:ff:ff, because the sender does not yet know the target's MAC address. The reply comes back as a unicast.",
+    "options": [
+      "00:00:00:00:00:00",
+      "01:00:5e:00:00:01",
+      "ff:ff:ff:ff:ff:ff",
+      "The default gateway's MAC address"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-037",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Output filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows the active configuration as a list of set commands?",
+    "explanation": "$\\texttt{display set}$ writes the configuration as the set commands that would build it. $\\texttt{match set}$ would only filter lines containing the word set.",
+    "options": [
+      "$\\texttt{show configuration | display set}$",
+      "$\\texttt{show configuration | display xml}$",
+      "$\\texttt{show configuration | compare}$",
+      "$\\texttt{show configuration | match set}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-038",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Configuration groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Inside a configuration group, which interface name matches every existing Gigabit Ethernet interface?",
+    "explanation": "Group wildcards go inside angle brackets, such as <ge-*>, and match existing interface names. The group still has to be applied with apply-groups.",
+    "options": [
+      "$\\texttt{[ge-*]}$",
+      "$\\texttt{<ge-*>}$",
+      "$\\texttt{all-ge}$",
+      "$\\texttt{ge-*}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-039",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Rebooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command restarts the device to load a newly installed Junos package?",
+    "explanation": "$\\texttt{request system reboot}$ shuts down and restarts the device. halt stops it without restarting, and restarting a single process does not load a new package.",
+    "options": [
+      "$\\texttt{request system halt}$",
+      "$\\texttt{commit full}$",
+      "$\\texttt{restart chassis-control}$",
+      "$\\texttt{request system reboot}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-040",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Static routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which static route option keeps a route in the routing table but stops it from being advertised by routing protocols through an export policy?",
+    "explanation": "no-readvertise marks the static route as not eligible for readvertising, while readvertise (the default) leaves it eligible. no-install keeps it out of the forwarding table, and retain keeps it in the forwarding table when the routing process stops.",
+    "options": [
+      "$\\texttt{retain}$",
+      "$\\texttt{no-readvertise}$",
+      "$\\texttt{readvertise}$",
+      "$\\texttt{no-install}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-041",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Firewall filter actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A term has only the action $\\texttt{count TELNET-HITS}$ and no terminating action. What happens to a packet that matches?",
+    "explanation": "count is nonterminating. Without an explicit terminating action, a term with a nonterminating action accepts the packet; next term is needed to keep evaluating.",
+    "options": [
+      "It is counted and evaluated by the next term",
+      "It is counted and then discarded",
+      "It is counted and then rejected",
+      "It is counted and then accepted"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-042",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Software architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Junos OS runs as one software train on Juniper's routers, switches and firewalls. What does this give an operator?",
+    "explanation": "Juniper builds one Junos OS for its platforms, so the CLI, configuration hierarchy and operational commands carry over between routers, switches and security devices.",
+    "options": [
+      "Identical forwarding hardware in every device model",
+      "Routing protocols that run only on the router models",
+      "A separate operating system to learn for each platform",
+      "The same CLI and configuration style across the product lines"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-043",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Class of service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Voice packets must leave a congested interface ahead of bulk file transfers. Which mechanism does this?",
+    "explanation": "Class of service classifies packets into forwarding classes and gives each its own queue and scheduling, so delay-sensitive voice is served before bulk data. The other mechanisms do not order packets on an interface.",
+    "options": [
+      "Class of service",
+      "Route preference",
+      "Address resolution",
+      "Unicast RPF"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-044",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Comparing configurations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command, in operational mode, compares the active configuration with the one committed three commits ago?",
+    "explanation": "Piping $\\texttt{show configuration}$ into $\\texttt{compare rollback 3}$ lists the differences between the active configuration and rollback 3.",
+    "options": [
+      "$\\texttt{show system rollback 3}$",
+      "$\\texttt{show configuration | display rollback 3}$",
+      "$\\texttt{show configuration | compare rollback 3}$",
+      "$\\texttt{show configuration | rollback 3}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-045",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Logging and tracing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants detailed debug output for OSPF written to a file. Which statement does this?",
+    "explanation": "traceoptions under a protocol writes that protocol's detailed tracing to a file, with flags to choose what is traced. System logging collects event messages, not protocol traces.",
+    "options": [
+      "$\\texttt{set protocols ospf traceoptions file ospf-trace}$",
+      "$\\texttt{set system tracing ospf file ospf-trace}$",
+      "$\\texttt{set protocols ospf syslog ospf-trace}$",
+      "$\\texttt{set system syslog file ospf-trace ospf debug}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-046",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Root password recovery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During root password recovery the device boots into recovery mode at the console. What must happen after the new root password is set?",
+    "explanation": "The new root-authentication statement is a configuration change, so it takes effect only after a commit, as with any other change.",
+    "options": [
+      "An SNMP trap is acknowledged",
+      "The change is committed",
+      "The rescue configuration is deleted",
+      "The device is zeroized"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-047",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Dynamic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A branch office has a single link to the head office and no other exits. Which routing setup is simplest for the branch router?",
+    "explanation": "A stub site with one way out needs nothing more than a default route; a dynamic protocol adds work without giving the branch any path choices.",
+    "options": [
+      "OSPF in its own separate area",
+      "Full BGP routes from the head office",
+      "RIP running on every interface",
+      "A static default route"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-048",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Firewall filter actions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which firewall filter action drops a packet and sends an ICMP message back to the sender?",
+    "explanation": "reject sends an ICMP message, administratively prohibited by default, while discard drops silently.",
+    "options": [
+      "$\\texttt{syslog}$",
+      "$\\texttt{next term}$",
+      "$\\texttt{discard}$",
+      "$\\texttt{reject}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-049",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Connectionless protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A DNS lookup uses a single request and reply with no session setup or retransmission at the transport layer. Which transport protocol does that describe?",
+    "explanation": "UDP is connectionless: it sends datagrams with no handshake, acknowledgment or sequencing, which suits short exchanges such as DNS queries.",
+    "options": [
+      "UDP",
+      "SCTP",
+      "GRE",
+      "TCP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-050",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Viewing configuration files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which operational command lists the recent commits with their dates and the users who made them?",
+    "explanation": "$\\texttt{show system commit}$ lists the commit history, including who committed, when, and how, and any pending scheduled or confirmed commit.",
+    "options": [
+      "$\\texttt{show configuration history}$",
+      "$\\texttt{show system rollback}$",
+      "$\\texttt{show system commit}$",
+      "$\\texttt{show log commits}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-051",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "System logging",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Syslog severities are numbered from 0 (emergency) to 7 (debug). What number is the warning severity? Type the number only.",
+    "explanation": "The levels are 0 emergency, 1 alert, 2 critical, 3 error, 4 warning, 5 notice, 6 info and 7 debug.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-T2-052",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Exception traffic",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why is the stream of exception traffic from the Packet Forwarding Engine to the Routing Engine rate limited?",
+    "explanation": "The Routing Engine has far less packet capacity than the forwarding hardware, so exception traffic is limited to protect routing protocols and management from a flood, such as a denial of service attack.",
+    "options": [
+      "Because the Routing Engine cannot process routing protocol packets",
+      "To keep the routing tables from growing too large",
+      "To slow transit traffic so routes can converge",
+      "To protect the control plane from floods"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-053",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "System maintenance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows how much space is free on the device's file systems?",
+    "explanation": "$\\texttt{show system storage}$ lists each file system with its size, used and available space. $\\texttt{request system storage cleanup}$ frees space by removing old log and temporary files.",
+    "options": [
+      "$\\texttt{show system storage}$",
+      "$\\texttt{show system uptime}$",
+      "$\\texttt{show chassis environment}$",
+      "$\\texttt{show system processes}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-054",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Traffic forwarding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has two routes to 192.168.5.0/24: OSPF internal with metric 30 and RIP with metric 2. Which one is active?",
+    "explanation": "Routes from different protocols are compared by preference, not metric. OSPF internal is 10 and RIP is 100, so OSPF wins; metrics only compare routes within one protocol.",
+    "options": [
+      "The OSPF route",
+      "The one learned first",
+      "The RIP route",
+      "Both, load-balanced"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-T2-055",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Applying firewall filters",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many firewall filters can be applied with the filter statement to one protocol family on an interface in the input direction?",
+    "explanation": "Only one filter per family per direction is allowed with filter input; a second one replaces the first. input-list is used to apply several filters in sequence.",
+    "options": [
+      "Unlimited",
+      "Four",
+      "Two",
+      "One"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-056",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "IPv6 addressing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a valid shortened form of 2001:0db8:0000:0000:0000:0000:0000:0001?",
+    "explanation": "Leading zeros in each group can be dropped, and one run of all-zero groups becomes a double colon, giving 2001:db8::1. A double colon may be used only once, and 2001:db8:1 has too few groups.",
+    "options": [
+      "2001:0db8::0::1",
+      "2001::db8::1",
+      "2001:db8:1",
+      "2001:db8::1"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-057",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Saving configuration files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to keep a copy of the candidate configuration as a text file in the home directory. Which configuration mode command does this?",
+    "explanation": "$\\texttt{save}$ writes the configuration at the current level to a file, by default in the user's home directory. $\\texttt{load}$ reads a file in, and $\\texttt{commit}$ does not take a file name.",
+    "options": [
+      "$\\texttt{copy R1-backup.conf}$",
+      "$\\texttt{save R1-backup.conf}$",
+      "$\\texttt{commit R1-backup.conf}$",
+      "$\\texttt{load R1-backup.conf}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-058",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Rescue configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bad commit broke management access, and a rescue configuration was saved earlier. From the console, which configuration mode commands restore it?",
+    "explanation": "$\\texttt{rollback rescue}$ loads the rescue configuration into the candidate, and $\\texttt{commit}$ activates it. Saving a new rescue file now would capture the broken configuration.",
+    "options": [
+      "$\\texttt{request system configuration rescue save}$",
+      "$\\texttt{load rescue}$, then $\\texttt{commit}$",
+      "$\\texttt{rollback 49}$, then $\\texttt{commit}$",
+      "$\\texttt{rollback rescue}$, then $\\texttt{commit}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-059",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Transit and exception traffic",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two packets are exception traffic on a Junos router? (Choose two.)",
+    "explanation": "Routing protocol packets and management traffic addressed to the router go to the Routing Engine as exception traffic. Mail, video and DNS packets between other hosts only pass through and are transit traffic.",
+    "options": [
+      "An email message passing between two mail servers",
+      "A DNS reply forwarded to a host on another subnet",
+      "A BGP update from a directly connected peer",
+      "An SNMP get request sent to the router's address",
+      "A video stream from a server to a client"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "JNCIA-T2-060",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Show commands",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command shows how long the device has been running since its last boot?",
+    "explanation": "$\\texttt{show system uptime}$ gives the current time, the last boot, the last configuration change and the system uptime.",
+    "options": [
+      "$\\texttt{show system commit}$",
+      "$\\texttt{show system uptime}$",
+      "$\\texttt{show version}$",
+      "$\\texttt{show chassis routing-engine temperature}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-T2-061",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows only the routes in the table that were learned from OSPF?",
+    "explanation": "The protocol keyword filters $\\texttt{show route}$ to one route source. $\\texttt{show ospf route}$ is a separate command that shows OSPF's own calculated routes.",
+    "options": [
+      "$\\texttt{show route receive-protocol ospf}$",
+      "$\\texttt{show route ospf}$",
+      "$\\texttt{show route protocol ospf}$",
+      "$\\texttt{show route table ospf.0}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-062",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Unicast RPF",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which unicast RPF mode drops a packet when the route back to its source does not use the interface it arrived on?",
+    "explanation": "Strict mode, the default, checks both that a route to the source exists and that it uses the arrival interface. Loose mode only checks that some route to the source exists.",
+    "options": [
+      "Default-route mode",
+      "Feasible mode",
+      "Strict mode",
+      "Loose mode"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-063",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Longest match",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A router has routes for 192.168.0.0/16, 192.168.64.0/18 and 192.168.96.0/19. Which route forwards a packet to 192.168.100.5?",
+    "explanation": "192.168.96.0/19 covers 96.0 to 127.255 in the third and fourth octets, so it contains .100.5 and is the longest match. The /18 (64 to 127) and the /16 also contain it but are less specific.",
+    "options": [
+      "192.168.0.0/16",
+      "No route matches",
+      "192.168.96.0/19",
+      "192.168.64.0/18"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-T2-064",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI navigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants to work directly at the OSPF area 0 level so that later $\\texttt{set}$ commands are shorter. Which command does this?",
+    "explanation": "$\\texttt{edit}$ moves the session to that hierarchy level, and the banner above the prompt shows the new level. $\\texttt{set}$ would add the statement without moving.",
+    "options": [
+      "$\\texttt{show protocols ospf area 0}$",
+      "$\\texttt{top protocols ospf area 0}$",
+      "$\\texttt{set protocols ospf area 0}$",
+      "$\\texttt{edit protocols ospf area 0}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-T2-065",
+    "section": "jncia",
+    "test": 2,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface properties",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command labels ge-0/0/1 with the text uplink to core so it shows in interface output?",
+    "explanation": "The description statement sets text that appears in show interfaces output. annotate adds a comment to the configuration file only, and Junos has no interface alias statement for this.",
+    "options": [
+      "$\\texttt{set interfaces ge-0/0/1 unit 0 family inet uplink-to-core}$",
+      "$\\texttt{annotate interfaces ge-0/0/1 uplink-to-core}$",
+      "$\\texttt{set interfaces ge-0/0/1 description uplink-to-core}$",
+      "$\\texttt{set interfaces ge-0/0/1 alias uplink-to-core}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-001",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Subnetting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the last octet of the broadcast address of the subnet containing 10.1.1.70/26? Type the number only.",
+    "explanation": "A /26 makes blocks of 64: .0, .64, .128, .192. Host .70 is in the .64 block, whose last address is .127.",
+    "numeric": {
+      "answers": [
+        "127"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-D-002",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Routing Engine",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Junos process handles routing protocols such as OSPF and BGP on the Routing Engine?",
+    "explanation": "The routing protocol process, rpd, runs the routing protocols and maintains the routing tables. mgd is the management process behind the CLI, chassisd manages chassis hardware and dcd configures interfaces.",
+    "options": [
+      "$\\texttt{mgd}$",
+      "$\\texttt{rpd}$",
+      "$\\texttt{chassisd}$",
+      "$\\texttt{dcd}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-003",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI functionality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which configuration mode command removes a statement from the candidate configuration?",
+    "explanation": "$\\texttt{delete}$ removes the statement. $\\texttt{deactivate}$ keeps it but marks it inactive so it is ignored at commit, and $\\texttt{annotate}$ adds a comment.",
+    "options": [
+      "$\\texttt{rollback}$",
+      "$\\texttt{annotate}$",
+      "$\\texttt{deactivate}$",
+      "$\\texttt{delete}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-004",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which interface type is a bundle of several Ethernet links acting as one logical link?",
+    "explanation": "ae interfaces are aggregated Ethernet bundles. lo is loopback, and xe and et are 10 Gigabit and 40 or 100 Gigabit Ethernet ports.",
+    "options": [
+      "$\\texttt{xe}$",
+      "$\\texttt{lo}$",
+      "$\\texttt{et}$",
+      "$\\texttt{ae}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-005",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Interface statistics and errors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In $\\texttt{show interfaces terse}$, ge-0/0/3 shows Admin up and Link down. What does this mean?",
+    "explanation": "Admin reflects the configuration, so up means it is not disabled; Link down means no carrier, such as an unplugged or faulty cable or a far end that is down.",
+    "options": [
+      "The interface is disabled in the configuration",
+      "The interface has no logical unit configured",
+      "The interface is up and passing traffic",
+      "The interface is enabled but has no physical link"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-006",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Route preference",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the default route preference of a static route on a Junos device? Type the number only.",
+    "explanation": "Static routes default to 5, so they beat routes from dynamic protocols such as OSPF (10 internal) and BGP (170).",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-D-007",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Default routing policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the default import policy for OSPF routes on a Junos router?",
+    "explanation": "OSPF's default import policy accepts all OSPF routes into inet.0, and import policies can only act on external routes.",
+    "options": [
+      "Accept only routes from area 0",
+      "Reject all OSPF routes until a policy accepts them",
+      "Accept all OSPF routes into inet.0",
+      "Accept only OSPF external routes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-008",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Subnetting",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the longest prefix length that still gives at least 1000 usable hosts in one IPv4 subnet? Type the number only.",
+    "explanation": "1000 hosts need 10 host bits (2 to the 10th is 1024, minus 2 is 1022), and 32 minus 10 is 22. A /23 gives only 510.",
+    "numeric": {
+      "answers": [
+        "22"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-D-009",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Software architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Junos process manages the configuration and answers CLI and management requests?",
+    "explanation": "The management process, mgd, handles the CLI, the candidate configuration and commits. rpd runs routing protocols, dcd configures interfaces and chassisd watches the chassis.",
+    "options": [
+      "$\\texttt{rpd}$",
+      "$\\texttt{mgd}$",
+      "$\\texttt{dcd}$",
+      "$\\texttt{chassisd}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-010",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "CLI functionality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator wants an interface statement ignored at commit but kept in the configuration so it can be turned back on later. Which command does this?",
+    "explanation": "$\\texttt{deactivate}$ marks the statement inactive, and $\\texttt{activate}$ restores it. $\\texttt{delete}$ removes it, and $\\texttt{disable}$ is a statement that shuts an interface down.",
+    "options": [
+      "$\\texttt{delete}$",
+      "$\\texttt{disable}$",
+      "$\\texttt{deactivate}$",
+      "$\\texttt{rename}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-011",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Interface properties",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a physical property set on the interface itself rather than on a logical unit?",
+    "explanation": "Physical properties such as MTU, speed and description of the link go on the interface; addresses, families and filters go on a logical unit.",
+    "options": [
+      "An IPv4 address",
+      "The MTU of the link",
+      "The protocol family",
+      "A firewall filter"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-012",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows the system alarms raised by the Junos software, such as a missing rescue configuration?",
+    "explanation": "$\\texttt{show system alarms}$ lists software alarms such as no rescue configuration or a license issue. Hardware alarms are shown by $\\texttt{show chassis alarms}$.",
+    "options": [
+      "$\\texttt{show chassis environment}$",
+      "$\\texttt{show system alarms}$",
+      "$\\texttt{show log alarms}$",
+      "$\\texttt{show system errors}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-013",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Route preference",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Put simply, how does a Junos router compare two routes to the same prefix learned from different protocols?",
+    "explanation": "Preference ranks route sources, and the lowest value is most preferred. Metrics only break ties between routes from the same protocol.",
+    "options": [
+      "The higher preference value wins",
+      "The route learned most recently wins",
+      "The lower metric wins regardless of protocol",
+      "The lower preference value wins"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-014",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Default routing policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Without an export policy, which routes does RIP advertise to its neighbors?",
+    "explanation": "RIP's default export policy rejects everything, so even RIP-learned routes are not advertised until an export policy accepts them.",
+    "options": [
+      "Every route in inet.0",
+      "No routes at all",
+      "Only directly connected routes",
+      "Only routes learned from other RIP routers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-015",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Decimal to binary",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "How many 1 bits are in the mask 255.255.255.248? Type the number only.",
+    "explanation": "Three octets of 255 are 24 bits, and 248 is 11111000, five more bits, for 29 in all.",
+    "numeric": {
+      "answers": [
+        "29"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "JNCIA-D-016",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Software architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Junos process configures and monitors the device's network interfaces?",
+    "explanation": "The device control process, dcd, sets up interfaces from the configuration. chassisd manages chassis components such as power and fans, mgd handles management and rpd routing.",
+    "options": [
+      "$\\texttt{chassisd}$",
+      "$\\texttt{dcd}$",
+      "$\\texttt{rpd}$",
+      "$\\texttt{mgd}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-017",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Output filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A long $\\texttt{show route}$ output pauses at every screen. Which pipe option prints it all at once?",
+    "explanation": "$\\texttt{no-more}$ turns off paging for that output. $\\texttt{hold}$ keeps the output on screen at the end, $\\texttt{last}$ shows the final lines and $\\texttt{trim}$ cuts leading columns.",
+    "options": [
+      "$\\texttt{| last}$",
+      "$\\texttt{| trim}$",
+      "$\\texttt{| no-more}$",
+      "$\\texttt{| hold}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-018",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Factory default",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which configuration mode command loads the factory-default configuration into the candidate?",
+    "explanation": "$\\texttt{load factory-default}$ replaces the candidate with the default configuration; a root password must still be set before the commit. $\\texttt{request system zeroize}$ is an operational command that also wipes user files and reboots.",
+    "options": [
+      "$\\texttt{load factory-default}$",
+      "$\\texttt{rollback 0}$",
+      "$\\texttt{request system zeroize}$",
+      "$\\texttt{delete system}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-019",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command tests whether host 10.1.1.5 answers, sending exactly 3 probes?",
+    "explanation": "count sets the number of echo requests. size sets the payload size, and traceroute shows the path rather than repeating probes to one host.",
+    "options": [
+      "$\\texttt{traceroute 10.1.1.5 count 3}$",
+      "$\\texttt{ping 10.1.1.5 size 3}$",
+      "$\\texttt{ping 10.1.1.5 rapid 3}$",
+      "$\\texttt{ping 10.1.1.5 count 3}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-020",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Static routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two static routes to 0.0.0.0/0 must point to different ISPs, one as primary and one as backup with its own preference. Which option allows a second next hop with a different preference?",
+    "explanation": "qualified-next-hop lets one static route carry several next hops, each with its own preference or metric, so a backup can sit behind the primary.",
+    "options": [
+      "$\\texttt{next-table}$",
+      "$\\texttt{community}$",
+      "$\\texttt{resolve}$",
+      "$\\texttt{qualified-next-hop}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-021",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Route filter match types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which route filter matches only the prefix 10.20.0.0/16 and nothing more specific?",
+    "explanation": "exact matches the prefix with that exact length only. orlonger, longer and upto /32 all reach more specific prefixes.",
+    "options": [
+      "$\\texttt{route-filter 10.20.0.0/16 longer}$",
+      "$\\texttt{route-filter 10.20.0.0/16 exact}$",
+      "$\\texttt{route-filter 10.20.0.0/16 orlonger}$",
+      "$\\texttt{route-filter 10.20.0.0/16 upto /32}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-022",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Roles of routers and switches",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Layer 2 switch receives a frame for a destination MAC address that is not in its table. What does it do?",
+    "explanation": "An unknown unicast frame is flooded within the VLAN; when the destination replies, the switch learns its MAC address and port. Switches do not generate ICMP or hold frames.",
+    "options": [
+      "Sends the frame only to the default gateway port",
+      "Holds the frame until the destination sends traffic",
+      "Drops the frame and sends an ICMP unreachable message",
+      "Floods it out every other port in the VLAN"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-023",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Transit traffic",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What kind of traffic is a file download that enters one interface and leaves another on its way between two other hosts?",
+    "explanation": "Traffic that only passes through the device is transit traffic and is handled entirely by the Packet Forwarding Engine.",
+    "options": [
+      "Exception traffic",
+      "Host-generated traffic",
+      "Control traffic",
+      "Transit traffic"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-024",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Managing configuration files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator pastes a few lines of hierarchical configuration and wants them added to the existing candidate. Which command reads them from the terminal?",
+    "explanation": "$\\texttt{load merge terminal}$ combines the pasted statements with the candidate. $\\texttt{load override}$ would replace the whole configuration, and $\\texttt{load replace}$ acts only on statements tagged with replace.",
+    "options": [
+      "$\\texttt{load factory-default}$",
+      "$\\texttt{load override terminal}$",
+      "$\\texttt{load merge terminal}$",
+      "$\\texttt{load replace terminal}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-025",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Rescue configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does Junos keep the saved rescue configuration file?",
+    "explanation": "The rescue file is saved in the /config directory as rescue.conf.gz, alongside the active configuration and the most recent rollback files.",
+    "options": [
+      "$\\texttt{/config/rescue.conf.gz}$",
+      "$\\texttt{/var/tmp/rescue.conf}$",
+      "$\\texttt{/var/home/rescue.conf}$",
+      "$\\texttt{/var/log/rescue.conf}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-026",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Junos OS upgrades",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command copies the running software and configuration to the alternate boot media as a backup?",
+    "explanation": "$\\texttt{request system snapshot}$ backs up the root file system and /config to the alternate media so the device can still boot if the primary is damaged.",
+    "options": [
+      "$\\texttt{file archive}$",
+      "$\\texttt{request system configuration rescue save}$",
+      "$\\texttt{request system software add}$",
+      "$\\texttt{request system snapshot}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-027",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Junos routing table holds IPv6 unicast routes?",
+    "explanation": "IPv6 unicast routes are kept in inet6.0, alongside inet.0 for IPv4.",
+    "options": [
+      "$\\texttt{inet.6}$",
+      "$\\texttt{inet6.0}$",
+      "$\\texttt{inet.0}$",
+      "$\\texttt{ipv6.0}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-028",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Routing policy testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which operational command shows which routes in the routing table a policy would accept, without applying it?",
+    "explanation": "$\\texttt{test policy}$ runs the routes in inet.0 through the policy and lists the ones it accepts. $\\texttt{show policy}$ lists the policies the routing process knows about.",
+    "options": [
+      "$\\texttt{commit check policy EXP}$",
+      "$\\texttt{test policy EXP 0.0.0.0/0}$",
+      "$\\texttt{show route export EXP}$",
+      "$\\texttt{show policy EXP}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-029",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "IPv4 addressing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which address range is private under RFC 1918?",
+    "explanation": "The RFC 1918 ranges are 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16. 192.0.2.0/24 is set aside for documentation and 169.254.0.0/16 is link-local.",
+    "options": [
+      "192.0.2.0/24",
+      "172.32.0.0/12",
+      "169.254.0.0/16",
+      "172.16.0.0/12"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-030",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Exception traffic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these packets is sent to the Routing Engine as exception traffic?",
+    "explanation": "Packets that need special handling, such as IP options or an expiring TTL, are exception traffic along with traffic addressed to the router. Ordinary transit packets stay in the Packet Forwarding Engine.",
+    "options": [
+      "A transit packet with a TTL of 64",
+      "A frame switched within one VLAN",
+      "A packet matching an installed route with no options",
+      "A packet with IP options that need processing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-031",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Active and candidate configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two administrators are in configuration mode at the same time with $\\texttt{configure}$. What happens when one of them commits?",
+    "explanation": "Plain $\\texttt{configure}$ gives everyone the same shared candidate, so a commit activates all of it. $\\texttt{configure private}$ and $\\texttt{configure exclusive}$ are the ways to avoid that.",
+    "options": [
+      "Each user's changes go to a separate active configuration file",
+      "Only the changes typed by the committing user are committed",
+      "Everything in the shared candidate is committed",
+      "The commit fails until the other user exits"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-032",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "Configuration archival",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does configuration archival send the configuration files?",
+    "explanation": "archive-sites lists one or more URLs, such as an FTP or SCP server, that receive the files; Junos tries them in order.",
+    "options": [
+      "To the SNMP trap target addresses",
+      "To the alternate boot media",
+      "To the archive-sites URLs",
+      "To the rescue configuration file"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-033",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Interface statistics and errors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which counter in $\\texttt{show interfaces extensive}$ most often points to a bad cable or a duplex mismatch?",
+    "explanation": "Frames that fail their CRC check are corrupted on the wire, commonly by a damaged cable, dirty optics or a mismatch. Byte and packet counters just measure traffic.",
+    "options": [
+      "Input CRC errors",
+      "Output bytes",
+      "Input packets",
+      "Link flaps cleared"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-034",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why might an administrator place a set of interfaces in a virtual-router routing instance?",
+    "explanation": "A virtual-router keeps a separate routing table, so overlapping or isolated networks, such as a management network, do not mix with the main table.",
+    "options": [
+      "To keep their routes separate",
+      "To apply one firewall filter to all of them at once",
+      "To raise the speed of those interfaces",
+      "To make the interfaces share one IP address"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-035",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Firewall filter concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Within one firewall filter term, how are several different match conditions in the from statement combined?",
+    "explanation": "The packet must match every condition in the from statement for the then actions to run, so the order of conditions does not matter. Several values for one condition, such as a list of addresses, match if any one does.",
+    "options": [
+      "All must match (logical AND)",
+      "Only the first one is checked",
+      "The last one overrides the others",
+      "Any one may match (logical OR)"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-036",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Class of service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which IPv4 header field do routers commonly read to classify packets for class of service?",
+    "explanation": "The DSCP bits in the former type-of-service byte carry a packet's marking, which classifiers map to forwarding classes. TTL limits hops, Protocol names the payload and the fragment offset places fragments.",
+    "options": [
+      "TTL",
+      "Fragment offset",
+      "Protocol",
+      "DSCP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-037",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Packet Forwarding Engine",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the Packet Forwarding Engine use to do Layer 2 and Layer 3 lookups at line rate?",
+    "explanation": "The Packet Forwarding Engine uses ASICs for switching, route lookups and forwarding, which is why transit traffic does not depend on the Routing Engine's CPU.",
+    "options": [
+      "The CLI process",
+      "Purpose-built forwarding ASICs",
+      "The routing protocol process",
+      "The Routing Engine CPU"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-038",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Active and candidate configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which configuration mode lets an administrator lock the candidate so that no one else can change it?",
+    "explanation": "$\\texttt{configure exclusive}$ locks the candidate for that user. $\\texttt{configure private}$ gives each user a private copy instead.",
+    "options": [
+      "$\\texttt{configure dynamic}$",
+      "$\\texttt{configure exclusive}$",
+      "$\\texttt{configure batch}$",
+      "$\\texttt{configure private}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-039",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "User accounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user named sam should not be allowed to log in for now, but the account should stay in the configuration. Which predefined class fits?",
+    "explanation": "The unauthorized class has no permissions, so the user cannot run commands. It is a way to keep an account defined while giving it no rights.",
+    "options": [
+      "$\\texttt{super-user}$",
+      "$\\texttt{operator}$",
+      "$\\texttt{unauthorized}$",
+      "$\\texttt{read-only}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-040",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Root password recovery",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Put the root password recovery steps in order on a Junos device with console access.",
+    "explanation": "Recovery mode stops the boot before the usual login, the new password is set in configuration mode and committed, and then the device boots normally with the new password.",
+    "options": [
+      "Reboot the device and interrupt the boot to choose recovery mode",
+      "Enter configuration mode at the recovery prompt",
+      "Set a new root-authentication password",
+      "Commit the configuration",
+      "Exit and let the device finish booting normally"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "JNCIA-D-041",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Traffic forwarding",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a router change in an IPv4 packet header each time it forwards the packet?",
+    "explanation": "Each hop decrements the TTL (and so recomputes the header checksum). The IP addresses stay the same unless NAT is in use.",
+    "options": [
+      "It replaces the source IP address",
+      "It resets the DSCP marking",
+      "It lowers the TTL by one",
+      "It replaces the destination IP address"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-042",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Firewall filter concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement turns a firewall filter into one that matches IPv6 packets?",
+    "explanation": "Filters are defined per protocol family; inet6 is the IPv6 family and inet is IPv4. Junos has no family called ipv6.",
+    "options": [
+      "$\\texttt{set firewall family inet filter F6 term 1 then accept}$",
+      "$\\texttt{set firewall family ipv6 filter F6 term 1 then accept}$",
+      "$\\texttt{set policy-options family inet6 filter F6 then accept}$",
+      "$\\texttt{set firewall family inet6 filter F6 term 1 then accept}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-043",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Layer 2 and Layer 3 addressing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A packet crosses two routers on its way to a remote server. Which address stays the same from source to destination?",
+    "explanation": "The IP addresses are end to end, while each router rewrites the Ethernet header with new source and destination MAC addresses for the next hop. VLAN tags only matter within a switched segment.",
+    "options": [
+      "The destination IP address",
+      "The destination MAC address",
+      "The VLAN tag",
+      "The source MAC address"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-044",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Routing and forwarding tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two routing protocols each offer a route to 10.5.0.0/16. How many of those routes go into the forwarding table?",
+    "explanation": "The routing table keeps both, but only the active route, the one with the best preference, is installed in the forwarding table. Equal-cost paths from one protocol are a separate case.",
+    "options": [
+      "Both, with the higher preference first",
+      "Both routes, used in turn",
+      "Neither until one is withdrawn",
+      "Only the active route"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-045",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Help",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command searches the Junos help text for every topic that mentions a word, such as \"traceoptions\"?",
+    "explanation": "$\\texttt{help apropos}$ searches help for a string. $\\texttt{help topic}$ shows the usage guidelines for one named statement.",
+    "options": [
+      "$\\texttt{help topic traceoptions}$",
+      "$\\texttt{help syslog traceoptions}$",
+      "$\\texttt{help apropos traceoptions}$",
+      "$\\texttt{show traceoptions ?}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-046",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "NTP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a router's clock be synchronized with NTP?",
+    "explanation": "Accurate time makes logs, traces and commit history from many devices comparable when troubleshooting; it also matters for certificates and scheduled tasks.",
+    "options": [
+      "So commits take effect at the same time everywhere",
+      "So log and trace timestamps line up across devices",
+      "So the Packet Forwarding Engine can forward faster",
+      "So routing protocols can choose the best path"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-047",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "System maintenance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command removes old log files and temporary files to free space before an upgrade?",
+    "explanation": "$\\texttt{request system storage cleanup}$ lists and deletes rotated logs, crash files and temporary files. zeroize would erase the configuration as well.",
+    "options": [
+      "$\\texttt{delete system syslog}$",
+      "$\\texttt{request system storage cleanup}$",
+      "$\\texttt{request system zeroize}$",
+      "$\\texttt{clear log messages}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-048",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Dynamic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which routing protocol is a link-state interior gateway protocol?",
+    "explanation": "OSPF is a link-state IGP that floods link information and runs SPF. RIP is a distance-vector IGP and BGP is the path-vector protocol used between autonomous systems.",
+    "options": [
+      "OSPF",
+      "BGP",
+      "Static",
+      "RIP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-049",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Effect of filters",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A filter on lo0 has one term that accepts SSH from 10.0.0.0/8 and nothing else. What happens to the router's OSPF adjacencies after the commit?",
+    "explanation": "An lo0 input filter covers all host-bound traffic, routing protocols included, and the implicit discard drops anything not accepted. Terms for OSPF, BGP and other needed traffic must be added.",
+    "options": [
+      "They stay up, because lo0 filters only affect SSH",
+      "They go down only on the management interface",
+      "They stay up, because routing protocol traffic bypasses lo0 filters",
+      "They go down, because OSPF packets now hit the implicit discard"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "JNCIA-D-050",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnNet",
+    "skill": "Subnetting",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Put the IPv4 subnets in order from the most host addresses to the fewest.",
+    "explanation": "Fewer prefix bits mean more addresses: a /22 holds 1,024, a /23 512, a /25 128, a /27 32 and a /30 4.",
+    "options": [
+      "10.0.0.0/22",
+      "10.0.4.0/23",
+      "10.0.6.0/25",
+      "10.0.6.128/27",
+      "10.0.6.160/30"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "JNCIA-D-051",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnJunos",
+    "skill": "Control and forwarding planes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which plane builds the knowledge of where networks are, and which plane moves the packets?",
+    "explanation": "The control plane, on the Routing Engine, learns and selects routes; the forwarding plane, the Packet Forwarding Engine, forwards packets using the result.",
+    "options": [
+      "The management plane learns routes and moves packets",
+      "Both planes learn routes and the switch fabric moves packets",
+      "The control plane learns routes and the forwarding plane moves packets",
+      "The forwarding plane learns routes and the control plane moves packets"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-052",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnUi",
+    "skill": "Reverting configurations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An administrator runs $\\texttt{rollback 2}$ and then $\\texttt{exit configuration-mode}$. What happens?",
+    "explanation": "A rollback only loads an old configuration into the candidate. Without a commit nothing changes, and the CLI warns that the candidate has uncommitted changes when leaving.",
+    "options": [
+      "Rollback 2 is deleted from the list of saved configurations",
+      "The device reboots into rollback 2",
+      "The active configuration stays as it was",
+      "Rollback 2 becomes the active configuration on exit"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-053",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnConfig",
+    "skill": "System logging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "By default, in which file does Junos write most system log messages?",
+    "explanation": "The factory configuration logs to /var/log/messages, viewed with $\\texttt{show log messages}$. interactive-commands records CLI commands users enter.",
+    "options": [
+      "$\\texttt{/var/log/messages}$",
+      "$\\texttt{/var/tmp/messages}$",
+      "$\\texttt{/config/messages}$",
+      "$\\texttt{/var/log/interactive-commands}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "JNCIA-D-054",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnOps",
+    "skill": "Monitor commands",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which keyboard input stops $\\texttt{monitor interface}$ and returns to the prompt?",
+    "explanation": "monitor interface is interactive: q or Esc quits it, and other single keys freeze, thaw or clear the counters.",
+    "options": [
+      "Tab",
+      "q",
+      "Ctrl+Z",
+      "?"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "JNCIA-D-055",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnRouting",
+    "skill": "Routing and forwarding tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has three routes to 10.0.0.0/8 from three protocols. How many are in the routing table and how many in the forwarding table?",
+    "explanation": "The routing table keeps every route it learns; only the active one, chosen by preference, is installed in the forwarding table.",
+    "options": [
+      "Three in each table",
+      "One in each table",
+      "Three in the routing table, one in the forwarding table",
+      "One in the routing table, three in the forwarding table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "JNCIA-D-056",
+    "section": "jncia",
+    "test": 0,
+    "module": 1,
+    "domain": "jnPolicy",
+    "skill": "Unicast RPF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where is unicast RPF enabled in the Junos configuration?",
+    "explanation": "rpf-check goes on a logical unit's inet or inet6 family. A fail-filter can be added to log or accept packets that fail the check, such as DHCP requests from 0.0.0.0.",
+    "options": [
+      "$\\texttt{set firewall family inet rpf-check ge-0/0/0}$",
+      "$\\texttt{set protocols rpf-check interface ge-0/0/0}$",
+      "$\\texttt{set routing-options rpf-check ge-0/0/0}$",
+      "$\\texttt{set interfaces ge-0/0/0 unit 0 family inet rpf-check}$"
+    ],
+    "correct": [
+      3
+    ]
+  }
+]

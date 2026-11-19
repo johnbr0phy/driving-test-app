@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "contractorlaw" | "excpt";
+export type ExamId = "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "contractorlaw" | "excpt";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7755,6 +7755,148 @@ const cehrs: ExamConfig = {
   },
 };
 // IDs: tests 31201-31204, sets 31201-31204 (block 31200 assigned for this run).
+
+const dispatcher: ExamConfig = {
+  id: "dispatcher",
+  stateCode: "DISPATCH",
+  idBase: 43000,
+  slug: "/dispatcher",
+  landingPath: "/911-dispatcher-practice-test",
+  name: "911 Dispatcher Practice Test",
+  shortName: "911 Dispatcher",
+  examLabel: "911 telecommunicator exam",
+  fullName: "911 Public Safety Telecommunicator (dispatcher) certification exam",
+  questionIdPrefix: "DISP-",
+  icon: "siren",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // APCO ANS 3.103.3-2025 Minimum Training Standards for Public Safety Telecommunicators (call
+  // taker, law, fire and EMS chapters), the APCO PST1 8th edition course modules, NENA-STA-020.2-2026
+  // (911 call processing, which replaced NENA 56-005), NENA/APCO STA-051.2-2026 (TTY/TDD),
+  // 47 CFR Part 9 (E911, Kari's Law, dispatchable location, text-to-911), 47 CFR 90.425,
+  // 28 CFR 35.162 and FEMA NIMS (2017). Checked 2026-11-19. APCO publishes no PST1 exam length or
+  // pass mark and state certification exams vary, so the weights and the 75% line are Tigertest's.
+  blueprint: {
+    dispRole: 6,
+    dispTech: 7,
+    dispAccess: 5,
+    dispCall: 9,
+    dispCaller: 6,
+    dispRadio: 6,
+    dispDispatch: 6,
+    dispNims: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43001, name: "Role, Standards & 911 Technology", categories: ["dispRole", "dispTech"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 43002, name: "Call Answering & Accessibility", categories: ["dispAccess", "dispCall"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 43003, name: "Callers & Radio Procedure", categories: ["dispCaller", "dispRadio"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 43004, name: "Dispatch Operations & NIMS", categories: ["dispDispatch", "dispNims"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    dispRole: "Role, Standards & Confidentiality",
+    dispTech: "911 Technology & Location",
+    dispAccess: "TTY, Text & Accessibility",
+    dispCall: "Call Answering & Processing",
+    dispCaller: "Caller Communication & Classification",
+    dispRadio: "Radio Procedure & Phonetics",
+    dispDispatch: "Dispatch Operations & Resources",
+    dispNims: "NIMS & Incident Command",
+  },
+  copy: {
+    guestPrompt: "to save your 911 dispatcher progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets built on APCO's and NENA's telecommunicator standards. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 multiple-choice questions across call taking, radio and dispatch, 75% target",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Role, Standards & 911 Technology.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any practice test you haven't passed.",
+      "All done. You're ready for your telecommunicator exam.",
+    ],
+    sourceLine: "Based on APCO ANS 3.103.3-2025, NENA's 2026 call processing and TTY standards, FCC 911 rules and NIMS. Original questions; 50 per test, 75% target. Not affiliated with APCO or NENA.",
+    analyticsKey: "dispatcher",
+  },
+};
+// IDs: tests 43001-43004, sets 43001-43004 (block 43000 assigned for this run).
+
+const cpaisc: ExamConfig = {
+  id: "cpaisc",
+  stateCode: "CPAISC",
+  idBase: 42800,
+  slug: "/cpa-isc",
+  landingPath: "/cpa-isc-practice-test",
+  name: "CPA ISC Practice Test",
+  shortName: "CPA ISC",
+  examLabel: "CPA Exam ISC section",
+  fullName: "CPA Exam Information Systems and Controls (ISC) section",
+  questionIdPrefix: "CPAISC-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // AICPA Uniform CPA Examination Blueprints, effective January 1, 2026 (checked 2026-11-19;
+  // the summary of 2027 changes removes the COSO blockchain reference and task only). ISC is a
+  // Discipline section: 82 MCQs (two testlets of 41) + 6 TBSs in 4 hours, MCQ 60% of score,
+  // 75 scaled to pass. Areas I Information Systems and Data Management 35-45%, II Security,
+  // Confidentiality and Privacy 35-45%, III Considerations for SOC Engagements 15-25%.
+  // Per 50-question test: I 20 (infrastructure and cloud 4, AIS and processing integrity 4,
+  // availability 4, change management 4, data management 4), II 20 (regulations, standards
+  // and frameworks 5, threats 4, mitigation 5, confidentiality and privacy 3, incident response
+  // and security testing 3), III 10 (planning and performing 5, reporting 5). Splits inside
+  // areas are Tigertest's. TBSs not modelled. All items original.
+  blueprint: {
+    cpaiscInfra: 4,
+    cpaiscAis: 4,
+    cpaiscAvail: 4,
+    cpaiscChange: 4,
+    cpaiscData: 4,
+    cpaiscFrameworks: 5,
+    cpaiscThreats: 4,
+    cpaiscMitigation: 5,
+    cpaiscPrivacy: 3,
+    cpaiscIncident: 3,
+    cpaiscSocPlan: 5,
+    cpaiscSocReport: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42801, name: "IT Systems, Cloud & Availability", categories: ["cpaiscInfra", "cpaiscAis", "cpaiscAvail"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 42802, name: "Change & Data Management", categories: ["cpaiscChange", "cpaiscData"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 42803, name: "Frameworks & Threats", categories: ["cpaiscFrameworks", "cpaiscThreats"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 42804, name: "Security, Privacy & Incidents", categories: ["cpaiscMitigation", "cpaiscPrivacy", "cpaiscIncident"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 42805, name: "SOC Engagements", categories: ["cpaiscSocPlan", "cpaiscSocReport"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpaiscInfra: "IT Infrastructure & Cloud",
+    cpaiscAis: "Enterprise & Accounting Systems",
+    cpaiscAvail: "Availability & Recovery",
+    cpaiscChange: "Change Management",
+    cpaiscData: "Data Management & SQL",
+    cpaiscFrameworks: "Regulations, Standards & Frameworks",
+    cpaiscThreats: "Threats & Attacks",
+    cpaiscMitigation: "Security Controls & Access",
+    cpaiscPrivacy: "Confidentiality & Privacy",
+    cpaiscIncident: "Incident Response & Security Testing",
+    cpaiscSocPlan: "Planning & Performing SOC Engagements",
+    cpaiscSocReport: "Reporting on SOC Engagements",
+  },
+  copy: {
+    guestPrompt: "to save your CPA ISC progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering all three areas of the AICPA's ISC blueprint. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 multiple-choice questions weighted like the ISC blueprint, 75% target",
+    heroSubs: [
+      "Five sets, four mock tests. Start with IT Systems, Cloud & Availability.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Schedule your ISC section.",
+    ],
+    sourceLine: "Based on the AICPA's 2026 ISC blueprint. Original multiple-choice questions; 50 per test, weighted like the real section's three areas, 75% target. Not affiliated with the AICPA or NASBA.",
+    analyticsKey: "cpaisc",
+  },
+};
 
 const cpabar: ExamConfig = {
   id: "cpabar",
@@ -23900,6 +24042,75 @@ const afsp: ExamConfig = {
     analyticsKey: "afsp",
   },
 };
+const ctec: ExamConfig = {
+  id: "ctec",
+  stateCode: "CTEC",
+  idBase: 42900,
+  slug: "/ctec-tax-preparer",
+  landingPath: "/ctec-tax-preparer-practice-test",
+  name: "CTEC Tax Preparer Practice Test",
+  shortName: "CTEC Exam",
+  examLabel: "CTEC qualifying course exam",
+  fullName: "California CTEC 60-Hour Qualifying Education Course Final Exam (CRTP)",
+  questionIdPrefix: "CTEC-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CTEC Exhibit CP23A Qualifying Education Guidelines (revised 07/24/2026, 2025/2026 topics) and
+  // policy CP13: the 60-hour course is 43 hours federal, 2 ethics and 15 California, with at least
+  // 5 exam questions an hour (215 federal, 10 ethics, 75 California), each part tested separately
+  // and passed at 70%. CTEC sets no weights inside the parts, so the split per 50 is Tigertest's:
+  // federal 34 (filing 6, income 7, gains 4, business 5, deductions 6, credits 6), ethics and
+  // preparer rules 4, California 12 (residency 4, adjustments 5, credits 3). Tax year 2025 figures
+  // from the 2025 IRS and FTB publications. All items original.
+  blueprint: {
+    ctecEthics: 4,
+    ctecFiling: 6,
+    ctecIncome: 7,
+    ctecGains: 4,
+    ctecBusiness: 5,
+    ctecDeductions: 6,
+    ctecCredits: 6,
+    ctecCaResidency: 4,
+    ctecCaIncome: 5,
+    ctecCaCredits: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42901, name: "Ethics, Filing Status & Dependents", categories: ["ctecEthics", "ctecFiling"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 42902, name: "Income, Exclusions & Gains", categories: ["ctecIncome", "ctecGains"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 42903, name: "Business Income & Deductions", categories: ["ctecBusiness", "ctecDeductions"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 42904, name: "Credits & Payments", categories: ["ctecCredits"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 42905, name: "California Tax Law", categories: ["ctecCaResidency", "ctecCaIncome", "ctecCaCredits"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ctecEthics: "Ethics & Preparer Rules",
+    ctecFiling: "Filing, Status & Dependents",
+    ctecIncome: "Income & Exclusions",
+    ctecGains: "Basis, Gains & Losses",
+    ctecBusiness: "Schedule C, SE Tax & Rentals",
+    ctecDeductions: "Adjustments & Deductions",
+    ctecCredits: "Credits & Payments",
+    ctecCaResidency: "California Residency & Filing",
+    ctecCaIncome: "California Adjustments",
+    ctecCaCredits: "California Credits & Payments",
+  },
+  copy: {
+    guestPrompt: "to save your CTEC progress and track every question you miss",
+    trainingHeading: "Train by course topic",
+    trainingSub: "Five sets following CTEC's qualifying education guidelines: federal law, ethics and California, on 2025 tax law. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across federal, ethics and California",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Ethics, Filing Status & Dependents.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your CTEC course final.",
+    ],
+    sourceLine: "Based on CTEC's qualifying education guidelines (CP23A) and 2025 IRS and FTB rules. Original questions; 50 per test, 70% target like the course final. Not affiliated with CTEC, the IRS, the FTB or any education provider.",
+    analyticsKey: "ctec",
+  },
+};
 const esthetician: ExamConfig = {
   id: "esthetician",
   stateCode: "ESTH",
@@ -24168,6 +24379,789 @@ const r410a: ExamConfig = {
     analyticsKey: "r410a",
   },
 };
+const backflow: ExamConfig = {
+  id: "backflow",
+  stateCode: "BACKFLOW",
+  idBase: 41500,
+  slug: "/backflow-tester",
+  landingPath: "/backflow-tester-practice-test",
+  name: "Backflow Tester Practice Test",
+  shortName: "Backflow Tester",
+  examLabel: "Backflow Tester Exam",
+  fullName: "Backflow Prevention Assembly Tester written exam (ASSE 5110)",
+  questionIdPrefix: "BACKFLOW-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASSE tester Instructional Objectives Checklist (04/2004, the version ASSE links in 2026) and
+  // ASSE's written exam instructions (2 hours, closed book, calculator, 70% to pass), read
+  // 2026-11-18. ASSE publishes no weights or question count, so the split is Tigertest's.
+  // Test procedures and pass readings from ASSE's 1013, 1015, 1020 and 1056 field test flow
+  // charts; device, hydraulics and program facts from the EPA Cross-Connection Control Manual
+  // (EPA 816-R-03-002); 40 CFR 141.2 and 143.1; 29 CFR 1910.146.
+  blueprint: {
+    bfIntro: 6,
+    bfPrograms: 7,
+    bfHydraulics: 7,
+    bfDevices: 10,
+    bfGauges: 4,
+    bfTesting: 10,
+    bfTrouble: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41501, name: "Cross-Connections & Hydraulics", categories: ["bfIntro", "bfHydraulics"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 41502, name: "Programs, Records & Tester Duties", categories: ["bfPrograms"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 41503, name: "Assemblies & Installation", categories: ["bfDevices"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 41504, name: "Test Kits & Field Test Procedures", categories: ["bfGauges", "bfTesting"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 5, id: 41505, name: "Troubleshooting & Safety", categories: ["bfTrouble"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bfIntro: "Cross-Connections & Drinking Water Rules",
+    bfPrograms: "Programs, Records & Tester Duties",
+    bfHydraulics: "Hydraulics & Pressure",
+    bfDevices: "Backflow Assemblies & Installation",
+    bfGauges: "Test Kits & Gauges",
+    bfTesting: "Field Test Procedures",
+    bfTrouble: "Troubleshooting & Safety",
+  },
+  copy: {
+    guestPrompt: "to save your backflow tester progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on cross-connections and hydraulics, programs and tester duties, assemblies, test kits and field tests, and troubleshooting. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions each, 70% to pass like ASSE's written exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Cross-Connections & Hydraulics.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go earn your tester certification.",
+    ],
+    sourceLine: "Based on ASSE's backflow tester course objectives and field test flow charts, the US EPA Cross-Connection Control Manual and federal drinking water rules. Original questions. Not affiliated with ASSE International, IAPMO or the American Backflow Prevention Association.",
+    analyticsKey: "backflow",
+  },
+};
+const pesticide: ExamConfig = {
+  id: "pesticide",
+  stateCode: "PESTICIDE",
+  idBase: 41600,
+  slug: "/pesticide-applicator",
+  landingPath: "/pesticide-applicator-practice-test",
+  name: "Pesticide Applicator Practice Test",
+  shortName: "Pesticide Applicator",
+  examLabel: "Pesticide Applicator Core Exam",
+  fullName: "Pesticide applicator core (general standards) certification exam",
+  questionIdPrefix: "PESTICIDE-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Federal core competency standards in 40 CFR 171.103(c) and 171.105(a) (2017 rule, read
+  // 2026-11-18), the National Pesticide Applicator Core Exam blueprint (12 chapters, EPA job
+  // analysis) and the EPA-supported National Pesticide Applicator Certification Core Manual.
+  // States, tribes and federal agencies run the exams and set their own length and pass mark,
+  // so the split and the 70% line are Tigertest's.
+  blueprint: {
+    pestMgmt: 6,
+    pestLaws: 6,
+    pestLabel: 7,
+    pestForm: 5,
+    pestHazard: 6,
+    pestPpe: 4,
+    pestEnv: 6,
+    pestStore: 4,
+    pestApply: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41601, name: "Pest Management & Pesticide Laws", categories: ["pestMgmt", "pestLaws"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 41602, name: "Labels & Formulations", categories: ["pestLabel", "pestForm"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 41603, name: "Hazards, First Aid & PPE", categories: ["pestHazard", "pestPpe"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 41604, name: "Environment, Storage & Spills", categories: ["pestEnv", "pestStore"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 41605, name: "Mixing, Calibration & Application", categories: ["pestApply"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pestMgmt: "Pest Management & IPM",
+    pestLaws: "Pesticide Laws & Supervision",
+    pestLabel: "Pesticide Labeling",
+    pestForm: "Formulations & Adjuvants",
+    pestHazard: "Hazards & First Aid",
+    pestPpe: "Personal Protective Equipment",
+    pestEnv: "Pesticides in the Environment",
+    pestStore: "Transport, Storage & Spills",
+    pestApply: "Mixing, Calibration & Application",
+  },
+  copy: {
+    guestPrompt: "to save your pesticide applicator progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on pest management and laws, labels and formulations, hazards and PPE, the environment and storage, and mixing and calibration. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions each, 70% as a readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Pest Management & Pesticide Laws.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go book your core exam.",
+    ],
+    sourceLine: "Based on the federal certification standards in 40 CFR 171, the label and worker protection rules and the National Pesticide Applicator Certification Core Manual. Original questions. Not affiliated with the US EPA or any state lead agency.",
+    analyticsKey: "pesticide",
+  },
+};
+const bowhunter: ExamConfig = {
+  id: "bowhunter",
+  stateCode: "BOWHUNTER",
+  idBase: 41700,
+  slug: "/bowhunter-education",
+  landingPath: "/bowhunter-education-practice-test",
+  name: "Bowhunter Education Practice Test",
+  shortName: "Bowhunter Education",
+  examLabel: "Bowhunter Education",
+  fullName: "bowhunter education course test",
+  questionIdPrefix: "BOW-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // IHEA-USA Bowhunter Education standards (digital 2023, hosted by NBEF: overview, equipment and
+  // accessories, safety, shooting skills and techniques, responsibilities and game recovery) and the
+  // NBEF-approved course study guide (9 units, read 2026-11-19). Each state runs its own course test
+  // and pass mark, so the split and the 80% readiness line are Tigertest's.
+  blueprint: {
+    bowEquip: 5,
+    bowArrows: 6,
+    bowCross: 4,
+    bowSafety: 5,
+    bowStands: 6,
+    bowShooting: 5,
+    bowMethods: 3,
+    bowShot: 5,
+    bowRecovery: 4,
+    bowEthics: 4,
+    bowWhy: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41701, name: "Bows, Arrows & Crossbows", categories: ["bowEquip", "bowArrows", "bowCross"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 41702, name: "Archery Safety & Tree Stands", categories: ["bowSafety", "bowStands"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 41703, name: "Shooting Skills & Shot Placement", categories: ["bowShooting", "bowMethods", "bowShot"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 41704, name: "Recovery, Ethics & Conservation", categories: ["bowRecovery", "bowEthics", "bowWhy"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    bowEquip: "Bows & Accessories",
+    bowArrows: "Arrows, Points & Broadheads",
+    bowCross: "Crossbows",
+    bowSafety: "Archery & Field Safety",
+    bowStands: "Tree Stands & Fall Arrest",
+    bowShooting: "Shooting Skills & Distance",
+    bowMethods: "Hunting Methods, Scents & Calls",
+    bowShot: "Shot Placement & Angles",
+    bowRecovery: "Game Recovery & Field Care",
+    bowEthics: "Ethics, Laws & Respect",
+    bowWhy: "Bowhunting & Conservation",
+  },
+  copy: {
+    guestPrompt: "to save your bowhunter education progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on bows, arrows and crossbows, archery safety and tree stands, shooting and shot placement, and game recovery, ethics and conservation. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions each, 80% as a readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Bows, Arrows & Crossbows.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go take your state's bowhunter education course test.",
+    ],
+    sourceLine: "Based on the IHEA-USA bowhunter education standards and the NBEF-approved course content. Original questions. Seasons, minimum draw weights, crossbow rules and course requirements vary by state. Not affiliated with NBEF or IHEA-USA.",
+    analyticsKey: "bowhunter",
+  },
+};
+const fpc: ExamConfig = {
+  id: "fpc",
+  stateCode: "FPC",
+  idBase: 42400,
+  slug: "/fpc",
+  landingPath: "/fpc-practice-test",
+  name: "FPC Practice Test",
+  shortName: "FPC",
+  examLabel: "FPC exam",
+  fullName: "PayrollOrg Fundamental Payroll Certification (FPC) exam",
+  questionIdPrefix: "FPC-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // PayrollOrg FPC content outline effective September 5, 2026 (read 2026-11-19): Core Payroll Concepts 29%,
+  // Compliance/Research and Resources 12%, Calculation of the Paycheck 24%, Payroll Process and Supporting
+  // Systems 13%, Payroll Administration and Management 6%, Audits 8%, Accounting 8%, scaled to 50 as
+  // 14/6/12/7/3/4/4 (Core and Calculation each split in two). Exams from September 2026 test federal law in
+  // effect January 1, 2026. The real exam is 150 questions (125 scored) in 3 hours, passing scaled score 300;
+  // 70% here is a readiness line. All questions original.
+  blueprint: {
+    fpcStatus: 7,
+    fpcTax: 7,
+    fpcCompliance: 6,
+    fpcGross: 6,
+    fpcNet: 6,
+    fpcSystems: 7,
+    fpcAdmin: 3,
+    fpcAudit: 4,
+    fpcAccounting: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42401, name: "Core Payroll Concepts", categories: ["fpcStatus", "fpcTax"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 42402, name: "Compliance & Gross Pay", categories: ["fpcCompliance", "fpcGross"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 3, id: 42403, name: "Net Pay, Taxes & Systems", categories: ["fpcNet", "fpcSystems"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 42404, name: "Admin, Audits & Accounting", categories: ["fpcAdmin", "fpcAudit", "fpcAccounting"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    fpcStatus: "Worker Status & the FLSA",
+    fpcTax: "Employment Taxes, Benefits & Forms",
+    fpcCompliance: "Compliance, Deposits & Records",
+    fpcGross: "Gross Pay & Fringe Benefits",
+    fpcNet: "Deductions, Net Pay & Employer Taxes",
+    fpcSystems: "Payroll Systems & Continuity",
+    fpcAdmin: "Payroll Administration",
+    fpcAudit: "Audits & Internal Controls",
+    fpcAccounting: "Payroll Accounting",
+  },
+  copy: {
+    guestPrompt: "to save your FPC exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the seven areas of the FPC outline, with 2026 federal figures. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every area",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Core Payroll Concepts.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Review the paycheck math once more, then book your FPC exam.",
+    ],
+    sourceLine: "Based on the PayrollOrg FPC content outline effective September 5, 2026 and federal law in effect January 1, 2026 (IRS Pub. 15, 15-A, 15-B, DOL FLSA rules). Original questions. Not affiliated with PayrollOrg.",
+    analyticsKey: "fpc",
+  },
+};
+
+const titleagent: ExamConfig = {
+  id: "titleagent",
+  stateCode: "TITLEAGENT",
+  idBase: 42300,
+  slug: "/title-insurance-agent",
+  landingPath: "/title-insurance-agent-practice-test",
+  name: "Title Insurance Agent Practice Test",
+  shortName: "Title Agent",
+  examLabel: "title insurance agent exam",
+  fullName: "Title insurance agent licensing exam (general portion)",
+  questionIdPrefix: "TA-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // There is no national title agent exam; each state sets its own. The blueprint follows the general
+  // (non-state-law) topics the three outlines read on 2026-11-19 share: Alabama DOI Title Insurance
+  // Agent outline (rev. 7/24/2023, 150 questions, 105 to pass), Ohio PSI Series 11-37 (100 questions,
+  // 70%: real property 35%, title insurance 20%, clearing title 25%) and Pennsylvania PSI Series 16-10
+  // (effective 3/1/2026, 60 items: title insurance 23%, clearing title 21%, transactions 31%). Split
+  // per test: principles 6, real property 8, descriptions and recording 5, ALTA 2021 forms 10, search
+  // and clearing title 9, escrow and closing 7, federal rules 5. State law is left out. All original.
+  blueprint: {
+    taPrinciples: 6,
+    taProperty: 8,
+    taDescriptions: 5,
+    taPolicies: 10,
+    taSearch: 9,
+    taClosing: 7,
+    taFederal: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42301, name: "Insurance Basics & Real Property", categories: ["taPrinciples", "taProperty"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 42302, name: "Search, Surveys & Clearing Title", categories: ["taDescriptions", "taSearch"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 42303, name: "Commitments & Policy Forms", categories: ["taPolicies"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 42304, name: "Escrow, Closing & Federal Rules", categories: ["taClosing", "taFederal"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    taPrinciples: "Insurance & Agency Principles",
+    taProperty: "Real Property & Transfer of Title",
+    taDescriptions: "Legal Descriptions & Recording",
+    taPolicies: "Commitments, Policies & Endorsements",
+    taSearch: "Title Search, Liens & Clearing Title",
+    taClosing: "Escrow, Settlement & Closing",
+    taFederal: "Federal Rules & Ethics",
+  },
+  copy: {
+    guestPrompt: "to save your title agent exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on the general title insurance knowledge state title agent exams share. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across every topic",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Insurance Basics & Real Property.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Study your state's title law, then book your exam.",
+    ],
+    sourceLine: "Based on the general topics of state title agent exam outlines (Alabama, Ohio, Pennsylvania) and the 2021 ALTA forms. Original questions; state law not included. Not affiliated with any state or ALTA.",
+    analyticsKey: "titleagent",
+  },
+};
+
+const aswbbach: ExamConfig = {
+  id: "aswbbach",
+  stateCode: "ASWBBACH",
+  idBase: 42200,
+  slug: "/aswb-bachelors",
+  landingPath: "/aswb-bachelors-practice-test",
+  name: "ASWB Bachelors Practice Test",
+  shortName: "ASWB Bachelors",
+  examLabel: "ASWB Bachelors exam",
+  fullName: "ASWB Bachelors social work licensing exam",
+  questionIdPrefix: "ASWBBACH-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ASWB Bachelors/Associate content outline in the 2026 Examination Guidebook, for exams from August
+  // 3, 2026 (checked 2026-11-19): 122 questions (110 scored, 12 pretest) in 4 hours; I Values and
+  // Ethics 35%, II Assessment and Planning 33%, III Intervention and Practice 32%, scaled to 50 per
+  // test as 18/16/16: IA 6, IB 7, IC 5; IIA 8, IIB+IIC 8; IIIA 5, IIIB 7, IIIC+IIID 4. ASWB reports
+  // pass/fail against a per-form number correct; 70% is a readiness marker. All items original.
+  blueprint: {
+    aswbbachEthics: 6,
+    aswbbachService: 7,
+    aswbbachDiversity: 5,
+    aswbbachConcepts: 8,
+    aswbbachMethods: 8,
+    aswbbachPractice: 5,
+    aswbbachIntervention: 7,
+    aswbbachEvalSup: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42201, name: "Ethics & Service Delivery", categories: ["aswbbachEthics", "aswbbachService"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 42202, name: "Diversity & Human Behavior", categories: ["aswbbachDiversity", "aswbbachConcepts"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 42203, name: "Assessment & Practice Concepts", categories: ["aswbbachMethods", "aswbbachPractice"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 42204, name: "Intervention & Evaluation", categories: ["aswbbachIntervention", "aswbbachEvalSup"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aswbbachEthics: "Ethical Principles & Responsibilities",
+    aswbbachService: "Ethical Service Delivery",
+    aswbbachDiversity: "Diversity & Social Justice",
+    aswbbachConcepts: "Human Behavior & Assessment Concepts",
+    aswbbachMethods: "Assessment Methods & Planning",
+    aswbbachPractice: "Practice Concepts & Policy",
+    aswbbachIntervention: "Intervention Methods",
+    aswbbachEvalSup: "Evaluation & Supervision",
+  },
+  copy: {
+    guestPrompt: "to save your ASWB Bachelors progress and track every question you miss",
+    trainingHeading: "Train by content area",
+    trainingSub: "Four sets covering all three areas of the 2026 ASWB Bachelors outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four mock exams. Start with Ethics & Service Delivery.",
+      "Master each set, then take a mock exam.",
+      "Keep going. Take a mock exam to see where you stand.",
+      "Review your mistakes, then retake any mock exam you haven't passed.",
+      "All done. Schedule your ASWB Bachelors exam.",
+    ],
+    sourceLine: "Based on the ASWB Bachelors content outline (2026 Examination Guidebook). Original questions; 50 per test, weighted like the real exam. Not affiliated with ASWB.",
+    analyticsKey: "aswbbach",
+  },
+};
+const crc: ExamConfig = {
+  id: "crc",
+  stateCode: "CRC",
+  idBase: 42100,
+  slug: "/crc",
+  landingPath: "/crc-practice-test",
+  name: "CRC Practice Test",
+  shortName: "CRC",
+  examLabel: "CRC exam",
+  fullName: "AAPC Certified Risk Adjustment Coder (CRC) exam",
+  questionIdPrefix: "CRC-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAPC "Taking the CRC exam" (checked 2026-11-19): 100 multiple-choice questions in 4 hours, 70%
+  // to pass, ICD-10-CM code book only. AAPC's domain counts (compliance 15, diagnosis coding 30,
+  // documentation improvement 12, pathophysiology/terminology/anatomy 5, purpose and use of risk
+  // adjustment models 10, quality of care 3, risk adjustment models 15, cases 10) scaled to 50 per
+  // test. Rules from the FY 2027 ICD-10-CM Official Guidelines, the CY 2024 and CY 2027 Rate
+  // Announcements (2024 CMS-HCC model), Medicare Managed Care Manual chapter 7, 42 CFR 422.310 and
+  // 422.311, CMS RADV reviewer guidance, the HHS-HCC DIY instructions and CDPS. No code-book lookups.
+  blueprint: {
+    crcModels: 7,
+    crcPurpose: 5,
+    crcQuality: 2,
+    crcCompliance: 7,
+    crcDocumentation: 6,
+    crcDxCoding: 15,
+    crcPathophys: 3,
+    crcCases: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42101, name: "Risk Adjustment Models & Uses", categories: ["crcModels", "crcPurpose", "crcQuality"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 42102, name: "Compliance & Documentation", categories: ["crcCompliance", "crcDocumentation"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 42103, name: "Diagnosis Coding", categories: ["crcDxCoding"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 42104, name: "Pathophysiology & Coding Cases", categories: ["crcPathophys", "crcCases"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    crcModels: "Risk Adjustment Models",
+    crcPurpose: "Purpose & Use of Models",
+    crcQuality: "Quality of Care",
+    crcCompliance: "Compliance & RADV",
+    crcDocumentation: "Documentation Improvement",
+    crcDxCoding: "Diagnosis Coding",
+    crcPathophys: "Pathophysiology & Terminology",
+    crcCases: "Coding Cases",
+  },
+  copy: {
+    guestPrompt: "to save your CRC progress and track every question you miss",
+    trainingHeading: "Train by exam domain",
+    trainingSub: "Four sets on risk adjustment models and their uses, compliance and documentation, diagnosis coding, and pathophysiology with coding cases. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam, 70% to pass",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Risk Adjustment Models & Uses.",
+      "Master each set, then test.",
+      "Keep going. Diagnosis Coding has the most questions.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your CRC exam.",
+    ],
+    sourceLine: "Based on AAPC's published CRC exam domains, the ICD-10-CM Official Guidelines, CMS risk adjustment announcements and RADV guidance. Original questions; no code-book lookups. Not affiliated with AAPC.",
+    analyticsKey: "crc",
+  },
+};
+const cpb: ExamConfig = {
+  id: "cpb",
+  stateCode: "CPB",
+  idBase: 42000,
+  slug: "/cpb",
+  landingPath: "/cpb-practice-test",
+  name: "CPB Practice Test",
+  shortName: "CPB",
+  examLabel: "CPB exam",
+  fullName: "AAPC Certified Professional Biller (CPB) exam",
+  questionIdPrefix: "CPB-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAPC "Taking the CPB exam" (checked 2026-11-19): 135 multiple-choice questions in 4 hours, 70%
+  // to pass (95 correct), approved code books allowed. AAPC's domain counts (types of insurance 29,
+  // billing regulations 17, HIPAA and compliance 7, reimbursement and collections 19, claims and
+  // billing 19, coding 10, case analysis 34) scaled to 50 per test. Rules from the Medicare manuals,
+  // MLN booklets, 45 CFR 162 and 164, Regulation F and the No Surprises Act pages. Guidelines and
+  // concepts only, no CPT descriptors or code-book lookups. Cases are short billing scenarios.
+  blueprint: {
+    cpbPayers: 10,
+    cpbRegs: 6,
+    cpbHipaa: 3,
+    cpbClaims: 7,
+    cpbCoding: 4,
+    cpbCases: 13,
+    cpbReimb: 7,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42001, name: "Types of Insurance", categories: ["cpbPayers"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 42002, name: "Billing Regulations & Compliance", categories: ["cpbRegs", "cpbHipaa"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 42003, name: "Claims, Billing & Coding", categories: ["cpbClaims", "cpbCoding"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 42004, name: "Case Analysis", categories: ["cpbCases"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 42005, name: "Reimbursement & Collections", categories: ["cpbReimb"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cpbPayers: "Types of Insurance",
+    cpbRegs: "Billing Regulations",
+    cpbHipaa: "HIPAA & Compliance",
+    cpbClaims: "Claims & Billing",
+    cpbCoding: "Coding & Modifiers",
+    cpbCases: "Case Analysis",
+    cpbReimb: "Reimbursement & Collections",
+  },
+  copy: {
+    guestPrompt: "to save your CPB progress and track every question you miss",
+    trainingHeading: "Train by exam domain",
+    trainingSub: "Five sets on payers, billing rules and compliance, claims and coding, case analysis, and reimbursement and collections. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam, 70% to pass",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Types of Insurance.",
+      "Master each set, then test.",
+      "Keep going. Case Analysis has the most questions.",
+      "Fix the misses, then retake.",
+      "All done. Schedule your CPB exam.",
+    ],
+    sourceLine: "Based on AAPC's published CPB exam domains, the Medicare manuals, HIPAA transaction rules, Regulation F and the No Surprises Act. Original questions; no code-book lookups. Not affiliated with AAPC.",
+    analyticsKey: "cpb",
+  },
+};
+const hha: ExamConfig = {
+  id: "hha",
+  stateCode: "HHA",
+  idBase: 42700,
+  slug: "/hha",
+  landingPath: "/home-health-aide-practice-test",
+  name: "Home Health Aide Practice Test",
+  shortName: "Home Health Aide",
+  examLabel: "HHA written test",
+  fullName: "Home Health Aide (HHA) Competency Evaluation, Written Part",
+  questionIdPrefix: "HHA-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Federal rule 42 CFR 484.80(b)(3) and (c): the subjects every home health aide competency
+  // evaluation must cover, with communication, vital signs, personal hygiene, transfers and range
+  // of motion observed and the rest testable in writing. States and agencies run the evaluation;
+  // the DC Board of Nursing outline (Pearson VUE handbook, same weights on Credentia's DC help
+  // center, checked November 2026) is I Role of the HHA 25%, II Physical Care 50%, III Psychosocial
+  // Care 13%, IV Personal and Household Maintenance 12%. Scaled to 50 and split by Tigertest: role 6
+  // and reporting 6 (24%); personal care 8, mobility 7, infection control 6, safety 6 (54%); home and
+  // nutrition 6 (12%); psychosocial 5 (10%). No national pass mark: DC publishes none, NC DHHS
+  // recommends 80% for agency knowledge tests, so 80% is a readiness line. All items original.
+  blueprint: {
+    hhaRole: 6,
+    hhaReport: 6,
+    hhaPersonal: 8,
+    hhaMobility: 7,
+    hhaInfection: 6,
+    hhaSafety: 6,
+    hhaHome: 6,
+    hhaPsych: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42701, name: "Role, Rights & Reporting", categories: ["hhaRole", "hhaReport"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 42702, name: "Personal Care & Mobility", categories: ["hhaPersonal", "hhaMobility"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 42703, name: "Infection Control & Safety", categories: ["hhaInfection", "hhaSafety"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 42704, name: "Home Care & Psychosocial Needs", categories: ["hhaHome", "hhaPsych"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    hhaRole: "Role, Rights & Ethics",
+    hhaReport: "Observing, Reporting & Vital Signs",
+    hhaPersonal: "Personal Care & Hygiene",
+    hhaMobility: "Mobility, Positioning & Skin",
+    hhaInfection: "Infection Control",
+    hhaSafety: "Home Safety & Emergencies",
+    hhaHome: "Nutrition & Household Tasks",
+    hhaPsych: "Psychosocial Care & Communication",
+  },
+  copy: {
+    guestPrompt: "to save your home health aide progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the subjects the federal rule lists for home health aides. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like a state HHA written test",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Role, Rights & Reporting.",
+      "Master each set, then take a practice test.",
+      "Keep going. Personal Care & Mobility has the most questions.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for your HHA written test.",
+    ],
+    sourceLine: "Based on the federal home health aide rule (42 CFR 484.80), the DC Board of Nursing HHA content outline and skills listing, and CDC infection control guidance. Original questions. Not affiliated with CMS, any state or any test vendor.",
+    analyticsKey: "hha",
+  },
+};
+const cbcs: ExamConfig = {
+  id: "cbcs",
+  stateCode: "CBCS",
+  idBase: 42600,
+  slug: "/cbcs",
+  landingPath: "/cbcs-practice-test",
+  name: "CBCS Practice Test",
+  shortName: "CBCS (NHA)",
+  examLabel: "CBCS exam",
+  fullName: "Certified Billing and Coding Specialist (CBCS) Exam",
+  questionIdPrefix: "CBCS-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // NHA Certified Billing and Coding Specialist (CBCS) Test Plan, based on the job analysis
+  // completed in 2020, still the plan NHA links for the current exam (checked November 2026):
+  // 100 scored + 25 pretest items in 3 hours. Domains of 100: 1 The Revenue Cycle and Regulatory
+  // Compliance 15, 2 Insurance Eligibility and Other Payer Requirements 20, 3 Coding and Coding
+  // Guidelines 32, 4 Billing and Reimbursement 33. Scaled to 50: 8/10/16/16, split inside each
+  // domain by Tigertest (privacy 4, compliance 4; eligibility 5, payers 5; ICD-10-CM 6, CPT and
+  // HCPCS 5, E/M 3, documentation 2; claims 6, payments 5, collections 5). Since September 24,
+  // 2024 no code books are allowed and each coding item shows what it needs, so questions are
+  // guidelines and concepts only. NHA reports a scaled score (200 to 500, 390 to pass, not a
+  // percent); 70% here is a readiness marker. All items original.
+  blueprint: {
+    cbcsPrivacy: 4,
+    cbcsCompliance: 4,
+    cbcsEligibility: 5,
+    cbcsPayers: 5,
+    cbcsIcd: 6,
+    cbcsProcedure: 5,
+    cbcsEm: 3,
+    cbcsDocs: 2,
+    cbcsClaims: 6,
+    cbcsPayments: 5,
+    cbcsCollections: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 42601, name: "Revenue Cycle & Compliance", categories: ["cbcsPrivacy", "cbcsCompliance"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 42602, name: "Insurance Eligibility & Payers", categories: ["cbcsEligibility", "cbcsPayers"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 3, id: 42603, name: "ICD-10-CM & Documentation", categories: ["cbcsIcd", "cbcsDocs"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 42604, name: "CPT, HCPCS & E/M", categories: ["cbcsProcedure", "cbcsEm"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 42605, name: "Claims & Payment Posting", categories: ["cbcsClaims", "cbcsPayments"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 6, id: 42606, name: "Appeals, Aging & Collections", categories: ["cbcsCollections"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cbcsPrivacy: "HIPAA & Privacy",
+    cbcsCompliance: "Revenue Cycle & Compliance",
+    cbcsEligibility: "Eligibility & Patient Responsibility",
+    cbcsPayers: "Payers & Coordination of Benefits",
+    cbcsIcd: "ICD-10-CM Coding",
+    cbcsProcedure: "CPT, HCPCS & Modifiers",
+    cbcsEm: "E/M & Place of Service",
+    cbcsDocs: "Documentation & Terminology",
+    cbcsClaims: "Claims & Coding Edits",
+    cbcsPayments: "Payments & Adjustments",
+    cbcsCollections: "Appeals, Aging & Collections",
+  },
+  copy: {
+    guestPrompt: "to save your CBCS progress and track every question you miss",
+    trainingHeading: "Train by NHA test plan domain",
+    trainingSub: "Six sets covering all four domains of the NHA CBCS test plan. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Six training sets, four practice tests. Start with Revenue Cycle & Compliance.",
+      "Master each set, then take a practice test.",
+      "Keep going. Claims & Payment Posting has the most questions.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CBCS.",
+    ],
+    sourceLine: "Based on the NHA CBCS test plan (2020 job analysis), the ICD-10-CM Official Guidelines and CMS claims manuals. Original questions; no code-book lookups. Not affiliated with the National Healthcareer Association.",
+    analyticsKey: "cbcs",
+  },
+};
+const ieplumbt2: ExamConfig = {
+  id: "ieplumbt2",
+  stateCode: "IEPLUMBT2",
+  idBase: 41900,
+  slug: "/plumbing-apprenticeship-phase-2",
+  landingPath: "/plumbing-apprenticeship-phase-2-practice-test",
+  name: "Plumbing Apprenticeship Phase 2 Practice Test",
+  shortName: "Plumbing Phase 2",
+  examLabel: "Plumbing Phase 2",
+  fullName: "plumbing apprenticeship Phase 2 theory exams",
+  questionIdPrefix: "IEPT2-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 50,
+  // SOLAS National Plumbing Apprenticeship, Phase 2 (21 weeks in an ETB training centre): four
+  // modules, Thermal Processes and Mild Steel Pipework, Domestic Hot and Cold Water Services,
+  // Central Heating, and Communications and Team Leadership (SOLAS plumbing brochure, Ver 4). SOLAS
+  // publishes no unit weights or question counts for the theory papers, so the split is
+  // Tigertest's; 50% is the SOLAS pass grade (Craft Apprenticeship Assessment Rules 2023).
+  blueprint: {
+    iept2Safety: 5,
+    iept2Copper: 7,
+    iept2Steel: 7,
+    iept2Valves: 4,
+    iept2Cold: 7,
+    iept2Hot: 7,
+    iept2Heating: 9,
+    iept2Comms: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41901, name: "Safety & Copper Jointing", categories: ["iept2Safety", "iept2Copper"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 41902, name: "Mild Steel Pipework, Valves & Taps", categories: ["iept2Steel", "iept2Valves"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 41903, name: "Domestic Hot & Cold Water", categories: ["iept2Cold", "iept2Hot"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 41904, name: "Central Heating & Communications", categories: ["iept2Heating", "iept2Comms"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    iept2Safety: "Hot Work & Site Safety",
+    iept2Copper: "Copper Tube & Jointing",
+    iept2Steel: "Mild Steel Pipework",
+    iept2Valves: "Valves & Taps",
+    iept2Cold: "Cold Water Services",
+    iept2Hot: "Hot Water Services",
+    iept2Heating: "Central Heating",
+    iept2Comms: "Drawings, Calculations & Teamwork",
+  },
+  copy: {
+    guestPrompt: "to save your Phase 2 plumbing progress and track every question you miss",
+    trainingHeading: "Train by module",
+    trainingSub: "Four sets on safety and copper jointing, mild steel pipework and valves, hot and cold water, and central heating with communications. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions each, 50% is the SOLAS pass grade",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Safety & Copper Jointing.",
+      "Master each set, then test.",
+      "Keep going. Every module you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. You're ready for your Phase 2 theory exams.",
+    ],
+    sourceLine: "Based on the SOLAS Phase 2 plumbing modules, the Building Regulations Technical Guidance Documents and HSA guidance. Original questions. Not affiliated with SOLAS or any ETB.",
+    analyticsKey: "ieplumbt2",
+  },
+};
+
+const trapper: ExamConfig = {
+  id: "trapper",
+  stateCode: "TRAPPER",
+  idBase: 41800,
+  slug: "/trapper-education",
+  landingPath: "/trapper-education-practice-test",
+  name: "Trapper Education Practice Test",
+  shortName: "Trapper Education",
+  examLabel: "Trapper Education",
+  fullName: "trapper education course test",
+  questionIdPrefix: "TRAP-",
+  icon: "paw",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // AFWA Trapper Education Manual (2022, written to the AFWA and IHEA-USA trapper education
+  // standards: 18 chapters, read 2026-11-19) and the AFWA trapping BMP introduction and FAQ. Each
+  // state runs its own course and test, so the split and the 80% readiness line are Tigertest's.
+  blueprint: {
+    trapWhy: 4,
+    trapMgmt: 4,
+    trapRegs: 3,
+    trapBmp: 4,
+    trapTraps: 6,
+    trapGear: 4,
+    trapSelect: 4,
+    trapWater: 5,
+    trapLand: 6,
+    trapSafety: 4,
+    trapLine: 3,
+    trapFur: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 41801, name: "Trapping, Conservation & the Law", categories: ["trapWhy", "trapMgmt", "trapRegs", "trapBmp"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 41802, name: "Traps, Gear & Selective Trapping", categories: ["trapTraps", "trapGear", "trapSelect"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 41803, name: "Water Sets, Land Sets & Cables", categories: ["trapWater", "trapLand"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 41804, name: "Safety, the Trapline & Fur", categories: ["trapSafety", "trapLine", "trapFur"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    trapWhy: "Trapping, History & Attitudes",
+    trapMgmt: "Furbearer Management & Biology",
+    trapRegs: "Regulations & Responsibility",
+    trapBmp: "Best Management Practices",
+    trapTraps: "Traps, Anchoring & Tuning",
+    trapGear: "Equipment, Bait, Lure & Urine",
+    trapSelect: "Selective Trapping",
+    trapWater: "Water Sets",
+    trapLand: "Land Sets & Cable Devices",
+    trapSafety: "Trapping Safety & Disease",
+    trapLine: "Running a Trapline",
+    trapFur: "Selling & Handling Fur",
+  },
+  copy: {
+    guestPrompt: "to save your trapper education progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets on trapping and conservation, traps and selective trapping, water and land sets, and safety, the trapline and fur. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions each, 80% as a readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Trapping, Conservation & the Law.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Go take your state's trapper education course test.",
+    ],
+    sourceLine: "Based on the AFWA Trapper Education Manual and the AFWA trapping Best Management Practices. Original questions. Seasons, legal traps, check times, tagging and course requirements vary by state. Not affiliated with AFWA.",
+    analyticsKey: "trapper",
+  },
+};
 const natecore: ExamConfig = {
   id: "natecore",
   stateCode: "NATECORE",
@@ -24367,7 +25361,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, r410a, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp];
+export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, r410a, backflow, pesticide, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

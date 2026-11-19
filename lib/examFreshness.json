@@ -91,6 +91,14 @@
       "source": "https://www.peoplecert.org/help-and-support/faq-itil"
     },
     {
+      "exam": "cobit",
+      "date": "2027-06-30",
+      "kind": "sunset",
+      "what": "Last day to buy ISACA's COBIT 2019 Foundation exam; COBIT 7 Foundation replaced it on 19 November 2026.",
+      "action": "Build COBIT 7 Foundation from ISACA's COBIT 7 material once it is public, then retire COBIT 2019.",
+      "source": "https://www.isaca.org/credentialing/cobit/cobit-foundation"
+    },
+    {
       "exam": "netplus",
       "date": "2027-06-01",
       "kind": "sunset",
@@ -578,6 +586,22 @@
       "what": "The disposable cylinder heel rule of 40 CFR 84.116 takes effect.",
       "action": "Check the rule is still in force before that date (the Emissions Reduction and Reclamation rule is under reconsideration; the May 2026 proposal covers refrigerated transport only) and update the cylinder items if it changed.",
       "source": "https://www.ecfr.gov/current/title-40/section-84.116"
+    },
+    {
+      "exam": "ctec",
+      "date": "2027-01-01",
+      "kind": "outline",
+      "what": "CTEC's updated CP23A qualifying education guidelines take effect, and courses move to tax year 2026 law (returns filed in 2027).",
+      "action": "Read the new CP23A exhibit, then update every 2025 figure (standard deductions, credits, CalEITC and renter's credit limits, exemption credits, mileage) to the 2026 IRS and FTB amounts and add any new required topics.",
+      "source": "https://ctec.org/education-providers/"
+    },
+    {
+      "exam": "pl900",
+      "date": "2026-12-18",
+      "kind": "outline",
+      "what": "Microsoft updates the English PL-900 exam on December 18, 2026 (notice on the certification page); until then the study guide lists the skills measured as of July 24, 2026.",
+      "action": "Read the updated study guide's skills measured and change log, then re-weight the blueprint and add or retire items to match.",
+      "source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900"
     }
   ]
 }

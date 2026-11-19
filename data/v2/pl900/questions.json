@@ -1,0 +1,4410 @@
+[
+  {
+    "id": "PL900-T1-001",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Canvas apps",
+    "stem": "Contoso's field crew needs a low-code phone app with a drag-and-drop layout that reads from SharePoint and SQL Server. Which app type fits?",
+    "options": [
+      "Power Pages site",
+      "Canvas app",
+      "Business process flow",
+      "Model-driven app"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Canvas apps start from a blank design surface, connect to hundreds of data sources and can be designed for phones."
+  },
+  {
+    "id": "PL900-T1-002",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topics",
+    "stem": "In an agent that uses generative orchestration, what does the agent read to decide when a topic fits a user's request?",
+    "options": [
+      "The topic's description",
+      "The topic's trigger phrases only",
+      "The topic's YAML file name",
+      "The topic's node names"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With generative orchestration each topic has a description that tells the agent its purpose. Classic orchestration matches trigger phrases instead."
+  },
+  {
+    "id": "PL900-T1-003",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Fabrikam needs a Dataverse table that shows rows from an Azure SQL Database at runtime, without copying the data into Dataverse. Which table type fits?",
+    "options": [
+      "Standard",
+      "Activity",
+      "Virtual",
+      "Elastic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A virtual table has columns whose data comes from an external source, such as Azure SQL Database, when the app runs."
+  },
+  {
+    "id": "PL900-T1-004",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Flow types",
+    "stem": "Fabrikam wants a report emailed every Monday at 9:00 AM. Which type of cloud flow should a maker create?",
+    "options": [
+      "Instant",
+      "Desktop",
+      "Scheduled",
+      "Automated"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scheduled cloud flows run at a set time or on a recurring schedule using the Recurrence trigger."
+  },
+  {
+    "id": "PL900-T1-005",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "In a flow that posts to Teams when your manager emails you, what part is the arriving email?",
+    "options": [
+      "The trigger",
+      "A condition",
+      "A connection",
+      "An action"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A trigger is the event that starts a flow; actions are what the flow does afterwards, such as posting to Teams."
+  },
+  {
+    "id": "PL900-T1-006",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environments",
+    "stem": "Contoso wants a non-production place to try changes, with the ability to copy and reset it, before they reach the live app. Which environment type fits?",
+    "options": [
+      "Sandbox",
+      "Trial",
+      "Production",
+      "Default"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sandbox environments are nonproduction environments with features like copy and reset, used for development and testing."
+  },
+  {
+    "id": "PL900-T1-007",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power Pages",
+    "stem": "Fabrikam wants customers outside the company to register products for warranty service on a website that reads and writes Dataverse rows. Which product fits?",
+    "options": [
+      "Copilot Studio",
+      "Microsoft Dataverse",
+      "Power Automate",
+      "Power Pages"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power Pages is the low-code platform for external-facing business websites, and its sites use the same Dataverse data as the rest of Power Platform."
+  },
+  {
+    "id": "PL900-T1-008",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent 365",
+    "stem": "Where does an admin see one list of the organization's agents, from Microsoft, partners and in-house teams, with each agent's owner, usage and risks?",
+    "options": [
+      "Topics page in Copilot Studio",
+      "Environments page in the Power Platform admin center",
+      "Solutions area in Power Apps",
+      "Agent registry in the Microsoft 365 admin center"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft Agent 365's agent registry lives in the Microsoft 365 admin center and lists agents with their owners, usage and risks."
+  },
+  {
+    "id": "PL900-T1-009",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "Which data platform does a model-driven app require?",
+    "options": [
+      "Microsoft Dataverse",
+      "SQL Server",
+      "Excel workbooks",
+      "SharePoint lists"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Model-driven apps are built on a data model in Dataverse; without Dataverse you can't create one. Canvas apps can use many sources through connectors."
+  },
+  {
+    "id": "PL900-T1-010",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topics",
+    "stem": "Which node in a topic asks the customer something and stores the answer in a variable?",
+    "options": [
+      "Question",
+      "Condition",
+      "Redirect",
+      "Message"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Question node asks the customer a question and saves the response. Message nodes only send text, and Condition nodes branch."
+  },
+  {
+    "id": "PL900-T1-011",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "App types",
+    "stem": "Match each description to the app type.",
+    "rows": [
+      "The maker designs the layout control by control",
+      "Automatically responsive and accessible",
+      "Most of the layout comes from the forms and views you add",
+      "Built in Visual Studio Code with React and run on Power Platform"
+    ],
+    "columns": [
+      "Canvas app",
+      "Model-driven app",
+      "Code app"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      2
+    ],
+    "explanation": "Canvas apps give full layout control, model-driven apps derive their interface from components and are responsive by default, and code apps are built in a code-first IDE."
+  },
+  {
+    "id": "PL900-T1-012",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which of these out-of-the-box Dataverse tables is an activity table, with a subject, start time, due date and duration?",
+    "options": [
+      "Contact",
+      "Account",
+      "Business Unit",
+      "Phone Call"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Activity tables track actions you could put on a calendar. Appointment, email, phone call and task are activity tables, and only a user or team can own them. Account and contact are standard tables."
+  },
+  {
+    "id": "PL900-T1-013",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Desktop flows",
+    "stem": "Adventure Works must enter data into an old terminal-based finance application that has no API. Which Power Automate capability fits?",
+    "options": [
+      "Scheduled cloud flows",
+      "Business process flows",
+      "Instant cloud flows",
+      "Desktop flows"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Desktop flows bring robotic process automation to Power Automate and can work with legacy applications such as terminal emulators through their user interface."
+  },
+  {
+    "id": "PL900-T1-014",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "Which trigger does a scheduled cloud flow use?",
+    "options": [
+      "Recurrence",
+      "When an item is created",
+      "Manually trigger a flow",
+      "When a new email arrives (V3)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Creating a scheduled cloud flow adds the Recurrence trigger, which runs the flow at a set date, time and frequency."
+  },
+  {
+    "id": "PL900-T1-015",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data policies",
+    "stem": "When an admin creates a new data policy, which group are all connectors placed in to start with?",
+    "options": [
+      "Non-Business",
+      "Business",
+      "Ignore",
+      "Blocked"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "New policies put every connector in Non-Business, and Microsoft advises keeping Non-Business as the default group for new connectors."
+  },
+  {
+    "id": "PL900-T1-016",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Topics",
+    "stem": "For each statement about topics, select Yes if it is true or No if it is false.",
+    "rows": [
+      "System topics can be deleted from an agent.",
+      "Every topic a maker creates is a custom topic.",
+      "Makers can turn off a system topic.",
+      "Makers can create new system topics."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "explanation": "System topics such as Escalate can be edited or turned off but not created or deleted. Every topic you create is a custom topic."
+  },
+  {
+    "id": "PL900-T1-017",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plan designer",
+    "stem": "A maker describes a vacation request process, uploads a photo of the paper form, and wants tables, apps and flows generated together. Which Power Apps feature fits?",
+    "options": [
+      "Create a blank canvas app",
+      "Create a virtual table",
+      "Plans",
+      "Create new data with Copilot"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Plans is a copilot-first tool that takes a description and images and generates a solution with Dataverse tables, apps, Power Pages sites, flows and agents."
+  },
+  {
+    "id": "PL900-T1-018",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dataverse",
+    "stem": "Which Power Platform service gives apps, flows and agents one shared store for business data, with tables, relationships and role-based security?",
+    "options": [
+      "Power Pages",
+      "Microsoft Dataverse",
+      "Power Automate",
+      "Power BI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dataverse stores business data in tables and secures it with role-based security. Power Apps, Power Automate, Power Pages and Copilot Studio can all use the same tables."
+  },
+  {
+    "id": "PL900-T1-019",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "Which page in Copilot Studio summarizes an agent's sessions, outcomes and satisfaction, with an AI summary of insights?",
+    "options": [
+      "Channels",
+      "Monitor",
+      "Tools",
+      "Topics"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Monitor page summarizes key metrics and usage analytics for an agent's components, starting with a Copilot-generated summary."
+  },
+  {
+    "id": "PL900-T1-020",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code apps",
+    "stem": "Which tools does a developer install to build a Power Apps code app?",
+    "options": [
+      "Power Apps Studio and a Dataverse for Teams environment",
+      "Power BI Desktop and an on-premises data gateway",
+      "Power Automate for desktop and a machine group",
+      "Node.js, npm, Git and the Power Apps CLI"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code apps are built in an IDE such as Visual Studio Code with Node.js, npm, Git and the Power Apps CLI."
+  },
+  {
+    "id": "PL900-T1-021",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "Each classroom hosts many courses, and each course meets in one classroom. Which relationship should go from Classroom to Course?",
+    "options": [
+      "A connection role",
+      "Many-to-many (N:N)",
+      "One-to-many (1:N)",
+      "Many-to-one (N:1)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One classroom row relates to many course rows, so Classroom to Course is 1:N. Many-to-one is the same relationship seen from the Course side."
+  },
+  {
+    "id": "PL900-T1-022",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "A purchase request must go to three managers, and the flow should continue as soon as any one of them responds. Which approval type fits?",
+    "options": [
+      "Approve/Reject - First to respond",
+      "Sequential approval",
+      "Custom Responses - Wait for all responses",
+      "Approve/Reject - Everyone must approve"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With First to respond, approval or rejection by any approver completes the request."
+  },
+  {
+    "id": "PL900-T1-023",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "Which prompt pattern does Microsoft recommend for getting better results when creating a cloud flow with Copilot?",
+    "options": [
+      "List every action in alphabetical order",
+      "Do Y, then wait for X",
+      "Describe the flow only by its name",
+      "When X happens, do Y"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prompts in a 'When X happens, do Y' format that name the connector, such as Outlook or Teams, give Copilot the most to work with."
+  },
+  {
+    "id": "PL900-T1-024",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "An agent must answer from HR policy documents on SharePoint and show each employee only what they're allowed to see. Which knowledge source fits?",
+    "options": [
+      "SharePoint",
+      "Uploaded documents",
+      "Use information from the web",
+      "Public website"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SharePoint knowledge uses the agent user's Microsoft Entra ID authentication, so answers come only from content that user can access."
+  },
+  {
+    "id": "PL900-T1-025",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security roles",
+    "stem": "Which built-in environment role lets someone create apps, connections, custom connectors and flows without administering the environment?",
+    "options": [
+      "Environment Admin",
+      "Environment Maker",
+      "System Administrator",
+      "Basic User"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Environment Makers can create resources. Environment Admins can add users to roles, provision Dataverse and set data policies."
+  },
+  {
+    "id": "PL900-T1-026",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code apps",
+    "stem": "Which license lets an end user run a Power Apps code app?",
+    "options": [
+      "Power Apps Premium",
+      "Microsoft 365 Business Basic",
+      "Copilot Studio user license",
+      "Power Pages authenticated user"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "End users of code apps need Power Apps Premium, pay-as-you-go, an App Pass or a Dynamics 365 license with Power Apps use rights."
+  },
+  {
+    "id": "PL900-T1-027",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "With Allow ungrounded responses turned off, what happens when the agent would answer without using any knowledge source or tool?",
+    "options": [
+      "The response is blocked and the Fallback topic runs",
+      "The agent answers from the model's general knowledge anyway",
+      "The agent searches the public web instead",
+      "The agent sends the question to a person"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When the setting is off, a response generated in a turn that used no knowledge source or tool is blocked and the fallback topic triggers."
+  },
+  {
+    "id": "PL900-T1-028",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business logic",
+    "stem": "Northwind wants a rule that a discount can't exceed 20 percent, applied no matter which app creates or edits the row. What should a maker add in Dataverse?",
+    "options": [
+      "A business process flow",
+      "A quick view form",
+      "A business rule",
+      "A personal view"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Business rules validate data and show warnings or errors regardless of the app used to create the data. Business process flows guide users through stages."
+  },
+  {
+    "id": "PL900-T1-029",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Flow types",
+    "stem": "Match each scenario to the kind of flow that fits it.",
+    "rows": [
+      "Post in Teams when a Microsoft Forms response is submitted",
+      "Copy values from an on-screen desktop app into Excel on a workstation",
+      "Save an email attachment to SharePoint when a message arrives in Outlook",
+      "A field worker taps a button on a phone to remind the team about a meeting"
+    ],
+    "columns": [
+      "Automated cloud flow",
+      "Instant cloud flow",
+      "Desktop flow"
+    ],
+    "correct": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "explanation": "Automated flows start on an event, instant flows start from a manual tap, and desktop flows automate apps on a Windows desktop."
+  },
+  {
+    "id": "PL900-T1-030",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "After Copilot drafts a cloud flow, what does the maker check before selecting Create flow?",
+    "options": [
+      "That a data policy lists the flow",
+      "That each connection shows a green check mark",
+      "That every action has its own written description",
+      "That the flow has a desktop machine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Copilot sets up connections automatically. Correct ones show a green check mark and ones needing attention a red exclamation mark."
+  },
+  {
+    "id": "PL900-T1-031",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI canvas apps",
+    "stem": "Where does a maker start in Power Apps to have Copilot generate Dataverse tables that then become a canvas app?",
+    "options": [
+      "Start with data, then Create new data",
+      "Tables, then Create a virtual table",
+      "Solutions, then Add existing",
+      "Apps, then Import canvas app"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "From the home screen, Start with data then Create new data opens the table editor with Copilot. After review, Save and open app builds the canvas app."
+  },
+  {
+    "id": "PL900-T1-032",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Choosing a product",
+    "stem": "Match each business need to the product that delivers it.",
+    "rows": [
+      "Give field technicians a phone app to log site inspections",
+      "Answer employees' HR questions in a chat",
+      "Route a purchase request to a manager for sign-off",
+      "Post a Teams message whenever a SharePoint list item changes"
+    ],
+    "columns": [
+      "Power Apps",
+      "Power Automate",
+      "Copilot Studio"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      1
+    ],
+    "explanation": "Power Apps builds apps, Power Automate runs automated processes such as notifications and approvals, and Copilot Studio builds conversational agents."
+  },
+  {
+    "id": "PL900-T1-033",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evaluations",
+    "stem": "What does Copilot Studio call a group of test cases that is run against an agent together?",
+    "options": [
+      "A theme",
+      "A test chat",
+      "A test set",
+      "A transcript"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Agent evaluation runs a test set, a group of test cases, and gives an aggregate score plus results for each case."
+  },
+  {
+    "id": "PL900-T1-034",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vibe experience",
+    "stem": "Which Power Apps experience produces requirements, a data model and a full app with generated code from one prompt, in a single workspace?",
+    "options": [
+      "Power Apps Studio",
+      "Power Apps vibe",
+      "Table designer",
+      "Model-driven app designer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The vibe experience is an AI-native workspace where plan, data and app stay in sync and the app is generated as code."
+  },
+  {
+    "id": "PL900-T1-035",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tools",
+    "stem": "An agent must run the same approval steps in the same order every time a user asks for a password reset. Which kind of tool fits best?",
+    "options": [
+      "Computer use",
+      "Agent flow",
+      "Prompt",
+      "Knowledge source"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Agent flows are deterministic: they follow a rule-based path, so the same input gives the same output."
+  },
+  {
+    "id": "PL900-T1-036",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipelines",
+    "stem": "What do pipelines in Power Platform move from a development environment to test and production?",
+    "options": [
+      "Whole environments, including all of their users and settings",
+      "Solutions, with connections and environment variables",
+      "Rows of business data in Dataverse tables",
+      "Security roles assigned to individual users"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pipelines deploy solutions plus target configuration such as connection references and environment variables. Solutions don't carry the data stored in Dataverse tables."
+  },
+  {
+    "id": "PL900-T1-037",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Forms and views",
+    "stem": "For each statement about model-driven forms and views, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Quick create forms are designed for rapid data entry.",
+      "Quick view forms show data from a related row.",
+      "System views such as the Lookup view appear in the view selector.",
+      "A personal view is visible to everyone in the environment by default."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Quick create forms speed up data entry and quick view forms show related data. Personal views are visible only to their owner unless shared, and system views are not shown in the view selector."
+  },
+  {
+    "id": "PL900-T1-038",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "Where can an approver respond to a Power Automate approval request without opening the Power Automate portal?",
+    "options": [
+      "The Power Platform admin center",
+      "An actionable Outlook email or a Teams adaptive card",
+      "A Power Pages web form published by the maker",
+      "The test panel of a Copilot Studio agent built by the maker"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Approvers can respond from an Outlook email, a Microsoft Teams adaptive card or the Power Automate action center."
+  },
+  {
+    "id": "PL900-T1-039",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Copilot in cloud flows",
+    "stem": "For each statement about Copilot in cloud flows, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Copilot responses never need to be reviewed by the maker.",
+      "Copilot can replace an email action with a Teams action when asked.",
+      "Copilot can answer 'What does my flow do?' with a summary.",
+      "Copilot can edit flows only in the classic designer."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "explanation": "Copilot answers questions about a flow and edits it on request, but only in the new designer. Generative AI output should always be reviewed."
+  },
+  {
+    "id": "PL900-T1-040",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Canvas and model-driven",
+    "stem": "For each statement about canvas and model-driven apps, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Canvas apps can be embedded in Microsoft Teams and SharePoint.",
+      "Canvas apps can connect to hundreds of data sources through connectors.",
+      "Model-driven apps need a custom formula for each navigation between related rows.",
+      "Model-driven apps give the maker full control of every pixel of the layout."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Canvas apps use connectors and can be embedded in Teams, SharePoint and Power BI. Model-driven layouts come from components, and navigation through relationships is automatic."
+  },
+  {
+    "id": "PL900-T1-041",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "MCP",
+    "stem": "Which two kinds of MCP server items can a Copilot Studio agent use today?",
+    "options": [
+      "Prompts only",
+      "Tools and prompts",
+      "Prompts and resources",
+      "Tools and resources"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MCP servers can offer resources, tools and prompts. Copilot Studio currently supports MCP tools and resources."
+  },
+  {
+    "id": "PL900-T1-042",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AI model-driven apps",
+    "stem": "After Copilot creates tables, which kind of app can a maker build directly from the table designer?",
+    "options": [
+      "Model-driven app",
+      "Code app",
+      "Power Pages site",
+      "Desktop flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The table designer can create a model-driven app based on the table, as well as edit records, columns and table properties."
+  },
+  {
+    "id": "PL900-T1-043",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Connectors",
+    "stem": "Northwind's process must read records from Salesforce and write them to SharePoint without custom code. What lets Power Platform talk to both services?",
+    "options": [
+      "Data policies",
+      "Prebuilt connectors",
+      "Solutions",
+      "Business rules"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Connectors wrap a service's API as actions and triggers that apps, flows and agents can use. Salesforce and SharePoint both have prebuilt connectors."
+  },
+  {
+    "id": "PL900-T1-044",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Monitoring",
+    "stem": "For each statement about agent analytics, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Active user metrics work even when the agent requires no authentication.",
+      "Activity in the test panel appears on the Monitor page.",
+      "Analytics time stamps are in Coordinated Universal Time (UTC).",
+      "Session transcripts can be downloaded for periods within the last 28 days."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "explanation": "Test panel activity isn't counted, time stamps are UTC and transcripts cover the last 28 days. Active user metrics need the agent to require authentication."
+  },
+  {
+    "id": "PL900-T1-045",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "An admin wants app open success rates and improvement recommendations for apps in a managed environment. Where should they look?",
+    "options": [
+      "Agent registry in the Microsoft 365 admin center",
+      "App checker in Power Apps Studio",
+      "Analytics tab of an agent in Copilot Studio",
+      "Monitor area of the Power Platform admin center"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Monitor area shows operational health metrics, logs and, for managed environments, recommendations for apps, flows and agents."
+  },
+  {
+    "id": "PL900-T1-046",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AI table creation",
+    "stem": "A maker types 'Create tables to track equipment loans, borrowers and due dates' and gets tables with relationships to review. Which option did the maker choose?",
+    "options": [
+      "Import an Excel file or .CSV",
+      "Set advanced properties",
+      "Create a virtual table",
+      "Start with Copilot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Start with Copilot generates tables and relationships from a natural-language description, which the maker can keep refining in the Copilot panel."
+  },
+  {
+    "id": "PL900-T1-047",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Document automation",
+    "stem": "Litware wants each incoming invoice read and its vendor name, invoice total and due date passed to a flow. Which flow action does this?",
+    "options": [
+      "Start and wait for an approval",
+      "Post message in a chat or channel",
+      "Extract information from invoices",
+      "Run a flow built with Power Automate for desktop"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The AI Builder invoice processing model's Extract information from invoices action returns fields such as vendor name, invoice total and due date, each with a confidence score."
+  },
+  {
+    "id": "PL900-T1-048",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Copilot in desktop flows",
+    "stem": "When Copilot builds a desktop flow that must click through a website, what does it insert where the browser steps belong?",
+    "options": [
+      "A scheduled Recurrence trigger",
+      "A call to a Copilot Studio agent",
+      "A Teams adaptive card",
+      "A placeholder for the recorder"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For browser or UI tasks Copilot inserts an action placeholder; you run the recorder and the recorded actions replace it."
+  },
+  {
+    "id": "PL900-T1-049",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Channels",
+    "stem": "Which authentication setting is on by default for a new agent, giving Teams, Power Apps and Microsoft Copilot sign-in with no setup?",
+    "options": [
+      "No authentication",
+      "Authenticate with Microsoft",
+      "Authenticate manually",
+      "Anonymous with a shared key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Authenticate with Microsoft is on by default and uses Microsoft Entra ID automatically in Teams, Power Apps and Microsoft Copilot."
+  },
+  {
+    "id": "PL900-T1-050",
+    "section": "pl900",
+    "test": 1,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "Northwind needs a data-dense app for a complex sales process where users move between related accounts, contacts and opportunities. Which app type suits it best?",
+    "options": [
+      "Model-driven app",
+      "Power Pages site",
+      "Canvas app",
+      "Desktop flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Model-driven apps suit process-driven, data-dense apps where users move between related records."
+  },
+  {
+    "id": "PL900-T2-001",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Canvas apps",
+    "stem": "Which language do makers use to set control properties and behavior in a canvas app?",
+    "options": [
+      "C#",
+      "Power Fx",
+      "YAML",
+      "SQL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Canvas apps are designed by manipulating control properties with Power Fx expressions."
+  },
+  {
+    "id": "PL900-T2-002",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Use cases",
+    "stem": "Contoso wants an agent that starts on its own when a new file lands in SharePoint, with no one chatting to it. What kind of agent is this?",
+    "options": [
+      "Conversational agent on a demo website",
+      "Agent published to Facebook",
+      "Autonomous agent with an event trigger",
+      "Agent with only system topics"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An autonomous agent is an agent with an event trigger. It reacts to the trigger's payload and runs actions without a conversation."
+  },
+  {
+    "id": "PL900-T2-003",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "A telemetry table must hold tens of millions of rows with high throughput and low latency. Which Dataverse table type is designed for this?",
+    "options": [
+      "Elastic",
+      "Standard",
+      "Activity",
+      "Virtual"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Elastic tables are for very large datasets beyond tens of millions of rows. They are powered by Azure Cosmos DB."
+  },
+  {
+    "id": "PL900-T2-004",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Flow types",
+    "stem": "A flow should start whenever a new item is added to a SharePoint list. Which type of cloud flow is this?",
+    "options": [
+      "Business process flow",
+      "Instant cloud flow",
+      "Automated cloud flow",
+      "Scheduled cloud flow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Automated cloud flows run after an event occurs, such as a new SharePoint item or an arriving email."
+  },
+  {
+    "id": "PL900-T2-005",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "Which trigger starts an instant cloud flow from a button?",
+    "options": [
+      "When a new email arrives (V3)",
+      "When an agent calls the flow",
+      "Manually trigger a flow",
+      "Recurrence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Instant cloud flows use the Manually trigger a flow trigger, run from a button in Power Automate or on a phone."
+  },
+  {
+    "id": "PL900-T2-006",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environments",
+    "stem": "Every new Power Apps user is automatically added to the maker role of which environment?",
+    "options": [
+      "Production",
+      "Default",
+      "Sandbox",
+      "Developer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each tenant has one default environment, and every user who signs up for Power Apps is added to its Environment Maker role."
+  },
+  {
+    "id": "PL900-T2-007",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Copilot Studio",
+    "stem": "Wide World Importers wants a help desk agent in Teams that answers questions from its SharePoint knowledge base. Which product is built for this?",
+    "options": [
+      "Power Pages",
+      "Power Automate",
+      "Power Apps",
+      "Copilot Studio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Copilot Studio builds agents that can use SharePoint as a knowledge source and be published to Teams and Microsoft 365 Copilot."
+  },
+  {
+    "id": "PL900-T2-008",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent 365",
+    "stem": "On which four pillars is Microsoft Agent 365 built?",
+    "options": [
+      "Plan, data, app and flow",
+      "Topics, knowledge, tools and channels for every agent",
+      "Design, build, test and publish",
+      "Management, governance, security and business value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Agent 365 is built on management, governance, security and business value, giving IT, security and business teams one view of agents."
+  },
+  {
+    "id": "PL900-T2-009",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "Besides the app itself, a model-driven app needs at least one table and what other element?",
+    "options": [
+      "A cloud flow",
+      "A canvas screen",
+      "A site map",
+      "A Power Pages site"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "At a minimum a model-driven app requires a single table, a site map and the app itself."
+  },
+  {
+    "id": "PL900-T2-010",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topics",
+    "stem": "A maker wants to copy a topic from another agent by pasting its definition. Which tool should they open?",
+    "options": [
+      "Channels page",
+      "Code editor",
+      "Monitor page",
+      "Test panel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The code editor shows a topic as YAML, so you can copy and paste topics between agents."
+  },
+  {
+    "id": "PL900-T2-011",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plan designer",
+    "stem": "What must an environment include before a maker can create a plan in Power Apps there?",
+    "options": [
+      "A Dataverse database",
+      "A Power Pages site",
+      "A machine group",
+      "An Azure subscription"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Plans need a Dataverse database in the environment. Makers without one may be routed to their own developer environment."
+  },
+  {
+    "id": "PL900-T2-012",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table ownership",
+    "stem": "Rows in a new custom table must belong to individual people so that access can be controlled per person. Which ownership type should the maker choose?",
+    "options": [
+      "Business unit",
+      "User or team",
+      "Organization",
+      "None"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "User or team ownership lets actions on rows be controlled at the user level. Organization-owned data is controlled for the whole organization, and business unit and none apply only to some system tables."
+  },
+  {
+    "id": "PL900-T2-013",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "An expense report must be approved first by a team lead and then by finance, one after the other. Which approval type fits?",
+    "options": [
+      "Sequential approval",
+      "Custom Responses - Wait for one response",
+      "Approve/Reject - Everyone must approve",
+      "Approve/Reject - First to respond"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sequential approvals ask each approver in a set order, and the request moves on only after each one responds."
+  },
+  {
+    "id": "PL900-T2-014",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "Where do most of the triggers and actions in a cloud flow come from?",
+    "options": [
+      "Power Pages templates",
+      "Connectors to services such as SharePoint and Outlook",
+      "Managed environment settings",
+      "Security roles defined in the environment's Dataverse database"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Connectors expose triggers such as When a new item is added and actions such as Create a file, and most connectors offer both."
+  },
+  {
+    "id": "PL900-T2-015",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data policies",
+    "stem": "Which of these connectors can't be placed in the Blocked group of a classic data policy?",
+    "options": [
+      "Microsoft Dataverse",
+      "Salesforce",
+      "Dropbox",
+      "Gmail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Core Power Platform connectors such as Dataverse, Approvals and Notifications, and Microsoft 365 standard connectors, can't be blocked. Third-party connectors can."
+  },
+  {
+    "id": "PL900-T2-016",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Topics",
+    "stem": "Match each conversation need to the node type.",
+    "rows": [
+      "Call a Power Automate flow to look up an order",
+      "Branch when the shipping state is California",
+      "Hand the conversation to a live agent",
+      "Say 'Thanks, your order is booked' to the customer"
+    ],
+    "columns": [
+      "Message",
+      "Condition",
+      "Topic management",
+      "Tool"
+    ],
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Message nodes send text, Condition nodes branch, topic management nodes redirect, transfer or end, and Tool nodes call flows, connectors and other tools."
+  },
+  {
+    "id": "PL900-T2-017",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Plan designer",
+    "select": 2,
+    "stem": "Which two can Plans in Power Apps generate as part of a solution? (Choose two.)",
+    "options": [
+      "Copilot Studio agents",
+      "Power Pages sites",
+      "Azure Logic Apps workflows",
+      "Power BI semantic models"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Plans can generate Dataverse tables, canvas apps, model-driven apps, Power Pages sites, Power Automate flows and Copilot Studio agents."
+  },
+  {
+    "id": "PL900-T2-018",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Generative AI",
+    "stem": "Typing 'track hotel housekeeping tasks, rooms and staff' gives a maker draft Dataverse tables and relationships to review. Which kind of Power Platform capability is this?",
+    "options": [
+      "Data loss prevention",
+      "Application lifecycle management",
+      "Generative AI with Copilot",
+      "Robotic process automation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Copilot features use generative AI to turn a natural-language description into tables, apps, flows or agents that the maker reviews and refines."
+  },
+  {
+    "id": "PL900-T2-019",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "An owner wants a colleague to see only an agent's Monitor page. Which sharing role should they use?",
+    "options": [
+      "System Customizer",
+      "Analytics Viewer",
+      "Environment Maker",
+      "Bot Transcript Viewer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Analytics Viewer sharing role gives access only to the Monitor page. Seeing transcripts also needs the Bot Transcript Viewer security role."
+  },
+  {
+    "id": "PL900-T2-020",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Code apps",
+    "stem": "Where are Power Apps code apps not supported, according to Microsoft?",
+    "options": [
+      "Managed environments",
+      "Web browsers",
+      "Power Apps for Windows",
+      "Environments with Dataverse"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code apps run in the browser on a managed platform, but Microsoft lists Power Apps for Windows as unsupported."
+  },
+  {
+    "id": "PL900-T2-021",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "Each student can enroll in many courses, and each course has many students. Which relationship fits?",
+    "options": [
+      "Many-to-many (N:N)",
+      "Many-to-one (N:1)",
+      "A lookup column on Course",
+      "One-to-many (1:N)"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rows on both sides relate to many rows on the other, so the tables need a many-to-many relationship. A lookup column only creates a one-to-many relationship."
+  },
+  {
+    "id": "PL900-T2-022",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "What must exist in the environment before approval flows can store their data?",
+    "options": [
+      "A Copilot Studio agent",
+      "A Microsoft Dataverse database",
+      "A Power Pages site",
+      "A desktop flow machine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Approval flows are saved in Dataverse. In a non-default environment a database is provisioned the first time an admin runs an approval flow."
+  },
+  {
+    "id": "PL900-T2-023",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "Where in Power Automate does a maker start creating a cloud flow by describing it in words?",
+    "options": [
+      "Machines, then New machine group",
+      "Solutions, then Add existing",
+      "Create with Copilot on the Home page",
+      "My flows, then Import package"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On the Home page, Create with Copilot asks 'What will your flow do?' and generates a trigger and actions from the description."
+  },
+  {
+    "id": "PL900-T2-024",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "Which knowledge source searches Bing but returns results only from sites the maker lists?",
+    "options": [
+      "SharePoint",
+      "Public website",
+      "Dataverse",
+      "Uploaded documents"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A public website knowledge source runs the query on Bing and returns only results from the websites you provided."
+  },
+  {
+    "id": "PL900-T2-025",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security roles",
+    "stem": "A user must be able to give ownership of a row to a colleague. Which Dataverse privilege does this need?",
+    "options": [
+      "Write",
+      "Append To",
+      "Assign",
+      "Share"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Assign gives ownership of a record to someone else. Share gives another user access while you keep yours."
+  },
+  {
+    "id": "PL900-T2-026",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Code apps",
+    "stem": "Code apps are turned off in an environment. Where is the Enable code apps setting?",
+    "options": [
+      "Settings of the npm package",
+      "Account settings in the Power Apps mobile app",
+      "Settings in Power Apps Studio for the current app",
+      "Settings, Product, Features in the admin center"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power Platform admins and environment admins turn on code apps under the environment's Settings, Product, Features page in the admin center."
+  },
+  {
+    "id": "PL900-T2-027",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "Which setting lets an agent search all public websites indexed by Bing, not only the sites the maker added?",
+    "options": [
+      "Official sources",
+      "Use information from the web",
+      "Allow ungrounded responses",
+      "Content moderation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Use information from the web, also shown as Web Search, uses Grounding with Bing Search across all indexed sites, alongside any listed websites."
+  },
+  {
+    "id": "PL900-T2-028",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Relationship behavior",
+    "stem": "Deleting an account must be blocked while related invoices still exist. Which Delete behavior should the relationship use?",
+    "options": [
+      "Cascade Active",
+      "Cascade All",
+      "Restrict",
+      "Remove Link"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Restrict prevents the primary row from being deleted when related rows exist. Cascade All deletes the related rows, and Remove Link clears their lookup."
+  },
+  {
+    "id": "PL900-T2-029",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Desktop flows",
+    "stem": "A desktop flow must run on a server at night while nobody is signed in to Windows. Which run mode should the cloud flow use?",
+    "options": [
+      "Scheduled",
+      "Attended",
+      "Instant",
+      "Unattended"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Unattended runs need no signed-in user and require an unattended add-on; attended runs happen in a user's session."
+  },
+  {
+    "id": "PL900-T2-030",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Copilot in cloud flows",
+    "stem": "Match each request to whether Copilot treats it as a change to the flow or a question about it.",
+    "rows": [
+      "What does my flow do?",
+      "How do I access child flows?",
+      "Instead of email, post the message in a Teams channel",
+      "Delete the action that sends the email"
+    ],
+    "columns": [
+      "Edit the flow",
+      "Answer a question"
+    ],
+    "correct": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "explanation": "In the designer's Copilot pane you can ask for edits, such as deleting or replacing actions, or ask questions about the flow and the product."
+  },
+  {
+    "id": "PL900-T2-031",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vibe experience",
+    "stem": "In which type of environment is the Power Apps vibe experience not available?",
+    "options": [
+      "Developer",
+      "Sandbox",
+      "Default",
+      "Production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft lists the vibe experience as unavailable in a default environment."
+  },
+  {
+    "id": "PL900-T2-032",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Platform value",
+    "stem": "For each statement about Power Platform, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Power Pages sites can use the same Dataverse data as Power Apps.",
+      "Model-driven apps can use any connector as their data source.",
+      "Desktop flows can automate legacy applications that have no API.",
+      "Copilot Studio agents can be published only to Microsoft Teams."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Power Pages builds on Dataverse, and desktop flows automate apps through their user interface. Model-driven apps need Dataverse, and agents can be published to websites, mobile apps, SharePoint, WhatsApp and more."
+  },
+  {
+    "id": "PL900-T2-033",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evaluations",
+    "stem": "Why use agent evaluation in addition to the test chat?",
+    "options": [
+      "To publish the agent to Teams",
+      "To run many repeatable test cases at once and score them",
+      "To chat with the agent one message at a time in a browser",
+      "To set the agent's content moderation level"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The test chat handles one question at a time and is hard to repeat. Evaluation runs a whole test set the same way each time and scores the results."
+  },
+  {
+    "id": "PL900-T2-034",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "AI canvas apps",
+    "stem": "Match each request to the Copilot panel option it uses when creating tables for an app.",
+    "rows": [
+      "Describe a new table of rows and columns for an inventory",
+      "Add start and end time columns to a table already in the workspace",
+      "Build tables from an Excel file or SharePoint list",
+      "Describe new tables and relationships to generate"
+    ],
+    "columns": [
+      "Create",
+      "Import data",
+      "Change"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "explanation": "The Copilot panel offers Create for new tables, Import data for Excel, .CSV or SharePoint sources, and Change for edits."
+  },
+  {
+    "id": "PL900-T2-035",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tools",
+    "stem": "What should a tool's description say so that generative orchestration uses it at the right time?",
+    "options": [
+      "Only the connector's version number",
+      "What the tool does and when to use it",
+      "The environment the agent runs in",
+      "The list of channels the agent uses"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The agent picks tools using their name and description, so a good description states what the tool does and when to use it."
+  },
+  {
+    "id": "PL900-T2-036",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed environments",
+    "stem": "An admin wants to stop makers from sharing canvas apps with everyone in the organization. Which managed environment feature does this?",
+    "options": [
+      "Maker welcome content",
+      "Limit sharing",
+      "Weekly usage insights",
+      "IP firewall"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Limit sharing restricts how widely makers can share canvas apps, for example blocking sharing with everyone or with large security groups."
+  },
+  {
+    "id": "PL900-T2-037",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Formula columns",
+    "stem": "Which language does a Dataverse formula column use to calculate a value such as Price times Number of units?",
+    "options": [
+      "Power Fx",
+      "JavaScript",
+      "SQL",
+      "C#"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Formula columns use Power Fx, the same Excel-like language used in canvas apps, with IntelliSense to suggest functions."
+  },
+  {
+    "id": "PL900-T2-038",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Power Automate use cases",
+    "stem": "For each statement about Power Automate, select Yes if it is true or No if it is false.",
+    "rows": [
+      "A cloud flow can start a desktop flow.",
+      "Approvals use a premium connector that most Microsoft 365 licenses don't include.",
+      "Desktop flows can interact with UI elements, images or screen coordinates.",
+      "Instant cloud flows can be started only from the Power Automate portal."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Cloud flows trigger desktop flows with the Run a flow built with Power Automate for desktop action, and desktop flows work through UI elements, images or coordinates. Approvals is a standard connector, and instant flows can also start from a phone."
+  },
+  {
+    "id": "PL900-T2-039",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Copilot in desktop flows",
+    "stem": "Which account type is needed to use Copilot in Power Automate for desktop?",
+    "options": [
+      "A work or school account",
+      "A guest account from another tenant",
+      "A personal Microsoft account",
+      "A local Windows account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Copilot in Power Automate for desktop is available only to users signed in with a work or school account."
+  },
+  {
+    "id": "PL900-T2-040",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Code apps",
+    "stem": "For each statement about code apps, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Code apps use Microsoft Entra authentication.",
+      "Code apps ignore the organization's data loss prevention policies.",
+      "Code apps support SharePoint forms integration.",
+      "Code apps can call Power Platform connectors from JavaScript."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Code apps get Entra authentication and 1,500+ connectors and follow managed platform policies such as data policies, but don't support SharePoint forms integration."
+  },
+  {
+    "id": "PL900-T2-041",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tools",
+    "stem": "Before a tool that changes data runs, the agent should get the user's go-ahead. Which tool setting does this?",
+    "options": [
+      "Maker-provided authentication",
+      "Ask the end user before running",
+      "Allow agent to decide dynamically when to use the tool",
+      "Write the response with generative AI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ask the end user before running makes the agent confirm with the user first. It is set to No by default."
+  },
+  {
+    "id": "PL900-T2-042",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Plan designer",
+    "stem": "Which role sees the Plans entry point but is sent to their own developer environment when saving the plan's tables?",
+    "options": [
+      "System Administrator",
+      "Basic User",
+      "Environment Maker",
+      "System Customizer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "System administrators and system customizers can save tables in the current environment. Environment makers are redirected to their own developer environment."
+  },
+  {
+    "id": "PL900-T2-043",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power Automate",
+    "stem": "Woodgrove needs a process to run every night and copy invoice totals into an Excel file in OneDrive. Which product automates it?",
+    "options": [
+      "Power Pages",
+      "Power Automate",
+      "Power BI",
+      "Copilot Studio"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Power Automate runs scheduled cloud flows that move data between services such as Dataverse, Excel and OneDrive."
+  },
+  {
+    "id": "PL900-T2-044",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Monitoring",
+    "stem": "Match each conversational session outcome to its meaning.",
+    "rows": [
+      "The user confirmed the issue was fixed",
+      "The user left before the session finished",
+      "The conversation was handed to a person",
+      "The agent handled the request to completion"
+    ],
+    "columns": [
+      "Resolved",
+      "Escalated",
+      "Abandoned"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "explanation": "Topic and session outcomes are Resolved, Escalated or Abandoned. A high share of Escalated or Abandoned outcomes shows a topic that needs work."
+  },
+  {
+    "id": "PL900-T2-045",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Data privacy",
+    "stem": "For each statement about Copilot in Power Platform, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Copilot responses are based only on data the user can access.",
+      "Some regions must allow data movement across regions to use certain Copilot features.",
+      "Copilot inputs and outputs are available to other customers.",
+      "Customer prompts are used to train OpenAI models."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Prompts and responses aren't shared with other customers or used to train OpenAI models, and Copilot respects existing permissions. Depending on the region, admins may need to allow data movement for some features."
+  },
+  {
+    "id": "PL900-T2-046",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Model-driven components",
+    "stem": "Match each need to the Dataverse component that meets it.",
+    "rows": [
+      "Show a filtered, sorted list of active projects",
+      "Guide staff through the same stages each time they onboard a client",
+      "Edit every detail of one project row",
+      "Let users switch between 'My open cases' and 'All open cases'"
+    ],
+    "columns": [
+      "Main form",
+      "View",
+      "Business process flow"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "explanation": "Views define the columns, sort and filters of a list of rows, main forms are the full interface for one row, and business process flows guide users through stages."
+  },
+  {
+    "id": "PL900-T2-047",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Teams and Outlook",
+    "stem": "Wide World Importers wants every email from a key customer posted to a Teams channel automatically. Which trigger should the flow start with?",
+    "options": [
+      "Manually trigger a flow",
+      "When a new email arrives (V3)",
+      "Recurrence",
+      "When a new response is submitted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Office 365 Outlook trigger When a new email arrives (V3) starts an automated flow; a Teams action then posts the message."
+  },
+  {
+    "id": "PL900-T2-048",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in desktop flows",
+    "stem": "Which Copilot skill in Power Automate for desktop adds actions to a flow that already exists?",
+    "options": [
+      "Add a step that",
+      "Summarize actions and subflows",
+      "Create flows",
+      "Help me understand"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Add a step that skill adds actions at the end of the flow or under a selected action. Help me understand answers product questions."
+  },
+  {
+    "id": "PL900-T2-049",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Channels",
+    "stem": "A maker edited several topics after the agent was published. What must happen before users on every channel get the changes?",
+    "options": [
+      "Add each channel again",
+      "Publish the agent again",
+      "Turn on generative orchestration",
+      "Run an agent evaluation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Publishing applies to all connected channels. If you change the agent and don't publish, customers keep getting the old content."
+  },
+  {
+    "id": "PL900-T2-050",
+    "section": "pl900",
+    "test": 2,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "In the model-driven app designer, what does a maker add to give the app navigation to a table or custom page?",
+    "options": [
+      "A business rule",
+      "A choice column",
+      "A quick view form",
+      "A page"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A model-driven app is built in the app designer by adding a page, which adds navigation and is usually based on a table or a custom page."
+  },
+  {
+    "id": "PL900-D-001",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "Which model-driven app component shows a graphical summary of table data?",
+    "options": [
+      "Business rule",
+      "Chart",
+      "Form",
+      "Site map"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Model-driven apps are built from components such as forms, views, charts and dashboards. Charts show data visually."
+  },
+  {
+    "id": "PL900-D-002",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power Apps",
+    "stem": "Employees fill in a paper expense form today. Which product lets the business replace it with a custom app on phones and tablets, with little or no code?",
+    "options": [
+      "Copilot Studio",
+      "Power Automate",
+      "Power Apps",
+      "Power BI"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Power Apps builds custom business apps with little or no code that run in a browser and on iOS and Android devices."
+  },
+  {
+    "id": "PL900-D-003",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Terminology",
+    "stem": "In current Dataverse terms, what is the name for what used to be called an option set?",
+    "options": [
+      "Row",
+      "Column",
+      "Choice",
+      "Lookup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Since November 2020 Dataverse uses table, column, row and choice instead of entity, field, record and option set."
+  },
+  {
+    "id": "PL900-D-004",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environments",
+    "stem": "How many Dataverse databases can one Power Platform environment have?",
+    "options": [
+      "One for each app",
+      "Exactly two",
+      "Zero or one",
+      "Up to five"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Every environment can have zero or one Dataverse database."
+  },
+  {
+    "id": "PL900-D-005",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Flow types",
+    "stem": "Which Power Automate flow type lets a maker state only the intent of a step and has AI choose the actions?",
+    "options": [
+      "Desktop flows",
+      "Scheduled cloud flows",
+      "Generative actions",
+      "Business process flows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Generative actions, in preview, take an intent and let AI pick the right set of actions in the right order."
+  },
+  {
+    "id": "PL900-D-006",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "Which part of a flow runs after the trigger and does the work, such as sending an email?",
+    "options": [
+      "An environment",
+      "An action",
+      "A connection",
+      "A data policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Actions are the steps the flow performs after the trigger event happens."
+  },
+  {
+    "id": "PL900-D-007",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topics",
+    "stem": "In an agent that uses classic orchestration, what does the agent match against the user's message to pick a topic?",
+    "options": [
+      "Knowledge source URLs",
+      "Tool descriptions",
+      "Trigger phrases",
+      "Channel names"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With classic orchestration each topic has trigger phrases, and natural language understanding finds the best match; the words don't have to match exactly."
+  },
+  {
+    "id": "PL900-D-008",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent 365",
+    "stem": "If an agent looks risky, what can an admin do in Agent 365 while security investigates?",
+    "options": [
+      "Block the agent right away",
+      "Remove its topics",
+      "Move it to a sandbox environment",
+      "Convert it to an agent flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Agent 365 lets admins block a risky agent immediately while the security team investigates."
+  },
+  {
+    "id": "PL900-D-009",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "Why does Microsoft recommend building a model-driven app inside a solution?",
+    "options": [
+      "To move it between development, test and production environments",
+      "To share it without security roles",
+      "To connect it to data sources outside of Dataverse through connectors",
+      "To control the layout of every screen"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Solutions package the app, tables, forms and views so they can move between environments, which is central to application lifecycle management."
+  },
+  {
+    "id": "PL900-D-010",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dataverse",
+    "stem": "Contoso already runs Dynamics 365 Sales. Where is that sales data stored, so makers can build Power Apps on it without an integration project?",
+    "options": [
+      "Microsoft Dataverse",
+      "Excel Online workbooks",
+      "SharePoint lists",
+      "OneDrive for Business"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dynamics 365 apps store and secure their data in Dataverse, so Power Apps can use the same tables directly."
+  },
+  {
+    "id": "PL900-D-011",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which Azure data service powers Dataverse elastic tables?",
+    "options": [
+      "Azure Data Lake Storage",
+      "Azure Blob Storage",
+      "Azure SQL Database",
+      "Azure Cosmos DB"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elastic tables run on Azure Cosmos DB, which suits very large datasets with high throughput."
+  },
+  {
+    "id": "PL900-D-012",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environments",
+    "stem": "Which environment type expires after 30 days and is limited to one per user?",
+    "options": [
+      "Sandbox",
+      "Trial",
+      "Production",
+      "Developer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Trial environments support short-term testing and are cleaned up automatically after 30 days."
+  },
+  {
+    "id": "PL900-D-013",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "All five reviewers must give their own response to a set of custom choices before the flow continues. Which approval type fits?",
+    "options": [
+      "Custom Responses - Wait for one response",
+      "Custom Responses - Wait for all responses",
+      "Sequential approval",
+      "Approve/Reject - First to respond"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Custom Responses - Wait for all responses lets you define the options, and every approver must respond to complete the process."
+  },
+  {
+    "id": "PL900-D-014",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "Which connector provides the trigger When a new email arrives (V3)?",
+    "options": [
+      "SharePoint",
+      "Office 365 Outlook",
+      "Microsoft Teams",
+      "Approvals"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When a new email arrives (V3) is one of the triggers from the Office 365 Outlook connector."
+  },
+  {
+    "id": "PL900-D-015",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Topics",
+    "stem": "Redirecting to which system topic ends the whole conversation rather than returning to the original topic?",
+    "options": [
+      "Escalate",
+      "Multiple Topics Matched",
+      "Conversation Start",
+      "Fallback"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Redirecting to End of Conversation, Confirmed Success, Confirmed Failure, Goodbye, Escalate or Start over ends the conversation."
+  },
+  {
+    "id": "PL900-D-016",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent 365",
+    "stem": "Which Agent 365 view shows agents on a visual map grouped by the platform they were built on?",
+    "options": [
+      "Solution explorer",
+      "Monitor page",
+      "Agent Map",
+      "Data workspace"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Agent Map shows the organization's agents on a visual map, grouped by platform, to spot the ones that need attention."
+  },
+  {
+    "id": "PL900-D-017",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Model-driven apps",
+    "stem": "Which capability lets people use a model-driven app on a phone while it has no network connection?",
+    "options": [
+      "App checker",
+      "Mobile offline",
+      "Delegated deployments",
+      "Quick Find"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Model-driven apps run on mobile devices and support mobile offline mode."
+  },
+  {
+    "id": "PL900-D-018",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Connectors",
+    "stem": "Tailspin's app must call an internal REST API that has no prebuilt connector. What should a developer build?",
+    "options": [
+      "An environment group",
+      "A certified connector",
+      "A custom connector",
+      "A virtual connector"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Custom connectors let makers wrap their own APIs. Certified connectors are prebuilt ones Microsoft has tested, and virtual connectors only appear in data policies."
+  },
+  {
+    "id": "PL900-D-019",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table ownership",
+    "stem": "After a custom table is saved, which setting can no longer be changed?",
+    "options": [
+      "Its ownership type",
+      "Its plural display name",
+      "Its display name",
+      "Its description"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ownership can't be changed after a table is created; to change it you delete and re-create the table. Display names and the description can be edited later."
+  },
+  {
+    "id": "PL900-D-020",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Security model",
+    "stem": "How are model-driven apps shared with users?",
+    "options": [
+      "Through connection references",
+      "Through Dataverse security roles",
+      "Through environment groups",
+      "Through data policies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Model-driven apps are shared through security roles. Canvas apps are shared directly with users or Microsoft Entra groups, though Dataverse roles still apply."
+  },
+  {
+    "id": "PL900-D-021",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "When an approval is assigned to a user outside the environment, which Dataverse security role do they get automatically?",
+    "options": [
+      "Environment Maker",
+      "System Customizer",
+      "Approvals User",
+      "Basic User"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Users outside the environment get the Approvals User role so their responses are saved in approvals history."
+  },
+  {
+    "id": "PL900-D-022",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Triggers and actions",
+    "stem": "A maker wants one flow to hand work to another flow it calls. Which built-in feature is this?",
+    "options": [
+      "Business process flows",
+      "Generative actions",
+      "Child flows",
+      "Desktop flows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cloud flow can call a child flow. Child flows depend on the HTTP connector, so data policy grouping of HTTP connectors can affect them."
+  },
+  {
+    "id": "PL900-D-023",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Topics",
+    "stem": "Why should a maker avoid periods in topic names?",
+    "options": [
+      "Topics with periods can't be redirected to",
+      "Periods hide the topic from the test panel",
+      "A solution with such an agent can't be exported",
+      "Periods turn the topic into a system topic"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft notes that you can't export a solution containing an agent whose topic names include periods."
+  },
+  {
+    "id": "PL900-D-024",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agent 365",
+    "stem": "Which Microsoft service keeps a record of agent activity in Agent 365 so the organization is ready for audits?",
+    "options": [
+      "Power BI",
+      "Microsoft Purview",
+      "Microsoft Defender",
+      "Microsoft Entra"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Purview records agent activity for audits and helps stop oversharing. Entra controls access and Defender watches for threats."
+  },
+  {
+    "id": "PL900-D-025",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Plan designer",
+    "stem": "Plans in Power Apps is generally available and on by default. How can an organization turn it off?",
+    "options": [
+      "An admin turns off Copilot in the environment settings",
+      "A maker turns off a toggle in Power Apps Studio",
+      "A tenant admin contacts Microsoft Support",
+      "An admin removes the Basic User role"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Plans can't be turned off except through Microsoft Support; a tenant administrator has to request it."
+  },
+  {
+    "id": "PL900-D-026",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power Pages",
+    "stem": "Riverton city council wants residents to apply for permits online and check the status of their requests. Which product fits best?",
+    "options": [
+      "Power Apps",
+      "Copilot Studio",
+      "Power Pages",
+      "Power BI"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Power Pages builds secure external websites where outside users can submit and track data stored in Dataverse."
+  },
+  {
+    "id": "PL900-D-027",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which column is the primary column of every custom activity table?",
+    "options": [
+      "Description",
+      "Name",
+      "Subject",
+      "Title"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Activity tables don't take a primary column you choose: their primary field is always Subject, so all activities can share common views."
+  },
+  {
+    "id": "PL900-D-028",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access levels",
+    "stem": "A sales rep should read only the rows they own or that are shared with them. Which access level fits the Read privilege?",
+    "options": [
+      "Organization",
+      "Business Unit",
+      "Parent: Child Business Units",
+      "User"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "User access covers rows the user owns and rows shared with them or their teams. Business Unit and wider levels reach other people's rows."
+  },
+  {
+    "id": "PL900-D-029",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Desktop flows",
+    "stem": "What must be registered before a cloud flow can run a desktop flow?",
+    "options": [
+      "A pipeline host",
+      "A machine or machine group",
+      "An environment group",
+      "A Power Pages site"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Desktop flows run on registered machines, physical or virtual. Machine groups manage several machines as one and share the workload."
+  },
+  {
+    "id": "PL900-D-030",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "Which designer must be in use to edit a cloud flow with Copilot?",
+    "options": [
+      "The model-driven app designer",
+      "The new designer",
+      "The classic designer",
+      "The form designer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Copilot is available only in the new cloud flows designer, not the classic designer."
+  },
+  {
+    "id": "PL900-D-031",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "Which system topic does Copilot Studio create with a generative answers node, so knowledge sources work right away?",
+    "options": [
+      "Conversational boosting",
+      "End of Conversation",
+      "Escalate",
+      "Conversation Start"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "New agents get a Conversational boosting system topic that contains a generative answers node using the agent-level knowledge."
+  },
+  {
+    "id": "PL900-D-032",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent 365",
+    "stem": "In which unit does Agent 365 cost management show the AI usage that organizations are billed for?",
+    "options": [
+      "Dataverse capacity",
+      "Power Automate requests",
+      "Azure DevOps minutes",
+      "Copilot Credits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cost management shows Copilot Credit use by user, group, agent and service, and lets admins set spending limits."
+  },
+  {
+    "id": "PL900-D-033",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Plan designer",
+    "stem": "Besides a natural-language description, what can a maker add to a plan to guide Copilot?",
+    "options": [
+      "An Azure Resource Manager template",
+      "A running desktop flow recorded on the maker's own workstation",
+      "Images such as process diagrams or legacy app screenshots",
+      "A Power BI semantic model"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Plans accept relevant images, such as business process flows or screenshots of legacy apps, along with the description."
+  },
+  {
+    "id": "PL900-D-034",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot Studio",
+    "stem": "Litware wants an agent that starts by itself when an email arrives, reads it and creates a ticket. Which product builds agents with event triggers?",
+    "options": [
+      "Power Pages",
+      "Copilot Studio",
+      "Power Apps",
+      "Microsoft Dataverse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Copilot Studio agents can be conversational or autonomous. Autonomous agents respond to event triggers such as an arriving email."
+  },
+  {
+    "id": "PL900-D-035",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Dataverse vs databases",
+    "stem": "For each statement about Dataverse, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Dataverse stores both the metadata and the data in the cloud.",
+      "Business rules in Dataverse apply only inside the app that created them.",
+      "Role-based security is built into Dataverse.",
+      "Makers must manage database servers and storage files for Dataverse."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Dataverse manages storage for you and includes role-based security. Its business rules apply to the data no matter which app is used."
+  },
+  {
+    "id": "PL900-D-036",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed environments",
+    "stem": "Which managed environment feature checks solutions for problems and can block imports that fail?",
+    "options": [
+      "Limit sharing",
+      "Lockbox",
+      "Customer Managed Key",
+      "Solution checker"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Solution checker enforcement in managed environments runs static analysis on solutions and can warn or block on import."
+  },
+  {
+    "id": "PL900-D-037",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Desktop flows",
+    "stem": "Which cloud flow action starts a desktop flow?",
+    "options": [
+      "Run a prompt",
+      "Send an email (V2)",
+      "Start and wait for an approval",
+      "Run a flow built with Power Automate for desktop"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Run a flow built with Power Automate for desktop action starts a desktop flow in attended or unattended mode and passes input variables."
+  },
+  {
+    "id": "PL900-D-038",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "A flow fails during testing. Which Copilot feature helps find and fix the error?",
+    "options": [
+      "Create with Copilot",
+      "Troubleshoot in Copilot",
+      "Formula suggestions",
+      "Enhance prompt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Troubleshoot in Copilot helps identify and resolve errors from tests or run history in the new designer."
+  },
+  {
+    "id": "PL900-D-039",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "Which knowledge feature can't be used while generative orchestration is turned on?",
+    "options": [
+      "SharePoint knowledge",
+      "Uploaded documents",
+      "Public website knowledge",
+      "Official sources"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Marking a knowledge source as official isn't compatible with generative orchestration; turn generative orchestration off to use it."
+  },
+  {
+    "id": "PL900-D-040",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "How long does Copilot Studio keep Monitor data for an agent?",
+    "options": [
+      "Up to 360 days",
+      "Up to 28 days",
+      "Up to 7 days",
+      "Up to 90 days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Monitor data is available for up to 360 days; session details and transcripts are available for the last 28 days."
+  },
+  {
+    "id": "PL900-D-041",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Code apps",
+    "stem": "Which kind of framework can developers use to build a Power Apps code app?",
+    "options": [
+      "Only C# with .NET MAUI",
+      "Only Power Apps component framework controls",
+      "Only Power Fx",
+      "Web frameworks such as React and Vue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Code apps are custom web apps built with popular frameworks such as React and Vue, with full control of UI and logic."
+  },
+  {
+    "id": "PL900-D-042",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Generative AI",
+    "stem": "Typing 'When a file is added to SharePoint, post its name in Teams' gives a maker a draft with a trigger and an action. Which feature built it?",
+    "options": [
+      "Formula suggestions in Dataverse",
+      "Accessibility checker in Power Apps",
+      "Copilot in Power Automate",
+      "Copilot in Power Pages"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Copilot in cloud flows turns a description into a flow with a suggested trigger and actions, and sets up the connections."
+  },
+  {
+    "id": "PL900-D-043",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Importing data",
+    "stem": "Which tool imports data from many online sources into Dataverse tables and transforms it on the way?",
+    "options": [
+      "Solution checker",
+      "Power Pages",
+      "Power Query",
+      "Copilot Studio"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Power Query, also used in Excel and Power BI, can transform data as it is imported into Dataverse."
+  },
+  {
+    "id": "PL900-D-044",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Accessibility",
+    "stem": "In Power Apps Studio, which tool reports issues such as a missing accessible label or a focus border set to zero?",
+    "options": [
+      "Accessibility checker",
+      "Solution checker",
+      "Tree view",
+      "Formula bar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Accessibility checker, opened from App checker, lists screen-reader and keyboard issues with suggestions to fix them."
+  },
+  {
+    "id": "PL900-D-045",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Approvals",
+    "stem": "Match each requirement to the approval type.",
+    "rows": [
+      "Any one of the duty managers can sign off a refund",
+      "A single rejection from any of the auditors should end the request",
+      "Legal reviews a contract first, then the finance director",
+      "Every board member has to approve a policy change"
+    ],
+    "columns": [
+      "Approve/Reject - Everyone must approve",
+      "Approve/Reject - First to respond",
+      "Sequential approval"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      0
+    ],
+    "explanation": "Everyone must approve waits for all approvers or stops on the first rejection, First to respond finishes on any one response, and Sequential approval goes in order."
+  },
+  {
+    "id": "PL900-D-046",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Copilot in cloud flows",
+    "stem": "For each statement about Copilot in Power Automate, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Copilot must be given every connection before it drafts a flow.",
+      "Copilot in cloud flows needs a desktop machine to draft a flow.",
+      "Copilot can suggest a description for a flow.",
+      "Copilot in cloud flows is powered by Azure OpenAI."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "explanation": "Copilot in cloud flows runs on Azure OpenAI in the cloud, suggests flow descriptions and sets up connections for you; no desktop machine is involved."
+  },
+  {
+    "id": "PL900-D-047",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Knowledge",
+    "stem": "What is the default content moderation level for an agent's generative answers?",
+    "options": [
+      "High",
+      "Medium",
+      "Lowest",
+      "Highest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Moderation runs from Lowest to Highest; High is the default. Lower levels give more answers but may allow more harmful content."
+  },
+  {
+    "id": "PL900-D-048",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "How long can a conversation sit idle before it times out in Copilot Studio analytics?",
+    "options": [
+      "24 hours",
+      "30 minutes",
+      "5 minutes",
+      "60 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A conversation times out after 30 minutes of inactivity, and one conversation can hold several analytics sessions."
+  },
+  {
+    "id": "PL900-D-049",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Code apps",
+    "stem": "Which sharing limits apply to Power Apps code apps in a managed environment?",
+    "options": [
+      "Canvas app sharing limits",
+      "Desktop flow machine group rules",
+      "Power Pages web roles",
+      "Copilot Studio channel settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code apps follow canvas app sharing limits along with other managed platform controls such as data policies and app quarantine."
+  },
+  {
+    "id": "PL900-D-050",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vibe experience",
+    "stem": "Which address opens the Power Apps vibe experience directly?",
+    "options": [
+      "admin.powerplatform.microsoft.com",
+      "copilotstudio.microsoft.com",
+      "make.powerautomate.com",
+      "vibe.powerapps.com"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Makers can go to vibe.powerapps.com, or select Try new experience (Preview) in Power Apps."
+  },
+  {
+    "id": "PL900-D-051",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Choosing a product",
+    "stem": "Match each need to the Power Platform product that fits it.",
+    "rows": [
+      "Move approved invoices from Outlook into an accounting system each hour",
+      "Let suppliers sign in to a site and update their contact details",
+      "Keep one secure definition of customer data for every app",
+      "Publish a public site where visitors search an events catalog"
+    ],
+    "columns": [
+      "Power Pages",
+      "Microsoft Dataverse",
+      "Power Automate"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Power Pages serves external websites, Dataverse is the shared data store, and Power Automate moves data between services on events or schedules."
+  },
+  {
+    "id": "PL900-D-052",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "Adding a lookup column to a table creates which kind of relationship?",
+    "options": [
+      "A connection",
+      "An alternate key",
+      "One-to-many (1:N)",
+      "Many-to-many (N:N)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A lookup column on the child table creates a 1:N relationship to the parent table."
+  },
+  {
+    "id": "PL900-D-053",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Accessibility",
+    "stem": "Match each Accessibility checker finding to its severity.",
+    "rows": [
+      "Missing captions on a video",
+      "Focus isn't showing",
+      "Missing accessible label",
+      "Screen still has a default name"
+    ],
+    "columns": [
+      "Error",
+      "Warning",
+      "Tip"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      2
+    ],
+    "explanation": "Errors make an app hard or impossible to use, warnings make it hard for most users with a disability, and tips improve the experience."
+  },
+  {
+    "id": "PL900-D-054",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Document automation",
+    "stem": "Which value does the invoice processing model return alongside each field, such as the invoice total?",
+    "options": [
+      "A confidence score from 0 to 1",
+      "A risk level from the admin center",
+      "A sentiment label",
+      "A language code"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each extracted invoice field comes with a confidence score between 0 (low) and 1 (high)."
+  },
+  {
+    "id": "PL900-D-055",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Copilot in desktop flows",
+    "stem": "Copilot left an Excel action empty and marked it with an error. What is the likely fix?",
+    "options": [
+      "Give a fuller prompt that includes the file path",
+      "Turn on generative actions",
+      "Move the flow to a sandbox environment",
+      "Switch the run mode of the desktop flow to unattended"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If a prompt leaves out a required parameter, such as the Excel file path, Copilot generates the action empty and it shows a design-time error."
+  },
+  {
+    "id": "PL900-D-056",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Tools",
+    "stem": "Match each need to the type of tool to add.",
+    "rows": [
+      "Run a single-turn model prompt to summarize ticket history",
+      "Use the tools and resources a company server publishes over a standard protocol",
+      "Send an email through Office 365 Outlook",
+      "Fill in a web form on a site that has no API"
+    ],
+    "columns": [
+      "Prebuilt connector",
+      "Prompt",
+      "Computer use",
+      "MCP"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "Prebuilt connectors reach services such as Outlook, prompts run a single model turn, computer use operates websites and desktop apps through the UI, and MCP connects to an MCP server."
+  },
+  {
+    "id": "PL900-D-057",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "For an agent that uses generative orchestration, what should a maker use instead of the topic Monitor panel?",
+    "options": [
+      "The Channels page of the agent in Copilot Studio",
+      "The test panel",
+      "The code editor",
+      "Conversation outcomes and themes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Topic Monitor is for topic-based sessions. Agents with generative orchestration should use conversation outcomes and themes on the Monitor page."
+  },
+  {
+    "id": "PL900-D-058",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vibe experience",
+    "stem": "In the vibe experience, which option lets a maker review and discuss a plan before any changes are made?",
+    "options": [
+      "Suggestions",
+      "Enhance prompt",
+      "Start dictation",
+      "Plan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Plan mode is for reviewing and discussing a plan with the agents first. Enhance prompt adds detail, and dictation turns speech into text."
+  },
+  {
+    "id": "PL900-D-059",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Platform value",
+    "stem": "For each statement about what Power Platform products can do, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Plans in Power Apps can generate tables, apps, flows and agents from a description.",
+      "Connectors are available only in Power Automate.",
+      "Power Pages sites can show only static content with no business data.",
+      "A canvas app and a Copilot Studio agent can use the same Dataverse table."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Plans generate whole solutions, Power Pages sites work with Dataverse data, and Dataverse is shared across products. Connectors work in Power Apps, Power Automate, Copilot Studio and Logic Apps."
+  },
+  {
+    "id": "PL900-D-060",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "What does Dataverse use behind the scenes to store the links in a many-to-many relationship?",
+    "options": [
+      "A lookup column on each table",
+      "An intersect (relationship) table",
+      "A business rule",
+      "A virtual table"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "N:N relationships depend on a special relationship table, sometimes called an intersect table."
+  },
+  {
+    "id": "PL900-D-061",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipelines",
+    "stem": "Which kind of solution should pipelines deploy to test and production environments?",
+    "options": [
+      "Managed",
+      "Unmanaged",
+      "Patch",
+      "Default"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pipelines deploy managed solutions to nondevelopment environments. Unmanaged versions are saved in the pipelines host for development use."
+  },
+  {
+    "id": "PL900-D-062",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Document automation",
+    "stem": "A PDF has one invoice on page 2 and another on pages 3 and 4. What should the Pages parameter be to read only the first invoice?",
+    "options": [
+      "2",
+      "2-4",
+      "3-4",
+      "1-4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each page range should contain one invoice. Page 2 returns the first invoice, 3-4 the second, and 2-4 mixes data from both."
+  },
+  {
+    "id": "PL900-D-063",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Copilot in desktop flows",
+    "stem": "Match each request to the Copilot skill in Power Automate for desktop.",
+    "rows": [
+      "How do I run a PowerShell script?",
+      "How do I read data from an Excel file?",
+      "Explain subflow Main in a couple of sentences",
+      "Build a flow that zips every PNG file in C:\\temp"
+    ],
+    "columns": [
+      "Create flows",
+      "Help me understand",
+      "Summarize actions and subflows"
+    ],
+    "correct": [
+      1,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Flow creation turns prompts into actions, generative answers handle product questions, and the summarize skill describes actions or subflows."
+  },
+  {
+    "id": "PL900-D-064",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "MCP",
+    "stem": "What must be turned on in an agent before it can use an MCP server?",
+    "options": [
+      "Official sources",
+      "Allow ungrounded responses",
+      "Generative orchestration",
+      "No authentication"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Copilot Studio requires generative orchestration to use MCP."
+  },
+  {
+    "id": "PL900-D-065",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Evaluations",
+    "stem": "For each statement about agent evaluation, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Evaluations run as the user who is currently signed in.",
+      "Agents set to Authenticate manually are supported by evaluations.",
+      "Safety evaluators guarantee an agent is safe in every scenario.",
+      "Test sets can be generated, imported or written by hand."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "Evaluations run as the signed-in user, and test cases can be generated, imported or written. Authenticate manually isn't supported, and Microsoft says safety evaluators don't guarantee safety."
+  },
+  {
+    "id": "PL900-D-066",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vibe experience",
+    "stem": "What must a tenant admin turn on in tenant settings before makers can use the vibe experience?",
+    "options": [
+      "Copilot in Power Apps",
+      "Customer Managed Key",
+      "Auditing",
+      "Tenant isolation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The vibe experience needs the Copilot in Power Apps tenant setting turned on in the Power Platform admin center."
+  },
+  {
+    "id": "PL900-D-067",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Dataverse",
+    "stem": "Fabrikam keeps project data in dozens of personal Excel files and wants set data types, relationships and role-based access. Where should the data move?",
+    "options": [
+      "Microsoft Teams chat messages",
+      "Power Pages web pages",
+      "Files in OneDrive for Business",
+      "Dataverse tables"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dataverse tables define data types and relationships and protect rows with role-based security, which spreadsheets on personal drives can't do."
+  },
+  {
+    "id": "PL900-D-068",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationship behavior",
+    "stem": "When a parent row is deleted, its child rows must stay but their lookup to the parent must be cleared. Which Delete behavior fits?",
+    "options": [
+      "Cascade User Owned",
+      "Cascade All",
+      "Remove Link",
+      "Restrict"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Remove Link removes the lookup value from related rows. Restrict blocks the delete, and Cascade All deletes the related rows too."
+  },
+  {
+    "id": "PL900-D-069",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pipelines",
+    "stem": "Which pipelines feature makes a production deployment wait for approval and run as a service principal?",
+    "options": [
+      "Solution checker",
+      "Cross-geo solution deployments",
+      "Environment groups",
+      "Delegated deployments"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Delegated deployments add approval steps and let a service principal or pipeline owner run the deployment."
+  },
+  {
+    "id": "PL900-D-070",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Power Automate use cases",
+    "stem": "For each statement about desktop flows and approvals, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Approvals can be assigned only to users inside the current environment.",
+      "Desktop flows can record your actions and turn them into steps.",
+      "A cloud flow can only use Microsoft connectors.",
+      "Desktop flows can automate both web and desktop applications."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Desktop flows can be built with drag-and-drop actions or recorded, and work in browsers and desktop apps. Cloud flows use third-party connectors too, and approvals can go to users and Microsoft 365 groups anywhere in the Microsoft Entra tenant."
+  },
+  {
+    "id": "PL900-D-071",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in desktop flows",
+    "stem": "How does the designer mark the actions Copilot generated in a desktop flow?",
+    "options": [
+      "By disabling them until reviewed",
+      "With a red exclamation mark on each action",
+      "By placing them in a separate subflow named Copilot",
+      "With a comment at the start and one at the end"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Copilot-generated actions are wrapped in two comments, one marking the start and one the end, so they're easy to review."
+  },
+  {
+    "id": "PL900-D-072",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent flows",
+    "stem": "Which trigger must an agent flow have to be added to an agent as a tool?",
+    "options": [
+      "When a new email arrives (V3)",
+      "When an item is created",
+      "Recurrence",
+      "When an agent calls the flow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Agent flows with the When an agent calls the flow trigger can be added as tools in agents."
+  },
+  {
+    "id": "PL900-D-073",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Evaluations",
+    "select": 2,
+    "stem": "Which two are safety evaluators in Copilot Studio agent evaluation? (Choose two.)",
+    "options": [
+      "Compare meaning",
+      "Self-harm",
+      "Text similarity",
+      "Violence"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "The four safety evaluators are hatefulness and unfairness, sexual content, violence and self-harm. Compare meaning and similarity grade answer quality."
+  },
+  {
+    "id": "PL900-D-074",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI canvas apps",
+    "stem": "Which security role must a maker hold in the environment to build an app through conversation with Copilot?",
+    "options": [
+      "Basic User",
+      "System Customizer",
+      "App Opener",
+      "Delegate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Building apps through conversation needs a Dataverse database and the system customizer role in the environment."
+  },
+  {
+    "id": "PL900-D-075",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Power Automate",
+    "stem": "Which product would a business analyst use to remove repetitive, rule-based work, such as copying data between two systems every day?",
+    "options": [
+      "Power BI",
+      "Power Pages",
+      "Microsoft Dataverse",
+      "Power Automate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Power Automate streamlines processes and automates repetitive tasks with cloud flows and desktop flows."
+  },
+  {
+    "id": "PL900-D-076",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Form types",
+    "stem": "Match each purpose to the model-driven form type.",
+    "rows": [
+      "The full interface for working with a row",
+      "Related row details shown inside another form",
+      "Fast data entry without leaving the current page",
+      "A compact display of a row"
+    ],
+    "columns": [
+      "Main",
+      "Quick create",
+      "Quick view",
+      "Card"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "explanation": "Main forms are the main interface, quick create forms are for rapid data entry, quick view forms show related data, and card forms are a compact display."
+  },
+  {
+    "id": "PL900-D-077",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "Before Monitor health metrics appear in the Power Platform admin center, which setting must be on?",
+    "options": [
+      "Tenant-level analytics",
+      "Auditing",
+      "Customer Managed Key",
+      "Managed environments"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tenant-level analytics must be turned on for any Monitor data. A managed environment is only needed for recommendations."
+  },
+  {
+    "id": "PL900-D-078",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Forms and SharePoint",
+    "stem": "Northwind wants every new Microsoft Forms response saved as an item in a SharePoint list. Which kind of flow should start the process?",
+    "options": [
+      "Desktop flow",
+      "Automated cloud flow",
+      "Instant cloud flow",
+      "Scheduled cloud flow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Microsoft Forms response is an event, so an automated cloud flow triggered by a new response can create the SharePoint item."
+  },
+  {
+    "id": "PL900-D-079",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Triggers and actions",
+    "select": 2,
+    "stem": "Which two are triggers rather than actions? (Choose two.)",
+    "options": [
+      "Extract information from invoices",
+      "Recurrence",
+      "Manually trigger a flow",
+      "Start and wait for an approval"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Recurrence starts scheduled flows and Manually trigger a flow starts instant ones. The approval and invoice steps are actions."
+  },
+  {
+    "id": "PL900-D-080",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agent flows",
+    "stem": "A team converts a Power Automate cloud flow into an agent flow. What changes?",
+    "options": [
+      "It moves to a desktop machine group",
+      "It uses Copilot Studio capacity, and the change is one-way",
+      "It moves out of its solution and into the default environment",
+      "It loses its trigger and actions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Converting moves the flow to Copilot Studio capacity instead of Power Automate billing. The conversion is one-way."
+  },
+  {
+    "id": "PL900-D-081",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Evaluations",
+    "stem": "How can a team run agent evaluations automatically as part of a CI/CD pipeline?",
+    "options": [
+      "Through the Channels page",
+      "Through the demo website shared with the test team",
+      "Through Power Platform REST APIs or connectors",
+      "Through the topic code editor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Evaluations can be triggered programmatically with REST APIs or Power Platform connectors, so they fit into automated workflows."
+  },
+  {
+    "id": "PL900-D-082",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Model-driven apps",
+    "stem": "For each statement about model-driven apps, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Model-driven apps share a consistent user experience.",
+      "A model-driven app's table needs at least one view and one form.",
+      "A model-driven app can use an Excel file as its only data source.",
+      "Model-driven apps must be built in Visual Studio Code."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Model-driven apps look and behave consistently, need Dataverse, and are built in the no-code app designer. Their table needs at least one view and one form, which exist by default."
+  },
+  {
+    "id": "PL900-D-083",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Reaching outside users",
+    "select": 2,
+    "stem": "Which two products can produce something a member of the public uses in a web browser without a work account? (Choose two.)",
+    "options": [
+      "Power Apps",
+      "AI Builder",
+      "Copilot Studio",
+      "Power Pages"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Power Pages sites can allow anonymous visitors, and a Copilot Studio agent set to No authentication can sit on a public website. Power Apps users sign in with Microsoft Entra ID, and AI Builder adds AI models to apps and flows."
+  },
+  {
+    "id": "PL900-D-084",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Views",
+    "stem": "Which system view also decides which columns are searched when a user searches a table?",
+    "options": [
+      "Associated",
+      "Quick Find",
+      "Lookup",
+      "Advanced Find"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Quick Find view defines the columns searched by Quick Find and lookup searches."
+  },
+  {
+    "id": "PL900-D-085",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Environments",
+    "stem": "For each statement about environments, select Yes if it is true or No if it is false.",
+    "rows": [
+      "An environment is bound to a geographic location.",
+      "Environment Makers automatically get access to the environment's database.",
+      "The default environment can't be deleted.",
+      "An app can connect to a Dataverse database in another environment of the tenant."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Apps connect only to data sources in their own environment, and environment roles don't grant database access. Environments are tied to a geography, and the default environment can't be deleted."
+  },
+  {
+    "id": "PL900-D-086",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approvals",
+    "stem": "Which approval action creates a request and pauses the flow until the approvers respond?",
+    "options": [
+      "Run a flow built with Power Automate for desktop",
+      "Wait for an approval",
+      "Create an approval",
+      "Start and wait for an approval"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Start and wait for an approval sends the request and waits for the response. Create an approval and Wait for an approval split those two steps."
+  },
+  {
+    "id": "PL900-D-087",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "After Copilot suggests a flow structure that isn't quite right, what should the maker do?",
+    "options": [
+      "Add more details for Copilot to regenerate it",
+      "Switch the flow to the classic designer",
+      "Ask an admin to move the connector to the Business data group",
+      "Export it to a desktop flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "You can add more details in the prompt box and Copilot regenerates the suggested trigger and actions before you keep it."
+  },
+  {
+    "id": "PL900-D-088",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Channels",
+    "stem": "For each statement about publishing agents, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Agents can be connected to channels such as WhatsApp and SharePoint.",
+      "With No authentication, anyone who has the link can chat with the agent.",
+      "Admins can't restrict which channels makers publish to.",
+      "The demo website is meant for customers in production."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "No authentication opens the agent to anyone with the link. The demo website is for testers and stakeholders, and admins can block channels through data policies or agent access channels."
+  },
+  {
+    "id": "PL900-D-089",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Evaluations",
+    "stem": "What is a single test case in Copilot Studio agent evaluation?",
+    "options": [
+      "One knowledge source",
+      "One simulated interaction, optionally with an expected response",
+      "One published version of the agent with all its topics and tools",
+      "One channel connection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A test case is a single interaction, one question or a whole conversation, and can include the answer you expect."
+  },
+  {
+    "id": "PL900-D-090",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "App types",
+    "stem": "Match each statement to the app type it describes.",
+    "rows": [
+      "Moving it between environments is described as simple",
+      "Designed by setting control properties with Power Fx",
+      "Developer keeps full control of UI and logic in code",
+      "Uses Dataverse as its only data platform"
+    ],
+    "columns": [
+      "Canvas app",
+      "Model-driven app",
+      "Code app",
+      "Power Pages site"
+    ],
+    "correct": [
+      1,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Model-driven apps use Dataverse only and move easily with solutions. Canvas apps use Power Fx on control properties. Code apps are written in a code-first IDE."
+  },
+  {
+    "id": "PL900-D-091",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Value",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing a product",
+    "stem": "Northwind's support team wants a self-service agent, and its marketing team wants a public site with a sign-up form. Which pair of products fits?",
+    "options": [
+      "Copilot Studio and Power Pages",
+      "Copilot Studio and Power Apps",
+      "Power Pages and Power Automate",
+      "Power Automate and Power Apps"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Copilot Studio builds the agent and Power Pages builds the external site with its form."
+  },
+  {
+    "id": "PL900-D-092",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Dataverse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI table creation",
+    "stem": "Woodgrove has a spreadsheet of supplier details and wants a Dataverse table built from the file, with Copilot helping with column types. Which option should the maker pick?",
+    "options": [
+      "Create with external data",
+      "Existing table",
+      "Create a virtual table",
+      "Set advanced properties"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Create with external data takes an Excel or .CSV file or a SharePoint list and uses Copilot to generate the table, previewing the first 20 rows."
+  },
+  {
+    "id": "PL900-D-093",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Admin",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compliance",
+    "stem": "Where can an organization review Microsoft's regulatory certifications that cover Power Platform and Copilot?",
+    "options": [
+      "Power Platform admin center",
+      "Service Trust Portal",
+      "Copilot Studio Monitor page",
+      "Power Apps maker portal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft publishes the regulatory certifications of its services, including Power Platform, on the Service Trust Portal."
+  },
+  {
+    "id": "PL900-D-094",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsUse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Desktop flows",
+    "stem": "Besides the license for attended runs, what does the connection creator need so a desktop flow can run unattended?",
+    "options": [
+      "A Copilot Studio user license",
+      "An unattended add-on",
+      "An App Pass",
+      "A Power Pages capacity pack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Attended runs need the appropriate Power Automate license; unattended runs need an unattended add-on, held by the creator of the desktop flow connection."
+  },
+  {
+    "id": "PL900-D-095",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900FlowsBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Copilot in cloud flows",
+    "stem": "When Copilot drafts a cloud flow from a description, what does the draft structure contain?",
+    "options": [
+      "A Dataverse table with a main form and a quick view form",
+      "A solution and a pipeline stage",
+      "A topic with trigger phrases",
+      "A suggested trigger and one or more actions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Copilot generates a flow structure with a suggested trigger and actions, which the maker can keep or refine."
+  },
+  {
+    "id": "PL900-D-096",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Channels",
+    "stem": "A user in Teams wants to try the agent's newest published content right away instead of waiting. What can they type?",
+    "options": [
+      "publish",
+      "reset channel",
+      "refresh agent",
+      "start over"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Typing start over resets the conversation and starts a new session with the latest published content."
+  },
+  {
+    "id": "PL900-D-097",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900AgentManage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Monitoring",
+    "stem": "Which Copilot Studio metric refreshes weekly rather than within hours or daily?",
+    "options": [
+      "Sentiment analysis",
+      "Generated themes",
+      "Cost consumption",
+      "Sessions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "General metrics refresh within two hours, AI metrics such as sentiment daily, cost every few hours, and the list of generated themes weekly."
+  },
+  {
+    "id": "PL900-D-098",
+    "section": "pl900",
+    "test": 0,
+    "module": 1,
+    "domain": "pl900Apps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI model-driven apps",
+    "stem": "Which feature can generate a model-driven app together with Dataverse tables from a description of a business problem?",
+    "options": [
+      "Quick create forms",
+      "Plans in Power Apps",
+      "Formula suggestions",
+      "Accessibility checker"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Plans turns a description into a solution that can include model-driven apps, canvas apps and the tables behind them."
+  }
+]

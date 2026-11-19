@@ -92,6 +92,7 @@ const BORROWED_SETS: Record<string, string> = {
   pesticide: "epa608",
   bowhunter: "hunter",
   trapper: "hunter",
+  ieplumbt2: "caplumb",
   istqb: "itil",
   ascpmls: "htl",
   ascpht: "htl",

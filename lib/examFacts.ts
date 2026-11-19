@@ -225,6 +225,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  ieplumbt2: {
+    answer:
+      "Phase 2 of the SOLAS National Plumbing Apprenticeship is the first off-the-job phase: 21 weeks in an Education and Training Board (ETB) training centre. It has four modules: Thermal Processes and Mild Steel Pipework, Domestic Hot and Cold Water Services, Central Heating, and Communications and Team Leadership. Apprentices are assessed by theory exams, practical assessments and skills demonstrations, set centrally by SOLAS, marked out of 100 by the training centre and graded fail, pass, merit or distinction. The SOLAS pass grade is 50%; an apprentice who falls short is referred and may sit again. SOLAS does not publish the number of questions or the time for each theory paper. The whole apprenticeship takes at least four years and leads to a Level 6 Advanced Certificate Craft - Plumbing.",
+    rows: [
+      { label: "Run by", value: "SOLAS, delivered in ETB training centres" },
+      { label: "Phase 2 length", value: "21 weeks off the job" },
+      { label: "Modules", value: "Thermal processes and mild steel pipework; domestic hot and cold water; central heating; communications and team leadership" },
+      { label: "Assessment", value: "Theory exams, practical assessments and skills demonstrations" },
+      { label: "Pass grade", value: "50% (graded fail, pass, merit or distinction)" },
+      { label: "Question count and time", value: "Not published by SOLAS" },
+      { label: "Award at the end", value: "Level 6 Advanced Certificate Craft - Plumbing" },
+    ],
+    basedOn: "the SOLAS plumbing programme brochure and the SOLAS Craft Apprenticeship Assessment Rules (2023), checked November 2026",
+    source: { name: "SOLAS Craft Apprenticeship Assessment Rules", url: "https://www.solas.ie/f/70398/x/04d6f462bc/solas-craft-apprenticeship-assessment-rules-2023.pdf" },
+  },
   trapper: {
     answer:
       "Trapper education is a course, not a single national exam. The Association of Fish and Wildlife Agencies (AFWA) runs the North American Trapper Education Program and publishes its manual, updated in 2022, so that state courses teach the same core content. Many states require first-time trappers to complete the course before buying a trapping license; each state runs its own course, often online followed by a field day, and sets its own test and passing score. The manual covers trapping's history and role, furbearer management, regulations, Best Management Practices, traps and equipment, selective water and land sets, cable devices, safety, running a trapline and handling fur.",

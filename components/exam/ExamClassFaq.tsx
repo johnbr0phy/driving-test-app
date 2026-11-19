@@ -21,6 +21,7 @@ export const TEACHES: Record<string, string> = {
   pesticide: "a pesticide applicator training course",
   bowhunter: "a bowhunter education class",
   trapper: "a trapper education class",
+  ieplumbt2: "a Phase 2 plumbing course at an ETB training centre",
   ascpmls: "an MLS program",
   ascpht: "a histotechnician program",
   esthetician: "at an esthetics school",

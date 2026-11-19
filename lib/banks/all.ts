@@ -330,3 +330,4 @@ import "./realestatebroker";
 import "./backflow";
 import "./pesticide";
 import "./bowhunter";
+import "./trapper";

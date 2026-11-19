@@ -20,6 +20,7 @@ export const TEACHES: Record<string, string> = {
   backflow: "a backflow tester certification course",
   pesticide: "a pesticide applicator training course",
   bowhunter: "a bowhunter education class",
+  trapper: "a trapper education class",
   ascpmls: "an MLS program",
   ascpht: "a histotechnician program",
   esthetician: "at an esthetics school",

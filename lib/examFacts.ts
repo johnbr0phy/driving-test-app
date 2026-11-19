@@ -225,6 +225,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  trapper: {
+    answer:
+      "Trapper education is a course, not a single national exam. The Association of Fish and Wildlife Agencies (AFWA) developed the North American Trapper Education Program and its manual, updated in 2022, so that state courses teach the same core content. Many states require first-time trappers to complete the course before buying a trapping license; each state runs its own course, often online followed by a field day, and sets its own test and passing score. The manual covers trapping's history and role, furbearer management, regulations, Best Management Practices, traps and equipment, selective water and land sets, cable devices, safety, running a trapline and handling fur.",
+    rows: [
+      { label: "Program", value: "North American Trapper Education Program (AFWA)" },
+      { label: "Course text", value: "AFWA Trapper Education Manual (2022)" },
+      { label: "Who requires it", value: "Many states, for first-time trappers; check your own" },
+      { label: "Question count and pass mark", value: "Set by each state's course" },
+      { label: "Formats", value: "Online course, classroom and field day, varying by state" },
+      { label: "Covers", value: "Management, BMPs, traps, sets, cable devices, safety, fur handling" },
+    ],
+    basedOn: "the AFWA Trapper Education Manual (2022) and the AFWA trapping Best Management Practices, checked November 2026",
+    source: { name: "Association of Fish and Wildlife Agencies", url: "https://www.fishwildlife.org/afwa-inspires/furbearer-management" },
+  },
   bowhunter: {
     answer:
       "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or get a bowhunting license, so check your own. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",

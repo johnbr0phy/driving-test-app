@@ -5652,6 +5652,19 @@
     --brand-border-light: 14 30% 88%;
     --brand-gradient-to: 24 60% 94%;
   }
+  /* Trapper education theme: dark muddy marsh brown */
+  [data-theme="trapper"] {
+    --brand: 48 40% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 48 60% 95%;
+    --brand-hover: 48 40% 16%;
+    --brand-dark: 48 40% 13%;
+    --brand-darker: 48 40% 9%;
+    --brand-muted: 48 30% 68%;
+    --brand-border: 48 30% 78%;
+    --brand-border-light: 48 30% 88%;
+    --brand-gradient-to: 58 60% 94%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -11999,6 +12012,17 @@
     --brand-muted: 14 30% 45%;
     --brand-dark: 14 50% 65%;
     --brand-darker: 14 50% 78%;
+  }
+  .dark [data-theme="trapper"] {
+    --brand: 48 40% 36.9%;
+    --brand-hover: 48 40% 28.9%;
+    --brand-light: 48 45% 13%;
+    --brand-gradient-to: 58 40% 11%;
+    --brand-border-light: 48 30% 24%;
+    --brand-border: 48 30% 34%;
+    --brand-muted: 48 30% 45%;
+    --brand-dark: 48 40% 65%;
+    --brand-darker: 48 40% 78%;
   }
   .dark [data-theme="natecore"] {
     --brand: 290 20% 50%;

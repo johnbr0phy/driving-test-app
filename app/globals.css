@@ -5613,6 +5613,19 @@
     --brand-border-light: 287 30% 89%;
     --brand-gradient-to: 300 60% 96%;
   }
+  /* Backflow prevention assembly tester theme: deep valve green */
+  [data-theme="backflow"] {
+    --brand: 124 100% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 124 70% 96%;
+    --brand-hover: 124 100% 20%;
+    --brand-dark: 124 100% 16%;
+    --brand-darker: 124 90% 11%;
+    --brand-muted: 124 35% 70%;
+    --brand-border: 124 35% 80%;
+    --brand-border-light: 124 30% 89%;
+    --brand-gradient-to: 134 60% 96%;
+  }
   /* ISTQB CTFL v4.0 theme: vivid violet (v2 exam; matches lib/v2/exams/istqb.ts theme) */
   [data-theme="istqb"] {
     --brand: 276 95% 38%;
@@ -11927,6 +11940,17 @@
     --brand-muted: 287 35% 45%;
     --brand-dark: 287 75% 65%;
     --brand-darker: 287 70% 78%;
+  }
+  .dark [data-theme="backflow"] {
+    --brand: 124 100% 26.8%;
+    --brand-hover: 124 100% 20%;
+    --brand-light: 124 45% 13%;
+    --brand-gradient-to: 134 40% 11%;
+    --brand-border-light: 124 30% 24%;
+    --brand-border: 124 35% 34%;
+    --brand-muted: 124 35% 45%;
+    --brand-dark: 124 100% 65%;
+    --brand-darker: 124 90% 78%;
   }
   .dark [data-theme="natecore"] {
     --brand: 290 20% 50%;

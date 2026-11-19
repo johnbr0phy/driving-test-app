@@ -88,6 +88,7 @@ const BORROWED_SETS: Record<string, string> = {
   contractorlaw: "osha",
   natecore: "epa608",
   r410a: "epa608",
+  backflow: "caplumb",
   istqb: "itil",
   ascpmls: "htl",
   ascpht: "htl",

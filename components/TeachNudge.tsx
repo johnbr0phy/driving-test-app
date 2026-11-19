@@ -146,6 +146,7 @@ const TEACHER_LED = new Set([
   "contractorlaw",
   "natecore",
   "r410a",
+  "backflow",
   "ascpmls",
   "ascpht",
   "esthetician",

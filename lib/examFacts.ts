@@ -225,6 +225,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the ISTQB CTFL v4.0.1 syllabus and the ISTQB Exam Structure Tables v1.21 (November 2026)",
     source: { name: "ISTQB", url: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/" },
   },
+  backflow: {
+    answer:
+      "Water suppliers and states require backflow prevention assemblies, such as reduced pressure principle assemblies, double checks and pressure vacuum breakers, to be tested by a certified backflow tester. ASSE International certifies testers under its 5110 standard: a candidate completes a tester course built on ASSE's 14 instructional objectives, then sits a written exam and a practical exam on real assemblies. ASSE's written exam instructions allow 2 hours, closed book with no notes or references, a calculator for math questions, one correct or best answer per question, grading by ASSE, and a passing score of 70% or better. ASSE does not publish the number of questions. California's State Water Resources Control Board recognized ASSE 5110 in June 2025. Many programs accept other certifications too, such as ABPA's, so check which your water supplier or state accepts.",
+    rows: [
+      { label: "Written exam time", value: "2 hours" },
+      { label: "Book rule", value: "Closed book; calculator allowed" },
+      { label: "Passing score", value: "70% or better" },
+      { label: "Practical exam", value: "Yes, field tests on real assemblies" },
+      { label: "Graded by", value: "ASSE International" },
+      { label: "Covers", value: "Cross-connections, hydraulics, assemblies, test kits, test procedures, troubleshooting, safety" },
+    ],
+    basedOn: "ASSE's tester course objectives and written exam instructions, checked November 2026",
+    source: { name: "ASSE backflow instructor guide", url: "https://asse-plumbing.org/personnel-certification/backflow-prevention/guidelines-and-forms/asse-backflow-instructor-guide" },
+  },
   r410a: {
     answer:
       "The R-410A Safety Certification is a specialty certification offered by the ESCO Institute, from the AC&R Safety Coalition program. ESCO describes it as a 50-question exam covering proper safety, handling and application of R-410A refrigerant systems, and persons who pass receive a certificate and an AC&R Safety Coalition R-410A patch. ESCO's training manual covers servicing R-410A and R-407C systems, the R-22 phase-out, refrigerant and oil applications, service techniques and safe handling. ESCO does not publish a time limit or passing score for this exam on its program pages. It does not replace EPA Section 608 certification, which federal law requires to buy and handle R-410A for stationary equipment.",

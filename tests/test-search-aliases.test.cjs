@@ -7,6 +7,10 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["backflow", "US", "backflow"],
+  ["backflow tester", "US", "backflow"],
+  ["asse 5110", "US", "backflow"],
+  ["rpz test", "US", "backflow"],
   ["a2 cil", "IT", "ita2"],
   ["test italiano a2", "IT", "ita2"],
   ["test italiano permesso di soggiorno", "IT", "ita2"],

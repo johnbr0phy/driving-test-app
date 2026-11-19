@@ -137,6 +137,7 @@ import "@/lib/v2/banks/aplang";
 import "@/lib/v2/banks/neet";
 import "@/lib/v2/banks/jeemain";
 import "@/lib/v2/banks/mhtcet";
+import "@/lib/v2/banks/kcet";
 import "@/lib/v2/banks/cuet";
 import "@/lib/v2/banks/ugcnet";
 import "@/lib/v2/banks/reet";

@@ -257,6 +257,7 @@ export const TEACHES: Record<string, string> = {
   neet: "a NEET coaching batch",
   jeemain: "a JEE coaching batch",
   mhtcet: "an MHT-CET coaching batch",
+  kcet: "a KCET coaching batch",
   cuet: "a CUET coaching batch",
   ugcnet: "a UGC-NET coaching class or a university NET preparation cell",
   reet: "a REET or BSTC coaching batch",

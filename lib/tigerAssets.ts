@@ -182,7 +182,7 @@ const BORROWED_SETS: Record<string, string> = {
   nda: "asvab", agniveer: "asvab", agniveervayu: "asvab", phlet: "praxis",
   // Next-100 batch 4: the college entrance exams the college-entrance (SAT) tiger, the teacher eligibility tests
   // the CTET tiger, the Sainik School entrance the military-entrance (ASVAB) tiger.
-  jeemain: "sat", neet: "sat", mhtcet: "sat", cuet: "sat",
+  jeemain: "sat", neet: "sat", mhtcet: "sat", kcet: "sat", cuet: "sat",
   // CAT (IIM) the GMAT tiger, the MBA entrance exam.
   iimcat: "gmat",
   reet: "ctet", uptet: "ctet", ugcnet: "ctet", aissee: "asvab",

@@ -1,0 +1,4437 @@
+[
+  {
+    "id": "AI901-T1-001",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "AI workloads",
+    "stem": "Match each scenario to the AI workload it describes.",
+    "rows": [
+      "Counting cars in a parking lot camera feed",
+      "Finding the main complaints in thousands of written reviews",
+      "Captioning a live webinar as people talk",
+      "Booking a meeting room after checking several calendars"
+    ],
+    "columns": [
+      "Speech",
+      "Computer vision",
+      "Text analysis",
+      "Agentic AI"
+    ],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Working with camera images is computer vision. Pulling themes from written reviews is text analysis. Turning live talk into captions is speech recognition. An assistant that plans steps and takes actions with tools is agentic AI."
+  },
+  {
+    "id": "AI901-T1-002",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "In a chat app, where should a developer put the standing rule \"Only answer questions about our products\"?",
+    "options": [
+      "In the max output tokens setting",
+      "In the deployment name",
+      "In each user message",
+      "In the system message"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Instructions that should shape every reply belong in the system message. User messages carry what the person asks in each turn."
+  },
+  {
+    "id": "AI901-T1-003",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "How generative AI models work",
+    "stem": "At its core, what does a large language model do when it writes a reply to a prompt?",
+    "options": [
+      "Predicts the most likely next token, one token at a time",
+      "Looks up a stored answer that matches the prompt",
+      "Runs a matching rule that a developer wrote for each question",
+      "Searches the web and copies the best page"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A language model produces text by repeatedly predicting the next token that is most likely to follow the text so far. It does not retrieve stored answers or follow hand-written rules for each question."
+  },
+  {
+    "id": "AI901-T1-004",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agent components",
+    "stem": "Which three things define a prompt agent in Foundry Agent Service?",
+    "options": [
+      "A dataset, a training job and a metric",
+      "A model, instructions and tools",
+      "A container image, a VM size and a port",
+      "A voice, a phone number and a greeting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A prompt agent is defined by configuration: the model it uses, its instructions and the tools it can call. Foundry runs it with no code or containers to manage."
+  },
+  {
+    "id": "AI901-T1-005",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fairness",
+    "stem": "A bank's loan model approves applicants of one age group far more often than applicants of another with the same income and credit history. Which responsible AI principle is most at risk?",
+    "options": [
+      "Inclusiveness",
+      "Fairness",
+      "Transparency",
+      "Reliability and safety"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fairness means similar people get similar outcomes. Two groups with the same finances getting different approval rates is a fairness problem. Transparency is about people understanding how the decision was made."
+  },
+  {
+    "id": "AI901-T1-006",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis apps",
+    "stem": "A developer needs to detect and redact personal information in support chats and documents. Which Azure Language in Foundry Tools feature should the app call?",
+    "options": [
+      "PII detection",
+      "Custom text classification",
+      "Entity linking",
+      "Conversational language understanding"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "PII detection identifies entities associated with individuals in text, conversations and documents so they can be redacted. CLU predicts intents, and entity linking links names to Wikipedia."
+  },
+  {
+    "id": "AI901-T1-007",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analyzers",
+    "stem": "In Azure Content Understanding, which component defines the content extraction settings, the field schema and the model deployments used to process input?",
+    "options": [
+      "The toolbox",
+      "The playground",
+      "The analyzer",
+      "The guardrail"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The analyzer is the core component: it configures content extraction, the field extraction schema and model deployments, and applies them consistently to incoming data."
+  },
+  {
+    "id": "AI901-T1-008",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "An app sends a photo of a dented car to a vision-enabled model and asks for a damage summary. How is the image included in the request?",
+    "options": [
+      "As alt text typed by the user",
+      "As a link in the system message only",
+      "As an image content part next to the text, by URL or as base64 data",
+      "As a separate file added to the model's training set before the request"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vision-enabled chat models accept message content that mixes text and images. Each image is a publicly reachable URL or a base64-encoded data URL."
+  },
+  {
+    "id": "AI901-T1-009",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "A survey team wants each comment labeled positive, negative or neutral. Which text analysis technique does this?",
+    "options": [
+      "Language detection",
+      "Key phrase extraction",
+      "Sentiment analysis",
+      "Named entity recognition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sentiment analysis rates the opinion expressed in text as positive, negative, neutral or mixed. Key phrase extraction lists main topics, and entity recognition finds names, places and dates."
+  },
+  {
+    "id": "AI901-T1-010",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "A prompt includes three sample headlines, each followed by its topic, before the new headline to classify. Which technique is this?",
+    "options": [
+      "Few-shot learning",
+      "Chain of thought",
+      "Fine-tuning",
+      "Zero-shot learning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Giving a few input and output examples in the prompt is few-shot learning. It conditions the model for this request only; the model is not retrained, which would be fine-tuning."
+  },
+  {
+    "id": "AI901-T1-011",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tokens",
+    "stem": "A model's limit is described in tokens. What is a token?",
+    "options": [
+      "A credential that grants an app access to the model endpoint",
+      "One complete sentence of the prompt",
+      "A single request sent to the endpoint",
+      "A small unit of text, like a word or a piece of a word"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Models break text into tokens: common words are often one token and rarer words split into several. Context limits, usage and pricing are counted in tokens."
+  },
+  {
+    "id": "AI901-T1-012",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent types",
+    "stem": "A team wants an agent built in the portal with no application code or containers to maintain. Which agent type fits?",
+    "options": [
+      "A batch deployment",
+      "A prompt agent",
+      "A custom speech model",
+      "A hosted agent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Prompt agents are the fastest path: define instructions, a model and tools, and Foundry runs the agent. Hosted agents run your own code in a container."
+  },
+  {
+    "id": "AI901-T1-013",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transparency",
+    "stem": "A hiring tool rejects a candidate, and the candidate asks which factors drove the decision. Which responsible AI principle covers giving a useful explanation?",
+    "options": [
+      "Accountability",
+      "Transparency",
+      "Privacy and security",
+      "Fairness"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Transparency includes interpretability: explaining how and why an AI system reached a decision so people can understand it and spot problems. Accountability is about who is answerable for the system."
+  },
+  {
+    "id": "AI901-T1-014",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "A call center has a nightly folder of thousands of recordings to transcribe asynchronously. Which speech to text option fits?",
+    "options": [
+      "Text to speech avatar",
+      "Pronunciation assessment",
+      "Real-time transcription",
+      "Batch transcription"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Batch transcription processes large volumes of audio asynchronously. Real-time transcription is for streaming audio as it happens."
+  },
+  {
+    "id": "AI901-T1-015",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Field extraction",
+    "stem": "Match each field to the Content Understanding method that produces it.",
+    "rows": [
+      "The invoice date exactly as printed on a document",
+      "Whether a support call's sentiment is positive, neutral or negative",
+      "A short summary of what was said in a recorded call"
+    ],
+    "columns": [
+      "Extract",
+      "Classify",
+      "Generate"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Extract pulls values as they appear (documents only). Classify picks from a predefined set of categories. Generate produces values freely, such as summaries or scene descriptions."
+  },
+  {
+    "id": "AI901-T1-016",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "A news app needs the people, organizations and places mentioned in each article tagged with their category. Which technique fits?",
+    "options": [
+      "Conversational language understanding",
+      "Summarization",
+      "Named entity recognition",
+      "Sentiment analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Named entity recognition (NER) finds entities in text and categorizes them into types such as person, organization, location and date."
+  },
+  {
+    "id": "AI901-T1-017",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deploying a model",
+    "stem": "In the Foundry portal, where can you try prompts against a deployed model and adjust its settings before writing any code?",
+    "options": [
+      "The model's REST API reference",
+      "The Azure Cost Management blade",
+      "The playground",
+      "The Speech Studio voice gallery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Foundry playgrounds let you explore models, prototype prompts and change settings in the portal with no code. You can then move the same setup into an app."
+  },
+  {
+    "id": "AI901-T1-018",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment options",
+    "stem": "A start-up wants the newest models at the lowest price with no data residency requirement. Which deployment type does Microsoft recommend starting with?",
+    "options": [
+      "Developer",
+      "Data Zone Batch",
+      "Global Standard",
+      "Regional Provisioned"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft says to start most workloads on Global Standard: it gets new models first, has the lowest price and the broadest region coverage. Move to another type only for residency, reserved throughput or batch needs."
+  },
+  {
+    "id": "AI901-T1-019",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent tools",
+    "stem": "An agent must answer questions from a set of uploaded policy PDFs. Which built-in tool should it use?",
+    "options": [
+      "Code interpreter",
+      "File search",
+      "Web search",
+      "Image generation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "File search lets an agent retrieve relevant content from files you provide. Code interpreter runs code, and web search looks at the public web."
+  },
+  {
+    "id": "AI901-T1-020",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "A team wants quicker, cheaper image answers where fine detail doesn't matter. Which detail setting should the image part use?",
+    "options": [
+      "low",
+      "max",
+      "auto",
+      "high"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With detail set to low, the model processes a lower resolution 512x512 version, giving quicker responses and fewer tokens. High activates the high-res mode, and auto lets the model decide."
+  },
+  {
+    "id": "AI901-T1-021",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Responsible AI principles",
+    "stem": "For each statement about Microsoft's responsible AI principles, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Inclusiveness means designing so people with disabilities can use the system.",
+      "Accountability means the AI system is the final authority on decisions about people.",
+      "Reliability and safety includes responding safely to unexpected conditions.",
+      "Privacy and security applies only after a model is deployed, not to its training data."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Inclusiveness is about empowering everyone, including people with disabilities. Accountability means people stay answerable and AI is not the final authority on decisions that affect lives. Reliability and safety covers unexpected conditions and resisting manipulation. Privacy applies to the data used to train and run the system."
+  },
+  {
+    "id": "AI901-T1-022",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speech capabilities",
+    "stem": "Which speech capability turns written text into natural-sounding spoken audio?",
+    "options": [
+      "Speech recognition",
+      "Speaker diarization",
+      "Speech synthesis",
+      "Language identification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Speech synthesis, also called text to speech, converts text into spoken audio, for example with neural voices. Speech recognition goes the other way, from audio to text."
+  },
+  {
+    "id": "AI901-T1-023",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "A Python app connects to a Foundry project with AIProjectClient. Which value must it be given to find the project?",
+    "options": [
+      "The tenant's domain name",
+      "The project endpoint",
+      "The Azure subscription ID",
+      "The model's training data path"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIProjectClient takes the project endpoint, in the form https://<resource-name>.services.ai.azure.com/api/projects/<project-name>, plus a credential such as DefaultAzureCredential."
+  },
+  {
+    "id": "AI901-T1-024",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration parameters",
+    "stem": "A legal team uses a model to draft contract clauses and wants focused, consistent wording rather than creative variation. How should they set temperature?",
+    "options": [
+      "Low, for example 0.2",
+      "Raise top_p to its maximum as well",
+      "At the maximum of 2",
+      "High, such as 1.5"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lower temperature makes output more focused and concrete; higher temperature makes it more random. Microsoft suggests a much lower temperature for legal documents and changing temperature or top_p, not both."
+  },
+  {
+    "id": "AI901-T1-025",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Testing agents",
+    "stem": "After creating an agent in the Foundry portal, where can you chat with it to check its answers before publishing?",
+    "options": [
+      "The deployment's quota page",
+      "The Azure Advisor recommendations page",
+      "The model's pricing calculator",
+      "The agents playground"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Agent Service lifecycle is create, test, trace, evaluate, optimize, publish and monitor. You test by chatting with the agent in the agents playground."
+  },
+  {
+    "id": "AI901-T1-026",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spoken prompts",
+    "stem": "A voice agent must answer callers with the lowest latency. Which voice architecture is optimized for that?",
+    "options": [
+      "Speech recognition, then a text model, then speech synthesis",
+      "Batch transcription, then a summary email",
+      "Native speech-to-speech with a realtime speech model",
+      "A text to speech avatar video rendered offline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In the native speech-to-speech design the realtime model handles spoken input and output directly, which is optimized for natural, low-latency conversation. The cascaded design adds latency at each stage."
+  },
+  {
+    "id": "AI901-T1-027",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Confidence and grounding",
+    "stem": "An accounts team wants to send extracted invoice totals straight to payment unless the system is unsure. Which Content Understanding output supports this?",
+    "options": [
+      "Confidence scores from 0 to 1 for each field",
+      "The analyzer's creation date",
+      "The model's temperature setting for each analyzer run",
+      "A Markdown table of contents"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Content Understanding gives a confidence score from 0 to 1 for each field. High scores allow straight-through processing; low scores can be routed to a person."
+  },
+  {
+    "id": "AI901-T1-028",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Computer vision and image generation",
+    "stem": "For each statement about computer vision and image generation, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Object detection finds where each object is in an image, not just what the image shows.",
+      "Optical character recognition reads printed or handwritten text in an image.",
+      "An image generation model is the right tool to count people in a photo.",
+      "Image classification draws a box around every item it finds."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Object detection returns each object's location, and OCR extracts text from images. Image generation creates new pictures; it doesn't analyze existing ones. Classification labels the whole image rather than locating items."
+  },
+  {
+    "id": "AI901-T1-029",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "In the Foundry quickstart, after creating an AIProjectClient, how does the Python code send a prompt to a deployed model?",
+    "options": [
+      "It gets an OpenAI client from the project and calls responses.create",
+      "It calls project.deploy and reads the deployment log",
+      "It posts the prompt as JSON to the Azure portal URL of the project resource",
+      "It writes the prompt to a storage queue for the model to pick up"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The quickstart calls project.get_openai_client() and then openai.responses.create(model=..., input=...), reading the reply from output_text."
+  },
+  {
+    "id": "AI901-T1-030",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "A company wants a named team to review its AI system, sign off on releases and answer for how the system behaves in production. Which principle does this support?",
+    "options": [
+      "Reliability and safety",
+      "Inclusiveness",
+      "Accountability",
+      "Transparency"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Accountability means the people who design and deploy AI systems answer for how they operate, with governance norms and human control over highly autonomous systems."
+  },
+  {
+    "id": "AI901-T1-031",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Creating visual output",
+    "stem": "A developer wants to generate marketing images in Foundry. DALL-E 3 no longer works. Which model family should they use?",
+    "options": [
+      "A gpt-image series model",
+      "An embedding model",
+      "A text analytics for health model",
+      "A speech to text model"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DALL-E 3 was retired on March 4, 2026, and existing deployments stopped working. Microsoft says to use a gpt-image series model, such as GPT-Image-2, instead."
+  },
+  {
+    "id": "AI901-T1-032",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Choosing a model",
+    "stem": "Match each requirement to the kind of model that fits it.",
+    "rows": [
+      "Turn product descriptions into vectors for similarity search",
+      "Create a new banner picture from a text description",
+      "Answer questions about a photo the user uploads"
+    ],
+    "columns": [
+      "Embedding model",
+      "Image generation model",
+      "Multimodal chat model"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Embedding models turn text into numeric vectors for search and similarity. Image generation models such as the gpt-image series create pictures from prompts. A multimodal chat model accepts an image in the prompt and answers about it."
+  },
+  {
+    "id": "AI901-T1-033",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Agent client app",
+    "stem": "For each statement about the Python agent sample, select Yes if it is true or No if it is false.",
+    "rows": [
+      "project.agents.create_version creates an agent or a new version of it.",
+      "get_openai_client(agent_name=...) returns a client bound to that agent.",
+      "The agent's instructions must be resent in every user message.",
+      "Each new question needs a brand-new agent to keep history."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "create_version with a PromptAgentDefinition creates the agent, and get_openai_client(agent_name=...) binds a client to it. The agent keeps its instructions, so you don't resend them, and a conversation keeps the history."
+  },
+  {
+    "id": "AI901-T1-034",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Information extraction",
+    "stem": "An insurer receives thousands of claim forms as PDFs and wants the policy number, claim date and amount from each as structured data. Which workload is this?",
+    "options": [
+      "Speech synthesis",
+      "Text to speech synthesis",
+      "Image generation",
+      "Information extraction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pulling specific fields out of documents and forms into structured data is information extraction, the job of a service such as Azure Content Understanding in Foundry Tools."
+  },
+  {
+    "id": "AI901-T1-035",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "System and user prompts",
+    "stem": "For each statement about prompts, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Repeating key instructions at the end of a prompt can help because of recency bias.",
+      "Telling the model to reply 'not found' when the answer isn't in the text can reduce made-up answers.",
+      "Separators such as --- make a prompt harder for the model to follow.",
+      "Zero-shot means the prompt includes several worked examples."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Models can weigh the end of a prompt more, so repeating instructions there can help. Giving the model an out reduces fabricated answers. Clear syntax like separators helps. Zero-shot means no examples."
+  },
+  {
+    "id": "AI901-T1-036",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "For each statement about Azure Speech in Foundry Tools, select Yes if it is true or No if it is false.",
+    "rows": [
+      "SSML can adjust pitch, speaking rate and pronunciation of synthesized speech.",
+      "Azure Speech can run in containers closer to your data.",
+      "Custom speech models are trained only on images.",
+      "Fast transcription is meant for live, streaming microphone audio."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "SSML fine-tunes pitch, rate, volume and pronunciation, and Speech can run in containers. Custom speech trains on acoustic, language and pronunciation data. Fast transcription is for pre-recorded files; real-time transcription handles streams."
+  },
+  {
+    "id": "AI901-T1-037",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Documents and forms",
+    "stem": "A RAG solution must index scanned manuals, including the meaning of their charts and diagrams. Which Content Understanding output suits search ingestion?",
+    "options": [
+      "A WEBP thumbnail of each page",
+      "An SSML file for each section",
+      "A single sentiment score and a language code for each manual",
+      "Markdown with figure descriptions and preserved layout"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For search and RAG, Content Understanding outputs Markdown, with figure descriptions that make charts searchable and layout analysis that keeps tables and sections."
+  },
+  {
+    "id": "AI901-T1-038",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Privacy and security",
+    "stem": "A chatbot is built on customer support transcripts. Before training, the team removes names, phone numbers and account numbers. Which principle are they applying?",
+    "options": [
+      "Transparency",
+      "Reliability and safety",
+      "Privacy and security",
+      "Accountability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Protecting personal information in the data an AI system uses is the privacy and security principle. Removing personal data before training reduces what the system could expose."
+  },
+  {
+    "id": "AI901-T1-039",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Deployment options",
+    "stem": "For each statement about Foundry deployment types, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Global Batch targets a 24-hour turnaround at a lower cost than Global Standard.",
+      "Data Zone Standard keeps processing inside a Microsoft-defined data zone such as the EU.",
+      "Provisioned deployments are billed per token with no reserved capacity.",
+      "A Developer deployment is meant for production traffic and has an SLA."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Batch types give about 50% savings with a 24-hour target. Data Zone types process only inside the US, EU or APAC zone. Provisioned types reserve capacity in PTUs. Developer deployments are for evaluating fine-tuned models, last 24 hours and have no SLA."
+  },
+  {
+    "id": "AI901-T1-040",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agent tools",
+    "stem": "An agent must work out the average of a column in a CSV file a user attaches. Which tool is best suited?",
+    "options": [
+      "Web search",
+      "File search",
+      "Code interpreter",
+      "A text to speech voice"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code interpreter lets the agent write and run code, for example to load a CSV and compute statistics. File search retrieves passages but does not calculate."
+  },
+  {
+    "id": "AI901-T1-041",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Generative and agentic AI",
+    "stem": "What most separates an agent from a basic chat with a model?",
+    "options": [
+      "The agent always runs on a larger and newer model than chat does",
+      "The agent answers only from its training data",
+      "The agent can't hold a multi-turn conversation",
+      "The agent can use tools to take actions toward a goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An agent pairs a model with instructions and tools, so it can reason over a request and take actions such as searching, running code or calling an API. A basic model call just returns generated text."
+  },
+  {
+    "id": "AI901-T1-042",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Foundry SDK chat client",
+    "select": 2,
+    "stem": "Which two items does the Python quickstart need to authenticate and connect to a Foundry project? (Choose two.)",
+    "options": [
+      "A hub-based project connection string from the classic portal",
+      "The azure-ai-projects package",
+      "DefaultAzureCredential after signing in with az login",
+      "A Speech SDK subscription key"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "The current SDK is azure-ai-projects (2.x), and the samples authenticate with DefaultAzureCredential from azure-identity after az login. Hub-based connection strings belong to the classic experience."
+  },
+  {
+    "id": "AI901-T1-043",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Creating visual output",
+    "stem": "For each statement about image generation with gpt-image models, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Generated images are returned as base64 data, not as URLs.",
+      "Prompts and generated images pass through a content filter.",
+      "WEBP is a supported output format.",
+      "One request can return no more than one image."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "GPT-image models return b64_json only. Prompts and results are moderated. Output formats are PNG (default) and JPEG, not WEBP, and n can be 1 to 10 images per request."
+  },
+  {
+    "id": "AI901-T1-044",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis apps",
+    "stem": "Which developer tools can an app use to call Azure Language features?",
+    "options": [
+      "Only Power BI dashboards",
+      "Only a hosted agent container",
+      "REST APIs and client libraries, or the Foundry portal",
+      "Only the Speech CLI"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Azure Language can be used through the Foundry portal, REST APIs and client libraries, and its features are also offered as tools in the Azure Language MCP server."
+  },
+  {
+    "id": "AI901-T1-045",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Content Understanding",
+    "stem": "For each statement about Azure Content Understanding in Foundry Tools, select Yes if it is true or No if it is false.",
+    "rows": [
+      "It offers prebuilt analyzers for scenarios such as tax and contract processing.",
+      "You can create custom analyzers with your own field schema.",
+      "It works only with printed documents, not audio or video.",
+      "It needs no Foundry resource to use."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Content Understanding has industry prebuilt analyzers and supports custom analyzers. It processes documents, images, audio and video, and it is used through a Foundry resource."
+  },
+  {
+    "id": "AI901-T1-046",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Responsible AI principles",
+    "stem": "Match each practice to the responsible AI principle it supports most directly.",
+    "rows": [
+      "Testing a speech app with speakers of many accents and speech patterns",
+      "Comparing error rates across age and gender groups",
+      "Stress testing a model with unusual and adversarial inputs"
+    ],
+    "columns": [
+      "Fairness",
+      "Inclusiveness",
+      "Reliability and safety"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ],
+    "explanation": "Designing for the widest range of users is inclusiveness. Comparing outcomes across sensitive groups is a fairness check. Testing behaviour under unexpected or hostile input is reliability and safety."
+  },
+  {
+    "id": "AI901-T1-047",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hallucination",
+    "stem": "A chatbot confidently states a refund policy that the company never had. What is the best way to reduce this?",
+    "options": [
+      "Raise the temperature so it explores more answers",
+      "Remove the system message so the model is less limited",
+      "Switch to a model with a bigger context window and keep the prompt",
+      "Ground the model by adding the real policy text to the prompt"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Giving the model grounding data, the real source text, is one of the most effective ways to get reliable answers. Higher temperature adds randomness, and a bigger context window does nothing if the facts are not in it."
+  },
+  {
+    "id": "AI901-T1-048",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Agent tools",
+    "select": 2,
+    "stem": "Which two ways can you add custom tools to a Foundry agent? (Choose two.)",
+    "options": [
+      "Upload a new base model",
+      "Connect an MCP server",
+      "Raise the deployment's tokens-per-minute quota",
+      "Describe an API with an OpenAPI spec"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Besides built-in tools, Foundry lets you add custom tools through functions, OpenAPI specs and MCP servers. Uploading a model or raising quota doesn't add a tool."
+  },
+  {
+    "id": "AI901-T1-049",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "A help desk wants a short recap of a long ticket thread that keeps some of the original sentences word for word. Which kind of summarization is this?",
+    "options": [
+      "Extractive summarization",
+      "Entity linking",
+      "Key phrase extraction",
+      "Abstractive summarization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Extractive summarization selects key sentences from the text and keeps them as written. Abstractive summarization writes new sentences that aren't copied from the original."
+  },
+  {
+    "id": "AI901-T1-050",
+    "section": "ai901",
+    "test": 1,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deploying a model",
+    "stem": "A developer opens a project in the Foundry portal and wants to chat with gpt-5-mini through a deployment. What must happen first?",
+    "options": [
+      "Deploy the model to the project",
+      "Create a hosted agent container",
+      "Publish the project to Microsoft Teams",
+      "Fine-tune the model on company data"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To call a model through a deployment you deploy it first, choosing a deployment type. Fine-tuning and agents are optional extras. (Instant access, in preview, can skip deployment for some models.)"
+  },
+  {
+    "id": "AI901-T2-001",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "A blog platform wants a short list of the main topics in each post, such as \"electric cars\" and \"battery range\". Which technique fits?",
+    "options": [
+      "Named entity recognition",
+      "Sentiment analysis",
+      "Language detection",
+      "Key phrase extraction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Key phrase extraction evaluates text and returns its main concepts as a list of phrases. Sentiment and opinion mining rate attitude instead."
+  },
+  {
+    "id": "AI901-T2-002",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "A support bot's answers drift away from the company's return policy. Which prompt change is most likely to keep it accurate?",
+    "options": [
+      "Tell the model to be confident in every answer",
+      "Ask the model to keep replies under ten words",
+      "Remove the system message so the model can use more of its own general knowledge",
+      "Add the policy text to the prompt and tell the model to answer only from it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Providing grounding data and limiting answers to it is one of the most effective ways to get reliable responses. Telling the model to be confident doesn't make it correct."
+  },
+  {
+    "id": "AI901-T2-003",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "How generative AI models work",
+    "stem": "What does a model's context window limit?",
+    "options": [
+      "How many days the model remembers past chats",
+      "How many languages the model was trained on",
+      "How many tokens of input and output it can handle in one request",
+      "How many separate users can call the deployed model at the same time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The context window is the maximum number of tokens the model can take into account for a request, the prompt plus what it generates. It is not a limit on users, memory between sessions or languages."
+  },
+  {
+    "id": "AI901-T2-004",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent types",
+    "stem": "A company already runs agent code built with LangGraph and wants Foundry to host it with a managed endpoint and scaling. Which agent type fits?",
+    "options": [
+      "A hosted agent",
+      "A Developer deployment",
+      "A Global Batch deployment",
+      "A prompt agent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hosted agents run your own code and framework, such as Microsoft Agent Framework or LangGraph, as a container with a managed endpoint, scaling and identity."
+  },
+  {
+    "id": "AI901-T2-005",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reliability and safety",
+    "stem": "A medical triage assistant performs well in testing but gives poor advice for rare conditions it rarely saw in its training data. Which principle does this weakness affect most?",
+    "options": [
+      "Transparency",
+      "Accountability",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Reliability and safety means a system behaves as designed across the range of conditions it meets. Underperforming on rarely seen inputs is a reliability problem that error analysis aims to find."
+  },
+  {
+    "id": "AI901-T2-006",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "Which tool lets you use most Azure Speech features from the command line without writing code?",
+    "options": [
+      "The Speech CLI",
+      "The Content Understanding Studio",
+      "The Foundry SDK for Java",
+      "Azure Storage Explorer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Speech CLI exposes most Speech SDK features from the command line with no code. The Speech SDK and REST APIs are the coding options."
+  },
+  {
+    "id": "AI901-T2-007",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Confidence and grounding",
+    "stem": "A reviewer wants to see exactly where on a contract page each extracted value came from. Which Content Understanding feature provides this?",
+    "options": [
+      "Speech synthesis",
+      "Grounding",
+      "Contextualization tokens",
+      "Segmentation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Grounding identifies the specific region in the content where each value was extracted or generated, so a person can trace it back to the source and check it."
+  },
+  {
+    "id": "AI901-T2-008",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "A vision app passes image links from a storage account that is reachable only through a private endpoint, and the requests fail. Why?",
+    "options": [
+      "The model needs a Batch deployment to read stored images",
+      "Only GIF images are supported",
+      "Only GIF images can be read from storage",
+      "Image URLs must be publicly accessible"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft notes that image URLs must be publicly accessible; private endpoint, VNet and firewall restricted URLs aren't supported. A local file can be sent as base64 instead."
+  },
+  {
+    "id": "AI901-T2-009",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speech capabilities",
+    "stem": "A language-learning app listens to a student read a sentence and scores how accurate and fluent it sounded. Which speech feature does this?",
+    "options": [
+      "Speech translation",
+      "Speech to text transcription",
+      "Text to speech avatar",
+      "Pronunciation assessment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pronunciation assessment evaluates spoken audio and gives feedback on accuracy and fluency, a common language-learning scenario for Azure Speech."
+  },
+  {
+    "id": "AI901-T2-010",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "A prompt ends with \"Here's a bulleted list of key points:\" followed by a dash. What is this technique called?",
+    "options": [
+      "Raising the temperature",
+      "Priming the output with a cue",
+      "Grounding the model with source data",
+      "Few-shot learning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A cue, a few words at the end of a prompt, primes the model to continue in the desired form, such as a bullet list."
+  },
+  {
+    "id": "AI901-T2-011",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing a model",
+    "stem": "A developer must pick a model for a scanned-receipt chatbot that answers questions about the photo a user uploads. Which capability must the model have?",
+    "options": [
+      "Image input",
+      "Text embeddings",
+      "Speech synthesis",
+      "Image generation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To answer questions about an uploaded photo, the model must accept images as input, a vision-enabled or multimodal model. Image generation creates pictures, it does not read them."
+  },
+  {
+    "id": "AI901-T2-012",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent instructions",
+    "stem": "An agent answers off-topic questions about sports when it should only help with travel bookings. What should be changed first?",
+    "options": [
+      "The agent's version number",
+      "The deployment type",
+      "The project endpoint",
+      "The agent's instructions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Instructions define an agent's role and limits. Tightening them to say it only helps with travel bookings is the first fix."
+  },
+  {
+    "id": "AI901-T2-013",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Inclusiveness",
+    "stem": "A team adds screen reader support and captions to its AI assistant so more people can use it. Which responsible AI principle does this reflect?",
+    "options": [
+      "Inclusiveness",
+      "Transparency",
+      "Reliability and safety",
+      "Fairness"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inclusiveness means AI should empower and engage everyone, including people with disabilities. Accessibility features such as captions and screen reader support are a direct example."
+  },
+  {
+    "id": "AI901-T2-014",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spoken prompts",
+    "stem": "An app records a customer's spoken question and must reply in speech. Using the cascaded voice design, what is the order of steps?",
+    "options": [
+      "A text model, speech recognition, then translation",
+      "Speech translation, then image generation",
+      "Speech recognition, a text model, then speech synthesis",
+      "Speech synthesis, a text model, then speech recognition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In the cascaded design, caller audio goes through speech recognition, a text model reasons over the transcript, and speech synthesis speaks the reply."
+  },
+  {
+    "id": "AI901-T2-015",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documents and forms",
+    "stem": "A mailroom receives mixed PDFs: invoices, receipts and contracts. Which Content Understanding capability sorts them first so each goes to the right analyzer?",
+    "options": [
+      "Classification",
+      "Image generation",
+      "Text to speech",
+      "Grounding"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Classification categorizes documents by type before routing them to the matching analyzer for extraction. Segmentation can also split a file into its separate documents."
+  },
+  {
+    "id": "AI901-T2-016",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Speech capabilities",
+    "stem": "Match each requirement to the speech feature it needs.",
+    "rows": [
+      "Read an e-book aloud as an audiobook",
+      "Give a live talk in Spanish subtitles while the speaker uses English",
+      "Turn recorded support calls into searchable transcripts"
+    ],
+    "columns": [
+      "Speech to text",
+      "Text to speech",
+      "Speech translation"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ],
+    "explanation": "Turning text into audio is text to speech. Converting speech in one language into another is speech translation. Producing transcripts from recordings is speech to text."
+  },
+  {
+    "id": "AI901-T2-017",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "In the Python quickstart, which property of the response object holds the model's reply text?",
+    "options": [
+      "status_code",
+      "output_text",
+      "deployment_name",
+      "input_tokens"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After openai.responses.create(...), the sample prints response.output_text to show the generated text."
+  },
+  {
+    "id": "AI901-T2-018",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment options",
+    "stem": "An EU hospital needs prompts and responses processed only within the EU, with pay-per-token billing. Which deployment type fits?",
+    "options": [
+      "Global Provisioned",
+      "Global Batch",
+      "Data Zone Standard",
+      "Global Standard"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data Zone Standard processes data only inside a Microsoft-defined data zone (US, EU or APAC) with pay-per-token billing. Global types may process data in any Azure region."
+  },
+  {
+    "id": "AI901-T2-019",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent client app",
+    "stem": "A client app sends a question and then a follow-up to an agent. What lets the agent answer the follow-up in context?",
+    "options": [
+      "Creating a new agent version for the follow-up",
+      "Raising the temperature on the second call",
+      "Switching to a different project",
+      "Sending both requests in the same conversation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A conversation stores the history. The sample creates one with conversations.create() and passes its id on each responses.create call."
+  },
+  {
+    "id": "AI901-T2-020",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Creating visual output",
+    "stem": "An image edit request includes a mask to mark the area to change. What must be true of the mask?",
+    "options": [
+      "It is a JPEG at half the image's size",
+      "It is a text list of pixel numbers",
+      "It is a WEBP file with a transparent border around the edit area",
+      "It is a PNG that matches the input image's dimensions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For edits with inpainting, the mask must be a PNG with the same dimensions as the input image."
+  },
+  {
+    "id": "AI901-T2-021",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Transparency",
+    "select": 2,
+    "stem": "Which two actions support the transparency principle in a generative AI app? (Choose two.)",
+    "options": [
+      "Documenting what the system can and can't do well",
+      "Telling users they are talking to an AI system",
+      "Encrypting the chat history at rest",
+      "Running the model in two Azure regions for failover"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Transparency covers being open that AI is in use and helping people understand its capabilities and limits. Encryption supports privacy and security, and running in two regions supports reliability."
+  },
+  {
+    "id": "AI901-T2-022",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Computer vision and image generation",
+    "stem": "A marketing team wants to change only the sky in a product photo by describing the new sky. Which image generation operation fits?",
+    "options": [
+      "Classify the photo's main subject",
+      "Edit the image using a prompt and a mask",
+      "Run OCR on the photo",
+      "Generate a new image from the prompt alone"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Image edit operations take an existing image and a prompt, with an optional mask that marks the area to change (inpainting). Generating from a prompt alone would make a whole new picture."
+  },
+  {
+    "id": "AI901-T2-023",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "A chat client must remember earlier turns so a follow-up such as \"And what is the capital?\" makes sense. What does the quickstart use to keep that history?",
+    "options": [
+      "A new project for each question",
+      "A conversation, passed by its id to each responses.create call",
+      "A separate model deployment that stores each turn of the conversation",
+      "A higher temperature on the follow-up"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The sample creates a conversation with openai.conversations.create() and passes conversation=conversation.id to each call, so the follow-up is answered with the earlier turns in mind."
+  },
+  {
+    "id": "AI901-T2-024",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Configuration parameters",
+    "stem": "A team raises temperature and lowers top_p at the same time, and the output becomes hard to predict. What does Microsoft recommend?",
+    "options": [
+      "Change temperature or top_p, but not both at once",
+      "Always set both to the same value",
+      "Use top_p only for image generation models, never for chat",
+      "Leave temperature at 2 and tune only top_p"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Temperature and top_p both control randomness, in different ways. The guidance is to adjust one of the two at a time so you can see the effect."
+  },
+  {
+    "id": "AI901-T2-025",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tracing and evaluation",
+    "stem": "An agent sometimes calls the wrong tool. Which Foundry capability lets you inspect each model call and tool invocation to see why?",
+    "options": [
+      "Data Zone processing",
+      "Content Understanding segmentation",
+      "Agent tracing",
+      "Batch transcription"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tracing shows every model call, tool invocation and decision the agent made, which is how you find out why it chose a tool."
+  },
+  {
+    "id": "AI901-T2-026",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Text analysis apps",
+    "stem": "Match each app requirement to the Azure Language feature that fits it.",
+    "rows": [
+      "Find dates, people and places in news text without training",
+      "Extract the company's own part numbers and contract terms",
+      "Work out whether a user wants to book, cancel or change a flight"
+    ],
+    "columns": [
+      "Custom NER",
+      "Prebuilt NER",
+      "Conversational language understanding"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ],
+    "explanation": "Prebuilt NER finds standard entity types with no training. Custom NER learns your own entity categories from labeled text. CLU predicts the intent of an utterance."
+  },
+  {
+    "id": "AI901-T2-027",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Audio and video",
+    "stem": "A call center wants a summary, the caller's main issue and the sentiment from each recorded call. Which tool fits?",
+    "options": [
+      "A Developer deployment of an embedding model for the call audio",
+      "An image generation model with a mask",
+      "Content Understanding with an analyzer for audio",
+      "The Speech CLI text to speech command"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Post-call analytics is a Content Understanding scenario: it transcribes audio and generates or classifies fields such as summary, issue and sentiment."
+  },
+  {
+    "id": "AI901-T2-028",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Information extraction",
+    "stem": "A media company wants a description of each scene, the spoken words and key moments from its video library. Which kind of AI workload is this?",
+    "options": [
+      "Sentiment analysis of viewer comments",
+      "Image generation",
+      "Information extraction from video",
+      "Text to speech synthesis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Extracting transcripts, scene descriptions and key moments from video is information extraction across audio and visual content, which Content Understanding supports for video."
+  },
+  {
+    "id": "AI901-T2-029",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "System and user prompts",
+    "stem": "Match each prompt to the technique it uses.",
+    "rows": [
+      "First list the factual claims, then write a search query for each claim",
+      "Return each finding in the format BEHAVIOR(\"reason\")",
+      "Answer only from the following product manual text"
+    ],
+    "columns": [
+      "Break the task down",
+      "Specify the output structure",
+      "Provide grounding context"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Splitting work into steps is breaking the task down. Asking for a set format is specifying the output structure. Supplying source text to answer from is grounding."
+  },
+  {
+    "id": "AI901-T2-030",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "An AI system flags insurance claims as possible fraud. Which design best follows the accountability principle?",
+    "options": [
+      "A trained person reviews each flag before a claim is denied",
+      "Only the data science team can see the flags",
+      "Claims flagged with high confidence are denied automatically",
+      "The model retrains itself nightly on the newest claims"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Accountability means AI is not the final authority on decisions that affect people's lives and that humans keep meaningful control. A human review step before denial keeps a person answerable for the decision."
+  },
+  {
+    "id": "AI901-T2-031",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Lightweight vision app",
+    "stem": "Match each feature of a pet adoption app to the capability it needs.",
+    "rows": [
+      "Describe the breed and coat of a pet in an uploaded photo",
+      "Create a cartoon poster of a pet from a written description",
+      "Block a request that asks for a violent picture"
+    ],
+    "columns": [
+      "Image input to a multimodal model",
+      "Image generation",
+      "Content filtering"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Understanding an uploaded photo uses a model that accepts image input. Making a new poster uses image generation. Rejecting harmful requests is the job of content filtering."
+  },
+  {
+    "id": "AI901-T2-032",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "How generative AI models work",
+    "stem": "For each statement about generative AI models, select Yes if it is true or No if it is false.",
+    "rows": [
+      "A model can produce fluent text that is factually wrong.",
+      "Few-shot examples in a prompt permanently retrain the model.",
+      "Rare words are often split into more than one token.",
+      "A model's answers come from looking up a database of facts."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Models can generate fluent but false content, so answers need checking. Examples in a prompt only shape that one request; nothing is retrained. Uncommon words break into several tokens. Models predict text rather than querying a fact database."
+  },
+  {
+    "id": "AI901-T2-033",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Agent tools",
+    "stem": "Match each need to the built-in agent tool that fits it.",
+    "rows": [
+      "Find this week's public news about a competitor",
+      "Answer from the company's uploaded HR handbook",
+      "Plot monthly sales from a spreadsheet the user attaches"
+    ],
+    "columns": [
+      "Web search",
+      "File search",
+      "Code interpreter"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Current public information needs web search. Answers from your own documents need file search. Computing and charting data needs code interpreter."
+  },
+  {
+    "id": "AI901-T2-034",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Text analysis techniques",
+    "stem": "For each statement about text analysis, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Language detection tells you which language a passage is written in.",
+      "PII detection can find details such as phone numbers and addresses so they can be redacted.",
+      "Sentiment analysis returns a list of every person named in the text.",
+      "Abstractive summaries can only reuse sentences exactly as written."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Language detection identifies the language, and PII detection finds personal details to redact. Listing people is entity recognition. Abstractive summaries write new sentences; extractive ones reuse the original sentences."
+  },
+  {
+    "id": "AI901-T2-035",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deploying a model",
+    "stem": "In the portal, a team changes the model's instructions and temperature and sees the replies change before sharing code. Where are they working?",
+    "options": [
+      "In Azure Monitor alerts",
+      "In the Speech Studio custom voice tool for the project",
+      "In the Content Understanding analyzer",
+      "In the model's playground in the Foundry portal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The playground is where you prototype prompts and settings against a deployed model with no code. The other tools serve monitoring, extraction and voices."
+  },
+  {
+    "id": "AI901-T2-036",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "A transcription app keeps misreading the medical terms its doctors use. What should the team do?",
+    "options": [
+      "Lower the model temperature",
+      "Switch from real-time to batch transcription so the audio is read twice",
+      "Train a custom speech model with domain vocabulary and audio",
+      "Use a different neural voice"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When audio has domain jargon or background noise the base model may struggle. Custom speech models trained on acoustic, language and pronunciation data improve accuracy."
+  },
+  {
+    "id": "AI901-T2-037",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Content extraction",
+    "select": 2,
+    "stem": "Which two things does Content Understanding's content extraction step do for documents? (Choose two.)",
+    "options": [
+      "Recognizes layout such as tables and paragraphs",
+      "Generates new marketing images",
+      "Reads text with optical character recognition",
+      "Translates every page into spoken audio for accessibility"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Content extraction uses OCR, detects selection marks, barcodes and formulas, and recognizes layout elements such as paragraphs, sections and tables."
+  },
+  {
+    "id": "AI901-T2-038",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Responsible AI principles",
+    "stem": "For each statement about the six principles, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Microsoft's Responsible AI Standard is built on six principles.",
+      "A system can be fair to every group and still be unreliable.",
+      "Transparency requires publishing the model's training data in full.",
+      "Inclusiveness is met once a system works well for the majority of users."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "The Standard rests on six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency and accountability. The principles are separate, so meeting one does not meet another. Transparency is about useful explanation, not publishing all data, and inclusiveness reaches beyond the majority."
+  },
+  {
+    "id": "AI901-T2-039",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment options",
+    "stem": "A retailer must summarise two million product reviews by tomorrow and cost matters more than speed. Which deployment type fits best?",
+    "options": [
+      "Global Batch",
+      "Developer",
+      "Standard",
+      "Global Provisioned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Batch deployments process large asynchronous jobs from a file with a 24-hour target turnaround at about half the price of Global Standard. Provisioned reserves capacity for steady real-time traffic."
+  },
+  {
+    "id": "AI901-T2-040",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Publishing agents",
+    "stem": "A team wants employees to use its finished agent inside Microsoft Teams. What should they do?",
+    "options": [
+      "Move the agent to a Batch deployment",
+      "Rebuild the agent as a custom speech model",
+      "Export the agent's instructions as a PDF",
+      "Publish the agent and share it to Teams"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Publishing promotes an agent to a stable endpoint, and published agents can be shared through Microsoft Teams, Microsoft Copilot and the Entra Agent Registry."
+  },
+  {
+    "id": "AI901-T2-041",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Generative and agentic AI",
+    "stem": "Which task is a typical generative AI workload?",
+    "options": [
+      "Detecting the language of a support ticket",
+      "Sorting last month's invoices by their total amount, highest first",
+      "Counting how many times a word appears",
+      "Drafting a first version of a customer email from bullet points"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Generative AI creates new content such as text, images or code from a prompt. Sorting, language detection and word counts are analysis tasks."
+  },
+  {
+    "id": "AI901-T2-042",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Deploying a model",
+    "stem": "For each statement about deploying and calling models in Foundry, select Yes if it is true or No if it is false.",
+    "rows": [
+      "The model parameter in responses.create names the deployment to call.",
+      "The same project endpoint is used for model calls and agents.",
+      "Every model in the catalog must be fine-tuned before it can be deployed.",
+      "A deployment is a copy of the model that you must host on your own servers."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "The model argument is the deployment name, such as gpt-5-mini, and one project endpoint serves models and agents. Catalog models deploy as they are, and models sold by Azure run on Azure, not your servers."
+  },
+  {
+    "id": "AI901-T2-043",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "A developer sends 14 photos in one chat request to a vision-enabled model. What happens?",
+    "options": [
+      "The model switches to image generation",
+      "Only the first image is read and the other thirteen are silently ignored",
+      "All 14 are merged into one collage automatically",
+      "The request is over the limit of 10 images per chat request"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft's vision guide sets a limit of 10 images per chat request. Split larger sets across requests."
+  },
+  {
+    "id": "AI901-T2-044",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spoken prompts",
+    "stem": "Which Azure Speech capability is built for fast, humanlike spoken conversations between a person and an agent?",
+    "options": [
+      "Language identification",
+      "Voice Live",
+      "Pronunciation assessment",
+      "Batch transcription"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Voice Live creates humanlike conversational interfaces with fast interaction between a human and an agent. Voice-based prompt agents connect through it."
+  },
+  {
+    "id": "AI901-T2-045",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Audio and video",
+    "stem": "A media company wants a long video broken into scenes so each scene can be described separately. Which analyzer setting supports this?",
+    "options": [
+      "Segmentation",
+      "Confidence scoring",
+      "Grounding",
+      "Content filtering"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Segmentation divides documents or videos into logical sections, such as splitting a video into scenes, for targeted processing. It is configured with enableSegment."
+  },
+  {
+    "id": "AI901-T2-046",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Privacy and security",
+    "stem": "Customers must be able to choose how a company's AI system uses their personal data. Which responsible AI principle requires this?",
+    "options": [
+      "Reliability and safety",
+      "Accountability",
+      "Privacy and security",
+      "Inclusiveness"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Privacy laws require transparency about how data is collected, used and stored, and give consumers controls over how their data is used. That falls under the privacy and security principle."
+  },
+  {
+    "id": "AI901-T2-047",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Choosing a model",
+    "select": 2,
+    "stem": "Which two factors should guide the choice of a model from the Foundry model catalog? (Choose two.)",
+    "options": [
+      "Models from one provider can't be used with agents",
+      "The model with the most parameters is always the best choice for any task",
+      "The deployment types and regions the model is available in",
+      "The input and output types the task needs, such as images or audio"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Pick a model whose capabilities match the task and that is available in a deployment type and region you can use. Bigger is not automatically better, and Agent Service works with models from many providers."
+  },
+  {
+    "id": "AI901-T2-048",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Agent types",
+    "stem": "For each statement about Foundry agents, select Yes if it is true or No if it is false.",
+    "rows": [
+      "A voice-based prompt agent connects through Voice Live for spoken conversations.",
+      "Agent versions let you roll back to an earlier definition.",
+      "A prompt agent requires you to manage its container compute.",
+      "Agents can only use models made by Microsoft."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Voice-based prompt agents use Voice Live. Versions are snapshotted so you can roll back. Prompt agents need no compute to manage, and Agent Service works with many catalog models, such as GPT-4o, Llama and DeepSeek."
+  },
+  {
+    "id": "AI901-T2-049",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Computer vision and image generation",
+    "select": 2,
+    "stem": "Which two tasks are computer vision analysis rather than image generation? (Choose two.)",
+    "options": [
+      "Reading the text on a street sign in a photo",
+      "Describing what is happening in a picture",
+      "Making a new illustration for the top of a blog post",
+      "Creating a logo from a written description"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Reading text (OCR) and describing an existing image analyze visual input. Creating a logo or illustration produces new images, which is image generation."
+  },
+  {
+    "id": "AI901-T2-050",
+    "section": "ai901",
+    "test": 2,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "Which message role carries the question a person types into a chat app?",
+    "options": [
+      "User",
+      "Assistant",
+      "System",
+      "Developer tool"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In chat prompts the system message holds instructions, the user message holds what the person asks, and assistant messages hold the model's replies."
+  },
+  {
+    "id": "AI901-D-001",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "How generative AI models work",
+    "stem": "What makes generative AI different from a model that only classifies input?",
+    "options": [
+      "It can only answer yes or no questions",
+      "It can only work with numbers stored in structured tables",
+      "It needs no training data at all",
+      "It creates new content: text, images or code"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Generative AI produces new content in response to a prompt. A classification model assigns input to one of a set of known labels."
+  },
+  {
+    "id": "AI901-D-002",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis apps",
+    "stem": "A team building an agent wants it to call Azure Language features as tools. What does Azure Language offer for this?",
+    "options": [
+      "A Speech Studio voice project",
+      "A Content Understanding prebuilt analyzer",
+      "A Global Batch deployment",
+      "An Azure Language MCP server"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Azure Language capabilities are available as tools in the Azure Language MCP server, remotely through the Foundry Tool Catalog or as a local server."
+  },
+  {
+    "id": "AI901-D-003",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Responsible AI principles",
+    "stem": "Which of these is one of Microsoft's six responsible AI principles?",
+    "options": [
+      "Profitability",
+      "Reliability and safety",
+      "Scalability",
+      "Explainability on demand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The six principles are fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Profit and scale are business goals, not responsible AI principles."
+  },
+  {
+    "id": "AI901-D-004",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AI workloads",
+    "stem": "A city wants an app that warns drivers when a camera spots a pedestrian on the crossing. Which AI workload is this?",
+    "options": [
+      "Computer vision",
+      "Speech synthesis",
+      "Text analysis",
+      "Speech recognition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Detecting people in camera images is a computer vision task, specifically object detection."
+  },
+  {
+    "id": "AI901-D-005",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "A prompt asks the model to classify a review with no examples given. What is this called?",
+    "options": [
+      "Retrieval-augmented generation",
+      "Zero-shot prompting",
+      "Fine-tuning",
+      "Few-shot prompting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A prompt with no examples is zero-shot. Adding one or more input and output examples makes it one-shot or few-shot."
+  },
+  {
+    "id": "AI901-D-006",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agent components",
+    "stem": "What is an agent in Microsoft Foundry?",
+    "options": [
+      "A storage account for prompts",
+      "A dashboard in the portal that charts each model's usage and cost over time",
+      "A list of approved deployment regions",
+      "A model paired with instructions and tools that can reason and act"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft describes an agent as a model paired with instructions and tools that can reason over a request and take action."
+  },
+  {
+    "id": "AI901-D-007",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "Which image formats can be sent to a vision-enabled chat model?",
+    "options": [
+      "Only BMP and TIFF files, with GIF and WEBP refused",
+      "Only RAW camera files",
+      "JPEG, PNG, GIF (first frame only) and WEBP",
+      "Only SVG"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Supported image formats include JPEG, PNG, GIF, of which only the first frame is used, and WEBP."
+  },
+  {
+    "id": "AI901-D-008",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Content Understanding",
+    "stem": "What does Azure Content Understanding in Foundry Tools turn unstructured content into?",
+    "options": [
+      "A trained image generation model for each document type",
+      "A new Azure subscription",
+      "Output in a user-defined format, like a field schema",
+      "A spoken audio file"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Content Understanding uses generative AI to process documents, images, videos and audio into a user-defined output format you can use in automation and analytics."
+  },
+  {
+    "id": "AI901-D-009",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Embeddings",
+    "stem": "Why might an app convert documents into embeddings?",
+    "options": [
+      "To compress the documents into a smaller file",
+      "To remove personal data from the documents",
+      "To find documents with similar meaning to a user's question",
+      "To translate the documents into another language before they are stored"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Embeddings represent text as vectors of numbers so that text with similar meaning sits close together. Comparing vectors finds the passages most relevant to a question."
+  },
+  {
+    "id": "AI901-D-010",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis apps",
+    "stem": "A law firm must run language detection and sentiment analysis on premises for compliance. What makes this possible?",
+    "options": [
+      "The Foundry playground",
+      "A text to speech avatar",
+      "Global Standard deployments in an EU region",
+      "Azure Language Docker containers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Azure Language offers Docker containers for features such as sentiment analysis, language detection, key phrase extraction and summarization, so processing can stay close to the data."
+  },
+  {
+    "id": "AI901-D-011",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fairness",
+    "stem": "A face recognition model has a much higher error rate for people with darker skin tones. Which principle is this mainly a failure of?",
+    "options": [
+      "Accountability",
+      "Transparency",
+      "Fairness",
+      "Privacy and security"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When a system's quality of service differs across demographic groups, it affects similar groups differently, which is a fairness harm. Measuring error rates per group is how teams find it."
+  },
+  {
+    "id": "AI901-D-012",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "A hotel wants to know that guests praised the pool but complained about the breakfast in the same review. Which feature goes beyond overall sentiment to do this?",
+    "options": [
+      "Entity linking",
+      "Opinion mining",
+      "Key phrase extraction",
+      "Language detection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Opinion mining, part of sentiment analysis, links positive or negative opinions to specific aspects of the text, such as the pool or the breakfast."
+  },
+  {
+    "id": "AI901-D-013",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "Which instruction follows Microsoft's advice to be specific in a prompt?",
+    "options": [
+      "Tell me about the email",
+      "Make the email better",
+      "Read the following email carefully and do something useful with it",
+      "Summarize this email in three bullet points for a manager"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft's best practices start with being specific and leaving little to interpretation. Naming the format, length and audience does that."
+  },
+  {
+    "id": "AI901-D-014",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent client app",
+    "stem": "In the Python sample, which class holds the model and instructions passed to create_version?",
+    "options": [
+      "PromptAgentDefinition",
+      "DefaultAzureCredential",
+      "DeploymentSku",
+      "ConversationClient"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The sample calls project.agents.create_version(agent_name=..., definition=PromptAgentDefinition(model=..., instructions=...))."
+  },
+  {
+    "id": "AI901-D-015",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "What does the auto detail setting do for an image in a vision request?",
+    "options": [
+      "The model always processes the image at the highest resolution",
+      "The image is skipped if it is large",
+      "The image is turned into a caption first",
+      "The model chooses low or high based on the image size"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Auto is the default: the model decides between low and high based on the size of the input image."
+  },
+  {
+    "id": "AI901-D-016",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Field extraction",
+    "stem": "For which content type does Content Understanding support the Extract method, which returns values exactly as they appear?",
+    "options": [
+      "Documents",
+      "Video",
+      "Every content type equally",
+      "Audio"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Extract method is supported for documents only. For audio and video, fields are produced with Classify or Generate."
+  },
+  {
+    "id": "AI901-D-017",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment options",
+    "stem": "A company has steady, high-volume traffic and needs low latency variance. Which kind of deployment type fits?",
+    "options": [
+      "Provisioned, with reserved throughput units",
+      "Developer, with a 24-hour lifetime",
+      "Standard, with pay-per-token billing and best-effort service",
+      "Batch, with a 24-hour target"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Provisioned deployments reserve processing capacity in provisioned throughput units (PTUs), giving predictable throughput and lower latency variance. Standard types are best effort and suit bursty traffic."
+  },
+  {
+    "id": "AI901-D-018",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "A recorded voicemail file must be transcribed quickly, not in a nightly job. Which option fits pre-recorded audio best?",
+    "options": [
+      "Custom voice",
+      "Fast transcription",
+      "Speech synthesis",
+      "Real-time transcription of a stream"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fast transcription is for pre-recorded audio files and returns results quickly. Batch suits large asynchronous volumes, and real-time suits streaming audio."
+  },
+  {
+    "id": "AI901-D-019",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transparency",
+    "stem": "A credit model's owners want to see which input features most affect its decisions overall and for one applicant. Which principle does this kind of model interpretability support?",
+    "options": [
+      "Reliability and safety",
+      "Fairness",
+      "Inclusiveness",
+      "Transparency"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Interpretability, explaining global and individual predictions, is a key part of transparency. It helps people understand how and why the system behaves as it does."
+  },
+  {
+    "id": "AI901-D-020",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "An app sees the word \"Mercury\" and needs to know whether it means the planet or the element, with a link to a reference page. Which feature does this?",
+    "options": [
+      "Key phrase extraction",
+      "Language detection",
+      "Sentiment analysis",
+      "Entity linking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Entity linking disambiguates an entity found in text and links it to a known reference, which in Azure Language is a Wikipedia page."
+  },
+  {
+    "id": "AI901-D-021",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "Why might a prompt ask the model to cite which source passage supports each statement?",
+    "options": [
+      "Citations let the model skip the system message and answer more freely each time",
+      "Citations make grounded statements more likely and errors easier to spot",
+      "Citations make the model answer faster",
+      "Citations stop the model from using tokens"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Asking for citations close to each statement makes fabricated content less likely and lets people check claims against the sources."
+  },
+  {
+    "id": "AI901-D-022",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent tools",
+    "stem": "Several agents in a project need the same set of tools with one place to manage access and versions. What does Foundry offer for this?",
+    "options": [
+      "A Global Batch deployment",
+      "A custom voice",
+      "A toolbox",
+      "An analyzer schema"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A toolbox groups tools into one reusable unit behind a managed MCP-compatible endpoint, with centralized authentication, governance and versioning."
+  },
+  {
+    "id": "AI901-D-023",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "An app has an image saved on the local disk, not on the web. How can it send that image to a vision-enabled model?",
+    "options": [
+      "Upload it to the model's fine-tuning job",
+      "Paste its file path into the prompt",
+      "Encode it as base64 in a data URL",
+      "Convert it to an audio file"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Local images can be converted to base64 and passed as a data URL such as data:image/jpeg;base64,... in the image part."
+  },
+  {
+    "id": "AI901-D-024",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Images",
+    "stem": "A field team photographs equipment nameplates and needs the model number and serial number as data. Which Foundry tool fits?",
+    "options": [
+      "Batch transcription",
+      "A gpt-image edit request with a mask over the nameplate",
+      "Content Understanding analyzing the images",
+      "A text to speech avatar"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Content Understanding extracts information from images as well as documents, audio and video, returning fields such as model and serial numbers."
+  },
+  {
+    "id": "AI901-D-025",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment options",
+    "stem": "A team has fine-tuned a model and only wants to evaluate it cheaply for a day. Which deployment type is designed for this?",
+    "options": [
+      "Data Zone Standard",
+      "Developer",
+      "Regional Provisioned",
+      "Global Provisioned"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Developer type is for evaluating fine-tuned models only. It is low cost, has no SLA or data-residency guarantee and is deleted automatically after 24 hours."
+  },
+  {
+    "id": "AI901-D-026",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "Which Azure Speech voices are built with deep learning so they sound humanlike?",
+    "options": [
+      "Neural voices",
+      "Prebuilt analyzers",
+      "Phoneme voices",
+      "Batch voices"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Text to speech uses neural voices, humanlike voices powered by deep neural networks, from standard voices to custom voices."
+  },
+  {
+    "id": "AI901-D-027",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Accountability",
+    "stem": "Who is accountable for how an AI system behaves after it is deployed?",
+    "options": [
+      "The users who type the prompts each day",
+      "The AI model itself",
+      "The people who design and deploy it",
+      "The vendor of the computer chips"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Under the accountability principle, the people and organisations who design and deploy AI systems answer for how those systems operate. A model can't be held accountable."
+  },
+  {
+    "id": "AI901-D-028",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Speech capabilities",
+    "stem": "Which capability turns spoken words into text?",
+    "options": [
+      "Neural voice",
+      "Speech synthesis",
+      "Text to speech avatar",
+      "Speech recognition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Speech recognition, also called speech to text, converts audio into text. Synthesis, avatars and neural voices all produce speech from text."
+  },
+  {
+    "id": "AI901-D-029",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "A developer runs the Python sample and gets an authentication error. Which step did they most likely skip?",
+    "options": [
+      "Raising the temperature",
+      "Creating a second project",
+      "Signing in with az login",
+      "Adding few-shot examples"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The samples use DefaultAzureCredential, which picks up the identity from the Azure CLI. Signing in with az login before running the script is a listed step."
+  },
+  {
+    "id": "AI901-D-030",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent instructions",
+    "stem": "Which instruction is most useful for a single-purpose IT help agent?",
+    "options": [
+      "You are a helpful assistant",
+      "Answer every question that any member of staff asks as fully and helpfully as you can",
+      "Be creative and surprising",
+      "Help staff with passwords and printers; send anything else to the service desk"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Good instructions name the agent's role, what it handles and what it should do with requests outside that scope. Vague instructions leave the agent to guess."
+  },
+  {
+    "id": "AI901-D-031",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Creating visual output",
+    "stem": "Where in the Foundry portal can you try image generation prompts without writing code?",
+    "options": [
+      "The quota page",
+      "The Speech Studio",
+      "The Images playground",
+      "The agents trace view"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Images can be generated through the Image generation API, the Responses API or the Images playground in the Foundry portal."
+  },
+  {
+    "id": "AI901-D-032",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lightweight extraction app",
+    "stem": "Which output formats does Content Understanding offer for its results?",
+    "options": [
+      "MP3 audio and SSML",
+      "Excel workbooks with macros and plain CSV files only",
+      "WEBP images and GIFs",
+      "Markdown for search and JSON matching your schema"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Content can be output as Markdown for search and retrieval or as structured JSON matching your defined schema for automation and analytics."
+  },
+  {
+    "id": "AI901-D-033",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Configuration parameters",
+    "stem": "A writer wants more varied, imaginative story ideas from a model. Which change helps most?",
+    "options": [
+      "Shorten the maximum output tokens",
+      "Remove the user prompt",
+      "Raise the temperature",
+      "Lower the temperature to 0"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A higher temperature makes the output more random and divergent, which suits creative work like fiction. Temperature can be set from 0 to 2."
+  },
+  {
+    "id": "AI901-D-034",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "Which Azure Speech feature turns text into a video of a photorealistic person speaking?",
+    "options": [
+      "Custom speech",
+      "Text to speech avatar",
+      "Language identification",
+      "Speech translation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Text to speech avatar converts text into a digital video of a photorealistic human speaking with a natural voice, in real time or as a batch."
+  },
+  {
+    "id": "AI901-D-035",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reliability and safety",
+    "stem": "An attacker types instructions that try to make a chatbot ignore its rules. Testing that the bot resists this supports which principle?",
+    "options": [
+      "Inclusiveness",
+      "Transparency",
+      "Reliability and safety",
+      "Fairness"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reliability and safety includes resisting harmful manipulation and responding safely to unexpected input. Testing against attempts to override the bot's rules checks exactly that."
+  },
+  {
+    "id": "AI901-D-036",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speech capabilities",
+    "stem": "A product team wants a branded voice that sounds unique to its company for its phone assistant. Which text to speech option fits?",
+    "options": [
+      "Batch transcription",
+      "A standard voice from the gallery",
+      "A custom voice",
+      "Language identification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Custom voice lets an organization create a voice that's recognizable and unique to its brand. Standard voices are ready-made and shared by everyone."
+  },
+  {
+    "id": "AI901-D-037",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "Which pip package does the current Foundry quickstart install for Python?",
+    "options": [
+      "azure-ai-projects",
+      "azure-storage-blob",
+      "azure-cognitiveservices-speech",
+      "azure-ai-generative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The quickstart installs azure-ai-projects (version 2.x), which uses the Foundry projects API. azure-ai-generative was one of the older packages the unified client replaced."
+  },
+  {
+    "id": "AI901-D-038",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Testing agents",
+    "stem": "What should you do in the playground before publishing an agent that uses an MCP server tool?",
+    "options": [
+      "Change the deployment to Developer",
+      "Test that the tool connects and returns what the agent needs",
+      "Remove the agent's instructions so each tool call uses fewer tokens",
+      "Delete the agent's earlier versions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft notes that MCP integrations can be exercised directly in the playground to check connectivity, permissions and behaviour before publishing."
+  },
+  {
+    "id": "AI901-D-039",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Creating visual output",
+    "stem": "Which parameter sets how many images an image generation request returns?",
+    "options": [
+      "output_format",
+      "n",
+      "size",
+      "quality"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "n sets the number of images, from 1 to 10. Size sets dimensions, quality sets low, medium or high, and output_format sets PNG or JPEG."
+  },
+  {
+    "id": "AI901-D-040",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Content Understanding",
+    "stem": "Which tool complements the Foundry portal for improving custom analyzers with data labeling, especially for teams moving from Document Intelligence?",
+    "options": [
+      "The agents playground",
+      "Speech Studio",
+      "Azure Machine Learning designer",
+      "Content Understanding Studio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Content Understanding Studio offers an experience optimized for improving analyzers, including labeling data, and eases the move from Document Intelligence."
+  },
+  {
+    "id": "AI901-D-041",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration parameters",
+    "stem": "Replies from a deployed model keep stopping mid-sentence. Which setting should be checked first?",
+    "options": [
+      "The maximum number of output tokens",
+      "The number of few-shot examples in the prompt",
+      "The deployment's region",
+      "The temperature"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the limit on output tokens is too low, the response is cut off. Microsoft's vision guide, for example, warns to set a max tokens value or the output will be cut off."
+  },
+  {
+    "id": "AI901-D-042",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spoken prompts",
+    "stem": "What does a voice-based prompt agent connect through for its real-time spoken sessions?",
+    "options": [
+      "An Azure Storage queue",
+      "Voice Live, over a WebSocket",
+      "The batch transcription REST API",
+      "The image generations endpoint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Voice-based prompt agents connect through Voice Live over a real-time WebSocket rather than sending individual text requests."
+  },
+  {
+    "id": "AI901-D-043",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Inclusiveness",
+    "stem": "A voice assistant is redesigned so it also works for people who stutter. Which principle does this support?",
+    "options": [
+      "Transparency",
+      "Inclusiveness",
+      "Privacy and security",
+      "Accountability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Inclusiveness means designing AI that empowers and engages everyone, including people whose speech, sight, hearing or mobility differ from the majority."
+  },
+  {
+    "id": "AI901-D-044",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Computer vision and image generation",
+    "stem": "A model labels each photo as \"cat\", \"dog\" or \"bird\" without saying where the animal is. Which computer vision task is this?",
+    "options": [
+      "Image generation",
+      "Optical character recognition",
+      "Image classification",
+      "Object detection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Image classification assigns a label to the image as a whole. Object detection also returns where each object is."
+  },
+  {
+    "id": "AI901-D-045",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Foundry SDK chat client",
+    "stem": "What is the format of a Foundry project endpoint?",
+    "options": [
+      "https://portal.azure.com/<resource-name>/<project-name>",
+      "https://<project-name>.azurewebsites.net/api/chat",
+      "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>",
+      "https://<resource-name>.openai.azure.com/openai/deployments/<project-name>"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The project endpoint is https://<resource-name>.services.ai.azure.com/api/projects/<project-name>. The others are App Service, portal and Blob Storage addresses."
+  },
+  {
+    "id": "AI901-D-046",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Publishing agents",
+    "stem": "What does publishing an agent give a client application?",
+    "options": [
+      "A lower token price",
+      "A new Azure subscription",
+      "A copy of the model's weights",
+      "A stable endpoint it can call"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Publishing promotes an agent to a managed resource with a stable endpoint that inherits the project's identity and access controls."
+  },
+  {
+    "id": "AI901-D-047",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Creating visual output",
+    "stem": "An image request is refused with a content_policy_violation error. What caused this?",
+    "options": [
+      "The deployment hit its default rate limit of five images a minute",
+      "The safety system filtered the prompt or the image",
+      "The prompt was written in lowercase",
+      "The deployment ran out of disk space"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Prompts and generated images pass through content moderation, and a blocked request returns content_policy_violation or a contentFilter error."
+  },
+  {
+    "id": "AI901-D-048",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Responsible extraction",
+    "stem": "An analysis succeeds but some generated field values are missing, with warnings in the response. What is a likely cause?",
+    "options": [
+      "Guardrails on the model deployment restricted field generation",
+      "The analyzer had no name",
+      "Confidence scores were turned on, which hides low scoring fields",
+      "The file was too small to read"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Content Understanding inherits guardrails from the Foundry model deployment. Guardrails can restrict field generation while keeping extracted content, so analysis can succeed with warnings."
+  },
+  {
+    "id": "AI901-D-049",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing a model",
+    "stem": "Microsoft says some classic prompt techniques, such as asking the model to think step by step, aren't recommended for which kind of model?",
+    "options": [
+      "Embedding models",
+      "Speech to text models",
+      "Reasoning models like gpt-5 and the o-series",
+      "Image generation models such as the gpt-image series"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft's prompt engineering guide notes its techniques aren't recommended for reasoning models like gpt-5 and o-series models, which reason internally."
+  },
+  {
+    "id": "AI901-D-050",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Spoken prompts",
+    "stem": "Why might a team choose the cascaded voice design over native speech-to-speech?",
+    "options": [
+      "It offers more text model and voice choices and more control",
+      "It needs no speech recognition step",
+      "It works without any model deployment",
+      "It always has lower end-to-end latency than a native realtime model"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cascaded design offers broader text-model and Azure voice choices and explicit control over transcription and turn detection, but each stage adds latency."
+  },
+  {
+    "id": "AI901-D-051",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Privacy and security",
+    "select": 2,
+    "stem": "Which two measures support the privacy and security principle for an AI solution? (Choose two.)",
+    "options": [
+      "Testing the model with many accents",
+      "Explaining each prediction to the user who received it",
+      "Restricting who can access the training data",
+      "Encrypting data in transit and at rest"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Controlling access to data and encrypting it in transit and at rest protect personal and business information. Explaining predictions is transparency, and testing many accents is inclusiveness."
+  },
+  {
+    "id": "AI901-D-052",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Information extraction",
+    "stem": "Which source can Content Understanding extract information from?",
+    "options": [
+      "Documents, images, audio and video",
+      "Only live phone calls",
+      "Only typed text files",
+      "Only scanned PDF documents and photos of forms"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Azure Content Understanding in Foundry Tools processes documents, images, video and audio into a user-defined output format."
+  },
+  {
+    "id": "AI901-D-053",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "System and user prompts",
+    "select": 2,
+    "stem": "Which two prompt practices help reduce made-up answers? (Choose two.)",
+    "options": [
+      "Allow the model to say it doesn't know",
+      "Supply grounding data for the model to answer from",
+      "Leave out the system message",
+      "Raise the temperature toward 2 so the model explores more answers"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Grounding data and giving the model an out, such as replying 'not found', both cut fabrication. A higher temperature adds randomness, and dropping the system message removes guidance."
+  },
+  {
+    "id": "AI901-D-054",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Agent client app",
+    "select": 2,
+    "stem": "Which two steps does a lightweight Python client take to chat with an existing agent? (Choose two.)",
+    "options": [
+      "Create a new Foundry resource for each user",
+      "Get an OpenAI client bound to the agent",
+      "Call responses.create with the user's input",
+      "Retrain the agent's model on the question"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "The sample gets a client with get_openai_client(agent_name=...) and sends input with responses.create, optionally in a conversation. Nothing is retrained or recreated per user."
+  },
+  {
+    "id": "AI901-D-055",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Creating visual output",
+    "select": 2,
+    "stem": "Which two operations can a gpt-image model perform? (Choose two.)",
+    "options": [
+      "Extract table data from a PDF",
+      "Edit an existing image using a prompt",
+      "Generate a new image from a text prompt",
+      "Transcribe the speech in a video and add captions"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "GPT-image models generate images from prompts and edit existing images, optionally with a mask. Transcription and table extraction are speech and information extraction tasks."
+  },
+  {
+    "id": "AI901-D-056",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Confidence and grounding",
+    "stem": "For each statement about confidence scores and grounding, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Low confidence fields can be routed to a person for review.",
+      "Grounding shows where a value came from in the source.",
+      "A confidence score of 0.98 means the value was certainly correct.",
+      "Grounding is only available for image generation."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Confidence scores estimate reliability from 0 to 1, so low ones go to review and high ones aren't a guarantee. Grounding traces values back to the source content."
+  },
+  {
+    "id": "AI901-D-057",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Choosing a model",
+    "stem": "Roughly how many models does the Foundry Models catalog offer, from providers such as Microsoft, OpenAI, Anthropic and Meta?",
+    "options": [
+      "Between 500 and 1,000",
+      "More than 10,000",
+      "About 50",
+      "Exactly 1,000"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft describes Foundry as giving access to more than 10,000 models from Microsoft, OpenAI, Anthropic, Meta and others through the Foundry Models catalog."
+  },
+  {
+    "id": "AI901-D-058",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Text analysis apps",
+    "stem": "For each statement about Azure Language, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Text analytics for health is a prebuilt feature that doesn't need a custom model.",
+      "Custom text classification lets you train a model on your own categories.",
+      "Key phrase extraction must be trained on labeled examples first.",
+      "Language detection needs a speech recording as its input."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Text analytics for health and key phrase extraction are preconfigured. Custom text classification is trained on your classes. Language detection works on text."
+  },
+  {
+    "id": "AI901-D-059",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Responsible AI principles",
+    "stem": "Match each concern to the responsible AI principle it falls under.",
+    "rows": [
+      "Customers can't tell why the system refused their application",
+      "Nobody in the company owns the decision to launch the model",
+      "Prompts sent to the model include customers' health records"
+    ],
+    "columns": [
+      "Transparency",
+      "Accountability",
+      "Privacy and security"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Not understanding a decision is a transparency issue. No owner for the launch is an accountability gap. Sensitive personal data in prompts is a privacy and security concern."
+  },
+  {
+    "id": "AI901-D-060",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "AI workloads",
+    "stem": "Match each scenario to the text analysis technique it needs.",
+    "rows": [
+      "Redact credit card and phone numbers from chat logs",
+      "Route each email to the support team that reads its language",
+      "Recap a two-hour meeting transcript in a few paragraphs"
+    ],
+    "columns": [
+      "PII detection",
+      "Language detection",
+      "Summarization"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Finding and redacting personal details is PII detection. Routing by language needs language detection. Condensing a long transcript is summarization."
+  },
+  {
+    "id": "AI901-D-061",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deploying a model",
+    "stem": "Microsoft Foundry was previously known by which names?",
+    "options": [
+      "Azure AI Hub and Foundry Studio",
+      "Azure Machine Learning Studio and Power Apps",
+      "Azure Cognitive Search and Synapse",
+      "Azure AI Studio and Azure AI Foundry"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Microsoft lists Azure AI Studio and Azure AI Foundry as the previous brand names of Microsoft Foundry. Azure AI Services became Foundry Tools."
+  },
+  {
+    "id": "AI901-D-062",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Agent types",
+    "stem": "Match each team to the way of building that fits it.",
+    "rows": [
+      "Wants a quick internal FAQ agent with nothing to host",
+      "Has a custom multi-agent framework to run in a container",
+      "Keeps the agent definition inside its own app code"
+    ],
+    "columns": [
+      "Prompt agent",
+      "Hosted agent",
+      "Responses API from own code"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Prompt agents need no code or infrastructure. Hosted agents run your own code as a container. Calling the Responses API directly builds an ephemeral agent defined in your app."
+  },
+  {
+    "id": "AI901-D-063",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Visual input",
+    "stem": "For each statement about sending images to a multimodal model, select Yes if it is true or No if it is false.",
+    "rows": [
+      "A single message can combine text and an image.",
+      "High detail processes extra 512x512 segments and uses more tokens.",
+      "Image input requires an image generation model.",
+      "Low detail always gives more accurate fine text reading than high."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Message content can mix text and images. High detail adds detailed 512x512 segments, each costing more tokens. Image input needs a vision-enabled model, not a generator, and low detail trades accuracy for speed."
+  },
+  {
+    "id": "AI901-D-064",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Field extraction",
+    "stem": "Match each field in a video analyzer to the method that produces it.",
+    "rows": [
+      "The type of chart shown: bar, line or pie",
+      "A one-paragraph description of each scene",
+      "Whether the speaker sounds calm or upset",
+      "A list of key moments in the presenter's own words"
+    ],
+    "columns": [
+      "Classify",
+      "Generate"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Classify chooses from a fixed set of categories, such as chart type or mood. Generate writes free values such as descriptions and summaries. Extract isn't available for video."
+  },
+  {
+    "id": "AI901-D-065",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Configuration parameters",
+    "stem": "For each statement about model settings, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Temperature can be set between 0 and 2.",
+      "A higher temperature makes output more focused.",
+      "The system message sets the model's behaviour for the conversation.",
+      "Top_p has no effect on how random the output is."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Temperature ranges from 0 to 2, and higher values make output more random. The system message holds instructions that shape behaviour. Top_p is another way to control randomness."
+  },
+  {
+    "id": "AI901-D-066",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Azure Speech in Foundry Tools",
+    "select": 2,
+    "stem": "Which two are ways an application can use Azure Speech? (Choose two.)",
+    "options": [
+      "The Content Understanding analyzer",
+      "REST APIs",
+      "The Speech SDK",
+      "The Foundry Models catalog"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Apps use Azure Speech through the Speech SDK, the Speech CLI or REST APIs. Content Understanding and the model catalog are other Foundry features."
+  },
+  {
+    "id": "AI901-D-067",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fairness",
+    "stem": "A team wants to check a hiring model for fairness before release. What should they compare?",
+    "options": [
+      "The model's total cost per thousand predictions",
+      "The model's speed on different hardware",
+      "The number of input features used in each version of the training data",
+      "Model outcomes and error rates across groups like gender and age"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A fairness assessment compares how a model performs and decides across sensitive groups. Speed, cost and feature counts say nothing about whether similar people are treated alike."
+  },
+  {
+    "id": "AI901-D-068",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Generative and agentic AI",
+    "stem": "A travel assistant searches flights, checks the user's calendar and then holds a booking. What makes this agentic rather than only generative?",
+    "options": [
+      "It writes its replies in fluent, natural-sounding language",
+      "It returns answers in under a second",
+      "It plans steps and calls tools to act for the user",
+      "It was trained on travel websites"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Generating natural language is shared by all chat models. Agentic AI adds reasoning over a goal and taking actions through tools such as search, calendars and booking APIs."
+  },
+  {
+    "id": "AI901-D-069",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "System and user prompts",
+    "stem": "For each statement about writing prompts, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Few-shot examples in a chat prompt are often written as sample user and assistant turns.",
+      "The order of information in a prompt can change the answer.",
+      "A clever prompt removes the need to check the model's answers.",
+      "Markdown or XML in a prompt confuses models trained on web content."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Few-shot examples are commonly given as sample turns after the system message, and order matters. Even good prompts need answers checked. Microsoft suggests Markdown or XML because models saw a lot of it."
+  },
+  {
+    "id": "AI901-D-070",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tracing and evaluation",
+    "stem": "Why would you run evaluations on an agent?",
+    "options": [
+      "To move the agent to another region",
+      "To give the agent more tools",
+      "To lower the price the project pays for every input and output token",
+      "To measure answer quality and catch regressions between versions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Evaluations measure an agent's quality and catch regressions, a step in the build, test, trace, evaluate, publish and monitor lifecycle."
+  },
+  {
+    "id": "AI901-D-071",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lightweight vision app",
+    "stem": "A shop app lets staff photograph a shelf and asks the model which products are out of stock. Which kind of model deployment does it need?",
+    "options": [
+      "A vision-enabled multimodal chat model",
+      "A speech synthesis voice",
+      "An image generation model such as GPT-Image-2",
+      "A text embedding model"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Answering questions about a photo needs a model that interprets visual input. An image generator creates pictures, and embedding models produce vectors."
+  },
+  {
+    "id": "AI901-D-072",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documents and forms",
+    "stem": "A tax firm wants one unified view of client data spread across many forms to prepare returns. Which Content Understanding feature helps without building a model from scratch?",
+    "options": [
+      "An industry-specific prebuilt analyzer",
+      "A custom neural voice",
+      "Language detection",
+      "A hosted agent container"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Content Understanding includes prebuilt analyzers for industry scenarios such as tax preparation, procurement documents and contract analysis."
+  },
+  {
+    "id": "AI901-D-073",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Deployment options",
+    "stem": "Match each requirement to the deployment type that fits it.",
+    "rows": [
+      "Lowest price and newest models, no residency rule",
+      "Reserved throughput with processing inside one Azure geography",
+      "Discounted overnight jobs processed inside the EU data zone"
+    ],
+    "columns": [
+      "Global Standard",
+      "Regional Provisioned",
+      "Data Zone Batch"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Global Standard is the default starting point. Regional Provisioned reserves PTUs within an Azure geography. Data Zone Batch gives batch savings with processing inside a data zone."
+  },
+  {
+    "id": "AI901-D-074",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "Match each scenario to the Azure Speech feature it needs.",
+    "rows": [
+      "Show live captions during a meeting",
+      "Let a tourist hear a guide's English in French",
+      "Score a learner reading a paragraph aloud"
+    ],
+    "columns": [
+      "Real-time transcription",
+      "Speech translation",
+      "Pronunciation assessment"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Live captions use real-time transcription. Hearing speech in another language is speech translation. Scoring accuracy and fluency is pronunciation assessment."
+  },
+  {
+    "id": "AI901-D-075",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transparency",
+    "stem": "A generative AI app writes product descriptions. Which practice best supports transparency for shoppers?",
+    "options": [
+      "Storing the descriptions in an encrypted database with access logs",
+      "Hiding the model name to protect trade secrets",
+      "Raising the temperature for more varied text",
+      "Labeling the descriptions as written with AI assistance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Being open that content was produced with AI helps people understand what they are reading. The other options are about trade secrets, output style and data protection."
+  },
+  {
+    "id": "AI901-D-076",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "AI workloads",
+    "stem": "For each statement about AI workloads, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Speech translation can produce translated speech as well as translated text.",
+      "Reading invoice totals from scanned files is an information extraction task.",
+      "Key phrase extraction writes a new summary in its own words.",
+      "Object detection is a speech workload."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Speech translation supports speech-to-speech and speech-to-text translation. Pulling fields from invoices is information extraction. Key phrase extraction lists existing phrases. Object detection is computer vision."
+  },
+  {
+    "id": "AI901-D-077",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deploying a model",
+    "stem": "Which new resource model replaced the hub plus Azure OpenAI plus Azure AI Services setup in Microsoft Foundry?",
+    "options": [
+      "A virtual machine running the model",
+      "A separate Azure subscription for each model",
+      "A single Foundry resource with projects",
+      "One storage account per model"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft describes the current resource model as a single Foundry resource with projects, which replaced the earlier hub plus Azure OpenAI plus Azure AI Services combination."
+  },
+  {
+    "id": "AI901-D-078",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Agent tools",
+    "stem": "For each statement about agent tools, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Web search lets an agent use current public information.",
+      "Custom functions can be added as agent tools.",
+      "File search runs Python code on uploaded files.",
+      "An agent can use only one tool in its lifetime."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "explanation": "Web search brings in current public information, and functions, OpenAPI specs and MCP servers add custom tools. Running code is code interpreter's job. An agent can have many tools."
+  },
+  {
+    "id": "AI901-D-079",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Creating visual output",
+    "stem": "Match each image request to the parameter that controls it.",
+    "rows": [
+      "Make the image 1536x1024",
+      "Use the high setting for a sharper result",
+      "Return a JPEG instead of a PNG"
+    ],
+    "columns": [
+      "size",
+      "quality",
+      "output_format"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "size sets the dimensions, quality sets low, medium or high, and output_format chooses PNG or JPEG."
+  },
+  {
+    "id": "AI901-D-080",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lightweight extraction app",
+    "stem": "An app needs extracted values plus a way to decide automatically which ones need a human check. Which analyzer setting turns on both confidence scores and grounding for documents?",
+    "options": [
+      "estimateFieldSourceAndConfidence",
+      "detail",
+      "enableSegment",
+      "output_format"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confidence scores and grounding are enabled with the estimateFieldSourceAndConfidence setting in document analyzers. enableSegment turns on segmentation."
+  },
+  {
+    "id": "AI901-D-081",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deployment options",
+    "stem": "Where may a Global Standard deployment process a prompt?",
+    "options": [
+      "Only in the region where the resource was created",
+      "Only inside the customer's data zone",
+      "Only on servers in the customer's own datacenter",
+      "In any Azure region where the model is deployed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Global deployment types route traffic across Azure's global infrastructure, so inferencing data may be processed in any Azure region. Data stored at rest still stays in the chosen geography."
+  },
+  {
+    "id": "AI901-D-082",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis apps",
+    "stem": "An app must sort incoming emails into the company's own categories such as Billing, Returns and Shipping. Which Azure Language feature fits?",
+    "options": [
+      "Custom text classification",
+      "Language detection",
+      "Entity linking",
+      "Prebuilt named entity recognition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Custom text classification trains a model to sort documents into classes you define. Prebuilt NER finds entities rather than classifying whole messages."
+  },
+  {
+    "id": "AI901-D-083",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Responsible AI principles",
+    "stem": "For each statement about responsible AI practices, select Yes if it is true or No if it is false.",
+    "rows": [
+      "Guardrails that block harmful content support reliability and safety.",
+      "Removing a human review step always improves accountability.",
+      "Explaining why a loan was declined supports transparency.",
+      "Collecting more personal data than needed supports privacy."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "Blocking harmful output keeps a system safe. Human review keeps people answerable, so removing it weakens accountability. Explaining decisions is transparency. Privacy favours collecting only the data a task needs."
+  },
+  {
+    "id": "AI901-D-084",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speech capabilities",
+    "stem": "A tool must work out which spoken language is used in each call before transcribing it. Which Azure Speech feature helps?",
+    "options": [
+      "Language identification",
+      "Speech synthesis markup",
+      "Pronunciation assessment",
+      "Custom voice"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Language identification compares spoken audio against a list of supported languages to find which is being spoken, on its own or alongside recognition and translation."
+  },
+  {
+    "id": "AI901-D-085",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Foundry SDK chat client",
+    "stem": "Match each piece of the Python quickstart to what it does.",
+    "rows": [
+      "Signs the app in with the identity from az login",
+      "Connects to the Foundry project at its endpoint",
+      "Sends the input to the model and returns a response"
+    ],
+    "columns": [
+      "AIProjectClient",
+      "DefaultAzureCredential",
+      "responses.create"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ],
+    "explanation": "DefaultAzureCredential supplies the identity, AIProjectClient connects to the project endpoint, and responses.create on the OpenAI client sends the prompt to the model."
+  },
+  {
+    "id": "AI901-D-086",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "Which feature lets each agent reach other resources securely without sharing credentials?",
+    "options": [
+      "A public storage account",
+      "A Microsoft Entra agent identity",
+      "A shared API key in the instructions",
+      "A custom neural voice"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each agent can have a dedicated Microsoft Entra identity for scoped access to resources and APIs without sharing credentials."
+  },
+  {
+    "id": "AI901-D-087",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lightweight vision app",
+    "stem": "Which authentication approach does Microsoft recommend for an image app calling Foundry, instead of API keys?",
+    "options": [
+      "A shared password in the prompt",
+      "Microsoft Entra ID, for example a managed identity",
+      "Anonymous access with no credentials",
+      "An API key written into the app's source code for convenience"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft recommends Entra ID with managed identities or keyless auth. If keys are used, store them in Azure Key Vault and never hard-code them."
+  },
+  {
+    "id": "AI901-D-088",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Content Understanding",
+    "select": 2,
+    "stem": "Which two are common uses of Content Understanding? (Choose two.)",
+    "options": [
+      "Generating background music for videos",
+      "Automating invoice and claims processing",
+      "Training a custom neural voice for a brand assistant",
+      "Ingesting content into a search index for RAG"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Microsoft lists intelligent document processing, agentic apps, search and RAG ingestion, RPA and analytics as uses. Music and custom voices are not Content Understanding tasks."
+  },
+  {
+    "id": "AI901-D-089",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "How generative AI models work",
+    "stem": "Why can the same prompt give a slightly different answer each time?",
+    "options": [
+      "The model samples from likely next tokens, so randomness is built in",
+      "The prompt is translated before it reaches the model",
+      "Azure sends each request to a different randomly chosen model in the catalog",
+      "The model's training data changes between requests"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Generation samples from probable next tokens, and settings like temperature control how much randomness is used. The model itself does not retrain between calls."
+  },
+  {
+    "id": "AI901-D-090",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spoken prompts",
+    "stem": "A user speaks a question into a mobile app that sends the audio to a deployed multimodal model. What must that model support?",
+    "options": [
+      "Audio as an input type",
+      "Image generation",
+      "Batch deployment only",
+      "Text embeddings only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "To respond to spoken prompts directly, the deployed model must accept audio input. Otherwise the app has to transcribe the speech to text first."
+  },
+  {
+    "id": "AI901-D-091",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Rai",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reliability and safety",
+    "stem": "Which practice most directly supports the reliability and safety principle?",
+    "options": [
+      "Letting users opt out of sharing their data with the model",
+      "Offering the app in more languages",
+      "Publishing the names of the developers",
+      "Testing the system on edge cases before release"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Reliability and safety is about the system working as designed and failing safely. Edge case testing finds where it breaks. Naming developers, adding languages and data opt-outs serve other principles."
+  },
+  {
+    "id": "AI901-D-092",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Workloads",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Text analysis techniques",
+    "stem": "A clinic needs to extract medications, dosages and diagnoses from doctors' notes without training its own model. Which Azure Language feature fits?",
+    "options": [
+      "Entity linking",
+      "Conversational language understanding",
+      "Custom text classification",
+      "Text analytics for health"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Text analytics for health extracts and labels medical information from unstructured clinical text with a prebuilt model. The other features either need training or don't target medical terms."
+  },
+  {
+    "id": "AI901-D-093",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901GenApps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System and user prompts",
+    "stem": "What does the system message in a chat prompt usually contain?",
+    "options": [
+      "The project's endpoint, API key and deployment name",
+      "The user's latest question",
+      "Instructions on how the assistant should behave",
+      "The model's previous reply"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The system message sets the assistant's role, rules and tone for the conversation. User and assistant messages carry the turns themselves."
+  },
+  {
+    "id": "AI901-D-094",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Agents",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Agent types",
+    "stem": "Which agent type does Microsoft suggest for building your first agent?",
+    "options": [
+      "A voice-based telephony agent",
+      "A hosted agent",
+      "A prompt agent",
+      "A multi-agent workflow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft's tip for a first agent is to start with a prompt agent, in the portal or with code, and move to hosted agents when you need your own code."
+  },
+  {
+    "id": "AI901-D-095",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Vision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual input",
+    "stem": "A vision-enabled model's reply about an image stops halfway. What should the developer set?",
+    "options": [
+      "A higher number of images",
+      "A different image format",
+      "A higher max tokens value for the response",
+      "A lower image detail level so the reply is shorter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Microsoft's vision guide warns to set max_tokens or max_completion_tokens, or the output will be cut off."
+  },
+  {
+    "id": "AI901-D-096",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Extract",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Content Understanding",
+    "stem": "Where do the generative models that power Content Understanding's field extraction come from?",
+    "options": [
+      "A model hidden inside each PDF",
+      "A model downloaded to the user's phone",
+      "Your own Foundry model deployments",
+      "The Speech service's neural voices"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "You bring your own deployments of supported generative and embedding models in Foundry, and Content Understanding uses them for field extraction and figure analysis."
+  },
+  {
+    "id": "AI901-D-097",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901Models",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Embeddings",
+    "stem": "Which statement about embeddings is true?",
+    "options": [
+      "Embeddings store a compressed copy of the original text so it can be read back",
+      "Embeddings are a type of image file",
+      "Embeddings work only for English text",
+      "Texts with similar meaning have vectors that are close together"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An embedding is a list of numbers that captures meaning. Similar texts land near each other, which powers semantic search and retrieval. The original text can't be read back from the vector."
+  },
+  {
+    "id": "AI901-D-098",
+    "section": "ai901",
+    "test": 0,
+    "module": 1,
+    "domain": "ai901TextSpeech",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Azure Speech in Foundry Tools",
+    "stem": "Which Microsoft product features use Azure Speech, according to Microsoft?",
+    "options": [
+      "Windows Update, Defender scans and BitLocker",
+      "Teams captioning, Office dictation and Edge Read Aloud",
+      "Excel formula suggestions, Outlook mail rules and OneNote tags",
+      "Xbox achievements, Bing Maps and Paint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Microsoft says it uses Azure Speech for captioning in Microsoft Teams, dictation in Office 365 and Read Aloud in the Microsoft Edge browser."
+  }
+]

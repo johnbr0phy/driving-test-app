@@ -146,4 +146,5 @@ export const BANK_SIZES: Record<string, number> = {
   sscp: 260,
   servicenowcsa: 200,
   cobit: 195,
+  ai901: 198,
 };

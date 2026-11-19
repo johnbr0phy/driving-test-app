@@ -1,0 +1,19 @@
+overall 150/200 (75%), ceiling 82%
+  K: 46/53 right (87%)
+  S: 19/21 right (90%)
+  G: 85/126 right (67%)
+  ciAssessPlan: 10/12
+  ciCommunication: 13/16
+  ciCurriculum: 16/24
+  ciEnvironment: 15/20
+  ciEvaluation: 9/12
+  ciLearners: 9/16
+  ciMaterials: 9/12
+  ciMethods: 14/20
+  ciObstacles: 11/12
+  ciProfessional: 20/28
+  ciSafety: 19/20
+  ciTime: 5/8
+surface-cue hits (19): CINST-COM-001, CINST-COM-002, CINST-COM-003, CINST-COM-009, CINST-CUR-018, CINST-CUR-020, CINST-ENV-010, CINST-ENV-011, CINST-ENV-013, CINST-EVL-007, CINST-EVL-011, CINST-MTH-002, CINST-MTH-017, CINST-MTH-019, CINST-OBS-002, CINST-OBS-007, CINST-OBS-008, CINST-OBS-009, CINST-OBS-011
+no confirm.json: counting every tagged hit; ask a second reviewer to confirm each one
+FAIL: surface-cue hits 19 > 3% of items; surface-cue picks hit 19/21, above 40%

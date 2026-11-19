@@ -1460,16 +1460,16 @@
     "skill": "Continuity and differentiability",
     "stem": "$f(x) = \\frac{x^2 - 9}{x - 3}$ for $x \\neq 3$ and $f(3) = k$. For which k is f continuous at $x = 3$?",
     "options": [
+      "-3",
       "0",
       "3",
-      "6",
-      "9"
+      "6"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "For $x \\neq 3$, $f(x) = x + 3$, so $\\lim_{x \\to 3} f(x) = 6$ and continuity needs $k = 6$. 9 substitutes into $x^2$ alone, and 0 comes from putting $x = 3$ into the numerator."
+    "explanation": "For $x \\neq 3$, $f(x) = x + 3$, so $\\lim_{x \\to 3} f(x) = 6$ and continuity needs $k = 6$. 3 keeps only the $x$ of $x + 3$, 0 comes from putting $x = 3$ into the numerator, and -3 factors the numerator as $(x - 3)(x - 3)$ wrongly."
   },
   {
     "id": "KCET-T1-069",
@@ -1592,14 +1592,14 @@
     "options": [
       "-10",
       "-1/10",
-      "1/10",
-      "10"
+      "-1/12",
+      "1/10"
     ],
     "correct": [
       1
     ],
     "lockedOrder": true,
-    "explanation": "The tangent slope is $y' = 3x^2 - 2 = 10$ at $x = 2$. The normal is perpendicular, so its slope is $-\\frac{1}{10}$. 10 is the tangent slope, and 1/10 forgets the minus sign."
+    "explanation": "The tangent slope is $y' = 3x^2 - 2 = 10$ at $x = 2$. The normal is perpendicular, so its slope is $-\\frac{1}{10}$. -10 is minus the tangent slope instead of its negative reciprocal, -1/12 forgets the $-2$ in $y'$, and 1/10 forgets the minus sign."
   },
   {
     "id": "KCET-T1-075",
@@ -1614,14 +1614,14 @@
     "options": [
       "3/16",
       "7/16",
-      "3/4",
-      "4/3"
+      "9/16",
+      "3/4"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$c^2 = a^2 - b^2 = 16 - 7 = 9$, so $c = 3$ and $e = \\frac{c}{a} = \\frac{3}{4}$. 4/3 turns the ratio upside down, which is impossible since an ellipse has $e < 1$."
+    "explanation": "$c^2 = a^2 - b^2 = 16 - 7 = 9$, so $c = 3$ and $e = \\frac{c}{a} = \\frac{3}{4}$. 9/16 forgets the square root ($c^2/a^2$), 7/16 is $b^2/a^2$, and 3/16 divides c by $a^2$."
   },
   {
     "id": "KCET-T1-076",
@@ -1656,16 +1656,16 @@
     "skill": "Application of derivatives",
     "stem": "What is the minimum value of $x + \\frac{9}{x}$ for $x > 0$?",
     "options": [
-      "3",
       "6",
-      "9",
-      "10"
+      "10",
+      "12",
+      "18"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$f'(x) = 1 - \\frac{9}{x^2} = 0$ at $x = 3$, and $f''(3) > 0$, so the minimum is $3 + 3 = 6$. 3 is where the minimum occurs, and 10 is the value at $x = 1$."
+    "explanation": "$f'(x) = 1 - \\frac{9}{x^2} = 0$ at $x = 3$, and $f''(3) > 0$, so the minimum is $3 + 3 = 6$. 10 is the value at $x = 1$ (or $x = 9$), 12 is the value at $x = 3/4$, and 18 wrongly applies AM-GM as $2 \\times 9$."
   },
   {
     "id": "KCET-T1-078",
@@ -1808,16 +1808,16 @@
     "skill": "Three dimensional geometry",
     "stem": "What is the cosine of the angle between two lines with direction ratios 1, 2, 2 and 2, -1, 2?",
     "options": [
+      "4/81",
       "2/9",
       "1/3",
-      "4/9",
-      "8/9"
+      "4/9"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$\\cos\\theta = \\frac{|1(2) + 2(-1) + 2(2)|}{3 \\times 3} = \\frac{4}{9}$. 8/9 drops the minus sign on the $-1$, adding 2 where it should subtract."
+    "explanation": "$\\cos\\theta = \\frac{|1(2) + 2(-1) + 2(2)|}{3 \\times 3} = \\frac{4}{9}$. 4/81 divides by the squares of the magnitudes, and 2/9 halves the dot product."
   },
   {
     "id": "KCET-T1-085",
@@ -1896,16 +1896,16 @@
     "skill": "Introduction to 3D geometry",
     "stem": "What is the distance between the points (1, -2, 3) and (4, 2, 3)?",
     "options": [
-      "1",
       "5",
       "7",
+      "9",
       "25"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\sqrt{(4 - 1)^2 + (2 + 2)^2 + 0^2} = \\sqrt{9 + 16} = 5$. 25 forgets the square root, and 7 adds the differences 3 and 4 directly."
+    "explanation": "$\\sqrt{(4 - 1)^2 + (2 + 2)^2 + 0^2} = \\sqrt{9 + 16} = 5$. 25 forgets the square root, 7 adds the differences 3 and 4 directly, and 9 keeps only the first squared difference."
   },
   {
     "id": "KCET-T1-089",
@@ -3257,16 +3257,16 @@
     "skill": "Limits and derivatives",
     "stem": "What is $\\lim_{x \\to 2} \\frac{x^4 - 16}{x - 2}$?",
     "options": [
+      "4",
       "8",
       "16",
-      "32",
-      "64"
+      "32"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$\\lim_{x \\to a} \\frac{x^n - a^n}{x - a} = na^{n - 1} = 4 \\times 2^3 = 32$. 16 is $a^n$ itself, 8 is $a^{n-1}$ without the $n$, and 64 is $na^n$."
+    "explanation": "$\\lim_{x \\to a} \\frac{x^n - a^n}{x - a} = na^{n - 1} = 4 \\times 2^3 = 32$. 16 is $a^n$ itself, 8 is $a^{n-1}$ without the $n$, and 4 is $n$ alone."
   },
   {
     "id": "KCET-T2-062",
@@ -3302,15 +3302,15 @@
     "stem": "If $\\sin x = \\frac{3}{5}$ and x lies in the second quadrant, what is $\\tan x$?",
     "options": [
       "-4/3",
+      "-5/4",
       "-4/5",
-      "-3/4",
-      "3/4"
+      "-3/4"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$\\cos x = -\\frac{4}{5}$ in the second quadrant, so $\\tan x = \\frac{3/5}{-4/5} = -\\frac{3}{4}$. 3/4 ignores the quadrant sign, and $-\\frac{4}{5}$ is $\\cos x$."
+    "explanation": "$\\cos x = -\\frac{4}{5}$ in the second quadrant, so $\\tan x = \\frac{3/5}{-4/5} = -\\frac{3}{4}$. $-\\frac{4}{3}$ is $\\cot x$, $-\\frac{5}{4}$ is $\\sec x$, and $-\\frac{4}{5}$ is $\\cos x$."
   },
   {
     "id": "KCET-T2-064",
@@ -3410,16 +3410,16 @@
     "skill": "Continuity and differentiability",
     "stem": "$f(x) = kx + 1$ for $x \\le 2$ and $f(x) = 3x - 1$ for $x > 2$. For which k is f continuous at $x = 2$?",
     "options": [
-      "1",
       "2",
       "5/2",
-      "3"
+      "3",
+      "5"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "The left value is $2k + 1$ and the right limit is $3(2) - 1 = 5$. Setting $2k + 1 = 5$ gives $k = 2$. 5/2 solves $2k = 5$ and forgets the $+1$, and 3 just copies the slope of the right piece."
+    "explanation": "The left value is $2k + 1$ and the right limit is $3(2) - 1 = 5$. Setting $2k + 1 = 5$ gives $k = 2$. 5/2 solves $2k = 5$ and forgets the $+1$, 3 just copies the slope of the right piece, and 5 is the common value at $x = 2$, not k."
   },
   {
     "id": "KCET-T2-069",
@@ -3735,15 +3735,15 @@
     "stem": "What is $\\int_0^{\\pi} |\\cos x|\\,dx$?",
     "options": [
       "0",
+      "1/2",
       "1",
-      "2",
-      "4"
+      "2"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "$|\\cos x|$ is symmetric about $\\frac{\\pi}{2}$, so the integral is $2\\int_0^{\\pi/2}\\cos x\\,dx = 2 \\times 1 = 2$. 0 ignores the modulus, so the positive and negative halves cancel."
+    "explanation": "$|\\cos x|$ is symmetric about $\\frac{\\pi}{2}$, so the integral is $2\\int_0^{\\pi/2}\\cos x\\,dx = 2 \\times 1 = 2$. 0 ignores the modulus, so the positive and negative halves cancel, and 1 integrates only over $[0, \\frac{\\pi}{2}]$."
   },
   {
     "id": "KCET-T2-084",
@@ -3756,16 +3756,16 @@
     "skill": "Vector algebra",
     "stem": "What is the area of the parallelogram whose adjacent sides are $4\\hat{i} + \\hat{j}$ and $\\hat{i} + 3\\hat{j}$?",
     "options": [
+      "1",
       "11/2",
       "7",
-      "11",
-      "13"
+      "11"
     ],
     "correct": [
-      2
+      3
     ],
     "lockedOrder": true,
-    "explanation": "The cross product is $(4 \\times 3 - 1 \\times 1)\\hat{k} = 11\\hat{k}$, so the area is 11. 11/2 is the area of the triangle on those sides, and 7 is the dot product."
+    "explanation": "The cross product is $(4 \\times 3 - 1 \\times 1)\\hat{k} = 11\\hat{k}$, so the area is 11. 11/2 is the area of the triangle on those sides, 7 is the dot product, and 1 pairs the components the wrong way, $4 \\times 1 - 1 \\times 3$."
   },
   {
     "id": "KCET-T2-085",
@@ -4862,14 +4862,14 @@
     "options": [
       "$\\frac{\\pi}{3}$",
       "$\\frac{2\\pi}{3}$",
-      "$2\\pi$",
+      "$\\frac{3\\pi}{2}$",
       "$6\\pi$"
     ],
     "correct": [
       1
     ],
     "lockedOrder": true,
-    "explanation": "Both terms repeat every $\\frac{2\\pi}{3}$, so the sum does too. $6\\pi$ multiplies the period by 3 instead of dividing, and $\\frac{\\pi}{3}$ halves it as for $\\sin^2$."
+    "explanation": "Both terms repeat every $\\frac{2\\pi}{3}$, so the sum does too. $6\\pi$ multiplies the period by 3 instead of dividing, $\\frac{3\\pi}{2}$ inverts the ratio, and $\\frac{\\pi}{3}$ halves it as for $\\sin^2$."
   },
   {
     "id": "KCET-D-046",
@@ -4946,7 +4946,7 @@
     "skill": "Inverse trigonometric functions",
     "stem": "What is the domain of $\\sin^{-1}(2x)$?",
     "options": [
-      "$\\left[0, \\frac{1}{2}\\right]$",
+      "$\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right]$",
       "$[-1, 1]$",
       "$\\left[-\\frac{1}{2}, \\frac{1}{2}\\right]$",
       "$[-2, 2]$"
@@ -4954,7 +4954,7 @@
     "correct": [
       2
     ],
-    "explanation": "$\\sin^{-1}$ needs its input in $[-1, 1]$, so $-1 \\le 2x \\le 1$, giving $-\\frac{1}{2} \\le x \\le \\frac{1}{2}$. $[-2, 2]$ multiplies the bounds by 2 instead of dividing."
+    "explanation": "$\\sin^{-1}$ needs its input in $[-1, 1]$, so $-1 \\le 2x \\le 1$, giving $-\\frac{1}{2} \\le x \\le \\frac{1}{2}$. $[-2, 2]$ multiplies the bounds by 2 instead of dividing, and $\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right]$ halves the range of $\\sin^{-1}$, not its domain."
   },
   {
     "id": "KCET-D-050",
@@ -5032,16 +5032,16 @@
     "skill": "Straight lines",
     "stem": "What is the tangent of the acute angle between two lines with slopes 1 and 2?",
     "options": [
-      "-1/3",
       "1/3",
+      "1/2",
       "1",
       "3"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\tan\\theta = \\left|\\frac{m_2 - m_1}{1 + m_1 m_2}\\right| = \\frac{1}{3}$. 3 inverts the formula, 1 leaves out the denominator, and $-\\frac{1}{3}$ drops the modulus, but an acute angle has a positive tangent."
+    "explanation": "$\\tan\\theta = \\left|\\frac{m_2 - m_1}{1 + m_1 m_2}\\right| = \\frac{1}{3}$. 3 inverts the formula, 1 leaves out the denominator, and 1/2 divides by $1 + m_1$ only."
   },
   {
     "id": "KCET-D-054",
@@ -5098,16 +5098,16 @@
     "skill": "Continuity and differentiability",
     "stem": "For $f(x) = x^2$ on $[1, 3]$, which c satisfies the mean value theorem?",
     "options": [
-      "3/2",
       "2",
       "5/2",
+      "3",
       "4"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\frac{f(3) - f(1)}{3 - 1} = \\frac{9 - 1}{2} = 4$, and $f'(c) = 2c = 4$ gives $c = 2$. 4 is the slope of the chord, not the point c."
+    "explanation": "$\\frac{f(3) - f(1)}{3 - 1} = \\frac{9 - 1}{2} = 4$, and $f'(c) = 2c = 4$ gives $c = 2$. 4 is the slope of the chord, not the point c, and 3 is an endpoint, where the theorem never places c."
   },
   {
     "id": "KCET-D-057",
@@ -5186,16 +5186,16 @@
     "skill": "Integrals",
     "stem": "What is $\\int_0^2 (3x^2 + 1)\\,dx$?",
     "options": [
-      "8",
       "10",
       "12",
-      "14"
+      "13",
+      "26"
     ],
     "correct": [
-      1
+      0
     ],
     "lockedOrder": true,
-    "explanation": "$\\left[x^3 + x\\right]_0^2 = 8 + 2 = 10$. 8 leaves out $\\int_0^2 1\\,dx = 2$, and 12 is the derivative $6x$ at $x = 2$, found by differentiating instead of integrating."
+    "explanation": "$\\left[x^3 + x\\right]_0^2 = 8 + 2 = 10$. 12 is the derivative $6x$ at $x = 2$, 13 is the integrand at $x = 2$, and 26 integrates $3x^2$ as $3x^3$."
   },
   {
     "id": "KCET-D-061",

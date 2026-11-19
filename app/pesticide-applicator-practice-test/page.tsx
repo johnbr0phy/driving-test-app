@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How long is the core exam and what score do I need?",
-    a: "Each certifying authority sets its own number of questions, time limit and passing score, so check your state lead agency. Federal rules set the conditions: the exam is written and proctored, candidates show government-issued photo ID, only reference materials the agency provides may be used, and commercial applicators must be at least 18. Tigertest uses 70% as a readiness line.",
+    a: "Each certifying authority sets its own number of questions, time limit and passing score, so check your state lead agency. Federal rules set the conditions: the exam is written and proctored, candidates show photo ID (government-issued or another form the agency accepts), only reference materials the agency approves may be used, and commercial applicators must be at least 18. Tigertest uses 70% as a readiness line.",
   },
   {
     q: "How long does pesticide applicator certification last?",
@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Is the core exam the same for private and commercial applicators?",
-    a: "Not exactly. Commercial applicators pass the core exam plus a category exam for each type of work. Private applicators, who use restricted use pesticides to produce agricultural commodities on land they own, rent or manage, are certified under a general private applicator standard that covers much the same core knowledge. States run both, and many states write their own private applicator exams.",
+    a: "Not exactly. Commercial applicators pass the core exam plus a category exam for each type of work. Private applicators, who use restricted use pesticides to produce agricultural commodities on property they or their employer own or rent, are certified under a general private applicator standard that covers much the same core knowledge. States run both, and many states write their own private applicator exams.",
   },
   {
     q: "Are these the real exam questions?",

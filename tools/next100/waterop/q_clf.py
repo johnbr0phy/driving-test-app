@@ -90,7 +90,7 @@ Q = [
      "Fouling", ["Breached", "Overcleaned", "Underloaded"],
      "As foulants build up, more pressure is needed to push the same flow through, so TMP rises until the membrane is backwashed or cleaned. A breach would lower resistance, not raise it."),
     ("Dissolved iron and manganese are usually removed by:",
-     "Oxidize, then filter", ["Add ammonia, then settle", "Add fluoride, then settle", "Add acid, then store"],
+     "Oxidation, then filtration", ["Ammonia, then settling", "Fluoride, then settling", "Acid, then storage"],
      "Oxidants such as chlorine, permanganate or air turn dissolved iron and manganese into particles that settle or are caught on filters."),
     ("Which oxidant is often fed ahead of filters to remove manganese?",
      "Potassium permanganate", ["Sodium hexametaphosphate", "Sodium bicarbonate", "Aluminum sulfate"],

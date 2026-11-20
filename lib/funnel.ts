@@ -15,6 +15,10 @@ import { isInternalBrowser } from "@/lib/internal";
 //                arriving with a ?state= link from a state landing)
 //   dmv_state    a state chosen in that picker; dmv_picker minus dmv_state is
 //                the browsers that met the picker and never chose a state
+//   dashboard    first view of any dashboard (DMV, v1, v2, quiz), where people
+//                see the steps they turn green; also counted by the day of the
+//                browser's first visit (dashboard_by_visit), so /admin can
+//                chart the share of each day's new visitors who ever got there
 //   signup       account created; also stamps signupOrigins/{uid} with
 //                whether it practiced first and the first visit's source and
 //                landing page (kept from the visit step in localStorage)
@@ -22,7 +26,7 @@ import { isInternalBrowser } from "@/lib/internal";
 // Browsers that block storage count on every page load; that's rare enough to
 // ignore, and the alternative (no dedupe) is far worse.
 
-export type FunnelStep = "visit" | "answered" | "signup_view" | "dmv_picker" | "dmv_state" | "signup";
+export type FunnelStep = "visit" | "answered" | "signup_view" | "dmv_picker" | "dmv_state" | "dashboard" | "signup";
 
 // Where a first visit came from, so the /admin Growth tab can show how many new visitors
 // AI answer engines send. Read from utm_source first (ChatGPT tags its links
@@ -132,6 +136,21 @@ function hasFlag(step: FunnelStep): boolean {
   }
 }
 
+/**
+ * UTC day of this browser's first visit, from the visit step's flag. No flag
+ * yet means the visit is being counted right now (a dashboard's effect runs
+ * before the visit effect in Providers on a first page load), so today.
+ */
+function firstVisitDay(): string | undefined {
+  try {
+    const at = localStorage.getItem(FLAG_PREFIX + "visit");
+    if (at && /^\d{4}-\d{2}-\d{2}/.test(at)) return at.slice(0, 10);
+    return new Date().toISOString().slice(0, 10);
+  } catch {
+    return undefined;
+  }
+}
+
 function setFlag(step: FunnelStep) {
   try {
     localStorage.setItem(FLAG_PREFIX + step, new Date().toISOString());
@@ -147,6 +166,7 @@ export function trackFunnelStep(step: Exclude<FunnelStep, "signup">) {
   // A first answer carries the first visit's landing page, for the funnel by
   // landing page on /admin (lib/funnelLanding.ts).
   if (step === "answered") return void post({ step, landing: readFirstVisit()?.landing });
+  if (step === "dashboard") return void post({ step, visitDay: firstVisitDay() });
   if (step !== "visit") return void post({ step });
   const source = visitSource();
   // The path only, never the query string, which can carry personal data.
@@ -164,7 +184,7 @@ export function trackFunnelSignup() {
   void post({ step: "signup", triedFirst: hasFlag("answered"), source: firstVisit?.source, landing: firstVisit?.landing });
 }
 
-async function post(body: { step: FunnelStep; triedFirst?: boolean; source?: VisitSource; deep?: boolean; landing?: string }) {
+async function post(body: { step: FunnelStep; visitDay?: string; triedFirst?: boolean; source?: VisitSource; deep?: boolean; landing?: string }) {
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     const user = auth.currentUser;

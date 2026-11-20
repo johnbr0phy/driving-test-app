@@ -20,7 +20,7 @@ Q = [
  "Collecting payments due", ["Valuing the mortgaged home", "Advising the borrower to apply", "Arranging the buildings cover"],
  "Article 61(3)(b) defines administering as notifying the borrower of rate or payment changes and taking steps to collect or recover payments due."),
 ("Under the MCD Order 2015, a buy-to-let mortgage contract requires that the property:",
- "Is never home to the borrower or family", ["Is let to a company tenant only", "Is lived in by a relative only", "Is let to tenants for at least five years"],
+ "Is never home to the borrower or family", ["Is let under an assured shorthold tenancy", "Is let to tenants for at least six months", "Is let at a rent covering the payments"],
  "Article 4 defines it as a loan on land that cannot at any time be occupied as a dwelling by the borrower or a related person, and is to be let under a rental agreement."),
 ("At an unconditional property auction, contracts are exchanged:",
  "When the hammer falls", ["When the deposit clears", "When the survey is received", "When the mortgage offer issues"],

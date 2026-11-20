@@ -46,6 +46,6 @@ Q = [
  "At least once a calendar year", ["At least once every quarter", "At least once every three years", "Only after a rise in arrears"],
  "MCOB 11.6.24 requires review at least once per calendar year, by internal audit where the firm has that function."),
 ("For an execution-only rate switch with no extra borrowing, MCOB 4.8A.10 requires the firm to present:",
- "All products the customer is eligible for", ["Only its three cheapest products", "The product with the lowest fee", "Products from every other lender on the market"],
+ "All products the customer is eligible for", ["All products the firm offers new customers", "All products of every lender in the market", "All products a broker would recommend"],
  "MCOB 4.8A.10(1)(b) lets a rate switch proceed execution-only only if the firm has presented all products it offers for which the customer is eligible."),
 ]

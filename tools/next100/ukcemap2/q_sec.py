@@ -7,7 +7,7 @@ Q = [
  "In writing and signed", ["Made in front of a judge", "Witnessed by two people", "Registered at the Land Registry"],
  "Statute of Frauds 1677 s4 requires a guarantee, or a note of it, in writing and signed by the guarantor or someone they authorise."),
 ("For a legal assignment of a life policy to a lender, written notice must be given to:",
- "The insurance company", ["The policyholder's bank", "HM Land Registry", "The policyholder's employer"],
+ "The insurance company", ["The lender's conveyancer", "HM Land Registry", "The Financial Conduct Authority"],
  "LPA 1925 s136 makes an assignment effective in law from express written notice to the debtor, here the insurer who will pay the claim."),
 ("Under LPA 1925 s136, a legal assignment of a policy must be:",
  "Absolute and in writing", ["Verbal and witnessed", "Registered with the FCA", "Approved by a court"],

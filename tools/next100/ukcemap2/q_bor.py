@@ -22,7 +22,7 @@ Q = [
  "Credit-impaired", ["High net worth", "A mortgage professional", "A portfolio landlord"],
  "Recent arrears and court judgments mark a credit-impaired customer, who may need a specialist lender. MCOB has extra rules where such a borrower consolidates debt."),
 ("For a self-employed applicant, MCOB 11.6.9 says a lender may consider:",
- "Income projections in a credible plan", ["The applicant's own income estimate", "Last year's turnover before costs", "Expected growth in the home's market value"],
+ "Projected income in a business plan", ["Turnover before any costs are deducted", "Income stated in a signed declaration", "Projected rise in the property's value"],
  "MCOB 11.6.9(3) allows projections of future income where they form part of a credible business plan. Self-certified income and equity are not allowed."),
 ("A loan to trustees is a regulated mortgage contract only if the home is used as a dwelling by:",
  "A beneficiary or related person", ["The trustees in their own right", "Any tenant of the trust", "The trust's solicitor"],

@@ -31,7 +31,7 @@ Q = [
  "Falls", ["Rises", "Stays the same", "Doubles"],
  "A lease is a wasting asset: with fewer years left, the right to occupy is worth less and some lenders will not lend on it."),
 ("A lender making a residential mortgage on a home now let to tenants will normally require:",
- "Vacant possession on completion", ["A longer tenancy agreement", "A rent guarantee from the agent", "A second valuer's opinion"],
+ "Vacant possession on completion", ["Tenancy renewed on completion", "Rent paid up to date on completion", "Agent's letting report on completion"],
  "A residential lender wants the borrower to live there, and the security is worth more and easier to sell with vacant possession."),
 ("Why might a lender be wary of a flat above a shop?",
  "Mixed use can limit resale demand", ["Shops always pay higher stamp duty", "Such flats cannot be insured", "Such flats cannot be leasehold"],

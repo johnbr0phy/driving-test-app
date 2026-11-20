@@ -130,7 +130,7 @@ export default function BcSecurityGuardLandingPage() {
           <ExamLandingHero
             dashboardHref="/bc-security-guard/dashboard"
             shortName="BST"
-            subtitle="200 original questions for the BC Basic Security Training (BST) exam: the Security Services Act, arrest and use of force, BC's Trespass Act, the Code of Conduct and privacy, reports and personal safety. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 BC BST questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cabcguard-mobile.png", desktop: "/landing/cabcguard-desktop.png" }}
           />
         </div>

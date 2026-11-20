@@ -54,7 +54,7 @@ export default function CdmLandingPage() {
       <div className="absolute inset-0 bg-gradient-to-b from-brand-light to-white dark:to-transparent pointer-events-none" />
       <div className="relative max-w-4xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-gray-50 mb-6 tracking-tight">Free CDM Practice Test 2026</h1>
-        <ExamLandingHero dashboardHref="/cdm/dashboard" shortName="CDM" subtitle="200 original questions across the five CBDM domains, with practical scenarios, calculations and explanations. Free to start, no account needed." shots={{ mobile: "/landing/cdm-mobile.png", desktop: "/landing/cdm-desktop.png" }} />
+        <ExamLandingHero dashboardHref="/cdm/dashboard" shortName="CDM" subtitle="200 questions across the five CBDM domains, with explanations. Free to start, no account needed." shots={{ mobile: "/landing/cdm-mobile.png", desktop: "/landing/cdm-desktop.png" }} />
       </div>
     </div>
     <ExamFacts examId="cdm" />

@@ -126,7 +126,7 @@ export default function NeetLandingPage() {
           <ExamLandingHero
             dashboardHref="/neet/dashboard"
             shortName="NEET"
-            subtitle="234 original NEET questions on Physics, Chemistry and Biology. Tuned for mobile. No account needed."
+            subtitle="234 NEET questions on Physics, Chemistry and Biology. No account needed."
             shots={{ mobile: "/landing/neet-mobile.png", desktop: "/landing/neet-desktop.png" }}
           />
         </div>

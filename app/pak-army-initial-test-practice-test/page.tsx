@@ -126,7 +126,7 @@ export default function PakArmyInitialTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/pak-army-test/dashboard"
             shortName="Army test"
-            subtitle="200 original questions for the soldier written and intelligence test: English, mathematics, verbal and non-verbal intelligence, everyday science, the Army, Islamiat and Pakistan. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 soldier written test questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/pakarmy-mobile.png", desktop: "/landing/pakarmy-desktop.png" }}
           />
         </div>

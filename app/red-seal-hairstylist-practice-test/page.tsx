@@ -144,7 +144,7 @@ export default function RedSealHairstylistLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-hairstylist/dashboard"
             shortName="Red Seal Hairstylist"
-            subtitle="200 questions across all 8 Major Work Activities, from cutting and styling to perms, relaxers, colour and lightening, with the real 70% pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Red Seal Hairstylist questions with the real 70% pass mark. Free to start, no account needed."
             shots={{ mobile: "/landing/carshair-mobile.png", desktop: "/landing/carshair-desktop.png" }}
           />
         </div>

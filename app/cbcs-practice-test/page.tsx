@@ -127,7 +127,7 @@ export default function CbcsLandingPage() {
           <ExamLandingHero
             dashboardHref="/cbcs/dashboard"
             shortName="CBCS"
-            subtitle="200 original billing and coding questions on all four NHA CBCS domains: the revenue cycle and compliance, insurance eligibility and payers, ICD-10-CM, CPT and HCPCS guidelines, and claims, payments and collections. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 NHA CBCS billing and coding questions. Four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cbcs-mobile.png", desktop: "/landing/cbcs-desktop.png" }}
           />
         </div>

@@ -126,7 +126,7 @@ export default function NzFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-firearms-licence/dashboard"
             shortName="firearms licence test"
-            subtitle="200 original questions on the Firearms Safety Code: the seven rules, states of readiness, target identification, firing zones, safe handling, storage and transport, and the Arms Act 2026. Six 30-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Firearms Safety Code questions and six 30-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzfirearms-mobile.png", desktop: "/landing/nzfirearms-desktop.png" }}
           />
         </div>

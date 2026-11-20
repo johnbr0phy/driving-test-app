@@ -134,7 +134,7 @@ export default function TrapperLandingPage() {
           <ExamLandingHero
             dashboardHref="/trapper-education/dashboard"
             shortName="Trapper Education"
-            subtitle="200 original questions for your trapper education course test: furbearer management, regulations, Best Management Practices, traps and cable devices, water and land sets, safety, running a trapline and handling fur. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 trapper education questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/trapper-mobile.png", desktop: "/landing/trapper-desktop.png" }}
           />
         </div>

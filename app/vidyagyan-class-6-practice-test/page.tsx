@@ -126,7 +126,7 @@ export default function VidyagyanLandingPage() {
           <ExamLandingHero
             dashboardHref="/vidyagyan/dashboard"
             shortName="VidyaGyan Class 6"
-            subtitle="160 original Class 4 to 5 skills questions, all in English. Four free drills and two skills tests. Prepare Hindi separately; this does not simulate either entrance stage."
+            subtitle="160 Class 4 to 5 skills questions. Prepare Hindi separately; this does not simulate either entrance stage."
             shots={{ mobile: "/landing/vidyagyan-mobile.png", desktop: "/landing/vidyagyan-desktop.png" }}
           />
         </div>

@@ -127,7 +127,7 @@ export default function JnciaLandingPage() {
           <ExamLandingHero
             dashboardHref="/jncia/dashboard"
             shortName="JNCIA-Junos"
-            subtitle="186 original questions on the seven JN0-106 exam objectives, with Junos commands and output. Free to start, no account needed."
+            subtitle="186 questions on the seven JN0-106 exam objectives. Free to start, no account needed."
             shots={{ mobile: "/landing/jncia-mobile.png", desktop: "/landing/jncia-desktop.png" }}
           />
         </div>

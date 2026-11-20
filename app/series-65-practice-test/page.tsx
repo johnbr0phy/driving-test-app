@@ -122,7 +122,7 @@ export default function Series65LandingPage() {
           <ExamLandingHero
             dashboardHref="/series-65/dashboard"
             shortName="Series 65"
-            subtitle="200 original questions on NASAA's outline: economics, investment vehicles, client strategies, taxes and retirement plans, adviser law and ethics. Four 50-question mock tests weighted like the real exam. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on NASAA's outline and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/series65-mobile.png", desktop: "/landing/series65-desktop.png" }}
           />
         </div>

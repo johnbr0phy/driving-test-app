@@ -126,7 +126,7 @@ export default function SapsRecruitmentLandingPage() {
           <ExamLandingHero
             dashboardHref="/saps-trainee-assessment/dashboard"
             shortName="SAPS test"
-            subtitle="200 original questions for the written part of the police trainee assessment: English, reading, numeracy and reasoning. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 SAPS recruitment test questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/zasaps-mobile.png", desktop: "/landing/zasaps-desktop.png" }}
           />
         </div>

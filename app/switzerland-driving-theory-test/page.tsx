@@ -126,7 +126,7 @@ export default function SwitzerlandDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/switzerland-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions on Swiss road rules for your category B learner licence, in English: signs, priority to the right, speed limits, overtaking, parking and sharing the road. Four 50-question mock tests with 45 to pass. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Swiss theory questions in English, four 50-question tests, 45 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/chtheory-mobile.png", desktop: "/landing/chtheory-desktop.png" }}
           />
         </div>

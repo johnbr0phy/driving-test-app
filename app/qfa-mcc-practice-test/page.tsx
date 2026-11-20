@@ -127,7 +127,7 @@ export default function IeQfaLandingPage() {
           <ExamLandingHero
             dashboardHref="/qfa-mcc/dashboard"
             shortName="QFA Regulation"
-            subtitle="200 original questions for the QFA regulation exam and Ireland's Minimum Competency Code: the Central Bank, Fitness and Probity, the Consumer Protection Code 2025, complaints, anti-money laundering, ethics and core products. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 QFA and Minimum Competency Code questions, four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ieqfa-mobile.png", desktop: "/landing/ieqfa-desktop.png" }}
           />
         </div>

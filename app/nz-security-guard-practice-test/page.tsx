@@ -126,7 +126,7 @@ export default function NzSecurityLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-security-guard/dashboard"
             shortName="NZ Security Guard"
-            subtitle="200 original questions for the PSPLA certificate of approval training, skill standards 40146, 40145 and 40147: licensing, lawful force and arrest, trespass and searching, health and safety, emergencies, reporting and conflict management. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PSPLA certificate questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzsecurity-mobile.png", desktop: "/landing/nzsecurity-desktop.png" }}
           />
         </div>

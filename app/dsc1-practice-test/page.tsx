@@ -122,7 +122,7 @@ export default function Dsc1LandingPage() {
           <ExamLandingHero
             dashboardHref="/deer-stalking-certificate/dashboard"
             shortName="DSC1 test"
-            subtitle="200 original questions on the Deer Stalking Certificate Level 1: deer biology, the six species, close seasons and law, firearms safety, shot placement and carcass hygiene. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 DSC1 questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ukdsc1-mobile.png", desktop: "/landing/ukdsc1-desktop.png" }}
           />
         </div>

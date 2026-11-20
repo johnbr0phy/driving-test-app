@@ -141,7 +141,7 @@ export default function FoodmgrLandingPage() {
           <ExamLandingHero
             dashboardHref="/food-manager/dashboard"
             shortName="Food Safety"
-            subtitle="200 Food Code questions for the ServSafe Manager, NRFSP, Prometric and other accredited exams. Free to start, no account needed."
+            subtitle="200 Food Code questions for the ServSafe Manager and other accredited exams. Free to start, no account needed."
             shots={{ mobile: "/landing/foodmgr-mobile.png", desktop: "/landing/foodmgr-desktop.png" }}
           />
         </div>

@@ -132,7 +132,7 @@ export default function NaplexLandingPage() {
           <ExamLandingHero
             dashboardHref="/naplex/dashboard"
             shortName="NAPLEX"
-            subtitle="236 original pharmacist licensure questions on NABP's 2025 content outline, with typed calculations. Free to start, no account needed."
+            subtitle="236 pharmacist licensure questions with typed calculations. Free to start, no account needed."
             shots={{ mobile: "/landing/naplex-mobile.png", desktop: "/landing/naplex-desktop.png" }}
           />
         </div>

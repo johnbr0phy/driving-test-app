@@ -140,7 +140,7 @@ export default function ForkliftLandingPage() {
           <ExamLandingHero
             dashboardHref="/forklift/dashboard"
             shortName="Forklift"
-            subtitle="200 questions on OSHA 1910.178: truck classes, the stability triangle, inspections, propane and battery safety, pedestrians, ramps and docks. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 forklift questions on OSHA 1910.178. Free to start, no account needed."
             shots={{ mobile: "/landing/forklift-mobile.png", desktop: "/landing/forklift-desktop.png" }}
           />
         </div>

@@ -111,7 +111,7 @@ export default function OssscLandingPage() {
           <ExamLandingHero
             dashboardHref="/osssc/dashboard"
             shortName="OSSSC CRE"
-            subtitle="200 original questions for selected CRE-2025 written subjects, all in English. Odia, current affairs and the computer practical are excluded, and practice scores do not apply official negative marking. Free to start, no account needed."
+            subtitle="200 CRE-2025 questions, scored without negative marking. Free to start, no account needed."
             shots={{ mobile: "/landing/osssc-mobile.png", desktop: "/landing/osssc-desktop.png" }}
           />
         </div>

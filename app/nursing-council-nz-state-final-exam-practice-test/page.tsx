@@ -143,7 +143,7 @@ export default function NzsfeLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-nursing-state-final/dashboard"
             shortName="NZ State Final"
-            subtitle="200 original questions for the registered nurse State Final Examination: Te Tiriti and cultural safety, the Code of Rights, assessment, medicines and calculations, acute care, mental health and whānau health. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the registered nurse State Final Examination. Free to start, no account needed."
             shots={{ mobile: "/landing/nzsfe-mobile.png", desktop: "/landing/nzsfe-desktop.png" }}
           />
         </div>

@@ -130,7 +130,7 @@ export default function NswFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/nsw-firearms-licence/dashboard"
             shortName="NSW Firearms Safety"
-            subtitle="200 original questions for the NSW firearms safety course: the Firearms Act 1996, licence categories, permits, storage, safe handling, ranges and the National Firearms Safety Code. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 NSW firearms safety questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aufirearmsnsw-mobile.png", desktop: "/landing/aufirearmsnsw-desktop.png" }}
           />
         </div>

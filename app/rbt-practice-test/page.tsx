@@ -150,7 +150,7 @@ export default function RbtLandingPage() {
           <ExamLandingHero
             dashboardHref="/rbt/dashboard"
             shortName="RBT"
-            subtitle="250 original questions on the RBT Test Content Outline (3rd ed.): measurement, assessment, teaching, behavior reduction, documentation and ethics. Five 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="250 RBT questions and five 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/rbt-mobile.png", desktop: "/landing/rbt-desktop.png" }}
           />
         </div>

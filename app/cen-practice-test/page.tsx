@@ -134,7 +134,7 @@ export default function CenLandingPage() {
           <ExamLandingHero
             dashboardHref="/cen/dashboard"
             shortName="CEN"
-            subtitle="200 original questions on the BCEN content outline effective July 2026: cardiac, respiratory, neuro, trauma, toxicology, triage and more. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CEN questions and four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/cen-mobile.png", desktop: "/landing/cen-desktop.png" }}
           />
         </div>

@@ -127,7 +127,7 @@ export default function FinlandTruckTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/finland-truck-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English for the Finnish C, CE, D and DE teoriakoe: EU driving and rest times, tachographs, load securing, passengers, air brakes, 5 mm winter tyres and heavy vehicles in traffic. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Finnish truck theory questions in English. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/fitruck-mobile.png", desktop: "/landing/fitruck-desktop.png" }}
           />
         </div>

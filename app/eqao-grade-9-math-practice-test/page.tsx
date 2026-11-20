@@ -135,7 +135,7 @@ export default function Eqao9LandingPage() {
           <ExamLandingHero
             dashboardHref="/eqao-grade-9-math/dashboard"
             shortName="EQAO Grade 9 Math"
-            subtitle="Two full practice tests of two adaptive sessions, like the real online assessment, plus a drill for every strand. Free, no account needed."
+            subtitle="Two full EQAO practice tests of two adaptive sessions, plus a drill for every strand. Free, no account needed."
             shots={{ mobile: "/landing/eqao9-mobile.png", desktop: "/landing/eqao9-desktop.png" }}
           />
         </div>

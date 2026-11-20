@@ -112,7 +112,7 @@ export default function NcccoLandingPage() {
           <ExamLandingHero
             dashboardHref="/nccco/dashboard"
             shortName="NCCCO Core"
-            subtitle="200 original Core knowledge questions on site conditions, operations, technical knowledge and illustrative load charts. Four shorter practice tests. Free to start, no account needed."
+            subtitle="200 Core knowledge questions and four shorter practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nccco-mobile.png", desktop: "/landing/nccco-desktop.png" }}
           />
           <p className="mt-10 max-w-2xl mx-auto rounded-xl border border-brand-border-light bg-white dark:bg-gray-900 p-5 text-gray-700 dark:text-gray-200">

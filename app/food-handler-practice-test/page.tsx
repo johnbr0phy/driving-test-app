@@ -138,7 +138,7 @@ export default function FoodhandlerLandingPage() {
           <ExamLandingHero
             dashboardHref="/food-handler/dashboard"
             shortName="Food Handler"
-            subtitle="200 questions on the food safety topics every food handler card test covers. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the food handler card test. Free to start, no account needed."
             shots={{ mobile: "/landing/foodhandler-mobile.png", desktop: "/landing/foodhandler-desktop.png" }}
           />
         </div>

@@ -146,7 +146,7 @@ export default function PknleLandingPage() {
           <ExamLandingHero
             dashboardHref="/pmdc-nle/dashboard"
             shortName="PMDC NRE"
-            subtitle="200 original MCQs for foreign medical graduates, 30% basic and 70% clinical sciences as the PM&DC syllabus sets them, with the 60% pass line. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PM&DC NLE MCQs for foreign medical graduates, with the 60% pass line. Free to start, no account needed."
             shots={{ mobile: "/landing/pknle-mobile.png", desktop: "/landing/pknle-desktop.png" }}
           />
         </div>

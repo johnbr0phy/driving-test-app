@@ -130,7 +130,7 @@ export default function AscpMlsLandingPage() {
           <ExamLandingHero
             dashboardHref="/ascp-mls/dashboard"
             shortName="MLS"
-            subtitle="200 original medical laboratory scientist questions on the ASCP BOC content guideline: blood banking, urinalysis, chemistry, hematology, immunology, microbiology and lab operations. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ASCP MLS questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ascpmls-mobile.png", desktop: "/landing/ascpmls-desktop.png" }}
           />
         </div>

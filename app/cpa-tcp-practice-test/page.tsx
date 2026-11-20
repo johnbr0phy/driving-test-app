@@ -122,7 +122,7 @@ export default function CpaTcpLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpa-tcp/dashboard"
             shortName="CPA TCP"
-            subtitle="200 original multiple-choice questions on the AICPA's 2026 TCP blueprint: individual tax planning, gift tax and financial planning, C and S corporations, partnerships and trusts, entity planning and property transactions. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CPA TCP questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpatcp-mobile.png", desktop: "/landing/cpatcp-desktop.png" }}
           />
         </div>

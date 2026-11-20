@@ -137,7 +137,7 @@ export default function RexPnLandingPage() {
           <ExamLandingHero
             dashboardHref="/rex-pn/dashboard"
             shortName="REx-PN"
-            subtitle="210 practical nursing questions with rationales, written for RPNs in Ontario and LPNs in BC, with SI units and Canadian drug names. Tuned for mobile. Free to start, no account needed."
+            subtitle="210 REx-PN practical nursing questions with rationales. Free to start, no account needed."
             shots={{ mobile: "/landing/rexpn-mobile.png", desktop: "/landing/rexpn-desktop.png" }}
           />
         </div>

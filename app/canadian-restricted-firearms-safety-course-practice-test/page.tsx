@@ -127,7 +127,7 @@ export default function CrfscLandingPage() {
           <ExamLandingHero
             dashboardHref="/canadian-restricted-firearms/dashboard"
             shortName="CRFSC"
-            subtitle="200 original questions for the Canadian Restricted Firearms Safety Course: handgun parts and actions, ammunition, firing, care, and the rules for storing and transporting restricted firearms. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Canadian RPAL course questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/crfsc-mobile.png", desktop: "/landing/crfsc-desktop.png" }}
           />
         </div>

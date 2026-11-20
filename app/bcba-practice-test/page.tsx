@@ -132,7 +132,7 @@ export default function BcbaLandingPage() {
           <ExamLandingHero
             dashboardHref="/bcba/dashboard"
             shortName="BCBA"
-            subtitle="200 original questions on the BACB BCBA Test Content Outline (6th ed.): concepts and principles, measurement, experimental design, ethics, assessment, behavior-change procedures and supervision. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 BCBA questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/bcba-mobile.png", desktop: "/landing/bcba-desktop.png" }}
           />
         </div>

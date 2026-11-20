@@ -125,7 +125,7 @@ export default function LcqLandingPage() {
           <ExamLandingHero
             dashboardHref="/lcq/dashboard"
             shortName="LCQ"
-            subtitle="200 original questions for New Zealand's Licence Controller Qualification: the Sale and Supply of Alcohol Act 2012, licences and manager's certificates, minors and ID, assessing intoxication, refusing service and a safe drinking environment. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Licence Controller Qualification questions and four 50-question mocks. Free to start, no account needed."
             shots={{ mobile: "/landing/nzlcq-mobile.png", desktop: "/landing/nzlcq-desktop.png" }}
           />
         </div>

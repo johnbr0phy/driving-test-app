@@ -129,7 +129,7 @@ export default function BackflowLandingPage() {
           <ExamLandingHero
             dashboardHref="/backflow-tester/dashboard"
             shortName="Backflow Tester"
-            subtitle="200 original questions for the backflow prevention assembly tester exam: cross-connections, hydraulics, RP, double check and PVB assemblies, test kits, field test procedures and troubleshooting. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 backflow tester questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/backflow-mobile.png", desktop: "/landing/backflow-desktop.png" }}
           />
         </div>

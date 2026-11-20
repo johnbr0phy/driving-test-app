@@ -126,7 +126,7 @@ export default function MpPoliceLandingPage() {
           <ExamLandingHero
             dashboardHref="/mp-police-constable/dashboard"
             shortName="MP Police"
-            subtitle="232 original questions on GK, reasoning, mental ability, science and arithmetic. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 questions on GK, reasoning, mental ability, science and arithmetic. Free to start, no account needed."
             shots={{ mobile: "/landing/mppolice-mobile.png", desktop: "/landing/mppolice-desktop.png" }}
           />
         </div>

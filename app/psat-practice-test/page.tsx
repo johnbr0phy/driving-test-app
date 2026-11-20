@@ -129,7 +129,7 @@ export default function PsatLandingPage() {
           <ExamLandingHero
             dashboardHref="/psat/dashboard"
             shortName="PSAT"
-            subtitle="A full-length digital PSAT/NMSQT with timed, adaptive modules and a score estimate, plus four skill drills built for your phone. All free, no account needed."
+            subtitle="A full-length digital PSAT/NMSQT, timed and adaptive, plus four skill drills. All free, no account needed."
             shots={{ mobile: "/landing/psat-mobile.png", desktop: "/landing/psat-desktop.png" }}
           />
         </div>

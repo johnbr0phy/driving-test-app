@@ -124,7 +124,7 @@ export default function HTLLandingPage() {
           <ExamLandingHero
             dashboardHref="/htl/dashboard"
             shortName="HTL"
-            subtitle="214 questions weighted to the ASCP content guideline. Tuned for mobile. Free to start, no account needed."
+            subtitle="214 questions weighted to the ASCP content guideline. Free to start, no account needed."
             shots={{ mobile: "/landing/htl-mobile.png", desktop: "/landing/htl-desktop.png" }}
           />
         </div>

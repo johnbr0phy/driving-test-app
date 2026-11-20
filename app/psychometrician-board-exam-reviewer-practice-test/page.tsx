@@ -127,7 +127,7 @@ export default function PsychometricianReviewerLandingPage() {
           <ExamLandingHero
             dashboardHref="/psychometrician-board-exam/dashboard"
             shortName="PmLE"
-            subtitle="200 original questions on the four subjects of the PRC Psychometrician Licensure Examination: developmental, abnormal and industrial-organizational psychology, and psychological assessment. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Psychometrician board exam questions and four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/phpsychom-mobile.png", desktop: "/landing/phpsychom-desktop.png" }}
           />
         </div>

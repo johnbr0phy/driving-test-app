@@ -141,7 +141,7 @@ export default function RhitLandingPage() {
           <ExamLandingHero
             dashboardHref="/rhit/dashboard"
             shortName="RHIT"
-            subtitle="200 original questions on the AHIMA Registered Health Information Technician outline: record content, the MPI, HIPAA release of information, hospital statistics, coding and CDI, the revenue cycle, compliance and leadership. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 RHIT questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/rhit-mobile.png", desktop: "/landing/rhit-desktop.png" }}
           />
         </div>

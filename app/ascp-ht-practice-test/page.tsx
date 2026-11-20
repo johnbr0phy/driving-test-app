@@ -128,7 +128,7 @@ export default function AscpHtLandingPage() {
           <ExamLandingHero
             dashboardHref="/ascp-ht/dashboard"
             shortName="HT"
-            subtitle="200 original histotechnician questions on the ASCP BOC content guideline: fixation, processing, embedding and microtomy, staining and lab operations. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ASCP histotechnician questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ascpht-mobile.png", desktop: "/landing/ascpht-desktop.png" }}
           />
         </div>

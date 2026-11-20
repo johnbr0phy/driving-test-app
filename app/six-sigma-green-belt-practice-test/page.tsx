@@ -124,7 +124,7 @@ export default function SixSigmaGreenBeltLandingPage() {
           <ExamLandingHero
             dashboardHref="/six-sigma-green-belt/dashboard"
             shortName="Six Sigma Green Belt"
-            subtitle="200 original questions on the 2022 ASQ CSSGB Body of Knowledge: Define, Measure, Analyze, Improve and Control, with capability, DPMO, hypothesis tests, DOE and control charts worked out. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Six Sigma Green Belt (CSSGB) questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cssgb-mobile.png", desktop: "/landing/cssgb-desktop.png" }}
           />
         </div>

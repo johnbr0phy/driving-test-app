@@ -130,7 +130,7 @@ export default function Ks2SatsLandingPage() {
           <ExamLandingHero
             dashboardHref="/ks2-sats/dashboard"
             shortName="KS2 SATs"
-            subtitle="Year 6 reading, grammar, punctuation and maths. A short lesson before every drill, then two practice tests with an estimated scaled score for each subject. Free, no account needed."
+            subtitle="Year 6 reading, grammar, punctuation and maths: lessons, drills and two tests. Free, no account needed."
             shots={{ mobile: "/landing/ks2-mobile.png", desktop: "/landing/ks2-desktop.png" }}
           />
         </div>

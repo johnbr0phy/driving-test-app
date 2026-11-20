@@ -123,7 +123,7 @@ export default function WaFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/wa-firearms-licence/dashboard"
             shortName="WA Firearm Safety"
-            subtitle="200 original questions for the WA Firearm Safety Training Course theory assessment: the Firearms Act 2024, licence types, hunting permissions, storage levels, transport and safe handling. Five 40-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 WA firearm safety questions and five 40-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aufirearmswa-mobile.png", desktop: "/landing/aufirearmswa-desktop.png" }}
           />
         </div>

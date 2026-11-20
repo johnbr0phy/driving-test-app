@@ -140,7 +140,7 @@ export default function ShsatLandingPage() {
           <ExamLandingHero
             dashboardHref="/shsat/dashboard"
             shortName="SHSAT"
-            subtitle="50 English Language Arts and 50 Math questions in 3 hours, like the real test for the NYC Specialized High Schools, plus eight drills for each part of the test. Everything is free, no account needed."
+            subtitle="50 ELA and 50 Math questions in 3 hours like the real SHSAT. Everything is free, no account needed."
             shots={{ mobile: "/landing/shsat-mobile.png", desktop: "/landing/shsat-desktop.png" }}
           />
         </div>

@@ -140,7 +140,7 @@ export default function SecurityGuardLandingPage() {
           <ExamLandingHero
             dashboardHref="/security-guard/dashboard"
             shortName="Security Guard"
-            subtitle="200 questions on legal powers, use of force, patrol, access control, report writing and emergency response. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 security guard questions on legal powers, force, patrol and reports. Free to start, no account needed."
             shots={{ mobile: "/landing/security-mobile.png", desktop: "/landing/security-desktop.png" }}
           />
         </div>

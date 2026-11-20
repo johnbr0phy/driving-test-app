@@ -132,7 +132,7 @@ export default function OntarioHunterLandingPage() {
           <ExamLandingHero
             dashboardHref="/ontario-hunter/dashboard"
             shortName="Ontario Hunter Ed"
-            subtitle="200 original questions for the Ontario Hunter Education Course exam: the Outdoors Card, tags, hunter orange, firearm and bow rules, land access, ethics, wildlife and field care, written from Ontario's hunting law. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Ontario Hunter Education questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cahunteron-mobile.png", desktop: "/landing/cahunteron-desktop.png" }}
           />
         </div>

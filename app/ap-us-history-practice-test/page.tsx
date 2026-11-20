@@ -132,7 +132,7 @@ export default function ApUsHistoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-us-history/dashboard"
             shortName="AP US History"
-            subtitle="201 original source-based multiple-choice questions, Period 1 to Period 9. Tuned for mobile. No account needed."
+            subtitle="201 source-based AP US History questions, Period 1 to Period 9. No account needed."
             shots={{ mobile: "/landing/apush-mobile.png", desktop: "/landing/apush-desktop.png" }}
           />
         </div>

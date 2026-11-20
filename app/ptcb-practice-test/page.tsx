@@ -125,7 +125,7 @@ export default function PtcbLandingPage() {
           <ExamLandingHero
             dashboardHref="/ptcb/dashboard"
             shortName="PTCB"
-            subtitle="200 questions weighted to the 2026 PTCE content outline. Worked math on every calculation. Free to start, no account needed."
+            subtitle="200 PTCB questions weighted to the 2026 PTCE outline, with worked math. Free to start, no account needed."
             shots={{ mobile: "/landing/ptcb-mobile.png", desktop: "/landing/ptcb-desktop.png" }}
           />
         </div>

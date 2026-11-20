@@ -128,7 +128,7 @@ export default function HungaryGkiLandingPage() {
           <ExamLandingHero
             dashboardHref="/hungary-gki/dashboard"
             shortName="GKI test"
-            subtitle="200 original questions in English for truck and bus drivers: eco-driving, brakes, loads and passengers, driving and rest times, tachographs, Hungarian heavy vehicle rules, health and emergencies. Four 40-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions in English for truck and bus drivers. Four 40-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hugki-mobile.png", desktop: "/landing/hugki-desktop.png" }}
           />
         </div>

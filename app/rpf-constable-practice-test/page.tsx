@@ -126,7 +126,7 @@ export default function RpfConstableLandingPage() {
           <ExamLandingHero
             dashboardHref="/rpf-constable/dashboard"
             shortName="RPF Constable"
-            subtitle="232 original CBT questions on General Awareness, Arithmetic and Reasoning. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 RPF Constable CBT questions on GK, Arithmetic and Reasoning. Free to start, no account needed."
             shots={{ mobile: "/landing/rpfconst-mobile.png", desktop: "/landing/rpfconst-desktop.png" }}
           />
         </div>

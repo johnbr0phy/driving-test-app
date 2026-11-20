@@ -141,7 +141,7 @@ export default function CcaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cca/dashboard"
             shortName="CCA"
-            subtitle="200 original questions on the AHIMA Certified Coding Associate outline: ICD-10-CM, ICD-10-PCS, CPT and E/M, DRGs and claims, health records, compliance and HIPAA. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 AHIMA CCA questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cca-mobile.png", desktop: "/landing/cca-desktop.png" }}
           />
         </div>

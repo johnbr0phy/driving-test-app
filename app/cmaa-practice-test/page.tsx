@@ -130,7 +130,7 @@ export default function CmaaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cmaa/dashboard"
             shortName="CMAA"
-            subtitle="200 original questions on the NHA CMAA test plan: communication, HIPAA and compliance, scheduling, check-in and insurance, billing and front office procedures. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 NHA CMAA questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cmaa-mobile.png", desktop: "/landing/cmaa-desktop.png" }}
           />
         </div>

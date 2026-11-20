@@ -126,7 +126,7 @@ export default function SalesforceAdminLandingPage() {
           <ExamLandingHero
             dashboardHref="/salesforce-admin/dashboard"
             shortName="Salesforce Admin"
-            subtitle="200 original questions on the 2026 Platform Administrator exam guide: security and sharing, Object Manager, sales and service apps, reports and dashboards, Flow and Agentforce. Three 60-question tests with the 68% pass line. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Salesforce Administrator questions, three 60-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/sfadmin-mobile.png", desktop: "/landing/sfadmin-desktop.png" }}
           />
         </div>

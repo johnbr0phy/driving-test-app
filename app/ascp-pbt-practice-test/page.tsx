@@ -129,7 +129,7 @@ export default function AscpPbtLandingPage() {
           <ExamLandingHero
             dashboardHref="/ascp-phlebotomy/dashboard"
             shortName="PBT"
-            subtitle="200 original phlebotomy questions on the ASCP BOC content guideline: specimen collection, order of draw, complications, specimen handling, point-of-care testing, non-blood specimens and lab operations. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ASCP phlebotomy questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ascppbt-mobile.png", desktop: "/landing/ascppbt-desktop.png" }}
           />
         </div>

@@ -121,7 +121,7 @@ export default function EnrolledAgentPart2LandingPage() {
           <ExamLandingHero
             dashboardHref="/enrolled-agent-part-2/dashboard"
             shortName="SEE Part 2"
-            subtitle="200 original questions on the IRS Part 2 Businesses outline and 2025 tax law: entities and partnerships, C and S corporations, business income and expenses, depreciation and accounting methods, payroll, trusts, exempt organizations, retirement plans, farmers and rentals. Four 50-question mock tests. Free to start, no account needed."
+            subtitle="200 Enrolled Agent Part 2 questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ea2-mobile.png", desktop: "/landing/ea2-desktop.png" }}
           />
         </div>

@@ -138,7 +138,7 @@ export default function AccuplacerLandingPage() {
           <ExamLandingHero
             dashboardHref="/accuplacer/dashboard"
             shortName="ACCUPLACER"
-            subtitle="200 questions across reading, writing, arithmetic, quantitative reasoning and algebra, and advanced algebra and functions. Tuned for mobile. No account needed."
+            subtitle="200 ACCUPLACER questions across reading, writing, arithmetic and algebra. No account needed."
             shots={{ mobile: "/landing/accuplacer-mobile.png", desktop: "/landing/accuplacer-desktop.png" }}
           />
         </div>

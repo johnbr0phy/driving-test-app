@@ -129,7 +129,7 @@ export default function HamExtraLandingPage() {
           <ExamLandingHero
             dashboardHref="/ham-radio-extra/dashboard"
             shortName="Extra"
-            subtitle="The official 2024-2028 Element 4 pool with an explanation for every answer. Tuned for mobile. Free to start, no account needed."
+            subtitle="The official 2024-2028 Element 4 pool, every answer explained. Free to start, no account needed."
             shots={{ mobile: "/landing/hamextra-mobile.png", desktop: "/landing/hamextra-desktop.png" }}
           />
         </div>

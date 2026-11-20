@@ -132,7 +132,7 @@ export default function HscMathsLandingPage() {
           <ExamLandingHero
             dashboardHref="/hsc-maths-standard/dashboard"
             shortName="HSC Maths Standard 2"
-            subtitle="Two full practice papers with a reference sheet, plus six drills for every Year 12 topic, written to the new NESA syllabus. Free, no account needed."
+            subtitle="Two full practice papers with a reference sheet, plus six Year 12 topic drills. Free, no account needed."
             shots={{ mobile: "/landing/hscmaths-mobile.png", desktop: "/landing/hscmaths-desktop.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function RhiaLandingPage() {
           <ExamLandingHero
             dashboardHref="/rhia/dashboard"
             shortName="RHIA"
-            subtitle="200 original questions on the AHIMA Registered Health Information Administrator outline: information governance and the MPI, HIPAA access, disclosure and breach rules, healthcare statistics, informatics, reimbursement and revenue integrity, budgets, HR and projects. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 RHIA questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/rhia-mobile.png", desktop: "/landing/rhia-desktop.png" }}
           />
         </div>

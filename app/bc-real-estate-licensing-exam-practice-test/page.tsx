@@ -127,7 +127,7 @@ export default function BcRealEstateLandingPage() {
           <ExamLandingHero
             dashboardHref="/bc-real-estate-exam/dashboard"
             shortName="BC real estate exam"
-            subtitle="200 original questions for the BC real estate trading services licensing exam: the Real Estate Services Act, agency duties, contracts, trust accounts, land title, strata and mortgage math. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 BC real estate licensing questions. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/bcrealestate-mobile.png", desktop: "/landing/bcrealestate-desktop.png" }}
           />
         </div>

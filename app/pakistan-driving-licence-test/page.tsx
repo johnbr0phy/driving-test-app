@@ -127,7 +127,7 @@ export default function PakistanDrivingLicenceLandingPage() {
           <ExamLandingHero
             dashboardHref="/pakistan-driving-test/dashboard"
             shortName="Driving test"
-            subtitle="200 original questions on the road signs and traffic rules every licensing centre in Pakistan tests: warning and regulatory signs, markings, roundabouts, overtaking, motorways and safety. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 road sign and traffic rule questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/pkdrive-mobile.png", desktop: "/landing/pkdrive-desktop.png" }}
           />
         </div>

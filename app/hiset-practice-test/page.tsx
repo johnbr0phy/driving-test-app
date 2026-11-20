@@ -136,7 +136,7 @@ export default function HisetLandingPage() {
           <ExamLandingHero
             dashboardHref="/hiset/dashboard"
             shortName="HiSET"
-            subtitle="All five HiSET subtests in two timed practice tests, plus fifteen drills that teach the basics first. Everything is free, no account needed."
+            subtitle="All five HiSET subtests in two timed tests, plus fifteen drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/hiset-mobile.png", desktop: "/landing/hiset-desktop.png" }}
           />
         </div>

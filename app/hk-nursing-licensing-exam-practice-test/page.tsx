@@ -129,7 +129,7 @@ export default function HkNursingLandingPage() {
           <ExamLandingHero
             dashboardHref="/hk-nursing-licensing/dashboard"
             shortName="HK Nursing Exam"
-            subtitle="200 original questions on the multiple-choice topics of the Nursing Council of Hong Kong Licensing Examination for registered nurses (general): nursing care, body systems, anatomy, microbiology, pharmacology, first aid and ethics. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Hong Kong nursing licensing questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hknurse-mobile.png", desktop: "/landing/hknurse-desktop.png" }}
           />
         </div>

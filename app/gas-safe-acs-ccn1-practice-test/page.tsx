@@ -125,7 +125,7 @@ export default function UkgasLandingPage() {
           <ExamLandingHero
             dashboardHref="/gas-safe-acs/dashboard"
             shortName="Gas Safe ACS"
-            subtitle="200 questions on the knowledge side of ACS CCN1: gas safety law and L56, unsafe situations, CO, ventilation, flues, tightness testing and safety devices. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the knowledge side of ACS CCN1. Free to start, no account needed."
             shots={{ mobile: "/landing/ukgas-mobile.png", desktop: "/landing/ukgas-desktop.png" }}
           />
         </div>

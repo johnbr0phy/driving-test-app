@@ -130,7 +130,7 @@ export default function HcapLandingPage() {
           <ExamLandingHero
             dashboardHref="/hcap/dashboard"
             shortName="HCAP"
-            subtitle="200 original questions for the HCAP written test: Irish deer species and biology, deer management, rifles and firearms safety, the Wildlife Acts and carcase handling. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the HCAP written test. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/iehcap-mobile.png", desktop: "/landing/iehcap-desktop.png" }}
           />
         </div>

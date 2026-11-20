@@ -131,7 +131,7 @@ export default function CahambasicLandingPage() {
           <ExamLandingHero
             dashboardHref="/canada-amateur-radio-basic/dashboard"
             shortName="Canada Amateur Radio Basic"
-            subtitle="200 original questions on ISED's Basic syllabus: regulations, bands and power limits, call signs, Ohm's law, receivers, transmitters, antennas and propagation. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on ISED's Basic syllabus. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cahambasic-mobile.png", desktop: "/landing/cahambasic-desktop.png" }}
           />
         </div>

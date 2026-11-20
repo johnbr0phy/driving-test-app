@@ -127,7 +127,7 @@ export default function AfpsatLandingPage() {
           <ExamLandingHero
             dashboardHref="/afpsat/dashboard"
             shortName="AFPSAT"
-            subtitle="200 original questions for the AFP Service Aptitude Test: vocabulary, grammar, reading, numerical ability, logical and abstract reasoning, the Constitution and the AFP. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 AFPSAT questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/afpsat-mobile.png", desktop: "/landing/afpsat-desktop.png" }}
           />
         </div>

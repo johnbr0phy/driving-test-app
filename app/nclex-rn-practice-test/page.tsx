@@ -133,7 +133,7 @@ export default function NclexLandingPage() {
           <ExamLandingHero
             dashboardHref="/nclex/dashboard"
             shortName="NCLEX-RN"
-            subtitle="200 clinical judgment questions with rationales, including select all that apply. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 clinical judgment questions with rationales. Free to start, no account needed."
             shots={{ mobile: "/landing/nclex-mobile.png", desktop: "/landing/nclex-desktop.png" }}
           />
         </div>

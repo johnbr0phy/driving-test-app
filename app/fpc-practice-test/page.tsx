@@ -131,7 +131,7 @@ export default function FpcLandingPage() {
           <ExamLandingHero
             dashboardHref="/fpc/dashboard"
             shortName="FPC"
-            subtitle="200 original questions for PayrollOrg's Fundamental Payroll Certification: FLSA overtime, 2026 payroll taxes, gross-to-net math, deposits, audits and payroll accounting. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Fundamental Payroll Certification questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/fpc-mobile.png", desktop: "/landing/fpc-desktop.png" }}
           />
         </div>

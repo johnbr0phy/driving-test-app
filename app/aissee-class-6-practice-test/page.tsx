@@ -126,7 +126,7 @@ export default function AisseeLandingPage() {
           <ExamLandingHero
             dashboardHref="/aissee/dashboard"
             shortName="AISSEE"
-            subtitle="237 original Sainik School practice questions on Language, Mathematics, Intelligence and General Knowledge. Tuned for mobile. No account needed."
+            subtitle="237 Sainik School questions on Language, Maths, Intelligence and GK. No account needed."
             shots={{ mobile: "/landing/aissee-mobile.png", desktop: "/landing/aissee-desktop.png" }}
           />
         </div>

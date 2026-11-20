@@ -129,7 +129,7 @@ export default function DenmarkMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/denmark-motorcycle-theory/dashboard"
             shortName="Motorcycle theory"
-            subtitle="200 original questions in English for the Danish motorcycle teoriprøve (A1, A2 and A): lane position and bends, being seen at junctions, sidecars and passengers, helmets, motorways, riding in the dark, alcohol and speed. Eight 25-question mock tests with 20 to pass, like the real test. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Danish motorcycle theory questions in English. Eight 25-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/dkmoto-mobile.png", desktop: "/landing/dkmoto-desktop.png" }}
           />
         </div>

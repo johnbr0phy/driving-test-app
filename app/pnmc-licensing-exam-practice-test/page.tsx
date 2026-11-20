@@ -133,7 +133,7 @@ export default function PkpnmcLandingPage() {
           <ExamLandingHero
             dashboardHref="/pnmc-licensing-exam/dashboard"
             shortName="PNMC Exam"
-            subtitle="200 original nursing MCQs for the PNMC licensing exam: fundamentals, adult health, midwifery, paediatrics and EPI, community health, dosage and nursing law in Pakistan. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 nursing MCQs for the PNMC licensing exam. Free to start, no account needed."
             shots={{ mobile: "/landing/pkpnmc-mobile.png", desktop: "/landing/pkpnmc-desktop.png" }}
           />
         </div>

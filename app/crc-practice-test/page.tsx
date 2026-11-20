@@ -131,7 +131,7 @@ export default function CrcLandingPage() {
           <ExamLandingHero
             dashboardHref="/crc/dashboard"
             shortName="CRC"
-            subtitle="200 original risk adjustment questions on all eight AAPC CRC domains: CMS-HCC, HHS-HCC and CDPS models, RADV and compliance, documentation, ICD-10-CM diagnosis coding, quality measures and coding cases. Four 50-question practice tests, 70% to pass. Free to start, no account needed."
+            subtitle="200 AAPC CRC risk adjustment questions. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/crc-mobile.png", desktop: "/landing/crc-desktop.png" }}
           />
         </div>

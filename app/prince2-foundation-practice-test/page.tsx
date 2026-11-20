@@ -127,7 +127,7 @@ export default function Prince2LandingPage() {
           <ExamLandingHero
             dashboardHref="/prince2-foundation/dashboard"
             shortName="PRINCE2"
-            subtitle="200 original questions and two full 60-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PRINCE2 Foundation questions and two full 60-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/prince2-mobile.png", desktop: "/landing/prince2-desktop.png" }}
           />
         </div>

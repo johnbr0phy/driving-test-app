@@ -127,7 +127,7 @@ export default function AdcLandingPage() {
           <ExamLandingHero
             dashboardHref="/adc/dashboard"
             shortName="ADC"
-            subtitle="200 original questions on the four IC&RC Alcohol and Drug Counselor domains: addiction science, screening and assessment, counseling and treatment, and ethics and confidentiality. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 IC&RC ADC questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cadc-mobile.png", desktop: "/landing/cadc-desktop.png" }}
           />
         </div>

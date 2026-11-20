@@ -130,7 +130,7 @@ export default function ApHumanGeographyLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-human-geography/dashboard"
             shortName="AP Human Geography"
-            subtitle="204 original multiple-choice questions across all seven units. Tuned for mobile. No account needed."
+            subtitle="204 AP Human Geography multiple-choice questions across all seven units. No account needed."
             shots={{ mobile: "/landing/aphug-mobile.png", desktop: "/landing/aphug-desktop.png" }}
           />
         </div>

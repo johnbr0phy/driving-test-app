@@ -143,7 +143,7 @@ export default function RedSealWelderLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-welder/dashboard"
             shortName="Red Seal Welder"
-            subtitle="200 questions across all four Major Work Activities, from rigging and weld symbols to oxy-fuel, plasma and carbon arc cutting and every welding process, with the real 70% pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Red Seal Welder questions with the real 70% pass mark. Free to start, no account needed."
             shots={{ mobile: "/landing/caweld-mobile.png", desktop: "/landing/caweld-desktop.png" }}
           />
         </div>

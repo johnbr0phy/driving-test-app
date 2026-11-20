@@ -132,7 +132,7 @@ export default function ApCspLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-computer-science-principles/dashboard"
             shortName="AP Computer Science Principles"
-            subtitle="200 original computing questions. Five topic drills and two full-length MCQ tests, all free with no account needed. Prepare Create separately."
+            subtitle="200 AP CSP questions, five drills and two MCQ tests, all free, no account needed. Prepare Create separately."
             shots={{ mobile: "/landing/apcsp-mobile.png", desktop: "/landing/apcsp-desktop.png" }}
           />
         </div>

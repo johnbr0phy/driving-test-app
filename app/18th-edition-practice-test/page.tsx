@@ -143,7 +143,7 @@ export default function EighteenthEditionLandingPage() {
           <ExamLandingHero
             dashboardHref="/18th-edition/dashboard"
             shortName="18th Edition"
-            subtitle="200 questions on BS 7671:2018+A4:2026 for the City & Guilds 2382-26 exam: protection for safety, selection and erection, special locations and the appendices, weighted like the real paper. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on BS 7671 for the City & Guilds 2382-26 exam. Free to start, no account needed."
             shots={{ mobile: "/landing/uk18ed-mobile.png", desktop: "/landing/uk18ed-desktop.png" }}
           />
         </div>

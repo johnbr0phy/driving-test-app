@@ -142,7 +142,7 @@ export default function SgsnbLandingPage() {
           <ExamLandingHero
             dashboardHref="/singapore-snb-rn-exam/dashboard"
             shortName="SNB RN Exam"
-            subtitle="200 original questions for the Singapore Nursing Board RN Licensure Examination: the Code for Nurses and Midwives, assessment, infection control, medications and calculations, emergencies and elder care. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the Singapore Nursing Board RN Licensure Examination. Free to start, no account needed."
             shots={{ mobile: "/landing/sgsnb-mobile.png", desktop: "/landing/sgsnb-desktop.png" }}
           />
         </div>

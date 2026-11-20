@@ -130,7 +130,7 @@ export default function IePlumbT2LandingPage() {
           <ExamLandingHero
             dashboardHref="/plumbing-apprenticeship-phase-2/dashboard"
             shortName="Plumbing Phase 2"
-            subtitle="200 original questions for the Phase 2 theory exams of the Irish plumbing apprenticeship: hot work and copper jointing, mild steel pipework, cold and hot water services, valves and taps, central heating and controls, and drawings. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 Phase 2 plumbing questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ieplumbt2-mobile.png", desktop: "/landing/ieplumbt2-desktop.png" }}
           />
         </div>

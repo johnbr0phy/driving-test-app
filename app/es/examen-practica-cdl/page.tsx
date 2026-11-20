@@ -149,7 +149,7 @@ export default function CDLLandingPageEs() {
             dashboardHref="/cdl/dashboard"
             shortName="CDL"
             lang="es"
-            subtitle="600 preguntas de conocimientos generales, todas en español. Seis exámenes como el real. Hecho para el celular. Empieza gratis, sin cuenta."
+            subtitle="600 preguntas de CDL en español. Seis exámenes como el real. Empieza gratis, sin cuenta."
             shots={{ mobile: "/landing/cdl-mobile-es.png", desktop: "/landing/cdl-desktop-es.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function PhnatLandingPage() {
           <ExamLandingHero
             dashboardHref="/nursing-aptitude-test/dashboard"
             shortName="Nursing Aptitude Test"
-            subtitle="200 original questions for the Nursing Aptitude Test that Philippine nursing schools give to BSN applicants: verbal ability, numerical facility, science and health information, and mental ability. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Nursing Aptitude Test questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/phnat-mobile.png", desktop: "/landing/phnat-desktop.png" }}
           />
         </div>

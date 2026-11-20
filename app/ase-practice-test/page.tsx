@@ -130,7 +130,7 @@ export default function AseLandingPage() {
           <ExamLandingHero
             dashboardHref="/ase/dashboard"
             shortName="ASE"
-            subtitle="320 original questions on the ASE Automobile tests: engine repair, automatic and manual drivetrains, suspension and steering, brakes, electrical, heating and A/C, and engine performance. One training set per A-test and four mixed practice tests. Free to start, no account needed."
+            subtitle="320 ASE Automobile questions, a set per A-test and four practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ase-mobile.png", desktop: "/landing/ase-desktop.png" }}
           />
         </div>

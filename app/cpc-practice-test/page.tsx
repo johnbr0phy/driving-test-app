@@ -129,7 +129,7 @@ export default function CpcLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpc/dashboard"
             shortName="CPC"
-            subtitle="200 original medical coding questions on all 17 AAPC areas: guidelines, modifiers, ICD-10-CM, every CPT surgery series, E/M, anesthesia and coding cases. Four 50-question mock tests, 70% to pass. Free to start, no account needed."
+            subtitle="200 AAPC CPC coding questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpc-mobile.png", desktop: "/landing/cpc-desktop.png" }}
           />
         </div>

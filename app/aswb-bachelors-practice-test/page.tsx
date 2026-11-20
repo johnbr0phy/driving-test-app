@@ -126,7 +126,7 @@ export default function AswbBachelorsLandingPage() {
           <ExamLandingHero
             dashboardHref="/aswb-bachelors/dashboard"
             shortName="ASWB Bachelors"
-            subtitle="200 original questions on the 2026 Bachelors content outline: ethics and mandatory reporting, human behavior, assessment and planning, and generalist intervention. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ASWB Bachelors questions and four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/aswbbach-mobile.png", desktop: "/landing/aswbbach-desktop.png" }}
           />
         </div>

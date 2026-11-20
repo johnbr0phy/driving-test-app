@@ -130,7 +130,7 @@ export default function ApCalculusAbLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-calculus-ab/dashboard"
             shortName="AP Calculus AB"
-            subtitle="215 original multiple-choice questions across all eight units, with and without a calculator. Tuned for mobile. No account needed."
+            subtitle="215 AP Calculus AB multiple-choice questions across all eight units. No account needed."
             shots={{ mobile: "/landing/apcalcab-mobile.png", desktop: "/landing/apcalcab-desktop.png" }}
           />
         </div>

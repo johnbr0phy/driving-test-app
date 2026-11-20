@@ -129,7 +129,7 @@ export default function BelgiumDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/belgium-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English on the Belgian Highway Code: priority to the right, signs, markings, regional speed limits, overtaking, motorways and parking. Four 50-question mock tests at the real 41/50 pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Belgian Highway Code questions in English. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/bedriving-mobile.png", desktop: "/landing/bedriving-desktop.png" }}
           />
         </div>

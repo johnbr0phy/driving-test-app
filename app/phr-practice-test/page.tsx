@@ -129,7 +129,7 @@ export default function PhrLandingPage() {
           <ExamLandingHero
             dashboardHref="/phr/dashboard"
             shortName="PHR"
-            subtitle="200 original questions on all seven PHR functional areas: business management, talent acquisition, learning, total rewards, engagement, employee and labor relations, and HR information management. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PHR questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/phr-mobile.png", desktop: "/landing/phr-desktop.png" }}
           />
         </div>

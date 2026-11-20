@@ -143,7 +143,7 @@ export default function LetReviewerLandingPage() {
           <ExamLandingHero
             dashboardHref="/let-reviewer/dashboard"
             shortName="LET"
-            subtitle="200 original General Education and Professional Education questions on the PRC table of specifications for the Elementary LET. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Elementary LET questions and four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/phlet-mobile.png", desktop: "/landing/phlet-desktop.png" }}
           />
         </div>

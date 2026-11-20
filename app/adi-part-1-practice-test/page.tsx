@@ -140,7 +140,7 @@ export default function AdiPart1LandingPage() {
           <ExamLandingHero
             dashboardHref="/adi-part-1/dashboard"
             shortName="ADI Part 1"
-            subtitle="200 original questions across the four DVSA bands: road procedure, signs and car control, the driving test and the law, and publications and instructional techniques. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ADI questions across the four DVSA bands. Free to start, no account needed."
             shots={{ mobile: "/landing/ukadi-mobile.png", desktop: "/landing/ukadi-desktop.png" }}
           />
         </div>

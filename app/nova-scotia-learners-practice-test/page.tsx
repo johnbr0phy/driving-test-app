@@ -141,7 +141,7 @@ export default function NovaScotiaLearnersLandingPage() {
           <ExamLandingHero
             dashboardHref="/nova-scotia-learners/dashboard"
             shortName="NS Class 7"
-            subtitle="200 original questions on Nova Scotia road signs, traffic lights, right-of-way, graduated licensing, demerit points and safe driving, from the Nova Scotia Driver's Handbook. Five tests split 20 signs and 20 rules, like the real one. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Nova Scotia questions. Five tests of 20 signs and 20 rules. Free to start, no account needed."
             shots={{ mobile: "/landing/cans-mobile.png", desktop: "/landing/cans-desktop.png" }}
           />
         </div>

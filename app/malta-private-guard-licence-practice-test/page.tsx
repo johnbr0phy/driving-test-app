@@ -126,7 +126,7 @@ export default function MtGuardLandingPage() {
           <ExamLandingHero
             dashboardHref="/malta-private-guard/dashboard"
             shortName="Malta private guard exam"
-            subtitle="200 original questions for both modules of the Award in Private Security Guard Services you need for a private guard licence in Malta: Cap. 389, arrest and minimum force, patrols, CCTV, fire and flood drills, bomb threats and reports. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Malta private guard licence questions and four 50-question mocks. Free to start, no account needed."
             shots={{ mobile: "/landing/mtguard-mobile.png", desktop: "/landing/mtguard-desktop.png" }}
           />
         </div>

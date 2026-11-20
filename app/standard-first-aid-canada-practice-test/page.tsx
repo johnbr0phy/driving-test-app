@@ -130,7 +130,7 @@ export default function StandardFirstAidLandingPage() {
           <ExamLandingHero
             dashboardHref="/standard-first-aid/dashboard"
             shortName="Standard First Aid"
-            subtitle="200 questions for the written test on a Canadian Standard First Aid and CPR Level C course: CPR and AEDs, choking, bleeding, fractures, medical emergencies and burns. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the Canadian Standard First Aid and CPR Level C test. Free to start, no account needed."
             shots={{ mobile: "/landing/casfa-mobile.png", desktop: "/landing/casfa-desktop.png" }}
           />
         </div>

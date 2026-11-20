@@ -125,7 +125,7 @@ export default function UaeDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/uae-driving-theory/dashboard"
             shortName="UAE driving theory"
-            subtitle="200 original questions for the RTA knowledge test: road signs, roundabouts, lanes and overtaking, school buses, fog, sandstorms and wadis. Four 40-question mock tests with the real pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 UAE RTA theory questions and four 40-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aerta-mobile.png", desktop: "/landing/aerta-desktop.png" }}
           />
         </div>

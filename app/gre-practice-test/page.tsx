@@ -126,7 +126,7 @@ export default function GreLandingPage() {
           <ExamLandingHero
             dashboardHref="/gre/dashboard"
             shortName="GRE"
-            subtitle="194 original questions in the shorter, adaptive GRE format. Tuned for mobile. Free to start, no account needed."
+            subtitle="194 questions in the shorter, adaptive GRE format. Free to start, no account needed."
             shots={{ mobile: "/landing/gre-mobile.png", desktop: "/landing/gre-desktop.png" }}
           />
         </div>

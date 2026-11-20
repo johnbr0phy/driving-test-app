@@ -132,7 +132,7 @@ export default function NzIqnLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-iqn-exam/dashboard"
             shortName="NZ IQN Exam"
-            subtitle="Medication safety and nursing knowledge practice for overseas-trained nurses registering with the Nursing Council of New Zealand. 200 questions with rationales, written for New Zealand practice. Free to start, no account needed."
+            subtitle="200 questions with rationales for overseas-trained nurses. Free to start, no account needed."
             shots={{ mobile: "/landing/nziqn-mobile.png", desktop: "/landing/nziqn-desktop.png" }}
           />
         </div>

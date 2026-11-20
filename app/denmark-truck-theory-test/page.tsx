@@ -129,7 +129,7 @@ export default function DenmarkTruckTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/denmark-truck-theory/dashboard"
             shortName="Truck theory"
-            subtitle="200 original questions in English for the Danish lorry teoriprøve (category C, with CE coupling rules): air brakes and steering, mirrors and the tachograph, driving and rest times, widths, weights and loads, right turns with cyclists, roundabouts and motorways. Eight 25-question mock tests with 20 to pass (guides say the real test has 25; at most five errors pass). Free to start, no account needed."
+            subtitle="200 Danish lorry theory questions in English. Eight 25-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/dktruck-mobile.png", desktop: "/landing/dktruck-desktop.png" }}
           />
         </div>

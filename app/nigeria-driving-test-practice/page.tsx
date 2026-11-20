@@ -126,7 +126,7 @@ export default function NigeriaDrivingTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/nigeria-highway-code/dashboard"
             shortName="Highway Code"
-            subtitle="200 original questions from the FRSC Highway Code and the National Road Traffic Regulations: road signs, junctions, overtaking, parking, expressways, seat belts and what to do after a crash. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 FRSC Highway Code questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ngfrsc-mobile.png", desktop: "/landing/ngfrsc-desktop.png" }}
           />
         </div>

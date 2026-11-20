@@ -138,7 +138,7 @@ export default function OcTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/oc-test/dashboard"
             shortName="OC Test"
-            subtitle="Reading, Mathematical Reasoning and Thinking Skills in two full timed practice tests, plus five drills that teach the basics first. Everything is free, no account needed."
+            subtitle="Two full timed practice tests and five drills that teach the basics. Everything is free, no account needed."
             shots={{ mobile: "/landing/ocnsw-mobile.png", desktop: "/landing/ocnsw-desktop.png" }}
           />
         </div>

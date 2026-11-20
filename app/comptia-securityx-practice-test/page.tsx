@@ -107,7 +107,7 @@ export default function SecurityXLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-securityx/dashboard"
             shortName="SecurityX"
-            subtitle="240 original enterprise-security MCQs, four drills and two practice tests. Interactive performance tasks are not included. Free to start, no account needed."
+            subtitle="240 SecurityX MCQs, four drills and two practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/securityx-mobile.png", desktop: "/landing/securityx-desktop.png" }}
           />
         </div>

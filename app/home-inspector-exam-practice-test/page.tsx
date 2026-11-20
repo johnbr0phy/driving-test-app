@@ -121,7 +121,7 @@ export default function HomeInspectorLandingPage() {
           <ExamLandingHero
             dashboardHref="/home-inspector/dashboard"
             shortName="Home Inspector"
-            subtitle="200 original questions on the EBPHI outline for the National Home Inspector Examination: site and roof, structure, electrical, heating and cooling, plumbing, fireplaces and life safety, reporting, and agreements and ethics. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the EBPHI outline and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nhie-mobile.png", desktop: "/landing/nhie-desktop.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function CtecLandingPage() {
           <ExamLandingHero
             dashboardHref="/ctec-tax-preparer/dashboard"
             shortName="CTEC"
-            subtitle="200 original questions for the final exam of the 60-hour CTEC qualifying course: federal filing, income, deductions and credits on 2025 law, ethics and preparer rules, and California residency, adjustments and credits. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 CTEC qualifying course questions. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ctec-mobile.png", desktop: "/landing/ctec-desktop.png" }}
           />
         </div>

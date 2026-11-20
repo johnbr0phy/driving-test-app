@@ -129,7 +129,7 @@ export default function JambUseOfEnglishLandingPage() {
           <ExamLandingHero
             dashboardHref="/jamb-use-of-english/dashboard"
             shortName="JAMB English"
-            subtitle="200 original questions on comprehension, lexis and structure and oral forms, with full 60-question timed tests. Tuned for mobile. No account needed."
+            subtitle="200 comprehension, lexis, structure and oral forms questions, with 60-question timed tests. No account needed."
             shots={{ mobile: "/landing/jambeng-mobile.png", desktop: "/landing/jambeng-desktop.png" }}
           />
         </div>

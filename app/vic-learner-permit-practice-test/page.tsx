@@ -140,7 +140,7 @@ export default function VicLearnerPermitLandingPage() {
           <ExamLandingHero
             dashboardHref="/vic-learner-permit/dashboard"
             shortName="Victoria learner permit"
-            subtitle="200 questions from Road to Solo Driving on give way rules, speed limits, signs, alcohol limits, L and P plate rules, hook turns and trams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 VIC learner permit questions from Road to Solo Driving. Free to start, no account needed."
             shots={{ mobile: "/landing/auvic-mobile.png", desktop: "/landing/auvic-desktop.png" }}
           />
         </div>

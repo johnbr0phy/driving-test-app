@@ -123,7 +123,7 @@ export default function ClaudeArchitectLandingPage() {
           <ExamLandingHero
             dashboardHref="/claude-certified-architect/dashboard"
             shortName="Claude CCA-F"
-            subtitle="200 original scenario questions on agent design, Claude Code, prompts and structured output, tools and MCP, and context management. Four 50-question tests with every answer explained. Tuned for mobile. Free to start. Not affiliated with Anthropic."
+            subtitle="200 scenario questions and four 50-question tests. Free to start. Not affiliated with Anthropic."
             shots={{ mobile: "/landing/ccaf-mobile.png", desktop: "/landing/ccaf-desktop.png" }}
           />
         </div>

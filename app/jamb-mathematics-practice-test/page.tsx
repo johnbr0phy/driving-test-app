@@ -131,7 +131,7 @@ export default function JambMathematicsLandingPage() {
           <ExamLandingHero
             dashboardHref="/jamb-mathematics/dashboard"
             shortName="JAMB Maths"
-            subtitle="200 original questions across the whole UTME Mathematics syllabus, with full 40-question timed tests and worked answers. Tuned for mobile. No account needed."
+            subtitle="200 UTME Mathematics questions with 40-question timed tests and worked answers. No account needed."
             shots={{ mobile: "/landing/jambmath-mobile.png", desktop: "/landing/jambmath-desktop.png" }}
           />
         </div>

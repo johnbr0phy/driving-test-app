@@ -126,7 +126,7 @@ export default function JeeMainLandingPage() {
           <ExamLandingHero
             dashboardHref="/jee-main/dashboard"
             shortName="JEE Main"
-            subtitle="204 original JEE Main questions on Mathematics, Physics and Chemistry, with numerical value questions. Tuned for mobile. No account needed."
+            subtitle="204 JEE Main questions on Mathematics, Physics and Chemistry. No account needed."
             shots={{ mobile: "/landing/jeemain-mobile.png", desktop: "/landing/jeemain-desktop.png" }}
           />
         </div>

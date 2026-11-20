@@ -133,7 +133,7 @@ export default function ActLandingPage() {
           <ExamLandingHero
             dashboardHref="/act/dashboard"
             shortName="ACT"
-            subtitle="Two full-length enhanced ACTs with real passages, section timing and a 1 to 36 score estimate, plus eleven skill drills built for your phone. Both are free, no account needed."
+            subtitle="Two full enhanced ACTs with a 1 to 36 score estimate, plus eleven drills. Both are free, no account needed."
             shots={{ mobile: "/landing/act-mobile.png", desktop: "/landing/act-desktop.png" }}
           />
         </div>

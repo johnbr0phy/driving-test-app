@@ -140,7 +140,7 @@ export default function AlbertaClass7LandingPage() {
           <ExamLandingHero
             dashboardHref="/alberta-class-7/dashboard"
             shortName="Class 7"
-            subtitle="200 questions from the 2026 Alberta Driver's Guide on signs, signals, right-of-way, roundabouts, parking, winter driving, school buses, GDL rules, demerits and impaired driving. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions from the 2026 Alberta Driver's Guide. Free to start, no account needed."
             shots={{ mobile: "/landing/caab-mobile.png", desktop: "/landing/caab-desktop.png" }}
           />
         </div>

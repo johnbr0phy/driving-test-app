@@ -139,7 +139,7 @@ export default function SaskatchewanLearnersLandingPage() {
           <ExamLandingHero
             dashboardHref="/saskatchewan-learners/dashboard"
             shortName="SK Class 7"
-            subtitle="200 original questions on Saskatchewan road signs, traffic lights, right-of-way, the GDL program, winter driving and impaired driving, all from the SGI Driver's Handbook. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Saskatchewan learner's questions from the SGI Driver's Handbook. Free to start, no account needed."
             shots={{ mobile: "/landing/cask-mobile.png", desktop: "/landing/cask-desktop.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function GreeceDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/greece-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English on the Greek Highway Code and road signs: priority from the right, roundabouts, the 2025 speed limits, overtaking, parking and emergencies. Six 30-question mock tests where one mistake is all you can afford. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Greek Highway Code questions in English. Six 30-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/grdriving-mobile.png", desktop: "/landing/grdriving-desktop.png" }}
           />
         </div>

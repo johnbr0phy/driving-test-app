@@ -128,7 +128,7 @@ export default function BcCoreLandingPage() {
           <ExamLandingHero
             dashboardHref="/bc-core-hunter-exam/dashboard"
             shortName="CORE exam"
-            subtitle="200 original questions on the law behind the BC CORE hunter exam: the Wildlife Act and Hunting Regulation, firearm law, migratory bird rules, first aid and Aboriginal rights. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 BC CORE hunter exam questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cacore-mobile.png", desktop: "/landing/cacore-desktop.png" }}
           />
         </div>

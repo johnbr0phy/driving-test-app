@@ -126,7 +126,7 @@ export default function PhinsuranceLandingPage() {
           <ExamLandingHero
             dashboardHref="/insurance-commission-exam/dashboard"
             shortName="IC exam"
-            subtitle="200 original questions for the Insurance Commission licensing exam for traditional life agents: the Insurance Code, beneficiaries, grace period and reinstatement, term, whole life and endowment plans, cash values, underwriting and agent conduct. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Insurance Commission exam questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/phinsurance-mobile.png", desktop: "/landing/phinsurance-desktop.png" }}
           />
         </div>

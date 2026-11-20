@@ -128,7 +128,7 @@ export default function SpainDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/spain-driving-theory/dashboard"
             shortName="DGT theory test"
-            subtitle="200 original questions in English on the Spanish traffic rules the DGT exam for the permiso B asks about: signs, priority, speed limits, overtaking cyclists, parking, lights, alcohol and the V-16 beacon. Six 30-question tests, 27 to pass. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 DGT questions in English. Six 30-question tests, 27 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/esdgt-mobile.png", desktop: "/landing/esdgt-desktop.png" }}
           />
         </div>

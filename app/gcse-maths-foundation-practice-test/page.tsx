@@ -131,7 +131,7 @@ export default function GcseMathsLandingPage() {
           <ExamLandingHero
             dashboardHref="/gcse-maths/dashboard"
             shortName="GCSE Maths"
-            subtitle="Two full sets of Foundation practice papers, non-calculator and calculator, plus five topic drills that teach the basics first. Free, no account needed."
+            subtitle="Two full sets of Foundation papers, plus five topic drills that teach the basics. Free, no account needed."
             shots={{ mobile: "/landing/gcsemaths-mobile.png", desktop: "/landing/gcsemaths-desktop.png" }}
           />
         </div>

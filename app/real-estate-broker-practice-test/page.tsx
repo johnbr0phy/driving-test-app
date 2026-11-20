@@ -167,7 +167,7 @@ export default function RealEstateBrokerLandingPage() {
           <ExamLandingHero
             dashboardHref="/real-estate-broker/dashboard"
             shortName="Real Estate Broker"
-            subtitle="200 original questions on selected national broker topics: property, title, valuation, agency, brokerage operations, disclosures, finance and math. State law is separate. Free to start, no account needed."
+            subtitle="200 national real estate broker questions. State law is separate. Free to start, no account needed."
             shots={{ mobile: "/landing/realestatebroker-mobile.png", desktop: "/landing/realestatebroker-desktop.png" }}
           />
         </div>

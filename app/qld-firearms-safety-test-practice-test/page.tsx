@@ -126,7 +126,7 @@ export default function QldFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/qld-firearms-licence/dashboard"
             shortName="QLD Firearms Safety"
-            subtitle="200 original questions for the Queensland firearms safety course: the Weapons Act 1990, weapon categories, secure storage, transport, ranges and the National Firearms Safety Code. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Queensland firearms safety questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aufirearmsqld-mobile.png", desktop: "/landing/aufirearmsqld-desktop.png" }}
           />
         </div>

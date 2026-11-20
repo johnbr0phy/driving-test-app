@@ -138,7 +138,7 @@ export default function PraxisPltLandingPage() {
           <ExamLandingHero
             dashboardHref="/praxis-plt/dashboard"
             shortName="Praxis PLT"
-            subtitle="200 original selected-response questions for the Principles of Learning and Teaching: Grades K-6 (5622), on all four ETS content categories. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Praxis PLT (5622) questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/praxisplt-mobile.png", desktop: "/landing/praxisplt-desktop.png" }}
           />
         </div>

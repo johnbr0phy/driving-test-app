@@ -95,6 +95,7 @@ import "./inrto";
 import "./nasm";
 import "./rbt";
 import "./cca";
+import "./rhit";
 import "./cpc";
 import "./jelec";
 import "./barber";

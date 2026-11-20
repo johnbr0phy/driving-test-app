@@ -3141,6 +3141,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AAPC's Taking the CPC Exam page, checked October 2026",
     source: { name: "AAPC: Taking the CPC Exam", url: "https://www.aapc.com/certifications/cpc/taking-the-cpc-exam" },
   },
+  rhit: {
+    answer:
+      "The RHIT is AHIMA's Registered Health Information Technician exam, the credential for health information technicians who keep medical records complete and secure, release them lawfully, code and abstract data and support the revenue cycle. It has 150 multiple-choice questions, 130 scored and 20 unscored pretest items, in 3 hours 30 minutes at a Pearson VUE test center, and you can flag questions and go back. The passing score is a scaled 300. It covers six domains: data content and information governance (19 to 25 percent), access, disclosure, privacy and security, data analytics, revenue cycle management (19 to 25 percent), compliance and leadership. You qualify by completing an associate-level CAHIIM-accredited HIM program.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (130 scored, 20 pretest)" },
+      { label: "Time", value: "3 hours 30 minutes" },
+      { label: "Pass mark", value: "Scaled score of 300" },
+      { label: "Navigation", value: "Move between questions and flag for review" },
+      { label: "Biggest domains", value: "Data Content and Revenue Cycle, 19-25% each" },
+      { label: "Eligibility", value: "Associate-level CAHIIM-accredited HIM program" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "AHIMA" },
+    ],
+    basedOn: "AHIMA's RHIT certification page and the RHIT Content Outline (effective 10/01/2022), checked November 2026",
+    source: { name: "AHIMA: Registered Health Information Technician (RHIT)", url: "https://www.ahima.org/certification/rhit/" },
+  },
   cca: {
     answer:
       "The CCA is AHIMA's Certified Coding Associate exam, the entry-level credential for medical coders in hospitals and physician practices. It has 105 multiple-choice questions, 90 scored and 15 unscored pretest items, in 2 hours at a Pearson VUE test center, and you cannot go back to an earlier question. The passing score is a scaled 300. It covers six domains: clinical classification systems (30 to 34 percent), reimbursement methodologies, health records and data content, compliance, information technologies, and confidentiality and privacy. You must bring the current ICD-10-CM, ICD-10-PCS and AMA CPT Professional code books.",

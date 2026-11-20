@@ -5310,6 +5310,19 @@
     --brand-gradient-to: 12 45% 95%;
   }
 
+  [data-theme="rhit"] {
+    --brand: 280 55% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 45% 95%;
+    --brand-hover: 280 55% 14%;
+    --brand-dark: 280 55% 12%;
+    --brand-darker: 280 50% 8%;
+    --brand-muted: 280 25% 68%;
+    --brand-border: 280 30% 78%;
+    --brand-border-light: 280 30% 88%;
+    --brand-gradient-to: 295 45% 95%;
+  }
+
   [data-theme="mace"] {
     --brand: 300 45% 22%;
     --brand-foreground: 0 0% 100%;
@@ -11223,6 +11236,18 @@
     --brand-muted: 357 20% 45%;
     --brand-dark: 357 15% 65%;
     --brand-darker: 357 12% 78%;
+  }
+
+  .dark [data-theme="rhit"] {
+    --brand: 280 55% 50%;
+    --brand-hover: 280 55% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 295 40% 11%;
+    --brand-border-light: 280 30% 24%;
+    --brand-border: 280 30% 34%;
+    --brand-muted: 280 25% 45%;
+    --brand-dark: 280 55% 65%;
+    --brand-darker: 280 50% 78%;
   }
 
   .dark [data-theme="mace"] {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
@@ -13,6 +13,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
 import { LandingTryQuestion } from "@/components/exam/LandingTryQuestion";
+import { LANDING_TRY_INIT_SCRIPT, noteLandingTryEnrolled } from "@/lib/landingTryTest";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
@@ -30,6 +31,7 @@ import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion
 const COPY = {
   en: {
     start: "Start practicing",
+    orFull: "Or start the full practice set",
     dashboard: "Go to Dashboard",
     mobile: "Train on mobile",
     desktop: "Test on desktop",
@@ -181,7 +183,7 @@ function useStartCta(dashboardHref: string, lang?: Language) {
   const baseCopy = COPY[(lang ?? "en") as CopyLang] ?? COPY.en;
   const copy = (!lang || lang === "en") && pageEnglishLocale(dashboardHref) === "en-GB"
     ? { ...baseCopy, start: "Start practising" } : baseCopy;
-  return { hasSession, onStart, copy };
+  return { hasSession, loading, onStart, copy };
 }
 
 export function ExamLandingHeroClient({
@@ -200,26 +202,63 @@ export function ExamLandingHeroClient({
   /** A playable question under the Start button (lib/landingTryQuestion.ts). */
   tryQuestion?: TryQuestion | null;
 }) {
-  const { hasSession, onStart, copy } = useStartCta(dashboardHref, lang);
+  const { hasSession, loading, onStart, copy } = useStartCta(dashboardHref, lang);
   // Answering the try card starts a guest session, which would turn
   // "Start practicing" into "Go to Dashboard" and shift the page while the
   // visitor reads. Hold the label it had when they answered.
   const [heldLabel, setHeldLabel] = useState<string | null>(null);
   const label = heldLabel ?? (hasSession ? copy.dashboard : copy.start);
 
-  return (
-    <LandingIntro subtitle={subtitle} action={
-        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-          <Link href={dashboardHref} onClick={onStart}>
-            {label}
+  // Answering the card counts as starting the exam, so next visit gets "Go to
+  // Dashboard" rather than the same question again.
+  const markExamStarted = useStore((state) => state.markExamStarted);
+  const hold = () => {
+    setHeldLabel((h) => h ?? label);
+    const id = getExamByPath(dashboardHref)?.id;
+    if (id) markExamStarted(id);
+  };
+  const startPill = (
+    <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+      <Link href={dashboardHref} onClick={onStart}>
+        {label}
+      </Link>
+    </Button>
+  );
+  // Someone who already started this exam (signed in or guest) gets only
+  // "Go to Dashboard": the question is for new visitors.
+  const returning = hasSession && !heldLabel;
+  // New visitors join the layout test (lib/landingTryTest.ts) once auth has
+  // settled, so a returning visitor is never counted.
+  const tryExam = tryQuestion?.examId;
+  useEffect(() => {
+    if (tryExam && !loading && !hasSession) noteLandingTryEnrolled(tryExam);
+  }, [tryExam, loading, hasSession]);
+
+  // The question comes first (both arms of landingTry2): the inline script
+  // picks the arm before paint and CSS hides arm a's Start link for arm b.
+  if (tryQuestion && !returning) {
+    return (
+      <>
+        <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_INIT_SCRIPT }} />
+        {/* Lets globals.css tighten the page's H1 on phones so the options fit above the fold. */}
+        <span data-try-first hidden />
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">{subtitle}</p>
+        <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={hold} />
+        <div className="landing-try-start mt-6 flex flex-col items-center gap-3">
+          <Link href={dashboardHref} onClick={onStart} className="text-base font-medium text-gray-700 dark:text-gray-200 underline underline-offset-4 decoration-gray-400 hover:text-gray-900 dark:hover:text-white">
+            {(copy as { orFull?: string }).orFull ?? copy.start}
           </Link>
-        </Button>
-      }>
-      {tryQuestion && (
-        <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
-      )}
-      {/* The question takes the screenshots' place; pages with no question keep them. */}
-      {!tryQuestion && (
+        </div>
+      </>
+    );
+  }
+
+  if (tryQuestion) return <LandingIntro subtitle={subtitle} action={startPill} />;
+
+  return (
+    <LandingIntro subtitle={subtitle} action={startPill}>
+      {/* Pages with no question keep the screenshots. */}
+      {(
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">

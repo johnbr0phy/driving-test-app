@@ -210,6 +210,13 @@ const nextConfig: NextConfig = {
         source: "/admin/preview/:path*",
         headers: [{ key: "X-Frame-Options", value: "SAMEORIGIN" }],
       },
+      {
+        // The A/B tests tab frames the landing hero pinned to each arm with
+        // ?tryq= (lib/landingTryTest.ts). Same origin only.
+        source: "/:path*",
+        has: [{ type: "query", key: "tryq" }],
+        headers: [{ key: "X-Frame-Options", value: "SAMEORIGIN" }],
+      },
       // Pages written in another language say so (lib/urlLanguage.ts).
       ...urlLanguageHeaders(),
       ...seoPaths.map((source) => ({

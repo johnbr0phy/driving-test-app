@@ -12739,17 +12739,38 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
 }
 
 /* The landing's playable question (components/exam/LandingTryQuestion.tsx):
-   the answer letters pulse twice when the card comes into view, so it reads
-   as tappable rather than a screenshot. */
+   about 2.5 seconds after the card is on screen, once the title has been
+   read, the "Try one now" label glows and the answer letters pulse twice, so
+   it reads as tappable rather than a screenshot. Nothing changes size or
+   position. */
 @keyframes try-pulse {
   0% { box-shadow: 0 0 0 0 hsl(var(--brand) / 0.55); }
   100% { box-shadow: 0 0 0 10px hsl(var(--brand) / 0); }
 }
+@keyframes try-label {
+  0%, 100% { background-color: hsl(var(--brand) / 0); }
+  35% { background-color: hsl(var(--brand) / 0.16); }
+}
 @media (prefers-reduced-motion: no-preference) {
+  .try-play .try-label {
+    animation: try-label 1.1s ease-in-out 2;
+  }
   .try-play .try-badge {
     animation: try-pulse 1.1s ease-out 2;
-    animation-delay: calc(300ms + var(--i, 0) * 120ms);
+    animation-delay: calc(500ms + var(--i, 0) * 120ms);
   }
+}
+
+/* The "Try one now" layout test (lib/landingTryTest.ts): the question comes
+   first, so on phones the landing's H1 (written in each page, so styled from
+   here) and the top padding shrink and all the options sit above the fold.
+   Arm b has no Start link under the card. */
+@media (max-width: 639px) {
+  div:has(> [data-try-first]) { padding-top: 1.75rem; }
+  div:has(> [data-try-first]) > h1 { font-size: 1.75rem; line-height: 2.15rem; margin-bottom: 0.75rem; }
+}
+html[data-ltq="b"] .landing-try-start {
+  display: none;
 }
 
 /* /admin: a table's header row while it is pinned under the tab bar

@@ -480,6 +480,14 @@ const CASES = [
 ];
 
 for (const [q, region, id] of CASES) {
+  ["limited scope x-ray", "US", "lmrt"],
+  ["limited scope radiography", "US", "lmrt"],
+  ["bxmo", "US", "lmrt"],
+  ["limited x-ray machine operator", "US", "lmrt"],
+  ["arrt limited scope", "US", "lmrt"],
+];
+
+for (const [q, region, id] of CASES) {
   test(`"${q}" (${region}) opens ${id}`, () => {
     const res = searchAllTests(q, region);
     assert.ok(!res.partial, `"${q}" is only a partial match`);

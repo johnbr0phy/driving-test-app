@@ -5044,6 +5044,19 @@
     --brand-border-light: 191 27% 89%;
     --brand-gradient-to: 205 60% 96%;
   }
+  /* ARRT Limited Scope theme: deep indigo (260 50% 18%) */
+  [data-theme="lmrt"] {
+    --brand: 260 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 260 40% 96%;
+    --brand-hover: 260 50% 14%;
+    --brand-dark: 260 50% 12%;
+    --brand-darker: 260 45% 8%;
+    --brand-muted: 260 25% 70%;
+    --brand-border: 260 25% 80%;
+    --brand-border-light: 260 25% 89%;
+    --brand-gradient-to: 274 40% 96%;
+  }
 
   /* NCE (National Counselor Examination) theme */
   [data-theme="nce"] {
@@ -12489,6 +12502,17 @@
     --brand-muted: 329 20% 45%;
     --brand-dark: 329 30% 65%;
     --brand-darker: 329 30% 78%;
+  }
+  .dark [data-theme="lmrt"] {
+    --brand: 260 50% 50%;
+    --brand-hover: 260 50% 42%;
+    --brand-light: 260 40% 13%;
+    --brand-gradient-to: 274 40% 11%;
+    --brand-border-light: 260 25% 24%;
+    --brand-border: 260 25% 34%;
+    --brand-muted: 260 25% 45%;
+    --brand-dark: 260 50% 65%;
+    --brand-darker: 260 45% 78%;
   }
   .dark [data-theme="cbcs"] {
     --brand: 322 45% 50%;

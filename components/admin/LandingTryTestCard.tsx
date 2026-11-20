@@ -77,7 +77,7 @@ export function LandingTryTestCard() {
       <p className={SUB}>
         New visitors who open an exam landing (never answered anything on Tigertest) are split 50/50. A (control) gets the current layout: Start
         button, then the card. B gets the question straight under the subtitle with no Start button and no &quot;Pick an answer&quot; chip, and
-        its label glows a few seconds after the page opens. Each outcome counts once per browser,
+        its label glows a few seconds after the page opens. A visit counts only where B&apos;s four answers fit the visitor&apos;s first screen; elsewhere both arms see the current layout and are not counted. Each outcome counts once per browser,
         within 7 days of landing.
         {data.since && live && ` Counting since ${data.since.slice(0, 10)}.`}
       </p>

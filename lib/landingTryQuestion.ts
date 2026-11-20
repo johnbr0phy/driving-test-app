@@ -143,6 +143,14 @@ function hash(s: string): number {
 export const TRY_FITS_CHARS = 220;
 /** Reading-comprehension items: a whole passage never fits a hero. */
 const PASSAGE_STEM = /^\s*(read the passage|passage:)/i;
+/**
+ * Trick wording that makes a first question harder than it needs to be. The
+ * banks carry no difficulty rating and pick accuracy lives in Firestore, so
+ * a short, direct question without these is the best offline proxy for easy.
+ */
+const TRICKY_STEM = /\b(not|except|least|never|false|incorrect|untrue)\b/i;
+/** How many characters of length trick wording costs a candidate. */
+const TRICKY_PENALTY = 150;
 
 export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): LandingTryQuestion | null {
   const base = getExamByPath(dashboardHref);
@@ -151,10 +159,11 @@ export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): 
   const exam = localizeExam(base, language);
   // The shortest suitable question, so the card fits a phone: set 1 when it
   // has one that fits, else the shortest across the free (unlocked) sets.
-  // Passages lose to anything else. The answer is recorded in the set it
+  // Passages lose to anything else, and trick wording (NOT, EXCEPT...) counts
+  // as extra length, so a first question stays direct. The answer is recorded in the set it
   // came from and "Keep going" opens that set.
   const locked = new Set(lockedTrainingParts(base).map((p) => `${p.set.setNumber}:${p.part}`));
-  type Pick = { q: Question; setNumber: number; part?: number; score: number };
+  type Pick = { q: Question; setNumber: number; part?: number; score: number; len: number };
   let best = null as Pick | null;
   const sets = [...exam.trainingSets].sort((a, b) => a.setNumber - b.setNumber);
   for (const def of sets) {
@@ -173,8 +182,8 @@ export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): 
       for (const x of pool) {
         if (getSignIdForQuestion(x.questionId) || hasPositionDependentAnswers(x) || !x.explanation || !x.optionD) continue;
         const len = x.question.length + x.optionA.length + x.optionB.length + x.optionC.length + x.optionD.length;
-        const score = len + (PASSAGE_STEM.test(x.question) ? 100_000 : 0);
-        if (!best || score < best.score) best = { q: x, setNumber: def.setNumber, part: partNo, score };
+        const score = len + (PASSAGE_STEM.test(x.question) ? 100_000 : 0) + (TRICKY_STEM.test(x.question) ? TRICKY_PENALTY : 0);
+        if (!best || score < best.score) best = { q: x, setNumber: def.setNumber, part: partNo, score, len };
       }
     }
     if (best && best.score <= TRY_FITS_CHARS) break;

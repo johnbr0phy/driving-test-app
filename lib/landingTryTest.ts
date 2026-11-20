@@ -97,18 +97,59 @@ function save(r: Stored) {
   }
 }
 
+// ── Phone fit ───────────────────────────────────────────────────────────────
+// Only pages where arm b's layout shows all four answers on the visitor's
+// first screen are in the test. Every visitor, in either arm, is measured
+// against b's layout before the first paint (LANDING_TRY_FIT_SCRIPT, inline
+// right after the card): when the last answer would sit below the screen, the
+// page shows today's layout (data-ltq="off") and the visitor is not enrolled
+// there. The same rule for both arms keeps them comparable; desktops and
+// tablets always fit. Decided once per page, so it never flips while reading.
+
+/** Space kept under the last answer, for late font loads. */
+export const LANDING_TRY_FIT_MARGIN_PX = 8;
+
+// A fixed string, kept in step with settleLandingTryLayout() below.
+export const LANDING_TRY_FIT_SCRIPT =
+  '(function(){try{var d=document,h=d.documentElement,a=d.__ltq;if(a!=="a"&&a!=="b")return;h.setAttribute("data-ltq","b");var b=d.querySelectorAll(".try-card .try-badge"),f=true;if(b.length){var n=b[b.length-1].closest("button");if(n)f=n.getBoundingClientRect().bottom+(window.scrollY||0)<=window.innerHeight-8}d.__ltqFit=f;d.__ltqFitPath=location.pathname;h.setAttribute("data-ltq",f?a:"off")}catch(e){}})();';
+
+type LtqDocument = Document & { __ltq?: unknown; __ltqFit?: boolean; __ltqFitPath?: string };
+
+function lastAnswerFits(): boolean {
+  const badges = document.querySelectorAll(".try-card .try-badge");
+  const last = badges[badges.length - 1]?.closest("button");
+  if (!last) return true;
+  return last.getBoundingClientRect().bottom + (window.scrollY || 0) <= window.innerHeight - LANDING_TRY_FIT_MARGIN_PX;
+}
+
 /**
- * Puts the arm the inline script drew back on <html>: React's hydration of
- * the root can drop the attribute, which would show b's visitors a's layout
- * while counting them in b. Called from a layout effect, so before paint.
- * Uses the per-document copy, not localStorage, which every frame shares.
+ * Puts the right layout on <html> before paint, from a layout effect: React's
+ * hydration of the root can drop the attribute the inline scripts set, and a
+ * client-side move to another landing runs no inline script, so its fit is
+ * measured here instead. Uses the per-document arm, not localStorage, which
+ * every frame shares.
  */
-export function reapplyLandingTryArm() {
+export function settleLandingTryLayout() {
   if (typeof document === "undefined") return;
-  const drawn = (document as Document & { __ltq?: unknown }).__ltq;
-  if (isLandingTryArm(drawn) && document.documentElement.getAttribute("data-ltq") !== drawn) {
-    document.documentElement.setAttribute("data-ltq", drawn);
+  const d = document as LtqDocument;
+  const arm = isLandingTryArm(d.__ltq) ? d.__ltq : load()?.arm;
+  if (!arm) return;
+  d.__ltq = arm;
+  const html = d.documentElement;
+  if (d.__ltqFitPath !== location.pathname) {
+    html.setAttribute("data-ltq", "b");
+    d.__ltqFit = lastAnswerFits();
+    d.__ltqFitPath = location.pathname;
   }
+  const want = d.__ltqFit ? arm : "off";
+  if (html.getAttribute("data-ltq") !== want) html.setAttribute("data-ltq", want);
+}
+
+/** Whether this page's card fits the visitor's screen in b's layout, so the visit is in the test. */
+export function landingTryFits(): boolean {
+  if (typeof document === "undefined") return false;
+  const d = document as LtqDocument;
+  return d.__ltqFit === true && d.__ltqFitPath === location.pathname;
 }
 
 /** This browser's arm, or null when the init script could not run (a's layout shows). */

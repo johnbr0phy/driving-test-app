@@ -74,3 +74,24 @@ test("answers per visitor: means and a Welch test from totals and squares", () =
   assert.ok(m.p > 0 && m.p < 1);
   assert.strictEqual(landingTryMeans({}, {}).p, 1);
 });
+
+test("the fit script keeps the arm when b's last answer fits, else falls back to today's layout", () => {
+  const { LANDING_TRY_FIT_SCRIPT } = require("../lib/landingTryTest.ts");
+  const run = (arm, bottom, innerHeight = 664) => {
+    const attrs = {};
+    const seen = [];
+    const doc = {
+      __ltq: arm,
+      documentElement: { setAttribute: (k, v) => { attrs[k] = v; seen.push(v); } },
+      querySelectorAll: () => [{ closest: () => ({ getBoundingClientRect: () => ({ bottom }) }) }],
+    };
+    new Function("document", "window", "location", LANDING_TRY_FIT_SCRIPT)(doc, { innerHeight, scrollY: 0 }, { pathname: "/x" });
+    return { attr: attrs["data-ltq"], fit: doc.__ltqFit, measuredAsB: seen[0] === "b", path: doc.__ltqFitPath };
+  };
+  assert.deepStrictEqual(run("a", 600), { attr: "a", fit: true, measuredAsB: true, path: "/x" });
+  assert.deepStrictEqual(run("b", 600), { attr: "b", fit: true, measuredAsB: true, path: "/x" });
+  assert.deepStrictEqual(run("a", 700), { attr: "off", fit: false, measuredAsB: true, path: "/x" }, "both arms fall back alike");
+  assert.deepStrictEqual(run("b", 700), { attr: "off", fit: false, measuredAsB: true, path: "/x" });
+  assert.strictEqual(run("b", 660).attr, "off", "keeps a margin under the last answer");
+  assert.strictEqual(run(undefined, 600).attr, undefined, "no arm, nothing to do");
+});

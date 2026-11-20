@@ -13,7 +13,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
 import { LandingTryQuestion, type TryRichNodes } from "@/components/exam/LandingTryQuestion";
-import { LANDING_TRY_INIT_SCRIPT, noteLandingTryEnrolled, reapplyLandingTryArm } from "@/lib/landingTryTest";
+import { LANDING_TRY_FIT_SCRIPT, LANDING_TRY_INIT_SCRIPT, landingTryFits, noteLandingTryEnrolled, settleLandingTryLayout } from "@/lib/landingTryTest";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
@@ -229,16 +229,18 @@ export function ExamLandingHeroClient({
   // Someone who already started this exam (signed in or guest) gets only
   // "Go to Dashboard": the question is for new visitors.
   const returning = hasSession && !heldLabel;
-  // New visitors join the layout test (lib/landingTryTest.ts) once auth has
-  // settled, so a returning visitor is never counted.
+  // Before paint: the arm, or today's layout where b's answers would not all
+  // fit this visitor's screen (lib/landingTryTest.ts). Hydration can strip the
+  // attribute, and a client-side move runs no inline script.
   const tryExam = tryQuestion?.examId;
-  useEffect(() => {
-    if (tryExam && !loading && !hasSession) noteLandingTryEnrolled(tryExam);
-  }, [tryExam, loading, hasSession]);
-  // Hydration can strip the arm from <html>; put it back before paint.
   useLayoutEffect(() => {
-    if (tryExam) reapplyLandingTryArm();
+    if (tryExam) settleLandingTryLayout();
   });
+  // New visitors join the layout test once auth has settled (a returning
+  // visitor is never counted), and only where the card fits their screen.
+  useEffect(() => {
+    if (tryExam && !loading && !hasSession && landingTryFits()) noteLandingTryEnrolled(tryExam);
+  }, [tryExam, loading, hasSession]);
 
   // The layout test (landingTry2, lib/landingTryTest.ts): the inline script
   // picks the arm before paint and marks <html data-ltq>. This markup is the
@@ -254,6 +256,8 @@ export function ExamLandingHeroClient({
         <p className="try-sub text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
         <div className="landing-try-start flex flex-col items-center gap-3">{startPill}</div>
         <LandingTryQuestion q={tryQuestion} rich={tryRich} lang={lang} onAnswer={hold} />
+        {/* Measures b's layout on this screen before paint; too long falls back to today's layout. */}
+        <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_FIT_SCRIPT }} />
       </>
     );
   }

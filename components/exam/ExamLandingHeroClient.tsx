@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
@@ -13,6 +13,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
 import { LandingTryQuestion, type TryRichNodes } from "@/components/exam/LandingTryQuestion";
+import { LANDING_TRY_FIT_SCRIPT, LANDING_TRY_INIT_SCRIPT, landingTryFits, noteLandingTryEnrolled, settleLandingTryLayout } from "@/lib/landingTryTest";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
@@ -181,7 +182,7 @@ function useStartCta(dashboardHref: string, lang?: Language) {
   const baseCopy = COPY[(lang ?? "en") as CopyLang] ?? COPY.en;
   const copy = (!lang || lang === "en") && pageEnglishLocale(dashboardHref) === "en-GB"
     ? { ...baseCopy, start: "Start practising" } : baseCopy;
-  return { hasSession, onStart, copy };
+  return { hasSession, loading, onStart, copy };
 }
 
 export function ExamLandingHeroClient({
@@ -203,26 +204,70 @@ export function ExamLandingHeroClient({
   /** Server-drawn rich text for a v2 question with markup or KaTeX. */
   tryRich?: TryRichNodes;
 }) {
-  const { hasSession, onStart, copy } = useStartCta(dashboardHref, lang);
+  const { hasSession, loading, onStart, copy } = useStartCta(dashboardHref, lang);
   // Answering the try card starts a guest session, which would turn
   // "Start practicing" into "Go to Dashboard" and shift the page while the
   // visitor reads. Hold the label it had when they answered.
   const [heldLabel, setHeldLabel] = useState<string | null>(null);
   const label = heldLabel ?? (hasSession ? copy.dashboard : copy.start);
 
+  // Answering the card counts as starting the exam, so next visit gets "Go to
+  // Dashboard" rather than the same question again.
+  const markExamStarted = useStore((state) => state.markExamStarted);
+  const hold = () => {
+    setHeldLabel((h) => h ?? label);
+    const id = getExamByPath(dashboardHref)?.id;
+    if (id) markExamStarted(id);
+  };
+  const startPill = (
+    <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
+      <Link href={dashboardHref} onClick={onStart}>
+        {label}
+      </Link>
+    </Button>
+  );
+  // Someone who already started this exam (signed in or guest) gets only
+  // "Go to Dashboard": the question is for new visitors.
+  const returning = hasSession && !heldLabel;
+  // Before paint: the arm, or today's layout where b's answers would not all
+  // fit this visitor's screen (lib/landingTryTest.ts). Hydration can strip the
+  // attribute, and a client-side move runs no inline script.
+  const tryExam = tryQuestion?.examId;
+  useLayoutEffect(() => {
+    if (tryExam) settleLandingTryLayout();
+  });
+  // New visitors join the layout test once auth has settled (a returning
+  // visitor is never counted), and only where the card fits their screen.
+  useEffect(() => {
+    if (tryExam && !loading && !hasSession && landingTryFits()) noteLandingTryEnrolled(tryExam);
+  }, [tryExam, loading, hasSession]);
+
+  // The layout test (landingTry2, lib/landingTryTest.ts): the inline script
+  // picks the arm before paint and marks <html data-ltq>. This markup is the
+  // shipped layout (LandingIntro plus the card), which arm a keeps; for arm b
+  // globals.css hides the Start button and the chip, tightens the subtitle
+  // and pulls the card up, so one card serves both arms without a flash.
+  if (tryQuestion && !returning) {
+    return (
+      <>
+        <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_INIT_SCRIPT }} />
+        {/* Lets globals.css shrink the page's H1 on phones in arm b. */}
+        <span data-try-first hidden />
+        <p className="try-sub text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
+        <div className="landing-try-start flex flex-col items-center gap-3">{startPill}</div>
+        <LandingTryQuestion q={tryQuestion} rich={tryRich} lang={lang} onAnswer={hold} />
+        {/* Measures b's layout on this screen before paint; too long falls back to today's layout. */}
+        <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_FIT_SCRIPT }} />
+      </>
+    );
+  }
+
+  if (tryQuestion) return <LandingIntro subtitle={subtitle} action={startPill} />;
+
   return (
-    <LandingIntro subtitle={subtitle} action={
-        <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
-          <Link href={dashboardHref} onClick={onStart}>
-            {label}
-          </Link>
-        </Button>
-      }>
-      {tryQuestion && (
-        <LandingTryQuestion q={tryQuestion} rich={tryRich} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
-      )}
-      {/* The question takes the screenshots' place; pages with no question keep them. */}
-      {!tryQuestion && (
+    <LandingIntro subtitle={subtitle} action={startPill}>
+      {/* Pages with no question keep the screenshots. */}
+      {(
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="relative">
           <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">

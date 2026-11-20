@@ -12913,17 +12913,56 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
 }
 
 /* The landing's playable question (components/exam/LandingTryQuestion.tsx):
-   the answer letters pulse twice when the card comes into view, so it reads
-   as tappable rather than a screenshot. */
+   draws the eye so the card reads as tappable rather than a screenshot.
+   Nothing changes size or position. In the layout test (lib/landingTryTest.ts)
+   arm a pulses the answer letters twice as soon as the card is on screen;
+   arm b waits about 2.5 seconds, once the title has been read, then the "Try
+   one now" label glows and the letters pulse twice. */
 @keyframes try-pulse {
   0% { box-shadow: 0 0 0 0 hsl(var(--brand) / 0.55); }
   100% { box-shadow: 0 0 0 10px hsl(var(--brand) / 0); }
 }
+@keyframes try-label {
+  0%, 100% { background-color: hsl(var(--brand) / 0); }
+  35% { background-color: hsl(var(--brand) / 0.16); }
+}
 @media (prefers-reduced-motion: no-preference) {
-  .try-play .try-badge {
+  html:not([data-ltq="b"]) .try-seen .try-badge {
     animation: try-pulse 1.1s ease-out 2;
     animation-delay: calc(300ms + var(--i, 0) * 120ms);
   }
+  html[data-ltq="b"] .try-play .try-label {
+    animation: try-label 1.1s ease-in-out 2;
+  }
+  html[data-ltq="b"] .try-play .try-badge {
+    animation: try-pulse 1.1s ease-out 2;
+    animation-delay: calc(500ms + var(--i, 0) * 120ms);
+  }
+}
+
+/* The "Try one now" layout test (lib/landingTryTest.ts): arm a is the
+   shipped layout. Arm b puts the question first: no Start button, no "Pick an
+   answer" chip, a tighter subtitle, the card pulled up and, on phones, the
+   landing's H1 (written in each page, so styled from here) and top padding
+   shrunk so all the options sit above the fold. */
+html[data-ltq="b"] .landing-try-start,
+html[data-ltq="b"] .try-hint {
+  display: none;
+}
+html[data-ltq="b"] .try-sub {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+html[data-ltq="b"] .try-card {
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  html[data-ltq="b"] .try-sub { font-size: 1.125rem; line-height: 1.75rem; }
+}
+@media (max-width: 639px) {
+  html[data-ltq="b"] div:has(> [data-try-first]) { padding-top: 1.75rem; }
+  html[data-ltq="b"] div:has(> [data-try-first]) > h1 { font-size: 1.75rem; line-height: 2.15rem; margin-bottom: 0.75rem; }
 }
 
 /* /admin: a table's header row while it is pinned under the tab bar

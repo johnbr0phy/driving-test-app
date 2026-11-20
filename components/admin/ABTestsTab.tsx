@@ -2,6 +2,7 @@
 
 import { CARD, TabHeader, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { GuestPromptTestCard } from "@/components/admin/GuestPromptTestCard";
+import { LandingTryTestCard } from "@/components/admin/LandingTryTestCard";
 import { PaywallTestCard } from "@/components/admin/PaywallTestCard";
 import { TopPrepperTestCard } from "@/components/admin/TopPrepperTestCard";
 import type { ConversionPayload } from "@/lib/server/conversion";
@@ -30,6 +31,7 @@ export function ABTestsTab() {
         refreshing={refreshing}
         updating={updating}
       />
+      <LandingTryTestCard />
       {opp.loading ? (
         <div className={`${CARD} mb-3 sm:mb-4 text-sm text-gray-500`}>Loading the paywall test...</div>
       ) : opp.data?.paywallTest ? (

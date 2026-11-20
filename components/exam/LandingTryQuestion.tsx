@@ -44,6 +44,9 @@ const COPY: Partial<Record<Language, { label: string; hint: string; right: strin
   el: { label: "Δοκίμασε μία ερώτηση", hint: "Διάλεξε μια απάντηση", right: "Σωστά!", wrong: "Όχι ακριβώς.", next: "Συνέχισε", saved: "Μετράει στο πρώτο σου σετ εξάσκησης." },
 };
 
+/** Time to read the title before the card asks for attention. */
+const NUDGE_DELAY_MS = 2500;
+
 export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion; rich?: TryRichNodes; lang?: Language; onAnswer?: () => void }) {
   const { user, loading } = useAuth();
   const { setLanguage } = useTranslation();
@@ -58,9 +61,19 @@ export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion
   const correct = picked === q.correctIndex;
   const feedbackRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-  // Once the card is on screen, the letters pulse twice so it reads as
-  // something to tap, not a screenshot (globals.css, off under reduced motion).
+  // Draws the eye to the card so it reads as something to tap, not a
+  // screenshot (globals.css, off under reduced motion, nothing moves the
+  // layout). Arm a of the layout test (lib/landingTryTest.ts) pulses the
+  // letters as soon as the card is on screen (try-seen); arm b waits until
+  // the visitor has had time to read the title, then the label glows and
+  // the letters pulse (try-play).
   const [inView, setInView] = useState(false);
+  const [nudge, setNudge] = useState(false);
+  useEffect(() => {
+    if (!inView) return;
+    const t = window.setTimeout(() => setNudge(true), NUDGE_DELAY_MS);
+    return () => window.clearTimeout(t);
+  }, [inView]);
   useEffect(() => {
     const el = cardRef.current;
     if (!el || typeof IntersectionObserver === "undefined") return;
@@ -103,11 +116,11 @@ export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion
   };
 
   return (
-    <div ref={cardRef} className={`${inView && !answered ? "try-play " : ""}mx-auto mt-10 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6`}>
+    <div ref={cardRef} className={`${inView && !answered ? "try-seen " : ""}${nudge && !answered ? "try-play " : ""}try-card mx-auto mt-10 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6`}>
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
-        <p className="text-xs font-semibold uppercase tracking-wide text-brand">{copy.label}</p>
+        <p className="try-label -mx-1.5 rounded-md px-1.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand">{copy.label}</p>
         {!answered && (
-          <p className="inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-700 px-2.5 py-1 text-xs font-semibold text-gray-700 dark:text-gray-100">
+          <p className="try-hint inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-700 px-2.5 py-1 text-xs font-semibold text-gray-700 dark:text-gray-100">
             <MousePointerClick className="h-3.5 w-3.5" aria-hidden />
             {copy.hint}
           </p>

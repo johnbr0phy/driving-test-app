@@ -551,20 +551,20 @@
     "test": 1,
     "module": 1,
     "domain": "pspoValue",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Outcomes and outputs",
-    "stem": "The team doubled the number of features shipped, but customer satisfaction is flat. What does EBM suggest?",
+    "skill": "Key Value Areas",
+    "stem": "Customer satisfaction is listed under which Key Value Area?",
     "options": [
-      "Track velocity instead; satisfaction is outside our control",
-      "More output has not improved outcomes",
-      "The survey method needs to change",
-      "Satisfaction lags and will rise again soon"
+      "Unrealized Value",
+      "Current Value",
+      "Ability to Innovate",
+      "Time-to-Market"
     ],
     "correct": [
       1
     ],
-    "explanation": "The EBM Guide notes that more features (outputs) do not necessarily lead to improved customer experiences (outcomes). Value is judged by outcomes."
+    "explanation": "Customer satisfaction measures how happy customers are today, so the EBM Guide lists it under Current Value. The satisfaction gap, desired against current experience, is the Unrealized Value measure."
   },
   {
     "id": "PSPO-T1-028",
@@ -1658,20 +1658,20 @@
     "test": 1,
     "module": 1,
     "domain": "pspoBacklog",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Ordering",
-    "stem": "The Product Owner orders items only by which stakeholder is most senior. What is the main risk?",
+    "skill": "Product Backlog management",
+    "stem": "Scrum.org describes Product Backlog Management as the act of doing what to its items?",
     "options": [
-      "Forecasts become less reliable",
-      "Value is not maximized for customers",
-      "Refinement takes longer each Sprint",
-      "Lower-ranked stakeholders stop sharing ideas"
+      "Approving and freezing them",
+      "Adjusting and ordering them",
+      "Estimating and assigning them",
+      "Writing and signing them off"
     ],
     "correct": [
       1
     ],
-    "explanation": "Ordering by rank rather than by value, risk and learning means the most valuable work may wait. The Product Owner is accountable for maximizing value."
+    "explanation": "Scrum.org defines Product Backlog Management as adjusting and ordering items on the Product Backlog so the Scrum Team can deliver the most valuable product possible."
   },
   {
     "id": "PSPO-T2-001",
@@ -1889,20 +1889,20 @@
     "test": 2,
     "module": 1,
     "domain": "pspoStakeholders",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Conflicting needs",
-    "stem": "Stakeholders want the Product Owner to give every department equal Sprint time. What is the weakness?",
+    "skill": "Stakeholders",
+    "stem": "In Evidence-Based Management, the question 'How happy are your investors and other stakeholders today?' belongs to which Key Value Area?",
     "options": [
-      "It ignores where value is highest",
-      "It reduces Developer focus",
-      "It makes Sprint Planning slower to run",
-      "It leaves no capacity for technical debt"
+      "Current Value",
+      "Ability to Innovate",
+      "Unrealized Value",
+      "Time-to-Market"
     ],
     "correct": [
       0
     ],
-    "explanation": "Sharing time by department ignores where the most value lies. The Product Owner orders by value so the team works on what matters most."
+    "explanation": "Current Value asks how happy users, customers, employees, investors and other stakeholders are today. Unrealized Value asks about value not yet captured."
   },
   {
     "id": "PSPO-T2-012",
@@ -3109,20 +3109,20 @@
     "test": 2,
     "module": 1,
     "domain": "pspoBacklog",
-    "difficulty": 1,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Product Backlog",
-    "stem": "What does a well-ordered Product Backlog give the Developers?",
+    "skill": "Refinement",
+    "stem": "According to the Scrum Guide, the attributes of Product Backlog items often vary with what?",
     "options": [
-      "Clear view of what matters most next",
-      "Exact items for the next Sprint",
-      "Sprint Goal for the coming Sprint",
-      "Set order the Developers must follow item by item"
+      "Domain of work",
+      "Product Owner's style",
+      "Length of the Sprint",
+      "Size of the team"
     ],
     "correct": [
       0
     ],
-    "explanation": "An ordered Product Backlog shows the team what is most valuable to work on next, which makes Sprint Planning faster and more focused."
+    "explanation": "The Scrum Guide says refinement adds detail such as a description, order and size, and that attributes often vary with the domain of work."
   },
   {
     "id": "PSPO-T2-070",

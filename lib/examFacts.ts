@@ -7075,7 +7075,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "AHIMA's CCS certification page, the CCS Exam Content Outline (effective May 1, 2024) and the 2026 required code book list, checked November 2026",
     source: { name: "AHIMA: Certified Coding Specialist (CCS)", url: "https://ahima.org/certification/ccs/" },
+  },  rhia: {
+    answer:
+      "The RHIA is AHIMA's Registered Health Information Administrator exam, the credential for health information management leaders who run data governance, privacy and release of information, revenue cycle work and HIM departments. It has 150 questions, 130 scored and 20 unscored pretest items, in 3 hours 30 minutes at a Pearson VUE test center, and you can flag questions and move between them. The passing score is a scaled 300. Its five domains are Data and Information Governance (17 to 20 percent), Compliance with Access, Use, and Disclosure (15 to 18 percent), Data Analytics and Informatics (23 to 26 percent), Revenue Cycle Management (20 to 23 percent) and Management and Leadership (23 to 26 percent). Candidates must graduate from a CAHIIM-accredited HIM bachelor's, master's or post-baccalaureate certificate program.",
+    rows: [
+      { label: "Questions", value: "150 (130 scored, 20 pretest)" },
+      { label: "Time", value: "3 hours 30 minutes, flagging allowed" },
+      { label: "Pass mark", value: "Scaled score of 300" },
+      { label: "Biggest domains", value: "Data Analytics and Informatics, and Management and Leadership, 23-26% each" },
+      { label: "Eligibility", value: "CAHIIM-accredited HIM bachelor's, master's or post-baccalaureate certificate" },
+      { label: "Retakes", value: "New application and a 30-day wait" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "AHIMA" },
+    ],
+    basedOn: "AHIMA's RHIA certification page and the RHIA Exam Content Outline (effective October 1, 2023), checked November 2026",
+    source: { name: "AHIMA: Registered Health Information Administrator (RHIA)", url: "https://www.ahima.org/certification/rhia/" },
   },
+
   rdexam: {
     answer:
       "The Registration Examination for Dietitians (the RD exam) is the Commission on Dietetic Registration's credentialing exam for the Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN) credential. It is computer adaptive and taken year-round at Pearson VUE test centers: each candidate answers between 125 and 145 four-option questions (100 to 120 scored plus 25 unscored pretest) in 3 hours, with no going back to earlier questions. Scores are scaled from 1 to 50, and 25 is the minimum passing score. Under the test specifications in force from January 1, 2027 the domains are Fundamentals of Dietetics Practice 23%, Community and Public Health Nutrition 22%, Human Nutrition and Medical Nutrition Therapy 40% and Food Science and Food Systems 15%; exams through December 31, 2026 follow the 2022 to 2026 outline.",

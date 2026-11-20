@@ -130,7 +130,7 @@ export default function HvacJourneymanLandingPage() {
           <ExamLandingHero
             dashboardHref="/hvac-journeyman/dashboard"
             shortName="HVAC Journeyman"
-            subtitle="200 original questions on the 2024 International Mechanical Code and Fuel Gas Code: equipment location, access, condensate, exhaust, ducts, vents, combustion air, gas piping, boilers and refrigeration. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 HVAC journeyman questions on the 2024 codes and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hvacjourney-mobile.png", desktop: "/landing/hvacjourney-desktop.png" }}
           />
         </div>

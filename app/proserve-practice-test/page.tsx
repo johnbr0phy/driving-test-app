@@ -125,7 +125,7 @@ export default function ProServeLandingPage() {
           <ExamLandingHero
             dashboardHref="/proserve/dashboard"
             shortName="ProServe"
-            subtitle="200 original questions for Alberta's AGLC ProServe exam, built on the Liquor Licensee Handbook and the Gaming, Liquor and Cannabis Act: minors and ID, signs of intoxication, refusing service, standard drinks, licensed premises and safety. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ProServe questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/proserve-mobile.png", desktop: "/landing/proserve-desktop.png" }}
           />
         </div>

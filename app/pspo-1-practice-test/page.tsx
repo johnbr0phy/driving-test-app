@@ -129,7 +129,7 @@ export default function PspoLandingPage() {
           <ExamLandingHero
             dashboardHref="/pspo-1/dashboard"
             shortName="PSPO I"
-            subtitle="200 original Product Owner questions on value, the backlog and stakeholders. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PSPO 1 questions on value, the backlog and stakeholders. Free to start, no account needed."
             shots={{ mobile: "/landing/pspo-mobile.png", desktop: "/landing/pspo-desktop.png" }}
           />
         </div>

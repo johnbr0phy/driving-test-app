@@ -126,7 +126,7 @@ export default function CcnpEncorLandingPage() {
           <ExamLandingHero
             dashboardHref="/ccnp-encor/dashboard"
             shortName="CCNP ENCOR"
-            subtitle="224 original questions on the six ENCOR 350-401 v1.2 domains, with router output, configuration and Python. Free to start, no account needed."
+            subtitle="224 ENCOR 350-401 questions on all six domains. Free to start, no account needed."
             shots={{ mobile: "/landing/ccnpencor-mobile.png", desktop: "/landing/ccnpencor-desktop.png" }}
           />
         </div>

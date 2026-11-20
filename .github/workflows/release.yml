@@ -1,0 +1,47 @@
+name: Release to production
+
+# Vercel deploys production from the `production` branch, not from main, so
+# merges to main no longer each cost a build (Nov 2026: about 19 builds a day
+# were most of the Vercel bill). This job moves `production` to the newest main
+# commit whose checks passed, three times a day. Run it by hand to ship a fix
+# now. scripts/vercel-ignore-build.sh still skips the build when nothing the
+# site uses changed.
+on:
+  schedule:
+    - cron: "7 13 * * *"   # 8:07 ET
+    - cron: "7 19 * * *"   # 14:07 ET
+    - cron: "7 1 * * *"    # 20:07 ET
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Move production to the newest green main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          SHA=$(gh run list --workflow checks.yml --branch main --event push --status success --limit 1 --json headSha --jq '.[0].headSha // ""')
+          if [ -z "$SHA" ]; then echo "No green main commit found."; exit 0; fi
+          if git ls-remote --exit-code --heads origin production >/dev/null; then
+            git fetch --quiet origin production
+            CUR=$(git rev-parse origin/production)
+            if [ "$CUR" = "$SHA" ]; then echo "production is already at $SHA."; exit 0; fi
+            if git merge-base --is-ancestor "$SHA" "$CUR"; then echo "production ($CUR) is already past $SHA."; exit 0; fi
+            if ! git merge-base --is-ancestor "$CUR" "$SHA"; then echo "production ($CUR) is not behind main; fix it by hand."; exit 1; fi
+          fi
+          git push origin "$SHA:refs/heads/production"
+          echo "production -> $SHA ($(git log -1 --format=%s "$SHA"))"

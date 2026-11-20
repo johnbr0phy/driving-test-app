@@ -12,7 +12,7 @@ import { getExamByPath } from "@/lib/exams";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
-import { LandingTryQuestion } from "@/components/exam/LandingTryQuestion";
+import { LandingTryQuestion, type TryRichNodes } from "@/components/exam/LandingTryQuestion";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
@@ -191,6 +191,7 @@ export function ExamLandingHeroClient({
   shots,
   lang,
   tryQuestion,
+  tryRich,
 }: {
   dashboardHref: string;
   subtitle: string;
@@ -199,6 +200,8 @@ export function ExamLandingHeroClient({
   lang?: Language;
   /** A playable question under the Start button (lib/landingTryQuestion.ts). */
   tryQuestion?: TryQuestion | null;
+  /** Server-drawn rich text for a v2 question with markup or KaTeX. */
+  tryRich?: TryRichNodes;
 }) {
   const { hasSession, onStart, copy } = useStartCta(dashboardHref, lang);
   // Answering the try card starts a guest session, which would turn
@@ -216,7 +219,7 @@ export function ExamLandingHeroClient({
         </Button>
       }>
       {tryQuestion && (
-        <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
+        <LandingTryQuestion q={tryQuestion} rich={tryRich} lang={lang} onAnswer={() => setHeldLabel((h) => h ?? label)} />
       )}
       {/* The question takes the screenshots' place; pages with no question keep them. */}
       {!tryQuestion && (

@@ -95,9 +95,9 @@
     "stem": "What does Scrum encourage with stakeholders, and customers in particular?",
     "options": [
       "Frequent collaboration",
-      "Formal change control",
-      "Agreed service levels",
-      "Regular status reports"
+      "Daily Scrum attendance",
+      "A signed scope agreement up front",
+      "Joint Sprint Planning"
     ],
     "correct": [
       0
@@ -866,11 +866,11 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Empiricism",
-    "stem": "Usage data from the last release shows a new feature is rarely used. What is the most empirical next step for the Product Owner?",
+    "stem": "Usage data from the last release shows a new feature is rarely used. What is the best next step for the Product Owner?",
     "options": [
       "Inspect why, then adapt the Product Backlog",
+      "Remove the feature in the next release",
       "Wait one more release for clearer data",
-      "Add more options to that feature to boost it",
       "Promote the feature to raise its usage"
     ],
     "correct": [
@@ -1268,8 +1268,8 @@
     "stem": "A stakeholder asks to see why an item sits low in the Product Backlog. What should the Product Owner do?",
     "options": [
       "Move it up a little as a goodwill gesture",
-      "Ask the Scrum Master to explain the order",
-      "Explain the reasoning behind the order",
+      "Refer them to the sponsor who set the priorities",
+      "Walk them through how the order was set",
       "Invite them to the next Sprint Planning"
     ],
     "correct": [
@@ -1310,9 +1310,9 @@
     "stem": "Many teams argue over what the product is for. Which step helps the Product Owner most?",
     "options": [
       "Share a clear Product Vision",
+      "Refine the backlog together",
       "Set one Sprint Goal for all",
-      "Agree a detailed roadmap",
-      "Write team charters"
+      "Hold a joint Retrospective"
     ],
     "correct": [
       0
@@ -1457,8 +1457,8 @@
     "skill": "Product Goal",
     "stem": "The Product Owner weighs three candidate Product Goals. What should guide the choice?",
     "options": [
-      "Which goal is quickest to reach",
-      "Product Vision and business strategy",
+      "Which goal has the clearest business case",
+      "Which goal best serves the vision and strategy",
       "Which goal the team can forecast best",
       "Which goal stakeholders rank highest"
     ],
@@ -1666,7 +1666,7 @@
       "The Sprint Goal becomes harder to set",
       "Value is not maximized for customers",
       "Refinement takes longer each Sprint",
-      "Developers lose their self-management"
+      "Lower-ranked stakeholders stop sharing ideas"
     ],
     "correct": [
       1
@@ -1684,10 +1684,10 @@
     "skill": "Ordering",
     "stem": "What is the main purpose of ordering the Product Backlog?",
     "options": [
-      "Make the release date more predictable",
-      "Show stakeholders when items arrive",
+      "Show the team its next Sprint Goal",
+      "Group related work into releases",
       "Make the most valuable work come first",
-      "Group related work into releases"
+      "Make refinement quicker and easier"
     ],
     "correct": [
       2
@@ -1771,7 +1771,7 @@
       "Ask the sponsor to speak for them",
       "Include them at the next release",
       "Find ways to learn their needs",
-      "Wait for them to raise requests"
+      "Infer their needs from the team's experience"
     ],
     "correct": [
       2
@@ -1897,7 +1897,7 @@
       "It ignores where value is highest",
       "It reduces Developer focus",
       "It makes the Sprint Goal hard to set",
-      "It slows down Sprint Planning"
+      "It leaves no capacity for technical debt"
     ],
     "correct": [
       0
@@ -2039,7 +2039,7 @@
     "options": [
       "Fix the issues in the current Sprint",
       "Find out why, then adapt the backlog",
-      "Offer a discount until it is fixed",
+      "Put their complaints at the top of the backlog",
       "Escalate to the sponsor for direction"
     ],
     "correct": [
@@ -2727,7 +2727,7 @@
     "skill": "Saying no",
     "stem": "A powerful executive demands a feature that conflicts with the Product Goal. What is the Product Owner's best first step?",
     "options": [
-      "Ask the Scrum Master to handle the executive",
+      "Put it to a stakeholder vote at the Review",
       "Explain the trade-off against the goal",
       "Change the Product Goal to include it",
       "Add it, since the executive funds the work"
@@ -2769,8 +2769,8 @@
     "skill": "Release planning",
     "stem": "What is the purpose of release planning for a Scrum Team?",
     "options": [
-      "Breakdown of work for each Sprint",
-      "Commitment to scope by a set date",
+      "Plan of Increments for each Sprint",
+      "Forecast of future Sprint Goals",
       "Agreement on the release scope",
       "Guide to frequent, small releases"
     ],
@@ -2877,7 +2877,7 @@
     "skill": "Customers",
     "stem": "Which question best helps a Product Owner understand a customer's need?",
     "options": [
-      "How should the screen look to you?",
+      "Which competitor features should we copy?",
       "When exactly do you need it delivered?",
       "Which features do you want first?",
       "What problem are you trying to solve?"
@@ -2923,7 +2923,7 @@
     "stem": "A feature has high value but huge cost; a smaller one gives most of the value at a tenth of the cost. What should the Product Owner weigh?",
     "options": [
       "Value against cost and risk",
-      "Which one is easier to test",
+      "Total value delivered, whatever the cost",
       "Which one fits the Sprint",
       "Which one stakeholders asked for"
     ],
@@ -2946,7 +2946,7 @@
       "When the Developers have the skills free",
       "When early failure would be cheaper to learn",
       "When the Sprint is long enough to absorb all of it",
-      "When stakeholders are less likely to notice"
+      "When the riskier item has a firm deadline"
     ],
     "correct": [
       1
@@ -3094,7 +3094,7 @@
     "stem": "An Increment is Done, but marketing wants to wait three months to launch it with others. What should the Product Owner weigh?",
     "options": [
       "How to keep the Increment's code stable",
-      "How to time the launch with the Review",
+      "Whether the Developers can start the next item",
       "Whether to re-test it before the launch",
       "Value and learning lost by waiting"
     ],
@@ -3112,12 +3112,12 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Product Backlog",
-    "stem": "What does a highly ordered Product Backlog give the Developers?",
+    "stem": "What does a well-ordered Product Backlog give the Developers?",
     "options": [
       "Clear view of what matters most next",
-      "Fixed plan they can all commit to",
-      "Basis for a reliable release date",
-      "List of their tasks for the Sprint"
+      "Plan for how to build each item",
+      "Sprint Goal for the coming Sprint",
+      "Fixed scope for the next release"
     ],
     "correct": [
       0
@@ -3154,10 +3154,10 @@
     "skill": "Expectations",
     "stem": "How does the Product Owner keep stakeholders informed between Sprint Reviews?",
     "options": [
-      "Weekly status report",
+      "Invites to Sprint Planning",
       "Visible, up-to-date backlog",
       "Daily Scrum invitations",
-      "Monthly steering group meeting"
+      "Retrospective summaries"
     ],
     "correct": [
       1
@@ -3491,7 +3491,7 @@
       "Get the answer from users or stakeholders",
       "Add it to the Sprint and clarify it there",
       "Ask the Developers to agree an assumption",
-      "Have the Scrum Master record it as a risk"
+      "Leave it for the Developers to settle mid-Sprint"
     ],
     "correct": [
       0
@@ -3730,8 +3730,8 @@
     "options": [
       "Yes; quick wins build early momentum",
       "Yes, if the Developers have spare capacity",
-      "Not by itself; value still guides order",
-      "Only once all larger items are refined"
+      "Not just for being quick",
+      "Yes, if it clears clutter from the backlog"
     ],
     "correct": [
       2
@@ -3751,7 +3751,7 @@
     "options": [
       "Cost of the request",
       "Number asking for it",
-      "Speed they expect exactly",
+      "Features competitors already offer",
       "Need behind the request"
     ],
     "correct": [
@@ -3878,10 +3878,10 @@
     "skill": "Expectations",
     "stem": "A stakeholder expects a feature in two weeks that is low in the backlog. What should the Product Owner do?",
     "options": [
-      "Explain the order and forecast honestly",
+      "Explain the order and give a forecast",
       "Move it up to keep the stakeholder's trust",
       "Promise a date once it is refined",
-      "Ask the Developers if they can fit it in"
+      "Escalate to the sponsor to settle the date"
     ],
     "correct": [
       0
@@ -4031,7 +4031,7 @@
       "Increments pile up in the Sprint Backlog",
       "Developers lose time set aside for learning",
       "Users wait longer and learning slows",
-      "The Definition of Done must be split"
+      "Testers become a bottleneck for the team"
     ],
     "correct": [
       2

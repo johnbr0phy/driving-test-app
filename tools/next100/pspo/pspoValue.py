@@ -170,7 +170,7 @@ ITEMS = [
       "A feature has high value but huge cost; a smaller one gives most of the value at a tenth of the cost. What should the Product Owner weigh?",
       ["Value against cost and risk",
        "Which one stakeholders asked for",
-       "Which one is easier to test",
+       "Total value delivered, whatever the cost",
        "Which one fits the Sprint"],
       "Ordering to maximize value means weighing the likely value of an item against its cost and risk. The cheaper item may return value sooner."),
     S(2, 2, "Value measures",

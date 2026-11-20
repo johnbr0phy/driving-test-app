@@ -110,9 +110,9 @@ export function SampleCardsV2({ examId, sample, headingLevel = 3 }: { examId: st
             {(q.passage || q.stimulusId) && samplePassage(examId, q) && (
               <blockquote className="mb-4 rounded-lg bg-gray-50 dark:bg-gray-800 border-l-4 border-gray-300 dark:border-gray-700 px-4 py-3 text-gray-700 dark:text-gray-200 text-sm">
                 {samplePassage(examId, q)!.title && (
-                  <p className="font-semibold mb-1">
+                  <div className="font-semibold mb-1">
                     <RichText text={samplePassage(examId, q)!.title!} />
-                  </p>
+                  </div>
                 )}
                 <RichText text={samplePassage(examId, q)!.text} />
               </blockquote>

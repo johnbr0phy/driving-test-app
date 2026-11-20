@@ -497,6 +497,11 @@
   "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
   "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh"
  ],
+ "ccnpencor": [
+  "https://learningcontent.cisco.com/documents/marketing/exam-topics/350-401-ENCORE-v1.2.pdf",
+  "https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/encor-350-401.html",
+  "https://www.cisco.com/en/US/docs/ios-xml/ios/ha/configuration/xe-3s/ha-config-stateful-switchover.html"
+ ],
  "ccrn": [
   "https://www.aacn.org/certification/preparation-tools-and-handbooks/~/media/aacn-website/certification/get-certified/handbooks/ccrnexamhandbook.pdf?la=en",
   "https://www.aacn.org/certification/preparation-tools-and-handbooks/~/media/aacn-website/certification/get-certified/handbooks/certpolicyhndbk.pdf?la=en",
@@ -1028,6 +1033,11 @@
   "https://vizsgakozpont.hu/uploads/2020/dokumentumok/motoros-kepzes-tantervi-es-vizsgakovetelmenyek-a2-kategoria-2020_10_02.pdf",
   "https://vizsgakozpont.hu/uploads/2023/dokumentumok/tantervi_es_vizsgakov_a_a1_a2_akorl_kategoria_2023_alairt.pdf",
   "https://vizsgakozpont.hu/uploads/2023/dokumentumok/tantervi_es_vizsgakov_am_kategoria_2023_alairt.pdf"
+ ],
+ "hvacjourney": [
+  "https://codes.iccsafe.org/content/IMC2024V1.0/chapter-3-general-regulations",
+  "https://codes.iccsafe.org/content/IMC2024V1.0/chapter-4-ventilation",
+  "https://codes.iccsafe.org/content/IMC2024V1.0/chapter-5-exhaust-systems"
  ],
  "ibpsclerk": [
   "https://www.bankersadda.com/wp-content/uploads/multisite/2026/07/31234357/Notification_CRP_CSA_XVI-Final.pdf",
@@ -1597,6 +1607,11 @@
   "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
   "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
  ],
+ "pmiacp": [
+  "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf",
+  "https://www.pmi.org/certifications/agile-acp",
+  "https://agilemanifesto.org/"
+ ],
  "pmp": [
   "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
   "https://www.pmi.org/certifications/project-management-pmp/new-exam"
@@ -1629,11 +1644,21 @@
   "https://www.peoplecert.org/en/news-and-announcements",
   "https://www.peoplecert.org/news-and-announcements/PRINCE2_7"
  ],
+ "proserve": [
+  "https://aglc.ca/training/proserve-liquor-staff-training",
+  "https://aglc.ca/training/program-requirements",
+  "https://aglc.ca/documents/liquor-licensee-handbook"
+ ],
  "psat": [
   "https://satsuite.collegeboard.org/psat-nmsqt/whats-on-the-test"
  ],
  "psm": [
   "https://scrumguides.org/scrum-guide.html"
+ ],
+ "pspo": [
+  "https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification",
+  "https://www.scrum.org/professional-scrumtm-competencies",
+  "https://www.scrum.org/professional-scrum-competencies/managing-products-with-agility"
  ],
  "ptcam": [
   "https://www.imt-ip.pt/wp-content/uploads/Documents/DespachoIMTT_CAM_Exames.pdf",
@@ -2021,6 +2046,12 @@
   "https://www.gov.uk/theory-test/multiple-choice-questions",
   "https://www.gov.uk/theory-test/hazard-perception-test"
  ],
+ "ukcemap2": [
+  "https://www.walbrook.ac.uk/hubfs/files/documents/pe/cemap-qualification-specification-march-2026.pdf",
+  "https://www.walbrook.ac.uk/libf/professional-qualifications/financial-and-mortgage-advice/certificate-in-mortgage-advice-and-practice-cemap/",
+  "https://handbook.fca.org.uk/handbook/mcob13/mcob13s3",
+  "https://www.gov.wales/help-buy-wales/eligibility"
+ ],
  "ukdsc1": [
   "https://dmq.org.uk/qualifications/deer-stalking-qualification-1/",
   "https://bds.org.uk/wp-content/uploads/2022/12/DSC1-Info-2022-v2.pdf",
@@ -2126,6 +2157,11 @@
   "https://www.waecnigeria.org/index.php/node/9?page=0",
   "https://waecsyllabus.com/mathematics/",
   "https://waecsyllabus.com/files/ssce/GENERAL%20MATHEMATICS%20OR%20MATHEMATICS%20%28CORE%29.pdf"
+ ],
+ "waterop": [
+  "https://adem.alabama.gov/sites/default/files/2025-08/NTK%20WT2.pdf",
+  "https://prod-deq.mt.gov/files/Water/WQInfo/Images/opcert/3BStudy.pdf",
+  "https://www.vdh.virginia.gov/content/uploads/sites/14/WPI-FCT-2024-WT.pdf"
  ],
  "wonderlic": [
   "https://wonderlic.com/science/cognitive-ability/",

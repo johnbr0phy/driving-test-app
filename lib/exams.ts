@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "rhia" | "coc" | "lmrt" | "cct" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "contractorlaw" | "excpt";
+export type ExamId = "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -7959,6 +7959,69 @@ const cehrs: ExamConfig = {
   },
 };
 // IDs: tests 31201-31204, sets 31201-31204 (block 31200 assigned for this run).
+
+const proserve: ExamConfig = {
+  id: "proserve",
+  stateCode: "PROSERVE",
+  idBase: 43600,
+  slug: "/proserve",
+  landingPath: "/proserve-practice-test",
+  name: "ProServe Practice Test",
+  shortName: "ProServe",
+  examLabel: "ProServe exam",
+  fullName: "AGLC ProServe Liquor Staff Training certification exam (Alberta)",
+  questionIdPrefix: "PROSERVE-",
+  icon: "wine",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // AGLC ProServe Liquor Staff Training page (course topics, 80% pass, five attempts per
+  // registration), the AGLC Liquor Licensee Handbook (sections dated June 2026), the Retail Liquor
+  // Store Handbook, AGLC's How to Identify Minors tips (May 2025), the Gaming, Liquor and Cannabis
+  // Act (consolidated June 18, 2026), AHS Alcohol and the Body (2022), Health Canada's standard
+  // drink and Alberta's IRS page. Checked 2026-11-19. AGLC publishes no question count or topic
+  // weights, so the split is Tigertest's; the 80% line is AGLC's.
+  blueprint: {
+    proLaw: 6,
+    proPremises: 7,
+    proAlcohol: 6,
+    proDrinks: 7,
+    proMinors: 8,
+    proIntox: 7,
+    proSafety: 9,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43601, name: "Liquor Law & Licensed Premises", categories: ["proLaw", "proPremises"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 43602, name: "Alcohol & Standard Drinks", categories: ["proAlcohol", "proDrinks"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 3, id: 43603, name: "Minors, ID & Intoxication", categories: ["proMinors", "proIntox"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 4, id: 43604, name: "Safety & Illegal Activity", categories: ["proSafety"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    proLaw: "Alberta Liquor Law & ProServe",
+    proPremises: "Licensed Premises & Hours",
+    proAlcohol: "Alcohol & the Body",
+    proDrinks: "Standard Drinks & Service Rules",
+    proMinors: "Minors & Checking ID",
+    proIntox: "Intoxication & Refusing Service",
+    proSafety: "Safety, Drugs & Duty of Care",
+  },
+  copy: {
+    guestPrompt: "to save your ProServe progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets built on AGLC's Liquor Licensee Handbook and Alberta's Gaming, Liquor and Cannabis Act. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 multiple-choice questions on Alberta liquor law, minors, intoxication and safety, 80% to pass",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Liquor Law & Licensed Premises.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any practice test you haven't passed.",
+      "All done. You're ready for your ProServe exam.",
+    ],
+    sourceLine: "Based on AGLC's Liquor Licensee Handbook and the Gaming, Liquor and Cannabis Act. Original questions; 50 per test, 80% to pass like the real exam. Not affiliated with AGLC.",
+    analyticsKey: "proserve",
+  },
+};
+// IDs: tests 43601-43604, sets 43601-43604 (block 43600 assigned for this run).
 
 const dispatcher: ExamConfig = {
   id: "dispatcher",
@@ -21136,6 +21199,86 @@ const cemap: ExamConfig = {
   },
 };
 
+const ukcemap2: ExamConfig = {
+  id: "ukcemap2",
+  stateCode: "CEMAP2",
+  idBase: 43900,
+  slug: "/cemap-2",
+  landingPath: "/cemap-2-practice-test",
+  name: "CeMAP 2 Practice Test",
+  shortName: "CeMAP 2",
+  examLabel: "CeMAP Module 2 (MORT)",
+  fullName: "CeMAP Module 2: Mortgage Law, Practice and Application (MRT1) and Mortgage Products and Post Completion (MRT2)",
+  questionIdPrefix: "CEMAP2-",
+  icon: "house",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // LIBF (Walbrook Institute London) CeMAP qualification specification, published April 2026
+  // (checked 2026-11-19). Module 2 is MORT: MRT1 (1-hour exam, 50 standalone MCQs, 35/50 to pass)
+  // and MRT2 (1-hour exam, 40 standalone MCQs, 28/40 to pass), both 70%. LIBF publishes no
+  // weights per learning outcome, so each 50-question mock is 28 MRT1 + 22 MRT2 (the 50:40 ratio
+  // of the real units), split inside each unit by the breadth of each LO (Tigertest's split).
+  // All items original.
+  blueprint: {
+    ukc2Defs: 3,
+    ukc2Borrowers: 3,
+    ukc2Mcob: 4,
+    ukc2Market: 3,
+    ukc2Advice: 4,
+    ukc2Security: 2,
+    ukc2Fees: 2,
+    ukc2Survey: 4,
+    ukc2Value: 3,
+    ukc2Raising: 4,
+    ukc2Changes: 4,
+    ukc2DebtCon: 2,
+    ukc2Arrears: 4,
+    ukc2Repay: 3,
+    ukc2Products: 3,
+    ukc2Schemes: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43901, name: "Mortgages, Borrowers & MCOB", categories: ["ukc2Defs", "ukc2Borrowers", "ukc2Mcob", "ukc2Market"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 2, id: 43902, name: "Advice, Fees & the Property", categories: ["ukc2Advice", "ukc2Security", "ukc2Fees", "ukc2Survey", "ukc2Value"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 43903, name: "Raising, Moving & Consolidating", categories: ["ukc2Raising", "ukc2Changes", "ukc2DebtCon"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 4, id: 43904, name: "Arrears, Products & Schemes", categories: ["ukc2Arrears", "ukc2Repay", "ukc2Products", "ukc2Schemes"], size: 48, weightLabel: "12 of 50 test questions" },
+  ],
+  categoryLabels: {
+    ukc2Defs: "Mortgage Definitions & Auctions",
+    ukc2Borrowers: "Types of Borrower",
+    ukc2Mcob: "MCOB: Lender & Adviser Duties",
+    ukc2Market: "Property Market & Lending Sector",
+    ukc2Advice: "Affordability, Suitability & Advice",
+    ukc2Security: "Additional Security & Guarantors",
+    ukc2Fees: "Fees & Charges",
+    ukc2Survey: "Defects, Valuations & Surveys",
+    ukc2Value: "Property Value, Title & Insurability",
+    ukc2Raising: "Raising Additional Money",
+    ukc2Changes: "Transfers, Moves & Redemption",
+    ukc2DebtCon: "Debt Consolidation",
+    ukc2Arrears: "Arrears, Default & Remedies",
+    ukc2Repay: "Repayment Methods & Rate Types",
+    ukc2Products: "Mortgage Products",
+    ukc2Schemes: "Schemes, Shared Ownership & Islamic Finance",
+  },
+  copy: {
+    guestPrompt: "to save your CeMAP 2 progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering both MORT units, MRT1 and MRT2. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions mixing MRT1 and MRT2, 70% to pass",
+    heroSubs: [
+      "Four training sets, four mock tests. Start with Mortgages, Borrowers & MCOB.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Sit MRT1 and MRT2.",
+    ],
+    sourceLine: "Based on LIBF's CeMAP specification for MORT (MRT1 and MRT2), MCOB and UK property law as of November 2026. Original questions; 50 per test, 28 MRT1 and 22 MRT2. Not affiliated with LIBF or Walbrook Institute London.",
+    analyticsKey: "ukcemap2",
+  },
+};
+
 const sgftt: ExamConfig = {
   id: "sgftt",
   stateCode: "SGFTT",
@@ -25637,6 +25780,71 @@ const trapper: ExamConfig = {
     analyticsKey: "trapper",
   },
 };
+const waterop: ExamConfig = {
+  id: "waterop",
+  stateCode: "WATEROP",
+  idBase: 44100,
+  slug: "/water-treatment-operator",
+  landingPath: "/water-treatment-operator-practice-test",
+  name: "Water Treatment Operator Class I Practice Test",
+  shortName: "Water Treatment Class I",
+  examLabel: "water treatment operator Class I exam",
+  fullName: "Water Treatment Operator Class I certification exam (WPI/ABC standardized exam)",
+  questionIdPrefix: "WATEROP-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Water Professionals International (formerly ABC) Need-to-Know Criteria, Water Treatment
+  // Operator Class I, copyright 2025 (read 2026-11-19 from the copy ADEM hosts): 100 scored
+  // questions plus up to 10 pretest; Treatment Process 31, Laboratory Analysis 16, Equipment
+  // Operation and Maintenance 26, Source Water Characteristics 15, Security, Safety, and
+  // Administrative Procedures 12; 10% calculation items. Scaled to 50: treatment 16 (clarify 8,
+  // disinfect 8), lab 8, equipment 13 (pumps 7, valves/storage/controls 6), source 7, safety 6.
+  // Who certifies and the pass mark vary by state (70% in North Carolina and many others);
+  // 70% is the readiness line. Facts from 40 CFR 141/143/136, OSHA 1910.146/147/1000, EPA
+  // guidance manuals and DOE's pumping sourcebook. All items original.
+  blueprint: {
+    wtoClarify: 8,
+    wtoDisinfect: 8,
+    wtoLab: 8,
+    wtoPumps: 7,
+    wtoEquip: 6,
+    wtoSource: 7,
+    wtoSafety: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 44101, name: "Coagulation, Settling & Filtration", categories: ["wtoClarify"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 44102, name: "Disinfection & Chemical Feed", categories: ["wtoDisinfect"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 44103, name: "Laboratory Analysis", categories: ["wtoLab"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 44104, name: "Equipment Operation & Maintenance", categories: ["wtoPumps", "wtoEquip"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 44105, name: "Source Water & Safety", categories: ["wtoSource", "wtoSafety"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    wtoClarify: "Coagulation, Settling & Filtration",
+    wtoDisinfect: "Disinfection & Chemical Feed",
+    wtoLab: "Laboratory Analysis",
+    wtoPumps: "Pumps, Motors & Power",
+    wtoEquip: "Valves, Storage & Controls",
+    wtoSource: "Source Water Characteristics",
+    wtoSafety: "Security, Safety & Administration",
+  },
+  copy: {
+    guestPrompt: "to save your water treatment operator progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets in the Need-to-Know Criteria's order: treatment, lab, equipment, source water and safety. Water math is worked step by step. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the Class I exam, 70% readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Coagulation, Settling & Filtration.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Book your Class I water exam.",
+    ],
+    sourceLine: "Based on WPI's (formerly ABC's) Water Treatment Operator Class I Need-to-Know Criteria and formula table, EPA drinking water rules and OSHA safety rules. Original questions. Not affiliated with Water Professionals International.",
+    analyticsKey: "waterop",
+  },
+};
 const natecore: ExamConfig = {
   id: "natecore",
   stateCode: "NATECORE",
@@ -25696,6 +25904,70 @@ const natecore: ExamConfig = {
     ],
     sourceLine: "Based on NATE's Core exam KATE outline and weights, OSHA and DOT safety rules, EPA, ENERGY STAR and ACCA guidance and HVAC physics. Original questions. Not affiliated with North American Technician Excellence (NATE).",
     analyticsKey: "natecore",
+  },
+};
+const hvacjourney: ExamConfig = {
+  id: "hvacjourney",
+  stateCode: "HVACJ",
+  idBase: 43500,
+  slug: "/hvac-journeyman",
+  landingPath: "/hvac-journeyman-practice-test",
+  name: "HVAC Journeyman Practice Test",
+  shortName: "HVAC Journeyman",
+  examLabel: "HVAC journeyman mechanical exam",
+  fullName: "HVAC / mechanical journeyman license exam (2024 IMC and IFGC)",
+  questionIdPrefix: "HVACJ-",
+  icon: "thermometer",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // No single national exam: states and cities run their own journeyman mechanical or HVACR
+  // exams through PSI, Prometric or ICC, open book on the International Mechanical Code (the
+  // edition each adopts, often 2018 or 2021). Maryland's PSI HVACR Journeyman bulletin (9/1/2024)
+  // is one example: 100 questions, 240 minutes, 70% to pass. No state publishes a per-chapter
+  // code split, so these weights follow the 2024 IMC chapters a journeyman installs to, plus the
+  // IFGC combustion air, bonding, gas piping test and venting rules. Code facts only, read on
+  // ICC's free 2024 IMC and IFGC text (2026-11-19). All items original.
+  blueprint: {
+    hvacjLocation: 8,
+    hvacjAccess: 6,
+    hvacjExhaust: 7,
+    hvacjDucts: 7,
+    hvacjVents: 6,
+    hvacjFuelGas: 6,
+    hvacjHydronics: 6,
+    hvacjRefrig: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43501, name: "Equipment Location & Access", categories: ["hvacjLocation", "hvacjAccess"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 2, id: 43502, name: "Ventilation, Exhaust & Ducts", categories: ["hvacjExhaust", "hvacjDucts"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 3, id: 43503, name: "Chimneys, Vents & Fuel Gas", categories: ["hvacjVents", "hvacjFuelGas"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 43504, name: "Boilers, Hydronics & Refrigeration", categories: ["hvacjHydronics", "hvacjRefrig"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    hvacjLocation: "Equipment Location & Installation",
+    hvacjAccess: "Access, Service Space & Condensate",
+    hvacjExhaust: "Ventilation & Exhaust Systems",
+    hvacjDucts: "Duct Systems & Plenums",
+    hvacjVents: "Chimneys, Vents & Clearances",
+    hvacjFuelGas: "Combustion Air & Gas Piping",
+    hvacjHydronics: "Boilers & Hydronic Piping",
+    hvacjRefrig: "Refrigeration Systems",
+  },
+  copy: {
+    guestPrompt: "to save your HVAC journeyman progress and track every question you miss",
+    trainingHeading: "Train by code topic",
+    trainingSub: "Four sets following the Mechanical Code: equipment location and access, ventilation and ducts, vents and fuel gas, then boilers, hydronics and refrigeration. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions across the code, 70% readiness line",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Equipment Location & Access.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Schedule your journeyman mechanical exam.",
+    ],
+    sourceLine: "Based on the 2024 International Mechanical Code and International Fuel Gas Code. Original questions. Your state may test an older or amended edition. Not affiliated with the International Code Council (ICC).",
+    analyticsKey: "hvacjourney",
   },
 };
 const contractorlaw: ExamConfig = {
@@ -25836,7 +26108,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, r410a, backflow, pesticide, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
+export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, waterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

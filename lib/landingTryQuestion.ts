@@ -6,7 +6,7 @@ import { hasPositionDependentAnswers } from "@/lib/shuffleOptions";
 import { getBank } from "@/lib/v2/bank";
 import { relabelChoices } from "@/lib/v2/grading";
 import { isDrillLocked } from "@/lib/v2/premium";
-import { isPrintable } from "@/lib/v2/printable";
+import { isPrintable, samplePassage } from "@/lib/v2/printable";
 import { getExamV2ByPath, v2Routes } from "@/lib/v2/registry";
 import { drillKey, drillQuestions } from "@/lib/v2/training";
 import type { DrillDef, QuestionV2 } from "@/lib/v2/types";
@@ -19,7 +19,9 @@ import type { Language } from "@/i18n";
 // Picked on the server from the bank the page already imports for its sample
 // questions; a page that does not import its bank shows no card.
 // v2 landings (SAT, NCLEX...) take an easy plain-text question from their
-// first drill instead; the answer is recorded in that drill.
+// first drill instead; the answer is recorded in that drill. Exams with no
+// plain-text question (SAT math, CogAT, AP reading...) fall back to one with
+// markup or KaTeX, then to one on a short passage, drawn as rich text.
 
 export type LandingTryQuestion = {
   examId: string;
@@ -36,6 +38,13 @@ export type LandingTryQuestion = {
   practiceHref: string;
   /** Set on v2 exams: the answer goes to this drill, not a training set. */
   v2?: { drillKey: string; domain: string; order: number[] };
+  /**
+   * v2 only: the text carries bank markup (bold, line breaks, KaTeX), so the
+   * server hero draws it with RichTextStatic instead of as plain text.
+   */
+  rich?: boolean;
+  /** v2 only: the short shared passage the question is about (rich text). */
+  passage?: { title?: string; text: string };
 };
 
 const LETTERS = ["A", "B", "C", "D"] as const;
@@ -60,19 +69,43 @@ function pickV2(dashboardHref: string): LandingTryQuestion | null {
     x.stem.length <= 300 &&
     !!x.explanation &&
     ![x.stem, x.explanation, ...x.options!].some((t) => RICH.test(t));
+  // Rich fallback: what the landing samples can print (bold, line breaks,
+  // KaTeX, a short text passage), but no tables or markup in the options.
+  const richOk = (x: QuestionV2, passage: "alone" | "passage") =>
+    isPrintable(exam.id, x, passage) &&
+    x.options!.length <= 6 &&
+    !!x.explanation &&
+    !/\||\{\{|\[\[/.test(x.explanation) &&
+    !x.options!.some((o) => /\||\{\{|\[\[|\n/.test(o));
+  const tiers: ((x: QuestionV2) => boolean)[] = [plain, (x) => richOk(x, "alone"), (x) => richOk(x, "passage")];
+  // Within the first tier that has any, the shortest question across the
+  // free drills (passage included), so the card stays compact on a phone.
+  const size = (x: QuestionV2) =>
+    x.stem.length + x.options!.join("").length + (samplePassage(exam.id, x)?.text.length ?? 0);
   let drill: DrillDef | undefined;
   let q: QuestionV2 | undefined;
-  for (const d of exam.drills) {
-    if (isDrillLocked(exam, d.key, false)) continue;
-    q = drillQuestions(bank, d, exam).find(plain);
-    if (q) {
-      drill = d;
-      break;
+  let tier = 0;
+  for (; tier < tiers.length && !q; tier++) {
+    for (const d of exam.drills) {
+      if (isDrillLocked(exam, d.key, false)) continue;
+      for (const x of drillQuestions(bank, d, exam)) {
+        if (!tiers[tier](x) || (q && size(x) >= size(q))) continue;
+        q = x;
+        drill = d;
+      }
     }
   }
+  tier--;
   if (!q || !drill) return null;
+  const passage = tier === 2 ? samplePassage(exam.id, q) : null;
   const n = q.options!.length;
-  const nums = q.options!.map((o) => (/^-?\d/.test(o.trim()) ? parseFloat(o.replace(/,/g, "")) : NaN));
+  // A KaTeX option counts as a number only when it is one ("$-4$", not "$2x$").
+  const nums = q.options!.map((o) => {
+    const t = o.trim();
+    const m = t.match(/^\$(-?\d[\d,]*(?:\.\d+)?)\$$/);
+    if (m) return parseFloat(m[1].replace(/,/g, ""));
+    return /^-?\d/.test(t) && !t.includes("$") ? parseFloat(t.replace(/,/g, "")) : NaN;
+  });
   let order: number[];
   if (nums.every((v) => !Number.isNaN(v))) {
     // Number answers read smallest first, as the banks write them.
@@ -93,6 +126,8 @@ function pickV2(dashboardHref: string): LandingTryQuestion | null {
     explanation: relabelChoices(q.explanation, order),
     practiceHref: v2Routes(exam).drillQuestions(drill.key),
     v2: { drillKey: drillKey(exam.id, drill.key), domain: q.domain, order },
+    ...(tier > 0 ? { rich: true } : {}),
+    ...(passage ? { passage: { ...(passage.title ? { title: passage.title } : {}), text: passage.text } } : {}),
   };
 }
 

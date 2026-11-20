@@ -618,6 +618,14 @@
       "what": "Microsoft updates the English PL-900 exam on December 18, 2026 (notice on the certification page); until then the study guide lists the skills measured as of July 24, 2026.",
       "action": "Read the updated study guide's skills measured and change log, then re-weight the blueprint and add or retire items to match.",
       "source": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900"
+    },
+    {
+      "exam": "ukcemap2",
+      "date": "2027-03-31",
+      "kind": "notice",
+      "what": "Help to Buy - Wales closes to new applications on 31 March 2027 unless extended again; CEMAP2-SCH-005 keys Wales as the only place a new buyer can still apply.",
+      "action": "Check gov.wales; if the scheme has closed, rewrite CEMAP2-SCH-005.",
+      "source": "https://www.gov.wales/help-buy-wales/eligibility"
     }
   ]
 }

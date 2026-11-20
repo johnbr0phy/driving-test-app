@@ -3,7 +3,8 @@ import { SITEMAP_SEGMENTS, buildSegment } from "@/lib/sitemaps";
 import { SITE_URL } from "@/lib/siteUrl";
 import { INDEXNOW_MAX_URLS, recentUrls, type DatedUrl } from "@/lib/indexNow";
 import { getAdminDb } from "@/lib/firebase-admin";
-import { recordIndexNowRun } from "@/lib/server/indexNowLog";
+import { readSentMap, recordIndexNowRun } from "@/lib/server/indexNowLog";
+import { unsentUrls } from "@/lib/indexNowSent.mjs";
 
 // IndexNow submission endpoint. POSTs the canonical URL list to
 // api.indexnow.org so Bing (and downstream consumers like ChatGPT search
@@ -15,7 +16,8 @@ import { recordIndexNowRun } from "@/lib/server/indexNowLog";
 //     -H "Authorization: Bearer $CRON_SECRET"
 //
 // ?days=N sends only URLs whose sitemap lastmod is within the last N days
-// (the nightly cron uses this). Without it every sitemap URL is sent.
+// and that were not already sent since that lastmod (the nightly cron uses
+// this). Without it every sitemap URL is sent.
 // After each production deploy, .github/workflows/indexnow.yml does the same
 // from the live sitemap, so a launch reaches Bing within minutes.
 
@@ -34,8 +36,20 @@ async function buildUrlList(days: number | null): Promise<string[]> {
   for (const segment of SITEMAP_SEGMENTS) {
     for (const entry of await buildSegment(segment)) entries.push(entry);
   }
-  if (days !== null) return recentUrls(entries, days);
-  return Array.from(new Set(entries.map((e) => e.url)));
+  if (days === null) return Array.from(new Set(entries.map((e) => e.url)));
+  const recent = new Set(recentUrls(entries, days));
+  const dated = entries
+    .filter((e) => recent.has(e.url))
+    .map((e) => ({ url: e.url, lastmod: e.lastModified.slice(0, 10) }));
+  // Skip pages the deploy hook (or an earlier run) already sent since their
+  // lastmod. If the log cannot be read, send them all rather than none.
+  let sent: Awaited<ReturnType<typeof readSentMap>> = {};
+  try {
+    sent = await readSentMap(getAdminDb());
+  } catch (e) {
+    console.error("[indexnow] could not read the send log, sending all recent pages", e);
+  }
+  return unsentUrls(dated, sent);
 }
 
 function daysParam(req: NextRequest): number | null {

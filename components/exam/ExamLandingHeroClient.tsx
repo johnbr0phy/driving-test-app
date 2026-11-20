@@ -12,7 +12,7 @@ import { getExamByPath } from "@/lib/exams";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
-import { LandingTryQuestion } from "@/components/exam/LandingTryQuestion";
+import { LandingTryQuestion, type TryRichNodes } from "@/components/exam/LandingTryQuestion";
 import { LANDING_TRY_INIT_SCRIPT, noteLandingTryEnrolled, reapplyLandingTryArm } from "@/lib/landingTryTest";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 
@@ -192,6 +192,7 @@ export function ExamLandingHeroClient({
   shots,
   lang,
   tryQuestion,
+  tryRich,
 }: {
   dashboardHref: string;
   subtitle: string;
@@ -200,6 +201,8 @@ export function ExamLandingHeroClient({
   lang?: Language;
   /** A playable question under the Start button (lib/landingTryQuestion.ts). */
   tryQuestion?: TryQuestion | null;
+  /** Server-drawn rich text for a v2 question with markup or KaTeX. */
+  tryRich?: TryRichNodes;
 }) {
   const { hasSession, loading, onStart, copy } = useStartCta(dashboardHref, lang);
   // Answering the try card starts a guest session, which would turn
@@ -250,7 +253,7 @@ export function ExamLandingHeroClient({
         <span data-try-first hidden />
         <p className="try-sub text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
         <div className="landing-try-start flex flex-col items-center gap-3">{startPill}</div>
-        <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={hold} />
+        <LandingTryQuestion q={tryQuestion} rich={tryRich} lang={lang} onAnswer={hold} />
       </>
     );
   }

@@ -242,6 +242,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ISACA's COBIT Foundation certificate page and ISACA's public COBIT 2019 material, checked November 2026",
     source: { name: "ISACA", url: "https://www.isaca.org/credentialing/cobit/cobit-foundation" },
   },
+  pmiacp: {
+    answer:
+      "The PMI Agile Certified Practitioner (PMI-ACP) exam has 120 questions, 100 scored and 20 unscored pretest items, in 3 hours, with one 10-minute break after question 60. Questions are multiple choice, multiple response, drag-and-drop and exhibit items. They follow PMI's PMI-ACP Examination Content Outline (November 2024, revised March 2026): Mindset 28%, Leadership 25%, Product 19% and Delivery 28%. PMI does not publish a passing score. You can take it at a Pearson VUE test center or online, up to three times in your one-year eligibility period.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 pretest)" },
+      { label: "Time", value: "3 hours, one 10-minute break" },
+      { label: "Domains", value: "Mindset 28%, Leadership 25%, Product 19%, Delivery 28%" },
+      { label: "Pass mark", value: "Not published by PMI" },
+      { label: "Delivery", value: "Pearson VUE test center or online proctored" },
+      { label: "Given by", value: "Project Management Institute (PMI)" },
+    ],
+    basedOn: "PMI's PMI-ACP Examination Content Outline (November 2024, revised March 2026)",
+    source: { name: "PMI", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf" },
+  },
   istqb: {
     answer:
       "The ISTQB Certified Tester Foundation Level (CTFL v4.0) exam has 40 multiple-choice questions worth one point each, and you need 26 points (65 percent) to pass. You have 60 minutes, or 75 minutes if you take it in a language that is not your native one. Questions come from six syllabus chapters: Fundamentals of Testing 8, Testing Throughout the SDLC 6, Static Testing 4, Test Analysis and Design 11, Managing the Test Activities 9 and Test Tools 2. The current syllabus document is v4.0.1.",
@@ -434,6 +448,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ESCO Institute's R-410A Safety & Training and Specialty Certifications pages, checked November 2026",
     source: { name: "ESCO Institute R-410A program", url: "https://www.escogroup.org/Training/R410A.aspx" },
   },
+  waterop: {
+    answer:
+      "The Water Treatment Operator Class I exam is the entry-level certification exam for drinking water treatment plant operators. Most US states certify operators themselves, and many use the standardized exam from Water Professionals International (WPI, formerly the Association of Boards of Certification, ABC). WPI's 2025 Need-to-Know Criteria give it 100 scored questions plus up to 10 unscored pre-test questions: Treatment Process 31, Equipment Operation and Maintenance 26, Laboratory Analysis 16, Source Water Characteristics 15, and Security, Safety, and Administrative Procedures 12. About 10% are calculations, printed in US and metric units, and WPI's formula/conversion table is provided. The pass mark, time limit and class names are set by each state; North Carolina, for example, requires 70 percent.",
+    rows: [
+      { label: "Questions", value: "100 scored + up to 10 unscored pre-test (WPI standardized exam)" },
+      { label: "Weights", value: "Treatment 31, Equipment 26, Lab 16, Source water 15, Safety and admin 12" },
+      { label: "Calculations", value: "About 10%, with WPI's formula/conversion table provided" },
+      { label: "Passing score", value: "Set by each state (70% in North Carolina and many others)" },
+      { label: "Given by", value: "State operator certification programs" },
+      { label: "Class names", value: "Vary by state (Class I, Grade 1, Class D and others)" },
+    ],
+    basedOn: "WPI's Water Treatment Operator Class I Need-to-Know Criteria (2025) and Formula/Conversion Table (2024), and North Carolina DEQ's operator FAQ, checked November 2026",
+    source: { name: "WPI Water Treatment Class I Need-to-Know Criteria (PDF, hosted by ADEM)", url: "https://adem.alabama.gov/sites/default/files/2025-08/NTK%20WT2.pdf" },
+  },
   natecore: {
     answer:
       "The NATE Core exam is the knowledge exam from North American Technician Excellence (NATE) that tests an HVACR technician's general knowledge, construction knowledge and HVACR knowledge in safety, tools, basic construction, basic science, achieving desired conditions, taking measurements and basic electricity. NATE says it is a requirement for most installation or service specialty certifications. It has 50 questions, is closed book with a 1.5 hour time limit, and is scored pass/fail; NATE sets the passing score through a Passing Score Study and does not publish a percentage. On the traditional pathway a technician passes the Core exam and a 100-question Specialty exam. NATE certifications are renewed every two years.",
@@ -447,6 +475,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "NATE's Core exam KATE, Traditional Pathway and Recertification FAQ pages, checked November 2026",
     source: { name: "NATE Core exam KATE (PDF)", url: "https://natex.org/wp-content/uploads/2022/06/Core-KATE-Final.pdf" },
+  },
+  hvacjourney: {
+    answer:
+      "The HVAC or mechanical journeyman exam is the written exam a state or city gives before it licenses a journeyman to install and service heating, ventilation, air conditioning and refrigeration systems under a licensed contractor. There is no national exam: each board sets its own, usually through PSI, Prometric or ICC, and most are open book on the International Mechanical Code edition it has adopted, often with the Fuel Gas Code. Maryland's HVACR Journeyman exam, for example, is 100 questions in 240 minutes with 70% to pass and covers electrical, piping, refrigeration, heating, air distribution and safety. ICC's current model code is the 2024 IMC; many boards still use the 2018 or 2021 edition.",
+    rows: [
+      { label: "Questions", value: "Varies by state (Maryland HVACR Journeyman: 100)" },
+      { label: "Time", value: "Varies (Maryland: 240 minutes)" },
+      { label: "Passing score", value: "Varies, often 70%" },
+      { label: "Format", value: "Usually open book on the adopted IMC edition" },
+      { label: "Current model code", value: "2024 International Mechanical Code and Fuel Gas Code" },
+      { label: "Given by", value: "State and city licensing boards via PSI, Prometric or ICC" },
+    ],
+    basedOn: "The 2024 IMC and IFGC on ICC's free public-access site and Maryland's PSI HVACR candidate bulletin (updated 9/1/2024), checked November 2026",
+    source: { name: "Maryland HVACR candidate information bulletin (PSI)", url: "https://dllr.state.md.us/LICENSE/hvacr/hvacrcandidateinfobulletin.pdf" },
   },
   contractorlaw: {
     answer:
@@ -3127,6 +3169,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Microsoft Learn AZ-900 study guide (skills measured as of July 20, 2026)",
     source: { name: "Microsoft Learn", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
   },
+  ccnpencor: {
+    answer:
+      "Cisco 350-401 ENCOR (Implementing Cisco Enterprise Network Core Technologies) is the exam associated with both the CCNP Enterprise and CCIE Enterprise certifications. It is a 120-minute exam in English or Japanese; Cisco does not publish the question count or a passing score. Version 1.2 of the exam topics, in force since March 19, 2026, has six domains: Architecture 15%, Virtualization 10%, Infrastructure 30%, Network Assurance 10%, Security 20%, and Automation and Artificial Intelligence 15%. Version 1.2 dropped the wireless topics of v1.1.",
+    rows: [
+      { label: "Exam code", value: "350-401 ENCOR (topics v1.2)" },
+      { label: "Questions", value: "Not published by Cisco" },
+      { label: "Time", value: "120 minutes" },
+      { label: "Passing score", value: "Not published by Cisco" },
+      { label: "Languages", value: "English and Japanese" },
+      { label: "Certifications", value: "CCNP Enterprise and CCIE Enterprise" },
+      { label: "Given by", value: "Cisco" },
+    ],
+    basedOn: "the Cisco ENCOR 350-401 v1.2 exam topics and the Cisco 350-401 exam page, checked November 2026",
+    source: { name: "Cisco: 350-401 ENCOR exam topics v1.2", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/350-401-ENCORE-v1.2.pdf" },
+  },
   ccna: {
     answer:
       "The Cisco CCNA (200-301) is a single 120-minute exam with no prerequisites. Cisco does not publish the question count or a passing score; candidates usually see about 100 to 120 questions, including multiple choice, drag-and-drop and simulations, answered in order with no going back. The v1.1 topics run through February 2, 2027: Network Fundamentals 20%, Network Access 20%, IP Connectivity 25%, IP Services 10%, Security Fundamentals 15%, Automation and Programmability 10%. Version 2.0 replaces it on February 3, 2027.",
@@ -3291,6 +3348,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "NFPA 1010 (2024 edition) and state fire certification guidance, checked October 2026",
     source: { name: "NFPA 1010: Standard on Professional Qualifications for Firefighters", url: "https://www.nfpa.org/codes-and-standards/nfpa-1010-standard-development/1010" },
+  },
+  proserve: {
+    answer:
+      "ProServe is Alberta's responsible liquor service and sales program, run by Alberta Gaming, Liquor and Cannabis (AGLC). Anyone who sells or serves liquor, or provides security, at Class A, B, D, E, F or Duty-Free licensed premises must hold it, along with listed roles at public special events and liquor agency sampling staff. New hires must be certified within 30 days of starting. The online course ends with an exam that needs at least 80% to pass, with five attempts per registration; the certificate lasts five years from completion.",
+    rows: [
+      { label: "Run by", value: "AGLC (SMART Programs)" },
+      { label: "Who needs it", value: "Staff who sell, serve or secure liquor" },
+      { label: "Deadline", value: "Within 30 days of the start date" },
+      { label: "Pass mark", value: "80% (AGLC)" },
+      { label: "Attempts", value: "Five per registration" },
+      { label: "Language", value: "English" },
+      { label: "Certificate", value: "Expires five years after completion" },
+      { label: "Question count", value: "AGLC sets; not published" },
+    ],
+    basedOn: "AGLC's ProServe Liquor Staff Training page and Liquor Licensee Handbook section 1.6, checked November 2026",
+    source: { name: "AGLC ProServe Liquor Staff Training", url: "https://aglc.ca/training/proserve-liquor-staff-training" },
   },
   dispatcher: {
     answer:
@@ -4059,6 +4132,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Scrum.org's PSM I assessment page and the Scrum Guide (November 2020)",
     source: { name: "Scrum.org", url: "https://www.scrum.org/assessments/professional-scrum-master-i-certification" },
+  },
+  pspo: {
+    answer:
+      "The Professional Scrum Product Owner I (PSPO I) assessment from Scrum.org has 80 questions in 60 minutes, taken online in English or Japanese. Questions are multiple choice, multiple answer and true/false, and you need 85 percent, 68 of 80, to pass. It covers the Scrum framework and Scrum.org's product focus areas: product vision, product value, Product Backlog management, business strategy, stakeholders and customers, and forecasting and release planning.",
+    rows: [
+      { label: "Questions", value: "80" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Pass mark", value: "85% (68 of 80)" },
+      { label: "Question types", value: "Multiple choice, multiple answer, true/false" },
+      { label: "Languages", value: "English and Japanese" },
+      { label: "Focus", value: "Managing products with agility, on the Scrum Guide (2020)" },
+      { label: "Given by", value: "Scrum.org, online" },
+    ],
+    basedOn: "Scrum.org's PSPO I assessment page, its Managing Products with Agility focus areas and the Scrum Guide (November 2020)",
+    source: { name: "Scrum.org", url: "https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification" },
   },
   capm: {
     answer:
@@ -7317,6 +7405,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "LIBF's FSRE qualification specification (version 7, July 2026) and CeMAP qualification specification (April 2026), checked November 2026",
     source: { name: "Walbrook (LIBF): Financial Services, Regulation and Ethics", url: "https://www.walbrook.ac.uk/libf/professional-qualifications/financial-and-mortgage-advice/financial-services-regulation-and-ethics-fsre/" },
+  },
+  ukcemap2: {
+    answer:
+      "CeMAP Module 2 is the MORT module of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. It has two units: MRT1, Mortgage Law, Practice and Application, and MRT2, Mortgage Products and Post Completion. Each is a one-hour online exam taken on Brightspace with remote invigilation. MRT1 has 50 standalone multiple-choice questions and needs 35 (70%) to pass; MRT2 has 40 and needs 28 (70%).",
+    rows: [
+      { label: "Units", value: "2: MRT1 and MRT2 (the MORT module)" },
+      { label: "MRT1", value: "50 standalone MCQs, 1 hour, 35 to pass" },
+      { label: "MRT2", value: "40 standalone MCQs, 1 hour, 28 to pass" },
+      { label: "Pass mark", value: "70% on each unit" },
+      { label: "Higher passes", value: "Merit 80%, distinction 90%" },
+      { label: "Format", value: "Online, remote invigilation, no booking" },
+      { label: "Rest of CeMAP", value: "FSRE (Module 1) and the ASEW/ASSC synoptic unit" },
+      { label: "Run by", value: "LIBF, part of Walbrook Institute London" },
+    ],
+    basedOn: "LIBF's CeMAP qualification specification (published April 2026), checked November 2026",
+    source: { name: "Walbrook (LIBF): CeMAP qualification specification", url: "https://www.walbrook.ac.uk/hubfs/files/documents/pe/cemap-qualification-specification-march-2026.pdf" },
   },
   sgftt: {
     answer:

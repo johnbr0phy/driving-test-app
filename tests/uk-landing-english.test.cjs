@@ -16,7 +16,7 @@ const { getCatalogEntry } = require('../lib/testCatalog.ts');
 const americanCopy = /\b(?:practicing|practiced|colors?|colored|colorful|centers?|centered|behaviors?|favorites?|neighbors?|analyze|analyzed|analyzing|traveling|canceled|aluminum|counseling|pediatric|airplanes?)\b/i;
 const ukExams = [...EXAMS, ...EXAMS_V2].filter(exam => regionOfTest(exam.id) === 'UK');
 const knownUK = [
-  'aatl2', 'cemap', 'ukcar', 'ukmoto', 'uklgv', 'ukpcv', 'ukadi', 'uksia',
+  'aatl2', 'cemap', 'ukcemap2', 'ukcar', 'ukmoto', 'uklgv', 'ukpcv', 'ukadi', 'uksia',
   'uk18ed', 'cscs', 'ukseru', 'ukfood', 'ukaplh', 'ukfaw', 'ukcare', 'uklitu',
   'uknmc', 'timestables', 'ks2', 'elevenplus', 'gcsemaths', 'gcsehigher',
   'gcsescience', 'gcsecs', 'fsmaths',

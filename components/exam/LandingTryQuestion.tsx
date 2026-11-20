@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import Link from "next/link";
 import { Check, MousePointerClick, X } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
@@ -20,6 +20,9 @@ import type { Question } from "@/types";
 // goes to its first drill instead, and "Keep going" opens that drill.
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"] as const;
+
+/** Rich text drawn on the server (ExamLandingHero) for a question with markup. */
+export type TryRichNodes = { stem: ReactNode; options: ReactNode[]; explanation: ReactNode; passage?: ReactNode };
 
 const COPY: Partial<Record<Language, { label: string; hint: string; right: string; wrong: string; next: string; saved: string }>> = {
   en: { label: "Try one now", hint: "Pick an answer", right: "Correct!", wrong: "Not quite.", next: "Keep going", saved: "Counted in your first practice set." },
@@ -44,7 +47,7 @@ const COPY: Partial<Record<Language, { label: string; hint: string; right: strin
 /** Time to read the title before the card asks for attention. */
 const NUDGE_DELAY_MS = 2500;
 
-export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang?: Language; onAnswer?: () => void }) {
+export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion; rich?: TryRichNodes; lang?: Language; onAnswer?: () => void }) {
   const { user, loading } = useAuth();
   const { setLanguage } = useTranslation();
   const isGuest = useStore((s) => s.isGuest);
@@ -123,7 +126,16 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
           </p>
         )}
       </div>
-      <p className="mt-2 text-base sm:text-lg font-medium text-gray-900 dark:text-gray-50">{q.stem}</p>
+      {rich?.passage && (
+        <div className="mt-3 max-h-64 overflow-y-auto rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-900/60 p-4 text-sm text-gray-700 dark:text-gray-200">
+          {rich.passage}
+        </div>
+      )}
+      {rich ? (
+        <div className="mt-2 text-base sm:text-lg font-medium text-gray-900 dark:text-gray-50">{rich.stem}</div>
+      ) : (
+        <p className="mt-2 text-base sm:text-lg font-medium text-gray-900 dark:text-gray-50">{q.stem}</p>
+      )}
       <div className="mt-4 grid gap-2">
         {q.options.map((text, i) => {
           const isKey = i === q.correctIndex;
@@ -155,7 +167,7 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
               >
                 {LETTERS[i]}
               </span>
-              <span className="flex-1">{text}</span>
+              <span className="flex-1 min-w-0">{rich?.options[i] ?? text}</span>
               {state === "right" && <Check className="h-5 w-5 shrink-0 text-green-600 dark:text-green-400" aria-hidden />}
               {state === "wrong" && <X className="h-5 w-5 shrink-0 text-red-600 dark:text-red-400" aria-hidden />}
             </button>
@@ -167,7 +179,11 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
           <p className={`font-semibold ${correct ? "text-green-700 dark:text-green-300" : "text-red-700 dark:text-red-300"}`}>
             {correct ? copy.right : copy.wrong}
           </p>
-          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{q.explanation}</p>
+          {rich ? (
+            <div className="mt-1 text-sm text-gray-600 dark:text-gray-300">{rich.explanation}</div>
+          ) : (
+            <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{q.explanation}</p>
+          )}
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <Link
               href={q.practiceHref}

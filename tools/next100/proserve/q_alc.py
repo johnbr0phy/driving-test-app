@@ -16,7 +16,7 @@ Q = [
  "Brain, pancreas and stomach", ["Heart, lungs and skin", "Kidneys and bladder", "Spleen and gallbladder"],
  "AHS says the liver does most of the work, but some alcohol is also metabolized by the brain, pancreas and stomach."),
 ("Toxic acetaldehyde builds up in the body most when a person:",
- "Drinks larger amounts", ["Drinks with food", "Drinks light beer", "Drinks water as well"],
+ "Drinks larger amounts", ["Drinks clear spirits", "Drinks with food", "Drinks light beer"],
  "The liver turns alcohol into acetaldehyde, a highly toxic substance; AHS says build-up happens especially when higher amounts are consumed."),
 ("In the liver, alcohol is first broken down into:",
  "Acetaldehyde", ["Acetate", "Formaldehyde", "Glucose"],

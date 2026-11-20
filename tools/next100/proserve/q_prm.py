@@ -31,7 +31,7 @@ Q = [
  "Adulteration", ["Infusion", "Aging", "Batch mixing"],
  "Diluting liquor with water is adulteration under policy 5.3.18 and the Act. Infusion means adding flavouring ingredients and must be labelled."),
 ("May staff pour liquor straight into a guest's mouth?",
- "No, never", ["No, except at special events", "No, unless a pour spout is used", "No, unless the guest is seated"],
+ "No, never", ["Yes, with a measured pour", "No, except at special events", "Yes, if the guest is seated"],
  "Policy 5.3.14 says licensees and staff are prohibited from dispensing liquor directly into a patron's mouth."),
 ("An AGLC-approved patio for a Class A bar is treated as:",
  "Part of the bar's premises", ["A separate licensed area", "An unlicensed outdoor area", "A special event site"],
@@ -82,6 +82,6 @@ Q = [
  "Judged at an SEL competition", ["Made by the licensee", "Served free to staff after close", "Sold at cost"],
  "Section 72 of the Act allows homemade liquor on licensed premises only when judged in a competition under a special event licence, or served at a special event where no liquor is sold."),
 ("Food specials at a licensed premises must not:",
- "Depend on buying liquor", ["Be priced under cost", "Run only on weekdays", "Be advertised outside"],
+ "Depend on buying liquor", ["Be offered during happy hour", "Include a free soft drink", "Be priced under cost"],
  "Policy 5.4.3 says food specials must not depend on liquor purchases, so a meal deal cannot require ordering a drink."),
 ]

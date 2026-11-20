@@ -1,0 +1,1 @@
+- AP Computer Science Principles (`apcsp`): free v2, 200 original questions, two 70-question/120-minute MCQ tests and five drills. Eight choose-two and five passage items per test. Create/written responses and AP CSA excluded. Sources/build: `tools/build20261117/apcsp/`. SAT tiger reuse.

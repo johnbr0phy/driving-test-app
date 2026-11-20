@@ -315,7 +315,7 @@ catalog blurb, org line, hub group and search aliases in `lib/testCatalog.ts`, t
 `components/CDLHeader.tsx` and `components/TestIcon.tsx`, eight wrappers under `app/<slug>/`
 copied from the newest exam, `scripts/build-training-parts.ts`, the landing page with its
 `lib/examFacts.ts` entry and `lib/seoDates.ts` bump, the teacher-led lists when it is taught in a
-class, a CLAUDE.md bullet, and the landing screenshots, light and dark (`scripts/shoot_landing.js`).
+class, a `docs/exams/<id>.md` notes file, and the landing screenshots, light and dark (`scripts/shoot_landing.js`).
 
 The wrappers only point at shared components, so a new exam gets every dashboard, results,
 landing, header and footer change already made to the others. Keep it that way: when an exam

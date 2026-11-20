@@ -51,11 +51,11 @@ Tell John the picks in one short list before building, then carry on without wai
 
 For each pick, follow the `exam-bank` skill in full (`.claude/skills/exam-bank/SKILL.md` and
 `references/wiring.md`): step 0 research with `sources.md`, the bank, the validator, the config,
-routes, landing, facts, catalog entry, theme, search aliases, CLAUDE.md entry.
+routes, landing, facts, catalog entry, theme, search aliases, `docs/exams/<id>.md` notes file.
 
 - Run picks as parallel subagents where the session allows it, at most 4 at a time, each in its
   own worktree or on its own files. Shared files (`lib/exams.ts`, `lib/testCatalog.ts`,
-  `app/globals.css`, `types/index.ts`, `i18n/*`, `CLAUDE.md`, the generated JSON files) are merged
+  `app/globals.css`, `types/index.ts`, `i18n/*`, the generated JSON files) are merged
   by you afterwards, one test at a time, and the generated files are regenerated once at the end.
 - Price follows the standing rule: career, licence and government-job exams are Premium (v1 locks,
   or `PREMIUM_V2_IDS` for v2); school, college-entrance and children's tests are free.

@@ -8,8 +8,8 @@ bottom of this file and in `tools/next100/QUEUE.md`.
 ## Read first
 - `.claude/skills/exam-bank/SKILL.md` (house style; it applies to v2 items too) and
   `.claude/skills/exam-bank/references/wiring.md`.
-- `CLAUDE.md`: the section for your engine (v1 "Additional Exams" or "v2 exams") and the bullet of
-  your template exam.
+- `docs/claude/v1-engine.md` or `docs/claude/v2-engine.md` for your engine, and
+  `docs/exams/<template id>.md` for your template exam.
 - Your template exam, end to end (its `tools/` folder, `WIRING.md`, data, config, bank module,
   `app/` wrappers and landing). Copy its structure; do not invent a new one.
 
@@ -45,7 +45,7 @@ every shared change in your `WIRING.md` as paste-ready blocks, in the same secti
 `WIRING.md`, including: the config/registry lines, types and i18n (v1), bankSizes (v2), the
 `classQuestions.ts` / `mcpV2Practice.ts` imports (v2), the globals.css block with the hue below,
 the testCatalog blurb, org, hub group, search aliases, the TEST_REGIONS line, the examFacts entry,
-TEACHER_LED / TEACHES lines if a teacher or coaching class would set it, and the CLAUDE.md bullet.
+TEACHER_LED / TEACHES lines if a teacher or coaching class would set it, and the `docs/exams/<id>.md` notes file.
 
 Do not run git, `npm install`, `next build` or `next dev` (the integrator does). You may run
 `npx tsc --noEmit -p .` only if no other builder is likely to be mid-edit; prefer checking your own

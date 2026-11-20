@@ -1,0 +1,1 @@
+- **TEAS** (ATI TEAS 7, `/teas/*`, landing `/teas-practice-test`): `data/teas-questions.json` (200 questions: reading 52 with embedded passages, math 44, science 60, English 44), test IDs 2201-2204, sets 2201-2204, state `TEAS`, 70% pass. 13/11/15/11 per test. Reading stems run up to 110 words.

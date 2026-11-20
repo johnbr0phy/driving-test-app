@@ -83,7 +83,7 @@ COMPLIANCE = [
  "Targeted Probe and Educate", ["Recovery Audit Program", "Comprehensive Error Rate Testing", "Zone Program Integrity"],
  "Targeted Probe and Educate (TPE) has MACs review small samples from providers with high error rates and offer education between rounds."),
 ("When ICD-10-CM changes on October 1, HIM should make sure, before that date, that:",
- "Encoders updated, coders trained", ["Old claims re-run through edits", "Payers sent the new code list", "Chargemaster frozen for a month"],
+ "Encoders updated, coders trained", ["Old claims re-run, edits off", "Payers notified, CDM frozen", "Codes mapped back, claims held"],
  "Monitoring regulatory change means updating software, tables and policies and training staff before the effective date."),
 ("A hospital's own privacy policies must be changed when:",
  "The law they follow changes", ["The notice is reprinted", "A breach is reported", "A new privacy officer starts"],
@@ -103,8 +103,8 @@ COMPLIANCE = [
 ("Which agency enforces the HIPAA Privacy and Security Rules?",
  "HHS Office for Civil Rights", ["Federal Trade Commission", "The Joint Commission", "State medical licensing boards"],
  "The HHS Office for Civil Rights investigates complaints and enforces the HIPAA Privacy, Security and Breach Notification Rules."),
-("A coding manager changes a code a coder assigned. To keep compliance, the change should be:",
- "Documented with its reason", ["Approved by the attending", "Re-entered by the coder", "Counted in productivity"],
+("A coding manager changes a code a coder assigned. The record of the change should show who, when and:",
+ "The reason for the change", ["The payer's response", "The coder's productivity", "The claim's paid amount"],
  "Code changes are tracked with who made them and why, so the audit trail shows the basis for the final codes."),
 ]
 
@@ -152,7 +152,7 @@ LEADERSHIP = [
  "USCDI", ["MEDPAR", "UHDDS", "HCPCS"],
  "The United States Core Data for Interoperability defines the data classes and elements expected to be exchangeable."),
 ("When a new state record-release law takes effect, the HIM manager should first:",
- "Update policies and train staff", ["Revise the release form and fees", "Notify the medical staff only", "Audit last year's releases"],
+ "Update policies and train staff", ["Revise forms and post notices", "Brief physicians and payers", "Audit and report past releases"],
  "Leadership turns legal changes into revised policies and procedures, then educates the staff who apply them."),
 ("Staff resist a new remote coding workflow. A sound change management step is to:",
  "Explain why and involve them", ["Set targets for the new workflow", "Assign mentors to slow coders", "Start with the fastest coders"],

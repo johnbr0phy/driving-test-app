@@ -124,7 +124,7 @@ ITEMS = [
 
     # ---------------- Test 2 ----------------
     single(2, "Password types", 1,
-           "Which Cisco credential type does Cisco recommend for hashed passwords such as local user secrets?",
+           "Which of these Cisco credential types does Cisco recommend for hashed secrets such as local user passwords?",
            ["Type 9 (scrypt)", "Type 7 (Vigenere)", "Type 5 (MD5)", "Type 0 (plain text)"],
            "Cisco recommends type 9, scrypt, or type 8 where regulations require PBKDF2. Types 0, 5 and 7 should be avoided."),
     single(2, "Password types", 3,

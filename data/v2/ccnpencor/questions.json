@@ -138,8 +138,8 @@
     "explanation": "Conditionally triggered debugging with $\\texttt{debug condition interface}$ restricts debug output to that interface; with no condition set, output appears for all interfaces.",
     "options": [
       "$\\texttt{debug condition interface Gi0/1}$",
-      "$\\texttt{debug ip packet detail 101}$",
-      "$\\texttt{terminal monitor}$ on Gi0/1 only",
+      "$\\texttt{show debugging interface Gi0/1}$",
+      "$\\texttt{debug interface Gi0/1 events}$",
       "$\\texttt{logging buffered debugging}$"
     ],
     "correct": [
@@ -529,18 +529,20 @@
     "test": 1,
     "module": 1,
     "domain": "encorL2",
-    "skill": "MST instances",
+    "skill": "MST configuration",
     "difficulty": 2,
-    "format": "numeric",
-    "stem": "Cisco's MST implementation supports 16 instances in total. Besides the IST, how many MSTIs can a region hold? Type the number only.",
-    "explanation": "Cisco supports one IST (instance 0) plus 15 MSTIs, 16 instances in all.",
-    "numeric": {
-      "answers": [
-        "15"
-      ],
-      "tolerance": 0,
-      "wholeNumber": true
-    }
+    "format": "single",
+    "stem": "In MST configuration mode, which command maps VLANs 10 to 20 to instance 1?",
+    "explanation": "VLANs are mapped to an MST instance with $\\texttt{instance}$ inside $\\texttt{spanning-tree mst configuration}$. The mapping is one of the three values that must match across the region.",
+    "options": [
+      "$\\texttt{vlan 10-20 mst 1}$",
+      "$\\texttt{instance 1 vlan 10-20}$",
+      "$\\texttt{revision 1 vlan 10-20}$",
+      "$\\texttt{spanning-tree mst 1 vlan 10-20}$"
+    ],
+    "correct": [
+      1
+    ]
   },
   {
     "id": "ENCOR-T1-027",
@@ -761,16 +763,16 @@
     "skill": "SD-WAN TLOC",
     "difficulty": 2,
     "format": "single",
-    "stem": "A Catalyst SD-WAN transport location (TLOC) is identified by which pair of values?",
-    "explanation": "A TLOC names the point where an edge router meets a WAN transport, identified by its IP address and a color such as mpls or biz-internet. OMP advertises TLOCs as TLOC routes.",
+    "stem": "Besides an IP address, which TLOC value names the WAN transport, such as mpls or biz-internet?",
+    "explanation": "A TLOC is identified by an IP address and a color, and the color (mpls, biz-internet and so on) names the transport. OMP advertises TLOCs as TLOC routes.",
     "options": [
-      "Router ID and AS number",
-      "System IP and site ID",
-      "Interface name and VLAN",
-      "IP address and color"
+      "Site ID",
+      "Color",
+      "Region ID",
+      "Label"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2121,16 +2123,16 @@
     "skill": "Password types",
     "difficulty": 1,
     "format": "single",
-    "stem": "Which Cisco credential type does Cisco recommend for hashed passwords such as local user secrets?",
+    "stem": "Which of these Cisco credential types does Cisco recommend for hashed secrets such as local user passwords?",
     "explanation": "Cisco recommends type 9, scrypt, or type 8 where regulations require PBKDF2. Types 0, 5 and 7 should be avoided.",
     "options": [
-      "Type 7 (Vigenere)",
-      "Type 0 (plain text)",
       "Type 5 (MD5)",
-      "Type 9 (scrypt)"
+      "Type 9 (scrypt)",
+      "Type 0 (plain text)",
+      "Type 7 (Vigenere)"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2858,16 +2860,16 @@
     "skill": "RSPAN",
     "difficulty": 3,
     "format": "single",
-    "stem": "Mirrored frames arrive at the RSPAN destination port. What has happened to their original VLAN tags?",
+    "stem": "Mirrored frames leave an RSPAN destination port. What has happened to their original VLAN IDs?",
     "explanation": "The original VLAN ID is overwritten by the RSPAN VLAN ID in transit, so packets leave the destination port untagged with their original VLAN lost.",
     "options": [
-      "Overwritten by the RSPAN VLAN ID",
+      "They are kept, stacked under a new tag",
+      "They are moved into an ERSPAN header",
       "They are rewritten to the native VLAN",
-      "They are kept and stacked behind it",
-      "They are moved into an ERSPAN header"
+      "Lost: frames leave the port untagged"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2984,13 +2986,13 @@
     "skill": "SD-WAN components",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which Catalyst SD-WAN component keeps no state of its own?",
-    "explanation": "The Validator only authenticates and orchestrates; Cisco notes it keeps no state. The Manager stores configurations and the Controller holds the OMP route table.",
+    "stem": "Edge routers advertise a symmetric IPsec key for each TLOC. Which component reflects those keys to the other edges?",
+    "explanation": "Keys travel in OMP to the Controller, which reflects them to the other edges, so the data plane IPsec tunnels need no manual configuration. The Manager handles configuration, not keys in OMP.",
     "options": [
       "SD-WAN Manager",
-      "SD-WAN Validator",
       "SD-WAN Controller",
-      "WAN edge router"
+      "Each edge's BFD peer",
+      "SD-WAN Validator"
     ],
     "correct": [
       1
@@ -3911,7 +3913,7 @@
     "stem": "SW1's ports use PAgP $\\texttt{desirable}$ and SW2's use LACP $\\texttt{active}$. What is the result?",
     "explanation": "PAgP and LACP are different protocols: desirable forms a channel only with PAgP desirable or auto, and active only with LACP active or passive.",
     "options": [
-      "SW1 switches to LACP",
+      "A static on-mode channel forms",
       "No channel forms",
       "A PAgP channel forms",
       "An LACP channel forms"

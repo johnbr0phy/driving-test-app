@@ -5848,6 +5848,19 @@
     --brand-border-light: 258 40% 90%;
     --brand-gradient-to: 238 50% 96%;
   }
+  /* Cisco CCNP ENCOR theme: deep muted violet (v2 exam; matches lib/v2/exams/ccnpencor.ts theme) */
+  [data-theme="ccnpencor"] {
+    --brand: 276 40% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 276 60% 96%;
+    --brand-hover: 276 40% 13%;
+    --brand-dark: 276 40% 12%;
+    --brand-darker: 276 30% 8%;
+    --brand-muted: 276 25% 70%;
+    --brand-border: 276 30% 82%;
+    --brand-border-light: 276 40% 90%;
+    --brand-gradient-to: 256 50% 96%;
+  }
   /* Juniper JNCIA-Junos theme: deep forest green (v2 exam; matches lib/v2/exams/jncia.ts theme) */
   [data-theme="jncia"] {
     --brand: 106 95% 18%;
@@ -12312,6 +12325,17 @@
     --brand-muted: 20 45% 45%;
     --brand-dark: 20 90% 65%;
     --brand-darker: 20 85% 78%;
+  }
+  .dark [data-theme="ccnpencor"] {
+    --brand: 276 40% 50%;
+    --brand-hover: 276 40% 42%;
+    --brand-light: 276 45% 13%;
+    --brand-gradient-to: 256 40% 11%;
+    --brand-border-light: 276 35% 24%;
+    --brand-border: 276 30% 34%;
+    --brand-muted: 276 25% 45%;
+    --brand-dark: 276 40% 65%;
+    --brand-darker: 276 30% 78%;
   }
   .dark [data-theme="jncia"] {
     --brand: 106 95% 27.2%;

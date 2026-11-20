@@ -2314,7 +2314,7 @@
   "state": "AK",
   "questionId": "AK-006",
   "category": "gdlLicensing",
-  "question": "조건부 면허 소지자가 만 21세 이상인 사람과 동승하지 않으면 운전할 수 없는 시간대는 언제입니까?",
+  "question": "알래스카에서 조건부 면허 소지자가 만 21세 이상 면허 소지자와 동승하지 않으면 운전할 수 없는 시간대는 언제입니까?",
   "optionA": "자정부터 오전 6시까지",
   "optionB": "오전 1시~오전 5시",
   "optionC": "오전 2시~오전 6시",
@@ -4050,14 +4050,14 @@
   "state": "CA",
   "questionId": "CA-010",
   "category": "gdlLicensing",
-  "question": "캘리포니아의 조건부 면허 소지자는 운전 중 핸즈프리로 휴대폰을 사용할 수 있습니까?",
+  "question": "응급 상황이 아닐 때, 캘리포니아의 18세 미만 운전자는 운전 중 핸즈프리로 휴대폰을 사용할 수 있습니까?",
   "optionA": "네, 제대로 거치되어 있으면",
   "optionB": "아니요, 핸즈프리라도 안 됨",
   "optionC": "네, 하지만 GPS만",
-  "optionD": "네, 하지만 응급 상황만",
+  "optionD": "네, 하지만 고속도로에서만",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "캘리포니아의 18세 미만 조건부 면허 소지자는 응급 상황을 제외하고는 핸즈프리 모드라도 운전 중 어떤 전자 통신 기기도 사용할 수 없습니다."
+  "explanation": "캘리포니아의 18세 미만 운전자는 핸즈프리라도 운전 중 휴대폰이나 기타 무선 기기를 사용할 수 없습니다. 유일한 예외는 응급 지원을 요청하는 전화입니다."
  },
  {
   "type": "State-Specific",
@@ -19688,14 +19688,14 @@
   "state": "NV",
   "questionId": "NV-007",
   "category": "gdlLicensing",
-  "question": "네바다에서 중간 면허 소지자는 통금 시간에 언제 운전할 수 있습니까?",
+  "question": "네바다에서 18세 미만 운전자는 언제 오후 10시부터 오전 5시 사이에 운전할 수 있습니까?",
   "optionA": "여가 활동만",
   "optionB": "부모 허락이 있으면 언제든",
-  "optionC": "학교, 직장 또는 응급 상황",
-  "optionD": "통금 시간에는 절대 안 됨",
+  "optionC": "예정된 행사에 오가는 경우",
+  "optionD": "그 시간에는 절대 안 됨",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "중간 면허 소지자는 학교, 직장 또는 응급 목적으로만 통금 시간에 운전할 수 있습니다."
+  "explanation": "네바다의 18세 미만 운전자는 예정된 행사에 오가는 경우를 제외하고 오후 10시부터 오전 5시 사이에 운전할 수 없습니다(NRS 484B.907)."
  },
  {
   "type": "State-Specific",

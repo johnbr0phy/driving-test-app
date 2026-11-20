@@ -2314,14 +2314,14 @@
   "state": "AK",
   "questionId": "AK-006",
   "category": "gdlLicensing",
-  "question": "Người có bằng lái tạm thời không được lái xe vào những giờ nào trừ khi có người từ 21 tuổi trở lên đi kèm?",
+  "question": "Ở Alaska, người có bằng lái tạm thời không được lái xe vào những giờ nào trừ khi có người có bằng lái từ 21 tuổi trở lên đi kèm?",
   "optionA": "Nửa đêm đến 6 giờ sáng",
   "optionB": "1 giờ sáng đến 5 giờ sáng",
   "optionC": "2 giờ sáng đến 6 giờ sáng",
   "optionD": "11 giờ tối đến 5 giờ sáng",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Hạn chế lái xe ban đêm của Alaska cấm người có bằng lái tạm thời lái xe từ 1 giờ sáng đến 5 giờ sáng nếu không có người lớn từ 21 tuổi trở lên có bằng lái đi kèm — khung giờ có nguy cơ tai nạn cao nhất với thanh thiếu niên."
+  "explanation": "Hạn chế lái xe ban đêm của Alaska cấm người có bằng lái tạm thời lái xe từ 1 giờ sáng đến 5 giờ sáng nếu không có người lớn từ 21 tuổi trở lên có bằng lái đi kèm. Đây là khung giờ có nguy cơ tai nạn cao nhất với thanh thiếu niên."
  },
  {
   "type": "State-Specific",
@@ -4050,14 +4050,14 @@
   "state": "CA",
   "questionId": "CA-010",
   "category": "gdlLicensing",
-  "question": "Người giữ bằng lái tạm thời ở California có được dùng điện thoại rảnh tay (hands-free) khi lái xe không?",
+  "question": "Ngoài trường hợp khẩn cấp, người lái xe dưới 18 tuổi ở California có được dùng điện thoại rảnh tay (hands-free) khi lái xe không?",
   "optionA": "Có, nếu được gắn giá đỡ đúng cách",
   "optionB": "Không, kể cả rảnh tay cũng không",
   "optionC": "Có, nhưng chỉ để dùng GPS",
-  "optionD": "Có, nhưng chỉ trong trường hợp khẩn cấp",
+  "optionD": "Có, nhưng chỉ trên xa lộ",
   "correctAnswer": "B",
   "correctIndex": 1,
-  "explanation": "Người giữ bằng lái tạm thời dưới 18 tuổi ở California không được sử dụng bất kỳ thiết bị liên lạc điện tử nào khi lái xe, kể cả ở chế độ rảnh tay, ngoại trừ trường hợp khẩn cấp."
+  "explanation": "Người lái xe dưới 18 tuổi ở California không được dùng điện thoại di động hay thiết bị không dây khác khi lái xe, kể cả chế độ rảnh tay. Ngoại lệ duy nhất là gọi nhờ trợ giúp khẩn cấp."
  },
  {
   "type": "State-Specific",
@@ -19688,14 +19688,14 @@
   "state": "NV",
   "questionId": "NV-007",
   "category": "gdlLicensing",
-  "question": "Khi nào người có bằng lái trung cấp được phép lái xe trong giờ giới nghiêm ở Nevada?",
+  "question": "Ở Nevada, người lái xe dưới 18 tuổi được lái xe từ 10 giờ tối đến 5 giờ sáng khi nào?",
   "optionA": "Chỉ hoạt động giải trí",
   "optionB": "Bất cứ lúc nào khi cha mẹ cho phép",
-  "optionC": "Vì trường học, công việc hoặc khẩn cấp",
-  "optionD": "Không bao giờ trong giờ giới nghiêm",
+  "optionC": "Khi đi đến hoặc về từ một sự kiện đã lên lịch",
+  "optionD": "Không bao giờ trong những giờ đó",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người có bằng lái trung cấp chỉ được lái trong giờ giới nghiêm vì mục đích trường học, công việc hoặc khẩn cấp."
+  "explanation": "Ở Nevada, người lái xe dưới 18 tuổi không được lái xe từ 10 giờ tối đến 5 giờ sáng, trừ khi đi đến hoặc về từ một sự kiện đã lên lịch (NRS 484B.907)."
  },
  {
   "type": "State-Specific",

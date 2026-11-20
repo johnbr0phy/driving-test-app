@@ -1488,14 +1488,14 @@
     "state": "ALL",
     "questionId": "ROREZ-CHG-007",
     "category": "roreChirGen",
-    "question": "O colecistectomie efectuată pentru colecistită acută este, după contaminare, o intervenție:",
+    "question": "O colecistectomie pentru colecistită acută fără puroi, gangrenă sau perforație este, după contaminare, o intervenție:",
     "optionA": "Curată",
-    "optionB": "Contaminată",
-    "optionC": "Curată-contaminată",
+    "optionB": "Curată-contaminată",
+    "optionC": "Contaminată",
     "optionD": "Murdară",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Deschiderea controlată a tractului biliar, fără revărsare importantă, încadrează operația drept curată-contaminată. O perforație cu puroi sau o plagă traumatică veche ar fi murdară."
+    "explanation": "Chirurgia biliară fără infecție este curată-contaminată. O inflamație acută nepurulentă, cum e colecistita acută, o face contaminată (clasa III). Puroiul sau perforația ar face-o murdară."
   },
   {
     "type": "ROREZID",

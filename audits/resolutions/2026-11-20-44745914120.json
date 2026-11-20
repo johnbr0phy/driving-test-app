@@ -1,0 +1,47 @@
+[
+ {
+  "id": "dktruck__DKTR-HAN-010",
+  "status": "fixed",
+  "note": "Key B kept, because Færdselsstyrelsen's category B plan says a tractor with a protruding front grab can tip until the front wheels leave the road. Distractor D (rear wheels lift) became \"It can tow more weight\" so only the key fits."
+ },
+ {
+  "id": "dmv__AK-006",
+  "status": "fixed",
+  "note": "Stem now says \"In Alaska\" and \"licensed driver 21 or older\" (Alaska DMV provisional license page); key B unchanged; es, ko, vi updated."
+ },
+ {
+  "id": "dmv__AL-026",
+  "status": "dismissed",
+  "note": "ALEA's official speed-limit page lists 25 MPH for residential areas, so key D stands."
+ },
+ {
+  "id": "dmv__CA-010",
+  "status": "fixed",
+  "note": "Stem now asks about a driver under 18 outside an emergency and D became \"Yes, but only on freeways\" (the CA handbook allows a minor's emergency call); key B unchanged; es, ko, vi, zh updated."
+ },
+ {
+  "id": "dmv__NV-007",
+  "status": "fixed",
+  "note": "Stem now asks about a driver under 18 from 10 p.m. to 5 a.m. and C became \"Going to or from a scheduled event\" per NRS 484B.907; key C unchanged; es, ko, vi updated."
+ },
+ {
+  "id": "gcppca__GCPPCA-D-019",
+  "status": "fixed",
+  "note": "Explanation no longer says buckets are never single-zone; it describes zonal buckets (Rapid Bucket only, per the Cloud Storage bucket locations page). Key B unchanged."
+ },
+ {
+  "id": "grdriving__GRDRV-REG-022",
+  "status": "fixed",
+  "note": "Stem (English and Greek) now describes a white circle with a grey 50 crossed by grey lines, with no red border; key unchanged."
+ },
+ {
+  "id": "insurance-pa__LHPA-PALIC-003",
+  "status": "dismissed",
+  "note": "Insurance Department Act section 608-A(b)(1) lets a licensee carry forward up to 24 excess CE hours, so 16 (key C) is right."
+ },
+ {
+  "id": "rorezid__ROREZ-CHG-007",
+  "status": "fixed",
+  "note": "Key changed to \"Contaminată\" and the stem now rules out pus, gangrene and perforation. CDC's 1999 SSI guideline, Table 7, classes acute nonpurulent inflammation as contaminated."
+ }
+]

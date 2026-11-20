@@ -29,7 +29,7 @@ Q = [
  "It can reduce it", ["It always improves it", "It has no effect at all", "It only matters when empty"],
  "Lorries are very stable on course, but that stability can be reduced when towing a trailer, and the combination may sway."),
 ("A tractor carries a front loader grab. What can happen while it drives?",
- "Its front wheels lose grip", ["It accelerates faster", "Its brakes work better", "Its rear wheels lift off the road"],
+ "Its front wheels lose grip", ["It accelerates faster", "Its brakes work better", "It can tow more weight"],
  "A tractor with a front grab sticking out can tip so much that the front wheels leave the road, which seriously reduces its steering."),
 ("How many trailers may a tractor tow at once?",
  "Up to 2", ["Only 1", "Up to 3", "None on public roads"],

@@ -131,3 +131,11 @@ rules are the same law as in `fitruck`, `hugki` and `mtcpc`; here they are asked
 scenarios (one 10-hour day left after Monday, the 40 hours left after a 50-hour week, the Tuesday
 22:00 deadline, the 30-hour compensation, the 8-hour ferry rule), not as copies of those stems, and
 stems that came out close to `uklgv`, `iedttcv`, `rocpi`, `mtcpc` or `dkmoto` were rewritten.
+
+## Audit check 2026-11-20 (DKTR-HAN-010)
+Read the category B plan (https://cdn.fstyr.dk/faerdselsstyrelsen/Media/639159124710541258/undervisningsplan-kategori-b-almindelig-bil-version-11-maj-2026_pdf290526.pdf,
+fetched 2026-11-20, text decoded from the PDF), tractor section: "Traktorer med udragende
+læssegrab eller lignende foran og eventuelt også bagved kan vippe så meget under kørslen, at
+forhjulene slipper vejen, og styringen derved nedsættes alvorligt." Key B (front wheels lose grip)
+kept as the plan states it; distractor "Its rear wheels lift off the road" replaced with "It can
+tow more weight" so only the key fits.

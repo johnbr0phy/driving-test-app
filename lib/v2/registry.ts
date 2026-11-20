@@ -170,15 +170,12 @@ export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, P
  * NEET and the rest) are never sold: leave a new one off this list.
  */
 export const PREMIUM_V2_IDS: string[] = [
+  "ccnpencor", "pspo", "pmiacp",
   "osssc",
   "praxis", "cbest", "gre", "gmat", "lsat", "mcat", "dat", "ieltsread", "toeflread", "teas", "hesi", "asvab", "afoqt",
   "nclex", "nclexpn", "rexpn", "uknmc", "naplex", "nzensf", "nziqn", "emt", "paramedic", "faapvt",
-  "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "linuxplus", "sfpd1", "sfappbuilder", "aplus", "aws", "awssaa", "az900", "ai901", "pl900", "sc900", "sc200", "gcdl", "gcppca", "ccna", "ccnpencor", "jncia",
+  "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "linuxplus", "sfpd1", "sfappbuilder", "aplus", "aws", "awssaa", "az900", "ai901", "pl900", "sc900", "sc200", "gcdl", "gcppca", "ccna", "jncia",
   "pmp", "capm", "psm", "itil", "istqb", "cobit", "prince2", "wonderlic",
-  "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "linuxplus", "sfpd1", "sfappbuilder", "aplus", "aws", "awssaa", "az900", "ai901", "pl900", "sc900", "sc200", "gcdl", "gcppca", "ccna", "jncia",
-  "pmp", "capm", "psm", "pspo", "itil", "istqb", "cobit", "prince2", "wonderlic",
-  "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "linuxplus", "sfpd1", "sfappbuilder", "aplus", "aws", "awssaa", "az900", "ai901", "pl900", "sc900", "sc200", "gcdl", "gcppca", "ccna", "jncia",
-  "pmp", "pmiacp", "capm", "psm", "itil", "istqb", "cobit", "prince2", "wonderlic",
   "secplus", "cysa", "pentestplus", "ceh", "fortinse", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",
   "secplus", "cysa", "pentestplus", "fortinse", "isc2cc", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",
   "pmp", "capm", "psm", "itil", "wonderlic",

@@ -17,6 +17,7 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
+  "ccnpencor", "pspo", "pmiacp", "hvacjourney", "waterop", "ukcemap2",
   "dispatcher",
   "realestatebroker",
   "frcivique",
@@ -93,7 +94,7 @@ const TEACHER_LED = new Set([
   "aufirstaid",
   "gulfrn",
   // High school, military and college classes
-  "ged", "hiset", "tabe", "cbest", "sat", "act", "asvab", "afoqt", "secplus", "securityx", "servicenowcsa", "sscp", "aplus", "aws", "awssaa", "az900", "ai901", "pl900", "ccna", "ccnpencor", "jncia", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
+  "ged", "hiset", "tabe", "cbest", "sat", "act", "asvab", "afoqt", "secplus", "securityx", "servicenowcsa", "sscp", "aplus", "aws", "awssaa", "az900", "ai901", "pl900", "ccna", "jncia", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",
   "eqao9", "staareng1",
   "naplan7", "vicsel", "hscmaths",
@@ -112,10 +113,6 @@ const TEACHER_LED = new Set([
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "rhit", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "cobit", "prince2", "psm", "capm",
-  "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "cobit", "prince2", "psm", "pspo", "capm",
-  "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
-  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "pmiacp", "cobit", "prince2", "psm", "capm",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "osssc", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "vidyagyan", "jambeng", "appsych",
@@ -130,7 +127,7 @@ const TEACHER_LED = new Set([
   // Next-20 batch B (November 2026)
   "cma", "rma", "nbdhe", "inbde", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
-  "aswbclin", "phr", "ccs", "rhia", "rdexam", "cemap", "ukcemap2",
+  "aswbclin", "phr", "ccs", "rhia", "rdexam", "cemap",
   // Build run (November 2026)
   "fpc",
   // Next-20 batch (November 2026)
@@ -154,8 +151,6 @@ const TEACHER_LED = new Set([
   "cct",
   "contractorlaw",
   "natecore",
-  "hvacjourney",
-  "waterop",
   "r410a",
   "backflow",
   "pesticide",

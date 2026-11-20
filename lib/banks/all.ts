@@ -225,6 +225,7 @@ import "./cisa";
 import "./fortigate";
 import "./cssgb";
 import "./ccs";
+import "./rhia";
 import "./rdexam";
 import "./ccrn";
 import "./praxis5001";

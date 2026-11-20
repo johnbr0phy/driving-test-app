@@ -224,7 +224,7 @@ const BORROWED_SETS: Record<string, string> = {
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
-  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
+  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", rhia: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",

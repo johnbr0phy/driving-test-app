@@ -6241,6 +6241,19 @@
     --brand-gradient-to: 175 35% 96%;
   }
 
+  [data-theme="rhia"] {
+    --brand: 294 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 294 45% 96%;
+    --brand-hover: 294 85% 16%;
+    --brand-dark: 294 85% 14%;
+    --brand-darker: 294 85% 10%;
+    --brand-muted: 294 30% 70%;
+    --brand-border: 294 35% 80%;
+    --brand-border-light: 294 35% 89%;
+    --brand-gradient-to: 276 45% 96%;
+  }
+
   /* RD exam (CDR Registration Examination for Dietitians) theme */
   [data-theme="rdexam"] {
     --brand: 91 20% 26%;
@@ -11801,6 +11814,18 @@
     --brand-muted: 193 18% 45%;
     --brand-dark: 193 30% 65%;
     --brand-darker: 193 30% 78%;
+  }
+
+  .dark [data-theme="rhia"] {
+    --brand: 294 85% 46.6%;
+    --brand-hover: 294 85% 38.6%;
+    --brand-light: 294 45% 13%;
+    --brand-gradient-to: 276 40% 11%;
+    --brand-border-light: 294 35% 24%;
+    --brand-border: 294 35% 34%;
+    --brand-muted: 294 30% 45%;
+    --brand-dark: 294 85% 65%;
+    --brand-darker: 294 85% 78%;
   }
 
   .dark [data-theme="rdexam"] {

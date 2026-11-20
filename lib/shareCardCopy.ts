@@ -273,6 +273,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cisa: { title: "ISACA CISA", description: "Practice the IS audit process, IT governance, development, operations and resilience, and protecting information assets." },
   cssgb: { title: "Six Sigma Green Belt (CSSGB)", description: "Practice DMAIC, lean tools, process capability, hypothesis tests, DOE and control charts." },
   ccs: { title: "AHIMA CCS Exam", description: "Review inpatient and outpatient coding, ICD-10-PCS, MS-DRGs, queries and compliance." },
+  rhia: { title: "AHIMA RHIA Exam", description: "Review information governance, HIPAA disclosure, statistics, revenue cycle and HIM management." },
   rdexam: { title: "Registered Dietitian (RD) Exam", description: "Review medical nutrition therapy, assessment, community nutrition, management and foodservice." },
   ccrn: { title: "CCRN (Adult) Exam", description: "Review cardiovascular, respiratory, multisystem and neuro critical care, plus caring and ethics." },
   praxis5001: { title: "Praxis Elementary Education (5001)", description: "Review reading and language arts, math, social studies and science for elementary teachers." },

@@ -180,6 +180,7 @@ export const TEACHES: Record<string, string> = {
   phr: "a PHR exam prep class",
   fpc: "a payroll course or FPC exam prep class",
   ccs: "a medical coding or HIM program",
+  rhia: "an HIM bachelor's or master's program",
   rdexam: "a dietetics program",
   ccrn: "a CCRN review course or critical care nurse residency",
   aafcs: "a family and consumer sciences program",

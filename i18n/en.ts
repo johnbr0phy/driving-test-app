@@ -1616,6 +1616,17 @@ export const en = {
     ccsQueries: "Provider Queries",
     ccsCompliance: "Regulatory Compliance",
     ccsIt: "Information Technologies",
+    // rhia
+    rhiaGovernance: "Information Governance & Data Standards",
+    rhiaRecords: "Record Integrity & the MPI",
+    rhiaAccess: "Access & Release of Information",
+    rhiaPrivacy: "Privacy, Security & Breach",
+    rhiaStats: "Healthcare Statistics & Reports",
+    rhiaInformatics: "Informatics, Databases & HIE",
+    rhiaReimburse: "Reimbursement Models",
+    rhiaRevenue: "Revenue Integrity & Compliance",
+    rhiaLeadership: "Leadership & Human Resources",
+    rhiaOperations: "Budgets, Quality & Projects",
     // rdexam
     rdMgmt: "Management & Leadership",
     rdResearch: "Research Applications",

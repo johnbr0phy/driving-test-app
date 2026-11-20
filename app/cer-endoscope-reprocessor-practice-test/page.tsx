@@ -130,7 +130,7 @@ export default function HspaCerLandingPage() {
           <ExamLandingHero
             dashboardHref="/cer/dashboard"
             shortName="CER"
-            subtitle="200 original questions on the HSPA CER exam content outline: pre-cleaning, leak testing, manual cleaning, high-level disinfection, drying, storage and tracking. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 HSPA CER questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hspacer-mobile.png", desktop: "/landing/hspacer-desktop.png" }}
           />
         </div>

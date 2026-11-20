@@ -137,7 +137,7 @@ export default function SsatLandingPage() {
           <ExamLandingHero
             dashboardHref="/ssat/dashboard"
             shortName="SSAT"
-            subtitle="Middle Level Quantitative, Reading and Verbal for grades 5 to 7, in the real order with five choices per question, plus seven drills that teach the basics first. Everything is free, no account needed."
+            subtitle="SSAT Middle Level Quantitative, Reading and Verbal, plus seven drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/ssat-mobile.png", desktop: "/landing/ssat-desktop.png" }}
           />
         </div>

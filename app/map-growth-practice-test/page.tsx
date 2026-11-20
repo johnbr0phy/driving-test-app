@@ -137,7 +137,7 @@ export default function MapGrowthLandingPage() {
           <ExamLandingHero
             dashboardHref="/map-growth/dashboard"
             shortName="MAP Growth"
-            subtitle="Math, Reading and Language Usage for grades 2 to 5, on NWEA's own blueprint and untimed like the real test, plus ten drills that teach the basics first. Everything is free, no account needed."
+            subtitle="Math, Reading and Language Usage for grades 2 to 5, plus ten drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/mapgrowth-mobile.png", desktop: "/landing/mapgrowth-desktop.png" }}
           />
         </div>

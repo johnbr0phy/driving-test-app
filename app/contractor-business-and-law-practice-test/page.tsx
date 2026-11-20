@@ -132,7 +132,7 @@ export default function ContractorBusinessLawLandingPage() {
           <ExamLandingHero
             dashboardHref="/contractor-business-law/dashboard"
             shortName="Business and Law"
-            subtitle="200 original questions on estimating, contracts, payroll tax, labor law, OSHA, insurance, bonds and liens. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 contractor business and law questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/contractorlaw-mobile.png", desktop: "/landing/contractorlaw-desktop.png" }}
           />
         </div>

@@ -131,7 +131,7 @@ export default function PesticideLandingPage() {
           <ExamLandingHero
             dashboardHref="/pesticide-applicator/dashboard"
             shortName="Pesticide Applicator"
-            subtitle="200 original questions for the pesticide applicator core exam: labels and laws, IPM, formulations, toxicity and first aid, PPE, drift and groundwater, storage and spills, and calibration math. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 pesticide applicator core questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/pesticide-mobile.png", desktop: "/landing/pesticide-desktop.png" }}
           />
         </div>

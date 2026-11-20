@@ -123,7 +123,7 @@ export default function NmlsLandingPage() {
           <ExamLandingHero
             dashboardHref="/nmls/dashboard"
             shortName="NMLS SAFE"
-            subtitle="200 original questions on the NMLS outline: TILA and TRID, RESPA, ECOA, the SAFE Act and state licensing, loan programs, qualifying and closing math, and ethics. Four 50-question mock tests with the 75% pass line. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 NMLS questions and four 50-question mock tests with the 75% pass line. Free to start, no account needed."
             shots={{ mobile: "/landing/nmls-mobile.png", desktop: "/landing/nmls-desktop.png" }}
           />
         </div>

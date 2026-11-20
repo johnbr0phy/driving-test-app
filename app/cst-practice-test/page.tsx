@@ -127,7 +127,7 @@ export default function CSTLandingPage() {
           <ExamLandingHero
             dashboardHref="/cst/dashboard"
             shortName="CST"
-            subtitle="200 questions weighted to the NBSTSA content outline. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CST questions weighted to the NBSTSA content outline. Free to start, no account needed."
             shots={{ mobile: "/landing/cst-mobile.png", desktop: "/landing/cst-desktop.png" }}
           />
         </div>

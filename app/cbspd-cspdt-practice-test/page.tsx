@@ -131,7 +131,7 @@ export default function CbspdCspdtLandingPage() {
           <ExamLandingHero
             dashboardHref="/cspdt/dashboard"
             shortName="CSPDT"
-            subtitle="200 original questions on the 2026 CBSPD technician exam outline: safety and regulations, decontamination, instrument preparation and packaging, sterilization, sterile storage and ethics. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CBSPD technician questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cbspd-mobile.png", desktop: "/landing/cbspd-desktop.png" }}
           />
         </div>

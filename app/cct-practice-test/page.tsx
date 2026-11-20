@@ -133,7 +133,7 @@ export default function CctLandingPage() {
           <ExamLandingHero
             dashboardHref="/cct/dashboard"
             shortName="CCT"
-            subtitle="200 original questions on the CCI Certified Cardiographic Technician outline: rhythm analysis, 12-lead interpretation, resting ECG technique, stress testing and Holter monitoring, with every strip described in words. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CCI CCT questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cct-mobile.png", desktop: "/landing/cct-desktop.png" }}
           />
         </div>

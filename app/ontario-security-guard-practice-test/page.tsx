@@ -132,7 +132,7 @@ export default function OntarioSecurityGuardLandingPage() {
           <ExamLandingHero
             dashboardHref="/ontario-security-guard/dashboard"
             shortName="Security Guard"
-            subtitle="200 questions on the PSISA, citizen's arrest and trespass, use of force, reports, emergencies and first aid, written from the ministry's training syllabus. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the PSISA, use of force, reports and emergencies. Free to start, no account needed."
             shots={{ mobile: "/landing/caguard-mobile.png", desktop: "/landing/caguard-desktop.png" }}
           />
         </div>

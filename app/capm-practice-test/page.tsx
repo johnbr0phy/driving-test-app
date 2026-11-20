@@ -127,7 +127,7 @@ export default function CapmLandingPage() {
           <ExamLandingHero
             dashboardHref="/capm/dashboard"
             shortName="CAPM"
-            subtitle="180 original questions on the current CAPM exam outline. Tuned for mobile. Free to start, no account needed."
+            subtitle="180 questions on the current CAPM exam outline. Free to start, no account needed."
             shots={{ mobile: "/landing/capm-mobile.png", desktop: "/landing/capm-desktop.png" }}
           />
         </div>

@@ -139,7 +139,7 @@ export default function LgvTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/lgv-theory/dashboard"
             shortName="LGV Theory"
-            subtitle="200 questions for the UK lorry theory test on drivers' hours, tachographs, air brakes, load security, weights and dimensions, the road, incidents and traffic signs, with an 85% pass line like the real test. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 UK lorry theory test questions, with the real 85% pass line. Free to start, no account needed."
             shots={{ mobile: "/landing/uklgv-mobile.png", desktop: "/landing/uklgv-desktop.png" }}
           />
         </div>

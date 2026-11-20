@@ -130,7 +130,7 @@ export default function NcmaLandingPage() {
           <ExamLandingHero
             dashboardHref="/ncma/dashboard"
             shortName="NCMA"
-            subtitle="200 original questions on the NCCT NCMA test plan: pharmacology, infection control, patient intake and care, phlebotomy, ECG, administrative duties, and law and ethics. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the NCCT NCMA test plan. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ncma-mobile.png", desktop: "/landing/ncma-desktop.png" }}
           />
         </div>

@@ -124,7 +124,7 @@ export default function EstheticianLandingPage() {
           <ExamLandingHero
             dashboardHref="/esthetician/dashboard"
             shortName="Esthetician"
-            subtitle="200 original questions on the NIC Esthetics theory outline: infection control, skin anatomy and disorders, chemistry, consultation, facials, electrical equipment, makeup, waxing, lash and brow services and body treatments. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 NIC Esthetics questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/esthetician-mobile.png", desktop: "/landing/esthetician-desktop.png" }}
           />
         </div>

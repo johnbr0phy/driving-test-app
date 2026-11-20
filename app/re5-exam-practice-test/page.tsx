@@ -126,7 +126,7 @@ export default function Zare5LandingPage() {
           <ExamLandingHero
             dashboardHref="/re5-exam/dashboard"
             shortName="RE5"
-            subtitle="200 original questions for the RE5 regulatory examination for FAIS representatives: the FAIS Act and FSP licences, the General Code of Conduct, the FIC Act, the Ombud for FSPs, fit and proper requirements and debarment. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 RE5 questions for FAIS representatives and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/zare5-mobile.png", desktop: "/landing/zare5-desktop.png" }}
           />
         </div>

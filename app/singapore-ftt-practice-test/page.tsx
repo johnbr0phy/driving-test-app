@@ -125,7 +125,7 @@ export default function SingaporeFttLandingPage() {
           <ExamLandingHero
             dashboardHref="/singapore-ftt/dashboard"
             shortName="FTT"
-            subtitle="200 original questions from the 2026 Final Theory of Driving handbook: car controls, gears and slopes, junctions and parking manoeuvres, defensive driving, expressways and emergencies. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Singapore FTT questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/sgftt-mobile.png", desktop: "/landing/sgftt-desktop.png" }}
           />
         </div>

@@ -129,7 +129,7 @@ export default function HspaCisLandingPage() {
           <ExamLandingHero
             dashboardHref="/cis/dashboard"
             shortName="CIS"
-            subtitle="200 original questions on the HSPA CIS exam content outline: instrument identification, materials, inspection and testing, implants, packaging, loaners, tracking and water quality. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 HSPA CIS questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hspacis-mobile.png", desktop: "/landing/hspacis-desktop.png" }}
           />
         </div>

@@ -129,7 +129,7 @@ export default function CcnaLandingPage() {
           <ExamLandingHero
             dashboardHref="/ccna/dashboard"
             shortName="CCNA"
-            subtitle="224 original questions weighted to the Cisco 200-301 exam topics, with router output and typed subnetting. Tuned for mobile. Free to start, no account needed."
+            subtitle="224 questions weighted to the Cisco 200-301 exam topics. Free to start, no account needed."
             shots={{ mobile: "/landing/ccna-mobile.png", desktop: "/landing/ccna-desktop.png" }}
           />
         </div>

@@ -127,7 +127,7 @@ export default function RrbGroupDLandingPage() {
           <ExamLandingHero
             dashboardHref="/rrb-group-d/dashboard"
             shortName="RRB Group D"
-            subtitle="232 original CBT questions on Maths, Reasoning, General Science and General Awareness. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 RRB Group D CBT questions on Maths, Reasoning, Science and GK. Free to start, no account needed."
             shots={{ mobile: "/landing/rrbgroupd-mobile.png", desktop: "/landing/rrbgroupd-desktop.png" }}
           />
         </div>

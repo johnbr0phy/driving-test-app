@@ -131,7 +131,7 @@ export default function RptLandingPage() {
           <ExamLandingHero
             dashboardHref="/rpt/dashboard"
             shortName="RPT"
-            subtitle="200 original phlebotomy questions on the AMT RPT exam specifications: patient identification, venipuncture, order of draw, capillary punctures, specimen handling, safety and law. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 AMT RPT phlebotomy questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/rpt-mobile.png", desktop: "/landing/rpt-desktop.png" }}
           />
         </div>

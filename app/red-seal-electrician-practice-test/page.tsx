@@ -140,7 +140,7 @@ export default function RedSealElectricianLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-electrician/dashboard"
             shortName="Red Seal Electrician"
-            subtitle="200 questions for the Construction Electrician (309A) interprovincial exam: services, grounding, transformers, wiring, motors, drives and fire alarm, weighted like the real test with its 70% pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Red Seal Electrician (309A) questions with the 70% pass mark. Free to start, no account needed."
             shots={{ mobile: "/landing/caelec-mobile.png", desktop: "/landing/caelec-desktop.png" }}
           />
         </div>

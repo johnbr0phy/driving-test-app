@@ -134,7 +134,7 @@ export default function StaarEnglish1LandingPage() {
           <ExamLandingHero
             dashboardHref="/staar-english-1/dashboard"
             shortName="STAAR English I"
-            subtitle="Reading and revising and editing for the Texas English I end-of-course test, on original passages and student drafts at TEA's blueprint mix, plus nine drills. Everything is free, no account needed."
+            subtitle="STAAR English I reading and editing practice, plus nine drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/staareng1-mobile.png", desktop: "/landing/staareng1-desktop.png" }}
           />
         </div>

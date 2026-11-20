@@ -132,7 +132,7 @@ export default function NzhamLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-amateur-radio/dashboard"
             shortName="NZ Amateur Radio"
-            subtitle="200 original questions on the New Zealand amateur radio syllabus: regulations, band limits and callsigns, Ohm's law, receivers, transmitters, antennas and propagation. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 amateur radio syllabus questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzham-mobile.png", desktop: "/landing/nzham-desktop.png" }}
           />
         </div>

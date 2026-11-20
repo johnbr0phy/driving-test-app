@@ -120,7 +120,7 @@ export default function Part107LandingPage() {
           <ExamLandingHero
             dashboardHref="/part-107/dashboard"
             shortName="Part 107"
-            subtitle="200 questions weighted to the FAA Remote Pilot ACS. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions weighted to the FAA Remote Pilot ACS. Free to start, no account needed."
             shots={{ mobile: "/landing/part107-mobile.png", desktop: "/landing/part107-desktop.png" }}
           />
         </div>

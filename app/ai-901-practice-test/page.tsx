@@ -121,7 +121,7 @@ export default function Ai901LandingPage() {
           <ExamLandingHero
             dashboardHref="/ai-901/dashboard"
             shortName="AI-901"
-            subtitle="198 original questions weighted to the AI-901 study guide. AI-901 replaced AI-900 on June 30, 2026. Free to start, no account needed."
+            subtitle="198 questions weighted to the AI-901 study guide. Free to start, no account needed."
             shots={{ mobile: "/landing/ai901-mobile.png", desktop: "/landing/ai901-desktop.png" }}
           />
         </div>

@@ -140,7 +140,7 @@ export default function TrcnPqeLandingPage() {
           <ExamLandingHero
             dashboardHref="/trcn-pqe/dashboard"
             shortName="TRCN PQE"
-            subtitle="200 original questions on the five PQE areas: pedagogy, literacy, numeracy, ICT and safeguarding. Three full-length 60-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 TRCN PQE questions and three 60-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/trcnpqe-mobile.png", desktop: "/landing/trcnpqe-desktop.png" }}
           />
         </div>

@@ -85,7 +85,7 @@ export default function JambLiteratureLandingPage() {
           <ExamLandingHero
             dashboardHref="/jamb-literature/dashboard"
             shortName="JAMB Literature"
-            subtitle="120 original questions on literary skills and unseen extracts. Study the prescribed books separately. All drills and tests are free, no account needed."
+            subtitle="120 questions on literary skills and unseen extracts. All drills and tests are free, no account needed."
             shots={{ mobile: "/landing/jamblit-mobile.png", desktop: "/landing/jamblit-desktop.png" }}
           />
         </div>

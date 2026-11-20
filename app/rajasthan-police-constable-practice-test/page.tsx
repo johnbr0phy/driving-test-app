@@ -125,7 +125,7 @@ export default function RajPoliceLandingPage() {
           <ExamLandingHero
             dashboardHref="/rajasthan-police-constable/dashboard"
             shortName="Rajasthan Police"
-            subtitle="232 original questions on reasoning, computer, GK, laws on women and children, and Rajasthan GK. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 Rajasthan Police Constable questions on reasoning, computer and GK. Free to start, no account needed."
             shots={{ mobile: "/landing/rajpolice-mobile.png", desktop: "/landing/rajpolice-desktop.png" }}
           />
         </div>

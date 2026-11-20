@@ -135,7 +135,7 @@ export default function IseeLandingPage() {
           <ExamLandingHero
             dashboardHref="/isee/dashboard"
             shortName="ISEE"
-            subtitle="Verbal, Quantitative, Reading and Math for the ISEE Middle Level (applying to grades 7 and 8), timed at the real pace, plus eight drills. Everything is free, no account needed."
+            subtitle="ISEE Middle Level practice timed at the real pace, plus eight drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/isee-mobile.png", desktop: "/landing/isee-desktop.png" }}
           />
         </div>

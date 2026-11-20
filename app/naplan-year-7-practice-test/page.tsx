@@ -135,7 +135,7 @@ export default function NaplanYear7LandingPage() {
           <ExamLandingHero
             dashboardHref="/naplan-year-7/dashboard"
             shortName="NAPLAN Year 7"
-            subtitle="Reading, spelling, grammar and punctuation, and numeracy, in tailored testlets like the real online NAPLAN, plus six drills that teach the basics first. Everything is free, no account needed."
+            subtitle="Tailored testlets like the real online NAPLAN, plus six drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/naplan7-mobile.png", desktop: "/landing/naplan7-desktop.png" }}
           />
         </div>

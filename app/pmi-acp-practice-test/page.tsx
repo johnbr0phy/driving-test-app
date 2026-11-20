@@ -126,7 +126,7 @@ export default function PmiAcpLandingPage() {
           <ExamLandingHero
             dashboardHref="/pmi-acp/dashboard"
             shortName="PMI-ACP"
-            subtitle="204 original situational questions and two 60-question mock exams on PMI's current PMI-ACP outline. Tuned for mobile. Free to start, no account needed."
+            subtitle="204 PMI-ACP questions and two 60-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/pmiacp-mobile.png", desktop: "/landing/pmiacp-desktop.png" }}
           />
         </div>

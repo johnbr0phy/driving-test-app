@@ -139,7 +139,7 @@ export default function KenckLandingPage() {
           <ExamLandingHero
             dashboardHref="/kenya-nursing-council/dashboard"
             shortName="NCK Exam"
-            subtitle="200 original questions for the NCK licensure exam for KRCHN, BScN and KRN/M: fundamentals, med-surg, midwifery, IMCI, community health, dosage and Kenyan nursing law. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the NCK licensure exam. Free to start, no account needed."
             shots={{ mobile: "/landing/kenck-mobile.png", desktop: "/landing/kenck-desktop.png" }}
           />
         </div>

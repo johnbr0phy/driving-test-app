@@ -128,7 +128,7 @@ export default function IstqbLandingPage() {
           <ExamLandingHero
             dashboardHref="/istqb-ctfl/dashboard"
             shortName="ISTQB CTFL"
-            subtitle="200 original questions and two full 40-question mock exams on the Foundation Level v4.0 syllabus. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Foundation Level questions and two full 40-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/istqb-mobile.png", desktop: "/landing/istqb-desktop.png" }}
           />
         </div>

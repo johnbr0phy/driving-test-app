@@ -138,7 +138,7 @@ export default function CogatLandingPage() {
           <ExamLandingHero
             dashboardHref="/cogat/dashboard"
             shortName="CogAT"
-            subtitle="The Verbal and Quantitative Batteries for grades 3 to 6, timed like the real CogAT, plus six drills, one for each test. Everything is free, no account needed."
+            subtitle="CogAT Verbal and Quantitative tests for grades 3 to 6, and six drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/cogat-mobile.png", desktop: "/landing/cogat-desktop.png" }}
           />
         </div>

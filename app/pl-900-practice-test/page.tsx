@@ -125,7 +125,7 @@ export default function Pl900LandingPage() {
           <ExamLandingHero
             dashboardHref="/pl-900/dashboard"
             shortName="PL-900"
-            subtitle="198 original questions weighted to the PL-900 study guide, skills measured as of July 24, 2026. Free to start, no account needed."
+            subtitle="198 questions weighted to the PL-900 study guide. Free to start, no account needed."
             shots={{ mobile: "/landing/pl900-mobile.png", desktop: "/landing/pl900-desktop.png" }}
           />
         </div>

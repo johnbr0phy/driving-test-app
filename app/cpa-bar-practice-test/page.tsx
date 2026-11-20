@@ -121,7 +121,7 @@ export default function CpaBarLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpa-bar/dashboard"
             shortName="CPA BAR"
-            subtitle="200 original multiple-choice questions on the AICPA's 2026 BAR blueprint: financial and cost analysis, budgets, capital and investment decisions, goodwill, revenue and stock compensation, business combinations, derivatives, leases, SEC reporting and state and local governments. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CPA BAR questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpabar-mobile.png", desktop: "/landing/cpabar-desktop.png" }}
           />
         </div>

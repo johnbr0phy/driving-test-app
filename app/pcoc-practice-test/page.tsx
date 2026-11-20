@@ -124,7 +124,7 @@ export default function PcocLandingPage() {
           <ExamLandingHero
             dashboardHref="/boating-canada/dashboard"
             shortName="PCOC"
-            subtitle="200 original questions for the Pleasure Craft Operator Card: safety equipment, rules of the road, Canadian buoys and emergencies. Four 50-question tests with the 75% pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PCOC questions and four 50-question tests with the 75% pass mark. Free to start, no account needed."
             shots={{ mobile: "/landing/pcoc-mobile.png", desktop: "/landing/pcoc-desktop.png" }}
           />
         </div>

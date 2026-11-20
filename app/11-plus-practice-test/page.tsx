@@ -137,7 +137,7 @@ export default function ElevenPlusLandingPage() {
           <ExamLandingHero
             dashboardHref="/eleven-plus/dashboard"
             shortName="11+"
-            subtitle="English, maths and verbal reasoning in two timed practice tests, plus six drills that start with a short lesson. Everything is free, no account needed."
+            subtitle="English, maths and verbal reasoning in two timed tests and six drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/elevenplus-mobile.png", desktop: "/landing/elevenplus-desktop.png" }}
           />
         </div>

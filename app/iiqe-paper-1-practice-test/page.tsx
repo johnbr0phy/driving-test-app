@@ -125,7 +125,7 @@ export default function IiqePaper1LandingPage() {
           <ExamLandingHero
             dashboardHref="/iiqe-paper-1/dashboard"
             shortName="IIQE Paper 1"
-            subtitle="200 original questions for the compulsory IIQE paper in Hong Kong: risk, contract and agency law, the principles of insurance, the Insurance Ordinance and intermediary licensing, and ethics. Four 50-question mock tests weighted like the Study Notes. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for the compulsory IIQE paper. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hkiiqe1-mobile.png", desktop: "/landing/hkiiqe1-desktop.png" }}
           />
         </div>

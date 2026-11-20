@@ -131,7 +131,7 @@ export default function PhlebotomyLandingPage() {
           <ExamLandingHero
             dashboardHref="/phlebotomy/dashboard"
             shortName="Phlebotomy"
-            subtitle="200 questions weighted to the NHA CPT test plan. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions weighted to the NHA CPT test plan. Free to start, no account needed."
             shots={{ mobile: "/landing/phleb-mobile.png", desktop: "/landing/phleb-desktop.png" }}
           />
         </div>

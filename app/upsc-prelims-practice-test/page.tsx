@@ -131,7 +131,7 @@ export default function UpscPrelimsLandingPage() {
           <ExamLandingHero
             dashboardHref="/upsc-prelims/dashboard"
             shortName="UPSC Prelims"
-            subtitle="234 original GS Paper I questions in the UPSC statement format, plus a CSAT drill. Tuned for mobile. Free to start, no account needed."
+            subtitle="234 UPSC Prelims GS Paper I questions, plus a CSAT drill. Free to start, no account needed."
             shots={{ mobile: "/landing/upscse-mobile.png", desktop: "/landing/upscse-desktop.png" }}
           />
         </div>

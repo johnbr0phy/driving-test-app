@@ -140,7 +140,7 @@ export default function SaLearnersLandingPage() {
           <ExamLandingHero
             dashboardHref="/sa-learners/dashboard"
             shortName="SA Learners"
-            subtitle="200 questions from The Driver's Handbook on giving way, roundabouts, school zones, trams, signs and signals, speed limits, BAC, parking, L and P plate rules and demerit points. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 SA learner's questions from The Driver's Handbook. Free to start, no account needed."
             shots={{ mobile: "/landing/ausa-mobile.png", desktop: "/landing/ausa-desktop.png" }}
           />
         </div>

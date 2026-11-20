@@ -133,7 +133,7 @@ export default function InbdeLandingPage() {
           <ExamLandingHero
             dashboardHref="/inbde/dashboard"
             shortName="INBDE"
-            subtitle="200 original dental board questions on the JCNDE Domain of Dentistry, with written patient cases: anatomy, materials, pathology, microbiology, pharmacology, ethics and research. Four 50-question mock exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 dental board questions with patient cases. Four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/inbde-mobile.png", desktop: "/landing/inbde-desktop.png" }}
           />
         </div>

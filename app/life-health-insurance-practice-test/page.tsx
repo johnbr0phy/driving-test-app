@@ -213,7 +213,7 @@ export default function InsuranceLandingPage() {
           <ExamLandingHero
             dashboardHref="/life-health-insurance/dashboard"
             shortName="Insurance"
-            subtitle="200 questions on the general portion of the life and health license exam. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the general portion of the life and health license exam. Free to start, no account needed."
             shots={{ mobile: "/landing/insurance-mobile.png", desktop: "/landing/insurance-desktop.png" }}
           />
         </div>

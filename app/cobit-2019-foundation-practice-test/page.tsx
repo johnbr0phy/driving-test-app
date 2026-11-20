@@ -130,7 +130,7 @@ export default function CobitLandingPage() {
           <ExamLandingHero
             dashboardHref="/cobit-2019-foundation/dashboard"
             shortName="COBIT 2019"
-            subtitle="195 original questions and two full 75-question mock exams on ISACA's COBIT 2019 Foundation domains. Tuned for mobile. Free to start, no account needed."
+            subtitle="195 COBIT 2019 Foundation questions and two 75-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/cobit-mobile.png", desktop: "/landing/cobit-desktop.png" }}
           />
         </div>

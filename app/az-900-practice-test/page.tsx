@@ -122,7 +122,7 @@ export default function Az900LandingPage() {
           <ExamLandingHero
             dashboardHref="/azure-fundamentals/dashboard"
             shortName="AZ-900"
-            subtitle="150 original questions weighted to the AZ-900 study guide. Tuned for mobile. Free to start, no account needed."
+            subtitle="150 questions weighted to the AZ-900 study guide. Free to start, no account needed."
             shots={{ mobile: "/landing/az900-mobile.png", desktop: "/landing/az900-desktop.png" }}
           />
         </div>

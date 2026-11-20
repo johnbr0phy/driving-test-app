@@ -131,7 +131,7 @@ export default function CysaPlusLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-cysa-plus/dashboard"
             shortName="CySA+"
-            subtitle="194 original questions weighted to the CS0-004 exam objectives, with log excerpts, matching and ordering items. Tuned for mobile. Free to start, no account needed."
+            subtitle="194 CySA+ questions weighted to the CS0-004 exam objectives. Free to start, no account needed."
             shots={{ mobile: "/landing/cysa-mobile.png", desktop: "/landing/cysa-desktop.png" }}
           />
         </div>

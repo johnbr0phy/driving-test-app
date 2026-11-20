@@ -127,7 +127,7 @@ export default function WaterOpLandingPage() {
           <ExamLandingHero
             dashboardHref="/water-treatment-operator/dashboard"
             shortName="Water Treatment Class I"
-            subtitle="200 original questions for the Class I (Grade 1) water treatment operator exam: coagulation and filtration, disinfection and CT, lab tests, pumps and equipment, source water and safety, with the water math worked out. Four 50-question practice tests weighted like the WPI (ABC) exam. Free to start, no account needed."
+            subtitle="200 Class I water treatment questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/waterop-mobile.png", desktop: "/landing/waterop-desktop.png" }}
           />
         </div>

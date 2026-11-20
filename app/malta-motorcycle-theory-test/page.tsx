@@ -127,7 +127,7 @@ export default function MaltaMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/malta-motorcycle-theory/dashboard"
             shortName="Motorcycle theory"
-            subtitle="200 original questions for your category AM, A1, A2 or A licence: helmets and gear, machine checks, braking and cornering, road position, being seen and slippery surfaces. Five 35-question mock tests with 30 to pass. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for AM, A1, A2 or A. Five 35-question mock tests, 30 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/mtmoto-mobile.png", desktop: "/landing/mtmoto-desktop.png" }}
           />
         </div>

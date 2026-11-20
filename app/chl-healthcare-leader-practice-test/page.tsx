@@ -127,7 +127,7 @@ export default function HspaChlLandingPage() {
           <ExamLandingHero
             dashboardHref="/chl/dashboard"
             shortName="CHL"
-            subtitle="200 original questions on the HSPA CHL exam content outline: quality systems, safety, staffing, budgets, leadership, communication, inventory and infection prevention. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 HSPA CHL questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hspachl-mobile.png", desktop: "/landing/hspachl-desktop.png" }}
           />
         </div>

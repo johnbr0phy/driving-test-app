@@ -131,7 +131,7 @@ export default function ApEnglishLanguageLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-english-language/dashboard"
             shortName="AP English Language"
-            subtitle="202 original reading and writing multiple-choice questions on original passages and drafts. Tuned for mobile. No account needed."
+            subtitle="202 AP English Language reading and writing multiple-choice questions. No account needed."
             shots={{ mobile: "/landing/aplang-mobile.png", desktop: "/landing/aplang-desktop.png" }}
           />
         </div>

@@ -126,7 +126,7 @@ export default function SiraSecurityLandingPage() {
           <ExamLandingHero
             dashboardHref="/sira-security/dashboard"
             shortName="SIRA Guard"
-            subtitle="200 original questions for the Dubai security guard licence: SIRA law and licences, access control and patrols, reports and evidence, a guard's legal limits, emergencies, fire safety and first aid in the heat. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 SIRA security guard questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aesira-mobile.png", desktop: "/landing/aesira-desktop.png" }}
           />
         </div>

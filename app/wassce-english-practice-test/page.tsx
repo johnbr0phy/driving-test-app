@@ -132,7 +132,7 @@ export default function WassceEnglishLandingPage() {
           <ExamLandingHero
             dashboardHref="/wassce-english/dashboard"
             shortName="WASSCE English"
-            subtitle="270 original questions on WAEC Paper 1 lexis and structure and the Test of Orals, with full timed tests. Tuned for mobile. No account needed."
+            subtitle="270 WASSCE English questions on WAEC Paper 1 and Orals, with timed tests. No account needed."
             shots={{ mobile: "/landing/wassceeng-mobile.png", desktop: "/landing/wassceeng-desktop.png" }}
           />
         </div>

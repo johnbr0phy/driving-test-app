@@ -129,7 +129,7 @@ export default function GcppcaLandingPage() {
           <ExamLandingHero
             dashboardHref="/google-cloud-professional-cloud-architect/dashboard"
             shortName="Google PCA"
-            subtitle="200 scenario questions and four original case studies, weighted to the current exam guide. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 scenario questions and four case studies, weighted to the exam guide. Free to start, no account needed."
             shots={{ mobile: "/landing/gcppca-mobile.png", desktop: "/landing/gcppca-desktop.png" }}
           />
         </div>

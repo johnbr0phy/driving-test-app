@@ -125,7 +125,7 @@ export default function LePaper1LandingPage() {
           <ExamLandingHero
             dashboardHref="/le-paper-1/dashboard"
             shortName="LE Paper 1"
-            subtitle="200 original questions for the HKSI Institute's Paper 1 on Hong Kong securities and futures regulation: the SFO and its rules, licensing and client assets, the Code of Conduct, AML, the exchanges, listing and takeovers, and market misconduct. Three 60-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 HKSI Paper 1 questions and three 60-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hklesfi1-mobile.png", desktop: "/landing/hklesfi1-desktop.png" }}
           />
         </div>

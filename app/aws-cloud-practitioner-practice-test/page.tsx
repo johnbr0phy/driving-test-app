@@ -139,7 +139,7 @@ export default function AwsLandingPage() {
           <ExamLandingHero
             dashboardHref="/aws-cloud-practitioner/dashboard"
             shortName="AWS CCP"
-            subtitle="200 questions weighted to the CLF-C02 exam guide. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions weighted to the CLF-C02 exam guide. Free to start, no account needed."
             shots={{ mobile: "/landing/aws-mobile.png", desktop: "/landing/aws-desktop.png" }}
           />
         </div>

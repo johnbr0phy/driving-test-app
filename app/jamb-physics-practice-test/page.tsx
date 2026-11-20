@@ -130,7 +130,7 @@ export default function JambPhysicsLandingPage() {
           <ExamLandingHero
             dashboardHref="/jamb-physics/dashboard"
             shortName="JAMB Physics"
-            subtitle="200 original questions on the whole UTME Physics syllabus, with full 40-question timed tests and every calculation worked. Tuned for mobile. No account needed."
+            subtitle="200 UTME Physics questions with 40-question timed tests and every calculation worked. No account needed."
             shots={{ mobile: "/landing/jambphys-mobile.png", desktop: "/landing/jambphys-desktop.png" }}
           />
         </div>

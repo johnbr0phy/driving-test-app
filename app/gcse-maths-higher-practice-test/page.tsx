@@ -131,7 +131,7 @@ export default function GcseHigherLandingPage() {
           <ExamLandingHero
             dashboardHref="/gcse-maths-higher/dashboard"
             shortName="GCSE Maths Higher"
-            subtitle="Two full practice tests of three timed papers, Paper 1 without a calculator, plus five topic drills for grades 4 to 9. Free, no account needed."
+            subtitle="Two full practice tests of three timed papers, plus five topic drills. Free, no account needed."
             shots={{ mobile: "/landing/gcsehigher-mobile.png", desktop: "/landing/gcsehigher-desktop.png" }}
           />
         </div>

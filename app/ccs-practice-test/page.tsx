@@ -128,7 +128,7 @@ export default function CcsLandingPage() {
           <ExamLandingHero
             dashboardHref="/ccs/dashboard"
             shortName="CCS"
-            subtitle="200 original questions on the AHIMA Certified Coding Specialist outline: inpatient principal diagnosis and POA, ICD-10-PCS root operations, outpatient and ED coding, MS-DRGs and edits, documentation, compliant queries, HACs and HIPAA. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 AHIMA CCS questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ccs-mobile.png", desktop: "/landing/ccs-desktop.png" }}
           />
         </div>

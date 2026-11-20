@@ -132,7 +132,7 @@ export default function TimesTablesLandingPage() {
           <ExamLandingHero
             dashboardHref="/times-tables/dashboard"
             shortName="Times Tables"
-            subtitle="From the 2s, 5s and 10s up to 12 × 12, in the order school teaches them. A short lesson for every table, then drills and practice checks like the Year 4 MTC. Free, no account needed."
+            subtitle="Times tables up to 12 × 12, a lesson for every table, then drills and checks. Free, no account needed."
             shots={{ mobile: "/landing/timestables-mobile.png", desktop: "/landing/timestables-desktop.png" }}
           />
         </div>

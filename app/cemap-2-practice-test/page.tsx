@@ -126,7 +126,7 @@ export default function Cemap2LandingPage() {
           <ExamLandingHero
             dashboardHref="/cemap-2/dashboard"
             shortName="CeMAP 2"
-            subtitle="200 original questions for CeMAP Module 2 (MORT), both MRT1 and MRT2: MCOB, affordability and suitability, surveys and property law, remortgages and porting, debt consolidation, arrears and repossession, and mortgage products. Four 50-question mock tests, every answer explained. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CeMAP Module 2 questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ukcemap2-mobile.png", desktop: "/landing/ukcemap2-desktop.png" }}
           />
         </div>

@@ -134,7 +134,7 @@ export default function VicSelectiveLandingPage() {
           <ExamLandingHero
             dashboardHref="/victorian-selective/dashboard"
             shortName="Vic Selective"
-            subtitle="Mathematics, Quantitative Reasoning, Reading and Verbal Reasoning in two full timed practice tests, plus four drills that teach the basics first. Everything is free, no account needed."
+            subtitle="Two full timed selective entry tests, plus four drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/vicsel-mobile.png", desktop: "/landing/vicsel-desktop.png" }}
           />
         </div>

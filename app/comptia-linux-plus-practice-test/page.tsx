@@ -132,7 +132,7 @@ export default function LinuxPlusLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-linux-plus/dashboard"
             shortName="Linux+"
-            subtitle="204 original questions weighted to the XK0-006 exam objectives, with real commands, choose-two, matching and ordering items. Tuned for mobile. Free to start, no account needed."
+            subtitle="204 Linux+ questions weighted to the XK0-006 exam objectives. Free to start, no account needed."
             shots={{ mobile: "/landing/linuxplus-mobile.png", desktop: "/landing/linuxplus-desktop.png" }}
           />
         </div>

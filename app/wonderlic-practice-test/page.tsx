@@ -133,7 +133,7 @@ export default function WonderlicLandingPage() {
           <ExamLandingHero
             dashboardHref="/wonderlic/dashboard"
             shortName="Wonderlic"
-            subtitle="200 original cognitive ability questions, timed like the real thing: 50 questions in 12 minutes. Free to start, no account needed."
+            subtitle="200 Wonderlic questions, timed like the real thing: 50 in 12 minutes. Free to start, no account needed."
             shots={{ mobile: "/landing/wonderlic-mobile.png", desktop: "/landing/wonderlic-desktop.png" }}
           />
         </div>

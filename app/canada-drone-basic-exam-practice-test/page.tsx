@@ -126,7 +126,7 @@ export default function CanadaDroneBasicLandingPage() {
           <ExamLandingHero
             dashboardHref="/canada-drone-basic/dashboard"
             shortName="Drone Basic"
-            subtitle="200 original questions on Canada's drone rules for the Transport Canada Small Basic Exam: registration, the 30 m and 122 m limits, airspace and airports, weather, human factors and emergencies. Five 35-question practice tests like the real exam. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Transport Canada Small Basic Exam questions. Five 35-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cadronebasic-mobile.png", desktop: "/landing/cadronebasic-desktop.png" }}
           />
         </div>

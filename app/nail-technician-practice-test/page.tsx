@@ -130,7 +130,7 @@ export default function NailTechLandingPage() {
           <ExamLandingHero
             dashboardHref="/nail-technician/dashboard"
             shortName="Nail Tech"
-            subtitle="200 original questions on the NIC Nail Technology theory outline: infection control, nail anatomy and disorders, product chemistry, tools, manicures and pedicures, and acrylic, gel and dip enhancements. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 questions on the NIC Nail Technology outline. Four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nailtech-mobile.png", desktop: "/landing/nailtech-desktop.png" }}
           />
         </div>

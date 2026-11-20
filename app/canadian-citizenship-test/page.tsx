@@ -145,7 +145,7 @@ export default function CanadianCitizenshipLandingPage() {
           <ExamLandingHero
             dashboardHref="/canadian-citizenship/dashboard"
             shortName="Citizenship"
-            subtitle="200 questions from Discover Canada on rights, history, government, elections, symbols and every capital, in 20-question tests scored like the real one. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions from Discover Canada in 20-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cacit-mobile.png", desktop: "/landing/cacit-desktop.png" }}
           />
         </div>

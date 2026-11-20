@@ -128,7 +128,7 @@ export default function FortinetNse1LandingPage() {
           <ExamLandingHero
             dashboardHref="/fortinet-nse-1/dashboard"
             shortName="NSE 1"
-            subtitle="200 original questions on all ten modules of Fortinet's NSE 1 course, the course that replaced FCF. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on all ten modules of Fortinet's NSE 1 course. Free to start, no account needed."
             shots={{ mobile: "/landing/fortinse-mobile.png", desktop: "/landing/fortinse-desktop.png" }}
           />
         </div>

@@ -133,7 +133,7 @@ export default function ApItalianLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-italian/dashboard"
             shortName="AP Italian"
-            subtitle="210 original reading questions in Italian, in sets of five on one text. Tuned for mobile. No account needed."
+            subtitle="210 AP Italian reading questions in Italian, in sets of five on one text. No account needed."
             shots={{ mobile: "/landing/apitalian-mobile.png", desktop: "/landing/apitalian-desktop.png" }}
           />
         </div>

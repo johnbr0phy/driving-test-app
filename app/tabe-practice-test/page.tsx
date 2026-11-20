@@ -135,7 +135,7 @@ export default function TabeLandingPage() {
           <ExamLandingHero
             dashboardHref="/tabe/dashboard"
             shortName="TABE"
-            subtitle="TABE Reading, Math and Language at Level D in two timed practice tests, plus seven drills that teach the basics first. Everything is free, no account needed."
+            subtitle="TABE Level D in two timed practice tests, plus seven drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/tabe-mobile.png", desktop: "/landing/tabe-desktop.png" }}
           />
         </div>

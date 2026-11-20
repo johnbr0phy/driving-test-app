@@ -125,7 +125,7 @@ export default function NzLearnerLicenceLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-learner-licence/dashboard"
             shortName="Learner licence"
-            subtitle="200 original questions from the Official New Zealand Road Code: give way rules, signs, speed, sharing the road, parking and your licence conditions. Five 35-question mock tests with the real pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Road Code questions and five 35-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzroad-mobile.png", desktop: "/landing/nzroad-desktop.png" }}
           />
         </div>

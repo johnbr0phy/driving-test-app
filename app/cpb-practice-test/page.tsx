@@ -130,7 +130,7 @@ export default function CpbLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpb/dashboard"
             shortName="CPB"
-            subtitle="200 original medical billing questions on all seven AAPC CPB domains: payers, billing rules, HIPAA and compliance, claims and appeals, coding, reimbursement and collections, and billing cases. Four 50-question practice tests, 70% to pass. Free to start, no account needed."
+            subtitle="200 AAPC CPB billing questions. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpb-mobile.png", desktop: "/landing/cpb-desktop.png" }}
           />
         </div>

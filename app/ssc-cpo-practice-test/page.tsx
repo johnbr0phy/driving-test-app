@@ -127,7 +127,7 @@ export default function SscCpoLandingPage() {
           <ExamLandingHero
             dashboardHref="/ssc-cpo/dashboard"
             shortName="SSC CPO"
-            subtitle="232 original Paper-I questions on reasoning, GK, maths and English for Delhi Police and CAPF Sub-Inspector. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 SSC CPO Paper-I questions on reasoning, GK, maths and English. Free to start, no account needed."
             shots={{ mobile: "/landing/ssccpo-mobile.png", desktop: "/landing/ssccpo-desktop.png" }}
           />
         </div>

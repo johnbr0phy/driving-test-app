@@ -124,7 +124,7 @@ export default function EnrolledAgentPart1LandingPage() {
           <ExamLandingHero
             dashboardHref="/enrolled-agent-part-1/dashboard"
             shortName="SEE Part 1"
-            subtitle="200 original questions on the IRS Part 1 Individuals outline and 2025 tax law: filing status and dependents, income and retirement accounts, deductions and credits, AMT and payroll taxes, planning, estate and gift tax, FBAR. Four 50-question mock tests. Free to start, no account needed."
+            subtitle="200 Enrolled Agent Part 1 questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ea1-mobile.png", desktop: "/landing/ea1-desktop.png" }}
           />
         </div>

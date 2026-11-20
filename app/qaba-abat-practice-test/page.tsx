@@ -136,7 +136,7 @@ export default function QabaAbatLandingPage() {
           <ExamLandingHero
             dashboardHref="/qaba-abat/dashboard"
             shortName="ABAT"
-            subtitle="200 original questions on QABA's ABAT test specifications: autism basics, ABA principles, DTT and PRT, data, functional analysis, behavior support, person-centered planning, values and ethics. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 QABA ABAT questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/qabaabat-mobile.png", desktop: "/landing/qabaabat-desktop.png" }}
           />
         </div>

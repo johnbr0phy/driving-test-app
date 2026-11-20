@@ -129,7 +129,7 @@ export default function R410aLandingPage() {
           <ExamLandingHero
             dashboardHref="/r410a/dashboard"
             shortName="R-410A"
-            subtitle="200 original questions for the R-410A Safety Certification: personal safety, cylinders and tools, pressures, POE oil and evacuation, the R-22 phase-out, EPA rules for HFCs, and installation and charging. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 R-410A certification questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/r410a-mobile.png", desktop: "/landing/r410a-desktop.png" }}
           />
         </div>

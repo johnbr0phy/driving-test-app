@@ -129,7 +129,7 @@ export default function JambBiologyLandingPage() {
           <ExamLandingHero
             dashboardHref="/jamb-biology/dashboard"
             shortName="JAMB Biology"
-            subtitle="203 original questions on the whole JAMB Biology syllabus, with full 40-question timed tests. Tuned for mobile. No account needed."
+            subtitle="203 questions on the whole JAMB Biology syllabus, with 40-question timed tests. No account needed."
             shots={{ mobile: "/landing/jambbio-mobile.png", desktop: "/landing/jambbio-desktop.png" }}
           />
         </div>

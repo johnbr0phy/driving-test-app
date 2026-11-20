@@ -126,7 +126,7 @@ export default function MhtCetLandingPage() {
           <ExamLandingHero
             dashboardHref="/mht-cet/dashboard"
             shortName="MHT-CET"
-            subtitle="214 original MHT-CET questions on Physics, Chemistry and Mathematics. Tuned for mobile. No account needed."
+            subtitle="214 MHT-CET questions on Physics, Chemistry and Mathematics. No account needed."
             shots={{ mobile: "/landing/mhtcet-mobile.png", desktop: "/landing/mhtcet-desktop.png" }}
           />
         </div>

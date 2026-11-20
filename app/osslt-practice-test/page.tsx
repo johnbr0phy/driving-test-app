@@ -135,7 +135,7 @@ export default function OssltLandingPage() {
           <ExamLandingHero
             dashboardHref="/osslt/dashboard"
             shortName="OSSLT"
-            subtitle="Practise for the Ontario Grade 10 literacy test: the four reading forms and the writing questions in two practice tests, plus drills that teach the basics first. Free, no account needed."
+            subtitle="Two practice tests and drills for the Ontario Grade 10 literacy test. Free, no account needed."
             shots={{ mobile: "/landing/osslt-mobile.png", desktop: "/landing/osslt-desktop.png" }}
           />
         </div>

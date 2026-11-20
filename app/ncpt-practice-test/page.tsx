@@ -129,7 +129,7 @@ export default function NcptLandingPage() {
           <ExamLandingHero
             dashboardHref="/ncpt/dashboard"
             shortName="NCPT"
-            subtitle="200 original questions on the NCCT NCPT test plan: infection control, equipment, patient preparation, venipuncture and capillary collection, processing, complications, and law and ethics. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the NCCT NCPT test plan. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ncpt-mobile.png", desktop: "/landing/ncpt-desktop.png" }}
           />
         </div>

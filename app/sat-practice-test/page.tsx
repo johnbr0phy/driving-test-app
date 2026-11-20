@@ -137,7 +137,7 @@ export default function SatLandingPage() {
           <ExamLandingHero
             dashboardHref="/sat/dashboard"
             shortName="SAT"
-            subtitle="Two full-length digital SATs with timed, adaptive modules and a score estimate, plus eight skill drills built for your phone. Both are free, no account needed."
+            subtitle="Two full-length digital SATs, timed and adaptive, plus eight skill drills. Both are free, no account needed."
             shots={{ mobile: "/landing/sat-mobile.png", desktop: "/landing/sat-desktop.png" }}
           />
         </div>

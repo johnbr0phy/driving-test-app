@@ -122,7 +122,7 @@ export default function SieLandingPage() {
           <ExamLandingHero
             dashboardHref="/sie/dashboard"
             shortName="SIE"
-            subtitle="200 original questions on FINRA's Securities Industry Essentials outline: markets, products and risks, trading and accounts, and regulation. Four 50-question mock tests with a 70% pass line. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 SIE questions and four 50-question mock tests, 70% pass line. Free to start, no account needed."
             shots={{ mobile: "/landing/sie-mobile.png", desktop: "/landing/sie-desktop.png" }}
           />
         </div>

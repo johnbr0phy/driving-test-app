@@ -138,7 +138,7 @@ export default function GcseScienceLandingPage() {
           <ExamLandingHero
             dashboardHref="/gcse-science/dashboard"
             shortName="GCSE Science"
-            subtitle="Biology, chemistry and physics in two timed practice tests, plus six drills that teach the maths skills first. Free, no account needed."
+            subtitle="Biology, chemistry and physics in two timed practice tests, plus six drills. Free, no account needed."
             shots={{ mobile: "/landing/gcsescience-mobile.png", desktop: "/landing/gcsescience-desktop.png" }}
           />
         </div>

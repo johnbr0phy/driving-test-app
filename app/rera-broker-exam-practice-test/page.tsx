@@ -127,7 +127,7 @@ export default function ReraBrokerLandingPage() {
           <ExamLandingHero
             dashboardHref="/rera-broker-exam/dashboard"
             shortName="RERA Broker"
-            subtitle="200 original questions for Dubai real estate brokers: the broker register, duties and agreements, off-plan sales and escrow, landlord and tenant law, jointly owned property and the sums brokers use. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 RERA questions for Dubai brokers and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aerera-mobile.png", desktop: "/landing/aerera-desktop.png" }}
           />
         </div>

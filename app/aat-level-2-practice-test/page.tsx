@@ -126,7 +126,7 @@ export default function AatLevel2LandingPage() {
           <ExamLandingHero
             dashboardHref="/aat-level-2/dashboard"
             shortName="AAT Level 2"
-            subtitle="200 original questions for the AAT Level 2 Certificate in Accounting: daybooks, discounts and VAT, control accounts, bank reconciliations, journals and the suspense account, costing, budgets and the business environment. Four 50-question mock tests, every calculation explained. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 AAT Level 2 questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aatl2-mobile.png", desktop: "/landing/aatl2-desktop.png" }}
           />
         </div>

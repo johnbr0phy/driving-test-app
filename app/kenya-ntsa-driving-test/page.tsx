@@ -125,7 +125,7 @@ export default function KenyaNtsaDrivingTestLandingPage() {
           <ExamLandingHero
             dashboardHref="/kenya-driving-test/dashboard"
             shortName="Driving test"
-            subtitle="200 original questions from the Kenya Highway Code and the Traffic Act: road signs, roundabouts, overtaking, matatus and boda bodas, breakdowns and the 2026 alcohol limits. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Kenya Highway Code questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/kentsa-mobile.png", desktop: "/landing/kentsa-desktop.png" }}
           />
         </div>

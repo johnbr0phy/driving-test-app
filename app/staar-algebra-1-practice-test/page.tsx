@@ -132,7 +132,7 @@ export default function StaarAlgebra1LandingPage() {
           <ExamLandingHero
             dashboardHref="/staar-algebra-1/dashboard"
             shortName="STAAR Algebra I"
-            subtitle="Two full 50-question Texas Algebra I EOC practice tests on TEA's blueprint, plus seven topic drills from factoring to exponential growth. Everything is free, no account needed."
+            subtitle="Two full 50-question STAAR Algebra I EOC tests, plus seven drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/staaralg1-mobile.png", desktop: "/landing/staaralg1-desktop.png" }}
           />
         </div>

@@ -129,7 +129,7 @@ export default function PsmLandingPage() {
           <ExamLandingHero
             dashboardHref="/psm-1/dashboard"
             shortName="PSM I"
-            subtitle="200 original questions on the 2020 Scrum Guide. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the 2020 Scrum Guide. Free to start, no account needed."
             shots={{ mobile: "/landing/psm-mobile.png", desktop: "/landing/psm-desktop.png" }}
           />
         </div>

@@ -131,7 +131,7 @@ export default function OntarioAirBrakeLandingPage() {
           <ExamLandingHero
             dashboardHref="/ontario-air-brake/dashboard"
             shortName="Ontario Air Brake"
-            subtitle="200 original questions for the Z endorsement knowledge test, written from MTO's Official Air Brake Handbook: air supply, spring and trailer brakes, the daily air brake tests and pushrod adjustment limits. Four 50-question mock tests. Free to start, no account needed."
+            subtitle="200 Z endorsement questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/caairbrake-mobile.png", desktop: "/landing/caairbrake-desktop.png" }}
           />
         </div>

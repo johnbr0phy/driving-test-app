@@ -121,7 +121,7 @@ export default function CpaFarLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpa-far/dashboard"
             shortName="CPA FAR"
-            subtitle="200 original multiple-choice questions on the AICPA 2026 blueprint: statements and consolidation, receivables and inventory, PP&E and investments, debt, revenue, income taxes and leases. Four 50-question tests, every calculation explained. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CPA FAR questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpafar-mobile.png", desktop: "/landing/cpafar-desktop.png" }}
           />
         </div>

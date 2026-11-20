@@ -126,7 +126,7 @@ export default function PsiraSecurityLandingPage() {
           <ExamLandingHero
             dashboardHref="/psira-security/dashboard"
             shortName="PSIRA Grades E-C"
-            subtitle="200 original questions for the PSIRA Grade E, D and C courses: the PSIRA Act, arrest and use of force, access control, patrols and radio, occurrence books, first response, fire, first aid and OHS. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 PSIRA security officer questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/zapsira-mobile.png", desktop: "/landing/zapsira-desktop.png" }}
           />
         </div>

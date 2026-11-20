@@ -458,6 +458,11 @@ const CASES = [
   ["ontario hunting exam", "CA", "cahunteron"],
   ["ohep", "CA", "cahunteron"],
   ["ontario hunter safety course", "CA", "cahunteron"],
+  ["limited scope x-ray", "US", "lmrt"],
+  ["limited scope radiography", "US", "lmrt"],
+  ["bxmo", "US", "lmrt"],
+  ["limited x-ray machine operator", "US", "lmrt"],
+  ["arrt limited scope", "US", "lmrt"],
 ];
 
 for (const [q, region, id] of CASES) {

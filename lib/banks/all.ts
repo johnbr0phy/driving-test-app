@@ -197,6 +197,7 @@ import "./series65";
 import "./series63";
 import "./aswb";
 import "./arrt";
+import "./lmrt";
 import "./nce";
 import "./texesppr";
 import "./praxisplt";

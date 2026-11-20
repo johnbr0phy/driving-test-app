@@ -24,6 +24,7 @@ export const TEACHES: Record<string, string> = {
   ieplumbt2: "a Phase 2 plumbing course at an ETB training centre",
   cpb: "a medical billing and coding program",
   cbcs: "a medical billing and coding program",
+  lmrt: "a limited scope x-ray technician program",
   hha: "a home health aide training program",
   ctec: "a CTEC-approved tax preparer course",
   aswbbach: "a BSW program or a social work licensing prep course",

@@ -287,6 +287,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "42 CFR 484.80, 484.50, 484.60 and 484.70 on eCFR, the DC Board of Nursing HHA candidate handbook and Credentia's DC HHA help center, and NC DHHS in-home aide testing directions, checked November 2026",
     source: { name: "eCFR: 42 CFR 484.80 Home health aide services", url: "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.80" },
   },
+  lmrt: {
+    answer:
+      "The Limited Scope of Practice in Radiography exam is an ARRT exam given for state licensing agencies to people who will take x-rays of selected body parts without being full radiographers, such as limited x-ray machine operators in clinics and podiatry offices. It is delivered in modules: every candidate takes the Core module (100 scored questions plus 15 unscored, 1 hour 55 minutes) on patient care, radiation safety and image production, plus the procedure modules the state assigns: Chest (20 questions), Extremities (25), Skull/Sinuses (20), Spine (25) and Podiatric (20), each with 5 extra unscored questions. ARRT reports the number correct in each module to the state, and the state decides whether you pass. Passing is not an ARRT credential. It is taken at Pearson VUE test centers.",
+    rows: [
+      { label: "Core module", value: "100 scored + 15 pilot questions, 1 hr 55 min" },
+      { label: "Core content", value: "Patient Care 18, Safety 40, Image Production 42" },
+      { label: "Procedure modules", value: "Chest 20, Extremities 25, Skull/Sinuses 20, Spine 25, Podiatric 20 (each + 5 pilot)" },
+      { label: "Which modules", value: "Core plus the modules your state assigns" },
+      { label: "Scoring", value: "Number correct per module, sent to the state; the state sets the pass mark" },
+      { label: "Where", value: "Pearson VUE test centers, no breaks between modules" },
+      { label: "Given by", value: "ARRT, on behalf of state licensing agencies" },
+    ],
+    basedOn: "ARRT Limited Scope of Practice in Radiography content specifications (in effect January 1, 2023) and the 2026 Handbook for State Candidates, checked November 2026",
+    source: { name: "ARRT: Examination content specifications", url: "https://www.arrt.org/Content-Specifications" },
+  },
   cbcs: {
     answer:
       "The Certified Billing and Coding Specialist (CBCS) exam is the National Healthcareer Association's (NHA) certification exam for medical billing and coding specialists. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 3 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2020 job analysis, has four domains: Billing and Reimbursement 33 items, Coding and Coding Guidelines 32, Insurance Eligibility and Other Payer Requirements 20, and The Revenue Cycle and Regulatory Compliance 15. Since September 24, 2024 code books are not allowed; each coding question shows the information it needs. It is taken at a school, a PSI test center or by live remote proctoring.",

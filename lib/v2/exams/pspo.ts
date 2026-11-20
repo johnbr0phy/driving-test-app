@@ -21,7 +21,7 @@ export const PSPO: ExamV2Config = {
   id: "pspo",
   slug: "/pspo-1",
   landingPath: "/pspo-1-practice-test",
-  name: "PSPO I Practice Test",
+  name: "PSPO I Product Owner Practice Test",
   shortName: "PSPO I",
   fullName: "Professional Scrum Product Owner I (PSPO I) assessment",
   tagline: "80 questions in 60 minutes on product value, backlog management, stakeholders and Evidence-Based Management, with multiple answer and true/false items like the real PSPO I.",

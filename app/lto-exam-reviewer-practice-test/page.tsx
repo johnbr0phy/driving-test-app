@@ -126,7 +126,7 @@ export default function LtoExamLandingPage() {
           <ExamLandingHero
             dashboardHref="/lto-exam/dashboard"
             shortName="LTO exam"
-            subtitle="200 original questions on Philippine traffic rules: road signs, right of way, speed limits, parking, seat belt, helmet and drunk driving laws, and your permit and license. Three 60-item mock tests with a 48 to pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Philippine traffic rules questions. Three 60-item mocks, 48 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/phlto-mobile.png", desktop: "/landing/phlto-desktop.png" }}
           />
         </div>

@@ -140,7 +140,7 @@ export default function HunterLandingPage() {
           <ExamLandingHero
             dashboardHref="/hunter-safety/dashboard"
             shortName="Hunter Safety"
-            subtitle="200 questions on the hunter education standards behind every state exam. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the hunter education standards behind every state exam. Free to start, no account needed."
             shots={{ mobile: "/landing/hunter-mobile.png", desktop: "/landing/hunter-desktop.png" }}
           />
         </div>

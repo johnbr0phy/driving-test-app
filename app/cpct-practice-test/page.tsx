@@ -128,7 +128,7 @@ export default function CpctaLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpcta/dashboard"
             shortName="CPCT/A"
-            subtitle="200 original questions on the NHA CPCT/A test plan: patient care and vital signs, safety and compliance, infection control, phlebotomy and EKG. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 NHA CPCT/A questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpcta-mobile.png", desktop: "/landing/cpcta-desktop.png" }}
           />
         </div>

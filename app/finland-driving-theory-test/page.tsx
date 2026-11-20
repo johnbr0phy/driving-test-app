@@ -128,7 +128,7 @@ export default function FinlandDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/finland-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English on the Finnish rules of the road for the category B teoriakoe: the right-hand rule, overtaking, parking, Finland's yellow warning signs, winter tyres and more. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Finnish driving theory questions in English. Four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/fitheory-mobile.png", desktop: "/landing/fitheory-desktop.png" }}
           />
         </div>

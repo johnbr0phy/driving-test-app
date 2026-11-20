@@ -145,7 +145,7 @@ export default function AsvabLandingPage() {
           <ExamLandingHero
             dashboardHref="/asvab/dashboard"
             shortName="ASVAB"
-            subtitle="200 questions across all eight subtests, weighted toward the four AFQT sections that decide whether you enlist. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ASVAB questions across all eight subtests, weighted toward the AFQT. Free to start, no account needed."
             shots={{ mobile: "/landing/asvab-mobile.png", desktop: "/landing/asvab-desktop.png" }}
           />
         </div>

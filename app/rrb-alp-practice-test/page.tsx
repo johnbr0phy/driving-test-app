@@ -126,7 +126,7 @@ export default function RrbAlpLandingPage() {
           <ExamLandingHero
             dashboardHref="/rrb-alp/dashboard"
             shortName="RRB ALP"
-            subtitle="200 original CBT 1 questions on Maths, Mental Ability and General Science. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 RRB ALP CBT 1 questions on Maths, Mental Ability and Science. Free to start, no account needed."
             shots={{ mobile: "/landing/rrbalp-mobile.png", desktop: "/landing/rrbalp-desktop.png" }}
           />
         </div>

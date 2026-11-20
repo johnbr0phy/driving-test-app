@@ -122,7 +122,7 @@ export default function CpaAudLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpa-aud/dashboard"
             shortName="CPA AUD"
-            subtitle="200 original multiple-choice questions on the AICPA 2026 blueprint: independence, risk assessment, internal control, evidence, sampling, going concern and reports. Four 50-question tests, every answer explained. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CPA AUD questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpaaud-mobile.png", desktop: "/landing/cpaaud-desktop.png" }}
           />
         </div>

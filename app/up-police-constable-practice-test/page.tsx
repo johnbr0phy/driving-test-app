@@ -127,7 +127,7 @@ export default function UpPoliceLandingPage() {
           <ExamLandingHero
             dashboardHref="/up-police-constable/dashboard"
             shortName="UP Police"
-            subtitle="232 original questions on GK, General Hindi, Numerical Ability and Reasoning. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 UP Police Constable questions on GK, Hindi, maths and reasoning. Free to start, no account needed."
             shots={{ mobile: "/landing/uppolice-mobile.png", desktop: "/landing/uppolice-desktop.png" }}
           />
         </div>

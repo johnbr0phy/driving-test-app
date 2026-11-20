@@ -126,7 +126,7 @@ export default function CdcfibLandingPage() {
           <ExamLandingHero
             dashboardHref="/cdcfib-recruitment/dashboard"
             shortName="CDCFIB test"
-            subtitle="200 original questions for the Civil Defence, Correctional, Fire and Immigration recruitment CBT: the four services, fire safety, Nigerian geography, English, maths and reasoning. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CDCFIB recruitment CBT questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cdcfib-mobile.png", desktop: "/landing/cdcfib-desktop.png" }}
           />
         </div>

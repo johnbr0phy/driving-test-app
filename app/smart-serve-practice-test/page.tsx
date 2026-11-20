@@ -125,7 +125,7 @@ export default function SmartServeLandingPage() {
           <ExamLandingHero
             dashboardHref="/smart-serve/dashboard"
             shortName="Smart Serve"
-            subtitle="200 original questions on Ontario's liquor rules: the law and the AGCO, the legal age and ID, standard drinks, signs of intoxication, refusing service and service hours. Six 33-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Smart Serve questions and six 33-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/smartserve-mobile.png", desktop: "/landing/smartserve-desktop.png" }}
           />
         </div>

@@ -127,7 +127,7 @@ export default function FinlandMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/finland-motorcycle-theory/dashboard"
             shortName="Motorcycle theory test"
-            subtitle="200 original questions in English for the Finnish A1, A2 and A theory test: helmets and gear, braking and cornering, giving way, road surfaces and winter, passengers and the licence categories. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Finnish motorcycle theory questions in English. Four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/fimoto-mobile.png", desktop: "/landing/fimoto-desktop.png" }}
           />
         </div>

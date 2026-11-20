@@ -121,7 +121,7 @@ export default function CpaIscLandingPage() {
           <ExamLandingHero
             dashboardHref="/cpa-isc/dashboard"
             shortName="CPA ISC"
-            subtitle="200 original multiple-choice questions on the AICPA's 2026 ISC blueprint: cloud and IT infrastructure, accounting systems, availability and backups, change management, data and SQL, security frameworks, threats and controls, privacy and SOC 1 and SOC 2 engagements. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CPA ISC questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cpaisc-mobile.png", desktop: "/landing/cpaisc-desktop.png" }}
           />
         </div>

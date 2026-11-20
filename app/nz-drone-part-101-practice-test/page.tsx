@@ -122,7 +122,7 @@ export default function NzDroneLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-drone-part-101/dashboard"
             shortName="NZ Drone"
-            subtitle="200 original questions on New Zealand's Part 101 drone rules and CATI 101-1: aerodromes, airspace, shielded flights, consent, line of sight, night flying and safety. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Part 101 drone rules questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzdrone-mobile.png", desktop: "/landing/nzdrone-desktop.png" }}
           />
         </div>

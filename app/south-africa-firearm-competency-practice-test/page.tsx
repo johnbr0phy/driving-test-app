@@ -112,7 +112,7 @@ export default function ZaFirearmLandingPage() {
           <ExamLandingHero
             dashboardHref="/zafirearm/dashboard"
             shortName="SA Firearm Competency"
-            subtitle="200 original legal knowledge questions on the Firearms Control Act, licensing, safe custody and reporting. Four practice tests. Free to start, no account needed."
+            subtitle="200 SA firearm competency legal questions and four practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/zafirearm-mobile.png", desktop: "/landing/zafirearm-desktop.png" }}
           />
           <p className="mt-10 rounded-xl border border-brand-border-light bg-white dark:bg-gray-900 p-5 text-left text-gray-700 dark:text-gray-200">

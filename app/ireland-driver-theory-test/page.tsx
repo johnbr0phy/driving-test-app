@@ -140,7 +140,7 @@ export default function IrelandDriverTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/ireland-driver-theory/dashboard"
             shortName="Theory Test"
-            subtitle="200 original questions on Irish road signs, road markings, speed limits, roundabouts, motorways, learner rules and safe driving, written from the RSA Rules of the Road. Five 40-question tests, 35 to pass. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Rules of the Road questions. Five 40-question tests, 35 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/iedtt-mobile.png", desktop: "/landing/iedtt-desktop.png" }}
           />
         </div>

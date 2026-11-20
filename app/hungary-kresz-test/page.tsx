@@ -128,7 +128,7 @@ export default function HungaryKreszLandingPage() {
           <ExamLandingHero
             dashboardHref="/hungary-driving-theory/dashboard"
             shortName="KRESZ test"
-            subtitle="200 original questions in English on the Hungarian Highway Code: signs, the right-hand rule and trams, speed limits, overtaking, motorways, level crossings, parking and crashes. Three full 55-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Hungarian Highway Code questions in English and three 55-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hukresz-mobile.png", desktop: "/landing/hukresz-desktop.png" }}
           />
         </div>

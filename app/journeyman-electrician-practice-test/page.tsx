@@ -144,7 +144,7 @@ export default function JourneymanElectricianLandingPage() {
           <ExamLandingHero
             dashboardHref="/journeyman-electrician/dashboard"
             shortName="Journeyman Electrician"
-            subtitle="200 original questions on the 2023 NEC: grounding, wiring methods, load calculations, motors, services and theory. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the 2023 NEC. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/jelec-mobile.png", desktop: "/landing/jelec-desktop.png" }}
           />
         </div>

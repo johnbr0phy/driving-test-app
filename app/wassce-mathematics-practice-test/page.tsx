@@ -132,7 +132,7 @@ export default function WassceMathematicsLandingPage() {
           <ExamLandingHero
             dashboardHref="/wassce-mathematics/dashboard"
             shortName="WASSCE Maths"
-            subtitle="200 original objective questions on the WAEC General Mathematics syllabus, with full 50-question Paper 1 tests and worked answers. For Nigeria, Ghana, Sierra Leone, Liberia and The Gambia. No account needed."
+            subtitle="200 WASSCE Mathematics questions with full 50-question Paper 1 tests. No account needed."
             shots={{ mobile: "/landing/wasscemath-mobile.png", desktop: "/landing/wasscemath-desktop.png" }}
           />
         </div>

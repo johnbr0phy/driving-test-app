@@ -127,7 +127,7 @@ export default function JnvstLandingPage() {
           <ExamLandingHero
             dashboardHref="/jnvst/dashboard"
             shortName="JNVST"
-            subtitle="205 original Navodaya practice questions on Mental Ability, EVS, Arithmetic and Language. Tuned for mobile. No account needed."
+            subtitle="205 Navodaya practice questions on Mental Ability, EVS, Arithmetic and Language. No account needed."
             shots={{ mobile: "/landing/jnvst-mobile.png", desktop: "/landing/jnvst-desktop.png" }}
           />
         </div>

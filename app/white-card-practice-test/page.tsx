@@ -127,7 +127,7 @@ export default function WhiteCardLandingPage() {
           <ExamLandingHero
             dashboardHref="/white-card/dashboard"
             shortName="White Card"
-            subtitle="200 questions for CPCWHS1001 on WHS laws, hazards and risk control, SWMS, asbestos and silica, working at heights, plant, signs, PPE and emergencies. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 White Card questions for CPCWHS1001. Free to start, no account needed."
             shots={{ mobile: "/landing/auwhite-mobile.png", desktop: "/landing/auwhite-desktop.png" }}
           />
         </div>

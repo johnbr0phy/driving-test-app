@@ -126,7 +126,7 @@ export default function NdaLandingPage() {
           <ExamLandingHero
             dashboardHref="/nda/dashboard"
             shortName="NDA"
-            subtitle="236 original NDA questions on Mathematics, English and General Knowledge. Tuned for mobile. No account needed."
+            subtitle="236 NDA questions on Mathematics, English and General Knowledge. No account needed."
             shots={{ mobile: "/landing/nda-mobile.png", desktop: "/landing/nda-desktop.png" }}
           />
         </div>

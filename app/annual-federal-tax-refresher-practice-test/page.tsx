@@ -121,7 +121,7 @@ export default function AnnualFederalTaxRefresherLandingPage() {
           <ExamLandingHero
             dashboardHref="/annual-federal-tax-refresher/dashboard"
             shortName="AFTR Test"
-            subtitle="200 original questions on the IRS 2026 AFTR course outline: the new tip, overtime, car loan and senior deductions, the $40,400 SALT limit, 2026 inflation adjustments, filing status, income, credits, due diligence, e-file rules and the Annual Filing Season Program. Four 50-question mock tests. Free to start, no account needed."
+            subtitle="200 IRS AFTR questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/afsp-mobile.png", desktop: "/landing/afsp-desktop.png" }}
           />
         </div>

@@ -126,7 +126,7 @@ export default function MotorcycleLandingPage() {
           <ExamLandingHero
             dashboardHref="/motorcycle/dashboard"
             shortName="motorcycle"
-            subtitle="200 questions from the MSF manual your state test is written from. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions from the MSF manual your state test is written from. Free to start, no account needed."
             shots={{ mobile: "/landing/moto-mobile.png", desktop: "/landing/moto-desktop.png" }}
           />
         </div>

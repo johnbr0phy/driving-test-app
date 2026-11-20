@@ -123,7 +123,7 @@ export default function Sc900LandingPage() {
           <ExamLandingHero
             dashboardHref="/sc-900/dashboard"
             shortName="SC-900"
-            subtitle="201 original questions weighted to the SC-900 study guide. Tuned for mobile. Free to start, no account needed."
+            subtitle="201 questions weighted to the SC-900 study guide. Free to start, no account needed."
             shots={{ mobile: "/landing/sc900-mobile.png", desktop: "/landing/sc900-desktop.png" }}
           />
         </div>

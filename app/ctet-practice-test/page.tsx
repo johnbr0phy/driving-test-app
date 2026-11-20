@@ -128,7 +128,7 @@ export default function CtetLandingPage() {
           <ExamLandingHero
             dashboardHref="/ctet/dashboard"
             shortName="CTET"
-            subtitle="160 original questions on CDP, English, Maths and EVS, content and pedagogy. Tuned for mobile. Free to start, no account needed."
+            subtitle="160 CTET questions on CDP, English, Maths and EVS. Free to start, no account needed."
             shots={{ mobile: "/landing/ctet-mobile.png", desktop: "/landing/ctet-desktop.png" }}
           />
         </div>

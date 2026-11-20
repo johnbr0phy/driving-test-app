@@ -121,7 +121,7 @@ export default function K53Code3LandingPage() {
           <ExamLandingHero
             dashboardHref="/k53-code-3/dashboard"
             shortName="K53 Code 3 learner's"
-            subtitle="200 original questions for the South African Code 3 learner's test, the heavy vehicle learner's before a C1 or C truck licence: rules of the road, road signs and markings, and truck controls. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Code 3 learner's test questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/zak53c3-mobile.png", desktop: "/landing/zak53c3-desktop.png" }}
           />
         </div>

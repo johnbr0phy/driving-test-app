@@ -125,7 +125,7 @@ export default function SingaporeBttLandingPage() {
           <ExamLandingHero
             dashboardHref="/singapore-btt/dashboard"
             shortName="BTT"
-            subtitle="200 original questions from the 2026 Basic Theory of Driving handbook: traffic signs, road markings, lanes, junctions, parking and safe driving. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Singapore BTT questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/sgbtt-mobile.png", desktop: "/landing/sgbtt-desktop.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function HhaLandingPage() {
           <ExamLandingHero
             dashboardHref="/hha/dashboard"
             shortName="HHA"
-            subtitle="200 original questions on the subjects the federal rule lists for home health aides: patient rights, reporting and vital signs, personal care, transfers and range of motion, infection control, home safety, nutrition and psychosocial care. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 home health aide questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/hha-mobile.png", desktop: "/landing/hha-desktop.png" }}
           />
         </div>

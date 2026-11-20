@@ -132,7 +132,7 @@ export default function FunctionalSkillsMathsLandingPage() {
           <ExamLandingHero
             dashboardHref="/functional-skills-maths/dashboard"
             shortName="FS Maths L2"
-            subtitle="Two full practice papers with a non-calculator and a calculator section, four topic drills, and a short lesson before each topic. Real-life problems in pounds and metric units. Free, no account needed."
+            subtitle="Two full practice papers, four topic drills and a short lesson before each topic. Free, no account needed."
             shots={{ mobile: "/landing/fsmaths-mobile.png", desktop: "/landing/fsmaths-desktop.png" }}
           />
         </div>

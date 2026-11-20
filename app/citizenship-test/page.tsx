@@ -134,7 +134,7 @@ export default function CitizenshipLandingPage() {
           <ExamLandingHero
             dashboardHref="/citizenship/dashboard"
             shortName="citizenship"
-            subtitle="200 adapted study items for the 2025 civics test. Review your local answers and practice speaking before the interview. Free to start, no account needed."
+            subtitle="200 study items for the 2025 civics test, plus speaking practice. Free to start, no account needed."
             shots={{ mobile: "/landing/civics-mobile.png", desktop: "/landing/civics-desktop.png" }}
           />
         </div>

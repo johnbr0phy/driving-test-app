@@ -136,7 +136,7 @@ export default function ExcptLandingPage() {
           <ExamLandingHero
             dashboardHref="/excpt/dashboard"
             shortName="ExCPT"
-            subtitle="200 original questions on the NHA ExCPT test plan: pharmacy law and controlled substances, drug classes and top drugs, prescription intake and dispensing, calculations, compounding and medication safety. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 NHA ExCPT questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/excpt-mobile.png", desktop: "/landing/excpt-desktop.png" }}
           />
         </div>

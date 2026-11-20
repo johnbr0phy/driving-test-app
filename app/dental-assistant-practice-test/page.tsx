@@ -130,7 +130,7 @@ export default function DentalAssistantLandingPage() {
           <ExamLandingHero
             dashboardHref="/dental-assistant/dashboard"
             shortName="DANB"
-            subtitle="200 questions across the DANB GC, RHS and ICE exams. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions across the DANB GC, RHS and ICE exams. Free to start, no account needed."
             shots={{ mobile: "/landing/danb-mobile.png", desktop: "/landing/danb-desktop.png" }}
           />
         </div>

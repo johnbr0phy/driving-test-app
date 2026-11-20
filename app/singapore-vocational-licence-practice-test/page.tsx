@@ -126,7 +126,7 @@ export default function SgVocationalLicenceLandingPage() {
           <ExamLandingHero
             dashboardHref="/singapore-vocational-licence/dashboard"
             shortName="TDVL / PDVL"
-            subtitle="200 original questions for the taxi and private hire car vocational licence: road safety, passenger handling, licence rules and demerit points, bookings, decals, fares, pick-up rules and routes. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Singapore taxi and private hire vocational licence questions. Free to start, no account needed."
             shots={{ mobile: "/landing/sgvl-mobile.png", desktop: "/landing/sgvl-desktop.png" }}
           />
         </div>

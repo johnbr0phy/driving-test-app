@@ -126,7 +126,7 @@ export default function GmatLandingPage() {
           <ExamLandingHero
             dashboardHref="/gmat/dashboard"
             shortName="GMAT"
-            subtitle="169 original Quant, Verbal and Data Insights questions in the GMAT Focus format. Tuned for mobile. Free to start, no account needed."
+            subtitle="169 Quant, Verbal and Data Insights questions in the GMAT Focus format. Free to start, no account needed."
             shots={{ mobile: "/landing/gmat-mobile.png", desktop: "/landing/gmat-desktop.png" }}
           />
         </div>

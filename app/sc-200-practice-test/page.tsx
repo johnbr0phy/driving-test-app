@@ -130,7 +130,7 @@ export default function Sc200LandingPage() {
           <ExamLandingHero
             dashboardHref="/sc-200/dashboard"
             shortName="SC-200"
-            subtitle="212 original questions weighted to the SC-200 skills measured, with KQL queries to read, matching and ordering items. Tuned for mobile. Free to start, no account needed."
+            subtitle="212 questions weighted to the SC-200 skills measured, with KQL queries. Free to start, no account needed."
             shots={{ mobile: "/landing/sc200-mobile.png", desktop: "/landing/sc200-desktop.png" }}
           />
         </div>

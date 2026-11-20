@@ -139,7 +139,7 @@ export default function PcvTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/pcv-theory/dashboard"
             shortName="PCV Theory"
-            subtitle="200 bus and coach theory questions on drivers' hours, tachographs, passengers, brakes, the road and traffic signs, with the real 85 percent pass mark. Multiple-choice part only. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 bus and coach theory questions with the real 85 percent pass mark. Free to start, no account needed."
             shots={{ mobile: "/landing/ukpcv-mobile.png", desktop: "/landing/ukpcv-desktop.png" }}
           />
         </div>

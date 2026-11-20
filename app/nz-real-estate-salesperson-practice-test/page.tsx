@@ -129,7 +129,7 @@ export default function NzRealEstateLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-real-estate/dashboard"
             shortName="NZ Real Estate"
-            subtitle="200 original questions for the New Zealand Certificate in Real Estate (Salesperson): the Real Estate Agents Act 2008, the Code of Conduct, agency agreements and commission, disclosure, trust money and sale and purchase agreements. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 real estate salesperson questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzrealestate-mobile.png", desktop: "/landing/nzrealestate-desktop.png" }}
           />
         </div>

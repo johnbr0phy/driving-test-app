@@ -131,7 +131,7 @@ export default function UksiaLandingPage() {
           <ExamLandingHero
             dashboardHref="/sia-door-supervisor/dashboard"
             shortName="Door Supervisor"
-            subtitle="200 original questions for the four unit exams of the SIA door supervisor course: the law and arrest, licensing, searching, drugs, terrorism, conflict and physical intervention. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 SIA door supervisor questions for all four unit exams. Free to start, no account needed."
             shots={{ mobile: "/landing/uksia-mobile.png", desktop: "/landing/uksia-desktop.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function Cemap1LandingPage() {
           <ExamLandingHero
             dashboardHref="/cemap/dashboard"
             shortName="CeMAP 1"
-            subtitle="200 original questions for CeMAP Module 1 (FSRE), both FRE1 and FRE2: financial markets, law, wills and trusts, the FCA and PRA, the Consumer Duty, anti-money laundering, data protection, complaints and ethics. Five 40-question mock tests, every answer explained. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CeMAP Module 1 questions and five 40-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cemap-mobile.png", desktop: "/landing/cemap-desktop.png" }}
           />
         </div>

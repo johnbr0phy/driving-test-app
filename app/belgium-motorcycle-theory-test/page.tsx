@@ -128,7 +128,7 @@ export default function BelgiumMotorcycleTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/belgium-motorcycle-theory/dashboard"
             shortName="Motorcycle theory"
-            subtitle="200 original questions in English for categories A1, A2 and A: protective gear, braking and cornering, lane position and filtering, passengers, priority, signs, regional speed limits and road hazards. Four 50-question mock tests at the real 41/50 pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Belgian motorcycle questions in English. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/bemoto-mobile.png", desktop: "/landing/bemoto-desktop.png" }}
           />
         </div>

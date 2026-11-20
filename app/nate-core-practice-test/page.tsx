@@ -129,7 +129,7 @@ export default function NateCoreLandingPage() {
           <ExamLandingHero
             dashboardHref="/nate-core/dashboard"
             shortName="NATE Core"
-            subtitle="200 original questions for the NATE Core exam: safety, tools, basic construction, basic science, comfort, temperature and humidity measurements, and basic electricity. Four 50-question practice tests weighted like the real exam. Free to start, no account needed."
+            subtitle="200 questions for the NATE Core exam. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/natecore-mobile.png", desktop: "/landing/natecore-desktop.png" }}
           />
         </div>

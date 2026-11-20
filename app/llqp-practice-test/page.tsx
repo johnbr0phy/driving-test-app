@@ -122,7 +122,7 @@ export default function LlqpLandingPage() {
           <ExamLandingHero
             dashboardHref="/llqp/dashboard"
             shortName="LLQP"
-            subtitle="200 original questions for Canada's life licence exams: life insurance and its taxation, disability and critical illness, group and government benefits, segregated funds, annuities and registered plans, and ethics. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for Canada's life licence exams. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/llqp-mobile.png", desktop: "/landing/llqp-desktop.png" }}
           />
         </div>

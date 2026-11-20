@@ -126,7 +126,7 @@ export default function NigeriaCustomsRecruitmentLandingPage() {
           <ExamLandingHero
             dashboardHref="/nigeria-customs-recruitment/dashboard"
             shortName="Customs CBT"
-            subtitle="200 original questions for the Nigeria Customs Service recruitment CBT: English, maths without a calculator, reasoning, and the customs, trade, economics and world geography knowledge behind customs work. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Customs recruitment CBT questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ngcustoms-mobile.png", desktop: "/landing/ngcustoms-desktop.png" }}
           />
         </div>

@@ -137,7 +137,7 @@ export default function GedLandingPage() {
           <ExamLandingHero
             dashboardHref="/ged/dashboard"
             shortName="GED"
-            subtitle="All four GED subjects in two full-length timed practice tests, plus six skill drills that teach the basics first. Everything is free, no account needed."
+            subtitle="All four GED subjects in two timed tests, plus six skill drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/ged-mobile.png", desktop: "/landing/ged-desktop.png" }}
           />
         </div>

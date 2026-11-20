@@ -142,7 +142,7 @@ export default function ParamedicLandingPage() {
           <ExamLandingHero
             dashboardHref="/paramedic/dashboard"
             shortName="Paramedic"
-            subtitle="200 ALS questions weighted to the 2024 NREMT Paramedic test plan. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ALS questions weighted to the NREMT Paramedic test plan. Free to start, no account needed."
             shots={{ mobile: "/landing/paramedic-mobile.png", desktop: "/landing/paramedic-desktop.png" }}
           />
         </div>

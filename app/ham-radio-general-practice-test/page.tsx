@@ -129,7 +129,7 @@ export default function HamGeneralLandingPage() {
           <ExamLandingHero
             dashboardHref="/ham-radio-general/dashboard"
             shortName="General"
-            subtitle="The official 2023-2027 General question pool with an explanation for every answer. Tuned for mobile. Free to start, no account needed."
+            subtitle="The official 2023-2027 General pool, every answer explained. Free to start, no account needed."
             shots={{ mobile: "/landing/hamgeneral-mobile.png", desktop: "/landing/hamgeneral-desktop.png" }}
           />
         </div>

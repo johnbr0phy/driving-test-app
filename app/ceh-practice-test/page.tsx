@@ -136,7 +136,7 @@ export default function CehLandingPage() {
           <ExamLandingHero
             dashboardHref="/ceh/dashboard"
             shortName="CEH"
-            subtitle="200 original questions weighted to EC-Council's CEH v13 blueprint, from footprinting and scanning to web, wireless, cloud and crypto attacks. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions weighted to EC-Council's CEH v13 blueprint. Free to start, no account needed."
             shots={{ mobile: "/landing/ceh-mobile.png", desktop: "/landing/ceh-desktop.png" }}
           />
         </div>

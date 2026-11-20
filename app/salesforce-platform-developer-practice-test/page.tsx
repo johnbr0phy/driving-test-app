@@ -131,7 +131,7 @@ export default function SalesforcePlatformDeveloperLandingPage() {
           <ExamLandingHero
             dashboardHref="/salesforce-platform-developer/dashboard"
             shortName="Platform Developer"
-            subtitle="201 original questions for the Salesforce Certified Platform Developer exam (formerly Platform Developer I), with Apex, SOQL and LWC code to read and choose-two items. Tuned for mobile. Free to start, no account needed."
+            subtitle="201 Salesforce Platform Developer questions with Apex, SOQL and LWC code. Free to start, no account needed."
             shots={{ mobile: "/landing/sfpd1-mobile.png", desktop: "/landing/sfpd1-desktop.png" }}
           />
         </div>

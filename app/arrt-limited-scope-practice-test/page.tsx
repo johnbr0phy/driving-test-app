@@ -131,7 +131,7 @@ export default function LimitedScopeLandingPage() {
           <ExamLandingHero
             dashboardHref="/limited-scope-xray/dashboard"
             shortName="Limited Scope"
-            subtitle="200 original questions on the ARRT Limited Scope core module and all five procedure modules: patient care, radiation safety, image production, and chest, extremity, skull, spine and podiatric positioning. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 ARRT Limited Scope questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/lmrt-mobile.png", desktop: "/landing/lmrt-desktop.png" }}
           />
         </div>

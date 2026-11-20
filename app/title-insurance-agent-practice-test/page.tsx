@@ -125,7 +125,7 @@ export default function TitleAgentLandingPage() {
           <ExamLandingHero
             dashboardHref="/title-insurance-agent/dashboard"
             shortName="Title Agent"
-            subtitle="200 original questions on the general part of state title agent exams: title policies, search and liens, real property, escrow and closing, RESPA and TRID. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 title insurance agent questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/titleagent-mobile.png", desktop: "/landing/titleagent-desktop.png" }}
           />
         </div>

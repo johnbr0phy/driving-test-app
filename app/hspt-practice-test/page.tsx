@@ -136,7 +136,7 @@ export default function HsptLandingPage() {
           <ExamLandingHero
             dashboardHref="/hspt/dashboard"
             shortName="HSPT"
-            subtitle="All five High School Placement Test subtests in the real mix of question types: timed practice tests and ten drills, from synonyms to number series. Everything is free, no account needed."
+            subtitle="Timed High School Placement Test practice and ten drills. Everything is free, no account needed."
             shots={{ mobile: "/landing/hspt-mobile.png", desktop: "/landing/hspt-desktop.png" }}
           />
         </div>

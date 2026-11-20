@@ -114,7 +114,7 @@ export default function SSCPLandingPage() {
           <ExamLandingHero
             dashboardHref="/isc2-sscp/dashboard"
             shortName="SSCP"
-            subtitle="260 original operational-security MCQs, seven drills and two fixed practice tests. CAT and advanced item types are not simulated. Free to start, no account needed."
+            subtitle="260 MCQs, seven drills and two fixed practice tests. CAT is not simulated. Free to start, no account needed."
             shots={{ mobile: "/landing/sscp-mobile.png", desktop: "/landing/sscp-desktop.png" }}
           />
         </div>

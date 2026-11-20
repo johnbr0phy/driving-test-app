@@ -130,7 +130,7 @@ export default function MaltaTaxiDriverLandingPage() {
           <ExamLandingHero
             dashboardHref="/malta-taxi-driver/dashboard"
             shortName="Malta taxi theory test"
-            subtitle="200 original practice questions written from the Taxi Services Regulations: permits and the driver's tag, stands and hiring, fares, passengers, safety and the places of Malta and Gozo. Five 35-question mock tests, 30 to pass. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Malta taxi questions. Five 35-question mock tests, 30 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/mttaxi-mobile.png", desktop: "/landing/mttaxi-desktop.png" }}
           />
         </div>

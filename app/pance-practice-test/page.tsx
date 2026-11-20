@@ -138,7 +138,7 @@ export default function PanceLandingPage() {
           <ExamLandingHero
             dashboardHref="/pance/dashboard"
             shortName="PANCE"
-            subtitle="200 original clinical questions on the NCCPA PANCE content blueprint: every organ system from cardiovascular to dermatology, plus professional practice. Four 50-question mock exams. Free to start, no account needed."
+            subtitle="200 questions on the PANCE blueprint and four 50-question mock exams. Free to start, no account needed."
             shots={{ mobile: "/landing/pance-mobile.png", desktop: "/landing/pance-desktop.png" }}
           />
         </div>

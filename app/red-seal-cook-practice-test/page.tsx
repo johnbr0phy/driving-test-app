@@ -149,7 +149,7 @@ export default function RedSealCookLandingPage() {
           <ExamLandingHero
             dashboardHref="/red-seal-cook/dashboard"
             shortName="Red Seal Cook"
-            subtitle="200 questions across all 13 Major Work Activities, from food safety and mother sauces to butchery, fish and pastry, with the real 70% pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Red Seal Cook questions with the real 70% pass mark. Free to start, no account needed."
             shots={{ mobile: "/landing/carscook-mobile.png", desktop: "/landing/carscook-desktop.png" }}
           />
         </div>

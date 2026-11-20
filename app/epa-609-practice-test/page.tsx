@@ -138,7 +138,7 @@ export default function Epa609LandingPage() {
           <ExamLandingHero
             dashboardHref="/epa609/dashboard"
             shortName="EPA 609"
-            subtitle="100 original questions on MVAC rules, equipment, recovery, charging and R-1234yf procedures. Four 25-question practice tests with explanations. Free to start, no account needed."
+            subtitle="100 MVAC questions and four 25-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/epa609-mobile.png", desktop: "/landing/epa609-desktop.png" }}
           />
         </div>

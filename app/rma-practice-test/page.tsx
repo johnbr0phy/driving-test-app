@@ -126,7 +126,7 @@ export default function RmaLandingPage() {
           <ExamLandingHero
             dashboardHref="/rma/dashboard"
             shortName="RMA"
-            subtitle="200 original questions on the AMT RMA exam specifications: body systems, terminology, law, insurance, lab work, vital signs, exams and pharmacology. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 AMT RMA questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/rma-mobile.png", desktop: "/landing/rma-desktop.png" }}
           />
         </div>

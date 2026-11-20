@@ -126,7 +126,7 @@ export default function MaceLandingPage() {
           <ExamLandingHero
             dashboardHref="/medication-aide/dashboard"
             shortName="MACE"
-            subtitle="200 original questions on the national MACE content outline: the medication aide&apos;s role, orders and the MAR, safety checks and the six rights, routes, drug classes, reporting changes, and medication terms and forms. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on the MACE content outline. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/mace-mobile.png", desktop: "/landing/mace-desktop.png" }}
           />
         </div>

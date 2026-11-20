@@ -127,7 +127,7 @@ export default function DenmarkDrivingTheoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/denmark-driving-theory/dashboard"
             shortName="Theory test"
-            subtitle="200 original questions in English on the Danish rules of the road for the teoriprøve: give way to the right, roundabouts, overtaking, cyclists at junctions, motorways, parking and tunnels. Eight 25-question mock tests with 20 to pass, like the real test. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Danish driving theory questions in English. Eight 25-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/dkteori-mobile.png", desktop: "/landing/dkteori-desktop.png" }}
           />
         </div>

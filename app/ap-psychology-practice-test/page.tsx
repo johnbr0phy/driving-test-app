@@ -128,7 +128,7 @@ export default function ApPsychologyLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-psychology/dashboard"
             shortName="AP Psychology"
-            subtitle="200 original multiple-choice questions for the redesigned exam, all five units. Tuned for mobile. No account needed."
+            subtitle="200 AP Psychology multiple-choice questions, all five units. No account needed."
             shots={{ mobile: "/landing/appsych-mobile.png", desktop: "/landing/appsych-desktop.png" }}
           />
         </div>

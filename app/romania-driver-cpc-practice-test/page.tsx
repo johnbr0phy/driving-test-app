@@ -127,7 +127,7 @@ export default function RomaniaDriverCpcLandingPage() {
           <ExamLandingHero
             dashboardHref="/romania-driver-cpc/dashboard"
             shortName="CPI practice"
-            subtitle="200 original questions in English for the ARR CPI theory exam for truck and bus drivers: drivers' hours, smart tachographs, eco-driving, load securing, passengers, CMR and cabotage. Four 50-question mock tests at the real pace with 70% to pass. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Romania Driver CPC questions in English, four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/rocpi-mobile.png", desktop: "/landing/rocpi-desktop.png" }}
           />
         </div>

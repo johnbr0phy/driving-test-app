@@ -131,7 +131,7 @@ export default function ApBiologyLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-biology/dashboard"
             shortName="AP Biology"
-            subtitle="200 original multiple-choice questions across all eight units, with experiments and data sets. Tuned for mobile. No account needed."
+            subtitle="200 AP Biology multiple-choice questions across all eight units. No account needed."
             shots={{ mobile: "/landing/apbio-mobile.png", desktop: "/landing/apbio-desktop.png" }}
           />
         </div>

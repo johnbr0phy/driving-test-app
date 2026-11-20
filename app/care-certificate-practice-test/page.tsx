@@ -131,7 +131,7 @@ export default function CareCertificateLandingPage() {
           <ExamLandingHero
             dashboardHref="/care-certificate/dashboard"
             shortName="Care Certificate"
-            subtitle="200 questions on all 16 Care Certificate standards, updated for 2025: duty of care, person-centred care, safeguarding, dementia, learning disability and autism, and infection control. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions on all 16 Care Certificate standards. Free to start, no account needed."
             shots={{ mobile: "/landing/ukcare-mobile.png", desktop: "/landing/ukcare-desktop.png" }}
           />
         </div>

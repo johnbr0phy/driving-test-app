@@ -124,7 +124,7 @@ export default function CmfasM5LandingPage() {
           <ExamLandingHero
             dashboardHref="/cmfas-m5/dashboard"
             shortName="CMFAS RES5"
-            subtitle="200 original questions for RES5, the CMFAS rules, ethics and skills module that replaced M5: the Financial Advisers Act, MAS notices on recommendations, the balanced scorecard and AML, ILPs and unit trusts, ethics and fair dealing, and advisory skills. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 CMFAS RES5 (formerly M5) questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/sgm5-mobile.png", desktop: "/landing/sgm5-desktop.png" }}
           />
         </div>

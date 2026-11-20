@@ -227,7 +227,7 @@ export default function RealestateLandingPage() {
           <ExamLandingHero
             dashboardHref="/real-estate/dashboard"
             shortName="Real Estate"
-            subtitle="200 questions weighted to the national salesperson exam outline. Worked math on every calculation. Free to start, no account needed."
+            subtitle="200 questions weighted to the national salesperson exam outline. Free to start, no account needed."
             shots={{ mobile: "/landing/realestate-mobile.png", desktop: "/landing/realestate-desktop.png" }}
           />
         </div>

@@ -143,7 +143,7 @@ export default function CapswLandingPage() {
           <ExamLandingHero
             dashboardHref="/psw/dashboard"
             shortName="PSW"
-            subtitle="200 original questions for Ontario Personal Support Worker students: the PSW role, consent and residents' rights, abuse reporting, infection control, daily living, medication, palliative care and dementia. Built on the 2022 program standard. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for Ontario Personal Support Worker (PSW) students. Free to start, no account needed."
             shots={{ mobile: "/landing/capsw-mobile.png", desktop: "/landing/capsw-desktop.png" }}
           />
         </div>

@@ -129,7 +129,7 @@ export default function MblexLandingPage() {
           <ExamLandingHero
             dashboardHref="/mblex/dashboard"
             shortName="MBLEx"
-            subtitle="200 original questions on the FSMTB MBLEx content outline: anatomy and kinesiology, pathology and contraindications, the effects of massage, client assessment, ethics and laws, and professional practice. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 questions on the MBLEx content outline. Four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/mblex-mobile.png", desktop: "/landing/mblex-desktop.png" }}
           />
         </div>

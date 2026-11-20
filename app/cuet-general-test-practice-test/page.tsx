@@ -128,7 +128,7 @@ export default function CuetLandingPage() {
           <ExamLandingHero
             dashboardHref="/cuet/dashboard"
             shortName="CUET GAT"
-            subtitle="202 original General Aptitude Test questions on GK, reasoning and maths. Tuned for mobile. No account needed."
+            subtitle="202 CUET General Aptitude Test questions on GK, reasoning and maths. No account needed."
             shots={{ mobile: "/landing/cuet-mobile.png", desktop: "/landing/cuet-desktop.png" }}
           />
         </div>

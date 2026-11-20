@@ -130,7 +130,7 @@ export default function DispatcherLandingPage() {
           <ExamLandingHero
             dashboardHref="/dispatcher/dashboard"
             shortName="911 Dispatcher"
-            subtitle="200 original questions for 911 telecommunicators, built on APCO ANS 3.103.3-2025 and NENA's call processing standard: 911 and wireless location technology, call answering and processing, TTY and text-to-911, caller handling, radio procedure, dispatch operations and NIMS. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions for 911 telecommunicators and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/dispatcher-mobile.png", desktop: "/landing/dispatcher-desktop.png" }}
           />
         </div>

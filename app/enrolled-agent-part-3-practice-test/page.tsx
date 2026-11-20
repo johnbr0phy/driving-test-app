@@ -122,7 +122,7 @@ export default function EnrolledAgentPart3LandingPage() {
           <ExamLandingHero
             dashboardHref="/enrolled-agent-part-3/dashboard"
             shortName="SEE Part 3"
-            subtitle="200 original questions on the IRS Part 3 outline: Circular 230 duties and sanctions, preparer penalties, Forms 2848 and 8821, installment agreements, offers, liens and levies, audits and appeals, records and IRS e-file. Four 50-question mock tests. Free to start, no account needed."
+            subtitle="200 Enrolled Agent Part 3 questions. Four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ea3-mobile.png", desktop: "/landing/ea3-desktop.png" }}
           />
         </div>

@@ -126,7 +126,7 @@ export default function MalaysiaKpp01LandingPage() {
           <ExamLandingHero
             dashboardHref="/malaysia-kpp/dashboard"
             shortName="KPP01"
-            subtitle="200 original questions for the JPJ computer theory test: road signs, markings, traffic rules, expressways, parking, licences and the law. Four 50-question mock tests with the 42 of 50 pass mark. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 JPJ theory test questions. Four 50-question mock tests, 42 to pass. Free to start, no account needed."
             shots={{ mobile: "/landing/mykpp-mobile.png", desktop: "/landing/mykpp-desktop.png" }}
           />
         </div>

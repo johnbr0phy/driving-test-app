@@ -131,7 +131,7 @@ export default function McatLandingPage() {
           <ExamLandingHero
             dashboardHref="/mcat/dashboard"
             shortName="MCAT"
-            subtitle="234 original passage-based and discrete questions across all four MCAT sections. Tuned for mobile. Free to start, no account needed."
+            subtitle="234 passage-based and discrete questions across all four MCAT sections. Free to start, no account needed."
             shots={{ mobile: "/landing/mcat-mobile.png", desktop: "/landing/mcat-desktop.png" }}
           />
         </div>

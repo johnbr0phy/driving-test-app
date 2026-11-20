@@ -128,7 +128,7 @@ export default function ReetLandingPage() {
           <ExamLandingHero
             dashboardHref="/reet/dashboard"
             shortName="REET"
-            subtitle="201 original questions on CDP, Hindi, English, Maths and EVS with Rajasthan. Tuned for mobile. Free to start, no account needed."
+            subtitle="201 REET Level 1 questions on CDP, Hindi, English, Maths and EVS. Free to start, no account needed."
             shots={{ mobile: "/landing/reet-mobile.png", desktop: "/landing/reet-desktop.png" }}
           />
         </div>

@@ -126,7 +126,7 @@ export default function SbiClerkLandingPage() {
           <ExamLandingHero
             dashboardHref="/sbi-clerk/dashboard"
             shortName="SBI Clerk"
-            subtitle="227 original questions in English, Numerical Ability and Reasoning, with 20-minute sectional timing. Tuned for mobile. Free to start, no account needed."
+            subtitle="227 SBI Clerk Prelims questions with 20-minute sectional timing. Free to start, no account needed."
             shots={{ mobile: "/landing/sbiclerk-mobile.png", desktop: "/landing/sbiclerk-desktop.png" }}
           />
         </div>

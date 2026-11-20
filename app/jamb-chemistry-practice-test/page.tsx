@@ -131,7 +131,7 @@ export default function JambChemistryLandingPage() {
           <ExamLandingHero
             dashboardHref="/jamb-chemistry/dashboard"
             shortName="JAMB Chemistry"
-            subtitle="208 original questions on the whole UTME Chemistry syllabus, with full 40-question timed tests and every calculation worked out. Tuned for mobile. No account needed."
+            subtitle="208 UTME Chemistry questions with 40-question timed tests and worked calculations. No account needed."
             shots={{ mobile: "/landing/jambchem-mobile.png", desktop: "/landing/jambchem-desktop.png" }}
           />
         </div>

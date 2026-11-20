@@ -128,7 +128,7 @@ export default function ApUsGovernmentLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-us-government/dashboard"
             shortName="AP US Government"
-            subtitle="201 original multiple-choice questions across all five units, with the required cases and documents. Tuned for mobile. No account needed."
+            subtitle="201 AP US Government multiple-choice questions across all five units. No account needed."
             shots={{ mobile: "/landing/apgov-mobile.png", desktop: "/landing/apgov-desktop.png" }}
           />
         </div>

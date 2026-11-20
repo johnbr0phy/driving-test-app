@@ -132,7 +132,7 @@ export default function SalesforceAppBuilderLandingPage() {
           <ExamLandingHero
             dashboardHref="/salesforce-app-builder/dashboard"
             shortName="App Builder"
-            subtitle="200 original questions weighted to the Summer '26 exam guide, from data models and Flow to Lightning pages and deployment. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Platform App Builder questions weighted to the Summer '26 exam guide. Free to start, no account needed."
             shots={{ mobile: "/landing/sfappbuilder-mobile.png", desktop: "/landing/sfappbuilder-desktop.png" }}
           />
         </div>

@@ -127,7 +127,7 @@ export default function NzBoatLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-day-skipper/dashboard"
             shortName="Day Skipper"
-            subtitle="200 original questions on New Zealand boating: give-way rules, lights and sound signals, IALA A buoys, the 5 knot rule, tides, marine weather, anchoring, knots and Mayday calls. Four 50-question tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 New Zealand boating questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/nzboat-mobile.png", desktop: "/landing/nzboat-desktop.png" }}
           />
         </div>

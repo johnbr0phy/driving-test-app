@@ -126,7 +126,7 @@ export default function IbpsClerkLandingPage() {
           <ExamLandingHero
             dashboardHref="/ibps-clerk/dashboard"
             shortName="IBPS Clerk"
-            subtitle="227 original questions in English, Numerical Ability and Reasoning, with 20-minute sectional timing. Tuned for mobile. Free to start, no account needed."
+            subtitle="227 English, Numerical Ability and Reasoning questions, sectionally timed. Free to start, no account needed."
             shots={{ mobile: "/landing/ibpsclerk-mobile.png", desktop: "/landing/ibpsclerk-desktop.png" }}
           />
         </div>

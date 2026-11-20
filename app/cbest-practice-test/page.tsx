@@ -129,7 +129,7 @@ export default function CbestLandingPage() {
           <ExamLandingHero
             dashboardHref="/cbest/dashboard"
             shortName="CBEST"
-            subtitle="170 original Reading and Math questions for California teachers and substitutes, timed at the real pace. Free to start, no account needed."
+            subtitle="170 CBEST Reading and Math questions, timed at the real pace. Free to start, no account needed."
             shots={{ mobile: "/landing/cbest-mobile.png", desktop: "/landing/cbest-desktop.png" }}
           />
         </div>

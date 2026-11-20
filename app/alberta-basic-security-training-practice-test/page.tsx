@@ -130,7 +130,7 @@ export default function AlbertaSecurityLandingPage() {
           <ExamLandingHero
             dashboardHref="/alberta-security-guard/dashboard"
             shortName="ABST"
-            subtitle="200 original questions for the Alberta ABST provincial exam: the Security Services and Investigators Act, citizen's arrest and trespass, use of force, patrol, notebooks and emergencies. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Alberta ABST questions and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/caabguard-mobile.png", desktop: "/landing/caabguard-desktop.png" }}
           />
         </div>

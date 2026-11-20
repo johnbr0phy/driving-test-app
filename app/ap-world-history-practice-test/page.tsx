@@ -132,7 +132,7 @@ export default function ApWorldHistoryLandingPage() {
           <ExamLandingHero
             dashboardHref="/ap-world-history/dashboard"
             shortName="AP World History"
-            subtitle="200 original source-based multiple-choice questions, c. 1200 to the present. Tuned for mobile. No account needed."
+            subtitle="200 source-based AP World History questions, c. 1200 to the present. No account needed."
             shots={{ mobile: "/landing/apworld-mobile.png", desktop: "/landing/apworld-desktop.png" }}
           />
         </div>

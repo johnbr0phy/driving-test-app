@@ -124,7 +124,7 @@ export default function Epa608LandingPage() {
           <ExamLandingHero
             dashboardHref="/epa-608/dashboard"
             shortName="EPA 608"
-            subtitle="Core, Type I, II and III. 200 questions at the real 72% pass line. Tuned for mobile. Free to start, no account needed."
+            subtitle="Core, Type I, II and III. 200 questions at the real 72% pass line. Free to start, no account needed."
             shots={{ mobile: "/landing/epa608-mobile.png", desktop: "/landing/epa608-desktop.png" }}
           />
         </div>

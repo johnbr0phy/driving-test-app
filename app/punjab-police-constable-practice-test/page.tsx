@@ -130,7 +130,7 @@ export default function PunjabPoliceConstableLandingPage() {
           <ExamLandingHero
             dashboardHref="/punjab-police-constable/dashboard"
             shortName="Police test"
-            subtitle="200 original MCQs for the Constable and Lady Constable written test: English, maths, reasoning, Punjab, the Police Order 2002, the PPC and CrPC, and computers. Four 50-question mock tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Punjab Police Constable MCQs and four 50-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/punjabpolice-mobile.png", desktop: "/landing/punjabpolice-desktop.png" }}
           />
         </div>

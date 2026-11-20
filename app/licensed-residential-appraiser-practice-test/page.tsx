@@ -117,7 +117,7 @@ export default function AppraiserLandingPage() {
           <ExamLandingHero
             dashboardHref="/appraiser/dashboard"
             shortName="Residential Appraiser"
-            subtitle="200 original questions on market analysis, valuation approaches, USPAP and statistics. Four shorter national Licensed Residential practice tests. Free to start, no account needed."
+            subtitle="200 questions and four shorter Licensed Residential practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/appraiser-mobile.png", desktop: "/landing/appraiser-desktop.png" }}
           />
         </div>

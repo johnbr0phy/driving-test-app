@@ -135,7 +135,7 @@ export default function NzEnStateFinalLandingPage() {
           <ExamLandingHero
             dashboardHref="/nz-en-state-final/dashboard"
             shortName="EN State Final"
-            subtitle="Medicine calculations and nursing knowledge mock tests for Diploma in Enrolled Nursing graduates, written for the 2025 enrolled nurse scope. 212 questions with rationales. Free to start, no account needed."
+            subtitle="212 questions with rationales for Diploma in Enrolled Nursing graduates. Free to start, no account needed."
             shots={{ mobile: "/landing/nzensf-mobile.png", desktop: "/landing/nzensf-desktop.png" }}
           />
         </div>

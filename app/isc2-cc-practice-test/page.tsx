@@ -132,7 +132,7 @@ export default function Isc2CcLandingPage() {
           <ExamLandingHero
             dashboardHref="/isc2-cc/dashboard"
             shortName="ISC2 CC"
-            subtitle="224 original Certified in Cybersecurity questions weighted to the September 2026 outline, answered in order like the real exam. Tuned for mobile. Free to start, no account needed."
+            subtitle="224 Certified in Cybersecurity questions weighted to the 2026 outline. Free to start, no account needed."
             shots={{ mobile: "/landing/isc2cc-mobile.png", desktop: "/landing/isc2cc-desktop.png" }}
           />
         </div>

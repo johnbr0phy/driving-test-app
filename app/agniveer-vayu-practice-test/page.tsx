@@ -126,7 +126,7 @@ export default function AgniveerVayuLandingPage() {
           <ExamLandingHero
             dashboardHref="/agniveer-vayu/dashboard"
             shortName="Agniveer Vayu"
-            subtitle="204 original Science questions on English, Physics and Maths. Tuned for mobile. Free to start, no account needed."
+            subtitle="204 Agniveer Vayu Science questions on English, Physics and Maths. Free to start, no account needed."
             shots={{ mobile: "/landing/agniveervayu-mobile.png", desktop: "/landing/agniveervayu-desktop.png" }}
           />
         </div>

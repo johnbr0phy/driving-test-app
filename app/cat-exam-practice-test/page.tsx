@@ -126,7 +126,7 @@ export default function CatLandingPage() {
           <ExamLandingHero
             dashboardHref="/iim-cat/dashboard"
             shortName="CAT"
-            subtitle="193 original questions in VARC, DILR and QA, with 40-minute sectional timing in the real order. Tuned for mobile. Free to start, no account needed."
+            subtitle="193 CAT questions in VARC, DILR and QA, with 40-minute sectional timing. Free to start, no account needed."
             shots={{ mobile: "/landing/iimcat-mobile.png", desktop: "/landing/iimcat-desktop.png" }}
           />
         </div>

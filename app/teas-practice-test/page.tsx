@@ -142,7 +142,7 @@ export default function TeasLandingPage() {
           <ExamLandingHero
             dashboardHref="/teas/dashboard"
             shortName="TEAS"
-            subtitle="200 questions across all four ATI TEAS 7 sections. Worked math, anatomy-heavy science. Free to start, no account needed."
+            subtitle="200 questions across all four ATI TEAS 7 sections, with worked math. Free to start, no account needed."
             shots={{ mobile: "/landing/teas-mobile.png", desktop: "/landing/teas-desktop.png" }}
           />
         </div>

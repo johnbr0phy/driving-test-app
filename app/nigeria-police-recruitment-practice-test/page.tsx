@@ -130,7 +130,7 @@ export default function NigeriaPoliceRecruitmentLandingPage() {
           <ExamLandingHero
             dashboardHref="/nigeria-police-recruitment/dashboard"
             shortName="Police test"
-            subtitle="200 original questions for the constable aptitude test: English, mathematics, reasoning, the 1999 Constitution, your rights and the Nigeria Police Force. Four 50-question mock CBTs. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 constable aptitude test questions and four 50-question mock CBTs. Free to start, no account needed."
             shots={{ mobile: "/landing/ngpolice-mobile.png", desktop: "/landing/ngpolice-desktop.png" }}
           />
         </div>

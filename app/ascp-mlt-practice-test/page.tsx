@@ -130,7 +130,7 @@ export default function AscpMltLandingPage() {
           <ExamLandingHero
             dashboardHref="/ascp-mlt/dashboard"
             shortName="MLT"
-            subtitle="200 original medical laboratory technician questions on the ASCP BOC content guideline: blood banking, urinalysis, chemistry, hematology, immunology, microbiology and lab operations. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ASCP MLT questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/ascpmlt-mobile.png", desktop: "/landing/ascpmlt-desktop.png" }}
           />
         </div>

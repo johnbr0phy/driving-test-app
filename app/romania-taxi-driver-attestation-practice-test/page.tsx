@@ -126,7 +126,7 @@ export default function RomaniaTaxiAttestationLandingPage() {
           <ExamLandingHero
             dashboardHref="/romania-taxi-attestation/dashboard"
             shortName="Taxi test"
-            subtitle="200 original questions in English for the ARR professional attestation test for taxi, rental and ride-hailing drivers: Law 38/2003, the taximeter and receipts, tariffs, customers, stands and bus lanes, safety and security. Eight 20-question mock tests with 14 to pass, like the real one. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 ARR taxi attestation questions in English. Eight 20-question mocks. Free to start, no account needed."
             shots={{ mobile: "/landing/rotaxi-mobile.png", desktop: "/landing/rotaxi-desktop.png" }}
           />
         </div>

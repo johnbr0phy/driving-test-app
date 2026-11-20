@@ -113,7 +113,7 @@ export default function CSALandingPage() {
           <ExamLandingHero
             dashboardHref="/servicenow-csa/dashboard"
             shortName="CSA"
-            subtitle="200 original administration questions, six drills and two practice tests. Selected conceptual and applied practice; hands-on administration is not assessed. Free to start, no account needed."
+            subtitle="200 ServiceNow CSA questions, six drills and two practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/servicenowcsa-mobile.png", desktop: "/landing/servicenowcsa-desktop.png" }}
           />
         </div>

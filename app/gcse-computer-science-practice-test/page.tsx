@@ -132,7 +132,7 @@ export default function GcseComputerScienceLandingPage() {
           <ExamLandingHero
             dashboardHref="/gcse-computer-science/dashboard"
             shortName="GCSE Computer Science"
-            subtitle="Both papers, for AQA, OCR and Edexcel: pseudocode and trace tables, binary and hex, systems, networks, security and the law. Learn the basics step by step, drill each topic, then sit two timed tests. Free, no account needed."
+            subtitle="Both papers for AQA, OCR and Edexcel: the basics, topic drills and two timed tests. Free, no account needed."
             shots={{ mobile: "/landing/gcsecs-mobile.png", desktop: "/landing/gcsecs-desktop.png" }}
           />
         </div>

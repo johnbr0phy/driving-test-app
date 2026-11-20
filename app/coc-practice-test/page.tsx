@@ -131,7 +131,7 @@ export default function CocLandingPage() {
           <ExamLandingHero
             dashboardHref="/coc/dashboard"
             shortName="COC"
-            subtitle="200 original outpatient facility coding questions on every AAPC COC exam section: OPPS, APCs and status indicators, observation and ED coding, NCCI edits and facility modifiers, ICD-10-CM, HCPCS Level II and coding cases. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 AAPC COC coding questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/coc-mobile.png", desktop: "/landing/coc-desktop.png" }}
           />
         </div>

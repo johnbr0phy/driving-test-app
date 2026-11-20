@@ -130,7 +130,7 @@ export default function LsatLandingPage() {
           <ExamLandingHero
             dashboardHref="/lsat/dashboard"
             shortName="LSAT"
-            subtitle="203 original Logical Reasoning and Reading Comprehension questions in the current LSAT format. Tuned for mobile. Free to start, no account needed."
+            subtitle="203 Logical Reasoning and Reading Comprehension questions, LSAT format. Free to start, no account needed."
             shots={{ mobile: "/landing/lsat-mobile.png", desktop: "/landing/lsat-desktop.png" }}
           />
         </div>

@@ -127,7 +127,7 @@ export default function AustralianCitizenshipLandingPage() {
           <ExamLandingHero
             dashboardHref="/australian-citizenship/dashboard"
             shortName="Citizenship"
-            subtitle="200 original questions from Our Common Bond, eight 20-question mock tests and a values set to make sure you get all five values questions right. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions from Our Common Bond and eight 20-question mock tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aucit-mobile.png", desktop: "/landing/aucit-desktop.png" }}
           />
         </div>

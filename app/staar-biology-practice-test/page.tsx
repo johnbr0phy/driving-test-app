@@ -127,7 +127,7 @@ export default function StaarBiologyLandingPage() {
           <ExamLandingHero
             dashboardHref="/staar-biology/dashboard"
             shortName="STAAR Biology"
-            subtitle="202 original questions across all four strands of the Texas Biology EOC, with data sets and choose-two questions. Free, tuned for mobile, no account needed."
+            subtitle="202 questions on all four strands of the STAAR Biology EOC. Free, tuned for mobile, no account needed."
             shots={{ mobile: "/landing/staarbio-mobile.png", desktop: "/landing/staarbio-desktop.png" }}
           />
         </div>

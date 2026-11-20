@@ -122,7 +122,7 @@ export default function VicFirearmsLandingPage() {
           <ExamLandingHero
             dashboardHref="/vic-firearms-licence/dashboard"
             shortName="Vic Firearms Safety"
-            subtitle="200 original questions for the Victorian firearm safety course test: the Firearms Act 1996 (Vic), licence categories, permits to acquire, storage, carriage and the ten rules of the Firearm Safety Code. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 Victorian firearm safety questions and four 50-question tests. Free to start, no account needed."
             shots={{ mobile: "/landing/aufirearmsvic-mobile.png", desktop: "/landing/aufirearmsvic-desktop.png" }}
           />
         </div>

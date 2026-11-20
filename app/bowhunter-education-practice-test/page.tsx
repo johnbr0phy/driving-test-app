@@ -133,7 +133,7 @@ export default function BowhunterLandingPage() {
           <ExamLandingHero
             dashboardHref="/bowhunter-education/dashboard"
             shortName="Bowhunter Education"
-            subtitle="200 original questions for your bowhunter education course test: bows, arrows and broadheads, crossbows, tree stand safety, shooting and distance judging, shot placement, blood trailing, ethics and conservation. Four 50-question practice tests. Free to start, no account needed."
+            subtitle="200 bowhunter education questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/bowhunter-mobile.png", desktop: "/landing/bowhunter-desktop.png" }}
           />
         </div>

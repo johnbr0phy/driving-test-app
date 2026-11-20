@@ -128,7 +128,7 @@ export default function NetworkPlusLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-network-plus/dashboard"
             shortName="Network+"
-            subtitle="204 original questions weighted to the N10-009 exam objectives, with matching, ordering and typed subnetting items. Tuned for mobile. Free to start, no account needed."
+            subtitle="204 Network+ questions weighted to the N10-009 exam objectives. Free to start, no account needed."
             shots={{ mobile: "/landing/netplus-mobile.png", desktop: "/landing/netplus-desktop.png" }}
           />
         </div>

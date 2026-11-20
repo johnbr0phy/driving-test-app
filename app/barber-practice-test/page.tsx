@@ -133,7 +133,7 @@ export default function BarberLandingPage() {
           <ExamLandingHero
             dashboardHref="/barber/dashboard"
             shortName="Barber"
-            subtitle="200 original state board theory questions on infection control, anatomy, clippers and razors, fades and tapers, color and relaxers, shaves and facials. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 barber state board theory questions. Free to start, no account needed."
             shots={{ mobile: "/landing/barber-mobile.png", desktop: "/landing/barber-desktop.png" }}
           />
         </div>

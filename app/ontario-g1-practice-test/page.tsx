@@ -139,7 +139,7 @@ export default function OntarioG1LandingPage() {
           <ExamLandingHero
             dashboardHref="/ontario-g1/dashboard"
             shortName="G1"
-            subtitle="200 questions on Ontario road signs, traffic lights, right-of-way, graduated licensing, demerit points and safe driving, all from the Official MTO Driver's Handbook. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 questions from the Official MTO Driver's Handbook. Free to start, no account needed."
             shots={{ mobile: "/landing/caon-mobile.png", desktop: "/landing/caon-desktop.png" }}
           />
         </div>

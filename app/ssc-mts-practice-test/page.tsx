@@ -127,7 +127,7 @@ export default function SscMtsLandingPage() {
           <ExamLandingHero
             dashboardHref="/ssc-mts/dashboard"
             shortName="SSC MTS"
-            subtitle="212 original MTS and Havaldar questions on maths, reasoning, GK and English. Tuned for mobile. Free to start, no account needed."
+            subtitle="212 SSC MTS and Havaldar questions on maths, reasoning, GK and English. Free to start, no account needed."
             shots={{ mobile: "/landing/sscmts-mobile.png", desktop: "/landing/sscmts-desktop.png" }}
           />
         </div>

@@ -128,7 +128,7 @@ export default function CehrsLandingPage() {
           <ExamLandingHero
             dashboardHref="/cehrs/dashboard"
             shortName="CEHRS"
-            subtitle="200 original questions on the NHA CEHRS test plan: patient data and registration, clinical documentation and data exchange, codes and billing in the EHR, HIPAA and information blocking, and reports. Four 50-question practice tests. Tuned for mobile. Free to start, no account needed."
+            subtitle="200 NHA CEHRS questions and four 50-question practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/cehrs-mobile.png", desktop: "/landing/cehrs-desktop.png" }}
           />
         </div>

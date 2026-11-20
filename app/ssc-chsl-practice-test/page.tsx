@@ -127,7 +127,7 @@ export default function SscChslLandingPage() {
           <ExamLandingHero
             dashboardHref="/ssc-chsl/dashboard"
             shortName="SSC CHSL"
-            subtitle="232 original Tier 1 questions on English, reasoning, maths and GK. Tuned for mobile. Free to start, no account needed."
+            subtitle="232 SSC CHSL Tier 1 questions on English, reasoning, maths and GK. Free to start, no account needed."
             shots={{ mobile: "/landing/sscchsl-mobile.png", desktop: "/landing/sscchsl-desktop.png" }}
           />
         </div>

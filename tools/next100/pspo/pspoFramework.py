@@ -50,7 +50,7 @@ ITEMS = [
     S(1, 3, "Empiricism",
       "Usage data from the last release shows a new feature is rarely used. What is the best next step for the Product Owner?",
       ["Inspect why, then adapt the Product Backlog",
-       "Promote the feature to raise its usage",
+       "Discuss it at the next Sprint Retrospective",
        "Remove the feature in the next release",
        "Wait one more release for clearer data"],
       "Empiricism means making decisions on what is observed. The Product Owner inspects the evidence and adapts the Product Backlog rather than following a plan that the data no longer supports."),

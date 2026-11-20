@@ -232,6 +232,6 @@ ITEMS = [
       ["Run a small experiment to test each idea",
        "Pick the one with the stronger business case",
        "Ask key customers which they prefer",
-       "Fund the cheaper idea and see"],
+       "Order both by value and start with one"],
       "Without evidence both ideas are assumptions. A small experiment tests the hypothesis cheaply before larger investment, as EBM recommends."),
 ]

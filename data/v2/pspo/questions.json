@@ -226,7 +226,7 @@
       "To reduce change requests later",
       "To deliver the value they are seeking",
       "To agree their priorities in advance of work",
-      "To report progress in their terms"
+      "To set the Sprint Goal on their behalf"
     ],
     "correct": [
       1
@@ -871,7 +871,7 @@
       "Inspect why, then adapt the Product Backlog",
       "Remove the feature in the next release",
       "Wait one more release for clearer data",
-      "Promote the feature to raise its usage"
+      "Discuss it at the next Sprint Retrospective"
     ],
     "correct": [
       0
@@ -930,7 +930,7 @@
     "stem": "A sponsor asks for a feature the Product Owner thinks adds little value. What is the best response?",
     "options": [
       "Add it near the top to keep the sponsor",
-      "Ask the Developers to estimate it first",
+      "Let the Sprint Review attendees decide",
       "Share the evidence; keep it low or out",
       "Build a small version to keep goodwill"
     ],
@@ -1769,7 +1769,7 @@
     "stem": "A stakeholder group is affected by the product but has never been asked for input. What should the Product Owner do?",
     "options": [
       "Ask the sponsor to speak for them",
-      "Include them at the next release",
+      "Invite them to the Daily Scrum",
       "Find ways to learn their needs",
       "Infer their needs from the team's experience"
     ],
@@ -2040,7 +2040,7 @@
       "Fix the issues in the current Sprint",
       "Find out why, then adapt the backlog",
       "Put their complaints at the top of the backlog",
-      "Escalate to the sponsor for direction"
+      "Raise it at the next Daily Scrum"
     ],
     "correct": [
       1
@@ -4009,7 +4009,7 @@
     "options": [
       "Trust the usage data and drop X",
       "Test X cheaply before building it all",
-      "Run a bigger survey before deciding",
+      "Order X by the value users stated",
       "Build X, as users asked for it directly"
     ],
     "correct": [
@@ -4118,7 +4118,7 @@
       "Ask key customers which they prefer",
       "Run a small experiment to test each idea",
       "Pick the one with the stronger business case",
-      "Fund the cheaper idea and see"
+      "Order both by value and start with one"
     ],
     "correct": [
       1

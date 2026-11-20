@@ -101,6 +101,7 @@ export const TEACHES: Record<string, string> = {
   phleb: "a phlebotomy program",
   ccma: "a medical assistant program",
   cet: "an EKG technician program",
+  cct: "a cardiographic or EKG technician program",
   danb: "a dental assisting program",
   cpr: "CPR and first aid classes",
   ukfaw: "First Aid at Work courses",

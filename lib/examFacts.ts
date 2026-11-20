@@ -432,6 +432,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
     source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
   },
+  cct: {
+    answer:
+      "The Certified Cardiographic Technician (CCT) exam is Cardiovascular Credentialing International's (CCI) credential for ECG, Holter and stress test technicians. It is a two-hour computer-based exam of 130 questions, 110 scored and 20 unscored, taken at Pearson VUE test centers. CCI weights it as rhythm analysis 40%, analyzing the 12-lead ECG 22%, performing the resting ECG 14%, pre-procedural activities 10%, stress tests 10% and ambulatory monitoring 4%. Scores run from 0 to 900 and 650 passes, which is not a percentage. Applicants need a high school diploma or GED plus a cardiovascular or allied health program, related work experience, or a science or health degree.",
+    rows: [
+      { label: "Questions", value: "130 (110 scored, 20 unscored)" },
+      { label: "Time", value: "2 hours (1 hour 50 minutes for questions)" },
+      { label: "Passing score", value: "650 on a 0 to 900 scale" },
+      { label: "Largest area", value: "Rhythm analysis, 40%" },
+      { label: "Item types", value: "Single answer, multiple response, hot spot, drag and place" },
+      { label: "Eligibility", value: "Diploma or GED plus a program, related work or a science degree" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Renewal", value: "Every 3 years with 16 CEUs after the first renewal" },
+      { label: "Given by", value: "Cardiovascular Credentialing International (CCI)" },
+    ],
+    basedOn: "CCI's CCT credential page and CCT Examination Overview (June 2022), checked November 2026",
+    source: { name: "CCI: Certified Cardiographic Technician (CCT)", url: "https://cci-online.org/credentials/certified-cardiographic-technician/" },
+  },
   excpt: {
     answer:
       "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",

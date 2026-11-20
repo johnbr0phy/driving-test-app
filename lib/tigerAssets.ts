@@ -88,6 +88,7 @@ const BORROWED_SETS: Record<string, string> = {
   excpt: "ptcb",
   contractorlaw: "osha",
   natecore: "epa608",
+  waterop: "epa608",
   r410a: "epa608",
   backflow: "caplumb",
   pesticide: "epa608",

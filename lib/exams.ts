@@ -25162,6 +25162,71 @@ const trapper: ExamConfig = {
     analyticsKey: "trapper",
   },
 };
+const waterop: ExamConfig = {
+  id: "waterop",
+  stateCode: "WATEROP",
+  idBase: 44100,
+  slug: "/water-treatment-operator",
+  landingPath: "/water-treatment-operator-practice-test",
+  name: "Water Treatment Operator Class I Practice Test",
+  shortName: "Water Treatment Class I",
+  examLabel: "water treatment operator Class I exam",
+  fullName: "Water Treatment Operator Class I certification exam (WPI/ABC standardized exam)",
+  questionIdPrefix: "WATEROP-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Water Professionals International (formerly ABC) Need-to-Know Criteria, Water Treatment
+  // Operator Class I, copyright 2025 (read 2026-11-19 from the copy ADEM hosts): 100 scored
+  // questions plus up to 10 pretest; Treatment Process 31, Laboratory Analysis 16, Equipment
+  // Operation and Maintenance 26, Source Water Characteristics 15, Security, Safety, and
+  // Administrative Procedures 12; 10% calculation items. Scaled to 50: treatment 16 (clarify 8,
+  // disinfect 8), lab 8, equipment 13 (pumps 7, valves/storage/controls 6), source 7, safety 6.
+  // Who certifies and the pass mark vary by state (70% in North Carolina and many others);
+  // 70% is the readiness line. Facts from 40 CFR 141/143/136, OSHA 1910.146/147/1000, EPA
+  // guidance manuals and DOE's pumping sourcebook. All items original.
+  blueprint: {
+    wtoClarify: 8,
+    wtoDisinfect: 8,
+    wtoLab: 8,
+    wtoPumps: 7,
+    wtoEquip: 6,
+    wtoSource: 7,
+    wtoSafety: 6,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 44101, name: "Coagulation, Settling & Filtration", categories: ["wtoClarify"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 44102, name: "Disinfection & Chemical Feed", categories: ["wtoDisinfect"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 44103, name: "Laboratory Analysis", categories: ["wtoLab"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 44104, name: "Equipment Operation & Maintenance", categories: ["wtoPumps", "wtoEquip"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 5, id: 44105, name: "Source Water & Safety", categories: ["wtoSource", "wtoSafety"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    wtoClarify: "Coagulation, Settling & Filtration",
+    wtoDisinfect: "Disinfection & Chemical Feed",
+    wtoLab: "Laboratory Analysis",
+    wtoPumps: "Pumps, Motors & Power",
+    wtoEquip: "Valves, Storage & Controls",
+    wtoSource: "Source Water Characteristics",
+    wtoSafety: "Security, Safety & Administration",
+  },
+  copy: {
+    guestPrompt: "to save your water treatment operator progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets in the Need-to-Know Criteria's order: treatment, lab, equipment, source water and safety. Water math is worked step by step. Missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the Class I exam, 70% readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Coagulation, Settling & Filtration.",
+      "Master each set, then test.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Fix the misses, then retake.",
+      "All done. Book your Class I water exam.",
+    ],
+    sourceLine: "Based on WPI's (formerly ABC's) Water Treatment Operator Class I Need-to-Know Criteria and formula table, EPA drinking water rules and OSHA safety rules. Original questions. Not affiliated with Water Professionals International.",
+    analyticsKey: "waterop",
+  },
+};
 const natecore: ExamConfig = {
   id: "natecore",
   stateCode: "NATECORE",
@@ -25361,7 +25426,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, r410a, backflow, pesticide, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
+export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, waterop, r410a, backflow, pesticide, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

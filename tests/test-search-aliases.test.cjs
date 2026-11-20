@@ -477,9 +477,6 @@ const CASES = [
   ["rhia exam", "US", "rhia"],
   ["registered health information administrator", "US", "rhia"],
   ["ahima rhia", "US", "rhia"],
-];
-
-for (const [q, region, id] of CASES) {
   ["limited scope x-ray", "US", "lmrt"],
   ["limited scope radiography", "US", "lmrt"],
   ["bxmo", "US", "lmrt"],

@@ -86,6 +86,7 @@ const BORROWED_SETS: Record<string, string> = {
   ea2: "cpareg",
   ea3: "cpareg",
   excpt: "ptcb",
+  cct: "cet",
   contractorlaw: "osha",
   natecore: "epa608",
   r410a: "epa608",
@@ -96,6 +97,8 @@ const BORROWED_SETS: Record<string, string> = {
   ieplumbt2: "caplumb",
   crc: "cpc",
   cpb: "cpc",
+  coc: "cpc",
+  lmrt: "arrt",
   cbcs: "cpc",
   hha: "cna",
   istqb: "itil",
@@ -118,7 +121,9 @@ const BORROWED_SETS: Record<string, string> = {
   ascpmlt: "htl",
   aufirearmsnsw: "capal",
   nzham: "ham",
+  hamextra: "ham",
   cahambasic: "ham",
+  hamgeneral: "ham",
   cadc: "nce",
   nzdrone: "part107",
   cadronebasic: "part107",
@@ -215,13 +220,14 @@ const BORROWED_SETS: Record<string, string> = {
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
   // AHIMA CCA shares the CPC medical coding tiger.
   cca: "cpc",
+  rhit: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
   cma: "ccma", rma: "ccma", nbdhe: "danb", inbde: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", sfpd1: "aws", sfappbuilder: "aws", cfal1: "series7",
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
-  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
+  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", rhia: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",

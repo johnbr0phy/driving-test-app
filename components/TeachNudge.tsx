@@ -44,6 +44,7 @@ const TEACHER_LED = new Set([
   "ascpmlt",
   "nzham",
   "cahambasic",
+  "hamgeneral",
   "cadc",
   "ascppbt",
   "rpt",
@@ -102,14 +103,14 @@ const TEACHER_LED = new Set([
   "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "epa609", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
-  "realestate", "insurance", "pnc", "ham", "civics",
+  "realestate", "insurance", "pnc", "ham", "hamextra", "civics",
   "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
   "caauto", "caplumb", "cacarp", "caweld", "carscook", "carshair", "cawhmis", "caguard", "caabguard",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
-  "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
+  "rbt", "cpc", "cca", "rhit", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "cobit", "prince2", "psm", "capm",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
@@ -125,7 +126,7 @@ const TEACHER_LED = new Set([
   // Next-20 batch B (November 2026)
   "cma", "rma", "nbdhe", "inbde", "nptepta", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
-  "aswbclin", "phr", "ccs", "rdexam", "cemap",
+  "aswbclin", "phr", "ccs", "rhia", "rdexam", "cemap",
   // Build run (November 2026)
   "fpc",
   // Next-20 batch (November 2026)
@@ -146,6 +147,7 @@ const TEACHER_LED = new Set([
   "nailtech",
   "sfpd1", "sfappbuilder",
   "excpt",
+  "cct",
   "contractorlaw",
   "natecore",
   "r410a",
@@ -155,7 +157,9 @@ const TEACHER_LED = new Set([
   "trapper",
   "ieplumbt2",
   "cpb",
+  "coc",
   "cbcs",
+  "lmrt",
   "hha",
   "ctec",
   "aswbbach",

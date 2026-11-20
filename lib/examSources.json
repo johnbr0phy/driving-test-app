@@ -507,6 +507,11 @@
   "https://www.ahima.org/media/ecklaulp/css-exam-content-outline-1-1.pdf",
   "https://www.ahima.org/media/4vxpzr3q/ccs_2026_codebook_list.pdf"
  ],
+ "cct": [
+  "https://cci-online.org/credentials/certified-cardiographic-technician/",
+  "https://cci-online.org/wp-content/uploads/2022/12/CCI_CCT_Exam_Overview_112018-1.pdf",
+  "https://cci-online.org/wp-content/uploads/2022/12/CCI-Applicant-Handbook-Dec2022.pdf"
+ ],
  "cdcfib": [
   "https://cdcfib.gov.ng",
   "https://nairametrics.com/2025/11/26/cdcfib-2025-recruitment-over-200000-candidates-fail-computer%e2%80%91based-test",
@@ -569,6 +574,11 @@
   "https://www.isaca.org/credentialing/cobit/cobit-foundation",
   "https://www.isaca.org/credentialing/cobit-7-foundation",
   "https://www.isaca.org/resources/cobit"
+ ],
+ "coc": [
+  "https://aapc.com/certifications/coc/taking-the-coc-exam",
+  "https://www.aapc.com/certifications/coc",
+  "https://www.cms.gov/files/document/fy-2026-icd-10-cm-coding-guidelines.pdf"
  ],
  "cogat": [
   "https://riversideinsights.com/hubfs/CogAT/CogAT%20Overview%20Brochure.pdf",
@@ -930,6 +940,16 @@
  "gulfrn": [
   "https://dhp.moph.gov.qa/en/Pages/QualifyingExamination.aspx"
  ],
+ "hamextra": [
+  "https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release",
+  "https://ncvec.org/downloads/2024-2028%20Extra%20Class%20Question%20Pool%20and%20Syllabus%20Public%20Release%20with%204th%20Errata%20Feb%204%202026.docx",
+  "https://www.arrl.org/question-pools"
+ ],
+ "hamgeneral": [
+  "https://web.archive.org/web/20260903040827/https://ncvec.org/index.php/2023-2027-general-question-pool-release",
+  "https://web.archive.org/web/20260903040827id_/https://ncvec.org/downloads/General%20Class%20Pool%20and%20Syllabus%202023-2027%20Public%20Release%20with%206th%20Errata%20Feb%204%202026.docx",
+  "https://www.arrl.org/question-pools"
+ ],
  "hha": [
   "https://www.ecfr.gov/api/versioner/v1/full/2026-11-01/title-42.xml?part=484&section=484.80",
   "https://doh.dc.gov/sites/default/files/dc/sites/doh/publication/attachments/2017%20HHA%20Candidate%20Handbook.pdf",
@@ -1196,6 +1216,11 @@
   "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/",
   "https://www.gov.nl.ca/dgsnl/files/insurance-pdf-memo-llqp-2018.pdf",
   "https://lautorite.qc.ca/en/becoming-a-professional/insurance-of-persons-and-group-insurance-of-persons/examinations/pilot-exam-questions"
+ ],
+ "lmrt": [
+  "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/7deaf7d9-9770-427b-b9c6-3e6a555020cc/LIM_CSTI_2023.pdf",
+  "https://www.arrt.org/Content-Specifications",
+  "https://www.arrt.org/news/article/2026/04/29/proposed-changes-limited-scope-documents-2026"
  ],
  "lsat": [
   "https://www.lsac.org/lsat/register-lsat/accommodations/specifications-lsat-and-lsat-argumentative-writing",
@@ -1680,6 +1705,16 @@
   "https://www.ncsbn.org/public-files/2025_rexpn_test-plan_final.pdf",
   "https://www.ncsbn.org/publications/2022-rexpn-test-plan",
   "https://ncsbn.org/public-files/webinars/2025_REx-PN_Webinar_Test-Plan.pdf"
+ ],
+ "rhia": [
+  "https://www.ahima.org/media/f5adcqxb/rhia_contentoutline_begin10-01-2023_final.pdf",
+  "https://www.ahima.org/certification/rhia/",
+  "https://www.ahima.org/media/1d0bdghm/revised-candidate-guide-2-24-25.pdf"
+ ],
+ "rhit": [
+  "https://www.ahima.org/certification/rhit/",
+  "https://www.ahima.org/media/x3opwug4/rhit_contentoutline_09_2023_final-1.pdf",
+  "https://www.ahima.org/media/ljnh1yeo/rhit_crosswalk_2022_final.pdf"
  ],
  "rma": [
   "https://americanmedtech.org/Portals/0/PDF/Get%20Cert/Prepare%20for%20Exam/RMA-Content.pdf",

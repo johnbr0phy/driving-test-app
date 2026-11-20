@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "hamgeneral",
+      "date": "2027-07-01",
+      "kind": "outline",
+      "what": "The NCVEC 2027-2031 General (Element 3) question pool replaces the 2023-2027 pool.",
+      "action": "Parse the new pool into tools/next100/hamgeneral/pool.json, write explanations for new or changed questions, rebuild, and update the landing, facts and CLAUDE.md.",
+      "source": "https://www.arrl.org/question-pools"
+    },
+    {
       "exam": "ccna",
       "date": "2027-02-03",
       "kind": "outline",
@@ -17,6 +25,14 @@
       "what": "ARRT Radiography content specifications revised: 31/46/51/72, CR removed.",
       "action": "Re-weight to 31/46/51/72 and retire ARRT-EQP-014.",
       "source": "https://www.arrt.org/pages/arrt-reference-documents/by-document-type/examination-content-specifications"
+    },
+    {
+      "exam": "lmrt",
+      "date": "2028-01-01",
+      "kind": "outline",
+      "what": "ARRT Limited Scope content specifications revised: CR removed, sterile technique and needles removed, AEC, pregnancy, Image Wisely and Image Gently added, mandible added to skull/sinuses.",
+      "action": "Retire LMRT-EQP-015 (CR plate), add mandible items to skull/sinuses, check positions against the new Attachment A.",
+      "source": "https://www.arrt.org/news/article/2026/04/29/proposed-changes-limited-scope-documents-2026"
     },
     {
       "exam": "nce",

@@ -287,6 +287,36 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "42 CFR 484.80, 484.50, 484.60 and 484.70 on eCFR, the DC Board of Nursing HHA candidate handbook and Credentia's DC HHA help center, and NC DHHS in-home aide testing directions, checked November 2026",
     source: { name: "eCFR: 42 CFR 484.80 Home health aide services", url: "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.80" },
   },
+  coc: {
+    answer:
+      "The Certified Outpatient Coder (COC) exam, formerly CPC-H, is AAPC's certification exam for coders who work on the facility side of hospital outpatient departments and ambulatory surgery centers. It has 100 multiple-choice questions, at least 70 of which must be answered, in one four-hour sitting, and an overall score of 70% passes, so more than 30 wrong answers fails. Approved books are the current AMA CPT Professional Edition and current ICD-10-CM and HCPCS Level II books, and a calculator is built into the testing platform. The sections are surgery and modifiers 22 questions, ICD-10-CM 15, payment methodologies 13, CPT 13, cases 10, medical terminology 7, anatomy 7, HCPCS Level II 7, coding guidelines 3 and compliance 3. It is taken online with a live remote proctor or at a testing center.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, at least 70 answered" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% overall" },
+      { label: "Code books", value: "CPT Professional, ICD-10-CM, HCPCS Level II (current year)" },
+      { label: "Biggest section", value: "Surgery and modifiers, 22 questions" },
+      { label: "Where", value: "Online with a live remote proctor or at a testing center" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the COC exam page and COC certification page, checked November 2026",
+    source: { name: "AAPC: Taking the COC exam", url: "https://www.aapc.com/certifications/coc/taking-the-coc-exam" },
+  },
+  lmrt: {
+    answer:
+      "The Limited Scope of Practice in Radiography exam is an ARRT exam given for state licensing agencies to people who will take x-rays of selected body parts without being full radiographers, such as limited x-ray machine operators in clinics and podiatry offices. It is delivered in modules: every candidate takes the Core module (100 scored questions plus 15 unscored, 1 hour 55 minutes) on patient care, radiation safety and image production, plus the procedure modules the state assigns: Chest (20 questions), Extremities (25), Skull/Sinuses (20), Spine (25) and Podiatric (20), each with 5 extra unscored questions. ARRT reports the number correct in each module to the state, and the state decides whether you pass. Passing is not an ARRT credential. It is taken at Pearson VUE test centers.",
+    rows: [
+      { label: "Core module", value: "100 scored + 15 pilot questions, 1 hr 55 min" },
+      { label: "Core content", value: "Patient Care 18, Safety 40, Image Production 42" },
+      { label: "Procedure modules", value: "Chest 20, Extremities 25, Skull/Sinuses 20, Spine 25, Podiatric 20 (each + 5 pilot)" },
+      { label: "Which modules", value: "Core plus the modules your state assigns" },
+      { label: "Scoring", value: "Number correct per module, sent to the state; the state sets the pass mark" },
+      { label: "Where", value: "Pearson VUE test centers, no breaks between modules" },
+      { label: "Given by", value: "ARRT, on behalf of state licensing agencies" },
+    ],
+    basedOn: "ARRT Limited Scope of Practice in Radiography content specifications (in effect January 1, 2023) and the 2026 Handbook for State Candidates, checked November 2026",
+    source: { name: "ARRT: Examination content specifications", url: "https://www.arrt.org/Content-Specifications" },
+  },
   cbcs: {
     answer:
       "The Certified Billing and Coding Specialist (CBCS) exam is the National Healthcareer Association's (NHA) certification exam for medical billing and coding specialists. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 3 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2020 job analysis, has four domains: Billing and Reimbursement 33 items, Coding and Coding Guidelines 32, Insurance Eligibility and Other Payer Requirements 20, and The Revenue Cycle and Regulatory Compliance 15. Since September 24, 2024 code books are not allowed; each coding question shows the information it needs. It is taken at a school, a PSI test center or by live remote proctoring.",
@@ -431,6 +461,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
     source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
+  },
+  cct: {
+    answer:
+      "The Certified Cardiographic Technician (CCT) exam is Cardiovascular Credentialing International's (CCI) credential for ECG, Holter and stress test technicians. It is a two-hour computer-based exam of 130 questions, 110 scored and 20 unscored, taken at Pearson VUE test centers. CCI weights it as rhythm analysis 40%, analyzing the 12-lead ECG 22%, performing the resting ECG 14%, pre-procedural activities 10%, stress tests 10% and ambulatory monitoring 4%. Scores run from 0 to 900 and 650 passes, which is not a percentage. Applicants need a high school diploma or GED plus a cardiovascular or allied health program, related work experience, or a science or health degree.",
+    rows: [
+      { label: "Questions", value: "130 (110 scored, 20 unscored)" },
+      { label: "Time", value: "2 hours (1 hour 50 minutes for questions)" },
+      { label: "Passing score", value: "650 on a 0 to 900 scale" },
+      { label: "Largest area", value: "Rhythm analysis, 40%" },
+      { label: "Item types", value: "Single answer, multiple response, hot spot, drag and place" },
+      { label: "Eligibility", value: "Diploma or GED plus a program, related work or a science degree" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Renewal", value: "Every 3 years with 16 CEUs after the first renewal" },
+      { label: "Given by", value: "Cardiovascular Credentialing International (CCI)" },
+    ],
+    basedOn: "CCI's CCT credential page and CCT Examination Overview (June 2022), checked November 2026",
+    source: { name: "CCI: Certified Cardiographic Technician (CCT)", url: "https://cci-online.org/credentials/certified-cardiographic-technician/" },
   },
   excpt: {
     answer:
@@ -1476,6 +1523,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Remote Pilot Airman Certification Standards",
     source: { name: "FAA", url: "https://www.faa.gov/uas/commercial_operators" },
   },
+  hamgeneral: {
+    answer:
+      "The ham radio General exam (FCC Element 3) has 35 multiple-choice questions, and 26 correct (about 74%) passes. Every question comes word for word from the public NCVEC pool; the 2023-2027 General pool runs from July 1, 2023 to June 30, 2027. You need a Technician license (Element 2) too, and a team of three volunteer examiners holding Advanced or Extra licenses gives it.",
+    rows: [
+      { label: "Questions", value: "35, one from each pool group" },
+      { label: "Passing score", value: "26 correct (about 74%)" },
+      { label: "Question pool", value: "NCVEC 2023-2027 General, 423 live questions" },
+      { label: "Also needed", value: "Element 2 (Technician)" },
+      { label: "Given by", value: "Teams of 3 volunteer examiners" },
+    ],
+    basedOn: "the official NCVEC 2023-2027 General pool (6th errata, February 2026)",
+    source: { name: "FCC 47 CFR 97.503", url: "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-F/section-97.503" },
+    tigertest:
+      "Tigertest has 418 of the 423 live General pool questions with explanations (the 5 that need the G7-1 schematic are left out), free to start with no account required.",
+  },
   ham: {
     answer:
       "The ham radio Technician exam (FCC Element 2) has 35 multiple-choice questions, and 26 correct (about 74%) passes. Every question comes word for word from the public NCVEC pool; the 2026-2030 pool runs from July 1, 2026 to June 30, 2030. Volunteer examiners give it, no Morse code is required, and the license lasts 10 years.",
@@ -1489,6 +1551,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "NCVEC", url: "https://www.ncvec.org" },
     tigertest:
       "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), free to start with no account required.",
+  },
+  hamextra: {
+    answer:
+      "The ham radio Amateur Extra exam (FCC Element 4) has 50 multiple-choice questions, and 37 correct (74%) passes. The exam takes one question from each of the 50 groups in the public NCVEC pool, word for word; the 2024-2028 pool runs from July 1, 2024 to June 30, 2028. Volunteer examiners give it, and you need a General license or exam credit to take the upgrade. The Extra class carries every amateur privilege on every band.",
+    rows: [
+      { label: "Questions", value: "50, one from each pool group" },
+      { label: "Passing score", value: "37 correct (74%)" },
+      { label: "Question pool", value: "NCVEC 2024-2028 Extra pool (599 questions after the errata)" },
+      { label: "Given by", value: "Volunteer examiner teams" },
+    ],
+    basedOn: "the official NCVEC 2024-2028 Extra class pool, 4th errata (February 4, 2026)",
+    source: { name: "NCVEC", url: "https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release" },
+    tigertest:
+      "Tigertest has 572 of the 599 official pool questions with original explanations (the 27 that need a pool figure are left out) in five 50-question exams, free to start with no account required.",
   },
   epa609: {
     answer: "EPA Section 609 certification covers motor vehicle air-conditioning refrigerant handling, recovery equipment, environmental effects and applicable rules. EPA-approved programs administer their own tests. MACS online/home testing uses 25 multiple-choice questions, is untimed and open book, and requires 21 correct (84%); classroom testing differs. Tigertest provides 100 original practice questions, not approved training or certification.",
@@ -3140,6 +3216,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "AAPC's Taking the CPC Exam page, checked October 2026",
     source: { name: "AAPC: Taking the CPC Exam", url: "https://www.aapc.com/certifications/cpc/taking-the-cpc-exam" },
+  },
+  rhit: {
+    answer:
+      "The RHIT is AHIMA's Registered Health Information Technician exam, the credential for health information technicians who keep medical records complete and secure, release them lawfully, code and abstract data and support the revenue cycle. It has 150 multiple-choice questions, 130 scored and 20 unscored pretest items, in 3 hours 30 minutes at a Pearson VUE test center, and you can flag questions and go back. The passing score is a scaled 300. It covers six domains: data content and information governance (19 to 25 percent), access, disclosure, privacy and security, data analytics, revenue cycle management (19 to 25 percent), compliance and leadership. You qualify by completing an associate-level CAHIIM-accredited HIM program.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice (130 scored, 20 pretest)" },
+      { label: "Time", value: "3 hours 30 minutes" },
+      { label: "Pass mark", value: "Scaled score of 300" },
+      { label: "Navigation", value: "Move between questions and flag for review" },
+      { label: "Biggest domains", value: "Data Content and Revenue Cycle, 19-25% each" },
+      { label: "Eligibility", value: "Associate-level CAHIIM-accredited HIM program" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "AHIMA" },
+    ],
+    basedOn: "AHIMA's RHIT certification page and the RHIT Content Outline (effective 10/01/2022), checked November 2026",
+    source: { name: "AHIMA: Registered Health Information Technician (RHIT)", url: "https://www.ahima.org/certification/rhit/" },
   },
   cca: {
     answer:
@@ -7075,7 +7167,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "AHIMA's CCS certification page, the CCS Exam Content Outline (effective May 1, 2024) and the 2026 required code book list, checked November 2026",
     source: { name: "AHIMA: Certified Coding Specialist (CCS)", url: "https://ahima.org/certification/ccs/" },
+  },  rhia: {
+    answer:
+      "The RHIA is AHIMA's Registered Health Information Administrator exam, the credential for health information management leaders who run data governance, privacy and release of information, revenue cycle work and HIM departments. It has 150 questions, 130 scored and 20 unscored pretest items, in 3 hours 30 minutes at a Pearson VUE test center, and you can flag questions and move between them. The passing score is a scaled 300. Its five domains are Data and Information Governance (17 to 20 percent), Compliance with Access, Use, and Disclosure (15 to 18 percent), Data Analytics and Informatics (23 to 26 percent), Revenue Cycle Management (20 to 23 percent) and Management and Leadership (23 to 26 percent). Candidates must graduate from a CAHIIM-accredited HIM bachelor's, master's or post-baccalaureate certificate program.",
+    rows: [
+      { label: "Questions", value: "150 (130 scored, 20 pretest)" },
+      { label: "Time", value: "3 hours 30 minutes, flagging allowed" },
+      { label: "Pass mark", value: "Scaled score of 300" },
+      { label: "Biggest domains", value: "Data Analytics and Informatics, and Management and Leadership, 23-26% each" },
+      { label: "Eligibility", value: "CAHIIM-accredited HIM bachelor's, master's or post-baccalaureate certificate" },
+      { label: "Retakes", value: "New application and a 30-day wait" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Run by", value: "AHIMA" },
+    ],
+    basedOn: "AHIMA's RHIA certification page and the RHIA Exam Content Outline (effective October 1, 2023), checked November 2026",
+    source: { name: "AHIMA: Registered Health Information Administrator (RHIA)", url: "https://www.ahima.org/certification/rhia/" },
   },
+
   rdexam: {
     answer:
       "The Registration Examination for Dietitians (the RD exam) is the Commission on Dietetic Registration's credentialing exam for the Registered Dietitian (RD) or Registered Dietitian Nutritionist (RDN) credential. It is computer adaptive and taken year-round at Pearson VUE test centers: each candidate answers between 125 and 145 four-option questions (100 to 120 scored plus 25 unscored pretest) in 3 hours, with no going back to earlier questions. Scores are scaled from 1 to 50, and 25 is the minimum passing score. Under the test specifications in force from January 1, 2027 the domains are Fundamentals of Dietetics Practice 23%, Community and Public Health Nutrition 22%, Human Nutrition and Medical Nutrition Therapy 40% and Food Science and Food Systems 15%; exams through December 31, 2026 follow the 2022 to 2026 outline.",

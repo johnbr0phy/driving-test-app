@@ -5044,6 +5044,19 @@
     --brand-border-light: 191 27% 89%;
     --brand-gradient-to: 205 60% 96%;
   }
+  /* ARRT Limited Scope theme: deep indigo (260 50% 18%) */
+  [data-theme="lmrt"] {
+    --brand: 260 50% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 260 40% 96%;
+    --brand-hover: 260 50% 14%;
+    --brand-dark: 260 50% 12%;
+    --brand-darker: 260 45% 8%;
+    --brand-muted: 260 25% 70%;
+    --brand-border: 260 25% 80%;
+    --brand-border-light: 260 25% 89%;
+    --brand-gradient-to: 274 40% 96%;
+  }
 
   /* NCE (National Counselor Examination) theme */
   [data-theme="nce"] {
@@ -5308,6 +5321,19 @@
     --brand-border: 357 25% 78%;
     --brand-border-light: 357 25% 88%;
     --brand-gradient-to: 12 45% 95%;
+  }
+
+  [data-theme="rhit"] {
+    --brand: 280 55% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 45% 95%;
+    --brand-hover: 280 55% 14%;
+    --brand-dark: 280 55% 12%;
+    --brand-darker: 280 50% 8%;
+    --brand-muted: 280 25% 68%;
+    --brand-border: 280 30% 78%;
+    --brand-border-light: 280 30% 88%;
+    --brand-gradient-to: 295 45% 95%;
   }
 
   [data-theme="mace"] {
@@ -5627,6 +5653,19 @@
     --brand-border-light: 287 35% 90%;
     --brand-gradient-to: 300 60% 96%;
   }
+  /* CCT (CCI) theme: deep crimson magenta */
+  [data-theme="cct"] {
+    --brand: 335 90% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 335 60% 96%;
+    --brand-hover: 335 90% 14%;
+    --brand-dark: 335 90% 12%;
+    --brand-darker: 335 85% 8%;
+    --brand-muted: 335 35% 70%;
+    --brand-border: 335 35% 80%;
+    --brand-border-light: 335 30% 90%;
+    --brand-gradient-to: 345 55% 96%;
+  }
   /* Contractor Business and Law theme: muted dusty rose */
   [data-theme="contractorlaw"] {
     --brand: 344 25% 42%;
@@ -5743,6 +5782,19 @@
     --brand-border: 252 60% 82%;
     --brand-border-light: 252 60% 90%;
     --brand-gradient-to: 266 80% 97%;
+  }
+  /* COC (AAPC) Certified Outpatient Coder theme: dark muted plum rose (329 30% 20%) */
+  [data-theme="coc"] {
+    --brand: 329 30% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 329 30% 97%;
+    --brand-hover: 329 30% 16%;
+    --brand-dark: 329 30% 14%;
+    --brand-darker: 329 30% 9%;
+    --brand-muted: 329 20% 72%;
+    --brand-border: 329 25% 82%;
+    --brand-border-light: 329 25% 90%;
+    --brand-gradient-to: 339 30% 97%;
   }
   /* CBCS (NHA) Certified Billing and Coding Specialist theme: muted orchid rose */
   [data-theme="cbcs"] {
@@ -6228,6 +6280,19 @@
     --brand-gradient-to: 175 35% 96%;
   }
 
+  [data-theme="rhia"] {
+    --brand: 294 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 294 45% 96%;
+    --brand-hover: 294 85% 16%;
+    --brand-dark: 294 85% 14%;
+    --brand-darker: 294 85% 10%;
+    --brand-muted: 294 30% 70%;
+    --brand-border: 294 35% 80%;
+    --brand-border-light: 294 35% 89%;
+    --brand-gradient-to: 276 45% 96%;
+  }
+
   /* RD exam (CDR Registration Examination for Dietitians) theme */
   [data-theme="rdexam"] {
     --brand: 91 20% 26%;
@@ -6604,6 +6669,19 @@
     --brand-border-light: 148 25% 88%;
     --brand-gradient-to: 150 70% 95%;
   }
+  /* FCC General (Element 3) theme: dark olive amber, a step from the Technician exam's amber */
+  [data-theme="hamgeneral"] {
+    --brand: 60 70% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 60 45% 95%;
+    --brand-hover: 60 70% 14%;
+    --brand-dark: 60 70% 13%;
+    --brand-darker: 60 60% 9%;
+    --brand-muted: 60 25% 68%;
+    --brand-border: 60 30% 78%;
+    --brand-border-light: 60 25% 88%;
+    --brand-gradient-to: 50 40% 95%;
+  }
   /* Ontario Hunter Education theme: deep russet brown */
   [data-theme="cahunteron"] {
     --brand: 21 85% 20%;
@@ -6707,6 +6785,19 @@
     --brand-border: 193 15% 78%;
     --brand-border-light: 193 15% 88%;
     --brand-gradient-to: 208 30% 95%;
+  }
+
+  [data-theme="hamextra"] {
+    --brand: 325 85% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 325 60% 96%;
+    --brand-hover: 325 85% 14%;
+    --brand-dark: 325 85% 10%;
+    --brand-darker: 325 85% 6%;
+    --brand-muted: 325 30% 64%;
+    --brand-border: 325 35% 80%;
+    --brand-border-light: 325 30% 90%;
+    --brand-gradient-to: 325 60% 94%;
   }
 
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
@@ -11225,6 +11316,18 @@
     --brand-darker: 357 12% 78%;
   }
 
+  .dark [data-theme="rhit"] {
+    --brand: 280 55% 50%;
+    --brand-hover: 280 55% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 295 40% 11%;
+    --brand-border-light: 280 30% 24%;
+    --brand-border: 280 30% 34%;
+    --brand-muted: 280 25% 45%;
+    --brand-dark: 280 55% 65%;
+    --brand-darker: 280 50% 78%;
+  }
+
   .dark [data-theme="mace"] {
     --brand: 300 45% 49.5%;
     --brand-hover: 300 45% 41.5%;
@@ -11752,6 +11855,18 @@
     --brand-darker: 193 30% 78%;
   }
 
+  .dark [data-theme="rhia"] {
+    --brand: 294 85% 46.6%;
+    --brand-hover: 294 85% 38.6%;
+    --brand-light: 294 45% 13%;
+    --brand-gradient-to: 276 40% 11%;
+    --brand-border-light: 294 35% 24%;
+    --brand-border: 294 35% 34%;
+    --brand-muted: 294 30% 45%;
+    --brand-dark: 294 85% 65%;
+    --brand-darker: 294 85% 78%;
+  }
+
   .dark [data-theme="rdexam"] {
     --brand: 91 20% 40.4%;
     --brand-hover: 91 20% 32.4%;
@@ -12069,6 +12184,17 @@
     --brand-dark: 148 90% 65%;
     --brand-darker: 148 85% 78%;
   }
+  .dark [data-theme="hamgeneral"] {
+    --brand: 60 70% 27.9%;
+    --brand-hover: 60 70% 19.9%;
+    --brand-light: 60 45% 13%;
+    --brand-gradient-to: 50 40% 11%;
+    --brand-border-light: 60 25% 24%;
+    --brand-border: 60 30% 34%;
+    --brand-muted: 60 25% 45%;
+    --brand-dark: 60 70% 65%;
+    --brand-darker: 60 60% 78%;
+  }
   .dark [data-theme="cahunteron"] {
     --brand: 21 85% 42%;
     --brand-hover: 21 85% 34%;
@@ -12158,6 +12284,17 @@
     --brand-muted: 193 12% 45%;
     --brand-dark: 193 15% 65%;
     --brand-darker: 193 15% 78%;
+  }
+  .dark [data-theme="hamextra"] {
+    --brand: 325 85% 47.1%;
+    --brand-hover: 325 85% 39.1%;
+    --brand-light: 325 45% 13%;
+    --brand-gradient-to: 325 40% 11%;
+    --brand-border-light: 325 30% 24%;
+    --brand-border: 325 35% 34%;
+    --brand-muted: 325 30% 45%;
+    --brand-dark: 325 85% 65%;
+    --brand-darker: 325 85% 78%;
   }
   .dark [data-theme="afsp"] {
     --brand: 12 45% 49%;
@@ -12368,6 +12505,28 @@
     --brand-dark: 252 95% 70%;
     --brand-darker: 252 90% 78%;
   }
+  .dark [data-theme="coc"] {
+    --brand: 329 30% 50%;
+    --brand-hover: 329 30% 42%;
+    --brand-light: 329 30% 13%;
+    --brand-gradient-to: 339 30% 11%;
+    --brand-border-light: 329 25% 24%;
+    --brand-border: 329 25% 34%;
+    --brand-muted: 329 20% 45%;
+    --brand-dark: 329 30% 65%;
+    --brand-darker: 329 30% 78%;
+  }
+  .dark [data-theme="lmrt"] {
+    --brand: 260 50% 50%;
+    --brand-hover: 260 50% 42%;
+    --brand-light: 260 40% 13%;
+    --brand-gradient-to: 274 40% 11%;
+    --brand-border-light: 260 25% 24%;
+    --brand-border: 260 25% 34%;
+    --brand-muted: 260 25% 45%;
+    --brand-dark: 260 50% 65%;
+    --brand-darker: 260 45% 78%;
+  }
   .dark [data-theme="cbcs"] {
     --brand: 322 45% 50%;
     --brand-hover: 322 45% 42%;
@@ -12433,6 +12592,17 @@
     --brand-muted: 287 40% 45%;
     --brand-dark: 287 100% 65%;
     --brand-darker: 287 90% 78%;
+  }
+  .dark [data-theme="cct"] {
+    --brand: 335 90% 47.1%;
+    --brand-hover: 335 90% 39.1%;
+    --brand-light: 335 45% 13%;
+    --brand-gradient-to: 345 40% 11%;
+    --brand-border-light: 335 30% 24%;
+    --brand-border: 335 35% 34%;
+    --brand-muted: 335 35% 45%;
+    --brand-dark: 335 90% 65%;
+    --brand-darker: 335 85% 78%;
   }
 
 }

@@ -1,5 +1,5 @@
 // Question types
-export type QuestionType = "DISPATCH" | "CTEC" | "HHA" | "CBCS" | "FPC" | "TITLEAGENT" | "ASWBBACH" | "CRC" | "CPB" | "IEPLUMBT2" | "TRAPPER" | "BOWHUNTER" | "PESTICIDE" | "BACKFLOW" | "FRCIVIQUE" | "EPA609" | "REBROKER" | "FRVTC" | "CDM" | "ZAFIREARM" | "APPRAISER" | "NCCCO" | "SGSNB" | "NZBOAT" | "EA1" | "CPABAR" | "CPAISC" | "CEHRS" | "CPCTA" | "PANCE" | "CPATCP" | "AUFAWA" | "HSPACIS" | "MACE" | "NCMA" | "AUFAVIC" | "CMAA" | "CBSPD" | "ASCPMLT" | "AUFANSW" | "NZHAM" | "CADC" | "NZDRONE" | "CRFSC" | "ASCPPBT" | "RPT" | "HSPACHL" | "HSPACER" | "BCABA" | "BCBA" | "AUFAQLD" | "MBLEX" | "CCAF" | "ASE" | "UKGAS" | "UKBREGS" | "UKRBI" | "UKPLUMB" | "UKG3" | "UKWATER" | "PHNAT" | "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "RMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RDEXAM" | "CCRN" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "BEMOTO" | "BEVRACHT" | "BETOEL" | "BEFSMA" | "DKTEORI" | "DKMOTO" | "DKTRUCK" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "FIMOTO" | "FITRUCK" | "FIHYGIENE" | "FIHUNT" | "GRDRIVE" | "GRMOTO" | "GRCITIZEN" | "GRINSURE" | "GRSECURITY" | "RODRPCIV" | "ROCPI" | "ROTAXI" | "ROADMED" | "ROREZID" | "HUKRESZ" | "HUKRMOTO" | "HUGKI" | "HUELSOSEG" | "HUBIZT" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL" | "FGT" | "ITCILS" | "ITCELI" | "ITPATENTE" | "FRCODE" | "AAFCS" | "CEN" | "IEHCAP" | "UKDSC1" | "HKNURSE" | "BCRE" | "AERERA" | "NZRE" | "CACORE" | "CHTHEORY" | "QABAABAT" | "NZSECURITY" | "NCPT" | "SMARTSERVE" | "CAHUNTERON" | "INBDE" | "CABCGUARD" | "CAABGUARD" | "CAAIRBRAKE" | "CAHAIR" | "CACOOK" | "CADRONE" | "CAHAM" | "EA3" | "EA2" | "NAILTECH" | "AFSP" | "ESTH" | "ASCPHT" | "ASCPMLS" | "R410A" | "NATECORE" | "CONTRLAW" | "EXCPT" | "ITA2" | "ITCILSB2";
+export type QuestionType = "COC" | "LMRT" | "DISPATCH" | "CTEC" | "HHA" | "CBCS" | "FPC" | "TITLEAGENT" | "ASWBBACH" | "CRC" | "CPB" | "IEPLUMBT2" | "TRAPPER" | "BOWHUNTER" | "PESTICIDE" | "BACKFLOW" | "FRCIVIQUE" | "EPA609" | "REBROKER" | "FRVTC" | "CDM" | "ZAFIREARM" | "APPRAISER" | "NCCCO" | "SGSNB" | "NZBOAT" | "EA1" | "CPABAR" | "CPAISC" | "CEHRS" | "CPCTA" | "PANCE" | "CPATCP" | "AUFAWA" | "HSPACIS" | "MACE" | "NCMA" | "AUFAVIC" | "CMAA" | "CBSPD" | "ASCPMLT" | "AUFANSW" | "NZHAM" | "CADC" | "NZDRONE" | "CRFSC" | "ASCPPBT" | "RPT" | "HSPACHL" | "HSPACER" | "BCABA" | "BCBA" | "AUFAQLD" | "MBLEX" | "CCAF" | "ASE" | "UKGAS" | "UKBREGS" | "UKRBI" | "UKPLUMB" | "UKG3" | "UKWATER" | "PHNAT" | "Universal" | "State-Specific" | "CDL" | "CDLE" | "MOTO" | "CIVICS" | "P107" | "HAM" | "HAMG" | "HAMEXTRA" | "EPA608" | "CNA" | "PTCB" | "PHLEB" | "CCMA" | "CET" | "DANB" | "EMT" | "FOODMGR" | "REALESTATE" | "LIFEHEALTH" | "NOTARY" | "TEAS" | "AWSCCP" | "APLUS" | "FOODHANDLER" | "BOATING" | "HUNTER" | "SECPLUS" | "HESI" | "ASVAB" | "CPR" | "OSHA" | "FORKLIFT" | "ALCOHOL" | "ACCUPLACER" | "SECGUARD" | "LIFEGUARD" | "COSMO" | "PNC" | "VTNE" | "CAQC" | "UKLGV" | "AUQLD" | "AUSA" | "AUVIC" | "UKADI" | "UKCAR" | "UKPCV" | "CABC" | "AUNSW" | "UKMOTO" | "CAAB" | "CAON" | "CAMB" | "AUWA" | "UKSIA" | "UK18ED" | "CSCS" | "UKFOOD" | "UKAPLH" | "UKFAW" | "UKCARE" | "CAPAL" | "CAELEC" | "CAPSW" | "CASFA" | "CAWHMIS" | "CAGUARD" | "CAAUTO" | "CAPLUMB" | "CACARP" | "CAWELD" | "AUWHITE" | "AURSA" | "AURCG" | "AUFSS" | "AUFIRSTAID" | "AUFORKLIFT" | "AUWAH" | "UKLITU" | "CACIT" | "AUCIT" | "GULFRN" | "INRTO" | "NASM" | "RBT" | "CPC" | "CCA" | "RHIT" | "CPAFAR" | "CPAREG" | "NMLS" | "SERIES65" | "SERIES63" | "ASWB" | "ARRT" | "NCE" | "TEXESPPR" | "PRAXISPLT" | "CMA" | "RMA" | "NHIE" | "TXADJ" | "SFADMIN" | "CFAL1" | "CPAAUD" | "ACCAFA" | "AATL2" | "NBDHE" | "NPTEPTA" | "ASWBCLIN" | "PHR" | "CISA" | "CSSGB" | "CCS" | "RHIA" | "RDEXAM" | "CCRN" | "PX5001" | "FLADJ" | "LLQP" | "CEMAP" | "SGFTT" | "SGRES" | "HKIIQE1" | "HKLE1" | "NZFIREARMS" | "NZLCQ" | "AESIRA" | "MYPCE" | "KENCK" | "IEDTTCV" | "JELEC" | "BARBER" | "FFI" | "POLICE" | "SIE" | "SERIES7" | "PCOC" | "CASK" | "CANS" | "UKSERU" | "NZROAD" | "IEDTT" | "PHLTO" | "ZAK53" | "SGBTT" | "AERTA" | "NGFRSC" | "KENTSA" | "MYKPP" | "HKDRIVE" | "PKDRIVE" | "ESDGT" | "PTIMT" | "PTMOTO" | "PTCAM" | "PTTVDE" | "PTVIGIL" | "BEDRIVE" | "BEMOTO" | "BEVRACHT" | "BETOEL" | "BEFSMA" | "DKTEORI" | "DKMOTO" | "DKTRUCK" | "DKINDFOED" | "DKMEDB" | "DKJAGT" | "SETRAFIK" | "SEMOTO" | "SEJAKT" | "SEMEDB" | "FITHEORY" | "FIMOTO" | "FITRUCK" | "FIHYGIENE" | "FIHUNT" | "GRDRIVE" | "GRMOTO" | "GRCITIZEN" | "GRINSURE" | "GRSECURITY" | "RODRPCIV" | "ROCPI" | "ROTAXI" | "ROADMED" | "ROREZID" | "HUKRESZ" | "HUKRMOTO" | "HUGKI" | "HUELSOSEG" | "HUBIZT" | "MTTHEORY" | "MTMOTO" | "MTCPC" | "MTTAXI" | "MTGUARD" | "DETHEORIE" | "DEMOTORRAD" | "DEAEVO" | "DE34A" | "DEHEILPR" | "ESCAPCOND" | "ESPOLICIA" | "ESGUARDIA" | "ESVIGIL" | "PHLET" | "PHNLE" | "PHMEDTECH" | "PHPHARM" | "PHMIDWIFE" | "PHPSYCHOM" | "PHNAPOLCOM" | "AFPSAT" | "PHCLE" | "PHINS" | "PHREB" | "NGPOLICE" | "NGCDCFIB" | "NGARMY" | "NGCUSTOMS" | "TRCNPQE" | "HTL" | "CST" | "CRCST" | "ZAK53C3" | "PKPPSC" | "PKPUNJPOL" | "PKARMY" | "PKPAF" | "PKNLE" | "PKPNMC" | "ZAK53C1" | "ZARE5" | "ZASAPS" | "ZAPSIRA" | "IESAFEPASS" | "IESPSV" | "IEQFA" | "IEPSA" | "NZMOTO" | "NZHEAVY" | "NZSFE" | "SGRTT" | "SGM5" | "SGVL" | "FGT" | "ITCILS" | "ITCELI" | "ITPATENTE" | "FRCODE" | "AAFCS" | "CEN" | "IEHCAP" | "UKDSC1" | "HKNURSE" | "BCRE" | "AERERA" | "NZRE" | "CACORE" | "CHTHEORY" | "QABAABAT" | "NZSECURITY" | "NCPT" | "SMARTSERVE" | "CAHUNTERON" | "INBDE" | "CABCGUARD" | "CAABGUARD" | "CAAIRBRAKE" | "CAHAIR" | "CACOOK" | "CADRONE" | "CAHAM" | "EA3" | "EA2" | "NAILTECH" | "AFSP" | "ESTH" | "ASCPHT" | "ASCPMLS" | "R410A" | "NATECORE" | "CONTRLAW" | "EXCPT" | "CCT" | "ITA2" | "ITCILSB2";
 
 // Test mode
 export type TestMode = "dmv" | "cdl" | "htl";
@@ -23,6 +23,10 @@ export type CDLQuestionCategory =
 export type QuestionCategory =
   // Home Health Aide competency evaluation (42 CFR 484.80)
   | "hhaRole" | "hhaReport" | "hhaPersonal" | "hhaMobility" | "hhaInfection" | "hhaSafety" | "hhaHome" | "hhaPsych"
+  // AAPC Certified Outpatient Coder (COC)
+  | "cocTerms" | "cocAnatomy" | "cocCompliance" | "cocPayment" | "cocIcd" | "cocCpt" | "cocHcpcs" | "cocSurgery" | "cocCases"
+  // ARRT Limited Scope of Practice in Radiography
+  | "lmrtCare" | "lmrtPhysics" | "lmrtProtect" | "lmrtAcq" | "lmrtEquip" | "lmrtChest" | "lmrtExtrem" | "lmrtSkull" | "lmrtSpine" | "lmrtPodiatric"
   // NHA Certified Billing and Coding Specialist (CBCS)
   | "cbcsPrivacy" | "cbcsCompliance" | "cbcsEligibility" | "cbcsPayers" | "cbcsIcd" | "cbcsProcedure" | "cbcsEm" | "cbcsDocs" | "cbcsClaims" | "cbcsPayments" | "cbcsCollections"
   // PayrollOrg Fundamental Payroll Certification (FPC)
@@ -186,6 +190,17 @@ export type QuestionCategory =
   | "loadingPerformance"
   | "operations"
   // Amateur radio Technician subelements
+  // FCC amateur radio General (Element 3)
+  | "hamgRules"
+  | "hamgOperating"
+  | "hamgPropagation"
+  | "hamgPractices"
+  | "hamgElectrical"
+  | "hamgComponents"
+  | "hamgCircuits"
+  | "hamgSignals"
+  | "hamgAntennas"
+  | "hamgSafety"
   | "hamRules"
   | "hamOperating"
   | "hamPropagation"
@@ -196,6 +211,17 @@ export type QuestionCategory =
   | "hamSignals"
   | "hamAntennas"
   | "hamSafety"
+  // FCC Amateur Extra (hamextra)
+  | "hxRules"
+  | "hxOperating"
+  | "hxPropagation"
+  | "hxPractices"
+  | "hxElectrical"
+  | "hxComponents"
+  | "hxCircuits"
+  | "hxSignals"
+  | "hxAntennas"
+  | "hxSafety"
   // EPA Section 608 sections
   | "epaCore"
   | "epaType1"
@@ -877,6 +903,15 @@ export type QuestionCategory =
   | "ccaCompliance"
   | "ccaIt"
   | "ccaPrivacy"
+  // rhit
+  | "rhitContent"
+  | "rhitEhr"
+  | "rhitPrivacy"
+  | "rhitStats"
+  | "rhitCoding"
+  | "rhitRevenue"
+  | "rhitCompliance"
+  | "rhitLeadership"
   // CPA Exam FAR
   | "cpafarStatements"
   | "cpafarNfpGov"
@@ -1443,6 +1478,17 @@ export type QuestionCategory =
   | "ccsQueries"
   | "ccsCompliance"
   | "ccsIt"
+  // RHIA (AHIMA)
+  | "rhiaGovernance"
+  | "rhiaRecords"
+  | "rhiaAccess"
+  | "rhiaPrivacy"
+  | "rhiaStats"
+  | "rhiaInformatics"
+  | "rhiaReimburse"
+  | "rhiaRevenue"
+  | "rhiaLeadership"
+  | "rhiaOperations"
   // RD exam (CDR)
   | "rdMgmt"
   | "rdResearch"
@@ -3083,6 +3129,16 @@ export type QuestionCategory =
   | "ea3Exam"
   | "ea3Filing"
   // ExCPT (NHA) pharmacy technician
+  // CCT (CCI)
+  | "cctPreProc"
+  | "cctResting"
+  | "cct12Lead"
+  | "cctStress"
+  | "cctAmbulatory"
+  | "cctSinusAtrial"
+  | "cctJunctBlocks"
+  | "cctVentPaced"
+  | "cctMeasure"
   | "excptRole"
   | "excptLaws"
   | "excptControlled"

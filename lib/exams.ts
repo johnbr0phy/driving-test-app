@@ -38,7 +38,7 @@ import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 
-export type ExamId = "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "contractorlaw" | "excpt";
+export type ExamId = "rhia" | "coc" | "lmrt" | "cct" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "contractorlaw" | "excpt";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -639,6 +639,143 @@ const ham: ExamConfig = {
   },
 };
 
+const hamgeneral: ExamConfig = {
+  id: "hamgeneral",
+  stateCode: "HAMG",
+  idBase: 43700,
+  slug: "/ham-radio-general",
+  landingPath: "/ham-radio-general-practice-test",
+  name: "Ham Radio General Test",
+  shortName: "Ham Radio General",
+  examLabel: "FCC General",
+  fullName: "FCC amateur radio General class exam (Element 3)",
+  questionIdPrefix: "HAMG-",
+  icon: "radio",
+  testCount: 4,
+  questionsPerTest: 35,
+  passPct: 74,
+  // 47 CFR 97.503(b): Element 3 is 35 questions, 26 to pass. The VEs draw one question from each
+  // group of the 2023-2027 NCVEC General pool (6th errata, Feb 4 2026), so the blueprint is the
+  // number of groups per subelement. The bank is that pool, less the five G7-1 figure questions;
+  // ids interleave the groups, so each practice test takes one question from every group.
+  blueprint: {
+    hamgRules: 5,
+    hamgOperating: 5,
+    hamgPropagation: 3,
+    hamgPractices: 5,
+    hamgElectrical: 3,
+    hamgComponents: 2,
+    hamgCircuits: 3,
+    hamgSignals: 3,
+    hamgAntennas: 4,
+    hamgSafety: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43701, name: "Commission's Rules (G1)", categories: ["hamgRules"], size: 52, weightLabel: "5 of 35 exam questions" },
+    { setNumber: 2, id: 43702, name: "Operating Procedures (G2)", categories: ["hamgOperating"], size: 60, weightLabel: "5 of 35 exam questions" },
+    { setNumber: 3, id: 43703, name: "Propagation & Practices (G3, G4)", categories: ["hamgPropagation", "hamgPractices"], size: 97, weightLabel: "8 of 35 exam questions", partNames: ["Radio Wave Propagation (G3)", "Amateur Radio Practices (G4)"] },
+    { setNumber: 4, id: 43704, name: "Electrical & Components (G5, G6)", categories: ["hamgElectrical", "hamgComponents"], size: 63, weightLabel: "5 of 35 exam questions", partNames: ["Electrical Principles (G5)", "Circuit Components (G6)"] },
+    { setNumber: 5, id: 43705, name: "Circuits & Signals (G7, G8)", categories: ["hamgCircuits", "hamgSignals"], size: 75, weightLabel: "6 of 35 exam questions", partNames: ["Practical Circuits (G7)", "Signals & Emissions (G8)"] },
+    { setNumber: 6, id: 43706, name: "Safety & Antennas (G0, G9)", categories: ["hamgSafety", "hamgAntennas"], size: 71, weightLabel: "6 of 35 exam questions", partNames: ["Electrical & RF Safety (G0)", "Antennas & Feed Lines (G9)"] },
+  ],
+  categoryLabels: {
+    hamgRules: "Commission's Rules (G1)",
+    hamgOperating: "Operating Procedures (G2)",
+    hamgPropagation: "Radio Wave Propagation (G3)",
+    hamgPractices: "Amateur Radio Practices (G4)",
+    hamgElectrical: "Electrical Principles (G5)",
+    hamgComponents: "Circuit Components (G6)",
+    hamgCircuits: "Practical Circuits (G7)",
+    hamgSignals: "Signals & Emissions (G8)",
+    hamgAntennas: "Antennas & Feed Lines (G9)",
+    hamgSafety: "Electrical & RF Safety (G0)",
+  },
+  copy: {
+    guestPrompt: "to save your General exam progress and track every question you miss",
+    trainingHeading: "Train by subelement",
+    trainingSub: "Six sets covering the whole official 2023-2027 General question pool. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice exams · 35 questions drawn like the real exam, 26 to pass",
+    heroSubs: [
+      "Six training sets, four practice exams. Start with Commission's Rules.",
+      "Master each set, then take a practice exam.",
+      "Keep going. Take a practice exam to see where you stand.",
+      "Review your mistakes, then retake any exam you haven't passed.",
+      "All done. Find a VE session near you.",
+    ],
+    sourceLine: "Official NCVEC 2023-2027 General pool (6th errata, February 2026), valid to June 30, 2027. The 5 questions that need the G7-1 schematic are left out.",
+    analyticsKey: "hamgeneral",
+  },
+};
+
+const hamextra: ExamConfig = {
+  id: "hamextra",
+  stateCode: "HAMEXTRA",
+  idBase: 43800,
+  slug: "/ham-radio-extra",
+  landingPath: "/ham-radio-extra-practice-test",
+  name: "Ham Radio Extra Practice Test",
+  shortName: "Ham Radio Extra",
+  examLabel: "FCC Amateur Extra",
+  fullName: "FCC Amateur Extra class (Element 4) exam",
+  questionIdPrefix: "HAMX-",
+  icon: "radio",
+  testCount: 5,
+  questionsPerTest: 50,
+  passPct: 74,
+  // The real Element 4 exam draws one question from each of the pool's 50 groups: 50 questions,
+  // 37 to pass (47 CFR 97.503(c)). The bank is the official NCVEC 2024-2028 Extra pool (4th
+  // errata, Feb 4 2026), less the 27 figure questions; ids interleave across groups so each
+  // test is one question per group, like the real draw.
+  blueprint: {
+    hxRules: 6,
+    hxOperating: 5,
+    hxPropagation: 3,
+    hxPractices: 5,
+    hxElectrical: 4,
+    hxComponents: 6,
+    hxCircuits: 8,
+    hxSignals: 4,
+    hxAntennas: 8,
+    hxSafety: 1,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43801, name: "Commission Rules (E1)", categories: ["hxRules"], size: 68, weightLabel: "6 of 50 exam questions", partNames: ["Commission Rules I", "Commission Rules II"] },
+    { setNumber: 2, id: 43802, name: "Operating & Propagation (E2, E3)", categories: ["hxOperating", "hxPropagation"], size: 99, weightLabel: "8 of 50 exam questions", partNames: ["Operating Procedures (E2)", "Radio Wave Propagation (E3)"] },
+    { setNumber: 3, id: 43803, name: "Amateur Practices (E4)", categories: ["hxPractices"], size: 63, weightLabel: "5 of 50 exam questions", partNames: ["Amateur Practices I", "Amateur Practices II"] },
+    { setNumber: 4, id: 43804, name: "Electrical Principles & Components (E5, E6)", categories: ["hxElectrical", "hxComponents"], size: 108, weightLabel: "10 of 50 exam questions", partNames: ["Electrical Principles (E5)", "Circuit Components (E6) I", "Circuit Components (E6) II"] },
+    { setNumber: 5, id: 43805, name: "Practical Circuits (E7)", categories: ["hxCircuits"], size: 89, weightLabel: "8 of 50 exam questions", partNames: ["Practical Circuits I", "Practical Circuits II"] },
+    { setNumber: 6, id: 43806, name: "Signals & Antennas (E8, E9)", categories: ["hxSignals", "hxAntennas"], size: 133, weightLabel: "12 of 50 exam questions", partNames: ["Signals & Emissions (E8)", "Antennas & Lines (E9) I", "Antennas & Lines (E9) II"] },
+    { setNumber: 7, id: 43807, name: "Safety (E0)", categories: ["hxSafety"], size: 12, weightLabel: "1 of 50 exam questions" },
+  ],
+  categoryLabels: {
+    hxRules: "Commission Rules (E1)",
+    hxOperating: "Operating Procedures (E2)",
+    hxPropagation: "Radio Wave Propagation (E3)",
+    hxPractices: "Amateur Practices (E4)",
+    hxElectrical: "Electrical Principles (E5)",
+    hxComponents: "Circuit Components (E6)",
+    hxCircuits: "Practical Circuits (E7)",
+    hxSignals: "Signals & Emissions (E8)",
+    hxAntennas: "Antennas & Transmission Lines (E9)",
+    hxSafety: "Safety (E0)",
+  },
+  copy: {
+    guestPrompt: "to save your Amateur Extra exam progress and track every question you miss",
+    trainingHeading: "Train by subelement",
+    trainingSub: "Seven sets covering the official 2024-2028 Extra pool. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice exams · 50 questions drawn like the real exam, 37 to pass",
+    heroSubs: [
+      "The official Extra pool, five exams. Start with Commission Rules.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Find a VE session near you.",
+    ],
+    sourceLine: "Official NCVEC 2024-2028 Extra pool (4th errata, Feb 4 2026). The 27 questions that need a pool figure are left out.",
+    analyticsKey: "hamextra",
+  },
+};
+
 const epa608: ExamConfig = {
   id: "epa608",
   stateCode: "EPA608",
@@ -994,6 +1131,73 @@ const cet: ExamConfig = {
     analyticsKey: "cet",
   },
 };
+
+const cct: ExamConfig = {
+  id: "cct",
+  stateCode: "CCT",
+  idBase: 44300,
+  slug: "/cct",
+  landingPath: "/cct-practice-test",
+  name: "CCT Practice Test",
+  shortName: "CCT (CCI)",
+  examLabel: "CCT exam",
+  fullName: "Certified Cardiographic Technician (CCT) exam",
+  questionIdPrefix: "CCT-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // CCI CCT credential page (checked November 2026): 130 questions (110 scored) in 2 hours;
+  // content A Pre-procedural 10%, B Resting ECG 14%, C Analyzing 12-lead 22%, D Stress tests
+  // 10%, E Ambulatory monitoring 4%, F Rhythm analysis 40%. Scaled to 50: 5/7/11/5/2/20, with
+  // rhythm analysis split by the June 2022 task list (E1-E11) into 6/5/5/4. CCI reports a
+  // scaled score (0 to 900, 650 to pass), not a percent; 70% here is a readiness marker.
+  blueprint: {
+    cctPreProc: 5,
+    cctResting: 7,
+    cct12Lead: 11,
+    cctStress: 5,
+    cctAmbulatory: 2,
+    cctSinusAtrial: 6,
+    cctJunctBlocks: 5,
+    cctVentPaced: 5,
+    cctMeasure: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 44301, name: "Patient Prep & Resting ECG", categories: ["cctPreProc", "cctResting"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 44302, name: "Analyzing the 12-Lead ECG", categories: ["cct12Lead"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 44303, name: "Sinus, Atrial & AV Block Rhythms", categories: ["cctSinusAtrial", "cctJunctBlocks"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 44304, name: "Ventricular, Paced & Intervals", categories: ["cctVentPaced", "cctMeasure"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 5, id: 44305, name: "Stress Testing & Ambulatory ECG", categories: ["cctStress", "cctAmbulatory"], size: 28, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cctPreProc: "Pre-Procedural Activities",
+    cctResting: "Performing the Resting ECG",
+    cct12Lead: "Analyzing the 12-Lead ECG",
+    cctStress: "Stress Testing",
+    cctAmbulatory: "Ambulatory Monitoring",
+    cctSinusAtrial: "Sinus & Atrial Rhythms",
+    cctJunctBlocks: "Junctional Rhythms & AV Blocks",
+    cctVentPaced: "Ventricular & Paced Rhythms",
+    cctMeasure: "Intervals, Artifact & Medications",
+  },
+  copy: {
+    guestPrompt: "to save your CCT progress and track every question you miss",
+    trainingHeading: "Train by CCI content area",
+    trainingSub: "Five sets covering every area of the CCI CCT exam, with rhythm analysis given the most questions. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Patient Prep & Resting ECG.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the CCT.",
+    ],
+    sourceLine: "Based on CCI's CCT content outline. Original questions; rhythm strips are described in words, so practice with real tracings too. Not affiliated with Cardiovascular Credentialing International.",
+    analyticsKey: "cct",
+  },
+};
+// IDs: tests 44301-44304, sets 44301-44305 (block 44300 assigned for this run).
 
 const danb: ExamConfig = {
   id: "danb",
@@ -11781,6 +11985,70 @@ const cca: ExamConfig = {
   },
 };
 
+const rhit: ExamConfig = {
+  id: "rhit",
+  stateCode: "RHIT",
+  idBase: 43200,
+  slug: "/rhit",
+  landingPath: "/rhit-practice-test",
+  name: "RHIT Practice Test",
+  shortName: "RHIT",
+  examLabel: "RHIT exam",
+  fullName: "AHIMA Registered Health Information Technician (RHIT) exam",
+  questionIdPrefix: "RHIT-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AHIMA RHIT Content Outline (effective 10/01/2022, (c) 2023, checked 2026-11-19): Data Content,
+  // Structure and Information Governance 19-25%, Access, Disclosure, Privacy and Security 14-18%,
+  // Data Analytics and Use 12-18%, Revenue Cycle Management 19-25%, Compliance 13-17%,
+  // Leadership 9-12%. Midpoints scaled to 50 per test: 11 (record content 6, MPI and EHR 5), 8, 7,
+  // 11 (coding and CDI 6, revenue cycle 5), 8, 5. The real exam is 150 items (130 scored) in 3.5
+  // hours with a passing scaled score of 300; 70% is a readiness line. All items original.
+  blueprint: {
+    rhitContent: 6,
+    rhitEhr: 5,
+    rhitPrivacy: 8,
+    rhitStats: 7,
+    rhitCoding: 6,
+    rhitRevenue: 5,
+    rhitCompliance: 8,
+    rhitLeadership: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43201, name: "Data Content & Governance", categories: ["rhitContent","rhitEhr"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 43202, name: "Privacy, Security & Data Analytics", categories: ["rhitPrivacy","rhitStats"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 3, id: 43203, name: "Revenue Cycle Management", categories: ["rhitCoding","rhitRevenue"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 43204, name: "Compliance & Leadership", categories: ["rhitCompliance","rhitLeadership"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rhitContent: "Record Content & Standards",
+    rhitEhr: "MPI, Identity & EHR",
+    rhitPrivacy: "Access, Disclosure & Privacy",
+    rhitStats: "Data Analytics & Statistics",
+    rhitCoding: "Coding, Queries & CDI",
+    rhitRevenue: "Revenue Cycle & Payment",
+    rhitCompliance: "Compliance & Quality",
+    rhitLeadership: "Leadership & Projects",
+  },
+  copy: {
+    guestPrompt: "to save your RHIT progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets that follow the six AHIMA RHIT domains. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Data Content & Governance.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Schedule your RHIT exam.",
+    ],
+    sourceLine: "Weighted to the AHIMA RHIT Content Outline. Original questions; not affiliated with AHIMA.",
+    analyticsKey: "rhit",
+  },
+};
+
 const jelec: ExamConfig = {
   id: "jelec",
   stateCode: "JELEC",
@@ -20358,6 +20626,76 @@ const ccs: ExamConfig = {
   },
 };
 
+const rhia: ExamConfig = {
+  id: "rhia",
+  stateCode: "RHIA",
+  idBase: 43300,
+  slug: "/rhia",
+  landingPath: "/rhia-practice-test",
+  name: "RHIA Practice Test",
+  shortName: "RHIA",
+  examLabel: "RHIA exam",
+  fullName: "AHIMA Registered Health Information Administrator (RHIA) exam",
+  questionIdPrefix: "RHIA-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AHIMA RHIA Exam Content Outline, effective 10/01/2023 (read 2026-11-19): D1 Data and
+  // Information Governance 17-20%, D2 Compliance with Access, Use, and Disclosure 15-18%, D3 Data
+  // Analytics and Informatics 23-26%, D4 Revenue Cycle Management 20-23%, D5 Management and
+  // Leadership 23-26%. Per 50: 9/8/12/10/11 (the outline's minimums add to 98%, so D5 sits one
+  // point under its floor; splits inside each domain are Tigertest's). The real exam is 150
+  // items (130 scored) in 3.5 hours with a passing scaled score of 300; 70% is a readiness line.
+  // All items original. IDs: tests 43301-43304, sets 43301-43305.
+  blueprint: {
+    rhiaGovernance: 5,
+    rhiaRecords: 4,
+    rhiaAccess: 4,
+    rhiaPrivacy: 4,
+    rhiaStats: 5,
+    rhiaInformatics: 7,
+    rhiaReimburse: 5,
+    rhiaRevenue: 5,
+    rhiaLeadership: 6,
+    rhiaOperations: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43301, name: "Data & Information Governance", categories: ["rhiaGovernance","rhiaRecords"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 43302, name: "Access, Use & Disclosure", categories: ["rhiaAccess","rhiaPrivacy"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 43303, name: "Data Analytics & Informatics", categories: ["rhiaStats","rhiaInformatics"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 43304, name: "Revenue Cycle Management", categories: ["rhiaReimburse","rhiaRevenue"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 43305, name: "Management & Leadership", categories: ["rhiaLeadership","rhiaOperations"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    rhiaGovernance: "Information Governance & Data Standards",
+    rhiaRecords: "Record Integrity & the MPI",
+    rhiaAccess: "Access & Release of Information",
+    rhiaPrivacy: "Privacy, Security & Breach",
+    rhiaStats: "Healthcare Statistics & Reports",
+    rhiaInformatics: "Informatics, Databases & HIE",
+    rhiaReimburse: "Reimbursement Models",
+    rhiaRevenue: "Revenue Integrity & Compliance",
+    rhiaLeadership: "Leadership & Human Resources",
+    rhiaOperations: "Budgets, Quality & Projects",
+  },
+  copy: {
+    guestPrompt: "to save your RHIA progress and track every question you miss",
+    trainingHeading: "Train by RHIA domain",
+    trainingSub: "Five sets, one per domain of the AHIMA RHIA content outline. Every statistic is worked out, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam, 70% readiness line",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Data & Information Governance.",
+      "Master each domain, then test yourself.",
+      "Keep going. Every domain you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Schedule your RHIA exam.",
+    ],
+    sourceLine: "Weighted to the AHIMA RHIA Exam Content Outline (2023). Original questions on HIM law, data, revenue and management; not affiliated with AHIMA.",
+    analyticsKey: "rhia",
+  },
+};
+
 const rdexam: ExamConfig = {
   id: "rdexam",
   stateCode: "RDEXAM",
@@ -24956,6 +25294,76 @@ const hha: ExamConfig = {
     analyticsKey: "hha",
   },
 };
+const lmrt: ExamConfig = {
+  id: "lmrt",
+  stateCode: "LMRT",
+  idBase: 44000,
+  slug: "/limited-scope-xray",
+  landingPath: "/arrt-limited-scope-practice-test",
+  name: "Limited Scope X-Ray Practice Test",
+  shortName: "Limited Scope",
+  examLabel: "ARRT Limited Scope exam",
+  fullName: "ARRT Limited Scope of Practice in Radiography Exam",
+  questionIdPrefix: "LMRT-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 75,
+  // ARRT Limited Scope of Practice in Radiography Examination Content Specifications, board
+  // approved January 2022, in effect January 1, 2023 (checked November 2026; revised specs are
+  // planned for January 1, 2028). Core module 100 scored: Patient Care 18; Safety 40 (radiation
+  // physics and radiobiology 12, radiation protection 28); Image Production 42 (acquisition and
+  // evaluation 20, equipment operation and QA 22). Procedure modules: Chest 20, Extremities 25,
+  // Skull/Sinuses 20, Spine 25, Podiatric 20. Each 50-question test mixes 26 core and 24 procedure
+  // items: 5/3/7/5/6 core, 5/6/4/5/4 procedures (Tigertest's split; the real exam is taken as Core
+  // plus the modules a state assigns). ARRT reports the number correct per module to the state,
+  // which sets the pass mark; 75% here is a readiness marker. All items original.
+  blueprint: {
+    lmrtCare: 5,
+    lmrtPhysics: 3,
+    lmrtProtect: 7,
+    lmrtAcq: 5,
+    lmrtEquip: 6,
+    lmrtChest: 5,
+    lmrtExtrem: 6,
+    lmrtSkull: 4,
+    lmrtSpine: 5,
+    lmrtPodiatric: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 44001, name: "Patient Care & Radiation Safety", categories: ["lmrtCare", "lmrtPhysics", "lmrtProtect"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 44002, name: "Image Production", categories: ["lmrtAcq", "lmrtEquip"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 44003, name: "Chest & Extremities", categories: ["lmrtChest", "lmrtExtrem"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 4, id: 44004, name: "Skull, Spine & Podiatric", categories: ["lmrtSkull", "lmrtSpine", "lmrtPodiatric"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    lmrtCare: "Patient Care",
+    lmrtPhysics: "Radiation Physics & Radiobiology",
+    lmrtProtect: "Radiation Protection",
+    lmrtAcq: "Image Acquisition & Evaluation",
+    lmrtEquip: "Equipment Operation & QA",
+    lmrtChest: "Chest Procedures",
+    lmrtExtrem: "Extremity Procedures",
+    lmrtSkull: "Skull & Sinus Procedures",
+    lmrtSpine: "Spine Procedures",
+    lmrtPodiatric: "Podiatric Procedures",
+  },
+  copy: {
+    guestPrompt: "to save your Limited Scope progress and track every question you miss",
+    trainingHeading: "Train by ARRT core and procedure module",
+    trainingSub: "Four sets covering the core module and all five procedure modules of the ARRT Limited Scope exam. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions mixing core and procedures",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Patient Care & Radiation Safety.",
+      "Master each set, then take a practice test.",
+      "Keep going. Patient Care & Radiation Safety has the most questions.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the Limited Scope exam.",
+    ],
+    sourceLine: "Based on the ARRT Limited Scope of Practice in Radiography content specifications. Original questions; 50 per test, mixing core and procedure modules. Not affiliated with ARRT.",
+    analyticsKey: "lmrt",
+  },
+};
 const cbcs: ExamConfig = {
   id: "cbcs",
   stateCode: "CBCS",
@@ -25029,6 +25437,73 @@ const cbcs: ExamConfig = {
     ],
     sourceLine: "Based on the NHA CBCS test plan (2020 job analysis), the ICD-10-CM Official Guidelines and CMS claims manuals. Original questions; no code-book lookups. Not affiliated with the National Healthcareer Association.",
     analyticsKey: "cbcs",
+  },
+};
+const coc: ExamConfig = {
+  id: "coc",
+  stateCode: "COC",
+  idBase: 43400,
+  slug: "/coc",
+  landingPath: "/coc-practice-test",
+  name: "COC Practice Test",
+  shortName: "COC (AAPC)",
+  examLabel: "COC exam",
+  fullName: "Certified Outpatient Coder (COC) Exam",
+  questionIdPrefix: "COC-",
+  icon: "calculator",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // AAPC "Taking the COC exam" (checked November 2026): 100 questions in four hours, 70% to pass.
+  // Section counts of 100: medical terminology 7, anatomy 7, coding guidelines 3, payment
+  // methodologies 13, compliance 3, ICD-10-CM 15, HCPCS Level II 7, CPT 13, surgery and modifiers
+  // 22, cases 10. Scaled to 50 and grouped by Tigertest: terminology 3, anatomy 3, guidelines and
+  // compliance 3, payment 7, ICD-10-CM 8, CPT 6, HCPCS 4, surgery and modifiers 11, cases 5.
+  // Facility (OPPS/ASC) rules from the CMS Claims Processing Manual, NCCI and the FY 2026
+  // ICD-10-CM guidelines. Guidelines and concepts only, no code-book lookups. All items original.
+  blueprint: {
+    cocTerms: 3,
+    cocAnatomy: 3,
+    cocCompliance: 3,
+    cocPayment: 7,
+    cocIcd: 8,
+    cocCpt: 6,
+    cocHcpcs: 4,
+    cocSurgery: 11,
+    cocCases: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 43401, name: "Terminology, Anatomy & Compliance", categories: ["cocTerms", "cocAnatomy", "cocCompliance"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 2, id: 43402, name: "Payment Methods & HCPCS Level II", categories: ["cocPayment", "cocHcpcs"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 43403, name: "ICD-10-CM & CPT Services", categories: ["cocIcd", "cocCpt"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 43404, name: "Surgery & Modifiers", categories: ["cocSurgery"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 5, id: 43405, name: "Outpatient Cases", categories: ["cocCases"], size: 20, weightLabel: "5 of 50 test questions" },
+  ],
+  categoryLabels: {
+    cocTerms: "Medical Terminology",
+    cocAnatomy: "Anatomy",
+    cocCompliance: "Coding Guidelines & Compliance",
+    cocPayment: "Payment Methodologies",
+    cocIcd: "ICD-10-CM",
+    cocCpt: "CPT: E/M, Observation, Radiology & Lab",
+    cocHcpcs: "HCPCS Level II",
+    cocSurgery: "Surgery & Modifiers",
+    cocCases: "Outpatient Cases",
+  },
+  copy: {
+    guestPrompt: "to save your COC progress and track every question you miss",
+    trainingHeading: "Train by COC exam section",
+    trainingSub: "Five sets covering every section of the AAPC COC exam. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions weighted like the real exam",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with Terminology, Anatomy & Compliance.",
+      "Master each set, then take a practice test.",
+      "Keep going. ICD-10-CM & CPT Services has the most questions.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. You're ready for the COC.",
+    ],
+    sourceLine: "Based on the AAPC COC exam sections, the CMS Claims Processing Manual (OPPS), NCCI policy and the ICD-10-CM Official Guidelines. Original questions; no code-book lookups. Not affiliated with AAPC.",
+    analyticsKey: "coc",
   },
 };
 const ieplumbt2: ExamConfig = {
@@ -25361,7 +25836,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, epa608, r410a, backflow, pesticide, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, cca, ccs, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
+export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, r410a, backflow, pesticide, natecore, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

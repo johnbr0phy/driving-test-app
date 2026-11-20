@@ -1246,5 +1246,61 @@
       "pr": 905,
       "findings": 32
     }
+  ],
+  "rhit": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 14
+    }
+  ],
+  "rhia": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 34
+    }
+  ],
+  "coc": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 2
+    }
+  ],
+  "hamgeneral": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 9
+    }
+  ],
+  "hamextra": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 2
+    }
+  ],
+  "lmrt": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 4
+    }
+  ],
+  "cct": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 926,
+      "findings": 5
+    }
   ]
 }

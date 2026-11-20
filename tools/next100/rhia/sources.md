@@ -114,6 +114,8 @@ count. Multiple choice only, like the real exam.
   Procedure 34 (electronically stored information): https://www.law.cornell.edu/rules/frcp/rule_34
   (fetched 2026-11-19).
 
+Claim adjustment group codes (CO, PR, OA, PI) are the X12 835 remittance standard named in HIPAA's transaction rules; only their basic meaning is asked.
+
 Management and leadership items (Lewin's change stages, SWOT, SMART goals, job analysis and job
 evaluation, Kirkpatrick levels, Herzberg's factors, conflict modes, span of control, budgets,
 critical path, Gantt charts, scope creep) are kept to the standard definitions taught under the

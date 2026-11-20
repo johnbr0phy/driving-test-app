@@ -1978,14 +1978,14 @@
     "state": "ALL",
     "questionId": "RHIA-RCY-006",
     "category": "rhiaRevenue",
-    "question": "On a remittance, which claim adjustment group code means the provider may not bill the patient for the amount?",
+    "question": "On a remittance, which claim adjustment group code marks an amount the provider writes off under its payer contract?",
     "optionA": "PR",
     "optionB": "CO",
     "optionC": "OA",
     "optionD": "PI",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "CO (contractual obligation) adjustments are written off by the provider. PR (patient responsibility) amounts may be billed to the patient."
+    "explanation": "CO (contractual obligation) marks the amount the contract requires the provider to write off. PR (patient responsibility) may be billed to the patient; PI and OA are payer-initiated and other adjustments."
   },
   {
     "type": "RHIA",

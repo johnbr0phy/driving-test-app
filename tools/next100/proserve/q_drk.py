@@ -43,7 +43,7 @@ Q = [
  "Need not buy anything", ["Must order food or a drink", "Must buy one drink first", "Must keep their receipt"],
  "Policy 8.4.1 says buying or drinking liquor, or playing electronic games, cannot be required to enter, and participants must be told so."),
 ("AGLC policy says liquor sale activities must not:",
- "Promote intoxication", ["Mention brand names", "Use printed menus", "Include food pairings"],
+ "Promote intoxication", ["Feature local craft brands", "Run during lunch hours", "Price above the minimum"],
  "Policy 5.2.7 states that liquor sale activities must not promote intoxication."),
 ("A gift certificate may be redeemed for liquor only if it was:",
  "Bought at face value", ["Issued by AGLC", "Used before 9 p.m.", "Used within 30 days"],

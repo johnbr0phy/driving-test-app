@@ -11,6 +11,7 @@ import {
   STATE_PAGES_UPDATED_AT,
   ABOUT_PAGE_UPDATED_AT,
   HOMESCHOOL_PAGE_UPDATED_AT,
+  AI_PARENTS_PAGE_UPDATED_AT,
 } from "./seoDates";
 
 // The sitemap is split into one file per page family so Search Console
@@ -122,6 +123,7 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
         ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke", "pk", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de", "it", "fr", "ch"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
         { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         { url: `${SITE_URL}/homeschool`, lastModified: HOMESCHOOL_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.8 },
+        { url: `${SITE_URL}/ai-parents`, lastModified: AI_PARENTS_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         { url: `${SITE_URL}/about`, lastModified: ABOUT_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.4 },
         // Each landing's own last change (lib/landingDates.ts), not one date for all.
         ...EXAMS_V2.map((exam) => ({

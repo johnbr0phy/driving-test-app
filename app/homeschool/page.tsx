@@ -131,7 +131,7 @@ export default function HomeschoolPage() {
             </Link>
           </p>
           <p className="mt-4 text-center text-sm text-gray-500 dark:text-gray-400">
-            Have your own material? <Link href="/create" className="underline underline-offset-2">Turn a chapter into a quiz</Link> and share it with the class.
+            Have your own material? <Link href="/ai-parents" className="underline underline-offset-2">Turn a chapter into a quiz with your AI</Link> and share it with the class.
           </p>
         </div>
       </div>

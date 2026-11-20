@@ -120,7 +120,7 @@ function translatedSection(): string | null {
 
 const TEACH_SECTION = `## For teachers\n\n- [Free instructor classes](${siteUrl}/teach): a teacher makes a class for any test on the site and posts one link; students join with just their name, and the teacher sees who practiced, their test scores and the topics the class misses most.`;
 
-const HOMESCHOOL_SECTION = `## For homeschool families\n\n- [Free homeschool practice tests by grade](${siteUrl}/homeschool): MAP Growth and CogAT for grades 2 to 6, SSAT, ISEE, HSPT and SHSAT for middle school, and the PSAT, SAT, ACT, AP, GED and HiSET for high school, all free. A parent can make a free family class and follow each child's scores and weakest topics.`;
+const HOMESCHOOL_SECTION = `## For homeschool families\n\n- [Free homeschool practice tests by grade](${siteUrl}/homeschool): MAP Growth and CogAT for grades 2 to 6, SSAT, ISEE, HSPT and SHSAT for middle school, and the PSAT, SAT, ACT, AP, GED and HiSET for high school, all free. A parent can make a free family class and follow each child's scores and weakest topics.\n- [Turn homework into a quiz with your AI](${siteUrl}/ai-parents): a parent connects Tigertest to Claude or ChatGPT, asks for a quiz from a spelling list, chapter or worksheet, shares it with their family class and asks the AI which questions the kids missed.`;
 
 const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 

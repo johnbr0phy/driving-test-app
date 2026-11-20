@@ -140,7 +140,7 @@ META = _Meta()
 META_OK_ID = re.compile(r"^(LH|PC|RE)[A-Z]{2}-[A-Z]{2}(LIC|REG)-|^SIE-REG-|^UKADI-TST-")
 META_OK = {"CDLE-HM-003", "FAAPVT-D-081", "UKMOTO-DOC-002", "PHCSE-T1-044", "IBPSRRB-T2-075",
            "SSCCPO-T2-006", "SSCCPO-T2-014", "APPSYCH-T2-026", "NETPLUS-T1-007", "SECPLUS-T2-083",
-           "NGCUS-VOC-024", "HAMG-G1-043", "NGCUS-VOC-025", "PHLET-PRO-006", "PHLET-ASM-002", "TRCN-SAF-017"}
+           "NGCUS-VOC-024", "NGCUS-VOC-025", "PHLET-PRO-006", "PHLET-ASM-002", "TRCN-SAF-017"}
 
 
 def is_meta(qid: str, stem: str) -> bool:
@@ -170,8 +170,10 @@ KNOWN_BANKS = {
         why="six staining categories share HTL-STN- ids, so they interleave in id order (Oct 2026 split)"),
     "ham-questions.json": dict(rows=397, max_over=17,
         why="the official NCVEC 2026-2030 pool; its wording is the FCC's and cannot be shortened"),
-    "ham-general-questions.json": dict(rows=418, max_over=14,
+    "ham-general-questions.json": dict(rows=418, max_over=14, official_pool=True,
         why="the official NCVEC 2023-2027 General (Element 3) pool, 423 live questions less the 5 G7-1 figure items; its wording is the FCC's and cannot be shortened"),
+    "ham-extra-questions.json": dict(rows=572, max_over=60, official_pool=True,
+        why="the official NCVEC 2024-2028 Extra (Element 4) pool, 4th errata; its wording is the pool's and cannot be shortened"),
     "de-theorie-questions.json": dict(rows=210, why="seven 30-question tests"),
     "italy-patente-questions.json": dict(rows=210, why="seven 30-question tests"),
     "france-code-route-questions.json": dict(rows=240, why="six 40-question tests"),
@@ -307,7 +309,7 @@ def main() -> int:
             if BANNED.search(s):
                 errs.append(f"{qid}: banned phrase or em-dash")
                 break
-        if args.lang == "en" and is_meta(qid, q):
+        if args.lang == "en" and is_meta(qid, q) and not known.get("official_pool"):
             errs.append(f"{qid}: asks about the test itself, not its subject")
         if PROVIDERS.search(q):
             warns.append(f"{qid}: provider named in stem")
@@ -382,6 +384,13 @@ def main() -> int:
     for t in pat["antiTells"][:5]:
         warns.append(f'"{t["term"]}" is almost never the key ({t["key"]} of {t["n"]}, chance {t["chance"]}): make it right sometimes')
 
+    if known.get("official_pool"):
+        # A public-domain official pool (NCVEC): its questions, options and keys are the
+        # exam's own and may not be reworded, so length and answer-pattern findings are
+        # reported, not failed. Schema, ids, keys and dashes still fail.
+        style = re.compile(r"^(key >1\.2x|key is the longest|answer pattern:|stem echo:|\d+ questions share)")
+        warns.extend(f"(official pool) {e}" for e in errs if style.match(e))
+        errs = [e for e in errs if not style.match(e)]
     print(f"lang {args.lang}  len-scale {scale}  rows {len(rows)}  categories {dict(counts)}")
     print(f"letters {dict(letters)}  avg option {avg_opt:.0f} chars  key-longest {long_share:.0%}  key>1.2x {far_share:.0%}")
     for w in warns[:20]:

@@ -38,6 +38,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   moto: { title: "Motorcycle Permit Test", description: "Review protective gear, motorcycle control, road positioning and hazard awareness." },
   civics: { title: "US Citizenship Civics Test", description: "Study American government, history and civic responsibilities for your naturalization interview." },
   part107: { title: "FAA Part 107 Remote Pilot", description: "Review drone regulations, airspace, weather, flight planning and safe operations." },
+  hamextra: { title: "Ham Radio Amateur Extra", description: "Study the Element 4 pool: rules, propagation, circuits, signals and antennas." },
   ham: { title: "Ham Radio Technician", description: "Study radio rules, operating procedures, circuits, antennas and electrical safety." },
   epa608: { title: "EPA Section 608", description: "Review refrigerant handling, recovery, leak detection and equipment safety by certification type." },
   cna: { title: "CNA Written Exam", description: "Review daily living assistance, basic nursing skills, resident rights and safe care." },

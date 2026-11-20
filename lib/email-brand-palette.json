@@ -484,5 +484,6 @@
   "nzsecurity": ["#170e43","#efedfd","#090519","#e0deed"],
   "chtheory": ["#700006","#fdeded","#3d0003","#eddedf"],
   "smartserve": ["#3f1221","#f7edf1","#1f0a11","#e5dcdf"],
-  "qabaabat": ["#415358","#eef4f6","#212a2c","#dce3e5"]
+  "qabaabat": ["#415358","#eef4f6","#212a2c","#dce3e5"],
+  "hamextra": ["#550734","#fbeff6","#1c0211","#eddee7"]
 }

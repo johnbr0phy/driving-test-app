@@ -103,7 +103,7 @@ const TEACHER_LED = new Set([
   "staaralg1",
   // Trade schools, pre-licensing courses and instructor-led certifications
   "cdl", "cdlx", "moto", "osha", "forklift", "epa608", "epa609", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
-  "realestate", "insurance", "pnc", "ham", "civics",
+  "realestate", "insurance", "pnc", "ham", "hamextra", "civics",
   "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
   "cscs", "ukfood", "ukaplh",
   "caauto", "caplumb", "cacarp", "caweld", "carscook", "carshair", "cawhmis", "caguard", "caabguard",

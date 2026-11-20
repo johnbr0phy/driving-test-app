@@ -179,6 +179,7 @@ export const NON_DRIVING_TESTS = new Set([
   "istqb",
   "cobit",
   "epa609",
+  "hamextra",
   "servicenowcsa",
   "sscp",
   "securityx",

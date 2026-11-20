@@ -7406,6 +7406,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "LIBF's FSRE qualification specification (version 7, July 2026) and CeMAP qualification specification (April 2026), checked November 2026",
     source: { name: "Walbrook (LIBF): Financial Services, Regulation and Ethics", url: "https://www.walbrook.ac.uk/libf/professional-qualifications/financial-and-mortgage-advice/financial-services-regulation-and-ethics-fsre/" },
   },
+  ukcemap2: {
+    answer:
+      "CeMAP Module 2 is the MORT module of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. It has two units: MRT1, Mortgage Law, Practice and Application, and MRT2, Mortgage Products and Post Completion. Each is a one-hour online exam taken on Brightspace with remote invigilation. MRT1 has 50 standalone multiple-choice questions and needs 35 (70%) to pass; MRT2 has 40 and needs 28 (70%).",
+    rows: [
+      { label: "Units", value: "2: MRT1 and MRT2 (the MORT module)" },
+      { label: "MRT1", value: "50 standalone MCQs, 1 hour, 35 to pass" },
+      { label: "MRT2", value: "40 standalone MCQs, 1 hour, 28 to pass" },
+      { label: "Pass mark", value: "70% on each unit" },
+      { label: "Higher passes", value: "Merit 80%, distinction 90%" },
+      { label: "Format", value: "Online, remote invigilation, no booking" },
+      { label: "Rest of CeMAP", value: "FSRE (Module 1) and the ASEW/ASSC synoptic unit" },
+      { label: "Run by", value: "LIBF, part of Walbrook Institute London" },
+    ],
+    basedOn: "LIBF's CeMAP qualification specification (published April 2026), checked November 2026",
+    source: { name: "Walbrook (LIBF): CeMAP qualification specification", url: "https://www.walbrook.ac.uk/hubfs/files/documents/pe/cemap-qualification-specification-march-2026.pdf" },
+  },
   sgftt: {
     answer:
       "The Final Theory Test (FTT) is the second theory test for a class 3 or 3A car licence in Singapore, taken after the Basic Theory Test and before the practical driving test. It is based on the Traffic Police handbook Final Theory of Driving: vehicle controls, driving techniques, defensive driving, other road users, expressways, emergencies and accidents. You book it at one of the three driving centres, and you need a valid final theory pass to sit the practical test. Guides say it is 50 multiple-choice questions in 50 minutes with 45 needed to pass; the Traffic Police do not publish the format.",

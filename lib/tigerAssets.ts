@@ -233,6 +233,8 @@ const BORROWED_SETS: Record<string, string> = {
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
   fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", rhia: "cpc", praxis5001: "praxis",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
+  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
+  fladjuster: "pnc", llqp: "insurance", cemap: "nmls", ukcemap2: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
   cdm: "rdexam",

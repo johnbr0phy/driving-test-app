@@ -3337,16 +3337,16 @@
     "skill": "Mindset 5: Foster psychological safety",
     "difficulty": 2,
     "format": "single",
-    "stem": "A practitioner hears from the team that their meetings run long. Which psychological safety enabler applies?",
-    "explanation": "Under Foster Psychological Safety the outline says to solicit and provide constructive feedback and act on it, which is what the practitioner should now do.",
+    "stem": "The team tells a practitioner their meetings run long. Which psychological safety enabler covers what the practitioner does next?",
+    "explanation": "Under Foster Psychological Safety the outline says to solicit and provide constructive feedback and act on it, so the practitioner now changes the meetings and checks whether it helped. Dialogue over debate is about how discussions run, not about responding to feedback.",
     "options": [
-      "Promote a no-blame culture",
       "Encourage dialogue over debate",
-      "Encourage challenging the status quo",
-      "Solicit and provide feedback, then act on it"
+      "Promote a no-blame culture",
+      "Act on feedback received",
+      "Challenge the status quo"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3363,11 +3363,11 @@
     "options": [
       "Bring both people together at once",
       "Set ground rules for the team",
-      "Find its root cause and level",
-      "Remind them of the working agreement"
+      "Remind them of the working agreement",
+      "Find its root cause and level"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {

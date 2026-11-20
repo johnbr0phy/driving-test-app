@@ -30,12 +30,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Why build a minimum viable product before the full solution?",
-    "explanation": "An MVP is the smallest build that lets the team learn whether the solution meets a real need, before larger investment. It is not meant to ship the whole feature set sooner, and it is a way of doing user research, not skipping it.",
+    "explanation": "An MVP is the smallest build that lets the team learn whether the solution meets a real need, before larger investment. Proving a technical approach is a spike, and the smallest marketable slice is an MMF.",
     "options": [
       "To test the market need cheaply",
-      "To deliver the full feature set sooner",
-      "To reduce the need for user research",
-      "To give developers a stable architecture"
+      "To prove a technical approach",
+      "To gather requirements up front",
+      "To release the smallest marketable slice"
     ],
     "correct": [
       0
@@ -200,9 +200,9 @@
     "stem": "What is a risk-adjusted backlog?",
     "explanation": "A risk-adjusted backlog adds risk response work as backlog items and orders them alongside features, so risk reduction happens early.",
     "options": [
-      "Backlog with risky items removed",
-      "Backlog sorted by size alone",
-      "Separate list of every project risk",
+      "Backlog ordered by value per effort",
+      "Backlog sized in story points",
+      "Backlog split into release slices",
       "Backlog with risk responses ranked in"
     ],
     "correct": [
@@ -303,12 +303,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What do story points estimate?",
-    "explanation": "Story points are a relative sizing unit that compares items with each other. They are not hours or days.",
+    "explanation": "Story points are a relative sizing unit that compares items with each other. Effort with no interruptions is ideal time, and elapsed time is cycle time.",
     "options": [
-      "Exact hours of work",
+      "Order of business value",
       "Relative size of the work",
-      "Calendar days needed",
-      "Cost per developer per day"
+      "Elapsed time to finish",
+      "Effort with no interruptions"
     ],
     "correct": [
       1
@@ -494,12 +494,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What does a risk burn down chart show?",
-    "explanation": "A risk burn down plots the team's total risk exposure each iteration, which should fall as risks are mitigated.",
+    "explanation": "A risk burn down plots the team's total risk exposure each iteration, which should fall as risks are mitigated. The others describe a burndown, a cumulative flow diagram and a burnup.",
     "options": [
       "Total risk exposure over time",
-      "Risks closed per person",
-      "Budget lost to risk events",
-      "Defects found per sprint by area"
+      "Work remaining over time",
+      "Work in each state over time",
+      "Scope completed over time"
     ],
     "correct": [
       0
@@ -578,12 +578,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A steering committee asks when a release will be ready. Which metric suits that audience?",
-    "explanation": "Metrics should fit the audience. A release burnup shows completed scope against total scope over time, which answers a forecast question.",
+    "explanation": "Metrics should fit the audience. A release burnup shows completed scope against total scope over time, which answers a forecast question; sprint-level charts do not reach the release.",
     "options": [
-      "Individual task hours",
+      "Sprint task board",
       "Release burnup chart",
-      "Standup meeting notes",
-      "Code review comments"
+      "Daily sprint burndown",
+      "Work item age chart"
     ],
     "correct": [
       1
@@ -620,11 +620,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Which practice lets people from many teams share knowledge on one subject regularly?",
-    "explanation": "Communities of practice bring together people with a shared interest across teams to learn from each other. The outline names them as a knowledge-sharing environment.",
+    "explanation": "Communities of practice bring together people with a shared interest across teams to learn from each other. A scrum of scrums coordinates dependencies, not a subject.",
     "options": [
-      "Change control board",
-      "Project management office",
-      "Steering committee",
+      "Sprint review",
+      "Daily standup",
+      "Scrum of scrums",
       "Community of practice"
     ],
     "correct": [
@@ -1082,12 +1082,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What does a WIP limit encourage a team to do?",
-    "explanation": "Limiting work in progress makes the team finish what it has before pulling new work, which shortens cycle time.",
+    "explanation": "Limiting work in progress makes the team finish what it has before pulling new work, which shortens cycle time. Relative sizing, visualization and value ordering are separate practices.",
     "options": [
       "Finish items before taking more",
-      "Plan the whole sprint up front",
-      "Start items in priority order",
-      "Split items before starting them"
+      "Make work visible to everyone",
+      "Size items relative to each other",
+      "Order items by business value"
     ],
     "correct": [
       0
@@ -1429,12 +1429,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What does backlog refinement mainly do?",
-    "explanation": "Refinement clarifies backlog items, prioritizes them, decomposes them as needed and sizes them collectively.",
+    "explanation": "Refinement clarifies backlog items, prioritizes them, decomposes them as needed and sizes them collectively. The others describe a review, iteration planning and a retrospective.",
     "options": [
       "Clarify, split and size items",
-      "Select items for the next sprint",
-      "Record time spent",
-      "Assign upcoming items to developers"
+      "Plan the work for the iteration",
+      "Improve how the team works",
+      "Inspect the increment with stakeholders"
     ],
     "correct": [
       0
@@ -1450,11 +1450,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Which measure do the Agile Manifesto principles call the primary measure of progress?",
-    "explanation": "The principle reads that working software is the primary measure of progress. Hours and task counts show activity, not delivered value.",
+    "explanation": "The principle reads that working software is the primary measure of progress. The other phrases come from other principles.",
     "options": [
-      "Tasks closed",
-      "Hours logged",
-      "Plan percent complete",
+      "Face-to-face conversation",
+      "Customer satisfaction",
+      "Technical excellence",
       "Working software"
     ],
     "correct": [
@@ -1621,12 +1621,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What does a team do in a pre-mortem?",
-    "explanation": "A pre-mortem asks the team to imagine the project has failed and work out why, so risks surface before they happen.",
+    "explanation": "A pre-mortem asks the team to imagine the project has failed and work out why, so risks surface before they happen. The others describe a retrospective, the five whys and value stream mapping.",
     "options": [
-      "Reviews a finished project",
+      "Reviews what happened last sprint",
       "Imagines failure and asks why",
-      "Estimates the remaining work",
-      "Audits last release's defects"
+      "Asks why five times in a row",
+      "Maps the steps from idea to customer"
     ],
     "correct": [
       1
@@ -1915,12 +1915,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What is a minimal marketable feature?",
-    "explanation": "An MMF is the smallest unit of functionality that has value to the market on its own, which makes it a good release unit.",
+    "explanation": "An MMF is the smallest unit of functionality that has value to the market on its own. The others describe an MVP, a spike and a persona.",
     "options": [
       "Smallest slice with real market value",
-      "Any feature finished without full testing",
-      "Feature with the fewest stories",
-      "Whatever is first on the roadmap"
+      "Smallest build that tests a hypothesis",
+      "Fictional user standing for a group",
+      "Short experiment on a technical unknown"
     ],
     "correct": [
       0
@@ -1978,10 +1978,10 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What does a coach mainly do that a trainer does not?",
-    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches defined content or shows the technique, and sharing career experience is closer to mentoring.",
+    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches a defined skill or shows the technique, and guidance from long experience is mentoring.",
     "options": [
-      "Share their own career story",
-      "Teach a set course of content",
+      "Guide from long experience",
+      "Teach a defined skill",
       "Help people find their own answers",
       "Model the correct technique"
     ],
@@ -2590,10 +2590,10 @@
     "stem": "Osmotic communication works best when the team is working in which setting?",
     "explanation": "Osmotic communication is information picked up in the background by people working near each other, so it depends on co-location.",
     "options": [
-      "Reporting through a manager",
-      "Fully asynchronous work",
+      "Using a shared online board",
+      "Writing everything down",
       "Sitting together in one space",
-      "Spread across time zones"
+      "Holding a daily standup"
     ],
     "correct": [
       2
@@ -2684,12 +2684,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What does a burndown chart show?",
-    "explanation": "A burndown chart plots the work left against time, so the team can see whether it will finish.",
+    "explanation": "A burndown chart plots the work left against time. A burnup shows completed against total scope, a cumulative flow diagram shows states, and a risk burn down shows exposure.",
     "options": [
       "Work remaining over time",
-      "Work started per person",
-      "Work started per month",
-      "Defects found per release"
+      "Scope completed against total scope",
+      "Items in each workflow state",
+      "Risk exposure by iteration"
     ],
     "correct": [
       0
@@ -2705,11 +2705,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What is an architectural spike?",
-    "explanation": "An architectural spike is a short experiment to prove or rule out a technical approach before building on it.",
+    "explanation": "An architectural spike is a short experiment to prove or rule out a technical approach. The others describe an MVP, an MMF and a pre-mortem.",
     "options": [
-      "An unplanned period of team overtime",
-      "A release with extra features",
-      "A sudden rise in defects",
+      "Workshop that imagines failure",
+      "Smallest feature with market value",
+      "Smallest product that tests demand",
       "Short experiment to test a design"
     ],
     "correct": [
@@ -2726,12 +2726,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What do the manifesto principles call simplicity?",
-    "explanation": "The principle defines simplicity as the art of maximizing the amount of work not done. Smaller teams, less paperwork or fewer tools may follow, but are not the definition.",
+    "explanation": "The principle defines simplicity as the art of maximizing the amount of work not done. The other phrases come from other principles.",
     "options": [
-      "Using fewer tools",
+      "Welcoming late changes",
       "Maximizing the work not done",
-      "Minimizing the size of the team",
-      "Writing less documentation"
+      "Satisfying the customer early",
+      "Reflecting at regular intervals"
     ],
     "correct": [
       1
@@ -2812,9 +2812,9 @@
     "stem": "What is ideal time in agile estimation?",
     "explanation": "Ideal time is how long work would take with no interruptions or other duties, which is why it differs from elapsed time.",
     "options": [
-      "Time the manager allows",
-      "Time including all meetings",
-      "Time set in the contract",
+      "Elapsed calendar time",
+      "Story points per sprint",
+      "Time from request to delivery",
       "Time with no interruptions"
     ],
     "correct": [
@@ -2873,11 +2873,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "How does the Agile Manifesto treat comprehensive documentation?",
-    "explanation": "The manifesto values working software over comprehensive documentation: the right side still has value, the left side more. Agile does not ban documentation.",
+    "explanation": "The manifesto values working software over comprehensive documentation. Collaboration is valued over contract negotiation, responding to change over a plan, and individuals over processes and tools.",
     "options": [
-      "Not needed in agile at all",
-      "Required before any coding starts",
-      "Owned only by business analysts",
+      "Valued less than collaboration",
+      "Valued less than responding to change",
+      "Valued less than individuals",
       "Valued less than working software"
     ],
     "correct": [
@@ -2957,12 +2957,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "How does a user story map arrange stories?",
-    "explanation": "A story map lays stories out along the steps a user takes, with priority shown top to bottom, so releases can be sliced across the journey.",
+    "explanation": "A story map lays stories out along the steps a user takes, with priority shown top to bottom. Workflow columns are a Kanban board, the four groups are MoSCoW, and size groups are affinity estimating.",
     "options": [
-      "By component, then by technical layer",
+      "Grouped by similar size",
       "Along the user journey, by priority",
-      "By developer and due date",
-      "By cost, highest first"
+      "In columns by workflow state",
+      "In must, should, could, won't"
     ],
     "correct": [
       1
@@ -2978,12 +2978,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What is work item age?",
-    "explanation": "The Kanban Guide defines work item age as the elapsed time between when a work item started and the current date.",
+    "explanation": "The Kanban Guide defines work item age as the elapsed time between when a work item started and the current date. Start to finish is cycle time, request to delivery is lead time, and items per week is throughput.",
     "options": [
-      "Time left until its due date",
-      "Time since the customer requested it",
+      "Items finished per week",
+      "Time from request to delivery",
       "Time since an open item started",
-      "Time it took to finish"
+      "Time from start to finish"
     ],
     "correct": [
       2
@@ -3062,12 +3062,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What do the manifesto principles say to do for motivated individuals?",
-    "explanation": "The principle says to build projects around motivated individuals, give them the environment and support they need, and trust them to get the job done.",
+    "explanation": "The principle says to build projects around motivated individuals, give them the environment and support they need, and trust them to get the job done. The others come from other principles.",
     "options": [
-      "Monitor their progress closely",
+      "Talk face to face",
       "Give support and trust them",
-      "Pay them by output",
-      "Assign work to their strengths"
+      "Reflect at regular intervals",
+      "Keep a constant pace"
     ],
     "correct": [
       1
@@ -3251,11 +3251,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What is a persona used for in agile analysis?",
-    "explanation": "A persona is a fictional user who stands for a group of real users, helping the team understand their needs.",
+    "explanation": "A persona is a fictional user who stands for a group of real users. A user story describes a need, a journey or story map shows steps, and a prototype tests an idea.",
     "options": [
-      "Recording the team's roles",
-      "Describing a single test case",
-      "Assigning work to people",
+      "Describing a need from a user's view",
+      "Testing a design idea quickly",
+      "Showing a user's steps in order",
       "Representing a type of user"
     ],
     "correct": [
@@ -3399,12 +3399,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Which statement fits an increment in agile delivery?",
-    "explanation": "An increment is a working, usable piece of the product that adds value.",
+    "explanation": "An increment is a working, usable piece of the product that adds value. The others describe an iteration backlog, the product backlog and the definition of done.",
     "options": [
-      "Any code merged that week",
+      "The ordered list of all work",
       "Usable and of value on its own",
-      "A design document for review",
-      "Every task in the sprint done"
+      "The plan for one iteration",
+      "The quality bar for done work"
     ],
     "correct": [
       1
@@ -3546,12 +3546,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What is the purpose of a product roadmap?",
-    "explanation": "A roadmap communicates where the product is heading and roughly when, without fixing every task or date.",
+    "explanation": "A roadmap communicates where the product is heading and roughly when. Boards, burndowns and story maps show other things.",
     "options": [
       "Show planned direction over time",
-      "Track the current sprint",
-      "List every task for the year",
-      "Fix dates for all features"
+      "Show each user's journey",
+      "Show the work in each state",
+      "Show the work left in a sprint"
     ],
     "correct": [
       0
@@ -3695,10 +3695,10 @@
     "stem": "What does a cumulative flow diagram show?",
     "explanation": "A cumulative flow diagram stacks the count of items in each workflow state over time, so widening bands reveal queues.",
     "options": [
-      "Defects by severity and month",
+      "Points finished per iteration",
       "Work in each state over time",
-      "Hours per team member",
-      "Cost against budget"
+      "Scope done against total scope",
+      "Work left in the sprint by day"
     ],
     "correct": [
       1
@@ -3737,9 +3737,9 @@
     "stem": "What do control limits on a run chart help a team see?",
     "explanation": "Control limits mark the range of normal variation, so points outside them signal a change worth investigating.",
     "options": [
-      "The team's maximum possible velocity",
-      "The budget ceiling",
-      "The WIP limit for testing",
+      "Work in progress per column",
+      "Time left in the iteration",
+      "Items finished per week",
       "Unusual variation in a process"
     ],
     "correct": [
@@ -3777,11 +3777,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How often do the manifesto principles say working software should be delivered?",
-    "explanation": "The principle says to deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale.",
+    "explanation": "The principle says to deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale. The other phrases come from other principles.",
     "options": [
-      "Only when every feature is done",
-      "Once, at the very end of the project",
-      "Each quarter, on a fixed date",
+      "At a constant, sustainable pace",
+      "At regular intervals, to reflect",
+      "Daily, with business people",
       "Weeks to months, shorter preferred"
     ],
     "correct": [
@@ -3861,12 +3861,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How do the manifesto principles say business people and developers should work?",
-    "explanation": "The principle reads that business people and developers must work together daily throughout the project.",
+    "explanation": "The principle reads that business people and developers must work together daily throughout the project. The other phrases come from other principles.",
     "options": [
-      "Via written specs",
+      "At regular intervals",
       "Together daily",
-      "Through a change board",
-      "At monthly reviews"
+      "Face-to-face",
+      "At a sustainable pace"
     ],
     "correct": [
       1
@@ -4032,11 +4032,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "According to the Kanban Guide, what does controlling WIP create?",
-    "explanation": "The Kanban Guide says controlling WIP should create a pull system, where work starts only when there is capacity.",
+    "explanation": "The Kanban Guide says controlling WIP should create a pull system, where work starts only when there is capacity. The definition of workflow and SLE are set by the team, not created by WIP control.",
     "options": [
-      "A fixed schedule",
-      "A push system",
-      "A larger backlog",
+      "A cumulative flow diagram",
+      "A definition of workflow",
+      "A service level expectation",
       "A pull system"
     ],
     "correct": [
@@ -4182,11 +4182,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What is a service level expectation in Kanban?",
-    "explanation": "The Kanban Guide defines the SLE as a forecast of how long an item should take, with an elapsed time and a probability, based on historical cycle time.",
+    "explanation": "The Kanban Guide defines the SLE as a forecast of how long an item should take, with an elapsed time and a probability, based on historical cycle time. The others are throughput, work item age and WIP.",
     "options": [
-      "Promised date for each item",
-      "Contract penalty for lateness",
-      "Target team velocity per sprint",
+      "Time since an open item started",
+      "Items finished per unit of time",
+      "Count of items started, not finished",
       "Cycle time forecast with a probability"
     ],
     "correct": [

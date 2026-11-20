@@ -1,0 +1,22 @@
+[
+ {
+  "id": "G1C03",
+  "issue": "Pool ref 97.303(h)(1) is outdated: the 2.8 kHz limit is now in 97.303(h)(3) (which also adds the contiguous 5351.5-5366.5 kHz segment). Explanation cites 97.303(h)(3). Key 2.8 kHz still correct."
+ },
+ {
+  "id": "G1C04",
+  "issue": "Pool ref 97.303(i) is wrong today: 97.303(i) is now the 7.2-7.3 MHz broadcast rule; the antenna gain record rule is in 97.313(i). Explanation cites 97.313(i). Key still correct."
+ },
+ {
+  "id": "G1B05",
+  "issue": "Pool ref typo '97.111((5)(b)'; the rule is 97.111(b)(5). Explanation cites 97.111(b)(5). Key correct."
+ },
+ {
+  "id": "G1D04",
+  "issue": "Pool ref '97.509(3)(i)(c)' is malformed; the rules are 97.509(a) (team of 3 VEs) and 97.509(b)(3)(i) (General or higher for Technician exams). Explanation cites [97.509(a), (b)(3)(i)]. Key correct."
+ },
+ {
+  "id": "G1B02",
+  "issue": "Minor wording: 97.203(b) says a beacon must not concurrently transmit on more than one channel in the same band from the same location, not 'no more than one beacon station'. Key still the best answer; not changed."
+ }
+]

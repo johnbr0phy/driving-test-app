@@ -1,7 +1,7 @@
 # Domain I Mindset (28%), tasks 4 to 7: build transparency, foster
 # psychological safety, shorten feedback loops, embrace change.
 # 8 per test, 12 drill-only.
-from helpers import S, M
+from helpers import S, M, N
 
 TR = "Mindset 4: Build transparency"
 PS = "Mindset 5: Foster psychological safety"
@@ -54,8 +54,8 @@ S(2, TR, 2,
   "Daily synchronization makes progress and impediments visible to the whole team. Sprint planning, the review and the retrospective cover the others."),
 S(2, PS, 2,
   "A junior developer spots a flaw in a senior's design but stays quiet. What does this suggest?",
-  ["Low psychological safety", "A gap in design skills", "Unclear acceptance criteria", "A weak definition of done"],
-  "When people are afraid to speak up about a problem they have seen, the team lacks psychological safety."),
+  ["Low psychological safety", "Weak design review process", "Low team engagement", "Unclear team roles"],
+  "When people are afraid to speak up about a problem they have seen, the team lacks psychological safety. A review process or roles would not explain the silence."),
 S(2, PS, 1,
   "How should constructive feedback be given?",
   ["Specific, timely and about behavior", "Balanced, with praise around it", "In writing, so there is a record", "Saved for a one-to-one meeting"],
@@ -64,10 +64,10 @@ S(2, FB, 2,
   "Which technique starts from users' needs, prototypes ideas and tests them with users quickly?",
   ["Design thinking", "Lean startup", "Value stream mapping", "Kanban"],
   "The outline names design thinking as a way to shorten feedback: empathize with users, prototype and test quickly. Lean startup centers on build, measure and learn for a business idea."),
-S(2, FB, 2,
-  "A team has six weeks of budget left. Which ordering gets the most value in that time?",
-  ["Value per effort, highest first", "Value alone, highest first", "Effort alone, lowest first", "Risk alone, highest first"],
-  "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable."),
+N(2, FB, 2,
+  "Six weeks of budget remain. Item A gives 30 value points for 10 effort, B gives 24 for 6, C gives 40 for 20. What is the highest value per effort point?",
+  4, [2, 3, 6],
+  "Value per effort is A 30 / 10 = 3, B 24 / 6 = 4 and C 40 / 20 = 2, so B goes first with 4. Taking the most valuable item, C, first spends the budget on the lowest return."),
 S(2, CH, 2,
   "A team learns that users ignore half the planned features. What should it do?",
   ["Adapt the product to how it is used", "Finish the planned features first", "Add onboarding for the unused features", "Survey users at the next release"],
@@ -99,9 +99,9 @@ S(0, PS, 2,
   ["Encourage challenging the status quo", "Encourage dialogue over debate", "Promote a no-blame culture", "Solicit constructive feedback"],
   "All four are enablers of Foster Psychological Safety; encouraging people to challenge the status quo is the one about questioning how things are done."),
 S(0, PS, 2,
-  "A practitioner asks for feedback on their facilitation and hears meetings run long. What should they do next?",
-  ["Shorter format, then ask again", "Shorter format, no follow-up", "Same format, shorter agenda", "Same format, ask again later"],
-  "The outline says to solicit feedback and act on it; checking again shows whether the change worked."),
+  "A practitioner hears from the team that their meetings run long. Which psychological safety enabler applies?",
+  ["Solicit and provide feedback, then act on it", "Encourage dialogue over debate", "Promote a no-blame culture", "Encourage challenging the status quo"],
+  "Under Foster Psychological Safety the outline says to solicit and provide constructive feedback and act on it, which is what the practitioner should now do."),
 S(0, FB, 1,
   "What is the main benefit of shorter iterations?",
   ["Faster feedback on the product", "Less testing per release", "More accurate long-range plans", "Higher team velocity"],

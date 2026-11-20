@@ -45,6 +45,7 @@ CHECKS = {
     "Planned value is 50,000 and earned value is 40,000": f"{40000 / 50000:g}",
     "20% chance of happening and would cost 15 days": f"{0.2 * 15:g}",
     "40% probability and would cost 25 story points": f"{0.4 * 25:g}",
+    "Item A gives 30 value points for 10 effort": str(max(30 // 10, 24 // 6, 40 // 20)),
 }
 
 

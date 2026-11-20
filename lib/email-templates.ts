@@ -95,7 +95,7 @@ ${emailPreheader(preheader)}
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: ${brand.light};"><tr><td align="center" style="padding: 30px 12px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 1px solid ${brand.border}; border-radius: 18px; overflow: hidden;">
 ${banner
-  ? `<tr><td style="padding: 0; line-height: 0;">
+  ? `<tr><td style="padding: 24px 24px 0; line-height: 0;">
 <img src="${banner.src}" width="${banner.width}" height="${banner.height}" alt="${esc(banner.alt)}" style="width: 100%; max-width: ${banner.width}px; height: auto; display: block; border: 0;">
 </td></tr>`
   : `<tr><td align="center" style="padding: 28px 28px 12px;">
@@ -623,8 +623,8 @@ export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alr
     banner: {
       src: `${SITE}/email/million-questions.jpg`,
       alt: "Tigertest tigers celebrating 1,000,000 questions answered, now with 500 tests",
-      width: 560,
-      height: 295,
+      width: 512,
+      height: 270,
     },
     eyebrow: "1,000,000 QUESTIONS",
     title: MILLIONTH_SUBJECT,

@@ -303,7 +303,7 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What do story points estimate?",
-    "explanation": "Story points are a relative sizing unit that compares items with each other. Effort with no interruptions is ideal time, and elapsed time is cycle time.",
+    "explanation": "Story points are a relative sizing unit that compares items with each other. Effort with no interruptions is ideal time, and elapsed time is measured after the work, not estimated relative to other items.",
     "options": [
       "Order of business value",
       "Relative size of the work",
@@ -409,7 +409,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team's last three iterations delivered 20, 24 and 22 points. 132 points remain. About how many iterations are left?",
-    "explanation": "Average velocity is (20 + 24 + 22) divided by 3, which is 22. 132 divided by 22 is 6 iterations. Using the best iteration alone (24) gives 5.5, which rounds down to an optimistic 5.",
+    "explanation": "Average velocity is (20 + 24 + 22) divided by 3, which is 22. 132 divided by 22 is 6 iterations. Using the best iteration alone (24) gives 5.5, an optimistic forecast: 5 iterations at that pace would still leave work.",
     "options": [
       "5",
       "6",
@@ -893,10 +893,10 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How does a team confirm an iteration's deliverables are acceptable?",
-    "explanation": "The outline says to validate that iteration deliverables meet acceptance criteria. The definition of done covers quality for every item; acceptance criteria say whether this one meets the customer's need.",
+    "explanation": "The outline says to validate that iteration deliverables meet acceptance criteria. Velocity, burndowns and hours show progress and effort, not whether the deliverable meets the customer's need.",
     "options": [
-      "Check against the definition of done",
-      "Ask the product owner's view",
+      "Check the team's velocity",
+      "Check the hours logged",
       "Check the sprint burndown",
       "Check against acceptance criteria"
     ],
@@ -1705,7 +1705,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A story is vague and the team cannot size it. What should happen?",
-    "explanation": "Clarifying the backlog item comes before sizing or splitting it. A spike explores a technical unknown, not a vague requirement.",
+    "explanation": "Clarifying the backlog item comes before sizing or splitting it. When the need itself is unclear, the product owner can clarify it directly, which is faster than a spike.",
     "options": [
       "Clarify it with the owner",
       "Size it as an epic",
@@ -2853,7 +2853,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "An impediment is outside the team's control. What should the practitioner do?",
-    "explanation": "Managing impediments includes monitoring them and getting help from outside the team when it cannot remove them alone. Swarming works only on impediments inside the team's control.",
+    "explanation": "Managing impediments includes monitoring and controlling them; when one is outside the team's control, removing it needs people outside the team. Swarming works only on impediments inside the team's control.",
     "options": [
       "Swarm on it as a team",
       "Log it on the board and wait",

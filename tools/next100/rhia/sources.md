@@ -103,6 +103,17 @@ count. Multiple choice only, like the real exam.
   https://psnet.ahrq.gov/glossary-0 (fetched 2026-11-19).
 - HHS OIG exclusions and the LEIE: https://oig.hhs.gov/exclusions/ (fetched 2026-11-19).
 
+- More rules read 2026-11-19 on law.cornell.edu for the rewritten items: 45 CFR 164.306(d)
+  (addressable specifications), 164.310 (physical safeguards), 164.502(a)(2) (required
+  disclosures) and 164.524(a)(1)(ii) (litigation exception):
+  https://www.law.cornell.edu/cfr/text/45/164.306 (fetched 2026-11-19); 42 USC 12112 (ADA undue
+  hardship): https://www.law.cornell.edu/uscode/text/42/12112 (fetched 2026-11-19); 42 CFR 413.70
+  (CAHs paid 101 percent of reasonable cost): https://www.law.cornell.edu/cfr/text/42/413.70
+  (fetched 2026-11-19); 42 CFR 412.4 (transfers, geometric mean length of stay):
+  https://www.law.cornell.edu/cfr/text/42/412.4 (fetched 2026-11-19); Federal Rule of Civil
+  Procedure 34 (electronically stored information): https://www.law.cornell.edu/rules/frcp/rule_34
+  (fetched 2026-11-19).
+
 Management and leadership items (Lewin's change stages, SWOT, SMART goals, job analysis and job
 evaluation, Kirkpatrick levels, Herzberg's factors, conflict modes, span of control, budgets,
 critical path, Gantt charts, scope creep) are kept to the standard definitions taught under the

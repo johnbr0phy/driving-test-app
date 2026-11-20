@@ -5887,6 +5887,20 @@
     --brand-border-light: 276 60% 90%;
     --brand-gradient-to: 290 80% 97%;
   }
+
+  /* PMI-ACP theme: deep leaf green (v2 exam; matches lib/v2/exams/pmiacp.ts theme) */
+  [data-theme="pmiacp"] {
+    --brand: 95 90% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 95 60% 95%;
+    --brand-hover: 95 90% 14%;
+    --brand-dark: 95 90% 12%;
+    --brand-darker: 95 85% 8%;
+    --brand-muted: 95 30% 65%;
+    --brand-border: 95 30% 76%;
+    --brand-border-light: 95 25% 88%;
+    --brand-gradient-to: 110 50% 95%;
+  }
   /* MLS(ASCP) Medical Laboratory Scientist theme: muted mauve */
   [data-theme="ascpmls"] {
     --brand: 300 25% 42%;
@@ -12213,6 +12227,17 @@
     --brand-muted: 276 45% 45%;
     --brand-dark: 276 95% 65%;
     --brand-darker: 276 90% 78%;
+  }
+  .dark [data-theme="pmiacp"] {
+    --brand: 95 90% 27.5%;
+    --brand-hover: 95 90% 19.5%;
+    --brand-light: 95 45% 13%;
+    --brand-gradient-to: 110 40% 11%;
+    --brand-border-light: 95 25% 24%;
+    --brand-border: 95 30% 34%;
+    --brand-muted: 95 30% 45%;
+    --brand-dark: 95 90% 65%;
+    --brand-darker: 95 85% 78%;
   }
   .dark [data-theme="r410a"] {
     --brand: 287 75% 50%;

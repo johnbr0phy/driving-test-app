@@ -1572,6 +1572,11 @@
   "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
   "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
  ],
+ "pmiacp": [
+  "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf",
+  "https://www.pmi.org/certifications/agile-acp",
+  "https://agilemanifesto.org/"
+ ],
  "pmp": [
   "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf",
   "https://www.pmi.org/certifications/project-management-pmp/new-exam"

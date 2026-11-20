@@ -134,6 +134,20 @@ read from their Internet Archive captures of the same ahajournals.org pages, fet
 
 ## Safety, privacy and medications
 
+- CDC, Transmission-Based Precautions, fetched 2026-11-19:
+  https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html
+  Contact: gown and gloves on entry, removed before leaving, dedicated or disinfected shared
+  equipment. Droplet: mask on entry, patient masked for transport. Airborne: fit-tested N95,
+  AIIR or a private room with the door closed.
+- CDC, Clinical Safety: Hand Hygiene for Healthcare Workers, fetched 2026-11-19:
+  https://www.cdc.gov/clean-hands/hcp/clinical-safety/index.html
+  Before touching a patient, after touching the patient or surroundings, right after removing
+  gloves; alcohol rub preferred unless hands are visibly soiled; soap and water for C. difficile
+  outbreaks; rub about 20 seconds.
+- MedlinePlus, Informed consent for adults, fetched 2026-11-19:
+  https://medlineplus.gov/ency/patientinstructions/000445.htm
+  What must be explained; written consent for complex tests; not required in an emergency when
+  delay would be dangerous; a surrogate decision-maker consents for a patient who cannot.
 - OSHA Bloodborne Pathogens standard, 29 CFR 1910.1030, fetched 2026-11-19:
   https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030
   Hand washing after glove removal, no recapping or bending, sharps containers, no eating in

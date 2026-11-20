@@ -15,6 +15,8 @@ export const ro: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Progresul tău cel mai recent nu a fost încă salvat în cont. Ține pagina deschisă și încearcă din nou.",
+    syncRetry: "Încearcă din nou",
     logOut: "Deconectează-te",
     signIn: "Conectează-te",
     signUp: "Înregistrează-te",
@@ -77,6 +79,7 @@ export const ro: TranslationKeys = {
     moreToUnlock: "până deblochezi antrenamentul și testele",
     freeBottomYourStats: "Statisticile tale",
     freeBottomCommonMistakes: "Greșeli frecvente",
+    urgencyTitle: "Ai puțin timp? Învață mai întâi întrebările la care greșește toată lumea.",
     freeBottomDesc: "Ai examenul curând? Exersează cele 20 de întrebări la care greșește aproape toată lumea.",
     premiumBottomYourStats: "Statisticile tale",
     premiumBottomCommonMistakes: "Greșeli frecvente",

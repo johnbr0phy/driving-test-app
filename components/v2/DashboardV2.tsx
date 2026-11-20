@@ -37,6 +37,7 @@ import { useHeroVariant } from "@/hooks/useHeroVariant";
 import { regionOfTest } from "@/lib/region";
 import { useV2Language, useV2Ui } from "@/lib/v2/ui";
 import type { Language } from "@/i18n";
+import { useTrackDashboardView } from "@/hooks/useTrackDashboardView";
 
 /** Same ladder as the v1 dashboards: worried at 0, beaming at 100%. */
 function tigerFace(done: number, total: number, examId: string): string {
@@ -51,6 +52,7 @@ function shortDate(iso: string, examId: string, lang: Language) {
 }
 
 export function DashboardV2({ exam }: { exam: ExamV2Config }) {
+  useTrackDashboardView();
   const routes = v2Routes(exam);
   const ui = useV2Ui().dashboard;
   const heroVariant = useHeroVariant();

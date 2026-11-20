@@ -88,10 +88,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  // Small files: every visit fetches the favicon, and the 195 KB tiger.png
+  // used here was about 4.6 GB of transfer a week (Nov 2026).
   icons: {
-    icon: "/tiger.png",
-    shortcut: "/tiger.png",
-    apple: "/tiger.png",
+    icon: { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+    shortcut: "/favicon-48.png",
+    apple: "/icon-192.png",
   },
   manifest: "/manifest.json",
 };

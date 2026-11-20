@@ -10,6 +10,8 @@ export const vi: TranslationKeys = {
   // Common
   common: {
     dmvHeaderTitle: "Thi Thử DMV",
+    syncFailed: "Tiến độ mới nhất của bạn chưa được lưu vào tài khoản. Hãy giữ trang này mở và thử lại.",
+    syncRetry: "Thử lại",
     logOut: "Đăng xuất",
     signIn: "Đăng nhập",
     signUp: "Đăng ký",

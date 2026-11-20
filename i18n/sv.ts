@@ -15,6 +15,8 @@ export const sv: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Dina senaste framsteg har inte sparats på ditt konto än. Håll sidan öppen och försök igen.",
+    syncRetry: "Försök igen",
     logOut: "Logga ut",
     signIn: "Logga in",
     signUp: "Skapa konto",
@@ -77,6 +79,7 @@ export const sv: TranslationKeys = {
     moreToUnlock: "kvar tills träning och prov låses upp",
     freeBottomYourStats: "Din statistik",
     freeBottomCommonMistakes: "Vanliga fel",
+    urgencyTitle: "Ont om tid? Plugga först på frågorna som alla svarar fel på.",
     freeBottomDesc: "Provet snart? Öva på de 20 frågor som nästan alla svarar fel på.",
     premiumBottomYourStats: "Din statistik",
     premiumBottomCommonMistakes: "Vanliga fel",

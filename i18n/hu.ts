@@ -15,6 +15,8 @@ export const hu: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "A legutóbbi haladásod még nincs elmentve a fiókodba. Hagyd nyitva ezt az oldalt, és próbáld újra.",
+    syncRetry: "Próbáld újra",
     logOut: "Kijelentkezés",
     signIn: "Bejelentkezés",
     signUp: "Regisztráció",
@@ -77,6 +79,7 @@ export const hu: TranslationKeys = {
     moreToUnlock: "kell még a gyakorlás és a tesztek feloldásához",
     freeBottomYourStats: "Statisztikáid",
     freeBottomCommonMistakes: "Gyakori hibák",
+    urgencyTitle: "Kevés az idő? Először azokat a kérdéseket tanuld, amelyeken mindenki elbukik.",
     freeBottomDesc: "Közeleg a vizsga? Gyakorold azt a 20 kérdést, amelyen szinte mindenki elcsúszik.",
     premiumBottomYourStats: "Statisztikáid",
     premiumBottomCommonMistakes: "Gyakori hibák",

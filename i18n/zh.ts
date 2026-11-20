@@ -10,6 +10,8 @@ export const zh: TranslationKeys = {
   // Common
   common: {
     dmvHeaderTitle: "DMV 模拟考试",
+    syncFailed: "你最近的进度尚未保存到你的账户。请保持此页面打开并重试。",
+    syncRetry: "重试",
     logOut: "退出登录",
     signIn: "登录",
     signUp: "注册",

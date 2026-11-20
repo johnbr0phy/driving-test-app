@@ -15,6 +15,8 @@ export const el: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Η πιο πρόσφατη πρόοδός σου δεν έχει αποθηκευτεί ακόμη στον λογαριασμό σου. Κράτησε αυτή τη σελίδα ανοιχτή και δοκίμασε ξανά.",
+    syncRetry: "Δοκίμασε ξανά",
     logOut: "Αποσύνδεση",
     signIn: "Σύνδεση",
     signUp: "Εγγραφή",
@@ -77,6 +79,7 @@ export const el: TranslationKeys = {
     moreToUnlock: "ακόμα για να ξεκλειδώσεις την εξάσκηση και τα τεστ",
     freeBottomYourStats: "Τα στατιστικά σου",
     freeBottomCommonMistakes: "Συχνά λάθη",
+    urgencyTitle: "Λίγος χρόνος; Μελέτησε πρώτα τις ερωτήσεις που όλοι κάνουν λάθος.",
     freeBottomDesc: "Έχεις εξέταση σύντομα; Δούλεψε τις 20 ερωτήσεις που οι περισσότεροι απαντούν λάθος.",
     premiumBottomYourStats: "Τα στατιστικά σου",
     premiumBottomCommonMistakes: "Συχνά λάθη",

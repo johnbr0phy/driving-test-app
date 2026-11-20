@@ -14,6 +14,8 @@ export const nl: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Je laatste voortgang is nog niet opgeslagen in je account. Houd deze pagina open en probeer het opnieuw.",
+    syncRetry: "Opnieuw proberen",
     logOut: "Uitloggen",
     signIn: "Inloggen",
     signUp: "Aanmelden",
@@ -76,6 +78,7 @@ export const nl: TranslationKeys = {
     moreToUnlock: "nog om training en toetsen te ontgrendelen",
     freeBottomYourStats: "Jouw statistieken",
     freeBottomCommonMistakes: "Veelgemaakte fouten",
+    urgencyTitle: "Weinig tijd? Leer eerst de vragen die iedereen fout heeft.",
     freeBottomDesc: "Examen binnenkort? Oefen de 20 vragen die iedereen fout heeft.",
     premiumBottomYourStats: "Jouw statistieken",
     premiumBottomCommonMistakes: "Veelgemaakte fouten",

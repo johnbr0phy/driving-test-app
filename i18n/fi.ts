@@ -15,6 +15,8 @@ export const fi: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Uusinta edistymistäsi ei ole vielä tallennettu tilillesi. Pidä tämä sivu auki ja yritä uudelleen.",
+    syncRetry: "Yritä uudelleen",
     logOut: "Kirjaudu ulos",
     signIn: "Kirjaudu sisään",
     signUp: "Rekisteröidy",
@@ -77,6 +79,7 @@ export const fi: TranslationKeys = {
     moreToUnlock: "jäljellä, kunnes harjoittelu ja kokeet aukeavat",
     freeBottomYourStats: "Omat tilastosi",
     freeBottomCommonMistakes: "Yleiset virheet",
+    urgencyTitle: "Vähän aikaa? Opettele ensin kysymykset, joihin kaikki vastaavat väärin.",
     freeBottomDesc: "Koe pian? Harjoittele ne 20 kysymystä, joissa melkein kaikki erehtyvät.",
     premiumBottomYourStats: "Omat tilastosi",
     premiumBottomCommonMistakes: "Yleiset virheet",

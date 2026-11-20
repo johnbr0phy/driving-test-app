@@ -38,6 +38,7 @@ import { useHeroVariant } from "@/hooks/useHeroVariant";
 import { useExamLocks } from "@/hooks/useExamLocks";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { useExamPaywall } from "@/components/exam/ExamLockScreen";
+import { useTrackDashboardView } from "@/hooks/useTrackDashboardView";
 
 function getTigerFace(complete: number, total: number, examId: string): string {
   const pct = Math.round((complete / total) * 100);
@@ -58,6 +59,7 @@ export function ExamDashboard({ exam }: { exam: ExamConfig }) {
 }
 
 function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
+  useTrackDashboardView();
   const { exam, routes, ui, lang, testLanguages, testLanguagePicked, setTestLanguage } = useLocalizedExam(source);
   const heroVariant = useHeroVariant();
   // Premium: the last quarter of the steps (lib/examLocks.ts).

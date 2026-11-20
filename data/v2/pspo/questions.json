@@ -73,9 +73,9 @@
     "skill": "Product Vision",
     "stem": "What does a Product Vision describe?",
     "options": [
-      "Long-term product roadmap",
-      "Product's target release date",
+      "Single objective for the Sprint",
       "Features planned for the product",
+      "Future state the team plans against",
       "Purpose of the product"
     ],
     "correct": [
@@ -137,7 +137,7 @@
     "stem": "Besides value, what else may the Product Owner weigh when ordering items?",
     "options": [
       "Item age and estimation confidence",
-      "Developer preference and skills",
+      "Learning goals of each Developer",
       "Risk, dependencies and learning",
       "Stakeholder seniority and urgency"
     ],
@@ -326,10 +326,10 @@
     "skill": "Product Backlog",
     "stem": "What does the Scrum Guide call the Product Backlog?",
     "options": [
-      "Ordered plan of tasks for the next release",
+      "Prioritized list of approved product requirements",
       "Emergent, ordered list of what the product needs",
-      "Ranked list of work the team has committed to",
-      "Prioritized list of approved product requirements"
+      "Concrete stepping stone toward the Product Goal",
+      "Plan by and for the Developers for one Sprint"
     ],
     "correct": [
       1
@@ -743,10 +743,10 @@
     "skill": "Product definition",
     "stem": "According to the Scrum Guide, what is a product?",
     "options": [
-      "Software a team maintains",
+      "Result of a funded project",
       "Vehicle to deliver value",
-      "Set of features for a market",
-      "Result of a funded project"
+      "Long-term objective for a team",
+      "Concrete stepping stone to a goal"
     ],
     "correct": [
       1
@@ -1396,9 +1396,9 @@
     "skill": "Value measures",
     "stem": "What does the Innovation Rate measure?",
     "options": [
-      "Number of new features released in each year",
-      "Share of ideas that reach production",
-      "Time from an idea to its first release",
+      "Share of time teams spend on product work",
+      "Usage of each feature by customers",
+      "Number of versions still supported",
       "Share of effort spent on new capabilities"
     ],
     "correct": [
@@ -1583,9 +1583,9 @@
     "skill": "Goals and empiricism",
     "stem": "In Evidence-Based Management, what is a hypothesis?",
     "options": [
-      "Goal that has been broken into steps",
       "Measure chosen to track one Key Value Area",
-      "Requirement that customers have confirmed",
+      "Test designed to prove or reject a belief",
+      "Current focus of improvement efforts",
       "Belief that one change will lead to a result"
     ],
     "correct": [
@@ -2185,7 +2185,7 @@
     "stem": "A new item could validate whether a whole feature area is worth building. Why might it be ordered high?",
     "options": [
       "It brings learning that guides later ordering",
-      "It is small and easy to estimate",
+      "It is a learning task for new Developers",
       "It makes the Sprint Goal easier to set",
       "It keeps key stakeholders engaged early on"
     ],
@@ -2226,10 +2226,10 @@
     "skill": "Value measures",
     "stem": "What does the Customer Usage Index help a Product Owner infer?",
     "options": [
-      "How satisfied customers are with the product overall",
+      "How much of the market is still untapped",
       "How often customers return each week",
       "How useful customers find each feature",
-      "How many customers use the product"
+      "How large the gap in customer satisfaction is"
     ],
     "correct": [
       2
@@ -2247,9 +2247,9 @@
     "skill": "Time-to-Market",
     "stem": "Which measure best shows how often value reaches users?",
     "options": [
-      "Sprint length",
-      "Throughput of items",
       "Velocity per Sprint",
+      "Customer cycle time",
+      "Lead time",
       "Release frequency"
     ],
     "correct": [
@@ -2358,10 +2358,10 @@
     "skill": "Value measures",
     "stem": "What does Time-to-Learn cover?",
     "options": [
-      "Start of a Sprint to its Sprint Review",
-      "Idea to the item being Done",
+      "Outage to service being restored",
+      "Start of release work to actual release",
       "Idea to learning from users' use of it",
-      "Release to the first user feedback"
+      "Ready-to-release to actual release"
     ],
     "correct": [
       2
@@ -2543,9 +2543,9 @@
     "stem": "What is the most reliable evidence of progress toward the Product Goal?",
     "options": [
       "Burn-down slope",
-      "Items refined",
+      "Velocity trend",
       "Done Increments",
-      "Velocity trend"
+      "Sprint Goals met"
     ],
     "correct": [
       2
@@ -2856,10 +2856,10 @@
     "skill": "Goals and empiricism",
     "stem": "In Evidence-Based Management, what is an experiment?",
     "options": [
-      "Prototype shown to the stakeholders for approval",
-      "Small release made to gather opinions",
+      "Measure chosen to track one Key Value Area",
+      "Belief that a change will lead to a result",
       "Test designed to prove or reject a hypothesis",
-      "Sprint used to explore a new technology"
+      "Small release made to gather opinions"
     ],
     "correct": [
       2
@@ -3054,7 +3054,7 @@
       "Adaptation",
       "Transparency",
       "Inspection",
-      "Focus"
+      "Openness"
     ],
     "correct": [
       1
@@ -3383,9 +3383,9 @@
     "skill": "Stakeholders",
     "stem": "A product has many stakeholders. Where do their needs come together?",
     "options": [
-      "Sprint Goal",
-      "Stakeholder map",
-      "Product Vision statement",
+      "Product Goal",
+      "Definition of Done",
+      "Sprint Backlog",
       "Ordered Product Backlog"
     ],
     "correct": [
@@ -3425,10 +3425,10 @@
     "skill": "Sprint Retrospective",
     "stem": "The Product Owner often misses the Sprint Retrospective. Why does this matter?",
     "options": [
-      "The Sprint cannot formally be closed",
+      "The Increment is not inspected",
       "Issues involving them go unaddressed",
-      "Stakeholder feedback is not reviewed",
-      "Developers lose the chance to replan"
+      "The Sprint Goal is not reviewed",
+      "The Product Backlog is not refined"
     ],
     "correct": [
       1
@@ -3467,9 +3467,9 @@
     "skill": "Value measures",
     "stem": "What does the Product Cost Ratio compare?",
     "options": [
-      "Development cost against support cost",
-      "Planned against actual cost",
-      "Product costs against its budget",
+      "Desired against current customer experience",
+      "Effort on new features against total effort",
+      "Revenue against the number of employees",
       "Product costs against its revenue"
     ],
     "correct": [
@@ -3569,9 +3569,9 @@
     "stem": "Which is the best example of an Immediate Tactical Goal?",
     "options": [
       "Become the market leader in our region by 2030",
-      "Double our customers within five years",
+      "Improve the sign-up experience for users",
       "Cut sign-up drop-off by 10% this quarter",
-      "Reach profitability in our third year"
+      "Help every family manage its money well"
     ],
     "correct": [
       2
@@ -3589,9 +3589,9 @@
     "skill": "Value measures",
     "stem": "What does the On-Product Index show?",
     "options": [
-      "Share of features customers actually use",
-      "Share of the budget spent on new features",
-      "Share of items Done on the first try",
+      "Share of effort spent on new capabilities",
+      "Number of versions still supported",
+      "Usage of each feature by customers",
       "Share of time teams spend on product work"
     ],
     "correct": [
@@ -3771,9 +3771,9 @@
     "stem": "Customer cycle time measures what?",
     "options": [
       "Start of release work to actual release",
-      "Order to the customer receiving the product",
-      "Sprint start to the Sprint Review",
-      "Request to the item being Done"
+      "Ready-to-release to actual release",
+      "Bug report to the fix being live",
+      "Idea to learning from users' use of it"
     ],
     "correct": [
       0
@@ -3857,9 +3857,9 @@
     "skill": "Value measures",
     "stem": "Release stabilization period measures the time spent on what?",
     "options": [
-      "Time to roll a release back",
       "Time between two releases",
-      "Testing before work is declared ready",
+      "Time from an idea to user learning",
+      "Time to restore a failed service",
       "Fixes after work is declared ready"
     ],
     "correct": [
@@ -4029,7 +4029,7 @@
     "stem": "Releases need two weeks of manual sign-off after each Increment is Done. What is the Product Owner's main concern?",
     "options": [
       "Increments pile up in the Sprint Backlog",
-      "Sprints must be lengthened to fit it",
+      "Developers lose time set aside for learning",
       "Users wait longer and learning slows",
       "The Definition of Done must be split"
     ],

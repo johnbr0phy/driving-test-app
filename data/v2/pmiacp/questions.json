@@ -1321,12 +1321,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Which practice keeps risk identification going throughout delivery?",
-    "explanation": "Risks and impediments are identified proactively and monitored all the way through delivery. A risk burn down reviewed every iteration does that; the others look at risk once or rarely.",
+    "explanation": "Risks and impediments are identified proactively and monitored all the way through delivery, which in agile means reviewing them every iteration.",
     "options": [
-      "Risk audit before each release",
-      "Risk burn down each iteration",
-      "Risk register signed at kickoff",
-      "Risk workshop at project start"
+      "Risk review each quarter",
+      "Risk review each iteration",
+      "Risk review each release",
+      "Risk review at each phase gate"
     ],
     "correct": [
       1
@@ -2042,16 +2042,16 @@
     "skill": "Mindset 3: Promote collaborative team environment",
     "difficulty": 1,
     "format": "single",
-    "stem": "Developers and testers sit apart and pass work over a wall. What helps most?",
-    "explanation": "Collaboration practices break down silos: one cross-functional team sharing a space and a goal. Joint standups, syncs and test tasks still leave two groups handing work over.",
+    "stem": "Which collaboration practice best breaks down a silo between developers and testers?",
+    "explanation": "Pairing has developers and testers do the work together, which builds shared ownership. Standups, environments and syncs keep two groups handing work over.",
     "options": [
-      "Seat them together as one team",
-      "Add testers to the daily standup",
-      "Hold a weekly sync between groups",
-      "Add a test task to each story"
+      "A joint daily standup",
+      "A shared test environment",
+      "Pairing developers with testers",
+      "A weekly integration sync"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -2066,13 +2066,13 @@
     "stem": "Which Kanban flow metric keeps rising while partly done work sits untouched?",
     "explanation": "Work item age is the time since an unfinished item started, so it grows every day the item waits. Cycle time is only known once the item finishes.",
     "options": [
+      "Work item age",
       "Throughput",
       "Velocity",
-      "Work item age",
       "Cycle time"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -2127,12 +2127,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team has six weeks of budget left. Which ordering gets the most value in that time?",
-    "explanation": "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable.",
+    "explanation": "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable. Highest value regardless of cost can burn the budget on one item.",
     "options": [
-      "Items in request order",
-      "Highest value per cost first",
       "Riskiest technical items first",
-      "Largest features first"
+      "Best return per unit of effort first",
+      "Lowest effort first",
+      "Highest value first, whatever the cost"
     ],
     "correct": [
       1
@@ -2637,12 +2637,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "After finding a defect's root cause, which action stops it coming back?",
-    "explanation": "Removing the cause is what stops the problem returning. A regression test detects a repeat but leaves the cause in place.",
+    "explanation": "Removing the cause is what stops the problem returning. A better test catches a repeat, and a new reviewer moves the problem, but neither removes the cause.",
     "options": [
-      "Logging it in the defect log",
-      "Adding a regression test",
-      "Removing the cause",
-      "Retesting the release"
+      "Change who reviews that code",
+      "Change the test that missed it",
+      "Change the process that let it in",
+      "Change the defect's priority"
     ],
     "correct": [
       2
@@ -3104,13 +3104,13 @@
     "skill": "Product 1: Refine product backlog",
     "difficulty": 1,
     "format": "single",
-    "stem": "Sizing backlog items together as a team draws mainly on what?",
-    "explanation": "The outline says to use tools and techniques to collectively size work, so the estimate reflects everyone who will do it.",
+    "stem": "Why should everyone who will do the work take part in sizing it?",
+    "explanation": "Collective sizing brings out what each person knows about the work, so hidden effort and risk come to light before the estimate is agreed.",
     "options": [
-      "The product owner's estimate",
-      "Past project budgets",
-      "Each person's velocity",
-      "Shared knowledge of the work"
+      "Senior views settle the number faster",
+      "The product owner hears every estimate",
+      "It matches the team's past velocity",
+      "Different views surface hidden work"
     ],
     "correct": [
       3
@@ -3188,13 +3188,13 @@
     "skill": "Mindset 5: Foster psychological safety",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team follows every practice exactly as first set up and never changes it. What should the practitioner encourage?",
-    "explanation": "Psychological safety includes encouraging people to challenge the status quo so the team keeps improving its own way of working.",
+    "stem": "Which outline enabler is about questioning the way the team already works?",
+    "explanation": "All four are enablers of Foster Psychological Safety; encouraging people to challenge the status quo is the one about questioning how things are done.",
     "options": [
-      "Challenging how things are done",
-      "Switching to a new framework",
-      "Copying other teams' practices",
-      "Adding more process rules"
+      "Encourage challenging the status quo",
+      "Solicit constructive feedback",
+      "Promote a no-blame culture",
+      "Encourage dialogue over debate"
     ],
     "correct": [
       0
@@ -3379,12 +3379,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "A team wants lessons from its retrospectives to reach other teams. What helps most?",
-    "explanation": "A community of practice is an environment to capture and share knowledge across teams. Backlogs, retrospective boards and release notes stay with one team or one audience.",
+    "explanation": "A community of practice is an environment to capture and share knowledge across teams, where people discuss and apply it. Newsletters, reviews and emails broadcast it once.",
     "options": [
-      "Add them to the sprint backlog",
+      "Post them in the company newsletter",
       "Share them in a community of practice",
-      "Include them in the release notes",
-      "Keep them on the retrospective board"
+      "Email them to all team leads",
+      "Present them at the sprint review"
     ],
     "correct": [
       1
@@ -3609,13 +3609,13 @@
     "skill": "Mindset 3: Promote collaborative team environment",
     "difficulty": 2,
     "format": "single",
-    "stem": "A newly formed group is polite and avoids any disagreement. What helps it develop?",
-    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Surfacing different views helps it work through that stage; norms, roles and an offsite do not by themselves.",
+    "stem": "A newly formed group is polite and never pushes back on ideas. What helps it develop?",
+    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Facilitating honest debate helps it through that stage; norms, roles and an offsite do not by themselves.",
     "options": [
       "Plan a team-building offsite",
-      "Clarify each member's role",
       "Agree team norms for meetings",
-      "Open discussion of differences"
+      "Clarify each member's role",
+      "Facilitated debate of real issues"
     ],
     "correct": [
       3
@@ -4144,9 +4144,9 @@
     "explanation": "Ordering by value against effort optimizes each increment: the highest value per unit of effort comes first.",
     "options": [
       "Do high value, low effort first",
-      "Do the highest risk first",
-      "Do the lowest effort first",
-      "Do the highest value first"
+      "Do high effort, low risk first",
+      "Do low effort, high risk first",
+      "Do high value, high risk first"
     ],
     "correct": [
       0

@@ -646,3 +646,29 @@ export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alr
     ].join("\n"),
   });
 }
+
+// ── Checkout recovery ────────────────────────────────────────────────────────
+// Sent by the Stripe webhook (checkout.session.expired) to a signed-in buyer
+// who opened checkout and left without paying (lib/checkoutRecovery.ts). The
+// button is Stripe's recovery link, which reopens the same checkout.
+
+export function checkoutRecoveryEmail(v: EmailVoice, recoveryUrl: string): string {
+  const inbox = EMAIL_INBOX.checkoutRecovery(v);
+  return emailShell({
+    voice: v,
+    eyebrow: "YOUR CHECKOUT",
+    title: inbox.subject,
+    preheader: inbox.preheader,
+    heading: "Your checkout is still here",
+    body: [
+      p("You started checking out for Tigertest Premium but didn't finish. No payment was taken."),
+      ...(v.hasPremium && v.premiumBenefits.length
+        ? [p(`<strong style="font-weight: 600;">On ${esc(v.shortName)}, Premium adds:</strong>`), ul(v.premiumBenefits)]
+        : []),
+      p("It's one payment, no subscription. If you'd like to finish, this link opens the same checkout again:"),
+      cta(esc(recoveryUrl), "Finish checking out"),
+      p("If something went wrong at checkout, just reply and tell me. It comes straight to me."),
+      signoff("Thanks,"),
+    ].join("\n"),
+  });
+}

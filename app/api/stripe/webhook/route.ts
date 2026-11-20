@@ -11,6 +11,10 @@ import { FieldValue } from 'firebase-admin/firestore';
 import { purchaseExam } from '@/lib/purchaseAttribution';
 import { guestSignInLink, isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
 import { SITE_URL } from '@/lib/siteUrl';
+import { checkoutRecoveryEmail } from '@/lib/email-templates';
+import { buildHtml, sendCronEmail } from '@/lib/cron-email';
+import { QuotaExhaustedError } from '@/lib/email-quota';
+import { CHECKOUT_RECOVERY_GAP_MS, CHECKOUT_RECOVERY_KEY, recoveryEligible, recoveryUrl } from '@/lib/checkoutRecovery';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -261,6 +265,39 @@ export async function POST(request: NextRequest) {
       const paymentIntent = event.data.object as Stripe.PaymentIntent;
       console.error('Payment failed:', paymentIntent.id);
       // Could send notification email here
+      break;
+    }
+
+    case 'checkout.session.expired': {
+      // Left checkout without paying: email Stripe's recovery link once
+      // (lib/checkoutRecovery.ts). Never fails the webhook.
+      const session = event.data.object as Stripe.Checkout.Session;
+      const userId = session.metadata?.userId;
+      const url = recoveryUrl(session);
+      if (!userId || !url) break;
+      try {
+        const user = (await getAdminDb().collection('users').doc(userId).get()).data();
+        const email = (await getAdminAuth().getUser(userId)).email ?? null;
+        if (!email || !recoveryEligible(user, email)) break;
+        const voice = voiceFor(purchaseExam(session.metadata?.location));
+        const outcome = await sendCronEmail(
+          userId,
+          email,
+          EMAIL_INBOX.checkoutRecovery(voice).subject,
+          buildHtml(checkoutRecoveryEmail(voice, url), userId),
+          CHECKOUT_RECOVERY_KEY,
+          { checkoutRecovery: { sessionId: session.id, examId: voice.id, at: new Date().toISOString() } },
+          undefined,
+          {
+            gapMs: CHECKOUT_RECOVERY_GAP_MS,
+            eligible: (fresh) => recoveryEligible(fresh, email),
+          }
+        );
+        console.log(`[webhook] checkout recovery for ${session.id}: ${outcome}`);
+      } catch (err) {
+        if (err instanceof QuotaExhaustedError) console.warn('[webhook] checkout recovery skipped: email budget used');
+        else console.error(`[webhook] checkout recovery for ${session.id} failed:`, err);
+      }
       break;
     }
 

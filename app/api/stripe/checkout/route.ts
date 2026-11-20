@@ -153,6 +153,10 @@ export async function POST(request: NextRequest) {
               quantity: 1,
             },
       ],
+      // A signed-in buyer who leaves gets a link back to this checkout by
+      // email once it expires (lib/checkoutRecovery.ts, the webhook sends it).
+      // Not for guests: their sign-in cookie is keyed to this session's id.
+      ...(isGuest ? {} : { after_expiration: { recovery: { enabled: true } } }),
       success_url: `${baseUrl}${returnPath}${returnJoin}session_id={CHECKOUT_SESSION_ID}&success=true`,
       cancel_url: `${baseUrl}${returnPath}${returnJoin}canceled=true`,
       metadata: {

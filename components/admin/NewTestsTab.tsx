@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import {
-  CARD, ROW, STICKY_COL, TableScroll, TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch,
+  CARD, ROW, STICKY_COL, ShowAllButton, TableScroll, TabError, TabHeader, TabLoading, fmtUpdated, useAdminFetch, useTopN,
 } from "@/components/admin/AdminTabParts";
 import type { IndexNowRunRow, NewTestsPayload } from "@/lib/server/newTestsAdmin";
 import type { BingSent } from "@/lib/newTests";
@@ -40,62 +40,57 @@ function BingCell({ b }: { b: BingSent | null }) {
   );
 }
 
-function SenderStatus({ label, at, now }: { label: string; at: string | null; now: number }) {
-  const stale = !at || now - Date.parse(at) > STALE_MS;
+const ago = (iso: string, now: number) => {
+  const h = Math.round((now - Date.parse(iso)) / 3_600_000);
+  return h < 1 ? "under 1h ago" : h < 48 ? `${h}h ago` : `${Math.round(h / 24)}d ago`;
+};
+
+/** One line above the table: quiet when Bing sending works, amber when a sender stopped or the last run failed. */
+function BingStatus({ data, notSent, total }: { data: NewTestsPayload["indexNow"]; notSent: number; total: number }) {
+  const now = Date.now();
+  const stale = (at: string | null) => !at || now - Date.parse(at) > STALE_MS;
+  const lastFailed = data.runs.find((r) => r.count > 0 && !r.ok);
+  const problems: string[] = [];
+  if (stale(data.lastDeploy)) problems.push(data.lastDeploy ? `deploy sender last ran ${ago(data.lastDeploy, now)}` : "deploy sender has no run yet");
+  if (stale(data.lastNightly)) problems.push(data.lastNightly ? `nightly sender last ran ${ago(data.lastNightly, now)}` : "nightly sender has no run yet");
+  if (lastFailed) problems.push(`Bing rejected the ${fmtWhen(lastFailed.at)} run (${lastFailed.status || "no answer"})`);
+  const bad = problems.length > 0;
   return (
-    <div className={`rounded-lg border px-3 py-2 text-sm ${stale ? "border-amber-300 bg-amber-50 dark:border-amber-800 dark:bg-amber-950" : "border-gray-200 dark:border-gray-800"}`}>
-      <div className="text-xs text-gray-500 dark:text-gray-400">{label}</div>
-      <div className="font-medium text-gray-900 dark:text-gray-50">{at ? fmtWhen(at) : "No run recorded yet"}</div>
+    <div className={`rounded-lg border px-3 py-2 text-sm ${bad ? "border-amber-300 bg-amber-50 text-amber-900 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-100" : "border-gray-200 text-gray-600 dark:border-gray-800 dark:text-gray-300"}`}>
+      <span className="font-medium">Bing: </span>
+      {bad ? problems.join(" · ") : "sending works"}
+      <span className="text-gray-500 dark:text-gray-400"> · {total - notSent} of {total} tests sent</span>
     </div>
   );
 }
 
-function IndexNowCard({ data }: { data: NewTestsPayload["indexNow"] }) {
-  const now = Date.now();
-  const runs: IndexNowRunRow[] = data.runs;
+/** The IndexNow run log, closed by default, under the table. */
+function BingRuns({ runs }: { runs: IndexNowRunRow[] }) {
+  const top = useTopN(runs);
+  if (!runs.length) return null;
   return (
-    <div className={CARD}>
-      <h3 className="font-semibold text-gray-900 dark:text-gray-50">Sent to Bing</h3>
-      <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-        Every production deploy and a nightly job send recently changed pages to Bing through IndexNow (Bing feeds ChatGPT search).
-        Sent means Bing accepted the list; it does not tell us when a page is indexed.
-        {data.since ? <> Records start {fmtWhen(data.since)}.</> : <> Nothing recorded yet: the next deploy starts the record.</>}
+    <details className={CARD}>
+      <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">Bing send log ({runs.length} runs)</summary>
+      <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+        Each deploy and a nightly job send changed pages to Bing through IndexNow (Bing feeds ChatGPT search). Accepted does not mean indexed.
       </p>
-      <div className="mt-3 grid grid-cols-2 gap-2 sm:max-w-md">
-        <SenderStatus label="Last run after a deploy" at={data.lastDeploy} now={now} />
-        <SenderStatus label="Last nightly run" at={data.lastNightly} now={now} />
-      </div>
-      {runs.length > 0 && (
-        <TableScroll className="mt-3">
-          <table className="w-full text-sm">
-            <thead className="text-xs text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-800">
-              <tr className={ROW}>
-                <th className="px-3 py-2 text-left font-medium whitespace-nowrap">When</th>
-                <th className="px-3 py-2 text-left font-medium whitespace-nowrap">Run</th>
-                <th className={TH}>Pages</th>
-                <th className={TH}>Bing</th>
-                <th className="px-3 py-2 text-left font-medium">Test landings in it</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-              {runs.map((r, i) => (
-                <tr key={`${r.at}-${i}`} className={ROW}>
-                  <td className="px-3 py-2 whitespace-nowrap text-gray-500 dark:text-gray-400">{fmtWhen(r.at)}</td>
-                  <td className="px-3 py-2 whitespace-nowrap">{SOURCE_LABEL[r.source] ?? r.source}</td>
-                  <td className={TD}>{fmtInt(r.count)}</td>
-                  <td className={`${TD} ${r.ok ? "text-green-700 dark:text-green-300" : "text-red-600 dark:text-red-400"}`}>
-                    {r.count === 0 ? "nothing to send" : r.ok ? `accepted (${r.status})` : `failed (${r.status || "no answer"})`}
-                  </td>
-                  <td className="px-3 py-2 text-xs text-gray-600 dark:text-gray-300 min-w-[16rem]">
-                    {r.tests.length ? r.tests.map((t) => t.name).join(", ") : <span className="text-gray-400">none</span>}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </TableScroll>
-      )}
-    </div>
+      <ul className="mt-2 divide-y divide-gray-100 dark:divide-gray-800">
+        {top.shown.map((r, i) => (
+          <li key={`${r.at}-${i}`} className="py-2 text-sm">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+              <span className="text-gray-900 dark:text-gray-50">{fmtWhen(r.at)} · {SOURCE_LABEL[r.source] ?? r.source}</span>
+              <span className={`text-xs tabular-nums ${r.count === 0 ? "text-gray-500 dark:text-gray-400" : r.ok ? "text-green-700 dark:text-green-300" : "text-red-600 dark:text-red-400"}`}>
+                {r.count === 0 ? "nothing to send" : `${fmtInt(r.count)} pages · ${r.ok ? "accepted" : `failed (${r.status || "no answer"})`}`}
+              </span>
+            </div>
+            {r.tests.length > 0 && (
+              <div className="mt-0.5 text-xs text-gray-500 dark:text-gray-400 break-words">{r.tests.map((t) => t.name).join(", ")}</div>
+            )}
+          </li>
+        ))}
+      </ul>
+      <ShowAllButton hidden={top.hidden} all={top.all} onToggle={top.toggle} noun="older runs" />
+    </details>
   );
 }
 
@@ -125,7 +120,7 @@ export function NewTestsTab() {
         refreshing={refreshing}
         updating={updating}
       />
-      {data.indexNow && <IndexNowCard data={data.indexNow} />}
+      {data.indexNow && <BingStatus data={data.indexNow} notSent={notSent} total={rows.length} />}
       <TableScroll className={`${CARD} !p-0`}>
         <table className="w-full text-sm">
           <thead className="text-xs text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-800">
@@ -171,6 +166,7 @@ export function NewTestsTab() {
           </tfoot>
         </table>
       </TableScroll>
+      {data.indexNow && <BingRuns runs={data.indexNow.runs} />}
       <p className="text-xs text-gray-500 dark:text-gray-400">
         Traffic and signups count new people whose first page was one of the test&apos;s pages (landing, app or topic pages).
         Questions count every answer on the test. Sales are Premium purchases made from the test, after refunds.

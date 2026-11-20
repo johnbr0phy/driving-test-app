@@ -1,0 +1,1 @@
+- **CNA** (nurse aide written exam, `/cna/*`, landing `/cna-practice-test`): `data/cna-questions.json` (200 questions on the NNAAP outline), test IDs 1101-1104, sets 1101-1104 (by topic), state `CNA`, 70% pass. 8 ADL, 19 basic nursing, 4 restorative, 5 emotional, 1 spiritual/cultural, 4 communication, 4 rights, 1 legal, 4 team per test.

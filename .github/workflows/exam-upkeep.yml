@@ -83,7 +83,7 @@ jobs:
           show_full_output: true
           claude_args: --max-turns 400 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
-            Read CLAUDE.md (especially "Question quality" and each task's exam entry) and
+            Read CLAUDE.md, docs/claude/question-quality.md and each task's docs/exams/<examId>.md and
             .claude/skills/exam-bank/SKILL.md, then ${{ steps.pick.outputs.file }}. Nobody
             reviews this work by hand: a second reviewer checks it and it is merged. You
             own keeping these exams in step with the real ones.
@@ -96,7 +96,7 @@ jobs:
               effect (or takes effect within 7 days), make it: bank sources (never only
               the built JSON) then the exam's build script, every translated bank of the
               exam, blueprint and sets in its config, lib/examFacts.ts, lib/examCosts.json,
-              the landing, the CLAUDE.md line and a dated note in its sources.md. Then set
+              the landing, the docs/exams/<examId>.md notes and a dated note in its sources.md. Then set
               "done" on the event to today's date. If the official body has not published
               it yet, or it is further off than the event says, change nothing else and
               set "recheck" on the event to the date to look again (30 days on, or the new
@@ -106,7 +106,7 @@ jobs:
             - review: a yearly review of one exam. Read its official outline, handbook or
               rules page (the exam's sources.md names them) and check everything Tigertest
               states against it today: format, length, time, pass mark, fees, topic weights,
-              the blueprint and sets, lib/examFacts.ts, the landing and the CLAUDE.md line,
+              the blueprint and sets, lib/examFacts.ts, the landing and the docs/exams/<examId>.md notes,
               and the questions that state rules, figures or dates (search the bank for
               years, money, limits). Fix what moved, as for a change. Then write today's
               date for the exam in lib/examReviews.json (keep the file sorted by key).
@@ -193,6 +193,8 @@ jobs:
             lib/**
             app/**
             components/**
+            docs/exams/**
+            docs/claude/**
             CLAUDE.md
 
       - name: Merge

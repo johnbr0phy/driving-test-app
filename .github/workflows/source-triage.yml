@@ -108,7 +108,7 @@ jobs:
           show_full_output: true
           claude_args: --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
-            Read CLAUDE.md (especially "Question quality" and the exam's own entry), then
+            Read CLAUDE.md, docs/claude/question-quality.md and the exam's docs/exams/<examId>.md, then
             ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were
             written from that changed ("changed": 5%+ of their sentences differ from the
             last time someone checked) or keep failing to load ("broken").
@@ -119,14 +119,14 @@ jobs:
             Tigertest says about this exam? Check it against the exam's sources.md
             (paths in the list), its bank sources and built bank, its entry in
             lib/examFacts.ts, lib/examCosts.json, lib/examFreshness.json, its landing
-            JSON or page, and its CLAUDE.md line. Pick one verdict:
+            JSON or page, and its docs/exams/<examId>.md notes. Pick one verdict:
 
             - noise: nothing we rely on moved (navigation, news items, dates of other
               events, rewording, a new sitting date that we do not state). Change nothing.
             - updated: a rule, figure, fee, format, pass mark, length or syllabus we use
               moved. Fix it: bank sources (never only the built JSON) then the exam's
               build script, every translated bank of that exam for a key change, the
-              facts, costs and landing copy, the CLAUDE.md line, and add a dated note to
+              facts, costs and landing copy, the docs/exams/<examId>.md notes, and add a dated note to
               sources.md. If the change takes effect later, add a lib/examFreshness.json
               event instead of changing the bank now.
             - replaced: the page is not an official source (news site, blog, coaching
@@ -183,7 +183,7 @@ jobs:
           f="${{ steps.pages.outputs.decisions }}"
           if [ ! -f "$f" ]; then echo "Claude Code wrote no decisions"; exit 1; fi
           npx tsx scripts/source-triage.ts --apply "$f" --run "${{ github.run_id }}"
-          echo "changes=$(git status --porcelain -- data tools lib app components CLAUDE.md | wc -l)" >> "$GITHUB_OUTPUT"
+          echo "changes=$(git status --porcelain -- data tools lib app components docs CLAUDE.md | wc -l)" >> "$GITHUB_OUTPUT"
         id: apply
 
       - name: Keep the decisions
@@ -230,6 +230,8 @@ jobs:
             lib/**
             app/**
             components/**
+            docs/exams/**
+            docs/claude/**
             CLAUDE.md
 
       # Merge it when every check passed. A push made with the workflow token

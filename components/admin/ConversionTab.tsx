@@ -182,6 +182,7 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
                   <th className={`text-left font-medium pb-2 ${STICKY_COL} ${ROW}`}>Buyer</th>
                   <th className={THL}>When</th>
                   <th className={TH}>Paid</th>
+                  <th className={THL} title="Signed in when paying, or bought as a guest without an account">Account</th>
                   <th className={THL}>Country</th>
                   <th className={THL}>Test</th>
                   <th className={THL}>Paywall</th>
@@ -201,6 +202,14 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
                       {p.paid}
                       {p.paid && !p.paid.startsWith("$") && <span className="block text-[11px] text-gray-500 dark:text-gray-400">{fmtUsd(p.usdCents)}</span>}
                       {STATUS_NOTE[p.status] && <span className="block text-[11px]" style={{ color: DOWN }}>{STATUS_NOTE[p.status]}</span>}
+                    </td>
+                    <td className={TDL}>
+                      {p.account === "guest_new" || p.account === "guest_existing" ? "Guest" : "Had account"}
+                      {(p.account === "guest_new" || p.account === "guest_existing") && (
+                        <span className="block text-[11px] text-gray-500 dark:text-gray-400">
+                          {p.account === "guest_new" ? "new account made" : "matched existing account"}
+                        </span>
+                      )}
                     </td>
                     <td className={TDL}>{p.market}{p.country && (p.market === "Other countries" || p.market === "Unknown") ? ` (${p.country})` : ""}</td>
                     <td className={TDL}>{p.exam || DOT}</td>
@@ -228,7 +237,8 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
         )}
         <p className={`mt-3 ${NOTE}`}>
           Came from is the buyer&apos;s first visit, sent with the checkout, else the one saved at signup. Paywall is where the checkout started; the
-          variant is the English paywall test side and the visit is which time they hit a paywall.
+          variant is the English paywall test side and the visit is which time they hit a paywall. Account says whether they were signed in when
+          they paid or bought as a guest (guest checkout started Nov 19 2026).
         </p>
       </div>
 

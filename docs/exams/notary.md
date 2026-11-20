@@ -1,0 +1,1 @@
+- **Notary** (notary public exam, `/notary/*`, landing `/notary-practice-test`): `data/notary-questions.json` (200 questions: acts 56, identification 40, journal/seal 40, ethics 40, commission 24), test IDs 2101-2104, sets 2101-2105 (by topic), state `NOTARY`, 70% pass. 14/10/10/10/6 per test. General law only; state figures are "varies by state".

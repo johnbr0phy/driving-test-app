@@ -297,7 +297,7 @@ Code: `i18n/index.ts` (Language, LANGUAGES, DMV_LANGUAGES, English fallback);
 `components/results/ResultsHeroDebrief.tsx`; `lib/shareCards.ts`; `lib/llmsTxt.ts`.
 Tooling and docs: `validate_bank.py` (`--lang`, `--len-scale`), new `validate_translation.py`,
 `.claude/skills/exam-bank/references/wiring.md`, `tools/next100/BRIEF.md` (native batch section),
-`tools/next100/REVIEW.md`, `CLAUDE.md` ("Native-language exams").
+`tools/next100/REVIEW.md`, `docs/claude/v1-engine.md` ("Native-language exams").
 Acceptance: tsc clean; pseudo-locale shows no hard-coded English on v1 exam pages; an English exam in
 German UI shows German chrome; DMV pages with stored `de` show English; CDL es unchanged.
 

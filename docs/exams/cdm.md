@@ -1,0 +1,1 @@
+- **CDM, CFPP**: `/cdm`, landing `/cdm-practice-test`, `data/cdm-questions.json`: Nutrition 40, Foodservice 44, Personnel 40, Safety 48, Business 28. Tests 34001–34004; topic sets 34001–34005; type CDM. 70% practice target only; official cut score set by CBDM. Per-test 10/11/10/12/7 follows CBDM March 2025 outline. Healthcare hub.

@@ -1,0 +1,1 @@
+- **CRCST** (HSPA Sterile Processing, `/crcst/*`, landing `/crcst-practice-test`; the CBSPD CSPDT has its own test, `cbspd`): `data/crcst-questions.json`, test IDs 401-404, sets 401-405 (by topic), state `CRCST`. 7 departmental, 11 decontamination, 10 prep/packaging, 11 sterilization, 5 storage/inventory, 2 patient equipment, 4 professional per test (HSPA outline rev. Nov 2023).

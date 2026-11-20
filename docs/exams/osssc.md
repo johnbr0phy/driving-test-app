@@ -1,0 +1,1 @@
+OSSSC CRE-2025 (`osssc`) uses v2: 200 original English-language questions, five subject drills and two 85-question tests. Premium government-job exam. Odia, current affairs and Stage II practical excluded; percentage scoring does not apply real negative marking. Source/build/review records: `tools/build20261117/osssc/`.

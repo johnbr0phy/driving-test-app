@@ -7,7 +7,7 @@ Placeholders: `<id>` exam id (e.g. `forklift`), `<CODE>` stateCode, `<slug>` rou
 (e.g. `forklift` or `osha-10`), `<landing>` landing folder (e.g. `forklift-certification-practice-test`).
 
 Sectioned, timed exams (SAT-style modules, NGN item formats, adaptive) are v2 exams: follow
-"To add a v2 exam" in CLAUDE.md instead, copying the newest v2 exam (`lib/v2/exams/ged.ts`).
+"To add a v2 exam" in `docs/claude/v2-engine.md` instead, copying the newest v2 exam (`lib/v2/exams/ged.ts`).
 With two or more practice tests, hold out only the last one (`heldOut: true` on Test 2, never on
 Test 1): drills train on Test 1 plus the drill-only items. Three exams in Nov 2026 held out every
 test, so their drills had 12 to 20 questions against tests of 60 to 100
@@ -142,10 +142,11 @@ Alongside the landing:
   `components/exam/ExamClassFaq.tsx`.
 Plain apostrophes in metadata and JSON-LD; `&apos;` only inside JSX text. No em-dashes.
 
-## 10. `CLAUDE.md`
-Add a bullet under "Additional Exams" in the same shape as the others: route, landing, data
-file with per-category pools, test and set IDs, state code, pass percentage, per-test counts,
-source outline, hub group.
+## 10. `docs/exams/<id>.md`
+Write the exam's notes file (one paragraph, the shape of its neighbours in `docs/exams/`): route,
+landing, data file with per-category pools, test and set IDs, state code, pass percentage,
+per-test counts, source outline, build command, hub group, theme and mascot. Never add exam
+details to CLAUDE.md.
 
 ## 11. Screenshots
 ```bash

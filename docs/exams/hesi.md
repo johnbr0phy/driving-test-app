@@ -1,0 +1,1 @@
+- **HESI A2** (nursing admission assessment, `/hesi/*`, landing `/hesi-a2-practice-test`): `data/hesi-questions.json` (200 questions: math 36, reading 32 with embedded passages, vocabulary 32, grammar 32, biology 24, chemistry 20, A&P 24), test IDs 2901-2904, sets 2901-2904, state `HESI`, 75% pass. 9/8/8/8/6/5/6 per test. Reading stems run up to 130 words. No physics.

@@ -1,0 +1,1 @@
+- **CST** (NBSTSA Surgical Technologist, `/cst/*`, landing `/cst-practice-test`): `data/cst-questions.json`, test IDs 301-304, sets 301-304 (by topic), state `CST`. 6 preop, 23 intraop, 3 postop, 2 admin, 5 equipment sterilization, 6 A&P, 2 micro, 3 pharm per test (NBSTSA 2023 outline scaled from 150 items).

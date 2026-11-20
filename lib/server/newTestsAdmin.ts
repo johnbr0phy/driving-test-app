@@ -8,7 +8,7 @@ import launchDates from "@/lib/examLaunchDates.json";
 import { bingSentFor, daysLive, mostRecent, onTestPages, sumSince, testPages, type NewTestRow, type TestPages } from "@/lib/newTests";
 import { pathFromSentKey, RUNS_COLLECTION, SENT_COLLECTION, SENT_DOC } from "@/lib/indexNowSent.mjs";
 
-// Data for the /admin New tests tab: the 200 most recently launched tests
+// Data for the /admin New tests tab: every launched test, newest first
 // (lib/examLaunchDates.json), each with what it has done since launch: first
 // visits that landed on its pages (funnelLandings/{day}), signups whose first
 // visit landed there (signupOrigins), questions answered on it

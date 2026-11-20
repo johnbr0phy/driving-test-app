@@ -166,7 +166,7 @@ jobs:
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           claude_args: --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
-            Read CLAUDE.md, then the question audit at ${{ steps.findings.outputs.report }}
+            Read CLAUDE.md and docs/claude/question-quality.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
 
             The report may end with "Earlier findings not settled yet": those count as
@@ -194,7 +194,7 @@ jobs:
             sites, news articles, forums and AI answers are never enough on their own.
             Add the official URL and what it says, dated, to the exam's sources.md, and
             name it in your note. If you cannot reach an official source, change nothing. Fix the source the bank is built from (the Python or
-            JSON under tools/ named in CLAUDE.md for that exam), never only the built JSON,
+            JSON under tools/ named in docs/exams/<examId>.md), never only the built JSON,
             then run that exam's build script so data/ matches. A key change must also be
             made in every translated bank of that exam (data/<bank>_<lang>.json).
 
@@ -241,7 +241,7 @@ jobs:
 
             Run git status and git diff (data/ and tools/) to see every change. For
             each changed question, read the question as it now stands (stem, options,
-            key, explanation), the exam's line in CLAUDE.md and its tools/**/sources.md,
+            key, explanation), the exam's docs/exams/<examId>.md and its tools/**/sources.md,
             and check the rule yourself: open the official page with WebFetch where
             sources.md names one. Decide independently; the audit report in
             ${{ steps.findings.outputs.report }} is the other side's case, not evidence.
@@ -299,6 +299,7 @@ jobs:
             audits/**
             data/**
             tools/**
+            docs/exams/**
             lib/trainingParts.json
             lib/examBankSizes.json
             lib/v2/bankSizes.ts

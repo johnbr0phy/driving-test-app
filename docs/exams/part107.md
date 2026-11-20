@@ -1,0 +1,1 @@
+- **Part 107** (FAA remote pilot UAG test, `/part-107/*`, landing `/part-107-practice-test`): `data/part107-questions.json` (200 questions, no figure-dependent items), test IDs 801-804, sets 801-804 (by topic), state `P107`, 70% pass. 10 regulations, 10 airspace, 7 weather, 5 loading/performance, 18 operations per test (FAA ACS weighting).

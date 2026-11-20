@@ -10,6 +10,8 @@ export const ko: TranslationKeys = {
   // Common
   common: {
     dmvHeaderTitle: "DMV 모의고사",
+    syncFailed: "최근 진행 상황이 아직 계정에 저장되지 않았습니다. 이 페이지를 열어 둔 채로 다시 시도하세요.",
+    syncRetry: "다시 시도",
     logOut: "로그아웃",
     signIn: "로그인",
     signUp: "회원가입",

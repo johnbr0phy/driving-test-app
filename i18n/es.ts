@@ -10,6 +10,8 @@ export const es: TranslationKeys = {
   // Common
   common: {
     dmvHeaderTitle: "Examen de Práctica del DMV",
+    syncFailed: "Tu progreso más reciente aún no se ha guardado en tu cuenta. Mantén esta página abierta e inténtalo de nuevo.",
+    syncRetry: "Intentar de nuevo",
     logOut: "Cerrar sesión",
     signIn: "Iniciar sesión",
     signUp: "Registrarse",

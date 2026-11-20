@@ -955,13 +955,13 @@
     "skill": "Product 3: Visualize work",
     "difficulty": 2,
     "format": "single",
-    "stem": "A board shows 12 items in the Test column, which has a limit of 5. What does this signal?",
-    "explanation": "Work piling up past the WIP limit in one column shows that stage cannot keep up. Visualizing work makes this visible so the team can act.",
+    "stem": "On a Kanban board, a column holds far more items than its WIP limit. What does this signal?",
+    "explanation": "Work piling up past the WIP limit in one column shows that stage cannot keep up, a constraint. Visualizing work makes this visible so the team can act.",
     "options": [
-      "A bottleneck at testing",
-      "Too little work in development",
-      "A WIP limit set too low",
-      "Testers pulling work too fast"
+      "A constraint at that stage",
+      "Idle capacity at that stage",
+      "Rework at a later stage",
+      "Low demand upstream"
     ],
     "correct": [
       0
@@ -1473,10 +1473,10 @@
     "stem": "Two impediments block the team at once. How should they be handled?",
     "explanation": "The outline says to prioritize impediment removal and risk mitigation activities, which means ranking by impact on the goal.",
     "options": [
+      "Rank them by cost to remove",
       "Rank them by how long they waited",
-      "Rank them by how quick they are",
       "Rank them by impact on the goal",
-      "Rank them by who raised them"
+      "Rank them by a team vote"
     ],
     "correct": [
       2
@@ -1811,11 +1811,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How should constructive feedback be given?",
-    "explanation": "Useful feedback is specific, close to the event and about behavior rather than personality. Feedback saved for a review, or given only on request, loses most of its value.",
+    "explanation": "Useful feedback is specific, close to the event and about behavior rather than personality. Wrapping it in praise blurs it, and saving it or writing it up delays it.",
     "options": [
-      "Only when someone asks",
-      "Written down, so there is a record",
-      "General, and saved for the review",
+      "Saved for a one-to-one meeting",
+      "In writing, so there is a record",
+      "Balanced, with praise around it",
       "Specific, timely and about behavior"
     ],
     "correct": [
@@ -2127,12 +2127,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team has six weeks of budget left. Which ordering gets the most value in that time?",
-    "explanation": "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable. Highest value regardless of cost can burn the budget on one item.",
+    "explanation": "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable.",
     "options": [
-      "Riskiest technical items first",
-      "Lowest effort first",
-      "Best return per unit of effort first",
-      "Highest value first, whatever the cost"
+      "Risk alone, highest first",
+      "Effort alone, lowest first",
+      "Value per effort, highest first",
+      "Value alone, highest first"
     ],
     "correct": [
       2
@@ -2915,13 +2915,13 @@
     "skill": "Leadership 1: Empower teams",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why should a practitioner avoid assigning tasks to members of a self-organizing team?",
-    "explanation": "When someone else hands out the work, members stop owning it. Self-organizing teams decide who does what.",
+    "stem": "Assigning tasks to members of a self-organizing team most directly undermines which outline enabler?",
+    "explanation": "When someone else hands out the work, members stop owning it. Promoting collective ownership of goals is an Empower Teams enabler.",
     "options": [
-      "It confuses the product owner",
-      "It weakens their ownership",
-      "It reduces their velocity",
-      "It overloads the facilitator"
+      "Establish a feedback loop",
+      "Promote collective ownership of goals",
+      "Limit work in progress",
+      "Radiate metrics to the team"
     ],
     "correct": [
       1
@@ -2999,13 +2999,13 @@
     "skill": "Delivery 3: Manage impediments and risk",
     "difficulty": 1,
     "format": "single",
-    "stem": "Why monitor risks throughout delivery?",
-    "explanation": "Risks change as work progresses, so they are monitored and controlled continuously, not logged once.",
+    "stem": "Which outline enabler covers using past problems to keep risks from repeating?",
+    "explanation": "Under Manage Impediments and Risk the outline says to use lessons learned to avoid risks and impediments recurring.",
     "options": [
-      "New risks only appear late",
-      "Likelihood and impact change",
-      "Mitigations always work at once",
-      "Registers need a monthly update"
+      "Monitor and control risks",
+      "Use lessons learned to avoid recurrence",
+      "Prioritize risk mitigation",
+      "Proactively identify risks"
     ],
     "correct": [
       1
@@ -3105,11 +3105,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Why should everyone who will do the work take part in sizing it?",
-    "explanation": "Collective sizing brings out what each person knows about the work, so hidden effort and risk come to light before the estimate is agreed.",
+    "explanation": "Collective sizing brings out what each person knows about the work, so hidden effort and risk come to light. Velocity is never comparable across teams.",
     "options": [
-      "Senior views settle the number faster",
-      "The product owner hears every estimate",
-      "It matches the team's past velocity",
+      "Estimates line up with the budget",
+      "The product owner can set the size",
+      "Velocity becomes comparable across teams",
       "Different views surface hidden work"
     ],
     "correct": [
@@ -3337,12 +3337,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A practitioner asks for feedback on their facilitation and hears meetings run long. What should they do next?",
-    "explanation": "The outline says to solicit feedback and act on it; checking again shows whether the change worked. Changing for good without checking, or asking elsewhere or later, breaks the loop.",
+    "explanation": "The outline says to solicit feedback and act on it; checking again shows whether the change worked.",
     "options": [
       "Shorter format, then ask again",
-      "Ask another team for feedback",
-      "Try a shorter format for good",
-      "Ask the same people next quarter"
+      "Same format, shorter agenda",
+      "Shorter format, no follow-up",
+      "Same format, ask again later"
     ],
     "correct": [
       0
@@ -3882,16 +3882,16 @@
     "skill": "Delivery 5: Perform continuous improvements",
     "difficulty": 1,
     "format": "single",
-    "stem": "What should drive a team's choice of its next process improvement?",
-    "explanation": "The outline says to obtain metrics and feedback to drive continuous improvements, meaning the team's own data.",
+    "stem": "Which outline enabler says what should drive continuous improvements?",
+    "explanation": "Under Perform Continuous Improvements the outline says to obtain metrics and feedback to drive continuous improvements, then implement actions and evaluate them.",
     "options": [
-      "An industry maturity score",
-      "Another team's improvement list",
-      "Last year's audit findings",
-      "Its own cycle time and feedback"
+      "Implement improvement actions",
+      "Visualize the value stream",
+      "Obtain metrics and feedback",
+      "Evaluate improvement effectiveness"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3953,11 +3953,11 @@
     "options": [
       "The team runs Scrum by the book",
       "The coach facilitates every event",
-      "The team no longer needs the coach",
-      "The team's velocity rises"
+      "The team's velocity rises",
+      "The team no longer needs the coach"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -4140,13 +4140,13 @@
     "skill": "Product 4: Manage value delivery",
     "difficulty": 2,
     "format": "single",
-    "stem": "How can a team get the most value from its increments?",
-    "explanation": "Ordering by value against effort optimizes each increment: the highest value per unit of effort comes first.",
+    "stem": "To get the most value from each increment, which ratio should rank backlog items?",
+    "explanation": "Ranking by value divided by effort puts the most value per unit of work first, which optimizes each increment.",
     "options": [
-      "Do high value, low effort first",
-      "Do high effort, low risk first",
-      "Do low effort, high risk first",
-      "Do high value, high risk first"
+      "Value divided by effort",
+      "Effort divided by value",
+      "Value times effort",
+      "Value minus effort"
     ],
     "correct": [
       0

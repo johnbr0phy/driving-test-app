@@ -5668,6 +5668,19 @@
     --brand-gradient-to: 97 50% 95%;
   }
   /* ExCPT (NHA) pharmacy technician theme */
+  /* Water treatment operator Class I theme: deep teal (170 at 14% so it sits clear of the Finland hygiene teal) */
+  [data-theme="waterop"] {
+    --brand: 170 100% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 170 45% 95%;
+    --brand-hover: 170 100% 11%;
+    --brand-dark: 170 100% 9%;
+    --brand-darker: 170 90% 6%;
+    --brand-muted: 170 20% 66%;
+    --brand-border: 170 22% 78%;
+    --brand-border-light: 170 15% 88%;
+    --brand-gradient-to: 185 45% 95%;
+  }
   [data-theme="excpt"] {
     --brand: 287 100% 30%;
     --brand-foreground: 0 0% 100%;
@@ -12705,6 +12718,17 @@
     --brand-muted: 344 25% 45%;
     --brand-dark: 344 25% 65%;
     --brand-darker: 344 20% 78%;
+  }
+  .dark [data-theme="waterop"] {
+    --brand: 170 100% 26%;
+    --brand-hover: 170 100% 18%;
+    --brand-light: 170 45% 13%;
+    --brand-gradient-to: 185 40% 11%;
+    --brand-border-light: 170 15% 24%;
+    --brand-border: 170 22% 34%;
+    --brand-muted: 170 20% 45%;
+    --brand-dark: 170 100% 65%;
+    --brand-darker: 170 90% 78%;
   }
   .dark [data-theme="excpt"] {
     --brand: 287 100% 48%;

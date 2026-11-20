@@ -3335,6 +3335,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NFPA 1010 (2024 edition) and state fire certification guidance, checked October 2026",
     source: { name: "NFPA 1010: Standard on Professional Qualifications for Firefighters", url: "https://www.nfpa.org/codes-and-standards/nfpa-1010-standard-development/1010" },
   },
+  proserve: {
+    answer:
+      "ProServe is Alberta's responsible liquor service and sales program, run by Alberta Gaming, Liquor and Cannabis (AGLC). Anyone who sells or serves liquor, or provides security, at Class A, B, D, E, F or Duty-Free licensed premises must hold it, along with listed roles at public special events and liquor agency sampling staff. New hires must be certified within 30 days of starting. The online course ends with an exam that needs at least 80% to pass, with five attempts per registration; the certificate lasts five years from completion.",
+    rows: [
+      { label: "Run by", value: "AGLC (SMART Programs)" },
+      { label: "Who needs it", value: "Staff who sell, serve or secure liquor" },
+      { label: "Deadline", value: "Within 30 days of the start date" },
+      { label: "Pass mark", value: "80% (AGLC)" },
+      { label: "Attempts", value: "Five per registration" },
+      { label: "Language", value: "English" },
+      { label: "Certificate", value: "Expires five years after completion" },
+      { label: "Question count", value: "AGLC sets; not published" },
+    ],
+    basedOn: "AGLC's ProServe Liquor Staff Training page and Liquor Licensee Handbook section 1.6, checked November 2026",
+    source: { name: "AGLC ProServe Liquor Staff Training", url: "https://aglc.ca/training/proserve-liquor-staff-training" },
+  },
   dispatcher: {
     answer:
       "A 911 dispatcher, or public safety telecommunicator, answers emergency and non-emergency calls and dispatches law enforcement, fire and EMS. The baseline training is APCO ANS 3.103.3-2025, Minimum Training Standards for Public Safety Telecommunicators, with chapters for call takers and law enforcement, fire and EMS telecommunicators. Many agencies use APCO's Public Safety Telecommunicator 1 course, whose final exam earns APCO certification; APCO does not publish its length or pass mark. Some states certify telecommunicators themselves, and requirements vary by state.",

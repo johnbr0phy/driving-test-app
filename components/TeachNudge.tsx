@@ -156,6 +156,7 @@ const TEACHER_LED = new Set([
   "trapper",
   "ieplumbt2",
   "cpb",
+  "coc",
   "cbcs",
   "hha",
   "ctec",

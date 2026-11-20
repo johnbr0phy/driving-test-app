@@ -5757,6 +5757,19 @@
     --brand-border-light: 252 60% 90%;
     --brand-gradient-to: 266 80% 97%;
   }
+  /* COC (AAPC) Certified Outpatient Coder theme: dark muted plum rose (329 30% 20%) */
+  [data-theme="coc"] {
+    --brand: 329 30% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 329 30% 97%;
+    --brand-hover: 329 30% 16%;
+    --brand-dark: 329 30% 14%;
+    --brand-darker: 329 30% 9%;
+    --brand-muted: 329 20% 72%;
+    --brand-border: 329 25% 82%;
+    --brand-border-light: 329 25% 90%;
+    --brand-gradient-to: 339 30% 97%;
+  }
   /* CBCS (NHA) Certified Billing and Coding Specialist theme: muted orchid rose */
   [data-theme="cbcs"] {
     --brand: 322 45% 48%;
@@ -12465,6 +12478,17 @@
     --brand-muted: 252 45% 45%;
     --brand-dark: 252 95% 70%;
     --brand-darker: 252 90% 78%;
+  }
+  .dark [data-theme="coc"] {
+    --brand: 329 30% 50%;
+    --brand-hover: 329 30% 42%;
+    --brand-light: 329 30% 13%;
+    --brand-gradient-to: 339 30% 11%;
+    --brand-border-light: 329 25% 24%;
+    --brand-border: 329 25% 34%;
+    --brand-muted: 329 20% 45%;
+    --brand-dark: 329 30% 65%;
+    --brand-darker: 329 30% 78%;
   }
   .dark [data-theme="cbcs"] {
     --brand: 322 45% 50%;

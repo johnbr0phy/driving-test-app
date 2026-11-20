@@ -155,4 +155,5 @@ export const BANK_SIZES: Record<string, number> = {
   pl900: 198,
   jncia: 186,
   ccnpencor: 224,
+  pspo: 200,
 };

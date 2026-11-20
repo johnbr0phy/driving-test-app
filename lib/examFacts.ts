@@ -4075,6 +4075,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Scrum.org's PSM I assessment page and the Scrum Guide (November 2020)",
     source: { name: "Scrum.org", url: "https://www.scrum.org/assessments/professional-scrum-master-i-certification" },
   },
+  pspo: {
+    answer:
+      "The Professional Scrum Product Owner I (PSPO I) assessment from Scrum.org has 80 questions in 60 minutes, taken online in English or Japanese. Questions are multiple choice, multiple answer and true/false, and you need 85 percent, 68 of 80, to pass. It covers the Scrum framework and Scrum.org's product focus areas: product vision, product value, Product Backlog management, business strategy, stakeholders and customers, and forecasting and release planning.",
+    rows: [
+      { label: "Questions", value: "80" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Pass mark", value: "85% (68 of 80)" },
+      { label: "Question types", value: "Multiple choice, multiple answer, true/false" },
+      { label: "Languages", value: "English and Japanese" },
+      { label: "Focus", value: "Managing products with agility, on the Scrum Guide (2020)" },
+      { label: "Given by", value: "Scrum.org, online" },
+    ],
+    basedOn: "Scrum.org's PSPO I assessment page, its Managing Products with Agility focus areas and the Scrum Guide (November 2020)",
+    source: { name: "Scrum.org", url: "https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification" },
+  },
   capm: {
     answer:
       "The CAPM exam has 150 questions in 3 hours, of which 135 are scored and 15 are unscored pretest items. It follows PMI's CAPM Examination Content Outline: Project Management Fundamentals and Core Concepts 36%, Predictive Plan-Based Methodologies 17%, Agile Frameworks and Methodologies 20% and Business Analysis Frameworks 27%. PMI does not publish a pass mark: results are pass or fail with a rating for each domain from Above Target to Needs Improvement. Candidates need a secondary diploma and 23 hours of project management education.",

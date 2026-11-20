@@ -10,13 +10,13 @@
     "skill": "Product Backlog management",
     "stem": "Scrum.org describes Product Backlog management as adjusting and ordering items so that the team can:",
     "options": [
-      "Give each stakeholder equal value",
       "Create the most valuable product",
-      "Finish the product by a set date",
-      "Ship every product request on time"
+      "Keep stakeholders' priorities in balance",
+      "Forecast the release date accurately",
+      "Finish all items in the agreed order"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Product Backlog management is the act of adjusting and ordering items on the Product Backlog so the Scrum Team can deliver the most valuable product possible."
   },
@@ -31,13 +31,13 @@
     "skill": "Sprint Planning",
     "stem": "Who defines the Sprint Goal during Sprint Planning?",
     "options": [
+      "Product Owner, in Sprint Planning",
       "Whole Scrum Team, together",
-      "Product Owner, before the event",
-      "Key stakeholders, by agreement",
-      "Scrum Master, from the backlog"
+      "Product Owner and Scrum Master",
+      "Developers, after selecting items"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "After the Product Owner proposes how the product could increase its value, the whole Scrum Team collaborates to define the Sprint Goal. The Product Owner brings a proposal, not a finished goal."
   },
@@ -53,12 +53,12 @@
     "stem": "Which Key Value Area measures the value a product delivers today?",
     "options": [
       "Ability to Innovate",
-      "Current Value",
       "Time-to-Market",
+      "Current Value",
       "Unrealized Value"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Current Value quantifies the value the product delivers today. Unrealized Value looks at potential future value."
   },
@@ -73,13 +73,13 @@
     "skill": "Product Vision",
     "stem": "What does a Product Vision describe?",
     "options": [
-      "Purpose of the product",
-      "Team's working agreements",
-      "Product release dates for the year",
-      "Product tasks for the next Sprint"
+      "Long-term product roadmap",
+      "Product's target release date",
+      "Features planned for the product",
+      "Purpose of the product"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Scrum.org describes the Product Vision as the purpose of a product: the value it should deliver and to whom."
   },
@@ -94,13 +94,13 @@
     "skill": "Stakeholders",
     "stem": "What does Scrum encourage with stakeholders, and customers in particular?",
     "options": [
-      "Formal monthly reports",
-      "Requests through managers",
-      "Contact only at release",
-      "Frequent collaboration"
+      "Frequent collaboration",
+      "Formal change control",
+      "Agreed service levels",
+      "Regular status reports"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Scrum.org notes that Scrum encourages frequent collaboration with stakeholders, and customers in particular."
   },
@@ -115,13 +115,13 @@
     "skill": "Release planning",
     "stem": "According to Scrum.org, how should a product usually be delivered?",
     "options": [
-      "Two large releases a year, at fixed dates",
-      "One big launch once all features exist",
+      "One launch once the core features are Done",
       "Small, incremental and frequent releases",
-      "Whenever the full specification is signed"
+      "Quarterly releases with full regression tests",
+      "At the end of each Sprint, after the Review"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Scrum.org describes forecasting and release planning as a guide for delivering through small incremental and frequent releases rather than big bang launches."
   },
@@ -136,13 +136,13 @@
     "skill": "Ordering",
     "stem": "Besides value, what else may the Product Owner weigh when ordering items?",
     "options": [
+      "Item age and estimation confidence",
+      "Developer preference and skills",
       "Risk, dependencies and learning",
-      "Item age and the author's role",
-      "Length of each item's description",
-      "Which Developer wrote the item"
+      "Stakeholder seniority and urgency"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Ordering aims at value, but risk, dependencies between items and what the team needs to learn also shape which items come first."
   },
@@ -157,13 +157,13 @@
     "skill": "Sprint Planning",
     "stem": "How are Product Backlog items chosen for the Sprint?",
     "options": [
-      "Product Owner assigns them, in order, until capacity is used",
-      "Developers select them, in discussion with the Product Owner",
-      "Scrum Master picks them, based on the team's past velocity",
-      "Stakeholders vote on them during the previous Sprint Review"
+      "Product Owner selects them, and then the Developers confirm the fit",
+      "Whole Scrum Team votes, guided by the Scrum Master",
+      "Developers take the top items up to their past velocity",
+      "Developers select them, in discussion with the Product Owner"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Through discussion with the Product Owner, the Developers select items from the Product Backlog for the current Sprint. The more the Developers know about their past performance and capacity, the more confident their forecast."
   },
@@ -178,13 +178,13 @@
     "skill": "Key Value Areas",
     "stem": "A Product Owner tracks how far users' current experience falls short of what they want. Which Key Value Area is this?",
     "options": [
+      "Unrealized Value",
       "Ability to Innovate",
       "Current Value",
-      "Time-to-Market",
-      "Unrealized Value"
+      "Time-to-Market"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The customer or user satisfaction gap, the difference between desired and current experience, is an example measure of Unrealized Value."
   },
@@ -200,11 +200,11 @@
     "stem": "Which two things does a good Product Vision express? (Choose two.)",
     "select": 2,
     "options": [
-      "Who receives that value",
-      "Order of the first ten items",
-      "Budget for each Sprint",
-      "Technology stack to be used",
-      "Value the product should deliver"
+      "Value the product should deliver",
+      "Target release dates",
+      "Success measures per release",
+      "Main features to be built",
+      "Who receives that value"
     ],
     "correct": [
       0,
@@ -223,13 +223,13 @@
     "skill": "Stakeholders",
     "stem": "Why should the Product Owner learn the challenges key stakeholders face?",
     "options": [
-      "To write the Definition of Done alone",
-      "To decide which Developer delivers what",
-      "To set the length of each Sprint",
-      "To deliver the value they are seeking"
+      "To reduce change requests later",
+      "To deliver the value they are seeking",
+      "To agree their priorities in advance of work",
+      "To report progress in their terms"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Understanding the challenges stakeholders face helps the Scrum Team deliver the value they are looking for."
   },
@@ -244,13 +244,13 @@
     "skill": "Ordering",
     "stem": "An item is low in direct value but tests a risky assumption the whole product rests on. Where might it go?",
     "options": [
-      "Into a separate risk register only",
-      "At the bottom, since value is low",
-      "Out of the backlog until value rises",
-      "Near the top, to reduce risk early"
+      "At the bottom until its value is clearer",
+      "Below the high-value items, as value leads",
+      "Near the top, to reduce risk early",
+      "In a separate spike backlog for later"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Testing a key assumption early can protect the value of everything built on it. Reducing risk early is a valid reason to order an item higher."
   },
@@ -265,9 +265,9 @@
     "skill": "Release planning",
     "stem": "What is the main risk of a single big bang launch after a year of work?",
     "options": [
-      "Developers have too little product work to do",
-      "The Product Backlog becomes too short",
-      "Sprint Reviews take less than an hour",
+      "Testing everything at once takes much longer",
+      "Marketing has less to announce later",
+      "Stakeholders lose interest before launch",
       "Learning whether it works comes very late"
     ],
     "correct": [
@@ -305,13 +305,13 @@
     "skill": "Key Value Areas",
     "stem": "Release frequency belongs to which Key Value Area?",
     "options": [
+      "Time-to-Market",
       "Current Value",
       "Unrealized Value",
-      "Time-to-Market",
       "Ability to Innovate"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Time-to-Market measures how quickly the organization can deliver and learn from feedback. Release frequency, lead time and cycle time are examples."
   },
@@ -326,13 +326,13 @@
     "skill": "Product Backlog",
     "stem": "What does the Scrum Guide call the Product Backlog?",
     "options": [
-      "Record of product work finished in past Sprints",
-      "Complete plan of product tasks for the release",
+      "Ordered plan of tasks for the next release",
       "Emergent, ordered list of what the product needs",
-      "Fixed product specification agreed at the start"
+      "Ranked list of work the team has committed to",
+      "Prioritized list of approved product requirements"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The Product Backlog is an emergent, ordered list of what is needed to improve the product. It changes as the product and market change."
   },
@@ -347,10 +347,10 @@
     "skill": "Business Strategy",
     "stem": "How does business strategy relate to product visions?",
     "options": [
-      "Each product vision sets the company mission",
-      "The Scrum Master writes both together",
+      "Product visions add up to the strategy",
+      "Each vision is set before the strategy",
       "Strategy informs each product's vision",
-      "They are separate and never linked"
+      "Strategy replaces the need for a vision"
     ],
     "correct": [
       2
@@ -368,13 +368,13 @@
     "skill": "Sprint Review",
     "stem": "What is the main reason to invite real customers to the Sprint Review?",
     "options": [
-      "Their feedback shapes what comes next",
-      "They can extend the Sprint if needed",
-      "They can assign work to Developers",
-      "They can sign the product Increment off"
+      "They can add items to the next Sprint",
+      "They can see that progress is on plan",
+      "They can accept the Increment formally",
+      "Their feedback shapes what comes next"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "At the Sprint Review attendees inspect the Increment and collaborate on what to do next. Customer feedback is direct evidence for adapting the Product Backlog."
   },
@@ -389,13 +389,13 @@
     "skill": "Transparency",
     "stem": "The Product Owner orders the backlog from artifacts that are out of date. What does the Scrum Guide warn this can lead to?",
     "options": [
-      "A Sprint that must be cancelled and replanned",
       "Decisions that diminish value and increase risk",
-      "A Definition of Done that has to be lowered",
-      "Developers taking over the ordering of the work"
+      "Forecasts that are far too cautious to be useful",
+      "Refinement that has to be repeated later",
+      "Sprint Goals that change during the Sprint"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Scrum decisions are based on the perceived state of the artifacts. When transparency is low, those decisions can diminish value and increase risk."
   },
@@ -469,13 +469,13 @@
     "skill": "Business Strategy",
     "stem": "How should an organization adapt its business strategy?",
     "options": [
+      "At each annual strategic planning cycle",
+      "When market research is refreshed",
       "Using feedback from delivered Increments",
-      "Only at a fixed five-year planning cycle",
-      "By copying what competitors deliver",
-      "Once the whole product is delivered"
+      "When a new product is approved"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "An organization inspects and adapts its business strategy based on feedback gathered from delivering product Increments, not only at fixed planning dates."
   },
@@ -490,9 +490,9 @@
     "skill": "Conflicting needs",
     "stem": "Sales and support each say their item must come first. What should the Product Owner do?",
     "options": [
-      "Put both at the top; Developers pick",
-      "Ask both to agree, then follow their choice",
-      "Let the Scrum Master make the decision",
+      "Split the next Sprint between them",
+      "Ask both to agree on one order",
+      "Raise it with the sponsor to decide",
       "Decide the order and explain why"
     ],
     "correct": [
@@ -511,13 +511,13 @@
     "skill": "Splitting items",
     "stem": "A large item must be split. Which split usually serves the Product Owner best?",
     "options": [
-      "Parts that give each Developer equal value",
       "Thin slices, each usable on its own",
-      "Layers such as database, logic and screens",
-      "Phases that deliver design, build and test"
+      "Parts small enough for one Developer each",
+      "Steps of the workflow, such as design then build",
+      "Layers such as database, logic and screens"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Slices that each create something usable can be released and inspected on their own. Splitting by layer or phase gives nothing usable until every part is Done."
   },
@@ -533,10 +533,10 @@
     "stem": "The Product Owner prepares attendees for Sprint Planning. Which two topics should they be ready to discuss? (Choose two.)",
     "select": 2,
     "options": [
-      "How those items map to the Product Goal",
-      "Tasks each Developer will be assigned",
-      "Each Developer's hours for the Sprint",
       "Most important Product Backlog items",
+      "Tasks needed for each item",
+      "Developer capacity for the Sprint",
+      "How those items map to the Product Goal",
       "Release dates promised to customers"
     ],
     "correct": [
@@ -556,10 +556,10 @@
     "skill": "Outcomes and outputs",
     "stem": "The team doubled the number of features shipped, but customer satisfaction is flat. What does EBM suggest?",
     "options": [
-      "Developers should ship features faster still",
+      "The features need better promotion",
       "More output has not improved outcomes",
-      "Satisfaction surveys should be dropped",
-      "Value has doubled along with the features"
+      "The survey method needs to change",
+      "Satisfaction lags and will rise again soon"
     ],
     "correct": [
       1
@@ -577,13 +577,13 @@
     "skill": "Forecasting",
     "stem": "Stakeholders want to know how much of the backlog will be Done by a date. What is the best basis for the forecast?",
     "options": [
-      "Size of the backlog when work started",
+      "Capacity the team plans to have",
+      "Plan agreed with stakeholders at the start",
       "Progress the team has actually achieved",
-      "Date the stakeholders would like most",
-      "Hours each Developer says they can work"
+      "Developers' estimates of remaining items"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Forecasts are most reliable when based on what has already happened, such as actual delivered progress. Hopes and capacity claims are not evidence."
   },
@@ -598,9 +598,9 @@
     "skill": "Product Owner accountability",
     "stem": "Who may suggest new Product Backlog items?",
     "options": [
-      "Only Developers, during Sprint Planning",
-      "Only stakeholders who fund the product",
-      "Only the Product Owner, who writes each one",
+      "Product Owner and Developers, in refinement",
+      "Stakeholders, through the Scrum Master",
+      "Scrum Team members, but not stakeholders",
       "Anyone; the Product Owner orders them"
     ],
     "correct": [
@@ -620,9 +620,9 @@
     "stem": "The Product Goal is met two Sprints early. What should the Product Owner do next?",
     "options": [
       "Set and share the next Product Goal",
-      "Keep the old goal until the planned date",
-      "Stop Sprints until a new budget is set",
-      "Let each Developer choose a personal goal"
+      "Use the spare Sprints to refine the backlog",
+      "Keep the goal and add stretch items to it",
+      "Close the product and release the team"
     ],
     "correct": [
       0
@@ -661,8 +661,8 @@
     "options": [
       "Progress against the product budget",
       "Progress toward the Product Goal",
-      "Progress of each Developer's tasks",
-      "Progress on the Scrum Master's plan"
+      "Progress against the release plan",
+      "Progress on improvement actions"
     ],
     "correct": [
       1
@@ -680,13 +680,13 @@
     "skill": "Outcomes and outputs",
     "stem": "Which is an outcome rather than an output?",
     "options": [
-      "Twelve new product screens are released",
+      "A new, faster checkout flow is released",
+      "Velocity rises by ten points",
       "Fewer customers cancel their plan",
-      "Forty items are marked Done",
-      "Velocity rises by ten points"
+      "All planned items are Done"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Outcomes are things a customer or user experiences, such as staying with the product. Screens, items and velocity measure output or activity."
   },
@@ -702,12 +702,12 @@
     "stem": "How much time does the Scrum Guide set aside for Product Backlog refinement?",
     "options": [
       "One day per Sprint",
-      "It sets no fixed amount",
       "Two hours per week",
-      "Up to 10% of each Sprint"
+      "Up to 10% of each Sprint",
+      "It sets no fixed amount"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The Scrum Guide describes refinement as an ongoing activity and sets no timebox or percentage for it. The Scrum Team decides how much it needs."
   },
@@ -722,13 +722,13 @@
     "skill": "Forecasting",
     "stem": "Why should a release forecast be updated each Sprint?",
     "options": [
-      "Old forecasts are binding contracts",
-      "Scrum rules say it must be re-signed",
-      "The Developers change every Sprint",
-      "New evidence makes it more realistic"
+      "New evidence makes it more realistic",
+      "Scrum requires a forecast at each Review",
+      "Stakeholders expect a fresh date",
+      "Velocity must be recalculated by rule"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Each Sprint adds real data on progress and on what is still needed. Updating the forecast keeps stakeholder expectations realistic."
   },
@@ -743,10 +743,10 @@
     "skill": "Product definition",
     "stem": "According to the Scrum Guide, what is a product?",
     "options": [
-      "List of features to deliver",
+      "Software a team maintains",
       "Vehicle to deliver value",
-      "Project with a fixed end",
-      "Set of documents to deliver"
+      "Set of features for a market",
+      "Result of a funded project"
     ],
     "correct": [
       1
@@ -764,10 +764,10 @@
     "skill": "Stakeholders",
     "stem": "Who usually counts as a stakeholder of a product?",
     "options": [
-      "Only the people who pay for the product",
-      "Only the Developers who build it",
+      "People who fund or sponsor the product",
+      "Users who interact with the product",
       "Anyone with an interest in its outcome",
-      "Only managers of the Scrum Team"
+      "Managers of the people who build it"
     ],
     "correct": [
       2
@@ -825,8 +825,8 @@
     "select": 2,
     "options": [
       "Description",
-      "Owner's name",
-      "Approval stamp",
+      "Assignee",
+      "Status",
       "Size",
       "Due date"
     ],
@@ -847,13 +847,13 @@
     "skill": "Ordering",
     "stem": "Two features each need a shared login service first. How should the Product Owner order them?",
     "options": [
-      "Leave the order to each Developer",
-      "Put the login service ahead of both",
-      "Order them by date they were added",
-      "Put both features first, login last"
+      "Let the Developers order them in planning",
+      "Run all three in parallel next Sprint",
+      "Put the more valuable feature first",
+      "Put the login service ahead of both"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Dependencies affect order. Placing the enabling item first lets the dependent features be Done when the team reaches them."
   },
@@ -868,13 +868,13 @@
     "skill": "Empiricism",
     "stem": "Usage data from the last release shows a new feature is rarely used. What is the most empirical next step for the Product Owner?",
     "options": [
-      "Wait until the yearly review to change course",
       "Inspect why, then adapt the Product Backlog",
-      "Ask the Developers to add more of that feature",
-      "Keep the plan, since the feature was approved"
+      "Wait one more release for clearer data",
+      "Add more options to that feature to boost it",
+      "Promote the feature to raise its usage"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Empiricism means making decisions on what is observed. The Product Owner inspects the evidence and adapts the Product Backlog rather than following a plan that the data no longer supports."
   },
@@ -889,13 +889,13 @@
     "skill": "Product Value",
     "stem": "According to Scrum.org, what is the objective of a Scrum Team?",
     "options": [
-      "Keep each Developer fully busy all Sprint",
-      "Deliver every item that is in the backlog",
+      "Meet the Sprint Goal every Sprint",
       "Deliver value to customers and stakeholders",
-      "Follow the original product plan closely"
+      "Deliver the agreed scope at a high quality",
+      "Improve velocity Sprint after Sprint"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Scrum.org states that the objective of a Scrum Team is to deliver value to customers and stakeholders."
   },
@@ -929,13 +929,13 @@
     "skill": "Saying no",
     "stem": "A sponsor asks for a feature the Product Owner thinks adds little value. What is the best response?",
     "options": [
-      "Build it quietly to avoid an argument",
+      "Add it near the top to keep the sponsor",
+      "Ask the Developers to estimate it first",
       "Share the evidence; keep it low or out",
-      "Promise it for the next Sprint anyway",
-      "Pass the product decision to the Developers"
+      "Build a small version to keep goodwill"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Maximizing value sometimes means saying no. The Product Owner explains the reasoning with evidence and keeps the decision, which the organization must respect."
   },
@@ -950,13 +950,13 @@
     "skill": "Fixed date",
     "stem": "A release date is fixed by law. What can the Product Owner adjust to meet it?",
     "options": [
-      "Sprint length, stretching it past a month",
-      "Daily Scrum, dropping it to save time",
-      "Scope, keeping the most valuable items",
-      "Definition of Done, lowering quality"
+      "Sprint length, to fit more work in",
+      "Definition of Done, for this release only",
+      "Team size, adding people near the end",
+      "Scope, keeping the most valuable items"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "When the date cannot move, scope is the lever. Ordering by value means the most important items are Done by the date, without lowering quality."
   },
@@ -971,13 +971,13 @@
     "skill": "Product Backlog",
     "stem": "The Product Backlog has grown to thousands of items. What problem is most likely?",
     "options": [
-      "Sprint Planning cannot legally take place",
-      "The Product Goal is fulfilled automatically",
       "Transparency is lost; ordering gets hard",
-      "Developers can no longer size any item"
+      "Velocity becomes harder to calculate",
+      "Product Goal gets harder to change",
+      "Refinement takes much more Sprint capacity"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "A huge backlog hides what matters and is hard to keep ordered and understood. Removing items that no longer serve the Product Goal restores transparency."
   },
@@ -992,13 +992,13 @@
     "skill": "The Sprint",
     "stem": "Sprints enable predictability by inspecting and adapting progress toward the Product Goal at least how often?",
     "options": [
-      "Every quarter",
-      "Every working day",
+      "Every product release",
       "Every calendar month",
-      "Every product release"
+      "Every working day",
+      "Every quarter"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Because a Sprint lasts one month or less, progress toward the Product Goal is inspected and adapted at least every calendar month."
   },
@@ -1014,11 +1014,11 @@
     "stem": "Scrum.org says product value drives which two of these? (Choose two.)",
     "select": 2,
     "options": [
-      "Team headcount",
-      "Size of the backlog",
-      "Brand reputation",
-      "Number of Sprints",
-      "Customer loyalty"
+      "Team velocity",
+      "Market share forecasts",
+      "Customer loyalty",
+      "Release frequency",
+      "Brand reputation"
     ],
     "correct": [
       2,
@@ -1039,11 +1039,11 @@
     "options": [
       "Product Vision",
       "Intermediate Goal",
-      "Strategic Goal",
-      "Immediate Tactical Goal"
+      "Immediate Tactical Goal",
+      "Strategic Goal"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Immediate Tactical Goals are the current focus of improvement. Intermediate Goals mark the path, and Strategic Goals are the large, distant outcomes."
   },
@@ -1059,11 +1059,11 @@
     "stem": "Which two happen with stakeholders at a Sprint Review? (Choose two.)",
     "select": 2,
     "options": [
-      "Discussing what to do next",
-      "Rating each Developer",
-      "Approving the team's hours",
       "Inspecting the Increment",
-      "Assigning tasks to Developers"
+      "Planning the next Sprint's tasks",
+      "Reviewing the team's velocity",
+      "Discussing what to do next",
+      "Accepting completed items"
     ],
     "correct": [
       0,
@@ -1101,13 +1101,13 @@
     "skill": "Releasing",
     "stem": "When can the Product Owner release an Increment?",
     "options": [
-      "Only once the product backlog is empty",
-      "Only once the Sprint Review approves it",
-      "Whenever it is Done and worth releasing",
-      "Only after three Sprints of work"
+      "When the Developers say it is stable",
+      "At the end of the Sprint, after the Review",
+      "Once a planned release is complete",
+      "Whenever it is Done and worth releasing"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "An Increment that meets the Definition of Done can be released whenever it creates value; releases are not tied to the end of a Sprint."
   },
@@ -1122,13 +1122,13 @@
     "skill": "Sprint Planning",
     "stem": "Who decides how much work the Developers take into the Sprint?",
     "options": [
+      "Developers",
       "Line manager",
       "Scrum Master",
-      "Product Owner",
-      "Developers"
+      "Product Owner"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Selecting how much can be completed in a Sprint may be challenging, but it is the Developers' call, informed by their past performance, capacity and Definition of Done. The Product Owner influences what, not how much."
   },
@@ -1143,13 +1143,13 @@
     "skill": "Key Value Areas",
     "stem": "Revenue per employee is an example measure of:",
     "options": [
-      "Current Value",
       "Ability to Innovate",
+      "Current Value",
       "Time-to-Market",
       "Unrealized Value"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Revenue per employee, product cost ratio and customer and employee satisfaction are listed as Current Value measures."
   },
@@ -1164,13 +1164,13 @@
     "skill": "Refinement",
     "stem": "Who takes part in Product Backlog refinement?",
     "options": [
-      "Only the Product Owner, working on their own",
+      "Product Owner, with the Scrum Master",
+      "Product Owner and key stakeholders",
       "Product Owner and Developers, as needed",
-      "Only the Scrum Master and stakeholders",
-      "Only senior Developers before planning"
+      "Developers, with the Scrum Master leading"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Refinement is a collaborative activity. The Product Owner brings the needs and value, and the Developers who will do the work size the items."
   },
@@ -1185,9 +1185,9 @@
     "skill": "Goals and empiricism",
     "stem": "Why are Strategic Goals in Evidence-Based Management pursued empirically?",
     "options": [
-      "They are small and fully known in advance",
-      "They never change once they are written",
-      "They are set by the Developers each Sprint",
+      "They depend on the Developers' estimates",
+      "They are made of many Sprint Goals",
+      "They are reviewed by leaders each year",
       "They are large, distant and uncertain"
     ],
     "correct": [
@@ -1206,13 +1206,13 @@
     "skill": "Scrum Master and stakeholders",
     "stem": "The Product Owner struggles to get two departments to work together on the product. Who can help facilitate?",
     "options": [
-      "A Developer",
-      "Auditor",
-      "Product sponsor",
-      "Scrum Master"
+      "Scrum Master",
+      "Product Owner's manager",
+      "Developers",
+      "Product sponsor"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The Scrum Master serves the Product Owner by facilitating stakeholder collaboration as requested or needed, and removes barriers between stakeholders and Scrum Teams."
   },
@@ -1267,10 +1267,10 @@
     "skill": "Ordering",
     "stem": "A stakeholder asks to see why an item sits low in the Product Backlog. What should the Product Owner do?",
     "options": [
-      "Refuse to discuss the order with anyone",
-      "Move it up so the stakeholder sees value",
+      "Move it up a little as a goodwill gesture",
+      "Ask the Scrum Master to explain the order",
       "Explain the reasoning behind the order",
-      "Ask the Developers to justify its position"
+      "Invite them to the next Sprint Planning"
     ],
     "correct": [
       2
@@ -1288,7 +1288,7 @@
     "skill": "Forecasting charts",
     "stem": "Which chart shows both completed work and changes in total scope over time?",
     "options": [
-      "Pie chart",
+      "Velocity chart",
       "Burn-down chart",
       "Gantt chart",
       "Burn-up chart"
@@ -1309,13 +1309,13 @@
     "skill": "Product Vision",
     "stem": "Many teams argue over what the product is for. Which step helps the Product Owner most?",
     "options": [
-      "Add more items to every Sprint",
-      "Write a longer product requirements list",
       "Share a clear Product Vision",
-      "Ask each team to choose its own aim"
+      "Set one Sprint Goal for all",
+      "Agree a detailed roadmap",
+      "Write team charters"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "A shared Product Vision gives everyone the same purpose to decide against, which reduces conflicting directions."
   },
@@ -1330,10 +1330,10 @@
     "skill": "Expectations",
     "stem": "Stakeholders keep being surprised by what is delivered. What would help most?",
     "options": [
-      "Releasing less often to avoid change",
+      "Agreeing requirements in more detail",
       "Inviting them to inspect each Increment",
-      "Sending a longer product requirements file",
-      "Hiding the Product Backlog from them"
+      "Sending them a detailed weekly status report",
+      "Releasing larger Increments less often"
     ],
     "correct": [
       1
@@ -1352,10 +1352,10 @@
     "stem": "Which two help Developers understand what a Product Backlog item needs? (Choose two.)",
     "select": 2,
     "options": [
-      "Fixed hour estimates per task",
-      "Sign-off from every stakeholder",
+      "Detailed task estimates in hours",
+      "Stakeholder sign-off of the item",
       "Conversations with the Product Owner",
-      "Long specifications up front",
+      "A full specification written early",
       "Examples of expected behaviour"
     ],
     "correct": [
@@ -1375,13 +1375,13 @@
     "skill": "Done",
     "stem": "A feature passes testing but misses one Definition of Done criterion on the last Sprint day. The Product Owner wants it in the Increment. What is correct?",
     "options": [
-      "It is released and fixed in the next Sprint",
+      "It joins the Increment with a defect logged",
+      "It counts if the Product Owner accepts it",
       "It is not part of the Increment yet",
-      "It joins the Increment as a partial item",
-      "The Product Owner may waive the criterion"
+      "It is shown at the Review as nearly Done"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Work cannot be considered part of an Increment unless it meets the Definition of Done. The Product Owner cannot waive the Definition of Done to count more work."
   },
@@ -1396,13 +1396,13 @@
     "skill": "Value measures",
     "stem": "What does the Innovation Rate measure?",
     "options": [
-      "Number of ideas raised in a Retrospective",
+      "Number of new features released in each year",
+      "Share of ideas that reach production",
       "Time from an idea to its first release",
-      "Share of effort spent on new capabilities",
-      "Share of users who try each new feature"
+      "Share of effort spent on new capabilities"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Innovation Rate is the percentage of effort or cost spent on new product capabilities, divided by total product effort or cost."
   },
@@ -1436,13 +1436,13 @@
     "skill": "Splitting items",
     "stem": "Why split large items before Sprint Planning?",
     "options": [
-      "So the backlog looks more complete",
       "So each can be Done within one Sprint",
-      "So each Developer has a separate item",
-      "So stakeholders can approve each part"
+      "So each Developer can own an item",
+      "So each one can be estimated in hours",
+      "So the Sprint Backlog has more items"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Items that can be Done within one Sprint are ready for selection. Large items are split so they fit and still deliver something usable."
   },
@@ -1457,13 +1457,13 @@
     "skill": "Product Goal",
     "stem": "The Product Owner weighs three candidate Product Goals. What should guide the choice?",
     "options": [
-      "Product items that are quickest to build",
-      "Technology the Developers prefer",
+      "Which goal is quickest to reach",
       "Product Vision and business strategy",
-      "Request of the loudest stakeholder"
+      "Which goal the team can forecast best",
+      "Which goal stakeholders rank highest"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Business strategy informs the Product Vision, and the Product Goal is the next target the team plans against. Choosing it against vision and strategy keeps the work pointed at value."
   },
@@ -1478,13 +1478,13 @@
     "skill": "Product Owner",
     "stem": "Whose needs may the Product Owner represent in the Product Backlog?",
     "options": [
-      "Only the Developers",
+      "Business sponsors",
+      "Paying customers",
       "Many stakeholders",
-      "Only the product sponsor",
-      "Only the Scrum Master"
+      "End users only"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The Scrum Guide says the Product Owner may represent the needs of many stakeholders in the Product Backlog."
   },
@@ -1499,13 +1499,13 @@
     "skill": "Multiple Scrum Teams",
     "stem": "Three Scrum Teams build one product. How many Product Goals do they work toward?",
     "options": [
-      "One per Sprint, per team",
-      "One, shared by all three",
       "Three, one per Scrum Team",
-      "None until the teams merge"
+      "One per team, linked to an overall goal",
+      "One per team each Sprint",
+      "One, shared by all three"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Scrum Teams working on the same product share one Product Goal, one Product Backlog and one Product Owner."
   },
@@ -1518,17 +1518,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Maximizing value",
-    "stem": "Two items cost the same. One serves 5% of users, the other fixes a problem for 60%. With nothing else known, which should usually come first?",
+    "stem": "Item A helps most users a little; item B helps a few key customers a lot. Both cost the same. How should the Product Owner decide?",
     "options": [
-      "Fix for 60% of users",
-      "Whichever is larger",
-      "Whichever is newer",
-      "Feature for 5% of users"
+      "Compare evidence of each item's total value",
+      "Favour item A, since it reaches more users",
+      "Favour item B, since key customers pay most",
+      "Let the Developers pick the one easier to build"
     ],
     "correct": [
       0
     ],
-    "explanation": "With equal cost, the item likely to create the most value for customers usually comes first. The Product Owner then checks the result empirically."
+    "explanation": "Neither reach nor customer importance settles value on its own. The Product Owner compares the evidence of total value for each item, then checks the result empirically after release."
   },
   {
     "id": "PSPO-T1-074",
@@ -1541,13 +1541,13 @@
     "skill": "Product Backlog",
     "stem": "What is the single source of work for the Scrum Team?",
     "options": [
-      "Ticket queue",
-      "Project charter",
+      "Release plan",
+      "Product Backlog",
       "Product roadmap",
-      "Product Backlog"
+      "Sprint Backlog"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The Scrum Guide calls the Product Backlog the single source of work undertaken by the Scrum Team."
   },
@@ -1562,13 +1562,13 @@
     "skill": "Release planning",
     "stem": "Why release a small first version to real users early?",
     "options": [
+      "To reduce the cost of the final launch",
+      "To give marketing something to announce",
       "To learn what users value before building more",
-      "To finish the Product Backlog more quickly",
-      "To show stakeholders value without a Review",
-      "To avoid needing a Definition of Done at first"
+      "To meet stakeholders' first agreed milestone date"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "An early release turns assumptions into evidence. The Product Owner can then order the rest of the backlog on what users actually do."
   },
@@ -1583,13 +1583,13 @@
     "skill": "Goals and empiricism",
     "stem": "In Evidence-Based Management, what is a hypothesis?",
     "options": [
-      "Belief that one change will lead to a result",
-      "Fixed requirement signed off by sponsors",
-      "Proven fact about what product customers want",
-      "Step in the release plan that cannot move"
+      "Goal that has been broken into steps",
+      "Measure chosen to track one Key Value Area",
+      "Requirement that customers have confirmed",
+      "Belief that one change will lead to a result"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "The EBM Guide defines a hypothesis as a belief that doing something will lead to something else. It stays a belief until an experiment supports or rejects it."
   },
@@ -1623,13 +1623,13 @@
     "skill": "Product Owner and Developers",
     "stem": "The Product Owner sees technical debt slowing every release. What should they do?",
     "options": [
-      "Leave it until customers complain",
-      "Tell the Developers which code to rewrite",
       "Raise it with the Developers and weigh it",
-      "Ask the Scrum Master for a clean-up Sprint"
+      "Set aside a fixed share of each Sprint",
+      "Leave it for the Developers to fit in later",
+      "Plan a clean-up Sprint after the release"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Technical debt reduces the ability to deliver value, so the Product Owner makes it transparent and weighs the work against other items. How the code is fixed stays with the Developers."
   },
@@ -1663,13 +1663,13 @@
     "skill": "Ordering",
     "stem": "The Product Owner orders items only by which stakeholder is most senior. What is the main risk?",
     "options": [
-      "The Sprint Goal is set too early",
-      "Refinement becomes a formal event",
-      "Developers cannot size the product items",
-      "Value is not maximized for customers"
+      "The Sprint Goal becomes harder to set",
+      "Value is not maximized for customers",
+      "Refinement takes longer each Sprint",
+      "Developers lose their self-management"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Ordering by rank rather than by value, risk and learning means the most valuable work may wait. The Product Owner is accountable for maximizing value."
   },
@@ -1684,13 +1684,13 @@
     "skill": "Ordering",
     "stem": "What is the main purpose of ordering the Product Backlog?",
     "options": [
-      "Show which stakeholder asked for value first",
+      "Make the release date more predictable",
+      "Show stakeholders when items arrive",
       "Make the most valuable work come first",
-      "Group items by the product area they touch",
-      "Give each Developer an equal share"
+      "Group related work into releases"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Ordering puts the work that maximizes value, given risk and dependencies, at the top so the team takes it on first."
   },
@@ -1706,12 +1706,12 @@
     "stem": "Which event is the main chance for the Product Owner and stakeholders to inspect the Increment together?",
     "options": [
       "Sprint Planning",
-      "Sprint Review",
       "Daily Scrum",
-      "Sprint Retrospective"
+      "Sprint Retrospective",
+      "Sprint Review"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The Sprint Review is where the Scrum Team presents its results to key stakeholders and they inspect the outcome of the Sprint together."
   },
@@ -1726,13 +1726,13 @@
     "skill": "Key Value Areas",
     "stem": "Which Key Value Area looks at value the product could create but does not yet?",
     "options": [
-      "Ability to Innovate",
       "Unrealized Value",
+      "Ability to Innovate",
       "Time-to-Market",
       "Current Value"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Unrealized Value measures potential future value that could be realized if the organization better met the needs of all potential customers or users."
   },
@@ -1747,13 +1747,13 @@
     "skill": "Business Strategy",
     "stem": "What informs a company's business strategy?",
     "options": [
+      "Its market research",
       "Its mission and vision",
-      "Its team rosters",
-      "Its product Sprint Backlogs",
-      "Its Daily Scrums"
+      "Its product roadmaps",
+      "Its yearly budgets"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Business strategy is informed by the company's mission and vision, then informs the visions of individual products."
   },
@@ -1768,13 +1768,13 @@
     "skill": "Stakeholders",
     "stem": "A stakeholder group is affected by the product but has never been asked for input. What should the Product Owner do?",
     "options": [
+      "Ask the sponsor to speak for them",
+      "Include them at the next release",
       "Find ways to learn their needs",
-      "Wait until they complain first",
-      "Ask the Developers to guess them",
-      "Ignore them, since they don't pay"
+      "Wait for them to raise requests"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Identifying and learning about key stakeholders' challenges helps the Scrum Team deliver value. A missing group is a blind spot."
   },
@@ -1790,12 +1790,12 @@
     "stem": "Whose accountability covers judging whether releasing a Done Increment now maximizes value?",
     "options": [
       "Sponsor",
-      "Product Owner",
       "Auditor",
-      "Scrum Master"
+      "Scrum Master",
+      "Product Owner"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The Product Owner is accountable for maximizing value, so judging when releasing an Increment creates value sits with them."
   },
@@ -1810,13 +1810,13 @@
     "skill": "Product Backlog",
     "stem": "Which of these belongs in the Product Backlog?",
     "options": [
-      "Only work for the current Sprint",
-      "Only product items estimated in hours",
-      "Only features that customers request",
-      "Features, fixes and technical work"
+      "Features, fixes and technical work",
+      "Work approved by the steering group",
+      "Customer-facing features only",
+      "Features and fixes; tech work stays apart"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The Product Backlog lists what is needed to improve the product: features, fixes, technical work and experiments alike."
   },
@@ -1832,12 +1832,12 @@
     "stem": "In Sprint Planning, the Product Owner's main contribution to 'what can be Done' is:",
     "options": [
       "Decide how many items fit in the Sprint",
-      "Choose which Developer works on what",
-      "Split every item into hourly tasks",
-      "Clarify items so Developers can choose"
+      "Clarify items so Developers can choose",
+      "Confirm the Sprint Backlog is complete",
+      "Agree the task breakdown with Developers"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The Product Owner helps the Developers understand the items so they can select and forecast. How much fits and how the work is done remain the Developers' decisions."
   },
@@ -1853,12 +1853,12 @@
     "stem": "Lead time belongs to which Key Value Area?",
     "options": [
       "Current Value",
-      "Time-to-Market",
       "Ability to Innovate",
+      "Time-to-Market",
       "Unrealized Value"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Lead time, release frequency and customer cycle time all describe how quickly the organization delivers and learns, so they are Time-to-Market measures."
   },
@@ -1873,13 +1873,13 @@
     "skill": "Goals and empiricism",
     "stem": "In Evidence-Based Management, what shows the organization is on the path to a Strategic Goal?",
     "options": [
-      "Intermediate Goals",
       "Sprint Goals",
       "Key Value Areas",
-      "Immediate Tactical Goals"
+      "Immediate Tactical Goals",
+      "Intermediate Goals"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Intermediate Goals are achievements that show the organization is on the path toward a Strategic Goal, where the path is somewhat uncertain but not completely unknown."
   },
@@ -1894,13 +1894,13 @@
     "skill": "Conflicting needs",
     "stem": "Stakeholders want the Product Owner to give every department equal Sprint time. What is the weakness?",
     "options": [
-      "It needs a longer Daily Scrum",
-      "It makes the Sprint Goal too narrow",
-      "It breaks the Definition of Done",
-      "It ignores where value is highest"
+      "It ignores where value is highest",
+      "It reduces Developer focus",
+      "It makes the Sprint Goal hard to set",
+      "It slows down Sprint Planning"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Sharing time by department ignores where the most value lies. The Product Owner orders by value so the team works on what matters most."
   },
@@ -1915,13 +1915,13 @@
     "skill": "Refinement",
     "stem": "Items at the bottom of the backlog have one-line descriptions. Is this a problem?",
     "options": [
+      "Yes; each needs acceptance criteria first",
       "No; detail is added as they near the top",
-      "Yes; every item needs full detail before Sprint 1",
-      "Yes; one-line items must be deleted at once",
-      "No; low items never need more detail"
+      "Yes; vague items hide their real size",
+      "No, as long as they are estimated"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Refinement adds detail as items approach selection. Detailing distant items early wastes effort, since many will change or be removed."
   },
@@ -1936,10 +1936,10 @@
     "skill": "Forecasting",
     "stem": "Over five Sprints a team completed 18, 22, 20, 19 and 21 points. Which forecast is most useful?",
     "options": [
-      "Exactly 22 every Sprint from now on",
-      "Exactly 30 next Sprint, as a stretch",
+      "Exactly 22, the team's best so far",
+      "Exactly 20 next Sprint, the average",
       "A range, about 18 to 22 next Sprint",
-      "No forecast until the backlog is done"
+      "About 25, to push for improvement"
     ],
     "correct": [
       2
@@ -2037,10 +2037,10 @@
     "skill": "Feedback",
     "stem": "A key customer is unhappy with the latest Increment. What should the Product Owner do first?",
     "options": [
-      "Roll the product back without asking why",
+      "Fix the issues in the current Sprint",
       "Find out why, then adapt the backlog",
-      "Ask the Developers to work longer hours",
-      "Wait for the customer to raise it again"
+      "Offer a discount until it is fixed",
+      "Escalate to the sponsor for direction"
     ],
     "correct": [
       1
@@ -2058,13 +2058,13 @@
     "skill": "Empiricism",
     "stem": "Why should the Product Owner prefer to release small Increments often?",
     "options": [
-      "Small releases need no Definition of Done to be met",
+      "Smaller releases need less testing and less sign-off",
+      "Small releases make velocity more stable",
       "Each release brings feedback to inspect and adapt on",
-      "Smaller releases let stakeholders skip the Sprint Review",
-      "Frequent releases remove the need for a Product Goal"
+      "Frequent releases keep stakeholders reassured"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Each Increment delivered to users creates evidence. Releasing often gives the Product Owner more chances to inspect real outcomes and adapt the Product Backlog."
   },
@@ -2081,11 +2081,11 @@
     "options": [
       "Ability to Innovate",
       "Current Value",
-      "Unrealized Value",
-      "Time-to-Market"
+      "Time-to-Market",
+      "Unrealized Value"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Potential market share describes value not yet captured, so it is listed under Unrealized Value."
   },
@@ -2100,13 +2100,13 @@
     "skill": "Product Owner accountability",
     "stem": "A business analyst writes most Product Backlog items. What is still the Product Owner's job?",
     "options": [
-      "Typing every item personally in the tool",
-      "Running the Daily Scrum for the analyst",
       "Ordering the items and owning the outcome",
-      "Approving each Developer's task estimates"
+      "Reviewing each item that the analyst writes",
+      "Presenting the items at Sprint Planning",
+      "Writing the acceptance criteria only"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The Product Owner may have others do Product Backlog work, but ordering and accountability for value remain with the Product Owner."
   },
@@ -2121,13 +2121,13 @@
     "skill": "Fixed scope",
     "stem": "A sponsor wants every backlog item by a fixed date. What should the Product Owner explain?",
     "options": [
+      "A detailed plan will make it certain",
       "Scope or date may have to change",
-      "Quality can be cut to protect scope and date",
-      "Developers will work faster to meet both",
-      "Sprints can be lengthened until all fits"
+      "The team can commit if it adds people",
+      "A buffer can absorb most of the risk"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "In complex work the future is uncertain. Forecasts show what is likely, and either scope or date may need to change; lowering quality is not an option."
   },
@@ -2142,13 +2142,13 @@
     "skill": "Product Goal",
     "stem": "A new law makes the current Product Goal pointless. What is the most fitting action?",
     "options": [
-      "Keep the Product Goal, since goals never change",
-      "Hide the change until the next release",
-      "Finish it first, then review the law",
-      "Abandon it and set a new Product Goal"
+      "Finish it first, then set the next goal",
+      "Cancel the Sprint and keep the goal",
+      "Abandon it and set a new Product Goal",
+      "Reword it to fit the new law"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "A Product Goal must be fulfilled or abandoned before the next one is taken on. When it no longer makes sense, the Product Owner can abandon it and develop a new one."
   },
@@ -2163,13 +2163,13 @@
     "skill": "Stakeholders",
     "stem": "The Product Owner is the only person who ever speaks with users. What is the main risk?",
     "options": [
-      "Users will refuse to use the product at all",
-      "Developers lose direct insight into needs",
-      "The Product Goal becomes a committee",
-      "Sprint Planning cannot be timeboxed"
+      "The Product Owner becomes badly overloaded",
+      "Stakeholders bypass the Product Owner",
+      "Users receive mixed messages",
+      "Developers lose direct insight into needs"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The whole Scrum Team is responsible for stakeholder collaboration. When only one person talks to users, the Developers build with less understanding of the need."
   },
@@ -2185,9 +2185,9 @@
     "stem": "A new item could validate whether a whole feature area is worth building. Why might it be ordered high?",
     "options": [
       "It brings learning that guides later ordering",
-      "It always costs less than other product items",
-      "It lets the team skip the Definition of Done",
-      "It removes the need for a Sprint Review"
+      "It is small and easy to estimate",
+      "It makes the Sprint Goal easier to set",
+      "It keeps key stakeholders engaged early on"
     ],
     "correct": [
       0
@@ -2205,13 +2205,13 @@
     "skill": "Product Backlog",
     "stem": "Mid-Sprint, the Product Owner has a valuable new idea that does not fit the Sprint Goal. Where does it go?",
     "options": [
-      "Into the Sprint Backlog, in place of the lowest item",
-      "Into a separate list kept only by the Product Owner",
-      "Into the next Sprint Goal, decided right away",
-      "Into the Product Backlog, ordered for a later Sprint"
+      "Into the Sprint Backlog if the Developers all agree",
+      "Into the Product Backlog, ordered for a later Sprint",
+      "Into the next Sprint Goal, so it is not lost",
+      "Into a parking list until the Sprint Review"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Work that does not serve the current Sprint Goal is added to the Product Backlog, where the Product Owner orders it against everything else for future Sprints."
   },
@@ -2226,10 +2226,10 @@
     "skill": "Value measures",
     "stem": "What does the Customer Usage Index help a Product Owner infer?",
     "options": [
-      "How many customers the market could hold",
-      "How much each Sprint costs to run",
+      "How satisfied customers are with the product overall",
+      "How often customers return each week",
       "How useful customers find each feature",
-      "How quickly Done work reaches customers"
+      "How many customers use the product"
     ],
     "correct": [
       2
@@ -2247,13 +2247,13 @@
     "skill": "Time-to-Market",
     "stem": "Which measure best shows how often value reaches users?",
     "options": [
-      "Product backlog size",
-      "Product team size",
-      "Release frequency",
-      "Velocity per Sprint"
+      "Sprint length",
+      "Throughput of items",
+      "Velocity per Sprint",
+      "Release frequency"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Release frequency is a Time-to-Market measure in Evidence-Based Management. Velocity and backlog size do not show whether value reached users."
   },
@@ -2268,13 +2268,13 @@
     "skill": "Splitting items",
     "stem": "An online shop item reads 'Customers can pay'. Which first slice delivers usable value soonest?",
     "options": [
-      "Build the full payments database",
+      "Pay by one common card type",
+      "Build the payments database first",
       "Design screens for every method",
-      "Write the refund rules first",
-      "Pay by one common card type"
+      "Agree the refund rules first"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A thin slice, one payment method working end to end, can be released and tested with real customers. The others deliver nothing usable on their own."
   },
@@ -2290,10 +2290,10 @@
     "stem": "Which two describe a product in the Scrum Guide? (Choose two.)",
     "select": 2,
     "options": [
-      "Single release",
-      "Fixed end date",
+      "Single team",
+      "Planned end date",
       "Clear boundary",
-      "Fixed budget",
+      "Funded budget",
       "Known stakeholders"
     ],
     "correct": [
@@ -2314,12 +2314,12 @@
     "stem": "Who brings the stakeholders' interests into the Product Backlog?",
     "options": [
       "Developers",
+      "Product Owner",
       "Sponsor",
-      "Scrum Master",
-      "Product Owner"
+      "Scrum Master"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The Product Owner may represent the needs of many stakeholders in the Product Backlog and is accountable for its content and order."
   },
@@ -2335,11 +2335,11 @@
     "stem": "Which two artifacts does the Product Owner use to make product progress visible to stakeholders? (Choose two.)",
     "select": 2,
     "options": [
-      "Increment",
       "Product Backlog",
-      "Gantt chart",
-      "Sprint burn-down",
-      "Status report"
+      "Increment",
+      "Roadmap",
+      "Release burn-down",
+      "Sprint Backlog"
     ],
     "correct": [
       0,
@@ -2358,13 +2358,13 @@
     "skill": "Value measures",
     "stem": "What does Time-to-Learn cover?",
     "options": [
-      "Bug report to the fix being released",
+      "Start of a Sprint to its Sprint Review",
+      "Idea to the item being Done",
       "Idea to learning from users' use of it",
-      "Hiring date to a Developer's first commit",
-      "Start of a Sprint to its Sprint Review"
+      "Release to the first user feedback"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Time-to-Learn is the total time to sketch an idea, build it, deliver it to users and learn from their usage."
   },
@@ -2380,11 +2380,11 @@
     "stem": "Which two are good reasons to remove an item from the Product Backlog? (Choose two.)",
     "select": 2,
     "options": [
-      "It looks hard for the Developers",
+      "Its estimate is larger than a Sprint",
       "Evidence shows users do not need it",
       "It no longer serves the Product Goal",
-      "It was added by a junior colleague",
-      "It has been there for one month"
+      "It has no acceptance criteria yet",
+      "Its requester has left the company"
     ],
     "correct": [
       1,
@@ -2422,15 +2422,15 @@
     "skill": "Product Vision",
     "stem": "Who is best placed to keep the Product Vision alive for the Scrum Team?",
     "options": [
-      "Product Owner",
       "Scrum Master",
-      "Line manager",
-      "Each Developer"
+      "Product sponsor",
+      "Whole Scrum Team, together",
+      "Product Owner"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "The Product Owner is accountable for maximizing the value of the product and for developing and communicating the Product Goal, so keeping the vision clear and shared sits with them."
+    "explanation": "The Product Vision is a Scrum.org focus area rather than a Scrum Guide term. Because the Product Owner is accountable for maximizing value and for developing and communicating the Product Goal, keeping the vision clear and shared sits with them."
   },
   {
     "id": "PSPO-T2-037",
@@ -2482,9 +2482,9 @@
     "stem": "A sponsor wants the Product Owner judged on items completed per Sprint. What is the main weakness?",
     "options": [
       "It counts output, not customer outcomes",
-      "It is too hard to count items each Sprint",
-      "It makes the Sprint Review take longer",
-      "It ignores the Scrum Master's workload"
+      "Item sizes differ far too much to compare",
+      "It ignores the quality of the items",
+      "It can be gamed by splitting items"
     ],
     "correct": [
       0
@@ -2502,13 +2502,13 @@
     "skill": "Refinement",
     "stem": "In Sprint Planning, the Developers keep finding the top items unclear. What does this suggest?",
     "options": [
-      "The items must be deleted",
-      "Sprint Planning should run past its timebox",
-      "The Scrum Master should write the details",
-      "Refinement needs more attention"
+      "Sprint Planning needs a longer timebox",
+      "Refinement needs more attention",
+      "The Scrum Master should clarify items",
+      "Product Owner should write longer items"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Refinement prepares items so they can be understood and selected. Repeatedly unclear items mean the Product Owner and Developers need to refine more before planning."
   },
@@ -2542,13 +2542,13 @@
     "skill": "Increment",
     "stem": "What is the most reliable evidence of progress toward the Product Goal?",
     "options": [
-      "Points estimated",
+      "Burn-down slope",
+      "Items refined",
       "Done Increments",
-      "Hours logged",
-      "Tasks in progress"
+      "Velocity trend"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Only work that meets the Definition of Done is part of an Increment, and each Increment is a concrete stepping stone toward the Product Goal. Effort and estimates are not progress."
   },
@@ -2601,9 +2601,9 @@
     "skill": "Feedback",
     "stem": "Which source of feedback is usually strongest for the Product Owner?",
     "options": [
-      "What a sponsor believes users want",
-      "What the Developers prefer to build",
-      "What a rival's product advert promises",
+      "What users say in interviews",
+      "What the Product Owner believes users want",
+      "What a competitor has just launched",
       "How real users actually behave"
     ],
     "correct": [
@@ -2622,13 +2622,13 @@
     "skill": "Forecasting",
     "stem": "Halfway to a release, new scope keeps being added. What does a burn-up chart help the Product Owner show?",
     "options": [
-      "The release can go out without testing",
-      "The Developers are working too slowly",
-      "The Sprint Goal is no longer needed",
-      "Scope growth is pushing the date out"
+      "Scope growth is pushing the date out",
+      "The Sprint Goal is too ambitious",
+      "Developers are slowing down over time",
+      "The forecast was wrong from the start"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A burn-up shows completed work and total scope separately, so stakeholders can see that the finish line moved because scope grew, not because progress stopped."
   },
@@ -2643,13 +2643,13 @@
     "skill": "Ordering",
     "stem": "A competitor launches a feature customers now expect. What can the Product Owner do right away?",
     "options": [
+      "Raise it at the next Sprint Review",
       "Reorder the backlog to respond",
-      "Cancel all Sprints until it is planned",
-      "Add it to the current Sprint at once",
-      "Wait for the yearly product roadmap review"
+      "Plan it into the next release",
+      "Add it to the current Sprint"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The Product Owner can reorder the Product Backlog at any time to respond to change. Changing the current Sprint is only possible if it does not endanger the Sprint Goal."
   },
@@ -2664,13 +2664,13 @@
     "skill": "Empiricism",
     "stem": "Which situation shows the Product Owner using adaptation well?",
     "options": [
-      "Asking for a second Sprint Review to defend a feature",
+      "Reviewing the Product Goal every quarter",
+      "Keeping the roadmap stable so teams can plan",
       "Reordering the backlog after users reject a new flow",
-      "Adding detail to every item before any is built",
-      "Keeping the yearly roadmap unchanged to look stable"
+      "Adding detail to all items before each Sprint Planning"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Adaptation means adjusting as soon as an inspection shows something is unacceptable. Changing the Product Backlog in response to user feedback is adaptation in action."
   },
@@ -2685,13 +2685,13 @@
     "skill": "Outcomes and outputs",
     "stem": "Which is the best sign that a new feature created value?",
     "options": [
-      "It has a high story point total",
-      "Customers use it and stay longer",
       "It was delivered on the planned date",
-      "Developers enjoyed building it"
+      "Stakeholders praised it at the Review",
+      "It met every acceptance criterion",
+      "Customers use it and stay longer"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Value shows up in customer outcomes such as usage and retention. Delivery dates, points and team enjoyment describe the work, not its value."
   },
@@ -2706,13 +2706,13 @@
     "skill": "Product Goal",
     "stem": "Which statement best fits a Product Goal?",
     "options": [
-      "Finish the twelve product booking screens by 30 June",
       "Make online booking the way most patients reach us",
-      "Move the booking database to a new server",
-      "Hold four Sprints of booking work this year"
+      "Release the whole new booking system by the end of June",
+      "Replace the booking database with a faster one",
+      "Add booking reminders, cancellations and payments"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "A Product Goal describes a future state of the product to plan against. A list of screens, a technical task or a count of Sprints is output, not a target state."
   },
@@ -2727,13 +2727,13 @@
     "skill": "Saying no",
     "stem": "A powerful executive demands a feature that conflicts with the Product Goal. What is the Product Owner's best first step?",
     "options": [
-      "Tell the Developers to build it in secret",
-      "Cancel the Sprint so it can start now",
+      "Ask the Scrum Master to handle the executive",
       "Explain the trade-off against the goal",
-      "Accept it to keep the executive on side"
+      "Change the Product Goal to include it",
+      "Add it, since the executive funds the work"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The Product Owner explains the trade-off against the Product Goal and value. The decision stays with the Product Owner, and the organization must respect it."
   },
@@ -2748,13 +2748,13 @@
     "skill": "Acceptance and clarity",
     "stem": "Does Scrum require acceptance criteria on every Product Backlog item?",
     "options": [
-      "Yes; but only for top items",
+      "Yes; the Definition of Done needs them",
+      "Yes; they are part of being ready",
       "No; teams choose such practices",
-      "Yes; Scrum mandates them for all",
-      "No; Scrum forbids writing them"
+      "Only for items near the top"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Scrum does not prescribe acceptance criteria. Many teams use them as a complementary practice to make items clear."
   },
@@ -2769,9 +2769,9 @@
     "skill": "Release planning",
     "stem": "What is the purpose of release planning for a Scrum Team?",
     "options": [
-      "Replacement for Sprint Planning",
-      "Fixed contract for future Sprints",
-      "Way to assign product work to Developers",
+      "Breakdown of work for each Sprint",
+      "Commitment to scope by a set date",
+      "Agreement on the release scope",
       "Guide to frequent, small releases"
     ],
     "correct": [
@@ -2790,13 +2790,13 @@
     "skill": "Sprint Goal",
     "stem": "How does a clear Sprint Goal help the Product Owner?",
     "options": [
-      "It fixes the exact items the Developers must finish",
-      "It replaces the need for a Product Goal later on",
-      "It lets the Product Owner assign tasks during the Sprint",
-      "It keeps the Sprint focused on one valuable objective"
+      "It keeps the Sprint focused on one valuable objective",
+      "It fixes the full scope the Developers will deliver",
+      "It sets the target for the next Product Goal",
+      "It tells stakeholders exactly what will be released"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The Sprint Goal is the single objective for the Sprint. It creates coherence and focus while leaving the Developers flexibility in the exact work needed."
   },
@@ -2835,13 +2835,13 @@
     "skill": "Product Backlog",
     "stem": "How should the Product Owner make the Product Backlog transparent?",
     "options": [
+      "Show the top items at each Sprint Review",
       "Keep it visible and understood by all",
-      "Show it to stakeholders once a year",
-      "Keep top product items private until planned",
-      "Share it with the Developers only"
+      "Let the Scrum Master publish it weekly",
+      "Share a summary with stakeholders monthly"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The Product Owner ensures the Product Backlog is transparent, visible and understood, so everyone inspects the same picture."
   },
@@ -2856,13 +2856,13 @@
     "skill": "Goals and empiricism",
     "stem": "In Evidence-Based Management, what is an experiment?",
     "options": [
-      "Survey that replaces measuring product outcomes",
+      "Prototype shown to the stakeholders for approval",
+      "Small release made to gather opinions",
       "Test designed to prove or reject a hypothesis",
-      "Release made with no Definition of Done",
-      "Trial run of the Sprint Review agenda"
+      "Sprint used to explore a new technology"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The EBM Guide defines an experiment as a test designed to prove or reject a hypothesis."
   },
@@ -2877,13 +2877,13 @@
     "skill": "Customers",
     "stem": "Which question best helps a Product Owner understand a customer's need?",
     "options": [
-      "What problem are you trying to solve?",
-      "How many Developers should we add?",
-      "Can you sign off this specification?",
-      "Which product screen layout do you prefer?"
+      "How should the screen look to you?",
+      "When exactly do you need it delivered?",
+      "Which features do you want first?",
+      "What problem are you trying to solve?"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Asking about the customer's problem uncovers the need behind a request. Solutions can then be chosen to deliver the value they seek."
   },
@@ -2899,11 +2899,11 @@
     "stem": "Which two statements about Scrum and complex product work are true? (Choose two.)",
     "select": 2,
     "options": [
-      "Feedback is only gathered at the final release",
-      "Requirements stay fixed once agreed",
-      "Decisions should rest on what is observed",
+      "Forecasts become exact after a few Sprints",
+      "Requirements settle once refined well",
       "More is unknown than known at the start",
-      "A detailed plan up front removes the risk"
+      "Decisions should rest on what is observed",
+      "Detailed early analysis removes most risk"
     ],
     "correct": [
       2,
@@ -2923,9 +2923,9 @@
     "stem": "A feature has high value but huge cost; a smaller one gives most of the value at a tenth of the cost. What should the Product Owner weigh?",
     "options": [
       "Value against cost and risk",
-      "Cost alone, ignoring value",
-      "Size of each feature's spec",
-      "Value alone, ignoring cost"
+      "Which one is easier to test",
+      "Which one fits the Sprint",
+      "Which one stakeholders asked for"
     ],
     "correct": [
       0
@@ -2943,13 +2943,13 @@
     "skill": "Ordering",
     "stem": "Two items have similar value; one is much riskier. When is it wise to do the riskier one first?",
     "options": [
-      "When the team wants harder work for practice",
-      "When stakeholders have not asked for either",
+      "When the Developers have the skills free",
       "When early failure would be cheaper to learn",
-      "When the Sprint is shorter than two weeks"
+      "When the Sprint is long enough to absorb all of it",
+      "When stakeholders are less likely to notice"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Doing risky work early exposes problems while they are cheap to fix and before other work depends on it."
   },
@@ -2964,13 +2964,13 @@
     "skill": "Forecasting",
     "stem": "In a complex environment, what does the Scrum Guide say about future events?",
     "options": [
+      "Risks can be listed in advance",
+      "Only near-term events can be known",
       "What will happen is unknown",
-      "Plans remove all uncertainty",
-      "Only risks need to be forecast",
-      "Most events can be predicted"
+      "Most of it can be planned for"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "The Scrum Guide says that in complex environments what will happen is unknown, which is why forecasts rest on what has already happened."
   },
@@ -2985,13 +2985,13 @@
     "skill": "Goals and empiricism",
     "stem": "In the EBM empirical loop, what comes right after forming a hypothesis?",
     "options": [
-      "Adapt the goals",
-      "Run the experiment",
-      "Set a new Strategic Goal",
-      "Inspect the results"
+      "Inspect the results",
+      "Adapt the plan",
+      "Set the goals",
+      "Run the experiment"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The loop is: set goals, form a hypothesis, run the experiment, inspect the results, then adapt. Inspection needs data from the experiment first."
   },
@@ -3007,11 +3007,11 @@
     "stem": "Which two are ways the Scrum Master supports stakeholder relations? (Choose two.)",
     "select": 2,
     "options": [
-      "Facilitating collaboration as requested",
-      "Approving stakeholder requests",
-      "Writing items for the sponsor",
       "Removing barriers between stakeholders and teams",
-      "Ordering items for stakeholders"
+      "Reporting team progress to stakeholders",
+      "Ordering requests for the Product Owner",
+      "Facilitating collaboration as requested",
+      "Collecting stakeholder requests for the team"
     ],
     "correct": [
       0,
@@ -3030,13 +3030,13 @@
     "skill": "Refinement",
     "stem": "Refinement shows an item is no longer needed. Who decides to remove it?",
     "options": [
+      "Product Owner",
       "Scrum Master",
       "Stakeholders",
-      "Product Owner",
       "Developers"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The Product Owner is accountable for the Product Backlog's content and order, so removing an item is the Product Owner's decision, informed by others."
   },
@@ -3052,12 +3052,12 @@
     "stem": "The Product Owner keeps a private list of top priorities apart from the Product Backlog. Which pillar suffers most?",
     "options": [
       "Adaptation",
-      "Commitment",
       "Transparency",
-      "Self-management"
+      "Inspection",
+      "Focus"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The Product Backlog is the single source of work and must be visible and understood. A hidden list means the team and stakeholders inspect a false picture."
   },
@@ -3073,12 +3073,12 @@
     "stem": "Employee satisfaction is listed under which Key Value Area?",
     "options": [
       "Ability to Innovate",
-      "Current Value",
       "Time-to-Market",
+      "Current Value",
       "Unrealized Value"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Current Value asks how happy users, customers, employees and investors are today, so employee satisfaction is a Current Value measure."
   },
@@ -3093,13 +3093,13 @@
     "skill": "Releasing",
     "stem": "An Increment is Done, but marketing wants to wait three months to launch it with others. What should the Product Owner weigh?",
     "options": [
-      "Whether the product team will be idle",
-      "Value and learning lost by waiting",
-      "Whether the Definition of Done expires",
-      "Whether the Sprint length should change"
+      "How to keep the Increment's code stable",
+      "How to time the launch with the Review",
+      "Whether to re-test it before the launch",
+      "Value and learning lost by waiting"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Holding Done work back delays value and feedback. The Product Owner weighs that against the benefits of a combined launch."
   },
@@ -3114,13 +3114,13 @@
     "skill": "Product Backlog",
     "stem": "What does a highly ordered Product Backlog give the Developers?",
     "options": [
-      "Fixed plan for the next twelve months",
-      "List of tasks assigned to each person",
       "Clear view of what matters most next",
-      "Record of who requested every item"
+      "Fixed plan they can all commit to",
+      "Basis for a reliable release date",
+      "List of their tasks for the Sprint"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "An ordered Product Backlog shows the team what is most valuable to work on next, which makes Sprint Planning faster and more focused."
   },
@@ -3154,13 +3154,13 @@
     "skill": "Expectations",
     "stem": "How does the Product Owner keep stakeholders informed between Sprint Reviews?",
     "options": [
+      "Weekly status report",
       "Visible, up-to-date backlog",
-      "Private plan kept for themselves",
-      "Daily Scrum seats for stakeholders",
-      "Weekly product reports from Developers"
+      "Daily Scrum invitations",
+      "Monthly steering group meeting"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "A transparent Product Backlog shows what is coming and why. The Daily Scrum is the Developers' event, not a stakeholder meeting."
   },
@@ -3175,10 +3175,10 @@
     "skill": "Product Backlog refinement",
     "stem": "The Developers say an item is too large to finish in one Sprint. What should happen?",
     "options": [
-      "Extend the Sprint until the item is Done",
-      "Take it in anyway and finish it next Sprint",
+      "Give it to two Developers at the same time",
+      "Plan it across two Sprints",
       "Split it into smaller usable items",
-      "Drop it from the Product Backlog for good"
+      "Take it in and extend the Sprint"
     ],
     "correct": [
       2
@@ -3198,11 +3198,11 @@
     "options": [
       "Current Value",
       "Ability to Innovate",
-      "Time-to-Market",
-      "Unrealized Value"
+      "Unrealized Value",
+      "Time-to-Market"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Mean time to repair, like lead time and deployment frequency, shows how quickly the organization can deliver and respond, so it is a Time-to-Market measure."
   },
@@ -3217,13 +3217,13 @@
     "skill": "Splitting items",
     "stem": "A Developer suggests splitting an item into front end and back end parts. What should the Product Owner raise?",
     "options": [
-      "Front end work always delivers more value",
       "Neither part alone would be usable",
-      "Back end work needs no refinement",
-      "Splitting is not allowed in Scrum"
+      "Back end first reduces the most risk",
+      "Front end first shows progress sooner",
+      "Each part needs its own acceptance criteria"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Splitting by technical layer often leaves pieces that cannot be released or inspected on their own. Slicing through all layers keeps each piece usable."
   },
@@ -3238,13 +3238,13 @@
     "skill": "Forecasting charts",
     "stem": "What does a burn-down chart show?",
     "options": [
-      "Hours each Developer worked",
-      "Total scope added over time",
-      "Customer satisfaction each Sprint",
-      "Work remaining over time"
+      "Velocity per Sprint",
+      "Work remaining over time",
+      "Work completed over time",
+      "Total scope over time"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "A burn-down chart plots the work remaining against time. It is one of the forecasting practices the Scrum Guide mentions, but it is not required."
   },
@@ -3259,13 +3259,13 @@
     "skill": "Goals and empiricism",
     "stem": "Why does Evidence-Based Management pursue large goals in small steps?",
     "options": [
-      "Small steps need no product measures at all",
+      "Small steps are much easier to estimate and plan",
+      "Small steps fit inside one Sprint",
       "Each step gives feedback on the direction",
-      "Large goals are banned in Scrum",
-      "Small steps fix the final scope early"
+      "Small steps keep teams motivated"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The EBM Guide says organizations must work toward larger goals in small steps, experimenting and learning along the way, because the path is uncertain."
   },
@@ -3280,13 +3280,13 @@
     "skill": "Stakeholders",
     "stem": "Which group is usually a stakeholder of a banking app?",
     "options": [
-      "Scrum Guide's authors",
-      "Daily Scrum timekeeper",
-      "Customer support staff",
-      "Rival bank's developers"
+      "The app store's own engineers",
+      "A rival bank's support staff",
+      "Developers on an unrelated product",
+      "Customer support staff"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Support staff deal with the product's users every day and have a direct interest in its outcome, so they are stakeholders."
   },
@@ -3320,13 +3320,13 @@
     "skill": "Key Value Areas",
     "stem": "Which question belongs to Unrealized Value?",
     "options": [
+      "Is it worth pursuing untapped markets?",
       "How fast can we adapt to new information?",
       "What prevents customers using new features?",
-      "Is it worth pursuing untapped markets?",
       "How happy are our employees today?"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Unrealized Value asks whether more value can be created in this or other markets and whether pursuing it is worth the effort and risk."
   },
@@ -3341,13 +3341,13 @@
     "skill": "Ordering",
     "stem": "A regulator sets a deadline for a compliance change. How does this affect ordering?",
     "options": [
-      "Developers choose when to fit it in",
-      "It stays out of the Product Backlog",
-      "It goes last, since users did not ask",
-      "Deadline and penalty risk raise its order"
+      "Developers fit it in when capacity allows",
+      "Deadline and penalty risk raise its order",
+      "It goes in a separate compliance backlog",
+      "It is ordered like any other feature"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Risk and deadlines are part of value. Missing a legal deadline can cost far more than a delayed feature, so the Product Owner orders the item accordingly."
   },
@@ -3383,13 +3383,13 @@
     "skill": "Stakeholders",
     "stem": "A product has many stakeholders. Where do their needs come together?",
     "options": [
-      "Definition of Done",
-      "Daily Scrum notes",
-      "Ordered Product Backlog",
-      "Sprint Retrospective notes"
+      "Sprint Goal",
+      "Stakeholder map",
+      "Product Vision statement",
+      "Ordered Product Backlog"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "The Product Owner represents the needs of many stakeholders in the Product Backlog and orders them into one view of what matters most."
   },
@@ -3404,13 +3404,13 @@
     "skill": "Forecasting charts",
     "stem": "A cumulative flow diagram mainly helps a team see:",
     "options": [
-      "Which Developer finished most items",
       "How work moves through each stage",
-      "When the next Sprint Review is",
-      "Who requested each backlog item"
+      "How much work remains this Sprint",
+      "How velocity changes per Sprint",
+      "How total scope grows over time"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "A cumulative flow diagram shows how much work sits in each stage over time, revealing bottlenecks and flow. It is one of the forecasting practices the Scrum Guide mentions."
   },
@@ -3425,13 +3425,13 @@
     "skill": "Sprint Retrospective",
     "stem": "The Product Owner often misses the Sprint Retrospective. Why does this matter?",
     "options": [
-      "The Sprint cannot end without the Product Owner",
-      "The Increment cannot be released without them",
-      "Developers may not inspect their own work alone",
-      "Issues involving them go unaddressed"
+      "The Sprint cannot formally be closed",
+      "Issues involving them go unaddressed",
+      "Stakeholder feedback is not reviewed",
+      "Developers lose the chance to replan"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "The Retrospective inspects how the last Sprint went for individuals, interactions, processes and tools. Many issues, such as unclear items, involve the Product Owner."
   },
@@ -3446,13 +3446,13 @@
     "skill": "Product Vision",
     "stem": "A stakeholder asks why the product exists at all. Which artifact or tool answers best?",
     "options": [
-      "Definition of Done",
+      "Business case",
+      "Product Backlog",
       "Product Vision",
-      "Burn-down chart",
-      "Product Backlog"
+      "Product Goal"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The Product Vision states the purpose of the product, the value it should deliver and to whom."
   },
@@ -3467,13 +3467,13 @@
     "skill": "Value measures",
     "stem": "What does the Product Cost Ratio compare?",
     "options": [
-      "Team size against backlog size",
-      "Product costs against its revenue",
-      "Product defects found against fixed",
-      "Planned against actual Sprint length"
+      "Development cost against support cost",
+      "Planned against actual cost",
+      "Product costs against its budget",
+      "Product costs against its revenue"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The Product Cost Ratio compares total expenses and costs for the product, operational costs included, with the revenue it brings."
   },
@@ -3488,13 +3488,13 @@
     "skill": "Refinement",
     "stem": "Refinement keeps raising the same unanswered question about an item. What should the Product Owner do?",
     "options": [
-      "Remove the item to end the discussion",
-      "Let the Developers guess and deliver it",
-      "Postpone refinement until the Sprint Review",
-      "Get the answer from users or stakeholders"
+      "Get the answer from users or stakeholders",
+      "Add it to the Sprint and clarify it there",
+      "Ask the Developers to agree an assumption",
+      "Have the Scrum Master record it as a risk"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The Product Owner creates and clearly communicates items. Getting the missing information keeps the item ready to be Done when selected."
   },
@@ -3509,13 +3509,13 @@
     "skill": "Conflicting needs",
     "stem": "A stakeholder goes around the Product Owner and asks the Scrum Master to add work to the Sprint. What should happen?",
     "options": [
-      "Scrum Master adds it if it is small enough",
-      "Developers decide whether to accept it",
-      "Stakeholder adds it to the Sprint Backlog",
-      "Redirect them to the Product Owner"
+      "Scrum Master raises it at the Daily Scrum",
+      "Redirect them to the Product Owner",
+      "Developers add it if the Sprint Goal allows",
+      "Scrum Master adds it to the next Sprint"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Requests go to the Product Owner, who orders the Product Backlog. The Scrum Master helps the organization respect that and removes the barrier."
   },
@@ -3568,10 +3568,10 @@
     "skill": "Goals and empiricism",
     "stem": "Which is the best example of an Immediate Tactical Goal?",
     "options": [
-      "Help every family manage its money",
-      "Become the leading product in our region",
+      "Become the market leader in our region by 2030",
+      "Double our customers within five years",
       "Cut sign-up drop-off by 10% this quarter",
-      "Win the market within ten years"
+      "Reach profitability in our third year"
     ],
     "correct": [
       2
@@ -3589,13 +3589,13 @@
     "skill": "Value measures",
     "stem": "What does the On-Product Index show?",
     "options": [
-      "Share of time teams spend on product work",
-      "Share of users active on the product daily",
-      "Share of the budget spent on marketing",
-      "Share of items Done on the first try"
+      "Share of features customers actually use",
+      "Share of the budget spent on new features",
+      "Share of items Done on the first try",
+      "Share of time teams spend on product work"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "The On-Product Index is the percentage of time teams spend working on product and value, rather than other demands."
   },
@@ -3648,13 +3648,13 @@
     "skill": "Fixed date",
     "stem": "A product must ship for a trade show. Which approach best protects value?",
     "options": [
-      "Add Developers in the final Sprint only",
-      "Add every feature and skip final testing",
       "Order by value and release what is Done",
-      "Freeze the backlog and ignore new learning"
+      "Relax the Definition of Done near the end",
+      "Lock scope early and plan backwards",
+      "Add Developers in the final Sprints"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "With a fixed date, ordering by value ensures the most important items are Done. Skipping testing or freezing learning puts value at risk."
   },
@@ -3671,8 +3671,8 @@
     "options": [
       "How will the work get done?",
       "Why is this Sprint valuable?",
-      "When is each task due?",
-      "Who will do each product task?"
+      "Who will do each task?",
+      "How much work can be done?"
     ],
     "correct": [
       1
@@ -3728,13 +3728,13 @@
     "skill": "Ordering",
     "stem": "A low-value item is cheap and blocks nothing. Should it go to the top because it is quick?",
     "options": [
-      "Yes; quick items always deliver value first",
+      "Yes; quick wins build early momentum",
+      "Yes, if the Developers have spare capacity",
       "Not by itself; value still guides order",
-      "Yes; it keeps the Developers busy",
-      "No; cheap items must be deleted"
+      "Only once all larger items are refined"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Cost matters, but a quick item with little value does not jump the queue for that reason alone. The Product Owner weighs value against cost and risk."
   },
@@ -3749,13 +3749,13 @@
     "skill": "Customers",
     "stem": "Customers ask for a 'faster horse'. What should the Product Owner focus on?",
     "options": [
-      "Cost of a faster horse",
-      "Vote among the Developers",
-      "Need behind the request",
-      "Exact words of the request"
+      "Cost of the request",
+      "Number asking for it",
+      "Speed they expect exactly",
+      "Need behind the request"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Requests often describe a solution. Understanding the underlying need lets the team find the most valuable way to meet it."
   },
@@ -3770,13 +3770,13 @@
     "skill": "Release planning",
     "stem": "Customer cycle time measures what?",
     "options": [
-      "Sprint start to Sprint Review",
-      "Bug report to first reply",
       "Start of release work to actual release",
-      "Customer sign-up to first product purchase"
+      "Order to the customer receiving the product",
+      "Sprint start to the Sprint Review",
+      "Request to the item being Done"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Customer cycle time is the time from when work starts on a release until it is actually released. It is a Time-to-Market measure."
   },
@@ -3791,13 +3791,13 @@
     "skill": "Product Owner accountability",
     "stem": "How do people outside the Scrum Team change the Product Backlog?",
     "options": [
+      "By agreeing it with the Scrum Master",
       "By convincing the Product Owner",
-      "By asking the Product Owner's manager",
-      "By editing it in the shared tool",
-      "By voting at the Sprint Review"
+      "By raising it at the Sprint Retrospective",
+      "By adding it through a change request"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "The Scrum Guide says those wanting to change the Product Backlog can do so by trying to convince the Product Owner."
   },
@@ -3813,11 +3813,11 @@
     "stem": "A Product Owner wants to cut uncertainty about a new market. Which two Scrum practices help most? (Choose two.)",
     "select": 2,
     "options": [
-      "Inspecting results with stakeholders often",
-      "Writing a full specification before Sprint 1",
-      "Skipping the Sprint Review to save time",
       "Delivering a usable Increment every Sprint",
-      "Freezing the Product Backlog for a quarter"
+      "Writing a detailed market requirements file",
+      "Fixing the Product Backlog for a quarter",
+      "Inspecting results with stakeholders often",
+      "Running a longer first Sprint to plan well"
     ],
     "correct": [
       0,
@@ -3836,13 +3836,13 @@
     "skill": "Business Strategy",
     "stem": "Product teams deliver Increments, but leaders never review strategy against the results. What is lost?",
     "options": [
+      "Clarity of each team's Sprint Goal",
+      "Alignment between teams on priorities",
       "Chance to adapt strategy to evidence",
-      "Right to order the Product Backlog",
-      "Need for a product Definition of Done",
-      "Ability to hold a Sprint Review"
+      "Funding for the next round of work"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Business strategy should be inspected and adapted using feedback from product Increments. Ignoring the results wastes that evidence."
   },
@@ -3857,13 +3857,13 @@
     "skill": "Value measures",
     "stem": "Release stabilization period measures the time spent on what?",
     "options": [
-      "Fixes after work is declared ready",
-      "Planning a release before work starts",
-      "Training users once a release is out",
-      "Waiting for the next Sprint Review"
+      "Time to roll a release back",
+      "Time between two releases",
+      "Testing before work is declared ready",
+      "Fixes after work is declared ready"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Release stabilization period is the time spent correcting product problems between the point the developers say it is ready to release and the actual release. It is a Time-to-Market measure."
   },
@@ -3878,13 +3878,13 @@
     "skill": "Expectations",
     "stem": "A stakeholder expects a feature in two weeks that is low in the backlog. What should the Product Owner do?",
     "options": [
-      "Promise the date and hope the team copes",
       "Explain the order and forecast honestly",
-      "Avoid the stakeholder until it ships",
-      "Move it up without telling the team"
+      "Move it up to keep the stakeholder's trust",
+      "Promise a date once it is refined",
+      "Ask the Developers if they can fit it in"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Honest, transparent communication about order and forecasts manages expectations. Promises that ignore the backlog erode trust."
   },
@@ -3899,13 +3899,13 @@
     "skill": "Forecasting",
     "stem": "Why give stakeholders a range rather than one date?",
     "options": [
-      "It hides progress from them",
-      "It lets the team work less",
-      "It removes the need for Sprints",
-      "It shows the real uncertainty"
+      "It avoids having to update it",
+      "It shows the real uncertainty",
+      "It protects the team's commitment",
+      "It leaves room for extra scope"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "A range communicates how certain the forecast is. A single date suggests more certainty than complex work allows."
   },
@@ -3921,11 +3921,11 @@
     "stem": "Which two are sound reasons to move an item up the Product Backlog? (Choose two.)",
     "select": 2,
     "options": [
-      "Other items depend on it",
-      "It was added first",
       "It reduces a major risk",
-      "It has the longest text",
-      "Its author is senior"
+      "It has been waiting the longest",
+      "Other items depend on it",
+      "Its requester sits on the steering group",
+      "It is the easiest item to estimate"
     ],
     "correct": [
       0,
@@ -3944,13 +3944,13 @@
     "skill": "Product Owner and Developers",
     "stem": "The Product Owner wants a feature by a trade show and asks the Developers to work weekends. What fits Scrum best?",
     "options": [
-      "Have the Scrum Master add people mid-Sprint",
+      "Release with known defects, fix later",
+      "Add Developers for the last two Sprints",
       "Adjust scope with them, keeping quality",
-      "Insist on overtime, since the date is fixed",
-      "Lower the Definition of Done for this release"
+      "Agree overtime only for the final Sprint"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "The Product Owner manages value by choosing what to build, not by pushing effort. Working with the Developers on scope keeps quality and the Definition of Done intact."
   },
@@ -3965,13 +3965,13 @@
     "skill": "Product Vision",
     "stem": "A Product Owner is asked to drop the vision because 'the backlog is enough'. What is the best answer?",
     "options": [
-      "The backlog should hold no items without a vision",
-      "The vision is only needed for funding requests",
-      "The vision explains why; the backlog lists what",
-      "The backlog replaces the vision after Sprint 1"
+      "The vision fixes scope; the backlog adds detail",
+      "The vision is for sponsors; the backlog for teams",
+      "The vision sets the order; the backlog the size",
+      "The vision explains why; the backlog lists what"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "The Product Vision expresses the purpose and value of the product, which guides ordering. The Product Backlog lists what is needed to improve the product."
   },
@@ -3986,13 +3986,13 @@
     "skill": "Key Value Areas",
     "stem": "Which question belongs to Current Value?",
     "options": [
+      "How happy are users and customers today?",
       "Can we create value in other markets too?",
       "What stops us delivering new value?",
-      "How happy are users and customers today?",
       "How fast can we test new ideas?"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Current Value asks how happy users, customers, employees and investors are today. The others belong to Unrealized Value, Time-to-Market and Ability to Innovate."
   },
@@ -4007,10 +4007,10 @@
     "skill": "Feedback",
     "stem": "Survey answers say users want feature X, but usage data shows they rarely use similar features. What should the Product Owner do?",
     "options": [
-      "Ignore the usage data completely",
+      "Trust the usage data and drop X",
       "Test X cheaply before building it all",
-      "Drop all surveys from now on",
-      "Build all of X now, as the survey says"
+      "Run a bigger survey before deciding",
+      "Build X, as users asked for it directly"
     ],
     "correct": [
       1
@@ -4028,10 +4028,10 @@
     "skill": "Releasing",
     "stem": "Releases need two weeks of manual sign-off after each Increment is Done. What is the Product Owner's main concern?",
     "options": [
-      "Sprints will become too short",
-      "Developers will finish work too early",
+      "Increments pile up in the Sprint Backlog",
+      "Sprints must be lengthened to fit it",
       "Users wait longer and learning slows",
-      "Stakeholders will see too much"
+      "The Definition of Done must be split"
     ],
     "correct": [
       2
@@ -4049,13 +4049,13 @@
     "skill": "Splitting items",
     "stem": "What makes an item small enough for Sprint Planning?",
     "options": [
-      "It can be Done within one Sprint",
-      "It has under five lines of text",
-      "It touches only one system layer",
-      "It takes one Developer one day"
+      "It has been estimated in story points",
+      "It has acceptance criteria written",
+      "It fits in one Developer's week",
+      "It can be Done within one Sprint"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Items that can be Done by the Scrum Team within one Sprint are deemed ready for selection in Sprint Planning."
   },
@@ -4072,10 +4072,10 @@
     "select": 2,
     "options": [
       "Order of the Product Backlog",
-      "Daily Scrum format",
       "How an item is built",
+      "How much work fits the Sprint",
       "What the Product Goal is",
-      "Who does each task"
+      "Daily Scrum format"
     ],
     "correct": [
       0,
@@ -4094,13 +4094,13 @@
     "skill": "Goals and empiricism",
     "stem": "According to the EBM Guide, beliefs about what is valuable stay assumptions until when?",
     "options": [
+      "Customers validate them",
       "Sponsors approve them",
-      "Analysts document them",
-      "Developers estimate them",
-      "Customers validate them"
+      "The team delivers them",
+      "Data supports a forecast"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "The EBM Guide says beliefs in what is valuable are merely assumptions until they are validated by customers."
   },
@@ -4115,13 +4115,13 @@
     "skill": "Maximizing value",
     "stem": "A Product Owner can fund one of two ideas. Neither has evidence behind it. What is the best first move?",
     "options": [
+      "Ask key customers which they prefer",
       "Run a small experiment to test each idea",
-      "Build both in full and compare the value",
-      "Pick the idea the sponsor likes better",
-      "Wait until a competitor tries one first"
+      "Pick the one with the stronger business case",
+      "Fund the cheaper idea and see"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Without evidence both ideas are assumptions. A small experiment tests the hypothesis cheaply before larger investment, as EBM recommends."
   },
@@ -4137,11 +4137,11 @@
     "stem": "Which two are signs of healthy stakeholder collaboration? (Choose two.)",
     "select": 2,
     "options": [
-      "Every request is built as asked",
-      "Feedback changes the Product Backlog",
+      "Stakeholders join the Daily Scrum",
       "Stakeholders attend Sprint Reviews",
-      "Stakeholders join each Daily Scrum",
-      "Stakeholders assign Developers' tasks"
+      "Feedback changes the Product Backlog",
+      "Stakeholders get weekly status reports",
+      "Stakeholders approve each Increment"
     ],
     "correct": [
       1,
@@ -4161,11 +4161,11 @@
     "stem": "Which two make a release forecast more reliable? (Choose two.)",
     "select": 2,
     "options": [
-      "Counting only started work",
-      "Fixing it at the first estimate",
-      "Updating it as new data arrives",
+      "Re-estimating every item in hours",
+      "Adding a fixed buffer of 20 percent",
       "Using actual delivered progress",
-      "Basing it on the desired date"
+      "Updating it as new data arrives",
+      "Using the team's best-case estimates"
     ],
     "correct": [
       2,
@@ -4184,10 +4184,10 @@
     "skill": "Product Backlog",
     "stem": "An item has sat untouched at the bottom for two years. What is often the right move?",
     "options": [
-      "Hand it to the Scrum Master to decide",
-      "Keep it, as items are never removed",
+      "Raise its order so it finally gets done",
+      "Move it to an archive section of the backlog",
       "Consider removing it from the backlog",
-      "Move it to the top so it gets done"
+      "Refine it so it is ready if needed"
     ],
     "correct": [
       2

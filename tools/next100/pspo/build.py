@@ -56,12 +56,21 @@ def TF(t, d, skill, stem, truth, expl):
     return q
 
 
+SLOT = [0]
+
+
 def shuffled(q):
     if q.get("tf") or q["format"] not in ("single", "multi"):
         return q
     seed = int(hashlib.sha256(q["stem"].encode()).hexdigest()[:12], 16)
     order = list(range(len(q["options"])))
     random.Random(seed).shuffle(order)
+    if q["format"] == "single" and len(order) == 4:
+        # Balanced key slots: the key (written first) lands on A, B, C, D in turn.
+        target = SLOT[0] % 4
+        SLOT[0] += 1
+        order.remove(0)
+        order.insert(target, 0)
     out = dict(q)
     out["options"] = [q["options"][i] for i in order]
     out["correct"] = sorted(order.index(c) for c in q["correct"])

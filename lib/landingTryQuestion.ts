@@ -78,16 +78,20 @@ function pickV2(dashboardHref: string): LandingTryQuestion | null {
     !/\||\{\{|\[\[/.test(x.explanation) &&
     !x.options!.some((o) => /\||\{\{|\[\[|\n/.test(o));
   const tiers: ((x: QuestionV2) => boolean)[] = [plain, (x) => richOk(x, "alone"), (x) => richOk(x, "passage")];
+  // Within the first tier that has any, the shortest question across the
+  // free drills (passage included), so the card stays compact on a phone.
+  const size = (x: QuestionV2) =>
+    x.stem.length + x.options!.join("").length + (samplePassage(exam.id, x)?.text.length ?? 0);
   let drill: DrillDef | undefined;
   let q: QuestionV2 | undefined;
   let tier = 0;
   for (; tier < tiers.length && !q; tier++) {
     for (const d of exam.drills) {
       if (isDrillLocked(exam, d.key, false)) continue;
-      q = drillQuestions(bank, d, exam).find(tiers[tier]);
-      if (q) {
+      for (const x of drillQuestions(bank, d, exam)) {
+        if (!tiers[tier](x) || (q && size(x) >= size(q))) continue;
+        q = x;
         drill = d;
-        break;
       }
     }
   }

@@ -83,14 +83,22 @@ jobs:
           chmod +x "$RUNNER_TEMP/claude"
           "$RUNNER_TEMP/claude" --version
 
+      - name: API budget
+        id: budget
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts check search-gaps 8
+
       # If Claude Code cannot finish, whatever it changed still goes to review.
       - name: Wire aliases and build with Claude Code
+        id: claude
+        if: steps.budget.outputs.ok == 'true'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
-          claude_args: --max-turns 500 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
+          claude_args: --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 500 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
           prompt: |
             Read CLAUDE.md (and docs/claude/v1-engine.md or v2-engine.md before building a test). Today's search gaps are in ${{ env.REPORT }}.md, with details
             in ${{ env.REPORT }}.json: searches on the site that find no test, most-searched
@@ -155,6 +163,12 @@ jobs:
             sources.md with what it gave you, what could not be confirmed, and the result of
             the 25-question source check) or why none was. Do not commit;
             the next step opens the PR.
+
+      - name: Record API spend
+        if: always() && (steps.claude.outcome == 'success' || steps.claude.outcome == 'failure')
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts record search-gaps --file "${{ steps.claude.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       - name: Mark the built test Planned on /admin
         env:

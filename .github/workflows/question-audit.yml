@@ -131,6 +131,13 @@ jobs:
           path: audits/
           if-no-files-found: ignore
 
+      - name: API budget (fix)
+        id: budget_fix
+        if: ${{ !inputs.export_open }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts check question-audit 5
+
       - name: Count findings
         id: findings
         if: ${{ !inputs.export_open }}
@@ -138,6 +145,8 @@ jobs:
           f="audits/$(date -u +%F).json"
           # A daily run with nothing new to check writes no report.
           if [ ! -f "$f" ]; then echo "count=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          # Out of API budget this month: findings stay open in Firestore for the next run.
+          if [ "${{ steps.budget_fix.outputs.ok }}" != "true" ]; then echo "count=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           n=$(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1]))["findings"]))' "$f")
           echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "file=$f" >> "$GITHUB_OUTPUT"
@@ -164,7 +173,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
-          claude_args: --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md and docs/claude/question-quality.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
@@ -221,18 +230,31 @@ jobs:
 
             Do not commit; a later step opens the PR.
 
+      - name: Record API spend (fix)
+        if: always() && (steps.fix.outcome == 'success' || steps.fix.outcome == 'failure')
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts record question-audit --file "${{ steps.fix.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
+
+      - name: API budget (verify)
+        id: budget_verify
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts check question-audit 2
+
       # A second read by a run that did not write the fixes. It may only object:
       # any objection (or no verdict file) leaves the PR for a person.
       - name: Verify the fixes independently
         id: verify
-        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' }}
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' && steps.budget_verify.outputs.ok == 'true' }}
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
-          claude_args: --max-turns 150 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_verify.outputs.cap }} --max-turns 150 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
           prompt: |
             You are the second reviewer of an automatic fix to Tigertest's question
             banks. Another run changed questions after an audit; nobody else will read
@@ -262,6 +284,12 @@ jobs:
               "objections": [ { "id": "<examId>__<questionId>", "why": "one sentence" } ] }
             "ok" is true only when you checked every changed question and have no
             objection. If you could not check one, object to it and say why.
+
+      - name: Record API spend (verify)
+        if: always() && (steps.verify.outcome == 'success' || steps.verify.outcome == 'failure')
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts record question-audit --file "${{ steps.verify.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       # The checks a PR gets, run here because a PR opened with the workflow
       # token does not trigger them. A failure leaves the PR open.

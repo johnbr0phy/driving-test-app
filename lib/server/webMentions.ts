@@ -79,7 +79,11 @@ export function mergeMentions(found: Omit<WebMention, 'isNew'>[], previous: WebM
 }
 
 /** Searches the web. Throws when the key is missing or the model declines. */
-export async function searchMentions(model: string, today: string): Promise<Omit<WebMention, 'isNew'>[]> {
+export async function searchMentions(
+  model: string,
+  today: string,
+  onUsage?: (usage: Anthropic.Beta.BetaUsage) => void,
+): Promise<Omit<WebMention, 'isNew'>[]> {
   if (!process.env.ANTHROPIC_API_KEY) throw new Error('ANTHROPIC_API_KEY is not set');
   const client = new Anthropic();
   const messages: Anthropic.Beta.BetaMessageParam[] = [
@@ -97,6 +101,7 @@ export async function searchMentions(model: string, today: string): Promise<Omit
       tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 8, blocked_domains: ['tigertest.io'] }],
       messages,
     });
+    onUsage?.(response.usage);
     if (response.stop_reason === 'refusal') {
       throw new Error(`Claude declined the web search (${response.stop_details?.category ?? 'no category'})`);
     }

@@ -58,10 +58,12 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
   const correct = picked === q.correctIndex;
   const feedbackRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-  // Once the card is on screen and the visitor has had a moment to read the
-  // title, the "Try one now" label glows and the letters pulse twice, so it
-  // reads as something to tap. Nothing moves the layout (globals.css, off
-  // under reduced motion).
+  // Draws the eye to the card so it reads as something to tap, not a
+  // screenshot (globals.css, off under reduced motion, nothing moves the
+  // layout). Arm a of the layout test (lib/landingTryTest.ts) pulses the
+  // letters as soon as the card is on screen (try-seen); arm b waits until
+  // the visitor has had time to read the title, then the label glows and
+  // the letters pulse (try-play).
   const [inView, setInView] = useState(false);
   const [nudge, setNudge] = useState(false);
   useEffect(() => {
@@ -111,7 +113,7 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
   };
 
   return (
-    <div ref={cardRef} className={`${nudge && !answered ? "try-play " : ""}mx-auto mt-6 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6`}>
+    <div ref={cardRef} className={`${inView && !answered ? "try-seen " : ""}${nudge && !answered ? "try-play " : ""}mx-auto mt-6 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6`}>
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
         <p className="try-label -mx-1.5 rounded-md px-1.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand">{copy.label}</p>
         {!answered && (

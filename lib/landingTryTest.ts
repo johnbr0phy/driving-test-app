@@ -5,7 +5,10 @@
 // Both arms put the playable question straight under the subtitle (the H1
 // shrinks on phones so all the options fit above the fold):
 //   a  the Start button becomes a quiet text link under the card
-//   b  no Start at all and no "Pick an answer" chip: just the question
+//   b  no Start at all and no "Pick an answer" chip: just the question; about
+//      2.5 seconds after the card is on screen (time to read the title) its
+//      "Try one now" label glows and the letters pulse. In a the letters pulse
+//      as soon as the card is on screen, as before the test.
 // Question: does taking away the Start route get more new visitors to
 // answer, without costing sign-ups?
 //   Primary   first answer: share of enrolled browsers that answer at least

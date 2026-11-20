@@ -12739,10 +12739,11 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
 }
 
 /* The landing's playable question (components/exam/LandingTryQuestion.tsx):
-   about 2.5 seconds after the card is on screen, once the title has been
-   read, the "Try one now" label glows and the answer letters pulse twice, so
-   it reads as tappable rather than a screenshot. Nothing changes size or
-   position. */
+   draws the eye so the card reads as tappable rather than a screenshot.
+   Nothing changes size or position. In the layout test (lib/landingTryTest.ts)
+   arm a pulses the answer letters twice as soon as the card is on screen;
+   arm b waits about 2.5 seconds, once the title has been read, then the "Try
+   one now" label glows and the letters pulse twice. */
 @keyframes try-pulse {
   0% { box-shadow: 0 0 0 0 hsl(var(--brand) / 0.55); }
   100% { box-shadow: 0 0 0 10px hsl(var(--brand) / 0); }
@@ -12752,10 +12753,14 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
   35% { background-color: hsl(var(--brand) / 0.16); }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .try-play .try-label {
+  html:not([data-ltq="b"]) .try-seen .try-badge {
+    animation: try-pulse 1.1s ease-out 2;
+    animation-delay: calc(300ms + var(--i, 0) * 120ms);
+  }
+  html[data-ltq="b"] .try-play .try-label {
     animation: try-label 1.1s ease-in-out 2;
   }
-  .try-play .try-badge {
+  html[data-ltq="b"] .try-play .try-badge {
     animation: try-pulse 1.1s ease-out 2;
     animation-delay: calc(500ms + var(--i, 0) * 120ms);
   }

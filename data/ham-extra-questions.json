@@ -7403,7 +7403,7 @@
     "optionD": "Eliminate harmonic reception",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Signals arriving from the far end travel back toward the termination resistor, where they are absorbed instead of reflected to the receiver. That gives the Beverage its unidirectional pattern."
+    "explanation": "The resistor sits at the far end of the wire, the end pointed toward the wanted direction. Signals arriving from the reverse direction travel along the wire toward that end, where the resistor absorbs them instead of reflecting them back to the receiver. That gives the Beverage its unidirectional pattern."
   },
   {
     "type": "HAMEXTRA",
@@ -7599,7 +7599,7 @@
     "optionD": "Hyperbolic",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A terminated single-turn loop like the pennant or flag combines loop and dipole-like responses, and the resistor sets their balance. The result is a cardioid with a null toward the terminated side."
+    "explanation": "A terminated single-turn loop such as the pennant or flag combines a loop response with a dipole-like response, and the termination resistor sets their balance. Adding the two gives a heart-shaped cardioid pattern with one deep null."
   },
   {
     "type": "HAMEXTRA",

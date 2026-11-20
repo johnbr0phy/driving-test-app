@@ -566,9 +566,9 @@
  "E9H04": "An electrostatic shield removes unbalanced capacitive coupling between the loop and nearby objects, which would otherwise fill in the nulls. Keeping the loop balanced gives deeper, sharper nulls for direction finding.",
  "E9H05": "A small loop has two nulls 180 degrees apart, so it shows the line a signal lies on but not which side it comes from. Adding a sense antenna resolves that ambiguity.",
  "E9H06": "When a Beverage is correctly terminated, the wire behaves like a matched transmission line, so its feed point SWR stays nearly constant across the band. The resistor value giving the least SWR variation is the right one.",
- "E9H07": "Signals arriving from the far end travel back toward the termination resistor, where they are absorbed instead of reflected to the receiver. That gives the Beverage its unidirectional pattern.",
+ "E9H07": "The resistor sits at the far end of the wire, the end pointed toward the wanted direction. Signals arriving from the reverse direction travel along the wire toward that end, where the resistor absorbs them instead of reflecting them back to the receiver. That gives the Beverage its unidirectional pattern.",
  "E9H08": "A sense antenna adds a signal to a loop or other DF antenna, converting its two-null figure-eight into a cardioid with one null. That removes the 180-degree ambiguity in the bearing.",
- "E9H09": "A terminated single-turn loop like the pennant or flag combines loop and dipole-like responses, and the resistor sets their balance. The result is a cardioid with a null toward the terminated side.",
+ "E9H09": "A terminated single-turn loop such as the pennant or flag combines a loop response with a dipole-like response, and the termination resistor sets their balance. Adding the two gives a heart-shaped cardioid pattern with one deep null.",
  "E9H10": "The voltage induced in a receiving loop is proportional to the number of turns times the area enclosed. Adding turns or making the loop larger raises its output.",
  "E9H11": "A cardioid has one deep null in a single direction, so pointing that null at a station gives an unambiguous bearing. A figure-eight pattern has two nulls and leaves the direction uncertain."
 }

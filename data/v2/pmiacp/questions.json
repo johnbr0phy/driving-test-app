@@ -203,7 +203,7 @@
       "Backlog with risky items removed",
       "Backlog sorted by size alone",
       "Separate list of every project risk",
-      "Backlog with risk work ranked in"
+      "Backlog with risk responses ranked in"
     ],
     "correct": [
       3
@@ -240,12 +240,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team member looks tense and silent when a plan is announced. What should the practitioner do?",
-    "explanation": "Reading non-verbal cues and following up privately is part of applying emotional intelligence. Silence is not agreement, and a public call-out embarrasses the person.",
+    "explanation": "Reading non-verbal cues and following up privately is part of applying emotional intelligence. Asking for objections in front of everyone or waiting for the retrospective may not get an honest answer.",
     "options": [
-      "Call it out in front of everyone",
+      "Note it for the next retrospective",
       "Check in privately afterwards",
-      "Assume they agree with it",
-      "Report it to their manager"
+      "Ask the team for objections now",
+      "Explain the plan again in detail"
     ],
     "correct": [
       1
@@ -261,12 +261,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How often should stakeholder feedback be collected in agile delivery?",
-    "explanation": "The outline says to collect and incorporate stakeholders' feedback on a regular basis, not only at milestones or after trouble.",
+    "explanation": "The outline says to collect and incorporate stakeholders' feedback on a regular basis, not only at milestones, releases or after trouble.",
     "options": [
       "When problems arise in delivery",
-      "Only at major milestones",
+      "At each major milestone",
       "On a regular, frequent basis",
-      "Once, at the end"
+      "At the end of each release"
     ],
     "correct": [
       2
@@ -305,7 +305,7 @@
     "stem": "What do story points estimate?",
     "explanation": "Story points are a relative sizing unit that compares items with each other. They are not hours or days.",
     "options": [
-      "Exact hours of effort",
+      "Exact hours of work",
       "Relative size of the work",
       "Calendar days needed",
       "Cost per developer per day"
@@ -388,11 +388,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What builds an environment of trust on an agile team?",
-    "explanation": "The outline gives transparent communication as the example of establishing trust. Monitoring and approvals signal the opposite.",
+    "explanation": "The outline gives transparent communication as the example of establishing trust. Status checks and approvals signal the opposite, and shared targets build ownership rather than trust.",
     "options": [
-      "Rewards for top individuals",
+      "Formal approval for changes",
       "Transparent, honest communication",
-      "Approval for every change",
+      "Shared team performance targets",
       "Daily status checks by the lead"
     ],
     "correct": [
@@ -473,12 +473,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A suitability assessment rates one area of a project a poor fit for agile. What is a sensible response?",
-    "explanation": "Suitability tools show where agile fits and where it may not. Tailoring the approach, often a hybrid for the poor-fit area, uses the result; re-scoring the area or forcing sprints onto it ignores what the tool found.",
+    "explanation": "Suitability tools show where agile fits and where it may not. Fixed, regulated requirements are a poor fit for iteration, so a hybrid plans that part predictively and runs the rest adaptively.",
     "options": [
-      "Coach the team until it scores well",
-      "Use a hybrid approach there",
-      "Run that area in sprints anyway",
-      "Re-score that area with the sponsor"
+      "Deliver it in two-week sprints",
+      "Plan that part predictively",
+      "Write it as user stories first",
+      "Coach the regulator in agile"
     ],
     "correct": [
       1
@@ -767,11 +767,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Five teams build one product and keep blocking each other. Which practice coordinates them?",
-    "explanation": "A scrum of scrums brings a representative from each team together to manage cross-team dependencies. One standup for fifty people does not scale, and a shared definition of done or joint retrospectives do not handle day-to-day dependencies.",
+    "explanation": "A scrum of scrums meets often to manage cross-team dependencies and blockers. A shared definition of done, joint retrospectives and combined reviews help alignment, but none handles day-to-day blocking.",
     "options": [
-      "One combined daily standup",
-      "Scrum of scrums",
       "Joint retrospectives each month",
+      "Scrum of scrums",
+      "A combined sprint review",
       "A shared definition of done"
     ],
     "correct": [
@@ -872,11 +872,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A disagreement between two developers has turned into personal remarks. What should come first?",
-    "explanation": "The outline says to identify the root cause and the level of the conflict before choosing how to respond. Moving people or escalating skips that step.",
+    "explanation": "The outline says to identify the root cause and the level of the conflict before choosing how to respond. Talking it out or pointing to the agreement are responses, and they come after that step.",
     "options": [
-      "Ask the line manager to decide it",
+      "Remind them of the working agreement",
       "Understand what is really behind it",
-      "Move one onto another team",
+      "Bring both together to talk it out",
       "Leave it for the next retrospective"
     ],
     "correct": [
@@ -893,11 +893,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How does a team confirm an iteration's deliverables are acceptable?",
-    "explanation": "The outline says to validate that iteration deliverables meet acceptance criteria. Story counts and opinions do not confirm acceptance.",
+    "explanation": "The outline says to validate that iteration deliverables meet acceptance criteria. The definition of done covers quality for every item; acceptance criteria say whether this one meets the customer's need.",
     "options": [
+      "Check the definition of done only",
+      "Ask the developers if done",
       "Count the stories finished",
-      "Wait for the final release",
-      "Ask the developers if they are done",
       "Check against acceptance criteria"
     ],
     "correct": [
@@ -914,12 +914,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A retrospective finds that handoffs to testing cause delays. What is the best next step?",
-    "explanation": "Retrospective findings are used by agreeing a small, concrete improvement and trying it in the next iteration. Documenting the handoff keeps it in place, and the sprint review inspects the product, not the process.",
+    "explanation": "Retrospective findings are used by agreeing a small, concrete improvement and trying it in the next iteration. The sprint review inspects the product, the product backlog holds product work, and tracking alone changes nothing.",
     "options": [
-      "Document the handoff steps in detail",
       "Raise it at the next sprint review",
+      "Track handoff time and revisit later",
       "Pick one change to try next iteration",
-      "Add a tester to each daily standup"
+      "Add the issue to the product backlog"
     ],
     "correct": [
       2
@@ -1019,12 +1019,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Which approach usually resolves a team conflict best?",
-    "explanation": "The outline asks practitioners to promote a collaborative approach to conflict. Avoiding, imposing or splitting the difference leaves the cause in place.",
+    "explanation": "The outline asks practitioners to promote a collaborative approach to conflict. Imposing, splitting the difference or smoothing leaves the cause in place.",
     "options": [
       "Collaborate on a shared solution",
       "Let the most senior person decide",
-      "Split the difference at once",
-      "Avoid the topic to keep the peace"
+      "Smooth it over for now",
+      "Find a quick compromise"
     ],
     "correct": [
       0
@@ -1061,11 +1061,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A developer argued for another framework but the team chose differently. What should they do now?",
-    "explanation": "The outline asks practitioners to commit to the team's decisions even in disagreement. Asking for a re-vote, working around the choice or getting it overruled undermines the team.",
+    "explanation": "The outline asks practitioners to commit to the team's decisions even in disagreement. A re-vote, reopening it in the retrospective or a side prototype keeps the disagreement alive.",
     "options": [
-      "Ask the coach to overrule it",
+      "Prototype the other option to compare",
       "Ask for a re-vote next sprint",
-      "Prototype the other option quietly",
+      "Raise it again at the retrospective",
       "Back the decision fully"
     ],
     "correct": [
@@ -1085,9 +1085,9 @@
     "explanation": "Limiting work in progress makes the team finish what it has before pulling new work, which shortens cycle time.",
     "options": [
       "Finish items before taking more",
-      "Work longer hours",
-      "Begin as many items as possible",
-      "Skip testing"
+      "Plan the whole sprint up front",
+      "Start items in priority order",
+      "Split items before starting them"
     ],
     "correct": [
       0
@@ -1145,12 +1145,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A key customer changes priorities in the middle of a release. What should the team do?",
-    "explanation": "Agile teams respond to changing priorities by reordering the backlog with the customer. Adding work without removing any breaks a sustainable pace.",
+    "explanation": "Agile teams respond to changing priorities by reordering the backlog with the customer so the next work reflects them. Pushing work into a running sprint or waiting for a change process slows the response.",
     "options": [
       "Re-rank the backlog with them",
       "Raise a formal change request",
-      "Refuse until the release ends",
-      "Add it and keep all old scope"
+      "Finish the release, then re-plan",
+      "Add it to the current sprint"
     ],
     "correct": [
       0
@@ -1300,12 +1300,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "A team is unsure users want a new feature. What is the quickest way to learn?",
-    "explanation": "Building a small increment and watching real use validates the need quickly and cheaply. A full build spends the most before learning anything, and personas or sales opinions are not evidence of real use.",
+    "explanation": "Building a small increment and watching real use validates the need with evidence. Surveys, personas and sales opinions say what people expect, not what they do.",
     "options": [
-      "Write user personas for the feature",
+      "Run a survey of target users",
       "Release a thin slice, then measure",
-      "Build it fully, then gather the data",
-      "Interview the internal sales staff"
+      "Hold a design workshop with sales",
+      "Write user personas for the feature"
     ],
     "correct": [
       1
@@ -1852,12 +1852,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Why should a team radiate its metrics to the relevant audience?",
-    "explanation": "Radiating metrics makes the same information visible to everyone who decides, so metric insights can drive decisions.",
+    "explanation": "Radiating metrics makes the same information visible to everyone who decides, so metric insights can drive decisions. Ranking people or comparing teams' velocity misuses them.",
     "options": [
       "So decisions use the same data",
       "So managers can rank individuals",
-      "So the team looks busy",
-      "So audits can be avoided"
+      "So the board looks complete",
+      "So velocity can be compared"
     ],
     "correct": [
       0
@@ -1873,11 +1873,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team new to agile wants to drop retrospectives in its second week. What should the practitioner do?",
-    "explanation": "The practitioner evaluates the team's understanding and tailors the approach, and a team two weeks in has not yet seen the value of reflection. Dropping the only improvement event removes the learning loop.",
+    "explanation": "The practitioner evaluates the team's understanding and tailors the approach, and a team two weeks in has not yet seen the value of reflection. Shortening, skipping or stepping away before they understand it weakens the learning loop.",
     "options": [
-      "Shorten them to ten minutes",
-      "Hold them only once a month",
-      "Let each member opt out",
+      "Shorten them to fifteen minutes",
+      "Hold them every other sprint",
+      "Let the team run them without you",
       "Keep them and explain their purpose"
     ],
     "correct": [
@@ -1978,12 +1978,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What does a coach mainly do that a trainer does not?",
-    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches defined content, and sharing career experience is closer to mentoring.",
+    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches defined content or shows the technique, and sharing career experience is closer to mentoring.",
     "options": [
       "Share their own career story",
-      "Teach a set course of content to them",
+      "Teach a set course of content",
       "Help people find their own answers",
-      "Assess people for promotion"
+      "Model the correct technique"
     ],
     "correct": [
       2
@@ -2021,11 +2021,11 @@
     "difficulty": 3,
     "format": "single",
     "stem": "Business priorities shift after an increment is finished. What should happen next?",
-    "explanation": "Increments stay aligned with business priorities, so the goal of the next one is redefined when priorities change. Finished work is not thrown away.",
+    "explanation": "Increments stay aligned with business priorities, so the goal of the next one is redefined when priorities change. Finished work is kept, and re-estimating everything does not change the goal.",
     "options": [
-      "Rebuild the increment from scratch",
+      "Re-estimate the whole backlog",
       "Keep the old plan for consistency",
-      "Hold the increment back",
+      "Cancel the current iteration",
       "Revisit the next increment's goal"
     ],
     "correct": [
@@ -2042,12 +2042,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Developers and testers sit apart and pass work over a wall. What helps most?",
-    "explanation": "Collaboration practices break down silos: one cross-functional team sharing a space and a goal. More sign-offs, coordinators and syncs between the groups keep the wall in place.",
+    "explanation": "Collaboration practices break down silos: one cross-functional team sharing a space and a goal. Joint standups, syncs and test tasks still leave two groups handing work over.",
     "options": [
-      "Add a QA sign-off to each story",
+      "Add testers to the daily standup",
       "Seat them together as one team",
-      "Hire a dedicated test coordinator",
-      "Hold a weekly sync between groups"
+      "Hold a weekly sync between groups",
+      "Add a test task to each story"
     ],
     "correct": [
       1
@@ -2066,9 +2066,9 @@
     "explanation": "Unfinished work has used effort but delivers nothing until it is done, and it can go stale while it waits.",
     "options": [
       "It ties up effort with no return",
-      "It improves the quality of the release",
-      "It reduces delivery risk",
-      "It speeds up delivery"
+      "It breaks the sprint goal",
+      "It raises the defect count",
+      "It lowers team velocity"
     ],
     "correct": [
       0
@@ -2084,11 +2084,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How does a practitioner build awareness of agile values in a new organization?",
-    "explanation": "Creating awareness around agile values works best when the practitioner explains them and shows them in their own behavior.",
+    "explanation": "Creating awareness around agile values works best when the practitioner explains them and shows them in their own behavior. Posters, certificates and a single course do not change daily habits.",
     "options": [
-      "Require a certification test",
-      "Post the manifesto and move on",
-      "Leave it to each team",
+      "Require agile certification",
+      "Post the manifesto on the wall",
+      "Run a one-day agile course",
       "Explain and model them daily"
     ],
     "correct": [
@@ -2109,7 +2109,7 @@
     "options": [
       "A monthly audit of all the figures",
       "A separate reporting team",
-      "Update it each time work moves",
+      "Update it as each card changes",
       "A single yearly snapshot"
     ],
     "correct": [
@@ -2189,12 +2189,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team's retrospective actions are never carried out. What should change?",
-    "explanation": "A small number of owned, visible actions is more likely to happen than a long list. Fewer retrospectives or actions owned by the facilitator weaken the team's ownership, and a longer list is no more likely to get done.",
+    "explanation": "A small number of owned, visible actions is more likely to happen than a long list. More meetings, facilitator-owned actions or a charter entry do not get the work done.",
     "options": [
       "Choose fewer actions and track them",
       "Let the facilitator own the actions",
-      "Add the actions to a shared list",
-      "Hold retrospectives less often than now"
+      "Add the actions to the team charter",
+      "Hold the retrospective more often"
     ],
     "correct": [
       0
@@ -2210,12 +2210,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team tried a new code review rule last iteration. What should it do now?",
-    "explanation": "Continuous improvement includes evaluating the effectiveness of each process change before keeping or dropping it.",
+    "explanation": "Continuous improvement includes evaluating the effectiveness of each process change before keeping, spreading or formalizing it.",
     "options": [
       "Make it permanent at once",
       "Check whether it helped",
-      "Drop it without discussion",
-      "Add three more rules"
+      "Roll it out to other teams",
+      "Add it to the definition of done"
     ],
     "correct": [
       1
@@ -2273,11 +2273,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team learns that users ignore half the planned features. What should it do?",
-    "explanation": "Embracing change includes adapting to product needs based on learning and feedback. Building features nobody uses is waste.",
+    "explanation": "Embracing change includes adapting to product needs based on learning and feedback. Finishing or promoting features users ignore adds waste, and waiting for a survey delays the response.",
     "options": [
       "Finish the planned features first",
-      "Add training for the ignored features",
-      "Wait for the final release survey",
+      "Survey users at the next release",
+      "Add onboarding for the unused features",
       "Adapt the product to how it is used"
     ],
     "correct": [
@@ -2315,11 +2315,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A customer rarely attends reviews. What should the practitioner do?",
-    "explanation": "The outline says to encourage collaboration between customer and team. Finding a format that works for the customer keeps them engaged.",
+    "explanation": "The outline says to encourage collaboration between customer and team. Finding a format that works for the customer keeps them engaged; a proxy or recording is a fallback, not the first move.",
     "options": [
-      "Carry on without their input",
-      "Work out a way they can take part",
-      "Send meeting minutes in their place",
+      "Carry on with a proxy's input",
+      "Find a format they can join",
+      "Send recorded demos instead",
       "Escalate to their manager"
     ],
     "correct": [
@@ -2688,7 +2688,7 @@
     "options": [
       "Work remaining over time",
       "Work started per person",
-      "Budget spent by month",
+      "Work started per month",
       "Defects found per release"
     ],
     "correct": [
@@ -2747,12 +2747,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A distributed team keeps missing decisions made in hallway chats. What helps most?",
-    "explanation": "A communication strategy for distributed teams makes decisions visible where everyone can see them. Joining by video or relocating does not help with chats that happen by chance in a hallway.",
+    "explanation": "A communication strategy for distributed teams makes decisions visible where everyone can see them, as they are made. Video calls and standups miss chance hallway talks, and a weekly summary arrives late.",
     "options": [
-      "Ask remote staff to relocate",
+      "Send a weekly decision summary",
       "Record decisions in a shared channel",
       "Ask remote staff to join by video",
-      "Hold more hallway chats"
+      "Move key talks to the daily standup"
     ],
     "correct": [
       1
@@ -2792,9 +2792,9 @@
     "explanation": "The outline says resolution strategies are determined with the team, which knows the work best and will carry them out.",
     "options": [
       "The team itself",
-      "Senior leadership",
-      "An outside auditor",
-      "The PMO"
+      "The product owner",
+      "The project sponsor",
+      "The Scrum Master alone"
     ],
     "correct": [
       0
@@ -2855,7 +2855,7 @@
     "explanation": "Managing impediments includes monitoring them and getting help from outside the team when it cannot remove them alone.",
     "options": [
       "Leave the team to absorb it",
-      "Work with others to clear it",
+      "Get help from outside the team",
       "Log it and keep working around it",
       "Report it at the end of the project"
     ],
@@ -2918,7 +2918,7 @@
     "explanation": "When someone else hands out the work, members stop owning it. Self-organizing teams decide who does what.",
     "options": [
       "It weakens their ownership",
-      "It breaks event timeboxes",
+      "It makes velocity less accurate",
       "It slows the daily standup",
       "It hides work from stakeholders"
     ],
@@ -2936,11 +2936,11 @@
     "difficulty": 3,
     "format": "single",
     "stem": "A root cause analysis keeps stopping at 'human error'. What should the facilitator ask?",
-    "explanation": "Human error is a symptom. Asking what in the system made the error likely leads to a fix the team can make.",
+    "explanation": "Human error is a symptom. Asking what in the system made the error likely leads to the cause; training and sign-offs are fixes chosen before the cause is known.",
     "options": [
-      "How to discipline the person",
+      "Whether more training is needed",
       "Who made the error",
-      "Whether everyone needs retraining",
+      "Whether to add a sign-off step",
       "What made the error easy to make"
     ],
     "correct": [
@@ -3003,8 +3003,8 @@
     "options": [
       "Likelihood and impact change",
       "Auditors require it",
-      "Risks never change",
-      "To keep the risk register full"
+      "The register must stay complete",
+      "Each sprint needs a risk item"
     ],
     "correct": [
       0
@@ -3020,11 +3020,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "A team member's experiment fails. How should the practitioner respond?",
-    "explanation": "Creating an environment to innovate and learn means treating failed experiments as learning to share. Rerunning it at once or adding approval steps skips the learning and discourages the next try.",
+    "explanation": "Creating an environment to innovate and learn means treating a failed experiment as learning to share first. Rushing another, adding approval steps or logging it as a risk skips that.",
     "options": [
-      "Log it as a failed story",
-      "Run the same experiment again at once",
-      "Ask the sponsor to approve the next one",
+      "Log it in the risk register",
+      "Run a follow-up experiment at once",
+      "Add a review step before experiments",
       "Share what was learned with the team"
     ],
     "correct": [
@@ -3106,9 +3106,9 @@
     "stem": "Why size backlog items as a team rather than one person alone?",
     "explanation": "The outline says to use tools and techniques to collectively size work, so the estimate reflects everyone who will do it.",
     "options": [
-      "It is faster for one person",
-      "It removes the need to refine",
+      "It is faster than one estimator",
       "It fixes the delivery date",
+      "It removes the need to refine",
       "It draws on shared knowledge"
     ],
     "correct": [
@@ -3167,12 +3167,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What is the main aim of delivering a working increment early in a project?",
-    "explanation": "An early increment lets the team validate the solution and the market need. It does not freeze the design or prove spending.",
+    "explanation": "An early increment lets the team validate the solution and the market need with real users. It does not freeze scope, and its purpose is not a demonstration of architecture or speed.",
     "options": [
-      "Lock the design for later phases",
+      "Fix the scope for later iterations",
       "Validate the solution with real users",
-      "Reduce the number of iterations",
-      "Show the sponsor the budget is being spent"
+      "Raise team velocity early",
+      "Prove the architecture to the sponsor"
     ],
     "correct": [
       1
@@ -3188,11 +3188,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team never questions how its work is done. What should the practitioner encourage?",
-    "explanation": "Psychological safety includes encouraging people to challenge the status quo so the team keeps improving.",
+    "explanation": "Psychological safety includes encouraging people to challenge the status quo so the team keeps improving. Compliance and consistency keep things as they are.",
     "options": [
       "Challenging the status quo",
       "Deference to senior staff",
-      "Fewer team discussions",
+      "Consistent use of the method",
       "Stricter process compliance"
     ],
     "correct": [
@@ -3230,12 +3230,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "One specialist is the only person who understands the deployment scripts. What reduces this risk?",
-    "explanation": "Pairing spreads knowledge so the team is not dependent on one person.",
+    "explanation": "Pairing spreads working knowledge so the team is not dependent on one person. Documents help but go stale, and a backup or freeze leaves the gap in place.",
     "options": [
-      "Give them a retention bonus",
+      "Give them a backup on call",
       "Freeze changes to the scripts",
       "Pair others with them on it",
-      "Add a clause to their contract"
+      "Document the scripts in detail"
     ],
     "correct": [
       2
@@ -3294,11 +3294,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How should a team approach waste over time?",
-    "explanation": "The outline says to iterate on identifying and reducing waste. It is ongoing work.",
+    "explanation": "The outline says to iterate on identifying and reducing waste. It is ongoing work, not a project or a release checkpoint.",
     "options": [
-      "Address it only in audits",
+      "Address it at each release review",
       "Keep finding and reducing it",
-      "Accept it as normal",
+      "Accept a fixed amount of it",
       "Remove it all in one project"
     ],
     "correct": [
@@ -3336,12 +3336,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A practitioner asks for feedback on their facilitation and hears meetings run long. What should they do?",
-    "explanation": "The outline says to solicit and provide constructive feedback and act on it. Asking for feedback and then defending against it teaches people not to give any.",
+    "explanation": "The outline says to solicit and provide constructive feedback and act on it. Explaining, collecting more data or waiting before acting tells people their feedback changes nothing.",
     "options": [
-      "Explain why they had to run long",
-      "Wait for more feedback first",
+      "Explain why the meetings ran long",
+      "Wait to see if others agree",
       "Change the format and check again",
-      "Ask the team to speak up less"
+      "Ask for more detail in a survey"
     ],
     "correct": [
       2
@@ -3420,12 +3420,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team's defect rate rises every iteration. What should it do with that metric?",
-    "explanation": "Metric insights are used for decision making. A rising defect rate is a signal to change something.",
+    "explanation": "Metric insights are used for decision making by the team. Individual targets and a late test phase treat the symptom, and reporting it alone changes nothing.",
     "options": [
       "Use it to choose an improvement",
-      "Stop counting defects altogether",
-      "Hold the testers accountable",
-      "Hide it from stakeholders for now"
+      "Add a test phase at the end",
+      "Report it to the sponsor",
+      "Set a defect target for each person"
     ],
     "correct": [
       0
@@ -3483,11 +3483,11 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What is the main benefit of shorter iterations?",
-    "explanation": "Short iterations put working product in front of stakeholders more often, so the team learns sooner whether it is on track.",
+    "explanation": "Short iterations put working product in front of stakeholders more often, so the team learns sooner whether it is on track. They do not raise velocity or make long-range plans exact.",
     "options": [
       "Faster feedback on the product",
-      "Fewer stakeholders to manage",
-      "Lower team velocity",
+      "More accurate long-range plans",
+      "Higher team velocity",
       "Less testing per release"
     ],
     "correct": [
@@ -3504,12 +3504,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "When should the practitioner step in directly on a disagreement within the team?",
-    "explanation": "Disagreement about ideas is healthy and the team can handle it. Conflict that turns personal or harms the work needs the practitioner to facilitate.",
+    "explanation": "Disagreement about ideas is healthy and the team can handle it. Conflict that turns personal or harms people needs the practitioner to facilitate.",
     "options": [
-      "Only at the yearly review",
+      "Once it slows the sprint",
       "When it turns personal or harmful",
-      "Never, teams fix everything",
-      "Whenever two people disagree on anything"
+      "When the team asks for a vote",
+      "Whenever two people disagree"
     ],
     "correct": [
       1
@@ -3525,10 +3525,10 @@
     "difficulty": 2,
     "format": "single",
     "stem": "How should a practitioner foster continuous improvement?",
-    "explanation": "Continuous improvement means frequent, small adjustments made by the team, not occasional large overhauls.",
+    "explanation": "Continuous improvement means frequent, small adjustments made by the team, not occasional overhauls or changes made only after things get worse.",
     "options": [
-      "Wait for problems to escalate",
-      "Run one large overhaul each year",
+      "Wait for metrics to drop",
+      "Run a large overhaul each quarter",
       "Make small changes a regular habit",
       "Let a central group decide changes"
     ],
@@ -3609,10 +3609,10 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A newly formed group is polite and avoids any disagreement. What helps it develop?",
-    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Surfacing different views helps it work through that stage instead of staying stuck in politeness; time alone does not do that.",
+    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Surfacing different views helps it work through that stage; rules, a decider or an offsite do not.",
     "options": [
-      "Give them more time to settle in",
-      "Assign a lead to make decisions",
+      "Run a team-building offsite",
+      "Let the team lead settle decisions",
       "Agree a working agreement on meetings",
       "Draw out differing views openly"
     ],
@@ -3802,7 +3802,7 @@
     "options": [
       "It sets its own business priorities",
       "It decides how to do its work",
-      "It has no constraints",
+      "It has no work constraints",
       "It picks its own customers"
     ],
     "correct": [
@@ -3951,8 +3951,8 @@
     "explanation": "Good coaching builds the team's own capability, so over time it needs the coach less.",
     "options": [
       "The team no longer needs the coach",
-      "The coach runs all the team's events",
-      "The team follows rules exactly",
+      "The coach runs every event well",
+      "The team follows Scrum exactly",
       "The coach approves each change"
     ],
     "correct": [
@@ -3972,7 +3972,7 @@
     "explanation": "Alignment keeps each increment contributing to what the organization is trying to achieve.",
     "options": [
       "So the team can skip reviews",
-      "So work keeps serving the business",
+      "So increments keep serving the business",
       "So the vision never needs to change",
       "So the roadmap stays fixed"
     ],
@@ -4076,10 +4076,10 @@
     "stem": "Why encourage cross-skilling within a team?",
     "explanation": "Cross-skilled members can pick up whatever work is blocking the flow, which removes single-person bottlenecks. Specialist depth is still valued.",
     "options": [
-      "So work does not stall on one person",
+      "So nothing stalls on one person",
       "So specialists are no longer needed",
       "So managers can move anyone anywhere",
-      "So people can be replaced cheaply"
+      "So velocity can rise each sprint"
     ],
     "correct": [
       0
@@ -4166,7 +4166,7 @@
       "Accepted if the sponsor agrees",
       "Not accepted until it meets it",
       "Accepted at the next release",
-      "Accepted with a note"
+      "Accepted with a follow-up story"
     ],
     "correct": [
       1
@@ -4203,10 +4203,10 @@
     "difficulty": 3,
     "format": "single",
     "stem": "A Scrum team's work now arrives mostly as urgent, unplanned support tickets. What should it consider?",
-    "explanation": "Practitioners integrate agile models based on needs. Unpredictable, interrupt-driven work suits a flow-based method such as Kanban better than fixed sprint commitments.",
+    "explanation": "Practitioners integrate agile models based on needs. When most work arrives unplanned, a flow-based method such as Kanban fits better than sprint commitments; a buffer only helps when interruptions are the exception.",
     "options": [
-      "Adding a second daily standup",
-      "Holding more refinement sessions",
+      "Keeping a buffer in each sprint",
+      "Holding refinement more often",
       "Moving to a flow-based method",
       "Making its sprints longer"
     ],

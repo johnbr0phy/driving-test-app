@@ -70,7 +70,7 @@ Q = [
  "Changes may fade fast", ["They need a fasting patient", "They take an hour to apply", "They cancel the limb leads"],
  "ST elevation in V3R and V4R may last only a short time, so early recording matters; a normal right-sided tracing later does not exclude RV infarction."),
 ("A suspected new Q wave appears only after a technician changed the limb wires. What should happen?",
- "Repeat with checked wires", ["Report a silent infarction", "Mount it without comment", "Raise the gain and reprint"],
+ "Repeat with checked wires", ["Report a new silent infarction", "Mount it without comment", "Repeat at double gain"],
  "Lead reversal and misplacement can create new Q waves, so UDMI advises confirming with a repeat tracing using correct placement."),
 ("Why is QS in lead V1 alone not treated as a sign of old infarction?",
  "It can be a normal finding", ["V1 is not a real lead", "V1 never shows Q waves", "It only follows LBBB"],

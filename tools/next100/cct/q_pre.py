@@ -52,7 +52,7 @@ Q = [
  "Its 1 mV calibration pulse", ["The treadmill belt tension", "The printer paper supply", "The room temperature log"],
  "A recorder is checked against its standard 1 mV calibration signal so amplitudes can be trusted. Belt tension and room logs do not test the ECG signal."),
 ("A patient scheduled for a treadmill test says he had a heart attack yesterday. What is true?",
- "Testing must not go ahead", ["The test may start at half speed", "Only the cooldown is skipped", "He should hold his breath"],
+ "Testing must not go ahead", ["Postpone it one hour only", "Run a low-level protocol", "Stop at 85% of max rate"],
  "Acute myocardial infarction within 2 days is an absolute contraindication to exercise testing, so the test does not go ahead."),
 ("Which patient report is an absolute contraindication to exercise testing?",
  "Chest pain at rest today", ["Mild knee stiffness", "Hypertension controlled by drugs", "A normal ECG last year"],

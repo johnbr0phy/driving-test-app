@@ -50,7 +50,7 @@ Q = [
  "Undersensing", ["Oversensing", "Failure to capture", "Rate modulation"],
  "The device is not seeing native beats (failure to sense), so it fires on schedule regardless, sometimes into the T wave."),
 ("A VVI patient's rate falls below the lower rate, with long pauses and no pacing spikes at all. Most likely?",
- "Oversensing", ["Undersensing", "Normal rate response", "Lead fracture capture"],
+ "Oversensing", ["Undersensing", "Normal rate response", "Failure to capture"],
  "Oversensing means the device mistakes noise or other signals for beats and inhibits itself, so pauses appear without spikes."),
 ("Ventricular pacing spikes are 25 small boxes apart at 25 mm/s. What is the paced rate?",
  "60 per minute", ["50 per minute", "70 per minute", "75 per minute"],

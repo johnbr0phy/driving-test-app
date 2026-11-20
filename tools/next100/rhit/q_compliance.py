@@ -7,7 +7,7 @@ assert round(100 * 180 / 200) == 90
 assert round(100 * 120 / 800) == 15
 assert (4 + 4 * 7 + 16) / 6 == 8
 assert 6240 / 2080 == 3
-assert round(100 * 47 / 50) == 94
+assert round(100 * 705 / 750) == 94
 
 COMPLIANCE = [
 ("Which is one of the seven elements of an effective compliance program?",
@@ -28,9 +28,9 @@ COMPLIANCE = [
 ("Two coders code the same sample of records and their results are compared. This checks:",
  "Inter-rater reliability", ["Bed occupancy rate", "Charge capture rate", "Patient satisfaction"],
  "Comparing coders on the same records measures consistency between them, a common coding quality check."),
-("A coding audit found 47 of 50 records correct. What is the record accuracy rate?",
- "94%", ["47%", "90%", "97%"],
- "47 / 50 = 0.94, or 94%."),
+("Of 750 discharges, 705 records were complete within 30 days. What is the completion rate?",
+ "94%", ["6%", "90%", "97%"],
+ "705 / 750 = 0.94, or 94% of records completed on time."),
 ("In the PDSA cycle, a change is tried on a small scale during the step called:",
  "Do", ["Plan", "Study", "Act"],
  "Plan designs the change, Do tests it on a small scale, Study looks at the results, and Act adopts, adapts or drops it."),

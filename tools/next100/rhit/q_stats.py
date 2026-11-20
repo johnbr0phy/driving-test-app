@@ -10,7 +10,7 @@ assert 420 / 100 == 4.2
 assert pct(6, 400) == 1.5
 assert pct(9 - 4, 104 - 4) == 5.0 and pct(9, 104) == 8.7 and pct(5, 104) == 4.8
 assert 200 + 30 - 25 + 2 == 207
-assert (1.0 + 2.0 + 0.8 + 1.2) / 4 == 1.25
+assert 700 / 500 == 1.4
 assert sorted([7, 2, 3, 9, 3])[2] == 3 and sum([7, 2, 3, 9, 3]) / 5 == 4.8
 assert pct(54, 360) == 15.0
 assert (4 + 6 + 11) / 3 == 7
@@ -42,9 +42,9 @@ STATS = [
 ("The census at midnight was 200. The next day had 30 admissions, 25 discharges, and 2 patients admitted and discharged that day. How many inpatient service days were there?",
  "207", ["205", "203", "230"],
  "The next midnight census is 200 + 30 - 25 = 205, and the 2 same-day patients each add a service day, for 207."),
-("Four inpatient cases have MS-DRG weights of 1.0, 2.0, 0.8 and 1.2. What is the case-mix index?",
- "1.25", ["1.00", "1.20", "5.00"],
- "Add the weights (5.0) and divide by the 4 cases: 1.25."),
+("The total MS-DRG relative weight for 500 discharges was 700. What is the case-mix index?",
+ "1.40", ["0.71", "1.20", "7.00"],
+ "Case-mix index is total relative weight divided by discharges: 700 / 500 = 1.40."),
 ("Which variable is ordinal?",
  "Pain rated mild, moderate or severe", ["Blood type A, B, AB or O", "Patient's state of residence", "Body temperature in degrees F"],
  "Ordinal data are categories with a natural order but no fixed distance between them. Blood type and state are nominal; temperature is continuous."),

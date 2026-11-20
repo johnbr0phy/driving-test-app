@@ -287,6 +287,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "42 CFR 484.80, 484.50, 484.60 and 484.70 on eCFR, the DC Board of Nursing HHA candidate handbook and Credentia's DC HHA help center, and NC DHHS in-home aide testing directions, checked November 2026",
     source: { name: "eCFR: 42 CFR 484.80 Home health aide services", url: "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.80" },
   },
+  coc: {
+    answer:
+      "The Certified Outpatient Coder (COC) exam, formerly CPC-H, is AAPC's certification exam for coders who work on the facility side of hospital outpatient departments and ambulatory surgery centers. It has 100 multiple-choice questions, at least 70 of which must be answered, in one four-hour sitting, and an overall score of 70% passes, so more than 30 wrong answers fails. Approved books are the current AMA CPT Professional Edition and current ICD-10-CM and HCPCS Level II books, and a calculator is built into the testing platform. The sections are surgery and modifiers 22 questions, ICD-10-CM 15, payment methodologies 13, CPT 13, cases 10, medical terminology 7, anatomy 7, HCPCS Level II 7, coding guidelines 3 and compliance 3. It is taken online with a live remote proctor or at a testing center.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, at least 70 answered" },
+      { label: "Time", value: "4 hours, one sitting" },
+      { label: "Pass mark", value: "70% overall" },
+      { label: "Code books", value: "CPT Professional, ICD-10-CM, HCPCS Level II (current year)" },
+      { label: "Biggest section", value: "Surgery and modifiers, 22 questions" },
+      { label: "Where", value: "Online with a live remote proctor or at a testing center" },
+      { label: "Run by", value: "AAPC" },
+    ],
+    basedOn: "AAPC's Taking the COC exam page and COC certification page, checked November 2026",
+    source: { name: "AAPC: Taking the COC exam", url: "https://www.aapc.com/certifications/coc/taking-the-coc-exam" },
+  },
   cbcs: {
     answer:
       "The Certified Billing and Coding Specialist (CBCS) exam is the National Healthcareer Association's (NHA) certification exam for medical billing and coding specialists. NHA's test plan gives it 100 scored questions plus 25 unscored pretest questions, with 3 hours to finish. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. The test plan, based on a 2020 job analysis, has four domains: Billing and Reimbursement 33 items, Coding and Coding Guidelines 32, Insurance Eligibility and Other Payer Requirements 20, and The Revenue Cycle and Regulatory Compliance 15. Since September 24, 2024 code books are not allowed; each coding question shows the information it needs. It is taken at a school, a PSI test center or by live remote proctoring.",

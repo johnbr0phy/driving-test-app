@@ -1302,5 +1302,61 @@
       "pr": 926,
       "findings": 5
     }
+  ],
+  "ccnpencor": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 6
+    }
+  ],
+  "pspo": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 10
+    }
+  ],
+  "pmiacp": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 14
+    }
+  ],
+  "hvacjourney": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 3
+    }
+  ],
+  "proserve": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 12
+    }
+  ],
+  "ukcemap2": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 13
+    }
+  ],
+  "waterop": [
+    {
+      "date": "2026-11-19",
+      "kind": "blind review at build",
+      "pr": 927,
+      "findings": 11
+    }
   ]
 }

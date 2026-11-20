@@ -1490,6 +1490,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has 397 of the 409 official pool questions with explanations (the 12 that need a schematic figure are left out), free to start with no account required.",
   },
+  hamextra: {
+    answer:
+      "The ham radio Amateur Extra exam (FCC Element 4) has 50 multiple-choice questions, and 37 correct (74%) passes. The exam takes one question from each of the 50 groups in the public NCVEC pool, word for word; the 2024-2028 pool runs from July 1, 2024 to June 30, 2028. Volunteer examiners give it, and you need a General license or exam credit to take the upgrade. The Extra class carries every amateur privilege on every band.",
+    rows: [
+      { label: "Questions", value: "50, one from each pool group" },
+      { label: "Passing score", value: "37 correct (74%)" },
+      { label: "Question pool", value: "NCVEC 2024-2028 Extra pool (599 questions after the errata)" },
+      { label: "Given by", value: "Volunteer examiner teams" },
+    ],
+    basedOn: "the official NCVEC 2024-2028 Extra class pool, 4th errata (February 4, 2026)",
+    source: { name: "NCVEC", url: "https://ncvec.org/index.php/2024-2028-extra-class-question-pool-release" },
+    tigertest:
+      "Tigertest has 572 of the 599 official pool questions with original explanations (the 27 that need a pool figure are left out) in five 50-question exams, free to start with no account required.",
+  },
   epa609: {
     answer: "EPA Section 609 certification covers motor vehicle air-conditioning refrigerant handling, recovery equipment, environmental effects and applicable rules. EPA-approved programs administer their own tests. MACS online/home testing uses 25 multiple-choice questions, is untimed and open book, and requires 21 correct (84%); classroom testing differs. Tigertest provides 100 original practice questions, not approved training or certification.",
     rows: [

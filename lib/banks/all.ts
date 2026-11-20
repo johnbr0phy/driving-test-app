@@ -19,6 +19,7 @@ import "./foodhandler";
 import "./foodmgr";
 import "./forklift";
 import "./ham";
+import "./hamextra";
 import "./htl";
 import "./hunter";
 import "./insurance";

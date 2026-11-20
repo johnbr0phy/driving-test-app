@@ -97,7 +97,12 @@ export default function HomeschoolPage() {
               {tests.map(({ test, who }) => (
                 <li key={test.id} className="flex flex-col gap-2">
                   <TestCard test={test} />
-                  <p className="px-1 text-sm text-gray-500 dark:text-gray-400">{who}</p>
+                  <p className="px-1 text-sm text-gray-500 dark:text-gray-400">
+                    {who}.{" "}
+                    <Link href={`/teach/new?exam=${test.id}&for=family`} className="text-brand-dark underline underline-offset-2">
+                      Make a family class
+                    </Link>
+                  </p>
                 </li>
               ))}
             </ul>
@@ -121,7 +126,7 @@ export default function HomeschoolPage() {
             ))}
           </ol>
           <p className="mt-8 text-center">
-            <Link href="/teach/new" className="inline-block rounded-full bg-gray-900 dark:bg-white px-8 py-4 text-lg font-semibold text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
+            <Link href="/teach/new?for=family" className="inline-block rounded-full bg-gray-900 dark:bg-white px-8 py-4 text-lg font-semibold text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
               Make a free family class
             </Link>
           </p>

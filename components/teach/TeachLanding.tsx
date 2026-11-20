@@ -242,6 +242,13 @@ export function TeachLanding({ signedIn }: { signedIn: boolean }) {
           <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             {british ? "Driving lessons, nursing and allied health programmes, trade schools, test preparation. Pick a test to start a class for it." : "Driver's ed, nursing and allied health programs, trade schools, test prep. Pick a test to start a class for it."}
           </p>
+          {!british && (
+            <p className="text-center -mt-8 mb-12">
+              <Link href="/homeschool" className="font-medium text-gray-900 dark:text-gray-50 underline underline-offset-2">
+                Homeschooling? Set up a family class for your kids
+              </Link>
+            </p>
+          )}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEST_GROUPS.map((g) => (
               <div key={g.title} className="rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-5">

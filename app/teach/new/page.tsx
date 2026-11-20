@@ -7,6 +7,8 @@
 // press Create (Nov 2026: bouncing them to /login on open lost 7 in 8). The
 // draft is kept in localStorage so a Google redirect or the email signup page
 // comes back to it, and the class is made as soon as the account is there.
+// ?for=family (from /homeschool) words the form for a parent and their kids:
+// same class, no school field.
 
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -31,6 +33,7 @@ interface Draft {
   name?: string;
   teacherName?: string;
   school?: string;
+  family?: boolean;
   /** Create was pressed while signed out: make the class once signed in. */
   pending?: boolean;
 }
@@ -70,6 +73,7 @@ function NewClassForm() {
   const [busy, setBusy] = useState(false);
   const [askSignIn, setAskSignIn] = useState(false);
   const [restored, setRestored] = useState(false);
+  const [family, setFamily] = useState(params.get("for") === "family");
   const isNative = useIsNativeApp();
   const { signUp: googleSignUp, busy: googleBusy, error: googleError } = useGuestGoogleSignup();
 
@@ -87,6 +91,7 @@ function NewClassForm() {
     if (d.name) setName(d.name);
     if (d.teacherName) setTeacherName(d.teacherName);
     if (d.school) setSchool(d.school);
+    if (d.family) setFamily(true);
     setRestored(true);
   }, [all, params]);
 
@@ -98,10 +103,14 @@ function NewClassForm() {
   useEffect(() => {
     if (!restored || user) return;
     const prev = readDraft();
-    writeDraft({ exam: choice?.id, stateKey, name, teacherName, school, pending: prev.pending });
-  }, [restored, user, choice, stateKey, name, teacherName, school]);
+    writeDraft({ exam: choice?.id, stateKey, name, teacherName, school, family, pending: prev.pending });
+  }, [restored, user, choice, stateKey, name, teacherName, school, family]);
 
-  const here = `/teach/new${params.get("exam") ? `?exam=${params.get("exam")}` : ""}`;
+  const hereParams = new URLSearchParams();
+  if (params.get("exam")) hereParams.set("exam", params.get("exam")!);
+  if (family) hereParams.set("for", "family");
+  const here = `/teach/new${hereParams.size ? `?${hereParams}` : ""}`;
+  const who = family ? "your kids" : "your students";
 
   const q = query.trim().toLowerCase();
   const filtered = groups
@@ -129,10 +138,10 @@ function NewClassForm() {
   };
 
   const validate = (): string => {
-    if (!choice) return "Pick the test your students are preparing for";
+    if (!choice) return `Pick the test ${who} are preparing for`;
     if (choice.stateRequired && !stateKey) return "Pick your state";
     if (!name.trim()) return "Give the class a name";
-    if (!teacherName.trim()) return "Add the name your students know you by";
+    if (!teacherName.trim()) return `Add the name ${who} know you by`;
     return "";
   };
 
@@ -142,7 +151,7 @@ function NewClassForm() {
     if (problem) return setError(problem);
     trackTeachStep("new_submit");
     if (!user) {
-      writeDraft({ exam: choice?.id, stateKey, name, teacherName, school, pending: true });
+      writeDraft({ exam: choice?.id, stateKey, name, teacherName, school, family, pending: true });
       setError("");
       setAskSignIn(true);
       return;
@@ -157,7 +166,7 @@ function NewClassForm() {
     try {
       const { code } = await teachFetch<{ code: string }>(user, "/api/classes", {
         method: "POST",
-        body: JSON.stringify({ name, examId, state, teacherName, school }),
+        body: JSON.stringify({ name, examId, state, teacherName, school: family ? "" : school }),
       });
       markTeacher(user.uid, true);
       writeDraft(null);
@@ -187,8 +196,13 @@ function NewClassForm() {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 py-10 max-w-2xl">
-        <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">{user ? "Your classes" : "Back"}</Link>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-3 mb-6">New class</h1>
+        <Link href={family && !user ? "/homeschool" : "/teach"} className="text-sm text-gray-600 dark:text-gray-300 underline">{user ? "Your classes" : "Back"}</Link>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-3 mb-2">{family ? "New family class" : "New class"}</h1>
+        {family ? (
+          <p className="text-gray-600 dark:text-gray-300 mb-6">Pick the test, then send each child the link. They join with their first name, and you see their scores and the topics they miss.</p>
+        ) : (
+          <div className="mb-4" />
+        )}
         <form onSubmit={submit} className="space-y-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6">
           <div>
             <p className={fieldClass}>Test</p>
@@ -222,7 +236,7 @@ function NewClassForm() {
                     ref={searchRef}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Search: surgical tech, NCLEX, SAT, real estate…"
+                    placeholder={family ? "Search: MAP Growth, CogAT, ISEE, SAT…" : "Search: surgical tech, NCLEX, SAT, real estate…"}
                     aria-label="Search tests"
                     className="w-full bg-transparent pl-9 pr-3 py-3 text-base md:text-sm text-gray-900 dark:text-gray-50 outline-none focus-in-parent"
                   />
@@ -271,25 +285,27 @@ function NewClassForm() {
 
           <div>
             <label htmlFor="class-name" className={fieldClass}>Class name</label>
-            <Input id="class-name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Surgical Tech, Fall 2026" maxLength={40} />
+            <Input id="class-name" value={name} onChange={(e) => setName(e.target.value)} placeholder={family ? "Our homeschool, MAP Growth" : "Surgical Tech, Fall 2026"} maxLength={40} />
           </div>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className={family ? "" : "grid sm:grid-cols-2 gap-4"}>
             <div>
-              <label htmlFor="teacher-name" className={fieldClass}>Your name, as students know you</label>
-              <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder="Ms. Rivera" maxLength={40} />
+              <label htmlFor="teacher-name" className={fieldClass}>{family ? "Your name, as your kids know you" : "Your name, as students know you"}</label>
+              <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder={family ? "Mom" : "Ms. Rivera"} maxLength={40} />
             </div>
+            {!family && (
             <div>
               <label htmlFor="school" className={fieldClass}>
                 School <span className="font-normal text-gray-500 dark:text-gray-400">(optional)</span>
               </label>
               <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder="Lakeview Community College" maxLength={40} />
             </div>
+            )}
           </div>
           {error && <p role="alert" className="text-sm text-red-600 dark:text-red-400">{error}</p>}
           {askSignIn && !user ? (
             <div role="region" aria-label="Save your class" className="rounded-xl border-2 border-gray-900 dark:border-gray-50 p-4 space-y-3">
               <p className="font-semibold text-gray-900 dark:text-gray-50">Last step: save your class to a free account</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">So you can see your students&apos; scores from any device. Your class is ready and is made the moment you sign in.</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">So you can see {family ? "your kids" : "your students"}&apos; scores from any device. Your class is ready and is made the moment you sign in.</p>
               {!isNative && (
                 <WebViewGoogleWarning onGoogleSignIn={googleSignUp} disabled={googleBusy} className="h-10 border w-full" />
               )}
@@ -308,7 +324,7 @@ function NewClassForm() {
           </Button>
           )}
           {!user && !askSignIn && <p className="text-xs text-gray-500 dark:text-gray-400">Free. You&apos;ll save it to an account in one tap at the end.</p>}
-          <p className="text-xs text-gray-500 dark:text-gray-400">Students see the class name, your name and the school when they join.</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">{family ? "Your kids see the class name and your name when they join." : "Students see the class name, your name and the school when they join."}</p>
         </form>
       </div>
     </div>

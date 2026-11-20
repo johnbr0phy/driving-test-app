@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Link from "next/link";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
@@ -13,7 +13,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
 import type { Language } from "@/i18n";
 import { LandingTryQuestion } from "@/components/exam/LandingTryQuestion";
-import { LANDING_TRY_INIT_SCRIPT, noteLandingTryEnrolled } from "@/lib/landingTryTest";
+import { LANDING_TRY_INIT_SCRIPT, noteLandingTryEnrolled, reapplyLandingTryArm } from "@/lib/landingTryTest";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
 
 // The homepage hero (components/HomeHero.tsx) for a non-DMV test: short
@@ -31,7 +31,6 @@ import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion
 const COPY = {
   en: {
     start: "Start practicing",
-    orFull: "Or start the full practice set",
     dashboard: "Go to Dashboard",
     mobile: "Train on mobile",
     desktop: "Test on desktop",
@@ -233,22 +232,25 @@ export function ExamLandingHeroClient({
   useEffect(() => {
     if (tryExam && !loading && !hasSession) noteLandingTryEnrolled(tryExam);
   }, [tryExam, loading, hasSession]);
+  // Hydration can strip the arm from <html>; put it back before paint.
+  useLayoutEffect(() => {
+    if (tryExam) reapplyLandingTryArm();
+  });
 
-  // The question comes first (both arms of landingTry2): the inline script
-  // picks the arm before paint and CSS hides arm a's Start link for arm b.
+  // The layout test (landingTry2, lib/landingTryTest.ts): the inline script
+  // picks the arm before paint and marks <html data-ltq>. This markup is the
+  // shipped layout (LandingIntro plus the card), which arm a keeps; for arm b
+  // globals.css hides the Start button and the chip, tightens the subtitle
+  // and pulls the card up, so one card serves both arms without a flash.
   if (tryQuestion && !returning) {
     return (
       <>
         <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_INIT_SCRIPT }} />
-        {/* Lets globals.css tighten the page's H1 on phones so the options fit above the fold. */}
+        {/* Lets globals.css shrink the page's H1 on phones in arm b. */}
         <span data-try-first hidden />
-        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">{subtitle}</p>
+        <p className="try-sub text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
+        <div className="landing-try-start flex flex-col items-center gap-3">{startPill}</div>
         <LandingTryQuestion q={tryQuestion} lang={lang} onAnswer={hold} />
-        <div className="landing-try-start mt-6 flex flex-col items-center gap-3">
-          <Link href={dashboardHref} onClick={onStart} className="text-base font-medium text-gray-700 dark:text-gray-200 underline underline-offset-4 decoration-gray-400 hover:text-gray-900 dark:hover:text-white">
-            {(copy as { orFull?: string }).orFull ?? copy.start}
-          </Link>
-        </div>
       </>
     );
   }

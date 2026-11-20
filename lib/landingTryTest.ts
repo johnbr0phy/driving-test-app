@@ -2,29 +2,27 @@
 // (components/exam/ExamLandingHeroClient.tsx). Test landingTry2, Nov 2026.
 // landingTry1 (Nov 15 to 19) shipped the card; this one tests where it sits.
 //
-// Both arms put the playable question straight under the subtitle (the H1
-// shrinks on phones so all the options fit above the fold):
-//   a  the Start button becomes a quiet text link under the card
-//   b  no Start at all and no "Pick an answer" chip: just the question; about
-//      2.5 seconds after the card is on screen (time to read the title) its
-//      "Try one now" label glows and the letters pulse. In a the letters pulse
-//      as soon as the card is on screen, as before the test.
-// Question: does taking away the Start route get more new visitors to
-// answer, without costing sign-ups?
+//   a  control: the shipped layout (Start button, then the card with its
+//      "Pick an answer" chip; the letters pulse as soon as it is on screen)
+//   b  best shot: the question straight under the subtitle (the H1 shrinks on
+//      phones so all the options fit above the fold), no Start at all, no
+//      chip; about 2.5 seconds after the card is on screen (time to read the
+//      title) its "Try one now" label glows and the letters pulse
+// Question: does b get more new visitors to answer than the shipped
+// layout, without costing sign-ups?
 //   Primary   first answer: share of enrolled browsers that answer at least
 //             one question, anywhere on the site, within 7 days.
 //   Secondary 10+ answers within 7 days; account made within 7 days.
 //   Guardrail purchases within 7 days, watched only (too few to power).
 // An arm wins when its first-answer rate is at least 3 points higher at
 // p < 0.05 and its sign-ups are not lower at p < 0.05. With no winner once
-// both arms reach 1,500 enrolled browsers, keep a (the link costs nothing
-// and lets people who want the full set skip the question).
+// both arms reach 1,500 enrolled browsers, keep a (the shipped layout).
 //
 // Who is in it: a browser that opens an exam landing with a card and has
 // never answered a question on Tigertest (no funnel answer flag and no pick
 // history). Each browser gets an arm once ("a" or "b") from the inline
 // script in the hero (LANDING_TRY_INIT_SCRIPT), which marks <html data-ltq>
-// so CSS hides a's link for b from the first frame. `?tryq=a` or `?tryq=b`
+// so CSS lays out b from the first frame. `?tryq=a` or `?tryq=b`
 // pins an arm for previews and is never counted. Visitors who already
 // started this exam see only "Go to Dashboard" and are never enrolled.
 // Test, internal and bot browsers never count. Counts go to
@@ -73,13 +71,13 @@ type Stored = {
 
 /**
  * Runs inline before the hero paints: assigns the arm and marks <html> with
- * it, so CSS hides arm a's Start link for arm b from the first frame.
+ * it, so CSS lays out arm b from the first frame.
  * Kept in step with load() below.
  */
 // A fixed string with the key and test id written in (a test checks they match
 // KEY and LANDING_TRY_TEST_ID), so nothing is interpolated into the script.
 export const LANDING_TRY_INIT_SCRIPT =
-  '(function(){try{var k="tigertest-landing-try-test",t="landingTry2",p=new URLSearchParams(location.search).get("tryq"),r=null;try{r=JSON.parse(localStorage.getItem(k)||"null")}catch(e){}if(!r||r.test!==t||(r.arm!=="a"&&r.arm!=="b"))r={test:t,arm:Math.random()<0.5?"a":"b"};if(p==="a"||p==="b"){r.arm=p;r.pinned=true}localStorage.setItem(k,JSON.stringify(r));document.documentElement.setAttribute("data-ltq",r.arm)}catch(e){}})();';
+  '(function(){try{var k="tigertest-landing-try-test",t="landingTry2",p=new URLSearchParams(location.search).get("tryq"),r=null;try{r=JSON.parse(localStorage.getItem(k)||"null")}catch(e){}if(!r||r.test!==t||(r.arm!=="a"&&r.arm!=="b"))r={test:t,arm:Math.random()<0.5?"a":"b"};if(p==="a"||p==="b"){r.arm=p;r.pinned=true}localStorage.setItem(k,JSON.stringify(r));document.__ltq=r.arm;document.documentElement.setAttribute("data-ltq",r.arm)}catch(e){}})();';
 
 function load(): Stored | null {
   try {
@@ -96,6 +94,20 @@ function save(r: Stored) {
     localStorage.setItem(KEY, JSON.stringify(r));
   } catch {
     // Without storage the browser simply drops out of the test.
+  }
+}
+
+/**
+ * Puts the arm the inline script drew back on <html>: React's hydration of
+ * the root can drop the attribute, which would show b's visitors a's layout
+ * while counting them in b. Called from a layout effect, so before paint.
+ * Uses the per-document copy, not localStorage, which every frame shares.
+ */
+export function reapplyLandingTryArm() {
+  if (typeof document === "undefined") return;
+  const drawn = (document as Document & { __ltq?: unknown }).__ltq;
+  if (isLandingTryArm(drawn) && document.documentElement.getAttribute("data-ltq") !== drawn) {
+    document.documentElement.setAttribute("data-ltq", drawn);
   }
 }
 

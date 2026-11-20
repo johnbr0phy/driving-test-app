@@ -31,16 +31,18 @@ test("a gap under 3 points keeps running, and ties at the target", () => {
 test("the inline script assigns an arm, honours a pin and marks <html>", () => {
   const store = {};
   const attrs = {};
+  const doc = { documentElement: { setAttribute: (k, v) => (attrs[k] = v) } };
   const run = (search) =>
     new Function("localStorage", "location", "document", LANDING_TRY_INIT_SCRIPT)(
       { getItem: (k) => store[k] ?? null, setItem: (k, v) => (store[k] = v) },
       { search },
-      { documentElement: { setAttribute: (k, v) => (attrs[k] = v) } },
+      doc,
     );
   run("");
   const first = JSON.parse(store["tigertest-landing-try-test"]);
   assert.ok(["a", "b"].includes(first.arm));
   assert.strictEqual(attrs["data-ltq"], first.arm);
+  assert.strictEqual(doc.__ltq, first.arm, "keeps a per-document copy for reapplyLandingTryArm");
   run("");
   assert.strictEqual(JSON.parse(store["tigertest-landing-try-test"]).arm, first.arm, "the arm sticks");
   const other = first.arm === "a" ? "b" : "a";

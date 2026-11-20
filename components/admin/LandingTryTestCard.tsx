@@ -17,8 +17,8 @@ import {
 } from "@/lib/landingTryTest";
 
 // The "Try one now" layout A/B test (lib/landingTryTest.ts): new visitors on
-// an exam landing, half with a Start link under the question (a) and half
-// with no Start at all (b), and what each half did in the next 7 days.
+// an exam landing, half with the shipped layout (a) and half with the
+// question first and no Start (b), and what each half did in the next 7 days.
 
 type Payload = {
   test: string | null;
@@ -40,9 +40,9 @@ const pFmt = (p: number) =>
 const VERDICT: Record<string, { text: string; cls: string }> = {
   too_early: { text: "Too early to read: under 100 new visitors in an arm.", cls: "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200" },
   running: { text: "Running: no decision yet.", cls: "bg-blue-50 dark:bg-blue-950 text-blue-800 dark:text-blue-200" },
-  a: { text: "A wins: the Start link layout gets more first answers and costs no sign-ups. Ship A.", cls: "bg-green-50 dark:bg-green-950 text-green-800 dark:text-green-200" },
+  a: { text: "A wins: the current layout gets more first answers and costs no sign-ups. Keep it.", cls: "bg-green-50 dark:bg-green-950 text-green-800 dark:text-green-200" },
   b: { text: "B wins: no Start gets more first answers and costs no sign-ups. Ship B.", cls: "bg-green-50 dark:bg-green-950 text-green-800 dark:text-green-200" },
-  tie: { text: "No clear winner at the target: keep A (it keeps a way to the full set).", cls: "bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-200" },
+  tie: { text: "No clear winner at the target: keep A, the current layout.", cls: "bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-200" },
 };
 
 export function LandingTryTestCard() {
@@ -73,10 +73,11 @@ export function LandingTryTestCard() {
 
   return (
     <div className={`${CARD} mb-3 sm:mb-4`}>
-      <h2 className={H2}>Try one now: keep a Start link under the question, or none?</h2>
+      <h2 className={H2}>Try one now: current layout or question first?</h2>
       <p className={SUB}>
-        New visitors who open an exam landing (never answered anything on Tigertest) are split 50/50. Both see the question straight under the
-        subtitle; A has a quiet &quot;Or start the full practice set&quot; link under it, B has no Start at all and no &quot;Pick an answer&quot; chip, and its label glows a few seconds after the page opens. Each outcome counts once per browser,
+        New visitors who open an exam landing (never answered anything on Tigertest) are split 50/50. A (control) gets the current layout: Start
+        button, then the card. B gets the question straight under the subtitle with no Start button and no &quot;Pick an answer&quot; chip, and
+        its label glows a few seconds after the page opens. Each outcome counts once per browser,
         within 7 days of landing.
         {data.since && live && ` Counting since ${data.since.slice(0, 10)}.`}
       </p>
@@ -86,8 +87,8 @@ export function LandingTryTestCard() {
           <thead>
             <tr className="text-xs text-gray-500 dark:text-gray-400">
               <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Within 7 days</th>
-              <th className={TH}>A: link</th>
-              <th className={TH}>B: no Start</th>
+              <th className={TH}>A: current</th>
+              <th className={TH}>B: question first</th>
               <th className={TH}>Difference</th>
               <th className={TH}>Chance</th>
             </tr>
@@ -138,8 +139,8 @@ export function LandingTryTestCard() {
               <thead>
                 <tr className="text-xs text-gray-500 dark:text-gray-400">
                   <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Answers within 7 days</th>
-                  <th className={TH}>A: link</th>
-                  <th className={TH}>B: no Start</th>
+                  <th className={TH}>A: current</th>
+                  <th className={TH}>B: question first</th>
                   <th className={TH}>Difference</th>
                   <th className={TH}>Chance</th>
                 </tr>
@@ -193,8 +194,8 @@ export function LandingTryTestCard() {
               <thead>
                 <tr className="text-xs text-gray-500 dark:text-gray-400">
                   <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Exam</th>
-                  <th className={TH}>A: link</th>
-                  <th className={TH}>B: no Start</th>
+                  <th className={TH}>A: current</th>
+                  <th className={TH}>B: question first</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
@@ -217,8 +218,8 @@ export function LandingTryTestCard() {
         decide on and are only watched.
       </p>
       <Variations>
-        <VariationFrame name="A: Start link" note="Question first, a quiet link to the full practice set under it." src="/cdl-practice-test?tryq=a" height={640} />
-        <VariationFrame name="B: no Start" note="Question first, no Start and no Pick an answer chip." src="/cdl-practice-test?tryq=b" height={640} />
+        <VariationFrame name="A: current (control)" note="Start button, then the card." src="/cdl-practice-test?tryq=a" height={640} />
+        <VariationFrame name="B: question first" note="No Start, no Pick an answer chip, the label glows after a few seconds." src="/cdl-practice-test?tryq=b" height={640} />
       </Variations>
     </div>
   );

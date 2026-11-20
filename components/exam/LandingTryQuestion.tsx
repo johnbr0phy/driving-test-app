@@ -113,7 +113,7 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
   };
 
   return (
-    <div ref={cardRef} className={`${inView && !answered ? "try-seen " : ""}${nudge && !answered ? "try-play " : ""}mx-auto mt-6 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6`}>
+    <div ref={cardRef} className={`${inView && !answered ? "try-seen " : ""}${nudge && !answered ? "try-play " : ""}try-card mx-auto mt-10 w-full max-w-xl text-left rounded-2xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 shadow-lg dark:shadow-black/40 dark:ring-1 dark:ring-white/5 p-5 sm:p-6`}>
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
         <p className="try-label -mx-1.5 rounded-md px-1.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand">{copy.label}</p>
         {!answered && (

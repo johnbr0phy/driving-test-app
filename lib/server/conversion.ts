@@ -62,6 +62,8 @@ export interface ConversionPayload {
     country: string | null;
     paid: string;
     usdCents: number;
+    /** Signed in when paying, or a guest checkout (new account made, or matched an existing one). */
+    account: 'signed_in' | 'guest_new' | 'guest_existing';
     status: string;
     exam: string;
     paywall: string;
@@ -633,6 +635,7 @@ export async function buildConversion(): Promise<ConversionPayload> {
       country,
       paid: amount !== null ? formatPrice(priceFromStripe(currency, amount)) : '',
       usdCents: cents,
+      account: p.guestCheckout === 'new_account' ? 'guest_new' as const : p.guestCheckout === 'existing_account' ? 'guest_existing' as const : 'signed_in' as const,
       status: typeof p.status === 'string' ? p.status : '',
       exam: exam ? examName(exam) : '',
       paywall: location ? purchaseLocationLabel(location) : '',

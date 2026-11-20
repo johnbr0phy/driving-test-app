@@ -13,7 +13,7 @@ name: Search gaps
 
 on:
   schedule:
-    - cron: "41 7 * * *" # 07:41 UTC, about 2:41am New York, PR ready by morning
+    - cron: "41 7 * * 2,4,6" # Tue, Thu, Sat 07:41 UTC, about 2:41am New York (was daily; cut API spend)
   workflow_dispatch:
     inputs:
       build:

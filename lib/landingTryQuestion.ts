@@ -2,6 +2,8 @@ import { getExamTrainingSetQuestions } from "@/lib/examTestGenerator";
 import { examBaseLanguage, examSetId, getExamByPath, localizeExam, trainingParts } from "@/lib/exams";
 import { getExamRoutes } from "@/lib/examRoutes";
 import { getSignIdForQuestion } from "@/lib/signImages";
+import { lockedTrainingParts } from "@/lib/examLocks";
+import type { Question } from "@/types";
 import { hasPositionDependentAnswers } from "@/lib/shuffleOptions";
 import { getBank } from "@/lib/v2/bank";
 import { relabelChoices } from "@/lib/v2/grading";
@@ -137,25 +139,48 @@ function hash(s: string): number {
   return Math.abs(h);
 }
 
+/** A question plus its options at or under this many characters fits a phone's first screen in the card. */
+export const TRY_FITS_CHARS = 220;
+/** Reading-comprehension items: a whole passage never fits a hero. */
+const PASSAGE_STEM = /^\s*(read the passage|passage:)/i;
+
 export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): LandingTryQuestion | null {
   const base = getExamByPath(dashboardHref);
   if (!base) return pickV2(dashboardHref);
   const language = lang ?? examBaseLanguage(base);
   const exam = localizeExam(base, language);
-  const def = exam.trainingSets.find((s) => s.setNumber === 1);
-  if (!def) return null;
-  const split = trainingParts(def).length > 1;
-  // An empty pool means the page did not import its bank: no card.
-  let pool;
-  try {
-    pool = getExamTrainingSetQuestions(exam, 1, split ? 1 : undefined, language);
-  } catch {
-    return null;
+  // The shortest suitable question, so the card fits a phone: set 1 when it
+  // has one that fits, else the shortest across the free (unlocked) sets.
+  // Passages lose to anything else. The answer is recorded in the set it
+  // came from and "Keep going" opens that set.
+  const locked = new Set(lockedTrainingParts(base).map((p) => `${p.set.setNumber}:${p.part}`));
+  type Pick = { q: Question; setNumber: number; part?: number; score: number };
+  let best = null as Pick | null;
+  const sets = [...exam.trainingSets].sort((a, b) => a.setNumber - b.setNumber);
+  for (const def of sets) {
+    const parts = trainingParts(def);
+    for (const part of parts) {
+      if (locked.has(`${def.setNumber}:${part.part}`)) continue;
+      const partNo = parts.length > 1 ? part.part : undefined;
+      let pool: Question[];
+      try {
+        pool = getExamTrainingSetQuestions(exam, def.setNumber, partNo, language);
+      } catch {
+        pool = [];
+      }
+      // An empty first set means the page did not import its bank: no card.
+      if (!pool.length && def === sets[0] && part.part === 1) return null;
+      for (const x of pool) {
+        if (getSignIdForQuestion(x.questionId) || hasPositionDependentAnswers(x) || !x.explanation || !x.optionD) continue;
+        const len = x.question.length + x.optionA.length + x.optionB.length + x.optionC.length + x.optionD.length;
+        const score = len + (PASSAGE_STEM.test(x.question) ? 100_000 : 0);
+        if (!best || score < best.score) best = { q: x, setNumber: def.setNumber, part: partNo, score };
+      }
+    }
+    if (best && best.score <= TRY_FITS_CHARS) break;
   }
-  const q = pool.find(
-    (x) => !getSignIdForQuestion(x.questionId) && !hasPositionDependentAnswers(x) && x.explanation && x.optionD,
-  );
-  if (!q) return null;
+  if (!best) return null;
+  const { q, setNumber, part } = best;
   const bank = [q.optionA, q.optionB, q.optionC, q.optionD];
   const key = Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
   const r = hash(q.questionId) % 4;
@@ -163,7 +188,7 @@ export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): 
   const routes = getExamRoutes(base.id, language);
   return {
     examId: base.id,
-    setId: examSetId(base, 1),
+    setId: examSetId(base, setNumber),
     questionId: q.questionId,
     category: q.category,
     stem: q.question,
@@ -171,6 +196,6 @@ export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): 
     correctIndex: order.indexOf(key),
     optionOrder: order.map((i) => LETTERS[i]).join(""),
     explanation: q.explanation,
-    practiceHref: routes.training(1, split ? 1 : undefined),
+    practiceHref: routes.training(setNumber, part),
   };
 }

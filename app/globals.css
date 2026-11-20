@@ -6370,6 +6370,20 @@
     --brand-gradient-to: 45 60% 95%;
   }
 
+  /* CeMAP 2 theme */
+  [data-theme="ukcemap2"] {
+    --brand: 295 30% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 295 35% 96%;
+    --brand-hover: 295 30% 14%;
+    --brand-dark: 295 30% 12%;
+    --brand-darker: 295 28% 8%;
+    --brand-muted: 295 15% 70%;
+    --brand-border: 295 15% 80%;
+    --brand-border-light: 295 14% 89%;
+    --brand-gradient-to: 45 60% 95%;
+  }
+
   /* Singapore FTT theme */
   [data-theme="sgftt"] {
     --brand: 0 70% 22%;
@@ -11868,6 +11882,18 @@
     --brand-muted: 203 15% 45%;
     --brand-dark: 203 30% 65%;
     --brand-darker: 203 28% 78%;
+  }
+
+  .dark [data-theme="ukcemap2"] {
+    --brand: 295 30% 50%;
+    --brand-hover: 295 30% 42%;
+    --brand-light: 295 35% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 295 14% 24%;
+    --brand-border: 295 15% 34%;
+    --brand-muted: 295 15% 45%;
+    --brand-dark: 295 30% 65%;
+    --brand-darker: 295 28% 78%;
   }
 
   .dark [data-theme="sgftt"] {

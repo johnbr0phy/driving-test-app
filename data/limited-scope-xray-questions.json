@@ -1278,11 +1278,11 @@
     "state": "ALL",
     "questionId": "LMRT-EQP-012",
     "category": "lmrtEquip",
-    "question": "Under 21 CFR 1020.31, positive beam limitation may differ from the receptor size by at most:",
-    "optionA": "2% of SID per side",
-    "optionB": "5% of SID per side",
-    "optionC": "10% of SID per side",
-    "optionD": "3% of SID per side",
+    "question": "Under 21 CFR 1020.31, positive beam limitation may differ from the receptor in length or width by at most:",
+    "optionA": "2% of SID",
+    "optionB": "5% of SID",
+    "optionC": "10% of SID",
+    "optionD": "3% of SID",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Each field dimension may not exceed the receptor dimension by more than 3% of SID, and the two together by more than 4%. The 2% figure is for light field alignment."
@@ -2385,13 +2385,13 @@
     "questionId": "LMRT-SPN-007",
     "category": "lmrtSpine",
     "question": "For an AP thoracic spine, the central ray is centered:",
-    "optionA": "At the jugular notch",
-    "optionB": "At the tip of the xiphoid",
-    "optionC": "Midway, notch to xiphoid",
+    "optionA": "At the level of the jugular notch",
+    "optionB": "At the tip of the xiphoid process",
+    "optionC": "T7, 3 to 4 inches below the notch",
     "optionD": "At the top of the iliac crest",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Centering halfway between the jugular notch and the xiphoid places the beam near T7 in the middle of the thoracic spine."
+    "explanation": "T7, about 3 to 4 inches below the jugular notch, is the middle of the thoracic spine. The jugular notch is at T2-T3 and the xiphoid tip at about T10."
   },
   {
     "type": "LMRT",
@@ -2764,12 +2764,12 @@
     "category": "lmrtPodiatric",
     "question": "An AP lateral oblique ankle, with the leg turned out 45 degrees, best shows the:",
     "optionA": "Distal tibiofibular joint",
-    "optionB": "Medial side of the mortise",
+    "optionB": "Medial malleolus and subtalar area",
     "optionC": "Lateral malleolus in profile",
     "optionD": "Base of the fifth metatarsal",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "External rotation opens the medial ankle joint. Internal rotation shows the tibiofibular joint and lateral malleolus."
+    "explanation": "External rotation shows the medial malleolus and the subtalar area. The medial (internal rotation) oblique shows the distal tibiofibular joint and lateral malleolus."
   },
   {
     "type": "LMRT",

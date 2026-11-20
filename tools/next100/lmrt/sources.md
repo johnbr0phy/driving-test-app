@@ -56,7 +56,7 @@ practice test.
   https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html
 - NCRP Reports 102, 116 and 160 are named in the ARRT outline but are paid documents that could not be read.
   The bank uses only their long-settled figures that agree with the CFR text above or with the ARRT radiography
-  bank's sources: occupational effective dose 50 mSv per year, public 1 mSv per year, embryo-fetus 0.5 mSv per
+  bank's sources: occupational effective dose 50 mSv per year, public 1 mSv per year for continuous or frequent exposure and 5 mSv for infrequent exposure, embryo-fetus 0.5 mSv per
   month after declaration, 2.5 mm Al total filtration above 70 kVp, 0.5 mm Pb aprons.
 - Positioning, anatomy and evaluation criteria follow the projections and terminology in Attachments A and B
   of the ARRT outline and standard radiographic positioning practice (central ray angles, landmarks,
@@ -70,3 +70,13 @@ practice test.
 - Fees, the exam format itself, retake rules: never asked.
 - Bone densitometry: a separate ARRT exam, not a limited scope module, so not modelled.
 - No item repeats a fact and answer from data/arrt-questions.json (checked item by item).
+
+## Review pass (2026-11-19)
+
+A second reviewer answered all 200 items blind (0 disagreements with the key) and recomputed every
+calculation (all correct). Four findings confirmed and fixed: LMRT-PRO-001 (the NCRP 116 infrequent public
+limit of 5 mSv was missing from these notes), LMRT-EQP-012 (21 CFR 1020.31 says 3% of SID in length or width,
+not "per side"), LMRT-POD-014 (the external-rotation ankle oblique answer reworded to "medial malleolus and
+subtalar area") and LMRT-SPN-007 (AP thoracic spine centered at T7, 3 to 4 inches below the jugular notch).
+The reviewer also noted the stored key letters rotate A to D; the app shuffles options on every showing, as
+for every v1 bank. Options-only pass: 0 surface-cue hits (79 knowledge, 121 guess), PASS.

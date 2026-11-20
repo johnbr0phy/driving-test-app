@@ -239,20 +239,20 @@
     "test": 1,
     "module": 1,
     "domain": "pspoBacklog",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Ordering",
-    "stem": "An item is low in direct value but tests a risky assumption the whole product rests on. Where might it go?",
+    "skill": "Product Backlog management",
+    "stem": "In Scrum.org's Professional Scrum Competencies, Product Backlog Management is a focus area of which competency?",
     "options": [
-      "At the bottom until its value is clearer",
-      "Below the high-value items, as value leads",
-      "Near the top, to reduce risk early",
-      "In a separate spike backlog for later"
+      "Understanding and Applying the Scrum Framework",
+      "Developing People and Teams",
+      "Managing Products with Agility",
+      "Developing and Delivering Products Professionally"
     ],
     "correct": [
       2
     ],
-    "explanation": "Testing a key assumption early can protect the value of everything built on it. Reducing risk early is a valid reason to order an item higher."
+    "explanation": "Scrum.org lists Product Backlog Management under Managing Products with Agility, with Forecasting & Release Planning, Product Vision, Product Value, Business Strategy and Stakeholders & Customers."
   },
   {
     "id": "PSPO-T1-013",
@@ -348,9 +348,9 @@
     "stem": "How does business strategy relate to product visions?",
     "options": [
       "Product visions add up to the strategy",
-      "Each vision is set before the strategy",
+      "Strategy and vision are owned separately",
       "Strategy informs each product's vision",
-      "Strategy replaces the need for a vision"
+      "The vision is set by the Scrum Team, apart from strategy"
     ],
     "correct": [
       2
@@ -842,20 +842,20 @@
     "test": 1,
     "module": 1,
     "domain": "pspoBacklog",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "skill": "Ordering",
-    "stem": "Two features each need a shared login service first. How should the Product Owner order them?",
+    "skill": "Product Backlog management",
+    "stem": "Which focus area does Scrum.org list beside Product Backlog Management in the same competency?",
     "options": [
-      "Let the Developers order them in planning",
-      "Run all three in parallel next Sprint",
-      "Put the more valuable feature first",
-      "Put the login service ahead of both"
+      "Scrum Values",
+      "Empiricism",
+      "Self-Managing Teams",
+      "Business Strategy"
     ],
     "correct": [
       3
     ],
-    "explanation": "Dependencies affect order. Placing the enabling item first lets the dependent features be Done when the team reaches them."
+    "explanation": "Managing Products with Agility covers Forecasting & Release Planning, Product Vision, Product Value, Product Backlog Management, Business Strategy and Stakeholders & Customers. Self-Managing Teams, Empiricism and Scrum Values sit in other competencies."
   },
   {
     "id": "PSPO-T1-042",
@@ -2617,20 +2617,20 @@
     "test": 2,
     "module": 1,
     "domain": "pspoRelease",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Forecasting",
-    "stem": "Halfway to a release, new scope keeps being added. What does a burn-up chart help the Product Owner show?",
+    "skill": "Time-to-Market",
+    "stem": "Time to pivot is an example measure of which Key Value Area?",
     "options": [
-      "Scope growth is pushing the date out",
-      "The Sprint Goal is too ambitious",
-      "Developers are slowing down over time",
-      "The forecast was wrong from the start"
+      "Time-to-Market",
+      "Ability to Innovate",
+      "Unrealized Value",
+      "Current Value"
     ],
     "correct": [
       0
     ],
-    "explanation": "A burn-up shows completed work and total scope separately, so stakeholders can see that the finish line moved because scope grew, not because progress stopped."
+    "explanation": "Time to pivot, like time-to-learn and release frequency, shows how fast the organization can change course and learn, so the EBM Guide lists it under Time-to-Market."
   },
   {
     "id": "PSPO-T2-047",
@@ -4113,12 +4113,12 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Maximizing value",
-    "stem": "A Product Owner can fund one of two ideas. Neither has evidence behind it. What is the best first move?",
+    "stem": "A Product Owner can fund one of two new ideas. Both sound promising. What is the best first move?",
     "options": [
-      "Ask key customers which they prefer",
-      "Run a small experiment to test each idea",
       "Pick the one with the stronger business case",
-      "Order both by value and start with one"
+      "Run a small experiment to test each idea",
+      "Ask key customers which they prefer",
+      "Fund the idea senior stakeholders back, then measure uptake"
     ],
     "correct": [
       1

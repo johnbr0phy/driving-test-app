@@ -228,10 +228,10 @@ ITEMS = [
        "What stops us delivering new value?"],
       "Current Value asks how happy users, customers, employees and investors are today. The others belong to Unrealized Value, Time-to-Market and Ability to Innovate."),
     S(0, 3, "Maximizing value",
-      "A Product Owner can fund one of two ideas. Neither has evidence behind it. What is the best first move?",
+      "A Product Owner can fund one of two new ideas. Both sound promising. What is the best first move?",
       ["Run a small experiment to test each idea",
        "Pick the one with the stronger business case",
        "Ask key customers which they prefer",
-       "Order both by value and start with one"],
+       "Fund the idea senior stakeholders back, then measure uptake"],
       "Without evidence both ideas are assumptions. A small experiment tests the hypothesis cheaply before larger investment, as EBM recommends."),
 ]

@@ -91,7 +91,7 @@ ITEMS = [
       ["Raise it with the Developers and weigh it",
        "Leave it for the Developers to fit in later",
        "Set aside a fixed share of each Sprint",
-       "Plan a clean-up Sprint after the release"],
+       "Make removing it the next Sprint Goal"],
       "Technical debt reduces the ability to deliver value, so the Product Owner makes it transparent and weighs the work against other items. How the code is fixed stays with the Developers."),
     # ---------- Practice Test 2 ----------
     S(2, 1, "Sprint Review",
@@ -188,7 +188,7 @@ ITEMS = [
     # ---------- Drill only ----------
     S(0, 2, "Sprint Retrospective",
       "The Product Owner often misses the Sprint Retrospective. Why does this matter?",
-      ["Issues involving them go unaddressed",
+      ["Team improvements miss their input",
        "The Increment is not inspected",
        "The Product Backlog is not refined",
        "The Sprint Goal is not reviewed"],

@@ -1626,7 +1626,7 @@
       "Raise it with the Developers and weigh it",
       "Set aside a fixed share of each Sprint",
       "Leave it for the Developers to fit in later",
-      "Plan a clean-up Sprint after the release"
+      "Make removing it the next Sprint Goal"
     ],
     "correct": [
       0
@@ -1771,7 +1771,7 @@
       "Ask the sponsor to speak for them",
       "Invite them to the Daily Scrum",
       "Find ways to learn their needs",
-      "Infer their needs from the team's experience"
+      "Represent them using existing user data"
     ],
     "correct": [
       2
@@ -1896,7 +1896,7 @@
     "options": [
       "It ignores where value is highest",
       "It reduces Developer focus",
-      "It makes the Sprint Goal hard to set",
+      "It breaks the Sprint's timebox rules",
       "It leaves no capacity for technical debt"
     ],
     "correct": [
@@ -2943,7 +2943,7 @@
     "skill": "Ordering",
     "stem": "Two items have similar value; one is much riskier. When is it wise to do the riskier one first?",
     "options": [
-      "When the Developers have the skills free",
+      "When it needs the least refinement",
       "When early failure would be cheaper to learn",
       "When the Sprint is long enough to absorb all of it",
       "When the riskier item has a firm deadline"
@@ -3115,7 +3115,7 @@
     "stem": "What does a well-ordered Product Backlog give the Developers?",
     "options": [
       "Clear view of what matters most next",
-      "Plan for how to build each item",
+      "Exact items for the next Sprint",
       "Sprint Goal for the coming Sprint",
       "Fixed scope for the next release"
     ],
@@ -3278,17 +3278,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Stakeholders",
-    "stem": "Which group is usually a stakeholder of a banking app?",
+    "stem": "Which statement about stakeholders fits Scrum?",
     "options": [
-      "The app store's own engineers",
-      "A rival bank's support staff",
-      "Developers on an unrelated product",
-      "Customer support staff"
+      "Only the Product Owner may speak with them",
+      "Scrum Master gathers their requirements",
+      "They attend the Daily Scrum to stay informed",
+      "Whole Scrum Team collaborates with them"
     ],
     "correct": [
       3
     ],
-    "explanation": "Support staff deal with the product's users every day and have a direct interest in its outcome, so they are stakeholders."
+    "explanation": "The Scrum Team is responsible for stakeholder collaboration, so Developers and the Scrum Master work with stakeholders too. The Daily Scrum is for the Developers, and gathering requirements is not the Scrum Master's job."
   },
   {
     "id": "PSPO-T2-078",
@@ -3426,7 +3426,7 @@
     "stem": "The Product Owner often misses the Sprint Retrospective. Why does this matter?",
     "options": [
       "The Increment is not inspected",
-      "Issues involving them go unaddressed",
+      "Team improvements miss their input",
       "The Sprint Goal is not reviewed",
       "The Product Backlog is not refined"
     ],
@@ -3728,7 +3728,7 @@
     "skill": "Ordering",
     "stem": "A low-value item is cheap and blocks nothing. Should it go to the top because it is quick?",
     "options": [
-      "Yes; quick wins build early momentum",
+      "No; cheap items go to the bottom",
       "Yes, if the Developers have spare capacity",
       "Not just for being quick",
       "Yes, if it clears clutter from the backlog"

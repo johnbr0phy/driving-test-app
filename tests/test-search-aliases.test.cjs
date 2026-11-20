@@ -510,6 +510,14 @@ const CASES = [
   ["bxmo", "US", "lmrt"],
   ["limited x-ray machine operator", "US", "lmrt"],
   ["arrt limited scope", "US", "lmrt"],
+  ["syo-701", "US", "secplus"],
+  ["agniveer airforce", "IN", "agniveervayu"],
+  ["airforce", "IN", "agniveervayu"],
+  ["airforce", "US", "afoqt"],
+  ["airforce", "PK", "pkpaf"],
+  ["नवोदय", "IN", "jnvst"],
+  ["नवोदय पेपर", "IN", "jnvst"],
+  ["नवोदय परीक्षा", "IN", "jnvst"],
 ];
 
 for (const [q, region, id] of CASES) {

@@ -8,7 +8,7 @@ import type { IndexNowRunRow, NewTestsPayload } from "@/lib/server/newTestsAdmin
 import type { BingSent } from "@/lib/newTests";
 
 // The New tests tab on /admin, from /api/admin/new-tests
-// (lib/server/newTestsAdmin.ts): the 200 most recently launched tests, each
+// (lib/server/newTestsAdmin.ts): every launched test, newest first, each
 // with what it has done since launch, and when its pages were sent to Bing
 // through IndexNow (lib/indexNowSent.mjs).
 
@@ -120,7 +120,7 @@ export function NewTestsTab() {
   return (
     <div className="space-y-4 sm:space-y-6">
       <TabHeader
-        subtitle={<>The {rows.length} most recently launched tests, counted since each launch · updated {fmtUpdated(data.generatedAt)}</>}
+        subtitle={<>All {rows.length} launched tests, newest first, counted since each launch · updated {fmtUpdated(data.generatedAt)}</>}
         onRefresh={() => reload(true)}
         refreshing={refreshing}
         updating={updating}

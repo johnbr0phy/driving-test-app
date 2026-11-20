@@ -147,6 +147,7 @@ const TEACHER_LED = new Set([
   "nailtech",
   "sfpd1", "sfappbuilder",
   "excpt",
+  "cct",
   "contractorlaw",
   "natecore",
   "r410a",

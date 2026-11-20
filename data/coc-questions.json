@@ -789,13 +789,13 @@
     "questionId": "COC-PAY-021",
     "category": "cocPayment",
     "question": "Under the 3-day window, outpatient nondiagnostic services before an admission go on the inpatient claim:",
-    "optionA": "Only if related to the admission",
-    "optionB": "Always, whether related or not",
-    "optionC": "Never under any rule",
+    "optionA": "Unless attested as unrelated",
+    "optionB": "Always, related or not",
+    "optionC": "Never, related or not",
     "optionD": "Only on the admission day",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "All outpatient diagnostic services in the window are bundled, but nondiagnostic services are bundled only when they relate to the admission."
+    "explanation": "Nondiagnostic services in the window are deemed related and go on the inpatient claim, unless the hospital attests they are unrelated with condition code 51 on a separate outpatient claim."
   },
   {
     "type": "COC",
@@ -2371,10 +2371,10 @@
     "questionId": "COC-SUR-034",
     "category": "cocSurgery",
     "question": "When one code describes all the procedures performed, NCCI requires:",
-    "optionA": "Each component code",
+    "optionA": "The most specific component code",
     "optionB": "The most comprehensive code",
-    "optionC": "Components with modifier 59",
-    "optionD": "The highest-paying component",
+    "optionC": "The highest-paying component code",
+    "optionD": "Every component with 59",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Procedures are reported with the most comprehensive code describing the services; reporting the components separately is unbundling."
@@ -2414,9 +2414,9 @@
     "category": "cocSurgery",
     "question": "For an MUE with adjudication indicator 1, units on separate lines with a proper modifier are:",
     "optionA": "Adjudicated line by line",
-    "optionB": "Denied as a group",
-    "optionC": "Never payable",
-    "optionD": "Summed for the day",
+    "optionB": "Summed across lines for the day",
+    "optionC": "Denied together as one group",
+    "optionD": "Paid only on the first line",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "An MAI of 1 is a claim line edit, so each line with an appropriate modifier is compared to the MUE value on its own."
@@ -2615,7 +2615,7 @@
     "optionD": "Not billed",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Nondiagnostic outpatient services in the 3-day window are bundled only when related to the admission; an unrelated repair is billed separately."
+    "explanation": "Nondiagnostic services in the window are deemed related, but the hospital may attest that the repair is unrelated with condition code 51 and bill it on its own outpatient claim."
   },
   {
     "type": "COC",

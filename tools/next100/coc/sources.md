@@ -36,7 +36,7 @@ surgery and modifiers 11, cases 5. Pools are four times each count (200).
   and chapter guidelines.
 - Medicare Claims Processing Manual, Chapter 4 (Part B Hospital, OPPS), Rev. 13799:
   https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/clm104c04.pdf
-  (fetched 2026-11-19). Status indicators (10.1.1), APC groups and the 2 times rule (10.2),
+  (fetched 2026-11-19). Payment window and condition code 51 (10.12), status indicators (10.1.1), APC groups and the 2 times rule (10.2),
   composite and comprehensive APCs (10.2.1, 10.2.3), packaging N, Q1, Q2, Q3, Q4, J1, J2 (10.4),
   discounting (10.5), modifiers 50, LT/RT, 73, 74, 52, 53, 76, 77, FC/value code FD, PO, PN, CT,
   FX, FY, ER, CG and modifier order (20.6), C-codes (20.7), clinic and ED visits, Type A and Type B

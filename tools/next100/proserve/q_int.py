@@ -55,7 +55,7 @@ Q = [
  "Not complete the sale", ["Sell if a friend drives", "Sell only low-alcohol beer", "Sell after a short wait"],
  "The retail handbook says licensees and staff are prohibited from selling liquor to anyone who appears intoxicated by liquor or a drug."),
 ("At a liquor tasting, a guest seems intoxicated. The server should:",
- "Offer no more samples", ["Offer no more until they eat", "Offer half-size samples only", "Offer one final sample"],
+ "Offer no more samples", ["Pause samples for 30 minutes", "Pause until a manager checks", "Let them finish the last one"],
  "AGLC's tasting policy says no one may be served samples to the point of intoxication, so service stops."),
 ("A guest asked by staff to leave refuses to go. Under the Act the guest:",
  "Must leave when asked", ["May stay to finish a drink", "May stay if they stop drinking", "May stay until police arrive"],

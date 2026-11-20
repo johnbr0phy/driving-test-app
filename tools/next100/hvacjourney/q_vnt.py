@@ -67,7 +67,7 @@ Q = [
 ("A clearance-reduction shield must be at least how far from the appliance it protects against?",
  "1 inch", ["2 inches", "3 inches", "1/2 inch"],
  "IMC 308.3 says protective assemblies shall not be placed less than 1 inch from the appliance, whatever reduced clearance the table allows."),
-("A heater needs 36 in to a wall. With No. 24 sheet steel spaced 1 in off the wall, what clearance applies?",
+("A heater needs 36 in to a side wall. With No. 24 sheet steel spaced 1 in off the wall, what clearance applies?",
  "12 inches", ["18 inches", "9 inches", "6 inches"],
  "IMC Table 308.4.2 cuts a 36-inch clearance to vertical combustible assemblies to 12 inches with No. 24 sheet steel spaced 1 inch off. Eighteen inches is the figure above the heat source."),
 ("Clearance reduction for a solid fuel-burning appliance may never go below what?",

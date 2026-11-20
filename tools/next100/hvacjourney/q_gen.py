@@ -16,7 +16,7 @@ Q = [
 ("Which garage water heater needs no raised ignition source?",
  "One listed as FVIR", ["One with sealed combustion", "One with electronic ignition", "One with a power vent"],
  "The exception to IMC 304.3 covers only appliances listed as flammable vapor ignition resistant. Power venting or electronic ignition does not remove the 18-inch rule."),
-("A laundry room opens straight into a private garage. How is it treated under the ignition-source rule?",
+("A storage room, not living space, opens straight into a private garage. How is it treated under the ignition-source rule?",
  "As part of the garage", ["As part of the living space", "As a separate fire area", "As an unconditioned attic"],
  "IMC 304.3 says rooms that are not living space and that communicate directly with a private garage through openings are considered part of the garage."),
 ("Not protected from vehicle impact, an appliance in a private garage must be at least how high above the floor?",

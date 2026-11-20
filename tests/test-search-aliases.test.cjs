@@ -9,7 +9,8 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 const CASES = [
   ["coc", "US", "coc"],
   ["certified outpatient coder", "US", "coc"],
-  ["cpc-h", "US", "coc"],
+  ["aapc coc", "US", "coc"],
+  ["outpatient coding certification", "US", "coc"],
   ["jncia", "US", "jncia"],
   ["jn0-105", "IN", "jncia"],
   ["junos associate", "UK", "jncia"],

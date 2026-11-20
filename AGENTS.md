@@ -4,7 +4,9 @@ Instructions for coding agents other than Claude Code (Codex, ChatGPT and others
 repository. They are the same rules Claude Code follows.
 
 1. **Read `CLAUDE.md` first.** It is the project guide: architecture, routing, the exam registry,
-   the house style and the checks every PR must pass. Everything in it applies to you.
+   the house style and the checks every PR must pass. Everything in it applies to you. It points to
+   `docs/claude/<topic>.md` for each part of the system and `docs/exams/<examId>.md` for each exam;
+   read the ones your task touches.
 2. **Building or changing a practice test or question bank:** follow
    `.claude/skills/exam-bank/SKILL.md` step by step, and its wiring checklist in
    `.claude/skills/exam-bank/references/wiring.md`. A run that builds several tests also follows

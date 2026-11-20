@@ -1,0 +1,1 @@
+- VidyaGyan Class 6 (`vidyagyan`): free v2 English-language Class4–5 skills practice,160 originals, two40-question/60-minute skills tests, four drills. Chosen timing/weights, not a preliminary/main simulation. Hindi excluded. Sources/build: `tools/build20261117/vidyagyan/`. Borrows the JNVST/times-tables tiger set.

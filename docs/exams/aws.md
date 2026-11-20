@@ -1,0 +1,1 @@
+- **AWS CCP** (`/aws-cloud-practitioner`, landing `/aws-cloud-practitioner-practice-test`): CLF-C02, two 65-item tests in 90 minutes, Test 2 held out, 4 drills (`cloudConcepts`, `securityCompliance`, `technologyServices`, `billingPricing`; 16/19/22/8 per test). Multiple choice and "Choose two/three" multiple response, the only formats on the real exam. Service facts as of 2026.

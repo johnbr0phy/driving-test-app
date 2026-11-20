@@ -1,0 +1,1 @@
+- **CET** (NHA EKG technician, `/ekg/*`, landing `/ekg-technician-practice-test`): `data/cet-questions.json` (200 questions: acquisition 88, safety and patient care 64, analysis 48), test IDs 1501-1504, sets 1501-1503 (by topic), state `CET`, 70% pass. 22 acquisition, 16 safety, 12 analysis per test (NHA CET test plan). No images: rhythm items describe the strip in words.

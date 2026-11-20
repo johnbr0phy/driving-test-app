@@ -1,0 +1,1 @@
+- NCCCO Mobile Crane Core: `/nccco`, landing `/nccco-mobile-crane-core-practice-test`, `data/nccco-questions.json`; pools Site44/Operations56/Technical48/Charts52, tests/training33701–33704, stateNCCCO, study target70% (not official score), 11/14/12/13 per50. CCO MCO handbook rev01/25, US Aviation/radio/trade group. Core knowledge only; specialties/practical excluded.

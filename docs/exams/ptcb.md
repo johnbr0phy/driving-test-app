@@ -1,0 +1,1 @@
+- **PTCB** (pharmacy technician PTCE, `/ptcb/*`, landing `/ptcb-practice-test`): `data/ptcb-questions.json` (200 questions: medications 72, patient safety 48, order entry 44, federal 36), test IDs 1201-1204, sets 1201-1204 (by topic), state `PTCB`, 70% pass. 18 medications, 12 patient safety, 11 order entry, 9 federal per test (PTCE outline effective Jan 2026). Federal law only.

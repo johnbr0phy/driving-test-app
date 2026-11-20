@@ -1,0 +1,1 @@
+- **Hunter Safety** (hunter education, `/hunter-safety/*`, landing `/hunter-safety-practice-test`): `data/hunter-questions.json` (200 questions: firearm safety 60, firearms/ammo 32, techniques 32, wildlife 32, ethics/laws 24, survival 20), test IDs 2701-2704, sets 2701-2705 (by topic), state `HUNTER`, 80% pass. 15/8/8/8/6/5 per test. IHEA standards only; state rules are "varies".

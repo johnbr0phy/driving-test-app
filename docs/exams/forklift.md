@@ -1,0 +1,1 @@
+- **Forklift** (operator written evaluation, `/forklift/*`, landing `/forklift-certification-practice-test`): `data/forklift-questions.json` (200 questions: basics 40, stability 48, inspection 32, operation 48, loads 32), test IDs 3301-3304, sets 3301-3305 (by topic), state `FORKLIFT`, 75% pass. 10/12/8/12/8 per test. OSHA 1910.178 and ANSI B56.1 only.

@@ -12764,12 +12764,13 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
 /* The "Try one now" layout test (lib/landingTryTest.ts): the question comes
    first, so on phones the landing's H1 (written in each page, so styled from
    here) and the top padding shrink and all the options sit above the fold.
-   Arm b has no Start link under the card. */
+   Arm b has no Start link under the card and no "Pick an answer" chip. */
 @media (max-width: 639px) {
   div:has(> [data-try-first]) { padding-top: 1.75rem; }
   div:has(> [data-try-first]) > h1 { font-size: 1.75rem; line-height: 2.15rem; margin-bottom: 0.75rem; }
 }
-html[data-ltq="b"] .landing-try-start {
+html[data-ltq="b"] .landing-try-start,
+html[data-ltq="b"] .try-hint {
   display: none;
 }
 

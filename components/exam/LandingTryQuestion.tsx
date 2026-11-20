@@ -115,7 +115,7 @@ export function LandingTryQuestion({ q, lang, onAnswer }: { q: TryQuestion; lang
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
         <p className="try-label -mx-1.5 rounded-md px-1.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-brand">{copy.label}</p>
         {!answered && (
-          <p className="inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-700 px-2.5 py-1 text-xs font-semibold text-gray-700 dark:text-gray-100">
+          <p className="try-hint inline-flex items-center gap-1 rounded-full bg-gray-100 dark:bg-gray-700 px-2.5 py-1 text-xs font-semibold text-gray-700 dark:text-gray-100">
             <MousePointerClick className="h-3.5 w-3.5" aria-hidden />
             {copy.hint}
           </p>

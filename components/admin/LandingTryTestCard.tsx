@@ -76,7 +76,7 @@ export function LandingTryTestCard() {
       <h2 className={H2}>Try one now: keep a Start link under the question, or none?</h2>
       <p className={SUB}>
         New visitors who open an exam landing (never answered anything on Tigertest) are split 50/50. Both see the question straight under the
-        subtitle; A has a quiet &quot;Or start the full practice set&quot; link under it, B has no Start at all. Each outcome counts once per browser,
+        subtitle; A has a quiet &quot;Or start the full practice set&quot; link under it, B has no Start at all and no &quot;Pick an answer&quot; chip. Each outcome counts once per browser,
         within 7 days of landing.
         {data.since && live && ` Counting since ${data.since.slice(0, 10)}.`}
       </p>
@@ -218,7 +218,7 @@ export function LandingTryTestCard() {
       </p>
       <Variations>
         <VariationFrame name="A: Start link" note="Question first, a quiet link to the full practice set under it." src="/cdl-practice-test?tryq=a" height={640} />
-        <VariationFrame name="B: no Start" note="Question first, nothing else to tap." src="/cdl-practice-test?tryq=b" height={640} />
+        <VariationFrame name="B: no Start" note="Question first, no Start and no Pick an answer chip." src="/cdl-practice-test?tryq=b" height={640} />
       </Variations>
     </div>
   );

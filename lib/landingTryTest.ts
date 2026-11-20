@@ -5,7 +5,7 @@
 // Both arms put the playable question straight under the subtitle (the H1
 // shrinks on phones so all the options fit above the fold):
 //   a  the Start button becomes a quiet text link under the card
-//   b  no Start at all: the question is the only way in
+//   b  no Start at all and no "Pick an answer" chip: just the question
 // Question: does taking away the Start route get more new visitors to
 // answer, without costing sign-ups?
 //   Primary   first answer: share of enrolled browsers that answer at least

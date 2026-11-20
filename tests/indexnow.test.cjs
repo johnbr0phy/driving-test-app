@@ -75,3 +75,27 @@ test('both senders record their runs for /admin', () => {
   assert.match(wf, /lib\/indexNowSent\.mjs/, 'the sparse checkout must include the shared record module');
   assert.match(wf, /FIREBASE_SERVICE_ACCOUNT_KEY/);
 });
+
+// Deploys land many times a day; each change goes to Bing once, not on every
+// deploy (lib/indexNowSent.mjs unsentUrls, used by both senders).
+test('unsentUrls drops pages already sent since their lastmod', async () => {
+  const { unsentUrls, sentKey } = await import('../lib/indexNowSent.mjs');
+  const sent = {
+    [sentKey('/a')]: { first: '2026-11-19T01:00:00Z', last: '2026-11-19T09:00:00Z', n: 5 },
+    [sentKey('/b')]: { first: '2026-11-18T01:00:00Z', last: '2026-11-18T09:00:00Z', n: 1 },
+  };
+  const S = 'https://www.tigertest.io';
+  const entries = [
+    { url: `${S}/a`, lastmod: '2026-11-19' }, // sent on its lastmod day: skip
+    { url: `${S}/b`, lastmod: '2026-11-19' }, // changed after the last send: send
+    { url: `${S}/c`, lastmod: '2026-11-18' }, // never sent: send
+    { url: `${S}/c`, lastmod: '2026-11-18' }, // duplicate
+  ];
+  assert.deepEqual(unsentUrls(entries, sent), [`${S}/b`, `${S}/c`]);
+  assert.equal(unsentUrls(entries, {}).length, 3);
+});
+
+test('both senders skip pages already sent', () => {
+  assert.match(fs.readFileSync('scripts/indexnow-recent.mjs', 'utf8'), /unsentUrls\(/);
+  assert.match(fs.readFileSync('app/api/indexnow/ping/route.ts', 'utf8'), /unsentUrls\(/);
+});

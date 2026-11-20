@@ -391,7 +391,7 @@
     "explanation": "The outline gives transparent communication as the example of establishing trust. Targets, roles and events have other purposes.",
     "options": [
       "Regular team-building events",
-      "Transparent, honest communication",
+      "Open information sharing",
       "Clear role definitions",
       "Shared team performance targets"
     ],
@@ -472,13 +472,13 @@
     "skill": "Mindset 2: Embrace agile mindset",
     "difficulty": 2,
     "format": "single",
-    "stem": "A suitability assessment rates one area of a project a poor fit for agile. What is a sensible response?",
+    "stem": "A suitability check shows one deliverable has fixed, regulated requirements. What is a sensible response?",
     "explanation": "Suitability tools show where agile fits and where it may not. Fixed, regulated requirements are a poor fit for iteration, so a hybrid plans that part predictively and runs the rest adaptively.",
     "options": [
-      "Deliver it in two-week sprints",
+      "Deliver it in short sprints anyway",
       "Plan that part predictively",
-      "Write it as user stories first",
-      "Coach the regulator in agile"
+      "Add a spike to explore it",
+      "Use Kanban for that part"
     ],
     "correct": [
       1
@@ -685,10 +685,10 @@
     "stem": "When should stakeholders first be involved in an agile initiative?",
     "explanation": "Including stakeholders from day one shortens feedback loops, so their input shapes the work before any sprint starts.",
     "options": [
-      "At the first sprint review",
-      "At the first backlog refinement",
-      "At the first sprint planning",
-      "From day one"
+      "From the first sprint review",
+      "From the first backlog refinement",
+      "From the first sprint planning",
+      "From the first day"
     ],
     "correct": [
       3
@@ -809,12 +809,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A new team will build a system like one another team built last year. What should it do first?",
-    "explanation": "Leveraging organizational knowledge assets starts with the people and lessons from similar initiatives. Reusing artifacts without that context copies their mistakes too.",
+    "explanation": "Leveraging organizational knowledge assets means drawing on similar initiatives, their people and processes. The people who did the work hold far more than any report, code or backlog.",
     "options": [
-      "Learn from that team's experience",
-      "Reuse their test suite as a start",
-      "Reuse their team charter",
-      "Reuse their backlog as a start"
+      "Talk with the team that built it",
+      "Study that system's code",
+      "Review that team's backlog",
+      "Read that project's final report"
     ],
     "correct": [
       0
@@ -1103,12 +1103,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What is the best way to define what value will look like for a feature?",
-    "explanation": "The outline says to define what value will look like, such as success criteria. Velocity, features and dates describe output and timing, not value.",
+    "explanation": "The outline says to define what value will look like, such as success criteria. Acceptance criteria and the definition of done say when work is complete, not whether it delivered value.",
     "options": [
-      "Agree the feature list",
-      "Agree a delivery date",
+      "Agree the definition of done",
+      "Agree the feature scope",
       "Agree success criteria",
-      "Agree a target velocity"
+      "Agree acceptance criteria"
     ],
     "correct": [
       2
@@ -1236,12 +1236,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Stakeholders keep pulling developers into side requests. What helps protect flow?",
-    "explanation": "The outline says to shield the team from interruptions, for example by creating team interfaces such as one contact for incoming requests. Raising WIP or swarming on every request lets the interruptions in.",
+    "explanation": "The outline says to shield the team from interruptions, for example by creating team interfaces such as one contact for incoming requests. A buffer or rotation absorbs interruptions instead of shielding the team from them.",
     "options": [
       "Shorten the iteration length",
-      "Swarm on each request as it comes",
+      "Add a support rotation in the team",
       "Send requests through one contact",
-      "Raise the WIP limit to fit them"
+      "Keep a capacity buffer each sprint"
     ],
     "correct": [
       2
@@ -1320,16 +1320,16 @@
     "skill": "Delivery 3: Manage impediments and risk",
     "difficulty": 1,
     "format": "single",
-    "stem": "When should a team identify risks and impediments?",
-    "explanation": "Proactive identification means looking for risks and impediments all the way through delivery, not at set events.",
+    "stem": "Which practice keeps risk identification going throughout delivery?",
+    "explanation": "Risks and impediments are identified proactively and monitored all the way through delivery. A risk burn down reviewed every iteration does that; the others look at risk once or rarely.",
     "options": [
-      "At each release planning",
-      "At each sprint retrospective",
-      "Continuously",
-      "At each quarterly review"
+      "Risk audit before each release",
+      "Risk burn down reviewed each iteration",
+      "Risk register signed at kickoff",
+      "Risk workshop at project start"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -1369,12 +1369,12 @@
     "explanation": "Mentoring is ongoing guidance from someone with more experience, often about career and craft. Training teaches a defined skill.",
     "options": [
       "Supervision",
-      "Mentoring",
       "Coaching",
+      "Mentoring",
       "Training"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1558,12 +1558,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A blocker has sat on the board for a week with no owner. What should happen?",
-    "explanation": "Problems should be resolved in a timely manner. An unowned blocker needs an owner and a plan now; escalating or logging it does not give it one.",
+    "explanation": "Problems should be resolved in a timely manner with the team. An unowned blocker needs an owner and a plan agreed now; defaulting it to one person or logging it does not engage the team.",
     "options": [
-      "Raise it at the scrum of scrums",
+      "Facilitator takes it by default",
       "Move it to the impediment log",
-      "Agree an owner and a date now",
-      "Escalate it to the sponsor"
+      "Team agrees an owner and date now",
+      "Raise it at the scrum of scrums"
     ],
     "correct": [
       2
@@ -1767,17 +1767,18 @@
     "skill": "Delivery 3: Manage impediments and risk",
     "difficulty": 2,
     "format": "single",
-    "stem": "A missed dependency caused a defect once before. How should the lesson be used?",
-    "explanation": "Lessons learned are used to avoid risks and impediments recurring, for example by adding a check to the definition of done. Sharing or noting it helps others but does not stop it happening again.",
+    "stem": "A risk on the backlog has a 40% probability and would cost 25 story points. What is its exposure in points?",
+    "explanation": "Risk exposure is probability times impact: 0.4 times 25 is 10 points, which is how a risk-adjusted backlog ranks risk work against features. 25 ignores the probability.",
     "options": [
-      "Share it at a community of practice",
-      "Raise it at the next retrospective",
-      "Note it in the lessons log",
-      "Add a check so it does not recur"
+      "10",
+      "15",
+      "25",
+      "65"
     ],
     "correct": [
-      3
-    ]
+      0
+    ],
+    "lockedOrder": true
   },
   {
     "id": "PMIACP-T2-025",
@@ -1814,11 +1815,11 @@
     "options": [
       "Only when someone asks",
       "Written down, so there is a record",
-      "Specific, timely and about behavior",
-      "General, and saved for the review"
+      "General, and saved for the review",
+      "Specific, timely and about behavior"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -1834,12 +1835,12 @@
     "explanation": "Collective ownership comes from the whole team committing to one goal. Velocity targets, skills matrices and role rotation serve other purposes.",
     "options": [
       "A team skills matrix",
-      "Team commitment to one goal",
       "Team rotation of roles",
+      "A single team commitment",
       "Team-wide velocity targets"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1876,12 +1877,12 @@
     "explanation": "The practitioner evaluates the team's understanding and tailors the approach, and a team two weeks in has not yet seen the value of reflection. Shortening, skipping or stepping away before they understand it weakens the learning loop.",
     "options": [
       "Shorten them to fifteen minutes each",
+      "Keep them and explain their purpose",
       "Hold them every other sprint",
-      "Let the team run them without you",
-      "Keep them and explain their purpose"
+      "Let the team run them without you"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -1897,12 +1898,12 @@
     "explanation": "Organizational knowledge assets include lessons, people and processes from similar initiatives that a team can reuse.",
     "options": [
       "The team's working agreement",
-      "Lessons from similar work",
       "This sprint's burndown chart",
-      "The current sprint backlog"
+      "The current sprint backlog",
+      "Lessons from similar work"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -1959,13 +1960,13 @@
     "stem": "Which technique starts from users' needs, prototypes ideas and tests them with users quickly?",
     "explanation": "The outline names design thinking as a way to shorten feedback: empathize with users, prototype and test quickly. Lean startup centers on build, measure and learn for a business idea.",
     "options": [
-      "Design thinking",
       "Value stream mapping",
+      "Design thinking",
       "Kanban",
       "Lean startup"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -1982,11 +1983,11 @@
     "options": [
       "Guide from long experience",
       "Teach a defined skill or method",
-      "Help people find their own answers",
-      "Model the correct technique"
+      "Model the correct technique",
+      "Help people find their own answers"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -2024,12 +2025,12 @@
     "explanation": "Increments stay aligned with business priorities, so the goal of the next one is redefined when priorities change. The vision and velocity need not change.",
     "options": [
       "Reset the release date",
+      "Reset the next increment's goal",
       "Reset the product vision",
-      "Reset the team's velocity",
-      "Reset the next increment's goal"
+      "Reset the team's velocity"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2044,13 +2045,13 @@
     "stem": "Developers and testers sit apart and pass work over a wall. What helps most?",
     "explanation": "Collaboration practices break down silos: one cross-functional team sharing a space and a goal. Joint standups, syncs and test tasks still leave two groups handing work over.",
     "options": [
-      "Add testers to the daily standup",
       "Seat them together as one team",
+      "Add testers to the daily standup",
       "Hold a weekly sync between groups",
       "Add a test task to each story"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -2065,13 +2066,13 @@
     "stem": "Partly done work sits untouched for weeks. Why is this waste?",
     "explanation": "Unfinished work has used effort but delivers nothing until it is done, and it can go stale while it waits.",
     "options": [
-      "It ties up effort with no return",
       "It breaks the sprint goal every time",
       "It raises the defect count",
+      "It ties up effort with no return",
       "It lowers team velocity"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -2149,13 +2150,13 @@
     "stem": "Team members are taking sides and refusing to work together. What does this show about the conflict?",
     "explanation": "Conflict that has spread into camps and broken cooperation is at a high level and needs more direct facilitation than an everyday problem would.",
     "options": [
+      "It has reached a high level",
       "It is healthy debate about ideas",
       "It is a minor misunderstanding",
-      "It has reached a high level",
       "It is a normal problem to solve"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -2170,13 +2171,13 @@
     "stem": "A manager compares two teams by their velocity. What is the problem?",
     "explanation": "Story points are relative to the team that estimates them, so velocity does not compare across teams.",
     "options": [
+      "Each team sizes points its own way",
       "Velocity is a measure of cost",
       "Velocity counts only hours worked",
-      "Velocity must stay inside the team",
-      "Each team sizes points its own way"
+      "Velocity must stay inside the team"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -2191,13 +2192,13 @@
     "stem": "A team's retrospective actions are never carried out. What should change?",
     "explanation": "A small number of owned, visible actions is more likely to happen than a long list. More meetings, facilitator-owned actions or a charter entry do not get the work done.",
     "options": [
-      "Choose fewer actions and track them",
       "Let the facilitator own the actions",
+      "Choose fewer actions and track them",
       "Add the actions to the team charter",
       "Hold the retrospective more often"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2213,12 +2214,12 @@
     "explanation": "Continuous improvement includes evaluating the effectiveness of each change soon after trying it, before keeping, spreading or formalizing it.",
     "options": [
       "Run it for a full release first",
-      "Check whether it helped",
       "Ask other teams to try it too",
-      "Measure it at the next audit"
+      "Measure it at the next audit",
+      "Check whether it helped"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -2255,12 +2256,12 @@
     "explanation": "The practitioner ensures the product stays aligned to the vision and organizational goals. A request is weighed against that before it enters the backlog.",
     "options": [
       "Ask the team to size it",
-      "Check it against the vision first",
       "Plan it for the next release",
-      "Add it to the bottom of the backlog"
+      "Add it to the bottom of the backlog",
+      "Weigh it against the product's purpose"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -2277,11 +2278,11 @@
     "options": [
       "Finish the planned features first",
       "Survey users at the next release",
-      "Add onboarding for the unused features",
-      "Adapt the product to how it is used"
+      "Adapt the product to how it is used",
+      "Add onboarding for the unused features"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -2296,13 +2297,13 @@
     "stem": "Two members disagree on a technical approach. What should the practitioner do?",
     "explanation": "A collaborative approach gets both people to evaluate the options together against what the team is trying to achieve. A vote, a compromise or a merge skips that evaluation.",
     "options": [
-      "Help them weigh both by the goal",
       "Ask the team to vote between them",
+      "Help them weigh both by the goal",
       "Ask them to merge both ideas",
       "Ask them to agree a compromise"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2317,13 +2318,13 @@
     "stem": "A customer rarely attends reviews. What should the practitioner do?",
     "explanation": "The outline says to encourage collaboration between customer and team. Finding a format that works for the customer keeps them engaged; a proxy or recording is a fallback, not the first move.",
     "options": [
-      "Ask a proxy to stand in",
       "Find a format they can join",
+      "Ask a proxy to stand in",
       "Send recorded demos instead",
       "Hold reviews less often"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -2338,13 +2339,13 @@
     "stem": "Which factor matters most when choosing how several teams coordinate?",
     "explanation": "The outline lists key factors for choosing an inter-team approach such as a scrum of scrums or team of teams; how tightly the teams' work depends on each other drives how much coordination is needed.",
     "options": [
-      "Each team's sprint length",
-      "Each team's board tool",
-      "Each team's headcount",
-      "Dependencies in their work"
+      "Where each team is located",
+      "How mature each team is",
+      "Dependencies in their work",
+      "How often each team releases"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -2360,12 +2361,12 @@
     "explanation": "The outline says to use metrics to analyze and improve flow. A falling cycle time shows items move through faster; velocity and burndowns track capacity and progress.",
     "options": [
       "Velocity trend",
-      "Sprint burndown",
       "Cycle time trend",
+      "Sprint burndown",
       "Story points planned"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -2428,13 +2429,13 @@
     "stem": "Which statement reflects a growth mindset?",
     "explanation": "A growth mindset treats ability as something that develops through effort and feedback, which is why agile teams can respond to change.",
     "options": [
-      "Skills improve with effort and feedback",
       "Talent is mostly fixed at hiring",
       "Experts no longer need feedback",
-      "Mistakes show a lack of natural ability"
+      "Mistakes show a lack of natural ability",
+      "Skills improve with effort and feedback"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2449,13 +2450,13 @@
     "stem": "A developer hesitates to try a new technique for fear of slowing the sprint. How should the practitioner respond?",
     "explanation": "Motivating people to experiment means giving them space to try now, accepting some short-term cost for learning. Delaying it or adding conditions discourages the risk.",
     "options": [
+      "Let them try it this sprint",
       "Pair them with a senior first",
       "Suggest a spike next sprint",
-      "Ask the team to agree it first",
-      "Let them try it this sprint"
+      "Ask the team to agree it first"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -2592,11 +2593,11 @@
     "options": [
       "Using a shared online board",
       "Writing everything down",
-      "Sitting together in one space",
-      "Holding a daily standup"
+      "Holding a daily standup",
+      "Sitting together in one space"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -2636,12 +2637,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What should a team do after finding the root cause of a defect?",
-    "explanation": "The value of root cause analysis is removing the cause so the problem does not return. Tests, logs and sharing do not remove it.",
+    "explanation": "The value of root cause analysis is removing the cause so the problem does not return. Patching, detecting or retraining treats the effects.",
     "options": [
-      "Add a regression test for the defect",
-      "Document the cause in the defect log",
-      "Fix the cause, not only the symptom",
-      "Share the cause at a community of practice"
+      "Patch every place it showed up",
+      "Add a check that catches it",
+      "Remove the cause itself",
+      "Retrain the developer involved"
     ],
     "correct": [
       2
@@ -2750,12 +2751,12 @@
     "explanation": "A communication strategy for distributed teams makes decisions visible where everyone can see them, as they are made. Video calls and standups miss chance hallway talks, and a weekly summary arrives late.",
     "options": [
       "Send a weekly decision summary",
-      "Record decisions in a shared channel",
       "Ask remote staff to join by video",
+      "Record decisions in a shared channel",
       "Move key talks to the daily standup"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2813,12 +2814,12 @@
     "explanation": "Ideal time is how long work would take with no interruptions or other duties, which is why it differs from elapsed time.",
     "options": [
       "Elapsed calendar time",
+      "Time with no interruptions",
       "Story points per sprint",
-      "Time from request to delivery",
-      "Time with no interruptions"
+      "Time from request to delivery"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2835,11 +2836,11 @@
     "options": [
       "Throughput",
       "Velocity",
-      "Cycle time",
-      "Takt time"
+      "Takt time",
+      "Cycle time"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -2855,12 +2856,12 @@
     "explanation": "Managing impediments includes monitoring them and getting help from outside the team when it cannot remove them alone. Swarming works only on impediments inside the team's control.",
     "options": [
       "Swarm on it as a team",
-      "Get help from outside the team",
       "Log it on the board and wait",
+      "Get help from outside the team",
       "Raise it at the retrospective"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2917,13 +2918,13 @@
     "stem": "Why should a practitioner avoid assigning tasks to members of a self-organizing team?",
     "explanation": "When someone else hands out the work, members stop owning it. Self-organizing teams decide who does what.",
     "options": [
-      "It weakens their ownership",
       "It slows how work is pulled",
+      "It weakens their ownership",
       "It hides who is overloaded",
       "It makes work less visible"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2960,12 +2961,12 @@
     "explanation": "A story map lays stories out along the steps a user takes, with priority shown top to bottom. Workflow columns are a Kanban board, the four groups are MoSCoW, and size groups are affinity estimating.",
     "options": [
       "Grouped by similar size",
-      "Along the user journey",
       "In columns by workflow state",
+      "Along the user journey",
       "In must, should, could, won't"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2980,13 +2981,13 @@
     "stem": "What is work item age?",
     "explanation": "The Kanban Guide defines work item age as the elapsed time between when a work item started and the current date. Start to finish is cycle time, request to delivery is lead time, and items per week is throughput.",
     "options": [
+      "Time since an open item started",
       "Items finished per week",
       "Time from request to delivery",
-      "Time since an open item started",
       "Time from start to finish"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -3001,13 +3002,13 @@
     "stem": "Why monitor risks throughout delivery?",
     "explanation": "Risks change as work progresses, so they are monitored and controlled continuously, not logged once.",
     "options": [
-      "Likelihood and impact change",
       "Auditors require it",
+      "Likelihood and impact change",
       "The register must stay complete",
       "Each sprint needs a risk item"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -3024,11 +3025,11 @@
     "options": [
       "Seek approval before the next one",
       "Try a better version straight away",
-      "Add the result to the risk register",
-      "Share what was learned with the team"
+      "Share what was learned with the team",
+      "Add the result to the risk register"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3041,15 +3042,15 @@
     "difficulty": 1,
     "format": "single",
     "stem": "What is a no-blame culture meant to encourage?",
-    "explanation": "When people are not punished for honest mistakes, they report them early, and the team can fix the cause.",
+    "explanation": "A no-blame culture means people are not punished for honest mistakes, so they report them early. Fewer, faster or cheaper mistakes may follow, but open reporting is what it encourages.",
     "options": [
-      "Fewer defects in releases",
-      "Less need for retrospectives",
-      "Open reporting of mistakes",
-      "Faster decision making"
+      "Faster fixing of mistakes",
+      "Lower cost of mistakes",
+      "Fewer mistakes overall",
+      "Open reporting of mistakes"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -3085,13 +3086,13 @@
     "stem": "When are lessons learned best captured on an agile team?",
     "explanation": "Agile teams capture lessons continuously through retrospectives so they can use them in the next iteration.",
     "options": [
-      "At each phase-end review",
       "In each retrospective",
+      "At each phase-end review",
       "At each release review",
       "At each quarterly review"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -3108,11 +3109,11 @@
     "options": [
       "It is faster than one estimator",
       "It fixes the delivery date",
-      "It removes the need to refine",
-      "It draws on shared knowledge"
+      "It draws on shared knowledge",
+      "It removes the need to refine"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3128,12 +3129,12 @@
     "explanation": "Metrics must fit their audience. Work item age shows which items are getting old right now, which is what the developers need.",
     "options": [
       "Quarterly throughput trend",
-      "Release burnup chart",
       "Work item age on the board",
+      "Release burnup chart",
       "Average velocity"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3146,12 +3147,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Why prioritize waste reduction activities?",
-    "explanation": "The outline says to prioritize waste reduction, putting effort where it saves the most. Cheapness or step length alone does not say where the biggest gain is.",
+    "explanation": "The outline says to prioritize waste reduction, putting effort where it saves the most. Speed or age alone does not say where the biggest gain is.",
     "options": [
       "So effort goes where it saves most",
-      "So the cheapest fixes come first",
-      "So the longest steps go first",
-      "So all waste is removed at once"
+      "So the oldest problems go first",
+      "So each team handles its own",
+      "So the quickest wins come first"
     ],
     "correct": [
       0
@@ -3170,12 +3171,12 @@
     "explanation": "An early increment lets the team validate the solution and the market need with real users.",
     "options": [
       "Fix scope for later iterations",
-      "Validate the solution with real users",
       "Show progress to the sponsor",
-      "Prove the chosen architecture works"
+      "Prove the chosen architecture works",
+      "Validate the solution with real users"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3188,12 +3189,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A team follows every practice exactly as first set up and never changes it. What should the practitioner encourage?",
-    "explanation": "Psychological safety includes encouraging people to challenge the status quo so the team keeps improving.",
+    "explanation": "Psychological safety includes encouraging people to challenge the status quo so the team keeps improving its own way of working.",
     "options": [
-      "Challenging the status quo",
-      "Consistent use of the method",
-      "Clearer role definitions",
-      "Stronger working agreements"
+      "Challenging how things are done",
+      "Switching to a new framework",
+      "Copying other teams' practices",
+      "Adding more process rules"
     ],
     "correct": [
       0
@@ -3213,11 +3214,11 @@
     "options": [
       "Self-regulation",
       "Positional authority",
-      "Technical expertise",
-      "Social awareness"
+      "Social awareness",
+      "Technical expertise"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3234,11 +3235,11 @@
     "options": [
       "Give them a backup on call",
       "Freeze changes to the scripts",
-      "Pair others with them on it",
-      "Document the scripts in detail"
+      "Document the scripts in detail",
+      "Pair others with them on it"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -3254,12 +3255,12 @@
     "explanation": "A persona is a fictional user who stands for a group of real users. A user story describes a need, a journey or story map shows steps, and a prototype tests an idea.",
     "options": [
       "Describing a need from a user's view",
+      "Representing a type of user",
       "Testing a design idea quickly",
-      "Showing a user's steps in order",
-      "Representing a type of user"
+      "Showing a user's steps in order"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -3294,15 +3295,15 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How should a team approach waste over time?",
-    "explanation": "The outline says to iterate on identifying and reducing waste. It is ongoing work, not a project or a release checkpoint.",
+    "explanation": "The outline says to iterate on identifying and reducing waste. It is ongoing work, not a periodic audit or a one-off map.",
     "options": [
-      "Address it at each release review",
+      "Fix it in a hardening sprint",
+      "Map it once, then fix the map",
       "Keep finding and reducing it",
-      "Accept a fixed amount of it",
-      "Remove it all in one project"
+      "Run a waste audit each release"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -3315,15 +3316,15 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which behavior best shows an agile mindset?",
-    "explanation": "An agile mindset adapts to learning and feedback, even when it means leaving an agreed plan.",
+    "explanation": "An agile mindset adapts to learning and feedback, even when it means leaving an agreed plan or process.",
     "options": [
-      "Changing course on new evidence",
-      "Waiting for clear requirements",
-      "Using the method exactly as written",
-      "Following the plan the team agreed"
+      "Finishing what was committed",
+      "Holding to the agreed process",
+      "Keeping the sprint plan intact",
+      "Changing course on new evidence"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -3336,15 +3337,15 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A practitioner asks for feedback on their facilitation and hears meetings run long. What should they do?",
-    "explanation": "The outline says to solicit and provide constructive feedback and act on it. Explaining, collecting more data or waiting before acting tells people their feedback changes nothing.",
+    "explanation": "The outline says to solicit and provide constructive feedback and act on it, then check whether the change worked.",
     "options": [
-      "Explain why the meetings ran long",
-      "Wait to see if others agree",
+      "Thank them and keep the format",
       "Change the format and check again",
-      "Ask for more detail in a survey"
+      "Hand facilitation to someone else",
+      "Ask for a written survey first"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3359,13 +3360,13 @@
     "stem": "What is the first step in managing a team conflict?",
     "explanation": "The outline puts identifying the root cause and level of the conflict first, then promoting a collaborative way to solve it.",
     "options": [
+      "Find its root cause and level",
       "Bring both people together at once",
       "Set ground rules for the team",
-      "Find its root cause and level",
       "Remind them of the working agreement"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -3378,15 +3379,15 @@
     "difficulty": 1,
     "format": "single",
     "stem": "Where should a team keep knowledge that others will need later?",
-    "explanation": "Captured knowledge is useful only if others can find it later, which inboxes, chat history and handouts make hard.",
+    "explanation": "Captured knowledge is useful only if it is kept current and others can find it later. Notes, chat and email bury it.",
     "options": [
-      "Team chat history",
-      "Printed handouts at desks",
-      "A shared team inbox",
-      "Searchable team space"
+      "A shared chat channel",
+      "A shared email list",
+      "A wiki the team keeps current",
+      "A shared drive of meeting notes"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3422,13 +3423,13 @@
     "stem": "A team's defect rate rises every iteration. What should it do with that metric?",
     "explanation": "Metric insights are used for decision making. Radiating it helps, but only a decision on an improvement changes the trend.",
     "options": [
-      "Use it to choose an improvement",
       "Add a quality item each sprint",
       "Compare it with other teams",
-      "Show it on the information radiator"
+      "Show it on the information radiator",
+      "Use it to choose an improvement"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -3443,13 +3444,13 @@
     "stem": "Which pattern on a cumulative flow diagram points to a growing queue?",
     "explanation": "A widening band means items enter that state faster than they leave it, so work is piling up.",
     "options": [
+      "A band that keeps widening",
       "A narrow In Progress band",
       "A steadily rising Done band",
-      "Parallel, even bands",
-      "A band that keeps widening"
+      "Parallel, even bands"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -3465,12 +3466,12 @@
     "explanation": "The principle reads that the best architectures, requirements and designs emerge from self-organizing teams.",
     "options": [
       "Detailed upfront modeling",
-      "Architecture review boards",
       "Self-organizing teams",
+      "Architecture review boards",
       "Senior individual architects"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3507,12 +3508,12 @@
     "explanation": "Disagreement about ideas is healthy and the team can handle it. Conflict that turns personal or harms people needs the practitioner to facilitate.",
     "options": [
       "When it slows the sprint",
-      "When it turns personal or harmful",
       "When a decision is overdue",
-      "Whenever any two people disagree"
+      "Whenever any two people disagree",
+      "When it turns personal or harmful"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3525,12 +3526,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "How should a practitioner foster continuous improvement?",
-    "explanation": "Continuous improvement means frequent, small adjustments made by the team, not planned batches or changes made only after a problem shows.",
+    "explanation": "Continuous improvement means frequent, small adjustments made by the team, not planned programs, rollouts or changes made only after things get worse.",
     "options": [
-      "Change when metrics show a problem",
-      "Plan a set of changes each quarter",
-      "Make small changes a regular habit",
-      "Adopt a proven framework in full"
+      "Changes once metrics drop",
+      "Quarterly improvement programs",
+      "Small, frequent changes by the team",
+      "A full framework rollout"
     ],
     "correct": [
       2
@@ -3548,13 +3549,13 @@
     "stem": "What is the purpose of a product roadmap?",
     "explanation": "A roadmap communicates where the product is heading and roughly when. Boards, burndowns and story maps show other things.",
     "options": [
-      "Show planned direction over time",
       "Show each user's journey",
+      "Show planned direction over time",
       "Show the work in each state",
       "Show the work left in a sprint"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -3569,13 +3570,13 @@
     "stem": "Why deliver work in small increments?",
     "explanation": "Small increments let the team learn from each one before building the next, which is why the outline pairs them with seeking early feedback.",
     "options": [
-      "Each is easier to estimate",
       "Each gets feedback before the next",
+      "Each is easier to estimate",
       "Each lowers the cost of testing",
       "Each fits a fixed contract"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -3592,11 +3593,11 @@
     "options": [
       "A one-to-one with a manager",
       "Review held after the release",
-      "A stakeholder demo",
-      "Reflection held mid-iteration"
+      "Reflection held mid-iteration",
+      "A stakeholder demo"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3675,12 +3676,12 @@
     "explanation": "Early delivery of value is an agile behavior worth reinforcing. Overloading, racing teammates or chasing estimates are not.",
     "options": [
       "Hitting every sprint estimate",
-      "Delivering a small slice early",
       "Taking on extra stories",
-      "Finishing ahead of the others"
+      "Finishing ahead of the others",
+      "Delivering a small slice early"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3738,12 +3739,12 @@
     "explanation": "Control limits mark the range of normal variation, so points outside them signal a change worth investigating.",
     "options": [
       "Work in progress per column",
+      "Unusual process variation",
       "Time left in the iteration",
-      "Items finished per week",
-      "Unusual process variation"
+      "Items finished per week"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -3801,12 +3802,12 @@
     "explanation": "Empowered teams decide how they do their work within the goals and constraints they are given. Business priorities and customers stay with the product owner and the organization.",
     "options": [
       "It sets its own business priorities",
-      "It decides how to do its work",
       "It has no work constraints",
-      "It picks its own customers"
+      "It picks its own customers",
+      "It decides how to do its work"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3822,12 +3823,12 @@
     "explanation": "The outline says to ensure a common understanding of the purpose and vision with all stakeholders, inside and outside the organization.",
     "options": [
       "The product owner and sponsor",
-      "The whole delivery team",
       "All stakeholders",
+      "The whole delivery team",
       "All internal staff only"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3842,13 +3843,13 @@
     "stem": "Who should be able to see a team's work board?",
     "explanation": "Continuously sharing information means the board is open to everyone with an interest in the work.",
     "options": [
-      "Anyone with an interest in it",
       "The team and its managers",
       "The development team only",
+      "Anyone with an interest in it",
       "The team and the product owner"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -3863,13 +3864,13 @@
     "stem": "How do the manifesto principles say business people and developers should work?",
     "explanation": "The principle reads that business people and developers must work together daily throughout the project. The other phrases come from other principles.",
     "options": [
-      "At regular intervals",
       "Together daily",
+      "At regular intervals",
       "Face-to-face",
       "At a sustainable pace"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -3882,12 +3883,12 @@
     "difficulty": 1,
     "format": "single",
     "stem": "How should a team decide which improvement to make next?",
-    "explanation": "The outline says to obtain metrics and feedback to drive continuous improvements.",
+    "explanation": "The outline says to obtain metrics and feedback to drive continuous improvements, meaning the team's own data.",
     "options": [
-      "Follow the coach's suggestion",
-      "Copy another team's practice",
-      "Vote on the most popular idea",
-      "Use metrics and feedback"
+      "Use industry benchmark data",
+      "Use the sponsor's priorities",
+      "Use the coach's past experience",
+      "Use the team's metrics and feedback"
     ],
     "correct": [
       3
@@ -3930,12 +3931,12 @@
     "explanation": "The principle says to welcome changing requirements, even late in development, because agile processes harness change for the customer's competitive advantage.",
     "options": [
       "Reject it to protect the agreed schedule",
-      "Defer it to a later project",
       "Welcome it for the customer's advantage",
+      "Defer it to a later project",
       "Accept it only with a contract change"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3950,13 +3951,13 @@
     "stem": "Coaching a team in agile practices aims at what end state?",
     "explanation": "Good coaching builds the team's own capability, so over time it needs the coach less.",
     "options": [
-      "The team no longer needs the coach",
       "The team runs Scrum by the book",
       "The coach facilitates every event",
+      "The team no longer needs the coach",
       "The team's velocity rises"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -3971,13 +3972,13 @@
     "stem": "Why check that the product stays aligned with organizational goals?",
     "explanation": "Alignment keeps each increment contributing to what the organization is trying to achieve.",
     "options": [
-      "So teams can share components",
       "So each increment serves the business",
+      "So teams can share components",
       "So budgets can be planned",
       "So the roadmap stays stable"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -3992,13 +3993,13 @@
     "stem": "A feature passes all functional tests but leaves customer data exposed. Does it deliver value?",
     "explanation": "The outline includes security and privacy in what value looks like, so a feature with a known exposure has not delivered it.",
     "options": [
-      "Yes, if the product owner accepts it",
-      "Yes, with a fix next sprint",
-      "No, security is part of value",
-      "Only for internal users"
+      "No, not until users try it",
+      "Yes, the functions work",
+      "Yes, if it is fixed later",
+      "No, security is part of value"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -4036,11 +4037,11 @@
     "options": [
       "A cumulative flow diagram",
       "A definition of workflow",
-      "A service level expectation",
-      "A pull system"
+      "A pull system",
+      "A service level expectation"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -4056,12 +4057,12 @@
     "explanation": "Uncertain requirements plus a customer able to give frequent feedback are conditions where adaptive approaches work well. A gated hybrid or fixed scope suits stable, well-understood requirements.",
     "options": [
       "Predictive is the better fit",
+      "Agile is a good fit",
       "A gated hybrid fits best",
-      "The scope should be fixed first",
-      "Agile is a good fit"
+      "The scope should be fixed first"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -4076,13 +4077,13 @@
     "stem": "Why encourage cross-skilling within a team?",
     "explanation": "Cross-skilled members can pick up whatever work is blocking the flow, which removes single-person bottlenecks.",
     "options": [
-      "So nothing stalls on one person",
       "So specialists can be retired",
+      "So nothing stalls on one person",
       "So meetings get shorter",
       "So estimates are more accurate"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -4140,15 +4141,15 @@
     "difficulty": 2,
     "format": "single",
     "stem": "How can a team get the most value from its increments?",
-    "explanation": "Ordering by value against effort optimizes each increment. Leaving risk to the end is the opposite of agile risk practice.",
+    "explanation": "Ordering by value against effort optimizes each increment: the highest value per unit of effort comes first.",
     "options": [
-      "Do items in the order requested",
       "Do high value, low effort first",
-      "Do the riskiest items last",
-      "Do high value, high effort first"
+      "Do the highest risk first",
+      "Do the lowest effort first",
+      "Do the highest value first"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -4164,12 +4165,12 @@
     "explanation": "A deliverable is accepted when it meets its acceptance criteria. Partial work goes back to the backlog.",
     "options": [
       "Accepted if the sponsor agrees",
-      "Not accepted until it meets it",
       "Accepted at the next release",
-      "Accepted with a follow-up story"
+      "Accepted with a follow-up story",
+      "Not accepted until it meets it"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -4248,12 +4249,12 @@
     "explanation": "Bringing both teams together to agree ownership addresses the cause. Handing the decision or the component elsewhere leaves the teams' disagreement in place.",
     "options": [
       "Split ownership by feature",
+      "Facilitate a joint agreement on it",
       "Hand it to a platform team",
-      "Ask both product owners to decide",
-      "Facilitate a joint agreement on it"
+      "Ask both product owners to decide"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -4339,12 +4340,12 @@
     "explanation": "The outline says to limit work in progress at all levels, from tasks up to initiatives.",
     "options": [
       "Per person on the team",
-      "At all levels of work",
       "At the testing stage",
+      "At all levels of work",
       "At the team's task level"
     ],
     "correct": [
-      1
+      2
     ]
   }
 ]

@@ -44,6 +44,7 @@ CHECKS = {
     "2, 4, 3, 6 and 5 days": str((2 + 4 + 3 + 6 + 5) // 5),
     "Planned value is 50,000 and earned value is 40,000": f"{40000 / 50000:g}",
     "20% chance of happening and would cost 15 days": f"{0.2 * 15:g}",
+    "40% probability and would cost 25 story points": f"{0.4 * 25:g}",
 }
 
 

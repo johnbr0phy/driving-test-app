@@ -5536,6 +5536,19 @@
     --brand-gradient-to: 120 50% 95%;
   }
 
+  [data-theme="proserve"] {
+    --brand: 126 55% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 126 40% 95%;
+    --brand-hover: 126 55% 14%;
+    --brand-dark: 126 55% 12%;
+    --brand-darker: 126 50% 8%;
+    --brand-muted: 126 20% 70%;
+    --brand-border: 126 25% 78%;
+    --brand-border-light: 126 25% 88%;
+    --brand-gradient-to: 141 40% 95%;
+  }
+
   [data-theme="dispatcher"] {
     --brand: 321 100% 20%;
     --brand-foreground: 0 0% 100%;
@@ -11426,6 +11439,18 @@
     --brand-muted: 105 25% 45%;
     --brand-dark: 105 75% 65%;
     --brand-darker: 105 70% 78%;
+  }
+
+  .dark [data-theme="proserve"] {
+    --brand: 126 55% 34%;
+    --brand-hover: 126 55% 26%;
+    --brand-light: 126 40% 13%;
+    --brand-gradient-to: 141 40% 11%;
+    --brand-border-light: 126 25% 24%;
+    --brand-border: 126 25% 34%;
+    --brand-muted: 126 20% 45%;
+    --brand-dark: 126 55% 65%;
+    --brand-darker: 126 50% 78%;
   }
 
   .dark [data-theme="dispatcher"] {

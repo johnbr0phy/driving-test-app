@@ -73,6 +73,12 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
 
+      - name: API budget
+        id: budget
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts check source-triage 8
+
       - name: List pages to triage
         id: pages
         env:
@@ -81,6 +87,8 @@ jobs:
           mkdir -p audits/sources
           list="$RUNNER_TEMP/source-pages.json"
           n=$(npx tsx scripts/source-triage.ts --export "$list" | tail -1)
+          # Out of API budget this month: triage nothing; the pages wait for the next run.
+          if [ "${{ steps.budget.outputs.ok }}" != "true" ]; then n=0; fi
           echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "list=$list" >> "$GITHUB_OUTPUT"
           echo "decisions=audits/sources/$(date -u +%F)-${{ github.run_id }}.json" >> "$GITHUB_OUTPUT"
@@ -99,6 +107,7 @@ jobs:
           "$RUNNER_TEMP/claude" --version
 
       - name: Triage with Claude Code
+        id: claude
         if: steps.pages.outputs.count != '0'
         uses: anthropics/claude-code-action@v1
         with:
@@ -106,7 +115,7 @@ jobs:
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           # Prints the run, so a failure shows its reason in the log (it was hidden).
           show_full_output: true
-          claude_args: --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md, docs/claude/question-quality.md and the exam's docs/exams/<examId>.md, then
             ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were
@@ -174,6 +183,12 @@ jobs:
             noise pages.
 
             Do not commit.
+
+      - name: Record API spend
+        if: always() && (steps.claude.outcome == 'success' || steps.claude.outcome == 'failure')
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts record source-triage --file "${{ steps.claude.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       - name: Clear noise now
         if: steps.pages.outputs.count != '0'

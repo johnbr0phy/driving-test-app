@@ -6,6 +6,8 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_CATALOG } from '@/lib/testCatalog';
 import { REGIONS } from '@/lib/region';
 import { mergeMentions, searchMentions, type WebMention } from '@/lib/server/webMentions';
+import { allowanceUsd, usageCostUsd } from '@/lib/apiBudget';
+import { readSpend, recordSpend } from '@/lib/server/apiBudget';
 
 // The daily update at the top of the /admin Today tab: Claude reads the
 // page's numbers (plus the previous update's numbers, to say what changed)
@@ -204,7 +206,11 @@ Voice: write like a cheerful, sharp British colleague with a cup of tea, not a d
 Rules: use only the numbers given, never estimate or invent one. Round to whole numbers and say "$120", "about 1,400". Plain everyday words, no jargon like "cohort", "conversion rate" or "funnel". No em-dashes, no bold, no headings, nothing before the headline or after the last bullet. If the data is too thin to say something, say less rather than padding.`;
 
 /** Asks Claude for today's update. Throws when the key is missing or the model declines. */
-export async function writeBrief(numbers: BriefNumbers, previous: DailyBrief | null): Promise<{ headline: string; bullets: string[] }> {
+export async function writeBrief(
+  numbers: BriefNumbers,
+  previous: DailyBrief | null,
+  onUsage?: (usage: Anthropic.Beta.BetaUsage) => void,
+): Promise<{ headline: string; bullets: string[] }> {
   if (!process.env.ANTHROPIC_API_KEY) throw new Error('ANTHROPIC_API_KEY is not set');
   const client = new Anthropic();
   const today = briefDate();
@@ -226,6 +232,7 @@ export async function writeBrief(numbers: BriefNumbers, previous: DailyBrief | n
     system: SYSTEM,
     messages: [{ role: 'user', content: user }],
   });
+  onUsage?.(response.usage);
   if (response.stop_reason === 'refusal') {
     throw new Error(`Claude declined to write the update (${response.stop_details?.category ?? 'no category'})`);
   }
@@ -252,12 +259,25 @@ export async function latestBrief(db: Firestore, before?: string): Promise<Daily
   return snap.empty ? null : (snap.docs[0].data() as DailyBrief);
 }
 
+/** Most one update may cost; the month's share is JOB_BUDGETS_USD['daily-brief'] (lib/apiBudget.ts). */
+export const BRIEF_RUN_CAP_USD = 3;
+
+/** True when this month's API budget still covers an update. */
+export async function briefBudgetLeft(db: Firestore): Promise<boolean> {
+  return allowanceUsd(await readSpend(db), 'daily-brief', BRIEF_RUN_CAP_USD) > 0;
+}
+
 /** Writes and saves today's update, replacing one already written today. */
 export async function createBrief(db: Firestore, payload: OpportunitiesPayload): Promise<DailyBrief> {
+  if (!(await briefBudgetLeft(db))) throw new Error('The API budget for the daily update is used up this month');
   const date = briefDate();
+  let costUsd = 0;
+  const onUsage = (usage: Anthropic.Beta.BetaUsage) => {
+    costUsd += usageCostUsd(usage);
+  };
   const previous = await latestBrief(db, date);
   // Runs while the numbers are gathered; it takes the longest.
-  const mentionsSearch = searchMentions(BRIEF_MODEL, date).then(
+  const mentionsSearch = searchMentions(BRIEF_MODEL, date, onUsage).then(
     (found) => ({ found, error: null as string | null }),
     (error) => {
       console.error('[daily-brief] web mentions unavailable', error);
@@ -283,7 +303,13 @@ export async function createBrief(db: Firestore, payload: OpportunitiesPayload):
   const found = [...(search.found ?? []), ...earlierToday.map(({ isNew: _n, ...m }) => m)];
   const mentions = mergeMentions(found, previous?.mentions ?? []);
   numbers.newWebMentions = mentions.filter((m) => m.isNew).map(({ isNew: _n, ...m }) => m);
-  const { headline, bullets } = await writeBrief(numbers, previous);
+  let written: { headline: string; bullets: string[] };
+  try {
+    written = await writeBrief(numbers, previous, onUsage);
+  } finally {
+    await recordSpend(db, 'daily-brief', costUsd).catch((error) => console.error('[daily-brief] could not record API spend', error));
+  }
+  const { headline, bullets } = written;
   const brief: DailyBrief = {
     date, headline, bullets, generatedAt: new Date().toISOString(), model: BRIEF_MODEL, numbers, mentions,
     ...(search.error ? { mentionsError: search.error } : {}),

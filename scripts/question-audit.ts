@@ -50,6 +50,7 @@ import { ALL_EXAMS } from "@/lib/exams";
 import FRESHNESS from "@/lib/examFreshness.json";
 import { SIGN_BY_QUESTION_ID, SIGN_DESCRIPTIONS } from "@/lib/signImages";
 import { reviewFresh, type FlagReview } from "@/lib/questionQuality";
+import { allowanceUsd, usageCostUsd } from "@/lib/apiBudget";
 
 const MODEL = "claude-opus-5-5";
 const CONCURRENCY = 6;
@@ -345,6 +346,21 @@ if (DRY) {
 // ── Claude ──────────────────────────────────────────────────────────────────
 const client = new Anthropic();
 
+// ── API budget (lib/apiBudget.ts) ───────────────────────────────────────────
+// Reports, flags and freshness are queued before the sweep, so they get the budget first.
+const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
+const RUN_CAP_USD = SIGNALS ? 2 : 8;
+let budgetUsd = 0;
+try {
+  // Without Firestore (a local run) the per-run cap is the only limit.
+  budgetUsd = db ? allowanceUsd(await readSpend(db), "question-audit", RUN_CAP_USD) : RUN_CAP_USD;
+} catch (err) {
+  console.error("[audit] could not read the API budget, auditing nothing:", err);
+}
+let spentUsd = 0;
+const overBudget = () => spentUsd >= budgetUsd;
+console.log(`[audit] API budget for this run: $${budgetUsd.toFixed(2)}`);
+
 const BLIND_SCHEMA = {
   type: "object",
   properties: {
@@ -400,6 +416,7 @@ function render(q: IndexQuestion, withKey: boolean): string {
 
 async function structured<T>(system: string, user: string, schema: object, effort: "low" | "medium" | "high"): Promise<T | null> {
   for (let attempt = 0; attempt < 3; attempt++) {
+    if (overBudget()) return null;
     try {
       const response = await client.beta.messages.create({
         model: MODEL,
@@ -410,6 +427,7 @@ async function structured<T>(system: string, user: string, schema: object, effor
         system,
         messages: [{ role: "user", content: user }],
       } as Parameters<typeof client.beta.messages.create>[0]) as Anthropic.Beta.BetaMessage;
+      spentUsd += usageCostUsd(response.usage);
       if (response.stop_reason === "refusal") return null;
       const text = response.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
       return JSON.parse(text) as T;
@@ -479,13 +497,21 @@ const results: Result[] = [];
 let next = 0;
 await Promise.all(
   Array.from({ length: CONCURRENCY }, async () => {
-    while (next < items.length) {
+    while (next < items.length && !overBudget()) {
       const item = items[next++];
       results.push(await audit(item));
       if (results.length % 25 === 0) console.log(`[audit] ${results.length}/${items.length}`);
     }
   }),
 );
+
+if (overBudget()) console.log(`[audit] stopped at the API budget after ${results.length}/${items.length} questions`);
+try {
+  if (db) await recordSpend(db, "question-audit", spentUsd);
+  console.log(`[audit] spent $${spentUsd.toFixed(2)}`);
+} catch (err) {
+  console.error("[audit] could not record API spend:", err);
+}
 
 const confirmed = results.filter((r) => r.verdict && r.verdict.verdict !== "ok" && r.verdict.confidence !== "low");
 const SEVERITY: Record<string, number> = { wrong_key: 0, outdated: 1, ambiguous: 2, unclear: 3, typo: 4 };

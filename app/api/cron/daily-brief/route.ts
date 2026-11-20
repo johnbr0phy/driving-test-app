@@ -3,7 +3,7 @@ import { getAdminDb } from '@/lib/firebase-admin';
 import { verifyCronSecret } from '@/lib/cron-email';
 import { getInternalUids } from '@/lib/server/internalUsers';
 import { buildOpportunities } from '@/lib/server/opportunities';
-import { briefDate, createBrief } from '@/lib/server/dailyBrief';
+import { briefBudgetLeft, briefDate, createBrief } from '@/lib/server/dailyBrief';
 import { getStripe } from '@/lib/stripe';
 
 /**
@@ -27,6 +27,10 @@ export async function GET(request: NextRequest) {
     const date = briefDate();
     if (request.nextUrl.searchParams.get('force') !== '1' && (await db.doc(`dailyBriefs/${date}`).get()).exists) {
       return NextResponse.json({ skipped: `already written for ${date}` });
+    }
+    if (!(await briefBudgetLeft(db))) {
+      console.log('[daily-brief] skipped: API budget used up this month (lib/apiBudget.ts)');
+      return NextResponse.json({ skipped: 'API budget used up this month' });
     }
     let stripe = null;
     try {

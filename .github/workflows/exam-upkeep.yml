@@ -48,6 +48,12 @@ jobs:
 
       - run: npm ci --no-audit --no-fund
 
+      - name: API budget (fix)
+        id: budget_fix
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts check exam-upkeep 8
+
       - name: Pick this week's tasks
         id: pick
         env:
@@ -58,6 +64,8 @@ jobs:
           case "$max" in ''|*[!0-9]*) echo "max must be a whole number"; exit 1 ;; esac
           f="$RUNNER_TEMP/upkeep.json"
           n=$(npx tsx scripts/exam-upkeep.ts --pick "$f" --max "$max" | tail -1)
+          # Out of API budget this month: no tasks this week.
+          if [ "${{ steps.budget_fix.outputs.ok }}" != "true" ]; then n=0; fi
           echo "count=$n" >> "$GITHUB_OUTPUT"
           echo "file=$f" >> "$GITHUB_OUTPUT"
           mkdir -p audits/upkeep
@@ -81,7 +89,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
-          claude_args: --max-turns 400 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 400 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md, docs/claude/question-quality.md and each task's docs/exams/<examId>.md and
             .claude/skills/exam-bank/SKILL.md, then ${{ steps.pick.outputs.file }}. Nobody
@@ -128,16 +136,29 @@ jobs:
             task: what you checked, the official sources, and what you changed (or why
             nothing needed to change). Do not commit.
 
+      - name: Record API spend (fix)
+        if: always() && (steps.fix.outcome == 'success' || steps.fix.outcome == 'failure')
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts record exam-upkeep --file "${{ steps.fix.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
+
+      - name: API budget (verify)
+        id: budget_verify
+        if: steps.pick.outputs.count != '0' && steps.fix.outcome == 'success'
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts check exam-upkeep 3
+
       - name: Verify independently
         id: verify
-        if: steps.pick.outputs.count != '0' && steps.fix.outcome == 'success'
+        if: steps.pick.outputs.count != '0' && steps.fix.outcome == 'success' && steps.budget_verify.outputs.ok == 'true'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
-          claude_args: --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_verify.outputs.cap }} --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
           prompt: |
             You are the second reviewer of an automatic update to Tigertest's exams
             (tasks in ${{ steps.pick.outputs.file }}, summary in
@@ -154,6 +175,12 @@ jobs:
 
             Write ${{ runner.temp }}/verify.json:
             { "ok": true or false, "objections": [ { "what": "...", "why": "one sentence" } ] }
+
+      - name: Record API spend (verify)
+        if: always() && (steps.verify.outcome == 'success' || steps.verify.outcome == 'failure')
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: npx tsx scripts/api-budget.ts record exam-upkeep --file "${{ steps.verify.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       - name: Check the work
         id: checks

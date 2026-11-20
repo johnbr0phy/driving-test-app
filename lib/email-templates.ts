@@ -35,6 +35,8 @@ interface ShellOptions {
   lang?: string;
   footerNote?: string;
   privacyLabel?: string;
+  /** Full-width image across the top of the card, in place of the tiger and label. */
+  banner?: { src: string; alt: string; width: number; height: number };
 }
 
 /** Body paragraph in house style. */
@@ -72,7 +74,7 @@ export function signoff(lead = "Good luck,"): string {
 
 function emailShell({
   title, preheader, heading, body, voice, expression = 3,
-  eyebrow = "YOUR NEXT STUDY STEP", unsubscribe = true, lang = "en", footerNote, privacyLabel = "Privacy Policy",
+  eyebrow = "YOUR NEXT STUDY STEP", unsubscribe = true, lang = "en", footerNote, privacyLabel = "Privacy Policy", banner,
 }: ShellOptions): string {
   const brand = emailBrand(voice?.id, expression);
   const label = brand.known && voice ? `TIGERTEST · ${esc(voice.shortName.toUpperCase())} PRACTICE` : "TIGERTEST";
@@ -92,10 +94,14 @@ function emailShell({
 ${emailPreheader(preheader)}
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: ${brand.light};"><tr><td align="center" style="padding: 30px 12px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="width: 100%; max-width: 560px; background-color: #ffffff; border: 1px solid ${brand.border}; border-radius: 18px; overflow: hidden;">
-<tr><td align="center" style="padding: 28px 28px 12px;">
+${banner
+  ? `<tr><td style="padding: 0; line-height: 0;">
+<img src="${banner.src}" width="${banner.width}" height="${banner.height}" alt="${esc(banner.alt)}" style="width: 100%; max-width: ${banner.width}px; height: auto; display: block; border: 0;">
+</td></tr>`
+  : `<tr><td align="center" style="padding: 28px 28px 12px;">
 <img src="${brand.tiger}" width="100" height="100" alt="${brand.known && voice ? esc(voice.shortName) + ' practice tiger' : 'Tigertest tiger'}" style="width: 100px; height: 100px; display: block; border: 0;">
 <p style="font-size: 12px; letter-spacing: 2px; font-weight: 700; color: ${brand.accent}; margin: 13px 0 0;">${label}</p>
-</td></tr>
+</td></tr>`}
 <tr><td class="email-body" style="padding: 25px 32px 30px;">
 <p style="font-size: 10px; letter-spacing: 1.7px; font-weight: 700; color: ${brand.accent}; margin: 0 0 11px;">${esc(eyebrow)}</p>
 <h1 class="email-heading" style="font-size: 29px; line-height: 1.2; letter-spacing: -0.7px; color: ${brand.ink}; margin: 0 0 23px;">${esc(heading)}</h1>
@@ -610,10 +616,16 @@ export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
 export const MILLIONTH_SUBJECT = "You answered our 1,000,000th question 🎉";
 
 export function millionthEmail(v: EmailVoice, c: { firstName: string | null; alreadyPremium: boolean }): string {
-  // No exam branding: the site's own crowned tiger and "TIGERTEST" at the top.
+  // No exam branding: the 1,000,000 celebration banner across the top.
   // The button still goes to the dashboard of the test they last studied.
   return emailShell({
     expression: 1,
+    banner: {
+      src: `${SITE}/email/million-questions.jpg`,
+      alt: "Tigertest tigers celebrating 1,000,000 questions answered, now with 500 tests",
+      width: 560,
+      height: 295,
+    },
     eyebrow: "1,000,000 QUESTIONS",
     title: MILLIONTH_SUBJECT,
     preheader: "The question that took Tigertest to a million was yours. Premium is on us.",

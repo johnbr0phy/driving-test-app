@@ -76,6 +76,7 @@ export const nl: TranslationKeys = {
     moreToUnlock: "nog om training en toetsen te ontgrendelen",
     freeBottomYourStats: "Jouw statistieken",
     freeBottomCommonMistakes: "Veelgemaakte fouten",
+    urgencyTitle: "Weinig tijd? Leer eerst de vragen die iedereen fout heeft.",
     freeBottomDesc: "Examen binnenkort? Oefen de 20 vragen die iedereen fout heeft.",
     premiumBottomYourStats: "Jouw statistieken",
     premiumBottomCommonMistakes: "Veelgemaakte fouten",

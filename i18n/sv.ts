@@ -77,6 +77,7 @@ export const sv: TranslationKeys = {
     moreToUnlock: "kvar tills träning och prov låses upp",
     freeBottomYourStats: "Din statistik",
     freeBottomCommonMistakes: "Vanliga fel",
+    urgencyTitle: "Ont om tid? Plugga först på frågorna som alla svarar fel på.",
     freeBottomDesc: "Provet snart? Öva på de 20 frågor som nästan alla svarar fel på.",
     premiumBottomYourStats: "Din statistik",
     premiumBottomCommonMistakes: "Vanliga fel",

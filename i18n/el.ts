@@ -77,6 +77,7 @@ export const el: TranslationKeys = {
     moreToUnlock: "ακόμα για να ξεκλειδώσεις την εξάσκηση και τα τεστ",
     freeBottomYourStats: "Τα στατιστικά σου",
     freeBottomCommonMistakes: "Συχνά λάθη",
+    urgencyTitle: "Λίγος χρόνος; Μελέτησε πρώτα τις ερωτήσεις που όλοι κάνουν λάθος.",
     freeBottomDesc: "Έχεις εξέταση σύντομα; Δούλεψε τις 20 ερωτήσεις που οι περισσότεροι απαντούν λάθος.",
     premiumBottomYourStats: "Τα στατιστικά σου",
     premiumBottomCommonMistakes: "Συχνά λάθη",

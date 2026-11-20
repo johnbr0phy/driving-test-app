@@ -77,6 +77,7 @@ export const da: TranslationKeys = {
     moreToUnlock: "mere, før træning og prøver låses op",
     freeBottomYourStats: "Din statistik",
     freeBottomCommonMistakes: "Typiske fejl",
+    urgencyTitle: "Kort tid? Lær først de spørgsmål, alle dumper på.",
     freeBottomDesc: "Prøve snart? Øv de 20 spørgsmål, som næsten alle svarer forkert på.",
     premiumBottomYourStats: "Din statistik",
     premiumBottomCommonMistakes: "Typiske fejl",

@@ -77,6 +77,7 @@ export const ro: TranslationKeys = {
     moreToUnlock: "până deblochezi antrenamentul și testele",
     freeBottomYourStats: "Statisticile tale",
     freeBottomCommonMistakes: "Greșeli frecvente",
+    urgencyTitle: "Ai puțin timp? Învață mai întâi întrebările la care greșește toată lumea.",
     freeBottomDesc: "Ai examenul curând? Exersează cele 20 de întrebări la care greșește aproape toată lumea.",
     premiumBottomYourStats: "Statisticile tale",
     premiumBottomCommonMistakes: "Greșeli frecvente",

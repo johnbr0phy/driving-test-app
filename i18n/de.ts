@@ -77,6 +77,7 @@ export const de: TranslationKeys = {
     moreToUnlock: "noch bis zum Freischalten von Training und Tests",
     freeBottomYourStats: "Deine Statistiken",
     freeBottomCommonMistakes: "Häufige Fehler",
+    urgencyTitle: "Wenig Zeit? Lerne zuerst die Fragen, an denen alle scheitern.",
     freeBottomDesc: "Prüfung bald? Übe die 20 Fragen, an denen fast alle scheitern.",
     premiumBottomYourStats: "Deine Statistiken",
     premiumBottomCommonMistakes: "Häufige Fehler",

@@ -1,0 +1,4726 @@
+[
+  {
+    "id": "ENCOR-T1-001",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Password types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An audit finds $\\texttt{username admin password 7 0822455D0A16}$ in a router's configuration. Why is this a risk?",
+    "explanation": "Cisco treats type 7 like plain text: it is a Vigenere cipher with a static, publicly known key, so it can be reversed. Type 5 is the MD5 hash; Cisco recommends type 9 or 8 for stored secrets.",
+    "options": [
+      "Type 7 stores the password in plain text",
+      "Type 7 is an MD5 hash that is quick to crack",
+      "Type 7 cannot be used for local logins",
+      "Type 7 is reversible with a known key"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-002",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "Three-tier design",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a three-tier campus, which layer aggregates the access switches and is the usual place for routing and policy between them and the core?",
+    "explanation": "The distribution layer aggregates access switches and is where Layer 3 boundaries, summarization and policy usually sit. The core is kept for fast transport between distribution blocks.",
+    "options": [
+      "Access layer",
+      "Core layer",
+      "Edge services layer",
+      "Distribution layer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-003",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python scripts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A variable raw holds the text $\\texttt{\\{\"up\": true, \"vlans\": [10, 20]\\}}$. Refer to the script.\n$$\\begin{array}{l}\\texttt{import json}\\\\\\texttt{data = json.loads(raw)}\\\\\\texttt{print(type(data[\"vlans\"]).\\_\\_name\\_\\_)}\\end{array}$$\nWhat does it print?",
+    "explanation": "json.loads turns a JSON array into a Python list and a JSON object into a dict, so data[\"vlans\"] is a list.",
+    "options": [
+      "tuple",
+      "str",
+      "dict",
+      "list"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-004",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP feasibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which condition makes an EIGRP neighbor a feasible successor for a route?",
+    "explanation": "The feasibility condition is RD < FD: the neighbor's advertised distance must be lower than the router's current best (feasible) distance, which proves the path is loop free.",
+    "options": [
+      "Its hello and hold timers match the local router",
+      "Its feasible distance is lower than the successor's",
+      "Its reported distance is lower than its own total metric",
+      "Its reported distance is below the feasible distance"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-005",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "Hypervisor types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where does a type 2 (hosted) hypervisor run?",
+    "explanation": "Hosted virtualization runs the hypervisor as software on a host OS. Bare metal (type 1) hypervisors run directly on the hardware, and some are even built into firmware.",
+    "options": [
+      "On top of a host operating system",
+      "Directly on the server hardware",
+      "Inside the server's firmware",
+      "On a separate management controller"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-006",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "MST",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In MST, what is instance 0 called?",
+    "explanation": "Instance 0 is the IST, a special RSTP instance that extends the common spanning tree inside an MST region. The other instances are MSTIs.",
+    "options": [
+      "Common spanning tree (CST)",
+      "Per-VLAN spanning tree (PVST)",
+      "Multiple spanning tree instance 1",
+      "Internal spanning tree (IST)"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-007",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Conditional debugging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has dozens of busy interfaces. How can an engineer limit a protocol debug's output to traffic on Gi0/1 only?",
+    "explanation": "Conditionally triggered debugging with $\\texttt{debug condition interface}$ restricts debug output to that interface; with no condition set, output appears for all interfaces.",
+    "options": [
+      "$\\texttt{debug condition interface Gi0/1}$",
+      "$\\texttt{show debugging interface Gi0/1}$",
+      "$\\texttt{debug interface Gi0/1 events}$",
+      "$\\texttt{logging buffered debugging}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-008",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "NTP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the output.\n$$\\begin{array}{l}\\texttt{R2\\#show ntp status}\\\\\\texttt{Clock is unsynchronized, stratum 16, no reference clock}\\end{array}$$\nWhat does stratum 16 mean?",
+    "explanation": "NTPv4 reserves stratum 16 for unsynchronized clocks. Stratum 1 is a primary server and 2 to 15 are secondary servers synchronized through NTP.",
+    "options": [
+      "R2 is not synchronized to any source",
+      "R2 is 16 hops from a primary server",
+      "R2 is a primary server with a GPS clock",
+      "R2 is synchronized with low accuracy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-009",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Password types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Cisco credential type is a PBKDF2 hash with SHA-256?",
+    "explanation": "Type 8 is PBKDF2-SHA-256 with an 80-bit salt and 20,000 iterations. Type 9 is scrypt, type 6 is reversible AES encryption and type 5 is MD5.",
+    "options": [
+      "Type 6",
+      "Type 8",
+      "Type 5",
+      "Type 9"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-010",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "Two-tier design",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A small campus uses a collapsed core design. Which two layers of the three-tier model are combined?",
+    "explanation": "A collapsed (two-tier) core merges the core and distribution layers into one pair of switches, while access switches stay separate. It suits sites too small to justify a separate core.",
+    "options": [
+      "Access and distribution",
+      "Core and distribution",
+      "Distribution and edge",
+      "Core and access"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-011",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python scripts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the script.\n$$\\begin{array}{l}\\texttt{ports = \\{\"Gi1/0/1\": \"up\", \"Gi1/0/2\": \"down\", \"Gi1/0/3\": \"up\"\\}}\\\\\\texttt{count = 0}\\\\\\texttt{for name, state in ports.items():}\\\\\\texttt{\\ \\ \\ \\ if state == \"up\":}\\\\\\texttt{\\ \\ \\ \\ \\ \\ \\ \\ count += 1}\\\\\\texttt{print(count)}\\end{array}$$\nWhat does it print?",
+    "explanation": "items() yields each key and value pair, and the loop adds one for each port whose state is \"up\": Gi1/0/1 and Gi1/0/3, so 2.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ENCOR-T1-012",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP feasibility",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "R1's best path to 10.9.0.0/16 has a feasible distance of 3000. Neighbors report these distances to it: B 2500, C 3200, D 3000. Which neighbor qualifies as a feasible successor?",
+    "explanation": "Only a reported distance strictly lower than the FD of 3000 passes, so B (2500) qualifies. D's 3000 is equal, not lower, and C's 3200 is higher.",
+    "options": [
+      "C",
+      "B and D",
+      "D",
+      "B"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-013",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "AAA method lists",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A router has $\\texttt{aaa authentication login default group tacacs+ local}$. The TACACS+ server is reachable and rejects a user's password. What happens?",
+    "explanation": "The next method in the list is tried only when the previous one gives no response. A reachable server that rejects the password is a final answer, so local is not consulted.",
+    "options": [
+      "The router asks for a new server",
+      "The local database is checked",
+      "The login is refused",
+      "The enable password is tried"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-014",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "Virtual switching",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a virtual switch inside a hypervisor connect?",
+    "explanation": "A virtual switch forwards frames between the virtual NICs of guest VMs on the host and out through the host's physical NICs.",
+    "options": [
+      "Hypervisor management to the host BIOS",
+      "VM NICs to each other and to uplinks",
+      "Physical switches in separate data centers",
+      "Storage controllers to virtual disk images"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-015",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "MST regions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the MST settings of two neighbor switches.\n$$\\begin{array}{l}\\texttt{SW1: name CAMPUS\\ \\ revision 2\\ \\ instance 1 vlan 10-20}\\\\\\texttt{SW2: name CAMPUS\\ \\ revision 3\\ \\ instance 1 vlan 10-20}\\end{array}$$\nThe switches treat each other as being in different regions. Why?",
+    "explanation": "Switches share a region only when the region name, revision number and VLAN-to-instance mapping all match. Here the name and mapping agree but the revisions (2 and 3) do not.",
+    "options": [
+      "The revision numbers differ",
+      "The region names are case sensitive",
+      "Instance 0 holds no VLANs",
+      "Instance 1 needs a priority set"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-016",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "SNMPv3",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SNMPv3 security level both authenticates and encrypts messages?",
+    "explanation": "authPriv adds privacy (encryption) to authentication. The user-based security model never offers privacy without authentication, so there is no privNoAuth level.",
+    "options": [
+      "noAuthNoPriv",
+      "privNoAuth",
+      "authPriv",
+      "authNoPriv"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-017",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "Stateful switchover",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chassis has two supervisors in SSO mode and the active one fails. What happens next?",
+    "explanation": "With stateful switchover, state for HA-aware features is synchronized to the standby, so it becomes active without a reload. Booting the standby only at failure describes the older route processor redundancy (RPR) mode.",
+    "options": [
+      "Neighbors route around the chassis until it reloads",
+      "Standby takes over with synchronized state",
+      "Both supervisors reload to elect a new active",
+      "Standby boots from scratch and rebuilds state"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-018",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python components",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In Python, which data type stores values under named keys, like a JSON object?",
+    "explanation": "A dict maps keys to values and is what json.loads returns for a JSON object. Lists and tuples are ordered sequences indexed by position.",
+    "options": [
+      "Frozenset",
+      "Tuple",
+      "List",
+      "Dictionary"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-019",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TACACS+",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Which TCP port is allocated to TACACS+? Type the number only.",
+    "explanation": "RFC 8907: TCP server port 49 is allocated by IANA for TACACS+ traffic. RADIUS uses UDP 1812 for authentication.",
+    "numeric": {
+      "answers": [
+        "49"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T1-020",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "PTP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Precision Time Protocol, which clock type has several PTP ports and uses the best master clock algorithm to sync from the best clock it sees?",
+    "explanation": "A boundary clock has more than one PTP port, each a separate path, and chooses the best upstream clock with the BMCA. A transparent clock only adjusts the timing field of passing messages.",
+    "options": [
+      "Transparent clock",
+      "Ordinary clock",
+      "Grandmaster clock",
+      "Boundary clock"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-021",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP metric",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "With default K values, which two path values make up the EIGRP composite metric?",
+    "explanation": "With K1 = K3 = 1 and the others 0, the metric uses the minimum bandwidth along the path and the sum of the outbound interface delays, scaled by 256 (classic) or 65536 (wide).",
+    "options": [
+      "Reliability and total delay",
+      "Hop count and interface load",
+      "Slowest bandwidth and total delay",
+      "Total bandwidth and slowest delay"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-022",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TACACS+",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of a TACACS+ packet is left unobfuscated on the wire?",
+    "explanation": "TACACS+ obfuscates the whole packet body with a pad derived from the shared secret, but the header stays in clear text. RFC 8907 calls it obfuscation, not real encryption.",
+    "options": [
+      "The packet header",
+      "The command being authorized",
+      "The accounting record",
+      "The username field"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-023",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Catalyst SD-WAN, which component keeps the central table of OMP routes and applies centralized control policy?",
+    "explanation": "The SD-WAN Controller (formerly vSmart) is the control plane: it holds OMP routes and applies policy. The Manager is the management GUI and the Validator handles onboarding.",
+    "options": [
+      "SD-WAN Validator",
+      "SD-WAN Manager",
+      "WAN edge router",
+      "SD-WAN Controller"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-024",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "JSON",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script loads this JSON into data: $\\texttt{\\{\"interfaces\": [\\{\"name\": \"Gi1/0/1\"\\}, \\{\"name\": \"Gi1/0/2\"\\}]\\}}$. Which expression returns Gi1/0/2?",
+    "explanation": "The object becomes a dict, its interfaces array a list indexed from 0, so element 1 is the second interface and [\"name\"] reads its value. Index 2 would be past the end of the list.",
+    "options": [
+      "$\\texttt{data[1][\"interfaces\"][\"name\"]}$",
+      "$\\texttt{data[\"name\"][1]}$",
+      "$\\texttt{data[\"interfaces\"][1][\"name\"]}$",
+      "$\\texttt{data[\"interfaces\"][2][\"name\"]}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-025",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VRF verification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command shows the routing table of VRF CUST-A on a Cisco IOS XE router?",
+    "explanation": "Routing information for a VRF is kept apart from the global table and is displayed with $\\texttt{show ip route vrf}$ followed by the VRF name. The plain $\\texttt{show ip route}$ shows only the global table.",
+    "options": [
+      "$\\texttt{show ip route vrf CUST-A}$",
+      "$\\texttt{show ip vrf detail CUST-A}$",
+      "$\\texttt{show ip vrf interfaces}$",
+      "$\\texttt{show vrf CUST-A routes}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-026",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "MST configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In MST configuration mode, which command maps VLANs 10 to 20 to instance 1?",
+    "explanation": "VLANs are mapped to an MST instance with $\\texttt{instance}$ inside $\\texttt{spanning-tree mst configuration}$. The mapping is one of the three values that must match across the region.",
+    "options": [
+      "$\\texttt{vlan 10-20 mst 1}$",
+      "$\\texttt{instance 1 vlan 10-20}$",
+      "$\\texttt{revision 1 vlan 10-20}$",
+      "$\\texttt{spanning-tree mst 1 vlan 10-20}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-027",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Flexible NetFlow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a Flexible NetFlow record, what is the difference between $\\texttt{match}$ and $\\texttt{collect}$ fields?",
+    "explanation": "Key fields set with $\\texttt{match}$ decide which packets belong to one flow; nonkey fields set with $\\texttt{collect}$ add counters and timestamps, and changing them does not start a new flow.",
+    "options": [
+      "Match fields count bytes; collect fields count packets",
+      "Match fields are exported; collect fields stay on the device",
+      "Match fields are for IPv4; collect fields are for IPv6",
+      "Match fields define a flow; collect fields add data to it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-028",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL processing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A packet matches no entry in an ACL applied to an interface. What happens to it?",
+    "explanation": "Every ACL ends with an implicit deny all, so traffic that no entry permits is dropped.",
+    "options": [
+      "It is denied by the implicit deny",
+      "It is checked against the next ACL",
+      "It is permitted by the implicit permit",
+      "It is logged and then forwarded"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-029",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP vs OSPF",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which routing protocol is an advanced distance vector protocol rather than a link-state protocol?",
+    "explanation": "EIGRP uses DUAL and learns routes from neighbors' reported distances, so it is called advanced distance vector. OSPF and IS-IS build a full link-state database of the area.",
+    "options": [
+      "IS-IS",
+      "OSPFv3",
+      "OSPFv2",
+      "EIGRP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-030",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Catalyst SD-WAN component authenticates new devices, pairs them with controllers and needs a public IP address for NAT traversal?",
+    "explanation": "The SD-WAN Validator (formerly vBond) orchestrates onboarding: it authenticates devices, tells them where the controllers are and helps with NAT traversal. It is the one component that needs a public address.",
+    "options": [
+      "SD-WAN Manager",
+      "Cloud onRamp gateway",
+      "SD-WAN Controller",
+      "SD-WAN Validator"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-031",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "JSON",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A JSON value is written $\\texttt{\"enabled\": True}$. Why does a parser reject it?",
+    "explanation": "JSON's literal names true, false and null must be lowercase. Python's True becomes true when json.dumps writes it.",
+    "options": [
+      "Keys may not hold boolean values",
+      "JSON literals must be lowercase",
+      "Boolean values must be quoted",
+      "JSON has no boolean data type"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-032",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "NAT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many inside hosts must share one public address on R1's outside interface. Which keyword on the $\\texttt{ip nat inside source list}$ command enables this?",
+    "explanation": "$\\texttt{overload}$ turns on PAT, which tracks each session by port so many inside local addresses share one inside global address.",
+    "options": [
+      "$\\texttt{static}$",
+      "$\\texttt{extendable}$",
+      "$\\texttt{pool}$",
+      "$\\texttt{overload}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-033",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL processing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the ACL.\n$$\\begin{array}{l}\\texttt{access-list 110 permit tcp any host 10.1.1.5 eq 443}\\\\\\texttt{access-list 110 deny\\ \\ \\ tcp 10.2.2.0 0.0.0.255 any}\\\\\\texttt{access-list 110 permit ip any any}\\end{array}$$\nHost 10.2.2.20 opens a TCP session to 10.1.1.5 port 443. What happens?",
+    "explanation": "Entries are checked in order and the first match wins. The first entry matches any source going to 10.1.1.5 on port 443, so the deny for 10.2.2.0/24 is never reached.",
+    "options": [
+      "It is denied by the implicit deny",
+      "It is denied by the second entry",
+      "It is permitted by the third entry",
+      "It is permitted by the first entry"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-034",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VRF-lite",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two routers run VRF-lite with VRFs RED and BLUE between them. What does each VRF need on the link between the routers?",
+    "explanation": "VRF-lite has no MPLS labels to tell traffic apart, so each VRF needs its own interface or subinterface (often an 802.1Q subinterface) between the routers.",
+    "options": [
+      "Its own physical router chassis",
+      "Its own subinterface or link",
+      "Its own BGP autonomous system",
+      "Its own MPLS label stack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-035",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "Root guard",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should root guard be enabled in a campus whose root bridges are in the distribution layer?",
+    "explanation": "Root guard goes on designated ports where the root must never appear, so an access switch that starts sending superior BPDUs cannot take over as root.",
+    "options": [
+      "Every port on the root bridge's peer link",
+      "Access ports facing the distribution layer",
+      "Only trunk ports between two root bridges",
+      "Distribution ports facing access switches"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-036",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Flexible NetFlow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command starts a Flexible NetFlow monitor called FNF-MON on traffic received on an interface?",
+    "explanation": "The flow monitor is the piece applied to interfaces, with $\\texttt{ip flow monitor}$ and a direction of input or output. Exporters are attached to the monitor, not to interfaces.",
+    "options": [
+      "$\\texttt{ip flow-export destination FNF-MON}$",
+      "$\\texttt{service-policy input FNF-MON}$",
+      "$\\texttt{ip flow monitor FNF-MON input}$",
+      "$\\texttt{flow exporter FNF-MON input}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-037",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN TLOC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Besides an IP address, which TLOC value names the WAN transport, such as mpls or biz-internet?",
+    "explanation": "A TLOC is identified by an IP address and a color, and the color (mpls, biz-internet and so on) names the transport. OMP advertises TLOCs as TLOC routes.",
+    "options": [
+      "Site ID",
+      "Color",
+      "Region ID",
+      "Label"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-038",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "YANG",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a YANG model, which statement defines a node that can exist many times, each entry identified by key leafs?",
+    "explanation": "A list is an interior node with multiple instances identified by keys. A container exists at most once, a leaf holds one value and a leaf-list holds a set of simple values.",
+    "options": [
+      "container",
+      "leaf-list",
+      "leaf",
+      "list"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-039",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF summarization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command on an ABR summarizes area 1's internal networks 10.1.0.0 to 10.1.255.255 into one route for other areas?",
+    "explanation": "$\\texttt{area range}$ summarizes intra-area routes at the ABR. $\\texttt{summary-address}$ summarizes external routes redistributed at an ASBR.",
+    "options": [
+      "$\\texttt{area 1 range 10.1.0.0 255.255.0.0}$",
+      "$\\texttt{area 1 stub no-summary}$",
+      "$\\texttt{summary-address 10.1.0.0 255.255.0.0}$",
+      "$\\texttt{ip summary-address ospf 1 10.1.0.0/16}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-040",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL keywords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the $\\texttt{established}$ keyword match in an extended TCP ACL entry?",
+    "explanation": "$\\texttt{established}$ matches TCP packets with the ACK or RST bit set, the sign of an existing session, so return traffic passes while new inbound connections do not.",
+    "options": [
+      "Any TCP segment from a trusted host",
+      "Sessions logged in the NAT table",
+      "Only the SYN of a new connection",
+      "TCP segments with ACK or RST set"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-041",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "CoPP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does control plane policing (CoPP) protect?",
+    "explanation": "CoPP applies a QoS policy to the control plane so routing protocols, management and other traffic destined to the device cannot overwhelm its CPU. Transit traffic is handled by interface ACLs and QoS.",
+    "options": [
+      "Hosts behind the router from port scans",
+      "Transit traffic passing through the router",
+      "Route processor from traffic aimed at it",
+      "Wireless clients from rogue access points"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-042",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN data plane",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol runs inside Catalyst SD-WAN data plane tunnels to detect path failure quickly?",
+    "explanation": "BFD runs over the IPsec tunnels between edge routers to detect loss and failure quickly. OMP runs over the control connections to the controllers, not across edge-to-edge tunnels.",
+    "options": [
+      "NETCONF",
+      "BFD",
+      "OMP",
+      "LACP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-043",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "YANG",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which YANG statement marks part of a model as state data rather than configuration?",
+    "explanation": "The config statement marks a subtree as configuration (true, the default) or operational state (false).",
+    "options": [
+      "$\\texttt{mandatory false}$",
+      "$\\texttt{when false}$",
+      "$\\texttt{status obsolete}$",
+      "$\\texttt{config false}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-044",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "VRRP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which VRRPv3 priority does a router use when it owns the virtual router's IP address on its own interface?",
+    "explanation": "The address owner always uses priority 255 and always preempts. Backups use 1 to 254 with a default of 100, and priority 0 signals that the master is leaving.",
+    "options": [
+      "0",
+      "100",
+      "254",
+      "255"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ENCOR-T1-045",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "GRE",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Which IP protocol number identifies GRE packets carried in IPv4? Type the number only.",
+    "explanation": "RFC 2784 says IPv4 protocol 47 is used when GRE packets are encapsulated in IPv4. ESP is 50 and AH is 51.",
+    "numeric": {
+      "answers": [
+        "47"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T1-046",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "BPDU guard",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch has $\\texttt{spanning-tree portfast bpduguard default}$ in its global configuration. Which ports does BPDU guard cover?",
+    "explanation": "The global form applies BPDU guard to PortFast-enabled ports. To protect a port without PortFast, use $\\texttt{spanning-tree bpduguard enable}$ on that interface.",
+    "options": [
+      "Only ports with PortFast enabled",
+      "Every port, trunk ports included",
+      "Only ports in VLAN 1",
+      "Every access port on the switch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-047",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "RSPAN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must be done to the VLAN that carries RSPAN traffic on every switch in the path?",
+    "explanation": "The RSPAN VLAN is created with $\\texttt{remote-span}$ in VLAN configuration mode on every participating switch, and RSPAN traffic flows only on trunk ports.",
+    "options": [
+      "Give it an SVI with an IP address",
+      "Set it as the trunk's native VLAN",
+      "Remove it from every trunk link",
+      "Configure it with $\\texttt{remote-span}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-048",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF area types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which LSA type is kept out of an OSPF stub area?",
+    "explanation": "Stub areas exclude type 5 AS-external LSAs, and the ABR sends a default route instead. A totally stubby area also drops type 3 summaries except the default.",
+    "options": [
+      "Type 2 network LSAs",
+      "Type 5 external LSAs",
+      "Type 3 inter-area LSAs",
+      "Type 1 router LSAs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-049",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "CoPP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How is a CoPP policy-map applied on IOS XE?",
+    "explanation": "You enter $\\texttt{control-plane}$ mode and attach the policy with $\\texttt{service-policy input}$. On Catalyst 9000 switches the system-cpp-policy is applied there, ingress only.",
+    "options": [
+      "$\\texttt{service-policy input}$ under $\\texttt{control-plane}$",
+      "$\\texttt{service-policy input}$ under $\\texttt{router ospf 1}$",
+      "$\\texttt{ip access-group}$ under $\\texttt{line vty 0 4}$",
+      "$\\texttt{service-policy output}$ on each interface"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-050",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access control plane",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The SD-Access fabric control plane node is built on which function?",
+    "explanation": "The control plane node combines the LISP map-server and map-resolver roles and tracks which edge node each endpoint sits behind. ISE supplies policy, not endpoint location.",
+    "options": [
+      "BGP route reflector",
+      "VXLAN flood-and-learn list",
+      "LISP map-server and map-resolver",
+      "ISE policy service node"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-051",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Catalyst Center API",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script must call the Catalyst Center intent API. Where does it get a token?",
+    "explanation": "The authentication API takes a POST with Basic authentication (Base64 username:password) and returns a token. /j_security_check is the SD-WAN Manager login.",
+    "options": [
+      "GET to /restconf/data/token resource",
+      "POST to /j_security_check form login",
+      "GET to /dna/intent/api/v1/token",
+      "POST to /dna/system/api/v1/auth/token"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-052",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "REST API security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What transport does RFC 8040 require for RESTCONF?",
+    "explanation": "RFC 8040 says RESTCONF must not be used over HTTP without TLS, so credentials and data are always encrypted. SSH is NETCONF's mandatory transport.",
+    "options": [
+      "Plain HTTP on port 80",
+      "SSH on port 830",
+      "HTTP with basic auth",
+      "HTTPS with TLS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-053",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF NSSA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ASBR inside an NSSA redistributes static routes. As what LSA type do they enter the NSSA?",
+    "explanation": "NSSA ASBRs originate type 7 LSAs, which look like type 5 apart from their type. The NSSA ABR translates selected type 7s into type 5 for the rest of the domain.",
+    "options": [
+      "Type 7",
+      "Type 3",
+      "Type 4",
+      "Type 5"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-054",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "GRE overhead",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A basic GRE tunnel with no optional fields is carried over IPv4. How many bytes do the new IPv4 header and the basic GRE header add to each packet? Type the number only.",
+    "explanation": "The new outer IPv4 header is 20 bytes and the basic GRE header is 4 bytes, so 24 bytes are added. Optional checksum or key fields would add more.",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T1-055",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "Errdisable recovery",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An engineer enables $\\texttt{errdisable recovery cause bpduguard}$ and sets no interval. After how many seconds does the switch try to recover the port? Type the number only.",
+    "explanation": "The default errdisable recovery interval is 300 seconds, and recovery itself is off until a cause is enabled. $\\texttt{errdisable recovery interval}$ changes the timer.",
+    "numeric": {
+      "answers": [
+        "300"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T1-056",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "ERSPAN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does ERSPAN carry mirrored traffic to a remote analyzer across a routed network?",
+    "explanation": "ERSPAN encapsulates the copies in GRE (protocol 47), so they can cross Layer 3. RSPAN, by contrast, needs a dedicated VLAN carried on trunks.",
+    "options": [
+      "Inside IPsec ESP",
+      "Inside GRE packets",
+      "Inside VXLAN frames",
+      "Inside an RSPAN VLAN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-057",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "PIM sparse mode",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In PIM sparse mode, where is the shared (*,G) tree rooted?",
+    "explanation": "PIM-SM builds unidirectional shared trees rooted at a rendezvous point for each group; receivers' last-hop routers join toward the RP.",
+    "options": [
+      "First-hop router",
+      "Rendezvous point",
+      "Designated forwarder",
+      "Last-hop router"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-058",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which SD-Access node is the gateway between the fabric site and networks outside the fabric?",
+    "explanation": "Border nodes connect the fabric to external networks; an external border can act as the gateway of last resort. Edge nodes attach endpoints, and intermediate nodes only route IP inside the underlay.",
+    "options": [
+      "Extended node",
+      "Intermediate node",
+      "Border node",
+      "Edge node"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-059",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Catalyst Center API",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a script send its Catalyst Center token with later API calls?",
+    "explanation": "The token must be set as the value of the X-Auth-Token HTTP header on every call. The JSESSIONID cookie belongs to SD-WAN Manager sessions.",
+    "options": [
+      "In the URL query string",
+      "In the X-Auth-Token header",
+      "In the Authorization header",
+      "In a JSESSIONID cookie"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-060",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Next-generation firewall",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two capabilities does a next-generation firewall such as Cisco Secure Firewall add to stateful filtering? (Choose two.)",
+    "explanation": "Cisco Secure Firewall combines the stateful firewall with Snort IPS, URL filtering, application control and malware defense. The other options are switching and routing functions.",
+    "options": [
+      "Spanning tree root protection",
+      "DHCP address assignment",
+      "Intrusion prevention",
+      "URL filtering",
+      "OSPF route summarization"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "ENCOR-T1-061",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPFv3",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How is OSPFv3 enabled for area 0 on an IOS XE interface, using the traditional configuration?",
+    "explanation": "OSPFv3 has no $\\texttt{network}$ statements for IPv6 prefixes; it is enabled per interface. The network type command only changes how the link is treated.",
+    "options": [
+      "$\\texttt{ospfv3 network point-to-point}$ on it",
+      "$\\texttt{ipv6 ospf 1 area 0}$ on the interface",
+      "$\\texttt{ipv6 router ospf 1 area 0}$ globally",
+      "$\\texttt{network 2001:db8::/32 area 0}$ under the process"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-062",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TrustSec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Cisco TrustSec, what enforces policy between two security groups?",
+    "explanation": "Enforcement uses security group ACLs, downloaded for each source and destination SGT pair. SXP propagates tags and MKA manages MACsec keys.",
+    "options": [
+      "SGACL",
+      "Port ACL",
+      "SXP",
+      "MKA"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-063",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access segmentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Guests and employees must be separated at Layer 3 inside one SD-Access fabric, in the same way a VRF separates them. Which construct does this?",
+    "explanation": "A virtual network is the macro-segmentation construct and is equivalent to a VRF. SGTs provide micro-segmentation between groups inside one virtual network.",
+    "options": [
+      "Virtual network",
+      "Anycast gateway",
+      "Security group tag",
+      "Fabric site"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-064",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "REST response codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A RESTCONF PUT that replaces an existing interface configuration succeeds. Which status code comes back?",
+    "explanation": "RFC 8040 returns 201 Created when PUT creates a resource and 204 No Content when it replaces an existing one; there is no body to send back.",
+    "options": [
+      "201 Created",
+      "202 Accepted",
+      "200 OK with body",
+      "204 No Content"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-065",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "IPsec ESP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which IPsec ESP mode protects the entire original IP packet and adds a new outer IP header?",
+    "explanation": "In tunnel mode ESP protects the whole inner packet, including its header, under a new outer header. Transport mode keeps the original header; main and aggressive mode describe IKEv1 phase 1, not ESP.",
+    "options": [
+      "Transport mode",
+      "Aggressive mode",
+      "Tunnel mode",
+      "Main mode"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-066",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "EtherChannel modes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "SW1's ports use $\\texttt{channel-group 5 mode on}$ and SW2's use $\\texttt{channel-group 5 mode active}$. What is the result?",
+    "explanation": "On mode sends no LACP or PAgP packets, so it only works when both ends are set to on. The active side never hears an LACP partner and does not bundle.",
+    "options": [
+      "SW2 falls back to mode on",
+      "A PAgP channel forms",
+      "No working channel forms",
+      "An LACP channel forms"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-067",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "IP SLA",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the steps of setting up an IP SLA probe that a static route will track in order.",
+    "explanation": "The probe must exist and be scheduled before it produces results, the track object follows the probe's reachability, and the static route is withdrawn when the track goes down.",
+    "options": [
+      "Define the probe with $\\texttt{ip sla 10}$ and $\\texttt{icmp-echo}$",
+      "Start it with $\\texttt{ip sla schedule 10 life forever start-time now}$",
+      "Create $\\texttt{track 1 ip sla 10 reachability}$",
+      "Add $\\texttt{track 1}$ to the static route"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-068",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TrustSec",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the TrustSec functions in the order a packet meets them.",
+    "explanation": "TrustSec first classifies the endpoint into a security group, then carries the tag through the network by inline tagging or SXP, and finally enforces policy at a point that knows both source and destination groups.",
+    "options": [
+      "Classification assigns an SGT",
+      "Propagation carries the SGT",
+      "Enforcement applies the SGACL"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-069",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "IGMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which capability does IGMPv3 add over IGMPv2?",
+    "explanation": "IGMPv3 adds source filtering, so a host can ask for traffic only from specific sources. Low leave latency was what IGMPv2 added over IGMPv1.",
+    "options": [
+      "Joining a group only from chosen sources",
+      "Leaving a group with low latency",
+      "Electing a querier on the segment",
+      "Joining a group with a membership report"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-070",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "QoS configuration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Refer to the policy below.\n$$\\begin{array}{l}\\texttt{policy-map WAN-OUT}\\\\\\texttt{\\ class VOICE}\\\\\\texttt{\\ \\ priority percent 20}\\\\\\texttt{\\ class class-default}\\\\\\texttt{\\ \\ fair-queue}\\end{array}$$\nWhat treatment does VOICE traffic get when the link is congested?",
+    "explanation": "The $\\texttt{priority}$ command builds a low-latency queue that is serviced first and policed to its rate during congestion, so voice cannot starve other classes. A $\\texttt{bandwidth}$ statement would give a guarantee without strict priority.",
+    "options": [
+      "Shaped to 20 percent at all times",
+      "Strict priority, policed to 20 percent",
+      "Remarked to EF and sent after other queues",
+      "Guaranteed 20 percent, but no priority"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-071",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "REST response codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A RESTCONF GET asks for an interface that does not exist on the device. Which status code is returned?",
+    "explanation": "RFC 8040 maps a request for a data instance that does not exist to 404 Not Found with error-tag invalid-value.",
+    "options": [
+      "409 Conflict",
+      "400 Bad Request",
+      "403 Forbidden",
+      "404 Not Found"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-072",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP neighbor states",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new eBGP session keeps cycling between Connect and Active and never reaches OpenSent. What does that point to?",
+    "explanation": "Connect and Active are the states where BGP tries to set up its TCP session on port 179. Reaching OpenSent requires the TCP connection; AS and hold time are checked only after OPEN messages are exchanged.",
+    "options": [
+      "No prefixes have been advertised by either peer",
+      "The peers send OPEN messages with the same AS",
+      "The two peers disagree on the hold time value",
+      "TCP on port 179 is not completing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-073",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "MACsec",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which IEEE standard defines MACsec?",
+    "explanation": "MACsec is IEEE 802.1AE, which authenticates and encrypts frames between two MACsec-capable devices. 802.1X is port-based network access control.",
+    "options": [
+      "802.3ad",
+      "802.1AE",
+      "802.1Q",
+      "802.1X"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-074",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "LISP roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which LISP device encapsulates packets leaving a LISP site toward EIDs at another site?",
+    "explanation": "The ITR looks up the destination EID's RLOCs and encapsulates the packet. The ETR at the far site decapsulates it and delivers it locally.",
+    "options": [
+      "Egress tunnel router (ETR)",
+      "Ingress tunnel router (ITR)",
+      "Map-Server (MS)",
+      "Proxy egress tunnel router (PETR)"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-075",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "EtherChannel modes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "SW1's ports use PAgP $\\texttt{desirable}$ and SW2's use PAgP $\\texttt{auto}$. What is the result?",
+    "explanation": "A desirable port starts PAgP negotiation, and an auto port answers it, so the pair forms a channel. Two auto ports never form one because neither starts.",
+    "options": [
+      "Only one link stays up",
+      "An LACP channel forms",
+      "No channel forms",
+      "A PAgP channel forms"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-076",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Syslog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which syslog severity level is the most severe?",
+    "explanation": "Severities run from 0 Emergency (system unusable) to 7 Debug. Alert is 1, Critical is 2 and Error is 3.",
+    "options": [
+      "3 Error",
+      "0 Emergency",
+      "2 Critical",
+      "7 Debug"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-077",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "QoS drop precedence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Video packets are marked AF41, AF42 and AF43 and share one queue. Under congestion, which marking is dropped first?",
+    "explanation": "In assured forwarding AFxy, x is the class and y the drop precedence, and packets with the higher drop precedence value are discarded first. AF43 therefore goes before AF42 and AF41.",
+    "options": [
+      "AF43",
+      "AF41",
+      "CS4",
+      "AF42"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-078",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "EEM applets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the applet.\n$$\\begin{array}{l}\\texttt{event manager applet UPLINK-DOWN}\\\\\\texttt{\\ event syslog pattern \"Interface GigabitEthernet1/0/48, changed state to down\"}\\\\\\texttt{\\ action 1.0 cli command \"enable\"}\\\\\\texttt{\\ action 2.0 cli command \"show interfaces Gi1/0/48\"}\\end{array}$$\nWhen does this applet run?",
+    "explanation": "The event syslog detector matches logged messages against the pattern. A CLI detector would use $\\texttt{event cli}$, and a manual-only applet would use $\\texttt{event none}$.",
+    "options": [
+      "When someone types a matching CLI command",
+      "When a matching syslog message is logged",
+      "Only when run by hand with event manager run",
+      "Every 48 seconds on a countdown timer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T1-079",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Password types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should $\\texttt{enable secret}$ be used instead of $\\texttt{enable password}$?",
+    "explanation": "enable secret stores a hashed value (type 9 or 8 is recommended), while enable password is stored in plain text or weak type 7 at best.",
+    "options": [
+      "The password has a shorter maximum length",
+      "The password works only on the console",
+      "The secret is checked by the AAA server",
+      "The secret is stored as a one-way hash"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-080",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP best path",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two paths to the same prefix have equal weight. Path A has local preference 200 and AS path length 4; path B has local preference 100 and AS path length 1. Which path wins?",
+    "explanation": "Local preference is compared before AS path length, and higher is better, so path A wins despite its longer AS path.",
+    "options": [
+      "Path B",
+      "Both, load shared",
+      "Neither, discarded",
+      "Path A"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-081",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "SSM",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which IPv4 address range is set aside for source-specific multicast?",
+    "explanation": "RFC 4607 designates 232/8 for SSM. 224.0.0.0/24 is for link-local control traffic such as routing protocols.",
+    "options": [
+      "232.0.0.0/8",
+      "233.0.0.0/8",
+      "224.0.0.0/24",
+      "239.0.0.0/8"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-082",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Endpoint security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does Cisco Secure Endpoint add when it shares threat data with Cisco Secure Firewall?",
+    "explanation": "Cisco lists integrated threat correlation with Secure Endpoint as an option for Secure Firewall, so a threat seen on the network can be tied to activity on the host.",
+    "options": [
+      "Issuing of certificates to endpoints",
+      "Encryption of the endpoint's disk",
+      "Correlating host and network events",
+      "Routing of traffic around infected hosts"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-083",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "QoS shaping and policing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A WAN policy must hold excess traffic in a buffer and send it later instead of dropping it. Which command does that?",
+    "explanation": "Shaping queues the excess and releases it at the configured rate, which smooths bursts. Policing drops or remarks traffic that exceeds the rate rather than delaying it.",
+    "options": [
+      "$\\texttt{shape average 50000000}$",
+      "$\\texttt{bandwidth 50000}$",
+      "$\\texttt{police 50000000}$",
+      "$\\texttt{random-detect}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-084",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "EEM applets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In what order do the actions of an EEM applet run?",
+    "explanation": "Actions run in label order, compared as strings, which is why Cisco suggests zero-padded labels such as 01.0 and 02.0 so 10.0 does not sort before 2.0.",
+    "options": [
+      "By label, sorted as text",
+      "In the order they were typed",
+      "All at the same time",
+      "By the event's priority"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-085",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "LISP registration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a LISP ETR register the EID prefixes of its site?",
+    "explanation": "ETRs send Map-Register messages to a Map-Server to publish their EID prefixes and RLOCs. ITRs send their Map-Requests to the Map-Resolver.",
+    "options": [
+      "With the Map-Server",
+      "With the proxy ETR",
+      "With the remote ITR",
+      "With the Map-Resolver"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-086",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP port states",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "How many port states does Rapid Spanning Tree (802.1w) define? Type the number only.",
+    "explanation": "RSTP merges 802.1D's disabled, blocking and listening states into discarding, leaving three: discarding, learning and forwarding.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T1-087",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "NETCONF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A NETCONF $\\texttt{edit-config}$ gives no operation attribute on its data. Which operation is used?",
+    "explanation": "merge is the default operation for edit-config. create fails if the data exists, and remove deletes data if present.",
+    "options": [
+      "merge",
+      "replace",
+      "create",
+      "remove"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-088",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP weight",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the scope of the Cisco BGP weight attribute?",
+    "explanation": "Weight is Cisco specific and local to the router; it is never advertised. Local preference is the attribute shared across the AS through iBGP.",
+    "options": [
+      "Sent to eBGP peers in other ASes",
+      "Shared with all iBGP peers in the AS",
+      "Local to the router where it is set",
+      "Carried to every router in the domain"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-089",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which fields can a numbered standard IPv4 ACL match?",
+    "explanation": "Standard ACLs compare only the source address. Extended ACLs add destination address, protocol and port numbers.",
+    "options": [
+      "Source address only",
+      "Destination address and port",
+      "Source address and protocol",
+      "Source and destination addresses"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-090",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN planes",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each Catalyst SD-WAN component to the plane it serves.",
+    "explanation": "SD-WAN Manager is the management plane GUI, the Controller is the control plane brain, the Validator orchestrates onboarding and the WAN edge routers carry the data plane traffic.",
+    "rows": [
+      "SD-WAN Manager",
+      "SD-WAN Controller",
+      "SD-WAN Validator",
+      "WAN edge router"
+    ],
+    "columns": [
+      "Management",
+      "Control",
+      "Orchestration",
+      "Data"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-091",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Orchestration tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes how Puppet manages its nodes by default?",
+    "explanation": "Puppet is agent-based: every 30 minutes by default each agent sends facts to the primary server and requests its catalog. Ansible is the agentless tool that connects over SSH.",
+    "options": [
+      "Server pushes tasks over SSH, no agent",
+      "Controller sends NETCONF to each node",
+      "Agent on each node pulls a catalog",
+      "Nodes run playbooks copied by hand"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-092",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "RADIUS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a RADIUS server return the authorization values for a user, such as a privilege level?",
+    "explanation": "RADIUS combines authentication and authorization: the user's configuration values come back in the Access-Accept. TACACS+ runs authorization as its own exchange.",
+    "options": [
+      "In an Accounting-Response",
+      "In the Access-Challenge",
+      "In the Access-Accept",
+      "In a separate authorization reply"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-093",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "RPF check",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a multicast router check in an RPF check?",
+    "explanation": "Reverse path forwarding accepts a multicast packet only if it arrives on the interface the router would use to reach the source (or the RP on a shared tree). Packets failing the check are dropped to prevent loops.",
+    "options": [
+      "That a packet's source has joined the multicast group",
+      "That a packet came from the elected designated router",
+      "That a packet came in the interface toward its source",
+      "That a packet's TTL is above the interface threshold"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-094",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VXLAN",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Which UDP destination port has IANA assigned to VXLAN? Type the number only.",
+    "explanation": "RFC 7348 says IANA assigned 4789 for the VXLAN UDP port, and it should be the default. LISP data packets use 4341.",
+    "numeric": {
+      "answers": [
+        "4789"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T1-095",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP edge ports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An RSTP edge port (PortFast) connected to a PC receives a BPDU. What happens?",
+    "explanation": "An edge port that receives a BPDU loses its edge status and becomes a normal spanning tree port. Err-disable happens only if BPDU guard is also enabled.",
+    "options": [
+      "It is placed in the err-disabled state at once",
+      "It moves to the root-inconsistent state",
+      "It ignores the BPDU and keeps forwarding as edge",
+      "It loses edge status and acts as a normal port"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T1-096",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "RESTCONF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which media type tells a RESTCONF server that a request body is YANG data in JSON?",
+    "explanation": "RESTCONF defines application/yang-data+json and application/yang-data+xml for YANG-modeled data.",
+    "options": [
+      "application/yang-data+json",
+      "application/netconf+xml",
+      "application/json-rpc+yang",
+      "text/yang-data+json"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-097",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "Policy-based routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where is a PBR route map applied to policy-route traffic arriving from a LAN?",
+    "explanation": "PBR acts on packets as they are received, so the route map is attached with $\\texttt{ip policy route-map}$ on the interface where the traffic arrives.",
+    "options": [
+      "$\\texttt{ip policy route-map}$ on the LAN interface",
+      "$\\texttt{ip access-group}$ on the LAN interface",
+      "$\\texttt{route-map}$ under the OSPF process",
+      "$\\texttt{ip policy route-map}$ on the WAN interface"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T1-098",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN benefits",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are benefits of the Catalyst SD-WAN solution? (Choose two.)",
+    "explanation": "SD-WAN centralizes management and policy and treats any transport as part of one overlay. It still needs WAN edge routers and controllers, and it cannot make an internet path guarantee latency.",
+    "options": [
+      "WAN edge routers are no longer required at branches",
+      "Broadband, LTE and MPLS links used side by side",
+      "No controllers to deploy or keep redundant",
+      "Policy defined once and pushed from a central manager",
+      "Fixed latency guaranteed over internet circuits"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "ENCOR-T1-099",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "SD-WAN Manager API",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each SD-WAN Manager API step to what it provides.",
+    "explanation": "The login POST returns the JSESSIONID session cookie, the token call returns the XSRF token that POST requests must carry, and API data sits under the /dataservice/ base path.",
+    "rows": [
+      "POST /j_security_check",
+      "GET /dataservice/client/token",
+      "Calls under /dataservice/"
+    ],
+    "columns": [
+      "JSESSIONID cookie",
+      "X-XSRF-TOKEN value",
+      "Device and policy data"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T1-100",
+    "section": "encor",
+    "test": 1,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "REST API security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script calls a REST API with a valid token but gets 403 Forbidden. What does that mean?",
+    "explanation": "RFC 8040 uses 403 when an authenticated client lacks the access rights, for example POST without create permission. 401 means missing or bad credentials, 404 not found and 405 method not allowed.",
+    "options": [
+      "The method is not allowed on that URL",
+      "User lacks rights for that action",
+      "The URL does not name a real resource",
+      "The token was missing or not recognized"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-001",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Password types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these Cisco credential types does Cisco recommend for hashed secrets such as local user passwords?",
+    "explanation": "Cisco recommends type 9, scrypt, or type 8 where regulations require PBKDF2. Types 0, 5 and 7 should be avoided.",
+    "options": [
+      "Type 5 (MD5)",
+      "Type 9 (scrypt)",
+      "Type 0 (plain text)",
+      "Type 7 (Vigenere)"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-002",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "Three-tier design",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which layer of a three-tier campus should forward traffic as fast as possible and carry the least policy?",
+    "explanation": "The core moves traffic between distribution blocks at high speed and avoids heavy policy, so it stays simple and resilient. Policy belongs at the distribution layer.",
+    "options": [
+      "Services layer",
+      "Access layer",
+      "Core layer",
+      "Distribution layer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-003",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python scripts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the script.\n$$\\begin{array}{l}\\texttt{vlans = [10, 20, 30]}\\\\\\texttt{vlans.append(40)}\\\\\\texttt{print(vlans[-1] + vlans[0])}\\end{array}$$\nWhat does it print?",
+    "explanation": "append adds 40 at the end, index -1 is the last element (40) and index 0 is the first (10), so 40 + 10 = 50.",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "70"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ENCOR-T2-004",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP load balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "R1 has $\\texttt{variance 2}$ under EIGRP. A second path has a metric under twice the best path's, but its neighbor is not a feasible successor. Is it used?",
+    "explanation": "Variance adds paths whose metric is within the multiplier of the best one, but only if they are feasible successors. The default variance of 1 means equal-cost load balancing.",
+    "options": [
+      "No, it must also be a feasible successor",
+      "No, variance 2 allows equal cost only",
+      "Yes, but only for traffic share min",
+      "Yes, variance includes any path in range"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-005",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "Hypervisor types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "According to NIST SP 800-125, which form of full virtualization is most often used for desktops?",
+    "explanation": "NIST notes that servers are most often virtualized with bare metal hypervisors and desktops most often with hosted virtualization, which runs alongside the user's own applications.",
+    "options": [
+      "Container virtualization",
+      "Firmware virtualization",
+      "Hosted virtualization",
+      "Bare metal virtualization"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-006",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "802.1Q trunking",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "VLANs 10 and 20 are allowed on trunk Gi1/0/1. Which command adds VLAN 40 without removing the others?",
+    "explanation": "The $\\texttt{add}$ keyword appends to the existing allowed list. Without it, the command replaces the list with VLAN 40 only, a common way to cut off traffic by mistake.",
+    "options": [
+      "$\\texttt{switchport trunk allowed vlan except 40}$",
+      "$\\texttt{switchport trunk allowed vlan 40}$",
+      "$\\texttt{switchport trunk native vlan 40}$",
+      "$\\texttt{switchport trunk allowed vlan add 40}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-007",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Flexible NetFlow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Flexible NetFlow monitor must send records to two different collectors. What is needed?",
+    "explanation": "Each flow exporter supports a single destination, so sending to two collectors needs two exporters, both attached to the monitor.",
+    "options": [
+      "Two flow exporters on the monitor",
+      "Two flow records on the interface",
+      "Two monitors in one input direction",
+      "Two destinations under one exporter"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-008",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "NTP modes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two routers each use the other as a time source and can synchronize in either direction. Which NTP mode is this?",
+    "explanation": "In symmetric mode, peers both push and pull synchronization. In client/server mode, servers do not accept synchronization from their clients.",
+    "options": [
+      "Broadcast client/server",
+      "Manycast client",
+      "Symmetric active/passive",
+      "Client/server unicast"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-009",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Password types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which Cisco credential type is reversible yet still considered secure, because it depends on a device master key?",
+    "explanation": "Type 6 is AES encryption with a master key that is never shown in the configuration, so the device can recover the secret when it must. Types 8 and 9 are one-way hashes.",
+    "options": [
+      "Type 9",
+      "Type 6",
+      "Type 8",
+      "Type 7"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-010",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "Fabric design",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a spine-leaf fabric, every leaf connects to every spine and spines do not connect to each other. How many spine switches does traffic cross between two leaves? Type the number only.",
+    "explanation": "Leaf to spine to leaf: any two leaves are one spine apart, which gives every path the same length. Adding spines adds bandwidth and paths, not hops.",
+    "numeric": {
+      "answers": [
+        "1"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T2-011",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python scripts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Refer to the script.\n$$\\begin{array}{l}\\texttt{import requests}\\\\\\texttt{r = requests.get(url, headers=hdrs)}\\\\\\texttt{if r.status\\_code == 200:}\\\\\\texttt{\\ \\ \\ \\ devices = r.json()[\"response\"]}\\end{array}$$\nWhat does r.json() do?",
+    "explanation": "r.json() decodes the response body into Python objects, so a JSON object becomes a dict that can be indexed by key. It does not check whether the request succeeded; status_code does that.",
+    "options": [
+      "Encodes the headers as JSON",
+      "Parses the response body as JSON",
+      "Retries the request until it succeeds",
+      "Checks the server's TLS certificate"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-012",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP DUAL",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An EIGRP router loses its successor for a prefix and has no feasible successor. What does it do?",
+    "explanation": "Without a feasible successor the route goes active, and the router sends queries and waits for replies before the route returns to passive. EIGRP sends no periodic updates.",
+    "options": [
+      "Floods its topology table to all routers",
+      "Goes active and queries its neighbors",
+      "Removes the route and stops looking",
+      "Waits for the next periodic update"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-013",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "AAA method lists",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A router has $\\texttt{aaa authentication login default group tacacs+ local}$ and every TACACS+ server is down. What happens when an admin logs in?",
+    "explanation": "When a method gives no response, the next method in the list is tried, so the local database checks the login. This is why a local fallback user is kept.",
+    "options": [
+      "The local user database is used",
+      "The enable secret is used instead",
+      "The line password is used instead",
+      "The login is refused until a server returns"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-014",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "Virtual machines",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is a VM's disk image?",
+    "explanation": "Hypervisors present virtual hard drives through disk images: a file on the host that looks to the guest OS like an entire disk drive.",
+    "options": [
+      "A partition reserved on the host BIOS",
+      "A snapshot of the hypervisor's memory",
+      "Host file the guest sees as a disk",
+      "A backup copy kept only on tape"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-015",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "802.1Q trunking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A trunk is configured on SW1 with no $\\texttt{switchport trunk allowed vlan}$ command. Which VLANs may it carry?",
+    "explanation": "By default every VLAN ID from 1 to 4094 is allowed on a trunk. The allowed list is then trimmed with add, remove, except or a specific list.",
+    "options": [
+      "1 to 1005",
+      "1 to 4094",
+      "Only VLAN 1",
+      "None until listed"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-016",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Flexible NetFlow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Flexible NetFlow exporter has no $\\texttt{export-protocol}$ command. Which format does it use?",
+    "explanation": "Cisco documents version 9 as the default when no export protocol is set; IPFIX must be chosen explicitly.",
+    "options": [
+      "sFlow version 5",
+      "NetFlow version 9",
+      "IPFIX",
+      "NetFlow version 5"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-017",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "Nonstop forwarding",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is nonstop forwarding (NSF) deployed together with stateful switchover (SSO)?",
+    "explanation": "SSO keeps the standby in sync, and NSF continues forwarding with the existing forwarding table after the switchover while routing protocols recover. Cisco documents SSO as a prerequisite for NSF; load sharing across supervisors is not supported.",
+    "options": [
+      "The standby supervisor boots its own configuration",
+      "Both supervisors forward traffic at the same time",
+      "Neighbors drop the router until it reloads",
+      "Packets keep flowing while routing reconverges"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-018",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python components",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Python statement brings the json module into a script?",
+    "explanation": "Python loads modules with import. include, using and require come from other languages.",
+    "options": [
+      "$\\texttt{require json}$",
+      "$\\texttt{import json}$",
+      "$\\texttt{include json}$",
+      "$\\texttt{using json}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-019",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "RADIUS",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Which UDP destination port do RADIUS authentication requests use? Type the number only.",
+    "explanation": "RFC 2865 sets UDP port 1812 for RADIUS authentication. TACACS+ uses TCP port 49.",
+    "numeric": {
+      "answers": [
+        "1812"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T2-020",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "PTP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a PTP transparent clock do with timing messages that pass through it?",
+    "explanation": "A transparent clock adjusts the time-interval field of event messages to account for its own delay. It does not act as a slave or master the way a boundary clock does.",
+    "options": [
+      "Ends the session and syncs as a slave",
+      "Becomes grandmaster for the downstream ports",
+      "Corrects their timing field for its delay",
+      "Drops them unless they match its domain"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-021",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP timers",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "EIGRP sends hellos every 5 seconds by default on a LAN. What is the default hold time in seconds? Type the number only.",
+    "explanation": "The default hold time is three times the hello interval, 15 seconds. If no hello arrives in that time, the neighbor is declared down.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T2-022",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "RADIUS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of a RADIUS Access-Request is hidden using the shared secret?",
+    "explanation": "RADIUS hides only the User-Password attribute, using an MD5-based process with the shared secret; the rest of the packet is sent in clear. TACACS+ obfuscates the whole body.",
+    "options": [
+      "Entire packet body",
+      "User-Password attribute",
+      "Packet header and code",
+      "NAS-IP-Address attribute"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-023",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN components",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Catalyst SD-WAN component is the GUI that stores device configurations and pushes them as devices come online?",
+    "explanation": "SD-WAN Manager (formerly vManage) is the centralized management system with the dashboard, configuration templates and certificates. The Controller handles OMP routes and policy.",
+    "options": [
+      "SD-WAN Controller",
+      "SD-WAN Validator",
+      "WAN edge router",
+      "SD-WAN Manager"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-024",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "JSON",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Python object does json.loads return for the JSON value null?",
+    "explanation": "The decoder maps null to None, true to True and false to False. A string \"null\" would only come from a quoted JSON string.",
+    "options": [
+      "False",
+      "\"null\"",
+      "0",
+      "None"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-025",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VRF verification",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command tests reachability to 10.8.8.1 inside VRF CUST-B?",
+    "explanation": "A plain ping uses the global routing table. $\\texttt{ping vrf}$ with the VRF name sends the probe using that VRF's table.",
+    "options": [
+      "$\\texttt{ping CUST-B 10.8.8.1}$",
+      "$\\texttt{ping vrf CUST-B 10.8.8.1}$",
+      "$\\texttt{traceroute 10.8.8.1 global}$",
+      "$\\texttt{ping 10.8.8.1 vrf}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-026",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "MST configuration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which global command enters MST configuration mode to set the region name, revision and VLAN mapping?",
+    "explanation": "$\\texttt{spanning-tree mst configuration}$ opens the mode where $\\texttt{name}$, $\\texttt{revision}$ and $\\texttt{instance}$ are set. $\\texttt{spanning-tree mode mst}$ only turns MST on.",
+    "options": [
+      "$\\texttt{spanning-tree mst 1 priority 4096}$",
+      "$\\texttt{spanning-tree mst configuration}$",
+      "$\\texttt{spanning-tree region}$",
+      "$\\texttt{spanning-tree mode mst}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-027",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "SPAN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While a SPAN session is active, how does its destination port behave?",
+    "explanation": "A SPAN destination port is dedicated to monitoring: it does not receive normal traffic and does not take part in Layer 2 protocols such as STP, VTP, CDP, DTP or PAgP while the session is active.",
+    "options": [
+      "It forwards normal traffic as before",
+      "It sends BPDUs to the analyzer port",
+      "It joins the source port's VLAN",
+      "It takes no part in STP, CDP or DTP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-028",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "RADIUS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A RADIUS server answers an Access-Request with Access-Challenge. What does it want?",
+    "explanation": "Access-Challenge asks the user for more input, for example a token code, before the server decides with Access-Accept or Access-Reject.",
+    "options": [
+      "More information, such as a one-time code",
+      "The NAS to retry with a new shared secret",
+      "An accounting record for the session",
+      "The user to be logged out of the device"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-029",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF summarization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command summarizes routes that an OSPF ASBR redistributes from another protocol?",
+    "explanation": "$\\texttt{summary-address}$ covers redistributed (external) routes so only one summary is advertised. $\\texttt{area range}$ works only on intra-area routes at an ABR.",
+    "options": [
+      "$\\texttt{default-information originate always}$",
+      "$\\texttt{area 0 nssa default-information-originate}$",
+      "$\\texttt{area 0 range 172.16.0.0 255.255.0.0}$",
+      "$\\texttt{summary-address 172.16.0.0 255.255.0.0}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-030",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "OMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The Overlay Management Protocol in Catalyst SD-WAN works most like which routing protocol?",
+    "explanation": "Cisco describes OMP as a routing protocol similar to BGP: it carries routes, next hops, keys and policy over the control connections between edges and controllers.",
+    "options": [
+      "BGP",
+      "RIP",
+      "OSPF",
+      "EIGRP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-031",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "JSON",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does $\\texttt{json.dumps(True)}$ return in Python?",
+    "explanation": "The encoder maps Python True to the JSON literal true, written in lowercase as JSON requires. It does not convert booleans to 1.",
+    "options": [
+      "$\\texttt{1}$",
+      "$\\texttt{\"True\"}$",
+      "$\\texttt{True}$",
+      "$\\texttt{true}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-032",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "NAT terms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Cisco NAT terms, what is the inside global address?",
+    "explanation": "Inside local is the inside host's own (often private) address; inside global is the legitimate address that represents it to the outside world.",
+    "options": [
+      "Public address standing for an inside host",
+      "Private address assigned to an inside host",
+      "Address an outside host's owner assigned it",
+      "Outside host's address as seen from inside"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-033",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fields can an extended IPv4 ACL match that a standard ACL cannot?",
+    "explanation": "Extended ACLs match destination address, protocol and port numbers as well as source. Standard ACLs see only the source address.",
+    "options": [
+      "Only the source address and mask",
+      "DSCP marking and packet length only",
+      "Destination, protocol and port numbers",
+      "Source MAC address and the VLAN ID"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-034",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "GRE tunnels",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two commands are required on a GRE tunnel interface besides its IP address? (Choose two.)",
+    "explanation": "A GRE tunnel needs a source and a destination; GRE over IP is the default tunnel mode. A tunnel key is optional, and a crypto map or IPsec tunnel mode is only for encryption.",
+    "options": [
+      "$\\texttt{tunnel key}$",
+      "$\\texttt{tunnel source}$",
+      "$\\texttt{crypto map}$",
+      "$\\texttt{tunnel mode ipsec ipv4}$",
+      "$\\texttt{tunnel destination}$"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "ENCOR-T2-035",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "MST regions",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which three settings must match for two switches to be in the same MST region? (Choose three.)",
+    "explanation": "An MST region is defined by its name, revision and VLAN-to-instance mapping, and all three must be the same on every switch. Priorities and the root's identity can differ.",
+    "options": [
+      "Region name",
+      "Root bridge address",
+      "VLAN-to-instance mapping",
+      "Bridge priority",
+      "Revision number"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "select": 3
+  },
+  {
+    "id": "ENCOR-T2-036",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "RSPAN",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Mirrored frames leave an RSPAN destination port. What has happened to their original VLAN IDs?",
+    "explanation": "The original VLAN ID is overwritten by the RSPAN VLAN ID in transit, so packets leave the destination port untagged with their original VLAN lost.",
+    "options": [
+      "They are kept, stacked under a new tag",
+      "They are moved into an ERSPAN header",
+      "They are rewritten to the native VLAN",
+      "Lost: frames leave the port untagged"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-037",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN control connections",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How are Catalyst SD-WAN control connections between edge routers and controllers secured?",
+    "explanation": "Control connections run inside DTLS or TLS tunnels, with TLS 1.3 support on recent releases. Edge-to-edge data plane tunnels use IPsec with keys distributed through the controllers.",
+    "options": [
+      "GRE without encryption",
+      "IPsec with manual keys",
+      "SSH sessions on port 22",
+      "DTLS or TLS tunnels"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-038",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "YANG",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In YANG, which node holds a set of values of one simple type, such as several DNS server addresses?",
+    "explanation": "A leaf-list is like a leaf but holds a set of uniquely identifiable values. A grouping is a reusable set of nodes brought in with uses.",
+    "options": [
+      "grouping",
+      "leaf",
+      "container",
+      "leaf-list"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-039",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF area types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command, configured on the ABR, makes area 2 totally stubby?",
+    "explanation": "$\\texttt{no-summary}$ on the ABR stops type 3 summary LSAs as well as type 5, leaving only a default route. The other routers in the area need only $\\texttt{area 2 stub}$.",
+    "options": [
+      "$\\texttt{area 2 range 0.0.0.0 0.0.0.0}$",
+      "$\\texttt{area 2 stub}$",
+      "$\\texttt{area 2 nssa}$",
+      "$\\texttt{area 2 stub no-summary}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-040",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL wildcards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which ACL source matches every host from 172.16.8.0 to 172.16.15.255?",
+    "explanation": "172.16.8.0 to 172.16.15.255 is a /21, whose wildcard is 0.0.7.255. 0.0.15.255 would also include 172.16.0.0 to 172.16.7.255, and a subnet mask is not a wildcard.",
+    "options": [
+      "$\\texttt{172.16.8.0 0.0.8.255}$",
+      "$\\texttt{172.16.8.0 0.0.7.255}$",
+      "$\\texttt{172.16.8.0 255.255.248.0}$",
+      "$\\texttt{172.16.8.0 0.0.15.255}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-041",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL application",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which command filters traffic entering Gi0/0 with ACL 120?",
+    "explanation": "$\\texttt{ip access-group}$ with $\\texttt{in}$ applies the ACL to traffic received on the interface. $\\texttt{access-class}$ filters vty sessions on a line.",
+    "options": [
+      "$\\texttt{ip access-group 120 out}$",
+      "$\\texttt{ip access-list 120 in}$",
+      "$\\texttt{ip access-group 120 in}$",
+      "$\\texttt{access-class 120 in}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-042",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Edge routers advertise a symmetric IPsec key for each TLOC. Which component reflects those keys to the other edges?",
+    "explanation": "Keys travel in OMP to the Controller, which reflects them to the other edges, so the data plane IPsec tunnels need no manual configuration. The Manager handles configuration, not keys in OMP.",
+    "options": [
+      "SD-WAN Manager",
+      "SD-WAN Controller",
+      "Each edge's BFD peer",
+      "SD-WAN Validator"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-043",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "YANG",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which YANG statement adds new nodes into an existing model at a given point?",
+    "explanation": "augment adds nodes to an existing schema location, which is how vendors extend standard models. typedef defines a derived type and grouping a reusable node set.",
+    "options": [
+      "typedef",
+      "grouping",
+      "import",
+      "augment"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-044",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "VRRP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VRRP master sends an advertisement with priority 0. What does it mean?",
+    "explanation": "Priority 0 tells the backups that the current master has stopped participating, so a backup can take over without waiting for the master-down timer.",
+    "options": [
+      "It wants a new election timer",
+      "It owns the virtual IP address",
+      "It has the default priority",
+      "It is leaving the VRRP group"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-045",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "GRE and IPsec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is GRE run over IPsec rather than GRE alone between two sites across the internet?",
+    "explanation": "GRE encapsulates any network layer protocol but provides no confidentiality. IPsec ESP adds encryption and integrity, so GRE over IPsec gives both multiprotocol support and protection.",
+    "options": [
+      "GRE cannot carry IPv4 unicast traffic",
+      "GRE gives no encryption of its own",
+      "GRE adds too much overhead without it",
+      "GRE needs IPsec to reach the far end"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-046",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP port roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which RSTP port role offers a blocked, standby path toward the root bridge that can replace the root port?",
+    "explanation": "An alternate port leads to the root through a different bridge. A backup port gives redundant connectivity to a segment the switch already reaches through another of its own ports.",
+    "options": [
+      "Designated",
+      "Alternate",
+      "Edge",
+      "Backup"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-047",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "ERSPAN",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An ERSPAN source session on R1 and a destination session on R2 are set up, but no traffic arrives. Which value must be the same in both sessions?",
+    "explanation": "The ERSPAN ID identifies the flow and must match on both ends, along with the GRE destination address. Session numbers are local and can differ.",
+    "options": [
+      "Source interface",
+      "Session number",
+      "Destination VLAN",
+      "ERSPAN ID"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-048",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF LSAs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which router originates the type 3 summary LSAs that carry one area's networks into another area?",
+    "explanation": "ABRs connect area 0 to other areas and describe each area's networks to the others with type 3 summary LSAs. ASBRs originate type 5 (or type 7) external LSAs.",
+    "options": [
+      "Designated router",
+      "Area border router",
+      "Backup designated router",
+      "AS boundary router"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-049",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "CoPP",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "On a Catalyst 9000 switch, in which direction is the system CoPP policy applied?",
+    "explanation": "Cisco documents the system-cpp-policy on the control plane interface in the ingress direction only; user-defined class maps are not supported there since 16.8.1a.",
+    "options": [
+      "Ingress to the control plane only",
+      "Egress from the control plane only",
+      "Ingress on every physical interface",
+      "Both directions on the control plane"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-050",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In SD-Access, which node is the equivalent of an access layer switch in a traditional campus?",
+    "explanation": "Fabric edge nodes attach endpoints and encapsulate their traffic into the fabric, the role an access switch plays in a classic campus.",
+    "options": [
+      "Control plane node",
+      "Intermediate node",
+      "Border node",
+      "Edge node"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-051",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are YANG models used with NETCONF and RESTCONF?",
+    "explanation": "YANG describes the structure, types and constraints of configuration, state, RPCs and notifications, so a client and device agree on the data. Transport and storage are separate.",
+    "options": [
+      "They replace TLS as the transport security",
+      "They schedule changes for maintenance windows",
+      "They define the data structure and types",
+      "They store the device's running configuration"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-052",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "REST API security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How long is a Catalyst Center API token valid after it is issued?",
+    "explanation": "The authentication API returns a token that remains valid for one hour; scripts request a new one after that.",
+    "options": [
+      "24 hours",
+      "1 hour",
+      "Until logout",
+      "30 minutes"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-053",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "OSPF NSSA",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An NSSA has two ABRs. Which one normally translates the area's type 7 LSAs into type 5?",
+    "explanation": "RFC 3101 elects one translator: the border router with the highest router ID, unless another is set to always translate.",
+    "options": [
+      "The ABR that is also the DR",
+      "The ABR with the highest router ID",
+      "The ABR with the lowest router ID value",
+      "Both ABRs, for redundancy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-054",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "IKEv2",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two IPsec peers detect NAT between them. Which UDP port do they move their IKEv2 messages to?",
+    "explanation": "IKE normally uses UDP 500, and NAT traversal moves to UDP 4500 so traffic can pass the NAT. 50 is the ESP protocol number, not a UDP port.",
+    "options": [
+      "50",
+      "500",
+      "1701",
+      "4500"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ENCOR-T2-055",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP convergence",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does RSTP move a designated port to forwarding quickly on a point-to-point link, without waiting for timers?",
+    "explanation": "The designated port sends a proposal; the neighbor syncs by blocking its non-edge designated ports and answers with an agreement, so the port can forward at once. This works on edge and point-to-point links only.",
+    "options": [
+      "Proposal and agreement handshake",
+      "Faster hello timer of 1 second",
+      "Shorter forward delay timer",
+      "Topology change BPDUs to the root"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-056",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "IP SLA tracking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which static route is removed when IP SLA-based track object 1 goes down?",
+    "explanation": "The $\\texttt{track 1}$ keyword ties the route to the track object, which follows the IP SLA probe's reachability. A permanent route stays even when its interface fails.",
+    "options": [
+      "$\\texttt{ip route 0.0.0.0 0.0.0.0 Null0 track}$",
+      "$\\texttt{ip route 0.0.0.0 0.0.0.0 203.0.113.1 permanent}$",
+      "$\\texttt{ip route 0.0.0.0 0.0.0.0 203.0.113.1 250}$",
+      "$\\texttt{ip route 0.0.0.0 0.0.0.0 203.0.113.1 track 1}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-057",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "PIM sparse mode",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A source starts sending to a group. How does its first-hop designated router get the traffic to the RP?",
+    "explanation": "The first-hop DR encapsulates the source's packets in Register messages unicast to the RP. The RP sends Register-Stop once it no longer needs the encapsulated copies.",
+    "options": [
+      "Floods it out every PIM-enabled interface",
+      "Encapsulates it in unicast Register messages",
+      "Waits for the RP to pull it with an Assert",
+      "Sends a (*,G) Join toward the rendezvous point"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-058",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must an SD-Access intermediate node support?",
+    "explanation": "Intermediate nodes only route and transport IP traffic between devices in fabric roles; they need no LISP or VXLAN support.",
+    "options": [
+      "LISP registration of endpoints",
+      "VXLAN encapsulation toward edges",
+      "SGT enforcement for each group",
+      "Plain IP routing in the underlay"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-059",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "REST response codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A RESTCONF PATCH succeeds and the server includes a message body in its reply. Which status code comes back?",
+    "explanation": "RFC 8040 returns 200 OK for a successful PATCH with a message body and 204 No Content without one. 201 Created is for PUT or POST that creates a new resource.",
+    "options": [
+      "200 OK",
+      "202 Accepted",
+      "204 No Content",
+      "201 Created"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-060",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "REST API security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a REST API's credentials and tokens only be sent over HTTPS?",
+    "explanation": "Basic authentication is only Base64-encoded and a token is a bearer secret, so either can be captured on clear HTTP. TLS encrypts them in transit.",
+    "options": [
+      "HTTP cannot carry a request header",
+      "Clear HTTP exposes them to capture",
+      "HTTPS removes the need for any token",
+      "HTTPS makes the API respond with JSON"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-061",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP transport",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Which TCP port does a BGP speaker listen on? Type the number only.",
+    "explanation": "RFC 4271: BGP runs over TCP and listens on port 179, so it relies on TCP for retransmission and ordering.",
+    "numeric": {
+      "answers": [
+        "179"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T2-062",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Next-generation firewall",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which inspection engine does Cisco Secure Firewall use for intrusion prevention?",
+    "explanation": "Cisco Secure Firewall uses Snort (Snort 3 on current releases) as its IPS engine, alongside URL filtering and malware defense.",
+    "options": [
+      "ModSecurity",
+      "Zeek",
+      "Suricata",
+      "Snort"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-063",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access gateway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes the SD-Access anycast gateway work for a roaming endpoint?",
+    "explanation": "Every edge node that hosts a subnet presents the same gateway IP and MAC, so an endpoint can move between edge nodes without changing or re-learning its default gateway.",
+    "options": [
+      "One edge node answers ARP for the whole fabric",
+      "Same IP and MAC on every edge node for that subnet",
+      "The border node routes all traffic between subnets",
+      "Each edge node uses its own gateway IP and MAC"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-064",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "REST response codes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client sends GET to a RESTCONF operation resource that only accepts POST. Which status code is returned?",
+    "explanation": "RFC 8040 maps GET on an operation resource to 405 Method Not Allowed with error-tag operation-not-supported.",
+    "options": [
+      "415 Unsupported Media Type",
+      "400 Bad Request",
+      "404 Not Found",
+      "405 Method Not Allowed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-065",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "LISP mapping system",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which LISP component receives Map-Requests from ITRs and forwards them toward the right ETR?",
+    "explanation": "ITRs send encapsulated Map-Requests to a configured Map-Resolver, which uses the mapping system to forward them toward the ETR. The Map-Server is where ETRs register.",
+    "options": [
+      "Proxy ITR",
+      "Map-Resolver",
+      "Egress tunnel router",
+      "Map-Server"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-066",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP link types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "By default, how does RSTP decide whether a port is a point-to-point link?",
+    "explanation": "Full-duplex ports are treated as point-to-point and half-duplex ports as shared, unless the link type is set by hand.",
+    "options": [
+      "From its STP priority",
+      "From its duplex setting",
+      "From its port speed",
+      "From its native VLAN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-067",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "IP SLA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An IP SLA ICMP echo probe measures response time to a remote server. What must run on that server?",
+    "explanation": "ICMP echo needs no IP SLA responder on the destination; any device that answers ping can be measured. Some other operation types do need a responder.",
+    "options": [
+      "An IP SLA responder enabled for the probe",
+      "Nothing beyond a normal ICMP echo reply",
+      "An NTP client synced to the router",
+      "An SNMP agent with read access"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-068",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Threat defense",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall policy should allow a web site but block one application inside it. Which feature does this?",
+    "explanation": "Application control identifies applications regardless of port, so policy can treat two applications on the same web site differently. A port-based ACL sees only TCP 443.",
+    "options": [
+      "Static network address translation",
+      "Stateful packet inspection only",
+      "Port-based access control lists",
+      "Application visibility and control"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-069",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "BIDIR-PIM",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does bidirectional PIM differ from PIM sparse mode?",
+    "explanation": "BIDIR-PIM keeps only shared trees and dispenses with both Register encapsulation and source state; a designated forwarder is elected per RP on each link. It suits groups with many senders.",
+    "options": [
+      "No PIM hellos between neighbors",
+      "No Register messages or (S,G) state",
+      "No shared trees, only per-source trees",
+      "No rendezvous point in the network"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-070",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access data plane",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does the SD-Access data plane carry a packet's group membership across the fabric?",
+    "explanation": "The fabric uses VXLAN, and the SGT is carried as metadata in the VXLAN header so policy follows the packet. LISP is the control plane that locates endpoints.",
+    "options": [
+      "DSCP bits set by ISE",
+      "LISP map-cache entries",
+      "VLAN tag on each uplink",
+      "SGT in the VXLAN header"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-071",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "SD-WAN Manager API",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script logged in to SD-WAN Manager can GET data but every POST fails. What is it most likely missing?",
+    "explanation": "GET calls need only the JSESSIONID cookie, but POST calls also need the X-XSRF-TOKEN from /dataservice/client/token. X-Auth-Token is the Catalyst Center header.",
+    "options": [
+      "X-XSRF-TOKEN header",
+      "A YANG data media type",
+      "A second JSESSIONID",
+      "X-Auth-Token header"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-072",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "eBGP configuration",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "R1 in AS 65001 must peer with 203.0.113.2 in AS 65002. Which command, under $\\texttt{router bgp 65001}$, defines the peer?",
+    "explanation": "The neighbor statement names the peer's address and its AS. A remote AS different from the local one makes the session eBGP; using the local AS would make it iBGP.",
+    "options": [
+      "$\\texttt{peer 203.0.113.2 as 65002}$",
+      "$\\texttt{neighbor 203.0.113.2 remote-as 65001}$",
+      "$\\texttt{network 203.0.113.2 remote-as 65002}$",
+      "$\\texttt{neighbor 203.0.113.2 remote-as 65002}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-073",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TrustSec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch on the path cannot carry SGTs in its frames. How can tag information still reach the enforcement point?",
+    "explanation": "SXP is a control-plane protocol that sends IP-to-SGT bindings over any IP network to devices that cannot tag in hardware. Inline tagging embeds the SGT in the frame and needs hardware support.",
+    "options": [
+      "MACsec Key Agreement (MKA)",
+      "802.1Q native VLAN",
+      "Inline tagging on every link",
+      "SGT Exchange Protocol (SXP)"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-074",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "LISP mapping system",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An ITR receives a negative Map-Reply for a destination. What does it mean?",
+    "explanation": "A negative Map-Reply has an empty locator set and says the address is not a registered EID, so the ITR can forward the traffic natively instead of encapsulating it.",
+    "options": [
+      "The destination ETR has gone down",
+      "Destination is not a registered EID",
+      "The ITR's map-cache is already full",
+      "The Map-Server failed to authenticate"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-075",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "BPDU guard",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A port was err-disabled by BPDU guard and no errdisable recovery is configured. How is it brought back after the rogue switch is removed?",
+    "explanation": "Without errdisable recovery, the port stays down until someone bounces it with shutdown and no shutdown. Clearing detected protocols only restarts migration checks.",
+    "options": [
+      "$\\texttt{shutdown}$, then $\\texttt{no shutdown}$",
+      "$\\texttt{clear spanning-tree detected-protocols}$",
+      "$\\texttt{no spanning-tree guard root}$ on it",
+      "$\\texttt{spanning-tree portfast}$ on the port"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-076",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "NETCONF datastores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which NETCONF datastore lets changes be prepared and then committed to the device together?",
+    "explanation": "The candidate datastore, offered through the candidate capability, holds changes until a commit. Running always exists and is changed directly.",
+    "options": [
+      "Startup",
+      "Running",
+      "Operational",
+      "Candidate"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-077",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access underlay",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which routing protocol does Catalyst Center LAN Automation deploy in the SD-Access underlay?",
+    "explanation": "LAN Automation builds a Layer 3 routed underlay with IS-IS as its primary routing protocol. OSPF or EIGRP can be used when the underlay is built manually.",
+    "options": [
+      "BGP",
+      "EIGRP",
+      "OSPF",
+      "IS-IS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-078",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "EEM applets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An EEM applet uses $\\texttt{event none}$. How is it started?",
+    "explanation": "event none registers a policy that runs only when triggered manually with $\\texttt{event manager run}$.",
+    "options": [
+      "When the device finishes booting",
+      "When any syslog message is logged",
+      "On a cron timer set by the device",
+      "With $\\texttt{event manager run}$ by hand"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-079",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TrustSec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does TrustSec decide what traffic a group may send, instead of using IP addresses and VLANs?",
+    "explanation": "TrustSec assigns security group tags to users and devices and writes policy between groups, so policy follows the user rather than the IP address.",
+    "options": [
+      "By DSCP marking values",
+      "By security group tags",
+      "By VRF membership",
+      "By MAC address lists"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-080",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP best path",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which BGP attribute does a Cisco router compare first when choosing between paths to one prefix?",
+    "explanation": "The order starts with highest weight, then highest local preference, locally originated, shortest AS path, lowest origin, lowest MED and eBGP over iBGP.",
+    "options": [
+      "Local preference",
+      "MED",
+      "Weight",
+      "AS path length"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-081",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "MSDP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does MSDP do between PIM-SM domains?",
+    "explanation": "MSDP peers exchange Source-Active messages, so the RP of each domain learns about sources in the others while every domain keeps its own RP.",
+    "options": [
+      "Carries IGMP joins between the domains",
+      "Elects one RP that serves every domain",
+      "Builds one shared tree across every domain",
+      "Tells each RP of sources in other domains"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-082",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "MACsec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol provides and manages the session keys for MACsec?",
+    "explanation": "MKA, defined in 802.1X-REV, supplies and manages MACsec session keys. IKEv2 negotiates keys for IPsec, not MACsec.",
+    "options": [
+      "IKEv2",
+      "Diffie-Hellman over TLS",
+      "SGT Exchange Protocol (SXP)",
+      "MACsec Key Agreement (MKA)"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-083",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "QoS marking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Per the DiffServ service class guidelines (RFC 4594), which DSCP is recommended for broadcast video?",
+    "explanation": "RFC 4594 maps broadcast video to CS3, real-time interactive to CS4, multimedia streaming to AF3x and multimedia conferencing to AF4x.",
+    "options": [
+      "CS3",
+      "AF31",
+      "AF41",
+      "CS4"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-084",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "EEM applets",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Place the lines of an EEM applet that captures the configuration when someone enters reload in a valid order.",
+    "explanation": "An applet starts with its name, then one event line, then actions in label order. The enable action comes first so later CLI actions run in privileged mode.",
+    "options": [
+      "$\\texttt{event manager applet SAVE-RUN}$",
+      "$\\texttt{event cli pattern \"reload\" sync no skip no}$",
+      "$\\texttt{action 01.0 cli command \"enable\"}$",
+      "$\\texttt{action 02.0 cli command \"show running-config\"}$"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-085",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VXLAN",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "How many bits long is the VXLAN Network Identifier (VNI)? Type the number only.",
+    "explanation": "The 24-bit VNI allows about 16 million segments, compared with 4,094 usable VLAN IDs from the 12-bit 802.1Q field.",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T2-086",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "EtherChannel modes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "SW1's ports use PAgP $\\texttt{desirable}$ and SW2's use LACP $\\texttt{active}$. What is the result?",
+    "explanation": "PAgP and LACP are different protocols: desirable forms a channel only with PAgP desirable or auto, and active only with LACP active or passive.",
+    "options": [
+      "A static on-mode channel forms",
+      "No channel forms",
+      "A PAgP channel forms",
+      "An LACP channel forms"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-087",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "RESTCONF methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which RESTCONF method merges a body into an existing configuration resource, like NETCONF edit-config merge?",
+    "explanation": "A plain PATCH merges the body into the target. PUT creates or replaces the resource, and POST creates a new child resource.",
+    "options": [
+      "DELETE",
+      "POST",
+      "PUT",
+      "PATCH"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-088",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP MED",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "With default settings, when does a Cisco router compare MED between two paths to one prefix?",
+    "explanation": "MED is compared only for paths from the same neighboring AS, unless $\\texttt{bgp always-compare-med}$ is set; lower MED is preferred.",
+    "options": [
+      "Always, before it compares AS path length",
+      "Only when the paths are learned through iBGP",
+      "Only when their local preferences differ",
+      "Only when both are from the same neighbor AS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-089",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "MACsec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does MACsec protect traffic?",
+    "explanation": "MACsec authenticates and encrypts frames between two MACsec-capable devices, such as a switch and a host or two switches. Each link is protected separately.",
+    "options": [
+      "Over a link between two MACsec devices",
+      "Only between a VPN client and a headend",
+      "End to end between two hosts' apps",
+      "Inside an IP tunnel across the internet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-090",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "QoS configuration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Refer to the policy below.\n$$\\begin{array}{l}\\texttt{policy-map EDGE-IN}\\\\\\texttt{\\ class BULK}\\\\\\texttt{\\ \\ police 8000000 conform-action transmit exceed-action set-dscp-transmit af13}\\end{array}$$\nWhat happens to BULK traffic above 8 Mbps?",
+    "explanation": "The exceed action remarks excess packets to AF13 and transmits them, so they are the first dropped if congestion follows. A policer never queues traffic; that is shaping.",
+    "options": [
+      "It is sent with DSCP AF13",
+      "It is dropped at once",
+      "It is queued and sent later",
+      "It is sent with its DSCP unchanged"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-091",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Orchestration tools",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "By default, every how many minutes does a Puppet agent run and request its catalog from the primary server? Type the number only.",
+    "explanation": "Puppet attempts a run on each node every 30 minutes by default; each agent sends its facts to the primary server and requests a catalog. The runinterval setting changes it.",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-T2-092",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Device access",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two settings make an IOS XE device check a user against its local accounts with a hashed secret? (Choose two.)",
+    "explanation": "A username with a scrypt (type 9) secret stores a hash, and $\\texttt{login local}$ tells the lines to use the local user database. service password-encryption only applies weak type 7.",
+    "options": [
+      "$\\texttt{enable password}$ with a password",
+      "$\\texttt{username ops algorithm-type scrypt secret}$ with a password",
+      "$\\texttt{password}$ on the vty lines",
+      "$\\texttt{login local}$ on the vty lines",
+      "$\\texttt{service password-encryption}$ globally"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "ENCOR-T2-093",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "IGMP",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "To which address do IGMPv3 hosts send their membership reports?",
+    "explanation": "IGMPv3 reports go to 224.0.0.22, which IGMPv3 routers listen to. General queries go to 224.0.0.1, and 224.0.0.13 is ALL-PIM-ROUTERS.",
+    "options": [
+      "224.0.0.22",
+      "224.0.0.1",
+      "224.0.0.2",
+      "224.0.0.13"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-T2-094",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VXLAN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the flood-and-learn VXLAN model of RFC 7348, how is broadcast and unknown unicast traffic delivered to other VTEPs?",
+    "explanation": "RFC 7348 maps each VNI to an IP multicast group, and VTEPs join it with IGMP, so broadcast, unknown unicast and multicast frames reach every VTEP in that segment.",
+    "options": [
+      "Through unicast to each host",
+      "Through a LISP Map-Server",
+      "Through BGP route reflectors",
+      "Through IP multicast groups"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-095",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "EtherChannel modes",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each pair of modes on the two ends of a link, choose whether an EtherChannel forms.",
+    "explanation": "On works only with on. Two PAgP auto ports both wait, so nothing forms, while desirable starts PAgP and auto answers. An active port needs an LACP partner, which an on port never is.",
+    "rows": [
+      "on and on",
+      "auto and auto",
+      "desirable and auto",
+      "active and on"
+    ],
+    "columns": [
+      "Forms",
+      "Does not form"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-096",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "SNMPv3",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An SNMPv3 user is set to authNoPriv. What protection do its messages get?",
+    "explanation": "authNoPriv authenticates messages for integrity and origin but sends the payload in plaintext. Encryption needs authPriv, and community strings belong to SNMPv1 and v2c.",
+    "options": [
+      "No protection beyond a community string",
+      "Both authentication and payload encryption",
+      "Authentication, but payload in clear",
+      "Encryption of the payload, no authentication"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-T2-097",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "Policy-based routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A PBR route map uses $\\texttt{set ip next-hop 192.0.2.9}$, but 192.0.2.9 is not in the routing table. What happens to matching packets?",
+    "explanation": "With $\\texttt{set ip next-hop}$, PBR is used only if the next hop is in the table; otherwise the debug shows policy rejected and the packet takes normal forwarding.",
+    "options": [
+      "They are sent to 192.0.2.9 through the default route",
+      "They are sent out the interface the policy is on",
+      "They are dropped until the next hop is reachable",
+      "They are forwarded with the normal routing table"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-T2-098",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-WAN onboarding",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Place the steps of bringing a new WAN edge router into a Catalyst SD-WAN overlay in order.",
+    "explanation": "The Validator authenticates the device and pairs it with the controllers, the edge then builds DTLS or TLS control connections, OMP carries TLOCs and keys, and the edges use those to build IPsec data plane tunnels.",
+    "options": [
+      "Edge contacts the SD-WAN Validator",
+      "Validator authenticates it and shares Controller addresses",
+      "Edge opens control connections to the Controllers",
+      "OMP advertises its TLOCs and keys",
+      "Edges build IPsec tunnels to each other"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "ENCOR-T2-099",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Orchestration tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ansible's documentation cites low maintenance overhead as a benefit of being agentless. What overhead does an agent-based tool add?",
+    "explanation": "An agent-based tool needs its agent installed, run and updated on each managed node. Ansible avoids that by connecting over SSH with existing credentials.",
+    "options": [
+      "An SSH session for every task it runs",
+      "Agent software on every managed device",
+      "A YAML file for every managed device",
+      "A separate controller for every site"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-T2-100",
+    "section": "encor",
+    "test": 2,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "AAA method lists",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A router has $\\texttt{aaa authentication login default local group tacacs+}$. Which method is tried first?",
+    "explanation": "Methods are tried in the order listed, so the local database comes first. Cisco notes that with $\\texttt{group tacacs+ local}$ the TACACS+ server is the first preference instead.",
+    "options": [
+      "Line password",
+      "TACACS+ server group",
+      "Enable secret",
+      "Local user database"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-D-001",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access policy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which component is required for identity-based micro-segmentation with SGTs in SD-Access?",
+    "explanation": "ISE is optional for macro-segmentation with virtual networks but required to assign SGTs from identity for micro-segmentation.",
+    "options": [
+      "Extended node",
+      "Cisco ISE",
+      "Fabric WLC",
+      "Border node"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-D-002",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "LISP",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Which UDP destination port do LISP data plane packets use? Type the number only.",
+    "explanation": "RFC 9300 sets the outer UDP destination port of LISP data packets to 4341. The LISP control plane (Map-Request, Map-Register) uses 4342.",
+    "numeric": {
+      "answers": [
+        "4341"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-D-003",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP port states",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which RSTP state replaces 802.1D's blocking and listening states?",
+    "explanation": "RSTP merges disabled, blocking and listening into discarding. A discarding port neither forwards frames nor learns MAC addresses.",
+    "options": [
+      "Learning",
+      "Discarding",
+      "Forwarding",
+      "Listening"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-D-004",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "EIGRP",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Which IP protocol number does EIGRP use? Type the number only.",
+    "explanation": "EIGRP runs directly over IP as protocol 88 for both IPv4 and IPv6, sending to 224.0.0.10 or FF02::A.",
+    "numeric": {
+      "answers": [
+        "88"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-D-005",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "MSDP",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "On which TCP port do MSDP peers connect? Type the number only.",
+    "explanation": "MSDP runs over TCP; the peer with the higher IP address listens on well-known port 639.",
+    "numeric": {
+      "answers": [
+        "639"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-D-006",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "Syslog",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "A logging trap is set to warnings. Which syslog severity number is that? Type the number only.",
+    "explanation": "The levels are 0 Emergency, 1 Alert, 2 Critical, 3 Error, 4 Warning, 5 Notice, 6 Informational and 7 Debug. Setting warnings sends levels 0 through 4.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-D-007",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "Password types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why should type 5 credentials not be used for new secrets?",
+    "explanation": "Type 5 is an MD5 hash, an algorithm with many weaknesses; Cisco says it should not store sensitive data. Type 7 is the reversible one.",
+    "options": [
+      "It works only on IOS XR devices",
+      "It cannot hold special characters",
+      "It is a reversible encryption",
+      "MD5 has many known weaknesses"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-D-008",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "Python scripts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Refer to the script.\n$$\\begin{array}{l}\\texttt{cfg = \\{\"hostname\": \"edge1\", \"vrf\": [\"red\", \"blue\"]\\}}\\\\\\texttt{print(len(cfg[\"vrf\"]))}\\end{array}$$\nWhat does it print?",
+    "explanation": "cfg[\"vrf\"] is a list with two strings, and len returns the number of elements, 2.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "10"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "ENCOR-D-009",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "QoS marking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Per RFC 4594, which DSCP class is recommended for low-latency data such as interactive business applications?",
+    "explanation": "RFC 4594 uses AF2x for low-latency data, AF1x for high-throughput data, CS2 for OAM and AF3x for multimedia streaming.",
+    "options": [
+      "AF21",
+      "CS2",
+      "AF31",
+      "AF11"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-D-010",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "LISP terms",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In LISP, what does an RLOC identify?",
+    "explanation": "Routing locators are the underlay addresses of tunnel routers. Endpoint identifiers (EIDs) identify the hosts and stay the same when a site changes provider.",
+    "options": [
+      "A VLAN extended between two sites",
+      "A group of hosts that share one policy",
+      "Router's address in the underlay",
+      "An end host's identity inside the site"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-D-011",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "Root guard",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A root-guard port is in the root-inconsistent state. What brings it back to forwarding?",
+    "explanation": "Root guard recovers by itself: once superior BPDUs stop, the port goes through listening and learning to forwarding with no manual action.",
+    "options": [
+      "The errdisable recovery timer expires",
+      "The root bridge raises its priority",
+      "An administrator bounces the port",
+      "Superior BPDUs stop arriving on it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-D-012",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "BGP best path",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two eBGP paths tie on weight, local preference and AS path length. One has origin IGP and the other INCOMPLETE. Which is preferred?",
+    "explanation": "Lower origin is better: IGP beats EGP, and EGP beats INCOMPLETE, which usually marks redistributed routes.",
+    "options": [
+      "The path learned most recently",
+      "The path with origin IGP",
+      "The path with the higher MED",
+      "The path with origin INCOMPLETE"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-D-013",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "PIM DR election",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two PIM routers on a LAN have DR priorities 50 and 100 and addresses 10.0.0.9 and 10.0.0.2. Which becomes DR?",
+    "explanation": "The numerically larger DR priority always wins; the higher IP address breaks a tie only when priorities are equal.",
+    "options": [
+      "Both routers share the role",
+      "The router with address 10.0.0.9",
+      "The router with priority 100",
+      "The router with priority 50"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-D-014",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "NETCONF operations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does the NETCONF $\\texttt{remove}$ operation differ from $\\texttt{delete}$?",
+    "explanation": "delete returns a data-missing error when the data does not exist, while remove deletes it if present and is silently ignored if not.",
+    "options": [
+      "remove deletes the whole datastore at once",
+      "remove is ignored when the data is absent",
+      "remove only works on the startup datastore",
+      "remove keeps a backup copy for rollback"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "ENCOR-D-015",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "ACL keywords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An extended ACL entry ends with $\\texttt{eq 22}$. What does it match?",
+    "explanation": "A port operator after the destination address matches the destination port, here 22 for SSH. To match the source port, the operator follows the source address.",
+    "options": [
+      "Destination port 22 (SSH)",
+      "Hop limit or TTL of 22",
+      "Source port 22 only",
+      "IP protocol number 22"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-D-016",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "JSON",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which JSON number is valid?",
+    "explanation": "JSON numbers are base 10 with no leading zeros; hexadecimal, NaN and Infinity are not part of the grammar.",
+    "options": [
+      "$\\texttt{1500}$",
+      "$\\texttt{NaN}$",
+      "$\\texttt{0x5DC}$",
+      "$\\texttt{01500}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-D-017",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorArch",
+    "skill": "SD-Access roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What kind of device is an SD-Access extended node?",
+    "explanation": "Extended nodes are Layer 2 switches that bring SD-Access VLANs into spaces outside the carpeted campus, attached to a fabric edge node directly or in a chain.",
+    "options": [
+      "Layer 2 switch that extends fabric VLANs",
+      "Router that connects two fabric sites",
+      "Server that stores the host tracking database",
+      "Wireless controller dedicated to one site"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-D-018",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorVirt",
+    "skill": "VXLAN overhead",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "VXLAN over IPv4 adds an outer Ethernet header (14 bytes), outer IPv4 header (20), UDP header (8) and VXLAN header (8). How many bytes does it add per frame, with no outer VLAN tag? Type the number only.",
+    "explanation": "14 + 20 + 8 + 8 = 50 bytes, which is why RFC 7348 advises raising the underlay MTU. An IPv6 outer header would make it 70.",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-D-019",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorL2",
+    "skill": "RSTP port roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which RSTP role does a port take when it gives a redundant path to a segment the same switch already reaches through another of its ports?",
+    "explanation": "A backup port provides redundant connectivity to a segment the bridge already connects to. An alternate port is a standby path toward the root through another bridge.",
+    "options": [
+      "Backup",
+      "Designated",
+      "Root",
+      "Alternate"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "ENCOR-D-020",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorRouting",
+    "skill": "Policy-based routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A route map uses $\\texttt{set ip default next-hop 198.51.100.1}$. When are matching packets sent to 198.51.100.1?",
+    "explanation": "Default next hop is a fallback: if the routing table has a route for the destination, the packet is forwarded normally. It is policy-routed to the default next hop only when the table has no route for the destination.",
+    "options": [
+      "Only when the next hop shares the packet's subnet",
+      "Only when its TTL has reached one",
+      "Always, before the routing table is checked",
+      "Only when no route exists for the destination"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-D-021",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorServices",
+    "skill": "VRRP",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the default VRRP priority of a backup router? Type the number only.",
+    "explanation": "Backup routers use priorities 1 to 254 with a default of 100. The address owner uses 255.",
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "ENCOR-D-022",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorAssurance",
+    "skill": "RESTCONF errors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A RESTCONF POST tries to create a list entry that already exists. Which status code comes back?",
+    "explanation": "RESTCONF answers a POST to an existing resource with 409 Conflict and error-tag resource-denied. 409 is also returned when the datastore is locked.",
+    "options": [
+      "405 Method Not Allowed",
+      "400 Bad Request",
+      "404 Not Found",
+      "409 Conflict"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "ENCOR-D-023",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorSecurity",
+    "skill": "TrustSec",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does inline SGT tagging need that SXP does not?",
+    "explanation": "Inline tagging embeds the SGT in the Ethernet frame, which needs hardware support along the path. SXP sends bindings over TCP sessions to devices without that hardware.",
+    "options": [
+      "A RADIUS server reachable by every switch",
+      "An IP address on every switch port",
+      "Hardware support along the path",
+      "A TCP session between every pair of peers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "ENCOR-D-024",
+    "section": "encor",
+    "test": 0,
+    "module": 1,
+    "domain": "encorAutomation",
+    "skill": "SD-WAN Manager API",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How long does an idle SD-WAN Manager API session last before its JSESSIONID expires?",
+    "explanation": "A session expires after 30 minutes of inactivity or after 24 hours in total, whichever comes first.",
+    "options": [
+      "1 hour",
+      "8 hours",
+      "24 hours",
+      "30 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  }
+]

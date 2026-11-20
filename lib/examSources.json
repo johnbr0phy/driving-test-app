@@ -497,6 +497,11 @@
   "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
   "https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh"
  ],
+ "ccnpencor": [
+  "https://learningcontent.cisco.com/documents/marketing/exam-topics/350-401-ENCORE-v1.2.pdf",
+  "https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/encor-350-401.html",
+  "https://www.cisco.com/en/US/docs/ios-xml/ios/ha/configuration/xe-3s/ha-config-stateful-switchover.html"
+ ],
  "ccrn": [
   "https://www.aacn.org/certification/preparation-tools-and-handbooks/~/media/aacn-website/certification/get-certified/handbooks/ccrnexamhandbook.pdf?la=en",
   "https://www.aacn.org/certification/preparation-tools-and-handbooks/~/media/aacn-website/certification/get-certified/handbooks/certpolicyhndbk.pdf?la=en",

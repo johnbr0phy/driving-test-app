@@ -3127,6 +3127,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Microsoft Learn AZ-900 study guide (skills measured as of July 20, 2026)",
     source: { name: "Microsoft Learn", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
   },
+  ccnpencor: {
+    answer:
+      "Cisco 350-401 ENCOR (Implementing Cisco Enterprise Network Core Technologies) is the exam associated with both the CCNP Enterprise and CCIE Enterprise certifications. It is a 120-minute exam in English or Japanese; Cisco does not publish the question count or a passing score. Version 1.2 of the exam topics, in force since March 19, 2026, has six domains: Architecture 15%, Virtualization 10%, Infrastructure 30%, Network Assurance 10%, Security 20%, and Automation and Artificial Intelligence 15%. Version 1.2 dropped the wireless topics of v1.1.",
+    rows: [
+      { label: "Exam code", value: "350-401 ENCOR (topics v1.2)" },
+      { label: "Questions", value: "Not published by Cisco" },
+      { label: "Time", value: "120 minutes" },
+      { label: "Passing score", value: "Not published by Cisco" },
+      { label: "Languages", value: "English and Japanese" },
+      { label: "Certifications", value: "CCNP Enterprise and CCIE Enterprise" },
+      { label: "Given by", value: "Cisco" },
+    ],
+    basedOn: "the Cisco ENCOR 350-401 v1.2 exam topics and the Cisco 350-401 exam page, checked November 2026",
+    source: { name: "Cisco: 350-401 ENCOR exam topics v1.2", url: "https://learningcontent.cisco.com/documents/marketing/exam-topics/350-401-ENCORE-v1.2.pdf" },
+  },
   ccna: {
     answer:
       "The Cisco CCNA (200-301) is a single 120-minute exam with no prerequisites. Cisco does not publish the question count or a passing score; candidates usually see about 100 to 120 questions, including multiple choice, drag-and-drop and simulations, answered in order with no going back. The v1.1 topics run through February 2, 2027: Network Fundamentals 20%, Network Access 20%, IP Connectivity 25%, IP Services 10%, Security Fundamentals 15%, Automation and Programmability 10%. Version 2.0 replaces it on February 3, 2027.",

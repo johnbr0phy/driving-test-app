@@ -163,6 +163,7 @@ export const TEACHES: Record<string, string> = {
   pl900: "a Power Platform or low-code course",
   ccna: "a CCNA or Cisco Networking Academy course",
   jncia: "a Junos or Juniper networking course",
+  ccnpencor: "a CCNP Enterprise or Cisco Networking Academy course",
   pmp: "a project management course",
   gulfrn: "a Gulf nursing exam review course",
   uklitu: "ESOL or Life in the UK classes",

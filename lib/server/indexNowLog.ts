@@ -24,3 +24,9 @@ export async function recordIndexNowRun(
   await db.collection(RUNS_COLLECTION).add(run);
   await sentRef.set(lastRunFields(r.source, run), { merge: true });
 }
+
+/** The stored per-page send log (indexNow/sent urls), empty when none. */
+export async function readSentMap(db: Firestore): Promise<SentMap> {
+  const snap = await db.collection(SENT_COLLECTION).doc(SENT_DOC).get();
+  return (snap.get("urls") ?? {}) as SentMap;
+}

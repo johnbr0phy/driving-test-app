@@ -13,7 +13,7 @@
 
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { lastRunFields, mergeSent, runRecord, RUNS_COLLECTION, SENT_COLLECTION, SENT_DOC } from "../lib/indexNowSent.mjs";
+import { lastRunFields, mergeSent, runRecord, RUNS_COLLECTION, SENT_COLLECTION, SENT_DOC, unsentUrls } from "../lib/indexNowSent.mjs";
 
 const SITE = process.env.SITE_URL || "https://www.tigertest.io";
 const args = process.argv.slice(2);
@@ -43,14 +43,21 @@ const cutoff = new Date(Date.now() - days * 86_400_000).toISOString().slice(0, 1
 
 const index = await text(`${SITE}/sitemap.xml`);
 const segments = tags(index, "loc");
-const urls = new Set();
+const recent = [];
 for (const segment of segments) {
   for (const e of entries(await text(segment))) {
-    if (e.url && e.lastmod >= cutoff) urls.add(e.url);
+    if (e.url && e.lastmod >= cutoff) recent.push(e);
   }
 }
-const list = [...urls].slice(0, MAX_URLS);
-console.log(`${list.length} URLs with lastmod on or after ${cutoff} across ${segments.length} sitemaps`);
+// Skip pages already sent since their lastmod, so the many deploys a day do
+// not resend the same pages (lib/indexNowSent.mjs unsentUrls).
+const db = firestore();
+const sent = db ? await readSent(db) : null;
+const list = unsentUrls(recent, sent || {}).slice(0, MAX_URLS);
+console.log(
+  `${new Set(recent.map((e) => e.url)).size} URLs with lastmod on or after ${cutoff} across ${segments.length} sitemaps; ` +
+    `${list.length} not yet sent since their lastmod${sent ? "" : " (send log unavailable, sending all)"}`,
+);
 for (const u of list.slice(0, 50)) console.log(`  ${u}`);
 if (list.length > 50) console.log(`  ...and ${list.length - 50} more`);
 
@@ -80,19 +87,38 @@ if (!res.ok) {
 // FIREBASE_SERVICE_ACCOUNT_KEY and firebase-admin installed in
 // FIREBASE_ADMIN_DIR (the workflow installs it); without them it is skipped,
 // and a failed write never fails the run, since the pages have gone to Bing.
-async function record(urls, status, ok) {
+function firestore() {
   const key = process.env.FIREBASE_SERVICE_ACCOUNT_KEY;
   const dir = process.env.FIREBASE_ADMIN_DIR;
   if (!key || !dir) {
-    console.log("Not recorded: FIREBASE_SERVICE_ACCOUNT_KEY or FIREBASE_ADMIN_DIR not set");
-    return;
+    console.log("No send log: FIREBASE_SERVICE_ACCOUNT_KEY or FIREBASE_ADMIN_DIR not set");
+    return null;
   }
   try {
     const req = createRequire(join(dir, "noop.js"));
     const { initializeApp, cert } = req("firebase-admin/app");
     const { getFirestore } = req("firebase-admin/firestore");
     const creds = JSON.parse(key);
-    const db = getFirestore(initializeApp({ credential: cert(creds), projectId: creds.project_id }));
+    return getFirestore(initializeApp({ credential: cert(creds), projectId: creds.project_id }));
+  } catch (e) {
+    console.log(`No send log: ${e instanceof Error ? e.message : e}`);
+    return null;
+  }
+}
+
+async function readSent(db) {
+  try {
+    const snap = await db.collection(SENT_COLLECTION).doc(SENT_DOC).get();
+    return snap.get("urls") || {};
+  } catch (e) {
+    console.log(`Could not read the send log: ${e instanceof Error ? e.message : e}`);
+    return null;
+  }
+}
+
+async function record(urls, status, ok) {
+  if (!db) return;
+  try {
     const at = new Date().toISOString();
     const sentRef = db.collection(SENT_COLLECTION).doc(SENT_DOC);
     if (ok) {

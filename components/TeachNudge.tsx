@@ -44,6 +44,7 @@ const TEACHER_LED = new Set([
   "ascpmlt",
   "nzham",
   "cahambasic",
+  "hamgeneral",
   "cadc",
   "ascppbt",
   "rpt",

@@ -308,6 +308,7 @@ export const TEACHES: Record<string, string> = {
   insurance: "a life and health insurance pre-licensing course",
   pnc: "a property and casualty pre-licensing course",
   ham: "a ham radio licensing class",
+  hamgeneral: "a General class license course",
   civics: "citizenship classes",
   uksia: "an SIA door supervisor course",
   uk18ed: "an 18th Edition (2382) course",

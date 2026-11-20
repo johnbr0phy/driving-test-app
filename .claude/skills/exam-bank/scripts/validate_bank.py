@@ -140,7 +140,7 @@ META = _Meta()
 META_OK_ID = re.compile(r"^(LH|PC|RE)[A-Z]{2}-[A-Z]{2}(LIC|REG)-|^SIE-REG-|^UKADI-TST-")
 META_OK = {"CDLE-HM-003", "FAAPVT-D-081", "UKMOTO-DOC-002", "PHCSE-T1-044", "IBPSRRB-T2-075",
            "SSCCPO-T2-006", "SSCCPO-T2-014", "APPSYCH-T2-026", "NETPLUS-T1-007", "SECPLUS-T2-083",
-           "NGCUS-VOC-024", "NGCUS-VOC-025", "PHLET-PRO-006", "PHLET-ASM-002", "TRCN-SAF-017"}
+           "NGCUS-VOC-024", "HAMG-G1-043", "NGCUS-VOC-025", "PHLET-PRO-006", "PHLET-ASM-002", "TRCN-SAF-017"}
 
 
 def is_meta(qid: str, stem: str) -> bool:
@@ -170,6 +170,8 @@ KNOWN_BANKS = {
         why="six staining categories share HTL-STN- ids, so they interleave in id order (Oct 2026 split)"),
     "ham-questions.json": dict(rows=397, max_over=17,
         why="the official NCVEC 2026-2030 pool; its wording is the FCC's and cannot be shortened"),
+    "ham-general-questions.json": dict(rows=418, max_over=14,
+        why="the official NCVEC 2023-2027 General (Element 3) pool, 423 live questions less the 5 G7-1 figure items; its wording is the FCC's and cannot be shortened"),
     "de-theorie-questions.json": dict(rows=210, why="seven 30-question tests"),
     "italy-patente-questions.json": dict(rows=210, why="seven 30-question tests"),
     "france-code-route-questions.json": dict(rows=240, why="six 40-question tests"),

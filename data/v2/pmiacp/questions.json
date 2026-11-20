@@ -682,13 +682,13 @@
     "skill": "Mindset 6: Shorten feedback loops",
     "difficulty": 1,
     "format": "single",
-    "stem": "When should stakeholders first be involved in an agile initiative?",
-    "explanation": "Including stakeholders from day one shortens feedback loops, so their input shapes the work before any sprint starts.",
+    "stem": "Which outline enabler for shortening feedback loops concerns stakeholders?",
+    "explanation": "Under Shorten Feedback Loops the outline says to include the stakeholders from day one. Radiating metrics, demonstrating increments and validating acceptance criteria belong to other tasks.",
     "options": [
-      "From the first sprint review",
-      "From the first backlog refinement",
-      "From the first sprint planning",
-      "From the first day"
+      "Validate criteria with them",
+      "Demonstrate increments to them",
+      "Radiate metrics to them",
+      "Include them from day one"
     ],
     "correct": [
       3
@@ -787,13 +787,13 @@
     "skill": "Delivery 4: Recognize and eliminate waste",
     "difficulty": 2,
     "format": "single",
-    "stem": "A value stream map shows 2 days of hands-on work and 18 days between steps. Where is the biggest waste?",
-    "explanation": "The 18 days of waiting add no value, so the queues between steps are where waste reduction pays off most.",
+    "stem": "A value stream map separates which two kinds of time?",
+    "explanation": "Value stream mapping visualizes the end-to-end flow of value, separating value-added from non-value-added time such as waiting.",
     "options": [
-      "The handoff documents",
-      "Queues between the steps",
-      "Hands-on work in each step",
-      "The number of steps"
+      "Ideal and elapsed time",
+      "Value-added and waiting time",
+      "Sprint and release time",
+      "Planned and actual elapsed time"
     ],
     "correct": [
       1
@@ -1324,7 +1324,7 @@
     "explanation": "Risks and impediments are identified proactively and monitored all the way through delivery. A risk burn down reviewed every iteration does that; the others look at risk once or rarely.",
     "options": [
       "Risk audit before each release",
-      "Risk burn down reviewed each iteration",
+      "Risk burn down each iteration",
       "Risk register signed at kickoff",
       "Risk workshop at project start"
     ],
@@ -1557,16 +1557,16 @@
     "skill": "Leadership 2: Facilitate problem resolution",
     "difficulty": 2,
     "format": "single",
-    "stem": "A blocker has sat on the board for a week with no owner. What should happen?",
-    "explanation": "Problems should be resolved in a timely manner with the team. An unowned blocker needs an owner and a plan agreed now; defaulting it to one person or logging it does not engage the team.",
+    "stem": "A blocker has sat on the board for a week with no owner. Which outline enabler is not being met?",
+    "explanation": "Facilitating problem resolution includes ensuring problems are resolved in a timely manner. An unowned week-old blocker fails that.",
     "options": [
-      "Facilitator takes it by default",
-      "Move it to the impediment log",
-      "Team agrees an owner and date now",
-      "Raise it at the scrum of scrums"
+      "Refining the product backlog",
+      "Timely problem resolution",
+      "Radiating metrics to all",
+      "Limiting work in progress"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -1582,12 +1582,12 @@
     "explanation": "Wideband Delphi gathers estimates anonymously, discusses the spread and repeats until they converge.",
     "options": [
       "T-shirt sizing",
-      "Wideband Delphi",
       "Planning poker",
+      "Wideband Delphi",
       "Ideal days"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2026,7 +2026,7 @@
     "options": [
       "Reset the release date",
       "Reset the next increment's goal",
-      "Reset the product vision",
+      "Reset the overall product vision",
       "Reset the team's velocity"
     ],
     "correct": [
@@ -2063,13 +2063,13 @@
     "skill": "Delivery 4: Recognize and eliminate waste",
     "difficulty": 2,
     "format": "single",
-    "stem": "Partly done work sits untouched for weeks. Why is this waste?",
-    "explanation": "Unfinished work has used effort but delivers nothing until it is done, and it can go stale while it waits.",
+    "stem": "Which Kanban flow metric keeps rising while partly done work sits untouched?",
+    "explanation": "Work item age is the time since an unfinished item started, so it grows every day the item waits. Cycle time is only known once the item finishes.",
     "options": [
-      "It breaks the sprint goal every time",
-      "It raises the defect count",
-      "It ties up effort with no return",
-      "It lowers team velocity"
+      "Throughput",
+      "Velocity",
+      "Work item age",
+      "Cycle time"
     ],
     "correct": [
       2
@@ -2126,13 +2126,13 @@
     "skill": "Mindset 6: Shorten feedback loops",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team has six weeks of budget. How does it get the most value in that time?",
-    "explanation": "Maximizing value in a fixed timeframe means ordering the work so the most valuable items are finished first. If time runs out, what is left is the least valuable.",
+    "stem": "A team has six weeks of budget left. Which ordering gets the most value in that time?",
+    "explanation": "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable.",
     "options": [
-      "Spend the first weeks on detailed design",
-      "Do the top-priority items first",
-      "Spread effort across all features",
-      "Do the riskiest technical items last"
+      "Items in request order",
+      "Highest value per cost first",
+      "Riskiest technical items first",
+      "Largest features first"
     ],
     "correct": [
       1
@@ -2210,13 +2210,13 @@
     "skill": "Delivery 5: Perform continuous improvements",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team tried a new code review rule last iteration. What should it do now?",
-    "explanation": "Continuous improvement includes evaluating the effectiveness of each change soon after trying it, before keeping, spreading or formalizing it.",
+    "stem": "A team tried a new code review rule last iteration. When should it evaluate the change?",
+    "explanation": "Continuous improvement includes evaluating each process change soon after trying it, which is what the next retrospective is for.",
     "options": [
-      "Run it for a full release first",
-      "Ask other teams to try it too",
-      "Measure it at the next audit",
-      "Check whether it helped"
+      "At the next quarterly review",
+      "At the next team audit",
+      "At the next release",
+      "At the next retrospective"
     ],
     "correct": [
       3
@@ -2252,16 +2252,16 @@
     "skill": "Leadership 5: Promote shared vision and purpose",
     "difficulty": 2,
     "format": "single",
-    "stem": "Midway through, a new feature request does not fit the product vision. What should happen?",
-    "explanation": "The practitioner ensures the product stays aligned to the vision and organizational goals. A request is weighed against that before it enters the backlog.",
+    "stem": "A new feature request does not fit the product vision. Which outline task guides the response?",
+    "explanation": "Promote shared vision and purpose includes ensuring the product is always aligned to the vision and organizational goals, so the request is weighed against the vision first.",
     "options": [
-      "Ask the team to size it",
-      "Plan it for the next release",
-      "Add it to the bottom of the backlog",
-      "Weigh it against the product's purpose"
+      "Recognize and eliminate waste",
+      "Promote shared vision and purpose",
+      "Perform continuous improvements",
+      "Manage impediments and risk"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2278,11 +2278,11 @@
     "options": [
       "Finish the planned features first",
       "Survey users at the next release",
-      "Adapt the product to how it is used",
-      "Add onboarding for the unused features"
+      "Add onboarding for the unused features",
+      "Adapt the product to how it is used"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -2298,12 +2298,12 @@
     "explanation": "A collaborative approach gets both people to evaluate the options together against what the team is trying to achieve. A vote, a compromise or a merge skips that evaluation.",
     "options": [
       "Ask the team to vote between them",
-      "Help them weigh both by the goal",
       "Ask them to merge both ideas",
+      "Help them weigh both by the goal",
       "Ask them to agree a compromise"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2636,13 +2636,13 @@
     "skill": "Leadership 2: Facilitate problem resolution",
     "difficulty": 1,
     "format": "single",
-    "stem": "What should a team do after finding the root cause of a defect?",
-    "explanation": "The value of root cause analysis is removing the cause so the problem does not return. Patching, detecting or retraining treats the effects.",
+    "stem": "After finding a defect's root cause, which action stops it coming back?",
+    "explanation": "Removing the cause is what stops the problem returning. A regression test detects a repeat but leaves the cause in place.",
     "options": [
-      "Patch every place it showed up",
-      "Add a check that catches it",
-      "Remove the cause itself",
-      "Retrain the developer involved"
+      "Logging it in the defect log",
+      "Adding a regression test",
+      "Removing the cause",
+      "Retesting the release"
     ],
     "correct": [
       2
@@ -3104,16 +3104,16 @@
     "skill": "Product 1: Refine product backlog",
     "difficulty": 1,
     "format": "single",
-    "stem": "Why size backlog items as a team rather than one person alone?",
+    "stem": "Sizing backlog items together as a team draws mainly on what?",
     "explanation": "The outline says to use tools and techniques to collectively size work, so the estimate reflects everyone who will do it.",
     "options": [
-      "It is faster than one estimator",
-      "It fixes the delivery date",
-      "It draws on shared knowledge",
-      "It removes the need to refine"
+      "The product owner's estimate",
+      "Past project budgets",
+      "Each person's velocity",
+      "Shared knowledge of the work"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -3172,11 +3172,11 @@
     "options": [
       "Fix scope for later iterations",
       "Show progress to the sponsor",
-      "Prove the chosen architecture works",
-      "Validate the solution with real users"
+      "Validate the solution with real users",
+      "Prove the chosen architecture works"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -3336,16 +3336,16 @@
     "skill": "Mindset 5: Foster psychological safety",
     "difficulty": 2,
     "format": "single",
-    "stem": "A practitioner asks for feedback on their facilitation and hears meetings run long. What should they do?",
-    "explanation": "The outline says to solicit and provide constructive feedback and act on it, then check whether the change worked.",
+    "stem": "A practitioner asks for feedback on their facilitation and hears meetings run long. What should they do next?",
+    "explanation": "The outline says to solicit feedback and act on it; checking again shows whether the change worked. Changing for good without checking, or asking elsewhere or later, breaks the loop.",
     "options": [
-      "Thank them and keep the format",
-      "Change the format and check again",
-      "Hand facilitation to someone else",
-      "Ask for a written survey first"
+      "Shorter format, then ask again",
+      "Ask another team for feedback",
+      "Try a shorter format for good",
+      "Ask the same people next quarter"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -3360,13 +3360,13 @@
     "stem": "What is the first step in managing a team conflict?",
     "explanation": "The outline puts identifying the root cause and level of the conflict first, then promoting a collaborative way to solve it.",
     "options": [
-      "Find its root cause and level",
       "Bring both people together at once",
+      "Find its root cause and level",
       "Set ground rules for the team",
       "Remind them of the working agreement"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -3378,16 +3378,16 @@
     "skill": "Leadership 3: Promote knowledge sharing",
     "difficulty": 1,
     "format": "single",
-    "stem": "Where should a team keep knowledge that others will need later?",
-    "explanation": "Captured knowledge is useful only if it is kept current and others can find it later. Notes, chat and email bury it.",
+    "stem": "A team wants lessons from its retrospectives to reach other teams. What helps most?",
+    "explanation": "A community of practice is an environment to capture and share knowledge across teams. Backlogs, retrospective boards and release notes stay with one team or one audience.",
     "options": [
-      "A shared chat channel",
-      "A shared email list",
-      "A wiki the team keeps current",
-      "A shared drive of meeting notes"
+      "Add them to the sprint backlog",
+      "Share them in a community of practice",
+      "Include them in the release notes",
+      "Keep them on the retrospective board"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3403,12 +3403,12 @@
     "explanation": "An increment is a working, usable piece of the product that adds value. The others describe an iteration backlog, the product backlog and the definition of done.",
     "options": [
       "The ordered list of all work",
-      "Usable and of value on its own",
       "The plan for one iteration",
+      "Usable and of value on its own",
       "The quality bar for done work"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -3530,7 +3530,7 @@
     "options": [
       "Changes once metrics drop",
       "Quarterly improvement programs",
-      "Small, frequent changes by the team",
+      "Small, frequent team changes",
       "A full framework rollout"
     ],
     "correct": [
@@ -3610,12 +3610,12 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A newly formed group is polite and avoids any disagreement. What helps it develop?",
-    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Surfacing different views helps it work through that stage; rules, a decider or an offsite do not.",
+    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Surfacing different views helps it work through that stage; norms, roles and an offsite do not by themselves.",
     "options": [
-      "Run a team-building offsite",
-      "Let the team lead settle decisions",
-      "Agree a working agreement on meetings",
-      "Draw out differing views openly"
+      "Plan a team-building offsite",
+      "Clarify each member's role",
+      "Agree team norms for meetings",
+      "Open discussion of differences"
     ],
     "correct": [
       3
@@ -3885,10 +3885,10 @@
     "stem": "How should a team decide which improvement to make next?",
     "explanation": "The outline says to obtain metrics and feedback to drive continuous improvements, meaning the team's own data.",
     "options": [
-      "Use industry benchmark data",
-      "Use the sponsor's priorities",
-      "Use the coach's past experience",
-      "Use the team's metrics and feedback"
+      "Industry benchmark data",
+      "The sponsor's priorities",
+      "The coach's past experience",
+      "Team metrics and feedback"
     ],
     "correct": [
       3
@@ -3969,13 +3969,13 @@
     "skill": "Leadership 5: Promote shared vision and purpose",
     "difficulty": 1,
     "format": "single",
-    "stem": "Why check that the product stays aligned with organizational goals?",
-    "explanation": "Alignment keeps each increment contributing to what the organization is trying to achieve.",
+    "stem": "Ensuring the product stays aligned with organizational goals belongs to which outline task?",
+    "explanation": "The Leadership task to promote shared vision and purpose includes ensuring the product is always aligned to the vision and organizational goals.",
     "options": [
-      "So each increment serves the business",
-      "So teams can share components",
-      "So budgets can be planned",
-      "So the roadmap stays stable"
+      "Promote shared vision and purpose",
+      "Facilitate problem resolution",
+      "Facilitate conflict management",
+      "Promote knowledge sharing"
     ],
     "correct": [
       0
@@ -3990,16 +3990,16 @@
     "skill": "Product 4: Manage value delivery",
     "difficulty": 2,
     "format": "single",
-    "stem": "A feature passes all functional tests but leaves customer data exposed. Does it deliver value?",
+    "stem": "A feature works as designed but leaves customer data exposed. Which part of its value is missing?",
     "explanation": "The outline includes security and privacy in what value looks like, so a feature with a known exposure has not delivered it.",
     "options": [
-      "No, not until users try it",
-      "Yes, the functions work",
-      "Yes, if it is fixed later",
-      "No, security is part of value"
+      "Usability",
+      "Scalability",
+      "Security",
+      "Performance"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -4037,11 +4037,11 @@
     "options": [
       "A cumulative flow diagram",
       "A definition of workflow",
-      "A pull system",
-      "A service level expectation"
+      "A service level expectation",
+      "A pull system"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -4074,13 +4074,13 @@
     "skill": "Mindset 7: Embrace change",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why encourage cross-skilling within a team?",
+    "stem": "Cross-skilling team members mainly reduces which problem?",
     "explanation": "Cross-skilled members can pick up whatever work is blocking the flow, which removes single-person bottlenecks.",
     "options": [
-      "So specialists can be retired",
-      "So nothing stalls on one person",
-      "So meetings get shorter",
-      "So estimates are more accurate"
+      "Errors in team estimates",
+      "Single-person bottlenecks",
+      "Scope creep late in delivery",
+      "Meeting overload"
     ],
     "correct": [
       1
@@ -4161,13 +4161,13 @@
     "skill": "Delivery 6: Actively engage customers",
     "difficulty": 2,
     "format": "single",
-    "stem": "An iteration deliverable misses one of its acceptance criteria. What is its status?",
-    "explanation": "A deliverable is accepted when it meets its acceptance criteria. Partial work goes back to the backlog.",
+    "stem": "An iteration deliverable misses one of its acceptance criteria. What happens to it?",
+    "explanation": "A deliverable is accepted when it meets its acceptance criteria. Work that does not goes back to the backlog.",
     "options": [
-      "Accepted if the sponsor agrees",
-      "Accepted at the next release",
-      "Accepted with a follow-up story",
-      "Not accepted until it meets it"
+      "It ships with a known-issue note",
+      "It is split and half accepted",
+      "It is accepted with a follow-up story",
+      "It goes back to the backlog"
     ],
     "correct": [
       3

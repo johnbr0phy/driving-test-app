@@ -217,6 +217,7 @@ const BORROWED_SETS: Record<string, string> = {
   ngpolice: "police", cdcfib: "ffi", ngarmy: "asvab", ngcustoms: "security", trcnpqe: "praxis",
   // AHIMA CCA shares the CPC medical coding tiger.
   cca: "cpc",
+  rhit: "cpc",
   // Next-20 batch B reuses reviewed medical-assisting, dental, insurance, cloud and finance families.
   // Accounting exams share the ledger-and-calculator CPA FAR tiger, not the medical-coding CPC tiger.
   cma: "ccma", rma: "ccma", nbdhe: "danb", inbde: "danb", dat: "danb", txadjuster: "pnc", ccaf: "aws", sfadmin: "aws", sfpd1: "aws", sfappbuilder: "aws", cfal1: "series7",

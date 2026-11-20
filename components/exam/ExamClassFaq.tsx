@@ -168,6 +168,7 @@ export const TEACHES: Record<string, string> = {
   rbt: "the 40-hour RBT training or supervise RBT candidates",
   cpc: "a medical coding program",
   cca: "a medical coding or HIM program",
+  rhit: "a health information technology program",
   cma: "a medical assisting program",
   rma: "a medical assisting program",
   nbdhe: "a dental hygiene program",

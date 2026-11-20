@@ -291,6 +291,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   kenck: { title: "NCK Licensure Exam", description: "Practice fundamentals, med-surg, midwifery, IMCI, community health and Kenyan nursing law." },
   iedttcv: { title: "Ireland Truck and Bus Theory Test", description: "Review drivers' hours, tachographs, brakes, loads, passengers and heavy vehicle speed limits." },
   cemap: { title: "CeMAP 1 (FSRE)", description: "Practice UK financial services, the FCA and PRA, Consumer Duty, AML, complaints and ethics." },
+  rhit: { title: "Free RHIT Practice Test", description: "200 original questions on the AHIMA RHIT content outline for health information technicians. Free to start." },
   cca: { title: "CCA Exam", description: "Review ICD-10-CM, ICD-10-PCS, CPT, DRGs, claims, compliance and HIPAA for AHIMA's coding exam." },
   iedtt: { title: "Ireland Driver Theory Test", description: "Study signs, junctions, speed, motorways and vulnerable road users from the Rules of the Road." },
   cask: { title: "Saskatchewan Learner's Test", description: "Review SGI signs, right-of-way, graduated licensing and winter driving for your Class 7 test." },

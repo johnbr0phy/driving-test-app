@@ -97,6 +97,10 @@ export async function GET(req: NextRequest) {
       if (!u.voice.hasPremium || u.voice.premiumBenefits.length === 0) return false;
       if (u.subscription?.isPremium) return false;
       if (u.emailsSent.includes(EMAIL_KEY)) return false;
+      // Already sent the link back to their own checkout (Stripe webhook,
+      // lib/checkoutRecovery.ts) in the last week: one follow-up is enough.
+      const recoveredAt = Date.parse(u.raw.checkoutRecovery?.at ?? "");
+      if (Number.isFinite(recoveredAt) && now - recoveredAt < 7 * 24 * 60 * 60 * 1000) return false;
       if (emailedRecently(u, now, GAP_MS)) return false;
       if (u.questionsAnswered < MIN_QUESTIONS) return false;
       if (classUnlocks(u.raw, u.examId, u.lastPaywallHit!)) return false;

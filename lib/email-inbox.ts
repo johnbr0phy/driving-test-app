@@ -38,6 +38,10 @@ export const EMAIL_INBOX = {
     subject: feature ? `Revisit ${inboxLabel(feature, "your practice")}` : `Explore ${exam(v)}Premium features`,
     preheader: "Review the Premium features and current price before you decide.",
   }),
+  checkoutRecovery: (v: EmailVoice): InboxCopy => ({
+    subject: v.id === "unknown" || !v.hasPremium ? "Your Tigertest Premium checkout" : `Your ${exam(v)}Premium checkout`,
+    preheader: "You didn't finish checking out. The link reopens the same checkout.",
+  }),
   purchaseWelcome: (v: EmailVoice): InboxCopy => ({
     subject: "Tigertest Premium: purchase confirmed",
     preheader: v.id !== "unknown" && !EXAMS_V2.some(e => e.id === v.id)

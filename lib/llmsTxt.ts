@@ -120,6 +120,8 @@ function translatedSection(): string | null {
 
 const TEACH_SECTION = `## For teachers\n\n- [Free instructor classes](${siteUrl}/teach): a teacher makes a class for any test on the site and posts one link; students join with just their name, and the teacher sees who practiced, their test scores and the topics the class misses most.`;
 
+const HOMESCHOOL_SECTION = `## For homeschool families\n\n- [Free homeschool practice tests by grade](${siteUrl}/homeschool): MAP Growth and CogAT for grades 2 to 6, SSAT, ISEE, HSPT and SHSAT for middle school, and the PSAT, SAT, ACT, AP, GED and HiSET for high school, all free. A parent can make a free family class and follow each child's scores and weakest topics.`;
+
 const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 
 - Anyone with a free Tigertest account can turn notes, a chapter or a syllabus into a practice test at ${siteUrl}/create (connect the person's own ChatGPT or Claude there to write and save questions through MCP), played at tigertest.io/q/<code> in three modes: Practice (misses come back until mastered), Test (timed, with a pass mark) and Flashcards.
@@ -166,6 +168,7 @@ export function renderLlmsTxt(): string {
     topicSection(),
     translatedSection(),
     TEACH_SECTION,
+    HOMESCHOOL_SECTION,
     QUIZ_SECTION,
     `## More detail\n\n- [Full exam facts and the 50-state DMV test table](${siteUrl}/llms-full.txt)`,
     FOOTER,
@@ -216,6 +219,7 @@ export function renderLlmsFullTxt(): string {
     topicSection(),
     translatedSection(),
     TEACH_SECTION,
+    HOMESCHOOL_SECTION,
     QUIZ_SECTION,
     FOOTER,
   ].filter(Boolean).join("\n\n") + "\n";

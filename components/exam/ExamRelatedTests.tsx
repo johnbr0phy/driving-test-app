@@ -8,6 +8,7 @@ import { examBaseLanguage, getExamById } from "@/lib/exams";
 import { TOPIC_ALSO, examTopics, hasTopicPages, topicPath } from "@/lib/topicPages";
 import { examTopicsV2, topicExamV2, topicPathV2 } from "@/lib/v2/topicPages";
 import { COUNTRY_NAMES } from "@/components/home/homeCopy";
+import { HOMESCHOOL_PATH, HOMESCHOOL_TEST_IDS } from "@/lib/homeschool";
 
 const RELATED_COPY: Partial<Record<Language, { title: string; sub: string; country: (name: string) => string; all: (n: number) => string }>> = {
   en: {
@@ -230,6 +231,11 @@ export function ExamRelatedTests({ examId, lang = "en" }: { examId: string; lang
         {country && (
           <Link href={regionHomePath(country.code)} className="text-brand-dark font-medium hover:underline">
             {copy.country(lang === "en" ? country.inName : COUNTRY_NAMES[lang]?.[country.code] ?? country.name)}
+          </Link>
+        )}
+        {lang === "en" && HOMESCHOOL_TEST_IDS.includes(examId) && (
+          <Link href={HOMESCHOOL_PATH} className="text-brand-dark font-medium hover:underline">
+            Homeschooling? Free tests by grade
           </Link>
         )}
         <Link href="/tests" className="text-brand-dark font-medium hover:underline">

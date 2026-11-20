@@ -16,3 +16,4 @@ export const TOPIC_PAGES_UPDATED_AT = "2026-11-14"; // CCRN (Adult) added; v2 ex
 
 // /about.
 export const ABOUT_PAGE_UPDATED_AT = "2026-11-10";
+export const HOMESCHOOL_PAGE_UPDATED_AT = "2026-11-20"; // /homeschool first published

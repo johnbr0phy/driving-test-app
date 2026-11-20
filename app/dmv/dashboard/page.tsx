@@ -26,8 +26,10 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
+import { useTrackDashboardView } from "@/hooks/useTrackDashboardView";
 
 function DashboardContent() {
+  useTrackDashboardView();
   const router = useRouter();
   const searchParams = useSearchParams();
   const hydrated = useHydration();

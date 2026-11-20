@@ -24,6 +24,7 @@ import { MEMBERSHIPS_CHANGED } from "@/lib/classMembershipSync";
 import { leaveClass, type ClassMembership } from "@/lib/classProgress";
 import { codeProgress, useQuizStore } from "@/store/useQuizStore";
 import { QuizStates, useQuiz } from "@/components/quiz/QuizLoader";
+import { useTrackDashboardView } from "@/hooks/useTrackDashboardView";
 
 type Stamp = { label: string; color: "green" | "amber" | "red" };
 
@@ -49,6 +50,7 @@ function getTigerFace(complete: number, total: number): string {
 }
 
 export function QuizHome({ code, initial }: { code: string; initial: QuizPublic | null }) {
+  useTrackDashboardView();
   const heroVariant = useHeroVariant();
   const state = useQuiz(code, initial);
   const hydrated = useHydration();

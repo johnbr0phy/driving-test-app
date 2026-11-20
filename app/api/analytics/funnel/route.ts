@@ -9,7 +9,7 @@ import { landingKey, normalizeLanding } from '@/lib/funnelLanding';
 // Visitor funnel aggregate (see lib/funnel.ts). One counter per step, total
 // and per UTC day; signups are also split by whether the browser practiced
 // before signing up.
-const STEPS = new Set(['visit', 'answered', 'signup_view', 'dmv_picker', 'dmv_state', 'signup']);
+const STEPS = new Set(['visit', 'answered', 'signup_view', 'dmv_picker', 'dmv_state', 'dashboard', 'signup']);
 // Mirrors VISIT_SOURCES in lib/funnel.ts (that module imports the client SDK).
 const VISIT_SOURCES = new Set(['chatgpt', 'perplexity', 'gemini', 'copilot', 'claude', 'ai_other', 'search', 'friend', 'direct', 'other']);
 
@@ -53,6 +53,12 @@ export async function POST(request: NextRequest) {
       steps[`visit_${body.source}`] = bump;
       // Sub-count of direct: no referrer, landed on a deep page (likely AI apps).
       if (body.source === 'direct' && body.deep === true) steps.visit_direct_deep = bump;
+    }
+    // A first dashboard view is also filed under the day of the browser's first
+    // visit, so each day's new visitors can be followed to the dashboard
+    // (the share that ever got there) on the /admin Growth tab.
+    if (step === 'dashboard' && typeof body.visitDay === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(body.visitDay) && body.visitDay <= today) {
+      steps.dashboard_by_visit = { total: FieldValue.increment(1), daily: { [body.visitDay]: FieldValue.increment(1) } };
     }
     if (step === 'visit' && ipCountry) steps[`visit_region_${regionFromCountry(ipCountry) ?? 'OTHER'}`] = bump;
 

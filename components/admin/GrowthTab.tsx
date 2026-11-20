@@ -581,6 +581,118 @@ function VisitSources({ sum, daily }: { sum: (step: string) => number; daily: Re
   );
 }
 
+// Share of new visitors who ever reach a dashboard (the page where people see
+// the steps they turn green), by the UTC day of their first visit. Fed by the
+// funnel's dashboard step (lib/funnel.ts, dashboard_by_visit). Recent days
+// still rise as visitors come back, so the last 3 are drawn as provisional.
+const REACH_SETTLE_DAYS = 3;
+
+function DashboardReach({ daily }: { daily: Record<string, Record<string, number>> }) {
+  const byVisit = daily.dashboard_by_visit || {};
+  const visits = daily.visit || {};
+  const today = new Date().toISOString().split("T")[0];
+  // Starts on the first day the step was counted at all, so browsers that
+  // first visited long ago (and file under an old visit day) don't start it early.
+  const start = Object.keys(daily.dashboard || {}).sort()[0];
+  const days = useMemo(() => {
+    if (!start) return [] as string[];
+    const out: string[] = [];
+    for (let d = new Date(start + "T00:00:00Z"); ; d.setUTCDate(d.getUTCDate() + 1)) {
+      const key = d.toISOString().split("T")[0];
+      if (key > today) break;
+      out.push(key);
+    }
+    return out;
+  }, [start, today]);
+  const settleFrom = dateKeyDaysAgo(REACH_SETTLE_DAYS - 1);
+  const share = (from: number, to: number) => {
+    const slice = days.slice(Math.max(0, from), Math.max(0, to));
+    const v = slice.reduce((n, d) => n + (visits[d] || 0), 0);
+    const r = slice.reduce((n, d) => n + (byVisit[d] || 0), 0);
+    return v > 0 ? { pct: (r / v) * 100, visits: v, reached: r } : null;
+  };
+  const points = days.map((d, i) => {
+    const v = visits[d] || 0;
+    const rate = v > 0 ? Math.min(100, ((byVisit[d] || 0) / v) * 100) : null;
+    const week = i >= 6 ? share(i - 6, i + 1) : null;
+    const settled = d < settleFrom;
+    return {
+      label: fmtDayLabel(d),
+      day: settled ? rate : null,
+      // The provisional segment overlaps the last settled point so the line joins.
+      recent: !settled || days[i + 1] === settleFrom ? rate : null,
+      week: settled && week ? week.pct : null,
+    };
+  });
+  // Settled days only: the last 7 settled against the 7 before them.
+  const settledCount = days.filter((d) => d < settleFrom).length;
+  const last7 = settledCount >= 1 ? share(settledCount - 7, settledCount) : null;
+  const prev7 = settledCount >= 8 ? share(settledCount - 14, settledCount - 7) : null;
+  const all = share(0, days.length);
+
+  return (
+    <div className={CARD}>
+      <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+        <div>
+          <h2 className="text-sm font-semibold text-gray-900 dark:text-gray-50">New visitors who reach a dashboard</h2>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            Share of each day&apos;s new visitors who ever opened a dashboard, where they see the steps to turn green
+          </p>
+        </div>
+        {last7 && (
+          <div className="text-right">
+            <p className="text-lg font-semibold text-gray-900 dark:text-gray-50 tabular-nums">{last7.pct.toFixed(1)}%</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              last 7 settled days
+              {prev7 && (
+                <span className="ml-1 font-medium" style={{ color: last7.pct >= prev7.pct ? COLORS.deltaUp : COLORS.deltaDown }}>
+                  {last7.pct >= prev7.pct ? "▲" : "▼"} {Math.abs(last7.pct - prev7.pct).toFixed(1)} pts vs prior 7
+                </span>
+              )}
+            </p>
+          </div>
+        )}
+      </div>
+      {points.length < 2 ? (
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {start
+            ? `Counting since ${fmtDayLabel(start)}${all ? `: ${fmtInt(all.reached)} of ${fmtInt(all.visits)} new visitors so far` : ""}. The chart draws once there are two days.`
+            : "No dashboard views counted yet. Counting starts with this deploy."}
+        </p>
+      ) : (
+        <>
+          <div className="h-56">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={points} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+                <CartesianGrid vertical={false} stroke={COLORS.grid} />
+                <XAxis dataKey="label" tick={axisTickStyle} tickLine={false} axisLine={{ stroke: COLORS.axis }}
+                  interval="preserveStartEnd" minTickGap={24} tickMargin={8} />
+                <YAxis tick={axisTickStyle} tickLine={false} axisLine={false} width={40} domain={[0, "auto"]}
+                  tickFormatter={(v: number) => `${Math.round(v)}%`} />
+                <Tooltip
+                  formatter={(v, name) => [v == null ? "·" : `${Number(v).toFixed(1)}%`, String(name)]}
+                  contentStyle={{ fontSize: 12, borderRadius: 8 }}
+                />
+                <Line type="monotone" dataKey="day" name="By day" stroke={COLORS.users} strokeOpacity={0.45} strokeWidth={1.5}
+                  dot={false} connectNulls={false} isAnimationActive={false} />
+                <Line type="monotone" dataKey="recent" name="By day (still filling)" stroke={COLORS.users} strokeOpacity={0.45}
+                  strokeWidth={1.5} strokeDasharray="4 3" dot={false} connectNulls={false} isAnimationActive={false} />
+                <Line type="monotone" dataKey="week" name="7-day share" stroke={COLORS.users} strokeWidth={2.25}
+                  dot={false} connectNulls={false} isAnimationActive={false} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          <p className="mt-1 text-[11px] text-gray-500 dark:text-gray-400">
+            Browsers, signed out, by UTC day of first visit; any dashboard counts (DMV, exam, quiz). The thin line is each day, the
+            thick one the 7-day share. The last {REACH_SETTLE_DAYS} days are dashed: those visitors can still come back and get there.
+            Counting since {fmtDayLabel(start!)}.
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+
 // One funnel from first page view to purchase. Signed-out steps count browsers
 // (lib/funnel.ts); after signup it follows the tracked accounts (signupOrigins)
 // by signup day, so a purchase lands in the window the account was created in.
@@ -597,6 +709,7 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
   const signups = sum("signup");
   const tried = sum("signup_tried");
   const cold = sum("signup_cold");
+  const sawDashboard = sum("dashboard");
   const pickerShown = sum("dmv_picker");
   const stateChosen = sum("dmv_state");
   const pct = (n: number, d: number) => (d > 0 ? `${Math.round((n / d) * 100)}%` : "0%");
@@ -646,6 +759,9 @@ function VisitorFunnel({ data }: { data: NonNullable<Metrics["visitorFunnel"]> }
             data={[
               { section: "Signed out", label: "New visitors", value: visits, note: "baseline" },
               { label: "Tried a question", value: answered, note: `${pct(answered, visits)} of visitors` },
+              ...(sawDashboard > 0
+                ? [{ label: "Saw a dashboard", value: sawDashboard, note: `${pct(sawDashboard, visits)} of visitors` }]
+                : []),
               { label: "Opened signup", value: opened, note: `${pct(opened, visits)} of visitors` },
               { label: "Created an account", value: signups, note: `${pct(signups, opened)} of signup opens` },
               {
@@ -1187,6 +1303,7 @@ export function GrowthTab() {
         )}
 
         {/* Funnel: first visit to purchase */}
+        {metrics.visitorFunnel && <DashboardReach daily={metrics.visitorFunnel.daily} />}
         {metrics.visitorFunnel && <VisitorFunnel data={metrics.visitorFunnel} />}
     </>
   );

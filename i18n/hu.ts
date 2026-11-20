@@ -15,6 +15,8 @@ export const hu: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "A legutóbbi haladásod még nincs elmentve a fiókodba. Hagyd nyitva ezt az oldalt, és próbáld újra.",
+    syncRetry: "Próbáld újra",
     logOut: "Kijelentkezés",
     signIn: "Bejelentkezés",
     signUp: "Regisztráció",

@@ -15,6 +15,8 @@ export const el: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Η πιο πρόσφατη πρόοδός σου δεν έχει αποθηκευτεί ακόμη στον λογαριασμό σου. Κράτησε αυτή τη σελίδα ανοιχτή και δοκίμασε ξανά.",
+    syncRetry: "Δοκίμασε ξανά",
     logOut: "Αποσύνδεση",
     signIn: "Σύνδεση",
     signUp: "Εγγραφή",

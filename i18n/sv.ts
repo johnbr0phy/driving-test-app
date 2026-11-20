@@ -15,6 +15,8 @@ export const sv: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Dina senaste framsteg har inte sparats på ditt konto än. Håll sidan öppen och försök igen.",
+    syncRetry: "Försök igen",
     logOut: "Logga ut",
     signIn: "Logga in",
     signUp: "Skapa konto",

@@ -15,6 +15,8 @@ export const da: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Dine seneste fremskridt er endnu ikke gemt på din konto. Hold siden åben, og prøv igen.",
+    syncRetry: "Prøv igen",
     logOut: "Log ud",
     signIn: "Log ind",
     signUp: "Opret konto",

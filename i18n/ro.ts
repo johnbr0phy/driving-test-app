@@ -15,6 +15,8 @@ export const ro: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Progresul tău cel mai recent nu a fost încă salvat în cont. Ține pagina deschisă și încearcă din nou.",
+    syncRetry: "Încearcă din nou",
     logOut: "Deconectează-te",
     signIn: "Conectează-te",
     signUp: "Înregistrează-te",

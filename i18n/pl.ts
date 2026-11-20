@@ -14,6 +14,8 @@ export const pl: TranslationKeys = {
   },
   common: {
     dmvHeaderTitle: "DMV Practice Test",
+    syncFailed: "Twoje najnowsze postępy nie zostały jeszcze zapisane na Twoim koncie. Nie zamykaj tej strony i spróbuj ponownie.",
+    syncRetry: "Spróbuj ponownie",
     logOut: "Wyloguj się",
     signIn: "Zaloguj się",
     signUp: "Zarejestruj się",

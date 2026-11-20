@@ -316,6 +316,7 @@ import "./nailtech";
 import "./ea2";
 import "./ea3";
 import "./cahambasic";
+import "./hamgeneral";
 import "./cadronebasic";
 import "./carscook";
 import "./carshair";

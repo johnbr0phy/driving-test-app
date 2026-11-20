@@ -6604,6 +6604,19 @@
     --brand-border-light: 148 25% 88%;
     --brand-gradient-to: 150 70% 95%;
   }
+  /* FCC General (Element 3) theme: dark olive amber, a step from the Technician exam's amber */
+  [data-theme="hamgeneral"] {
+    --brand: 60 70% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 60 45% 95%;
+    --brand-hover: 60 70% 14%;
+    --brand-dark: 60 70% 13%;
+    --brand-darker: 60 60% 9%;
+    --brand-muted: 60 25% 68%;
+    --brand-border: 60 30% 78%;
+    --brand-border-light: 60 25% 88%;
+    --brand-gradient-to: 50 40% 95%;
+  }
   /* Ontario Hunter Education theme: deep russet brown */
   [data-theme="cahunteron"] {
     --brand: 21 85% 20%;
@@ -12068,6 +12081,17 @@
     --brand-muted: 148 25% 45%;
     --brand-dark: 148 90% 65%;
     --brand-darker: 148 85% 78%;
+  }
+  .dark [data-theme="hamgeneral"] {
+    --brand: 60 70% 27.9%;
+    --brand-hover: 60 70% 19.9%;
+    --brand-light: 60 45% 13%;
+    --brand-gradient-to: 50 40% 11%;
+    --brand-border-light: 60 25% 24%;
+    --brand-border: 60 30% 34%;
+    --brand-muted: 60 25% 45%;
+    --brand-dark: 60 70% 65%;
+    --brand-darker: 60 60% 78%;
   }
   .dark [data-theme="cahunteron"] {
     --brand: 21 85% 42%;

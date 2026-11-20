@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "hamgeneral",
+      "date": "2027-07-01",
+      "kind": "outline",
+      "what": "The NCVEC 2027-2031 General (Element 3) question pool replaces the 2023-2027 pool.",
+      "action": "Parse the new pool into tools/next100/hamgeneral/pool.json, write explanations for new or changed questions, rebuild, and update the landing, facts and CLAUDE.md.",
+      "source": "https://www.arrl.org/question-pools"
+    },
+    {
       "exam": "ccna",
       "date": "2027-02-03",
       "kind": "outline",

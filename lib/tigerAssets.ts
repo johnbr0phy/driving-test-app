@@ -119,6 +119,7 @@ const BORROWED_SETS: Record<string, string> = {
   aufirearmsnsw: "capal",
   nzham: "ham",
   cahambasic: "ham",
+  hamgeneral: "ham",
   cadc: "nce",
   nzdrone: "part107",
   cadronebasic: "part107",

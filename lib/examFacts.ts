@@ -1476,6 +1476,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Remote Pilot Airman Certification Standards",
     source: { name: "FAA", url: "https://www.faa.gov/uas/commercial_operators" },
   },
+  hamgeneral: {
+    answer:
+      "The ham radio General exam (FCC Element 3) has 35 multiple-choice questions, and 26 correct (about 74%) passes. Every question comes word for word from the public NCVEC pool; the 2023-2027 General pool runs from July 1, 2023 to June 30, 2027. You need a Technician license (Element 2) too, and a team of three volunteer examiners holding Advanced or Extra licenses gives it.",
+    rows: [
+      { label: "Questions", value: "35, one from each pool group" },
+      { label: "Passing score", value: "26 correct (about 74%)" },
+      { label: "Question pool", value: "NCVEC 2023-2027 General, 423 live questions" },
+      { label: "Also needed", value: "Element 2 (Technician)" },
+      { label: "Given by", value: "Teams of 3 volunteer examiners" },
+    ],
+    basedOn: "the official NCVEC 2023-2027 General pool (6th errata, February 2026)",
+    source: { name: "FCC 47 CFR 97.503", url: "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-F/section-97.503" },
+    tigertest:
+      "Tigertest has 418 of the 423 live General pool questions with explanations (the 5 that need the G7-1 schematic are left out), free to start with no account required.",
+  },
   ham: {
     answer:
       "The ham radio Technician exam (FCC Element 2) has 35 multiple-choice questions, and 26 correct (about 74%) passes. Every question comes word for word from the public NCVEC pool; the 2026-2030 pool runs from July 1, 2026 to June 30, 2030. Volunteer examiners give it, no Morse code is required, and the license lasts 10 years.",

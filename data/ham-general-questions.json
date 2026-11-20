@@ -137,7 +137,7 @@
     "optionD": "Only if the 10-meter repeater control operator holds at least a General class license",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A 10-meter repeater may retransmit a Technician's 2-meter signal only if the repeater's control operator holds at least a General license, since the repeater is transmitting on a General band [97.205(b)]."
+    "explanation": "A 10-meter repeater may retransmit a Technician's 2-meter signal only if the repeater's control operator holds at least a General license, since the repeater is transmitting on a General band [97.205(a)]."
   },
   {
     "type": "HAMG",
@@ -725,7 +725,7 @@
     "optionD": "Only those of the FCC",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A station in another country is governed by that country's rules, even when a US operator controls it over the internet [97.507]. FCC rules apply to stations under FCC jurisdiction."
+    "explanation": "A station located in another country is governed by that country's rules, even when a US operator controls it over the internet. FCC rules apply to stations under FCC jurisdiction, so they add no requirements for a station in South America."
   },
   {
     "type": "HAMG",
@@ -837,7 +837,7 @@
     "optionD": "Repeat everything twice",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "QRS? means \"Shall I send more slowly?\", and the request is to send slower. Changing frequency or power is not what it asks for."
+    "explanation": "QRS sent on its own means \"Send more slowly\", so you should slow down your sending. With a question mark, QRS? asks \"Shall I send more slowly?\" Changing frequency or power is not what it asks for."
   },
   {
     "type": "HAMG",
@@ -5457,7 +5457,7 @@
     "optionD": "All these choices are correct",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A gamma match taps the driven element at a point of zero RF voltage at its center, so the element can be mounted directly to the boom without insulation. It does use a series capacitor and works on one band."
+    "explanation": "The center of a Yagi's driven element is at zero RF voltage, so with a gamma match it can be mounted directly to the metal boom without insulation, while the gamma rod taps the element off center. A gamma match does use a series capacitor and suits one band, not multiband antennas."
   },
   {
     "type": "HAMG",
@@ -5569,7 +5569,7 @@
     "optionD": "All these choices are correct",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "All listed methods are accepted: calculations based on OET Bulletin 65, computer modeling, or measurement with calibrated equipment can show your station meets the exposure limits. [97.13(c)(1)]"
+    "explanation": "All listed methods are accepted: calculations based on OET Bulletin 65, computer modeling, or measurement with calibrated equipment can show your station meets the exposure limits [97.13(c)(1)]."
   },
   {
     "type": "HAMG",
@@ -5625,7 +5625,7 @@
     "optionD": "All these choices are correct",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "If an evaluation shows the fields could exceed the limits, the licensee must act to keep people out of those fields, for example by reducing power or restricting access. [97.13(c)(2), 1.1307(b)] Neighbors cannot waive the limits."
+    "explanation": "If an evaluation shows the fields could exceed the limits, the licensee must act to keep people out of those fields, for example by reducing power or restricting access [97.13(c)(2), 1.1307(b)]. Neighbors cannot waive the limits."
   },
   {
     "type": "HAMG",
@@ -5653,7 +5653,7 @@
     "optionD": "Use an FCC-approved band-pass filter",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A station that does not qualify for an exemption must do an RF exposure evaluation, and OET Bulletin 65 gives the accepted methods. [97.13(c)(2), 1.1307(1)(b)(3)(i)] No FCC permission or special filter is involved."
+    "explanation": "A station that does not qualify for an exemption must do an RF exposure evaluation, and OET Bulletin 65 gives the accepted methods [97.13(c)(1), 1.1307(b)(1)]. No FCC permission or special filter is involved."
   },
   {
     "type": "HAMG",
@@ -5709,7 +5709,7 @@
     "optionD": "All these choices are correct",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Licensees must evaluate RF exposure and keep people out of any areas found to exceed the limits. [97.13(c)(2)] Posting the rule or notifying neighbors is not required."
+    "explanation": "Licensees must evaluate RF exposure and keep people out of any areas found to exceed the limits [97.13(c)(2)]. Posting the rule or notifying neighbors is not required."
   },
   {
     "type": "HAMG",
@@ -5821,7 +5821,7 @@
     "optionD": "All stations with a time-averaged transmission of more than one milliwatt",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "FCC RF exposure rules cover every station, amateur included, whose time-averaged power is over 1 milliwatt; at 1 milliwatt or less a source is exempt regardless of distance. [1.1307(1)(b)(3)(i)(A)] Amateurs are not exempt, and there is no 500 watt threshold."
+    "explanation": "FCC RF exposure rules cover every station, amateur included, whose time-averaged power is over 1 milliwatt; at 1 milliwatt or less a source is exempt regardless of distance [1.1307(b)(3)(i)(A)]. Amateurs are not exempt, and there is no 500 watt threshold."
   },
   {
     "type": "HAMG",

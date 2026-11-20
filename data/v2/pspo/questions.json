@@ -1,0 +1,4197 @@
+[
+  {
+    "id": "PSPO-T1-001",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog management",
+    "stem": "Scrum.org describes Product Backlog management as adjusting and ordering items so that the team can:",
+    "options": [
+      "Give each stakeholder equal value",
+      "Create the most valuable product",
+      "Finish the product by a set date",
+      "Ship every product request on time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Product Backlog management is the act of adjusting and ordering items on the Product Backlog so the Scrum Team can deliver the most valuable product possible."
+  },
+  {
+    "id": "PSPO-T1-002",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "Who defines the Sprint Goal during Sprint Planning?",
+    "options": [
+      "Whole Scrum Team, together",
+      "Product Owner, before the event",
+      "Key stakeholders, by agreement",
+      "Scrum Master, from the backlog"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After the Product Owner proposes how the product could increase its value, the whole Scrum Team collaborates to define the Sprint Goal. The Product Owner brings a proposal, not a finished goal."
+  },
+  {
+    "id": "PSPO-T1-003",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Which Key Value Area measures the value a product delivers today?",
+    "options": [
+      "Ability to Innovate",
+      "Current Value",
+      "Time-to-Market",
+      "Unrealized Value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Current Value quantifies the value the product delivers today. Unrealized Value looks at potential future value."
+  },
+  {
+    "id": "PSPO-T1-004",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Vision",
+    "stem": "What does a Product Vision describe?",
+    "options": [
+      "Purpose of the product",
+      "Team's working agreements",
+      "Product release dates for the year",
+      "Product tasks for the next Sprint"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scrum.org describes the Product Vision as the purpose of a product: the value it should deliver and to whom."
+  },
+  {
+    "id": "PSPO-T1-005",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "What does Scrum encourage with stakeholders, and customers in particular?",
+    "options": [
+      "Formal monthly reports",
+      "Requests through managers",
+      "Contact only at release",
+      "Frequent collaboration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Scrum.org notes that Scrum encourages frequent collaboration with stakeholders, and customers in particular."
+  },
+  {
+    "id": "PSPO-T1-006",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Release planning",
+    "stem": "According to Scrum.org, how should a product usually be delivered?",
+    "options": [
+      "Two large releases a year, at fixed dates",
+      "One big launch once all features exist",
+      "Small, incremental and frequent releases",
+      "Whenever the full specification is signed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum.org describes forecasting and release planning as a guide for delivering through small incremental and frequent releases rather than big bang launches."
+  },
+  {
+    "id": "PSPO-T1-007",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Besides value, what else may the Product Owner weigh when ordering items?",
+    "options": [
+      "Risk, dependencies and learning",
+      "Item age and the author's role",
+      "Length of each item's description",
+      "Which Developer wrote the item"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ordering aims at value, but risk, dependencies between items and what the team needs to learn also shape which items come first."
+  },
+  {
+    "id": "PSPO-T1-008",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "How are Product Backlog items chosen for the Sprint?",
+    "options": [
+      "Product Owner assigns them, in order, until capacity is used",
+      "Developers select them, in discussion with the Product Owner",
+      "Scrum Master picks them, based on the team's past velocity",
+      "Stakeholders vote on them during the previous Sprint Review"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Through discussion with the Product Owner, the Developers select items from the Product Backlog for the current Sprint. The more the Developers know about their past performance and capacity, the more confident their forecast."
+  },
+  {
+    "id": "PSPO-T1-009",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "A Product Owner tracks how far users' current experience falls short of what they want. Which Key Value Area is this?",
+    "options": [
+      "Ability to Innovate",
+      "Current Value",
+      "Time-to-Market",
+      "Unrealized Value"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The customer or user satisfaction gap, the difference between desired and current experience, is an example measure of Unrealized Value."
+  },
+  {
+    "id": "PSPO-T1-010",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Product Vision",
+    "stem": "Which two things does a good Product Vision express? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Who receives that value",
+      "Order of the first ten items",
+      "Budget for each Sprint",
+      "Technology stack to be used",
+      "Value the product should deliver"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "A good Product Vision expresses the value the product should deliver and to whom that value is delivered. Technology, order and budgets are decided elsewhere and change more often."
+  },
+  {
+    "id": "PSPO-T1-011",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "Why should the Product Owner learn the challenges key stakeholders face?",
+    "options": [
+      "To write the Definition of Done alone",
+      "To decide which Developer delivers what",
+      "To set the length of each Sprint",
+      "To deliver the value they are seeking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Understanding the challenges stakeholders face helps the Scrum Team deliver the value they are looking for."
+  },
+  {
+    "id": "PSPO-T1-012",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "An item is low in direct value but tests a risky assumption the whole product rests on. Where might it go?",
+    "options": [
+      "Into a separate risk register only",
+      "At the bottom, since value is low",
+      "Out of the backlog until value rises",
+      "Near the top, to reduce risk early"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Testing a key assumption early can protect the value of everything built on it. Reducing risk early is a valid reason to order an item higher."
+  },
+  {
+    "id": "PSPO-T1-013",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release planning",
+    "stem": "What is the main risk of a single big bang launch after a year of work?",
+    "options": [
+      "Developers have too little product work to do",
+      "The Product Backlog becomes too short",
+      "Sprint Reviews take less than an hour",
+      "Learning whether it works comes very late"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Waiting a year to release delays all real feedback, so wrong assumptions are found late and are costly to fix."
+  },
+  {
+    "id": "PSPO-T1-014",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "True or false: The Product Owner takes part in the Sprint Retrospective as a member of the Scrum Team.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Sprint Retrospective is for the whole Scrum Team, and the Product Owner is part of the Scrum Team. Improvements in how the team works often depend on the Product Owner too."
+  },
+  {
+    "id": "PSPO-T1-015",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Release frequency belongs to which Key Value Area?",
+    "options": [
+      "Current Value",
+      "Unrealized Value",
+      "Time-to-Market",
+      "Ability to Innovate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Time-to-Market measures how quickly the organization can deliver and learn from feedback. Release frequency, lead time and cycle time are examples."
+  },
+  {
+    "id": "PSPO-T1-016",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "What does the Scrum Guide call the Product Backlog?",
+    "options": [
+      "Record of product work finished in past Sprints",
+      "Complete plan of product tasks for the release",
+      "Emergent, ordered list of what the product needs",
+      "Fixed product specification agreed at the start"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Backlog is an emergent, ordered list of what is needed to improve the product. It changes as the product and market change."
+  },
+  {
+    "id": "PSPO-T1-017",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business Strategy",
+    "stem": "How does business strategy relate to product visions?",
+    "options": [
+      "Each product vision sets the company mission",
+      "The Scrum Master writes both together",
+      "Strategy informs each product's vision",
+      "They are separate and never linked"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Business strategy is informed by the company's mission and vision, and in turn informs individual product visions."
+  },
+  {
+    "id": "PSPO-T1-018",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "What is the main reason to invite real customers to the Sprint Review?",
+    "options": [
+      "Their feedback shapes what comes next",
+      "They can extend the Sprint if needed",
+      "They can assign work to Developers",
+      "They can sign the product Increment off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At the Sprint Review attendees inspect the Increment and collaborate on what to do next. Customer feedback is direct evidence for adapting the Product Backlog."
+  },
+  {
+    "id": "PSPO-T1-019",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transparency",
+    "stem": "The Product Owner orders the backlog from artifacts that are out of date. What does the Scrum Guide warn this can lead to?",
+    "options": [
+      "A Sprint that must be cancelled and replanned",
+      "Decisions that diminish value and increase risk",
+      "A Definition of Done that has to be lowered",
+      "Developers taking over the ordering of the work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum decisions are based on the perceived state of the artifacts. When transparency is low, those decisions can diminish value and increase risk."
+  },
+  {
+    "id": "PSPO-T1-020",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Technical debt is an example measure for which Key Value Area?",
+    "options": [
+      "Unrealized Value",
+      "Ability to Innovate",
+      "Current Value",
+      "Time-to-Market"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ability to Innovate quantifies how effectively the organization delivers new capabilities. Technical debt, defect trends and innovation rate are listed examples."
+  },
+  {
+    "id": "PSPO-T1-021",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "True or false: Defects and technical work belong in the Product Backlog alongside new features.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Backlog is the single source of work undertaken by the Scrum Team, so fixes and technical work are ordered there with everything else."
+  },
+  {
+    "id": "PSPO-T1-022",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release planning",
+    "stem": "True or false: The Scrum Guide defines a separate release planning event.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide has five events and none of them is release planning. Teams may plan releases however they like, within Scrum."
+  },
+  {
+    "id": "PSPO-T1-023",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business Strategy",
+    "stem": "How should an organization adapt its business strategy?",
+    "options": [
+      "Using feedback from delivered Increments",
+      "Only at a fixed five-year planning cycle",
+      "By copying what competitors deliver",
+      "Once the whole product is delivered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An organization inspects and adapts its business strategy based on feedback gathered from delivering product Increments, not only at fixed planning dates."
+  },
+  {
+    "id": "PSPO-T1-024",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conflicting needs",
+    "stem": "Sales and support each say their item must come first. What should the Product Owner do?",
+    "options": [
+      "Put both at the top; Developers pick",
+      "Ask both to agree, then follow their choice",
+      "Let the Scrum Master make the decision",
+      "Decide the order and explain why"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Product Owner represents many stakeholders and makes the ordering decision. Explaining it keeps the decision transparent and respected."
+  },
+  {
+    "id": "PSPO-T1-025",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Splitting items",
+    "stem": "A large item must be split. Which split usually serves the Product Owner best?",
+    "options": [
+      "Parts that give each Developer equal value",
+      "Thin slices, each usable on its own",
+      "Layers such as database, logic and screens",
+      "Phases that deliver design, build and test"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Slices that each create something usable can be released and inspected on their own. Splitting by layer or phase gives nothing usable until every part is Done."
+  },
+  {
+    "id": "PSPO-T1-026",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Sprint Planning",
+    "stem": "The Product Owner prepares attendees for Sprint Planning. Which two topics should they be ready to discuss? (Choose two.)",
+    "select": 2,
+    "options": [
+      "How those items map to the Product Goal",
+      "Tasks each Developer will be assigned",
+      "Each Developer's hours for the Sprint",
+      "Most important Product Backlog items",
+      "Release dates promised to customers"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The Product Owner ensures attendees are prepared to discuss the most important Product Backlog items and how they map to the Product Goal. The Developers plan their own work and capacity."
+  },
+  {
+    "id": "PSPO-T1-027",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Outcomes and outputs",
+    "stem": "The team doubled the number of features shipped, but customer satisfaction is flat. What does EBM suggest?",
+    "options": [
+      "Developers should ship features faster still",
+      "More output has not improved outcomes",
+      "Satisfaction surveys should be dropped",
+      "Value has doubled along with the features"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The EBM Guide notes that more features (outputs) do not necessarily lead to improved customer experiences (outcomes). Value is judged by outcomes."
+  },
+  {
+    "id": "PSPO-T1-028",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "Stakeholders want to know how much of the backlog will be Done by a date. What is the best basis for the forecast?",
+    "options": [
+      "Size of the backlog when work started",
+      "Progress the team has actually achieved",
+      "Date the stakeholders would like most",
+      "Hours each Developer says they can work"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Forecasts are most reliable when based on what has already happened, such as actual delivered progress. Hopes and capacity claims are not evidence."
+  },
+  {
+    "id": "PSPO-T1-029",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner accountability",
+    "stem": "Who may suggest new Product Backlog items?",
+    "options": [
+      "Only Developers, during Sprint Planning",
+      "Only stakeholders who fund the product",
+      "Only the Product Owner, who writes each one",
+      "Anyone; the Product Owner orders them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ideas can come from anyone, but the Product Owner remains accountable for the Product Backlog and its order. Others change it by convincing the Product Owner."
+  },
+  {
+    "id": "PSPO-T1-030",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "The Product Goal is met two Sprints early. What should the Product Owner do next?",
+    "options": [
+      "Set and share the next Product Goal",
+      "Keep the old goal until the planned date",
+      "Stop Sprints until a new budget is set",
+      "Let each Developer choose a personal goal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Developing and explicitly communicating the Product Goal is part of the Product Owner's accountability. Once one is fulfilled, the team needs a new target to plan against."
+  },
+  {
+    "id": "PSPO-T1-031",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "True or false: Developers may talk with users directly to understand a Product Backlog item.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The whole Scrum Team is responsible for stakeholder collaboration. Developers talking with users helps them understand items, while the Product Owner still owns the order."
+  },
+  {
+    "id": "PSPO-T1-032",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "Besides the work done in the Sprint, what progress is discussed at the Sprint Review?",
+    "options": [
+      "Progress against the product budget",
+      "Progress toward the Product Goal",
+      "Progress of each Developer's tasks",
+      "Progress on the Scrum Master's plan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At the Sprint Review the Scrum Team presents the results of its work, and progress toward the Product Goal is discussed with stakeholders."
+  },
+  {
+    "id": "PSPO-T1-033",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outcomes and outputs",
+    "stem": "Which is an outcome rather than an output?",
+    "options": [
+      "Twelve new product screens are released",
+      "Fewer customers cancel their plan",
+      "Forty items are marked Done",
+      "Velocity rises by ten points"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Outcomes are things a customer or user experiences, such as staying with the product. Screens, items and velocity measure output or activity."
+  },
+  {
+    "id": "PSPO-T1-034",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Refinement",
+    "stem": "How much time does the Scrum Guide set aside for Product Backlog refinement?",
+    "options": [
+      "One day per Sprint",
+      "It sets no fixed amount",
+      "Two hours per week",
+      "Up to 10% of each Sprint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide describes refinement as an ongoing activity and sets no timebox or percentage for it. The Scrum Team decides how much it needs."
+  },
+  {
+    "id": "PSPO-T1-035",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "Why should a release forecast be updated each Sprint?",
+    "options": [
+      "Old forecasts are binding contracts",
+      "Scrum rules say it must be re-signed",
+      "The Developers change every Sprint",
+      "New evidence makes it more realistic"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each Sprint adds real data on progress and on what is still needed. Updating the forecast keeps stakeholder expectations realistic."
+  },
+  {
+    "id": "PSPO-T1-036",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product definition",
+    "stem": "According to the Scrum Guide, what is a product?",
+    "options": [
+      "List of features to deliver",
+      "Vehicle to deliver value",
+      "Project with a fixed end",
+      "Set of documents to deliver"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide calls a product a vehicle to deliver value, with a clear boundary, known stakeholders and well-defined users or customers."
+  },
+  {
+    "id": "PSPO-T1-037",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "Who usually counts as a stakeholder of a product?",
+    "options": [
+      "Only the people who pay for the product",
+      "Only the Developers who build it",
+      "Anyone with an interest in its outcome",
+      "Only managers of the Scrum Team"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stakeholders include users, customers, sponsors, support staff and others with an interest in the product's outcome. A product has known stakeholders."
+  },
+  {
+    "id": "PSPO-T1-038",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "True or false: The Scrum Guide requires the Product Owner to formally accept each item at the Sprint Review.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide has no formal acceptance step. An item is part of the Increment once it meets the Definition of Done, and the Sprint Review is a working session, not a sign-off."
+  },
+  {
+    "id": "PSPO-T1-039",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outcomes and outputs",
+    "stem": "True or false: Higher velocity shows that the product is delivering more value.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Velocity counts output, not value. Value shows up in outcomes for customers and the organization, such as satisfaction, usage and revenue."
+  },
+  {
+    "id": "PSPO-T1-040",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Refinement",
+    "stem": "Which two attributes does refinement add to Product Backlog items? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Description",
+      "Owner's name",
+      "Approval stamp",
+      "Size",
+      "Due date"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Refinement breaks items down and adds detail such as a description, order and size. Attributes often vary with the domain of work."
+  },
+  {
+    "id": "PSPO-T1-041",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Two features each need a shared login service first. How should the Product Owner order them?",
+    "options": [
+      "Leave the order to each Developer",
+      "Put the login service ahead of both",
+      "Order them by date they were added",
+      "Put both features first, login last"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dependencies affect order. Placing the enabling item first lets the dependent features be Done when the team reaches them."
+  },
+  {
+    "id": "PSPO-T1-042",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Empiricism",
+    "stem": "Usage data from the last release shows a new feature is rarely used. What is the most empirical next step for the Product Owner?",
+    "options": [
+      "Wait until the yearly review to change course",
+      "Inspect why, then adapt the Product Backlog",
+      "Ask the Developers to add more of that feature",
+      "Keep the plan, since the feature was approved"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Empiricism means making decisions on what is observed. The Product Owner inspects the evidence and adapts the Product Backlog rather than following a plan that the data no longer supports."
+  },
+  {
+    "id": "PSPO-T1-043",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Value",
+    "stem": "According to Scrum.org, what is the objective of a Scrum Team?",
+    "options": [
+      "Keep each Developer fully busy all Sprint",
+      "Deliver every item that is in the backlog",
+      "Deliver value to customers and stakeholders",
+      "Follow the original product plan closely"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum.org states that the objective of a Scrum Team is to deliver value to customers and stakeholders."
+  },
+  {
+    "id": "PSPO-T1-044",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product definition",
+    "stem": "True or false: In Scrum, a product can be a service, a physical product or something more abstract.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says a product could be a service, a physical product or something more abstract, as long as it delivers value."
+  },
+  {
+    "id": "PSPO-T1-045",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Saying no",
+    "stem": "A sponsor asks for a feature the Product Owner thinks adds little value. What is the best response?",
+    "options": [
+      "Build it quietly to avoid an argument",
+      "Share the evidence; keep it low or out",
+      "Promise it for the next Sprint anyway",
+      "Pass the product decision to the Developers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Maximizing value sometimes means saying no. The Product Owner explains the reasoning with evidence and keeps the decision, which the organization must respect."
+  },
+  {
+    "id": "PSPO-T1-046",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fixed date",
+    "stem": "A release date is fixed by law. What can the Product Owner adjust to meet it?",
+    "options": [
+      "Sprint length, stretching it past a month",
+      "Daily Scrum, dropping it to save time",
+      "Scope, keeping the most valuable items",
+      "Definition of Done, lowering quality"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When the date cannot move, scope is the lever. Ordering by value means the most important items are Done by the date, without lowering quality."
+  },
+  {
+    "id": "PSPO-T1-047",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "The Product Backlog has grown to thousands of items. What problem is most likely?",
+    "options": [
+      "Sprint Planning cannot legally take place",
+      "The Product Goal is fulfilled automatically",
+      "Transparency is lost; ordering gets hard",
+      "Developers can no longer size any item"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A huge backlog hides what matters and is hard to keep ordered and understood. Removing items that no longer serve the Product Goal restores transparency."
+  },
+  {
+    "id": "PSPO-T1-048",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "Sprints enable predictability by inspecting and adapting progress toward the Product Goal at least how often?",
+    "options": [
+      "Every quarter",
+      "Every working day",
+      "Every calendar month",
+      "Every product release"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Because a Sprint lasts one month or less, progress toward the Product Goal is inspected and adapted at least every calendar month."
+  },
+  {
+    "id": "PSPO-T1-049",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Product Value",
+    "stem": "Scrum.org says product value drives which two of these? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Team headcount",
+      "Size of the backlog",
+      "Brand reputation",
+      "Number of Sprints",
+      "Customer loyalty"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Product value drives customer satisfaction, loyalty, brand reputation and the longevity of a business by meeting customers' needs."
+  },
+  {
+    "id": "PSPO-T1-050",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "In Evidence-Based Management, which goal is the organization's current improvement focus?",
+    "options": [
+      "Product Vision",
+      "Intermediate Goal",
+      "Strategic Goal",
+      "Immediate Tactical Goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Immediate Tactical Goals are the current focus of improvement. Intermediate Goals mark the path, and Strategic Goals are the large, distant outcomes."
+  },
+  {
+    "id": "PSPO-T1-051",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Sprint Review",
+    "stem": "Which two happen with stakeholders at a Sprint Review? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Discussing what to do next",
+      "Rating each Developer",
+      "Approving the team's hours",
+      "Inspecting the Increment",
+      "Assigning tasks to Developers"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Attendees inspect the outcome of the Sprint and collaborate on what to do next. Tasks, hours and individual ratings are not part of it."
+  },
+  {
+    "id": "PSPO-T1-052",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "True or false: A Product Backlog is complete once the first release ships.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Backlog is emergent. It changes as long as the product exists and keeps changing as the team and stakeholders learn."
+  },
+  {
+    "id": "PSPO-T1-053",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Releasing",
+    "stem": "When can the Product Owner release an Increment?",
+    "options": [
+      "Only once the product backlog is empty",
+      "Only once the Sprint Review approves it",
+      "Whenever it is Done and worth releasing",
+      "Only after three Sprints of work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An Increment that meets the Definition of Done can be released whenever it creates value; releases are not tied to the end of a Sprint."
+  },
+  {
+    "id": "PSPO-T1-054",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "Who decides how much work the Developers take into the Sprint?",
+    "options": [
+      "Line manager",
+      "Scrum Master",
+      "Product Owner",
+      "Developers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Selecting how much can be completed in a Sprint may be challenging, but it is the Developers' call, informed by their past performance, capacity and Definition of Done. The Product Owner influences what, not how much."
+  },
+  {
+    "id": "PSPO-T1-055",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Revenue per employee is an example measure of:",
+    "options": [
+      "Current Value",
+      "Ability to Innovate",
+      "Time-to-Market",
+      "Unrealized Value"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Revenue per employee, product cost ratio and customer and employee satisfaction are listed as Current Value measures."
+  },
+  {
+    "id": "PSPO-T1-056",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Refinement",
+    "stem": "Who takes part in Product Backlog refinement?",
+    "options": [
+      "Only the Product Owner, working on their own",
+      "Product Owner and Developers, as needed",
+      "Only the Scrum Master and stakeholders",
+      "Only senior Developers before planning"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Refinement is a collaborative activity. The Product Owner brings the needs and value, and the Developers who will do the work size the items."
+  },
+  {
+    "id": "PSPO-T1-057",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "Why are Strategic Goals in Evidence-Based Management pursued empirically?",
+    "options": [
+      "They are small and fully known in advance",
+      "They never change once they are written",
+      "They are set by the Developers each Sprint",
+      "They are large, distant and uncertain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Strategic Goals are so large and far away, with so many uncertainties, that the path to them can only be found through empiricism."
+  },
+  {
+    "id": "PSPO-T1-058",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Scrum Master and stakeholders",
+    "stem": "The Product Owner struggles to get two departments to work together on the product. Who can help facilitate?",
+    "options": [
+      "A Developer",
+      "Auditor",
+      "Product sponsor",
+      "Scrum Master"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Master serves the Product Owner by facilitating stakeholder collaboration as requested or needed, and removes barriers between stakeholders and Scrum Teams."
+  },
+  {
+    "id": "PSPO-T1-059",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog refinement",
+    "stem": "True or false: Product Backlog refinement is one of the five Scrum events.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum events are the Sprint, Sprint Planning, the Daily Scrum, the Sprint Review and the Sprint Retrospective. Refinement is an ongoing activity, not an event."
+  },
+  {
+    "id": "PSPO-T1-060",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Which pair of Key Value Areas reflects the organization's capability to deliver value?",
+    "options": [
+      "Unrealized Value and Ability to Innovate",
+      "Time-to-Market and Ability to Innovate",
+      "Current Value and Time-to-Market",
+      "Current Value and Unrealized Value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Current and Unrealized Value reflect customer outcomes in the market. Time-to-Market and Ability to Innovate reflect the organization's ability to deliver them."
+  },
+  {
+    "id": "PSPO-T1-061",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A stakeholder asks to see why an item sits low in the Product Backlog. What should the Product Owner do?",
+    "options": [
+      "Refuse to discuss the order with anyone",
+      "Move it up so the stakeholder sees value",
+      "Explain the reasoning behind the order",
+      "Ask the Developers to justify its position"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner owns the order and keeps it transparent and understood. Explaining the reasoning keeps trust while the decision stays with the Product Owner."
+  },
+  {
+    "id": "PSPO-T1-062",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting charts",
+    "stem": "Which chart shows both completed work and changes in total scope over time?",
+    "options": [
+      "Pie chart",
+      "Burn-down chart",
+      "Gantt chart",
+      "Burn-up chart"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A burn-up chart plots work completed against a separate total-scope line, so scope growth is visible. A simple burn-down shows remaining work only."
+  },
+  {
+    "id": "PSPO-T1-063",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Vision",
+    "stem": "Many teams argue over what the product is for. Which step helps the Product Owner most?",
+    "options": [
+      "Add more items to every Sprint",
+      "Write a longer product requirements list",
+      "Share a clear Product Vision",
+      "Ask each team to choose its own aim"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A shared Product Vision gives everyone the same purpose to decide against, which reduces conflicting directions."
+  },
+  {
+    "id": "PSPO-T1-064",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Expectations",
+    "stem": "Stakeholders keep being surprised by what is delivered. What would help most?",
+    "options": [
+      "Releasing less often to avoid change",
+      "Inviting them to inspect each Increment",
+      "Sending a longer product requirements file",
+      "Hiding the Product Backlog from them"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Frequent inspection at the Sprint Review keeps stakeholders' expectations in line with the real product and gives them a say in what comes next."
+  },
+  {
+    "id": "PSPO-T1-065",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Acceptance and clarity",
+    "stem": "Which two help Developers understand what a Product Backlog item needs? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Fixed hour estimates per task",
+      "Sign-off from every stakeholder",
+      "Conversations with the Product Owner",
+      "Long specifications up front",
+      "Examples of expected behaviour"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Clear items come from collaboration and concrete examples. Scrum does not require fixed hour estimates or stakeholder sign-off before work."
+  },
+  {
+    "id": "PSPO-T1-066",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Done",
+    "stem": "A feature passes testing but misses one Definition of Done criterion on the last Sprint day. The Product Owner wants it in the Increment. What is correct?",
+    "options": [
+      "It is released and fixed in the next Sprint",
+      "It is not part of the Increment yet",
+      "It joins the Increment as a partial item",
+      "The Product Owner may waive the criterion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Work cannot be considered part of an Increment unless it meets the Definition of Done. The Product Owner cannot waive the Definition of Done to count more work."
+  },
+  {
+    "id": "PSPO-T1-067",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "What does the Innovation Rate measure?",
+    "options": [
+      "Number of ideas raised in a Retrospective",
+      "Time from an idea to its first release",
+      "Share of effort spent on new capabilities",
+      "Share of users who try each new feature"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Innovation Rate is the percentage of effort or cost spent on new product capabilities, divided by total product effort or cost."
+  },
+  {
+    "id": "PSPO-T1-068",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "True or false: A forecast in Scrum is a commitment that the stated scope will ship on the stated date.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A forecast is a best estimate from evidence so far. In complex work what will happen is unknown, so forecasts guide decisions rather than guarantee them."
+  },
+  {
+    "id": "PSPO-T1-069",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Splitting items",
+    "stem": "Why split large items before Sprint Planning?",
+    "options": [
+      "So the backlog looks more complete",
+      "So each can be Done within one Sprint",
+      "So each Developer has a separate item",
+      "So stakeholders can approve each part"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Items that can be Done within one Sprint are ready for selection. Large items are split so they fit and still deliver something usable."
+  },
+  {
+    "id": "PSPO-T1-070",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "The Product Owner weighs three candidate Product Goals. What should guide the choice?",
+    "options": [
+      "Product items that are quickest to build",
+      "Technology the Developers prefer",
+      "Product Vision and business strategy",
+      "Request of the loudest stakeholder"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Business strategy informs the Product Vision, and the Product Goal is the next target the team plans against. Choosing it against vision and strategy keeps the work pointed at value."
+  },
+  {
+    "id": "PSPO-T1-071",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "Whose needs may the Product Owner represent in the Product Backlog?",
+    "options": [
+      "Only the Developers",
+      "Many stakeholders",
+      "Only the product sponsor",
+      "Only the Scrum Master"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide says the Product Owner may represent the needs of many stakeholders in the Product Backlog."
+  },
+  {
+    "id": "PSPO-T1-072",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multiple Scrum Teams",
+    "stem": "Three Scrum Teams build one product. How many Product Goals do they work toward?",
+    "options": [
+      "One per Sprint, per team",
+      "One, shared by all three",
+      "Three, one per Scrum Team",
+      "None until the teams merge"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum Teams working on the same product share one Product Goal, one Product Backlog and one Product Owner."
+  },
+  {
+    "id": "PSPO-T1-073",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Maximizing value",
+    "stem": "Two items cost the same. One serves 5% of users, the other fixes a problem for 60%. With nothing else known, which should usually come first?",
+    "options": [
+      "Fix for 60% of users",
+      "Whichever is larger",
+      "Whichever is newer",
+      "Feature for 5% of users"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With equal cost, the item likely to create the most value for customers usually comes first. The Product Owner then checks the result empirically."
+  },
+  {
+    "id": "PSPO-T1-074",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "What is the single source of work for the Scrum Team?",
+    "options": [
+      "Ticket queue",
+      "Project charter",
+      "Product roadmap",
+      "Product Backlog"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Scrum Guide calls the Product Backlog the single source of work undertaken by the Scrum Team."
+  },
+  {
+    "id": "PSPO-T1-075",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release planning",
+    "stem": "Why release a small first version to real users early?",
+    "options": [
+      "To learn what users value before building more",
+      "To finish the Product Backlog more quickly",
+      "To show stakeholders value without a Review",
+      "To avoid needing a Definition of Done at first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An early release turns assumptions into evidence. The Product Owner can then order the rest of the backlog on what users actually do."
+  },
+  {
+    "id": "PSPO-T1-076",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "In Evidence-Based Management, what is a hypothesis?",
+    "options": [
+      "Belief that one change will lead to a result",
+      "Fixed requirement signed off by sponsors",
+      "Proven fact about what product customers want",
+      "Step in the release plan that cannot move"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The EBM Guide defines a hypothesis as a belief that doing something will lead to something else. It stays a belief until an experiment supports or rejects it."
+  },
+  {
+    "id": "PSPO-T1-077",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Customers",
+    "stem": "True or false: Users and customers are always the same people.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A customer may pay while others use the product, as in a company buying software for its staff. The Product Owner considers both."
+  },
+  {
+    "id": "PSPO-T1-078",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Owner and Developers",
+    "stem": "The Product Owner sees technical debt slowing every release. What should they do?",
+    "options": [
+      "Leave it until customers complain",
+      "Tell the Developers which code to rewrite",
+      "Raise it with the Developers and weigh it",
+      "Ask the Scrum Master for a clean-up Sprint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Technical debt reduces the ability to deliver value, so the Product Owner makes it transparent and weighs the work against other items. How the code is fixed stays with the Developers."
+  },
+  {
+    "id": "PSPO-T1-079",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "True or false: Evidence-Based Management prescribes one fixed set of Key Value Measures for every organization.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "EBM defines no specific Key Value Measures, so organizations can adapt them. The measures in the guide are examples."
+  },
+  {
+    "id": "PSPO-T1-080",
+    "section": "pspo",
+    "test": 1,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "The Product Owner orders items only by which stakeholder is most senior. What is the main risk?",
+    "options": [
+      "The Sprint Goal is set too early",
+      "Refinement becomes a formal event",
+      "Developers cannot size the product items",
+      "Value is not maximized for customers"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ordering by rank rather than by value, risk and learning means the most valuable work may wait. The Product Owner is accountable for maximizing value."
+  },
+  {
+    "id": "PSPO-T2-001",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "What is the main purpose of ordering the Product Backlog?",
+    "options": [
+      "Show which stakeholder asked for value first",
+      "Make the most valuable work come first",
+      "Group items by the product area they touch",
+      "Give each Developer an equal share"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ordering puts the work that maximizes value, given risk and dependencies, at the top so the team takes it on first."
+  },
+  {
+    "id": "PSPO-T2-002",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "Which event is the main chance for the Product Owner and stakeholders to inspect the Increment together?",
+    "options": [
+      "Sprint Planning",
+      "Sprint Review",
+      "Daily Scrum",
+      "Sprint Retrospective"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Sprint Review is where the Scrum Team presents its results to key stakeholders and they inspect the outcome of the Sprint together."
+  },
+  {
+    "id": "PSPO-T2-003",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Which Key Value Area looks at value the product could create but does not yet?",
+    "options": [
+      "Ability to Innovate",
+      "Unrealized Value",
+      "Time-to-Market",
+      "Current Value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unrealized Value measures potential future value that could be realized if the organization better met the needs of all potential customers or users."
+  },
+  {
+    "id": "PSPO-T2-004",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business Strategy",
+    "stem": "What informs a company's business strategy?",
+    "options": [
+      "Its mission and vision",
+      "Its team rosters",
+      "Its product Sprint Backlogs",
+      "Its Daily Scrums"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Business strategy is informed by the company's mission and vision, then informs the visions of individual products."
+  },
+  {
+    "id": "PSPO-T2-005",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "A stakeholder group is affected by the product but has never been asked for input. What should the Product Owner do?",
+    "options": [
+      "Find ways to learn their needs",
+      "Wait until they complain first",
+      "Ask the Developers to guess them",
+      "Ignore them, since they don't pay"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Identifying and learning about key stakeholders' challenges helps the Scrum Team deliver value. A missing group is a blind spot."
+  },
+  {
+    "id": "PSPO-T2-006",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Releasing",
+    "stem": "Whose accountability covers judging whether releasing a Done Increment now maximizes value?",
+    "options": [
+      "Sponsor",
+      "Product Owner",
+      "Auditor",
+      "Scrum Master"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Owner is accountable for maximizing value, so judging when releasing an Increment creates value sits with them."
+  },
+  {
+    "id": "PSPO-T2-007",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "Which of these belongs in the Product Backlog?",
+    "options": [
+      "Only work for the current Sprint",
+      "Only product items estimated in hours",
+      "Only features that customers request",
+      "Features, fixes and technical work"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Product Backlog lists what is needed to improve the product: features, fixes, technical work and experiments alike."
+  },
+  {
+    "id": "PSPO-T2-008",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "In Sprint Planning, the Product Owner's main contribution to 'what can be Done' is:",
+    "options": [
+      "Decide how many items fit in the Sprint",
+      "Choose which Developer works on what",
+      "Split every item into hourly tasks",
+      "Clarify items so Developers can choose"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Product Owner helps the Developers understand the items so they can select and forecast. How much fits and how the work is done remain the Developers' decisions."
+  },
+  {
+    "id": "PSPO-T2-009",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Lead time belongs to which Key Value Area?",
+    "options": [
+      "Current Value",
+      "Time-to-Market",
+      "Ability to Innovate",
+      "Unrealized Value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lead time, release frequency and customer cycle time all describe how quickly the organization delivers and learns, so they are Time-to-Market measures."
+  },
+  {
+    "id": "PSPO-T2-010",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "In Evidence-Based Management, what shows the organization is on the path to a Strategic Goal?",
+    "options": [
+      "Intermediate Goals",
+      "Sprint Goals",
+      "Key Value Areas",
+      "Immediate Tactical Goals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Intermediate Goals are achievements that show the organization is on the path toward a Strategic Goal, where the path is somewhat uncertain but not completely unknown."
+  },
+  {
+    "id": "PSPO-T2-011",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conflicting needs",
+    "stem": "Stakeholders want the Product Owner to give every department equal Sprint time. What is the weakness?",
+    "options": [
+      "It needs a longer Daily Scrum",
+      "It makes the Sprint Goal too narrow",
+      "It breaks the Definition of Done",
+      "It ignores where value is highest"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sharing time by department ignores where the most value lies. The Product Owner orders by value so the team works on what matters most."
+  },
+  {
+    "id": "PSPO-T2-012",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Refinement",
+    "stem": "Items at the bottom of the backlog have one-line descriptions. Is this a problem?",
+    "options": [
+      "No; detail is added as they near the top",
+      "Yes; every item needs full detail before Sprint 1",
+      "Yes; one-line items must be deleted at once",
+      "No; low items never need more detail"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Refinement adds detail as items approach selection. Detailing distant items early wastes effort, since many will change or be removed."
+  },
+  {
+    "id": "PSPO-T2-013",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "Over five Sprints a team completed 18, 22, 20, 19 and 21 points. Which forecast is most useful?",
+    "options": [
+      "Exactly 22 every Sprint from now on",
+      "Exactly 30 next Sprint, as a stretch",
+      "A range, about 18 to 22 next Sprint",
+      "No forecast until the backlog is done"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Past results suggest a range around 20 per Sprint. A range shows uncertainty honestly; a stretch number or a fixed maximum ignores the evidence."
+  },
+  {
+    "id": "PSPO-T2-014",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "True or false: The Scrum Team may invite people from outside the team to Sprint Planning to give advice.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide allows the Scrum Team to invite other people to attend Sprint Planning to provide advice, for example a specialist or a customer representative."
+  },
+  {
+    "id": "PSPO-T2-015",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "The number of product versions still being supported is a measure of:",
+    "options": [
+      "Unrealized Value",
+      "Current Value",
+      "Time-to-Market",
+      "Ability to Innovate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Installed Version Index counts the versions still supported. Supporting many versions drains capacity for new capabilities, so it is an Ability to Innovate measure."
+  },
+  {
+    "id": "PSPO-T2-016",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "True or false: Removing items from the Product Backlog that no longer serve the Product Goal is part of managing it well.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Product Backlog management includes adjusting the backlog. Dropping items that no longer serve the Product Goal keeps it transparent and focused."
+  },
+  {
+    "id": "PSPO-T2-017",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "According to the EBM Guide, what are Mission and Vision without goals?",
+    "options": [
+      "Lofty aspirations",
+      "Detailed plans",
+      "Binding contracts",
+      "Sprint commitments"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The EBM Guide says that without goals, the Mission and Vision are simply lofty aspirations. Goals make progress toward them measurable."
+  },
+  {
+    "id": "PSPO-T2-018",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Feedback",
+    "stem": "A key customer is unhappy with the latest Increment. What should the Product Owner do first?",
+    "options": [
+      "Roll the product back without asking why",
+      "Find out why, then adapt the backlog",
+      "Ask the Developers to work longer hours",
+      "Wait for the customer to raise it again"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Customer dissatisfaction is evidence. Understanding its cause lets the Product Owner adapt the Product Backlog where it adds the most value."
+  },
+  {
+    "id": "PSPO-T2-019",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Empiricism",
+    "stem": "Why should the Product Owner prefer to release small Increments often?",
+    "options": [
+      "Small releases need no Definition of Done to be met",
+      "Each release brings feedback to inspect and adapt on",
+      "Smaller releases let stakeholders skip the Sprint Review",
+      "Frequent releases remove the need for a Product Goal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each Increment delivered to users creates evidence. Releasing often gives the Product Owner more chances to inspect real outcomes and adapt the Product Backlog."
+  },
+  {
+    "id": "PSPO-T2-020",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Potential market share is an example measure of:",
+    "options": [
+      "Ability to Innovate",
+      "Current Value",
+      "Unrealized Value",
+      "Time-to-Market"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Potential market share describes value not yet captured, so it is listed under Unrealized Value."
+  },
+  {
+    "id": "PSPO-T2-021",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner accountability",
+    "stem": "A business analyst writes most Product Backlog items. What is still the Product Owner's job?",
+    "options": [
+      "Typing every item personally in the tool",
+      "Running the Daily Scrum for the analyst",
+      "Ordering the items and owning the outcome",
+      "Approving each Developer's task estimates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner may have others do Product Backlog work, but ordering and accountability for value remain with the Product Owner."
+  },
+  {
+    "id": "PSPO-T2-022",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fixed scope",
+    "stem": "A sponsor wants every backlog item by a fixed date. What should the Product Owner explain?",
+    "options": [
+      "Scope or date may have to change",
+      "Quality can be cut to protect scope and date",
+      "Developers will work faster to meet both",
+      "Sprints can be lengthened until all fits"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In complex work the future is uncertain. Forecasts show what is likely, and either scope or date may need to change; lowering quality is not an option."
+  },
+  {
+    "id": "PSPO-T2-023",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "A new law makes the current Product Goal pointless. What is the most fitting action?",
+    "options": [
+      "Keep the Product Goal, since goals never change",
+      "Hide the change until the next release",
+      "Finish it first, then review the law",
+      "Abandon it and set a new Product Goal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Product Goal must be fulfilled or abandoned before the next one is taken on. When it no longer makes sense, the Product Owner can abandon it and develop a new one."
+  },
+  {
+    "id": "PSPO-T2-024",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "The Product Owner is the only person who ever speaks with users. What is the main risk?",
+    "options": [
+      "Users will refuse to use the product at all",
+      "Developers lose direct insight into needs",
+      "The Product Goal becomes a committee",
+      "Sprint Planning cannot be timeboxed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The whole Scrum Team is responsible for stakeholder collaboration. When only one person talks to users, the Developers build with less understanding of the need."
+  },
+  {
+    "id": "PSPO-T2-025",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A new item could validate whether a whole feature area is worth building. Why might it be ordered high?",
+    "options": [
+      "It brings learning that guides later ordering",
+      "It always costs less than other product items",
+      "It lets the team skip the Definition of Done",
+      "It removes the need for a Sprint Review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Items that create learning reduce uncertainty about the value of later work, so the Product Owner can order the rest with better evidence."
+  },
+  {
+    "id": "PSPO-T2-026",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "Mid-Sprint, the Product Owner has a valuable new idea that does not fit the Sprint Goal. Where does it go?",
+    "options": [
+      "Into the Sprint Backlog, in place of the lowest item",
+      "Into a separate list kept only by the Product Owner",
+      "Into the next Sprint Goal, decided right away",
+      "Into the Product Backlog, ordered for a later Sprint"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work that does not serve the current Sprint Goal is added to the Product Backlog, where the Product Owner orders it against everything else for future Sprints."
+  },
+  {
+    "id": "PSPO-T2-027",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "What does the Customer Usage Index help a Product Owner infer?",
+    "options": [
+      "How many customers the market could hold",
+      "How much each Sprint costs to run",
+      "How useful customers find each feature",
+      "How quickly Done work reaches customers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Customer Usage Index measures usage by feature to help infer how useful customers find the product. It is a Current Value measure."
+  },
+  {
+    "id": "PSPO-T2-028",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time-to-Market",
+    "stem": "Which measure best shows how often value reaches users?",
+    "options": [
+      "Product backlog size",
+      "Product team size",
+      "Release frequency",
+      "Velocity per Sprint"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Release frequency is a Time-to-Market measure in Evidence-Based Management. Velocity and backlog size do not show whether value reached users."
+  },
+  {
+    "id": "PSPO-T2-029",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Splitting items",
+    "stem": "An online shop item reads 'Customers can pay'. Which first slice delivers usable value soonest?",
+    "options": [
+      "Build the full payments database",
+      "Design screens for every method",
+      "Write the refund rules first",
+      "Pay by one common card type"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A thin slice, one payment method working end to end, can be released and tested with real customers. The others deliver nothing usable on their own."
+  },
+  {
+    "id": "PSPO-T2-030",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Product definition",
+    "stem": "Which two describe a product in the Scrum Guide? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Single release",
+      "Fixed end date",
+      "Clear boundary",
+      "Fixed budget",
+      "Known stakeholders"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "A product has a clear boundary, known stakeholders and well-defined users or customers. Budgets and end dates are not part of the definition."
+  },
+  {
+    "id": "PSPO-T2-031",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "Who brings the stakeholders' interests into the Product Backlog?",
+    "options": [
+      "Developers",
+      "Sponsor",
+      "Scrum Master",
+      "Product Owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Product Owner may represent the needs of many stakeholders in the Product Backlog and is accountable for its content and order."
+  },
+  {
+    "id": "PSPO-T2-032",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Scrum Artifacts",
+    "stem": "Which two artifacts does the Product Owner use to make product progress visible to stakeholders? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Increment",
+      "Product Backlog",
+      "Gantt chart",
+      "Sprint burn-down",
+      "Status report"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The Product Backlog and the Increment are Scrum artifacts. The Product Owner's decisions are visible in the content and order of the Product Backlog and through the inspectable Increment."
+  },
+  {
+    "id": "PSPO-T2-033",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "What does Time-to-Learn cover?",
+    "options": [
+      "Bug report to the fix being released",
+      "Idea to learning from users' use of it",
+      "Hiring date to a Developer's first commit",
+      "Start of a Sprint to its Sprint Review"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Time-to-Learn is the total time to sketch an idea, build it, deliver it to users and learn from their usage."
+  },
+  {
+    "id": "PSPO-T2-034",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Product Backlog management",
+    "stem": "Which two are good reasons to remove an item from the Product Backlog? (Choose two.)",
+    "select": 2,
+    "options": [
+      "It looks hard for the Developers",
+      "Evidence shows users do not need it",
+      "It no longer serves the Product Goal",
+      "It was added by a junior colleague",
+      "It has been there for one month"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Removing items that no longer serve the Product Goal or that evidence shows are not needed keeps the backlog focused. Difficulty, author and a short wait are not reasons on their own."
+  },
+  {
+    "id": "PSPO-T2-035",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time-to-Market",
+    "stem": "True or false: Time-to-Market measures how quickly an organization can deliver and learn from feedback.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In Evidence-Based Management, Time-to-Market quantifies how quickly the organization can deliver and learn from the feedback its experiments produce."
+  },
+  {
+    "id": "PSPO-T2-036",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Vision",
+    "stem": "Who is best placed to keep the Product Vision alive for the Scrum Team?",
+    "options": [
+      "Product Owner",
+      "Scrum Master",
+      "Line manager",
+      "Each Developer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner is accountable for maximizing the value of the product and for developing and communicating the Product Goal, so keeping the vision clear and shared sits with them."
+  },
+  {
+    "id": "PSPO-T2-037",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner",
+    "stem": "True or false: For the Product Owner to succeed, the whole organization must respect their decisions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide states that for Product Owners to succeed, the entire organization must respect their decisions."
+  },
+  {
+    "id": "PSPO-T2-038",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "The Sprint",
+    "stem": "True or false: All the work needed to reach the Product Goal happens within Sprints.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says all the work necessary to achieve the Product Goal happens within Sprints. There is no separate phase before or after them."
+  },
+  {
+    "id": "PSPO-T2-039",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Outcomes and outputs",
+    "stem": "A sponsor wants the Product Owner judged on items completed per Sprint. What is the main weakness?",
+    "options": [
+      "It counts output, not customer outcomes",
+      "It is too hard to count items each Sprint",
+      "It makes the Sprint Review take longer",
+      "It ignores the Scrum Master's workload"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Items completed is an output measure. EBM points out that output is easier to measure than outcomes, but more output does not necessarily mean more value."
+  },
+  {
+    "id": "PSPO-T2-040",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Refinement",
+    "stem": "In Sprint Planning, the Developers keep finding the top items unclear. What does this suggest?",
+    "options": [
+      "The items must be deleted",
+      "Sprint Planning should run past its timebox",
+      "The Scrum Master should write the details",
+      "Refinement needs more attention"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Refinement prepares items so they can be understood and selected. Repeatedly unclear items mean the Product Owner and Developers need to refine more before planning."
+  },
+  {
+    "id": "PSPO-T2-041",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "True or false: Each Scrum Team on a single product should keep its own separate Product Backlog.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum Teams on the same product share one Product Backlog, one Product Goal and one Product Owner."
+  },
+  {
+    "id": "PSPO-T2-042",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Increment",
+    "stem": "What is the most reliable evidence of progress toward the Product Goal?",
+    "options": [
+      "Points estimated",
+      "Done Increments",
+      "Hours logged",
+      "Tasks in progress"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only work that meets the Definition of Done is part of an Increment, and each Increment is a concrete stepping stone toward the Product Goal. Effort and estimates are not progress."
+  },
+  {
+    "id": "PSPO-T2-043",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outcomes and outputs",
+    "stem": "True or false: Outputs are easier to measure than outcomes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The EBM Guide notes that activities and outputs are easier to measure than outcomes, which is one reason organizations fall back on them."
+  },
+  {
+    "id": "PSPO-T2-044",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business Strategy",
+    "stem": "True or false: Once set, a business strategy should stay fixed so teams are not distracted.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An organization inspects and adapts its business strategy using feedback from delivered Increments. Strategy is revisited as evidence arrives."
+  },
+  {
+    "id": "PSPO-T2-045",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Feedback",
+    "stem": "Which source of feedback is usually strongest for the Product Owner?",
+    "options": [
+      "What a sponsor believes users want",
+      "What the Developers prefer to build",
+      "What a rival's product advert promises",
+      "How real users actually behave"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Behaviour of real users with a released Increment is evidence. Beliefs and preferences are assumptions until validated by customers."
+  },
+  {
+    "id": "PSPO-T2-046",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "Halfway to a release, new scope keeps being added. What does a burn-up chart help the Product Owner show?",
+    "options": [
+      "The release can go out without testing",
+      "The Developers are working too slowly",
+      "The Sprint Goal is no longer needed",
+      "Scope growth is pushing the date out"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A burn-up shows completed work and total scope separately, so stakeholders can see that the finish line moved because scope grew, not because progress stopped."
+  },
+  {
+    "id": "PSPO-T2-047",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A competitor launches a feature customers now expect. What can the Product Owner do right away?",
+    "options": [
+      "Reorder the backlog to respond",
+      "Cancel all Sprints until it is planned",
+      "Add it to the current Sprint at once",
+      "Wait for the yearly product roadmap review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner can reorder the Product Backlog at any time to respond to change. Changing the current Sprint is only possible if it does not endanger the Sprint Goal."
+  },
+  {
+    "id": "PSPO-T2-048",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Empiricism",
+    "stem": "Which situation shows the Product Owner using adaptation well?",
+    "options": [
+      "Asking for a second Sprint Review to defend a feature",
+      "Reordering the backlog after users reject a new flow",
+      "Adding detail to every item before any is built",
+      "Keeping the yearly roadmap unchanged to look stable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adaptation means adjusting as soon as an inspection shows something is unacceptable. Changing the Product Backlog in response to user feedback is adaptation in action."
+  },
+  {
+    "id": "PSPO-T2-049",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Outcomes and outputs",
+    "stem": "Which is the best sign that a new feature created value?",
+    "options": [
+      "It has a high story point total",
+      "Customers use it and stay longer",
+      "It was delivered on the planned date",
+      "Developers enjoyed building it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Value shows up in customer outcomes such as usage and retention. Delivery dates, points and team enjoyment describe the work, not its value."
+  },
+  {
+    "id": "PSPO-T2-050",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Goal",
+    "stem": "Which statement best fits a Product Goal?",
+    "options": [
+      "Finish the twelve product booking screens by 30 June",
+      "Make online booking the way most patients reach us",
+      "Move the booking database to a new server",
+      "Hold four Sprints of booking work this year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Product Goal describes a future state of the product to plan against. A list of screens, a technical task or a count of Sprints is output, not a target state."
+  },
+  {
+    "id": "PSPO-T2-051",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Saying no",
+    "stem": "A powerful executive demands a feature that conflicts with the Product Goal. What is the Product Owner's best first step?",
+    "options": [
+      "Tell the Developers to build it in secret",
+      "Cancel the Sprint so it can start now",
+      "Explain the trade-off against the goal",
+      "Accept it to keep the executive on side"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner explains the trade-off against the Product Goal and value. The decision stays with the Product Owner, and the organization must respect it."
+  },
+  {
+    "id": "PSPO-T2-052",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acceptance and clarity",
+    "stem": "Does Scrum require acceptance criteria on every Product Backlog item?",
+    "options": [
+      "Yes; but only for top items",
+      "No; teams choose such practices",
+      "Yes; Scrum mandates them for all",
+      "No; Scrum forbids writing them"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum does not prescribe acceptance criteria. Many teams use them as a complementary practice to make items clear."
+  },
+  {
+    "id": "PSPO-T2-053",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release planning",
+    "stem": "What is the purpose of release planning for a Scrum Team?",
+    "options": [
+      "Replacement for Sprint Planning",
+      "Fixed contract for future Sprints",
+      "Way to assign product work to Developers",
+      "Guide to frequent, small releases"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Scrum.org describes forecasting and release planning as a guide for delivering through small, frequent releases. It does not replace Sprint Planning or fix the future."
+  },
+  {
+    "id": "PSPO-T2-054",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Goal",
+    "stem": "How does a clear Sprint Goal help the Product Owner?",
+    "options": [
+      "It fixes the exact items the Developers must finish",
+      "It replaces the need for a Product Goal later on",
+      "It lets the Product Owner assign tasks during the Sprint",
+      "It keeps the Sprint focused on one valuable objective"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Sprint Goal is the single objective for the Sprint. It creates coherence and focus while leaving the Developers flexibility in the exact work needed."
+  },
+  {
+    "id": "PSPO-T2-055",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Key Value Areas",
+    "stem": "Which two are example measures of Ability to Innovate? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Potential market share",
+      "Defect trends",
+      "Release frequency",
+      "On-product index",
+      "Revenue per employee"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Defect trends and the on-product index are listed under Ability to Innovate. Release frequency is Time-to-Market, revenue per employee is Current Value and potential market share is Unrealized Value."
+  },
+  {
+    "id": "PSPO-T2-056",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "How should the Product Owner make the Product Backlog transparent?",
+    "options": [
+      "Keep it visible and understood by all",
+      "Show it to stakeholders once a year",
+      "Keep top product items private until planned",
+      "Share it with the Developers only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner ensures the Product Backlog is transparent, visible and understood, so everyone inspects the same picture."
+  },
+  {
+    "id": "PSPO-T2-057",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "In Evidence-Based Management, what is an experiment?",
+    "options": [
+      "Survey that replaces measuring product outcomes",
+      "Test designed to prove or reject a hypothesis",
+      "Release made with no Definition of Done",
+      "Trial run of the Sprint Review agenda"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The EBM Guide defines an experiment as a test designed to prove or reject a hypothesis."
+  },
+  {
+    "id": "PSPO-T2-058",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Customers",
+    "stem": "Which question best helps a Product Owner understand a customer's need?",
+    "options": [
+      "What problem are you trying to solve?",
+      "How many Developers should we add?",
+      "Can you sign off this specification?",
+      "Which product screen layout do you prefer?"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Asking about the customer's problem uncovers the need behind a request. Solutions can then be chosen to deliver the value they seek."
+  },
+  {
+    "id": "PSPO-T2-059",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Scrum Theory",
+    "stem": "Which two statements about Scrum and complex product work are true? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Feedback is only gathered at the final release",
+      "Requirements stay fixed once agreed",
+      "Decisions should rest on what is observed",
+      "More is unknown than known at the start",
+      "A detailed plan up front removes the risk"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "In complex work much is unknown, so Scrum relies on empiricism: decisions based on what is observed, with frequent inspection and adaptation."
+  },
+  {
+    "id": "PSPO-T2-060",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Maximizing value",
+    "stem": "A feature has high value but huge cost; a smaller one gives most of the value at a tenth of the cost. What should the Product Owner weigh?",
+    "options": [
+      "Value against cost and risk",
+      "Cost alone, ignoring value",
+      "Size of each feature's spec",
+      "Value alone, ignoring cost"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ordering to maximize value means weighing the likely value of an item against its cost and risk. The cheaper item may return value sooner."
+  },
+  {
+    "id": "PSPO-T2-061",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Two items have similar value; one is much riskier. When is it wise to do the riskier one first?",
+    "options": [
+      "When the team wants harder work for practice",
+      "When stakeholders have not asked for either",
+      "When early failure would be cheaper to learn",
+      "When the Sprint is shorter than two weeks"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Doing risky work early exposes problems while they are cheap to fix and before other work depends on it."
+  },
+  {
+    "id": "PSPO-T2-062",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "In a complex environment, what does the Scrum Guide say about future events?",
+    "options": [
+      "What will happen is unknown",
+      "Plans remove all uncertainty",
+      "Only risks need to be forecast",
+      "Most events can be predicted"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says that in complex environments what will happen is unknown, which is why forecasts rest on what has already happened."
+  },
+  {
+    "id": "PSPO-T2-063",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "In the EBM empirical loop, what comes right after forming a hypothesis?",
+    "options": [
+      "Adapt the goals",
+      "Run the experiment",
+      "Set a new Strategic Goal",
+      "Inspect the results"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The loop is: set goals, form a hypothesis, run the experiment, inspect the results, then adapt. Inspection needs data from the experiment first."
+  },
+  {
+    "id": "PSPO-T2-064",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Scrum Master and stakeholders",
+    "stem": "Which two are ways the Scrum Master supports stakeholder relations? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Facilitating collaboration as requested",
+      "Approving stakeholder requests",
+      "Writing items for the sponsor",
+      "Removing barriers between stakeholders and teams",
+      "Ordering items for stakeholders"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The Scrum Master serves the organization by removing barriers between stakeholders and Scrum Teams and serves the Product Owner by facilitating stakeholder collaboration as requested or needed."
+  },
+  {
+    "id": "PSPO-T2-065",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Refinement",
+    "stem": "Refinement shows an item is no longer needed. Who decides to remove it?",
+    "options": [
+      "Scrum Master",
+      "Stakeholders",
+      "Product Owner",
+      "Developers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner is accountable for the Product Backlog's content and order, so removing an item is the Product Owner's decision, informed by others."
+  },
+  {
+    "id": "PSPO-T2-066",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transparency",
+    "stem": "The Product Owner keeps a private list of top priorities apart from the Product Backlog. Which pillar suffers most?",
+    "options": [
+      "Adaptation",
+      "Commitment",
+      "Transparency",
+      "Self-management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Backlog is the single source of work and must be visible and understood. A hidden list means the team and stakeholders inspect a false picture."
+  },
+  {
+    "id": "PSPO-T2-067",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "Employee satisfaction is listed under which Key Value Area?",
+    "options": [
+      "Ability to Innovate",
+      "Current Value",
+      "Time-to-Market",
+      "Unrealized Value"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Current Value asks how happy users, customers, employees and investors are today, so employee satisfaction is a Current Value measure."
+  },
+  {
+    "id": "PSPO-T2-068",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Releasing",
+    "stem": "An Increment is Done, but marketing wants to wait three months to launch it with others. What should the Product Owner weigh?",
+    "options": [
+      "Whether the product team will be idle",
+      "Value and learning lost by waiting",
+      "Whether the Definition of Done expires",
+      "Whether the Sprint length should change"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Holding Done work back delays value and feedback. The Product Owner weighs that against the benefits of a combined launch."
+  },
+  {
+    "id": "PSPO-T2-069",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "What does a highly ordered Product Backlog give the Developers?",
+    "options": [
+      "Fixed plan for the next twelve months",
+      "List of tasks assigned to each person",
+      "Clear view of what matters most next",
+      "Record of who requested every item"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An ordered Product Backlog shows the team what is most valuable to work on next, which makes Sprint Planning faster and more focused."
+  },
+  {
+    "id": "PSPO-T2-070",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "True or false: In Evidence-Based Management, goals should be measurable and transparent.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EBM asks for measurable goals so progress can be judged, made transparent to the people working toward them."
+  },
+  {
+    "id": "PSPO-T2-071",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Expectations",
+    "stem": "How does the Product Owner keep stakeholders informed between Sprint Reviews?",
+    "options": [
+      "Visible, up-to-date backlog",
+      "Private plan kept for themselves",
+      "Daily Scrum seats for stakeholders",
+      "Weekly product reports from Developers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A transparent Product Backlog shows what is coming and why. The Daily Scrum is the Developers' event, not a stakeholder meeting."
+  },
+  {
+    "id": "PSPO-T2-072",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog refinement",
+    "stem": "The Developers say an item is too large to finish in one Sprint. What should happen?",
+    "options": [
+      "Extend the Sprint until the item is Done",
+      "Take it in anyway and finish it next Sprint",
+      "Split it into smaller usable items",
+      "Drop it from the Product Backlog for good"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Items that can be Done within one Sprint are ready for selection. Large items are broken down through refinement, with the Product Owner keeping the value in view."
+  },
+  {
+    "id": "PSPO-T2-073",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Mean time to repair is listed under which Key Value Area?",
+    "options": [
+      "Current Value",
+      "Ability to Innovate",
+      "Time-to-Market",
+      "Unrealized Value"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mean time to repair, like lead time and deployment frequency, shows how quickly the organization can deliver and respond, so it is a Time-to-Market measure."
+  },
+  {
+    "id": "PSPO-T2-074",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Splitting items",
+    "stem": "A Developer suggests splitting an item into front end and back end parts. What should the Product Owner raise?",
+    "options": [
+      "Front end work always delivers more value",
+      "Neither part alone would be usable",
+      "Back end work needs no refinement",
+      "Splitting is not allowed in Scrum"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Splitting by technical layer often leaves pieces that cannot be released or inspected on their own. Slicing through all layers keeps each piece usable."
+  },
+  {
+    "id": "PSPO-T2-075",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Forecasting charts",
+    "stem": "What does a burn-down chart show?",
+    "options": [
+      "Hours each Developer worked",
+      "Total scope added over time",
+      "Customer satisfaction each Sprint",
+      "Work remaining over time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A burn-down chart plots the work remaining against time. It is one of the forecasting practices the Scrum Guide mentions, but it is not required."
+  },
+  {
+    "id": "PSPO-T2-076",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "Why does Evidence-Based Management pursue large goals in small steps?",
+    "options": [
+      "Small steps need no product measures at all",
+      "Each step gives feedback on the direction",
+      "Large goals are banned in Scrum",
+      "Small steps fix the final scope early"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The EBM Guide says organizations must work toward larger goals in small steps, experimenting and learning along the way, because the path is uncertain."
+  },
+  {
+    "id": "PSPO-T2-077",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "Which group is usually a stakeholder of a banking app?",
+    "options": [
+      "Scrum Guide's authors",
+      "Daily Scrum timekeeper",
+      "Customer support staff",
+      "Rival bank's developers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Support staff deal with the product's users every day and have a direct interest in its outcome, so they are stakeholders."
+  },
+  {
+    "id": "PSPO-T2-078",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multiple Scrum Teams",
+    "stem": "True or false: One Product Owner can be accountable for a product built by several Scrum Teams.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When several Scrum Teams work on the same product they share one Product Owner, along with one Product Goal and one Product Backlog."
+  },
+  {
+    "id": "PSPO-T2-079",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Which question belongs to Unrealized Value?",
+    "options": [
+      "How fast can we adapt to new information?",
+      "What prevents customers using new features?",
+      "Is it worth pursuing untapped markets?",
+      "How happy are our employees today?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unrealized Value asks whether more value can be created in this or other markets and whether pursuing it is worth the effort and risk."
+  },
+  {
+    "id": "PSPO-T2-080",
+    "section": "pspo",
+    "test": 2,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A regulator sets a deadline for a compliance change. How does this affect ordering?",
+    "options": [
+      "Developers choose when to fit it in",
+      "It stays out of the Product Backlog",
+      "It goes last, since users did not ask",
+      "Deadline and penalty risk raise its order"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Risk and deadlines are part of value. Missing a legal deadline can cost far more than a delayed feature, so the Product Owner orders the item accordingly."
+  },
+  {
+    "id": "PSPO-D-001",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Which ordering technique does Scrum require?",
+    "options": [
+      "MoSCoW categories",
+      "Weighted shortest job first",
+      "None is prescribed",
+      "Cost of delay only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Scrum does not prescribe any ordering technique. The Product Owner may use whichever helps maximize value."
+  },
+  {
+    "id": "PSPO-D-002",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stakeholders",
+    "stem": "A product has many stakeholders. Where do their needs come together?",
+    "options": [
+      "Definition of Done",
+      "Daily Scrum notes",
+      "Ordered Product Backlog",
+      "Sprint Retrospective notes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Owner represents the needs of many stakeholders in the Product Backlog and orders them into one view of what matters most."
+  },
+  {
+    "id": "PSPO-D-003",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting charts",
+    "stem": "A cumulative flow diagram mainly helps a team see:",
+    "options": [
+      "Which Developer finished most items",
+      "How work moves through each stage",
+      "When the next Sprint Review is",
+      "Who requested each backlog item"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A cumulative flow diagram shows how much work sits in each stage over time, revealing bottlenecks and flow. It is one of the forecasting practices the Scrum Guide mentions."
+  },
+  {
+    "id": "PSPO-D-004",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Retrospective",
+    "stem": "The Product Owner often misses the Sprint Retrospective. Why does this matter?",
+    "options": [
+      "The Sprint cannot end without the Product Owner",
+      "The Increment cannot be released without them",
+      "Developers may not inspect their own work alone",
+      "Issues involving them go unaddressed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Retrospective inspects how the last Sprint went for individuals, interactions, processes and tools. Many issues, such as unclear items, involve the Product Owner."
+  },
+  {
+    "id": "PSPO-D-005",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Vision",
+    "stem": "A stakeholder asks why the product exists at all. Which artifact or tool answers best?",
+    "options": [
+      "Definition of Done",
+      "Product Vision",
+      "Burn-down chart",
+      "Product Backlog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Vision states the purpose of the product, the value it should deliver and to whom."
+  },
+  {
+    "id": "PSPO-D-006",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "What does the Product Cost Ratio compare?",
+    "options": [
+      "Team size against backlog size",
+      "Product costs against its revenue",
+      "Product defects found against fixed",
+      "Planned against actual Sprint length"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Cost Ratio compares total expenses and costs for the product, operational costs included, with the revenue it brings."
+  },
+  {
+    "id": "PSPO-D-007",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Refinement",
+    "stem": "Refinement keeps raising the same unanswered question about an item. What should the Product Owner do?",
+    "options": [
+      "Remove the item to end the discussion",
+      "Let the Developers guess and deliver it",
+      "Postpone refinement until the Sprint Review",
+      "Get the answer from users or stakeholders"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Product Owner creates and clearly communicates items. Getting the missing information keeps the item ready to be Done when selected."
+  },
+  {
+    "id": "PSPO-D-008",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Conflicting needs",
+    "stem": "A stakeholder goes around the Product Owner and asks the Scrum Master to add work to the Sprint. What should happen?",
+    "options": [
+      "Scrum Master adds it if it is small enough",
+      "Developers decide whether to accept it",
+      "Stakeholder adds it to the Sprint Backlog",
+      "Redirect them to the Product Owner"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Requests go to the Product Owner, who orders the Product Backlog. The Scrum Master helps the organization respect that and removes the barrier."
+  },
+  {
+    "id": "PSPO-D-009",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "True or false: Burn-downs and burn-ups replace the need for empiricism.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Scrum Guide says these practices are useful but do not replace the importance of empiricism."
+  },
+  {
+    "id": "PSPO-D-010",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scrum framework",
+    "stem": "True or false: The Scrum Guide requires Product Backlog items to be written as user stories.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scrum does not prescribe a format for Product Backlog items. User stories are one optional practice a team may choose."
+  },
+  {
+    "id": "PSPO-D-011",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "Which is the best example of an Immediate Tactical Goal?",
+    "options": [
+      "Help every family manage its money",
+      "Become the leading product in our region",
+      "Cut sign-up drop-off by 10% this quarter",
+      "Win the market within ten years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Immediate Tactical Goals are near-term and measurable. Leading the region or the market is a Strategic Goal, and helping every family is closer to a mission."
+  },
+  {
+    "id": "PSPO-D-012",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "What does the On-Product Index show?",
+    "options": [
+      "Share of time teams spend on product work",
+      "Share of users active on the product daily",
+      "Share of the budget spent on marketing",
+      "Share of items Done on the first try"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The On-Product Index is the percentage of time teams spend working on product and value, rather than other demands."
+  },
+  {
+    "id": "PSPO-D-013",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "True or false: Developers may build work a stakeholder asks for directly, outside the Product Backlog.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Backlog is the single source of work. Requests go through the Product Owner, who orders them with everything else."
+  },
+  {
+    "id": "PSPO-D-014",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sprint Review",
+    "stem": "True or false: Stakeholders at the Sprint Review can influence the Product Backlog.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "During the Sprint Review the Product Backlog may be adjusted to meet new opportunities, using what attendees learn and discuss."
+  },
+  {
+    "id": "PSPO-D-015",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fixed date",
+    "stem": "A product must ship for a trade show. Which approach best protects value?",
+    "options": [
+      "Add Developers in the final Sprint only",
+      "Add every feature and skip final testing",
+      "Order by value and release what is Done",
+      "Freeze the backlog and ignore new learning"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With a fixed date, ordering by value ensures the most important items are Done. Skipping testing or freezing learning puts value at risk."
+  },
+  {
+    "id": "PSPO-D-016",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sprint Planning",
+    "stem": "Which question does the Product Owner mainly help answer in Sprint Planning?",
+    "options": [
+      "How will the work get done?",
+      "Why is this Sprint valuable?",
+      "When is each task due?",
+      "Who will do each product task?"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Owner proposes how the product could increase its value and utility this Sprint. The 'how' belongs to the Developers."
+  },
+  {
+    "id": "PSPO-D-017",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "True or false: Without an effective Mission and Vision, goals lack a compelling purpose.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The EBM Guide says that without effective Mission and Vision statements, goals lack a compelling purpose, especially when people work under uncertainty."
+  },
+  {
+    "id": "PSPO-D-018",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Value",
+    "stem": "True or false: Scrum.org describes the value of a product as measurable.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Scrum.org's competency description says a product has a clear goal, stakeholders and users, and that the value of the product is measurable."
+  },
+  {
+    "id": "PSPO-D-019",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A low-value item is cheap and blocks nothing. Should it go to the top because it is quick?",
+    "options": [
+      "Yes; quick items always deliver value first",
+      "Not by itself; value still guides order",
+      "Yes; it keeps the Developers busy",
+      "No; cheap items must be deleted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cost matters, but a quick item with little value does not jump the queue for that reason alone. The Product Owner weighs value against cost and risk."
+  },
+  {
+    "id": "PSPO-D-020",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Customers",
+    "stem": "Customers ask for a 'faster horse'. What should the Product Owner focus on?",
+    "options": [
+      "Cost of a faster horse",
+      "Vote among the Developers",
+      "Need behind the request",
+      "Exact words of the request"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Requests often describe a solution. Understanding the underlying need lets the team find the most valuable way to meet it."
+  },
+  {
+    "id": "PSPO-D-021",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Release planning",
+    "stem": "Customer cycle time measures what?",
+    "options": [
+      "Sprint start to Sprint Review",
+      "Bug report to first reply",
+      "Start of release work to actual release",
+      "Customer sign-up to first product purchase"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Customer cycle time is the time from when work starts on a release until it is actually released. It is a Time-to-Market measure."
+  },
+  {
+    "id": "PSPO-D-022",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Owner accountability",
+    "stem": "How do people outside the Scrum Team change the Product Backlog?",
+    "options": [
+      "By convincing the Product Owner",
+      "By asking the Product Owner's manager",
+      "By editing it in the shared tool",
+      "By voting at the Sprint Review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Scrum Guide says those wanting to change the Product Backlog can do so by trying to convince the Product Owner."
+  },
+  {
+    "id": "PSPO-D-023",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Scrum Theory",
+    "stem": "A Product Owner wants to cut uncertainty about a new market. Which two Scrum practices help most? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Inspecting results with stakeholders often",
+      "Writing a full specification before Sprint 1",
+      "Skipping the Sprint Review to save time",
+      "Delivering a usable Increment every Sprint",
+      "Freezing the Product Backlog for a quarter"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Frequent usable Increments and regular inspection with stakeholders give evidence that reduces uncertainty. Up-front detail and frozen backlogs delay that learning."
+  },
+  {
+    "id": "PSPO-D-024",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Business Strategy",
+    "stem": "Product teams deliver Increments, but leaders never review strategy against the results. What is lost?",
+    "options": [
+      "Chance to adapt strategy to evidence",
+      "Right to order the Product Backlog",
+      "Need for a product Definition of Done",
+      "Ability to hold a Sprint Review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Business strategy should be inspected and adapted using feedback from product Increments. Ignoring the results wastes that evidence."
+  },
+  {
+    "id": "PSPO-D-025",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Value measures",
+    "stem": "Release stabilization period measures the time spent on what?",
+    "options": [
+      "Fixes after work is declared ready",
+      "Planning a release before work starts",
+      "Training users once a release is out",
+      "Waiting for the next Sprint Review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Release stabilization period is the time spent correcting product problems between the point the developers say it is ready to release and the actual release. It is a Time-to-Market measure."
+  },
+  {
+    "id": "PSPO-D-026",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Expectations",
+    "stem": "A stakeholder expects a feature in two weeks that is low in the backlog. What should the Product Owner do?",
+    "options": [
+      "Promise the date and hope the team copes",
+      "Explain the order and forecast honestly",
+      "Avoid the stakeholder until it ships",
+      "Move it up without telling the team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Honest, transparent communication about order and forecasts manages expectations. Promises that ignore the backlog erode trust."
+  },
+  {
+    "id": "PSPO-D-027",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Forecasting",
+    "stem": "Why give stakeholders a range rather than one date?",
+    "options": [
+      "It hides progress from them",
+      "It lets the team work less",
+      "It removes the need for Sprints",
+      "It shows the real uncertainty"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A range communicates how certain the forecast is. A single date suggests more certainty than complex work allows."
+  },
+  {
+    "id": "PSPO-D-028",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Ordering",
+    "stem": "Which two are sound reasons to move an item up the Product Backlog? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Other items depend on it",
+      "It was added first",
+      "It reduces a major risk",
+      "It has the longest text",
+      "Its author is senior"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Risk and dependencies are good reasons to order an item higher. Author, age and description length say nothing about value."
+  },
+  {
+    "id": "PSPO-D-029",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Owner and Developers",
+    "stem": "The Product Owner wants a feature by a trade show and asks the Developers to work weekends. What fits Scrum best?",
+    "options": [
+      "Have the Scrum Master add people mid-Sprint",
+      "Adjust scope with them, keeping quality",
+      "Insist on overtime, since the date is fixed",
+      "Lower the Definition of Done for this release"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Product Owner manages value by choosing what to build, not by pushing effort. Working with the Developers on scope keeps quality and the Definition of Done intact."
+  },
+  {
+    "id": "PSPO-D-030",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Product Vision",
+    "stem": "A Product Owner is asked to drop the vision because 'the backlog is enough'. What is the best answer?",
+    "options": [
+      "The backlog should hold no items without a vision",
+      "The vision is only needed for funding requests",
+      "The vision explains why; the backlog lists what",
+      "The backlog replaces the vision after Sprint 1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Product Vision expresses the purpose and value of the product, which guides ordering. The Product Backlog lists what is needed to improve the product."
+  },
+  {
+    "id": "PSPO-D-031",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key Value Areas",
+    "stem": "Which question belongs to Current Value?",
+    "options": [
+      "Can we create value in other markets too?",
+      "What stops us delivering new value?",
+      "How happy are users and customers today?",
+      "How fast can we test new ideas?"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Current Value asks how happy users, customers, employees and investors are today. The others belong to Unrealized Value, Time-to-Market and Ability to Innovate."
+  },
+  {
+    "id": "PSPO-D-032",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Feedback",
+    "stem": "Survey answers say users want feature X, but usage data shows they rarely use similar features. What should the Product Owner do?",
+    "options": [
+      "Ignore the usage data completely",
+      "Test X cheaply before building it all",
+      "Drop all surveys from now on",
+      "Build all of X now, as the survey says"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When signals conflict, a small experiment gives evidence before a large investment. Both the survey and the data are inputs, not proof."
+  },
+  {
+    "id": "PSPO-D-033",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Releasing",
+    "stem": "Releases need two weeks of manual sign-off after each Increment is Done. What is the Product Owner's main concern?",
+    "options": [
+      "Sprints will become too short",
+      "Developers will finish work too early",
+      "Users wait longer and learning slows",
+      "Stakeholders will see too much"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Slow release processes stretch Time-to-Market, so users get value and the team gets feedback later. Making the delay transparent helps remove it."
+  },
+  {
+    "id": "PSPO-D-034",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Splitting items",
+    "stem": "What makes an item small enough for Sprint Planning?",
+    "options": [
+      "It can be Done within one Sprint",
+      "It has under five lines of text",
+      "It touches only one system layer",
+      "It takes one Developer one day"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Items that can be Done by the Scrum Team within one Sprint are deemed ready for selection in Sprint Planning."
+  },
+  {
+    "id": "PSPO-D-035",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoFramework",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Product Owner accountability",
+    "stem": "Which two are the Product Owner's decisions? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Order of the Product Backlog",
+      "Daily Scrum format",
+      "How an item is built",
+      "What the Product Goal is",
+      "Who does each task"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The Product Owner develops and communicates the Product Goal and orders the Product Backlog. How work is built, who does it and how the Daily Scrum runs belong to the Developers."
+  },
+  {
+    "id": "PSPO-D-036",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoVision",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Goals and empiricism",
+    "stem": "According to the EBM Guide, beliefs about what is valuable stay assumptions until when?",
+    "options": [
+      "Sponsors approve them",
+      "Analysts document them",
+      "Developers estimate them",
+      "Customers validate them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The EBM Guide says beliefs in what is valuable are merely assumptions until they are validated by customers."
+  },
+  {
+    "id": "PSPO-D-037",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoValue",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Maximizing value",
+    "stem": "A Product Owner can fund one of two ideas. Neither has evidence behind it. What is the best first move?",
+    "options": [
+      "Run a small experiment to test each idea",
+      "Build both in full and compare the value",
+      "Pick the idea the sponsor likes better",
+      "Wait until a competitor tries one first"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without evidence both ideas are assumptions. A small experiment tests the hypothesis cheaply before larger investment, as EBM recommends."
+  },
+  {
+    "id": "PSPO-D-038",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoStakeholders",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Stakeholders",
+    "stem": "Which two are signs of healthy stakeholder collaboration? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Every request is built as asked",
+      "Feedback changes the Product Backlog",
+      "Stakeholders attend Sprint Reviews",
+      "Stakeholders join each Daily Scrum",
+      "Stakeholders assign Developers' tasks"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Healthy collaboration means stakeholders inspect Increments and their feedback adapts the Product Backlog. Task assignment and the Daily Scrum belong to the Developers."
+  },
+  {
+    "id": "PSPO-D-039",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoRelease",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Forecasting",
+    "stem": "Which two make a release forecast more reliable? (Choose two.)",
+    "select": 2,
+    "options": [
+      "Counting only started work",
+      "Fixing it at the first estimate",
+      "Updating it as new data arrives",
+      "Using actual delivered progress",
+      "Basing it on the desired date"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Forecasts based on real progress and revised as evidence arrives stay realistic. Fixed first estimates, wished-for dates and started work mislead."
+  },
+  {
+    "id": "PSPO-D-040",
+    "section": "pspo",
+    "test": 0,
+    "module": 1,
+    "domain": "pspoBacklog",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Product Backlog",
+    "stem": "An item has sat untouched at the bottom for two years. What is often the right move?",
+    "options": [
+      "Hand it to the Scrum Master to decide",
+      "Keep it, as items are never removed",
+      "Consider removing it from the backlog",
+      "Move it to the top so it gets done"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Old items that no longer serve the Product Goal add noise. Removing them keeps the Product Backlog transparent and easier to order."
+  }
+]

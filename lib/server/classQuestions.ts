@@ -14,6 +14,7 @@ import "@/lib/v2/banks/uknmc";
 import "@/lib/v2/banks/nziqn";
 import "@/lib/v2/banks/nzensf";
 import "@/lib/v2/banks/pmp";
+import "@/lib/v2/banks/pmiacp";
 import "@/lib/v2/banks/elevenplus";
 import "@/lib/v2/banks/emt";
 import "@/lib/v2/banks/eqao9";

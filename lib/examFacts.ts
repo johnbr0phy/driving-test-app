@@ -242,6 +242,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "ISACA's COBIT Foundation certificate page and ISACA's public COBIT 2019 material, checked November 2026",
     source: { name: "ISACA", url: "https://www.isaca.org/credentialing/cobit/cobit-foundation" },
   },
+  pmiacp: {
+    answer:
+      "The PMI Agile Certified Practitioner (PMI-ACP) exam has 120 questions, 100 scored and 20 unscored pretest items, in 3 hours, with one 10-minute break after question 60. Questions are multiple choice, multiple response, drag-and-drop and exhibit items. They follow PMI's PMI-ACP Examination Content Outline (November 2024, revised March 2026): Mindset 28%, Leadership 25%, Product 19% and Delivery 28%. PMI does not publish a passing score. You can take it at a Pearson VUE test center or online, up to three times in your one-year eligibility period.",
+    rows: [
+      { label: "Questions", value: "120 (100 scored, 20 pretest)" },
+      { label: "Time", value: "3 hours, one 10-minute break" },
+      { label: "Domains", value: "Mindset 28%, Leadership 25%, Product 19%, Delivery 28%" },
+      { label: "Pass mark", value: "Not published by PMI" },
+      { label: "Delivery", value: "Pearson VUE test center or online proctored" },
+      { label: "Given by", value: "Project Management Institute (PMI)" },
+    ],
+    basedOn: "PMI's PMI-ACP Examination Content Outline (November 2024, revised March 2026)",
+    source: { name: "PMI", url: "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf" },
+  },
   istqb: {
     answer:
       "The ISTQB Certified Tester Foundation Level (CTFL v4.0) exam has 40 multiple-choice questions worth one point each, and you need 26 points (65 percent) to pass. You have 60 minutes, or 75 minutes if you take it in a language that is not your native one. Questions come from six syllabus chapters: Fundamentals of Testing 8, Testing Throughout the SDLC 6, Static Testing 4, Test Analysis and Design 11, Managing the Test Activities 9 and Test Tools 2. The current syllabus document is v4.0.1.",

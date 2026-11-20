@@ -114,6 +114,8 @@ const TEACHER_LED = new Set([
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "cobit", "prince2", "psm", "capm",
   "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "cobit", "prince2", "psm", "pspo", "capm",
+  "rbt", "cpc", "cca", "aswb", "arrt", "nce", "jelec", "barber", "ffi", "police", "faapvt",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "gcdl", "gcppca", "itil", "istqb", "pmiacp", "cobit", "prince2", "psm", "capm",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "osssc", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "vidyagyan", "jambeng", "appsych",

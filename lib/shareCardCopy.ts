@@ -17,6 +17,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cmaa: { title: "Free CMAA Practice Test", description: "200 original questions on the NHA CMAA test plan for medical administrative assistants. Free to start." },
   cbspd: { title: "Free CBSPD CSPDT Practice Test", description: "200 original questions on CBSPD's technician exam outline, from decontamination to sterilization and storage. Free to start." },
   ascpmlt: { title: "Free MLT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC medical laboratory technician content guideline, four 50-question practice tests." },
+  pmiacp: { title: "PMI-ACP Agile Certified Practitioner", description: "Practice situational questions on the agile mindset, leadership, product and delivery, on the PMI-ACP outline." },
   istqb: { title: "ISTQB Foundation Level (CTFL v4.0)", description: "Practise the 40-question CTFL exam: principles, test levels, reviews, test techniques, test management and tools." },
   cobit: { title: "COBIT 2019 Foundation", description: "Practise the 75-question COBIT 2019 Foundation exam: principles, components, the goals cascade, the 40 objectives, design and implementation." },
   ascpht: { title: "Free HT(ASCP) Practice Test", description: "200 original questions on the ASCP BOC histotechnician content guideline, four 50-question practice tests." },

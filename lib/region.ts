@@ -168,6 +168,8 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL", ai901: "GLOBAL", pl900: "GLOBAL", jncia: "GLOBAL",
   netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", pspo: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
+  aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", az900: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL", ai901: "GLOBAL", pl900: "GLOBAL", jncia: "GLOBAL",
+  netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", pmiacp: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
   ccaf: "GLOBAL", sfadmin: "GLOBAL", sfpd1: "GLOBAL", sfappbuilder: "GLOBAL", cfal1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL",
 };
 
@@ -180,6 +182,7 @@ export const NON_DRIVING_TESTS = new Set([
   "cahambasic",
   "linuxplus",
   "istqb",
+  "pmiacp",
   "cobit",
   "epa609",
   "hamextra",

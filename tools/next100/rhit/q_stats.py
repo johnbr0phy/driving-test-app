@@ -76,7 +76,7 @@ STATS = [
  "HCUP", ["MEDPAR", "NNDSS", "CERT"],
  "The Healthcare Cost and Utilization Project (HCUP) builds all-payer databases from state data, unlike MEDPAR, which is Medicare only."),
 ("A lab confirms a disease on the state's reportable list. The report goes to the:",
- "State or local health agency", ["Patient's employer", "Hospital board of trustees", "Hospital accrediting body"],
+ "State or local health agency", ["CDC directly", "Patient's primary care doctor", "Hospital infection committee only"],
  "Reportable disease rules are set by the state, and cases go to state or local public health, which may pass data to CDC."),
 ("Of 360 records reviewed by CDI, 54 led to a query. What is the query rate?",
  "15%", ["6.7%", "54%", "18%"],

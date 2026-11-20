@@ -93,7 +93,7 @@ ITEMS = [
     S(2, 3, "Conflicting needs",
       "Stakeholders want the Product Owner to give every department equal Sprint time. What is the weakness?",
       ["It ignores where value is highest",
-       "It breaks the Sprint's timebox rules",
+       "It makes Sprint Planning slower to run",
        "It leaves no capacity for technical debt",
        "It reduces Developer focus"],
       "Sharing time by department ignores where the most value lies. The Product Owner orders by value so the team works on what matters most."),

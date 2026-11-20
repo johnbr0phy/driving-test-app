@@ -122,7 +122,7 @@ ITEMS = [
       "The Product Owner orders items only by which stakeholder is most senior. What is the main risk?",
       ["Value is not maximized for customers",
        "Lower-ranked stakeholders stop sharing ideas",
-       "The Sprint Goal becomes harder to set",
+       "Forecasts become less reliable",
        "Refinement takes longer each Sprint"],
       "Ordering by rank rather than by value, risk and learning means the most valuable work may wait. The Product Owner is accountable for maximizing value."),
     # ---------- Practice Test 2 ----------
@@ -231,7 +231,7 @@ ITEMS = [
       ["Clear view of what matters most next",
        "Sprint Goal for the coming Sprint",
        "Exact items for the next Sprint",
-       "Fixed scope for the next release"],
+       "Set order the Developers must follow item by item"],
       "An ordered Product Backlog shows the team what is most valuable to work on next, which makes Sprint Planning faster and more focused."),
     S(2, 3, "Splitting items",
       "A Developer suggests splitting an item into front end and back end parts. What should the Product Owner raise?",

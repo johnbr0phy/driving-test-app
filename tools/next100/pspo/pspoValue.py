@@ -37,7 +37,7 @@ ITEMS = [
       ["More output has not improved outcomes",
        "Satisfaction lags and will rise again soon",
        "The survey method needs to change",
-       "The features need better promotion"],
+       "Track velocity instead; satisfaction is outside our control"],
       "The EBM Guide notes that more features (outputs) do not necessarily lead to improved customer experiences (outcomes). Value is judged by outcomes."),
     S(1, 2, "Outcomes and outputs",
       "Which is an outcome rather than an output?",

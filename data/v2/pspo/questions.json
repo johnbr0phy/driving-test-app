@@ -556,7 +556,7 @@
     "skill": "Outcomes and outputs",
     "stem": "The team doubled the number of features shipped, but customer satisfaction is flat. What does EBM suggest?",
     "options": [
-      "The features need better promotion",
+      "Track velocity instead; satisfaction is outside our control",
       "More output has not improved outcomes",
       "The survey method needs to change",
       "Satisfaction lags and will rise again soon"
@@ -1663,7 +1663,7 @@
     "skill": "Ordering",
     "stem": "The Product Owner orders items only by which stakeholder is most senior. What is the main risk?",
     "options": [
-      "The Sprint Goal becomes harder to set",
+      "Forecasts become less reliable",
       "Value is not maximized for customers",
       "Refinement takes longer each Sprint",
       "Lower-ranked stakeholders stop sharing ideas"
@@ -1896,7 +1896,7 @@
     "options": [
       "It ignores where value is highest",
       "It reduces Developer focus",
-      "It breaks the Sprint's timebox rules",
+      "It makes Sprint Planning slower to run",
       "It leaves no capacity for technical debt"
     ],
     "correct": [
@@ -3117,7 +3117,7 @@
       "Clear view of what matters most next",
       "Exact items for the next Sprint",
       "Sprint Goal for the coming Sprint",
-      "Fixed scope for the next release"
+      "Set order the Developers must follow item by item"
     ],
     "correct": [
       0
@@ -3571,12 +3571,12 @@
       "Become the market leader in our region by 2030",
       "Improve the sign-up experience for users",
       "Cut sign-up drop-off by 10% this quarter",
-      "Help every family manage its money well"
+      "Ship the redesigned sign-up page this quarter"
     ],
     "correct": [
       2
     ],
-    "explanation": "Immediate Tactical Goals are near-term and measurable. Leading the region or the market is a Strategic Goal, and helping every family is closer to a mission."
+    "explanation": "Immediate Tactical Goals are near-term, measurable outcomes. Leading the region is a Strategic Goal, and shipping a page is an output, not an outcome customers experience."
   },
   {
     "id": "PSPO-D-012",

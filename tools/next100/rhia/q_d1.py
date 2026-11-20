@@ -10,7 +10,7 @@ GOVERNANCE = [
  "Allowed values", ["Data steward", "Field length", "Source system"],
  "A data dictionary records each element's definition, format, length, source and its allowed values or ranges. A list of valid codes and meanings is the set of allowed values."),
 ("Under the Conditions of Participation, retained medical records must be kept in their original form or in:",
- "Legally reproduced form", ["Abstracted summary form", "An index-only listing", "A printed discharge summary"],
+ "Legally reproduced form", ["Certified abstract form", "Encrypted backup form", "Signed summary form"],
  "42 CFR 482.24(b)(1) requires retention in original or legally reproduced form for at least 5 years. An abstract or summary alone does not meet it."),
 ("Coding 'diabetes' when the record supports type 2 diabetes with neuropathy lacks which data quality trait?",
  "Granularity", ["Timeliness", "Accessibility", "Relevancy"],

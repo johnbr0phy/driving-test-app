@@ -28,7 +28,7 @@ LEADERSHIP = [
  "Indemnification", ["Force majeure", "Severability", "Termination for convenience"],
  "An indemnification clause shifts the cost of claims caused by one party to that party. Force majeure excuses performance during events beyond either party's control."),
 ("A job description sets out a position's duties and its:",
- "Required qualifications", ["Training schedule", "Pay grade history", "Probation length"],
+ "Required qualifications", ["Annual performance goals", "Incumbent's salary", "Promotion schedule"],
  "A job description lists the title, duties, reporting line and qualifications. Individual pay and evaluations belong in personnel files."),
 ("Comparing one job's worth with other jobs to set its pay grade is called:",
  "Job evaluation", ["Job analysis", "Job rotation", "Job sharing"],

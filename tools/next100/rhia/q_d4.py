@@ -44,7 +44,7 @@ REIMBURSE = [
  "Wage index", ["Bed count", "Charge master", "Ownership type"],
  "The IPPS base rate is adjusted by the area wage index for local labor costs, then multiplied by the MS-DRG relative weight."),
 ("Hospital Value-Based Purchasing adjusts a hospital's Medicare payments based on its:",
- "Quality and cost scores", ["Readmission ratio alone", "Uncompensated care share", "Medicare utilization rate"],
+ "Quality and cost scores", ["Case mix and volume", "Uncompensated care share", "Medicare utilization rate"],
  "Hospital VBP withholds a share of base DRG payments and returns it according to scores on quality, safety, patient experience and efficiency measures."),
 ("A physician writes only 'heart failure.' CDI asks for the type, such as acute systolic, because it can:",
  "Change case severity", ["Satisfy core measures", "Remove a POA flag", "Avoid a readmission"],

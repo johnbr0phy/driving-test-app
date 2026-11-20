@@ -221,6 +221,7 @@ export const TEACHES: Record<string, string> = {
   cobit: "a COBIT or IT governance course",
   prince2: "a PRINCE2 course",
   psm: "a Scrum or agile course",
+  pspo: "a Product Owner or Scrum course",
   capm: "a project management course",
   osssc: "an OSSSC preparation class",
   ssccgl: "an SSC coaching batch",

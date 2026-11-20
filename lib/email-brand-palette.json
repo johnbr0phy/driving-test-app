@@ -184,6 +184,7 @@
   "cissp": ["#425f9a","#f1f3f9","#2d3953","#d9e0ec"],
   "itil": ["#964a08","#fdf4ed","#3c1f07","#ece2d9"],
   "psm": ["#5a0bd0","#f3edfd","#360d73","#e1d9ec"],
+  "pspo": ["#3b2442","#f6f2f8","#1e1221","#e6dde9"],
   "capm": ["#331d72","#f2effb","#170f2e","#ded9ec"],
   "gcdl": ["#0932a5","#edf1fd","#081a49","#d9deec"],
   "gcppca": ["#4b2460","#f6f1f9","#22122b","#e5dcea"],

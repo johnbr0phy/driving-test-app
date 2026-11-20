@@ -2590,6 +2590,20 @@
     --brand-gradient-to: 278 60% 96%;
   }
 
+  /* PSPO I theme: dark muted plum (v2 exam; matches lib/v2/exams/pspo.ts theme) */
+  [data-theme="pspo"] {
+    --brand: 286 30% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 286 30% 96%;
+    --brand-hover: 286 30% 17%;
+    --brand-dark: 286 30% 14%;
+    --brand-darker: 286 30% 10%;
+    --brand-muted: 286 20% 70%;
+    --brand-border: 286 22% 80%;
+    --brand-border-light: 286 20% 89%;
+    --brand-gradient-to: 300 30% 96%;
+  }
+
   /* CAPM theme (v2 exam; matches lib/v2/exams/capm.ts theme) */
   [data-theme="capm"] {
     --brand: 256 60% 28%;
@@ -8949,6 +8963,17 @@
     --brand-muted: 264 35% 45%;
     --brand-dark: 264 90% 67%;
     --brand-darker: 264 80% 78%;
+  }
+  .dark [data-theme="pspo"] {
+    --brand: 286 30% 50%;
+    --brand-hover: 286 30% 42%;
+    --brand-light: 286 30% 13%;
+    --brand-gradient-to: 300 30% 11%;
+    --brand-border-light: 286 20% 24%;
+    --brand-border: 286 22% 34%;
+    --brand-muted: 286 20% 45%;
+    --brand-dark: 286 30% 65%;
+    --brand-darker: 286 30% 78%;
   }
 
   .dark [data-theme="capm"] {

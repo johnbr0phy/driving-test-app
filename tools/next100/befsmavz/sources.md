@@ -28,9 +28,11 @@ academy's material or a commercial prep site. Checked 2026-11-07 unless noted.
     legislation, insurance market, pension systems, rules of conduct. Module 4 listed without
     submodules.
   - This course and exam are in English; Febelfin Academy also runs them in Dutch and French
-    (French course sheets found in search, e.g.
-    https://febelfin-academy.be/fr/download/api/22501-distributiondassurancesiddetudeadistanceavecplateformedentrainementetexamenenligne-proctoring-67b9345a7bce7.pdf ,
-    not opened). Retake after 15 days (exam admin, landing only; never in the bank).
+    (French course sheet, see "Not confirmed" below). Retake after 15 days (exam admin, landing
+    only; never in the bank).
+  - Re-read 2026-11-20 (source triage): still 20 multiple-choice questions per submodule, no
+    guessing correction, about 30 minutes, sessions of at most 3 hours, at least 60% per
+    submodule, the same submodule titles 1.1 to 3.2 and module 4. All match the landing and examFacts.
 - FSMA communication FSMA_2019_14 of 18 July 2019 (read 2026-11-07, PDF):
   https://www.fsma.be/sites/default/files/legacy/content/NL/circ/2019/fsma_2019_14_nl.pdf
   - The KB of 18 June 2019 (BS 25 June 2019, in force 5 July 2019) moved from exams per branch to
@@ -49,6 +51,10 @@ academy's material or a commercial prep site. Checked 2026-11-07 unless noted.
 - The Febelfin Academy exam regulation PDF (het-examenreglement-in-verzekeringsbemiddeling) and the
   "structuur examens" PDF both returned 404 on 2026-11-07; the figures above come from the live
   course and FAQ pages.
+- Febelfin Academy French course sheet (found in search 2026-11-07, never opened; HTTP 404 to the
+  source watch twice by 2026-11-20, so dropped from the watched links; nothing in the bank or
+  landing came from it, and the English course page above, still live, carries the same facts):
+  https://febelfin-academy.be/fr/download/api/22501-distributiondassurancesiddetudeadistanceavecplateformedentrainementetexamenenligne-proctoring-67b9345a7bce7.pdf
 - Number of submodule exams in module 4 and the topic weights inside each submodule: not
   published. The bank's 6/8/8/4/4/4/4/5/4/3 split per 50 is Tigertest's.
 - Other recognised organisers may set the same structure with their own question banks; only

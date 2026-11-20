@@ -18,8 +18,9 @@ Checked 2026-11-06 unless noted.
     10.10 and 12.12.2025. Practical exams in English only in Bucharest, within 7 working days of the
     theory exam. No 2026 calendar could be found (search 2026-11-06); the landing says "check the
     current dates with ARR or your training centre".
-- startupcafe.ro on the same communiqué (context: drivers from Nepal, Sri Lanka and elsewhere):
-  https://startupcafe.ro/examen-arr-limba-engleza-atestat-transport-soferi-sri-lanka-nepal-taxi-uber-romania-htm-29975
+  - Re-read 2026-11-20 (source triage): the communiqué still says the same (question base on
+    testare.arr.ro from 20.02.2025, CPI and short CPI English theory exams only in Bucharest on the
+    five 2025 dates, practicals within 7 working days, exam in the language of the course).
 - Norms on the training and professional attestation of certain categories of drivers, Annex 2 to
   Order of the Minister of Transport no. 1.214/2015 (Monitorul Oficial no. 903 of 4 December 2015),
   consolidated text as reproduced on arr-atestate.ro (a training-site copy of the legal text; the
@@ -48,6 +49,10 @@ Checked 2026-11-06 unless noted.
   3 health, road and environmental safety, service, logistics). The three chapters of the case
   studies match these three sections. Category weights in Tigertest's tests are Tigertest's own:
   ARR publishes no split.
+
+- News report on the same communiqué, kept below the official sources (2026-11-20: a news site,
+  not a source; the ARR communiqué above is the official page and agrees with it):
+  startupcafe.ro, https://startupcafe.ro/examen-arr-limba-engleza-atestat-transport-soferi-sri-lanka-nepal-taxi-uber-romania-htm-29975
 
 ## Law used in the bank
 - Regulation (EC) 561/2006 as amended by Regulation (EU) 2020/1054 (Mobility Package): breaks

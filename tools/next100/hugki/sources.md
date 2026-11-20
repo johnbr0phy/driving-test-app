@@ -63,18 +63,6 @@ GKI app, past paper or provider material was opened or copied. Checked 2026-11-0
     available language version may be chosen regardless of citizenship); an interpreter-assisted
     oral exam is possible only where no material exists in the candidate's official language.
 
-## Languages
-- trans.info (2022, read 2026-11-06): from 1 September 2022 the basic and periodic GKI theory
-  exams can be taken with English and Russian test sheets without an interpreter (in the
-  computer-based exams from 1 January 2023); the KAV has produced Serbian and Ukrainian theory
-  test sheets since 2020. TRADE PRESS, not a KAV page.
-  https://trans.info/hu/hivatasos-jarmuvezeto-gki-vizsgak-szeptembertol-angolul-es-oroszul-is-lehet-vizsgazni-299860
-- Paid prep market (context only, no prices used): Arrivabus GKI course fee schedule from
-  2026-07-17 lists the GKI DA/DT courses and the KAV per-subject computer theory and case study
-  exam fees. https://arrivabus.hu/uploads//documents/buszjogsi/Melleklet-dijtablazat_GKI-2026.-07.-17-tol.pdf
-- The Volánbusz 2023 provider terms URL in the research notes now redirects to mavcsoport.hu and
-  could not be read; its "30 of 40 per subject" is confirmed by the official document above.
-
 ## Hungarian rules used in the bank (OFFICIAL)
 - KRESZ, 1/1975. (II. 5.) KPM-BM joint decree, in force text read 2026-11-06.
   https://net.jogtar.hu/jogszabaly?docid=97500001.kpm
@@ -157,6 +145,24 @@ GKI app, past paper or provider material was opened or copied. Checked 2026-11-0
 - EN 12195-1 load securing: 0.8 g forwards, 0.5 g sideways and backwards (road); EN 12195-2
   webbing labels (LC lashing capacity, STF standard tension force).
 - Euro pallet 1200 x 800 mm.
+
+## Languages (no official list; trade press kept below the official sources)
+- Official: Decree 24/2005 (IV. 21.) GKM (net.jogtar.hu, above) lets a candidate choose any
+  available language version of the computer-based theory exam regardless of citizenship, with an
+  interpreter-assisted oral exam only where no material exists in their language. It does not name
+  the languages. 2026-11-20 (source triage): vizsgakozpont.hu (home page, English content page)
+  has no page listing the GKI exam languages, and a search found none; the trade press report
+  below stays the best source for which languages exist, and the facts row still says so.
+- trans.info (2022, read 2026-11-06 and 2026-11-20, unchanged in substance): from 1 September 2022
+  the basic and periodic GKI theory exams can be taken with English and Russian test sheets
+  without an interpreter (in the computer-based exams from 1 January 2023); the KAV has produced
+  Serbian and Ukrainian theory test sheets since 2020. TRADE PRESS, not a KAV page.
+  https://trans.info/hu/hivatasos-jarmuvezeto-gki-vizsgak-szeptembertol-angolul-es-oroszul-is-lehet-vizsgazni-299860
+- Paid prep market (context only, no prices used): Arrivabus GKI course fee schedule from
+  2026-07-17 lists the GKI DA/DT courses and the KAV per-subject computer theory and case study
+  exam fees. https://arrivabus.hu/uploads//documents/buszjogsi/Melleklet-dijtablazat_GKI-2026.-07.-17-tol.pdf
+- The Volánbusz 2023 provider terms URL in the research notes now redirects to mavcsoport.hu and
+  could not be read; its "30 of 40 per subject" is confirmed by the official document above.
 
 ## Lanes and duplicates
 - Written alongside the Hungary siblings (hukresz on disk, hukreszmoto on disk; huelsoseg and

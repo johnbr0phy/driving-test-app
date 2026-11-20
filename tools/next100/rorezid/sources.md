@@ -8,8 +8,22 @@ comes from a guide.
 
 ## Who runs it, date, model
 
+- Ministerul Sănătății, press release "Concursul de intrare în Rezidențiat 2026" (15 November
+  2026, read 2026-11-20 in the source triage, official):
+  https://ms.ro/ro/centrul-de-presa/concursul-de-intrare-%C3%AEn-reziden%C8%9Biat-2026/
+  - The competition took place on 15 November 2026 in six university centres (București,
+    Cluj-Napoca, Craiova, Iași, Târgu Mureș, Timișoara); 9,969 registered candidates.
+  - Pass mark: "60% din punctajul maxim național pentru fiecare domeniu" (Medicină: top score
+    943, threshold 565.8 points). Confirms the pass rule and date in examFacts.
+- Ministerul Sănătății, press release on the 2 November 2026 videoconference preparing the
+  competition (read 2026-11-20, official): the 2026 edition on 15 November 2026 at the six
+  universities of medicine and pharmacy.
+  https://ms.ro/ro/centrul-de-presa/videoconferin%C8%9B%C4%83-la-ministerul-s%C4%83n%C4%83t%C4%83%C8%9Bii-pentru-organizarea-concursului-na%C8%9Bional-de-reziden%C8%9Biat-2026/
 - Ministerul Sănătății, official page for the competition (methodology, tematica, bibliography,
-  registration): https://rezidentiat.ms.ro/ (503 on 2026-11-07).
+  registration): https://rezidentiat.ms.ro/ (503 on 2026-11-07; failed twice for the source watch
+  and timed out again on 2026-11-20, so the ms.ro press releases above now come first. Question
+  count, time, item types and the 950 maximum are still from the press reports below; the ms.ro
+  releases do not state them.)
 - 2026 session: Sunday 15 November 2026, Medicină, Medicină dentară and Farmacie; registration
   7 to 20 October 2026; six centres (București, Cluj-Napoca, Craiova, Iași, Târgu Mureș,
   Timișoara); answer key from 16:00 on the exam day. Edupedu, 2026:

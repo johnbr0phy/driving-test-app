@@ -28,7 +28,7 @@ commercial item. The official Belgian question bank is not public.
     risks, safety devices, crime and illegal immigrants, fuel use, physical and mental health,
     security of goods, load safety, social climate and road transport regulation, physical risks,
     emergencies, company image, economic climate of road haulage, goods transport regulation.
-    Reference list: https://mobilit.belgium.be/sites/default/files/downloads/ref1cNL.pdf
+    (The brochure's reference list on mobilit.belgium.be no longer loads; see "Unreachable" below.)
 - GOCA, "Cat. C/C1", Doc C-C1.NL.TH-PR, ACT-GOCA 16.11.2022, Brussels (read 2026-11-07):
   https://www.autocontrole.be/sites/default/files/Doc%20C-C1.NL_.TH-PR_13.pdf
   - Theory exam for C or C1 alone: 50 multiple-choice questions, maximum 50 minutes, 2 or 3
@@ -55,6 +55,15 @@ commercial item. The official Belgian question bank is not public.
   (could not be loaded on 2026-11-07; the GOCA Brussels brochure above gives the same parts).
 - Autoveiligheid (Flemish centres), downloads cat. C/C1 and cat. C/C1 vakbekwaamheid:
   https://autoveiligheid.be/downloaden/cat-c-c1 (HTTP 500 on 2026-11-07; listed for the watch).
+- Unreachable (2026-11-20, source triage): the FOD Mobiliteit reference list for the
+  vakbekwaamheid leerstof, https://mobilit.belgium.be/sites/default/files/downloads/ref1cNL.pdf ,
+  returned HTTP 404 to the source watch twice and a bot-check page (not the PDF) to a browser
+  request; no moved copy was found on mobilit.belgium.be or by search. It was only a pointer: the
+  leerstof the bank follows is listed in the GOCA brochure above (re-downloaded 2026-11-20, still
+  online) and in Directive (EU) 2022/2561 Annex I (below). Vlaanderen.be re-read 2026-11-20: 50
+  questions / 41 right from 17 years 9 months; 100 / 80 with vakbekwaamheid from 18 with a B
+  licence; 8 case studies of 5; oral of 10 questions within the hour; 35 hours in five 7-hour
+  modules every 5 years. All still match the landing and examFacts.
 - Not confirmed from an official page: whether English is offered (GOCA lists only Dutch, French
   and German, with a sworn interpreter for others), so the landing says interpreter only.
 

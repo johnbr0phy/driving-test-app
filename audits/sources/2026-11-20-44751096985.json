@@ -1,0 +1,56 @@
+[
+  {
+    "id": "192d088f539adbf83e2d3800057887b31ccaf94b",
+    "url": "https://www.nap.edu.au/naplan/whats-in-the-tests",
+    "verdict": "noise",
+    "reason": "ACARA's page still describes the same domains, conventions test with spelling first and locked, two-section Year 7 and 9 numeracy with a short non-calculator part, and narrative or persuasive writing that Tigertest states."
+  },
+  {
+    "id": "487bdcb1f4144aa18b680d24a02bf8a12c3bed3e",
+    "url": "https://eqao.com/the-assessments/grade-9-math",
+    "verdict": "noise",
+    "reason": "The EQAO page still gives two sessions of about 60 minutes, 54 questions (50 scored), multi-stage adaptive, the same item types and tools; only the 2026-2027 administration windows were added, which Tigertest does not state."
+  },
+  {
+    "id": "a10584fdc8eee6ab2cf9ce509657e02b6b8a395e",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+    "verdict": "noise",
+    "reason": "The study guide still lists the skills measured as of July 20, 2026 with the same weights (25-30, 35-40, 30-35%) and pass score 700; the change is a new practice assessment tip."
+  },
+  {
+    "id": "b1d6d36659a8a6b714ced2c5d3b795b21df65e81",
+    "url": "https://startupcafe.ro/examen-arr-limba-engleza-atestat-transport-soferi-sri-lanka-nepal-taxi-uber-romania-htm-29975",
+    "verdict": "replaced",
+    "reason": "A news site; the official ARR communiqué it reports, already listed, was re-read and says the same, so the news link moved below the official sources in the rocpi and rotaxi sources.md."
+  },
+  {
+    "id": "f05faba87e69be35c368a2836c3d662050d66858",
+    "url": "https://trans.info/hu/hivatasos-jarmuvezeto-gki-vizsgak-szeptembertol-angolul-es-oroszul-is-lehet-vizsgazni-299860",
+    "verdict": "replaced",
+    "reason": "Trade press; KAV publishes no page listing GKI exam languages, so the official Decree 24/2005 GKM (any available language version may be chosen) and KRESZ now fill the watched links and the article stays below as the best source for which languages exist, as sources.md now says."
+  },
+  {
+    "id": "f3ca745b7b8fbb6df0c190ef3e2068b8442f3579",
+    "url": "https://bmdv.bund.de/",
+    "verdict": "noise",
+    "reason": "The ministry home page (now redirecting to bmv.de) changed its news items only; Tigertest states the reform is planned for 2027 and not yet in force, which is still true."
+  },
+  {
+    "id": "8eba61907939c13c995cd4c5ed23437ff872783d",
+    "url": "https://mobilit.belgium.be/sites/default/files/downloads/ref1cNL.pdf",
+    "verdict": "replaced",
+    "reason": "The FOD Mobiliteit reference list is gone (404, bot-check page in a browser) and only pointed to the leerstof, which the GOCA brochure lists; it moved below the official GOCA brochures and vlaanderen.be, re-read and still matching."
+  },
+  {
+    "id": "a36662ebf4fde62223cc718a17b421d09413f5af",
+    "url": "https://febelfin-academy.be/fr/download/api/22501-distributiondassurancesiddetudeadistanceavecplateformedentrainementetexamenenligne-proctoring-67b9345a7bce7.pdf",
+    "verdict": "replaced",
+    "reason": "The never-used French course sheet is a 404; the live Febelfin Academy course page carries the same facts and the official FSMA_2019_14 communication now fills the third watched link."
+  },
+  {
+    "id": "d267c33a7b087008edefc0576aaeb72057c8560d",
+    "url": "https://rezidentiat.ms.ro/",
+    "verdict": "replaced",
+    "reason": "rezidentiat.ms.ro still times out; the Ministry of Health's own ms.ro press releases on the 15 November 2026 competition (six centres, pass at 60% of the national top score) were read and put first in sources.md."
+  }
+]

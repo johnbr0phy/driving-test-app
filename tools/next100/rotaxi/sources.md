@@ -38,18 +38,19 @@ English) was not opened or copied, nor any school "chestionare" site or practice
     psychological after-effects); (6) a foreign language, optional, 4 h. The rental (închiriere)
     tematica has the same structure.
 - ARR, "Comunicat privind susținerea unor examene în limba engleză / Information about exams held
-  in English" (ARR site, December 2024; search snippet and the startupcafe.ro report below):
-  https://www.arr.ro/noutati_doc_1229_comunicat-privind-sustinerea-unor-examene-in-limba-engleza-information-about-exams-held-in-english_pg_0.htm
-- startupcafe.ro, ARR exams in English (read 2026-11-06, news report): the English question base
-  for taxi driver, rental driver, taxi viză and rental viză attestations is published on
-  testare.arr.ro from 20 February 2025; English theory exams for taxi and rental drivers and their
-  endorsements start with the 1-2 March 2025 session; candidates sit the theory exam in the
+  in English" (ARR site, December 2024; read in full 2026-11-20 in the source triage): the English
+  question base for taxi driver, rental driver, taxi viză and rental viză attestations is published
+  on testare.arr.ro from 20.02.2025; English theory exams for taxi and rental drivers and their
+  endorsements start with the 01-02.03.2025 session; candidates sit the theory exam in the
   language of their course, Romanian or English.
-  https://startupcafe.ro/examen-arr-limba-engleza-atestat-transport-soferi-sri-lanka-nepal-taxi-uber-romania-htm-29975
+  https://www.arr.ro/noutati_doc_1229_comunicat-privind-sustinerea-unor-examene-in-limba-engleza-information-about-exams-held-in-english_pg_0.htm
 - avocatnet.ro, applications for taxi attestations only online (guide):
   https://www.avocatnet.ro/articol_68450/Atestatele-de-taximetrie-nu-mai-pot-fi-ob%C8%9Binute-decat-online.html
 - avocatnet.ro (2008, guide; agrees with the law on 20 questions and 70%):
   https://www.avocatnet.ro/articol_11405/Atestarea-profesionala-pentru-transportul-in-regim-de-taxi-si-inchiriere.html
+- startupcafe.ro, news report on the ARR communiqué (read 2026-11-06 and 2026-11-20; a news site,
+  kept below the official sources; it agrees with the communiqué above):
+  https://startupcafe.ro/examen-arr-limba-engleza-atestat-transport-soferi-sri-lanka-nepal-taxi-uber-romania-htm-29975
 - Not confirmed on an official page: the test's time limit (none published that we could read).
   Fees are not used.
 

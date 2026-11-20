@@ -221,10 +221,10 @@
     "stem": "A team is split across three time zones. What best supports transparency?",
     "explanation": "Distributed teams need a communication strategy that makes the same up-to-date information available to all at any time, such as one shared digital board.",
     "options": [
-      "Shared online board everyone updates",
-      "A board per site, synced weekly",
-      "Status emailed daily to all sites",
-      "A weekly cross-site video call"
+      "One shared online board",
+      "A board at each site",
+      "A daily status email",
+      "A weekly video call"
     ],
     "correct": [
       0
@@ -260,16 +260,16 @@
     "skill": "Delivery 1: Seek early feedback",
     "difficulty": 1,
     "format": "single",
-    "stem": "How often should stakeholder feedback be collected in agile delivery?",
-    "explanation": "The outline says to collect and incorporate stakeholders' feedback on a regular basis, which in agile delivery means every iteration.",
+    "stem": "Which event gives stakeholders a regular chance to give feedback on the product?",
+    "explanation": "The iteration review demonstrates the increment to stakeholders each iteration, so their feedback is collected on a regular basis.",
     "options": [
-      "At each roadmap update",
-      "At each release",
-      "Every iteration",
-      "At each quarterly review"
+      "Retrospective",
+      "Backlog refinement",
+      "Daily standup",
+      "Iteration review"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -328,11 +328,11 @@
     "options": [
       "Act at once to stabilize it",
       "Analyze until the answer is clear",
-      "Apply the documented best practice",
-      "Run small safe-to-fail probes"
+      "Run small safe-to-fail probes",
+      "Apply the documented best practice"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -959,9 +959,9 @@
     "explanation": "Work piling up past the WIP limit in one column shows that stage cannot keep up. Visualizing work makes this visible so the team can act.",
     "options": [
       "A bottleneck at testing",
-      "Testing is efficient",
-      "The limit is working well",
-      "Development is idle"
+      "Too little work in development",
+      "A WIP limit set too low",
+      "Testers pulling work too fast"
     ],
     "correct": [
       0
@@ -1320,16 +1320,16 @@
     "skill": "Delivery 3: Manage impediments and risk",
     "difficulty": 1,
     "format": "single",
-    "stem": "Which practice keeps risk identification going throughout delivery?",
-    "explanation": "Risks and impediments are identified proactively and monitored all the way through delivery, which in agile means reviewing them every iteration.",
+    "stem": "Which chart, reviewed each iteration, shows whether the team's risk is falling?",
+    "explanation": "A risk burn down plots total risk exposure each iteration, so the team can monitor risk throughout delivery.",
     "options": [
-      "Risk review each quarter",
-      "Risk review each iteration",
-      "Risk review each release",
-      "Risk review at each phase gate"
+      "Sprint burndown chart",
+      "Cumulative flow diagram",
+      "Release burnup chart",
+      "Risk burn down chart"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -1369,12 +1369,12 @@
     "explanation": "Mentoring is ongoing guidance from someone with more experience, often about career and craft. Training teaches a defined skill.",
     "options": [
       "Supervision",
-      "Coaching",
       "Mentoring",
+      "Coaching",
       "Training"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -1386,16 +1386,16 @@
     "skill": "Delivery 1: Seek early feedback",
     "difficulty": 2,
     "format": "single",
-    "stem": "A customer finds a delivered screen hard to use. When is the best time to learn this?",
-    "explanation": "Seeking early feedback means hearing it when the increment is shown, while the fix is still cheap.",
+    "stem": "A customer finds a delivered screen hard to use. Which event should surface this?",
+    "explanation": "Seeking early feedback means showing each increment to customers at its review, while a fix is still cheap.",
     "options": [
-      "At the release retrospective",
-      "In the user acceptance phase",
-      "At the next release planning",
-      "At the review of that increment"
+      "Backlog refinement",
+      "The team's retrospective",
+      "Review of that increment",
+      "Iteration planning"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -1473,10 +1473,10 @@
     "stem": "Two impediments block the team at once. How should they be handled?",
     "explanation": "The outline says to prioritize impediment removal and risk mitigation activities, which means ranking by impact on the goal.",
     "options": [
-      "Swarm on the oldest one first",
-      "Clear the quicker one first",
+      "Rank them by how long they waited",
+      "Rank them by how quick they are",
       "Rank them by impact on the goal",
-      "Raise both at the retrospective"
+      "Rank them by who raised them"
     ],
     "correct": [
       2
@@ -1979,11 +1979,11 @@
     "difficulty": 2,
     "format": "single",
     "stem": "What does a coach mainly do that a trainer does not?",
-    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches a defined skill or shows the technique, and guidance from long experience is mentoring.",
+    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches defined content or shows the technique, and sharing career lessons is closer to mentoring.",
     "options": [
-      "Guide from long experience",
-      "Teach a defined skill or method",
-      "Model the correct technique",
+      "Share lessons from their own career",
+      "Show people the right technique",
+      "Teach a defined course of content",
       "Help people find their own answers"
     ],
     "correct": [
@@ -2105,16 +2105,16 @@
     "skill": "Product 3: Visualize work",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team's tracking data is updated only at month end. What should it set up?",
-    "explanation": "The outline says to establish a process to update the data and statistics so the visual picture stays current.",
+    "stem": "A team's tracking data is updated only at month end. Which outline enabler is missing?",
+    "explanation": "Under Visualize Work the outline says to establish a process to update the data and statistics, so the visual picture stays current.",
     "options": [
-      "Update it at each sprint review",
-      "Assign a reporting role",
-      "Update it as each card changes",
-      "Audit it once a month"
+      "A process to keep data current",
+      "Measuring the delivery of value",
+      "Limiting work in progress",
+      "Radiating metrics to the audience"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -2130,12 +2130,12 @@
     "explanation": "Maximizing value in a fixed timeframe means ordering by value for the effort, so if time runs out what is left is the least valuable. Highest value regardless of cost can burn the budget on one item.",
     "options": [
       "Riskiest technical items first",
-      "Best return per unit of effort first",
       "Lowest effort first",
+      "Best return per unit of effort first",
       "Highest value first, whatever the cost"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2150,13 +2150,13 @@
     "stem": "Team members are taking sides and refusing to work together. What does this show about the conflict?",
     "explanation": "Conflict that has spread into camps and broken cooperation is at a high level and needs more direct facilitation than an everyday problem would.",
     "options": [
-      "It has reached a high level",
       "It is healthy debate about ideas",
+      "It has reached a high level",
       "It is a minor misunderstanding",
       "It is a normal problem to solve"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2210,16 +2210,16 @@
     "skill": "Delivery 5: Perform continuous improvements",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team tried a new code review rule last iteration. When should it evaluate the change?",
-    "explanation": "Continuous improvement includes evaluating each process change soon after trying it, which is what the next retrospective is for.",
+    "stem": "A team tried a new code review rule last iteration. Where should it judge whether the rule helped?",
+    "explanation": "Continuous improvement includes evaluating each process change, and the retrospective is where the team inspects its own process.",
     "options": [
-      "At the next quarterly review",
-      "At the next team audit",
-      "At the next release",
-      "At the next retrospective"
+      "At the daily standup",
+      "At backlog refinement",
+      "At the retrospective",
+      "At the sprint review"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -2236,11 +2236,11 @@
     "options": [
       "Track each person's hours worked",
       "Record the team's estimates",
-      "Expose flow, queues and blockers",
-      "Show the sponsor the plan"
+      "Show the sponsor the plan",
+      "Expose flow, queues and blockers"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -2918,10 +2918,10 @@
     "stem": "Why should a practitioner avoid assigning tasks to members of a self-organizing team?",
     "explanation": "When someone else hands out the work, members stop owning it. Self-organizing teams decide who does what.",
     "options": [
-      "It slows how work is pulled",
+      "It confuses the product owner",
       "It weakens their ownership",
-      "It hides who is overloaded",
-      "It makes work less visible"
+      "It reduces their velocity",
+      "It overloads the facilitator"
     ],
     "correct": [
       1
@@ -3002,10 +3002,10 @@
     "stem": "Why monitor risks throughout delivery?",
     "explanation": "Risks change as work progresses, so they are monitored and controlled continuously, not logged once.",
     "options": [
-      "Auditors require it",
+      "New risks only appear late",
       "Likelihood and impact change",
-      "The register must stay complete",
-      "Each sprint needs a risk item"
+      "Mitigations always work at once",
+      "Registers need a monthly update"
     ],
     "correct": [
       1
@@ -3083,13 +3083,13 @@
     "skill": "Leadership 3: Promote knowledge sharing",
     "difficulty": 1,
     "format": "single",
-    "stem": "When are lessons learned best captured on an agile team?",
-    "explanation": "Agile teams capture lessons continuously through retrospectives so they can use them in the next iteration.",
+    "stem": "Which event does an agile team mainly use to capture lessons learned?",
+    "explanation": "The outline names retrospectives as an environment to capture and share knowledge, such as lessons learned for continuous improvement.",
     "options": [
-      "In each retrospective",
-      "At each phase-end review",
-      "At each release review",
-      "At each quarterly review"
+      "Retrospective",
+      "Daily standup",
+      "Backlog refinement",
+      "Sprint review"
     ],
     "correct": [
       0
@@ -3146,13 +3146,13 @@
     "skill": "Delivery 4: Recognize and eliminate waste",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why prioritize waste reduction activities?",
-    "explanation": "The outline says to prioritize waste reduction, putting effort where it saves the most. Speed or age alone does not say where the biggest gain is.",
+    "stem": "Which outline task includes prioritizing waste reduction activities?",
+    "explanation": "Prioritizing waste reduction activities is an enabler of the Delivery task Recognize and Eliminate Waste, along with visualizing the value stream and iterating on waste.",
     "options": [
-      "So effort goes where it saves most",
-      "So the oldest problems go first",
-      "So each team handles its own",
-      "So the quickest wins come first"
+      "Recognize and eliminate waste",
+      "Perform continuous improvements",
+      "Optimize flow",
+      "Manage impediments and risk"
     ],
     "correct": [
       0
@@ -3882,13 +3882,13 @@
     "skill": "Delivery 5: Perform continuous improvements",
     "difficulty": 1,
     "format": "single",
-    "stem": "How should a team decide which improvement to make next?",
+    "stem": "What should drive a team's choice of its next process improvement?",
     "explanation": "The outline says to obtain metrics and feedback to drive continuous improvements, meaning the team's own data.",
     "options": [
-      "Industry benchmark data",
-      "The sponsor's priorities",
-      "The coach's past experience",
-      "Team metrics and feedback"
+      "An industry maturity score",
+      "Another team's improvement list",
+      "Last year's audit findings",
+      "Its own cycle time and feedback"
     ],
     "correct": [
       3

@@ -1,0 +1,4352 @@
+[
+  {
+    "id": "PMIACP-T1-001",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A backlog item is too large to finish within one iteration. What should the team do?",
+    "explanation": "Refinement decomposes backlog items as needed so each can be finished and deliver value within an iteration. Splitting by design, build and test gives pieces with no value on their own.",
+    "options": [
+      "Carry it over several iterations",
+      "Split it into smaller valuable slices",
+      "Split it into design, build and test tasks",
+      "Lengthen the iteration so that it fits"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-002",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 1: Experiment early",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why build a minimum viable product before the full solution?",
+    "explanation": "An MVP is the smallest build that lets the team learn whether the solution meets a real need, before larger investment. Proving a technical approach is a spike, and the smallest marketable slice is an MMF.",
+    "options": [
+      "To test the market need cheaply",
+      "To prove a technical approach",
+      "To gather requirements up front",
+      "To release the smallest marketable slice"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-003",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team is unsure whether a new database can handle the expected load. What should it do?",
+    "explanation": "An architectural or risk-based spike is a short, time-boxed experiment that answers a technical unknown before the team commits to it. A backlog item or advice does not answer the question now.",
+    "options": [
+      "Add a load test to the definition of done",
+      "Add it to the risk-adjusted backlog",
+      "Run a time-boxed spike",
+      "Ask the community of practice"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-004",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which tool makes a team's progress and impediments visible to anyone walking by?",
+    "explanation": "An information radiator is a large, visible display of status, progress and impediments.",
+    "options": [
+      "Product roadmap",
+      "Working agreement",
+      "Story map",
+      "Information radiator"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-005",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A developer needs to learn the basic features of a new testing tool quickly. Which approach fits?",
+    "explanation": "Training transfers a defined skill or body of knowledge. Coaching helps people find their own answers, and mentoring is longer-term guidance from someone experienced.",
+    "options": [
+      "Peer review",
+      "Mentoring",
+      "Training",
+      "Coaching"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-006",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 1: Seek early feedback",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which practice gives the earliest signal of whether customers are satisfied?",
+    "explanation": "Delivering work in small increments puts working product in front of customers early, so satisfaction can be checked on real use. Surveys, boards and reports gather opinions about plans.",
+    "options": [
+      "Delivering small increments often",
+      "Weekly progress reports to customers",
+      "Monthly satisfaction surveys",
+      "A customer advisory board"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-007",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A build keeps failing. Which technique asks 'why' repeatedly to reach the underlying cause?",
+    "explanation": "The five whys keeps asking why the previous answer happened until it reaches a root cause. The others are estimation and prioritization techniques.",
+    "options": [
+      "Affinity estimating",
+      "Five whys",
+      "MoSCoW",
+      "Planning poker"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-008",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which technique has everyone reveal their estimate cards at the same moment?",
+    "explanation": "In planning poker each estimator picks a card privately and all reveal at once, which limits anchoring, then the team discusses differences.",
+    "options": [
+      "Bottom-up estimating",
+      "Affinity estimating",
+      "Ideal time",
+      "Planning poker"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-009",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team reshapes next month's plan after a customer demo. Which manifesto value does this show?",
+    "explanation": "The Agile Manifesto values responding to change over following a plan. The demo supplied feedback and the team adapted, which is that value in action.",
+    "options": [
+      "Working software",
+      "Customer collaboration",
+      "Responding to change",
+      "Individuals and interactions"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-010",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a risk-adjusted backlog?",
+    "explanation": "A risk-adjusted backlog adds risk response work as backlog items and orders them alongside features, so risk reduction happens early.",
+    "options": [
+      "Backlog ordered by value per effort",
+      "Backlog sized in story points",
+      "Backlog split into release slices",
+      "Backlog with risk responses ranked in"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-011",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team is split across three time zones. What best supports transparency?",
+    "explanation": "Distributed teams need a communication strategy that makes the same up-to-date information available to all at any time, such as one shared digital board.",
+    "options": [
+      "One shared online board",
+      "A board at each site",
+      "A daily status email",
+      "A weekly video call"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-012",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team member looks tense and silent when a plan is announced. What should the practitioner do?",
+    "explanation": "Reading non-verbal cues and following up privately is part of applying emotional intelligence. Asking for objections in front of everyone or waiting for the retrospective may not get an honest answer.",
+    "options": [
+      "Note it for the next retrospective",
+      "Check in privately afterwards",
+      "Ask the team for objections now",
+      "Explain the plan again in detail"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-013",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 1: Seek early feedback",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which event gives stakeholders a regular chance to give feedback on the product?",
+    "explanation": "The iteration review demonstrates the increment to stakeholders each iteration, so their feedback is collected on a regular basis.",
+    "options": [
+      "Retrospective",
+      "Backlog refinement",
+      "Daily standup",
+      "Iteration review"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-014",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a fishbone diagram mainly used for?",
+    "explanation": "A fishbone (Ishikawa) diagram lays out possible causes by category so a team can investigate the root cause of a problem.",
+    "options": [
+      "Grouping possible causes of a problem",
+      "Ranking backlog items by business value",
+      "Forecasting a release date",
+      "Tracking work in progress"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-015",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What do story points estimate?",
+    "explanation": "Story points are a relative sizing unit that compares items with each other. Effort with no interruptions is ideal time, and elapsed time is measured after the work, not estimated relative to other items.",
+    "options": [
+      "Order of business value",
+      "Relative size of the work",
+      "Elapsed time to finish",
+      "Effort with no interruptions"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-016",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a new market, cause and effect become clear only in hindsight. Which approach fits?",
+    "explanation": "In a complex system the only way to understand it is to interact with it, so the team runs small experiments and amplifies what works. Expert analysis suits ordered problems; immediate action suits chaos.",
+    "options": [
+      "Act at once to stabilize it",
+      "Apply the documented best practice",
+      "Run small safe-to-fail probes",
+      "Bring in experts to analyze it"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-017",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk has a 20% chance of happening and would cost 15 days. What is its expected impact in days?",
+    "explanation": "Expected impact is probability times impact: 0.2 times 15 is 3 days. 15 ignores the probability.",
+    "options": [
+      "3",
+      "12",
+      "15",
+      "35"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T1-018",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a retrospective, one member blames a colleague for a failed release. What should the facilitator do?",
+    "explanation": "A no-blame culture keeps the discussion objective and on the system that allowed the failure. Asking the colleague to answer the charge turns it into a trial.",
+    "options": [
+      "Refocus on the process, not the person",
+      "Take the discussion offline",
+      "Let the colleague explain what happened",
+      "Ask the team to vote on the cause"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-019",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What builds an environment of trust on an agile team?",
+    "explanation": "The outline gives transparent communication as the example of establishing trust. Targets, roles and events have other purposes.",
+    "options": [
+      "Regular team-building events",
+      "Open information sharing",
+      "Clear role definitions",
+      "Shared team performance targets"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-020",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team's last three iterations delivered 20, 24 and 22 points. 132 points remain. About how many iterations are left?",
+    "explanation": "Average velocity is (20 + 24 + 22) divided by 3, which is 22. 132 divided by 22 is 6 iterations. Using the best iteration alone (24) gives 5.5, an optimistic forecast: 5 iterations at that pace would still leave work.",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T1-021",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which technique sorts requirements into must have, should have, could have and won't have?",
+    "explanation": "MoSCoW is a value-based prioritization technique named for its four categories.",
+    "options": [
+      "Planning poker",
+      "Kano analysis",
+      "Dot voting",
+      "MoSCoW"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-022",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The team has three ways to fix a recurring defect. How should it choose?",
+    "explanation": "The outline says to determine with the team the resolution strategies that will add the most value. Cost, speed and safety matter, but value decides.",
+    "options": [
+      "Agree the cheapest fix",
+      "Agree the quickest fix",
+      "Agree the most valuable fix",
+      "Agree the safest fix"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-023",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A suitability check shows one deliverable has fixed, regulated requirements. What is a sensible response?",
+    "explanation": "Suitability tools show where agile fits and where it may not. Fixed, regulated requirements are a poor fit for iteration, so a hybrid plans that part predictively and runs the rest adaptively.",
+    "options": [
+      "Deliver it in short sprints anyway",
+      "Plan that part predictively",
+      "Add a spike to explore it",
+      "Use Kanban for that part"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-024",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a risk burn down chart show?",
+    "explanation": "A risk burn down plots the team's total risk exposure each iteration, which should fall as risks are mitigated. The others describe a burndown, a cumulative flow diagram and a burnup.",
+    "options": [
+      "Total risk exposure over time",
+      "Work remaining over time",
+      "Work in each state over time",
+      "Scope completed over time"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-025",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technique sizes many stories fast by placing them on a wall next to similar ones?",
+    "explanation": "Affinity estimating groups items of similar size together, which is a quick way to size a large backlog.",
+    "options": [
+      "Wideband Delphi",
+      "Three-point estimating",
+      "Affinity estimating",
+      "Function point counting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-026",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which describes dialogue rather than debate?",
+    "explanation": "The outline asks practitioners to encourage dialogue over debate. Dialogue explores views together; persuading and choosing between positions are debate.",
+    "options": [
+      "Persuading others with evidence",
+      "Reaching a quick decision",
+      "Choosing between two positions",
+      "Exploring ideas to understand them"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-027",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What kind of leader does the Scrum Guide describe the Scrum Master as?",
+    "explanation": "The 2020 Scrum Guide describes Scrum Masters as true leaders who serve the Scrum Team and the larger organization.",
+    "options": [
+      "One who serves",
+      "One who assigns",
+      "One who audits",
+      "One who commands"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-028",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A steering committee asks when a release will be ready. Which metric suits that audience?",
+    "explanation": "Metrics should fit the audience. A release burnup shows completed scope against total scope over time, which answers a forecast question; sprint-level charts do not reach the release.",
+    "options": [
+      "Sprint task board",
+      "Release burnup chart",
+      "Daily sprint burndown",
+      "Work item age chart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-029",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A new team keeps arguing about when code reviews should happen. What should they create?",
+    "explanation": "A working agreement is the team's own set of rules for how it works together, such as when reviews happen. The definition of done sets the quality bar for finished work, not team habits.",
+    "options": [
+      "Definition of done",
+      "Release plan",
+      "Working agreement",
+      "Team charter vision"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-030",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which practice lets people from many teams share knowledge on one subject regularly?",
+    "explanation": "Communities of practice bring together people with a shared interest across teams to learn from each other. A scrum of scrums coordinates dependencies, not a subject.",
+    "options": [
+      "Sprint review",
+      "Daily standup",
+      "Scrum of scrums",
+      "Community of practice"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-031",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "To get early feedback, who should see a finished increment?",
+    "explanation": "Increments of value are demonstrated for early feedback from the people who will use or pay for the product.",
+    "options": [
+      "The QA team",
+      "Stakeholders and customers",
+      "The whole development team",
+      "The product owner first"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-032",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which technique maps every step from request to delivery to find delays?",
+    "explanation": "Value stream mapping visualizes the end-to-end flow of value, separating value-added from non-value-added time.",
+    "options": [
+      "Process tailoring workshop",
+      "Mind mapping",
+      "Value stream mapping",
+      "Story mapping"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-033",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which outline enabler for shortening feedback loops concerns stakeholders?",
+    "explanation": "Under Shorten Feedback Loops the outline says to include the stakeholders from day one. Radiating metrics, demonstrating increments and validating acceptance criteria belong to other tasks.",
+    "options": [
+      "Validate criteria with them",
+      "Demonstrate increments to them",
+      "Radiate metrics to them",
+      "Include them from day one"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-034",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team keeps waiting for the practitioner to make every decision. What should the practitioner do?",
+    "explanation": "Empowering a team means coaching it to make its own decisions. Deciding for it, even with reasons, keeps it dependent, and moving decisions to someone else does not build that capability.",
+    "options": [
+      "Ask questions that let them decide",
+      "Hand decisions to the product owner",
+      "Set up a rota of deciders",
+      "Make the decision and explain why"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-035",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Velocity drops sharply for two iterations and nobody knows why. What should happen?",
+    "explanation": "Metrics are reviewed and analyzed by the team, and the retrospective is where it examines what changed. Velocity is not comparable across teams.",
+    "options": [
+      "Analyze it together at the retrospective",
+      "Compare it with other teams' velocity",
+      "Ask the product owner to analyze it",
+      "Have the facilitator audit the estimates"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-036",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should set the goal for an increment?",
+    "explanation": "The increment's goals are defined so it aligns with business priorities as they are now. Velocity limits how much fits, not what the goal is.",
+    "options": [
+      "The team's velocity",
+      "The original project plan",
+      "The largest items left",
+      "Current business priorities"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-037",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five teams build one product and keep blocking each other. Which practice coordinates them?",
+    "explanation": "A scrum of scrums meets often to manage cross-team dependencies and blockers. A shared definition of done, joint retrospectives and combined reviews help alignment, but none handles day-to-day blocking.",
+    "options": [
+      "Joint retrospectives each month",
+      "A combined sprint review",
+      "Scrum of scrums",
+      "A shared definition of done"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-038",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A value stream map separates which two kinds of time?",
+    "explanation": "Value stream mapping visualizes the end-to-end flow of value, separating value-added from non-value-added time such as waiting.",
+    "options": [
+      "Ideal and elapsed time",
+      "Value-added and waiting time",
+      "Sprint and release time",
+      "Planned and actual elapsed time"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-039",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new team will build a system like one another team built last year. What should it do first?",
+    "explanation": "Leveraging organizational knowledge assets means drawing on similar initiatives, their people and processes. The people who did the work hold far more than any report, code or backlog.",
+    "options": [
+      "Talk with the team that built it",
+      "Study that system's code",
+      "Review that team's backlog",
+      "Read that project's final report"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-040",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 3: Visualize work",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which board shows work moving through columns such as To do, Doing and Done?",
+    "explanation": "A Kanban or task board visualizes work items and their state in columns that follow the workflow.",
+    "options": [
+      "Product roadmap",
+      "Burndown chart",
+      "Story map",
+      "Kanban board"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-041",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technique tests a business idea quickly through a build, measure and learn loop?",
+    "explanation": "Lean startup is built on short build, measure and learn cycles that validate ideas with real users. Design thinking starts from user empathy and prototypes.",
+    "options": [
+      "Design thinking",
+      "Value stream mapping",
+      "Lean startup",
+      "Kaizen"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-042",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A disagreement between two developers has turned into personal remarks. What should come first?",
+    "explanation": "The outline says to identify the root cause and the level of the conflict before choosing how to respond. Talking it out or pointing to the agreement are responses, and they come after that step.",
+    "options": [
+      "Remind them of the working agreement",
+      "Understand what is really behind it",
+      "Bring both together to talk it out",
+      "Leave it for the next retrospective"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-043",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How does a team confirm an iteration's deliverables are acceptable?",
+    "explanation": "The outline says to validate that iteration deliverables meet acceptance criteria. Velocity, burndowns and hours show progress and effort, not whether the deliverable meets the customer's need.",
+    "options": [
+      "Check the team's velocity",
+      "Check the hours logged",
+      "Check the sprint burndown",
+      "Check against acceptance criteria"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-044",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retrospective finds that handoffs to testing cause delays. What is the best next step?",
+    "explanation": "Retrospective findings are used by agreeing a small, concrete improvement and trying it in the next iteration. The sprint review inspects the product, the product backlog holds product work, and tracking alone changes nothing.",
+    "options": [
+      "Raise it at the next sprint review meeting",
+      "Track handoff time and revisit later",
+      "Pick one change to try next iteration",
+      "Add the issue to the product backlog"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-045",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 5: Perform continuous improvements",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which term describes continuous, small improvements to how work is done?",
+    "explanation": "Kaizen means continuous improvement through small changes. It is on the outline's list of process improvement techniques.",
+    "options": [
+      "Muda",
+      "Kaizen",
+      "Kanban",
+      "Jidoka"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-046",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 3: Visualize work",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a Kanban board, a column holds far more items than its WIP limit. What does this signal?",
+    "explanation": "Work piling up past the WIP limit in one column shows that stage cannot keep up, a constraint. Visualizing work makes this visible so the team can act.",
+    "options": [
+      "A constraint at that stage",
+      "Idle capacity at that stage",
+      "Rework at a later stage",
+      "Low demand upstream"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-047",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 4: Promote agile principles and practices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team quietly fixes a process problem without being asked. What should the practitioner do?",
+    "explanation": "Recognizing and celebrating agile behavior reinforces it. Self-organized improvement is exactly the behavior to encourage.",
+    "options": [
+      "Thank them privately only",
+      "Ask them to raise it with you first",
+      "Recognize the behavior openly",
+      "Add it to the team's process docs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-048",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is a generalizing specialist?",
+    "explanation": "A generalizing specialist has depth in one area plus working skill in others, so they can help wherever the team's work needs it.",
+    "options": [
+      "Coordinator of several specialists",
+      "Equally skilled at everything",
+      "Expert in one narrow skill",
+      "Deep in one skill, able in others"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-049",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which approach usually resolves a team conflict best?",
+    "explanation": "The outline asks practitioners to promote a collaborative approach to conflict, where both sides work out a solution that meets their shared interests. Compromise and accommodation leave needs unmet.",
+    "options": [
+      "Collaborate on a shared solution",
+      "Compromise so both gain a little",
+      "Let the facilitator propose a fix",
+      "Accommodate the other side's view"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-050",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which technique helps a team learn who its customers are and what they need?",
+    "explanation": "Identifying and analyzing customers and their needs starts with talking to them. The others look at the team's process or estimates.",
+    "options": [
+      "Value stream mapping",
+      "Customer interviews",
+      "Planning poker",
+      "Retrospectives"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-051",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer argued for another framework but the team chose differently. What should they do now?",
+    "explanation": "The outline asks practitioners to commit to the team's decisions even in disagreement. A re-vote, reopening it in the retrospective or a side prototype keeps the disagreement alive.",
+    "options": [
+      "Prototype the other option to compare",
+      "Ask for a re-vote next sprint",
+      "Raise it again at the retrospective",
+      "Back the decision fully"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T1-052",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a WIP limit encourage a team to do?",
+    "explanation": "Limiting work in progress makes the team finish what it has before pulling new work, which shortens cycle time. Relative sizing, visualization and value ordering are separate practices.",
+    "options": [
+      "Finish items before taking more",
+      "Make work visible to everyone",
+      "Size items relative to each other",
+      "Order items by business value"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-053",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the best way to define what value will look like for a feature?",
+    "explanation": "The outline says to define what value will look like, such as success criteria. Acceptance criteria and the definition of done say when work is complete, not whether it delivered value.",
+    "options": [
+      "Agree the definition of done",
+      "Agree the feature scope",
+      "Agree success criteria",
+      "Agree acceptance criteria"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-054",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 5: Promote shared vision and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Stakeholders describe the product's purpose in very different ways. What should the practitioner do?",
+    "explanation": "The practitioner defines and ensures a common understanding of the purpose and vision with all stakeholders. Picking or merging versions leaves people who do not share it.",
+    "options": [
+      "Adopt the sponsor's version",
+      "Build a common understanding of it",
+      "Merge all versions in one document",
+      "Let the product owner pick one"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T1-055",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A key customer changes priorities in the middle of a release. What should the team do?",
+    "explanation": "Agile teams respond to changing priorities by reordering the backlog with the customer so the next work reflects them. Pushing work into a running sprint or waiting for a change process slows the response.",
+    "options": [
+      "Re-rank the backlog with them",
+      "Raise a formal change request",
+      "Finish the release, then re-plan",
+      "Add it to the current sprint"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T1-056",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two actions motivate team members to experiment and take risks? (Choose two.)",
+    "explanation": "People experiment when failure is treated as learning and time is set aside for it. Penalizing failure or rewarding only success discourages risk-taking.",
+    "options": [
+      "Count failed tries in reviews",
+      "Approve each idea in advance",
+      "Reward only successful ideas",
+      "Give time for experiments",
+      "Celebrate lessons from failed tries"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T1-057",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An agile project has an earned value of 90,000 and an actual cost of 100,000. What is the CPI?",
+    "explanation": "CPI is earned value divided by actual cost: 90,000 divided by 100,000 is 0.9, so each unit spent earns 0.9 of planned value. 1.11 divides the other way round.",
+    "options": [
+      "0.1",
+      "0.9",
+      "1.11",
+      "10"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T1-058",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two traits help a group become a high-performing agile team? (Choose two.)",
+    "explanation": "High-performing teams grow from stable membership and collective ownership of goals. Fixed roles, top-down assignment and members spread thin across teams work against both.",
+    "options": [
+      "Shared ownership of goals",
+      "Stable membership over time",
+      "Work assigned by a manager",
+      "Roles fixed by job title",
+      "Members split across many teams"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T1-059",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Stakeholders keep pulling developers into side requests. What helps protect flow?",
+    "explanation": "The outline says to shield the team from interruptions, for example by creating team interfaces such as one contact for incoming requests. A buffer or rotation absorbs interruptions instead of shielding the team from them.",
+    "options": [
+      "Shorten the iteration length",
+      "Add a support rotation in the team",
+      "Send requests through one contact",
+      "Keep a capacity buffer each sprint"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T1-060",
+    "section": "acp",
+    "test": 1,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A feature costs 20,000 to build and returns 50,000 in benefits. What is its ROI as a percentage?",
+    "explanation": "ROI is net benefit divided by cost: (50,000 minus 20,000) divided by 20,000 is 1.5, or 150 percent. 250 percent divides benefits by cost without subtracting the cost.",
+    "options": [
+      "30%",
+      "60%",
+      "150%",
+      "250%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T2-001",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who orders the backlog items with input from the customer and stakeholders?",
+    "explanation": "The product owner orders the backlog, prioritizing items with customers and stakeholders. Developers estimate and plan their work but do not set business priority.",
+    "options": [
+      "Project sponsor",
+      "Developers alone",
+      "Team facilitator",
+      "Product owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-002",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 1: Experiment early",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team is unsure users want a new feature. What is the quickest way to learn?",
+    "explanation": "Building a small increment and watching real use validates the need with evidence. Surveys, personas and sales opinions say what people expect, not what they do.",
+    "options": [
+      "Run a survey of target users",
+      "Release a thin slice, then measure",
+      "Hold a design workshop with sales",
+      "Write user personas for the feature"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-003",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which chart, reviewed each iteration, shows whether the team's risk is falling?",
+    "explanation": "A risk burn down plots total risk exposure each iteration, so the team can monitor risk throughout delivery.",
+    "options": [
+      "Sprint burndown chart",
+      "Cumulative flow diagram",
+      "Release burnup chart",
+      "Risk burn down chart"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-004",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 1,
+    "format": "multi",
+    "stem": "Which two items belong on a team's information radiator? (Choose two.)",
+    "explanation": "A radiator shows the team's status, progress, risks and impediments. Individual hours and rankings turn it into surveillance and undermine trust.",
+    "options": [
+      "Manager's private notes",
+      "Current impediments",
+      "Ranking of developers",
+      "Each person's hours",
+      "Sprint burndown"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T2-005",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A senior engineer guides a junior through career choices over several months. What is this?",
+    "explanation": "Mentoring is ongoing guidance from someone with more experience, often about career and craft. Training teaches a defined skill.",
+    "options": [
+      "Supervision",
+      "Mentoring",
+      "Coaching",
+      "Training"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-006",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 1: Seek early feedback",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer finds a delivered screen hard to use. Which event should surface this?",
+    "explanation": "Seeking early feedback means showing each increment to customers at its review, while a fix is still cheap.",
+    "options": [
+      "Backlog refinement",
+      "The team's retrospective",
+      "Review of that increment",
+      "Iteration planning"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-007",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which tool sorts possible causes into categories such as people, process and tools?",
+    "explanation": "An Ishikawa or fishbone diagram groups causes into categories along the spine of a problem. It is a root cause tool in the outline.",
+    "options": [
+      "Ishikawa diagram",
+      "Burndown chart",
+      "Kano model",
+      "Story map"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-008",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does backlog refinement mainly do?",
+    "explanation": "Refinement clarifies backlog items, prioritizes them, decomposes them as needed and sizes them collectively. The others describe a review, iteration planning and a retrospective.",
+    "options": [
+      "Clarify, split and size items",
+      "Plan the work for the iteration",
+      "Improve how the team works",
+      "Inspect the increment with stakeholders"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-009",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which measure do the Agile Manifesto principles call the primary measure of progress?",
+    "explanation": "The principle reads that working software is the primary measure of progress. The other phrases come from other principles.",
+    "options": [
+      "Face-to-face conversation",
+      "Customer satisfaction",
+      "Technical excellence",
+      "Working software"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-010",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two impediments block the team at once. How should they be handled?",
+    "explanation": "The outline says to prioritize impediment removal and risk mitigation activities, which means ranking by impact on the goal.",
+    "options": [
+      "Rank them by cost to remove",
+      "Rank them by how long they waited",
+      "Rank them by impact on the goal",
+      "Rank them by a team vote"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-011",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a short daily team synchronization mainly provide?",
+    "explanation": "Daily synchronization makes progress and impediments visible to the whole team. Sprint planning, the review and the retrospective cover the others.",
+    "options": [
+      "Reflection on the team's process",
+      "Progress and blockers in view",
+      "Review of the finished increment",
+      "A plan for the whole sprint"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-012",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which emotional intelligence skill helps most when a teammate is frustrated?",
+    "explanation": "Emotional intelligence techniques increase empathy, which lets the practitioner understand the frustration before trying to resolve it.",
+    "options": [
+      "Self-motivation",
+      "Social skill",
+      "Self-regulation",
+      "Empathy"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-013",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 1: Seek early feedback",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two practices help evaluate customer satisfaction during delivery? (Choose two.)",
+    "explanation": "Demos and short surveys ask customers directly how the product is working for them. Code size, hours and the contract say nothing about satisfaction.",
+    "options": [
+      "Rereading the original contract",
+      "Counting lines of code",
+      "Short surveys after use",
+      "Tracking developer hours",
+      "Regular demos to customers"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T2-014",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A blocker has sat on the board for a week with no owner. Which outline enabler is not being met?",
+    "explanation": "Facilitating problem resolution includes ensuring problems are resolved in a timely manner. An unowned week-old blocker fails that.",
+    "options": [
+      "Refining the product backlog",
+      "Timely problem resolution",
+      "Radiating metrics to all",
+      "Limiting work in progress"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-015",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which estimation technique uses anonymous rounds of estimates with discussion in between?",
+    "explanation": "Wideband Delphi gathers estimates anonymously, discusses the spread and repeats until they converge.",
+    "options": [
+      "T-shirt sizing",
+      "Planning poker",
+      "Wideband Delphi",
+      "Ideal days"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-016",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A live outage is spreading and nobody yet knows why. Which response fits first?",
+    "explanation": "A chaotic situation needs immediate stabilizing action before anything else. Experiments and expert analysis come once the situation is under control.",
+    "options": [
+      "Act to stabilize, then assess",
+      "Wait for the root cause report",
+      "Gather experts to analyze it",
+      "Run several small experiments"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-017",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a team do in a pre-mortem?",
+    "explanation": "A pre-mortem asks the team to imagine the project has failed and work out why, so risks surface before they happen. The others describe a retrospective, the five whys and value stream mapping.",
+    "options": [
+      "Reviews what happened last sprint",
+      "Imagines failure and asks why",
+      "Asks why five times in a row",
+      "Maps the steps from idea to customer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-018",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A junior developer spots a flaw in a senior's design but stays quiet. What does this suggest?",
+    "explanation": "When people are afraid to speak up about a problem they have seen, the team lacks psychological safety. A review process or roles would not explain the silence.",
+    "options": [
+      "Low psychological safety",
+      "Unclear team roles",
+      "Weak design review process",
+      "Low team engagement"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-019",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team's self-assessment shows weak testing skills. Who should own the plan to improve them?",
+    "explanation": "Self-assessment output is used to help the team develop its own capabilities, so the team owns the plan and the practitioner supports it.",
+    "options": [
+      "The test manager, with HR",
+      "The coach, with the team's input",
+      "The product owner, with the team",
+      "The team, with the coach's help"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-020",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which metric is the count of work items finished per unit of time?",
+    "explanation": "The Kanban Guide defines throughput as the number of work items finished per unit of time.",
+    "options": [
+      "Work item age",
+      "Lead time",
+      "Throughput",
+      "Cycle time"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-021",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A story is vague and the team cannot size it. What should happen?",
+    "explanation": "Clarifying the backlog item comes before sizing or splitting it. When the need itself is unclear, the product owner can clarify it directly, which is faster than a spike.",
+    "options": [
+      "Clarify it with the owner",
+      "Size it as an epic",
+      "Split it into smaller stories",
+      "Run a spike to explore it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-022",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When does knowledge sharing work best on an agile team?",
+    "explanation": "The outline asks practitioners to allocate time for knowledge sharing and the updates it needs. Sharing squeezed into spare time rarely happens.",
+    "options": [
+      "When it happens at each release",
+      "When time is set aside for it",
+      "When the experts lead it",
+      "When it is saved for the end"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-023",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A regulated project needs fixed compliance documents but has uncertain software features. Which approach fits?",
+    "explanation": "Practitioners integrate models based on need: plan-driven work for the fixed, regulated deliverables and iterative work for the uncertain features.",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "Hybrid approach",
+      "Predictive approach"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-024",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk on the backlog has a 40% probability and would cost 25 story points. What is its exposure in points?",
+    "explanation": "Risk exposure is probability times impact: 0.4 times 25 is 10 points, which is how a risk-adjusted backlog ranks risk work against features. 25 ignores the probability.",
+    "options": [
+      "10",
+      "15",
+      "25",
+      "65"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T2-025",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should a team measure the delivery of value from its increments?",
+    "explanation": "Value is measured by outcomes such as customer satisfaction or increased sales, not by what was built or how fast.",
+    "options": [
+      "Points delivered per sprint",
+      "Features users asked for",
+      "Defects found after release",
+      "Outcomes for users"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-026",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How should constructive feedback be given?",
+    "explanation": "Useful feedback is specific, close to the event and about behavior rather than personality. Wrapping it in praise blurs it, and saving it or writing it up delays it.",
+    "options": [
+      "Saved for a one-to-one meeting",
+      "In writing, so there is a record",
+      "Balanced, with praise around it",
+      "Specific, timely and about behavior"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-027",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which practice promotes collective ownership of goals?",
+    "explanation": "Collective ownership comes from the whole team committing to one goal. Velocity targets, skills matrices and role rotation serve other purposes.",
+    "options": [
+      "A team skills matrix",
+      "Team rotation of roles",
+      "A single team commitment",
+      "Team-wide velocity targets"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-028",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a team radiate its metrics to the relevant audience?",
+    "explanation": "Radiating metrics makes the same information visible to everyone who decides, so metric insights can drive decisions. Velocity is not comparable across teams.",
+    "options": [
+      "So decisions use the same data",
+      "So the team can self-organize",
+      "So stakeholders trust the plan",
+      "So velocity can be compared"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-029",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team new to agile wants to drop retrospectives in its second week. What should the practitioner do?",
+    "explanation": "The practitioner evaluates the team's understanding and tailors the approach, and a team two weeks in has not yet seen the value of reflection. Shortening, skipping or stepping away before they understand it weakens the learning loop.",
+    "options": [
+      "Shorten them to fifteen minutes each",
+      "Keep them and explain their purpose",
+      "Hold them every other sprint",
+      "Let the team run them without you"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-030",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is an example of an organizational knowledge asset?",
+    "explanation": "Organizational knowledge assets include lessons, people and processes from similar initiatives that a team can reuse.",
+    "options": [
+      "The team's working agreement",
+      "This sprint's burndown chart",
+      "The current sprint backlog",
+      "Lessons from similar work"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-031",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a minimal marketable feature?",
+    "explanation": "An MMF is the smallest unit of functionality that has value to the market on its own. The others describe an MVP, a spike and a persona.",
+    "options": [
+      "Smallest slice with real market value",
+      "Smallest build that tests a hypothesis",
+      "Fictional user standing for a group",
+      "Short experiment on a technical unknown"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-032",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which is an example of non-value-added work?",
+    "explanation": "Time spent waiting adds nothing the customer values. Building, testing and demonstrating the product do.",
+    "options": [
+      "Demoing to the customer",
+      "Testing a new feature before release",
+      "Waiting for approval signatures",
+      "Writing code a customer needs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-033",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technique starts from users' needs, prototypes ideas and tests them with users quickly?",
+    "explanation": "The outline names design thinking as a way to shorten feedback: empathize with users, prototype and test quickly. Lean startup centers on build, measure and learn for a business idea.",
+    "options": [
+      "Value stream mapping",
+      "Design thinking",
+      "Kanban",
+      "Lean startup"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-034",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a coach mainly do that a trainer does not?",
+    "explanation": "Coaching draws out the person's own thinking and solutions. A trainer teaches defined content or shows the technique, and sharing career lessons is closer to mentoring.",
+    "options": [
+      "Share lessons from their own career",
+      "Show people the right technique",
+      "Teach a defined course of content",
+      "Help people find their own answers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-035",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five items took 2, 4, 3, 6 and 5 days from start to finish. What is the average cycle time in days?",
+    "explanation": "Average cycle time is the total, 20 days, divided by 5 items, which is 4 days. 20 is the total, not the average.",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "20"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T2-036",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Business priorities shift after an increment is finished. What should happen next?",
+    "explanation": "Increments stay aligned with business priorities, so the goal of the next one is redefined when priorities change. The vision and velocity need not change.",
+    "options": [
+      "Reset the release date",
+      "Reset the next increment's goal",
+      "Reset the overall product vision",
+      "Reset the team's velocity"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-037",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which collaboration practice best breaks down a silo between developers and testers?",
+    "explanation": "Pairing has developers and testers do the work together, which builds shared ownership. Standups, environments and syncs keep two groups handing work over.",
+    "options": [
+      "A joint daily standup",
+      "A shared test environment",
+      "Pairing developers with testers",
+      "A weekly integration sync"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-038",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Kanban flow metric keeps rising while partly done work sits untouched?",
+    "explanation": "Work item age is the time since an unfinished item started, so it grows every day the item waits. Cycle time is only known once the item finishes.",
+    "options": [
+      "Work item age",
+      "Throughput",
+      "Velocity",
+      "Cycle time"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-039",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 4: Promote agile principles and practices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A practitioner explains the manifesto to a new department. Which outline enabler is this?",
+    "explanation": "Under Promote Agile Mindset Principles and Practices the outline lists creating awareness around the agile values and principles, fostering continuous improvement and recognizing agile behavior.",
+    "options": [
+      "Foster continuous improvement",
+      "Create awareness around agile values",
+      "Recognize and celebrate agile behavior",
+      "Promote a no-blame culture"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-040",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 3: Visualize work",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team's tracking data is updated only at month end. Which outline enabler is missing?",
+    "explanation": "Under Visualize Work the outline says to establish a process to update the data and statistics, so the visual picture stays current.",
+    "options": [
+      "A process to keep data current",
+      "Measuring the delivery of value",
+      "Limiting work in progress",
+      "Radiating metrics to the audience"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-041",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Six weeks of budget remain. Item A gives 30 value points for 10 effort, B gives 24 for 6, C gives 40 for 20. What is the highest value per effort point?",
+    "explanation": "Value per effort is A 30 / 10 = 3, B 24 / 6 = 4 and C 40 / 20 = 2, so B goes first with 4. Taking the most valuable item, C, first spends the budget on the lowest return.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-T2-042",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Team members are taking sides and refusing to work together. What does this show about the conflict?",
+    "explanation": "Conflict that has spread into camps and broken cooperation is at a high level and needs more direct facilitation than an everyday problem would.",
+    "options": [
+      "It is healthy debate about ideas",
+      "It is a minor misunderstanding",
+      "It is a normal problem to solve",
+      "It has reached a high level"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-043",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A manager compares two teams by their velocity. What is the problem?",
+    "explanation": "Story points are relative to the team that estimates them, so velocity does not compare across teams.",
+    "options": [
+      "Velocity is a measure of cost",
+      "Velocity counts only hours worked",
+      "Each team sizes points its own way",
+      "Velocity must stay inside the team"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-044",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team's retrospective actions are never carried out. What should change?",
+    "explanation": "A small number of owned, visible actions is more likely to happen than a long list. More meetings, facilitator-owned actions or a charter entry do not get the work done.",
+    "options": [
+      "Let the facilitator own the actions",
+      "Choose fewer actions and track them",
+      "Add the actions to the team charter",
+      "Hold the retrospective more often"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-045",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 5: Perform continuous improvements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team tried a new code review rule last iteration. Where should it judge whether the rule helped?",
+    "explanation": "Continuous improvement includes evaluating each process change, and the retrospective is where the team inspects its own process.",
+    "options": [
+      "At the retrospective",
+      "At the daily standup",
+      "At backlog refinement",
+      "At the sprint review"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-046",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 3: Visualize work",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the main purpose of visualizing work?",
+    "explanation": "Visualization makes the state of work, queues and blockers visible to everyone so the team can act on them.",
+    "options": [
+      "Track each person's hours worked",
+      "Record the team's estimates",
+      "Show the sponsor the plan",
+      "Expose flow, queues and blockers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-047",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 5: Promote shared vision and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new feature request does not fit the product vision. Which outline task guides the response?",
+    "explanation": "Promote shared vision and purpose includes ensuring the product is always aligned to the vision and organizational goals, so the request is weighed against the vision first.",
+    "options": [
+      "Recognize and eliminate waste",
+      "Perform continuous improvements",
+      "Promote shared vision and purpose",
+      "Manage impediments and risk"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-048",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team learns that users ignore half the planned features. What should it do?",
+    "explanation": "Embracing change includes adapting to product needs based on learning and feedback. Finishing or promoting features users ignore adds waste, and waiting for a survey delays the response.",
+    "options": [
+      "Finish the planned features first",
+      "Survey users at the next release",
+      "Adapt the product to how it is used",
+      "Add onboarding for the unused features"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-049",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two members disagree on a technical approach. What should the practitioner do?",
+    "explanation": "A collaborative approach gets both people to evaluate the options together against what the team is trying to achieve. A vote, a compromise or a merge skips that evaluation.",
+    "options": [
+      "Ask the team to vote between them",
+      "Help them weigh both by the goal",
+      "Ask them to merge both ideas",
+      "Ask them to agree a compromise"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-050",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer rarely attends reviews. What should the practitioner do?",
+    "explanation": "The outline says to encourage collaboration between customer and team. Finding a format that works for the customer keeps them engaged; a proxy or recording is a fallback, not the first move.",
+    "options": [
+      "Find a format they can join",
+      "Ask a proxy to stand in",
+      "Send recorded demos instead",
+      "Hold reviews less often"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-051",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which factor matters most when choosing how several teams coordinate?",
+    "explanation": "The outline lists key factors for choosing an inter-team approach such as a scrum of scrums or team of teams; how tightly the teams' work depends on each other drives how much coordination is needed.",
+    "options": [
+      "Where each team is located",
+      "How mature each team is",
+      "How often each team releases",
+      "Dependencies in their work"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-052",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which metric helps a team see whether its flow is improving?",
+    "explanation": "The outline says to use metrics to analyze and improve flow. A falling cycle time shows items move through faster; velocity and burndowns track capacity and progress.",
+    "options": [
+      "Velocity trend",
+      "Sprint burndown",
+      "Story points planned",
+      "Cycle time trend"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-T2-053",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A team is building a patient records feature. Which two belong in its definition of value? (Choose two.)",
+    "explanation": "The outline lists success criteria, sustainability, security, privacy, regulatory and compliance needs as parts of defining value.",
+    "options": [
+      "Team's favorite language",
+      "Office location",
+      "Privacy protections",
+      "Regulatory compliance",
+      "Sprint length"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T2-054",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 5: Promote shared vision and purpose",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two practices keep a product vision alive during delivery? (Choose two.)",
+    "explanation": "Continuously communicating the vision keeps it guiding decisions. A vision filed away or changed every sprint stops guiding anything.",
+    "options": [
+      "Change it each sprint",
+      "File it in the original charter",
+      "Share it only with the sponsor",
+      "Display it where the team works",
+      "Revisit it at each planning session"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T2-055",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement reflects a growth mindset?",
+    "explanation": "A growth mindset treats ability as something that develops through effort and feedback, which is why agile teams can respond to change.",
+    "options": [
+      "Talent is mostly fixed at hiring",
+      "Experts no longer need feedback",
+      "Skills improve with effort and feedback",
+      "Mistakes show a lack of natural ability"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-T2-056",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A developer hesitates to try a new technique for fear of slowing the sprint. How should the practitioner respond?",
+    "explanation": "Motivating people to experiment means giving them space to try now, accepting some short-term cost for learning. Delaying it or adding conditions discourages the risk.",
+    "options": [
+      "Pair them with a senior first",
+      "Let them try it this sprint",
+      "Suggest a spike next sprint",
+      "Ask the team to agree it first"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-T2-057",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should write the acceptance criteria for a story?",
+    "explanation": "Acceptance criteria describe what the customer needs, so they are written by the customer or its representative together with the team before work starts.",
+    "options": [
+      "Customer, with the team",
+      "Testers, before coding",
+      "Scrum Master, at planning",
+      "Developers, during the sprint"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-T2-058",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two actions help a team build a shared vision? (Choose two.)",
+    "explanation": "A shared vision comes from writing the purpose together and confirming it with stakeholders. A vision handed down, borrowed or delayed is not shared.",
+    "options": [
+      "Agree the vision with stakeholders",
+      "Copy another team's charter",
+      "Write a short purpose statement together",
+      "Let the lead set it alone",
+      "Wait until the first release"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T2-059",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two practices improve flow? (Choose two.)",
+    "explanation": "Smaller batches and WIP limits keep items moving. Starting more, adding handoffs and multitasking create queues.",
+    "options": [
+      "Add handoffs between roles",
+      "Start more items at once",
+      "Limit work in progress",
+      "Multitask across projects",
+      "Reduce batch sizes"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-T2-060",
+    "section": "acp",
+    "test": 2,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A release meets all acceptance criteria, but sales stay flat against the target. What does this show?",
+    "explanation": "Meeting acceptance criteria shows the work was built as agreed. Value delivery is confirmed only when targeted results such as sales are achieved.",
+    "options": [
+      "The product needs a new roadmap",
+      "Intended results are not yet met",
+      "The team should re-test the release",
+      "The release met its value goal"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-001",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each situation to the response that fits it.",
+    "explanation": "Ordered problems are clear or discoverable through analysis, complex ones are understood only by interacting with them, and chaos needs immediate stabilizing action.",
+    "rows": [
+      "Cause and effect are obvious to all",
+      "Experts can work out the cause",
+      "Patterns show only by trying things",
+      "Crisis with no time to think"
+    ],
+    "columns": [
+      "Apply known practice",
+      "Analyze, then act",
+      "Probe with experiments",
+      "Act to stabilize"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-002",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Osmotic communication works best when the team is working in which setting?",
+    "explanation": "Osmotic communication is information picked up in the background by people working near each other, so it depends on co-location.",
+    "options": [
+      "Using a shared online board",
+      "Writing everything down",
+      "Sitting together in one space",
+      "Holding a daily standup"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-003",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each need to the approach that fits it.",
+    "explanation": "The outline asks practitioners to recognize the difference between training, coaching and mentoring and when to use each.",
+    "rows": [
+      "Learn a specific new skill",
+      "Find their own way through a problem",
+      "Long-term guidance from someone experienced"
+    ],
+    "columns": [
+      "Training",
+      "Coaching",
+      "Mentoring"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-004",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "After finding a defect's root cause, which action stops it coming back?",
+    "explanation": "Removing the cause is what stops the problem returning. A better test catches a repeat, and a new reviewer moves the problem, but neither removes the cause.",
+    "options": [
+      "Change the process that let it in",
+      "Change who reviews that code",
+      "Change the test that missed it",
+      "Change the defect's priority"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-005",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each estimation technique to its description.",
+    "explanation": "These are relative sizing techniques from the outline's agile estimation list.",
+    "rows": [
+      "Cards shown at once, then discussed",
+      "Items grouped by size on a wall",
+      "Sizes such as S, M, L and XL"
+    ],
+    "columns": [
+      "Planning poker",
+      "Affinity estimating",
+      "T-shirt sizing"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-006",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a burndown chart show?",
+    "explanation": "A burndown chart plots the work left against time. A burnup shows completed against total scope, a cumulative flow diagram shows states, and a risk burn down shows exposure.",
+    "options": [
+      "Scope completed against total scope",
+      "Items in each workflow state",
+      "Risk exposure by iteration",
+      "Work remaining over time"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-007",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is an architectural spike?",
+    "explanation": "An architectural spike is a short experiment to prove or rule out a technical approach. The others describe an MVP, an MMF and a pre-mortem.",
+    "options": [
+      "Workshop that imagines failure",
+      "Smallest feature with market value",
+      "Smallest product that tests demand",
+      "Short experiment to test a design"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-008",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What do the manifesto principles call simplicity?",
+    "explanation": "The principle defines simplicity as the art of maximizing the amount of work not done. The other phrases come from other principles.",
+    "options": [
+      "Maximizing the work not done",
+      "Welcoming late changes",
+      "Satisfying the customer early",
+      "Reflecting at regular intervals"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-009",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A distributed team keeps missing decisions made in hallway chats. What helps most?",
+    "explanation": "A communication strategy for distributed teams makes decisions visible where everyone can see them, as they are made. Video calls and standups miss chance hallway talks, and a weekly summary arrives late.",
+    "options": [
+      "Send a weekly decision summary",
+      "Record decisions in a shared channel",
+      "Ask remote staff to join by video",
+      "Move key talks to the daily standup"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-010",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Crossed arms and no eye contact during planning are examples of what?",
+    "explanation": "Interpreting non-verbal cues during team interaction is one of the empowerment enablers in the outline.",
+    "options": [
+      "Active listening",
+      "Team norms",
+      "Non-verbal cues",
+      "Osmotic communication"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-011",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who should take part in choosing how to resolve a problem the team is facing?",
+    "explanation": "The outline says resolution strategies are determined with the team, which knows the work best and will carry them out.",
+    "options": [
+      "The team's managers together",
+      "The team itself",
+      "The agile coaches as a group",
+      "The product owner and stakeholders"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-012",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is ideal time in agile estimation?",
+    "explanation": "Ideal time is how long work would take with no interruptions or other duties, which is why it differs from elapsed time.",
+    "options": [
+      "Elapsed calendar time",
+      "Story points per sprint",
+      "Time from request to delivery",
+      "Time with no interruptions"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-013",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which metric is the elapsed time from when an item starts until it finishes?",
+    "explanation": "The Kanban Guide defines cycle time as the elapsed time between when a work item started and when it finished.",
+    "options": [
+      "Throughput",
+      "Velocity",
+      "Cycle time",
+      "Takt time"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-014",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An impediment is outside the team's control. What should the practitioner do?",
+    "explanation": "Managing impediments includes monitoring and controlling them; when one is outside the team's control, removing it needs people outside the team. Swarming works only on impediments inside the team's control.",
+    "options": [
+      "Get help from outside the team",
+      "Swarm on it as a team",
+      "Log it on the board and wait",
+      "Raise it at the retrospective"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-015",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does the Agile Manifesto treat comprehensive documentation?",
+    "explanation": "The manifesto values working software over comprehensive documentation. Collaboration is valued over contract negotiation, responding to change over a plan, and individuals over processes and tools.",
+    "options": [
+      "Valued less than collaboration",
+      "Valued less than responding to change",
+      "Valued less than individuals",
+      "Valued less than working software"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-016",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 4: Build transparency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why establish a regular feedback loop within the team?",
+    "explanation": "Frequent feedback inside the team surfaces problems early, when they are cheap to fix.",
+    "options": [
+      "To catch problems early",
+      "To keep stakeholders up to date",
+      "To refine the product backlog",
+      "To measure each person's output"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-017",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Assigning tasks to members of a self-organizing team most directly undermines which outline enabler?",
+    "explanation": "When someone else hands out the work, members stop owning it. Promoting collective ownership of goals is an Empower Teams enabler.",
+    "options": [
+      "Establish a feedback loop",
+      "Promote collective ownership of goals",
+      "Limit work in progress",
+      "Radiate metrics to the team"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-018",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 2: Facilitate problem resolution",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A root cause analysis keeps stopping at 'human error'. What should the facilitator ask?",
+    "explanation": "Human error is a symptom. Asking what in the system made the error likely leads to the cause; training and sign-offs are fixes chosen before the cause is known.",
+    "options": [
+      "Whether more training is needed",
+      "Who made the error",
+      "What made the error easy to make",
+      "Whether to add a sign-off step"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-019",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a user story map arrange stories?",
+    "explanation": "A story map lays stories out along the steps a user takes, with priority shown top to bottom. Workflow columns are a Kanban board, the four groups are MoSCoW, and size groups are affinity estimating.",
+    "options": [
+      "Along the user journey",
+      "Grouped by similar size",
+      "In columns by workflow state",
+      "In must, should, could, won't"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-020",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is work item age?",
+    "explanation": "The Kanban Guide defines work item age as the elapsed time between when a work item started and the current date. Start to finish is cycle time, request to delivery is lead time, and items per week is throughput.",
+    "options": [
+      "Items finished per week",
+      "Time since an open item started",
+      "Time from request to delivery",
+      "Time from start to finish"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-021",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 3: Manage impediments and risk",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which outline enabler covers using past problems to keep risks from repeating?",
+    "explanation": "Under Manage Impediments and Risk the outline says to use lessons learned to avoid risks and impediments recurring.",
+    "options": [
+      "Monitor and control risks",
+      "Prioritize risk mitigation",
+      "Proactively identify risks",
+      "Use lessons learned to avoid recurrence"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-022",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 1: Experiment early",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team member's experiment fails. How should the practitioner respond?",
+    "explanation": "Creating an environment to innovate and learn means treating a failed experiment as learning to share first. Rushing another, logging it as a risk or adding approval skips that.",
+    "options": [
+      "Seek approval before the next one",
+      "Try a better version straight away",
+      "Share what was learned with the team",
+      "Add the result to the risk register"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-023",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is a no-blame culture meant to encourage?",
+    "explanation": "A no-blame culture means people are not punished for honest mistakes, so they report them early. Fewer, faster or cheaper mistakes may follow, but open reporting is what it encourages.",
+    "options": [
+      "Faster fixing of mistakes",
+      "Lower cost of mistakes",
+      "Fewer mistakes overall",
+      "Open reporting of mistakes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-024",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What do the manifesto principles say to do for motivated individuals?",
+    "explanation": "The principle says to build projects around motivated individuals, give them the environment and support they need, and trust them to get the job done. The others come from other principles.",
+    "options": [
+      "Talk face to face",
+      "Reflect at regular intervals",
+      "Give support and trust them",
+      "Keep a constant pace"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-025",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which event does an agile team mainly use to capture lessons learned?",
+    "explanation": "The outline names retrospectives as an environment to capture and share knowledge, such as lessons learned for continuous improvement.",
+    "options": [
+      "Daily standup",
+      "Retrospective",
+      "Backlog refinement",
+      "Sprint review"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-026",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why should everyone who will do the work take part in sizing it?",
+    "explanation": "Collective sizing brings out what each person knows about the work, so hidden effort and risk come to light. Velocity is never comparable across teams.",
+    "options": [
+      "Different views surface hidden work",
+      "Estimates line up with the budget",
+      "The product owner can set the size",
+      "Velocity becomes comparable across teams"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-027",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers are deciding which stuck item to help with today. Which metric serves them best?",
+    "explanation": "Metrics must fit their audience. Work item age shows which items are getting old right now, which is what the developers need.",
+    "options": [
+      "Quarterly throughput trend",
+      "Release burnup chart",
+      "Work item age on the board",
+      "Average velocity"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-028",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which outline task includes prioritizing waste reduction activities?",
+    "explanation": "Prioritizing waste reduction activities is an enabler of the Delivery task Recognize and Eliminate Waste, along with visualizing the value stream and iterating on waste.",
+    "options": [
+      "Recognize and eliminate waste",
+      "Perform continuous improvements",
+      "Optimize flow",
+      "Manage impediments and risk"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-029",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 1: Experiment early",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main aim of delivering a working increment early in a project?",
+    "explanation": "An early increment lets the team validate the solution and the market need with real users.",
+    "options": [
+      "Fix scope for later iterations",
+      "Validate the solution with real users",
+      "Show progress to the sponsor",
+      "Prove the chosen architecture works"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-030",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which outline enabler is about questioning the way the team already works?",
+    "explanation": "All four are enablers of Foster Psychological Safety; encouraging people to challenge the status quo is the one about questioning how things are done.",
+    "options": [
+      "Solicit constructive feedback",
+      "Promote a no-blame culture",
+      "Encourage dialogue over debate",
+      "Encourage challenging the status quo"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-031",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team member is struggling but too proud to ask for help. Which skill helps the practitioner notice?",
+    "explanation": "Social awareness is the part of emotional intelligence that reads how others feel. The other three are about managing and knowing oneself.",
+    "options": [
+      "Self-regulation",
+      "Self-awareness",
+      "Social awareness",
+      "Self-motivation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-032",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One specialist is the only person who understands the deployment scripts. What reduces this risk?",
+    "explanation": "Pairing spreads working knowledge so the team is not dependent on one person. Documents help but go stale, and a backup or freeze leaves the gap in place.",
+    "options": [
+      "Give them a backup on call",
+      "Freeze changes to the scripts",
+      "Document the scripts in detail",
+      "Pair others with them on it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-033",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 1: Refine product backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is a persona used for in agile analysis?",
+    "explanation": "A persona is a fictional user who stands for a group of real users. A user story describes a need, a journey or story map shows steps, and a prototype tests an idea.",
+    "options": [
+      "Describing a need from a user's view",
+      "Representing a type of user",
+      "Testing a design idea quickly",
+      "Showing a user's steps in order"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-034",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Planned value is 50,000 and earned value is 40,000. What is the SPI?",
+    "explanation": "SPI is earned value divided by planned value: 40,000 divided by 50,000 is 0.8, meaning the project is behind schedule.",
+    "options": [
+      "0.2",
+      "0.8",
+      "1.25",
+      "10"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-D-035",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Recognize and Eliminate Waste enabler is about keeping the work going over time?",
+    "explanation": "The outline lists four enablers for this task; iterating on the identification and reduction of waste is the one that makes it ongoing.",
+    "options": [
+      "Iterate on finding and reducing waste",
+      "Prioritize waste reduction",
+      "Use metrics to identify waste",
+      "Visualize the end-to-end flow"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-036",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which behavior best shows an agile mindset?",
+    "explanation": "An agile mindset adapts to learning and feedback, even when it means leaving an agreed plan or process.",
+    "options": [
+      "Changing course on new evidence",
+      "Finishing what was committed",
+      "Holding to the agreed process",
+      "Keeping the sprint plan intact"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-037",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 5: Foster psychological safety",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The team tells a practitioner their meetings run long. Which psychological safety enabler covers what the practitioner does next?",
+    "explanation": "Under Foster Psychological Safety the outline says to solicit and provide constructive feedback and act on it, so the practitioner now changes the meetings and checks whether it helped. Dialogue over debate is about how discussions run, not about responding to feedback.",
+    "options": [
+      "Encourage dialogue over debate",
+      "Promote a no-blame culture",
+      "Act on feedback received",
+      "Challenge the status quo"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-038",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the first step in managing a team conflict?",
+    "explanation": "The outline puts identifying the root cause and level of the conflict first, then promoting a collaborative way to solve it.",
+    "options": [
+      "Bring both people together at once",
+      "Set ground rules for the team",
+      "Remind them of the working agreement",
+      "Find its root cause and level"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-039",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 3: Promote knowledge sharing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A team wants lessons from its retrospectives to reach other teams. What helps most?",
+    "explanation": "A community of practice is an environment to capture and share knowledge across teams, where people discuss and apply it. Newsletters, reviews and emails broadcast it once.",
+    "options": [
+      "Post them in the company newsletter",
+      "Share them in a community of practice",
+      "Email them to all team leads",
+      "Present them at the sprint review"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-040",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement fits an increment in agile delivery?",
+    "explanation": "An increment is a working, usable piece of the product that adds value. The others describe an iteration backlog, the product backlog and the definition of done.",
+    "options": [
+      "The ordered list of all work",
+      "The plan for one iteration",
+      "The quality bar for done work",
+      "Usable and of value on its own"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-041",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team's defect rate rises every iteration. What should it do with that metric?",
+    "explanation": "Metric insights are used for decision making. Radiating it helps, but only a decision on an improvement changes the trend.",
+    "options": [
+      "Add a quality item each sprint",
+      "Use it to choose an improvement",
+      "Compare it with other teams",
+      "Show it on the information radiator"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-042",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 4: Recognize and eliminate waste",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which pattern on a cumulative flow diagram points to a growing queue?",
+    "explanation": "A widening band means items enter that state faster than they leave it, so work is piling up.",
+    "options": [
+      "A narrow In Progress band",
+      "A steadily rising Done band",
+      "A band that keeps widening",
+      "Parallel, even bands"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-043",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "According to the manifesto principles, where do the best architectures and designs emerge?",
+    "explanation": "The principle reads that the best architectures, requirements and designs emerge from self-organizing teams.",
+    "options": [
+      "Self-organizing teams",
+      "Detailed upfront modeling",
+      "Architecture review boards",
+      "Senior individual architects"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-044",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the main benefit of shorter iterations?",
+    "explanation": "Short iterations put working product in front of stakeholders more often, so the team learns sooner whether it is on track. They do not raise velocity or make long-range plans exact.",
+    "options": [
+      "Faster feedback on the product",
+      "More accurate long-range plans",
+      "Higher team velocity",
+      "Less testing per release"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-045",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should the practitioner step in directly on a disagreement within the team?",
+    "explanation": "Disagreement about ideas is healthy and the team can handle it. Conflict that turns personal or harms people needs the practitioner to facilitate.",
+    "options": [
+      "When it slows the sprint",
+      "When a decision is overdue",
+      "When it turns personal or harmful",
+      "Whenever any two people disagree"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-046",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 4: Promote agile principles and practices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should a practitioner foster continuous improvement?",
+    "explanation": "Continuous improvement means frequent, small adjustments made by the team, not planned programs, rollouts or changes made only after things get worse.",
+    "options": [
+      "Changes once metrics drop",
+      "Quarterly improvement programs",
+      "A full framework rollout",
+      "Small, frequent team changes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-047",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 2: Manage increments",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the purpose of a product roadmap?",
+    "explanation": "A roadmap communicates where the product is heading and roughly when. Boards, burndowns and story maps show other things.",
+    "options": [
+      "Show each user's journey",
+      "Show planned direction over time",
+      "Show the work in each state",
+      "Show the work left in a sprint"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-048",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 1: Seek early feedback",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why deliver work in small increments?",
+    "explanation": "Small increments let the team learn from each one before building the next, which is why the outline pairs them with seeking early feedback.",
+    "options": [
+      "Each is easier to estimate",
+      "Each gets feedback before the next",
+      "Each lowers the cost of testing",
+      "Each fits a fixed contract"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-049",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 5: Perform continuous improvements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is an intraspective?",
+    "explanation": "An intraspective is a short reflection held during the iteration, when the team needs to improve without waiting for the retrospective.",
+    "options": [
+      "Reflection held mid-iteration",
+      "A one-to-one with a manager",
+      "Review held after the release",
+      "A stakeholder demo"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-050",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly formed group is polite and never pushes back on ideas. What helps it develop?",
+    "explanation": "A team that avoids disagreement has not yet built enough trust to perform well. Facilitating honest debate helps it through that stage; norms, roles and an offsite do not by themselves.",
+    "options": [
+      "Plan a team-building offsite",
+      "Agree team norms for meetings",
+      "Clarify each member's role",
+      "Facilitated debate of real issues"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-051",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stakeholder will see the product only at the final release. What risk does this create?",
+    "explanation": "Without early reviews, mistakes in what was built surface only at the end, when they are most expensive to fix.",
+    "options": [
+      "Scope growth at the end",
+      "A drop in team morale",
+      "Late discovery of wrong work",
+      "Late integration defects"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-052",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A dispute over priorities keeps coming back. What does a collaborative approach look for?",
+    "explanation": "Collaboration looks past stated positions to the underlying interests both parties share, which is what makes a lasting solution possible.",
+    "options": [
+      "A fair split of the work",
+      "The product owner's ruling",
+      "Interests both sides share",
+      "Each side's stated position"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-053",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 4: Promote agile principles and practices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which behavior should a practitioner celebrate to reinforce agile values?",
+    "explanation": "Early delivery of value is an agile behavior worth reinforcing. Overloading, racing teammates or chasing estimates are not.",
+    "options": [
+      "Hitting every sprint estimate",
+      "Taking on extra stories",
+      "Finishing ahead of the others",
+      "Delivering a small slice early"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-054",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 3: Visualize work",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a cumulative flow diagram show?",
+    "explanation": "A cumulative flow diagram stacks the count of items in each workflow state over time, so widening bands reveal queues.",
+    "options": [
+      "Work in each state over time",
+      "Points finished per iteration",
+      "Scope done against total scope",
+      "Work left in the sprint by day"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-055",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 1: Seek early feedback",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Feedback from a stakeholder contradicts the product owner's plan. What should happen?",
+    "explanation": "Feedback is collected and incorporated. The product owner weighs it and changes the backlog where it adds value, rather than deferring it or adding it unweighed.",
+    "options": [
+      "Raise it at the next review",
+      "Weigh it and adjust the backlog",
+      "Ask the sponsor to rule on it",
+      "Add it as a top-priority story"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-056",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 5: Perform continuous improvements",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What do control limits on a run chart help a team see?",
+    "explanation": "Control limits mark the range of normal variation, so points outside them signal a change worth investigating.",
+    "options": [
+      "Work in progress per column",
+      "Time left in the iteration",
+      "Items finished per week",
+      "Unusual process variation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-057",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who should write the working agreement for a group of developers?",
+    "explanation": "Working agreements are created by the people who will follow them, so they own and keep them.",
+    "options": [
+      "The team and the product owner",
+      "The team and its manager",
+      "Everyone it applies to",
+      "The team's senior members"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-058",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 6: Shorten feedback loops",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How often do the manifesto principles say working software should be delivered?",
+    "explanation": "The principle says to deliver working software frequently, from a couple of weeks to a couple of months, with a preference for the shorter timescale. The other phrases come from other principles.",
+    "options": [
+      "At a constant, sustainable pace",
+      "Weeks to months, shorter preferred",
+      "At regular intervals, to reflect",
+      "Daily, with business people"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-059",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does empowering a team mean in practice?",
+    "explanation": "Empowered teams decide how they do their work within the goals and constraints they are given. Business priorities and customers stay with the product owner and the organization.",
+    "options": [
+      "It decides how to do its work",
+      "It sets its own business priorities",
+      "It has no work constraints",
+      "It picks its own customers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-060",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 5: Promote shared vision and purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should share an understanding of a product's purpose and vision?",
+    "explanation": "The outline says to ensure a common understanding of the purpose and vision with all stakeholders, inside and outside the organization.",
+    "options": [
+      "The product owner and sponsor",
+      "The whole delivery team",
+      "All stakeholders",
+      "All internal staff only"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-061",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 3: Visualize work",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who should be able to see a team's work board?",
+    "explanation": "Continuously sharing information means the board is open to everyone with an interest in the work.",
+    "options": [
+      "The team and its managers",
+      "The development team only",
+      "The team and the product owner",
+      "Anyone with an interest in it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-062",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How do the manifesto principles say business people and developers should work?",
+    "explanation": "The principle reads that business people and developers must work together daily throughout the project. The other phrases come from other principles.",
+    "options": [
+      "Together daily",
+      "At regular intervals",
+      "Face-to-face",
+      "At a sustainable pace"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-063",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 5: Perform continuous improvements",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which outline enabler says what should drive continuous improvements?",
+    "explanation": "Under Perform Continuous Improvements the outline says to obtain metrics and feedback to drive continuous improvements, then implement actions and evaluate them.",
+    "options": [
+      "Implement improvement actions",
+      "Obtain metrics and feedback",
+      "Visualize the value stream",
+      "Evaluate improvement effectiveness"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-064",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 3: Promote collaborative team environment",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two practices help break down silos between teams? (Choose two.)",
+    "explanation": "Pairing across teams and demonstrating work to each other build shared understanding. Separate backlogs, handoff documents and locked scopes keep teams apart.",
+    "options": [
+      "Formal handoff documents",
+      "Separate team backlogs",
+      "Cross-team pairing",
+      "Shared demos of work",
+      "Locking each team's scope"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-D-065",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Late in development, a valuable new requirement appears. What do the manifesto principles say?",
+    "explanation": "The principle says to welcome changing requirements, even late in development, because agile processes harness change for the customer's competitive advantage.",
+    "options": [
+      "Reject it to protect the agreed schedule",
+      "Defer it to a later project",
+      "Welcome it for the customer's advantage",
+      "Accept it only with a contract change"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-066",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Coaching a team in agile practices aims at what end state?",
+    "explanation": "Good coaching builds the team's own capability, so over time it needs the coach less.",
+    "options": [
+      "The team runs Scrum by the book",
+      "The team no longer needs the coach",
+      "The coach facilitates every event",
+      "The team's velocity rises"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-067",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 5: Promote shared vision and purpose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ensuring the product stays aligned with organizational goals belongs to which outline task?",
+    "explanation": "The Leadership task to promote shared vision and purpose includes ensuring the product is always aligned to the vision and organizational goals.",
+    "options": [
+      "Promote shared vision and purpose",
+      "Facilitate problem resolution",
+      "Facilitate conflict management",
+      "Promote knowledge sharing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-068",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A feature works as designed but leaves customer data exposed. Which part of its value is missing?",
+    "explanation": "The outline includes security and privacy in what value looks like, so a feature with a known exposure has not delivered it.",
+    "options": [
+      "Usability",
+      "Scalability",
+      "Performance",
+      "Security"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-069",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new customer group starts using the product. How should the team engage them?",
+    "explanation": "Actively engaging customers starts with identifying them and analyzing their needs directly, before deciding what to build.",
+    "options": [
+      "Ask sales what they need",
+      "Analyze their needs with them",
+      "Add their requests to the backlog",
+      "Survey them after the release"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-070",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to the Kanban Guide, what does controlling WIP create?",
+    "explanation": "The Kanban Guide says controlling WIP should create a pull system, where work starts only when there is capacity. The definition of workflow and SLE are set by the team, not created by WIP control.",
+    "options": [
+      "A cumulative flow diagram",
+      "A definition of workflow",
+      "A pull system",
+      "A service level expectation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-071",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A suitability check shows unclear requirements and a highly engaged customer. What does that suggest?",
+    "explanation": "Uncertain requirements plus a customer able to give frequent feedback are conditions where adaptive approaches work well. A gated hybrid or fixed scope suits stable, well-understood requirements.",
+    "options": [
+      "Predictive is the better fit",
+      "A gated hybrid fits best",
+      "The scope should be fixed first",
+      "Agile is a good fit"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-072",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Cross-skilling team members mainly reduces which problem?",
+    "explanation": "Cross-skilled members can pick up whatever work is blocking the flow, which removes single-person bottlenecks.",
+    "options": [
+      "Single-person bottlenecks",
+      "Errors in team estimates",
+      "Scope creep late in delivery",
+      "Meeting overload"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-073",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 1: Empower teams",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two signals suggest a team is ready for more autonomy? (Choose two.)",
+    "explanation": "A team that clears its own blockers and delivers reliably on its goals is showing self-management. Waiting for tasks or approval shows the opposite.",
+    "options": [
+      "It skips its retrospectives",
+      "It asks for daily task lists",
+      "It removes its own impediments",
+      "It waits for approval to start",
+      "It meets its sprint goals reliably"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-D-074",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 5: Promote shared vision and purpose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the best way to communicate a product vision?",
+    "explanation": "The outline asks practitioners to continuously communicate the vision and purpose. A kickoff, charter or wiki page is seen once.",
+    "options": [
+      "Present it well at the kickoff",
+      "Put it on the team wiki",
+      "Repeat it often in many settings",
+      "Write it into the team charter"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-075",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which value-based prioritization measure in the outline discounts future cash flows to today's value?",
+    "explanation": "Net present value discounts future benefits and costs to today. ROI compares net benefit with cost without discounting, and earned value measures progress, not prioritization.",
+    "options": [
+      "Net present value",
+      "Payback period",
+      "Return on investment",
+      "Earned value"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PMIACP-D-076",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 6: Actively engage customers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An iteration deliverable misses one of its acceptance criteria. What happens to it?",
+    "explanation": "A deliverable is accepted when it meets its acceptance criteria. Work that does not goes back to the backlog.",
+    "options": [
+      "It ships with a known-issue note",
+      "It goes back to the backlog",
+      "It is split and half accepted",
+      "It is accepted with a follow-up story"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-077",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a service level expectation in Kanban?",
+    "explanation": "The Kanban Guide defines the SLE as a forecast of how long an item should take, with an elapsed time and a probability, based on historical cycle time. The others are throughput, work item age and WIP.",
+    "options": [
+      "Time since an open item started",
+      "Items finished per unit of time",
+      "Count of items started, not finished",
+      "Cycle time forecast with a probability"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-078",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetTeam",
+    "skill": "Mindset 2: Embrace agile mindset",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Scrum team's work now arrives mostly as urgent, unplanned support tickets. What should it consider?",
+    "explanation": "Practitioners integrate agile models based on needs. When most work arrives unplanned, a flow-based method such as Kanban fits better than sprint commitments; a buffer only helps when interruptions are the exception.",
+    "options": [
+      "Keeping a buffer in each sprint",
+      "Holding refinement more often",
+      "Making its sprints longer",
+      "Moving to a flow-based method"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PMIACP-D-079",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpMindsetFlow",
+    "skill": "Mindset 7: Embrace change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retrospective shows the team's estimation method no longer works. What is the agile response?",
+    "explanation": "Embracing change includes adapting the process itself when it no longer serves the team, then checking whether the change helped.",
+    "options": [
+      "Ask the coach to choose one",
+      "Adopt another team's method",
+      "Adapt the method and review it",
+      "Keep it until the release ends"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PMIACP-D-080",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadTeams",
+    "skill": "Leadership 6: Facilitate conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two teams argue over who owns a shared component. What helps most?",
+    "explanation": "Bringing both teams together to agree ownership addresses the cause. Handing the decision or the component elsewhere leaves the teams' disagreement in place.",
+    "options": [
+      "Split ownership by feature",
+      "Facilitate a joint agreement on it",
+      "Hand it to a platform team",
+      "Ask both product owners to decide"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PMIACP-D-081",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpLeadVision",
+    "skill": "Leadership 4: Promote agile principles and practices",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two actions foster an environment for continuous improvement? (Choose two.)",
+    "explanation": "Improvement needs protected time for reflection and the freedom to change how work is done.",
+    "options": [
+      "Reward only output volume",
+      "Fix the process for the year",
+      "Treat process as changeable",
+      "Skip reviews in busy weeks",
+      "Protect time for retrospectives"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-D-082",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpProduct",
+    "skill": "Product 4: Manage value delivery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Feature A gives 8 value points for 4 effort points. Feature B gives 9 for 3. What is B's value per effort point?",
+    "explanation": "Value per effort point for B is 9 divided by 3, which is 3. Feature A gives 2, so B goes first.",
+    "options": [
+      "2",
+      "3",
+      "12",
+      "27"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "PMIACP-D-083",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryValue",
+    "skill": "Delivery 2: Manage agile metrics",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are among the Kanban Guide's mandatory flow metrics? (Choose two.)",
+    "explanation": "The four mandatory flow metrics are WIP, throughput, work item age and cycle time.",
+    "options": [
+      "Throughput",
+      "Velocity",
+      "Work item age",
+      "Story points",
+      "Earned value"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "PMIACP-D-084",
+    "section": "acp",
+    "test": 0,
+    "module": 1,
+    "domain": "acpDeliveryFlow",
+    "skill": "Delivery 7: Optimize flow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should work in progress be limited?",
+    "explanation": "The outline says to limit work in progress at all levels, from tasks up to initiatives.",
+    "options": [
+      "At all levels of work",
+      "Per person on the team",
+      "At the testing stage",
+      "At the team's task level"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]

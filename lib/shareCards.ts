@@ -793,6 +793,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(203, 30%, 26%)",
     "tint": "hsl(203, 30%, 96%)"
   },
+  "ukcemap2": {
+    "color": "hsl(295, 30%, 18%)",
+    "tint": "hsl(295, 30%, 96%)"
+  },
   "sgftt": {
     "color": "hsl(0, 70%, 22%)",
     "tint": "hsl(0, 50%, 95%)"

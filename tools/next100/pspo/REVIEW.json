@@ -1,0 +1,20 @@
+{
+  "exam": "pspo",
+  "date": "2026-11-19",
+  "blind_key_review": {
+    "reviewer": "separate agent, answered all 200 items blind, then compared",
+    "disagreements": 0,
+    "findings": [
+      {"id": "PSPO-T1-073", "severity": "weak", "fix": "answerable from arithmetic; rewritten as a value trade-off needing evidence"},
+      {"id": "PSPO-D-028", "severity": "weak", "fix": "absurd distractors replaced with plausible ordering reasons"},
+      {"id": "PSPO-T1-007", "severity": "weak", "fix": "irrelevant distractors replaced"},
+      {"id": "PSPO-T2-077", "severity": "weak", "fix": "absurd stakeholder distractors; item rewritten"},
+      {"id": "PSPO-T2-036", "severity": "weak", "fix": "explanation now says Product Vision is a Scrum.org term, not a Scrum Guide term"}
+    ]
+  },
+  "options_only": {
+    "rounds": 8,
+    "first": "94% (146/155), 125 surface-cue hits: distractors were anti-Scrum on their face; all distractors rewritten",
+    "final": "81% (126/155), ceiling 82%; 10 S tags, 5 confirmed by a second reader and all 5 fixed (1 rewritten and re-checked clean, 4 replaced by source-knowledge items)"
+  }
+}

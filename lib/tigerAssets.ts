@@ -89,6 +89,8 @@ const BORROWED_SETS: Record<string, string> = {
   cct: "cet",
   contractorlaw: "osha",
   natecore: "epa608",
+  hvacjourney: "epa608",
+  waterop: "epa608",
   r410a: "epa608",
   backflow: "caplumb",
   pesticide: "epa608",
@@ -102,6 +104,8 @@ const BORROWED_SETS: Record<string, string> = {
   cbcs: "cpc",
   hha: "cna",
   istqb: "itil",
+  pspo: "psm",
+  pmiacp: "pmp",
   cobit: "itil",
   ascpmls: "htl",
   ascpht: "htl",
@@ -155,7 +159,7 @@ const BORROWED_SETS: Record<string, string> = {
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",
   // Global certifications and nursing exams wear their nearest US exam's tiger.
-  awssaa: "aws", az900: "aws", ai901: "aws", pl900: "aws", ccna: "aplus", jncia: "aplus", gulfrn: "nclex", uknmc: "nclex", ccrn: "nclex",
+  awssaa: "aws", az900: "aws", ai901: "aws", pl900: "aws", ccna: "aplus", ccnpencor: "aplus", jncia: "aplus", gulfrn: "nclex", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
   phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", linuxplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", securityx: "secplus", ceh: "secplus", sc200: "secplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", isc2cc: "cissp", servicenowcsa: "cissp", sscp: "cissp",
@@ -227,8 +231,8 @@ const BORROWED_SETS: Record<string, string> = {
   cpaaud: "cpafar", accafa: "cpafar", aatl2: "cpafar",
   // Next-20 batch C reuses the reviewed social-work, cybersecurity, project-management, coding,
   // teaching, insurance and mortgage families. Dietitian and HR exams have their own sets above.
-  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", rhia: "cpc", praxis5001: "praxis",
-  fladjuster: "pnc", llqp: "insurance", cemap: "nmls",
+  fpc: "cpafar", titleagent: "realestate", aswbbach: "aswb", aswbclin: "aswb", cisa: "cissp", fortigate: "secplus", cssgb: "pmp", ccs: "cpc", praxis5001: "praxis",
+  fladjuster: "pnc", llqp: "insurance", cemap: "nmls", ukcemap2: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",
   cdm: "rdexam",
@@ -250,6 +254,7 @@ const BORROWED_SETS: Record<string, string> = {
   iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter", caabguard: "caguard", caairbrake: "cdl",
   // Smart Serve Ontario borrows the alcohol server tiger.
   smartserve: "alcohol",
+  proserve: "alcohol",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.

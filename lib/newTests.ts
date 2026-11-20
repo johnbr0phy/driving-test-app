@@ -7,8 +7,8 @@
 // people it brought to Tigertest. Pinned by tests/new-tests.test.cjs.
 
 export const DAY_MS = 86_400_000;
-/** The tab lists this many tests, newest launch first. */
-export const RECENT_TESTS = 200;
+/** The tab lists every launched test, newest launch first (no cap since Nov 20 2026). */
+export const RECENT_TESTS = Infinity;
 
 export type TestPages = { exact: string[]; prefixes: string[] };
 
@@ -51,7 +51,7 @@ export function sumSince(daily: Record<string, number> | undefined, since: strin
   return n;
 }
 
-/** The newest launches first (ties by id), capped at RECENT_TESTS. */
+/** The newest launches first (ties by id), capped at RECENT_TESTS (no cap by default). */
 export function mostRecent<T extends { id: string; day: string }>(launches: T[], limit = RECENT_TESTS): T[] {
   return [...launches].sort((a, b) => b.day.localeCompare(a.day) || a.id.localeCompare(b.id)).slice(0, limit);
 }

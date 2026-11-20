@@ -5653,6 +5653,19 @@
     --brand-border-light: 290 15% 89%;
     --brand-gradient-to: 300 15% 96%;
   }
+  /* HVAC journeyman mechanical theme: galvanized duct slate */
+  [data-theme="hvacjourney"] {
+    --brand: 202 30% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 202 30% 96%;
+    --brand-hover: 202 30% 14%;
+    --brand-dark: 202 30% 12%;
+    --brand-darker: 202 30% 8%;
+    --brand-muted: 202 20% 65%;
+    --brand-border: 202 20% 78%;
+    --brand-border-light: 202 20% 89%;
+    --brand-gradient-to: 212 20% 96%;
+  }
   /* R-410A safety certification theme: gauge violet */
   [data-theme="r410a"] {
     --brand: 287 75% 40%;
@@ -12214,6 +12227,18 @@
     --brand-dark: 276 95% 65%;
     --brand-darker: 276 90% 78%;
   }
+  .dark [data-theme="hvacjourney"] {
+    --brand: 202 30% 44.4%;
+    --brand-hover: 202 30% 36.4%;
+    --brand-light: 202 30% 13%;
+    --brand-gradient-to: 212 20% 11%;
+    --brand-border-light: 202 20% 24%;
+    --brand-border: 202 20% 34%;
+    --brand-muted: 202 20% 45%;
+    --brand-dark: 202 30% 65%;
+    --brand-darker: 202 30% 78%;
+  }
+
   .dark [data-theme="r410a"] {
     --brand: 287 75% 50%;
     --brand-hover: 287 75% 42%;

@@ -418,6 +418,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NATE's Core exam KATE, Traditional Pathway and Recertification FAQ pages, checked November 2026",
     source: { name: "NATE Core exam KATE (PDF)", url: "https://natex.org/wp-content/uploads/2022/06/Core-KATE-Final.pdf" },
   },
+  hvacjourney: {
+    answer:
+      "The HVAC or mechanical journeyman exam is the written exam a state or city gives before it licenses a journeyman to install and service heating, ventilation, air conditioning and refrigeration systems under a licensed contractor. There is no national exam: each board sets its own, usually through PSI, Prometric or ICC, and most are open book on the International Mechanical Code edition it has adopted, often with the Fuel Gas Code. Maryland's HVACR Journeyman exam, for example, is 100 questions in 240 minutes with 70% to pass and covers electrical, piping, refrigeration, heating, air distribution and safety. ICC's current model code is the 2024 IMC; many boards still use the 2018 or 2021 edition.",
+    rows: [
+      { label: "Questions", value: "Varies by state (Maryland HVACR Journeyman: 100)" },
+      { label: "Time", value: "Varies (Maryland: 240 minutes)" },
+      { label: "Passing score", value: "Varies, often 70%" },
+      { label: "Format", value: "Usually open book on the adopted IMC edition" },
+      { label: "Current model code", value: "2024 International Mechanical Code and Fuel Gas Code" },
+      { label: "Given by", value: "State and city licensing boards via PSI, Prometric or ICC" },
+    ],
+    basedOn: "The 2024 IMC and IFGC on ICC's free public-access site and Maryland's PSI HVACR candidate bulletin (updated 9/1/2024), checked November 2026",
+    source: { name: "Maryland HVACR candidate information bulletin (PSI)", url: "https://dllr.state.md.us/LICENSE/hvacr/hvacrcandidateinfobulletin.pdf" },
+  },
   contractorlaw: {
     answer:
       "The contractor Business and Law exam is the business part of the licensing exam that many state contractor boards require, often next to a trade exam. Each state writes and runs its own, usually through PSI or Prometric, and many base it on a state edition of the NASCLA Contractors Guide to Business, Law and Project Management. Georgia's is 50 questions in 120 minutes with 70 percent to pass and open book; Hawaii's is 80 questions in 180 minutes with 75 percent to pass, closed book. Topics include licensing, estimating and bidding, financial management, tax and labor law, contracts, project management and liens, risk management and safety.",

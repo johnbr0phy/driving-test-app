@@ -314,6 +314,18 @@ jobs:
           echo "ok=$ok" >> "$GITHUB_OUTPUT"
           { echo "note<<EOF_NOTE"; echo "$note"; echo "EOF_NOTE"; } >> "$GITHUB_OUTPUT"
 
+      # create-pull-request commits audits/** to the PR branch and resets the
+      # working tree to main, so the resolutions file is gone by the merge step.
+      - name: Keep a copy of the resolutions
+        id: keep
+        if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
+        run: |
+          f="${{ steps.findings.outputs.resolutions }}"
+          if [ -f "$f" ]; then
+            cp "$f" "$RUNNER_TEMP/resolutions.json"
+            echo "settled=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Open PR
         id: pr
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
@@ -337,14 +349,13 @@ jobs:
       # the resolve job's work (closing the findings) is done here.
       - name: Merge the fix
         id: merge
-        if: ${{ steps.pr.outputs.pull-request-number && steps.fix.outcome == 'success' && steps.verdict.outputs.ok == 'true' && steps.checks.outcome == 'success' && hashFiles(steps.findings.outputs.resolutions) != '' }}
+        if: ${{ steps.pr.outputs.pull-request-number && steps.fix.outcome == 'success' && steps.verdict.outputs.ok == 'true' && steps.checks.outcome == 'success' && steps.keep.outputs.settled == 'true' }}
         env:
           GH_TOKEN: ${{ github.token }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: |
           gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --squash --delete-branch
-          f="${{ steps.findings.outputs.resolutions }}"
-          if [ -f "$f" ]; then npx tsx scripts/question-audit.ts --resolve "$f"; fi
+          npx tsx scripts/question-audit.ts --resolve "$RUNNER_TEMP/resolutions.json"
 
       # Nobody reviews these by hand: close the PR and let the next run try again
       # (its findings stay open and are carried into the next report).
@@ -359,7 +370,7 @@ jobs:
           - Fix step: ${{ steps.fix.outcome }}
           - Second review: ${{ steps.verdict.outputs.ok == 'true' && 'no objections' || 'objections or no verdict' }}
           - Checks: ${{ steps.checks.outcome }}
-          - Findings settled: ${{ hashFiles(steps.findings.outputs.resolutions) != '' && 'yes' || 'none' }}
+          - Findings settled: ${{ steps.keep.outputs.settled == 'true' && 'yes' || 'none' }}
 
           $NOTE
 

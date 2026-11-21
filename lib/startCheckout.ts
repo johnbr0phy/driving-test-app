@@ -3,6 +3,7 @@
 import { auth } from "@/lib/firebase";
 import { trackBeginCheckout } from "@/lib/analytics";
 import { checkoutAttribution } from "@/lib/funnel";
+import { lockArmForCheckout } from "@/lib/lockTest";
 import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 
 /**
@@ -41,6 +42,7 @@ export async function startCheckout(opts: {
         paywallVariant: paywallVariantForCheckout(),
         paywallHit: paywallHitForCheckout(),
         paywallReturn: paywallReturnForCheckout(),
+        lockArm: lockArmForCheckout(),
       }),
     });
     const data = await response.json();

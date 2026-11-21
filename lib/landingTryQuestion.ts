@@ -3,6 +3,7 @@ import { examBaseLanguage, examSetId, getExamByPath, localizeExam, trainingParts
 import { getExamRoutes } from "@/lib/examRoutes";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { lockedTrainingParts } from "@/lib/examLocks";
+import { LOCK_MAX_SHARE } from "@/lib/lockTestIds";
 import type { Question } from "@/types";
 import { hasPositionDependentAnswers } from "@/lib/shuffleOptions";
 import { getBank } from "@/lib/v2/bank";
@@ -162,7 +163,8 @@ export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): 
   // Passages lose to anything else, and trick wording (NOT, EXCEPT...) counts
   // as extra length, so a first question stays direct. The answer is recorded in the set it
   // came from and "Keep going" opens that set.
-  const locked = new Set(lockedTrainingParts(base).map((p) => `${p.set.setNumber}:${p.part}`));
+  // Free in every arm of the lock share test (lib/lockTestIds.ts).
+  const locked = new Set(lockedTrainingParts(base, LOCK_MAX_SHARE).map((p) => `${p.set.setNumber}:${p.part}`));
   type Pick = { q: Question; setNumber: number; part?: number; score: number; len: number };
   let best = null as Pick | null;
   const sets = [...exam.trainingSets].sort((a, b) => a.setNumber - b.setNumber);

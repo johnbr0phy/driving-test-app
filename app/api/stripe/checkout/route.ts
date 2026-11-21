@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getStripe, getPremiumProductId, PREMIUM_PRICE_ID, PREMIUM_PRODUCT } from '@/lib/stripe';
 import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
+import { isLockArm } from '@/lib/lockTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
 import { visitorCountry } from '@/lib/server/visitorCountry';
 import { SITE_URL } from '@/lib/siteUrl';
@@ -36,7 +37,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, paywallHit, paywallReturn, source: bodySource, landing: bodyLanding } = body;
+    const { email: bodyEmail, returnUrl, returnPath: rawReturnPath, location, paywallVariant, paywallHit, paywallReturn, lockArm, source: bodySource, landing: bodyLanding } = body;
     // The account's own address when it has one: an address from the body
     // would attach this checkout to someone else's Stripe customer. A guest
     // types theirs into Stripe instead.
@@ -167,6 +168,8 @@ export async function POST(request: NextRequest) {
         ...(landing && { landing }),
         // Which side of the English paywall test (lib/paywallTest.ts) the buyer saw.
         ...(isPaywallVariant(paywallVariant) && { paywallVariant }),
+        // Which arm of the v1 lock share test (lib/lockTest.ts) the buyer was in.
+        ...(isLockArm(lockArm) && { lockArm }),
         // Which paywall message they last saw: first, second or third visit.
         ...(isPaywallHit(paywallHit) && { paywallHit: String(paywallHit) }),
         // And whether return visits get the new message or the first one again.

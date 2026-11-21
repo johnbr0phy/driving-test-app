@@ -19,6 +19,10 @@
  * locked (hooks/useExamLocks.ts), and gating is client-side like the DMV's.
  * The DMV keeps its own rules in the store.
  *
+ * Since Nov 21 2026 half of browsers see the last half locked instead (the
+ * lock share test, lib/lockTestIds.ts and lib/lockTest.ts): the functions
+ * below take that share; with none they give the 25% rule.
+ *
  * An exam can instead mark a block of content as Premium (`premiumFrom` on
  * ExamConfig): RBT keeps Training Sets 1 to 3 and Practice Tests 1 to 3
  * free, and Premium opens the last four steps: Training Set 4, Practice
@@ -29,10 +33,14 @@ import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exam
 /** Share of an exam's dashboard steps that need Premium. */
 export const LOCKED_SHARE = 0.25;
 
-/** How many steps of a dashboard with `steps` steps are Premium. */
-export function lockedStepCount(steps: number): number {
+/**
+ * How many steps of a dashboard with `steps` steps are Premium. `share` is
+ * LOCKED_SHARE unless the lock share test (lib/lockTestIds.ts) gives this
+ * browser another; at least one step always stays free.
+ */
+export function lockedStepCount(steps: number, share: number = LOCKED_SHARE): number {
   if (steps < 2) return 0;
-  return Math.min(steps - 1, Math.max(1, Math.round(steps * LOCKED_SHARE)));
+  return Math.min(steps - 1, Math.max(1, Math.round(steps * share)));
 }
 
 export type ExamStep = { kind: "part"; part: TrainingPart } | { kind: "test"; testId: number };
@@ -90,26 +98,29 @@ export function examSteps(exam: ExamConfig): ExamStep[] {
 }
 
 /** The Premium steps: the `premiumFrom` block, else the last quarter of the dashboard. */
-function lockedSteps(exam: ExamConfig): ExamStep[] {
+function lockedSteps(exam: ExamConfig, share: number): ExamStep[] {
   const steps = examSteps(exam);
   if (exam.premiumFrom) return steps.filter((s) => inPremiumBlock(exam, s));
   // A one-test exam keeps its test free and locks training steps only.
   if (exam.testCount < 2) {
     const parts = steps.filter((s) => s.kind === "part");
-    const n = Math.min(parts.length - 1, lockedStepCount(steps.length));
+    const n = Math.min(parts.length - 1, lockedStepCount(steps.length, share));
     return n > 0 ? parts.slice(-n) : [];
   }
-  return steps.slice(steps.length - lockedStepCount(steps.length));
+  const locked = steps.slice(steps.length - lockedStepCount(steps.length, share));
+  // Whatever the share, the first practice test stays free.
+  const firstTest = steps.find((s) => s.kind === "test");
+  return locked.filter((s) => s !== firstTest);
 }
 
 /** Store IDs of the Premium practice tests (none when the exam has only one test). */
-export function lockedTestIds(exam: ExamConfig): number[] {
-  return lockedSteps(exam).flatMap((s) => (s.kind === "test" ? [s.testId] : []));
+export function lockedTestIds(exam: ExamConfig, share: number = LOCKED_SHARE): number[] {
+  return lockedSteps(exam, share).flatMap((s) => (s.kind === "test" ? [s.testId] : []));
 }
 
 /** The Premium training steps (a split set can lock only its last parts). */
-export function lockedTrainingParts(exam: ExamConfig): TrainingPart[] {
-  return lockedSteps(exam).flatMap((s) => (s.kind === "part" ? [s.part] : []));
+export function lockedTrainingParts(exam: ExamConfig, share: number = LOCKED_SHARE): TrainingPart[] {
+  return lockedSteps(exam, share).flatMap((s) => (s.kind === "part" ? [s.part] : []));
 }
 
 /**

@@ -26,6 +26,11 @@ on:
   schedule:
     - cron: "23 5 * * 1,3,5" # Mon, Wed, Fri 05:23 UTC (was daily; cut API spend)
   workflow_dispatch:
+    inputs:
+      rebaseline:
+        description: "Re-baseline only: a merged audits/sources/*.json whose pages were never re-baselined (skips triage)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -38,7 +43,7 @@ concurrency:
 
 jobs:
   merged:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || inputs.rebaseline != ''
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -53,13 +58,23 @@ jobs:
       - name: Re-baseline the pages the merged PR handled
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          REBASELINE: ${{ inputs.rebaseline }}
         run: |
+          if [ -n "$REBASELINE" ]; then
+            case "$REBASELINE" in
+              audits/sources/*.json) ;;
+              *) echo "rebaseline must be an audits/sources/*.json path"; exit 1 ;;
+            esac
+            test -f "$REBASELINE"
+            npx tsx scripts/source-triage.ts --apply "$REBASELINE" --merged
+            exit 0
+          fi
           for f in $(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- audits/sources/); do
             npx tsx scripts/source-triage.ts --apply "$f" --merged
           done
 
   triage:
-    if: github.event_name != 'push'
+    if: github.event_name != 'push' && inputs.rebaseline == ''
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:

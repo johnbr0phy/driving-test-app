@@ -62,8 +62,15 @@ export async function GET(req: NextRequest) {
     const prefixes = ALL_EXAMS.map((e) => ({ id: e.id, prefix: e.questionIdPrefix }))
       .filter((e) => !!e.prefix)
       .sort((a, b) => b.prefix.length - a.prefix.length);
-    const examOf = (id: string) =>
-      dmvIds.has(id) ? COMMUNITY_DMV_KEY : prefixes.find((e) => id.startsWith(e.prefix))?.id;
+    // Cached: every answer of every candidate goes through this, and a linear
+    // scan of several hundred prefixes per answer was most of the run time.
+    const examCache = new Map<string, string | undefined>();
+    const examOf = (id: string) => {
+      if (examCache.has(id)) return examCache.get(id);
+      const exam = dmvIds.has(id) ? COMMUNITY_DMV_KEY : prefixes.find((e) => id.startsWith(e.prefix))?.id;
+      examCache.set(id, exam);
+      return exam;
+    };
     const dmvPassPct = new Map(STATES.map((st) => [st.code, st.passingScore]));
     const passPctOf = (state: string | undefined, examId: string) =>
       examId === COMMUNITY_DMV_KEY ? dmvPassPct.get(state ?? "") ?? 80 : getExamByStateCode(state)?.passPct ?? 80;
@@ -77,7 +84,18 @@ export async function GET(req: NextRequest) {
 
     const authMap = await buildAuthMap();
     // Win-back: exempt from the quiet-days rule, bounded by EXIT_EMAIL_MAX_DAYS.
-    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true, (u) => notSentAndNotRecent(EMAIL_KEY)(u) && (u.language === null || u.language === "en"));
+    // Every answer save also writes lastUpdated, so lastUpdated >= the exit
+    // answer's time, and lastActiveAt >= lastUpdated. An account can only
+    // qualify if lastUpdated falls inside the quiet window. Checking that on
+    // the light fields keeps the full-record download to those few accounts
+    // (downloading every consented account timed out at 300s every day).
+    const inQuietWindow = (u: { lastUpdated: Date | null }) => {
+      if (!u.lastUpdated) return true; // let the full record decide
+      const quiet = now - u.lastUpdated.getTime();
+      return quiet >= EXIT_EMAIL_MIN_DAYS * DAY_MS && quiet <= EXIT_EMAIL_MAX_DAYS * DAY_MS;
+    };
+    const users = await getEligibleUsers(authMap, INCLUDE_LEGACY, true, (u) =>
+      notSentAndNotRecent(EMAIL_KEY)(u) && (u.language === null || u.language === "en") && inQuietWindow(u));
 
     const exits = new Map<string, { exit: AccountExit; content: ExitQuestionContent }>();
     const eligible = users.filter((u) => {

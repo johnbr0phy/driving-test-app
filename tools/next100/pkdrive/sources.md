@@ -7,6 +7,17 @@ search results but not opened or copied. Signs are described in words (no images
 ## Who runs the test
 There is no single national test. Licences are issued by each province's licensing authority and
 by the Islamabad Capital Territory (ICT); all recognise each other's licences.
+- Official sources first (source watch, 2026-11-21; Wikipedia moved below them):
+  - Provincial Motor Vehicles Ordinance 1965, Punjab Transport Department consolidated copy, read
+    again 2026-11-21: https://transport.punjab.gov.pk/system/files/The%20Provincial%20Motor%20Vehicles%20Ordinance%2C%201965%20%2830-11-2023%29_0.pdf
+    s.4 ages (18 motorcycle or private car, 21 paid driver or transport vehicle, 22 heavy
+    transport vehicle); s.7 licences granted by the licensing authority where the applicant
+    resides, after the Third Schedule test; s.10(2) a licence issued elsewhere in Pakistan is
+    valid in the Province; Third Schedule Part II (traffic laws, signs, Highway Code) and Part III
+    (read a plate at twenty-five yards). Matches the bank and landing.
+  - Punjab DLIMS, read 2026-11-21: https://dlims.punjab.gov.pk/ (learner licence applied for
+    online with CNIC and photo, printed from the system; medical certificate if over 50).
+  - Punjab Police learner page: https://mtwds.punjabpolice.gov.pk/node/29
 - Wikipedia, "Driving licence in Pakistan" (read 2026-10-31): licences issued by each district,
   province or territory; rules broadly similar; all recognise each other's licences; minimum age
   18 for a permanent licence (20 for paid drivers; the Ordinance itself says 21, see below); valid CNIC and proof of residence; eyesight:

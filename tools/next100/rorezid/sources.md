@@ -15,6 +15,13 @@ comes from a guide.
   Timișoara); answer key from 16:00 on the exam day. Edupedu, 2026:
   https://www.edupedu.ro/ultima-ora-concursul-de-rezidentiat-2026-are-loc-pe-15-noiembrie-pentru-medicina-medicina-dentara-si-farmacie-inscrierile-se-fac-in-perioada-7-20-octombrie/
   and https://www.edupedu.ro/oficial-inscrierile-la-rezidentiat-2026-incep-pe-7-octombrie-calendarul-actele-necesare-si-regulile-pentru-examenul-din-15-noiembrie/
+- Source watch, 2026-11-21: the second Edupedu article (a news site, not official) was re-read and
+  still gives 15 November 2026, registration 7 to 20 October, six centres, 200 questions in four
+  hours, about 25% single-answer (4 points) and 75% multiple-answer (2 to 4 correct, 5 points),
+  pass at 60% of the top national score, as Tigertest says. It cites the joint order
+  1.462/5.761/2026 (Monitorul Oficial Partea I nr. 840) but links only its own copy.
+  rezidentiat.ms.ro timed out again and no official page for the same facts was found (a search
+  returned only press copies), so the Edupedu articles stay as the best available sources.
 - Same model and same bibliography as 2025 (Ministry of Health with the G6 UMF alliance, 22 January
   2026): https://www.edupedu.ro/rezidentiat-2026-concursul-din-15-noiembrie-se-va-desfasura-dupa-acelasi-model-si-cu-aceeasi-bibliografie-ca-in-2025-anunta-ministerul-sanatatii/
   and Agerpres: https://agerpres.ro/sanatate/2026/01/22/ministerul-sanatatii-concursul-de-rezidentiat---pe-15-noiembrie-se-pastreaza-acelasi-model-de-concur--1521223

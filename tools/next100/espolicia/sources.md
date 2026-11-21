@@ -37,11 +37,16 @@ an academy's test bank or an app. Checked 2026-11-06 unless noted.
 - The research notes said the knowledge test was held with spelling, English, psychotechnical and
   personality tests. The 2026 bases list no separate spelling or English test (English is an A2
   requirement; spelling and grammar are temas 36 and 37). The landing follows the BOE.
-- Interior ministry Escala Básica page (lists the convocatoria and later resolutions):
-  https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/
 - Previous cohort: Resolución de 7 de julio de 2026 (BOE-A-2026-15042) names policías alumnos from
   the 2025 convocatoria (Resolución de 31 de julio de 2025, BOE núm. 192, 11 August 2025).
   https://www.boe.es/boe/dias/2026/07/10/pdfs/BOE-A-2026-15042.pdf
+- Interior ministry Escala Básica page (lists the convocatoria and later resolutions). It returns
+  HTTP 403 to automated fetches (source watch, 2026-11-21), so it is no longer one of the watched
+  links; the facts it lists are the BOE resolutions above, which stay the sources. The 2027-call
+  freshness event now watches the Dirección General de la Policía applicant portal instead, read
+  2026-11-21 ("Actualmente no hay ningún proceso activo"):
+  https://www.policia.es/portalaspirantes/en/web/escala-basica-ejecutiva
+  https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/
 
 ## Not confirmed / left out
 - Date of the 2026 knowledge test: academy guides say 26 September 2026

@@ -20,7 +20,7 @@ const lockedStepNumbers = (exam) => {
 };
 
 test('a quarter of the steps, rounded, at least one', () => {
-  assert.deepEqual([2, 5, 8, 9, 12, 19].map(lockedStepCount), [1, 1, 2, 2, 3, 5]);
+  assert.deepEqual([2, 5, 8, 9, 12, 19].map((n) => lockedStepCount(n)), [1, 1, 2, 2, 3, 5]);
 });
 
 test('an 8-step exam (Motorcycle) locks steps 7 and 8', () => {
@@ -154,4 +154,34 @@ test('RBT paywall says plainly what Premium adds, never a readiness verdict', ()
   assert.ok(!rbt.some((b) => /final .* training step/.test(b)));
   assert.match(rbt[rbt.length - 1], /One payment/);
   assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /final CDL training step/);
+});
+
+test('lock share test: the 50% arm locks about half of every v1 dashboard, keeps Test 1 and a training step free, and covers the 25% locks', () => {
+  const { LOCK_ARM_SHARE, LOCK_MAX_SHARE } = require('../lib/lockTestIds.ts');
+  assert.equal(LOCK_ARM_SHARE['25'], 0.25);
+  assert.equal(LOCK_ARM_SHARE['50'], 0.5);
+  assert.equal(LOCK_MAX_SHARE, 0.5);
+  // Motorcycle mirrors the DMV: Sets 3 and 4, Tests 3 and 4.
+  const moto = getExamById('moto');
+  assert.deepEqual(lockedTrainingParts(moto, 0.5).map((p) => p.set.setNumber), [3, 4]);
+  assert.equal(lockedTestIds(moto, 0.5).length, 2);
+  for (const exam of [...EXAMS, ...EXAM_VARIANTS]) {
+    const ids = examTestIds(exam);
+    const half = lockedTestIds(exam, 0.5);
+    const halfParts = lockedTrainingParts(exam, 0.5);
+    if (ids.length) assert.ok(!half.includes(ids[0]), `${exam.id}: Test 1 stays free`);
+    assert.ok(halfParts.length < examTrainingParts(exam).length, `${exam.id} has a free training step`);
+    for (const id of lockedTestIds(exam)) assert.ok(half.includes(id), `${exam.id}: 50% covers 25% test ${id}`);
+    for (const p of lockedTrainingParts(exam)) assert.ok(halfParts.some((q) => samePart(p, q)), `${exam.id}: 50% covers 25% parts`);
+  }
+});
+
+test('lock share test: the arm rides on checkout and the payment, and the card is on the A/B tests tab', () => {
+  const fs = require('node:fs');
+  const read = (p) => fs.readFileSync(require('node:path').join(__dirname, '..', p), 'utf8');
+  assert.match(read('lib/startCheckout.ts'), /lockArm: lockArmForCheckout\(\)/);
+  assert.match(read('app/api/stripe/checkout/route.ts'), /isLockArm\(lockArm\) && \{ lockArm \}/);
+  assert.match(read('app/api/stripe/webhook/route.ts'), /lockArm: session\.metadata\?\.lockArm/);
+  assert.match(read('hooks/useExamLocks.ts'), /lockedTestIds\(source, share\)/);
+  assert.match(read('components/admin/ABTestsTab.tsx'), /<LockTestCard/);
 });

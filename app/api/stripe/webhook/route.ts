@@ -198,6 +198,8 @@ export async function POST(request: NextRequest) {
         // And which paywall message (1 first visit, 2 second, 3 third on).
         paywallHit: Number(session.metadata?.paywallHit) || null,
         paywallReturn: session.metadata?.paywallReturn || null,
+        // The v1 lock share test's arm (lib/lockTest.ts), when the buyer was in it.
+        lockArm: session.metadata?.lockArm || null,
         // The buyer's first visit (lib/funnel.ts): channel and landing page.
         source: session.metadata?.source || null,
         landing: session.metadata?.landing || null,

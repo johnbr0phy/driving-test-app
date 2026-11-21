@@ -3,6 +3,7 @@
 import { CARD, TabHeader, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { GuestPromptTestCard } from "@/components/admin/GuestPromptTestCard";
 import { LandingTryTestCard } from "@/components/admin/LandingTryTestCard";
+import { LockTestCard } from "@/components/admin/LockTestCard";
 import { PaywallTestCard } from "@/components/admin/PaywallTestCard";
 import { TopPrepperTestCard } from "@/components/admin/TopPrepperTestCard";
 import type { ConversionPayload } from "@/lib/server/conversion";
@@ -37,6 +38,7 @@ export function ABTestsTab() {
       ) : opp.data?.paywallTest ? (
         <PaywallTestCard t={opp.data.paywallTest} />
       ) : null}
+      {opp.data?.lockTest && <LockTestCard t={opp.data.lockTest} />}
       <GuestPromptTestCard />
       {conv.loading ? (
         <div className={`${CARD} mb-3 sm:mb-4 text-sm text-gray-500`}>Loading the top prepper email test...</div>

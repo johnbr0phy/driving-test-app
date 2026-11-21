@@ -10,7 +10,8 @@
     "review:questions": "python3 scripts/review-question-banks.py",
     "test:a11y": "playwright test",
     "typecheck": "node --max-old-space-size=6144 node_modules/typescript/bin/tsc --noEmit",
-    "test": "node --test tests/*.test.cjs"
+    "test": "node --test tests/*.test.cjs",
+    "seo:audit": "tsx scripts/seo-audit.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { practiceLabel } from "@/lib/practiceLabel";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -21,7 +22,11 @@ function copy(slug: string) {
   const test = teachPageTestBySlug(slug);
   if (!test) return null;
   const course = TEACHES[test.id];
-  const title = `${test.shortName} Practice for Your Class`;
+  // Two tests can share a short name (Security Guard, Ontario's and the US one): the
+  // full name keeps their titles apart.
+  const shared = teachPageTests().some((t) => t.id !== test.id && t.shortName === test.shortName);
+  const label = shared ? test.name.replace(/ Practice Test$/, "") : test.shortName;
+  const title = `${label} Practice for Your Class`;
   const description = `Teach ${course}? Make a free Tigertest class for the ${practiceLabel(test.shortName)} practice test: post one link, students join with a name, and you see scores and the topics the class misses.`;
   const faqs = [
     { q: `Is the ${test.shortName} class free?`, a: `Yes. Classes are free for teachers. A student in your class also gets that test's full stats and every step of it at no charge.` },
@@ -41,7 +46,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description: c.description,
     alternates: { canonical: url },
     robots: { index: true, follow: true },
-    openGraph: { title: c.title, description: c.description, url, type: "website" },
+    openGraph: { title: c.title, description: c.description, url, type: "website", images: [{ url: shareImageUrl(c.test.id), width: 1200, height: 630, alt: c.title }] },
+    twitter: { card: "summary_large_image", title: c.title, description: c.description, images: [shareImageUrl(c.test.id)] },
   };
 }
 

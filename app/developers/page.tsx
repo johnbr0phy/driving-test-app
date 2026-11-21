@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/siteUrl";
 import { QUIZZES_PAGES_UPDATED_AT } from "@/lib/seoDates";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Connect any AI agent to Tigertest over MCP: discover their tests in progress and practice catalog exams or custom quizzes, make quizzes, and read who played. OAuth 2.1 with PKCE, no API key.",
   alternates: { canonical: `${SITE}/developers` },
-  openGraph: { title: "Tigertest for agents and developers", description: "Quiz a person in two tool calls over MCP.", url: `${SITE}/developers`, type: "website" },
+  openGraph: { title: "Tigertest for agents and developers", description: "Quiz a person in two tool calls over MCP.", url: `${SITE}/developers`, type: "website", images: [{ url: shareImageUrl("home"), width: 1200, height: 630, alt: "Tigertest" }] },
 };
 
 const TOOL_GROUPS: { title: string; blurb: string; tools: { name: string; what: string }[] }[] = [

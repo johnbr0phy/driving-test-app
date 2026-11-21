@@ -1,0 +1,66 @@
+name: SEO and GEO audit
+
+# Crawls every sitemap URL on the live site and checks what search engines and AI
+# answer engines read: status, redirects, noindex, canonicals, titles, descriptions,
+# h1, page language, hreflang (absolute, in the sitemap, reciprocal), JSON-LD
+# (valid, FAQ text visible, entities, #organization, dateModified), OG images,
+# broken internal links, orphan pages, plus robots.txt, crawler access, the
+# sitemaps, llms.txt, the IndexNow key, host redirects and soft 404s.
+# Rules: scripts/seo-audit.ts. Conventions: docs/claude/seo.md.
+# The job fails when there is an error (GitHub emails the owner); warnings never
+# fail. The report is the job summary and an artifact. No secrets needed.
+on:
+  schedule:
+    - cron: "17 8 * * 1" # Mondays 08:17 UTC
+  workflow_dispatch:
+    inputs:
+      base:
+        description: "Site to audit (a preview URL works too)"
+        default: "https://www.tigertest.io"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/seo-audit.ts
+            lib/urlLanguage.ts
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Audit
+        run: |
+          set -o pipefail
+          npx --yes tsx@4 scripts/seo-audit.ts --base "${{ github.event.inputs.base || 'https://www.tigertest.io' }}" --out audits/seo > report.md
+        continue-on-error: true
+        id: audit
+
+      - name: Job summary
+        if: always()
+        run: head -c 900000 report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seo-audit
+          path: audits/seo/
+          retention-days: 90
+
+      - name: Fail on errors
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo "The audit found errors. Open the job summary, or run the seo-audit skill in a Claude Code session to fix them."
+          exit 1

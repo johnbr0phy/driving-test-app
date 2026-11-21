@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/siteUrl";
 import { TEST_CATALOG } from "@/lib/testCatalog";
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   title: { absolute: title },
   description,
   alternates: { canonical: `${SITE_URL}/about` },
-  openGraph: { title, description, url: `${SITE_URL}/about`, siteName: "Tigertest", type: "website" },
+  openGraph: { title, description, url: `${SITE_URL}/about`, siteName: "Tigertest", type: "website", images: [{ url: shareImageUrl("home"), width: 1200, height: 630, alt: "Tigertest" }] },
 };
 
 // Same look as /privacy and /terms: keep the three in step.

@@ -231,6 +231,12 @@ jobs:
           python3 -I tools/check_freshness.py
           python3 -I tools/build_exam_sources.py --check
 
+      # create-pull-request commits audits/sources/** to the PR branch and resets
+      # the working tree to main, so the decisions file is gone by the merge step.
+      - name: Keep a copy of the decisions
+        if: steps.pages.outputs.count != '0' && steps.apply.outputs.changes != '0'
+        run: cp "${{ steps.pages.outputs.decisions }}" "$RUNNER_TEMP/decisions.json"
+
       # Only when something besides the decisions changed: a noise-only day opens no PR.
       - name: Open PR
         id: pr

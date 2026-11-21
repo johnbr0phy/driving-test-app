@@ -1,0 +1,80 @@
+[
+  {
+    "id": "18c5ddef40e6999dad05c3f5df13b8fe9d0af153",
+    "url": "https://sbi.bank.in/web/careers/current-openings",
+    "verdict": "noise",
+    "reason": "SBI careers page now shows the interview call letter for CRPD/PO/2026-27/09, the advertisement Tigertest already uses, and states no pattern or figure that moved."
+  },
+  {
+    "id": "200b9ca63ab7b7c8bc0ab3dff1e418c819b032d0",
+    "url": "https://www.aafcs.org/credentialing/professional-certifications/cfcs-hnfs",
+    "verdict": "noise",
+    "reason": "AAFCS CFCS-HNFS page still lists the four competency areas, a baccalaureate degree and 75 PDUs per three-year cycle; its fees are not used by Tigertest."
+  },
+  {
+    "id": "3734abe784a7d0e67d880e8db91ac310949c9916",
+    "url": "https://praxis.ets.org/test/5001.html",
+    "verdict": "noise",
+    "reason": "ETS 5001 page still gives 245 questions in 4 hours 35 minutes over four separately timed subtests, as Tigertest states."
+  },
+  {
+    "id": "4614471ced915b6ee516ae6c0284be5e1b82a9b2",
+    "url": "https://www.edupedu.ro/oficial-inscrierile-la-rezidentiat-2026-incep-pe-7-octombrie-calendarul-actele-necesare-si-regulile-pentru-examenul-din-15-noiembrie/",
+    "verdict": "replaced",
+    "reason": "News page still matches Tigertest (15 November 2026, 200 questions, 4 hours, 25/75 split, 60% pass), but rezidentiat.ms.ro timed out and no official page was found, so sources.md now says Edupedu stays as the best available source."
+  },
+  {
+    "id": "536ca16cea8cc73c3ccff6281343999f58521e5c",
+    "url": "https://en.wikipedia.org/wiki/Driving_licence_in_Pakistan",
+    "verdict": "replaced",
+    "reason": "Wikipedia is not official; the Provincial Motor Vehicles Ordinance 1965 (Punjab Transport Department), Punjab DLIMS and the Punjab Police learner page now lead sources.md and confirm the ages, licensing authorities, mutual recognition and test parts Tigertest uses."
+  },
+  {
+    "id": "8a46c74ac2096b282fb69b4e600517c45f0648b1",
+    "url": "https://www.mas.gov.sg/regulation/notices/notice-faa-n26",
+    "verdict": "noise",
+    "reason": "MAS FAA-N26 still shows last revised 1 April 2024; the only other item is the related December 2025 thematic review, not an amendment."
+  },
+  {
+    "id": "a1144040fe75a49c816d6256e79422d9ad0ce627",
+    "url": "https://praxis.ets.org/test/5622.html",
+    "verdict": "noise",
+    "reason": "ETS 5622 page still gives 2 hours, 70 selected-response and 4 constructed-response questions, as Tigertest states."
+  },
+  {
+    "id": "a8df965fbed4e431d7a3ceeb0cd856c4efdc8af8",
+    "url": "https://www.police.gov.sg/E-Services/Practise-Driving-and-Riding-Theory-Test",
+    "verdict": "noise",
+    "reason": "SPF practice page only lists BTT, FTT and RTT practice sets in four languages at about 20 minutes a set, with no format figure Tigertest uses."
+  },
+  {
+    "id": "bad6e22cdd44fe38c3d9ff1d8bd565d880b15c3f",
+    "url": "https://www.police.gov.sg/Knowledge-Hub/Traffic/Traffic-Matters/Provisional-Driving-Licence",
+    "verdict": "noise",
+    "reason": "SPF provisional licence page still says the PDL is digital, valid for 2 years and needs the Basic Theory Test first, as Tigertest says."
+  },
+  {
+    "id": "de230594b3f743836bd00e7c9c518da593f64a1d",
+    "url": "https://www.thesummitexpress.com/2026/08/prc-reschedules-august-2026-psychologists-psychometricians-board-exams.html",
+    "verdict": "replaced",
+    "reason": "News page (still giving the 1-2 September 2026 resit date, which Tigertest does not state) moved below the PRC sources in sources.md so the watched links are all prc.gov.ph; PRC itself refused connections today."
+  },
+  {
+    "id": "3c19febe38c75857189a9d214b0eabc0ce833a41",
+    "url": "https://www.jkssb.nic.in/Pdf/Notice_24032026.pdf",
+    "verdict": "noise",
+    "reason": "The notice loads when the site's broken certificate chain is skipped and still says the Junior Assistant OMR exam moved from 5 to 19 April 2026, exactly as sources.md records."
+  },
+  {
+    "id": "83e0a43f07db0dc950c9a4aa182e272ed6e2b94f",
+    "url": "https://mit.gov.it/nfsmitgov/files/media/normativa/2021-12/DECRETO_protocollo_0000439_del%20_13-12-2021.pdf",
+    "verdict": "noise",
+    "reason": "The decree loads when the certificate check is skipped and confirms 30 true/false statements, 20 minutes and at most 3 errors, applied from 20 December 2021, as Tigertest states."
+  },
+  {
+    "id": "a7429fbd4ff11187005fcf23b2ffd5fc96c80605",
+    "url": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/empleo-publico/procesos-selectivos/policia-nacional/escala-basica/",
+    "verdict": "replaced",
+    "reason": "Interior page always returns 403, so sources.md now leads with the BOE resolutions it lists and the 2027-call freshness event watches the official Policía Nacional applicant portal instead."
+  }
+]

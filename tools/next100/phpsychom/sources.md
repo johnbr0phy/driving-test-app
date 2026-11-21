@@ -14,13 +14,18 @@ sample was used.
   program itself (pdftotext, rechecked 2026-11-05) lists "NON-PROGRAMMABLE CALCULATORS (Please refer
   to Commission Resolution No. 1809-2024 ...)" with one calculator per examinee.
   The PRC news list carries a 17 August 2026 notice moving the August 19-20 sitting
-  (https://prc.gov.ph/articles?page=0, checked 2026-11-05); news reports
-  (https://www.thesummitexpress.com/2026/08/prc-reschedules-august-2026-psychologists-psychometricians-board-exams.html)
-  give September 1-2, 2026. Copy names only the program, not the date.
+  (https://prc.gov.ph/articles?page=0, checked 2026-11-05); news reports (listed under the
+  2024 program below) give September 1-2, 2026. Copy names only the program, not the date.
 - PRC, Program for the September 24-25, 2025 PmLE (same four subjects and weights):
   https://www.prc.gov.ph/sites/default/files/SEPTEMBER%202025%20PSYCHOMETRICIANS%20LE_ROSALES.pdf
 - PRC, Program for the August 11-12, 2024 PmLE (same four subjects and weights, order differs):
   https://prc.gov.ph/sites/default/files/PSYCHOMETRICIAN%20SCHOOL%20ASSIGNMENT%20AND%20PROGRAM%20FOR%20WEB%20POSTING.pdf
+- Source watch, 2026-11-21: the Summit Express news page (unofficial) was moved here, below the
+  PRC sources. Read 2026-11-21, it still says the 19-20 August 2026 PsLE and PmLE were moved to
+  1-2 September 2026 after rain warnings, and names no change to subjects or format. prc.gov.ph
+  refused connections on 2026-11-21, so the PRC notice could not be re-read; nothing in the bank
+  or landing depends on the sitting date.
+  https://www.thesummitexpress.com/2026/08/prc-reschedules-august-2026-psychologists-psychometricians-board-exams.html
 - R.A. 10029, Philippine Psychology Act of 2009, approved March 16, 2010 (lawphil.net):
   https://lawphil.net/statutes/repacts/ra2010/ra_10029_2010.html
   - Sec. 3(d): a psychometrician may administer and score objective and structured personality

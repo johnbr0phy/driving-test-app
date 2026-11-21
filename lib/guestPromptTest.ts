@@ -15,11 +15,12 @@ export const GUEST_PROMPT_VARIANTS = ["v01", "v02", "v03", "v04", "v05", "v06", 
 export type GuestPromptVariant = (typeof GUEST_PROMPT_VARIANTS)[number];
 
 /**
- * Designs taken out of the rotation (Nov 16 2026: the four lowest sign-ups per
- * showing, all under the control). Their counts stay on /admin and
+ * Designs taken out of the rotation (Nov 16 2026: v02, v05, v09, v10, the four
+ * lowest sign-ups per showing, all under the control; Nov 21 2026: v03 and v07,
+ * to focus traffic on the top three, v08, v06 and v04, against the control v01). Their counts stay on /admin and
  * `?guestPrompt=` still previews them; browsers only see the active ones.
  */
-export const RETIRED_GUEST_PROMPT_VARIANTS: readonly GuestPromptVariant[] = ["v02", "v05", "v09", "v10"];
+export const RETIRED_GUEST_PROMPT_VARIANTS: readonly GuestPromptVariant[] = ["v02", "v03", "v05", "v07", "v09", "v10"];
 export const ACTIVE_GUEST_PROMPT_VARIANTS: GuestPromptVariant[] = GUEST_PROMPT_VARIANTS.filter(
   (v) => !RETIRED_GUEST_PROMPT_VARIANTS.includes(v),
 );

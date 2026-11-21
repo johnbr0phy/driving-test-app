@@ -16,8 +16,9 @@
  * everyone, including people who finished with their exam.
  *
  * PAUSED unless QUIZZES_CAMPAIGN=send is set in the environment. While
- * paused, each run only counts and logs who would get it (a daily dry run),
- * so the copy can be reviewed before anything goes out. No variants.
+ * paused, the daily run returns at once without reading any accounts (the
+ * full scan timed out at 300s every day); `?dry=1` counts who would get it.
+ * No variants.
  *
  * Drains at MAX_BATCH per day, most recently active first, so the freshest
  * addresses go out while the budget is tightest.
@@ -51,6 +52,12 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  const dry = req.nextUrl.searchParams.get("dry") === "1";
+  if (!ENABLED && !dry) {
+    console.log("[quizzes-launch] paused (set QUIZZES_CAMPAIGN=send to send; ?dry=1 to count)");
+    return NextResponse.json({ paused: true });
+  }
+
   try {
     const now = Date.now();
     const authMap = await buildAuthMap();
@@ -66,7 +73,7 @@ export async function GET(req: NextRequest) {
       })
       .sort((a, b) => b.lastActiveAt.getTime() - a.lastActiveAt.getTime());
 
-    if (!ENABLED) {
+    if (!ENABLED || dry) {
       const summary = { paused: true, eligible: eligible.length };
       console.log(`[quizzes-launch] paused (set QUIZZES_CAMPAIGN=send to send): ${JSON.stringify(summary)}`);
       return NextResponse.json(summary);

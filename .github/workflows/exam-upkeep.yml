@@ -89,7 +89,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
-          claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 400 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 400 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --add-dir ${{ runner.temp }} /tmp --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(ls:*),Bash(pdftotext:*)"
           prompt: |
             Read CLAUDE.md, docs/claude/question-quality.md and each task's docs/exams/<examId>.md and
             .claude/skills/exam-bank/SKILL.md, then ${{ steps.pick.outputs.file }}. Nobody

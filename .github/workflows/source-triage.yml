@@ -130,7 +130,7 @@ jobs:
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           # Prints the run, so a failure shows its reason in the log (it was hidden).
           show_full_output: true
-          claude_args: --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --add-dir ${{ runner.temp }} /tmp --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(ls:*),Bash(pdftotext:*)"
           prompt: |
             Read CLAUDE.md, docs/claude/question-quality.md and the exam's docs/exams/<examId>.md, then
             ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were
@@ -196,6 +196,13 @@ jobs:
             "## Changed" (updated and replaced pages, one line each on what you changed
             and the source), then "## Retry later" (needs_person pages) and a count of
             noise pages.
+
+            Shell commands: you start in the repository, so never cd into it. Run one
+            plain command per Bash call: no shell variables (UA=..., $X), no loops, no
+            chains with ; or &&, since those are refused and waste a turn. Read files,
+            the page list and downloaded PDFs with the Read tool (it reads PDFs) and
+            search with the Grep tool. Save downloads under /tmp, and pass a browser
+            user agent to curl written out in full.
 
             Do not commit.
 

@@ -44,7 +44,9 @@ const COUNTRIES = A.countries || [
   { region: 'MT', name: 'Malta', lang: 'en', existing: ['mttheory'], translate: [] },
 ]
 
+const NATIVE_LANGS = A.nativeLangs || ['de', 'es', 'pt', 'nl', 'fr', 'pl', 'it', ...NEW_LANG_CODES]
 const needsPlatform = lang => NEW_LANG_CODES.includes(lang)
+const existingText = c => (c.existing.length ? c.existing.join(', ') : 'none yet')
 
 // ---------- helpers ----------
 let chain = Promise.resolve()
@@ -126,6 +128,7 @@ const STEP_SCHEMA = {
 
 // ---------- phase: Languages ----------
 const platformP = (async () => {
+  if (!NEW_LANGS.length) { log('No new UI languages needed, Languages phase skipped'); return null }
   phase('Languages')
   const written = await parallel(NEW_LANGS.map(l => () => agent(
     `${COMMON}
@@ -148,11 +151,11 @@ Then run npm run typecheck, npm test and npm run lint; fix what you broke. Updat
 const countryResults = await parallel(COUNTRIES.map((c, ci) => async () => {
   const research = await agent(
     `${COMMON}
-Market research for ${c.name} (Tigertest region ${c.region}, homepage language ${c.lang}). It has these Tigertest tests today: ${c.existing.join(', ')} (see docs/exams/). Pick the ${PER_COUNTRY} tests people in ${c.name} most often PAY to prepare for that Tigertest can honestly model as a multiple-choice question bank, and say why.
+Market research for ${c.name} (Tigertest region ${c.region}, homepage language ${c.lang}). It has these Tigertest tests today: ${existingText(c)} (see docs/exams/).${c.newRegion ? ` ${c.name} is a NEW Tigertest country (no region or homepage yet). Pick 1 MUST be the national car (category B) driving theory test.${c.suggested ? ` Starting suggestions to verify: ${c.suggested}.` : ''}` : ''} Pick the ${PER_COUNTRY} tests people in ${c.name} most often PAY to prepare for that Tigertest can honestly model as a multiple-choice question bank, and say why.
 Load WebSearch (and WebFetch if listed) with ToolSearch and search in both English and the local language. Good signals: a compulsory written exam with a fee and retakes, a large yearly cohort, an existing paid prep market (apps, courses, books), an official public syllabus or handbook. Typical candidates to weigh (verify, do not assume): other licence categories (motorcycle A/A2, truck C/CE and driver CPC, bus, taxi or private hire), citizenship or residence tests, security guard licences, boating and hunting licences, insurance or real estate licences, trade and IHK-style certificates, medical or nursing licensing tests, school-leaving or university entrance tests with MCQ parts.
 Reject: anything already on Tigertest (grep lib/exams.ts, lib/v2/registry.ts, lib/testCatalog.ts), anything mostly pictures, video or practical, anything where the real test draws verbatim from an official question catalogue we would have to copy (unless original items on its published topics still give real practice, and you say so), and exams with no public syllabus.
-Choose baseLanguage: "en" when the real exam is offered in English (or is in English, as in Malta), else the native language (${c.lang}). Allowed native languages: de, es, pt, nl, fr, ${NEW_LANG_CODES.join(', ')}.
-Template: a native exam copies tools/next100/detheorie; an English EU driving-type test copies tools/next100/${c.existing[0]}; other English exams copy the nearest existing folder under tools/next100 (e.g. aesira for security, cpafar or nmls for finance and licensing, cma or arrt for healthcare, ieqfa for insurance, iepsa for guards).
+Choose baseLanguage: "en" when the real exam is offered in English (or is in English, as in Malta), else the native language (${c.lang}). Allowed native languages: ${NATIVE_LANGS.join(', ')}.
+Template: a native exam copies tools/next100/detheorie; an English EU driving-type test copies tools/next100/${c.existing[0] || 'setrafik'}; other English exams copy the nearest existing folder under tools/next100 (e.g. aesira for security, cpafar or nmls for finance and licensing, cma or arrt for healthcare, ieqfa for insurance, iepsa for guards).
 Ids must be unique: grep for the id, the stateCode and the prefix across lib/ and data/ before choosing. Slugs in English for English exams, in the native language for native ones (landing /<lang>/<slug>). Do not write any file. Return exactly ${PER_COUNTRY} picks, best first.`,
     { label: `research:${c.region}`, phase: 'Research', schema: RESEARCH_SCHEMA })
   if (!research || !research.picks || !research.picks.length) { log(`${c.name}: research failed, skipped`); return { country: c.name, ok: false } }
@@ -172,7 +175,7 @@ Your exam (v1 registry exam, region ${c.region}):
 | id ${p.id} | ${p.name} (${p.englishName}) | body ${p.body} | idBase ${p.idBase} | stateCode ${p.stateCode} | prefix ${p.prefix} | slug ${p.slug} | landing ${p.landing} | base language ${p.baseLanguage} | suggested hue ${p.hue} |
 Research notes: format: ${p.format}. Why people pay: ${p.whyPaid}. Notes: ${p.notes}
 Confirm every format fact again from the official source and record it in tools/next100/${p.id}/sources.md with URL and date. ${p.baseLanguage !== 'en' ? `This is a native-language exam: write the bank and copy directly in ${p.baseLanguage} from the official law and manuals (never draft in English), write glossary.md, set language/locale/english/review ("model") in the WIRING config block, use the TranslatedExamLanding three-line landing with lib/landings/${p.id}.${p.baseLanguage}.json, and validate with --lang ${p.baseLanguage}.` : ''}
-Siblings being built now in ${c.name}: ${siblings}; existing: ${c.existing.join(', ')}. Grep their banks on disk as you write and keep to your own lane; no repeated fact-and-answer pairs.
+Siblings being built now in ${c.name}: ${siblings}; existing: ${existingText(c)}. Grep their banks on disk as you write and keep to your own lane; no repeated fact-and-answer pairs.
 The WIRING.md must also carry: the hub group line (a ${c.name} group for its non-driving tests, after "${c.name}"'s driving group, or the driving group for licence categories), TEST_REGIONS ${c.region}, search aliases in English and the local language, the examFacts entry, the testCatalog blurb and the CLAUDE.md bullet in the house shape.
 ${OWN_FILES_ONLY}
 Finish per the brief.`,
@@ -180,7 +183,7 @@ Finish per the brief.`,
     if (!built || !built.ok) { log(`${p.id}: build not ok, left out`); return { id: p.id, ok: false, why: built ? built.decisions : 'agent failed' } }
     const review = await agent(
       `${COMMON}
-You are a reviewer. Follow tools/next100/REVIEW.md for exam ${p.id} (v1; files in tools/next100/${p.id}/, the bank named in its WIRING.md, the landing ${p.landing}). Also check: no question asks about the test itself; facts in sources.md, the landing, the FAQ and the WIRING examFacts match each other and the official source (re-check with WebSearch); no repeats of the siblings ${siblings} or ${c.existing.join(', ')}.${p.baseLanguage !== 'en' ? ` Read every item as a fluent ${p.baseLanguage} speaker: grammar, idiom and the authority's own terms (glossary.md).` : ''}
+You are a reviewer. Follow tools/next100/REVIEW.md for exam ${p.id} (v1; files in tools/next100/${p.id}/, the bank named in its WIRING.md, the landing ${p.landing}). Also check: no question asks about the test itself; facts in sources.md, the landing, the FAQ and the WIRING examFacts match each other and the official source (re-check with WebSearch); no repeats of the siblings ${siblings} or ${existingText(c)}.${p.baseLanguage !== 'en' ? ` Read every item as a fluent ${p.baseLanguage} speaker: grammar, idiom and the authority's own terms (glossary.md).` : ''}
 Fix in the sources, rebuild, revalidate to PASS. ${OWN_FILES_ONLY} Report blockers only if the exam must not ship.`,
       { label: `review:${p.id}`, phase: 'Review', schema: REVIEW_SCHEMA })
     const ok = !!review && review.ok && !review.blockers
@@ -212,7 +215,7 @@ Ship these exams: ${goodExams.map(b => `${b.id} (tools/next100/${b.id}/WIRING.md
 Ship these translations: ${goodTr.map(t => `${t.key} (tools/next100/${t.key.split(':')[0]}/WIRING_${t.key.split(':')[1].toUpperCase()}.md)`).join(' | ') || 'none'}.
 Steps:
 1. Apply each WIRING.md to the shared files, in the shapes used by the last EU batch and the native batch (git log for the commits that added setrafik, detheorie and esdgt es shows every file touched). Settle each theme hue against app/globals.css (rule in BRIEF.md "Lessons from batch 1"; white text 4.5:1), writing the final hue into globals.css and the config. Run tools/gen_dark_brand_css.py. Add the hub group(s), aliases, examFacts, TEST_REGIONS, and CLAUDE.md bullets.
-2. ${['sv', 'da', 'fi', 'hu', 'ro', 'el'].includes(c.lang) && goodTr.length ? `The country's driving test now exists in ${c.lang}: switch region ${c.region} to lang "${c.lang}" with its locale in lib/region.ts (like ES and PT), write REGION_HOME and faqsFor for ${c.region} in ${c.lang}, and check its homepage renders in ${c.lang}.` : 'Leave the region language as it is.'}
+2. ${c.newRegion ? `${c.name} is a NEW region: add "${c.region}" everywhere a region is declared, following exactly how IT and FR were added (git log -S'"IT"' -- lib/region.ts shows every file: Region type, regionFromCountry, REGIONS table with lang "${c.lang}" and its locale, regionHomePath and the /${c.region.toLowerCase()} homepage route, REGION_HOME and faqsFor written in ${c.lang}, middleware, hreflang, sitemap, the country picker and home copy). Its homepage is in ${c.lang} from day one when its driving test ships in ${c.lang}. Check /${c.region.toLowerCase()} renders.` : ['sv', 'da', 'fi', 'hu', 'ro', 'el'].includes(c.lang) && goodTr.length ? `The country's driving test now exists in ${c.lang}: switch region ${c.region} to lang "${c.lang}" with its locale in lib/region.ts (like ES and PT), write REGION_HOME and faqsFor for ${c.region} in ${c.lang}, and check its homepage renders in ${c.lang}.` : 'Leave the region language as it is.'}
 3. npx tsx scripts/build-training-parts.ts, then python3 -I tools/check_banks.py, python3 -I tools/build_exam_sources.py, python3 scripts/review-question-banks.py (whatever .github/workflows/checks.yml runs), npm run typecheck, npm run lint, npm test. Fix failures in what you wired; if one exam cannot be made to pass, unwire it and list it as dropped.
 4. Screenshots per .claude/skills/exam-bank/references/wiring.md section 11 (dev server on a free port, Playwright, light and dark as that section says) for each new exam and each translated landing that references one; stop the server after.
 5. npx tsx scripts/build-landing-dates.ts after committing step content if the script needs git dates (commit, run it, amend or add a second commit).
@@ -228,7 +231,7 @@ const final = await serial(() => agent(
 All country integrations are committed on ${BRANCH}. Verify the whole branch as CI and Vercel would:
 1. Everything .github/workflows/checks.yml and question-banks.yml run, plus npm run typecheck, npm run lint, npm test.
 2. npm run build (production). Count the routes in the build output and compare with Vercel's 2,048-route limit (docs/claude/v1-engine.md explains why it matters); report the number and the headroom.
-3. Spot-check in a dev server: /se, /fi, /hu, /ro, /dk, /gr homepages, one new exam dashboard and landing per country, one translated landing; no raw i18n key paths, no English chrome where a native page should be native.
+3. Spot-check in a dev server: the ${COUNTRIES.map(c => '/' + c.region.toLowerCase()).join(', ')} homepages, one new exam dashboard and landing per country, one translated landing; no raw i18n key paths, no English chrome where a native page should be native.
 Fix anything broken with the smallest change, rerun, and commit the fixes ("Fix checks after EU country tests") with the attribution lines. Do not push.`,
   { label: 'verify:branch', phase: 'Verify', schema: STEP_SCHEMA }))
 

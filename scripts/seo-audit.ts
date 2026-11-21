@@ -109,14 +109,27 @@ async function pool<T>(items: T[], n: number, fn: (t: T) => Promise<void>) {
 }
 
 const norm = (u: string) => u.replace(/\/$/, "") || u;
-const decode = (s: string) =>
-  s
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#x27;|&#39;|&apos;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&nbsp;/g, " ");
+// One pass, so "&amp;lt;" decodes to "&lt;" and never on to "<".
+const ENTITIES: Record<string, string> = {
+  "&amp;": "&",
+  "&quot;": '"',
+  "&#x27;": "'",
+  "&#39;": "'",
+  "&apos;": "'",
+  "&lt;": "<",
+  "&gt;": ">",
+  "&nbsp;": " ",
+};
+const decode = (s: string) => s.replace(/&(?:amp|quot|#x27|#39|apos|lt|gt|nbsp);/g, (e) => ENTITIES[e]);
+// Same-site check by parsed host, not by string prefix.
+const hostOf = (u: string) => {
+  try {
+    return new URL(u).host;
+  } catch {
+    return "";
+  }
+};
+const isWww = (u: string) => u.startsWith("https://") && hostOf(u) === "www.tigertest.io";
 const attr = (tag: string, name: string) => {
   const m = tag.match(new RegExp(`\\s${name}="([^"]*)"`, "i"));
   return m ? decode(m[1]) : undefined;
@@ -124,9 +137,10 @@ const attr = (tag: string, name: string) => {
 const visibleText = (html: string) =>
   decode(
     html
-      .replace(/<script[\s\S]*?<\/script>/gi, " ")
-      .replace(/<style[\s\S]*?<\/style>/gi, " ")
-      .replace(/<[^>]+>/g, " ")
+      .replace(/<script\b[\s\S]*?<\/script\b[^>]*>/gi, " ")
+      .replace(/<style\b[\s\S]*?<\/style\b[^>]*>/gi, " ")
+      .replace(/<[^>]*>/g, " ")
+      .replace(/[<>]/g, " ")
   )
     .replace(/\s+/g, " ")
     .toLowerCase();
@@ -163,7 +177,7 @@ async function readSitemaps(): Promise<string[]> {
     for (const e of entries) {
       const loc = e.match(/<loc>([^<]+)<\/loc>/)?.[1] ?? "";
       const lastmod = e.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
-      if (!loc.startsWith("https://www.tigertest.io")) add("sitemapHost", loc, segUrl);
+      if (!isWww(loc)) add("sitemapHost", loc, segUrl);
       if (lastmod && lastmod.slice(0, 10) > TODAY) add("sitemapFuture", loc, lastmod);
       if (seen.has(loc)) add("sitemapDuplicate", loc, segUrl);
       seen.add(loc);
@@ -240,7 +254,7 @@ async function auditPage(loc: string) {
     const code = attr(m[0], "hrefLang") ?? attr(m[0], "hreflang");
     const href = attr(m[0], "href");
     if (!code || !href) continue;
-    if (!href.startsWith("https://www.tigertest.io")) add("hreflangHost", loc, `${code} ${href}`);
+    if (!isWww(href)) add("hreflangHost", loc, `${code} ${href}`);
     if (page.alternates.has(code)) add("hreflangDuplicate", loc, code);
     page.alternates.set(code, href);
   }
@@ -298,11 +312,12 @@ async function auditPage(loc: string) {
   for (const m of html.matchAll(/<a\s[^>]*href="([^"#]+)/gi)) {
     let href = decode(m[1]);
     if (/^(mailto|tel|javascript):/i.test(href)) continue;
-    if (/^https?:\/\/tigertest\.io/i.test(href) || href.startsWith("http://www.tigertest.io")) {
-      add("linkHost", loc, href);
+    if (/^https?:/i.test(href)) {
+      const h = hostOf(href);
+      if (h === "tigertest.io" || (h === "www.tigertest.io" && !href.startsWith("https://"))) add("linkHost", loc, href);
     }
-    if (href.startsWith("/")) href = "https://www.tigertest.io" + href;
-    if (!href.startsWith("https://www.tigertest.io")) continue;
+    if (href.startsWith("/") && !href.startsWith("//")) href = "https://www.tigertest.io" + href;
+    if (!isWww(href)) continue;
     href = href.split("?")[0];
     page.links.add(norm(href));
   }
@@ -331,14 +346,14 @@ async function siteChecks() {
     // (http to https, then apex to www, is how Vercel does it).
     let url = from;
     const hops: string[] = [];
-    for (let i = 0; i < 3 && !url.startsWith("https://www.tigertest.io"); i++) {
+    for (let i = 0; i < 3 && !isWww(url); i++) {
       const r = await get(url);
       const next = r.headers.get("location") ?? "";
       hops.push(`${r.status} to ${next || "nothing"}`);
       if (![301, 308].includes(r.status) || !next) break;
       url = new URL(next, url).toString();
     }
-    if (!url.startsWith("https://www.tigertest.io") || hops.some((h) => !/^30[18] /.test(h))) {
+    if (!isWww(url) || hops.some((h) => !/^30[18] /.test(h))) {
       add("hostRedirect", from, hops.join(", then "));
     }
   }

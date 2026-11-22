@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { groupAnchor, searchTestGroups } from "@/lib/testCatalog";
+import { groupAnchor, landingIn, searchTestGroups } from "@/lib/testCatalog";
 import { CountryPills } from "@/components/CountryPills";
 import { Region, orderGroupsForRegion, regionOfTest } from "@/lib/region";
-import { getExamById } from "@/lib/exams";
 import type { Language } from "@/i18n";
 
 /** Links per group before "+N more" sends the rest to /tests. */
@@ -51,7 +50,7 @@ export function TestCatalogStatic({
                 {shown.map((t) => (
                   <li key={t.id}>
                     <Link
-                      href={getExamById(t.id)?.translations?.[lang]?.landingPath ?? t.href}
+                      href={landingIn(t, lang)}
                       className="text-gray-900 dark:text-gray-50 hover:text-brand-dark hover:underline"
                     >
                       {t.nativeName && t.language === lang ? t.nativeName : t.name}

@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import type { TestCatalogEntry } from "@/lib/testCatalog";
+import { landingIn, type TestCatalogEntry } from "@/lib/testCatalog";
 import { TestIcon } from "@/components/TestIcon";
 import { CountUp } from "@/components/CountUp";
 import { hasTigerSet } from "@/lib/tigerAssets";
-import { getExamById } from "@/lib/exams";
 import { LANGUAGES, type Language } from "@/i18n";
 import { homeCopy } from "@/components/home/homeCopy";
 
@@ -18,11 +17,6 @@ import { homeCopy } from "@/components/home/homeCopy";
  * multilingual tests), a chip row (size, price) and the optional weekly count,
  * with a chevron on the right like the dashboard rows.
  */
-/** A test's landing in the page's language when it has one (the Spanish DGT
- *  test on the Spanish homepage), else its usual landing. */
-function landingIn(test: TestCatalogEntry, lang: Language): string {
-  return getExamById(test.id)?.translations?.[lang]?.landingPath ?? test.href;
-}
 
 export function TestCard({ test, answered, headingLevel = 3, lang = "en" }: { test: TestCatalogEntry; answered?: number | null; headingLevel?: 3 | 4; lang?: Language }) {
   const tiger = hasTigerSet(test.id);

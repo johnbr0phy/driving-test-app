@@ -2,7 +2,7 @@ import { shareImageUrl } from "@/lib/shareImageUrl";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { TEST_CATALOG } from "@/lib/testCatalog";
+import { TEST_CATALOG, landingIn } from "@/lib/testCatalog";
 import { TestCard } from "@/components/TestCard";
 import { TestCatalogStatic } from "@/components/TestCatalogStatic";
 import { getPopularTests } from "@/lib/server/popularTests";
@@ -187,7 +187,7 @@ function jsonLdFor(region: Region) {
         "@type": "ListItem",
         position: i + 1,
         name: nameIn(t, regionInfo(region).lang),
-        url: `${siteUrl}${t.href}`,
+        url: `${siteUrl}${landingIn(t, regionInfo(region).lang)}`,
       })),
     },
     {
@@ -363,7 +363,7 @@ export async function HomePage({ region, lang: pickedLang }: { region: Region; l
                   {localTests.filter((t) => aboutTest(t, lang)).map((test) => (
                     <div key={test.id}>
                       <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-1">
-                        <Link href={test.href} className="hover:text-brand-dark hover:underline">{nameIn(test, lang)}</Link>
+                        <Link href={landingIn(test, lang)} className="hover:text-brand-dark hover:underline">{nameIn(test, lang)}</Link>
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">{aboutTest(test, lang)}</p>
                     </div>

@@ -42,7 +42,7 @@ Q = [
  "One third to one half", ["The whole bag", "One quarter or less", "Two thirds to all of it"],
  "Squeeze the bag one third to one half, enough to see visible chest rise. Full squeezes risk hyperventilation and gastric inflation."),
 ("Why do 2025 guidelines favor 30:2 over continuous compressions before an advanced airway?",
- "Rescuers can watch for chest rise", ["It shortens pauses for shocks", "It doubles coronary perfusion", "It avoids all gastric inflation"],
+ "Rescuers can watch for chest rise", ["Rescuers can check a pulse each cycle", "Rescuers can time shocks to breaths", "Rescuers can rest during breaths"],
  "Ventilation is often inadequate. Cycles of 30:2 let the rescuer see whether each breath raises the chest."),
 ("Where should an adult's torso be, relative to the compressor, during CPR?",
  "Rescuer's knee level", ["Rescuer's hip level", "Rescuer's chest level", "Raised on a pillow"],

@@ -29,7 +29,7 @@ Q = [
  "300 mg bolus", ["150 mg bolus", "450 mg bolus", "75 mg bolus"],
  "The first IV or IO dose is a 300 mg bolus, then 150 mg if needed. 150 mg over 10 minutes is the dose for stable VT with a pulse."),
 ("What is the second amiodarone dose in refractory VF?",
- "150 mg", ["300 mg", "75 mg", "450 mg"],
+ "150 mg", ["100 mg", "200 mg", "250 mg"],
  "After the 300 mg first dose, the second IV or IO dose is 150 mg."),
 ("What is the first lidocaine dose for refractory VF or pVT?",
  "1-1.5 mg/kg", ["0.5-0.75 mg/kg", "2-3 mg/kg", "3-5 mg/kg"],

@@ -3259,6 +3259,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PMI PMP Examination Content Outline (July 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/project-management-pmp/new-exam" },
   },
+  acecpt: {
+    answer:
+      "The ACE Certified Personal Trainer exam is the NCCA-accredited certification exam of the American Council on Exercise. It has 150 multiple-choice questions with 3 hours to finish, taken in person or online with a live proctor, and you need a scaled score of 500 or greater to pass. ACE's exam content outline has four domains: program design and implementation 31%, program modification and progression 27%, client onboarding and assessments 23%, and risk management, professional conduct and ethical business practices 19%.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "500 or greater (scaled)" },
+      { label: "Largest domain", value: "Program design and implementation, 31%" },
+      { label: "Before you schedule", value: "Age 18+, high school diploma, CPR/AED with live skills check" },
+      { label: "Delivery", value: "In person or online, live proctored" },
+      { label: "Run by", value: "American Council on Exercise (ACE)" },
+    ],
+    basedOn: "ACE's Personal Trainer exam content outline (2022 role delineation study) and ACE's certification and exam scheduling pages, checked November 2026",
+    source: { name: "ACE: Personal Trainer Exam Content Outline", url: "https://www.acefitness.org/fitness-certifications/pdfs/CPT-Exam-Content-Outline.pdf" },
+  },
   nasm: {
     answer:
       "The NASM Certified Personal Trainer (NASM-CPT) exam is a proctored, NCCA-accredited computer test of 120 multiple-choice questions in 2 hours. 100 questions are scored and 20 are unscored research items, and you need a scaled score of 70 to pass. To sit it you need a high school diploma or equivalent and current CPR and AED certification. The CPT7 blueprint weights six domains: basic and applied sciences and nutrition 15%, client relations and behavioral coaching 15%, assessment 16%, program design 20%, exercise technique and training instruction 24%, and professional development and responsibility 10%.",

@@ -1060,6 +1060,15 @@ export const en = {
     s66Securities: "Securities, Issuers & Remedies",
     s66Communication: "Communication with Clients",
     s66Ethics: "Ethical Practices & Fiduciary Obligations",
+    // acecpt
+    aceScreening: "Health Screening & Readiness to Change",
+    aceAssessment: "Posture, Movement & Fitness Assessments",
+    aceDesign: "Exercise Science & Program Design",
+    aceInstruction: "Exercise Technique & Cueing",
+    aceProgression: "Progressions, Regressions & Monitoring",
+    aceAdherence: "Adherence, Behavior Change & Nutrition",
+    aceRisk: "Risk Management & Safety",
+    aceProfessional: "Scope of Practice, Ethics & Business",
     // aswb
     aswbEthics: "Ethical Principles & Responsibilities",
     aswbService: "Ethical Service Delivery",

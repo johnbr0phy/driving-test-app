@@ -7414,6 +7414,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "SHRM-CP certification page, 2026 SHRM Certification Handbook and 2026 SHRM BASK, checked November 2026",
     source: { name: "SHRM: SHRM Certified Professional", url: "https://www.shrm.org/credentials/certification/shrm-cp" },
   },
+  aphr: {
+    answer:
+      "The aPHR (Associate Professional in Human Resources) is HRCI's knowledge-based certification for people early in an HR career, managers whose main job is outside HR, and people moving into HR; no HR experience is required. The exam has 65 scored questions plus 25 unscored pretest questions, with 1 hour and 45 minutes of testing time plus 30 minutes for administration, at a Pearson VUE testing center or online through OnVUE. HRCI's exam content outline weights five functional areas: Talent Acquisition 19%, Learning & Development 15%, Compensation & Benefits 17%, Employee Relations 24% and Compliance & Risk Management 25%. Scores are scaled, and a scaled score of at least 500 is needed to pass.",
+    rows: [
+      { label: "Questions", value: "90 (65 scored, 25 unscored pretest)" },
+      { label: "Time", value: "1 hour 45 minutes, plus 30 minutes administration" },
+      { label: "Scoring", value: "Scaled score; 500 needed to pass" },
+      { label: "Eligibility", value: "No HR experience required" },
+      { label: "Where", value: "Pearson VUE test center or OnVUE online" },
+      { label: "Run by", value: "HRCI" },
+    ],
+    basedOn: "HRCI aPHR certification page, aPHR Exam Content Outline and Certification Policies and Procedures Handbook (October 2026), checked November 2026",
+    source: { name: "HRCI: aPHR certification", url: "https://www.hrci.org/our-programs/our-certifications/aphr" },
+  },
   cisa: {
     answer:
       "The CISA (Certified Information Systems Auditor) exam is ISACA's certification exam for IT audit, control and assurance professionals. ISACA's content outline gives 150 questions across five job practice domains, in effect since 1 August 2024: Information System Auditing Process 18%, Governance and Management of IT 18%, Information Systems Acquisition, Development and Implementation 12%, Information Systems Operations and Business Resilience 26%, and Protection of Information Assets 26%. Guides quoting ISACA's candidate guide give 4 hours and a scaled score of 200 to 800, with 450 needed to pass. It is taken on a computer at a PSI test center or with a remote proctor.",

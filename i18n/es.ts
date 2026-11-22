@@ -1611,6 +1611,12 @@ export const es: TranslationKeys = {
     shrmPeople: "People Knowledge",
     shrmOrganization: "Organization Knowledge",
     shrmWorkplace: "Workplace Knowledge",
+    // aphr
+    aphrTalent: "Talent Acquisition",
+    aphrLearning: "Learning & Development",
+    aphrRewards: "Compensation & Benefits",
+    aphrRelations: "Employee Relations",
+    aphrCompliance: "Compliance & Risk Management",
     // cisa
     cisaAudit: "Information System Auditing Process",
     cisaGovernance: "Governance & Management of IT",

@@ -224,6 +224,7 @@ import "./titleagent";
 import "./fpc";
 import "./phr";
 import "./shrmcp";
+import "./aphr";
 import "./cisa";
 import "./fortigate";
 import "./cssgb";

@@ -263,6 +263,8 @@ const BORROWED_SETS: Record<string, string> = {
   smartserve: "alcohol",
   // SHRM-CP borrows the PHR human resources tiger.
   shrmcp: "phr",
+  // aPHR borrows the PHR human resources tiger.
+  aphr: "phr",
   proserve: "alcohol",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,

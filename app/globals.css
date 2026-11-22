@@ -6345,6 +6345,20 @@
     --brand-gradient-to: 320 40% 95%;
   }
 
+  /* HRCI aPHR theme (deep blue-violet) */
+  [data-theme="aphr"] {
+    --brand: 265 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 60% 96%;
+    --brand-hover: 265 100% 18%;
+    --brand-dark: 265 100% 15%;
+    --brand-darker: 265 90% 11%;
+    --brand-muted: 265 30% 70%;
+    --brand-border: 265 30% 80%;
+    --brand-border-light: 265 25% 89%;
+    --brand-gradient-to: 245 45% 95%;
+  }
+
   /* ISACA CISA theme */
   [data-theme="cisa"] {
     --brand: 250 20% 32%;
@@ -12140,6 +12154,18 @@
     --brand-muted: 294 25% 45%;
     --brand-dark: 294 70% 65%;
     --brand-darker: 294 60% 78%;
+  }
+
+  .dark [data-theme="aphr"] {
+    --brand: 265 100% 50%;
+    --brand-hover: 265 100% 42%;
+    --brand-light: 265 45% 13%;
+    --brand-gradient-to: 245 40% 11%;
+    --brand-border-light: 265 25% 24%;
+    --brand-border: 265 30% 34%;
+    --brand-muted: 265 30% 45%;
+    --brand-dark: 265 100% 68%;
+    --brand-darker: 265 90% 78%;
   }
 
   .dark [data-theme="cisa"] {

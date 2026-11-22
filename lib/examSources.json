@@ -90,6 +90,11 @@
   "https://apcentral.collegeboard.org/courses/ap-united-states-government-and-politics",
   "https://apcentral.collegeboard.org/media/pdf/ap-us-government-and-politics-course-and-exam-description.pdf"
  ],
+ "aphr": [
+  "https://www.hrci.org/our-programs/our-certifications/aphr",
+  "https://www.hrci.org/docs/default-source/default-document-library/hrci_aphr-exam-content-outline.pdf",
+  "https://www.hrci.org/docs/default-source/pdf-documents/cert-handbook.pdf"
+ ],
  "aphug": [
   "https://apcentral.collegeboard.org/courses/ap-human-geography/exam",
   "https://apcentral.collegeboard.org/courses/ap-human-geography/course",

@@ -1358,5 +1358,13 @@
       "pr": 927,
       "findings": 11
     }
+  ],
+  "oacp": [
+    {
+      "date": "2026-11-21",
+      "kind": "blind review at build",
+      "pr": null,
+      "findings": 14
+    }
   ]
 }

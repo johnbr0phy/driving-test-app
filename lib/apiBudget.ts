@@ -15,13 +15,15 @@ export const MONTHLY_LIMIT_USD = 200;
 /** Nothing new starts once the month's total reaches this; the gap covers runs already going and calls outside the ledger. */
 export const STOP_AT_USD = 190;
 
-/** Each job's share of a month. Sums to 185, under STOP_AT_USD. */
+/** Each job's share of a month. Sums to 188, under STOP_AT_USD. */
 export const JOB_BUDGETS_USD: Readonly<Record<string, number>> = {
   'daily-brief': 35,
   'source-triage': 45,
   'question-audit': 45,
-  'search-gaps': 35,
-  'exam-upkeep': 25,
+  'search-gaps': 28,
+  'exam-upkeep': 20,
+  // AI answer check (lib/aiAnswers.ts): 25 questions twice a week on Sonnet 5.5, about $0.07 each.
+  'ai-answers': 15,
 };
 
 /** A run with less than this to spend would stop before doing anything useful, so it does not start. */
@@ -36,6 +38,15 @@ export const PRICES = {
   output: 20,
   cacheWrite: 5,
   cacheRead: 0.2,
+  webSearch: 0.01,
+};
+
+/** Claude Sonnet 5.5 list prices, same units as PRICES. */
+export const SONNET_PRICES: typeof PRICES = {
+  input: 2,
+  output: 10,
+  cacheWrite: 2.5,
+  cacheRead: 0.1,
   webSearch: 0.01,
 };
 
@@ -56,16 +67,16 @@ export function monthKey(date = new Date()): string {
   return date.toISOString().slice(0, 7);
 }
 
-/** Dollar cost of one response's usage at Opus 5.5 prices. */
-export function usageCostUsd(u: UsageLike | null | undefined): number {
+/** Dollar cost of one response's usage, at Opus 5.5 prices unless others are given. */
+export function usageCostUsd(u: UsageLike | null | undefined, prices: typeof PRICES = PRICES): number {
   if (!u) return 0;
   const m = 1_000_000;
   return (
-    ((u.input_tokens ?? 0) * PRICES.input) / m +
-    ((u.output_tokens ?? 0) * PRICES.output) / m +
-    ((u.cache_creation_input_tokens ?? 0) * PRICES.cacheWrite) / m +
-    ((u.cache_read_input_tokens ?? 0) * PRICES.cacheRead) / m +
-    (u.server_tool_use?.web_search_requests ?? 0) * PRICES.webSearch
+    ((u.input_tokens ?? 0) * prices.input) / m +
+    ((u.output_tokens ?? 0) * prices.output) / m +
+    ((u.cache_creation_input_tokens ?? 0) * prices.cacheWrite) / m +
+    ((u.cache_read_input_tokens ?? 0) * prices.cacheRead) / m +
+    (u.server_tool_use?.web_search_requests ?? 0) * prices.webSearch
   );
 }
 

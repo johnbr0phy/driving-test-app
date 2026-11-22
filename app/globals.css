@@ -5017,6 +5017,20 @@
     --brand-gradient-to: 45 70% 95%;
   }
 
+  /* ACE CPT theme: deep burnt orange */
+  [data-theme="acecpt"] {
+    --brand: 18 100% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 45% 95%;
+    --brand-hover: 18 100% 11%;
+    --brand-dark: 18 100% 9%;
+    --brand-darker: 18 80% 6%;
+    --brand-muted: 18 25% 68%;
+    --brand-border: 18 25% 80%;
+    --brand-border-light: 18 22% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
   /* NASAA Series 66 theme: deep forest green */
   [data-theme="series66"] {
     --brand: 130 100% 16%;
@@ -5708,6 +5722,19 @@
     --brand-border-light: 356 25% 90%;
     --brand-gradient-to: 8 50% 96%;
   }
+  /* PALS theme: bright periwinkle blue, a friendly pediatric hue (252 80% 48%, clear of netplus, mcat and psm under the hue rule) */
+  [data-theme="pals"] {
+    --brand: 252 80% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 80% 97%;
+    --brand-hover: 252 80% 42%;
+    --brand-dark: 252 80% 36%;
+    --brand-darker: 252 75% 26%;
+    --brand-muted: 252 30% 68%;
+    --brand-border: 252 50% 84%;
+    --brand-border-light: 252 50% 92%;
+    --brand-gradient-to: 238 70% 96%;
+  }
   [data-theme="excpt"] {
     --brand: 287 100% 30%;
     --brand-foreground: 0 0% 100%;
@@ -6343,6 +6370,20 @@
     --brand-border: 294 25% 80%;
     --brand-border-light: 294 22% 89%;
     --brand-gradient-to: 320 40% 95%;
+  }
+
+  /* HRCI aPHR theme (deep blue-violet) */
+  [data-theme="aphr"] {
+    --brand: 265 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 265 60% 96%;
+    --brand-hover: 265 100% 18%;
+    --brand-dark: 265 100% 15%;
+    --brand-darker: 265 90% 11%;
+    --brand-muted: 265 30% 70%;
+    --brand-border: 265 30% 80%;
+    --brand-border-light: 265 25% 89%;
+    --brand-gradient-to: 245 45% 95%;
   }
 
   /* ISACA CISA theme */
@@ -11340,6 +11381,18 @@
     --brand-darker: 161 10% 78%;
   }
 
+  .dark [data-theme="acecpt"] {
+    --brand: 18 100% 41.7%;
+    --brand-hover: 18 100% 33.7%;
+    --brand-light: 18 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 18 22% 24%;
+    --brand-border: 18 25% 34%;
+    --brand-muted: 18 25% 45%;
+    --brand-dark: 18 100% 65%;
+    --brand-darker: 18 80% 78%;
+  }
+
   .dark [data-theme="series66"] {
     --brand: 130 100% 26.7%;
     --brand-hover: 130 100% 18.7%;
@@ -12140,6 +12193,18 @@
     --brand-muted: 294 25% 45%;
     --brand-dark: 294 70% 65%;
     --brand-darker: 294 60% 78%;
+  }
+
+  .dark [data-theme="aphr"] {
+    --brand: 265 100% 50%;
+    --brand-hover: 265 100% 42%;
+    --brand-light: 265 45% 13%;
+    --brand-gradient-to: 245 40% 11%;
+    --brand-border-light: 265 25% 24%;
+    --brand-border: 265 30% 34%;
+    --brand-muted: 265 30% 45%;
+    --brand-dark: 265 100% 68%;
+    --brand-darker: 265 90% 78%;
   }
 
   .dark [data-theme="cisa"] {
@@ -12995,6 +13060,17 @@
     --brand-muted: 356 25% 45%;
     --brand-dark: 356 85% 65%;
     --brand-darker: 356 80% 78%;
+  }
+  .dark [data-theme="pals"] {
+    --brand: 252 80% 50%;
+    --brand-hover: 252 80% 42%;
+    --brand-light: 252 45% 13%;
+    --brand-gradient-to: 238 40% 11%;
+    --brand-border-light: 252 35% 24%;
+    --brand-border: 252 40% 34%;
+    --brand-muted: 252 30% 45%;
+    --brand-dark: 252 80% 68%;
+    --brand-darker: 252 75% 78%;
   }
   .dark [data-theme="excpt"] {
     --brand: 287 100% 48%;

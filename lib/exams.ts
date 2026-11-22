@@ -39,7 +39,7 @@ import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 import plcpcPl from "./examTranslations/plcpc.pl.json";
 
-export type ExamId = "oacp" | "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "series66" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "shrmcp" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "acls" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "plteoria" | "plcpc" | "plaplik" | "pllek" | "plbron" | "nltheorie" | "nlbrom" | "nlmoto" | "nlvca" | "nlwft" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt";
+export type ExamId = "oacp" | "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "series66" | "acecpt" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "shrmcp" | "aphr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "acls" | "pals" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "plteoria" | "plcpc" | "plaplik" | "pllek" | "plbron" | "nltheorie" | "nlbrom" | "nlmoto" | "nlvca" | "nlwft" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -10288,6 +10288,72 @@ const acls: ExamConfig = {
 // IDs: tests 46001-46004, sets 46001-46005 (block 46000 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
 
+const pals: ExamConfig = {
+  id: "pals",
+  stateCode: "PALS",
+  idBase: 46300,
+  slug: "/pals",
+  landingPath: "/pals-practice-test",
+  name: "PALS Practice Test",
+  shortName: "PALS",
+  examLabel: "PALS written exam",
+  fullName: "Pediatric Advanced Life Support (PALS) provider course exam",
+  questionIdPrefix: "PALS-",
+  icon: "heart",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 84,
+  // The PALS provider course exam has no published content outline. The blueprint follows the
+  // 2025 AHA and AAP Guidelines for CPR and ECC (pediatric BLS and PALS parts), the 2025
+  // pediatric algorithms (cardiac arrest, bradycardia, tachyarrhythmia) and the 2025 PALS
+  // course's respiratory, shock and arrest case scenarios, read November 2026. Weights are
+  // Tigertest's: pediatric BLS and CPR quality 8, systematic approach 4, respiratory 8, shock 9,
+  // cardiac arrest 10, bradycardia and tachycardia 7, post-arrest care 4. 84% is the minimum
+  // score the AHA's PALS course FAQ sets for the open-resource exam. All items original.
+  blueprint: {
+    palsBls: 8,
+    palsAssess: 4,
+    palsResp: 8,
+    palsShock: 9,
+    palsArrest: 10,
+    palsRhythm: 7,
+    palsPost: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 46301, name: "High-Quality CPR & Systematic Approach", categories: ["palsBls", "palsAssess"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 46302, name: "Respiratory Emergencies", categories: ["palsResp"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 46303, name: "Shock", categories: ["palsShock"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 4, id: 46304, name: "Cardiac Arrest", categories: ["palsArrest"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 5, id: 46305, name: "Arrhythmias & Post-Arrest Care", categories: ["palsRhythm", "palsPost"], size: 44, weightLabel: "11 of 50 test questions" },
+  ],
+  categoryLabels: {
+    palsBls: "Pediatric BLS & High-Quality CPR",
+    palsAssess: "Systematic Approach & Assessment",
+    palsResp: "Respiratory Emergencies",
+    palsShock: "Shock Recognition & Management",
+    palsArrest: "Cardiac Arrest: VF/pVT, Asystole & PEA",
+    palsRhythm: "Bradycardia & Tachycardia With a Pulse",
+    palsPost: "Post-Cardiac Arrest Care",
+  },
+  copy: {
+    guestPrompt: "to save your PALS progress and track every question you miss",
+    trainingHeading: "Train by PALS topic",
+    trainingSub: "Five sets built on the 2025 pediatric algorithms and guidelines. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, aim for 42 or more",
+    heroSubs: [
+      "Five training sets, four practice tests. Start with High-Quality CPR & Systematic Approach.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Retake any test to keep the weight-based doses fresh.",
+    ],
+    sourceLine: "Original questions written from the 2025 AHA and AAP Guidelines for CPR and ECC and the 2025 pediatric algorithms. The course exam needs 84%. Not affiliated with the American Heart Association.",
+    analyticsKey: "pals",
+  },
+};
+// IDs: tests 46301-46304, sets 46301-46305 (block 46300 assigned for this run).
+// Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
+
 const htl: ExamConfig = {
   id: "htl",
   stateCode: "HTL",
@@ -12726,6 +12792,72 @@ const nasm: ExamConfig = {
     ],
     sourceLine: "Based on NASM's CPT7 exam blueprint. Original questions, not affiliated with NASM; 50 per test with a 70% pass line.",
     analyticsKey: "nasm",
+  },
+};
+
+const acecpt: ExamConfig = {
+  id: "acecpt",
+  stateCode: "ACECPT",
+  idBase: 46400,
+  slug: "/ace-cpt",
+  landingPath: "/ace-cpt-practice-test",
+  name: "ACE CPT Practice Test",
+  shortName: "ACE CPT",
+  examLabel: "ACE CPT exam",
+  fullName: "ACE Certified Personal Trainer (ACE-CPT) Exam",
+  questionIdPrefix: "ACE-",
+  icon: "activity",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // ACE Personal Trainer exam content outline (2022 role delineation study; checked November
+  // 2026): 150 questions, 3 hours, scaled score of 500 or greater to pass. Domains: I Client
+  // Onboarding and Assessments 23%, II Program Design and Implementation 31%, III Program
+  // Modification and Progression 27%, IV Risk Management, Professional Conduct, and Ethical
+  // Business Practices 19%. Per 50-question test: 11 / 16 / 14 / 9 (each weight x 50 ends in .5;
+  // the two largest round up). ACE publishes no percentage pass mark; 70% is a practice line.
+  // All items original.
+  blueprint: {
+    aceScreening: 5,
+    aceAssessment: 6,
+    aceDesign: 9,
+    aceInstruction: 7,
+    aceProgression: 7,
+    aceAdherence: 7,
+    aceRisk: 5,
+    aceProfessional: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 46401, name: "Client Onboarding & Assessments", categories: ["aceScreening", "aceAssessment"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 2, id: 46402, name: "Program Design", categories: ["aceDesign"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 46403, name: "Exercise Technique & Progression", categories: ["aceInstruction", "aceProgression"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 46404, name: "Adherence & Behavior Change", categories: ["aceAdherence"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 46405, name: "Risk Management & Professional Conduct", categories: ["aceRisk", "aceProfessional"], size: 36, weightLabel: "9 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aceScreening: "Health Screening & Readiness to Change",
+    aceAssessment: "Posture, Movement & Fitness Assessments",
+    aceDesign: "Exercise Science & Program Design",
+    aceInstruction: "Exercise Technique & Cueing",
+    aceProgression: "Progressions, Regressions & Monitoring",
+    aceAdherence: "Adherence, Behavior Change & Nutrition",
+    aceRisk: "Risk Management & Safety",
+    aceProfessional: "Scope of Practice, Ethics & Business",
+  },
+  copy: {
+    guestPrompt: "to save your ACE CPT progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets covering all four domains of ACE's exam content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real ACE CPT exam",
+    heroSubs: [
+      "Five training sets, four mock tests. Start with Client Onboarding & Assessments.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Schedule your ACE CPT exam.",
+    ],
+    sourceLine: "Based on ACE's Personal Trainer exam content outline. Original questions, not affiliated with ACE; 50 per test with a 70% pass line.",
+    analyticsKey: "acecpt",
   },
 };
 
@@ -21556,6 +21688,66 @@ const shrmcp: ExamConfig = {
   },
 };
 
+const aphr: ExamConfig = {
+  id: "aphr",
+  stateCode: "APHR",
+  idBase: 46500,
+  slug: "/aphr",
+  landingPath: "/aphr-practice-test",
+  name: "aPHR Practice Test",
+  shortName: "aPHR",
+  examLabel: "aPHR exam",
+  fullName: "HRCI Associate Professional in Human Resources (aPHR)",
+  questionIdPrefix: "APHR-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // HRCI aPHR certification page and aPHR Exam Content Outline (took effect in 2021; hrci.org,
+  // fetched 2026-11-22): 65 scored + 25 pretest questions in 1 hour 45 minutes. Functional areas:
+  // Talent Acquisition 19%, Learning & Development 15%, Compensation & Benefits 17%, Employee
+  // Relations 24%, Compliance & Risk Management 25%. Scaled to 50: 9.5, 7.5, 8.5, 12, 12.5. Floors
+  // sum to 48; of the four tied half remainders the two largest areas (Compliance 13, Talent 10)
+  // take one each. HRCI reports a scaled score (500 to pass) and publishes no percentage, so 70% is
+  // Tigertest's readiness line. US federal employment law as in force Nov 2026.
+  blueprint: {
+    aphrTalent: 10,
+    aphrLearning: 7,
+    aphrRewards: 8,
+    aphrRelations: 12,
+    aphrCompliance: 13,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 46501, name: "Talent Acquisition", categories: ["aphrTalent"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 46502, name: "Learning & Development", categories: ["aphrLearning"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 46503, name: "Compensation & Benefits", categories: ["aphrRewards"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 4, id: 46504, name: "Employee Relations", categories: ["aphrRelations"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 46505, name: "Compliance & Risk Management", categories: ["aphrCompliance"], size: 52, weightLabel: "13 of 50 test questions" },
+  ],
+  categoryLabels: {
+    aphrTalent: "Talent Acquisition",
+    aphrLearning: "Learning & Development",
+    aphrRewards: "Compensation & Benefits",
+    aphrRelations: "Employee Relations",
+    aphrCompliance: "Compliance & Risk Management",
+  },
+  copy: {
+    guestPrompt: "to save your aPHR progress and track every question you miss",
+    trainingHeading: "Train by functional area",
+    trainingSub: "Five sets, one for each functional area of HRCI's aPHR exam content outline. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions weighted like the real aPHR, 70% readiness line",
+    heroSubs: [
+      "Five training sets, four mock tests. Start with Talent Acquisition.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Schedule your aPHR exam.",
+    ],
+    sourceLine: "Based on HRCI's aPHR exam content outline. Original questions; 50 per test, weighted like the real exam's five functional areas. 70% is Tigertest's readiness line; HRCI reports a scaled score. Not affiliated with HRCI.",
+    analyticsKey: "aphr",
+  },
+};
+
 const cisa: ExamConfig = {
   id: "cisa",
   stateCode: "CISA",
@@ -27161,7 +27353,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, waterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, series66, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, shrmcp, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, plteoria, plcpc, plaplik, pllek, plbron, nltheorie, nlbrom, nlmoto, nlvca, nlwft, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, oacp, acls, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
+export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, waterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, series66, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, acecpt, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, shrmcp, aphr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, plteoria, plcpc, plaplik, pllek, plbron, nltheorie, nlbrom, nlmoto, nlvca, nlwft, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, oacp, acls, pals, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

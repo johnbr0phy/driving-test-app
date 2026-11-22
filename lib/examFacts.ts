@@ -536,6 +536,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The AHA's 2025 ACLS Product and Course Orientation and the 2025 Guidelines highlights, checked November 2026",
     source: { name: "AHA: 2025 ACLS Product and Course Orientation", url: "https://www.heart.org/-/media/4700782A8F784D86BC7B41D5A2016E2F.pdf" },
   },
+  pals: {
+    answer:
+      "PALS (Pediatric Advanced Life Support) is the American Heart Association course for health care professionals who direct or manage respiratory emergencies, shock and cardiopulmonary arrest in infants and children. The AHA's PALS course FAQ lists completion of an open-resource written exam with a minimum score of 84%, and every student must score at least 70% on a mandatory precourse self-assessment before class. Skills and simulated cases are tested separately. The 2025 course follows the 2025 AHA and American Academy of Pediatrics Guidelines for CPR and Emergency Cardiovascular Care, published in October 2025, and leads to a two-year course completion card.",
+    rows: [
+      { label: "Passing score", value: "84% on the open-resource written exam" },
+      { label: "Precourse self-assessment", value: "At least 70% before class" },
+      { label: "Course formats", value: "Instructor-led, HeartCode blended learning, RQI" },
+      { label: "Completion card", value: "Valid for two years" },
+      { label: "Science", value: "2025 AHA and AAP Guidelines for CPR and ECC (October 2025)" },
+      { label: "Skills testing", value: "Separate, with simulated case scenarios" },
+      { label: "Given by", value: "American Heart Association training centers" },
+    ],
+    basedOn: "The AHA's PALS Provider Course FAQ and training memo, the 2025 PALS product sheet and the 2025 Guidelines highlights, checked November 2026",
+    source: { name: "AHA: PALS Provider Course FAQ", url: "https://www.heart.org/-/media/CPR-Files/Course-FAQs/2020-Course-FAQs/2020-PALS-ILT-FAQ_102120.pdf" },
+  },
   excpt: {
     answer:
       "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",
@@ -3258,6 +3273,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the PMI PMP Examination Content Outline (July 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/project-management-pmp/new-exam" },
+  },
+  acecpt: {
+    answer:
+      "The ACE Certified Personal Trainer exam is the NCCA-accredited certification exam of the American Council on Exercise. It has 150 multiple-choice questions with 3 hours to finish, taken in person or online with a live proctor, and you need a scaled score of 500 or greater to pass. ACE's exam content outline has four domains: program design and implementation 31%, program modification and progression 27%, client onboarding and assessments 23%, and risk management, professional conduct and ethical business practices 19%.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "500 or greater (scaled)" },
+      { label: "Largest domain", value: "Program design and implementation, 31%" },
+      { label: "Before you schedule", value: "Age 18+, high school diploma, CPR/AED with live skills check" },
+      { label: "Delivery", value: "In person or online, live proctored" },
+      { label: "Run by", value: "American Council on Exercise (ACE)" },
+    ],
+    basedOn: "ACE's Personal Trainer exam content outline (2022 role delineation study) and ACE's certification and exam scheduling pages, checked November 2026",
+    source: { name: "ACE: Personal Trainer Exam Content Outline", url: "https://www.acefitness.org/fitness-certifications/pdfs/CPT-Exam-Content-Outline.pdf" },
   },
   nasm: {
     answer:
@@ -7413,6 +7443,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "SHRM-CP certification page, 2026 SHRM Certification Handbook and 2026 SHRM BASK, checked November 2026",
     source: { name: "SHRM: SHRM Certified Professional", url: "https://www.shrm.org/credentials/certification/shrm-cp" },
+  },
+  aphr: {
+    answer:
+      "The aPHR (Associate Professional in Human Resources) is HRCI's knowledge-based certification for people early in an HR career, managers whose main job is outside HR, and people moving into HR; no HR experience is required. The exam has 65 scored questions plus 25 unscored pretest questions, with 1 hour and 45 minutes of testing time plus 30 minutes for administration, at a Pearson VUE testing center or online through OnVUE. HRCI's exam content outline weights five functional areas: Talent Acquisition 19%, Learning & Development 15%, Compensation & Benefits 17%, Employee Relations 24% and Compliance & Risk Management 25%. Scores are scaled, and a scaled score of at least 500 is needed to pass.",
+    rows: [
+      { label: "Questions", value: "90 (65 scored, 25 unscored pretest)" },
+      { label: "Time", value: "1 hour 45 minutes, plus 30 minutes administration" },
+      { label: "Scoring", value: "Scaled score; 500 needed to pass" },
+      { label: "Eligibility", value: "No HR experience required" },
+      { label: "Where", value: "Pearson VUE test center or OnVUE online" },
+      { label: "Run by", value: "HRCI" },
+    ],
+    basedOn: "HRCI aPHR certification page, aPHR Exam Content Outline and Certification Policies and Procedures Handbook (October 2026), checked November 2026",
+    source: { name: "HRCI: aPHR certification", url: "https://www.hrci.org/our-programs/our-certifications/aphr" },
   },
   cisa: {
     answer:

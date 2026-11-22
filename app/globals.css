@@ -5681,6 +5681,19 @@
     --brand-border-light: 170 15% 88%;
     --brand-gradient-to: 185 45% 95%;
   }
+  /* ACLS theme: deep oxblood cardiac red (hue 356 at 14%, the one free red slot beside CPR 355 and paramedic 10) */
+  [data-theme="acls"] {
+    --brand: 356 85% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 60% 96%;
+    --brand-hover: 356 85% 11%;
+    --brand-dark: 356 85% 9%;
+    --brand-darker: 356 80% 6%;
+    --brand-muted: 356 25% 66%;
+    --brand-border: 356 30% 80%;
+    --brand-border-light: 356 25% 90%;
+    --brand-gradient-to: 8 50% 96%;
+  }
   [data-theme="excpt"] {
     --brand: 287 100% 30%;
     --brand-foreground: 0 0% 100%;
@@ -12945,6 +12958,17 @@
     --brand-muted: 170 20% 45%;
     --brand-dark: 170 100% 65%;
     --brand-darker: 170 90% 78%;
+  }
+  .dark [data-theme="acls"] {
+    --brand: 356 85% 49.3%;
+    --brand-hover: 356 85% 41.3%;
+    --brand-light: 356 45% 13%;
+    --brand-gradient-to: 8 40% 11%;
+    --brand-border-light: 356 25% 24%;
+    --brand-border: 356 30% 34%;
+    --brand-muted: 356 25% 45%;
+    --brand-dark: 356 85% 65%;
+    --brand-darker: 356 80% 78%;
   }
   .dark [data-theme="excpt"] {
     --brand: 287 100% 48%;

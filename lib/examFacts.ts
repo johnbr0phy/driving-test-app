@@ -521,6 +521,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "CCI's CCT credential page and CCT Examination Overview (June 2022), checked November 2026",
     source: { name: "CCI: Certified Cardiographic Technician (CCT)", url: "https://cci-online.org/credentials/certified-cardiographic-technician/" },
   },
+  acls: {
+    answer:
+      "ACLS (Advanced Cardiovascular Life Support) is the American Heart Association course for health care professionals who manage adult cardiac arrest and other cardiovascular emergencies. The instructor-led course ends with a proctored written exam, usually taken online, and the AHA's 2025 ACLS course orientation says students must pass it with a minimum score of 84%. Before class, students must also pass a precourse self-assessment with at least 70%. In the HeartCode blended course the cognitive assessment is part of the online portion instead. Skills, including a megacode, are tested separately. The 2025 course follows the 2025 AHA Guidelines for CPR and Emergency Cardiovascular Care, published in October 2025.",
+    rows: [
+      { label: "Passing score", value: "84% on the course exam" },
+      { label: "Precourse self-assessment", value: "At least 70% before class" },
+      { label: "Exam format", value: "Proctored, usually online, at the end of the course" },
+      { label: "Course formats", value: "Instructor-led, HeartCode blended learning, RQI" },
+      { label: "Science", value: "2025 AHA Guidelines for CPR and ECC (October 2025)" },
+      { label: "Skills testing", value: "Separate, including a megacode" },
+      { label: "Given by", value: "American Heart Association training centers" },
+    ],
+    basedOn: "The AHA's 2025 ACLS Product and Course Orientation and the 2025 Guidelines highlights, checked November 2026",
+    source: { name: "AHA: 2025 ACLS Product and Course Orientation", url: "https://www.heart.org/-/media/4700782A8F784D86BC7B41D5A2016E2F.pdf" },
+  },
   excpt: {
     answer:
       "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",

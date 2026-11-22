@@ -3876,6 +3876,8 @@ export const zh: TranslationKeys = {
     notAvailableInApp:
       "App 内无法购买 Premium 高级版。你可以在网页浏览器中打开 tigertest.io 升级，账户会自动同步。",
     okGotIt: "知道了",
+    alreadyBought: "你已用 {email} 购买了 Premium。",
+    signInToUse: "登录即可使用",
   },
 
   // Mastery progress

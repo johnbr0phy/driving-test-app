@@ -4,6 +4,7 @@ import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
 import { noteLandingTryPurchase } from "@/lib/landingTryTest";
 import { isInternalBrowser } from "@/lib/internal";
+import { guestPaidEmail } from "@/lib/guestPaidHint";
 import { knownPremiumPrice } from "@/lib/localPrice";
 import { USD_PRICE } from "@/lib/pricing";
 import { checkoutAttribution } from "@/lib/funnel";
@@ -51,7 +52,17 @@ export function trackPaywallHit(itemId: string, itemName: string, location = "da
 // Persist the hit to Firestore (via API) so the admin dashboard can report
 // paywall hits and per-paywall conversion. Fire-and-forget; never blocks UI.
 async function recordPaywallHit(itemId: string, itemName: string, location: string) {
+  try {
+    // Wait for Firebase to restore a session, so a signed-in tap during page
+    // load is not booked as a guest (startCheckout waits the same way).
+    await auth.authStateReady();
+  } catch {
+    // Carry on with whatever auth knows.
+  }
   if (isInternalBrowser(auth.currentUser?.email)) return;
+  // A signed-out browser that already paid as a guest is told to sign in,
+  // not sold to: it is not a prospect (lib/guestPaidHint.ts).
+  if (!auth.currentUser && guestPaidEmail()) return;
   try {
     const headers: Record<string, string> = { "Content-Type": "application/json" };
     const user = auth.currentUser;
@@ -64,14 +75,35 @@ async function recordPaywallHit(itemId: string, itemName: string, location: stri
         // Not signed in or token refresh failed; record as an anonymous hit.
       }
     }
+    const firsts = notePaywallDay(headers.Authorization ? "signedIn" : "guest");
     await fetch("/api/analytics/paywall", {
       method: "POST",
       headers,
-      body: JSON.stringify({ itemId, itemName, location }),
+      body: JSON.stringify({ itemId, itemName, location, ...firsts }),
       keepalive: true,
     });
   } catch {
     // Analytics must never surface errors to the user.
+  }
+}
+
+// Whether this is the browser's first paywall hit of the UTC day, and its
+// first as a guest or signed in, so /admin can count browsers as well as
+// opens without storing any id (app/api/analytics/paywall).
+const PAYWALL_DAY_KEY = "tigertest-paywall-day";
+
+function notePaywallDay(state: "guest" | "signedIn"): { newBrowserToday?: true; newStateToday?: true } {
+  const day = new Date().toISOString().slice(0, 10);
+  try {
+    const raw = JSON.parse(localStorage.getItem(PAYWALL_DAY_KEY) || "null") as { day?: string; guest?: boolean; signedIn?: boolean } | null;
+    const rec = raw?.day === day ? raw : { day };
+    const newBrowserToday = !rec.guest && !rec.signedIn;
+    const newStateToday = !rec[state];
+    if (newStateToday) localStorage.setItem(PAYWALL_DAY_KEY, JSON.stringify({ ...rec, [state]: true }));
+    return { ...(newBrowserToday && { newBrowserToday: true }), ...(newStateToday && { newStateToday: true }) };
+  } catch {
+    // Storage blocked: count the open, not the browser.
+    return {};
   }
 }
 

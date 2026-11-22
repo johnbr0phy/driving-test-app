@@ -483,6 +483,8 @@ export const it: TranslationKeys = {
     notAvailableInApp:
       "Gli acquisti Premium non sono disponibili nell'app. Puoi passare a Premium su tigertest.io dal browser: il tuo account si sincronizza da solo.",
     okGotIt: "Ho capito",
+    alreadyBought: "Hai già acquistato Premium con {email}.",
+    signInToUse: "Accedi per usarlo",
   },
 
   mastery: {

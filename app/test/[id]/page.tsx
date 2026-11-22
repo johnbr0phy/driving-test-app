@@ -16,7 +16,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { trackStatsEntry } from "@/lib/analytics";
+import { trackPaywallHit, trackStatsEntry, trackViewItem } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 import { DMV_ROUTES } from "@/lib/examRoutes";
@@ -218,6 +218,10 @@ export default function TestPage() {
               type="button"
               onClick={() => {
                 if (!isGuest) trackStatsEntry("test_header");
+                // Counted under the checkout location this page sells from, so
+                // the Today tab's per-paywall rate lines up.
+                trackPaywallHit("test_header_stats", "Test Header Stats", "practice_test_4");
+                trackViewItem("practice_test_4");
                 setPaywallOpen(true);
               }}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"

@@ -24,6 +24,8 @@ import {
   type PaywallVisit,
 } from "@/lib/paywallTest";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { GuestPaidNotice } from "@/components/GuestPaidNotice";
+import { guestPaidEmail } from "@/lib/guestPaidHint";
 
 interface PaywallModalProps {
   open: boolean;
@@ -90,6 +92,12 @@ export function PaywallModal({
     if (open && language === "en" && variant) void recordPaywallTestView(variant, visit.hit, visit.arm);
   }, [open, language, variant, visit]);
   const shownHeadline = RETURN_HEADLINES[hit] ?? headline;
+  // A signed-out browser that already paid as a guest is told to sign in
+  // instead of being sold Premium again (lib/guestPaidHint.ts). Read as the
+  // modal opens and kept through the closing animation.
+  const paidRef = useRef<string | null>(null);
+  if (open) paidRef.current = isGuest && !isNative ? guestPaidEmail() : null;
+  const paidEmail = paidRef.current;
 
   if (language === "en" && variant !== "classic") {
     return (
@@ -102,6 +110,7 @@ export function PaywallModal({
         isGuest={isGuest}
         onSignUp={onSignUp}
         hit={hit}
+        paidEmail={paidEmail}
       />
     );
   }
@@ -156,7 +165,7 @@ export function PaywallModal({
         </div>
 
         {/* Price section */}
-        {!isNative && (
+        {!isNative && !paidEmail && (
           <div className="mb-5">
             <div className="flex items-baseline justify-between">
               <span className="text-4xl font-bold text-gray-900 dark:text-gray-50">{price}</span>
@@ -171,7 +180,9 @@ export function PaywallModal({
         )}
 
         {/* CTA section */}
-        {isNative && !isGuest ? (
+        {paidEmail ? (
+          <GuestPaidNotice email={paidEmail} onClose={() => onOpenChange(false)} />
+        ) : isNative && !isGuest ? (
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-1">
               {t("paywall.notAvailableInApp")}

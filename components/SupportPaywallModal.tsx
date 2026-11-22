@@ -17,6 +17,7 @@ import { en } from "@/i18n";
 import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { JohnFace } from "@/components/JohnFace";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
+import { GuestPaidNotice } from "@/components/GuestPaidNotice";
 import type { PaywallHit } from "@/lib/paywallTestIds";
 
 interface SupportPaywallModalProps {
@@ -30,6 +31,8 @@ interface SupportPaywallModalProps {
   onSignUp?: () => void;
   /** Which paywall visit this is for the browser: the message changes on the second and third. */
   hit?: PaywallHit;
+  /** Masked address a guest checkout from this browser already paid for (lib/guestPaidHint.ts). */
+  paidEmail?: string | null;
 }
 
 const DMV_BENEFITS = [
@@ -66,6 +69,7 @@ export function SupportPaywallModal({
   onSignUp,
   benefits,
   hit = 1,
+  paidEmail = null,
 }: SupportPaywallModalProps) {
   const price = usePremiumPrice();
   const message = MESSAGES[hit];
@@ -104,7 +108,9 @@ export function SupportPaywallModal({
           ))}
         </ul>
 
-        {isNative && !isGuest ? (
+        {paidEmail ? (
+          <GuestPaidNotice email={paidEmail} onClose={() => onOpenChange(false)} />
+        ) : isNative && !isGuest ? (
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-1">
               {en.paywall.notAvailableInApp}

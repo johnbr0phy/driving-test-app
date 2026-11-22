@@ -484,6 +484,8 @@ export const el: TranslationKeys = {
     notAvailableInApp:
       "Δεν μπορείς να αγοράσεις το Premium μέσα από την εφαρμογή. Μπορείς να αναβαθμίσεις στο tigertest.io από τον browser. Ο λογαριασμός σου συγχρονίζεται αυτόματα.",
     okGotIt: "Εντάξει",
+    alreadyBought: "Έχεις ήδη αγοράσει το Premium με το {email}.",
+    signInToUse: "Συνδέσου για να το χρησιμοποιήσεις",
   },
 
   mastery: {

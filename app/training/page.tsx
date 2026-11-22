@@ -23,7 +23,7 @@ import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { states } from "@/data/states";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { trackStatsEntry } from "@/lib/analytics";
+import { trackPaywallHit, trackStatsEntry, trackViewItem } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
@@ -361,6 +361,10 @@ function TrainingPageContent() {
               type="button"
               onClick={() => {
                 if (!isGuest) trackStatsEntry("training_header");
+                // Counted under the checkout location this page sells from, so
+                // the Today tab's per-paywall rate lines up.
+                trackPaywallHit("training_header_stats", "Training Header Stats", "training_set_4");
+                trackViewItem("training_set_4");
                 setPaywallOpen(true);
               }}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"

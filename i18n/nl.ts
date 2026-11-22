@@ -483,6 +483,8 @@ export const nl: TranslationKeys = {
     notAvailableInApp:
       "Premium kun je niet in de app kopen. Upgraden kan op tigertest.io in je browser; je account synchroniseert vanzelf.",
     okGotIt: "Begrepen",
+    alreadyBought: "Je hebt Premium al gekocht met {email}.",
+    signInToUse: "Log in om het te gebruiken",
   },
 
   mastery: {

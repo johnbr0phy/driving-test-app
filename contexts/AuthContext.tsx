@@ -1,6 +1,7 @@
 "use client";
 
 import { takeGuestPurchaseSignIn } from "@/lib/guestPurchaseSignIn";
+import { clearGuestPaid } from "@/lib/guestPaidHint";
 import { createContext, useContext, useEffect, useState, useCallback } from "react";
 import { trackFunnelSignup } from "@/lib/funnel";
 import {
@@ -154,6 +155,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (isInternalEmail(user?.email)) markInternalBrowser();
       // Move this browser's guest "enrolled" marks onto the account (lib/enrollment).
       if (user) claimEnrollments();
+      // Signed in now: a guest purchase hint has done its job (lib/guestPaidHint).
+      if (user) clearGuestPaid();
       // An account a guest checkout made, now signed in to with the email
       // verified: its owner takes it over (app/api/account/guest-claim).
       if (user && user.uid.startsWith('gc_') && user.emailVerified && user.providerData.length > 0) {

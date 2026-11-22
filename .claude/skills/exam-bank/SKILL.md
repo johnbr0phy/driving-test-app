@@ -104,6 +104,11 @@ nearest existing banks before you finish (`python3 -I tools/check_stem_length.py
 Nov 2026 batch ran 20 to 26 words, 40% over its peers, and read as wordy. CI fails a new bank
 whose median is over 20 words (`--all --baseline tools/stem_length_baseline.json`).
 
+Spread key lengths over all four ranks. Trimming the key just under one distractor to pass the
+key-longest rule only moves the tell: "pick the second-longest option" scored 50% on PALS and
+SHRM-CP in Nov 2026. `python3 -I tools/check_length_rank.py <bank>` must show no rank over 40%
+(aim for 18 to 33% each); CI fails a new bank over it.
+
 **Lean answers.** Write options as bare noun phrases: "Appeal Board", not "The Appeal Board";
 "Rated-capacity chart", not "The rated-capacity chart". Keep a leading The/A/An only where the
 option needs it (a full sentence, or "A comma" in a punctuation question). The site's median is

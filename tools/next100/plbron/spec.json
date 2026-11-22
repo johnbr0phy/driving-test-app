@@ -1,0 +1,36 @@
+{
+  "id": "plbron",
+  "stateCode": "PLBRON",
+  "idBase": 45800,
+  "prefix": "PLBRON-",
+  "slug": "/poland-firearms-permit-exam",
+  "landingPath": "/pl/egzamin-na-pozwolenie-na-bron",
+  "dataFile": "data/pl-bron-questions.json",
+  "language": "pl",
+  "locale": "pl-PL",
+  "name": "Egzamin na pozwolenie na broń",
+  "shortName": "Pozwolenie na broń",
+  "examLabel": "Egzamin na pozwolenie na broń, część teoretyczna",
+  "fullName": "Egzamin ze znajomości przepisów dotyczących posiadania broni (część teoretyczna)",
+  "english": {
+    "name": "Poland Firearms Permit Exam (Theory Part)",
+    "shortName": "Polish firearms permit exam",
+    "fullName": "Polish firearms permit exam, theory part (egzamin na pozwolenie na broń, część teoretyczna), in Polish"
+  },
+  "icon": "target",
+  "testCount": 6,
+  "questionsPerTest": 20,
+  "passPct": 90,
+  "categories": [
+    {"key": "plbrPojecia", "label": "Rodzaje broni i amunicja", "perTest": 3, "pool": 28, "segment": "POJ"},
+    {"key": "plbrPozwolenia", "label": "Pozwolenie na broń", "perTest": 4, "pool": 36, "segment": "POZ"},
+    {"key": "plbrObowiazki", "label": "Obowiązki posiadacza broni", "perTest": 3, "pool": 32, "segment": "OBO"},
+    {"key": "plbrPrzechowywanie", "label": "Przechowywanie, noszenie i przewóz", "perTest": 2, "pool": 24, "segment": "PRZ"},
+    {"key": "plbrGranica", "label": "Europejska karta broni palnej, przywóz i wywóz", "perTest": 2, "pool": 16, "segment": "EKB"},
+    {"key": "plbrStrzelnica", "label": "Strzelnica i regulamin strzelnicy", "perTest": 2, "pool": 20, "segment": "STR"},
+    {"key": "plbrKarne", "label": "Przestępstwa i wykroczenia związane z bronią", "perTest": 2, "pool": 24, "segment": "KAR"},
+    {"key": "plbrObrona", "label": "Obrona konieczna i stan wyższej konieczności", "perTest": 2, "pool": 20, "segment": "OBR"}
+  ],
+  "notes": "6 tests x 20 = 120 of 200 items (every pool at least 6x its per-test count; 3/4/3/2/2/2/2/2). The real theory part (rozporządzenie MSWiA z 28.07.2023, Dz. U. poz. 1475, § 4) is 20 single-choice questions with three options (A, B, C), 30 minutes, pass with at least 18 correct; Tigertest models it at the same length and line: passPct 90 = ceil(0.9 x 20) = 18 of 20. Our items have four options (v1 engine). Scope per § 4 ust. 1: ustawa o broni i amunicji with its implementing regulations and Kodeks karny provisions on weapon-related offences; the per-test split is Tigertest's own (no weights are published). Training: five topic sets 45801-45805 (28, 36, 32, 60, 44; all at most 60), dashboard 5 sets + 6 tests = 11 steps.",
+  "trainingSets": "topic sets 45801-45805, see WIRING.md"
+}

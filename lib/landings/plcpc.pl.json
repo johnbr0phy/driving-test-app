@@ -1,0 +1,107 @@
+{
+  "metaTitle": "Test kwalifikacyjny kierowcy zawodowego 2026 - testy próbne za darmo",
+  "metaDescription": "Bezpłatne testy próbne do testu kwalifikacyjnego po kwalifikacji wstępnej dla kierowców ciężarówek i autobusów: 200 oryginalnych pytań z czasu pracy, tachografów, ładunków i przewozu osób, każde z wyjaśnieniem.",
+  "keywords": "kwalifikacja wstępna testy, test kwalifikacyjny kierowcy zawodowego, kwalifikacja wstępna pytania, testy na kod 95, kwalifikacja wstępna przyspieszona test, test kwalifikacyjny WORD, testy kierowca zawodowy C, testy kierowca zawodowy D, świadectwo kwalifikacji zawodowej",
+  "breadcrumb": {
+    "home": "Strona główna",
+    "allTests": "Wszystkie testy",
+    "current": "Test kwalifikacyjny kierowcy zawodowego"
+  },
+  "h1": "Test kwalifikacyjny kierowcy zawodowego 2026, testy próbne za darmo",
+  "subtitle": "200 pytań dla kierowców ciężarówek i autobusów, z wyjaśnieniami. Cztery testy po 50 pytań. Zacznij za darmo, bez zakładania konta.",
+  "facts": {
+    "h2": "Test kwalifikacyjny w skrócie",
+    "answer": "Kto w Polsce zawodowo kieruje ciężarówką (C1, C, C+E) albo autobusem (D1, D, D+E), potrzebuje oprócz prawa jazdy kwalifikacji wstępnej. Kurs w ośrodku szkolenia trwa 280 godzin, a w wersji przyspieszonej 140 godzin, i kończy się testem kwalifikacyjnym na komputerze w wojewódzkim ośrodku ruchu drogowego (WORD). Według rozporządzenia Ministra Infrastruktury w sprawie szkolenia i egzaminowania kierowców (Dz.U. 2026 poz. 1355, w mocy od 3 listopada 2026 r.) test ma 30 pytań i trwa 45 minut: 20 pytań z części podstawowej i 10 z części specjalistycznej dla bloku C albo D. Każde pytanie ma jedną poprawną odpowiedź. Trzeba odpowiedzieć poprawnie na co najmniej 16 pytań podstawowych i co najmniej 5 specjalistycznych. Po zdaniu dyrektor WORD wydaje świadectwo kwalifikacji zawodowej, a kod 95 trafia do prawa jazdy.",
+    "tigertest": "Tigertest ma 200 oryginalnych pytań próbnych po polsku i po angielsku; zaczynasz za darmo i bez konta. Pytania napisano na podstawie ustaw i rozporządzeń, nie skopiowano ich z katalogu pytań egzaminacyjnych. Tigertest nie jest związany z żadnym WORD, Ministerstwem Infrastruktury ani ośrodkiem szkolenia.",
+    "rows": [
+      { "label": "Przeprowadza", "value": "Wojewódzki ośrodek ruchu drogowego (WORD)" },
+      { "label": "Pytania", "value": "30: 20 z części podstawowej i 10 z części specjalistycznej (blok C albo D)" },
+      { "label": "Zaliczenie", "value": "Co najmniej 16/20 i 5/10, każda część osobno" },
+      { "label": "Czas", "value": "45 minut (po kwalifikacji uzupełniającej 10 pytań w 15 minut)" },
+      { "label": "Kurs", "value": "280 godzin, przyspieszony 140 godzin" },
+      { "label": "Język", "value": "Polski; WORD może zapewnić test w innym języku albo tłumacza przysięgłego" },
+      { "label": "Po zdaniu", "value": "Świadectwo kwalifikacji zawodowej i kod 95; szkolenie okresowe co 5 lat" },
+      { "label": "Testy próbne Tigertest", "value": "4 x 50 pytań, cel 70%" }
+    ],
+    "footnote": "Na podstawie rozporządzenia Ministra Infrastruktury z dnia 7 października 2026 r. w sprawie szkolenia i egzaminowania kierowców wykonujących przewóz drogowy (Dz.U. 2026 poz. 1355) i ustawy o transporcie drogowym (Dz.U. 2025 poz. 1490), sprawdzono w listopadzie 2026 r. Przepisy się zmieniają, więc sprawdź aktualne informacje u źródła",
+    "source": { "name": "Dz.U. 2026 poz. 1355 (ISAP / ELI)", "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/1355/text.pdf" }
+  },
+  "howItWorks": {
+    "h2": "Jak to działa",
+    "cards": [
+      {
+        "h3": "Ucz się tematami",
+        "p": "Pięć zestawów: racjonalna jazda, hamulce i tachografy; czas pracy i kwalifikacje; zagrożenia, zdrowie i sytuacje awaryjne; blok C dla ciężarówek i blok D dla autobusów. Błędne pytania wracają, aż je opanujesz."
+      },
+      {
+        "h3": "Pełne testy próbne",
+        "p": "Cztery testy po 50 pytań w proporcjach prawdziwego testu: około dwóch trzecich pytań z części podstawowej i jednej trzeciej ze specjalistycznej, z blokiem C i D w każdym teście. Celem jest 70%, a każda odpowiedź wyjaśnia przepis i najczęstszy błąd."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Zgodnie z programem kwalifikacji wstępnej",
+    "p": "Prawdziwy test losuje 2 lub 3 pytania z każdego z dziewięciu działów części podstawowej z załącznika nr 1 do rozporządzenia oraz pytania specjalistyczne dla twojego bloku. Dokładniejszych wag nie publikuje się, więc podział jest Tigertest. Przepisy według stanu na 2026 r.: czas jazdy UE z Pakietem Mobilności, ustawa o czasie pracy kierowców, tachografy inteligentne, limity Prawa o ruchu drogowym dla ciężarówek i autobusów, wystawanie ładunku, CMR, podstawy ADR i prawa pasażerów autobusów.",
+    "items": [
+      "Czas jazdy i czas pracy (12%)",
+      "Racjonalna jazda i zużycie paliwa (8%)",
+      "Hamulce, zwalniacze i systemy wspomagania (8%)",
+      "Tachografy i zapisy (8%)",
+      "Zagrożenia na drodze i w pracy (8%)",
+      "Sytuacje awaryjne, pierwsza pomoc i pożar (8%)",
+      "Zdrowie, zmęczenie, alkohol i leki (6%)",
+      "Kwalifikacje, obsługa i wizerunek firmy (6%)",
+      "Przestępczość i przemyt ludzi (4%)",
+      "Blok C: ładunki, przewóz rzeczy i rynek (16%)",
+      "Blok D: pasażerowie, przewóz osób i rynek (16%)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Jak zdać test kwalifikacyjny",
+    "steps": [
+      {
+        "h3": "1. Zalicz obie części, nie tylko sumę",
+        "p": "W prawdziwym teście potrzebujesz 16 z 20 pytań podstawowych, czyli 80%, oraz 5 z 10 specjalistycznych. Dobry wynik łączny nie uratuje słabej części podstawowej, więc celuj w 40 lub więcej na 50 w teście próbnym, z niewieloma błędami w tematach podstawowych."
+      },
+      {
+        "h3": "2. Zrób jedną tabelę czasu jazdy",
+        "p": "Zapisz: 4,5 godziny jazdy, potem 45 minut przerwy (albo 15 i 30), 9 godzin dziennie (10 dwa razy w tygodniu), 56 w tygodniu, 90 w dwóch tygodniach, 11 godzin odpoczynku dobowego (3 plus 9 przy podziale, 9 skróconego), 45 godzin odpoczynku tygodniowego (24 skróconego), a obok ustawę: 8 godzin na dobę i średnio 40 w tygodniu, 48 z nadgodzinami i najwyżej 60 w tygodniu, 30 albo 45 minut przerwy po 6 godzinach pracy, 10 godzin przy pracy w porze nocnej."
+      },
+      {
+        "h3": "3. Zapamiętaj polskie liczby dla pojazdów ciężkich",
+        "p": "Powyżej 3,5 t: 80 km/h na autostradzie i drodze ekspresowej, 70 km/h na innych drogach poza obszarem zabudowanym, 100 km/h dla autobusów spełniających dodatkowe warunki. W tunelu ponad 500 m: 80 m odstępu dla zespołu pojazdów. Ładunek: 23 cm z jednej strony, 0,5 m z przodu, oznaczenie z tyłu od 0,5 m, wysokość 4 m. Badania lekarskie co 5 lat, od 60. roku życia co 30 miesięcy, szkolenie okresowe co pięć lat."
+      },
+      {
+        "h3": "4. Popraw błędy i powtórz test",
+        "p": "Tigertest śledzi twoje wyniki w każdym temacie. Opanuj każdy zestaw, rozwiąż test próbny, potem przećwicz błędne pytania i najsłabszy zestaw. Przed terminem w WORD rozwiąż dwa testy pod rząd."
+      }
+    ]
+  },
+  "faqTitle": "Najczęstsze pytania o test kwalifikacyjny",
+  "faqs": [
+    {
+      "q": "Czym jest test kwalifikacyjny kierowcy zawodowego?",
+      "a": "To test kończący kwalifikację wstępną, którą w Polsce musi mieć każdy, kto zawodowo kieruje ciężarówką (C1, C, C+E) albo autobusem (D1, D, D+E). Po kursie w ośrodku szkolenia, 280 godzin albo 140 w wersji przyspieszonej, zdajesz test na komputerze w WORD. Po zdaniu otrzymujesz świadectwo kwalifikacji zawodowej, a kod 95 wpisuje się do prawa jazdy albo do karty kwalifikacji kierowcy."
+    },
+    {
+      "q": "Ile jest pytań i ile trzeba zdobyć?",
+      "a": "Według rozporządzenia Dz.U. 2026 poz. 1355, w mocy od 3 listopada 2026 r., test po kwalifikacji wstępnej lub przyspieszonej ma 30 pytań w 45 minut: 20 z części podstawowej i 10 z części specjalistycznej dla bloku C albo D. Każde pytanie ma jedną poprawną odpowiedź. Trzeba mieć co najmniej 16 poprawnych odpowiedzi w części podstawowej i co najmniej 5 w specjalistycznej. Testy Tigertest mają 50 pytań z obu bloków, a celem jest 70% (35 z 50), tyle samo co 21 z 30."
+    },
+    {
+      "q": "Czy test można zdawać w innym języku?",
+      "a": "Test odbywa się po polsku. Rozporządzenie pozwala WORD zapewnić test w języku, którym kandydat włada; prasa branżowa podaje, że WORD w Warszawie przeprowadzał go z zestawami pytań przetłumaczonymi na angielski. W innym wypadku osoba, która nie zna polskiego, może przyjść z tłumaczem przysięgłym. O dostępne języki zapytaj swój WORD przy zapisie. Testy próbne Tigertest są po polsku i po angielsku."
+    },
+    {
+      "q": "Co obejmuje test?",
+      "a": "Część podstawowa obejmuje działy z załącznika nr 1 do rozporządzenia: racjonalną jazdę i charakterystyki silnika, hamulce i systemy bezpieczeństwa, takie jak ESP, AEBS, ABS i TCS, czas jazdy i tachografy, zagrożenie wypadkami, przestępczość i przemyt ludzi, zagrożenia fizyczne i ergonomię, zdrowie i zmęczenie, sytuacje awaryjne i pierwszą pomoc oraz wizerunek przewoźnika. Część specjalistyczna obejmuje dla ciężarówek załadunek, oszczędną jazdę, przewidywanie zagrożeń, przepisy o przewozie rzeczy i rynek przewozów, a dla autobusów komfort i bezpieczeństwo pasażerów, obciążenie autobusu, przepisy o przewozie osób i rynek przewozów pasażerskich."
+    },
+    {
+      "q": "Czy to prawdziwe pytania z WORD?",
+      "a": "Nie. Każde pytanie jest oryginalne, napisane na podstawie ustawy o transporcie drogowym, Prawa o ruchu drogowym, ustawy o czasie pracy kierowców i przepisów UE dla kierowców zawodowych według stanu na 2026 r. Tigertest nie jest związany z żadnym WORD, Ministerstwem Infrastruktury ani ośrodkiem szkolenia. Zajęcia praktyczne kursu nie są tu odwzorowane, a zdanie testu próbnego nie daje kwalifikacji."
+    }
+  ],
+  "finalCta": {
+    "h2": "Przygotuj się do testu kwalifikacyjnego",
+    "p": "Zacznij za darmo. Bez zakładania konta. 200 oryginalnych pytań dla kierowców ciężarówek i autobusów w Polsce."
+  }
+}

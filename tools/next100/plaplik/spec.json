@@ -1,0 +1,40 @@
+{
+  "id": "plaplik",
+  "stateCode": "PLAPLIK",
+  "idBase": 45600,
+  "prefix": "PLAPL-",
+  "slug": "/poland-legal-apprenticeship-exam",
+  "landingPath": "/pl/egzamin-na-aplikacje",
+  "dataFile": "data/pl-aplikacje-questions.json",
+  "language": "pl",
+  "locale": "pl-PL",
+  "name": "Egzamin na aplikację adwokacką i radcowską",
+  "shortName": "Egzamin na aplikację",
+  "examLabel": "Egzamin wstępny na aplikację",
+  "fullName": "Egzamin wstępny na aplikację adwokacką i radcowską",
+  "english": {
+    "name": "Poland Legal Apprenticeship Entrance Exam (Advocate and Legal Adviser)",
+    "shortName": "Polish legal apprenticeship exam",
+    "fullName": "Polish entrance exam for the advocate and legal adviser apprenticeships (egzamin wstępny na aplikację adwokacką i radcowską), in Polish"
+  },
+  "icon": "book",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 67,
+  "categories": [
+    {"key": "plapCywilne", "label": "Prawo cywilne", "perTest": 7, "pool": 28, "segment": "CYW"},
+    {"key": "plapRodzinne", "label": "Prawo rodzinne i opiekuńcze", "perTest": 2, "pool": 8, "segment": "ROD"},
+    {"key": "plapCywProc", "label": "Postępowanie cywilne", "perTest": 7, "pool": 28, "segment": "KPC"},
+    {"key": "plapKarne", "label": "Prawo karne i karne skarbowe", "perTest": 6, "pool": 24, "segment": "KAR"},
+    {"key": "plapKarProc", "label": "Postępowanie karne", "perTest": 6, "pool": 24, "segment": "KPK"},
+    {"key": "plapWykroczenia", "label": "Prawo wykroczeń", "perTest": 2, "pool": 8, "segment": "WYK"},
+    {"key": "plapPraca", "label": "Prawo pracy", "perTest": 4, "pool": 16, "segment": "PRA"},
+    {"key": "plapGospodarcze", "label": "Prawo spółek i gospodarcze", "perTest": 5, "pool": 20, "segment": "GOS"},
+    {"key": "plapAdministracyjne", "label": "Postępowanie administracyjne i samorząd", "perTest": 4, "pool": 16, "segment": "ADM"},
+    {"key": "plapSadowoadm", "label": "Postępowanie sądowoadministracyjne", "perTest": 2, "pool": 8, "segment": "PSA"},
+    {"key": "plapKonstytucja", "label": "Prawo konstytucyjne", "perTest": 3, "pool": 12, "segment": "KON"},
+    {"key": "plapUstroj", "label": "Ustrój sądów i samorządy zawodowe", "perTest": 2, "pool": 8, "segment": "UST"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests (pools exactly 4x each count). The real paper is 150 questions in 150 minutes (art. 75i Prawa o adwokaturze, 1 point each, 100 to pass); Tigertest models it at 50 questions at the same pace and the same two-thirds line: passPct 67 = ceil(0.67 x 50) = 34 of 50. Real items have three options (A, B, C); ours four (v1 engine). Categories follow the legal areas of art. 75a ust. 3 Prawa o adwokaturze and the 2026 wykaz aktów prawnych; the per-test split is Tigertest's own (the Ministry publishes no weights). Training: five topic sets 45601-45605 (36/28/56/36/44), dashboard 5 sets + 4 tests = 9 steps.",
+  "trainingSets": "topic sets 45601-45605, see WIRING.md"
+}

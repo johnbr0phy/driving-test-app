@@ -4669,6 +4669,84 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Service-public.gouv.fr (fiche F33694, checked April 2026) and the arrêté du 20 avril 2012, article 2, checked November 2026",
     source: { name: "Service-public.gouv.fr: comment passer le code (ETG)", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694" },
   },
+  plteoria: {
+    answer:
+      "The Polish theory test for a category B car licence (część teoretyczna egzaminu państwowego) is taken on a computer at a regional road traffic centre (WORD). You get 32 questions drawn at random: 20 basic questions answered yes or no (TAK/NIE), with 20 seconds to read and 15 seconds to answer, and 12 specialist questions with three answers (A, B, C) and 50 seconds each. Every question comes with a photo or video clip and is worth 1, 2 or 3 points depending on its importance for road safety, 74 points in all, and you pass with at least 68. The test lasts 25 minutes and you cannot go back to a confirmed answer. Besides Polish it can be taken in English, German and sign language, and for category B also in Ukrainian. The Ministry of Infrastructure plans a smaller, public question catalogue, not yet in force.",
+    rows: [
+      { label: "Run by", value: "WORD regional road traffic centres" },
+      { label: "Questions", value: "32 (20 yes/no, 12 with three options)" },
+      { label: "Scoring", value: "1 to 3 points per question, 74 in all" },
+      { label: "Pass mark", value: "At least 68 points" },
+      { label: "Time", value: "25 minutes, timed per question" },
+      { label: "Languages", value: "Polish, English, German, sign language; Ukrainian for category B" },
+      { label: "Tigertest mock tests", value: "6 x 32 questions in Polish, 30 to pass" },
+    ],
+    basedOn: "Regulation of the Minister of Infrastructure of 24 November 2023 on driving examinations (Dz.U. 2023 item 2659, par. 19), Ministry of Infrastructure answers to Sejm interpellations 9840 and 13691, and the Road Traffic Act (Prawo o ruchu drogowym) as in force, checked November 2026",
+    source: { name: "Dziennik Ustaw 2023 item 2659 (Sejm legal acts database)", url: "https://api.sejm.gov.pl/eli/acts/DU/2023/2659/text.html" },
+  },
+  plcpc: {
+    answer:
+      "Every professional truck (C1, C, C+E) and bus (D1, D, D+E) driver in Poland needs an initial qualification (kwalifikacja wstępna) as well as the licence: a 280-hour course at an accredited training centre, or 140 hours for the accelerated version, ending in a computer-based qualification test at a voivodeship road traffic centre (WORD). Under the Minister of Infrastructure's regulation Dz.U. 2026 poz. 1355, in force from 3 November 2026, the test has 30 questions in 45 minutes: a basic part of 20 questions and a specialist part of 10 for the truck or bus block, one correct answer each. You pass with at least 16 correct in the basic part and 5 in the specialist part. The WORD director then issues the certificate of professional competence and code 95 goes on the licence; periodic training follows every five years.",
+    rows: [
+      { label: "Who needs it", value: "Drivers of trucks (C1, C, C+E) and buses (D1, D, D+E) for work" },
+      { label: "Course", value: "280 hours, or 140 hours accelerated, at an accredited training centre" },
+      { label: "Questions", value: "30: 20 basic and 10 specialist (truck or bus block)" },
+      { label: "Pass mark", value: "At least 16 of 20 basic and 5 of 10 specialist" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Language", value: "Polish; a WORD may offer another language, or bring a sworn translator" },
+      { label: "Run by", value: "Voivodeship road traffic centre (WORD)" },
+      { label: "After passing", value: "Certificate of professional competence, code 95; periodic training every 5 years" },
+    ],
+    basedOn: "Dz.U. 2026 poz. 1355 (regulation on training and examining drivers) and the Road Transport Act, checked November 2026",
+    source: { name: "Dz.U. 2026 poz. 1355 (Sejm ELI)", url: "https://api.sejm.gov.pl/eli/acts/DU/2026/1355/text.pdf" },
+  },
+  plaplik: {
+    answer:
+      "The entrance exam for the advocate (aplikacja adwokacka) and legal adviser (aplikacja radcowska) apprenticeships in Poland is one common written test held once a year on a date set by the Minister of Justice (26 September 2026). It has 150 single-answer questions, each with three proposed answers (A, B or C) of which only one is correct; the answer is marked on an answer sheet and cannot be changed. Each correct answer scores 1 point, and you pass with at least 100 points. According to the Ministry of Justice the time allowed is 150 minutes. No statute texts, commentaries or devices may be used. A team appointed each year by the Minister writes the questions from a list of statutes announced at least 90 days before the exam (52 acts for 2026, announced on 2 April 2026, including the Constitution, the civil, criminal, labour, company and administrative codes and procedures), and answers are judged on the law in force on the exam day. The exam is in Polish.",
+    rows: [
+      { label: "Run by", value: "Polish Ministry of Justice, examination commissions" },
+      { label: "Questions", value: "150 single answer, three options each" },
+      { label: "Scoring", value: "1 point per correct answer, no negative marking" },
+      { label: "Pass mark", value: "At least 100 of 150 points" },
+      { label: "Time", value: "150 minutes (Ministry of Justice)" },
+      { label: "Scope", value: "Yearly list of statutes (52 acts in 2026)" },
+      { label: "When", value: "Once a year (26 September in 2026)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Polish, 34 to pass" },
+    ],
+    basedOn: "Articles 75a to 75j of the Prawo o adwokaturze (Journal of Laws 2024 item 1564 as amended), the Act on Legal Advisers, the Ministry of Justice's 2026 list of statutes (2 April 2026), its 2026 exam announcement (27 April 2026) and its 2025 exam information, checked November 2026",
+    source: { name: "Polish Ministry of Justice: list of statutes for the 2026 advocate and legal adviser entrance exam (in Polish)", url: "https://www.gov.pl/web/sprawiedliwosc/ogloszenie-w-sprawie-wykazu-tytulow-aktow-prawnych-na-egzamin-wstepny-na-aplikacje-adwokacka-i-radcowska-w-2026-r" },
+  },
+  pllek: {
+    answer:
+      "The Lekarski Egzamin Koncowy (LEK) is Poland's Medical Final Examination, organised and run twice a year, in February and September, by the Centrum Egzaminow Medycznych (CEM) in Lodz, a state body under the Minister of Health. It has 200 multiple-choice questions, each with five possible answers and one correct, and lasts 4 hours. CEM's thematic structure gives internal medicine 39 questions, paediatrics 29, surgery 27, obstetrics and gynaecology 26, psychiatry 14, family medicine 20, emergency medicine and intensive therapy 20, bioethics and medical law 10, medical certification 7 and public health 8, with at least 20 on oncology. The pass mark is 56% of the valid questions, 112 if all 200 are valid. It is offered in Polish and in English, and under the Act on the professions of physician and dentist a pass, in Polish or in the language of study, is needed for the full right to practise.",
+    rows: [
+      { label: "Run by", value: "Centrum Egzaminow Medycznych (CEM), Lodz" },
+      { label: "Questions", value: "200, five options each, one correct" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "56% of valid questions (112 of 200)" },
+      { label: "Largest subjects", value: "Internal medicine 39, paediatrics 29, surgery 27, obstetrics and gynaecology 26" },
+      { label: "Sessions", value: "February and September, applications through SMK" },
+      { label: "Languages", value: "Polish and English" },
+    ],
+    basedOn: "CEM's LEK information pages and thematic structure, and the Act of 5 December 1996 on the professions of physician and dentist (Dz.U. 2026 item 37, art. 5 and 14a), checked November 2026",
+    source: { name: "CEM: LEK information (English)", url: "https://www.cem.edu.pl/english_info_lek.php" },
+  },
+  plbron: {
+    answer:
+      "Anyone applying for a firearm permit in Poland must pass an exam before a commission of at least three members named by the competent police authority, for firearms the regional police headquarters (in Warsaw the Metropolitan Police). The exam has a theory part and a practical part. The theory part is a test of 20 single-choice questions, each with three answers (A, B or C), taken in 30 minutes; you pass with at least 18 correct answers. It covers the Act on Weapons and Ammunition and the regulations issued under it, and the Penal Code provisions on weapon offences. Only after passing the theory do you sit the practical part at a shooting range, which checks range safety rules, the parts and handling of the weapon, loading, unloading and clearing stoppages, and includes a shooting test for each kind of firearm applied for; at least one commission member is a police or shooting instructor. Each part may be resat once. The exam is in Polish.",
+    rows: [
+      { label: "Run by", value: "Polish Police, the permit authority's exam commission" },
+      { label: "Questions", value: "20 single choice, three options each" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "At least 18 of 20 correct" },
+      { label: "Scope", value: "Act on Weapons and Ammunition, its regulations, Penal Code" },
+      { label: "Then", value: "Practical part at a range with a shooting test" },
+      { label: "Resits", value: "One resit of each part" },
+      { label: "Tigertest mock tests", value: "6 x 20 questions in Polish, 18 to pass" },
+    ],
+    basedOn: "Article 16 of the Act on Weapons and Ammunition of 21 May 1999 (Journal of Laws 2024 item 485 as amended) and the Minister of the Interior and Administration's regulation of 28 July 2023 on the exam (Journal of Laws 2023 item 1475), checked November 2026",
+    source: { name: "Journal of Laws 2023 item 1475: regulation on the firearms permit exam (in Polish)", url: "https://api.sejm.gov.pl/eli/acts/DU/2023/1475/text.html" },
+  },
   apitalian: {
     answer:
       "The AP Italian Language and Culture Exam is a College Board exam of about 2 hours 30 minutes, fully digital in Bluebook from May 2027. Half the score is a free-response section (a project presentation, a project Q&A and an argumentative essay); the other half is 55 multiple-choice questions in Italian in 80 minutes: 25 listening questions in 40 minutes and 30 reading questions in 40 minutes, in sets of five on one text each. Scores are reported from 1 to 5.",

@@ -1,0 +1,104 @@
+{
+  "metaTitle": "Test na pozwolenie na broń 2026 - Ćwicz za darmo",
+  "metaDescription": "Testy przed egzaminem na pozwolenie na broń: 200 własnych pytań z ustawy o broni i amunicji, rozporządzeń i Kodeksu karnego, każda odpowiedź z przepisem. Sześć testów po 20 pytań, 18 do zaliczenia. Zacznij za darmo, bez rejestracji.",
+  "keywords": "test na pozwolenie na broń, egzamin na pozwolenie na broń, pytania na pozwolenie na broń, pozwolenie na broń testy, egzamin teoretyczny na broń, ustawa o broni i amunicji pytania, pozwolenie na broń sportową egzamin, pozwolenie na broń do ochrony osobistej, obrona konieczna test, egzamin na broń 2026",
+  "breadcrumb": {
+    "home": "Strona główna",
+    "allTests": "Wszystkie testy",
+    "current": "Test na pozwolenie na broń"
+  },
+  "h1": "Test na pozwolenie na broń 2026",
+  "subtitle": "200 pytań z ustawy o broni i amunicji i Kodeksu karnego, każde z wyjaśnieniem. Sześć testów po 20 pytań. Zacznij za darmo, bez rejestracji.",
+  "facts": {
+    "h2": "Egzamin na pozwolenie na broń w skrócie",
+    "answer": "Kto ubiega się o pozwolenie na broń, zdaje egzamin przed komisją powołaną przez właściwy organ Policji, przy broni palnej przez komendanta wojewódzkiego Policji (w Warszawie Komendanta Stołecznego Policji). Egzamin ma część teoretyczną i praktyczną. Część teoretyczna to test 20 pytań jednokrotnego wyboru, każde z trzema odpowiedziami A, B albo C, na który masz 30 minut. Zdajesz, jeśli odpowiesz poprawnie na co najmniej 18 pytań. Test sprawdza znajomość ustawy o broni i amunicji, przepisów wydanych na jej podstawie oraz przepisów Kodeksu karnego o przestępstwach związanych z bronią. Dopiero po zdaniu teorii przechodzisz do części praktycznej na strzelnicy: zasady bezpieczeństwa, obsługa i części broni, ładowanie i rozładowywanie, usuwanie zacięć i sprawdzian strzelecki. Masz prawo do jednego egzaminu poprawkowego z każdej części.",
+    "tigertest": "Tigertest ma 200 własnych pytań po polsku z ustawy o broni i amunicji, rozporządzeń o przechowywaniu broni i o regulaminie strzelnic oraz z Kodeksu karnego, z wyjaśnieniem i numerem przepisu. Zaczynasz za darmo i bez rejestracji. Pytania są napisane od nowa, nie pochodzą z baz pytań publikowanych przez komendy Policji ani z aplikacji z testami.",
+    "rows": [
+      { "label": "Przeprowadza", "value": "Komisja powołana przez właściwy organ Policji" },
+      { "label": "Pytania", "value": "20, jednokrotnego wyboru, po trzy odpowiedzi" },
+      { "label": "Czas", "value": "30 minut" },
+      { "label": "Wynik pozytywny", "value": "Co najmniej 18 poprawnych odpowiedzi" },
+      { "label": "Zakres", "value": "Ustawa o broni i amunicji, rozporządzenia, Kodeks karny" },
+      { "label": "Dalej", "value": "Część praktyczna na strzelnicy, ze sprawdzianem strzeleckim" },
+      { "label": "Poprawka", "value": "Jeden egzamin poprawkowy z każdej części" },
+      { "label": "Testy Tigertest", "value": "6 x 20 pytań, 18 do zaliczenia" }
+    ],
+    "footnote": "Na podstawie art. 16 ustawy z dnia 21 maja 1999 r. o broni i amunicji (t.j. Dz. U. z 2024 r. poz. 485 ze zm.) i rozporządzenia Ministra Spraw Wewnętrznych i Administracji z dnia 28 lipca 2023 r. w sprawie egzaminu ze znajomości przepisów dotyczących posiadania broni oraz umiejętności posługiwania się bronią (Dz. U. z 2023 r. poz. 1475), stan na listopad 2026 r. Termin, miejsce i opłatę podaje komenda, w której składasz wniosek. Tigertest nie jest związany z Policją ani z Ministerstwem Spraw Wewnętrznych i Administracji. Aktualne przepisy sprawdzisz na",
+    "source": { "name": "Dziennik Ustaw: rozporządzenie w sprawie egzaminu na pozwolenie na broń (Dz. U. z 2023 r. poz. 1475)", "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/1475/text.html" }
+  },
+  "howItWorks": {
+    "h2": "Jak to działa",
+    "cards": [
+      {
+        "h3": "Najpierw ćwicz działami",
+        "p": "Pięć zestawów: rodzaje broni i amunicja, pozwolenie na broń, obowiązki posiadacza broni, przechowywanie, przewóz i strzelnica oraz prawo karne z obroną konieczną. Od razu widzisz, czy odpowiedź jest dobra, a pytania, w których się mylisz, wracają, aż je opanujesz."
+      },
+      {
+        "h3": "Potem testy jak na egzaminie",
+        "p": "Sześć testów po 20 pytań, każdy ze wszystkich ośmiu działów. Tak jak na egzaminie w komendzie, do zaliczenia potrzebujesz 18 z 20, więc możesz pomylić się najwyżej dwa razy. Na prawdziwym teście masz na to 30 minut."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Osiem działów z przepisów o broni",
+    "p": "Pytania są napisane z ustawy o broni i amunicji, rozporządzenia w sprawie przechowywania, noszenia oraz ewidencjonowania broni i amunicji, wzorcowego regulaminu strzelnic i Kodeksu karnego, w brzmieniu z listopada 2026 r. Rozporządzenie nie podaje, ile pytań przypada na dany temat, więc podział w każdym teście jest nasz. Na egzaminie każde pytanie ma trzy odpowiedzi, a u nas cztery. Części praktycznej na strzelnicy nie ćwiczymy.",
+    "items": [
+      "Pozwolenie na broń: cele, ważna przyczyna, rodzaje broni, wiek i badania (4 z 20 pytań)",
+      "Rodzaje broni i amunicja: definicje, broń bez pozwolenia, broń szczególnie niebezpieczna (3 z 20)",
+      "Obowiązki posiadacza: rejestracja, zbycie, utrata, depozyt, cofnięcie pozwolenia (3 z 20)",
+      "Przechowywanie, noszenie i przewóz broni (2 z 20)",
+      "Europejska karta broni palnej, przywóz i wywóz (2 z 20)",
+      "Strzelnica i regulamin strzelnicy (2 z 20)",
+      "Przestępstwa i wykroczenia związane z bronią (2 z 20)",
+      "Obrona konieczna i stan wyższej konieczności (2 z 20)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Jak przygotować się do egzaminu",
+    "steps": [
+      {
+        "h3": "1. Naucz się terminów i liczb",
+        "p": "Wiele pytań sprawdza konkretną liczbę z ustawy: 5 dni na rejestrację broni, 24 godziny na zgłoszenie utraty, 14 dni na zgłoszenie zmiany miejsca pobytu, 21 lat jako wiek, 17 J dla broni pneumatycznej. Wypisz je w tabeli i powtarzaj, aż przestaną się mylić."
+      },
+      {
+        "h3": "2. Rozróżniaj cele pozwoleń",
+        "p": "Każdy cel z art. 10 ustawy ma swoją ważną przyczynę i swoją listę broni. Ucz się ich parami: cel, czego wymaga i jaką broń obejmuje, na przykład sport, kolekcja albo ochrona osobista."
+      },
+      {
+        "h3": "3. Zrozum obronę konieczną",
+        "p": "Pytania z Kodeksu karnego często opisują sytuację. Sprawdź, czy zamach jest bezpośredni i bezprawny, czy obrona nie jest niewspółmierna i czy zagrożenie pochodzi od człowieka, czy na przykład od zwierzęcia, bo wtedy chodzi o stan wyższej konieczności."
+      },
+      {
+        "h3": "4. Celuj w 20 z 20",
+        "p": "Na egzaminie możesz pomylić się tylko dwa razy. Tigertest pokazuje wynik w każdym dziale: wróć do najsłabszego zestawu i powtarzaj testy, aż zdasz każdy bez błędu lub z jednym błędem."
+      }
+    ]
+  },
+  "faqTitle": "Najczęstsze pytania o egzamin na pozwolenie na broń",
+  "faqs": [
+    {
+      "q": "Jak wygląda teoretyczna część egzaminu na pozwolenie na broń?",
+      "a": "To test 20 pytań jednokrotnego wyboru, każde z trzema odpowiedziami A, B albo C. Odpowiedź zaznacza się znakiem X na karcie egzaminacyjnej, a pomyłkę można poprawić, zakreślając błędną odpowiedź kółkiem i parafując ją. Na test jest 30 minut, a zalicza go co najmniej 18 poprawnych odpowiedzi."
+    },
+    {
+      "q": "Co jest po części teoretycznej?",
+      "a": "Część praktyczna na strzelnicy, z udziałem członka komisji, który jest instruktorem strzelań policyjnych lub instruktorem wyszkolenia strzeleckiego. Sprawdza zasady bezpieczeństwa na strzelnicy, obsługę i części broni, ładowanie i rozładowywanie, usuwanie zacięć oraz sprawdzian strzelecki z każdego rodzaju broni z wniosku. Kto nie zda teorii, nie przystępuje do części praktycznej."
+    },
+    {
+      "q": "Z jakich przepisów są pytania?",
+      "a": "Rozporządzenie wymienia dwa zakresy: ustawę o broni i amunicji wraz z przepisami wydanymi na jej podstawie oraz przepisy Kodeksu karnego dotyczące przestępstw związanych z bronią. W praktyce oznacza to m.in. cele i warunki pozwoleń, rejestrację, przechowywanie i noszenie broni, przewóz, strzelnice, a z Kodeksu karnego posiadanie broni bez zezwolenia, obronę konieczną i stan wyższej konieczności."
+    },
+    {
+      "q": "Czy to prawdziwe pytania z egzaminu w komendzie?",
+      "a": "Nie. Wszystkie pytania są własne, napisane przez Tigertest od nowa na podstawie przepisów, więc sprawdzają tę samą wiedzę bez kopiowania baz pytań komend Policji ani aplikacji z testami. Nasze pytania mają cztery odpowiedzi zamiast trzech. Tigertest nie jest związany z Policją ani z MSWiA."
+    },
+    {
+      "q": "Czy testy Tigertest są bezpłatne?",
+      "a": "Zaczynasz za darmo i bez rejestracji: wszystkie zestawy i testy są bezpłatne poza ostatnimi krokami planu, które należą do Tigertest Premium (jednorazowa płatność, bez abonamentu). Załóż bezpłatne konto, jeśli chcesz zapisywać postępy na telefonie i komputerze. Jeśli uczysz się w klubie strzeleckim, prowadzący może założyć klasę w Tigertest i widzieć Twoje wyniki."
+    }
+  ],
+  "finalCta": {
+    "h2": "Przygotuj się do egzaminu na pozwolenie na broń",
+    "p": "Zacznij za darmo. Bez rejestracji. 200 pytań z ustawy o broni i amunicji i Kodeksu karnego."
+  }
+}

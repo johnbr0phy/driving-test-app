@@ -497,5 +497,10 @@
   "chtheory": ["#700006","#fdeded","#3d0003","#eddedf"],
   "smartserve": ["#3f1221","#f7edf1","#1f0a11","#e5dcdf"],
   "qabaabat": ["#415358","#eef4f6","#212a2c","#dce3e5"],
-  "hamextra": ["#550734","#fbeff6","#1c0211","#eddee7"]
+  "hamextra": ["#550734","#fbeff6","#1c0211","#eddee7"],
+  "plteoria": ["#e90c22","#feeced","#6e0c16","#f5dbde"],
+  "plcpc": ["#bb1bae","#fbeffa","#590d53","#eddeec"],
+  "plaplik": ["#1c0070","#f4f1fd","#0b002e","#e3def2"],
+  "pllek": ["#00851f","#ecf9ef","#00380d","#dbebde"],
+  "plbron": ["#3e4224","#f7f8f1","#191b0e","#e9ebe0"]
 }

@@ -54,6 +54,10 @@ import itpatenteIt from "@/lib/landings/itpatente.it.json";
 import frciviqueFr from "@/lib/landings/frcivique.fr.json";
 import frvtcFr from "@/lib/landings/frvtc.fr.json";
 import frcodeFr from "@/lib/landings/frcode.fr.json";
+import plteoriaPl from "@/lib/landings/plteoria.pl.json";
+import plcpcPl from "@/lib/landings/plcpc.pl.json";
+import plaplikPl from "@/lib/landings/plaplik.pl.json";
+import plbronPl from "@/lib/landings/plbron.pl.json";
 import itceliIt from "@/lib/landings/itceli.it.json";
 import itcilsIt from "@/lib/landings/itcils.it.json";
 import ita2It from "@/lib/landings/ita2.it.json";
@@ -104,6 +108,10 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "frcivique.fr": frciviqueFr as TranslatedLandingContent,
   "frvtc.fr": frvtcFr as TranslatedLandingContent,
   "frcode.fr": frcodeFr as TranslatedLandingContent,
+  "plteoria.pl": plteoriaPl as TranslatedLandingContent,
+  "plcpc.pl": plcpcPl as TranslatedLandingContent,
+  "plaplik.pl": plaplikPl as TranslatedLandingContent,
+  "plbron.pl": plbronPl as TranslatedLandingContent,
   "itceli.it": itceliIt as TranslatedLandingContent,
   "itcils.it": itcilsIt as TranslatedLandingContent,
   "ita2.it": ita2It as TranslatedLandingContent,

@@ -1608,6 +1608,31 @@
   "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
   "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
  ],
+ "plaplik": [
+  "https://api.sejm.gov.pl/eli/acts/DU/2024/1564/text.html",
+  "https://api.sejm.gov.pl/eli/acts/DU/2026/1290/text.pdf",
+  "https://api.sejm.gov.pl/eli/acts/DU/2024/499/text.html"
+ ],
+ "plbron": [
+  "https://pomorska.bip.policja.gov.pl/KPG/pozwolenia-na-bron/40360",
+  "https://api.sejm.gov.pl/eli/acts/DU/2023/1475/text.html",
+  "https://api.sejm.gov.pl/eli/acts/DU/2024/485/text.html"
+ ],
+ "plcpc": [
+  "https://api.sejm.gov.pl/eli/acts/DU/2026/1355/text.pdf",
+  "https://api.sejm.gov.pl/eli/acts/DU/2022/739/text.pdf",
+  "https://api.sejm.gov.pl/eli/acts/DU/2025/1490/text.pdf"
+ ],
+ "pllek": [
+  "https://www.cem.edu.pl/english_info_lek.php",
+  "https://www.cem.edu.pl/english_lek_struktura.php",
+  "https://www.cem.edu.pl/lek_info.php"
+ ],
+ "plteoria": [
+  "https://api.sejm.gov.pl/eli/acts/DU/2023/2659/text.html",
+  "https://api.sejm.gov.pl/eli/acts/DU/2025/696/text.pdf",
+  "https://eli.gov.pl/eli/DU/2016/232/ogl/pol/pdf"
+ ],
  "pmiacp": [
   "https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/agile-certified-exam-outline.pdf",
   "https://www.pmi.org/certifications/agile-acp",

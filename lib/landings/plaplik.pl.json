@@ -1,0 +1,108 @@
+{
+  "metaTitle": "Test na aplikację adwokacką i radcowską 2026 - Ćwicz za darmo",
+  "metaDescription": "Testy przed egzaminem wstępnym na aplikację adwokacką i radcowską: 200 własnych pytań z KC, KPC, KK, KPK, KP, KSH, KPA i Konstytucji, każda odpowiedź z przepisem. Cztery testy po 50 pytań. Zacznij za darmo, bez rejestracji.",
+  "keywords": "test na aplikację, egzamin na aplikację adwokacką, egzamin na aplikację radcowską, testy na aplikacje 2026, egzamin wstępny na aplikację, pytania na aplikację adwokacką, test aplikacja radcowska, egzamin na aplikacje prawnicze, testy prawnicze online, aplikacja adwokacka 2026",
+  "breadcrumb": {
+    "home": "Strona główna",
+    "allTests": "Wszystkie testy",
+    "current": "Test na aplikację adwokacką i radcowską"
+  },
+  "h1": "Test na aplikację adwokacką i radcowską 2026",
+  "subtitle": "200 pytań z przepisów z wykazu aktów prawnych, każde z wyjaśnieniem. Cztery testy po 50 pytań. Zacznij za darmo, bez rejestracji.",
+  "facts": {
+    "h2": "Egzamin wstępny na aplikację w skrócie",
+    "answer": "Egzamin wstępny na aplikację adwokacką i radcowską odbywa się raz w roku, w terminie wyznaczonym przez Ministra Sprawiedliwości (w 2026 r. był to 26 września). Kandydaci na obie aplikacje rozwiązują ten sam test: 150 pytań jednokrotnego wyboru, każde z trzema propozycjami odpowiedzi (A, B albo C), z których tylko jedna jest prawidłowa. Odpowiedź zaznacza się na karcie odpowiedzi i nie można jej zmienić. Za każdą prawidłową odpowiedź jest 1 punkt, a wynik pozytywny daje co najmniej 100 punktów. Według Ministerstwa Sprawiedliwości na rozwiązanie testu jest 150 minut. Podczas egzaminu nie wolno korzystać z tekstów ustaw, komentarzy ani orzecznictwa. Pytania przygotowuje zespół powoływany co roku przez Ministra, a co najmniej 90 dni przed egzaminem ogłaszany jest wykaz aktów prawnych, na których opierają się pytania; prawidłowość odpowiedzi ocenia się według prawa obowiązującego w dniu egzaminu.",
+    "tigertest": "Tigertest ma 200 własnych pytań po polsku z ustaw z wykazu na 2026 r., z wyjaśnieniem i numerem przepisu. Zaczynasz za darmo i bez rejestracji. Pytania są napisane od nowa, nie pochodzą z arkuszy z poprzednich lat ani z książek z testami.",
+    "rows": [
+      { "label": "Organizuje", "value": "Minister Sprawiedliwości, komisje egzaminacyjne" },
+      { "label": "Pytania", "value": "150, jednokrotnego wyboru, po trzy odpowiedzi" },
+      { "label": "Czas", "value": "150 minut (według Ministerstwa)" },
+      { "label": "Wynik pozytywny", "value": "Co najmniej 100 punktów, 1 punkt za pytanie" },
+      { "label": "Pomoce", "value": "Bez tekstów ustaw, komentarzy i urządzeń" },
+      { "label": "Zakres", "value": "Wykaz aktów prawnych ogłaszany co roku (52 akty w 2026 r.)" },
+      { "label": "Termin", "value": "Raz w roku, w 2026 r. 26 września" },
+      { "label": "Testy Tigertest", "value": "4 x 50 pytań, 34 do zaliczenia" }
+    ],
+    "footnote": "Na podstawie art. 75a do 75j ustawy Prawo o adwokaturze (Dz. U. z 2024 r. poz. 1564 ze zm.), ustawy o radcach prawnych, ogłoszenia wykazu aktów prawnych z 2 kwietnia 2026 r. i informacji Ministerstwa Sprawiedliwości, stan na listopad 2026 r. Termin, opłatę i miejsca egzaminu podaje coroczne ogłoszenie. Tigertest nie jest związany z Ministerstwem Sprawiedliwości, Naczelną Radą Adwokacką ani Krajową Radą Radców Prawnych. Aktualne zasady sprawdzisz na",
+    "source": { "name": "gov.pl: wykaz aktów prawnych na egzamin wstępny na aplikację adwokacką i radcowską w 2026 r.", "url": "https://www.gov.pl/web/sprawiedliwosc/ogloszenie-w-sprawie-wykazu-tytulow-aktow-prawnych-na-egzamin-wstepny-na-aplikacje-adwokacka-i-radcowska-w-2026-r" }
+  },
+  "howItWorks": {
+    "h2": "Jak to działa",
+    "cards": [
+      {
+        "h3": "Najpierw ćwicz działami",
+        "p": "Pięć zestawów: prawo cywilne i rodzinne, postępowanie cywilne, prawo karne z procedurą i wykroczeniami, prawo pracy i spółek oraz prawo administracyjne i ustrojowe. Od razu widzisz, czy odpowiedź jest dobra, a pytania, w których się mylisz, wracają, aż je opanujesz."
+      },
+      {
+        "h3": "Potem testy po 50 pytań",
+        "p": "Cztery testy po 50 pytań, każdy ze wszystkich dwunastu działów. Prawdziwy egzamin ma 150 pytań w 150 minut, więc u nas to jedna trzecia egzaminu w tym samym tempie: minuta na pytanie. Do zaliczenia potrzebujesz 34 z 50, tak jak 100 ze 150 na egzaminie."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Dwanaście działów z wykazu aktów prawnych",
+    "p": "Pytania są napisane z kodeksów i ustaw z wykazu na 2026 r., w brzmieniu z listopada 2026 r. Ministerstwo nie podaje, ile pytań przypada na dany akt, więc podział w każdym teście jest nasz i odpowiada zakresowi z art. 75a ust. 3 Prawa o adwokaturze. Na egzaminie każde pytanie ma trzy odpowiedzi, a u nas cztery. Prawa Unii Europejskiej (TUE, TFUE) nie ćwiczymy, a egzaminy na aplikację notarialną i komorniczą to osobne testy.",
+    "items": [
+      "Prawo cywilne, Kodeks cywilny (7 z 50 pytań)",
+      "Postępowanie cywilne, KPC (7 z 50)",
+      "Prawo karne i karne skarbowe, KK i KKS (6 z 50)",
+      "Postępowanie karne, KPK (6 z 50)",
+      "Prawo spółek i gospodarcze: KSH, Prawo upadłościowe, Prawo przedsiębiorców, Prawo wekslowe (5 z 50)",
+      "Prawo pracy, Kodeks pracy (4 z 50)",
+      "Postępowanie administracyjne i samorząd gminny, KPA (4 z 50)",
+      "Prawo konstytucyjne, Konstytucja RP (3 z 50)",
+      "Prawo rodzinne i opiekuńcze, KRO (2 z 50)",
+      "Prawo wykroczeń, KW i KPW (2 z 50)",
+      "Postępowanie sądowoadministracyjne, PPSA (2 z 50)",
+      "Ustrój sądów, adwokatura i radcowie prawni (2 z 50)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Jak przygotować się do egzaminu",
+    "steps": [
+      {
+        "h3": "1. Zacznij od wykazu aktów",
+        "p": "Pytania mogą dotyczyć tylko ustaw z wykazu ogłoszonego na co najmniej 90 dni przed egzaminem. Najobszerniejsze akty z wykazu to wielkie kodeksy: cywilny, karny i obie procedury, więc od nich warto zacząć. Ucz się z aktualnego tekstu jednolitego i pamiętaj o nowelizacjach, bo liczy się prawo z dnia egzaminu."
+      },
+      {
+        "h3": "2. Terminy i progi ucz się tabelą",
+        "p": "Wiele pytań sprawdza liczbę: dwa tygodnie na apelację cywilną, 14 dni na apelację karną, 30 dni na skargę do WSA, sześć lat ogólnego przedawnienia, 48 godzin zatrzymania. Zapisz je obok siebie, procedurami, i ćwicz, aż przestaną Ci się mylić."
+      },
+      {
+        "h3": "3. Ćwicz tempo",
+        "p": "Na egzaminie masz około minuty na pytanie i nie możesz poprawić zaznaczonej odpowiedzi. Rób testy Tigertest na czas, czytaj całe pytanie przed odpowiedzią i nie zostawiaj pustych pól: za błędną odpowiedź nie traci się punktów."
+      },
+      {
+        "h3": "4. Celuj wyżej niż 100 punktów",
+        "p": "Próg to dwie trzecie poprawnych odpowiedzi. Tigertest pokazuje wynik w każdym dziale: wróć do najsłabszego zestawu i powtarzaj testy, aż każdy zaliczysz z zapasem, na przykład 38 z 50."
+      }
+    ]
+  },
+  "faqTitle": "Najczęstsze pytania o egzamin wstępny na aplikację",
+  "faqs": [
+    {
+      "q": "Jak wygląda egzamin wstępny na aplikację adwokacką i radcowską?",
+      "a": "To test 150 pytań jednokrotnego wyboru, wspólny dla kandydatów na obie aplikacje. Każde pytanie ma trzy propozycje odpowiedzi, z których tylko jedna jest prawidłowa, a odpowiedź zaznacza się na karcie odpowiedzi bez możliwości zmiany. Według Ministerstwa Sprawiedliwości na rozwiązanie testu jest 150 minut. Nie wolno korzystać z tekstów ustaw ani innych pomocy."
+    },
+    {
+      "q": "Ile punktów trzeba zdobyć, żeby zdać?",
+      "a": "Wynik pozytywny otrzymuje kandydat, który zdobył co najmniej 100 punktów na 150 możliwych. Za każdą prawidłową odpowiedź jest 1 punkt, a za błędną nie odejmuje się punktów. Prawidłowość odpowiedzi ocenia się według stanu prawnego z dnia egzaminu."
+    },
+    {
+      "q": "Z jakich przepisów są pytania?",
+      "a": "Z aktów prawnych z wykazu, który zespół przygotowujący pytania ogłasza co roku, najpóźniej 90 dni przed egzaminem. Wykaz na 2026 r. ogłoszono 2 kwietnia 2026 r. i obejmuje 52 akty, m.in. Konstytucję, Kodeks cywilny, Kodeks postępowania cywilnego, Kodeks karny, Kodeks postępowania karnego, Kodeks pracy, Kodeks spółek handlowych, Kodeks postępowania administracyjnego, Prawo o adwokaturze i ustawę o radcach prawnych."
+    },
+    {
+      "q": "Czy to prawdziwe pytania z egzaminów z poprzednich lat?",
+      "a": "Nie. Wszystkie pytania są własne, napisane przez Tigertest od nowa na podstawie przepisów z wykazu, więc sprawdzają tę samą wiedzę bez kopiowania arkuszy z poprzednich lat ani książek z testami. Nasze pytania mają cztery odpowiedzi zamiast trzech. Tigertest nie jest związany z Ministerstwem Sprawiedliwości ani samorządami adwokatów i radców prawnych."
+    },
+    {
+      "q": "Czy testy Tigertest są bezpłatne?",
+      "a": "Zaczynasz za darmo i bez rejestracji: wszystkie zestawy i testy są bezpłatne poza ostatnimi krokami planu, które należą do Tigertest Premium (jednorazowa płatność, bez abonamentu). Załóż bezpłatne konto, jeśli chcesz zapisywać postępy na telefonie i komputerze. Jeśli przygotowujesz się na kursie, prowadzący może założyć klasę w Tigertest i widzieć Twoje wyniki."
+    }
+  ],
+  "finalCta": {
+    "h2": "Przygotuj się do egzaminu na aplikację",
+    "p": "Zacznij za darmo. Bez rejestracji. 200 pytań z przepisów z wykazu aktów prawnych na 2026 r."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "metaTitle": "Testy na prawo jazdy kat. B 2026 - Egzamin teoretyczny za darmo",
+  "metaDescription": "Zacznij za darmo naukę do egzaminu teoretycznego na prawo jazdy kat. B: 200 własnych pytań po polsku o znakach, pierwszeństwie, prędkości i pierwszej pomocy, każda odpowiedź wyjaśniona. Sześć testów po 32 pytania, bez zakładania konta.",
+  "keywords": "testy na prawo jazdy, egzamin teoretyczny prawo jazdy, prawo jazdy kat. B testy, pytania na prawo jazdy, egzamin WORD teoria, testy na prawo jazdy 2026, znaki drogowe test, pierwszeństwo przejazdu pytania",
+  "breadcrumb": {
+    "home": "Start",
+    "allTests": "Wszystkie testy",
+    "current": "Egzamin teoretyczny kat. B"
+  },
+  "h1": "Testy na prawo jazdy kat. B 2026",
+  "subtitle": "200 pytań do egzaminu teoretycznego, każde z wyjaśnieniem. Sześć testów po 32 pytania. Zacznij za darmo, bez zakładania konta.",
+  "facts": {
+    "h2": "Egzamin teoretyczny kat. B w skrócie",
+    "answer": "Część teoretyczną egzaminu państwowego zdajesz na komputerze w wojewódzkim ośrodku ruchu drogowego (WORD). Dostajesz 32 losowe pytania: 20 z wiedzy podstawowej, na które odpowiadasz TAK albo NIE, i 12 z wiedzy specjalistycznej z trzema odpowiedziami A, B i C. Każde pytanie ma zdjęcie lub film i jest warte 1, 2 albo 3 punkty, zależnie od znaczenia dla bezpieczeństwa ruchu, razem 74 punkty. Zdajesz, jeśli zdobędziesz co najmniej 68 punktów. Egzamin trwa 25 minut: na pytanie podstawowe masz 20 sekund na przeczytanie i 15 sekund na odpowiedź, na specjalistyczne 50 sekund. Do zatwierdzonego pytania nie można wrócić. Poza polskim egzamin można zdawać po angielsku, niemiecku, w języku migowym, a na kategorię B także po ukraińsku.",
+    "tigertest": "Tigertest ma 200 własnych pytań po polsku na tematy z egzaminu, a start jest darmowy i bez konta. Pytania są napisane od nowa na podstawie przepisów, a nie skopiowane z ministerialnej bazy pytań.",
+    "rows": [
+      {
+        "label": "Pytania",
+        "value": "32 (20 podstawowych, 12 specjalistycznych)"
+      },
+      {
+        "label": "Odpowiedzi",
+        "value": "TAK/NIE oraz A, B, C"
+      },
+      {
+        "label": "Punkty",
+        "value": "1, 2 lub 3 za pytanie, razem 74"
+      },
+      {
+        "label": "Próg zdawalności",
+        "value": "Co najmniej 68 punktów"
+      },
+      {
+        "label": "Czas",
+        "value": "25 minut"
+      },
+      {
+        "label": "Gdzie",
+        "value": "WORD, na komputerze"
+      }
+    ],
+    "footnote": "Według § 19 rozporządzenia Ministra Infrastruktury w sprawie egzaminowania (Dz.U. 2023 poz. 2659), stan na listopad 2026. Ministerstwo zapowiada mniejszą i jawną bazę pytań, ale zmiana nie weszła jeszcze w życie. Tigertest nie jest powiązany z WORD ani z Ministerstwem Infrastruktury. Aktualne zasady sprawdzisz na",
+    "source": {
+      "name": "Dziennik Ustaw 2023 poz. 2659: rozporządzenie w sprawie egzaminowania",
+      "url": "https://api.sejm.gov.pl/eli/acts/DU/2023/2659/text.html"
+    }
+  },
+  "howItWorks": {
+    "h2": "Jak to działa",
+    "cards": [
+      {
+        "h3": "Najpierw ćwiczysz, potem test",
+        "p": "Pięć zestawów tematycznych: znaki i sygnały, pierwszeństwo i skrzyżowania, prędkość i manewry, postój, piesi i rowerzyści oraz kierowca, wypadki i pojazd. Od razu widzisz wyjaśnienie, a błędne odpowiedzi wracają, aż je opanujesz. Potem sprawdzasz się w testach."
+      },
+      {
+        "h3": "Testy jak na egzaminie",
+        "p": "Sześć testów po 32 pytania, tyle co na egzaminie w WORD, z pytaniami ze wszystkich tematów. Najwięcej jest o znakach i pierwszeństwie. Żeby zaliczyć test, potrzebujesz tu 30 z 32, czyli najwyżej dwóch błędów."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Tematy z egzaminu teoretycznego",
+    "p": "Pytania opierają się na Prawie o ruchu drogowym, rozporządzeniu o znakach i sygnałach drogowych i ustawie o kierujących pojazdami w brzmieniu z listopada 2026. Każdy test ma pytania ze wszystkich ośmiu tematów.",
+    "items": [
+      "Znaki i sygnały drogowe (6 z 32 pytań)",
+      "Pierwszeństwo i skrzyżowania (5 z 32)",
+      "Prędkość, odstępy i hamowanie (4 z 32)",
+      "Wyprzedzanie, manewry i holowanie (4 z 32)",
+      "Zatrzymanie, postój i światła (4 z 32)",
+      "Piesi, rowerzyści i inni uczestnicy ruchu (3 z 32)",
+      "Kierowca: alkohol, pasażerowie i okres próbny (3 z 32)",
+      "Wypadki, pierwsza pomoc i pojazd (3 z 32)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Jak zdać egzamin teoretyczny",
+    "steps": [
+      {
+        "h3": "1. Znaj zasady punktacji",
+        "p": "Z 74 punktów możesz stracić najwyżej 6, więc dwa błędy w pytaniach za 3 punkty to już granica. Przy trzech lub więcej błędach wynik zależy od wagi pytań. Dlatego Tigertest wymaga najwyżej dwóch błędów na test."
+      },
+      {
+        "h3": "2. Opanuj pierwszeństwo",
+        "p": "Zasada prawej ręki, tramwaj na skrzyżowaniu równorzędnym, znaki A-7, B-20 i D-1, rondo ze znakiem A-7 i bez niego, policjant przed sygnalizacją, a sygnalizacja przed znakami. Pytania o pierwszeństwo są w każdym teście."
+      },
+      {
+        "h3": "3. Zapamiętaj liczby",
+        "p": "50 km/h na obszarze zabudowanym przez całą dobę, 20 km/h w strefie zamieszkania, 90, 100, 120 i 140 km/h poza miastem, 10 m od przejścia i skrzyżowania, 15 m od przystanku, trójkąt 30-50 m i 100 m na autostradzie, 0,2 i 0,5 promila."
+      },
+      {
+        "h3": "4. Ćwicz na czas",
+        "p": "Na prawdziwym egzaminie masz tylko kilkanaście sekund na odpowiedź i nie wrócisz do pytania. Tigertest zapamiętuje twoje błędy i podsuwa je ponownie. Rób testy, gdy zestawy są zielone, i powtarzaj je, aż pewnie zmieścisz się w dwóch błędach."
+      }
+    ]
+  },
+  "faqTitle": "Najczęstsze pytania o egzamin teoretyczny",
+  "faqs": [
+    {
+      "q": "Ile pytań jest na egzaminie teoretycznym na prawo jazdy kat. B?",
+      "a": "32 pytania: 20 z wiedzy podstawowej z odpowiedziami TAK albo NIE i 12 z wiedzy specjalistycznej z odpowiedziami A, B i C. Pytania są warte 1, 2 lub 3 punkty, razem 74. Zdajesz, jeśli zdobędziesz co najmniej 68 punktów."
+    },
+    {
+      "q": "Ile trwa egzamin teoretyczny?",
+      "a": "25 minut. Na pytanie podstawowe masz 20 sekund na przeczytanie i 15 sekund na odpowiedź, a na pytanie specjalistyczne 50 sekund. Po przejściu do kolejnego pytania nie można wrócić do poprzedniego."
+    },
+    {
+      "q": "Czy to są pytania z ministerialnej bazy pytań?",
+      "a": "Nie. Wszystkie pytania tutaj są napisane od nowa na podstawie Prawa o ruchu drogowym i przepisów o znakach, na te same tematy co egzamin. Oficjalną bazę z filmami i zdjęciami publikuje Ministerstwo Infrastruktury i warto ją przejrzeć przed egzaminem."
+    },
+    {
+      "q": "Czego Tigertest nie odwzorowuje?",
+      "a": "Na egzaminie każde pytanie ma zdjęcie lub film, część pytań ma odpowiedzi TAK lub NIE, a punkty zależą od wagi pytania. Tutaj każde pytanie ma jedną dobrą odpowiedź z czterech, wszystkie liczą się tak samo, a znaki są opisane słowami z ich numerem, na przykład znak A-7."
+    },
+    {
+      "q": "Czy testy na prawo jazdy w Tigertest są darmowe?",
+      "a": "Zaczynasz za darmo i bez konta: wszystkie zestawy i testy są darmowe poza ostatnimi, które należą do Tigertest Premium (jednorazowa płatność, bez subskrypcji). Z darmowym kontem zapisujesz postępy na wszystkich urządzeniach."
+    }
+  ],
+  "finalCta": {
+    "h2": "Czas na egzamin teoretyczny",
+    "p": "Zacznij za darmo, bez zakładania konta. 200 pytań po polsku ze wszystkich ośmiu tematów."
+  }
+}

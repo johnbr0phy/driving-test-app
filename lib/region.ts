@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH" | "PL";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -48,6 +48,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "IT", name: "Italy", short: "IT", inName: "Italy", lang: "it", locale: "it-IT" },
   { code: "FR", name: "France", short: "FR", inName: "France", lang: "fr", locale: "fr-FR" },
   { code: "CH", name: "Switzerland", short: "CH", inName: "Switzerland", lang: "en", locale: "en-CH" },
+  { code: "PL", name: "Poland", short: "PL", inName: "Poland", lang: "pl", locale: "pl-PL" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -99,6 +100,8 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "FR": case "GP": case "MQ": case "GF": case "RE": case "YT": return "FR";
     // Switzerland only: Liechtenstein has its own rules and stays unmapped.
     case "CH": return "CH";
+    // Poland only.
+    case "PL": return "PL";
     default: return null;
   }
 }
@@ -157,6 +160,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   nzrealestate: "NZ",
   nzsecurity: "NZ",
   chtheory: "CH",
+  plteoria: "PL", plcpc: "PL", plaplik: "PL", pllek: "PL", plbron: "PL",
   jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", jamblit: "NG", wassceeng: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   osssc: "IN", inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -171,6 +175,9 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "plaplik",
+  "pllek",
+  "plbron",
   "pspo",
   "sfappbuilder",
   "sfpd1",
@@ -490,6 +497,15 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Test code de la route", href: "/fr/code-de-la-route-test" },
     testsTitle: "Tests d'entraînement pour la France",
     testsSub: "Le code de la route pour le permis B, d'après le Code de la route en vigueur, en km/h et avec la circulation à droite : priorités, signalisation, vitesses, alcool, stationnement, premiers secours et écoconduite.",
+  },
+  // Written in Polish (REGIONS[].lang). The CTA shows once plteoria is in the catalog.
+  PL: {
+    title: "Testy na prawo jazdy kat. B: zacznij za darmo | Tigertest",
+    description: "Zacznij za darmo naukę do egzaminu teoretycznego na prawo jazdy kat. B i do polskich egzaminów zawodowych: własne pytania po polsku, każda odpowiedź wyjaśniona. Bez zakładania konta.",
+    lead: "Ćwicz do egzaminu teoretycznego na prawo jazdy kat. B w WORD. Własne pytania o znakach, pierwszeństwie, prędkości i pierwszej pomocy według Prawa o ruchu drogowym, każda odpowiedź wyjaśniona. Bez rejestracji.",
+    cta: { label: "Testy na prawo jazdy", href: "/pl/egzamin-teoretyczny-prawo-jazdy" },
+    testsTitle: "Testy dla Polski",
+    testsSub: "Egzamin teoretyczny na prawo jazdy kat. B: 200 pytań według Prawa o ruchu drogowym, w km/h i dla ruchu prawostronnego, sześć testów po 32 pytania i cel 30 z 32. Dla kierowców zawodowych test kwalifikacyjny po kwalifikacji wstępnej, po polsku i po angielsku. Dla prawników egzamin wstępny na aplikację adwokacką i radcowską: cztery testy po 50 pytań i 34 do zaliczenia. Dla lekarzy LEK w języku angielskim według struktury tematycznej CEM, a dla strzelców egzamin na pozwolenie na broń: sześć testów po 20 pytań i 18 do zaliczenia.",
   },
   CH: {
     title: "Free Swiss Driving Theory Test Practice in English | Tigertest",

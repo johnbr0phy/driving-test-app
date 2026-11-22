@@ -6894,6 +6894,76 @@
     --brand-gradient-to: 325 60% 94%;
   }
 
+  /* Polish car theory test (prawo jazdy kat. B): Polish red. 354 72% 38% clashed with six red themes; 48% lightness is the free slot */
+  [data-theme="plteoria"] {
+    --brand: 354 90% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 354 90% 96%;
+    --brand-hover: 354 90% 42%;
+    --brand-dark: 354 85% 34%;
+    --brand-darker: 354 80% 24%;
+    --brand-muted: 354 45% 70%;
+    --brand-border: 354 55% 82%;
+    --brand-border-light: 354 55% 91%;
+    --brand-gradient-to: 354 80% 95%;
+  }
+
+  /* Poland Driver CPC qualification test: deep magenta (the blue band is full; kept apart from plaplik's indigo) */
+  [data-theme="plcpc"] {
+    --brand: 305 75% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 305 60% 96%;
+    --brand-hover: 305 75% 36%;
+    --brand-dark: 305 75% 30%;
+    --brand-darker: 305 75% 20%;
+    --brand-muted: 305 30% 68%;
+    --brand-border: 305 35% 80%;
+    --brand-border-light: 305 30% 90%;
+    --brand-gradient-to: 305 50% 96%;
+  }
+
+  /* Polish legal apprenticeship entrance exam (aplikacja adwokacka i radcowska) theme: deep indigo */
+  [data-theme="plaplik"] {
+    --brand: 255 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 255 80% 97%;
+    --brand-hover: 255 100% 17%;
+    --brand-dark: 255 100% 13%;
+    --brand-darker: 255 100% 9%;
+    --brand-muted: 255 40% 70%;
+    --brand-border: 255 45% 82%;
+    --brand-border-light: 255 45% 91%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Poland LEK: deep medical green (the teal band 140 to 210 is full) */
+  [data-theme="pllek"] {
+    --brand: 134 100% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 134 50% 95%;
+    --brand-hover: 134 100% 21%;
+    --brand-dark: 134 100% 17%;
+    --brand-darker: 134 100% 11%;
+    --brand-muted: 134 25% 68%;
+    --brand-border: 134 30% 78%;
+    --brand-border-light: 134 30% 89%;
+    --brand-gradient-to: 150 45% 95%;
+  }
+
+  /* Polish firearms permit exam (egzamin na pozwolenie na broń) theme: dark olive */
+  [data-theme="plbron"] {
+    --brand: 68 30% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 68 35% 96%;
+    --brand-hover: 68 30% 15%;
+    --brand-dark: 68 30% 12%;
+    --brand-darker: 68 30% 8%;
+    --brand-muted: 68 15% 62%;
+    --brand-border: 68 20% 80%;
+    --brand-border-light: 68 20% 90%;
+    --brand-gradient-to: 45 40% 94%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -12779,6 +12849,61 @@
     --brand-darker: 335 85% 78%;
   }
 
+  .dark [data-theme="plteoria"] {
+    --brand: 354 90% 48.2%;
+    --brand-hover: 354 90% 42%;
+    --brand-light: 354 45% 13%;
+    --brand-gradient-to: 354 40% 11%;
+    --brand-border-light: 354 35% 24%;
+    --brand-border: 354 40% 34%;
+    --brand-muted: 354 45% 45%;
+    --brand-dark: 354 85% 65%;
+    --brand-darker: 354 80% 78%;
+  }
+  .dark [data-theme="plcpc"] {
+    --brand: 305 75% 46.1%;
+    --brand-hover: 305 75% 38.1%;
+    --brand-light: 305 45% 13%;
+    --brand-gradient-to: 305 40% 11%;
+    --brand-border-light: 305 30% 24%;
+    --brand-border: 305 35% 34%;
+    --brand-muted: 305 30% 45%;
+    --brand-dark: 305 75% 65%;
+    --brand-darker: 305 75% 78%;
+  }
+  .dark [data-theme="plaplik"] {
+    --brand: 255 100% 50%;
+    --brand-hover: 255 100% 42%;
+    --brand-light: 255 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 255 35% 24%;
+    --brand-border: 255 40% 34%;
+    --brand-muted: 255 40% 45%;
+    --brand-dark: 255 100% 70%;
+    --brand-darker: 255 100% 78%;
+  }
+  .dark [data-theme="pllek"] {
+    --brand: 134 100% 26.7%;
+    --brand-hover: 134 100% 21%;
+    --brand-light: 134 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 134 30% 24%;
+    --brand-border: 134 30% 34%;
+    --brand-muted: 134 25% 45%;
+    --brand-dark: 134 100% 65%;
+    --brand-darker: 134 100% 78%;
+  }
+  .dark [data-theme="plbron"] {
+    --brand: 68 30% 36.7%;
+    --brand-hover: 68 30% 28.7%;
+    --brand-light: 68 35% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 68 20% 24%;
+    --brand-border: 68 20% 34%;
+    --brand-muted: 68 15% 45%;
+    --brand-dark: 68 30% 65%;
+    --brand-darker: 68 30% 78%;
+  }
 }
 
 @layer base {

@@ -27,6 +27,7 @@ export const URL_LANGUAGE_PREFIXES: { prefix: string; lang: string; includeRoot:
   { prefix: "/el", lang: "el", includeRoot: false },
   { prefix: "/nl", lang: "nl", includeRoot: false },
   { prefix: "/fr", lang: "fr", includeRoot: true },
+  { prefix: "/pl", lang: "pl", includeRoot: true },
 ];
 
 /** The language `pathname` is written in, or null for an ordinary page. */
@@ -71,6 +72,7 @@ export const COUNTRY_HOME_LANGUAGES: { path: string; lang: string }[] = [
   { path: "/de", lang: "de" },
   { path: "/it", lang: "it" },
   { path: "/fr", lang: "fr" },
+  { path: "/pl", lang: "pl" },
 ];
 
 // The pages under a prefix only: a country homepage (/de) can be shown in

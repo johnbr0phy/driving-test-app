@@ -91,6 +91,8 @@ export const TEACHES: Record<string, string> = {
   plaplik: "an entrance exam course for the advocate and legal adviser apprenticeships",
   pllek: "a LEK preparation course",
   plbron: "a firearms permit course at a shooting club",
+  nlvca: "a VCA course or safety training for your workers or students",
+  nlwft: "a Wft Basis course or a bank or insurer academy",
   grsecurity: "the KEMEA Basic Training Programme for private security personnel",
   grinsure: "an insurance agent preparation course",
   betoelating: "a toelatingsexamen preparation course or a final-year science class",

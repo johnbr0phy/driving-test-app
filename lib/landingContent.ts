@@ -58,6 +58,9 @@ import plteoriaPl from "@/lib/landings/plteoria.pl.json";
 import plcpcPl from "@/lib/landings/plcpc.pl.json";
 import plaplikPl from "@/lib/landings/plaplik.pl.json";
 import plbronPl from "@/lib/landings/plbron.pl.json";
+import nlbromNl from "@/lib/landings/nlbrom.nl.json";
+import nlmotoNl from "@/lib/landings/nlmoto.nl.json";
+import nlwftNl from "@/lib/landings/nlwft.nl.json";
 import itceliIt from "@/lib/landings/itceli.it.json";
 import itcilsIt from "@/lib/landings/itcils.it.json";
 import ita2It from "@/lib/landings/ita2.it.json";
@@ -112,6 +115,9 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "plcpc.pl": plcpcPl as TranslatedLandingContent,
   "plaplik.pl": plaplikPl as TranslatedLandingContent,
   "plbron.pl": plbronPl as TranslatedLandingContent,
+  "nlbrom.nl": nlbromNl as TranslatedLandingContent,
+  "nlmoto.nl": nlmotoNl as TranslatedLandingContent,
+  "nlwft.nl": nlwftNl as TranslatedLandingContent,
   "itceli.it": itceliIt as TranslatedLandingContent,
   "itcils.it": itcilsIt as TranslatedLandingContent,
   "ita2.it": ita2It as TranslatedLandingContent,

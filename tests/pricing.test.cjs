@@ -4,7 +4,7 @@ require("tsx/cjs");
 const { premiumPriceFor, stripeUnitAmount } = require("../lib/pricing.ts");
 
 // Every country with a Tigertest homepage pays in its own currency.
-const REGIONS = ["US","GB","IE","CA","AU","NZ","IN","PH","MY","SG","HK","AE","ZA","NG","KE","PK","ES","PT","RO","SE","GR","DK","HU","BE","FI","MT","IT","FR","CH","DE","PL"];
+const REGIONS = ["US","GB","IE","CA","AU","NZ","IN","PH","MY","SG","HK","AE","ZA","NG","KE","PK","ES","PT","RO","SE","GR","DK","HU","BE","FI","MT","IT","FR","CH","DE","PL","NL"];
 const EXPECT = { US: "usd" };
 
 test("every Tigertest country has a local price", () => {

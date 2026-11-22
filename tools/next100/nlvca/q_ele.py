@@ -1,0 +1,36 @@
+CAT = "nlvcaElectric"; SEG = "ELE"
+# SSVV VCA-ETT 3.0 (2026), C.02.01 Electricity: hazards, body resistance, secondary injury, static
+# electricity, C.02.01.02 safety measures (shielding, insulation, RCD, earthing), C.02.01.03
+# temporary electrical equipment. Toetsmatrijs 2026: 2 of 40 per exam.
+Q = [
+("Which floor gives the lowest resistance to an electric current through your body?",
+ "Concrete", ["Rubber mat", "Linoleum", "Dry plastic sheet"],
+ "Earth, paving stones and concrete have low resistance, so more current flows. Rubber and linoleum have high resistance."),
+("Which injury is a secondary effect of an electric shock?",
+ "Fall from a ladder after a jolt", ["Burn where the current entered", "Heart rhythm disturbance", "Cramp in the muscles of the hand"],
+ "Secondary injuries come from the reaction: being startled and falling, being hit by flying material or being thrown by the blast of a short circuit."),
+("Which activity can build up static electricity?",
+ "Spraying paint", ["Using a hand saw", "Wiping with a damp cloth", "Tightening a bolt"],
+ "Static builds up when spraying paint, rubbing plastic, transporting powders pneumatically and when some liquids flow through plastic pipes."),
+("How do you limit static charge when filling a tank with a liquid?",
+ "Earth the tank", ["Fill it faster", "Use a plastic hose", "Let it fall from higher"],
+ "Earth pipes, equipment and tanks, limit the fall height and flow speed, and wear antistatic shoes and clothing."),
+("An RCD trips while you use a drill outdoors. What does that tell you?",
+ "Current is leaking to earth", ["The cable is too long", "The voltage has dropped", "The drill bit is blunt"],
+ "An RCD switches off the supply as soon as current leaking to earth exceeds a set value, often through a fault or moisture. Take the tool out of use and report it. An RCD does not react to overcurrent or a short circuit."),
+("Which is a limitation of an RCD?",
+ "No short-circuit protection", ["Works only once, then fails", "Never needs any testing", "Only works on outdoor sockets"],
+ "An RCD does not give absolute safety, must be tested regularly and does not protect against overcurrent, heating or short circuit."),
+("What does safety earthing of an appliance prevent?",
+ "Metal casing becoming live", ["Static from clothing", "Cables overheating", "Power cuts on site"],
+ "Safety earthing connects external metal parts to earth so that a fault cannot make them live."),
+("When must a scaffold be earthed?",
+ "Power tools used on it", ["It is over 2 metres high", "It stands on bare soil", "It is used in heavy rain"],
+ "Scaffolding must be earthed when cables, wires or electrical equipment with an unsafe voltage, including hand tools, are on it."),
+("Why should a cable reel be fully unrolled before use?",
+ "A wound reel can overheat", ["It trips the RCD", "It raises the voltage", "It keeps the site tidier too"],
+ "A cable reel that is not fully unwound can get very hot and start a fire. Respect the maximum power for the wound and unwound state."),
+("Your extension lead has a cut in its outer sheath. What do you do?",
+ "Report it and take it out of use", ["Tape it and carry on", "Use it only on dry days outdoors", "Cut out the damaged section"],
+ "Check electrical equipment visually before use, report damage and do not use damaged equipment."),
+]

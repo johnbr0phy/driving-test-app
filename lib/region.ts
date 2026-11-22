@@ -1,7 +1,7 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
 // /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
-// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it, /fr and /ch. A view
+// /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it, /fr, /ch, /pl and /nl. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
 // first visit and sends a visitor from any other country we cover from "/" to their
@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH" | "PL";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH" | "PL" | "NL";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -49,6 +49,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "FR", name: "France", short: "FR", inName: "France", lang: "fr", locale: "fr-FR" },
   { code: "CH", name: "Switzerland", short: "CH", inName: "Switzerland", lang: "en", locale: "en-CH" },
   { code: "PL", name: "Poland", short: "PL", inName: "Poland", lang: "pl", locale: "pl-PL" },
+  { code: "NL", name: "Netherlands", short: "NL", inName: "the Netherlands", lang: "nl", locale: "nl-NL" },
 ];
 
 /** The chosen region, e.g. "UK". */
@@ -102,6 +103,8 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "CH": return "CH";
     // Poland only.
     case "PL": return "PL";
+    // The Netherlands only (Caribbean Netherlands and the other kingdom countries stay unmapped).
+    case "NL": return "NL";
     default: return null;
   }
 }
@@ -161,6 +164,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   nzsecurity: "NZ",
   chtheory: "CH",
   plteoria: "PL", plcpc: "PL", plaplik: "PL", pllek: "PL", plbron: "PL",
+  nltheorie: "NL", nlbrom: "NL", nlmoto: "NL", nlvca: "NL", nlwft: "NL",
   jambeng: "NG", jambmath: "NG", wasscemath: "NG", jambbio: "NG", jambchem: "NG", jambphys: "NG", jamblit: "NG", wassceeng: "NG",
   ngpolice: "NG", cdcfib: "NG", ngarmy: "NG", ngcustoms: "NG", trcnpqe: "NG",
   osssc: "IN", inrto: "IN", ssccgl: "IN", rrbntpc: "IN", ibpspo: "IN", ctet: "IN",
@@ -175,6 +179,8 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "nlvca",
+  "nlwft",
   "plaplik",
   "pllek",
   "plbron",
@@ -506,6 +512,16 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Testy na prawo jazdy", href: "/pl/egzamin-teoretyczny-prawo-jazdy" },
     testsTitle: "Testy dla Polski",
     testsSub: "Egzamin teoretyczny na prawo jazdy kat. B: 200 pytań według Prawa o ruchu drogowym, w km/h i dla ruchu prawostronnego, sześć testów po 32 pytania i cel 30 z 32. Dla kierowców zawodowych test kwalifikacyjny po kwalifikacji wstępnej, po polsku i po angielsku. Dla prawników egzamin wstępny na aplikację adwokacką i radcowską: cztery testy po 50 pytań i 34 do zaliczenia. Dla lekarzy LEK w języku angielskim według struktury tematycznej CEM, a dla strzelców egzamin na pozwolenie na broń: sześć testów po 20 pytań i 18 do zaliczenia.",
+  },
+  // Written in Dutch (REGIONS[].lang), model-written. The car theory test runs in English until its
+  // Dutch translation ships; then point the CTA at its /nl landing.
+  NL: {
+    title: "CBR theorie-examen oefenen: gratis beginnen | Tigertest",
+    description: "Gratis beginnen met oefenen voor het CBR theorie-examen auto, motor en bromfiets, B-VCA en Wft Basis. Elk antwoord uitgelegd, geen account nodig.",
+    lead: "Oefen voor het theorie-examen van het CBR met eigen vragen over voorrang, borden, snelheid, de snelweg, parkeren en rijhulpsystemen, elk antwoord uitgelegd. Voor de auto zijn de vragen in het Engels, zoals het CBR het examen ook aanbiedt; voor motor en bromfiets in het Nederlands. Zonder account.",
+    cta: { label: "Theorie-examen auto", href: "/netherlands-driving-theory-test" },
+    testsTitle: "Oefenexamens voor Nederland",
+    testsSub: "Theorie-examen auto (rijbewijs B): 350 vragen over het RVV 1990, in km/u en voor rechtsverkeer, zeven proefexamens van 50 vragen; op het echte examen heb je er 44 van de 50 goed nodig. In het Nederlands ook het theorie-examen motor (41 van 50) en het theorie-examen bromfiets (43 van 50), en voor werk het B-VCA-examen voor veilig werken (in het Engels) en het Wft-examen Basis voor financiële dienstverlening.",
   },
   CH: {
     title: "Free Swiss Driving Theory Test Practice in English | Tigertest",

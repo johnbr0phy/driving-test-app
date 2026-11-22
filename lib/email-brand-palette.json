@@ -502,5 +502,10 @@
   "plcpc": ["#bb1bae","#fbeffa","#590d53","#eddeec"],
   "plaplik": ["#1c0070","#f4f1fd","#0b002e","#e3def2"],
   "pllek": ["#00851f","#ecf9ef","#00380d","#dbebde"],
-  "plbron": ["#3e4224","#f7f8f1","#191b0e","#e9ebe0"]
+  "plbron": ["#3e4224","#f7f8f1","#191b0e","#e9ebe0"],
+  "nltheorie": ["#702400","#fcefe8","#301103","#ebdcd6"],
+  "nlbrom": ["#b91cc4","#fbeefc","#5d0e62","#f2ddf4"],
+  "nlmoto": ["#0f8500","#ecfaeb","#073d00","#def0db"],
+  "nlvca": ["#4f5200","#fcfde7","#212202","#e8e8d9"],
+  "nlwft": ["#5c3d4d","#f8f2f5","#2f1e26","#eae1e6"]
 }

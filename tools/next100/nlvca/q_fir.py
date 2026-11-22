@@ -1,0 +1,36 @@
+CAT = "nlvcaFire"; SEG = "FIR"
+# SSVV VCA-ETT 3.0 (2026), C.03 Fire and explosion: fire triangle, smoke and heat, C.03.01.01 fire
+# classes and extinguishing agents, their hazards, C.03.02.01 actions in a fire and burns.
+# Toetsmatrijs 2026: 2 of 40 per exam.
+Q = [
+("Which three things must be present for a fire or explosion?",
+ "Fuel, oxygen and ignition energy", ["Fuel, wind and water", "Smoke, heat and fuel", "Oxygen, nitrogen and heat"],
+ "A fire needs a flammable substance, oxygen and ignition energy. Remove one and it goes out."),
+("Spilled diesel is burning in a drip tray. Which fire class is this?",
+ "Class B", ["Class A", "Class C", "Class D"],
+ "Class B is burning liquids such as diesel, petrol and solvents. Class A is solid materials, C gases and D combustible metals."),
+("Escaping propane is burning at a valve. What is the first step?",
+ "Shut off the gas supply", ["Spray it with water", "Cover it with a blanket", "Use foam on the flame"],
+ "For a class C gas fire, shut off the supply; powder can then be used. Putting out the flame while gas still flows leaves an explosive cloud."),
+("What is a drawback of putting out a fire with a fire blanket?",
+ "You must get close to the fire", ["It conducts electricity", "It adds oxygen to the fire", "It leaves heavy water damage"],
+ "A fire blanket smothers the fire by shutting out oxygen, but you have to get close to the source, and used wrongly or incompletely it can injure the user. It is suited to burning products, persons and fires on a flat surface."),
+("Why should water not be used on burning oil?",
+ "The burning liquid spreads", ["It feeds the fire with oxygen", "It gives off toxic smoke", "It cools far too slowly"],
+ "Water makes burning liquids spatter in jets of flame, and many liquids float on it so the fire spreads. Use powder, foam or sand."),
+("Which metal fire needs a special extinguishing powder?",
+ "Magnesium", ["Diesel oil", "Propane", "Timber"],
+ "Class D fires involve combustible metals such as magnesium, aluminium and sodium and need a specific powder."),
+("What is a hazard of using a carbon dioxide extinguisher?",
+ "Frostbite and suffocation", ["Heavy water damage", "It conducts electricity well", "Clumps and hardens"],
+ "CO2 is very cold and displaces oxygen, so it can cause frostbite and a suffocating atmosphere. Clumping is a drawback of sand."),
+("Why should you keep low in a room filling with smoke?",
+ "Hot smoke gases rise", ["Smoke sinks to the floor", "Oxygen collects at the ceiling", "Heat flows downward"],
+ "Combustion gases are lighter than air, so cleaner air stays lower down. Smoke is also toxic and limits visibility."),
+("You cannot put out a fire you started to tackle. What now?",
+ "Give up and evacuate", ["Fetch a second extinguisher alone", "Open windows to clear the smoke", "Keep trying until help arrives"],
+ "Ensure your own safety at all times. If you cannot extinguish the fire, stop trying and evacuate, closing doors behind you."),
+("How long should you cool a burn under tepid running water?",
+ "10 to 20 minutes", ["1 to 2 minutes", "30 to 60 minutes", "3 to 5 minutes"],
+ "Cool a burn as soon as possible with tepid running water for 10 to 20 minutes."),
+]

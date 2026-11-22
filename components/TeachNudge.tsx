@@ -26,6 +26,8 @@ const TEACHER_LED = new Set([
   "plaplik",
   "pllek",
   "plbron",
+  "nlvca",
+  "nlwft",
   "appraiser",
   "nccco",
   "hknurse",

@@ -73,6 +73,7 @@ export const COUNTRY_HOME_LANGUAGES: { path: string; lang: string }[] = [
   { path: "/it", lang: "it" },
   { path: "/fr", lang: "fr" },
   { path: "/pl", lang: "pl" },
+  { path: "/nl", lang: "nl" },
 ];
 
 // The pages under a prefix only: a country homepage (/de) can be shown in

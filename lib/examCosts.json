@@ -259,5 +259,15 @@
     "url": "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/2026_inbde_candidate_guide.pdf"
    }
   }
+ },
+ "series66": {
+  "fee": {
+   "value": "$177",
+   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series66"
+  },
+  "retake": {
+   "value": "30 days after a first or second failure, 180 after a third (60 for windows opened from January 4, 2027)",
+   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series66"
+  }
  }
 }

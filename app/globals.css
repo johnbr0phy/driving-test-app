@@ -5017,6 +5017,20 @@
     --brand-gradient-to: 45 70% 95%;
   }
 
+  /* NASAA Series 66 theme: deep forest green */
+  [data-theme="series66"] {
+    --brand: 130 100% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 130 45% 95%;
+    --brand-hover: 130 100% 13%;
+    --brand-dark: 130 100% 11%;
+    --brand-darker: 130 80% 8%;
+    --brand-muted: 130 25% 68%;
+    --brand-border: 130 25% 80%;
+    --brand-border-light: 130 22% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
   /* NASAA Series 63 theme */
   [data-theme="series63"] {
     --brand: 203 25% 42%;
@@ -5681,6 +5695,19 @@
     --brand-border-light: 170 15% 88%;
     --brand-gradient-to: 185 45% 95%;
   }
+  /* ACLS theme: deep oxblood cardiac red (hue 356 at 14%, the one free red slot beside CPR 355 and paramedic 10) */
+  [data-theme="acls"] {
+    --brand: 356 85% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 356 60% 96%;
+    --brand-hover: 356 85% 11%;
+    --brand-dark: 356 85% 9%;
+    --brand-darker: 356 80% 6%;
+    --brand-muted: 356 25% 66%;
+    --brand-border: 356 30% 80%;
+    --brand-border-light: 356 25% 90%;
+    --brand-gradient-to: 8 50% 96%;
+  }
   [data-theme="excpt"] {
     --brand: 287 100% 30%;
     --brand-foreground: 0 0% 100%;
@@ -6302,6 +6329,20 @@
     --brand-border: 200 25% 80%;
     --brand-border-light: 200 22% 89%;
     --brand-gradient-to: 160 40% 95%;
+  }
+
+  /* SHRM-CP theme (deep purple) */
+  [data-theme="shrmcp"] {
+    --brand: 294 70% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 294 50% 96%;
+    --brand-hover: 294 70% 16%;
+    --brand-dark: 294 70% 13%;
+    --brand-darker: 294 60% 10%;
+    --brand-muted: 294 25% 70%;
+    --brand-border: 294 25% 80%;
+    --brand-border-light: 294 22% 89%;
+    --brand-gradient-to: 320 40% 95%;
   }
 
   /* ISACA CISA theme */
@@ -11299,6 +11340,18 @@
     --brand-darker: 161 10% 78%;
   }
 
+  .dark [data-theme="series66"] {
+    --brand: 130 100% 26.7%;
+    --brand-hover: 130 100% 18.7%;
+    --brand-light: 130 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 130 22% 24%;
+    --brand-border: 130 25% 34%;
+    --brand-muted: 130 25% 45%;
+    --brand-dark: 130 100% 65%;
+    --brand-darker: 130 80% 78%;
+  }
+
   .dark [data-theme="series63"] {
     --brand: 203 25% 45%;
     --brand-hover: 203 25% 37%;
@@ -12075,6 +12128,18 @@
     --brand-muted: 200 25% 45%;
     --brand-dark: 200 45% 65%;
     --brand-darker: 200 40% 78%;
+  }
+
+  .dark [data-theme="shrmcp"] {
+    --brand: 294 70% 49.1%;
+    --brand-hover: 294 70% 41.1%;
+    --brand-light: 294 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 294 22% 24%;
+    --brand-border: 294 25% 34%;
+    --brand-muted: 294 25% 45%;
+    --brand-dark: 294 70% 65%;
+    --brand-darker: 294 60% 78%;
   }
 
   .dark [data-theme="cisa"] {
@@ -12919,6 +12984,17 @@
     --brand-muted: 170 20% 45%;
     --brand-dark: 170 100% 65%;
     --brand-darker: 170 90% 78%;
+  }
+  .dark [data-theme="acls"] {
+    --brand: 356 85% 49.3%;
+    --brand-hover: 356 85% 41.3%;
+    --brand-light: 356 45% 13%;
+    --brand-gradient-to: 8 40% 11%;
+    --brand-border-light: 356 25% 24%;
+    --brand-border: 356 30% 34%;
+    --brand-muted: 356 25% 45%;
+    --brand-dark: 356 85% 65%;
+    --brand-darker: 356 80% 78%;
   }
   .dark [data-theme="excpt"] {
     --brand: 287 100% 48%;

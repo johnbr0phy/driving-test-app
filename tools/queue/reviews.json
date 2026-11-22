@@ -1018,6 +1018,30 @@
         "pr": 915,
         "findings": 5
       }
+    ],
+    "shrmcp": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 24
+      }
+    ],
+    "acls": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 16
+      }
+    ],
+    "series66": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 4
+      }
     ]
   },
   "pendingReviews": {

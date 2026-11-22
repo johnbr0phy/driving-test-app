@@ -521,6 +521,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "CCI's CCT credential page and CCT Examination Overview (June 2022), checked November 2026",
     source: { name: "CCI: Certified Cardiographic Technician (CCT)", url: "https://cci-online.org/credentials/certified-cardiographic-technician/" },
   },
+  acls: {
+    answer:
+      "ACLS (Advanced Cardiovascular Life Support) is the American Heart Association course for health care professionals who manage adult cardiac arrest and other cardiovascular emergencies. The instructor-led course ends with a proctored written exam, usually taken online, and the AHA's 2025 ACLS course orientation says students must pass it with a minimum score of 84%. Before class, students must also pass a precourse self-assessment with at least 70%. In the HeartCode blended course the cognitive assessment is part of the online portion instead. Skills, including a megacode, are tested separately. The 2025 course follows the 2025 AHA Guidelines for CPR and Emergency Cardiovascular Care, published in October 2025.",
+    rows: [
+      { label: "Passing score", value: "84% on the course exam" },
+      { label: "Precourse self-assessment", value: "At least 70% before class" },
+      { label: "Exam format", value: "Proctored, usually online, at the end of the course" },
+      { label: "Course formats", value: "Instructor-led, HeartCode blended learning, RQI" },
+      { label: "Science", value: "2025 AHA Guidelines for CPR and ECC (October 2025)" },
+      { label: "Skills testing", value: "Separate, including a megacode" },
+      { label: "Given by", value: "American Heart Association training centers" },
+    ],
+    basedOn: "The AHA's 2025 ACLS Product and Course Orientation and the 2025 Guidelines highlights, checked November 2026",
+    source: { name: "AHA: 2025 ACLS Product and Course Orientation", url: "https://www.heart.org/-/media/4700782A8F784D86BC7B41D5A2016E2F.pdf" },
+  },
   excpt: {
     answer:
       "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",
@@ -7004,6 +7019,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NASAA's Series 63 overview and test specifications (effective June 12, 2023) and FINRA's Series 63 page, checked November 2026",
     source: { name: "NASAA: Series 63 Exam", url: "https://www.nasaa.org/exams/study-guides/series-63-exam-content-outline/" },
   },
+  series66: {
+    answer:
+      "The Series 66 is the Uniform Combined State Law Examination, written by NASAA and administered by FINRA. It has 110 multiple-choice questions, 100 scored and 10 unscored, in 150 minutes, and you pass by answering at least 73 of the 100 scored questions correctly. Passed with the Series 7, its corequisite, it lets a state register a person as both an agent of a broker-dealer and an investment adviser representative. NASAA's outline has four sections: laws, regulations and ethics 45%, client recommendations and strategies 30%, investment vehicles 17% and economic factors 8%.",
+    rows: [
+      { label: "Questions", value: "100 scored, plus 10 unscored" },
+      { label: "Time", value: "150 minutes" },
+      { label: "Passing score", value: "73 of 100 correct" },
+      { label: "Largest section", value: "Laws, regulations and ethics, 45%" },
+      { label: "Law tested", value: "Uniform Securities Act of 1956, as amended by NASAA" },
+      { label: "Corequisite", value: "Series 7" },
+      { label: "Run by", value: "NASAA, administered by FINRA" },
+    ],
+    basedOn: "NASAA's Series 66 overview and test specifications (effective June 12, 2023) and FINRA's Series 66 page, checked November 2026",
+    source: { name: "NASAA: Series 66 Exam", url: "https://www.nasaa.org/exams/study-guides/series-66-exam-content-outline/" },
+  },
   aswb: {
     answer:
       "The ASWB Masters exam is the Association of Social Work Boards licensing exam that most US states and several Canadian provinces use for the first license after a master's degree in social work, often called the LMSW. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The outline has three content areas: Values and Ethics 35%, Assessment and Planning 33%, and Intervention and Practice 32%. The result is pass or fail, with the number of correct answers needed set for each exam form.",
@@ -7369,6 +7399,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "HRCI PHR certification page, Exam Content Outline (2024) and Certification Policies and Procedures Handbook (October 2026), checked November 2026",
     source: { name: "HRCI: PHR certification", url: "https://www.hrci.org/our-programs/our-certifications/phr" },
+  },
+  shrmcp: {
+    answer:
+      "The SHRM-CP (SHRM Certified Professional) is SHRM's certification for HR professionals who work at the operational level: implementing policies, supporting day-to-day HR functions and serving as an HR point of contact. The exam has 134 multiple-choice questions, 80 knowledge items and 54 situational judgment items, of which 24 are unscored field-test items, in two sections of up to 110 minutes each, at a Prometric test center. About half the items cover the behavioral competency clusters (Leadership 19%, Business 17.5%, Interpersonal 13.5%) and half the HR knowledge domains (People 19%, Organization 18%, Workplace 13%), as set out in the SHRM BASK. Scores are scaled from 120 to 200, and every candidate who passes receives 200.",
+    rows: [
+      { label: "Questions", value: "134 (80 knowledge, 54 situational judgment, 24 unscored)" },
+      { label: "Time", value: "Two sections of up to 110 minutes each" },
+      { label: "Scoring", value: "Scaled 120 to 200; a pass is reported as 200" },
+      { label: "Item types", value: "Situational judgment 40%, foundational knowledge 10%, HR knowledge 50%" },
+      { label: "Where", value: "Prometric test centers" },
+      { label: "Run by", value: "SHRM" },
+    ],
+    basedOn: "SHRM-CP certification page, 2026 SHRM Certification Handbook and 2026 SHRM BASK, checked November 2026",
+    source: { name: "SHRM: SHRM Certified Professional", url: "https://www.shrm.org/credentials/certification/shrm-cp" },
   },
   cisa: {
     answer:

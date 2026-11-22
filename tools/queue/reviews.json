@@ -1390,5 +1390,13 @@
       "pr": 948,
       "findings": 14
     }
+  ],
+  "aphr": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": null,
+      "findings": 32
+    }
   ]
 }

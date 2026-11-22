@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How many questions are on the aPHR and how is it scored?",
-    a: "The aPHR has 65 scored questions plus 25 unscored pretest questions mixed in with them, in 1 hour and 45 minutes of testing time plus 30 minutes for administration. HRCI reports a scaled score, and a scaled score of at least 500 is needed to pass; it does not publish a percentage. Each mock test here has 50 questions, and 70% is Tigertest's readiness line, not an HRCI figure.",
+    a: "The aPHR has 65 scored questions plus 25 unscored pretest questions mixed in with them, in 1 hour and 45 minutes of testing time plus 30 minutes for administration. HRCI reports a scaled score, and a scaled score of at least 500 is needed to pass; it does not publish a percentage. Each mock test here has 50 questions, and 70% is Tigertest's practice target, not an HRCI figure.",
   },
   {
     q: "What does the aPHR exam cover?",
@@ -159,7 +159,7 @@ export default function AphrLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Weighted Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four mock tests of 50 questions in the real exam&apos;s proportions, scored against a 70% readiness line. No question appears in more than one test, and every answer comes with a short explanation.
+                Four mock tests of 50 questions in the real exam&apos;s proportions, scored against a 70% practice target. No question appears in more than one test, and every answer comes with a short explanation.
               </p>
             </div>
           </div>

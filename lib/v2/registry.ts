@@ -202,7 +202,7 @@ for (const exam of EXAMS_V2) {
     benefits: [
       ...lastTests.map((t) => `${exam.shortName} ${t.name}${t.heldOut ? ", the one that never appears in the drills" : ""}`),
       ...lastDrills.map((d) => `The ${d.name} drill`),
-      "The final sets and tests of every other exam on Tigertest",
+      "The later sets and tests of every other exam on Tigertest",
       "One payment, no subscription",
     ],
   };

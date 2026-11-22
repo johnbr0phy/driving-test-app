@@ -26,7 +26,7 @@ const faqs = [
   { q: "Does this cover the entire mobile crane certification?", a: "No. This is Core knowledge practice. Certification also requires the applicable specialty written exam and practical exam. Specialty chart packages, practical demonstrations and exhaustive ASME standards coverage are not included here. Completing practice does not qualify you to operate a crane." },
   { q: "What score should I aim for?", a: "The practice pass line is a 70% study target, not an official CCO raw passing score or a prediction of your certification result. Review every missed question and study the current official handbook and reference materials." },
   { q: "Are these actual crane load charts or official exam questions?", a: "No. All questions and simplified chart exercises are original. Each chart problem supplies its own assumptions and ratings for study only. Never use these illustrative values for an actual lift; use the applicable manufacturer chart and procedures for the crane and configuration." },
-  { q: "Is this practice free?", a: "It is free to start without an account. The first three training sets and practice tests are free; the final training set and test require Premium. Saving progress across devices requires an account." },
+  { q: "Is this practice free?", a: "It is free to start without an account. The first training sets and practice tests are free; the later ones require Premium. Saving progress across devices requires an account." },
 ];
 
 export const metadata: Metadata = {

@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest AFOQT practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and six of the eight drills are free; the Table Reading and Aviation Information drills and Practice Test 2 are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 

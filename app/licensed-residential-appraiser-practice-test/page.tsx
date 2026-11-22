@@ -26,7 +26,7 @@ const faqs = [
   { q: "Does this also prepare me for Certified Residential or Certified General?", a: "This bank follows the Licensed Residential column of the April 2026 AQB outline. The Certified Residential and Certified General examinations have different content weights and requirements. State licensing rules, eligibility and required education also need separate review." },
   { q: "What is the passing score?", a: "The official national examination uses a scaled passing score of 75, which does not mean 75% correct. Tigertest uses 70% as a study target only; it is not a conversion of the official scale or a prediction of licensing success." },
   { q: "Which USPAP edition and questions are used?", a: "The practice uses current USPAP 2024 rules and original scenarios. It does not reproduce official exam questions or the full paid USPAP guidance and FAQ manual. Study the current standards and your approved course materials alongside this practice." },
-  { q: "Is this practice free?", a: "It is free to start without an account. The first three training sets and practice tests are free; the final set and test require Premium. An account lets you save progress across devices." },
+  { q: "Is this practice free?", a: "It is free to start without an account. The first training sets and practice tests are free; the later ones require Premium. An account lets you save progress across devices." },
 ];
 
 export const metadata: Metadata = {

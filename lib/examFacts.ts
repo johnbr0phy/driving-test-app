@@ -792,7 +792,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "OSSSC CRE-2025 advertisement IIE-120/2025-3219 dated 30 December 2025, pages 10–11, checked November 2026. Selected written subjects only, not an exhaustive syllabus simulation.",
     source: { name: "OSSSC CRE-2025 official advertisement", url: "https://www.osssc.gov.in/Docs/CRE-2025-3219.pdf" },
-    tigertest: "200 original questions, five subject drills and two 85-question tests with a chosen 90-minute subset timer. Free to start; the last quarter of steps requires Premium. The second test stays out of drills.",
+    tigertest: "200 original questions, five subject drills and two 85-question tests with a chosen 90-minute subset timer. Free to start; the second half of the steps requires Premium. The second test stays out of drills.",
   },
   bcrealestate: {
       answer:
@@ -1037,7 +1037,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Practice coverage", value: "260 original MCQs; seven drills and two fixed 100-question tests" },
       { label: "Not simulated", value: "CAT, no-backtracking rule, unscored items and advanced formats" },
       { label: "Practice scoring", value: "Percentage correct; 80% editorial study goal" },
-      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+      { label: "Access", value: "Free to start; later drills and Practice Test 2 require Premium" },
     ],
     basedOn: "ISC2 SSCP outline effective October 2025 and current CAT FAQ, checked 17 November 2026. Each practice test follows domain weights of 16/15/15/14/9/16/15% exactly. Selected concepts, not exhaustive outline coverage",
     source: { name: "ISC2 SSCP exam outline", url: "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline" },
@@ -1052,7 +1052,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Practice coverage", value: "200 original questions; six drills and two 60-question tests" },
       { label: "Multiple-select scoring", value: "All correct choices required; no partial credit" },
       { label: "Practice goal", value: "80% editorial study target, not a passing-score prediction" },
-      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+      { label: "Access", value: "Free to start; later drills and Practice Test 2 require Premium" },
     ],
     basedOn: "ServiceNow CSA blueprint updated January 2026, checked 17 November 2026. Domain weights 7/10/20/20/30/13% become 4/6/12/12/18/8 questions per test after rounding. Selected coverage; no official exam-release codename claimed",
     source: { name: "ServiceNow CSA exam blueprint", url: "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554" },
@@ -1067,7 +1067,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Practice coverage", value: "240 original MCQs; four drills and two 90-question tests" },
       { label: "Not included", value: "Interactive performance tasks and exhaustive technology coverage" },
       { label: "Practice scoring", value: "Percentage correct; 80% study goal is not an official threshold" },
-      { label: "Access", value: "Free to start; final drill and Practice Test 2 require Premium" },
+      { label: "Access", value: "Free to start; later drills and Practice Test 2 require Premium" },
     ],
     basedOn: "CompTIA CAS-005 V5 objectives document version 7.0, checked 17 November 2026. Official domain weights 20/27/31/22% are rounded to 18/24/28/20 questions per practice test",
     source: { name: "CompTIA SecurityX CAS-005 objectives", url: "https://lecbyo.files.cmp.optimizely.com/download/35cf5f02b73211efa0ca8e42e80f1a8f" },
@@ -3989,7 +3989,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The Air Force's AFOQT page at Pearson VUE and AFROTC Detachment 485's AFOQT page (checked November 2026)",
     source: { name: "Pearson VUE (U.S. Air Force)", url: "https://www.pearsonvue.com/us/en/afoqt.html" },
     tigertest:
-      "Tigertest has two AFOQT practice tests with eight subtests at about half length and the real pace, and a drill for each subtest. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. Situational Judgment, Instrument Comprehension, Block Counting and the Self-Description Inventory are not included, and scores are percent correct, not AFOQT percentiles.",
+      "Tigertest has two AFOQT practice tests with eight subtests at about half length and the real pace, and a drill for each subtest. Start for free, no account required; the later drills and Practice Test 2 are part of Premium. Situational Judgment, Instrument Comprehension, Block Counting and the Self-Description Inventory are not included, and scores are percent correct, not AFOQT percentiles.",
   },
   dat: {
     answer:
@@ -4024,7 +4024,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Wonderlic's cognitive ability science page, Wonderlic Select product page, WPT-R product sheet and test-taker hub (checked November 2026)",
     source: { name: "Wonderlic", url: "https://wonderlic.com/science/cognitive-ability/" },
     tigertest:
-      "Tigertest has two timed Wonderlic-style practice tests of 50 original questions in 12 minutes, ordered from easier to harder, and seven drills: vocabulary, verbal reasoning, arithmetic, word problems, number and letter series, logic and spatial reasoning. Start for free, no account required; the Spatial Reasoning drill and Practice Test 2 are part of Premium. Scores are percent correct, not a Wonderlic score.",
+      "Tigertest has two timed Wonderlic-style practice tests of 50 original questions in 12 minutes, ordered from easier to harder, and seven drills: vocabulary, verbal reasoning, arithmetic, word problems, number and letter series, logic and spatial reasoning. Start for free, no account required; the later drills and Practice Test 2 are part of Premium. Scores are percent correct, not a Wonderlic score.",
   },
   lsat: {
     answer:
@@ -4041,7 +4041,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "LSAC's LSAT test format, specifications and scoring pages (checked November 2026)",
     source: { name: "LSAC", url: "https://www.lsac.org/lsat/taking-lsat/test-format" },
     tigertest:
-      "Tigertest has two full LSAT practice tests, the three scored sections at 35 minutes each with a 120 to 180 score estimate, and nine drills by question family. Start for free, no account required; the last two drills and Practice Test 2 are part of Premium. The variable section and the writing sample are not included.",
+      "Tigertest has two full LSAT practice tests, the three scored sections at 35 minutes each with a 120 to 180 score estimate, and nine drills by question family. Start for free, no account required; the later drills and Practice Test 2 are part of Premium. The variable section and the writing sample are not included.",
   },
   gmat: {
     answer:

@@ -105,7 +105,7 @@ const jsonLd = {
           name: "Is the Tigertest A+ practice test free?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
+            text: "It is free to start, with no account required. The full practice test and the first drills are free; the later drills are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
           },
         },
         classFaqJsonLd("aplus"),
@@ -302,7 +302,7 @@ export default function AplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Is the Tigertest A+ practice test free?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              It is free to start, with no account required. The full practice test and every drill but the last are free; the final drill is part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.
+              It is free to start, with no account required. The full practice test and the first drills are free; the later drills are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.
             </p>
           </div>
           <ExamClassFaq examId="aplus" />

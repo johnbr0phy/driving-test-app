@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest IELTS Reading practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the completion drill and Practice Test 2 are part of Tigertest Premium, one payment with no subscription. The passages and questions are original practice material, not taken from IELTS or Cambridge books. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. The passages and questions are original practice material, not taken from IELTS or Cambridge books. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 

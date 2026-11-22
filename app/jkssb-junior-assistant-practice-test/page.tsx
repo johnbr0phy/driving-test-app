@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these JKSSB previous year questions?",
-    a: "No. Every question is original, written to the Junior Assistant syllabus, and none is copied from previous papers or guidebooks. It is free to start, with no account needed. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. Every question is original, written to the Junior Assistant syllabus, and none is copied from previous papers or guidebooks. It is free to start, with no account needed. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

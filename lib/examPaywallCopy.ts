@@ -15,7 +15,7 @@ export interface ExamPaywallCopy {
 const COPY: Record<Language, ExamPaywallCopy> = {
   en: {
     premium: (s) => [
-      `The final ${s} training step and practice test`,
+      `The later ${s} training steps and practice tests`,
       `Full stats on every ${s} question you miss`,
       "The same on every other Tigertest exam",
       "One payment, yours forever",
@@ -29,7 +29,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   es: {
     premium: (s) => [
-      `El último paso de práctica y el último examen de ${s}`,
+      `Los últimos pasos de práctica y exámenes de ${s}`,
       `Estadísticas completas de cada pregunta de ${s} que falles`,
       "Lo mismo en todos los demás exámenes de Tigertest",
       "Un solo pago, tuyo para siempre",
@@ -43,7 +43,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   vi: {
     premium: (s) => [
-      `Bước luyện tập cuối và bài thi thử cuối của ${s}`,
+      `Các bước luyện tập và bài thi thử sau của ${s}`,
       `Thống kê đầy đủ cho mọi câu ${s} bạn làm sai`,
       "Tương tự với mọi bài thi khác trên Tigertest",
       "Trả một lần, dùng mãi mãi",
@@ -57,7 +57,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   ko: {
     premium: (s) => [
-      `${s} 마지막 학습 단계와 마지막 모의고사`,
+      `${s} 후반 학습 단계와 모의고사`,
       `틀린 ${s} 문제마다 전체 통계`,
       "Tigertest의 다른 모든 시험에도 똑같이 적용",
       "한 번 결제로 평생 이용",
@@ -71,7 +71,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   zh: {
     premium: (s) => [
-      `${s} 的最后一个练习步骤和最后一套模拟题`,
+      `${s} 后半部分的练习步骤和模拟题`,
       `每道答错的 ${s} 题目的完整统计`,
       "Tigertest 上的其他所有考试同样解锁",
       "一次付款，永久使用",
@@ -85,7 +85,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   de: {
     premium: (s) => [
-      `Der letzte Übungsschritt und der letzte Übungstest für ${s}`,
+      `Die späteren Übungsschritte und Übungstests für ${s}`,
       `Alle Statistiken zu jeder ${s}-Frage, die du falsch beantwortest`,
       "Dasselbe bei jedem anderen Test auf Tigertest",
       "Einmal zahlen, für immer behalten",
@@ -99,7 +99,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   fr: {
     premium: (s) => [
-      `La dernière étape d'entraînement et le dernier test blanc ${s}`,
+      `Les dernières étapes d'entraînement et les derniers tests blancs ${s}`,
       `Toutes les statistiques sur chaque question ${s} que tu rates`,
       "Pareil pour tous les autres examens de Tigertest",
       "Un seul paiement, à toi pour toujours",
@@ -113,7 +113,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   it: {
     premium: (s) => [
-      `L'ultimo passo di allenamento e l'ultima simulazione di ${s}`,
+      `Gli ultimi passi di allenamento e le ultime simulazioni di ${s}`,
       `Statistiche complete su ogni domanda di ${s} che sbagli`,
       "Lo stesso per tutti gli altri esami su Tigertest",
       "Un solo pagamento, tuo per sempre",
@@ -127,7 +127,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   pl: {
     premium: (s) => [
-      `Ostatni krok treningu i ostatni test próbny: ${s}`,
+      `Dalsze kroki treningu i testy próbne: ${s}`,
       `Pełne statystyki każdego pytania (${s}), w którym się mylisz`,
       "To samo we wszystkich innych egzaminach na Tigertest",
       "Jedna płatność, dostęp na zawsze",
@@ -141,7 +141,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   nl: {
     premium: (s) => [
-      `De laatste oefenstap en het laatste oefenexamen van ${s}`,
+      `De latere oefenstappen en oefenexamens van ${s}`,
       `Alle statistieken van elke ${s}-vraag die je fout hebt`,
       "Hetzelfde bij elk ander examen op Tigertest",
       "Eén betaling, voor altijd van jou",
@@ -155,7 +155,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   pt: {
     premium: (s) => [
-      `O último passo de treino e o último teste de ${s}`,
+      `Os passos de treino e testes finais de ${s}`,
       `Estatísticas completas de cada pergunta de ${s} que erras`,
       "O mesmo em todos os outros exames do Tigertest",
       "Um só pagamento, teu para sempre",
@@ -169,7 +169,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   sv: {
     premium: (s) => [
-      `Det sista övningssteget och det sista övningsprovet för ${s}`,
+      `De senare övningsstegen och övningsproven för ${s}`,
       `Full statistik för varje fråga i ${s} som du missar`,
       "Samma sak för alla andra prov på Tigertest",
       "En betalning, ditt för alltid",
@@ -183,7 +183,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   da: {
     premium: (s) => [
-      `Det sidste øvetrin og den sidste øveprøve til ${s}`,
+      `De senere øvetrin og øveprøver til ${s}`,
       `Fuld statistik for hvert spørgsmål i ${s}, du svarer forkert på`,
       "Det samme for alle andre prøver på Tigertest",
       "Én betaling, din for altid",
@@ -197,7 +197,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   fi: {
     premium: (s) => [
-      `Viimeinen harjoitusvaihe ja viimeinen harjoituskoe: ${s}`,
+      `Myöhemmät harjoitusvaiheet ja harjoituskokeet: ${s}`,
       `Täydet tilastot jokaisesta väärin menneestä kysymyksestä (${s})`,
       "Sama kaikissa muissa Tigertestin kokeissa",
       "Yksi maksu, sinun ikuisesti",
@@ -211,7 +211,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   hu: {
     premium: (s) => [
-      `Az utolsó gyakorló lépés és az utolsó próbateszt (${s})`,
+      `A későbbi gyakorló lépések és próbatesztek (${s})`,
       `Teljes statisztika minden elrontott kérdésről (${s})`,
       "Ugyanez a Tigertest összes többi vizsgájánál",
       "Egyszeri fizetés, örökre a tiéd",
@@ -225,7 +225,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   ro: {
     premium: (s) => [
-      `Ultimul pas de antrenament și ultimul test de probă pentru ${s}`,
+      `Pașii de antrenament și testele de probă finale pentru ${s}`,
       `Statistici complete pentru fiecare întrebare ${s} greșită`,
       "La fel pentru toate celelalte examene de pe Tigertest",
       "O singură plată, al tău pentru totdeauna",
@@ -239,7 +239,7 @@ const COPY: Record<Language, ExamPaywallCopy> = {
   },
   el: {
     premium: (s) => [
-      `Το τελευταίο βήμα εξάσκησης και το τελευταίο τεστ για ${s}`,
+      `Τα επόμενα βήματα εξάσκησης και τεστ για ${s}`,
       `Πλήρη στατιστικά για κάθε ερώτηση (${s}) που κάνεις λάθος`,
       "Το ίδιο σε κάθε άλλη εξέταση του Tigertest",
       "Μία πληρωμή, δικό σου για πάντα",

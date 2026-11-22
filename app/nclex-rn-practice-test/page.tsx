@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest NCLEX practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. Create a free account to keep your progress in step between your phone and your computer.",
   },
 ];
 

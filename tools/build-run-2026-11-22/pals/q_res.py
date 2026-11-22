@@ -42,7 +42,7 @@ Q = [
  "Bag-mask ventilation, 100% O2", ["Continuous nebulized albuterol", "Oral dexamethasone", "A higher oxygen flow rate alone"],
  "These are signs of respiratory failure: start bag-mask ventilation with 100% oxygen and call for someone to intubate."),
 ("When may CPAP or noninvasive ventilation be used in lung tissue disease?",
- "With monitoring and intubation backup", ["Once the child is apneic", "When the child cannot protect the airway", "In place of oxygen for mild distress"],
+ "With monitoring and intubation backup", ["With monitoring once the child is apneic", "With backup when the airway is unprotected", "Without monitoring for mild distress"],
  "CPAP and noninvasive ventilation must be given where continuous monitoring, intubation equipment and skilled staff are at hand. A child who is apneic or cannot protect the airway needs bag-mask ventilation or intubation instead."),
 ("Which is a common cause of disordered control of breathing?",
  "Opioid or sedative drugs", ["Foreign body in a bronchus", "Asthma exacerbation", "Croup"],

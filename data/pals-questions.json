@@ -859,10 +859,10 @@
     "questionId": "PALS-RES-014",
     "category": "palsResp",
     "question": "When may CPAP or noninvasive ventilation be used in lung tissue disease?",
-    "optionA": "When the child cannot protect the airway",
-    "optionB": "In place of oxygen for mild distress",
+    "optionA": "With backup when the airway is unprotected",
+    "optionB": "Without monitoring for mild distress",
     "optionC": "With monitoring and intubation backup",
-    "optionD": "Once the child is apneic",
+    "optionD": "With monitoring once the child is apneic",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "CPAP and noninvasive ventilation must be given where continuous monitoring, intubation equipment and skilled staff are at hand. A child who is apneic or cannot protect the airway needs bag-mask ventilation or intubation instead."

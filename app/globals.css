@@ -5017,6 +5017,20 @@
     --brand-gradient-to: 45 70% 95%;
   }
 
+  /* ACE CPT theme: deep burnt orange */
+  [data-theme="acecpt"] {
+    --brand: 18 100% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 18 45% 95%;
+    --brand-hover: 18 100% 11%;
+    --brand-dark: 18 100% 9%;
+    --brand-darker: 18 80% 6%;
+    --brand-muted: 18 25% 68%;
+    --brand-border: 18 25% 80%;
+    --brand-border-light: 18 22% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
   /* NASAA Series 66 theme: deep forest green */
   [data-theme="series66"] {
     --brand: 130 100% 16%;
@@ -11365,6 +11379,18 @@
     --brand-muted: 161 15% 45%;
     --brand-dark: 161 15% 65%;
     --brand-darker: 161 10% 78%;
+  }
+
+  .dark [data-theme="acecpt"] {
+    --brand: 18 100% 41.7%;
+    --brand-hover: 18 100% 33.7%;
+    --brand-light: 18 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 18 22% 24%;
+    --brand-border: 18 25% 34%;
+    --brand-muted: 18 25% 45%;
+    --brand-dark: 18 100% 65%;
+    --brand-darker: 18 80% 78%;
   }
 
   .dark [data-theme="series66"] {

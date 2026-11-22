@@ -160,7 +160,7 @@ test('RBT paywall says plainly what Premium adds, never a readiness verdict', ()
   }
   assert.ok(!rbt.some((b) => /final .* training step/.test(b)));
   assert.match(rbt[rbt.length - 1], /One payment/);
-  assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /final CDL training step/);
+  assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /later CDL training steps and practice tests/);
 });
 
 test('lock share test ended: every browser gets LOCKED_SHARE, v2 locks half too, the result card stays on the A/B tests tab', () => {

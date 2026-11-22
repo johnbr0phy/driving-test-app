@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "Is this practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the last drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Tigertest is not affiliated with Fortinet.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. Tigertest is not affiliated with Fortinet.",
   },
 ];
 

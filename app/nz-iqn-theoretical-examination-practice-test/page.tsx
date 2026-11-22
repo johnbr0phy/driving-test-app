@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest IQN practice test free?",
-    a: "It is free to start, with no account needed. Practice Test 1 and every drill but the last are free; the last drill and Practice Test 2 are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written from the Council's handbook and standards, not the Council's sample questions or real exam questions.",
+    a: "It is free to start, with no account needed. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written from the Council's handbook and standards, not the Council's sample questions or real exam questions.",
   },
 ];
 

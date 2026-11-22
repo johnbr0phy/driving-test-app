@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest enrolled nurse practice test free?",
-    a: "It is free to start, with no account needed. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written from the Council's scope and standards, not real exam questions. Here Part A asks you to type each answer, while the real Part A is multiple choice.",
+    a: "It is free to start, with no account needed. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written from the Council's scope and standards, not real exam questions. Here Part A asks you to type each answer, while the real Part A is multiple choice.",
   },
 ];
 

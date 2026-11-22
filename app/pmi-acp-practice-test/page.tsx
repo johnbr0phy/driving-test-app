@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest PMI-ACP practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and most of the drills are free; the last drill and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 

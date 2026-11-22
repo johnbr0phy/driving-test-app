@@ -62,7 +62,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 - No em dashes anywhere in copy, code comments, commits or PRs.
 - Plain apostrophes in metadata and JSON-LD strings; `&apos;` only in JSX text.
 - Exams with Premium steps: say "Start for free" / "free to start", never that everything is free. Landing hero subtitles end "Free to start, no account needed." Page titles keep "Free ... Practice Test". Only the free v2 exams (school and children's tests) may say everything is free.
-- Premium copy says what it adds (more questions, tests, timed mocks, full stats) and never promises a pass or readiness. No readiness verdicts anywhere.
+- Premium copy says what it adds (more questions, tests, timed mocks, full stats) and never guarantees a pass (no "guaranteed", "you will pass", money-back-if-you-fail). A motivational headline like the paywall's "Study smart. Pass first time." is fine. No readiness verdicts anywhere.
 - Never state a fee, figure or percentile that is not from an official source or live data. Real exam costs live only in `lib/examCosts.json`, each from the official site.
 - Machine-translated and model-written copy and banks are final: no human review is planned; never hold work back or flag it for review.
 
@@ -76,6 +76,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 
 **Premium and money**
 - Premium is one purchase (US $9.99, local prices elsewhere, `lib/pricing.ts`). v1 exams lock the last 50% of dashboard steps, the DMV's shape (`lib/examLocks.ts`, `LOCKED_SHARE`; Test 1 always free); v2 Premium exams lock 50% too (`V2_LOCKED_SHARE`). v2 exams are free unless listed in `PREMIUM_V2_IDS`; never sell school, college-entrance or children's tests. Steps a person already started stay open; class students of that exam are never locked.
+- Any change to what Premium locks or includes updates every place that describes it, in the same PR: the paywall cards (`lib/examPaywallCopy.ts` bullets in every language, `PaywallModal`, v2 `premium.benefits` in `lib/v2/registry.ts` and lock copy in `lib/v2/ui/`), `premiumBenefits` on exams, `lib/examFacts.ts` Access lines, landing FAQ answers, the purchase email and `premium.md`. Grep the old wording before pushing.
 - Email Premium only after an action the person took (paywall follow-up). No unprompted upsells.
 - Revenue figures in /admin are always US cents via `paymentNetUsdCents()`.
 

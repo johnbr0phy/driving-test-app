@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real SBI PO questions?",
-    a: "No. These are original practice questions written to the SBI PO Prelims pattern, not questions from the State Bank of India or past papers, and Tigertest is not affiliated with SBI. They cover the usual question types: reading comprehension, para jumbles, cloze tests, fillers and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. It is free to start, with no account required. Practice Test 1 and every drill but the last two are free; the last two drills and the final practice test are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. These are original practice questions written to the SBI PO Prelims pattern, not questions from the State Bank of India or past papers, and Tigertest is not affiliated with SBI. They cover the usual question types: reading comprehension, para jumbles, cloze tests, fillers and error spotting; simplification, number series, quadratic equations, data interpretation and arithmetic; and inequalities, syllogisms, puzzles, seating arrangements, coding, blood relations and directions. It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

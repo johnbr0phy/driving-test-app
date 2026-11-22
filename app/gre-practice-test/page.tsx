@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest GRE practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last are free; the final drill and the final practice test are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written to the ETS description of the test, not ETS questions. Create a free account if you want your progress saved across your phone and computer.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. The questions are original practice questions written to the ETS description of the test, not ETS questions. Create a free account if you want your progress saved across your phone and computer.",
   },
 ];
 

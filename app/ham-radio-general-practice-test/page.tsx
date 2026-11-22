@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest General practice exam free?",
-    a: "Start for free with no account required. Most training sets and practice exams are free; the last few steps on the dashboard are part of Tigertest Premium (one payment, no subscription). Create a free account if you want your progress saved across devices.",
+    a: "Start for free with no account required. The first training sets and practice exams are free; the later steps on the dashboard are part of Tigertest Premium (one payment, no subscription). Create a free account if you want your progress saved across devices.",
   },
 ];
 

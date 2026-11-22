@@ -26,7 +26,7 @@ const faqs = [
   { q: "Are the 50 questions and 70% score official requirements?", a: "No. The four 50-question tests, topic distribution and 70% study target are editorial practice choices. They are not a verified universal provider assessment format or passing requirement. Confirm assessment arrangements with your accredited provider." },
   { q: "Does completing this give me competency or a firearm licence?", a: "No. Prescribed knowledge and practical training, SAPS competency certification and the appropriate licence are separate requirements. Tigertest is not an accredited firearm training provider, and this practice awards no unit-standard credits or licensing rights." },
   { q: "Is Unit Standard 117705 still available?", a: "The SAQA record has passed its registration end date but currently lists June 30, 2028 as the last enrolment date and June 30, 2031 as the last achievement date. PFTC still lists it as Category 1 legal knowledge. Check current provider and SAQA notices before enrolling. Proposed legislative changes are not treated as enacted law in this practice." },
-  { q: "Is this practice free?", a: "It is free to start without an account. The first three training sets and practice tests are free; the final set and test require Premium. An account lets you save progress across devices." },
+  { q: "Is this practice free?", a: "It is free to start without an account. The first training sets and practice tests are free; the later ones require Premium. An account lets you save progress across devices." },
 ];
 
 export const metadata: Metadata = {

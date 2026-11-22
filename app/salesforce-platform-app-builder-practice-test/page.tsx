@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest App Builder practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and every drill but the last two are free; the last two drills (Lightning Pages, Actions and Mobile, and Sandboxes, Change Sets and Packages) and the final practice test are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
+    a: "It is free to start, with no account required. Practice Test 1 and the first drills are free; the later drills and practice tests are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
   },
 ];
 

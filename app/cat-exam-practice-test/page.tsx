@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Are these the real CAT questions?",
-    a: "No. These are original practice questions written to the CAT pattern, not questions from the IIMs, the official mock test or past papers. They follow the real question types: reading comprehension, para-jumbles, odd sentence out and para summaries; data interpretation and logical reasoning sets; and arithmetic, algebra, geometry and number system. Multiple-choice items have four options. It is free to start, with no account required. Mock Test 1 and every drill but the last two are free; the last two drills and Mock Test 2 are part of Tigertest Premium, one payment with no subscription.",
+    a: "No. These are original practice questions written to the CAT pattern, not questions from the IIMs, the official mock test or past papers. They follow the real question types: reading comprehension, para-jumbles, odd sentence out and para summaries; data interpretation and logical reasoning sets; and arithmetic, algebra, geometry and number system. Multiple-choice items have four options. It is free to start, with no account required. Mock Test 1 and the first drills are free; the later drills and mock tests are part of Tigertest Premium, one payment with no subscription.",
   },
 ];
 

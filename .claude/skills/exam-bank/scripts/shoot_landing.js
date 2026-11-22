@@ -79,7 +79,11 @@ async function settle(page, selector) {
 }
 
 (async () => {
-  const browser = await chromium.launch(process.env.CHROME_CHANNEL ? { channel: process.env.CHROME_CHANNEL } : {});
+  // Cloud sessions ship one Chromium at /opt/pw-browsers/chromium that the repo's pinned
+  // playwright cannot find by itself; use it when present.
+  const PRE = "/opt/pw-browsers/chromium";
+  const browser = await chromium.launch(process.env.CHROME_CHANNEL ? { channel: process.env.CHROME_CHANNEL }
+    : require("fs").existsSync(PRE) ? { executablePath: PRE } : {});
   for (const pair of pairs) {
     const [id, slug, a, b] = pair.split(":");
     const v2 = a === "v2";

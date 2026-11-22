@@ -64,6 +64,13 @@ jobs:
         # may only get shorter.
         run: python3 -I tools/check_stem_length.py --all --baseline tools/stem_length_baseline.json
 
+      - name: Key length rank is not a tell (blocking)
+        # Nov 2026: writers kept the key just shorter than one distractor to pass
+        # the key-longest rule, so "pick the second-longest option" scored 50% on
+        # PALS and SHRM-CP. No bank may let one length rank score over 40%; older
+        # banks over it are in the baseline and may only improve.
+        run: python3 -I tools/check_length_rank.py --all --baseline tools/length_rank_baseline.json
+
       - name: Freshness registry is well formed (blocking)
         run: python3 -I tools/check_freshness.py
 

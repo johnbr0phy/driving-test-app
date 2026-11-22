@@ -3,7 +3,7 @@ CAT = "palsArrest"; SEG = "ARR"
 # Guidelines (epinephrine timing, ETCO2, diastolic pressure targets).
 Q = [
 ("After CPR starts in pediatric cardiac arrest, what comes next per the algorithm?",
- "Bag-mask oxygen and a monitor", ["IV access and amiodarone", "Intubation before compressions", "A 12-lead ECG first"],
+ "Bag-mask oxygen and a monitor", ["IV access and a dose of amiodarone", "Intubation before compressions", "A 12-lead ECG first"],
  "Box 1: start CPR, begin bag-mask ventilation with oxygen and attach the monitor/defibrillator, then check whether the rhythm is shockable."),
 ("A monitor shows VF in a pulseless child. What is given first?",
  "Shock as soon as possible", ["Epinephrine 0.01 mg/kg IV", "Amiodarone 5 mg/kg IV/IO", "Lidocaine 1 mg/kg"],
@@ -75,7 +75,7 @@ Q = [
  "Continuously, without pauses", ["15:2 with pauses", "30:2 with pauses", "Paused after every 6th breath"],
  "With an advanced airway, compressions continue without pauses while breaths are given every 2 to 3 seconds."),
 ("Which devices count as an advanced airway in pediatric arrest?",
- "ET tube or supraglottic airway", ["Oral or nasal airway", "Bag-mask or face shield", "High-flow nasal cannula or CPAP"],
+ "ET tube or supraglottic airway", ["Oropharyngeal or nasopharyngeal airway", "Bag-mask or a pocket face shield", "High-flow nasal cannula or CPAP"],
  "The algorithm lists endotracheal intubation or a supraglottic airway, with ETCO2 to confirm and monitor ET tube placement."),
 ("In an intubated child in cardiac arrest, what may ETCO2 be used to monitor?",
  "Quality of CPR", ["Serum potassium", "Arterial oxygen level", "Depth of sedation"],
@@ -105,7 +105,7 @@ Q = [
  "Every 2 minutes", ["Every 30 seconds", "Every 5 minutes", "After each drug dose"],
  "Rhythm checks come after each 2-minute period of CPR, which is also when compressors rotate."),
 ("During asystole care, the rhythm changes to VF. What next?",
- "Defibrillate, then resume CPR", ["Atropine and pacing", "Continue CPR, recheck in 5 min", "Adenosine 0.1 mg/kg"],
+ "Defibrillate, then resume CPR", ["Atropine and transcutaneous pacing", "Continue CPR, recheck in 5 min", "Adenosine 0.1 mg/kg rapid push"],
  "A shockable rhythm at any check moves care to the VF/pVT pathway: shock, then 2 minutes of CPR."),
 ("Which route is used for drugs in pediatric cardiac arrest?",
  "IV or intraosseous", ["Intramuscular injection", "Subcutaneous", "Intranasal"],

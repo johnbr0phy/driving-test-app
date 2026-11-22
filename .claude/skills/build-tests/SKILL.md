@@ -64,7 +64,14 @@ routes, landing, facts, catalog entry, theme, search aliases, `docs/exams/<id>.m
 ## 3. Second review
 
 Every bank gets a blind review by a reviewer that did not write it: it answers every question
-without the key, recomputes every number, and lists disagreements. It also does an options-only
+without the key, recomputes every number, and lists disagreements. "Without the key" means a
+keyless file: run `python3 -I tools/blind_answers.py make <bank> <dir>`, give the reviewer only
+`<dir>/rev/` (never the bank, which carries the key on the same line), then `score <dir>` and
+settle every disagreement against `sources.md`. Reviewers told to read the bank "blind" all
+reported 200 of 200 in Nov 2026, which proves nothing. The options-only pass uses a separate fresh
+reviewer for the same reason: one who has read the full questions cannot unsee them.
+Builders run as subagents cannot start reviewers, so the coordinator starts both after each
+build lands. It also does an options-only
 pass with `tools/options_only.py` (see the exam-bank skill): every pick it makes on a surface
 cue that finds the key is rewritten, and the bank fails while those exceed 3% of items. Picks
 from subject knowledge are not faults (live banks score 64 to 82% this way), and no item may be
@@ -75,7 +82,7 @@ between questions. `python3 -I tools/check_option_reuse.py --list <bank>` must p
 (no option set shared between questions; echo gain 2 marks per 50 or less is the target, 4.5 the
 hard limit). A perfectly even 25% per letter together with a 25% options-only score is not
 evidence of a good bank: the Nov 2026 "quartet" batch (#876, #877) scored exactly that and a
-blind echo guesser still got 44 to 49%. Run `python3 -I tools/check_stem_length.py <bank>` too (it also reports options opening with The/A/An; over 25% is filler): a median over 20 words per stem means scenario
+blind echo guesser still got 44 to 49%. Run `python3 -I tools/check_length_rank.py <bank>` (no length rank may pick the key in over 40% of items; writers who trim the key just under one distractor to pass the key-longest rule make "pick the second-longest" a tell, 50% on PALS and SHRM-CP before the fix) and `python3 -I tools/check_stem_length.py <bank>` too (it also reports options opening with The/A/An; over 25% is filler): a median over 20 words per stem means scenario
 padding and stacked qualifiers to cut before the PR. Also check the wiring the Nov 2026 batch got
 wrong: the landing is a copy of the template (`tests/landing-template.test.cjs`), and a v2 exam with
 two tests holds out only Test 2 (`tests/v2-held-out.test.cjs`). Check each finding against the

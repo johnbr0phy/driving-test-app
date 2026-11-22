@@ -1398,5 +1398,13 @@
       "pr": null,
       "findings": 32
     }
+  ],
+  "pals": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": null,
+      "findings": 5
+    }
   ]
 }

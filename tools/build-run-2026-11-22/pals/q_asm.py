@@ -9,7 +9,7 @@ Q = [
  "Appearance, breathing, circulation", ["Airway, breathing and circulation", "Alertness, pulse rate, blood pressure", "Appearance, pulse, glucose"],
  "The triangle looks at appearance, work of breathing and circulation (skin color). Airway, breathing, circulation is the start of the primary assessment."),
 ("What cycle repeats throughout the PALS systematic approach?",
- "Evaluate, identify and intervene", ["Assess, treat, then transfer out", "Identify, stabilize and refer", "Recognize, report and record"],
+ "Evaluate, identify and intervene", ["Observe, classify and refer", "Assess, decide and transfer", "Recognize, treat and record"],
  "Providers evaluate, identify the problem and intervene, then re-evaluate after every intervention."),
 ("The first look shows an unresponsive child who is not breathing. What next?",
  "Shout for help and check a pulse", ["Take a full SAMPLE history first", "Get a 12-lead ECG and a chest x-ray", "Weigh the child first"],
@@ -48,6 +48,6 @@ Q = [
  "Poor peripheral perfusion", ["Normal peripheral perfusion", "Respiratory acidosis", "Fluid overload"],
  "Delayed capillary refill, with cool mottled extremities and weak pulses, signals poor perfusion in shock."),
 ("Which finding belongs to the circulation part of the Pediatric Assessment Triangle?",
- "Pale or mottled skin", ["Heart rate on the monitor", "Blood pressure reading", "Capillary blood glucose"],
- "The triangle is a hands-off look: circulation is judged by skin color, such as pallor or mottling. Measured vital signs come in the primary assessment."),
+ "Pale or mottled skin", ["Nasal flaring or retractions", "Poor tone or weak cry", "Grunting or stridor"],
+ "The triangle is a hands-off look: circulation is judged by skin color, such as pallor or mottling. Flaring, retractions, grunting and stridor belong to breathing; tone and cry to appearance."),
 ]

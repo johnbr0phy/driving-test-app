@@ -197,6 +197,7 @@ import "./cpareg";
 import "./nmls";
 import "./series65";
 import "./series63";
+import "./series66";
 import "./aswb";
 import "./arrt";
 import "./lmrt";

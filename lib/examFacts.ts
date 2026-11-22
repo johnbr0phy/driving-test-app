@@ -7019,6 +7019,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NASAA's Series 63 overview and test specifications (effective June 12, 2023) and FINRA's Series 63 page, checked November 2026",
     source: { name: "NASAA: Series 63 Exam", url: "https://www.nasaa.org/exams/study-guides/series-63-exam-content-outline/" },
   },
+  series66: {
+    answer:
+      "The Series 66 is the Uniform Combined State Law Examination, written by NASAA and administered by FINRA. It has 110 multiple-choice questions, 100 scored and 10 unscored, in 150 minutes, and you pass by answering at least 73 of the 100 scored questions correctly. Passed with the Series 7, its corequisite, it lets a state register a person as both an agent of a broker-dealer and an investment adviser representative. NASAA's outline has four sections: laws, regulations and ethics 45%, client recommendations and strategies 30%, investment vehicles 17% and economic factors 8%.",
+    rows: [
+      { label: "Questions", value: "100 scored, plus 10 unscored" },
+      { label: "Time", value: "150 minutes" },
+      { label: "Passing score", value: "73 of 100 correct" },
+      { label: "Largest section", value: "Laws, regulations and ethics, 45%" },
+      { label: "Law tested", value: "Uniform Securities Act of 1956, as amended by NASAA" },
+      { label: "Corequisite", value: "Series 7" },
+      { label: "Run by", value: "NASAA, administered by FINRA" },
+    ],
+    basedOn: "NASAA's Series 66 overview and test specifications (effective June 12, 2023) and FINRA's Series 66 page, checked November 2026",
+    source: { name: "NASAA: Series 66 Exam", url: "https://www.nasaa.org/exams/study-guides/series-66-exam-content-outline/" },
+  },
   aswb: {
     answer:
       "The ASWB Masters exam is the Association of Social Work Boards licensing exam that most US states and several Canadian provinces use for the first license after a master's degree in social work, often called the LMSW. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The outline has three content areas: Values and Ethics 35%, Assessment and Planning 33%, and Intervention and Practice 32%. The result is pass or fail, with the number of correct answers needed set for each exam form.",

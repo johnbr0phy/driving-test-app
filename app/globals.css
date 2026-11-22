@@ -5708,6 +5708,19 @@
     --brand-border-light: 356 25% 90%;
     --brand-gradient-to: 8 50% 96%;
   }
+  /* PALS theme: bright periwinkle blue, a friendly pediatric hue (252 80% 48%, clear of netplus, mcat and psm under the hue rule) */
+  [data-theme="pals"] {
+    --brand: 252 80% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 252 80% 97%;
+    --brand-hover: 252 80% 42%;
+    --brand-dark: 252 80% 36%;
+    --brand-darker: 252 75% 26%;
+    --brand-muted: 252 30% 68%;
+    --brand-border: 252 50% 84%;
+    --brand-border-light: 252 50% 92%;
+    --brand-gradient-to: 238 70% 96%;
+  }
   [data-theme="excpt"] {
     --brand: 287 100% 30%;
     --brand-foreground: 0 0% 100%;
@@ -12995,6 +13008,17 @@
     --brand-muted: 356 25% 45%;
     --brand-dark: 356 85% 65%;
     --brand-darker: 356 80% 78%;
+  }
+  .dark [data-theme="pals"] {
+    --brand: 252 80% 50%;
+    --brand-hover: 252 80% 42%;
+    --brand-light: 252 45% 13%;
+    --brand-gradient-to: 238 40% 11%;
+    --brand-border-light: 252 35% 24%;
+    --brand-border: 252 40% 34%;
+    --brand-muted: 252 30% 45%;
+    --brand-dark: 252 80% 68%;
+    --brand-darker: 252 75% 78%;
   }
   .dark [data-theme="excpt"] {
     --brand: 287 100% 48%;

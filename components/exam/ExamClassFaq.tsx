@@ -15,6 +15,7 @@ export const TEACHES: Record<string, string> = {
   nailtech: "at a nail technology school",
   excpt: "a pharmacy technician program",
   acls: "a nursing, paramedic or hospital ACLS course",
+  pals: "a nursing, paramedic or hospital PALS course",
   contractorlaw: "a contractor licensing or Business and Law prep course",
   natecore: "an HVAC program or NATE prep class",
   hvacjourney: "an HVAC apprenticeship program or code class",

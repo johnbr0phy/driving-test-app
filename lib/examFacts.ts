@@ -536,6 +536,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The AHA's 2025 ACLS Product and Course Orientation and the 2025 Guidelines highlights, checked November 2026",
     source: { name: "AHA: 2025 ACLS Product and Course Orientation", url: "https://www.heart.org/-/media/4700782A8F784D86BC7B41D5A2016E2F.pdf" },
   },
+  pals: {
+    answer:
+      "PALS (Pediatric Advanced Life Support) is the American Heart Association course for health care professionals who direct or manage respiratory emergencies, shock and cardiopulmonary arrest in infants and children. The AHA's PALS course FAQ lists completion of an open-resource written exam with a minimum score of 84%, and every student must score at least 70% on a mandatory precourse self-assessment before class. Skills and simulated cases are tested separately. The 2025 course follows the 2025 AHA and American Academy of Pediatrics Guidelines for CPR and Emergency Cardiovascular Care, published in October 2025, and leads to a two-year course completion card.",
+    rows: [
+      { label: "Passing score", value: "84% on the open-resource written exam" },
+      { label: "Precourse self-assessment", value: "At least 70% before class" },
+      { label: "Course formats", value: "Instructor-led, HeartCode blended learning, RQI" },
+      { label: "Completion card", value: "Valid for two years" },
+      { label: "Science", value: "2025 AHA and AAP Guidelines for CPR and ECC (October 2025)" },
+      { label: "Skills testing", value: "Separate, with simulated case scenarios" },
+      { label: "Given by", value: "American Heart Association training centers" },
+    ],
+    basedOn: "The AHA's PALS Provider Course FAQ and training memo, the 2025 PALS product sheet and the 2025 Guidelines highlights, checked November 2026",
+    source: { name: "AHA: PALS Provider Course FAQ", url: "https://www.heart.org/-/media/CPR-Files/Course-FAQs/2020-Course-FAQs/2020-PALS-ILT-FAQ_102120.pdf" },
+  },
   excpt: {
     answer:
       "The ExCPT (Exam for the Certification of Pharmacy Technicians) is the National Healthcareer Association's (NHA) exam for the Certified Pharmacy Technician (CPhT) credential. NHA's test plan, from a 2023 job analysis and used for exams from July 9, 2025, gives it 100 scored questions plus 20 unscored pretest questions, with 2 hours 10 minutes to finish. Of the scored questions, 15 cover the technician's role and practice, 15 pharmacy law (9 federal requirements, 6 controlled substances), 13 drugs and drug therapy, 43 the dispensing process (13 prescription intake, 13 dispensing, 7 calculations, 10 compounding and repackaging) and 14 medication safety and quality assurance. It is scored on a 200 to 500 scale and 390 passes, which is not a fixed percentage. It is taken at a PSI testing center or by live remote proctoring.",

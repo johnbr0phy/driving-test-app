@@ -6737,6 +6737,19 @@
     --brand-border-light: 239 12% 88%;
     --brand-gradient-to: 241 20% 95%;
   }
+  /* OACP Certificate (Ontario police pre-screening) theme: dark slate indigo */
+  [data-theme="oacp"] {
+    --brand: 255 20% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 255 30% 96%;
+    --brand-hover: 255 20% 16%;
+    --brand-dark: 255 20% 13%;
+    --brand-darker: 255 20% 9%;
+    --brand-muted: 255 12% 62%;
+    --brand-border: 255 15% 78%;
+    --brand-border-light: 255 20% 88%;
+    --brand-gradient-to: 255 30% 93%;
+  }
   /* Alberta ABST security worker exam theme: very dark muted red-brown */
   [data-theme="caabguard"] {
     --brand: 6 15% 18%;
@@ -12293,6 +12306,17 @@
     --brand-dark: 239 15% 65%;
     --brand-darker: 239 15% 78%;
 }
+  .dark [data-theme="oacp"] {
+    --brand: 255 20% 50%;
+    --brand-hover: 255 20% 42%;
+    --brand-light: 255 30% 13%;
+    --brand-gradient-to: 255 30% 11%;
+    --brand-border-light: 255 20% 24%;
+    --brand-border: 255 15% 34%;
+    --brand-muted: 255 12% 45%;
+    --brand-dark: 255 20% 65%;
+    --brand-darker: 255 20% 78%;
+  }
   .dark [data-theme="caabguard"] {
     --brand: 6 15% 48.6%;
     --brand-hover: 6 15% 40.6%;

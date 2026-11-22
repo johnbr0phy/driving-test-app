@@ -1,17 +1,16 @@
 /**
- * What Tigertest Premium locks on a v1 registry exam: the last quarter of the
- * dashboard (Nov 14 2026; before that, one training step and one test on
+ * What Tigertest Premium locks on a v1 registry exam: the last half of the
+ * dashboard, the DMV's shape (Nov 22 2026, after the lock share test; Nov 14
+ * to 22 the last quarter; before that, one training step and one test on
  * every exam). Everything before it is free ("start for free"). One
  * purchase, the DMV's, opens them all.
  *
- * The count is 25% of the dashboard's steps (training steps plus practice
+ * The count is 50% of the dashboard's steps (training steps plus practice
  * tests), rounded, at least one, and the locked steps are the last ones in
- * dashboard order, so a longer exam locks more:
+ * dashboard order, so a longer exam locks more. Practice Test 1 and at least
+ * one training step always stay free:
  *
- *   Motorcycle     8 steps   locks 7 and 8        (last set, Practice Test 4)
- *   EPA 608        9 steps   locks 5 and 9        (Type III set, Practice Test 4)
- *   Life in the UK 12 steps  locks 10, 11 and 12  (last chapter set, Tests 7 and 8)
- *   CDL            longer still, so more of its last sets and tests
+ *   Motorcycle     8 steps   Sets 3 and 4, Practice Tests 3 and 4
  *   A state version (one full-length test): its last training steps only, so
  *   its one test stays free.
  *
@@ -19,9 +18,7 @@
  * locked (hooks/useExamLocks.ts), and gating is client-side like the DMV's.
  * The DMV keeps its own rules in the store.
  *
- * Since Nov 21 2026 half of browsers see the last half locked instead (the
- * lock share test, lib/lockTestIds.ts and lib/lockTest.ts): the functions
- * below take that share; with none they give the 25% rule.
+ * v2 Premium exams keep a quarter (V2_LOCKED_SHARE, lib/v2/registry.ts).
  *
  * An exam can instead mark a block of content as Premium (`premiumFrom` on
  * ExamConfig): RBT keeps Training Sets 1 to 3 and Practice Tests 1 to 3
@@ -31,12 +28,14 @@
 import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exams";
 
 /** Share of an exam's dashboard steps that need Premium. */
-export const LOCKED_SHARE = 0.25;
+export const LOCKED_SHARE = 0.5;
+
+/** v2 Premium exams (lib/v2/registry.ts) lock a quarter; they were not in the lock share test. */
+export const V2_LOCKED_SHARE = 0.25;
 
 /**
- * How many steps of a dashboard with `steps` steps are Premium. `share` is
- * LOCKED_SHARE unless the lock share test (lib/lockTestIds.ts) gives this
- * browser another; at least one step always stays free.
+ * How many steps of a dashboard with `steps` steps are Premium at `share`
+ * (LOCKED_SHARE for v1); at least one step always stays free.
  */
 export function lockedStepCount(steps: number, share: number = LOCKED_SHARE): number {
   if (steps < 2) return 0;
@@ -97,7 +96,7 @@ export function examSteps(exam: ExamConfig): ExamStep[] {
   ]);
 }
 
-/** The Premium steps: the `premiumFrom` block, else the last quarter of the dashboard. */
+/** The Premium steps: the `premiumFrom` block, else the last half of the dashboard. */
 function lockedSteps(exam: ExamConfig, share: number): ExamStep[] {
   const steps = examSteps(exam);
   if (exam.premiumFrom) return steps.filter((s) => inPremiumBlock(exam, s));

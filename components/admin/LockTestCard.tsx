@@ -69,9 +69,8 @@ export function LockTestCard({ t }: { t: LockTest }) {
           ? "No purchases from the test yet."
           : t.pValue < 0.05
             ? `The difference is unlikely to be chance (p = ${t.pValue.toFixed(3)}).`
-            : `Too close to call so far (p = ${t.pValue.toFixed(2)}); keep it running.`}{" "}
-        Each browser keeps its side. Steps someone already started stay open in both. The DMV and v2 exams are not in the test.
-        Preview a side with ?locks=25 or ?locks=50.
+            : `Too close to call (p = ${t.pValue.toFixed(2)}).`}{" "}
+        Ended Nov 22 2026: the last 50% is now locked for everyone, so these counts are final. Each browser kept its side. Steps someone already started stay open in both. The DMV and v2 exams are not in the test.
       </p>
     </section>
   );

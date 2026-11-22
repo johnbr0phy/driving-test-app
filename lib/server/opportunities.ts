@@ -965,7 +965,7 @@ function buildPaywallTest(
   };
 }
 
-const LOCK_ARM_LABELS: Record<string, string> = { '25': 'Last 25% locked (current)', '50': 'Last 50% locked' };
+const LOCK_ARM_LABELS: Record<string, string> = { '25': 'Last 25% locked', '50': 'Last 50% locked (shipped)' };
 
 function buildLockTest(
   doc: Record<string, any> | undefined,

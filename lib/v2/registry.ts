@@ -154,12 +154,12 @@ import { AISSEE } from "./exams/aissee";
 import { APCALCAB } from "./exams/apcalcab";
 import { APHUG } from "./exams/aphug";
 import { WONDERLIC } from "./exams/wonderlic";
-import { lockedStepCount } from "../examLocks";
+import { V2_LOCKED_SHARE, lockedStepCount } from "../examLocks";
 
 export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, APCSP, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, SEHP, ITCILS, ITCELI, ITA2, ITCILSB2, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, LINUXPLUS, SFPD1, SFAPPBUILDER, APLUS, AWS, AWSSAA, AZ900, SC900, AI901, PL900, SC200, GCDL, GCPPCA, CCNA, CCNPENCOR, JNCIA, PMP, PMIACP, CAPM, PSM, PSPO, ITIL, ISTQB, COBIT, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, KCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, OSSSC, VIDYAGYAN, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, JAMBLIT, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH, ISC2CC, SECURITYX, SERVICENOWCSA, SSCP];
 
 /**
- * The light Premium tier on v2 exams (Nov 2026), the v1 rule carried over:
+ * The light Premium tier on v2 exams (Nov 2026), the v1 rule of the time:
  * the last quarter of the drills and practice tests (lockedStepCount) needs
  * the one-time purchase, everything before it is free. Only career, licensing, government-job and
  * graduate-admission exams are listed. School, college-entrance and
@@ -190,7 +190,7 @@ for (const exam of EXAMS_V2) {
   if (exam.premium || !PREMIUM_V2_IDS.includes(exam.id)) continue;
   // A quarter of the dashboard's drills and tests, from the end: the last
   // test when there is more than one, the rest from the last drills.
-  const count = lockedStepCount(exam.drills.length + exam.tests.length);
+  const count = lockedStepCount(exam.drills.length + exam.tests.length, V2_LOCKED_SHARE);
   const lastTest = exam.tests.length > 1 ? exam.tests[exam.tests.length - 1] : undefined;
   const drillCount = Math.min(Math.max(0, exam.drills.length - 1), Math.max(lastTest ? 0 : 1, count - (lastTest ? 1 : 0)));
   const lastDrills = drillCount > 0 ? exam.drills.slice(-drillCount) : [];

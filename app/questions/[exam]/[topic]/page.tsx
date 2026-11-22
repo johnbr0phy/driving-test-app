@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import { practiceLabel } from "@/lib/practiceLabel";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,7 +9,7 @@ import { loadExamBank } from "@/lib/examAppRoute";
 import { getExamQuestions } from "@/lib/examData";
 import { ExamConfig, examLandingPath } from "@/lib/exams";
 import { TOPIC_PAGES_UPDATED_AT } from "@/lib/seoDates";
-import { examMostMissed } from "@/lib/server/mostMissed";
+import { examMostMissed, examsWithMostMissed } from "@/lib/server/mostMissed";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { SITE_URL } from "@/lib/siteUrl";
@@ -99,7 +100,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description,
       alternates: { canonical: url },
       robots: { index: true, follow: true },
-      openGraph: { title, description, url, type: "article" },
+      openGraph: { title, description, url, type: "article", images: [{ url: shareImageUrl(v2.exam.id), width: 1200, height: 630, alt: title }] },
+      twitter: { card: "summary_large_image", title, description, images: [shareImageUrl(v2.exam.id)] },
     };
   }
   const topic = examTopics(exam).find((t) => t.slug === topicSlug);
@@ -112,7 +114,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     description,
     alternates: { canonical: url },
     robots: { index: true, follow: true },
-    openGraph: { title, description, url, type: "article" },
+    openGraph: { title, description, url, type: "article", images: [{ url: shareImageUrl(exam.id), width: 1200, height: 630, alt: title }] },
+    twitter: { card: "summary_large_image", title, description, images: [shareImageUrl(exam.id)] },
   };
 }
 
@@ -129,6 +132,8 @@ export default async function TopicQuestionsPage({ params }: Params) {
   if (!topic && topicSlug !== MOST_MISSED_SLUG) notFound();
 
   const all = await bank(exam);
+  // Link the most-missed page from every topic page once the exam has one, so it is never orphaned.
+  const hasMostMissed = topic ? (await examsWithMostMissed()).includes(exam.id) : false;
   const dashboardHref = `${exam.slug}/dashboard`;
   const landing = examLandingPath(exam);
 
@@ -223,6 +228,13 @@ export default async function TopicQuestionsPage({ params }: Params) {
                   </Link>
                 </li>
               ))}
+            {hasMostMissed && (
+              <li>
+                <Link href={mostMissedPath(exam)} className="text-brand-dark underline underline-offset-2">
+                  The {MOST_MISSED_SHOWN} most-missed {exam.shortName} questions
+                </Link>
+              </li>
+            )}
             <li>
               <Link href={landing} className="text-brand-dark underline underline-offset-2 font-semibold">
                 {exam.name}: format, pass mark and full practice

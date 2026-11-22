@@ -2532,6 +2532,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Health Canada's amended Hazardous Products Regulations page and CCOHS WHMIS fact sheets, checked October 2026",
     source: { name: "Health Canada: Amended Hazardous Products Regulations", url: "https://www.canada.ca/en/health-canada/services/environmental-workplace-health/occupational-health-safety/workplace-hazardous-materials-information-system/amendments-hazardous-products-regulations.html" },
   },
+  oacp: {
+    answer:
+      "The OACP Certificate is the pre-screening that most Ontario police services, including the OPP, ask for before you apply as a police constable. It is sold and run by the Ontario Association of Chiefs of Police. The written part is an online, proctored assessment: Part B has 74 multiple-choice questions in 35 minutes, 44 on spelling, vocabulary, punctuation and grammar and 30 on police problem-solving, with only basic word-problem math and no calculator. Part C is a personality questionnaire. There is no pass or fail and you do not see your results: the services you apply to compare you with other applicants, and wrong answers carry a penalty. The certificate also needs a 14-day fitness log and vision and hearing tests, and it is valid for one year.",
+    rows: [
+      { label: "Part B questions", value: "74 multiple choice: 44 language, 30 problem-solving" },
+      { label: "Time", value: "35 minutes for Part B" },
+      { label: "Part C", value: "Personality questionnaire, untimed" },
+      { label: "Scoring", value: "No pass mark; wrong answers carry a penalty" },
+      { label: "Results", value: "Sent to the services you apply to, not to you" },
+      { label: "Calculator", value: "Not allowed; blank paper is" },
+      { label: "Valid", value: "1 year; retest from 10 months" },
+      { label: "Run by", value: "Ontario Association of Chiefs of Police" },
+    ],
+    basedOn: "the OACP's Constable Selection System and OACP Certificate pages, checked November 2026",
+    source: { name: "OACP: Constable Selection System", url: "https://oacp.ca/en/careers-in-policing/constable-selection-system.aspx" },
+  },
   caabguard: {
     answer:
       "To be licensed as a security worker in Alberta (security guard, loss prevention worker, patrol dog handler, alarm responder or executive security), you complete an approved course, the Alberta Basic Security Training course or an accredited equivalent, with an approved training provider, then pass the provincial final exam with a score of 80% or higher. The exam is overseen by the Government of Alberta and marked by a Ministry or certified proctor. Applicants must be over 18, eligible to work in Canada, at Canadian Language Benchmark 5 in English, and have no criminal record, outstanding charges or ongoing criminal investigation. The licence is issued under the Security Services and Investigators Act and runs for 2 years. Alberta does not publish the number of questions or a time limit.",

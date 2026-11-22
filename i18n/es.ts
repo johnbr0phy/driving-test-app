@@ -3130,6 +3130,14 @@ export const es: TranslationKeys = {
     bcgConduct: "Code of Conduct & Privacy",
     bcgReports: "Notes, Reports & Evidence",
     bcgSafety: "Personal Safety & Emergencies",
+    // oacp
+    oacpSpelling: "Spelling",
+    oacpVocab: "Vocabulary",
+    oacpPunct: "Punctuation & Capitals",
+    oacpGrammar: "Grammar",
+    oacpPolicy: "Applying Rules & Policies",
+    oacpReport: "Reading Reports & Statements",
+    oacpMath: "Word Problems",
     // caabguard
     abgIndustry: "Security Industry, Licensing & Conduct",
     abgLaw: "The Charter, Arrest, Search & Trespass",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { shareImageUrl } from "@/lib/shareImageUrl";
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { listPublicQuizzes } from "@/lib/server/quizzes";
@@ -21,8 +22,8 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: `${siteUrl}/quizzes` },
-  openGraph: { title, description, url: `${siteUrl}/quizzes`, siteName: "Tigertest", type: "website" },
-  twitter: { card: "summary", title, description },
+  openGraph: { title, description, url: `${siteUrl}/quizzes`, siteName: "Tigertest", type: "website", images: [{ url: shareImageUrl("home"), width: 1200, height: 630, alt: "Tigertest quizzes" }] },
+  twitter: { card: "summary_large_image", title, description, images: [shareImageUrl("home")] },
 };
 
 export default async function QuizzesPage() {

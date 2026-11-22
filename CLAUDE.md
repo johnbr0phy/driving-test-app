@@ -18,7 +18,7 @@ Keep this file short (under about 40 KB). Add a rule here only if it applies acr
 | `classes-quizzes-mcp.md` | Instructor classes, quizzes, the MCP server and its study tools |
 | `admin.md` | `/admin` tabs, caching, funnel, conversion, enrollments, internal-account and bot filtering |
 | `question-quality.md` | CI bank checks, reports, pick statistics, flags, freshness, source watch, Claude audit, search gaps, build tests, exam upkeep, watchdog, owner digest |
-| `seo.md` | Landings, topic/state/most-missed/teacher pages, JSON-LD, sitemaps, IndexNow, GEO, try-one-now |
+| `seo.md` | Landings, topic/state/most-missed/teacher pages, JSON-LD, sitemaps, IndexNow, GEO, try-one-now, the weekly SEO/GEO audit (`npm run seo:audit`) |
 | `ui.md` | Site header, focus bar, footer, logo, themes, Stageshow demos, interface vs test language, dark mode |
 | `privacy.md` | Consent, GA and Vercel Analytics rules, children's tests, account deletion |
 | `email.md` | Email link rules, Resend, campaigns, crons, opt-out, blocked domains |

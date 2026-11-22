@@ -257,7 +257,7 @@ const BORROWED_SETS: Record<string, string> = {
   zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
-  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter", caabguard: "caguard", caairbrake: "cdl",
+  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter", caabguard: "caguard", oacp: "police", caairbrake: "cdl",
   // Smart Serve Ontario borrows the alcohol server tiger.
   smartserve: "alcohol",
   proserve: "alcohol",

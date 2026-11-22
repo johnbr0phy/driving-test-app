@@ -190,7 +190,7 @@ export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion
               style={{ "--i": i } as CSSProperties}
               className={`group flex w-full items-center gap-3 rounded-xl border px-3 py-3 text-left text-sm sm:text-base transition ${
                 state === "idle"
-                  ? "border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-900/60 shadow-sm hover:-translate-y-0.5 hover:shadow-md hover:border-brand dark:hover:border-brand focus-visible:border-brand active:translate-y-0"
+                  ? "border-gray-300 dark:border-gray-500 bg-white dark:bg-gray-900/60 shadow-sm hover:-translate-y-0.5 hover:shadow-md hover:border-brand dark:hover:border-brand-dark focus-visible:border-brand dark:focus-visible:border-brand-dark active:translate-y-0"
                   : state === "right"
                     ? "border-green-500 bg-green-50 dark:bg-green-950 text-green-900 dark:text-green-100"
                     : state === "wrong"
@@ -201,7 +201,7 @@ export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion
               <span
                 className={`try-badge flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold transition-colors ${
                   state === "idle"
-                    ? "border-brand text-brand group-hover:bg-brand group-hover:text-white"
+                    ? "border-brand dark:border-brand-dark text-brand group-hover:bg-brand group-hover:text-white dark:group-hover:border-brand"
                     : "border-current"
                 }`}
               >

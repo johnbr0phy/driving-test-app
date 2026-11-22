@@ -1602,10 +1602,10 @@
   }
   /* MAP Growth theme: deep emerald (v2 exam; matches lib/v2/exams/mapgrowth.ts theme) */
   [data-theme="mapgrowth"] {
-    --brand: 159 95% 30%;
+    --brand: 159 95% 26%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 159 70% 95%;
-    --brand-hover: 159 95% 25%;
+    --brand-hover: 159 95% 22%;
     --brand-dark: 159 95% 21%;
     --brand-darker: 159 90% 14%;
     --brand-muted: 159 40% 70%;
@@ -4492,10 +4492,10 @@
 
   /* NZ IQN theoretical examination theme: deep teal (v2 exam; matches lib/v2/exams/nziqn.ts theme) */
   [data-theme="nziqn"] {
-    --brand: 180 85% 34%;
+    --brand: 180 85% 27%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 180 60% 95%;
-    --brand-hover: 180 85% 29%;
+    --brand-hover: 180 85% 23%;
     --brand-dark: 180 85% 26%;
     --brand-darker: 180 80% 18%;
     --brand-muted: 180 30% 68%;
@@ -4949,10 +4949,10 @@
 
   /* CCA (AHIMA Certified Coding Associate) theme: clinical teal */
   [data-theme="cca"] {
-    --brand: 188 62% 40%;
+    --brand: 188 62% 34%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 188 62% 96%;
-    --brand-hover: 188 62% 35%;
+    --brand-hover: 188 62% 30%;
     --brand-dark: 188 62% 31%;
     --brand-darker: 188 52% 22%;
     --brand-muted: 188 35% 72%;
@@ -6513,10 +6513,10 @@
 
   /* AAFCS Hospitality, Nutrition, and Food Science (HNFS) theme */
   [data-theme="aafcs"] {
-    --brand: 171 85% 30%;
+    --brand: 171 85% 28%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 171 50% 95%;
-    --brand-hover: 171 85% 25%;
+    --brand-hover: 171 85% 24%;
     --brand-dark: 171 85% 21%;
     --brand-darker: 171 70% 13%;
     --brand-muted: 171 30% 66%;
@@ -6847,10 +6847,10 @@
   }
   /* HCAP (Ireland deer hunter competence) theme: emerald green */
   [data-theme="iehcap"] {
-    --brand: 148 90% 32%;
+    --brand: 148 90% 27%;
     --brand-foreground: 0 0% 100%;
     --brand-light: 148 70% 95%;
-    --brand-hover: 148 90% 26%;
+    --brand-hover: 148 90% 23%;
     --brand-dark: 148 90% 20%;
     --brand-darker: 148 85% 11%;
     --brand-muted: 148 25% 68%;
@@ -7190,6 +7190,14 @@
      brand-darker) lighten, and low-lightness brands lift toward 50% only as
      far as white text on them keeps 4.5:1. Brand-coloured text uses
      text-brand-dark. Re-run the script when adding a theme. */
+  /* The brand itself is tuned for white text on it, so on a dark card it is
+     often too dark to read as text. In dark mode, brand-coloured text and
+     outlines use brand-dark, which the script keeps at 4.5:1 on gray-900. */
+  .dark .text-brand,
+  .dark .hover\:text-brand:hover,
+  .dark .group:hover .group-hover\:text-brand {
+    color: hsl(var(--brand-dark));
+  }
   .dark {
     --brand: 24 95% 39.5%;
     --brand-hover: 24 95% 39%;
@@ -8529,6 +8537,8 @@
   }
 
   .dark [data-theme="mapgrowth"] {
+    --brand: 159 95% 26.9%;
+    --brand-hover: 159 95% 22%;
     --brand-light: 159 45% 13%;
     --brand-gradient-to: 174 40% 11%;
     --brand-border-light: 159 35% 24%;
@@ -10910,10 +10920,10 @@
   }
 
   .dark [data-theme="inbde"] {
-    --brand: 194 75% 50%;
-    --brand-hover: 194 75% 42%;
+    --brand: 194 75% 35.5%;
+    --brand-hover: 194 75% 27.5%;
     --brand-light: 194 45% 13%;
-    --brand-gradient-to: 209 45% 11%;
+    --brand-gradient-to: 209 40% 11%;
     --brand-border-light: 194 15% 24%;
     --brand-border: 194 22% 34%;
     --brand-muted: 194 20% 45%;
@@ -10944,6 +10954,8 @@
   }
 
   .dark [data-theme="nziqn"] {
+    --brand: 180 85% 27.6%;
+    --brand-hover: 180 85% 23%;
     --brand-light: 180 45% 13%;
     --brand-gradient-to: 195 40% 11%;
     --brand-border-light: 180 25% 24%;
@@ -11023,6 +11035,18 @@
     --brand-muted: 104 18% 45%;
     --brand-dark: 104 30% 65%;
     --brand-darker: 104 30% 78%;
+  }
+
+  .dark [data-theme="kcet"] {
+    --brand: 52 100% 26.4%;
+    --brand-hover: 52 100% 18.4%;
+    --brand-light: 52 45% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 52 35% 24%;
+    --brand-border: 52 35% 34%;
+    --brand-muted: 52 30% 45%;
+    --brand-dark: 52 100% 65%;
+    --brand-darker: 52 100% 78%;
   }
 
   .dark [data-theme="cuet"] {
@@ -11170,8 +11194,8 @@
   }
 
   .dark [data-theme="nccco"] {
-    --brand: 41 15% 50%;
-    --brand-hover: 41 15% 42%;
+    --brand: 41 15% 43.1%;
+    --brand-hover: 41 15% 35.1%;
     --brand-light: 41 15% 13%;
     --brand-gradient-to: 41 15% 11%;
     --brand-border-light: 41 15% 24%;
@@ -11182,8 +11206,8 @@
   }
 
   .dark [data-theme="osssc"] {
-    --brand: 131 15% 50%;
-    --brand-hover: 131 15% 42%;
+    --brand: 131 15% 42.5%;
+    --brand-hover: 131 15% 34.5%;
     --brand-light: 131 15% 13%;
     --brand-gradient-to: 131 15% 11%;
     --brand-border-light: 131 15% 24%;
@@ -11206,8 +11230,8 @@
   }
 
   .dark [data-theme="apcsp"] {
-    --brand: 18 15% 50%;
-    --brand-hover: 18 15% 42%;
+    --brand: 18 15% 46.6%;
+    --brand-hover: 18 15% 38.6%;
     --brand-light: 18 15% 13%;
     --brand-gradient-to: 18 15% 11%;
     --brand-border-light: 18 15% 24%;
@@ -11326,6 +11350,8 @@
   }
 
   .dark [data-theme="cca"] {
+    --brand: 188 62% 34.5%;
+    --brand-hover: 188 62% 30%;
     --brand-light: 188 45% 13%;
     --brand-gradient-to: 160 40% 11%;
     --brand-border-light: 188 34% 24%;
@@ -11573,8 +11599,8 @@
   }
 
   .dark [data-theme="bcrealestate"] {
-    --brand: 158 95% 37.6%;
-    --brand-hover: 158 95% 29.8%;
+    --brand: 158 95% 27%;
+    --brand-hover: 158 95% 19%;
     --brand-light: 158 45% 13%;
     --brand-gradient-to: 158 40% 11%;
     --brand-border-light: 158 35% 24%;
@@ -11848,8 +11874,8 @@
   }
 
   .dark [data-theme="nzboat"] {
-    --brand: 209 15% 49.4%;
-    --brand-hover: 209 15% 41.4%;
+    --brand: 209 15% 46.5%;
+    --brand-hover: 209 15% 38.5%;
     --brand-light: 209 45% 13%;
     --brand-gradient-to: 224 40% 11%;
     --brand-border-light: 209 30% 24%;
@@ -12064,14 +12090,14 @@
   }
 
   .dark [data-theme="ccaf"] {
-    --brand: 12 60% 50%;
-    --brand-hover: 12 60% 42%;
+    --brand: 12 60% 48.4%;
+    --brand-hover: 12 60% 40.4%;
     --brand-light: 12 45% 13%;
     --brand-gradient-to: 30 40% 11%;
     --brand-border-light: 12 33% 24%;
     --brand-border: 12 35% 34%;
     --brand-muted: 12 35% 45%;
-    --brand-dark: 12 60% 69%;
+    --brand-dark: 12 60% 65%;
     --brand-darker: 12 55% 78%;
   }
 
@@ -12599,6 +12625,8 @@
     --brand-darker: 6 15% 78%;
   }
   .dark [data-theme="iehcap"] {
+    --brand: 148 90% 27.8%;
+    --brand-hover: 148 90% 23%;
     --brand-light: 148 45% 13%;
     --brand-gradient-to: 150 40% 11%;
     --brand-border-light: 148 25% 24%;

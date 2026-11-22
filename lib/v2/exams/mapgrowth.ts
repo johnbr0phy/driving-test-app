@@ -31,7 +31,7 @@ export const MAPGROWTH: ExamV2Config = {
   fullName: "NWEA MAP Growth (Grades 2-5)",
   tagline: "Math, Reading and Language Usage practice for the MAP Growth test in grades 2 to 5.",
   icon: "graduation",
-  theme: { brand: "159 95% 30%", brandDark: "159 95% 21%", brandLight: "159 70% 95%" },
+  theme: { brand: "159 95% 26%", brandDark: "159 95% 21%", brandLight: "159 70% 95%" },
   breakSeconds: 0,
   sections: [
     {

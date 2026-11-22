@@ -26,7 +26,7 @@ export const NZIQN: ExamV2Config = {
   fullName: "Nursing Council of New Zealand IQN theoretical examination, registered nurse",
   tagline: "Part A medication safety and Part B nursing knowledge, written for New Zealand practice and the 2025 standards of competence.",
   icon: "stethoscope",
-  theme: { brand: "180 85% 34%", brandDark: "180 85% 26%", brandLight: "180 60% 95%" },
+  theme: { brand: "180 85% 27%", brandDark: "180 85% 26%", brandLight: "180 60% 95%" },
   breakSeconds: 0,
   sections: [
     {

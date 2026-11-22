@@ -1,0 +1,48 @@
+{
+ "runId": "2026-11-22-f79d77",
+ "at": "2026-11-22T12:54:05.106Z",
+ "model": "claude-opus-5-5",
+ "checked": 6,
+ "blindChecked": 6,
+ "disagreements": 2,
+ "adjudicated": 6,
+ "findings": [
+  {
+   "examId": "sgm5",
+   "questionId": "SGM5-NOT-006",
+   "file": "data/sg-cmfas-res5-questions.json",
+   "trigger": [
+    "stats"
+   ],
+   "notes": [
+    "Answer statistics: 16 answers, 50% correct, 54% among strong students; option A (bank order) is the most picked wrong answer at 50%. Flags: keySuspect. A hard question also looks like this, so the statistics alone do not show the key is wrong."
+   ],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "low",
+    "defensibleOthers": [
+     "C"
+    ],
+    "problem": "The question gives no context: it does not say what the income is being measured for (e.g., an underwriting, disability or lending assessment) or which rule applies, so the intended answer cannot be confirmed with certainty."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "unclear",
+    "confidence": "medium",
+    "correctAnswer": [
+     "B"
+    ],
+    "reason": "Under MAS Notice FAA-N20 (Balanced Scorecard Framework), at least 60% of variable income is measured for representatives paid only variable income. For those paid a fixed salary plus variable income, all of it is measured, so B is correct. However, the stem never mentions the balanced scorecard, FAA-N20 or the non-sales KPIs, so 'measured' has no stated reference point. The independent examiner flagged this gap, and a well-prepared candidate cannot be sure which rule is being tested.",
+    "fix": "Rewrite the stem as: \"Under MAS Notice FAA-N20's Balanced Scorecard Framework, a representative's remuneration consists of a fixed salary plus variable income. How much of the variable income must be measured against the non-sales KPIs?\" Keep the options and key B. Add to the explanation: \"(By contrast, where a representative receives only variable income, at least 60% of it is measured.)\""
+   },
+   "signalExamId": "sgm5",
+   "n": 16
+  }
+ ],
+ "signalsCleared": 5
+}

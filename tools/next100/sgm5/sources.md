@@ -186,3 +186,9 @@
 - Generic financial planning ratios and methods in Part II (SKL-001 to SKL-024: planning process,
   emergency fund of 3 to 6 months, debt service ratio, human life value, rule of 72; arithmetic
   checked by hand).
+
+## Audit 2026-11-22
+- SGM5-NOT-006: stem now names FAA-N20's balanced scorecard and the non-sales KPIs, and the
+  explanation adds the variable-income-only 60% contrast. Wording only; key (all of the variable
+  income) and fact unchanged. Read 2026-11-22: https://www.mas.gov.sg/regulation/notices/notice-faa-n20
+  (Notice FAA-N20, Balanced Scorecard Framework, last revised 29 December 2025).

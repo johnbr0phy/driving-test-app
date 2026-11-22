@@ -1,0 +1,107 @@
+name: AI answer check
+
+# Asks Claude (Sonnet 5.5 with web search) the questions a person asks before
+# picking a practice test site, and records whether the answer names or cites
+# Tigertest (scripts/ai-answers.ts, lib/aiAnswers.ts, docs/claude/seo.md).
+#
+# Each run's JSON is committed to the ai-answers-data branch (never main, so no
+# checks or deploys run) and kept as an artifact; aiAnswerChecks/{date} in
+# Firestore is the watchdog's heartbeat. Spend goes through lib/apiBudget.ts
+# (job "ai-answers", $12 a month).
+#
+# Needs repository secrets ANTHROPIC_API_KEY and FIREBASE_SERVICE_ACCOUNT_KEY.
+
+on:
+  schedule:
+    - cron: "23 9 * * 1,3,5" # Mon, Wed, Fri 09:23 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Ask only the first N questions"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-answers
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Ask the questions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: |
+          extra=""
+          if [ -n "$LIMIT" ]; then
+            case "$LIMIT" in *[!0-9]*) echo "limit must be a whole number"; exit 1 ;; esac
+            extra="--limit $LIMIT"
+          fi
+          npx tsx scripts/ai-answers.ts --out "$RUNNER_TEMP/ai-answers" $extra
+
+      - name: Keep the results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-answers-${{ github.run_id }}
+          path: ${{ runner.temp }}/ai-answers/
+          if-no-files-found: ignore
+
+      # One file per run on a data-only branch, so the monthly report can read
+      # the whole history without Firebase access.
+      - name: Commit to the data branch
+        run: |
+          shopt -s nullglob
+          files=("$RUNNER_TEMP"/ai-answers/*.json)
+          [ ${#files[@]} -gt 0 ] || { echo "No results to commit"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          dir="$RUNNER_TEMP/data"
+          if git fetch --depth=1 origin ai-answers-data 2>/dev/null; then
+            git worktree add "$dir" FETCH_HEAD
+            git -C "$dir" checkout -B ai-answers-data
+          else
+            git worktree add --detach "$dir"
+            git -C "$dir" checkout --orphan ai-answers-data
+            git -C "$dir" rm -rqf .
+            printf '# AI answer check results\n\nOne JSON file per run of .github/workflows/ai-answers.yml on main. Data only: never merge this branch.\n' > "$dir/README.md"
+          fi
+          mkdir -p "$dir/runs"
+          cp "${files[@]}" "$dir/runs/"
+          git -C "$dir" add -A
+          git -C "$dir" commit -qm "AI answer check $(date -u +%F)" || { echo "Nothing new"; exit 0; }
+          for i in 1 2 3; do git -C "$dir" push origin ai-answers-data && break; sleep $((i * 5)); done
+
+      - name: Summary
+        if: always()
+        run: |
+          shopt -s nullglob
+          for f in "$RUNNER_TEMP"/ai-answers/*.json; do
+            python3 -I - "$f" >> "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json, sys
+          r = json.load(open(sys.argv[1]))
+          s = r["summary"]
+          print(f"## AI answer check {r['date']}\n")
+          print(f"{s['answered']}/{s['asked']} answered. Named in {s['mentioned']}, cited in {s['cited']}, in search results for {s['inResults']}. Cost ${s['costUsd']:.2f}.\n")
+          print("| Question | Named | Cited | In results | Top cited sites |\n|---|---|---|---|---|")
+          for q in r["results"]:
+              y = lambda b: "yes" if b else ""
+              cited = f"#{q['rank']}" if q["cited"] else ""
+              print(f"| {q['id']} | {y(q['mentioned'])} | {cited} | {y(q['inResults'])} | {', '.join(q['citedHosts'][:4]) or q.get('error', '')} |")
+          PY
+          done

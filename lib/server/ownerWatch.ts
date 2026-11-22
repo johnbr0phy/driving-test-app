@@ -16,12 +16,13 @@ const iso = (v: unknown): string | null => (typeof v === "string" && v ? v : nul
  * for a broken job.
  */
 export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> {
-  const [stats, flags, source, brief, audit] = await Promise.all([
+  const [stats, flags, source, brief, audit, aiAnswers] = await Promise.all([
     db.doc("globalStats/studyTimes").get(),
     db.doc("globalStats/questionFlags").get(),
     db.collection("sourceWatch").orderBy("checkedAt", "desc").limit(1).get(),
     db.collection("dailyBriefs").orderBy("date", "desc").limit(1).get(),
     db.collection("questionAudits").orderBy("at", "desc").limit(1).get(),
+    db.collection("aiAnswerChecks").orderBy("date", "desc").limit(1).get(),
   ]);
   const jobs: JobHeartbeat[] = [
     {
@@ -52,6 +53,14 @@ export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> 
       // Mondays; nine days allows one late or re-run week before it is a problem.
       maxAgeHours: 9 * 24,
       hint: "Check the Question audit workflow in GitHub Actions.",
+    },
+    {
+      id: "ai-answers",
+      title: "AI answer check (Mon, Wed, Fri)",
+      lastAt: iso(aiAnswers.docs[0]?.data().at),
+      // Fri to Mon is 3 days; five allows one missed run.
+      maxAgeHours: 5 * 24,
+      hint: "Check the AI answer check workflow in GitHub Actions.",
     },
   ];
   // Weekdays only, and only where the key that writes it is set.

@@ -1,7 +1,7 @@
 /**
  * AI answer check (docs/claude/seo.md, "AI answer check").
  *
- * Three times a week scripts/ai-answers.ts asks Claude, with web search, the
+ * Twice a week scripts/ai-answers.ts asks Claude, with web search, the
  * questions a person asks before picking a practice test site, and records
  * whether the answer names Tigertest, cites a tigertest.io page, or had one in
  * its search results, plus which sites it cited instead. This measures whether
@@ -66,8 +66,14 @@ export interface AiAnswerResult {
   rank: number;
   /** tigertest.io paths the answer cited or the search returned. */
   ourPaths: string[];
-  /** Hosts the answer cited, in the order it first cited them. */
+  /**
+   * Sites the answer points to, in order: hosts of its citations, then of links
+   * and domain names written in the text ("Driving-Tests.org"). Answers often
+   * recommend sites by name without a formal citation.
+   */
   citedHosts: string[];
+  /** Response block types and counts, to diagnose a run that finds nothing. */
+  blockTypes?: Record<string, number>;
   searches: number;
   costUsd: number;
   /** The first 600 characters of the answer, for the report. */
@@ -76,6 +82,8 @@ export interface AiAnswerResult {
 }
 
 const OUR_HOST = /(^|\.)tigertest\.io$/i;
+/** A URL or a bare domain name written in an answer. */
+const URL_OR_DOMAIN = /https?:\/\/[^\s)\]>"']+|\b(?:[a-z0-9-]+\.)+(?:com|org|net|io|gov|edu|us|ca|uk|co\.uk|com\.au|au|nz|app|info)\b/gi;
 const NAME = /tiger\s?test/i;
 
 function host(url: string): string {
@@ -106,7 +114,10 @@ export function analyzeAnswer(content: readonly Block[]): Omit<AiAnswerResult, '
   const ourPaths = new Set<string>();
   let inResults = false;
   let searches = 0;
+  const blockTypes: Record<string, number> = {};
   for (const block of content) {
+    const t = String(block.type ?? 'unknown');
+    blockTypes[t] = (blockTypes[t] ?? 0) + 1;
     if (block.type === 'text' && typeof block.text === 'string') {
       text.push(block.text);
       for (const c of (Array.isArray(block.citations) ? block.citations : []) as Block[]) {
@@ -129,6 +140,13 @@ export function analyzeAnswer(content: readonly Block[]): Omit<AiAnswerResult, '
     }
   }
   const answer = text.join('').trim();
+  for (const m of answer.match(URL_OR_DOMAIN) ?? []) {
+    const url = /^https?:/i.test(m) ? m : `https://${m}`;
+    const h = host(url);
+    if (!h || !h.includes('.')) continue;
+    if (!citedHosts.includes(h)) citedHosts.push(h);
+    if (OUR_HOST.test(h) && /^https?:/i.test(m)) ourPaths.add(path(url));
+  }
   const ourIndex = citedHosts.findIndex((h) => OUR_HOST.test(h));
   return {
     mentioned: NAME.test(answer),
@@ -139,6 +157,7 @@ export function analyzeAnswer(content: readonly Block[]): Omit<AiAnswerResult, '
     citedHosts,
     searches,
     excerpt: answer.slice(0, 600),
+    blockTypes,
   };
 }
 

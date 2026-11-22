@@ -56,7 +56,20 @@ test("a search error object and other blocks do not break the reader", () => {
     { type: "text", text: "Try TigerTest.io." },
   ]);
   assert.strictEqual(r.mentioned, true);
+  assert.strictEqual(r.cited, true);
+  assert.strictEqual(r.blockTypes.web_search_tool_result, 1);
+});
+
+test("sites recommended by name or link without a citation still count, in order", () => {
+  const r = analyzeAnswer([
+    { type: "text", text: "Start with Driving-Tests.org, then the DMV at https://www.dmv.ca.gov/portal/ and StateofFlorida.com. Node.js, e.g. not sites." },
+  ]);
+  assert.deepStrictEqual(r.citedHosts, ["driving-tests.org", "dmv.ca.gov", "stateofflorida.com"]);
   assert.strictEqual(r.cited, false);
+  const ours = analyzeAnswer([{ type: "text", text: "See https://www.tigertest.io/teas-practice-test or ATI." }]);
+  assert.strictEqual(ours.cited, true);
+  assert.strictEqual(ours.rank, 1);
+  assert.deepStrictEqual(ours.ourPaths, ["/teas-practice-test"]);
 });
 
 test("the summary counts answered questions only and ranks cited sites", () => {

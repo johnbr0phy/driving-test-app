@@ -15,15 +15,15 @@ export const MONTHLY_LIMIT_USD = 200;
 /** Nothing new starts once the month's total reaches this; the gap covers runs already going and calls outside the ledger. */
 export const STOP_AT_USD = 190;
 
-/** Each job's share of a month. Sums to 185, under STOP_AT_USD. */
+/** Each job's share of a month. Sums to 188, under STOP_AT_USD. */
 export const JOB_BUDGETS_USD: Readonly<Record<string, number>> = {
   'daily-brief': 35,
   'source-triage': 45,
   'question-audit': 45,
   'search-gaps': 28,
   'exam-upkeep': 20,
-  // AI answer check (lib/aiAnswers.ts): 25 questions 3 times a week on Sonnet 5.5, about $0.05 each.
-  'ai-answers': 12,
+  // AI answer check (lib/aiAnswers.ts): 25 questions twice a week on Sonnet 5.5, about $0.07 each.
+  'ai-answers': 15,
 };
 
 /** A run with less than this to spend would stop before doing anything useful, so it does not start. */

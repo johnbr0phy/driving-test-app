@@ -76,6 +76,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 
 **Premium and money**
 - Premium is one purchase (US $9.99, local prices elsewhere, `lib/pricing.ts`). v1 exams lock the last 50% of dashboard steps, the DMV's shape (`lib/examLocks.ts`, `LOCKED_SHARE`; Test 1 always free); v2 Premium exams lock 50% too (`V2_LOCKED_SHARE`). v2 exams are free unless listed in `PREMIUM_V2_IDS`; never sell school, college-entrance or children's tests. Steps a person already started stay open; class students of that exam are never locked.
+- Any change to what Premium locks or includes updates every place that describes it, in the same PR: the paywall cards (`lib/examPaywallCopy.ts` bullets in every language, `PaywallModal`, v2 `premium.benefits` in `lib/v2/registry.ts` and lock copy in `lib/v2/ui/`), `premiumBenefits` on exams, `lib/examFacts.ts` Access lines, landing FAQ answers, the purchase email and `premium.md`. Grep the old wording before pushing.
 - Email Premium only after an action the person took (paywall follow-up). No unprompted upsells.
 - Revenue figures in /admin are always US cents via `paymentNetUsdCents()`.
 

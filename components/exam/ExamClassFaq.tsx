@@ -189,6 +189,7 @@ export const TEACHES: Record<string, string> = {
   accafa: "an ACCA tuition class",
   aswbclin: "LCSW exam prep or clinical social work in an MSW program",
   phr: "a PHR exam prep class",
+  shrmcp: "a SHRM-CP exam prep class",
   fpc: "a payroll course or FPC exam prep class",
   ccs: "a medical coding or HIM program",
   rhia: "an HIM bachelor's or master's program",

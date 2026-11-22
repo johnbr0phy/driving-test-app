@@ -1590,6 +1590,13 @@ export const vi: TranslationKeys = {
     phrCompliance: "EEO, Leave, Safety & Policies",
     phrLabor: "Labor Relations & Complaints",
     phrHris: "HR Information Management",
+    // shrmcp
+    shrmLeadership: "Leadership Competencies",
+    shrmInterpersonal: "Interpersonal Competencies",
+    shrmBusiness: "Business Competencies",
+    shrmPeople: "People Knowledge",
+    shrmOrganization: "Organization Knowledge",
+    shrmWorkplace: "Workplace Knowledge",
     // cisa
     cisaAudit: "Information System Auditing Process",
     cisaGovernance: "Governance & Management of IT",

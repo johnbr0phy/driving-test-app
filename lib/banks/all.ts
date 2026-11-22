@@ -222,6 +222,7 @@ import "./aswbbach";
 import "./titleagent";
 import "./fpc";
 import "./phr";
+import "./shrmcp";
 import "./cisa";
 import "./fortigate";
 import "./cssgb";

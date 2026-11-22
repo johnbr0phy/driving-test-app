@@ -6304,6 +6304,20 @@
     --brand-gradient-to: 160 40% 95%;
   }
 
+  /* SHRM-CP theme (deep purple) */
+  [data-theme="shrmcp"] {
+    --brand: 294 70% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 294 50% 96%;
+    --brand-hover: 294 70% 16%;
+    --brand-dark: 294 70% 13%;
+    --brand-darker: 294 60% 10%;
+    --brand-muted: 294 25% 70%;
+    --brand-border: 294 25% 80%;
+    --brand-border-light: 294 22% 89%;
+    --brand-gradient-to: 320 40% 95%;
+  }
+
   /* ISACA CISA theme */
   [data-theme="cisa"] {
     --brand: 250 20% 32%;
@@ -12075,6 +12089,18 @@
     --brand-muted: 200 25% 45%;
     --brand-dark: 200 45% 65%;
     --brand-darker: 200 40% 78%;
+  }
+
+  .dark [data-theme="shrmcp"] {
+    --brand: 294 70% 49.1%;
+    --brand-hover: 294 70% 41.1%;
+    --brand-light: 294 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 294 22% 24%;
+    --brand-border: 294 25% 34%;
+    --brand-muted: 294 25% 45%;
+    --brand-dark: 294 70% 65%;
+    --brand-darker: 294 60% 78%;
   }
 
   .dark [data-theme="cisa"] {

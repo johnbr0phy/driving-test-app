@@ -7370,6 +7370,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "HRCI PHR certification page, Exam Content Outline (2024) and Certification Policies and Procedures Handbook (October 2026), checked November 2026",
     source: { name: "HRCI: PHR certification", url: "https://www.hrci.org/our-programs/our-certifications/phr" },
   },
+  shrmcp: {
+    answer:
+      "The SHRM-CP (SHRM Certified Professional) is SHRM's certification for HR professionals who work at the operational level: implementing policies, supporting day-to-day HR functions and serving as an HR point of contact. The exam has 134 multiple-choice questions, 80 knowledge items and 54 situational judgment items, of which 24 are unscored field-test items, in two sections of up to 110 minutes each, at a Prometric test center. About half the items cover the behavioral competency clusters (Leadership 19%, Business 17.5%, Interpersonal 13.5%) and half the HR knowledge domains (People 19%, Organization 18%, Workplace 13%), as set out in the SHRM BASK. Scores are scaled from 120 to 200, and every candidate who passes receives 200.",
+    rows: [
+      { label: "Questions", value: "134 (80 knowledge, 54 situational judgment, 24 unscored)" },
+      { label: "Time", value: "Two sections of up to 110 minutes each" },
+      { label: "Scoring", value: "Scaled 120 to 200; a pass is reported as 200" },
+      { label: "Item types", value: "Situational judgment 40%, foundational knowledge 10%, HR knowledge 50%" },
+      { label: "Where", value: "Prometric test centers" },
+      { label: "Run by", value: "SHRM" },
+    ],
+    basedOn: "SHRM-CP certification page, 2026 SHRM Certification Handbook and 2026 SHRM BASK, checked November 2026",
+    source: { name: "SHRM: SHRM Certified Professional", url: "https://www.shrm.org/credentials/certification/shrm-cp" },
+  },
   cisa: {
     answer:
       "The CISA (Certified Information Systems Auditor) exam is ISACA's certification exam for IT audit, control and assurance professionals. ISACA's content outline gives 150 questions across five job practice domains, in effect since 1 August 2024: Information System Auditing Process 18%, Governance and Management of IT 18%, Information Systems Acquisition, Development and Implementation 12%, Information Systems Operations and Business Resilience 26%, and Protection of Information Assets 26%. Guides quoting ISACA's candidate guide give 4 hours and a scaled score of 200 to 800, with 450 needed to pass. It is taken on a computer at a PSI test center or with a remote proctor.",

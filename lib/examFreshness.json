@@ -626,6 +626,22 @@
       "what": "Help to Buy - Wales closes to new applications on 31 March 2027 unless extended again; CEMAP2-SCH-005 keys Wales as the only place a new buyer can still apply.",
       "action": "Check gov.wales; if the scheme has closed, rewrite CEMAP2-SCH-005.",
       "source": "https://www.gov.wales/help-buy-wales/eligibility"
+    },
+    {
+      "exam": "nlvca",
+      "date": "2027-09-01",
+      "kind": "outline",
+      "what": "SSVV usually updates the VCA-ETT eindtermen and the B-VCA toetsmatrijs each year (ETT 3.1 applied from 1 September 2026).",
+      "action": "Read the new VCA-ETT and toetsmatrijs on ssvv.nl/examens, update affected items, the blueprint and the landing, record in tools/next100/nlvca/sources.md, rebuild.",
+      "source": "https://ssvv.nl/examens/"
+    },
+    {
+      "exam": "nlwft",
+      "date": "2027-04-01",
+      "kind": "outline",
+      "what": "New Wft eind- en toetstermen take effect (CDFD advice of 20 October 2026): Basis 1b.16 wording and 1f.39/1f.40 privacy wording; recheck the kenmerken.",
+      "action": "Read the CDFD toetstermen and kenmerken for module Basis from 1 April 2027, update affected items and the landing, record in sources.md, rebuild.",
+      "source": "https://cdfd.nl/nieuws/advies-over-de-inhoud-van-de-wft-examens-vanaf-1-april-2027/"
     }
   ]
 }

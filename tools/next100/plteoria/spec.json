@@ -1,0 +1,36 @@
+{
+  "id": "plteoria",
+  "stateCode": "PLTEORIA",
+  "idBase": 45500,
+  "prefix": "PLTEO-",
+  "slug": "/poland-driving-theory",
+  "landingPath": "/pl/egzamin-teoretyczny-prawo-jazdy",
+  "dataFile": "data/pl-teoria-questions.json",
+  "language": "pl",
+  "locale": "pl-PL",
+  "name": "Egzamin teoretyczny na prawo jazdy kat. B",
+  "shortName": "Prawo jazdy kat. B",
+  "examLabel": "Egzamin teoretyczny kat. B",
+  "fullName": "Część teoretyczna egzaminu państwowego na prawo jazdy kategorii B",
+  "english": {
+    "name": "Poland Driving Theory Test (Category B)",
+    "shortName": "Polish driving theory test",
+    "fullName": "Polish driving licence theory test, category B car (egzamin teoretyczny na prawo jazdy), in Polish"
+  },
+  "icon": "car",
+  "testCount": 6,
+  "questionsPerTest": 32,
+  "passPct": 92,
+  "categories": [
+    {"key": "plteoZnaki", "label": "Znaki i sygnały drogowe", "perTest": 6, "pool": 38, "segment": "ZN"},
+    {"key": "plteoPierwszenstwo", "label": "Pierwszeństwo i skrzyżowania", "perTest": 5, "pool": 31, "segment": "PIE"},
+    {"key": "plteoPredkosc", "label": "Prędkość, odstępy i hamowanie", "perTest": 4, "pool": 25, "segment": "PRE"},
+    {"key": "plteoManewry", "label": "Wyprzedzanie, manewry i holowanie", "perTest": 4, "pool": 25, "segment": "MAN"},
+    {"key": "plteoPostoj", "label": "Zatrzymanie, postój i światła", "perTest": 4, "pool": 25, "segment": "POS"},
+    {"key": "plteoNiechronieni", "label": "Piesi, rowerzyści i inni uczestnicy ruchu", "perTest": 3, "pool": 19, "segment": "NIE"},
+    {"key": "plteoKierowca", "label": "Kierowca: alkohol, pasażerowie i okres próbny", "perTest": 3, "pool": 19, "segment": "KIE"},
+    {"key": "plteoWypadki", "label": "Wypadki, pierwsza pomoc i pojazd", "perTest": 3, "pool": 18, "segment": "WYP"}
+  ],
+  "notes": "6 tests x 32 = 192 of 200 items; the 8 spares (2 ZN, 1 each PIE, PRE, MAN, POS, NIE, KIE) are training-only. 32 matches the real count (20 basic + 12 specialist, Dz.U. 2023 poz. 2659 par. 19). passPct 92 = ceil(0.92 x 32) = 30 of 32 (at most two mistakes): Tigertest's target, because the real 1/2/3-point weighting (74 points, pass 68) and the TAK/NIE and A/B/C formats are not modelled; two mistakes always pass the real rule (at most 6 points lost). Training: five topic sets 45501-45505, so the dashboard is 5 sets + 6 tests = 11 steps.",
+  "trainingSets": "topic sets 45501-45505, see WIRING.md"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nlmoto",
+  "stateCode": "NLMOTO",
+  "idBase": 45300,
+  "prefix": "NLMOT-",
+  "slug": "/motor-theorie",
+  "landingPath": "/nl/motor-theorie-examen-oefenen",
+  "dataFile": "data/nl-motor-questions.json",
+  "language": "nl",
+  "locale": "nl-NL",
+  "name": "Motor theorie-examen (CBR, rijbewijs A)",
+  "shortName": "Motor theorie",
+  "examLabel": "Theorie-examen motor",
+  "fullName": "CBR theorie-examen motor voor rijbewijs A1, A2 en A",
+  "english": {
+    "name": "Netherlands Motorcycle Theory Test (CBR, category A/A1/A2)",
+    "shortName": "Dutch motorcycle theory test",
+    "fullName": "Netherlands CBR motorcycle theory exam for licence categories A1, A2 and A, in Dutch"
+  },
+  "icon": "bike",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 82,
+  "categories": [
+    {"key": "nlmotGebruik", "label": "Gebruik van de weg", "perTest": 7, "pool": 28, "segment": "GBR"},
+    {"key": "nlmotVoorrang", "label": "Voorrang en voor laten gaan", "perTest": 6, "pool": 24, "segment": "VRR"},
+    {"key": "nlmotBijzonder", "label": "Bijzondere wegen, file en autosnelweg", "perTest": 6, "pool": 24, "segment": "BYZ"},
+    {"key": "nlmotRijtechniek", "label": "Veilig rijden: remmen en bochten", "perTest": 8, "pool": 32, "segment": "RTK"},
+    {"key": "nlmotTekens", "label": "Verkeerstekens en aanwijzingen", "perTest": 5, "pool": 20, "segment": "TKN"},
+    {"key": "nlmotUitrusting", "label": "Beschermende uitrusting en zichtbaarheid", "perTest": 5, "pool": 20, "segment": "UIT"},
+    {"key": "nlmotPassagier", "label": "Passagier, bagage en groepsrijden", "perTest": 4, "pool": 16, "segment": "PAS"},
+    {"key": "nlmotVerantwoord", "label": "Verantwoord en milieubewust rijden", "perTest": 3, "pool": 12, "segment": "VER"},
+    {"key": "nlmotWet", "label": "Wetgeving: rijbewijs A1, A2 en A", "perTest": 3, "pool": 12, "segment": "WET"},
+    {"key": "nlmotVoertuig", "label": "Voertuigkennis motor", "perTest": 3, "pool": 12, "segment": "VTG"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests, no spares (pools exactly 4x each per-test count). The real exam is 50 scored questions (plus 2 unscored test questions) in 30 minutes, pass 41 of 50 (82%); Tigertest mirrors it with four 50-question mocks at 82%. CBR names eight subjects with no published weights plus motorcycle items (examenplan 3.1.1 to 3.1.4 and the passenger); Tigertest splits subject 4 into riding technique and protective gear and gives the passenger/group and vehicle items their own categories. Dashboard = 5 topic sets + 4 tests = 9 steps.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 45301, "name": "Remmen, bochten en je motor", "categories": ["nlmotRijtechniek", "nlmotVoertuig"], "size": 44},
+    {"setNumber": 2, "id": 45302, "name": "Uitrusting, passagier en groep", "categories": ["nlmotUitrusting", "nlmotPassagier"], "size": 36},
+    {"setNumber": 3, "id": 45303, "name": "Plaats op de weg en bijzondere wegen", "categories": ["nlmotGebruik", "nlmotBijzonder"], "size": 52},
+    {"setNumber": 4, "id": 45304, "name": "Voorrang en verkeerstekens", "categories": ["nlmotVoorrang", "nlmotTekens"], "size": 44},
+    {"setNumber": 5, "id": 45305, "name": "Rijbewijs en verantwoord rijden", "categories": ["nlmotWet", "nlmotVerantwoord"], "size": 24}
+  ]
+}

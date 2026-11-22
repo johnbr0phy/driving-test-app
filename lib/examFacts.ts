@@ -4685,6 +4685,164 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Service-public.gouv.fr (fiche F33694, checked April 2026) and the arrêté du 20 avril 2012, article 2, checked November 2026",
     source: { name: "Service-public.gouv.fr: comment passer le code (ETG)", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F33694" },
   },
+  plteoria: {
+    answer:
+      "The Polish theory test for a category B car licence (część teoretyczna egzaminu państwowego) is taken on a computer at a regional road traffic centre (WORD). You get 32 questions drawn at random: 20 basic questions answered yes or no (TAK/NIE), with 20 seconds to read and 15 seconds to answer, and 12 specialist questions with three answers (A, B, C) and 50 seconds each. Every question comes with a photo or video clip and is worth 1, 2 or 3 points depending on its importance for road safety, 74 points in all, and you pass with at least 68. The test lasts 25 minutes and you cannot go back to a confirmed answer. Besides Polish it can be taken in English, German and sign language, and for category B also in Ukrainian. The Ministry of Infrastructure plans a smaller, public question catalogue, not yet in force.",
+    rows: [
+      { label: "Run by", value: "WORD regional road traffic centres" },
+      { label: "Questions", value: "32 (20 yes/no, 12 with three options)" },
+      { label: "Scoring", value: "1 to 3 points per question, 74 in all" },
+      { label: "Pass mark", value: "At least 68 points" },
+      { label: "Time", value: "25 minutes, timed per question" },
+      { label: "Languages", value: "Polish, English, German, sign language; Ukrainian for category B" },
+      { label: "Tigertest mock tests", value: "6 x 32 questions in Polish, 30 to pass" },
+    ],
+    basedOn: "Regulation of the Minister of Infrastructure of 24 November 2023 on driving examinations (Dz.U. 2023 item 2659, par. 19), Ministry of Infrastructure answers to Sejm interpellations 9840 and 13691, and the Road Traffic Act (Prawo o ruchu drogowym) as in force, checked November 2026",
+    source: { name: "Dziennik Ustaw 2023 item 2659 (Sejm legal acts database)", url: "https://api.sejm.gov.pl/eli/acts/DU/2023/2659/text.html" },
+  },
+  plcpc: {
+    answer:
+      "Every professional truck (C1, C, C+E) and bus (D1, D, D+E) driver in Poland needs an initial qualification (kwalifikacja wstępna) as well as the licence: a 280-hour course at an accredited training centre, or 140 hours for the accelerated version, ending in a computer-based qualification test at a voivodeship road traffic centre (WORD). Under the Minister of Infrastructure's regulation Dz.U. 2026 poz. 1355, in force from 3 November 2026, the test has 30 questions in 45 minutes: a basic part of 20 questions and a specialist part of 10 for the truck or bus block, one correct answer each. You pass with at least 16 correct in the basic part and 5 in the specialist part. The WORD director then issues the certificate of professional competence and code 95 goes on the licence; periodic training follows every five years.",
+    rows: [
+      { label: "Who needs it", value: "Drivers of trucks (C1, C, C+E) and buses (D1, D, D+E) for work" },
+      { label: "Course", value: "280 hours, or 140 hours accelerated, at an accredited training centre" },
+      { label: "Questions", value: "30: 20 basic and 10 specialist (truck or bus block)" },
+      { label: "Pass mark", value: "At least 16 of 20 basic and 5 of 10 specialist" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Language", value: "Polish; a WORD may offer another language, or bring a sworn translator" },
+      { label: "Run by", value: "Voivodeship road traffic centre (WORD)" },
+      { label: "After passing", value: "Certificate of professional competence, code 95; periodic training every 5 years" },
+    ],
+    basedOn: "Dz.U. 2026 poz. 1355 (regulation on training and examining drivers) and the Road Transport Act, checked November 2026",
+    source: { name: "Dz.U. 2026 poz. 1355 (Sejm ELI)", url: "https://api.sejm.gov.pl/eli/acts/DU/2026/1355/text.pdf" },
+  },
+  plaplik: {
+    answer:
+      "The entrance exam for the advocate (aplikacja adwokacka) and legal adviser (aplikacja radcowska) apprenticeships in Poland is one common written test held once a year on a date set by the Minister of Justice (26 September 2026). It has 150 single-answer questions, each with three proposed answers (A, B or C) of which only one is correct; the answer is marked on an answer sheet and cannot be changed. Each correct answer scores 1 point, and you pass with at least 100 points. According to the Ministry of Justice the time allowed is 150 minutes. No statute texts, commentaries or devices may be used. A team appointed each year by the Minister writes the questions from a list of statutes announced at least 90 days before the exam (52 acts for 2026, announced on 2 April 2026, including the Constitution, the civil, criminal, labour, company and administrative codes and procedures), and answers are judged on the law in force on the exam day. The exam is in Polish.",
+    rows: [
+      { label: "Run by", value: "Polish Ministry of Justice, examination commissions" },
+      { label: "Questions", value: "150 single answer, three options each" },
+      { label: "Scoring", value: "1 point per correct answer, no negative marking" },
+      { label: "Pass mark", value: "At least 100 of 150 points" },
+      { label: "Time", value: "150 minutes (Ministry of Justice)" },
+      { label: "Scope", value: "Yearly list of statutes (52 acts in 2026)" },
+      { label: "When", value: "Once a year (26 September in 2026)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Polish, 34 to pass" },
+    ],
+    basedOn: "Articles 75a to 75j of the Prawo o adwokaturze (Journal of Laws 2024 item 1564 as amended), the Act on Legal Advisers, the Ministry of Justice's 2026 list of statutes (2 April 2026), its 2026 exam announcement (27 April 2026) and its 2025 exam information, checked November 2026",
+    source: { name: "Polish Ministry of Justice: list of statutes for the 2026 advocate and legal adviser entrance exam (in Polish)", url: "https://www.gov.pl/web/sprawiedliwosc/ogloszenie-w-sprawie-wykazu-tytulow-aktow-prawnych-na-egzamin-wstepny-na-aplikacje-adwokacka-i-radcowska-w-2026-r" },
+  },
+  pllek: {
+    answer:
+      "The Lekarski Egzamin Koncowy (LEK) is Poland's Medical Final Examination, organised and run twice a year, in February and September, by the Centrum Egzaminow Medycznych (CEM) in Lodz, a state body under the Minister of Health. It has 200 multiple-choice questions, each with five possible answers and one correct, and lasts 4 hours. CEM's thematic structure gives internal medicine 39 questions, paediatrics 29, surgery 27, obstetrics and gynaecology 26, psychiatry 14, family medicine 20, emergency medicine and intensive therapy 20, bioethics and medical law 10, medical certification 7 and public health 8, with at least 20 on oncology. The pass mark is 56% of the valid questions, 112 if all 200 are valid. It is offered in Polish and in English, and under the Act on the professions of physician and dentist a pass, in Polish or in the language of study, is needed for the full right to practise.",
+    rows: [
+      { label: "Run by", value: "Centrum Egzaminow Medycznych (CEM), Lodz" },
+      { label: "Questions", value: "200, five options each, one correct" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "56% of valid questions (112 of 200)" },
+      { label: "Largest subjects", value: "Internal medicine 39, paediatrics 29, surgery 27, obstetrics and gynaecology 26" },
+      { label: "Sessions", value: "February and September, applications through SMK" },
+      { label: "Languages", value: "Polish and English" },
+    ],
+    basedOn: "CEM's LEK information pages and thematic structure, and the Act of 5 December 1996 on the professions of physician and dentist (Dz.U. 2026 item 37, art. 5 and 14a), checked November 2026",
+    source: { name: "CEM: LEK information (English)", url: "https://www.cem.edu.pl/english_info_lek.php" },
+  },
+  plbron: {
+    answer:
+      "Anyone applying for a firearm permit in Poland must pass an exam before a commission of at least three members named by the competent police authority, for firearms the regional police headquarters (in Warsaw the Metropolitan Police). The exam has a theory part and a practical part. The theory part is a test of 20 single-choice questions, each with three answers (A, B or C), taken in 30 minutes; you pass with at least 18 correct answers. It covers the Act on Weapons and Ammunition and the regulations issued under it, and the Penal Code provisions on weapon offences. Only after passing the theory do you sit the practical part at a shooting range, which checks range safety rules, the parts and handling of the weapon, loading, unloading and clearing stoppages, and includes a shooting test for each kind of firearm applied for; at least one commission member is a police or shooting instructor. Each part may be resat once. The exam is in Polish.",
+    rows: [
+      { label: "Run by", value: "Polish Police, the permit authority's exam commission" },
+      { label: "Questions", value: "20 single choice, three options each" },
+      { label: "Time", value: "30 minutes" },
+      { label: "Pass mark", value: "At least 18 of 20 correct" },
+      { label: "Scope", value: "Act on Weapons and Ammunition, its regulations, Penal Code" },
+      { label: "Then", value: "Practical part at a range with a shooting test" },
+      { label: "Resits", value: "One resit of each part" },
+      { label: "Tigertest mock tests", value: "6 x 20 questions in Polish, 18 to pass" },
+    ],
+    basedOn: "Article 16 of the Act on Weapons and Ammunition of 21 May 1999 (Journal of Laws 2024 item 485 as amended) and the Minister of the Interior and Administration's regulation of 28 July 2023 on the exam (Journal of Laws 2023 item 1475), checked November 2026",
+    source: { name: "Journal of Laws 2023 item 1475: regulation on the firearms permit exam (in Polish)", url: "https://api.sejm.gov.pl/eli/acts/DU/2023/1475/text.html" },
+  },
+  nltheorie: {
+    answer:
+      "The theory exam for a Dutch car licence (category B) is run by the CBR (Centraal Bureau Rijvaardigheidsbewijzen) at its exam centres, on a touch screen. Since 7 April 2025 it is one combined exam: after 2 practice questions you answer 50 exam questions plus 2 test questions that do not count, and you need at least 44 of the 50 right. You have 30 minutes, or 45 with extra time or in an individually guided exam. The exam covers eight subjects: use of the road, priority, special roads and manoeuvres, safe driving and emergencies, signs and directions, responsible and eco-friendly driving, traffic law and vehicle knowledge, including driver assistance systems since 1 April 2026. Questions come in several forms, many built on a picture: multiple choice, yes or no, number entry, drag and drop and hotspot. You can take it in Dutch or English, or with an approved interpreter, from age 16; you get the result straight away.",
+    rows: [
+      { label: "Run by", value: "CBR (Centraal Bureau Rijvaardigheidsbewijzen)" },
+      { label: "Questions", value: "50 scored, plus 2 unscored test questions" },
+      { label: "Time", value: "30 minutes (45 with extra time)" },
+      { label: "Pass mark", value: "44 of 50 (88%)" },
+      { label: "Languages", value: "Dutch or English; other languages with an approved interpreter" },
+      { label: "Minimum age", value: "16" },
+      { label: "Subjects", value: "8, from road use and priority to vehicle knowledge" },
+      { label: "Tigertest mock tests", value: "7 x 50 questions, 44 to pass" },
+    ],
+    basedOn: "CBR's theory exam pages and theory exam plan for the car, the Regeling eisen theorie-examen rijbewijscategorie B as amended in 2025, and the Dutch traffic rules (RVV 1990), checked November 2026",
+    source: { name: "CBR: Hoe gaat het theorie-examen auto?", url: "https://www.cbr.nl/nl/rijbewijs-halen/auto/theorie-examen-auto/hoe-gaat-het-theorie-examen-auto" },
+  },
+  nlbrom: {
+    answer:
+      "The moped theory exam (theorie-examen bromfiets) for a Dutch AM licence is run by the CBR (Centraal Bureau Rijvaardigheidsbewijzen) on a computer at its exam centres. After 2 practice questions you answer 50 exam questions plus 2 test questions that do not count, and you need at least 43 of the 50 right. You have 30 minutes, or 45 with extra time or in an individually guided exam, and you get the result straight away. The exam covers eight subjects, from use of the road and priority to special roads, safe riding, signs, responsible riding, traffic law and vehicle knowledge, with several question types, many on a picture. It is taken in Dutch; for another language you book an exam with an approved interpreter. You can sit it from 15.5; lessons and the practical exam start at 16. The AM licence covers a bromfiets (45 km/h), a snorfiets (25 km/h), a speed pedelec and a brommobiel.",
+    rows: [
+      { label: "Run by", value: "CBR (Centraal Bureau Rijvaardigheidsbewijzen)" },
+      { label: "Questions", value: "50 scored, plus 2 unscored test questions" },
+      { label: "Pass mark", value: "43 of 50 (86%)" },
+      { label: "Time", value: "30 minutes (45 with extra time)" },
+      { label: "Language", value: "Dutch; other languages with an approved interpreter" },
+      { label: "Minimum age", value: "15.5 for theory, 16 for the practical exam" },
+      { label: "Subjects", value: "8, from road use and priority to vehicle knowledge" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 43 to pass" },
+    ],
+    basedOn: "CBR's moped theory exam pages and theorie-examenplan bromfiets, Rijksoverheid's moped and AM licence pages and the Dutch traffic rules (RVV 1990), checked November 2026",
+    source: { name: "CBR: Hoe gaat het theorie-examen bromfiets?", url: "https://www.cbr.nl/nl/rijbewijs-halen/bromfiets/theorie-examen-bromfiets/hoe-gaat-het-theorie-examen-bromfiets" },
+  },
+  nlmoto: {
+    answer:
+      "The Dutch motorcycle theory exam (theorie-examen motor) is one CBR exam for every motorcycle licence, A1, A2 and A. You answer 50 questions on traffic rules and traffic insight on a touchscreen, plus 2 unscored test questions, after 2 practice questions. You have 30 minutes, or 45 minutes with extra time or an individually guided exam, and you pass with at least 41 of the 50 correct. The result appears straight after the exam. You can sit it from age 17. The exam is in Dutch; for another language you book an exam with an approved interpreter. Questions come in several formats, often on a picture. After the theory exam come the practical exams AVB (vehicle control) and AVD (traffic participation).",
+    rows: [
+      { label: "Run by", value: "CBR (Centraal Bureau Rijvaardigheidsbewijzen)" },
+      { label: "Questions", value: "50 scored, plus 2 unscored test questions" },
+      { label: "Time", value: "30 minutes (45 with extra time)" },
+      { label: "Pass mark", value: "41 of 50 correct" },
+      { label: "Minimum age", value: "17" },
+      { label: "Language", value: "Dutch, other languages with an interpreter" },
+      { label: "Covers", value: "A1, A2 and A (one theory exam)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 41 to pass" },
+    ],
+    basedOn: "CBR exam pages and Theorie-examenplan motor, RDW licence categories, RVV 1990 and Wegenverkeerswet 1994 as in force, checked November 2026",
+    source: { name: "CBR: theory exam for the motorcycle", url: "https://www.cbr.nl/nl/rijbewijs-halen/motor/theorie-examen-motor/hoe-gaat-het-theorie-examen-motor" },
+  },
+  nlvca: {
+    answer:
+      "B-VCA (Basisveiligheid VCA, VCA Basic Safety) is the basic personal safety diploma of the VCA scheme, owned by SSVV in the Netherlands and managed by BeSaCC-VCA in Belgium. Contractors in construction, industry, petrochemicals and installation work, and many staffing agencies, ask operational workers to hold it. The exam is taken at a recognised exam centre and has 40 closed questions in 60 minutes (75 minutes for the read-aloud version). You pass with 2,580 of 4,000 points, 64.5%, which exam centres describe as 65%. It is offered in Dutch, English and several other languages. The diploma is valid for 10 years and is recorded in the Central Diploma Register.",
+    rows: [
+      { label: "Questions", value: "40 closed questions (multiple choice, multiple response, matrix, matching)" },
+      { label: "Time", value: "60 minutes; 75 minutes read aloud" },
+      { label: "Pass mark", value: "2,580 of 4,000 points (64.5%)" },
+      { label: "Languages", value: "Dutch, English and several other languages" },
+      { label: "Diploma", value: "Valid 10 years, recorded in the CDR" },
+      { label: "Content", value: "SSVV eindtermen and toetstermen (ETT 2026)" },
+      { label: "Scheme owner", value: "SSVV (NL), BeSaCC-VCA (BE)" },
+    ],
+    basedOn: "SSVV B-VCA toetsmatrijs 2026, the SSVV exams page and FAQ, and the PBNA VCA Basis exam page and exam rules 2024-01, checked November 2026",
+    source: { name: "SSVV: VCA exams", url: "https://ssvv.nl/examens/" },
+  },
+  nlwft: {
+    answer:
+      "Anyone in the Netherlands who advises consumers on financial products must be professionally competent under the Financial Supervision Act (Wft), shown by a professional qualification made of one or more exam modules. The Basis module is the first step for every qualification except health insurance adviser. The initial Basis exam lasts 120 minutes and has 42 questions worth 63 points: 21 knowledge and understanding questions of 1 point, 2 professional conduct questions of 2 points and 19 skills and competences questions of 2 points, often built on a case. You pass with 68% of the points. The exam is in Dutch only and is taken at an exam institute recognised by the CDFD; DUO sends the result within two working days and records the diploma in Mijn Wft. Exams follow the law in force on 1 January from each 1 April. From April to September 2026, 56.1% of Basis exams were passed (CDFD, all attempts).",
+    rows: [
+      { label: "Exam owner", value: "CDFD for the Minister of Finance; recognised exam institutes" },
+      { label: "Questions", value: "42 questions, 63 points" },
+      { label: "Question types", value: "21 knowledge, 2 professional conduct, 19 skills and competences" },
+      { label: "Time", value: "120 minutes" },
+      { label: "Pass mark", value: "68% of the points" },
+      { label: "Language", value: "Dutch only" },
+      { label: "Results", value: "DUO, within two working days, diploma in Mijn Wft" },
+      { label: "Content updates", value: "Each 1 April (law of 1 January)" },
+      { label: "Tigertest mock tests", value: "4 x 50 questions in Dutch, 34 to pass" },
+    ],
+    basedOn: "CDFD exam characteristics for the initial Basis exam (from 1 April 2026), the CDFD final and test objectives for the Basis module, the CDFD candidate brochure for initial Wft exams, CDFD statistics April to September 2026, and DUO's Wft pages, checked November 2026",
+    source: { name: "CDFD: Initieel examen Basis", url: "https://cdfd.nl/initieel-examen-basis/" },
+  },
   apitalian: {
     answer:
       "The AP Italian Language and Culture Exam is a College Board exam of about 2 hours 30 minutes, fully digital in Bluebook from May 2027. Half the score is a free-response section (a project presentation, a project Q&A and an argumentative essay); the other half is 55 multiple-choice questions in Italian in 80 minutes: 25 listening questions in 40 minutes and 30 reading questions in 40 minutes, in sets of five on one text each. Scores are reported from 1 to 5.",

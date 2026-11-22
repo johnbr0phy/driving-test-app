@@ -1,0 +1,38 @@
+{
+  "id": "nlwft",
+  "stateCode": "NLWFT",
+  "idBase": 45400,
+  "prefix": "NLWFT-",
+  "slug": "/wft-basis",
+  "landingPath": "/nl/wft-basis-oefenexamen",
+  "dataFile": "data/nl-wft-basis-questions.json",
+  "language": "nl",
+  "locale": "nl-NL",
+  "name": "Wft Basis oefenexamen",
+  "shortName": "Wft Basis",
+  "examLabel": "Wft-examen Basis",
+  "fullName": "Wft Basis (vakbekwaamheidsexamen financiële dienstverlening, module Basis)",
+  "english": {
+    "name": "Wft Basis Exam (Dutch financial services competence)",
+    "shortName": "Wft Basis exam",
+    "fullName": "Dutch Wft Basis exam (financial services competence, Basis module), in Dutch"
+  },
+  "icon": "building",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 68,
+  "categories": [
+    {"key": "nlwftHuishouden", "label": "Financiële huishouding van de klant", "perTest": 6, "pool": 24, "segment": "HUI", "eindterm": "1a"},
+    {"key": "nlwftBetalen", "label": "Betalen, sparen en beleggen", "perTest": 5, "pool": 20, "segment": "BSB", "eindterm": "1b"},
+    {"key": "nlwftKrediet", "label": "Consumptief en hypothecair krediet", "perTest": 5, "pool": 20, "segment": "KRE", "eindterm": "1c"},
+    {"key": "nlwftRisico", "label": "Persoonlijke risico's, sociale zekerheid en pensioen", "perTest": 7, "pool": 28, "segment": "RIS", "eindterm": "1d"},
+    {"key": "nlwftVerzBegrip", "label": "Verzekeringsbegrippen", "perTest": 4, "pool": 16, "segment": "VBG", "eindterm": "1e"},
+    {"key": "nlwftVerzRecht", "label": "Verzekeringsrecht", "perTest": 5, "pool": 20, "segment": "VRE", "eindterm": "1g"},
+    {"key": "nlwftToezicht", "label": "Ordening en toezicht", "perTest": 8, "pool": 32, "segment": "TOE", "eindterm": "1f"},
+    {"key": "nlwftRekenen", "label": "Rekenen", "perTest": 3, "pool": 12, "segment": "REK", "eindterm": "2a, 2b"},
+    {"key": "nlwftPraktijk", "label": "Klantcontact en praktijk", "perTest": 4, "pool": 16, "segment": "PRK", "eindterm": "2b-2d, 3a-3d"},
+    {"key": "nlwftIntegriteit", "label": "Integer handelen", "perTest": 3, "pool": 12, "segment": "INT", "eindterm": "4a"}
+  ],
+  "notes": "4 tests x 50 = 200, every item used once in tests (pools exactly 4x each count). Training: five topic sets 45401-45405 (huishouding+betalen 44, krediet+risico 48, verzekeringsbegrippen+verzekeringsrecht 36, toezicht 32, rekenen+praktijk+integriteit 40), so the dashboard is 5 sets + 4 tests = 9 steps. passPct 68 = the real pass line (68% of points), 34 of 50 with equal weights. The real exam is 42 questions (63 points) in 120 minutes; Tigertest models 50 one-point questions per test. Categories follow the CDFD eindtermen of module Basis (version 1 April 2026); the per-test split is Tigertest's own (CDFD publishes counts per question type, not per eindterm).",
+  "trainingSets": "topic sets 45401-45405, see WIRING.md"
+}

@@ -1,0 +1,12 @@
+# nlvca: VCA Basic Safety (B-VCA), Netherlands and Belgium
+
+Route `/vca-basic-safety/*`, landing `/vca-basic-safety-practice-test`. v1 registry exam, region NL (also serves BE), hub group "Netherlands licences and workplace certificates".
+
+- **Real exam:** B-VCA (Basisveiligheid VCA), SSVV scheme (BeSaCC-VCA in Belgium), run by recognised exam centres such as PBNA. SSVV toetsmatrijs 2026: 40 closed questions (multiple choice, multiple response, matrix, matching), 60 minutes (75 read aloud), pass 2,580 of 4,000 points (64.5%; PBNA says 65%). Diploma valid 10 years, in the Central Diploma Register. Offered in Dutch, English and other languages; renewed exams since 1 January 2026 (ETT 3.0, ETT 3.1 in exams from 1 September 2026).
+- **Bank:** `data/vca-basic-safety-questions.json`, 200 original questions in English: laws, duties and safe-work agreements 26, safe behaviour, toolbox and LMRA 22, workplace, signs and marking 24, PPE 20, machines, tools and lifting 20, heights, openings and confined spaces 30, hazardous substances 26, electricity 10, fire and explosion 10, accidents and emergencies 12. State `NLVCA`, prefix `NLVCA-`, segments LAW, SWK, WPL, PPE, EQP, HGT, SUB, ELE, FIR, EMG.
+- **Tests:** four 40-question tests, IDs 45101-45104, 65% (26 of 40), per test 4/4/5/4/4/6/6/2/2/3 (the official toetsmatrijs counts). Pools are 4x those counts plus 40 training-only spares.
+- **Sets:** 45101-45104, content sets: Rules, Safe Behaviour & LMRA 48; Workplace, Signs & PPE 44; Equipment, Heights & Confined Spaces 50; Substances, Fire & Emergencies 58.
+- **Sources:** SSVV VCA-ETT 3.0 (2026) English edition and the B-VCA toetsmatrijs 2026; `tools/next100/nlvca/sources.md`. Dutch and Belgian variants stated as such (23 kg NL / 25 kg B lifting, 2.5 m NL / 2 m B work at height, Welfare at Work Act, IDPBW). Pictograms described in words.
+- **Build:** `python3 -I tools/next100/nlvca/build.py`, then `validate_bank.py` with the pools above.
+- **Theme:** `[data-theme="nlvca"]` deep olive gold `62 100% 16%`, `hardhat` icon, borrows the CSCS tiger. Teacher-led (VCA course providers).
+- **Not modelled:** multiple response, matrix and matching item forms; the read-aloud exam; VOL-VCA (60 questions, 60 minutes from 2026) and VIL-VCU; a Dutch translation (worthwhile later); sling angles (left the VCA exams in 2026). Kept clear of `iesafepass`, `cscs`, `auwhite`, `osha` and `auwah` stems.

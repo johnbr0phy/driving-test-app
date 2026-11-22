@@ -37,8 +37,9 @@ import rodrpcivRo from "./examTranslations/rodrpciv.ro.json";
 import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
+import plcpcPl from "./examTranslations/plcpc.pl.json";
 
-export type ExamId = "oacp" | "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt";
+export type ExamId = "oacp" | "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "aswb" | "arrt" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "aswbclin" | "phr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "plteoria" | "plcpc" | "plaplik" | "pllek" | "plbron" | "nltheorie" | "nlbrom" | "nlmoto" | "nlvca" | "nlwft" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -6013,6 +6014,785 @@ const frcode: ExamConfig = {
     ],
     sourceLine: "D'après le Code de la route en vigueur en novembre 2026. Questions originales, pas tirées de la banque officielle ; une seule bonne réponse sur quatre, panneaux décrits en mots.",
     analyticsKey: "frcode",
+  },
+};
+
+const plteoria: ExamConfig = {
+  id: "plteoria",
+  stateCode: "PLTEORIA",
+  idBase: 45500,
+  slug: "/poland-driving-theory",
+  landingPath: "/pl/egzamin-teoretyczny-prawo-jazdy",
+  name: "Egzamin teoretyczny na prawo jazdy kat. B",
+  shortName: "Prawo jazdy kat. B",
+  examLabel: "Egzamin teoretyczny kat. B",
+  fullName: "Część teoretyczna egzaminu państwowego na prawo jazdy kategorii B",
+  questionIdPrefix: "PLTEO-",
+  icon: "car",
+  testCount: 6,
+  questionsPerTest: 32,
+  passPct: 92,
+  language: "pl",
+  locale: "pl-PL",
+  english: {
+    name: "Poland Driving Theory Test (Category B)",
+    shortName: "Polish driving theory test",
+    fullName: "Polish driving licence theory test, category B car (egzamin teoretyczny na prawo jazdy), in Polish",
+  },
+  review: { pl: "model" },
+  // Real test (rozporządzenie MI z 24.11.2023 w sprawie egzaminowania, Dz.U. 2023 poz. 2659, § 19;
+  // checked 2026-11-21): computer-based at a WORD, 32 random questions, 20 basic TAK/NIE (20 s to
+  // read, 15 s to answer) and 12 specialist A/B/C (50 s), 3/2/1 points by importance, 74 in all,
+  // pass at 68, 25 minutes, no return to a confirmed answer, every question with a photo or video.
+  // Polish, English, German, sign language and (category B) Ukrainian. A smaller public catalogue
+  // is planned (MI, 30.03.2026), not in force. Categories are Tigertest's own split of the PoRD and
+  // the signs regulation; the 6/5/4/4/4/3/3/3 weights are Tigertest's. Six tests of 32 from 200
+  // original items written in Polish (8 training-only spares). Four-option single answer, equal
+  // weight, so passPct 92 (30 of 32, at most two mistakes) is Tigertest's target. Rules as in force
+  // November 2026, incl. Dz.U. 2025 poz. 1676 (okres próbny, 17-year-olds, helmets, tractors 40 km/h).
+  blueprint: {
+    plteoZnaki: 6,
+    plteoPierwszenstwo: 5,
+    plteoPredkosc: 4,
+    plteoManewry: 4,
+    plteoPostoj: 4,
+    plteoNiechronieni: 3,
+    plteoKierowca: 3,
+    plteoWypadki: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 6 tests = 11 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 45501, name: "Znaki i sygnały drogowe", categories: ["plteoZnaki"], size: 38, weightLabel: "6 z 32 pytań w teście" },
+    { setNumber: 2, id: 45502, name: "Pierwszeństwo i skrzyżowania", categories: ["plteoPierwszenstwo"], size: 31, weightLabel: "5 z 32 pytań w teście" },
+    { setNumber: 3, id: 45503, name: "Prędkość i manewry", categories: ["plteoPredkosc", "plteoManewry"], size: 50, weightLabel: "8 z 32 pytań w teście" },
+    { setNumber: 4, id: 45504, name: "Postój, piesi i rowerzyści", categories: ["plteoPostoj", "plteoNiechronieni"], size: 44, weightLabel: "7 z 32 pytań w teście" },
+    { setNumber: 5, id: 45505, name: "Kierowca, wypadki i pojazd", categories: ["plteoKierowca", "plteoWypadki"], size: 37, weightLabel: "6 z 32 pytań w teście" },
+  ],
+  categoryLabels: {
+    plteoZnaki: "Znaki i sygnały drogowe",
+    plteoPierwszenstwo: "Pierwszeństwo i skrzyżowania",
+    plteoPredkosc: "Prędkość, odstępy i hamowanie",
+    plteoManewry: "Wyprzedzanie, manewry i holowanie",
+    plteoPostoj: "Zatrzymanie, postój i światła",
+    plteoNiechronieni: "Piesi, rowerzyści i inni uczestnicy ruchu",
+    plteoKierowca: "Kierowca: alkohol, pasażerowie i okres próbny",
+    plteoWypadki: "Wypadki, pierwsza pomoc i pojazd",
+  },
+  copy: {
+    guestPrompt: "żeby zapisać postępy przed egzaminem teoretycznym i mieć na oku każdą błędną odpowiedź",
+    trainingHeading: "Zestawy ćwiczeń",
+    trainingSub: "Każdy zestaw obejmuje jeden temat egzaminu. Od razu widzisz wyjaśnienie, a błędne odpowiedzi wracają, aż je opanujesz.",
+    testsHeading: "Testy · 32 pytania, najwyżej 2 błędy",
+    heroSubs: [
+      "Pięć zestawów ćwiczeń, sześć testów. Zacznij od znaków i sygnałów drogowych.",
+      "Najpierw opanuj zestaw, potem zrób test.",
+      "Tak trzymaj. Zrób test i zobacz, gdzie jesteś.",
+      "Powtórz błędy, potem zrób test jeszcze raz.",
+      "Wszystko na zielono. Powtarzaj testy, żeby utrwalić wiedzę.",
+    ],
+    sourceLine: "Według Prawa o ruchu drogowym i przepisów o znakach, stan na listopad 2026. Własne pytania, nie z ministerialnej bazy; 32 w teście, bez punktacji 1-3 i bez zdjęć.",
+    analyticsKey: "plteoria",
+  },
+};
+
+const plcpc: ExamConfig = {
+  id: "plcpc",
+  stateCode: "PLCPC",
+  idBase: 45900,
+  slug: "/poland-driver-cpc",
+  landingPath: "/poland-driver-cpc-practice-test",
+  name: "Poland Driver CPC Qualification Test Practice",
+  shortName: "Driver CPC (Poland)",
+  examLabel: "Driver CPC qualification test",
+  fullName: "Poland Driver CPC Initial Qualification Test (kwalifikacja wstępna, trucks and buses)",
+  questionIdPrefix: "PLCPC-",
+  icon: "truck",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
+  // Source: Rozporządzenie Ministra Infrastruktury z dnia 7 października 2026 r. w sprawie
+  // szkolenia i egzaminowania kierowców wykonujących przewóz drogowy (Dz.U. 2026 poz. 1355, in
+  // force 2026-11-03, replacing Dz.U. 2022 poz. 739), par. 32 and annex 1, read 2026-11-21: the
+  // test after initial or accelerated qualification has a basic part of 20 questions (2 or 3 from
+  // each of sections 1.1, 1.2, 2.1, 3.1-3.6) and a specialist part of 10 for the truck block
+  // (1.3, 1.4, 1.5, 2.2, 3.7) or the bus block (1.4-1.7, 2.3, 3.8), 45 minutes, pass with 16/20
+  // and 5/10. Modelled at 50 questions with both blocks in every test: 34 basic, 8 truck, 8 bus
+  // (Tigertest's weights within the par. 32 shares). 70% = 35/50 = the share of 21/30. Rules from
+  // the Road Transport Act, Road Traffic Act, Drivers' Working Time Act and EU law as in force
+  // November 2026. All items original.
+  blueprint: {
+    plcpcEco: 4,
+    plcpcBrakes: 4,
+    plcpcHours: 6,
+    plcpcTacho: 4,
+    plcpcSafety: 4,
+    plcpcCrime: 2,
+    plcpcHealth: 3,
+    plcpcEmergency: 4,
+    plcpcImage: 3,
+    plcpcLoads: 4,
+    plcpcFreight: 4,
+    plcpcPassengers: 4,
+    plcpcPassRules: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 45901, name: "Rational Driving, Brakes & Tachographs", categories: ["plcpcEco", "plcpcBrakes", "plcpcTacho"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 2, id: 45902, name: "Drivers' Hours & Qualification Rules", categories: ["plcpcHours", "plcpcImage"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 3, id: 45903, name: "Road Risk, Health & Emergencies", categories: ["plcpcSafety", "plcpcCrime", "plcpcHealth", "plcpcEmergency"], size: 52, weightLabel: "13 of 50 test questions" },
+    { setNumber: 4, id: 45904, name: "Truck Block (C): Loads & Goods Rules", categories: ["plcpcLoads", "plcpcFreight"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 5, id: 45905, name: "Bus Block (D): Passengers & Passenger Rules", categories: ["plcpcPassengers", "plcpcPassRules"], size: 32, weightLabel: "8 of 50 test questions" },
+  ],
+  categoryLabels: {
+    plcpcEco: "Rational Driving & Fuel Economy",
+    plcpcBrakes: "Brakes, Retarders & Driver Assistance",
+    plcpcHours: "Drivers' Hours & Working Time",
+    plcpcTacho: "Tachographs & Records",
+    plcpcSafety: "Road & Workplace Risk",
+    plcpcCrime: "Crime & Smuggling of People",
+    plcpcHealth: "Health, Fatigue, Alcohol & Drugs",
+    plcpcEmergency: "Emergencies, First Aid & Fire",
+    plcpcImage: "Qualification, Service & Company Image",
+    plcpcLoads: "Freight (C): Loading & Load Securing",
+    plcpcFreight: "Freight (C): Goods Carriage Rules & Market",
+    plcpcPassengers: "Passengers (D): Comfort, Safety & Bus Loading",
+    plcpcPassRules: "Passengers (D): Passenger Rules & Market",
+  },
+  copy: {
+    guestPrompt: "to save your qualification test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets: three for the basic part everyone sits, one for the truck (C) block and one for the bus (D) block. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Practice tests · 50 questions, aim for 35 or more",
+    heroSubs: [
+      "Five topics, four 50-question tests. Start with Rational Driving, Brakes & Tachographs.",
+      "Master each set, then take a practice test.",
+      "Keep going. Take a practice test to see where you stand.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Retake any test to keep the rules fresh.",
+    ],
+    sourceLine: "Original questions written from Polish and EU rules for professional truck and bus drivers (2026). The real test is 30 questions; 50 per test here, 70% is Tigertest's target. Not affiliated with any WORD.",
+    analyticsKey: "plcpc",
+  },
+  review: { pl: "machine" },
+  translations: {
+    pl: examTranslation(plcpcPl),
+  },
+};
+
+const plaplik: ExamConfig = {
+  id: "plaplik",
+  stateCode: "PLAPLIK",
+  idBase: 45600,
+  slug: "/poland-legal-apprenticeship-exam",
+  landingPath: "/pl/egzamin-na-aplikacje",
+  name: "Egzamin na aplikację adwokacką i radcowską",
+  shortName: "Egzamin na aplikację",
+  examLabel: "Egzamin wstępny na aplikację",
+  fullName: "Egzamin wstępny na aplikację adwokacką i radcowską",
+  questionIdPrefix: "PLAPL-",
+  icon: "book",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 67,
+  language: "pl",
+  locale: "pl-PL",
+  english: {
+    name: "Poland Legal Apprenticeship Entrance Exam (Advocate and Legal Adviser)",
+    shortName: "Polish legal apprenticeship exam",
+    fullName: "Polish entrance exam for the advocate and legal adviser apprenticeships (egzamin wstępny na aplikację adwokacką i radcowską), in Polish",
+  },
+  review: { pl: "model" },
+  // Real exam (Prawo o adwokaturze art. 75a ust. 3 and 4, 75b ust. 6 and 7, 75h ust. 3, 75i;
+  // ustawa o radcach prawnych; Ministry of Justice pages of 2025 and the 2026 wykaz of 2 April
+  // 2026; checked 2026-11-21): one common paper for the advocate and legal adviser
+  // apprenticeships, once a year; 150 single-answer questions with three options, 1 point each,
+  // pass with 100; 150 minutes (Ministry figure, not in the statute); no aids; questions from
+  // the yearly list of statutes (52 acts in 2026), answers judged on the law on exam day. The
+  // 2026 bar reform (Dz. U. 2026 poz. 1290) changes the commissions from 2027, not the test.
+  // Categories follow the areas of art. 75a ust. 3; the Ministry publishes no weights, so the
+  // 7/2/7/6/6/2/4/5/4/2/3/2 split is Tigertest's. Four tests of 50 at the real pace (a third of
+  // the paper), pools exactly 4x; four options instead of three; passPct 67 = 34 of 50, the
+  // real two-thirds line. EU treaty law is on the list but not modelled. All items original.
+  blueprint: {
+    plapCywilne: 7,
+    plapRodzinne: 2,
+    plapCywProc: 7,
+    plapKarne: 6,
+    plapKarProc: 6,
+    plapWykroczenia: 2,
+    plapPraca: 4,
+    plapGospodarcze: 5,
+    plapAdministracyjne: 4,
+    plapSadowoadm: 2,
+    plapKonstytucja: 3,
+    plapUstroj: 2,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 45601, name: "Prawo cywilne i rodzinne", categories: ["plapCywilne", "plapRodzinne"], size: 36, weightLabel: "9 z 50 pytań w teście" },
+    { setNumber: 2, id: 45602, name: "Postępowanie cywilne", categories: ["plapCywProc"], size: 28, weightLabel: "7 z 50 pytań w teście" },
+    { setNumber: 3, id: 45603, name: "Prawo karne, procedura i wykroczenia", categories: ["plapKarne", "plapKarProc", "plapWykroczenia"], size: 56, weightLabel: "14 z 50 pytań w teście" },
+    { setNumber: 4, id: 45604, name: "Prawo pracy i prawo spółek", categories: ["plapPraca", "plapGospodarcze"], size: 36, weightLabel: "9 z 50 pytań w teście" },
+    { setNumber: 5, id: 45605, name: "Prawo administracyjne i ustrojowe", categories: ["plapAdministracyjne", "plapSadowoadm", "plapKonstytucja", "plapUstroj"], size: 44, weightLabel: "11 z 50 pytań w teście" },
+  ],
+  categoryLabels: {
+    plapCywilne: "Prawo cywilne",
+    plapRodzinne: "Prawo rodzinne i opiekuńcze",
+    plapCywProc: "Postępowanie cywilne",
+    plapKarne: "Prawo karne i karne skarbowe",
+    plapKarProc: "Postępowanie karne",
+    plapWykroczenia: "Prawo wykroczeń",
+    plapPraca: "Prawo pracy",
+    plapGospodarcze: "Prawo spółek i gospodarcze",
+    plapAdministracyjne: "Postępowanie administracyjne i samorząd",
+    plapSadowoadm: "Postępowanie sądowoadministracyjne",
+    plapKonstytucja: "Prawo konstytucyjne",
+    plapUstroj: "Ustrój sądów i samorządy zawodowe",
+  },
+  copy: {
+    guestPrompt: "aby zapisywać postępy przed egzaminem na aplikację i wracać do każdej błędnej odpowiedzi",
+    trainingHeading: "Zestawy ćwiczeń",
+    trainingSub: "Każdy zestaw obejmuje dział z wykazu aktów prawnych. Od razu widzisz, czy odpowiedź jest dobra, a pytania, w których się mylisz, wracają, aż je opanujesz.",
+    testsHeading: "Testy · 50 pytań, 34 do zaliczenia",
+    heroSubs: [
+      "Pięć zestawów i cztery testy po 50 pytań. Zacznij od prawa cywilnego i rodzinnego.",
+      "Najpierw opanuj zestaw, potem zrób test.",
+      "Zrób teraz pełny test: 50 pytań w 50 minut.",
+      "Powtórz błędy i zrób test jeszcze raz.",
+      "Wszystko na zielono. Sprawdź termin egzaminu w ogłoszeniu Ministra.",
+    ],
+    sourceLine: "Na podstawie ustaw z wykazu aktów prawnych na 2026 r., w brzmieniu z listopada 2026 r. Własne pytania, nie z arkuszy egzaminacyjnych; 50 pytań w teście i 34 do zaliczenia, jak 100 ze 150 na egzaminie. Cztery odpowiedzi zamiast trzech.",
+    analyticsKey: "plaplik",
+  },
+};
+
+const pllek: ExamConfig = {
+  id: "pllek",
+  stateCode: "PLLEK",
+  idBase: 45700,
+  slug: "/poland-lek-medical-exam",
+  landingPath: "/poland-lek-practice-test",
+  name: "Poland LEK Practice Test",
+  shortName: "LEK",
+  examLabel: "LEK",
+  fullName: "Lekarski Egzamin Koncowy (LEK), Poland Medical Final Examination",
+  questionIdPrefix: "PLLEK-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 56,
+  // CEM thematic structure of LEK (cem.edu.pl/english_lek_struktura.php, checked November 2026):
+  // 200 questions, internal medicine 39, paediatrics 29, surgery 27, obstetrics and gynaecology 26,
+  // psychiatry 14, family medicine 20, emergency medicine and intensive therapy 20, bioethics and
+  // medical law 10, medical certification 7, public health 8, at least 20 oncology. Scaled to 50
+  // per test: 10/7/7/6/4/5/5/2/2/2 (the rounding is Tigertest's). The real exam has 5 options per
+  // item and passes at 56% of valid questions; 56% is used here too. Law and certification items
+  // follow Polish statutes. All items original.
+  blueprint: {
+    pllekInternal: 10,
+    pllekPaeds: 7,
+    pllekSurgery: 7,
+    pllekObgyn: 6,
+    pllekPsych: 4,
+    pllekFamily: 5,
+    pllekEmergency: 5,
+    pllekLaw: 2,
+    pllekCert: 2,
+    pllekPublic: 2,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 45701, name: "Internal Medicine", categories: ["pllekInternal"], size: 40, weightLabel: "10 of 50 test questions" },
+    { setNumber: 2, id: 45702, name: "Paediatrics & Neonatology", categories: ["pllekPaeds"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 3, id: 45703, name: "Surgery", categories: ["pllekSurgery"], size: 28, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 45704, name: "Obstetrics & Gynaecology", categories: ["pllekObgyn"], size: 24, weightLabel: "6 of 50 test questions" },
+    { setNumber: 5, id: 45705, name: "Psychiatry & Family Medicine", categories: ["pllekPsych", "pllekFamily"], size: 36, weightLabel: "9 of 50 test questions" },
+    { setNumber: 6, id: 45706, name: "Emergency Medicine & Intensive Care", categories: ["pllekEmergency"], size: 20, weightLabel: "5 of 50 test questions" },
+    { setNumber: 7, id: 45707, name: "Law, Certification & Public Health", categories: ["pllekLaw", "pllekCert", "pllekPublic"], size: 24, weightLabel: "6 of 50 test questions" },
+  ],
+  categoryLabels: {
+    pllekInternal: "Internal Medicine",
+    pllekPaeds: "Paediatrics & Neonatology",
+    pllekSurgery: "Surgery",
+    pllekObgyn: "Obstetrics & Gynaecology",
+    pllekPsych: "Psychiatry",
+    pllekFamily: "Family Medicine",
+    pllekEmergency: "Emergency Medicine & Intensive Care",
+    pllekLaw: "Bioethics & Medical Law",
+    pllekCert: "Medical Certification",
+    pllekPublic: "Public Health",
+  },
+  copy: {
+    guestPrompt: "to save your LEK progress and track every question you miss",
+    trainingHeading: "Train by LEK subject",
+    trainingSub: "Seven sets on the CEM thematic structure, from internal medicine to Polish medical law. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock exams · 50 questions weighted like the 200-question LEK",
+    heroSubs: [
+      "Ten subjects, four mock exams. Internal medicine weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock exam.",
+      "Fix the misses, then retake.",
+      "All sets and mock exams done. Keep revising your weakest subject.",
+    ],
+    sourceLine: "Based on the CEM thematic structure of the LEK. Original questions in English; 50 per test, weighted like the real exam, 4 options instead of the real 5. Not affiliated with CEM or the Ministry of Health.",
+    analyticsKey: "pllek",
+  },
+};
+
+const plbron: ExamConfig = {
+  id: "plbron",
+  stateCode: "PLBRON",
+  idBase: 45800,
+  slug: "/poland-firearms-permit-exam",
+  landingPath: "/pl/egzamin-na-pozwolenie-na-bron",
+  name: "Egzamin na pozwolenie na broń",
+  shortName: "Pozwolenie na broń",
+  examLabel: "Egzamin na pozwolenie na broń, część teoretyczna",
+  fullName: "Egzamin ze znajomości przepisów dotyczących posiadania broni (część teoretyczna)",
+  questionIdPrefix: "PLBRON-",
+  icon: "target",
+  testCount: 6,
+  questionsPerTest: 20,
+  passPct: 90,
+  language: "pl",
+  locale: "pl-PL",
+  english: {
+    name: "Poland Firearms Permit Exam (Theory Part)",
+    shortName: "Polish firearms permit exam",
+    fullName: "Polish firearms permit exam, theory part (egzamin na pozwolenie na broń, część teoretyczna), in Polish",
+  },
+  review: { pl: "model" },
+  // Real exam (art. 16 ustawy o broni i amunicji, t.j. Dz. U. z 2024 r. poz. 485 ze zm.;
+  // rozporządzenie MSWiA z 28.07.2023 r., Dz. U. poz. 1475; checked 2026-11-21): a commission of
+  // at least three named by the permit authority (the KWP/KSP for firearms); theory part of 20
+  // single-choice questions with three options, 30 minutes, at least 18 correct to pass; then a
+  // practical part at a range with a shooting test; one resit of each part. Scope: the ustawa
+  // and its regulations plus the Kodeks karny on weapon offences. No published weights, so the
+  // 3/4/3/2/2/2/2/2 split is Tigertest's. Six tests of 20 at the real length and line (passPct
+  // 90 = 18 of 20); four options instead of three. All items original, written in Polish; the
+  // police-published regional banks were not used.
+  blueprint: {
+    plbrPojecia: 3,
+    plbrPozwolenia: 4,
+    plbrObowiazki: 3,
+    plbrPrzechowywanie: 2,
+    plbrGranica: 2,
+    plbrStrzelnica: 2,
+    plbrKarne: 2,
+    plbrObrona: 2,
+  },
+  // Five topic sets, not testSets(): 5 + 6 tests = 11 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 45801, name: "Rodzaje broni i amunicja", categories: ["plbrPojecia"], size: 28, weightLabel: "3 z 20 pytań w teście" },
+    { setNumber: 2, id: 45802, name: "Pozwolenie na broń", categories: ["plbrPozwolenia"], size: 36, weightLabel: "4 z 20 pytań w teście" },
+    { setNumber: 3, id: 45803, name: "Obowiązki posiadacza broni", categories: ["plbrObowiazki"], size: 32, weightLabel: "3 z 20 pytań w teście" },
+    { setNumber: 4, id: 45804, name: "Przechowywanie, przewóz i strzelnica", categories: ["plbrPrzechowywanie", "plbrGranica", "plbrStrzelnica"], size: 60, weightLabel: "6 z 20 pytań w teście" },
+    { setNumber: 5, id: 45805, name: "Prawo karne i obrona konieczna", categories: ["plbrKarne", "plbrObrona"], size: 44, weightLabel: "4 z 20 pytań w teście" },
+  ],
+  categoryLabels: {
+    plbrPojecia: "Rodzaje broni i amunicja",
+    plbrPozwolenia: "Pozwolenie na broń",
+    plbrObowiazki: "Obowiązki posiadacza broni",
+    plbrPrzechowywanie: "Przechowywanie, noszenie i przewóz",
+    plbrGranica: "Europejska karta broni palnej, przywóz i wywóz",
+    plbrStrzelnica: "Strzelnica i regulamin strzelnicy",
+    plbrKarne: "Przestępstwa i wykroczenia związane z bronią",
+    plbrObrona: "Obrona konieczna i stan wyższej konieczności",
+  },
+  copy: {
+    guestPrompt: "aby zapisywać postępy przed egzaminem na pozwolenie na broń i wracać do każdej błędnej odpowiedzi",
+    trainingHeading: "Zestawy ćwiczeń",
+    trainingSub: "Każdy zestaw obejmuje dział przepisów o broni. Od razu widzisz, czy odpowiedź jest dobra, a pytania, w których się mylisz, wracają, aż je opanujesz.",
+    testsHeading: "Testy · 20 pytań, 18 do zaliczenia",
+    heroSubs: [
+      "Pięć zestawów i sześć testów po 20 pytań. Zacznij od pozwolenia na broń.",
+      "Najpierw opanuj zestaw, potem zrób test.",
+      "Zrób teraz pełny test: 20 pytań w 30 minut.",
+      "Powtórz błędy i zrób test jeszcze raz.",
+      "Wszystko na zielono. Powtarzaj testy, żeby utrwalić przepisy.",
+    ],
+    sourceLine: "Na podstawie ustawy o broni i amunicji, rozporządzeń wydanych na jej podstawie i Kodeksu karnego, w brzmieniu z listopada 2026 r. Własne pytania, nie z baz pytań komend Policji; 20 pytań w teście i 18 do zaliczenia, jak na egzaminie. Cztery odpowiedzi zamiast trzech.",
+    analyticsKey: "plbron",
+  },
+};
+
+const nltheorie: ExamConfig = {
+  id: "nltheorie",
+  stateCode: "NLTHEORIE",
+  idBase: 45000,
+  slug: "/netherlands-driving-theory",
+  landingPath: "/netherlands-driving-theory-test",
+  name: "Netherlands Driving Theory Practice Test",
+  shortName: "Netherlands theory test",
+  examLabel: "Dutch driving theory exam",
+  fullName: "CBR theory exam (theorie-examen) for a category B car licence",
+  questionIdPrefix: "NLTH-",
+  icon: "car",
+  testCount: 7,
+  questionsPerTest: 50,
+  passPct: 88,
+  // Source: CBR "Hoe gaat het theorie-examen auto?" and "Theorie-examenplan auto" (checked
+  // 2026-11-21): one combined exam since 7 April 2025, 50 questions plus 2 unscored test questions,
+  // 44 of 50 to pass, 30 minutes (45 with extra time), in Dutch or English, from age 16. Eight
+  // subjects with no published weights (1 Gebruik van de weg, 2 Voorrang en voor laten gaan,
+  // 3 Bijzondere wegen en manoeuvres, 4 Veilig rijden en noodsituaties, 5 Verkeerstekens en
+  // aanwijzingen, 6 Verantwoorde verkeersdeelname en milieubewust rijden, 7 Wetgeving,
+  // 8 Voertuigkennis); driver assistance systems added from 1 April 2026 (Stcrt. 2025, 40398).
+  // Weights are Tigertest's: subject 1 split into road use (7) and parking (4), K+ subjects above
+  // the K subjects. Rules: RVV 1990 (version 1 July 2026), Wegenverkeerswet 1994, RDW and
+  // Rijksoverheid pages. Seven tests of 50, pools exactly 7x each count (350, all original; signs
+  // described in words; pictures, animations and hazard timing not modelled). passPct 88 = 44/50.
+  blueprint: {
+    nlthRoad: 7,
+    nlthParking: 4,
+    nlthPriority: 8,
+    nlthSpecial: 7,
+    nlthSafety: 7,
+    nlthSigns: 7,
+    nlthHazard: 4,
+    nlthLaw: 3,
+    nlthVehicle: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 45001, name: "Use of the Road", categories: ["nlthRoad"], size: 49, weightLabel: "7 of 50 test questions" },
+    { setNumber: 2, id: 45002, name: "Priority & Giving Way", categories: ["nlthPriority"], size: 56, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 45003, name: "Motorways, Roundabouts & Special Roads", categories: ["nlthSpecial"], size: 49, weightLabel: "7 of 50 test questions" },
+    { setNumber: 4, id: 45004, name: "Safe Driving & Emergencies", categories: ["nlthSafety"], size: 49, weightLabel: "7 of 50 test questions" },
+    { setNumber: 5, id: 45005, name: "Signs, Markings & Directions", categories: ["nlthSigns"], size: 49, weightLabel: "7 of 50 test questions" },
+    { setNumber: 6, id: 45006, name: "Stopping, Parking & Traffic Law", categories: ["nlthParking", "nlthLaw"], size: 49, weightLabel: "7 of 50 test questions" },
+    { setNumber: 7, id: 45007, name: "Responsible Driving & Your Car", categories: ["nlthHazard", "nlthVehicle"], size: 49, weightLabel: "7 of 50 test questions" },
+  ],
+  categoryLabels: {
+    nlthRoad: "Use of the Road",
+    nlthParking: "Stopping & Parking",
+    nlthPriority: "Priority & Giving Way",
+    nlthSpecial: "Motorways, Roundabouts & Special Roads",
+    nlthSafety: "Safe Driving & Emergencies",
+    nlthSigns: "Signs, Markings & Directions",
+    nlthHazard: "Responsible & Eco Driving",
+    nlthLaw: "Licence & Traffic Law",
+    nlthVehicle: "Vehicle & Driver Assistance",
+  },
+  copy: {
+    guestPrompt: "to save your theory exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Seven sets on the Dutch traffic rules, signs and safety subjects CBR's theory exam covers. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 44 or more",
+    heroSubs: [
+      "Seven topics, seven 50-question tests. Priority weighs most.",
+      "Master each set, then test.",
+      "Halfway there. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Book your theory exam with the CBR.",
+    ],
+    sourceLine: "Based on the Dutch traffic rules (RVV 1990) and CBR's theory exam plan. Original questions; 50 per test, 44 to pass like the real exam.",
+    analyticsKey: "nltheorie",
+  },
+};
+
+const nlbrom: ExamConfig = {
+  id: "nlbrom",
+  stateCode: "NLBROM",
+  idBase: 45200,
+  slug: "/bromfiets-theorie",
+  landingPath: "/nl/bromfiets-theorie-examen-oefenen",
+  name: "Bromfiets theorie-examen",
+  shortName: "Bromfiets theorie",
+  examLabel: "Theorie-examen bromfiets",
+  fullName: "CBR theorie-examen bromfiets (rijbewijs AM)",
+  questionIdPrefix: "NLBRM-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 86,
+  language: "nl",
+  locale: "nl-NL",
+  english: {
+    name: "Netherlands Moped Theory Test (CBR, category AM)",
+    shortName: "Dutch moped theory test",
+    fullName: "CBR moped theory exam for a Dutch category AM licence (bromfiets, snorfiets, brommobiel), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (CBR "Hoe gaat het theorie-examen bromfiets?" and "Theorie-examenplan bromfiets",
+  // checked 2026-11-22): 50 exam questions plus 2 unscored test questions after 2 practice
+  // questions, 43 of 50 to pass, 30 minutes (45 with extra time or individually guided), in
+  // Dutch or with an approved interpreter; theory from 15.5. Eight subjects with no published
+  // weights (1 Gebruik van de weg, 2 Voorrang en voor laten gaan, 3 Bijzondere wegen,
+  // weggedeelten, weggebruikers en manoeuvres, 4 Veilig rijden en noodsituaties,
+  // 5 Verkeerstekens en aanwijzingen, 6 Verantwoorde verkeersdeelname en milieubewust rijden,
+  // 7 Wetgeving, 8 Voertuigkennis). The 8/8/7/7/8/5/4/3 split is Tigertest's. Rules: RVV 1990
+  // (version 1 July 2026), Wegenverkeerswet 1994, Rijksoverheid moped pages. Four tests of 50,
+  // pools exactly 4x each count (200, all original, written in Dutch; signs described in words;
+  // photos and other question types not modelled). passPct 86 = 43/50, as the real exam.
+  blueprint: {
+    nlbrGebruik: 8,
+    nlbrVoorrang: 8,
+    nlbrBijzonder: 7,
+    nlbrVeilig: 7,
+    nlbrTekens: 8,
+    nlbrVerantwoord: 5,
+    nlbrWet: 4,
+    nlbrVoertuig: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 45201, name: "Gebruik van de weg en bijzondere wegen", categories: ["nlbrGebruik", "nlbrBijzonder"], size: 60, weightLabel: "15 van 50 vragen per proefexamen" },
+    { setNumber: 2, id: 45202, name: "Voorrang en voor laten gaan", categories: ["nlbrVoorrang"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 3, id: 45203, name: "Verkeerstekens en aanwijzingen", categories: ["nlbrTekens"], size: 32, weightLabel: "8 van 50 vragen per proefexamen" },
+    { setNumber: 4, id: 45204, name: "Veilig en verantwoord rijden", categories: ["nlbrVeilig", "nlbrVerantwoord"], size: 48, weightLabel: "12 van 50 vragen per proefexamen" },
+    { setNumber: 5, id: 45205, name: "Wetgeving en voertuigkennis", categories: ["nlbrWet", "nlbrVoertuig"], size: 28, weightLabel: "7 van 50 vragen per proefexamen" },
+  ],
+  categoryLabels: {
+    nlbrGebruik: "Gebruik van de weg",
+    nlbrVoorrang: "Voorrang en voor laten gaan",
+    nlbrBijzonder: "Bijzondere wegen, weggebruikers en manoeuvres",
+    nlbrVeilig: "Veilig rijden en noodsituaties",
+    nlbrTekens: "Verkeerstekens en aanwijzingen",
+    nlbrVerantwoord: "Verantwoord en milieubewust rijden",
+    nlbrWet: "Wetgeving",
+    nlbrVoertuig: "Voertuigkennis",
+  },
+  copy: {
+    guestPrompt: "om je voortgang voor het theorie-examen bromfiets te bewaren en elke fout bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt onderwerpen uit het examenplan van het CBR. Je krijgt meteen uitleg, en vragen die je fout had, komen terug tot je ze kent.",
+    testsHeading: "Proefexamens · 50 vragen, 43 goed om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier proefexamens. Voorrang, verkeerstekens en gebruik van de weg komen het vaakst voor.",
+      "Eerst de oefenset beheersen, dan het proefexamen.",
+      "De helft is gedaan. Maak een proefexamen van 50 vragen.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Plan je theorie-examen bij het CBR.",
+    ],
+    sourceLine: "Volgens het RVV 1990 en de regels van de Rijksoverheid, stand november 2026. Eigen vragen, niet uit het CBR-examen; 50 per proefexamen, 43 goed om te slagen zoals bij het echte examen.",
+    analyticsKey: "nlbrom",
+  },
+};
+
+const nlmoto: ExamConfig = {
+  id: "nlmoto",
+  stateCode: "NLMOTO",
+  idBase: 45300,
+  slug: "/motor-theorie",
+  landingPath: "/nl/motor-theorie-examen-oefenen",
+  name: "Motor theorie-examen (CBR, rijbewijs A)",
+  shortName: "Motor theorie",
+  examLabel: "Theorie-examen motor",
+  fullName: "CBR theorie-examen motor voor rijbewijs A1, A2 en A",
+  questionIdPrefix: "NLMOT-",
+  icon: "bike",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 82,
+  language: "nl",
+  locale: "nl-NL",
+  english: {
+    name: "Netherlands Motorcycle Theory Test (CBR, category A/A1/A2)",
+    shortName: "Dutch motorcycle theory test",
+    fullName: "Netherlands CBR motorcycle theory exam for licence categories A1, A2 and A, in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (CBR "Hoe gaat het theorie-examen motor?" and Theorie-examenplan motor, checked
+  // 2026-11-22): 50 scored questions + 2 unscored test questions, 30 minutes, pass 41 of 50,
+  // from 17, in Dutch (other languages with an interpreter). Eight CBR subjects, no published
+  // weights, plus motorcycle items (protective gear, visibility, slippery surfaces, kill switch,
+  // oil and chain, the passenger). The 7/6/6/8/5/5/4/3/3/3 split is Tigertest's own. Four tests
+  // of 50, pools exactly 4x (200, all original, written in Dutch); single best answer of four.
+  blueprint: {
+    nlmotGebruik: 7,
+    nlmotVoorrang: 6,
+    nlmotBijzonder: 6,
+    nlmotRijtechniek: 8,
+    nlmotTekens: 5,
+    nlmotUitrusting: 5,
+    nlmotPassagier: 4,
+    nlmotVerantwoord: 3,
+    nlmotWet: 3,
+    nlmotVoertuig: 3,
+  },
+  // Five topic sets, not testSets(): 5 + 4 tests = 9 dashboard steps.
+  trainingSets: [
+    { setNumber: 1, id: 45301, name: "Remmen, bochten en je motor", categories: ["nlmotRijtechniek", "nlmotVoertuig"], size: 44, weightLabel: "11 van 50 vragen per examen" },
+    { setNumber: 2, id: 45302, name: "Uitrusting, passagier en groep", categories: ["nlmotUitrusting", "nlmotPassagier"], size: 36, weightLabel: "9 van 50 vragen per examen" },
+    { setNumber: 3, id: 45303, name: "Plaats op de weg en bijzondere wegen", categories: ["nlmotGebruik", "nlmotBijzonder"], size: 52, weightLabel: "13 van 50 vragen per examen" },
+    { setNumber: 4, id: 45304, name: "Voorrang en verkeerstekens", categories: ["nlmotVoorrang", "nlmotTekens"], size: 44, weightLabel: "11 van 50 vragen per examen" },
+    { setNumber: 5, id: 45305, name: "Rijbewijs en verantwoord rijden", categories: ["nlmotWet", "nlmotVerantwoord"], size: 24, weightLabel: "6 van 50 vragen per examen" },
+  ],
+  categoryLabels: {
+    nlmotGebruik: "Gebruik van de weg",
+    nlmotVoorrang: "Voorrang en voor laten gaan",
+    nlmotBijzonder: "Bijzondere wegen, file en autosnelweg",
+    nlmotRijtechniek: "Veilig rijden: remmen en bochten",
+    nlmotTekens: "Verkeerstekens en aanwijzingen",
+    nlmotUitrusting: "Beschermende uitrusting en zichtbaarheid",
+    nlmotPassagier: "Passagier, bagage en groepsrijden",
+    nlmotVerantwoord: "Verantwoord en milieubewust rijden",
+    nlmotWet: "Wetgeving: rijbewijs A1, A2 en A",
+    nlmotVoertuig: "Voertuigkennis motor",
+  },
+  copy: {
+    guestPrompt: "om je voortgang voor het theorie-examen motor te bewaren en elke foute vraag bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt een onderwerp van het examen. Je krijgt meteen uitleg, en foute antwoorden komen terug tot je ze kent.",
+    testsHeading: "Proefexamens · 50 vragen, 41 goed om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier proefexamens. Remmen en bochten komen het vaakst terug.",
+      "Eerst de oefenset beheersen, dan het proefexamen.",
+      "De helft is binnen. Doe een proefexamen.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Plan je theorie-examen motor bij het CBR.",
+    ],
+    sourceLine: "Volgens het RVV 1990, de Wegenverkeerswet 1994, de RDW en het CBR-examenplan motor, stand november 2026. Eigen vragen, niet uit CBR-examens; 50 per proefexamen, 41 goed om te slagen.",
+    analyticsKey: "nlmoto",
+  },
+};
+
+const nlvca: ExamConfig = {
+  id: "nlvca",
+  stateCode: "NLVCA",
+  idBase: 45100,
+  slug: "/vca-basic-safety",
+  landingPath: "/vca-basic-safety-practice-test",
+  name: "VCA Basic Safety Practice Test",
+  shortName: "B-VCA",
+  examLabel: "B-VCA exam",
+  fullName: "VCA Basic Safety exam (B-VCA, Basisveiligheid VCA), Netherlands and Belgium",
+  questionIdPrefix: "NLVCA-",
+  icon: "hardhat",
+  testCount: 4,
+  questionsPerTest: 40,
+  passPct: 65,
+  // B-VCA (Basisveiligheid VCA), the SSVV / BeSaCC-VCA personal safety diploma. Blueprint = the SSVV
+  // B-VCA toetsmatrijs 2026 (VCA-ETT-Toetsmatrijzen-2026.xlsx, checked 2026-11-22): A.01 regulations
+  // and safety rules 4, A.02 working safely + A.03 prevention 4, B.01 workplace 5, B.02 PPE 4,
+  // B.03 work equipment 4, B.04 specific work and circumstances 6, C.01 hazardous substances 6,
+  // C.02 electricity 2, C.03 fire and explosion 2, D incidents and emergencies 3 = 40. Real pass
+  // line 2,580 of 4,000 points (64.5%); passPct 65 = 26 of 40. Pools are 4x each count plus 40
+  // training-only spares. Content from the VCA-ETT 3.0 (2026), English edition. All items original.
+  blueprint: {
+    nlvcaLaw: 4,
+    nlvcaSafeWork: 4,
+    nlvcaWorkplace: 5,
+    nlvcaPPE: 4,
+    nlvcaEquip: 4,
+    nlvcaHeights: 6,
+    nlvcaSubstances: 6,
+    nlvcaElectric: 2,
+    nlvcaFire: 2,
+    nlvcaEmergency: 3,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 45101, name: "Rules, Safe Behaviour & LMRA", categories: ["nlvcaLaw", "nlvcaSafeWork"], size: 48, weightLabel: "8 of 40 test questions" },
+    { setNumber: 2, id: 45102, name: "Workplace, Signs & PPE", categories: ["nlvcaWorkplace", "nlvcaPPE"], size: 44, weightLabel: "9 of 40 test questions" },
+    { setNumber: 3, id: 45103, name: "Equipment, Heights & Confined Spaces", categories: ["nlvcaEquip", "nlvcaHeights"], size: 50, weightLabel: "10 of 40 test questions" },
+    { setNumber: 4, id: 45104, name: "Substances, Fire & Emergencies", categories: ["nlvcaSubstances", "nlvcaElectric", "nlvcaFire", "nlvcaEmergency"], size: 58, weightLabel: "13 of 40 test questions" },
+  ],
+  categoryLabels: {
+    nlvcaLaw: "Laws, Duties & Safe-Work Agreements",
+    nlvcaSafeWork: "Safe Behaviour, Toolbox & LMRA",
+    nlvcaWorkplace: "Workplace, Signs & Marking",
+    nlvcaPPE: "Personal Protective Equipment",
+    nlvcaEquip: "Machines, Tools & Lifting",
+    nlvcaHeights: "Heights, Openings & Confined Spaces",
+    nlvcaSubstances: "Hazardous Substances",
+    nlvcaElectric: "Electricity",
+    nlvcaFire: "Fire & Explosion",
+    nlvcaEmergency: "Accidents & Emergencies",
+  },
+  copy: {
+    guestPrompt: "to save your B-VCA progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets over the B-VCA eindtermen: rules, safe behaviour and the LMRA, workplace, signs and PPE, equipment, heights and confined spaces, and hazardous substances, electricity, fire and emergencies. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 40 questions with the official topic counts, 26 to pass",
+    heroSubs: [
+      "Four training sets, four mock tests. Start with Rules, Safe Behaviour & LMRA.",
+      "Master each set, then test.",
+      "Keep going. Try a mock test.",
+      "Fix the misses, then retake.",
+      "All done. Retake any test to keep it fresh.",
+    ],
+    sourceLine: "Based on the SSVV VCA eindtermen and toetstermen (ETT 2026) and the B-VCA toetsmatrijs 2026. Original questions; 40 per test, 26 to pass (65%). Not affiliated with SSVV, BeSaCC-VCA or any VCA exam institute.",
+    analyticsKey: "nlvca",
+  },
+};
+
+const nlwft: ExamConfig = {
+  id: "nlwft",
+  stateCode: "NLWFT",
+  idBase: 45400,
+  slug: "/wft-basis",
+  landingPath: "/nl/wft-basis-oefenexamen",
+  name: "Wft Basis oefenexamen",
+  shortName: "Wft Basis",
+  examLabel: "Wft-examen Basis",
+  fullName: "Wft Basis (vakbekwaamheidsexamen financiële dienstverlening, module Basis)",
+  questionIdPrefix: "NLWFT-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 68,
+  language: "nl",
+  locale: "nl-NL",
+  english: {
+    name: "Wft Basis Exam (Dutch financial services competence)",
+    shortName: "Wft Basis exam",
+    fullName: "Dutch Wft Basis exam (financial services competence, Basis module), in Dutch",
+  },
+  review: { nl: "model" },
+  // Real exam (CDFD "Initieel examen Basis", kenmerken geldig vanaf 1 april 2026, and the
+  // kandidatenbrochure initiële Wft-examens vs 2.1; checked 2026-11-22): 42 questions, 63 points,
+  // 120 minutes: 21 KB (1 point), 2 PG (2 points), 19 VC (2 points); pass with 68% of points;
+  // Dutch only; recognised exam institutes, result via DUO; omslagdatum 1 April. Categories are
+  // the eindtermen of the CDFD "Eindtermen en toetstermen module Basis" (1 April 2026): 1a, 1b,
+  // 1c, 1d, 1e, 1g, 1f, 2a/2b (rekenen), 2b-2d/3a-3d (praktijk), 4a (integriteit). CDFD publishes
+  // no weights per eindterm, so the 6/5/5/7/4/5/8/3/4/3 split is Tigertest's. Four tests of 50,
+  // pools exactly 4x each count (200, all original, written in Dutch). Single best answer of
+  // four, equal weight; passPct 68 = the real line (34 of 50).
+  blueprint: {
+    nlwftHuishouden: 6,
+    nlwftBetalen: 5,
+    nlwftKrediet: 5,
+    nlwftRisico: 7,
+    nlwftVerzBegrip: 4,
+    nlwftVerzRecht: 5,
+    nlwftToezicht: 8,
+    nlwftRekenen: 3,
+    nlwftPraktijk: 4,
+    nlwftIntegriteit: 3,
+  },
+  // Five topic sets in eindterm order, sets first then tests (like detheorie, befsmavz):
+  // 5 + 4 = 9 dashboard steps. Every set at most 60, so no parts.
+  trainingSets: [
+    { setNumber: 1, id: 45401, name: "Financiële huishouding, betalen en sparen", categories: ["nlwftHuishouden", "nlwftBetalen"], size: 44, weightLabel: "11 van 50 vragen per oefenexamen" },
+    { setNumber: 2, id: 45402, name: "Krediet, risico's en sociale zekerheid", categories: ["nlwftKrediet", "nlwftRisico"], size: 48, weightLabel: "12 van 50 vragen per oefenexamen" },
+    { setNumber: 3, id: 45403, name: "Verzekeringsbegrippen en verzekeringsrecht", categories: ["nlwftVerzBegrip", "nlwftVerzRecht"], size: 36, weightLabel: "9 van 50 vragen per oefenexamen" },
+    { setNumber: 4, id: 45404, name: "Ordening, toezicht en zorgplicht", categories: ["nlwftToezicht"], size: 32, weightLabel: "8 van 50 vragen per oefenexamen" },
+    { setNumber: 5, id: 45405, name: "Rekenen, klantcontact en integriteit", categories: ["nlwftRekenen", "nlwftPraktijk", "nlwftIntegriteit"], size: 40, weightLabel: "10 van 50 vragen per oefenexamen" },
+  ],
+  categoryLabels: {
+    nlwftHuishouden: "Financiële huishouding van de klant",
+    nlwftBetalen: "Betalen, sparen en beleggen",
+    nlwftKrediet: "Consumptief en hypothecair krediet",
+    nlwftRisico: "Persoonlijke risico's, sociale zekerheid en pensioen",
+    nlwftVerzBegrip: "Verzekeringsbegrippen",
+    nlwftVerzRecht: "Verzekeringsrecht",
+    nlwftToezicht: "Ordening en toezicht",
+    nlwftRekenen: "Rekenen",
+    nlwftPraktijk: "Klantcontact en praktijk",
+    nlwftIntegriteit: "Integer handelen",
+  },
+  copy: {
+    guestPrompt: "om je vooruitgang voor het Wft-examen Basis te bewaren en elke fout bij te houden",
+    trainingHeading: "Oefensets",
+    trainingSub: "Elke oefenset behandelt een of meer eindtermen van de module Basis. Je krijgt meteen feedback, en vragen die je fout had, komen terug tot je ze beheerst.",
+    testsHeading: "Oefenexamens · 50 vragen, 68% om te slagen",
+    heroSubs: [
+      "Vijf oefensets, vier oefenexamens. Begin met financiële huishouding, betalen en sparen.",
+      "Eerst de oefenset beheersen, dan het oefenexamen.",
+      "Ga zo door. Maak een oefenexamen van 50 vragen om te zien waar je staat.",
+      "Herhaal je fouten en test jezelf opnieuw.",
+      "Alles groen. Plan je examen bij een erkend exameninstituut.",
+    ],
+    sourceLine: "Volgens de eind- en toetstermen module Basis van het CDFD (1 april 2026), de Wft, het Burgerlijk Wetboek en de Wwft, stand november 2026. Eigen vragen, niet uit de examenbank van het CDFD; oefenexamens van 50 vragen, zonder puntenweging.",
+    analyticsKey: "nlwft",
   },
 };
 
@@ -26174,7 +26954,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, waterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, oacp, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
+export const EXAMS: ExamConfig[] = [dispatcher, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, epa608, waterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, contractorlaw, ase, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, danb, nbdhe, foodmgr, realestate, insurance, notary, sie, series7, series63, series65, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, cpr, ffi, osha, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, cisa, fortigate, cssgb, aswb, titleagent, fpc, aswbbach, aswbclin, nce, arrt, lmrt, nptepta, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, frcode, plteoria, plcpc, plaplik, pllek, plbron, nltheorie, nlbrom, nlmoto, nlvca, nlwft, gulfrn, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, nzdrone, cadc, nzham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, sgsnb, oacp, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, cadronebasic, cahambasic, ea2, ea3, afsp, ctec];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

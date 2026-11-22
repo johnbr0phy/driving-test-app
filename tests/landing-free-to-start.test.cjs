@@ -16,7 +16,7 @@ const freeV2 = new Set(EXAMS_V2.filter((e) => !e.premium).map((e) => e.id));
 const FREE_TO_START = [
   /free to start/i, /empieza gratis/i, /começa grátis/i, /gratuit pour commencer/i, /kostenlos starten/i,
   /gratis starten/i, /inizia gratis/i, /börja gratis/i, /start gratis/i, /aloita ilmaiseksi/i,
-  /ingyen kezdhetsz/i, /începe gratuit/i, /ξεκίνα δωρεάν/i, /bắt đầu miễn phí/i, /무료로 시작/,
+  /ingyen kezdhetsz/i, /începe gratuit/i, /ξεκίνα δωρεάν/i, /bắt đầu miễn phí/i, /무료로 시작/, /zacznij za darmo/i,
 ];
 const ALL_FREE = /everything is free|all free|both are free|completely free|100% free|all of it is free/i;
 

@@ -1,0 +1,44 @@
+{
+  "landingPath": "/pl/kwalifikacja-wstepna-test",
+  "locale": "pl-PL",
+  "name": "Test kwalifikacyjny kierowcy zawodowego, testy próbne",
+  "shortName": "Kwalifikacja wstępna",
+  "examLabel": "test kwalifikacyjny kierowcy zawodowego",
+  "fullName": "Test kwalifikacyjny po kwalifikacji wstępnej kierowcy zawodowego (C i D)",
+  "trainingSets": {
+    "1": { "name": "Racjonalna jazda, hamulce i tachografy", "weightLabel": "12 z 50 pytań testu" },
+    "2": { "name": "Czas pracy i kwalifikacje kierowcy", "weightLabel": "9 z 50 pytań testu" },
+    "3": { "name": "Zagrożenia, zdrowie i sytuacje awaryjne", "weightLabel": "13 z 50 pytań testu" },
+    "4": { "name": "Blok C: ładunki i przewóz rzeczy", "weightLabel": "8 z 50 pytań testu" },
+    "5": { "name": "Blok D: pasażerowie i przewóz osób", "weightLabel": "8 z 50 pytań testu" }
+  },
+  "categoryLabels": {
+    "plcpcEco": "Racjonalna jazda i zużycie paliwa",
+    "plcpcBrakes": "Hamulce, zwalniacze i systemy wspomagania",
+    "plcpcHours": "Czas jazdy i czas pracy",
+    "plcpcTacho": "Tachografy i zapisy",
+    "plcpcSafety": "Zagrożenia na drodze i w pracy",
+    "plcpcCrime": "Przestępczość i przemyt ludzi",
+    "plcpcHealth": "Zdrowie, zmęczenie, alkohol i leki",
+    "plcpcEmergency": "Sytuacje awaryjne, pierwsza pomoc i pożar",
+    "plcpcImage": "Kwalifikacje, obsługa i wizerunek firmy",
+    "plcpcLoads": "Blok C: załadunek i mocowanie ładunku",
+    "plcpcFreight": "Blok C: przepisy o przewozie rzeczy i rynek",
+    "plcpcPassengers": "Blok D: komfort, bezpieczeństwo i obciążenie autobusu",
+    "plcpcPassRules": "Blok D: przepisy o przewozie osób i rynek"
+  },
+  "copy": {
+    "guestPrompt": "aby zapisać postępy w nauce do testu kwalifikacyjnego i widzieć każde błędne pytanie",
+    "trainingHeading": "Ucz się tematami",
+    "trainingSub": "Pięć zestawów: trzy z części podstawowej, wspólnej dla wszystkich, jeden dla bloku C (ciężarówki) i jeden dla bloku D (autobusy). Od razu widzisz poprawną odpowiedź, a błędne pytania wracają, aż je opanujesz.",
+    "testsHeading": "Testy próbne · 50 pytań, cel 35 lub więcej",
+    "heroSubs": [
+      "Pięć zestawów i cztery testy po 50 pytań. Zacznij od racjonalnej jazdy, hamulców i tachografów.",
+      "Opanuj każdy zestaw, potem rozwiąż test.",
+      "Tak trzymaj. Rozwiąż test próbny i sprawdź, gdzie jesteś.",
+      "Przejrzyj błędy i powtórz test.",
+      "Wszystko gotowe. Powtarzaj testy, żeby utrwalić przepisy."
+    ],
+    "sourceLine": "Oryginalne pytania na podstawie ustawy o transporcie drogowym, Prawa o ruchu drogowym, ustawy o czasie pracy kierowców i przepisów UE (2026). Prawdziwy test ma 30 pytań; tu 50 pytań na test i 70% jako cel Tigertest. Bez związku z WORD."
+  }
+}

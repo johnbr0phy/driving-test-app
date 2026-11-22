@@ -1,0 +1,39 @@
+{
+  "id": "pllek",
+  "stateCode": "PLLEK",
+  "idBase": 45700,
+  "prefix": "PLLEK-",
+  "slug": "/poland-lek-medical-exam",
+  "landingPath": "/poland-lek-practice-test",
+  "dataFile": "data/poland-lek-questions.json",
+  "name": "Poland LEK Practice Test",
+  "shortName": "LEK",
+  "examLabel": "LEK",
+  "fullName": "Lekarski Egzamin Koncowy (LEK), Poland Medical Final Examination",
+  "icon": "stethoscope",
+  "testCount": 4,
+  "questionsPerTest": 50,
+  "passPct": 56,
+  "categories": [
+    {"key": "pllekInternal", "label": "Internal Medicine", "perTest": 10, "pool": 40, "segment": "INT"},
+    {"key": "pllekPaeds", "label": "Paediatrics & Neonatology", "perTest": 7, "pool": 28, "segment": "PED"},
+    {"key": "pllekSurgery", "label": "Surgery", "perTest": 7, "pool": 28, "segment": "SUR"},
+    {"key": "pllekObgyn", "label": "Obstetrics & Gynaecology", "perTest": 6, "pool": 24, "segment": "OBG"},
+    {"key": "pllekPsych", "label": "Psychiatry", "perTest": 4, "pool": 16, "segment": "PSY"},
+    {"key": "pllekFamily", "label": "Family Medicine", "perTest": 5, "pool": 20, "segment": "FAM"},
+    {"key": "pllekEmergency", "label": "Emergency Medicine & Intensive Care", "perTest": 5, "pool": 20, "segment": "EMR"},
+    {"key": "pllekLaw", "label": "Bioethics & Medical Law", "perTest": 2, "pool": 8, "segment": "LAW"},
+    {"key": "pllekCert", "label": "Medical Certification", "perTest": 2, "pool": 8, "segment": "CER"},
+    {"key": "pllekPublic", "label": "Public Health", "perTest": 2, "pool": 8, "segment": "PUB"}
+  ],
+  "notes": "CEM thematic structure of LEK (cem.edu.pl/english_lek_struktura.php, checked 2026-11-21): 200 questions, internal 39, paediatrics 29, surgery 27, obstetrics and gynaecology 26, psychiatry 14, family medicine 20, emergency medicine and intensive therapy 20, bioethics and medical law 10, medical certification 7, public health 8; at least 20 oncology. Scaled to 50 per test: 10/7/7/6/4/5/5/2/2/2 (rounding is Tigertest's). Real items have 5 options; Tigertest shows 4. Pass 56% of valid questions, as the real exam.",
+  "trainingSets": [
+    {"setNumber": 1, "id": 45701, "name": "Internal Medicine", "categories": ["pllekInternal"], "size": 40},
+    {"setNumber": 2, "id": 45702, "name": "Paediatrics & Neonatology", "categories": ["pllekPaeds"], "size": 28},
+    {"setNumber": 3, "id": 45703, "name": "Surgery", "categories": ["pllekSurgery"], "size": 28},
+    {"setNumber": 4, "id": 45704, "name": "Obstetrics & Gynaecology", "categories": ["pllekObgyn"], "size": 24},
+    {"setNumber": 5, "id": 45705, "name": "Psychiatry & Family Medicine", "categories": ["pllekPsych", "pllekFamily"], "size": 36},
+    {"setNumber": 6, "id": 45706, "name": "Emergency Medicine & Intensive Care", "categories": ["pllekEmergency"], "size": 20},
+    {"setNumber": 7, "id": 45707, "name": "Law, Certification & Public Health", "categories": ["pllekLaw", "pllekCert", "pllekPublic"], "size": 24}
+  ]
+}

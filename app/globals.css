@@ -6907,6 +6907,146 @@
     --brand-gradient-to: 325 60% 94%;
   }
 
+  /* Polish car theory test (prawo jazdy kat. B): Polish red. 354 72% 38% clashed with six red themes; 48% lightness is the free slot */
+  [data-theme="plteoria"] {
+    --brand: 354 90% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 354 90% 96%;
+    --brand-hover: 354 90% 42%;
+    --brand-dark: 354 85% 34%;
+    --brand-darker: 354 80% 24%;
+    --brand-muted: 354 45% 70%;
+    --brand-border: 354 55% 82%;
+    --brand-border-light: 354 55% 91%;
+    --brand-gradient-to: 354 80% 95%;
+  }
+
+  /* Poland Driver CPC qualification test: deep magenta (the blue band is full; kept apart from plaplik's indigo) */
+  [data-theme="plcpc"] {
+    --brand: 305 75% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 305 60% 96%;
+    --brand-hover: 305 75% 36%;
+    --brand-dark: 305 75% 30%;
+    --brand-darker: 305 75% 20%;
+    --brand-muted: 305 30% 68%;
+    --brand-border: 305 35% 80%;
+    --brand-border-light: 305 30% 90%;
+    --brand-gradient-to: 305 50% 96%;
+  }
+
+  /* Polish legal apprenticeship entrance exam (aplikacja adwokacka i radcowska) theme: deep indigo */
+  [data-theme="plaplik"] {
+    --brand: 255 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 255 80% 97%;
+    --brand-hover: 255 100% 17%;
+    --brand-dark: 255 100% 13%;
+    --brand-darker: 255 100% 9%;
+    --brand-muted: 255 40% 70%;
+    --brand-border: 255 45% 82%;
+    --brand-border-light: 255 45% 91%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  /* Poland LEK: deep medical green (the teal band 140 to 210 is full) */
+  [data-theme="pllek"] {
+    --brand: 134 100% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 134 50% 95%;
+    --brand-hover: 134 100% 21%;
+    --brand-dark: 134 100% 17%;
+    --brand-darker: 134 100% 11%;
+    --brand-muted: 134 25% 68%;
+    --brand-border: 134 30% 78%;
+    --brand-border-light: 134 30% 89%;
+    --brand-gradient-to: 150 45% 95%;
+  }
+
+  /* Polish firearms permit exam (egzamin na pozwolenie na broń) theme: dark olive */
+  [data-theme="plbron"] {
+    --brand: 68 30% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 68 35% 96%;
+    --brand-hover: 68 30% 15%;
+    --brand-dark: 68 30% 12%;
+    --brand-darker: 68 30% 8%;
+    --brand-muted: 68 15% 62%;
+    --brand-border: 68 20% 80%;
+    --brand-border-light: 68 20% 90%;
+    --brand-gradient-to: 45 40% 94%;
+  }
+
+  /* Netherlands driving theory theme (deep Dutch orange) */
+  [data-theme="nltheorie"] {
+    --brand: 19 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 19 80% 95%;
+    --brand-hover: 19 100% 18%;
+    --brand-dark: 19 100% 15%;
+    --brand-darker: 19 90% 10%;
+    --brand-muted: 19 35% 68%;
+    --brand-border: 19 40% 78%;
+    --brand-border-light: 19 35% 88%;
+    --brand-gradient-to: 215 60% 95%;
+  }
+
+  /* Netherlands moped theory exam (rijbewijs AM) theme (magenta; 305 clashed with plcpc) */
+  [data-theme="nlbrom"] {
+    --brand: 296 75% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 296 70% 96%;
+    --brand-hover: 296 75% 38%;
+    --brand-dark: 296 75% 32%;
+    --brand-darker: 296 75% 22%;
+    --brand-muted: 296 40% 70%;
+    --brand-border: 296 45% 82%;
+    --brand-border-light: 296 50% 91%;
+    --brand-gradient-to: 25 95% 93%;
+  }
+
+  /* Netherlands motorcycle theory exam (CBR, rijbewijs A) theme (deep green; the orange went to nltheorie) */
+  [data-theme="nlmoto"] {
+    --brand: 113 100% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 113 60% 95%;
+    --brand-hover: 113 100% 21%;
+    --brand-dark: 113 100% 18%;
+    --brand-darker: 113 100% 12%;
+    --brand-muted: 113 35% 62%;
+    --brand-border: 113 40% 80%;
+    --brand-border-light: 113 40% 90%;
+    --brand-gradient-to: 90 60% 93%;
+  }
+
+  /* VCA Basic Safety (B-VCA) theme (deep olive gold) */
+  [data-theme="nlvca"] {
+    --brand: 62 100% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 62 85% 95%;
+    --brand-hover: 62 100% 12%;
+    --brand-dark: 62 100% 11%;
+    --brand-darker: 62 90% 7%;
+    --brand-muted: 62 25% 66%;
+    --brand-border: 62 30% 76%;
+    --brand-border-light: 62 25% 88%;
+    --brand-gradient-to: 57 85% 95%;
+  }
+
+  /* Wft Basis (Dutch financial services competence exam) theme (muted aubergine grey) */
+  [data-theme="nlwft"] {
+    --brand: 330 20% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 30% 96%;
+    --brand-hover: 330 20% 25%;
+    --brand-dark: 330 20% 21%;
+    --brand-darker: 330 22% 15%;
+    --brand-muted: 330 12% 62%;
+    --brand-border: 330 15% 80%;
+    --brand-border-light: 330 18% 90%;
+    --brand-gradient-to: 330 30% 93%;
+  }
+
   /* Dark mode. Tokens follow Tailwind's gray scale so the dark: variants
      written in components (gray-950 page, gray-900 card, gray-800 border)
      and the shadcn primitives read as one surface system. */
@@ -12803,6 +12943,116 @@
     --brand-darker: 335 85% 78%;
   }
 
+  .dark [data-theme="plteoria"] {
+    --brand: 354 90% 48.2%;
+    --brand-hover: 354 90% 42%;
+    --brand-light: 354 45% 13%;
+    --brand-gradient-to: 354 40% 11%;
+    --brand-border-light: 354 35% 24%;
+    --brand-border: 354 40% 34%;
+    --brand-muted: 354 45% 45%;
+    --brand-dark: 354 85% 65%;
+    --brand-darker: 354 80% 78%;
+  }
+  .dark [data-theme="plcpc"] {
+    --brand: 305 75% 46.1%;
+    --brand-hover: 305 75% 38.1%;
+    --brand-light: 305 45% 13%;
+    --brand-gradient-to: 305 40% 11%;
+    --brand-border-light: 305 30% 24%;
+    --brand-border: 305 35% 34%;
+    --brand-muted: 305 30% 45%;
+    --brand-dark: 305 75% 65%;
+    --brand-darker: 305 75% 78%;
+  }
+  .dark [data-theme="plaplik"] {
+    --brand: 255 100% 50%;
+    --brand-hover: 255 100% 42%;
+    --brand-light: 255 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 255 35% 24%;
+    --brand-border: 255 40% 34%;
+    --brand-muted: 255 40% 45%;
+    --brand-dark: 255 100% 70%;
+    --brand-darker: 255 100% 78%;
+  }
+  .dark [data-theme="pllek"] {
+    --brand: 134 100% 26.7%;
+    --brand-hover: 134 100% 21%;
+    --brand-light: 134 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 134 30% 24%;
+    --brand-border: 134 30% 34%;
+    --brand-muted: 134 25% 45%;
+    --brand-dark: 134 100% 65%;
+    --brand-darker: 134 100% 78%;
+  }
+  .dark [data-theme="plbron"] {
+    --brand: 68 30% 36.7%;
+    --brand-hover: 68 30% 28.7%;
+    --brand-light: 68 35% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 68 20% 24%;
+    --brand-border: 68 20% 34%;
+    --brand-muted: 68 15% 45%;
+    --brand-dark: 68 30% 65%;
+    --brand-darker: 68 30% 78%;
+  }
+  .dark [data-theme="nltheorie"] {
+    --brand: 19 100% 41.3%;
+    --brand-hover: 19 100% 33.3%;
+    --brand-light: 19 45% 13%;
+    --brand-gradient-to: 215 40% 11%;
+    --brand-border-light: 19 35% 24%;
+    --brand-border: 19 40% 34%;
+    --brand-muted: 19 35% 45%;
+    --brand-dark: 19 100% 65%;
+    --brand-darker: 19 90% 78%;
+  }
+  .dark [data-theme="nlbrom"] {
+    --brand: 296 75% 47.3%;
+    --brand-hover: 296 75% 39.3%;
+    --brand-light: 296 45% 13%;
+    --brand-gradient-to: 25 40% 11%;
+    --brand-border-light: 296 35% 24%;
+    --brand-border: 296 40% 34%;
+    --brand-muted: 296 40% 45%;
+    --brand-dark: 296 75% 65%;
+    --brand-darker: 296 75% 78%;
+  }
+  .dark [data-theme="nlmoto"] {
+    --brand: 113 100% 26.7%;
+    --brand-hover: 113 100% 21%;
+    --brand-light: 113 45% 13%;
+    --brand-gradient-to: 90 40% 11%;
+    --brand-border-light: 113 35% 24%;
+    --brand-border: 113 40% 34%;
+    --brand-muted: 113 35% 45%;
+    --brand-dark: 113 100% 65%;
+    --brand-darker: 113 100% 78%;
+  }
+  .dark [data-theme="nlvca"] {
+    --brand: 62 100% 23.9%;
+    --brand-hover: 62 100% 15.9%;
+    --brand-light: 62 45% 13%;
+    --brand-gradient-to: 57 40% 11%;
+    --brand-border-light: 62 25% 24%;
+    --brand-border: 62 30% 34%;
+    --brand-muted: 62 25% 45%;
+    --brand-dark: 62 100% 65%;
+    --brand-darker: 62 90% 78%;
+  }
+  .dark [data-theme="nlwft"] {
+    --brand: 330 20% 50%;
+    --brand-hover: 330 20% 42%;
+    --brand-light: 330 30% 13%;
+    --brand-gradient-to: 330 30% 11%;
+    --brand-border-light: 330 18% 24%;
+    --brand-border: 330 15% 34%;
+    --brand-muted: 330 12% 45%;
+    --brand-dark: 330 20% 65%;
+    --brand-darker: 330 22% 78%;
+  }
 }
 
 @layer base {

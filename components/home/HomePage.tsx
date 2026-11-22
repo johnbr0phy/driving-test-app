@@ -103,10 +103,12 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   IT: "the Motorizzazione Civile or the universities for foreigners in Siena and Perugia",
   FR: "the Interior Ministry or the approved exam centres",
   CH: "the cantonal road traffic offices (Strassenverkehrsämter) or the asa",
+  PL: "the WORD exam centres, the Ministry of Infrastructure, the Ministry of Justice, CEM or the Police",
+  NL: "the CBR, SSVV or the CDFD",
 };
 
 // AUTHORITY is written for an English sentence ("the IMT"); other languages
-// get the bare names, and Belgium's list in Dutch, Sweden's in Swedish, Denmark's in Danish, Finland's in Finnish, Hungary's in Hungarian, Romania's in Romanian and Greece's in Greek on their own pages.
+// get the bare names, and Belgium's list in Dutch, Sweden's in Swedish, Denmark's in Danish, Finland's in Finnish, Hungary's in Hungarian, Romania's in Romanian, Greece's in Greek and the Netherlands' in Dutch on their own pages.
 const AUTHORITY_NL_BE = "GOCA, de examencentra of de gewestelijke overheden";
 const AUTHORITY_SV_SE = "Trafikverket, Transportstyrelsen, Naturvårdsverket eller UHR";
 const AUTHORITY_DA_DK = "Færdselsstyrelsen, SIRI eller Naturstyrelsen";
@@ -115,6 +117,10 @@ const AUTHORITY_HU_HU = "KAV, Magyar Vöröskereszt, MNB vagy más magyar hatós
 const AUTHORITY_EL_GR = "Υπουργείο Υποδομών και Μεταφορών, Διευθύνσεις Μεταφορών, Γενική Γραμματεία Ιθαγένειας ή ΕΟΠΠΕΠ";
 const AUTHORITY_IT_IT = "Motorizzazione Civile, Università per Stranieri di Siena o di Perugia";
 const AUTHORITY_FR_FR = "le ministère de l'Intérieur ou les centres d'examen agréés";
+// Polish in the instrumental case: "nie jest powiązany z ${authority}" (components/home/copy/pl.ts).
+const AUTHORITY_PL_PL = "ośrodkami WORD, Ministerstwem Infrastruktury, Ministerstwem Sprawiedliwości, CEM ani Policją";
+// Dutch, after "hoort niet bij" (components/home/copy/nl.ts).
+const AUTHORITY_NL_NL = "het CBR, SSVV of het CDFD";
 const AUTHORITY_RO_RO = "DGPCI (fostul DRPCIV), ARR, Ministerul Sănătății, universitățile de medicină";
 function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (lang === "en") return AUTHORITY[region];
@@ -127,6 +133,8 @@ function authorityIn(region: Exclude<Region, "US">, lang: Language): string {
   if (region === "GR" && lang === "el") return AUTHORITY_EL_GR;
   if (region === "IT" && lang === "it") return AUTHORITY_IT_IT;
   if (region === "FR" && lang === "fr") return AUTHORITY_FR_FR;
+  if (region === "PL" && lang === "pl") return AUTHORITY_PL_PL;
+  if (region === "NL" && lang === "nl") return AUTHORITY_NL_NL;
   return AUTHORITY[region].replace(/^the /, "");
 }
 

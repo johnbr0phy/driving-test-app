@@ -18,7 +18,7 @@
  * locked (hooks/useExamLocks.ts), and gating is client-side like the DMV's.
  * The DMV keeps its own rules in the store.
  *
- * v2 Premium exams keep a quarter (V2_LOCKED_SHARE, lib/v2/registry.ts).
+ * v2 Premium exams lock half too (V2_LOCKED_SHARE, lib/v2/registry.ts).
  *
  * An exam can instead mark a block of content as Premium (`premiumFrom` on
  * ExamConfig): RBT keeps Training Sets 1 to 3 and Practice Tests 1 to 3
@@ -30,8 +30,8 @@ import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exam
 /** Share of an exam's dashboard steps that need Premium. */
 export const LOCKED_SHARE = 0.5;
 
-/** v2 Premium exams (lib/v2/registry.ts) lock a quarter; they were not in the lock share test. */
-export const V2_LOCKED_SHARE = 0.25;
+/** v2 Premium exams (lib/v2/registry.ts): half too since Nov 22 2026 (a quarter before). */
+export const V2_LOCKED_SHARE = 0.5;
 
 /**
  * How many steps of a dashboard with `steps` steps are Premium at `share`

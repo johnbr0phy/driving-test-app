@@ -22,7 +22,7 @@ const lockedStepNumbers = (exam) => {
 test('half the steps, rounded, at least one, at least one free', () => {
   const { LOCKED_SHARE, V2_LOCKED_SHARE } = require('../lib/examLocks.ts');
   assert.equal(LOCKED_SHARE, 0.5);
-  assert.equal(V2_LOCKED_SHARE, 0.25);
+  assert.equal(V2_LOCKED_SHARE, 0.5);
   assert.deepEqual([2, 5, 8, 9, 12, 19].map((n) => lockedStepCount(n)), [1, 3, 4, 5, 6, 10]);
   assert.deepEqual([2, 5, 8, 9, 12, 19].map((n) => lockedStepCount(n, 0.25)), [1, 1, 2, 2, 3, 5]);
 });
@@ -102,11 +102,13 @@ test('RBT: Sets 1 to 3 and Tests 1 to 3 are free; Premium is the last four steps
   }
 });
 
-test('v2 Premium exams lock about a quarter of their drills and tests, never all of either', () => {
+test('v2 Premium exams lock about half of their drills and tests from the end, keep Test 1 and a drill free', () => {
   for (const exam of EXAMS_V2) {
     if (!exam.premium) continue;
     const { lockedDrills, lockedTests } = exam.premium;
-    assert.equal(lockedDrills.length + lockedTests.length, lockedStepCount(exam.drills.length + exam.tests.length, 0.25), exam.id);
+    assert.equal(lockedDrills.length + lockedTests.length, lockedStepCount(exam.drills.length + exam.tests.length, 0.5), exam.id);
+    if (exam.tests.length > 1) assert.ok(!lockedTests.includes(exam.tests[0].number), `${exam.id}: Test 1 stays free`);
+    assert.deepEqual(lockedTests, exam.tests.slice(exam.tests.length - lockedTests.length).map((t) => t.number), exam.id);
     assert.ok(lockedDrills.length < exam.drills.length, exam.id);
     assert.ok(lockedTests.length < exam.tests.length, exam.id);
     assert.deepEqual(lockedDrills, exam.drills.slice(exam.drills.length - lockedDrills.length).map((d) => d.key), exam.id);
@@ -161,7 +163,7 @@ test('RBT paywall says plainly what Premium adds, never a readiness verdict', ()
   assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /final CDL training step/);
 });
 
-test('lock share test ended: every browser gets LOCKED_SHARE, v2 keeps a quarter, the result card stays on the A/B tests tab', () => {
+test('lock share test ended: every browser gets LOCKED_SHARE, v2 locks half too, the result card stays on the A/B tests tab', () => {
   const fs = require('node:fs');
   const read = (p) => fs.readFileSync(require('node:path').join(__dirname, '..', p), 'utf8');
   assert.ok(!fs.existsSync(require('node:path').join(__dirname, '..', 'lib/lockTest.ts')));

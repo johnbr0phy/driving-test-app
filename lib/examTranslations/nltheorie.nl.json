@@ -1,0 +1,42 @@
+{
+  "landingPath": "/nl/cbr-theorie-examen-auto-oefenen",
+  "locale": "nl-NL",
+  "name": "CBR theorie-examen auto oefenen",
+  "shortName": "Theorie-examen auto",
+  "examLabel": "Het CBR theorie-examen auto",
+  "fullName": "CBR theorie-examen voor het rijbewijs B (auto)",
+  "trainingSets": {
+    "1": { "name": "Gebruik van de weg", "weightLabel": "7 van 50 examenvragen" },
+    "2": { "name": "Voorrang en voor laten gaan", "weightLabel": "8 van 50 examenvragen" },
+    "3": { "name": "Snelwegen, rotondes en bijzondere wegen", "weightLabel": "7 van 50 examenvragen" },
+    "4": { "name": "Veilig rijden en noodsituaties", "weightLabel": "7 van 50 examenvragen" },
+    "5": { "name": "Borden, markeringen en aanwijzingen", "weightLabel": "7 van 50 examenvragen" },
+    "6": { "name": "Stilstaan, parkeren en wetgeving", "weightLabel": "7 van 50 examenvragen" },
+    "7": { "name": "Verantwoord rijden en je auto", "weightLabel": "7 van 50 examenvragen" }
+  },
+  "categoryLabels": {
+    "nlthRoad": "Gebruik van de weg",
+    "nlthParking": "Stilstaan en parkeren",
+    "nlthPriority": "Voorrang en voor laten gaan",
+    "nlthSpecial": "Snelwegen, rotondes en bijzondere wegen",
+    "nlthSafety": "Veilig rijden en noodsituaties",
+    "nlthSigns": "Verkeerstekens en aanwijzingen",
+    "nlthHazard": "Verantwoord en milieubewust rijden",
+    "nlthLaw": "Rijbewijs en wetgeving",
+    "nlthVehicle": "Voertuigkennis en rijhulpsystemen"
+  },
+  "copy": {
+    "guestPrompt": "om je voortgang voor het theorie-examen te bewaren en elke vraag die je fout had terug te zien",
+    "trainingHeading": "Oefen per onderwerp",
+    "trainingSub": "Zeven oefensets over de Nederlandse verkeersregels, borden en veiligheid die het CBR-examen toetst. Je ziet meteen of je antwoord goed is, en vragen die je fout had, komen terug tot je ze beheerst.",
+    "testsHeading": "Proefexamens · 50 vragen, 44 goed om te slagen",
+    "heroSubs": [
+      "Zeven onderwerpen, zeven proefexamens van 50 vragen. Voorrang telt het zwaarst.",
+      "Beheers elke oefenset en doe dan een proefexamen.",
+      "Je bent halverwege. Probeer een proefexamen.",
+      "Werk je fouten weg en doe het opnieuw.",
+      "Helemaal klaar. Reserveer je theorie-examen bij het CBR."
+    ],
+    "sourceLine": "Gebaseerd op de Nederlandse verkeersregels (RVV 1990) en het theorie-examenplan auto van het CBR. Eigen vragen; 50 per proefexamen, 44 goed om te slagen, zoals op het echte examen."
+  }
+}

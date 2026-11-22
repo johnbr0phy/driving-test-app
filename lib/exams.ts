@@ -36,6 +36,7 @@ import hukreszHu from "./examTranslations/hukresz.hu.json";
 import rodrpcivRo from "./examTranslations/rodrpciv.ro.json";
 import grdrivingEl from "./examTranslations/grdriving.el.json";
 import bedrivingNl from "./examTranslations/bedriving.nl.json";
+import nltheorieNl from "./examTranslations/nltheorie.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 import plcpcPl from "./examTranslations/plcpc.pl.json";
 
@@ -6485,6 +6486,10 @@ const nltheorie: ExamConfig = {
     ],
     sourceLine: "Based on the Dutch traffic rules (RVV 1990) and CBR's theory exam plan. Original questions; 50 per test, 44 to pass like the real exam.",
     analyticsKey: "nltheorie",
+  },
+  review: { nl: "machine" },
+  translations: {
+    nl: examTranslation(nltheorieNl),
   },
 };
 

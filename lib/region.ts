@@ -513,15 +513,15 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     testsTitle: "Testy dla Polski",
     testsSub: "Egzamin teoretyczny na prawo jazdy kat. B: 200 pytań według Prawa o ruchu drogowym, w km/h i dla ruchu prawostronnego, sześć testów po 32 pytania i cel 30 z 32. Dla kierowców zawodowych test kwalifikacyjny po kwalifikacji wstępnej, po polsku i po angielsku. Dla prawników egzamin wstępny na aplikację adwokacką i radcowską: cztery testy po 50 pytań i 34 do zaliczenia. Dla lekarzy LEK w języku angielskim według struktury tematycznej CEM, a dla strzelców egzamin na pozwolenie na broń: sześć testów po 20 pytań i 18 do zaliczenia.",
   },
-  // Written in Dutch (REGIONS[].lang), model-written. The car theory test runs in English until its
-  // Dutch translation ships; then point the CTA at its /nl landing.
+  // Written in Dutch (REGIONS[].lang), model-written. The CTA points at the car theory test's
+  // Dutch landing (its English version stays at /netherlands-driving-theory-test).
   NL: {
     title: "CBR theorie-examen oefenen: gratis beginnen | Tigertest",
     description: "Gratis beginnen met oefenen voor het CBR theorie-examen auto, motor en bromfiets, B-VCA en Wft Basis. Elk antwoord uitgelegd, geen account nodig.",
-    lead: "Oefen voor het theorie-examen van het CBR met eigen vragen over voorrang, borden, snelheid, de snelweg, parkeren en rijhulpsystemen, elk antwoord uitgelegd. Voor de auto zijn de vragen in het Engels, zoals het CBR het examen ook aanbiedt; voor motor en bromfiets in het Nederlands. Zonder account.",
-    cta: { label: "Theorie-examen auto", href: "/netherlands-driving-theory-test" },
+    lead: "Oefen voor het theorie-examen van het CBR met eigen vragen over voorrang, borden, snelheid, de snelweg, parkeren en rijhulpsystemen, elk antwoord uitgelegd. Voor de auto in het Nederlands en in het Engels, de twee talen waarin het CBR het examen aanbiedt; voor motor en bromfiets in het Nederlands. Zonder account.",
+    cta: { label: "Theorie-examen auto", href: "/nl/cbr-theorie-examen-auto-oefenen" },
     testsTitle: "Oefenexamens voor Nederland",
-    testsSub: "Theorie-examen auto (rijbewijs B): 350 vragen over het RVV 1990, in km/u en voor rechtsverkeer, zeven proefexamens van 50 vragen; op het echte examen heb je er 44 van de 50 goed nodig. In het Nederlands ook het theorie-examen motor (41 van 50) en het theorie-examen bromfiets (43 van 50), en voor werk het B-VCA-examen voor veilig werken (in het Engels) en het Wft-examen Basis voor financiële dienstverlening.",
+    testsSub: "Theorie-examen auto (rijbewijs B): 350 vragen over het RVV 1990, in het Nederlands en het Engels, in km/u en voor rechtsverkeer, zeven proefexamens van 50 vragen; op het echte examen heb je er 44 van de 50 goed nodig. In het Nederlands ook het theorie-examen motor (41 van 50) en het theorie-examen bromfiets (43 van 50), en voor werk het B-VCA-examen voor veilig werken (in het Engels) en het Wft-examen Basis voor financiële dienstverlening.",
   },
   CH: {
     title: "Free Swiss Driving Theory Test Practice in English | Tigertest",

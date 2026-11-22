@@ -1018,6 +1018,14 @@
         "pr": 915,
         "findings": 5
       }
+    ],
+    "shrmcp": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 24
+      }
     ]
   },
   "pendingReviews": {

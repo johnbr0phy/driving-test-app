@@ -1,5 +1,5 @@
 """Build data/shrmcp-questions.json from q_*.py. Usage: python3 -I build.py [out]"""
-import importlib.util, json, sys, os
+import importlib.util, json, sys, os, random
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
@@ -9,9 +9,12 @@ rows = []
 for m in ORDER:
     p = os.path.join(HERE, "q_" + m + ".py")
     spec = importlib.util.spec_from_file_location(m, p); mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+    # Key letters: balanced within each category, in a seeded order rather than a fixed A-B-C-D cycle.
+    pos = [j % 4 for j in range(len(mod.Q))]
+    random.Random("shrmcp-" + m).shuffle(pos)
     for i, (q, key, wrong, expl) in enumerate(mod.Q):
         assert len(wrong) == 3, (m, i)
-        k = i % 4
+        k = pos[i]
         opts = list(wrong); opts.insert(k, key)
         rows.append({"type": "SHRMCP", "state": "ALL", "questionId": f"SHRMCP-{mod.SEG}-{i+1:03d}",
             "category": mod.CAT, "question": q, "optionA": opts[0], "optionB": opts[1], "optionC": opts[2],

@@ -31,7 +31,7 @@ Q = [
 # 15*4 = 60; 3*12 = 36; total 96
 ("A unit buys 15 road flares at $4 each and 3 safety triangles at $12 each. What is the total cost?",
  "$96", ["$84", "$108", "$72"],
- "Flares cost 15 x 4 = $60 and triangles 3 x 12 = $36, for $96 in all. Adding just the two prices and multiplying is a common slip."),
+ "Flares cost 15 x 4 = $60 and triangles 3 x 12 = $36, for $96 in all. $84 counts only two triangles, $72 only one, and $108 counts four."),
 # 23:40 + 35 min = 00:15
 ("A call comes in at 23:40 and the first unit arrives 35 minutes later. At what time does it arrive?",
  "00:15", ["00:05", "00:25", "23:15"],

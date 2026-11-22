@@ -60,7 +60,7 @@
     "state": "ALL",
     "questionId": "OACP-SPL-005",
     "category": "oacpSpelling",
-    "question": "Which is the correct spelling of the military and police rank between sergeant and captain?",
+    "question": "Which is the correct spelling of the military officer rank just below captain?",
     "optionA": "lieutenant",
     "optionB": "lieutenent",
     "optionC": "leiutenant",
@@ -81,7 +81,7 @@
     "optionD": "privilige",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Privilege has no d and an i, then e, then e. Priviledge adds a d by analogy with knowledge."
+    "explanation": "Privilege is p-r-i-v-i-l-e-g-e: two i's, then two e's, and no d. Priviledge adds a d by analogy with knowledge."
   },
   {
     "type": "OACP",
@@ -172,14 +172,14 @@
     "state": "ALL",
     "questionId": "OACP-SPL-013",
     "category": "oacpSpelling",
-    "question": "A report reads, \"Heavy rain did not ___ the search of the ravine.\" Which word fills the blank?",
+    "question": "A report reads, \"The cold did not seem to ___ the witness's memory.\" Which word fills the blank?",
     "optionA": "affect",
     "optionB": "effect",
     "optionC": "affects",
     "optionD": "effected",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Affect is the verb meaning to influence, and it follows did not in its base form. Effect is usually a noun meaning a result, so it does not fit here."
+    "explanation": "Affect is the verb meaning to influence, and it follows seem to in its base form. Effect as a verb means to bring about, and bringing about the witness's memory makes no sense here."
   },
   {
     "type": "OACP",
@@ -216,8 +216,8 @@
     "category": "oacpSpelling",
     "question": "A report reads, \"The school ___ called police about the break-in.\" Which word fills the blank?",
     "optionA": "principle",
-    "optionB": "principel",
-    "optionC": "principall",
+    "optionB": "principled",
+    "optionC": "principally",
     "optionD": "principal",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -231,8 +231,8 @@
     "question": "A report reads, \"The sergeant paid the cadet a ___ on her clear notes.\" Which word fills the blank?",
     "optionA": "compliment",
     "optionB": "complement",
-    "optionC": "complimint",
-    "optionD": "complements",
+    "optionC": "complimentary",
+    "optionD": "complementary",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "A compliment is a remark of praise. A complement is something that completes or goes well with something else."
@@ -245,8 +245,8 @@
     "question": "A report reads, \"The accused asked to speak with legal ___ before answering.\" Which word fills the blank?",
     "optionA": "council",
     "optionB": "counsel",
-    "optionC": "councel",
-    "optionD": "counsil",
+    "optionC": "consul",
+    "optionD": "councils",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "Counsel means a lawyer or legal advice. A council is an elected or appointed body, such as a city council."
@@ -258,9 +258,9 @@
     "category": "oacpSpelling",
     "question": "A report reads, \"Officers may ___ with the search once the warrant arrives.\" Which word fills the blank?",
     "optionA": "precede",
-    "optionB": "procede",
+    "optionB": "recede",
     "optionC": "proceed",
-    "optionD": "preceed",
+    "optionD": "proceeds",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Proceed means to go forward, and it is spelled with -ceed. Precede means to come before, which does not fit the sentence."
@@ -272,8 +272,8 @@
     "category": "oacpSpelling",
     "question": "A report reads, \"The officer used open questions to ___ details from the witness.\" Which word fills the blank?",
     "optionA": "illicit",
-    "optionB": "ellicit",
-    "optionC": "illicet",
+    "optionB": "elicits",
+    "optionC": "explicit",
     "optionD": "elicit",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -316,7 +316,7 @@
     "optionA": "who's",
     "optionB": "whom",
     "optionC": "whose",
-    "optionD": "whos",
+    "optionD": "which",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Whose is the possessive form, showing the licence belongs to the driver. Who's is short for who is or who has."
@@ -328,8 +328,8 @@
     "category": "oacpSpelling",
     "question": "A report reads, \"The van was ___ when the cyclist struck it.\" Which word fills the blank?",
     "optionA": "stationery",
-    "optionB": "stationarey",
-    "optionC": "stationnary",
+    "optionB": "stationer",
+    "optionC": "stations",
     "optionD": "stationary",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -664,12 +664,12 @@
     "category": "oacpVocab",
     "question": "Which word is most nearly opposite in meaning to compliant?",
     "optionA": "obedient",
-    "optionB": "polite",
-    "optionC": "quiet",
+    "optionB": "careless",
+    "optionC": "nervous",
     "optionD": "defiant",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A compliant person follows directions; a defiant person openly refuses. Obedient is a synonym of compliant."
+    "explanation": "A compliant person follows directions; a defiant person openly refuses. Obedient is a synonym of compliant, not an opposite."
   },
   {
     "type": "OACP",
@@ -679,11 +679,11 @@
     "question": "Which word is most nearly opposite in meaning to impartial?",
     "optionA": "biased",
     "optionB": "neutral",
-    "optionC": "fair",
-    "optionD": "careful",
+    "optionC": "absent",
+    "optionD": "modest",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Impartial means treating all sides equally. Biased means favouring one side. Neutral and fair are synonyms of impartial."
+    "explanation": "Impartial means treating all sides equally, and biased means favouring one side. Neutral is a synonym of impartial."
   },
   {
     "type": "OACP",
@@ -693,11 +693,11 @@
     "question": "Which word is most nearly opposite in meaning to culpable?",
     "optionA": "responsible",
     "optionB": "blameless",
-    "optionC": "careless",
-    "optionD": "reckless",
+    "optionC": "talkative",
+    "optionD": "fearful",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Culpable means deserving blame. Blameless is the opposite. Responsible is a synonym, and careless or reckless conduct can make a person culpable."
+    "explanation": "Culpable means deserving blame, so blameless is the opposite. Responsible, in the sense of being to blame, is close to culpable."
   },
   {
     "type": "OACP",
@@ -706,12 +706,12 @@
     "category": "oacpVocab",
     "question": "Which word is most nearly opposite in meaning to obstruct?",
     "optionA": "hinder",
-    "optionB": "impede",
+    "optionB": "observe",
     "optionC": "assist",
-    "optionD": "block",
+    "optionD": "report",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "To obstruct is to block or get in the way; to assist is to help. Hinder, impede and block are all close to obstruct in meaning."
+    "explanation": "To obstruct is to block or get in the way; to assist is to help. Hinder is close to obstruct in meaning."
   },
   {
     "type": "OACP",
@@ -720,12 +720,12 @@
     "category": "oacpVocab",
     "question": "Which word is most nearly opposite in meaning to lenient?",
     "optionA": "merciful",
-    "optionB": "gentle",
-    "optionC": "tolerant",
+    "optionB": "lazy",
+    "optionC": "forgetful",
     "optionD": "strict",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Lenient means mild in applying rules or punishment. Strict is the opposite. Merciful and tolerant are close to lenient."
+    "explanation": "Lenient means mild in applying rules or punishment, so strict is the opposite. Merciful is close to lenient."
   },
   {
     "type": "OACP",
@@ -735,11 +735,11 @@
     "question": "Which word is most nearly opposite in meaning to reticent?",
     "optionA": "talkative",
     "optionB": "reserved",
-    "optionC": "withdrawn",
-    "optionD": "nervous",
+    "optionC": "honest",
+    "optionD": "tired",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A reticent person holds back from speaking. Talkative is the opposite. Reserved and withdrawn are synonyms of reticent."
+    "explanation": "A reticent person holds back from speaking, so talkative is the opposite. Reserved is a synonym of reticent."
   },
   {
     "type": "OACP",
@@ -749,11 +749,11 @@
     "question": "Which word is most nearly opposite in meaning to transient?",
     "optionA": "fleeting",
     "optionB": "permanent",
-    "optionC": "temporary",
-    "optionD": "short-lived",
+    "optionC": "sudden",
+    "optionD": "distant",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Transient means lasting only a short time. Permanent is the opposite. Fleeting, temporary and short-lived mean much the same as transient."
+    "explanation": "Transient means lasting only a short time, so permanent is the opposite. Fleeting means much the same as transient."
   },
   {
     "type": "OACP",
@@ -762,12 +762,12 @@
     "category": "oacpVocab",
     "question": "Which word is most nearly opposite in meaning to sporadic?",
     "optionA": "occasional",
-    "optionB": "irregular",
+    "optionB": "careless",
     "optionC": "constant",
-    "optionD": "random",
+    "optionD": "loud",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sporadic means happening now and then, without a pattern. Constant is the opposite. Occasional and irregular are synonyms of sporadic."
+    "explanation": "Sporadic means happening now and then, without a pattern, so constant is the opposite. Occasional is a synonym of sporadic."
   },
   {
     "type": "OACP",
@@ -776,12 +776,12 @@
     "category": "oacpVocab",
     "question": "Which word is most nearly opposite in meaning to credible?",
     "optionA": "reliable",
-    "optionB": "plausible",
-    "optionC": "honest",
+    "optionB": "famous",
+    "optionC": "nervous",
     "optionD": "dubious",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Credible means believable. Dubious means doubtful and hard to believe. Plausible is a synonym of credible, not its opposite."
+    "explanation": "Credible means believable, and dubious means doubtful and hard to believe. Reliable is close to credible, not its opposite."
   },
   {
     "type": "OACP",
@@ -914,7 +914,7 @@
     "state": "ALL",
     "questionId": "OACP-PUN-002",
     "category": "oacpPunct",
-    "question": "Which mark belongs in the blank: Bring these items to court___ your notebook, the report and the photos?",
+    "question": "In the sentence \"Bring these items to court___ your notebook, the report and the photos.\", which mark belongs in the blank?",
     "optionA": "a semicolon",
     "optionB": "a colon",
     "optionC": "a period",
@@ -956,14 +956,14 @@
     "state": "ALL",
     "questionId": "OACP-PUN-005",
     "category": "oacpPunct",
-    "question": "Which word completes the sentence: The cruiser had a dent in ___ rear bumper?",
-    "optionA": "its",
-    "optionB": "it's",
-    "optionC": "its'",
-    "optionD": "it is",
+    "question": "Which sentence uses the possessive correctly?",
+    "optionA": "The children's bikes were taken from the garage.",
+    "optionB": "The childrens' bikes were taken from the garage.",
+    "optionC": "The childrens bikes were taken from the garage.",
+    "optionD": "The children's' bikes were taken from the garage.",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "\"Its\" is the possessive form and never takes an apostrophe. \"It's\" means \"it is,\" which makes no sense here."
+    "explanation": "Children is already plural, so its possessive adds 's: children's. Childrens' treats the plural as if it were childrens, which is not a word."
   },
   {
     "type": "OACP",
@@ -998,7 +998,7 @@
     "state": "ALL",
     "questionId": "OACP-PUN-008",
     "category": "oacpPunct",
-    "question": "Which mark belongs in the blank: The officer who found the wallet___ returned it to the owner?",
+    "question": "In the sentence \"The officer who found the wallet___ returned it to the owner.\", which mark belongs in the blank?",
     "optionA": "a comma",
     "optionB": "a semicolon",
     "optionC": "a colon",
@@ -1103,14 +1103,14 @@
     "optionD": "He said, \"I was home all night\"",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "In Canadian and US usage the period goes inside the closing quotation mark, and a quoted sentence starts with a capital. Putting the period outside is the British style."
+    "explanation": "In Canadian usage the period always goes inside the closing quotation mark, and a quoted sentence starts with a capital."
   },
   {
     "type": "OACP",
     "state": "ALL",
     "questionId": "OACP-PUN-016",
     "category": "oacpPunct",
-    "question": "Which mark belongs in the blank: Although the lights were off___ the store was not empty?",
+    "question": "In the sentence \"Although the lights were off___ the store was not empty.\", which mark belongs in the blank?",
     "optionA": "a semicolon",
     "optionB": "a colon",
     "optionC": "a period",
@@ -1180,7 +1180,7 @@
     "state": "ALL",
     "questionId": "OACP-PUN-021",
     "category": "oacpPunct",
-    "question": "Which mark belongs in the blank: The van was stolen on Tuesday___ it was found on Friday?",
+    "question": "In the sentence \"The van was stolen on Tuesday___ it was found on Friday.\", which mark belongs in the blank?",
     "optionA": "a semicolon",
     "optionB": "a comma",
     "optionC": "an apostrophe",
@@ -1432,7 +1432,7 @@
     "state": "ALL",
     "questionId": "OACP-GRM-011",
     "category": "oacpGrammar",
-    "question": "Which word completes the sentence correctly: The man ___ we arrested gave a false name?",
+    "question": "In a formal report, which word completes the sentence correctly: The man ___ we arrested gave a false name?",
     "optionA": "who",
     "optionB": "whose",
     "optionC": "whom",
@@ -1449,7 +1449,7 @@
     "question": "Which word completes the sentence correctly: Yesterday the victim ___ on the couch for an hour?",
     "optionA": "laid",
     "optionB": "lied",
-    "optionC": "layed",
+    "optionC": "lain",
     "optionD": "lay",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1474,14 +1474,14 @@
     "state": "ALL",
     "questionId": "OACP-GRM-014",
     "category": "oacpGrammar",
-    "question": "Which word completes the sentence correctly: The two constables filed ___ reports before the shift ended?",
-    "optionA": "his",
+    "question": "Which word completes the sentence correctly: The two drivers handed ___ licences to the constable?",
+    "optionA": "its",
     "optionB": "their",
-    "optionC": "there",
-    "optionD": "they're",
+    "optionC": "his",
+    "optionD": "her",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The antecedent \"two constables\" is plural, so the possessive must be plural: \"their.\" \"There\" is a place word, and \"they're\" means \"they are.\""
+    "explanation": "Two drivers is a plural antecedent, so it takes the plural pronoun their. His or her would refer to only one person, and its is used for things, not people."
   },
   {
     "type": "OACP",
@@ -1490,7 +1490,7 @@
     "category": "oacpGrammar",
     "question": "Which word completes the sentence correctly: She ___ the evidence bag on the table?",
     "optionA": "lay",
-    "optionB": "layed",
+    "optionB": "lain",
     "optionC": "laid",
     "optionD": "lied",
     "correctAnswer": "C",
@@ -1504,7 +1504,7 @@
     "category": "oacpGrammar",
     "question": "Which word completes the sentence correctly: The suspect had ___ across the river before dawn?",
     "optionA": "swam",
-    "optionB": "swimmed",
+    "optionB": "swimming",
     "optionC": "swim",
     "optionD": "swum",
     "correctAnswer": "D",
@@ -1533,7 +1533,7 @@
     "question": "Which word completes the sentence correctly: By midnight he had ___ four beers?",
     "optionA": "drank",
     "optionB": "drunk",
-    "optionC": "drinked",
+    "optionC": "drinking",
     "optionD": "drunken",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -1604,7 +1604,7 @@
     "optionA": "less",
     "optionB": "lesser",
     "optionC": "fewer",
-    "optionD": "littler",
+    "optionD": "smaller",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Use \"fewer\" with things you can count, such as calls. \"Less\" is for amounts you cannot count, such as time."
@@ -1631,7 +1631,7 @@
     "question": "Which word completes the sentence correctly: The new recruit performed ___ on the fitness test?",
     "optionA": "well",
     "optionB": "good",
-    "optionC": "goodly",
+    "optionC": "healthy",
     "optionD": "greatly",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -1645,11 +1645,11 @@
     "question": "Which word completes the sentence correctly: Of the three witnesses, Ana gave the ___ account?",
     "optionA": "clearer",
     "optionB": "clearest",
-    "optionC": "most clearest",
+    "optionC": "clearly",
     "optionD": "more clear",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "With three or more, use the superlative \"clearest.\" \"Clearer\" compares only two, and \"most clearest\" doubles the comparison."
+    "explanation": "With three or more, use the superlative \"clearest.\" \"Clearer\" compares only two, and \"clearly\" is an adverb, which cannot describe the noun \"account.\""
   },
   {
     "type": "OACP",
@@ -2034,7 +2034,7 @@
     "state": "ALL",
     "questionId": "OACP-POL-026",
     "category": "oacpPolicy",
-    "question": "Policy says an officer may give a member of the public a ride in a cruiser only to take them to safety or to a hospital. Constable Grey finds a lost, cold child at night and drives her to the station to wait for her parents. Was the ride allowed?",
+    "question": "Policy says an officer may give a member of the public a ride in a cruiser only to take them to a place of safety, such as a station or shelter, or to a hospital. Constable Grey finds a lost, cold child at night and drives her to the station to wait for her parents. Was the ride allowed?",
     "optionA": "No, it was not allowed",
     "optionB": "Yes, the ride was allowed",
     "optionC": "Not enough information",
@@ -2119,13 +2119,13 @@
     "questionId": "OACP-RPT-004",
     "category": "oacpReport",
     "question": "Report: On June 9 at 08:15, Constable Amir Haddad stopped a blue pickup on Highway 7 in Peterborough for having no rear licence plate. The driver, Carla Ruiz, said the plate had fallen off that morning. Haddad found the plate on the truck's back seat and gave Ruiz a warning. Which summary sentence is most accurate?",
-    "optionA": "Stopped for speeding; driver was warned",
-    "optionB": "Stopped for no rear plate; driver was charged",
-    "optionC": "Plate found on the road; driver was warned",
+    "optionA": "Stopped for speeding; driver was charged",
+    "optionB": "Stopped for speeding; truck was towed",
+    "optionC": "Stopped for no rear plate; truck was towed",
     "optionD": "Stopped for no rear plate; driver was warned",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The stop was for the missing plate and the outcome was a warning. The plate was found on the back seat, not on the road, and no charge was laid."
+    "explanation": "The stop was for the missing plate and the outcome was a warning. No charge was laid, and Haddad found the plate on the back seat; nothing says the truck was towed."
   },
   {
     "type": "OACP",
@@ -2259,13 +2259,13 @@
     "questionId": "OACP-RPT-014",
     "category": "oacpReport",
     "question": "Witness statement of Ivan Petrov: \"I was walking my dog on Ridge Road at about 7 a.m. A red hatchback came round the bend too fast, hit the curb and knocked over a mailbox. The driver got out, looked at it, then drove off toward Highway 400. I did not see the plate.\" Which summary is most accurate?",
-    "optionA": "A hatchback hit a dog walker and left",
+    "optionA": "A van hit a mailbox and stayed",
     "optionB": "A hatchback hit a mailbox and left",
-    "optionC": "A hatchback hit a mailbox; plate noted",
-    "optionD": "A van hit a mailbox and stayed",
+    "optionC": "A hatchback hit a fence and stayed",
+    "optionD": "A van hit a fence and left",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Petrov says the hatchback knocked over a mailbox and drove off. He did not see the plate, and no person was hit."
+    "explanation": "Petrov says a hatchback knocked over a mailbox and drove off. The driver got out only briefly before leaving, and nothing was said about a fence."
   },
   {
     "type": "OACP",
@@ -2573,7 +2573,7 @@
     "optionD": "$96",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Flares cost 15 x 4 = $60 and triangles 3 x 12 = $36, for $96 in all. Adding just the two prices and multiplying is a common slip."
+    "explanation": "Flares cost 15 x 4 = $60 and triangles 3 x 12 = $36, for $96 in all. $84 counts only two triangles, $72 only one, and $108 counts four."
   },
   {
     "type": "OACP",

@@ -75,7 +75,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 - Every dashboard must stay completable: every training set needs at least its `size` unique questions.
 
 **Premium and money**
-- Premium is one purchase (US $9.99, local prices elsewhere, `lib/pricing.ts`). v1 exams lock the last 25% of dashboard steps (`lib/examLocks.ts`; half of browsers see 50% in the lock share test, `premium.md`). v2 exams are free unless listed in `PREMIUM_V2_IDS`; never sell school, college-entrance or children's tests. Steps a person already started stay open; class students of that exam are never locked.
+- Premium is one purchase (US $9.99, local prices elsewhere, `lib/pricing.ts`). v1 exams lock the last 50% of dashboard steps, the DMV's shape (`lib/examLocks.ts`, `LOCKED_SHARE`; Test 1 always free); v2 Premium exams lock 50% too (`V2_LOCKED_SHARE`). v2 exams are free unless listed in `PREMIUM_V2_IDS`; never sell school, college-entrance or children's tests. Steps a person already started stay open; class students of that exam are never locked.
 - Email Premium only after an action the person took (paywall follow-up). No unprompted upsells.
 - Revenue figures in /admin are always US cents via `paymentNetUsdCents()`.
 

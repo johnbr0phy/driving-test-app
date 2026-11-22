@@ -314,15 +314,16 @@ test('each real complex format completes a canonical shared drill transaction, n
   }
 });
 
-test('SAT, ACT and every school or children\'s test stay free; paid v2 exams lock only their last drills and test', async () => {
+test('SAT, ACT and every school or children\'s test stay free; paid v2 exams lock only their last drills and tests, never Test 1', async () => {
   const paid = EXAMS_V2.filter((e) => e.premium);
   const kids = /^(sat|psat|act|ged|ap(?:psych|ush|gov|world|hug|lang|bio|calcab)|gcse|ks2|elevenplus|timestables|fsmaths|osslt|eqao9|naplan|ocnsw|nswsel|vicsel|hscmaths|jnvst|aissee|jamb|jeemain|neet|mhtcet|kcet|cuet|sehp|accuplacer|nda)/;
   assert.ok(paid.length > 0);
   for (const e of paid) {
     assert.ok(!kids.test(e.id), e.id);
-    assert.ok(e.premium.lockedTests.length <= 1 && e.premium.lockedDrills.length < e.drills.length, e.id);
+    assert.ok(e.premium.lockedTests.length < Math.max(1, e.tests.length) && e.premium.lockedDrills.length < e.drills.length, e.id);
     assert.deepEqual(e.premium.lockedDrills, e.drills.slice(e.drills.length - e.premium.lockedDrills.length).map((d) => d.key), e.id);
-    if (e.premium.lockedTests.length) assert.equal(e.premium.lockedTests[0], e.tests[e.tests.length - 1].number, e.id);
+    assert.deepEqual(e.premium.lockedTests, e.tests.slice(e.tests.length - e.premium.lockedTests.length).map((t) => t.number), e.id);
+    if (e.premium.lockedTests.length) assert.ok(!e.premium.lockedTests.includes(e.tests[0].number), e.id);
   }
   for (const [id, { lockedDrills }] of Object.entries(OLD_LOCKS)) {
     for (const key of lockedDrills) assert.equal((await start(new FakeDb(), id, key)).ok, true, `${id}:${key}`);

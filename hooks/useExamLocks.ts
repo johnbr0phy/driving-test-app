@@ -6,9 +6,7 @@ import { useHydration } from "@/hooks/useHydration";
 import { useIsPremium } from "@/hooks/useIsPremium";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { ExamConfig, TrainingPart, trainingPartOf } from "@/lib/exams";
-import { useEffect } from "react";
 import { lockedTestIds, lockedTrainingParts } from "@/lib/examLocks";
-import { lockShare, recordLockExposure } from "@/lib/lockTest";
 
 /**
  * Premium locks on a v1 exam for this person (lib/examLocks.ts). Open for
@@ -18,10 +16,6 @@ import { lockShare, recordLockExposure } from "@/lib/lockTest";
  *
  * `settled` turns true once the account (and its progress) has loaded; until
  * then nothing reads as locked, so pages that gate entry must wait for it.
- *
- * How much is locked depends on this browser's arm of the lock share test
- * (lib/lockTest.ts); a settled visit by someone who is not Premium or in a
- * class counts as one exposure to it.
  */
 export function useExamLocks(source: ExamConfig) {
   const hydrated = useHydration();
@@ -35,16 +29,8 @@ export function useExamLocks(source: ExamConfig) {
 
   const settled = hydrated && ready && (!user || firestoreLoaded);
   const paid = isPremium || inClass;
-  // Read only once settled (after hydration), so the server render and the
-  // first client render agree.
-  const share = settled ? lockShare() : undefined;
-  const premiumTests = lockedTestIds(source, share);
-  const premiumParts = lockedTrainingParts(source, share);
-  const familyId = source.variantOf ?? source.id;
-
-  useEffect(() => {
-    if (settled && !paid) void recordLockExposure(familyId);
-  }, [settled, paid, familyId]);
+  const premiumTests = lockedTestIds(source);
+  const premiumParts = lockedTrainingParts(source);
 
   const testLocked = (testId: number): boolean => {
     if (!settled || paid || !premiumTests.includes(testId)) return false;

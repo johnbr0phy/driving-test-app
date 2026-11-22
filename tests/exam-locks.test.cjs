@@ -1,5 +1,5 @@
-// The Premium locks on v1 exams (lib/examLocks.ts): the last quarter of the
-// dashboard's steps, with a state version's single test left free, or an
+// The Premium locks on v1 exams (lib/examLocks.ts): the last half of the
+// dashboard's steps (since Nov 22 2026, the DMV's shape), with a state version's single test left free, or an
 // exam's own Premium content block (premiumFrom, RBT).
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -19,32 +19,33 @@ const lockedStepNumbers = (exam) => {
     .filter(Boolean);
 };
 
-test('a quarter of the steps, rounded, at least one', () => {
-  assert.deepEqual([2, 5, 8, 9, 12, 19].map((n) => lockedStepCount(n)), [1, 1, 2, 2, 3, 5]);
+test('half the steps, rounded, at least one, at least one free', () => {
+  const { LOCKED_SHARE, V2_LOCKED_SHARE } = require('../lib/examLocks.ts');
+  assert.equal(LOCKED_SHARE, 0.5);
+  assert.equal(V2_LOCKED_SHARE, 0.5);
+  assert.deepEqual([2, 5, 8, 9, 12, 19].map((n) => lockedStepCount(n)), [1, 3, 4, 5, 6, 10]);
+  assert.deepEqual([2, 5, 8, 9, 12, 19].map((n) => lockedStepCount(n, 0.25)), [1, 1, 2, 2, 3, 5]);
 });
 
-test('an 8-step exam (Motorcycle) locks steps 7 and 8', () => {
-  assert.deepEqual(lockedStepNumbers(getExamById('moto')), [7, 8]);
+test('an 8-step exam (Motorcycle) locks like the DMV: Sets 3 and 4, Tests 3 and 4', () => {
+  const moto = getExamById('moto');
+  assert.deepEqual(lockedStepNumbers(moto), [5, 6, 7, 8]);
+  assert.deepEqual(lockedTrainingParts(moto).map((p) => p.set.setNumber), [3, 4]);
+  assert.equal(lockedTestIds(moto).length, 2);
 });
 
-test('EPA 608 (9 steps) locks steps 5 and 9: its last training step and last test', () => {
-  const exam = getExamById('epa608');
-  const parts = examTrainingParts(exam);
-  assert.equal(parts.length, 5);
-  assert.ok(samePart(lockedTrainingParts(exam)[0], parts[4]));
-  assert.deepEqual(lockedTestIds(exam), [examTestIds(exam)[3]]);
+test('EPA 608 (9 steps) locks steps 5 to 9', () => {
+  assert.deepEqual(lockedStepNumbers(getExamById('epa608')), [5, 6, 7, 8, 9]);
 });
 
-test('Life in the UK (12 steps) locks 10, 11 and 12', () => {
-  assert.deepEqual(lockedStepNumbers(getExamById('uklitu')), [10, 11, 12]);
+test('Life in the UK (12 steps) locks 7 to 12', () => {
+  assert.deepEqual(lockedStepNumbers(getExamById('uklitu')), [7, 8, 9, 10, 11, 12]);
 });
 
-test('a longer exam locks more: CDL locks its last five steps', () => {
+test('a longer exam locks more: CDL locks its last ten steps', () => {
   const exam = getExamById('cdl');
-  const steps = examSteps(exam).length;
-  assert.equal(steps, 19);
-  assert.deepEqual(lockedStepNumbers(exam), [15, 16, 17, 18, 19]);
-  assert.equal(lockedTestIds(exam).length, 2);
+  assert.equal(examSteps(exam).length, 19);
+  assert.deepEqual(lockedStepNumbers(exam), [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
 });
 
 test('a state version locks training steps only: its one test stays free', () => {
@@ -57,17 +58,21 @@ test('a state version locks training steps only: its one test stays free', () =>
   }
 });
 
-test('every national exam locks the tail of its dashboard, about a quarter, and ends on a test', () => {
+test('every national exam locks the tail of its dashboard, about half, keeps Test 1 free and ends on a test', () => {
   for (const exam of EXAMS) {
     if (exam.premiumFrom) continue; // a Premium content block, tested below
     const steps = examSteps(exam);
     assert.equal(steps.length, examTrainingParts(exam).length + examTestIds(exam).length, exam.id);
     const locked = lockedStepNumbers(exam);
     const n = lockedStepCount(steps.length);
-    assert.deepEqual(locked, Array.from({ length: n }, (_, i) => steps.length - n + 1 + i), exam.id);
-    const share = n / steps.length;
-    assert.ok(share >= 0.2 && share <= 0.34, `${exam.id} locks ${n} of ${steps.length}`);
+    // The tail, minus Test 1 if the tail reaches it.
+    const firstTest = steps.findIndex((s) => s.kind === 'test') + 1;
+    const tail = Array.from({ length: n }, (_, i) => steps.length - n + 1 + i).filter((k) => k !== firstTest);
+    assert.deepEqual(locked, tail, exam.id);
+    const share = locked.length / steps.length;
+    assert.ok(share >= 0.4 && share <= 0.6, `${exam.id} locks ${locked.length} of ${steps.length}`);
     const ids = examTestIds(exam);
+    assert.ok(!lockedTestIds(exam).includes(ids[0]), `${exam.id}: Test 1 stays free`);
     assert.ok(lockedTestIds(exam).includes(ids[ids.length - 1]), exam.id);
     assert.ok(lockedTestIds(exam).length < ids.length, `${exam.id} has a free test`);
     assert.ok(lockedTrainingParts(exam).length < examTrainingParts(exam).length, `${exam.id} has a free training step`);
@@ -97,11 +102,13 @@ test('RBT: Sets 1 to 3 and Tests 1 to 3 are free; Premium is the last four steps
   }
 });
 
-test('v2 Premium exams lock about a quarter of their drills and tests, never all of either', () => {
+test('v2 Premium exams lock about half of their drills and tests from the end, keep Test 1 and a drill free', () => {
   for (const exam of EXAMS_V2) {
     if (!exam.premium) continue;
     const { lockedDrills, lockedTests } = exam.premium;
-    assert.equal(lockedDrills.length + lockedTests.length, lockedStepCount(exam.drills.length + exam.tests.length), exam.id);
+    assert.equal(lockedDrills.length + lockedTests.length, lockedStepCount(exam.drills.length + exam.tests.length, 0.5), exam.id);
+    if (exam.tests.length > 1) assert.ok(!lockedTests.includes(exam.tests[0].number), `${exam.id}: Test 1 stays free`);
+    assert.deepEqual(lockedTests, exam.tests.slice(exam.tests.length - lockedTests.length).map((t) => t.number), exam.id);
     assert.ok(lockedDrills.length < exam.drills.length, exam.id);
     assert.ok(lockedTests.length < exam.tests.length, exam.id);
     assert.deepEqual(lockedDrills, exam.drills.slice(exam.drills.length - lockedDrills.length).map((d) => d.key), exam.id);
@@ -156,32 +163,13 @@ test('RBT paywall says plainly what Premium adds, never a readiness verdict', ()
   assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /final CDL training step/);
 });
 
-test('lock share test: the 50% arm locks about half of every v1 dashboard, keeps Test 1 and a training step free, and covers the 25% locks', () => {
-  const { LOCK_ARM_SHARE, LOCK_MAX_SHARE } = require('../lib/lockTestIds.ts');
-  assert.equal(LOCK_ARM_SHARE['25'], 0.25);
-  assert.equal(LOCK_ARM_SHARE['50'], 0.5);
-  assert.equal(LOCK_MAX_SHARE, 0.5);
-  // Motorcycle mirrors the DMV: Sets 3 and 4, Tests 3 and 4.
-  const moto = getExamById('moto');
-  assert.deepEqual(lockedTrainingParts(moto, 0.5).map((p) => p.set.setNumber), [3, 4]);
-  assert.equal(lockedTestIds(moto, 0.5).length, 2);
-  for (const exam of [...EXAMS, ...EXAM_VARIANTS]) {
-    const ids = examTestIds(exam);
-    const half = lockedTestIds(exam, 0.5);
-    const halfParts = lockedTrainingParts(exam, 0.5);
-    if (ids.length) assert.ok(!half.includes(ids[0]), `${exam.id}: Test 1 stays free`);
-    assert.ok(halfParts.length < examTrainingParts(exam).length, `${exam.id} has a free training step`);
-    for (const id of lockedTestIds(exam)) assert.ok(half.includes(id), `${exam.id}: 50% covers 25% test ${id}`);
-    for (const p of lockedTrainingParts(exam)) assert.ok(halfParts.some((q) => samePart(p, q)), `${exam.id}: 50% covers 25% parts`);
-  }
-});
-
-test('lock share test: the arm rides on checkout and the payment, and the card is on the A/B tests tab', () => {
+test('lock share test ended: every browser gets LOCKED_SHARE, v2 locks half too, the result card stays on the A/B tests tab', () => {
   const fs = require('node:fs');
   const read = (p) => fs.readFileSync(require('node:path').join(__dirname, '..', p), 'utf8');
-  assert.match(read('lib/startCheckout.ts'), /lockArm: lockArmForCheckout\(\)/);
-  assert.match(read('app/api/stripe/checkout/route.ts'), /isLockArm\(lockArm\) && \{ lockArm \}/);
+  assert.ok(!fs.existsSync(require('node:path').join(__dirname, '..', 'lib/lockTest.ts')));
+  assert.doesNotMatch(read('lib/startCheckout.ts'), /lockArm/);
+  assert.match(read('hooks/useExamLocks.ts'), /lockedTestIds\(source\)/);
+  assert.match(read('lib/v2/registry.ts'), /lockedStepCount\([^)]*V2_LOCKED_SHARE\)/);
   assert.match(read('app/api/stripe/webhook/route.ts'), /lockArm: session\.metadata\?\.lockArm/);
-  assert.match(read('hooks/useExamLocks.ts'), /lockedTestIds\(source, share\)/);
   assert.match(read('components/admin/ABTestsTab.tsx'), /<LockTestCard/);
 });

@@ -81,3 +81,9 @@ Numeric items that share a template with Series 65 use different numbers and ans
 ## Not confirmed
 - NASAA's model rules on financial reporting (203(c)-1) and business continuity (203(a)-1) were
   not refetched for this build; items on them keep to the rule's main requirement only.
+
+## Blind second review (2026-11-22)
+- All 200 keys answered blind and matched. Wrong options rewritten on S66-ADV-021, S66-COM-005 and
+  S66-COM-009 (surface cues). S66-COM-009's key now names all three Form CRS triggers (order,
+  recommendation, account opening), per SEC Form CRS Rule 17a-14 (eCFR, fetched 2026-11-22).
+  Key letters now come from a seeded balanced shuffle instead of a fixed A-D cycle.

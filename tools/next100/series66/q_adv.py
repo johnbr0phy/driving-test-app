@@ -61,7 +61,7 @@ Q = [
  '$90 million', ['$100 million', '$110 million', '$25 million'],
  'SEC Rule 203A-1 gives a buffer: an adviser may register at $100 million to $110 million, must register at $110 million, and need not withdraw until assets drop below $90 million.'),
 ('Under the USA, before a state-registered adviser takes custody of client funds, it must:',
- 'Notify the Administrator', ["Get each client's verbal OK", 'Register as a broker-dealer', 'Join FINRA'],
+ 'Notify the Administrator', ["Get each client's written consent", 'Post a surety bond with the state', 'Wait for an SEC no-action letter'],
  'USA Section 102(e) makes it unlawful for an adviser to have custody if it has not notified the Administrator that it has or may have custody, absent a rule.'),
 ('An adviser to a registered investment company, whatever its size, is:',
  'Federal covered adviser', ['State-registered adviser', 'Exempt reporting adviser', 'Excluded from the Advisers Act'],

@@ -484,6 +484,8 @@ export const fr: TranslationKeys = {
     notAvailableInApp:
       "Les achats Premium ne sont pas disponibles dans l'application. Vous pouvez passer à Premium sur tigertest.io dans votre navigateur ; votre compte se synchronise automatiquement.",
     okGotIt: "Compris",
+    alreadyBought: "Vous avez déjà acheté Premium avec {email}.",
+    signInToUse: "Connectez-vous pour en profiter",
   },
 
   mastery: {

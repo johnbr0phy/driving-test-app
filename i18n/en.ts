@@ -3868,6 +3868,8 @@ export const en = {
     notAvailableInApp:
       "Premium purchases aren't available in the app. You can upgrade on tigertest.io in your web browser — your account syncs automatically.",
     okGotIt: "Got it",
+    alreadyBought: "You already bought Premium with {email}.",
+    signInToUse: "Sign in to use it",
   },
 
   // Mastery progress

@@ -3768,6 +3768,8 @@ export const es: TranslationKeys = {
     notAvailableInApp:
       "Las compras premium no están disponibles en la aplicación. Puedes actualizar en tigertest.io desde tu navegador web — tu cuenta se sincroniza automáticamente.",
     okGotIt: "Entendido",
+    alreadyBought: "Ya compraste Premium con {email}.",
+    signInToUse: "Inicia sesión para usarlo",
   },
 
   // Mastery progress

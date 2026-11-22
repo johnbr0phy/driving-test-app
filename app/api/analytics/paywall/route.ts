@@ -15,6 +15,11 @@ export async function POST(request: NextRequest) {
     const itemId = typeof body.itemId === 'string' ? body.itemId : '';
     const location = typeof body.location === 'string' ? body.location : '';
     const label = (typeof body.itemName === 'string' ? body.itemName : '').slice(0, 80) || itemId;
+    // The browser's first hit of the UTC day, and its first in this state
+    // (guest or signed in): browsers, not just opens, with no id stored.
+    // Counted since 2026-11-22 (BROWSERS_TRACKED_SINCE in lib/server/conversion.ts).
+    const newBrowserToday = body.newBrowserToday === true;
+    const newStateToday = body.newStateToday === true;
 
     if (!KEY_RE.test(itemId) || !KEY_RE.test(location)) {
       return NextResponse.json({ ok: false, error: 'invalid' }, { status: 400 });
@@ -49,6 +54,10 @@ export async function POST(request: NextRequest) {
         total: FieldValue.increment(1),
         daily: { [today]: FieldValue.increment(1) },
         ...(uid && { signedInDaily: { [today]: FieldValue.increment(1) } }),
+        ...(newBrowserToday && { browsersDaily: { [today]: FieldValue.increment(1) } }),
+        ...(newStateToday && {
+          [uid ? 'signedInBrowsersDaily' : 'guestBrowsersDaily']: { [today]: FieldValue.increment(1) },
+        }),
         byCountry: { [country]: { [today]: FieldValue.increment(1) } },
         byPaywall: {
           [key]: {

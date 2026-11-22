@@ -3768,6 +3768,8 @@ export const vi: TranslationKeys = {
     notAvailableInApp:
       "Không thể mua Premium trong ứng dụng. Bạn có thể nâng cấp tại tigertest.io trên trình duyệt web — tài khoản của bạn sẽ tự động đồng bộ.",
     okGotIt: "Đã hiểu",
+    alreadyBought: "Bạn đã mua Premium bằng {email}.",
+    signInToUse: "Đăng nhập để sử dụng",
   },
 
   // Mastery progress

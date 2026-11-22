@@ -247,6 +247,11 @@ export function ConversionView({ data, onRefresh, refreshing, updating }: {
         data={signupBars(data.daily.paywallHits, unit)} unit={unit} onUnit={setUnit}
         part={{ data: signupBars({ ...(data.daily.signedInEst ?? {}), ...(data.daily.signedIn ?? {}) }, unit), label: "Logged in", restLabel: "Guests", color: LOGGED_IN }} />
 
+      <PeriodBarsCard title="Browsers that hit a paywall" noun="browsers" color={PAYWALL}
+        note={`People, not opens: each browser counts once a day however often it opens a paywall. Logged in is a browser that hit one signed in that day; the rest hit one only as a guest, so a guest who signs up and hits it again counts once, as logged in. Counted from ${fmtDay(data.browsersTrackedSince ?? "2026-11-22")}; a browser that already paid as a guest and is asked to sign in is not counted. Weeks and months add up days, so a browser seen on several days counts once per day.`}
+        data={signupBars(data.daily.browsers ?? {}, unit)} unit={unit} onUnit={setUnit}
+        part={{ data: signupBars(data.daily.signedInBrowsers ?? {}, unit), label: "Logged in", restLabel: "Guests only", color: LOGGED_IN }} />
+
       {/* Closest to paying */}
       <div className={`${CARD} mb-3 sm:mb-4`}>
         <h2 className={H2}>Who is closest to paying right now?</h2>

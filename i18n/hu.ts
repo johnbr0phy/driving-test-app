@@ -484,6 +484,8 @@ export const hu: TranslationKeys = {
     notAvailableInApp:
       "Az alkalmazásban nem lehet Premiumot vásárolni. Böngészőben a tigertest.io oldalon válthatsz. A fiókod automatikusan szinkronizálódik.",
     okGotIt: "Rendben",
+    alreadyBought: "Már megvásároltad a Premiumot ezzel a címmel: {email}.",
+    signInToUse: "Jelentkezz be a használatához",
   },
 
   mastery: {

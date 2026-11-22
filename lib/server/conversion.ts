@@ -84,8 +84,13 @@ export interface ConversionPayload {
     signedIn: Record<string, number>;
     /** Before TRACKED_SINCE, an estimate: each account's hits on a paywall, put on the day of its latest hit there. */
     signedInEst: Record<string, number>;
+    /** Browsers that hit a paywall, once per browser per UTC day, since BROWSERS_TRACKED_SINCE. */
+    browsers?: Record<string, number>;
+    /** Of those, browsers that hit one signed in that day (the rest were guests only). */
+    signedInBrowsers?: Record<string, number>;
   };
   trackedSince: string;
+  browsersTrackedSince: string;
   /** The top prepper email against its holdout (lib/topPrepper.ts). */
   topPrepper: TopPrepperResult;
   /** Who the email crons would pick next, a best guess from the same rules. */
@@ -132,6 +137,8 @@ const num = (v: unknown) => (typeof v === 'number' && Number.isFinite(v) ? v : 0
 
 /** Guest and by-country paywall counters started on this day (app/api/analytics/paywall). */
 export const TRACKED_SINCE = '2026-11-12';
+/** Browser counts per day (browsersDaily, signedInBrowsersDaily) started on this day. */
+export const BROWSERS_TRACKED_SINCE = '2026-11-22';
 
 const OTHER = 'OTHER';
 const UNKNOWN = 'UNKNOWN';
@@ -308,7 +315,19 @@ export async function buildConversion(): Promise<ConversionPayload> {
   }
 
   // ── Paywall hits by day, from the site-wide counters ───────────────────
-  const paywallsData = (paywallsDoc.data() || {}) as { daily?: Record<string, unknown>; signedInDaily?: Record<string, unknown> };
+  const paywallsData = (paywallsDoc.data() || {}) as {
+    daily?: Record<string, unknown>;
+    signedInDaily?: Record<string, unknown>;
+    browsersDaily?: Record<string, unknown>;
+    signedInBrowsersDaily?: Record<string, unknown>;
+  };
+  const numbersByDay = (m: Record<string, unknown> | undefined) => {
+    const out: Record<string, number> = {};
+    for (const [day, n] of Object.entries(m || {})) if (typeof n === 'number') out[day] = n;
+    return out;
+  };
+  const browsersByDay = numbersByDay(paywallsData.browsersDaily);
+  const signedInBrowsersByDay = numbersByDay(paywallsData.signedInBrowsersDaily);
   const signedInByDay: Record<string, number> = {};
   for (const [day, n] of Object.entries(paywallsData.signedInDaily || {})) if (typeof n === 'number') signedInByDay[day] = n;
   const signedInEstByDay: Record<string, number> = {};
@@ -658,8 +677,16 @@ export async function buildConversion(): Promise<ConversionPayload> {
     overview,
     countries,
     recentPayers,
-    daily: { paywallHits: paywallHitsByDay, purchases: purchasesByDay, signedIn: signedInByDay, signedInEst: signedInEstByDay },
+    daily: {
+      paywallHits: paywallHitsByDay,
+      purchases: purchasesByDay,
+      signedIn: signedInByDay,
+      signedInEst: signedInEstByDay,
+      browsers: browsersByDay,
+      signedInBrowsers: signedInBrowsersByDay,
+    },
     trackedSince: TRACKED_SINCE,
+    browsersTrackedSince: BROWSERS_TRACKED_SINCE,
     topPrepper,
     nextEmails,
     leads,

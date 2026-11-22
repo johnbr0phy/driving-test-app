@@ -9,6 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
 import { trackFunnelSignup } from "@/lib/funnel";
 import { clearGuestPurchaseSignIn, markGuestPurchaseSignIn } from "@/lib/guestPurchaseSignIn";
+import { markGuestPaid } from "@/lib/guestPaidHint";
 
 type Notice =
   | { kind: "existing"; email: string }
@@ -70,10 +71,15 @@ export function GuestPurchaseReturn() {
           trackFunnelSignup();
         } else if (data?.status === "existing_account" && data.email) {
           setNotice({ kind: "existing", email: data.email });
+          // Paid, but this browser is not signed in to that account: paywalls
+          // here say to sign in instead of selling again.
+          markGuestPaid(data.email);
         } else if (data?.status === "already_premium" && data.email) {
           setNotice({ kind: "duplicate", email: data.email });
+          markGuestPaid(data.email);
         } else if (data?.status === "sign_in_used" && data.email) {
           setNotice({ kind: "used", email: data.email });
+          markGuestPaid(data.email);
         } else if (data?.status === "unpaid") {
           setNotice({ kind: "pending" });
         } else if (data?.status === "other_browser") {

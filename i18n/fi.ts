@@ -484,6 +484,8 @@ export const fi: TranslationKeys = {
     notAvailableInApp:
       "Premiumia ei voi ostaa sovelluksessa. Voit päivittää selaimella osoitteessa tigertest.io. Tilisi synkronoituu automaattisesti.",
     okGotIt: "Selvä",
+    alreadyBought: "Olet jo ostanut Premiumin osoitteella {email}.",
+    signInToUse: "Kirjaudu sisään käyttääksesi sitä",
   },
 
   mastery: {

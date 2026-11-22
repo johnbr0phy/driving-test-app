@@ -3770,6 +3770,8 @@ export const ko: TranslationKeys = {
     notAvailableInApp:
       "앱에서는 프리미엄을 구매할 수 없습니다. 웹 브라우저에서 tigertest.io에 접속해 업그레이드하시면 계정이 자동으로 동기화됩니다.",
     okGotIt: "확인",
+    alreadyBought: "이미 {email}(으)로 프리미엄을 구매했어요.",
+    signInToUse: "로그인해서 사용하기",
   },
 
   // Mastery progress

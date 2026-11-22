@@ -201,7 +201,8 @@ async function buildUsers() {
   const landingByUid = new Map(
     originSnaps.map((s) => [s.id, typeof s.get('landing') === 'string' ? (s.get('landing') as string) : null]),
   );
-  // Country: the signup's IP country, else where they last saw a paywall, else the country they picked.
+  // Country: the signup's IP country, else where they last saw a paywall, else the IP
+  // country a signed-in browser last stamped (ipCountry), else the country they picked.
   const countryByUid = new Map(
     originSnaps.map((s) => [s.id, typeof s.get('country') === 'string' && s.get('country') ? (s.get('country') as string) : null]),
   );
@@ -226,7 +227,10 @@ async function buildUsers() {
     if (stats.isPremium && location) {
       stats.convertedPaywall = { key: location, label: purchaseLocationLabel(location), location };
     }
-    const iso = countryByUid.get(doc.id) ?? (typeof data.paywallCountry === 'string' && data.paywallCountry ? data.paywallCountry : null);
+    const iso =
+      countryByUid.get(doc.id) ??
+      (typeof data.paywallCountry === 'string' && data.paywallCountry ? data.paywallCountry : null) ??
+      (typeof data.ipCountry === 'string' && data.ipCountry ? data.ipCountry : null);
     return {
       uid: doc.id,
       email: (data.email as string) || '',

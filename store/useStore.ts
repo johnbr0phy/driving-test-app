@@ -7,6 +7,7 @@ import { compactCompletedTests, expandCompletedTests } from '@/lib/testHistoryCo
 import { isMcpProgressConflict } from '@/lib/mcpProgressGuard';
 import { createSaveQueue } from '@/lib/saveQueue';
 import { Region, isRegion } from "@/lib/region";
+import { visitorCountryCookie } from "@/lib/privacyRegion";
 import { db } from '@/lib/firebase';
 import { trackQuestionsAnswered } from '@/lib/analytics';
 import { splitLegacySets } from '@/lib/legacySetSplits';
@@ -1129,6 +1130,14 @@ export const useStore = create<AppState>()(
           const { region, regionAt } = get();
           if (userDoc.exists() && region && region !== userDoc.data().region) {
             updateDoc(doc(db, 'users', userId), { region, regionAt }).catch(() => {});
+          }
+          // The account's IP country for /admin Users when it has none: its
+          // signup stamp (signupOrigins) is missing for second accounts on a
+          // browser, older accounts and failed posts. Read from the tt-cc
+          // cookie AnalyticsConsent keeps (lib/privacyRegion.ts).
+          const ipCountry = visitorCountryCookie();
+          if (userDoc.exists() && ipCountry && /^[A-Z]{2}$/.test(ipCountry) && ipCountry !== 'ZZ' && !userDoc.data().ipCountry) {
+            updateDoc(doc(db, 'users', userId), { ipCountry }).catch(() => {});
           }
           // Write the moved records back so server readers (admin, emails) see them too.
           if (movedLegacyIds) get().saveToFirestore();

@@ -19,7 +19,7 @@ interface UserData {
   uid: string;
   email: string;
   selectedState: string | null;
-  /** ISO country from the signup's IP, else the last paywall view's; older payloads lack it. */
+  /** ISO country from the signup's IP, else the last paywall view's, else a signed-in visit's; older payloads lack it. */
   country?: string | null;
   /** The country they picked on the site (lib/region), a fallback. */
   region?: string | null;
@@ -76,7 +76,7 @@ function FlagImg({ iso }: { iso: string }) {
 function countryOf(u: UserData): { iso: string; name: string; source: string } | null {
   const testRegion = regionOfTest(u.test.id);
   const [raw, source] = u.country
-    ? [u.country, "From their signup or paywall view"]
+    ? [u.country, "From their IP at signup, a paywall view or a later visit"]
     : u.region
       ? [u.region, "The country they picked"]
       : testRegion !== "GLOBAL"

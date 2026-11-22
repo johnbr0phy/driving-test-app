@@ -90,7 +90,7 @@ Q = [
  "360-degree assessment", ["Competency assessment", "Simulation", "Adaptive skills test"],
  "A 360-degree assessment collects views from all around the employee and is mainly used for development."),
 ("A manager wants sales training because sales fell, but HR finds the drop followed a price increase. Best advice?",
- "Address pricing, not training", ["Run the sales training anyway", "Train the managers instead", "Start a sales contest"],
+ "Address pricing, not training", ["Coach the lowest sellers first", "Revise the sales incentive plan", "Add a refresher sales course"],
  "A needs analysis checks whether the gap is a skill problem at all. Training cannot fix a cause outside the employees' control."),
 ("SMART goals are specific, measurable, achievable, relevant and:",
  "Time-bound", ["Team-based", "Trackable", "Tested"],

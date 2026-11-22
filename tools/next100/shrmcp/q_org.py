@@ -12,7 +12,7 @@ Q = [
  "HR business partner", ["Benefits specialist", "Payroll analyst", "Recruiter"],
  "HR business partners consult with unit leaders and draw on specialists and shared services to deliver."),
 ("HR at a 200-person firm spends most of its time fixing payroll errors. Leaders want HR on strategy. Best option?",
- "Outsource payroll processing", ["Hire more payroll clerks", "Stop payroll audits", "Move payroll to line managers"],
+ "Outsource payroll processing", ["Hire more payroll clerks", "Add a payroll supervisor", "Retrain HR on payroll rules"],
  "Outsourcing a routine transactional function frees HR time for strategic work. Stopping audits would let errors grow."),
 ("The number of HR staff per 100 employees measures:",
  "HR-to-employee ratio", ["Cost per hire", "Span of control", "Revenue per employee"],

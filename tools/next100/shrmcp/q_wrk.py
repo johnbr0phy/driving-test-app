@@ -42,7 +42,7 @@ Q = [
  "Triple bottom line", ["Balanced scorecard", "Shared value model", "Profit and loss"],
  "The triple bottom line adds social and environmental results to financial ones."),
 ("Employees want paid time to volunteer, and leaders want it tied to CSR strategy. Best design?",
- "Paid days for aligned causes", ["Unpaid volunteering only", "Cash donations instead of time", "Mandatory weekend service"],
+ "Paid days for aligned causes", ["Unpaid days for any cause", "Matched cash donations only", "Paid days for any cause"],
  "Paid volunteer time for causes linked to the CSR strategy meets both goals. Mandatory service undercuts the voluntary spirit."),
 ("Earning profit by solving a social problem is called:",
  "Shared value", ["Philanthropy", "Greenwashing", "Compliance"],

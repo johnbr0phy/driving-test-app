@@ -26,7 +26,7 @@ Q = [
  "Meet jointly to explore needs", ["Rule for the more senior lead", "Let their teams vote on it", "Tell them to settle it alone"],
  "Bringing both leads together to surface their interests often finds a schedule both can use. Ruling for seniority ignores the merits."),
 ("An HR specialist needs IT's help on a project but has no contacts there. Best first step?",
- "Learn the IT lead's priorities", ["Ask her director to assign IT staff", "Send a formal request to the CIO", "Log the request in the IT queue"],
+ "Learn the IT lead's priorities", ["Send the IT lead a project charter", "Ask the CIO to name a contact", "Log a ticket in the IT queue"],
  "Relationship building starts by understanding what the other group needs, which makes later requests easier. Going over the lead's head or through a queue first skips that step."),
 ("Two employees snipe over who gets a window desk. Work is unaffected, and the team moves offices next week. Best response?",
  "Let the move settle it", ["Start formal mediation", "Issue written warnings", "Assign desks by seniority"],

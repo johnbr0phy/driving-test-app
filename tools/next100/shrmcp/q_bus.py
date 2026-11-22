@@ -98,7 +98,7 @@ Q = [
  "Compare data before and after", ["Accept the manager's claim as is", "Remove the scheduling tool", "Survey customers about it"],
  "Evidence-based decisions start by testing the claim against data, while checking for other causes such as seasonal demand."),
 ("An exit survey has 6 responses from 200 leavers. Leaders want to act on it. What should HR advise?",
- "Treat results as tentative", ["Act on every single comment", "Discard all exit data", "Apply them company-wide"],
+ "Treat results as tentative", ["Present them as trends", "Weight them by tenure", "Benchmark them externally"],
  "Six responses are too few to represent 200 leavers. HR can look for patterns but should confirm them with more data."),
 ("Using past data to estimate which employees are likely to quit is:",
  "Predictive analytics", ["Descriptive statistics", "Benchmarking", "Trend reporting"],

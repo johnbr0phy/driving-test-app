@@ -62,3 +62,16 @@ outline points to them, and general exercise science otherwise.
 - No item on exam logistics, fees, CEC renewal or credential validity.
 - No exact equation-based VO2 or body-fat formula beyond 220 minus age and Karvonen.
 - No brand-name products or specific supplement doses.
+
+## Blind review, 2026-11-22
+- ACE-SCR-009: stem changed to a client planning to start "in a few months" so Contemplation is
+  right; Precontemplation is no intention to act within the next six months (transtheoretical
+  model stage definitions as ACE uses them on acefitness.org, read 2026-11-22). Explanation fixed.
+- ACE-DES-013: distractors cut to five patterns each so the count in the stem no longer gives the key
+  (ACE IFT five movement patterns, acefitness.org, read 2026-11-22).
+- ACE-DES-010 to 013 and ACE-PRO-001: provider name dropped from the stems; content unchanged.
+- Implausible distractors replaced with plausible wrong answers in ACE-RSK-007, 010, 011, 012, 016,
+  019, 020, ACE-INS-024, 026, ACE-PRG-017, ACE-ADH-022, 027 and ACE-PRO-010; keys unchanged.
+- Options-only pass surface cues: wrong options rewritten in ACE-ADH-023, ACE-PRG-020, ACE-PRG-023,
+  ACE-PRO-003, ACE-RSK-017 and ACE-SCR-013 so the key no longer stands out by form; keys unchanged
+  (RSK-017 key reworded to "No exercise today; refer").

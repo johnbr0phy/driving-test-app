@@ -84,6 +84,6 @@ Q = [
  "CT angiography", ["Plain skull x-ray", "Carotid Doppler", "Chest CT"],
  "The stroke algorithm says consider EVT: perform CTA, and CT perfusion as indicated."),
 ("Which scale is part of the neurological exam in suspected stroke?",
- "NIH Stroke Scale", ["TIMI risk score", "APGAR score", "Mallampati score"],
+ "NIHSS", ["GRACE", "APGAR", "Mallampati"],
  "The hospital exam includes the NIH Stroke Scale or the Canadian Neurological Scale."),
 ]

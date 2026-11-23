@@ -1358,6 +1358,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       basedOn: "the SRA SQE1 Assessment Specification (applicable from 1 September 2026, updated April 2026), the SRA SQE Assessment Regulations and the SRA's September 2026 SQE update, checked November 2026",
       source: { name: "SRA: SQE1 Assessment Specification", url: "https://sqe.sra.org.uk/docs/default-source/pdfs/sqe1-assessment-specification-(from-1-september-2026).pdf?sfvrsn=9a3f672d_2" },
     },
+  grol: {
+    answer:
+      "The FCC General Radiotelephone Operator License (GROL, license class PG) is the commercial license needed to adjust, maintain or internally repair FCC-licensed radiotelephone transmitters in the aviation, maritime and international fixed public services. You earn it by passing two written elements with a Commercial Operator License Examination Manager (COLEM): Element 1, basic radio law and operating practice, 24 questions with 18 correct to pass; and Element 3, general radiotelephone electronics, 100 questions with 75 correct to pass. Questions come from FCC pools approved in June 2009. You then file FCC Form 605 in ULS with your Proof of Passing Certificates, and the license is issued for your lifetime.",
+    rows: [
+      { label: "Element 1", value: "24 questions, 18 correct to pass (radio law and operating practice)" },
+      { label: "Element 3", value: "100 questions, 75 correct to pass (general radiotelephone)" },
+      { label: "Question pools", value: "FCC Elements 1 and 3, approved June 25, 2009" },
+      { label: "Given by", value: "Commercial Operator License Examination Managers (COLEMs)" },
+      { label: "License term", value: "Holder's lifetime" },
+      { label: "Apply with", value: "FCC Form 605 in ULS and your Proof of Passing Certificates" },
+    ],
+    basedOn: "the FCC commercial radio operator license pages, 47 CFR 13.201 and 13.203, and FCC Public Notice DA 09-1417, checked November 2026",
+    source: { name: "FCC: Types of commercial radio operator licenses", url: "https://www.fcc.gov/types-licenses" },
+  },
   ukdrone: {
       answer:
         "In the UK, anyone flying a drone or model aircraft of 100g or more needs a Flyer ID from the Civil Aviation Authority (CAA), and the person responsible for one of 250g or more, or 100g or more with a camera, needs an Operator ID. To get a Flyer ID you pass the CAA's free online theory test: 40 multiple-choice questions with a pass mark of 30, open book with the Drone and Model Aircraft Code, based on the rules in force from 1 January 2026. A Flyer ID lasts five years and lets you fly in the Over People (A1) and Far from People (A3) subcategories. Flying a UK2 class drone near people in the Near People (A2) subcategory also needs the A2 Certificate of Competency, taken with a CAA-recognised assessment entity after self-practical training: a theory exam of at least 30 multiple-choice questions on meteorology, UAS flight performance and ground risk mitigations, passed at 75%.",

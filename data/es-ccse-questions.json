@@ -32,14 +32,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-INS-003",
     "category": "esccseInstituciones",
-    "question": "Según el manual oficial, ¿de qué es símbolo la Corona?",
+    "question": "Según el artículo 56 de la Constitución, ¿de qué es símbolo el rey?",
     "optionA": "Del poder judicial",
     "optionB": "De la Unión Europea",
-    "optionC": "De la unidad de España",
+    "optionC": "De la unidad y permanencia del Estado",
     "optionD": "De la fe católica",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "La Corona es el símbolo de la unidad de España. El rey es el jefe del Estado y modera el funcionamiento de las instituciones."
+    "explanation": "El artículo 56 dice que el rey es el jefe del Estado, símbolo de su unidad y permanencia, y que arbitra y modera el funcionamiento regular de las instituciones."
   },
   {
     "type": "ESCCSE",
@@ -1026,14 +1026,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-ADM-026",
     "category": "esccseAdministracion",
-    "question": "¿Qué cuerpo tramita los permisos de residencia y trabajo de los extranjeros?",
-    "optionA": "Los ayuntamientos",
-    "optionB": "La Policía Nacional",
-    "optionC": "Las oficinas de empleo",
-    "optionD": "Los consulados de España",
+    "question": "En un ayuntamiento, ¿quién elige normalmente al alcalde?",
+    "optionA": "El delegado del Gobierno",
+    "optionB": "Los concejales",
+    "optionC": "El presidente autonómico",
+    "optionD": "La diputación provincial",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La Policía Nacional expide el DNI y el pasaporte y se ocupa de extranjería: documentos, autorizaciones y permisos de residencia y trabajo."
+    "explanation": "Los vecinos eligen a los concejales y, en la sesión en que se constituye el ayuntamiento, los concejales eligen al alcalde. Si nadie tiene mayoría absoluta, es alcalde el cabeza de la lista más votada."
   },
   {
     "type": "ESCCSE",
@@ -1142,7 +1142,7 @@
     "optionA": "La libertad de cátedra",
     "optionB": "La libertad sindical",
     "optionC": "La libertad de empresa",
-    "optionD": "El derecho de petición",
+    "optionD": "El derecho de asilo",
     "correctAnswer": "B",
     "correctIndex": 1,
     "explanation": "El artículo 28 reconoce el derecho a sindicarse libremente y el derecho de huelga de los trabajadores para defender sus intereses."
@@ -1180,14 +1180,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-DER-005",
     "category": "esccseDerechos",
-    "question": "¿Qué garantiza el artículo 16 sobre las creencias de cada persona?",
-    "optionA": "No tener que declararlas",
-    "optionB": "Tener que practicarlas",
-    "optionC": "Tener que inscribirlas",
-    "optionD": "Ocultarlas en el trabajo",
+    "question": "¿Qué límite pone el artículo 16 a las manifestaciones de la libertad religiosa?",
+    "optionA": "El orden público protegido por la ley",
+    "optionB": "La religión de la mayoría",
+    "optionC": "La opinión del Gobierno",
+    "optionD": "El permiso del ayuntamiento",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "El artículo 16 garantiza la libertad ideológica y religiosa y dice que nadie puede ser obligado a declarar su ideología, religión o creencias."
+    "explanation": "El artículo 16 garantiza la libertad ideológica, religiosa y de culto sin más limitación, en sus manifestaciones, que la necesaria para mantener el orden público protegido por la ley."
   },
   {
     "type": "ESCCSE",
@@ -1208,14 +1208,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-DER-007",
     "category": "esccseDerechos",
-    "question": "¿Qué derecho protege el artículo 18 respecto a las cartas y llamadas?",
-    "optionA": "La libertad de empresa",
-    "optionB": "El derecho de reunión",
-    "optionC": "El secreto de comunicaciones",
-    "optionD": "La libertad de cátedra",
+    "question": "¿De qué forma se ejerce el derecho de petición del artículo 29?",
+    "optionA": "Solo de palabra ante un juez",
+    "optionB": "Mediante una huelga",
+    "optionC": "Por escrito",
+    "optionD": "Con una manifestación",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El artículo 18 garantiza el secreto de las comunicaciones postales, telegráficas y telefónicas, salvo resolución judicial."
+    "explanation": "El artículo 29 reconoce a todos los españoles el derecho de petición individual y colectiva, por escrito, en la forma y con los efectos que determine la ley."
   },
   {
     "type": "ESCCSE",
@@ -1390,14 +1390,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-DER-020",
     "category": "esccseDerechos",
-    "question": "¿Qué recoge el artículo 41 de la Constitución?",
-    "optionA": "La obligación de tener seguro privado",
-    "optionB": "Una pensión solo para funcionarios",
-    "optionC": "Un servicio militar obligatorio",
-    "optionD": "Una Seguridad Social pública",
+    "question": "Según el artículo 50, ¿qué deben garantizar los poderes públicos a las personas mayores?",
+    "optionA": "Una vivienda gratuita",
+    "optionB": "Un empleo en la Administración",
+    "optionC": "Transporte privado gratuito",
+    "optionD": "Pensiones adecuadas y actualizadas",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Los poderes públicos mantienen un régimen público de Seguridad Social que garantiza asistencia en situaciones de necesidad, especialmente de desempleo."
+    "explanation": "El artículo 50 dice que los poderes públicos garantizarán, mediante pensiones adecuadas y periódicamente actualizadas, la suficiencia económica de los ciudadanos durante la tercera edad."
   },
   {
     "type": "ESCCSE",
@@ -1824,14 +1824,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-CUL-011",
     "category": "esccseCultura",
-    "question": "¿Qué puesto ocupa España en número de bienes Patrimonio de la Humanidad?",
-    "optionA": "El primero del mundo",
-    "optionB": "El quinto del mundo",
-    "optionC": "El tercero del mundo",
-    "optionD": "El décimo del mundo",
+    "question": "¿Qué organismo de las Naciones Unidas declara los bienes Patrimonio de la Humanidad?",
+    "optionA": "La OMS",
+    "optionB": "La FAO",
+    "optionC": "La UNESCO",
+    "optionD": "UNICEF",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Con 49 bienes reconocidos por la UNESCO, España es el tercer país con más bienes, tras Italia y China."
+    "explanation": "La UNESCO, la organización de la ONU para la educación, la ciencia y la cultura, inscribe los bienes en la Lista del Patrimonio Mundial. España tiene muchos, como la Alhambra o la Catedral de Burgos."
   },
   {
     "type": "ESCCSE",
@@ -2034,14 +2034,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-VID-002",
     "category": "esccseVidaDiaria",
-    "question": "¿Desde qué edad es obligatorio el DNI para los españoles?",
-    "optionA": "Desde los 12 años",
-    "optionB": "Desde los 14 años",
-    "optionC": "Desde los 16 años",
-    "optionD": "Desde los 18 años",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "El documento nacional de identidad es obligatorio a partir de los 14 años."
+    "question": "¿Cuánto tiempo es válido el DNI de una persona de entre 30 y 70 años?",
+    "optionA": "2 años",
+    "optionB": "5 años",
+    "optionC": "10 años",
+    "optionD": "15 años",
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "El DNI vale 5 años hasta los 30, 10 años entre los 30 y los 70 y es permanente a partir de los 70."
   },
   {
     "type": "ESCCSE",
@@ -2062,14 +2062,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-VID-004",
     "category": "esccseVidaDiaria",
-    "question": "¿Para qué viajes necesita un español el pasaporte?",
-    "optionA": "Dentro de su comunidad",
-    "optionB": "A cualquier país de la UE",
-    "optionC": "A cualquier país con avión",
-    "optionD": "Fuera de la UE y Schengen",
+    "question": "¿Qué ministerio expide el certificado de antecedentes penales?",
+    "optionA": "El Ministerio del Interior",
+    "optionB": "El Ministerio de Hacienda",
+    "optionC": "El Ministerio de Trabajo",
+    "optionD": "El Ministerio de Justicia",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Para viajar a países de la UE o del espacio Schengen basta el DNI; el pasaporte es necesario para los demás países."
+    "explanation": "El certificado de antecedentes penales lo expide el Registro Central de Penados, que depende del Ministerio de Justicia. Se puede pedir en línea o en persona."
   },
   {
     "type": "ESCCSE",
@@ -2258,14 +2258,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-VID-018",
     "category": "esccseVidaDiaria",
-    "question": "¿Qué entrega normalmente el inquilino al firmar un contrato de alquiler?",
-    "optionA": "El certificado de empadronamiento",
-    "optionB": "Una fianza de una mensualidad",
-    "optionC": "Un año de alquiler por adelantado",
-    "optionD": "Una copia de las llaves",
+    "question": "¿Qué fianza obliga la ley a entregar al firmar un alquiler de vivienda?",
+    "optionA": "Tres mensualidades de renta",
+    "optionB": "Una mensualidad de renta",
+    "optionC": "Un año de renta",
+    "optionD": "Ninguna",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El inquilino entrega una fianza, normalmente de una mensualidad, que se deposita en un organismo autonómico y se devuelve al terminar si no hay daños."
+    "explanation": "La Ley de Arrendamientos Urbanos fija una fianza obligatoria en metálico de una mensualidad de renta en el alquiler de vivienda. Se devuelve al terminar el contrato si no hay daños ni deudas."
   },
   {
     "type": "ESCCSE",
@@ -2286,14 +2286,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-VID-020",
     "category": "esccseVidaDiaria",
-    "question": "¿Qué seguro es obligatorio para todos los perros?",
-    "optionA": "El de vida del dueño",
-    "optionB": "El de salud veterinaria",
-    "optionC": "El de robo del animal",
-    "optionD": "El de responsabilidad civil",
+    "question": "En un edificio de pisos, ¿quién paga los gastos generales de la comunidad de propietarios?",
+    "optionA": "Solo el presidente",
+    "optionB": "El ayuntamiento",
+    "optionC": "Solo los vecinos del bajo",
+    "optionD": "Cada propietario, según su cuota",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Además del microchip y las vacunas, todos los perros deben tener un seguro de responsabilidad civil por daños a terceros."
+    "explanation": "Según la Ley de Propiedad Horizontal, cada propietario contribuye a los gastos generales del edificio según la cuota de participación de su piso o lo que se haya acordado."
   },
   {
     "type": "ESCCSE",
@@ -2398,14 +2398,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-VID-028",
     "category": "esccseVidaDiaria",
-    "question": "¿En cuántos idiomas atiende el 016, el teléfono para víctimas de violencia de género?",
-    "optionA": "En 2 idiomas",
-    "optionB": "En 5 idiomas",
-    "optionC": "En 17 idiomas",
-    "optionD": "En 53 idiomas",
+    "question": "¿Aparece en la factura del teléfono una llamada al 016, el número para víctimas de violencia de género?",
+    "optionA": "Sí, con el número completo",
+    "optionB": "Solo si dura más de cinco minutos",
+    "optionC": "Solo en los teléfonos fijos",
+    "optionD": "No, no deja rastro en la factura",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El 016 es gratuito, atiende las 24 horas, no deja rastro en la factura y ofrece atención en 53 idiomas."
+    "explanation": "El 016 es gratuito y no deja rastro en la factura. La llamada sí puede quedar en el historial del teléfono, por eso se recomienda borrarla."
   },
   {
     "type": "ESCCSE",
@@ -2433,7 +2433,7 @@
     "optionD": "2 años",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La normativa de comercio fija una garantía de 3 años para los productos nuevos."
+    "explanation": "La ley de defensa de los consumidores fija una garantía legal de 3 años para los productos nuevos desde su entrega."
   },
   {
     "type": "ESCCSE",
@@ -2650,14 +2650,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-SOC-014",
     "category": "esccseSociedad",
-    "question": "Fuera de las ciudades, ¿qué límite general tiene una carretera convencional?",
-    "optionA": "80 km/h",
-    "optionB": "90 km/h",
-    "optionC": "100 km/h",
-    "optionD": "110 km/h",
+    "question": "¿Entre qué dos ciudades circuló en 1992 la primera línea del AVE?",
+    "optionA": "Madrid y Barcelona",
+    "optionB": "Madrid y Sevilla",
+    "optionC": "Madrid y Valencia",
+    "optionD": "Barcelona y Valencia",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El límite es de 120 km/h en autopista y autovía, 90 km/h en carretera convencional y 20, 30 o 50 km/h en ciudad."
+    "explanation": "La primera línea de Alta Velocidad Española (AVE) unió Madrid y Sevilla en 1992, el año de la Exposición Universal de Sevilla."
   },
   {
     "type": "ESCCSE",

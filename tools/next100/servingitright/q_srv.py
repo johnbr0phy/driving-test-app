@@ -37,7 +37,7 @@ Q = [
  "Tell the manager and coworkers", ["Say nothing to others", "Tell only the guest's friends", "Note it at the end of the week"],
  "Telling the manager and other staff makes the refusal stick, so the guest cannot simply order from another server or the bar."),
 ('A friend of a cut-off guest orders a drink, then slides it over. Staff should:',
- 'Decline that order', ['Allow it; the friend paid', 'Charge the friend double', 'Serve it at the bar instead'],
+ 'Not serve that drink', ['Allow it; the friend paid', 'Charge the friend double', 'Serve it at the bar instead'],
  'Section 61 bars serving a person showing signs of intoxication and s. 75 bars anyone from giving them liquor. Serving through a friend still breaks both rules.'),
 ("Which practice helps keep guests from becoming intoxicated?",
  "Offering food with drinks", ["Pre-ordering last-call rounds", "Doubles at single prices", "Pouring heavier at closing"],

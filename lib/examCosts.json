@@ -268,6 +268,16 @@
     "value": "Another version of the test after 24 hours, same DOJ Certified Instructor",
     "url": "https://oag.ca.gov/firearms/fscfaqs"
    }
+  },
+  "servingitright": {
+   "fee": {
+    "value": "Course free; exam CA$40 plus tax, which includes three attempts",
+    "url": "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs"
+   },
+   "retake": {
+    "value": "After a third failed attempt, three more attempts cost CA$40",
+    "url": "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs"
+   }
   }
  },
  "series66": {

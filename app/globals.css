@@ -5840,6 +5840,20 @@
     --brand-gradient-to: 120 50% 95%;
   }
 
+  /* BC Serving It Right theme: muted wine */
+  [data-theme="servingitright"] {
+    --brand: 8 30% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 8 30% 95%;
+    --brand-hover: 8 30% 40%;
+    --brand-dark: 8 30% 30%;
+    --brand-darker: 8 30% 20%;
+    --brand-muted: 8 20% 70%;
+    --brand-border: 8 20% 80%;
+    --brand-border-light: 8 20% 89%;
+    --brand-gradient-to: 350 25% 95%;
+  }
+
   [data-theme="proserve"] {
     --brand: 126 55% 18%;
     --brand-foreground: 0 0% 100%;
@@ -12464,6 +12478,18 @@
     --brand-muted: 105 25% 45%;
     --brand-dark: 105 75% 65%;
     --brand-darker: 105 70% 78%;
+  }
+
+  .dark [data-theme="servingitright"] {
+    --brand: 8 30% 50%;
+    --brand-hover: 8 30% 42%;
+    --brand-light: 8 30% 13%;
+    --brand-gradient-to: 350 25% 11%;
+    --brand-border-light: 8 20% 24%;
+    --brand-border: 8 20% 34%;
+    --brand-muted: 8 20% 45%;
+    --brand-dark: 8 30% 65%;
+    --brand-darker: 8 30% 78%;
   }
 
   .dark [data-theme="proserve"] {

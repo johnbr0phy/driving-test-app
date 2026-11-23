@@ -280,6 +280,7 @@ const BORROWED_SETS: Record<string, string> = {
   // aPHR borrows the PHR human resources tiger.
   aphr: "phr",
   proserve: "alcohol",
+  servingitright: "alcohol",
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.

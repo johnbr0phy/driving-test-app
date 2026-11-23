@@ -11,7 +11,7 @@ def rate(boxes): return 1500 / boxes
 def pm(x): return f"{x:g} per minute"
 # Every computed key, recomputed here independently of the q_*.py files (stem fragment -> key).
 CHECKS = {
-    "R waves 15 small boxes apart": pm(rate(15)),
+    "R waves 50 small boxes apart": pm(rate(50)),
     "R waves 6 large boxes apart": pm(300 / 6),
     "R-R interval of a regular rhythm is 0.48 s": pm(60 / 0.48),
     "holds 11 QRS complexes": pm(11 * 10),
@@ -19,7 +19,7 @@ CHECKS = {
     "QRS spans 2 small boxes": f"{2 * 0.04:.2f} s",
     "contains 16 QRS complexes": pm(16 * 10),
     "Flutter waves occur at 280 per minute": pm(280 / 2),
-    "Flutter waves are 6 small boxes apart": pm(rate(6)),
+    "0.24 s separates one flutter wave": pm(60 / 0.24),
     "Flutter at 240 per minute conducts 3:1": pm(240 / 3),
     "atrial rate is 90, and every other P": pm(90 / 2),
     "PR interval spans 7 small boxes": f"{7 * 0.04:.2f} s",
@@ -27,7 +27,8 @@ CHECKS = {
     "holds 17 QRS complexes": pm(17 * 10),
     "7 small boxes apart. What is the rate": f"About {round(rate(7))} per minute",
     "spikes are 20 small boxes apart": pm(rate(20)),
-    "spikes are 5 large boxes apart": pm(300 / 5),
+    "shows 8 spikes, each followed": pm(8 * 10),
+    "Sinus P waves at 96 meet 3:1": pm(96 / 3),
     "A QRS spans 3 small boxes": f"{3 * 0.04:.2f} s, wide QRS",
     "standardization mark on a monitor strip is 20 mm": "20 mm/mV, double gain",
     "large box?": f"{5 * 0.04:.2f} s",

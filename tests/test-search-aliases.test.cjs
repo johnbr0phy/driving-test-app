@@ -11,6 +11,8 @@ const CASES = [
   ["313a", "CA", "carsrefrig"],
   ["refrigeration mechanic exam", "CA", "carsrefrig"],
   ["master electrician", "US", "masterelec"],
+  ["nsca cpt", "US", "nscacpt"],
+  ["nsca personal trainer", "US", "nscacpt"],
   ["master electrician exam", "US", "masterelec"],
   ["masters electrical license", "US", "masterelec"],
   ["icc master electrician", "US", "masterelec"],

@@ -207,6 +207,7 @@ import "./series66";
 import "./series6";
 import "./series24";
 import "./acecpt";
+import "./nscacpt";
 import "./aswb";
 import "./arrt";
 import "./arrtct";

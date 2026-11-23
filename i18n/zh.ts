@@ -1111,6 +1111,18 @@ export const zh: TranslationKeys = {
     s6Variable: "Variable Contracts & 529 Plans",
     s6Disclosure: "Disclosures, Records & Transfers",
     s6Trading: "Orders, Settlement & Complaints",
+    // nscacpt
+    nscaIntake: "Initial Interview & Health Appraisal",
+    nscaEval: "Performance Evaluation",
+    nscaWellness: "Basic Wellness Review",
+    nscaDesign: "Program Design",
+    nscaSpecial: "Special Populations",
+    nscaCoaching: "Exercise Instruction & Coaching",
+    nscaResistance: "Resistance Exercise Technique",
+    nscaFlexCardio: "Flexibility, Plyometrics & Cardio Technique",
+    nscaAdapt: "Training Adaptations",
+    nscaSafety: "Safety & Emergency Response",
+    nscaLegal: "Professional, Legal & Ethical Issues",
     // acecpt
     aceScreening: "Health Screening & Readiness to Change",
     aceAssessment: "Posture, Movement & Fitness Assessments",

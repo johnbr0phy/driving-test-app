@@ -46,14 +46,14 @@
     "state": "ALL",
     "questionId": "NSCA-INT-004",
     "category": "nscaIntake",
-    "question": "Which form tells the client what the program involves and its possible risks?",
-    "optionA": "Lifestyle questionnaire",
-    "optionB": "Informed consent",
-    "optionC": "Physician release",
-    "optionD": "Session log",
+    "question": "When should a client sign the informed consent for fitness testing?",
+    "optionA": "After the first test",
+    "optionB": "Before any testing begins",
+    "optionC": "Only if an injury occurs",
+    "optionD": "At the end of the first month",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Informed consent explains procedures, risks and benefits and records that the client agreed. A physician release comes from the doctor, not the client."
+    "explanation": "Consent is given before the procedures it covers, once the client has had the chance to read it and ask questions."
   },
   {
     "type": "NSCACPT",

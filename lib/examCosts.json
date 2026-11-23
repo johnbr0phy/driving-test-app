@@ -298,6 +298,16 @@
     "value": "After a third failed attempt, three more attempts cost CA$40",
     "url": "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs"
    }
+  },
+  "nscacpt": {
+   "fee": {
+    "value": "$300 for NSCA members, $435 for non-members",
+    "url": "https://www.nsca.com/globalassets/certification/certification-pdfs/nsca-certification-handbook.pdf"
+   },
+   "retake": {
+    "value": "30 days after the last attempt; after 3 attempts in a row, wait 1 year",
+    "url": "https://www.nsca.com/globalassets/certification/certification-pdfs/nsca-certification-handbook.pdf"
+   }
   }
  },
  "series66": {

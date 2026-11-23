@@ -1451,6 +1451,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The Firearms Act 2015 (SA) and Firearms Regulations 2017 on legislation.sa.gov.au, SAPOL Firearms Branch licence pages and TAFE SA's firearm safety training course pages, checked November 2026",
     source: { name: "SAPOL: Apply for a firearms licence", url: "https://www.police.sa.gov.au/services-and-events/firearms-and-weapons/firearm-licenses/apply-for-a-license" },
+  },
   aufatas: {
     answer:
       "In Tasmania, the Commissioner of Police cannot grant a firearms licence unless the applicant has satisfactorily completed an approved firearms safety course (Firearms Act 1996, s 29). The Commissioner has approved TasTAFE to run these courses, which determine the competency of licence applicants. You lodge a licence application at Service Tasmania first, and Firearms Services then gives written approval to enrol in the course for the category approved. Tasmania Police publishes no question count or pass mark for the course. An applicant must be at least 18, fit and proper and have a genuine reason, and a licence can be granted only after 28 days from lodging.",

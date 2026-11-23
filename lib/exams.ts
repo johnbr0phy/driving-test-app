@@ -9440,17 +9440,6 @@ const aufasa: ExamConfig = {
   examLabel: "firearms safety training",
   fullName: "South Australia Firearms Safety Training for a First Firearms Licence",
   questionIdPrefix: "AUFASA-",
-const aufatas: ExamConfig = {
-  id: "aufatas",
-  stateCode: "AUFATAS",
-  idBase: 51400,
-  slug: "/tas-firearms-licence",
-  landingPath: "/tasmania-firearms-safety-test-practice-test",
-  name: "Tasmania Firearms Safety Practice Test",
-  shortName: "Tas Firearms Safety",
-  examLabel: "firearms safety course test",
-  fullName: "Tasmanian Firearms Safety Training Course for a Firearms Licence",
-  questionIdPrefix: "AUFATAS-",
   icon: "target",
   testCount: 4,
   questionsPerTest: 50,
@@ -9509,6 +9498,24 @@ const aufatas: ExamConfig = {
     ],
     sourceLine: "Based on the Firearms Act 2015 (SA), the Firearms Regulations 2017 and its storage and transport code, SAPOL Firearms Branch guidance and the National Firearms Safety Code. Original questions. Not affiliated with South Australia Police or TAFE SA.",
     analyticsKey: "aufasa",
+  },
+};
+
+const aufatas: ExamConfig = {
+  id: "aufatas",
+  stateCode: "AUFATAS",
+  idBase: 51400,
+  slug: "/tas-firearms-licence",
+  landingPath: "/tasmania-firearms-safety-test-practice-test",
+  name: "Tasmania Firearms Safety Practice Test",
+  shortName: "Tas Firearms Safety",
+  examLabel: "firearms safety course test",
+  fullName: "Tasmanian Firearms Safety Training Course for a Firearms Licence",
+  questionIdPrefix: "AUFATAS-",
+  icon: "target",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
   // Tasmanian firearms safety training course, run by TasTAFE with the approval of the
   // Commissioner of Police, which every first-time licence applicant must pass under the
   // Firearms Act 1996 (Tas) s 29(1)(d). Tasmania Police publishes no question count, weights or

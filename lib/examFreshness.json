@@ -747,6 +747,14 @@
       "what": "CompTIA expects to launch the next Server+ exam (SK0-006) in summer 2027, after a beta that runs November 12, 2026 to February 4, 2027. SK0-005 has no announced retirement date yet.",
       "action": "When SK0-006 launches, read its final objectives, re-weight the domains, add items for new objectives, update the landing, examFacts, scoreNote and sources.md, rebuild; retire SK0-005 wording once CompTIA sets its retirement date.",
       "source": "https://www.comptia.org/en/blog/help-shape-the-next-comptia-server-certification/"
+    },
+    {
+      "exam": "cloudplus",
+      "date": "2027-09-24",
+      "kind": "sunset",
+      "what": "CompTIA estimates Cloud+ CV0-004 (V4, launched September 24, 2024) retires about three years after launch (estimated 2027). Draft CV0-005 V5 objectives (draft version 1.2) are published with new domains: Architecture and Design 16%, Life-cycle Management 17%, Operations 21%, Security 20%, Governance, Risk, and Compliance 12%, Artificial Intelligence 14%; count, length and pass mark TBD.",
+      "action": "When CV0-005 launches, re-weight PLAN to the final V5 domains, add GRC and AI items, update the config, landing, examFacts and sources.md, rebuild.",
+      "source": "https://www.comptia.org/en-us/certifications/cloud/"
     }
   ]
 }

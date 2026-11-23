@@ -93,6 +93,7 @@ import '@/lib/v2/banks/techplus';
 import '@/lib/v2/banks/serverplus';
 import '@/lib/v2/banks/safe';
 import '@/lib/v2/banks/dataplus';
+import '@/lib/v2/banks/cloudplus';
 import '@/lib/v2/banks/ccst';
 import '@/lib/v2/banks/isc2cc';
 import '@/lib/v2/banks/sc900';

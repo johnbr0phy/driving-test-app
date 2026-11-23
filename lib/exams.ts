@@ -4413,6 +4413,16 @@ const ukfood3: ExamConfig = {
     testsHeading: "Mock tests · 50 questions, 66% to pass",
     heroSubs: [
       "Four training sets, four mock tests. Start with Food Law & HACCP.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Every set mastered and every test passed.",
+    ],
+    sourceLine: "Based on the Level 3 Food Safety for Catering unit, FSA guidance and UK food hygiene law. Original questions; pass marks vary by awarding body.",
+    analyticsKey: "ukfood3",
+  },
+};
+
 const ukhs2: ExamConfig = {
   id: "ukhs2",
   stateCode: "UKHS2",
@@ -4472,8 +4482,6 @@ const ukhs2: ExamConfig = {
       "Review your mistakes, then retake any test you haven't passed.",
       "All done. Every set mastered and every test passed.",
     ],
-    sourceLine: "Based on the Level 3 Food Safety for Catering unit, FSA guidance and UK food hygiene law. Original questions; pass marks vary by awarding body.",
-    analyticsKey: "ukfood3",
     sourceLine: "Based on the Level 2 Health and Safety in the Workplace unit, HSE guidance and Great Britain law. Original questions; pass marks vary by awarding body.",
     analyticsKey: "ukhs2",
   },

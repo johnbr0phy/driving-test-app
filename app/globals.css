@@ -1544,6 +1544,8 @@
     --brand-border: 308 35% 78%;
     --brand-border-light: 308 35% 88%;
     --brand-gradient-to: 320 45% 95%;
+  }
+
   [data-theme="ukhs2"] {
     --brand: 241 40% 46%;
     --brand-foreground: 0 0% 100%;
@@ -9047,6 +9049,8 @@
     --brand-muted: 308 30% 45%;
     --brand-dark: 308 80% 65%;
     --brand-darker: 308 75% 78%;
+  }
+
   .dark [data-theme="ukhs2"] {
     --brand: 241 40% 50%;
     --brand-hover: 241 40% 42%;

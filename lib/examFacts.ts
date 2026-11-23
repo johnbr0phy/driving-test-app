@@ -3404,6 +3404,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "the Highfield Level 3 Award in Food Safety for Catering specification, UK food hygiene law and Food Standards Agency guidance, checked November 2026",
     source: { name: "Highfield: Level 3 Award in Food Safety for Catering specification", url: "https://centres.highfieldqualifications.com/Assets/DownloadArea/QualificationDownloads/[25082021_1546]_L3_FSC_(RQF)_Qualification_specification_v1.2_Aug21.pdf" },
+  },
   ukhs2: {
     answer:
       "The Level 2 Award in Health and Safety in the Workplace is a short regulated UK qualification for anyone at work, covering employer and employee duties, risk assessment, common workplace hazards and their controls, and what to do after accidents and emergencies. It is offered by several awarding bodies, each with its own multiple-choice exam; RSPH's, for example, is 25 questions in 40 minutes, passed by scoring at least 16 (64 percent). The law requires suitable training, not this certificate itself.",

@@ -1395,6 +1395,15 @@ export const es: TranslationKeys = {
     fasaStorage: "Storage & Transport Code",
     fasaHandling: "Safe Handling & Police Powers",
     fasaField: "Clubs, Collectors & the Field",
+    // aufatas
+    ftasCategories: "Licence & Firearm Categories",
+    ftasLicence: "Licences, Genuine Reasons & Eligibility",
+    ftasConduct: "Licence Conditions & Offences",
+    ftasPermits: "Permits, Registration & Sales",
+    ftasUse: "Minors, Public Places & Use",
+    ftasStorage: "Storage & Conveying",
+    ftasCode: "Safety Code & Responsible Ownership",
+    ftasHandling: "Firearm Types, Terms & Ammunition",
     // cpatcp
     cpatcpIndividual: "Individual Compliance & Planning",
     cpatcpPassive: "Passive Activity & At-Risk Limits",

@@ -5856,6 +5856,19 @@
     --brand-gradient-to: 64 50% 95%;
   }
 
+  [data-theme="aufatas"] {
+    --brand: 142 10% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 142 30% 95%;
+    --brand-hover: 142 10% 25%;
+    --brand-dark: 142 10% 22%;
+    --brand-darker: 142 10% 14%;
+    --brand-muted: 142 10% 70%;
+    --brand-border: 142 15% 78%;
+    --brand-border-light: 142 15% 88%;
+    --brand-gradient-to: 157 30% 95%;
+  }
+
   [data-theme="fortinse"] {
     --brand: 355 35% 20%;
     --brand-foreground: 0 0% 100%;
@@ -13028,6 +13041,18 @@
     --brand-muted: 49 25% 45%;
     --brand-dark: 49 55% 65%;
     --brand-darker: 49 50% 78%;
+  }
+
+  .dark [data-theme="aufatas"] {
+    --brand: 142 10% 43.6%;
+    --brand-hover: 142 10% 35.6%;
+    --brand-light: 142 30% 13%;
+    --brand-gradient-to: 157 30% 11%;
+    --brand-border-light: 142 15% 24%;
+    --brand-border: 142 15% 34%;
+    --brand-muted: 142 10% 45%;
+    --brand-dark: 142 10% 65%;
+    --brand-darker: 142 10% 78%;
   }
 
   .dark [data-theme="fortinse"] {

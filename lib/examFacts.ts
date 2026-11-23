@@ -1451,6 +1451,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "The Firearms Act 2015 (SA) and Firearms Regulations 2017 on legislation.sa.gov.au, SAPOL Firearms Branch licence pages and TAFE SA's firearm safety training course pages, checked November 2026",
     source: { name: "SAPOL: Apply for a firearms licence", url: "https://www.police.sa.gov.au/services-and-events/firearms-and-weapons/firearm-licenses/apply-for-a-license" },
+  aufatas: {
+    answer:
+      "In Tasmania, the Commissioner of Police cannot grant a firearms licence unless the applicant has satisfactorily completed an approved firearms safety course (Firearms Act 1996, s 29). The Commissioner has approved TasTAFE to run these courses, which determine the competency of licence applicants. You lodge a licence application at Service Tasmania first, and Firearms Services then gives written approval to enrol in the course for the category approved. Tasmania Police publishes no question count or pass mark for the course. An applicant must be at least 18, fit and proper and have a genuine reason, and a licence can be granted only after 28 days from lodging.",
+    rows: [
+      { label: "Course", value: "Approved firearms safety course run by TasTAFE, one for each licence category" },
+      { label: "Enrolment", value: "Only with written approval from Tasmania Police Firearms Services" },
+      { label: "Licence age", value: "18; minor's permits from 12 to 17" },
+      { label: "Waiting period", value: "At least 28 days after lodging the licence application" },
+      { label: "Licence term", value: "3 or 5 years for Categories A, B and H; 12 months for Category D" },
+      { label: "Permit to acquire", value: "Needed for each firearm, valid 90 days" },
+      { label: "Licensing body", value: "Tasmania Police Firearms Services" },
+    ],
+    basedOn: "The Firearms Act 1996 (Tas) authorised version of 2 December 2024, the Firearms Regulations 2026 and Tasmania Police Firearms Services pages and information sheets, checked November 2026",
+    source: { name: "Tasmania Police Firearms Services: firearms safety training course enrolment", url: "https://fas.police.tas.gov.au/firearms-safety-training-course-enrolment/" },
   },
   aufirearmswa: {
     answer:

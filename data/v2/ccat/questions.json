@@ -53,18 +53,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Opposites",
-    "stem": "Which word is most nearly opposite in meaning to GENEROUS?",
+    "stem": "Which word is most nearly opposite in meaning to HASTY?",
     "options": [
-      "Lavish",
-      "Wealthy",
-      "Modest",
-      "Stingy",
-      "Kindly"
+      "Eager",
+      "Deliberate",
+      "Careless",
+      "Sudden",
+      "Rushed"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Generous means giving freely; stingy means unwilling to give. Lavish means very generous, close to the same meaning."
+    "explanation": "Hasty means done too quickly, without enough thought; deliberate means done slowly and on purpose. Rushed means nearly the same as hasty."
   },
   {
     "id": "CCAT-T1-004",
@@ -522,18 +522,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Pattern series",
-    "stem": "A dot moves around the corners of a square: top left, top right, bottom right, bottom left. Where is it next?",
+    "stem": "A dot moves counterclockwise around the corners of a square: top right, top left, bottom left, bottom right. Where is it next?",
     "options": [
+      "Center",
       "Bottom right",
       "Bottom left",
-      "Center",
       "Top left",
       "Top right"
     ],
     "correct": [
-      3
+      4
     ],
-    "explanation": "The dot goes clockwise one corner at a time, so after bottom left it returns to top left."
+    "explanation": "The dot goes counterclockwise one corner at a time, so after bottom right it returns to top right."
   },
   {
     "id": "CCAT-T1-025",
@@ -587,19 +587,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Percents",
-    "stem": "A team of 60 people grows by 15%. How many people are on the team now?",
+    "stem": "A team of 140 people grows by 15%. How many people are on the team now?",
     "options": [
-      "69",
-      "70",
-      "72",
-      "75",
-      "84"
+      "155",
+      "161",
+      "165",
+      "168",
+      "175"
     ],
     "correct": [
-      0
+      1
     ],
     "lockedOrder": true,
-    "explanation": "15% of 60 is 9, so the team has 60 + 9 = 69."
+    "explanation": "15% of 140 is 21, so the team has 140 + 21 = 161. Adding 15 people gives 155, which is not 15%."
   },
   {
     "id": "CCAT-T1-028",
@@ -946,18 +946,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Mixed series",
-    "stem": "What comes next? Y2, W5, U8, S11, ?",
+    "stem": "What comes next? B6, F11, J16, N21, ?",
     "options": [
-      "R14",
-      "Q14",
-      "Q15",
-      "Q13",
-      "P14"
+      "R27",
+      "S26",
+      "R26",
+      "R25",
+      "Q26"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "The letters step back two places (Y, W, U, S, Q) and the numbers go up by 3 (2, 5, 8, 11, 14), so Q14."
+    "explanation": "The letters step forward four places (B, F, J, N, R) and the numbers go up by 5 (6, 11, 16, 21, 26), so R26."
   },
   {
     "id": "CCAT-T1-044",
@@ -2112,13 +2112,13 @@
       "Brief",
       "Lucky",
       "Clear",
-      "Bright",
+      "Loud",
       "Calm"
     ],
     "correct": [
       2
     ],
-    "explanation": "Lucid writing or thinking is clear and easy to follow. Bright is about light, a different meaning."
+    "explanation": "Lucid writing or thinking is clear and easy to follow. Lucky only sounds similar."
   },
   {
     "id": "CCAT-T2-046",
@@ -2353,19 +2353,19 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Whole numbers",
-    "stem": "What is 125 x 8?",
+    "stem": "What is 375 x 8?",
     "options": [
-      "800",
-      "850",
-      "900",
-      "960",
-      "1,000"
+      "2,400",
+      "2,600",
+      "2,800",
+      "2,960",
+      "3,000"
     ],
     "correct": [
       4
     ],
     "lockedOrder": true,
-    "explanation": "125 x 8 = 1,000, since 125 is one eighth of 1,000."
+    "explanation": "300 x 8 = 2,400 and 75 x 8 = 600, so 375 x 8 = 3,000."
   },
   {
     "id": "CCAT-D-007",
@@ -3738,7 +3738,7 @@
     "skill": "Pattern series",
     "stem": "A series of figures: a circle; a circle and a square; a circle, a square and a triangle. Which figure is most likely next?",
     "options": [
-      "Four shapes, the first three kept",
+      "The same three plus one new shape",
       "One new shape alone",
       "A square and a triangle",
       "The same three shapes",
@@ -4048,7 +4048,7 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Percents",
-    "stem": "A price falls from 80 to 68. By what percent did it fall?",
+    "stem": "A price falls from 120 to 102. By what percent did it fall?",
     "options": [
       "12%",
       "15%",
@@ -4060,7 +4060,7 @@
       1
     ],
     "lockedOrder": true,
-    "explanation": "The fall is 12, and 12 ÷ 80 = 0.15, so 15%. Dividing 12 by the new price 68 gives about 17.6%."
+    "explanation": "The fall is 18, and 18 ÷ 120 = 0.15, so 15%. Dividing 18 by the new price 102 gives about 17.6%, and 102 is 85% of the old price."
   },
   {
     "id": "CCAT-D-083",

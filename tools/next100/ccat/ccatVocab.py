@@ -4,9 +4,9 @@ SYN = "Which word is closest in meaning to {}?"
 OPP = "Which word is most nearly opposite in meaning to {}?"
 ITEMS = [
     # ---------- Practice Test 1 ----------
-    S(1, 1, "Opposites", OPP.format("GENEROUS"),
-      ["Stingy", "Kindly", "Wealthy", "Modest", "Lavish"],
-      "Generous means giving freely; stingy means unwilling to give. Lavish means very generous, close to the same meaning."),
+    S(1, 1, "Opposites", OPP.format("HASTY"),
+      ["Deliberate", "Rushed", "Careless", "Eager", "Sudden"],
+      "Hasty means done too quickly, without enough thought; deliberate means done slowly and on purpose. Rushed means nearly the same as hasty."),
     S(1, 1, "Closest meaning", SYN.format("ROUTINE"),
       ["Habitual", "Sudden", "Occasional", "Planned", "Lengthy"],
       "A routine task is one done regularly as a habit. Occasional means now and then, nearly the opposite."),
@@ -39,8 +39,8 @@ ITEMS = [
       ["Diminish", "Explain", "Broadcast", "Echo", "Distort"],
       "Amplify means to make larger or louder; diminish means to make smaller. Distort changes a thing without shrinking it."),
     S(2, 3, "Closest meaning", SYN.format("LUCID"),
-      ["Clear", "Lucky", "Bright", "Brief", "Calm"],
-      "Lucid writing or thinking is clear and easy to follow. Bright is about light, a different meaning."),
+      ["Clear", "Lucky", "Loud", "Brief", "Calm"],
+      "Lucid writing or thinking is clear and easy to follow. Lucky only sounds similar."),
     # ---------- Drill only ----------
     S(0, 1, "Opposites", OPP.format("VANISH"),
       ["Appear", "Escape", "Fade", "Hide", "Travel"],

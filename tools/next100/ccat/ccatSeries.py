@@ -16,9 +16,9 @@ ITEMS = [
     S(1, 3, "Alternating series", NX.format("40, 35, 38, 33, 36, 31"),
       ["34", "26", "29", "33", "36"],
       "The steps alternate -5 and +3: 31 + 3 = 34."),
-    S(1, 3, "Mixed series", WHAT.format("Y2, W5, U8, S11"),
-      ["Q14", "R14", "Q13", "P14", "Q15"],
-      "The letters step back two places (Y, W, U, S, Q) and the numbers go up by 3 (2, 5, 8, 11, 14), so Q14."),
+    S(1, 3, "Mixed series", WHAT.format("B6, F11, J16, N21"),
+      ["R26", "Q26", "R25", "S26", "R27"],
+      "The letters step forward four places (B, F, J, N, R) and the numbers go up by 5 (6, 11, 16, 21, 26), so R26."),
     # ---------- Practice Test 2 ----------
     S(2, 1, "Number series", NX.format("90, 82, 74, 66"),
       ["58", "56", "60", "62", "50"],

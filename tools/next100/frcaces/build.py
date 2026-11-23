@@ -64,6 +64,11 @@ for m, n in ORDER:
                      "category": mod.CAT, "question": q, "optionA": opts[0], "optionB": opts[1],
                      "optionC": opts[2], "optionD": opts[3], "correctAnswer": "ABCD"[k],
                      "correctIndex": k, "explanation": expl})
+NBSP = chr(0xA0)
+for r in rows:  # French typography: a non-breaking space before ? ! : ; so they never wrap alone.
+    for k in ("question", "optionA", "optionB", "optionC", "optionD", "explanation"):
+        for p in "?!:;":
+            r[k] = r[k].replace(" " + p, NBSP + p)
 with open(out, "w", encoding="utf-8") as f:
     json.dump(rows, f, ensure_ascii=False, indent=2)
     f.write("\n")

@@ -2454,14 +2454,14 @@
     "state": "ALL",
     "questionId": "CRAT-PAC-016",
     "category": "cratPaced",
-    "question": "A sinus rhythm shows QRS complexes of 0.11 s with no typical bundle branch shape. How is it described?",
+    "question": "A sinus rhythm shows QRS complexes of 0.12 s with no typical bundle branch shape. How is it described?",
     "optionA": "Nonspecific conduction delay",
     "optionB": "Complete right bundle branch block",
-    "optionC": "Complete left BBB",
-    "optionD": "Normal QRS width",
+    "optionC": "Normal QRS width",
+    "optionD": "Complete left BBB",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A QRS over 0.10 s that does not meet either bundle branch pattern is a nonspecific intraventricular conduction delay."
+    "explanation": "A QRS over 0.11 s that does not meet either bundle branch pattern is a nonspecific intraventricular conduction delay."
   },
   {
     "type": "CRAT",

@@ -1,0 +1,43 @@
+CAT = "cratFindings"; SEG = "FND"
+# E. Processing Cardiac Test Findings (E1 triage results, E2 compile findings, E3 follow-up).
+# Sources: CCI CRAT task list and knowledge list (documentation, communication, emergency
+# response); ISHNE-HRS 2017 (reading centers, alarms, review). Notification times and limits
+# are set by each facility.
+Q = [
+("Three findings arrive at once: sinus tachycardia at 104, ventricular fibrillation and rare PVCs. Which is handled first?",
+ "Ventricular fibrillation", ["Sinus tachycardia at 104", "Rare PVCs", "Whichever came first"],
+ "Life-threatening rhythms are triaged ahead of everything else; VF means no cardiac output."),
+("Which finding is usually the lowest priority for notification?",
+ "Occasional unifocal PVCs", ["Sustained VT", "Complete heart block", "New asystole"],
+ "Rare unifocal PVCs in a stable patient are typically documented; sustained VT, complete block and asystole need immediate action."),
+("A telemetry alarm shows asystole, but a second lead shows normal QRS complexes. What is the next step?",
+ "Treat it as artifact, then confirm", ["Call a code at once", "Silence all alarms", "Delete the strip"],
+ "Normal complexes in another lead mean the flat line is a lead problem; the technician fixes the lead and confirms the patient is well."),
+("When phoning a critical rhythm to a nurse, what helps prevent a misheard result?",
+ "Ask for a read-back", ["Speak faster", "Use only abbreviations", "Skip the patient name"],
+ "Having the receiver repeat the finding back confirms it was heard correctly; it is a standard safety step for critical results."),
+("What belongs in a strip interpretation for the chart?",
+ "Rhythm, rate, PR, QRS, QT", ["Only the rhythm name", "Only the heart rate", "Only the time saved"],
+ "A full interpretation names the rhythm and gives rate and intervals, so changes can be compared over time."),
+("A Holter report is being compiled. Which item links symptoms to findings?",
+ "Diary entries matched to strips", ["Electrode lot numbers", "Paper speed used", "Battery serial number"],
+ "The report pairs each diary symptom with the rhythm recorded at that time, which is what the ordering provider needs."),
+("After notifying the nurse about new atrial fibrillation, what does the technician record?",
+ "Who was told and when", ["Only the rhythm name", "The nurse's home phone", "Nothing more"],
+ "Documentation shows the time, the person notified and the finding, which closes the loop on the report."),
+("A remote monitoring patient's device has sent no data for two days. What follow-up is needed?",
+ "Contact the patient per policy", ["Close the case", "Wait for the next visit", "Mark the study normal"],
+ "Missing transmissions are followed up so the patient can fix the device; a study cannot be called normal without data."),
+("A patient's rhythm changes from sinus rhythm with first-degree block to Mobitz II. How is the change handled?",
+ "Report it as a change promptly", ["Note it next week", "Ignore it if rate is normal", "Wait for a third strip"],
+ "A worsening conduction defect is a change in condition and is reported promptly with saved strips."),
+("Which abbreviation habit protects accuracy in a monitoring report?",
+ "Use only approved abbreviations", ["Invent short forms", "Use symbols only", "Leave out units"],
+ "Approved abbreviations and units prevent misreading; invented short forms cause errors."),
+("A strip is mounted for the chart. What labeling is needed?",
+ "Patient name, date and time", ["Lead color only", "Technician's initials only", "Monitor brand"],
+ "Every saved strip carries the patient's identifiers and the date and time so it can be matched to events."),
+("Monitoring shows a short run of 4 PVCs in a patient with stable vital signs. How is it handled under most protocols?",
+ "Save, document and report", ["Call a code team", "Delete as artifact", "Turn off the alarm"],
+ "A brief run of NSVT is saved and reported to the nurse per protocol; it is not a code situation in a stable patient."),
+]

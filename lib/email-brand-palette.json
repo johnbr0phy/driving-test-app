@@ -173,6 +173,7 @@
   "dat": ["#664700","#fbf6e9","#2c1f02","#eae4d7"],
   "lsat": ["#502b36","#f8f2f4","#29191e","#eadce0"],
   "wonderlic": ["#427e07","#f2fbe9","#213c07","#e0ebd6"],
+  "ccat": ["#660066","#fbe9fb","#300330","#edd9ed"],
   "iimcat": ["#542e56","#fae9fb","#2b1b2d","#e9d1eb"],
   "netplus": ["#4e3d8f","#f2f1f9","#2e2749","#ddd9ec"],
   "linuxplus": ["#867350","#f8f6f2","#483d28","#e9e5dd"],

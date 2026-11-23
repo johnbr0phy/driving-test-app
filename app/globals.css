@@ -2441,6 +2441,20 @@
     --brand-gradient-to: 100 50% 95%;
   }
 
+  /* CCAT (Criteria Cognitive Aptitude Test) theme: deep magenta (v2 exam; matches lib/v2/exams/ccat.ts theme) */
+  [data-theme="ccat"] {
+    --brand: 300 100% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 300 70% 95%;
+    --brand-hover: 300 100% 17%;
+    --brand-dark: 300 100% 14%;
+    --brand-darker: 300 90% 10%;
+    --brand-muted: 300 30% 66%;
+    --brand-border: 300 35% 80%;
+    --brand-border-light: 300 35% 89%;
+    --brand-gradient-to: 310 50% 96%;
+  }
+
   /* CAT (IIM Common Admission Test) theme (v2 exam; matches lib/v2/exams/iimcat.ts theme): deep olive gold */
   [data-theme="iimcat"] {
     --brand: 296 30% 26%;
@@ -9291,6 +9305,18 @@
     --brand-muted: 90 30% 45%;
     --brand-dark: 90 90% 65%;
     --brand-darker: 90 80% 78%;
+  }
+
+  .dark [data-theme="ccat"] {
+    --brand: 300 100% 40.6%;
+    --brand-hover: 300 100% 32.6%;
+    --brand-light: 300 45% 13%;
+    --brand-gradient-to: 310 40% 11%;
+    --brand-border-light: 300 35% 24%;
+    --brand-border: 300 35% 34%;
+    --brand-muted: 300 30% 45%;
+    --brand-dark: 300 100% 65%;
+    --brand-darker: 300 90% 78%;
   }
   .dark [data-theme="iimcat"] {
     --brand: 296 30% 50%;

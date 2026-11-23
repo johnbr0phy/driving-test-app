@@ -72,6 +72,7 @@ const TEACHER_LED = new Set([
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen
   "deaevo", "de34a", "deheilpr",
+  "frcaces",
   // Portugal: TVDE driver initial courses and private security training providers
   "pttvde", "ptvigil",
   // Sweden: jägarexamen courses, SFI and samhällsorientering classes, högskoleprovet courses

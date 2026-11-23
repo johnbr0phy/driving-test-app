@@ -3080,6 +3080,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* France CACES R489 Forklift Theory Test theme */
+  [data-theme="frcaces"] {
+    --brand: 72 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 72 100% 96%;
+    --brand-hover: 72 100% 14%;
+    --brand-dark: 72 100% 10%;
+    --brand-darker: 72 100% 7%;
+    --brand-muted: 72 40% 70%;
+    --brand-border: 72 45% 80%;
+    --brand-border-light: 72 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Italian Driving Theory Test (Patente B) theme */
   [data-theme="itpatente"] {
     --brand: 128 80% 18%;
@@ -9719,6 +9733,17 @@
     --brand-muted: 234 40% 45%;
     --brand-dark: 234 100% 70%;
     --brand-darker: 234 100% 78%;
+  }
+  .dark [data-theme="frcaces"] {
+    --brand: 72 100% 24.8%;
+    --brand-hover: 72 100% 16.8%;
+    --brand-light: 72 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 72 35% 24%;
+    --brand-border: 72 40% 34%;
+    --brand-muted: 72 40% 45%;
+    --brand-dark: 72 100% 65%;
+    --brand-darker: 72 100% 78%;
   }
   .dark [data-theme="itpatente"] {
     --brand: 128 80% 29.6%;

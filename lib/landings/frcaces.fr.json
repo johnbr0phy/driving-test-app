@@ -1,0 +1,124 @@
+{
+  "metaTitle": "Test CACES R489 2026 - Entraînement gratuit au test théorique cariste",
+  "metaDescription": "Entraîne-toi gratuitement au test théorique du CACES R489 (chariots élévateurs, catégories 1A à 7) : 200 questions originales en français sur la stabilité, la plaque de charge, les risques, la circulation et les vérifications, chaque réponse expliquée. Quatre tests blancs de 50 questions.",
+  "keywords": "CACES R489, test CACES, test théorique CACES, CACES cariste, QCM CACES, CACES chariot élévateur, CACES 1A, CACES 1B, CACES 3, CACES 5, permis cariste, autorisation de conduite, plaque de charge, abaque de charges",
+  "breadcrumb": {
+    "home": "Accueil",
+    "allTests": "Tous les tests",
+    "current": "CACES R489"
+  },
+  "h1": "Test CACES R489 2026 : entraîne-toi pour le test théorique cariste",
+  "subtitle": "200 questions sur le référentiel R489 des chariots à conducteur porté. Quatre tests blancs de 50 questions. Gratuit pour commencer, sans inscription.",
+  "facts": {
+    "h2": "Le test théorique du CACES R489 en bref",
+    "answer": "Le CACES R489 est le certificat d'aptitude à la conduite en sécurité des chariots de manutention automoteurs à conducteur porté. Il est défini par une recommandation de la Cnam (Assurance Maladie) et délivré par un organisme testeur certifié, après une formation. Le test théorique est le même pour toutes les catégories, de 1A à 7 : 100 questions à 1 point, rédigées en français, qui peuvent être lues à voix haute. Il faut au moins 70 sur 100 et au moins la moyenne sur chacun des quatre thèmes. Le CACES est à repasser au moins tous les 5 ans, et il ne remplace pas l'autorisation de conduite délivrée par l'employeur.",
+    "tigertest": "Tigertest propose 200 questions originales en français sur les thèmes du test, et tu commences gratuitement, sans inscription. Nous écrivons les questions à partir de la recommandation R489 et des brochures de l'INRS ; elles ne sont pas tirées des grilles officielles des organismes testeurs. Ici, chaque question a quatre réponses et une seule est juste, et les plaques de charge, les pictogrammes et les panneaux sont décrits en mots.",
+    "rows": [
+      {
+        "label": "Questions",
+        "value": "100 questions à 1 point"
+      },
+      {
+        "label": "Pour réussir",
+        "value": "70/100 et la moyenne à chaque thème"
+      },
+      {
+        "label": "Thèmes",
+        "value": "Connaissances générales 15, technologie et stabilité 25, abaque 10, exploitation 50"
+      },
+      {
+        "label": "Catégories",
+        "value": "Le même test pour 1A, 1B, 2A, 2B, 3, 4, 5, 6 et 7"
+      },
+      {
+        "label": "Qui le délivre",
+        "value": "Un organisme testeur certifié (OTC)"
+      },
+      {
+        "label": "Renouvellement",
+        "value": "Au moins tous les 5 ans"
+      }
+    ],
+    "footnote": "D'après la recommandation R489 de la Cnam (adoptée en 2017, applicable depuis le 1er janvier 2020) et la page de l'INRS sur les catégories de CACES, vérifiées en novembre 2026. Tigertest n'est lié ni à la Cnam, ni à l'INRS, ni aux organismes testeurs. Vérifie les règles à jour sur",
+    "source": {
+      "name": "INRS : catégories de CACES",
+      "url": "https://www.inrs.fr/accueil/demarche/caces-certificat-aptitude-conduite-securite/categories-caces.html"
+    }
+  },
+  "howItWorks": {
+    "h2": "Comment ça marche",
+    "cards": [
+      {
+        "h3": "D'abord tu t'entraînes, ensuite tu te testes",
+        "p": "Quatre séries d'entraînement : réglementation et technologie ; stabilité et abaque de charges ; risques et circulation ; quais, produits et fin de poste. Tu vois tout de suite l'explication, et les questions ratées reviennent jusqu'à ce que tu les saches. Ensuite, tu passes les tests blancs."
+      },
+      {
+        "h3": "Des tests blancs aux thèmes du test",
+        "p": "Quatre tests de 50 questions, répartis comme les 100 points du test officiel : 8 de connaissances générales, 12 de technologie et stabilité, 5 sur l'abaque et 25 sur l'exploitation des chariots. Pour réussir ici, il te faut 35 bonnes réponses sur 50, soit 70 %."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Les thèmes du test théorique R489",
+    "p": "Le contenu du test est fixé par l'annexe 3 de la recommandation R489, qui reprend le référentiel de connaissances de l'annexe 2. Chaque test blanc suit la répartition des points en 50 questions ; le découpage en neuf thèmes est le nôtre.",
+    "items": [
+      "Rôles, formation et autorisation (5 questions sur 50)",
+      "Catégories de chariots et acteurs (3 sur 50)",
+      "Technologie et énergies (6 sur 50)",
+      "Stabilité et centre de gravité (6 sur 50)",
+      "Tableau et abaque de charges (5 sur 50)",
+      "Risques et prévention (8 sur 50)",
+      "Circulation et conduite (7 sur 50)",
+      "Chargement et gerbage (5 sur 50)",
+      "Produits dangereux et fin de poste (5 sur 50)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Comment réussir le test théorique",
+    "steps": [
+      {
+        "h3": "1. Connais le format",
+        "p": "100 questions, 70 points au minimum, et au moins la moyenne sur chacun des quatre thèmes. Un thème raté fait échouer même avec 70 au total : ne laisse aucun thème de côté."
+      },
+      {
+        "h3": "2. Sache lire une plaque de charge",
+        "p": "La capacité baisse quand le centre de gravité s'éloigne et quand la hauteur augmente. Si la distance de ta charge n'est pas sur la plaque, ne lis jamais la valeur d'une distance plus courte. L'abaque vaut 10 points sur 100."
+      },
+      {
+        "h3": "3. Retiens les règles de conduite",
+        "p": "Fourche à environ 15 cm du sol, mât incliné en arrière ; descente des pentes en charge en marche arrière ; trois longueurs entre deux chariots ; jamais de personne sur la fourche ; fourches au sol et clé retirée en fin de poste."
+      },
+      {
+        "h3": "4. Refais tes erreurs",
+        "p": "Tigertest garde en mémoire les questions que tu rates et te les repose. Passe les tests blancs quand les séries sont vertes, et refais-les jusqu'à dépasser 35 sur 50."
+      }
+    ]
+  },
+  "faqTitle": "Questions fréquentes sur le test théorique du CACES R489",
+  "faqs": [
+    {
+      "q": "Combien de questions compte le test théorique du CACES R489 ?",
+      "a": "Le test théorique compte 100 questions à 1 point, et il est le même pour toutes les catégories R489. Il faut au moins 70 sur 100 et au moins la moyenne sur chacun des quatre thèmes : connaissances générales, technologie et stabilité, tableau ou abaque de charges, et exploitation des chariots."
+    },
+    {
+      "q": "Le CACES suffit-il pour conduire un chariot ?",
+      "a": "Non. L'employeur doit aussi délivrer une autorisation de conduite, après avoir vérifié l'aptitude médicale du salarié, son CACES et sa connaissance du site et des consignes. Le CACES est à repasser au moins tous les 5 ans."
+    },
+    {
+      "q": "Ce sont les questions officielles du test ?",
+      "a": "Non. Toutes les questions ici sont écrites par nous à partir de la recommandation R489 et des brochures de l'INRS. Les organismes testeurs tirent leurs questions de grilles d'évaluation que nous n'utilisons pas : entraîne-toi aussi pendant ta formation CACES."
+    },
+    {
+      "q": "Qu'est-ce que Tigertest ne reproduit pas ?",
+      "a": "Les épreuves pratiques sur le chariot ne sont pas modélisées, ni la règle de la moyenne par thème. Ici, chaque question a quatre réponses et une seule est juste, et les plaques de charge et les pictogrammes sont décrits en mots."
+    },
+    {
+      "q": "Le test CACES de Tigertest est-il gratuit ?",
+      "a": "Tu commences gratuitement et sans inscription. Les deux premières séries d'entraînement et les tests blancs 1 et 2 sont gratuits ; les séries et tests blancs suivants font partie de Tigertest Premium (paiement unique, sans abonnement). Avec un compte gratuit, tu retrouves tes progrès sur tous tes appareils."
+    }
+  ],
+  "finalCta": {
+    "h2": "Prêt pour le test théorique du CACES ?",
+    "p": "Commence gratuitement, sans inscription. 200 questions en français sur tout le référentiel R489."
+  }
+}

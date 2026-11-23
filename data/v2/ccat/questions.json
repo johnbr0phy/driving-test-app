@@ -1,0 +1,4467 @@
+[
+  {
+    "id": "CCAT-T1-001",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rates",
+    "stem": "A courier drives 45 miles an hour. How many miles does she cover in 3 hours 20 minutes?",
+    "options": [
+      "120",
+      "135",
+      "144",
+      "148",
+      "150"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "3 hours 20 minutes is 3 1/3 hours, and 45 x 3 1/3 = 135 + 15 = 150."
+  },
+  {
+    "id": "CCAT-T1-002",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "A series of shapes: a triangle, a square, a pentagon, a hexagon. What comes next?",
+    "options": [
+      "Pentagon",
+      "Circle",
+      "Heptagon",
+      "Octagon",
+      "Triangle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each shape has one more side than the one before: 3, 4, 5, 6, so next has 7 sides, a heptagon."
+  },
+  {
+    "id": "CCAT-T1-003",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to GENEROUS?",
+    "options": [
+      "Lavish",
+      "Wealthy",
+      "Modest",
+      "Stingy",
+      "Kindly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Generous means giving freely; stingy means unwilling to give. Lavish means very generous, close to the same meaning."
+  },
+  {
+    "id": "CCAT-T1-004",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tool and user",
+    "stem": "SCALPEL is to SURGEON as TROWEL is to ____.",
+    "options": [
+      "Plumber",
+      "Tailor",
+      "Mason",
+      "Painter",
+      "Farmer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A surgeon works with a scalpel; a mason spreads mortar with a trowel. A farmer may dig, but the trowel is the mason's tool."
+  },
+  {
+    "id": "CCAT-T1-005",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The bridge was closed for repairs, so drivers had to take a ____ through the hills.",
+    "options": [
+      "detour",
+      "tunnel",
+      "ticket",
+      "shortcut",
+      "highway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A detour is a longer route taken because the usual one is closed. A shortcut would be quicker, which the closure rules out."
+  },
+  {
+    "id": "CCAT-T1-006",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Order of operations",
+    "stem": "What is 18 + 6 x 4?",
+    "options": [
+      "28",
+      "40",
+      "42",
+      "48",
+      "96"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply first: 6 x 4 = 24, then 18 + 24 = 42. Adding first gives 24 x 4 = 96."
+  },
+  {
+    "id": "CCAT-T1-007",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 6, 13, 20, 27, ?",
+    "options": [
+      "34",
+      "35",
+      "37",
+      "41",
+      "54"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is 7 more than the one before: 27 + 7 = 34."
+  },
+  {
+    "id": "CCAT-T1-008",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "All the vans in the fleet are white. Van 9 is in the fleet. Van 9 is white. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Van 9 belongs to a fleet in which every van is white, so it must be white."
+  },
+  {
+    "id": "CCAT-T1-009",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Money",
+    "stem": "Notebooks cost \\$2.40 each. How much do 15 notebooks cost?",
+    "options": [
+      "\\$24.00",
+      "\\$30.00",
+      "\\$32.40",
+      "\\$34.00",
+      "\\$36.00"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "2.40 x 10 = 24 and 2.40 x 5 = 12, so 15 notebooks cost \\$36.00."
+  },
+  {
+    "id": "CCAT-T1-010",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Which shape does not belong: square, rectangle, rhombus, trapezoid, circle?",
+    "options": [
+      "Rhombus",
+      "Circle",
+      "Square",
+      "Trapezoid",
+      "Rectangle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every other shape has four straight sides. A circle has no straight sides."
+  },
+  {
+    "id": "CCAT-T1-011",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to ROUTINE?",
+    "options": [
+      "Habitual",
+      "Tedious",
+      "Lengthy",
+      "Sudden",
+      "Planned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A routine task is one done regularly as a habit. Tedious describes how a routine can feel, not what the word means."
+  },
+  {
+    "id": "CCAT-T1-012",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Part and whole",
+    "stem": "PETAL is to FLOWER as FEATHER is to ____.",
+    "options": [
+      "Nest",
+      "Pillow",
+      "Flight",
+      "Beak",
+      "Bird"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "A petal is one of many parts that cover a flower; a feather is one of many that cover a bird. A pillow can be stuffed with feathers, but feathers grow on a bird."
+  },
+  {
+    "id": "CCAT-T1-013",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "Her notes were so ____ that the team could follow every step without asking a question.",
+    "options": [
+      "thorough",
+      "late",
+      "brief",
+      "secret",
+      "careless"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Notes that answer every question are thorough. Brief notes would leave gaps."
+  },
+  {
+    "id": "CCAT-T1-014",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "What is 15% of 260?",
+    "options": [
+      "13",
+      "26",
+      "35",
+      "36",
+      "39"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 260 is 26 and 5% is 13, so 15% is 26 + 13 = 39."
+  },
+  {
+    "id": "CCAT-T1-015",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 2, 5, 14, 41, ?",
+    "options": [
+      "68",
+      "82",
+      "120",
+      "122",
+      "123"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is 3 times the one before, minus 1: 41 x 3 - 1 = 122."
+  },
+  {
+    "id": "CCAT-T1-016",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Lena finished before Omar. Priya finished after Omar. Quinn finished before Lena. Who finished last?",
+    "options": [
+      "Cannot be told",
+      "Lena",
+      "Omar",
+      "Priya",
+      "Quinn"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The order is Quinn, Lena, Omar, Priya, so Priya finished last."
+  },
+  {
+    "id": "CCAT-T1-017",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "Four test scores average 82. Three of them are 78, 85 and 90. What is the fourth?",
+    "options": [
+      "75",
+      "77",
+      "80",
+      "82",
+      "84"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The four scores total 4 x 82 = 328. 78 + 85 + 90 = 253, so the fourth is 328 - 253 = 75."
+  },
+  {
+    "id": "CCAT-T1-018",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rotation",
+    "stem": "An arrow points straight up. It is turned 90 degrees clockwise three times. Where does it point?",
+    "options": [
+      "Left",
+      "Up",
+      "Down",
+      "Right",
+      "Down and left"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Three quarter turns clockwise is 270 degrees: up to right, right to down, down to left."
+  },
+  {
+    "id": "CCAT-T1-019",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to CONVERGE?",
+    "options": [
+      "Diverge",
+      "Merge",
+      "Revolve",
+      "Collide",
+      "Gather"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Converge means to come together at a point; diverge means to move apart. Merge and gather mean coming together."
+  },
+  {
+    "id": "CCAT-T1-020",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Degree",
+    "stem": "WARM is to SCORCHING as DAMP is to ____.",
+    "options": [
+      "Cool",
+      "Humid",
+      "Misty",
+      "Drenched",
+      "Dry"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Scorching is the extreme of warm; drenched is the extreme of damp. Humid is about as wet as damp, not more."
+  },
+  {
+    "id": "CCAT-T1-021",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The manager was ____ about the plan at first, but the strong test results won her over.",
+    "options": [
+      "informed",
+      "enthusiastic",
+      "skeptical",
+      "certain",
+      "generous"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Being won over means she began doubtful, so skeptical. Enthusiastic would leave nothing to win over."
+  },
+  {
+    "id": "CCAT-T1-022",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 3/4 of 2/9?",
+    "options": [
+      "1/6",
+      "1/3",
+      "5/13",
+      "1/2",
+      "2/3"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply the tops and the bottoms: (3 x 2)/(4 x 9) = 6/36 = 1/6."
+  },
+  {
+    "id": "CCAT-T1-023",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Proportions",
+    "stem": "A machine fills 140 bottles in 20 minutes. How many does it fill in 45 minutes?",
+    "options": [
+      "280",
+      "300",
+      "315",
+      "325",
+      "350"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "That is 7 bottles a minute, and 7 x 45 = 315."
+  },
+  {
+    "id": "CCAT-T1-024",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "A dot moves around the corners of a square: top left, top right, bottom right, bottom left. Where is it next?",
+    "options": [
+      "Bottom right",
+      "Bottom left",
+      "Center",
+      "Top left",
+      "Top right"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The dot goes clockwise one corner at a time, so after bottom left it returns to top left."
+  },
+  {
+    "id": "CCAT-T1-025",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What letter comes next? D, H, L, P, ?",
+    "options": [
+      "U",
+      "Q",
+      "S",
+      "R",
+      "T"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Each letter is four places after the one before: D, H, L, P, then T."
+  },
+  {
+    "id": "CCAT-T1-026",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "Some analysts work remotely. All analysts use the new dashboard. Some people who work remotely use the new dashboard. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The analysts who work remotely also use the dashboard, since every analyst does. So at least some remote workers use it."
+  },
+  {
+    "id": "CCAT-T1-027",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "A team of 60 people grows by 15%. How many people are on the team now?",
+    "options": [
+      "69",
+      "70",
+      "72",
+      "75",
+      "84"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "15% of 60 is 9, so the team has 60 + 9 = 69."
+  },
+  {
+    "id": "CCAT-T1-028",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reflection",
+    "stem": "In a 3 by 3 grid, a star sits in the top-left box. The grid is flipped left to right. Where is the star?",
+    "options": [
+      "Top left",
+      "Top right",
+      "Bottom left",
+      "Top middle",
+      "Bottom right"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Flipping left to right swaps the left and right columns and keeps the row, so the star moves to top right."
+  },
+  {
+    "id": "CCAT-T1-029",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to FEASIBLE?",
+    "options": [
+      "Obvious",
+      "Workable",
+      "Costly",
+      "Popular",
+      "Hopeful"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A feasible plan is one that can be done, so it is workable. A plan can be hopeful without being possible."
+  },
+  {
+    "id": "CCAT-T1-030",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cause and effect",
+    "stem": "VIRUS is to INFECTION as SPARK is to ____.",
+    "options": [
+      "Heat",
+      "Fire",
+      "Smoke",
+      "Match",
+      "Flash"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A virus causes an infection; a spark causes a fire. A match makes a spark, so it is the cause, not the effect."
+  },
+  {
+    "id": "CCAT-T1-031",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Two blanks",
+    "stem": "Although the job looked ____, it turned out to need hours of ____ work.",
+    "options": [
+      "boring ... easy",
+      "simple ... quick",
+      "urgent ... rushed",
+      "simple ... careful",
+      "difficult ... careful"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Although sets up a contrast: it looked simple but needed hours of careful work. Simple ... quick has no contrast."
+  },
+  {
+    "id": "CCAT-T1-032",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 0.6 x 0.45?",
+    "options": [
+      "0.027",
+      "0.24",
+      "0.27",
+      "1.05",
+      "2.7"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "6 x 45 = 270, and the factors have three decimal places in all, so 0.270 = 0.27."
+  },
+  {
+    "id": "CCAT-T1-033",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shared work",
+    "stem": "Ana can sort a mail bag in 30 minutes and Ben in 20. How many minutes do they take together?",
+    "options": [
+      "12",
+      "15",
+      "24",
+      "25",
+      "50"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Ana sorts 1/30 a minute and Ben 1/20. Together 2/60 + 3/60 = 5/60 = 1/12 a minute, so 12 minutes. 25 is the average of their times."
+  },
+  {
+    "id": "CCAT-T1-034",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "Figures in a series: 1 shaded square of 4, 2 shaded of 6, 3 shaded of 8, 4 shaded of 10. What is next?",
+    "options": [
+      "5 shaded of 14",
+      "5 shaded of 12",
+      "6 shaded of 12",
+      "5 shaded of 10",
+      "4 shaded of 12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The shaded count rises by 1 and the total by 2 each time, so the next has 5 shaded squares out of 12."
+  },
+  {
+    "id": "CCAT-T1-035",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternating series",
+    "stem": "What number comes next? 40, 35, 38, 33, 36, 31, ?",
+    "options": [
+      "26",
+      "29",
+      "33",
+      "34",
+      "36"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps alternate -5 and +3: 31 + 3 = 34."
+  },
+  {
+    "id": "CCAT-T1-036",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Must be true",
+    "stem": "Every invoice over \\$500 needs two signatures. Invoice 41 has only one signature. Which must be true?",
+    "options": [
+      "Invoice 41 is exactly \\$500",
+      "Invoice 41 is \\$500 or less",
+      "Invoice 41 is late",
+      "Invoice 41 was rejected",
+      "Invoice 41 is over \\$500"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If it were over \\$500 it would need two signatures, so it must be \\$500 or less. It could be exactly \\$500, but it need not be."
+  },
+  {
+    "id": "CCAT-T1-037",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to ABUNDANT?",
+    "options": [
+      "Sparse",
+      "Plentiful",
+      "Fragile",
+      "Hollow",
+      "Hidden"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Abundant means present in large amounts; sparse means thinly spread or few. Plentiful is a synonym."
+  },
+  {
+    "id": "CCAT-T1-038",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Function",
+    "stem": "ANCHOR is to SHIP as KICKSTAND is to ____.",
+    "options": [
+      "Pedal",
+      "Bicycle",
+      "Rider",
+      "Wheel",
+      "Garage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An anchor holds a ship in place; a kickstand holds a bicycle upright. The wheel is a part, not the thing held."
+  },
+  {
+    "id": "CCAT-T1-039",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The witness gave an ____ account, changing key details each time she was asked.",
+    "options": [
+      "inconsistent",
+      "accurate",
+      "emotional",
+      "honest",
+      "official"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Changing details each time makes the account inconsistent. Emotional describes tone, not changing facts."
+  },
+  {
+    "id": "CCAT-T1-040",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unknown value",
+    "stem": "If 7x - 9 = 47, what is x?",
+    "options": [
+      "5",
+      "5.4",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Add 9 to both sides: 7x = 56, so x = 8."
+  },
+  {
+    "id": "CCAT-T1-041",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ratios",
+    "stem": "Paint is mixed 2 parts blue to 5 parts white. How many liters of blue go in 21 liters of mix?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10.5",
+      "15"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 7 parts in all, so each part is 3 liters and blue is 2 x 3 = 6. 15 is the white."
+  },
+  {
+    "id": "CCAT-T1-042",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Solids",
+    "stem": "On a standard die, opposite faces add up to 7. The top face shows 2 and the front shows 3. What is on the bottom?",
+    "options": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The bottom is opposite the top. Opposite faces add to 7, so the bottom is 7 - 2 = 5. The 3 on the front does not matter."
+  },
+  {
+    "id": "CCAT-T1-043",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixed series",
+    "stem": "What comes next? Z1, X3, V5, T7, ?",
+    "options": [
+      "S9",
+      "R9",
+      "Q9",
+      "R11",
+      "R8"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The letters step back two places (Z, X, V, T, R) and the numbers go up by 2 (1, 3, 5, 7, 9), so R9."
+  },
+  {
+    "id": "CCAT-T1-044",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Five offices line a hall. Kai's is at the east end. Lu's is next to Kai's. Mo's is in the middle. Ned's is at the west end. Where is Ola's?",
+    "options": [
+      "At the east end",
+      "Between Mo's and Lu's",
+      "Between Ned's and Mo's",
+      "Next to Kai's",
+      "Between Lu's and Kai's"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "From west: Ned, ?, Mo, Lu, Kai. The only gap left is second from the west, between Ned's and Mo's."
+  },
+  {
+    "id": "CCAT-T1-045",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to CURTAIL?",
+    "options": [
+      "Conceal",
+      "Shorten",
+      "Repeat",
+      "Extend",
+      "Delay"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To curtail something is to cut it short or reduce it. Delay moves it later without cutting it."
+  },
+  {
+    "id": "CCAT-T1-046",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Group name",
+    "stem": "WOLF is to PACK as FISH is to ____.",
+    "options": [
+      "Flock",
+      "Pod",
+      "Herd",
+      "Swarm",
+      "School"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Wolves form a pack; fish form a school. A pod is a group of whales or dolphins."
+  },
+  {
+    "id": "CCAT-T1-047",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Two blanks",
+    "stem": "The new software was meant to ____ the process, but its many extra steps only ____ it.",
+    "options": [
+      "simplify ... complicated",
+      "speed ... quickened",
+      "explain ... clarified",
+      "replace ... improved",
+      "secure ... protected"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "But signals the opposite result: meant to simplify, it complicated the process. The other pairs describe success, not failure."
+  },
+  {
+    "id": "CCAT-T1-048",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "A number is 40% larger than 35. What is the number?",
+    "options": [
+      "14",
+      "21",
+      "45",
+      "47",
+      "49"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "40% of 35 is 14, and 35 + 14 = 49. 21 is 60% of 35."
+  },
+  {
+    "id": "CCAT-T1-049",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "A \\$50 item rises 20%, then falls 20%. What is the final price?",
+    "options": [
+      "\\$48",
+      "\\$50",
+      "\\$52",
+      "\\$54",
+      "\\$60"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Up 20%: \\$60. Down 20% of 60 is \\$12, giving \\$48. The second 20% is of a larger price, so it does not cancel the first."
+  },
+  {
+    "id": "CCAT-T1-050",
+    "section": "ccat",
+    "test": 1,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rotation",
+    "stem": "A letter L is drawn with its foot pointing right. It is turned 180 degrees. Which way does its foot point, and where is it?",
+    "options": [
+      "Left, at the bottom",
+      "Up, at the left",
+      "Right, at the bottom",
+      "Right, at the top",
+      "Left, at the top"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "A half turn flips both ways: the foot that was at the bottom pointing right ends up at the top pointing left."
+  },
+  {
+    "id": "CCAT-T2-001",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Money",
+    "stem": "A cab charges \\$3 to start plus \\$2.50 a mile. What does a 12-mile ride cost?",
+    "options": [
+      "\\$30",
+      "\\$31.50",
+      "\\$33",
+      "\\$36",
+      "\\$42"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "12 x 2.50 = 30, plus the \\$3 start, is \\$33."
+  },
+  {
+    "id": "CCAT-T2-002",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "A series: one circle, two circles, three circles, four circles. What comes next?",
+    "options": [
+      "Four circles",
+      "One circle",
+      "Five circles",
+      "Six circles",
+      "Five squares"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each figure adds one circle, so the next has five."
+  },
+  {
+    "id": "CCAT-T2-003",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to FRAGILE?",
+    "options": [
+      "Delicate",
+      "Brittle",
+      "Sturdy",
+      "Smooth",
+      "Heavy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Fragile means easily broken; sturdy means strong and hard to break. Brittle and delicate are near synonyms."
+  },
+  {
+    "id": "CCAT-T2-004",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "VICTORY is to DEFEAT as PROFIT is to ____.",
+    "options": [
+      "Price",
+      "Gain",
+      "Loss",
+      "Sale",
+      "Debt"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Defeat is the opposite of victory; loss is the opposite of profit. Debt is owed money, not the opposite of a profit."
+  },
+  {
+    "id": "CCAT-T2-005",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "After the long hike, the campers were too ____ to cook, so they ate cold sandwiches.",
+    "options": [
+      "weary",
+      "careful",
+      "hungry",
+      "cheerful",
+      "eager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Too tired to cook fits weary. Hungry people would want to cook, not skip it."
+  },
+  {
+    "id": "CCAT-T2-006",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Order of operations",
+    "stem": "What is 60 - 24 ÷ 3?",
+    "options": [
+      "8",
+      "12",
+      "52",
+      "54",
+      "56"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide first: 24 ÷ 3 = 8, then 60 - 8 = 52. Subtracting first gives 36 ÷ 3 = 12."
+  },
+  {
+    "id": "CCAT-T2-007",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 90, 82, 74, 66, ?",
+    "options": [
+      "50",
+      "56",
+      "58",
+      "60",
+      "62"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is 8 less than the one before: 66 - 8 = 58."
+  },
+  {
+    "id": "CCAT-T2-008",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A ruler is longer than a pen. The pen is longer than a clip. A stapler is longer than the ruler. Which is the shortest?",
+    "options": [
+      "Cannot be told",
+      "Clip",
+      "Stapler",
+      "Pen",
+      "Ruler"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The order from longest is stapler, ruler, pen, clip, so the clip is shortest."
+  },
+  {
+    "id": "CCAT-T2-009",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rates",
+    "stem": "A tap drips 6 milliliters a minute. How many milliliters does it drip in 4 hours?",
+    "options": [
+      "240",
+      "360",
+      "1,200",
+      "1,400",
+      "1,440"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "4 hours is 240 minutes, and 240 x 6 = 1,440."
+  },
+  {
+    "id": "CCAT-T2-010",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Which does not belong: cube, sphere, cylinder, cone, square?",
+    "options": [
+      "Cylinder",
+      "Square",
+      "Cone",
+      "Sphere",
+      "Cube"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A cube, sphere, cylinder and cone are solids with depth. A square is a flat shape."
+  },
+  {
+    "id": "CCAT-T2-011",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to VITAL?",
+    "options": [
+      "Urgent",
+      "Complex",
+      "Helpful",
+      "Essential",
+      "Lively"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vital means absolutely necessary, so essential. Lively is a different sense (full of life) that does not fit as closely."
+  },
+  {
+    "id": "CCAT-T2-012",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Place",
+    "stem": "ACTOR is to STAGE as BOXER is to ____.",
+    "options": [
+      "Arena",
+      "Glove",
+      "Ring",
+      "Bout",
+      "Gym"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An actor performs on a stage; a boxer fights in a ring. An arena holds the ring, and a gym is where a boxer trains."
+  },
+  {
+    "id": "CCAT-T2-013",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The museum keeps the old maps in a dark room to ____ them from sunlight.",
+    "options": [
+      "shield",
+      "borrow",
+      "expose",
+      "remove",
+      "display"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dark room protects, or shields, the maps from light. Expose is the opposite."
+  },
+  {
+    "id": "CCAT-T2-014",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 4.2 + 0.85 + 1.3?",
+    "options": [
+      "5.35",
+      "6.25",
+      "6.35",
+      "6.45",
+      "7.35"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "4.2 + 0.85 = 5.05, and 5.05 + 1.3 = 6.35. Line up the decimal points before adding."
+  },
+  {
+    "id": "CCAT-T2-015",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 1, 3, 6, 10, 15, ?",
+    "options": [
+      "18",
+      "20",
+      "21",
+      "25",
+      "30"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps grow by one each time: +2, +3, +4, +5, so next is 15 + 6 = 21."
+  },
+  {
+    "id": "CCAT-T2-016",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "No trainees can approve refunds. Sara can approve refunds. Sara is a trainee. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Sara can approve refunds and no trainee can, so Sara cannot be a trainee."
+  },
+  {
+    "id": "CCAT-T2-017",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "Five bills average \\$64. Four of them are \\$50, \\$70, \\$58 and \\$66. What is the fifth?",
+    "options": [
+      "\\$61",
+      "\\$64",
+      "\\$68",
+      "\\$72",
+      "\\$76"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "The five total 5 x 64 = \\$320. 50 + 70 + 58 + 66 = 244, so the fifth is 320 - 244 = \\$76."
+  },
+  {
+    "id": "CCAT-T2-018",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rotation",
+    "stem": "A clock's minute hand points at 12. It turns 210 degrees clockwise. Which number does it point at?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is 30 degrees apart, and 210 ÷ 30 = 7 steps from 12, so it points at 7."
+  },
+  {
+    "id": "CCAT-T2-019",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to TRANSPARENT?",
+    "options": [
+      "Glossy",
+      "Opaque",
+      "Tinted",
+      "Visible",
+      "Shallow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Transparent means you can see through it; opaque means light does not pass through. Tinted glass can still be see-through."
+  },
+  {
+    "id": "CCAT-T2-020",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Function",
+    "stem": "LUNGS is to BREATHING as KIDNEYS is to ____.",
+    "options": [
+      "Filtering",
+      "Thinking",
+      "Digesting",
+      "Pumping",
+      "Sweating"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lungs carry out breathing; kidneys filter the blood. Pumping is the heart's job."
+  },
+  {
+    "id": "CCAT-T2-021",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "His apology seemed ____, since he laughed while saying it.",
+    "options": [
+      "insincere",
+      "polite",
+      "formal",
+      "heartfelt",
+      "lengthy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Laughing while apologizing suggests he did not mean it, so insincere. Heartfelt is the opposite."
+  },
+  {
+    "id": "CCAT-T2-022",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 5/6 - 1/4?",
+    "options": [
+      "1/4",
+      "4/10",
+      "1/2",
+      "7/12",
+      "2/3"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Use twelfths: 10/12 - 3/12 = 7/12."
+  },
+  {
+    "id": "CCAT-T2-023",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Proportions",
+    "stem": "A recipe for 6 people uses 450 grams of rice. How much rice serves 10 people?",
+    "options": [
+      "600 g",
+      "700 g",
+      "750 g",
+      "800 g",
+      "900 g"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "That is 75 grams a person, and 75 x 10 = 750 grams."
+  },
+  {
+    "id": "CCAT-T2-024",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "An arrow turns in a series: up, right, down, left, up. What comes next?",
+    "options": [
+      "Up",
+      "Down and right",
+      "Down",
+      "Left",
+      "Right"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The arrow makes a quarter turn clockwise each time, so after up comes right."
+  },
+  {
+    "id": "CCAT-T2-025",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What letter comes next? A, C, F, H, K, ?",
+    "options": [
+      "N",
+      "P",
+      "O",
+      "L",
+      "M"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The steps alternate +2 and +3: A +2 = C, +3 = F, +2 = H, +3 = K, +2 = M."
+  },
+  {
+    "id": "CCAT-T2-026",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "All the printers on floor 2 are color. Some color printers jam often. Some printers on floor 2 jam often. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The color printers that jam could all be on other floors, so the statements do not settle it."
+  },
+  {
+    "id": "CCAT-T2-027",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "A salesperson earns 4% commission and made \\$360 in commission. What were her sales?",
+    "options": [
+      "\\$360",
+      "\\$900",
+      "\\$1,440",
+      "\\$3,600",
+      "\\$9,000"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Sales x 0.04 = 360, so sales = 360 ÷ 0.04 = \\$9,000."
+  },
+  {
+    "id": "CCAT-T2-028",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reflection",
+    "stem": "In a 3 by 3 grid, a dot is in the middle box of the top row. The grid is flipped top to bottom. Where is the dot?",
+    "options": [
+      "Top middle",
+      "Center",
+      "Bottom right",
+      "Bottom middle",
+      "Bottom left"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Flipping top to bottom swaps the top and bottom rows and keeps the column, so the dot moves to the bottom middle."
+  },
+  {
+    "id": "CCAT-T2-029",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to CONCUR?",
+    "options": [
+      "Confirm",
+      "Agree",
+      "Argue",
+      "Gather",
+      "Compete"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To concur is to agree with someone or something. Confirm means to show something is true, which is different."
+  },
+  {
+    "id": "CCAT-T2-030",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Young and adult",
+    "stem": "TADPOLE is to FROG as CATERPILLAR is to ____.",
+    "options": [
+      "Butterfly",
+      "Cocoon",
+      "Beetle",
+      "Worm",
+      "Larva"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A tadpole grows into a frog; a caterpillar grows into a butterfly. The cocoon is a stage in between, not the adult."
+  },
+  {
+    "id": "CCAT-T2-031",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Two blanks",
+    "stem": "The speaker was usually ____, but tonight she was so ____ that the talk ran an hour over.",
+    "options": [
+      "loud ... quiet",
+      "concise ... long-winded",
+      "brief ... quick",
+      "funny ... cheerful",
+      "nervous ... tense"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Usually ... but tonight sets a contrast, and running over fits long-winded against concise. Brief ... quick are not opposed."
+  },
+  {
+    "id": "CCAT-T2-032",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "What percent of 80 is 28?",
+    "options": [
+      "28%",
+      "30%",
+      "35%",
+      "40%",
+      "52%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "28 ÷ 80 = 0.35, which is 35%."
+  },
+  {
+    "id": "CCAT-T2-033",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shared work",
+    "stem": "Six workers clear a site in 10 days. How many days would 15 workers take at the same rate?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The job is 6 x 10 = 60 worker-days, and 60 ÷ 15 = 4 days. More workers means fewer days, so 25 is wrong."
+  },
+  {
+    "id": "CCAT-T2-034",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Five figures: a square, a rectangle, a triangle and a hexagon, each cut by one straight line, and a pentagon with no line. Which is the odd one?",
+    "options": [
+      "Hexagon",
+      "Pentagon",
+      "Rectangle",
+      "Triangle",
+      "Square"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every figure but one has a single line drawn through it. The pentagon has no line."
+  },
+  {
+    "id": "CCAT-T2-035",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 3, 8, 18, 38, 78, ?",
+    "options": [
+      "118",
+      "148",
+      "154",
+      "156",
+      "158"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is double the one before, plus 2: 78 x 2 + 2 = 158."
+  },
+  {
+    "id": "CCAT-T2-036",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Must be true",
+    "stem": "Only staff who finished training may use the forklift. Dana used the forklift today. Which must be true?",
+    "options": [
+      "Dana trained others",
+      "Dana finished training",
+      "Dana is a supervisor",
+      "Dana drives every day",
+      "Dana is new staff"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Only trained staff may use the forklift, so anyone who used it must have finished training."
+  },
+  {
+    "id": "CCAT-T2-037",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to AMPLIFY?",
+    "options": [
+      "Diminish",
+      "Broadcast",
+      "Echo",
+      "Distort",
+      "Explain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Amplify means to make larger or louder; diminish means to make smaller. Distort changes a thing without shrinking it."
+  },
+  {
+    "id": "CCAT-T2-038",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lack of",
+    "stem": "STARVING is to FOOD as PARCHED is to ____.",
+    "options": [
+      "Shade",
+      "Sun",
+      "Salt",
+      "Rest",
+      "Water"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Starving means lacking food; parched means badly lacking water. Shade relieves heat but is not what parched lacks."
+  },
+  {
+    "id": "CCAT-T2-039",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The negotiators reached a ____, with each side giving up part of what it wanted.",
+    "options": [
+      "deadlock",
+      "boycott",
+      "compromise",
+      "victory",
+      "contract"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each side giving up something is a compromise. A deadlock means no agreement at all."
+  },
+  {
+    "id": "CCAT-T2-040",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unknown value",
+    "stem": "If x/5 + 3 = 11, what is x?",
+    "options": [
+      "8",
+      "16",
+      "40",
+      "55",
+      "70"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Subtract 3: x/5 = 8, so x = 40. 70 comes from adding 3 instead of subtracting it."
+  },
+  {
+    "id": "CCAT-T2-041",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rates",
+    "stem": "Two trains leave the same station at noon in opposite directions at 50 and 70 miles an hour. How far apart are they at 2:30 p.m.?",
+    "options": [
+      "50 miles",
+      "120 miles",
+      "175 miles",
+      "240 miles",
+      "300 miles"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "They separate at 50 + 70 = 120 miles an hour, and 120 x 2.5 = 300 miles."
+  },
+  {
+    "id": "CCAT-T2-042",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "Each figure is a square with dots: 1, 3, 6, 10. How many dots are in the next figure?",
+    "options": [
+      "13",
+      "14",
+      "15",
+      "16",
+      "20"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The dots grow by 2, 3, 4, so the next step adds 5: 10 + 5 = 15."
+  },
+  {
+    "id": "CCAT-T2-043",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixed series",
+    "stem": "What comes next? 2B, 4D, 8F, 16H, ?",
+    "options": [
+      "20J",
+      "32I",
+      "32K",
+      "24J",
+      "32J"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The numbers double (2, 4, 8, 16, 32) and the letters skip one (B, D, F, H, J), so 32J."
+  },
+  {
+    "id": "CCAT-T2-044",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Four meetings are on Monday to Thursday, one a day. Budget is before Hiring. Sales is on Thursday. Design is the day after Budget. On which day is Hiring?",
+    "options": [
+      "Wednesday",
+      "Thursday",
+      "Cannot be told",
+      "Monday",
+      "Tuesday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sales takes Thursday. Budget is before Hiring and has Design the next day, so Budget is Monday, Design Tuesday and Hiring Wednesday."
+  },
+  {
+    "id": "CCAT-T2-045",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to LUCID?",
+    "options": [
+      "Brief",
+      "Lucky",
+      "Clear",
+      "Bright",
+      "Calm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lucid writing or thinking is clear and easy to follow. Bright is about light, a different meaning."
+  },
+  {
+    "id": "CCAT-T2-046",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Measure",
+    "stem": "SCALE is to WEIGHT as BAROMETER is to ____.",
+    "options": [
+      "Pressure",
+      "Wind",
+      "Humidity",
+      "Rainfall",
+      "Altitude"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A scale measures weight; a barometer measures air pressure. Humidity is measured with a hygrometer."
+  },
+  {
+    "id": "CCAT-T2-047",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The clerk was so ____ that he caught a one-cent error in a thousand-line ledger.",
+    "options": [
+      "anxious",
+      "hasty",
+      "generous",
+      "talkative",
+      "meticulous"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Catching a tiny error in a huge ledger shows great care, so meticulous. Hasty work misses such errors."
+  },
+  {
+    "id": "CCAT-T2-048",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Squares and roots",
+    "stem": "What is the square root of 196?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "28",
+      "98"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "14 x 14 = 196. 98 is half of 196, not its square root."
+  },
+  {
+    "id": "CCAT-T2-049",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ratios",
+    "stem": "Boys and girls in a club are in the ratio 3 : 4. There are 12 more girls than boys. How many members are there?",
+    "options": [
+      "28",
+      "36",
+      "48",
+      "72",
+      "84"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "One part is the difference: 4 - 3 = 1 part = 12. The club has 7 parts, so 7 x 12 = 84."
+  },
+  {
+    "id": "CCAT-T2-050",
+    "section": "ccat",
+    "test": 2,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Solids",
+    "stem": "A cube is unfolded into a flat net. How many squares does the net have?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "A cube has 6 faces, and its net has one square for each face."
+  },
+  {
+    "id": "CCAT-D-001",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Money",
+    "stem": "A box of 8 light bulbs costs \\$14. What does one bulb cost?",
+    "options": [
+      "\\$1.25",
+      "\\$1.50",
+      "\\$1.75",
+      "\\$1.80",
+      "\\$2.25"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "14 ÷ 8 = 1.75, so each bulb costs \\$1.75."
+  },
+  {
+    "id": "CCAT-D-002",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "A series: small square, medium square, large square, small square, medium square. What comes next?",
+    "options": [
+      "Small square",
+      "Small circle",
+      "Large circle",
+      "Medium square",
+      "Large square"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The sizes repeat small, medium, large, so after medium comes large."
+  },
+  {
+    "id": "CCAT-D-003",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to ARRIVE?",
+    "options": [
+      "Enter",
+      "Travel",
+      "Return",
+      "Depart",
+      "Remain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To arrive is to reach a place; to depart is to leave it. Remain means to stay, which is not the reverse of arriving."
+  },
+  {
+    "id": "CCAT-D-004",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Part and whole",
+    "stem": "KEY is to PIANO as STRING is to ____.",
+    "options": [
+      "Bow",
+      "Song",
+      "Drum",
+      "Guitar",
+      "Note"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A piano has keys; a guitar has strings. A bow plays strings but does not contain them."
+  },
+  {
+    "id": "CCAT-D-005",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The library asks visitors to keep their voices low so others can ____.",
+    "options": [
+      "shout",
+      "leave",
+      "complain",
+      "celebrate",
+      "concentrate"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Quiet helps people concentrate. Shouting is what the rule prevents."
+  },
+  {
+    "id": "CCAT-D-006",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Whole numbers",
+    "stem": "What is 125 x 8?",
+    "options": [
+      "800",
+      "850",
+      "900",
+      "960",
+      "1,000"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "125 x 8 = 1,000, since 125 is one eighth of 1,000."
+  },
+  {
+    "id": "CCAT-D-007",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 15, 30, 45, 60, ?",
+    "options": [
+      "65",
+      "70",
+      "75",
+      "80",
+      "90"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "These are multiples of 15: 60 + 15 = 75."
+  },
+  {
+    "id": "CCAT-D-008",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "A cat weighs more than a rabbit. A dog weighs more than the cat. Which weighs the least?",
+    "options": [
+      "Cat",
+      "They are equal",
+      "Rabbit",
+      "Cannot be told",
+      "Dog"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dog is heavier than cat, which is heavier than rabbit, so the rabbit weighs least."
+  },
+  {
+    "id": "CCAT-D-009",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time",
+    "stem": "A webinar starts at 9:40 a.m. and lasts 1 hour 35 minutes. When does it end?",
+    "options": [
+      "10:15 a.m.",
+      "11:15 a.m.",
+      "11:35 a.m.",
+      "11:25 a.m.",
+      "11:05 a.m."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "9:40 plus 1 hour is 10:40, and 35 more minutes is 11:15."
+  },
+  {
+    "id": "CCAT-D-010",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Which does not belong: red circle, blue circle, green circle, yellow circle, red square?",
+    "options": [
+      "Blue circle",
+      "Red square",
+      "Yellow circle",
+      "Green circle",
+      "Red circle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Four figures are circles in different colors. The red square is the only one that is not a circle."
+  },
+  {
+    "id": "CCAT-D-011",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to DWINDLE?",
+    "options": [
+      "Linger",
+      "Spin",
+      "Shrink",
+      "Waste",
+      "Wander"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To dwindle is to grow gradually smaller, so shrink. Linger sounds similar in tone but means to stay longer."
+  },
+  {
+    "id": "CCAT-D-012",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "ANCIENT is to MODERN as GUILTY is to ____.",
+    "options": [
+      "Accused",
+      "Proven",
+      "Innocent",
+      "Honest",
+      "Sorry"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ancient is the opposite of modern; innocent is the opposite of guilty. Honest describes character, not the verdict."
+  },
+  {
+    "id": "CCAT-D-013",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The recipe calls for a ____ amount of salt, just a pinch.",
+    "options": [
+      "fixed",
+      "small",
+      "double",
+      "large",
+      "secret"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A pinch is a small amount. Double and large contradict the pinch."
+  },
+  {
+    "id": "CCAT-D-014",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Whole numbers",
+    "stem": "What is 1,000 - 386?",
+    "options": [
+      "604",
+      "614",
+      "624",
+      "686",
+      "714"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "1,000 - 400 = 600, and adding back 14 gives 614."
+  },
+  {
+    "id": "CCAT-D-015",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What letter comes next? W, U, S, Q, ?",
+    "options": [
+      "R",
+      "M",
+      "N",
+      "P",
+      "O"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The letters go back two places at a time: W, U, S, Q, O."
+  },
+  {
+    "id": "CCAT-D-016",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "Every bus on line 4 stops at the station. The 8:15 bus is on line 4. The 8:15 bus stops at the station. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Every line 4 bus stops at the station, and the 8:15 is a line 4 bus."
+  },
+  {
+    "id": "CCAT-D-017",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "A runner logs 5, 8, 6 and 9 miles on four days. What is her average per day?",
+    "options": [
+      "6.5",
+      "7",
+      "7.5",
+      "8",
+      "28"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "5 + 8 + 6 + 9 = 28 miles, and 28 ÷ 4 = 7."
+  },
+  {
+    "id": "CCAT-D-018",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Rotation",
+    "stem": "An arrow points right. It is turned 180 degrees. Where does it point?",
+    "options": [
+      "Up",
+      "Right",
+      "Down",
+      "Left",
+      "Up and left"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A half turn reverses any direction, so right becomes left."
+  },
+  {
+    "id": "CCAT-D-019",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to FREQUENT?",
+    "options": [
+      "Regular",
+      "Early",
+      "Common",
+      "Rare",
+      "Quick"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Frequent means happening often; rare means seldom happening. Regular and common lean the same way as frequent."
+  },
+  {
+    "id": "CCAT-D-020",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tool and user",
+    "stem": "BRUSH is to PAINTER as NEEDLE is to ____.",
+    "options": [
+      "Weaver",
+      "Doctor",
+      "Potter",
+      "Barber",
+      "Tailor"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "A painter works with a brush; a tailor sews with a needle. A weaver works a loom."
+  },
+  {
+    "id": "CCAT-D-021",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "Because the meeting was ____, nobody had time to prepare.",
+    "options": [
+      "recorded",
+      "unexpected",
+      "pleasant",
+      "lengthy",
+      "scheduled"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "No time to prepare means it came without warning, so unexpected. A scheduled meeting gives time."
+  },
+  {
+    "id": "CCAT-D-022",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 3.6 ÷ 0.4?",
+    "options": [
+      "0.9",
+      "1.44",
+      "8",
+      "9",
+      "90"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Multiply both by 10: 36 ÷ 4 = 9."
+  },
+  {
+    "id": "CCAT-D-023",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Proportions",
+    "stem": "A car uses 3 gallons of gas for 96 miles. How many gallons does it need for 160 miles?",
+    "options": [
+      "4",
+      "4.5",
+      "5",
+      "5.5",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "That is 32 miles a gallon, and 160 ÷ 32 = 5 gallons."
+  },
+  {
+    "id": "CCAT-D-024",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reflection",
+    "stem": "A mirror is held to the right of a page. A hand on the page is a left hand. What does the mirror show?",
+    "options": [
+      "No hand",
+      "Two hands",
+      "A right hand",
+      "A left hand",
+      "An upside-down left hand"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A mirror swaps left and right, so a left hand appears as a right hand."
+  },
+  {
+    "id": "CCAT-D-025",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 4, 12, 36, 108, ?",
+    "options": [
+      "144",
+      "216",
+      "288",
+      "312",
+      "324"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Each number is 3 times the one before: 108 x 3 = 324."
+  },
+  {
+    "id": "CCAT-D-026",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "Some nurses work nights. Some people who work nights drive to work. Some nurses drive to work. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The night workers who drive may not be nurses, so the conclusion does not follow."
+  },
+  {
+    "id": "CCAT-D-027",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "Of 250 survey replies, 38% said yes. How many said yes?",
+    "options": [
+      "38",
+      "85",
+      "95",
+      "105",
+      "155"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "10% of 250 is 25, so 38% is 3.8 x 25 = 95. 155 is the number who did not say yes."
+  },
+  {
+    "id": "CCAT-D-028",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "Shapes alternate in a series: triangle up, triangle down, triangle up, triangle down. What comes next?",
+    "options": [
+      "Two triangles",
+      "Triangle up",
+      "Square",
+      "Triangle down",
+      "Triangle left"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The triangle flips each time, so after pointing down it points up."
+  },
+  {
+    "id": "CCAT-D-029",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to CEASE?",
+    "options": [
+      "Seize",
+      "Grab",
+      "Stop",
+      "Begin",
+      "Slow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To cease is to stop. Seize sounds alike but means to take hold of something."
+  },
+  {
+    "id": "CCAT-D-030",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Place",
+    "stem": "BREAD is to BAKERY as MEDICINE is to ____.",
+    "options": [
+      "Clinic",
+      "Hospital",
+      "Factory",
+      "Library",
+      "Pharmacy"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Bread is sold at a bakery; medicine is sold at a pharmacy. A hospital uses medicine but is not where you buy it."
+  },
+  {
+    "id": "CCAT-D-031",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The team will ____ the results next week once all the data is in.",
+    "options": [
+      "announce",
+      "forget",
+      "guess",
+      "hide",
+      "repeat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Once the data is in, results are announced. Guessing would not need all the data."
+  },
+  {
+    "id": "CCAT-D-032",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "Which is the largest: 3/5, 5/8, 7/12, 2/3, 4/7?",
+    "options": [
+      "4/7",
+      "7/12",
+      "3/5",
+      "5/8",
+      "2/3"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "As decimals: 0.6, 0.625, about 0.583, about 0.667 and about 0.571. The largest is 2/3."
+  },
+  {
+    "id": "CCAT-D-033",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rates",
+    "stem": "A printer prints 18 pages in 45 seconds. How many pages does it print in 5 minutes?",
+    "options": [
+      "90",
+      "100",
+      "120",
+      "135",
+      "150"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "5 minutes is 300 seconds, which is 300 ÷ 45 = 6 2/3 lots of 45 seconds, so 18 x 6 2/3 = 120 pages."
+  },
+  {
+    "id": "CCAT-D-034",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Which shape does not belong: equilateral triangle, square, regular pentagon, regular hexagon, rectangle with unequal sides?",
+    "options": [
+      "Equilateral triangle",
+      "Regular pentagon",
+      "Rectangle with unequal sides",
+      "Regular hexagon",
+      "Square"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The other four have all sides equal. A rectangle with unequal sides does not."
+  },
+  {
+    "id": "CCAT-D-035",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 64, 32, 48, 24, 36, ?",
+    "options": [
+      "12",
+      "18",
+      "30",
+      "54",
+      "72"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps alternate halving and multiplying by 1.5: 64 to 32, 32 to 48, 48 to 24, 24 to 36, so next is 36 ÷ 2 = 18."
+  },
+  {
+    "id": "CCAT-D-036",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Rita is older than Sam but younger than Tia. Uma is younger than Sam. Who is second oldest?",
+    "options": [
+      "Sam",
+      "Uma",
+      "Tia",
+      "Rita",
+      "Cannot be told"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From oldest: Tia, Rita, Sam, Uma. Rita is second."
+  },
+  {
+    "id": "CCAT-D-037",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to ROBUST?",
+    "options": [
+      "Bulky",
+      "Strong",
+      "Feeble",
+      "Tense",
+      "Mild"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Robust means strong and healthy; feeble means weak. Mild is gentle, not weak."
+  },
+  {
+    "id": "CCAT-D-038",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Group name",
+    "stem": "SOLDIER is to ARMY as SINGER is to ____.",
+    "options": [
+      "Song",
+      "Audience",
+      "Choir",
+      "Concert",
+      "Stage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Soldiers make up an army; singers make up a choir. An audience listens to singers."
+  },
+  {
+    "id": "CCAT-D-039",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The plant grew ____ after it was moved to the sunny window.",
+    "options": [
+      "weakly",
+      "darkly",
+      "slowly",
+      "rapidly",
+      "quietly"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Moving a plant into sun helps it grow, so rapidly. Slowly and weakly go against the cause given."
+  },
+  {
+    "id": "CCAT-D-040",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "What is 125% of 48?",
+    "options": [
+      "36",
+      "54",
+      "60",
+      "62",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "125% is 1.25, and 48 x 1.25 = 48 + 12 = 60."
+  },
+  {
+    "id": "CCAT-D-041",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Money",
+    "stem": "A worker earns \\$22 an hour. After 40 hours, overtime is paid at 1.5 times the rate. What is the pay for 46 hours?",
+    "options": [
+      "\\$1,012",
+      "\\$1,056",
+      "\\$1,078",
+      "\\$1,100",
+      "\\$1,518"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "40 x 22 = \\$880. Overtime is 6 x 33 = \\$198. The total is \\$1,078."
+  },
+  {
+    "id": "CCAT-D-042",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rotation",
+    "stem": "A square tile has a stripe along its bottom edge. The tile is turned 90 degrees counterclockwise. Where is the stripe now?",
+    "options": [
+      "Bottom edge",
+      "Left edge",
+      "Right edge",
+      "Middle",
+      "Top edge"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Turning counterclockwise moves the bottom edge to the right: bottom to right, right to top, top to left, left to bottom."
+  },
+  {
+    "id": "CCAT-D-043",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 0, 3, 8, 15, 24, ?",
+    "options": [
+      "32",
+      "33",
+      "35",
+      "36",
+      "48"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each term is one less than a square: 1 - 1, 4 - 1, 9 - 1, 16 - 1, 25 - 1, so next is 36 - 1 = 35."
+  },
+  {
+    "id": "CCAT-D-044",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Must be true",
+    "stem": "If the server is down, the site shows an error. The site is not showing an error. Which must be true?",
+    "options": [
+      "The server is not down",
+      "The server is down",
+      "The site has no visitors",
+      "The site is slow",
+      "The server was restarted"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the server were down, the site would show an error. It does not, so the server is not down."
+  },
+  {
+    "id": "CCAT-D-045",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to ADEQUATE?",
+    "options": [
+      "Sufficient",
+      "Equal",
+      "Accurate",
+      "Minimal",
+      "Excellent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adequate means enough for the need, so sufficient. Excellent goes beyond adequate."
+  },
+  {
+    "id": "CCAT-D-046",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Degree",
+    "stem": "TIRED is to EXHAUSTED as HAPPY is to ____.",
+    "options": [
+      "Calm",
+      "Cheerful",
+      "Ecstatic",
+      "Content",
+      "Pleased"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Exhausted is an extreme of tired; ecstatic is an extreme of happy. Content and pleased are milder."
+  },
+  {
+    "id": "CCAT-D-047",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Two blanks",
+    "stem": "The coach praised the players' ____, noting they never quit even when they were ____.",
+    "options": [
+      "humor ... tired",
+      "honesty ... ahead",
+      "talent ... winning",
+      "speed ... rested",
+      "persistence ... behind"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Never quitting shows persistence, and that matters most when they were behind. Not quitting while winning shows nothing."
+  },
+  {
+    "id": "CCAT-D-048",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Order of operations",
+    "stem": "What is (9 - 3)² ÷ 4?",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "18",
+      "36"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Brackets first: 6² = 36, then 36 ÷ 4 = 9."
+  },
+  {
+    "id": "CCAT-D-049",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratios",
+    "stem": "A \\$1,200 bonus is split between two staff in the ratio 5 : 3. How much does the larger share get?",
+    "options": [
+      "\\$450",
+      "\\$480",
+      "\\$600",
+      "\\$720",
+      "\\$750"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "There are 8 parts of \\$150 each, so the larger share is 5 x 150 = \\$750."
+  },
+  {
+    "id": "CCAT-D-050",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "A shaded box moves along a row of five boxes: box 1, box 3, box 5, box 2, box 4. Where is it next?",
+    "options": [
+      "Box 2",
+      "Box 5",
+      "Box 1",
+      "Box 3",
+      "Box 4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It jumps two boxes each time and wraps from the end back to the start: 1, 3, 5, then 2, 4, then 1."
+  },
+  {
+    "id": "CCAT-D-051",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "A class of 20 averages 70 on a test and a class of 30 averages 80. What is the average of all 50 students?",
+    "options": [
+      "72",
+      "73",
+      "74",
+      "75",
+      "76"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Total points: 20 x 70 + 30 x 80 = 1,400 + 2,400 = 3,800, and 3,800 ÷ 50 = 76. 75 ignores the class sizes."
+  },
+  {
+    "id": "CCAT-D-052",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Solids",
+    "stem": "A rectangular box has how many edges?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "A box has 4 edges on top, 4 on the bottom and 4 upright ones, so 12. It has 6 faces and 8 corners."
+  },
+  {
+    "id": "CCAT-D-053",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to PERMIT?",
+    "options": [
+      "Excuse",
+      "Forbid",
+      "Notify",
+      "Request",
+      "Allow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To permit is to allow; to forbid is to refuse to allow. Allow is a synonym."
+  },
+  {
+    "id": "CCAT-D-054",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Function",
+    "stem": "COMPASS is to DIRECTION as CLOCK is to ____.",
+    "options": [
+      "Speed",
+      "Time",
+      "Hour",
+      "Alarm",
+      "Hands"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A compass shows direction; a clock shows time. Hands and hours are parts of what a clock shows."
+  },
+  {
+    "id": "CCAT-D-055",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The instructions were ____, so half the class built the model wrong.",
+    "options": [
+      "detailed",
+      "optional",
+      "brief",
+      "ambiguous",
+      "printed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Instructions open to more than one reading are ambiguous, which explains the mistakes. Detailed instructions would prevent them."
+  },
+  {
+    "id": "CCAT-D-056",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Negative numbers",
+    "stem": "What is -8 + 15 - 11?",
+    "options": [
+      "-34",
+      "-18",
+      "-4",
+      "4",
+      "18"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "-8 + 15 = 7, and 7 - 11 = -4."
+  },
+  {
+    "id": "CCAT-D-057",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What comes next? AB, CD, EF, GH, ?",
+    "options": [
+      "GI",
+      "HI",
+      "JK",
+      "IK",
+      "IJ"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The pairs are the alphabet taken two letters at a time, so after GH comes IJ."
+  },
+  {
+    "id": "CCAT-D-058",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "No apples in the crate are bruised. Some fruit in the crate is bruised. Some fruit in the crate is not apples. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "The bruised fruit cannot be apples, so some fruit in the crate is something other than apples."
+  },
+  {
+    "id": "CCAT-D-059",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time",
+    "stem": "A flight leaves at 10:50 p.m. and lands at 6:15 a.m. the next day, same time zone. How long is it?",
+    "options": [
+      "4 h 35 min",
+      "7 h 25 min",
+      "7 h 35 min",
+      "6 h 35 min",
+      "8 h 25 min"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "10:50 p.m. to 6:50 a.m. is 8 hours, and 6:15 is 35 minutes earlier, so 7 hours 25 minutes."
+  },
+  {
+    "id": "CCAT-D-060",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reflection",
+    "stem": "The word MOM is written on a card and held up to a mirror beside it. How does it read in the mirror?",
+    "options": [
+      "MOM",
+      "WOW",
+      "NOM",
+      "MON",
+      "OMO"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "M and O are each symmetric left to right, and the word reads the same both ways, so the mirror shows MOM."
+  },
+  {
+    "id": "CCAT-D-061",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to CANDOR?",
+    "options": [
+      "Courage",
+      "Warmth",
+      "Pride",
+      "Humor",
+      "Honesty"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Candor is open and honest speech. Courage may be needed to speak with candor, but it is not the meaning."
+  },
+  {
+    "id": "CCAT-D-062",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cause and effect",
+    "stem": "DROUGHT is to WILT as FLOOD is to ____.",
+    "options": [
+      "Evaporate",
+      "Freeze",
+      "Erode",
+      "Thunder",
+      "Bloom"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A drought makes plants wilt; a flood washes soil away and erodes land. Evaporation follows heat, not flooding."
+  },
+  {
+    "id": "CCAT-D-063",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The old car is ____ to run, using very little fuel on long trips.",
+    "options": [
+      "economical",
+      "expensive",
+      "dangerous",
+      "noisy",
+      "slow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using little fuel makes a car cheap to run, so economical. Expensive is the opposite."
+  },
+  {
+    "id": "CCAT-D-064",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unknown value",
+    "stem": "If 3(x + 4) = 33, what is x?",
+    "options": [
+      "7",
+      "9",
+      "10",
+      "11",
+      "29"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true,
+    "explanation": "Divide by 3: x + 4 = 11, so x = 7. 11 is x + 4, not x."
+  },
+  {
+    "id": "CCAT-D-065",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternating series",
+    "stem": "What number comes next? 5, 20, 10, 40, 20, 80, ?",
+    "options": [
+      "20",
+      "40",
+      "60",
+      "100",
+      "160"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps alternate x4 and ÷2: 80 ÷ 2 = 40."
+  },
+  {
+    "id": "CCAT-D-066",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "Six runners finished. Ali beat Bo. Bo beat Cy. Di was just behind Ali. Ed beat Ali. Fay was last. Who was third?",
+    "options": [
+      "Ed",
+      "Ali",
+      "Cy",
+      "Bo",
+      "Di"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Ed is ahead of Ali, Di is just behind Ali, then Bo and Cy, and Fay is last: Ed, Ali, Di, Bo, Cy, Fay. Di is third."
+  },
+  {
+    "id": "CCAT-D-067",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Shared work",
+    "stem": "One hose fills a pool in 9 hours; a drain empties it in 12. With both open, how many hours does the empty pool take to fill?",
+    "options": [
+      "3",
+      "10.5",
+      "18",
+      "21",
+      "36"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Each hour the pool gains 1/9 - 1/12 = 4/36 - 3/36 = 1/36, so it takes 36 hours. 21 adds the two times."
+  },
+  {
+    "id": "CCAT-D-068",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "A series of figures: a circle; a circle and a square; a circle, a square and a triangle. Which figure is most likely next?",
+    "options": [
+      "Four shapes, the first three kept",
+      "One new shape alone",
+      "A square and a triangle",
+      "The same three shapes",
+      "A circle and a star"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each figure keeps every shape so far and adds one new one, so the next has four shapes: circle, square, triangle and one more."
+  },
+  {
+    "id": "CCAT-D-069",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to INDIFFERENT?",
+    "options": [
+      "Similar",
+      "Eager",
+      "Patient",
+      "Distant",
+      "Neutral"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Indifferent means having no interest or concern; eager means keenly interested. Neutral and distant lean toward indifferent."
+  },
+  {
+    "id": "CCAT-D-070",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Worker and product",
+    "stem": "POET is to SONNET as ARCHITECT is to ____.",
+    "options": [
+      "Ruler",
+      "Bricks",
+      "Blueprint",
+      "Builder",
+      "Office"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A poet produces a sonnet; an architect produces a blueprint. A builder carries out the plan."
+  },
+  {
+    "id": "CCAT-D-071",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Two blanks",
+    "stem": "Critics called the report ____, since it ____ every opposing view.",
+    "options": [
+      "balanced ... included",
+      "brief ... summarized",
+      "clear ... explained",
+      "biased ... ignored",
+      "fair ... weighed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ignoring every opposing view makes a report one-sided, so biased. The other pairs describe a fair report, which critics would not fault."
+  },
+  {
+    "id": "CCAT-D-072",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "What is 2 1/2 ÷ 5/8?",
+    "options": [
+      "2",
+      "25/16",
+      "5",
+      "4",
+      "3 1/8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2 1/2 is 5/2, and 5/2 x 8/5 = 40/10 = 4."
+  },
+  {
+    "id": "CCAT-D-073",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "After a 30% discount a coat costs \\$84. What was the original price?",
+    "options": [
+      "\\$58.80",
+      "\\$109.20",
+      "\\$112",
+      "\\$114",
+      "\\$120"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "\\$84 is 70% of the original, so the original is 84 ÷ 0.7 = \\$120. Adding 30% of \\$84 gives \\$109.20, which is wrong."
+  },
+  {
+    "id": "CCAT-D-074",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Odd one out",
+    "stem": "Four arrows point up, right, down and left, each turned a quarter turn from the last. A fifth arrow points up and to the right. Which is the odd one?",
+    "options": [
+      "Up and to the right",
+      "Left",
+      "Up",
+      "Down",
+      "Right"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The four arrows are quarter turns apart and point straight along an axis. The fifth is turned only 45 degrees, on a diagonal."
+  },
+  {
+    "id": "CCAT-D-075",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What number comes next? 7, 9, 13, 19, 27, ?",
+    "options": [
+      "29",
+      "33",
+      "35",
+      "36",
+      "37"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "The steps are 2, 4, 6, 8, so next is 27 + 10 = 37."
+  },
+  {
+    "id": "CCAT-D-076",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Must be true",
+    "stem": "All managers attended the briefing. Some people who attended the briefing left early. Kim is a manager. Which must be true?",
+    "options": [
+      "Kim missed the briefing",
+      "Kim stayed to the end",
+      "Kim attended the briefing",
+      "Kim ran the briefing",
+      "Kim left early"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Every manager attended, so Kim attended. Whether Kim left early is not settled."
+  },
+  {
+    "id": "CCAT-D-077",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rates",
+    "stem": "A cyclist rides 24 miles at 12 miles an hour and returns at 8 miles an hour. What is her average speed for the trip?",
+    "options": [
+      "8 mph",
+      "9.6 mph",
+      "10 mph",
+      "11 mph",
+      "12 mph"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true,
+    "explanation": "Out takes 2 hours and back takes 3, so 48 miles in 5 hours is 9.6 miles an hour. 10 is the plain average of the two speeds."
+  },
+  {
+    "id": "CCAT-D-078",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Rotation",
+    "stem": "A clock hand points at 3. It turns 120 degrees counterclockwise. Which number does it point at?",
+    "options": [
+      "1",
+      "7",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "120 degrees is 4 steps of 30. Counting back from 3: 2, 1, 12, 11. Turning clockwise would reach 7."
+  },
+  {
+    "id": "CCAT-D-079",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to PRUDENT?",
+    "options": [
+      "Proper",
+      "Thrifty",
+      "Shy",
+      "Strict",
+      "Sensible"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "A prudent choice is careful and sensible. Thrifty is one kind of prudence, about money only."
+  },
+  {
+    "id": "CCAT-D-080",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Symptom",
+    "stem": "FEVER is to ILLNESS as SMOKE is to ____.",
+    "options": [
+      "Cigar",
+      "Fire",
+      "Fog",
+      "Chimney",
+      "Ash"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A fever is a sign of illness; smoke is a sign of fire. Ash is left after a fire, not a sign of one burning."
+  },
+  {
+    "id": "CCAT-D-081",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The engineer's ____ design used half the parts of the earlier model and worked just as well.",
+    "options": [
+      "efficient",
+      "fragile",
+      "outdated",
+      "elaborate",
+      "costly"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Doing the same job with half the parts is efficient. Elaborate would mean more parts, not fewer."
+  },
+  {
+    "id": "CCAT-D-082",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percents",
+    "stem": "A price falls from 75 to 60. By what percent did it fall?",
+    "options": [
+      "12%",
+      "15%",
+      "20%",
+      "25%",
+      "80%"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "The fall is 15, and 15 ÷ 75 = 0.2, so 20%. Dividing 15 by the new price 60 gives 25%."
+  },
+  {
+    "id": "CCAT-D-083",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average of five numbers is 18. When one number is removed, the average of the rest is 16. What number was removed?",
+    "options": [
+      "2",
+      "18",
+      "20",
+      "26",
+      "34"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "The five total 90 and the four total 64, so the removed number is 90 - 64 = 26."
+  },
+  {
+    "id": "CCAT-D-084",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Solids",
+    "stem": "A standard die shows 4 on top. Which number is on the bottom?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Opposite faces of a standard die add up to 7, so the bottom shows 7 - 4 = 3."
+  },
+  {
+    "id": "CCAT-D-085",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixed series",
+    "stem": "What comes next? A26, C24, E22, G20, ?",
+    "options": [
+      "I19",
+      "H18",
+      "I16",
+      "J18",
+      "I18"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "The letters skip one (A, C, E, G, I) and the numbers fall by 2 (26, 24, 22, 20, 18), so I18."
+  },
+  {
+    "id": "CCAT-D-086",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ordering",
+    "stem": "In a row of seven houses, the blue house is third from the left and the green house is second from the right. How many houses are between them?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Second from the right in seven is sixth from the left. Between the third and sixth are the fourth and fifth, so 2."
+  },
+  {
+    "id": "CCAT-D-087",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "Which word is most nearly opposite in meaning to ADVERSE?",
+    "options": [
+      "Average",
+      "Hostile",
+      "Cautious",
+      "Harmful",
+      "Favorable"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Adverse conditions work against you; favorable conditions help. Hostile and harmful are close to adverse."
+  },
+  {
+    "id": "CCAT-D-088",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lack of",
+    "stem": "ANONYMOUS is to NAME as SHAPELESS is to ____.",
+    "options": [
+      "Edge",
+      "Color",
+      "Form",
+      "Weight",
+      "Size"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Anonymous means without a name; shapeless means without form. Size is how big something is, which a shapeless thing still has."
+  },
+  {
+    "id": "CCAT-D-089",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "One blank",
+    "stem": "The rumor proved ____: no one could find any evidence for it.",
+    "options": [
+      "popular",
+      "recent",
+      "unfounded",
+      "harmless",
+      "accurate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A claim with no evidence behind it is unfounded. Popular describes how far it spread, not whether it was true."
+  },
+  {
+    "id": "CCAT-D-090",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Squares and roots",
+    "stem": "What is 15² - 13²?",
+    "options": [
+      "4",
+      "28",
+      "44",
+      "52",
+      "56"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "225 - 169 = 56. A shortcut: (15 - 13)(15 + 13) = 2 x 28 = 56."
+  },
+  {
+    "id": "CCAT-D-091",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Proportions",
+    "stem": "On a plan, 2 centimeters stand for 5 meters. A wall is 9 centimeters long on the plan. How long is it?",
+    "options": [
+      "18 m",
+      "20 m",
+      "22.5 m",
+      "25 m",
+      "45 m"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "Each centimeter stands for 2.5 meters, so 9 x 2.5 = 22.5 meters."
+  },
+  {
+    "id": "CCAT-D-092",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Reflection",
+    "stem": "In a 4 by 4 grid, a dot is in row 1, column 3. The grid is flipped left to right. Which column is the dot in now?",
+    "options": [
+      "Column 3",
+      "Column 1",
+      "Row 4",
+      "Column 2",
+      "Column 4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Flipping left to right sends column 1 to 4, 2 to 3, 3 to 2 and 4 to 1, so column 3 becomes column 2."
+  },
+  {
+    "id": "CCAT-D-093",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSeries",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Letter series",
+    "stem": "What letter comes next? B, C, E, H, L, ?",
+    "options": [
+      "R",
+      "S",
+      "Q",
+      "O",
+      "P"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The steps grow by one: +1, +2, +3, +4, so next is L + 5 = Q."
+  },
+  {
+    "id": "CCAT-D-094",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatLogic",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Syllogisms",
+    "stem": "All engineers here know Python. Lee knows Python. Lee is an engineer here. If the first two statements are true, the third is:",
+    "options": [
+      "True",
+      "False",
+      "Uncertain"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true,
+    "explanation": "People other than engineers may know Python too, so knowing it does not show Lee is an engineer."
+  },
+  {
+    "id": "CCAT-D-095",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatVocab",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Closest meaning",
+    "stem": "Which word is closest in meaning to TENACIOUS?",
+    "options": [
+      "Persistent",
+      "Careful",
+      "Tender",
+      "Anxious",
+      "Gracious"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tenacious means holding on and not giving up, so persistent. Gracious shares the ending but means kind and polite."
+  },
+  {
+    "id": "CCAT-D-096",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatAnalogy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opposites",
+    "stem": "PRAISE is to CRITICIZE as REWARD is to ____.",
+    "options": [
+      "Earn",
+      "Award",
+      "Ignore",
+      "Thank",
+      "Punish"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Criticize is the opposite of praise; punish is the opposite of reward. Ignore withholds both."
+  },
+  {
+    "id": "CCAT-D-097",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSentence",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Two blanks",
+    "stem": "Her ____ remarks put the nervous guests at ease, and the room soon grew ____.",
+    "options": [
+      "witty ... silent",
+      "vague ... confused",
+      "harsh ... tense",
+      "reassuring ... relaxed",
+      "formal ... stiff"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Remarks that put people at ease are reassuring, and a room of eased guests grows relaxed. The other pairs do not ease anyone."
+  },
+  {
+    "id": "CCAT-D-098",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unknown value",
+    "stem": "If 2x + 3 = x + 12, what is x?",
+    "options": [
+      "3",
+      "4.5",
+      "5",
+      "7",
+      "9"
+    ],
+    "correct": [
+      4
+    ],
+    "lockedOrder": true,
+    "explanation": "Take x from both sides: x + 3 = 12, so x = 9."
+  },
+  {
+    "id": "CCAT-D-099",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatWord",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ratios",
+    "stem": "A store has red, blue and green shirts in the ratio 2 : 3 : 5. There are 18 blue shirts. How many shirts are there?",
+    "options": [
+      "30",
+      "50",
+      "54",
+      "60",
+      "90"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true,
+    "explanation": "Blue is 3 parts = 18, so one part is 6 and the 10 parts total 60."
+  },
+  {
+    "id": "CCAT-D-100",
+    "section": "ccat",
+    "test": 0,
+    "module": 1,
+    "domain": "ccatSpatial",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pattern series",
+    "stem": "In a 3 by 3 pattern, each row holds one, two and three dots. Row 1 is 1, 2, 3. Row 2 is 2, 3, 1. What is row 3?",
+    "options": [
+      "3, 2, 1",
+      "1, 3, 2",
+      "3, 1, 2",
+      "2, 3, 1",
+      "1, 2, 3"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each row shifts the one above left by one place, and no column repeats a number. Row 3 is 3, 1, 2."
+  }
+]

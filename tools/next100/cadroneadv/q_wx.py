@@ -81,7 +81,7 @@ Q = [
 ("A METAR shows \"-SN BLSN\". What is happening?",
  "Light snow and blowing snow", ["Heavy snow, snow showers", "Snow pellets, no wind", "Light sleet and freezing fog"],
  "The minus sign marks light intensity, SN is snow and BLSN is blowing snow, which can cut visibility close to the ground where drones fly."),
-("A pilot report gives a wind of 030 at 45 knots. Its direction is referenced to what?",
- "True north", ["Magnetic north", "The pilot's heading", "The nearest runway"],
- "The TC AIM says winds reported by pilots in degrees magnetic are converted to degrees true before they appear in a PIREP."),
+("Pilots give winds in degrees magnetic. How do those winds appear in a PIREP?",
+ "Converted to degrees true", ["Left in degrees magnetic", "Rounded to the runway", "Given as grid bearings"],
+ "The TC AIM says winds reported by pilots in degrees magnetic are converted to degrees true before they appear in a PIREP, matching METARs and forecasts."),
 ]

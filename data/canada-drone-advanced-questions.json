@@ -2118,14 +2118,14 @@
     "state": "ALL",
     "questionId": "CADRONEADV-WX-028",
     "category": "cdaWeather",
-    "question": "A pilot report gives a wind of 030 at 45 knots. Its direction is referenced to what?",
-    "optionA": "Magnetic north",
-    "optionB": "The pilot's heading",
-    "optionC": "The nearest runway",
-    "optionD": "True north",
+    "question": "Pilots give winds in degrees magnetic. How do those winds appear in a PIREP?",
+    "optionA": "Left in degrees magnetic",
+    "optionB": "Rounded to the runway",
+    "optionC": "Given as grid bearings",
+    "optionD": "Converted to degrees true",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The TC AIM says winds reported by pilots in degrees magnetic are converted to degrees true before they appear in a PIREP."
+    "explanation": "The TC AIM says winds reported by pilots in degrees magnetic are converted to degrees true before they appear in a PIREP, matching METARs and forecasts."
   },
   {
     "type": "CADRONEADV",
@@ -2664,14 +2664,14 @@
     "state": "ALL",
     "questionId": "CADRONEADV-SYS-015",
     "category": "cdaSystems",
-    "question": "Before a controlled airspace flight, which lost-link setting should match your authorization?",
-    "optionA": "Camera resolution",
-    "optionB": "Screen brightness",
-    "optionC": "Return-home height",
-    "optionD": "Low-battery warning tone volume",
+    "question": "Under Standard 922.11, how must control station controls be usable?",
+    "optionA": "Only through voice commands",
+    "optionB": "From two screens at once",
+    "optionC": "At a pace that fits the task",
+    "optionD": "With one hand at all times",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "CAR 901.71 lets the ANSP ask for the lost-link procedures and flight profile. The return-to-home altitude decides where the drone goes if the link fails."
+    "explanation": "Standard 922.11 requires controls usable at a pace matching the urgency and frequency of each task, with information shown clearly and unambiguously."
   },
   {
     "type": "CADRONEADV",

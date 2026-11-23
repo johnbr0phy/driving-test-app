@@ -1,7 +1,7 @@
 CAT = "nscaEval"; SEG = "EVL"
 Q = [
 ('Which test should come first in a fitness evaluation session?',
- 'Body composition', ['1.5-mile run', 'Push-up endurance test', 'Vertical jump test'],
+ 'Body composition', ['1.5-mile run', 'Push-up endurance test', '1RM back squat'],
  'Non-fatiguing measures (height, weight, body composition) come first so later tests do not distort them. An all-out run belongs last.'),
 ('In a single session, which test belongs last?',
  'Aerobic capacity test', ['Agility test', 'Maximum strength test', 'Sit-and-reach flexibility test'],
@@ -24,9 +24,9 @@ Q = [
 ('Skinfold measurements should be taken on which side of the body?',
  'Right side', ['Left side', 'Dominant side', 'Either side'],
  'Standard skinfold protocols use the right side so results match the prediction equations and repeat tests.'),
-("A client's blood pressure is 128/76 mmHg. How is it classified?",
- 'Elevated', ['Normal', 'Stage 1 hypertension', 'Stage 2 hypertension'],
- 'A systolic of 120 to 129 with a diastolic under 80 is elevated. Stage 1 starts at 130 systolic or 80 diastolic.'),
+('Under current US guideline categories, which resting reading is elevated blood pressure?',
+ '126/78 mmHg', ['118/78 mmHg', '124/82 mmHg', '132/76 mmHg'],
+ 'Elevated is a systolic of 120 to 129 with a diastolic under 80. 124/82 is stage 1 because the diastolic is 80 or more, 132/76 is stage 1 by its systolic, and 118/78 is normal.'),
 ('A client presses 170 lb for 6 reps to failure. Their estimated 1RM is about:',
  '200 lb', ['180 lb', '220 lb', '245 lb'],
  'Six repetitions correspond to about 85% of 1RM, so 170 / 0.85 = 200 lb.'),

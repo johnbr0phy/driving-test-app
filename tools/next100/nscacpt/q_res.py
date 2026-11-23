@@ -31,7 +31,7 @@ Q = [
  'One behind or one on each end', ['None, it is never spotted', 'One standing in front of the lifter', 'Four spread around the bar'],
  'One spotter behind the lifter, or one at each end of the bar for very heavy loads, can help. Safety bars in a rack are also used.'),
 ('A client wants to squat heavy alone. What makes it safest?',
- 'Power rack with safety bars set', ['A thicker weight belt', 'Faster reps near failure', 'Lifting with eyes closed'],
+ 'Power rack with safety bars set', ['A thicker weight belt', 'Faster reps near failure', 'Using lifting straps'],
  'Safety bars set just below the bottom position catch the bar if the lift fails. A belt does not.'),
 ("When setting up a seated leg curl, which joint should line up with the machine's pivot?",
  'Knee', ['Hip', 'Ankle', 'Lower back'],

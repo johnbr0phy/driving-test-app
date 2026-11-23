@@ -35,7 +35,7 @@ Q = [
  'Holding the rails supports body weight and reduces the energy cost, so displayed values overstate the effort.'),
 ('On an upright bike, the knee at the bottom of the pedal stroke should be:',
  'Slightly bent', ['Fully locked', 'Bent to 90 degrees', 'Lifted off the pedal'],
- 'A slight bend at the bottom, about 25 to 30 degrees, avoids rocking the hips and protects the knee.'),
+ 'A slight bend at the bottom (often given as about 25 to 30 degrees) avoids rocking the hips and protects the knee.'),
 ('In the rowing machine stroke, which order is correct on the drive?',
  'Legs, then trunk, then arms', ['Arms, then legs, then trunk', 'Trunk, then arms, then legs', 'All three together'],
  'The drive starts with a leg push, then the trunk swings back, then the arms pull. The recovery reverses it.'),

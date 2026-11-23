@@ -84,3 +84,18 @@ model, the ACE IFT model and the fact-and-answer pairs already asked in those tw
 - No supplement doses, brand names or state-specific scope rules.
 - Not modelled: the scaled-score conversion, video and image item formats, the cognitive-level
   split.
+
+## Added at the blind review (2026-11-23)
+- O*NET certification profile "NSCA-Certified Personal Trainer (NSCA-CPT)":
+  https://www.onetonline.org/link/certinfo/1057-A (checked 2026-11-23 through search-result text).
+  Lists the NSCA-CPT as accredited by the National Commission for Certifying Agencies (NCCA).
+- American Diabetes Association, "Physical Activity/Exercise and Diabetes: A Position Statement"
+  (Colberg et al., Diabetes Care 2016;39:2065-2079): https://pmc.ncbi.nlm.nih.gov/articles/PMC6908414/
+  (fetched 2026-11-23). Type 1 diabetes, pre-exercise glucose under 90 mg/dL: take 15 to 30 g of
+  fast-acting carbohydrate before starting. The injection-site advice (avoid a limb about to be
+  exercised) was not found on the fetched page; it stays as a long-settled textbook fact and the
+  explanation sends sites and timing to the physician.
+- NIH NHLBI, "Assessing Your Risk": https://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm
+  (fetched 2026-11-23). Waist over 35 inches (88 cm) for women and 40 inches for men raises risk.
+- The smoking "quit within six months" item was removed (it repeated an ACE-CPT item), so that
+  ACSM fact is no longer used.

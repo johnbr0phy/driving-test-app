@@ -6,18 +6,18 @@
     "module": 1,
     "domain": "cpModels",
     "skill": "Service models",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "A team wants to upload its web application code and let the provider handle the operating system, runtime patching and web server. Which service model fits?",
-    "explanation": "PaaS gives a managed runtime: the customer brings the code and the provider runs the operating system and platform underneath.",
+    "stem": "A team moves its app from rented virtual machines to a platform service. Which task does the team stop doing?",
+    "explanation": "On a platform service the provider runs and patches the operating system and runtime. Code, access decisions and data stay with the customer.",
     "options": [
-      "Software as a service",
-      "Infrastructure as a service",
-      "Dedicated hosting",
-      "Platform as a service"
+      "Protecting the data the app stores",
+      "Patching the operating system under the app",
+      "Deciding who may use the app",
+      "Writing and testing the application code"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -48,15 +48,15 @@
     "module": 1,
     "domain": "cpDesign",
     "skill": "Storage tiers",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "A firm must keep closed case files for ten years and almost never reads them. Retrieval within a day is fine. Which storage tier costs least to store them?",
-    "explanation": "The archive tier has the lowest storage price and the slowest, often fee-based retrieval, which suits rarely read records.",
+    "stem": "Moving rarely read files to the archive tier cuts the storage bill. What is the usual trade-off?",
+    "explanation": "Archive storage is the cheapest to keep data in, but reads can take hours and usually cost extra.",
     "options": [
-      "In-memory cache",
-      "Warm",
-      "Archive",
-      "Hot"
+      "Files must be deleted after one year",
+      "Higher monthly storage price",
+      "Slower retrieval, often with a fee to read the data",
+      "Files can no longer be encrypted"
     ],
     "correct": [
       2
@@ -71,16 +71,16 @@
     "skill": "Deployment models",
     "difficulty": 2,
     "format": "single",
-    "stem": "Several regional hospitals share one cloud environment built to the same health privacy rules, and no outside customers can use it. Which deployment model is this?",
-    "explanation": "A community cloud is shared by organizations with common requirements, such as regulators or compliance rules.",
+    "stem": "What sets a community cloud apart from a public cloud?",
+    "explanation": "A community cloud is shared by a defined group with common needs, such as compliance rules, while a public cloud is open to anyone.",
     "options": [
-      "Public",
-      "Community",
-      "Private hosted",
-      "Hybrid"
+      "It cannot use virtual machines",
+      "It always runs in a customer's own building",
+      "Only a group of organizations with shared requirements may use it",
+      "It has no service level agreement at all"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -203,18 +203,18 @@
     "module": 1,
     "domain": "cpBackup",
     "skill": "Backup types",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "Which backup copies only the data changed since the last backup of any kind?",
-    "explanation": "An incremental backup captures changes since the most recent backup, full or incremental. A differential captures changes since the last full.",
+    "stem": "Which backup scheme makes each nightly job the smallest but needs the most backup sets for a full restore?",
+    "explanation": "Each incremental holds only one day's changes, so it is small, but a restore needs the full plus every incremental since it.",
     "options": [
-      "Incremental",
-      "Mirror",
-      "Differential",
-      "Full"
+      "A full backup plus differentials",
+      "A single mirror copy",
+      "A full backup plus incrementals",
+      "A full backup every night"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -226,16 +226,16 @@
     "skill": "Shared responsibility",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company runs virtual machines on an IaaS platform. Under the shared responsibility model, who patches the guest operating system?",
-    "explanation": "In IaaS the provider secures the physical hosts and hypervisor, while the customer owns everything from the guest operating system up.",
+    "stem": "A company rents virtual machines on an IaaS platform. Under the shared responsibility model, who secures and patches the hypervisor that runs them?",
+    "explanation": "In IaaS the provider owns the physical hosts and the virtualization layer. The customer owns the guest operating system and everything above it.",
     "options": [
-      "The customer",
+      "The internet service provider",
+      "The operating system vendor",
       "The cloud provider",
-      "The hypervisor vendor",
-      "The internet service provider"
+      "The customer"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -373,16 +373,16 @@
     "skill": "Tracing",
     "difficulty": 3,
     "format": "single",
-    "stem": "A checkout request passes through six microservices and is sometimes slow. Which tool shows how long the request spent in each service?",
-    "explanation": "Tracing follows one request across services with a shared trace ID and times each hop.",
+    "stem": "Engineers want to pull up every log line, from every service, that belongs to one slow customer request. What should each service add to its logs?",
+    "explanation": "Passing one trace ID along with the request and logging it everywhere ties all the entries for that request together.",
     "options": [
-      "A static route",
-      "A full backup",
-      "A daily uptime check",
-      "Distributed tracing"
+      "The instance size",
+      "The request's trace or correlation ID",
+      "The disk serial number",
+      "The server's uptime"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -684,18 +684,18 @@
     "module": 1,
     "domain": "cpBackup",
     "skill": "Backup locations",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "Why should at least one backup copy be kept off site, such as in another region?",
-    "explanation": "An off-site copy survives a fire, flood or regional outage that takes out the primary site.",
+    "stem": "A company's only backups are snapshots kept in the same region as its VMs. Which risk remains?",
+    "explanation": "Copies in the same region share its failures, so at least one copy should be kept in another region or off site.",
     "options": [
-      "So one disaster cannot destroy data and backups together",
-      "So restores are always faster than from local copies",
-      "So backups no longer need encryption",
-      "So retention rules no longer apply to the copies"
+      "Snapshots cannot be restored to a new VM",
+      "Snapshots break the RTO by design",
+      "Snapshots cannot be encrypted",
+      "A regional outage could take out the VMs and the backups together"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -892,18 +892,18 @@
     "module": 1,
     "domain": "cpModels",
     "skill": "Disaster recovery",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "Leadership says the order system may lose no more than 15 minutes of transactions after a disaster. Which metric does this set?",
-    "explanation": "RPO is the maximum acceptable data loss measured in time. RTO is how long the service may stay down.",
+    "stem": "Database changes are copied to a standby in another region with a lag of up to five minutes. Which recovery metric does that lag mainly decide?",
+    "explanation": "The lag is how much recent data could be lost in a failover, which is what the RPO measures.",
     "options": [
-      "Recovery point objective",
-      "Recovery time objective",
+      "Service level indicator",
       "Mean time between service failures",
-      "Service level indicator"
+      "Recovery point objective",
+      "Recovery time objective"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -957,16 +957,16 @@
     "skill": "Industry standards",
     "difficulty": 2,
     "format": "single",
-    "stem": "An online store that processes credit card payments must meet which standard?",
-    "explanation": "The Payment Card Industry Data Security Standard applies to anyone who stores, processes or transmits card data.",
+    "stem": "A company wants a certification, recognized worldwide, that its information security management system meets an international standard. Which standard is it?",
+    "explanation": "ISO/IEC 27001 specifies requirements for an information security management system and can be certified by an accredited body.",
     "options": [
       "HIPAA",
-      "ISO 9001",
-      "SOC 2 only",
-      "PCI DSS"
+      "PCI DSS",
+      "ISO 27001",
+      "ISO 9001"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -1020,13 +1020,13 @@
     "skill": "Containers",
     "difficulty": 2,
     "format": "single",
-    "stem": "A container listens on port 80 inside. It is started with $\\texttt{docker run -p 8080:80 web}$. Which port do clients use on the host?",
-    "explanation": "With -p host:container, host port 8080 forwards to port 80 in the container.",
+    "stem": "A container listens on port 3000 inside. It is started with $\\texttt{docker run -p 9000:3000 api}$. Which port do clients use on the host?",
+    "explanation": "With -p host:container, port 3000 in the container is reached through host port 9000.",
     "options": [
-      "80",
       "443",
+      "3000",
       "8000",
-      "8080"
+      "9000"
     ],
     "correct": [
       3
@@ -1154,16 +1154,16 @@
     "skill": "Migration strategies",
     "difficulty": 3,
     "format": "single",
-    "stem": "During migration, a team keeps its application as is but moves its self-run database onto the provider's managed database service. Which strategy is this?",
-    "explanation": "Replatforming makes a few cloud optimizations, such as a managed database, without rewriting the application.",
+    "stem": "During migration, a team packages its app into containers and runs them on the provider's managed container service, with no code changes. Which strategy is this?",
+    "explanation": "Replatforming makes a few cloud optimizations, such as a managed container platform, without rewriting the application.",
     "options": [
-      "Retain",
-      "Replatform",
       "Re-architect",
-      "Rehost"
+      "Retain",
+      "Rehost",
+      "Replatform"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -1257,18 +1257,18 @@
     "module": 1,
     "domain": "cpModels",
     "skill": "Networking",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "Which load balancer reads HTTP headers and URL paths so it can send /api requests to one pool and /images requests to another?",
-    "explanation": "An application load balancer works at layer 7 and can route on paths and headers. A network load balancer works at layer 4 on IP and port.",
+    "stem": "Two websites, shop.example.com and help.example.com, must share one public entry point and reach different server pools. Which load balancer can route on the Host header?",
+    "explanation": "Only a layer 7 load balancer reads the HTTP Host header. A network load balancer sees only IP addresses and ports.",
     "options": [
       "DNS round robin with health checks",
+      "Application load balancer",
       "Network load balancer",
-      "Static route",
-      "Application load balancer"
+      "Static route"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -1322,8 +1322,8 @@
     "skill": "Scaling",
     "difficulty": 2,
     "format": "single",
-    "stem": "Adding more instances behind a load balancer to handle load is which type of scaling?",
-    "explanation": "Horizontal scaling (scaling out) adds instances. Vertical scaling (scaling up) makes one instance larger.",
+    "stem": "Which scaling type has no single-machine size ceiling and usually needs no restart of the servers already running?",
+    "explanation": "Scaling out adds more instances alongside the running ones. Scaling up is limited by the largest instance size and often needs a restart.",
     "options": [
       "Diagonal",
       "Horizontal",
@@ -1364,13 +1364,13 @@
     "skill": "Migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "An audit finds an old reporting app that nobody has opened in a year. What should the migration plan do with it?",
+    "stem": "After a merger, two apps do the same job. The plan keeps one and switches the other off instead of moving it. Which strategy applies to the one switched off?",
     "explanation": "Retiring switches off applications that are no longer needed instead of paying to move them.",
     "options": [
-      "Replatform it",
-      "Retire it",
-      "Refactor it",
-      "Rehost it"
+      "Rehost",
+      "Retire",
+      "Refactor",
+      "Replatform"
     ],
     "correct": [
       1
@@ -1385,16 +1385,16 @@
     "skill": "Authentication",
     "difficulty": 3,
     "format": "single",
-    "stem": "Employees sign in to a SaaS app with their corporate identity provider, which sends the app an XML assertion. Which standard is this?",
-    "explanation": "SAML federation passes XML assertions from the identity provider to the service provider for single sign-on.",
+    "stem": "In SAML single sign-on to a SaaS app, which party checks the user's password and issues the signed assertion?",
+    "explanation": "The identity provider authenticates the user and issues the assertion; the SaaS app, as service provider, trusts it.",
     "options": [
-      "SAML",
-      "OAuth 2.0 alone",
-      "LDAP over the internet",
-      "RDP"
+      "The DNS resolver",
+      "The user's browser",
+      "The service provider",
+      "The identity provider"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2002,16 +2002,16 @@
     "skill": "Vulnerability management",
     "difficulty": 3,
     "format": "single",
-    "stem": "Two findings share the same CVSS base score. One is on an internet-facing payment server, the other on an isolated test VM. Which should be fixed first and why?",
-    "explanation": "Assessment weighs the score with exposure and asset value, so the exposed production system comes first.",
+    "stem": "A CVSS 9.8 finding sits on an isolated lab VM with no network access. A CVSS 7.5 finding on an internet-facing VPN gateway is being actively exploited. Which should be fixed first?",
+    "explanation": "Assessment weighs the score with exposure, exploitation and asset value, so the exposed, attacked gateway comes first.",
     "options": [
-      "Either, because equal base scores always mean equal risk to the business",
-      "The payment server, because exposure raises its risk",
-      "The test VM, because it is easier and quicker to patch",
-      "Neither until the score changes"
+      "The VPN gateway, because exposure and active exploitation raise its real risk",
+      "The lab VM, because its score is higher",
+      "Both together, because scores do not matter",
+      "Neither, until the scores are recalculated"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -2044,16 +2044,16 @@
     "skill": "Formats",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which snippet is valid JSON?",
-    "explanation": "JSON needs braces, double-quoted keys and colons between keys and values. The YAML and XML lines are other formats.",
+    "stem": "In JSON, which value is a list of two strings?",
+    "explanation": "JSON arrays use square brackets with comma-separated values. Braces hold key-value objects.",
     "options": [
-      "{\"name\": \"web\", \"port\": 80}",
-      "name: web\nport: 80",
-      "<name>web</name>",
-      "{name: web, port: 80}"
+      "(web, db)",
+      "[\"web\", \"db\"]",
+      "<web><db>",
+      "{\"web\", \"db\"}"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2126,16 +2126,16 @@
     "skill": "Shared responsibility",
     "difficulty": 2,
     "format": "single",
-    "stem": "Under the shared responsibility model, which task stays with the customer in every service model, including SaaS?",
-    "explanation": "Whatever the model, the customer controls who can reach its data. Physical hosts and facilities are always the provider's job.",
+    "stem": "A company uses a SaaS ticketing product. Under the shared responsibility model, which task belongs to the provider?",
+    "explanation": "In SaaS the provider runs and updates the whole application stack. The customer still manages users, data and its own settings.",
     "options": [
-      "Managing user accounts and data access",
-      "Replacing failed disks in the data center",
-      "Patching the physical host firmware",
-      "Guarding the data center doors"
+      "Deciding what data is entered",
+      "Patching and updating the application itself",
+      "Choosing which employees get accounts",
+      "Setting the company's password rules in the app"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2387,19 +2387,19 @@
     "test": 2,
     "module": 1,
     "domain": "cpDesign",
-    "skill": "Storage types",
+    "skill": "Storage security",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which storage type is reached over HTTP with an API and is the usual home for backups, media files and data lake content?",
-    "explanation": "Object storage is accessed through HTTP APIs and scales to huge amounts of unstructured data.",
+    "stem": "Which object storage feature keeps earlier copies of an object when it is overwritten or deleted, so a mistake can be undone?",
+    "explanation": "With versioning on, each overwrite or delete keeps the previous version, which can be restored.",
     "options": [
-      "Object storage",
-      "Instance store",
-      "Block storage",
-      "File storage"
+      "Port mapping",
+      "Tiering",
+      "Thin provisioning",
+      "Versioning"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2474,16 +2474,16 @@
     "skill": "Scripting logic",
     "difficulty": 2,
     "format": "single",
-    "stem": "In a provisioning script, which data type fits a value such as true or false for \"enable_backups\"?",
-    "explanation": "True or false values are Booleans.",
+    "stem": "In a template, which data type fits the value 443 for a listener port?",
+    "explanation": "A whole number such as a port is an integer.",
     "options": [
-      "Boolean",
-      "Float",
-      "String",
-      "Integer"
+      "Float with decimals",
+      "Integer",
+      "String of letters",
+      "Boolean"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2688,12 +2688,12 @@
     "skill": "Disaster recovery",
     "difficulty": 2,
     "format": "single",
-    "stem": "A payment service must be running again within one hour of a regional outage. Which metric does this set?",
-    "explanation": "RTO is the longest acceptable time to restore service after an outage.",
+    "stem": "A company replaces its cold site with a hot site. Which recovery metric improves the most?",
+    "explanation": "A hot site is already running, so service is back far sooner, which shortens the recovery time.",
     "options": [
       "Recovery time objective",
-      "Recovery point objective",
       "Error budget",
+      "Recovery point objective",
       "Mean time between failures"
     ],
     "correct": [
@@ -3038,18 +3038,18 @@
     "module": 1,
     "domain": "cpModels",
     "skill": "Multicloud",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "A company runs workloads on two different public cloud providers so one provider outage or price rise does not trap it. What is this approach?",
-    "explanation": "Multicloud uses more than one public provider, which limits dependence on any one of them.",
+    "stem": "What is a common drawback of running workloads across several public cloud providers?",
+    "explanation": "Multicloud reduces dependence on one provider but adds different consoles, services and skills to manage.",
     "options": [
-      "Multicloud",
-      "Community cloud",
-      "Single tenancy",
-      "Hybrid cloud"
+      "No way to avoid any single provider outage",
+      "Data can never leave the first provider",
+      "Every workload must run in one region",
+      "More tools, skills and management overhead"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -3796,11 +3796,11 @@
     "skill": "Networking",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "A team is given the CIDR block 10.40.0.0/22 for a new VPC. How many IP addresses does the block contain in total, before any reserved addresses? Type the number only.",
-    "explanation": "A /22 leaves 32 - 22 = 10 host bits, and 2 to the 10th power is 1024 addresses.",
+    "stem": "A team is given the CIDR block 10.40.0.0/19 for a new VPC. How many IP addresses does the block contain in total, before any reserved addresses? Type the number only.",
+    "explanation": "A /19 leaves 32 - 19 = 13 host bits, and 2 to the 13th power is 8,192 addresses.",
     "numeric": {
       "answers": [
-        "1024"
+        "8192"
       ],
       "tolerance": 0,
       "wholeNumber": true
@@ -3836,16 +3836,16 @@
     "skill": "Networking",
     "difficulty": 2,
     "format": "single",
-    "stem": "Instances in a private subnet must download patches from the internet but must not accept inbound connections from it. What should their route table send internet traffic to?",
-    "explanation": "A NAT gateway lets private instances start outbound connections while keeping them unreachable from outside.",
+    "stem": "Which object decides where traffic leaving a subnet is sent next, for example to an internet gateway or a VPN?",
+    "explanation": "Each subnet is associated with a route table whose entries map destination ranges to targets.",
     "options": [
-      "A VLAN trunk",
-      "A peering connection",
-      "An internet gateway directly",
-      "A NAT gateway"
+      "The DNS zone",
+      "The route table",
+      "The security group",
+      "The load balancer listener"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -4403,19 +4403,19 @@
     "test": 0,
     "module": 1,
     "domain": "cpIdentity",
-    "skill": "Authorization",
+    "skill": "Authentication",
     "difficulty": 2,
     "format": "single",
-    "stem": "A file owner decides personally who else may open the file. Which access model is this?",
-    "explanation": "In discretionary access control the owner sets the permissions.",
+    "stem": "After signing in once, an API client sends a signed, time-limited bearer token with each call instead of a password. Which authentication model is this?",
+    "explanation": "Token-based authentication issues a token after sign-in that the client presents on later requests until it expires.",
     "options": [
-      "Role-based access control",
-      "Mandatory access control",
-      "Attribute-free access",
-      "Discretionary access control"
+      "Token-based",
+      "Shared secret in the URL",
+      "Local users",
+      "Directory-based"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {

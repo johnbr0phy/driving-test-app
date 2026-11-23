@@ -44,7 +44,7 @@ Q = [
      "Flow-proportional composites represent the day's load, which is why most permits require them for BOD and TSS."),
     ("BOD is incubated in the dark mainly so that:",
      "Algae cannot add oxygen", ["The bacteria grow faster", "The bottle stays cool", "Chlorine stays in the sample"],
-     "Light would let algae photosynthesize and add oxygen, hiding the oxygen used by bacteria. The test runs 5 days at 20 C in the dark."),
+     "Light would let algae photosynthesize and add oxygen, hiding the oxygen used by bacteria. The standard method incubates the bottles for 5 days at 20 C in the dark."),
     ("A CBOD test differs from a BOD test because a chemical is added to:",
      "Stop nitrifying bacteria", ["Kill all the bacteria", "Add oxygen to the bottle", "Remove chlorine from the sample"],
      "A nitrification inhibitor keeps ammonia oxidation from adding to the oxygen use, so CBOD measures only carbonaceous demand."),

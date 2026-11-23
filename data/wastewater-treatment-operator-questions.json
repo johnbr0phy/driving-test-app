@@ -389,7 +389,7 @@
     "optionD": "Plugging and wear",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "EPA lists snails as a trickling filter problem: their shells plug the underdrains, wear pumps and fill clarifier hoppers."
+    "explanation": "EPA's fact sheet lists snail problems among trickling filter drawbacks. The shells collect in the underdrains and downstream, where they plug lines, wear pumps and fill clarifier hoppers."
   },
   {
     "type": "WASTEWATEROP",
@@ -554,7 +554,7 @@
     "optionA": "Add chlorine to each pond cell",
     "optionB": "Measure the depth of the sludge",
     "optionC": "Stop all flow to the next cell",
-    "optionD": "Draw from the best water layer",
+    "optionD": "Take water from below the algae and scum",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "EPA's pond manual describes draw-off structures that take water from below the surface, away from floating algae and scum."
@@ -886,14 +886,14 @@
     "state": "ALL",
     "questionId": "WWOP-MEC-024",
     "category": "wwoEquipMech",
-    "question": "Moisture is drained from an air compressor's receiver tank regularly because water left in it:",
-    "optionA": "Raises the tank's pressure rating",
-    "optionB": "Cleans the compressor intake filter",
-    "optionC": "Cools the compressor's lubricating oil",
-    "optionD": "Rusts the tank and wets the air",
+    "question": "A plant air compressor's intake is best placed to draw air from:",
+    "optionA": "Inside the chlorine feed room",
+    "optionB": "Above the headworks screens",
+    "optionC": "Next to the generator exhaust",
+    "optionD": "A clean, cool, dry spot outdoors",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Compression condenses water. Automatic or manual drains keep it from corroding the tank and carrying into instrument and tool air."
+    "explanation": "Cool, clean, dry intake air lets the compressor move more air with less wear. Air drawn near chemicals, wastewater or exhaust carries corrosive gases, moisture and dirt into the system."
   },
   {
     "type": "WASTEWATEROP",
@@ -1131,7 +1131,7 @@
     "optionD": "4.3",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "BOD = 1.6 x 140 x 8.34 = 1,868 lb/day. MLVSS = 0.42 x 2,300 x 8.34 = 8,056 lb. F/M = 1,868 / 8,056 = 0.23. Flipping the fraction gives 4.3."
+    "explanation": "BOD = 1.6 x 140 x 8.34 = 1,868 lb/day. MLVSS = 0.42 x 2,300 x 8.34 = 8,056 lb. Flipping the fraction would give 4.3. F/M = 1,868 / 8,056 = 0.23."
   },
   {
     "type": "WASTEWATEROP",
@@ -1159,7 +1159,7 @@
     "optionD": "9.5 days",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "MCRT = (9,000 + 1,200) / (950 + 70) = 10,200 / 1,020 = 10 days. Leaving out the clarifier solids gives 8.8; leaving out the effluent loss gives 10.7."
+    "explanation": "Leaving out the clarifier solids gives 8.8 and leaving out the effluent loss gives 10.7. MCRT = (9,000 + 1,200) / (950 + 70) = 10,200 / 1,020 = 10 days."
   },
   {
     "type": "WASTEWATEROP",
@@ -1215,7 +1215,7 @@
     "optionD": "750 lb BOD/day/1,000 cu ft",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "BOD = 0.75 x 120 x 8.34 = 750.6 lb/day. Volume = 0.785 x 80 x 80 x 6 = 30,144 cu ft = 30.1 thousand cu ft. Loading = 750.6 / 30.1 = 25."
+    "explanation": "BOD = 0.75 x 120 x 8.34 = 750.6 lb/day. Volume = 0.785 x 80 x 80 x 6 = 30,144 cu ft = 30.1 thousand cu ft. Loading = 750.6 / 30.1 = 25 lb BOD/day per 1,000 cu ft."
   },
   {
     "type": "WASTEWATEROP",
@@ -1299,14 +1299,14 @@
     "optionD": "15 mg/L or more",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "About 2 mg/L is enough for the organisms and for nitrification. Much lower starves them and favors filaments; much higher wastes blower power."
+    "explanation": "Plants commonly hold about 1 to 3 mg/L, often near 2 mg/L; EPA's inspection manual treats less than 1.0 mg/L as low and nitrification needs about 2. Much lower starves them and favors filaments; much higher wastes blower power."
   },
   {
     "type": "WASTEWATEROP",
     "state": "ALL",
     "questionId": "WWOP-BIO-014",
     "category": "wwoBiological",
-    "question": "A sludge that settles slowly and leaves a cloudy, high SVI blanket that rises in the clarifier is most likely:",
+    "question": "A sludge that settles slowly and compacts poorly, with a high SVI and a blanket that rises in the clarifier, is most likely:",
     "optionA": "Pin floc from old sludge",
     "optionB": "Filamentous bulking",
     "optionC": "Rising sludge from denitrification",
@@ -1747,7 +1747,7 @@
     "optionD": "76 percent",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "VS reduction = (In - Out) / (In - In x Out) x 100 = (0.72 - 0.55) / (0.72 - 0.396) x 100 = 52 percent. Subtracting the percents gives 17."
+    "explanation": "VS reduction = (In - Out) / (In - In x Out) x 100 = Subtracting the percents would give 17. VS reduction = (0.72 - 0.55) / (0.72 - 0.396) x 100 = 52 percent."
   },
   {
     "type": "WASTEWATEROP",
@@ -1775,7 +1775,7 @@
     "optionD": "3,734 gpm/sq ft",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Flow = 1,150,000 / 1,440 = 799 gpm. Area = 2 x 14 x 22 = 616 sq ft. Rate = 799 / 616 = 1.30 gpm/sq ft. Using one filter's area gives 2.59."
+    "explanation": "Flow = 1,150,000 / 1,440 = 799 gpm. Area = 2 x 14 x 22 = 616 sq ft. Using one filter's area would give 2.59. Rate = 799 / 616 = 1.30 gpm/sq ft."
   },
   {
     "type": "WASTEWATEROP",
@@ -1817,7 +1817,7 @@
     "optionD": "130 mL/min",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "mL/min = MGD x dose x 3.785 x 1,000,000 / (density x purity x 1,440) = 0.6 x 18 x 3,785,000 / (1,340 x 0.40 x 1,440) = 53."
+    "explanation": "mL/min = MGD x dose x 3.785 x 1,000,000 / (density x purity x 1,440) = 0.6 x 18 x 3,785,000 / (1,340 x 0.40 x 1,440) = 53 mL/min."
   },
   {
     "type": "WASTEWATEROP",
@@ -1838,11 +1838,11 @@
     "state": "ALL",
     "questionId": "WWOP-PRC-012",
     "category": "wwoProcess",
-    "question": "Primary clarification is expected to remove most of the:",
+    "question": "Primary clarification is expected to remove:",
     "optionA": "Most of the dissolved BOD",
     "optionB": "Most of the ammonia",
     "optionC": "Most of the pathogens",
-    "optionD": "Settleable material and some BOD",
+    "optionD": "Most settleable solids and some BOD",
     "correctAnswer": "D",
     "correctIndex": 3,
     "explanation": "Primary settling takes out settleable solids and floatables, which also removes part of the BOD. Dissolved material passes on to secondary treatment."
@@ -1887,7 +1887,7 @@
     "optionD": "10 mg/L",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Secondary treatment is BOD5 and TSS each at or below 30 mg/L as a 30-day average and 45 mg/L as a 7-day average."
+    "explanation": "The 7-day average limit is 45 mg/L; the 30-day average limit for BOD5 and TSS is 30 mg/L."
   },
   {
     "type": "WASTEWATEROP",
@@ -1901,7 +1901,7 @@
     "optionD": "85 percent",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "40 CFR 133.102 requires at least 85 percent removal as a 30-day average. The equivalent-to-secondary rule in 133.105 is 65 percent."
+    "explanation": "The equivalent-to-secondary rule in 133.105 allows 65 percent, but 40 CFR 133.102 requires at least 85 percent removal as a 30-day average."
   },
   {
     "type": "WASTEWATEROP",
@@ -2034,14 +2034,14 @@
     "state": "ALL",
     "questionId": "WWOP-PRC-026",
     "category": "wwoProcess",
-    "question": "UV disinfection kills microorganisms by:",
-    "optionA": "Leaving a lasting residual",
-    "optionB": "Damaging their DNA",
-    "optionC": "Oxidizing them with chlorine",
-    "optionD": "Heating the water past boiling",
+    "question": "The UV dose an organism receives in a UV channel depends on the light intensity and:",
+    "optionA": "The effluent's chlorine residual",
+    "optionB": "How long it is exposed",
+    "optionC": "The effluent's nitrate level",
+    "optionD": "The blower discharge pressure",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "UV light alters genetic material so the organisms cannot reproduce. It leaves no residual in the effluent."
+    "explanation": "Dose is intensity times exposure time. EPA notes UV performance depends on the intensity, the time organisms are exposed and the wastewater itself, so high flow (less time) or low intensity lowers the dose."
   },
   {
     "type": "WASTEWATEROP",
@@ -2090,14 +2090,14 @@
     "state": "ALL",
     "questionId": "WWOP-PRC-030",
     "category": "wwoProcess",
-    "question": "Adding alum for phosphorus removal tends to:",
-    "optionA": "Raise alkalinity in the basin",
-    "optionB": "Lower alkalinity and pH",
-    "optionC": "Raise the pH sharply",
-    "optionD": "Add nitrogen to the effluent",
+    "question": "Starting alum or ferric feed for phosphorus removal usually means the plant must also plan for:",
+    "optionA": "Less polymer at the press",
+    "optionB": "More sludge to handle",
+    "optionC": "Higher effluent ammonia",
+    "optionD": "A shorter chlorine contact time",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Aluminum and iron salts use up alkalinity as they react, so pH can drop, especially in a nitrifying plant. Alkalinity may need to be added."
+    "explanation": "The metal phosphate and metal hydroxide precipitates add solids, so the plant wastes and dewaters more sludge once chemical feed starts."
   },
   {
     "type": "WASTEWATEROP",
@@ -2118,14 +2118,14 @@
     "state": "ALL",
     "questionId": "WWOP-PRC-032",
     "category": "wwoProcess",
-    "question": "A jar test in a wastewater plant is used to:",
-    "optionA": "Measure the dissolved oxygen",
-    "optionB": "Count the coliform bacteria",
-    "optionC": "Set the aeration blower speed",
-    "optionD": "Choose the best chemical dose",
+    "question": "Polymer overdosed to a belt filter press most often shows up as:",
+    "optionA": "A drier, crumbly cake",
+    "optionB": "Clearer filtrate than ever",
+    "optionC": "Lower polymer cost per ton",
+    "optionD": "Slimy sludge that blinds the belt",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Jar tests run side-by-side doses of coagulant or polymer to find the dose that gives the best floc and clearest water."
+    "explanation": "Too much polymer leaves sticky, slimy sludge that coats and blinds the belt and drains poorly. Dose to the floc, not past it."
   },
   {
     "type": "WASTEWATEROP",
@@ -2335,7 +2335,7 @@
     "optionD": "Chlorine stays in the sample",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Light would let algae photosynthesize and add oxygen, hiding the oxygen used by bacteria. The test runs 5 days at 20 C in the dark."
+    "explanation": "Light would let algae photosynthesize and add oxygen, hiding the oxygen used by bacteria. The standard method incubates the bottles for 5 days at 20 C in the dark."
   },
   {
     "type": "WASTEWATEROP",
@@ -2525,7 +2525,7 @@
     "questionId": "WWOP-SAF-005",
     "category": "wwoSafety",
     "question": "Methane building up in a digester building or covered wet well is a hazard mainly because it:",
-    "optionA": "It can explode and displace oxygen",
+    "optionA": "Can explode and displace oxygen",
     "optionB": "Is heavier than air and pools",
     "optionC": "Smells strongly of eggs",
     "optionD": "Is always below its LEL",
@@ -2538,14 +2538,14 @@
     "state": "ALL",
     "questionId": "WWOP-SAF-006",
     "category": "wwoSafety",
-    "question": "A worker collapses at the bottom of a lift station wet well. Coworkers at the top should:",
-    "optionA": "Climb down at once to help",
-    "optionB": "Call rescue and stay out",
-    "optionC": "Turn off the gas monitor",
-    "optionD": "Lower a bucket of water to them",
+    "question": "An operator's gas monitor alarms while the operator is working inside a wet well. The operator should first:",
+    "optionA": "Finish the task quickly",
+    "optionB": "Leave the space at once",
+    "optionC": "Silence the alarm and continue",
+    "optionD": "Recalibrate the meter inside",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Most confined space deaths are would-be rescuers. Call emergency services and use retrieval equipment or trained rescuers with breathing air."
+    "explanation": "An alarm means the atmosphere may be hazardous. Get out first; the space is ventilated and retested before anyone goes back in."
   },
   {
     "type": "WASTEWATEROP",
@@ -2643,7 +2643,7 @@
     "optionD": "1 week",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "122.41(l)(6) requires an oral report within 24 hours of becoming aware of it, followed by a written report within 5 days."
+    "explanation": "122.41(l)(6) requires a written report within 5 days, but the first, oral report is due within 24 hours of becoming aware of the noncompliance."
   },
   {
     "type": "WASTEWATEROP",

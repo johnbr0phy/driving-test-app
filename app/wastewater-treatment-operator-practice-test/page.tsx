@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How many questions are on the Class I wastewater treatment exam?",
-    a: "WPI's 2025 Need-to-Know Criteria give the standardized Class I exam 100 scored questions plus up to 10 unscored pre-test questions. About 10% are calculations, printed in US and metric units, and WPI's formula/conversion table is provided. Time limits and the pass mark are set by each state; on the 2025 exams WPI reports a scaled score with 70 to pass, so 70% is the readiness line used here.",
+    a: "WPI's 2025 Need-to-Know Criteria give the standardized Class I exam 100 scored questions plus up to 10 unscored pre-test questions. About 10% are calculations, printed in US and metric units, and WPI's formula/conversion table is provided. Time limits vary by state. WPI reports a scaled score, and 70 scaled score units is the pass mark on its 2025 exams, which is not the same as 70% correct; states that write their own exams set their own pass marks. 70% is the readiness line used here.",
   },
   {
     q: "What does the Class I wastewater treatment exam cover?",

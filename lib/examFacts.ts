@@ -540,12 +540,12 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   wastewaterop: {
     answer:
-      "The Wastewater Treatment Operator Class I exam is the entry-level certification exam for wastewater treatment plant operators. Most US states certify operators themselves, and many use the standardized exam from Water Professionals International (WPI, formerly the Association of Boards of Certification, ABC). WPI's 2025 Need-to-Know Criteria give it 100 scored questions plus up to 10 unscored pre-test questions: Equipment Evaluation, Maintenance and/or Operation 39, Treatment Process Evaluation and Adjustment 38, Laboratory Analysis 10, and Security, Safety, and Administrative Procedures 13. About 10% are calculations, printed in US and metric units, with WPI's formula/conversion table provided. Each state sets its own pass mark, time limit and class names; on the 2025 exams WPI reports a scaled score where 70 passes.",
+      "The Wastewater Treatment Operator Class I exam is the entry-level certification exam for wastewater treatment plant operators. Most US states certify operators themselves, and many use the standardized exam from Water Professionals International (WPI, formerly the Association of Boards of Certification, ABC). WPI's 2025 Need-to-Know Criteria give it 100 scored questions plus up to 10 unscored pre-test questions: Equipment Evaluation, Maintenance and/or Operation 39, Treatment Process Evaluation and Adjustment 38, Laboratory Analysis 10, and Security, Safety, and Administrative Procedures 13. About 10% are calculations, printed in US and metric units, with WPI's formula/conversion table provided. WPI reports a scaled score, and 70 scaled score units passes on its 2025 exams (not the same as 70% correct). Time limits and class names vary by state, and states that write their own exams set their own pass marks.",
     rows: [
       { label: "Questions", value: "100 scored + up to 10 unscored pre-test (WPI standardized exam)" },
       { label: "Weights", value: "Equipment 39, Treatment process 38, Safety and admin 13, Lab 10" },
       { label: "Calculations", value: "About 10%, with WPI's formula/conversion table provided" },
-      { label: "Passing score", value: "Set by each state; WPI's 2025 exams report a scaled score with 70 to pass" },
+      { label: "Passing score", value: "70 scaled score units on WPI's 2025 exams (not 70% correct); states with their own exams set their own" },
       { label: "Given by", value: "State operator certification programs" },
       { label: "Class names", value: "Vary by state (Class I, Grade 1, Class D and others)" },
     ],

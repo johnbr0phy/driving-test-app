@@ -102,9 +102,31 @@ state agencies that host them for candidates.
   Chlorination and dechlorination, contact time, low-pressure UV lamps at 253.7 nm, quartz
   sleeves and fouling, loss of UV effectiveness with turbidity and TSS.
 
+- US EPA, NPDES Compliance Inspection Manual, Chapter 4 (Interim Revised, 2017), fetched 2026-11-23:
+  https://www.epa.gov/sites/default/files/2017-03/documents/npdesinspect-chapter-04.pdf
+  Flags velocity-controlled grit removal running well above or below 1 ft per second; treats
+  aeration tank DO below 1.0 mg/L as low and nitrification DO below 2 mg/L as a problem; lists
+  pin floc, stable dark tan foam and white sudsy foam as activated sludge indicators.
+- US EPA, Preliminary Wastewater Treatment (technical assistance webinar, July 2023), fetched 2026-11-23:
+  https://www.epa.gov/system/files/documents/2023-10/tawebinar_preliminarywastewatertreatment_230725.pdf
+  Horizontal-flow grit chambers kept near 1 ft/sec; grit buildup from velocity that is too low.
+
 ## Left out
 
 Fees, state classification and experience rules, collection system and industrial waste topics
 (separate WPI exams), anaerobic digestion (not on the Class I outline), the metric versions of the
 calculations (the real exam prints US and metric units side by side; the bank uses US units),
 drawings and figure items, and state reporting forms.
+
+## Second review (2026-11-23)
+
+Blind review of all 200 items; every calculation recomputed. Rule-of-thumb items checked against
+EPA: grit velocity and aeration DO against the NPDES inspection manual and the preliminary
+treatment webinar, UV at 253.7 nm, sleeve fouling and TSS against the disinfection fact sheet,
+snails, ponding and filter fly remedies against the trickling filter fact sheet, pond DO and pH
+swings, spring odor after ice-out and duckweed shading against the pond manual, and the 70 scaled
+pass mark against the Oregon DEQ fact sheet. The BOD dark incubation and the 1-hour Imhoff cone
+reading are the approved Standard Methods procedures referenced by 40 CFR 136.3. Six items that
+repeated a fact and answer from the water treatment, OSHA 10 or OSHA 30 banks (compressor receiver
+drains, UV damaging DNA, alum using alkalinity, the jar test, confined space rescuers, drawing from
+the best water layer) were rewritten on new facts.

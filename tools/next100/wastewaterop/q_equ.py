@@ -87,7 +87,7 @@ Q = [
      "The underdrains are open to the air so air can flow up or down through the media; blocked underdrains starve the biofilm of oxygen."),
     ("Snail shells collecting in trickling filter underdrains and downstream pumps mainly cause:",
      "Plugging and wear", ["Better BOD removal in the filter", "Less sludge production overall", "Higher dissolved oxygen in the effluent"],
-     "EPA lists snails as a trickling filter problem: their shells plug the underdrains, wear pumps and fill clarifier hoppers."),
+     "EPA's fact sheet lists snail problems among trickling filter drawbacks. The shells collect in the underdrains and downstream, where they plug lines, wear pumps and fill clarifier hoppers."),
     ("In a dual-media tertiary filter, the coarse, lighter anthracite sits:",
      "On top of the sand", ["Below the sand, near the underdrain", "Mixed evenly through the sand layer", "In a separate box outside the filter"],
      "Anthracite is lighter, so after backwash it restratifies on top. Coarse on top and fine below lets the filter store solids through its depth."),
@@ -122,6 +122,6 @@ Q = [
      "Supply oxygen and mixing", ["Cool the sludge in summer", "Strip phosphorus out of the sludge", "Settle the sludge quickly for decanting"],
      "The aerobic digester needs dissolved oxygen for endogenous respiration and enough mixing to keep solids suspended. Air is shut off only to decant."),
     ("In a pond system, a variable-height transfer structure between cells lets the operator:",
-     "Draw from the best water layer", ["Add chlorine to each pond cell", "Measure the depth of the sludge", "Stop all flow to the next cell"],
+     "Take water from below the algae and scum", ["Add chlorine to each pond cell", "Measure the depth of the sludge", "Stop all flow to the next cell"],
      "EPA's pond manual describes draw-off structures that take water from below the surface, away from floating algae and scum."),
 ]

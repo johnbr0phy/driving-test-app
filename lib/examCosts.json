@@ -258,6 +258,16 @@
     "value": "At least 60 days between attempts, at most four a year; pass within five years or five attempts, then once every six months",
     "url": "https://jcnde.ada.org/-/media/project/ada-organization/ada/jcnde/files/2026_inbde_candidate_guide.pdf"
    }
+  },
+  "cafsc": {
+   "fee": {
+    "value": "$25, which covers a second attempt with the same instructor",
+    "url": "https://oag.ca.gov/firearms/fscfaqs"
+   },
+   "retake": {
+    "value": "Another version of the test after 24 hours, same DOJ Certified Instructor",
+    "url": "https://oag.ca.gov/firearms/fscfaqs"
+   }
   }
  },
  "series66": {

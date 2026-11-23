@@ -392,6 +392,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AFWA Trapper Education Manual (2022) and the AFWA trapping Best Management Practices, checked November 2026",
     source: { name: "Association of Fish and Wildlife Agencies", url: "https://www.fishwildlife.org/afwa-inspires/furbearer-management" },
   },
+  cafsc: {
+    answer:
+      "In California you need a valid Firearm Safety Certificate (FSC) to buy or receive any firearm except an antique, unless you are exempt (Penal Code 31615). You earn it by passing a written test from the California Department of Justice, given by DOJ Certified Instructors, generally at licensed firearms dealers. The test has 30 true/false and multiple choice questions and you pass with 75%, 23 correct. If you fail, the same instructor can give you another version after 24 hours at no extra charge. The certificate is valid for five years, and you must be at least 18 to take the test. Everything on the test is in the DOJ Firearm Safety Certificate Study Guide. Before you take delivery of a firearm you also perform a safe handling demonstration with an instructor.",
+    rows: [
+      { label: "Questions", value: "30, true/false and multiple choice" },
+      { label: "Pass mark", value: "75%, 23 of 30 correct" },
+      { label: "Retake", value: "Another version after 24 hours, same instructor, no extra charge" },
+      { label: "Valid for", value: "5 years from issue" },
+      { label: "Minimum age", value: "18 to take the test" },
+      { label: "Given by", value: "DOJ Certified Instructors, generally at licensed dealers" },
+    ],
+    basedOn: "the DOJ Firearm Safety Certificate page, its FSC FAQ and the Firearm Safety Certificate Study Guide (2025, revised June 2025), checked November 2026",
+    source: { name: "California DOJ: Firearm Safety Certificate FAQ", url: "https://oag.ca.gov/firearms/fscfaqs" },
+  },
   bowhunter: {
     answer:
       "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or get a bowhunting license, so check your own. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",

@@ -370,3 +370,4 @@ import "./hha";
 import "./crc";
 import "./acls";
 import "./pals";
+import "./cafsc";

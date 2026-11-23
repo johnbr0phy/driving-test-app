@@ -75,7 +75,7 @@ Q = [
      "For a bolt action long gun the guide says to inspect both the chamber and the internal magazine to make sure it is unloaded."),
     ("Which bullets should never go in the tubular magazine of a centerfire lever action rifle?",
      "Pointed or conical", ["Flat point", "Hollow point", "Round nose flat point"],
-     "The guide says to use flat point, hollow point, round nose flat point or similar rounds; pointed tips can set off the primer of the round ahead in a tube."),
+     "The guide says to use flat point, hollow point, round nose flat point or similar rounds, and never pointed or conical point rounds in a centerfire rifle with a tubular magazine, because doing so can cause injury or damage."),
     ("What does muzzle awareness mean in the study guide?",
      "Pointed safely, often down", ["Wiping the muzzle clean", "Capping the muzzle on storage", "Muzzle toward the target"],
      "Muzzle awareness means keeping the firearm pointed in a safe direction, preferably down at the ground."),

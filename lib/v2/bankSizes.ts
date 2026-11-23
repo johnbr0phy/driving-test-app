@@ -35,6 +35,7 @@ export const BANK_SIZES: Record<string, number> = {
   rexpn: 210,
   pmp: 210,
   faapvt: 202,
+  faaifr: 200,
   psat: 211,
   praxis: 200,
   gre: 194,

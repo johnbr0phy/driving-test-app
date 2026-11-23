@@ -6403,6 +6403,19 @@
     --brand-border-light: 26 45% 90%;
     --brand-gradient-to: 0 0% 98%;
   }
+  /* FAA Instrument Rating theme: deep night navy (v2 exam; matches lib/v2/exams/faaifr.ts theme) */
+  [data-theme="faaifr"] {
+    --brand: 237 35% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 237 35% 96%;
+    --brand-hover: 237 35% 11%;
+    --brand-dark: 237 35% 8%;
+    --brand-darker: 237 35% 6%;
+    --brand-muted: 237 25% 70%;
+    --brand-border: 237 30% 80%;
+    --brand-border-light: 237 30% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   /* Cisco CCNP ENCOR theme: deep muted violet (v2 exam; matches lib/v2/exams/ccnpencor.ts theme) */
   [data-theme="ccnpencor"] {
     --brand: 276 40% 18%;
@@ -13808,6 +13821,17 @@
     --brand-muted: 26 40% 45%;
     --brand-dark: 26 70% 65%;
     --brand-darker: 26 70% 78%;
+  }
+  .dark [data-theme="faaifr"] {
+    --brand: 237 35% 50%;
+    --brand-hover: 237 35% 42%;
+    --brand-light: 237 35% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 237 30% 24%;
+    --brand-border: 237 30% 34%;
+    --brand-muted: 237 25% 45%;
+    --brand-dark: 237 35% 65%;
+    --brand-darker: 237 35% 78%;
   }
   .dark [data-theme="cobit"] {
     --brand: 324 100% 44.1%;

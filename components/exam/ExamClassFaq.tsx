@@ -226,6 +226,7 @@ export const TEACHES: Record<string, string> = {
   corrections: "a criminal justice or corrections academy prep course",
   dispatcher: "a 911 dispatch academy or telecommunicator course",
   faapvt: "a private pilot ground school",
+  faaifr: "an instrument rating ground school",
   psat: "PSAT prep",
   praxis: "a teacher preparation program",
   cbest: "a teacher preparation or substitute teaching program",

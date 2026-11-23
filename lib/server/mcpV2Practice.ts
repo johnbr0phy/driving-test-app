@@ -60,6 +60,7 @@ import '@/lib/v2/banks/staaralg1';
 import '@/lib/v2/banks/staareng1';
 import '@/lib/v2/banks/staarbio';
 import '@/lib/v2/banks/faapvt';
+import '@/lib/v2/banks/faaifr';
 import '@/lib/v2/banks/psat';
 import '@/lib/v2/banks/praxis';
 import '@/lib/v2/banks/gre';

@@ -91,6 +91,13 @@ bank is practice on the referential, not a copy of the test. Fetched 2026-11-22 
   https://inrs.fr/dam/jcr:3828f4a8-977f-4dcc-84b7-2573678332db/ed4406.pdf
   - The nine CLP pictograms and their meanings, for the "produits dangereux" items.
 
+- INRS ED 885, "La signalisation de santé et de sécurité au travail", 2e édition, septembre
+  2015, fetched 2026-11-22: https://inrs.fr/dam/jcr:3c1f7418-b0dc-462d-be95-80806c082a16/ed885.pdf
+  - Shapes and colours of workplace signs under the arrêté du 4 novembre 1993 (interdiction
+    round and barred red, avertissement yellow triangle, obligation round blue, sauvetage green,
+    incendie red, yellow and black bands for risk or danger), and the "chariots élévateurs"
+    warning and "interdit aux chariots" signs.
+
 ## Not loaded, and how the copy words it
 - Légifrance (Code du travail R4323-55, R4323-56, arrêté du 2 décembre 1998, arrêté du 1er mars
   2004) returned 403 to automated readers. The rules are taken as R489 and ED 766 state them,

@@ -1082,6 +1082,14 @@
         "pr": 979,
         "findings": 8
       }
+    ],
+    "safe": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 990,
+        "findings": 20
+      }
     ]
   },
   "pendingReviews": {

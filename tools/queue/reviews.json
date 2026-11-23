@@ -1734,5 +1734,13 @@
       "pr": 1004,
       "findings": 0
     }
+  ],
+  "atvsafety": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1005,
+      "findings": 22
+    }
   ]
 }

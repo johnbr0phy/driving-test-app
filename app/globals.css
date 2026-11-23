@@ -6263,6 +6263,19 @@
     --brand-border-light: 14 30% 88%;
     --brand-gradient-to: 24 60% 94%;
   }
+  /* ATV and snowmobile safety course theme: dark trail olive */
+  [data-theme="atvsafety"] {
+    --brand: 84 85% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 60% 95%;
+    --brand-hover: 84 85% 12%;
+    --brand-dark: 84 85% 11%;
+    --brand-darker: 84 85% 7%;
+    --brand-muted: 84 30% 68%;
+    --brand-border: 84 30% 78%;
+    --brand-border-light: 84 30% 88%;
+    --brand-gradient-to: 94 60% 94%;
+  }
   /* Trapper education theme: dark muddy marsh brown */
   [data-theme="trapper"] {
     --brand: 48 40% 20%;
@@ -13817,6 +13830,17 @@
     --brand-muted: 14 30% 45%;
     --brand-dark: 14 50% 65%;
     --brand-darker: 14 50% 78%;
+  }
+  .dark [data-theme="atvsafety"] {
+    --brand: 84 85% 27.5%;
+    --brand-hover: 84 85% 19.5%;
+    --brand-light: 84 45% 13%;
+    --brand-gradient-to: 94 40% 11%;
+    --brand-border-light: 84 30% 24%;
+    --brand-border: 84 30% 34%;
+    --brand-muted: 84 30% 45%;
+    --brand-dark: 84 85% 65%;
+    --brand-darker: 84 85% 78%;
   }
   .dark [data-theme="trapper"] {
     --brand: 48 40% 36.9%;

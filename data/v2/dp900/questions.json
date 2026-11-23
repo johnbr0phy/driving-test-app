@@ -281,12 +281,12 @@
     "skill": "Visualizations",
     "difficulty": 1,
     "format": "single",
-    "stem": "Which visual best shows how monthly revenue changed over two years?",
+    "stem": "A report must show how a store's weekly footfall rose and fell across a year. Which visual fits best?",
     "explanation": "Line charts show trends over time. Pie charts show parts of a whole, and a card shows a single key figure.",
     "options": [
-      "Pie chart",
       "Card",
       "Filled map",
+      "Pie chart",
       "Line chart"
     ],
     "correct": [
@@ -1130,16 +1130,16 @@
     "skill": "Unstructured data",
     "difficulty": 1,
     "format": "single",
-    "stem": "Which of these is usually treated as unstructured data?",
+    "stem": "A firm keeps thousands of scanned PDF contracts. How is this data usually classified?",
     "explanation": "Documents, images, audio, video and other binary files have no specific field structure, so they are unstructured. CSV and tables are structured, and JSON is semi-structured.",
     "options": [
-      "A product price list table",
-      "Scanned PDF contracts",
-      "A JSON order document",
-      "An employee roster in CSV"
+      "Unstructured",
+      "Structured",
+      "Semi-structured",
+      "Relational"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -2391,16 +2391,16 @@
     "skill": "Semi-structured data",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is semi-structured data?",
+    "stem": "How does semi-structured data differ from structured data?",
     "explanation": "Semi-structured data has some organization, such as named fields, but individual records can add or drop fields. Fixed columns describe structured data.",
     "options": [
-      "Data with some structure that varies",
-      "Data in tables with fixed column sets",
-      "Numbers that encode meaning",
-      "Binary media with no fields"
+      "It must be stored in tables",
+      "It holds only numeric values",
+      "It has no field names at all",
+      "Fields can vary between records"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -3171,13 +3171,13 @@
     "skill": "Storage redundancy",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which redundancy option keeps three copies of data across availability zones in one region?",
-    "explanation": "Zone-redundant storage (ZRS) copies data across three availability zones. LRS keeps three copies in one datacenter, and GRS also copies to a second region.",
+    "stem": "What does RA-GRS add to geo-redundant storage (GRS)?",
+    "explanation": "GRS copies data asynchronously to a secondary region; RA-GRS adds read access to that secondary copy. Neither lets you write to both regions.",
     "options": [
-      "LRS",
-      "ZRS",
-      "GRS",
-      "RA-GRS"
+      "A third availability zone",
+      "Read access to the secondary region",
+      "Writes in both regions at once",
+      "Synchronous copies to the secondary"
     ],
     "correct": [
       1

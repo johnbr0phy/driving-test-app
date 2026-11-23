@@ -43,8 +43,8 @@ ITEMS = [
 
     # ---------------- Test 2 ----------------
     single(2, "Unstructured data", 1,
-           "Which of these is usually treated as unstructured data?",
-           ["Scanned PDF contracts", "A product price list table", "A JSON order document", "An employee roster in CSV"],
+           "A firm keeps thousands of scanned PDF contracts. How is this data usually classified?",
+           ["Unstructured", "Structured", "Semi-structured", "Relational"],
            "Documents, images, audio, video and other binary files have no specific field structure, so they are unstructured. CSV and tables are structured, and JSON is semi-structured."),
     single(2, "Entities and attributes", 1,
            "In a data model for customers, what is a customer's phone number?",
@@ -83,8 +83,8 @@ ITEMS = [
            ["Square brackets", "Curly braces", "Angle brackets", "Double quotation marks"],
            "JSON wraps an object in curly braces and a collection (an array) in square brackets. Angle brackets mark XML tags."),
     single(0, "Semi-structured data", 2,
-           "What is semi-structured data?",
-           ["Data with some structure that varies", "Data in tables with fixed column sets", "Binary media with no fields", "Numbers that encode meaning"],
+           "How does semi-structured data differ from structured data?",
+           ["Fields can vary between records", "It has no field names at all", "It must be stored in tables", "It holds only numeric values"],
            "Semi-structured data has some organization, such as named fields, but individual records can add or drop fields. Fixed columns describe structured data."),
     single(0, "File formats", 2,
            "A query reads 3 of 200 columns across billions of rows. Which file layout suits it best?",

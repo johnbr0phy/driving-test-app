@@ -9,7 +9,7 @@ ITEMS = [
            ["Power BI Desktop", "Power BI service", "Power BI phone app", "Azure Data Studio"],
            "Power BI Desktop, a Windows app, is where authors import data, model it and build reports, which they then publish to the Power BI service to share."),
     single(1, "Visualizations", 1,
-           "Which visual best shows how monthly revenue changed over two years?",
+           "A report must show how a store's weekly footfall rose and fell across a year. Which visual fits best?",
            ["Line chart", "Pie chart", "Card", "Filled map"],
            "Line charts show trends over time. Pie charts show parts of a whole, and a card shows a single key figure."),
     single(1, "Data models", 2,

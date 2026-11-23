@@ -3764,6 +3764,20 @@
     --brand-gradient-to: 144 35% 92%;
   }
 
+  /* German hunting licence exam (Jägerprüfung) theme */
+  [data-theme="dejagd"] {
+    --brand: 100 20% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 100 25% 95%;
+    --brand-hover: 100 20% 14%;
+    --brand-dark: 100 22% 12%;
+    --brand-darker: 100 24% 8%;
+    --brand-muted: 100 12% 62%;
+    --brand-border: 100 15% 78%;
+    --brand-border-light: 100 18% 89%;
+    --brand-gradient-to: 45 40% 93%;
+  }
+
   /* Portugal IMT motorcycle theory theme (14 75% 30% clashed with caweld, ctet, biharpolice) */
   [data-theme="ptmoto"] {
     --brand: 14 100% 30%;
@@ -10556,6 +10570,18 @@
     --brand-muted: 144 15% 45%;
     --brand-dark: 144 20% 65%;
     --brand-darker: 144 20% 78%;
+  }
+
+  .dark [data-theme="dejagd"] {
+    --brand: 100 20% 40.8%;
+    --brand-hover: 100 20% 32.8%;
+    --brand-light: 100 25% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 100 18% 24%;
+    --brand-border: 100 15% 34%;
+    --brand-muted: 100 12% 45%;
+    --brand-dark: 100 22% 65%;
+    --brand-darker: 100 24% 78%;
   }
 
   .dark [data-theme="ptmoto"] {

@@ -5692,6 +5692,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "Landratsamt München: guidance sheet on the Heilpraktiker knowledge test (PDF, German)", url: "https://www.landkreis-erding.de/media/23374/merkblatt-heilpraktiker-stand-juli-2023.pdf" },
   },
 
+  dejagd: {
+    answer:
+      "A first German hunting licence (Jagdschein) needs a passed Jägerprüfung under § 15 of the Federal Hunting Act. It has a written, an oral and a practical part, and each state (Land) sets the details. In Bavaria, whose format Tigertest follows, the written part is 100 multiple-choice questions in 100 minutes: 16 each from hunting weapons and traps, game biology, law, game management and hunting practice, and hunting dogs, and 20 from conservation, farming, forestry and damage prevention. A candidate fails with more than 25 questions wrong, incomplete or unanswered; a question can have more than one correct answer. Then come an oral exam in all six subject areas and a practical part with weapon handling and rifle shooting (four shots at a roe buck target at 100 m, at least three hits). Bavaria's Landesamt für Maß und Gewicht runs the exam four times a year; the minimum age is 15 and candidates must prove theoretical and practical training. A licence from any state is valid throughout Germany.",
+    rows: [
+      { label: "Run by", value: "Each Land; in Bavaria the Landesamt für Maß und Gewicht" },
+      { label: "Written part (Bavaria)", value: "100 multiple-choice questions in 100 minutes" },
+      { label: "Pass mark (Bavaria)", value: "At most 25 wrong, incomplete or unanswered" },
+      { label: "Subject areas", value: "Six, 16 questions each, conservation 20" },
+      { label: "Then", value: "Oral exam and practical part with rifle shooting" },
+      { label: "Language", value: "German" },
+      { label: "Tigertest mock tests", value: "2 x 100 questions in German, 75 to pass" },
+    ],
+    basedOn: "Bundesjagdgesetz § 15, the Bavarian Jäger- und Falknerprüfungsordnung (JFPO §§ 10 to 15) and the Bayernportal page on the Jägerprüfung, checked November 2026",
+    source: { name: "BAYERN.RECHT: Jäger- und Falknerprüfungsordnung (JFPO, in German)", url: "https://www.gesetze-bayern.de/Content/Document/BayJFPO/true" },
+  },
+
   ptmoto: {
     answer:
       "Portugal's motorcycle theory exam is the IMT's computer theory test (exame de código) for categories A1, A2 and A, taken at an exam centre after enrolling at a driving school. A candidate with no licence answers 40 multiple-choice questions in 40 minutes: 30 on the rules common to all vehicles and 10 on the motorcycle programme (protective gear, being seen, handling, road surfaces and the machine), and passes with at least 36 correct. A holder of a car licence (B or B1) seeking A2 or A answers only the 10 motorcycle questions in 10 minutes and needs 9 right. The test is in Portuguese; a candidate without enough Portuguese can ask the IMT for a translated test. A pass is valid for one year. Minimum ages are 16 for A1 (with a parent's consent under 18), 18 for A2, and 24 for A, or 20 after two years with A2.",

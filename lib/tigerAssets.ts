@@ -184,7 +184,7 @@ const BORROWED_SETS: Record<string, string> = {
   escapcond: "cdl", espolicia: "police", esguardia: "police", esvigilante: "security",
   // Germany (Nov 2026): motorcycle the motorcycle tiger, AEVO the teaching tiger, 34a the security tiger.
   // Heilpraktiker has its own non-physician practitioner set above.
-  demotorrad: "moto", deaevo: "praxisplt", de34a: "security",
+  demotorrad: "moto", deaevo: "praxisplt", de34a: "security", dejagd: "hunter",
   // Portugal (Nov 2026): motorcycle the motorcycle tiger, CAM the CDL tiger, TVDE the car tiger, vigilante the security tiger.
   ptmoto: "moto", ptcam: "cdl", pttvde: "driving", ptvigil: "security",
   // Malta (Nov 2026): motorcycle the motorcycle tiger, CPC the CDL tiger, taxi the car tiger, guard the security tiger.

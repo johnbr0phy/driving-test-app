@@ -48,8 +48,7 @@ TierSchG, BNatSchG, Tier-LMHV, EU hygiene law), and the few Bavarian rules are l
   https://www.stmwi.bayern.de/fileadmin/user_upload/stmwi/jagd-forst/jagd/2026-03-31-Reform-des-Bayerischen-Jagdgesetzes-2026-Erlaeuterndes-Faktenblatt.pdf
   - From 1 April 2026: Rehwild may be hunted without Abschussplan if the Jagdgenossenschaft
     decides so (not asked); new Rehwild seasons in Bayern (Böcke 16. April bis 15. Oktober,
-    Schmalrehe 16. April bis 15. Januar, Geißen und Kitze 1. September bis 15. Januar; used in
-    two items labelled "in Bayern"); Wolf and Goldschakal added to Bavarian hunting law (not
+    Schmalrehe 16. April bis 15. Januar, Geißen und Kitze 1. September bis 15. Januar; not asked); Wolf and Goldschakal added to Bavarian hunting law (not
     asked: the federal change was still in progress); Schalldämpfer ban removed; from 1 January
     2027 the Bavarian Jägerprüfung also proves Fallenjagd competence.
 - LMG 2027 dates calendar (format only): https://lmg.bayern.de/mam/aufgaben_leistungen/jaegerpruefung/jp_27_termine_kalender.pdf
@@ -122,7 +121,7 @@ TierSchG, BNatSchG, Tier-LMHV, EU hygiene law), and the few Bavarian rules are l
   Facts kept to the uncontested textbook core; no population figures or rankings.
 
 ## Left out on purpose
-- Season dates (Jagdzeiten) other than the two Bavarian Rehwild dates from the 2026 Faktenblatt;
+- Season dates (Jagdzeiten);
   wolf and golden jackal hunting (law in flux); Rehwild Abschussplanfreiheit (new, local);
   fees, fines, insurance sums; Falknerprüfung; anything about the exam itself.
 - Multiple-answer items: the real catalogue allows several correct answers; Tigertest asks one.

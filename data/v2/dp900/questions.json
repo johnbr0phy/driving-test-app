@@ -2370,16 +2370,16 @@
     "skill": "Ingestion",
     "difficulty": 3,
     "format": "single",
-    "stem": "A pipeline must load data to destinations outside Fabric, including on-premises systems. Which service suits it?",
+    "stem": "A team that does not use Fabric needs pipelines between Azure and on-premises systems. Which service fits?",
     "explanation": "Standalone Azure Data Factory, which uses linked services, suits destinations outside Fabric and hybrid on-premises work. Fabric Data Factory is built into Fabric.",
     "options": [
-      "Azure Data Factory",
-      "Fabric Data Factory",
+      "Azure Event Hubs",
       "Power BI Desktop",
-      "Azure Event Hubs"
+      "Fabric Data Factory",
+      "Azure Data Factory"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -3977,7 +3977,7 @@
     "options": [
       "Real-Time hub",
       "Unity Catalog",
-      "OneLake catalog",
+      "Purview data map",
       "Data map"
     ],
     "correct": [

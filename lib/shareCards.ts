@@ -625,6 +625,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(152, 75%, 14%)",
     "tint": "hsl(152, 75%, 96%)"
   },
+  "dp900": {
+    "color": "hsl(156, 55%, 14%)",
+    "tint": "hsl(156, 55%, 96%)"
+  },
   "az104": {
     "color": "hsl(221, 85%, 14%)",
     "tint": "hsl(221, 85%, 96%)"

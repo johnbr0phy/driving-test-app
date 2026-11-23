@@ -48,6 +48,8 @@ const TEACHER_LED = new Set([
   "ccst",
   // Azure administrator courses and bootcamps (AZ-104)
   "az104",
+  // Azure data fundamentals courses (DP-900)
+  "dp900",
   // Microsoft security operations courses and SOC bootcamps (SC-200)
   "sc200",
   // Entry-level cybersecurity courses and bootcamps (ISC2 CC)

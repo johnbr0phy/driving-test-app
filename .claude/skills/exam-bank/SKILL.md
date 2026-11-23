@@ -12,6 +12,11 @@ skipped those rules came back with the correct option being the longest choice i
 items. A test-wise user passes that bank by always picking the longest answer. This skill exists so
 that never happens again: the writing rules, the validator and the wiring checklist travel together.
 
+**Engine: v1 unless the exam needs v2.** Build a v1 exam by default. Use v2 only when the real
+exam has passages beside the question, select-all, typed numeric, ordering, matrix, cloze or bowtie
+items, adaptive modules or scaled scores. A clock alone is not a reason (see "Which engine" in
+CLAUDE.md).
+
 Work in this order. Do not skip the validator between steps.
 
 ## 0. Research the exam before the spec

@@ -103,6 +103,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 
 ## Adding things
 
+- **Which engine**: v1 by default. Use v2 only when the real exam needs what v1 cannot model: passages beside the question, select-all, typed numeric, ordering/matrix/cloze/bowtie items, adaptive modules or scaled scores. A clock alone is not a reason. Do not move v1 exams to v2 (an internal Nov 2026 comparison favoured v1).
 - **A v1 exam**: follow the `exam-bank` skill (`.claude/skills/exam-bank/references/wiring.md` is the full checklist) and `docs/claude/v1-engine.md`.
 - **A v2 exam**: `docs/claude/v2-engine.md` ("To add a v2 exam") and the same skill.
 - **Either**: write `docs/exams/<examId>.md` (what the exam is, official format and pass mark, pools and per-test blueprint, IDs, state code, prefix, sources path, build command, theme, mascot, region and hub group, what is not modelled), add `lib/examFacts.ts`, the catalog entry, theme, sitemap and llms.txt lines, and bump `lib/landingDates.json` via `scripts/build-landing-dates.ts`.

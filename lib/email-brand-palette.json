@@ -485,6 +485,7 @@
   "txadjuster": ["#6e3545","#f8f1f3","#351d23","#e8dee1"],
   "ccaf": ["#9b3e27","#fbf1ef","#4f2217","#ecddda"],
   "sfadmin": ["#0e1281","#ededfd","#090b3e","#dadaec"],
+  "frm1": ["#1a0047","#f4f1f9","#0e0222","#e2dee8"],
   "cfal1": ["#323d53","#f2f4f7","#181c25","#dfe2e7"],
   "cpaaud": ["#41584d","#f3f6f5","#232f29","#e0e6e3"],
   "accafa": ["#a51d48","#fceef2","#491224","#eadce0"],

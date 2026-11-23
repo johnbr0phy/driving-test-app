@@ -1590,6 +1590,15 @@ export const ko: TranslationKeys = {
     cfal1Deriv: "Derivatives & Risk Management",
     cfal1Alts: "Alternative Investments",
     cfal1Portfolio: "Portfolio Construction",
+    // frm1
+    frm1Found: "Foundations of Risk Management",
+    frm1Capm: "CAPM, APT & Performance Measures",
+    frm1Prob: "Probability & Hypothesis Testing",
+    frm1Regr: "Regression, Time Series & Simulation",
+    frm1Inst: "Institutions, Futures & FX Markets",
+    frm1Deriv: "Options, Rates, Bonds & Swaps",
+    frm1Var: "VaR, Credit & Operational Risk",
+    frm1Val: "Bond & Option Valuation",
     // cpaaud
     cpaaudEthics: "Ethics & Independence",
     cpaaudEngagement: "Engagement Terms, Documentation & Quality",

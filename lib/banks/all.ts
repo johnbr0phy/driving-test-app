@@ -219,6 +219,7 @@ import "./txadjuster";
 import "./ccaf";
 import "./sfadmin";
 import "./cfal1";
+import "./frm1";
 import "./cpaaud";
 import "./accafa";
 import "./aatl2";

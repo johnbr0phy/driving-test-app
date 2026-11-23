@@ -117,3 +117,18 @@ and Water Regulations banks were grepped so no fact-and-answer pair repeats.
 - Format facts (questions, sessions, pass mark) appear only on the landing and in examFacts.
 - Five-option items are written with four options (the Tigertest engine's format); the landing
   says so.
+
+## Reviewer checks (2026-11-22)
+
+- SRA SQE website, Important changes to SQE1 for January 2027 onwards (news item, 10 September
+  2026), fetched 2026-11-22:
+  https://sqe.sra.org.uk/news-item/2026/09/10/important-changes-to-sqe1-for-january-2027-onwards
+  Each FLK assessment falls from 180 to 170 questions (sessions of 85 instead of 90), still 2 hours
+  33 minutes a session, 340 questions in all from the January 2027 sitting.
+- SRA SQE website, Understanding SQE1 results, fetched 2026-11-22:
+  https://sqe.sra.org.uk/exam-arrangements/results-and-resits/understanding-sqe1-results
+  Results are a scaled score out of 500 and the passing score is always 300; the raw cut score is
+  set for each assessment.
+- Repeats: every stem and key was compared with every v1 and v2 bank (word overlap and same key);
+  the wrongful trading and counter-offer items repeated CeMAP 1 facts and were rewritten (s.214(3)
+  defence; request for information, Stevenson v McLean).

@@ -33,7 +33,7 @@ Q = [
 ("A settlement agreement would stop an employee reporting misconduct to the police. Is that clause proper?",
  "No, it cannot stop that", ["Yes, if both sides sign", "Yes, if paid generously", "Only if it is secret"],
  "The SRA warning notice on NDAs says agreements must not be used to prevent reports to the police, a regulator or other law enforcement body."),
-("An insurer offers a payment for every personal injury client the firm takes from it. May the firm pay it?",
+("A claims company offers to send the firm personal injury clients for a fee per client. May the firm pay it?",
  "No, they are banned", ["Yes, if it is disclosed", "Yes, if it is reasonable", "Only for road traffic accident cases"],
  "Section 56 Legal Aid, Sentencing and Punishment of Offenders Act 2012 bans referral fees in personal injury cases, whatever disclosure is made."),
 ]

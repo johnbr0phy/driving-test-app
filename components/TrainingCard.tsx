@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { AnswerOption, type AnswerOptionState } from "@/components/question/AnswerOption";
 import { AnswerFeedback } from "@/components/question/AnswerFeedback";
+import { NextButton } from "@/components/question/NextButton";
 import { Question } from "@/types";
 import { useState, useEffect, useId, useRef } from "react";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -100,9 +100,10 @@ export function TrainingCard({
         <div role="status" aria-atomic="true" className="sr-only">{answered ? `${isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")} ${question.correctAnswer}: ${options.find(o => o.letter === question.correctAnswer)?.text}. ${question.explanation}` : ""}</div>
         {answered && (
           <div className="space-y-3 md:space-y-4">
-            <Button onClick={onNext} className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" size="lg">
-              {t("trainingCard.nextQuestion")}
-            </Button>
+            {/* Sticks to the bottom of the screen on a long question, like the v2 drill bar. */}
+            <div className="sticky bottom-0 z-10 -mx-4 bg-card px-4 py-2 md:-mx-8 md:px-8">
+              <NextButton onClick={onNext}>{t("trainingCard.nextQuestion")}</NextButton>
+            </div>
 
             <AnswerFeedback correct={isCorrect} title={isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}>
               {question.explanation}

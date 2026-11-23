@@ -402,22 +402,8 @@ function TrainingPageContent() {
         {/* Progress */}
         <div className="mt-4 md:mt-6 text-center">
           {accessLocked ? null : isSetMode && setProgress ? (
-            // Set-based progress
-            <>
-              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
-                <span className="font-bold text-xl md:text-2xl text-brand-dark">{setProgress.correct}</span>
-                <span className="text-gray-500 dark:text-gray-400">/{setProgress.total}</span>
-                <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">
-                  {t("trainingPage.questionsCorrect")}
-                </span>
-              </div>
-              <div className="w-full bg-brand-border-light rounded-full h-2 mt-2 max-w-md mx-auto">
-                <div
-                  className="bg-brand h-2 rounded-full transition-all"
-                  style={{ width: `${(setProgress.correct / setProgress.total) * 100}%` }}
-                />
-              </div>
-            </>
+            // Set progress is in the FocusBar above.
+            null
           ) : !isOnboardingComplete() ? (
             // Onboarding progress
             <>

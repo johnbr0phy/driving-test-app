@@ -7,7 +7,9 @@ import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { X, RotateCcw, Lock, BookOpen, Play } from "lucide-react";
+import { FocusBar } from "@/components/FocusBar";
+import { NextButton } from "@/components/question/NextButton";
+import { RotateCcw, Lock, BookOpen, Play } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
 import { getBank, getStimulus } from "@/lib/v2/bank";
 import { v2Routes } from "@/lib/v2/registry";
@@ -205,23 +207,19 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   return (
     <FocusMode className="v2-focus">
       {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
-      <div className="v2-safe-top shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pb-2">
-        <div className="flex items-center gap-2">
-          <Link href={backHref} className="v2-tap -ml-1 flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={ui.common.back}>
-            <X className="h-5 w-5" />
-          </Link>
-          <div className="min-w-0 flex-1">
-            <div className="truncate text-sm font-bold">{drill.name}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">{t.masteredCount(mastered, questions.length)}{state.wrongQueue.length ? t.toRetry(state.wrongQueue.length) : ""}</div>
-          </div>
-          <button type="button" onClick={() => setConfirmReset(true)} className="v2-tap flex w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400" aria-label={t.resetAria}>
+      <FocusBar
+        className="v2-safe-top shrink-0"
+        exitHref={backHref}
+        exitLabel={ui.common.back}
+        title={drill.name}
+        subtitle={`${t.masteredCount(mastered, questions.length)}${state.wrongQueue.length ? t.toRetry(state.wrongQueue.length) : ""}`}
+        progress={questions.length ? mastered / questions.length : 0}
+        right={
+          <button type="button" onClick={() => setConfirmReset(true)} className="flex h-10 w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label={t.resetAria}>
             <RotateCcw className="h-5 w-5" />
           </button>
-        </div>
-        <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
-          <div className="h-full rounded-full bg-brand transition-all" style={{ width: `${pct}%` }} />
-        </div>
-      </div>
+        }
+      />
 
       <div className="v2-scroll" ref={scroller}>
         <div className="mx-auto max-w-2xl px-4 py-4">
@@ -285,7 +283,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
             {revealed ? (
-              <button ref={nextRef} type="button" onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white">{ui.common.next}</button>
+              <NextButton ref={nextRef} onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }}>{ui.common.next}</NextButton>
             ) : question.format === "single" ? (
               <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">{t.tapToCheck}</div>
             ) : (

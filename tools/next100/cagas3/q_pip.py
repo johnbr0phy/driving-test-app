@@ -129,7 +129,7 @@ Q = [
  ["Cools the gas", "Lowers the pressure", "Vents air out of the line"],
  "The tee with a capped nipple pointing down lets scale and dirt drop out before reaching the appliance's gas valve."),
 ("Ontario lets one continuous non-coated pipe run inside a chimney when:",
- "Liner space is clean",
+ "Space by a metal liner is clean",
  ["The chimney is still in use", "It's an exterior tile chimney", "The pipe has a union inside"],
  "A note added to clause 6.7.2 allows one continuous length in the concealed space beside a metal chimney liner, if that space is examined and found free of soot and creosote."),
 ("Which piping system pressure needs Director approval in Ontario?",

@@ -7045,6 +7045,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "SCI's M9 exam page, SCI's study text notice and MAS Notice FAA-N26, checked November 2026",
     source: { name: "Singapore College of Insurance: M9 exam details", url: "https://www.scicollege.org.sg/Exam/ExamDetails/M9" },
+  sgm9a: {
+    answer:
+      "CMFAS Module 9A (M9A), Life Insurance and Investment-Linked Policies II, is a paper set by the Singapore College of Insurance (SCI). Under MAS Notice FAA-N26, representatives who advise on or arrange investment-linked policies and other life policies that are Specified Investment Products need M9A as well as Module 9 and RES5, unless exempt (for example with a degree in finance, actuarial science or insurance, or the CFA charter). It covers structured products, their risks, derivatives, Structured ILPs, portfolio investments with an insurance and case studies. The paper is 50 multiple-choice questions in 1 hour, and the passing grade is 70%. It is a closed-book computer screen examination in English, with no marks deducted for wrong answers.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Time", value: "1 hour" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Marking", value: "1 mark each, no deduction for wrong answers" },
+      { label: "Format", value: "Closed-book computer screen exam, in English, on weekdays" },
+      { label: "Needed for", value: "Advising on or arranging ILPs, with M9 and RES5 (or CM-LIP for M9 and M9A together)" },
+      { label: "Run by", value: "Singapore College of Insurance, under MAS Notice FAA-N26" },
+    ],
+    basedOn: "SCI's M9A exam page and MAS Notice FAA-N26, checked November 2026",
+    source: { name: "Singapore College of Insurance: M9A exam details", url: "https://www.scicollege.org.sg/Exam/ExamDetails/M9A" },
   },
   sgvl: {
     answer:

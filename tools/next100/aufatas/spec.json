@@ -1,0 +1,16 @@
+{
+  "id": "aufatas", "stateCode": "AUFATAS", "idBase": 51400, "prefix": "AUFATAS-",
+  "slug": "/tas-firearms-licence", "landingPath": "/tasmania-firearms-safety-test-practice-test", "dataFile": "data/tas-firearms-questions.json",
+  "testCount": 4, "questionsPerTest": 50, "passPct": 80,
+  "categories": [
+    {"key": "ftasCategories", "perTest": 7, "pool": 28, "segment": "CAT"},
+    {"key": "ftasLicence", "perTest": 7, "pool": 28, "segment": "LIC"},
+    {"key": "ftasConduct", "perTest": 6, "pool": 24, "segment": "CON"},
+    {"key": "ftasPermits", "perTest": 6, "pool": 24, "segment": "PER"},
+    {"key": "ftasUse", "perTest": 6, "pool": 24, "segment": "USE"},
+    {"key": "ftasStorage", "perTest": 7, "pool": 28, "segment": "STO"},
+    {"key": "ftasCode", "perTest": 6, "pool": 24, "segment": "COD"},
+    {"key": "ftasHandling", "perTest": 5, "pool": 20, "segment": "HAN"}
+  ],
+  "notes": "Tasmanian firearms safety course test (TasTAFE, approved by the Commissioner of Police; Tasmania Police Firearms Services). No published weights or pass mark; split is Tigertest's."
+}

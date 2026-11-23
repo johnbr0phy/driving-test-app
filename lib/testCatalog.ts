@@ -1274,6 +1274,27 @@ const SEARCH_ALIASES: Record<string, string> = {
   cacore: "bc core core exam core hunter exam bc hunting test bc hunting exam bc hunter exam bc hunter education core course conservation and outdoor recreation education bcwf core manual core examiner british columbia hunting licence test bc hunting licence exam bc firearms and hunting course hunting exam bc",
 };
 
+/**
+ * Searches that mean one test when two share a name. Key: the search's intent
+ * key (`searchIntentKey()`: generic words dropped, words sorted). Value: the
+ * test that goes first among the hits. Plain "npte" is the physical therapist
+ * exam; anything naming "pta" or "assistant" has its own key and keeps NPTE-PTA.
+ */
+export const SEARCH_LEADS: Record<string, string> = {
+  npte: "nptept",
+  nptept: "nptept",
+  "npte pt": "nptept",
+  "physical therapist": "nptept",
+  "physical therapy": "nptept",
+  "board physical therapy": "nptept",
+  "board physical therapist": "nptept",
+  "boards physical therapy": "nptept",
+  "physical therapy pt": "nptept",
+  fsbpt: "nptept",
+  "fsbpt npte": "nptept",
+  "national physical therapy": "nptept",
+};
+
 /** Everything a test can be found by (names, org, blurb, aliases), lowercased. */
 /** The extra search words for a test (empty when it has none). */
 export function searchAliases(id: string): string {

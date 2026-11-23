@@ -1,4 +1,4 @@
-import { TEST_CATALOG, TestCatalogEntry, haystack, searchAliases } from "./testCatalog";
+import { SEARCH_LEADS, TEST_CATALOG, TestCatalogEntry, haystack, searchAliases } from "./testCatalog";
 import { EXAM_VARIANTS } from "./exams";
 import { regionOfTest, Region, TestRegion } from "./region";
 import { states } from "@/data/states";
@@ -317,6 +317,14 @@ function familySearch(q: string, families: TestCatalogEntry[]): SearchResult | n
  * this week's popularity (`popularity`, test id to answers).
  */
 export function searchAllTests(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
+  const result = searchAllTestsRanked(query, region, popularity);
+  const lead = SEARCH_LEADS[searchIntentKey(query)];
+  const at = lead ? result.hits.findIndex((h) => h.key === lead) : -1;
+  if (at <= 0) return result;
+  return { ...result, hits: [result.hits[at], ...result.hits.slice(0, at), ...result.hits.slice(at + 1)] };
+}
+
+function searchAllTestsRanked(query: string, region: Region, popularity: Record<string, number> = {}): SearchResult {
   // "realestate" is how people type it; every test writes "real estate".
   const q = normalizeQuery(query).replace(/\brealestate\b/g, "real estate");
   const allTerms = words(q.replace(/'s\b/g, "")).map((t) => SYNONYMS[t] ?? t);

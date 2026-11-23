@@ -57,7 +57,7 @@ ITEMS = [
       "A Dataflow job reads CMEK-protected tables. What must the Dataflow service accounts be granted on the key?",
       "Encrypter/Decrypter role",
       ["Cloud KMS Admin role", "Key Viewer role only", "Nothing, Dataflow bypasses KMS"],
-      "To use a customer-managed key, Dataflow's service agent and worker service account need the Cloud KMS CryptoKey Encrypter/Decrypter role on it. Admin rights manage keys but are more than the job needs."),
+      "To use a customer-managed key, the Dataflow service agent and the Compute Engine service agent need the Cloud KMS CryptoKey Encrypter/Decrypter role on it. Admin rights manage keys but are more than the job needs."),
     S(2, 3, "Transformations: batch",
       "A batch job joins a 2 TB orders file to a 5 MB currency table. Which Beam approach keeps the join cheap?",
       "Pass the small table as a side input",

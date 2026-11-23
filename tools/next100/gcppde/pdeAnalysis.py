@@ -104,7 +104,7 @@ ITEMS = [
       ["Every row", "Masked values in every row", "Rows from the default region"],
       "Once a table has row access policies, a user sees only rows from policies that grant them access. A user named in none of them sees no rows."),
     S(0, 3, "Security, data masking and IAM",
-      "A user has both Masked Reader and Fine-Grained Reader on a column's policy tag. How are values shown?",
+      "A user holds Masked Reader and Fine-Grained Reader at different levels of a policy tag tree. How are a column's values shown?",
       "By the first role found up the tag tree",
       ["Always unmasked", "Always masked", "Not at all, it errors"],
       "BigQuery walks up the policy tag hierarchy and uses the first role it meets, so the result depends on where each role is granted. Users with neither role get an error."),

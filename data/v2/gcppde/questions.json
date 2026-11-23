@@ -816,7 +816,7 @@
       0,
       2
     ],
-    "explanation": "Pub/Sub stores messages across zones until they are acknowledged, so a restarted pipeline loses nothing. A Dataflow job placed by region can run its workers in another zone of that region. Pinning to one zone or buffering on local SSD ties the pipeline to the failed zone."
+    "explanation": "Pub/Sub stores messages across zones until they are acknowledged, so a restarted pipeline loses nothing. A Dataflow job placed by region (with Streaming Engine) can recreate its workers in another zone of that region if one zone fails. Pinning to one zone or buffering on local SSD ties the pipeline to the failed zone."
   },
   {
     "id": "GCPPDE-T1-039",
@@ -1449,7 +1449,7 @@
     "correct": [
       1
     ],
-    "explanation": "To use a customer-managed key, Dataflow's service agent and worker service account need the Cloud KMS CryptoKey Encrypter/Decrypter role on it. Admin rights manage keys but are more than the job needs."
+    "explanation": "To use a customer-managed key, the Dataflow service agent and the Compute Engine service agent need the Cloud KMS CryptoKey Encrypter/Decrypter role on it. Admin rights manage keys but are more than the job needs."
   },
   {
     "id": "GCPPDE-T2-019",
@@ -3143,15 +3143,15 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Security, data masking and IAM",
-    "stem": "A user has both Masked Reader and Fine-Grained Reader on a column's policy tag. How are values shown?",
+    "stem": "A user holds Masked Reader and Fine-Grained Reader at different levels of a policy tag tree. How are a column's values shown?",
     "options": [
-      "Always masked",
       "By the first role found up the tag tree",
-      "Not at all, it errors",
-      "Always unmasked"
+      "Always unmasked",
+      "Always masked",
+      "Not at all, it errors"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "BigQuery walks up the policy tag hierarchy and uses the first role it meets, so the result depends on where each role is granted. Users with neither role get an error."
   },

@@ -31,7 +31,7 @@ ITEMS = [
       "A streaming pipeline must survive a zonal outage with no lost messages. Which two choices support this? (Choose two.)",
       ["Pub/Sub as the durable source", "Dataflow job in a region, not a zone",
        "Workers pinned to one zone", "Local SSD for message buffering", "Single-zone Bigtable cluster as sink"],
-      "Pub/Sub stores messages across zones until they are acknowledged, so a restarted pipeline loses nothing. A Dataflow job placed by region can run its workers in another zone of that region. Pinning to one zone or buffering on local SSD ties the pipeline to the failed zone."),
+      "Pub/Sub stores messages across zones until they are acknowledged, so a restarted pipeline loses nothing. A Dataflow job placed by region (with Streaming Engine) can recreate its workers in another zone of that region if one zone fails. Pinning to one zone or buffering on local SSD ties the pipeline to the failed zone."),
     S(1, 3, "Data staging, cataloging, profiling and discovery",
       "Teams cannot find which tables hold customer data or who owns them. What should the platform use?",
       "Knowledge Catalog search",

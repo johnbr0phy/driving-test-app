@@ -983,16 +983,16 @@
     "skill": "Social engineering",
     "difficulty": 2,
     "format": "single",
-    "stem": "A text from an unknown number says a parcel is held and asks the reader to tap a link and pay a fee. What is it most likely?",
-    "explanation": "Phishing by text message uses urgency and a link to steal money or details. Tailgating and shoulder surfing happen in person.",
+    "stem": "An email that looks like it comes from a streaming service says a payment failed and links to a sign-in page. What is it most likely?",
+    "explanation": "Phishing uses a message that pretends to come from a trusted company, with urgency and a link to a fake sign-in page. Tailgating and shoulder surfing happen in person.",
     "options": [
-      "Adware",
-      "Tailgating",
       "Shoulder surfing",
-      "Phishing"
+      "Phishing",
+      "Adware",
+      "Tailgating"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {

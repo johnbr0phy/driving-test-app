@@ -5307,6 +5307,20 @@
     --brand-gradient-to: 303 50% 95%;
   }
 
+  /* SRA SQE1 (uksqe1): deep wine, clear of the legal and finance themes. */
+  [data-theme="uksqe1"] {
+    --brand: 330 60% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 330 50% 95%;
+    --brand-hover: 330 60% 10%;
+    --brand-dark: 330 60% 9%;
+    --brand-darker: 330 60% 6%;
+    --brand-muted: 330 30% 70%;
+    --brand-border: 330 35% 78%;
+    --brand-border-light: 330 35% 88%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* UK CAA Flyer ID and A2 CofC theory (ukdrone): deep navy, clear of part107 and nzdrone. */
   [data-theme="ukdrone"] {
     --brand: 212 100% 14%;
@@ -11807,6 +11821,18 @@
     --brand-muted: 288 25% 45%;
     --brand-dark: 288 30% 65%;
     --brand-darker: 288 25% 78%;
+  }
+
+  .dark [data-theme="uksqe1"] {
+    --brand: 330 60% 50%;
+    --brand-hover: 330 60% 42%;
+    --brand-light: 330 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 330 35% 24%;
+    --brand-border: 330 35% 34%;
+    --brand-muted: 330 30% 45%;
+    --brand-dark: 330 60% 65%;
+    --brand-darker: 330 60% 78%;
   }
 
   .dark [data-theme="ukdrone"] {

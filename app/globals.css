@@ -6710,7 +6710,7 @@
     --brand-gradient-to: 205 60% 95%;
   }
 
-  /* CFA Program Level I theme */
+  /* GARP FRM Part I theme */
   [data-theme="frm1"] {
     --brand: 262 100% 14%;
     --brand-foreground: 0 0% 100%;
@@ -6724,6 +6724,7 @@
     --brand-gradient-to: 40 50% 95%;
   }
 
+  /* CFA Program Level I theme */
   [data-theme="cfal1"] {
     --brand: 220 25% 26%;
     --brand-foreground: 0 0% 100%;

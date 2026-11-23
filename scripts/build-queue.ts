@@ -11,7 +11,7 @@
  * lib/buildQueueScore.ts). A candidate in
  * tools/queue/backlog.json inherits the average score of the live tests it
  * names as `siblings` (same buyer, same exam body or the same kind of licence
- * in another country), scaled by `sells`, plus a boost when people searched the
+ * in another country), scaled by `sells`, plus Google Trends interest (`trends`) and a boost when people searched the
  * site for it and found nothing. So families that get use and sales get more
  * siblings, and families that do not, stop.
  *
@@ -50,6 +50,10 @@ interface Candidate {
   sells?: number;
   /** Words people would type into the site search. */
   search?: string[];
+  /** Google Trends worldwide interest for trendsTerm over 12 months, "cna practice test" = 100. */
+  trends?: number;
+  /** The search term `trends` was read for. */
+  trendsTerm?: string;
   /** Id of the candidate that replaced this one (the real exam was retired); never picked. */
   supersededBy?: string;
   note?: string;
@@ -171,7 +175,7 @@ async function main() {
     const searched = gaps
       .filter((g) => words.some((w) => [g.q, ...g.variants.map((v) => v.q)].some((q) => ` ${q.toLowerCase()} `.includes(` ${w} `))))
       .reduce((s, g) => s + g.d30, 0);
-    const score = Math.round(base * (c.sells ?? 1) + searched * WEIGHTS.perSearch);
+    const score = Math.round(base * (c.sells ?? 1) + searched * WEIGHTS.perSearch + (c.trends ?? 0) * WEIGHTS.perTrend);
     const s = state.get(c.id);
     let held: string | null = null;
     if (liveIds.includes(c.id)) held = "live";

@@ -1,5 +1,5 @@
 {
-  "_": "Candidates for the daily build run (.github/workflows/daily-builds.yml). Ranked each day by scripts/build-queue.ts from the live results of the tests named in siblings (sells: 1 when a job or licence rides on it, 0.5 when that kind of test gets use but has not sold). Add a row to queue a test.",
+  "_": "Candidates for the daily build run (.github/workflows/daily-builds.yml). Ranked each day by scripts/build-queue.ts from the live results of the tests named in siblings (sells: 1 when a job or licence rides on it, 0.5 when that kind of test gets use but has not sold). Add a row to queue a test. trends: Google Trends worldwide interest over the last 12 months for trendsTerm, with \"cna practice test\" = 100 (read 2026-11-23); adds trends x WEIGHTS.perTrend to the score. Leave it out when the term is ambiguous.",
   "candidates": [
     {
       "id": "cmaa",
@@ -414,7 +414,9 @@
       "search": [
         "cota",
         "nbcot"
-      ]
+      ],
+      "trends": 3,
+      "trendsTerm": "nbcot cota"
     },
     {
       "id": "otr",
@@ -429,7 +431,9 @@
       "search": [
         "otr",
         "nbcot"
-      ]
+      ],
+      "trends": 29,
+      "trendsTerm": "nbcot exam"
     },
     {
       "id": "nptept",
@@ -443,7 +447,9 @@
       "sells": 1.0,
       "search": [
         "npte"
-      ]
+      ],
+      "trends": 197,
+      "trendsTerm": "npte"
     },
     {
       "id": "aemt",
@@ -474,7 +480,9 @@
       "search": [
         "emr",
         "emergency medical responder"
-      ]
+      ],
+      "trends": 25,
+      "trendsTerm": "emr exam"
     },
     {
       "id": "acls",
@@ -561,7 +569,9 @@
       "search": [
         "cmsrn",
         "med surg"
-      ]
+      ],
+      "trends": 29,
+      "trendsTerm": "cmsrn"
     },
     {
       "id": "cnor",
@@ -576,7 +586,9 @@
       "sells": 1.0,
       "search": [
         "cnor"
-      ]
+      ],
+      "trends": 72,
+      "trendsTerm": "cnor"
     },
     {
       "id": "rncob",
@@ -590,7 +602,9 @@
       "sells": 1.0,
       "search": [
         "rnc-ob"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "rnc-ob"
     },
     {
       "id": "cnl",
@@ -696,7 +710,9 @@
       "search": [
         "arrt ct",
         "computed tomography"
-      ]
+      ],
+      "trends": 164,
+      "trendsTerm": "ct registry"
     },
     {
       "id": "arrtmri",
@@ -710,7 +726,9 @@
       "sells": 1.0,
       "search": [
         "arrt mri"
-      ]
+      ],
+      "trends": 61,
+      "trendsTerm": "mri registry"
     },
     {
       "id": "arrtmammo",
@@ -724,7 +742,9 @@
       "sells": 1.0,
       "search": [
         "mammography"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "mammography boards"
     },
     {
       "id": "ardmsspi",
@@ -740,7 +760,9 @@
         "spi",
         "ardms",
         "sonography"
-      ]
+      ],
+      "trends": 46,
+      "trendsTerm": "spi exam"
     },
     {
       "id": "lmrt",
@@ -771,7 +793,9 @@
       "search": [
         "rhs",
         "dental radiography"
-      ]
+      ],
+      "trends": 4,
+      "trendsTerm": "danb rhs"
     },
     {
       "id": "danbice",
@@ -785,7 +809,9 @@
       "sells": 1.0,
       "search": [
         "danb ice"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "danb ice"
     },
     {
       "id": "inbde",
@@ -921,7 +947,9 @@
       "sells": 1.0,
       "search": [
         "ncmhce"
-      ]
+      ],
+      "trends": 49,
+      "trendsTerm": "ncmhce"
     },
     {
       "id": "aswbbach",
@@ -950,7 +978,9 @@
       "sells": 1.0,
       "search": [
         "eppp"
-      ]
+      ],
+      "trends": 106,
+      "trendsTerm": "eppp"
     },
     {
       "id": "cda",
@@ -993,7 +1023,9 @@
       "sells": 1.0,
       "search": [
         "nsca"
-      ]
+      ],
+      "trends": 34,
+      "trendsTerm": "nsca cpt"
     },
     {
       "id": "nscacscs",
@@ -1021,7 +1053,9 @@
       "sells": 1.0,
       "search": [
         "acsm"
-      ]
+      ],
+      "trends": 15,
+      "trendsTerm": "acsm cpt"
     },
     {
       "id": "issacpt",
@@ -1051,7 +1085,9 @@
       "search": [
         "az-104",
         "az104"
-      ]
+      ],
+      "trends": 184,
+      "trendsTerm": "az-104"
     },
     {
       "id": "ai900",
@@ -1264,7 +1300,9 @@
       "sells": 1.0,
       "search": [
         "cloud+"
-      ]
+      ],
+      "trends": 26,
+      "trendsTerm": "comptia cloud+"
     },
     {
       "id": "serverplus",
@@ -1279,7 +1317,9 @@
       "sells": 1.0,
       "search": [
         "server+"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "comptia server+"
     },
     {
       "id": "dataplus",
@@ -1293,7 +1333,9 @@
       "sells": 1.0,
       "search": [
         "data+"
-      ]
+      ],
+      "trends": 41,
+      "trendsTerm": "comptia data+"
     },
     {
       "id": "projectplus",
@@ -1370,7 +1412,9 @@
       "sells": 1.0,
       "search": [
         "cism"
-      ]
+      ],
+      "trends": 43,
+      "trendsTerm": "cism exam"
     },
     {
       "id": "crisc",
@@ -1384,7 +1428,9 @@
       "sells": 1.0,
       "search": [
         "crisc"
-      ]
+      ],
+      "trends": 14,
+      "trendsTerm": "crisc exam"
     },
     {
       "id": "ccsp",
@@ -1398,7 +1444,9 @@
       "sells": 1.0,
       "search": [
         "ccsp"
-      ]
+      ],
+      "trends": 15,
+      "trendsTerm": "ccsp exam"
     },
     {
       "id": "sscp",
@@ -1445,7 +1493,9 @@
       "search": [
         "aws developer",
         "dva-c02"
-      ]
+      ],
+      "trends": 100,
+      "trendsTerm": "aws developer associate"
     },
     {
       "id": "awssoa",
@@ -1461,7 +1511,9 @@
       "search": [
         "sysops",
         "cloudops"
-      ]
+      ],
+      "trends": 40,
+      "trendsTerm": "aws sysops"
     },
     {
       "id": "awsaif",
@@ -1726,7 +1778,9 @@
       "sells": 1.0,
       "search": [
         "ccst"
-      ]
+      ],
+      "trends": 10,
+      "trendsTerm": "ccst networking"
     },
     {
       "id": "pcep",
@@ -1817,7 +1871,9 @@
       "sells": 1.0,
       "search": [
         "safe agilist"
-      ]
+      ],
+      "trends": 17,
+      "trendsTerm": "safe agilist"
     },
     {
       "id": "cssgb",
@@ -2024,7 +2080,9 @@
       "sells": 1.0,
       "search": [
         "series 6"
-      ]
+      ],
+      "trends": 136,
+      "trendsTerm": "series 6 exam"
     },
     {
       "id": "series24",
@@ -2038,7 +2096,9 @@
       "sells": 1.0,
       "search": [
         "series 24"
-      ]
+      ],
+      "trends": 61,
+      "trendsTerm": "series 24 exam"
     },
     {
       "id": "series3",
@@ -2081,7 +2141,9 @@
       "sells": 1.0,
       "search": [
         "cfp"
-      ]
+      ],
+      "trends": 129,
+      "trendsTerm": "cfp exam"
     },
     {
       "id": "cfal2",
@@ -2109,7 +2171,9 @@
       "sells": 1.0,
       "search": [
         "frm"
-      ]
+      ],
+      "trends": 96,
+      "trendsTerm": "frm exam"
     },
     {
       "id": "cams",
@@ -2187,7 +2251,9 @@
       "sells": 1.0,
       "search": [
         "certified payroll professional"
-      ]
+      ],
+      "trends": 8,
+      "trendsTerm": "certified payroll professional"
     },
     {
       "id": "shrmcp",
@@ -2229,7 +2295,9 @@
       "sells": 1.0,
       "search": [
         "sphr"
-      ]
+      ],
+      "trends": 3,
+      "trendsTerm": "sphr exam"
     },
     {
       "id": "realestatebroker",
@@ -2291,7 +2359,9 @@
       "sells": 1.0,
       "search": [
         "claims adjuster"
-      ]
+      ],
+      "trends": 6,
+      "trendsTerm": "adjuster license exam"
     },
     {
       "id": "ctec",
@@ -2382,7 +2452,9 @@
       "search": [
         "osha 30",
         "osha 50"
-      ]
+      ],
+      "trends": 662,
+      "trendsTerm": "osha 30"
     },
     {
       "id": "epa609",
@@ -2472,7 +2544,9 @@
       "sells": 1.0,
       "search": [
         "master electrician"
-      ]
+      ],
+      "trends": 21,
+      "trendsTerm": "master electrician exam"
     },
     {
       "id": "nccercore",
@@ -2487,7 +2561,9 @@
       "sells": 1.0,
       "search": [
         "nccer"
-      ]
+      ],
+      "trends": 8,
+      "trendsTerm": "nccer core"
     },
     {
       "id": "aseg1",
@@ -2799,7 +2875,9 @@
       "search": [
         "firefighter 2",
         "firefighter ii"
-      ]
+      ],
+      "trends": 13,
+      "trendsTerm": "firefighter 2 test"
     },
     {
       "id": "hazmatops",
@@ -2845,7 +2923,9 @@
       "sells": 1.0,
       "search": [
         "corrections officer"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "correctional officer exam"
     },
     {
       "id": "postal474",
@@ -2875,7 +2955,9 @@
       "sells": 1.0,
       "search": [
         "armed guard"
-      ]
+      ],
+      "trends": 3,
+      "trendsTerm": "armed guard test"
     },
     {
       "id": "bloodborne",
@@ -2890,7 +2972,9 @@
       "sells": 1.0,
       "search": [
         "bloodborne pathogens"
-      ]
+      ],
+      "trends": 13,
+      "trendsTerm": "bloodborne pathogens test"
     },
     {
       "id": "schoolbus",
@@ -2905,7 +2989,9 @@
       "sells": 1.0,
       "search": [
         "school bus endorsement"
-      ]
+      ],
+      "trends": 13,
+      "trendsTerm": "school bus permit test"
     },
     {
       "id": "parapro",
@@ -3161,7 +3247,9 @@
       "sells": 1.0,
       "search": [
         "drone advanced"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "advanced rpas exam"
     },
     {
       "id": "cahambasic",
@@ -3207,7 +3295,9 @@
       "sells": 1.0,
       "search": [
         "serving it right"
-      ]
+      ],
+      "trends": 87,
+      "trendsTerm": "serving it right"
     },
     {
       "id": "proserve",
@@ -3238,7 +3328,9 @@
       "search": [
         "food handler canada",
         "foodsafe"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "food handler certificate canada"
     },
     {
       "id": "cam1",
@@ -3254,7 +3346,9 @@
       "sells": 0.5,
       "search": [
         "m1 test"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "m1 test ontario"
     },
     {
       "id": "caairbrake",
@@ -3313,7 +3407,9 @@
       "sells": 1.0,
       "search": [
         "csc exam"
-      ]
+      ],
+      "trends": 26,
+      "trendsTerm": "canadian securities course"
     },
     {
       "id": "caific",
@@ -3328,7 +3424,9 @@
       "search": [
         "ific",
         "mutual funds licence"
-      ]
+      ],
+      "trends": 7,
+      "trendsTerm": "ific exam"
     },
     {
       "id": "caribo",
@@ -3343,7 +3441,9 @@
       "sells": 1.0,
       "search": [
         "ribo"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "ribo exam"
     },
     {
       "id": "cagas3",
@@ -3358,7 +3458,9 @@
       "sells": 1.0,
       "search": [
         "g3 gas"
-      ]
+      ],
+      "trends": 57,
+      "trendsTerm": "g3 gas"
     },
     {
       "id": "carsmill",
@@ -3434,7 +3536,9 @@
       "sells": 1.0,
       "search": [
         "heavy duty technician"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "heavy duty equipment technician red seal"
     },
     {
       "id": "carstruck",
@@ -3448,7 +3552,9 @@
       "sells": 1.0,
       "search": [
         "310t"
-      ]
+      ],
+      "trends": 3,
+      "trendsTerm": "truck and transport mechanic"
     },
     {
       "id": "carssteam",
@@ -3493,7 +3599,9 @@
       "sells": 1.0,
       "search": [
         "boat licence nsw"
-      ]
+      ],
+      "trends": 3,
+      "trendsTerm": "nsw boat licence test"
     },
     {
       "id": "qldboat",
@@ -3523,7 +3631,9 @@
       "sells": 1.0,
       "search": [
         "marine licence victoria"
-      ]
+      ],
+      "trends": 5,
+      "trendsTerm": "boat licence victoria"
     },
     {
       "id": "aurepl",
@@ -3568,7 +3678,9 @@
       "sells": 1.0,
       "search": [
         "security licence"
-      ]
+      ],
+      "trends": 31,
+      "trendsTerm": "security licence nsw"
     },
     {
       "id": "autraffic",
@@ -3583,7 +3695,9 @@
       "sells": 1.0,
       "search": [
         "traffic controller"
-      ]
+      ],
+      "trends": 31,
+      "trendsTerm": "traffic controller course"
     },
     {
       "id": "auhr",
@@ -3598,7 +3712,9 @@
       "sells": 1.0,
       "search": [
         "hr licence"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "hr licence test"
     },
     {
       "id": "aumotonsw",
@@ -3613,7 +3729,9 @@
       "sells": 0.5,
       "search": [
         "rider knowledge test"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "dkt motorcycle nsw"
     },
     {
       "id": "auasbestos",
@@ -3627,7 +3745,9 @@
       "sells": 1.0,
       "search": [
         "asbestos awareness"
-      ]
+      ],
+      "trends": 18,
+      "trendsTerm": "asbestos awareness course"
     },
     {
       "id": "nzrealestate",
@@ -3702,7 +3822,9 @@
       "sells": 1.0,
       "search": [
         "nz forklift"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "forklift licence nz"
     },
     {
       "id": "nzpendorse",
@@ -3731,7 +3853,9 @@
       "sells": 1.0,
       "search": [
         "foundation licence"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "amateur radio foundation licence"
     },
     {
       "id": "ukdrone",
@@ -3747,7 +3871,9 @@
       "search": [
         "flyer id",
         "a2 cofc"
-      ]
+      ],
+      "trends": 6,
+      "trendsTerm": "flyer id test"
     },
     {
       "id": "ukcitbmap",
@@ -3763,7 +3889,9 @@
       "sells": 1.0,
       "search": [
         "citb managers"
-      ]
+      ],
+      "trends": 8,
+      "trendsTerm": "citb smsts"
     },
     {
       "id": "ukecs",
@@ -3791,7 +3919,9 @@
       "sells": 1.0,
       "search": [
         "sia security guard"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "sia security guard"
     },
     {
       "id": "uksiacctv",
@@ -3805,7 +3935,9 @@
       "sells": 1.0,
       "search": [
         "sia cctv"
-      ]
+      ],
+      "trends": 19,
+      "trendsTerm": "sia cctv"
     },
     {
       "id": "ukfood3",
@@ -3819,7 +3951,9 @@
       "sells": 1.0,
       "search": [
         "level 3 food"
-      ]
+      ],
+      "trends": 32,
+      "trendsTerm": "level 3 food hygiene"
     },
     {
       "id": "ukhs2",
@@ -3848,7 +3982,9 @@
       "sells": 1.0,
       "search": [
         "efaw"
-      ]
+      ],
+      "trends": 47,
+      "trendsTerm": "emergency first aid at work"
     },
     {
       "id": "ukcpc2",
@@ -3864,7 +4000,9 @@
       "search": [
         "cpc module 2",
         "cpc case study"
-      ]
+      ],
+      "trends": 10,
+      "trendsTerm": "cpc module 2"
     },
     {
       "id": "ukpts",
@@ -3879,7 +4017,9 @@
       "sells": 1.0,
       "search": [
         "pts"
-      ]
+      ],
+      "trends": 33,
+      "trendsTerm": "pts course"
     },
     {
       "id": "ukcemap2",
@@ -3907,7 +4047,9 @@
       "sells": 1.0,
       "search": [
         "r01"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "r01 exam"
     },
     {
       "id": "ukif1",
@@ -3921,7 +4063,9 @@
       "sells": 1.0,
       "search": [
         "if1"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "if1 exam"
     },
     {
       "id": "ukaat3",
@@ -4022,7 +4166,9 @@
       "sells": 1.0,
       "search": [
         "sqe1"
-      ]
+      ],
+      "trends": 105,
+      "trendsTerm": "sqe1"
     },
     {
       "id": "iegarda",
@@ -4037,7 +4183,9 @@
       "sells": 0.5,
       "search": [
         "garda"
-      ]
+      ],
+      "trends": 19,
+      "trendsTerm": "garda recruitment"
     },
     {
       "id": "iemanual",
@@ -4066,7 +4214,9 @@
       "sells": 1.0,
       "search": [
         "cpc ireland"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "driver cpc ireland"
     },
     {
       "id": "ieapa",
@@ -4109,7 +4259,9 @@
       "sells": 1.0,
       "search": [
         "m9"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "m9 cmfas"
     },
     {
       "id": "sgm9a",
@@ -4137,7 +4289,9 @@
       "sells": 1.0,
       "search": [
         "cmfas hi"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "hi cmfas"
     },
     {
       "id": "sgbcp",
@@ -4194,7 +4348,9 @@
       "sells": 1.0,
       "search": [
         "iiqe paper 2"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "iiqe paper 2"
     },
     {
       "id": "hkiiqe3",
@@ -4323,7 +4479,9 @@
       "sells": 1.0,
       "search": [
         "dha pharmacist"
-      ]
+      ],
+      "trends": 11,
+      "trendsTerm": "dha pharmacist exam"
     },
     {
       "id": "zare1",
@@ -4543,6 +4701,339 @@
         "test naturalisation france",
         "qcm examen civique"
       ]
+    },
+    {
+      "id": "frmoto",
+      "name": "France code moto (ETM)",
+      "owner": "Ministère de l'Intérieur (ETM operators)",
+      "region": "FR",
+      "engine": "v1",
+      "siblings": [
+        "frcode",
+        "moto"
+      ],
+      "sells": 1.0,
+      "search": [
+        "code moto",
+        "etm",
+        "examen moto"
+      ],
+      "trends": 871,
+      "trendsTerm": "code moto",
+      "note": "Native French exam."
+    },
+    {
+      "id": "frcaces",
+      "name": "France CACES R489 forklift theory test",
+      "owner": "INRS / CNAM recommendations",
+      "region": "FR",
+      "engine": "v1",
+      "siblings": [
+        "forklift",
+        "auforklift"
+      ],
+      "sells": 1.0,
+      "search": [
+        "caces",
+        "caces r489",
+        "cariste"
+      ],
+      "trends": 671,
+      "trendsTerm": "caces",
+      "note": "Native French. Check the R489 recommendation is readable before building; other CACES categories later."
+    },
+    {
+      "id": "deeinb",
+      "name": "Germany Einbürgerungstest (Leben in Deutschland)",
+      "owner": "BAMF",
+      "region": "DE",
+      "engine": "v1",
+      "siblings": [
+        "frcivique",
+        "uklitu",
+        "cacit"
+      ],
+      "sells": 1.0,
+      "search": [
+        "einbürgerungstest",
+        "leben in deutschland",
+        "einbuergerungstest"
+      ],
+      "trends": 262,
+      "trendsTerm": "einbürgerungstest",
+      "note": "Native German. Write original questions from the official rules; never copy or reword the official question list, which is a study reference only."
+    },
+    {
+      "id": "itnautica",
+      "name": "Italy patente nautica entro 12 miglia",
+      "owner": "Ministero delle Infrastrutture e dei Trasporti",
+      "region": "IT",
+      "engine": "v1",
+      "siblings": [
+        "boating",
+        "nzboat",
+        "itpatente"
+      ],
+      "sells": 1.0,
+      "search": [
+        "patente nautica",
+        "quiz patente nautica"
+      ],
+      "trends": 196,
+      "trendsTerm": "patente nautica",
+      "note": "Native Italian. Write original questions from the official rules; never copy or reword the official question list, which is a study reference only."
+    },
+    {
+      "id": "dejagd",
+      "name": "Germany Jägerprüfung (Jagdschein) written part",
+      "owner": "Länder hunting authorities",
+      "region": "DE",
+      "engine": "v1",
+      "siblings": [
+        "hunter",
+        "dkjagt",
+        "sejakt"
+      ],
+      "sells": 1.0,
+      "search": [
+        "jagdschein",
+        "jägerprüfung",
+        "jaegerpruefung"
+      ],
+      "trends": 172,
+      "trendsTerm": "jagdschein",
+      "note": "Native German. Rules differ by Land: pick one Land or a federal core, decide at research. Write original questions from the official rules; never copy or reword the official question list, which is a study reference only."
+    },
+    {
+      "id": "defisch",
+      "name": "Germany Fischerprüfung (Fischereischein)",
+      "owner": "Länder fisheries authorities",
+      "region": "DE",
+      "engine": "v1",
+      "siblings": [
+        "hunter",
+        "dkjagt"
+      ],
+      "sells": 1.0,
+      "search": [
+        "fischereischein",
+        "fischerprüfung",
+        "angelschein"
+      ],
+      "trends": 100,
+      "trendsTerm": "fischereischein",
+      "note": "Native German. Rules differ by Land. Write original questions from the official rules; never copy or reword the official question list, which is a study reference only."
+    },
+    {
+      "id": "desbf",
+      "name": "Germany Sportbootführerschein See and Binnen",
+      "owner": "ELWIS / WSV",
+      "region": "DE",
+      "engine": "v1",
+      "siblings": [
+        "boating",
+        "pcoc",
+        "nzboat"
+      ],
+      "sells": 1.0,
+      "search": [
+        "sportbootführerschein",
+        "sbf see",
+        "sbf binnen",
+        "bootsführerschein"
+      ],
+      "trends": 86,
+      "trendsTerm": "sportbootführerschein",
+      "note": "Native German. Write original questions from the official rules; never copy or reword the official question list, which is a study reference only."
+    },
+    {
+      "id": "nlcbr",
+      "name": "Netherlands CBR car theory exam",
+      "owner": "CBR",
+      "region": "NL",
+      "engine": "v1",
+      "siblings": [
+        "bedriving",
+        "detheorie"
+      ],
+      "sells": 1.0,
+      "search": [
+        "cbr theorie",
+        "theorie examen auto",
+        "cbr examen"
+      ],
+      "trends": 82,
+      "trendsTerm": "cbr theorie examen",
+      "note": "Needs a Netherlands region and homepage (/nl is the Dutch landing prefix: pick a free path). Dutch UI exists."
+    },
+    {
+      "id": "esccse",
+      "name": "Spain CCSE nationality test",
+      "owner": "Instituto Cervantes",
+      "region": "ES",
+      "engine": "v1",
+      "siblings": [
+        "frcivique",
+        "semedb",
+        "dkindfoed"
+      ],
+      "sells": 1.0,
+      "search": [
+        "ccse",
+        "examen nacionalidad española",
+        "examen ccse"
+      ],
+      "trends": 65,
+      "trendsTerm": "examen nacionalidad española",
+      "note": "Native Spanish. Write original questions from the official rules; never copy or reword the official question list, which is a study reference only."
+    },
+    {
+      "id": "itmoto",
+      "name": "Italy patente A motorcycle theory",
+      "owner": "Ministero delle Infrastrutture e dei Trasporti",
+      "region": "IT",
+      "engine": "v1",
+      "siblings": [
+        "itpatente",
+        "moto"
+      ],
+      "sells": 1.0,
+      "search": [
+        "patente a",
+        "quiz patente a",
+        "esame patente moto"
+      ],
+      "trends": 52,
+      "trendsTerm": "esame patente a",
+      "note": "Native Italian. Write original questions; never copy the ministerial listato."
+    },
+    {
+      "id": "ccat",
+      "name": "Criteria Cognitive Aptitude Test (CCAT)",
+      "owner": "Criteria Corp",
+      "region": "US",
+      "engine": "v2",
+      "siblings": [
+        "wonderlic"
+      ],
+      "sells": 1.0,
+      "search": [
+        "ccat",
+        "criteria cognitive aptitude test"
+      ],
+      "trends": 38,
+      "trendsTerm": "ccat test"
+    },
+    {
+      "id": "nzsitesafe",
+      "name": "NZ Site Safe Passport (Foundation)",
+      "owner": "Site Safe NZ",
+      "region": "NZ",
+      "engine": "v1",
+      "siblings": [
+        "auwhite",
+        "nzheavy"
+      ],
+      "sells": 1.0,
+      "search": [
+        "site safe",
+        "site safe passport"
+      ],
+      "trends": 24,
+      "trendsTerm": "site safe passport"
+    },
+    {
+      "id": "cafsc",
+      "name": "California Firearm Safety Certificate test",
+      "owner": "California DOJ",
+      "region": "US",
+      "engine": "v1",
+      "siblings": [
+        "hunter",
+        "capal"
+      ],
+      "sells": 1.0,
+      "search": [
+        "firearm safety certificate",
+        "fsc test",
+        "california fsc"
+      ],
+      "trends": 3,
+      "trendsTerm": "firearm safety certificate test"
+    },
+    {
+      "id": "nzclass4",
+      "name": "NZ Class 4 and 5 heavy vehicle licence theory",
+      "owner": "NZTA Waka Kotahi",
+      "region": "NZ",
+      "engine": "v1",
+      "siblings": [
+        "nzheavy"
+      ],
+      "sells": 1.0,
+      "search": [
+        "class 4 licence",
+        "class 5 licence"
+      ],
+      "trends": 1,
+      "trendsTerm": "class 4 licence nz",
+      "note": "NZ converts well despite low search (nzfirearms sold on a 4)."
+    },
+    {
+      "id": "nzfirstaid",
+      "name": "NZ workplace first aid (NZQA 6401/6402)",
+      "owner": "NZQA",
+      "region": "NZ",
+      "engine": "v1",
+      "siblings": [
+        "aufirstaid",
+        "ukfaw"
+      ],
+      "sells": 1.0,
+      "search": [
+        "first aid certificate nz",
+        "6401",
+        "6402"
+      ],
+      "trends": 1,
+      "trendsTerm": "first aid certificate nz"
+    },
+    {
+      "id": "aufasa",
+      "name": "South Australia firearms safety test",
+      "owner": "SAPOL",
+      "region": "AU",
+      "engine": "v1",
+      "siblings": [
+        "aufirearmsnsw",
+        "aufirearmsvic",
+        "aufirearmsqld"
+      ],
+      "sells": 1.0,
+      "search": [
+        "sa firearms licence",
+        "firearms safety test sa"
+      ],
+      "trends": 0,
+      "trendsTerm": "sa firearms licence"
+    },
+    {
+      "id": "aufatas",
+      "name": "Tasmania firearms safety test",
+      "owner": "Tasmania Police",
+      "region": "AU",
+      "engine": "v1",
+      "siblings": [
+        "aufirearmsnsw",
+        "aufirearmsvic",
+        "aufirearmsqld"
+      ],
+      "sells": 1.0,
+      "search": [
+        "tasmania firearms licence"
+      ],
+      "trends": 0,
+      "trendsTerm": "tasmania firearms licence"
     }
   ]
 }

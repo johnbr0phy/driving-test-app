@@ -10,7 +10,12 @@ export const PURCHASES_SINCE = "2026-11-10";
 /** Purchases older than this many days drop out too, once that is later than PURCHASES_SINCE. */
 export const PURCHASE_WINDOW_DAYS = 60;
 
-export const WEIGHTS = { per100Answers: 1, perPaywallView: 1, perPurchase: 40, perSearch: 15 };
+/**
+ * perTrend scores a candidate's Google Trends interest (backlog `trends`, "cna
+ * practice test" = 100): OSHA 30 at 662 adds about 130, like three sold tests;
+ * a term at 10 adds 2.
+ */
+export const WEIGHTS = { per100Answers: 1, perPaywallView: 1, perPurchase: 40, perSearch: 15, perTrend: 0.2 };
 
 /** First day (YYYY-MM-DD) of the purchase window ending `today`. */
 export function purchaseWindowStart(today: Date = new Date()): string {

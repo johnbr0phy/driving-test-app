@@ -71,6 +71,7 @@ const BORROWED_SETS: Record<string, string> = {
   aemt: "emt",
   emr: "emt",
   masterelec: "jelec",
+  nscacpt: "nasm",
   faaifr: "faapvt",
   faacax: "faapvt",
   esccse: "aplang",

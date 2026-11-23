@@ -251,6 +251,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   pcoc: { title: "Pleasure Craft Operator Card", description: "Study Canadian boating rules, safety equipment, buoys and what to do in an emergency." },
   ffi: { title: "Firefighter I Written Exam", description: "Review fire behaviour, PPE and SCBA, ladders, hose, search and rescue and ventilation." },
   police: { title: "Police Officer Entrance Exam", description: "Practise reading, grammar, report writing, math and situational judgment questions." },
+  nscacpt: { title: "NSCA-CPT Exam", description: "Review client assessment, periodized program design, exercise technique, special populations and safety." },
   nasm: { title: "NASM CPT Exam", description: "Review the OPT model, assessments, program design, exercise technique and client coaching." },
   rbt: { title: "RBT Exam", description: "Study measurement, assessment, skill acquisition, behavior reduction, documentation and ethics." },
   cpc: { title: "CPC Exam", description: "Review coding guidelines, modifiers, ICD-10-CM, E/M and every CPT section with case questions." },

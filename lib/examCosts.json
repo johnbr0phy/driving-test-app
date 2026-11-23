@@ -298,46 +298,56 @@
     "value": "After a third failed attempt, three more attempts cost CA$40",
     "url": "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs"
    }
-  }
- },
- "series66": {
-  "fee": {
-   "value": "$177",
-   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series66"
   },
-  "retake": {
-   "value": "30 days after a first or second failure, 180 after a third (60 for windows opened from January 4, 2027)",
-   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series66"
-  }
- },
- "series6": {
-  "fee": {
-   "value": "$100",
-   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series6"
+  "nscacpt": {
+   "fee": {
+    "value": "$300 for NSCA members, $435 for non-members",
+    "url": "https://www.nsca.com/globalassets/certification/certification-pdfs/nsca-certification-handbook.pdf"
+   },
+   "retake": {
+    "value": "30 days after the last attempt; after 3 attempts in a row, wait 1 year",
+    "url": "https://www.nsca.com/globalassets/certification/certification-pdfs/nsca-certification-handbook.pdf"
+   }
   },
-  "retake": {
-   "value": "30 days after a first or second failure, 180 after a third (15 and 60 days from January 19, 2027)",
-   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series6"
-  }
- },
- "masterelec": {
-  "fee": {
-   "value": "$120 for the ICC National Master Electrician exam (state exams vary)",
-   "url": "https://www.iccsafe.org/wp-content/uploads/2024-National_Contractor_Bulletin.pdf"
+  "series66": {
+   "fee": {
+    "value": "$177",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series66"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third (60 for windows opened from January 4, 2027)",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series66"
+   }
   },
-  "retake": {
-   "value": "10 days after a failed ICC exam (state rules vary)",
-   "url": "https://www.iccsafe.org/wp-content/uploads/2024-National_Contractor_Bulletin.pdf"
-  }
- },
- "series24": {
-  "fee": {
-   "value": "$235",
-   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series24"
+  "series6": {
+   "fee": {
+    "value": "$100",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series6"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third (15 and 60 days from January 19, 2027)",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series6"
+   }
   },
-  "retake": {
-   "value": "30 days after a first or second failure, 180 after a third (15 and 60 days from January 19, 2027)",
-   "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series24"
+  "masterelec": {
+   "fee": {
+    "value": "$120 for the ICC National Master Electrician exam (state exams vary)",
+    "url": "https://www.iccsafe.org/wp-content/uploads/2024-National_Contractor_Bulletin.pdf"
+   },
+   "retake": {
+    "value": "10 days after a failed ICC exam (state rules vary)",
+    "url": "https://www.iccsafe.org/wp-content/uploads/2024-National_Contractor_Bulletin.pdf"
+   }
+  },
+  "series24": {
+   "fee": {
+    "value": "$235",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series24"
+   },
+   "retake": {
+    "value": "30 days after a first or second failure, 180 after a third (15 and 60 days from January 19, 2027)",
+    "url": "https://www.finra.org/registration-exams-ce/qualification-exams/series24"
+   }
   }
  }
 }

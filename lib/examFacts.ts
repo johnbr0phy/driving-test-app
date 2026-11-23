@@ -3824,6 +3824,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PMI PMP Examination Content Outline (July 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/project-management-pmp/new-exam" },
   },
+  nscacpt: {
+    answer:
+      "The NSCA-Certified Personal Trainer (NSCA-CPT) exam is the NCCA-accredited personal trainer certification exam of the National Strength and Conditioning Association. It is a 3-hour computer test at Pearson VUE test centers with 155 multiple-choice questions, 140 scored and 15 non-scored, of which 25 to 35 use video or images, and you need a scaled score of 70 or higher to pass. Since July 1, 2025 it follows a new detailed content outline: program execution 36%, program planning 29%, client consultation and assessment 23%, and safety, emergency procedures and legal issues 12%. You must be 18 or older with a high school diploma or equivalent and hold current CPR/AED certification.",
+    rows: [
+      { label: "Questions", value: "155 multiple choice (140 scored, 15 non-scored)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Passing score", value: "Scaled score of 70 or higher" },
+      { label: "Largest domain", value: "Program execution, 36% (50 items)" },
+      { label: "Before you sit", value: "Age 18+, high school diploma, current CPR/AED" },
+      { label: "Delivery", value: "Pearson VUE test centers, year-round" },
+      { label: "Run by", value: "National Strength and Conditioning Association (NSCA)" },
+    ],
+    basedOn: "NSCA's NSCA-CPT detailed content outline (effective July 1, 2025) and the NSCA Certification Handbook effective July 1, 2026, checked November 2026",
+    source: { name: "NSCA: NSCA-CPT exam description", url: "https://www.nsca.com/certification/nsca-cpt/nsca-cpt-exam-description/" },
+    tigertest: "200 original questions in four 50-question mock tests weighted like the July 2025 outline. Free to start. Real NSCA-CPT items have three options and some use video; these have four options and describe techniques in words.",
+  },
   acecpt: {
     answer:
       "The ACE Certified Personal Trainer exam is the NCCA-accredited certification exam of the American Council on Exercise. It has 150 multiple-choice questions with 3 hours to finish, taken in person or online with a live proctor, and you need a scaled score of 500 or greater to pass. ACE's exam content outline has four domains: program design and implementation 31%, program modification and progression 27%, client onboarding and assessments 23%, and risk management, professional conduct and ethical business practices 19%.",

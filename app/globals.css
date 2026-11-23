@@ -5279,6 +5279,20 @@
     --brand-gradient-to: 45 70% 95%;
   }
 
+  /* NSCA-CPT theme: vivid violet */
+  [data-theme="nscacpt"] {
+    --brand: 277 85% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 277 45% 95%;
+    --brand-hover: 277 85% 42%;
+    --brand-dark: 277 85% 34%;
+    --brand-darker: 277 80% 22%;
+    --brand-muted: 277 25% 68%;
+    --brand-border: 277 25% 80%;
+    --brand-border-light: 277 22% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
   /* ACE CPT theme: deep burnt orange */
   [data-theme="acecpt"] {
     --brand: 18 100% 14%;
@@ -12499,6 +12513,18 @@
     --brand-muted: 161 15% 45%;
     --brand-dark: 161 15% 65%;
     --brand-darker: 161 10% 78%;
+  }
+
+  .dark [data-theme="nscacpt"] {
+    --brand: 277 85% 50%;
+    --brand-hover: 277 85% 42%;
+    --brand-light: 277 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 277 22% 24%;
+    --brand-border: 277 25% 34%;
+    --brand-muted: 277 25% 45%;
+    --brand-dark: 277 85% 65%;
+    --brand-darker: 277 80% 78%;
   }
 
   .dark [data-theme="acecpt"] {

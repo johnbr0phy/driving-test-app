@@ -14341,8 +14341,8 @@
     --brand-darker: 287 90% 78%;
   }
   .dark [data-theme="danbice"] {
-    --brand: 98 15% 50%;
-    --brand-hover: 98 15% 42%;
+    --brand: 98 15% 41.9%;
+    --brand-hover: 98 15% 34%;
     --brand-light: 98 20% 13%;
     --brand-gradient-to: 108 20% 11%;
     --brand-border-light: 98 10% 24%;

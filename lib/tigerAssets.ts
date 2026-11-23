@@ -100,6 +100,7 @@ const BORROWED_SETS: Record<string, string> = {
   osha30: "osha",
   hvacjourney: "epa608",
   waterop: "epa608",
+  wastewaterop: "epa608",
   r410a: "epa608",
   backflow: "caplumb",
   pesticide: "epa608",

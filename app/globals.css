@@ -6152,6 +6152,19 @@
   }
   /* ExCPT (NHA) pharmacy technician theme */
   /* Water treatment operator Class I theme: deep teal (170 at 14% so it sits clear of the Finland hygiene teal) */
+  /* Wastewater treatment operator Class I theme: dark olive (84 at 16%; the teal and green wheel was full) */
+  [data-theme="wastewaterop"] {
+    --brand: 84 100% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 84 45% 95%;
+    --brand-hover: 84 100% 12%;
+    --brand-dark: 84 100% 10%;
+    --brand-darker: 84 90% 7%;
+    --brand-muted: 84 20% 66%;
+    --brand-border: 84 22% 78%;
+    --brand-border-light: 84 15% 88%;
+    --brand-gradient-to: 70 45% 95%;
+  }
   [data-theme="waterop"] {
     --brand: 170 100% 14%;
     --brand-foreground: 0 0% 100%;
@@ -14258,6 +14271,17 @@
     --brand-muted: 344 25% 45%;
     --brand-dark: 344 25% 65%;
     --brand-darker: 344 20% 78%;
+  }
+  .dark [data-theme="wastewaterop"] {
+    --brand: 84 100% 26%;
+    --brand-hover: 84 100% 18%;
+    --brand-light: 84 45% 13%;
+    --brand-gradient-to: 70 40% 11%;
+    --brand-border-light: 84 15% 24%;
+    --brand-border: 84 22% 34%;
+    --brand-muted: 84 20% 45%;
+    --brand-dark: 84 100% 65%;
+    --brand-darker: 84 90% 78%;
   }
   .dark [data-theme="waterop"] {
     --brand: 170 100% 26%;

@@ -74,14 +74,14 @@
     "state": "ALL",
     "questionId": "UKHS2-LAW-006",
     "category": "hs2Law",
-    "question": "Which is an employee's legal duty under section 7 of the 1974 Act?",
+    "question": "Besides taking reasonable care, what else does section 7 of the 1974 Act require of employees?",
     "optionA": "Pay for their own safety boots",
-    "optionB": "Take reasonable care of self and others",
+    "optionB": "Co-operate with the employer",
     "optionC": "Write the firm's safety policy",
     "optionD": "Carry out the fire risk assessment",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Section 7 makes employees take reasonable care of themselves and of others affected by what they do, and co-operate with the employer on safety."
+    "explanation": "Section 7 has two parts: take reasonable care of yourself and others affected by what you do, and co-operate with your employer so it can meet its legal duties."
   },
   {
     "type": "UKHS2",
@@ -176,7 +176,7 @@
     "optionA": "Stops a seriously dangerous activity",
     "optionB": "Gives 21 days to fix paperwork",
     "optionC": "Sets the size of the fine to pay",
-    "optionD": "Warns of a future inspection visit",
+    "optionD": "Warns of a future inspection visit soon",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "A prohibition notice stops the activity until the matter is put right. It can take effect immediately."
@@ -736,7 +736,7 @@
     "optionA": "Decide who might be harmed and how",
     "optionB": "Buy personal protective equipment",
     "optionC": "Write the firm's safety policy",
-    "optionD": "Report the hazards to the HSE",
+    "optionD": "Report every hazard to the HSE office",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "Step two is to think about who could be harmed, such as staff, cleaners, visitors or the public, and how."
@@ -1236,14 +1236,14 @@
     "state": "ALL",
     "questionId": "UKHS2-CTL-013",
     "category": "hs2Control",
-    "question": "A worker must wear goggles and a respirator together. What must the employer check?",
-    "optionA": "The items work together",
-    "optionB": "They come from the same shop",
-    "optionC": "They are the same colour",
-    "optionD": "They are bought in matching pairs",
+    "question": "Why may a tight-fitting dust mask fail to protect a worker with a beard?",
+    "optionA": "It cannot seal against the face",
+    "optionB": "Beards block the filter material",
+    "optionC": "Masks are only made for women",
+    "optionD": "The law bans masks for beards",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "PPE items worn together must be compatible, so one does not stop another from fitting or protecting properly."
+    "explanation": "Tight-fitting masks rely on a seal with the skin. Stubble or a beard lets dusty air leak round the edge, which is why face fit testing is done on a clean-shaven face."
   },
   {
     "type": "UKHS2",
@@ -1460,14 +1460,14 @@
     "state": "ALL",
     "questionId": "UKHS2-HDL-009",
     "category": "hs2Handling",
-    "question": "Before lifting an unfamiliar box, what should a worker do?",
-    "optionA": "Plan the lift and route",
-    "optionB": "Lift fast to get it done",
-    "optionC": "Ask a visitor to help",
-    "optionD": "Lift it with a bent back",
+    "question": "Halfway through a lift, a box turns out much heavier than expected. What should the worker do?",
+    "optionA": "Put it down and reassess",
+    "optionB": "Speed up to finish quickly",
+    "optionC": "Twist to pass it to someone",
+    "optionD": "Hold their breath and carry on",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Planning means checking the weight, the grip, where it is going and that the route is clear before lifting."
+    "explanation": "If a load is more than expected, set it down safely and reassess: get help, use an aid or split the load rather than struggling on."
   },
   {
     "type": "UKHS2",
@@ -1726,14 +1726,14 @@
     "state": "ALL",
     "questionId": "UKHS2-PHY-004",
     "category": "hs2Physical",
-    "question": "What do the Work at Height Regulations 2005 require an employer to do first?",
-    "optionA": "Issue every worker a harness",
-    "optionB": "Use ladders for every job",
-    "optionC": "Train staff to climb faster",
-    "optionD": "Avoid work at height if possible",
+    "question": "Where a fall cannot be prevented, what do the Work at Height Regulations 2005 then require?",
+    "optionA": "Stop all work at height for good instead",
+    "optionB": "Let staff choose their own kit",
+    "optionC": "Record the fall after it happens",
+    "optionD": "Minimise the distance and effects",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The order is avoid work at height where reasonably practicable, prevent falls where it cannot be avoided, then minimise the distance and consequences of a fall."
+    "explanation": "The order is avoid work at height where reasonably practicable, prevent falls where it cannot be avoided, then minimise the distance and consequences of a fall, for example with nets or airbags."
   },
   {
     "type": "UKHS2",
@@ -1782,14 +1782,14 @@
     "state": "ALL",
     "questionId": "UKHS2-PHY-008",
     "category": "hs2Physical",
-    "question": "While working from a ladder, how should the user hold on?",
-    "optionA": "Lean out to reach further",
-    "optionB": "Stand on the top rung",
-    "optionC": "Hold tools in both hands at once",
-    "optionD": "Keep three points of contact",
+    "question": "As a rule of thumb, how long should someone work from a ladder in one position?",
+    "optionA": "Up to 2 hours",
+    "optionB": "Up to half a shift",
+    "optionC": "As long as the job takes",
+    "optionD": "No more than about 30 minutes",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Three points of contact, such as two feet and one hand, keep the user stable. Overreaching is a common cause of falls."
+    "explanation": "HSE guidance treats ladders as suitable for short-duration work, about 30 minutes at most in one position. Longer jobs need a platform or tower."
   },
   {
     "type": "UKHS2",
@@ -1866,14 +1866,14 @@
     "state": "ALL",
     "questionId": "UKHS2-PHY-014",
     "category": "hs2Physical",
-    "question": "Before cleaning inside a machine, what should be done?",
-    "optionA": "Turn it to its slowest speed",
-    "optionB": "Isolate and lock off the power",
-    "optionC": "Ask someone to watch the button",
-    "optionD": "Wear thicker gloves",
+    "question": "A machine guard is fitted with an interlock. What does the interlock do?",
+    "optionA": "Locks the operator inside",
+    "optionB": "Stops the machine if the guard opens",
+    "optionC": "Counts how many items are made",
+    "optionD": "Sounds a fire alarm",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Isolating and locking off the power source stops the machine being started while someone is inside it."
+    "explanation": "An interlocked guard is linked to the controls, so opening it stops the dangerous parts, and the machine cannot run while it is open."
   },
   {
     "type": "UKHS2",
@@ -2132,14 +2132,14 @@
     "state": "ALL",
     "questionId": "UKHS2-SUB-009",
     "category": "hs2Substances",
-    "question": "What does a skull and crossbones pictogram mean?",
-    "optionA": "Acute toxicity",
-    "optionB": "Harmful to aquatic life",
-    "optionC": "Gas under pressure",
-    "optionD": "Skin irritant",
+    "question": "Under COSHH, how often must local exhaust ventilation normally be thoroughly examined and tested?",
+    "optionA": "At least every 14 months",
+    "optionB": "Only when it breaks down",
+    "optionC": "Once every five years",
+    "optionD": "Only when first fitted",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Skull and crossbones marks substances that can cause death or serious harm in small amounts."
+    "explanation": "COSHH regulation 9 requires a thorough examination and test of local exhaust ventilation at least once every 14 months for most processes, with shorter intervals for some listed ones."
   },
   {
     "type": "UKHS2",
@@ -2538,14 +2538,14 @@
     "state": "ALL",
     "questionId": "UKHS2-EMR-010",
     "category": "hs2Emergency",
-    "question": "What should you do on discovering a fire?",
-    "optionA": "Collect your belongings first",
-    "optionB": "Raise the alarm at once",
-    "optionC": "Open all the windows",
-    "optionD": "Finish your current task",
+    "question": "Why should staff not use a lift during a fire evacuation?",
+    "optionA": "Lifts are only for visitors",
+    "optionB": "Power can fail and trap them",
+    "optionC": "Lifts are too slow in any case",
+    "optionD": "Lifts set off the alarm again",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Raising the alarm, usually at the nearest call point, starts the evacuation. Only tackle a small fire if trained and it is safe."
+    "explanation": "A fire can cut the power or fill the shaft with smoke, trapping people. Use the stairs and escape routes unless a lift is designed for evacuation."
   },
   {
     "type": "UKHS2",

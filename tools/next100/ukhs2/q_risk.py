@@ -13,7 +13,7 @@ Q = [
  "Identify the hazards", ["Record the findings", "Decide on precautions", "Review the assessment"],
  "HSE's steps run: identify hazards, decide who might be harmed and how, evaluate the risks and decide on precautions, record findings, then review."),
 ("After identifying hazards, what is the next step of a risk assessment?",
- "Decide who might be harmed and how", ["Buy personal protective equipment", "Write the firm's safety policy", "Report the hazards to the HSE"],
+ "Decide who might be harmed and how", ["Buy personal protective equipment", "Write the firm's safety policy", "Report every hazard to the HSE office"],
  "Step two is to think about who could be harmed, such as staff, cleaners, visitors or the public, and how."),
 ("Which law requires employers to assess the risks to employees and others?",
  "Management Regulations 1999", ["Workplace (Health, Safety and Welfare) Regulations 1992", "RIDDOR 2013", "Safety Signs and Signals Regulations 1996"],

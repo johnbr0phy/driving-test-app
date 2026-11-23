@@ -103,6 +103,29 @@ Regulations 1977; Health and Safety (Consultation with Employees) Regulations 19
 Manslaughter and Corporate Homicide Act 2007; Health and Safety at Work (Northern Ireland) Order
 1978 and HSENI; extinguisher colour bands (BS EN 3 with the UK colour zones).
 
+## Checked by the second reviewer (2026-11-23)
+- Health and Safety at Work etc. Act 1974, section 24 (an appeal to an employment tribunal suspends
+  an improvement notice; a prohibition notice stays in force unless the tribunal directs), fetched
+  2026-11-23: https://www.legislation.gov.uk/ukpga/1974/37/section/24
+- Health and Safety Information for Employees Regulations 1989, regulation 4 (approved poster
+  displayed or approved leaflet given), fetched 2026-11-23:
+  https://www.legislation.gov.uk/uksi/1989/682/regulation/4
+- Corporate Manslaughter and Corporate Homicide Act 2007, section 1 (gross breach, senior
+  management a substantial element), fetched 2026-11-23:
+  https://www.legislation.gov.uk/ukpga/2007/19/section/1
+- Crown Office and Procurator Fiscal Service, What we do ("Scotland's prosecution service"),
+  fetched 2026-11-23: https://www.copfs.gov.uk/about-us/what-we-do/
+- COSHH 2002, regulation 9 (LEV thoroughly examined and tested at least every 14 months unless
+  Schedule 4 sets a shorter interval), fetched 2026-11-23:
+  https://www.legislation.gov.uk/uksi/2002/2677/regulation/9
+- HSE, Work at height FAQs (more than 30 minutes at a time on a ladder: consider other
+  equipment), fetched 2026-11-23: https://www.hse.gov.uk/work-at-height/faqs.htm
+- Surrey Fire and Rescue Service, Extinguishers and fire blankets (label colours: foam cream,
+  water red, dry powder blue, CO2 black), fetched 2026-11-23:
+  https://www.surreycc.gov.uk/community/fire-and-rescue/businesses/equipment/extinguishers-and-fire-blankets
+- RIDDOR non-worker hospital rule re-read on https://www.hse.gov.uk/riddor/when-do-i-report.htm
+  (report without delay, received within 10 days).
+
 ## Repeats
 Every stem and key was compared with the cscs, ukfaw, uksia, ukfood, ukcare, osha, osha30,
 auwhite, iesafepass, auwah, ukaplh and (open PR) ukfood3 banks by word overlap and identical

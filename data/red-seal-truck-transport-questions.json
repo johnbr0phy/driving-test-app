@@ -732,14 +732,14 @@
     "state": "ALL",
     "questionId": "CATTM-AIR-009",
     "category": "rsttmAirBrake",
-    "question": "A tractor's trailer supply line breaks. What does the tractor protection system do?",
-    "optionA": "Closes off the trailer lines",
-    "optionB": "Releases the trailer spring brakes",
-    "optionC": "Opens the air dryer purge",
-    "optionD": "Raises compressor cut-out",
+    "question": "A pressure protection valve feeds the air horn and seat. What does it do when tank pressure falls below its setting?",
+    "optionA": "Closes to save brake air",
+    "optionB": "Opens to vent the tank",
+    "optionC": "Unloads the compressor",
+    "optionD": "Applies the spring brakes",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "When supply pressure falls to its closing point, the tractor protection valve closes so the tractor keeps its air, and the trailer spring brakes apply."
+    "explanation": "A pressure protection valve is normally closed and opens only above its set pressure. If pressure falls below that setting it closes, so a leak in an accessory cannot drain the air the brakes need."
   },
   {
     "type": "CATTM",
@@ -900,14 +900,14 @@
     "state": "ALL",
     "questionId": "CATTM-AIR-021",
     "category": "rsttmAirBrake",
-    "question": "What does a bobtail proportioning valve do when the tractor has no trailer?",
-    "optionA": "Lowers drive axle brake pressure",
-    "optionB": "Raises trailer supply pressure",
-    "optionC": "Locks the inter-axle differential",
-    "optionD": "Applies the spring brakes",
+    "question": "How does a bobtail proportioning valve know the tractor is running without a trailer?",
+    "optionA": "No air in the trailer supply line",
+    "optionB": "A switch on the fifth wheel jaws",
+    "optionC": "A signal from the ABS controller",
+    "optionD": "Low drive axle air spring pressure",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An unloaded tractor has little weight on its drive axles, so reducing their brake pressure stops lock-up and keeps more braking on the steer axle."
+    "explanation": "The valve senses trailer supply pressure. With no trailer charged, that line is empty and the valve reduces drive axle brake pressure, since a bobtail tractor carries little weight on its drive wheels and they lock easily."
   },
   {
     "type": "CATTM",
@@ -1453,7 +1453,7 @@
     "optionD": "So both mesh with the mainshaft",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Twin countershaft gearing shares torque between two countershafts. Marked teeth must line up so both mesh with the mainshaft gears at once; mistimed, the box will not assemble or will bind."
+    "explanation": "Twin countershaft gearing shares torque between two countershafts. The marked teeth on the main drive gear and on each countershaft drive gear must line up so both countershafts mesh with the mainshaft gears at once; mistimed, the box will not assemble or will bind."
   },
   {
     "type": "CATTM",
@@ -2727,7 +2727,7 @@
     "optionD": "With the clutch engaged",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "PTOs engage at low engine speed with the clutch or controls as specified to avoid gear damage, then the pump's output is tested."
+    "explanation": "Most transmission-mounted PTOs are engaged at idle with the clutch pedal down, or as the maker specifies for an automatic, so the gears do not clash. Then the pump's output is tested."
   },
   {
     "type": "CATTM",

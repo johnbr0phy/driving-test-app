@@ -105,3 +105,17 @@ provider is named. Checked 2026-11-23.
 - Fees, wages, apprenticeship hours, provincial certificate names and numbers.
 - Jurisdictional inspection figures (CVSA out-of-service criteria, provincial inspection standards).
 - Anything about the exam itself (count, time, pass mark) as a question.
+
+## Second review (2026-11-23)
+- Blind review of all 200 items plus an options-only pass; every computed key recomputed (24 V over
+  3 + 3 ohms = 4 A; 12 V x 3 A = 36 W; 3.14 x 2 squared x 2,000 psi = 25,120 lb; four 12 V batteries
+  in parallel = 12 V; 1.2 V and 0.8 V drops judged against the few-tenths rule).
+- Changed: AIR-009 (tractor protection valve on a broken supply line repeated CDLE-CV-016 in the CDL
+  endorsement bank; now asks the pressure protection valve), AIR-021 (bobtail proportioning valve now
+  asks how the valve senses bobtail operation, trailer supply pressure per Bendix BP-R1 literature,
+  so it no longer sits next to ASE-A5-020), DRV-004 explanation (timing marks are on the main drive
+  gear and countershaft drive gears), HYD-011 explanation (clutch pedal down at idle).
+- Similarity check repeated against the 20 Red Seal sample questions (questionnaire 243) and the
+  three example questions on the exam information page: highest stem ratio 0.63, no shared option
+  set. Sibling check repeated against caauto, ase, aseg1 (open PR worktree), caairbrake and the CDL
+  banks: no shared fact and answer left.

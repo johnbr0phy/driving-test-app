@@ -32,7 +32,7 @@ Q = [
  "An accumulator stores oil under gas pressure even with the pump off. Discharge it by the OEM procedure before opening the circuit."),
 ("A transmission-mounted PTO is replaced. How is it engaged for testing?",
  "At low idle, as specified", ["At rated engine speed", "While the truck is moving", "With the clutch engaged"],
- "PTOs engage at low engine speed with the clutch or controls as specified to avoid gear damage, then the pump's output is tested."),
+ "Most transmission-mounted PTOs are engaged at idle with the clutch pedal down, or as the maker specifies for an automatic, so the gears do not clash. Then the pump's output is tested."),
 ("Hydraulic oil runs hot on a refuse truck. What is a likely cause?",
  "Oil dumping over the relief", ["An oversized reservoir", "A new return filter", "Low ambient humidity"],
  "Oil dumping over the relief valve turns pressure into heat. Look for a held control, wrong relief setting or a dirty oil cooler."),

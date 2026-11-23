@@ -13,7 +13,7 @@ Q = [
 # manual transmissions
 ("Why are the countershafts timed when a twin countershaft transmission is assembled?",
  "So both mesh with the mainshaft", ["To set the gear ratios", "To balance oil flow", "To adjust shift effort"],
- "Twin countershaft gearing shares torque between two countershafts. Marked teeth must line up so both mesh with the mainshaft gears at once; mistimed, the box will not assemble or will bind."),
+ "Twin countershaft gearing shares torque between two countershafts. The marked teeth on the main drive gear and on each countershaft drive gear must line up so both countershafts mesh with the mainshaft gears at once; mistimed, the box will not assemble or will bind."),
 ("Where should the oil level sit in most heavy manual transmissions, truck level?",
  "At the fill hole's lower edge", ["One finger below the fill hole", "Half way up the case", "At the drain plug threads"],
  "Most heavy manual transmissions are filled until oil reaches the bottom of the fill hole on level ground. A low level starves gears; overfilling causes heat and leaks."),

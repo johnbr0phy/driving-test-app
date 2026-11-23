@@ -282,7 +282,7 @@ export default function RedSealTruckTransportLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">What is the pass mark for the Red Seal Truck and Transport Mechanic exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              You need 70 percent. The exam has 135 multiple-choice questions, each with four options and one correct answer, and the Red Seal exam preparation guide gives four hours to write it. A calculator is provided if you need one, and the formulas and acronyms used on the exam are given to you at the sitting. Red Seal's exam weightings page still lists 150 questions, while its exam information page and Saskatchewan's 2025 exam sheet give 135, so confirm the count with your apprenticeship authority.
+              You need 70 percent. The exam has 135 multiple-choice questions, each with four options and one correct answer, and the Red Seal exam preparation guide gives four hours to write it. A calculator is provided if you need one, and the formulas and acronyms used on the exam are given to you at the sitting. Red Seal&apos;s exam weightings page still lists 150 questions, while its exam information page and Saskatchewan&apos;s 2025 exam sheet give 135, so confirm the count with your apprenticeship authority.
             </p>
           </div>
           <div>

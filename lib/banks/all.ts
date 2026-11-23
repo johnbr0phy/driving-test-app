@@ -289,6 +289,7 @@ import "./sgm9";
 import "./sgm9a";
 import "./sgvl";
 import "./itpatente";
+import "./esccse";
 import "./deeinb";
 import "./itnautica";
 import "./frcivique";

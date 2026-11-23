@@ -22,6 +22,7 @@ const TEACHER_LED = new Set([
   "realestatebroker",
   "frcivique",
   "deeinb",
+  "esccse",
   "frvtc",
   "zafirearm",
   "plaplik",

@@ -121,6 +121,7 @@ const pos = (n: number) => n.toFixed(1);
 async function main() {
   const key = readKey();
   token = await accessToken(key);
+  console.error(`[gsc-report] signed in as ${key.client_email.replace(/@.*/, "@...")}`);
 
   const sites = (await call<{ siteEntry?: { siteUrl: string; permissionLevel: string }[] }>("/webmasters/v3/sites")).siteEntry ?? [];
   const site =
@@ -135,6 +136,7 @@ async function main() {
 
   // Search Console data lags about 2 days: compare the last 28 full days with the 28 before.
   const end = day(3), start = day(30), prevEnd = day(31), prevStart = day(58);
+  console.error(`[gsc-report] property ${site}`);
   const [qp, pages, prevPages, totals, prevTotals] = await Promise.all([
     query(site, start, end, ["query", "page"]),
     query(site, start, end, ["page"]),
@@ -215,7 +217,7 @@ async function main() {
               inspectionUrl: url,
               siteUrl: site,
             });
-            inspected++;
+            if (++inspected % 50 === 0) console.error(`[gsc-report] inspected ${inspected}/${todo.length}`);
             const s = r.inspectionResult?.indexStatusResult;
             if (s?.verdict !== "PASS") notIndexed.push({ page: short(url), verdict: s?.verdict ?? "unknown", coverage: s?.coverageState ?? "" });
           } catch (e) {
@@ -296,7 +298,8 @@ async function main() {
   }
 }
 
-main().catch((e) => {
+// Exit explicitly: an open Firestore connection would keep the process alive.
+main().then(() => process.exit(0)).catch((e) => {
   console.error(`[gsc-report] ${e instanceof Error ? e.message : String(e)}`);
   process.exit(1);
 });

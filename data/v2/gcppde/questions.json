@@ -2030,17 +2030,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Building a data platform",
-    "stem": "Analysts need one place to search tables and files across projects, see lineage and read business glossaries. What provides it?",
+    "stem": "Teams define \"active customer\" three different ways. How can one agreed meaning be tied to the right columns?",
     "options": [
-      "Knowledge Catalog",
-      "Cloud Billing reports",
-      "Cloud Asset Inventory",
-      "Artifact Registry"
+      "A comment in each SQL file",
+      "Column names in upper case",
+      "Separate tables per definition",
+      "Business glossary terms linked to columns"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Knowledge Catalog (formerly Dataplex Universal Catalog) gives search, business glossaries and lineage across BigQuery, Cloud Storage and other sources. Cloud Asset Inventory lists cloud resources, not business metadata."
+    "explanation": "A business glossary in Knowledge Catalog (formerly Dataplex Universal Catalog) holds agreed term definitions, and terms can be linked to the columns that carry them, so search and reports point to one meaning. Comments in code are scattered and drift."
   },
   {
     "id": "GCPPDE-T2-046",

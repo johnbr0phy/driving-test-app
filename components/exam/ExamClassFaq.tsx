@@ -263,6 +263,7 @@ export const TEACHES: Record<string, string> = {
   cissp: "a CISSP or information security course",
   gcdl: "a cloud fundamentals course",
   gcppca: "a cloud architecture course",
+  gcppde: "a data engineering or Google Cloud course",
   itil: "an IT service management course",
   istqb: "a software testing or ISTQB Foundation course",
   pmiacp: "a PMI-ACP exam prep or agile practitioner course",

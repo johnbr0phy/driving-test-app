@@ -111,7 +111,7 @@ Q = [
  "4 pixels", ["2 pixels", "8 pixels", "1 pixel"],
  "Chemical shift in hertz scales with field strength: 440 / 110 = 4 pixels. Widening the bandwidth per pixel would bring it back down."),
 ("On an out-of-phase gradient echo image, a dark line outlines the kidneys at fat-water borders in every direction. What is this?",
- "Chemical misregistration", ["Chemical shift of the first kind", "Gibbs truncation ringing", "Moire interference fringes"],
+ "Out-of-phase (chemical misregistration) artifact", ["Chemical shift of the first kind along the readout axis", "Gibbs truncation ringing at sharp edges", "Moire interference fringes at the edges"],
  "When fat and water are out of phase, voxels holding both lose signal, drawing a dark line at every interface. It depends on TE, not on the readout direction."),
 ("Signal loss and distortion appear around a dental bridge on a gradient echo brain image. Which change helps most?",
  "Use a spin echo sequence", ["Use a longer TE", "Use a smaller matrix in the readout", "Turn off the fat saturation"],

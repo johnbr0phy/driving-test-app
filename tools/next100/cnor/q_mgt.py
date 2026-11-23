@@ -6,7 +6,7 @@ Q = [
  "Package integrity and dates", ["Vendor name only", "Shelf location color code", "Price printed on the item"],
  "A torn, wet or damaged package is not sterile, and any expiry date on the item is checked before it reaches the field."),
 ("A wrapped tray has a small tear in its outer wrap. What is done?",
- "Treat it as contaminated", ["Tape over the tear", "Use it if the tear is small", "Open it from the other side"],
+ "Reprocess it, not sterile", ["Tape over the tear", "Use it if the tear is small", "Open it from the other side"],
  "Any break in the barrier means the contents cannot be presumed sterile, so the tray is reprocessed."),
 ("A product evaluation team reviews a new stapler. What is weighed besides price?",
  "Safety and outcomes", ["Packaging color", "Sales rep's opinion", "Brand popularity"],

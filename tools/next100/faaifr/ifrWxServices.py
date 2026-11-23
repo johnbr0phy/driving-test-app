@@ -19,7 +19,7 @@ ITEMS = [
       "AIM 7-1 states that any convective SIGMET implies severe or greater turbulence, severe icing and low-level wind shear."),
     S(1, 2, "Datalink weather", "Your cockpit shows FIS-B radar imagery. What is it suited for?",
       ["Strategic route planning around storms", "Picking a gap between nearby cells", "Replacing a preflight weather briefing"],
-      "AIM 7-1 says FIS weather supports strategic decisions about 20 minutes or more ahead. It is not for tactical avoidance, such as threading between cells, and never replaces a briefing."),
+      "AIM 7-1 says FIS weather supports strategic decisions, such as route planning. It is not for tactical avoidance, such as threading between cells, and never replaces a briefing."),
     S(1, 2, "Winds aloft", "A winds and temperatures aloft forecast shows 9900+02 for 6,000 feet. What wind is forecast?",
       ["Light and variable", "From 090 at 99 knots", "Calm, temperature unknown"],
       "In the FB forecast, 9900 means light and variable, a wind of less than 5 knots. The +02 is a temperature of plus 2 degrees C."),

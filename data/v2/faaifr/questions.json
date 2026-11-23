@@ -593,17 +593,16 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Fog formation",
-    "stem": "Fog seldom forms when the temperature-dewpoint spread is greater than about:",
+    "stem": "At dusk the temperature-dewpoint spread at your destination is narrowing to a few degrees. What does that warn of?",
     "options": [
-      "2 degrees C",
-      "5 degrees C",
-      "10 degrees C"
+      "Hail from building storms",
+      "Clear air turbulence aloft",
+      "Fog or very low stratus"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "The Aviation Weather Handbook notes that fog seldom forms when the spread is more than 2 degrees C (4 degrees F). A shrinking spread at dusk is an early warning.",
-    "lockedOrder": true
+    "explanation": "When the air cools toward its dewpoint, it nears saturation. A small and shrinking spread, around 5 degrees F (3 degrees C) or less, means fog or very low cloud is likely, especially on a calm, clear night."
   },
   {
     "id": "FAAIFR-T1-031",
@@ -684,7 +683,7 @@
     "correct": [
       1
     ],
-    "explanation": "Glide slope transmitters produce false courses at higher angles, the lowest near 9 to 12 degrees. Intercepting from the published altitude below avoids them."
+    "explanation": "Glide slope transmitters can produce false glidepaths at angles above the true one. Intercepting from the published altitude below the glide slope avoids them."
   },
   {
     "id": "FAAIFR-T1-035",
@@ -927,7 +926,7 @@
     "correct": [
       1
     ],
-    "explanation": "AIM 7-1-27 warns not to fly under a thunderstorm even if you can see through it. Hail may fall from the anvil, well away from the heavy rain."
+    "explanation": "The AIM warns not to fly under a thunderstorm even if you can see through it. Hail can fall from the overhanging anvil, well away from the core and the heavy rain."
   },
   {
     "id": "FAAIFR-T1-047",
@@ -947,7 +946,7 @@
     "correct": [
       0
     ],
-    "explanation": "AIM 7-1 says FIS weather supports strategic decisions about 20 minutes or more ahead. It is not for tactical avoidance, such as threading between cells, and never replaces a briefing."
+    "explanation": "AIM 7-1 says FIS weather supports strategic decisions, such as route planning. It is not for tactical avoidance, such as threading between cells, and never replaces a briefing."
   },
   {
     "id": "FAAIFR-T1-048",
@@ -2216,7 +2215,7 @@
     "correct": [
       2
     ],
-    "explanation": "Without WAAS, integrity comes from RAIM. Check predicted RAIM availability for the ETA; flight service can give it for 1 hour either side of the ETA."
+    "explanation": "Without WAAS, integrity comes from RAIM. Check that RAIM is predicted to be available at the destination around your ETA."
   },
   {
     "id": "FAAIFR-T2-051",
@@ -2962,7 +2961,7 @@
     "correct": [
       0
     ],
-    "explanation": "AIM 7-1-27 advises holding a heading that takes you through the storm in the least time, keeping attitude, not altitude, and turning the cockpit lights up to limit lightning blindness."
+    "explanation": "The AIM advises holding a heading that takes you through the storm in the least time, keeping attitude, not altitude, and turning the cockpit lights up to limit lightning blindness."
   },
   {
     "id": "FAAIFR-D-028",
@@ -3122,7 +3121,7 @@
     "correct": [
       0
     ],
-    "explanation": "AIM 7-1-27 says to maintain a constant attitude and let the airplane ride the drafts. Chasing altitude adds stress to the airframe."
+    "explanation": "The AIM says to maintain a constant attitude and let the airplane ride the drafts. Chasing altitude adds stress to the airframe."
   },
   {
     "id": "FAAIFR-D-036",
@@ -3345,7 +3344,7 @@
     "correct": [
       0
     ],
-    "explanation": "91.175(k) lists substitutes for the outer marker: compass locator, PAR or ASR, DME, VOR or NDB fixes authorized in the procedure, or a suitable RNAV fix."
+    "explanation": "91.175 lists substitutes for the outer marker: compass locator, PAR or ASR, DME, VOR or NDB fixes authorized in the procedure, or a suitable RNAV fix."
   },
   {
     "id": "FAAIFR-D-047",
@@ -3746,7 +3745,7 @@
     "correct": [
       2
     ],
-    "explanation": "91.411(d) bars IFR operation in controlled airspace above the maximum altitude to which the altimeters and altitude reporting system were tested."
+    "explanation": "91.411 bars IFR operation in controlled airspace above the maximum altitude to which the altimeters and altitude reporting system were tested."
   },
   {
     "id": "FAAIFR-D-067",

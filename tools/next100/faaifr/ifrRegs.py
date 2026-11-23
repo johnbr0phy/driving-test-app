@@ -78,7 +78,7 @@ ITEMS = [
       "91.211(a)(1): above 12,500 up to 14,000 feet MSL, the required crew must use oxygen for any part of the flight there longer than 30 minutes. Above 14,000 feet it is the entire time."),
     S(0, 3, "Altimeter inspection", "An altimeter was tested only to 12,000 feet. What does 91.411 then limit?",
       ["IFR in controlled airspace above it", "Any flight above 12,000 feet at night", "VFR above 12,000 feet in Class E"],
-      "91.411(d) bars IFR operation in controlled airspace above the maximum altitude to which the altimeters and altitude reporting system were tested."),
+      "91.411 bars IFR operation in controlled airspace above the maximum altitude to which the altimeters and altitude reporting system were tested."),
     S(0, 2, "Transponder inspection", "How often must the transponder be tested and inspected under 91.413?",
       ["Every 24 calendar months", "Every 12 calendar months", "At each annual inspection"],
       "91.413 requires the ATC transponder to have been tested and inspected within the preceding 24 calendar months, and after any work that could cause a data correspondence error."),

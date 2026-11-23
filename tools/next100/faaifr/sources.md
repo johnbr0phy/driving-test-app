@@ -46,7 +46,7 @@ METAR/TAF strings and approach data are written into the stem.
 - Instrument Procedures Handbook, FAA-H-8083-16B: https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/FAA-H-8083-16B.pdf
   (en route altitudes MEA, MOCA, MRA, MCA, MTA, MAA, changeover points, OROCA).
 - Aviation Weather Handbook, FAA-H-8083-28A: https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28A_FAA_Web.pdf
-  (icing types and SLD, fog types and the 2 degree C spread, fronts, turbulence, FB coding, TAF WS
+  (icing types and SLD, fog types and the narrowing temperature-dewpoint spread, fronts, turbulence, FB coding, TAF WS
   groups, LLWS on ATIS, AIRMET content).
 - Risk Management Handbook, FAA-H-8083-2A (risk = likelihood x severity), named in the ACS references.
 
@@ -74,3 +74,19 @@ BasicMed (61.113 and Part 68 limits, rulemaking from the FAA Reauthorization Act
 fees, chart-specific numbers that need the supplement, convective SIGMET validity time, TAA arc radii,
 cold-temperature restricted airport corrections, and the old composite flight plan (the AIM says
 current automation can't process them).
+
+## Second review (2026-11-23)
+Blind pass over all 200 items, every number recomputed (61.57 calendar months: January tasks current
+through July 31; March tasks current through September 30, grace through March 31, IPC from April 1;
+lost comms 91.185(c)(2) highest of assigned, MIA and expected altitude; 600 fpm, 3 minutes, 477 fpm,
+18 degrees, 400 fpm). Nine items changed: the fog item rewritten (the 2 degree C "seldom forms"
+figure was not found in FAA text; FAA guidance uses about 5 degrees F or less), unsupported details
+dropped (FIS "20 minutes", RAIM "1 hour either side", false glide slope angles), the anvil hail
+attribution, AIM thunderstorm paragraph numbers and two CFR paragraph letters made generic.
+Confirmed: tailplane stall after flap extension (AC 91-74B), MRA definition (Pilot/Controller
+Glossary), SPC categories TSTM, MRGL, SLGT, ENH, MDT, HIGH, airspeed primary for pitch in a
+constant-airspeed climb (FAA-H-8083-15B), FB rules (no temperature at 3,000 feet, sign omitted above
+24,000), procedure turn normally within 10 NM (AIM 5-4-9). The similarity check against the 59 FAA
+IRA sample items was repeated (difflib, word overlap, shared options): only topic-word overlaps
+remain; sample item 58 asks the Category A speed limit, while our item asks which category a VREF of
+95 knots falls in.

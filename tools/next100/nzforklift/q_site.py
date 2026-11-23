@@ -41,7 +41,7 @@ Q = [
  'It could ignite vapour', ['It is too quiet to hear', 'It cannot lift the drums', 'It uses too little fuel'],
  'Ordinary trucks have hot surfaces and sparks. Only trucks designed or adapted for potentially explosive atmospheres should work there.'),
 ('Dangerous goods are stored where a forklift works. What should the operator know first?',
- 'What they are and their risks', ["Only the store's opening hours", 'The colour of the racking', "The supplier's street address"],
+ 'What they are and their risks', ["Only the store's opening hours", 'The colour of all the racking', "The supplier's street address"],
  "40735's environment check includes dangerous goods; the operator needs to know the substances present and the precautions before handling or working near them."),
 ('A dock edge has no barrier. What is the main risk?',
  'Driving off the edge', ['Battery overheating', 'Forks rusting', 'Mast chains loosening'],

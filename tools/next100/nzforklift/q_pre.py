@@ -25,7 +25,7 @@ Q = [
 ('Before starting, an operator finds the horn does not work. What is right?',
  'Keep it parked until fixed', ['Use it and shout at corners', 'Use it in quiet areas only', 'Log it and fix it next week'],
  'The horn is a warning device that is part of the pre-shift check. A failed safety device is a fault to report before the truck is used.'),
-('What does skill standard 40735 list first in the start-up procedure?',
+("Which item is part of skill standard 40735's start-up procedure?",
  'Seatbelt and restraints', ['Raising the forks fully', 'Tuning the cab radio', 'Tilting the mast forward'],
  "40735's start-up content is operator restraints (seatbelts), three points of contact and the correct driving position."),
 ("What does 'three points of contact' mean when getting on a forklift?",

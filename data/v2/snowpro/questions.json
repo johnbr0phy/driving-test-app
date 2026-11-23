@@ -1803,7 +1803,7 @@
     "correct": [
       1
     ],
-    "explanation": "All data stored in Snowflake is encrypted at rest by default with AES-256, in every edition. Business Critical adds customer-managed keys through Tri-Secret Secure."
+    "explanation": "All data stored in Snowflake is encrypted at rest by default with strong AES encryption, in every edition. Business Critical adds customer-managed keys through Tri-Secret Secure."
   },
   {
     "id": "SNOWPRO-T2-036",

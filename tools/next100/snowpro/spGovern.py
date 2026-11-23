@@ -49,7 +49,7 @@ ITEMS = [
       "When is data at rest in Snowflake encrypted?",
       "Always, by default",
       ["Only on Business Critical", "Only after a policy is set", "Only in internal stages"],
-      "All data stored in Snowflake is encrypted at rest by default with AES-256, in every edition. Business Critical adds customer-managed keys through Tri-Secret Secure."),
+      "All data stored in Snowflake is encrypted at rest by default with strong AES encryption, in every edition. Business Critical adds customer-managed keys through Tri-Secret Secure."),
     S(2, 1, "Object tagging",
       "What is an object tag mainly used for?",
       "Labeling objects for tracking",

@@ -60,14 +60,14 @@
     "state": "ALL",
     "questionId": "ITNAU-SCA-005",
     "category": "itnScafo",
-    "question": "Con elica destrorsa, per affiancarsi alla banchina in marcia indietro, quale fianco conviene accostare?",
-    "optionA": "Il fianco sinistro",
-    "optionB": "Il fianco destro",
-    "optionC": "È indifferente",
-    "optionD": "Si entra solo di prua",
+    "question": "Appena avviato il motore, la spia della pressione dell'olio resta accesa. Che cosa si fa?",
+    "optionA": "Si spegne subito il motore",
+    "optionB": "Si accelera per far salire la pressione",
+    "optionC": "Si parte e si controlla al rientro",
+    "optionD": "Si aggiunge benzina nel serbatoio",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "In marcia indietro l'effetto evolutivo di un'elica destrorsa porta la poppa a sinistra: accostando con il fianco sinistro l'effetto aiuta a chiudere la poppa verso la banchina."
+    "explanation": "La spia accesa a motore avviato indica che l'olio non lubrifica: il motore va spento subito, poi si controllano livello dell'olio e perdite. Continuare a girare può grippare il motore."
   },
   {
     "type": "ITNAUTICA",
@@ -494,14 +494,14 @@
     "state": "ALL",
     "questionId": "ITNAU-MAN-022",
     "category": "itnManovre",
-    "question": "Quanti sciatori si possono trainare insieme al massimo?",
-    "optionA": "1",
-    "optionB": "2",
-    "optionC": "3",
-    "optionD": "4",
+    "question": "Siete alla fonda e volete capire se l'ancora tiene. Che cosa controllate?",
+    "optionA": "Che l'acqua resti dello stesso colore",
+    "optionB": "Che i riferimenti a terra non si spostino",
+    "optionC": "Che le onde arrivino sempre di prua",
+    "optionD": "Che il livello del carburante non cambi",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "La disciplina dello sci nautico ammette il traino simultaneo di non più di due sciatori, oltre alle regole delle ordinanze locali."
+    "explanation": "Si prendono riferimenti fissi a terra, per esempio due punti allineati o un rilevamento: se l'allineamento si apre o il rilevamento cambia, l'unità si sta spostando e l'ancora ara. Il plotter con l'allarme di ancoraggio aiuta, ma i riferimenti a terra restano il controllo di base."
   },
   {
     "type": "ITNAUTICA",
@@ -830,14 +830,14 @@
     "state": "ALL",
     "questionId": "ITNAU-SIC-018",
     "category": "itnSicurezza",
-    "question": "Chiamando il 1530 da un telefono cellulare, chi risponde?",
-    "optionA": "Il 112 della propria regione",
-    "optionB": "Il Comando generale della Guardia Costiera",
-    "optionC": "La Protezione civile",
-    "optionD": "I Vigili del fuoco",
+    "question": "A bordo avete solo il cellulare e serve soccorso in mare. Che cosa vale per il numero 1530?",
+    "optionA": "Funziona solo da un telefono fisso",
+    "optionB": "È gratuito e attivo 24 ore su 24",
+    "optionC": "Si paga come una chiamata normale",
+    "optionD": "Risponde solo in orario d'ufficio",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Dal cellulare il 1530, numero gratuito di emergenza in mare, mette in contatto con il Comando generale delle Capitanerie di porto - Guardia Costiera; da un fisso con la Capitaneria competente."
+    "explanation": "Il 1530 è il numero di emergenza in mare della Guardia Costiera: gratuito, attivo 24 ore su 24 tutto l'anno, da telefono fisso e da cellulare. Se si ha il VHF, il canale 16 resta il mezzo principale per chiedere soccorso."
   },
   {
     "type": "ITNAUTICA",

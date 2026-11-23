@@ -4843,7 +4843,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     answer:
       "The Italian boat licence within 12 miles of the coast (patente nautica di categoria A entro 12 miglia) starts with a written test of quizzes taken in one sitting: a chart-reading quiz of 5 questions (at least 4 right in 20 minutes), the base quiz of 20 three-option questions on hull, engines, safety, manoeuvres, COLREG, weather, navigation and boating law (at least 16 right in 30 minutes) and, for the sail and motor licence, a sailing quiz of 5 questions (at least 4 right in 15 minutes). Every quiz must be passed, then a practical test follows. The minimum age is 18 and the licence is valid ten years (five from age 60).",
     rows: [
-      { label: "Run by", value: "Motorizzazione civile and Capitanerie di porto (Ministry of Infrastructure and Transport)" },
+      { label: "Run by", value: "Capitanerie di porto, uffici circondariali marittimi and uffici della Motorizzazione civile (Ministry of Infrastructure and Transport)" },
       { label: "Chart-work quiz", value: "5 questions, at least 4 right, 20 minutes" },
       { label: "Base quiz", value: "20 three-option questions, at least 16 right, 30 minutes" },
       { label: "Sailing quiz", value: "5 questions, at least 4 right, 15 minutes (sail and motor only)" },

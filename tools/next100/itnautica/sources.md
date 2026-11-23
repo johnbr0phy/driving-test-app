@@ -3,8 +3,9 @@
 All 210 questions are original, written directly in Italian from the decrees, laws and the
 international regulations below. The Ministry's "elenco unico nazionale dei quesiti" (the national
 quiz database approved by decreto direttoriale 24 gennaio 2022 n. 10, replaced by D.D. 106/2022
-and D.D. 131/2022) was never opened, copied, reworded or used for wording: the topics come from
-the exam programme in Allegato A of D.M. 323/2021. No commercial quiz app, book or past paper was
+and D.D. 131/2022) was never copied, reworded or used for wording: the topics come from the exam
+programme in Allegato A of D.M. 323/2021, and the list was opened only afterwards, for the
+similarity check described at the end of this file. No commercial quiz app, book or past paper was
 used. Fetched 2026-11-22 unless noted.
 
 ## Exam format and programme (for the landing and spec only, never asked in the bank)
@@ -64,6 +65,13 @@ used. Fetched 2026-11-22 unless noted.
 - D.M. 29 luglio 2008, n. 146, Regolamento di attuazione del Codice della nautica da diporto, on
   Normattiva, fetched 2026-11-22:
   https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.infrastrutture.trasporti:decreto:2008-07-29;146!vig=
+  - Art. 25, comma 3 (checked by the reviewer on Normattiva, 2026-11-23,
+    https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.infrastrutture.trasporti:decreto:2008-07-29;146~art25!vig=):
+    an unit is "a motore" when sail area in m² divided by engine power is under 1 (CV) or 1,36 (kW).
+  - Art. 28, comma 1, lettera a (checked 2026-11-23,
+    https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.infrastrutture.trasporti:decreto:2008-07-29;146~art28!vig=):
+    licences valid within 12 miles are issued by the capitanerie di porto, the uffici circondariali
+    marittimi and the uffici della motorizzazione civile (the landing's "Run by" row).
   - Art. 26: patente B for navi da diporto, also valid for units up to 24 m.
   - Art. 35: minimum age 18 for categories A and C (and D2), 16 for D1, 21 for B with three years
     of category A without distance limit.
@@ -142,3 +150,21 @@ used. Fetched 2026-11-22 unless noted.
   one false match (`Lascare una scotta significa:` against an unrelated anchoring item), no item
   with 2 or more of its options on the matched catalogue page at a stem similarity of 0.40 or more,
   and the remaining shared facts are asked in our own wording with our own distractors.
+
+## Reviewer checks (2026-11-23)
+- Sci nautico: D.M. Marina mercantile 26 gennaio 1960 (text as reproduced at
+  https://www.patente.it/normativa/decreto-ministero-della-marina-26-01-1960-n-26-sci-nautico?idc=1916,
+  fetched 2026-11-23): art. 1 "in ore diurne con tempo favorevole e mare calmo", art. 2(b) the driver
+  "sempre assistito da altra persona esperta nel nuoto". The decree sets no maximum number of skiers
+  (that limit comes from local Capitaneria ordinances, summarised in Andar per mare), so the item
+  asking it was replaced (ITNAU-MAN-022, now an anchor-holding item).
+- 1530: MIT page "1530 - Emergenza in mare", https://www.mit.gov.it/index.php/come-fare-per/sicurezza/sicurezza-mare/1530-emergenza-mare
+  (search extract 2026-11-23): free, from fixed and mobile phones, 24 hours a day all year. Which
+  office answers a mobile call is not stated on a current official page (the 2017 Andar per mare text
+  says the Comando generale), so ITNAU-SIC-018 now asks only what the MIT page states.
+- ITNAU-SCA-005 (propeller walk while berthing astern) was ambiguous and was replaced with an
+  engine item (oil pressure warning light).
+- Similarity check repeated by the reviewer over all 210 items with the three scripts above against
+  Allegato A of D.D. 131/2022: no item copies a ministerial statement or reuses a catalogue item's
+  option set; the remaining shared facts (definitions such as opera viva, lascare, ancora incattivita)
+  are asked in our own wording with our own distractors.

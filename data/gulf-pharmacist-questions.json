@@ -4,14 +4,14 @@
     "state": "ALL",
     "questionId": "AEDHAPH-BIO-001",
     "category": "dhaphBio",
-    "question": "Which posterior pituitary hormone increases water reabsorption in the collecting duct?",
-    "optionA": "Antidiuretic hormone",
-    "optionB": "Aldosterone",
-    "optionC": "Oxytocin",
-    "optionD": "Atrial natriuretic peptide",
+    "question": "Desmopressin, used for central diabetes insipidus, is a synthetic analogue of which hormone?",
+    "optionA": "Vasopressin",
+    "optionB": "Oxytocin",
+    "optionC": "Somatostatin",
+    "optionD": "Aldosterone",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Antidiuretic hormone (vasopressin) inserts aquaporin channels in the collecting duct. Aldosterone also acts on the distal nephron but is made by the adrenal cortex and mainly moves sodium and potassium."
+    "explanation": "Desmopressin is a vasopressin (antidiuretic hormone) analogue with strong V2 receptor action on the kidney and little pressor effect, so it replaces the missing hormone in central diabetes insipidus."
   },
   {
     "type": "AEDHAPH",
@@ -1096,14 +1096,14 @@
     "state": "ALL",
     "questionId": "AEDHAPH-CMP-003",
     "category": "dhaphCompound",
-    "question": "How many mg per mL does 2% w/v lidocaine contain?",
-    "optionA": "0.2 mg/mL",
-    "optionB": "2 mg/mL",
-    "optionC": "20 mg/mL",
-    "optionD": "200 mg/mL",
+    "question": "How many mg per mL does 0.5% w/v bupivacaine contain?",
+    "optionA": "0.05 mg/mL",
+    "optionB": "0.5 mg/mL",
+    "optionC": "5 mg/mL",
+    "optionD": "50 mg/mL",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "2% w/v is 2 g per 100 mL, which is 2,000 mg / 100 mL = 20 mg per mL."
+    "explanation": "0.5% w/v is 0.5 g per 100 mL, which is 500 mg / 100 mL = 5 mg per mL."
   },
   {
     "type": "AEDHAPH",
@@ -1530,14 +1530,14 @@
     "state": "ALL",
     "questionId": "AEDHAPH-PRA-018",
     "category": "dhaphPractice",
-    "question": "A patient stopped smoking two months ago and is still not smoking. Which stage of change is this?",
-    "optionA": "Preparation",
-    "optionB": "Action",
-    "optionC": "Maintenance",
-    "optionD": "Contemplation",
+    "question": "A smoker tells the pharmacist he means to quit within the next six months but has made no plan yet. Which stage of change is this?",
+    "optionA": "Precontemplation",
+    "optionB": "Contemplation",
+    "optionC": "Preparation",
+    "optionD": "Action",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Action covers the first six months after the change. Maintenance begins once the new behaviour has lasted more than six months."
+    "explanation": "Contemplation is intending to change within about six months without a firm plan. Preparation means planning to act within the next month and taking first steps, such as setting a quit date."
   },
   {
     "type": "AEDHAPH",

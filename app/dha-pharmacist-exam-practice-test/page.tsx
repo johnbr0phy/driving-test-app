@@ -16,7 +16,7 @@ import { examOffers } from "@/lib/examSeo";
 const siteUrl = SITE_URL;
 const path = "/dha-pharmacist-exam-practice-test";
 
-const title = "DHA Pharmacist Exam Practice Test 2026 - Free Gulf Prometric Questions";
+const title = "DHA Pharmacist Exam Practice Test 2026 - Free Gulf Prometric Exam Prep";
 const metaDescription =
   "Free practice for the Gulf pharmacist licensing exams (DHA, DOH, MOHAP, Saudi SPLE, Qatar DHP, Oman, Kuwait, Bahrain): 200 original questions, every answer explained.";
 const description =

@@ -1,8 +1,8 @@
 CAT = "dhaphBio"; SEG = "BIO"
 Q = [
-("Which posterior pituitary hormone increases water reabsorption in the collecting duct?",
- "Antidiuretic hormone", ["Aldosterone", "Oxytocin", "Atrial natriuretic peptide"],
- "Antidiuretic hormone (vasopressin) inserts aquaporin channels in the collecting duct. Aldosterone also acts on the distal nephron but is made by the adrenal cortex and mainly moves sodium and potassium."),
+("Desmopressin, used for central diabetes insipidus, is a synthetic analogue of which hormone?",
+ "Vasopressin", ["Oxytocin", "Somatostatin", "Aldosterone"],
+ "Desmopressin is a vasopressin (antidiuretic hormone) analogue with strong V2 receptor action on the kidney and little pressor effect, so it replaces the missing hormone in central diabetes insipidus."),
 ("Where in the nephron is most filtered sodium reabsorbed?",
  "Proximal tubule", ["Thick ascending limb", "Distal convoluted tubule", "Collecting duct"],
  "About two thirds of filtered sodium is reabsorbed in the proximal tubule. The thick ascending limb, where loop diuretics act, takes up roughly a quarter."),

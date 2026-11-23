@@ -5442,6 +5442,19 @@
     --brand-border-light: 287 25% 89%;
     --brand-gradient-to: 302 40% 95%;
   }
+  /* Transport Canada Advanced Exam (drone) theme: deep maple wine */
+  [data-theme="cadroneadv"] {
+    --brand: 344 35% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 344 30% 95%;
+    --brand-hover: 344 35% 12%;
+    --brand-dark: 344 35% 11%;
+    --brand-darker: 344 35% 7%;
+    --brand-muted: 344 15% 70%;
+    --brand-border: 344 20% 80%;
+    --brand-border-light: 344 20% 89%;
+    --brand-gradient-to: 0 0% 98%;
+  }
 
   [data-theme="bcrealestate"] {
     --brand: 158 95% 20%;
@@ -12092,6 +12105,18 @@
     --brand-muted: 287 20% 45%;
     --brand-dark: 287 45% 65%;
     --brand-darker: 287 40% 78%;
+  }
+
+  .dark [data-theme="cadroneadv"] {
+    --brand: 344 35% 50%;
+    --brand-hover: 344 35% 42%;
+    --brand-light: 344 30% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 344 20% 24%;
+    --brand-border: 344 20% 34%;
+    --brand-muted: 344 15% 45%;
+    --brand-dark: 344 35% 65%;
+    --brand-darker: 344 35% 78%;
   }
 
   .dark [data-theme="bcrealestate"] {

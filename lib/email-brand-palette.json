@@ -389,6 +389,7 @@
   "nzdrone": ["#035063","#ecf6f9","#021f27","#d7e6ea"],
   "crfsc": ["#1d5e72","#ecf6f9","#12353f","#d7e5ea"],
   "cadronebasic": ["#6d307e","#f5edf7","#2c1532","#e7dcea"],
+  "cadroneadv": ["#371b22","#f6eef0","#180c0f","#e9dde0"],
   "bcrealestate": ["#036340","#ebfaf4","#032619","#d3eee4"],
   "ascppbt": ["#22511f","#edf9ec","#11240f","#d8ead7"],
   "rpt": ["#492a27","#f9edec","#201413","#ead8d7"],

@@ -1606,5 +1606,13 @@
       "pr": 989,
       "findings": 7
     }
+  ],
+  "cadroneadv": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 983,
+      "findings": 3
+    }
   ]
 }

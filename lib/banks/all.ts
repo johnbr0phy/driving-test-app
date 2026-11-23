@@ -356,6 +356,7 @@ import "./ea3";
 import "./cahambasic";
 import "./hamgeneral";
 import "./cadronebasic";
+import "./cadroneadv";
 import "./carscook";
 import "./carshair";
 import "./excpt";

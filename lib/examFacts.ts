@@ -152,6 +152,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Canada's Small Basic Exam page and TP 15263, and CARs Part IX as amended by SOR/2025-70, checked November 2026",
     source: { name: "Transport Canada: Small Basic Exam", url: "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic" },
   },
+  cadroneadv: {
+    answer:
+      "In Canada, flying a drone of 250 g to 150 kg in controlled airspace, closer than 30 m to people not involved, within 3 nautical miles of an airport or 1 nautical mile of a heliport, in extended visual line-of-sight or in a sheltered operation needs the Pilot Certificate - Advanced Operations from Transport Canada. To get it you pass the Advanced Exam online in Transport Canada's Drone Management Portal: 50 multiple-choice questions in 60 minutes, with 80% or higher to pass, open to people 16 and older. Then you complete an in-person flight review with a flight reviewer within the 12 months before applying. Questions are based on Transport Canada's knowledge requirements document TP 15263. Most advanced operations also need a drone whose model has a safety assurance declaration under Standard 922 for that operation, and flights in controlled airspace need an authorization from NAV CANADA or the air traffic services provider. The certificate does not expire, but pilots must show recent activity within 24 months.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Pass mark", value: "80%" },
+      { label: "Minimum age", value: "16" },
+      { label: "Then", value: "In-person flight review with a flight reviewer" },
+      { label: "Based on", value: "TP 15263 (Fourth Edition, March 2025), CARs Part IX and Standard 922" },
+      { label: "Where", value: "Online, Transport Canada Drone Management Portal, English or French" },
+      { label: "Retakes", value: "After a 24-hour wait, as often as needed" },
+      { label: "Certificate", value: "Does not expire; 24-month recency rule" },
+      { label: "Run by", value: "Transport Canada" },
+    ],
+    basedOn: "Transport Canada's Advanced Exam page and TP 15263, and CARs Part IX as amended by SOR/2025-70, checked November 2026",
+    source: { name: "Transport Canada: Advanced Exam", url: "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-advanced" },
+  },
   cahambasic: {
     answer:
       "In Canada, Innovation, Science and Economic Development Canada (ISED) issues the Amateur Radio Operator Certificate with Basic Qualification and a call sign, which together let you operate an amateur station without a separate station licence. The Basic exam has 100 multiple-choice questions, one drawn from each of the 100 topics in ISED's Basic syllabus (RIC-3), and the pass mark is 70%. A score of 80% or more earns Basic with Honours, which adds the amateur bands below 30 MHz; Basic alone covers every band above 30 MHz. ISED-accredited examiners give the exam in person or by videoconference. It is closed book except for ISED's approved formula and block diagram sheet, a calculator that cannot store formulas or text is allowed, and there is no set time limit. Since July 15, 2025 every Basic exam uses ISED's updated question bank.",

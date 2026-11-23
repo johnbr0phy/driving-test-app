@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "How is this practice organized?",
-    a: "The study guide's test specification weights the content areas as engine 9, automatic transmission 4, manual drive train 6, suspension and steering 13, brakes 11, electrical 8 and HVAC 4 of every 50 questions. Each Tigertest practice test has exactly that mix, and the five training sets follow the same areas.",
+    a: "The study guide's test specification weights the content areas as engine 9, automatic transmission 4, manual drive train 6, suspension and steering 13, brakes 11, electrical 8 and HVAC 4, which adds up to 50 (the test page now lists 55 scored questions, so read these as proportions). Each Tigertest practice test has exactly that mix, and the five training sets follow the same areas.",
   },
   {
     q: "Can I take the ASE G1 test at home?",

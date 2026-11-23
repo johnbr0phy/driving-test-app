@@ -71,15 +71,15 @@ PASSAGES = [
       "The system lets court staff see which interpreters are available in each language and book them "
       "weeks ahead. Interpreters say it has made their work easier to plan, though some dislike being "
       "paid only for the time a case takes rather than for the whole session they are booked for. Demand "
-      "for some languages still outstrips supply, and for these, interpreting by video link is being "
-      "tried.",
+      "for some languages still outstrips supply, and a trial of interpreting by video link is limited "
+      "to those languages.",
       [
           TF("Adjournments caused by a missing interpreter fell by more than half in the first year.", "T",
              "They fell from 64 to 22; half of 64 is 32, and 22 is below that."),
           TF("Under the new system, interpreters are paid for the whole session they are booked for.", "F",
              "Some interpreters dislike being paid only for the time a case takes rather than the whole session."),
           TF("The video link trial covers every language used in the region's courts.", "F",
-             "Video interpreting is being tried for the languages where demand outstrips supply, not for all of them."),
+             "The video link trial is limited to the languages where demand outstrips supply."),
           TF("Most interpreters prefer the online system to the old arrangement.", "C",
              "Interpreters say it has made planning easier, and some dislike the pay rule, but the passage gives no overall preference figure."),
           MC("Meaning in context", "In the passage, \"outstrips\" means:",

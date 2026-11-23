@@ -68,7 +68,7 @@ PASSAGES = [
       "August, dogs are now banned between 11 a.m. and 6 p.m.; at other times they must be on a lead. "
       "Outside those months, dogs may be off the lead if they are under the owner's control.\n\n"
       "The change follows complaints about dog fouling and two incidents in which children were knocked "
-      "over. Wardens will patrol at weekends during the summer. Dog owners' groups say the hours are too "
+      "over. Wardens will patrol on summer weekends, though not on weekdays. Dog owners' groups say the hours are too "
       "long and have asked for an area at the far end of the beach where dogs could run freely all year. "
       "The council has said it will review the rules after the first summer.",
       [
@@ -77,7 +77,7 @@ PASSAGES = [
           TF("In October, a dog under its owner's control may be off the lead.", "T",
              "Outside June to August, dogs may be off the lead if under the owner's control."),
           TF("Wardens will patrol the beach every day in summer.", "F",
-             "Wardens will patrol at weekends during the summer."),
+             "Wardens will patrol on summer weekends but not on weekdays."),
           TF("The council has agreed to create a year-round area for dogs to run freely.", "C",
              "Owners' groups asked for one, and the council will review the rules, but the passage does not say it agreed."),
           MC("Reason", "Which reason for the change does the passage give?",
@@ -189,7 +189,7 @@ PASSAGES = [
     P(0, "Winter road gritting",
       "A county council grits about 900 kilometres of road when frost or snow is forecast. These are the "
       "national roads, the main regional roads and the routes to hospitals and bus depots. The other "
-      "roads in the county, most of them local roads, are not gritted.\n\n"
+      "roads in the county, which include nearly all of its local roads, are not gritted.\n\n"
       "Salt is spread before ice forms, usually in the evening, because it works best when it is on the "
       "road before the temperature drops. If heavy rain follows, the salt can be washed away and the road "
       "may need to be treated again. The council keeps a store of salt at each of its three depots and "
@@ -198,7 +198,7 @@ PASSAGES = [
           TF("Routes to hospitals are among the roads the council grits.", "T",
              "Routes to hospitals and bus depots are on the gritting list."),
           TF("Most local roads in the county are gritted.", "F",
-             "The other roads, most of them local roads, are not gritted."),
+             "The roads not on the list, which include nearly all local roads, are not gritted."),
           TF("Each of the council's three depots holds the same amount of salt.", "C",
              "The passage says each depot keeps a store of salt but not how much."),
           TF("The council grits more roads than any other county council.", "C",

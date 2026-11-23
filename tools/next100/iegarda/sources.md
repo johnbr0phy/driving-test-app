@@ -56,8 +56,9 @@ on for numerical reasoning, since publicjobs lists a calculator among things a c
 ## Could not be confirmed, and how the copy words it
 
 - No 2026 candidate information booklet could be read, so question counts, times, item formats and
-  the test provider are not stated. The copy says publicjobs sends a Pre-Test Information Booklet and
-  familiarisation material before Stage 1.
+  the test provider are not stated. The copy says only that publicjobs provides familiarisation material before Stage 1 (2024 booklet).
+  Review 2026-11-23: the publicjobs 2026 page was re-read; it names no Stage 1 tests, so the landing
+  attributes remote webcam proctoring to the 2024 booklet and the test names to the Garda flowchart.
 - No pass mark is published: candidates are ranked on an order of merit and the highest go forward.
   Tigertest reports percent correct and never calls a score passing.
 - The written exercise, the 2026 roleplay and the interview are not modelled. No situational

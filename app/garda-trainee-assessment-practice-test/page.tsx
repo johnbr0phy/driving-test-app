@@ -23,7 +23,7 @@ const description =
 const faqs = [
   {
     q: "What are the Garda Trainee Stage 1 assessments?",
-    a: "Stage 1 of the Garda Trainee competition is run by publicjobs for An Garda Síochána. The Garda selection flowchart lists online verbal and numerical reasoning tests and a written exercise. The tests are taken online at a time of your choosing within the testing window, remotely proctored by webcam, and in English only. publicjobs describes its verbal reasoning test as judging statements against written passages and its numerical reasoning test as drawing conclusions from numerical information, both multiple choice.",
+    a: "Stage 1 of the Garda Trainee competition is run by publicjobs for An Garda Síochána. The Garda selection flowchart lists online verbal and numerical reasoning tests and a written exercise. The tests are taken online, in English only (2026 FAQ); in the 2024 competition they could be taken at any time within the testing window and were remotely proctored by webcam. publicjobs describes its verbal reasoning test as judging statements against written passages and its numerical reasoning test as drawing conclusions from numerical information, both multiple choice.",
   },
   {
     q: "Is there a pass mark for Stage 1?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "What happens after the interview?",
-    a: "Candidates who pass the interview and meet the eligibility rules go to An Garda Síochána for the appointments process: the Physical Competency Test, a medical, a substance misuse test and vetting. Those who pass everything are invited to the Foundation Training Programme at the Garda College in Templemore. The whole process can take 6 to 18 months, according to the 2026 FAQ.",
+    a: "Candidates who pass the interview and meet the eligibility rules go to An Garda Síochána for the appointments process: the Physical Competency Assessment, a medical, a substance misuse test and vetting. Those who pass everything are invited to the Foundation Training Programme at the Garda College in Templemore. The whole process can take 6 to 18 months, according to the 2026 FAQ.",
   },
   {
     q: "Is this the real Garda test?",
@@ -248,7 +248,7 @@ export default function GardaTraineeLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Read the booklet publicjobs sends</h3>
               <p>
-                Before Stage 1, publicjobs sends a Pre-Test Information Booklet and familiarisation material with practice examples. Read them closely for the number of questions, the time and what you may use, and take the tests somewhere quiet with a reliable connection and a webcam.
+                Before Stage 1, publicjobs provides familiarisation material with practice examples (2024 candidate booklet). Read it closely for the number of questions, the time and what you may use, and take the tests somewhere quiet with a reliable connection and a webcam.
               </p>
             </div>
           </div>

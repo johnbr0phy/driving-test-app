@@ -58,7 +58,7 @@
     {
       "id": "IEGARDA-T2-P3",
       "title": "A new court interpretation service",
-      "text": "Courts in one region have moved from booking interpreters in person to a shared online booking system. Under the old arrangement, cases were sometimes adjourned because an interpreter had not arrived, which meant witnesses and victims had to return on another day. In the first year of the new system, adjournments for this reason fell from 64 to 22.\n\nThe system lets court staff see which interpreters are available in each language and book them weeks ahead. Interpreters say it has made their work easier to plan, though some dislike being paid only for the time a case takes rather than for the whole session they are booked for. Demand for some languages still outstrips supply, and for these, interpreting by video link is being tried."
+      "text": "Courts in one region have moved from booking interpreters in person to a shared online booking system. Under the old arrangement, cases were sometimes adjourned because an interpreter had not arrived, which meant witnesses and victims had to return on another day. In the first year of the new system, adjournments for this reason fell from 64 to 22.\n\nThe system lets court staff see which interpreters are available in each language and book them weeks ahead. Interpreters say it has made their work easier to plan, though some dislike being paid only for the time a case takes rather than for the whole session they are booked for. Demand for some languages still outstrips supply, and a trial of interpreting by video link is limited to those languages."
     },
     {
       "id": "IEGARDA-T2-P4",
@@ -103,7 +103,7 @@
     {
       "id": "IEGARDA-D-P3",
       "title": "Dog control at a beach",
-      "text": "A coastal council has changed its rules for dogs on one of its busiest beaches. From June to August, dogs are now banned between 11 a.m. and 6 p.m.; at other times they must be on a lead. Outside those months, dogs may be off the lead if they are under the owner's control.\n\nThe change follows complaints about dog fouling and two incidents in which children were knocked over. Wardens will patrol at weekends during the summer. Dog owners' groups say the hours are too long and have asked for an area at the far end of the beach where dogs could run freely all year. The council has said it will review the rules after the first summer."
+      "text": "A coastal council has changed its rules for dogs on one of its busiest beaches. From June to August, dogs are now banned between 11 a.m. and 6 p.m.; at other times they must be on a lead. Outside those months, dogs may be off the lead if they are under the owner's control.\n\nThe change follows complaints about dog fouling and two incidents in which children were knocked over. Wardens will patrol on summer weekends, though not on weekdays. Dog owners' groups say the hours are too long and have asked for an area at the far end of the beach where dogs could run freely all year. The council has said it will review the rules after the first summer."
     },
     {
       "id": "IEGARDA-D-P4",
@@ -123,7 +123,7 @@
     {
       "id": "IEGARDA-D-P7",
       "title": "Winter road gritting",
-      "text": "A county council grits about 900 kilometres of road when frost or snow is forecast. These are the national roads, the main regional roads and the routes to hospitals and bus depots. The other roads in the county, most of them local roads, are not gritted.\n\nSalt is spread before ice forms, usually in the evening, because it works best when it is on the road before the temperature drops. If heavy rain follows, the salt can be washed away and the road may need to be treated again. The council keeps a store of salt at each of its three depots and places grit bins at steep junctions so that residents can treat short stretches themselves."
+      "text": "A county council grits about 900 kilometres of road when frost or snow is forecast. These are the national roads, the main regional roads and the routes to hospitals and bus depots. The other roads in the county, which include nearly all of its local roads, are not gritted.\n\nSalt is spread before ice forms, usually in the evening, because it works best when it is on the road before the temperature drops. If heavy rain follows, the salt can be washed away and the road may need to be treated again. The council keeps a store of salt at each of its three depots and places grit bins at steep junctions so that residents can treat short stretches themselves."
     },
     {
       "id": "IEGARDA-D-P8",
@@ -1668,7 +1668,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Video interpreting is being tried for the languages where demand outstrips supply, not for all of them."
+      "explanation": "The video link trial is limited to the languages where demand outstrips supply."
     },
     {
       "id": "IEGARDA-T2-V-17",
@@ -2760,7 +2760,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "Wardens will patrol at weekends during the summer."
+      "explanation": "Wardens will patrol on summer weekends but not on weekdays."
     },
     {
       "id": "IEGARDA-D-V-15",
@@ -3332,7 +3332,7 @@
         1
       ],
       "lockedOrder": true,
-      "explanation": "The other roads, most of them local roads, are not gritted."
+      "explanation": "The roads not on the list, which include nearly all local roads, are not gritted."
     },
     {
       "id": "IEGARDA-D-V-41",

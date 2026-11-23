@@ -4648,14 +4648,14 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   iegarda: {
     answer:
-      "Stage 1 of the Garda Trainee competition is a set of online assessments run by publicjobs for An Garda Síochána. An Garda Síochána's selection flowchart lists them as verbal and numerical reasoning tests and a written exercise, taken online and remotely proctored by webcam, in English only. Candidates are ranked on their scores, and those highest on the order of merit go on to Stage 2, an online interview (with a roleplay in the 2026 competition). There is no published pass mark. publicjobs sends a Pre-Test Information Booklet and familiarisation material before the tests, so check those for the number of questions and the time.",
+      "Stage 1 of the Garda Trainee competition is a set of online assessments run by publicjobs for An Garda Síochána. An Garda Síochána's selection flowchart lists them as verbal and numerical reasoning tests and a written exercise, taken online and in English only (in 2024 they were remotely proctored by webcam). Candidates are ranked on their scores, and those highest on the order of merit go on to Stage 2, an online interview (with a roleplay in the 2026 competition). There is no published pass mark. publicjobs provides familiarisation material before the tests, so check it for what each test involves.",
     rows: [
       { label: "Stage 1", value: "Online verbal and numerical reasoning tests and a written exercise" },
-      { label: "Taken", value: "Online, at a time in the testing window, remotely proctored by webcam" },
+      { label: "Taken", value: "Online; in 2024, at any time in the testing window, remotely proctored by webcam" },
       { label: "Language", value: "English only (2026 FAQ)" },
       { label: "Scoring", value: "Ranked on an order of merit; no published pass mark" },
       { label: "Stage 2", value: "Online interview on Zoom (with a roleplay in 2026)" },
-      { label: "Then", value: "Physical Competency Test, medical, substance misuse test and vetting by An Garda Síochána" },
+      { label: "Then", value: "Physical Competency Assessment, medical, substance misuse test and vetting by An Garda Síochána" },
       { label: "Eligibility", value: "18 to under 50 on the closing date; Leaving Certificate or NFQ Level 5" },
       { label: "Run by", value: "publicjobs, for An Garda Síochána" },
     ],

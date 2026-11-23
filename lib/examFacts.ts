@@ -580,6 +580,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
     source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
   },
+  danbrhs: {
+    answer:
+      "The Radiation Health and Safety (RHS) exam is the Dental Assisting National Board's (DANB) test of the knowledge dental assistants need to take dental radiographs safely. Many states recognize or require it before an assistant may expose radiographs, and it is one of the component exams of DANB's CDA and NELDA certifications. It has 75 multiple-choice questions in 60 minutes, given by computer adaptive testing at a test center or by remote online proctoring, in English or Spanish. DANB's outline, effective March 12, 2025, weights it as purpose and technique 50%, radiation characteristics and protection 25%, and infection prevention and control 25%, and it covers digital radiography only. Scores run from 100 to 900 and 400 passes, which is not a percentage. There are no eligibility requirements.",
+    rows: [
+      { label: "Questions", value: "75 multiple choice" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Passing score", value: "400 on a 100 to 900 scaled score" },
+      { label: "Content", value: "Purpose and technique 50%, radiation protection 25%, infection control 25%" },
+      { label: "Format", value: "Computer adaptive; digital radiography only" },
+      { label: "Where", value: "Test center or remote online proctoring" },
+      { label: "Languages", value: "English and Spanish" },
+      { label: "Eligibility", value: "None" },
+      { label: "Retakes", value: "No limit; reapply and pay the full fee each time" },
+      { label: "Given by", value: "Dental Assisting National Board (DANB)" },
+    ],
+    basedOn: "DANB's RHS exam page, RHS Exam Outline and References (effective March 12, 2025) and 2026 Candidate Handbook, checked November 2026",
+    source: { name: "DANB: Radiation Health and Safety (RHS) exam", url: "https://www.danb.org/exams/exam/rhs" },
+  },
   crat: {
     answer:
       "The Certified Rhythm Analysis Technician (CRAT) exam is Cardiovascular Credentialing International's (CCI) credential for monitor and telemetry technicians who watch and interpret heart rhythms. It is a two-hour computer-based exam of 130 questions, 110 scored and 20 unscored, taken at Pearson VUE test centers. For exams after July 1, 2023 CCI weights it as analyzing abnormal rhythms 60%, analyzing normal rhythms 16%, initiating cardiac monitoring services 9%, administering cardiac tests 9% and processing test findings 6%. Scores run from 0 to 900 and 650 passes, which is not a percentage. Applicants need a high school diploma or GED plus a cardiovascular or allied health program, related work experience, or a science or health degree.",

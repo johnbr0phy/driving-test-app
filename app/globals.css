@@ -6174,6 +6174,19 @@
     --brand-border-light: 287 35% 90%;
     --brand-gradient-to: 300 60% 96%;
   }
+  /* DANB RHS theme: deep plum ink */
+  [data-theme="danbrhs"] {
+    --brand: 274 25% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 274 30% 96%;
+    --brand-hover: 274 25% 12%;
+    --brand-dark: 274 25% 10%;
+    --brand-darker: 274 25% 7%;
+    --brand-muted: 274 15% 68%;
+    --brand-border: 274 15% 80%;
+    --brand-border-light: 274 15% 90%;
+    --brand-gradient-to: 284 30% 96%;
+  }
   /* CRAT (CCI) theme: deep monitor green */
   [data-theme="crat"] {
     --brand: 116 70% 16%;
@@ -14238,6 +14251,18 @@
     --brand-dark: 287 100% 65%;
     --brand-darker: 287 90% 78%;
   }
+  .dark [data-theme="danbrhs"] {
+    --brand: 274 25% 50%;
+    --brand-hover: 274 25% 42%;
+    --brand-light: 274 30% 13%;
+    --brand-gradient-to: 284 30% 11%;
+    --brand-border-light: 274 15% 24%;
+    --brand-border: 274 15% 34%;
+    --brand-muted: 274 15% 45%;
+    --brand-dark: 274 25% 65%;
+    --brand-darker: 274 25% 78%;
+  }
+
   .dark [data-theme="crat"] {
     --brand: 116 70% 31.2%;
     --brand-hover: 116 70% 23.2%;

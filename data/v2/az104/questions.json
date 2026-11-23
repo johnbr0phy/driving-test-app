@@ -2735,16 +2735,18 @@
     "domain": "az104StorageData",
     "skill": "Snapshots and soft delete",
     "difficulty": 2,
-    "format": "numeric",
-    "stem": "How many share snapshots can one Azure file share hold, including those taken by Azure Backup? Type the number only.",
-    "explanation": "A file share can keep up to 200 share snapshots, and those taken by Azure Backup count toward that limit.",
-    "numeric": {
-      "answers": [
-        "200"
-      ],
-      "tolerance": 0,
-      "wholeNumber": true
-    }
+    "format": "single",
+    "stem": "A user deleted a folder from an Azure file share mounted over SMB on Windows. A share snapshot from last night exists. How can the user get the folder back without an admin?",
+    "explanation": "Share snapshots appear on the Previous Versions tab of the mounted share in Windows, so a user can copy or restore the folder from there. Share undelete brings back a whole deleted share, and Archive and blob versions apply to blobs, not file shares.",
+    "options": [
+      "Undelete the share in the portal",
+      "Rehydrate the folder from the Archive tier",
+      "Promote the folder's previous blob version",
+      "Restore it from Previous Versions in File Explorer"
+    ],
+    "correct": [
+      3
+    ]
   },
   {
     "id": "AZ104-D-032",
@@ -3352,16 +3354,18 @@
     "domain": "az104Deploy",
     "skill": "Container Apps",
     "difficulty": 2,
-    "format": "numeric",
-    "stem": "If no maximum is set, up to how many replicas can a container app scale out to? Type the number only.",
-    "explanation": "A container app defaults to a minimum of 0 and a maximum of 10 replicas. The maximum can be raised to 1,000.",
-    "numeric": {
-      "answers": [
-        "10"
-      ],
-      "tolerance": 0,
-      "wholeNumber": true
-    }
+    "format": "single",
+    "stem": "A container app's HTTP traffic keeps rising, but it never runs more than 10 replicas and requests queue up. Its scale settings are the defaults. What should be done?",
+    "explanation": "If no limits are set, a container app scales between 0 and 10 replicas. Raising the maximum (up to 1,000) lets the HTTP scale rule add more replicas. The minimum already defaults to 0.",
+    "options": [
+      "Move it to Azure Container Instances",
+      "Set the minimum replica count to 0",
+      "Add a second container to the revision",
+      "Raise the maximum replica count"
+    ],
+    "correct": [
+      3
+    ]
   },
   {
     "id": "AZ104-D-061",

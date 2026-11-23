@@ -5,7 +5,7 @@ CAT = "g1Manual"; SEG = "MD"
 Q = [
 # A
 ("A", "On many cars, which fluid fills the hydraulic clutch system?",
- "Specified DOT brake fluid",
+ "DOT brake fluid",
  ["Automatic transmission fluid", "Power steering fluid", "Manual gearbox oil"],
  "Most hydraulic clutches use brake fluid, often from a shared reservoir with the brake master cylinder. The cap or service information names the exact type."),
 ("A", "The clutch reservoir keeps dropping, yet nothing is wet outside the bellhousing. What is a likely cause?",
@@ -42,10 +42,10 @@ Q = [
  "So it can surely be refilled",
  ["To let air vent the case", "To relieve internal case pressure", "To let the oil warm faster"],
  "If the drain plug comes out first and the fill plug is seized, the car is left with an empty gearbox. Loosening the fill plug first avoids that."),
-("C", "What lubricant goes into a manual transaxle?",
- "The specified fluid",
- ["Any 75W-90 gear oil", "Engine oil of any grade", "Automatic transmission fluid"],
- "Manual units use a range of fluids, from gear oil to ATF and special synchronizer oils. The wrong one can cause hard shifting or synchronizer wear."),
+("C", "Why can GL-5 gear oil harm a manual gearbox built for GL-4?",
+ "It can attack brass synchros",
+ ["It is too thin when hot", "It foams in cold weather", "It lacks extreme-pressure additives"],
+ "GL-5 carries more extreme-pressure additive, which protects hypoid gears but can corrode the yellow-metal synchronizers some manual units use. The fluid the manufacturer names is used."),
 # D
 ("D", "A vibration rises with road speed but does not change with engine speed in neutral. What is a likely source?",
  "Drive shaft or wheels",
@@ -61,7 +61,7 @@ Q = [
  "The center support bearing holds the middle of the shaft in a rubber cushion. Torn rubber lets the shaft move and shake, most on take-off and under load."),
 ("D", "How is an adjustable tapered roller wheel bearing set after it is packed?",
  "To the specified end play",
- ["As tight as it will turn", "Until the hub rocks freely", "Torqued tight, then locked"],
+ ["As tight as it will turn", "Until the hub rocks freely", "Past the specified preload"],
  "Typical procedures seat the bearing with torque while turning the hub, back off, then set a small preload or end play as specified and lock the nut. Too tight overheats it; too loose lets it hammer."),
 ("D", "A wheel bearing hub has a growl that gets louder as speed rises. How is a bearing confirmed on a lift?",
  "Spin the wheel and feel it",

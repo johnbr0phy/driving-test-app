@@ -87,8 +87,8 @@ Q = [
  "The service brakes are adjusted first. If the cable is tightened first, it holds the shoes out and the service adjustment is wrong."),
 # C
 ("C", "Which lubricant goes on caliper slide pins?",
- "Specified brake grease",
- ["Wheel bearing grease", "Anti-seize compound", "Clean engine oil"],
+ "Brake caliper grease",
+ ["Wheel bearing grease", "Copper anti-seize", "Clean engine oil"],
  "Slide pins need a high-temperature lubricant that will not swell the rubber boots. Many manufacturers specify a silicone-based brake grease."),
 ("C", "A caliper slide pin boot is torn. What problem follows?",
  "Pins rust and stick",

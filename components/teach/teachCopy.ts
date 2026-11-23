@@ -511,7 +511,7 @@ export const GB_GROUP_TITLES: Record<string, string> = {
   "Outdoor & recreation licenses": "Outdoor & recreation licences",
   "Aviation, radio & trade licenses": "Aviation, radio & trade licences",
   "Real estate, insurance, securities & notary licenses": "Real estate, insurance, securities & notary licences",
-  "Social work and counseling exams": "Social work and counselling exams",
+  "Psychology, social work and counseling exams": "Psychology, social work and counselling exams",
 };
 
 export function pickTeachCopy(lang: Language, englishLocale: EnglishLocale, translated: Partial<Record<Language, TeachCopy>>): TeachCopy {

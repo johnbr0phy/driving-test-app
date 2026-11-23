@@ -279,7 +279,7 @@ const BORROWED_SETS: Record<string, string> = {
   nzsfe: "nclex", nzensf: "nclexpn", nziqn: "nclex", sgrtt: "moto", sgm5: "series7", sgvl: "driving", sgsnb: "nclex",
   // International batch 2 (Philippines) reuses the nursing, lab, pharmacy, psychology, police, military,
   // insurance and real estate families.
-  phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych",
+  phnle: "nclex", phmidwife: "nclex", phmedtech: "htl", phpharm: "ptcb", phpsychom: "appsych", eppp: "appsych",
   ccat: "wonderlic", phnapolcom: "police", phcle: "police", afpsat: "asvab", phnat: "nclex", phinsurance: "insurance", phrebroker: "realestate",
 };
 

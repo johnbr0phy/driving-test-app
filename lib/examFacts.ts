@@ -7628,6 +7628,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ASWB Examination Guidebook (August 2026), Clinical content outline, checked November 2026",
     source: { name: "ASWB: Examination Guidebook", url: "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf" },
   },
+  eppp: {
+    answer:
+      "The EPPP (Examination for Professional Practice in Psychology) is the licensing exam that US states and Canadian provinces use for psychologists, developed by the Association of State and Provincial Psychology Boards (ASPPB). Part 1, the knowledge exam, has 225 multiple-choice questions, 175 scored and 50 unscored pretest items, with 4 hours and 15 minutes to answer them at a Pearson VUE test center. It covers eight content areas: biological bases of behavior (10%), cognitive-affective bases (13%), social and cultural bases (11%), growth and lifespan development (12%), assessment and diagnosis (16%), treatment, intervention, prevention and supervision (15%), research methods and statistics (7%), and ethical, legal and professional issues (16%). Scores are scaled from 200 to 800, and ASPPB recommends 500 for independent practice; each board sets its own standard. ASPPB plans an integrated EPPP from the fourth quarter of 2027, with Part 1 retakes allowed until March 31, 2028.",
+    rows: [
+      { label: "Questions", value: "225 multiple choice (175 scored, 50 pretest)" },
+      { label: "Time", value: "4 hours 15 minutes" },
+      { label: "Pass mark", value: "Scaled score; ASPPB recommends 500 (of 200 to 800) for independent practice" },
+      { label: "Content", value: "8 areas; assessment and diagnosis and ethics are 16% each" },
+      { label: "Retakes", value: "No more than 4 times in 12 months; boards set their own rules" },
+      { label: "Changing", value: "Integrated EPPP from Q4 2027; Part 1 retakes until March 31, 2028" },
+      { label: "Where", value: "Pearson VUE test centers, after board approval" },
+      { label: "Run by", value: "Association of State and Provincial Psychology Boards (ASPPB)" },
+    ],
+    basedOn: "The EPPP Candidate Handbook (November 2026), Part 1 test specifications, checked November 2026",
+    source: { name: "ASPPB: EPPP Candidate Handbook", url: "https://asppb.net/wp-content/uploads/The-EPPP-Candidate-Handbook_FINAL-November-2026-1.pdf" },
+  },
   phr: {
     answer:
       "The PHR (Professional in Human Resources) is HRCI's certification for HR professionals who implement programs and run day-to-day HR operations under US law. The exam has 115 multiple-choice and other objective questions, 90 scored and 25 unscored pretest items, in 2 hours plus 30 minutes of administration time, taken at a Pearson VUE center or online through OnVUE. Scores are scaled and 500 passes. It covers seven functional areas: business management (14%), workforce planning and talent acquisition (14%), learning and development (10%), total rewards (15%), employee engagement (17%), employee and labor relations (20%) and HR information management (10%).",

@@ -44,8 +44,8 @@ Q = [
  "Rule 4512(a)(1) requires the record to show the signature of the partner, officer or manager denoting that the account was accepted under the member's policies and procedures for accepting accounts."),
 ('A customer changes her mailing address. Under SEC Rule 17a-3 the firm must send a notice of the change:',
  'To her old address, or by another approved means, within 30 days', ['Only to her new address, within 90 days', 'To FINRA within 10 business days', 'Only if she has a margin account'],
- "Rule 17a-3(a)(17)(i)(B)(3) requires the firm, within 30 days of a change of address, to send a notice of the change to the customer's old address or by another means of communication the customer has agreed to."),
-("Under Rule 2165, a firm may place a temporary hold on a disbursement from a specified adult's account when it reasonably believes:",
- 'Financial exploitation is or may be taking place', ["The customer's investments have lost value this year", 'The customer has changed her address twice', 'The customer has asked for a large check'],
- 'Rule 2165 lets a firm hold disbursements of funds or securities, and since 2022 securities transactions, for a specified adult (65 and older, or 18 and older with an impairment) when it reasonably believes financial exploitation is involved.'),
+ "Rule 17a-3(a)(17)(i)(B)(2) requires the firm, within 30 days of a change of address, to send a notice of the change to the customer's old address or by another means of communication the customer has agreed to."),
+("Under Rule 2165, a firm's written procedures must name, by title, who may place, end or extend a temporary hold. Each such person must be:",
+ 'An associated person in a supervisory, compliance or legal role', ["The customer's own registered representative", 'A FINRA examiner assigned to the firm', 'An outside attorney chosen by the customer'],
+ 'Rule 2165 requires the firm to identify the title of each person authorized to place, terminate or extend a temporary hold, and each must be an associated person serving in a supervisory, compliance or legal capacity. The firm must also notify the account parties and trusted contact within two business days of first placing the hold.'),
 ]

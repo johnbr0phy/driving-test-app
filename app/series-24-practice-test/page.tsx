@@ -15,9 +15,9 @@ const siteUrl = SITE_URL;
 
 const title = "Series 24 Practice Test 2026 - Free Questions with Explanations";
 const metaDescription =
-  "Free Series 24 practice: 200 original questions on FINRA's General Securities Principal outline, four 50-question mock tests in the real mix, every answer explained.";
+  "Series 24 practice, free to start: 200 original questions on FINRA's General Securities Principal outline, four 50-question mock tests in the real mix, every answer explained.";
 const description =
-  "Free practice for the FINRA Series 24 General Securities Principal exam: 200 original questions written from FINRA's content outline and the rules it lists. Four mock tests of 50 questions in the real exam's five-function mix, and five training sets covering registration and supervisory systems, conduct, complaints and net capital, customer accounts and sales practices, trading, settlement and reporting, and investment banking and research.";
+  "Practice for the FINRA Series 24 General Securities Principal exam, free to start: 200 original questions written from FINRA's content outline and the rules it lists. Four mock tests of 50 questions in the real exam's five-function mix, and five training sets covering registration and supervisory systems, conduct, complaints and net capital, customer accounts and sales practices, trading, settlement and reporting, and investment banking and research.";
 
 export const metadata: Metadata = {
   title,

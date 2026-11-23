@@ -494,14 +494,14 @@
     "state": "ALL",
     "questionId": "SERIES24-CON-004",
     "category": "s24Conduct",
-    "question": "A representative wants to borrow $20,000 from a customer who is a close friend, not a relative or lender. Under Rule 3240 this:",
-    "optionA": "Is always allowed if the loan is repaid within one year",
-    "optionB": "Needs firm procedures that allow it and firm approval",
-    "optionC": "Needs only the customer's signed written consent",
-    "optionD": "Must be approved by FINRA in advance",
+    "question": "A representative wants to borrow $5,000 from his brother, who also has an account with him. Under Rule 3240 the firm:",
+    "optionA": "Must forbid the loan, since the brother is a customer",
+    "optionB": "Need not require notice or approval, though it may",
+    "optionC": "Must file the loan agreement with FINRA first",
+    "optionD": "Must approve it only if the loan carries interest",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Rule 3240 forbids borrowing from or lending to customers unless the firm's written procedures allow it and the arrangement fits a listed category. For a personal or business relationship outside the broker-customer relationship, the firm must also be notified and approve it."
+    "explanation": "Rule 3240 lets a registered person borrow from a customer who is an immediate family member if the firm's procedures allow it. Notice and written approval are required for loans based on personal or business relationships, but the firm is not required to demand them for immediate family, though its procedures may."
   },
   {
     "type": "SERIES24",
@@ -536,28 +536,28 @@
     "state": "ALL",
     "questionId": "SERIES24-CON-007",
     "category": "s24Conduct",
-    "question": "Under Rule 2040, a firm may pay transaction-based compensation to a person who is not registered when it is:",
-    "optionA": "A referral fee to an accountant based on the commissions each referral earns",
-    "optionB": "A finder's fee to a friend who sends in new customers",
-    "optionC": "A bonus to an unregistered assistant who takes customer orders",
-    "optionD": "Continuing commissions to a retired representative under a contract",
+    "question": "Under Rule 2040(c), a firm may pay transaction-based compensation to an unregistered foreign finder only if:",
+    "optionA": "The finder holds a securities license in some U.S. state",
+    "optionB": "The customers are U.S. citizens who live outside the U.S.",
+    "optionC": "The finder refers no more than ten customers each year",
+    "optionD": "The finder and the customers are non-U.S. persons living abroad",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Rule 2040 bars transaction-based payments to persons who would have to be registered, but allows continuing commissions to retiring registered representatives under a written agreement entered into before they retired, with other conditions."
+    "explanation": "Rule 2040(c) allows finder payments to a nonregistered foreign finder when the firm determines the finder need not register as a U.S. broker-dealer, the finder is a non-U.S. citizen or foreign entity domiciled abroad, and the customers are non-U.S. citizens or foreign entities domiciled abroad, among other conditions."
   },
   {
     "type": "SERIES24",
     "state": "ALL",
     "questionId": "SERIES24-CON-008",
     "category": "s24Conduct",
-    "question": "A firm wants to pay an unregistered insurance agent a share of the commissions from customers he refers. Under Rule 2040 this is:",
-    "optionA": "Not allowed: it is transaction-based pay to an unregistered person",
-    "optionB": "Allowed if the agent holds a valid state insurance license in that state",
-    "optionC": "Allowed up to 25% of the commission on each trade",
-    "optionD": "Allowed if the payment is disclosed on each confirmation",
+    "question": "A firm pays a foreign finder under Rule 2040(c). Each confirmation sent to a customer the finder referred must:",
+    "optionA": "State that a referral or finder's fee is paid under an agreement",
+    "optionB": "Show the finder's home address and phone number",
+    "optionC": "Carry the finder's signature as approval of the trade",
+    "optionD": "List every other customer the same finder referred",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Rule 2040 prohibits paying commissions or other transaction-based compensation to any person who is not registered and who would be required to register to receive it."
+    "explanation": "Rule 2040(c) requires customers to get a document disclosing the finder's compensation and to acknowledge the arrangement in writing, the payments to be recorded on the firm's books, and each confirmation to state that a referral or finder's fee is being paid under an agreement."
   },
   {
     "type": "SERIES24",
@@ -1215,21 +1215,21 @@
     "optionD": "Only if she has a margin account",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Rule 17a-3(a)(17)(i)(B)(3) requires the firm, within 30 days of a change of address, to send a notice of the change to the customer's old address or by another means of communication the customer has agreed to."
+    "explanation": "Rule 17a-3(a)(17)(i)(B)(2) requires the firm, within 30 days of a change of address, to send a notice of the change to the customer's old address or by another means of communication the customer has agreed to."
   },
   {
     "type": "SERIES24",
     "state": "ALL",
     "questionId": "SERIES24-ACC-016",
     "category": "s24Accounts",
-    "question": "Under Rule 2165, a firm may place a temporary hold on a disbursement from a specified adult's account when it reasonably believes:",
-    "optionA": "The customer's investments have lost value this year",
-    "optionB": "The customer has changed her address twice",
-    "optionC": "The customer has asked for a large check",
-    "optionD": "Financial exploitation is or may be taking place",
+    "question": "Under Rule 2165, a firm's written procedures must name, by title, who may place, end or extend a temporary hold. Each such person must be:",
+    "optionA": "The customer's own registered representative",
+    "optionB": "A FINRA examiner assigned to the firm",
+    "optionC": "An outside attorney chosen by the customer",
+    "optionD": "An associated person in a supervisory, compliance or legal role",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Rule 2165 lets a firm hold disbursements of funds or securities, and since 2022 securities transactions, for a specified adult (65 and older, or 18 and older with an impairment) when it reasonably believes financial exploitation is involved."
+    "explanation": "Rule 2165 requires the firm to identify the title of each person authorized to place, terminate or extend a temporary hold, and each must be an associated person serving in a supervisory, compliance or legal capacity. The firm must also notify the account parties and trusted contact within two business days of first placing the hold."
   },
   {
     "type": "SERIES24",
@@ -1894,14 +1894,14 @@
     "state": "ALL",
     "questionId": "SERIES24-TRD-020",
     "category": "s24Trading",
-    "question": "A trader places a large buy order at 3:59 p.m. to push a stock's closing price higher for a month-end valuation. This is:",
-    "optionA": "Permitted price discovery near the close",
-    "optionB": "Best execution for the firm's customers",
-    "optionC": "Marking the close, a form of manipulation",
-    "optionD": "A bona fide hedge of a large position",
+    "question": "Surveillance shows a firm trader buying a thinly traded stock minutes before options on it expire, so the calls the firm holds finish in the money. A principal should treat this as:",
+    "optionA": "A routine delta hedge that needs no review",
+    "optionB": "Best execution of a customer order",
+    "optionC": "Possible manipulation of the stock to benefit the options",
+    "optionD": "Permitted market making in the stock",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Entering orders near the close to influence the closing price is manipulation, prohibited by Exchange Act Section 9(a)(2), Rule 10b-5 and FINRA Rules 2020 and 6140."
+    "explanation": "Trading in an underlying stock to move its price so a related options position gains is manipulation, prohibited by Exchange Act Section 9(a)(2), Rule 10b-5 and FINRA Rule 2020, and the supervisor should escalate it for review."
   },
   {
     "type": "SERIES24",
@@ -1922,14 +1922,14 @@
     "state": "ALL",
     "questionId": "SERIES24-TRD-022",
     "category": "s24Trading",
-    "question": "A trader enters large orders on one side of the market with no intent to let them execute, then cancels them after trading on the other side. This is:",
-    "optionA": "Marking the open",
-    "optionB": "Spoofing or layering",
-    "optionC": "Payment for order flow",
-    "optionD": "A stop order",
+    "question": "Under FINRA Rule 5210, a member may publish a quotation for a security only if it:",
+    "optionA": "Has filed the quote with the SEC the day before",
+    "optionB": "Believes the quote is a bona fide bid or offer",
+    "optionC": "Owns at least 1,000 shares of the security",
+    "optionD": "Has a customer order on the other side",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Placing non-bona fide orders to create a false impression of supply or demand and then cancelling them is spoofing or layering, a manipulative practice firms must surveil for."
+    "explanation": "Rule 5210 bars a member from publishing or circulating any quotation unless it believes the quotation represents a bona fide bid for or offer of the security, and bars reporting a transaction unless it believes the trade was a bona fide purchase or sale."
   },
   {
     "type": "SERIES24",
@@ -2188,14 +2188,14 @@
     "state": "ALL",
     "questionId": "SERIES24-STL-013",
     "category": "s24Settlement",
-    "question": "Under Rule 2231, a firm must send customers account statements at least:",
-    "optionA": "Once each calendar quarter",
-    "optionB": "Once each calendar year",
-    "optionC": "Once every six months",
-    "optionD": "Only in months with trades",
+    "question": "A customer holds shares of an unlisted REIT. Under Rule 2231(c), her account statement must include:",
+    "optionA": "A per share estimated value developed in a reliable way",
+    "optionB": "The REIT's original offering price with no other figure",
+    "optionC": "The representative's commission on the purchase",
+    "optionD": "A buy or sell rating on the REIT from the research team",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Rule 2231 requires general securities members to send account statements at least once each calendar quarter to each customer with a balance or position, showing activity and positions."
+    "explanation": "Rule 2231(c) requires a general securities member to include on the account statement a per share estimated value for a DPP or unlisted REIT security, developed in a manner reasonably designed to make it reliable, with the disclosures the rule lists."
   },
   {
     "type": "SERIES24",

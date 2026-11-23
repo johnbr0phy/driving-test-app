@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useId, useRef, useEffect } from "react";
-import { Check, X, Eye, EyeOff } from "lucide-react";
+import { Check, CheckCircle2, XCircle, Eye, EyeOff } from "lucide-react";
 import { AnswerValue, QuestionV2, Stimulus } from "@/lib/v2/types";
 import { OPTION_LETTERS, isCorrect, parseNumeric, relabelChoices } from "@/lib/v2/grading";
 import { RichText } from "./RichText";
@@ -178,8 +178,8 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
                   </span>
                   {struck && !reveal && <span className="sr-only">{t.srEliminated}</span>}
                   {reveal && <span className="sr-only">{question.correct?.includes(orig) ? `${t.srCorrectAnswer}. ` : selected(orig) ? `${t.srIncorrectAnswer}. ` : ""}</span>}
-                  {reveal && question.correct?.includes(orig) && <Check className="mt-1 h-5 w-5 shrink-0 text-green-600 dark:text-green-400" />}
-                  {reveal && selected(orig) && !question.correct?.includes(orig) && <X className="mt-1 h-5 w-5 shrink-0 text-red-500 dark:text-red-400" />}
+                  {reveal && question.correct?.includes(orig) && <CheckCircle2 className="mt-0.5 h-5 w-5 md:h-6 md:w-6 shrink-0 text-green-600 dark:text-green-400" />}
+                  {reveal && selected(orig) && !question.correct?.includes(orig) && <XCircle className="mt-0.5 h-5 w-5 md:h-6 md:w-6 shrink-0 text-red-600 dark:text-red-400" />}
                 </button>
                 {eliminatorOn && !reveal && onToggleEliminate && (
                   <button
@@ -207,7 +207,6 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
         <div className={`v2-pop mt-5 rounded-xl border p-4 ${correct ? "border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950" : "border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950"}`}>
           <div className={`mb-1 text-sm font-bold ${correct ? "text-green-800 dark:text-green-300" : "text-amber-900 dark:text-amber-200"}`}>{correct ? t.correct : t.notQuite}</div>
           <RichText text={relabelChoices(question.explanation, optionOrder)} className="text-[15px] text-gray-800 dark:text-gray-100" />
-          {question.skill && <div className="mt-2 text-xs text-gray-500 dark:text-gray-400">{t.skill(question.skill)}</div>}
         </div>
       )}
     </div>

@@ -259,7 +259,6 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               reveal={revealed}
               disabled={revealed}
               layout="stack"
-              label={`${exam.domainLabels[question.domain] ?? question.domain}${question.skill ? ` · ${question.skill}` : ""}`}
             />
           ) : null}
           {missedSkill && !guestPrompt.showing && !sharePrompt.showing && (

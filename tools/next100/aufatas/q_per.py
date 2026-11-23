@@ -23,7 +23,7 @@ Q = [
      "A permit to acquire", ["Only a signed receipt", "Nothing, as it is a gift", "A police letter"],
      "Firearms Services says a permit to acquire is needed to buy a firearm and also when someone is given one; s 10 requires both the right licence and a permit."),
     ("Do you need a permit to acquire to buy a spare barrel for your Category A rifle?",
-     "No, if it suits your category", ["Yes, one permit per part", "Yes, unless a dealer fits it for you", "No, and any part is allowed"],
+     "No, if it matches your category", ["Yes, one permit per part", "Yes, unless a dealer fits it for you", "No, and any part is allowed"],
      "Firearms Services says a permit is not needed for firearm parts, but you may only acquire parts of the same category as your licence (s 107)."),
     ("Your permit to acquire has expired before you found the rifle. Firearms Services says you should:",
      "Destroy it and apply again", ["Ask for a 30-day extension", "Use it within 7 more days", "Hand it to the dealer to keep"],

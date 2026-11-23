@@ -7341,6 +7341,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ARRT Computed Tomography Examination Content Specifications (effective September 1, 2026) and ARRT's 2026 Postprimary Eligibility Pathway Handbook, checked November 2026",
     source: { name: "ARRT: Computed Tomography Content Specifications", url: "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/7e8095ab-e424-496d-a5d4-d1e951d5783b/CT_Content_Specifications_2026.pdf" },
   },
+  arrtmri: {
+    answer:
+      "The ARRT MRI exam is the American Registry of Radiologic Technologists' certification exam in magnetic resonance imaging. Candidates qualify either through an MRI educational program (the primary pathway) or with a supporting credential plus structured education and clinical experience (the postprimary pathway). It has 200 scored multiple-choice questions on a computer plus unscored pilot items: 30 pilot items and 230 minutes of test time on the primary pathway, 20 pilot items and 210 minutes on the postprimary pathway, according to ARRT's 2026 handbooks. Under the content specifications in effect from February 1, 2025, the scored questions are Patient Care 16, Safety 21, Image Production 106 and Procedures 57. Results are scaled scores from 1 to 99, and a scaled score of 75 passes. ARRT plans revised specifications from February 1, 2028.",
+    rows: [
+      { label: "Questions", value: "200 scored, plus 30 pilot (primary) or 20 pilot (postprimary)" },
+      { label: "Time", value: "230 minutes (primary) or 210 minutes (postprimary) of test time" },
+      { label: "Pass mark", value: "Scaled score of 75 (1 to 99)" },
+      { label: "Content", value: "Patient Care 16, Safety 21, Image Production 106, Procedures 57" },
+      { label: "Biggest category", value: "Image Production, 106 of 200" },
+      { label: "Attempts", value: "Three attempts within three years of the first exam window" },
+      { label: "Run by", value: "American Registry of Radiologic Technologists (ARRT)" },
+    ],
+    basedOn: "The ARRT Magnetic Resonance Imaging Examination Content Specifications (effective February 1, 2025) and ARRT's 2026 Primary and Postprimary Eligibility Pathway Handbooks, checked November 2026",
+    source: { name: "ARRT: Magnetic Resonance Imaging Content Specifications", url: "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/8a6d78b2-c8bf-4a57-b824-85a9bc5a98e5/Magnetic%20Resonance%20Imaging%20Content%20Specifications%202025.pdf" },
+  },
   nce: {
     answer:
       "The National Counselor Examination (NCE) is the National Board for Certified Counselors' exam for entry-level professional counselors, required for counselor licensure in many states and one of two exam options for the National Certified Counselor (NCC) credential. It has 200 multiple-choice questions in 3 hours and 45 minutes, 160 scored and 40 unscored field-test items, with a 15-minute break after question 100, taken at a Pearson VUE test center or online through OnVUE. The content outline has six domains: professional practice and ethics, intake, assessment and diagnosis, areas of clinical focus, treatment planning, counseling skills and interventions, and core counseling attributes. NBCC sets the passing point for each form by a modified Angoff method. From July 1, 2027 a new version has 170 questions with three options each and six new domains.",

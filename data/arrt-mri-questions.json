@@ -1166,14 +1166,14 @@
     "state": "ALL",
     "questionId": "ARRTMRI-PAR-008",
     "category": "arrtmriParam",
-    "question": "A 200 mm FOV with a 320 matrix gives what in-plane pixel size?",
-    "optionA": "1.6 mm",
-    "optionB": "0.8 mm",
-    "optionC": "0.32 mm",
-    "optionD": "0.625 mm",
+    "question": "A 220 mm FOV with a 320 matrix gives what in-plane pixel size?",
+    "optionA": "About 1.45 mm",
+    "optionB": "About 0.34 mm",
+    "optionC": "About 0.88 mm",
+    "optionD": "About 0.69 mm",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "200 / 320 = 0.625 mm. More matrix for the same FOV means smaller pixels and better resolution, at the cost of SNR."
+    "explanation": "Pixel size = FOV / matrix = 220 / 320 = 0.6875, about 0.69 mm. More matrix for the same FOV means smaller pixels and better resolution, at the cost of SNR."
   },
   {
     "type": "ARRTMRI",
@@ -1908,14 +1908,14 @@
     "state": "ALL",
     "questionId": "ARRTMRI-SEQ-025",
     "category": "arrtmriSeq",
-    "question": "Which postprocessing shows a 3D MRA as projection images by keeping the brightest voxel along each ray?",
-    "optionA": "Maximum intensity projection",
-    "optionB": "Multiplanar reformation",
-    "optionC": "Image subtraction",
-    "optionD": "Apparent diffusion coefficient map",
+    "question": "Which postprocessing calculates a map of how freely water moves, using images taken at two or more b-values?",
+    "optionA": "ADC mapping",
+    "optionB": "Maximum intensity projection",
+    "optionC": "Multiplanar reformation",
+    "optionD": "Image subtraction",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "MIP projects the highest signal along each line of sight, showing bright vessels as an angiogram. It can hide overlapping structures and small vessels."
+    "explanation": "The apparent diffusion coefficient map is calculated from the signal change between b-values. It removes T2 shine-through, so restricted diffusion is dark on the map."
   },
   {
     "type": "ARRTMRI",
@@ -2160,14 +2160,14 @@
     "state": "ALL",
     "questionId": "ARRTMRI-NEU-011",
     "category": "arrtmriNeuro",
-    "question": "To show the dural venous sinuses for suspected sinus thrombosis, which study is used?",
-    "optionA": "Arterial spin labeling",
-    "optionB": "Brain spectroscopy",
-    "optionC": "MR venography",
-    "optionD": "CSF flow study",
+    "question": "For a 2D time-of-flight MR venogram of the dural sinuses, where is the saturation band placed?",
+    "optionA": "Above the slices, to null venous inflow",
+    "optionB": "Across the orbits only",
+    "optionC": "Below the slices, to null arterial inflow",
+    "optionD": "In the center of the slice stack",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "MRV, by 2D TOF, phase contrast or contrast-enhanced imaging, shows the sinuses. Saturation for MRV is placed to null arterial inflow instead."
+    "explanation": "Arterial blood enters the head from below, so a band below the slices removes it and leaves the venous sinuses bright. Carotid MRA does the reverse."
   },
   {
     "type": "ARRTMRI",
@@ -2426,14 +2426,14 @@
     "state": "ALL",
     "questionId": "ARRTMRI-BOD-006",
     "category": "arrtmriBody",
-    "question": "On a pancreas MRI, which phase best shows a hypervascular neuroendocrine tumor?",
-    "optionA": "Delayed 10-minute phase",
-    "optionB": "Late arterial phase",
-    "optionC": "Precontrast T2 only",
-    "optionD": "Hepatobiliary phase",
+    "question": "On precontrast images, the normal pancreas is one of the brightest abdominal organs on which sequence?",
+    "optionA": "Heavily T2-weighted MRCP images",
+    "optionB": "Fat-suppressed T1-weighted images",
+    "optionC": "Diffusion images at a high b-value",
+    "optionD": "Out-of-phase gradient echo images",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Hypervascular tumors enhance brightly in the arterial phase and may fade later, so a well-timed arterial phase is key."
+    "explanation": "Its protein-rich acinar tissue makes the normal pancreas bright on fat-suppressed T1. Loss of that brightness can point to chronic pancreatitis or a tumor."
   },
   {
     "type": "ARRTMRI",

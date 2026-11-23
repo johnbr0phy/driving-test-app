@@ -3,7 +3,7 @@ _t1 = 0.5 * 256 * 2; assert _t1 == 256          # s, 4 min 16 s
 _t2 = 4.0 * 256 * 2 / 16; assert _t2 == 128     # s, 2 min 8 s
 _t3 = 3.0 * 192 * 1 / 12; assert _t3 == 48
 _px = 240 / 256; assert round(_px, 2) == 0.94
-_px2 = 200 / 320; assert _px2 == 0.625
+_px2 = 220 / 320; assert round(_px2, 2) == 0.69
 _vox = 1.0 * 1.0 * 4; assert _vox == 4
 _ti = 0.693 * 300; assert round(_ti) == 208
 _rfov = 256 * 0.75; assert _rfov == 192
@@ -33,9 +33,9 @@ Q = [
 ("A 240 mm field of view is sampled with a 256 matrix. About how wide is each pixel?",
  "0.94 mm", ["1.07 mm", "0.47 mm", "2.4 mm"],
  "Pixel size = FOV / matrix = 240 / 256 = about 0.94 mm."),
-("A 200 mm FOV with a 320 matrix gives what in-plane pixel size?",
- "0.625 mm", ["1.6 mm", "0.8 mm", "0.32 mm"],
- "200 / 320 = 0.625 mm. More matrix for the same FOV means smaller pixels and better resolution, at the cost of SNR."),
+("A 220 mm FOV with a 320 matrix gives what in-plane pixel size?",
+ "About 0.69 mm", ["About 1.45 mm", "About 0.34 mm", "About 0.88 mm"],
+ "Pixel size = FOV / matrix = 220 / 320 = 0.6875, about 0.69 mm. More matrix for the same FOV means smaller pixels and better resolution, at the cost of SNR."),
 ("Pixels of 1.0 x 1.0 mm are used with a 4 mm slice. What is the voxel volume?",
  "4 cubic mm", ["2 cubic mm", "1 cubic mm", "16 cubic mm"],
  "Voxel volume = pixel width x pixel height x slice thickness = 1 x 1 x 4 = 4 mm cubed."),

@@ -204,6 +204,7 @@ import "./acecpt";
 import "./aswb";
 import "./arrt";
 import "./arrtct";
+import "./arrtmri";
 import "./lmrt";
 import "./nce";
 import "./texesppr";

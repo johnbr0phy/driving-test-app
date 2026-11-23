@@ -11834,6 +11834,32 @@
     --brand-darker: 244 90% 78%;
   }
 
+  /* ARRT Magnetic Resonance Imaging theme */
+  [data-theme="arrtmri"] {
+    --brand: 316 25% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 316 25% 96%;
+    --brand-hover: 316 25% 16%;
+    --brand-dark: 316 25% 14%;
+    --brand-darker: 316 25% 10%;
+    --brand-muted: 316 20% 70%;
+    --brand-border: 316 20% 80%;
+    --brand-border-light: 316 20% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
+  .dark [data-theme="arrtmri"] {
+    --brand: 316 25% 50%;
+    --brand-hover: 316 25% 42%;
+    --brand-light: 316 20% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 316 18% 24%;
+    --brand-border: 316 20% 34%;
+    --brand-muted: 316 20% 45%;
+    --brand-dark: 316 25% 70%;
+    --brand-darker: 316 25% 78%;
+  }
+
   .dark [data-theme="nce"] {
     --brand: 265 20% 50%;
     --brand-hover: 265 20% 42%;

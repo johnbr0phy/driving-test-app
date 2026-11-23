@@ -418,6 +418,7 @@
   "cct": ["#570527","#fbeff4","#260312","#eddee4"],
   "contractorlaw": ["#86505f","#f7f2f4","#493137","#e9dde0"],
   "natecore": ["#74527a","#f6f3f7","#312334","#e6dfe7"],
+  "osha30": ["#8c7054","#f7f5f2","#3d3024","#e9e3dd"],
   "hvacjourney": ["#20323c","#f2f6f8","#0e161b","#dde4e9"],
   "r410a": ["#9119b3","#f9eefc","#3d0d4a","#e8dbeb"],
   "backflow": ["#007a08","#eefcef","#033506","#dbebdc"],

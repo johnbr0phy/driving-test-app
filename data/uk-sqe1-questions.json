@@ -1896,12 +1896,12 @@
     "category": "sqeAccounts",
     "question": "On a probate matter, one payment covers billed fees and an unpaid counsel's fee. What must the firm do?",
     "optionA": "Keep it all in business account",
-    "optionB": "Keep it all in client account",
+    "optionB": "Hold all of it as client money",
     "optionC": "Return it to the payer",
     "optionD": "Allocate each part promptly",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Rule 4.2 allows a mixed payment to be received into either account but each part must be allocated promptly to the correct account; an unpaid professional disbursement is client money."
+    "explanation": "A mixed payment containing client money goes into client account, and under rule 4.2 each part must then be allocated promptly to the correct account; an unpaid professional disbursement is client money, billed fees are not."
   },
   {
     "type": "UKSQE1",

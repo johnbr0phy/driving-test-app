@@ -120,6 +120,7 @@ export const TEACHES: Record<string, string> = {
   cct: "a cardiographic or EKG technician program",
   crat: "a monitor technician or EKG technician program",
   danb: "a dental assisting program",
+  danbrhs: "a dental assisting or dental radiography course",
   cpr: "CPR and first aid classes",
   ukfaw: "First Aid at Work courses",
   casfa: "Standard First Aid and CPR Level C courses",

@@ -1,0 +1,4783 @@
+[
+  {
+    "id": "DATAPLUS-T1-001",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Statistical methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager asks how many units each store sold last quarter and the average per store. Which type of statistics answers this?",
+    "explanation": "Descriptive statistics summarize what already happened, using counts, totals and averages.",
+    "options": [
+      "Prescriptive",
+      "Predictive",
+      "Inferential",
+      "Descriptive"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-002",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new analyst needs to know what each column means, its data type and its allowed values. Which document provides this?",
+    "explanation": "A data dictionary describes each field: its name, meaning, type, format and allowed values.",
+    "options": [
+      "Data flow diagram",
+      "Executive summary",
+      "Data dictionary",
+      "Mock-up"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-003",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Database types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A retailer stores orders in tables with fixed columns that are linked by keys and queried with SQL. Which kind of database is this?",
+    "explanation": "A relational database keeps data in tables of rows and columns linked by keys and is queried with SQL.",
+    "options": [
+      "Relational",
+      "Graph database",
+      "Key-value store",
+      "Document store"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-004",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Joins",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst needs every customer, including customers with no orders, alongside any orders they placed. Which join on Customers to Orders fits?",
+    "explanation": "A left join keeps every row from the left table (Customers) and fills order columns with null where no match exists.",
+    "options": [
+      "RIGHT JOIN from Customers",
+      "CROSS JOIN",
+      "INNER JOIN",
+      "LEFT JOIN from Customers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-005",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Completeness",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A customer table has 1,200 rows, and the email field is filled in 1,140 of them. What percent of the email field is complete? Type the number only.",
+    "explanation": "Completeness is filled values divided by total rows: 1,140 / 1,200 = 0.95, so 95 percent.",
+    "numeric": {
+      "answers": [
+        "95"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T1-006",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Audience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A chief financial officer asks how the new pricing affected margin. Which presentation fits best?",
+    "explanation": "C-suite readers want the result and its business impact at a high level, with detail available on request.",
+    "options": [
+      "The full SQL code and row-level data",
+      "The margin change and one chart",
+      "A data dictionary",
+      "A list of every table joined"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-007",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which chart best shows how monthly website visits changed over the last two years?",
+    "explanation": "Line charts show a trend over a continuous time axis.",
+    "options": [
+      "Line chart",
+      "Scatter plot",
+      "Infographic",
+      "Pie chart"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-008",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Delivery methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The board meets once a quarter and wants the key results on one page in plain language. Which delivery fits?",
+    "explanation": "An executive summary gives decision makers the main findings briefly.",
+    "options": [
+      "Executive summary",
+      "Raw data export",
+      "Real-time dashboard",
+      "Self-service portal"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-009",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Infrastructure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An insurer keeps its claims database in its own data center and rents public cloud compute only for heavy year-end analysis. Which deployment model is this?",
+    "explanation": "Hybrid combines on-premises or private resources with public cloud resources.",
+    "options": [
+      "Community",
+      "Private",
+      "Hybrid",
+      "Public"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-010",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Statistical methods",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A model recommends how much stock each warehouse should order next week to keep costs lowest. Which type of analytics is this?",
+    "explanation": "Prescriptive analytics recommends an action. Predictive analytics would only forecast what demand will be.",
+    "options": [
+      "Descriptive",
+      "Prescriptive",
+      "Diagnostic only",
+      "Inferential"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-011",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Data lineage",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An auditor asks where a revenue figure on a dashboard came from and every step that changed it. What answers this?",
+    "explanation": "Data lineage traces data from its origin through each transformation to where it is used.",
+    "options": [
+      "A pivot table",
+      "Data lineage",
+      "A legend",
+      "Data masking"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-012",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a star schema for sales, which table holds the measurable events such as quantity sold and sale amount?",
+    "explanation": "A fact table stores the numeric measures of business events, with keys that point to the dimension tables.",
+    "options": [
+      "Dimension table",
+      "Bridge table",
+      "Fact table",
+      "Lookup list"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-013",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Joins",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Table Stores has 6 rows. Table Visits has 40 rows, and 2 of the 6 stores have no visits. Every visit matches one store. How many rows does Stores LEFT JOIN Visits return? Type the number only.",
+    "explanation": "The 40 matching visit rows come back, plus one row with nulls for each of the 2 stores without visits: 40 + 2 = 42.",
+    "numeric": {
+      "answers": [
+        "42"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T1-014",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Duplication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The same order appears twice with the same order ID, date and amount after two files were combined. What issue is this?",
+    "explanation": "Duplication is the same record repeated. Redundancy is the same fact stored in more than one place by design or by copying fields.",
+    "options": [
+      "Redundancy",
+      "Duplication",
+      "Data drift",
+      "Outlier"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-015",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Audience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The data engineering team asks why two figures disagree. What level of detail suits them?",
+    "explanation": "A technical audience needs the method, sources and logic to check and fix the issue.",
+    "options": [
+      "Only a single headline number",
+      "A slogan for the campaign",
+      "A branded infographic for the website",
+      "The query logic and joins"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-016",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst wants to see whether delivery distance and delivery cost move together across 900 orders. Which chart fits?",
+    "explanation": "A scatter plot places each order by its two values, showing any relationship between the variables.",
+    "options": [
+      "Pie chart",
+      "Scatter plot",
+      "Waterfall chart",
+      "Stacked bar chart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-017",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Delivery methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Store managers want to build their own views and filter data whenever they need, without asking the analytics team. Which delivery fits?",
+    "explanation": "A self-service portal lets users explore and filter governed data on their own.",
+    "options": [
+      "An emailed screenshot",
+      "An executive summary",
+      "A printed monthly report",
+      "A self-service portal"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-018",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which storage type keeps each file with its metadata and a unique ID in a flat namespace, the usual choice for a data lake in the cloud?",
+    "explanation": "Object storage keeps data as objects with metadata and IDs, scales to huge volumes and suits raw files in a lake.",
+    "options": [
+      "Local storage",
+      "Object storage",
+      "Block storage",
+      "File storage"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-019",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Statistical methods",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team surveys 500 of 80,000 customers and uses the results to estimate satisfaction for all customers. Which type of statistics is this?",
+    "explanation": "Inferential statistics use a sample to draw conclusions about a larger population.",
+    "options": [
+      "Descriptive",
+      "Inferential",
+      "Logical",
+      "Prescriptive"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-020",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Source of truth",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three reports show different customer counts. What should the company define so everyone uses the same figure?",
+    "explanation": "A single, agreed source of truth gives one authoritative version of key data.",
+    "options": [
+      "Separate source files for each team",
+      "More data silos",
+      "A new color scheme",
+      "A single source of truth"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-021",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer moves to a new city, and the warehouse keeps the old row with an end date and adds a new row for the new city. What is this design?",
+    "explanation": "A slowly changing dimension keeps history of attributes that change now and then, here by adding a new row and closing the old one.",
+    "options": [
+      "Nested JSON structure",
+      "Slowly changing dimension",
+      "Many-to-many dimension link",
+      "Bridge table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-022",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Union",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two branch tables have the same columns. The analyst wants one list of all rows with exact duplicates removed. Which operation fits?",
+    "explanation": "UNION stacks rows from both queries and removes duplicate rows. UNION ALL keeps the duplicates.",
+    "options": [
+      "UNION",
+      "UNION ALL",
+      "GROUP BY",
+      "INNER JOIN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-023",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Outliers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Most delivery times in a set run from 1 to 5 days, but one record shows 400 days. What should the analyst do first?",
+    "explanation": "An outlier can be a data entry error or a real event. Verify it before removing, capping or keeping it.",
+    "options": [
+      "Delete it without checking",
+      "Report 400 days as typical",
+      "Check whether it is an entry error",
+      "Replace every value in the column with the mean"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-024",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Mock-ups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before building a dashboard, an analyst sketches the layout and shows it to the requester. Why?",
+    "explanation": "A mock-up lets stakeholders agree on content and layout early, so the build matches what they need.",
+    "options": [
+      "To confirm needs before the build",
+      "To meet PCI DSS",
+      "To speed up the database",
+      "To encrypt the data before it is shared"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-025",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows how a starting profit rises and falls through a series of gains and costs to reach the final profit?",
+    "explanation": "A waterfall chart shows a starting value, each positive or negative step, and the ending value.",
+    "options": [
+      "Waterfall chart",
+      "Scatter plot",
+      "Line chart",
+      "Histogram"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-026",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Dashboards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which dashboard lets users change date ranges, drill into regions and see results update?",
+    "explanation": "A dynamic (interactive) dashboard responds to filters and drill-downs. A static one shows fixed figures.",
+    "options": [
+      "Data dictionary",
+      "Static dashboard",
+      "Infographic",
+      "Dynamic dashboard"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-027",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Find the mean of 14, 22, 27, 31 and 46. Type the number only.",
+    "explanation": "The sum is 14 + 22 + 27 + 31 + 46 = 140, and 140 / 5 = 28.",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T1-028",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Metadata",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A file's creation date, author and column names, but not the values themselves, are examples of what?",
+    "explanation": "Metadata is data about data: descriptions of its structure, origin and properties.",
+    "options": [
+      "Masked data",
+      "Metadata",
+      "Fact data",
+      "Derived data"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-029",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Containerization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analysis script works on one laptop but fails on the server because library versions differ. What packages the script with its libraries so it runs the same everywhere?",
+    "explanation": "A container bundles code, runtime and libraries, so the environment travels with the application.",
+    "options": [
+      "A container",
+      "A pivot table",
+      "A data mart",
+      "A bridge table"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-030",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Web server log lines carry labeled key=value pairs, but different lines carry different keys. Which kind of data is this?",
+    "explanation": "Labeled keys give the lines some organization, but there is no fixed table schema that every line follows, so the data is semi-structured.",
+    "options": [
+      "Spatial",
+      "Semi-structured",
+      "Unstructured",
+      "Structured"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-031",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Aggregate",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst starts this query:\n$$\\begin{array}{l}\\texttt{SELECT region, SUM(amount) FROM sales ...}\\end{array}$$\nWhich ending returns total sales per region?",
+    "explanation": "GROUP BY region makes one group per region, and SUM adds the amounts inside each group.",
+    "options": [
+      "... WHERE region IS NOT NULL",
+      "... DISTINCT region",
+      "... ORDER BY region",
+      "... GROUP BY region"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-032",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Imputation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Five known ages are 23, 31, 36, 44 and 71, and one more age is missing. Using median imputation, what value fills the gap?",
+    "explanation": "Sorted, the middle of 23, 31, 36, 44 and 71 is 36. The mean would be 41, pulled up by the 71.",
+    "options": [
+      "31",
+      "36",
+      "41",
+      "44"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-033",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Accessibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report must be usable by a reader who is color-blind. Which choice helps most?",
+    "explanation": "Information shown only by color can be missed; direct labels, patterns or shapes carry the meaning too.",
+    "options": [
+      "Use red and green to show good and bad",
+      "Remove the chart titles",
+      "Use labels and patterns, not color alone",
+      "Shrink all text to fit one page"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-034",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the median of 8, 13, 19, 24, 30 and 41?",
+    "explanation": "With six values the median is the average of the two middle values: (19 + 24) / 2 = 21.5. The mean would be 22.5.",
+    "options": [
+      "21.5",
+      "22.5",
+      "24",
+      "27"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-035",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which standard sets security rules for organizations that store, process or transmit payment card data?",
+    "explanation": "The Payment Card Industry Data Security Standard applies to any entity that handles cardholder data.",
+    "options": [
+      "GDPR",
+      "ISO 9001",
+      "HIPAA",
+      "PCI DSS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-036",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst wants to compare the spread, median and outliers of order values across five regions in one view. Which chart fits?",
+    "explanation": "A box plot shows the median, quartiles and outliers for each group side by side.",
+    "options": [
+      "Pie chart",
+      "Box plot",
+      "Tree map",
+      "Gauge"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-037",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Dashboards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Finance needs the same report every Monday morning. Which delivery frequency is this?",
+    "explanation": "A recurring report runs on a set schedule. Ad hoc reports are made once for a specific question.",
+    "options": [
+      "Ad hoc",
+      "One-time",
+      "Recurring",
+      "Real-time"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-038",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst wants to mix code, results, charts and written notes in one shareable document that runs cell by cell. Which tool fits?",
+    "explanation": "Notebooks combine runnable code cells with output and narrative text.",
+    "options": [
+      "A notebook such as Jupyter",
+      "An SQL dump",
+      "A pivot table",
+      "A plain text editor with no output"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-039",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A column must store names in many alphabets, such as Greek and Japanese, with lengths that vary. Which SQL data type fits best?",
+    "explanation": "nvarchar stores variable-length Unicode text. char is fixed length, and varchar is usually single-byte text in many systems.",
+    "options": [
+      "nvarchar",
+      "integer",
+      "char",
+      "varchar"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-040",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Filter",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst wants only regions whose total sales exceed 50,000. Which clause filters on the aggregated total?",
+    "explanation": "WHERE filters rows before grouping. HAVING filters groups after aggregation, so it can test SUM(amount).",
+    "options": [
+      "LIMIT",
+      "ORDER BY",
+      "HAVING",
+      "WHERE"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-041",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Min-max scaling maps a column whose minimum is 30 and maximum is 90 onto 0 to 1. What does the value 54 become?",
+    "explanation": "Min-max scaling is (x - min) / (max - min) = (54 - 30) / (90 - 30) = 24 / 60 = 0.4.",
+    "options": [
+      "0.24",
+      "0.4",
+      "0.54",
+      "0.6"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-042",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Sensitive data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report for an outside partner is built from a table that includes customer salaries. What should the analyst do?",
+    "explanation": "External audiences should get only what they need; sensitive data is removed, aggregated or masked.",
+    "options": [
+      "Add a legend explaining salaries",
+      "Change the font color of salary columns",
+      "Share it as is, since the partner signed an agreement",
+      "Remove or aggregate the sensitive fields"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-043",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the mode of 3, 7, 7, 7, 9, 12 and 12?",
+    "explanation": "The mode is the most frequent value. 7 appears three times; 12 appears twice. So the mode is 7.",
+    "options": [
+      "7",
+      "8.14",
+      "9",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-044",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client sends an analyst a file of EU customers in which names are replaced by tokens, and the client keeps the key that links each token back to a person. How does the GDPR treat this file?",
+    "explanation": "This is pseudonymization. Pseudonymized data stays personal data under the GDPR because the key can link it back to people. Only data anonymized so it can never be re-identified falls outside the GDPR.",
+    "options": [
+      "Anonymous data outside the GDPR",
+      "Personal data, since it can be re-identified",
+      "Exempt, since the analyst lacks the key",
+      "Public data, since the names are tokenized"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-045",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Maps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which map shades each state by its sales per person, darker for higher values?",
+    "explanation": "A choropleth map fills geographic areas with color intensity based on a value.",
+    "options": [
+      "Choropleth map",
+      "Line chart",
+      "Gantt chart",
+      "Bubble chart"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-046",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Data versioning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Auditors need month-end figures that never change once the month closes. Which approach fits?",
+    "explanation": "A snapshot freezes the data at a point in time, so later changes in the source do not alter it.",
+    "options": [
+      "An ad hoc query each time",
+      "A dynamic filter",
+      "A real-time live connection",
+      "A snapshot taken at month end"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-047",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Daily orders were 52, 61, 47, 88 and 70. What is the range? Type the number only.",
+    "explanation": "Range is the maximum minus the minimum: 88 - 47 = 41.",
+    "numeric": {
+      "answers": [
+        "41"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T1-048",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Retention",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A policy says invoices are kept for a set period and then securely destroyed. What is this policy?",
+    "explanation": "A retention policy sets how long each kind of data is kept and how it is disposed of.",
+    "options": [
+      "Data lineage",
+      "Data retention",
+      "Data drift",
+      "Data augmentation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-049",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A ledger column holds account balances such as 1204.37 that must add up to the exact cent in month-end totals. Which data type fits best?",
+    "explanation": "Decimal (fixed-point) stores exact values. Float is approximate and can produce rounding errors with money.",
+    "options": [
+      "Float",
+      "Decimal",
+      "Integer",
+      "Boolean"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-050",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Nested queries",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst runs this query:\n$$\\begin{array}{l}\\texttt{SELECT name FROM products}\\\\\\texttt{WHERE price > (SELECT AVG(price) FROM products)}\\end{array}$$\nWhat does it return?",
+    "explanation": "The inner query computes the average price once, and the outer query keeps products whose price is higher.",
+    "options": [
+      "Only the single most expensive product",
+      "The average product price",
+      "Products with no price",
+      "Products priced above the average"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-051",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Standardization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A column has a mean of 71 and a standard deviation of 8. After standardization (z-scores), what does the value 83 become?",
+    "explanation": "Standardization subtracts the mean and divides by the standard deviation: (83 - 71) / 8 = 12 / 8 = 1.5.",
+    "options": [
+      "-1.5",
+      "0.67",
+      "1.5",
+      "12"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-052",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "KPIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support manager wants one measurable figure, tracked against a target, to show whether the team is doing well. What is this?",
+    "explanation": "A KPI is a measurable value tied to a goal, such as average first-response time against a target.",
+    "options": [
+      "A key performance indicator",
+      "A data silo",
+      "A bridge table",
+      "A foreign key"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-053",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pair are business intelligence tools built mainly for dashboards and visual reports?",
+    "explanation": "Tableau and Power BI (and Looker) are BI tools. pandas and tidyverse are code libraries; DBeaver and Toad manage databases.",
+    "options": [
+      "pandas and tidyverse",
+      "RStudio and VS Code",
+      "DBeaver and Toad",
+      "Tableau and Power BI"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-054",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Pivot tables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A manager wants a table of total sales with products as rows and quarters as columns, which they can rearrange themselves. Which tool fits?",
+    "explanation": "A pivot table summarizes data by row and column groups and can be rearranged and filtered.",
+    "options": [
+      "Scatter plot",
+      "Infographic",
+      "Word cloud",
+      "Pivot table"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-055",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dashboard still shows last week's numbers although the source has new data. What issue is this?",
+    "explanation": "Stale data means the report has not picked up the latest source data, often because a scheduled refresh failed.",
+    "options": [
+      "Stale data from a missed refresh",
+      "An accessibility issue with the fonts",
+      "Too many colors",
+      "A missing legend"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-056",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the sample standard deviation of 5, 9, 11 and 15, to two decimal places?",
+    "explanation": "The mean is 10. Squared deviations are 25, 1, 1 and 25, summing to 52. Dividing by n - 1 = 3 gives a variance of 17.33, and its square root is 4.16. Dividing by n instead gives 3.61, the population figure.",
+    "options": [
+      "3.61",
+      "4.16",
+      "5",
+      "17.33"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-057",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a new data set is stored, its owner tags it with a sensitivity level from a fixed list, and the tag decides who may open it and whether it must be encrypted. What is this practice?",
+    "explanation": "Classification sorts data by sensitivity, which decides how it is stored, shared and protected.",
+    "options": [
+      "Data exploding",
+      "Data appending",
+      "Data classification",
+      "Data binning"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-058",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "File extensions",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A partner sends a plain text file in which each line is a record and commas separate the fields. Which extension does it most likely have?",
+    "explanation": "A .csv file holds comma-separated values as plain text, one record per line.",
+    "options": [
+      ".json",
+      ".jpg",
+      ".csv",
+      ".xlsx"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-059",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Query optimization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report filters a 40-million-row table on order_date and runs slowly. Which change most likely speeds up that filter?",
+    "explanation": "An index lets the database find matching dates without scanning every row.",
+    "options": [
+      "Add an index on order_date",
+      "Remove the primary key",
+      "Use SELECT * instead",
+      "Add more columns to the table"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-060",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Regular expressions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which tool matches every value in a text column that looks like a 5-digit ZIP code, so bad formats can be found?",
+    "explanation": "A regular expression describes a text pattern, such as exactly five digits, and finds values that do or do not match it.",
+    "options": [
+      "A cross join",
+      "A regular expression",
+      "A bridge table",
+      "A pivot table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-061",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user reports that the dashboard shows no data since this morning. What should the analyst do first?",
+    "explanation": "Start by reproducing the issue and checking the most likely causes, such as a failed refresh or broken connection.",
+    "options": [
+      "Delete the user's account",
+      "Rebuild the whole dashboard from scratch tonight",
+      "Confirm the issue and check the data connection",
+      "Change the chart colors"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-062",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a Python library for loading, cleaning and reshaping tabular data in data frames?",
+    "explanation": "pandas is the main Python data frame library. tidyverse is the R equivalent family of packages.",
+    "options": [
+      "SSMS",
+      "pandas",
+      "tidyverse",
+      "Looker"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-063",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A delivery took 79 minutes. Deliveries average 94 minutes with a standard deviation of 6 minutes. What is its z-score?",
+    "explanation": "z = (value - mean) / standard deviation = (79 - 94) / 6 = -15 / 6 = -2.5, so it is 2.5 standard deviations below the mean.",
+    "options": [
+      "-2.5",
+      "-0.4",
+      "2.5",
+      "15"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-064",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Privacy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test database shows card numbers as **** **** **** 4417 so developers never see full numbers. Which technique is this?",
+    "explanation": "Masking hides part or all of a value while keeping the format, so real data is not exposed.",
+    "options": [
+      "Replication",
+      "Masking",
+      "Encryption in transit",
+      "Imputation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-065",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A line chart shows four product lines in different colors. What must it include so readers know which line is which?",
+    "explanation": "A legend, or labels placed directly on the lines, maps each color to its series.",
+    "options": [
+      "A larger company logo in the corner",
+      "A legend or direct line labels",
+      "A darker background",
+      "A 3D effect"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-066",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A dashboard takes two minutes to load because it pulls 300 million detail rows to show monthly totals. What is the best fix?",
+    "explanation": "Loading only what is needed, such as monthly aggregates or a filtered range, cuts data size and load time.",
+    "options": [
+      "Remove the title",
+      "Pre-aggregate the data before loading",
+      "Add more charts to spread the load",
+      "Use brighter colors"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-067",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data sources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst pulls weather readings from a provider by sending requests to its endpoints and receiving JSON back. Which data source is this?",
+    "explanation": "An application programming interface returns data in a defined format when a program calls its endpoints.",
+    "options": [
+      "Data mart",
+      "Log file",
+      "API",
+      "Web scraping"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-068",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "ETL and ELT",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Raw data is loaded into a cloud warehouse first and then reshaped there with SQL. Which approach is this?",
+    "explanation": "In extract, load, transform the transformation runs inside the target system after loading.",
+    "options": [
+      "RPA",
+      "OLTP",
+      "ELT",
+      "ETL"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-069",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Exploding",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A cell holds \"red;blue;green\" and the analyst needs one row per color. Which transformation is this?",
+    "explanation": "Exploding splits a list inside one field into separate rows, one per item.",
+    "options": [
+      "Exploding",
+      "Binning",
+      "Appending",
+      "Merging"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-070",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A query fails with this message:\n$$\\begin{array}{l}\\texttt{ERROR: column \"custmer\\_id\" does not exist}\\end{array}$$\nWhat is the most likely cause?",
+    "explanation": "The message names a column that does not exist, which points to a typo: custmer_id instead of customer_id.",
+    "options": [
+      "The column name is misspelled",
+      "The server is out of disk space",
+      "The user lacks a network cable",
+      "The table has too many rows"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-071",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Mathematical functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Monthly sign-ups rose from 640 to 752. What is the percent change?",
+    "explanation": "Percent change = (new - old) / old x 100 = 112 / 640 x 100 = 17.5%. Dividing by the new value instead gives 14.9%.",
+    "options": [
+      "1.75%",
+      "11.2%",
+      "14.9%",
+      "17.5%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T1-072",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Privacy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which access model gives analysts read access to sales tables because of the position they hold, not because of who they are personally?",
+    "explanation": "RBAC grants permissions to roles, and users get access by being assigned a role.",
+    "options": [
+      "Anonymization",
+      "Role-based access control",
+      "Discretionary sharing by each table owner",
+      "Data drift"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-073",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "AI concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team uses a model trained on huge amounts of text to draft plain-language summaries of a quarterly report. What kind of model is this?",
+    "explanation": "A large language model is a generative AI model trained on large text corpora that can produce and summarize text.",
+    "options": [
+      "Linear regression model",
+      "Rule-based decision table",
+      "Large language model",
+      "Bridge table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-074",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which color scheme fits a map showing a single measure that runs from low to high?",
+    "explanation": "A sequential scheme shows order from low to high; random or rainbow colors suggest categories instead.",
+    "options": [
+      "Every color of the rainbow",
+      "Random colors for each area",
+      "Red and green only",
+      "Sequential, light to dark of one hue"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-075",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Validation techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before publishing, a second analyst checks the formulas and logic behind each figure. Which technique is this?",
+    "explanation": "A peer review has another person check the code and calculations to catch mistakes.",
+    "options": [
+      "Data drift",
+      "Peer review",
+      "Augmentation",
+      "Source control"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-076",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data repositories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which repository stores raw data of any type, structured or not, in its original form until someone needs it?",
+    "explanation": "A data lake holds large volumes of raw data in native formats. A data mart is a small curated subset for one team.",
+    "options": [
+      "Fact table",
+      "Data mart",
+      "Data silo",
+      "Data lake"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-077",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "ETL and ELT",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the steps of an ETL job in order:",
+    "explanation": "ETL extracts, transforms in staging, and then loads the finished data into the target.",
+    "options": [
+      "Extract records from the source systems",
+      "Clean and reshape them in a staging area",
+      "Load the result into the warehouse"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-078",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Binning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Exact incomes are grouped into ranges such as under 30k, 30k to 60k and over 60k for a chart. What is this called?",
+    "explanation": "Binning groups continuous values into ranges, or bins, a simple form of clustering.",
+    "options": [
+      "Parsing",
+      "Augmentation",
+      "Binning",
+      "Scaling"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-079",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An extract job fails at random times and the error screen shows nothing useful. What helps find the cause?",
+    "explanation": "Logs record each step, error and timing, so intermittent failures can be traced.",
+    "options": [
+      "Add more charts",
+      "Raise the pass rate",
+      "Enable logging on the job",
+      "Change the dashboard theme"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-080",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A salary column has a few extreme values. Which measure of spread is least affected by them?",
+    "explanation": "The IQR covers the middle 50 percent of values, so extremes in the tails barely move it. Range, variance and standard deviation all react to extremes.",
+    "options": [
+      "Standard deviation",
+      "Interquartile range",
+      "Range",
+      "Variance"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-081",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Quality assurance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a new report goes live, the sales managers who requested it confirm it meets their needs. What is this test?",
+    "explanation": "UAT has the intended users check that the deliverable meets their requirements.",
+    "options": [
+      "Data profiling",
+      "User acceptance testing",
+      "Stress test",
+      "Unit test of each formula"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-082",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "AI concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every Monday a bot logs in to a web portal, downloads a sales file and drops it into a shared folder, copying what a person did by hand. What is this?",
+    "explanation": "Robotic process automation uses software bots to repeat rule-based clicks and keystrokes a person would do.",
+    "options": [
+      "Data augmentation",
+      "Deep learning",
+      "Robotic process automation",
+      "Natural language processing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-083",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A bar chart's y-axis starts at 95 instead of 0, so a 2 percent difference looks huge. What is the problem?",
+    "explanation": "Bar length should be proportional to the value; starting the axis above zero distorts the comparison.",
+    "options": [
+      "The title is too short to explain it",
+      "The legend is missing from the chart",
+      "The truncated axis exaggerates it",
+      "The bars should be pie slices"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-084",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Validation techniques",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A region filter shows the wrong totals. Put these troubleshooting steps in order:",
+    "explanation": "Reproduce the problem, find the cause in the filter, fix and validate against the source, then confirm with the user.",
+    "options": [
+      "Reproduce the wrong totals with the filter on",
+      "Check the filter field and its values against the source",
+      "Fix the filter logic and compare totals with the source",
+      "Ask the user to confirm the corrected report"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-085",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Classify each item by its data structure:",
+    "explanation": "Table rows follow a fixed schema (structured). XML has tags but a flexible layout (semi-structured). Audio has no data model (unstructured).",
+    "rows": [
+      "Rows in an inventory table",
+      "An XML order message",
+      "Recorded support calls"
+    ],
+    "columns": [
+      "Semi-structured",
+      "Structured",
+      "Unstructured"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-086",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Data collection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firm surveys 300 customers, drawing a random sample from each of its three regions in proportion to the region's size. Which sampling method is this?",
+    "explanation": "Stratified sampling splits the population into groups (strata) and draws a random sample from each.",
+    "options": [
+      "Stratified sampling",
+      "Snowball sampling",
+      "Convenience sampling",
+      "Census"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-087",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Transformation",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each task to the technique it uses:",
+    "explanation": "Appending stacks rows with the same columns. Merging combines tables side by side on a key. Parsing breaks one field into its parts.",
+    "rows": [
+      "Add March rows below the February rows of a table with the same columns",
+      "Join a customer table to an orders table on customer ID",
+      "Split a full address into street, city and postcode fields"
+    ],
+    "columns": [
+      "Parsing",
+      "Merging",
+      "Appending"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-088",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A report connector cannot reach the database. Which are likely connectivity causes? (Choose two.)",
+    "explanation": "Connectivity problems come from credentials, network paths, firewalls, server names and ports, not from chart design.",
+    "options": [
+      "A legend in the wrong corner",
+      "A firewall blocking the database port",
+      "A pie chart with too many slices",
+      "An expired password for the service account"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-T1-089",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Date functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of function finds the number of days between an order date and a ship date?",
+    "explanation": "Date functions add, subtract and compare dates; DATEDIFF returns the interval between two dates.",
+    "options": [
+      "A logical function such as IF",
+      "An aggregate function such as SUM",
+      "A date function such as DATEDIFF",
+      "A string function such as TRIM"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T1-090",
+    "section": "dataplus",
+    "test": 1,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Quality assurance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A model that predicted churn well last year is now less accurate because customer behavior has changed. What is this called?",
+    "explanation": "Data drift is a change over time in the data a process or model sees compared with the data it was built on.",
+    "options": [
+      "Data masking",
+      "Data lineage",
+      "Data silo",
+      "Data drift"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-001",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Statistical methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A model uses three years of history to forecast next month's call volume. Which type of analytics is this?",
+    "explanation": "Predictive analytics uses past data to estimate future outcomes.",
+    "options": [
+      "Inferential",
+      "Predictive",
+      "Descriptive",
+      "Prescriptive"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-002",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document shows, as boxes and arrows, how data moves from source systems through processing into reports?",
+    "explanation": "A data flow diagram maps the movement of data between sources, processes and destinations.",
+    "options": [
+      "User persona",
+      "Data dictionary",
+      "Retention schedule",
+      "Data flow diagram"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-003",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Database types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A social app needs to find friends of friends quickly by following links between people. Which database type suits this best?",
+    "explanation": "A graph database stores nodes and the edges between them, so following many relationships is fast.",
+    "options": [
+      "Flat file",
+      "Relational database",
+      "Columnar warehouse",
+      "Graph database"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-004",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Joins",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which join returns only rows that have a match in both tables?",
+    "explanation": "An inner join keeps only rows where the join condition matches on both sides.",
+    "options": [
+      "UNION ALL",
+      "FULL OUTER JOIN",
+      "LEFT JOIN",
+      "INNER JOIN"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-005",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Missing values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Only 3 of 50,000 rows are missing the order amount, and those orders were test entries. What is a reasonable fix?",
+    "explanation": "When very few rows are affected and they are not real data, deleting them removes the problem without biasing results.",
+    "options": [
+      "Delete those 3 rows",
+      "Impute the maximum amount",
+      "Drop the amount column",
+      "Fill all amounts with zero"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-006",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Audience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sales representative needs to see only their own accounts each morning. Which delivery fits this user persona?",
+    "explanation": "An individual contributor needs detail about their own work, not the high-level company view.",
+    "options": [
+      "The company-wide P&L with every region",
+      "A quarterly board deck",
+      "A filtered view of their own accounts",
+      "The raw database schema"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-007",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which chart best compares total revenue across eight sales teams?",
+    "explanation": "A bar chart compares values across separate categories.",
+    "options": [
+      "Bar chart",
+      "Scatter plot",
+      "Histogram",
+      "Line chart"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-008",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Delivery methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A logistics team must watch truck locations and delays as they happen. Which data versioning approach fits?",
+    "explanation": "Real-time data updates continuously, which suits operational monitoring.",
+    "options": [
+      "Monthly snapshot",
+      "Quarterly summary",
+      "Ad hoc export",
+      "Real-time"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-009",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Infrastructure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which three companies are the large public cloud providers named for data work?",
+    "explanation": "Amazon Web Services, Microsoft Azure and Google Cloud are public cloud providers.",
+    "options": [
+      "AWS, Azure and Google Cloud",
+      "Tableau, Looker and Power BI",
+      "MySQL, Toad and Compass",
+      "Python, R and SAS"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-010",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Statistical methods",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "From a sample of 400 shipments, an analyst reports that the average weight of all shipments is between 11.2 and 12.6 kg with 95 percent confidence. Which type of statistics is this?",
+    "explanation": "A confidence interval is an inferential tool: it estimates a population value from a sample.",
+    "options": [
+      "Descriptive",
+      "Predictive",
+      "Prescriptive",
+      "Inferential"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-011",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Documentation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Regulators ask how a credit-scoring model reaches its results and which inputs matter most. Which document addresses this?",
+    "explanation": "An explainability report describes how a model or analysis reaches its outputs and which factors drive them.",
+    "options": [
+      "Data dictionary",
+      "Executive mock-up",
+      "Pivot table",
+      "Data explainability report"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-012",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Database types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a common reason to choose a non-relational database over a relational one?",
+    "explanation": "Non-relational (NoSQL) stores allow records with different shapes and scale out easily. Strict multi-table joins favor relational systems.",
+    "options": [
+      "Required by every SQL reporting tool",
+      "Smaller files than any CSV",
+      "Flexible schema for changing data",
+      "Strict joins across many related tables"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-013",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Joins",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Table Sizes has 4 rows and table Colors has 7 rows. How many rows does a CROSS JOIN of the two return? Type the number only.",
+    "explanation": "A cross join pairs every row of one table with every row of the other: 4 x 7 = 28.",
+    "numeric": {
+      "answers": [
+        "28"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T2-014",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Redundancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An orders table stores the customer's address in every order row, and the customer table also stores it. What issue does this create?",
+    "explanation": "Storing the same fact in several places is redundancy; when one copy changes and the others do not, they disagree.",
+    "options": [
+      "Spatial data errors",
+      "Redundancy that can drift out of sync",
+      "An outlier",
+      "Missing values in the customer table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-015",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Level of detail",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Executives found a 40-page report hard to use. Which change best fits their level of detail?",
+    "explanation": "Executives need key findings first, with detail available for those who want it.",
+    "options": [
+      "A one-page summary with drill-down links",
+      "More tables of raw rows for every region and month",
+      "Smaller fonts to fit more",
+      "Remove all charts"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-016",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows how many orders fall in each value range, such as 0 to 20 dollars and 20 to 40 dollars?",
+    "explanation": "A histogram shows the distribution of one numeric variable by counting values in bins.",
+    "options": [
+      "Histogram",
+      "Pie chart",
+      "Line chart",
+      "Choropleth map"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-017",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Dashboards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A one-time question from the CEO about last Tuesday's outage needs a quick answer. Which kind of report is this?",
+    "explanation": "An ad hoc report answers a specific question once, outside the regular schedule.",
+    "options": [
+      "Recurring",
+      "Static template",
+      "Self-service",
+      "Ad hoc"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-018",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Storage types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A database server needs raw, low-latency volumes that its operating system formats and manages itself. Which storage type fits?",
+    "explanation": "Block storage presents raw volumes to a server, which suits databases needing fast, consistent I/O.",
+    "options": [
+      "Object storage",
+      "Block storage",
+      "Archive storage",
+      "Shared file storage"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-019",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Find the mean of 17, 26, 33, 38, 51 and 45. Type the number only.",
+    "explanation": "The sum is 17 + 26 + 33 + 38 + 51 + 45 = 210, and 210 / 6 = 35.",
+    "numeric": {
+      "answers": [
+        "35"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T2-020",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Data versioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team must reproduce exactly the data a report used on its publish date months later. What supports this?",
+    "explanation": "Data versioning keeps dated snapshots so past results can be reproduced.",
+    "options": [
+      "A new legend",
+      "A real-time live connection to the source",
+      "Deleting old data",
+      "Versioned snapshots of the data"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-021",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a star schema, which table describes the who, what and where of a sale, such as product name and store region?",
+    "explanation": "Dimension tables hold descriptive attributes that give context to the measures in the fact table.",
+    "options": [
+      "Audit table",
+      "Temporary table",
+      "Fact table",
+      "Dimension table"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-022",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Joins",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst must see every row from both a CRM table and a billing table, matched where possible and with nulls where not. Which join fits?",
+    "explanation": "A full outer join keeps all rows from both tables and fills gaps with nulls.",
+    "options": [
+      "INNER JOIN",
+      "FULL OUTER JOIN",
+      "LEFT JOIN",
+      "CROSS JOIN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-023",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rule rejects any birth date later than today when records are loaded. Which exploration step does this rule perform?",
+    "explanation": "Validation checks values against rules, such as allowed ranges and formats.",
+    "options": [
+      "Exploding",
+      "Imputation",
+      "Binning",
+      "Validation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-024",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Internal vs external",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which report most needs review for brand standards and data that must not leave the company?",
+    "explanation": "External reports represent the company and may reach anyone, so branding and sensitive content are checked closely.",
+    "options": [
+      "A report published to customers",
+      "A test script on a laptop",
+      "A query an analyst runs for themselves",
+      "A developer's log file"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-025",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A pie chart has 14 slices of similar size. What is the better choice?",
+    "explanation": "Pie charts work for a few parts of a whole. Many similar slices are hard to compare, while sorted bars are easy to read.",
+    "options": [
+      "A scatter plot",
+      "A sorted bar chart",
+      "A donut with 14 colors",
+      "A 3D pie chart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-026",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Dashboards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which dashboard is a fixed set of figures, often exported to PDF, that readers cannot filter?",
+    "explanation": "A static dashboard shows fixed content; readers cannot interact with it.",
+    "options": [
+      "Static",
+      "Real-time",
+      "Self-service",
+      "Dynamic"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-027",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the median of 72, 18, 55, 40, 91, 63 and 29?",
+    "explanation": "Sorted, the values are 18, 29, 40, 55, 63, 72, 91. The fourth of seven values is 55. The mean would be 52.57, and 40 is just the fourth value before sorting.",
+    "options": [
+      "40",
+      "47.5",
+      "52.57",
+      "55"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T2-028",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Privacy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an example of protected health information (PHI)?",
+    "explanation": "PHI is health information that can be tied to a specific person. Aggregated or facility data is not.",
+    "options": [
+      "Average wait time for all clinics",
+      "A hospital's street address",
+      "A patient's diagnosis linked to their name",
+      "Total hospital beds in a state"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-029",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several analysts need the same folder of files mounted on their machines over the network. Which storage type fits?",
+    "explanation": "Shared file storage, such as a network-attached share, gives many users one folder tree over the network.",
+    "options": [
+      "Cache memory",
+      "Local storage on each laptop",
+      "Shared file storage",
+      "Block storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-030",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a warehouse, one patient visit can carry several diagnoses and each diagnosis appears on many visits. Which table resolves this many-to-many link?",
+    "explanation": "A bridge (junction) table holds pairs of keys, one row per visit-diagnosis pair, turning many-to-many into two one-to-many links.",
+    "options": [
+      "Bridge table",
+      "Fact table",
+      "Dimension table",
+      "Lookup view"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-031",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Concatenate",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which operation joins first_name and last_name into one full_name text field?",
+    "explanation": "Concatenation joins strings end to end, for example first name, a space and last name.",
+    "options": [
+      "Union",
+      "Concatenate",
+      "Index",
+      "Aggregate"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-032",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Min-max scaling maps a column with a minimum of 10 and a maximum of 50 onto 0 to 1. What does the value 26 become?",
+    "explanation": "(x - min) / (max - min) = (26 - 10) / (50 - 10) = 16 / 40 = 0.4.",
+    "options": [
+      "0.16",
+      "0.26",
+      "0.32",
+      "0.4"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T2-033",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Communication",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A non-technical audience must understand why churn rose. Which approach works best?",
+    "explanation": "Non-technical readers need the conclusion and its cause in plain words, supported by a simple visual.",
+    "options": [
+      "Plain words, one clear chart and the main driver",
+      "The SQL behind each figure",
+      "Regression coefficients with their p-values only",
+      "Every variable that was tested"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-034",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A shop sold 120 units at 4 dollars and 80 units at 9 dollars. What is the average price per unit sold?",
+    "explanation": "This is a weighted mean: (120 x 4 + 80 x 9) / 200 = (480 + 720) / 200 = 6. The simple average of the two prices, 6.5, ignores how many units sold at each.",
+    "options": [
+      "6",
+      "6.5",
+      "8",
+      "13"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T2-035",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Privacy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Names and IDs are removed from a research data set so the people can no longer be identified, with no key kept to reverse it. What is this?",
+    "explanation": "Anonymization permanently removes the link to individuals. Pseudonymized data can still be re-identified with extra information, so it stays personal data.",
+    "options": [
+      "Encryption at rest",
+      "Pseudonymization",
+      "Anonymization",
+      "Masking for display"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-036",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A scatter plot needs a third measure, market size, shown for each point. Which chart adds it?",
+    "explanation": "A bubble chart is a scatter plot in which the size of each point shows a third value.",
+    "options": [
+      "Pivot table",
+      "Bubble chart",
+      "Waterfall chart",
+      "Line chart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-037",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users say a dashboard takes several minutes to refresh each morning. Which is a likely cause?",
+    "explanation": "A full reload of a large data set is slow; incremental refresh of only new or changed rows is faster.",
+    "options": [
+      "The title font is too small",
+      "It reloads all history, not only new rows",
+      "It uses a bar chart instead of a line chart",
+      "The legend is on the left"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-038",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool is an IDE built for the R language?",
+    "explanation": "RStudio is an integrated development environment for R. VS Code is a general editor that supports many languages.",
+    "options": [
+      "Anaconda Navigator",
+      "Compass",
+      "RStudio",
+      "Power BI"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-039",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data type stores a scanned contract PDF inside a database row?",
+    "explanation": "A binary large object (BLOB) holds binary content such as images and PDFs. A CLOB holds large amounts of character text.",
+    "options": [
+      "varchar",
+      "Boolean",
+      "BLOB",
+      "CLOB"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-040",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Union",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Monthly tables for April and May have the same columns. An analyst needs every row from both, including identical rows. Which operation fits?",
+    "explanation": "UNION ALL stacks all rows and keeps duplicates, which also makes it faster than UNION.",
+    "options": [
+      "INTERSECT",
+      "INNER JOIN",
+      "UNION ALL",
+      "UNION"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-041",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Imputation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Four known order sizes are 6, 9, 12 and 13, and one is missing. Using mean imputation, what value fills the gap?",
+    "explanation": "The mean is (6 + 9 + 12 + 13) / 4 = 40 / 4 = 10. The median would be 10.5.",
+    "options": [
+      "10",
+      "10.5",
+      "11",
+      "12"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T2-042",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Accessibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dashboard will be read with screen readers. Which step helps?",
+    "explanation": "Alternative text lets a screen reader describe what a chart shows.",
+    "options": [
+      "Remove the titles",
+      "Use images of text instead of text",
+      "Rely on color to show status",
+      "Add alternative text that describes each chart"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-043",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "In a set of response times the first quartile is 34 seconds and the third quartile is 58 seconds. What is the interquartile range? Type the number only.",
+    "explanation": "IQR = Q3 - Q1 = 58 - 34 = 24 seconds.",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T2-044",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database file on a laptop is encrypted so it cannot be read if the laptop is stolen. Which protection is this?",
+    "explanation": "Encryption at rest protects stored data. Encryption in transit protects data moving over a network.",
+    "options": [
+      "Masking",
+      "Encryption in transit",
+      "Role-based access",
+      "Encryption at rest"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-045",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which visual shows the volume of support tickets by hour of day and day of week, with darker cells for busier times?",
+    "explanation": "A heat map uses color intensity in a grid to show a value across two categories.",
+    "options": [
+      "Line chart",
+      "Pie chart",
+      "Gantt chart",
+      "Heat map"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-046",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a source team renamed a column, one dashboard chart now shows an error. Which validation technique applies?",
+    "explanation": "Schema or structure changes upstream, such as renamed columns, break report fields that point to the old names.",
+    "options": [
+      "Switch to an infographic",
+      "Check for renamed fields upstream",
+      "Increase the refresh rate to every minute",
+      "Add more colors"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-047",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the sample variance of 2, 4 and 9, to two decimal places where needed?",
+    "explanation": "The mean is 5. Squared deviations are 9, 1 and 16, summing to 26. The sample variance divides by n - 1 = 2, giving 13. Dividing by 3 gives 8.67, and the square root of 13 is the standard deviation, 3.61.",
+    "options": [
+      "3.61",
+      "8.67",
+      "13",
+      "26"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T2-048",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Some countries require that their citizens' data be stored within the country's borders. Which concept is this?",
+    "explanation": "Jurisdictional rules, such as data residency laws, decide where data may be stored and processed.",
+    "options": [
+      "Jurisdictional requirements",
+      "Data exploding",
+      "Data augmentation",
+      "Self-service delivery"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-049",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two systems create customer records independently and must never produce the same ID. Which kind of identifier fits?",
+    "explanation": "A universally unique identifier is generated so that collisions are practically impossible, even across separate systems.",
+    "options": [
+      "Auto-increment integer",
+      "Timestamp",
+      "UUID",
+      "char(2)"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-050",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Query optimization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A dashboard builds its SQL by pasting user input into the query text. Which change improves both reuse of the query plan and security?",
+    "explanation": "Parameters keep the query text fixed, so the plan can be reused, and they stop input from being run as SQL code.",
+    "options": [
+      "Temporary tables",
+      "Nested subqueries",
+      "Parameterized queries",
+      "Indexes on every column"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-051",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Conversion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Dates arrive as text such as \"14/03/2026\", so they sort as strings by day, not in date order. Which transformation fixes this?",
+    "explanation": "Conversion changes the data type, so dates sort and filter as dates instead of as text.",
+    "options": [
+      "Append the column to itself again",
+      "Bin the values by month name",
+      "Convert the text to a date type",
+      "Explode the column"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-052",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Opening a file gives garbled characters and the tool reports a bad file header. Which issue is this?",
+    "explanation": "A damaged header and unreadable content point to file corruption; restore from a backup or request a new copy.",
+    "options": [
+      "A missing legend",
+      "Corrupted data",
+      "A slow refresh",
+      "A filter set to all"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-053",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team stores product catalogs in MongoDB and wants a graphical tool to browse documents and build queries. Which tool fits?",
+    "explanation": "Compass is the graphical client for MongoDB document databases. SSMS is for Microsoft SQL Server.",
+    "options": [
+      "Compass",
+      "tidyverse",
+      "SQL Server Management Studio",
+      "Looker"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-054",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Infographics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The marketing team wants a single visual for the public website that tells the story of a year's results with icons and a few key figures. Which fits?",
+    "explanation": "An infographic combines graphics and a few key numbers to tell a story to a general audience.",
+    "options": [
+      "Pivot table",
+      "Infographic",
+      "Data dictionary",
+      "Box plot"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-055",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A date filter on a report returns no rows for March although March data exists. What should the analyst check first?",
+    "explanation": "A filter not working correctly is often a data type or format mismatch, such as dates stored as text.",
+    "options": [
+      "Whether the report is static or dynamic",
+      "Whether dates are stored as text",
+      "Whether the chart has a legend",
+      "Whether the logo is current"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-056",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Mathematical functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Returns fell from 1,250 to 1,075. What is the percent change?",
+    "explanation": "(1,075 - 1,250) / 1,250 x 100 = -175 / 1,250 x 100 = -14%. Dividing by the new value gives -16.3%, which is wrong.",
+    "options": [
+      "-175%",
+      "-86%",
+      "-16.3%",
+      "-14%"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-T2-057",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data breach exposes customer records. Which step does the organization's incident reporting process require?",
+    "explanation": "Incident reporting procedures make sure breaches are recorded, escalated and reported as laws and contracts require.",
+    "options": [
+      "Wait to see if any customer notices",
+      "Report it through the set process",
+      "Delete the logs to limit the damage",
+      "Change the dashboard colors"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-058",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A survey field records whether a customer opted in: yes or no. Which data type fits best?",
+    "explanation": "A Boolean holds one of two values, true or false.",
+    "options": [
+      "Spatial",
+      "Float",
+      "Boolean",
+      "Datetime"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-059",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Query optimization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A long report reuses the same filtered set of 2 million rows in five later steps. Which technique avoids recomputing it each time?",
+    "explanation": "A temporary table holds the intermediate result once for the session, so later steps read it directly.",
+    "options": [
+      "Remove the WHERE clause",
+      "Add ORDER BY to each of the five steps",
+      "Store it in a temporary table",
+      "Use SELECT DISTINCT"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-060",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Derived variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst adds a profit column computed as revenue minus cost for each row. What is the new column?",
+    "explanation": "A derived variable is computed from existing fields.",
+    "options": [
+      "A derived variable",
+      "A foreign key",
+      "An imputed value",
+      "A slowly changing dimension"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-061",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A query returns far more rows than expected after a new table was added to the FROM clause. What is the most likely cause?",
+    "explanation": "Without a correct join condition, each row pairs with many rows of the new table, multiplying the result.",
+    "options": [
+      "An ORDER BY clause",
+      "A missing or wrong join condition",
+      "Too few indexes on the join keys",
+      "A column alias on the new table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-062",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a distribution that installs Python, R, Jupyter and many data packages together and manages their environments?",
+    "explanation": "Anaconda bundles Python, data science packages and an environment manager.",
+    "options": [
+      "Anaconda",
+      "Tableau",
+      "Scala",
+      "Toad"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-063",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Distributions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a data set of home prices, the mean is far above the median. What does this suggest?",
+    "explanation": "A few very large values pull the mean above the median, which is right (positive) skew.",
+    "options": [
+      "The data has no outliers at either end",
+      "The data is skewed left by some very low prices",
+      "The data is skewed right by some very high prices",
+      "The mode equals the mean"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-064",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Data ethics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Data collected to process orders is about to be used to set different prices by customers' religion. Which concern is this?",
+    "explanation": "Using data for a purpose people did not expect, in a way that treats groups unfairly, is an ethics and data usage issue.",
+    "options": [
+      "Missing legend",
+      "Slow refresh rate",
+      "Data ethics and permitted use",
+      "Redundant columns in the order table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-065",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An external report must match the company's style guide. Which design element covers logo, fonts and approved colors?",
+    "explanation": "Branding applies the organization's visual identity to the report.",
+    "options": [
+      "Axis scale",
+      "Legend",
+      "Branding",
+      "Data label"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-066",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Validation techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report total is compared with the total in the source system before release. Which technique is this?",
+    "explanation": "Source validation confirms that report figures match the system of record.",
+    "options": [
+      "Source control",
+      "Exploding",
+      "Binning",
+      "Source validation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-067",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A delivery app stores the latitude and longitude of each drop-off point to draw them on a map. Which data type is designed for this?",
+    "explanation": "Spatial (geography or geometry) types store locations and shapes and support distance and area functions.",
+    "options": [
+      "char",
+      "Boolean",
+      "CLOB",
+      "Spatial"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-068",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Query optimization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst tests a new query on a 1 percent sample of the table before running it on everything. Which technique is this?",
+    "explanation": "Running against a subset speeds up testing; the full data is queried once the logic is confirmed.",
+    "options": [
+      "Indexing the table",
+      "Normalizing the schema",
+      "Working with a subset",
+      "Exploding"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-069",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Augmentation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An analyst adds each store's local weather by date from an outside source to help explain sales. Which technique is this?",
+    "explanation": "Augmentation enriches a data set with extra attributes or data from other sources.",
+    "options": [
+      "Data augmentation",
+      "Standardization",
+      "Exploding",
+      "Data deletion"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-070",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst hits an error in a BI tool that no internal team has seen before. Which resource is a sensible next step?",
+    "explanation": "Vendor documentation, support and online communities often describe known errors and fixes.",
+    "options": [
+      "The vendor's documentation and user community",
+      "Changing the report title",
+      "Turning off all logging",
+      "Deleting the data source"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-071",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "String functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report uses this expression on a code column:\n$$\\begin{array}{l}\\texttt{LEFT(code, 3)}\\end{array}$$\nWhat does it return for the value TXN-4471?",
+    "explanation": "LEFT returns the given number of characters from the start of the string: the first three characters are TXN.",
+    "options": [
+      "TXN-",
+      "TXN",
+      "4471",
+      "471"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-072",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Quality assurance",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which are data quality metrics a profiling report might track? (Choose two.)",
+    "explanation": "Profiling measures completeness, uniqueness, validity and consistency, not design choices.",
+    "options": [
+      "Percent of rows with a missing value in each field",
+      "Dashboard title length",
+      "Count of duplicate records",
+      "Number of chart colors"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-T2-073",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "AI concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company starts from a large model trained on broad data by a vendor and then adapts it to its own support tickets. What is the starting model called?",
+    "explanation": "A foundation model is trained on broad data at scale and can be adapted to many downstream tasks.",
+    "options": [
+      "A data mart",
+      "A slowly changing dimension",
+      "A regression line",
+      "A foundation model"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-074",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which color choice helps a report readable by people with red-green color blindness?",
+    "explanation": "Blue and orange stay distinct for most kinds of color blindness, unlike red and green.",
+    "options": [
+      "Many shades of red",
+      "Red and green side by side for status",
+      "Blue and orange as the main contrast",
+      "Light gray on white"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-075",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Validation techniques",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which technique warns the team automatically when a nightly load brings in far fewer rows than usual?",
+    "explanation": "Monitoring alerts watch metrics such as row counts and refresh status and notify people when they fall outside expected limits.",
+    "options": [
+      "Monitoring alerts",
+      "Legends",
+      "Mock-ups",
+      "Peer review"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-076",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data sources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each department keeps its own customer spreadsheet that the others cannot see or combine. What is this called?",
+    "explanation": "A data silo is data held by one group and isolated from the rest of the organization.",
+    "options": [
+      "Data lakehouse",
+      "Source of truth",
+      "Data silo",
+      "Data mart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-077",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Data integration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Customer data from a web store, a CRM and a call center is combined into one consistent view. What is this called?",
+    "explanation": "Data integration brings data from several sources together into a unified view.",
+    "options": [
+      "Data masking",
+      "Data silo",
+      "Data integration",
+      "Data drift"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-078",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "String manipulation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Product codes arrive as \"  ab-120 \", \"AB-120\" and \"Ab-120\". Which pair of string steps makes them match?",
+    "explanation": "Trimming removes stray spaces and converting case (upper or lower) makes the three values identical.",
+    "options": [
+      "Explode them and append the parts",
+      "Index and parameterize them",
+      "Trim spaces and convert to one case",
+      "Round and bin them"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-079",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "A nightly import started failing after a vendor update. Put the analyst's steps in order:",
+    "explanation": "Start from the evidence in the log, find what changed in the file, fix and test safely, then apply the fix and record it.",
+    "options": [
+      "Read the job log for the first error",
+      "Compare the new file layout with the expected one",
+      "Update the import mapping and rerun it on a test copy",
+      "Run the import on production and note the change"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-080",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Date functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An invoice is due 30 days after its invoice date. Which kind of function computes the due date in a query?",
+    "explanation": "DATEADD adds an interval, here 30 days, to a date and returns the new date.",
+    "options": [
+      "A logical function such as CASE",
+      "A string function such as CONCAT",
+      "An aggregate function such as AVG",
+      "A date function such as DATEADD"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-081",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Quality assurance",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each test to what it checks:",
+    "explanation": "Unit tests check one piece, stress tests check behavior under heavy load, and requirement testing checks the result against what was asked for.",
+    "rows": [
+      "A single calculation function returns the right value",
+      "The report still runs with 50 times the normal users",
+      "The final report meets the business requirements"
+    ],
+    "columns": [
+      "Stress test",
+      "Unit test",
+      "Requirement testing"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-082",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "AI concepts",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each task to the AI concept it uses:",
+    "explanation": "Reading meaning from text is NLP. Producing new content is generative AI. Many-layer neural networks for image recognition are deep learning.",
+    "rows": [
+      "Sorting customer emails by the sentiment of their wording",
+      "Writing a first draft of a product description",
+      "Recognizing product types in photos with many-layer neural networks"
+    ],
+    "columns": [
+      "Deep learning",
+      "Generative AI",
+      "Natural language processing"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-083",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each goal to the chart that fits it:",
+    "explanation": "Pie charts show a few parts of a whole, line charts show change over time, and scatter plots show relationships.",
+    "rows": [
+      "Show parts of a whole with three segments",
+      "Compare a trend over twelve months",
+      "Show the relationship between two numeric measures"
+    ],
+    "columns": [
+      "Pie chart",
+      "Scatter plot",
+      "Line chart"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-084",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Validation techniques",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which are code and calculation review checks before a report is published? (Choose two.)",
+    "explanation": "Calc review recomputes figures, and code review reads the logic for errors. Colors and infographics are design choices.",
+    "options": [
+      "Add an infographic",
+      "Recalculate a sample of figures by hand",
+      "Pick a new color palette",
+      "Read the query for wrong joins or filters"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-T2-085",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data sources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst collects product prices by having a script read the HTML of a retailer's public pages. Which acquisition source is this?",
+    "explanation": "Web scraping extracts data from web page markup. Check the site's terms of use before scraping.",
+    "options": [
+      "API",
+      "Survey",
+      "Web scraping",
+      "Database replica"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-086",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Data collection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A researcher interviews whoever walks past a kiosk in one mall. What is the main problem with this sample?",
+    "explanation": "Convenience samples include whoever is easy to reach, so they may not represent the whole population.",
+    "options": [
+      "It is stratified by region",
+      "It is a census of all buyers",
+      "It is a convenience sample and may be biased",
+      "It is too large a sample to analyze at all"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-087",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Exploration",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which checks belong to data exploration before analysis? (Choose two.)",
+    "explanation": "Exploration profiles the data for gaps, duplicates, outliers and invalid values before any reporting.",
+    "options": [
+      "Choosing the dashboard color scheme",
+      "Counting missing values per column",
+      "Looking for values far outside the usual range",
+      "Emailing the final report"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-T2-088",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Totals in a report fall short after an upstream change. How should the analyst check the data source?",
+    "explanation": "Validating the source means reconciling counts and totals against the system of record to find where rows go missing.",
+    "options": [
+      "Add a new legend",
+      "Reconcile counts and totals with the system of record",
+      "Change the chart type to a stacked bar chart",
+      "Sort the rows by name"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-T2-089",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Mathematical functions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "The North region sold 1,872 of the company's 7,200 units. What percent of units did North sell? Type the number only.",
+    "explanation": "1,872 / 7,200 = 0.26, so North sold 26 percent of units.",
+    "numeric": {
+      "answers": [
+        "26"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-T2-090",
+    "section": "dataplus",
+    "test": 2,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team wants to replicate a customer database to a cloud region in another country for disaster recovery. What must be checked first?",
+    "explanation": "Replication creates another stored copy, so storage location and cross-border rules must allow it before it is set up.",
+    "options": [
+      "Whether rules allow storing the data there",
+      "Whether the chart is static",
+      "Whether the dashboard has a legend",
+      "Whether the region offers the cheapest storage"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-001",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A column always stores exactly two-letter country codes, such as US or FR. Which data type fits best?",
+    "explanation": "A fixed-length char(2) fits values that are always two characters long.",
+    "options": [
+      "BLOB",
+      "Float",
+      "char(2)",
+      "nvarchar(max)"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-002",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Infrastructure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bank keeps all analytics on servers in its own data center that only it uses. Which model is this?",
+    "explanation": "A private deployment runs on infrastructure used by one organization only.",
+    "options": [
+      "Hybrid",
+      "Private",
+      "Public",
+      "Multi-tenant SaaS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-003",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Filter",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which clause keeps only rows where the status is closed before any grouping happens?",
+    "explanation": "WHERE filters individual rows before GROUP BY runs.",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-004",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Completeness",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A survey has 400 responses, and 368 of them answered the income question. What percent of that field is complete? Type the number only.",
+    "explanation": "368 / 400 = 0.92, so the field is 92 percent complete.",
+    "numeric": {
+      "answers": [
+        "92"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-D-005",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "KPIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the best example of a KPI for an online store?",
+    "explanation": "A KPI is a measurable value linked to a goal, such as the share of visits that become orders.",
+    "options": [
+      "Conversion rate against a monthly target",
+      "The color of the logo",
+      "The list of table names",
+      "The server room temperature log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-006",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Logical functions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A query contains this expression:\n$$\\begin{array}{l}\\texttt{CASE WHEN score >= 70 THEN 1 ELSE 0 END}\\end{array}$$\nWhich type of function is it?",
+    "explanation": "CASE WHEN tests a condition and returns a value based on it, which is a logical function, like IF in a spreadsheet.",
+    "options": [
+      "Logical",
+      "String",
+      "Aggregate",
+      "Date"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-007",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should every chart in a report have so readers know what they are looking at?",
+    "explanation": "Titles and axis labels with units tell readers what the chart measures.",
+    "options": [
+      "A clear title and labeled axes",
+      "At least six different colors",
+      "A background photo of the product",
+      "A 3D effect"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-008",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report shows strange symbols in place of customer names after a file import. Which issue is this most likely?",
+    "explanation": "Garbled characters usually come from a corrupted file or text read with the wrong encoding.",
+    "options": [
+      "A color scheme built for color-blind readers",
+      "A missing legend",
+      "Corrupt data or wrong character encoding",
+      "A stale snapshot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-009",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Quality assurance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team keeps its SQL scripts in a system that records every change, who made it and lets them roll back. What is this?",
+    "explanation": "Source (version) control tracks changes to code and allows rollback and collaboration.",
+    "options": [
+      "Source control",
+      "Data drift",
+      "Source validation",
+      "Data silo"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-010",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sensor table leaves the reading empty when the device was offline. How should that empty reading be stored?",
+    "explanation": "Null means no value is known. Storing zero would look like a real reading and distort averages.",
+    "options": [
+      "As the text \"none\"",
+      "As a null value",
+      "As zero",
+      "As the previous reading"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-011",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pair are programming languages commonly used for data analysis?",
+    "explanation": "Python and R (also SAS and Scala) are programming languages. JSON, XML, CSV and TXT are file formats.",
+    "options": [
+      "CSV and TXT",
+      "Python and R",
+      "JSON and XML",
+      "Looker and Toad"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-012",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Aggregate",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which function counts how many different customers placed orders, ignoring repeat orders?",
+    "explanation": "COUNT(DISTINCT ...) counts unique values. COUNT(*) counts every row, repeats included.",
+    "options": [
+      "$\\texttt{MAX(customer\\_id)}$",
+      "$\\texttt{COUNT(DISTINCT customer\\_id)}$",
+      "$\\texttt{SUM(customer\\_id)}$",
+      "$\\texttt{COUNT(*)}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-013",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Imputation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why is the median often a safer choice than the mean for imputing missing incomes?",
+    "explanation": "Income data is usually skewed; the median is not pulled by extreme values the way the mean is.",
+    "options": [
+      "The median removes duplicates",
+      "The mean cannot be computed when nulls exist",
+      "A few very high incomes pull the mean up",
+      "The median is always zero"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-014",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Sensitive data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report shows sales by salesperson including commission rates. Who should see the commission column?",
+    "explanation": "Sensitive figures are limited to those who need them for their role.",
+    "options": [
+      "Only people whose role needs it",
+      "Everyone in the company who has a login",
+      "Any outside visitor",
+      "No one, ever, including payroll"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-015",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Mathematical functions",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "Of 320 support tickets, 96 were about billing. What percent of tickets were about billing? Type the number only.",
+    "explanation": "96 / 320 = 0.30, so 30 percent.",
+    "numeric": {
+      "answers": [
+        "30"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-D-016",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Chart types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows planned project tasks along a timeline with start and end dates?",
+    "explanation": "A Gantt chart draws each task as a bar along a time axis.",
+    "options": [
+      "Gantt chart",
+      "Bubble chart",
+      "Histogram",
+      "Pie chart"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-017",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Report issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A report file has grown so large it times out when users open it. Which change helps most?",
+    "explanation": "Reducing data size, by dropping unused fields and aggregating detail, speeds up opening and refreshing.",
+    "options": [
+      "Remove unused columns and summarize detail",
+      "Add another tab of raw data",
+      "Add more charts to each page",
+      "Increase the font size"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-018",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Quality assurance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which practice checks incoming data every day against rules such as row counts and null rates and alerts on failures?",
+    "explanation": "Automated monitoring runs quality checks on a schedule and raises alerts without manual effort.",
+    "options": [
+      "User acceptance testing",
+      "A yearly peer review of the dashboards",
+      "Mock-up review",
+      "Automated data quality monitoring"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-019",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data repositories",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which repository combines a data lake's cheap storage of raw files with warehouse features such as tables and SQL queries?",
+    "explanation": "A lakehouse adds table management and SQL querying on top of lake storage.",
+    "options": [
+      "Data silo",
+      "Departmental data mart",
+      "Data lakehouse",
+      "Flat file"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-020",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "Analysis tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool is a universal database client that connects to many database systems through one interface?",
+    "explanation": "DBeaver is a multi-database client. Toad, SSMS, MySQL Workbench and Azure Data Studio are other database tools.",
+    "options": [
+      "RStudio",
+      "Power BI",
+      "DBeaver",
+      "tidyverse"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-021",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "ETL and ELT",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why might a team choose ETL over ELT?",
+    "explanation": "ETL transforms before loading, so sensitive fields can be dropped or masked before they ever land in the target.",
+    "options": [
+      "The target warehouse has unlimited compute power",
+      "Transformations should run with SQL in the warehouse",
+      "Raw data must be kept unchanged in the target",
+      "Sensitive fields must be removed before loading"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-022",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Deletion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A column is 98 percent empty and no report uses it. Which step is most reasonable?",
+    "explanation": "A nearly empty, unused column adds noise; deleting it is simpler than filling 98 percent guesses.",
+    "options": [
+      "Delete the column",
+      "Impute every empty cell with the mean",
+      "Explode the column",
+      "Use it as the primary key"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-023",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several users say a report is wrong, but the analyst sees correct numbers. What should be checked?",
+    "explanation": "User-reported issues are often caused by filters, permissions or cached copies; reproduce what the user sees.",
+    "options": [
+      "Whether the font is accessible",
+      "Whether the logo is current",
+      "Whether the database is relational or not",
+      "Their filters and any cached copy"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-024",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Dispersion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three warehouses report 3, 7 and 11 late shipments. What is the sample standard deviation?",
+    "explanation": "The mean is 7. Squared deviations are 16, 0 and 16, summing to 32. Dividing by n - 1 = 2 gives a variance of 16, and its square root is 4. The range would be 8.",
+    "options": [
+      "3.27",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DATAPLUS-D-025",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Maps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which map places a circle on each store location, sized by its sales?",
+    "explanation": "Proportional symbols sit on exact points, sized by value. Choropleths shade whole areas.",
+    "options": [
+      "Choropleth map",
+      "Flow chart",
+      "Heat map of a grid",
+      "Proportional symbol map"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-026",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Data filtering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sales report should only include completed orders. Which technique keeps cancelled orders out?",
+    "explanation": "Filtering limits the rows to those that meet the report's rules.",
+    "options": [
+      "Exploding",
+      "Data augmentation",
+      "Data filtering",
+      "Branding"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-027",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Privacy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A data set has no names, but each row holds a person's exact birth date, ZIP code and gender. Why should it still be handled as PII?",
+    "explanation": "Several fields that are harmless alone can single out an individual when combined, so the data can still be linked to a person.",
+    "options": [
+      "Birth dates are always public records",
+      "ZIP codes are encrypted by default",
+      "Gender is a spatial data type",
+      "Together the fields can identify a person"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-028",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data repositories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Marketing wants a small, curated store of only campaign and customer data, built from the main warehouse. What is this?",
+    "explanation": "A data mart is a subject-focused subset of a warehouse for one team or business area.",
+    "options": [
+      "Data silo",
+      "Data lake",
+      "Log archive",
+      "Data mart"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-029",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "AI concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A report tool emails a refreshed sales summary to managers every morning without anyone running it. What is this?",
+    "explanation": "Automated reporting schedules report generation and delivery with no manual steps.",
+    "options": [
+      "Natural language processing",
+      "Web scraping",
+      "Deep learning",
+      "Automated reporting"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-030",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Joins",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Table A has 9 rows and table B has 15 rows. 5 rows of A have no match in B, and each matched row of A matches exactly 3 rows of B. How many rows does A INNER JOIN B return? Type the number only.",
+    "explanation": "Only the 4 matched rows of A appear, each paired with 3 rows of B: 4 x 3 = 12.",
+    "numeric": {
+      "answers": [
+        "12"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "DATAPLUS-D-031",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Regular expressions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which regular expression matches a value made of exactly four digits, such as 2026?",
+    "explanation": "The caret and dollar sign anchor the start and end, and [0-9]{4} means exactly four digits.",
+    "options": [
+      "$\\texttt{\\^{}[0-9]\\{4,\\}}$",
+      "$\\texttt{\\^{}[0-9]\\{4\\}\\$}$",
+      "$\\texttt{\\^{}[A-Z]\\{4\\}\\$}$",
+      "$\\texttt{[0-9]+}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-032",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Audience",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each audience to the report detail it usually needs:",
+    "explanation": "Boards want headlines, analysts want detail and method, and customers should see only their own information.",
+    "rows": [
+      "Board of directors",
+      "Team analyst",
+      "Customer"
+    ],
+    "columns": [
+      "High-level summary",
+      "Only their own data",
+      "Detailed figures and method"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-033",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Correlation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ad spend and sales have a correlation coefficient of 0.85. What does this tell the analyst?",
+    "explanation": "A coefficient near +1 shows a strong positive linear relationship. Correlation alone does not show that one variable causes the other.",
+    "options": [
+      "Ad spend causes 85 percent of all sales",
+      "No relationship at all",
+      "A strong negative relationship",
+      "A strong positive link, not proof of cause"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-034",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which is a good reason to add data labels to a bar chart?",
+    "explanation": "Data labels show exact values when readers need precise numbers, not just the comparison.",
+    "options": [
+      "To make the bars look 3D",
+      "To use more colors in the chart",
+      "To hide the axis title",
+      "Readers need the exact values"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-035",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Delivery methods",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each need to its delivery method:",
+    "explanation": "Summaries serve leaders, portals serve self-service users, and real-time dashboards serve live monitoring.",
+    "rows": [
+      "Leaders want key findings on one page",
+      "Staff want to explore data on their own",
+      "Operations watch figures that update all day"
+    ],
+    "columns": [
+      "Self-service portal",
+      "Real-time dashboard",
+      "Executive summary"
+    ],
+    "correct": [
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-036",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Frameworks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which US agency publishes the Cybersecurity Framework and the Privacy Framework that many organizations use to manage data risk?",
+    "explanation": "The National Institute of Standards and Technology publishes the Cybersecurity Framework and the Privacy Framework.",
+    "options": [
+      "ISO",
+      "The SEC",
+      "NIST",
+      "PCI SSC"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-037",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpConcepts",
+    "skill": "Data structures",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which are semi-structured data? (Choose two.)",
+    "explanation": "XML and YAML carry tags or keys but no fixed table schema, so they are semi-structured. A relational table is structured, and scanned images are unstructured.",
+    "options": [
+      "A YAML settings file with nested keys",
+      "Scanned images of paper receipts",
+      "An XML product feed with tagged elements",
+      "A relational table of invoice lines"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-D-038",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpEnv",
+    "skill": "AI concepts",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which are risks to check before using a generative AI summary in a report? (Choose two.)",
+    "explanation": "Generative models can produce confident but wrong statements, and data pasted into an outside tool may leave the company's control.",
+    "options": [
+      "It always needs a graph database",
+      "It may state facts that are not in the data",
+      "It may expose sensitive data put in the prompt",
+      "It cannot read text in English"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-D-039",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpAcquire",
+    "skill": "Data collection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data collection method asks people a fixed set of questions to gather their opinions?",
+    "explanation": "A survey collects responses to set questions from a sample of people.",
+    "options": [
+      "Surveying",
+      "Web scraping",
+      "Data mining",
+      "Log parsing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-040",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpPrep",
+    "skill": "Redundancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How is redundancy different from duplication?",
+    "explanation": "Duplicates are repeated records. Redundant data is the same information stored in more than one field or table.",
+    "options": [
+      "Duplication only happens in JSON",
+      "Redundancy only affects image files",
+      "Redundancy repeats a fact; duplication repeats records",
+      "They mean exactly the same thing in every tool"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-041",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpComm",
+    "skill": "Troubleshooting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A scheduled refresh fails with \"login timeout expired\". Which cause is most likely?",
+    "explanation": "A timeout during login means the client could not reach or hear back from the server, often a network or server availability issue.",
+    "options": [
+      "The data has outliers",
+      "A chart is missing a title",
+      "The server cannot be reached in time",
+      "The report uses a pie chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-042",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpStats",
+    "skill": "Central tendency",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which measure of central tendency suits a column of favorite colors?",
+    "explanation": "Colors are categories with no order or numeric value, so only the mode, the most common value, applies.",
+    "options": [
+      "Standard deviation",
+      "Mean",
+      "Median",
+      "Mode"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-043",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpVisuals",
+    "skill": "Design elements",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which choices make a chart easier to read? (Choose two.)",
+    "explanation": "Removing clutter and sorting bars make comparisons faster; 3D effects and needless colors distract.",
+    "options": [
+      "Add a 3D tilt to the bars",
+      "Sort bars from largest to smallest",
+      "Use a different color for every bar",
+      "Remove heavy gridlines and decoration"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DATAPLUS-D-044",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpReports",
+    "skill": "Data versioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why keep dated snapshots of a monthly report?",
+    "explanation": "Snapshots preserve each period's figures, so trends and past reports can be reproduced.",
+    "options": [
+      "To make the data update live",
+      "To speed up queries on the source system",
+      "To compare months and show what was reported",
+      "To hide the data from auditors"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DATAPLUS-D-045",
+    "section": "dataplus",
+    "test": 0,
+    "module": 1,
+    "domain": "dpGov",
+    "skill": "Data management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes how data is organized from broad to detailed levels, such as region, then country, then city?",
+    "explanation": "A hierarchy defines parent and child levels, which reports use to roll up and drill down.",
+    "options": [
+      "Hierarchy structure",
+      "Data lineage",
+      "Stress test",
+      "Data drift"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]

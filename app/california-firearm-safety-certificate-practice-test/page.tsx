@@ -232,7 +232,7 @@ export default function CaliforniaFscLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Read the study guide once, all the way through</h3>
               <p>
-                The DOJ says the information needed to pass is in its Firearm Safety Certificate Study Guide, free on oag.ca.gov. Read it before you practise, then come back to the chapters behind the questions you miss.
+                The DOJ says the information needed to pass is in its Firearm Safety Certificate Study Guide, free on oag.ca.gov. Read it before you practice, then come back to the chapters behind the questions you miss.
               </p>
             </div>
             <div>

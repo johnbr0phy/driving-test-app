@@ -114,7 +114,9 @@ async function query(site: string, start: string, end: string, dimensions: strin
 /** Typical click rate by position (rounded from public studies); a page under half of it has a weak title. */
 const EXPECTED_CTR = [0.28, 0.15, 0.1, 0.07, 0.05];
 
-const short = (u: string) => u.replace(/^https?:\/\/(www\.)?tigertest\.io/, "") || "/";
+const short = (u: string) => u.replace(/^https:\/\/www\.tigertest\.io/, "") || "/";
+/** Like short(), but keeps a non-www or http host visible: Google showing those means a duplicate got indexed. */
+const shortHost = (u: string) => (/^https:\/\/www\./.test(u) ? short(u) : u.replace(/^https?:\/\//, "").replace(/\/$/, "") || u);
 const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
 const pos = (n: number) => n.toFixed(1);
 
@@ -157,7 +159,8 @@ async function main() {
     e.pages.push({ page, impressions: r.impressions, clicks: r.clicks, position: r.position });
     byQuery.set(q, e);
   }
-  const queries = [...byQuery.values()].map((q) => ({ ...q, position: q.posSum / q.impressions, ctr: q.clicks / q.impressions }));
+  // Very long "queries" are AI agents pasting prompts into search, not people.
+  const queries = [...byQuery.values()].filter((q) => q.query.length <= 100).map((q) => ({ ...q, position: q.posSum / q.impressions, ctr: q.clicks / q.impressions }));
   const top = (q: (typeof queries)[number]) => [...q.pages].sort((a, b) => b.impressions - a.impressions)[0];
 
   const page2 = queries
@@ -181,7 +184,7 @@ async function main() {
     .map(({ q, rivals }) => ({
       query: q.query,
       impressions: q.impressions,
-      pages: rivals.sort((a, b) => b.impressions - a.impressions).map((p) => ({ page: short(p.page), impressions: p.impressions, position: p.position })),
+      pages: rivals.sort((a, b) => b.impressions - a.impressions).map((p) => ({ page: shortHost(p.page), impressions: p.impressions, position: p.position })),
     }));
 
   const prevClicks = new Map(prevPages.map((r) => [r.keys[0], r.clicks]));
@@ -197,7 +200,7 @@ async function main() {
   )).sitemap ?? []).map((s) => ({ path: s.path, errors: Number(s.errors ?? 0), warnings: Number(s.warnings ?? 0), lastDownloaded: s.lastDownloaded ?? null }));
 
   // Indexing of the landings (the pages meant to rank), from the live sitemap.
-  const notIndexed: { page: string; verdict: string; coverage: string }[] = [];
+  const notIndexed: { page: string; verdict: string; coverage: string; googleCanonical?: string; lastCrawl?: string }[] = [];
   let inspected = 0;
   if (INSPECT > 0) {
     const urls: string[] = [];
@@ -213,13 +216,21 @@ async function main() {
         while (i < todo.length) {
           const url = todo[i++];
           try {
-            const r = await call<{ inspectionResult?: { indexStatusResult?: { verdict?: string; coverageState?: string } } }>("/v1/urlInspection/index:inspect", {
+            const r = await call<{ inspectionResult?: { indexStatusResult?: { verdict?: string; coverageState?: string; googleCanonical?: string; lastCrawlTime?: string } } }>("/v1/urlInspection/index:inspect", {
               inspectionUrl: url,
               siteUrl: site,
             });
             if (++inspected % 50 === 0) console.error(`[gsc-report] inspected ${inspected}/${todo.length}`);
             const s = r.inspectionResult?.indexStatusResult;
-            if (s?.verdict !== "PASS") notIndexed.push({ page: short(url), verdict: s?.verdict ?? "unknown", coverage: s?.coverageState ?? "" });
+            if (s?.verdict !== "PASS") {
+              notIndexed.push({
+                page: short(url),
+                verdict: s?.verdict ?? "unknown",
+                coverage: s?.coverageState ?? "",
+                googleCanonical: s?.googleCanonical && s.googleCanonical !== url ? shortHost(s.googleCanonical) : undefined,
+                lastCrawl: s?.lastCrawlTime?.slice(0, 10),
+              });
+            }
           } catch (e) {
             if (/429|quota/i.test(String(e))) break;
             notIndexed.push({ page: short(url), verdict: "error", coverage: String(e).slice(0, 120) });
@@ -266,11 +277,11 @@ async function main() {
   L.push("", "## Falling pages (clicks down 30%+)", "", "| Page | Clicks | Before |", "| --- | --- | --- |");
   for (const r of falling) L.push(`| ${r.page} | ${r.clicks} | ${r.before} |`);
   L.push("", "## Sitemaps", "", "| Sitemap | Errors | Warnings | Last read |", "| --- | --- | --- | --- |");
-  for (const s of sitemaps) L.push(`| ${short(s.path)} | ${s.errors} | ${s.warnings} | ${s.lastDownloaded?.slice(0, 10) ?? "never"} |`);
+  for (const s of sitemaps) L.push(`| ${shortHost(s.path)} | ${s.errors} | ${s.warnings} | ${s.lastDownloaded?.slice(0, 10) ?? "never"} |`);
   L.push("", `## Landings not indexed (${notIndexed.length} of ${inspected} inspected)`, "");
   if (notIndexed.length) {
-    L.push("Find the cause (thin, duplicate, orphaned, canonical elsewhere) and fix that, not the page alone.", "", "| Page | Verdict | Google's reason |", "| --- | --- | --- |");
-    for (const r of notIndexed) L.push(`| ${r.page} | ${r.verdict} | ${r.coverage} |`);
+    L.push("Find the cause (thin, duplicate, orphaned, canonical elsewhere) and fix that, not the page alone.", "", "| Page | Google's reason | Google's canonical | Last crawl |", "| --- | --- | --- | --- |");
+    for (const r of notIndexed) L.push(`| ${r.page} | ${r.coverage || r.verdict} | ${r.googleCanonical ?? ""} | ${r.lastCrawl ?? "never"} |`);
   }
   const md = L.join("\n") + "\n";
   console.log(md);
